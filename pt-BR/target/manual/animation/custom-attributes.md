@@ -16,7 +16,7 @@ Atualmente, você só pode importar atributos **animados**  personalizados. Atri
 
    ![Recursos no Visualizador de Recursos](media/assets-in-asset-view1.png)
 
-2. Na **Editor de Propriedades**, selecione **Importar atributos personalizados**.
+2. No **Editor de Propriedades**, selecione **Importar atributos personalizados**.
 
    Atributos personalizados![](media/import-custom-attributes.png)
 
