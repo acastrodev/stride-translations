@@ -1,56 +1,56 @@
-# Animation
+# Animação
 
-<span class="badge text-bg-success">Designer</span>
-<span class="badge text-bg-success">Programmer</span>
+<span class="badge text-bg-success">Design</span>
+<span class="badge text-bg-success">Programação</span>
 
-3D models are animated by adding three kinds of asset:
+Modelos 3D são animados adicionando-se três tipos de recurso:
 
-* a skeleton
-* a skinned model
-* an animation clip
+* um esqueleto
+* um modelo articulado
+* um clipe de animação
 
-> [!Note]
-> For information about 2D animation, see [Sprites](../sprites/index.md).
+> [!Nota]
+> Para mais informações sobre animação 2D, consulte [Sprites](../sprites/index.md).
 
-## Skeletons
+## Equeletos
 
-**Skeletons** are digital structures that describe deformation patterns of 3D models. Skeletons are made of bones that form a hierarchy. When parent bones change their position, they also affect the positions of child bones. For example, a hand bone might have five child bones (the fingers and thumb); when the hand moves up and down, the fingers and thumb move with it.
+**Esqueletos** são estruturas digitais que descrevem padrões de deformação de um modelos 3D. Esqueletos são compostos por ossos que formam uma hierarquia. Quando os ossos pais mudam de posição, eles também afetam as posições dos ossos filhos. Por exemplo, um osso da mão pode ter cinco ossos filhos; quando a mão se move para cima e para baixo, os dedos também se movem com ela.
 
-Skeletons don't have to resemble the skeletons of real humans or animals. You can make skeletons to animate any 3D model.
+Esqueletos não precisam se assemelhar aos esqueletos de seres humanos ou animais reais. Você pode criar esqueletos para animar qualquer modelo 3D.
 
-> [!NOTE]
-> There's currently no way to visualize skeletons in Game Studio.
+> [!Nota]
+> Atualmente, não há maneira de visualizar esqueletos no Game Studio.
 
-## Skinned models
+## Modelo articulado
 
-**Skinning** is the process of assigning weights to vertices and bones they depend on. Each vertex usually depends on one to four bones.
+**Esqueletização** é o processo de atribuir pesos aos vértices e aos ossos dos quais eles dependem. Cada vértice geralmente depende de um a quatro ossos.
 
-**Skinned models** are models that have been skinned to match a skeleton. The **skin** describes how vertices of the mesh transform when bones move.
+**Malhas articuladas** são modelos que foram esqueletizados para corresponder a um esqueleto. A **articulação da malha** descreve como os vértices dela se transformam quando os ossos se movem.
 
-> [!NOTE]
-> In Game Studio, you can only create simple 3D models such as spheres and cubes. For information about how to do this, see [Create assets](../game-studio/create-assets.md). To create more complex models, use dedicated software like 3DS Max, Maya, or Blender, then [import the model into Game Studio](import-animations.md).
+> [!Nota]
+> No Game Studio, só é possível criar modelos 3D simples, como esferas e cubos. Para mais informações sobre como fazer isso, consulte [Criar recursos](../game-studio/create-assets.md). Para criar modelos mais complexos, utilize software dedicado como 3DS Max, Maya ou Blender e, em seguida, [importe o modelo para o Game Studio](import-animations.md).
 
-## Animation clips
+## Clipes de animação
 
-**Animation clips** describe the pose of a **skeleton** at a particular moment. The skeleton moves according to the animation. The mesh vertices transform (skin) to match the current pose.
+**Clipes de animação** descrevem a pose de um **esqueleto** em um momento específico. O esqueleto se move de acordo com a animação. Os vértices da malha se transformam (articulação da malha) para corresponder à pose atual.
 
-## Animation samples
+## Amostras de animação
 
-For an example of how animations work in Stride, load the **Sample: animation** sample project.
+Para um exemplo de como as animações funcionam no Stride, carregue o projeto de exemplo **Exemplo: animação**.
 
-![Animations](media/animations-index1.png)
+![Animações](media/animations-index1.png)
 
-The templates **First-person shooter**, **Third-person platformer** and **Top-down RPG** also include some advanced animation techniques.
+Os modelos **Tiro em primeira pessoa**, **Plataforma em terceira pessoa** e **RPG de visão superior**, também incluem algumas técnicas avançadas de animação.
 
-## In this section
+## Nesta seção
 
-* [Import animations](import-animations.md)
-* [Animation properties](animation-properties.md)
-* [Set up animations](set-up-animations.md)
-* [Preview animations](preview-animations.md)
-* [Animation scripts](animation-scripts.md)
-* [Additive animation](additive-animation.md)
-* [Procedural animation](procedural-animation.md)
-* [Custom blend trees](custom-blend-trees.md)
-* [Model node links](model-node-links.md)
-* [custom attributes](custom-attributes.md)
+* [Importar animações](import-animations.md)
+* [Propriedades de animação](animation-properties.md)
+* [Configurar animações](set-up-animations.md)
+* [Visualizar animações](preview-animations.md)
+* [Scripts de animação](animation-scripts.md)
+* [Animação aditiva](additive-animation.md)
+* [Animação procedural](procedural-animation.md)
+* [Árvores de transição personalizadas](custom-blend-trees.md)
+* [Links de nó de modelo](model-node-links.md)
+* [Atributos personalizados](custom-attributes.md)

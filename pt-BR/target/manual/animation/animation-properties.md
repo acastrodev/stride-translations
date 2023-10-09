@@ -1,7 +1,7 @@
 # Propriedades de animação
 
 <span class="badge text-bg-primary">Iniciante</span>
-<span class="badge text-bg-success">Designer</span>
+<span class="badge text-bg-success">Design</span>
 
 Após [importar uma animação](import-animations.md), você pode selecioná-la no **Visualizador de Recursos** (na parte inferior, por padrão) e visualizar e editar suas propriedades na **Grade de Propriedades** (à direita, por padrão).
 
@@ -76,4 +76,4 @@ Se você tiver um atributo personalizado no arquivo de animação...
 * [Animação aditiva](additive-animation.md)
 * [Animação procedural](procedural-animation.md)
 * [Árvores de transição personalizadas](custom-blend-trees.md)
-* [Links de nós de modelo](model-node-links.md)
+* [Model node links](model-node-links.md)

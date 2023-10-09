@@ -1,7 +1,7 @@
 # Animação aditiva
 
 <span class="badge text-bg-primary">Intermediário</span>
-<span class="badge text-bg-success">Designer</span>
+<span class="badge text-bg-success">Design</span>
 
 A **animação aditiva** é o processo de combinar animações usando **clipes de variação** (também conhecidos como **clipes de animação aditiva**).
 
@@ -34,7 +34,7 @@ Podemos usar o clipe de variação para mesclar as animações de origem e de re
 
    ![Crie uma animação sem um arquivo de origem](media/create-animation-without-source-file.png)
 
-3. Clique em **Sim**. O Game Studio adicionará um novo recurso de animação vazio à .
+3. Clique em **Sim**. O Game Studio adicionará um novo recurso de animação vazio ao Visualizador de Recursos.
 
 4. Dê um nome ao recurso que o torne fácil de identificar. Por exemplo, se você deseja criar uma animação de recarregar que possa ser usada com outras animações, você pode nomear o recurso como *RecarregarAditivo*.
 

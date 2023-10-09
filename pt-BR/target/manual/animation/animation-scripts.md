@@ -110,5 +110,5 @@ Você também pode sobrescrever a árvore de transição de animação e executa
 * [Animação aditiva](additive-animation.md)
 * [Animação procedural](procedural-animation.md)
 * [Árvores de transição personalizadas](custom-blend-trees.md)
-* [Links de nós de modelo](model-node-links.md)
+* [Links de nó de modelo](model-node-links.md)
 * [Atributos personalizados](custom-attributes.md)

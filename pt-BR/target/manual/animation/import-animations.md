@@ -1,7 +1,7 @@
 # Importar animações
 
 <span class="badge text-bg-primary">Iniciante</span>
-<span class="badge text-bg-success">Designer</span>
+<span class="badge text-bg-success">Design</span>
 
 Para animar um modelo, você precisa usar três tipos de recursos juntos:
 
