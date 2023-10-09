@@ -40,7 +40,7 @@ Podemos usar o clipe de variação para mesclar as animações de origem e de re
 
 5. No **Visualizador de Recursos** (painel inferior por padrão), selecione o recurso de animação que você criou.
 
-6. Na **Grade de Propriedades** (à direita por padrão), adicione o clipe de animação de **origem**. Esta é a animação que você deseja aplicar a outras animações.
+6. Na **Editor de Propriedades** (à direita por padrão), adicione o clipe de animação de **origem**. Esta é a animação que você deseja aplicar a outras animações.
 
    ![Escolha o arquivo de origem](media/animations-additive-animations-1.png)
 
@@ -93,7 +93,7 @@ Você pode usar animações aditivas com animações que usam o mesmo esqueleto 
    > [!Note]
    > Para animar uma entidade, a entidade deve ter um componente do tipo modelo.
 
-5. Na **Grade de Propriedades** (à direita por padrão), clique em **Adicionar componente** e escolha **Animações**.
+5. Na **Editor de Propriedades** (à direita por padrão), clique em **Adicionar componente** e escolha **Animações**.
 
    ![Adicionar componente de animação](media/animations-use-3d-animations-add-animation-component.png)
 

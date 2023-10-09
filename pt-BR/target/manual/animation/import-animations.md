@@ -41,7 +41,7 @@ Depois de importar os recursos, o Game Studio os adiciona ao **Visualizador de R
 
 ![Recursos no Visualizador de Recursos](media/assets-in-asset-view1.png)
 
-Você pode visualizar e editar suas propriedades na **Grade de Propriedades** (à direita, por padrão). Para mais informações, consulte [Propriedades de animação](animation-properties.md).
+Você pode visualizar e editar suas propriedades na **Editor de Propriedades** (à direita, por padrão). Para mais informações, consulte [Propriedades de animação](animation-properties.md).
 
 ![Propriedades](media/animations-properties.png)
 

@@ -2,7 +2,7 @@
 
 Bem-vindo à documentação do Stride, especificamente projetada para desenvolvedores de jogos, criadores de conteúdo visual e para todos os usuários do poderoso [motor de jogo Stride](https://www.stride3d.net/). Esta documentação está repleta de tutoriais detalhados, manuais abrangentes e referências detalhadas à API para ajudá-lo a dar vida às suas idéias de desenvolvimento de jogos com o Stride. Esteja você começando no Stride ou buscando aprimorar suas habilidades, você encontrará tudo o que precisa aqui mesmo. Mergulhe fundo e vamos criar algo extraordinário!
 
-> [DICA]
+> [!Tip]
 > Esta documentação é voltada para os usuários do motor Stride. Se você estiver interessado em contribuir com o código-fonte do motor Stride, siga as [instruções de contribuição do Stride](https://github.com/stride3d/stride).
 
 <div class="row g-4 mb-4">
@@ -81,5 +81,5 @@ Bem-vindo à documentação do Stride, especificamente projetada para desenvolve
 
 </div>
 
-> [!Nota]
+> [!Note]
 > Tenha em mente que, enquanto a nossa documentação em inglês é atualizada regularmente, as traduções nem sempre podem estar atualizadas.. Recomendamos que os usuários proficientes em inglês consultem a documentação original para obter as informações mais recentes. Para ajudar com as traduções ou relatar discrepâncias, por favor, consulte o nosso GitHub ou os fóruns da comunidade. Sua contribuição é inestimável!
