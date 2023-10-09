@@ -50,7 +50,7 @@ Por exemplo, imagine que você tem dois modelos: um cavaleiro e uma espada. O pe
 
    Após vincular o nó, a Árvore de Entidades exibe o link em azul ao lado do nome da entidade.
 
-   Link de nó de modelo![](media/model-node-link-sword-added.png)
+   ![Link de nó de modelo](media/model-node-link-sword-added.png)
 
 ## Deslocamento
 
