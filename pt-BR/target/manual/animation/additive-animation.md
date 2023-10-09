@@ -21,7 +21,7 @@ O Stride calcula a diferença entre os clipes de origem e de referência para cr
 
 Podemos usar o clipe de variação para mesclar as animações de origem e de referência. Também podemos usar o mesmo clipe de variação para mesclar a animação de origem com outras animações.**** Se a animação à qual você a adiciona for parecida o bastante com o clipe de referência original, então as animações se mesclam bem. Essa animação pode ser adicionada a qualquer outra que não utilize os braços, como, por exemplo, a animação de agachar.
 
-> [!Nota]
+> [!Note]
 > Animações aditivas devem usar a mesma malha articulada e esqueleto.
 
 ### Criando um clipe de variação
@@ -44,7 +44,7 @@ Podemos usar o clipe de variação para mesclar as animações de origem e de re
 
    ![Escolha o arquivo de origem](media/animations-additive-animations-1.png)
 
-   > [!Nota]
+   > [!Note]
    > Certifique-se de adicionar o arquivo que contém a animação (por exemplo, um arquivo de modelo como .fbx), **não** o recurso de animação que a referencia. Arquivos de animação geralmente são salvos na pasta **Resources**
 
 7. Em **Tipo**, escolha **Clipe de variação**.
@@ -69,7 +69,7 @@ Podemos usar o clipe de variação para mesclar as animações de origem e de re
 
    ![Escolha o modo de reprodução](media/animations-additive-animations-4.png)
 
-   > [!Nota]
+   > [!Note]
    > A Visualização de Recursos mostra apenas a animação de origem que você especifica no clipe de variação.
 
 ## Usando uma animação aditiva
@@ -90,7 +90,7 @@ Você pode usar animações aditivas com animações que usam o mesmo esqueleto 
 
    ![Selecione uma entidade](media/animations-use-3d-animations-select-entity.png)
 
-   > [!Nota]
+   > [!Note]
    > Para animar uma entidade, a entidade deve ter um componente do tipo modelo.
 
 5. Na **Grade de Propriedades** (à direita por padrão), clique em **Adicionar componente** e escolha **Animações**.

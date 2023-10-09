@@ -5,43 +5,80 @@ Bem-vindo à documentação do Stride, especificamente projetada para desenvolve
 > [DICA]
 > Esta documentação é voltada para os usuários do motor Stride. Se você estiver interessado em contribuir com o código-fonte do motor Stride, siga as [instruções de contribuição do Stride](https://github.com/stride3d/stride).
 
-<div class="row g-4 mb-4">
-    <div class="col-md-6">
-        <div class="card h-100">
-            <div class="card-body">
-                <h2 class="card-title h5">&amp;#128218; Manual</h2>
-                <p class="card-text">Descubra como construir projetos e concluir tarefas no Stride com nossos tutoriais passo a passo relacionados ao manual.</p>
-            </div>
-            <p class="px-3 mb-4"><a class="stretched-link" href="manual/index.md">Acesse o nosso Manual do Stride</a></p>
-        </div>
-    </div>
-    <div class="col-md-6">
-        <div class="card h-100">
-            <div class="card-body">
-                <h2 class="card-title h5">&amp;#127891; Tutoriais</h2>
-                <p class="card-text">Explore uma variedade de tutoriais para o motor de jogo Stride. Nossos atuais tutoriais incluem: <a href="tutorials/gamestudio/index.md">Game Studio</a>, <a href="tutorials/csharpbeginner/index.md">C# Iniciante</a> e <a href="tutorials/csharpintermediate/index.md">C# Intermediário</a>.</p>
-            </div>
-            <p class="px-3 mb-4"><a class="" href="tutorials/index.md">Navegue pelos Tutoriais do Stride</a></p>
-        </div>
-    </div>
-    <div class="col-md-6">
-        <div class="card h-100">
-            <div class="card-body">
-                <h2 class="card-title h5">&amp;#128221; Notas de Lançamento</h2>
-                <p class="card-text">Saiba mais sobre as últimas funcionalidades e melhorias no Stride, bem como suas versões anteriores.</p>
-            </div>
-            <p class="px-3 mb-4"><a class="stretched-link" href="ReleaseNotes/index.md">Encontre as Notas de Lançamento do Stride</a></p>
-        </div>
-    </div>
-    <div class="col-md-6">
-        <div class="card h-100">
-            <div class="card-body">
-                <h2 class="card-title h5">&amp;#128295; Referência da API</h2>
-                <p class="card-text">Acesse a documentação da API do Stride, que abrange métodos, propriedades e outras informações essenciais.</p>
-            </div>
-            <p class="px-3 mb-4"><a class="stretched-link" href="api/index.md">Consulte a Referência da API do Stride.</a></p>
-        </div>
-    </div>
+<div class="row g-4 mb-4">
+
+    <div class="col-md-6">
+
+        <div class="card h-100">
+
+            <div class="card-body">
+
+                <h2 class="card-title h5">&amp;#128218; Manual</h2>
+
+                <p class="card-text">Descubra como construir projetos e concluir tarefas no Stride com nossos tutoriais passo a passo relacionados ao manual.</p>
+
+            </div>
+
+            <p class="px-3 mb-4"><a class="stretched-link" href="manual/index.md">Acesse o nosso Manual do Stride</a></p>
+
+        </div>
+
+    </div>
+
+    <div class="col-md-6">
+
+        <div class="card h-100">
+
+            <div class="card-body">
+
+                <h2 class="card-title h5">&amp;#127891; Tutoriais</h2>
+
+                <p class="card-text">Explore uma variedade de tutoriais para o motor de jogo Stride. Nossos atuais tutoriais incluem: <a href="tutorials/gamestudio/index.md">Game Studio</a>, <a href="tutorials/csharpbeginner/index.md">C# Iniciante</a> e <a href="tutorials/csharpintermediate/index.md">C# Intermediário</a>.</p>
+
+            </div>
+
+            <p class="px-3 mb-4"><a class="" href="tutorials/index.md">Navegue pelos Tutoriais do Stride</a></p>
+
+        </div>
+
+    </div>
+
+    <div class="col-md-6">
+[!Note]
+        <div class="card h-100">
+
+            <div class="card-body">
+
+                <h2 class="card-title h5">&amp;#128221; Notas de Lançamento</h2>
+
+                <p class="card-text">Saiba mais sobre as últimas funcionalidades e melhorias no Stride, bem como suas versões anteriores.</p>
+
+            </div>
+
+            <p class="px-3 mb-4"><a class="stretched-link" href="ReleaseNotes/index.md">Encontre as Notas de Lançamento do Stride</a></p>
+
+        </div>
+
+    </div>
+
+    <div class="col-md-6">
+
+        <div class="card h-100">
+
+            <div class="card-body">
+
+                <h2 class="card-title h5">&amp;#128295; Referência da API</h2>
+
+                <p class="card-text">Acesse a documentação da API do Stride, que abrange métodos, propriedades e outras informações essenciais.</p>
+
+            </div>
+
+            <p class="px-3 mb-4"><a class="stretched-link" href="api/index.md">Consulte a Referência da API do Stride.</a></p>
+
+        </div>
+
+    </div>
+
 </div>
 
 > [!Nota]

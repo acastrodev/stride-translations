@@ -15,7 +15,7 @@ As propriedades mais úteis incluem:
 | [BlendTreeBuilder](xref:Stride.Engine.AnimationComponent#Stride_Engine_AnimationComponent_BlendTreeBuilder) | Obtém ou define o builder de árvore de transições de animação. Tenha em mente que você pode criar Scripts de animação; para mais informações, consulte [Árvore de transição personalizada](custom-blend-trees.md). |
 | [PlayingAnimations](xref:Stride.Engine.AnimationComponent#Stride_Engine_AnimationComponent_PlayingAnimations) | Obtém a lista de animações ativas. Use para personalizar a inicialização das suas animações. As animações em execução são atualizadas automaticamente pelo processador de animação, portanto, tome cuidado ao alterar a lista ou manter uma referência a uma animação em execução. |
 
-> [!Nota]
+> [!Note]
 > Os clipes de animação aos quais você faz referência em scripts devem ser adicionados à mesma entidade no [AnimationComponent](xref:Stride.Engine.AnimationComponent).
 
 > ![Animações adicionadas ao componente](media/animations-added-to-component.png)

@@ -49,7 +49,7 @@ Você pode visualizar e editar suas propriedades na **Grade de Propriedades** (�
 
 Para usar um recurso de animação, adicione um [AnimationComponent](xref:Stride.Engine.AnimationComponent) a uma entidade e, em seguida, adicione o recurso de animação ao componente de animação. Para mais informações, consulte [Configurar animações](set-up-animations.md).
 
-> [!Nota]
+> [!Note]
 > Certifique-se de ajustar corretamente a malha ao esqueleto. Se não fizer isso, você não consiguirá animar seu modelo corretamente.
 
 ## Veja também

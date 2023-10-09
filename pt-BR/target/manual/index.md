@@ -4,7 +4,7 @@
 
 Estas páginas contêm informações sobre como usar o Stride, um motor de jogo de código aberto em C#.
 
-> [!Nota]
+> [!Note]
 > O manual do Stride está em construção e é regularmente atualizado com novo conteúdo. Siga o [Stride no X](https://twitter.com/stridedotnet?lang=en) para atualizações na documentação.
 
 ## Documentação mais recente

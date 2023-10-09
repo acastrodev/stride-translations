@@ -47,7 +47,7 @@ Esqueletos são compostos por ossos que formam uma hierarquia. Quando os ossos p
 
 Certifique-se de referenciar o mesmo esqueleto usado pelo modelo que você deseja animar. Se houver ossos faltando ou outras diferenças entre a hierarquia de ossos/articulações do esqueleto em seu arquivo de animação e o esqueleto de destino, o Stride redefine a animação da forma mais próxima possível.
 
-> [!Nota]
+> [!Note]
 > Atualmente, não há maneira de visualizar esqueletos no Game Studio.
 
 ## Root motion
@@ -56,10 +56,10 @@ Quando o root motion está ativado, o Stride aplica a animação do **nó raiz**
 
 Isso é útil, por exemplo, para animar entidades que não requerem esqueletos, como uma [luz focal](../graphics/lights-and-shadows/spot-lights.md) movendo-se de um lado para o outro.
 
-> [!Nota]
+> [!Note]
 > Se a animação não tiver um esqueleto selecionado em **Esqueleto**, o Stride sempre aplicará a animação ao [TransformComponent](xref:Stride.Engine.TransformComponent), mesmo se **root motion** estiver desativado.
 
-> [!Nota]
+> [!Note]
 > O [TransformComponent](xref:Stride.Engine.TransformComponent) aplica um deslocamento à posição do nó do modelo. Se você não deseja adicionar um deslocamento, certifique-se de que o [TransformComponent](xref:Stride.Engine.TransformComponent) esteja configurado em `0,0,0`.
 
 ## Importar atributos personalizados
