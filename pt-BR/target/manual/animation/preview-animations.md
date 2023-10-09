@@ -1,9 +1,9 @@
-# Preview animations
+# Visualizar animações
 
-<span class="badge text-bg-primary">Intermediate</span>
-<span class="badge text-bg-success">Designer</span>
+<span class="badge text-bg-primary">Intermediário</span>
+<span class="badge text-bg-success">Design</span>
 
-After you [import an animation](import-animations.md), you can preview it in the **Asset Preview**.
+Depois de [importar uma animação](import-animations.md), você pode visualizá-la na **Visualização de Recursos**.
 
 <p>
 <video autoplay loop class="responsive-video" poster="media\animations-import-animations-animation-preview.jpg">
@@ -11,41 +11,41 @@ After you [import an animation](import-animations.md), you can preview it in the
 </video>
 </p>
 
-By default, the Asset Preview is in the bottom-right under the **Asset Preview** tab.
+Por padrão, a Visualização de Recursos está na parte inferior direita, sob a guia **Visualização de Recursos**.
 
-![Asset Preview tab](media/animations-import-animations-asset-preview-tab.png)
+![Guia Visualização de Recursos](media/animations-import-animations-asset-preview-tab.png)
 
 > [!Tip]
-> To rotate the animation, click and drag the mouse.
+> Para rotacionar a animação, clique e arraste o mouse.
 
-The animation preview uses the model selected in the **preview model** in the **animation asset properties**.
+A pré-visualização da animação utiliza o modelo selecionado em **modelo de pré-visualização** nas **propriedades do recurso de animação**.
 
-## Set the preview model
+## Defina o modelo de pré-visualização
 
-1. In the **Asset View** (at the bottom by default), select the animation asset.
+1. No **Visualizador de Recursos** (na parte inferior por padrão), selecione o recurso de animação.
 
-   ![Select asset](media/select-asset.png)
+   ![Selecionar recurso](media/select-asset.png)
 
-2. In the **Property Grid** (on the right by default), under **Preview model**, click ![Hand icon](~/manual/game-studio/media/hand-icon.png) (**Select an asset**).
+2. No **Editor de Propriedades** (à direita por padrão), sob **Visualizador de modelo**, clique no ![Ícone de mão](~/manual/game-studio/media/hand-icon.png) (**Selecionar um recurso**).
 
-   ![Select an asset](media/pick-an-asset-up.png)
+   ![Selecionar recurso](media/pick-an-asset-up.png)
 
-   The **Select an asset** window opens.
+   A janela **Selecionar uma entidade** é exibida.
 
-3. Select the model you want to use to preview the animation.
+3. Selecione o modelo que deseja usar para visualizar a animação.
 
    > [!Note]
-   > Make sure the model and the animation share identical skeletons.
+   > Certifique-se de que o modelo e a animação compartilham esqueletos idênticos.
 
-## See also
+## Veja também
 
-* [Animation index](index.md)
-* [Import animations](import-animations.md)
-* [Animation properties](animation-properties.md)
-* [Set up animations](set-up-animations.md)
-* [Animation scripts](animation-scripts.md)
-* [Additive animation](additive-animation.md)
-* [Procedural animation](procedural-animation.md)
-* [Custom blend trees](custom-blend-trees.md)
-* [Model node links](model-node-links.md)
-* [custom attributes](custom-attributes.md)
+* [Índice de animação](index.md)
+* [Importar animações](import-animations.md)
+* [Propriedades de animação](animation-properties.md)
+* [Configurar animações](set-up-animations.md)
+* [Scripts de animação](animation-scripts.md)
+* [Animação aditiva](additive-animation.md)
+* [Animação procedural](procedural-animation.md)
+* [Árvores de transição personalizadas](custom-blend-trees.md)
+* [Links de nó de modelo](model-node-links.md)
+* [Atributos personalizados](custom-attributes.md)
