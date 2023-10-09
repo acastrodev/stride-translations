@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" xmlns:okp="okapi-framework:xliff-extensions" its:version="2.0" version="1.2">
+<file datatype="x-text/x-markdown" okp:inputEncoding="UTF-8" original="/D:/repos/rr/source/manual/graphics/cameras/animate-a-camera-with-a-model-file.md" source-language="en" target-language="pt">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en">Animate a camera with a model file</source>
+<target xml:lang="pt">Animate a camera with a model file</target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Beginner<x id="2"/>
+<x id="3"/>Artist<x id="4"/></source>
+<target xml:lang="pt"><x id="1"/>Beginner<x id="2"/>
+<x id="3"/>Artist<x id="4"/></target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">Like other entities, you can <g id="1">animate</g> cameras using animations imported from 3D model files such as <g id="2">.3ds</g>, <g id="3">.fbx</g>, and <g id="4">.obj</g>.</source>
+<target xml:lang="pt">Like other entities, you can <g id="1">animate</g> cameras using animations imported from 3D model files such as <g id="2">.3ds</g>, <g id="3">.fbx</g>, and <g id="4">.obj</g>.</target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>!Note<x id="2"/>
+To animate a camera using a model file, you first need to bake the animation using your modeling tool (eg Maya, 3ds Max or Blender).
+Stride doesn't support cameras animated using target cameras.</source>
+<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
+To animate a camera using a model file, you first need to bake the animation using your modeling tool (eg Maya, 3ds Max or Blender).
+Stride doesn't support cameras animated using target cameras.</target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">If the camera moves independently, the simplest method is to export the camera animation as a separate file, enable the <g id="1">root motion</g> option on the animation, then add the camera, animation, and animation script to the same entity. If the animations include FOV or near or far plane animations, the Stride camera updates accordingly. With this method, you don't need a model or a skeleton.</source>
+<target xml:lang="pt">If the camera moves independently, the simplest method is to export the camera animation as a separate file, enable the <g id="1">root motion</g> option on the animation, then add the camera, animation, and animation script to the same entity. If the animations include FOV or near or far plane animations, the Stride camera updates accordingly. With this method, you don't need a model or a skeleton.</target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en">If you want the camera to move in tandem with another animation — for example, if the camera is held by a cameraman character with its own model, skeleton and animation — use a <g id="1">model node link</g> component to link the camera entity to the cameraman's movements.</source>
+<target xml:lang="pt">If you want the camera to move in tandem with another animation — for example, if the camera is held by a cameraman character with its own model, skeleton and animation — use a <g id="1">model node link</g> component to link the camera entity to the cameraman's movements.</target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en">Animate a camera independently</source>
+<target xml:lang="pt">Animate a camera independently</target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en">To do this, you need the following assets in your project:</source>
+<target xml:lang="pt">To do this, you need the following assets in your project:</target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en">a <g id="1">camera entity</g>, the camera to be animated</source>
+<target xml:lang="pt">a <g id="1">camera entity</g>, the camera to be animated</target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en">an <g id="1">animation</g>, to animate the camera (exported separately in your modeling tool)</source>
+<target xml:lang="pt">an <g id="1">animation</g>, to animate the camera (exported separately in your modeling tool)</target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en">an <g id="1">animation script</g>, to play the animation</source>
+<target xml:lang="pt">an <g id="1">animation script</g>, to play the animation</target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en">In the <g id="1">Asset View</g>, select the animation asset you want to use to animate the camera.</source>
+<target xml:lang="pt">In the <g id="1">Asset View</g>, select the animation asset you want to use to animate the camera.</target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Select animation asset<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Select animation asset<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>!Note<x id="2"/>
+For instructions about how import animations, see <g id="3">Import animations</g>.</source>
+<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
+For instructions about how import animations, see <g id="3">Import animations</g>.</target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en">In the <g id="1">Property Grid</g>, enable <g id="2">Root motion</g>.</source>
+<target xml:lang="pt">In the <g id="1">Property Grid</g>, enable <g id="2">Root motion</g>.</target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Enable root motion<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Enable root motion<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en">When root motion is enabled, Stride applies the <g id="1">root node animation</g> to the <g id="2">TransformComponent</g> of the entity you add the animation to, instead of applying it to the skeleton.</source>
+<target xml:lang="pt">When root motion is enabled, Stride applies the <g id="1">root node animation</g> to the <g id="2">TransformComponent</g> of the entity you add the animation to, instead of applying it to the skeleton.</target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>!Note<x id="2"/>
+If there is no skeleton specified in <g id="3">Skeleton</g>, Stride always applies the animation to <g id="4">TransformComponent</g>, even if <g id="5">root motion</g> is disabled.</source>
+<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
+If there is no skeleton specified in <g id="3">Skeleton</g>, Stride always applies the animation to <g id="4">TransformComponent</g>, even if <g id="5">root motion</g> is disabled.</target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en">In the <g id="1">Scene Editor</g>, select the entity that contains the camera you want to animate.</source>
+<target xml:lang="pt">In the <g id="1">Scene Editor</g>, select the entity that contains the camera you want to animate.</target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>!Note<x id="2"/>
+For instructions about how add cameras, see <g id="3">Cameras</g>.</source>
+<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
+For instructions about how add cameras, see <g id="3">Cameras</g>.</target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en">In the <g id="1">Property Grid</g>, click <g id="2">Add component</g> and select <g id="3">Animations</g>.</source>
+<target xml:lang="pt">In the <g id="1">Property Grid</g>, click <g id="2">Add component</g> and select <g id="3">Animations</g>.</target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Select an entity<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Select an entity<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en">Game Studio adds an animation component to the entity.</source>
+<target xml:lang="pt">Game Studio adds an animation component to the entity.</target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Animation component<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Animation component<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en">Next to <g id="1">Animations</g>, click <x id="2"/>Green plus button<x id="3"/> (<g id="4">Add</g>) and type a name.</source>
+<target xml:lang="pt">Next to <g id="1">Animations</g>, click <x id="2"/>Green plus button<x id="3"/> (<g id="4">Add</g>) and type a name.</target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Add animation<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Add animation<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en">Game Studio adds an animation to the list.</source>
+<target xml:lang="pt">Game Studio adds an animation to the list.</target>
+</trans-unit>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Animation added<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Animation added<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu29" xml:space="preserve">
+<source xml:lang="en">Next to the animation you added, click <x id="1"/>Hand icon<x id="2"/> (<g id="3">Select an asset</g>).</source>
+<target xml:lang="pt">Next to the animation you added, click <x id="1"/>Hand icon<x id="2"/> (<g id="3">Select an asset</g>).</target>
+</trans-unit>
+<trans-unit id="tu30" xml:space="preserve">
+<source xml:lang="en">The <g id="1">Select an asset</g> window opens.</source>
+<target xml:lang="pt">The <g id="1">Select an asset</g> window opens.</target>
+</trans-unit>
+<trans-unit id="tu31" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Select an asset<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Select an asset<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu32" xml:space="preserve">
+<source xml:lang="en">Select the animation you want to use to animate the camera and click <g id="1">OK</g>.</source>
+<target xml:lang="pt">Select the animation you want to use to animate the camera and click <g id="1">OK</g>.</target>
+</trans-unit>
+<trans-unit id="tu33" xml:space="preserve">
+<source xml:lang="en">Click <g id="1">Add component</g> and select the animation script you want to use to animate the camera.</source>
+<target xml:lang="pt">Click <g id="1">Add component</g> and select the animation script you want to use to animate the camera.</target>
+</trans-unit>
+<trans-unit id="tu34" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Add animation script<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Add animation script<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu35" xml:space="preserve">
+<source xml:lang="en">Game Studio adds the script to the entity as a component.</source>
+<target xml:lang="pt">Game Studio adds the script to the entity as a component.</target>
+</trans-unit>
+<trans-unit id="tu36" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>!Note<x id="2"/>
+For instructions about how to add animation scripts, see <g id="3">Animation scripts</g>.</source>
+<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
+For instructions about how to add animation scripts, see <g id="3">Animation scripts</g>.</target>
+</trans-unit>
+<trans-unit id="tu37" xml:space="preserve">
+<source xml:lang="en">Under the script component, next to <g id="1">Animations</g>, click <x id="2"/>Green plus button<x id="3"/> (<g id="4">Add</g>).</source>
+<target xml:lang="pt">Under the script component, next to <g id="1">Animations</g>, click <x id="2"/>Green plus button<x id="3"/> (<g id="4">Add</g>).</target>
+</trans-unit>
+<trans-unit id="tu38" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Add animation to the list<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Add animation to the list<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu39" xml:space="preserve">
+<source xml:lang="en">Next to <g id="1">Clip</g>, click <x id="2"/>Hand icon<x id="3"/> (<g id="4">Select an asset</g>).</source>
+<target xml:lang="pt">Next to <g id="1">Clip</g>, click <x id="2"/>Hand icon<x id="3"/> (<g id="4">Select an asset</g>).</target>
+</trans-unit>
+<trans-unit id="tu40" xml:space="preserve">
+<source xml:lang="en">The <g id="1">Select an asset</g> window opens.</source>
+<target xml:lang="pt">The <g id="1">Select an asset</g> window opens.</target>
+</trans-unit>
+<trans-unit id="tu41" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Select an asset<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Select an asset<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu42" xml:space="preserve">
+<source xml:lang="en">Select the animation asset you want to use to animate the camera and click <g id="1">OK</g>.</source>
+<target xml:lang="pt">Select the animation asset you want to use to animate the camera and click <g id="1">OK</g>.</target>
+</trans-unit>
+<trans-unit id="tu43" xml:space="preserve">
+<source xml:lang="en">At runtime, the camera uses the animation. If the animation includes FOV or near or far plane animations, the Stride camera updates accordingly.</source>
+<target xml:lang="pt">At runtime, the camera uses the animation. If the animation includes FOV or near or far plane animations, the Stride camera updates accordingly.</target>
+</trans-unit>
+<trans-unit id="tu44" xml:space="preserve">
+<source xml:lang="en">Attach the camera to a node on another model</source>
+<target xml:lang="pt">Attach the camera to a node on another model</target>
+</trans-unit>
+<trans-unit id="tu45" xml:space="preserve">
+<source xml:lang="en">To move a camera in tandem with another model, create a separate entity for the camera, then use a <g id="1">model node link</g> component to link the entity to the correct node.</source>
+<target xml:lang="pt">To move a camera in tandem with another model, create a separate entity for the camera, then use a <g id="1">model node link</g> component to link the entity to the correct node.</target>
+</trans-unit>
+<trans-unit id="tu46" xml:space="preserve">
+<source xml:lang="en">To do this, you need the following assets in your project:</source>
+<target xml:lang="pt">To do this, you need the following assets in your project:</target>
+</trans-unit>
+<trans-unit id="tu47" xml:space="preserve">
+<source xml:lang="en">a <g id="1">camera entity</g>, the camera you want to animate</source>
+<target xml:lang="pt">a <g id="1">camera entity</g>, the camera you want to animate</target>
+</trans-unit>
+<trans-unit id="tu48" xml:space="preserve">
+<source xml:lang="en">a <g id="1">model</g>, to attach the camera to</source>
+<target xml:lang="pt">a <g id="1">model</g>, to attach the camera to</target>
+</trans-unit>
+<trans-unit id="tu49" xml:space="preserve">
+<source xml:lang="en">a <g id="1">skeleton</g> that matches the model</source>
+<target xml:lang="pt">a <g id="1">skeleton</g> that matches the model</target>
+</trans-unit>
+<trans-unit id="tu50" xml:space="preserve">
+<source xml:lang="en">an <g id="1">animation</g>, to animate the model</source>
+<target xml:lang="pt">an <g id="1">animation</g>, to animate the model</target>
+</trans-unit>
+<trans-unit id="tu51" xml:space="preserve">
+<source xml:lang="en">an <g id="1">animation script</g>, to play the animation</source>
+<target xml:lang="pt">an <g id="1">animation script</g>, to play the animation</target>
+</trans-unit>
+<trans-unit id="tu52" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>!Note<x id="2"/>
+FOV and near or far plane animations are ignored if you use this method.</source>
+<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
+FOV and near or far plane animations are ignored if you use this method.</target>
+</trans-unit>
+<trans-unit id="tu53" xml:space="preserve">
+<source xml:lang="en">In the <g id="1">Asset View</g>, select the model you want to link the camera to. Next to <g id="2">Skeleton</g>, make sure a skeleton is specified that matches the model.</source>
+<target xml:lang="pt">In the <g id="1">Asset View</g>, select the model you want to link the camera to. Next to <g id="2">Skeleton</g>, make sure a skeleton is specified that matches the model.</target>
+</trans-unit>
+<trans-unit id="tu54" xml:space="preserve">
+<source xml:lang="en">Make sure the entity you want to attach the camera to has the model, animation clip, and animation script components needed to animate it.</source>
+<target xml:lang="pt">Make sure the entity you want to attach the camera to has the model, animation clip, and animation script components needed to animate it.</target>
+</trans-unit>
+<trans-unit id="tu55" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>!Note<x id="2"/>
+For instructions about how to add these, see <g id="3">Animation</g>.</source>
+<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
+For instructions about how to add these, see <g id="3">Animation</g>.</target>
+</trans-unit>
+<trans-unit id="tu56" xml:space="preserve">
+<source xml:lang="en">With the camera entity selected, in the <g id="1">Property Grid</g>, click <g id="2">Add component</g> and select <g id="3">Model node link</g>.</source>
+<target xml:lang="pt">With the camera entity selected, in the <g id="1">Property Grid</g>, click <g id="2">Add component</g> and select <g id="3">Model node link</g>.</target>
+</trans-unit>
+<trans-unit id="tu57" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Add component<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Add component<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu58" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>!Note<x id="2"/>
+The <g id="3">TransformComponent</g> applies an offset to the model node position. If you don't want to add an offset, make sure the <g id="4">TransformComponent</g> is set to <g id="5">0,0,0</g>.</source>
+<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
+The <g id="3">TransformComponent</g> applies an offset to the model node position. If you don't want to add an offset, make sure the <g id="4">TransformComponent</g> is set to <g id="5">0,0,0</g>.</target>
+</trans-unit>
+<trans-unit id="tu59" xml:space="preserve">
+<source xml:lang="en">Game Studio adds a model link component to the entity.</source>
+<target xml:lang="pt">Game Studio adds a model link component to the entity.</target>
+</trans-unit>
+<trans-unit id="tu60" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Model node link component<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Model node link component<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu61" xml:space="preserve">
+<source xml:lang="en">Next to <g id="1">Target</g>, click <x id="2"/>Hand icon<x id="3"/> and select the entity that has the model you want to link the camera to.</source>
+<target xml:lang="pt">Next to <g id="1">Target</g>, click <x id="2"/>Hand icon<x id="3"/> and select the entity that has the model you want to link the camera to.</target>
+</trans-unit>
+<trans-unit id="tu62" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Select an entity<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Select an entity<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu63" xml:space="preserve">
+<source xml:lang="en">Alternatively, leave the <g id="1">Target</g> field blank. In the <g id="2">Entity Tree</g>, drag the <g id="3">camera entity</g> you want to animate to the entity that contains the model. Stride links the entity to the model on the parent entity.</source>
+<target xml:lang="pt">Alternatively, leave the <g id="1">Target</g> field blank. In the <g id="2">Entity Tree</g>, drag the <g id="3">camera entity</g> you want to animate to the entity that contains the model. Stride links the entity to the model on the parent entity.</target>
+</trans-unit>
+<trans-unit id="tu64" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Parent and child<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Parent and child<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu65" xml:space="preserve">
+<source xml:lang="en">In <g id="1">Node name</g>, select the node you want to link the camera to.</source>
+<target xml:lang="pt">In <g id="1">Node name</g>, select the node you want to link the camera to.</target>
+</trans-unit>
+<trans-unit id="tu66" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Node link<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Node link<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu67" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>!Note<x id="2"/>
+The entity you link to must have a model with a skeleton, even if the model isn't visible at runtime.</source>
+<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
+The entity you link to must have a model with a skeleton, even if the model isn't visible at runtime.</target>
+</trans-unit>
+<trans-unit id="tu68" xml:space="preserve">
+<source xml:lang="en">At runtime, the camera uses the animation.</source>
+<target xml:lang="pt">At runtime, the camera uses the animation.</target>
+</trans-unit>
+<trans-unit id="tu69" xml:space="preserve">
+<source xml:lang="en">See also</source>
+<target xml:lang="pt">See also</target>
+</trans-unit>
+<trans-unit id="tu70" xml:space="preserve">
+<source xml:lang="en"><g id="1">Cameras</g></source>
+<target xml:lang="pt"><g id="1">Cameras</g></target>
+</trans-unit>
+<trans-unit id="tu71" xml:space="preserve">
+<source xml:lang="en"><g id="1">Model node links</g></source>
+<target xml:lang="pt"><g id="1">Model node links</g></target>
+</trans-unit>
+<trans-unit id="tu72" xml:space="preserve">
+<source xml:lang="en"><g id="1">Animation</g></source>
+<target xml:lang="pt"><g id="1">Animation</g></target>
+</trans-unit>
+<trans-unit id="tu73" xml:space="preserve">
+<source xml:lang="en"><g id="1">Animation scripts</g></source>
+<target xml:lang="pt"><g id="1">Animation scripts</g></target>
+</trans-unit>
+</body>
+</file>
+</xliff>

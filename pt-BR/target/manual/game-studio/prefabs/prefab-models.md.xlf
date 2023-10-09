@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" xmlns:okp="okapi-framework:xliff-extensions" its:version="2.0" version="1.2">
+<file datatype="x-text/x-markdown" okp:inputEncoding="UTF-8" original="/D:/repos/rr/source/manual/game-studio/prefabs/prefab-models.md" source-language="en" target-language="pt">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en">Prefab models</source>
+<target xml:lang="pt">Prefab models</target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Beginner<x id="2"/>
+<x id="3"/>Designer<x id="4"/></source>
+<target xml:lang="pt"><x id="1"/>Beginner<x id="2"/>
+<x id="3"/>Designer<x id="4"/></target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en"><g id="1">Prefab models</g> convert prefabs to single drawcalls. This is useful for optimization, as Stride only renders the final model instead of the separate entities in the prefab. When you make changes to the prefab, Game Studio regenerates the prefab model.</source>
+<target xml:lang="pt"><g id="1">Prefab models</g> convert prefabs to single drawcalls. This is useful for optimization, as Stride only renders the final model instead of the separate entities in the prefab. When you make changes to the prefab, Game Studio regenerates the prefab model.</target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">Drawbacks</source>
+<target xml:lang="pt">Drawbacks</target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">Prefab models don't inherit elements such as lights, colliders, or other components — they're only models, and have to be used just like other models. For example, if you have a prefab comprising two models with physics components, the prefab model creates a single model from the two models and ignores the physics components. If you need to add components to a prefab model, add them to the prefab model itself.</source>
+<target xml:lang="pt">Prefab models don't inherit elements such as lights, colliders, or other components — they're only models, and have to be used just like other models. For example, if you have a prefab comprising two models with physics components, the prefab model creates a single model from the two models and ignores the physics components. If you need to add components to a prefab model, add them to the prefab model itself.</target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en">Prefab models don't expose materials. This means you can't view or edit them in the prefab model asset, or in model components that use the prefab model.</source>
+<target xml:lang="pt">Prefab models don't expose materials. This means you can't view or edit them in the prefab model asset, or in model components that use the prefab model.</target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en">Create a prefab model</source>
+<target xml:lang="pt">Create a prefab model</target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en">In the <g id="1">Asset View</g>, select <g id="2">Add asset &gt; Model &gt; Prefab model</g>.</source>
+<target xml:lang="pt">In the <g id="1">Asset View</g>, select <g id="2">Add asset &gt; Model &gt; Prefab model</g>.</target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Add prefab model<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Add prefab model<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en">In the Property Grid (on the right by default), next to <g id="1">Prefab</g>, click <x id="2"/>Hand icon<x id="3"/> (<g id="4">Select asset</g>).</source>
+<target xml:lang="pt">In the Property Grid (on the right by default), next to <g id="1">Prefab</g>, click <x id="2"/>Hand icon<x id="3"/> (<g id="4">Select asset</g>).</target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Prefab properties<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Prefab properties<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en">The <g id="1">Select an asset</g> window opens.</source>
+<target xml:lang="pt">The <g id="1">Select an asset</g> window opens.</target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Select prefab for model<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Select prefab for model<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en">Select the prefab you want to create a model from and click <g id="1">OK</g>.</source>
+<target xml:lang="pt">Select the prefab you want to create a model from and click <g id="1">OK</g>.</target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en">Game Studio adds the prefab model to the Asset View.</source>
+<target xml:lang="pt">Game Studio adds the prefab model to the Asset View.</target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Prefab model added<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Prefab model added<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en">See also</source>
+<target xml:lang="pt">See also</target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en"><g id="1">Create a prefab</g></source>
+<target xml:lang="pt"><g id="1">Create a prefab</g></target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en"><g id="1">Use prefabs</g></source>
+<target xml:lang="pt"><g id="1">Use prefabs</g></target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en"><g id="1">Edit prefabs</g></source>
+<target xml:lang="pt"><g id="1">Edit prefabs</g></target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en"><g id="1">Nested prefabs</g></source>
+<target xml:lang="pt"><g id="1">Nested prefabs</g></target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en"><g id="1">Override prefab properties</g></source>
+<target xml:lang="pt"><g id="1">Override prefab properties</g></target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en"><g id="1">Archetypes</g></source>
+<target xml:lang="pt"><g id="1">Archetypes</g></target>
+</trans-unit>
+</body>
+</file>
+</xliff>

@@ -1,0 +1,582 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" xmlns:okp="okapi-framework:xliff-extensions" its:version="2.0" version="1.2">
+<file datatype="x-text/x-markdown" okp:inputEncoding="UTF-8" original="/D:/repos/rr/source/manual/physics/script-a-trigger.md" source-language="en" target-language="pt">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en">Tutorial: Script a trigger</source>
+<target xml:lang="pt">Tutorial: Script a trigger</target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Beginner<x id="2"/>
+<x id="3"/>Designer<x id="4"/></source>
+<target xml:lang="pt"><x id="1"/>Beginner<x id="2"/>
+<x id="3"/>Designer<x id="4"/></target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">In this tutorial, we'll create a <g id="1">trigger</g> that doubles the size of a ball when the ball passes through it.</source>
+<target xml:lang="pt">In this tutorial, we'll create a <g id="1">trigger</g> that doubles the size of a ball when the ball passes through it.</target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>!Note<x id="2"/>
+The screenshots and videos in this tutorial were made using an earlier version of Stride, so some parts of the UI, and the default skybox and sphere, might look different from your version.</source>
+<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
+The screenshots and videos in this tutorial were made using an earlier version of Stride, so some parts of the UI, and the default skybox and sphere, might look different from your version.</target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">1. Create a bouncing ball</source>
+<target xml:lang="pt">1. Create a bouncing ball</target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en">Follow the instructions in the <g id="1">Create a bouncing ball</g> tutorial. This creates a simple scene in which a ball falls from mid-air, hits the ground, and bounces.</source>
+<target xml:lang="pt">Follow the instructions in the <g id="1">Create a bouncing ball</g> tutorial. This creates a simple scene in which a ball falls from mid-air, hits the ground, and bounces.</target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en">2. Set the restitution</source>
+<target xml:lang="pt">2. Set the restitution</target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en">For this tutorial, we'll set the restitution of both the ground and the sphere to 0.9, which makes the ball very bouncy. This makes it easier to see the effect of the trigger later, as the ball will bounce in and out of the trigger area repeatedly.</source>
+<target xml:lang="pt">For this tutorial, we'll set the restitution of both the ground and the sphere to 0.9, which makes the ball very bouncy. This makes it easier to see the effect of the trigger later, as the ball will bounce in and out of the trigger area repeatedly.</target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en">Select the <g id="1">Sphere</g> entity.</source>
+<target xml:lang="pt">Select the <g id="1">Sphere</g> entity.</target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en">In the <g id="1">Property Grid</g>, under <g id="2">Rigidbody</g>, set the <g id="3">Restitution</g> to <g id="4">0.9</g>.</source>
+<target xml:lang="pt">In the <g id="1">Property Grid</g>, under <g id="2">Rigidbody</g>, set the <g id="3">Restitution</g> to <g id="4">0.9</g>.</target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Set restitution for a sphere<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Set restitution for a sphere<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en">Select the <g id="1">Ground</g> entity.</source>
+<target xml:lang="pt">Select the <g id="1">Ground</g> entity.</target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en">In the <g id="1">Property Grid</g>, under <g id="2">Static Collider</g>, set the <g id="3">Restitution</g> to <g id="4">0.9</g>.</source>
+<target xml:lang="pt">In the <g id="1">Property Grid</g>, under <g id="2">Static Collider</g>, set the <g id="3">Restitution</g> to <g id="4">0.9</g>.</target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Set restitution for the ground<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Set restitution for the ground<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en">3. Add a trigger</source>
+<target xml:lang="pt">3. Add a trigger</target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en">Now we'll add a trigger between the ball and the ground, so the ball passes through it.</source>
+<target xml:lang="pt">Now we'll add a trigger between the ball and the ground, so the ball passes through it.</target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en">In the <g id="1">Scene Editor</g>, click the white plus button (<g id="2">Create new entity</g>) and select <g id="3">Empty entity</g>.</source>
+<target xml:lang="pt">In the <g id="1">Scene Editor</g>, click the white plus button (<g id="2">Create new entity</g>) and select <g id="3">Empty entity</g>.</target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Create new entity<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Create new entity<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en">Game Studio adds an entity to the scene with the default name <g id="1">Entity</g>.</source>
+<target xml:lang="pt">Game Studio adds an entity to the scene with the default name <g id="1">Entity</g>.</target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en">This entity will be our trigger, so rename it <g id="1">Trigger</g> to make it easy to identify.</source>
+<target xml:lang="pt">This entity will be our trigger, so rename it <g id="1">Trigger</g> to make it easy to identify.</target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en">Since we don't need the trigger to move, we'll make it a static collider. In the <g id="1">Property Grid</g>, click <g id="2">Add component</g> and select <g id="3">Static Collider</g>.</source>
+<target xml:lang="pt">Since we don't need the trigger to move, we'll make it a static collider. In the <g id="1">Property Grid</g>, click <g id="2">Add component</g> and select <g id="3">Static Collider</g>.</target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Add Static collider component<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Add Static collider component<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en">In the <g id="1">Property Grid</g>, expand the <g id="2">Static Collider component</g> to view its properties.</source>
+<target xml:lang="pt">In the <g id="1">Property Grid</g>, expand the <g id="2">Static Collider component</g> to view its properties.</target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en">Select the <g id="1">Is Trigger</g> checkbox.</source>
+<target xml:lang="pt">Select the <g id="1">Is Trigger</g> checkbox.</target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Check 'Is trigger'<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Check 'Is trigger'<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en">This makes the collider a trigger. This means objects can pass through it, but are still detected in the code.</source>
+<target xml:lang="pt">This makes the collider a trigger. This means objects can pass through it, but are still detected in the code.</target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en">We need to give the trigger a shape. Next to <g id="1">Collider Shapes</g>, click <x id="2"/>Green plus button<x id="3"/> (<g id="4">Add</g>) and select <g id="5">Box</g>.</source>
+<target xml:lang="pt">We need to give the trigger a shape. Next to <g id="1">Collider Shapes</g>, click <x id="2"/>Green plus button<x id="3"/> (<g id="4">Add</g>) and select <g id="5">Box</g>.</target>
+</trans-unit>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Add collider shape<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Add collider shape<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu29" xml:space="preserve">
+<source xml:lang="en">This gives the trigger a box shape.</source>
+<target xml:lang="pt">This gives the trigger a box shape.</target>
+</trans-unit>
+<trans-unit id="tu30" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Added trigger<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Added trigger<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu31" xml:space="preserve">
+<source xml:lang="en">Let's make the trigger a larger area. In the <g id="1">Property Grid</g>, under the <g id="2">Transform</g> component properties, set the <g id="3">scale</g> to: <g id="4">X:2, Y:2, Z:2</g></source>
+<target xml:lang="pt">Let's make the trigger a larger area. In the <g id="1">Property Grid</g>, under the <g id="2">Transform</g> component properties, set the <g id="3">scale</g> to: <g id="4">X:2, Y:2, Z:2</g></target>
+</trans-unit>
+<trans-unit id="tu32" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Scale a trigger<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Scale a trigger<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu33" xml:space="preserve">
+<source xml:lang="en">This doubles the size of the trigger.</source>
+<target xml:lang="pt">This doubles the size of the trigger.</target>
+</trans-unit>
+<trans-unit id="tu34" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Added trigger<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Added trigger<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu35" xml:space="preserve">
+<source xml:lang="en">4. Give the trigger a model</source>
+<target xml:lang="pt">4. Give the trigger a model</target>
+</trans-unit>
+<trans-unit id="tu36" xml:space="preserve">
+<source xml:lang="en">Right now, the trigger is invisible at runtime. To better show how the trigger works, we'll make it a transparent box. This has no effect on how the trigger works; it just means we can easily see where it is at runtime.</source>
+<target xml:lang="pt">Right now, the trigger is invisible at runtime. To better show how the trigger works, we'll make it a transparent box. This has no effect on how the trigger works; it just means we can easily see where it is at runtime.</target>
+</trans-unit>
+<trans-unit id="tu37" xml:space="preserve">
+<source xml:lang="en">Create a new procedural model asset. To do this, in the <g id="1">Asset View</g>, click <g id="2">Add asset</g>, and select <g id="3">Models &gt; Cube</g>.</source>
+<target xml:lang="pt">Create a new procedural model asset. To do this, in the <g id="1">Asset View</g>, click <g id="2">Add asset</g>, and select <g id="3">Models &gt; Cube</g>.</target>
+</trans-unit>
+<trans-unit id="tu38" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Add a model asset<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Add a model asset<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu39" xml:space="preserve">
+<source xml:lang="en">Create a new empty material asset. To do this, in the <g id="1">Asset View</g>, click <g id="2">Add asset</g>, and select <g id="3">Materials &gt; Material</g>.</source>
+<target xml:lang="pt">Create a new empty material asset. To do this, in the <g id="1">Asset View</g>, click <g id="2">Add asset</g>, and select <g id="3">Materials &gt; Material</g>.</target>
+</trans-unit>
+<trans-unit id="tu40" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Add a material asset<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Add a material asset<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu41" xml:space="preserve">
+<source xml:lang="en">Let's rename the material to make it easy to identify. To do this, right-click, select <g id="1">Rename</g>, and type a new name (eg <g id="2">Transparent</g>).</source>
+<target xml:lang="pt">Let's rename the material to make it easy to identify. To do this, right-click, select <g id="1">Rename</g>, and type a new name (eg <g id="2">Transparent</g>).</target>
+</trans-unit>
+<trans-unit id="tu42" xml:space="preserve">
+<source xml:lang="en">Select the <g id="1">Trigger</g> entity. In the <g id="2">Property Grid</g>, click <g id="3">Add component</g> and select <g id="4">Model</g>.</source>
+<target xml:lang="pt">Select the <g id="1">Trigger</g> entity. In the <g id="2">Property Grid</g>, click <g id="3">Add component</g> and select <g id="4">Model</g>.</target>
+</trans-unit>
+<trans-unit id="tu43" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Add a model component<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Add a model component<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu44" xml:space="preserve">
+<source xml:lang="en">Game Studio adds a model component to the entity.</source>
+<target xml:lang="pt">Game Studio adds a model component to the entity.</target>
+</trans-unit>
+<trans-unit id="tu45" xml:space="preserve">
+<source xml:lang="en">Under <g id="1">Model</g>, click <x id="2"/>Hand icon<x id="3"/> (<g id="4">Select an asset</g>).</source>
+<target xml:lang="pt">Under <g id="1">Model</g>, click <x id="2"/>Hand icon<x id="3"/> (<g id="4">Select an asset</g>).</target>
+</trans-unit>
+<trans-unit id="tu46" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Pick an asset up<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Pick an asset up<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu47" xml:space="preserve">
+<source xml:lang="en">Select the <g id="1">Cube</g> model we created in step 1 and click <g id="2">OK</g>.</source>
+<target xml:lang="pt">Select the <g id="1">Cube</g> model we created in step 1 and click <g id="2">OK</g>.</target>
+</trans-unit>
+<trans-unit id="tu48" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Select Cube model<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Select Cube model<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu49" xml:space="preserve">
+<source xml:lang="en">In the <g id="1">Property Grid</g>, under <g id="2">Model &gt; Materials</g>, click <x id="3"/>Hand icon<x id="4"/> (<g id="5">Select an asset</g>).</source>
+<target xml:lang="pt">In the <g id="1">Property Grid</g>, under <g id="2">Model &gt; Materials</g>, click <x id="3"/>Hand icon<x id="4"/> (<g id="5">Select an asset</g>).</target>
+</trans-unit>
+<trans-unit id="tu50" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Select material<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Select material<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu51" xml:space="preserve">
+<source xml:lang="en">Select the <g id="1">Transparent</g> material we created in step 2 and click <g id="2">OK</g>.</source>
+<target xml:lang="pt">Select the <g id="1">Transparent</g> material we created in step 2 and click <g id="2">OK</g>.</target>
+</trans-unit>
+<trans-unit id="tu52" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Select material<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Select material<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu53" xml:space="preserve">
+<source xml:lang="en">In the <g id="1">Asset View</g>, select the <g id="2">Transparent</g> material asset.</source>
+<target xml:lang="pt">In the <g id="1">Asset View</g>, select the <g id="2">Transparent</g> material asset.</target>
+</trans-unit>
+<trans-unit id="tu54" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Select material in Asset View<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Select material in Asset View<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu55" xml:space="preserve">
+<source xml:lang="en">In the <g id="1">Property Grid</g>, under <g id="2">Misc &gt; Transparency</g>, select <g id="3">Blend</g>.</source>
+<target xml:lang="pt">In the <g id="1">Property Grid</g>, under <g id="2">Misc &gt; Transparency</g>, select <g id="3">Blend</g>.</target>
+</trans-unit>
+<trans-unit id="tu56" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Select Blend<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Select Blend<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu57" xml:space="preserve">
+<source xml:lang="en">By default, the Alpha is set to 1. This makes the material completely opaque. To set it to 50% opacity, set the <g id="1">Alpha</g> to 0.5.</source>
+<target xml:lang="pt">By default, the Alpha is set to 1. This makes the material completely opaque. To set it to 50% opacity, set the <g id="1">Alpha</g> to 0.5.</target>
+</trans-unit>
+<trans-unit id="tu58" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Select Blend<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Select Blend<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu59" xml:space="preserve">
+<source xml:lang="en">Now the trigger area will be visible at runtime.</source>
+<target xml:lang="pt">Now the trigger area will be visible at runtime.</target>
+</trans-unit>
+<trans-unit id="tu60" xml:space="preserve">
+<source xml:lang="en">5. Position the trigger</source>
+<target xml:lang="pt">5. Position the trigger</target>
+</trans-unit>
+<trans-unit id="tu61" xml:space="preserve">
+<source xml:lang="en">We need to position the trigger between the ground and the sphere, so the ball falls through it.</source>
+<target xml:lang="pt">We need to position the trigger between the ground and the sphere, so the ball falls through it.</target>
+</trans-unit>
+<trans-unit id="tu62" xml:space="preserve">
+<source xml:lang="en">In the <g id="1">Property Grid</g>, under <g id="2">Transform</g>, set the <g id="3">Position</g> to: <g id="4">X:0, Y:3, Z:0</g></source>
+<target xml:lang="pt">In the <g id="1">Property Grid</g>, under <g id="2">Transform</g>, set the <g id="3">Position</g> to: <g id="4">X:0, Y:3, Z:0</g></target>
+</trans-unit>
+<trans-unit id="tu63" xml:space="preserve">
+<source xml:lang="en">Now the trigger entity is between the ground and the sphere:</source>
+<target xml:lang="pt">Now the trigger entity is between the ground and the sphere:</target>
+</trans-unit>
+<trans-unit id="tu64" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Trigger between ground and sphere<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Trigger between ground and sphere<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu65" xml:space="preserve">
+<source xml:lang="en">6. Change the sphere size with script</source>
+<target xml:lang="pt">6. Change the sphere size with script</target>
+</trans-unit>
+<trans-unit id="tu66" xml:space="preserve">
+<source xml:lang="en">If we run the project now (<g id="1">F5</g>), the ball falls through the trigger, but nothing happens.</source>
+<target xml:lang="pt">If we run the project now (<g id="1">F5</g>), the ball falls through the trigger, but nothing happens.</target>
+</trans-unit>
+<group id="sd1_ssf5" resname="sub-filter:sd1">
+<trans-unit id="sd1_sf5_tu1" resname="sd1_1" restype="x-paragraph" xml:space="preserve">
+<source xml:lang="en">
+</source>
+<target xml:lang="pt">
+</target>
+</trans-unit>
+</group>
+<trans-unit id="tu67" xml:space="preserve">
+<source xml:lang="en">Let's write a script to change the size of the ball when it enters the trigger.</source>
+<target xml:lang="pt">Let's write a script to change the size of the ball when it enters the trigger.</target>
+</trans-unit>
+<trans-unit id="tu68" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>!Note<x id="2"/>
+For more information about scripts, see <g id="3">Scripts</g>.</source>
+<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
+For more information about scripts, see <g id="3">Scripts</g>.</target>
+</trans-unit>
+<trans-unit id="tu69" xml:space="preserve">
+<source xml:lang="en">In the <g id="1">Asset View</g>, click <g id="2">Add asset</g> and select <g id="3">Scripts</g> &gt; <g id="4">Async Script</g>.</source>
+<target xml:lang="pt">In the <g id="1">Asset View</g>, click <g id="2">Add asset</g> and select <g id="3">Scripts</g> &gt; <g id="4">Async Script</g>.</target>
+</trans-unit>
+<trans-unit id="tu70" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Use a script<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Use a script<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu71" xml:space="preserve">
+<source xml:lang="en">In the <g id="1">Create a script</g> dialog, name your script <g id="2">Trigger</g> and click <g id="3">Create script</g>.</source>
+<target xml:lang="pt">In the <g id="1">Create a script</g> dialog, name your script <g id="2">Trigger</g> and click <g id="3">Create script</g>.</target>
+</trans-unit>
+<trans-unit id="tu72" xml:space="preserve">
+<source xml:lang="en">2a. If Game Studio asks if you want to save your script, click <g id="1">Save</g>.</source>
+<target xml:lang="pt">2a. If Game Studio asks if you want to save your script, click <g id="1">Save</g>.</target>
+</trans-unit>
+<trans-unit id="tu73" xml:space="preserve">
+<source xml:lang="en">2b. If Game Studio asks if you want to reload the assemblies, click <g id="1">Reload</g>.</source>
+<target xml:lang="pt">2b. If Game Studio asks if you want to reload the assemblies, click <g id="1">Reload</g>.</target>
+</trans-unit>
+<trans-unit id="tu74" xml:space="preserve">
+<source xml:lang="en">Open the script, replace its content with the following code, and save the file:</source>
+<target xml:lang="pt">Open the script, replace its content with the following code, and save the file:</target>
+</trans-unit>
+<trans-unit id="tu75" xml:space="preserve">
+<source xml:lang="en">using Stride.Engine;
+using Stride.Physics;
+using System.Threading.Tasks;
+using Stride.Core.Mathematics;
+
+namespace TransformTrigger
+// You can use any namespace you like for this script.
+{
+    public class Trigger : AsyncScript
+    {
+        public override async Task Execute()
+        {
+            var trigger = Entity.Get&lt;PhysicsComponent&gt;();
+            trigger.ProcessCollisions = true;
+
+            // Start state machine
+            while (Game.IsRunning)
+            {
+                // 1. Wait for an entity to collide with the trigger
+                var firstCollision = await trigger.NewCollision();
+
+                var otherCollider = trigger == firstCollision.ColliderA
+                    ? firstCollision.ColliderB
+                    : firstCollision.ColliderA;
+                otherCollider.Entity.Transform.Scale = new Vector3(2.0f, 2.0f, 2.0f);
+
+                // 2. Wait for the entity to exit the trigger
+                await firstCollision.Ended();
+
+                otherCollider.Entity.Transform.Scale= new Vector3(1.0f, 1.0f, 1.0f);
+            }
+        }
+    }
+}
+</source>
+<target xml:lang="pt">using Stride.Engine;
+using Stride.Physics;
+using System.Threading.Tasks;
+using Stride.Core.Mathematics;
+
+namespace TransformTrigger
+// You can use any namespace you like for this script.
+{
+    public class Trigger : AsyncScript
+    {
+        public override async Task Execute()
+        {
+            var trigger = Entity.Get&lt;PhysicsComponent&gt;();
+            trigger.ProcessCollisions = true;
+
+            // Start state machine
+            while (Game.IsRunning)
+            {
+                // 1. Wait for an entity to collide with the trigger
+                var firstCollision = await trigger.NewCollision();
+
+                var otherCollider = trigger == firstCollision.ColliderA
+                    ? firstCollision.ColliderB
+                    : firstCollision.ColliderA;
+                otherCollider.Entity.Transform.Scale = new Vector3(2.0f, 2.0f, 2.0f);
+
+                // 2. Wait for the entity to exit the trigger
+                await firstCollision.Ended();
+
+                otherCollider.Entity.Transform.Scale= new Vector3(1.0f, 1.0f, 1.0f);
+            }
+        }
+    }
+}
+</target>
+</trans-unit>
+<trans-unit id="tu76" xml:space="preserve">
+<source xml:lang="en">This code doubles the size (scale) of any entity that enters the trigger. When the entity exits the trigger, it returns to its original size.</source>
+<target xml:lang="pt">This code doubles the size (scale) of any entity that enters the trigger. When the entity exits the trigger, it returns to its original size.</target>
+</trans-unit>
+<trans-unit id="tu77" xml:space="preserve">
+<source xml:lang="en">Reload the assemblies.</source>
+<target xml:lang="pt">Reload the assemblies.</target>
+</trans-unit>
+<trans-unit id="tu78" xml:space="preserve">
+<source xml:lang="en">7. Add the script</source>
+<target xml:lang="pt">7. Add the script</target>
+</trans-unit>
+<trans-unit id="tu79" xml:space="preserve">
+<source xml:lang="en">Finally, let's add this script to the trigger entity as a component.</source>
+<target xml:lang="pt">Finally, let's add this script to the trigger entity as a component.</target>
+</trans-unit>
+<trans-unit id="tu80" xml:space="preserve">
+<source xml:lang="en">In <g id="1">Game Studio</g>, select the <g id="2">Trigger</g> entity.</source>
+<target xml:lang="pt">In <g id="1">Game Studio</g>, select the <g id="2">Trigger</g> entity.</target>
+</trans-unit>
+<trans-unit id="tu81" xml:space="preserve">
+<source xml:lang="en">In the <g id="1">Property Grid</g>, click <g id="2">Add component</g> and select the <g id="3">Trigger</g> script.</source>
+<target xml:lang="pt">In the <g id="1">Property Grid</g>, click <g id="2">Add component</g> and select the <g id="3">Trigger</g> script.</target>
+</trans-unit>
+<trans-unit id="tu82" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Add script component to entity<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Add script component to entity<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu83" xml:space="preserve">
+<source xml:lang="en">8. Run the project</source>
+<target xml:lang="pt">8. Run the project</target>
+</trans-unit>
+<trans-unit id="tu84" xml:space="preserve">
+<source xml:lang="en">Run the project (<g id="1">F5</g>) to see the trigger in action.</source>
+<target xml:lang="pt">Run the project (<g id="1">F5</g>) to see the trigger in action.</target>
+</trans-unit>
+<trans-unit id="tu85" xml:space="preserve">
+<source xml:lang="en">The ball falls through the trigger, doubles in size, exits the trigger, and returns to its normal size.</source>
+<target xml:lang="pt">The ball falls through the trigger, doubles in size, exits the trigger, and returns to its normal size.</target>
+</trans-unit>
+<group id="sd1_ssf6" resname="sub-filter:sd1">
+<trans-unit id="sd1_sf6_tu1" resname="sd1_1" restype="x-paragraph" xml:space="preserve">
+<source xml:lang="en">
+</source>
+<target xml:lang="pt">
+</target>
+</trans-unit>
+</group>
+<trans-unit id="tu86" xml:space="preserve">
+<source xml:lang="en">More ideas</source>
+<target xml:lang="pt">More ideas</target>
+</trans-unit>
+<trans-unit id="tu87" xml:space="preserve">
+<source xml:lang="en">You can alter the script to make other changes when the sphere enters the trigger.</source>
+<target xml:lang="pt">You can alter the script to make other changes when the sphere enters the trigger.</target>
+</trans-unit>
+<trans-unit id="tu88" xml:space="preserve">
+<source xml:lang="en">For example, you can switch the material on the sphere entity. This script switches the material on the Sphere entity from the <g id="1">Sphere Material</g> to the <g id="2">Ground Material</g> and back again:</source>
+<target xml:lang="pt">For example, you can switch the material on the sphere entity. This script switches the material on the Sphere entity from the <g id="1">Sphere Material</g> to the <g id="2">Ground Material</g> and back again:</target>
+</trans-unit>
+<trans-unit id="tu89" xml:space="preserve">
+<source xml:lang="en">using Stride.Engine;
+using Stride.Physics;
+using System.Threading.Tasks;
+using Stride.Core.Mathematics;
+using Stride.Rendering;
+
+namespace TransformTrigger
+// You can use any namespace you like for this script.
+{
+    public class Trigger : AsyncScript
+    {
+        private Material material1;
+        private Material material2;
+    
+        public override async Task Execute()
+        {
+            var trigger = Entity.Get&lt;PhysicsComponent&gt;();
+            trigger.ProcessCollisions = true;
+            
+            // Make sure the materials are loaded 
+            material1 = Content.Load&lt;Material&gt;("Sphere Material");
+            material2 = Content.Load&lt;Material&gt;("Ground Material");
+
+            // Start state machine
+            while (Game.IsRunning)
+            {
+                // 1. Wait for an entity to collide with the trigger
+                var firstCollision = await trigger.NewCollision();
+
+                var otherCollider = trigger == firstCollision.ColliderA
+                    ? firstCollision.ColliderB
+                    : firstCollision.ColliderA;
+                    
+                // 2. Change the material on the entity
+                otherCollider.Entity.Get&lt;ModelComponent&gt;().Materials[0] = material2;
+                
+                // 3. Wait for the entity to exit the trigger
+                await firstCollision.Ended();
+
+                // 4. Change the material back to the original one
+                otherCollider.Entity.Get&lt;ModelComponent&gt;().Materials[0] = material1;
+            }
+        }
+        
+        public override void Cancel()
+        {
+            Content.Unload(material1);
+            Content.Unload(material2);
+        }
+    }
+}
+</source>
+<target xml:lang="pt">using Stride.Engine;
+using Stride.Physics;
+using System.Threading.Tasks;
+using Stride.Core.Mathematics;
+using Stride.Rendering;
+
+namespace TransformTrigger
+// You can use any namespace you like for this script.
+{
+    public class Trigger : AsyncScript
+    {
+        private Material material1;
+        private Material material2;
+    
+        public override async Task Execute()
+        {
+            var trigger = Entity.Get&lt;PhysicsComponent&gt;();
+            trigger.ProcessCollisions = true;
+            
+            // Make sure the materials are loaded 
+            material1 = Content.Load&lt;Material&gt;("Sphere Material");
+            material2 = Content.Load&lt;Material&gt;("Ground Material");
+
+            // Start state machine
+            while (Game.IsRunning)
+            {
+                // 1. Wait for an entity to collide with the trigger
+                var firstCollision = await trigger.NewCollision();
+
+                var otherCollider = trigger == firstCollision.ColliderA
+                    ? firstCollision.ColliderB
+                    : firstCollision.ColliderA;
+                    
+                // 2. Change the material on the entity
+                otherCollider.Entity.Get&lt;ModelComponent&gt;().Materials[0] = material2;
+                
+                // 3. Wait for the entity to exit the trigger
+                await firstCollision.Ended();
+
+                // 4. Change the material back to the original one
+                otherCollider.Entity.Get&lt;ModelComponent&gt;().Materials[0] = material1;
+            }
+        }
+        
+        public override void Cancel()
+        {
+            Content.Unload(material1);
+            Content.Unload(material2);
+        }
+    }
+}
+</target>
+</trans-unit>
+<group id="sd1_ssf7" resname="sub-filter:sd1">
+<trans-unit id="sd1_sf7_tu1" resname="sd1_1" restype="x-paragraph" xml:space="preserve">
+<source xml:lang="en">
+</source>
+<target xml:lang="pt">
+</target>
+</trans-unit>
+</group>
+<trans-unit id="tu90" xml:space="preserve">
+<source xml:lang="en">See also</source>
+<target xml:lang="pt">See also</target>
+</trans-unit>
+<trans-unit id="tu91" xml:space="preserve">
+<source xml:lang="en"><g id="1">Tutorial: Create a bouncing ball</g></source>
+<target xml:lang="pt"><g id="1">Tutorial: Create a bouncing ball</g></target>
+</trans-unit>
+<trans-unit id="tu92" xml:space="preserve">
+<source xml:lang="en"><g id="1">Colliders</g></source>
+<target xml:lang="pt"><g id="1">Colliders</g></target>
+</trans-unit>
+<trans-unit id="tu93" xml:space="preserve">
+<source xml:lang="en"><g id="1">Collider shapes</g></source>
+<target xml:lang="pt"><g id="1">Collider shapes</g></target>
+</trans-unit>
+<trans-unit id="tu94" xml:space="preserve">
+<source xml:lang="en"><g id="1">Scripts</g></source>
+<target xml:lang="pt"><g id="1">Scripts</g></target>
+</trans-unit>
+</body>
+</file>
+</xliff>

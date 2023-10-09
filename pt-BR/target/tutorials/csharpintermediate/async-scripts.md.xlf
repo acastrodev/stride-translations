@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" xmlns:okp="okapi-framework:xliff-extensions" its:version="2.0" version="1.2">
+<file datatype="x-text/x-markdown" okp:inputEncoding="UTF-8" original="/D:/repos/rr/source/tutorials/csharpintermediate/async-scripts.md" source-language="en" target-language="pt">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en">Async scripts</source>
+<target xml:lang="pt">Async scripts</target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en">This C# Intermediate tutorial covers the usage of asynchronous scripts or <g id="1">async</g> scripts.</source>
+<target xml:lang="pt">This C# Intermediate tutorial covers the usage of asynchronous scripts or <g id="1">async</g> scripts.</target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">Explanation</source>
+<target xml:lang="pt">Explanation</target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">Up until this point every tutorial has been using <g id="1">sync</g> scripts. That means that those scripts are executed right after each other. If one particular sync script would take 1 second to complete, our game would freeze that 1 second, until the update loop is complete. All of the previously made Sync scripts can be made into an Async script.</source>
+<target xml:lang="pt">Up until this point every tutorial has been using <g id="1">sync</g> scripts. That means that those scripts are executed right after each other. If one particular sync script would take 1 second to complete, our game would freeze that 1 second, until the update loop is complete. All of the previously made Sync scripts can be made into an Async script.</target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">With Async scripts we can perform heavy duty operations or reach out to an api without it freezing our application. A game can be made entirely with either Sync or Async scripts, or a combination of them both.</source>
+<target xml:lang="pt">With Async scripts we can perform heavy duty operations or reach out to an api without it freezing our application. A game can be made entirely with either Sync or Async scripts, or a combination of them both.</target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>!Video https://www.youtube.com/embed/xWozou1AJGM<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>!Video https://www.youtube.com/embed/xWozou1AJGM<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en">Retrieving data from a web api</source>
+<target xml:lang="pt">Retrieving data from a web api</target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en">A common use case for async scripts is retrieving data from a web API. Depending on the speed of the API and the amount of data to be retrieved, this can take up to somewhere between 20 milliseconds and 2 seconds.
+[!code-csharp<g id="1">AsyncWebApi</g>]</source>
+<target xml:lang="pt">A common use case for async scripts is retrieving data from a web API. Depending on the speed of the API and the amount of data to be retrieved, this can take up to somewhere between 20 milliseconds and 2 seconds.
+[!code-csharp<g id="1">AsyncWebApi</g>]</target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en">Async Collision trigger</source>
+<target xml:lang="pt">Async Collision trigger</target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en">In a previous tutorial we made a collision trigger script that would notify the user once an object is passing through it. We can make a similar script using Async script.
+[!code-csharp<g id="1">AsyncCollisionTrigger</g>]</source>
+<target xml:lang="pt">In a previous tutorial we made a collision trigger script that would notify the user once an object is passing through it. We can make a similar script using Async script.
+[!code-csharp<g id="1">AsyncCollisionTrigger</g>]</target>
+</trans-unit>
+</body>
+</file>
+</xliff>

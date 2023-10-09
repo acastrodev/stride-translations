@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" xmlns:okp="okapi-framework:xliff-extensions" its:version="2.0" version="1.2">
+<file datatype="x-text/x-markdown" okp:inputEncoding="UTF-8" original="/D:/repos/rr/source/manual/graphics/effects-and-shaders/custom-shaders.md" source-language="en" target-language="pt">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en">Custom shaders</source>
+<target xml:lang="pt">Custom shaders</target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Intermediate<x id="2"/>
+<x id="3"/>Programmer<x id="4"/></source>
+<target xml:lang="pt"><x id="1"/>Intermediate<x id="2"/>
+<x id="3"/>Programmer<x id="4"/></target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">You can write your own shaders in Visual Studio and use them in <g id="1">material attributes</g>. For example, you can write a shader to add textures to materials based on the objects' world positions, or generate noise and use it to randomize material properties.</source>
+<target xml:lang="pt">You can write your own shaders in Visual Studio and use them in <g id="1">material attributes</g>. For example, you can write a shader to add textures to materials based on the objects' world positions, or generate noise and use it to randomize material properties.</target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">As shaders are text files, you can add comments, enable and disable lines of code, and edit them like any other code file. This makes them easy to maintain and iterate.</source>
+<target xml:lang="pt">As shaders are text files, you can add comments, enable and disable lines of code, and edit them like any other code file. This makes them easy to maintain and iterate.</target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">You can also use custom shaders to create custom post effects. For more information, see <g id="1">Custom color transforms</g>.</source>
+<target xml:lang="pt">You can also use custom shaders to create custom post effects. For more information, see <g id="1">Custom color transforms</g>.</target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en">Create a shader</source>
+<target xml:lang="pt">Create a shader</target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en">Make sure you have the <g id="1">Stride Visual Studio extension</g> installed. This is necessary to convert the shader files from SDSL (<g id="2">Stride shading language</g>) to <g id="3">.cs</g> files.</source>
+<target xml:lang="pt">Make sure you have the <g id="1">Stride Visual Studio extension</g> installed. This is necessary to convert the shader files from SDSL (<g id="2">Stride shading language</g>) to <g id="3">.cs</g> files.</target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en">In Game Studio, in the toolbar, click <x id="1"/>Open in IDE<x id="2"/> (<g id="3">Open in IDE</g>) to open your project in Visual Studio.</source>
+<target xml:lang="pt">In Game Studio, in the toolbar, click <x id="1"/>Open in IDE<x id="2"/> (<g id="3">Open in IDE</g>) to open your project in Visual Studio.</target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en">In the Visual Studio <g id="1">Solution Explorer</g>, right-click the project (eg <g id="2">MyGame.Game</g>) and select <g id="3">Add &gt; New item</g>.</source>
+<target xml:lang="pt">In the Visual Studio <g id="1">Solution Explorer</g>, right-click the project (eg <g id="2">MyGame.Game</g>) and select <g id="3">Add &gt; New item</g>.</target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>New item<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>New item<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en">Select <g id="1">Class</g>.</source>
+<target xml:lang="pt">Select <g id="1">Class</g>.</target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Select class<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Select class<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en">In the <g id="1">Name</g> field, specify a name with the extension <g id="2">.sdsl</g> (eg <g id="3">MyShader.sdsl</g>), and click <g id="4">Add</g>.</source>
+<target xml:lang="pt">In the <g id="1">Name</g> field, specify a name with the extension <g id="2">.sdsl</g> (eg <g id="3">MyShader.sdsl</g>), and click <g id="4">Add</g>.</target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Select class<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Select class<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en">The Stride Visual Studio extension automatically generates a <g id="1">.cs</g> file from the <g id="2">.sdsl</g> file. The Solution Explorer lists it as a child of the <g id="3">.sdsl</g> file.</source>
+<target xml:lang="pt">The Stride Visual Studio extension automatically generates a <g id="1">.cs</g> file from the <g id="2">.sdsl</g> file. The Solution Explorer lists it as a child of the <g id="3">.sdsl</g> file.</target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>My shader<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>My shader<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en">Open the <g id="1">.sdsl</g> file, remove the existing lines, and write your shader.</source>
+<target xml:lang="pt">Open the <g id="1">.sdsl</g> file, remove the existing lines, and write your shader.</target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en">Shaders are written in Stride Shading Language (SDSL), which is based on HLSL. For more information, see <g id="1">Shading language</g>.</source>
+<target xml:lang="pt">Shaders are written in Stride Shading Language (SDSL), which is based on HLSL. For more information, see <g id="1">Shading language</g>.</target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en">For example, this shader creates a green color (<g id="1">RGBA 0;1;0;1</g>):</source>
+<target xml:lang="pt">For example, this shader creates a green color (<g id="1">RGBA 0;1;0;1</g>):</target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en">namespace MyGame
+{
+    shader MyShader : ComputeColor
+    {
+        override float4 Compute()
+        {
+            return float4(0, 1, 0, 1);
+        }
+    };
+}
+</source>
+<target xml:lang="pt">namespace MyGame
+{
+    shader MyShader : ComputeColor
+    {
+        override float4 Compute()
+        {
+            return float4(0, 1, 0, 1);
+        }
+    };
+}
+</target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>!Note<x id="2"/>
+Make sure the shader name in the file (eg <g id="3">MyShader</g> above) is the same as the filename.</source>
+<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
+Make sure the shader name in the file (eg <g id="3">MyShader</g> above) is the same as the filename.</target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>!Note<x id="2"/>
+To be accessible from the Game Studio Property Grid, the shader must inherit from <g id="3">ComputeColor</g>.
+As '<g id="4">ComputeColor</g> always returns a float4 value, properties that take float values (eg metalness and gloss maps) use the first component (the red component) of the value returned by <g id="5">ComputeColor</g>.</source>
+<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
+To be accessible from the Game Studio Property Grid, the shader must inherit from <g id="3">ComputeColor</g>.
+As '<g id="4">ComputeColor</g> always returns a float4 value, properties that take float values (eg metalness and gloss maps) use the first component (the red component) of the value returned by <g id="5">ComputeColor</g>.</target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en">Save all the files in the solution (<g id="1">File &gt; Save All</g>).</source>
+<target xml:lang="pt">Save all the files in the solution (<g id="1">File &gt; Save All</g>).</target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en">In Game Studio, reload the assemblies.</source>
+<target xml:lang="pt">In Game Studio, reload the assemblies.</target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Reload assemblies<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Reload assemblies<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en">The <g id="1">Asset View</g> lists the shader in the same directory as your scripts (eg <g id="2">MyGame.Game</g>).</source>
+<target xml:lang="pt">The <g id="1">Asset View</g> lists the shader in the same directory as your scripts (eg <g id="2">MyGame.Game</g>).</target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Shader in Asset View<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Shader in Asset View<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>!Note<x id="2"/>
+In some situations, Game Studio incorrectly identifies the shader as a script, as in the screenshot below:</source>
+<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
+In some situations, Game Studio incorrectly identifies the shader as a script, as in the screenshot below:</target>
+</trans-unit>
+<trans-unit id="tu29" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Shader as script<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Shader as script<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu30" xml:space="preserve">
+<source xml:lang="en">If this happens, restart Game Studio (<g id="1">File &gt; Reload project</g>).</source>
+<target xml:lang="pt">If this happens, restart Game Studio (<g id="1">File &gt; Reload project</g>).</target>
+</trans-unit>
+<trans-unit id="tu31" xml:space="preserve">
+<source xml:lang="en">Use a custom shader</source>
+<target xml:lang="pt">Use a custom shader</target>
+</trans-unit>
+<trans-unit id="tu32" xml:space="preserve">
+<source xml:lang="en">You can use custom shaders in any <g id="1">material attribute</g>.</source>
+<target xml:lang="pt">You can use custom shaders in any <g id="1">material attribute</g>.</target>
+</trans-unit>
+<trans-unit id="tu33" xml:space="preserve">
+<source xml:lang="en">In the <g id="1">Asset View</g>, select the material you want to use the shader in.</source>
+<target xml:lang="pt">In the <g id="1">Asset View</g>, select the material you want to use the shader in.</target>
+</trans-unit>
+<trans-unit id="tu34" xml:space="preserve">
+<source xml:lang="en">In the <g id="1">Property Grid</g>, next to the property you want to control with the shader, click <x id="2"/>Blue arrow button<x id="3"/> (<g id="4">Change</g>) and select <g id="5">Shader</g>.</source>
+<target xml:lang="pt">In the <g id="1">Property Grid</g>, next to the property you want to control with the shader, click <x id="2"/>Blue arrow button<x id="3"/> (<g id="4">Change</g>) and select <g id="5">Shader</g>.</target>
+</trans-unit>
+<trans-unit id="tu35" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Select Shader<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Select Shader<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu36" xml:space="preserve">
+<source xml:lang="en">In the field, type the name of your shader (eg <g id="1">MyShader</g>).</source>
+<target xml:lang="pt">In the field, type the name of your shader (eg <g id="1">MyShader</g>).</target>
+</trans-unit>
+<trans-unit id="tu37" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Type shader<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Type shader<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu38" xml:space="preserve">
+<source xml:lang="en">The property uses the shader you specify.</source>
+<target xml:lang="pt">The property uses the shader you specify.</target>
+</trans-unit>
+<trans-unit id="tu39" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>!Tip<x id="2"/>
+When you make a change to the <g id="3">.sdsl</g> file in Visual Studio and save it, Game Studio automatically updates the project with your changes. If this doesn't happen, restart Game Studio (<g id="4">File &gt; Reload project</g>).</source>
+<target xml:lang="pt"><x id="1"/>!Tip<x id="2"/>
+When you make a change to the <g id="3">.sdsl</g> file in Visual Studio and save it, Game Studio automatically updates the project with your changes. If this doesn't happen, restart Game Studio (<g id="4">File &gt; Reload project</g>).</target>
+</trans-unit>
+<trans-unit id="tu40" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>!Note<x id="2"/>
+If you delete a shader from the project assets, to prevent errors, make sure you also remove it from the properties of materials that use it.</source>
+<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
+If you delete a shader from the project assets, to prevent errors, make sure you also remove it from the properties of materials that use it.</target>
+</trans-unit>
+<trans-unit id="tu41" xml:space="preserve">
+<source xml:lang="en">Arguments and parameters</source>
+<target xml:lang="pt">Arguments and parameters</target>
+</trans-unit>
+<trans-unit id="tu42" xml:space="preserve">
+<source xml:lang="en">Template arguments</source>
+<target xml:lang="pt">Template arguments</target>
+</trans-unit>
+<trans-unit id="tu43" xml:space="preserve">
+<source xml:lang="en"><g id="1">Template arguments</g> (generics) don't change at runtime. However, different materials can use different instances of the shader with different values.</source>
+<target xml:lang="pt"><g id="1">Template arguments</g> (generics) don't change at runtime. However, different materials can use different instances of the shader with different values.</target>
+</trans-unit>
+<trans-unit id="tu44" xml:space="preserve">
+<source xml:lang="en">When the shaders are compiled, Stride substitutes template arguments with the value you set in the Property Grid.</source>
+<target xml:lang="pt">When the shaders are compiled, Stride substitutes template arguments with the value you set in the Property Grid.</target>
+</trans-unit>
+<trans-unit id="tu45" xml:space="preserve">
+<source xml:lang="en">For example, the code below defines and uses the template argument <g id="1">Frequency</g>:</source>
+<target xml:lang="pt">For example, the code below defines and uses the template argument <g id="1">Frequency</g>:</target>
+</trans-unit>
+<trans-unit id="tu46" xml:space="preserve">
+<source xml:lang="en">shader ComputeColorWave&lt;float Frequency&gt; : ComputeColor, Texturing
+{
+    override float4 Compute()
+   {           
+        return sin((Global.Time) * 2 * 3.14 * Frequency);
+    }
+};
+</source>
+<target xml:lang="pt">shader ComputeColorWave&lt;float Frequency&gt; : ComputeColor, Texturing
+{
+    override float4 Compute()
+   {           
+        return sin((Global.Time) * 2 * 3.14 * Frequency);
+    }
+};
+</target>
+</trans-unit>
+<trans-unit id="tu47" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Template argument<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Template argument<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu48" xml:space="preserve">
+<source xml:lang="en">Parameters</source>
+<target xml:lang="pt">Parameters</target>
+</trans-unit>
+<trans-unit id="tu49" xml:space="preserve">
+<source xml:lang="en">Parameters can be changed at runtime.</source>
+<target xml:lang="pt">Parameters can be changed at runtime.</target>
+</trans-unit>
+<trans-unit id="tu50" xml:space="preserve">
+<source xml:lang="en">For example, the code below defines and uses the dynamic parameter <g id="1">Frequency</g>:</source>
+<target xml:lang="pt">For example, the code below defines and uses the dynamic parameter <g id="1">Frequency</g>:</target>
+</trans-unit>
+<trans-unit id="tu51" xml:space="preserve">
+<source xml:lang="en">shader ComputeColorWave: ComputeColor, Texturing
+{
+	cbuffer PerMaterial
+	{
+		stage float Frequency = 1.0f;
+	}
+	
+    override float4 Compute()
+    {
+        return sin(( Global.Time ) * 2 * 3.14 * Frequency);
+    }
+};
+</source>
+<target xml:lang="pt">shader ComputeColorWave: ComputeColor, Texturing
+{
+	cbuffer PerMaterial
+	{
+		stage float Frequency = 1.0f;
+	}
+	
+    override float4 Compute()
+    {
+        return sin(( Global.Time ) * 2 * 3.14 * Frequency);
+    }
+};
+</target>
+</trans-unit>
+<trans-unit id="tu52" xml:space="preserve">
+<source xml:lang="en">To modify the value at runtime, access and set it in the material parameter collection. For example, to change the <g id="1">Frequency</g>, use:</source>
+<target xml:lang="pt">To modify the value at runtime, access and set it in the material parameter collection. For example, to change the <g id="1">Frequency</g>, use:</target>
+</trans-unit>
+<trans-unit id="tu53" xml:space="preserve">
+<source xml:lang="en">myMaterial.Passes[myPassIndex].Parameters.Set(ComputeColorWaveKeys.Frequency, MyFrequency);
+</source>
+<target xml:lang="pt">myMaterial.Passes[myPassIndex].Parameters.Set(ComputeColorWaveKeys.Frequency, MyFrequency);
+</target>
+</trans-unit>
+<trans-unit id="tu54" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>!Note<x id="2"/>
+<g id="3">ComputeColorWaveKeys.Frequency</g> is generated by the Stride Visual Studio extension from the shader file.</source>
+<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
+<g id="3">ComputeColorWaveKeys.Frequency</g> is generated by the Stride Visual Studio extension from the shader file.</target>
+</trans-unit>
+<trans-unit id="tu55" xml:space="preserve">
+<source xml:lang="en">Compositions</source>
+<target xml:lang="pt">Compositions</target>
+</trans-unit>
+<trans-unit id="tu56" xml:space="preserve">
+<source xml:lang="en">This <g id="1">composition</g> lets you set the <g id="2">Frequency</g> in the Game Studio Property Grid:</source>
+<target xml:lang="pt">This <g id="1">composition</g> lets you set the <g id="2">Frequency</g> in the Game Studio Property Grid:</target>
+</trans-unit>
+<trans-unit id="tu57" xml:space="preserve">
+<source xml:lang="en">shader ComputeColorWave : ComputeColor, Texturing
+{
+    compose ComputeColor Frequency;
+
+    override float4 Compute()
+    {
+        return sin(( Global.Time ) * 2 * 3.14 * Frequency.Compute().r);
+    }
+};
+</source>
+<target xml:lang="pt">shader ComputeColorWave : ComputeColor, Texturing
+{
+    compose ComputeColor Frequency;
+
+    override float4 Compute()
+    {
+        return sin(( Global.Time ) * 2 * 3.14 * Frequency.Compute().r);
+    }
+};
+</target>
+</trans-unit>
+<trans-unit id="tu58" xml:space="preserve">
+<source xml:lang="en">Then you can set the value in the material properties:</source>
+<target xml:lang="pt">Then you can set the value in the material properties:</target>
+</trans-unit>
+<trans-unit id="tu59" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Select shader<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Select shader<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu60" xml:space="preserve">
+<source xml:lang="en">Custom shader sample</source>
+<target xml:lang="pt">Custom shader sample</target>
+</trans-unit>
+<trans-unit id="tu61" xml:space="preserve">
+<source xml:lang="en">For an example of a custom shader, see the <g id="1">custom material shader</g> sample project included with Stride.</source>
+<target xml:lang="pt">For an example of a custom shader, see the <g id="1">custom material shader</g> sample project included with Stride.</target>
+</trans-unit>
+<trans-unit id="tu62" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Sample project<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Sample project<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu63" xml:space="preserve">
+<source xml:lang="en">In the project, the <g id="1">ComputeColorWaveNormal</g> shader is used in the <g id="2">displacement map</g> and <g id="3">surface</g> material properties.</source>
+<target xml:lang="pt">In the project, the <g id="1">ComputeColorWaveNormal</g> shader is used in the <g id="2">displacement map</g> and <g id="3">surface</g> material properties.</target>
+</trans-unit>
+<trans-unit id="tu64" xml:space="preserve">
+<source xml:lang="en">See also</source>
+<target xml:lang="pt">See also</target>
+</trans-unit>
+<trans-unit id="tu65" xml:space="preserve">
+<source xml:lang="en"><g id="1">Shading language</g></source>
+<target xml:lang="pt"><g id="1">Shading language</g></target>
+</trans-unit>
+<trans-unit id="tu66" xml:space="preserve">
+<source xml:lang="en"><g id="1">Custom color transforms</g></source>
+<target xml:lang="pt"><g id="1">Custom color transforms</g></target>
+</trans-unit>
+<trans-unit id="tu67" xml:space="preserve">
+<source xml:lang="en"><g id="1">Material attributes</g></source>
+<target xml:lang="pt"><g id="1">Material attributes</g></target>
+</trans-unit>
+<trans-unit id="tu68" xml:space="preserve">
+<source xml:lang="en"><g id="1">Stride Visual Studio extension</g></source>
+<target xml:lang="pt"><g id="1">Stride Visual Studio extension</g></target>
+</trans-unit>
+</body>
+</file>
+</xliff>

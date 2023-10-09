@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="/D:/repos/rr/source/manual/graphics/materials/clear-coat-shading.md" source-language="en" target-language="pt" datatype="x-text/x-markdown" okp:inputEncoding="UTF-8">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en">Clear-coat shading</source>
+<target xml:lang="pt">Clear-coat shading</target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Intermediate<x id="2"/>
+<x id="3"/>Artist<x id="4"/>
+<x id="5"/>Programmer<x id="6"/></source>
+<target xml:lang="pt"><x id="1"/>Intermediate<x id="2"/>
+<x id="3"/>Artist<x id="4"/>
+<x id="5"/>Programmer<x id="6"/></target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en"><g id="1">Clear-coat shading</g> uses physically-based rendering to simulate vehicle paint.</source>
+<target xml:lang="pt"><g id="1">Clear-coat shading</g> uses physically-based rendering to simulate vehicle paint.</target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Clear coat<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Clear coat<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">Real vehicles typically have three layers of paint applied to the body, as in the diagram below:</source>
+<target xml:lang="pt">Real vehicles typically have three layers of paint applied to the body, as in the diagram below:</target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Diagram<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Diagram<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en">To keep the shading simple, Stride only simulates the <g id="1">base coat</g> (including optional metal flakes) and <g id="2">clear coat</g> layers. Stride blends the layers depending on how far the camera is from the material. This reduces visual artifacts caused by the metal flake normal map (which becomes more visible as the camera moves away from the material).</source>
+<target xml:lang="pt">To keep the shading simple, Stride only simulates the <g id="1">base coat</g> (including optional metal flakes) and <g id="2">clear coat</g> layers. Stride blends the layers depending on how far the camera is from the material. This reduces visual artifacts caused by the metal flake normal map (which becomes more visible as the camera moves away from the material).</target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en">Clear-coat shading has several advantages over creating the effect manually with <g id="1">material layers</g>:</source>
+<target xml:lang="pt">Clear-coat shading has several advantages over creating the effect manually with <g id="1">material layers</g>:</target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en">layers are blended based on distance</source>
+<target xml:lang="pt">layers are blended based on distance</target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en">increased performance</source>
+<target xml:lang="pt">increased performance</target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en">improved visualization</source>
+<target xml:lang="pt">improved visualization</target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en">Add a clear-coat material</source>
+<target xml:lang="pt">Add a clear-coat material</target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en">Stride includes a clear-coat material template. To add it, in the <g id="1">Asset View</g>, click <g id="2">Add asset</g> and select <g id="3">Material > PBR material: clear coat</g>.</source>
+<target xml:lang="pt">Stride includes a clear-coat material template. To add it, in the <g id="1">Asset View</g>, click <g id="2">Add asset</g> and select <g id="3">Material > PBR material: clear coat</g>.</target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Add clear coat<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Add clear coat<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en">Alternatively, to set clear-coat properties yourself:</source>
+<target xml:lang="pt">Alternatively, to set clear-coat properties yourself:</target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en">Select the material you want to use clear-coat shading.</source>
+<target xml:lang="pt">Select the material you want to use clear-coat shading.</target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en">In the Property Grid, under the <g id="1">Misc</g> properties, next to <g id="2">Clear coat</g>, click <x id="3"/>Blue arrow button<x id="4"/> (<g id="5">Replace</g>) and choose <g id="6">Clear coat</g>.</source>
+<target xml:lang="pt">In the Property Grid, under the <g id="1">Misc</g> properties, next to <g id="2">Clear coat</g>, click <x id="3"/>Blue arrow button<x id="4"/> (<g id="5">Replace</g>) and choose <g id="6">Clear coat</g>.</target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Select clear coat<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Select clear coat<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>!Note<x id="2"/>
+For clear-coat shading to work correctly, make sure you enable <g id="3">Diffuse</g>, <g id="4">Specular</g> and <g id="5">Specular model</g> under the material <g id="6">Shading</g> properties.</source>
+<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
+For clear-coat shading to work correctly, make sure you enable <g id="3">Diffuse</g>, <g id="4">Specular</g> and <g id="5">Specular model</g> under the material <g id="6">Shading</g> properties.</target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Shading options<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Shading options<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en">Properties</source>
+<target xml:lang="pt">Properties</target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en">You can access the clear-coat shader properties under <g id="1">Misc > Clear coat</g>. They're split into three parts: the <g id="2">base paint</g> and optional <g id="3">metal flake</g> properties simulate the base coat, and the <g id="4">clear coat</g> properties simulate the clear coat.</source>
+<target xml:lang="pt">You can access the clear-coat shader properties under <g id="1">Misc > Clear coat</g>. They're split into three parts: the <g id="2">base paint</g> and optional <g id="3">metal flake</g> properties simulate the base coat, and the <g id="4">clear coat</g> properties simulate the clear coat.</target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en">The metal flake properties simulate a metallic paint effect. To disable the effect, remove the metal flake normal map.</source>
+<target xml:lang="pt">The metal flake properties simulate a metallic paint effect. To disable the effect, remove the metal flake normal map.</target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Add clear coat<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Add clear coat<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en">Property</source>
+<target xml:lang="pt">Property</target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en">Description</source>
+<target xml:lang="pt">Description</target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en">Base paint diffuse map</source>
+<target xml:lang="pt">Base paint diffuse map</target>
+</trans-unit>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en">The <g id="1">diffuse map</g> used by the base paint layer (the lowest  layer). This determines the color of the layer.</source>
+<target xml:lang="pt">The <g id="1">diffuse map</g> used by the base paint layer (the lowest  layer). This determines the color of the layer.</target>
+</trans-unit>
+<trans-unit id="tu29" xml:space="preserve">
+<source xml:lang="en">Base paint gloss map</source>
+<target xml:lang="pt">Base paint gloss map</target>
+</trans-unit>
+<trans-unit id="tu30" xml:space="preserve">
+<source xml:lang="en">The <g id="1">gloss map</g> used by the base paint layer. For a coherent result, use the <g id="2">metal flake normal map</g> as a mask.</source>
+<target xml:lang="pt">The <g id="1">gloss map</g> used by the base paint layer. For a coherent result, use the <g id="2">metal flake normal map</g> as a mask.</target>
+</trans-unit>
+<trans-unit id="tu31" xml:space="preserve">
+<source xml:lang="en">Metal flakes diffuse map</source>
+<target xml:lang="pt">Metal flakes diffuse map</target>
+</trans-unit>
+<trans-unit id="tu32" xml:space="preserve">
+<source xml:lang="en">The <g id="1">diffuse map</g> used by the metal flake layer (the layer above the base paint). For a coherent result, use a value close to the base paint value.</source>
+<target xml:lang="pt">The <g id="1">diffuse map</g> used by the metal flake layer (the layer above the base paint). For a coherent result, use a value close to the base paint value.</target>
+</trans-unit>
+<trans-unit id="tu33" xml:space="preserve">
+<source xml:lang="en">Metal flakes gloss map</source>
+<target xml:lang="pt">Metal flakes gloss map</target>
+</trans-unit>
+<trans-unit id="tu34" xml:space="preserve">
+<source xml:lang="en">The <g id="1">gloss map</g> used by the metal flake layer. For a coherent result, use the <g id="2">metal flake normal map</g> as a mask.</source>
+<target xml:lang="pt">The <g id="1">gloss map</g> used by the metal flake layer. For a coherent result, use the <g id="2">metal flake normal map</g> as a mask.</target>
+</trans-unit>
+<trans-unit id="tu35" xml:space="preserve">
+<source xml:lang="en">Metal flakes metalness map</source>
+<target xml:lang="pt">Metal flakes metalness map</target>
+</trans-unit>
+<trans-unit id="tu36" xml:space="preserve">
+<source xml:lang="en">The <g id="1">metalness map</g> used by the metal flake layer. For best results, use high values.</source>
+<target xml:lang="pt">The <g id="1">metalness map</g> used by the metal flake layer. For best results, use high values.</target>
+</trans-unit>
+<trans-unit id="tu37" xml:space="preserve">
+<source xml:lang="en">Metal flake normal map</source>
+<target xml:lang="pt">Metal flake normal map</target>
+</trans-unit>
+<trans-unit id="tu38" xml:space="preserve">
+<source xml:lang="en">The <g id="1">normal map</g> used by the metal flake layer. This shapes the flake geometry. A metal flake normal map  (<g id="2">StrideClearCoatMetalFlakesNM</g>) is included in the Stride assets package. If the texture has a high UV scale, enable <g id="3">Use random texture coordinates</g> below to reduce tiling effects. To disable the metal flakes effect, remove the normal map.</source>
+<target xml:lang="pt">The <g id="1">normal map</g> used by the metal flake layer. This shapes the flake geometry. A metal flake normal map  (<g id="2">StrideClearCoatMetalFlakesNM</g>) is included in the Stride assets package. If the texture has a high UV scale, enable <g id="3">Use random texture coordinates</g> below to reduce tiling effects. To disable the metal flakes effect, remove the normal map.</target>
+</trans-unit>
+<trans-unit id="tu39" xml:space="preserve">
+<source xml:lang="en">Coat gloss map</source>
+<target xml:lang="pt">Coat gloss map</target>
+</trans-unit>
+<trans-unit id="tu40" xml:space="preserve">
+<source xml:lang="en">The <g id="1">gloss map</g> used by the clear coat layer. Change this value to simulate different kinds of paint (eg matte).</source>
+<target xml:lang="pt">The <g id="1">gloss map</g> used by the clear coat layer. Change this value to simulate different kinds of paint (eg matte).</target>
+</trans-unit>
+<trans-unit id="tu41" xml:space="preserve">
+<source xml:lang="en">Clear coat metalness map</source>
+<target xml:lang="pt">Clear coat metalness map</target>
+</trans-unit>
+<trans-unit id="tu42" xml:space="preserve">
+<source xml:lang="en">The <g id="1">metalness map</g> used by the clear coat layer</source>
+<target xml:lang="pt">The <g id="1">metalness map</g> used by the clear coat layer</target>
+</trans-unit>
+<trans-unit id="tu43" xml:space="preserve">
+<source xml:lang="en">Orange peel normal map</source>
+<target xml:lang="pt">Orange peel normal map</target>
+</trans-unit>
+<trans-unit id="tu44" xml:space="preserve">
+<source xml:lang="en">The <g id="1">normal map</g> used by the clear coat layer to create an "orange peel" effect. This reflects light in different angles, simulating paint imperfections whereby the texture appears bumpy, like the skin of an orange. An orange peel normal map (<g id="2">StrideClearCoatOrangePeelNM</g>) is included in the Stride assets package.</source>
+<target xml:lang="pt">The <g id="1">normal map</g> used by the clear coat layer to create an "orange peel" effect. This reflects light in different angles, simulating paint imperfections whereby the texture appears bumpy, like the skin of an orange. An orange peel normal map (<g id="2">StrideClearCoatOrangePeelNM</g>) is included in the Stride assets package.</target>
+</trans-unit>
+<trans-unit id="tu45" xml:space="preserve">
+<source xml:lang="en">Layer transition distance</source>
+<target xml:lang="pt">Layer transition distance</target>
+</trans-unit>
+<trans-unit id="tu46" xml:space="preserve">
+<source xml:lang="en">The distance (in meters) at which the base paint layer transitions to the metal flake layer. This helps fight visual artifacts caused by the metal flake normal map (which becomes more visible as the camera moves away from the material).</source>
+<target xml:lang="pt">The distance (in meters) at which the base paint layer transitions to the metal flake layer. This helps fight visual artifacts caused by the metal flake normal map (which becomes more visible as the camera moves away from the material).</target>
+</trans-unit>
+<trans-unit id="tu47" xml:space="preserve">
+<source xml:lang="en">Reduce tiling and artifacts</source>
+<target xml:lang="pt">Reduce tiling and artifacts</target>
+</trans-unit>
+<trans-unit id="tu48" xml:space="preserve">
+<source xml:lang="en">Properties that use binary operators should use <g id="1">normalized values</g> (ie between <g id="2">0.0</g> and <g id="3">1.0</g>). For example, in the screenshot below, the <g id="4">left</g> operator uses a value of <g id="5">0.5</g>.</source>
+<target xml:lang="pt">Properties that use binary operators should use <g id="1">normalized values</g> (ie between <g id="2">0.0</g> and <g id="3">1.0</g>). For example, in the screenshot below, the <g id="4">left</g> operator uses a value of <g id="5">0.5</g>.</target>
+</trans-unit>
+<trans-unit id="tu49" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Binary operator<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Binary operator<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu50" xml:space="preserve">
+<source xml:lang="en">Values over <g id="1">1.0</g> might produce tiling artifacts, as in the image below (note the grid pattern):</source>
+<target xml:lang="pt">Values over <g id="1">1.0</g> might produce tiling artifacts, as in the image below (note the grid pattern):</target>
+</trans-unit>
+<trans-unit id="tu51" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Artifact<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Artifact<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu52" xml:space="preserve">
+<source xml:lang="en">StrideClearCoatMetalFlakesNM</source>
+<target xml:lang="pt">StrideClearCoatMetalFlakesNM</target>
+</trans-unit>
+<trans-unit id="tu53" xml:space="preserve">
+<source xml:lang="en">The metal flakes in the metal flake normal map included in the Stride assets package (<g id="1">StrideClearCoatMetalFlakesNM</g>) are quite large. For this reason, we recommend you:</source>
+<target xml:lang="pt">The metal flakes in the metal flake normal map included in the Stride assets package (<g id="1">StrideClearCoatMetalFlakesNM</g>) are quite large. For this reason, we recommend you:</target>
+</trans-unit>
+<trans-unit id="tu54" xml:space="preserve">
+<source xml:lang="en">use a high <g id="1">UV scale factor</g> which tiles the texture (thereby shrinking the flakes)</source>
+<target xml:lang="pt">use a high <g id="1">UV scale factor</g> which tiles the texture (thereby shrinking the flakes)</target>
+</trans-unit>
+<trans-unit id="tu55" xml:space="preserve">
+<source xml:lang="en">enable <g id="1">Use random texture coordinates</g>, preventing an obvious tiling effect</source>
+<target xml:lang="pt">enable <g id="1">Use random texture coordinates</g>, preventing an obvious tiling effect</target>
+</trans-unit>
+<trans-unit id="tu56" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Use random texture coordinates<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Use random texture coordinates<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu57" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>!Note<x id="2"/>
+The <g id="3">Use random texture coordinates</g> option is costly, so we don't recommend you use it for mobile platforms.</source>
+<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
+The <g id="3">Use random texture coordinates</g> option is costly, so we don't recommend you use it for mobile platforms.</target>
+</trans-unit>
+<trans-unit id="tu58" xml:space="preserve">
+<source xml:lang="en">Alternatively, use a normal map with a higher density of smaller metal flakes.</source>
+<target xml:lang="pt">Alternatively, use a normal map with a higher density of smaller metal flakes.</target>
+</trans-unit>
+<trans-unit id="tu59" xml:space="preserve">
+<source xml:lang="en">See also</source>
+<target xml:lang="pt">See also</target>
+</trans-unit>
+<trans-unit id="tu60" xml:space="preserve">
+<source xml:lang="en"><g id="1">Material maps</g></source>
+<target xml:lang="pt"><g id="1">Material maps</g></target>
+</trans-unit>
+<trans-unit id="tu61" xml:space="preserve">
+<source xml:lang="en"><g id="1">Material attributes</g></source>
+<target xml:lang="pt"><g id="1">Material attributes</g></target>
+</trans-unit>
+<trans-unit id="tu62" xml:space="preserve">
+<source xml:lang="en"><g id="1">Geometry attributes</g></source>
+<target xml:lang="pt"><g id="1">Geometry attributes</g></target>
+</trans-unit>
+<trans-unit id="tu63" xml:space="preserve">
+<source xml:lang="en"><g id="1">Shading attributes</g></source>
+<target xml:lang="pt"><g id="1">Shading attributes</g></target>
+</trans-unit>
+<trans-unit id="tu64" xml:space="preserve">
+<source xml:lang="en"><g id="1">Misc attributes</g></source>
+<target xml:lang="pt"><g id="1">Misc attributes</g></target>
+</trans-unit>
+<trans-unit id="tu65" xml:space="preserve">
+<source xml:lang="en"><g id="1">Material layers</g></source>
+<target xml:lang="pt"><g id="1">Material layers</g></target>
+</trans-unit>
+<trans-unit id="tu66" xml:space="preserve">
+<source xml:lang="en"><g id="1">Material slots</g></source>
+<target xml:lang="pt"><g id="1">Material slots</g></target>
+</trans-unit>
+<trans-unit id="tu67" xml:space="preserve">
+<source xml:lang="en"><g id="1">Materials for developers</g></source>
+<target xml:lang="pt"><g id="1">Materials for developers</g></target>
+</trans-unit>
+</body>
+</file>
+</xliff>

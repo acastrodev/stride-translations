@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" xmlns:okp="okapi-framework:xliff-extensions" its:version="2.0" version="1.2">
+<file datatype="x-text/x-markdown" okp:inputEncoding="UTF-8" original="/D:/repos/rr/source/manual/platforms/linux/setup-and-requirements.md" source-language="en" target-language="pt">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en">Setup and requirements</source>
+<target xml:lang="pt">Setup and requirements</target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en">To develop for Linux using Stride, you need a Linux PC with a graphics card that supports at least OpenGL 4.2 or Vulkan 1.0. The preferred Linux distribution for Stride is Ubuntu 16.04 or later, as this was the setup we used to develop the Linux version of Stride.</source>
+<target xml:lang="pt">To develop for Linux using Stride, you need a Linux PC with a graphics card that supports at least OpenGL 4.2 or Vulkan 1.0. The preferred Linux distribution for Stride is Ubuntu 16.04 or later, as this was the setup we used to develop the Linux version of Stride.</target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">The instructions below assume you have Ubuntu 16.04 installed. You might need to adapt them according to your Linux distribution.</source>
+<target xml:lang="pt">The instructions below assume you have Ubuntu 16.04 installed. You might need to adapt them according to your Linux distribution.</target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">You will also need a Windows PC to build your projects for Linux using Game Studio.</source>
+<target xml:lang="pt">You will also need a Windows PC to build your projects for Linux using Game Studio.</target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">Setup</source>
+<target xml:lang="pt">Setup</target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en">You need the following packages:</source>
+<target xml:lang="pt">You need the following packages:</target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en"><g id="1">FreeType</g></source>
+<target xml:lang="pt"><g id="1">FreeType</g></target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en"><g id="1">OpenAL</g></source>
+<target xml:lang="pt"><g id="1">OpenAL</g></target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en"><g id="1">SDL2</g></source>
+<target xml:lang="pt"><g id="1">SDL2</g></target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en">either Mono or .NET Core (it's OK to install both)</source>
+<target xml:lang="pt">either Mono or .NET Core (it's OK to install both)</target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en">FreeType</source>
+<target xml:lang="pt">FreeType</target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en">To render fonts, we use the <g id="1">FreeType</g> library. The minimum required version is 2.6 and can be installed via:</source>
+<target xml:lang="pt">To render fonts, we use the <g id="1">FreeType</g> library. The minimum required version is 2.6 and can be installed via:</target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en">sudo apt-get install libfreetype6-dev
+</source>
+<target xml:lang="pt">sudo apt-get install libfreetype6-dev
+</target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en">OpenAL</source>
+<target xml:lang="pt">OpenAL</target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en">To play sounds and music, we use the <g id="1">OpenAL</g> library. It can be installed via:</source>
+<target xml:lang="pt">To play sounds and music, we use the <g id="1">OpenAL</g> library. It can be installed via:</target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en">sudo apt-get install libopenal-dev
+</source>
+<target xml:lang="pt">sudo apt-get install libopenal-dev
+</target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en">SDL2</source>
+<target xml:lang="pt">SDL2</target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en">To run games on Linux, we use the <g id="1">SDL2</g> library which provides the ability to create windows, handle mouse, keyboard and joystick events. The minimum required version is 2.0.4 and can be installed via:</source>
+<target xml:lang="pt">To run games on Linux, we use the <g id="1">SDL2</g> library which provides the ability to create windows, handle mouse, keyboard and joystick events. The minimum required version is 2.0.4 and can be installed via:</target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en">sudo apt-get install libsdl2-dev
+</source>
+<target xml:lang="pt">sudo apt-get install libsdl2-dev
+</target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en">.NET Core</source>
+<target xml:lang="pt">.NET Core</target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en">For information about how to install .NET Core, see the <g id="1">.NET Core instructions for Debian/Ubuntu</g>.</source>
+<target xml:lang="pt">For information about how to install .NET Core, see the <g id="1">.NET Core instructions for Debian/Ubuntu</g>.</target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en">Make sure version 2.1.300+ and runtime 2.1+ is installed. To check which version you have installed, type:</source>
+<target xml:lang="pt">Make sure version 2.1.300+ and runtime 2.1+ is installed. To check which version you have installed, type:</target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en">dotnet --info
+</source>
+<target xml:lang="pt">dotnet --info
+</target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en">See also</source>
+<target xml:lang="pt">See also</target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en"><g id="1">Create a Linux game</g></source>
+<target xml:lang="pt"><g id="1">Create a Linux game</g></target>
+</trans-unit>
+</body>
+</file>
+</xliff>

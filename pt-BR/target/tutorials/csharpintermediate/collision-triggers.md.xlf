@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" xmlns:okp="okapi-framework:xliff-extensions" its:version="2.0" version="1.2">
+<file datatype="x-text/x-markdown" okp:inputEncoding="UTF-8" original="/D:/repos/rr/source/tutorials/csharpintermediate/collision-triggers.md" source-language="en" target-language="pt">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en">Collision triggers</source>
+<target xml:lang="pt">Collision triggers</target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en">This C# intermediate tutorial covers the use of collision triggers. It teaches about rigid bodies and how to set those up in the editor.</source>
+<target xml:lang="pt">This C# intermediate tutorial covers the use of collision triggers. It teaches about rigid bodies and how to set those up in the editor.</target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">Explanation</source>
+<target xml:lang="pt">Explanation</target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">Rigid bodies determine how entities in our scene behave on gravity, whether they collide with other objects or in the case of this tutorial": trigger collision events in our code. We do this by setting up a collider box in our scene and letting a sphere roll through this object. The events that are triggered are then processed by the script that we will make for it.</source>
+<target xml:lang="pt">Rigid bodies determine how entities in our scene behave on gravity, whether they collide with other objects or in the case of this tutorial": trigger collision events in our code. We do this by setting up a collider box in our scene and letting a sphere roll through this object. The events that are triggered are then processed by the script that we will make for it.</target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>!Video https://www.youtube.com/embed/SIy3pfoXfoQ<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>!Video https://www.youtube.com/embed/SIy3pfoXfoQ<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en">Rigidbodies and collisions</source>
+<target xml:lang="pt">Rigidbodies and collisions</target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en">The code below looks for the rigidbody component that is attached to our entity. The rigidbody component contains all information we need for setting up triggers. The <g id="1">IsTrigger</g> property determines that our collider doesn't stop other physics objects, but that it does trigger events in code (if they are set up at least).</source>
+<target xml:lang="pt">The code below looks for the rigidbody component that is attached to our entity. The rigidbody component contains all information we need for setting up triggers. The <g id="1">IsTrigger</g> property determines that our collider doesn't stop other physics objects, but that it does trigger events in code (if they are set up at least).</target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en">We spawn a sphere which also has a rigidbody. This sphere has a mass and is affected by gravity. The sphere will fall down and eventually roll through our collider box. In our update loop we check if there are collisions happening. If there are collisions, we get the colliding object and print out some text on screen. Once the sphere leaves the trigger box, our update loop sees that we no longer have collisions.</source>
+<target xml:lang="pt">We spawn a sphere which also has a rigidbody. This sphere has a mass and is affected by gravity. The sphere will fall down and eventually roll through our collider box. In our update loop we check if there are collisions happening. If there are collisions, we get the colliding object and print out some text on screen. Once the sphere leaves the trigger box, our update loop sees that we no longer have collisions.</target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en">Instead of using our update loop, we can also use collision events.
+[!code-csharp<g id="1">collisiontriggerdemo</g>]</source>
+<target xml:lang="pt">Instead of using our update loop, we can also use collision events.
+[!code-csharp<g id="1">collisiontriggerdemo</g>]</target>
+</trans-unit>
+</body>
+</file>
+</xliff>

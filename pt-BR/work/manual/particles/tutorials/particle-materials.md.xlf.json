@@ -1,0 +1,1963 @@
+{
+    "filename": "manual\\particles\\tutorials\\particle-materials.md.xlf",
+    "files": [
+        {
+            "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md": [
+                [
+                    "Tutorial:",
+                    "",
+                    "Tutorial:",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu1"
+                    }
+                ],
+                [
+                    "Particle materials",
+                    "",
+                    " Particle materials",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu1"
+                    }
+                ],
+                [
+                    "<x1\/>Intermediate<x2\/>",
+                    "",
+                    "<x1\/>Intermediate<x2\/>\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu2"
+                    }
+                ],
+                [
+                    "<x3\/>Artist<x4\/>",
+                    "",
+                    "<x3\/>Artist<x4\/>\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu2"
+                    }
+                ],
+                [
+                    "<x5\/>Programmer<x6\/>",
+                    "",
+                    "<x5\/>Programmer<x6\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu2"
+                    }
+                ],
+                [
+                    "This tutorial demonstrates how to create custom shaders and materials for a particle system, providing functionality not available in the core engine.",
+                    "",
+                    "This tutorial demonstrates how to create custom shaders and materials for a particle system, providing functionality not available in the core engine.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu3"
+                    }
+                ],
+                [
+                    "It focuses on shaders and rendering.",
+                    "",
+                    " It focuses on shaders and rendering.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu3"
+                    }
+                ],
+                [
+                    "For simulation, see the <g1>custom particles tutorial<\/g1>.",
+                    "",
+                    " For simulation, see the <g1>custom particles tutorial<\/g1>.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu3"
+                    }
+                ],
+                [
+                    "If you're not familiar with editing particles, see <g1>Create particles<\/g1>.",
+                    "",
+                    "If you're not familiar with editing particles, see <g1>Create particles<\/g1>.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu4"
+                    }
+                ],
+                [
+                    "Start by creating a new <g1>Sample:",
+                    "",
+                    "Start by creating a new <g1>Sample:",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu5"
+                    }
+                ],
+                [
+                    "Particles<\/g1> project.",
+                    "",
+                    " Particles<\/g1> project.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu5"
+                    }
+                ],
+                [
+                    "<x1\/>Particles sample project<x2\/>",
+                    "",
+                    "<x1\/>Particles sample project<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu6"
+                    }
+                ],
+                [
+                    "This project contains four scenes, each demonstrating a different way to use particles:",
+                    "",
+                    "This project contains four scenes, each demonstrating a different way to use particles:",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu7"
+                    }
+                ],
+                [
+                    "<g1>AnimatedParticles<\/g1>, <g2>ChildParticles<\/g2>, <g3>CustomMaterials<\/g3>, and <g4>CustomParticles<\/g4>.",
+                    "",
+                    " <g1>AnimatedParticles<\/g1>, <g2>ChildParticles<\/g2>, <g3>CustomMaterials<\/g3>, and <g4>CustomParticles<\/g4>.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu7"
+                    }
+                ],
+                [
+                    "Open the <g1>CustomMaterials<\/g1> scene.",
+                    "",
+                    "Open the <g1>CustomMaterials<\/g1> scene.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu8"
+                    }
+                ],
+                [
+                    "There are three particle entities in the scene:",
+                    "",
+                    "There are three particle entities in the scene:",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu9"
+                    }
+                ],
+                [
+                    "<g1>Rad Particle System<\/g1>, <g2>Radial Particle System<\/g2>, and <g3>Two Textures Particle System<\/g3>.",
+                    "",
+                    " <g1>Rad Particle System<\/g1>, <g2>Radial Particle System<\/g2>, and <g3>Two Textures Particle System<\/g3>.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu9"
+                    }
+                ],
+                [
+                    "<x1\/>media\/particles-samples-material-1.png<x2\/>",
+                    "",
+                    "<x1\/>media\/particles-samples-material-1.png<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu10"
+                    }
+                ],
+                [
+                    "Select one of the particle entities and navigate to its source particle system, expanding the emitter in it and its material.",
+                    "",
+                    "Select one of the particle entities and navigate to its source particle system, expanding the emitter in it and its material.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu11"
+                    }
+                ],
+                [
+                    "Red particle system",
+                    "",
+                    "Red particle system",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu12"
+                    }
+                ],
+                [
+                    "The <g1>red particle system<\/g1> has a very simple customization.",
+                    "",
+                    "The <g1>red particle system<\/g1> has a very simple customization.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu13"
+                    }
+                ],
+                [
+                    "Since the <g2>material maps<\/g2> already provide an option to use shaders as a leaf node input, we can create a custom shader and assign it to that node.",
+                    "",
+                    " Since the <g2>material maps<\/g2> already provide an option to use shaders as a leaf node input, we can create a custom shader and assign it to that node.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu13"
+                    }
+                ],
+                [
+                    "First, create a shader (<g1>ComputeColorRed.sdsl<\/g1>) with a derived class for <g2>ComputeColor<\/g2>:",
+                    "",
+                    "First, create a shader (<g1>ComputeColorRed.sdsl<\/g1>) with a derived class for <g2>ComputeColor<\/g2>:",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu14"
+                    }
+                ],
+                [
+                    "class ComputeColorRed :",
+                    "",
+                    "class ComputeColorRed :",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu15"
+                    }
+                ],
+                [
+                    "ComputeColor",
+                    "",
+                    " ComputeColor\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu15"
+                    }
+                ],
+                [
+                    "{",
+                    "",
+                    "{\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu15"
+                    }
+                ],
+                [
+                    "override float4 Compute()",
+                    "",
+                    "  override float4 Compute()\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu15"
+                    }
+                ],
+                [
+                    "{",
+                    "",
+                    "  {\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu15"
+                    }
+                ],
+                [
+                    "return float4(1, 0, 0, 1);",
+                    "",
+                    "      return float4(1, 0, 0, 1);\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu15"
+                    }
+                ],
+                [
+                    "}",
+                    "",
+                    "  }\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu15"
+                    }
+                ],
+                [
+                    "};",
+                    "",
+                    "};\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu15"
+                    }
+                ],
+                [
+                    "The only thing this shader does is return the red color for pixel shading every time <g1>Compute<\/g1> is called.",
+                    "",
+                    "The only thing this shader does is return the red color for pixel shading every time <g1>Compute<\/g1> is called.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu16"
+                    }
+                ],
+                [
+                    "We'll try something more difficult later, but for now let's keep it simple.",
+                    "",
+                    " We'll try something more difficult later, but for now let's keep it simple.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu16"
+                    }
+                ],
+                [
+                    "Save the file and reload the scripts in Game Studio.",
+                    "",
+                    "Save the file and reload the scripts in Game Studio.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu17"
+                    }
+                ],
+                [
+                    "You should see the new shader in <g1>Asset View<\/g1>.",
+                    "",
+                    " You should see the new shader in <g1>Asset View<\/g1>.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu17"
+                    }
+                ],
+                [
+                    "<x1\/>media\/particles-samples-material-2.png<x2\/>",
+                    "",
+                    "<x1\/>media\/particles-samples-material-2.png<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu18"
+                    }
+                ],
+                [
+                    "If the shader isn't there, reload the project.",
+                    "",
+                    "If the shader isn't there, reload the project.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu19"
+                    }
+                ],
+                [
+                    "Once the shader is loaded, you can access it in the <g1>Property Grid<\/g1> under the <g2>dynamic emissive material<\/g2> for the particles.",
+                    "",
+                    "Once the shader is loaded, you can access it in the <g1>Property Grid<\/g1> under the <g2>dynamic emissive material<\/g2> for the particles.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu20"
+                    }
+                ],
+                [
+                    "Choose a type of shader and, from the drop-down menu, select the shader you just added to the scene.",
+                    "",
+                    " Choose a type of shader and, from the drop-down menu, select the shader you just added to the scene.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu20"
+                    }
+                ],
+                [
+                    "<x1\/>media\/particles-samples-material-3.png<x2\/>",
+                    "",
+                    "<x1\/>media\/particles-samples-material-3.png<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu21"
+                    }
+                ],
+                [
+                    "The particles are red.",
+                    "",
+                    "The particles are red.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu22"
+                    }
+                ],
+                [
+                    "With Game Studio running, edit and save <g1>ComputeColorRed.sdsl<\/g1> to make them yellow.",
+                    "",
+                    " With Game Studio running, edit and save <g1>ComputeColorRed.sdsl<\/g1> to make them yellow.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu22"
+                    }
+                ],
+                [
+                    "class ComputeColorRed :",
+                    "",
+                    "class ComputeColorRed :",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu23"
+                    }
+                ],
+                [
+                    "ComputeColor",
+                    "",
+                    " ComputeColor\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu23"
+                    }
+                ],
+                [
+                    "{",
+                    "",
+                    "{\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu23"
+                    }
+                ],
+                [
+                    "override float4 Compute()",
+                    "",
+                    "  override float4 Compute()\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu23"
+                    }
+                ],
+                [
+                    "{",
+                    "",
+                    "  {\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu23"
+                    }
+                ],
+                [
+                    "return float4(1, 1, 0, 1);",
+                    "",
+                    "      return float4(1, 1, 0, 1);\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu23"
+                    }
+                ],
+                [
+                    "}",
+                    "",
+                    "  }\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu23"
+                    }
+                ],
+                [
+                    "};",
+                    "",
+                    "};\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu23"
+                    }
+                ],
+                [
+                    "Because Stride supports dynamic shader compilation, the particles immediately turn yellow.",
+                    "",
+                    "Because Stride supports dynamic shader compilation, the particles immediately turn yellow.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu24"
+                    }
+                ],
+                [
+                    "Radial particle system",
+                    "",
+                    "Radial particle system",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu25"
+                    }
+                ],
+                [
+                    "For the next shader we'll use texture coordinates expose arbitrary values to the editor.",
+                    "",
+                    "For the next shader we'll use texture coordinates expose arbitrary values to the editor.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu26"
+                    }
+                ],
+                [
+                    "Check <g1>ComputeColorRadial.sdsl<\/g1>.",
+                    "",
+                    "Check <g1>ComputeColorRadial.sdsl<\/g1>.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu27"
+                    }
+                ],
+                [
+                    "class ComputeColorRadial<float4 ColorCenter, float4 ColorEdge> :",
+                    "",
+                    "class ComputeColorRadial<float4 ColorCenter, float4 ColorEdge> :",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu28"
+                    }
+                ],
+                [
+                    "ComputeColor, Texturing",
+                    "",
+                    " ComputeColor, Texturing\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu28"
+                    }
+                ],
+                [
+                    "{",
+                    "",
+                    "{\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu28"
+                    }
+                ],
+                [
+                    "override float4 Compute()",
+                    "",
+                    "  override float4 Compute()\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu28"
+                    }
+                ],
+                [
+                    "{",
+                    "",
+                    "  {\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu28"
+                    }
+                ],
+                [
+                    "float radialDistance = length(streams.TexCoord - float2(0.5, 0.5)) * 2;",
+                    "",
+                    "      float radialDistance = length(streams.TexCoord - float2(0.5, 0.5)) * 2;\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu28"
+                    }
+                ],
+                [
+                    "float4 unclamped = lerp(ColorCenter, ColorEdge, radialDistance);",
+                    "",
+                    "\r\n      float4 unclamped = lerp(ColorCenter, ColorEdge, radialDistance);\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu28"
+                    }
+                ],
+                [
+                    "\/\/ We want to allow the intensity to grow a lot, but cap the alpha to 1",
+                    "",
+                    "\r\n      \/\/ We want to allow the intensity to grow a lot, but cap the alpha to 1\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu28"
+                    }
+                ],
+                [
+                    "float4 clamped = clamp(unclamped, float4(0, 0, 0, 0), float4(1000, 1000, 1000, 1));",
+                    "",
+                    "      float4 clamped = clamp(unclamped, float4(0, 0, 0, 0), float4(1000, 1000, 1000, 1));\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu28"
+                    }
+                ],
+                [
+                    "\/\/ Remember that we use a premultiplied alpha pipeline so all color values should be premultiplied",
+                    "",
+                    "\r\n      \/\/ Remember that we use a premultiplied alpha pipeline so all color values should be premultiplied\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu28"
+                    }
+                ],
+                [
+                    "clamped.rgb *= clamped.a;",
+                    "",
+                    "      clamped.rgb *= clamped.a;\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu28"
+                    }
+                ],
+                [
+                    "return clamped;",
+                    "",
+                    "\r\n      return clamped;\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu28"
+                    }
+                ],
+                [
+                    "}",
+                    "",
+                    "  }\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu28"
+                    }
+                ],
+                [
+                    "};",
+                    "",
+                    "};\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu28"
+                    }
+                ],
+                [
+                    "This is similar to <g1>ComputeColorRed<\/g1> and can be compiled and loaded the same way.",
+                    "",
+                    "This is similar to <g1>ComputeColorRed<\/g1> and can be compiled and loaded the same way.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu29"
+                    }
+                ],
+                [
+                    "There are several key differences.",
+                    "",
+                    "There are several key differences.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu30"
+                    }
+                ],
+                [
+                    "The shader now inherits from the <g1>Texturing<\/g1> shader base class as well.",
+                    "",
+                    " The shader now inherits from the <g1>Texturing<\/g1> shader base class as well.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu30"
+                    }
+                ],
+                [
+                    "This allows it to use texture coordinates in from the streams.",
+                    "",
+                    " This allows it to use texture coordinates in from the streams.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu30"
+                    }
+                ],
+                [
+                    "On the material side in Game Studio, we can force the texture coordinates to be streamed in case we don't use texture animation.",
+                    "",
+                    " On the material side in Game Studio, we can force the texture coordinates to be streamed in case we don't use texture animation.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu30"
+                    }
+                ],
+                [
+                    "The input values <g1>float4 ColorCenter<\/g1> and <g2>float4 ColorEdge<\/g2> in our shader are permutations.",
+                    "",
+                    "The input values <g1>float4 ColorCenter<\/g1> and <g2>float4 ColorEdge<\/g2> in our shader are permutations.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu31"
+                    }
+                ],
+                [
+                    "When we load the shader the Property Grid displays them under the <g3>Generics<\/g3> dictionary.",
+                    "",
+                    " When we load the shader the Property Grid displays them under the <g3>Generics<\/g3> dictionary.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu31"
+                    }
+                ],
+                [
+                    "<x1\/>media\/particles-samples-material-4.png<x2\/>",
+                    "",
+                    "<x1\/>media\/particles-samples-material-4.png<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu32"
+                    }
+                ],
+                [
+                    "The values we set here will be used by the <g1>ComputeColorRadial<\/g1> shader for the particles.",
+                    "",
+                    "The values we set here will be used by the <g1>ComputeColorRadial<\/g1> shader for the particles.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu33"
+                    }
+                ],
+                [
+                    "The rest of the shader simply calculates a gradient color based on the distance of the shaded pixel from the center of the billboard.",
+                    "",
+                    " The rest of the shader simply calculates a gradient color based on the distance of the shaded pixel from the center of the billboard.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu33"
+                    }
+                ],
+                [
+                    "Two-texture particle system",
+                    "",
+                    "Two-texture particle system",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu34"
+                    }
+                ],
+                [
+                    "This demonstrates how to create custom materials and effects for the particles.",
+                    "",
+                    "This demonstrates how to create custom materials and effects for the particles.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu35"
+                    }
+                ],
+                [
+                    "The <g1>DynamicColor<\/g1> material supports one RGBA channel.",
+                    "",
+                    " The <g1>DynamicColor<\/g1> material supports one RGBA channel.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu35"
+                    }
+                ],
+                [
+                    "For our sample, we'll separate the RGB and A channels, allowing them to use different texture coordinate animations and different textures and binary trees to compute the color.",
+                    "",
+                    " For our sample, we'll separate the RGB and A channels, allowing them to use different texture coordinate animations and different textures and binary trees to compute the color.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu35"
+                    }
+                ],
+                [
+                    "Parameter keys",
+                    "",
+                    "Parameter keys",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu36"
+                    }
+                ],
+                [
+                    "Parameter keys are used to map data and pass it to the shader.",
+                    "",
+                    "Parameter keys are used to map data and pass it to the shader.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu37"
+                    }
+                ],
+                [
+                    "Some of them are generated, and we can define our own too.",
+                    "",
+                    " Some of them are generated, and we can define our own too.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu37"
+                    }
+                ],
+                [
+                    "If we define more streams in our shader (<g1>ParticleCustomShader<\/g1>), they're exported to an automatically generated class.",
+                    "",
+                    "If we define more streams in our shader (<g1>ParticleCustomShader<\/g1>), they're exported to an automatically generated class.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu38"
+                    }
+                ],
+                [
+                    "Try adding the following to <g2>ParticleCustomShader.sdsl<\/g2>:",
+                    "",
+                    " Try adding the following to <g2>ParticleCustomShader.sdsl<\/g2>:",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu38"
+                    }
+                ],
+                [
+                    "\/\/ -------------------------------------",
+                    "",
+                    "  \/\/ -------------------------------------\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu39"
+                    }
+                ],
+                [
+                    "\/\/ streams",
+                    "",
+                    "  \/\/ streams\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu39"
+                    }
+                ],
+                [
+                    "\/\/ -------------------------------------",
+                    "",
+                    "  \/\/ -------------------------------------\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu39"
+                    }
+                ],
+                [
+                    "stage float4 SomeRandomKey;",
+                    "",
+                    "  stage float4 SomeRandomKey;\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu39"
+                    }
+                ],
+                [
+                    "The generated .cs file should now contain:",
+                    "",
+                    "The generated .cs file should now contain:",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu40"
+                    }
+                ],
+                [
+                    "namespace Stride.Rendering",
+                    "",
+                    "namespace Stride.Rendering\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu41"
+                    }
+                ],
+                [
+                    "{",
+                    "",
+                    "{\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu41"
+                    }
+                ],
+                [
+                    "public static partial class ParticleCustomShaderKeys",
+                    "",
+                    "  public static partial class ParticleCustomShaderKeys\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu41"
+                    }
+                ],
+                [
+                    "{",
+                    "",
+                    "  {\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu41"
+                    }
+                ],
+                [
+                    "public static readonly ParameterKey<Vector4> SomeRandomKey = ParameterKeys.New<Vector4>();",
+                    "",
+                    "      public static readonly ParameterKey<Vector4> SomeRandomKey = ParameterKeys.New<Vector4>();\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu41"
+                    }
+                ],
+                [
+                    "}",
+                    "",
+                    "  }\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu41"
+                    }
+                ],
+                [
+                    "}",
+                    "",
+                    "}\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu41"
+                    }
+                ],
+                [
+                    "We don't need this stream for now, so we can delete it.",
+                    "",
+                    "We don't need this stream for now, so we can delete it.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu42"
+                    }
+                ],
+                [
+                    "We'll define some extra keys in <g1>ParticleCustomMaterialKeys.cs<\/g1> to use in our material and effects.",
+                    "",
+                    "We'll define some extra keys in <g1>ParticleCustomMaterialKeys.cs<\/g1> to use in our material and effects.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu43"
+                    }
+                ],
+                [
+                    "namespace Stride.Rendering",
+                    "",
+                    "namespace Stride.Rendering\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu44"
+                    }
+                ],
+                [
+                    "{",
+                    "",
+                    "{\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu44"
+                    }
+                ],
+                [
+                    "public partial class ParticleCustomShaderKeys",
+                    "",
+                    "  public partial class ParticleCustomShaderKeys\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu44"
+                    }
+                ],
+                [
+                    "{",
+                    "",
+                    "  {\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu44"
+                    }
+                ],
+                [
+                    "static ParticleCustomShaderKeys()",
+                    "",
+                    "      static ParticleCustomShaderKeys()\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu44"
+                    }
+                ],
+                [
+                    "{",
+                    "",
+                    "      {\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu44"
+                    }
+                ],
+                [
+                    "}",
+                    "",
+                    "\r\n      }\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu44"
+                    }
+                ],
+                [
+                    "public static readonly ParameterKey<ShaderSource> BaseColor     = ParameterKeys.New<ShaderSource>();",
+                    "",
+                    "\r\n      public static readonly ParameterKey<ShaderSource> BaseColor     = ParameterKeys.New<ShaderSource>();\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu44"
+                    }
+                ],
+                [
+                    "public static readonly ParameterKey<Texture> EmissiveMap = ParameterKeys.New<Texture>();",
+                    "",
+                    "\r\n      public static readonly ParameterKey<Texture> EmissiveMap = ParameterKeys.New<Texture>();\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu44"
+                    }
+                ],
+                [
+                    "public static readonly ParameterKey<Color4> EmissiveValue = ParameterKeys.New<Color4>();",
+                    "",
+                    "      public static readonly ParameterKey<Color4> EmissiveValue = ParameterKeys.New<Color4>();\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu44"
+                    }
+                ],
+                [
+                    "public static readonly ParameterKey<ShaderSource> BaseIntensity = ParameterKeys.New<ShaderSource>();",
+                    "",
+                    "\r\n\r\n\r\n      public static readonly ParameterKey<ShaderSource> BaseIntensity = ParameterKeys.New<ShaderSource>();\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu44"
+                    }
+                ],
+                [
+                    "public static readonly ParameterKey<Texture> IntensityMap = ParameterKeys.New<Texture>();",
+                    "",
+                    "\r\n      public static readonly ParameterKey<Texture> IntensityMap = ParameterKeys.New<Texture>();\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu44"
+                    }
+                ],
+                [
+                    "public static readonly ParameterKey<float> IntensityValue = ParameterKeys.New<float>();",
+                    "",
+                    "      public static readonly ParameterKey<float> IntensityValue = ParameterKeys.New<float>();\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu44"
+                    }
+                ],
+                [
+                    "}",
+                    "",
+                    "  }\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu44"
+                    }
+                ],
+                [
+                    "}",
+                    "",
+                    "}\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu44"
+                    }
+                ],
+                [
+                    "As we saw above, the generated class has the same name and the namespace is <g1>Stride.Rendering<\/g1>, so we have to make our class partial and match the namespace.",
+                    "",
+                    "As we saw above, the generated class has the same name and the namespace is <g1>Stride.Rendering<\/g1>, so we have to make our class partial and match the namespace.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu45"
+                    }
+                ],
+                [
+                    "This has no effect on this specific sample, but will result in compilation error if your shader code auto-generates some keys.",
+                    "",
+                    " This has no effect on this specific sample, but will result in compilation error if your shader code auto-generates some keys.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu45"
+                    }
+                ],
+                [
+                    "The rest of the code is self-explanatory.",
+                    "",
+                    "The rest of the code is self-explanatory.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu46"
+                    }
+                ],
+                [
+                    "We'll need the map and value keys for shader generation later, and we'll set our generated code to the <g1>BaseColor<\/g1> and <g2>BaseIntensity<\/g2> keys respectively so the shader can use it.",
+                    "",
+                    " We'll need the map and value keys for shader generation later, and we'll set our generated code to the <g1>BaseColor<\/g1> and <g2>BaseIntensity<\/g2> keys respectively so the shader can use it.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu46"
+                    }
+                ],
+                [
+                    "Custom Shader",
+                    "",
+                    "Custom Shader",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu47"
+                    }
+                ],
+                [
+                    "Let's look at <g1>ParticleCustomShader.sdsl<\/g1>:",
+                    "",
+                    "Let's look at <g1>ParticleCustomShader.sdsl<\/g1>:",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu48"
+                    }
+                ],
+                [
+                    "class ParticleCustomShader :",
+                    "",
+                    "\r\nclass ParticleCustomShader :",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu49"
+                    }
+                ],
+                [
+                    "ParticleBase",
+                    "",
+                    " ParticleBase\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu49"
+                    }
+                ],
+                [
+                    "{",
+                    "",
+                    "{\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu49"
+                    }
+                ],
+                [
+                    "\/\/ This shader can be set by the user, and it's a binary tree made up from smaller shaders",
+                    "",
+                    "  \/\/ This shader can be set by the user, and it's a binary tree made up from smaller shaders\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu49"
+                    }
+                ],
+                [
+                    "compose ComputeColor  baseColor;",
+                    "",
+                    "  compose ComputeColor  baseColor;\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu49"
+                    }
+                ],
+                [
+                    "\/\/ This shader can be set by the user, and it's a binary tree made up from smaller shaders",
+                    "",
+                    "\r\n  \/\/ This shader can be set by the user, and it's a binary tree made up from smaller shaders\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu49"
+                    }
+                ],
+                [
+                    "compose ComputeColor  baseIntensity;",
+                    "",
+                    "  compose ComputeColor  baseIntensity;\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu49"
+                    }
+                ],
+                [
+                    "\/\/ Shading of the sprite — we override the base class's Shading(), which only returns ColorScale",
+                    "",
+                    "\r\n  \/\/ Shading of the sprite — we override the base class's Shading(), which only returns ColorScale\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu49"
+                    }
+                ],
+                [
+                    "stage override float4 Shading()",
+                    "",
+                    "  stage override float4 Shading()\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu49"
+                    }
+                ],
+                [
+                    "{",
+                    "",
+                    "  {\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu49"
+                    }
+                ],
+                [
+                    "\/\/ -----------------------------------------------",
+                    "",
+                    "      \/\/ -----------------------------------------------\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu49"
+                    }
+                ],
+                [
+                    "\/\/ Base particle color RGB",
+                    "",
+                    "      \/\/ Base particle color RGB\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu49"
+                    }
+                ],
+                [
+                    "\/\/ -----------------------------------------------",
+                    "",
+                    "      \/\/ -----------------------------------------------\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu49"
+                    }
+                ],
+                [
+                    "float4 finalColor = base.Shading() * baseColor.Compute();",
+                    "",
+                    "      float4 finalColor = base.Shading() * baseColor.Compute();\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu49"
+                    }
+                ],
+                [
+                    "\/\/ -----------------------------------------------",
+                    "",
+                    "\r\n      \/\/ -----------------------------------------------\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu49"
+                    }
+                ],
+                [
+                    "\/\/ Base particle alpha",
+                    "",
+                    "      \/\/ Base particle alpha\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu49"
+                    }
+                ],
+                [
+                    "\/\/ -----------------------------------------------",
+                    "",
+                    "      \/\/ -----------------------------------------------\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu49"
+                    }
+                ],
+                [
+                    "finalColor.a    = baseIntensity.Compute();",
+                    "",
+                    "      finalColor.a    = baseIntensity.Compute();\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu49"
+                    }
+                ],
+                [
+                    "\/\/  Don't forget to premultiply the alpha",
+                    "",
+                    "\r\n      \/\/  Don't forget to premultiply the alpha\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu49"
+                    }
+                ],
+                [
+                    "finalColor.rgb *= finalColor.aaa;",
+                    "",
+                    "      finalColor.rgb *= finalColor.aaa;\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu49"
+                    }
+                ],
+                [
+                    "return finalColor;",
+                    "",
+                    "\r\n      return finalColor;\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu49"
+                    }
+                ],
+                [
+                    "}",
+                    "",
+                    "  }\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu49"
+                    }
+                ],
+                [
+                    "};",
+                    "",
+                    "};\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu49"
+                    }
+                ],
+                [
+                    "It defines two composed shaders, <g1>baseColor<\/g1> and <g2>abseIntensity<\/g2>, where we'll plug our generated shaders for RGB and A respectively.",
+                    "",
+                    "It defines two composed shaders, <g1>baseColor<\/g1> and <g2>abseIntensity<\/g2>, where we'll plug our generated shaders for RGB and A respectively.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu50"
+                    }
+                ],
+                [
+                    "It inherits <g3>ParticleBase<\/g3> which already defines <g4>VSMain<\/g4>, <g5>PSMain<\/g5> and texturing, and uses very simple <g6>Shading()<\/g6> method.",
+                    "",
+                    " It inherits <g3>ParticleBase<\/g3> which already defines <g4>VSMain<\/g4>, <g5>PSMain<\/g5> and texturing, and uses very simple <g6>Shading()<\/g6> method.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu50"
+                    }
+                ],
+                [
+                    "By overriding the <g1>Shading()<\/g1> method we can define our custom behavior.",
+                    "",
+                    "By overriding the <g1>Shading()<\/g1> method we can define our custom behavior.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu51"
+                    }
+                ],
+                [
+                    "Because the composed shaders we use are derived from <g2>ComputeColor<\/g2>, we can easily evaluate them using <g3>Compute()<\/g3>, which gives us the root of the compute tree for color and intensity.",
+                    "",
+                    " Because the composed shaders we use are derived from <g2>ComputeColor<\/g2>, we can easily evaluate them using <g3>Compute()<\/g3>, which gives us the root of the compute tree for color and intensity.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu51"
+                    }
+                ],
+                [
+                    "Custom effect",
+                    "",
+                    "Custom effect",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu52"
+                    }
+                ],
+                [
+                    "Our effect describes how to mix and compose the shaders.",
+                    "",
+                    "Our effect describes how to mix and compose the shaders.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu53"
+                    }
+                ],
+                [
+                    "It's in <g1>ParticleCustomEffect.sdfx<\/g1>:",
+                    "",
+                    " It's in <g1>ParticleCustomEffect.sdfx<\/g1>:",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu53"
+                    }
+                ],
+                [
+                    "namespace Stride.Rendering",
+                    "",
+                    "namespace Stride.Rendering\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu54"
+                    }
+                ],
+                [
+                    "{",
+                    "",
+                    "{\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu54"
+                    }
+                ],
+                [
+                    "partial shader ParticleCustomEffect",
+                    "",
+                    "  partial shader ParticleCustomEffect\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu54"
+                    }
+                ],
+                [
+                    "{",
+                    "",
+                    "  {\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu54"
+                    }
+                ],
+                [
+                    "\/\/ Use the ParticleBaseKeys for constant attributes, defined in the game engine",
+                    "",
+                    "      \/\/ Use the ParticleBaseKeys for constant attributes, defined in the game engine\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu54"
+                    }
+                ],
+                [
+                    "using params ParticleBaseKeys;",
+                    "",
+                    "      using params ParticleBaseKeys;\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu54"
+                    }
+                ],
+                [
+                    "\/\/ Use the ParticleCustomShaderKeys for constant attributes, defined in this project",
+                    "",
+                    "\r\n      \/\/ Use the ParticleCustomShaderKeys for constant attributes, defined in this project\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu54"
+                    }
+                ],
+                [
+                    "using params ParticleCustomShaderKeys;",
+                    "",
+                    "      using params ParticleCustomShaderKeys;\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu54"
+                    }
+                ],
+                [
+                    "\/\/ Inherit from the ParticleBaseEffect.sdfx, defined in the game engine",
+                    "",
+                    "\r\n      \/\/ Inherit from the ParticleBaseEffect.sdfx, defined in the game engine\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu54"
+                    }
+                ],
+                [
+                    "mixin ParticleBaseEffect;",
+                    "",
+                    "      mixin ParticleBaseEffect;\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu54"
+                    }
+                ],
+                [
+                    "\/\/ Use the ParticleCustomShader.sdsl, defined in this project",
+                    "",
+                    "\r\n      \/\/ Use the ParticleCustomShader.sdsl, defined in this project\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu54"
+                    }
+                ],
+                [
+                    "mixin ParticleCustomShader;",
+                    "",
+                    "      mixin ParticleCustomShader;\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu54"
+                    }
+                ],
+                [
+                    "\/\/ If the user-defined shader for the baseColor is not null use it",
+                    "",
+                    "\r\n      \/\/ If the user-defined shader for the baseColor is not null use it\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu54"
+                    }
+                ],
+                [
+                    "if (ParticleCustomShaderKeys.BaseColor != null)",
+                    "",
+                    "      if (ParticleCustomShaderKeys.BaseColor != null)\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu54"
+                    }
+                ],
+                [
+                    "{",
+                    "",
+                    "      {\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu54"
+                    }
+                ],
+                [
+                    "mixin compose baseColor = ParticleCustomShaderKeys.BaseColor;",
+                    "",
+                    "          mixin compose baseColor = ParticleCustomShaderKeys.BaseColor;\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu54"
+                    }
+                ],
+                [
+                    "}",
+                    "",
+                    "      }\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu54"
+                    }
+                ],
+                [
+                    "\/\/ If the user-defined shader for the baseIntensity (alpha) is not null use it",
+                    "",
+                    "\r\n      \/\/ If the user-defined shader for the baseIntensity (alpha) is not null use it\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu54"
+                    }
+                ],
+                [
+                    "if (ParticleCustomShaderKeys.BaseIntensity != null)",
+                    "",
+                    "      if (ParticleCustomShaderKeys.BaseIntensity != null)\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu54"
+                    }
+                ],
+                [
+                    "{",
+                    "",
+                    "      {\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu54"
+                    }
+                ],
+                [
+                    "mixin compose baseIntensity = ParticleCustomShaderKeys.BaseIntensity;",
+                    "",
+                    "          mixin compose baseIntensity = ParticleCustomShaderKeys.BaseIntensity;\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu54"
+                    }
+                ],
+                [
+                    "}",
+                    "",
+                    "      }\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu54"
+                    }
+                ],
+                [
+                    "};",
+                    "",
+                    "\r\n };\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu54"
+                    }
+                ],
+                [
+                    "}",
+                    "",
+                    "\r\n}\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu54"
+                    }
+                ],
+                [
+                    "<g1>ParticleBaseKeys<\/g1> and <g2>ParticleBaseEffect<\/g2> are required by the base shader which we inherit.",
+                    "",
+                    "<g1>ParticleBaseKeys<\/g1> and <g2>ParticleBaseEffect<\/g2> are required by the base shader which we inherit.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu55"
+                    }
+                ],
+                [
+                    "<g1>ParticleCustomShaderKeys<\/g1> provides the keys we defined earlier, where we'll plug our shaders.",
+                    "",
+                    "<g1>ParticleCustomShaderKeys<\/g1> provides the keys we defined earlier, where we'll plug our shaders.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu56"
+                    }
+                ],
+                [
+                    "Finally, for both shaders we only need to check if there is user-defined code for it and plug it.",
+                    "",
+                    "Finally, for both shaders we only need to check if there is user-defined code for it and plug it.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu57"
+                    }
+                ],
+                [
+                    "The <g1>baseColor<\/g1> and <g2>baseIntensity<\/g2> parameters are from the shader we created earlier.",
+                    "",
+                    " The <g1>baseColor<\/g1> and <g2>baseIntensity<\/g2> parameters are from the shader we created earlier.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu57"
+                    }
+                ],
+                [
+                    "Last, we need a material which sets all the keys and uses the newly created effect.",
+                    "",
+                    "Last, we need a material which sets all the keys and uses the newly created effect.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu58"
+                    }
+                ],
+                [
+                    "Custom particle material",
+                    "",
+                    "Custom particle material",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu59"
+                    }
+                ],
+                [
+                    "We'll copy @'Stride.Particles.Materials.ParticleMaterialComputeColor' into <g1>ParticleCustomMaterial.cs<\/g1> in our project and customize it to use two shaders for color binary trees.",
+                    "",
+                    "We'll copy @'Stride.Particles.Materials.ParticleMaterialComputeColor' into <g1>ParticleCustomMaterial.cs<\/g1> in our project and customize it to use two shaders for color binary trees.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu60"
+                    }
+                ],
+                [
+                    "[DataMemberIgnore]",
+                    "",
+                    "      [DataMemberIgnore]\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu61"
+                    }
+                ],
+                [
+                    "protected override string EffectName { get; set; } = \"ParticleCustomEffect\";",
+                    "",
+                    "      protected override string EffectName { get; set; } = \"ParticleCustomEffect\";\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu61"
+                    }
+                ],
+                [
+                    "The base class automatically tries to load the effect specified with <g1>EffectName<\/g1>.",
+                    "",
+                    "The base class automatically tries to load the effect specified with <g1>EffectName<\/g1>.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu62"
+                    }
+                ],
+                [
+                    "We give it the name of the effect we crated earlier.",
+                    "",
+                    " We give it the name of the effect we crated earlier.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu62"
+                    }
+                ],
+                [
+                    "[DataMember(300)]",
+                    "",
+                    "      [DataMember(300)]\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu63"
+                    }
+                ],
+                [
+                    "[Display(\"Alpha\")]",
+                    "",
+                    "      [Display(\"Alpha\")]\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu63"
+                    }
+                ],
+                [
+                    "public IComputeScalar ComputeScalar { get; set; } = new ComputeTextureScalar();",
+                    "",
+                    "      public IComputeScalar ComputeScalar { get; set; } = new ComputeTextureScalar();\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu63"
+                    }
+                ],
+                [
+                    "[DataMember(400)]",
+                    "",
+                    "\r\n      [DataMember(400)]\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu63"
+                    }
+                ],
+                [
+                    "[Display(\"TexCoord1\")]",
+                    "",
+                    "      [Display(\"TexCoord1\")]\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu63"
+                    }
+                ],
+                [
+                    "public UVBuilder UVBuilder1;",
+                    "",
+                    "      public UVBuilder UVBuilder1;\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu63"
+                    }
+                ],
+                [
+                    "private AttributeDescription texCoord1 = new AttributeDescription(\"TEXCOORD1\");",
+                    "",
+                    "      private AttributeDescription texCoord1 = new AttributeDescription(\"TEXCOORD1\");\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu63"
+                    }
+                ],
+                [
+                    "In addition to the already existing @'Stride.Rendering.Materials.IComputeColor', we'll use @'Stride.Rendering.Materials.IComputeScalar' for intensity, which returns a float, rather than a float4.",
+                    "",
+                    "In addition to the already existing @'Stride.Rendering.Materials.IComputeColor', we'll use @'Stride.Rendering.Materials.IComputeScalar' for intensity, which returns a float, rather than a float4.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu64"
+                    }
+                ],
+                [
+                    "We will also add another  @'Stride.Particles.Materials.UVBuilder' for a second texture coordinates animation.",
+                    "",
+                    " We will also add another  @'Stride.Particles.Materials.UVBuilder' for a second texture coordinates animation.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu64"
+                    }
+                ],
+                [
+                    "var shaderBaseColor = ComputeColor.GenerateShaderSource(shaderGeneratorContext, new MaterialComputeColorKeys(ParticleCustomShaderKeys.EmissiveMap, ParticleCustomShaderKeys.EmissiveValue, Color.White));",
+                    "",
+                    "  var shaderBaseColor = ComputeColor.GenerateShaderSource(shaderGeneratorContext, new MaterialComputeColorKeys(ParticleCustomShaderKeys.EmissiveMap, ParticleCustomShaderKeys.EmissiveValue, Color.White));\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu65"
+                    }
+                ],
+                [
+                    "shaderGeneratorContext.Parameters.Set(ParticleCustomShaderKeys.BaseColor, shaderBaseColor);",
+                    "",
+                    "  shaderGeneratorContext.Parameters.Set(ParticleCustomShaderKeys.BaseColor, shaderBaseColor);\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu65"
+                    }
+                ],
+                [
+                    "var shaderBaseScalar = ComputeScalar.GenerateShaderSource(shaderGeneratorContext, new MaterialComputeColorKeys(ParticleCustomShaderKeys.IntensityMap, ParticleCustomShaderKeys.IntensityValue, Color.White));",
+                    "",
+                    "\r\n  var shaderBaseScalar = ComputeScalar.GenerateShaderSource(shaderGeneratorContext, new MaterialComputeColorKeys(ParticleCustomShaderKeys.IntensityMap, ParticleCustomShaderKeys.IntensityValue, Color.White));\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu65"
+                    }
+                ],
+                [
+                    "shaderGeneratorContext.Parameters.Set(ParticleCustomShaderKeys.BaseIntensity, shaderBaseScalar);",
+                    "",
+                    "  shaderGeneratorContext.Parameters.Set(ParticleCustomShaderKeys.BaseIntensity, shaderBaseScalar);\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu65"
+                    }
+                ],
+                [
+                    "We load the two shaders: one for the main color and one for the intensity.",
+                    "",
+                    "We load the two shaders: one for the main color and one for the intensity.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu66"
+                    }
+                ],
+                [
+                    "These are similar to the shaders we wrote manually in the last two examples, except we generate them on the fly directly from the <g1>ComputeColor<\/g1> and <g2>ComputeScalar<\/g2> properties, which you can edit in the Property Grid.",
+                    "",
+                    " These are similar to the shaders we wrote manually in the last two examples, except we generate them on the fly directly from the <g1>ComputeColor<\/g1> and <g2>ComputeScalar<\/g2> properties, which you can edit in the Property Grid.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu66"
+                    }
+                ],
+                [
+                    "The generated code is similar to the shader code we wrote in the way that it calls <g3>Compute()<\/g3> and it returns the final result of our color or scalar compute tree.",
+                    "",
+                    " The generated code is similar to the shader code we wrote in the way that it calls <g3>Compute()<\/g3> and it returns the final result of our color or scalar compute tree.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu66"
+                    }
+                ],
+                [
+                    "After we generate the shader code, we set it to the respective key we need.",
+                    "",
+                    "After we generate the shader code, we set it to the respective key we need.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu67"
+                    }
+                ],
+                [
+                    "Check how <g1>ParticleCustomShaderKeys.BaseColor<\/g1> is defined in <g2>ParticleCustomShaderKeys.cs<\/g2>.",
+                    "",
+                    " Check how <g1>ParticleCustomShaderKeys.BaseColor<\/g1> is defined in <g2>ParticleCustomShaderKeys.cs<\/g2>.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu67"
+                    }
+                ],
+                [
+                    "In the effect file we check if this key is set, and if yes, we pass it to the stream defined in our shader code.",
+                    "",
+                    " In the effect file we check if this key is set, and if yes, we pass it to the stream defined in our shader code.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu67"
+                    }
+                ],
+                [
+                    "See also",
+                    "",
+                    "See also",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu68"
+                    }
+                ],
+                [
+                    "Tutorial:",
+                    "",
+                    "<g1>Tutorial:",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu69"
+                    }
+                ],
+                [
+                    "Create a trail",
+                    "",
+                    " Create a trail<\/g1>",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu69"
+                    }
+                ],
+                [
+                    "Tutorial:",
+                    "",
+                    "<g1>Tutorial:",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu70"
+                    }
+                ],
+                [
+                    "Custom particles",
+                    "",
+                    " Custom particles<\/g1>",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu70"
+                    }
+                ],
+                [
+                    "Tutorial:",
+                    "",
+                    "<g1>Tutorial:",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu71"
+                    }
+                ],
+                [
+                    "Inheritance",
+                    "",
+                    " Inheritance<\/g1>",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu71"
+                    }
+                ],
+                [
+                    "Tutorial:",
+                    "",
+                    "<g1>Tutorial:",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu72"
+                    }
+                ],
+                [
+                    "Lasers and lightning",
+                    "",
+                    " Lasers and lightning<\/g1>",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu72"
+                    }
+                ],
+                [
+                    "Particles",
+                    "",
+                    "<g1>Particles<\/g1>",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu73"
+                    }
+                ],
+                [
+                    "Create particles",
+                    "",
+                    "<g1>Create particles<\/g1>",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/particle-materials.md",
+                    {
+                        "id": "tu74"
+                    }
+                ]
+            ]
+        }
+    ],
+    "seg_enabled": false
+}

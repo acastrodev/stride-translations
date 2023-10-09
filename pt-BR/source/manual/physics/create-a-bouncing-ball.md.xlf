@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="/D:/repos/rr/source/manual/physics/create-a-bouncing-ball.md" source-language="en" target-language="pt" datatype="x-text/x-markdown" okp:inputEncoding="UTF-8">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en">Create a bouncing ball</source>
+<target xml:lang="pt">Create a bouncing ball</target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Beginner<x id="2"/>
+<x id="3"/>Designer<x id="4"/></source>
+<target xml:lang="pt"><x id="1"/>Beginner<x id="2"/>
+<x id="3"/>Designer<x id="4"/></target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">In this tutorial, we'll use the <g id="1">static collider and rigidbody components</g> to create a ball bouncing on a floor.</source>
+<target xml:lang="pt">In this tutorial, we'll use the <g id="1">static collider and rigidbody components</g> to create a ball bouncing on a floor.</target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>!Note<x id="2"/>
+The screenshots and videos in this tutorial were made using an earlier version of Stride, so some parts of the UI, and the default skybox and sphere, might look different from your version.</source>
+<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
+The screenshots and videos in this tutorial were made using an earlier version of Stride, so some parts of the UI, and the default skybox and sphere, might look different from your version.</target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">1. Create a new project</source>
+<target xml:lang="pt">1. Create a new project</target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en">Start a <g id="1">New Game</g> project.</source>
+<target xml:lang="pt">Start a <g id="1">New Game</g> project.</target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en">The default scene comes pre-loaded with five entities: Camera, Directional light, Skybox, Ground, and Sphere. We're going to add physics components to the <g id="1">Ground</g> and <g id="2">Sphere</g> entities.</source>
+<target xml:lang="pt">The default scene comes pre-loaded with five entities: Camera, Directional light, Skybox, Ground, and Sphere. We're going to add physics components to the <g id="1">Ground</g> and <g id="2">Sphere</g> entities.</target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en">2. Add a static collider</source>
+<target xml:lang="pt">2. Add a static collider</target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en">Let's begin by adding a <g id="1">static collider</g> component to the Ground entity. A static collider is a physics object that doesn't move. Typical static colliders are walls, floors, large rocks, and so on. In this case, the static collider will give the ball something to bounce on.</source>
+<target xml:lang="pt">Let's begin by adding a <g id="1">static collider</g> component to the Ground entity. A static collider is a physics object that doesn't move. Typical static colliders are walls, floors, large rocks, and so on. In this case, the static collider will give the ball something to bounce on.</target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en">Select the <g id="1">Ground</g> entity.</source>
+<target xml:lang="pt">Select the <g id="1">Ground</g> entity.</target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en">In the <g id="1">Property Grid</g>, click <g id="2">Add component</g> and select <g id="3">Static Collider</g>.</source>
+<target xml:lang="pt">In the <g id="1">Property Grid</g>, click <g id="2">Add component</g> and select <g id="3">Static Collider</g>.</target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Add Static collider component<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Add Static collider component<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en">Set the <g id="1">collider shape</g> to match the shape of the entity. To do this, in the <g id="2">Property Grid</g>, expand the <g id="3">Static Collider component</g> to view its properties.</source>
+<target xml:lang="pt">Set the <g id="1">collider shape</g> to match the shape of the entity. To do this, in the <g id="2">Property Grid</g>, expand the <g id="3">Static Collider component</g> to view its properties.</target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en">Next to <g id="1">Collider Shapes</g>, click <x id="2"/>Green plus button<x id="3"/> (<g id="4">Add</g>) and select <g id="5">Infinite Plane</g>.</source>
+<target xml:lang="pt">Next to <g id="1">Collider Shapes</g>, click <x id="2"/>Green plus button<x id="3"/> (<g id="4">Add</g>) and select <g id="5">Infinite Plane</g>.</target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Add Static collider component<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Add Static collider component<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en">This adds a static collider to the ground, so the ball has something to bounce off.</source>
+<target xml:lang="pt">This adds a static collider to the ground, so the ball has something to bounce off.</target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en">3. Add a rigidbody collider</source>
+<target xml:lang="pt">3. Add a rigidbody collider</target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en">Next, we'll add a <g id="1">rigidbody</g> component to the sphere. A rigidbody is a physics object that moves — perfect for our bouncing ball.</source>
+<target xml:lang="pt">Next, we'll add a <g id="1">rigidbody</g> component to the sphere. A rigidbody is a physics object that moves — perfect for our bouncing ball.</target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en">In the <g id="1">Scene Editor</g>, select the <g id="2">Sphere</g> entity.</source>
+<target xml:lang="pt">In the <g id="1">Scene Editor</g>, select the <g id="2">Sphere</g> entity.</target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en">In the <g id="1">Property Grid</g>, click <g id="2">Add component</g> and select <g id="3">Rigidbody</g>.</source>
+<target xml:lang="pt">In the <g id="1">Property Grid</g>, click <g id="2">Add component</g> and select <g id="3">Rigidbody</g>.</target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Add Static collider component<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Add Static collider component<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en">Just like we did for the Ground entity, set the <g id="1">collider shape</g> to match the entity. To do this, in the <g id="2">Property Grid</g>, expand the <g id="3">Rigidbody component</g> to view its properties.</source>
+<target xml:lang="pt">Just like we did for the Ground entity, set the <g id="1">collider shape</g> to match the entity. To do this, in the <g id="2">Property Grid</g>, expand the <g id="3">Rigidbody component</g> to view its properties.</target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en">Next to <g id="1">Collider Shapes</g>, click <x id="2"/>Green plus button<x id="3"/> (<g id="4">Add</g>) and select <g id="5">Sphere</g>.</source>
+<target xml:lang="pt">Next to <g id="1">Collider Shapes</g>, click <x id="2"/>Green plus button<x id="3"/> (<g id="4">Add</g>) and select <g id="5">Sphere</g>.</target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Add Static collider component<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Add Static collider component<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en">4. Position the ball</source>
+<target xml:lang="pt">4. Position the ball</target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en">Let's position the sphere so it starts in mid-air and falls to the ground.</source>
+<target xml:lang="pt">Let's position the sphere so it starts in mid-air and falls to the ground.</target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en">Select the <g id="1">Sphere</g> entity.</source>
+<target xml:lang="pt">Select the <g id="1">Sphere</g> entity.</target>
+</trans-unit>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en">In the <g id="1">Property Grid</g>, under <g id="2">Transform</g>, set the <g id="3">Position</g> to: <g id="4">X: 0, Y: 6, Z: 0</g></source>
+<target xml:lang="pt">In the <g id="1">Property Grid</g>, under <g id="2">Transform</g>, set the <g id="3">Position</g> to: <g id="4">X: 0, Y: 6, Z: 0</g></target>
+</trans-unit>
+<trans-unit id="tu29" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Change Sphere position<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Change Sphere position<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu30" xml:space="preserve">
+<source xml:lang="en">This places the ball in mid-air above the ground.</source>
+<target xml:lang="pt">This places the ball in mid-air above the ground.</target>
+</trans-unit>
+<trans-unit id="tu31" xml:space="preserve">
+<source xml:lang="en">5. Position the camera</source>
+<target xml:lang="pt">5. Position the camera</target>
+</trans-unit>
+<trans-unit id="tu32" xml:space="preserve">
+<source xml:lang="en">Now we'll move the camera to give us a good view of the scene.</source>
+<target xml:lang="pt">Now we'll move the camera to give us a good view of the scene.</target>
+</trans-unit>
+<trans-unit id="tu33" xml:space="preserve">
+<source xml:lang="en">Select the <g id="1">Camera</g> entity.</source>
+<target xml:lang="pt">Select the <g id="1">Camera</g> entity.</target>
+</trans-unit>
+<trans-unit id="tu34" xml:space="preserve">
+<source xml:lang="en">In the <g id="1">Property Grid</g>, under <g id="2">Transform</g>, set the <g id="3">Position</g> to: <g id="4">X: -12, Y: 7, Z: 9</g></source>
+<target xml:lang="pt">In the <g id="1">Property Grid</g>, under <g id="2">Transform</g>, set the <g id="3">Position</g> to: <g id="4">X: -12, Y: 7, Z: 9</g></target>
+</trans-unit>
+<trans-unit id="tu35" xml:space="preserve">
+<source xml:lang="en">Set the <g id="1">Rotation</g> to: <g id="2">X: -20, Y: -50, Z: 0</g></source>
+<target xml:lang="pt">Set the <g id="1">Rotation</g> to: <g id="2">X: -20, Y: -50, Z: 0</g></target>
+</trans-unit>
+<trans-unit id="tu36" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Change camera position<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Change camera position<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu37" xml:space="preserve">
+<source xml:lang="en">You can see preview the camera view in the <g id="1">Camera preview</g> in the bottom-right of the Scene Editor.</source>
+<target xml:lang="pt">You can see preview the camera view in the <g id="1">Camera preview</g> in the bottom-right of the Scene Editor.</target>
+</trans-unit>
+<trans-unit id="tu38" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Camera preview<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Camera preview<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu39" xml:space="preserve">
+<source xml:lang="en">6. Set the restitution</source>
+<target xml:lang="pt">6. Set the restitution</target>
+</trans-unit>
+<trans-unit id="tu40" xml:space="preserve">
+<source xml:lang="en">Let's see what the scene looks like so far. To run the project, press <g id="1">F5</g>.</source>
+<target xml:lang="pt">Let's see what the scene looks like so far. To run the project, press <g id="1">F5</g>.</target>
+</trans-unit>
+<trans-unit id="tu41" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Falling ball<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Falling ball<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu42" xml:space="preserve">
+<source xml:lang="en">The Sphere (rigidbody) responds to gravity and falls. The Ground (static collider) breaks its fall. But there's no bounce effect yet.</source>
+<target xml:lang="pt">The Sphere (rigidbody) responds to gravity and falls. The Ground (static collider) breaks its fall. But there's no bounce effect yet.</target>
+</trans-unit>
+<trans-unit id="tu43" xml:space="preserve">
+<source xml:lang="en">To create a bounce effect, we need to change the <g id="1">restitution</g> of the Sphere and the Ground. This simulates the <g id="2">coefficient of restitution (Wikipedia)</g> of real-world collisions.</source>
+<target xml:lang="pt">To create a bounce effect, we need to change the <g id="1">restitution</g> of the Sphere and the Ground. This simulates the <g id="2">coefficient of restitution (Wikipedia)</g> of real-world collisions.</target>
+</trans-unit>
+<trans-unit id="tu44" xml:space="preserve">
+<source xml:lang="en">If the restitution property of colliding entities is 0, the entities lose all energy and stop moving immediately on impact.</source>
+<target xml:lang="pt">If the restitution property of colliding entities is 0, the entities lose all energy and stop moving immediately on impact.</target>
+</trans-unit>
+<trans-unit id="tu45" xml:space="preserve">
+<source xml:lang="en">If the restitution is 1, they lose no energy and rebound with the same velocity at which they collided.</source>
+<target xml:lang="pt">If the restitution is 1, they lose no energy and rebound with the same velocity at which they collided.</target>
+</trans-unit>
+<trans-unit id="tu46" xml:space="preserve">
+<source xml:lang="en">If the restitution is higher than 1, they gain energy and rebound with <g id="1">more</g> velocity.</source>
+<target xml:lang="pt">If the restitution is higher than 1, they gain energy and rebound with <g id="1">more</g> velocity.</target>
+</trans-unit>
+<trans-unit id="tu47" xml:space="preserve">
+<source xml:lang="en">As a rule, to create realistic collisions, set the restitution between 0 and 1.</source>
+<target xml:lang="pt">As a rule, to create realistic collisions, set the restitution between 0 and 1.</target>
+</trans-unit>
+<trans-unit id="tu48" xml:space="preserve">
+<source xml:lang="en">Let's set the restitution of our Sphere and Ground entities.</source>
+<target xml:lang="pt">Let's set the restitution of our Sphere and Ground entities.</target>
+</trans-unit>
+<trans-unit id="tu49" xml:space="preserve">
+<source xml:lang="en">Select the <g id="1">Sphere</g> entity.</source>
+<target xml:lang="pt">Select the <g id="1">Sphere</g> entity.</target>
+</trans-unit>
+<trans-unit id="tu50" xml:space="preserve">
+<source xml:lang="en">In the <g id="1">Property Grid</g>, under <g id="2">Rigidbody</g>, set the <g id="3">Restitution</g> to 0.8.</source>
+<target xml:lang="pt">In the <g id="1">Property Grid</g>, under <g id="2">Rigidbody</g>, set the <g id="3">Restitution</g> to 0.8.</target>
+</trans-unit>
+<trans-unit id="tu51" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Set restitution for a sphere<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Set restitution for a sphere<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu52" xml:space="preserve">
+<source xml:lang="en">Select the <g id="1">Ground</g> entity.</source>
+<target xml:lang="pt">Select the <g id="1">Ground</g> entity.</target>
+</trans-unit>
+<trans-unit id="tu53" xml:space="preserve">
+<source xml:lang="en">In the <g id="1">Property Grid</g>, under <g id="2">Static Collider</g>, set the <g id="3">Restitution</g> to 0.5.</source>
+<target xml:lang="pt">In the <g id="1">Property Grid</g>, under <g id="2">Static Collider</g>, set the <g id="3">Restitution</g> to 0.5.</target>
+</trans-unit>
+<trans-unit id="tu54" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Set restitution for the ground<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Set restitution for the ground<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu55" xml:space="preserve">
+<source xml:lang="en">To see how this changes the physics, run the project again (<g id="1">F5</g>). This time, the ball bounces on the ground before coming to a stop:</source>
+<target xml:lang="pt">To see how this changes the physics, run the project again (<g id="1">F5</g>). This time, the ball bounces on the ground before coming to a stop:</target>
+</trans-unit>
+<trans-unit id="tu56" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Bouncing effect<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Bouncing effect<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu57" xml:space="preserve">
+<source xml:lang="en">Try changing the restitution of both entities to 1. This creates a ball that bounces indefinitely, losing no energy:</source>
+<target xml:lang="pt">Try changing the restitution of both entities to 1. This creates a ball that bounces indefinitely, losing no energy:</target>
+</trans-unit>
+<trans-unit id="tu58" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Infinite bounce<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Infinite bounce<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu59" xml:space="preserve">
+<source xml:lang="en">Set the restitution to 1.1 and the ball bounces a little higher each time:</source>
+<target xml:lang="pt">Set the restitution to 1.1 and the ball bounces a little higher each time:</target>
+</trans-unit>
+<trans-unit id="tu60" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Ball bouncing higher<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Ball bouncing higher<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu61" xml:space="preserve">
+<source xml:lang="en">Now we've created a bouncing ball, we can use it to learn about triggers. For more information, see the <g id="1">Script a trigger</g> tutorial.</source>
+<target xml:lang="pt">Now we've created a bouncing ball, we can use it to learn about triggers. For more information, see the <g id="1">Script a trigger</g> tutorial.</target>
+</trans-unit>
+<trans-unit id="tu62" xml:space="preserve">
+<source xml:lang="en">See also</source>
+<target xml:lang="pt">See also</target>
+</trans-unit>
+<trans-unit id="tu63" xml:space="preserve">
+<source xml:lang="en"><g id="1">Colliders</g></source>
+<target xml:lang="pt"><g id="1">Colliders</g></target>
+</trans-unit>
+<trans-unit id="tu64" xml:space="preserve">
+<source xml:lang="en"><g id="1">Collider shape</g></source>
+<target xml:lang="pt"><g id="1">Collider shape</g></target>
+</trans-unit>
+<trans-unit id="tu65" xml:space="preserve">
+<source xml:lang="en"><g id="1">Tutorial: Script a trigger</g></source>
+<target xml:lang="pt"><g id="1">Tutorial: Script a trigger</g></target>
+</trans-unit>
+</body>
+</file>
+</xliff>

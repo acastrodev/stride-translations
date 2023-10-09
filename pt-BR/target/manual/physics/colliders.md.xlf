@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" xmlns:okp="okapi-framework:xliff-extensions" its:version="2.0" version="1.2">
+<file datatype="x-text/x-markdown" okp:inputEncoding="UTF-8" original="/D:/repos/rr/source/manual/physics/colliders.md" source-language="en" target-language="pt">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en">Colliders</source>
+<target xml:lang="pt">Colliders</target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Beginner<x id="2"/>
+<x id="3"/>Designer<x id="4"/></source>
+<target xml:lang="pt"><x id="1"/>Beginner<x id="2"/>
+<x id="3"/>Designer<x id="4"/></target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">To use physics in your project, add a <g id="1">collider</g> component to an entity.</source>
+<target xml:lang="pt">To use physics in your project, add a <g id="1">collider</g> component to an entity.</target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">Colliders define the shapes and rules of physics objects. There are three types:</source>
+<target xml:lang="pt">Colliders define the shapes and rules of physics objects. There are three types:</target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en"><g id="1">static colliders</g> don't move (eg walls, floors, heavy objects, etc)</source>
+<target xml:lang="pt"><g id="1">static colliders</g> don't move (eg walls, floors, heavy objects, etc)</target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en"><g id="1">rigidbodies</g> are moved around by forces such as collision and gravity (eg balls, barrels, etc)</source>
+<target xml:lang="pt"><g id="1">rigidbodies</g> are moved around by forces such as collision and gravity (eg balls, barrels, etc)</target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en"><g id="1">characters</g> are controlled by user input (ie player characters)</source>
+<target xml:lang="pt"><g id="1">characters</g> are controlled by user input (ie player characters)</target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en">You can also:</source>
+<target xml:lang="pt">You can also:</target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en">set the <g id="1">shape of collider components</g></source>
+<target xml:lang="pt">set the <g id="1">shape of collider components</g></target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en">make <g id="1">triggers</g>, and detect when objects pass through them</source>
+<target xml:lang="pt">make <g id="1">triggers</g>, and detect when objects pass through them</target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en">constrict collider movement with <g id="1">constraints</g></source>
+<target xml:lang="pt">constrict collider movement with <g id="1">constraints</g></target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en">How colliders interact</source>
+<target xml:lang="pt">How colliders interact</target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en">Colliders interact according to the table below.</source>
+<target xml:lang="pt">Colliders interact according to the table below.</target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en">Kinematic objects</source>
+<target xml:lang="pt">Kinematic objects</target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en">Kinematic triggers</source>
+<target xml:lang="pt">Kinematic triggers</target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en">Rigidbody colliders</source>
+<target xml:lang="pt">Rigidbody colliders</target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en">Rigidbody triggers</source>
+<target xml:lang="pt">Rigidbody triggers</target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en">Static colliders</source>
+<target xml:lang="pt">Static colliders</target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en">Static triggers</source>
+<target xml:lang="pt">Static triggers</target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en">Kinematic objects</source>
+<target xml:lang="pt">Kinematic objects</target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en">Collisions</source>
+<target xml:lang="pt">Collisions</target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en">Collisions</source>
+<target xml:lang="pt">Collisions</target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en">Collisions and dynamic</source>
+<target xml:lang="pt">Collisions and dynamic</target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en">Collisions</source>
+<target xml:lang="pt">Collisions</target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en">Collisions</source>
+<target xml:lang="pt">Collisions</target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en">Collisions</source>
+<target xml:lang="pt">Collisions</target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en">Kinematic triggers</source>
+<target xml:lang="pt">Kinematic triggers</target>
+</trans-unit>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en">Collisions</source>
+<target xml:lang="pt">Collisions</target>
+</trans-unit>
+<trans-unit id="tu29" xml:space="preserve">
+<source xml:lang="en">Collisions</source>
+<target xml:lang="pt">Collisions</target>
+</trans-unit>
+<trans-unit id="tu30" xml:space="preserve">
+<source xml:lang="en">Collisions</source>
+<target xml:lang="pt">Collisions</target>
+</trans-unit>
+<trans-unit id="tu31" xml:space="preserve">
+<source xml:lang="en">Collisions</source>
+<target xml:lang="pt">Collisions</target>
+</trans-unit>
+<trans-unit id="tu32" xml:space="preserve">
+<source xml:lang="en">Collisions</source>
+<target xml:lang="pt">Collisions</target>
+</trans-unit>
+<trans-unit id="tu33" xml:space="preserve">
+<source xml:lang="en">Collisions</source>
+<target xml:lang="pt">Collisions</target>
+</trans-unit>
+<trans-unit id="tu34" xml:space="preserve">
+<source xml:lang="en">Rigidbody colliders</source>
+<target xml:lang="pt">Rigidbody colliders</target>
+</trans-unit>
+<trans-unit id="tu35" xml:space="preserve">
+<source xml:lang="en">Collisions and dynamic</source>
+<target xml:lang="pt">Collisions and dynamic</target>
+</trans-unit>
+<trans-unit id="tu36" xml:space="preserve">
+<source xml:lang="en">Collisions</source>
+<target xml:lang="pt">Collisions</target>
+</trans-unit>
+<trans-unit id="tu37" xml:space="preserve">
+<source xml:lang="en">Collisions and dynamic</source>
+<target xml:lang="pt">Collisions and dynamic</target>
+</trans-unit>
+<trans-unit id="tu38" xml:space="preserve">
+<source xml:lang="en">Collisions</source>
+<target xml:lang="pt">Collisions</target>
+</trans-unit>
+<trans-unit id="tu39" xml:space="preserve">
+<source xml:lang="en">Collisions and dynamic</source>
+<target xml:lang="pt">Collisions and dynamic</target>
+</trans-unit>
+<trans-unit id="tu40" xml:space="preserve">
+<source xml:lang="en">Collisions</source>
+<target xml:lang="pt">Collisions</target>
+</trans-unit>
+<trans-unit id="tu41" xml:space="preserve">
+<source xml:lang="en">Rigidbody triggers</source>
+<target xml:lang="pt">Rigidbody triggers</target>
+</trans-unit>
+<trans-unit id="tu42" xml:space="preserve">
+<source xml:lang="en">Collisions</source>
+<target xml:lang="pt">Collisions</target>
+</trans-unit>
+<trans-unit id="tu43" xml:space="preserve">
+<source xml:lang="en">Collisions</source>
+<target xml:lang="pt">Collisions</target>
+</trans-unit>
+<trans-unit id="tu44" xml:space="preserve">
+<source xml:lang="en">Collisions</source>
+<target xml:lang="pt">Collisions</target>
+</trans-unit>
+<trans-unit id="tu45" xml:space="preserve">
+<source xml:lang="en">Collisions</source>
+<target xml:lang="pt">Collisions</target>
+</trans-unit>
+<trans-unit id="tu46" xml:space="preserve">
+<source xml:lang="en">Collisions</source>
+<target xml:lang="pt">Collisions</target>
+</trans-unit>
+<trans-unit id="tu47" xml:space="preserve">
+<source xml:lang="en">Collisions</source>
+<target xml:lang="pt">Collisions</target>
+</trans-unit>
+<trans-unit id="tu48" xml:space="preserve">
+<source xml:lang="en">Static colliders</source>
+<target xml:lang="pt">Static colliders</target>
+</trans-unit>
+<trans-unit id="tu49" xml:space="preserve">
+<source xml:lang="en">Collisions</source>
+<target xml:lang="pt">Collisions</target>
+</trans-unit>
+<trans-unit id="tu50" xml:space="preserve">
+<source xml:lang="en">Collisions</source>
+<target xml:lang="pt">Collisions</target>
+</trans-unit>
+<trans-unit id="tu51" xml:space="preserve">
+<source xml:lang="en">Collisions and dynamic</source>
+<target xml:lang="pt">Collisions and dynamic</target>
+</trans-unit>
+<trans-unit id="tu52" xml:space="preserve">
+<source xml:lang="en">Collisions</source>
+<target xml:lang="pt">Collisions</target>
+</trans-unit>
+<trans-unit id="tu53" xml:space="preserve">
+<source xml:lang="en">Nothing</source>
+<target xml:lang="pt">Nothing</target>
+</trans-unit>
+<trans-unit id="tu54" xml:space="preserve">
+<source xml:lang="en">Nothing</source>
+<target xml:lang="pt">Nothing</target>
+</trans-unit>
+<trans-unit id="tu55" xml:space="preserve">
+<source xml:lang="en">Static triggers</source>
+<target xml:lang="pt">Static triggers</target>
+</trans-unit>
+<trans-unit id="tu56" xml:space="preserve">
+<source xml:lang="en">Collisions</source>
+<target xml:lang="pt">Collisions</target>
+</trans-unit>
+<trans-unit id="tu57" xml:space="preserve">
+<source xml:lang="en">Collisions</source>
+<target xml:lang="pt">Collisions</target>
+</trans-unit>
+<trans-unit id="tu58" xml:space="preserve">
+<source xml:lang="en">Collisions</source>
+<target xml:lang="pt">Collisions</target>
+</trans-unit>
+<trans-unit id="tu59" xml:space="preserve">
+<source xml:lang="en">Collisions</source>
+<target xml:lang="pt">Collisions</target>
+</trans-unit>
+<trans-unit id="tu60" xml:space="preserve">
+<source xml:lang="en">Nothing</source>
+<target xml:lang="pt">Nothing</target>
+</trans-unit>
+<trans-unit id="tu61" xml:space="preserve">
+<source xml:lang="en">Nothing</source>
+<target xml:lang="pt">Nothing</target>
+</trans-unit>
+<trans-unit id="tu62" xml:space="preserve">
+<source xml:lang="en">"Collisions" refers to collision information and events only. This means the collision is detected in the code, but the objects don't bump into each other (no dynamic response).</source>
+<target xml:lang="pt">"Collisions" refers to collision information and events only. This means the collision is detected in the code, but the objects don't bump into each other (no dynamic response).</target>
+</trans-unit>
+<trans-unit id="tu63" xml:space="preserve">
+<source xml:lang="en">"Dynamic" means both collision information and events, plus dynamic response (ie the colliders bump into each other instead of passing through).</source>
+<target xml:lang="pt">"Dynamic" means both collision information and events, plus dynamic response (ie the colliders bump into each other instead of passing through).</target>
+</trans-unit>
+<trans-unit id="tu64" xml:space="preserve">
+<source xml:lang="en">For example, rigidbody colliders dynamically collide with static colliders (ie bump into them). However, no objects dynamically collide with triggers; collisions are detected in the code, but objects simply pass through.</source>
+<target xml:lang="pt">For example, rigidbody colliders dynamically collide with static colliders (ie bump into them). However, no objects dynamically collide with triggers; collisions are detected in the code, but objects simply pass through.</target>
+</trans-unit>
+<trans-unit id="tu65" xml:space="preserve">
+<source xml:lang="en">Show colliders in the Scene Editor</source>
+<target xml:lang="pt">Show colliders in the Scene Editor</target>
+</trans-unit>
+<trans-unit id="tu66" xml:space="preserve">
+<source xml:lang="en">By default, colliders are invisible in the Scene Editor. To show them:</source>
+<target xml:lang="pt">By default, colliders are invisible in the Scene Editor. To show them:</target>
+</trans-unit>
+<trans-unit id="tu67" xml:space="preserve">
+<source xml:lang="en">In the Game Studio toolbar, in the top right, click the <g id="1">Display gizmo options</g> icon.</source>
+<target xml:lang="pt">In the Game Studio toolbar, in the top right, click the <g id="1">Display gizmo options</g> icon.</target>
+</trans-unit>
+<trans-unit id="tu68" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Display gizmo options<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Display gizmo options<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu69" xml:space="preserve">
+<source xml:lang="en">Select <g id="1">Physics</g>.</source>
+<target xml:lang="pt">Select <g id="1">Physics</g>.</target>
+</trans-unit>
+<trans-unit id="tu70" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Display physics option<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Display physics option<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu71" xml:space="preserve">
+<source xml:lang="en">The Scene Editor displays collider shapes.</source>
+<target xml:lang="pt">The Scene Editor displays collider shapes.</target>
+</trans-unit>
+<trans-unit id="tu72" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Display physics<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Display physics<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu73" xml:space="preserve">
+<source xml:lang="en">Show colliders at runtime</source>
+<target xml:lang="pt">Show colliders at runtime</target>
+</trans-unit>
+<trans-unit id="tu74" xml:space="preserve">
+<source xml:lang="en">You can make colliders visible at runtime, which is useful for debugging problems with physics. To do this, use:</source>
+<target xml:lang="pt">You can make colliders visible at runtime, which is useful for debugging problems with physics. To do this, use:</target>
+</trans-unit>
+<trans-unit id="tu75" xml:space="preserve">
+<source xml:lang="en"><g id="1">
+this.GetSimulation().ColliderShapesRendering = true;
+</g></source>
+<target xml:lang="pt"><g id="1">
+this.GetSimulation().ColliderShapesRendering = true;
+</g></target>
+</trans-unit>
+<trans-unit id="tu76" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>!Note<x id="2"/>
+Collider shapes for infinite planes are always invisible.</source>
+<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
+Collider shapes for infinite planes are always invisible.</target>
+</trans-unit>
+<trans-unit id="tu77" xml:space="preserve">
+<source xml:lang="en">Keyboard shortcut</source>
+<target xml:lang="pt">Keyboard shortcut</target>
+</trans-unit>
+<trans-unit id="tu78" xml:space="preserve">
+<source xml:lang="en">To show or hide collider shapes at runtime with a keyboard shortcut, use the <g id="1">Debug physics shapes</g> script.</source>
+<target xml:lang="pt">To show or hide collider shapes at runtime with a keyboard shortcut, use the <g id="1">Debug physics shapes</g> script.</target>
+</trans-unit>
+<trans-unit id="tu79" xml:space="preserve">
+<source xml:lang="en">In the <g id="1">Asset View</g>, click <g id="2">Add asset</g>.</source>
+<target xml:lang="pt">In the <g id="1">Asset View</g>, click <g id="2">Add asset</g>.</target>
+</trans-unit>
+<trans-unit id="tu80" xml:space="preserve">
+<source xml:lang="en">Select <g id="1">Scripts</g> &gt; <g id="2">Debug physics shapes</g>.</source>
+<target xml:lang="pt">Select <g id="1">Scripts</g> &gt; <g id="2">Debug physics shapes</g>.</target>
+</trans-unit>
+<trans-unit id="tu81" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Add debug physics shape script<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Add debug physics shape script<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu82" xml:space="preserve">
+<source xml:lang="en">In the Game Studio toolbar, click <g id="1">Reload assemblies and update scripts</g>.</source>
+<target xml:lang="pt">In the Game Studio toolbar, click <g id="1">Reload assemblies and update scripts</g>.</target>
+</trans-unit>
+<trans-unit id="tu83" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Reload assemblies<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Reload assemblies<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu84" xml:space="preserve">
+<source xml:lang="en">Add the <g id="1">Debug physics shapes</g> script as a component to an entity in the scene. It doesn't matter which entity.</source>
+<target xml:lang="pt">Add the <g id="1">Debug physics shapes</g> script as a component to an entity in the scene. It doesn't matter which entity.</target>
+</trans-unit>
+<trans-unit id="tu85" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Add debug physics shapes script component<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Add debug physics shapes script component<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu86" xml:space="preserve">
+<source xml:lang="en">The script binds the collider shape visibility to <g id="1">Left Shift + Left Ctrl + P</g>, so you can turn it on and off at runtime. You can edit the script to bind a different key combination.</source>
+<target xml:lang="pt">The script binds the collider shape visibility to <g id="1">Left Shift + Left Ctrl + P</g>, so you can turn it on and off at runtime. You can edit the script to bind a different key combination.</target>
+</trans-unit>
+<trans-unit id="tu87" xml:space="preserve">
+<source xml:lang="en">See also</source>
+<target xml:lang="pt">See also</target>
+</trans-unit>
+<trans-unit id="tu88" xml:space="preserve">
+<source xml:lang="en"><g id="1">Collider shapes</g></source>
+<target xml:lang="pt"><g id="1">Collider shapes</g></target>
+</trans-unit>
+<trans-unit id="tu89" xml:space="preserve">
+<source xml:lang="en"><g id="1">Static colliders</g></source>
+<target xml:lang="pt"><g id="1">Static colliders</g></target>
+</trans-unit>
+<trans-unit id="tu90" xml:space="preserve">
+<source xml:lang="en"><g id="1">Rigidbodies</g></source>
+<target xml:lang="pt"><g id="1">Rigidbodies</g></target>
+</trans-unit>
+<trans-unit id="tu91" xml:space="preserve">
+<source xml:lang="en"><g id="1">Kinematic rigidbodies</g></source>
+<target xml:lang="pt"><g id="1">Kinematic rigidbodies</g></target>
+</trans-unit>
+<trans-unit id="tu92" xml:space="preserve">
+<source xml:lang="en"><g id="1">Simulation</g></source>
+<target xml:lang="pt"><g id="1">Simulation</g></target>
+</trans-unit>
+<trans-unit id="tu93" xml:space="preserve">
+<source xml:lang="en"><g id="1">Physics tutorials</g></source>
+<target xml:lang="pt"><g id="1">Physics tutorials</g></target>
+</trans-unit>
+</body>
+</file>
+</xliff>

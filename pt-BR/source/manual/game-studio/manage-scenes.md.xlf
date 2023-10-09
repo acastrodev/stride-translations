@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="/D:/repos/rr/source/manual/game-studio/manage-scenes.md" source-language="en" target-language="pt" datatype="x-text/x-markdown" okp:inputEncoding="UTF-8">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en">Manage scenes</source>
+<target xml:lang="pt">Manage scenes</target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Beginner<x id="2"/>
+<x id="3"/>Programmer<x id="4"/>
+<x id="5"/>Designer<x id="6"/></source>
+<target xml:lang="pt"><x id="1"/>Beginner<x id="2"/>
+<x id="3"/>Programmer<x id="4"/>
+<x id="5"/>Designer<x id="6"/></target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">Scenes and entities are arranged in a hierarchy, with the <g id="1">root scene</g> at the top. This hierarchy is displayed in the <g id="2">Entity Tree</g> in the Scene Editor on the left.</source>
+<target xml:lang="pt">Scenes and entities are arranged in a hierarchy, with the <g id="1">root scene</g> at the top. This hierarchy is displayed in the <g id="2">Entity Tree</g> in the Scene Editor on the left.</target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Scene hierarchy tree<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Scene hierarchy tree<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">The root scene contains all the scenes and entities in your game. It should contain common entities that the other scenes and entities use, such as game logic scripts.</source>
+<target xml:lang="pt">The root scene contains all the scenes and entities in your game. It should contain common entities that the other scenes and entities use, such as game logic scripts.</target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Scene hierarchy diagram<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Scene hierarchy diagram<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en">Scenes are kept in different folders. This means that different people can work on them without overwriting each other's work.</source>
+<target xml:lang="pt">Scenes are kept in different folders. This means that different people can work on them without overwriting each other's work.</target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>!Note<x id="2"/>
+When scenes load at runtime, their <g id="3">child scenes aren't automatically loaded too</g>. You have to load child scenes in code. For more information, see <g id="4">Load scenes</g>.</source>
+<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
+When scenes load at runtime, their <g id="3">child scenes aren't automatically loaded too</g>. You have to load child scenes in code. For more information, see <g id="4">Load scenes</g>.</target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en">Set parent and child scenes</source>
+<target xml:lang="pt">Set parent and child scenes</target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en">The relationship between parent and child scenes is set on the child, not the parent. In other words, child scenes know about their parent scenes, but parent scenes don't know about their child scenes.</source>
+<target xml:lang="pt">The relationship between parent and child scenes is set on the child, not the parent. In other words, child scenes know about their parent scenes, but parent scenes don't know about their child scenes.</target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en">There are several ways to make a scene a child of another scene:</source>
+<target xml:lang="pt">There are several ways to make a scene a child of another scene:</target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en">In the Scene Editor <g id="1">Entity Tree</g> (left by default), drag the scene onto the scene you want to make its parent.</source>
+<target xml:lang="pt">In the Scene Editor <g id="1">Entity Tree</g> (left by default), drag the scene onto the scene you want to make its parent.</target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en">Drag the scene from the <g id="1">Asset View</g> (bottom by default) onto the scene you want to make its parent in the <g id="2">Entity Tree</g>.</source>
+<target xml:lang="pt">Drag the scene from the <g id="1">Asset View</g> (bottom by default) onto the scene you want to make its parent in the <g id="2">Entity Tree</g>.</target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en">In the scene <g id="1">Property Grid</g> (on the right by default), next to <g id="2">Parent</g>, specify the scene you want to be the scene's parent.</source>
+<target xml:lang="pt">In the scene <g id="1">Property Grid</g> (on the right by default), next to <g id="2">Parent</g>, specify the scene you want to be the scene's parent.</target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Properties parent scene<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Properties parent scene<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en">Set the default scene</source>
+<target xml:lang="pt">Set the default scene</target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en">The <g id="1">default scene</g> is the scene Stride loads at runtime. You can set this in the <g id="2">Game Settings</g> asset.</source>
+<target xml:lang="pt">The <g id="1">default scene</g> is the scene Stride loads at runtime. You can set this in the <g id="2">Game Settings</g> asset.</target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en">In the <g id="1">Solution Explorer</g> (the bottom-left pane by default), select the <g id="2">Assets folder</g>.</source>
+<target xml:lang="pt">In the <g id="1">Solution Explorer</g> (the bottom-left pane by default), select the <g id="2">Assets folder</g>.</target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Select Assets folder asset<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Select Assets folder asset<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en">In the <g id="1">Asset View</g> (the bottom pane by default), select the <g id="2">GameSettings</g> asset.</source>
+<target xml:lang="pt">In the <g id="1">Asset View</g> (the bottom pane by default), select the <g id="2">GameSettings</g> asset.</target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Select Game Settings asset<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Select Game Settings asset<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en">In the <g id="1">Property Grid</g> (the right-hand pane by default), next to <g id="2">Default Scene</g>, click <x id="3"/>Hand icon<x id="4"/> (<g id="5">Select an asset</g>).</source>
+<target xml:lang="pt">In the <g id="1">Property Grid</g> (the right-hand pane by default), next to <g id="2">Default Scene</g>, click <x id="3"/>Hand icon<x id="4"/> (<g id="5">Select an asset</g>).</target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Set default scene<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Set default scene<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en">The <g id="1">Select an asset</g> window opens.</source>
+<target xml:lang="pt">The <g id="1">Select an asset</g> window opens.</target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en">Select the default scene and click <g id="1">OK</g>.</source>
+<target xml:lang="pt">Select the default scene and click <g id="1">OK</g>.</target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en">Stride loads this scene at runtime.</source>
+<target xml:lang="pt">Stride loads this scene at runtime.</target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en">For more information about the Game Settings asset, see <g id="1">Game Settings</g>.</source>
+<target xml:lang="pt">For more information about the Game Settings asset, see <g id="1">Game Settings</g>.</target>
+</trans-unit>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en">Set the active scene</source>
+<target xml:lang="pt">Set the active scene</target>
+</trans-unit>
+<trans-unit id="tu29" xml:space="preserve">
+<source xml:lang="en">The <g id="1">active scene</g> is the scene entities are added to when you drop them in the Scene Editor. Game Studio adds the entities as children to the active scene.</source>
+<target xml:lang="pt">The <g id="1">active scene</g> is the scene entities are added to when you drop them in the Scene Editor. Game Studio adds the entities as children to the active scene.</target>
+</trans-unit>
+<trans-unit id="tu30" xml:space="preserve">
+<source xml:lang="en">To set the active scene, <g id="1">Entity Tree</g> (left by default), right-click the scene and select <g id="2">active scene</g>.</source>
+<target xml:lang="pt">To set the active scene, <g id="1">Entity Tree</g> (left by default), right-click the scene and select <g id="2">active scene</g>.</target>
+</trans-unit>
+<trans-unit id="tu31" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Set active scene<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Set active scene<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu32" xml:space="preserve">
+<source xml:lang="en">The active scene has no effect on runtime.</source>
+<target xml:lang="pt">The active scene has no effect on runtime.</target>
+</trans-unit>
+<trans-unit id="tu33" xml:space="preserve">
+<source xml:lang="en">Lock scenes and entities</source>
+<target xml:lang="pt">Lock scenes and entities</target>
+</trans-unit>
+<trans-unit id="tu34" xml:space="preserve">
+<source xml:lang="en">You can lock scenes and entities so they can't be selected in the main window. This is useful when you have lots of things in your scene. You can still select scenes and entities in the Entity Tree.</source>
+<target xml:lang="pt">You can lock scenes and entities so they can't be selected in the main window. This is useful when you have lots of things in your scene. You can still select scenes and entities in the Entity Tree.</target>
+</trans-unit>
+<trans-unit id="tu35" xml:space="preserve">
+<source xml:lang="en">To lock or unlock a scene or entity, in the Entity Tree, click the <g id="1">padlock</g> icon.</source>
+<target xml:lang="pt">To lock or unlock a scene or entity, in the Entity Tree, click the <g id="1">padlock</g> icon.</target>
+</trans-unit>
+<trans-unit id="tu36" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Padlock icon<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Padlock icon<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu37" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>!Tip<x id="2"/>
+When you lock a scene, all its child scenes and entities are locked too. To lock an entity along with its child entities, hold <g id="3">Ctrl</g> and click the padlock icon.</source>
+<target xml:lang="pt"><x id="1"/>!Tip<x id="2"/>
+When you lock a scene, all its child scenes and entities are locked too. To lock an entity along with its child entities, hold <g id="3">Ctrl</g> and click the padlock icon.</target>
+</trans-unit>
+<trans-unit id="tu38" xml:space="preserve">
+<source xml:lang="en">Locked items have a <g id="1">gold locked padlock</g> icon in the Entity Tree.</source>
+<target xml:lang="pt">Locked items have a <g id="1">gold locked padlock</g> icon in the Entity Tree.</target>
+</trans-unit>
+<trans-unit id="tu39" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Locked entity<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Locked entity<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu40" xml:space="preserve">
+<source xml:lang="en">Load and unload scenes in the Scene Editor</source>
+<target xml:lang="pt">Load and unload scenes in the Scene Editor</target>
+</trans-unit>
+<trans-unit id="tu41" xml:space="preserve">
+<source xml:lang="en">You can load and unload scenes (with all their child scenes and entities) in the Scene Editor. Unloading scenes in the editor is useful if, for example, you want to remove clutter from your editing view, or improve editor performance.</source>
+<target xml:lang="pt">You can load and unload scenes (with all their child scenes and entities) in the Scene Editor. Unloading scenes in the editor is useful if, for example, you want to remove clutter from your editing view, or improve editor performance.</target>
+</trans-unit>
+<trans-unit id="tu42" xml:space="preserve">
+<source xml:lang="en">The screenshots below show a root scene with child scenes loaded and unloaded. The root scene contains entities that all the scenes use, including the <g id="1">skybox</g>, <g id="2">scripts</g>, asteroids, and player character. The child scenes are sections of level.</source>
+<target xml:lang="pt">The screenshots below show a root scene with child scenes loaded and unloaded. The root scene contains entities that all the scenes use, including the <g id="1">skybox</g>, <g id="2">scripts</g>, asteroids, and player character. The child scenes are sections of level.</target>
+</trans-unit>
+<trans-unit id="tu43" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Unloaded and loaded scenes<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Unloaded and loaded scenes<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu44" xml:space="preserve">
+<source xml:lang="en">To load or unload a scene, in the <g id="1">Scene Editor</g>, in the <g id="2">Entity Tree</g> on the left, next to the scene you want to load or unload, click the <g id="3">eye icon</g>.</source>
+<target xml:lang="pt">To load or unload a scene, in the <g id="1">Scene Editor</g>, in the <g id="2">Entity Tree</g> on the left, next to the scene you want to load or unload, click the <g id="3">eye icon</g>.</target>
+</trans-unit>
+<trans-unit id="tu45" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Load scene icon<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Load scene icon<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu46" xml:space="preserve">
+<source xml:lang="en">Move a scene</source>
+<target xml:lang="pt">Move a scene</target>
+</trans-unit>
+<trans-unit id="tu47" xml:space="preserve">
+<source xml:lang="en">As scenes aren't entities, they don't have transform components. However, you can move a scene using its <g id="1">offset</g> property.</source>
+<target xml:lang="pt">As scenes aren't entities, they don't have transform components. However, you can move a scene using its <g id="1">offset</g> property.</target>
+</trans-unit>
+<trans-unit id="tu48" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Scene offset property<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Scene offset property<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu49" xml:space="preserve">
+<source xml:lang="en">To move a scene at runtime, use:</source>
+<target xml:lang="pt">To move a scene at runtime, use:</target>
+</trans-unit>
+<trans-unit id="tu50" xml:space="preserve">
+<source xml:lang="en"><g id="1">myScene.Offset = new Vector3(x, y, z);</g></source>
+<target xml:lang="pt"><g id="1">myScene.Offset = new Vector3(x, y, z);</g></target>
+</trans-unit>
+<trans-unit id="tu51" xml:space="preserve">
+<source xml:lang="en">Replace <g id="1">myScene</g> with the name of the scene, and <g id="2">x,y,z</g> with the XYZ coordinates you want to move the scene to.</source>
+<target xml:lang="pt">Replace <g id="1">myScene</g> with the name of the scene, and <g id="2">x,y,z</g> with the XYZ coordinates you want to move the scene to.</target>
+</trans-unit>
+<trans-unit id="tu52" xml:space="preserve">
+<source xml:lang="en">See also</source>
+<target xml:lang="pt">See also</target>
+</trans-unit>
+<trans-unit id="tu53" xml:space="preserve">
+<source xml:lang="en"><g id="1">Create and open a scene</g></source>
+<target xml:lang="pt"><g id="1">Create and open a scene</g></target>
+</trans-unit>
+<trans-unit id="tu54" xml:space="preserve">
+<source xml:lang="en"><g id="1">Navigate in the Scene Editor</g></source>
+<target xml:lang="pt"><g id="1">Navigate in the Scene Editor</g></target>
+</trans-unit>
+<trans-unit id="tu55" xml:space="preserve">
+<source xml:lang="en"><g id="1">Load scenes</g></source>
+<target xml:lang="pt"><g id="1">Load scenes</g></target>
+</trans-unit>
+<trans-unit id="tu56" xml:space="preserve">
+<source xml:lang="en"><g id="1">Add entities</g></source>
+<target xml:lang="pt"><g id="1">Add entities</g></target>
+</trans-unit>
+<trans-unit id="tu57" xml:space="preserve">
+<source xml:lang="en"><g id="1">Manage entities</g></source>
+<target xml:lang="pt"><g id="1">Manage entities</g></target>
+</trans-unit>
+</body>
+</file>
+</xliff>

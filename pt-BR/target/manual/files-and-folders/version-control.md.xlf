@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" xmlns:okp="okapi-framework:xliff-extensions" its:version="2.0" version="1.2">
+<file datatype="x-text/x-markdown" okp:inputEncoding="UTF-8" original="/D:/repos/rr/source/manual/files-and-folders/version-control.md" source-language="en" target-language="pt">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en">Organize your files in version control</source>
+<target xml:lang="pt">Organize your files in version control</target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en">We recommend you use a version control system such as Git, SVN, or Perforce Helix to save a history of changes to your project.</source>
+<target xml:lang="pt">We recommend you use a version control system such as Git, SVN, or Perforce Helix to save a history of changes to your project.</target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">How you organize and share your files is up to you, but there are some things to keep in mind.</source>
+<target xml:lang="pt">How you organize and share your files is up to you, but there are some things to keep in mind.</target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">Files you shouldn't add to version control</source>
+<target xml:lang="pt">Files you shouldn't add to version control</target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en"><g id="1">Bin</g> and <g id="2">obj</g> folders</source>
+<target xml:lang="pt"><g id="1">Bin</g> and <g id="2">obj</g> folders</target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en">We don't recommend you add the <g id="1">Bin</g> or <g id="2">obj</g> folders to version control. This is because:</source>
+<target xml:lang="pt">We don't recommend you add the <g id="1">Bin</g> or <g id="2">obj</g> folders to version control. This is because:</target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en">Game Studio builds these folders every time you run the game, so you don't need to keep a history of them.</source>
+<target xml:lang="pt">Game Studio builds these folders every time you run the game, so you don't need to keep a history of them.</target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en">You can't see if they match the source files they were generated from in a given commit.</source>
+<target xml:lang="pt">You can't see if they match the source files they were generated from in a given commit.</target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en">They take up space and slow down version control synchronization.</source>
+<target xml:lang="pt">They take up space and slow down version control synchronization.</target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en">Visual Studio also puts <g id="1">.obj</g> folders inside each code folder. For the same reasons, we don't recommend you add these to version control.</source>
+<target xml:lang="pt">Visual Studio also puts <g id="1">.obj</g> folders inside each code folder. For the same reasons, we don't recommend you add these to version control.</target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en">Resource files</source>
+<target xml:lang="pt">Resource files</target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en"><g id="1">Resource files</g> are files imported into Game Studio and used by assets. They include image files (eg <g id="2">.png</g>, <g id="3">.jpg</g>), audio files (eg <g id="4">.mp3</g>, <g id="5">.wav</g>), and models (eg <g id="6">.fbx</g>). We recommend you save these files in the <g id="7">Resources</g> folder in your project folder.</source>
+<target xml:lang="pt"><g id="1">Resource files</g> are files imported into Game Studio and used by assets. They include image files (eg <g id="2">.png</g>, <g id="3">.jpg</g>), audio files (eg <g id="4">.mp3</g>, <g id="5">.wav</g>), and models (eg <g id="6">.fbx</g>). We recommend you save these files in the <g id="7">Resources</g> folder in your project folder.</target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en">We don't recommend you save resource files in the Assets folder. You might be used to organizing files this way if you use Unity®, as Unity® requires resource files and asset files to be in the same folder. Stride doesn't require this, and doing so has downsides.</source>
+<target xml:lang="pt">We don't recommend you save resource files in the Assets folder. You might be used to organizing files this way if you use Unity®, as Unity® requires resource files and asset files to be in the same folder. Stride doesn't require this, and doing so has downsides.</target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en">For example, imagine an artist has edited 10GB of textures and committed them to source control. At the same time, a designer needs to edit an asset quickly. To do this, the designer gets the latest version of the asset from source control. However, because the assets and resource files are in the same folder, the designer is forced to get the 10gb of files at the same time. If the files are in a separate folder, however, the designer only has to get the folder they need. Additionally, as asset files are much smaller than resource files, it's much faster to navigate the asset history in a dedicated asset folder.</source>
+<target xml:lang="pt">For example, imagine an artist has edited 10GB of textures and committed them to source control. At the same time, a designer needs to edit an asset quickly. To do this, the designer gets the latest version of the asset from source control. However, because the assets and resource files are in the same folder, the designer is forced to get the 10gb of files at the same time. If the files are in a separate folder, however, the designer only has to get the folder they need. Additionally, as asset files are much smaller than resource files, it's much faster to navigate the asset history in a dedicated asset folder.</target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en">Content creation files</source>
+<target xml:lang="pt">Content creation files</target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en"><g id="1">Content creation files</g> are created with external content creation tools, such as <g id="2">.psd</g> files (Photoshop) or <g id="3">.max</g> files (3D Studio Max).</source>
+<target xml:lang="pt"><g id="1">Content creation files</g> are created with external content creation tools, such as <g id="2">.psd</g> files (Photoshop) or <g id="3">.max</g> files (3D Studio Max).</target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en">We don't recommend you save content creation files in your project folder. This is because the files are often large and aren't used in the project directly. Instead, we recommend you save the files in a different version control repository - or, if your version control system supports partial checkouts (such as SVN or Perforce), a different root folder. This means team members only get the files they need.</source>
+<target xml:lang="pt">We don't recommend you save content creation files in your project folder. This is because the files are often large and aren't used in the project directly. Instead, we recommend you save the files in a different version control repository - or, if your version control system supports partial checkouts (such as SVN or Perforce), a different root folder. This means team members only get the files they need.</target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en">Suggested directory structure</source>
+<target xml:lang="pt">Suggested directory structure</target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en">Following these suggestions, an example folder structure might look like this:</source>
+<target xml:lang="pt">Following these suggestions, an example folder structure might look like this:</target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en">- MyGame
+    - Assets
+        - texture.sdtex
+    - Bin
+    - MyGame.Game
+    - MyGame.Platform
+    - obj
+    - Resources
+        - texture.png
+- ContentCreationFiles
+    - texture.psd
+</source>
+<target xml:lang="pt">- MyGame
+    - Assets
+        - texture.sdtex
+    - Bin
+    - MyGame.Game
+    - MyGame.Platform
+    - obj
+    - Resources
+        - texture.png
+- ContentCreationFiles
+    - texture.psd
+</target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en">You could even create separate folders for different kinds of content creation file:</source>
+<target xml:lang="pt">You could even create separate folders for different kinds of content creation file:</target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en">- MyGame
+    - Assets
+        - texture.sdtex
+        - model.sdtex
+    - Bin
+    - MyGame.Game
+    - MyGame.Platform
+    - obj
+    - Resources
+        - texture.png
+        - model.fbx
+- PhotoshopProjects
+    - texture.psd
+- MayaProjects
+     - model.mb
+</source>
+<target xml:lang="pt">- MyGame
+    - Assets
+        - texture.sdtex
+        - model.sdtex
+    - Bin
+    - MyGame.Game
+    - MyGame.Platform
+    - obj
+    - Resources
+        - texture.png
+        - model.fbx
+- PhotoshopProjects
+    - texture.psd
+- MayaProjects
+     - model.mb
+</target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en">Example</source>
+<target xml:lang="pt">Example</target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en">Imagine a team with two programmers, two 2D artists, and two 3D artists.</source>
+<target xml:lang="pt">Imagine a team with two programmers, two 2D artists, and two 3D artists.</target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en">The programmers check out the <g id="1">MyGame</g> project folder containing code, assets, and resources.</source>
+<target xml:lang="pt">The programmers check out the <g id="1">MyGame</g> project folder containing code, assets, and resources.</target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en">The 2D artists check out the game project and the <g id="1">PhotoshopProjects</g> folder containing <g id="2">.psd</g> files.</source>
+<target xml:lang="pt">The 2D artists check out the game project and the <g id="1">PhotoshopProjects</g> folder containing <g id="2">.psd</g> files.</target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en">The 3D artists check out the game project and the <g id="1">MayaProjects</g> folder containing <g id="2">.mb</g> (Maya project) files.</source>
+<target xml:lang="pt">The 3D artists check out the game project and the <g id="1">MayaProjects</g> folder containing <g id="2">.mb</g> (Maya project) files.</target>
+</trans-unit>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en">Now imagine one of the 2D artists changes several <g id="1">.psd</g> files and commits 2GB of changes to version control. Because only the 2D artists have the <g id="2">PhotoshopProjects</g> folder checked out, only the other 2D artist gets this change. The other team members don't need it. This is an efficient way to share files across projects.</source>
+<target xml:lang="pt">Now imagine one of the 2D artists changes several <g id="1">.psd</g> files and commits 2GB of changes to version control. Because only the 2D artists have the <g id="2">PhotoshopProjects</g> folder checked out, only the other 2D artist gets this change. The other team members don't need it. This is an efficient way to share files across projects.</target>
+</trans-unit>
+<trans-unit id="tu29" xml:space="preserve">
+<source xml:lang="en">See also</source>
+<target xml:lang="pt">See also</target>
+</trans-unit>
+<trans-unit id="tu30" xml:space="preserve">
+<source xml:lang="en"><g id="1">Project structure</g></source>
+<target xml:lang="pt"><g id="1">Project structure</g></target>
+</trans-unit>
+<trans-unit id="tu31" xml:space="preserve">
+<source xml:lang="en"><g id="1">Distribute a game</g></source>
+<target xml:lang="pt"><g id="1">Distribute a game</g></target>
+</trans-unit>
+</body>
+</file>
+</xliff>

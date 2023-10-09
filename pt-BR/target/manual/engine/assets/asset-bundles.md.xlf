@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" xmlns:okp="okapi-framework:xliff-extensions" its:version="2.0" version="1.2">
+<file datatype="x-text/x-markdown" okp:inputEncoding="UTF-8" original="/D:/repos/rr/source/manual/engine/assets/asset-bundles.md" source-language="en" target-language="pt">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en">Asset bundles</source>
+<target xml:lang="pt">Asset bundles</target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>!Warning<x id="2"/>
+This section is out of date. For now, you should only use it for reference.</source>
+<target xml:lang="pt"><x id="1"/>!Warning<x id="2"/>
+This section is out of date. For now, you should only use it for reference.</target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">A bundle of assets allows to package assets into a single archive that can be downloaded into the game at a specific time.</source>
+<target xml:lang="pt">A bundle of assets allows to package assets into a single archive that can be downloaded into the game at a specific time.</target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">It allows creation of <g id="1">Downloadable Content (DLC)</g>.</source>
+<target xml:lang="pt">It allows creation of <g id="1">Downloadable Content (DLC)</g>.</target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">Basic rules:</source>
+<target xml:lang="pt">Basic rules:</target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en">A project can generate several bundle.</source>
+<target xml:lang="pt">A project can generate several bundle.</target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en">A bundle is created from several <g id="1">assets selectors</g>  (Currently, only the <g id="2">PathSelector</g> and <g id="3">TagSelector</g> are supported)</source>
+<target xml:lang="pt">A bundle is created from several <g id="1">assets selectors</g>  (Currently, only the <g id="2">PathSelector</g> and <g id="3">TagSelector</g> are supported)</target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en">A bundle can have dependencies to others bundles</source>
+<target xml:lang="pt">A bundle can have dependencies to others bundles</target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en">Every bundle implicitly references <g id="1">default</g> bundle, where every asset which shouldn't go in a specific bundle will be packaged</source>
+<target xml:lang="pt">Every bundle implicitly references <g id="1">default</g> bundle, where every asset which shouldn't go in a specific bundle will be packaged</target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en">Once a bundle is deployed into the game, all assets from this bundle and all its dependencies are accessible</source>
+<target xml:lang="pt">Once a bundle is deployed into the game, all assets from this bundle and all its dependencies are accessible</target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en">Bundle resolution is done through an asynchronous callback that allows you to download bundle, and will be called once per dependency (similar to AssemblyResolve event).</source>
+<target xml:lang="pt">Bundle resolution is done through an asynchronous callback that allows you to download bundle, and will be called once per dependency (similar to AssemblyResolve event).</target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en">Create a bundle</source>
+<target xml:lang="pt">Create a bundle</target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>!Note<x id="2"/>
+Creating currently requires some manual steps (i.e. editing <g id="3">sdpkg</g> by hand).</source>
+<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
+Creating currently requires some manual steps (i.e. editing <g id="3">sdpkg</g> by hand).</target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en">Open the <g id="1">sdprj</g> file of the game executable and add the following configuration:</source>
+<target xml:lang="pt">Open the <g id="1">sdprj</g> file of the game executable and add the following configuration:</target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en">Example:</source>
+<target xml:lang="pt">Example:</target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en">A bundle named <g id="1">MyBundleName</g> will embed assets with tags <g id="2">MyTag1</g> and <g id="3">MyTag2</g></source>
+<target xml:lang="pt">A bundle named <g id="1">MyBundleName</g> will embed assets with tags <g id="2">MyTag1</g> and <g id="3">MyTag2</g></target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en">A bundle named <g id="1">MyBundleName2</g> will embed assets with tags <g id="2">MyTag3</g> and <g id="3">MyTag4</g>. This bundle has a dependency to <g id="4">MyBundleName</g></source>
+<target xml:lang="pt">A bundle named <g id="1">MyBundleName2</g> will embed assets with tags <g id="2">MyTag3</g> and <g id="3">MyTag4</g>. This bundle has a dependency to <g id="4">MyBundleName</g></target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en">There is also a <g id="1">PathSelector</g> which follow the <g id="2">.gitignore</g> filtering convention.</source>
+<target xml:lang="pt">There is also a <g id="1">PathSelector</g> which follow the <g id="2">.gitignore</g> filtering convention.</target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en">Bundles:
+ - Name: MyBundleName
+   Selectors:
+    - !TagSelector
+      Tags: 
+        - MyTag1
+        - MyTag2
+ - Name: MyBundleName2
+   Dependencies:
+    - MyBundleName
+   Selectors:
+    - !TagSelector
+      Tags: 
+        - MyTag3
+        - MyTag4
+    - !PathSelector
+      Paths:
+        - folder1/
+        - /folder2/
+        - *.bin
+        - folder3/*.xml
+</source>
+<target xml:lang="pt">Bundles:
+ - Name: MyBundleName
+   Selectors:
+    - !TagSelector
+      Tags: 
+        - MyTag1
+        - MyTag2
+ - Name: MyBundleName2
+   Dependencies:
+    - MyBundleName
+   Selectors:
+    - !TagSelector
+      Tags: 
+        - MyTag3
+        - MyTag4
+    - !PathSelector
+      Paths:
+        - folder1/
+        - /folder2/
+        - *.bin
+        - folder3/*.xml
+</target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>!Note<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>!Note<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en">Asset dependencies are automatically placed in the most appropriate bundle.</source>
+<target xml:lang="pt">Asset dependencies are automatically placed in the most appropriate bundle.</target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en">Current process works that way:</source>
+<target xml:lang="pt">Current process works that way:</target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en">Find assets that matches specific Tag Selectors ("roots" of bundle assets).</source>
+<target xml:lang="pt">Find assets that matches specific Tag Selectors ("roots" of bundle assets).</target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en">Enumerate assets that are dependent on those "roots" bundle assets and put them in the same bundle than their "roots" asset.</source>
+<target xml:lang="pt">Enumerate assets that are dependent on those "roots" bundle assets and put them in the same bundle than their "roots" asset.</target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en">Except if already accessible through one of package dependencies (i.e. a shared dependent package or default package).</source>
+<target xml:lang="pt">Except if already accessible through one of package dependencies (i.e. a shared dependent package or default package).</target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en">Place everything else in default bundle.</source>
+<target xml:lang="pt">Place everything else in default bundle.</target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en">Note that:</source>
+<target xml:lang="pt">Note that:</target>
+</trans-unit>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en">Shared assets might be duplicated if not specifically placed in common or default package, but that is intended (i.e. if user wishes to distribute 2 separate DLC that need common assets but need to be self-contained).</source>
+<target xml:lang="pt">Shared assets might be duplicated if not specifically placed in common or default package, but that is intended (i.e. if user wishes to distribute 2 separate DLC that need common assets but need to be self-contained).</target>
+</trans-unit>
+<trans-unit id="tu29" xml:space="preserve">
+<source xml:lang="en">Every bundle implicitly depends on default bundle.</source>
+<target xml:lang="pt">Every bundle implicitly depends on default bundle.</target>
+</trans-unit>
+<trans-unit id="tu30" xml:space="preserve">
+<source xml:lang="en">Load a bundle at runtime</source>
+<target xml:lang="pt">Load a bundle at runtime</target>
+</trans-unit>
+<trans-unit id="tu31" xml:space="preserve">
+<source xml:lang="en">Loading bundle is done through <g id="1">ObjectDatabase.LoadBundle(string bundleName) (ref:{Stride.Core.Storage.ObjectDatabase.LoadBundle})</g>:</source>
+<target xml:lang="pt">Loading bundle is done through <g id="1">ObjectDatabase.LoadBundle(string bundleName) (ref:{Stride.Core.Storage.ObjectDatabase.LoadBundle})</g>:</target>
+</trans-unit>
+<trans-unit id="tu32" xml:space="preserve">
+<source xml:lang="en">// Load bundle
+Assets.DatabaseFileProvider.ObjectDatabase.LoadBundle("MyBundleName2");
+ 
+// Load specified asset
+var texture = Assets.Load&lt;Texture2D&gt;("AssetContainedInMyBundleName2");
+</source>
+<target xml:lang="pt">// Load bundle
+Assets.DatabaseFileProvider.ObjectDatabase.LoadBundle("MyBundleName2");
+ 
+// Load specified asset
+var texture = Assets.Load&lt;Texture2D&gt;("AssetContainedInMyBundleName2");
+</target>
+</trans-unit>
+<trans-unit id="tu33" xml:space="preserve">
+<source xml:lang="en">Selectors</source>
+<target xml:lang="pt">Selectors</target>
+</trans-unit>
+<trans-unit id="tu34" xml:space="preserve">
+<source xml:lang="en">Selectors help deciding which assets are stored in a specific bundle.</source>
+<target xml:lang="pt">Selectors help deciding which assets are stored in a specific bundle.</target>
+</trans-unit>
+<trans-unit id="tu35" xml:space="preserve">
+<source xml:lang="en">Tag selector</source>
+<target xml:lang="pt">Tag selector</target>
+</trans-unit>
+<trans-unit id="tu36" xml:space="preserve">
+<source xml:lang="en">Select assets based on a list of tag attached on each asset.</source>
+<target xml:lang="pt">Select assets based on a list of tag attached on each asset.</target>
+</trans-unit>
+<trans-unit id="tu37" xml:space="preserve">
+<source xml:lang="en">Properties:</source>
+<target xml:lang="pt">Properties:</target>
+</trans-unit>
+<trans-unit id="tu38" xml:space="preserve">
+<source xml:lang="en">Tags: List of Tags. Any asset that contains at least one of the tag will be included.</source>
+<target xml:lang="pt">Tags: List of Tags. Any asset that contains at least one of the tag will be included.</target>
+</trans-unit>
+<trans-unit id="tu39" xml:space="preserve">
+<source xml:lang="en">Path selector</source>
+<target xml:lang="pt">Path selector</target>
+</trans-unit>
+<trans-unit id="tu40" xml:space="preserve">
+<source xml:lang="en">Select assets based on their path.</source>
+<target xml:lang="pt">Select assets based on their path.</target>
+</trans-unit>
+<trans-unit id="tu41" xml:space="preserve">
+<source xml:lang="en">Standard .gitignore patterns are supported (except ! (negate), # (comments) and \[0-9\] (groups)).</source>
+<target xml:lang="pt">Standard .gitignore patterns are supported (except ! (negate), # (comments) and \[0-9\] (groups)).</target>
+</trans-unit>
+<trans-unit id="tu42" xml:space="preserve">
+<source xml:lang="en">Properties:</source>
+<target xml:lang="pt">Properties:</target>
+</trans-unit>
+<trans-unit id="tu43" xml:space="preserve">
+<source xml:lang="en">Paths: List of filters. Any asset whose URL matches one of the filter will be included.</source>
+<target xml:lang="pt">Paths: List of filters. Any asset whose URL matches one of the filter will be included.</target>
+</trans-unit>
+</body>
+</file>
+</xliff>

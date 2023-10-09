@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" xmlns:okp="okapi-framework:xliff-extensions" its:version="2.0" version="1.2">
+<file datatype="x-text/x-markdown" okp:inputEncoding="UTF-8" original="/D:/repos/rr/source/manual/ui/layout-system.md" source-language="en" target-language="pt">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en">Layout system</source>
+<target xml:lang="pt">Layout system</target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Intermediate<x id="2"/>
+<x id="3"/>Programmer<x id="4"/>
+<x id="5"/>Designer<x id="6"/></source>
+<target xml:lang="pt"><x id="1"/>Intermediate<x id="2"/>
+<x id="3"/>Programmer<x id="4"/>
+<x id="5"/>Designer<x id="6"/></target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">The Stride UI layout system is similar to Windows Presentation Foundation (WPF). For more information about the WPF layout system, see the <g id="1">MSDN documentation</g>. Much of the WPF documentation also applies to the Stride layout system.</source>
+<target xml:lang="pt">The Stride UI layout system is similar to Windows Presentation Foundation (WPF). For more information about the WPF layout system, see the <g id="1">MSDN documentation</g>. Much of the WPF documentation also applies to the Stride layout system.</target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">Every @'Stride.UI.UIElement' in the Stride UI system has a surrounding rectangle used in layouts. Stride computes layouts according to the @'Stride.UI.UIElement' requirement, available screen space, constraints, margins, padding, and the special behavior of @'Stride.UI.Panels.Panel' elements (which arrange children in specific ways).</source>
+<target xml:lang="pt">Every @'Stride.UI.UIElement' in the Stride UI system has a surrounding rectangle used in layouts. Stride computes layouts according to the @'Stride.UI.UIElement' requirement, available screen space, constraints, margins, padding, and the special behavior of @'Stride.UI.Panels.Panel' elements (which arrange children in specific ways).</target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">Processing this data recursively, the layout system computes a position and size for every @'Stride.UI.UIElement' in the UI system.</source>
+<target xml:lang="pt">Processing this data recursively, the layout system computes a position and size for every @'Stride.UI.UIElement' in the UI system.</target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en">Measure and arrange</source>
+<target xml:lang="pt">Measure and arrange</target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en">Stride performs the layout process recursively in two passes: <g id="1">Measure</g> and <g id="2">Arrange</g>.</source>
+<target xml:lang="pt">Stride performs the layout process recursively in two passes: <g id="1">Measure</g> and <g id="2">Arrange</g>.</target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en">Measure</source>
+<target xml:lang="pt">Measure</target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en">In the <g id="1">Measure</g> pass, each element recursively computes its <g id="2">DesiredSize</g> according to the properties you set, such as @'Stride.UI.UIElement.Width', @'Stride.UI.UIElement.Height', and @'Stride.UI.UIElement.Margin'.</source>
+<target xml:lang="pt">In the <g id="1">Measure</g> pass, each element recursively computes its <g id="2">DesiredSize</g> according to the properties you set, such as @'Stride.UI.UIElement.Width', @'Stride.UI.UIElement.Height', and @'Stride.UI.UIElement.Margin'.</target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en">Some @'Stride.UI.Panels.Panel' elements call <g id="1">Measure</g> recursively to determine the  <g id="2">DesiredSize</g> of their children, and act accordingly.</source>
+<target xml:lang="pt">Some @'Stride.UI.Panels.Panel' elements call <g id="1">Measure</g> recursively to determine the  <g id="2">DesiredSize</g> of their children, and act accordingly.</target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en">Arrange</source>
+<target xml:lang="pt">Arrange</target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en">The <g id="1">Arrange</g> pass arranges the elements, taking into account:</source>
+<target xml:lang="pt">The <g id="1">Arrange</g> pass arranges the elements, taking into account:</target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en">@'Stride.UI.UIElement.Margin'</source>
+<target xml:lang="pt">@'Stride.UI.UIElement.Margin'</target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en">@'Stride.UI.UIElement.Width'</source>
+<target xml:lang="pt">@'Stride.UI.UIElement.Width'</target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en">@'Stride.UI.UIElement.Height'</source>
+<target xml:lang="pt">@'Stride.UI.UIElement.Height'</target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en">@'Stride.UI.UIElement.HorizontalAlignment'</source>
+<target xml:lang="pt">@'Stride.UI.UIElement.HorizontalAlignment'</target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en">@'Stride.UI.UIElement.VerticalAlignment'</source>
+<target xml:lang="pt">@'Stride.UI.UIElement.VerticalAlignment'</target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en">@'Stride.UI.Panels.Panel'</source>
+<target xml:lang="pt">@'Stride.UI.Panels.Panel'</target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en">specific <g id="1">Arrange</g> rules</source>
+<target xml:lang="pt">specific <g id="1">Arrange</g> rules</target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en">See also</source>
+<target xml:lang="pt">See also</target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en"><g id="1">MSDN WPF layout documentation</g></source>
+<target xml:lang="pt"><g id="1">MSDN WPF layout documentation</g></target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en"><g id="1">UI pages</g></source>
+<target xml:lang="pt"><g id="1">UI pages</g></target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en"><g id="1">UI libraries</g></source>
+<target xml:lang="pt"><g id="1">UI libraries</g></target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en"><g id="1">UI editor</g></source>
+<target xml:lang="pt"><g id="1">UI editor</g></target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en"><g id="1">Add a UI to a scene</g></source>
+<target xml:lang="pt"><g id="1">Add a UI to a scene</g></target>
+</trans-unit>
+</body>
+</file>
+</xliff>

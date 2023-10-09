@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" xmlns:okp="okapi-framework:xliff-extensions" its:version="2.0" version="1.2">
+<file datatype="x-text/x-markdown" okp:inputEncoding="UTF-8" original="/D:/repos/rr/source/manual/game-studio/archetypes.md" source-language="en" target-language="pt">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en">Archetypes</source>
+<target xml:lang="pt">Archetypes</target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Intermediate<x id="2"/>
+<x id="3"/>Designer<x id="4"/></source>
+<target xml:lang="pt"><x id="1"/>Intermediate<x id="2"/>
+<x id="3"/>Designer<x id="4"/></target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">An <g id="1">archetype</g> is a master asset that controls the properties of assets you <g id="2">derive</g> from it. Derived assets are useful when you want to create a "remixed" version of an asset.</source>
+<target xml:lang="pt">An <g id="1">archetype</g> is a master asset that controls the properties of assets you <g id="2">derive</g> from it. Derived assets are useful when you want to create a "remixed" version of an asset.</target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">For example, imagine we have three sphere entities that share a material asset named <g id="1">Metal</g>. The Metal asset has properties including color, gloss, and so on.</source>
+<target xml:lang="pt">For example, imagine we have three sphere entities that share a material asset named <g id="1">Metal</g>. The Metal asset has properties including color, gloss, and so on.</target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Three metal spheres<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Three metal spheres<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en">If we change a property in the <g id="1">Metal</g> asset, it applies to all three spheres. So, for example, if we change the color property, all three spheres change color.</source>
+<target xml:lang="pt">If we change a property in the <g id="1">Metal</g> asset, it applies to all three spheres. So, for example, if we change the color property, all three spheres change color.</target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Three gold spheres<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Three gold spheres<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en">Now imagine we want to change the color of only <g id="1">one</g> sphere, but keep its other properties the same. We could duplicate the material asset, change its color, and then apply the new asset to only one sphere. But if we later want to change a different property across <g id="2">all</g> the spheres, we have to modify both assets. This is time-consuming and leaves room for mistakes.</source>
+<target xml:lang="pt">Now imagine we want to change the color of only <g id="1">one</g> sphere, but keep its other properties the same. We could duplicate the material asset, change its color, and then apply the new asset to only one sphere. But if we later want to change a different property across <g id="2">all</g> the spheres, we have to modify both assets. This is time-consuming and leaves room for mistakes.</target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en">The better approach is to derive a new asset from the archetype. The derived asset inherits properties from the archetype and lets you override individual properties where you need them. For example, we can derive the sphere's material asset and override its color. Then, if we change the gloss of the archetype, the gloss of all three spheres changes.</source>
+<target xml:lang="pt">The better approach is to derive a new asset from the archetype. The derived asset inherits properties from the archetype and lets you override individual properties where you need them. For example, we can derive the sphere's material asset and override its color. Then, if we change the gloss of the archetype, the gloss of all three spheres changes.</target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Create derived asset<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Create derived asset<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en">You can derive an asset from an archetype, then in turn derive another asset from that derived asset. This way you can create different layers of assets to keep your project organized:</source>
+<target xml:lang="pt">You can derive an asset from an archetype, then in turn derive another asset from that derived asset. This way you can create different layers of assets to keep your project organized:</target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en">Archetype
+    Derived asset
+        Derived asset
+</source>
+<target xml:lang="pt">Archetype
+    Derived asset
+        Derived asset
+</target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en">Derive an asset from an archetype</source>
+<target xml:lang="pt">Derive an asset from an archetype</target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en">In the <g id="1">Asset View</g>, right-click the asset you want to derive an asset from and select <g id="2">Create derived asset</g>:</source>
+<target xml:lang="pt">In the <g id="1">Asset View</g>, right-click the asset you want to derive an asset from and select <g id="2">Create derived asset</g>:</target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Create derived asset<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Create derived asset<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en">Game Studio adds a new <g id="1">derived asset</g> to the project. This asset derives its properties from the <g id="2">archetype</g> asset.</source>
+<target xml:lang="pt">Game Studio adds a new <g id="1">derived asset</g> to the project. This asset derives its properties from the <g id="2">archetype</g> asset.</target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en">The derived asset properties display the archetype asset under <g id="1">Archetype</g>:</source>
+<target xml:lang="pt">The derived asset properties display the archetype asset under <g id="1">Archetype</g>:</target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Derived asset in Property Grid<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Derived asset in Property Grid<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en">You can right-click the archetype asset in the Property Grid and select <g id="1">Select the referenced asset</g> to quickly select the archetype asset:</source>
+<target xml:lang="pt">You can right-click the archetype asset in the Property Grid and select <g id="1">Select the referenced asset</g> to quickly select the archetype asset:</target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Select referenced asset<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Select referenced asset<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en">Overridden properties</source>
+<target xml:lang="pt">Overridden properties</target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en">The <g id="1">Property Grid</g> shows which properties of the derived asset differ from the archetype. <g id="2">Overridden</g> and <g id="3">unique</g> properties are <g id="4">white</g>, and <g id="5">inherited</g> (identical) properties are <g id="6">gray</g>.</source>
+<target xml:lang="pt">The <g id="1">Property Grid</g> shows which properties of the derived asset differ from the archetype. <g id="2">Overridden</g> and <g id="3">unique</g> properties are <g id="4">white</g>, and <g id="5">inherited</g> (identical) properties are <g id="6">gray</g>.</target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en">In this screenshot, the <g id="1">Diffuse Map</g> property is overridden. The other properties are inherited:</source>
+<target xml:lang="pt">In this screenshot, the <g id="1">Diffuse Map</g> property is overridden. The other properties are inherited:</target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Overridden properties are white<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Overridden properties are white<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en">Reset a property to archetype value</source>
+<target xml:lang="pt">Reset a property to archetype value</target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en">You can reset overridden or unique properties of a derived asset to the values in the archetype. To do this, right-click the overridden property and select <g id="1">Reset to base value</g>.</source>
+<target xml:lang="pt">You can reset overridden or unique properties of a derived asset to the values in the archetype. To do this, right-click the overridden property and select <g id="1">Reset to base value</g>.</target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Reset to base value<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Reset to base value<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en">Clear an archetype</source>
+<target xml:lang="pt">Clear an archetype</target>
+</trans-unit>
+<trans-unit id="tu29" xml:space="preserve">
+<source xml:lang="en">You can remove the link between the archetype and the derived asset. This means the derived asset no longer inherits changes to the archetype; it becomes a completely independent.</source>
+<target xml:lang="pt">You can remove the link between the archetype and the derived asset. This means the derived asset no longer inherits changes to the archetype; it becomes a completely independent.</target>
+</trans-unit>
+<trans-unit id="tu30" xml:space="preserve">
+<source xml:lang="en">To do this, in the <g id="1">Asset View</g>, right-click the derived asset and select <g id="2">Clear archetype</g>.</source>
+<target xml:lang="pt">To do this, in the <g id="1">Asset View</g>, right-click the derived asset and select <g id="2">Clear archetype</g>.</target>
+</trans-unit>
+<trans-unit id="tu31" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Clear archetype<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Clear archetype<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu32" xml:space="preserve">
+<source xml:lang="en">See also</source>
+<target xml:lang="pt">See also</target>
+</trans-unit>
+<trans-unit id="tu33" xml:space="preserve">
+<source xml:lang="en"><g id="1">Assets</g></source>
+<target xml:lang="pt"><g id="1">Assets</g></target>
+</trans-unit>
+<trans-unit id="tu34" xml:space="preserve">
+<source xml:lang="en"><g id="1">Prefabs</g></source>
+<target xml:lang="pt"><g id="1">Prefabs</g></target>
+</trans-unit>
+</body>
+</file>
+</xliff>

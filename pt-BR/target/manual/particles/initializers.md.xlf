@@ -1,0 +1,828 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" xmlns:okp="okapi-framework:xliff-extensions" its:version="2.0" version="1.2">
+<file datatype="x-text/x-markdown" okp:inputEncoding="UTF-8" original="/D:/repos/rr/source/manual/particles/initializers.md" source-language="en" target-language="pt">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en">Particle initializers</source>
+<target xml:lang="pt">Particle initializers</target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Intermediate<x id="2"/>
+<x id="3"/>Artist<x id="4"/>
+<x id="5"/>Programmer<x id="6"/></source>
+<target xml:lang="pt"><x id="1"/>Intermediate<x id="2"/>
+<x id="3"/>Artist<x id="4"/>
+<x id="5"/>Programmer<x id="6"/></target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en"><g id="1">Initializers</g> control the states of particles such as position, velocity, size, and so on when the particles are first spawned. They have no effect on particles spawned on previous frames.</source>
+<target xml:lang="pt"><g id="1">Initializers</g> control the states of particles such as position, velocity, size, and so on when the particles are first spawned. They have no effect on particles spawned on previous frames.</target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>!Note<x id="2"/>
+Some <g id="3">updaters</g> act change the particle's value at the <g id="4">end</g> of the frame. They effectively overwrite any initial values set by a similar initializer. Such is the case with all animations. They operate on the particle's lifetime and a color animation updater will overwrite any initial values from a color initializer.</source>
+<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
+Some <g id="3">updaters</g> act change the particle's value at the <g id="4">end</g> of the frame. They effectively overwrite any initial values set by a similar initializer. Such is the case with all animations. They operate on the particle's lifetime and a color animation updater will overwrite any initial values from a color initializer.</target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">Similarly, initializers which operate on the same field are exclusive and only the bottom one will have any effect, since they are executed in order. For example if you assign two color initializer, only the second one will have any effect.]</source>
+<target xml:lang="pt">Similarly, initializers which operate on the same field are exclusive and only the bottom one will have any effect, since they are executed in order. For example if you assign two color initializer, only the second one will have any effect.]</target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en">Common properties</source>
+<target xml:lang="pt">Common properties</target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en">Several properties are common across many initializers.</source>
+<target xml:lang="pt">Several properties are common across many initializers.</target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>media/particles-reference-initializers-1.png<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>media/particles-reference-initializers-1.png<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en">Property</source>
+<target xml:lang="pt">Property</target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en">Description</source>
+<target xml:lang="pt">Description</target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en">Debug draw</source>
+<target xml:lang="pt">Debug draw</target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en">Draws a debug wireframe in the scene to show the boundaries of the initializer. This is only visible in the Scene Editor, not at runtime.</source>
+<target xml:lang="pt">Draws a debug wireframe in the scene to show the boundaries of the initializer. This is only visible in the Scene Editor, not at runtime.</target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en">Position inheritance</source>
+<target xml:lang="pt">Position inheritance</target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en">Inherit the particle system component position, as defined in the particle entity's Transform component</source>
+<target xml:lang="pt">Inherit the particle system component position, as defined in the particle entity's Transform component</target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en">Position offset</source>
+<target xml:lang="pt">Position offset</target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en">Additional translation of the module. If it inherits the parent position, this is applied on top of the inherited position.</source>
+<target xml:lang="pt">Additional translation of the module. If it inherits the parent position, this is applied on top of the inherited position.</target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en">Rotation inheritance</source>
+<target xml:lang="pt">Rotation inheritance</target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en">Inherit the particle system component's rotation, as defined in the Transform component</source>
+<target xml:lang="pt">Inherit the particle system component's rotation, as defined in the Transform component</target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en">Rotation offset</source>
+<target xml:lang="pt">Rotation offset</target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en">Additional rotation of the module. If it inherits the parent's rotation, this is applied on top of the inherited rotation.</source>
+<target xml:lang="pt">Additional rotation of the module. If it inherits the parent's rotation, this is applied on top of the inherited rotation.</target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en">Scale inheritance</source>
+<target xml:lang="pt">Scale inheritance</target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en">Inherit the particle system component's uniform scale, as defined in the Transform component</source>
+<target xml:lang="pt">Inherit the particle system component's uniform scale, as defined in the Transform component</target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en">Scale offset</source>
+<target xml:lang="pt">Scale offset</target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en">Additional scaling of the module. If it inherits the parent's scale, this is applied on top of the inherited scale.</source>
+<target xml:lang="pt">Additional scaling of the module. If it inherits the parent's scale, this is applied on top of the inherited scale.</target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en">For example, a velocity initializer can change its direction depending on the parent's rotation or decide to ignore it and always shoot particles in a fixed direction.</source>
+<target xml:lang="pt">For example, a velocity initializer can change its direction depending on the parent's rotation or decide to ignore it and always shoot particles in a fixed direction.</target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en">On the other hand, size initializers don't change based on the parent's rotation, so the rotation fields won't appear at all.</source>
+<target xml:lang="pt">On the other hand, size initializers don't change based on the parent's rotation, so the rotation fields won't appear at all.</target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en">Position</source>
+<target xml:lang="pt">Position</target>
+</trans-unit>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en">Particles are spawned in an axis-aligned bounding box, defined by its left lower back corner and its right upper front corner.</source>
+<target xml:lang="pt">Particles are spawned in an axis-aligned bounding box, defined by its left lower back corner and its right upper front corner.</target>
+</trans-unit>
+<trans-unit id="tu29" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>media/particles-reference-initializers-2.png<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>media/particles-reference-initializers-2.png<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu30" xml:space="preserve">
+<source xml:lang="en">Property</source>
+<target xml:lang="pt">Property</target>
+</trans-unit>
+<trans-unit id="tu31" xml:space="preserve">
+<source xml:lang="en">Description</source>
+<target xml:lang="pt">Description</target>
+</trans-unit>
+<trans-unit id="tu32" xml:space="preserve">
+<source xml:lang="en">Seed offset</source>
+<target xml:lang="pt">Seed offset</target>
+</trans-unit>
+<trans-unit id="tu33" xml:space="preserve">
+<source xml:lang="en">Used for random numbers. Set it to the same value to force the position to be coupled with other other particle fields which have three properties (X, Y, Z), eg velocity. Make them different to force the position to be unique and independent from other fields</source>
+<target xml:lang="pt">Used for random numbers. Set it to the same value to force the position to be coupled with other other particle fields which have three properties (X, Y, Z), eg velocity. Make them different to force the position to be unique and independent from other fields</target>
+</trans-unit>
+<trans-unit id="tu34" xml:space="preserve">
+<source xml:lang="en">Position min</source>
+<target xml:lang="pt">Position min</target>
+</trans-unit>
+<trans-unit id="tu35" xml:space="preserve">
+<source xml:lang="en">Left lower back corner for the box</source>
+<target xml:lang="pt">Left lower back corner for the box</target>
+</trans-unit>
+<trans-unit id="tu36" xml:space="preserve">
+<source xml:lang="en">Position max</source>
+<target xml:lang="pt">Position max</target>
+</trans-unit>
+<trans-unit id="tu37" xml:space="preserve">
+<source xml:lang="en">Right upper front corner for the box</source>
+<target xml:lang="pt">Right upper front corner for the box</target>
+</trans-unit>
+<trans-unit id="tu38" xml:space="preserve">
+<source xml:lang="en">This image shows the bounding box where particles initially appear for this emitter. In addition to the corners (-1, 0.8, -1) ~ (1, 1, 1), the box is further rotated by 45 degrees as seen from the offset rotation.</source>
+<target xml:lang="pt">This image shows the bounding box where particles initially appear for this emitter. In addition to the corners (-1, 0.8, -1) ~ (1, 1, 1), the box is further rotated by 45 degrees as seen from the offset rotation.</target>
+</trans-unit>
+<trans-unit id="tu39" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>media/particles-reference-initializers-3.png<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>media/particles-reference-initializers-3.png<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu40" xml:space="preserve">
+<source xml:lang="en">Velocity</source>
+<target xml:lang="pt">Velocity</target>
+</trans-unit>
+<trans-unit id="tu41" xml:space="preserve">
+<source xml:lang="en">Particles spawn with initial velocity which ranges between the defined values. The velocity is independent in all three directions between X, Y and Z.</source>
+<target xml:lang="pt">Particles spawn with initial velocity which ranges between the defined values. The velocity is independent in all three directions between X, Y and Z.</target>
+</trans-unit>
+<trans-unit id="tu42" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>media/particles-reference-initializers-4.png<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>media/particles-reference-initializers-4.png<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu43" xml:space="preserve">
+<source xml:lang="en">Property</source>
+<target xml:lang="pt">Property</target>
+</trans-unit>
+<trans-unit id="tu44" xml:space="preserve">
+<source xml:lang="en">Description</source>
+<target xml:lang="pt">Description</target>
+</trans-unit>
+<trans-unit id="tu45" xml:space="preserve">
+<source xml:lang="en">Seed offset</source>
+<target xml:lang="pt">Seed offset</target>
+</trans-unit>
+<trans-unit id="tu46" xml:space="preserve">
+<source xml:lang="en">This is used for random numbers. Set it to the same value to force the velocity to be coupled with other other particle fields which have 3 properties (x, Y, Z), like position for example. Make them different to force the velocity to be unique and independent from other fields.</source>
+<target xml:lang="pt">This is used for random numbers. Set it to the same value to force the velocity to be coupled with other other particle fields which have 3 properties (x, Y, Z), like position for example. Make them different to force the velocity to be unique and independent from other fields.</target>
+</trans-unit>
+<trans-unit id="tu47" xml:space="preserve">
+<source xml:lang="en">Velocity min</source>
+<target xml:lang="pt">Velocity min</target>
+</trans-unit>
+<trans-unit id="tu48" xml:space="preserve">
+<source xml:lang="en">Left lower back corner for the box</source>
+<target xml:lang="pt">Left lower back corner for the box</target>
+</trans-unit>
+<trans-unit id="tu49" xml:space="preserve">
+<source xml:lang="en">Velocity max</source>
+<target xml:lang="pt">Velocity max</target>
+</trans-unit>
+<trans-unit id="tu50" xml:space="preserve">
+<source xml:lang="en">Right upper front corner for the box</source>
+<target xml:lang="pt">Right upper front corner for the box</target>
+</trans-unit>
+<trans-unit id="tu51" xml:space="preserve">
+<source xml:lang="en">Size</source>
+<target xml:lang="pt">Size</target>
+</trans-unit>
+<trans-unit id="tu52" xml:space="preserve">
+<source xml:lang="en">Initial size sets the particle's uniform size when it's spawned for the first time. A size of 1 will result in a 1 meter by 1 meter billboard or quad when rendered.</source>
+<target xml:lang="pt">Initial size sets the particle's uniform size when it's spawned for the first time. A size of 1 will result in a 1 meter by 1 meter billboard or quad when rendered.</target>
+</trans-unit>
+<trans-unit id="tu53" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>media/particles-reference-initializers-5.png<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>media/particles-reference-initializers-5.png<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu54" xml:space="preserve">
+<source xml:lang="en">Property</source>
+<target xml:lang="pt">Property</target>
+</trans-unit>
+<trans-unit id="tu55" xml:space="preserve">
+<source xml:lang="en">Description</source>
+<target xml:lang="pt">Description</target>
+</trans-unit>
+<trans-unit id="tu56" xml:space="preserve">
+<source xml:lang="en">Seed offset</source>
+<target xml:lang="pt">Seed offset</target>
+</trans-unit>
+<trans-unit id="tu57" xml:space="preserve">
+<source xml:lang="en">This is used for random numbers. Set it to the same value to force the size to be coupled with other particle fields which have 1 property, like color for example. Make them different to force the size to be unique and independent from other fields</source>
+<target xml:lang="pt">This is used for random numbers. Set it to the same value to force the size to be coupled with other particle fields which have 1 property, like color for example. Make them different to force the size to be unique and independent from other fields</target>
+</trans-unit>
+<trans-unit id="tu58" xml:space="preserve">
+<source xml:lang="en">Random size</source>
+<target xml:lang="pt">Random size</target>
+</trans-unit>
+<trans-unit id="tu59" xml:space="preserve">
+<source xml:lang="en">Shows the minimum and maximum size a particle can have at spawn time</source>
+<target xml:lang="pt">Shows the minimum and maximum size a particle can have at spawn time</target>
+</trans-unit>
+<trans-unit id="tu60" xml:space="preserve">
+<source xml:lang="en">Rotation</source>
+<target xml:lang="pt">Rotation</target>
+</trans-unit>
+<trans-unit id="tu61" xml:space="preserve">
+<source xml:lang="en">Initial rotation sets the particle's angular rotation when facing the camera. Positive values are clockwise rotations. The field only has meaning for camera-facing particles, such as billboards. It has no effect on oriented quads and models.</source>
+<target xml:lang="pt">Initial rotation sets the particle's angular rotation when facing the camera. Positive values are clockwise rotations. The field only has meaning for camera-facing particles, such as billboards. It has no effect on oriented quads and models.</target>
+</trans-unit>
+<trans-unit id="tu62" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>media/particles-reference-initializers-6.png<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>media/particles-reference-initializers-6.png<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu63" xml:space="preserve">
+<source xml:lang="en">Property</source>
+<target xml:lang="pt">Property</target>
+</trans-unit>
+<trans-unit id="tu64" xml:space="preserve">
+<source xml:lang="en">Description</source>
+<target xml:lang="pt">Description</target>
+</trans-unit>
+<trans-unit id="tu65" xml:space="preserve">
+<source xml:lang="en">Seed offset</source>
+<target xml:lang="pt">Seed offset</target>
+</trans-unit>
+<trans-unit id="tu66" xml:space="preserve">
+<source xml:lang="en">This is used for random numbers. Set it to the same value to force the angle to be coupled with other particle fields which have 1 property, like color for example. Make them different to force the angle to be unique and independent from other fields</source>
+<target xml:lang="pt">This is used for random numbers. Set it to the same value to force the angle to be coupled with other particle fields which have 1 property, like color for example. Make them different to force the angle to be unique and independent from other fields</target>
+</trans-unit>
+<trans-unit id="tu67" xml:space="preserve">
+<source xml:lang="en">Angle (degrees)</source>
+<target xml:lang="pt">Angle (degrees)</target>
+</trans-unit>
+<trans-unit id="tu68" xml:space="preserve">
+<source xml:lang="en">The minimum and maximum value, in degrees, for the initial rotation</source>
+<target xml:lang="pt">The minimum and maximum value, in degrees, for the initial rotation</target>
+</trans-unit>
+<trans-unit id="tu69" xml:space="preserve">
+<source xml:lang="en">Color</source>
+<target xml:lang="pt">Color</target>
+</trans-unit>
+<trans-unit id="tu70" xml:space="preserve">
+<source xml:lang="en">Initial color sets the particle's initial color at spawn time. It goes into the vertex buffer when building the particles and can be used by the material, but might not if the option is not set in the material itself. If setting the color has no effect please refer to the <g id="1">Material</g> page for further discussion.</source>
+<target xml:lang="pt">Initial color sets the particle's initial color at spawn time. It goes into the vertex buffer when building the particles and can be used by the material, but might not if the option is not set in the material itself. If setting the color has no effect please refer to the <g id="1">Material</g> page for further discussion.</target>
+</trans-unit>
+<trans-unit id="tu71" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>media/particles-reference-initializers-7.png<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>media/particles-reference-initializers-7.png<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu72" xml:space="preserve">
+<source xml:lang="en">Property</source>
+<target xml:lang="pt">Property</target>
+</trans-unit>
+<trans-unit id="tu73" xml:space="preserve">
+<source xml:lang="en">Description</source>
+<target xml:lang="pt">Description</target>
+</trans-unit>
+<trans-unit id="tu74" xml:space="preserve">
+<source xml:lang="en">Seed offset</source>
+<target xml:lang="pt">Seed offset</target>
+</trans-unit>
+<trans-unit id="tu75" xml:space="preserve">
+<source xml:lang="en">This is used for random numbers. Set it to the same value to force the color to be coupled with other particle fields which have 1 property, like size for example. Make them different to force the color to be unique and independent from other fields</source>
+<target xml:lang="pt">This is used for random numbers. Set it to the same value to force the color to be coupled with other particle fields which have 1 property, like size for example. Make them different to force the color to be unique and independent from other fields</target>
+</trans-unit>
+<trans-unit id="tu76" xml:space="preserve">
+<source xml:lang="en">Color A</source>
+<target xml:lang="pt">Color A</target>
+</trans-unit>
+<trans-unit id="tu77" xml:space="preserve">
+<source xml:lang="en">The first value, in hexadecimal code. The color will be a random tint between this and the second color.</source>
+<target xml:lang="pt">The first value, in hexadecimal code. The color will be a random tint between this and the second color.</target>
+</trans-unit>
+<trans-unit id="tu78" xml:space="preserve">
+<source xml:lang="en">Color B</source>
+<target xml:lang="pt">Color B</target>
+</trans-unit>
+<trans-unit id="tu79" xml:space="preserve">
+<source xml:lang="en">The second value, in hexadecimal code. The color will be a random tint between this and the first color.</source>
+<target xml:lang="pt">The second value, in hexadecimal code. The color will be a random tint between this and the first color.</target>
+</trans-unit>
+<trans-unit id="tu80" xml:space="preserve">
+<source xml:lang="en">3D Orientation</source>
+<target xml:lang="pt">3D Orientation</target>
+</trans-unit>
+<trans-unit id="tu81" xml:space="preserve">
+<source xml:lang="en">Initial 3D orientation sets the orientation for 3D-aware particles when they first spawn. The editable fields use euclidean rotation which is packed into a quaternion orientation by the engine. The interpolated value is on the shortest path  between the two orientations, rather than interpolating each value separately.</source>
+<target xml:lang="pt">Initial 3D orientation sets the orientation for 3D-aware particles when they first spawn. The editable fields use euclidean rotation which is packed into a quaternion orientation by the engine. The interpolated value is on the shortest path  between the two orientations, rather than interpolating each value separately.</target>
+</trans-unit>
+<trans-unit id="tu82" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>media/particles-reference-initializers-8.png<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>media/particles-reference-initializers-8.png<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu83" xml:space="preserve">
+<source xml:lang="en">Property</source>
+<target xml:lang="pt">Property</target>
+</trans-unit>
+<trans-unit id="tu84" xml:space="preserve">
+<source xml:lang="en">Description</source>
+<target xml:lang="pt">Description</target>
+</trans-unit>
+<trans-unit id="tu85" xml:space="preserve">
+<source xml:lang="en">Seed offset</source>
+<target xml:lang="pt">Seed offset</target>
+</trans-unit>
+<trans-unit id="tu86" xml:space="preserve">
+<source xml:lang="en">This is used for random numbers. Set it to the same value to force the orientation to be coupled with other particle fields which have 1 property, like size for example. Make them different to force the orientation to be unique and independent from other fields.</source>
+<target xml:lang="pt">This is used for random numbers. Set it to the same value to force the orientation to be coupled with other particle fields which have 1 property, like size for example. Make them different to force the orientation to be unique and independent from other fields.</target>
+</trans-unit>
+<trans-unit id="tu87" xml:space="preserve">
+<source xml:lang="en">Orientation A</source>
+<target xml:lang="pt">Orientation A</target>
+</trans-unit>
+<trans-unit id="tu88" xml:space="preserve">
+<source xml:lang="en">The first oriented position</source>
+<target xml:lang="pt">The first oriented position</target>
+</trans-unit>
+<trans-unit id="tu89" xml:space="preserve">
+<source xml:lang="en">Orientation B</source>
+<target xml:lang="pt">Orientation B</target>
+</trans-unit>
+<trans-unit id="tu90" xml:space="preserve">
+<source xml:lang="en">The second oriented position</source>
+<target xml:lang="pt">The second oriented position</target>
+</trans-unit>
+<trans-unit id="tu91" xml:space="preserve">
+<source xml:lang="en">Direction</source>
+<target xml:lang="pt">Direction</target>
+</trans-unit>
+<trans-unit id="tu92" xml:space="preserve">
+<source xml:lang="en">This initializer creates the <g id="1">Direction</g> field in the particle properties and sets its initial value. Some shape builders, like the Trail shape or the Direction Aligned Sprite shape use the particle's direction to properly display it.</source>
+<target xml:lang="pt">This initializer creates the <g id="1">Direction</g> field in the particle properties and sets its initial value. Some shape builders, like the Trail shape or the Direction Aligned Sprite shape use the particle's direction to properly display it.</target>
+</trans-unit>
+<trans-unit id="tu93" xml:space="preserve">
+<source xml:lang="en">Property</source>
+<target xml:lang="pt">Property</target>
+</trans-unit>
+<trans-unit id="tu94" xml:space="preserve">
+<source xml:lang="en">Description</source>
+<target xml:lang="pt">Description</target>
+</trans-unit>
+<trans-unit id="tu95" xml:space="preserve">
+<source xml:lang="en">Seed offset</source>
+<target xml:lang="pt">Seed offset</target>
+</trans-unit>
+<trans-unit id="tu96" xml:space="preserve">
+<source xml:lang="en">This is used for random numbers. Set it to the same value to force the direction to be coupled with other other particle fields which have 3 properties (x, Y, Z), like position for example. Make them different to force the velocity to be unique and independent from other fields.</source>
+<target xml:lang="pt">This is used for random numbers. Set it to the same value to force the direction to be coupled with other other particle fields which have 3 properties (x, Y, Z), like position for example. Make them different to force the velocity to be unique and independent from other fields.</target>
+</trans-unit>
+<trans-unit id="tu97" xml:space="preserve">
+<source xml:lang="en">Direction min</source>
+<target xml:lang="pt">Direction min</target>
+</trans-unit>
+<trans-unit id="tu98" xml:space="preserve">
+<source xml:lang="en">Left lower back corner for the box</source>
+<target xml:lang="pt">Left lower back corner for the box</target>
+</trans-unit>
+<trans-unit id="tu99" xml:space="preserve">
+<source xml:lang="en">Direction max</source>
+<target xml:lang="pt">Direction max</target>
+</trans-unit>
+<trans-unit id="tu100" xml:space="preserve">
+<source xml:lang="en">Right upper front corner for the box</source>
+<target xml:lang="pt">Right upper front corner for the box</target>
+</trans-unit>
+<trans-unit id="tu101" xml:space="preserve">
+<source xml:lang="en">Spawn Order</source>
+<target xml:lang="pt">Spawn Order</target>
+</trans-unit>
+<trans-unit id="tu102" xml:space="preserve">
+<source xml:lang="en">This initializer has no properties. It simply sets an increasing number to each particle spawned from this emitter, starting from 0. The spawn order can be used for sorting or some custom calculations.</source>
+<target xml:lang="pt">This initializer has no properties. It simply sets an increasing number to each particle spawned from this emitter, starting from 0. The spawn order can be used for sorting or some custom calculations.</target>
+</trans-unit>
+<trans-unit id="tu103" xml:space="preserve">
+<source xml:lang="en">Position (Arc)</source>
+<target xml:lang="pt">Position (Arc)</target>
+</trans-unit>
+<trans-unit id="tu104" xml:space="preserve">
+<source xml:lang="en">The arc position initializer positions the particles in an arc (or a straight line if the arc's height is 0) between two point, the emitter's position and a target transform component. With random position offset you can cause the particles to deviate a little from their original location on the arc.</source>
+<target xml:lang="pt">The arc position initializer positions the particles in an arc (or a straight line if the arc's height is 0) between two point, the emitter's position and a target transform component. With random position offset you can cause the particles to deviate a little from their original location on the arc.</target>
+</trans-unit>
+<trans-unit id="tu105" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>media/particles-reference-initializers-5.png<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>media/particles-reference-initializers-5.png<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu106" xml:space="preserve">
+<source xml:lang="en">Property</source>
+<target xml:lang="pt">Property</target>
+</trans-unit>
+<trans-unit id="tu107" xml:space="preserve">
+<source xml:lang="en">Description</source>
+<target xml:lang="pt">Description</target>
+</trans-unit>
+<trans-unit id="tu108" xml:space="preserve">
+<source xml:lang="en">Seed offset</source>
+<target xml:lang="pt">Seed offset</target>
+</trans-unit>
+<trans-unit id="tu109" xml:space="preserve">
+<source xml:lang="en">This is used for random numbers. Set it to the same value to force the position to be coupled with other other particle fields which have 3 properties (X, Y, Z), like velocity for example. Make them different to force the position to be unique and independent from other fields.</source>
+<target xml:lang="pt">This is used for random numbers. Set it to the same value to force the position to be coupled with other other particle fields which have 3 properties (X, Y, Z), like velocity for example. Make them different to force the position to be unique and independent from other fields.</target>
+</trans-unit>
+<trans-unit id="tu110" xml:space="preserve">
+<source xml:lang="en">Position min</source>
+<target xml:lang="pt">Position min</target>
+</trans-unit>
+<trans-unit id="tu111" xml:space="preserve">
+<source xml:lang="en">Left lower back corner for the box</source>
+<target xml:lang="pt">Left lower back corner for the box</target>
+</trans-unit>
+<trans-unit id="tu112" xml:space="preserve">
+<source xml:lang="en">Position max</source>
+<target xml:lang="pt">Position max</target>
+</trans-unit>
+<trans-unit id="tu113" xml:space="preserve">
+<source xml:lang="en">Right upper front corner for the box</source>
+<target xml:lang="pt">Right upper front corner for the box</target>
+</trans-unit>
+<trans-unit id="tu114" xml:space="preserve">
+<source xml:lang="en">Target</source>
+<target xml:lang="pt">Target</target>
+</trans-unit>
+<trans-unit id="tu115" xml:space="preserve">
+<source xml:lang="en">Allows you to pick up an Entity for the end of the arc. If no Entity is set, Fallback Target will be used, which is an offset from the emitter's location.</source>
+<target xml:lang="pt">Allows you to pick up an Entity for the end of the arc. If no Entity is set, Fallback Target will be used, which is an offset from the emitter's location.</target>
+</trans-unit>
+<trans-unit id="tu116" xml:space="preserve">
+<source xml:lang="en">Fallback Target</source>
+<target xml:lang="pt">Fallback Target</target>
+</trans-unit>
+<trans-unit id="tu117" xml:space="preserve">
+<source xml:lang="en">Offset from the emitter's location used as the end point in case Target is not set</source>
+<target xml:lang="pt">Offset from the emitter's location used as the end point in case Target is not set</target>
+</trans-unit>
+<trans-unit id="tu118" xml:space="preserve">
+<source xml:lang="en">Arc Height</source>
+<target xml:lang="pt">Arc Height</target>
+</trans-unit>
+<trans-unit id="tu119" xml:space="preserve">
+<source xml:lang="en">The height of the arc at its highest point (middle of the distance between the two points). By default it's the Y-up vector, but can be rotated with rotation offset and rotation inheritance</source>
+<target xml:lang="pt">The height of the arc at its highest point (middle of the distance between the two points). By default it's the Y-up vector, but can be rotated with rotation offset and rotation inheritance</target>
+</trans-unit>
+<trans-unit id="tu120" xml:space="preserve">
+<source xml:lang="en">Ordered</source>
+<target xml:lang="pt">Ordered</target>
+</trans-unit>
+<trans-unit id="tu121" xml:space="preserve">
+<source xml:lang="en">If checked, new particles will appear in order from the emitter towards the target. If unchecked, new particles will appear randomly on the arc anywhere between the emitter and the target. If you plan to visualize the particles as a ribbon or a trail you should set this box to checked.</source>
+<target xml:lang="pt">If checked, new particles will appear in order from the emitter towards the target. If unchecked, new particles will appear randomly on the arc anywhere between the emitter and the target. If you plan to visualize the particles as a ribbon or a trail you should set this box to checked.</target>
+</trans-unit>
+<trans-unit id="tu122" xml:space="preserve">
+<source xml:lang="en">Fixed count</source>
+<target xml:lang="pt">Fixed count</target>
+</trans-unit>
+<trans-unit id="tu123" xml:space="preserve">
+<source xml:lang="en">By default particles will appear on the arc at distances enough for the maximum number of particles to fit exactly on the line. If you want to control spawn rate and distance, you can set how many fixed "positions" are there on the arc. For example, with a fixed count of 10 and Ordered spawning, the first 10 particles will appear in order, then the 11th particle will appear from the beginning, at the same position as the first, and so on.</source>
+<target xml:lang="pt">By default particles will appear on the arc at distances enough for the maximum number of particles to fit exactly on the line. If you want to control spawn rate and distance, you can set how many fixed "positions" are there on the arc. For example, with a fixed count of 10 and Ordered spawning, the first 10 particles will appear in order, then the 11th particle will appear from the beginning, at the same position as the first, and so on.</target>
+</trans-unit>
+<trans-unit id="tu124" xml:space="preserve">
+<source xml:lang="en">Seed offset</source>
+<target xml:lang="pt">Seed offset</target>
+</trans-unit>
+<trans-unit id="tu125" xml:space="preserve">
+<source xml:lang="en">This is used for random numbers. Set it to the same value to force the position to be coupled with other other particle fields which have 3 properties (X, Y, Z), like velocity for example. Make them different to force the position to be unique and independent from other fields.</source>
+<target xml:lang="pt">This is used for random numbers. Set it to the same value to force the position to be coupled with other other particle fields which have 3 properties (X, Y, Z), like velocity for example. Make them different to force the position to be unique and independent from other fields.</target>
+</trans-unit>
+<trans-unit id="tu126" xml:space="preserve">
+<source xml:lang="en">Position min</source>
+<target xml:lang="pt">Position min</target>
+</trans-unit>
+<trans-unit id="tu127" xml:space="preserve">
+<source xml:lang="en">Left lower back corner for the box. This is an offset in addition to the arc position.</source>
+<target xml:lang="pt">Left lower back corner for the box. This is an offset in addition to the arc position.</target>
+</trans-unit>
+<trans-unit id="tu128" xml:space="preserve">
+<source xml:lang="en">Position max</source>
+<target xml:lang="pt">Position max</target>
+</trans-unit>
+<trans-unit id="tu129" xml:space="preserve">
+<source xml:lang="en">Right upper front corner for the box. This is an offset in addition to the arc position.</source>
+<target xml:lang="pt">Right upper front corner for the box. This is an offset in addition to the arc position.</target>
+</trans-unit>
+<trans-unit id="tu130" xml:space="preserve">
+<source xml:lang="en">Position (parent)</source>
+<target xml:lang="pt">Position (parent)</target>
+</trans-unit>
+<trans-unit id="tu131" xml:space="preserve">
+<source xml:lang="en">Property</source>
+<target xml:lang="pt">Property</target>
+</trans-unit>
+<trans-unit id="tu132" xml:space="preserve">
+<source xml:lang="en">Description</source>
+<target xml:lang="pt">Description</target>
+</trans-unit>
+<trans-unit id="tu133" xml:space="preserve">
+<source xml:lang="en">Seed offset</source>
+<target xml:lang="pt">Seed offset</target>
+</trans-unit>
+<trans-unit id="tu134" xml:space="preserve">
+<source xml:lang="en">This is used for random numbers. Set it to the same value to force the position to be coupled with other other particle fields which have 3 properties (X, Y, Z), like velocity for example. Make them different to force the position to be unique and independent from other fields.</source>
+<target xml:lang="pt">This is used for random numbers. Set it to the same value to force the position to be coupled with other other particle fields which have 3 properties (X, Y, Z), like velocity for example. Make them different to force the position to be unique and independent from other fields.</target>
+</trans-unit>
+<trans-unit id="tu135" xml:space="preserve">
+<source xml:lang="en">Position min</source>
+<target xml:lang="pt">Position min</target>
+</trans-unit>
+<trans-unit id="tu136" xml:space="preserve">
+<source xml:lang="en">Left lower back corner for the box</source>
+<target xml:lang="pt">Left lower back corner for the box</target>
+</trans-unit>
+<trans-unit id="tu137" xml:space="preserve">
+<source xml:lang="en">Position max</source>
+<target xml:lang="pt">Position max</target>
+</trans-unit>
+<trans-unit id="tu138" xml:space="preserve">
+<source xml:lang="en">Right upper front corner for the box</source>
+<target xml:lang="pt">Right upper front corner for the box</target>
+</trans-unit>
+<trans-unit id="tu139" xml:space="preserve">
+<source xml:lang="en">Parent emitter</source>
+<target xml:lang="pt">Parent emitter</target>
+</trans-unit>
+<trans-unit id="tu140" xml:space="preserve">
+<source xml:lang="en">You have to type the name of the parent emitter. Child particles' positions will match the parent emitter's particles' positions.</source>
+<target xml:lang="pt">You have to type the name of the parent emitter. Child particles' positions will match the parent emitter's particles' positions.</target>
+</trans-unit>
+<trans-unit id="tu141" xml:space="preserve">
+<source xml:lang="en">Parent Offset</source>
+<target xml:lang="pt">Parent Offset</target>
+</trans-unit>
+<trans-unit id="tu142" xml:space="preserve">
+<source xml:lang="en">Random seed used to couple or decouple the way a parent particle is chosen. For example, if you want to pick position <g id="1">and</g> color from seemingly random particles, you can use the same offset. If you want to avoid such connection, you can use different offsets for position and color initializers.</source>
+<target xml:lang="pt">Random seed used to couple or decouple the way a parent particle is chosen. For example, if you want to pick position <g id="1">and</g> color from seemingly random particles, you can use the same offset. If you want to avoid such connection, you can use different offsets for position and color initializers.</target>
+</trans-unit>
+<trans-unit id="tu143" xml:space="preserve">
+<source xml:lang="en">Spawn Control Group</source>
+<target xml:lang="pt">Spawn Control Group</target>
+</trans-unit>
+<trans-unit id="tu144" xml:space="preserve">
+<source xml:lang="en">When None, parents will be picked randomly. When set to one of the four groups, only particles from a specific parent will be initialized. It should match a control group from the <g id="1">Spawn from Parent</g> spawner to work properly.</source>
+<target xml:lang="pt">When None, parents will be picked randomly. When set to one of the four groups, only particles from a specific parent will be initialized. It should match a control group from the <g id="1">Spawn from Parent</g> spawner to work properly.</target>
+</trans-unit>
+<trans-unit id="tu145" xml:space="preserve">
+<source xml:lang="en">Velocity (parent)</source>
+<target xml:lang="pt">Velocity (parent)</target>
+</trans-unit>
+<trans-unit id="tu146" xml:space="preserve">
+<source xml:lang="en">Property</source>
+<target xml:lang="pt">Property</target>
+</trans-unit>
+<trans-unit id="tu147" xml:space="preserve">
+<source xml:lang="en">Description</source>
+<target xml:lang="pt">Description</target>
+</trans-unit>
+<trans-unit id="tu148" xml:space="preserve">
+<source xml:lang="en">Seed offset</source>
+<target xml:lang="pt">Seed offset</target>
+</trans-unit>
+<trans-unit id="tu149" xml:space="preserve">
+<source xml:lang="en">This is used for random numbers. Set it to the same value to force the velocity to be coupled with other other particle fields which have 3 properties (x, Y, Z), like position for example. Make them different to force the velocity to be unique and independent from other fields.</source>
+<target xml:lang="pt">This is used for random numbers. Set it to the same value to force the velocity to be coupled with other other particle fields which have 3 properties (x, Y, Z), like position for example. Make them different to force the velocity to be unique and independent from other fields.</target>
+</trans-unit>
+<trans-unit id="tu150" xml:space="preserve">
+<source xml:lang="en">Velocity min</source>
+<target xml:lang="pt">Velocity min</target>
+</trans-unit>
+<trans-unit id="tu151" xml:space="preserve">
+<source xml:lang="en">Left lower back corner for the box</source>
+<target xml:lang="pt">Left lower back corner for the box</target>
+</trans-unit>
+<trans-unit id="tu152" xml:space="preserve">
+<source xml:lang="en">Velocity max</source>
+<target xml:lang="pt">Velocity max</target>
+</trans-unit>
+<trans-unit id="tu153" xml:space="preserve">
+<source xml:lang="en">Right upper front corner for the box</source>
+<target xml:lang="pt">Right upper front corner for the box</target>
+</trans-unit>
+<trans-unit id="tu154" xml:space="preserve">
+<source xml:lang="en">Parent emitter</source>
+<target xml:lang="pt">Parent emitter</target>
+</trans-unit>
+<trans-unit id="tu155" xml:space="preserve">
+<source xml:lang="en">You have to type the name of the parent emitter. Child particles' positions will match the parent emitter's particles' positions.</source>
+<target xml:lang="pt">You have to type the name of the parent emitter. Child particles' positions will match the parent emitter's particles' positions.</target>
+</trans-unit>
+<trans-unit id="tu156" xml:space="preserve">
+<source xml:lang="en">Parent Offset</source>
+<target xml:lang="pt">Parent Offset</target>
+</trans-unit>
+<trans-unit id="tu157" xml:space="preserve">
+<source xml:lang="en">Random seed used to couple or decouple the way a parent particle is chosen. For example, if you want to pick position <g id="1">and</g> color from seemingly random particles, you can use the same offset. If you want to avoid such connection, you can use different offsets for position and color initializers.</source>
+<target xml:lang="pt">Random seed used to couple or decouple the way a parent particle is chosen. For example, if you want to pick position <g id="1">and</g> color from seemingly random particles, you can use the same offset. If you want to avoid such connection, you can use different offsets for position and color initializers.</target>
+</trans-unit>
+<trans-unit id="tu158" xml:space="preserve">
+<source xml:lang="en">Spawn Control Group</source>
+<target xml:lang="pt">Spawn Control Group</target>
+</trans-unit>
+<trans-unit id="tu159" xml:space="preserve">
+<source xml:lang="en">When None, parents will be picked randomly. When set to one of the four groups, only particles from a specific parent will be initialized. It should match a control group from the <g id="1">Spawn from Parent</g> spawner to work properly.</source>
+<target xml:lang="pt">When None, parents will be picked randomly. When set to one of the four groups, only particles from a specific parent will be initialized. It should match a control group from the <g id="1">Spawn from Parent</g> spawner to work properly.</target>
+</trans-unit>
+<trans-unit id="tu160" xml:space="preserve">
+<source xml:lang="en">Size (parent)</source>
+<target xml:lang="pt">Size (parent)</target>
+</trans-unit>
+<trans-unit id="tu161" xml:space="preserve">
+<source xml:lang="en">Property</source>
+<target xml:lang="pt">Property</target>
+</trans-unit>
+<trans-unit id="tu162" xml:space="preserve">
+<source xml:lang="en">Description</source>
+<target xml:lang="pt">Description</target>
+</trans-unit>
+<trans-unit id="tu163" xml:space="preserve">
+<source xml:lang="en">Seed offset</source>
+<target xml:lang="pt">Seed offset</target>
+</trans-unit>
+<trans-unit id="tu164" xml:space="preserve">
+<source xml:lang="en">This is used for random numbers. Set it to the same value to force the size to be coupled with other particle fields which have 1 property, like color for example. Make them different to force the size to be unique and independent from other fields.</source>
+<target xml:lang="pt">This is used for random numbers. Set it to the same value to force the size to be coupled with other particle fields which have 1 property, like color for example. Make them different to force the size to be unique and independent from other fields.</target>
+</trans-unit>
+<trans-unit id="tu165" xml:space="preserve">
+<source xml:lang="en">Random size</source>
+<target xml:lang="pt">Random size</target>
+</trans-unit>
+<trans-unit id="tu166" xml:space="preserve">
+<source xml:lang="en">Shows the minimum and maximum size a particle can have at spawn time</source>
+<target xml:lang="pt">Shows the minimum and maximum size a particle can have at spawn time</target>
+</trans-unit>
+<trans-unit id="tu167" xml:space="preserve">
+<source xml:lang="en">Parent emitter</source>
+<target xml:lang="pt">Parent emitter</target>
+</trans-unit>
+<trans-unit id="tu168" xml:space="preserve">
+<source xml:lang="en">You have to type the name of the parent emitter. Child particles' positions will match the parent emitter's particles' positions.</source>
+<target xml:lang="pt">You have to type the name of the parent emitter. Child particles' positions will match the parent emitter's particles' positions.</target>
+</trans-unit>
+<trans-unit id="tu169" xml:space="preserve">
+<source xml:lang="en">Parent Offset</source>
+<target xml:lang="pt">Parent Offset</target>
+</trans-unit>
+<trans-unit id="tu170" xml:space="preserve">
+<source xml:lang="en">Random seed used to couple or decouple the way a parent particle is chosen. For example, if you want to pick position <g id="1">and</g> color from seemingly random particles, you can use the same offset. If you want to avoid such connection, you can use different offsets for position and color initializers.</source>
+<target xml:lang="pt">Random seed used to couple or decouple the way a parent particle is chosen. For example, if you want to pick position <g id="1">and</g> color from seemingly random particles, you can use the same offset. If you want to avoid such connection, you can use different offsets for position and color initializers.</target>
+</trans-unit>
+<trans-unit id="tu171" xml:space="preserve">
+<source xml:lang="en">Spawn Control Group</source>
+<target xml:lang="pt">Spawn Control Group</target>
+</trans-unit>
+<trans-unit id="tu172" xml:space="preserve">
+<source xml:lang="en">When None, parents will be picked randomly. When set to one of the four groups, only particles from a specific parent will be initialized. It should match a control group from the <g id="1">Spawn from Parent</g> spawner to work properly.</source>
+<target xml:lang="pt">When None, parents will be picked randomly. When set to one of the four groups, only particles from a specific parent will be initialized. It should match a control group from the <g id="1">Spawn from Parent</g> spawner to work properly.</target>
+</trans-unit>
+<trans-unit id="tu173" xml:space="preserve">
+<source xml:lang="en">Color (parent)</source>
+<target xml:lang="pt">Color (parent)</target>
+</trans-unit>
+<trans-unit id="tu174" xml:space="preserve">
+<source xml:lang="en">Property</source>
+<target xml:lang="pt">Property</target>
+</trans-unit>
+<trans-unit id="tu175" xml:space="preserve">
+<source xml:lang="en">Description</source>
+<target xml:lang="pt">Description</target>
+</trans-unit>
+<trans-unit id="tu176" xml:space="preserve">
+<source xml:lang="en">Seed offset</source>
+<target xml:lang="pt">Seed offset</target>
+</trans-unit>
+<trans-unit id="tu177" xml:space="preserve">
+<source xml:lang="en">This is used for random numbers. Set it to the same value to force the color to be coupled with other particle fields which have 1 property, like size for example. Make them different to force the color to be unique and independent from other fields.</source>
+<target xml:lang="pt">This is used for random numbers. Set it to the same value to force the color to be coupled with other particle fields which have 1 property, like size for example. Make them different to force the color to be unique and independent from other fields.</target>
+</trans-unit>
+<trans-unit id="tu178" xml:space="preserve">
+<source xml:lang="en">Color A</source>
+<target xml:lang="pt">Color A</target>
+</trans-unit>
+<trans-unit id="tu179" xml:space="preserve">
+<source xml:lang="en">The first value, in hexadecimal code. The color will be a random tint between this and the second color.</source>
+<target xml:lang="pt">The first value, in hexadecimal code. The color will be a random tint between this and the second color.</target>
+</trans-unit>
+<trans-unit id="tu180" xml:space="preserve">
+<source xml:lang="en">Color B</source>
+<target xml:lang="pt">Color B</target>
+</trans-unit>
+<trans-unit id="tu181" xml:space="preserve">
+<source xml:lang="en">The second value, in hexadecimal code. The color will be a random tint between this and the first color.</source>
+<target xml:lang="pt">The second value, in hexadecimal code. The color will be a random tint between this and the first color.</target>
+</trans-unit>
+<trans-unit id="tu182" xml:space="preserve">
+<source xml:lang="en">Parent emitter</source>
+<target xml:lang="pt">Parent emitter</target>
+</trans-unit>
+<trans-unit id="tu183" xml:space="preserve">
+<source xml:lang="en">You have to type the name of the parent emitter. Child particles' positions will match the parent emitter's particles' positions.</source>
+<target xml:lang="pt">You have to type the name of the parent emitter. Child particles' positions will match the parent emitter's particles' positions.</target>
+</trans-unit>
+<trans-unit id="tu184" xml:space="preserve">
+<source xml:lang="en">Parent Offset</source>
+<target xml:lang="pt">Parent Offset</target>
+</trans-unit>
+<trans-unit id="tu185" xml:space="preserve">
+<source xml:lang="en">Random seed used to couple or decouple the way a parent particle is chosen. For example, if you want to pick position <g id="1">and</g> color from seemingly random particles, you can use the same offset. If you want to avoid such connection, you can use different offsets for position and color initializers.</source>
+<target xml:lang="pt">Random seed used to couple or decouple the way a parent particle is chosen. For example, if you want to pick position <g id="1">and</g> color from seemingly random particles, you can use the same offset. If you want to avoid such connection, you can use different offsets for position and color initializers.</target>
+</trans-unit>
+<trans-unit id="tu186" xml:space="preserve">
+<source xml:lang="en">Spawn Control Group</source>
+<target xml:lang="pt">Spawn Control Group</target>
+</trans-unit>
+<trans-unit id="tu187" xml:space="preserve">
+<source xml:lang="en">When None, parents will be picked randomly. When set to one of the four groups, only particles from a specific parent will be initialized. It should match a control group from the <g id="1">Spawn from Parent</g> spawner to work properly.</source>
+<target xml:lang="pt">When None, parents will be picked randomly. When set to one of the four groups, only particles from a specific parent will be initialized. It should match a control group from the <g id="1">Spawn from Parent</g> spawner to work properly.</target>
+</trans-unit>
+<trans-unit id="tu188" xml:space="preserve">
+<source xml:lang="en">Spawn Order (parent)</source>
+<target xml:lang="pt">Spawn Order (parent)</target>
+</trans-unit>
+<trans-unit id="tu189" xml:space="preserve">
+<source xml:lang="en">This initializer requires the parent emitter to also have a Spawn Order initializer. It combines the parent's spawn number with its own, effectively creating groups of particles among the children. This initializer is required to properly sort and render child ribbon particles.</source>
+<target xml:lang="pt">This initializer requires the parent emitter to also have a Spawn Order initializer. It combines the parent's spawn number with its own, effectively creating groups of particles among the children. This initializer is required to properly sort and render child ribbon particles.</target>
+</trans-unit>
+<trans-unit id="tu190" xml:space="preserve">
+<source xml:lang="en">Property</source>
+<target xml:lang="pt">Property</target>
+</trans-unit>
+<trans-unit id="tu191" xml:space="preserve">
+<source xml:lang="en">Description</source>
+<target xml:lang="pt">Description</target>
+</trans-unit>
+<trans-unit id="tu192" xml:space="preserve">
+<source xml:lang="en">Parent emitter</source>
+<target xml:lang="pt">Parent emitter</target>
+</trans-unit>
+<trans-unit id="tu193" xml:space="preserve">
+<source xml:lang="en">You have to type the name of the parent emitter. Child particles' positions will match the parent emitter's particles' positions.</source>
+<target xml:lang="pt">You have to type the name of the parent emitter. Child particles' positions will match the parent emitter's particles' positions.</target>
+</trans-unit>
+<trans-unit id="tu194" xml:space="preserve">
+<source xml:lang="en">Parent Offset</source>
+<target xml:lang="pt">Parent Offset</target>
+</trans-unit>
+<trans-unit id="tu195" xml:space="preserve">
+<source xml:lang="en">Random seed used to couple or decouple the way a parent particle is chosen. For example, if you want to pick position <g id="1">and</g> color from seemingly random particles, you can use the same offset. If you want to avoid such connection, you can use different offsets for position and color initializers.</source>
+<target xml:lang="pt">Random seed used to couple or decouple the way a parent particle is chosen. For example, if you want to pick position <g id="1">and</g> color from seemingly random particles, you can use the same offset. If you want to avoid such connection, you can use different offsets for position and color initializers.</target>
+</trans-unit>
+<trans-unit id="tu196" xml:space="preserve">
+<source xml:lang="en">Spawn Control Group</source>
+<target xml:lang="pt">Spawn Control Group</target>
+</trans-unit>
+<trans-unit id="tu197" xml:space="preserve">
+<source xml:lang="en">When None, parents will be picked randomly. When set to one of the four groups, only particles from a specific parent will be initialized. It should match a control group from the <g id="1">Spawn from Parent</g> spawner to work properly.</source>
+<target xml:lang="pt">When None, parents will be picked randomly. When set to one of the four groups, only particles from a specific parent will be initialized. It should match a control group from the <g id="1">Spawn from Parent</g> spawner to work properly.</target>
+</trans-unit>
+<trans-unit id="tu198" xml:space="preserve">
+<source xml:lang="en">See also</source>
+<target xml:lang="pt">See also</target>
+</trans-unit>
+<trans-unit id="tu199" xml:space="preserve">
+<source xml:lang="en"><g id="1">Create particles</g></source>
+<target xml:lang="pt"><g id="1">Create particles</g></target>
+</trans-unit>
+<trans-unit id="tu200" xml:space="preserve">
+<source xml:lang="en"><g id="1">Emitters</g></source>
+<target xml:lang="pt"><g id="1">Emitters</g></target>
+</trans-unit>
+<trans-unit id="tu201" xml:space="preserve">
+<source xml:lang="en"><g id="1">Shapes</g></source>
+<target xml:lang="pt"><g id="1">Shapes</g></target>
+</trans-unit>
+<trans-unit id="tu202" xml:space="preserve">
+<source xml:lang="en"><g id="1">Materials</g></source>
+<target xml:lang="pt"><g id="1">Materials</g></target>
+</trans-unit>
+<trans-unit id="tu203" xml:space="preserve">
+<source xml:lang="en"><g id="1">Spawners</g></source>
+<target xml:lang="pt"><g id="1">Spawners</g></target>
+</trans-unit>
+<trans-unit id="tu204" xml:space="preserve">
+<source xml:lang="en"><g id="1">Updaters</g></source>
+<target xml:lang="pt"><g id="1">Updaters</g></target>
+</trans-unit>
+</body>
+</file>
+</xliff>

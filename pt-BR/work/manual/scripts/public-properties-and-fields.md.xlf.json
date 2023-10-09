@@ -1,0 +1,766 @@
+{
+    "filename": "manual\\scripts\\public-properties-and-fields.md.xlf",
+    "files": [
+        {
+            "\/D:\/repos\/rr\/source\/manual\/scripts\/public-properties-and-fields.md": [
+                [
+                    "Public properties and fields",
+                    "",
+                    "Public properties and fields",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/public-properties-and-fields.md",
+                    {
+                        "id": "tu1"
+                    }
+                ],
+                [
+                    "<x1\/>Beginner<x2\/>",
+                    "",
+                    "<x1\/>Beginner<x2\/>\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/public-properties-and-fields.md",
+                    {
+                        "id": "tu2"
+                    }
+                ],
+                [
+                    "<x3\/>Programmer<x4\/>",
+                    "",
+                    "<x3\/>Programmer<x4\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/public-properties-and-fields.md",
+                    {
+                        "id": "tu2"
+                    }
+                ],
+                [
+                    "When you declare a public property or field in a script, the property becomes accessible in Game Studio from the script component properties.",
+                    "",
+                    "When you declare a public property or field in a script, the property becomes accessible in Game Studio from the script component properties.",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/public-properties-and-fields.md",
+                    {
+                        "id": "tu3"
+                    }
+                ],
+                [
+                    "<x1\/>Property in Game Studio<x2\/>",
+                    "",
+                    "<x1\/>Property in Game Studio<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/public-properties-and-fields.md",
+                    {
+                        "id": "tu4"
+                    }
+                ],
+                [
+                    "You can attach the same script to multiple entities and set different property values on each entity.",
+                    "",
+                    "You can attach the same script to multiple entities and set different property values on each entity.",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/public-properties-and-fields.md",
+                    {
+                        "id": "tu5"
+                    }
+                ],
+                [
+                    "<x1\/>!Note<x2\/>",
+                    "",
+                    "<x1\/>!Note<x2\/>\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/public-properties-and-fields.md",
+                    {
+                        "id": "tu6"
+                    }
+                ],
+                [
+                    "Properties and fields must be <g1>serializable<\/g1> to be used in Game Studio.",
+                    "",
+                    "Properties and fields must be <g1>serializable<\/g1> to be used in Game Studio.",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/public-properties-and-fields.md",
+                    {
+                        "id": "tu6"
+                    }
+                ],
+                [
+                    "Add a public property or field",
+                    "",
+                    "Add a public property or field",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/public-properties-and-fields.md",
+                    {
+                        "id": "tu7"
+                    }
+                ],
+                [
+                    "This script has a public property (<g1>DelayTimeOut<\/g1>):",
+                    "",
+                    "This script has a public property (<g1>DelayTimeOut<\/g1>):",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/public-properties-and-fields.md",
+                    {
+                        "id": "tu8"
+                    }
+                ],
+                [
+                    "public class SampleSyncScript :",
+                    "",
+                    "public class SampleSyncScript :",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/public-properties-and-fields.md",
+                    {
+                        "id": "tu9"
+                    }
+                ],
+                [
+                    "StartupScript",
+                    "",
+                    " StartupScript\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/public-properties-and-fields.md",
+                    {
+                        "id": "tu9"
+                    }
+                ],
+                [
+                    "{",
+                    "",
+                    "{\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/public-properties-and-fields.md",
+                    {
+                        "id": "tu9"
+                    }
+                ],
+                [
+                    "\/\/ This public member will appear in Game Studio",
+                    "",
+                    "\t\/\/ This public member will appear in Game Studio\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/public-properties-and-fields.md",
+                    {
+                        "id": "tu9"
+                    }
+                ],
+                [
+                    "public float DelayTimeOut { get; set; }",
+                    "",
+                    "\tpublic float DelayTimeOut { get; set; }\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/public-properties-and-fields.md",
+                    {
+                        "id": "tu9"
+                    }
+                ],
+                [
+                    "}",
+                    "",
+                    "}\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/public-properties-and-fields.md",
+                    {
+                        "id": "tu9"
+                    }
+                ],
+                [
+                    "Game Studio shows the <g1>DelayTimeOut<\/g1> property in the script component properties:",
+                    "",
+                    "Game Studio shows the <g1>DelayTimeOut<\/g1> property in the script component properties:",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/public-properties-and-fields.md",
+                    {
+                        "id": "tu10"
+                    }
+                ],
+                [
+                    "<x1\/>Public property appears in the Property Grid<x2\/>",
+                    "",
+                    "<x1\/>Public property appears in the Property Grid<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/public-properties-and-fields.md",
+                    {
+                        "id": "tu11"
+                    }
+                ],
+                [
+                    "<x1\/>!Note<x2\/>",
+                    "",
+                    "<x1\/>!Note<x2\/>\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/public-properties-and-fields.md",
+                    {
+                        "id": "tu12"
+                    }
+                ],
+                [
+                    "As a general rule, if you want to display the property or field in Game Studio, getters and setters should do as little as possible.",
+                    "",
+                    "As a general rule, if you want to display the property or field in Game Studio, getters and setters should do as little as possible.",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/public-properties-and-fields.md",
+                    {
+                        "id": "tu12"
+                    }
+                ],
+                [
+                    "For example, they shouldn't try to call methods or access Stride runtime API.",
+                    "",
+                    " For example, they shouldn't try to call methods or access Stride runtime API.",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/public-properties-and-fields.md",
+                    {
+                        "id": "tu12"
+                    }
+                ],
+                [
+                    "For example, the following code will create problems, as it tries to access <g1>Entity.Components<\/g1>, which is only available at runtime:",
+                    "",
+                    "For example, the following code will create problems, as it tries to access <g1>Entity.Components<\/g1>, which is only available at runtime:",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/public-properties-and-fields.md",
+                    {
+                        "id": "tu13"
+                    }
+                ],
+                [
+                    "public class SampleSyncScript :",
+                    "",
+                    "public class SampleSyncScript :",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/public-properties-and-fields.md",
+                    {
+                        "id": "tu14"
+                    }
+                ],
+                [
+                    "StartupScript",
+                    "",
+                    " StartupScript\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/public-properties-and-fields.md",
+                    {
+                        "id": "tu14"
+                    }
+                ],
+                [
+                    "{",
+                    "",
+                    "{\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/public-properties-and-fields.md",
+                    {
+                        "id": "tu14"
+                    }
+                ],
+                [
+                    "private float delayTimeOut;",
+                    "",
+                    "\tprivate float delayTimeOut;\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/public-properties-and-fields.md",
+                    {
+                        "id": "tu14"
+                    }
+                ],
+                [
+                    "\/\/ This public member will appear in Game Studio",
+                    "",
+                    "\t\/\/ This public member will appear in Game Studio\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/public-properties-and-fields.md",
+                    {
+                        "id": "tu14"
+                    }
+                ],
+                [
+                    "public float DelayTimeOut",
+                    "",
+                    "\tpublic float DelayTimeOut\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/public-properties-and-fields.md",
+                    {
+                        "id": "tu14"
+                    }
+                ],
+                [
+                    "{",
+                    "",
+                    "\t{\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/public-properties-and-fields.md",
+                    {
+                        "id": "tu14"
+                    }
+                ],
+                [
+                    "get { return delayTimeOut; }",
+                    "",
+                    "\t\tget { return delayTimeOut; }\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/public-properties-and-fields.md",
+                    {
+                        "id": "tu14"
+                    }
+                ],
+                [
+                    "set",
+                    "",
+                    "\t\tset\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/public-properties-and-fields.md",
+                    {
+                        "id": "tu14"
+                    }
+                ],
+                [
+                    "{",
+                    "",
+                    "\t\t{ \r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/public-properties-and-fields.md",
+                    {
+                        "id": "tu14"
+                    }
+                ],
+                [
+                    "delayTimeOut = value;",
+                    "",
+                    "\t\t\tdelayTimeOut = value;\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/public-properties-and-fields.md",
+                    {
+                        "id": "tu14"
+                    }
+                ],
+                [
+                    "Entity.Components.Add(new SkyboxComponent());",
+                    "",
+                    "\t\t\tEntity.Components.Add(new SkyboxComponent());\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/public-properties-and-fields.md",
+                    {
+                        "id": "tu14"
+                    }
+                ],
+                [
+                    "}",
+                    "",
+                    "\t\t}\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/public-properties-and-fields.md",
+                    {
+                        "id": "tu14"
+                    }
+                ],
+                [
+                    "}",
+                    "",
+                    "\t}\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/public-properties-and-fields.md",
+                    {
+                        "id": "tu14"
+                    }
+                ],
+                [
+                    "}",
+                    "",
+                    "}\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/public-properties-and-fields.md",
+                    {
+                        "id": "tu14"
+                    }
+                ],
+                [
+                    "If you want to include code like this in a property or field, hide it so Game Studio doesn't display it (see below).",
+                    "",
+                    "If you want to include code like this in a property or field, hide it so Game Studio doesn't display it (see below).",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/public-properties-and-fields.md",
+                    {
+                        "id": "tu15"
+                    }
+                ],
+                [
+                    "Hide properties or fields in the Property Grid",
+                    "",
+                    "Hide properties or fields in the Property Grid",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/public-properties-and-fields.md",
+                    {
+                        "id": "tu16"
+                    }
+                ],
+                [
+                    "If you don't want Game Studio to show a property in the Property Grid, you can:",
+                    "",
+                    "If you don't want Game Studio to show a property in the Property Grid, you can:",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/public-properties-and-fields.md",
+                    {
+                        "id": "tu17"
+                    }
+                ],
+                [
+                    "declare your member internal or private, or",
+                    "",
+                    "declare your member internal or private, or",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/public-properties-and-fields.md",
+                    {
+                        "id": "tu18"
+                    }
+                ],
+                [
+                    "use the <g1>DataMemberIgnore<\/g1> attribute like this:",
+                    "",
+                    "use the <g1>DataMemberIgnore<\/g1> attribute like this:",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/public-properties-and-fields.md",
+                    {
+                        "id": "tu19"
+                    }
+                ],
+                [
+                    "\/\/ This public property isn't available in Game Studio",
+                    "",
+                    "\r\n\t\/\/ This public property isn't available in Game Studio\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/public-properties-and-fields.md",
+                    {
+                        "id": "tu20"
+                    }
+                ],
+                [
+                    "[DataMemberIgnore]",
+                    "",
+                    "\t[DataMemberIgnore]\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/public-properties-and-fields.md",
+                    {
+                        "id": "tu20"
+                    }
+                ],
+                [
+                    "public float DelayTimeOut { get; set; }",
+                    "",
+                    "\tpublic float DelayTimeOut { get; set; }\r\n\t\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/public-properties-and-fields.md",
+                    {
+                        "id": "tu20"
+                    }
+                ],
+                [
+                    "Game Studio no longer shows the property:",
+                    "",
+                    "Game Studio no longer shows the property:",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/public-properties-and-fields.md",
+                    {
+                        "id": "tu21"
+                    }
+                ],
+                [
+                    "<x1\/>Public property been hidden with <g1>[DataMemberIgnore]<\/g1><x2\/>",
+                    "",
+                    "<x1\/>Public property been hidden with <g1>[DataMemberIgnore]<\/g1><x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/public-properties-and-fields.md",
+                    {
+                        "id": "tu22"
+                    }
+                ],
+                [
+                    "Adding property descriptions",
+                    "",
+                    "Adding property descriptions",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/public-properties-and-fields.md",
+                    {
+                        "id": "tu23"
+                    }
+                ],
+                [
+                    "When you add a <g1><userdoc><\/g1> comment block above your public property in code, Game Studio will display it in the description field.",
+                    "",
+                    "When you add a <g1><userdoc><\/g1> comment block above your public property in code, Game Studio will display it in the description field.",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/public-properties-and-fields.md",
+                    {
+                        "id": "tu24"
+                    }
+                ],
+                [
+                    "\/\/\/",
+                    "",
+                    "\t\/\/\/<summary>\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/public-properties-and-fields.md",
+                    {
+                        "id": "tu25"
+                    }
+                ],
+                [
+                    "\/\/\/ This summary won't show in Game Studio",
+                    "",
+                    "\t\/\/\/ This summary won't show in Game Studio\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/public-properties-and-fields.md",
+                    {
+                        "id": "tu25"
+                    }
+                ],
+                [
+                    "\/\/\/",
+                    "",
+                    "\t\/\/\/<\/summary>\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/public-properties-and-fields.md",
+                    {
+                        "id": "tu25"
+                    }
+                ],
+                [
+                    "\/\/\/",
+                    "",
+                    "\t\/\/\/<userdoc>\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/public-properties-and-fields.md",
+                    {
+                        "id": "tu25"
+                    }
+                ],
+                [
+                    "\/\/\/ This description will show in Game Studio",
+                    "",
+                    "\t\/\/\/ This description will show in Game Studio\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/public-properties-and-fields.md",
+                    {
+                        "id": "tu25"
+                    }
+                ],
+                [
+                    "\/\/\/",
+                    "",
+                    "\t\/\/\/<\/userdoc>\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/public-properties-and-fields.md",
+                    {
+                        "id": "tu25"
+                    }
+                ],
+                [
+                    "public float DelayTimeOut { get; set; }",
+                    "",
+                    "\tpublic float DelayTimeOut { get; set; }\r\n\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/public-properties-and-fields.md",
+                    {
+                        "id": "tu25"
+                    }
+                ],
+                [
+                    "Enable documentation file generation:",
+                    "",
+                    "Enable documentation file generation:",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/public-properties-and-fields.md",
+                    {
+                        "id": "tu26"
+                    }
+                ],
+                [
+                    "<TargetFrameworks>net6.0<\/TargetFrameworks>",
+                    "",
+                    "  <PropertyGroup>\r\n    <TargetFrameworks>net6.0<\/TargetFrameworks>\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/public-properties-and-fields.md",
+                    {
+                        "id": "tu27"
+                    }
+                ],
+                [
+                    "<DocumentationFile>bin\\$(Configuration)\\$(TargetFramework)\\$(AssemblyName).xml<\/DocumentationFile><\/PropertyGroup>",
+                    "",
+                    "    <DocumentationFile>bin\\$(Configuration)\\$(TargetFramework)\\$(AssemblyName).xml<\/DocumentationFile>\r\n  <\/PropertyGroup>\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/public-properties-and-fields.md",
+                    {
+                        "id": "tu27"
+                    }
+                ],
+                [
+                    "<x1\/>!NOTE<x2\/>",
+                    "",
+                    "<x1\/>!NOTE<x2\/>\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/public-properties-and-fields.md",
+                    {
+                        "id": "tu28"
+                    }
+                ],
+                [
+                    "Game Studio will only look in your build output directory for each assembly.",
+                    "",
+                    "Game Studio will only look in your build output directory for each assembly.",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/public-properties-and-fields.md",
+                    {
+                        "id": "tu28"
+                    }
+                ],
+                [
+                    "Using the above path is recommended.",
+                    "",
+                    " Using the above path is recommended.",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/public-properties-and-fields.md",
+                    {
+                        "id": "tu28"
+                    }
+                ],
+                [
+                    "On next reload, the Game Studio should display the documentation:",
+                    "",
+                    "On next reload, the Game Studio should display the documentation:",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/public-properties-and-fields.md",
+                    {
+                        "id": "tu29"
+                    }
+                ],
+                [
+                    "<x1\/>The description now shows in the Property Grid<x2\/>",
+                    "",
+                    "<x1\/>The description now shows in the Property Grid<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/public-properties-and-fields.md",
+                    {
+                        "id": "tu30"
+                    }
+                ],
+                [
+                    "MemberRequiredAttribute",
+                    "",
+                    "<g1>MemberRequiredAttribute<\/g1>",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/public-properties-and-fields.md",
+                    {
+                        "id": "tu31"
+                    }
+                ],
+                [
+                    "This attribute is used to specify if a field or property should not be left null in editor.",
+                    "",
+                    "This attribute is used to specify if a field or property should not be left null in editor.\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/public-properties-and-fields.md",
+                    {
+                        "id": "tu32"
+                    }
+                ],
+                [
+                    "If no values are set for this member, a warning or error will be logged when building your game.",
+                    "",
+                    "If no values are set for this member, a warning or error will be logged when building your game.",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/public-properties-and-fields.md",
+                    {
+                        "id": "tu32"
+                    }
+                ],
+                [
+                    "[Stride.Core.Annotations.MemberRequired(MemberRequiredReportType.Error)] public CharacterComponent MyCharacter;",
+                    "",
+                    "[Stride.Core.Annotations.MemberRequired(MemberRequiredReportType.Error)] public CharacterComponent MyCharacter;\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/public-properties-and-fields.md",
+                    {
+                        "id": "tu33"
+                    }
+                ],
+                [
+                    "DataMemberRangeAttribute",
+                    "",
+                    "<g1>DataMemberRangeAttribute<\/g1>",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/public-properties-and-fields.md",
+                    {
+                        "id": "tu34"
+                    }
+                ],
+                [
+                    "InlinePropertyAttribute",
+                    "",
+                    "<g1>InlinePropertyAttribute<\/g1>",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/public-properties-and-fields.md",
+                    {
+                        "id": "tu35"
+                    }
+                ],
+                [
+                    "ItemCanBeNullAttribute",
+                    "",
+                    "<g1>ItemCanBeNullAttribute<\/g1>",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/public-properties-and-fields.md",
+                    {
+                        "id": "tu36"
+                    }
+                ],
+                [
+                    "ItemNotNullAttribute",
+                    "",
+                    "<g1>ItemNotNullAttribute<\/g1>",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/public-properties-and-fields.md",
+                    {
+                        "id": "tu37"
+                    }
+                ],
+                [
+                    "MemberCollectionAttribute",
+                    "",
+                    "<g1>MemberCollectionAttribute<\/g1>",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/public-properties-and-fields.md",
+                    {
+                        "id": "tu38"
+                    }
+                ],
+                [
+                    "DataStyleAttribute",
+                    "",
+                    "<g1>DataStyleAttribute<\/g1>",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/public-properties-and-fields.md",
+                    {
+                        "id": "tu39"
+                    }
+                ],
+                [
+                    "DisplayAttribute",
+                    "",
+                    "<g1>DisplayAttribute<\/g1>",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/public-properties-and-fields.md",
+                    {
+                        "id": "tu40"
+                    }
+                ],
+                [
+                    "See also",
+                    "",
+                    "See also",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/public-properties-and-fields.md",
+                    {
+                        "id": "tu41"
+                    }
+                ],
+                [
+                    "Serialization",
+                    "",
+                    "<g1>Serialization<\/g1>",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/public-properties-and-fields.md",
+                    {
+                        "id": "tu42"
+                    }
+                ],
+                [
+                    "Types of script",
+                    "",
+                    "<g1>Types of script<\/g1>",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/public-properties-and-fields.md",
+                    {
+                        "id": "tu43"
+                    }
+                ],
+                [
+                    "Create a script",
+                    "",
+                    "<g1>Create a script<\/g1>",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/public-properties-and-fields.md",
+                    {
+                        "id": "tu44"
+                    }
+                ],
+                [
+                    "Use a script",
+                    "",
+                    "<g1>Use a script<\/g1>",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/public-properties-and-fields.md",
+                    {
+                        "id": "tu45"
+                    }
+                ],
+                [
+                    "Scheduling and priorities",
+                    "",
+                    "<g1>Scheduling and priorities<\/g1>",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/public-properties-and-fields.md",
+                    {
+                        "id": "tu46"
+                    }
+                ],
+                [
+                    "Events",
+                    "",
+                    "<g1>Events<\/g1>",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/public-properties-and-fields.md",
+                    {
+                        "id": "tu47"
+                    }
+                ],
+                [
+                    "Debugging",
+                    "",
+                    "<g1>Debugging<\/g1>",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/public-properties-and-fields.md",
+                    {
+                        "id": "tu48"
+                    }
+                ],
+                [
+                    "Preprocessor variables",
+                    "",
+                    "<g1>Preprocessor variables<\/g1>",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/public-properties-and-fields.md",
+                    {
+                        "id": "tu49"
+                    }
+                ]
+            ]
+        }
+    ],
+    "seg_enabled": false
+}

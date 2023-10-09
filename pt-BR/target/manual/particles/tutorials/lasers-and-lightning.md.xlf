@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" xmlns:okp="okapi-framework:xliff-extensions" its:version="2.0" version="1.2">
+<file datatype="x-text/x-markdown" okp:inputEncoding="UTF-8" original="/D:/repos/rr/source/manual/particles/tutorials/lasers-and-lightning.md" source-language="en" target-language="pt">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en">Tutorial: Lasers and lightning</source>
+<target xml:lang="pt">Tutorial: Lasers and lightning</target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Intermediate<x id="2"/>
+<x id="3"/>Artist<x id="4"/>
+<x id="5"/>Programmer<x id="6"/></source>
+<target xml:lang="pt"><x id="1"/>Intermediate<x id="2"/>
+<x id="3"/>Artist<x id="4"/>
+<x id="5"/>Programmer<x id="6"/></target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">This tutorial explains how to create lasers and lightnings using particles and custom materials.</source>
+<target xml:lang="pt">This tutorial explains how to create lasers and lightnings using particles and custom materials.</target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">Imagine we want to create a lightning arc like this one:</source>
+<target xml:lang="pt">Imagine we want to create a lightning arc like this one:</target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>media/particles-tutorials-lasers-1.gif<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>media/particles-tutorials-lasers-1.gif<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en">This effect is a strip which:</source>
+<target xml:lang="pt">This effect is a strip which:</target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en">connects two fixed points</source>
+<target xml:lang="pt">connects two fixed points</target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en">changes positions very quickly</source>
+<target xml:lang="pt">changes positions very quickly</target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en">can be rendered as a single strip</source>
+<target xml:lang="pt">can be rendered as a single strip</target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en">Because the lightning is a single-line strip, we can render it using the ribbon shape builder, but with a few major differences. The particles:</source>
+<target xml:lang="pt">Because the lightning is a single-line strip, we can render it using the ribbon shape builder, but with a few major differences. The particles:</target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en">spawn at the same time, rather than in sequence</source>
+<target xml:lang="pt">spawn at the same time, rather than in sequence</target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en">appear on a single line or arc, but with semi-randomized positions to give the illusion of lightning</source>
+<target xml:lang="pt">appear on a single line or arc, but with semi-randomized positions to give the illusion of lightning</target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en">should reappear very quickly</source>
+<target xml:lang="pt">should reappear very quickly</target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en">Simultaneous spawning</source>
+<target xml:lang="pt">Simultaneous spawning</target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en">We can create a looping Spawner by frame which spawns a certain number of particles (lets say 50) <g id="1">every</g> frame.</source>
+<target xml:lang="pt">We can create a looping Spawner by frame which spawns a certain number of particles (lets say 50) <g id="1">every</g> frame.</target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en">Because we only need one set visible at a time we limit the Maxmimum Particles on the emitter to 50 and give them the same lifespan (for example 0.2 seconds).</source>
+<target xml:lang="pt">Because we only need one set visible at a time we limit the Maxmimum Particles on the emitter to 50 and give them the same lifespan (for example 0.2 seconds).</target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en">This means the Spawner will try to emit 50 particles every frame, but because we have limited them it will only spawn 50 particles the first frame.</source>
+<target xml:lang="pt">This means the Spawner will try to emit 50 particles every frame, but because we have limited them it will only spawn 50 particles the first frame.</target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en">They all have the same lifespan, so when they die at the same time a new batch of 50 particles will be spawned.</source>
+<target xml:lang="pt">They all have the same lifespan, so when they die at the same time a new batch of 50 particles will be spawned.</target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en">Connect two points</source>
+<target xml:lang="pt">Connect two points</target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en">We are going to use the <g id="1">Position (Arc)</g> initializer. It picks a second point from another Entity and sets the particles' positions to lie on an arc between the Emitter and the target Entity.</source>
+<target xml:lang="pt">We are going to use the <g id="1">Position (Arc)</g> initializer. It picks a second point from another Entity and sets the particles' positions to lie on an arc between the Emitter and the target Entity.</target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en">By clicking the Ordered checkbox we can force the particles to be placed at equal distances starting from the emitter and moving towards the target Entity.
+This is important when we render them using a Ribbon shape builder because if they appear at random (unordered) positions along the arc it will be a mess.
+We also have to add Spawn Order initializer and sort the particles by Order (this is true for all ribbons, not just lightning.)</source>
+<target xml:lang="pt">By clicking the Ordered checkbox we can force the particles to be placed at equal distances starting from the emitter and moving towards the target Entity.
+This is important when we render them using a Ribbon shape builder because if they appear at random (unordered) positions along the arc it will be a mess.
+We also have to add Spawn Order initializer and sort the particles by Order (this is true for all ribbons, not just lightning.)</target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en">The arc position initialzier also allows for a random offset which we set to some small number.</source>
+<target xml:lang="pt">The arc position initialzier also allows for a random offset which we set to some small number.</target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en">Change positions fast</source>
+<target xml:lang="pt">Change positions fast</target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en">We can set the particles' lifespan to a small number (eg 0.2 seconds). With the Time scale parameter, we can additionally control the speed of the entire particle system.</source>
+<target xml:lang="pt">We can set the particles' lifespan to a small number (eg 0.2 seconds). With the Time scale parameter, we can additionally control the speed of the entire particle system.</target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en">To illustrate better what's going on here is the same effect with Billboard shape builder instead of Ribbon, and slowed down 30 times:</source>
+<target xml:lang="pt">To illustrate better what's going on here is the same effect with Billboard shape builder instead of Ribbon, and slowed down 30 times:</target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>media/particles-tutorials-lasers-2.gif<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>media/particles-tutorials-lasers-2.gif<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en">Moving lightning</source>
+<target xml:lang="pt">Moving lightning</target>
+</trans-unit>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en">There is a way to make the lightning arc move from point A to point B instead of being static.</source>
+<target xml:lang="pt">There is a way to make the lightning arc move from point A to point B instead of being static.</target>
+</trans-unit>
+<trans-unit id="tu29" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>media/particles-tutorials-lasers-3.gif<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>media/particles-tutorials-lasers-3.gif<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu30" xml:space="preserve">
+<source xml:lang="en">There are a few adjustments we need to make:</source>
+<target xml:lang="pt">There are a few adjustments we need to make:</target>
+</trans-unit>
+<trans-unit id="tu31" xml:space="preserve">
+<source xml:lang="en">Change the spawn rate to a lower one. The example above uses 600/second and is played at 0.1 time scale, which means around 1 particle per frame.</source>
+<target xml:lang="pt">Change the spawn rate to a lower one. The example above uses 600/second and is played at 0.1 time scale, which means around 1 particle per frame.</target>
+</trans-unit>
+<trans-unit id="tu32" xml:space="preserve">
+<source xml:lang="en">Set a fixed count on the arc positioner (50). Because it interpolates the distances based on the number of particles spawned <g id="1">each</g> frame, if we spawn them sequentially they'll all stay in the beginning of the arc. By setting the count to 50 we tell the arc positioner to expect 50 particles in total.</source>
+<target xml:lang="pt">Set a fixed count on the arc positioner (50). Because it interpolates the distances based on the number of particles spawned <g id="1">each</g> frame, if we spawn them sequentially they'll all stay in the beginning of the arc. By setting the count to 50 we tell the arc positioner to expect 50 particles in total.</target>
+</trans-unit>
+<trans-unit id="tu33" xml:space="preserve">
+<source xml:lang="en">Set a delay to the spawner to allow the old arc to completely disappear before starting again. Otherwise the Ribbon will wrongly connect the old and the new particles, as it can't know how to split them.</source>
+<target xml:lang="pt">Set a delay to the spawner to allow the old arc to completely disappear before starting again. Otherwise the Ribbon will wrongly connect the old and the new particles, as it can't know how to split them.</target>
+</trans-unit>
+<trans-unit id="tu34" xml:space="preserve">
+<source xml:lang="en">Lasers using particles</source>
+<target xml:lang="pt">Lasers using particles</target>
+</trans-unit>
+<trans-unit id="tu35" xml:space="preserve">
+<source xml:lang="en">Creating lasers with particles is very similar to making lightning. We actually need less particles, because the lasers are straight and do not deviate.
+By setting the arc positioner's arc height to 0 and random offset to (0, 0, 0) we can spawn the particles in a straight line. If you want you can give them slightly different sizes to make the laser beam appear shimmering.</source>
+<target xml:lang="pt">Creating lasers with particles is very similar to making lightning. We actually need less particles, because the lasers are straight and do not deviate.
+By setting the arc positioner's arc height to 0 and random offset to (0, 0, 0) we can spawn the particles in a straight line. If you want you can give them slightly different sizes to make the laser beam appear shimmering.</target>
+</trans-unit>
+<trans-unit id="tu36" xml:space="preserve">
+<source xml:lang="en">One thing to be mindful about lasers is that usually when the target moves you want the laser to move with it. Because the arc positioner is an initializer and not an updater, it has no effect on particles already spawned, which and stay behind. There are three ways to counter this.</source>
+<target xml:lang="pt">One thing to be mindful about lasers is that usually when the target moves you want the laser to move with it. Because the arc positioner is an initializer and not an updater, it has no effect on particles already spawned, which and stay behind. There are three ways to counter this.</target>
+</trans-unit>
+<trans-unit id="tu37" xml:space="preserve">
+<source xml:lang="en">Spawn the particles very fast. If they only live for 1-2 frames the laser will be recreated too fast for the user to notice any visual differences.</source>
+<target xml:lang="pt">Spawn the particles very fast. If they only live for 1-2 frames the laser will be recreated too fast for the user to notice any visual differences.</target>
+</trans-unit>
+<trans-unit id="tu38" xml:space="preserve">
+<source xml:lang="en">Spawn particles in Local space. This means they will move together with the emitter, but then you will have to rotate and scale the emitter to always point to the target Entity.</source>
+<target xml:lang="pt">Spawn particles in Local space. This means they will move together with the emitter, but then you will have to rotate and scale the emitter to always point to the target Entity.</target>
+</trans-unit>
+<trans-unit id="tu39" xml:space="preserve">
+<source xml:lang="en">Create a custom Updater. If you create a custom post-updater similar (or simpler) to the arc positioner you can force it to update the particle positions every frame, correctly placing them between the two points even if they move.</source>
+<target xml:lang="pt">Create a custom Updater. If you create a custom post-updater similar (or simpler) to the arc positioner you can force it to update the particle positions every frame, correctly placing them between the two points even if they move.</target>
+</trans-unit>
+<trans-unit id="tu40" xml:space="preserve">
+<source xml:lang="en">Depending on the type of game you want to make each of these options can have benefits or drawbacks. Spawning the particles every frame is the easiest and simplest way to do it and will be sufficient for most needs.</source>
+<target xml:lang="pt">Depending on the type of game you want to make each of these options can have benefits or drawbacks. Spawning the particles every frame is the easiest and simplest way to do it and will be sufficient for most needs.</target>
+</trans-unit>
+<trans-unit id="tu41" xml:space="preserve">
+<source xml:lang="en">Lasers using custom materials</source>
+<target xml:lang="pt">Lasers using custom materials</target>
+</trans-unit>
+<trans-unit id="tu42" xml:space="preserve">
+<source xml:lang="en">Creating lasers using custom materials is similar to using particles in Local space. We need to manually rotate the scale the emitter to always face a target entity.</source>
+<target xml:lang="pt">Creating lasers using custom materials is similar to using particles in Local space. We need to manually rotate the scale the emitter to always face a target entity.</target>
+</trans-unit>
+<trans-unit id="tu43" xml:space="preserve">
+<source xml:lang="en">We can designate one axis which points towards the target to be our length, leaving the other two axes for width of the laser.</source>
+<target xml:lang="pt">We can designate one axis which points towards the target to be our length, leaving the other two axes for width of the laser.</target>
+</trans-unit>
+<trans-unit id="tu44" xml:space="preserve">
+<source xml:lang="en">Rendering a cylinder with height of 1 which is placed under the rotated entity will cause it to stretch and reach the target point.</source>
+<target xml:lang="pt">Rendering a cylinder with height of 1 which is placed under the rotated entity will cause it to stretch and reach the target point.</target>
+</trans-unit>
+<trans-unit id="tu45" xml:space="preserve">
+<source xml:lang="en">The custom material is required to place a scrolling texture on the cylinder. Or you can use a regular Emissive map with no scrolling in which case you won't need a custom material.</source>
+<target xml:lang="pt">The custom material is required to place a scrolling texture on the cylinder. Or you can use a regular Emissive map with no scrolling in which case you won't need a custom material.</target>
+</trans-unit>
+<trans-unit id="tu46" xml:space="preserve">
+<source xml:lang="en">The particles sample already contains an example of how to create lasers this way. The LaserOrientationScript rotates and scales the entity towards a target point and the ComputeColorTextureScroll shader samples a scrolling texture.</source>
+<target xml:lang="pt">The particles sample already contains an example of how to create lasers this way. The LaserOrientationScript rotates and scales the entity towards a target point and the ComputeColorTextureScroll shader samples a scrolling texture.</target>
+</trans-unit>
+<trans-unit id="tu47" xml:space="preserve">
+<source xml:lang="en">Sample project</source>
+<target xml:lang="pt">Sample project</target>
+</trans-unit>
+<trans-unit id="tu48" xml:space="preserve">
+<source xml:lang="en">To see some of the techniques described on this page implemented in a project, create a new <g id="1">Sample: Particles</g> project and open the <g id="2">Lasers</g> scene.</source>
+<target xml:lang="pt">To see some of the techniques described on this page implemented in a project, create a new <g id="1">Sample: Particles</g> project and open the <g id="2">Lasers</g> scene.</target>
+</trans-unit>
+<trans-unit id="tu49" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Particles sample project<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Particles sample project<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu50" xml:space="preserve">
+<source xml:lang="en">See also</source>
+<target xml:lang="pt">See also</target>
+</trans-unit>
+<trans-unit id="tu51" xml:space="preserve">
+<source xml:lang="en"><g id="1">Tutorial: Create a trail</g></source>
+<target xml:lang="pt"><g id="1">Tutorial: Create a trail</g></target>
+</trans-unit>
+<trans-unit id="tu52" xml:space="preserve">
+<source xml:lang="en"><g id="1">Tutorial: Custom particles</g></source>
+<target xml:lang="pt"><g id="1">Tutorial: Custom particles</g></target>
+</trans-unit>
+<trans-unit id="tu53" xml:space="preserve">
+<source xml:lang="en"><g id="1">Tutorial: Inheritance</g></source>
+<target xml:lang="pt"><g id="1">Tutorial: Inheritance</g></target>
+</trans-unit>
+<trans-unit id="tu54" xml:space="preserve">
+<source xml:lang="en"><g id="1">Particles</g></source>
+<target xml:lang="pt"><g id="1">Particles</g></target>
+</trans-unit>
+<trans-unit id="tu55" xml:space="preserve">
+<source xml:lang="en"><g id="1">Create particles</g></source>
+<target xml:lang="pt"><g id="1">Create particles</g></target>
+</trans-unit>
+</body>
+</file>
+</xliff>

@@ -1,0 +1,1846 @@
+{
+    "filename": "manual\\physics\\script-a-trigger.md.xlf",
+    "files": [
+        {
+            "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md": [
+                [
+                    "Tutorial:",
+                    "",
+                    "Tutorial:",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu1"
+                    }
+                ],
+                [
+                    "Script a trigger",
+                    "",
+                    " Script a trigger",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu1"
+                    }
+                ],
+                [
+                    "<x1\/>Beginner<x2\/>",
+                    "",
+                    "<x1\/>Beginner<x2\/>\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu2"
+                    }
+                ],
+                [
+                    "<x3\/>Designer<x4\/>",
+                    "",
+                    "<x3\/>Designer<x4\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu2"
+                    }
+                ],
+                [
+                    "In this tutorial, we'll create a <g1>trigger<\/g1> that doubles the size of a ball when the ball passes through it.",
+                    "",
+                    "In this tutorial, we'll create a <g1>trigger<\/g1> that doubles the size of a ball when the ball passes through it.",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu3"
+                    }
+                ],
+                [
+                    "<x1\/>!Note<x2\/>",
+                    "",
+                    "<x1\/>!Note<x2\/>\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu4"
+                    }
+                ],
+                [
+                    "The screenshots and videos in this tutorial were made using an earlier version of Stride, so some parts of the UI, and the default skybox and sphere, might look different from your version.",
+                    "",
+                    "The screenshots and videos in this tutorial were made using an earlier version of Stride, so some parts of the UI, and the default skybox and sphere, might look different from your version.",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu4"
+                    }
+                ],
+                [
+                    "1.",
+                    "",
+                    "1.",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu5"
+                    }
+                ],
+                [
+                    "Create a bouncing ball",
+                    "",
+                    " Create a bouncing ball",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu5"
+                    }
+                ],
+                [
+                    "Follow the instructions in the <g1>Create a bouncing ball<\/g1> tutorial.",
+                    "",
+                    "Follow the instructions in the <g1>Create a bouncing ball<\/g1> tutorial.",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu6"
+                    }
+                ],
+                [
+                    "This creates a simple scene in which a ball falls from mid-air, hits the ground, and bounces.",
+                    "",
+                    " This creates a simple scene in which a ball falls from mid-air, hits the ground, and bounces.",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu6"
+                    }
+                ],
+                [
+                    "2.",
+                    "",
+                    "2.",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu7"
+                    }
+                ],
+                [
+                    "Set the restitution",
+                    "",
+                    " Set the restitution",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu7"
+                    }
+                ],
+                [
+                    "For this tutorial, we'll set the restitution of both the ground and the sphere to 0.9, which makes the ball very bouncy.",
+                    "",
+                    "For this tutorial, we'll set the restitution of both the ground and the sphere to 0.9, which makes the ball very bouncy.",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu8"
+                    }
+                ],
+                [
+                    "This makes it easier to see the effect of the trigger later, as the ball will bounce in and out of the trigger area repeatedly.",
+                    "",
+                    " This makes it easier to see the effect of the trigger later, as the ball will bounce in and out of the trigger area repeatedly.",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu8"
+                    }
+                ],
+                [
+                    "Select the <g1>Sphere<\/g1> entity.",
+                    "",
+                    "Select the <g1>Sphere<\/g1> entity.",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu9"
+                    }
+                ],
+                [
+                    "In the <g1>Property Grid<\/g1>, under <g2>Rigidbody<\/g2>, set the <g3>Restitution<\/g3> to <g4>0.9<\/g4>.",
+                    "",
+                    "In the <g1>Property Grid<\/g1>, under <g2>Rigidbody<\/g2>, set the <g3>Restitution<\/g3> to <g4>0.9<\/g4>.",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu10"
+                    }
+                ],
+                [
+                    "<x1\/>Set restitution for a sphere<x2\/>",
+                    "",
+                    "<x1\/>Set restitution for a sphere<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu11"
+                    }
+                ],
+                [
+                    "Select the <g1>Ground<\/g1> entity.",
+                    "",
+                    "Select the <g1>Ground<\/g1> entity.",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu12"
+                    }
+                ],
+                [
+                    "In the <g1>Property Grid<\/g1>, under <g2>Static Collider<\/g2>, set the <g3>Restitution<\/g3> to <g4>0.9<\/g4>.",
+                    "",
+                    "In the <g1>Property Grid<\/g1>, under <g2>Static Collider<\/g2>, set the <g3>Restitution<\/g3> to <g4>0.9<\/g4>.",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu13"
+                    }
+                ],
+                [
+                    "<x1\/>Set restitution for the ground<x2\/>",
+                    "",
+                    "<x1\/>Set restitution for the ground<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu14"
+                    }
+                ],
+                [
+                    "3.",
+                    "",
+                    "3.",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu15"
+                    }
+                ],
+                [
+                    "Add a trigger",
+                    "",
+                    " Add a trigger",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu15"
+                    }
+                ],
+                [
+                    "Now we'll add a trigger between the ball and the ground, so the ball passes through it.",
+                    "",
+                    "Now we'll add a trigger between the ball and the ground, so the ball passes through it.",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu16"
+                    }
+                ],
+                [
+                    "In the <g1>Scene Editor<\/g1>, click the white plus button (<g2>Create new entity<\/g2>) and select <g3>Empty entity<\/g3>.",
+                    "",
+                    "In the <g1>Scene Editor<\/g1>, click the white plus button (<g2>Create new entity<\/g2>) and select <g3>Empty entity<\/g3>.",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu17"
+                    }
+                ],
+                [
+                    "<x1\/>Create new entity<x2\/>",
+                    "",
+                    "<x1\/>Create new entity<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu18"
+                    }
+                ],
+                [
+                    "Game Studio adds an entity to the scene with the default name <g1>Entity<\/g1>.",
+                    "",
+                    "Game Studio adds an entity to the scene with the default name <g1>Entity<\/g1>.",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu19"
+                    }
+                ],
+                [
+                    "This entity will be our trigger, so rename it <g1>Trigger<\/g1> to make it easy to identify.",
+                    "",
+                    "This entity will be our trigger, so rename it <g1>Trigger<\/g1> to make it easy to identify.",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu20"
+                    }
+                ],
+                [
+                    "Since we don't need the trigger to move, we'll make it a static collider.",
+                    "",
+                    "Since we don't need the trigger to move, we'll make it a static collider.",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu21"
+                    }
+                ],
+                [
+                    "In the <g1>Property Grid<\/g1>, click <g2>Add component<\/g2> and select <g3>Static Collider<\/g3>.",
+                    "",
+                    " In the <g1>Property Grid<\/g1>, click <g2>Add component<\/g2> and select <g3>Static Collider<\/g3>.",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu21"
+                    }
+                ],
+                [
+                    "<x1\/>Add Static collider component<x2\/>",
+                    "",
+                    "<x1\/>Add Static collider component<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu22"
+                    }
+                ],
+                [
+                    "In the <g1>Property Grid<\/g1>, expand the <g2>Static Collider component<\/g2> to view its properties.",
+                    "",
+                    "In the <g1>Property Grid<\/g1>, expand the <g2>Static Collider component<\/g2> to view its properties.",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu23"
+                    }
+                ],
+                [
+                    "Select the <g1>Is Trigger<\/g1> checkbox.",
+                    "",
+                    "Select the <g1>Is Trigger<\/g1> checkbox.",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu24"
+                    }
+                ],
+                [
+                    "<x1\/>Check 'Is trigger'<x2\/>",
+                    "",
+                    "<x1\/>Check 'Is trigger'<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu25"
+                    }
+                ],
+                [
+                    "This makes the collider a trigger.",
+                    "",
+                    "This makes the collider a trigger.",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu26"
+                    }
+                ],
+                [
+                    "This means objects can pass through it, but are still detected in the code.",
+                    "",
+                    " This means objects can pass through it, but are still detected in the code.",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu26"
+                    }
+                ],
+                [
+                    "We need to give the trigger a shape.",
+                    "",
+                    "We need to give the trigger a shape.",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu27"
+                    }
+                ],
+                [
+                    "Next to <g1>Collider Shapes<\/g1>, click <x1\/>Green plus button<x2\/> (<g2>Add<\/g2>) and select <g3>Box<\/g3>.",
+                    "",
+                    " Next to <g1>Collider Shapes<\/g1>, click <x1\/>Green plus button<x2\/> (<g2>Add<\/g2>) and select <g3>Box<\/g3>.",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu27"
+                    }
+                ],
+                [
+                    "<x1\/>Add collider shape<x2\/>",
+                    "",
+                    "<x1\/>Add collider shape<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu28"
+                    }
+                ],
+                [
+                    "This gives the trigger a box shape.",
+                    "",
+                    "This gives the trigger a box shape.",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu29"
+                    }
+                ],
+                [
+                    "<x1\/>Added trigger<x2\/>",
+                    "",
+                    "<x1\/>Added trigger<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu30"
+                    }
+                ],
+                [
+                    "Let's make the trigger a larger area.",
+                    "",
+                    "Let's make the trigger a larger area.",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu31"
+                    }
+                ],
+                [
+                    "In the <g1>Property Grid<\/g1>, under the <g2>Transform<\/g2> component properties, set the <g3>scale<\/g3> to:",
+                    "",
+                    " In the <g1>Property Grid<\/g1>, under the <g2>Transform<\/g2> component properties, set the <g3>scale<\/g3> to:",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu31"
+                    }
+                ],
+                [
+                    "X:2, Y:2, Z:2",
+                    "",
+                    " <g4>X:2, Y:2, Z:2<\/g4>",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu31"
+                    }
+                ],
+                [
+                    "<x1\/>Scale a trigger<x2\/>",
+                    "",
+                    "<x1\/>Scale a trigger<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu32"
+                    }
+                ],
+                [
+                    "This doubles the size of the trigger.",
+                    "",
+                    "This doubles the size of the trigger.",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu33"
+                    }
+                ],
+                [
+                    "<x1\/>Added trigger<x2\/>",
+                    "",
+                    "<x1\/>Added trigger<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu34"
+                    }
+                ],
+                [
+                    "4.",
+                    "",
+                    "4.",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu35"
+                    }
+                ],
+                [
+                    "Give the trigger a model",
+                    "",
+                    " Give the trigger a model",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu35"
+                    }
+                ],
+                [
+                    "Right now, the trigger is invisible at runtime.",
+                    "",
+                    "Right now, the trigger is invisible at runtime.",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu36"
+                    }
+                ],
+                [
+                    "To better show how the trigger works, we'll make it a transparent box.",
+                    "",
+                    " To better show how the trigger works, we'll make it a transparent box.",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu36"
+                    }
+                ],
+                [
+                    "This has no effect on how the trigger works; it just means we can easily see where it is at runtime.",
+                    "",
+                    " This has no effect on how the trigger works; it just means we can easily see where it is at runtime.",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu36"
+                    }
+                ],
+                [
+                    "Create a new procedural model asset.",
+                    "",
+                    "Create a new procedural model asset.",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu37"
+                    }
+                ],
+                [
+                    "To do this, in the <g1>Asset View<\/g1>, click <g2>Add asset<\/g2>, and select <g3>Models > Cube<\/g3>.",
+                    "",
+                    " To do this, in the <g1>Asset View<\/g1>, click <g2>Add asset<\/g2>, and select <g3>Models > Cube<\/g3>.",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu37"
+                    }
+                ],
+                [
+                    "<x1\/>Add a model asset<x2\/>",
+                    "",
+                    "<x1\/>Add a model asset<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu38"
+                    }
+                ],
+                [
+                    "Create a new empty material asset.",
+                    "",
+                    "Create a new empty material asset.",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu39"
+                    }
+                ],
+                [
+                    "To do this, in the <g1>Asset View<\/g1>, click <g2>Add asset<\/g2>, and select <g3>Materials > Material<\/g3>.",
+                    "",
+                    " To do this, in the <g1>Asset View<\/g1>, click <g2>Add asset<\/g2>, and select <g3>Materials > Material<\/g3>.",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu39"
+                    }
+                ],
+                [
+                    "<x1\/>Add a material asset<x2\/>",
+                    "",
+                    "<x1\/>Add a material asset<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu40"
+                    }
+                ],
+                [
+                    "Let's rename the material to make it easy to identify.",
+                    "",
+                    "Let's rename the material to make it easy to identify.",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu41"
+                    }
+                ],
+                [
+                    "To do this, right-click, select <g1>Rename<\/g1>, and type a new name (eg <g2>Transparent<\/g2>).",
+                    "",
+                    " To do this, right-click, select <g1>Rename<\/g1>, and type a new name (eg <g2>Transparent<\/g2>).",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu41"
+                    }
+                ],
+                [
+                    "Select the <g1>Trigger<\/g1> entity.",
+                    "",
+                    "Select the <g1>Trigger<\/g1> entity.",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu42"
+                    }
+                ],
+                [
+                    "In the <g2>Property Grid<\/g2>, click <g3>Add component<\/g3> and select <g4>Model<\/g4>.",
+                    "",
+                    " In the <g2>Property Grid<\/g2>, click <g3>Add component<\/g3> and select <g4>Model<\/g4>.",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu42"
+                    }
+                ],
+                [
+                    "<x1\/>Add a model component<x2\/>",
+                    "",
+                    "<x1\/>Add a model component<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu43"
+                    }
+                ],
+                [
+                    "Game Studio adds a model component to the entity.",
+                    "",
+                    "Game Studio adds a model component to the entity.",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu44"
+                    }
+                ],
+                [
+                    "Under <g1>Model<\/g1>, click <x1\/>Hand icon<x2\/> (<g2>Select an asset<\/g2>).",
+                    "",
+                    "Under <g1>Model<\/g1>, click <x1\/>Hand icon<x2\/> (<g2>Select an asset<\/g2>).",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu45"
+                    }
+                ],
+                [
+                    "<x1\/>Pick an asset up<x2\/>",
+                    "",
+                    "<x1\/>Pick an asset up<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu46"
+                    }
+                ],
+                [
+                    "Select the <g1>Cube<\/g1> model we created in step 1 and click <g2>OK<\/g2>.",
+                    "",
+                    "Select the <g1>Cube<\/g1> model we created in step 1 and click <g2>OK<\/g2>.",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu47"
+                    }
+                ],
+                [
+                    "<x1\/>Select Cube model<x2\/>",
+                    "",
+                    "<x1\/>Select Cube model<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu48"
+                    }
+                ],
+                [
+                    "In the <g1>Property Grid<\/g1>, under <g2>Model > Materials<\/g2>, click <x1\/>Hand icon<x2\/> (<g3>Select an asset<\/g3>).",
+                    "",
+                    "In the <g1>Property Grid<\/g1>, under <g2>Model > Materials<\/g2>, click <x1\/>Hand icon<x2\/> (<g3>Select an asset<\/g3>).",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu49"
+                    }
+                ],
+                [
+                    "<x1\/>Select material<x2\/>",
+                    "",
+                    "<x1\/>Select material<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu50"
+                    }
+                ],
+                [
+                    "Select the <g1>Transparent<\/g1> material we created in step 2 and click <g2>OK<\/g2>.",
+                    "",
+                    "Select the <g1>Transparent<\/g1> material we created in step 2 and click <g2>OK<\/g2>.",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu51"
+                    }
+                ],
+                [
+                    "<x1\/>Select material<x2\/>",
+                    "",
+                    "<x1\/>Select material<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu52"
+                    }
+                ],
+                [
+                    "In the <g1>Asset View<\/g1>, select the <g2>Transparent<\/g2> material asset.",
+                    "",
+                    "In the <g1>Asset View<\/g1>, select the <g2>Transparent<\/g2> material asset.",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu53"
+                    }
+                ],
+                [
+                    "<x1\/>Select material in Asset View<x2\/>",
+                    "",
+                    "<x1\/>Select material in Asset View<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu54"
+                    }
+                ],
+                [
+                    "In the <g1>Property Grid<\/g1>, under <g2>Misc > Transparency<\/g2>, select <g3>Blend<\/g3>.",
+                    "",
+                    "In the <g1>Property Grid<\/g1>, under <g2>Misc > Transparency<\/g2>, select <g3>Blend<\/g3>.",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu55"
+                    }
+                ],
+                [
+                    "<x1\/>Select Blend<x2\/>",
+                    "",
+                    "<x1\/>Select Blend<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu56"
+                    }
+                ],
+                [
+                    "By default, the Alpha is set to 1.",
+                    "",
+                    "By default, the Alpha is set to 1.",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu57"
+                    }
+                ],
+                [
+                    "This makes the material completely opaque.",
+                    "",
+                    " This makes the material completely opaque.",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu57"
+                    }
+                ],
+                [
+                    "To set it to 50% opacity, set the <g1>Alpha<\/g1> to 0.5.",
+                    "",
+                    " To set it to 50% opacity, set the <g1>Alpha<\/g1> to 0.5.",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu57"
+                    }
+                ],
+                [
+                    "<x1\/>Select Blend<x2\/>",
+                    "",
+                    "<x1\/>Select Blend<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu58"
+                    }
+                ],
+                [
+                    "Now the trigger area will be visible at runtime.",
+                    "",
+                    "Now the trigger area will be visible at runtime.",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu59"
+                    }
+                ],
+                [
+                    "5.",
+                    "",
+                    "5.",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu60"
+                    }
+                ],
+                [
+                    "Position the trigger",
+                    "",
+                    " Position the trigger",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu60"
+                    }
+                ],
+                [
+                    "We need to position the trigger between the ground and the sphere, so the ball falls through it.",
+                    "",
+                    "We need to position the trigger between the ground and the sphere, so the ball falls through it.",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu61"
+                    }
+                ],
+                [
+                    "In the <g1>Property Grid<\/g1>, under <g2>Transform<\/g2>, set the <g3>Position<\/g3> to:",
+                    "",
+                    "In the <g1>Property Grid<\/g1>, under <g2>Transform<\/g2>, set the <g3>Position<\/g3> to:",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu62"
+                    }
+                ],
+                [
+                    "X:0, Y:3, Z:0",
+                    "",
+                    " <g4>X:0, Y:3, Z:0<\/g4>",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu62"
+                    }
+                ],
+                [
+                    "Now the trigger entity is between the ground and the sphere:",
+                    "",
+                    "Now the trigger entity is between the ground and the sphere:",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu63"
+                    }
+                ],
+                [
+                    "<x1\/>Trigger between ground and sphere<x2\/>",
+                    "",
+                    "<x1\/>Trigger between ground and sphere<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu64"
+                    }
+                ],
+                [
+                    "6.",
+                    "",
+                    "6.",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu65"
+                    }
+                ],
+                [
+                    "Change the sphere size with script",
+                    "",
+                    " Change the sphere size with script",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu65"
+                    }
+                ],
+                [
+                    "If we run the project now (<g1>F5<\/g1>), the ball falls through the trigger, but nothing happens.",
+                    "",
+                    "If we run the project now (<g1>F5<\/g1>), the ball falls through the trigger, but nothing happens.",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu66"
+                    }
+                ],
+                [
+                    "Let's write a script to change the size of the ball when it enters the trigger.",
+                    "",
+                    "Let's write a script to change the size of the ball when it enters the trigger.",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu67"
+                    }
+                ],
+                [
+                    "<x1\/>!Note<x2\/>",
+                    "",
+                    "<x1\/>!Note<x2\/>\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu68"
+                    }
+                ],
+                [
+                    "For more information about scripts, see <g1>Scripts<\/g1>.",
+                    "",
+                    "For more information about scripts, see <g1>Scripts<\/g1>.",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu68"
+                    }
+                ],
+                [
+                    "In the <g1>Asset View<\/g1>, click <g2>Add asset<\/g2> and select <g3>Scripts<\/g3> > <g4>Async Script<\/g4>.",
+                    "",
+                    "In the <g1>Asset View<\/g1>, click <g2>Add asset<\/g2> and select <g3>Scripts<\/g3> > <g4>Async Script<\/g4>.",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu69"
+                    }
+                ],
+                [
+                    "<x1\/>Use a script<x2\/>",
+                    "",
+                    "<x1\/>Use a script<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu70"
+                    }
+                ],
+                [
+                    "In the <g1>Create a script<\/g1> dialog, name your script <g2>Trigger<\/g2> and click <g3>Create script<\/g3>.",
+                    "",
+                    "In the <g1>Create a script<\/g1> dialog, name your script <g2>Trigger<\/g2> and click <g3>Create script<\/g3>.",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu71"
+                    }
+                ],
+                [
+                    "2a.",
+                    "",
+                    "2a.",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu72"
+                    }
+                ],
+                [
+                    "If Game Studio asks if you want to save your script, click <g1>Save<\/g1>.",
+                    "",
+                    " If Game Studio asks if you want to save your script, click <g1>Save<\/g1>.",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu72"
+                    }
+                ],
+                [
+                    "2b.",
+                    "",
+                    "2b.",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu73"
+                    }
+                ],
+                [
+                    "If Game Studio asks if you want to reload the assemblies, click <g1>Reload<\/g1>.",
+                    "",
+                    " If Game Studio asks if you want to reload the assemblies, click <g1>Reload<\/g1>.",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu73"
+                    }
+                ],
+                [
+                    "Open the script, replace its content with the following code, and save the file:",
+                    "",
+                    "Open the script, replace its content with the following code, and save the file:",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu74"
+                    }
+                ],
+                [
+                    "using Stride.Engine;",
+                    "",
+                    "using Stride.Engine;\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu75"
+                    }
+                ],
+                [
+                    "using Stride.Physics;",
+                    "",
+                    "using Stride.Physics;\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu75"
+                    }
+                ],
+                [
+                    "using System.Threading.Tasks;",
+                    "",
+                    "using System.Threading.Tasks;\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu75"
+                    }
+                ],
+                [
+                    "using Stride.Core.Mathematics;",
+                    "",
+                    "using Stride.Core.Mathematics;\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu75"
+                    }
+                ],
+                [
+                    "namespace TransformTrigger",
+                    "",
+                    "\r\nnamespace TransformTrigger\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu75"
+                    }
+                ],
+                [
+                    "\/\/ You can use any namespace you like for this script.",
+                    "",
+                    "\/\/ You can use any namespace you like for this script.\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu75"
+                    }
+                ],
+                [
+                    "{",
+                    "",
+                    "{\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu75"
+                    }
+                ],
+                [
+                    "public class Trigger :",
+                    "",
+                    "    public class Trigger :",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu75"
+                    }
+                ],
+                [
+                    "AsyncScript",
+                    "",
+                    " AsyncScript\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu75"
+                    }
+                ],
+                [
+                    "{",
+                    "",
+                    "    {\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu75"
+                    }
+                ],
+                [
+                    "public override async Task Execute()",
+                    "",
+                    "        public override async Task Execute()\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu75"
+                    }
+                ],
+                [
+                    "{",
+                    "",
+                    "        {\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu75"
+                    }
+                ],
+                [
+                    "var trigger = Entity.Get<PhysicsComponent>();",
+                    "",
+                    "            var trigger = Entity.Get<PhysicsComponent>();\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu75"
+                    }
+                ],
+                [
+                    "trigger.ProcessCollisions = true;",
+                    "",
+                    "            trigger.ProcessCollisions = true;\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu75"
+                    }
+                ],
+                [
+                    "\/\/ Start state machine",
+                    "",
+                    "\r\n            \/\/ Start state machine\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu75"
+                    }
+                ],
+                [
+                    "while (Game.IsRunning)",
+                    "",
+                    "            while (Game.IsRunning)\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu75"
+                    }
+                ],
+                [
+                    "{",
+                    "",
+                    "            {\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu75"
+                    }
+                ],
+                [
+                    "\/\/ 1.",
+                    "",
+                    "                \/\/ 1.",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu75"
+                    }
+                ],
+                [
+                    "Wait for an entity to collide with the trigger",
+                    "",
+                    " Wait for an entity to collide with the trigger\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu75"
+                    }
+                ],
+                [
+                    "var firstCollision = await trigger.NewCollision();",
+                    "",
+                    "                var firstCollision = await trigger.NewCollision();\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu75"
+                    }
+                ],
+                [
+                    "var otherCollider = trigger == firstCollision.ColliderA",
+                    "",
+                    "\r\n                var otherCollider = trigger == firstCollision.ColliderA\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu75"
+                    }
+                ],
+                [
+                    "? firstCollision.ColliderB",
+                    "",
+                    "                    ? firstCollision.ColliderB\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu75"
+                    }
+                ],
+                [
+                    ": firstCollision.ColliderA;",
+                    "",
+                    "                    : firstCollision.ColliderA;\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu75"
+                    }
+                ],
+                [
+                    "otherCollider.Entity.Transform.Scale = new Vector3(2.0f, 2.0f, 2.0f);",
+                    "",
+                    "                otherCollider.Entity.Transform.Scale = new Vector3(2.0f, 2.0f, 2.0f);\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu75"
+                    }
+                ],
+                [
+                    "\/\/ 2.",
+                    "",
+                    "\r\n                \/\/ 2.",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu75"
+                    }
+                ],
+                [
+                    "Wait for the entity to exit the trigger",
+                    "",
+                    " Wait for the entity to exit the trigger\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu75"
+                    }
+                ],
+                [
+                    "await firstCollision.Ended();",
+                    "",
+                    "                await firstCollision.Ended();\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu75"
+                    }
+                ],
+                [
+                    "otherCollider.Entity.Transform.Scale= new Vector3(1.0f, 1.0f, 1.0f);",
+                    "",
+                    "\r\n                otherCollider.Entity.Transform.Scale= new Vector3(1.0f, 1.0f, 1.0f);\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu75"
+                    }
+                ],
+                [
+                    "}",
+                    "",
+                    "            }\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu75"
+                    }
+                ],
+                [
+                    "}",
+                    "",
+                    "        }\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu75"
+                    }
+                ],
+                [
+                    "}",
+                    "",
+                    "    }\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu75"
+                    }
+                ],
+                [
+                    "}",
+                    "",
+                    "}\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu75"
+                    }
+                ],
+                [
+                    "This code doubles the size (scale) of any entity that enters the trigger.",
+                    "",
+                    "This code doubles the size (scale) of any entity that enters the trigger.",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu76"
+                    }
+                ],
+                [
+                    "When the entity exits the trigger, it returns to its original size.",
+                    "",
+                    " When the entity exits the trigger, it returns to its original size.",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu76"
+                    }
+                ],
+                [
+                    "Reload the assemblies.",
+                    "",
+                    "Reload the assemblies.",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu77"
+                    }
+                ],
+                [
+                    "7.",
+                    "",
+                    "7.",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu78"
+                    }
+                ],
+                [
+                    "Add the script",
+                    "",
+                    " Add the script",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu78"
+                    }
+                ],
+                [
+                    "Finally, let's add this script to the trigger entity as a component.",
+                    "",
+                    "Finally, let's add this script to the trigger entity as a component.",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu79"
+                    }
+                ],
+                [
+                    "In <g1>Game Studio<\/g1>, select the <g2>Trigger<\/g2> entity.",
+                    "",
+                    "In <g1>Game Studio<\/g1>, select the <g2>Trigger<\/g2> entity.",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu80"
+                    }
+                ],
+                [
+                    "In the <g1>Property Grid<\/g1>, click <g2>Add component<\/g2> and select the <g3>Trigger<\/g3> script.",
+                    "",
+                    "In the <g1>Property Grid<\/g1>, click <g2>Add component<\/g2> and select the <g3>Trigger<\/g3> script.",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu81"
+                    }
+                ],
+                [
+                    "<x1\/>Add script component to entity<x2\/>",
+                    "",
+                    "<x1\/>Add script component to entity<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu82"
+                    }
+                ],
+                [
+                    "8.",
+                    "",
+                    "8.",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu83"
+                    }
+                ],
+                [
+                    "Run the project",
+                    "",
+                    " Run the project",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu83"
+                    }
+                ],
+                [
+                    "Run the project (<g1>F5<\/g1>) to see the trigger in action.",
+                    "",
+                    "Run the project (<g1>F5<\/g1>) to see the trigger in action.",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu84"
+                    }
+                ],
+                [
+                    "The ball falls through the trigger, doubles in size, exits the trigger, and returns to its normal size.",
+                    "",
+                    "The ball falls through the trigger, doubles in size, exits the trigger, and returns to its normal size.",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu85"
+                    }
+                ],
+                [
+                    "More ideas",
+                    "",
+                    "More ideas",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu86"
+                    }
+                ],
+                [
+                    "You can alter the script to make other changes when the sphere enters the trigger.",
+                    "",
+                    "You can alter the script to make other changes when the sphere enters the trigger.",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu87"
+                    }
+                ],
+                [
+                    "For example, you can switch the material on the sphere entity.",
+                    "",
+                    "For example, you can switch the material on the sphere entity.",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu88"
+                    }
+                ],
+                [
+                    "This script switches the material on the Sphere entity from the <g1>Sphere Material<\/g1> to the <g2>Ground Material<\/g2> and back again:",
+                    "",
+                    " This script switches the material on the Sphere entity from the <g1>Sphere Material<\/g1> to the <g2>Ground Material<\/g2> and back again:",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu88"
+                    }
+                ],
+                [
+                    "using Stride.Engine;",
+                    "",
+                    "using Stride.Engine;\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu89"
+                    }
+                ],
+                [
+                    "using Stride.Physics;",
+                    "",
+                    "using Stride.Physics;\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu89"
+                    }
+                ],
+                [
+                    "using System.Threading.Tasks;",
+                    "",
+                    "using System.Threading.Tasks;\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu89"
+                    }
+                ],
+                [
+                    "using Stride.Core.Mathematics;",
+                    "",
+                    "using Stride.Core.Mathematics;\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu89"
+                    }
+                ],
+                [
+                    "using Stride.Rendering;",
+                    "",
+                    "using Stride.Rendering;\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu89"
+                    }
+                ],
+                [
+                    "namespace TransformTrigger",
+                    "",
+                    "\r\nnamespace TransformTrigger\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu89"
+                    }
+                ],
+                [
+                    "\/\/ You can use any namespace you like for this script.",
+                    "",
+                    "\/\/ You can use any namespace you like for this script.\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu89"
+                    }
+                ],
+                [
+                    "{",
+                    "",
+                    "{\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu89"
+                    }
+                ],
+                [
+                    "public class Trigger :",
+                    "",
+                    "    public class Trigger :",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu89"
+                    }
+                ],
+                [
+                    "AsyncScript",
+                    "",
+                    " AsyncScript\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu89"
+                    }
+                ],
+                [
+                    "{",
+                    "",
+                    "    {\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu89"
+                    }
+                ],
+                [
+                    "private Material material1;",
+                    "",
+                    "        private Material material1;\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu89"
+                    }
+                ],
+                [
+                    "private Material material2;",
+                    "",
+                    "        private Material material2;\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu89"
+                    }
+                ],
+                [
+                    "public override async Task Execute()",
+                    "",
+                    "    \r\n        public override async Task Execute()\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu89"
+                    }
+                ],
+                [
+                    "{",
+                    "",
+                    "        {\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu89"
+                    }
+                ],
+                [
+                    "var trigger = Entity.Get<PhysicsComponent>();",
+                    "",
+                    "            var trigger = Entity.Get<PhysicsComponent>();\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu89"
+                    }
+                ],
+                [
+                    "trigger.ProcessCollisions = true;",
+                    "",
+                    "            trigger.ProcessCollisions = true;\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu89"
+                    }
+                ],
+                [
+                    "\/\/ Make sure the materials are loaded",
+                    "",
+                    "            \r\n            \/\/ Make sure the materials are loaded \r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu89"
+                    }
+                ],
+                [
+                    "material1 = Content.Load<Material>(\"Sphere Material\");",
+                    "",
+                    "            material1 = Content.Load<Material>(\"Sphere Material\");\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu89"
+                    }
+                ],
+                [
+                    "material2 = Content.Load<Material>(\"Ground Material\");",
+                    "",
+                    "            material2 = Content.Load<Material>(\"Ground Material\");\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu89"
+                    }
+                ],
+                [
+                    "\/\/ Start state machine",
+                    "",
+                    "\r\n            \/\/ Start state machine\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu89"
+                    }
+                ],
+                [
+                    "while (Game.IsRunning)",
+                    "",
+                    "            while (Game.IsRunning)\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu89"
+                    }
+                ],
+                [
+                    "{",
+                    "",
+                    "            {\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu89"
+                    }
+                ],
+                [
+                    "\/\/ 1.",
+                    "",
+                    "                \/\/ 1.",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu89"
+                    }
+                ],
+                [
+                    "Wait for an entity to collide with the trigger",
+                    "",
+                    " Wait for an entity to collide with the trigger\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu89"
+                    }
+                ],
+                [
+                    "var firstCollision = await trigger.NewCollision();",
+                    "",
+                    "                var firstCollision = await trigger.NewCollision();\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu89"
+                    }
+                ],
+                [
+                    "var otherCollider = trigger == firstCollision.ColliderA",
+                    "",
+                    "\r\n                var otherCollider = trigger == firstCollision.ColliderA\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu89"
+                    }
+                ],
+                [
+                    "? firstCollision.ColliderB",
+                    "",
+                    "                    ? firstCollision.ColliderB\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu89"
+                    }
+                ],
+                [
+                    ": firstCollision.ColliderA;",
+                    "",
+                    "                    : firstCollision.ColliderA;\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu89"
+                    }
+                ],
+                [
+                    "\/\/ 2.",
+                    "",
+                    "                    \r\n                \/\/ 2.",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu89"
+                    }
+                ],
+                [
+                    "Change the material on the entity",
+                    "",
+                    " Change the material on the entity\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu89"
+                    }
+                ],
+                [
+                    "otherCollider.Entity.Get<ModelComponent>().Materials[0] = material2;",
+                    "",
+                    "                otherCollider.Entity.Get<ModelComponent>().Materials[0] = material2;\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu89"
+                    }
+                ],
+                [
+                    "\/\/ 3.",
+                    "",
+                    "                \r\n                \/\/ 3.",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu89"
+                    }
+                ],
+                [
+                    "Wait for the entity to exit the trigger",
+                    "",
+                    " Wait for the entity to exit the trigger\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu89"
+                    }
+                ],
+                [
+                    "await firstCollision.Ended();",
+                    "",
+                    "                await firstCollision.Ended();\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu89"
+                    }
+                ],
+                [
+                    "\/\/ 4.",
+                    "",
+                    "\r\n                \/\/ 4.",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu89"
+                    }
+                ],
+                [
+                    "Change the material back to the original one",
+                    "",
+                    " Change the material back to the original one\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu89"
+                    }
+                ],
+                [
+                    "otherCollider.Entity.Get<ModelComponent>().Materials[0] = material1;",
+                    "",
+                    "                otherCollider.Entity.Get<ModelComponent>().Materials[0] = material1;\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu89"
+                    }
+                ],
+                [
+                    "}",
+                    "",
+                    "            }\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu89"
+                    }
+                ],
+                [
+                    "}",
+                    "",
+                    "        }\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu89"
+                    }
+                ],
+                [
+                    "public override void Cancel()",
+                    "",
+                    "        \r\n        public override void Cancel()\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu89"
+                    }
+                ],
+                [
+                    "{",
+                    "",
+                    "        {\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu89"
+                    }
+                ],
+                [
+                    "Content.Unload(material1);",
+                    "",
+                    "            Content.Unload(material1);\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu89"
+                    }
+                ],
+                [
+                    "Content.Unload(material2);",
+                    "",
+                    "            Content.Unload(material2);\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu89"
+                    }
+                ],
+                [
+                    "}",
+                    "",
+                    "        }\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu89"
+                    }
+                ],
+                [
+                    "}",
+                    "",
+                    "    }\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu89"
+                    }
+                ],
+                [
+                    "}",
+                    "",
+                    "}\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu89"
+                    }
+                ],
+                [
+                    "See also",
+                    "",
+                    "See also",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu90"
+                    }
+                ],
+                [
+                    "Tutorial:",
+                    "",
+                    "<g1>Tutorial:",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu91"
+                    }
+                ],
+                [
+                    "Create a bouncing ball",
+                    "",
+                    " Create a bouncing ball<\/g1>",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu91"
+                    }
+                ],
+                [
+                    "Colliders",
+                    "",
+                    "<g1>Colliders<\/g1>",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu92"
+                    }
+                ],
+                [
+                    "Collider shapes",
+                    "",
+                    "<g1>Collider shapes<\/g1>",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu93"
+                    }
+                ],
+                [
+                    "Scripts",
+                    "",
+                    "<g1>Scripts<\/g1>",
+                    "\/D:\/repos\/rr\/source\/manual\/physics\/script-a-trigger.md",
+                    {
+                        "id": "tu94"
+                    }
+                ]
+            ]
+        }
+    ],
+    "seg_enabled": false
+}

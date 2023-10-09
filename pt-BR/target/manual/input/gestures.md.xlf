@@ -1,0 +1,544 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" xmlns:okp="okapi-framework:xliff-extensions" its:version="2.0" version="1.2">
+<file datatype="x-text/x-markdown" okp:inputEncoding="UTF-8" original="/D:/repos/rr/source/manual/input/gestures.md" source-language="en" target-language="pt">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en">Gestures</source>
+<target xml:lang="pt">Gestures</target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Intermediate<x id="2"/>
+<x id="3"/>Programmer<x id="4"/></source>
+<target xml:lang="pt"><x id="1"/>Intermediate<x id="2"/>
+<x id="3"/>Programmer<x id="4"/></target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">Gestures are predefined <g id="1">pointer</g> patterns. Stride can recognize gestures and trigger corresponding events. For example, in a strategy game, the player can drag and drop a unit to the battlefield with a <g id="2">drag</g> gesture. Gestures can use one or several fingers.</source>
+<target xml:lang="pt">Gestures are predefined <g id="1">pointer</g> patterns. Stride can recognize gestures and trigger corresponding events. For example, in a strategy game, the player can drag and drop a unit to the battlefield with a <g id="2">drag</g> gesture. Gestures can use one or several fingers.</target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>!Note<x id="2"/>
+All lengths, speeds and error margins of configuration files must use normalized values.</source>
+<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
+All lengths, speeds and error margins of configuration files must use normalized values.</target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">Turn on gesture recognition</source>
+<target xml:lang="pt">Turn on gesture recognition</target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en">By default, the input system doesn't recognize gestures, as this requires CPU time.</source>
+<target xml:lang="pt">By default, the input system doesn't recognize gestures, as this requires CPU time.</target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en">To turn on gesture recognition:</source>
+<target xml:lang="pt">To turn on gesture recognition:</target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en">Create an instance of the configuration class for the gesture you want to recognize. For example, for the drag gesture, create an instance of @'Stride.Input.GestureConfigDrag'.</source>
+<target xml:lang="pt">Create an instance of the configuration class for the gesture you want to recognize. For example, for the drag gesture, create an instance of @'Stride.Input.GestureConfigDrag'.</target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en">Configure the class parameters.</source>
+<target xml:lang="pt">Configure the class parameters.</target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en">Add the gesture configuration to the @'Stride.Input.InputManager.Gestures' collection.</source>
+<target xml:lang="pt">Add the gesture configuration to the @'Stride.Input.InputManager.Gestures' collection.</target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>!Warning<x id="2"/>
+After you activate recognition for a gesture, you can't modify the gesture's parameters. If you need to do this, delete the gesture from the @'Stride.Input.InputManager.Gestures' collection and create a new entry with new parameters.</source>
+<target xml:lang="pt"><x id="1"/>!Warning<x id="2"/>
+After you activate recognition for a gesture, you can't modify the gesture's parameters. If you need to do this, delete the gesture from the @'Stride.Input.InputManager.Gestures' collection and create a new entry with new parameters.</target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en">Turn off gesture recognition</source>
+<target xml:lang="pt">Turn off gesture recognition</target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en">Delete the gesture from the <g id="1">InputManager.Gestures</g> collection.</source>
+<target xml:lang="pt">Delete the gesture from the <g id="1">InputManager.Gestures</g> collection.</target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en">Gesture recognition</source>
+<target xml:lang="pt">Gesture recognition</target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en">When the input system detects a gesture, it adds a @'Stride.Input.GestureEvent' to the list of <g id="1">InputManager.GestureEvents</g>. The event contains information about the gesture and its state, such as its location and the number of fingers used.</source>
+<target xml:lang="pt">When the input system detects a gesture, it adds a @'Stride.Input.GestureEvent' to the list of <g id="1">InputManager.GestureEvents</g>. The event contains information about the gesture and its state, such as its location and the number of fingers used.</target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>!Note<x id="2"/>
+Each gesture has its own associated gesture event class (see below).</source>
+<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
+Each gesture has its own associated gesture event class (see below).</target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en">The <g id="1">GestureEvent.Type</g> field indicates which gesture has been recognized. You can then cast the base gesture event into the gesture-specific event type to have gesture-type-specific information about the event.</source>
+<target xml:lang="pt">The <g id="1">GestureEvent.Type</g> field indicates which gesture has been recognized. You can then cast the base gesture event into the gesture-specific event type to have gesture-type-specific information about the event.</target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en">Stride can detect several gestures simultaneously, so the event list can contain more than one item in an update.</source>
+<target xml:lang="pt">Stride can detect several gestures simultaneously, so the event list can contain more than one item in an update.</target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en">The list is cleared with every update, so you don't need to clear it manually.</source>
+<target xml:lang="pt">The list is cleared with every update, so you don't need to clear it manually.</target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en">Configure gestures</source>
+<target xml:lang="pt">Configure gestures</target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en">In the @'Stride.Input.GestureConfig' classes, you can configure parameters including:</source>
+<target xml:lang="pt">In the @'Stride.Input.GestureConfig' classes, you can configure parameters including:</target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en">the number of fingers the gesture uses</source>
+<target xml:lang="pt">the number of fingers the gesture uses</target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en">the number and duration of taps the gesture uses</source>
+<target xml:lang="pt">the number and duration of taps the gesture uses</target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en">the gesture direction</source>
+<target xml:lang="pt">the gesture direction</target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>!Note<x id="2"/>
+Each gesture has its own configuration class with specific configuration parameters (see below).</source>
+<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
+Each gesture has its own configuration class with specific configuration parameters (see below).</target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en">Types of gesture</source>
+<target xml:lang="pt">Types of gesture</target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en">Stride supports two main types of gesture:</source>
+<target xml:lang="pt">Stride supports two main types of gesture:</target>
+</trans-unit>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en"><g id="1">Discrete</g> gestures (tap, flick, long press) trigger a single event.</source>
+<target xml:lang="pt"><g id="1">Discrete</g> gestures (tap, flick, long press) trigger a single event.</target>
+</trans-unit>
+<trans-unit id="tu29" xml:space="preserve">
+<source xml:lang="en"><g id="1">Tap</g></source>
+<target xml:lang="pt"><g id="1">Tap</g></target>
+</trans-unit>
+<trans-unit id="tu30" xml:space="preserve">
+<source xml:lang="en"><g id="1">Flick</g></source>
+<target xml:lang="pt"><g id="1">Flick</g></target>
+</trans-unit>
+<trans-unit id="tu31" xml:space="preserve">
+<source xml:lang="en"><g id="1">Long press</g></source>
+<target xml:lang="pt"><g id="1">Long press</g></target>
+</trans-unit>
+<trans-unit id="tu32" xml:space="preserve">
+<source xml:lang="en"><g id="1">Continuous</g> gestures (drag and composite) trigger a series of events when the user changes the direction of the gesture.</source>
+<target xml:lang="pt"><g id="1">Continuous</g> gestures (drag and composite) trigger a series of events when the user changes the direction of the gesture.</target>
+</trans-unit>
+<trans-unit id="tu33" xml:space="preserve">
+<source xml:lang="en"><g id="1">Drag</g></source>
+<target xml:lang="pt"><g id="1">Drag</g></target>
+</trans-unit>
+<trans-unit id="tu34" xml:space="preserve">
+<source xml:lang="en"><g id="1">Composite</g></source>
+<target xml:lang="pt"><g id="1">Composite</g></target>
+</trans-unit>
+<trans-unit id="tu35" xml:space="preserve">
+<source xml:lang="en">Discrete gestures</source>
+<target xml:lang="pt">Discrete gestures</target>
+</trans-unit>
+<trans-unit id="tu36" xml:space="preserve">
+<source xml:lang="en"><x id="1"/> Tap <x id="2"/></source>
+<target xml:lang="pt"><x id="1"/> Tap <x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu37" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Tap gesture<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Tap gesture<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu38" xml:space="preserve">
+<source xml:lang="en">The user touches the screen and quickly removes their finger.</source>
+<target xml:lang="pt">The user touches the screen and quickly removes their finger.</target>
+</trans-unit>
+<trans-unit id="tu39" xml:space="preserve">
+<source xml:lang="en"><g id="1">Configuration class</g>: @'Stride.Input.GestureConfigTap'</source>
+<target xml:lang="pt"><g id="1">Configuration class</g>: @'Stride.Input.GestureConfigTap'</target>
+</trans-unit>
+<trans-unit id="tu40" xml:space="preserve">
+<source xml:lang="en"><g id="1">Event class</g>: @'Stride.Input.GestureEventTap'</source>
+<target xml:lang="pt"><g id="1">Event class</g>: @'Stride.Input.GestureEventTap'</target>
+</trans-unit>
+<trans-unit id="tu41" xml:space="preserve">
+<source xml:lang="en">The number of fingers on the screen can't vary during the gesture. To set the number of fingers required for a tap, modify @'Stride.Input.GestureConfig.RequiredNumberOfFingers'.</source>
+<target xml:lang="pt">The number of fingers on the screen can't vary during the gesture. To set the number of fingers required for a tap, modify @'Stride.Input.GestureConfig.RequiredNumberOfFingers'.</target>
+</trans-unit>
+<trans-unit id="tu42" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>!TIP<x id="2"/>
+To distinguish single taps from multi-taps, the system uses latency in tap events. To disable this, set the <g id="3">GestureConfigTap.MaximumTimeBetweenTaps</g> field to <g id="4">0</g>.</source>
+<target xml:lang="pt"><x id="1"/>!TIP<x id="2"/>
+To distinguish single taps from multi-taps, the system uses latency in tap events. To disable this, set the <g id="3">GestureConfigTap.MaximumTimeBetweenTaps</g> field to <g id="4">0</g>.</target>
+</trans-unit>
+<trans-unit id="tu43" xml:space="preserve">
+<source xml:lang="en"><x id="1"/> Flick<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/> Flick<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu44" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Flick gesture<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Flick gesture<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu45" xml:space="preserve">
+<source xml:lang="en">The user touches the screen, performs a quick straight translation, and withdraws their finger(s).</source>
+<target xml:lang="pt">The user touches the screen, performs a quick straight translation, and withdraws their finger(s).</target>
+</trans-unit>
+<trans-unit id="tu46" xml:space="preserve">
+<source xml:lang="en"><g id="1">Configuration class</g>: @'Stride.Input.GestureConfigFlick'</source>
+<target xml:lang="pt"><g id="1">Configuration class</g>: @'Stride.Input.GestureConfigFlick'</target>
+</trans-unit>
+<trans-unit id="tu47" xml:space="preserve">
+<source xml:lang="en"><g id="1">Event class</g>: @'Stride.Input.GestureEventFlick'</source>
+<target xml:lang="pt"><g id="1">Event class</g>: @'Stride.Input.GestureEventFlick'</target>
+</trans-unit>
+<trans-unit id="tu48" xml:space="preserve">
+<source xml:lang="en">The number of fingers on the screen can't during the gesture.</source>
+<target xml:lang="pt">The number of fingers on the screen can't during the gesture.</target>
+</trans-unit>
+<trans-unit id="tu49" xml:space="preserve">
+<source xml:lang="en">To set a minimum length for the flick gesture, use <g id="1">GestureConfigFlick.MinimumFlickLength</g>.</source>
+<target xml:lang="pt">To set a minimum length for the flick gesture, use <g id="1">GestureConfigFlick.MinimumFlickLength</g>.</target>
+</trans-unit>
+<trans-unit id="tu50" xml:space="preserve">
+<source xml:lang="en">To restrict the direction of the flick to <g id="1">vertical</g> or <g id="2">horizontal</g>, use
+<g id="3">GestureConfigFlick.FlickShape</g>.</source>
+<target xml:lang="pt">To restrict the direction of the flick to <g id="1">vertical</g> or <g id="2">horizontal</g>, use
+<g id="3">GestureConfigFlick.FlickShape</g>.</target>
+</trans-unit>
+<trans-unit id="tu51" xml:space="preserve">
+<source xml:lang="en"><x id="1"/> Long press<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/> Long press<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu52" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Long press gesture<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Long press gesture<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu53" xml:space="preserve">
+<source xml:lang="en">The user touches the screen and maintains pressure without removing their finger for a certain period of time (the default time is one second).</source>
+<target xml:lang="pt">The user touches the screen and maintains pressure without removing their finger for a certain period of time (the default time is one second).</target>
+</trans-unit>
+<trans-unit id="tu54" xml:space="preserve">
+<source xml:lang="en"><g id="1">Configuration class</g>: <g id="2">GestureConfigLongPress</g></source>
+<target xml:lang="pt"><g id="1">Configuration class</g>: <g id="2">GestureConfigLongPress</g></target>
+</trans-unit>
+<trans-unit id="tu55" xml:space="preserve">
+<source xml:lang="en"><g id="1">Event class</g>: <g id="2">GestureEventLongPress</g></source>
+<target xml:lang="pt"><g id="1">Event class</g>: <g id="2">GestureEventLongPress</g></target>
+</trans-unit>
+<trans-unit id="tu56" xml:space="preserve">
+<source xml:lang="en">The number of fingers on the screen can't vary during the gesture.</source>
+<target xml:lang="pt">The number of fingers on the screen can't vary during the gesture.</target>
+</trans-unit>
+<trans-unit id="tu57" xml:space="preserve">
+<source xml:lang="en">To change the minimum press length for the long press gesture, modify  <g id="1">GestureConfigLongPress.RequiredPressTime</g>.</source>
+<target xml:lang="pt">To change the minimum press length for the long press gesture, modify  <g id="1">GestureConfigLongPress.RequiredPressTime</g>.</target>
+</trans-unit>
+<trans-unit id="tu58" xml:space="preserve">
+<source xml:lang="en">Continuous gestures</source>
+<target xml:lang="pt">Continuous gestures</target>
+</trans-unit>
+<trans-unit id="tu59" xml:space="preserve">
+<source xml:lang="en"><x id="1"/> Drag<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/> Drag<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu60" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Drag gesture<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Drag gesture<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu61" xml:space="preserve">
+<source xml:lang="en">The user touches the screen, performs a translation, and withdraws their finger(s).</source>
+<target xml:lang="pt">The user touches the screen, performs a translation, and withdraws their finger(s).</target>
+</trans-unit>
+<trans-unit id="tu62" xml:space="preserve">
+<source xml:lang="en"><g id="1">Configuration class</g>: <g id="2">GestureConfigDrag</g></source>
+<target xml:lang="pt"><g id="1">Configuration class</g>: <g id="2">GestureConfigDrag</g></target>
+</trans-unit>
+<trans-unit id="tu63" xml:space="preserve">
+<source xml:lang="en"><g id="1">Event class</g>: <g id="2">GestureEventDrag</g></source>
+<target xml:lang="pt"><g id="1">Event class</g>: <g id="2">GestureEventDrag</g></target>
+</trans-unit>
+<trans-unit id="tu64" xml:space="preserve">
+<source xml:lang="en">The number of fingers on the screen can't vary during the gesture.</source>
+<target xml:lang="pt">The number of fingers on the screen can't vary during the gesture.</target>
+</trans-unit>
+<trans-unit id="tu65" xml:space="preserve">
+<source xml:lang="en">To detect smaller drags, decrease <g id="1">GestureConfigDrag.MinimumDragDistance</g>.</source>
+<target xml:lang="pt">To detect smaller drags, decrease <g id="1">GestureConfigDrag.MinimumDragDistance</g>.</target>
+</trans-unit>
+<trans-unit id="tu66" xml:space="preserve">
+<source xml:lang="en">To restrict the direction of the drag to <g id="1">vertical</g> or <g id="2">horizontal</g>, use <g id="3">GestureConfigDrag.DragShape</g>.</source>
+<target xml:lang="pt">To restrict the direction of the drag to <g id="1">vertical</g> or <g id="2">horizontal</g>, use <g id="3">GestureConfigDrag.DragShape</g>.</target>
+</trans-unit>
+<trans-unit id="tu67" xml:space="preserve">
+<source xml:lang="en"><x id="1"/> Composite<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/> Composite<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu68" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Translation gesture<x id="2"/> <x id="3"/>Scale gesture<x id="4"/> <x id="5"/>Rotation gesture<x id="6"/></source>
+<target xml:lang="pt"><x id="1"/>Translation gesture<x id="2"/> <x id="3"/>Scale gesture<x id="4"/> <x id="5"/>Rotation gesture<x id="6"/></target>
+</trans-unit>
+<trans-unit id="tu69" xml:space="preserve">
+<source xml:lang="en">The user touches the screen with two fingers and moves them independently.</source>
+<target xml:lang="pt">The user touches the screen with two fingers and moves them independently.</target>
+</trans-unit>
+<trans-unit id="tu70" xml:space="preserve">
+<source xml:lang="en"><g id="1">Configuration class</g>: @'Stride.Input.GestureConfigComposite'</source>
+<target xml:lang="pt"><g id="1">Configuration class</g>: @'Stride.Input.GestureConfigComposite'</target>
+</trans-unit>
+<trans-unit id="tu71" xml:space="preserve">
+<source xml:lang="en"><g id="1">Event class</g>: @'Stride.Input.GestureEventComposite'</source>
+<target xml:lang="pt"><g id="1">Event class</g>: @'Stride.Input.GestureEventComposite'</target>
+</trans-unit>
+<trans-unit id="tu72" xml:space="preserve">
+<source xml:lang="en">The composite gesture requires exactly two fingers on the screen. It's triggered when the system detects one of the three basic actions:</source>
+<target xml:lang="pt">The composite gesture requires exactly two fingers on the screen. It's triggered when the system detects one of the three basic actions:</target>
+</trans-unit>
+<trans-unit id="tu73" xml:space="preserve">
+<source xml:lang="en"><g id="1">Translation</g>: the user translates two fingers together in the same direction.</source>
+<target xml:lang="pt"><g id="1">Translation</g>: the user translates two fingers together in the same direction.</target>
+</trans-unit>
+<trans-unit id="tu74" xml:space="preserve">
+<source xml:lang="en"><g id="1">Scale</g>: the user moves two fingers closer together or further apart.</source>
+<target xml:lang="pt"><g id="1">Scale</g>: the user moves two fingers closer together or further apart.</target>
+</trans-unit>
+<trans-unit id="tu75" xml:space="preserve">
+<source xml:lang="en"><g id="1">Rotation</g>: the user rotates two fingers around a center point.</source>
+<target xml:lang="pt"><g id="1">Rotation</g>: the user rotates two fingers around a center point.</target>
+</trans-unit>
+<trans-unit id="tu76" xml:space="preserve">
+<source xml:lang="en">Gesture states</source>
+<target xml:lang="pt">Gesture states</target>
+</trans-unit>
+<trans-unit id="tu77" xml:space="preserve">
+<source xml:lang="en">A gesture always has one of four states:</source>
+<target xml:lang="pt">A gesture always has one of four states:</target>
+</trans-unit>
+<trans-unit id="tu78" xml:space="preserve">
+<source xml:lang="en">Began</source>
+<target xml:lang="pt">Began</target>
+</trans-unit>
+<trans-unit id="tu79" xml:space="preserve">
+<source xml:lang="en">Changed</source>
+<target xml:lang="pt">Changed</target>
+</trans-unit>
+<trans-unit id="tu80" xml:space="preserve">
+<source xml:lang="en">Ended</source>
+<target xml:lang="pt">Ended</target>
+</trans-unit>
+<trans-unit id="tu81" xml:space="preserve">
+<source xml:lang="en">Occurred</source>
+<target xml:lang="pt">Occurred</target>
+</trans-unit>
+<trans-unit id="tu82" xml:space="preserve">
+<source xml:lang="en"><g id="1">Discrete</g> gestures (tap, flick, long press) always have the state <g id="2">occurred</g>. <g id="3">Continuous</g> gestures (drag and composite) always begin with the state <g id="4">began</g>, followed by any  <g id="5">changed</g> states, and end with the <g id="6">ended</g> state.</source>
+<target xml:lang="pt"><g id="1">Discrete</g> gestures (tap, flick, long press) always have the state <g id="2">occurred</g>. <g id="3">Continuous</g> gestures (drag and composite) always begin with the state <g id="4">began</g>, followed by any  <g id="5">changed</g> states, and end with the <g id="6">ended</g> state.</target>
+</trans-unit>
+<trans-unit id="tu83" xml:space="preserve">
+<source xml:lang="en">To query the current state of a gesture, use the <g id="1">GestureEvent.State</g> field of the triggered gesture event.</source>
+<target xml:lang="pt">To query the current state of a gesture, use the <g id="1">GestureEvent.State</g> field of the triggered gesture event.</target>
+</trans-unit>
+<trans-unit id="tu84" xml:space="preserve">
+<source xml:lang="en">Example code</source>
+<target xml:lang="pt">Example code</target>
+</trans-unit>
+<trans-unit id="tu85" xml:space="preserve">
+<source xml:lang="en">Activate or deactivate gesture recognition</source>
+<target xml:lang="pt">Activate or deactivate gesture recognition</target>
+</trans-unit>
+<trans-unit id="tu86" xml:space="preserve">
+<source xml:lang="en">To create the configuration of a gesture you want to recognize:</source>
+<target xml:lang="pt">To create the configuration of a gesture you want to recognize:</target>
+</trans-unit>
+<trans-unit id="tu87" xml:space="preserve">
+<source xml:lang="en">// Create the configuration of a gesture you want to recognize.
+var singleTapConfig = new GestureConfigTap();
+
+// Start tap gesture recognition.
+Input.Gestures.Add(singleTapConfig);
+
+// Create the configuration of the gesture you want to recognize.
+var doubleTapConfig = new GestureConfigTap(2, 1);
+
+// Start double tap gesture recognition.
+Input.Gestures.Add(doubleTapConfig);
+
+// Stop tap gesture recognition.
+Input.Gestures.Remove(singleTapConfig);
+
+// Stop all gesture recognitions.
+Input.Gestures.Clear();
+</source>
+<target xml:lang="pt">// Create the configuration of a gesture you want to recognize.
+var singleTapConfig = new GestureConfigTap();
+
+// Start tap gesture recognition.
+Input.Gestures.Add(singleTapConfig);
+
+// Create the configuration of the gesture you want to recognize.
+var doubleTapConfig = new GestureConfigTap(2, 1);
+
+// Start double tap gesture recognition.
+Input.Gestures.Add(doubleTapConfig);
+
+// Stop tap gesture recognition.
+Input.Gestures.Remove(singleTapConfig);
+
+// Stop all gesture recognitions.
+Input.Gestures.Clear();
+</target>
+</trans-unit>
+<trans-unit id="tu88" xml:space="preserve">
+<source xml:lang="en">Configure the gesture</source>
+<target xml:lang="pt">Configure the gesture</target>
+</trans-unit>
+<trans-unit id="tu89" xml:space="preserve">
+<source xml:lang="en">Each configuration class has a parameterless constructor that corresponds to the default gesture configuration. You can use special constructors for frequently-modified parameters.</source>
+<target xml:lang="pt">Each configuration class has a parameterless constructor that corresponds to the default gesture configuration. You can use special constructors for frequently-modified parameters.</target>
+</trans-unit>
+<trans-unit id="tu90" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>!warning<x id="2"/>
+We don't recommend you modify other fields as this might break the input system. But if you need to, you can modify them using the corresponding properties.</source>
+<target xml:lang="pt"><x id="1"/>!warning<x id="2"/>
+We don't recommend you modify other fields as this might break the input system. But if you need to, you can modify them using the corresponding properties.</target>
+</trans-unit>
+<trans-unit id="tu91" xml:space="preserve">
+<source xml:lang="en">// Default gesture config.
+var singleTapConfig = new GestureConfigTap();
+
+// Personalize gesture config using the dedicated constructor.
+var doubleTapConfig = new GestureConfigTap(2, 2);
+
+// Personalize gesture config by directly accessing the desired property.
+// Make sure you know what you're doing! Modifying this might break the input system.
+var noLatencyTap = new GestureConfigTap() { MaximumTimeBetweenTaps= TimeSpan.Zero };
+</source>
+<target xml:lang="pt">// Default gesture config.
+var singleTapConfig = new GestureConfigTap();
+
+// Personalize gesture config using the dedicated constructor.
+var doubleTapConfig = new GestureConfigTap(2, 2);
+
+// Personalize gesture config by directly accessing the desired property.
+// Make sure you know what you're doing! Modifying this might break the input system.
+var noLatencyTap = new GestureConfigTap() { MaximumTimeBetweenTaps= TimeSpan.Zero };
+</target>
+</trans-unit>
+<trans-unit id="tu92" xml:space="preserve">
+<source xml:lang="en">Access gesture events</source>
+<target xml:lang="pt">Access gesture events</target>
+</trans-unit>
+<trans-unit id="tu93" xml:space="preserve">
+<source xml:lang="en">You can access the list of events triggered by recognized gestures using the <g id="1">InputManager.GestureEvents</g> collection. The collection is automatically cleared at every update.</source>
+<target xml:lang="pt">You can access the list of events triggered by recognized gestures using the <g id="1">InputManager.GestureEvents</g> collection. The collection is automatically cleared at every update.</target>
+</trans-unit>
+<trans-unit id="tu94" xml:space="preserve">
+<source xml:lang="en">var currentFrameGestureEvents = Input.GestureEvents;
+</source>
+<target xml:lang="pt">var currentFrameGestureEvents = Input.GestureEvents;
+</target>
+</trans-unit>
+<trans-unit id="tu95" xml:space="preserve">
+<source xml:lang="en">Identify the gesture type</source>
+<target xml:lang="pt">Identify the gesture type</target>
+</trans-unit>
+<trans-unit id="tu96" xml:space="preserve">
+<source xml:lang="en">Use the <g id="1">GestureEvent.Type</g> field to identity the gesture type, then cast it to the appropriate event type to get extra information about the event.</source>
+<target xml:lang="pt">Use the <g id="1">GestureEvent.Type</g> field to identity the gesture type, then cast it to the appropriate event type to get extra information about the event.</target>
+</trans-unit>
+<trans-unit id="tu97" xml:space="preserve">
+<source xml:lang="en">foreach( var gestureEvent in Input.GestureEvents)
+{
+   	// Determine if the event is from a tap gesture
+	if (gestureEvent.Type != GestureType.Tap)
+		continue;
+   
+	// Cast a specific tap event class.
+	GestureEventTap  tapEvent = (GestureEventTap) gestureEvent;
+	
+    // Access tap-event-specific field.
+    log.Info("Tap position: {0}.", tapEvent.TapPosition);
+}
+</source>
+<target xml:lang="pt">foreach( var gestureEvent in Input.GestureEvents)
+{
+   	// Determine if the event is from a tap gesture
+	if (gestureEvent.Type != GestureType.Tap)
+		continue;
+   
+	// Cast a specific tap event class.
+	GestureEventTap  tapEvent = (GestureEventTap) gestureEvent;
+	
+    // Access tap-event-specific field.
+    log.Info("Tap position: {0}.", tapEvent.TapPosition);
+}
+</target>
+</trans-unit>
+<trans-unit id="tu98" xml:space="preserve">
+<source xml:lang="en">Identify the gesture state</source>
+<target xml:lang="pt">Identify the gesture state</target>
+</trans-unit>
+<trans-unit id="tu99" xml:space="preserve">
+<source xml:lang="en">Use the <g id="1">GestureEvent.State</g> field to get gesture event state.</source>
+<target xml:lang="pt">Use the <g id="1">GestureEvent.State</g> field to get gesture event state.</target>
+</trans-unit>
+<trans-unit id="tu100" xml:space="preserve">
+<source xml:lang="en">switch(compositeGestureEvent.State)
+{
+case GestureState.Began:
+	image.ComputePreview();
+	break;
+case GestureState.Changed:
+	image.TransformPreview(compositeGestureEvent.TotalScale, compositionGestureEvent.TotalRotation);
+	break;
+case GestureState.Ended:
+	image.TransformRealImage(compositeGestureEvent.TotalScale, compositionGestureEvent.TotalRotation);
+	break;
+default:
+	break;
+}
+</source>
+<target xml:lang="pt">switch(compositeGestureEvent.State)
+{
+case GestureState.Began:
+	image.ComputePreview();
+	break;
+case GestureState.Changed:
+	image.TransformPreview(compositeGestureEvent.TotalScale, compositionGestureEvent.TotalRotation);
+	break;
+case GestureState.Ended:
+	image.TransformRealImage(compositeGestureEvent.TotalScale, compositionGestureEvent.TotalRotation);
+	break;
+default:
+	break;
+}
+</target>
+</trans-unit>
+<trans-unit id="tu101" xml:space="preserve">
+<source xml:lang="en">See also</source>
+<target xml:lang="pt">See also</target>
+</trans-unit>
+<trans-unit id="tu102" xml:space="preserve">
+<source xml:lang="en"><g id="1">Pointers</g></source>
+<target xml:lang="pt"><g id="1">Pointers</g></target>
+</trans-unit>
+<trans-unit id="tu103" xml:space="preserve">
+<source xml:lang="en"><g id="1">Virtual buttons</g></source>
+<target xml:lang="pt"><g id="1">Virtual buttons</g></target>
+</trans-unit>
+<trans-unit id="tu104" xml:space="preserve">
+<source xml:lang="en"><g id="1">Input overview</g></source>
+<target xml:lang="pt"><g id="1">Input overview</g></target>
+</trans-unit>
+</body>
+</file>
+</xliff>

@@ -1,0 +1,1942 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" xmlns:okp="okapi-framework:xliff-extensions" its:version="2.0" version="1.2">
+<file datatype="x-text/x-markdown" okp:inputEncoding="UTF-8" original="/D:/repos/rr/source/ReleaseNotes/ReleaseNotes-3.0.md" source-language="en" target-language="pt">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en">Xenko 3.0 release notes</source>
+<target xml:lang="pt">Xenko 3.0 release notes</target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en">August 2, 2018</source>
+<target xml:lang="pt">August 2, 2018</target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">Highlights</source>
+<target xml:lang="pt">Highlights</target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">Xenko is now a MIT community-based opensource project!</source>
+<target xml:lang="pt">Xenko is now a MIT community-based opensource project!</target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">You read that right. <g id="1">Xenko 3.0</g> is out now, released under the permissive <g id="2">MIT License</g>.</source>
+<target xml:lang="pt">You read that right. <g id="1">Xenko 3.0</g> is out now, released under the permissive <g id="2">MIT License</g>.</target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en">From now on, you can use and modify Xenko completely <g id="1">free</g> — whether you're a professional, a student, or just looking for a new hobby. This includes the runtime and editor.</source>
+<target xml:lang="pt">From now on, you can use and modify Xenko completely <g id="1">free</g> — whether you're a professional, a student, or just looking for a new hobby. This includes the runtime and editor.</target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Xenko GitHub<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Xenko GitHub<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en">Silicon Studio no longer supports Xenko, but members of the Xenko team will continue to work on it as part of the community.</source>
+<target xml:lang="pt">Silicon Studio no longer supports Xenko, but members of the Xenko team will continue to work on it as part of the community.</target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en">We encourage people to help us and contribute to the project. If interested, join us on <g id="1">GitHub</g>.</source>
+<target xml:lang="pt">We encourage people to help us and contribute to the project. If interested, join us on <g id="1">GitHub</g>.</target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en">We are really excited to see what people will come up with!</source>
+<target xml:lang="pt">We are really excited to see what people will come up with!</target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en">Thanks for supporting Xenko!</source>
+<target xml:lang="pt">Thanks for supporting Xenko!</target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en">New project system</source>
+<target xml:lang="pt">New project system</target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en">Both Xenko itself and users project are now built on top of the new project system.</source>
+<target xml:lang="pt">Both Xenko itself and users project are now built on top of the new project system.</target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en">It means your game csproj are now simpler as ever, with only a <g id="1">PackageReference</g> to Xenko.</source>
+<target xml:lang="pt">It means your game csproj are now simpler as ever, with only a <g id="1">PackageReference</g> to Xenko.</target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en">This makes package restore, upgrade and selection much more convenient. Opening a project with a non-installed version of Xenko should work out of the box too, as long as Xenko launcher is installed.</source>
+<target xml:lang="pt">This makes package restore, upgrade and selection much more convenient. Opening a project with a non-installed version of Xenko should work out of the box too, as long as Xenko launcher is installed.</target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en">Longer down the road, the plan is to split Xenko further into separate packages such as <g id="1">Xenko.Graphics</g>, <g id="2">Xenko.Physics</g> and <g id="3">Xenko.Editor</g> (and possibly host them directly on nuget.org).</source>
+<target xml:lang="pt">Longer down the road, the plan is to split Xenko further into separate packages such as <g id="1">Xenko.Graphics</g>, <g id="2">Xenko.Physics</g> and <g id="3">Xenko.Editor</g> (and possibly host them directly on nuget.org).</target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en">Video</source>
+<target xml:lang="pt">Video</target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en">It is now possible to add video to your games.</source>
+<target xml:lang="pt">It is now possible to add video to your games.</target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en">Note that this feature is not completely tested and supported on all platforms, but we decided to include it anyway and tune it later to not delay the MIT release further.</source>
+<target xml:lang="pt">Note that this feature is not completely tested and supported on all platforms, but we decided to include it anyway and tune it later to not delay the MIT release further.</target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en">Skin and Hair rendering</source>
+<target xml:lang="pt">Skin and Hair rendering</target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en">Skin and hair rendering are now possible with Xenko.</source>
+<target xml:lang="pt">Skin and hair rendering are now possible with Xenko.</target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en">Skin rendering is based on subsurface scattering, and hair rendering is based on Kajiya-Kay and Scheuermann models.</source>
+<target xml:lang="pt">Skin rendering is based on subsurface scattering, and hair rendering is based on Kajiya-Kay and Scheuermann models.</target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en">Same as video, this feature might still need some improvements and tuning, but we decided to not delay the MIT release further.</source>
+<target xml:lang="pt">Same as video, this feature might still need some improvements and tuning, but we decided to not delay the MIT release further.</target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en">Breaking changes</source>
+<target xml:lang="pt">Breaking changes</target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en">Xenko namespace changes</source>
+<target xml:lang="pt">Xenko namespace changes</target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en">Lot of namespace changes to decouple the namespace from <g id="1">SiliconStudio</g>:</source>
+<target xml:lang="pt">Lot of namespace changes to decouple the namespace from <g id="1">SiliconStudio</g>:</target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en"><g id="1">SiliconStudio.Xenko</g> renamed <g id="2">Xenko</g></source>
+<target xml:lang="pt"><g id="1">SiliconStudio.Xenko</g> renamed <g id="2">Xenko</g></target>
+</trans-unit>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en"><g id="1">SiliconStudio.Core</g> and <g id="2">SiliconStudio.*</g> renamed <g id="3">Xenko.Core</g></source>
+<target xml:lang="pt"><g id="1">SiliconStudio.Core</g> and <g id="2">SiliconStudio.*</g> renamed <g id="3">Xenko.Core</g></target>
+</trans-unit>
+<trans-unit id="tu29" xml:space="preserve">
+<source xml:lang="en">Projects should automatically be updated, but we recommend you making a backup of your project before, and double check everything is good after the upgrade.</source>
+<target xml:lang="pt">Projects should automatically be updated, but we recommend you making a backup of your project before, and double check everything is good after the upgrade.</target>
+</trans-unit>
+<trans-unit id="tu30" xml:space="preserve">
+<source xml:lang="en">New project system</source>
+<target xml:lang="pt">New project system</target>
+</trans-unit>
+<trans-unit id="tu31" xml:space="preserve">
+<source xml:lang="en">Game project will be recreated with the new project system.</source>
+<target xml:lang="pt">Game project will be recreated with the new project system.</target>
+</trans-unit>
+<trans-unit id="tu32" xml:space="preserve">
+<source xml:lang="en">This should happen automatically but you might need a few tweaks afterwise (i.e. readjust Build Action on certain csproj items).</source>
+<target xml:lang="pt">This should happen automatically but you might need a few tweaks afterwise (i.e. readjust Build Action on certain csproj items).</target>
+</trans-unit>
+<trans-unit id="tu33" xml:space="preserve">
+<source xml:lang="en">Changelog</source>
+<target xml:lang="pt">Changelog</target>
+</trans-unit>
+<trans-unit id="tu34" xml:space="preserve">
+<source xml:lang="en">Android</source>
+<target xml:lang="pt">Android</target>
+</trans-unit>
+<trans-unit id="tu35" xml:space="preserve">
+<source xml:lang="en">Fix calls to OnPause and OnResume when the application is put on background/foreground.</source>
+<target xml:lang="pt">Fix calls to OnPause and OnResume when the application is put on background/foreground.</target>
+</trans-unit>
+<trans-unit id="tu36" xml:space="preserve">
+<source xml:lang="en">Fix regex used to check version of android ndk.</source>
+<target xml:lang="pt">Fix regex used to check version of android ndk.</target>
+</trans-unit>
+<trans-unit id="tu37" xml:space="preserve">
+<source xml:lang="en">Android.Tests</source>
+<target xml:lang="pt">Android.Tests</target>
+</trans-unit>
+<trans-unit id="tu38" xml:space="preserve">
+<source xml:lang="en">Fix crash when launching test activity from test launcher.</source>
+<target xml:lang="pt">Fix crash when launching test activity from test launcher.</target>
+</trans-unit>
+<trans-unit id="tu39" xml:space="preserve">
+<source xml:lang="en">Animation</source>
+<target xml:lang="pt">Animation</target>
+</trans-unit>
+<trans-unit id="tu40" xml:space="preserve">
+<source xml:lang="en">Add the possibility to import animation curves of custom attributes present in FBXs.</source>
+<target xml:lang="pt">Add the possibility to import animation curves of custom attributes present in FBXs.</target>
+</trans-unit>
+<trans-unit id="tu41" xml:space="preserve">
+<source xml:lang="en">AssemblyProcessor</source>
+<target xml:lang="pt">AssemblyProcessor</target>
+</trans-unit>
+<trans-unit id="tu42" xml:space="preserve">
+<source xml:lang="en">Generate serialization code directly with Cecil</source>
+<target xml:lang="pt">Generate serialization code directly with Cecil</target>
+</trans-unit>
+<trans-unit id="tu43" xml:space="preserve">
+<source xml:lang="en">Look into interfaces contained in base classes when generating ListUpdateRevolver registration code.</source>
+<target xml:lang="pt">Look into interfaces contained in base classes when generating ListUpdateRevolver registration code.</target>
+</trans-unit>
+<trans-unit id="tu44" xml:space="preserve">
+<source xml:lang="en">Removed iOS workarounds (calli generics and unbox)</source>
+<target xml:lang="pt">Removed iOS workarounds (calli generics and unbox)</target>
+</trans-unit>
+<trans-unit id="tu45" xml:space="preserve">
+<source xml:lang="en">Support PinnedType</source>
+<target xml:lang="pt">Support PinnedType</target>
+</trans-unit>
+<trans-unit id="tu46" xml:space="preserve">
+<source xml:lang="en">Use ILRepack from NuGet</source>
+<target xml:lang="pt">Use ILRepack from NuGet</target>
+</trans-unit>
+<trans-unit id="tu47" xml:space="preserve">
+<source xml:lang="en">AssetCompiler</source>
+<target xml:lang="pt">AssetCompiler</target>
+</trans-unit>
+<trans-unit id="tu48" xml:space="preserve">
+<source xml:lang="en">Install target redirect on first build, and improve path detection</source>
+<target xml:lang="pt">Install target redirect on first build, and improve path detection</target>
+</trans-unit>
+<trans-unit id="tu49" xml:space="preserve">
+<source xml:lang="en">Show URL of asset in case of exceptions in Command</source>
+<target xml:lang="pt">Show URL of asset in case of exceptions in Command</target>
+</trans-unit>
+<trans-unit id="tu50" xml:space="preserve">
+<source xml:lang="en">Assets</source>
+<target xml:lang="pt">Assets</target>
+</trans-unit>
+<trans-unit id="tu51" xml:space="preserve">
+<source xml:lang="en">Add the possibility to not to merge meshes of a model without skeleton to benefit of culling.</source>
+<target xml:lang="pt">Add the possibility to not to merge meshes of a model without skeleton to benefit of culling.</target>
+</trans-unit>
+<trans-unit id="tu52" xml:space="preserve">
+<source xml:lang="en">Add the possibility to use a model without animation as reference of a diff animation clip.</source>
+<target xml:lang="pt">Add the possibility to use a model without animation as reference of a diff animation clip.</target>
+</trans-unit>
+<trans-unit id="tu53" xml:space="preserve">
+<source xml:lang="en">Automatically track source code changes (DefaultItems)</source>
+<target xml:lang="pt">Automatically track source code changes (DefaultItems)</target>
+</trans-unit>
+<trans-unit id="tu54" xml:space="preserve">
+<source xml:lang="en">Factorize SoundAssetCompiler for future use (video)</source>
+<target xml:lang="pt">Factorize SoundAssetCompiler for future use (video)</target>
+</trans-unit>
+<trans-unit id="tu55" xml:space="preserve">
+<source xml:lang="en">Fixed Assets.Tests nuget packages/app.config</source>
+<target xml:lang="pt">Fixed Assets.Tests nuget packages/app.config</target>
+</trans-unit>
+<trans-unit id="tu56" xml:space="preserve">
+<source xml:lang="en">Introduce \`IAssetWithSource\` interface to unify \`AssetWithSource\` with other kind of assets having a source (e.g. \`ModelAsset\`).</source>
+<target xml:lang="pt">Introduce \`IAssetWithSource\` interface to unify \`AssetWithSource\` with other kind of assets having a source (e.g. \`ModelAsset\`).</target>
+</trans-unit>
+<trans-unit id="tu57" xml:space="preserve">
+<source xml:lang="en">Move Sound asset classes into \`Media\` namespace</source>
+<target xml:lang="pt">Move Sound asset classes into \`Media\` namespace</target>
+</trans-unit>
+<trans-unit id="tu58" xml:space="preserve">
+<source xml:lang="en">Package upgrader for BackgroundComponent.Is2D</source>
+<target xml:lang="pt">Package upgrader for BackgroundComponent.Is2D</target>
+</trans-unit>
+<trans-unit id="tu59" xml:space="preserve">
+<source xml:lang="en">Sound: Use ShellHelper to call ffmpeg</source>
+<target xml:lang="pt">Sound: Use ShellHelper to call ffmpeg</target>
+</trans-unit>
+<trans-unit id="tu60" xml:space="preserve">
+<source xml:lang="en">Assets.Compiler</source>
+<target xml:lang="pt">Assets.Compiler</target>
+</trans-unit>
+<trans-unit id="tu61" xml:space="preserve">
+<source xml:lang="en">Reorganized remote builder in Assets.CompilerApp rather than BuildEngine.Common</source>
+<target xml:lang="pt">Reorganized remote builder in Assets.CompilerApp rather than BuildEngine.Common</target>
+</trans-unit>
+<trans-unit id="tu62" xml:space="preserve">
+<source xml:lang="en">Assets.Editor</source>
+<target xml:lang="pt">Assets.Editor</target>
+</trans-unit>
+<trans-unit id="tu63" xml:space="preserve">
+<source xml:lang="en">Remove deleted resx from csproj</source>
+<target xml:lang="pt">Remove deleted resx from csproj</target>
+</trans-unit>
+<trans-unit id="tu64" xml:space="preserve">
+<source xml:lang="en">Assets.Model</source>
+<target xml:lang="pt">Assets.Model</target>
+</trans-unit>
+<trans-unit id="tu65" xml:space="preserve">
+<source xml:lang="en">Added mechanism to customize models during asset compilation.</source>
+<target xml:lang="pt">Added mechanism to customize models during asset compilation.</target>
+</trans-unit>
+<trans-unit id="tu66" xml:space="preserve">
+<source xml:lang="en">Audio</source>
+<target xml:lang="pt">Audio</target>
+</trans-unit>
+<trans-unit id="tu67" xml:space="preserve">
+<source xml:lang="en">Various improvements (courtesy of Pierre and Jonathan)</source>
+<target xml:lang="pt">Various improvements (courtesy of Pierre and Jonathan)</target>
+</trans-unit>
+<trans-unit id="tu68" xml:space="preserve">
+<source xml:lang="en">Audio.Tests</source>
+<target xml:lang="pt">Audio.Tests</target>
+</trans-unit>
+<trans-unit id="tu69" xml:space="preserve">
+<source xml:lang="en">Temporarily remove 4 channels sounds (fails with ffmpeg)</source>
+<target xml:lang="pt">Temporarily remove 4 channels sounds (fails with ffmpeg)</target>
+</trans-unit>
+<trans-unit id="tu70" xml:space="preserve">
+<source xml:lang="en">Test not compiling since SoundPlayState =&gt; PlayState renaming</source>
+<target xml:lang="pt">Test not compiling since SoundPlayState =&gt; PlayState renaming</target>
+</trans-unit>
+<trans-unit id="tu71" xml:space="preserve">
+<source xml:lang="en">Audio/Video</source>
+<target xml:lang="pt">Audio/Video</target>
+</trans-unit>
+<trans-unit id="tu72" xml:space="preserve">
+<source xml:lang="en">Detect FFMpeg errors</source>
+<target xml:lang="pt">Detect FFMpeg errors</target>
+</trans-unit>
+<trans-unit id="tu73" xml:space="preserve">
+<source xml:lang="en">Build</source>
+<target xml:lang="pt">Build</target>
+</trans-unit>
+<trans-unit id="tu74" xml:space="preserve">
+<source xml:lang="en">Add explicit TargetFramework to project files</source>
+<target xml:lang="pt">Add explicit TargetFramework to project files</target>
+</trans-unit>
+<trans-unit id="tu75" xml:space="preserve">
+<source xml:lang="en">Added DataMemberIgnore on LocalReflections.DebugModes to avoid serialization mismatch</source>
+<target xml:lang="pt">Added DataMemberIgnore on LocalReflections.DebugModes to avoid serialization mismatch</target>
+</trans-unit>
+<trans-unit id="tu76" xml:space="preserve">
+<source xml:lang="en">Added props/targets redirection for NuGet consumption</source>
+<target xml:lang="pt">Added props/targets redirection for NuGet consumption</target>
+</trans-unit>
+<trans-unit id="tu77" xml:space="preserve">
+<source xml:lang="en">Added System.ValueTuple (temporary fix until we switch to PackageReference for Xenko itself)</source>
+<target xml:lang="pt">Added System.ValueTuple (temporary fix until we switch to PackageReference for Xenko itself)</target>
+</trans-unit>
+<trans-unit id="tu78" xml:space="preserve">
+<source xml:lang="en">Bumped Windows 10 SDK to 10.0.16299.0</source>
+<target xml:lang="pt">Bumped Windows 10 SDK to 10.0.16299.0</target>
+</trans-unit>
+<trans-unit id="tu79" xml:space="preserve">
+<source xml:lang="en">Change explicit TargetFrameworkVersions to TargetFramework</source>
+<target xml:lang="pt">Change explicit TargetFrameworkVersions to TargetFramework</target>
+</trans-unit>
+<trans-unit id="tu80" xml:space="preserve">
+<source xml:lang="en">Convert to PackageReference</source>
+<target xml:lang="pt">Convert to PackageReference</target>
+</trans-unit>
+<trans-unit id="tu81" xml:space="preserve">
+<source xml:lang="en">Define the TargetFramework for tooling assemblies</source>
+<target xml:lang="pt">Define the TargetFramework for tooling assemblies</target>
+</trans-unit>
+<trans-unit id="tu82" xml:space="preserve">
+<source xml:lang="en">Delete all packages.config and includes</source>
+<target xml:lang="pt">Delete all packages.config and includes</target>
+</trans-unit>
+<trans-unit id="tu83" xml:space="preserve">
+<source xml:lang="en">Disable native build during design-time build</source>
+<target xml:lang="pt">Disable native build during design-time build</target>
+</trans-unit>
+<trans-unit id="tu84" xml:space="preserve">
+<source xml:lang="en">Explicitly include Microsoft.NET.Sdk props/targets for a few more projects that were not compiling correctly</source>
+<target xml:lang="pt">Explicitly include Microsoft.NET.Sdk props/targets for a few more projects that were not compiling correctly</target>
+</trans-unit>
+<trans-unit id="tu85" xml:space="preserve">
+<source xml:lang="en">Explicitly include Microsoft.NET.Sdk props/targets to be able to override some values</source>
+<target xml:lang="pt">Explicitly include Microsoft.NET.Sdk props/targets to be able to override some values</target>
+</trans-unit>
+<trans-unit id="tu86" xml:space="preserve">
+<source xml:lang="en">Fill list of files to cleanup only when running the clean target</source>
+<target xml:lang="pt">Fill list of files to cleanup only when running the clean target</target>
+</trans-unit>
+<trans-unit id="tu87" xml:space="preserve">
+<source xml:lang="en">Fix compilation of shader related projects</source>
+<target xml:lang="pt">Fix compilation of shader related projects</target>
+</trans-unit>
+<trans-unit id="tu88" xml:space="preserve">
+<source xml:lang="en">Fix CoreCLR build</source>
+<target xml:lang="pt">Fix CoreCLR build</target>
+</trans-unit>
+<trans-unit id="tu89" xml:space="preserve">
+<source xml:lang="en">Fix language targets for WPF projects</source>
+<target xml:lang="pt">Fix language targets for WPF projects</target>
+</trans-unit>
+<trans-unit id="tu90" xml:space="preserve">
+<source xml:lang="en">Fix OutputPath</source>
+<target xml:lang="pt">Fix OutputPath</target>
+</trans-unit>
+<trans-unit id="tu91" xml:space="preserve">
+<source xml:lang="en">Fix package build</source>
+<target xml:lang="pt">Fix package build</target>
+</trans-unit>
+<trans-unit id="tu92" xml:space="preserve">
+<source xml:lang="en">Fix skybox not working with compressed cubemaps.</source>
+<target xml:lang="pt">Fix skybox not working with compressed cubemaps.</target>
+</trans-unit>
+<trans-unit id="tu93" xml:space="preserve">
+<source xml:lang="en">Fix some project builds</source>
+<target xml:lang="pt">Fix some project builds</target>
+</trans-unit>
+<trans-unit id="tu94" xml:space="preserve">
+<source xml:lang="en">Fixed incremental build (still not perfect, waiting for more info on https://github.com/dotnet/project-system/issues/3157)</source>
+<target xml:lang="pt">Fixed incremental build (still not perfect, waiting for more info on https://github.com/dotnet/project-system/issues/3157)</target>
+</trans-unit>
+<trans-unit id="tu95" xml:space="preserve">
+<source xml:lang="en">Fixed unit test and package builds</source>
+<target xml:lang="pt">Fixed unit test and package builds</target>
+</trans-unit>
+<trans-unit id="tu96" xml:space="preserve">
+<source xml:lang="en">If SiliconStudioCompilerTargetsEnable is set to false, override LanguageTargets to an empty one</source>
+<target xml:lang="pt">If SiliconStudioCompilerTargetsEnable is set to false, override LanguageTargets to an empty one</target>
+</trans-unit>
+<trans-unit id="tu97" xml:space="preserve">
+<source xml:lang="en">Include *.cs files that are not in the project directory</source>
+<target xml:lang="pt">Include *.cs files that are not in the project directory</target>
+</trans-unit>
+<trans-unit id="tu98" xml:space="preserve">
+<source xml:lang="en">List resource folders explicitly in .xkpkg</source>
+<target xml:lang="pt">List resource folders explicitly in .xkpkg</target>
+</trans-unit>
+<trans-unit id="tu99" xml:space="preserve">
+<source xml:lang="en">Make Xenko Native .cpp/.h file globbing faster by ignoring obj/bin folders</source>
+<target xml:lang="pt">Make Xenko Native .cpp/.h file globbing faster by ignoring obj/bin folders</target>
+</trans-unit>
+<trans-unit id="tu100" xml:space="preserve">
+<source xml:lang="en">More cleanup</source>
+<target xml:lang="pt">More cleanup</target>
+</trans-unit>
+<trans-unit id="tu101" xml:space="preserve">
+<source xml:lang="en">Moved sources from sources/common subdirectory to sources so that everything is at the same level</source>
+<target xml:lang="pt">Moved sources from sources/common subdirectory to sources so that everything is at the same level</target>
+</trans-unit>
+<trans-unit id="tu102" xml:space="preserve">
+<source xml:lang="en">Override SiliconStudioXenkoOutputPath even if set</source>
+<target xml:lang="pt">Override SiliconStudioXenkoOutputPath even if set</target>
+</trans-unit>
+<trans-unit id="tu103" xml:space="preserve">
+<source xml:lang="en">Remove *.CSharp.targets imports</source>
+<target xml:lang="pt">Remove *.CSharp.targets imports</target>
+</trans-unit>
+<trans-unit id="tu104" xml:space="preserve">
+<source xml:lang="en">Remove default comments</source>
+<target xml:lang="pt">Remove default comments</target>
+</trans-unit>
+<trans-unit id="tu105" xml:space="preserve">
+<source xml:lang="en">Remove many unnecesssary properties</source>
+<target xml:lang="pt">Remove many unnecesssary properties</target>
+</trans-unit>
+<trans-unit id="tu106" xml:space="preserve">
+<source xml:lang="en">Remove Microsoft.Common.props imports</source>
+<target xml:lang="pt">Remove Microsoft.Common.props imports</target>
+</trans-unit>
+<trans-unit id="tu107" xml:space="preserve">
+<source xml:lang="en">Remove most attributes from AssemblyInfo.cs</source>
+<target xml:lang="pt">Remove most attributes from AssemblyInfo.cs</target>
+</trans-unit>
+<trans-unit id="tu108" xml:space="preserve">
+<source xml:lang="en">Remove obsolete files</source>
+<target xml:lang="pt">Remove obsolete files</target>
+</trans-unit>
+<trans-unit id="tu109" xml:space="preserve">
+<source xml:lang="en">Remove references to default framework assemblies</source>
+<target xml:lang="pt">Remove references to default framework assemblies</target>
+</trans-unit>
+<trans-unit id="tu110" xml:space="preserve">
+<source xml:lang="en">Remove some redundant Compile item updates</source>
+<target xml:lang="pt">Remove some redundant Compile item updates</target>
+</trans-unit>
+<trans-unit id="tu111" xml:space="preserve">
+<source xml:lang="en">Remove ToolsVersions</source>
+<target xml:lang="pt">Remove ToolsVersions</target>
+</trans-unit>
+<trans-unit id="tu112" xml:space="preserve">
+<source xml:lang="en">Remove unnecessary *.cs file includes</source>
+<target xml:lang="pt">Remove unnecessary *.cs file includes</target>
+</trans-unit>
+<trans-unit id="tu113" xml:space="preserve">
+<source xml:lang="en">Remove unnecessary xml directives</source>
+<target xml:lang="pt">Remove unnecessary xml directives</target>
+</trans-unit>
+<trans-unit id="tu114" xml:space="preserve">
+<source xml:lang="en">Removed CoreFX</source>
+<target xml:lang="pt">Removed CoreFX</target>
+</trans-unit>
+<trans-unit id="tu115" xml:space="preserve">
+<source xml:lang="en">Removed LZMA compression (better to be directly supported at NuGet level?)</source>
+<target xml:lang="pt">Removed LZMA compression (better to be directly supported at NuGet level?)</target>
+</trans-unit>
+<trans-unit id="tu116" xml:space="preserve">
+<source xml:lang="en">Removed SiliconStudio.Presentation.SampleApp (not used)</source>
+<target xml:lang="pt">Removed SiliconStudio.Presentation.SampleApp (not used)</target>
+</trans-unit>
+<trans-unit id="tu117" xml:space="preserve">
+<source xml:lang="en">Removed unused SharpDiff</source>
+<target xml:lang="pt">Removed unused SharpDiff</target>
+</trans-unit>
+<trans-unit id="tu118" xml:space="preserve">
+<source xml:lang="en">Removed unused SharpDX.Mathematics from deps (using NuGet version already)</source>
+<target xml:lang="pt">Removed unused SharpDX.Mathematics from deps (using NuGet version already)</target>
+</trans-unit>
+<trans-unit id="tu119" xml:space="preserve">
+<source xml:lang="en">Removed unused SQLite</source>
+<target xml:lang="pt">Removed unused SQLite</target>
+</trans-unit>
+<trans-unit id="tu120" xml:space="preserve">
+<source xml:lang="en">Revert samples to not use new csproj system for now</source>
+<target xml:lang="pt">Revert samples to not use new csproj system for now</target>
+</trans-unit>
+<trans-unit id="tu121" xml:space="preserve">
+<source xml:lang="en">Revert unit tests to old system for now</source>
+<target xml:lang="pt">Revert unit tests to old system for now</target>
+</trans-unit>
+<trans-unit id="tu122" xml:space="preserve">
+<source xml:lang="en">Run AssemblyProcessor right before assembly is copied rather than during CoreCompile (which happens during Visual Studio loading)</source>
+<target xml:lang="pt">Run AssemblyProcessor right before assembly is copied rather than during CoreCompile (which happens during Visual Studio loading)</target>
+</trans-unit>
+<trans-unit id="tu123" xml:space="preserve">
+<source xml:lang="en">Setup proper AssemblyName for packageinstall assemblies</source>
+<target xml:lang="pt">Setup proper AssemblyName for packageinstall assemblies</target>
+</trans-unit>
+<trans-unit id="tu124" xml:space="preserve">
+<source xml:lang="en">Setup target for cpp (respecting SiliconStudioCompilerTargetsEnable)</source>
+<target xml:lang="pt">Setup target for cpp (respecting SiliconStudioCompilerTargetsEnable)</target>
+</trans-unit>
+<trans-unit id="tu125" xml:space="preserve">
+<source xml:lang="en">SiliconStudioXenkoReplaceVersionInfo target was not working properly with new build system</source>
+<target xml:lang="pt">SiliconStudioXenkoReplaceVersionInfo target was not working properly with new build system</target>
+</trans-unit>
+<trans-unit id="tu126" xml:space="preserve">
+<source xml:lang="en">Simplify ProjectReferences</source>
+<target xml:lang="pt">Simplify ProjectReferences</target>
+</trans-unit>
+<trans-unit id="tu127" xml:space="preserve">
+<source xml:lang="en">Switch to new csproj system for games</source>
+<target xml:lang="pt">Switch to new csproj system for games</target>
+</trans-unit>
+<trans-unit id="tu128" xml:space="preserve">
+<source xml:lang="en">Switch to nuget version for Mono.Options</source>
+<target xml:lang="pt">Switch to nuget version for Mono.Options</target>
+</trans-unit>
+<trans-unit id="tu129" xml:space="preserve">
+<source xml:lang="en">Switch to nuget version for Mono.TextTemplating</source>
+<target xml:lang="pt">Switch to nuget version for Mono.TextTemplating</target>
+</trans-unit>
+<trans-unit id="tu130" xml:space="preserve">
+<source xml:lang="en">Tests projects now have a Service in csproj with latest VS update</source>
+<target xml:lang="pt">Tests projects now have a Service in csproj with latest VS update</target>
+</trans-unit>
+<trans-unit id="tu131" xml:space="preserve">
+<source xml:lang="en">Update *.cs files with additional properties, instead of including</source>
+<target xml:lang="pt">Update *.cs files with additional properties, instead of including</target>
+</trans-unit>
+<trans-unit id="tu132" xml:space="preserve">
+<source xml:lang="en">Update .gitignore for launchSettings.json</source>
+<target xml:lang="pt">Update .gitignore for launchSettings.json</target>
+</trans-unit>
+<trans-unit id="tu133" xml:space="preserve">
+<source xml:lang="en">Update build instructions</source>
+<target xml:lang="pt">Update build instructions</target>
+</trans-unit>
+<trans-unit id="tu134" xml:space="preserve">
+<source xml:lang="en">Update embedded resources instead of including</source>
+<target xml:lang="pt">Update embedded resources instead of including</target>
+</trans-unit>
+<trans-unit id="tu135" xml:space="preserve">
+<source xml:lang="en">Update project file headers</source>
+<target xml:lang="pt">Update project file headers</target>
+</trans-unit>
+<trans-unit id="tu136" xml:space="preserve">
+<source xml:lang="en">Updated LLVM to 5.0.1 (avoid some issues with "terminate" missing symbol on UWP, which should resolve to std::terminate)</source>
+<target xml:lang="pt">Updated LLVM to 5.0.1 (avoid some issues with "terminate" missing symbol on UWP, which should resolve to std::terminate)</target>
+</trans-unit>
+<trans-unit id="tu137" xml:space="preserve">
+<source xml:lang="en">Updated THIRD PARTY.md to reflect usage of DocFX rather than SharpDoc</source>
+<target xml:lang="pt">Updated THIRD PARTY.md to reflect usage of DocFX rather than SharpDoc</target>
+</trans-unit>
+<trans-unit id="tu138" xml:space="preserve">
+<source xml:lang="en">Upgrade to new csproj format</source>
+<target xml:lang="pt">Upgrade to new csproj format</target>
+</trans-unit>
+<trans-unit id="tu139" xml:space="preserve">
+<source xml:lang="en">Use MSBuild 15.5 from MyGet</source>
+<target xml:lang="pt">Use MSBuild 15.5 from MyGet</target>
+</trans-unit>
+<trans-unit id="tu140" xml:space="preserve">
+<source xml:lang="en">Use Windows SDK v10.0 instead of v8.1 for d3dcompiler_47.dll</source>
+<target xml:lang="pt">Use Windows SDK v10.0 instead of v8.1 for d3dcompiler_47.dll</target>
+</trans-unit>
+<trans-unit id="tu141" xml:space="preserve">
+<source xml:lang="en">Various improvements/fixes for the new project system</source>
+<target xml:lang="pt">Various improvements/fixes for the new project system</target>
+</trans-unit>
+<trans-unit id="tu142" xml:space="preserve">
+<source xml:lang="en">Workaround for https://github.com/xamarin/xamarin-android/issues/1235 (Android resources not being properly merged in incremental build)</source>
+<target xml:lang="pt">Workaround for https://github.com/xamarin/xamarin-android/issues/1235 (Android resources not being properly merged in incremental build)</target>
+</trans-unit>
+<trans-unit id="tu143" xml:space="preserve">
+<source xml:lang="en">Workaround for solution dependencies with incomptable frameworks: https://github.com/Microsoft/msbuild/issues/2661#issuecomment-338808156</source>
+<target xml:lang="pt">Workaround for solution dependencies with incomptable frameworks: https://github.com/Microsoft/msbuild/issues/2661#issuecomment-338808156</target>
+</trans-unit>
+<trans-unit id="tu144" xml:space="preserve">
+<source xml:lang="en">BuildEngine</source>
+<target xml:lang="pt">BuildEngine</target>
+</trans-unit>
+<trans-unit id="tu145" xml:space="preserve">
+<source xml:lang="en">Tests: fix build since SlaveBuilderPath has been removed</source>
+<target xml:lang="pt">Tests: fix build since SlaveBuilderPath has been removed</target>
+</trans-unit>
+<trans-unit id="tu146" xml:space="preserve">
+<source xml:lang="en">Cecil</source>
+<target xml:lang="pt">Cecil</target>
+</trans-unit>
+<trans-unit id="tu147" xml:space="preserve">
+<source xml:lang="en">Protect against null reference exception when there is no yields in async method</source>
+<target xml:lang="pt">Protect against null reference exception when there is no yields in async method</target>
+</trans-unit>
+<trans-unit id="tu148" xml:space="preserve">
+<source xml:lang="en">Update to latest Cecil + ILRepack</source>
+<target xml:lang="pt">Update to latest Cecil + ILRepack</target>
+</trans-unit>
+<trans-unit id="tu149" xml:space="preserve">
+<source xml:lang="en">Core</source>
+<target xml:lang="pt">Core</target>
+</trans-unit>
+<trans-unit id="tu150" xml:space="preserve">
+<source xml:lang="en">Remove unnecessary constraint on generic parameters of extension methods \`DisposeBy\` and \`RemoveDisposeBy\`.</source>
+<target xml:lang="pt">Remove unnecessary constraint on generic parameters of extension methods \`DisposeBy\` and \`RemoveDisposeBy\`.</target>
+</trans-unit>
+<trans-unit id="tu151" xml:space="preserve">
+<source xml:lang="en">Core.Tests</source>
+<target xml:lang="pt">Core.Tests</target>
+</trans-unit>
+<trans-unit id="tu152" xml:space="preserve">
+<source xml:lang="en">Disable when building with CoreCLR or if SiliconStudioSkipUnitTests is set</source>
+<target xml:lang="pt">Disable when building with CoreCLR or if SiliconStudioSkipUnitTests is set</target>
+</trans-unit>
+<trans-unit id="tu153" xml:space="preserve">
+<source xml:lang="en">Fixed csproj so that it properly builds</source>
+<target xml:lang="pt">Fixed csproj so that it properly builds</target>
+</trans-unit>
+<trans-unit id="tu154" xml:space="preserve">
+<source xml:lang="en">CrashReport</source>
+<target xml:lang="pt">CrashReport</target>
+</trans-unit>
+<trans-unit id="tu155" xml:space="preserve">
+<source xml:lang="en">Turned into a shared project</source>
+<target xml:lang="pt">Turned into a shared project</target>
+</trans-unit>
+<trans-unit id="tu156" xml:space="preserve">
+<source xml:lang="en">Deps</source>
+<target xml:lang="pt">Deps</target>
+</trans-unit>
+<trans-unit id="tu157" xml:space="preserve">
+<source xml:lang="en">Removed unused lzma.exe</source>
+<target xml:lang="pt">Removed unused lzma.exe</target>
+</trans-unit>
+<trans-unit id="tu158" xml:space="preserve">
+<source xml:lang="en">Removed unused NuGet libraries (using PackageReference instead)</source>
+<target xml:lang="pt">Removed unused NuGet libraries (using PackageReference instead)</target>
+</trans-unit>
+<trans-unit id="tu159" xml:space="preserve">
+<source xml:lang="en">Update checkout scripts.</source>
+<target xml:lang="pt">Update checkout scripts.</target>
+</trans-unit>
+<trans-unit id="tu160" xml:space="preserve">
+<source xml:lang="en">Update version of ffmpeg to from 3.3 to 3.4.</source>
+<target xml:lang="pt">Update version of ffmpeg to from 3.3 to 3.4.</target>
+</trans-unit>
+<trans-unit id="tu161" xml:space="preserve">
+<source xml:lang="en">Editor</source>
+<target xml:lang="pt">Editor</target>
+</trans-unit>
+<trans-unit id="tu162" xml:space="preserve">
+<source xml:lang="en">Change editor build directory to project Cache directory even in Dev mode. Remove fallback folder property from the settings (misleading).</source>
+<target xml:lang="pt">Change editor build directory to project Cache directory even in Dev mode. Remove fallback folder property from the settings (misleading).</target>
+</trans-unit>
+<trans-unit id="tu163" xml:space="preserve">
+<source xml:lang="en">correct lens flare display attribute</source>
+<target xml:lang="pt">correct lens flare display attribute</target>
+</trans-unit>
+<trans-unit id="tu164" xml:space="preserve">
+<source xml:lang="en">FindTemplates according to current session (or default package if no session loaded)</source>
+<target xml:lang="pt">FindTemplates according to current session (or default package if no session loaded)</target>
+</trans-unit>
+<trans-unit id="tu165" xml:space="preserve">
+<source xml:lang="en">Fix NullReference crash when asset is mising the DisplayAttribute.</source>
+<target xml:lang="pt">Fix NullReference crash when asset is mising the DisplayAttribute.</target>
+</trans-unit>
+<trans-unit id="tu166" xml:space="preserve">
+<source xml:lang="en">Update localization files.</source>
+<target xml:lang="pt">Update localization files.</target>
+</trans-unit>
+<trans-unit id="tu167" xml:space="preserve">
+<source xml:lang="en">Update localization files. Also updated some comments.</source>
+<target xml:lang="pt">Update localization files. Also updated some comments.</target>
+</trans-unit>
+<trans-unit id="tu168" xml:space="preserve">
+<source xml:lang="en">Updated to CodeAnalysis 2.4.0 and RoslynPad 1.0.4 (from NuGet)</source>
+<target xml:lang="pt">Updated to CodeAnalysis 2.4.0 and RoslynPad 1.0.4 (from NuGet)</target>
+</trans-unit>
+<trans-unit id="tu169" xml:space="preserve">
+<source xml:lang="en">Engine</source>
+<target xml:lang="pt">Engine</target>
+</trans-unit>
+<trans-unit id="tu170" xml:space="preserve">
+<source xml:lang="en">Add a flag to be able to force the engine to update the animation evaluator cache (useful when updating clip channel values at runtime).</source>
+<target xml:lang="pt">Add a flag to be able to force the engine to update the animation evaluator cache (useful when updating clip channel values at runtime).</target>
+</trans-unit>
+<trans-unit id="tu171" xml:space="preserve">
+<source xml:lang="en">Add getter to AnimationProcessor in order to be able to access AnimationClipResult.</source>
+<target xml:lang="pt">Add getter to AnimationProcessor in order to be able to access AnimationClipResult.</target>
+</trans-unit>
+<trans-unit id="tu172" xml:space="preserve">
+<source xml:lang="en">Added texture projection to light spots (courtesy of Mirsad)</source>
+<target xml:lang="pt">Added texture projection to light spots (courtesy of Mirsad)</target>
+</trans-unit>
+<trans-unit id="tu173" xml:space="preserve">
+<source xml:lang="en">AnimationBlender: Implement blending for type Float1.</source>
+<target xml:lang="pt">AnimationBlender: Implement blending for type Float1.</target>
+</trans-unit>
+<trans-unit id="tu174" xml:space="preserve">
+<source xml:lang="en">Change log level of ffmpeg to \`fatal\`. \`error\` level can display recoverable errors.</source>
+<target xml:lang="pt">Change log level of ffmpeg to \`fatal\`. \`error\` level can display recoverable errors.</target>
+</trans-unit>
+<trans-unit id="tu175" xml:space="preserve">
+<source xml:lang="en">Clamping the normal.z value to (0, 1) to prevent NaN result from sqrt().</source>
+<target xml:lang="pt">Clamping the normal.z value to (0, 1) to prevent NaN result from sqrt().</target>
+</trans-unit>
+<trans-unit id="tu176" xml:space="preserve">
+<source xml:lang="en">Code cleanup.</source>
+<target xml:lang="pt">Code cleanup.</target>
+</trans-unit>
+<trans-unit id="tu177" xml:space="preserve">
+<source xml:lang="en">Delay the initialization of the shader parsers to first usage instead of first shader loaded (significantly reduce the load time in case no shader need to be compiled).</source>
+<target xml:lang="pt">Delay the initialization of the shader parsers to first usage instead of first shader loaded (significantly reduce the load time in case no shader need to be compiled).</target>
+</trans-unit>
+<trans-unit id="tu178" xml:space="preserve">
+<source xml:lang="en">Fix LightShafts with shadowmap transmittance</source>
+<target xml:lang="pt">Fix LightShafts with shadowmap transmittance</target>
+</trans-unit>
+<trans-unit id="tu179" xml:space="preserve">
+<source xml:lang="en">Fix several crashes and multi-threading issues happening when modelNodeLinkComponents is targeting a model not in its parent hierarchy.</source>
+<target xml:lang="pt">Fix several crashes and multi-threading issues happening when modelNodeLinkComponents is targeting a model not in its parent hierarchy.</target>
+</trans-unit>
+<trans-unit id="tu180" xml:space="preserve">
+<source xml:lang="en">Implement interface ICollectorHolder in ScriptComponent to be able to automatically dispose objects during the script Cancel method.</source>
+<target xml:lang="pt">Implement interface ICollectorHolder in ScriptComponent to be able to automatically dispose objects during the script Cancel method.</target>
+</trans-unit>
+<trans-unit id="tu181" xml:space="preserve">
+<source xml:lang="en">Minor cleanup</source>
+<target xml:lang="pt">Minor cleanup</target>
+</trans-unit>
+<trans-unit id="tu182" xml:space="preserve">
+<source xml:lang="en">Move ModelNodeLinkProcessor before TransformProcessor to avoid to have the first frame where the transformation is not updated.</source>
+<target xml:lang="pt">Move ModelNodeLinkProcessor before TransformProcessor to avoid to have the first frame where the transformation is not updated.</target>
+</trans-unit>
+<trans-unit id="tu183" xml:space="preserve">
+<source xml:lang="en">NotNull and cosmetic improvements</source>
+<target xml:lang="pt">NotNull and cosmetic improvements</target>
+</trans-unit>
+<trans-unit id="tu184" xml:space="preserve">
+<source xml:lang="en">Removed some unused code/files</source>
+<target xml:lang="pt">Removed some unused code/files</target>
+</trans-unit>
+<trans-unit id="tu185" xml:space="preserve">
+<source xml:lang="en">Return the created PlayingAnimations when adding a new AnimationClip for convenience and consistency with other play functions.</source>
+<target xml:lang="pt">Return the created PlayingAnimations when adding a new AnimationClip for convenience and consistency with other play functions.</target>
+</trans-unit>
+<trans-unit id="tu186" xml:space="preserve">
+<source xml:lang="en">Streaming: Added a new DoNotStream option</source>
+<target xml:lang="pt">Streaming: Added a new DoNotStream option</target>
+</trans-unit>
+<trans-unit id="tu187" xml:space="preserve">
+<source xml:lang="en">Support moving entity inside scene</source>
+<target xml:lang="pt">Support moving entity inside scene</target>
+</trans-unit>
+<trans-unit id="tu188" xml:space="preserve">
+<source xml:lang="en">UpdateEngine: look for member updater coming from base classes before falling back on custom resolver.</source>
+<target xml:lang="pt">UpdateEngine: look for member updater coming from base classes before falling back on custom resolver.</target>
+</trans-unit>
+<trans-unit id="tu189" xml:space="preserve">
+<source xml:lang="en">ExecServer</source>
+<target xml:lang="pt">ExecServer</target>
+</trans-unit>
+<trans-unit id="tu190" xml:space="preserve">
+<source xml:lang="en">Remove LoaderOptimization.MultiDomain</source>
+<target xml:lang="pt">Remove LoaderOptimization.MultiDomain</target>
+</trans-unit>
+<trans-unit id="tu191" xml:space="preserve">
+<source xml:lang="en">FBX</source>
+<target xml:lang="pt">FBX</target>
+</trans-unit>
+<trans-unit id="tu192" xml:space="preserve">
+<source xml:lang="en">Switch to FBX SDK 2018.1.1</source>
+<target xml:lang="pt">Switch to FBX SDK 2018.1.1</target>
+</trans-unit>
+<trans-unit id="tu193" xml:space="preserve">
+<source xml:lang="en">FBX.Importer</source>
+<target xml:lang="pt">FBX.Importer</target>
+</trans-unit>
+<trans-unit id="tu194" xml:space="preserve">
+<source xml:lang="en">Optimize calculation of Quaternion from XYZ rotation keyframe.</source>
+<target xml:lang="pt">Optimize calculation of Quaternion from XYZ rotation keyframe.</target>
+</trans-unit>
+<trans-unit id="tu195" xml:space="preserve">
+<source xml:lang="en">Game</source>
+<target xml:lang="pt">Game</target>
+</trans-unit>
+<trans-unit id="tu196" xml:space="preserve">
+<source xml:lang="en">Add the possibility to render the splash screen as a double view for VR games.</source>
+<target xml:lang="pt">Add the possibility to render the splash screen as a double view for VR games.</target>
+</trans-unit>
+<trans-unit id="tu197" xml:space="preserve">
+<source xml:lang="en">GameStudio</source>
+<target xml:lang="pt">GameStudio</target>
+</trans-unit>
+<trans-unit id="tu198" xml:space="preserve">
+<source xml:lang="en">Remove expiration</source>
+<target xml:lang="pt">Remove expiration</target>
+</trans-unit>
+<trans-unit id="tu199" xml:space="preserve">
+<source xml:lang="en">General</source>
+<target xml:lang="pt">General</target>
+</trans-unit>
+<trans-unit id="tu200" xml:space="preserve">
+<source xml:lang="en">Removed bunch of unused files and fixed some license headers</source>
+<target xml:lang="pt">Removed bunch of unused files and fixed some license headers</target>
+</trans-unit>
+<trans-unit id="tu201" xml:space="preserve">
+<source xml:lang="en">Graphics</source>
+<target xml:lang="pt">Graphics</target>
+</trans-unit>
+<trans-unit id="tu202" xml:space="preserve">
+<source xml:lang="en">Add support for panorama 2D textures to skybox asset.</source>
+<target xml:lang="pt">Add support for panorama 2D textures to skybox asset.</target>
+</trans-unit>
+<trans-unit id="tu203" xml:space="preserve">
+<source xml:lang="en">Add ViewDimension property on Texture. Adjust code accordingly so that the engine behaves properly on View textures.</source>
+<target xml:lang="pt">Add ViewDimension property on Texture. Adjust code accordingly so that the engine behaves properly on View textures.</target>
+</trans-unit>
+<trans-unit id="tu204" xml:space="preserve">
+<source xml:lang="en">Added a cast in SubsurfaceScatteringBlur.cs.</source>
+<target xml:lang="pt">Added a cast in SubsurfaceScatteringBlur.cs.</target>
+</trans-unit>
+<trans-unit id="tu205" xml:space="preserve">
+<source xml:lang="en">Added a check to see if the MaterialIndices buffer is used before overwriting "allTargets\[1\]".</source>
+<target xml:lang="pt">Added a check to see if the MaterialIndices buffer is used before overwriting "allTargets\[1\]".</target>
+</trans-unit>
+<trans-unit id="tu206" xml:space="preserve">
+<source xml:lang="en">Added a comment in MaterialHairLightAttenuationFunctionDirectional.xksl.</source>
+<target xml:lang="pt">Added a comment in MaterialHairLightAttenuationFunctionDirectional.xksl.</target>
+</trans-unit>
+<trans-unit id="tu207" xml:space="preserve">
+<source xml:lang="en">Added a comment.</source>
+<target xml:lang="pt">Added a comment.</target>
+</trans-unit>
+<trans-unit id="tu208" xml:space="preserve">
+<source xml:lang="en">Added a first version of the MeshHairRenderStageSelector class.</source>
+<target xml:lang="pt">Added a first version of the MeshHairRenderStageSelector class.</target>
+</trans-unit>
+<trans-unit id="tu209" xml:space="preserve">
+<source xml:lang="en">Added an exception.</source>
+<target xml:lang="pt">Added an exception.</target>
+</trans-unit>
+<trans-unit id="tu210" xml:space="preserve">
+<source xml:lang="en">Added comments.</source>
+<target xml:lang="pt">Added comments.</target>
+</trans-unit>
+<trans-unit id="tu211" xml:space="preserve">
+<source xml:lang="en">Added NotNull</source>
+<target xml:lang="pt">Added NotNull</target>
+</trans-unit>
+<trans-unit id="tu212" xml:space="preserve">
+<source xml:lang="en">Added PCF for SSS thickness. Refactored the PCF code. Renamed "CalculateThickness()" to "FilterThickness()".</source>
+<target xml:lang="pt">Added PCF for SSS thickness. Refactored the PCF code. Renamed "CalculateThickness()" to "FilterThickness()".</target>
+</trans-unit>
+<trans-unit id="tu213" xml:space="preserve">
+<source xml:lang="en">Added some casts to fix shader errors.</source>
+<target xml:lang="pt">Added some casts to fix shader errors.</target>
+</trans-unit>
+<trans-unit id="tu214" xml:space="preserve">
+<source xml:lang="en">Added support for cavity &amp; occlusion maps in the hair shading model.</source>
+<target xml:lang="pt">Added support for cavity &amp; occlusion maps in the hair shading model.</target>
+</trans-unit>
+<trans-unit id="tu215" xml:space="preserve">
+<source xml:lang="en">Added support for choosing which normals to use for the directional light attenuation for hair. Moved a computation from the GPU to the CPU.</source>
+<target xml:lang="pt">Added support for choosing which normals to use for the directional light attenuation for hair. Moved a computation from the GPU to the CPU.</target>
+</trans-unit>
+<trans-unit id="tu216" xml:space="preserve">
+<source xml:lang="en">Added support for configuring the scattering kernel parameters. Refactored the scattering kernel generation.</source>
+<target xml:lang="pt">Added support for configuring the scattering kernel parameters. Refactored the scattering kernel generation.</target>
+</trans-unit>
+<trans-unit id="tu217" xml:space="preserve">
+<source xml:lang="en">Added support for fake shadowing.</source>
+<target xml:lang="pt">Added support for fake shadowing.</target>
+</trans-unit>
+<trans-unit id="tu218" xml:space="preserve">
+<source xml:lang="en">Added support for per-material scattering kernels and scattering profiles.</source>
+<target xml:lang="pt">Added support for per-material scattering kernels and scattering profiles.</target>
+</trans-unit>
+<trans-unit id="tu219" xml:space="preserve">
+<source xml:lang="en">Added support for resizing the material array for the SSSS post process. Refactored the code.</source>
+<target xml:lang="pt">Added support for resizing the material array for the SSSS post process. Refactored the code.</target>
+</trans-unit>
+<trans-unit id="tu220" xml:space="preserve">
+<source xml:lang="en">Added support for up to 256 scattering kernels in the SSS post-process by storing the kernels in a buffer.</source>
+<target xml:lang="pt">Added support for up to 256 scattering kernels in the SSS post-process by storing the kernels in a buffer.</target>
+</trans-unit>
+<trans-unit id="tu221" xml:space="preserve">
+<source xml:lang="en">Added the missing multiplication by the diffuse color for the scattering.</source>
+<target xml:lang="pt">Added the missing multiplication by the diffuse color for the scattering.</target>
+</trans-unit>
+<trans-unit id="tu222" xml:space="preserve">
+<source xml:lang="en">Added two editor-tunable (not yet integrated) parameters for the SSS transmittance.</source>
+<target xml:lang="pt">Added two editor-tunable (not yet integrated) parameters for the SSS transmittance.</target>
+</trans-unit>
+<trans-unit id="tu223" xml:space="preserve">
+<source xml:lang="en">Baked a calculation into the SSS scattering kernel so it doesn't have to be executed in the post-process.</source>
+<target xml:lang="pt">Baked a calculation into the SSS scattering kernel so it doesn't have to be executed in the post-process.</target>
+</trans-unit>
+<trans-unit id="tu224" xml:space="preserve">
+<source xml:lang="en">Based the SSS shading model on the diffuse lambert one instead of the CelShading one. Removed redundant files.</source>
+<target xml:lang="pt">Based the SSS shading model on the diffuse lambert one instead of the CelShading one. Removed redundant files.</target>
+</trans-unit>
+<trans-unit id="tu225" xml:space="preserve">
+<source xml:lang="en">Cleaned up some spotlight code.</source>
+<target xml:lang="pt">Cleaned up some spotlight code.</target>
+</trans-unit>
+<trans-unit id="tu226" xml:space="preserve">
+<source xml:lang="en">Cleaned up the "SubsurfaceScatteringBlur" class.</source>
+<target xml:lang="pt">Cleaned up the "SubsurfaceScatteringBlur" class.</target>
+</trans-unit>
+<trans-unit id="tu227" xml:space="preserve">
+<source xml:lang="en">Cleaned up the SSS transmittance profile and scattering kernel generation code.</source>
+<target xml:lang="pt">Cleaned up the SSS transmittance profile and scattering kernel generation code.</target>
+</trans-unit>
+<trans-unit id="tu228" xml:space="preserve">
+<source xml:lang="en">Cleaned up the SSSS post-process shader.</source>
+<target xml:lang="pt">Cleaned up the SSSS post-process shader.</target>
+</trans-unit>
+<trans-unit id="tu229" xml:space="preserve">
+<source xml:lang="en">Correctly integrated the depth-stencil resolve for hair and transparent objects.</source>
+<target xml:lang="pt">Correctly integrated the depth-stencil resolve for hair and transparent objects.</target>
+</trans-unit>
+<trans-unit id="tu230" xml:space="preserve">
+<source xml:lang="en">Defined default values for properties and simplified the code.</source>
+<target xml:lang="pt">Defined default values for properties and simplified the code.</target>
+</trans-unit>
+<trans-unit id="tu231" xml:space="preserve">
+<source xml:lang="en">Fed the proper NdotL term into certain functions. Little refactoring. Applied shadows to the specular reflections.</source>
+<target xml:lang="pt">Fed the proper NdotL term into certain functions. Little refactoring. Applied shadows to the specular reflections.</target>
+</trans-unit>
+<trans-unit id="tu232" xml:space="preserve">
+<source xml:lang="en">Finalized the indirect specular hair lighting for now.</source>
+<target xml:lang="pt">Finalized the indirect specular hair lighting for now.</target>
+</trans-unit>
+<trans-unit id="tu233" xml:space="preserve">
+<source xml:lang="en">Fix 2D texture skybox shader compilation crash with graphics API level &lt; 10</source>
+<target xml:lang="pt">Fix 2D texture skybox shader compilation crash with graphics API level &lt; 10</target>
+</trans-unit>
+<trans-unit id="tu234" xml:space="preserve">
+<source xml:lang="en">Fix D3D12 build</source>
+<target xml:lang="pt">Fix D3D12 build</target>
+</trans-unit>
+<trans-unit id="tu235" xml:space="preserve">
+<source xml:lang="en">Fixed a bug causing the shadow map offset to be calculated incorrectly for certain light directions.</source>
+<target xml:lang="pt">Fixed a bug causing the shadow map offset to be calculated incorrectly for certain light directions.</target>
+</trans-unit>
+<trans-unit id="tu236" xml:space="preserve">
+<source xml:lang="en">Fixed a bug causing the shadow map pixel thickness streams variable not to be set.</source>
+<target xml:lang="pt">Fixed a bug causing the shadow map pixel thickness streams variable not to be set.</target>
+</trans-unit>
+<trans-unit id="tu237" xml:space="preserve">
+<source xml:lang="en">Fixed a bug in the SSS post-process which caused the scattering kernel to become distorted in non-square viewports.</source>
+<target xml:lang="pt">Fixed a bug in the SSS post-process which caused the scattering kernel to become distorted in non-square viewports.</target>
+</trans-unit>
+<trans-unit id="tu238" xml:space="preserve">
+<source xml:lang="en">Fixed a bug inside of ShadowMapReceiverSpot.xksl.</source>
+<target xml:lang="pt">Fixed a bug inside of ShadowMapReceiverSpot.xksl.</target>
+</trans-unit>
+<trans-unit id="tu239" xml:space="preserve">
+<source xml:lang="en">Fixed a bug which caused NaN with the Scheuermann approximation shading mode. Cleaned up and commented the hair shaders.</source>
+<target xml:lang="pt">Fixed a bug which caused NaN with the Scheuermann approximation shading mode. Cleaned up and commented the hair shaders.</target>
+</trans-unit>
+<trans-unit id="tu240" xml:space="preserve">
+<source xml:lang="en">Fixed a copy-paste error.</source>
+<target xml:lang="pt">Fixed a copy-paste error.</target>
+</trans-unit>
+<trans-unit id="tu241" xml:space="preserve">
+<source xml:lang="en">Fixed a Mizuchi bug in the indirect hair lighting.</source>
+<target xml:lang="pt">Fixed a Mizuchi bug in the indirect hair lighting.</target>
+</trans-unit>
+<trans-unit id="tu242" xml:space="preserve">
+<source xml:lang="en">Fixed back face rendering for opaque hair geometry. Removed debug code. Refactored the hair-specific code in MeshPipelineProcessor.</source>
+<target xml:lang="pt">Fixed back face rendering for opaque hair geometry. Removed debug code. Refactored the hair-specific code in MeshPipelineProcessor.</target>
+</trans-unit>
+<trans-unit id="tu243" xml:space="preserve">
+<source xml:lang="en">Fixed new, minor shader compilation errors.</source>
+<target xml:lang="pt">Fixed new, minor shader compilation errors.</target>
+</trans-unit>
+<trans-unit id="tu244" xml:space="preserve">
+<source xml:lang="en">Fixed some SSS thickness calculation artifacts by supply the correct, world space normals instead of object space normals.</source>
+<target xml:lang="pt">Fixed some SSS thickness calculation artifacts by supply the correct, world space normals instead of object space normals.</target>
+</trans-unit>
+<trans-unit id="tu245" xml:space="preserve">
+<source xml:lang="en">Fixed some stuff in the hair rendering code and cleaned it up.</source>
+<target xml:lang="pt">Fixed some stuff in the hair rendering code and cleaned it up.</target>
+</trans-unit>
+<trans-unit id="tu246" xml:space="preserve">
+<source xml:lang="en">Fixed SSS thickness calculation for spotlights.</source>
+<target xml:lang="pt">Fixed SSS thickness calculation for spotlights.</target>
+</trans-unit>
+<trans-unit id="tu247" xml:space="preserve">
+<source xml:lang="en">Fixed the bug which causes the thickness to fade to 1.0 and not 0.0 at the border of shadow maps.</source>
+<target xml:lang="pt">Fixed the bug which causes the thickness to fade to 1.0 and not 0.0 at the border of shadow maps.</target>
+</trans-unit>
+<trans-unit id="tu248" xml:space="preserve">
+<source xml:lang="en">Fixed the cavity map integration for the hair shading and removed the obsolete cavity parameter.</source>
+<target xml:lang="pt">Fixed the cavity map integration for the hair shading and removed the obsolete cavity parameter.</target>
+</trans-unit>
+<trans-unit id="tu249" xml:space="preserve">
+<source xml:lang="en">Fixed the incorrect force to renderbuffer for all FBO attachments. Refactored the code.</source>
+<target xml:lang="pt">Fixed the incorrect force to renderbuffer for all FBO attachments. Refactored the code.</target>
+</trans-unit>
+<trans-unit id="tu250" xml:space="preserve">
+<source xml:lang="en">Fixed the issue with the constant buffers + mixins that are included multiple times per hair shader. Refactored the hair rendering code.</source>
+<target xml:lang="pt">Fixed the issue with the constant buffers + mixins that are included multiple times per hair shader. Refactored the hair rendering code.</target>
+</trans-unit>
+<trans-unit id="tu251" xml:space="preserve">
+<source xml:lang="en">Further cleaned up the SSSS shaders.</source>
+<target xml:lang="pt">Further cleaned up the SSSS shaders.</target>
+</trans-unit>
+<trans-unit id="tu252" xml:space="preserve">
+<source xml:lang="en">Got rid of the circular dependency between SubsurfaceScatteringBlur and SubsurfaceScatteringRenderFeature.</source>
+<target xml:lang="pt">Got rid of the circular dependency between SubsurfaceScatteringBlur and SubsurfaceScatteringRenderFeature.</target>
+</trans-unit>
+<trans-unit id="tu253" xml:space="preserve">
+<source xml:lang="en">Hid the "Enabled" property of the MSAAResolver in a safer way.</source>
+<target xml:lang="pt">Hid the "Enabled" property of the MSAAResolver in a safer way.</target>
+</trans-unit>
+<trans-unit id="tu254" xml:space="preserve">
+<source xml:lang="en">Implemented "FilterThickness()" for lights without PCF shadows.</source>
+<target xml:lang="pt">Implemented "FilterThickness()" for lights without PCF shadows.</target>
+</trans-unit>
+<trans-unit id="tu255" xml:space="preserve">
+<source xml:lang="en">Implemented a debug mode for the hair shading.</source>
+<target xml:lang="pt">Implemented a debug mode for the hair shading.</target>
+</trans-unit>
+<trans-unit id="tu256" xml:space="preserve">
+<source xml:lang="en">Implemented a list to choose different types of scattering profiles from for SSS (WIP).</source>
+<target xml:lang="pt">Implemented a list to choose different types of scattering profiles from for SSS (WIP).</target>
+</trans-unit>
+<trans-unit id="tu257" xml:space="preserve">
+<source xml:lang="en">Implemented a more accurate offset for the SSS thickness filtering to greatly reduce the artifacts around object edges.</source>
+<target xml:lang="pt">Implemented a more accurate offset for the SSS thickness filtering to greatly reduce the artifacts around object edges.</target>
+</trans-unit>
+<trans-unit id="tu258" xml:space="preserve">
+<source xml:lang="en">Implemented a new extension point in "MaterialSurfaceLightingAndShading" and "IMaterialSurfaceShading".</source>
+<target xml:lang="pt">Implemented a new extension point in "MaterialSurfaceLightingAndShading" and "IMaterialSurfaceShading".</target>
+</trans-unit>
+<trans-unit id="tu259" xml:space="preserve">
+<source xml:lang="en">Implemented a PipelineProcessor for hair and disabled the hair-specific code in MeshPipelineProcessor.</source>
+<target xml:lang="pt">Implemented a PipelineProcessor for hair and disabled the hair-specific code in MeshPipelineProcessor.</target>
+</trans-unit>
+<trans-unit id="tu260" xml:space="preserve">
+<source xml:lang="en">Implemented cascade blending for the thickness calculation using directional shadow maps.</source>
+<target xml:lang="pt">Implemented cascade blending for the thickness calculation using directional shadow maps.</target>
+</trans-unit>
+<trans-unit id="tu261" xml:space="preserve">
+<source xml:lang="en">Implemented deduplication for the scattering parameter array in the SubsurfaceScatteringRenderFeature to save space in the array. Refactored the code.</source>
+<target xml:lang="pt">Implemented deduplication for the scattering parameter array in the SubsurfaceScatteringRenderFeature to save space in the array. Refactored the code.</target>
+</trans-unit>
+<trans-unit id="tu262" xml:space="preserve">
+<source xml:lang="en">Implemented force-disable of MSAA on iOS, so it compiles.</source>
+<target xml:lang="pt">Implemented force-disable of MSAA on iOS, so it compiles.</target>
+</trans-unit>
+<trans-unit id="tu263" xml:space="preserve">
+<source xml:lang="en">Implemented MSAA for Desktop OpenGL. Fixed the MSAAResolver serialization.</source>
+<target xml:lang="pt">Implemented MSAA for Desktop OpenGL. Fixed the MSAAResolver serialization.</target>
+</trans-unit>
+<trans-unit id="tu264" xml:space="preserve">
+<source xml:lang="en">Implemented MSAA for OpenGL ES. Simplified and optimized some OpenGL code.</source>
+<target xml:lang="pt">Implemented MSAA for OpenGL ES. Simplified and optimized some OpenGL code.</target>
+</trans-unit>
+<trans-unit id="tu265" xml:space="preserve">
+<source xml:lang="en">Implemented new diffuse and specular shading models for the hair based on the default shading model implementations.</source>
+<target xml:lang="pt">Implemented new diffuse and specular shading models for the hair based on the default shading model implementations.</target>
+</trans-unit>
+<trans-unit id="tu266" xml:space="preserve">
+<source xml:lang="en">Implemented preliminary in-shader scattering profile generation and precomputed scattering profile support.</source>
+<target xml:lang="pt">Implemented preliminary in-shader scattering profile generation and precomputed scattering profile support.</target>
+</trans-unit>
+<trans-unit id="tu267" xml:space="preserve">
+<source xml:lang="en">Implemented proper support for fake shadowing, shadowing and scattering. Some refactoring. Combined duplicate code. Added more parameters. Moved some range checks to CPU.</source>
+<target xml:lang="pt">Implemented proper support for fake shadowing, shadowing and scattering. Some refactoring. Combined duplicate code. Added more parameters. Moved some range checks to CPU.</target>
+</trans-unit>
+<trans-unit id="tu268" xml:space="preserve">
+<source xml:lang="en">Implemented scattering strength writing to alpha channel, so the post-process can sample it.</source>
+<target xml:lang="pt">Implemented scattering strength writing to alpha channel, so the post-process can sample it.</target>
+</trans-unit>
+<trans-unit id="tu269" xml:space="preserve">
+<source xml:lang="en">Implemented scattering support for point lights and improved other thickness calculation things.</source>
+<target xml:lang="pt">Implemented scattering support for point lights and improved other thickness calculation things.</target>
+</trans-unit>
+<trans-unit id="tu270" xml:space="preserve">
+<source xml:lang="en">Implemented support for changing the hair shading model. Refactored the shaders. Temporarily disabled support for noise textures. Replaced "Texture" properties with "IComputeColor". Updated userdocs and summaries.</source>
+<target xml:lang="pt">Implemented support for changing the hair shading model. Refactored the shaders. Temporarily disabled support for noise textures. Replaced "Texture" properties with "IComputeColor". Updated userdocs and summaries.</target>
+</trans-unit>
+<trans-unit id="tu271" xml:space="preserve">
+<source xml:lang="en">Implemented support for changing the render mode of the SSS post-process from within the editor.</source>
+<target xml:lang="pt">Implemented support for changing the render mode of the SSS post-process from within the editor.</target>
+</trans-unit>
+<trans-unit id="tu272" xml:space="preserve">
+<source xml:lang="en">Implemented support for orthographic and perspective projections for SSS. Got rid of the "DepthFalloffStrength" parameter.</source>
+<target xml:lang="pt">Implemented support for orthographic and perspective projections for SSS. Got rid of the "DepthFalloffStrength" parameter.</target>
+</trans-unit>
+<trans-unit id="tu273" xml:space="preserve">
+<source xml:lang="en">Implemented support for SSS strength maps.</source>
+<target xml:lang="pt">Implemented support for SSS strength maps.</target>
+</trans-unit>
+<trans-unit id="tu274" xml:space="preserve">
+<source xml:lang="en">Implemented the "SubsurfaceScatteringSettings" class and hardcoded the sample count for now. Integrated it into the dependent classes.</source>
+<target xml:lang="pt">Implemented the "SubsurfaceScatteringSettings" class and hardcoded the sample count for now. Integrated it into the dependent classes.</target>
+</trans-unit>
+<trans-unit id="tu275" xml:space="preserve">
+<source xml:lang="en">Implemented the first version of the SSS transmittance lighting as a new shading model.</source>
+<target xml:lang="pt">Implemented the first version of the SSS transmittance lighting as a new shading model.</target>
+</trans-unit>
+<trans-unit id="tu276" xml:space="preserve">
+<source xml:lang="en">Implemented the new streams variable "meshNormalWS" and integrated it in the hair shading and SSS.</source>
+<target xml:lang="pt">Implemented the new streams variable "meshNormalWS" and integrated it in the hair shading and SSS.</target>
+</trans-unit>
+<trans-unit id="tu277" xml:space="preserve">
+<source xml:lang="en">Implemented the Separable Subsurface Scattering post process as a new ImageEffect.</source>
+<target xml:lang="pt">Implemented the Separable Subsurface Scattering post process as a new ImageEffect.</target>
+</trans-unit>
+<trans-unit id="tu278" xml:space="preserve">
+<source xml:lang="en">Implemented the SSSS strength map using ComputeColor for more artistic freedom and proper mip map selection.</source>
+<target xml:lang="pt">Implemented the SSSS strength map using ComputeColor for more artistic freedom and proper mip map selection.</target>
+</trans-unit>
+<trans-unit id="tu279" xml:space="preserve">
+<source xml:lang="en">Implemented two new parameters for controlling the specular noise textures for hair shading. Commented out unused code.</source>
+<target xml:lang="pt">Implemented two new parameters for controlling the specular noise textures for hair shading. Commented out unused code.</target>
+</trans-unit>
+<trans-unit id="tu280" xml:space="preserve">
+<source xml:lang="en">Improved the jittering in the SSSS post-process shader and refactored it a little.</source>
+<target xml:lang="pt">Improved the jittering in the SSSS post-process shader and refactored it a little.</target>
+</trans-unit>
+<trans-unit id="tu281" xml:space="preserve">
+<source xml:lang="en">Improved the SSS material array and index generation for the post-process.</source>
+<target xml:lang="pt">Improved the SSS material array and index generation for the post-process.</target>
+</trans-unit>
+<trans-unit id="tu282" xml:space="preserve">
+<source xml:lang="en">Improved the SSS thickness filtering artifacts by calculating a better normal offset.</source>
+<target xml:lang="pt">Improved the SSS thickness filtering artifacts by calculating a better normal offset.</target>
+</trans-unit>
+<trans-unit id="tu283" xml:space="preserve">
+<source xml:lang="en">Included the MeshHairRenderStageSelector class in the project.</source>
+<target xml:lang="pt">Included the MeshHairRenderStageSelector class in the project.</target>
+</trans-unit>
+<trans-unit id="tu284" xml:space="preserve">
+<source xml:lang="en">Increased the allowed number of digits for the hair specular strength to three.</source>
+<target xml:lang="pt">Increased the allowed number of digits for the hair specular strength to three.</target>
+</trans-unit>
+<trans-unit id="tu285" xml:space="preserve">
+<source xml:lang="en">Integrated correct, world space normals for the SSS transmittance calculation.</source>
+<target xml:lang="pt">Integrated correct, world space normals for the SSS transmittance calculation.</target>
+</trans-unit>
+<trans-unit id="tu286" xml:space="preserve">
+<source xml:lang="en">Integrated optional kernel size jittering to break the banding artifacts. Improved the rotation randomization. Removed some obsolete code.</source>
+<target xml:lang="pt">Integrated optional kernel size jittering to break the banding artifacts. Improved the rotation randomization. Removed some obsolete code.</target>
+</trans-unit>
+<trans-unit id="tu287" xml:space="preserve">
+<source xml:lang="en">Integrated screen space scattering kernel generation. Replaced the "Quality" parameter with "SampleCount".</source>
+<target xml:lang="pt">Integrated screen space scattering kernel generation. Replaced the "Quality" parameter with "SampleCount".</target>
+</trans-unit>
+<trans-unit id="tu288" xml:space="preserve">
+<source xml:lang="en">Integrated support for generating a subsurface scattering material index buffer that is consumed by the SSSS post process.</source>
+<target xml:lang="pt">Integrated support for generating a subsurface scattering material index buffer that is consumed by the SSSS post process.</target>
+</trans-unit>
+<trans-unit id="tu289" xml:space="preserve">
+<source xml:lang="en">Integrated the editor-tunable parameters for the shading model. Implemented transmittance support for PCF shadows.</source>
+<target xml:lang="pt">Integrated the editor-tunable parameters for the shading model. Implemented transmittance support for PCF shadows.</target>
+</trans-unit>
+<trans-unit id="tu290" xml:space="preserve">
+<source xml:lang="en">Little code simplification.</source>
+<target xml:lang="pt">Little code simplification.</target>
+</trans-unit>
+<trans-unit id="tu291" xml:space="preserve">
+<source xml:lang="en">Little refactoring in the specular hair model feature.</source>
+<target xml:lang="pt">Little refactoring in the specular hair model feature.</target>
+</trans-unit>
+<trans-unit id="tu292" xml:space="preserve">
+<source xml:lang="en">Made "SpriteBase.xksl" always write zero to all render targets in order to prevent uninitialized framebuffer regions (to prevent having an SSS material index in the sky).</source>
+<target xml:lang="pt">Made "SpriteBase.xksl" always write zero to all render targets in order to prevent uninitialized framebuffer regions (to prevent having an SSS material index in the sky).</target>
+</trans-unit>
+<trans-unit id="tu293" xml:space="preserve">
+<source xml:lang="en">Made all the materials write to the SSS material index buffer.</source>
+<target xml:lang="pt">Made all the materials write to the SSS material index buffer.</target>
+</trans-unit>
+<trans-unit id="tu294" xml:space="preserve">
+<source xml:lang="en">Made it possible to enable/disable the SSS material deduplication. Cleaned up and commented code.</source>
+<target xml:lang="pt">Made it possible to enable/disable the SSS material deduplication. Cleaned up and commented code.</target>
+</trans-unit>
+<trans-unit id="tu295" xml:space="preserve">
+<source xml:lang="en">Made multisampling get disabled when OpenGL ES 2 is being used. Added logging for adjustments of the multisampling level.</source>
+<target xml:lang="pt">Made multisampling get disabled when OpenGL ES 2 is being used. Added logging for adjustments of the multisampling level.</target>
+</trans-unit>
+<trans-unit id="tu296" xml:space="preserve">
+<source xml:lang="en">Made the opaque hair geometry render using the "Opaque" RenderStage and removed the "HairOpaque" RenderStage from ForwardRenderer.</source>
+<target xml:lang="pt">Made the opaque hair geometry render using the "Opaque" RenderStage and removed the "HairOpaque" RenderStage from ForwardRenderer.</target>
+</trans-unit>
+<trans-unit id="tu297" xml:space="preserve">
+<source xml:lang="en">Made the specular hair lighting get attenuated by alpha, so transparent regions don't exhibit specular reflections.</source>
+<target xml:lang="pt">Made the specular hair lighting get attenuated by alpha, so transparent regions don't exhibit specular reflections.</target>
+</trans-unit>
+<trans-unit id="tu298" xml:space="preserve">
+<source xml:lang="en">Made the SSS post-process get skipped if no scattering materials are visible.</source>
+<target xml:lang="pt">Made the SSS post-process get skipped if no scattering materials are visible.</target>
+</trans-unit>
+<trans-unit id="tu299" xml:space="preserve">
+<source xml:lang="en">Made the SSSS post-process work accurately for non-square viewports too. Refactored the code. Disabled the debug shader code. Fixed the inverted clip space coordinates.</source>
+<target xml:lang="pt">Made the SSSS post-process work accurately for non-square viewports too. Refactored the code. Disabled the debug shader code. Fixed the inverted clip space coordinates.</target>
+</trans-unit>
+<trans-unit id="tu300" xml:space="preserve">
+<source xml:lang="en">Made the Transparency material feature get ignored if hair shading is on to prevent issues.</source>
+<target xml:lang="pt">Made the Transparency material feature get ignored if hair shading is on to prevent issues.</target>
+</trans-unit>
+<trans-unit id="tu301" xml:space="preserve">
+<source xml:lang="en">Minor refactoring in the hair code.</source>
+<target xml:lang="pt">Minor refactoring in the hair code.</target>
+</trans-unit>
+<trans-unit id="tu302" xml:space="preserve">
+<source xml:lang="en">Moved SSS mixins to a subfolder.</source>
+<target xml:lang="pt">Moved SSS mixins to a subfolder.</target>
+</trans-unit>
+<trans-unit id="tu303" xml:space="preserve">
+<source xml:lang="en">Moved the "MaterialHairSurfaceData" structure to the specular hair shader because it's only needed there now. Renamed "MaterialHairSurfaceData.xksl" to "MaterialHairShared.xksl".</source>
+<target xml:lang="pt">Moved the "MaterialHairSurfaceData" structure to the specular hair shader because it's only needed there now. Renamed "MaterialHairSurfaceData.xksl" to "MaterialHairShared.xksl".</target>
+</trans-unit>
+<trans-unit id="tu304" xml:space="preserve">
+<source xml:lang="en">Moved the angle conversion to the CPU side.</source>
+<target xml:lang="pt">Moved the angle conversion to the CPU side.</target>
+</trans-unit>
+<trans-unit id="tu305" xml:space="preserve">
+<source xml:lang="en">Moved the definition of the screen space scattering kernel (for SSSS) out of the shader.</source>
+<target xml:lang="pt">Moved the definition of the screen space scattering kernel (for SSSS) out of the shader.</target>
+</trans-unit>
+<trans-unit id="tu306" xml:space="preserve">
+<source xml:lang="en">Moved the hair shader mixin code files to the correct subfolders. Renamed some shaders and classes.</source>
+<target xml:lang="pt">Moved the hair shader mixin code files to the correct subfolders. Renamed some shaders and classes.</target>
+</trans-unit>
+<trans-unit id="tu307" xml:space="preserve">
+<source xml:lang="en">Moved the hair shader mixin code into subfolders for better overview.</source>
+<target xml:lang="pt">Moved the hair shader mixin code into subfolders for better overview.</target>
+</trans-unit>
+<trans-unit id="tu308" xml:space="preserve">
+<source xml:lang="en">Moved the SSSS post processing code to the correct folder within the project.</source>
+<target xml:lang="pt">Moved the SSSS post processing code to the correct folder within the project.</target>
+</trans-unit>
+<trans-unit id="tu309" xml:space="preserve">
+<source xml:lang="en">OpenGL: Fix regression where depth textures used as SRV were created as render buffers rather than textures.</source>
+<target xml:lang="pt">OpenGL: Fix regression where depth textures used as SRV were created as render buffers rather than textures.</target>
+</trans-unit>
+<trans-unit id="tu310" xml:space="preserve">
+<source xml:lang="en">Ported and integrated most of the Mizuchi diffuse and specular hair shading functions. Implemented editor parameters.</source>
+<target xml:lang="pt">Ported and integrated most of the Mizuchi diffuse and specular hair shading functions. Implemented editor parameters.</target>
+</trans-unit>
+<trans-unit id="tu311" xml:space="preserve">
+<source xml:lang="en">Readded missing SpriteBatch.bytecodeSRgb.Vulkan.Level\_9\_1.cs</source>
+<target xml:lang="pt">Readded missing SpriteBatch.bytecodeSRgb.Vulkan.Level\_9\_1.cs</target>
+</trans-unit>
+<trans-unit id="tu312" xml:space="preserve">
+<source xml:lang="en">Refactored fake shadowing into a drop down option with accompanying parameters. Removed obsolete code.</source>
+<target xml:lang="pt">Refactored fake shadowing into a drop down option with accompanying parameters. Removed obsolete code.</target>
+</trans-unit>
+<trans-unit id="tu313" xml:space="preserve">
+<source xml:lang="en">Refactored hair direction (tangent/bitangent) and shadowing/scattering options into drop down options with accompanying parameters. Removed obsolete code.</source>
+<target xml:lang="pt">Refactored hair direction (tangent/bitangent) and shadowing/scattering options into drop down options with accompanying parameters. Removed obsolete code.</target>
+</trans-unit>
+<trans-unit id="tu314" xml:space="preserve">
+<source xml:lang="en">Refactored the code.</source>
+<target xml:lang="pt">Refactored the code.</target>
+</trans-unit>
+<trans-unit id="tu315" xml:space="preserve">
+<source xml:lang="en">Refactored the hair rendering code. Adjusted properties. Implemented "GetHashCode()" for all hair classes. Removed obsolete code. Replaced float4 with float3 in shaders.</source>
+<target xml:lang="pt">Refactored the hair rendering code. Adjusted properties. Implemented "GetHashCode()" for all hair classes. Removed obsolete code. Replaced float4 with float3 in shaders.</target>
+</trans-unit>
+<trans-unit id="tu316" xml:space="preserve">
+<source xml:lang="en">Refactored the hair shaders. Implemented overrides for PrepareForLightingAndShading and integrated support for noise maps using ComputeColor.</source>
+<target xml:lang="pt">Refactored the hair shaders. Implemented overrides for PrepareForLightingAndShading and integrated support for noise maps using ComputeColor.</target>
+</trans-unit>
+<trans-unit id="tu317" xml:space="preserve">
+<source xml:lang="en">Refactored the HairRenderFeature class. Multithreaded some code.</source>
+<target xml:lang="pt">Refactored the HairRenderFeature class. Multithreaded some code.</target>
+</trans-unit>
+<trans-unit id="tu318" xml:space="preserve">
+<source xml:lang="en">Refactored the simplified the MSAAResolver class. Made the MSAAResolver stay always on to get rid of redundant code and to make the editor settings more obvious.</source>
+<target xml:lang="pt">Refactored the simplified the MSAAResolver class. Made the MSAAResolver stay always on to get rid of redundant code and to make the editor settings more obvious.</target>
+</trans-unit>
+<trans-unit id="tu319" xml:space="preserve">
+<source xml:lang="en">Refactored the SSS thickness calculation shader code.</source>
+<target xml:lang="pt">Refactored the SSS thickness calculation shader code.</target>
+</trans-unit>
+<trans-unit id="tu320" xml:space="preserve">
+<source xml:lang="en">Refactored the SSSS material array generation, so the material array gets allocated only once at startup and from then on gets modified only.</source>
+<target xml:lang="pt">Refactored the SSSS material array generation, so the material array gets allocated only once at startup and from then on gets modified only.</target>
+</trans-unit>
+<trans-unit id="tu321" xml:space="preserve">
+<source xml:lang="en">Refactoring and cleanup. Removed duplicate and redundant code.</source>
+<target xml:lang="pt">Refactoring and cleanup. Removed duplicate and redundant code.</target>
+</trans-unit>
+<trans-unit id="tu322" xml:space="preserve">
+<source xml:lang="en">Refactoring. Got rid of duplicate code. Slightly changed the environmental lighting. Implemented the option for the shading model using an enum.</source>
+<target xml:lang="pt">Refactoring. Got rid of duplicate code. Slightly changed the environmental lighting. Implemented the option for the shading model using an enum.</target>
+</trans-unit>
+<trans-unit id="tu323" xml:space="preserve">
+<source xml:lang="en">Reimplemented the hair "tag" as a ParameterKey so hair meshes can get filtered out correctly. Updated the RenderStageSelectors.</source>
+<target xml:lang="pt">Reimplemented the hair "tag" as a ParameterKey so hair meshes can get filtered out correctly. Updated the RenderStageSelectors.</target>
+</trans-unit>
+<trans-unit id="tu324" xml:space="preserve">
+<source xml:lang="en">Reimplemented the hair rendering using the new multipass feature. Fixed some hair shading issues. Reimplemented the specular environmental lighting using IMaterialSpecularMicrofacetEnvironmentFunction.</source>
+<target xml:lang="pt">Reimplemented the hair rendering using the new multipass feature. Fixed some hair shading issues. Reimplemented the specular environmental lighting using IMaterialSpecularMicrofacetEnvironmentFunction.</target>
+</trans-unit>
+<trans-unit id="tu325" xml:space="preserve">
+<source xml:lang="en">Reimplemented the SSS as a separate material feature. Removed obsolete material parameters.</source>
+<target xml:lang="pt">Reimplemented the SSS as a separate material feature. Removed obsolete material parameters.</target>
+</trans-unit>
+<trans-unit id="tu326" xml:space="preserve">
+<source xml:lang="en">Remove unused built-in shader bytecode</source>
+<target xml:lang="pt">Remove unused built-in shader bytecode</target>
+</trans-unit>
+<trans-unit id="tu327" xml:space="preserve">
+<source xml:lang="en">Removed a commented out line of debug code.</source>
+<target xml:lang="pt">Removed a commented out line of debug code.</target>
+</trans-unit>
+<trans-unit id="tu328" xml:space="preserve">
+<source xml:lang="en">Removed a project include.</source>
+<target xml:lang="pt">Removed a project include.</target>
+</trans-unit>
+<trans-unit id="tu329" xml:space="preserve">
+<source xml:lang="en">Removed an obsolete line of code.</source>
+<target xml:lang="pt">Removed an obsolete line of code.</target>
+</trans-unit>
+<trans-unit id="tu330" xml:space="preserve">
+<source xml:lang="en">Removed dead code.</source>
+<target xml:lang="pt">Removed dead code.</target>
+</trans-unit>
+<trans-unit id="tu331" xml:space="preserve">
+<source xml:lang="en">Removed obsolete code from "MaterialSurfaceShadingDiffuseHair.xksl".</source>
+<target xml:lang="pt">Removed obsolete code from "MaterialSurfaceShadingDiffuseHair.xksl".</target>
+</trans-unit>
+<trans-unit id="tu332" xml:space="preserve">
+<source xml:lang="en">Removed obsolete hair render stages from "ForwardRenderer".</source>
+<target xml:lang="pt">Removed obsolete hair render stages from "ForwardRenderer".</target>
+</trans-unit>
+<trans-unit id="tu333" xml:space="preserve">
+<source xml:lang="en">Removed obsolete hair rendering code.</source>
+<target xml:lang="pt">Removed obsolete hair rendering code.</target>
+</trans-unit>
+<trans-unit id="tu334" xml:space="preserve">
+<source xml:lang="en">Removed obsolete shader code. Updated comments. Moved the "AfterLightingAndShading()" shader extension point.</source>
+<target xml:lang="pt">Removed obsolete shader code. Updated comments. Moved the "AfterLightingAndShading()" shader extension point.</target>
+</trans-unit>
+<trans-unit id="tu335" xml:space="preserve">
+<source xml:lang="en">Removed redundant hair shading code.</source>
+<target xml:lang="pt">Removed redundant hair shading code.</target>
+</trans-unit>
+<trans-unit id="tu336" xml:space="preserve">
+<source xml:lang="en">Removed some obsolete code from "MaterialSurfaceShadingSpecularHair.xksl".</source>
+<target xml:lang="pt">Removed some obsolete code from "MaterialSurfaceShadingSpecularHair.xksl".</target>
+</trans-unit>
+<trans-unit id="tu337" xml:space="preserve">
+<source xml:lang="en">Removed the "MaterialSurfaceShadingSharedHairKeys" class and replaced its "IsHair" parameter with "PassID".</source>
+<target xml:lang="pt">Removed the "MaterialSurfaceShadingSharedHairKeys" class and replaced its "IsHair" parameter with "PassID".</target>
+</trans-unit>
+<trans-unit id="tu338" xml:space="preserve">
+<source xml:lang="en">Removed the "override" keyword from "FilterThickness()".</source>
+<target xml:lang="pt">Removed the "override" keyword from "FilterThickness()".</target>
+</trans-unit>
+<trans-unit id="tu339" xml:space="preserve">
+<source xml:lang="en">Removed the manual PCF thickness filtering code after confirming that there's no visual difference compared to taking one interpolated sample.</source>
+<target xml:lang="pt">Removed the manual PCF thickness filtering code after confirming that there's no visual difference compared to taking one interpolated sample.</target>
+</trans-unit>
+<trans-unit id="tu340" xml:space="preserve">
+<source xml:lang="en">Removed the obsolete Fresnel, Visibility and Distribution mixins &amp; properties from the hair model feature.</source>
+<target xml:lang="pt">Removed the obsolete Fresnel, Visibility and Distribution mixins &amp; properties from the hair model feature.</target>
+</trans-unit>
+<trans-unit id="tu341" xml:space="preserve">
+<source xml:lang="en">Removed the scattering kernel parameters from Material.cs and stored them using material parameters instead. Some refactoring &amp; bugfixing.</source>
+<target xml:lang="pt">Removed the scattering kernel parameters from Material.cs and stored them using material parameters instead. Some refactoring &amp; bugfixing.</target>
+</trans-unit>
+<trans-unit id="tu342" xml:space="preserve">
+<source xml:lang="en">Removed unused includes from the cel shading shaders and removed duplicate code.</source>
+<target xml:lang="pt">Removed unused includes from the cel shading shaders and removed duplicate code.</target>
+</trans-unit>
+<trans-unit id="tu343" xml:space="preserve">
+<source xml:lang="en">Removed unused parameters from "LightDirectionalShadowMapRenderer.cs".</source>
+<target xml:lang="pt">Removed unused parameters from "LightDirectionalShadowMapRenderer.cs".</target>
+</trans-unit>
+<trans-unit id="tu344" xml:space="preserve">
+<source xml:lang="en">Removed unused parameters from "LightSpotShadowMapRenderer.cs".</source>
+<target xml:lang="pt">Removed unused parameters from "LightSpotShadowMapRenderer.cs".</target>
+</trans-unit>
+<trans-unit id="tu345" xml:space="preserve">
+<source xml:lang="en">Renamed "MaterialHairLightAttenuationFunctionDefault" to "MaterialHairLightAttenuationFunctionDirectional".</source>
+<target xml:lang="pt">Renamed "MaterialHairLightAttenuationFunctionDefault" to "MaterialHairLightAttenuationFunctionDirectional".</target>
+</trans-unit>
+<trans-unit id="tu346" xml:space="preserve">
+<source xml:lang="en">Renamed a parameter of the SSSS post process.</source>
+<target xml:lang="pt">Renamed a parameter of the SSSS post process.</target>
+</trans-unit>
+<trans-unit id="tu347" xml:space="preserve">
+<source xml:lang="en">Renamed some SSS classes and shaders. Changed the way the scattering strength map is handled.</source>
+<target xml:lang="pt">Renamed some SSS classes and shaders. Changed the way the scattering strength map is handled.</target>
+</trans-unit>
+<trans-unit id="tu348" xml:space="preserve">
+<source xml:lang="en">Renamed the property "Fake shadowing function" to "Light attenuation function" and added comments.</source>
+<target xml:lang="pt">Renamed the property "Fake shadowing function" to "Light attenuation function" and added comments.</target>
+</trans-unit>
+<trans-unit id="tu349" xml:space="preserve">
+<source xml:lang="en">Replaced IComputeColor with IComputeScalar for the hair noise maps.</source>
+<target xml:lang="pt">Replaced IComputeColor with IComputeScalar for the hair noise maps.</target>
+</trans-unit>
+<trans-unit id="tu350" xml:space="preserve">
+<source xml:lang="en">Separated out the scattering kernel as an additional setting, independent of of the scattering profile.</source>
+<target xml:lang="pt">Separated out the scattering kernel as an additional setting, independent of of the scattering profile.</target>
+</trans-unit>
+<trans-unit id="tu351" xml:space="preserve">
+<source xml:lang="en">Simplified the code using existing streams variables. Implemented the "UseTangent" setting. Added explanations and numerical ranges for properties.</source>
+<target xml:lang="pt">Simplified the code using existing streams variables. Implemented the "UseTangent" setting. Added explanations and numerical ranges for properties.</target>
+</trans-unit>
+<trans-unit id="tu352" xml:space="preserve">
+<source xml:lang="en">Simplified the PCF shadow and thickness code.</source>
+<target xml:lang="pt">Simplified the PCF shadow and thickness code.</target>
+</trans-unit>
+<trans-unit id="tu353" xml:space="preserve">
+<source xml:lang="en">Simplified the shadow map thickness filtering code.</source>
+<target xml:lang="pt">Simplified the shadow map thickness filtering code.</target>
+</trans-unit>
+<trans-unit id="tu354" xml:space="preserve">
+<source xml:lang="en">Specified correct numerical ranges for the SSS shading model parameters and added userdocs and summaries. Made it possible to change SSS parameters without waiting for a shader recompilation.</source>
+<target xml:lang="pt">Specified correct numerical ranges for the SSS shading model parameters and added userdocs and summaries. Made it possible to change SSS parameters without waiting for a shader recompilation.</target>
+</trans-unit>
+<trans-unit id="tu355" xml:space="preserve">
+<source xml:lang="en">Temporarily disabled the "scatteringWidths" array for the SSSS post process. Implemented a discard for materials with a material index of zero.</source>
+<target xml:lang="pt">Temporarily disabled the "scatteringWidths" array for the SSSS post process. Implemented a discard for materials with a material index of zero.</target>
+</trans-unit>
+<trans-unit id="tu356" xml:space="preserve">
+<source xml:lang="en">Temporary integration of hair rendering using three render passes (opaque, transparent back, transparent front), which exhibits flickering.</source>
+<target xml:lang="pt">Temporary integration of hair rendering using three render passes (opaque, transparent back, transparent front), which exhibits flickering.</target>
+</trans-unit>
+<trans-unit id="tu357" xml:space="preserve">
+<source xml:lang="en">Update source to match new material pass API</source>
+<target xml:lang="pt">Update source to match new material pass API</target>
+</trans-unit>
+<trans-unit id="tu358" xml:space="preserve">
+<source xml:lang="en">Updated an outdated comment about MSAA support.</source>
+<target xml:lang="pt">Updated an outdated comment about MSAA support.</target>
+</trans-unit>
+<trans-unit id="tu359" xml:space="preserve">
+<source xml:lang="en">Updated comments in SSS code.</source>
+<target xml:lang="pt">Updated comments in SSS code.</target>
+</trans-unit>
+<trans-unit id="tu360" xml:space="preserve">
+<source xml:lang="en">Updated the SSS "Translucency" default value so it matches the one of the SSSS demo &amp; Mizuchi.</source>
+<target xml:lang="pt">Updated the SSS "Translucency" default value so it matches the one of the SSSS demo &amp; Mizuchi.</target>
+</trans-unit>
+<trans-unit id="tu361" xml:space="preserve">
+<source xml:lang="en">Graphics.Tests</source>
+<target xml:lang="pt">Graphics.Tests</target>
+</trans-unit>
+<trans-unit id="tu362" xml:space="preserve">
+<source xml:lang="en">Bump gold image version (skybox compression changes)</source>
+<target xml:lang="pt">Bump gold image version (skybox compression changes)</target>
+</trans-unit>
+<trans-unit id="tu363" xml:space="preserve">
+<source xml:lang="en">Importer.FBX</source>
+<target xml:lang="pt">Importer.FBX</target>
+</trans-unit>
+<trans-unit id="tu364" xml:space="preserve">
+<source xml:lang="en">Add support for partial animation of a vectors (use default value instead of 0 for component missing animation curves).</source>
+<target xml:lang="pt">Add support for partial animation of a vectors (use default value instead of 0 for component missing animation curves).</target>
+</trans-unit>
+<trans-unit id="tu365" xml:space="preserve">
+<source xml:lang="en">Input</source>
+<target xml:lang="pt">Input</target>
+</trans-unit>
+<trans-unit id="tu366" xml:space="preserve">
+<source xml:lang="en">Add missing keyboard key mapping for Android.</source>
+<target xml:lang="pt">Add missing keyboard key mapping for Android.</target>
+</trans-unit>
+<trans-unit id="tu367" xml:space="preserve">
+<source xml:lang="en">Android: Fix issue with PointerPressed/Released list being constantly empty (update was performed twice).</source>
+<target xml:lang="pt">Android: Fix issue with PointerPressed/Released list being constantly empty (update was performed twice).</target>
+</trans-unit>
+<trans-unit id="tu368" xml:space="preserve">
+<source xml:lang="en">Various fixes for orientation sensor on Android (courtesy of Pierre)</source>
+<target xml:lang="pt">Various fixes for orientation sensor on Android (courtesy of Pierre)</target>
+</trans-unit>
+<trans-unit id="tu369" xml:space="preserve">
+<source xml:lang="en">VirtualButton: add IsDown/Pressed/Released methods. Create VirtualButton.Pointer classes. Make constructors protected so that types can be inherited. Improve code.</source>
+<target xml:lang="pt">VirtualButton: add IsDown/Pressed/Released methods. Create VirtualButton.Pointer classes. Make constructors protected so that types can be inherited. Improve code.</target>
+</trans-unit>
+<trans-unit id="tu370" xml:space="preserve">
+<source xml:lang="en">Input.Tests</source>
+<target xml:lang="pt">Input.Tests</target>
+</trans-unit>
+<trans-unit id="tu371" xml:space="preserve">
+<source xml:lang="en">Fix compilation issues.</source>
+<target xml:lang="pt">Fix compilation issues.</target>
+</trans-unit>
+<trans-unit id="tu372" xml:space="preserve">
+<source xml:lang="en">Install</source>
+<target xml:lang="pt">Install</target>
+</trans-unit>
+<trans-unit id="tu373" xml:space="preserve">
+<source xml:lang="en">Removed Portable Library from prerequisites</source>
+<target xml:lang="pt">Removed Portable Library from prerequisites</target>
+</trans-unit>
+<trans-unit id="tu374" xml:space="preserve">
+<source xml:lang="en">Removed unused BuildTools_MSBuildNuget.msi</source>
+<target xml:lang="pt">Removed unused BuildTools_MSBuildNuget.msi</target>
+</trans-unit>
+<trans-unit id="tu375" xml:space="preserve">
+<source xml:lang="en">Launcher</source>
+<target xml:lang="pt">Launcher</target>
+</trans-unit>
+<trans-unit id="tu376" xml:space="preserve">
+<source xml:lang="en">Adapted to support new nuget packages</source>
+<target xml:lang="pt">Adapted to support new nuget packages</target>
+</trans-unit>
+<trans-unit id="tu377" xml:space="preserve">
+<source xml:lang="en">Fix self-upgrading since switch to NuGet 4.0</source>
+<target xml:lang="pt">Fix self-upgrading since switch to NuGet 4.0</target>
+</trans-unit>
+<trans-unit id="tu378" xml:space="preserve">
+<source xml:lang="en">Fixed with new build system</source>
+<target xml:lang="pt">Fixed with new build system</target>
+</trans-unit>
+<trans-unit id="tu379" xml:space="preserve">
+<source xml:lang="en">Reorganize settings (no more store.config, because we might have Xenko from package install rather than Launcher) and better detection of dev packages on server side</source>
+<target xml:lang="pt">Reorganize settings (no more store.config, because we might have Xenko from package install rather than Launcher) and better detection of dev packages on server side</target>
+</trans-unit>
+<trans-unit id="tu380" xml:space="preserve">
+<source xml:lang="en">Misc</source>
+<target xml:lang="pt">Misc</target>
+</trans-unit>
+<trans-unit id="tu381" xml:space="preserve">
+<source xml:lang="en">Cherry-pick manu/nuget3 branch</source>
+<target xml:lang="pt">Cherry-pick manu/nuget3 branch</target>
+</trans-unit>
+<trans-unit id="tu382" xml:space="preserve">
+<source xml:lang="en">Fixed the Engine project file.</source>
+<target xml:lang="pt">Fixed the Engine project file.</target>
+</trans-unit>
+<trans-unit id="tu383" xml:space="preserve">
+<source xml:lang="en">Resolved the merge conflict on the file "SiliconStudio.Xenko.Engine.csproj".</source>
+<target xml:lang="pt">Resolved the merge conflict on the file "SiliconStudio.Xenko.Engine.csproj".</target>
+</trans-unit>
+<trans-unit id="tu384" xml:space="preserve">
+<source xml:lang="en">Revert "\[Build\] Override SiliconStudioXenkoOutputPath even if set"</source>
+<target xml:lang="pt">Revert "\[Build\] Override SiliconStudioXenkoOutputPath even if set"</target>
+</trans-unit>
+<trans-unit id="tu385" xml:space="preserve">
+<source xml:lang="en">Revert "\[Skin/Hair\] Hide Hair/Skin parameters until working properly"</source>
+<target xml:lang="pt">Revert "\[Skin/Hair\] Hide Hair/Skin parameters until working properly"</target>
+</trans-unit>
+<trans-unit id="tu386" xml:space="preserve">
+<source xml:lang="en">Updated the year in the copyright notice.</source>
+<target xml:lang="pt">Updated the year in the copyright notice.</target>
+</trans-unit>
+<trans-unit id="tu387" xml:space="preserve">
+<source xml:lang="en">MSBuild</source>
+<target xml:lang="pt">MSBuild</target>
+</trans-unit>
+<trans-unit id="tu388" xml:space="preserve">
+<source xml:lang="en">Improved MSBuild detection to use installed version rather than local nuget copy</source>
+<target xml:lang="pt">Improved MSBuild detection to use installed version rather than local nuget copy</target>
+</trans-unit>
+<trans-unit id="tu389" xml:space="preserve">
+<source xml:lang="en">MSBuildLocator: Run it only if MSBuild assemblies not detected (they might be loaded if ran as part of MSBuild)</source>
+<target xml:lang="pt">MSBuildLocator: Run it only if MSBuild assemblies not detected (they might be loaded if ran as part of MSBuild)</target>
+</trans-unit>
+<trans-unit id="tu390" xml:space="preserve">
+<source xml:lang="en">Updated from 15.5.180 to 15.6.82</source>
+<target xml:lang="pt">Updated from 15.5.180 to 15.6.82</target>
+</trans-unit>
+<trans-unit id="tu391" xml:space="preserve">
+<source xml:lang="en">Native</source>
+<target xml:lang="pt">Native</target>
+</trans-unit>
+<trans-unit id="tu392" xml:space="preserve">
+<source xml:lang="en">Compute XenkoNativeOutput.Link only when OutputPath is properly computed (inside a target)</source>
+<target xml:lang="pt">Compute XenkoNativeOutput.Link only when OutputPath is properly computed (inside a target)</target>
+</trans-unit>
+<trans-unit id="tu393" xml:space="preserve">
+<source xml:lang="en">OpenGL</source>
+<target xml:lang="pt">OpenGL</target>
+</trans-unit>
+<trans-unit id="tu394" xml:space="preserve">
+<source xml:lang="en">Fix for "Requested renderbuffer is neither a render target nor a depth/stencil attachment." issue when using post effects of openGL.</source>
+<target xml:lang="pt">Fix for "Requested renderbuffer is neither a render target nor a depth/stencil attachment." issue when using post effects of openGL.</target>
+</trans-unit>
+<trans-unit id="tu395" xml:space="preserve">
+<source xml:lang="en">Package</source>
+<target xml:lang="pt">Package</target>
+</trans-unit>
+<trans-unit id="tu396" xml:space="preserve">
+<source xml:lang="en">Readded tools folder (needed for packageinstall.exe)</source>
+<target xml:lang="pt">Readded tools folder (needed for packageinstall.exe)</target>
+</trans-unit>
+<trans-unit id="tu397" xml:space="preserve">
+<source xml:lang="en">Packages</source>
+<target xml:lang="pt">Packages</target>
+</trans-unit>
+<trans-unit id="tu398" xml:space="preserve">
+<source xml:lang="en">Download report and package installer fixed with NuGet 4.0</source>
+<target xml:lang="pt">Download report and package installer fixed with NuGet 4.0</target>
+</trans-unit>
+<trans-unit id="tu399" xml:space="preserve">
+<source xml:lang="en">Removed potential future namespace collision</source>
+<target xml:lang="pt">Removed potential future namespace collision</target>
+</trans-unit>
+<trans-unit id="tu400" xml:space="preserve">
+<source xml:lang="en">Various improvements to make new nuget system works better</source>
+<target xml:lang="pt">Various improvements to make new nuget system works better</target>
+</trans-unit>
+<trans-unit id="tu401" xml:space="preserve">
+<source xml:lang="en">Physics</source>
+<target xml:lang="pt">Physics</target>
+</trans-unit>
+<trans-unit id="tu402" xml:space="preserve">
+<source xml:lang="en">Fix crash in physics engine when collider shapes are removed from the scene and unloaded during the same frame.</source>
+<target xml:lang="pt">Fix crash in physics engine when collider shapes are removed from the scene and unloaded during the same frame.</target>
+</trans-unit>
+<trans-unit id="tu403" xml:space="preserve">
+<source xml:lang="en">Prerequisites</source>
+<target xml:lang="pt">Prerequisites</target>
+</trans-unit>
+<trans-unit id="tu404" xml:space="preserve">
+<source xml:lang="en">Readd Microsoft.Net.Component.4.6.1.TargetingPack to MSBuild prerequisites</source>
+<target xml:lang="pt">Readd Microsoft.Net.Component.4.6.1.TargetingPack to MSBuild prerequisites</target>
+</trans-unit>
+<trans-unit id="tu405" xml:space="preserve">
+<source xml:lang="en">Presentation</source>
+<target xml:lang="pt">Presentation</target>
+</trans-unit>
+<trans-unit id="tu406" xml:space="preserve">
+<source xml:lang="en">Remove an InvalidCastException in AssetFromFileTemplateGenerator</source>
+<target xml:lang="pt">Remove an InvalidCastException in AssetFromFileTemplateGenerator</target>
+</trans-unit>
+<trans-unit id="tu407" xml:space="preserve">
+<source xml:lang="en">Preview</source>
+<target xml:lang="pt">Preview</target>
+</trans-unit>
+<trans-unit id="tu408" xml:space="preserve">
+<source xml:lang="en">Fix the texture preview in the case the texture has no alpha channel.</source>
+<target xml:lang="pt">Fix the texture preview in the case the texture has no alpha channel.</target>
+</trans-unit>
+<trans-unit id="tu409" xml:space="preserve">
+<source xml:lang="en">Rendering</source>
+<target xml:lang="pt">Rendering</target>
+</trans-unit>
+<trans-unit id="tu410" xml:space="preserve">
+<source xml:lang="en">Add EyeIndex and EyeCount shader variable information via new GlobalVR shader.</source>
+<target xml:lang="pt">Add EyeIndex and EyeCount shader variable information via new GlobalVR shader.</target>
+</trans-unit>
+<trans-unit id="tu411" xml:space="preserve">
+<source xml:lang="en">Add support for panoramic 2D texture as 3D input of BackgroundComponent.</source>
+<target xml:lang="pt">Add support for panoramic 2D texture as 3D input of BackgroundComponent.</target>
+</trans-unit>
+<trans-unit id="tu412" xml:space="preserve">
+<source xml:lang="en">Add the possibility to select sprite blending mode from the Game Studio.</source>
+<target xml:lang="pt">Add the possibility to select sprite blending mode from the Game Studio.</target>
+</trans-unit>
+<trans-unit id="tu413" xml:space="preserve">
+<source xml:lang="en">Fix black screen rendering issue when post effects are used without VR texture mirroring.</source>
+<target xml:lang="pt">Fix black screen rendering issue when post effects are used without VR texture mirroring.</target>
+</trans-unit>
+<trans-unit id="tu414" xml:space="preserve">
+<source xml:lang="en">Improve FastTextRenderer robustness. Reallocate buffer when maximum number of character is exceeded.</source>
+<target xml:lang="pt">Improve FastTextRenderer robustness. Reallocate buffer when maximum number of character is exceeded.</target>
+</trans-unit>
+<trans-unit id="tu415" xml:space="preserve">
+<source xml:lang="en">Resource ranges were mixed up with data ones when computing satrt offsets</source>
+<target xml:lang="pt">Resource ranges were mixed up with data ones when computing satrt offsets</target>
+</trans-unit>
+<trans-unit id="tu416" xml:space="preserve">
+<source xml:lang="en">Skin: remove declaration of SV_Target* when unused, and use another mechanism to detect if material index MRT is needed</source>
+<target xml:lang="pt">Skin: remove declaration of SV_Target* when unused, and use another mechanism to detect if material index MRT is needed</target>
+</trans-unit>
+<trans-unit id="tu417" xml:space="preserve">
+<source xml:lang="en">Temporal AA (Velocity Buffer courtesy of Guus)</source>
+<target xml:lang="pt">Temporal AA (Velocity Buffer courtesy of Guus)</target>
+</trans-unit>
+<trans-unit id="tu418" xml:space="preserve">
+<source xml:lang="en">Samples</source>
+<target xml:lang="pt">Samples</target>
+</trans-unit>
+<trans-unit id="tu419" xml:space="preserve">
+<source xml:lang="en">Fix compilation of the VR sample.</source>
+<target xml:lang="pt">Fix compilation of the VR sample.</target>
+</trans-unit>
+<trans-unit id="tu420" xml:space="preserve">
+<source xml:lang="en">SceneEditor</source>
+<target xml:lang="pt">SceneEditor</target>
+</trans-unit>
+<trans-unit id="tu421" xml:space="preserve">
+<source xml:lang="en">Add debug physic shape for infinite planes.</source>
+<target xml:lang="pt">Add debug physic shape for infinite planes.</target>
+</trans-unit>
+<trans-unit id="tu422" xml:space="preserve">
+<source xml:lang="en">Do not ignore depth while writing the physics gyzmo.</source>
+<target xml:lang="pt">Do not ignore depth while writing the physics gyzmo.</target>
+</trans-unit>
+<trans-unit id="tu423" xml:space="preserve">
+<source xml:lang="en">Scripts</source>
+<target xml:lang="pt">Scripts</target>
+</trans-unit>
+<trans-unit id="tu424" xml:space="preserve">
+<source xml:lang="en">Removed deadlock between ScriptSourceFileAssetViewModel.DocumentId and UpdateAssetFromSource (can't seem to reproduce XK-5104)</source>
+<target xml:lang="pt">Removed deadlock between ScriptSourceFileAssetViewModel.DocumentId and UpdateAssetFromSource (can't seem to reproduce XK-5104)</target>
+</trans-unit>
+<trans-unit id="tu425" xml:space="preserve">
+<source xml:lang="en">When creating a script, "do you want to save" dialog didn't do what it was supposed to do</source>
+<target xml:lang="pt">When creating a script, "do you want to save" dialog didn't do what it was supposed to do</target>
+</trans-unit>
+<trans-unit id="tu426" xml:space="preserve">
+<source xml:lang="en">Serialization</source>
+<target xml:lang="pt">Serialization</target>
+</trans-unit>
+<trans-unit id="tu427" xml:space="preserve">
+<source xml:lang="en">Fixed missing generic info when initializing parent serializer</source>
+<target xml:lang="pt">Fixed missing generic info when initializing parent serializer</target>
+</trans-unit>
+<trans-unit id="tu428" xml:space="preserve">
+<source xml:lang="en">Shaders</source>
+<target xml:lang="pt">Shaders</target>
+</trans-unit>
+<trans-unit id="tu429" xml:space="preserve">
+<source xml:lang="en">Explicitly qualify Annotations namespace to avoid future conflicts with Xenko.Core.Annotations namespace.</source>
+<target xml:lang="pt">Explicitly qualify Annotations namespace to avoid future conflicts with Xenko.Core.Annotations namespace.</target>
+</trans-unit>
+<trans-unit id="tu430" xml:space="preserve">
+<source xml:lang="en">Removed glsl-optimizer (causing some issues on Android)</source>
+<target xml:lang="pt">Removed glsl-optimizer (causing some issues on Android)</target>
+</trans-unit>
+<trans-unit id="tu431" xml:space="preserve">
+<source xml:lang="en">Removed potential future namespace collision</source>
+<target xml:lang="pt">Removed potential future namespace collision</target>
+</trans-unit>
+<trans-unit id="tu432" xml:space="preserve">
+<source xml:lang="en">SharpDX</source>
+<target xml:lang="pt">SharpDX</target>
+</trans-unit>
+<trans-unit id="tu433" xml:space="preserve">
+<source xml:lang="en">Updated to NuGet version 4.0.1</source>
+<target xml:lang="pt">Updated to NuGet version 4.0.1</target>
+</trans-unit>
+<trans-unit id="tu434" xml:space="preserve">
+<source xml:lang="en">Skin</source>
+<target xml:lang="pt">Skin</target>
+</trans-unit>
+<trans-unit id="tu435" xml:space="preserve">
+<source xml:lang="en">Additional changes to work with new MRT system</source>
+<target xml:lang="pt">Additional changes to work with new MRT system</target>
+</trans-unit>
+<trans-unit id="tu436" xml:space="preserve">
+<source xml:lang="en">Skin/Hair</source>
+<target xml:lang="pt">Skin/Hair</target>
+</trans-unit>
+<trans-unit id="tu437" xml:space="preserve">
+<source xml:lang="en">Added package upgrader for effect log (new generic parameter for directional light shadow caster)</source>
+<target xml:lang="pt">Added package upgrader for effect log (new generic parameter for directional light shadow caster)</target>
+</trans-unit>
+<trans-unit id="tu438" xml:space="preserve">
+<source xml:lang="en">Compute transmittance is now set in the light shadow parameters</source>
+<target xml:lang="pt">Compute transmittance is now set in the light shadow parameters</target>
+</trans-unit>
+<trans-unit id="tu439" xml:space="preserve">
+<source xml:lang="en">Hide Hair/Skin parameters until working properly</source>
+<target xml:lang="pt">Hide Hair/Skin parameters until working properly</target>
+</trans-unit>
+<trans-unit id="tu440" xml:space="preserve">
+<source xml:lang="en">Improve package upgrader to work on any xkeffectlog file (instead of just the default one)</source>
+<target xml:lang="pt">Improve package upgrader to work on any xkeffectlog file (instead of just the default one)</target>
+</trans-unit>
+<trans-unit id="tu441" xml:space="preserve">
+<source xml:lang="en">Skybox</source>
+<target xml:lang="pt">Skybox</target>
+</trans-unit>
+<trans-unit id="tu442" xml:space="preserve">
+<source xml:lang="en">Upgrader for SkyboxShaderCubemap renaming in effectlog</source>
+<target xml:lang="pt">Upgrader for SkyboxShaderCubemap renaming in effectlog</target>
+</trans-unit>
+<trans-unit id="tu443" xml:space="preserve">
+<source xml:lang="en">Store</source>
+<target xml:lang="pt">Store</target>
+</trans-unit>
+<trans-unit id="tu444" xml:space="preserve">
+<source xml:lang="en">Changed how package paths are detected</source>
+<target xml:lang="pt">Changed how package paths are detected</target>
+</trans-unit>
+<trans-unit id="tu445" xml:space="preserve">
+<source xml:lang="en">Streaming</source>
+<target xml:lang="pt">Streaming</target>
+</trans-unit>
+<trans-unit id="tu446" xml:space="preserve">
+<source xml:lang="en">Fix crash happening when a texture was simultaneously used as background and video target.</source>
+<target xml:lang="pt">Fix crash happening when a texture was simultaneously used as background and video target.</target>
+</trans-unit>
+<trans-unit id="tu447" xml:space="preserve">
+<source xml:lang="en">Templates</source>
+<target xml:lang="pt">Templates</target>
+</trans-unit>
+<trans-unit id="tu448" xml:space="preserve">
+<source xml:lang="en">Moved ProjectTemplateGeneratorHelper.cs to Xenko.Assets</source>
+<target xml:lang="pt">Moved ProjectTemplateGeneratorHelper.cs to Xenko.Assets</target>
+</trans-unit>
+<trans-unit id="tu449" xml:space="preserve">
+<source xml:lang="en">Tests</source>
+<target xml:lang="pt">Tests</target>
+</trans-unit>
+<trans-unit id="tu450" xml:space="preserve">
+<source xml:lang="en">Bumped packages</source>
+<target xml:lang="pt">Bumped packages</target>
+</trans-unit>
+<trans-unit id="tu451" xml:space="preserve">
+<source xml:lang="en">Bumped packages &amp; adjusted package upgrader version check</source>
+<target xml:lang="pt">Bumped packages &amp; adjusted package upgrader version check</target>
+</trans-unit>
+<trans-unit id="tu452" xml:space="preserve">
+<source xml:lang="en">TexTool</source>
+<target xml:lang="pt">TexTool</target>
+</trans-unit>
+<trans-unit id="tu453" xml:space="preserve">
+<source xml:lang="en">Fix Rescaling of 16bits pixel single channel textures.</source>
+<target xml:lang="pt">Fix Rescaling of 16bits pixel single channel textures.</target>
+</trans-unit>
+<trans-unit id="tu454" xml:space="preserve">
+<source xml:lang="en">UpdateEngine</source>
+<target xml:lang="pt">UpdateEngine</target>
+</trans-unit>
+<trans-unit id="tu455" xml:space="preserve">
+<source xml:lang="en">Added path resolve for ParameterCollection/ParameterKey</source>
+<target xml:lang="pt">Added path resolve for ParameterCollection/ParameterKey</target>
+</trans-unit>
+<trans-unit id="tu456" xml:space="preserve">
+<source xml:lang="en">Userdocs</source>
+<target xml:lang="pt">Userdocs</target>
+</trans-unit>
+<trans-unit id="tu457" xml:space="preserve">
+<source xml:lang="en">rename glossiness -&gt; gloss, more natural English</source>
+<target xml:lang="pt">rename glossiness -&gt; gloss, more natural English</target>
+</trans-unit>
+<trans-unit id="tu458" xml:space="preserve">
+<source xml:lang="en">update skybox asset and background component labels and userdocs</source>
+<target xml:lang="pt">update skybox asset and background component labels and userdocs</target>
+</trans-unit>
+<trans-unit id="tu459" xml:space="preserve">
+<source xml:lang="en">Video</source>
+<target xml:lang="pt">Video</target>
+</trans-unit>
+<trans-unit id="tu460" xml:space="preserve">
+<source xml:lang="en">Added SharpDX.MediaFoundation to UWP projects</source>
+<target xml:lang="pt">Added SharpDX.MediaFoundation to UWP projects</target>
+</trans-unit>
+<trans-unit id="tu461" xml:space="preserve">
+<source xml:lang="en">Added support for video rendering (Windows and Android only for now)</source>
+<target xml:lang="pt">Added support for video rendering (Windows and Android only for now)</target>
+</trans-unit>
+<trans-unit id="tu462" xml:space="preserve">
+<source xml:lang="en">Added Video assembly to unit tests</source>
+<target xml:lang="pt">Added Video assembly to unit tests</target>
+</trans-unit>
+<trans-unit id="tu463" xml:space="preserve">
+<source xml:lang="en">Ensure that the video file format is mp4 on windows.</source>
+<target xml:lang="pt">Ensure that the video file format is mp4 on windows.</target>
+</trans-unit>
+<trans-unit id="tu464" xml:space="preserve">
+<source xml:lang="en">Fix #ifdef preprocessing instructions in ffmpeg files and make assembly graphics API dependant.</source>
+<target xml:lang="pt">Fix #ifdef preprocessing instructions in ffmpeg files and make assembly graphics API dependant.</target>
+</trans-unit>
+<trans-unit id="tu465" xml:space="preserve">
+<source xml:lang="en">Keep in sync with feature branch</source>
+<target xml:lang="pt">Keep in sync with feature branch</target>
+</trans-unit>
+<trans-unit id="tu466" xml:space="preserve">
+<source xml:lang="en">Strip away STEREO3D side_data information when present during video compilation on window.</source>
+<target xml:lang="pt">Strip away STEREO3D side_data information when present during video compilation on window.</target>
+</trans-unit>
+<trans-unit id="tu467" xml:space="preserve">
+<source xml:lang="en">Video/Audio</source>
+<target xml:lang="pt">Video/Audio</target>
+</trans-unit>
+<trans-unit id="tu468" xml:space="preserve">
+<source xml:lang="en">Keep in sync with feature branch</source>
+<target xml:lang="pt">Keep in sync with feature branch</target>
+</trans-unit>
+<trans-unit id="tu469" xml:space="preserve">
+<source xml:lang="en">VisualStudio</source>
+<target xml:lang="pt">VisualStudio</target>
+</trans-unit>
+<trans-unit id="tu470" xml:space="preserve">
+<source xml:lang="en">Fix project references</source>
+<target xml:lang="pt">Fix project references</target>
+</trans-unit>
+<trans-unit id="tu471" xml:space="preserve">
+<source xml:lang="en">VR</source>
+<target xml:lang="pt">VR</target>
+</trans-unit>
+<trans-unit id="tu472" xml:space="preserve">
+<source xml:lang="en">Add implementation of Recenter for DummyDevice and OpenVR.</source>
+<target xml:lang="pt">Add implementation of Recenter for DummyDevice and OpenVR.</target>
+</trans-unit>
+<trans-unit id="tu473" xml:space="preserve">
+<source xml:lang="en">Follow orientation sensor (courtesy of Pierre)</source>
+<target xml:lang="pt">Follow orientation sensor (courtesy of Pierre)</target>
+</trans-unit>
+<trans-unit id="tu474" xml:space="preserve">
+<source xml:lang="en">VSPackage</source>
+<target xml:lang="pt">VSPackage</target>
+</trans-unit>
+<trans-unit id="tu475" xml:space="preserve">
+<source xml:lang="en">Fix vsix build with new csproj system</source>
+<target xml:lang="pt">Fix vsix build with new csproj system</target>
+</trans-unit>
+<trans-unit id="tu476" xml:space="preserve">
+<source xml:lang="en">Yaml.Tests</source>
+<target xml:lang="pt">Yaml.Tests</target>
+</trans-unit>
+<trans-unit id="tu477" xml:space="preserve">
+<source xml:lang="en">Fix unit tests using EmbeddedResources</source>
+<target xml:lang="pt">Fix unit tests using EmbeddedResources</target>
+</trans-unit>
+<trans-unit id="tu478" xml:space="preserve">
+<source xml:lang="en">Changelog</source>
+<target xml:lang="pt">Changelog</target>
+</trans-unit>
+<trans-unit id="tu479" xml:space="preserve">
+<source xml:lang="en">Version 3.0.0.4 — 25 August 2018</source>
+<target xml:lang="pt">Version 3.0.0.4 — 25 August 2018</target>
+</trans-unit>
+<trans-unit id="tu480" xml:space="preserve">
+<source xml:lang="en">Reactivate Linux platform support <g id="1">#17</g></source>
+<target xml:lang="pt">Reactivate Linux platform support <g id="1">#17</g></target>
+</trans-unit>
+<trans-unit id="tu481" xml:space="preserve">
+<source xml:lang="en">SourceLink support: Visual Studio downloads Xenko debug source code on demand <g id="1">#79</g></source>
+<target xml:lang="pt">SourceLink support: Visual Studio downloads Xenko debug source code on demand <g id="1">#79</g></target>
+</trans-unit>
+<trans-unit id="tu482" xml:space="preserve">
+<source xml:lang="en">Windows Mixed Reality support for UWP <g id="1">#85</g></source>
+<target xml:lang="pt">Windows Mixed Reality support for UWP <g id="1">#85</g></target>
+</trans-unit>
+<trans-unit id="tu483" xml:space="preserve">
+<source xml:lang="en">Fix GameStudio crashing when editing files with the simple code editor <g id="1">#110</g></source>
+<target xml:lang="pt">Fix GameStudio crashing when editing files with the simple code editor <g id="1">#110</g></target>
+</trans-unit>
+<trans-unit id="tu484" xml:space="preserve">
+<source xml:lang="en">GameStudio: New dark Theme and glyph icons <g id="1">#4</g> <g id="2">#50</g></source>
+<target xml:lang="pt">GameStudio: New dark Theme and glyph icons <g id="1">#4</g> <g id="2">#50</g></target>
+</trans-unit>
+</body>
+</file>
+</xliff>

@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" xmlns:okp="okapi-framework:xliff-extensions" its:version="2.0" version="1.2">
+<file datatype="x-text/x-markdown" okp:inputEncoding="UTF-8" original="/D:/repos/rr/source/manual/animation/custom-blend-trees.md" source-language="en" target-language="pt">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en">Custom blend trees</source>
+<target xml:lang="pt">Árvores de transição personalizadas</target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Advanced<x id="2"/>
+<x id="3"/>Programmer<x id="4"/></source>
+<target xml:lang="pt"><x id="1"/>Avançado<x id="2"/>
+<x id="3"/>Programação<x id="4"/></target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">The <g id="1">AnimationComponent</g> has the property <g id="2">AnimationComponent.BlendTreeBuilder</g>. If you want absolute control over which animations are played, how are they blended and what weights they have, you can create a script which inherits from <g id="3">IBlendTreeBuilder</g> and assign it to the BlendTreeBuilder under your animation component.</source>
+<target xml:lang="pt">O <g id="1">AnimationComponent</g> possui a propriedade <g id="2">AnimationComponent.BlendTreeBuilder</g>. Se você deseja ter controle absoluto sobre quais animações são reproduzidas, como é realizado a transição entre elas e que pesos elas têm, você pode criar um script que implemente <g id="3">IBlendTreeBuilder</g> e atribuí-lo ao BlendTreeBuilder do seu componente de animação.</target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">When the animation component is updated, it calls <g id="1">void BuildBlendTree(FastList&lt;AnimationOperation&gt; animationList)</g> on your script instead of updating the animations itself. This allows you to choose any combination of animation clips, speeds and blends, but is also more difficult, as all the heavy lifting is now on the script side.</source>
+<target xml:lang="pt">Quando o componente de animação é atualizado, ele executa <g id="1">void BuildBlendTree(FastList&lt;AnimationOperation&gt; AnimationList)</g> no seu script em vez de atualizar as próprias animações. Isso permite que você escolha qualquer combinação de clipes de animação, velocidades e transições, mas também é mais difícil, já que todo o trabalho pesado agora está no lado do script.</target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">The templates <g id="1">First-person shooter</g>, <g id="2">Third-person platformer</g> and <g id="3">Top-down RPG</g>, included with Stride, are examples of how to use custom blend trees.</source>
+<target xml:lang="pt">Os modelos <g id="1">Tiro em primeira pessoa</g>, <g id="2">Plataforma em terceira pessoa</g> e <g id="3">RPG de visão superior</g>, incluídos no Stride, são exemplos de como usar árvores de transição personalizadas.</target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en">Code sample</source>
+<target xml:lang="pt">Exemplo de código</target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en">public class AnimationBlendTree : SyncScript, IBlendTreeBuilder
+{
+    /// &lt;summary&gt;
+    /// The animation component is required
+    /// &lt;/summary&gt;
+    [Display("Animation Component")]
+    public AnimationComponent AnimationComponent { get; set; }
+
+    [Display("Walk")]
+    public AnimationClip AnimationWalk { get; set; }
+
+    [Display("Run")]
+    public AnimationClip AnimationRun { get; set; }
+
+    [Display("Lerp Factor")]
+    public float LerpFactor = 0.5f;
+
+    private AnimationClipEvaluator animEvaluatorWalk;
+    private AnimationClipEvaluator animEvaluatorRun;
+    private double currentTime = 0;
+
+    public override void Start()
+    {
+        base.Start();
+
+        // IMPORTANT STEP
+        // By setting a custom blend tree builder we can override the default behavior of the animation system.
+        // Instead, BuildBlendTree(FastList&lt;AnimationOperation&gt; blendStack) will be called each frame.
+        // We need to update the animation state in Update() and then
+        // pass the new animation state (stack = blend tree) to the animation system.
+        AnimationComponent.BlendTreeBuilder = this;
+
+        // As we override the animation system, we need to create an AnimationClipEvaluator for each clip we want to use.
+        animEvaluatorWalk = AnimationComponent.Blender.CreateEvaluator(AnimationWalk);
+        animEvaluatorRun = AnimationComponent.Blender.CreateEvaluator(AnimationRun);
+    }
+
+    public override void Cancel()
+    {
+        // When the script is cancelled, don't forget to release all animation resources created in Start() - AnimationClipEvaluators
+        AnimationComponent.Blender.ReleaseEvaluator(animEvaluatorWalk);
+        AnimationComponent.Blender.ReleaseEvaluator(animEvaluatorRun);
+    }
+        
+    public override void Update()
+    {
+        // Use DrawTime rather than UpdateTime because the animations are updated only when they are drawn.
+        var time = Game.DrawTime;
+
+        // This update function accounts for animation with different durations,
+        // keeping a current time relative to the blended maximum duration.
+        long blendedMaxDuration = (long)MathUtil.Lerp(AnimationWalk.Duration.Ticks, AnimationRun.Duration.Ticks, LerpFactor);
+
+        var currentTicks = TimeSpan.FromTicks((long)(currentTime * blendedMaxDuration));
+
+        currentTicks = blendedMaxDuration == 0
+            ? TimeSpan.Zero
+            : TimeSpan.FromTicks((currentTicks.Ticks + (long)(time.Elapsed.Ticks)) % blendedMaxDuration);
+
+        currentTime = ((double)currentTicks.Ticks / (double)blendedMaxDuration);
+    }
+
+    /// BuildBlendTree is called every frame from the animation system when the AnimationComponent needs to be evaluated.
+    /// It overrides the default behavior of the AnimationComponent by setting a custom blend tree.
+    public void BuildBlendTree(FastList&lt;AnimationOperation&gt; blendStack)
+    {
+        var timeWalk = TimeSpan.FromTicks((long) (currentTime * AnimationWalk.Duration.Ticks));
+        var timeRun  = TimeSpan.FromTicks((long) (currentTime * AnimationRun.Duration.Ticks));
+
+        // Build the animation blend tree (stack)
+        blendStack.Add(AnimationOperation.NewPush(animEvaluatorWalk, timeWalk));    // Will PUSH animation state to be evaluated at the specified Time.
+        blendStack.Add(AnimationOperation.NewPush(animEvaluatorRun, timeRun));      // Will PUSH another animation state to be evaluated at the specified Time.
+        blendStack.Add(AnimationOperation.NewBlend(CoreAnimationOperation.Blend, LerpFactor));   // Will POP the last two states, blend them with the factor and PUSH back the result.
+
+        // NOTE
+        // Because the blending operations are laid out in a stack you have to pack the operations in this manner.
+        // In general, traversing a binary tree depth-first and adding operations as you *leave* precessed nodes should be sufficient.
+        // For non-binary trees, you have to properly weight the blending factors as well
+
+        // DONE
+        // The top of the stack now contains the final state used for the animated model
+    }
+}
+</source>
+<target xml:lang="pt">public class AnimationBlendTree : SyncScript, IBlendTreeBuilder
+{
+    /// &lt;summary&gt;
+    /// O componente de animação é obrigatório
+    /// &lt;/summary&gt;
+    [Display("Animation Component")]
+    public AnimationComponent AnimationComponent { get; set; }
+
+    [Display("Walk")]
+    public AnimationClip AnimationWalk { get; set; }
+
+    [Display("Run")]
+    public AnimationClip AnimationRun { get; set; }
+
+    [Display("Lerp Factor")]
+    public float LerpFactor = 0.5f;
+
+    private AnimationClipEvaluator animEvaluatorWalk;
+    private AnimationClipEvaluator animEvaluatorRun;
+    private double currentTime = 0;
+
+    public override void Start()
+    {
+        base.Start();
+
+        //PASSO IMPORTANTE
+        // Ao definir um builder de Árvore de transição personalizada, podemos substituir o comportamento padrão do sistema de animação.
+        // Em vez disso, BuildBlendTree(FastList&lt;AnimationOperation&gt; blendStack) será executado a cada quadro.
+        // Precisamos atualizar o estado da animação em Update() e então
+        // passar o novo estado da animação (pilha = árvore de transição) para o sistema de animação.
+        AnimationComponent.BlendTreeBuilder = this;
+
+        // À medida que substituímos o sistema de animação, precisamos criar um AnimationClipEvaluator para cada clipe que queremos usar.
+        animEvaluatorWalk = AnimationComponent.Blender.CreateEvaluator(AnimationWalk);
+        animEvaluatorRun = AnimationComponent.Blender.CreateEvaluator(AnimationRun);
+    }
+
+    public override void Cancel()
+    {
+        // Quando o script for cancelado, não esqueça de liberar todos os recursos de animação criados em Start() - AnimationClipEvaluators
+        AnimationComponent.Blender.ReleaseEvaluator(animEvaluatorWalk);
+        AnimationComponent.Blender.ReleaseEvaluator(animEvaluatorRun);
+    }
+        
+    public override void Update()
+    {
+        // Use DrawTime em vez de UpdateTime, pois as animações são atualizadas somente quando são desenhadas.
+        var time = Game.DrawTime;
+
+        // Esta função de atualização leva em conta animações com durações diferentes,
+        // mantendo o tempo atual (instante) relativo à duração máxima de transição.
+
+        long blendedMaxDuration = (long)MathUtil.Lerp(AnimationWalk.Duration.Ticks, AnimationRun.Duration.Ticks, LerpFactor);
+
+        var currentTicks = TimeSpan.FromTicks((long)(currentTime * blendedMaxDuration));
+
+        currentTicks = blendedMaxDuration == 0
+            ? TimeSpan.Zero
+            : TimeSpan.FromTicks((currentTicks.Ticks + (long)(time.Elapsed.Ticks)) % blendedMaxDuration);
+
+        currentTime = ((double)currentTicks.Ticks / (double)blendedMaxDuration);
+    }
+
+    /// BuildBlendTree é chamado a cada quadro do sistema de animação quando o AnimationComponent precisa ser avaliado.
+    /// Isso substitui o comportamento padrão do AnimationComponent definindo uma Árvore de transição personalizada.
+    public void BuildBlendTree(FastList&lt;AnimationOperation&gt; blendStack)
+    {
+        var timeWalk = TimeSpan.FromTicks((long) (currentTime * AnimationWalk.Duration.Ticks));
+        var timeRun  = TimeSpan.FromTicks((long) (currentTime * AnimationRun.Duration.Ticks));
+
+        // Constrói a árvore de transição de animação (pilha)
+        blendStack.Add(AnimationOperation.NewPush(animEvaluatorWalk, timeWalk)); // Enviará (PUSH) o estado da animação para ser avaliado no momento especificado.
+        blendStack.Add(AnimationOperation.NewPush(animEvaluatorRun, timeRun)); // Enviará (PUSH) outro estado de animação para ser avaliado no momento especificado.
+        blendStack.Add(AnimationOperation.NewBlend(CoreAnimationOperation.Blend, LerpFactor)); // Exibirá (POP) os dois últimos estados combinando os dois com o fator e enviará o resultado de volta (PUSH).
+
+        // NOTA
+        // Devido as operações de transição serem dispostas em uma pilha, você precisa compactar as operações dessa maneira.
+        // De maneira geral, percorrer uma árvore binária em profundidade e adicionar operações à medida que você *sai* dos nós processados deve ser suficiente.
+        // Para árvores não binárias, você também deve ponderar adequadamente os fatores de transição.
+
+        // PRONTO
+        // O topo da pilha agora contém o estado final usado pelo o modelo animado.
+    }
+}
+</target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en">See also</source>
+<target xml:lang="pt">Veja também</target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en"><g id="1">Animation index</g></source>
+<target xml:lang="pt"><g id="1">Índice de animação</g></target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en"><g id="1">Import animations</g></source>
+<target xml:lang="pt"><g id="1">Importar animações</g></target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en"><g id="1">Animation properties</g></source>
+<target xml:lang="pt"><g id="1">Propriedades de animação</g></target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en"><g id="1">Set up animations</g></source>
+<target xml:lang="pt"><g id="1">Configurar animações</g></target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en"><g id="1">Preview animations</g></source>
+<target xml:lang="pt"><g id="1">Visualizar animações</g></target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en"><g id="1">Animation scripts</g></source>
+<target xml:lang="pt"><g id="1">Scripts de animação</g></target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en"><g id="1">Additive animation</g></source>
+<target xml:lang="pt"><g id="1">Animação aditiva</g></target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en"><g id="1">Procedural animation</g></source>
+<target xml:lang="pt"><g id="1">Animação procedural</g></target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en"><g id="1">Model node links</g></source>
+<target xml:lang="pt"><g id="1">Links de nó de modelo</g></target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en"><g id="1">custom attributes</g></source>
+<target xml:lang="pt"><g id="1">Atributos personalizados</g></target>
+</trans-unit>
+</body>
+</file>
+</xliff>

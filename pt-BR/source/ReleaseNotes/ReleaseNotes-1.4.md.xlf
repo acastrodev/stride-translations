@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="/D:/repos/rr/source/ReleaseNotes/ReleaseNotes-1.4.md" source-language="en" target-language="pt" datatype="x-text/x-markdown" okp:inputEncoding="UTF-8">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en">Xenko 1.4 release notes</source>
+<target xml:lang="pt">Xenko 1.4 release notes</target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en">Highlights</source>
+<target xml:lang="pt">Highlights</target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">Renaming</source>
+<target xml:lang="pt">Renaming</target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">The engine has been renamed Xenko. Here is our new logo, be sure to remember it!</source>
+<target xml:lang="pt">The engine has been renamed Xenko. Here is our new logo, be sure to remember it!</target>
+</trans-unit>
+<group id="sd1_ssf1" resname="sub-filter:sd1">
+<trans-unit id="sd1_sf1_tu1" resname="sd1_2" xml:space="preserve">
+<source xml:lang="en"><x id="1"/></source>
+<target xml:lang="pt"><x id="1"/></target>
+</trans-unit>
+</group>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">The following changes have been introduced during the renaming and will be automatically applied to your project when opening it in the Game Studio.</source>
+<target xml:lang="pt">The following changes have been introduced during the renaming and will be automatically applied to your project when opening it in the Game Studio.</target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en">All occurrences of ‘Paradox’ in code, shaders and configuration files are replaced with ‘Xenko’</source>
+<target xml:lang="pt">All occurrences of ‘Paradox’ in code, shaders and configuration files are replaced with ‘Xenko’</target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en">Package and asset files, previously having a .pdx* file extension, now have a .xk* extension</source>
+<target xml:lang="pt">Package and asset files, previously having a .pdx* file extension, now have a .xk* extension</target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en">Xenko SDK is now located using the SiliconStudioXenkoDir environment variable instead of SiliconStudioParadoxDir</source>
+<target xml:lang="pt">Xenko SDK is now located using the SiliconStudioXenkoDir environment variable instead of SiliconStudioParadoxDir</target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en">In addition, the new Visual Studio integration will not recognize old installations or projects that were not upgraded, and vice versa.</source>
+<target xml:lang="pt">In addition, the new Visual Studio integration will not recognize old installations or projects that were not upgraded, and vice versa.</target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en">New documentation system</source>
+<target xml:lang="pt">New documentation system</target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en">We are aware our documentation isn't where we need it to be yet, so we've decided to take some steps to move things faster. In order to do this, we have migrated our documentation to DocFX.</source>
+<target xml:lang="pt">We are aware our documentation isn't where we need it to be yet, so we've decided to take some steps to move things faster. In order to do this, we have migrated our documentation to DocFX.</target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en">The new system should provide better readability and more consistent formatting. It also allows us to more easily edit and upload separate documentation for each version of Xenko.</source>
+<target xml:lang="pt">The new system should provide better readability and more consistent formatting. It also allows us to more easily edit and upload separate documentation for each version of Xenko.</target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en">The documentation has its own repository on GitHub: https://github.com/SiliconStudio/xenko-docs</source>
+<target xml:lang="pt">The documentation has its own repository on GitHub: https://github.com/SiliconStudio/xenko-docs</target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en">Everybody in the community can now share information by adding edits which will help us to continually improve the documentation. To edit documentation, just click the “Improve this Doc” button available on every page of the documentation, and submit us pull requests.</source>
+<target xml:lang="pt">Everybody in the community can now share information by adding edits which will help us to continually improve the documentation. To edit documentation, just click the “Improve this Doc” button available on every page of the documentation, and submit us pull requests.</target>
+</trans-unit>
+<group id="sd1_ssf2" resname="sub-filter:sd1">
+<trans-unit id="sd1_sf2_tu1" resname="sd1_2" xml:space="preserve">
+<source xml:lang="en"><x id="1"/></source>
+<target xml:lang="pt"><x id="1"/></target>
+</trans-unit>
+</group>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en">With your help, we hope to improve the community's experience with Xenko since this will allow people to share information at a faster pace.</source>
+<target xml:lang="pt">With your help, we hope to improve the community's experience with Xenko since this will allow people to share information at a faster pace.</target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en">Of course, the Xenko dev. team will also be adding more to the documentation as well. More info on that coming soon!</source>
+<target xml:lang="pt">Of course, the Xenko dev. team will also be adding more to the documentation as well. More info on that coming soon!</target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en">PDB debugging</source>
+<target xml:lang="pt">PDB debugging</target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en">You can now step into Xenko's engine source code. The code will automatically be fetched from GitHub.</source>
+<target xml:lang="pt">You can now step into Xenko's engine source code. The code will automatically be fetched from GitHub.</target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en">The process is simple. All you need to do is open Visual Studio options, go to Debugging > General, and check “Enable Source Server Support”:</source>
+<target xml:lang="pt">The process is simple. All you need to do is open Visual Studio options, go to Debugging > General, and check “Enable Source Server Support”:</target>
+</trans-unit>
+<group id="sd1_ssf3" resname="sub-filter:sd1">
+<trans-unit id="sd1_sf3_tu1" resname="sd1_2" xml:space="preserve">
+<source xml:lang="en"><x id="1"/></source>
+<target xml:lang="pt"><x id="1"/></target>
+</trans-unit>
+</group>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en">Sprite Studio (breaking change)</source>
+<target xml:lang="pt">Sprite Studio (breaking change)</target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en">The XML format used to import models and animation has been updated to use the latest version of Sprite Studio, instead of the legacy exporter format used previously.
+With this new format, we recommend that you copy your whole Sprite Studio project (all files are needed) into the RawAssets folder of your Xenko project. Please refer to the sample game for details.</source>
+<target xml:lang="pt">The XML format used to import models and animation has been updated to use the latest version of Sprite Studio, instead of the legacy exporter format used previously.
+With this new format, we recommend that you copy your whole Sprite Studio project (all files are needed) into the RawAssets folder of your Xenko project. Please refer to the sample game for details.</target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en">Version 1.4.0-beta</source>
+<target xml:lang="pt">Version 1.4.0-beta</target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en">Release date: 2015/12/01</source>
+<target xml:lang="pt">Release date: 2015/12/01</target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en">Enhancements</source>
+<target xml:lang="pt">Enhancements</target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en">Editor</source>
+<target xml:lang="pt">Editor</target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en">Main color is now blue instead of purple.</source>
+<target xml:lang="pt">Main color is now blue instead of purple.</target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en">Better management of recent project list, especially when working with multiple versions of Xenko.</source>
+<target xml:lang="pt">Better management of recent project list, especially when working with multiple versions of Xenko.</target>
+</trans-unit>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en">Assets</source>
+<target xml:lang="pt">Assets</target>
+</trans-unit>
+<trans-unit id="tu29" xml:space="preserve">
+<source xml:lang="en">Assets were previously versioned individually, but from now on they will more closely match Xenko versions. This will allow package-wide asset upgrades, easier plugin support, and copy-paste support between different Xenko versions.</source>
+<target xml:lang="pt">Assets were previously versioned individually, but from now on they will more closely match Xenko versions. This will allow package-wide asset upgrades, easier plugin support, and copy-paste support between different Xenko versions.</target>
+</trans-unit>
+<trans-unit id="tu30" xml:space="preserve">
+<source xml:lang="en">We've switched the compiler from a per-app domain model to a per-process model (similar to MSBuild.exe), to avoid any issues related to environment variables, current working directory and unaware C++ code with static that might be used.</source>
+<target xml:lang="pt">We've switched the compiler from a per-app domain model to a per-process model (similar to MSBuild.exe), to avoid any issues related to environment variables, current working directory and unaware C++ code with static that might be used.</target>
+</trans-unit>
+<trans-unit id="tu31" xml:space="preserve">
+<source xml:lang="en">Issues fixed</source>
+<target xml:lang="pt">Issues fixed</target>
+</trans-unit>
+<trans-unit id="tu32" xml:space="preserve">
+<source xml:lang="en">Editor</source>
+<target xml:lang="pt">Editor</target>
+</trans-unit>
+<trans-unit id="tu33" xml:space="preserve">
+<source xml:lang="en">Fixed an issue when inserting an asset into the scene hierarchy</source>
+<target xml:lang="pt">Fixed an issue when inserting an asset into the scene hierarchy</target>
+</trans-unit>
+<trans-unit id="tu34" xml:space="preserve">
+<source xml:lang="en">Fixed an issue when renaming a folder in the solution explorer</source>
+<target xml:lang="pt">Fixed an issue when renaming a folder in the solution explorer</target>
+</trans-unit>
+<trans-unit id="tu35" xml:space="preserve">
+<source xml:lang="en">Properly set the value of the ‘SolutionDir’ variable when building a game from the studio</source>
+<target xml:lang="pt">Properly set the value of the ‘SolutionDir’ variable when building a game from the studio</target>
+</trans-unit>
+<trans-unit id="tu36" xml:space="preserve">
+<source xml:lang="en">Engine</source>
+<target xml:lang="pt">Engine</target>
+</trans-unit>
+<trans-unit id="tu37" xml:space="preserve">
+<source xml:lang="en">Fixed an issue with shadows for spot lights that were using orthographic projection instead of perspective.</source>
+<target xml:lang="pt">Fixed an issue with shadows for spot lights that were using orthographic projection instead of perspective.</target>
+</trans-unit>
+<trans-unit id="tu38" xml:space="preserve">
+<source xml:lang="en">Assets</source>
+<target xml:lang="pt">Assets</target>
+</trans-unit>
+<trans-unit id="tu39" xml:space="preserve">
+<source xml:lang="en">Fixed the asset compilation crash when Xenko installation path contains the ‘##’ character.</source>
+<target xml:lang="pt">Fixed the asset compilation crash when Xenko installation path contains the ‘##’ character.</target>
+</trans-unit>
+<trans-unit id="tu40" xml:space="preserve">
+<source xml:lang="en">Allow asset names to contains the ‘.’ period character</source>
+<target xml:lang="pt">Allow asset names to contains the ‘.’ period character</target>
+</trans-unit>
+<trans-unit id="tu41" xml:space="preserve">
+<source xml:lang="en">Known Issues</source>
+<target xml:lang="pt">Known Issues</target>
+</trans-unit>
+<trans-unit id="tu42" xml:space="preserve">
+<source xml:lang="en">iOS has an outstanding crash issue after a few second, especially on recent devices (iPhone 6s). This is currently under investigation.</source>
+<target xml:lang="pt">iOS has an outstanding crash issue after a few second, especially on recent devices (iPhone 6s). This is currently under investigation.</target>
+</trans-unit>
+</body>
+</file>
+</xliff>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="/D:/repos/rr/source/manual/particles/shapes.md" source-language="en" target-language="pt" datatype="x-text/x-markdown" okp:inputEncoding="UTF-8">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en">Particle shapes</source>
+<target xml:lang="pt">Particle shapes</target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Beginner<x id="2"/>
+<x id="3"/>Artist<x id="4"/>
+<x id="5"/>Programmer<x id="6"/></source>
+<target xml:lang="pt"><x id="1"/>Beginner<x id="2"/>
+<x id="3"/>Artist<x id="4"/>
+<x id="5"/>Programmer<x id="6"/></target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">Because particles are essentially only points in space, they have no defined shape. Instead, Stride draws shapes <g id="1">between</g> the points.</source>
+<target xml:lang="pt">Because particles are essentially only points in space, they have no defined shape. Instead, Stride draws shapes <g id="1">between</g> the points.</target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">The major difference between particle shapes is whether they always face the camera, or if they can rotate freely in 3D space.</source>
+<target xml:lang="pt">The major difference between particle shapes is whether they always face the camera, or if they can rotate freely in 3D space.</target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">Currently, emitters can only emit one type of shape at a time.</source>
+<target xml:lang="pt">Currently, emitters can only emit one type of shape at a time.</target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en">Billboards</source>
+<target xml:lang="pt">Billboards</target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en"><g id="1">Billboards</g> always face the camera. They appear <g id="2">fixed in 3D space</g>, so they don't change with the camera position.</source>
+<target xml:lang="pt"><g id="1">Billboards</g> always face the camera. They appear <g id="2">fixed in 3D space</g>, so they don't change with the camera position.</target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en">Because they always face the camera, billboards support angular rotation only. This means they only rotate clockwise or counter-clockwise.</source>
+<target xml:lang="pt">Because they always face the camera, billboards support angular rotation only. This means they only rotate clockwise or counter-clockwise.</target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en">Hexagon</source>
+<target xml:lang="pt">Hexagon</target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en"><g id="1">Hexagons</g> are identical to billboards, but are hexagonal in shape. Like billboards, they always face the camera and support angular rotation only.</source>
+<target xml:lang="pt"><g id="1">Hexagons</g> are identical to billboards, but are hexagonal in shape. Like billboards, they always face the camera and support angular rotation only.</target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en">Quads</source>
+<target xml:lang="pt">Quads</target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en">Quads are identical to billboards, but don't rotate to face the camera, and so support 3D orientation and rotation.</source>
+<target xml:lang="pt">Quads are identical to billboards, but don't rotate to face the camera, and so support 3D orientation and rotation.</target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en">Stride draws billboard particles to the <g id="1">Size</g> value in the particle effect properties. If you don't specify a size, Stride expands the quads to 1m x 1m.</source>
+<target xml:lang="pt">Stride draws billboard particles to the <g id="1">Size</g> value in the particle effect properties. If you don't specify a size, Stride expands the quads to 1m x 1m.</target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>media/particles-reference-shapebuilders-1.png<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>media/particles-reference-shapebuilders-1.png<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en">Direction-aligned sprite</source>
+<target xml:lang="pt">Direction-aligned sprite</target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en">This sprite is billboard-aligned and stretched in the direction of the particle. You can set an initial direction for the particles with an initializer, or add an updater which writes particle speed as direction.</source>
+<target xml:lang="pt">This sprite is billboard-aligned and stretched in the direction of the particle. You can set an initial direction for the particles with an initializer, or add an updater which writes particle speed as direction.</target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en">Ribbons and trails</source>
+<target xml:lang="pt">Ribbons and trails</target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en">See <g id="1">Ribbons and trails</g>.</source>
+<target xml:lang="pt">See <g id="1">Ribbons and trails</g>.</target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en">See also</source>
+<target xml:lang="pt">See also</target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en"><g id="1">Create particles</g></source>
+<target xml:lang="pt"><g id="1">Create particles</g></target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en"><g id="1">Emitters</g></source>
+<target xml:lang="pt"><g id="1">Emitters</g></target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en"><g id="1">Materials</g></source>
+<target xml:lang="pt"><g id="1">Materials</g></target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en"><g id="1">Spawners</g></source>
+<target xml:lang="pt"><g id="1">Spawners</g></target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en"><g id="1">Initializers</g></source>
+<target xml:lang="pt"><g id="1">Initializers</g></target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en"><g id="1">Updaters</g></source>
+<target xml:lang="pt"><g id="1">Updaters</g></target>
+</trans-unit>
+</body>
+</file>
+</xliff>

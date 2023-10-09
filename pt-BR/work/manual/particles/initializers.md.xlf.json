@@ -1,0 +1,2665 @@
+{
+    "filename": "manual\\particles\\initializers.md.xlf",
+    "files": [
+        {
+            "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md": [
+                [
+                    "Particle initializers",
+                    "",
+                    "Particle initializers",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu1"
+                    }
+                ],
+                [
+                    "<x1\/>Intermediate<x2\/>",
+                    "",
+                    "<x1\/>Intermediate<x2\/>\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu2"
+                    }
+                ],
+                [
+                    "<x3\/>Artist<x4\/>",
+                    "",
+                    "<x3\/>Artist<x4\/>\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu2"
+                    }
+                ],
+                [
+                    "<x5\/>Programmer<x6\/>",
+                    "",
+                    "<x5\/>Programmer<x6\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu2"
+                    }
+                ],
+                [
+                    "<g1>Initializers<\/g1> control the states of particles such as position, velocity, size, and so on when the particles are first spawned.",
+                    "",
+                    "<g1>Initializers<\/g1> control the states of particles such as position, velocity, size, and so on when the particles are first spawned.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu3"
+                    }
+                ],
+                [
+                    "They have no effect on particles spawned on previous frames.",
+                    "",
+                    " They have no effect on particles spawned on previous frames.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu3"
+                    }
+                ],
+                [
+                    "<x1\/>!Note<x2\/>",
+                    "",
+                    "<x1\/>!Note<x2\/>\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu4"
+                    }
+                ],
+                [
+                    "Some <g1>updaters<\/g1> act change the particle's value at the <g2>end<\/g2> of the frame.",
+                    "",
+                    "Some <g1>updaters<\/g1> act change the particle's value at the <g2>end<\/g2> of the frame.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu4"
+                    }
+                ],
+                [
+                    "They effectively overwrite any initial values set by a similar initializer.",
+                    "",
+                    " They effectively overwrite any initial values set by a similar initializer.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu4"
+                    }
+                ],
+                [
+                    "Such is the case with all animations.",
+                    "",
+                    " Such is the case with all animations.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu4"
+                    }
+                ],
+                [
+                    "They operate on the particle's lifetime and a color animation updater will overwrite any initial values from a color initializer.",
+                    "",
+                    " They operate on the particle's lifetime and a color animation updater will overwrite any initial values from a color initializer.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu4"
+                    }
+                ],
+                [
+                    "Similarly, initializers which operate on the same field are exclusive and only the bottom one will have any effect, since they are executed in order.",
+                    "",
+                    "Similarly, initializers which operate on the same field are exclusive and only the bottom one will have any effect, since they are executed in order.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu5"
+                    }
+                ],
+                [
+                    "For example if you assign two color initializer, only the second one will have any effect.]",
+                    "",
+                    " For example if you assign two color initializer, only the second one will have any effect.]",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu5"
+                    }
+                ],
+                [
+                    "Common properties",
+                    "",
+                    "Common properties",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu6"
+                    }
+                ],
+                [
+                    "Several properties are common across many initializers.",
+                    "",
+                    "Several properties are common across many initializers.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu7"
+                    }
+                ],
+                [
+                    "<x1\/>media\/particles-reference-initializers-1.png<x2\/>",
+                    "",
+                    "<x1\/>media\/particles-reference-initializers-1.png<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu8"
+                    }
+                ],
+                [
+                    "Property",
+                    "",
+                    "Property",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu9"
+                    }
+                ],
+                [
+                    "Description",
+                    "",
+                    "Description",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu10"
+                    }
+                ],
+                [
+                    "Debug draw",
+                    "",
+                    "Debug draw",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu11"
+                    }
+                ],
+                [
+                    "Draws a debug wireframe in the scene to show the boundaries of the initializer.",
+                    "",
+                    "Draws a debug wireframe in the scene to show the boundaries of the initializer.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu12"
+                    }
+                ],
+                [
+                    "This is only visible in the Scene Editor, not at runtime.",
+                    "",
+                    " This is only visible in the Scene Editor, not at runtime.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu12"
+                    }
+                ],
+                [
+                    "Position inheritance",
+                    "",
+                    "Position inheritance",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu13"
+                    }
+                ],
+                [
+                    "Inherit the particle system component position, as defined in the particle entity's Transform component",
+                    "",
+                    "Inherit the particle system component position, as defined in the particle entity's Transform component",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu14"
+                    }
+                ],
+                [
+                    "Position offset",
+                    "",
+                    "Position offset",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu15"
+                    }
+                ],
+                [
+                    "Additional translation of the module.",
+                    "",
+                    "Additional translation of the module.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu16"
+                    }
+                ],
+                [
+                    "If it inherits the parent position, this is applied on top of the inherited position.",
+                    "",
+                    " If it inherits the parent position, this is applied on top of the inherited position.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu16"
+                    }
+                ],
+                [
+                    "Rotation inheritance",
+                    "",
+                    "Rotation inheritance",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu17"
+                    }
+                ],
+                [
+                    "Inherit the particle system component's rotation, as defined in the Transform component",
+                    "",
+                    "Inherit the particle system component's rotation, as defined in the Transform component",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu18"
+                    }
+                ],
+                [
+                    "Rotation offset",
+                    "",
+                    "Rotation offset",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu19"
+                    }
+                ],
+                [
+                    "Additional rotation of the module.",
+                    "",
+                    "Additional rotation of the module.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu20"
+                    }
+                ],
+                [
+                    "If it inherits the parent's rotation, this is applied on top of the inherited rotation.",
+                    "",
+                    " If it inherits the parent's rotation, this is applied on top of the inherited rotation.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu20"
+                    }
+                ],
+                [
+                    "Scale inheritance",
+                    "",
+                    "Scale inheritance",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu21"
+                    }
+                ],
+                [
+                    "Inherit the particle system component's uniform scale, as defined in the Transform component",
+                    "",
+                    "Inherit the particle system component's uniform scale, as defined in the Transform component",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu22"
+                    }
+                ],
+                [
+                    "Scale offset",
+                    "",
+                    "Scale offset",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu23"
+                    }
+                ],
+                [
+                    "Additional scaling of the module.",
+                    "",
+                    "Additional scaling of the module.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu24"
+                    }
+                ],
+                [
+                    "If it inherits the parent's scale, this is applied on top of the inherited scale.",
+                    "",
+                    " If it inherits the parent's scale, this is applied on top of the inherited scale.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu24"
+                    }
+                ],
+                [
+                    "For example, a velocity initializer can change its direction depending on the parent's rotation or decide to ignore it and always shoot particles in a fixed direction.",
+                    "",
+                    "For example, a velocity initializer can change its direction depending on the parent's rotation or decide to ignore it and always shoot particles in a fixed direction.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu25"
+                    }
+                ],
+                [
+                    "On the other hand, size initializers don't change based on the parent's rotation, so the rotation fields won't appear at all.",
+                    "",
+                    "On the other hand, size initializers don't change based on the parent's rotation, so the rotation fields won't appear at all.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu26"
+                    }
+                ],
+                [
+                    "Position",
+                    "",
+                    "Position",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu27"
+                    }
+                ],
+                [
+                    "Particles are spawned in an axis-aligned bounding box, defined by its left lower back corner and its right upper front corner.",
+                    "",
+                    "Particles are spawned in an axis-aligned bounding box, defined by its left lower back corner and its right upper front corner.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu28"
+                    }
+                ],
+                [
+                    "<x1\/>media\/particles-reference-initializers-2.png<x2\/>",
+                    "",
+                    "<x1\/>media\/particles-reference-initializers-2.png<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu29"
+                    }
+                ],
+                [
+                    "Property",
+                    "",
+                    "Property",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu30"
+                    }
+                ],
+                [
+                    "Description",
+                    "",
+                    "Description",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu31"
+                    }
+                ],
+                [
+                    "Seed offset",
+                    "",
+                    "Seed offset",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu32"
+                    }
+                ],
+                [
+                    "Used for random numbers.",
+                    "",
+                    "Used for random numbers.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu33"
+                    }
+                ],
+                [
+                    "Set it to the same value to force the position to be coupled with other other particle fields which have three properties (X, Y, Z), eg velocity.",
+                    "",
+                    " Set it to the same value to force the position to be coupled with other other particle fields which have three properties (X, Y, Z), eg velocity.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu33"
+                    }
+                ],
+                [
+                    "Make them different to force the position to be unique and independent from other fields",
+                    "",
+                    " Make them different to force the position to be unique and independent from other fields",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu33"
+                    }
+                ],
+                [
+                    "Position min",
+                    "",
+                    "Position min",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu34"
+                    }
+                ],
+                [
+                    "Left lower back corner for the box",
+                    "",
+                    "Left lower back corner for the box",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu35"
+                    }
+                ],
+                [
+                    "Position max",
+                    "",
+                    "Position max",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu36"
+                    }
+                ],
+                [
+                    "Right upper front corner for the box",
+                    "",
+                    "Right upper front corner for the box",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu37"
+                    }
+                ],
+                [
+                    "This image shows the bounding box where particles initially appear for this emitter.",
+                    "",
+                    "This image shows the bounding box where particles initially appear for this emitter.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu38"
+                    }
+                ],
+                [
+                    "In addition to the corners (-1, 0.8, -1) ~ (1, 1, 1), the box is further rotated by 45 degrees as seen from the offset rotation.",
+                    "",
+                    " In addition to the corners (-1, 0.8, -1) ~ (1, 1, 1), the box is further rotated by 45 degrees as seen from the offset rotation.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu38"
+                    }
+                ],
+                [
+                    "<x1\/>media\/particles-reference-initializers-3.png<x2\/>",
+                    "",
+                    "<x1\/>media\/particles-reference-initializers-3.png<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu39"
+                    }
+                ],
+                [
+                    "Velocity",
+                    "",
+                    "Velocity",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu40"
+                    }
+                ],
+                [
+                    "Particles spawn with initial velocity which ranges between the defined values.",
+                    "",
+                    "Particles spawn with initial velocity which ranges between the defined values.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu41"
+                    }
+                ],
+                [
+                    "The velocity is independent in all three directions between X, Y and Z.",
+                    "",
+                    " The velocity is independent in all three directions between X, Y and Z.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu41"
+                    }
+                ],
+                [
+                    "<x1\/>media\/particles-reference-initializers-4.png<x2\/>",
+                    "",
+                    "<x1\/>media\/particles-reference-initializers-4.png<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu42"
+                    }
+                ],
+                [
+                    "Property",
+                    "",
+                    "Property",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu43"
+                    }
+                ],
+                [
+                    "Description",
+                    "",
+                    "Description",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu44"
+                    }
+                ],
+                [
+                    "Seed offset",
+                    "",
+                    "Seed offset",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu45"
+                    }
+                ],
+                [
+                    "This is used for random numbers.",
+                    "",
+                    "This is used for random numbers.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu46"
+                    }
+                ],
+                [
+                    "Set it to the same value to force the velocity to be coupled with other other particle fields which have 3 properties (x, Y, Z), like position for example.",
+                    "",
+                    " Set it to the same value to force the velocity to be coupled with other other particle fields which have 3 properties (x, Y, Z), like position for example.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu46"
+                    }
+                ],
+                [
+                    "Make them different to force the velocity to be unique and independent from other fields.",
+                    "",
+                    " Make them different to force the velocity to be unique and independent from other fields.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu46"
+                    }
+                ],
+                [
+                    "Velocity min",
+                    "",
+                    "Velocity min",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu47"
+                    }
+                ],
+                [
+                    "Left lower back corner for the box",
+                    "",
+                    "Left lower back corner for the box",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu48"
+                    }
+                ],
+                [
+                    "Velocity max",
+                    "",
+                    "Velocity max",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu49"
+                    }
+                ],
+                [
+                    "Right upper front corner for the box",
+                    "",
+                    "Right upper front corner for the box",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu50"
+                    }
+                ],
+                [
+                    "Size",
+                    "",
+                    "Size",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu51"
+                    }
+                ],
+                [
+                    "Initial size sets the particle's uniform size when it's spawned for the first time.",
+                    "",
+                    "Initial size sets the particle's uniform size when it's spawned for the first time.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu52"
+                    }
+                ],
+                [
+                    "A size of 1 will result in a 1 meter by 1 meter billboard or quad when rendered.",
+                    "",
+                    " A size of 1 will result in a 1 meter by 1 meter billboard or quad when rendered.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu52"
+                    }
+                ],
+                [
+                    "<x1\/>media\/particles-reference-initializers-5.png<x2\/>",
+                    "",
+                    "<x1\/>media\/particles-reference-initializers-5.png<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu53"
+                    }
+                ],
+                [
+                    "Property",
+                    "",
+                    "Property",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu54"
+                    }
+                ],
+                [
+                    "Description",
+                    "",
+                    "Description",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu55"
+                    }
+                ],
+                [
+                    "Seed offset",
+                    "",
+                    "Seed offset",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu56"
+                    }
+                ],
+                [
+                    "This is used for random numbers.",
+                    "",
+                    "This is used for random numbers.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu57"
+                    }
+                ],
+                [
+                    "Set it to the same value to force the size to be coupled with other particle fields which have 1 property, like color for example.",
+                    "",
+                    " Set it to the same value to force the size to be coupled with other particle fields which have 1 property, like color for example.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu57"
+                    }
+                ],
+                [
+                    "Make them different to force the size to be unique and independent from other fields",
+                    "",
+                    " Make them different to force the size to be unique and independent from other fields",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu57"
+                    }
+                ],
+                [
+                    "Random size",
+                    "",
+                    "Random size",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu58"
+                    }
+                ],
+                [
+                    "Shows the minimum and maximum size a particle can have at spawn time",
+                    "",
+                    "Shows the minimum and maximum size a particle can have at spawn time",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu59"
+                    }
+                ],
+                [
+                    "Rotation",
+                    "",
+                    "Rotation",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu60"
+                    }
+                ],
+                [
+                    "Initial rotation sets the particle's angular rotation when facing the camera.",
+                    "",
+                    "Initial rotation sets the particle's angular rotation when facing the camera.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu61"
+                    }
+                ],
+                [
+                    "Positive values are clockwise rotations.",
+                    "",
+                    " Positive values are clockwise rotations.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu61"
+                    }
+                ],
+                [
+                    "The field only has meaning for camera-facing particles, such as billboards.",
+                    "",
+                    " The field only has meaning for camera-facing particles, such as billboards.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu61"
+                    }
+                ],
+                [
+                    "It has no effect on oriented quads and models.",
+                    "",
+                    " It has no effect on oriented quads and models.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu61"
+                    }
+                ],
+                [
+                    "<x1\/>media\/particles-reference-initializers-6.png<x2\/>",
+                    "",
+                    "<x1\/>media\/particles-reference-initializers-6.png<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu62"
+                    }
+                ],
+                [
+                    "Property",
+                    "",
+                    "Property",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu63"
+                    }
+                ],
+                [
+                    "Description",
+                    "",
+                    "Description",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu64"
+                    }
+                ],
+                [
+                    "Seed offset",
+                    "",
+                    "Seed offset",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu65"
+                    }
+                ],
+                [
+                    "This is used for random numbers.",
+                    "",
+                    "This is used for random numbers.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu66"
+                    }
+                ],
+                [
+                    "Set it to the same value to force the angle to be coupled with other particle fields which have 1 property, like color for example.",
+                    "",
+                    " Set it to the same value to force the angle to be coupled with other particle fields which have 1 property, like color for example.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu66"
+                    }
+                ],
+                [
+                    "Make them different to force the angle to be unique and independent from other fields",
+                    "",
+                    " Make them different to force the angle to be unique and independent from other fields",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu66"
+                    }
+                ],
+                [
+                    "Angle (degrees)",
+                    "",
+                    "Angle (degrees)",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu67"
+                    }
+                ],
+                [
+                    "The minimum and maximum value, in degrees, for the initial rotation",
+                    "",
+                    "The minimum and maximum value, in degrees, for the initial rotation",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu68"
+                    }
+                ],
+                [
+                    "Color",
+                    "",
+                    "Color",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu69"
+                    }
+                ],
+                [
+                    "Initial color sets the particle's initial color at spawn time.",
+                    "",
+                    "Initial color sets the particle's initial color at spawn time.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu70"
+                    }
+                ],
+                [
+                    "It goes into the vertex buffer when building the particles and can be used by the material, but might not if the option is not set in the material itself.",
+                    "",
+                    " It goes into the vertex buffer when building the particles and can be used by the material, but might not if the option is not set in the material itself.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu70"
+                    }
+                ],
+                [
+                    "If setting the color has no effect please refer to the <g1>Material<\/g1> page for further discussion.",
+                    "",
+                    " If setting the color has no effect please refer to the <g1>Material<\/g1> page for further discussion.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu70"
+                    }
+                ],
+                [
+                    "<x1\/>media\/particles-reference-initializers-7.png<x2\/>",
+                    "",
+                    "<x1\/>media\/particles-reference-initializers-7.png<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu71"
+                    }
+                ],
+                [
+                    "Property",
+                    "",
+                    "Property",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu72"
+                    }
+                ],
+                [
+                    "Description",
+                    "",
+                    "Description",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu73"
+                    }
+                ],
+                [
+                    "Seed offset",
+                    "",
+                    "Seed offset",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu74"
+                    }
+                ],
+                [
+                    "This is used for random numbers.",
+                    "",
+                    "This is used for random numbers.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu75"
+                    }
+                ],
+                [
+                    "Set it to the same value to force the color to be coupled with other particle fields which have 1 property, like size for example.",
+                    "",
+                    " Set it to the same value to force the color to be coupled with other particle fields which have 1 property, like size for example.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu75"
+                    }
+                ],
+                [
+                    "Make them different to force the color to be unique and independent from other fields",
+                    "",
+                    " Make them different to force the color to be unique and independent from other fields",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu75"
+                    }
+                ],
+                [
+                    "Color A",
+                    "",
+                    "Color A",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu76"
+                    }
+                ],
+                [
+                    "The first value, in hexadecimal code.",
+                    "",
+                    "The first value, in hexadecimal code.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu77"
+                    }
+                ],
+                [
+                    "The color will be a random tint between this and the second color.",
+                    "",
+                    " The color will be a random tint between this and the second color.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu77"
+                    }
+                ],
+                [
+                    "Color B",
+                    "",
+                    "Color B",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu78"
+                    }
+                ],
+                [
+                    "The second value, in hexadecimal code.",
+                    "",
+                    "The second value, in hexadecimal code.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu79"
+                    }
+                ],
+                [
+                    "The color will be a random tint between this and the first color.",
+                    "",
+                    " The color will be a random tint between this and the first color.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu79"
+                    }
+                ],
+                [
+                    "3D Orientation",
+                    "",
+                    "3D Orientation",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu80"
+                    }
+                ],
+                [
+                    "Initial 3D orientation sets the orientation for 3D-aware particles when they first spawn.",
+                    "",
+                    "Initial 3D orientation sets the orientation for 3D-aware particles when they first spawn.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu81"
+                    }
+                ],
+                [
+                    "The editable fields use euclidean rotation which is packed into a quaternion orientation by the engine.",
+                    "",
+                    " The editable fields use euclidean rotation which is packed into a quaternion orientation by the engine.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu81"
+                    }
+                ],
+                [
+                    "The interpolated value is on the shortest path  between the two orientations, rather than interpolating each value separately.",
+                    "",
+                    " The interpolated value is on the shortest path  between the two orientations, rather than interpolating each value separately.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu81"
+                    }
+                ],
+                [
+                    "<x1\/>media\/particles-reference-initializers-8.png<x2\/>",
+                    "",
+                    "<x1\/>media\/particles-reference-initializers-8.png<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu82"
+                    }
+                ],
+                [
+                    "Property",
+                    "",
+                    "Property",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu83"
+                    }
+                ],
+                [
+                    "Description",
+                    "",
+                    "Description",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu84"
+                    }
+                ],
+                [
+                    "Seed offset",
+                    "",
+                    "Seed offset",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu85"
+                    }
+                ],
+                [
+                    "This is used for random numbers.",
+                    "",
+                    "This is used for random numbers.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu86"
+                    }
+                ],
+                [
+                    "Set it to the same value to force the orientation to be coupled with other particle fields which have 1 property, like size for example.",
+                    "",
+                    " Set it to the same value to force the orientation to be coupled with other particle fields which have 1 property, like size for example.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu86"
+                    }
+                ],
+                [
+                    "Make them different to force the orientation to be unique and independent from other fields.",
+                    "",
+                    " Make them different to force the orientation to be unique and independent from other fields.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu86"
+                    }
+                ],
+                [
+                    "Orientation A",
+                    "",
+                    "Orientation A",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu87"
+                    }
+                ],
+                [
+                    "The first oriented position",
+                    "",
+                    "The first oriented position",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu88"
+                    }
+                ],
+                [
+                    "Orientation B",
+                    "",
+                    "Orientation B",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu89"
+                    }
+                ],
+                [
+                    "The second oriented position",
+                    "",
+                    "The second oriented position",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu90"
+                    }
+                ],
+                [
+                    "Direction",
+                    "",
+                    "Direction",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu91"
+                    }
+                ],
+                [
+                    "This initializer creates the <g1>Direction<\/g1> field in the particle properties and sets its initial value.",
+                    "",
+                    "This initializer creates the <g1>Direction<\/g1> field in the particle properties and sets its initial value.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu92"
+                    }
+                ],
+                [
+                    "Some shape builders, like the Trail shape or the Direction Aligned Sprite shape use the particle's direction to properly display it.",
+                    "",
+                    " Some shape builders, like the Trail shape or the Direction Aligned Sprite shape use the particle's direction to properly display it.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu92"
+                    }
+                ],
+                [
+                    "Property",
+                    "",
+                    "Property",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu93"
+                    }
+                ],
+                [
+                    "Description",
+                    "",
+                    "Description",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu94"
+                    }
+                ],
+                [
+                    "Seed offset",
+                    "",
+                    "Seed offset",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu95"
+                    }
+                ],
+                [
+                    "This is used for random numbers.",
+                    "",
+                    "This is used for random numbers.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu96"
+                    }
+                ],
+                [
+                    "Set it to the same value to force the direction to be coupled with other other particle fields which have 3 properties (x, Y, Z), like position for example.",
+                    "",
+                    " Set it to the same value to force the direction to be coupled with other other particle fields which have 3 properties (x, Y, Z), like position for example.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu96"
+                    }
+                ],
+                [
+                    "Make them different to force the velocity to be unique and independent from other fields.",
+                    "",
+                    " Make them different to force the velocity to be unique and independent from other fields.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu96"
+                    }
+                ],
+                [
+                    "Direction min",
+                    "",
+                    "Direction min",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu97"
+                    }
+                ],
+                [
+                    "Left lower back corner for the box",
+                    "",
+                    "Left lower back corner for the box",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu98"
+                    }
+                ],
+                [
+                    "Direction max",
+                    "",
+                    "Direction max",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu99"
+                    }
+                ],
+                [
+                    "Right upper front corner for the box",
+                    "",
+                    "Right upper front corner for the box",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu100"
+                    }
+                ],
+                [
+                    "Spawn Order",
+                    "",
+                    "Spawn Order",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu101"
+                    }
+                ],
+                [
+                    "This initializer has no properties.",
+                    "",
+                    "This initializer has no properties.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu102"
+                    }
+                ],
+                [
+                    "It simply sets an increasing number to each particle spawned from this emitter, starting from 0.",
+                    "",
+                    " It simply sets an increasing number to each particle spawned from this emitter, starting from 0.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu102"
+                    }
+                ],
+                [
+                    "The spawn order can be used for sorting or some custom calculations.",
+                    "",
+                    " The spawn order can be used for sorting or some custom calculations.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu102"
+                    }
+                ],
+                [
+                    "Position (Arc)",
+                    "",
+                    "Position (Arc)",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu103"
+                    }
+                ],
+                [
+                    "The arc position initializer positions the particles in an arc (or a straight line if the arc's height is 0) between two point, the emitter's position and a target transform component.",
+                    "",
+                    "The arc position initializer positions the particles in an arc (or a straight line if the arc's height is 0) between two point, the emitter's position and a target transform component.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu104"
+                    }
+                ],
+                [
+                    "With random position offset you can cause the particles to deviate a little from their original location on the arc.",
+                    "",
+                    " With random position offset you can cause the particles to deviate a little from their original location on the arc.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu104"
+                    }
+                ],
+                [
+                    "<x1\/>media\/particles-reference-initializers-5.png<x2\/>",
+                    "",
+                    "<x1\/>media\/particles-reference-initializers-5.png<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu105"
+                    }
+                ],
+                [
+                    "Property",
+                    "",
+                    "Property",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu106"
+                    }
+                ],
+                [
+                    "Description",
+                    "",
+                    "Description",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu107"
+                    }
+                ],
+                [
+                    "Seed offset",
+                    "",
+                    "Seed offset",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu108"
+                    }
+                ],
+                [
+                    "This is used for random numbers.",
+                    "",
+                    "This is used for random numbers.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu109"
+                    }
+                ],
+                [
+                    "Set it to the same value to force the position to be coupled with other other particle fields which have 3 properties (X, Y, Z), like velocity for example.",
+                    "",
+                    " Set it to the same value to force the position to be coupled with other other particle fields which have 3 properties (X, Y, Z), like velocity for example.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu109"
+                    }
+                ],
+                [
+                    "Make them different to force the position to be unique and independent from other fields.",
+                    "",
+                    " Make them different to force the position to be unique and independent from other fields.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu109"
+                    }
+                ],
+                [
+                    "Position min",
+                    "",
+                    "Position min",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu110"
+                    }
+                ],
+                [
+                    "Left lower back corner for the box",
+                    "",
+                    "Left lower back corner for the box",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu111"
+                    }
+                ],
+                [
+                    "Position max",
+                    "",
+                    "Position max",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu112"
+                    }
+                ],
+                [
+                    "Right upper front corner for the box",
+                    "",
+                    "Right upper front corner for the box",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu113"
+                    }
+                ],
+                [
+                    "Target",
+                    "",
+                    "Target",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu114"
+                    }
+                ],
+                [
+                    "Allows you to pick up an Entity for the end of the arc.",
+                    "",
+                    "Allows you to pick up an Entity for the end of the arc.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu115"
+                    }
+                ],
+                [
+                    "If no Entity is set, Fallback Target will be used, which is an offset from the emitter's location.",
+                    "",
+                    " If no Entity is set, Fallback Target will be used, which is an offset from the emitter's location.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu115"
+                    }
+                ],
+                [
+                    "Fallback Target",
+                    "",
+                    "Fallback Target",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu116"
+                    }
+                ],
+                [
+                    "Offset from the emitter's location used as the end point in case Target is not set",
+                    "",
+                    "Offset from the emitter's location used as the end point in case Target is not set",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu117"
+                    }
+                ],
+                [
+                    "Arc Height",
+                    "",
+                    "Arc Height",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu118"
+                    }
+                ],
+                [
+                    "The height of the arc at its highest point (middle of the distance between the two points).",
+                    "",
+                    "The height of the arc at its highest point (middle of the distance between the two points).",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu119"
+                    }
+                ],
+                [
+                    "By default it's the Y-up vector, but can be rotated with rotation offset and rotation inheritance",
+                    "",
+                    " By default it's the Y-up vector, but can be rotated with rotation offset and rotation inheritance",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu119"
+                    }
+                ],
+                [
+                    "Ordered",
+                    "",
+                    "Ordered",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu120"
+                    }
+                ],
+                [
+                    "If checked, new particles will appear in order from the emitter towards the target.",
+                    "",
+                    "If checked, new particles will appear in order from the emitter towards the target.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu121"
+                    }
+                ],
+                [
+                    "If unchecked, new particles will appear randomly on the arc anywhere between the emitter and the target.",
+                    "",
+                    " If unchecked, new particles will appear randomly on the arc anywhere between the emitter and the target.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu121"
+                    }
+                ],
+                [
+                    "If you plan to visualize the particles as a ribbon or a trail you should set this box to checked.",
+                    "",
+                    " If you plan to visualize the particles as a ribbon or a trail you should set this box to checked.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu121"
+                    }
+                ],
+                [
+                    "Fixed count",
+                    "",
+                    "Fixed count",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu122"
+                    }
+                ],
+                [
+                    "By default particles will appear on the arc at distances enough for the maximum number of particles to fit exactly on the line.",
+                    "",
+                    "By default particles will appear on the arc at distances enough for the maximum number of particles to fit exactly on the line.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu123"
+                    }
+                ],
+                [
+                    "If you want to control spawn rate and distance, you can set how many fixed \"positions\" are there on the arc.",
+                    "",
+                    " If you want to control spawn rate and distance, you can set how many fixed \"positions\" are there on the arc.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu123"
+                    }
+                ],
+                [
+                    "For example, with a fixed count of 10 and Ordered spawning, the first 10 particles will appear in order, then the 11th particle will appear from the beginning, at the same position as the first, and so on.",
+                    "",
+                    " For example, with a fixed count of 10 and Ordered spawning, the first 10 particles will appear in order, then the 11th particle will appear from the beginning, at the same position as the first, and so on.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu123"
+                    }
+                ],
+                [
+                    "Seed offset",
+                    "",
+                    "Seed offset",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu124"
+                    }
+                ],
+                [
+                    "This is used for random numbers.",
+                    "",
+                    "This is used for random numbers.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu125"
+                    }
+                ],
+                [
+                    "Set it to the same value to force the position to be coupled with other other particle fields which have 3 properties (X, Y, Z), like velocity for example.",
+                    "",
+                    " Set it to the same value to force the position to be coupled with other other particle fields which have 3 properties (X, Y, Z), like velocity for example.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu125"
+                    }
+                ],
+                [
+                    "Make them different to force the position to be unique and independent from other fields.",
+                    "",
+                    " Make them different to force the position to be unique and independent from other fields.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu125"
+                    }
+                ],
+                [
+                    "Position min",
+                    "",
+                    "Position min",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu126"
+                    }
+                ],
+                [
+                    "Left lower back corner for the box.",
+                    "",
+                    "Left lower back corner for the box.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu127"
+                    }
+                ],
+                [
+                    "This is an offset in addition to the arc position.",
+                    "",
+                    " This is an offset in addition to the arc position.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu127"
+                    }
+                ],
+                [
+                    "Position max",
+                    "",
+                    "Position max",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu128"
+                    }
+                ],
+                [
+                    "Right upper front corner for the box.",
+                    "",
+                    "Right upper front corner for the box.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu129"
+                    }
+                ],
+                [
+                    "This is an offset in addition to the arc position.",
+                    "",
+                    " This is an offset in addition to the arc position.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu129"
+                    }
+                ],
+                [
+                    "Position (parent)",
+                    "",
+                    "Position (parent)",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu130"
+                    }
+                ],
+                [
+                    "Property",
+                    "",
+                    "Property",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu131"
+                    }
+                ],
+                [
+                    "Description",
+                    "",
+                    "Description",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu132"
+                    }
+                ],
+                [
+                    "Seed offset",
+                    "",
+                    "Seed offset",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu133"
+                    }
+                ],
+                [
+                    "This is used for random numbers.",
+                    "",
+                    "This is used for random numbers.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu134"
+                    }
+                ],
+                [
+                    "Set it to the same value to force the position to be coupled with other other particle fields which have 3 properties (X, Y, Z), like velocity for example.",
+                    "",
+                    " Set it to the same value to force the position to be coupled with other other particle fields which have 3 properties (X, Y, Z), like velocity for example.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu134"
+                    }
+                ],
+                [
+                    "Make them different to force the position to be unique and independent from other fields.",
+                    "",
+                    " Make them different to force the position to be unique and independent from other fields.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu134"
+                    }
+                ],
+                [
+                    "Position min",
+                    "",
+                    "Position min",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu135"
+                    }
+                ],
+                [
+                    "Left lower back corner for the box",
+                    "",
+                    "Left lower back corner for the box",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu136"
+                    }
+                ],
+                [
+                    "Position max",
+                    "",
+                    "Position max",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu137"
+                    }
+                ],
+                [
+                    "Right upper front corner for the box",
+                    "",
+                    "Right upper front corner for the box",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu138"
+                    }
+                ],
+                [
+                    "Parent emitter",
+                    "",
+                    "Parent emitter",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu139"
+                    }
+                ],
+                [
+                    "You have to type the name of the parent emitter.",
+                    "",
+                    "You have to type the name of the parent emitter.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu140"
+                    }
+                ],
+                [
+                    "Child particles' positions will match the parent emitter's particles' positions.",
+                    "",
+                    " Child particles' positions will match the parent emitter's particles' positions.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu140"
+                    }
+                ],
+                [
+                    "Parent Offset",
+                    "",
+                    "Parent Offset",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu141"
+                    }
+                ],
+                [
+                    "Random seed used to couple or decouple the way a parent particle is chosen.",
+                    "",
+                    "Random seed used to couple or decouple the way a parent particle is chosen.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu142"
+                    }
+                ],
+                [
+                    "For example, if you want to pick position <g1>and<\/g1> color from seemingly random particles, you can use the same offset.",
+                    "",
+                    " For example, if you want to pick position <g1>and<\/g1> color from seemingly random particles, you can use the same offset.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu142"
+                    }
+                ],
+                [
+                    "If you want to avoid such connection, you can use different offsets for position and color initializers.",
+                    "",
+                    " If you want to avoid such connection, you can use different offsets for position and color initializers.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu142"
+                    }
+                ],
+                [
+                    "Spawn Control Group",
+                    "",
+                    "Spawn Control Group",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu143"
+                    }
+                ],
+                [
+                    "When None, parents will be picked randomly.",
+                    "",
+                    "When None, parents will be picked randomly.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu144"
+                    }
+                ],
+                [
+                    "When set to one of the four groups, only particles from a specific parent will be initialized.",
+                    "",
+                    " When set to one of the four groups, only particles from a specific parent will be initialized.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu144"
+                    }
+                ],
+                [
+                    "It should match a control group from the <g1>Spawn from Parent<\/g1> spawner to work properly.",
+                    "",
+                    " It should match a control group from the <g1>Spawn from Parent<\/g1> spawner to work properly.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu144"
+                    }
+                ],
+                [
+                    "Velocity (parent)",
+                    "",
+                    "Velocity (parent)",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu145"
+                    }
+                ],
+                [
+                    "Property",
+                    "",
+                    "Property",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu146"
+                    }
+                ],
+                [
+                    "Description",
+                    "",
+                    "Description",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu147"
+                    }
+                ],
+                [
+                    "Seed offset",
+                    "",
+                    "Seed offset",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu148"
+                    }
+                ],
+                [
+                    "This is used for random numbers.",
+                    "",
+                    "This is used for random numbers.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu149"
+                    }
+                ],
+                [
+                    "Set it to the same value to force the velocity to be coupled with other other particle fields which have 3 properties (x, Y, Z), like position for example.",
+                    "",
+                    " Set it to the same value to force the velocity to be coupled with other other particle fields which have 3 properties (x, Y, Z), like position for example.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu149"
+                    }
+                ],
+                [
+                    "Make them different to force the velocity to be unique and independent from other fields.",
+                    "",
+                    " Make them different to force the velocity to be unique and independent from other fields.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu149"
+                    }
+                ],
+                [
+                    "Velocity min",
+                    "",
+                    "Velocity min",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu150"
+                    }
+                ],
+                [
+                    "Left lower back corner for the box",
+                    "",
+                    "Left lower back corner for the box",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu151"
+                    }
+                ],
+                [
+                    "Velocity max",
+                    "",
+                    "Velocity max",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu152"
+                    }
+                ],
+                [
+                    "Right upper front corner for the box",
+                    "",
+                    "Right upper front corner for the box",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu153"
+                    }
+                ],
+                [
+                    "Parent emitter",
+                    "",
+                    "Parent emitter",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu154"
+                    }
+                ],
+                [
+                    "You have to type the name of the parent emitter.",
+                    "",
+                    "You have to type the name of the parent emitter.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu155"
+                    }
+                ],
+                [
+                    "Child particles' positions will match the parent emitter's particles' positions.",
+                    "",
+                    " Child particles' positions will match the parent emitter's particles' positions.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu155"
+                    }
+                ],
+                [
+                    "Parent Offset",
+                    "",
+                    "Parent Offset",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu156"
+                    }
+                ],
+                [
+                    "Random seed used to couple or decouple the way a parent particle is chosen.",
+                    "",
+                    "Random seed used to couple or decouple the way a parent particle is chosen.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu157"
+                    }
+                ],
+                [
+                    "For example, if you want to pick position <g1>and<\/g1> color from seemingly random particles, you can use the same offset.",
+                    "",
+                    " For example, if you want to pick position <g1>and<\/g1> color from seemingly random particles, you can use the same offset.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu157"
+                    }
+                ],
+                [
+                    "If you want to avoid such connection, you can use different offsets for position and color initializers.",
+                    "",
+                    " If you want to avoid such connection, you can use different offsets for position and color initializers.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu157"
+                    }
+                ],
+                [
+                    "Spawn Control Group",
+                    "",
+                    "Spawn Control Group",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu158"
+                    }
+                ],
+                [
+                    "When None, parents will be picked randomly.",
+                    "",
+                    "When None, parents will be picked randomly.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu159"
+                    }
+                ],
+                [
+                    "When set to one of the four groups, only particles from a specific parent will be initialized.",
+                    "",
+                    " When set to one of the four groups, only particles from a specific parent will be initialized.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu159"
+                    }
+                ],
+                [
+                    "It should match a control group from the <g1>Spawn from Parent<\/g1> spawner to work properly.",
+                    "",
+                    " It should match a control group from the <g1>Spawn from Parent<\/g1> spawner to work properly.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu159"
+                    }
+                ],
+                [
+                    "Size (parent)",
+                    "",
+                    "Size (parent)",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu160"
+                    }
+                ],
+                [
+                    "Property",
+                    "",
+                    "Property",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu161"
+                    }
+                ],
+                [
+                    "Description",
+                    "",
+                    "Description",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu162"
+                    }
+                ],
+                [
+                    "Seed offset",
+                    "",
+                    "Seed offset",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu163"
+                    }
+                ],
+                [
+                    "This is used for random numbers.",
+                    "",
+                    "This is used for random numbers.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu164"
+                    }
+                ],
+                [
+                    "Set it to the same value to force the size to be coupled with other particle fields which have 1 property, like color for example.",
+                    "",
+                    " Set it to the same value to force the size to be coupled with other particle fields which have 1 property, like color for example.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu164"
+                    }
+                ],
+                [
+                    "Make them different to force the size to be unique and independent from other fields.",
+                    "",
+                    " Make them different to force the size to be unique and independent from other fields.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu164"
+                    }
+                ],
+                [
+                    "Random size",
+                    "",
+                    "Random size",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu165"
+                    }
+                ],
+                [
+                    "Shows the minimum and maximum size a particle can have at spawn time",
+                    "",
+                    "Shows the minimum and maximum size a particle can have at spawn time",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu166"
+                    }
+                ],
+                [
+                    "Parent emitter",
+                    "",
+                    "Parent emitter",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu167"
+                    }
+                ],
+                [
+                    "You have to type the name of the parent emitter.",
+                    "",
+                    "You have to type the name of the parent emitter.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu168"
+                    }
+                ],
+                [
+                    "Child particles' positions will match the parent emitter's particles' positions.",
+                    "",
+                    " Child particles' positions will match the parent emitter's particles' positions.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu168"
+                    }
+                ],
+                [
+                    "Parent Offset",
+                    "",
+                    "Parent Offset",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu169"
+                    }
+                ],
+                [
+                    "Random seed used to couple or decouple the way a parent particle is chosen.",
+                    "",
+                    "Random seed used to couple or decouple the way a parent particle is chosen.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu170"
+                    }
+                ],
+                [
+                    "For example, if you want to pick position <g1>and<\/g1> color from seemingly random particles, you can use the same offset.",
+                    "",
+                    " For example, if you want to pick position <g1>and<\/g1> color from seemingly random particles, you can use the same offset.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu170"
+                    }
+                ],
+                [
+                    "If you want to avoid such connection, you can use different offsets for position and color initializers.",
+                    "",
+                    " If you want to avoid such connection, you can use different offsets for position and color initializers.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu170"
+                    }
+                ],
+                [
+                    "Spawn Control Group",
+                    "",
+                    "Spawn Control Group",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu171"
+                    }
+                ],
+                [
+                    "When None, parents will be picked randomly.",
+                    "",
+                    "When None, parents will be picked randomly.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu172"
+                    }
+                ],
+                [
+                    "When set to one of the four groups, only particles from a specific parent will be initialized.",
+                    "",
+                    " When set to one of the four groups, only particles from a specific parent will be initialized.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu172"
+                    }
+                ],
+                [
+                    "It should match a control group from the <g1>Spawn from Parent<\/g1> spawner to work properly.",
+                    "",
+                    " It should match a control group from the <g1>Spawn from Parent<\/g1> spawner to work properly.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu172"
+                    }
+                ],
+                [
+                    "Color (parent)",
+                    "",
+                    "Color (parent)",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu173"
+                    }
+                ],
+                [
+                    "Property",
+                    "",
+                    "Property",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu174"
+                    }
+                ],
+                [
+                    "Description",
+                    "",
+                    "Description",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu175"
+                    }
+                ],
+                [
+                    "Seed offset",
+                    "",
+                    "Seed offset",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu176"
+                    }
+                ],
+                [
+                    "This is used for random numbers.",
+                    "",
+                    "This is used for random numbers.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu177"
+                    }
+                ],
+                [
+                    "Set it to the same value to force the color to be coupled with other particle fields which have 1 property, like size for example.",
+                    "",
+                    " Set it to the same value to force the color to be coupled with other particle fields which have 1 property, like size for example.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu177"
+                    }
+                ],
+                [
+                    "Make them different to force the color to be unique and independent from other fields.",
+                    "",
+                    " Make them different to force the color to be unique and independent from other fields.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu177"
+                    }
+                ],
+                [
+                    "Color A",
+                    "",
+                    "Color A",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu178"
+                    }
+                ],
+                [
+                    "The first value, in hexadecimal code.",
+                    "",
+                    "The first value, in hexadecimal code.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu179"
+                    }
+                ],
+                [
+                    "The color will be a random tint between this and the second color.",
+                    "",
+                    " The color will be a random tint between this and the second color.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu179"
+                    }
+                ],
+                [
+                    "Color B",
+                    "",
+                    "Color B",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu180"
+                    }
+                ],
+                [
+                    "The second value, in hexadecimal code.",
+                    "",
+                    "The second value, in hexadecimal code.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu181"
+                    }
+                ],
+                [
+                    "The color will be a random tint between this and the first color.",
+                    "",
+                    " The color will be a random tint between this and the first color.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu181"
+                    }
+                ],
+                [
+                    "Parent emitter",
+                    "",
+                    "Parent emitter",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu182"
+                    }
+                ],
+                [
+                    "You have to type the name of the parent emitter.",
+                    "",
+                    "You have to type the name of the parent emitter.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu183"
+                    }
+                ],
+                [
+                    "Child particles' positions will match the parent emitter's particles' positions.",
+                    "",
+                    " Child particles' positions will match the parent emitter's particles' positions.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu183"
+                    }
+                ],
+                [
+                    "Parent Offset",
+                    "",
+                    "Parent Offset",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu184"
+                    }
+                ],
+                [
+                    "Random seed used to couple or decouple the way a parent particle is chosen.",
+                    "",
+                    "Random seed used to couple or decouple the way a parent particle is chosen.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu185"
+                    }
+                ],
+                [
+                    "For example, if you want to pick position <g1>and<\/g1> color from seemingly random particles, you can use the same offset.",
+                    "",
+                    " For example, if you want to pick position <g1>and<\/g1> color from seemingly random particles, you can use the same offset.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu185"
+                    }
+                ],
+                [
+                    "If you want to avoid such connection, you can use different offsets for position and color initializers.",
+                    "",
+                    " If you want to avoid such connection, you can use different offsets for position and color initializers.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu185"
+                    }
+                ],
+                [
+                    "Spawn Control Group",
+                    "",
+                    "Spawn Control Group",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu186"
+                    }
+                ],
+                [
+                    "When None, parents will be picked randomly.",
+                    "",
+                    "When None, parents will be picked randomly.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu187"
+                    }
+                ],
+                [
+                    "When set to one of the four groups, only particles from a specific parent will be initialized.",
+                    "",
+                    " When set to one of the four groups, only particles from a specific parent will be initialized.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu187"
+                    }
+                ],
+                [
+                    "It should match a control group from the <g1>Spawn from Parent<\/g1> spawner to work properly.",
+                    "",
+                    " It should match a control group from the <g1>Spawn from Parent<\/g1> spawner to work properly.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu187"
+                    }
+                ],
+                [
+                    "Spawn Order (parent)",
+                    "",
+                    "Spawn Order (parent)",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu188"
+                    }
+                ],
+                [
+                    "This initializer requires the parent emitter to also have a Spawn Order initializer.",
+                    "",
+                    "This initializer requires the parent emitter to also have a Spawn Order initializer.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu189"
+                    }
+                ],
+                [
+                    "It combines the parent's spawn number with its own, effectively creating groups of particles among the children.",
+                    "",
+                    " It combines the parent's spawn number with its own, effectively creating groups of particles among the children.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu189"
+                    }
+                ],
+                [
+                    "This initializer is required to properly sort and render child ribbon particles.",
+                    "",
+                    " This initializer is required to properly sort and render child ribbon particles.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu189"
+                    }
+                ],
+                [
+                    "Property",
+                    "",
+                    "Property",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu190"
+                    }
+                ],
+                [
+                    "Description",
+                    "",
+                    "Description",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu191"
+                    }
+                ],
+                [
+                    "Parent emitter",
+                    "",
+                    "Parent emitter",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu192"
+                    }
+                ],
+                [
+                    "You have to type the name of the parent emitter.",
+                    "",
+                    "You have to type the name of the parent emitter.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu193"
+                    }
+                ],
+                [
+                    "Child particles' positions will match the parent emitter's particles' positions.",
+                    "",
+                    " Child particles' positions will match the parent emitter's particles' positions.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu193"
+                    }
+                ],
+                [
+                    "Parent Offset",
+                    "",
+                    "Parent Offset",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu194"
+                    }
+                ],
+                [
+                    "Random seed used to couple or decouple the way a parent particle is chosen.",
+                    "",
+                    "Random seed used to couple or decouple the way a parent particle is chosen.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu195"
+                    }
+                ],
+                [
+                    "For example, if you want to pick position <g1>and<\/g1> color from seemingly random particles, you can use the same offset.",
+                    "",
+                    " For example, if you want to pick position <g1>and<\/g1> color from seemingly random particles, you can use the same offset.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu195"
+                    }
+                ],
+                [
+                    "If you want to avoid such connection, you can use different offsets for position and color initializers.",
+                    "",
+                    " If you want to avoid such connection, you can use different offsets for position and color initializers.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu195"
+                    }
+                ],
+                [
+                    "Spawn Control Group",
+                    "",
+                    "Spawn Control Group",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu196"
+                    }
+                ],
+                [
+                    "When None, parents will be picked randomly.",
+                    "",
+                    "When None, parents will be picked randomly.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu197"
+                    }
+                ],
+                [
+                    "When set to one of the four groups, only particles from a specific parent will be initialized.",
+                    "",
+                    " When set to one of the four groups, only particles from a specific parent will be initialized.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu197"
+                    }
+                ],
+                [
+                    "It should match a control group from the <g1>Spawn from Parent<\/g1> spawner to work properly.",
+                    "",
+                    " It should match a control group from the <g1>Spawn from Parent<\/g1> spawner to work properly.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu197"
+                    }
+                ],
+                [
+                    "See also",
+                    "",
+                    "See also",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu198"
+                    }
+                ],
+                [
+                    "Create particles",
+                    "",
+                    "<g1>Create particles<\/g1>",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu199"
+                    }
+                ],
+                [
+                    "Emitters",
+                    "",
+                    "<g1>Emitters<\/g1>",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu200"
+                    }
+                ],
+                [
+                    "Shapes",
+                    "",
+                    "<g1>Shapes<\/g1>",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu201"
+                    }
+                ],
+                [
+                    "Materials",
+                    "",
+                    "<g1>Materials<\/g1>",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu202"
+                    }
+                ],
+                [
+                    "Spawners",
+                    "",
+                    "<g1>Spawners<\/g1>",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu203"
+                    }
+                ],
+                [
+                    "Updaters",
+                    "",
+                    "<g1>Updaters<\/g1>",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/initializers.md",
+                    {
+                        "id": "tu204"
+                    }
+                ]
+            ]
+        }
+    ],
+    "seg_enabled": false
+}

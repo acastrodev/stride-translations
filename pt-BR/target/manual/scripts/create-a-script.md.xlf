@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" xmlns:okp="okapi-framework:xliff-extensions" its:version="2.0" version="1.2">
+<file datatype="x-text/x-markdown" okp:inputEncoding="UTF-8" original="/D:/repos/rr/source/manual/scripts/create-a-script.md" source-language="en" target-language="pt">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en">Create a script</source>
+<target xml:lang="pt">Create a script</target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Beginner<x id="2"/>
+<x id="3"/>Programmer<x id="4"/></source>
+<target xml:lang="pt"><x id="1"/>Beginner<x id="2"/>
+<x id="3"/>Programmer<x id="4"/></target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">You can create scripts using Game Studio or an IDE such as Visual Studio.</source>
+<target xml:lang="pt">You can create scripts using Game Studio or an IDE such as Visual Studio.</target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">Create a script in Game Studio</source>
+<target xml:lang="pt">Create a script in Game Studio</target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">In the <g id="1">Asset View</g>, click <g id="2">Add asset &gt; Scripts</g> and select a script type.</source>
+<target xml:lang="pt">In the <g id="1">Asset View</g>, click <g id="2">Add asset &gt; Scripts</g> and select a script type.</target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Select script type window<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Select script type window<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>!Note<x id="2"/>
+For information about different types of script, see <g id="3">Types of script</g>.</source>
+<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
+For information about different types of script, see <g id="3">Types of script</g>.</target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en">The <g id="1">New script</g> dialog opens.</source>
+<target xml:lang="pt">The <g id="1">New script</g> dialog opens.</target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>New script<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>New script<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en">Specify a class and namespace for the script and click <g id="1">Create script</g>.</source>
+<target xml:lang="pt">Specify a class and namespace for the script and click <g id="1">Create script</g>.</target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en">To use the script, you need to save it. By default, Game Studio prompts you to save the script now.</source>
+<target xml:lang="pt">To use the script, you need to save it. By default, Game Studio prompts you to save the script now.</target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en">After you save the script, you can see it in the <g id="1">Asset View</g>.</source>
+<target xml:lang="pt">After you save the script, you can see it in the <g id="1">Asset View</g>.</target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>!Note<x id="2"/>
+Although scripts are a kind of asset, they're not saved in the Assets folder. Instead, they're saved in the relevant assembly folder. For more information, see <g id="3">Project structure</g>.</source>
+<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
+Although scripts are a kind of asset, they're not saved in the Assets folder. Instead, they're saved in the relevant assembly folder. For more information, see <g id="3">Project structure</g>.</target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en">You can also see the new script in Visual Studio.</source>
+<target xml:lang="pt">You can also see the new script in Visual Studio.</target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>New script on Asset View tab<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>New script on Asset View tab<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>!Tip<x id="2"/>
+To open your solution in Visual Studio from Game Studio, click the <x id="3"/>Open in IDE<x id="4"/> (<g id="5">Open in IDE</g>) icon in the Game Studio toolbar.</source>
+<target xml:lang="pt"><x id="1"/>!Tip<x id="2"/>
+To open your solution in Visual Studio from Game Studio, click the <x id="3"/>Open in IDE<x id="4"/> (<g id="5">Open in IDE</g>) icon in the Game Studio toolbar.</target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en">using System;
+using System.Text;
+using System.Threading.Tasks;
+using Stride.Core.Mathematics;
+using Stride.Input;
+using Stride.Engine;
+
+namespace MyGame
+{
+	public class BasicAsyncScript : AsyncScript
+	{	
+		public override async Task Execute()
+		{
+			while(Game.IsRunning)
+			{
+				// Do some stuff every frame
+				await Script.NextFrame();
+			}
+		}
+	}
+}
+</source>
+<target xml:lang="pt">using System;
+using System.Text;
+using System.Threading.Tasks;
+using Stride.Core.Mathematics;
+using Stride.Input;
+using Stride.Engine;
+
+namespace MyGame
+{
+	public class BasicAsyncScript : AsyncScript
+	{	
+		public override async Task Execute()
+		{
+			while(Game.IsRunning)
+			{
+				// Do some stuff every frame
+				await Script.NextFrame();
+			}
+		}
+	}
+}
+</target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en">Create a script in Visual Studio</source>
+<target xml:lang="pt">Create a script in Visual Studio</target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en">Open Visual Studio.</source>
+<target xml:lang="pt">Open Visual Studio.</target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>!Tip<x id="2"/>
+To open your solution in Visual Studio from Game Studio, click the <x id="3"/>Open in IDE<x id="4"/> (<g id="5">Open in IDE</g>) icon in the Game Studio toolbar.</source>
+<target xml:lang="pt"><x id="1"/>!Tip<x id="2"/>
+To open your solution in Visual Studio from Game Studio, click the <x id="3"/>Open in IDE<x id="4"/> (<g id="5">Open in IDE</g>) icon in the Game Studio toolbar.</target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en">The game solution is composed of several projects:</source>
+<target xml:lang="pt">The game solution is composed of several projects:</target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en">The project ending <g id="1">.Game</g> is the main project, and should contain all your game logic and scripts.</source>
+<target xml:lang="pt">The project ending <g id="1">.Game</g> is the main project, and should contain all your game logic and scripts.</target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en">Other projects (eg <g id="1">MyGame.Windows</g>, <g id="2">MyGame.Android</g> etc) contain platform-specific code.</source>
+<target xml:lang="pt">Other projects (eg <g id="1">MyGame.Windows</g>, <g id="2">MyGame.Android</g> etc) contain platform-specific code.</target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en">For more information, see <g id="1">Project structure</g>.</source>
+<target xml:lang="pt">For more information, see <g id="1">Project structure</g>.</target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en">Add a new class file to the <g id="1">.Game</g> project. To do this, right-click the project and select <g id="2">Add &gt; New Item</g>.</source>
+<target xml:lang="pt">Add a new class file to the <g id="1">.Game</g> project. To do this, right-click the project and select <g id="2">Add &gt; New Item</g>.</target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en">The <g id="1">Add New Item</g> dialog opens.</source>
+<target xml:lang="pt">The <g id="1">Add New Item</g> dialog opens.</target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en">Select <g id="1">Class</g>, type a name for your script, and click <g id="2">Add</g>.</source>
+<target xml:lang="pt">Select <g id="1">Class</g>, type a name for your script, and click <g id="2">Add</g>.</target>
+</trans-unit>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en">Visual Studio adds a new class to your project.</source>
+<target xml:lang="pt">Visual Studio adds a new class to your project.</target>
+</trans-unit>
+<trans-unit id="tu29" xml:space="preserve">
+<source xml:lang="en">In the file you created, make sure the script is public and derives from either <g id="1">AsyncScript</g> or <g id="2">SyncScript</g>.</source>
+<target xml:lang="pt">In the file you created, make sure the script is public and derives from either <g id="1">AsyncScript</g> or <g id="2">SyncScript</g>.</target>
+</trans-unit>
+<trans-unit id="tu30" xml:space="preserve">
+<source xml:lang="en">Implement the necessary abstract methods.</source>
+<target xml:lang="pt">Implement the necessary abstract methods.</target>
+</trans-unit>
+<trans-unit id="tu31" xml:space="preserve">
+<source xml:lang="en">For example:</source>
+<target xml:lang="pt">For example:</target>
+</trans-unit>
+<trans-unit id="tu32" xml:space="preserve">
+<source xml:lang="en">	using System;
+	using System.Text;
+	using System.Threading.Tasks;
+	using Stride.Core.Mathematics;
+	using Stride.Input;
+	using Stride.Engine;
+
+	namespace MyGame
+	{
+		public class SampleSyncScript : SyncScript
+		{			
+			public override void Update()
+			{
+				if (Game.IsRunning)
+				{
+					// Do something every frame
+				}
+			}
+		}
+	}
+</source>
+<target xml:lang="pt">	using System;
+	using System.Text;
+	using System.Threading.Tasks;
+	using Stride.Core.Mathematics;
+	using Stride.Input;
+	using Stride.Engine;
+
+	namespace MyGame
+	{
+		public class SampleSyncScript : SyncScript
+		{			
+			public override void Update()
+			{
+				if (Game.IsRunning)
+				{
+					// Do something every frame
+				}
+			}
+		}
+	}
+</target>
+</trans-unit>
+<trans-unit id="tu33" xml:space="preserve">
+<source xml:lang="en">Save the project and script files.</source>
+<target xml:lang="pt">Save the project and script files.</target>
+</trans-unit>
+<trans-unit id="tu34" xml:space="preserve">
+<source xml:lang="en">Because you modified the script, Game Studio needs to reload the assembly to show the changes.</source>
+<target xml:lang="pt">Because you modified the script, Game Studio needs to reload the assembly to show the changes.</target>
+</trans-unit>
+<trans-unit id="tu35" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Confirmation message<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Confirmation message<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu36" xml:space="preserve">
+<source xml:lang="en">Click <g id="1">Yes</g>.</source>
+<target xml:lang="pt">Click <g id="1">Yes</g>.</target>
+</trans-unit>
+<trans-unit id="tu37" xml:space="preserve">
+<source xml:lang="en">You can see the script in the <g id="1">Asset View</g>.</source>
+<target xml:lang="pt">You can see the script in the <g id="1">Asset View</g>.</target>
+</trans-unit>
+<trans-unit id="tu38" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>New script on Asset View tab<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>New script on Asset View tab<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu39" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>!Note<x id="2"/>
+Although scripts are a kind of asset, they're not saved in the Assets folder. Instead, they're saved in the relevant assembly folder. For more information, see <g id="3">Project structure</g>.</source>
+<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
+Although scripts are a kind of asset, they're not saved in the Assets folder. Instead, they're saved in the relevant assembly folder. For more information, see <g id="3">Project structure</g>.</target>
+</trans-unit>
+<trans-unit id="tu40" xml:space="preserve">
+<source xml:lang="en">See also</source>
+<target xml:lang="pt">See also</target>
+</trans-unit>
+<trans-unit id="tu41" xml:space="preserve">
+<source xml:lang="en"><g id="1">Types of script</g></source>
+<target xml:lang="pt"><g id="1">Types of script</g></target>
+</trans-unit>
+<trans-unit id="tu42" xml:space="preserve">
+<source xml:lang="en"><g id="1">Use a script</g></source>
+<target xml:lang="pt"><g id="1">Use a script</g></target>
+</trans-unit>
+<trans-unit id="tu43" xml:space="preserve">
+<source xml:lang="en"><g id="1">Public properties and fields</g></source>
+<target xml:lang="pt"><g id="1">Public properties and fields</g></target>
+</trans-unit>
+<trans-unit id="tu44" xml:space="preserve">
+<source xml:lang="en"><g id="1">Scheduling and priorities</g></source>
+<target xml:lang="pt"><g id="1">Scheduling and priorities</g></target>
+</trans-unit>
+<trans-unit id="tu45" xml:space="preserve">
+<source xml:lang="en"><g id="1">Events</g></source>
+<target xml:lang="pt"><g id="1">Events</g></target>
+</trans-unit>
+<trans-unit id="tu46" xml:space="preserve">
+<source xml:lang="en"><g id="1">Debugging</g></source>
+<target xml:lang="pt"><g id="1">Debugging</g></target>
+</trans-unit>
+<trans-unit id="tu47" xml:space="preserve">
+<source xml:lang="en"><g id="1">Preprocessor variables</g></source>
+<target xml:lang="pt"><g id="1">Preprocessor variables</g></target>
+</trans-unit>
+</body>
+</file>
+</xliff>

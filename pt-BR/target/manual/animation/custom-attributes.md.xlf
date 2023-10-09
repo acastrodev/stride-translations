@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" xmlns:okp="okapi-framework:xliff-extensions" its:version="2.0" version="1.2">
+<file datatype="x-text/x-markdown" okp:inputEncoding="UTF-8" original="/D:/repos/rr/source/manual/animation/custom-attributes.md" source-language="en" target-language="pt">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en">Custom attributes</source>
+<target xml:lang="pt">Atributos personalizados</target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Intermediate<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Intermediário<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">You can import custom attributes created in modeling tools such as Maya.</source>
+<target xml:lang="pt">Você pode importar atributos personalizados criados em ferramentas de modelagem, como o Maya.</target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">Currently, you can only import custom <g id="1">animated</g> attributes. Attributes that aren't animated can't be imported.</source>
+<target xml:lang="pt">Atualmente, você só pode importar atributos <g id="1">animados</g>  personalizados. Atributos que não são animados não podem ser importados.</target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Maya properties<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Propriedades do Maya<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en">1. Import custom attributes</source>
+<target xml:lang="pt">1. Importar atributos personalizados</target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en">Import the animation. For instructions, see <g id="1">Import animations</g>.</source>
+<target xml:lang="pt">Importar a animação. Para mais informações, consulte <g id="1">Importar animações</g></target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en">In the <g id="1">Asset View</g>, select the animation asset.</source>
+<target xml:lang="pt">No <g id="1">Visualizador de Recursos</g>, selecione o recurso de animação.</target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Assets in Asset View<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Recursos no Visualizador de Recursos<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en">In the <g id="1">Property Grid</g>, select <g id="2">Import custom attributes</g>.</source>
+<target xml:lang="pt">Na <g id="1">Grade de Propriedades</g>, selecione <g id="2">Importar atributos personalizados</g>.</target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Custom attributes<x id="2"/></source>
+<target xml:lang="pt">Atributos personalizados<x id="1"/><x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en">When the assets are built, Stride imports the custom attributes from the FBX file.</source>
+<target xml:lang="pt">Quando os recursos são criados, o Stride importa os atributos personalizados do arquivo FBX.</target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en">2. Control custom attributes with a script</source>
+<target xml:lang="pt">2. Controlar atributos personalizados através de um script.</target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en">Add a script to read the custom attributes and copy their value to another property. This can be a separate script, or part of another <g id="1">animation script</g>.</source>
+<target xml:lang="pt">Adicione um script para ler os atributos personalizados e copie seus valores para outra propriedade. Pode ser em um script separado ou fazer parte de outro <g id="1">script de animação</g>.</target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en">To look up an attribute, use <g id="1">NodeName_AttributeName</g>. For example, if you have the node <g id="2">myNode</g> with the custom attribute <g id="3">myAttribute</g>, use <g id="4">myNode_myAttribute</g>.</source>
+<target xml:lang="pt">Para procurar um atributo, use <g id="1">NodeName_AttributeName</g>. Por exemplo, se você tiver o nó <g id="2">myNode</g> com o atributo customizado <g id="3">myAttribute</g>, use <g id="4">myNode_myAttribute</g>.</target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en">Example script</source>
+<target xml:lang="pt">Exemplo de script</target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en">using Stride.Animations;
+using Stride.Engine;
+using Stride.Rendering;
+using Stride.Audio;
+using Stride.Rendering.Materials;
+using System.Linq;
+
+namespace Sample
+{
+    public class HologramScript : SyncScript
+    {
+        public Material MyMaterial;
+
+        private AnimationComponent animationComponent;
+        private AnimationProcessor animationProcessor;
+
+        public override void Start()
+        {
+            base.Start();
+
+            animationComponent = Entity.GetOrCreate&lt;AnimationComponent&gt;();
+            animationProcessor = SceneSystem.SceneInstance.Processors.OfType&lt;AnimationProcessor&gt;().FirstOrDefault();
+        }
+
+        public override void Update()
+        {
+            if (animationProcessor == null || MyMaterial == null)
+                return;
+
+            // Animation result may be Null if animation hasn't been played yet.
+            var animResult = animationProcessor.GetAnimationClipResult(animationComponent);
+            if (animResult == null)
+                return;
+
+            // Read the value of the animated custom attribute:
+            float emissiveIntensity = 0;
+            unsafe
+            {
+                fixed (byte* structures = animResult.Data)
+                {
+                    foreach (var channel in animResult.Channels)
+                    {
+                        if (!channel.IsUserCustomProperty)
+                            continue;
+
+                        var structureData = (float*)(structures + channel.Offset);
+                        var factor = *structureData++;
+                        if (factor == 0.0f)
+                            continue;
+
+                        var value = *structureData;
+                        if (channel.PropertyName == "myNode_myProperty")
+                            emissiveIntensity = value;
+                    }
+                }
+            }
+
+            // Bind the material parameter:
+
+            MyMaterial.Passes[0].Parameters.Set(MaterialKeys.EmissiveIntensity, emissiveIntensity);
+        }
+    }
+}
+</source>
+<target xml:lang="pt">using Stride.Animations;
+using Stride.Engine;
+using Stride.Rendering;
+using Stride.Audio;
+using Stride.Rendering.Materials;
+using System.Linq;
+
+namespace Sample
+{
+    public class HologramScript : SyncScript
+    {
+        public Material MyMaterial;
+
+        private AnimationComponent animationComponent;
+        private AnimationProcessor animationProcessor;
+
+        public override void Start()
+        {
+            base.Start();
+
+            animationComponent = Entity.GetOrCreate&lt;AnimationComponent&gt;();
+            animationProcessor = SceneSystem.SceneInstance.Processors.OfType&lt;AnimationProcessor&gt;().FirstOrDefault();
+        }
+
+        public override void Update()
+        {
+            if (animationProcessor == null || MyMaterial == null)
+                return;
+
+            // O resultado da animação pode ser Null se a animação ainda não tiver sido reproduzida.
+            var animResult = animationProcessor.GetAnimationClipResult(animationComponent);
+            if (animResult == null)
+                return;
+
+            // Lê o valor do atributo animado personalizado:
+            float emissiveIntensity = 0;
+            unsafe
+            {
+                fixed (byte* structures = animResult.Data)
+                {
+                    foreach (var channel in animResult.Channels)
+                    {
+                        if (!channel.IsUserCustomProperty)
+                            continue;
+
+                        var structureData = (float*)(structures + channel.Offset);
+                        var factor = *structureData++;
+                        if (factor == 0.0f)
+                            continue;
+
+                        var value = *structureData;
+                        if (channel.PropertyName == "myNode_myProperty")
+                            emissiveIntensity = value;
+                    }
+                }
+            }
+
+            // Vincula o parâmetro do material:
+
+            MyMaterial.Passes[0].Parameters.Set(MaterialKeys.EmissiveIntensity, emissiveIntensity);
+        }
+    }
+}
+</target>
+</trans-unit>
+</body>
+</file>
+</xliff>

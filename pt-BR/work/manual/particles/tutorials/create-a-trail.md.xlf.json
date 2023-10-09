@@ -1,0 +1,2404 @@
+{
+    "filename": "manual\\particles\\tutorials\\create-a-trail.md.xlf",
+    "files": [
+        {
+            "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md": [
+                [
+                    "Tutorial:",
+                    "",
+                    "Tutorial:",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu1"
+                    }
+                ],
+                [
+                    "Create a trail",
+                    "",
+                    " Create a trail",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu1"
+                    }
+                ],
+                [
+                    "<x1\/>Intermediate<x2\/>",
+                    "",
+                    "<x1\/>Intermediate<x2\/>\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu2"
+                    }
+                ],
+                [
+                    "<x3\/>Artist<x4\/>",
+                    "",
+                    "<x3\/>Artist<x4\/>\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu2"
+                    }
+                ],
+                [
+                    "<x5\/>Programmer<x6\/>",
+                    "",
+                    "<x5\/>Programmer<x6\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu2"
+                    }
+                ],
+                [
+                    "This tutorial demonstrates how to use particles to create a <g1>trail effect<\/g1> for a sword swing.",
+                    "",
+                    "This tutorial demonstrates how to use particles to create a <g1>trail effect<\/g1> for a sword swing.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu3"
+                    }
+                ],
+                [
+                    "1.",
+                    "",
+                    "1.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu4"
+                    }
+                ],
+                [
+                    "Create a project",
+                    "",
+                    " Create a project",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu4"
+                    }
+                ],
+                [
+                    "In the Stride Launcher, click <g1>Start<\/g1> and select <g2>New Game<\/g2>.",
+                    "",
+                    "In the Stride Launcher, click <g1>Start<\/g1> and select <g2>New Game<\/g2>.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu5"
+                    }
+                ],
+                [
+                    "In the <g1>Create a new game<\/g1> dialog, under Asset Packs, select <g2>Animated Models<\/g2>.",
+                    "",
+                    "In the <g1>Create a new game<\/g1> dialog, under Asset Packs, select <g2>Animated Models<\/g2>.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu6"
+                    }
+                ],
+                [
+                    "The Animated Models pack contains assets we'll be using in this example.",
+                    "",
+                    " The Animated Models pack contains assets we'll be using in this example.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu6"
+                    }
+                ],
+                [
+                    "(Note that we'll make our particle effect from scratch.)",
+                    "",
+                    " (Note that we'll make our particle effect from scratch.)",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu6"
+                    }
+                ],
+                [
+                    "<x1\/>Create a new game<x2\/>",
+                    "",
+                    "<x1\/>Create a new game<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu7"
+                    }
+                ],
+                [
+                    "Give the project a name (eg <g1>MyTrailEffect<\/g1>) and click <g2>OK<\/g2>.",
+                    "",
+                    "Give the project a name (eg <g1>MyTrailEffect<\/g1>) and click <g2>OK<\/g2>.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu8"
+                    }
+                ],
+                [
+                    "Game Studio loads a simple scene with a few entities.",
+                    "",
+                    " Game Studio loads a simple scene with a few entities.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu8"
+                    }
+                ],
+                [
+                    "We don't need the <g1>Sphere<\/g1> entity for this tutorial, so go ahead and delete it (select it and press <g2>Delete<\/g2>).",
+                    "",
+                    "We don't need the <g1>Sphere<\/g1> entity for this tutorial, so go ahead and delete it (select it and press <g2>Delete<\/g2>).",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu9"
+                    }
+                ],
+                [
+                    "2.",
+                    "",
+                    "2.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu10"
+                    }
+                ],
+                [
+                    "Set up the models and animation",
+                    "",
+                    " Set up the models and animation",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu10"
+                    }
+                ],
+                [
+                    "In the <g1>Asset View<\/g1>, open the <g2>Models<\/g2> folder and drag and drop the <g3>mannequinModel<\/g3> into the scene.",
+                    "",
+                    "In the <g1>Asset View<\/g1>, open the <g2>Models<\/g2> folder and drag and drop the <g3>mannequinModel<\/g3> into the scene.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu11"
+                    }
+                ],
+                [
+                    "The mannequinModel contains a skeleton asset that we'll use for our sword slash animation.",
+                    "",
+                    " The mannequinModel contains a skeleton asset that we'll use for our sword slash animation.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu11"
+                    }
+                ],
+                [
+                    "With the <g1>mannequinModel<\/g1> selected, in the <g2>Property Grid<\/g2>, select <g3>Add component > Animations<\/g3>.",
+                    "",
+                    "With the <g1>mannequinModel<\/g1> selected, in the <g2>Property Grid<\/g2>, select <g3>Add component > Animations<\/g3>.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu12"
+                    }
+                ],
+                [
+                    "This adds an Animation component to the model.",
+                    "",
+                    " This adds an Animation component to the model.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu12"
+                    }
+                ],
+                [
+                    "<x1\/>Add Animations<x2\/>",
+                    "",
+                    "<x1\/>Add Animations<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu13"
+                    }
+                ],
+                [
+                    "Under the <g1>Animations<\/g1> component, click <x1\/>Green plus button<x2\/> (<g2>Add<\/g2>).",
+                    "",
+                    "Under the <g1>Animations<\/g1> component, click <x1\/>Green plus button<x2\/> (<g2>Add<\/g2>).",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu14"
+                    }
+                ],
+                [
+                    "<x1\/>Add animation<x2\/>",
+                    "",
+                    "<x1\/>Add animation<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu15"
+                    }
+                ],
+                [
+                    "Type a name for the animation.",
+                    "",
+                    "Type a name for the animation.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu16"
+                    }
+                ],
+                [
+                    "Next to <g1>Clip<\/g1>, click <x1\/>Hand icon<x2\/> (<g2>Select an asset<\/g2>).",
+                    "",
+                    "Next to <g1>Clip<\/g1>, click <x1\/>Hand icon<x2\/> (<g2>Select an asset<\/g2>).",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu17"
+                    }
+                ],
+                [
+                    "<x1\/>Select an animation asset<x2\/>",
+                    "",
+                    "<x1\/>Select an animation asset<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu18"
+                    }
+                ],
+                [
+                    "Browse to the <g1>Animations<\/g1> folder, select the <g2>Sword_R animation<\/g2>, and click <g3>OK<\/g3>.",
+                    "",
+                    "Browse to the <g1>Animations<\/g1> folder, select the <g2>Sword_R animation<\/g2>, and click <g3>OK<\/g3>.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu19"
+                    }
+                ],
+                [
+                    "This is our right-to-left slash animation.",
+                    "",
+                    " This is our right-to-left slash animation.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu19"
+                    }
+                ],
+                [
+                    "<x1\/>Select an animation asset<x2\/>",
+                    "",
+                    "<x1\/>Select an animation asset<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu20"
+                    }
+                ],
+                [
+                    "To play the animation at runtime, we need to add an <g1>animation script<\/g1>.",
+                    "",
+                    "To play the animation at runtime, we need to add an <g1>animation script<\/g1>.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu21"
+                    }
+                ],
+                [
+                    "We can use the pre-built <g2>AnimationStart<\/g2> script.",
+                    "",
+                    " We can use the pre-built <g2>AnimationStart<\/g2> script.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu21"
+                    }
+                ],
+                [
+                    "In the <g3>Asset View<\/g3> (bottom pane by default), click <g4>Add asset<\/g4> and choose <g5>Script > Animation start<\/g5>.",
+                    "",
+                    " In the <g3>Asset View<\/g3> (bottom pane by default), click <g4>Add asset<\/g4> and choose <g5>Script > Animation start<\/g5>.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu21"
+                    }
+                ],
+                [
+                    "<x1\/>Add animation script<x2\/>",
+                    "",
+                    "<x1\/>Add animation script<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu22"
+                    }
+                ],
+                [
+                    "Specify a name for the script and click <g1>Create script<\/g1>.",
+                    "",
+                    "Specify a name for the script and click <g1>Create script<\/g1>.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu23"
+                    }
+                ],
+                [
+                    "<x1\/>Create script<x2\/>",
+                    "",
+                    "<x1\/>Create script<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu24"
+                    }
+                ],
+                [
+                    "9a.",
+                    "",
+                    "9a.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu25"
+                    }
+                ],
+                [
+                    "If Game Studio asks if you want to save your script, click <g1>Save script<\/g1>.",
+                    "",
+                    " If Game Studio asks if you want to save your script, click <g1>Save script<\/g1>.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu25"
+                    }
+                ],
+                [
+                    "9b.",
+                    "",
+                    "9b.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu26"
+                    }
+                ],
+                [
+                    "If Game Studio asks if you want to reload the assemblies, click <g1>Reload assemblies<\/g1>.",
+                    "",
+                    " If Game Studio asks if you want to reload the assemblies, click <g1>Reload assemblies<\/g1>.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu26"
+                    }
+                ],
+                [
+                    "With the <g1>mannequinModel<\/g1> selected, in the <g2>Property Grid<\/g2>, click <g3>Add component<\/g3> and select the <g4>AnimationStart<\/g4> script.",
+                    "",
+                    "With the <g1>mannequinModel<\/g1> selected, in the <g2>Property Grid<\/g2>, click <g3>Add component<\/g3> and select the <g4>AnimationStart<\/g4> script.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu27"
+                    }
+                ],
+                [
+                    "<x1\/>Add AnimationStart script<x2\/>",
+                    "",
+                    "<x1\/>Add AnimationStart script<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu28"
+                    }
+                ],
+                [
+                    "<x1\/>!Note<x2\/>",
+                    "",
+                    "<x1\/>!Note<x2\/>\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu29"
+                    }
+                ],
+                [
+                    "If the animation script isn't in the list of components, in the taskbar, save your project and click <g1>Reload game assemblies and update scripts<\/g1>.",
+                    "",
+                    "If the animation script isn't in the list of components, in the taskbar, save your project and click <g1>Reload game assemblies and update scripts<\/g1>.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu29"
+                    }
+                ],
+                [
+                    "Under the <g1>Animation<\/g1> component, under <g2>Item 0<\/g2>, click <x1\/>Hand icon<x2\/> (<g3>Select an asset<\/g3>).",
+                    "",
+                    "Under the <g1>Animation<\/g1> component, under <g2>Item 0<\/g2>, click <x1\/>Hand icon<x2\/> (<g3>Select an asset<\/g3>).",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu30"
+                    }
+                ],
+                [
+                    "<x1\/>Select an animation asset<x2\/>",
+                    "",
+                    "<x1\/>Select an animation asset<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu31"
+                    }
+                ],
+                [
+                    "Browse to the <g1>Animations<\/g1> folder and select the <g2>Sword_R animation<\/g2> again.",
+                    "",
+                    "Browse to the <g1>Animations<\/g1> folder and select the <g2>Sword_R animation<\/g2> again.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu32"
+                    }
+                ],
+                [
+                    "<x1\/>Select an animation asset<x2\/>",
+                    "",
+                    "<x1\/>Select an animation asset<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu33"
+                    }
+                ],
+                [
+                    "Now let's give the mannequin a weapon.",
+                    "",
+                    "Now let's give the mannequin a weapon.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu34"
+                    }
+                ],
+                [
+                    "In the <g1>Asset View<\/g1>, browse to the <g2>Models<\/g2> folder and drag the <g3>SwordModel<\/g3> to the mannequinModel in the Entity Tree.",
+                    "",
+                    " In the <g1>Asset View<\/g1>, browse to the <g2>Models<\/g2> folder and drag the <g3>SwordModel<\/g3> to the mannequinModel in the Entity Tree.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu34"
+                    }
+                ],
+                [
+                    "This makes the SwordModel a child entity of the <g4>mannequinModel<\/g4>.",
+                    "",
+                    " This makes the SwordModel a child entity of the <g4>mannequinModel<\/g4>.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu34"
+                    }
+                ],
+                [
+                    "In the Entity Tree, expand <g1>mannequinModel<\/g1> to see its child entities, and select <g2>SwordModel<\/g2>.",
+                    "",
+                    "In the Entity Tree, expand <g1>mannequinModel<\/g1> to see its child entities, and select <g2>SwordModel<\/g2>.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu35"
+                    }
+                ],
+                [
+                    "<x1\/>SwordModel child entity<x2\/>",
+                    "",
+                    "<x1\/>SwordModel child entity<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu36"
+                    }
+                ],
+                [
+                    "With the in the <g1>Property Grid<\/g1>, click <g2>Add component<\/g2> and select <g3>Model Node Link<\/g3>.",
+                    "",
+                    "With the in the <g1>Property Grid<\/g1>, click <g2>Add component<\/g2> and select <g3>Model Node Link<\/g3>.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu37"
+                    }
+                ],
+                [
+                    "This is called a <g4>Bone Link<\/g4> in some versions of Stride.",
+                    "",
+                    " This is called a <g4>Bone Link<\/g4> in some versions of Stride.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu37"
+                    }
+                ],
+                [
+                    "<x1\/>Add Model Node Link<x2\/>",
+                    "",
+                    "<x1\/>Add Model Node Link<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu38"
+                    }
+                ],
+                [
+                    "We can use this to link the SwordModel to a point in the mannequinModel skeleton.",
+                    "",
+                    "We can use this to link the SwordModel to a point in the mannequinModel skeleton.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu39"
+                    }
+                ],
+                [
+                    "There's no need to specify a target, as the entity uses its parent entity (<g1>mannequinModel<\/g1>) by default.",
+                    "",
+                    " There's no need to specify a target, as the entity uses its parent entity (<g1>mannequinModel<\/g1>) by default.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu39"
+                    }
+                ],
+                [
+                    "For more information, see the <g1>Model node links<\/g1> page.",
+                    "",
+                    "For more information, see the <g1>Model node links<\/g1> page.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu40"
+                    }
+                ],
+                [
+                    "Under <g1>Model Node Link<\/g1>, in the <g2>Node Name<\/g2> (or <g3>Bone<\/g3>) field, select <g4>weapon_bone_R<\/g4>.",
+                    "",
+                    "Under <g1>Model Node Link<\/g1>, in the <g2>Node Name<\/g2> (or <g3>Bone<\/g3>) field, select <g4>weapon_bone_R<\/g4>.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu41"
+                    }
+                ],
+                [
+                    "This attaches the model to the point in the skeleton that uses a weapon in the right hand.",
+                    "",
+                    " This attaches the model to the point in the skeleton that uses a weapon in the right hand.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu41"
+                    }
+                ],
+                [
+                    "Let's see how everything looks so far.",
+                    "",
+                    "Let's see how everything looks so far.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu42"
+                    }
+                ],
+                [
+                    "Click <g1>Play<\/g1> to run the game and check it out.",
+                    "",
+                    " Click <g1>Play<\/g1> to run the game and check it out.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu42"
+                    }
+                ],
+                [
+                    "Remember you can use the mouse and WASD keys to move the camera and see the animation from different perspectives.",
+                    "",
+                    " Remember you can use the mouse and WASD keys to move the camera and see the animation from different perspectives.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu42"
+                    }
+                ],
+                [
+                    "We have a swinging sword animation.",
+                    "",
+                    "We have a swinging sword animation.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu43"
+                    }
+                ],
+                [
+                    "Next, let's add a trail effect.",
+                    "",
+                    " Next, let's add a trail effect.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu43"
+                    }
+                ],
+                [
+                    "3.",
+                    "",
+                    "3.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu44"
+                    }
+                ],
+                [
+                    "Create a basic trail",
+                    "",
+                    " Create a basic trail",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu44"
+                    }
+                ],
+                [
+                    "First we'll build a basic trail, just to see how it looks.",
+                    "",
+                    "First we'll build a basic trail, just to see how it looks.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu45"
+                    }
+                ],
+                [
+                    "In Game Studio, select the <g1>SwordModel<\/g1>.",
+                    "",
+                    "In Game Studio, select the <g1>SwordModel<\/g1>.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu46"
+                    }
+                ],
+                [
+                    "In the <g2>Property Grid<\/g2>, click <g3>Add component<\/g3> and select <g4>Particle System<\/g4>.",
+                    "",
+                    " In the <g2>Property Grid<\/g2>, click <g3>Add component<\/g3> and select <g4>Particle System<\/g4>.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu46"
+                    }
+                ],
+                [
+                    "<x1\/>Add Particle System<x2\/>",
+                    "",
+                    "<x1\/>Add Particle System<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu47"
+                    }
+                ],
+                [
+                    "This adds a particle system component to the model, which we'll use to build a trail effect.",
+                    "",
+                    "This adds a particle system component to the model, which we'll use to build a trail effect.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu48"
+                    }
+                ],
+                [
+                    "Click <g1>Source<\/g1> to expand its properties.",
+                    "",
+                    "Click <g1>Source<\/g1> to expand its properties.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu49"
+                    }
+                ],
+                [
+                    "<x1\/>Expand Source properties<x2\/>",
+                    "",
+                    "<x1\/>Expand Source properties<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu50"
+                    }
+                ],
+                [
+                    "Next to <g1>Emitters<\/g1>, click <x1\/>Green plus button<x2\/> (<g2>Add<\/g2>).",
+                    "",
+                    "Next to <g1>Emitters<\/g1>, click <x1\/>Green plus button<x2\/> (<g2>Add<\/g2>).",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu51"
+                    }
+                ],
+                [
+                    "This adds a new particle emitter.",
+                    "",
+                    " This adds a new particle emitter.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu51"
+                    }
+                ],
+                [
+                    "Under the emitter properties, set the <g1>Shape<\/g1> to <g2>Trail<\/g2>.",
+                    "",
+                    "Under the emitter properties, set the <g1>Shape<\/g1> to <g2>Trail<\/g2>.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu52"
+                    }
+                ],
+                [
+                    "<x1\/>Set Shape to Trail<x2\/>",
+                    "",
+                    "<x1\/>Set Shape to Trail<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu53"
+                    }
+                ],
+                [
+                    "Unfortunately, we need to make a brief detour due to a bug in Stride.",
+                    "",
+                    "Unfortunately, we need to make a brief detour due to a bug in Stride.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu54"
+                    }
+                ],
+                [
+                    "Under the <g1>Shape<\/g1> properties, set the <g2>Axis<\/g2> to <g3>Center<\/g3>.",
+                    "",
+                    " Under the <g1>Shape<\/g1> properties, set the <g2>Axis<\/g2> to <g3>Center<\/g3>.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu54"
+                    }
+                ],
+                [
+                    "(The shape should really be set to Edge, but the Edge and Center settings are reversed in the UI.",
+                    "",
+                    " (The shape should really be set to Edge, but the Edge and Center settings are reversed in the UI.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu54"
+                    }
+                ],
+                [
+                    "This will be fixed in Stride 1.9.3.)",
+                    "",
+                    " This will be fixed in Stride 1.9.3.)",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu54"
+                    }
+                ],
+                [
+                    "<x1\/>Set Axis to Center<x2\/>",
+                    "",
+                    "<x1\/>Set Axis to Center<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu55"
+                    }
+                ],
+                [
+                    "Next to <g1>Spawners<\/g1>, click <x1\/>Green plus button<x2\/> (<g2>Add<\/g2>) and select <g3>Per frame<\/g3>.",
+                    "",
+                    "Next to <g1>Spawners<\/g1>, click <x1\/>Green plus button<x2\/> (<g2>Add<\/g2>) and select <g3>Per frame<\/g3>.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu56"
+                    }
+                ],
+                [
+                    "<x1\/>Add per-frame spawner<x2\/>",
+                    "",
+                    "<x1\/>Add per-frame spawner<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu57"
+                    }
+                ],
+                [
+                    "This adds a per-frame spawner to the emitter, which spawns X number of particles per frame (as opposed to, say, per second).",
+                    "",
+                    "This adds a per-frame spawner to the emitter, which spawns X number of particles per frame (as opposed to, say, per second).",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu58"
+                    }
+                ],
+                [
+                    "Next to <g1>Initializers<\/g1>, click <x1\/>Green plus button<x2\/> (<g2>Add<\/g2>) and select <g3>Velocity<\/g3>.",
+                    "",
+                    "Next to <g1>Initializers<\/g1>, click <x1\/>Green plus button<x2\/> (<g2>Add<\/g2>) and select <g3>Velocity<\/g3>.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu59"
+                    }
+                ],
+                [
+                    "<x1\/>Add velocity initializer<x2\/>",
+                    "",
+                    "<x1\/>Add velocity initializer<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu60"
+                    }
+                ],
+                [
+                    "This adds a velocity initializer to the emitter.",
+                    "",
+                    "This adds a velocity initializer to the emitter.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu61"
+                    }
+                ],
+                [
+                    "At this point, you can grab the mannequin and move it around the scene to see how the particles behave.",
+                    "",
+                    "At this point, you can grab the mannequin and move it around the scene to see how the particles behave.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu62"
+                    }
+                ],
+                [
+                    "They look like a cloud of blocky smoke.",
+                    "",
+                    " They look like a cloud of blocky smoke.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu62"
+                    }
+                ],
+                [
+                    "Under the velocity initializer, set both the <g1>Velocity min<\/g1> and <g2>Velocity max<\/g2> values to <g3>0, 5, 0<\/g3>.",
+                    "",
+                    "Under the velocity initializer, set both the <g1>Velocity min<\/g1> and <g2>Velocity max<\/g2> values to <g3>0, 5, 0<\/g3>.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu63"
+                    }
+                ],
+                [
+                    "<x1\/>Set velocity min and max<x2\/>",
+                    "",
+                    "<x1\/>Set velocity min and max<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu64"
+                    }
+                ],
+                [
+                    "This restricts the particles to the Y axis, like an infinitely thin sheet of paper.",
+                    "",
+                    "This restricts the particles to the Y axis, like an infinitely thin sheet of paper.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu65"
+                    }
+                ],
+                [
+                    "Next to <g1>Initializers<\/g1>, click <x1\/>Green plus button<x2\/> (<g2>Add<\/g2>) and select <g3>Direction<\/g3>.",
+                    "",
+                    "Next to <g1>Initializers<\/g1>, click <x1\/>Green plus button<x2\/> (<g2>Add<\/g2>) and select <g3>Direction<\/g3>.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu66"
+                    }
+                ],
+                [
+                    "<x1\/>Add direction initializer<x2\/>",
+                    "",
+                    "<x1\/>Add direction initializer<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu67"
+                    }
+                ],
+                [
+                    "This adds a direction initializer to the emitter.",
+                    "",
+                    "This adds a direction initializer to the emitter.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu68"
+                    }
+                ],
+                [
+                    "Expand the direction initializer to view the properties.",
+                    "",
+                    "Expand the direction initializer to view the properties.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu69"
+                    }
+                ],
+                [
+                    "Set both the <g1>Direction min<\/g1> and <g2>Direction max<\/g2> to <g3>0, 0, -1<\/g3>.",
+                    "",
+                    " Set both the <g1>Direction min<\/g1> and <g2>Direction max<\/g2> to <g3>0, 0, -1<\/g3>.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu69"
+                    }
+                ],
+                [
+                    "This aligns the trail with the direction of the swing animation.",
+                    "",
+                    " This aligns the trail with the direction of the swing animation.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu69"
+                    }
+                ],
+                [
+                    "Run the game to see how the particles look with the sword-swinging animation.",
+                    "",
+                    "Run the game to see how the particles look with the sword-swinging animation.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu70"
+                    }
+                ],
+                [
+                    "We have a trail, but it doesn't look too good yet.",
+                    "",
+                    "We have a trail, but it doesn't look too good yet.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu71"
+                    }
+                ],
+                [
+                    "It's too long, it's a single block of color, its particles interconnect strangely, and it never disappears.",
+                    "",
+                    " It's too long, it's a single block of color, its particles interconnect strangely, and it never disappears.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu71"
+                    }
+                ],
+                [
+                    "4.",
+                    "",
+                    "4.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu72"
+                    }
+                ],
+                [
+                    "Sort the particles",
+                    "",
+                    " Sort the particles",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu72"
+                    }
+                ],
+                [
+                    "Because the particles are rendered as billboards, the segments of the trail interconnect strangely.",
+                    "",
+                    "Because the particles are rendered as billboards, the segments of the trail interconnect strangely.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu73"
+                    }
+                ],
+                [
+                    "To create a proper trail effect, we need to sort the particles into an order by adding a <g1>spawn order initializer<\/g1>.",
+                    "",
+                    " To create a proper trail effect, we need to sort the particles into an order by adding a <g1>spawn order initializer<\/g1>.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu73"
+                    }
+                ],
+                [
+                    "In the SwordModel properties, under <g1>Particle System > Source > Emitters<\/g1>, next to <g2>Initializers<\/g2>, click <x1\/>Green plus button<x2\/> (<g3>Add<\/g3>) and select <g4>Spawn Order<\/g4>.",
+                    "",
+                    "In the SwordModel properties, under <g1>Particle System > Source > Emitters<\/g1>, next to <g2>Initializers<\/g2>, click <x1\/>Green plus button<x2\/> (<g3>Add<\/g3>) and select <g4>Spawn Order<\/g4>.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu74"
+                    }
+                ],
+                [
+                    "<x1\/>!Note<x2\/>",
+                    "",
+                    "<x1\/>!Note<x2\/>\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu75"
+                    }
+                ],
+                [
+                    "Make sure you don't select <g1>Spawn Order (Parent)<\/g1> or <g2>Spawn Order (Group)<\/g2>.",
+                    "",
+                    "Make sure you don't select <g1>Spawn Order (Parent)<\/g1> or <g2>Spawn Order (Group)<\/g2>.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu75"
+                    }
+                ],
+                [
+                    "<x1\/>Add spawn-order initializer<x2\/>",
+                    "",
+                    "<x1\/>Add spawn-order initializer<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu76"
+                    }
+                ],
+                [
+                    "This adds a spawn order initializer to the emitter.",
+                    "",
+                    "This adds a spawn order initializer to the emitter.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu77"
+                    }
+                ],
+                [
+                    "It doesn't have any properties, but it gives the particles a SpawnID we can sort them by.",
+                    "",
+                    " It doesn't have any properties, but it gives the particles a SpawnID we can sort them by.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu77"
+                    }
+                ],
+                [
+                    "Under <g1>Emitters<\/g1>, under <g2>Sorting<\/g2>, choose <g3>ByOrder<\/g3>.",
+                    "",
+                    "Under <g1>Emitters<\/g1>, under <g2>Sorting<\/g2>, choose <g3>ByOrder<\/g3>.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu78"
+                    }
+                ],
+                [
+                    "<x1\/>Sort by order<x2\/>",
+                    "",
+                    "<x1\/>Sort by order<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu79"
+                    }
+                ],
+                [
+                    "Under <g1>Initalizers<\/g1>, under the <g2>Velocity<\/g2> initializer, change both the <g3>Velocity min<\/g3> and <g4>Velocity max<\/g4> values to <g5>0,0.5,0<\/g5>.",
+                    "",
+                    "Under <g1>Initalizers<\/g1>, under the <g2>Velocity<\/g2> initializer, change both the <g3>Velocity min<\/g3> and <g4>Velocity max<\/g4> values to <g5>0,0.5,0<\/g5>.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu80"
+                    }
+                ],
+                [
+                    "<x1\/>Change velocity<x2\/>",
+                    "",
+                    "<x1\/>Change velocity<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu81"
+                    }
+                ],
+                [
+                    "Run the game.",
+                    "",
+                    "Run the game.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu82"
+                    }
+                ],
+                [
+                    "Now the particles move cohesively.",
+                    "",
+                    "Now the particles move cohesively.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu83"
+                    }
+                ],
+                [
+                    "5.",
+                    "",
+                    "5.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu84"
+                    }
+                ],
+                [
+                    "Change the length",
+                    "",
+                    " Change the length",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu84"
+                    }
+                ],
+                [
+                    "In the SwordModel properties, under <g1>Particle System > Source > Emitters<\/g1>, change the <g2>Lifespan<\/g2> to <g3>0.2, 0.2<\/g3>.",
+                    "",
+                    "In the SwordModel properties, under <g1>Particle System > Source > Emitters<\/g1>, change the <g2>Lifespan<\/g2> to <g3>0.2, 0.2<\/g3>.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu85"
+                    }
+                ],
+                [
+                    "<x1\/>Change emitter lifespan<x2\/>",
+                    "",
+                    "<x1\/>Change emitter lifespan<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu86"
+                    }
+                ],
+                [
+                    "Move the mannequin around the scene and notice how the trails extinguish more quickly.",
+                    "",
+                    "Move the mannequin around the scene and notice how the trails extinguish more quickly.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu87"
+                    }
+                ],
+                [
+                    "6.",
+                    "",
+                    "6.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu88"
+                    }
+                ],
+                [
+                    "Add a texture",
+                    "",
+                    " Add a texture",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu88"
+                    }
+                ],
+                [
+                    "To fix the color, we'll give the particles a \"swoosh\" texture:",
+                    "",
+                    "To fix the color, we'll give the particles a \"swoosh\" texture:",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu89"
+                    }
+                ],
+                [
+                    "<x1\/>Swoosh.png texture<x2\/>",
+                    "",
+                    "<x1\/>Swoosh.png texture<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu90"
+                    }
+                ],
+                [
+                    "Save the texture image above (<g1>swoosh.png<\/g1>) to disk.",
+                    "",
+                    "Save the texture image above (<g1>swoosh.png<\/g1>) to disk.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu91"
+                    }
+                ],
+                [
+                    "Import it into the project.",
+                    "",
+                    "Import it into the project.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu92"
+                    }
+                ],
+                [
+                    "To do this, in the <g1>Asset View<\/g1>, click <g2>Add asset > Textures > Color<\/g2> and select <g3>swoosh.png<\/g3>.",
+                    "",
+                    " To do this, in the <g1>Asset View<\/g1>, click <g2>Add asset > Textures > Color<\/g2> and select <g3>swoosh.png<\/g3>.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu92"
+                    }
+                ],
+                [
+                    "<x1\/>Add a texture<x2\/>",
+                    "",
+                    "<x1\/>Add a texture<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu93"
+                    }
+                ],
+                [
+                    "In the <g1>SwordModel<\/g1> properties, expand <g2>Emitters > Material<\/g2>.",
+                    "",
+                    "In the <g1>SwordModel<\/g1> properties, expand <g2>Emitters > Material<\/g2>.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu94"
+                    }
+                ],
+                [
+                    "Click <x1\/>Hand icon<x2\/> (<g3>Select an asset<\/g3>).",
+                    "",
+                    " Click <x1\/>Hand icon<x2\/> (<g3>Select an asset<\/g3>).",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu94"
+                    }
+                ],
+                [
+                    "Browse to the <g4>Textures<\/g4> folder and select <g5>swoosh.png<\/g5>.",
+                    "",
+                    " Browse to the <g4>Textures<\/g4> folder and select <g5>swoosh.png<\/g5>.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu94"
+                    }
+                ],
+                [
+                    "<x1\/>Add material texture<x2\/>",
+                    "",
+                    "<x1\/>Add material texture<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu95"
+                    }
+                ],
+                [
+                    "Set the <g1>Alpha-Add<\/g1> bar to <g2>1<\/g2>, so it's 100% emissive.",
+                    "",
+                    "Set the <g1>Alpha-Add<\/g1> bar to <g2>1<\/g2>, so it's 100% emissive.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu96"
+                    }
+                ],
+                [
+                    "<x1\/>Alpha add bar<x2\/>",
+                    "",
+                    "<x1\/>Alpha add bar<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu97"
+                    }
+                ],
+                [
+                    "Under the <g1>Particle emitter<\/g1> properties, expand <g2>Shape<\/g2> and set <g3>UV Coords<\/g3> to <g4>Stretched<\/g4> and <g5>UV Factor<\/g5> to <g6>1<\/g6>.",
+                    "",
+                    "Under the <g1>Particle emitter<\/g1> properties, expand <g2>Shape<\/g2> and set <g3>UV Coords<\/g3> to <g4>Stretched<\/g4> and <g5>UV Factor<\/g5> to <g6>1<\/g6>.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu98"
+                    }
+                ],
+                [
+                    "<x1\/>Set UV<x2\/>",
+                    "",
+                    "<x1\/>Set UV<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu99"
+                    }
+                ],
+                [
+                    "Expand <g1>UV Rotate<\/g1>.",
+                    "",
+                    "Expand <g1>UV Rotate<\/g1>.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu100"
+                    }
+                ],
+                [
+                    "Under <g2>Clockwise<\/g2>, select 90 degrees.",
+                    "",
+                    " Under <g2>Clockwise<\/g2>, select 90 degrees.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu100"
+                    }
+                ],
+                [
+                    "This rotates the texture 90 degrees clockwise, so the \"swoosh\" lines point in the right direction.",
+                    "",
+                    " This rotates the texture 90 degrees clockwise, so the \"swoosh\" lines point in the right direction.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu100"
+                    }
+                ],
+                [
+                    "<x1\/>Rotate material<x2\/>",
+                    "",
+                    "<x1\/>Rotate material<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu101"
+                    }
+                ],
+                [
+                    "Run the game.",
+                    "",
+                    "Run the game.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu102"
+                    }
+                ],
+                [
+                    "We're getting closer.",
+                    "",
+                    "We're getting closer.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu103"
+                    }
+                ],
+                [
+                    "But the trail doesn't disappear, so it looks like it's attached to the sword.",
+                    "",
+                    " But the trail doesn't disappear, so it looks like it's attached to the sword.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu103"
+                    }
+                ],
+                [
+                    "We need to make the effect appear when the mannequin swings, then disappear at the end of the swing.",
+                    "",
+                    " We need to make the effect appear when the mannequin swings, then disappear at the end of the swing.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu103"
+                    }
+                ],
+                [
+                    "7.",
+                    "",
+                    "7.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu104"
+                    }
+                ],
+                [
+                    "Make the particle effect a prefab",
+                    "",
+                    " Make the particle effect a prefab",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu104"
+                    }
+                ],
+                [
+                    "So far, we've created a particle effect by attaching it as a component to the sword.",
+                    "",
+                    "So far, we've created a particle effect by attaching it as a component to the sword.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu105"
+                    }
+                ],
+                [
+                    "Now we're going to separate the effect from the sword and make it an independent entity we can turn on and off when we like.",
+                    "",
+                    " Now we're going to separate the effect from the sword and make it an independent entity we can turn on and off when we like.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu105"
+                    }
+                ],
+                [
+                    "To do this, we'll create a prefab.",
+                    "",
+                    " To do this, we'll create a prefab.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu105"
+                    }
+                ],
+                [
+                    "For more information about prefabs, see the <g1>prefab documentation<\/g1>.",
+                    "",
+                    " For more information about prefabs, see the <g1>prefab documentation<\/g1>.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu105"
+                    }
+                ],
+                [
+                    "Right-click the <g1>SwordModel<\/g1> and select <g2>Create prefab from selection<\/g2>.",
+                    "",
+                    "Right-click the <g1>SwordModel<\/g1> and select <g2>Create prefab from selection<\/g2>.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu106"
+                    }
+                ],
+                [
+                    "<x1\/>Create prefab from selection<x2\/>",
+                    "",
+                    "<x1\/>Create prefab from selection<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu107"
+                    }
+                ],
+                [
+                    "Game Studio creates a prefab from the SwordModel and adds it to the Asset View.",
+                    "",
+                    "Game Studio creates a prefab from the SwordModel and adds it to the Asset View.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu108"
+                    }
+                ],
+                [
+                    "By creating a prefab from the selection, we can quickly copy over the options we've set up so far.",
+                    "",
+                    " By creating a prefab from the selection, we can quickly copy over the options we've set up so far.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu108"
+                    }
+                ],
+                [
+                    "We don't want the SwordModel itself to be a prefab — we just used it as a template to create the prefab from.",
+                    "",
+                    "We don't want the SwordModel itself to be a prefab — we just used it as a template to create the prefab from.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu109"
+                    }
+                ],
+                [
+                    "It should be separate from our new particle effect prefab, so right-click it and select <g1>Break link to prefab<\/g1>.",
+                    "",
+                    " It should be separate from our new particle effect prefab, so right-click it and select <g1>Break link to prefab<\/g1>.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu109"
+                    }
+                ],
+                [
+                    "<x1\/>Break link to prefab<x2\/>",
+                    "",
+                    "<x1\/>Break link to prefab<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu110"
+                    }
+                ],
+                [
+                    "Because naming things properly makes everything easier, rename the prefab <g1>SwordTrail<\/g1>.",
+                    "",
+                    "Because naming things properly makes everything easier, rename the prefab <g1>SwordTrail<\/g1>.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu111"
+                    }
+                ],
+                [
+                    "To do this, in the <g2>Asset View<\/g2>, right-click the <g3>SwordModel<\/g3> prefab, select <g4>Rename<\/g4>, and type <g5>SwordTrail<\/g5>.",
+                    "",
+                    " To do this, in the <g2>Asset View<\/g2>, right-click the <g3>SwordModel<\/g3> prefab, select <g4>Rename<\/g4>, and type <g5>SwordTrail<\/g5>.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu111"
+                    }
+                ],
+                [
+                    "<x1\/>Rename prefab<x2\/>",
+                    "",
+                    "<x1\/>Rename prefab<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu112"
+                    }
+                ],
+                [
+                    "Double-click the <g1>SwordTrail<\/g1> prefab to open it in the Prefab Editor.",
+                    "",
+                    "Double-click the <g1>SwordTrail<\/g1> prefab to open it in the Prefab Editor.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu113"
+                    }
+                ],
+                [
+                    "This is where we'll customize the prefab.",
+                    "",
+                    " This is where we'll customize the prefab.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu113"
+                    }
+                ],
+                [
+                    "<x1\/>Prefab Editor<x2\/>",
+                    "",
+                    "<x1\/>Prefab Editor<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu114"
+                    }
+                ],
+                [
+                    "The prefab contains just one entity, SwordModel.",
+                    "",
+                    "The prefab contains just one entity, SwordModel.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu115"
+                    }
+                ],
+                [
+                    "It's not going to be a model for much longer, so let's rename this entity <g1>SwordTrail<\/g1> (the same as the prefab it belongs to).",
+                    "",
+                    " It's not going to be a model for much longer, so let's rename this entity <g1>SwordTrail<\/g1> (the same as the prefab it belongs to).",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu115"
+                    }
+                ],
+                [
+                    "Remove the <g1>Model<\/g1> and the <g2>Model Node Link<\/g2> (or <g3>Bone Link<\/g3>) components from the <g4>SwordTrail<\/g4> entity.",
+                    "",
+                    "Remove the <g1>Model<\/g1> and the <g2>Model Node Link<\/g2> (or <g3>Bone Link<\/g3>) components from the <g4>SwordTrail<\/g4> entity.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu116"
+                    }
+                ],
+                [
+                    "We don't need them any more — this prefab will just be a particle effect.",
+                    "",
+                    " We don't need them any more — this prefab will just be a particle effect.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu116"
+                    }
+                ],
+                [
+                    "Likewise, under <g1>Particle System > Source > Emitters > Initializers<\/g1>, delete the <g2>Velocity<\/g2> initializer.",
+                    "",
+                    "Likewise, under <g1>Particle System > Source > Emitters > Initializers<\/g1>, delete the <g2>Velocity<\/g2> initializer.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu117"
+                    }
+                ],
+                [
+                    "For now, we want the prefab effect to be static.",
+                    "",
+                    " For now, we want the prefab effect to be static.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu117"
+                    }
+                ],
+                [
+                    "<x1\/>Delete velocity initializer<x2\/>",
+                    "",
+                    "<x1\/>Delete velocity initializer<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu118"
+                    }
+                ],
+                [
+                    "In the <g1>SwordTrail<\/g1> properties, under <g2>Particle System > Source > Emitters > Spawners<\/g2>, set <g3>Loop<\/g3> to <g4>One shot<\/g4> and change <g5>Duration<\/g5> to <g6>0.2, 0.2<\/g6>.",
+                    "",
+                    "In the <g1>SwordTrail<\/g1> properties, under <g2>Particle System > Source > Emitters > Spawners<\/g2>, set <g3>Loop<\/g3> to <g4>One shot<\/g4> and change <g5>Duration<\/g5> to <g6>0.2, 0.2<\/g6>.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu119"
+                    }
+                ],
+                [
+                    "<x1\/>Set the initializer loop and duration<x2\/>",
+                    "",
+                    "<x1\/>Set the initializer loop and duration<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu120"
+                    }
+                ],
+                [
+                    "Now we've created a separate prefab for the particle effect, we don't need to keep a particle effect on the sword model.",
+                    "",
+                    "Now we've created a separate prefab for the particle effect, we don't need to keep a particle effect on the sword model.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu121"
+                    }
+                ],
+                [
+                    "In the main scene, select <g1>SwordModel<\/g1> and delete the <g2>Particle System<\/g2> component.",
+                    "",
+                    " In the main scene, select <g1>SwordModel<\/g1> and delete the <g2>Particle System<\/g2> component.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu121"
+                    }
+                ],
+                [
+                    "8.",
+                    "",
+                    "8.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu122"
+                    }
+                ],
+                [
+                    "Control the effect prefab with a script",
+                    "",
+                    " Control the effect prefab with a script",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu122"
+                    }
+                ],
+                [
+                    "We've created a sword trail effect prefab.",
+                    "",
+                    "We've created a sword trail effect prefab.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu123"
+                    }
+                ],
+                [
+                    "Next we'll use a script to spawn the effect every time the mannequin swings and delete the effect a few frames later.",
+                    "",
+                    " Next we'll use a script to spawn the effect every time the mannequin swings and delete the effect a few frames later.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu123"
+                    }
+                ],
+                [
+                    "Open the project in Visual Studio.",
+                    "",
+                    "Open the project in Visual Studio.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu124"
+                    }
+                ],
+                [
+                    "To do this, in Game Studio, click the Visual Studio icon (<g1>Open in IDE<\/g1>).",
+                    "",
+                    " To do this, in Game Studio, click the Visual Studio icon (<g1>Open in IDE<\/g1>).",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu124"
+                    }
+                ],
+                [
+                    "<x1\/>Open Visual Studio<x2\/>",
+                    "",
+                    "<x1\/>Open Visual Studio<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu125"
+                    }
+                ],
+                [
+                    "In Visual Studio, right-click the game project and select <g1>Add > New item<\/g1>.",
+                    "",
+                    "In Visual Studio, right-click the game project and select <g1>Add > New item<\/g1>.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu126"
+                    }
+                ],
+                [
+                    "In the <g2>Name<\/g2> field, give your script the name <g3>SpawnTrail<\/g3>, and click <g4>Add<\/g4>.",
+                    "",
+                    " In the <g2>Name<\/g2> field, give your script the name <g3>SpawnTrail<\/g3>, and click <g4>Add<\/g4>.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu126"
+                    }
+                ],
+                [
+                    "Replace the script content with the code in this script:",
+                    "",
+                    "Replace the script content with the code in this script:",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu127"
+                    }
+                ],
+                [
+                    "SpawnTrail.cs",
+                    "",
+                    " <g1>SpawnTrail.cs<\/g1>",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu127"
+                    }
+                ],
+                [
+                    "This is a modified version of the Prefab Instance script included in Stride.",
+                    "",
+                    "This is a modified version of the Prefab Instance script included in Stride.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu128"
+                    }
+                ],
+                [
+                    "Instead of listening to events or key presses, it listens to animation changes — such as our sword swing animation.",
+                    "",
+                    " Instead of listening to events or key presses, it listens to animation changes — such as our sword swing animation.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu128"
+                    }
+                ],
+                [
+                    "In the script, make sure the <g1>namespace<\/g1> is correct.",
+                    "",
+                    "In the script, make sure the <g1>namespace<\/g1> is correct.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu129"
+                    }
+                ],
+                [
+                    "This usually matches your Stride project name (eg <g2>MyTrailEffect<\/g2>).",
+                    "",
+                    " This usually matches your Stride project name (eg <g2>MyTrailEffect<\/g2>).",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu129"
+                    }
+                ],
+                [
+                    "<x1\/>Namespace<x2\/>",
+                    "",
+                    "<x1\/>Namespace<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu130"
+                    }
+                ],
+                [
+                    "Save the script and the Visual Studio project (<g1>Ctrl + Shift + S<\/g1>).",
+                    "",
+                    "Save the script and the Visual Studio project (<g1>Ctrl + Shift + S<\/g1>).",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu131"
+                    }
+                ],
+                [
+                    "In Game Studio, reload the assemblies.",
+                    "",
+                    "In Game Studio, reload the assemblies.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu132"
+                    }
+                ],
+                [
+                    "<x1\/>Reload assemblies<x2\/>",
+                    "",
+                    "<x1\/>Reload assemblies<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu133"
+                    }
+                ],
+                [
+                    "In the <g1>MainScene<\/g1>, select the <g2>SwordModel<\/g2>.",
+                    "",
+                    "In the <g1>MainScene<\/g1>, select the <g2>SwordModel<\/g2>.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu134"
+                    }
+                ],
+                [
+                    "<x1\/>Select SwordModel<x2\/>",
+                    "",
+                    "<x1\/>Select SwordModel<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu135"
+                    }
+                ],
+                [
+                    "In the SwordModel properties, click <g1>Add component<\/g1> and select the <g2>SpawnTrail<\/g2> script.",
+                    "",
+                    "In the SwordModel properties, click <g1>Add component<\/g1> and select the <g2>SpawnTrail<\/g2> script.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu136"
+                    }
+                ],
+                [
+                    "This adds the script as a component.",
+                    "",
+                    " This adds the script as a component.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu136"
+                    }
+                ],
+                [
+                    "<x1\/>Add script component<x2\/>",
+                    "",
+                    "<x1\/>Add script component<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu137"
+                    }
+                ],
+                [
+                    "Under the <g1>SpawnTrail<\/g1> component properties, next to <g2>Source<\/g2>, click <x1\/>Hand icon<x2\/> (<g3>Select an asset<\/g3>).",
+                    "",
+                    "Under the <g1>SpawnTrail<\/g1> component properties, next to <g2>Source<\/g2>, click <x1\/>Hand icon<x2\/> (<g3>Select an asset<\/g3>).",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu138"
+                    }
+                ],
+                [
+                    "<x1\/>Select a source<x2\/>",
+                    "",
+                    "<x1\/>Select a source<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu139"
+                    }
+                ],
+                [
+                    "In the Entity Picker, select the <g1>SwordTrail<\/g1> prefab.",
+                    "",
+                    "In the Entity Picker, select the <g1>SwordTrail<\/g1> prefab.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu140"
+                    }
+                ],
+                [
+                    "<x1\/>Select the swordtrail prefab<x2\/>",
+                    "",
+                    "<x1\/>Select the swordtrail prefab<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu141"
+                    }
+                ],
+                [
+                    "In the SpawnTrail component, in the <g1>Animation<\/g1> field, click the hand icon (<g2>Select an asset<\/g2>).",
+                    "",
+                    "In the SpawnTrail component, in the <g1>Animation<\/g1> field, click the hand icon (<g2>Select an asset<\/g2>).",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu142"
+                    }
+                ],
+                [
+                    "The <g3>Select an asset<\/g3> window opens.",
+                    "",
+                    "     The <g3>Select an asset<\/g3> window opens.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu142"
+                    }
+                ],
+                [
+                    "In the left pane, select the <g1>mannequinModel<\/g1> and click <g2>OK<\/g2>.",
+                    "",
+                    "In the left pane, select the <g1>mannequinModel<\/g1> and click <g2>OK<\/g2>.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu143"
+                    }
+                ],
+                [
+                    "![Pick mannequin model in Entity Picker](media\/pick-mannequin-model.png)",
+                    "",
+                    "![Pick mannequin model in Entity Picker](media\/pick-mannequin-model.png)\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu144"
+                    }
+                ],
+                [
+                    "Run the game.",
+                    "",
+                    "Run the game.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu145"
+                    }
+                ],
+                [
+                    "Thanks to our script, the particle effect appears at the start of the sword swing animation and disappears at the end.",
+                    "",
+                    "Thanks to our script, the particle effect appears at the start of the sword swing animation and disappears at the end.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu146"
+                    }
+                ],
+                [
+                    "9.",
+                    "",
+                    "9.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu147"
+                    }
+                ],
+                [
+                    "Adjust the trail start time",
+                    "",
+                    " Adjust the trail start time",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu147"
+                    }
+                ],
+                [
+                    "With the <g1>Sword_R<\/g1> animation asset selected, check the swing animation in the <g2>Asset Preview<\/g2> in the bottom-right.",
+                    "",
+                    "With the <g1>Sword_R<\/g1> animation asset selected, check the swing animation in the <g2>Asset Preview<\/g2> in the bottom-right.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu148"
+                    }
+                ],
+                [
+                    "(If the Asset Preview isn't displayed, check <g3>View > Asset Preview<\/g3>.)",
+                    "",
+                    " (If the Asset Preview isn't displayed, check <g3>View > Asset Preview<\/g3>.)",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu148"
+                    }
+                ],
+                [
+                    "The Asset Preview shows the animation length in seconds.",
+                    "",
+                    "The Asset Preview shows the animation length in seconds.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu149"
+                    }
+                ],
+                [
+                    "If you look closely, you can see the mannequin doesn't begin to swing the sword down until about 0.1 seconds into the animation.",
+                    "",
+                    " If you look closely, you can see the mannequin doesn't begin to swing the sword down until about 0.1 seconds into the animation.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu149"
+                    }
+                ],
+                [
+                    "Let's set the trail effect to spawn just when the mannequin swings.",
+                    "",
+                    " Let's set the trail effect to spawn just when the mannequin swings.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu149"
+                    }
+                ],
+                [
+                    "Select the <g1>SwordModel<\/g1>.",
+                    "",
+                    "Select the <g1>SwordModel<\/g1>.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu150"
+                    }
+                ],
+                [
+                    "In the <g1>SpawnTrail<\/g1> properties, set the <g2>Start time<\/g2> to 0.06.",
+                    "",
+                    "In the <g1>SpawnTrail<\/g1> properties, set the <g2>Start time<\/g2> to 0.06.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu151"
+                    }
+                ],
+                [
+                    "This means the trail effect won't spawn until 0.06 seconds into the swing animation, which looks a little more natural.",
+                    "",
+                    " This means the trail effect won't spawn until 0.06 seconds into the swing animation, which looks a little more natural.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu151"
+                    }
+                ],
+                [
+                    "Feel free to tweak this to your liking.",
+                    "",
+                    " Feel free to tweak this to your liking.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu151"
+                    }
+                ],
+                [
+                    "Run the game to see how it looks.",
+                    "",
+                    "Run the game to see how it looks.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu152"
+                    }
+                ],
+                [
+                    "You might notice our trail effect looks a little jagged, creating a \"spiderweb\" effect.",
+                    "",
+                    "You might notice our trail effect looks a little jagged, creating a \"spiderweb\" effect.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu153"
+                    }
+                ],
+                [
+                    "Let's make it more curved.",
+                    "",
+                    " Let's make it more curved.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu153"
+                    }
+                ],
+                [
+                    "10.",
+                    "",
+                    "10.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu154"
+                    }
+                ],
+                [
+                    "Curve the trail",
+                    "",
+                    " Curve the trail",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu154"
+                    }
+                ],
+                [
+                    "In the <g1>SwordTrail<\/g1> prefab, on the <g2>SwordTrail<\/g2> entity, under <g3>Particle System > Source > Emitters > Shape<\/g3>, set <g4>Smoothing<\/g4> to <g5>Best<\/g5> and <g6>Segments<\/g6> to <g7>5<\/g7>.",
+                    "",
+                    "In the <g1>SwordTrail<\/g1> prefab, on the <g2>SwordTrail<\/g2> entity, under <g3>Particle System > Source > Emitters > Shape<\/g3>, set <g4>Smoothing<\/g4> to <g5>Best<\/g5> and <g6>Segments<\/g6> to <g7>5<\/g7>.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu155"
+                    }
+                ],
+                [
+                    "<x1\/>Smoothing and segments<x2\/>",
+                    "",
+                    "<x1\/>Smoothing and segments<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu156"
+                    }
+                ],
+                [
+                    "This adds three vertices between the particles of our trail, which should be enough to create a noticeably smoother effect.",
+                    "",
+                    "This adds three vertices between the particles of our trail, which should be enough to create a noticeably smoother effect.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu157"
+                    }
+                ],
+                [
+                    "Run the game.",
+                    "",
+                    "Run the game.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu158"
+                    }
+                ],
+                [
+                    "The inner curve, at the sword hilt, is smoother.",
+                    "",
+                    "The inner curve, at the sword hilt, is smoother.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu159"
+                    }
+                ],
+                [
+                    "But the curve at the sword's edge is still jagged.",
+                    "",
+                    " But the curve at the sword's edge is still jagged.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu159"
+                    }
+                ],
+                [
+                    "<x1\/>Smoothed and unsmoothed areas<x2\/>",
+                    "",
+                    "<x1\/>Smoothed and unsmoothed areas<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu160"
+                    }
+                ],
+                [
+                    "We want to smooth the effect at the sword's edge, where it's more noticeable.",
+                    "",
+                    "We want to smooth the effect at the sword's edge, where it's more noticeable.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu161"
+                    }
+                ],
+                [
+                    "To do that, we'll flip the particle direction.",
+                    "",
+                    " To do that, we'll flip the particle direction.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu161"
+                    }
+                ],
+                [
+                    "Still in the <g1>SwordTrail<\/g1> prefab, in the <g2>Transform<\/g2> component properties, change the <g3>Position<\/g3> to <g4>0, 0, -1<\/g4>.",
+                    "",
+                    "Still in the <g1>SwordTrail<\/g1> prefab, in the <g2>Transform<\/g2> component properties, change the <g3>Position<\/g3> to <g4>0, 0, -1<\/g4>.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu162"
+                    }
+                ],
+                [
+                    "<x1\/>Swordtrail position<x2\/>",
+                    "",
+                    "<x1\/>Swordtrail position<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu163"
+                    }
+                ],
+                [
+                    "This moves the starting point of the particle effect to the tip of the sword.",
+                    "",
+                    "This moves the starting point of the particle effect to the tip of the sword.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu164"
+                    }
+                ],
+                [
+                    "Run the game.",
+                    "",
+                    "Run the game.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu165"
+                    }
+                ],
+                [
+                    "Now we have a new problem.",
+                    "",
+                    "Now we have a new problem.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu166"
+                    }
+                ],
+                [
+                    "Because we moved the particle effect to the tip of the sword, the particles are flying from the tip.",
+                    "",
+                    " Because we moved the particle effect to the tip of the sword, the particles are flying from the tip.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu166"
+                    }
+                ],
+                [
+                    "We need to reverse their direction, so they move down along the sword blade to the hilt.",
+                    "",
+                    " We need to reverse their direction, so they move down along the sword blade to the hilt.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu166"
+                    }
+                ],
+                [
+                    "Under <g1>Particle System > Source > Emitters > Initializers<\/g1>, under the <g2>Direction<\/g2> initializer, change both the <g3>Direction min<\/g3> and <g4>Direction max<\/g4> to <g5>0, 0, 1<\/g5>.",
+                    "",
+                    "Under <g1>Particle System > Source > Emitters > Initializers<\/g1>, under the <g2>Direction<\/g2> initializer, change both the <g3>Direction min<\/g3> and <g4>Direction max<\/g4> to <g5>0, 0, 1<\/g5>.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu167"
+                    }
+                ],
+                [
+                    "This inverts the trail direction.",
+                    "",
+                    " This inverts the trail direction.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu167"
+                    }
+                ],
+                [
+                    "<x1\/>Initializer direction<x2\/>",
+                    "",
+                    "<x1\/>Initializer direction<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu168"
+                    }
+                ],
+                [
+                    "Run the game.",
+                    "",
+                    "Run the game.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu169"
+                    }
+                ],
+                [
+                    "Congratulations!",
+                    "",
+                    "Congratulations!",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu170"
+                    }
+                ],
+                [
+                    "You created a trail effect from scratch.",
+                    "",
+                    " You created a trail effect from scratch.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu170"
+                    }
+                ],
+                [
+                    "How you tweak it now is up to you.",
+                    "",
+                    " How you tweak it now is up to you.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu170"
+                    }
+                ],
+                [
+                    "Sample project",
+                    "",
+                    "Sample project",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu171"
+                    }
+                ],
+                [
+                    "Here's a more elaborate trail that combines multiple particle effects:",
+                    "",
+                    "Here's a more elaborate trail that combines multiple particle effects:",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu172"
+                    }
+                ],
+                [
+                    "If you'd like to see how it works, <g1>download the project file<\/g1> and take a look.",
+                    "",
+                    "If you'd like to see how it works, <g1>download the project file<\/g1> and take a look.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu173"
+                    }
+                ],
+                [
+                    "See also",
+                    "",
+                    "See also",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu174"
+                    }
+                ],
+                [
+                    "Tutorial:",
+                    "",
+                    "<g1>Tutorial:",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu175"
+                    }
+                ],
+                [
+                    "Custom particles",
+                    "",
+                    " Custom particles<\/g1>",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu175"
+                    }
+                ],
+                [
+                    "Tutorial:",
+                    "",
+                    "<g1>Tutorial:",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu176"
+                    }
+                ],
+                [
+                    "Inheritance",
+                    "",
+                    " Inheritance<\/g1>",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu176"
+                    }
+                ],
+                [
+                    "Tutorial:",
+                    "",
+                    "<g1>Tutorial:",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu177"
+                    }
+                ],
+                [
+                    "Lasers and lightning",
+                    "",
+                    " Lasers and lightning<\/g1>",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu177"
+                    }
+                ],
+                [
+                    "Particles",
+                    "",
+                    "<g1>Particles<\/g1>",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu178"
+                    }
+                ],
+                [
+                    "Create particles",
+                    "",
+                    "<g1>Create particles<\/g1>",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu179"
+                    }
+                ],
+                [
+                    "Model node links",
+                    "",
+                    "<g1>Model node links<\/g1>",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/create-a-trail.md",
+                    {
+                        "id": "tu180"
+                    }
+                ]
+            ]
+        }
+    ],
+    "seg_enabled": false
+}

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="/D:/repos/rr/source/manual/particles/tutorials/inheritance.md" source-language="en" target-language="pt" datatype="x-text/x-markdown" okp:inputEncoding="UTF-8">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en">Tutorial: Inheritance</source>
+<target xml:lang="pt">Tutorial: Inheritance</target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Intermediate<x id="2"/>
+<x id="3"/>Artist<x id="4"/>
+<x id="5"/>Programmer<x id="6"/></source>
+<target xml:lang="pt"><x id="1"/>Intermediate<x id="2"/>
+<x id="3"/>Artist<x id="4"/>
+<x id="5"/>Programmer<x id="6"/></target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">This tutorial explains how to create particles which inherit one or more attributes, such as position or color, from other particles.</source>
+<target xml:lang="pt">This tutorial explains how to create particles which inherit one or more attributes, such as position or color, from other particles.</target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">Sample</source>
+<target xml:lang="pt">Sample</target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">To see some of the techniques described on this page implemented in a project, create a new <g id="1">Sample: Particles</g> project and open the <g id="2">ChildParticles</g> scene.</source>
+<target xml:lang="pt">To see some of the techniques described on this page implemented in a project, create a new <g id="1">Sample: Particles</g> project and open the <g id="2">ChildParticles</g> scene.</target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Particles sample project<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Particles sample project<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en">Inheriting position</source>
+<target xml:lang="pt">Inheriting position</target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en">It helps if you think about inheritance in terms of parent and child particles.</source>
+<target xml:lang="pt">It helps if you think about inheritance in terms of parent and child particles.</target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en">For example, in the <g id="1">ChildParticles</g> scene in the <g id="2">Sample: Particles</g> project, check out the <g id="3">Fireworks</g> entity.</source>
+<target xml:lang="pt">For example, in the <g id="1">ChildParticles</g> scene in the <g id="2">Sample: Particles</g> project, check out the <g id="3">Fireworks</g> entity.</target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en">It contains two emitters. Particles reference parent emitters by name, so in the first emitter you can see we've set the <g id="1">Emitter Name</g> property. It's an optional name, but it's required if you want other emitters to be able to reference this emitter's particles.</source>
+<target xml:lang="pt">It contains two emitters. Particles reference parent emitters by name, so in the first emitter you can see we've set the <g id="1">Emitter Name</g> property. It's an optional name, but it's required if you want other emitters to be able to reference this emitter's particles.</target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en">In the second emitter we create a new initializer, <g id="1">Position from parent</g>. This lets us reference the first emitter's particles and use their position to initialize the child particles. In the <g id="2">Parent emitter</g> attribute we put the first emitter's name (<g id="3">Parent</g>). This randomly assigns a parent particle for each child particle spawned and copy its position to the child particle.</source>
+<target xml:lang="pt">In the second emitter we create a new initializer, <g id="1">Position from parent</g>. This lets us reference the first emitter's particles and use their position to initialize the child particles. In the <g id="2">Parent emitter</g> attribute we put the first emitter's name (<g id="3">Parent</g>). This randomly assigns a parent particle for each child particle spawned and copy its position to the child particle.</target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en">The <g id="1">Parent Offset</g> seed matches fields when more than one attributes are inherited. For example, if you want to inherit both <g id="2">Position</g> and <g id="3">Color</g> from the same parent particle (chosen at random) you should make the <g id="4">Parent Offset</g> seed the same. Alternatively, you can make the <g id="5">Parent Offset</g> seed for both initializers different, in which case particles spawning from one parent's position can inherit their color from a different random particle. Usually, you want to keep them the same, but in some cases you might want to mix them.</source>
+<target xml:lang="pt">The <g id="1">Parent Offset</g> seed matches fields when more than one attributes are inherited. For example, if you want to inherit both <g id="2">Position</g> and <g id="3">Color</g> from the same parent particle (chosen at random) you should make the <g id="4">Parent Offset</g> seed the same. Alternatively, you can make the <g id="5">Parent Offset</g> seed for both initializers different, in which case particles spawning from one parent's position can inherit their color from a different random particle. Usually, you want to keep them the same, but in some cases you might want to mix them.</target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>media/particles-tutorials-inheritance-1.png<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>media/particles-tutorials-inheritance-1.png<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en">As you can see, this kind of inheritance doesn't control spawn count, maximum particles, or any other parameters, and is very random. For most effects it's sufficient, but sometimes you want more direct control over the particles.</source>
+<target xml:lang="pt">As you can see, this kind of inheritance doesn't control spawn count, maximum particles, or any other parameters, and is very random. For most effects it's sufficient, but sometimes you want more direct control over the particles.</target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en">Controlled inheritance</source>
+<target xml:lang="pt">Controlled inheritance</target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en">On occasion you will want to spawn a certain number of particles from a specific parent and have those particles only inherit attributes from the parent particle that spawned them.</source>
+<target xml:lang="pt">On occasion you will want to spawn a certain number of particles from a specific parent and have those particles only inherit attributes from the parent particle that spawned them.</target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en">To do this, choose a spawner for the child emitter from type <g id="1">From parent</g>. Fill in the parent emitter's name in the <g id="2">Parent emitter</g> field.</source>
+<target xml:lang="pt">To do this, choose a spawner for the child emitter from type <g id="1">From parent</g>. Fill in the parent emitter's name in the <g id="2">Parent emitter</g> field.</target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en">The <g id="1">Spawn Control Group</g> determines how the particles save their control information. You need to assign the same control group on all initializers later in order to retrieve the spawning information.</source>
+<target xml:lang="pt">The <g id="1">Spawn Control Group</g> determines how the particles save their control information. You need to assign the same control group on all initializers later in order to retrieve the spawning information.</target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en">There can be up to 4 control groups. If you spawn particles based on different conditions, or spawn more than two different child particles from the same parent, assign them different control groups so they don't get mixed up.</source>
+<target xml:lang="pt">There can be up to 4 control groups. If you spawn particles based on different conditions, or spawn more than two different child particles from the same parent, assign them different control groups so they don't get mixed up.</target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en">The <g id="1">Particle Spawn Trigger</g> is the triggering condition on the parent side, which determines if particles should be spawned. If you leave it as <g id="2">None</g>, no particles are spawned, so set it to <g id="3">On Hit</g> or <g id="4">Lifetime</g>.</source>
+<target xml:lang="pt">The <g id="1">Particle Spawn Trigger</g> is the triggering condition on the parent side, which determines if particles should be spawned. If you leave it as <g id="2">None</g>, no particles are spawned, so set it to <g id="3">On Hit</g> or <g id="4">Lifetime</g>.</target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en"><g id="1">On hit</g> works for parent particles with a <g id="2">collider</g> assigned, and triggers every time they hit the surface.</source>
+<target xml:lang="pt"><g id="1">On hit</g> works for parent particles with a <g id="2">collider</g> assigned, and triggers every time they hit the surface.</target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en"><g id="1">Lifetime</g> is based on the parent particle's relative lifetime, and triggers every frame the lifetime is within the limits. There are two sliders to control from which point to which point particles should be spawned. Alternatively, you can reverse them to reverse the spawning condition. For example, a particle with lifetime condition (0.9 - 1.0) only spawns child particles in the last 10% of its lifetime.</source>
+<target xml:lang="pt"><g id="1">Lifetime</g> is based on the parent particle's relative lifetime, and triggers every frame the lifetime is within the limits. There are two sliders to control from which point to which point particles should be spawned. Alternatively, you can reverse them to reverse the spawning condition. For example, a particle with lifetime condition (0.9 - 1.0) only spawns child particles in the last 10% of its lifetime.</target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en">Finally, the <g id="1">Particles/trigger</g> determines how many particles are spawned each time the condition is met.</source>
+<target xml:lang="pt">Finally, the <g id="1">Particles/trigger</g> determines how many particles are spawned each time the condition is met.</target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en">For child emitters, it's good practice to control the maximum number of particles the emitter can have, especially for non-deterministic cases, such as the collision hit.</source>
+<target xml:lang="pt">For child emitters, it's good practice to control the maximum number of particles the emitter can have, especially for non-deterministic cases, such as the collision hit.</target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en">Determinism</source>
+<target xml:lang="pt">Determinism</target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en">On the initializers, choose a <g id="1">Spawn Control Group</g> corresponding to the spawner's control group. This forces the initializers to only work for particles spawned with the triggering condition, skipping the rest (if more than one spawner is assigned).</source>
+<target xml:lang="pt">On the initializers, choose a <g id="1">Spawn Control Group</g> corresponding to the spawner's control group. This forces the initializers to only work for particles spawned with the triggering condition, skipping the rest (if more than one spawner is assigned).</target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en">Ribbons and trails</source>
+<target xml:lang="pt">Ribbons and trails</target>
+</trans-unit>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en"><g id="1">Ribbon and trail renderers</g> are a little more difficult to set up in the beginning, as they are dependent on spawn order. In case of parents, they also become dependent on the parent's spawn order.</source>
+<target xml:lang="pt"><g id="1">Ribbon and trail renderers</g> are a little more difficult to set up in the beginning, as they are dependent on spawn order. In case of parents, they also become dependent on the parent's spawn order.</target>
+</trans-unit>
+<trans-unit id="tu29" xml:space="preserve">
+<source xml:lang="en">Add a <g id="1">Spawn Order</g> initializer to the parent. It will be used in the children particles.</source>
+<target xml:lang="pt">Add a <g id="1">Spawn Order</g> initializer to the parent. It will be used in the children particles.</target>
+</trans-unit>
+<trans-unit id="tu30" xml:space="preserve">
+<source xml:lang="en">On the child emitter, remove all spawners and add only one, <g id="1">From parent</g>. You want to control the spawning of the children particles so all particles can be properly grouped in a ribbon behind the parent particle. If you add another spawner that adds random behavior to the system, the ribbons will connect in the wrong way. Set the triggering condition to <g id="2">Lifetime</g>.</source>
+<target xml:lang="pt">On the child emitter, remove all spawners and add only one, <g id="1">From parent</g>. You want to control the spawning of the children particles so all particles can be properly grouped in a ribbon behind the parent particle. If you add another spawner that adds random behavior to the system, the ribbons will connect in the wrong way. Set the triggering condition to <g id="2">Lifetime</g>.</target>
+</trans-unit>
+<trans-unit id="tu31" xml:space="preserve">
+<source xml:lang="en">On the <g id="1">child emitter</g> side again, add an <g id="2">Order from parent</g> initializer. This assigns a spawning order to the particles, but also groups them by parent. If you set the <g id="3">Sort</g> to use this order and assign a ribbon shape builder, you'll see how each trail is properly grouped behind the parent particle that spawned it.</source>
+<target xml:lang="pt">On the <g id="1">child emitter</g> side again, add an <g id="2">Order from parent</g> initializer. This assigns a spawning order to the particles, but also groups them by parent. If you set the <g id="3">Sort</g> to use this order and assign a ribbon shape builder, you'll see how each trail is properly grouped behind the parent particle that spawned it.</target>
+</trans-unit>
+<trans-unit id="tu32" xml:space="preserve">
+<source xml:lang="en">Circular behavior</source>
+<target xml:lang="pt">Circular behavior</target>
+</trans-unit>
+<trans-unit id="tu33" xml:space="preserve">
+<source xml:lang="en">Particle emitters can inherit attributes circularly from each other, or even inherit attributes from particles in the same emitter. This can produce random or "swingy" effects, but can be interesting.</source>
+<target xml:lang="pt">Particle emitters can inherit attributes circularly from each other, or even inherit attributes from particles in the same emitter. This can produce random or "swingy" effects, but can be interesting.</target>
+</trans-unit>
+<trans-unit id="tu34" xml:space="preserve">
+<source xml:lang="en">In the <g id="1">Colliding Particles</g> particle entity (in the <g id="2">MainScene</g> of the <g id="3">Sample: Particles</g> project), you can see that particles are spawned on hit, but the parent emitter is the same. This means that each time a particle hits the surface, it produces more of the same kind. There are two important elements which allow this to happen.</source>
+<target xml:lang="pt">In the <g id="1">Colliding Particles</g> particle entity (in the <g id="2">MainScene</g> of the <g id="3">Sample: Particles</g> project), you can see that particles are spawned on hit, but the parent emitter is the same. This means that each time a particle hits the surface, it produces more of the same kind. There are two important elements which allow this to happen.</target>
+</trans-unit>
+<trans-unit id="tu35" xml:space="preserve">
+<source xml:lang="en">First, we have two spawners. One spawns a small number of particles per second, which give us the initial elements to populate the system. The other spawner spawns more particles on hit and uses a control group.</source>
+<target xml:lang="pt">First, we have two spawners. One spawns a small number of particles per second, which give us the initial elements to populate the system. The other spawner spawns more particles on hit and uses a control group.</target>
+</trans-unit>
+<trans-unit id="tu36" xml:space="preserve">
+<source xml:lang="en">Second, we have two <g id="1">Position</g> initializers. The first assigns a position where we want the particles to appear. It works over all particles (even those spawned from parents), so if you leave it like this, it will fire more particles from the initial position every time they hit the surface.</source>
+<target xml:lang="pt">Second, we have two <g id="1">Position</g> initializers. The first assigns a position where we want the particles to appear. It works over all particles (even those spawned from parents), so if you leave it like this, it will fire more particles from the initial position every time they hit the surface.</target>
+</trans-unit>
+<trans-unit id="tu37" xml:space="preserve">
+<source xml:lang="en">The second initializer is <g id="1">Position from parent</g> and initializes the particle positions using the same control group as the <g id="2">On hit</g> spawner. The <g id="3">Position from parent</g> overwrites the positions for the particles with control group, leaving the particles spawned from the <g id="4">Per second</g> spawner untouched. This creates a small number of particles constantly coming from a single entry point and multiplying like an avalanche every time they hit the surface.</source>
+<target xml:lang="pt">The second initializer is <g id="1">Position from parent</g> and initializes the particle positions using the same control group as the <g id="2">On hit</g> spawner. The <g id="3">Position from parent</g> overwrites the positions for the particles with control group, leaving the particles spawned from the <g id="4">Per second</g> spawner untouched. This creates a small number of particles constantly coming from a single entry point and multiplying like an avalanche every time they hit the surface.</target>
+</trans-unit>
+<trans-unit id="tu38" xml:space="preserve">
+<source xml:lang="en">See also</source>
+<target xml:lang="pt">See also</target>
+</trans-unit>
+<trans-unit id="tu39" xml:space="preserve">
+<source xml:lang="en"><g id="1">Tutorial: Create a trail</g></source>
+<target xml:lang="pt"><g id="1">Tutorial: Create a trail</g></target>
+</trans-unit>
+<trans-unit id="tu40" xml:space="preserve">
+<source xml:lang="en"><g id="1">Tutorial: Custom particles</g></source>
+<target xml:lang="pt"><g id="1">Tutorial: Custom particles</g></target>
+</trans-unit>
+<trans-unit id="tu41" xml:space="preserve">
+<source xml:lang="en"><g id="1">Tutorial: Lasers and lightning</g></source>
+<target xml:lang="pt"><g id="1">Tutorial: Lasers and lightning</g></target>
+</trans-unit>
+<trans-unit id="tu42" xml:space="preserve">
+<source xml:lang="en"><g id="1">Particles</g></source>
+<target xml:lang="pt"><g id="1">Particles</g></target>
+</trans-unit>
+<trans-unit id="tu43" xml:space="preserve">
+<source xml:lang="en"><g id="1">Create particles</g></source>
+<target xml:lang="pt"><g id="1">Create particles</g></target>
+</trans-unit>
+</body>
+</file>
+</xliff>

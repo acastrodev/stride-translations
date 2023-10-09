@@ -1,0 +1,793 @@
+{
+    "filename": "manual\\platforms\\uwp\\xbox-live.md.xlf",
+    "files": [
+        {
+            "\/D:\/repos\/rr\/source\/manual\/platforms\/uwp\/xbox-live.md": [
+                [
+                    "Xbox Live",
+                    "",
+                    "Xbox Live",
+                    "\/D:\/repos\/rr\/source\/manual\/platforms\/uwp\/xbox-live.md",
+                    {
+                        "id": "tu1"
+                    }
+                ],
+                [
+                    "This page explains how to configure your project to work with Xbox Live.",
+                    "",
+                    "This page explains how to configure your project to work with Xbox Live.",
+                    "\/D:\/repos\/rr\/source\/manual\/platforms\/uwp\/xbox-live.md",
+                    {
+                        "id": "tu2"
+                    }
+                ],
+                [
+                    "1.",
+                    "",
+                    "1.",
+                    "\/D:\/repos\/rr\/source\/manual\/platforms\/uwp\/xbox-live.md",
+                    {
+                        "id": "tu3"
+                    }
+                ],
+                [
+                    "Before you start",
+                    "",
+                    " Before you start",
+                    "\/D:\/repos\/rr\/source\/manual\/platforms\/uwp\/xbox-live.md",
+                    {
+                        "id": "tu3"
+                    }
+                ],
+                [
+                    "Make sure your project uses UWP as a platform.",
+                    "",
+                    "Make sure your project uses UWP as a platform.",
+                    "\/D:\/repos\/rr\/source\/manual\/platforms\/uwp\/xbox-live.md",
+                    {
+                        "id": "tu4"
+                    }
+                ],
+                [
+                    "To do this, you can either:",
+                    "",
+                    " To do this, you can either:",
+                    "\/D:\/repos\/rr\/source\/manual\/platforms\/uwp\/xbox-live.md",
+                    {
+                        "id": "tu4"
+                    }
+                ],
+                [
+                    "<g1>create a project<\/g1> and select <g2>UWP<\/g2> as a platform, or",
+                    "",
+                    "<g1>create a project<\/g1> and select <g2>UWP<\/g2> as a platform, or",
+                    "\/D:\/repos\/rr\/source\/manual\/platforms\/uwp\/xbox-live.md",
+                    {
+                        "id": "tu5"
+                    }
+                ],
+                [
+                    "add <g2>UWP<\/g2> as a platform to an existing project",
+                    "",
+                    "<g1>add <g2>UWP<\/g2> as a platform to an existing project<\/g1>",
+                    "\/D:\/repos\/rr\/source\/manual\/platforms\/uwp\/xbox-live.md",
+                    {
+                        "id": "tu6"
+                    }
+                ],
+                [
+                    "<x1\/>!Tip<x2\/>",
+                    "",
+                    "<x1\/>!Tip<x2\/>\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/platforms\/uwp\/xbox-live.md",
+                    {
+                        "id": "tu7"
+                    }
+                ],
+                [
+                    "For this tutorial, you might find it useful to create a new project to test the process, then apply the knowledge to your existing projects.",
+                    "",
+                    "For this tutorial, you might find it useful to create a new project to test the process, then apply the knowledge to your existing projects.",
+                    "\/D:\/repos\/rr\/source\/manual\/platforms\/uwp\/xbox-live.md",
+                    {
+                        "id": "tu7"
+                    }
+                ],
+                [
+                    "Make sure you can run the project from UWP.",
+                    "",
+                    "Make sure you can run the project from UWP.",
+                    "\/D:\/repos\/rr\/source\/manual\/platforms\/uwp\/xbox-live.md",
+                    {
+                        "id": "tu8"
+                    }
+                ],
+                [
+                    "To do this, in Visual Studio, select the platform you want (UWP-64, UWP-32, or UWP-ARM) from the <g1>Solution Platform<\/g1> drop-down list, and run the project.",
+                    "",
+                    " To do this, in Visual Studio, select the platform you want (UWP-64, UWP-32, or UWP-ARM) from the <g1>Solution Platform<\/g1> drop-down list, and run the project.",
+                    "\/D:\/repos\/rr\/source\/manual\/platforms\/uwp\/xbox-live.md",
+                    {
+                        "id": "tu8"
+                    }
+                ],
+                [
+                    "Download the Xbox Live SDK.",
+                    "",
+                    "Download the Xbox Live SDK.",
+                    "\/D:\/repos\/rr\/source\/manual\/platforms\/uwp\/xbox-live.md",
+                    {
+                        "id": "tu9"
+                    }
+                ],
+                [
+                    "To write this page, we used XboxLiveSDK-1612-20170114-002.",
+                    "",
+                    "To write this page, we used XboxLiveSDK-1612-20170114-002.",
+                    "\/D:\/repos\/rr\/source\/manual\/platforms\/uwp\/xbox-live.md",
+                    {
+                        "id": "tu10"
+                    }
+                ],
+                [
+                    "The sample is loosely based on the Achievements sample in the Xbox Live SDK.",
+                    "",
+                    " The sample is loosely based on the Achievements sample in the Xbox Live SDK.",
+                    "\/D:\/repos\/rr\/source\/manual\/platforms\/uwp\/xbox-live.md",
+                    {
+                        "id": "tu10"
+                    }
+                ],
+                [
+                    "Change your Xbox Live environment.",
+                    "",
+                    "Change your Xbox Live environment.",
+                    "\/D:\/repos\/rr\/source\/manual\/platforms\/uwp\/xbox-live.md",
+                    {
+                        "id": "tu11"
+                    }
+                ],
+                [
+                    "In the <g1>SDK<\/g1> folder, under <g2>Tools<\/g2>, run:",
+                    "",
+                    " In the <g1>SDK<\/g1> folder, under <g2>Tools<\/g2>, run:",
+                    "\/D:\/repos\/rr\/source\/manual\/platforms\/uwp\/xbox-live.md",
+                    {
+                        "id": "tu11"
+                    }
+                ],
+                [
+                    "SwitchSandbox.cmd XDKS.1",
+                    "",
+                    "SwitchSandbox.cmd XDKS.1\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/platforms\/uwp\/xbox-live.md",
+                    {
+                        "id": "tu12"
+                    }
+                ],
+                [
+                    "XDKS.1 is the sandbox used for the Microsoft samples.",
+                    "",
+                    "XDKS.1 is the sandbox used for the Microsoft samples.",
+                    "\/D:\/repos\/rr\/source\/manual\/platforms\/uwp\/xbox-live.md",
+                    {
+                        "id": "tu13"
+                    }
+                ],
+                [
+                    "<x1\/>!Warning<x2\/>",
+                    "",
+                    "<x1\/>!Warning<x2\/>\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/platforms\/uwp\/xbox-live.md",
+                    {
+                        "id": "tu14"
+                    }
+                ],
+                [
+                    "This blocks regular Xbox accounts and only permits developer accounts.",
+                    "",
+                    "This blocks regular Xbox accounts and only permits developer accounts.",
+                    "\/D:\/repos\/rr\/source\/manual\/platforms\/uwp\/xbox-live.md",
+                    {
+                        "id": "tu14"
+                    }
+                ],
+                [
+                    "To switch back, run:",
+                    "",
+                    " To switch back, run:",
+                    "\/D:\/repos\/rr\/source\/manual\/platforms\/uwp\/xbox-live.md",
+                    {
+                        "id": "tu14"
+                    }
+                ],
+                [
+                    "SwitchSandbox.cmd RETAIL",
+                    "",
+                    "SwitchSandbox.cmd RETAIL\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/platforms\/uwp\/xbox-live.md",
+                    {
+                        "id": "tu15"
+                    }
+                ],
+                [
+                    "Make sure you can run the Achievements sample with your developer account.",
+                    "",
+                    "Make sure you can run the Achievements sample with your developer account.",
+                    "\/D:\/repos\/rr\/source\/manual\/platforms\/uwp\/xbox-live.md",
+                    {
+                        "id": "tu16"
+                    }
+                ],
+                [
+                    "2.",
+                    "",
+                    "2.",
+                    "\/D:\/repos\/rr\/source\/manual\/platforms\/uwp\/xbox-live.md",
+                    {
+                        "id": "tu17"
+                    }
+                ],
+                [
+                    "Add the Xbox Live SDK to your solution",
+                    "",
+                    " Add the Xbox Live SDK to your solution",
+                    "\/D:\/repos\/rr\/source\/manual\/platforms\/uwp\/xbox-live.md",
+                    {
+                        "id": "tu17"
+                    }
+                ],
+                [
+                    "In Visual Studio, open your game solution.",
+                    "",
+                    "In Visual Studio, open your game solution.",
+                    "\/D:\/repos\/rr\/source\/manual\/platforms\/uwp\/xbox-live.md",
+                    {
+                        "id": "tu18"
+                    }
+                ],
+                [
+                    "Open the Package Manager Console (<g1>Tools > NuGet Package Manager > Package Manager Console<\/g1>).",
+                    "",
+                    "Open the Package Manager Console (<g1>Tools > NuGet Package Manager > Package Manager Console<\/g1>).",
+                    "\/D:\/repos\/rr\/source\/manual\/platforms\/uwp\/xbox-live.md",
+                    {
+                        "id": "tu19"
+                    }
+                ],
+                [
+                    "In the <g1>Default project<\/g1> field, select your UWP project (eg <g2>MyGame.UWP<\/g2>).",
+                    "",
+                    "In the <g1>Default project<\/g1> field, select your UWP project (eg <g2>MyGame.UWP<\/g2>).",
+                    "\/D:\/repos\/rr\/source\/manual\/platforms\/uwp\/xbox-live.md",
+                    {
+                        "id": "tu20"
+                    }
+                ],
+                [
+                    "<x1\/>MyGame.UWP<x2\/>",
+                    "",
+                    "<x1\/>MyGame.UWP<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/platforms\/uwp\/xbox-live.md",
+                    {
+                        "id": "tu21"
+                    }
+                ],
+                [
+                    "In the console, type:",
+                    "",
+                    "In the console, type:",
+                    "\/D:\/repos\/rr\/source\/manual\/platforms\/uwp\/xbox-live.md",
+                    {
+                        "id": "tu22"
+                    }
+                ],
+                [
+                    "PM > Install-Package Microsoft.Xbox.Live.SDK.WinRT.UWP",
+                    "",
+                    "PM > Install-Package Microsoft.Xbox.Live.SDK.WinRT.UWP\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/platforms\/uwp\/xbox-live.md",
+                    {
+                        "id": "tu23"
+                    }
+                ],
+                [
+                    "Visual Studio adds the NuGet package to your project.",
+                    "",
+                    "Visual Studio adds the NuGet package to your project.",
+                    "\/D:\/repos\/rr\/source\/manual\/platforms\/uwp\/xbox-live.md",
+                    {
+                        "id": "tu24"
+                    }
+                ],
+                [
+                    "Make sure the package appears in the <g1>References<\/g1> list.",
+                    "",
+                    "Make sure the package appears in the <g1>References<\/g1> list.",
+                    "\/D:\/repos\/rr\/source\/manual\/platforms\/uwp\/xbox-live.md",
+                    {
+                        "id": "tu25"
+                    }
+                ],
+                [
+                    "<x1\/>Package in list<x2\/>",
+                    "",
+                    "<x1\/>Package in list<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/platforms\/uwp\/xbox-live.md",
+                    {
+                        "id": "tu26"
+                    }
+                ],
+                [
+                    "3.",
+                    "",
+                    "3.",
+                    "\/D:\/repos\/rr\/source\/manual\/platforms\/uwp\/xbox-live.md",
+                    {
+                        "id": "tu27"
+                    }
+                ],
+                [
+                    "Configure the UWP project",
+                    "",
+                    " Configure the UWP project",
+                    "\/D:\/repos\/rr\/source\/manual\/platforms\/uwp\/xbox-live.md",
+                    {
+                        "id": "tu27"
+                    }
+                ],
+                [
+                    "Delete <g1>MyGame.UWP.TemporaryKey.pfx<\/g1>.",
+                    "",
+                    "Delete <g1>MyGame.UWP.TemporaryKey.pfx<\/g1>.",
+                    "\/D:\/repos\/rr\/source\/manual\/platforms\/uwp\/xbox-live.md",
+                    {
+                        "id": "tu28"
+                    }
+                ],
+                [
+                    "Add <g1>xboxservices.config<\/g1> to your project.",
+                    "",
+                    "Add <g1>xboxservices.config<\/g1> to your project.",
+                    "\/D:\/repos\/rr\/source\/manual\/platforms\/uwp\/xbox-live.md",
+                    {
+                        "id": "tu29"
+                    }
+                ],
+                [
+                    "You can get this file from any Xbox Live SDK sample (eg the Achievements sample) for test purposes.",
+                    "",
+                    "You can get this file from any Xbox Live SDK sample (eg the Achievements sample) for test purposes.",
+                    "\/D:\/repos\/rr\/source\/manual\/platforms\/uwp\/xbox-live.md",
+                    {
+                        "id": "tu30"
+                    }
+                ],
+                [
+                    "When you want to publish the game, change the <g1>TitleId<\/g1> and <g2>Service config Id<\/g2> with the ones provided for your project.",
+                    "",
+                    " When you want to publish the game, change the <g1>TitleId<\/g1> and <g2>Service config Id<\/g2> with the ones provided for your project.",
+                    "\/D:\/repos\/rr\/source\/manual\/platforms\/uwp\/xbox-live.md",
+                    {
+                        "id": "tu30"
+                    }
+                ],
+                [
+                    "For details, see the Xbox Live documentation.",
+                    "",
+                    " For details, see the Xbox Live documentation.",
+                    "\/D:\/repos\/rr\/source\/manual\/platforms\/uwp\/xbox-live.md",
+                    {
+                        "id": "tu30"
+                    }
+                ],
+                [
+                    "In the <g1>xboxservices.config<\/g1> properties, under <g2>Build Action<\/g2>, select <g3>Content<\/g3>, and under <g4>Copy to Output Directory<\/g4>, select <g5>Always<\/g5>.",
+                    "",
+                    "In the <g1>xboxservices.config<\/g1> properties, under <g2>Build Action<\/g2>, select <g3>Content<\/g3>, and under <g4>Copy to Output Directory<\/g4>, select <g5>Always<\/g5>.",
+                    "\/D:\/repos\/rr\/source\/manual\/platforms\/uwp\/xbox-live.md",
+                    {
+                        "id": "tu31"
+                    }
+                ],
+                [
+                    "<x1\/>Properties<x2\/>",
+                    "",
+                    "<x1\/>Properties<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/platforms\/uwp\/xbox-live.md",
+                    {
+                        "id": "tu32"
+                    }
+                ],
+                [
+                    "Edit <g1>Package.appxmanifest<\/g1> with details relevant to your project.",
+                    "",
+                    "Edit <g1>Package.appxmanifest<\/g1> with details relevant to your project.",
+                    "\/D:\/repos\/rr\/source\/manual\/platforms\/uwp\/xbox-live.md",
+                    {
+                        "id": "tu33"
+                    }
+                ],
+                [
+                    "Again, you can use the manifest file from any Xbox Live SDK sample (eg the Achievements sample) for test purposes.",
+                    "",
+                    "Again, you can use the manifest file from any Xbox Live SDK sample (eg the Achievements sample) for test purposes.",
+                    "\/D:\/repos\/rr\/source\/manual\/platforms\/uwp\/xbox-live.md",
+                    {
+                        "id": "tu34"
+                    }
+                ],
+                [
+                    "If you associate your game with a store app, use the generated manifest file.",
+                    "",
+                    " If you associate your game with a store app, use the generated manifest file.",
+                    "\/D:\/repos\/rr\/source\/manual\/platforms\/uwp\/xbox-live.md",
+                    {
+                        "id": "tu34"
+                    }
+                ],
+                [
+                    "For details, see the Xbox Live documentation.",
+                    "",
+                    " For details, see the Xbox Live documentation.",
+                    "\/D:\/repos\/rr\/source\/manual\/platforms\/uwp\/xbox-live.md",
+                    {
+                        "id": "tu34"
+                    }
+                ],
+                [
+                    "Make sure the capability <g1>InternetClientServer<\/g1> is enabled.",
+                    "",
+                    "Make sure the capability <g1>InternetClientServer<\/g1> is enabled.",
+                    "\/D:\/repos\/rr\/source\/manual\/platforms\/uwp\/xbox-live.md",
+                    {
+                        "id": "tu35"
+                    }
+                ],
+                [
+                    "4.",
+                    "",
+                    "4.",
+                    "\/D:\/repos\/rr\/source\/manual\/platforms\/uwp\/xbox-live.md",
+                    {
+                        "id": "tu36"
+                    }
+                ],
+                [
+                    "Add user account scripts to your game",
+                    "",
+                    " Add user account scripts to your game",
+                    "\/D:\/repos\/rr\/source\/manual\/platforms\/uwp\/xbox-live.md",
+                    {
+                        "id": "tu36"
+                    }
+                ],
+                [
+                    "You need to enable Xbox Live capability in your game project without exposing the Xbox Live SDK.",
+                    "",
+                    "You need to enable Xbox Live capability in your game project without exposing the Xbox Live SDK.",
+                    "\/D:\/repos\/rr\/source\/manual\/platforms\/uwp\/xbox-live.md",
+                    {
+                        "id": "tu37"
+                    }
+                ],
+                [
+                    "As <g1>MyGame.UWP<\/g1> already references <g2>MyGame.Game<\/g2>, we can't reference it.",
+                    "",
+                    " As <g1>MyGame.UWP<\/g1> already references <g2>MyGame.Game<\/g2>, we can't reference it.",
+                    "\/D:\/repos\/rr\/source\/manual\/platforms\/uwp\/xbox-live.md",
+                    {
+                        "id": "tu37"
+                    }
+                ],
+                [
+                    "Instead, we can create an interface and implement it from the UWP project side.",
+                    "",
+                    " Instead, we can create an interface and implement it from the UWP project side.",
+                    "\/D:\/repos\/rr\/source\/manual\/platforms\/uwp\/xbox-live.md",
+                    {
+                        "id": "tu37"
+                    }
+                ],
+                [
+                    "<x1\/>!Note<x2\/>",
+                    "",
+                    "<x1\/>!Note<x2\/>\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/platforms\/uwp\/xbox-live.md",
+                    {
+                        "id": "tu38"
+                    }
+                ],
+                [
+                    "There are several ways to do this.",
+                    "",
+                    "There are several ways to do this.",
+                    "\/D:\/repos\/rr\/source\/manual\/platforms\/uwp\/xbox-live.md",
+                    {
+                        "id": "tu38"
+                    }
+                ],
+                [
+                    "This page explains one method.",
+                    "",
+                    " This page explains one method.",
+                    "\/D:\/repos\/rr\/source\/manual\/platforms\/uwp\/xbox-live.md",
+                    {
+                        "id": "tu38"
+                    }
+                ],
+                [
+                    "Add two interfaces to your game, <g1>IAccountManager<\/g1> and <g2>IConnectedAccount<\/g2>.",
+                    "",
+                    "Add two interfaces to your game, <g1>IAccountManager<\/g1> and <g2>IConnectedAccount<\/g2>.",
+                    "\/D:\/repos\/rr\/source\/manual\/platforms\/uwp\/xbox-live.md",
+                    {
+                        "id": "tu39"
+                    }
+                ],
+                [
+                    "On your UWP project (eg <g1>MyGame.UWP<\/g1>), implement the interfaces <g2>public class XboxAccount :",
+                    "",
+                    "On your UWP project (eg <g1>MyGame.UWP<\/g1>), implement the interfaces <g2>public class XboxAccount :",
+                    "\/D:\/repos\/rr\/source\/manual\/platforms\/uwp\/xbox-live.md",
+                    {
+                        "id": "tu40"
+                    }
+                ],
+                [
+                    "IConnectedAccount<\/g2> and <g3>public class XboxLiveAccountManager :",
+                    "",
+                    " IConnectedAccount<\/g2> and <g3>public class XboxLiveAccountManager :",
+                    "\/D:\/repos\/rr\/source\/manual\/platforms\/uwp\/xbox-live.md",
+                    {
+                        "id": "tu40"
+                    }
+                ],
+                [
+                    "IAccountManager<\/g3>.",
+                    "",
+                    " IAccountManager<\/g3>.",
+                    "\/D:\/repos\/rr\/source\/manual\/platforms\/uwp\/xbox-live.md",
+                    {
+                        "id": "tu40"
+                    }
+                ],
+                [
+                    "Add the account factory to your game so you can access it later from a game script.",
+                    "",
+                    "Add the account factory to your game so you can access it later from a game script.",
+                    "\/D:\/repos\/rr\/source\/manual\/platforms\/uwp\/xbox-live.md",
+                    {
+                        "id": "tu41"
+                    }
+                ],
+                [
+                    "In the <g1>MyGameMainPage.xaml.cs<\/g1>, add the following line:",
+                    "",
+                    " In the <g1>MyGameMainPage.xaml.cs<\/g1>, add the following line:",
+                    "\/D:\/repos\/rr\/source\/manual\/platforms\/uwp\/xbox-live.md",
+                    {
+                        "id": "tu41"
+                    }
+                ],
+                [
+                    "Game.Services.AddService(typeof(IAccountManager), new XboxLiveAccountManager());",
+                    "",
+                    "Game.Services.AddService(typeof(IAccountManager), new XboxLiveAccountManager());\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/platforms\/uwp\/xbox-live.md",
+                    {
+                        "id": "tu42"
+                    }
+                ],
+                [
+                    "<x1\/>References<x2\/>",
+                    "",
+                    "<x1\/>References<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/platforms\/uwp\/xbox-live.md",
+                    {
+                        "id": "tu43"
+                    }
+                ],
+                [
+                    "The final script should look like this at minimum:",
+                    "",
+                    "The final script should look like this at minimum:",
+                    "\/D:\/repos\/rr\/source\/manual\/platforms\/uwp\/xbox-live.md",
+                    {
+                        "id": "tu44"
+                    }
+                ],
+                [
+                    "public class LoginScript :",
+                    "",
+                    "    public class LoginScript :",
+                    "\/D:\/repos\/rr\/source\/manual\/platforms\/uwp\/xbox-live.md",
+                    {
+                        "id": "tu45"
+                    }
+                ],
+                [
+                    "AsyncScript",
+                    "",
+                    " AsyncScript\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/platforms\/uwp\/xbox-live.md",
+                    {
+                        "id": "tu45"
+                    }
+                ],
+                [
+                    "{",
+                    "",
+                    "    {\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/platforms\/uwp\/xbox-live.md",
+                    {
+                        "id": "tu45"
+                    }
+                ],
+                [
+                    "private IConnectedAccount account;",
+                    "",
+                    "        private IConnectedAccount account;\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/platforms\/uwp\/xbox-live.md",
+                    {
+                        "id": "tu45"
+                    }
+                ],
+                [
+                    "public override async Task Execute()",
+                    "",
+                    "\r\n        public override async Task Execute()\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/platforms\/uwp\/xbox-live.md",
+                    {
+                        "id": "tu45"
+                    }
+                ],
+                [
+                    "{",
+                    "",
+                    "        {\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/platforms\/uwp\/xbox-live.md",
+                    {
+                        "id": "tu45"
+                    }
+                ],
+                [
+                    "var accountMgr = Services.GetServiceAs<IAccountManager>();",
+                    "",
+                    "            var accountMgr = Services.GetServiceAs<IAccountManager>();\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/platforms\/uwp\/xbox-live.md",
+                    {
+                        "id": "tu45"
+                    }
+                ],
+                [
+                    "account = accountMgr?.CreateConnectedAccount();",
+                    "",
+                    "            account = accountMgr?.CreateConnectedAccount();\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/platforms\/uwp\/xbox-live.md",
+                    {
+                        "id": "tu45"
+                    }
+                ],
+                [
+                    "if (account == null)",
+                    "",
+                    "\t\t\t    if (account == null)\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/platforms\/uwp\/xbox-live.md",
+                    {
+                        "id": "tu45"
+                    }
+                ],
+                [
+                    "return;",
+                    "",
+                    "\t\t\t\t    return;\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/platforms\/uwp\/xbox-live.md",
+                    {
+                        "id": "tu45"
+                    }
+                ],
+                [
+                    "var result = account.LoginAsync();",
+                    "",
+                    "\r\n            var result = account.LoginAsync();\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/platforms\/uwp\/xbox-live.md",
+                    {
+                        "id": "tu45"
+                    }
+                ],
+                [
+                    "\/\/ TODO Add your code here!",
+                    "",
+                    "\r\n\t    \t\t\/\/ TODO Add your code here!\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/platforms\/uwp\/xbox-live.md",
+                    {
+                        "id": "tu45"
+                    }
+                ],
+                [
+                    "}",
+                    "",
+                    "        }\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/platforms\/uwp\/xbox-live.md",
+                    {
+                        "id": "tu45"
+                    }
+                ],
+                [
+                    "}",
+                    "",
+                    "    }\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/platforms\/uwp\/xbox-live.md",
+                    {
+                        "id": "tu45"
+                    }
+                ],
+                [
+                    "Now you can expose the <g1>xbox_live_user<\/g1> functionality and other classes in your game.",
+                    "",
+                    "Now you can expose the <g1>xbox_live_user<\/g1> functionality and other classes in your game.",
+                    "\/D:\/repos\/rr\/source\/manual\/platforms\/uwp\/xbox-live.md",
+                    {
+                        "id": "tu46"
+                    }
+                ],
+                [
+                    "<x1\/>Property Grid<x2\/>",
+                    "",
+                    "<x1\/>Property Grid<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/platforms\/uwp\/xbox-live.md",
+                    {
+                        "id": "tu47"
+                    }
+                ],
+                [
+                    "Sample project",
+                    "",
+                    "Sample project",
+                    "\/D:\/repos\/rr\/source\/manual\/platforms\/uwp\/xbox-live.md",
+                    {
+                        "id": "tu48"
+                    }
+                ],
+                [
+                    "<g1>Download a sample project<\/g1> with Xbox Live login functionality",
+                    "",
+                    "<g1>Download a sample project<\/g1> with Xbox Live login functionality",
+                    "\/D:\/repos\/rr\/source\/manual\/platforms\/uwp\/xbox-live.md",
+                    {
+                        "id": "tu49"
+                    }
+                ],
+                [
+                    "<x1\/>Sample project<x2\/>",
+                    "",
+                    "<x1\/>Sample project<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/platforms\/uwp\/xbox-live.md",
+                    {
+                        "id": "tu50"
+                    }
+                ],
+                [
+                    "See also",
+                    "",
+                    "See also",
+                    "\/D:\/repos\/rr\/source\/manual\/platforms\/uwp\/xbox-live.md",
+                    {
+                        "id": "tu51"
+                    }
+                ],
+                [
+                    "Platforms",
+                    "",
+                    "<g1>Platforms<\/g1>",
+                    "\/D:\/repos\/rr\/source\/manual\/platforms\/uwp\/xbox-live.md",
+                    {
+                        "id": "tu52"
+                    }
+                ]
+            ]
+        }
+    ],
+    "seg_enabled": false
+}

@@ -1,0 +1,775 @@
+{
+    "filename": "manual\\particles\\tutorials\\inheritance.md.xlf",
+    "files": [
+        {
+            "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/inheritance.md": [
+                [
+                    "Tutorial:",
+                    "",
+                    "Tutorial:",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/inheritance.md",
+                    {
+                        "id": "tu1"
+                    }
+                ],
+                [
+                    "Inheritance",
+                    "",
+                    " Inheritance",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/inheritance.md",
+                    {
+                        "id": "tu1"
+                    }
+                ],
+                [
+                    "<x1\/>Intermediate<x2\/>",
+                    "",
+                    "<x1\/>Intermediate<x2\/>\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/inheritance.md",
+                    {
+                        "id": "tu2"
+                    }
+                ],
+                [
+                    "<x3\/>Artist<x4\/>",
+                    "",
+                    "<x3\/>Artist<x4\/>\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/inheritance.md",
+                    {
+                        "id": "tu2"
+                    }
+                ],
+                [
+                    "<x5\/>Programmer<x6\/>",
+                    "",
+                    "<x5\/>Programmer<x6\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/inheritance.md",
+                    {
+                        "id": "tu2"
+                    }
+                ],
+                [
+                    "This tutorial explains how to create particles which inherit one or more attributes, such as position or color, from other particles.",
+                    "",
+                    "This tutorial explains how to create particles which inherit one or more attributes, such as position or color, from other particles.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/inheritance.md",
+                    {
+                        "id": "tu3"
+                    }
+                ],
+                [
+                    "Sample",
+                    "",
+                    "Sample",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/inheritance.md",
+                    {
+                        "id": "tu4"
+                    }
+                ],
+                [
+                    "To see some of the techniques described on this page implemented in a project, create a new <g1>Sample:",
+                    "",
+                    "To see some of the techniques described on this page implemented in a project, create a new <g1>Sample:",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/inheritance.md",
+                    {
+                        "id": "tu5"
+                    }
+                ],
+                [
+                    "Particles<\/g1> project and open the <g2>ChildParticles<\/g2> scene.",
+                    "",
+                    " Particles<\/g1> project and open the <g2>ChildParticles<\/g2> scene.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/inheritance.md",
+                    {
+                        "id": "tu5"
+                    }
+                ],
+                [
+                    "<x1\/>Particles sample project<x2\/>",
+                    "",
+                    "<x1\/>Particles sample project<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/inheritance.md",
+                    {
+                        "id": "tu6"
+                    }
+                ],
+                [
+                    "Inheriting position",
+                    "",
+                    "Inheriting position",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/inheritance.md",
+                    {
+                        "id": "tu7"
+                    }
+                ],
+                [
+                    "It helps if you think about inheritance in terms of parent and child particles.",
+                    "",
+                    "It helps if you think about inheritance in terms of parent and child particles.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/inheritance.md",
+                    {
+                        "id": "tu8"
+                    }
+                ],
+                [
+                    "For example, in the <g1>ChildParticles<\/g1> scene in the <g2>Sample:",
+                    "",
+                    "For example, in the <g1>ChildParticles<\/g1> scene in the <g2>Sample:",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/inheritance.md",
+                    {
+                        "id": "tu9"
+                    }
+                ],
+                [
+                    "Particles<\/g2> project, check out the <g3>Fireworks<\/g3> entity.",
+                    "",
+                    " Particles<\/g2> project, check out the <g3>Fireworks<\/g3> entity.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/inheritance.md",
+                    {
+                        "id": "tu9"
+                    }
+                ],
+                [
+                    "It contains two emitters.",
+                    "",
+                    "It contains two emitters.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/inheritance.md",
+                    {
+                        "id": "tu10"
+                    }
+                ],
+                [
+                    "Particles reference parent emitters by name, so in the first emitter you can see we've set the <g1>Emitter Name<\/g1> property.",
+                    "",
+                    " Particles reference parent emitters by name, so in the first emitter you can see we've set the <g1>Emitter Name<\/g1> property.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/inheritance.md",
+                    {
+                        "id": "tu10"
+                    }
+                ],
+                [
+                    "It's an optional name, but it's required if you want other emitters to be able to reference this emitter's particles.",
+                    "",
+                    " It's an optional name, but it's required if you want other emitters to be able to reference this emitter's particles.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/inheritance.md",
+                    {
+                        "id": "tu10"
+                    }
+                ],
+                [
+                    "In the second emitter we create a new initializer, <g1>Position from parent<\/g1>.",
+                    "",
+                    "In the second emitter we create a new initializer, <g1>Position from parent<\/g1>.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/inheritance.md",
+                    {
+                        "id": "tu11"
+                    }
+                ],
+                [
+                    "This lets us reference the first emitter's particles and use their position to initialize the child particles.",
+                    "",
+                    " This lets us reference the first emitter's particles and use their position to initialize the child particles.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/inheritance.md",
+                    {
+                        "id": "tu11"
+                    }
+                ],
+                [
+                    "In the <g2>Parent emitter<\/g2> attribute we put the first emitter's name (<g3>Parent<\/g3>).",
+                    "",
+                    " In the <g2>Parent emitter<\/g2> attribute we put the first emitter's name (<g3>Parent<\/g3>).",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/inheritance.md",
+                    {
+                        "id": "tu11"
+                    }
+                ],
+                [
+                    "This randomly assigns a parent particle for each child particle spawned and copy its position to the child particle.",
+                    "",
+                    " This randomly assigns a parent particle for each child particle spawned and copy its position to the child particle.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/inheritance.md",
+                    {
+                        "id": "tu11"
+                    }
+                ],
+                [
+                    "The <g1>Parent Offset<\/g1> seed matches fields when more than one attributes are inherited.",
+                    "",
+                    "The <g1>Parent Offset<\/g1> seed matches fields when more than one attributes are inherited.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/inheritance.md",
+                    {
+                        "id": "tu12"
+                    }
+                ],
+                [
+                    "For example, if you want to inherit both <g2>Position<\/g2> and <g3>Color<\/g3> from the same parent particle (chosen at random) you should make the <g4>Parent Offset<\/g4> seed the same.",
+                    "",
+                    " For example, if you want to inherit both <g2>Position<\/g2> and <g3>Color<\/g3> from the same parent particle (chosen at random) you should make the <g4>Parent Offset<\/g4> seed the same.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/inheritance.md",
+                    {
+                        "id": "tu12"
+                    }
+                ],
+                [
+                    "Alternatively, you can make the <g5>Parent Offset<\/g5> seed for both initializers different, in which case particles spawning from one parent's position can inherit their color from a different random particle.",
+                    "",
+                    " Alternatively, you can make the <g5>Parent Offset<\/g5> seed for both initializers different, in which case particles spawning from one parent's position can inherit their color from a different random particle.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/inheritance.md",
+                    {
+                        "id": "tu12"
+                    }
+                ],
+                [
+                    "Usually, you want to keep them the same, but in some cases you might want to mix them.",
+                    "",
+                    " Usually, you want to keep them the same, but in some cases you might want to mix them.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/inheritance.md",
+                    {
+                        "id": "tu12"
+                    }
+                ],
+                [
+                    "<x1\/>media\/particles-tutorials-inheritance-1.png<x2\/>",
+                    "",
+                    "<x1\/>media\/particles-tutorials-inheritance-1.png<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/inheritance.md",
+                    {
+                        "id": "tu13"
+                    }
+                ],
+                [
+                    "As you can see, this kind of inheritance doesn't control spawn count, maximum particles, or any other parameters, and is very random.",
+                    "",
+                    "As you can see, this kind of inheritance doesn't control spawn count, maximum particles, or any other parameters, and is very random.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/inheritance.md",
+                    {
+                        "id": "tu14"
+                    }
+                ],
+                [
+                    "For most effects it's sufficient, but sometimes you want more direct control over the particles.",
+                    "",
+                    " For most effects it's sufficient, but sometimes you want more direct control over the particles.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/inheritance.md",
+                    {
+                        "id": "tu14"
+                    }
+                ],
+                [
+                    "Controlled inheritance",
+                    "",
+                    "Controlled inheritance",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/inheritance.md",
+                    {
+                        "id": "tu15"
+                    }
+                ],
+                [
+                    "On occasion you will want to spawn a certain number of particles from a specific parent and have those particles only inherit attributes from the parent particle that spawned them.",
+                    "",
+                    "On occasion you will want to spawn a certain number of particles from a specific parent and have those particles only inherit attributes from the parent particle that spawned them.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/inheritance.md",
+                    {
+                        "id": "tu16"
+                    }
+                ],
+                [
+                    "To do this, choose a spawner for the child emitter from type <g1>From parent<\/g1>.",
+                    "",
+                    "To do this, choose a spawner for the child emitter from type <g1>From parent<\/g1>.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/inheritance.md",
+                    {
+                        "id": "tu17"
+                    }
+                ],
+                [
+                    "Fill in the parent emitter's name in the <g2>Parent emitter<\/g2> field.",
+                    "",
+                    " Fill in the parent emitter's name in the <g2>Parent emitter<\/g2> field.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/inheritance.md",
+                    {
+                        "id": "tu17"
+                    }
+                ],
+                [
+                    "The <g1>Spawn Control Group<\/g1> determines how the particles save their control information.",
+                    "",
+                    "The <g1>Spawn Control Group<\/g1> determines how the particles save their control information.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/inheritance.md",
+                    {
+                        "id": "tu18"
+                    }
+                ],
+                [
+                    "You need to assign the same control group on all initializers later in order to retrieve the spawning information.",
+                    "",
+                    " You need to assign the same control group on all initializers later in order to retrieve the spawning information.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/inheritance.md",
+                    {
+                        "id": "tu18"
+                    }
+                ],
+                [
+                    "There can be up to 4 control groups.",
+                    "",
+                    "There can be up to 4 control groups.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/inheritance.md",
+                    {
+                        "id": "tu19"
+                    }
+                ],
+                [
+                    "If you spawn particles based on different conditions, or spawn more than two different child particles from the same parent, assign them different control groups so they don't get mixed up.",
+                    "",
+                    " If you spawn particles based on different conditions, or spawn more than two different child particles from the same parent, assign them different control groups so they don't get mixed up.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/inheritance.md",
+                    {
+                        "id": "tu19"
+                    }
+                ],
+                [
+                    "The <g1>Particle Spawn Trigger<\/g1> is the triggering condition on the parent side, which determines if particles should be spawned.",
+                    "",
+                    "The <g1>Particle Spawn Trigger<\/g1> is the triggering condition on the parent side, which determines if particles should be spawned.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/inheritance.md",
+                    {
+                        "id": "tu20"
+                    }
+                ],
+                [
+                    "If you leave it as <g2>None<\/g2>, no particles are spawned, so set it to <g3>On Hit<\/g3> or <g4>Lifetime<\/g4>.",
+                    "",
+                    " If you leave it as <g2>None<\/g2>, no particles are spawned, so set it to <g3>On Hit<\/g3> or <g4>Lifetime<\/g4>.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/inheritance.md",
+                    {
+                        "id": "tu20"
+                    }
+                ],
+                [
+                    "<g1>On hit<\/g1> works for parent particles with a <g2>collider<\/g2> assigned, and triggers every time they hit the surface.",
+                    "",
+                    "<g1>On hit<\/g1> works for parent particles with a <g2>collider<\/g2> assigned, and triggers every time they hit the surface.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/inheritance.md",
+                    {
+                        "id": "tu21"
+                    }
+                ],
+                [
+                    "<g1>Lifetime<\/g1> is based on the parent particle's relative lifetime, and triggers every frame the lifetime is within the limits.",
+                    "",
+                    "<g1>Lifetime<\/g1> is based on the parent particle's relative lifetime, and triggers every frame the lifetime is within the limits.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/inheritance.md",
+                    {
+                        "id": "tu22"
+                    }
+                ],
+                [
+                    "There are two sliders to control from which point to which point particles should be spawned.",
+                    "",
+                    " There are two sliders to control from which point to which point particles should be spawned.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/inheritance.md",
+                    {
+                        "id": "tu22"
+                    }
+                ],
+                [
+                    "Alternatively, you can reverse them to reverse the spawning condition.",
+                    "",
+                    " Alternatively, you can reverse them to reverse the spawning condition.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/inheritance.md",
+                    {
+                        "id": "tu22"
+                    }
+                ],
+                [
+                    "For example, a particle with lifetime condition (0.9 - 1.0) only spawns child particles in the last 10% of its lifetime.",
+                    "",
+                    " For example, a particle with lifetime condition (0.9 - 1.0) only spawns child particles in the last 10% of its lifetime.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/inheritance.md",
+                    {
+                        "id": "tu22"
+                    }
+                ],
+                [
+                    "Finally, the <g1>Particles\/trigger<\/g1> determines how many particles are spawned each time the condition is met.",
+                    "",
+                    "Finally, the <g1>Particles\/trigger<\/g1> determines how many particles are spawned each time the condition is met.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/inheritance.md",
+                    {
+                        "id": "tu23"
+                    }
+                ],
+                [
+                    "For child emitters, it's good practice to control the maximum number of particles the emitter can have, especially for non-deterministic cases, such as the collision hit.",
+                    "",
+                    "For child emitters, it's good practice to control the maximum number of particles the emitter can have, especially for non-deterministic cases, such as the collision hit.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/inheritance.md",
+                    {
+                        "id": "tu24"
+                    }
+                ],
+                [
+                    "Determinism",
+                    "",
+                    "Determinism",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/inheritance.md",
+                    {
+                        "id": "tu25"
+                    }
+                ],
+                [
+                    "On the initializers, choose a <g1>Spawn Control Group<\/g1> corresponding to the spawner's control group.",
+                    "",
+                    "On the initializers, choose a <g1>Spawn Control Group<\/g1> corresponding to the spawner's control group.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/inheritance.md",
+                    {
+                        "id": "tu26"
+                    }
+                ],
+                [
+                    "This forces the initializers to only work for particles spawned with the triggering condition, skipping the rest (if more than one spawner is assigned).",
+                    "",
+                    " This forces the initializers to only work for particles spawned with the triggering condition, skipping the rest (if more than one spawner is assigned).",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/inheritance.md",
+                    {
+                        "id": "tu26"
+                    }
+                ],
+                [
+                    "Ribbons and trails",
+                    "",
+                    "Ribbons and trails",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/inheritance.md",
+                    {
+                        "id": "tu27"
+                    }
+                ],
+                [
+                    "<g1>Ribbon and trail renderers<\/g1> are a little more difficult to set up in the beginning, as they are dependent on spawn order.",
+                    "",
+                    "<g1>Ribbon and trail renderers<\/g1> are a little more difficult to set up in the beginning, as they are dependent on spawn order.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/inheritance.md",
+                    {
+                        "id": "tu28"
+                    }
+                ],
+                [
+                    "In case of parents, they also become dependent on the parent's spawn order.",
+                    "",
+                    " In case of parents, they also become dependent on the parent's spawn order.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/inheritance.md",
+                    {
+                        "id": "tu28"
+                    }
+                ],
+                [
+                    "Add a <g1>Spawn Order<\/g1> initializer to the parent.",
+                    "",
+                    "Add a <g1>Spawn Order<\/g1> initializer to the parent.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/inheritance.md",
+                    {
+                        "id": "tu29"
+                    }
+                ],
+                [
+                    "It will be used in the children particles.",
+                    "",
+                    " It will be used in the children particles.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/inheritance.md",
+                    {
+                        "id": "tu29"
+                    }
+                ],
+                [
+                    "On the child emitter, remove all spawners and add only one, <g1>From parent<\/g1>.",
+                    "",
+                    "On the child emitter, remove all spawners and add only one, <g1>From parent<\/g1>.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/inheritance.md",
+                    {
+                        "id": "tu30"
+                    }
+                ],
+                [
+                    "You want to control the spawning of the children particles so all particles can be properly grouped in a ribbon behind the parent particle.",
+                    "",
+                    " You want to control the spawning of the children particles so all particles can be properly grouped in a ribbon behind the parent particle.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/inheritance.md",
+                    {
+                        "id": "tu30"
+                    }
+                ],
+                [
+                    "If you add another spawner that adds random behavior to the system, the ribbons will connect in the wrong way.",
+                    "",
+                    " If you add another spawner that adds random behavior to the system, the ribbons will connect in the wrong way.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/inheritance.md",
+                    {
+                        "id": "tu30"
+                    }
+                ],
+                [
+                    "Set the triggering condition to <g2>Lifetime<\/g2>.",
+                    "",
+                    " Set the triggering condition to <g2>Lifetime<\/g2>.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/inheritance.md",
+                    {
+                        "id": "tu30"
+                    }
+                ],
+                [
+                    "On the <g1>child emitter<\/g1> side again, add an <g2>Order from parent<\/g2> initializer.",
+                    "",
+                    "On the <g1>child emitter<\/g1> side again, add an <g2>Order from parent<\/g2> initializer.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/inheritance.md",
+                    {
+                        "id": "tu31"
+                    }
+                ],
+                [
+                    "This assigns a spawning order to the particles, but also groups them by parent.",
+                    "",
+                    " This assigns a spawning order to the particles, but also groups them by parent.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/inheritance.md",
+                    {
+                        "id": "tu31"
+                    }
+                ],
+                [
+                    "If you set the <g3>Sort<\/g3> to use this order and assign a ribbon shape builder, you'll see how each trail is properly grouped behind the parent particle that spawned it.",
+                    "",
+                    " If you set the <g3>Sort<\/g3> to use this order and assign a ribbon shape builder, you'll see how each trail is properly grouped behind the parent particle that spawned it.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/inheritance.md",
+                    {
+                        "id": "tu31"
+                    }
+                ],
+                [
+                    "Circular behavior",
+                    "",
+                    "Circular behavior",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/inheritance.md",
+                    {
+                        "id": "tu32"
+                    }
+                ],
+                [
+                    "Particle emitters can inherit attributes circularly from each other, or even inherit attributes from particles in the same emitter.",
+                    "",
+                    "Particle emitters can inherit attributes circularly from each other, or even inherit attributes from particles in the same emitter.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/inheritance.md",
+                    {
+                        "id": "tu33"
+                    }
+                ],
+                [
+                    "This can produce random or \"swingy\" effects, but can be interesting.",
+                    "",
+                    " This can produce random or \"swingy\" effects, but can be interesting.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/inheritance.md",
+                    {
+                        "id": "tu33"
+                    }
+                ],
+                [
+                    "In the <g1>Colliding Particles<\/g1> particle entity (in the <g2>MainScene<\/g2> of the <g3>Sample:",
+                    "",
+                    "In the <g1>Colliding Particles<\/g1> particle entity (in the <g2>MainScene<\/g2> of the <g3>Sample:",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/inheritance.md",
+                    {
+                        "id": "tu34"
+                    }
+                ],
+                [
+                    "Particles<\/g3> project), you can see that particles are spawned on hit, but the parent emitter is the same.",
+                    "",
+                    " Particles<\/g3> project), you can see that particles are spawned on hit, but the parent emitter is the same.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/inheritance.md",
+                    {
+                        "id": "tu34"
+                    }
+                ],
+                [
+                    "This means that each time a particle hits the surface, it produces more of the same kind.",
+                    "",
+                    " This means that each time a particle hits the surface, it produces more of the same kind.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/inheritance.md",
+                    {
+                        "id": "tu34"
+                    }
+                ],
+                [
+                    "There are two important elements which allow this to happen.",
+                    "",
+                    " There are two important elements which allow this to happen.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/inheritance.md",
+                    {
+                        "id": "tu34"
+                    }
+                ],
+                [
+                    "First, we have two spawners.",
+                    "",
+                    "First, we have two spawners.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/inheritance.md",
+                    {
+                        "id": "tu35"
+                    }
+                ],
+                [
+                    "One spawns a small number of particles per second, which give us the initial elements to populate the system.",
+                    "",
+                    " One spawns a small number of particles per second, which give us the initial elements to populate the system.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/inheritance.md",
+                    {
+                        "id": "tu35"
+                    }
+                ],
+                [
+                    "The other spawner spawns more particles on hit and uses a control group.",
+                    "",
+                    " The other spawner spawns more particles on hit and uses a control group.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/inheritance.md",
+                    {
+                        "id": "tu35"
+                    }
+                ],
+                [
+                    "Second, we have two <g1>Position<\/g1> initializers.",
+                    "",
+                    "Second, we have two <g1>Position<\/g1> initializers.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/inheritance.md",
+                    {
+                        "id": "tu36"
+                    }
+                ],
+                [
+                    "The first assigns a position where we want the particles to appear.",
+                    "",
+                    " The first assigns a position where we want the particles to appear.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/inheritance.md",
+                    {
+                        "id": "tu36"
+                    }
+                ],
+                [
+                    "It works over all particles (even those spawned from parents), so if you leave it like this, it will fire more particles from the initial position every time they hit the surface.",
+                    "",
+                    " It works over all particles (even those spawned from parents), so if you leave it like this, it will fire more particles from the initial position every time they hit the surface.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/inheritance.md",
+                    {
+                        "id": "tu36"
+                    }
+                ],
+                [
+                    "The second initializer is <g1>Position from parent<\/g1> and initializes the particle positions using the same control group as the <g2>On hit<\/g2> spawner.",
+                    "",
+                    "The second initializer is <g1>Position from parent<\/g1> and initializes the particle positions using the same control group as the <g2>On hit<\/g2> spawner.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/inheritance.md",
+                    {
+                        "id": "tu37"
+                    }
+                ],
+                [
+                    "The <g3>Position from parent<\/g3> overwrites the positions for the particles with control group, leaving the particles spawned from the <g4>Per second<\/g4> spawner untouched.",
+                    "",
+                    " The <g3>Position from parent<\/g3> overwrites the positions for the particles with control group, leaving the particles spawned from the <g4>Per second<\/g4> spawner untouched.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/inheritance.md",
+                    {
+                        "id": "tu37"
+                    }
+                ],
+                [
+                    "This creates a small number of particles constantly coming from a single entry point and multiplying like an avalanche every time they hit the surface.",
+                    "",
+                    " This creates a small number of particles constantly coming from a single entry point and multiplying like an avalanche every time they hit the surface.",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/inheritance.md",
+                    {
+                        "id": "tu37"
+                    }
+                ],
+                [
+                    "See also",
+                    "",
+                    "See also",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/inheritance.md",
+                    {
+                        "id": "tu38"
+                    }
+                ],
+                [
+                    "Tutorial:",
+                    "",
+                    "<g1>Tutorial:",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/inheritance.md",
+                    {
+                        "id": "tu39"
+                    }
+                ],
+                [
+                    "Create a trail",
+                    "",
+                    " Create a trail<\/g1>",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/inheritance.md",
+                    {
+                        "id": "tu39"
+                    }
+                ],
+                [
+                    "Tutorial:",
+                    "",
+                    "<g1>Tutorial:",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/inheritance.md",
+                    {
+                        "id": "tu40"
+                    }
+                ],
+                [
+                    "Custom particles",
+                    "",
+                    " Custom particles<\/g1>",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/inheritance.md",
+                    {
+                        "id": "tu40"
+                    }
+                ],
+                [
+                    "Tutorial:",
+                    "",
+                    "<g1>Tutorial:",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/inheritance.md",
+                    {
+                        "id": "tu41"
+                    }
+                ],
+                [
+                    "Lasers and lightning",
+                    "",
+                    " Lasers and lightning<\/g1>",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/inheritance.md",
+                    {
+                        "id": "tu41"
+                    }
+                ],
+                [
+                    "Particles",
+                    "",
+                    "<g1>Particles<\/g1>",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/inheritance.md",
+                    {
+                        "id": "tu42"
+                    }
+                ],
+                [
+                    "Create particles",
+                    "",
+                    "<g1>Create particles<\/g1>",
+                    "\/D:\/repos\/rr\/source\/manual\/particles\/tutorials\/inheritance.md",
+                    {
+                        "id": "tu43"
+                    }
+                ]
+            ]
+        }
+    ],
+    "seg_enabled": false
+}

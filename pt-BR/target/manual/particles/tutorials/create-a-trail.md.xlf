@@ -1,0 +1,758 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" xmlns:okp="okapi-framework:xliff-extensions" its:version="2.0" version="1.2">
+<file datatype="x-text/x-markdown" okp:inputEncoding="UTF-8" original="/D:/repos/rr/source/manual/particles/tutorials/create-a-trail.md" source-language="en" target-language="pt">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en">Tutorial: Create a trail</source>
+<target xml:lang="pt">Tutorial: Create a trail</target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Intermediate<x id="2"/>
+<x id="3"/>Artist<x id="4"/>
+<x id="5"/>Programmer<x id="6"/></source>
+<target xml:lang="pt"><x id="1"/>Intermediate<x id="2"/>
+<x id="3"/>Artist<x id="4"/>
+<x id="5"/>Programmer<x id="6"/></target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">This tutorial demonstrates how to use particles to create a <g id="1">trail effect</g> for a sword swing.</source>
+<target xml:lang="pt">This tutorial demonstrates how to use particles to create a <g id="1">trail effect</g> for a sword swing.</target>
+</trans-unit>
+<group id="sd1_ssf7" resname="sub-filter:sd1">
+</group>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">1. Create a project</source>
+<target xml:lang="pt">1. Create a project</target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">In the Stride Launcher, click <g id="1">Start</g> and select <g id="2">New Game</g>.</source>
+<target xml:lang="pt">In the Stride Launcher, click <g id="1">Start</g> and select <g id="2">New Game</g>.</target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en">In the <g id="1">Create a new game</g> dialog, under Asset Packs, select <g id="2">Animated Models</g>. The Animated Models pack contains assets we'll be using in this example. (Note that we'll make our particle effect from scratch.)</source>
+<target xml:lang="pt">In the <g id="1">Create a new game</g> dialog, under Asset Packs, select <g id="2">Animated Models</g>. The Animated Models pack contains assets we'll be using in this example. (Note that we'll make our particle effect from scratch.)</target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Create a new game<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Create a new game<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en">Give the project a name (eg <g id="1">MyTrailEffect</g>) and click <g id="2">OK</g>. Game Studio loads a simple scene with a few entities.</source>
+<target xml:lang="pt">Give the project a name (eg <g id="1">MyTrailEffect</g>) and click <g id="2">OK</g>. Game Studio loads a simple scene with a few entities.</target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en">We don't need the <g id="1">Sphere</g> entity for this tutorial, so go ahead and delete it (select it and press <g id="2">Delete</g>).</source>
+<target xml:lang="pt">We don't need the <g id="1">Sphere</g> entity for this tutorial, so go ahead and delete it (select it and press <g id="2">Delete</g>).</target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en">2. Set up the models and animation</source>
+<target xml:lang="pt">2. Set up the models and animation</target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en">In the <g id="1">Asset View</g>, open the <g id="2">Models</g> folder and drag and drop the <g id="3">mannequinModel</g> into the scene. The mannequinModel contains a skeleton asset that we'll use for our sword slash animation.</source>
+<target xml:lang="pt">In the <g id="1">Asset View</g>, open the <g id="2">Models</g> folder and drag and drop the <g id="3">mannequinModel</g> into the scene. The mannequinModel contains a skeleton asset that we'll use for our sword slash animation.</target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en">With the <g id="1">mannequinModel</g> selected, in the <g id="2">Property Grid</g>, select <g id="3">Add component &gt; Animations</g>. This adds an Animation component to the model.</source>
+<target xml:lang="pt">With the <g id="1">mannequinModel</g> selected, in the <g id="2">Property Grid</g>, select <g id="3">Add component &gt; Animations</g>. This adds an Animation component to the model.</target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Add Animations<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Add Animations<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en">Under the <g id="1">Animations</g> component, click <x id="2"/>Green plus button<x id="3"/> (<g id="4">Add</g>).</source>
+<target xml:lang="pt">Under the <g id="1">Animations</g> component, click <x id="2"/>Green plus button<x id="3"/> (<g id="4">Add</g>).</target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Add animation<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Add animation<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en">Type a name for the animation.</source>
+<target xml:lang="pt">Type a name for the animation.</target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en">Next to <g id="1">Clip</g>, click <x id="2"/>Hand icon<x id="3"/> (<g id="4">Select an asset</g>).</source>
+<target xml:lang="pt">Next to <g id="1">Clip</g>, click <x id="2"/>Hand icon<x id="3"/> (<g id="4">Select an asset</g>).</target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Select an animation asset<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Select an animation asset<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en">Browse to the <g id="1">Animations</g> folder, select the <g id="2">Sword_R animation</g>, and click <g id="3">OK</g>. This is our right-to-left slash animation.</source>
+<target xml:lang="pt">Browse to the <g id="1">Animations</g> folder, select the <g id="2">Sword_R animation</g>, and click <g id="3">OK</g>. This is our right-to-left slash animation.</target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Select an animation asset<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Select an animation asset<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en">To play the animation at runtime, we need to add an <g id="1">animation script</g>. We can use the pre-built <g id="2">AnimationStart</g> script. In the <g id="3">Asset View</g> (bottom pane by default), click <g id="4">Add asset</g> and choose <g id="5">Script &gt; Animation start</g>.</source>
+<target xml:lang="pt">To play the animation at runtime, we need to add an <g id="1">animation script</g>. We can use the pre-built <g id="2">AnimationStart</g> script. In the <g id="3">Asset View</g> (bottom pane by default), click <g id="4">Add asset</g> and choose <g id="5">Script &gt; Animation start</g>.</target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Add animation script<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Add animation script<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en">Specify a name for the script and click <g id="1">Create script</g>.</source>
+<target xml:lang="pt">Specify a name for the script and click <g id="1">Create script</g>.</target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Create script<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Create script<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en">9a. If Game Studio asks if you want to save your script, click <g id="1">Save script</g>.</source>
+<target xml:lang="pt">9a. If Game Studio asks if you want to save your script, click <g id="1">Save script</g>.</target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en">9b. If Game Studio asks if you want to reload the assemblies, click <g id="1">Reload assemblies</g>.</source>
+<target xml:lang="pt">9b. If Game Studio asks if you want to reload the assemblies, click <g id="1">Reload assemblies</g>.</target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en">With the <g id="1">mannequinModel</g> selected, in the <g id="2">Property Grid</g>, click <g id="3">Add component</g> and select the <g id="4">AnimationStart</g> script.</source>
+<target xml:lang="pt">With the <g id="1">mannequinModel</g> selected, in the <g id="2">Property Grid</g>, click <g id="3">Add component</g> and select the <g id="4">AnimationStart</g> script.</target>
+</trans-unit>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Add AnimationStart script<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Add AnimationStart script<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu29" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>!Note<x id="2"/>
+If the animation script isn't in the list of components, in the taskbar, save your project and click <g id="3">Reload game assemblies and update scripts</g>.</source>
+<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
+If the animation script isn't in the list of components, in the taskbar, save your project and click <g id="3">Reload game assemblies and update scripts</g>.</target>
+</trans-unit>
+<trans-unit id="tu30" xml:space="preserve">
+<source xml:lang="en">Under the <g id="1">Animation</g> component, under <g id="2">Item 0</g>, click <x id="3"/>Hand icon<x id="4"/> (<g id="5">Select an asset</g>).</source>
+<target xml:lang="pt">Under the <g id="1">Animation</g> component, under <g id="2">Item 0</g>, click <x id="3"/>Hand icon<x id="4"/> (<g id="5">Select an asset</g>).</target>
+</trans-unit>
+<trans-unit id="tu31" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Select an animation asset<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Select an animation asset<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu32" xml:space="preserve">
+<source xml:lang="en">Browse to the <g id="1">Animations</g> folder and select the <g id="2">Sword_R animation</g> again.</source>
+<target xml:lang="pt">Browse to the <g id="1">Animations</g> folder and select the <g id="2">Sword_R animation</g> again.</target>
+</trans-unit>
+<trans-unit id="tu33" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Select an animation asset<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Select an animation asset<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu34" xml:space="preserve">
+<source xml:lang="en">Now let's give the mannequin a weapon. In the <g id="1">Asset View</g>, browse to the <g id="2">Models</g> folder and drag the <g id="3">SwordModel</g> to the mannequinModel in the Entity Tree. This makes the SwordModel a child entity of the <g id="4">mannequinModel</g>.</source>
+<target xml:lang="pt">Now let's give the mannequin a weapon. In the <g id="1">Asset View</g>, browse to the <g id="2">Models</g> folder and drag the <g id="3">SwordModel</g> to the mannequinModel in the Entity Tree. This makes the SwordModel a child entity of the <g id="4">mannequinModel</g>.</target>
+</trans-unit>
+<trans-unit id="tu35" xml:space="preserve">
+<source xml:lang="en">In the Entity Tree, expand <g id="1">mannequinModel</g> to see its child entities, and select <g id="2">SwordModel</g>.</source>
+<target xml:lang="pt">In the Entity Tree, expand <g id="1">mannequinModel</g> to see its child entities, and select <g id="2">SwordModel</g>.</target>
+</trans-unit>
+<trans-unit id="tu36" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>SwordModel child entity<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>SwordModel child entity<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu37" xml:space="preserve">
+<source xml:lang="en">With the in the <g id="1">Property Grid</g>, click <g id="2">Add component</g> and select <g id="3">Model Node Link</g>. This is called a <g id="4">Bone Link</g> in some versions of Stride.</source>
+<target xml:lang="pt">With the in the <g id="1">Property Grid</g>, click <g id="2">Add component</g> and select <g id="3">Model Node Link</g>. This is called a <g id="4">Bone Link</g> in some versions of Stride.</target>
+</trans-unit>
+<trans-unit id="tu38" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Add Model Node Link<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Add Model Node Link<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu39" xml:space="preserve">
+<source xml:lang="en">We can use this to link the SwordModel to a point in the mannequinModel skeleton. There's no need to specify a target, as the entity uses its parent entity (<g id="1">mannequinModel</g>) by default.</source>
+<target xml:lang="pt">We can use this to link the SwordModel to a point in the mannequinModel skeleton. There's no need to specify a target, as the entity uses its parent entity (<g id="1">mannequinModel</g>) by default.</target>
+</trans-unit>
+<trans-unit id="tu40" xml:space="preserve">
+<source xml:lang="en">For more information, see the <g id="1">Model node links</g> page.</source>
+<target xml:lang="pt">For more information, see the <g id="1">Model node links</g> page.</target>
+</trans-unit>
+<trans-unit id="tu41" xml:space="preserve">
+<source xml:lang="en">Under <g id="1">Model Node Link</g>, in the <g id="2">Node Name</g> (or <g id="3">Bone</g>) field, select <g id="4">weapon_bone_R</g>. This attaches the model to the point in the skeleton that uses a weapon in the right hand.</source>
+<target xml:lang="pt">Under <g id="1">Model Node Link</g>, in the <g id="2">Node Name</g> (or <g id="3">Bone</g>) field, select <g id="4">weapon_bone_R</g>. This attaches the model to the point in the skeleton that uses a weapon in the right hand.</target>
+</trans-unit>
+<trans-unit id="tu42" xml:space="preserve">
+<source xml:lang="en">Let's see how everything looks so far. Click <g id="1">Play</g> to run the game and check it out. Remember you can use the mouse and WASD keys to move the camera and see the animation from different perspectives.</source>
+<target xml:lang="pt">Let's see how everything looks so far. Click <g id="1">Play</g> to run the game and check it out. Remember you can use the mouse and WASD keys to move the camera and see the animation from different perspectives.</target>
+</trans-unit>
+<group id="sd1_ssf8" resname="sub-filter:sd1">
+</group>
+<trans-unit id="tu43" xml:space="preserve">
+<source xml:lang="en">We have a swinging sword animation. Next, let's add a trail effect.</source>
+<target xml:lang="pt">We have a swinging sword animation. Next, let's add a trail effect.</target>
+</trans-unit>
+<trans-unit id="tu44" xml:space="preserve">
+<source xml:lang="en">3. Create a basic trail</source>
+<target xml:lang="pt">3. Create a basic trail</target>
+</trans-unit>
+<trans-unit id="tu45" xml:space="preserve">
+<source xml:lang="en">First we'll build a basic trail, just to see how it looks.</source>
+<target xml:lang="pt">First we'll build a basic trail, just to see how it looks.</target>
+</trans-unit>
+<trans-unit id="tu46" xml:space="preserve">
+<source xml:lang="en">In Game Studio, select the <g id="1">SwordModel</g>. In the <g id="2">Property Grid</g>, click <g id="3">Add component</g> and select <g id="4">Particle System</g>.</source>
+<target xml:lang="pt">In Game Studio, select the <g id="1">SwordModel</g>. In the <g id="2">Property Grid</g>, click <g id="3">Add component</g> and select <g id="4">Particle System</g>.</target>
+</trans-unit>
+<trans-unit id="tu47" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Add Particle System<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Add Particle System<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu48" xml:space="preserve">
+<source xml:lang="en">This adds a particle system component to the model, which we'll use to build a trail effect.</source>
+<target xml:lang="pt">This adds a particle system component to the model, which we'll use to build a trail effect.</target>
+</trans-unit>
+<trans-unit id="tu49" xml:space="preserve">
+<source xml:lang="en">Click <g id="1">Source</g> to expand its properties.</source>
+<target xml:lang="pt">Click <g id="1">Source</g> to expand its properties.</target>
+</trans-unit>
+<trans-unit id="tu50" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Expand Source properties<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Expand Source properties<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu51" xml:space="preserve">
+<source xml:lang="en">Next to <g id="1">Emitters</g>, click <x id="2"/>Green plus button<x id="3"/> (<g id="4">Add</g>). This adds a new particle emitter.</source>
+<target xml:lang="pt">Next to <g id="1">Emitters</g>, click <x id="2"/>Green plus button<x id="3"/> (<g id="4">Add</g>). This adds a new particle emitter.</target>
+</trans-unit>
+<trans-unit id="tu52" xml:space="preserve">
+<source xml:lang="en">Under the emitter properties, set the <g id="1">Shape</g> to <g id="2">Trail</g>.</source>
+<target xml:lang="pt">Under the emitter properties, set the <g id="1">Shape</g> to <g id="2">Trail</g>.</target>
+</trans-unit>
+<trans-unit id="tu53" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Set Shape to Trail<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Set Shape to Trail<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu54" xml:space="preserve">
+<source xml:lang="en">Unfortunately, we need to make a brief detour due to a bug in Stride. Under the <g id="1">Shape</g> properties, set the <g id="2">Axis</g> to <g id="3">Center</g>. (The shape should really be set to Edge, but the Edge and Center settings are reversed in the UI. This will be fixed in Stride 1.9.3.)</source>
+<target xml:lang="pt">Unfortunately, we need to make a brief detour due to a bug in Stride. Under the <g id="1">Shape</g> properties, set the <g id="2">Axis</g> to <g id="3">Center</g>. (The shape should really be set to Edge, but the Edge and Center settings are reversed in the UI. This will be fixed in Stride 1.9.3.)</target>
+</trans-unit>
+<trans-unit id="tu55" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Set Axis to Center<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Set Axis to Center<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu56" xml:space="preserve">
+<source xml:lang="en">Next to <g id="1">Spawners</g>, click <x id="2"/>Green plus button<x id="3"/> (<g id="4">Add</g>) and select <g id="5">Per frame</g>.</source>
+<target xml:lang="pt">Next to <g id="1">Spawners</g>, click <x id="2"/>Green plus button<x id="3"/> (<g id="4">Add</g>) and select <g id="5">Per frame</g>.</target>
+</trans-unit>
+<trans-unit id="tu57" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Add per-frame spawner<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Add per-frame spawner<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu58" xml:space="preserve">
+<source xml:lang="en">This adds a per-frame spawner to the emitter, which spawns X number of particles per frame (as opposed to, say, per second).</source>
+<target xml:lang="pt">This adds a per-frame spawner to the emitter, which spawns X number of particles per frame (as opposed to, say, per second).</target>
+</trans-unit>
+<trans-unit id="tu59" xml:space="preserve">
+<source xml:lang="en">Next to <g id="1">Initializers</g>, click <x id="2"/>Green plus button<x id="3"/> (<g id="4">Add</g>) and select <g id="5">Velocity</g>.</source>
+<target xml:lang="pt">Next to <g id="1">Initializers</g>, click <x id="2"/>Green plus button<x id="3"/> (<g id="4">Add</g>) and select <g id="5">Velocity</g>.</target>
+</trans-unit>
+<trans-unit id="tu60" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Add velocity initializer<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Add velocity initializer<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu61" xml:space="preserve">
+<source xml:lang="en">This adds a velocity initializer to the emitter.</source>
+<target xml:lang="pt">This adds a velocity initializer to the emitter.</target>
+</trans-unit>
+<trans-unit id="tu62" xml:space="preserve">
+<source xml:lang="en">At this point, you can grab the mannequin and move it around the scene to see how the particles behave. They look like a cloud of blocky smoke.</source>
+<target xml:lang="pt">At this point, you can grab the mannequin and move it around the scene to see how the particles behave. They look like a cloud of blocky smoke.</target>
+</trans-unit>
+<trans-unit id="tu63" xml:space="preserve">
+<source xml:lang="en">Under the velocity initializer, set both the <g id="1">Velocity min</g> and <g id="2">Velocity max</g> values to <g id="3">0, 5, 0</g>.</source>
+<target xml:lang="pt">Under the velocity initializer, set both the <g id="1">Velocity min</g> and <g id="2">Velocity max</g> values to <g id="3">0, 5, 0</g>.</target>
+</trans-unit>
+<trans-unit id="tu64" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Set velocity min and max<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Set velocity min and max<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu65" xml:space="preserve">
+<source xml:lang="en">This restricts the particles to the Y axis, like an infinitely thin sheet of paper.</source>
+<target xml:lang="pt">This restricts the particles to the Y axis, like an infinitely thin sheet of paper.</target>
+</trans-unit>
+<trans-unit id="tu66" xml:space="preserve">
+<source xml:lang="en">Next to <g id="1">Initializers</g>, click <x id="2"/>Green plus button<x id="3"/> (<g id="4">Add</g>) and select <g id="5">Direction</g>.</source>
+<target xml:lang="pt">Next to <g id="1">Initializers</g>, click <x id="2"/>Green plus button<x id="3"/> (<g id="4">Add</g>) and select <g id="5">Direction</g>.</target>
+</trans-unit>
+<trans-unit id="tu67" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Add direction initializer<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Add direction initializer<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu68" xml:space="preserve">
+<source xml:lang="en">This adds a direction initializer to the emitter.</source>
+<target xml:lang="pt">This adds a direction initializer to the emitter.</target>
+</trans-unit>
+<trans-unit id="tu69" xml:space="preserve">
+<source xml:lang="en">Expand the direction initializer to view the properties. Set both the <g id="1">Direction min</g> and <g id="2">Direction max</g> to <g id="3">0, 0, -1</g>. This aligns the trail with the direction of the swing animation.</source>
+<target xml:lang="pt">Expand the direction initializer to view the properties. Set both the <g id="1">Direction min</g> and <g id="2">Direction max</g> to <g id="3">0, 0, -1</g>. This aligns the trail with the direction of the swing animation.</target>
+</trans-unit>
+<trans-unit id="tu70" xml:space="preserve">
+<source xml:lang="en">Run the game to see how the particles look with the sword-swinging animation.</source>
+<target xml:lang="pt">Run the game to see how the particles look with the sword-swinging animation.</target>
+</trans-unit>
+<group id="sd1_ssf9" resname="sub-filter:sd1">
+</group>
+<trans-unit id="tu71" xml:space="preserve">
+<source xml:lang="en">We have a trail, but it doesn't look too good yet. It's too long, it's a single block of color, its particles interconnect strangely, and it never disappears.</source>
+<target xml:lang="pt">We have a trail, but it doesn't look too good yet. It's too long, it's a single block of color, its particles interconnect strangely, and it never disappears.</target>
+</trans-unit>
+<trans-unit id="tu72" xml:space="preserve">
+<source xml:lang="en">4. Sort the particles</source>
+<target xml:lang="pt">4. Sort the particles</target>
+</trans-unit>
+<trans-unit id="tu73" xml:space="preserve">
+<source xml:lang="en">Because the particles are rendered as billboards, the segments of the trail interconnect strangely. To create a proper trail effect, we need to sort the particles into an order by adding a <g id="1">spawn order initializer</g>.</source>
+<target xml:lang="pt">Because the particles are rendered as billboards, the segments of the trail interconnect strangely. To create a proper trail effect, we need to sort the particles into an order by adding a <g id="1">spawn order initializer</g>.</target>
+</trans-unit>
+<trans-unit id="tu74" xml:space="preserve">
+<source xml:lang="en">In the SwordModel properties, under <g id="1">Particle System &gt; Source &gt; Emitters</g>, next to <g id="2">Initializers</g>, click <x id="3"/>Green plus button<x id="4"/> (<g id="5">Add</g>) and select <g id="6">Spawn Order</g>.</source>
+<target xml:lang="pt">In the SwordModel properties, under <g id="1">Particle System &gt; Source &gt; Emitters</g>, next to <g id="2">Initializers</g>, click <x id="3"/>Green plus button<x id="4"/> (<g id="5">Add</g>) and select <g id="6">Spawn Order</g>.</target>
+</trans-unit>
+<trans-unit id="tu75" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>!Note<x id="2"/>
+Make sure you don't select <g id="3">Spawn Order (Parent)</g> or <g id="4">Spawn Order (Group)</g>.</source>
+<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
+Make sure you don't select <g id="3">Spawn Order (Parent)</g> or <g id="4">Spawn Order (Group)</g>.</target>
+</trans-unit>
+<trans-unit id="tu76" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Add spawn-order initializer<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Add spawn-order initializer<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu77" xml:space="preserve">
+<source xml:lang="en">This adds a spawn order initializer to the emitter. It doesn't have any properties, but it gives the particles a SpawnID we can sort them by.</source>
+<target xml:lang="pt">This adds a spawn order initializer to the emitter. It doesn't have any properties, but it gives the particles a SpawnID we can sort them by.</target>
+</trans-unit>
+<trans-unit id="tu78" xml:space="preserve">
+<source xml:lang="en">Under <g id="1">Emitters</g>, under <g id="2">Sorting</g>, choose <g id="3">ByOrder</g>.</source>
+<target xml:lang="pt">Under <g id="1">Emitters</g>, under <g id="2">Sorting</g>, choose <g id="3">ByOrder</g>.</target>
+</trans-unit>
+<trans-unit id="tu79" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Sort by order<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Sort by order<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu80" xml:space="preserve">
+<source xml:lang="en">Under <g id="1">Initalizers</g>, under the <g id="2">Velocity</g> initializer, change both the <g id="3">Velocity min</g> and <g id="4">Velocity max</g> values to <g id="5">0,0.5,0</g>.</source>
+<target xml:lang="pt">Under <g id="1">Initalizers</g>, under the <g id="2">Velocity</g> initializer, change both the <g id="3">Velocity min</g> and <g id="4">Velocity max</g> values to <g id="5">0,0.5,0</g>.</target>
+</trans-unit>
+<trans-unit id="tu81" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Change velocity<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Change velocity<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu82" xml:space="preserve">
+<source xml:lang="en">Run the game.</source>
+<target xml:lang="pt">Run the game.</target>
+</trans-unit>
+<group id="sd1_ssf10" resname="sub-filter:sd1">
+</group>
+<trans-unit id="tu83" xml:space="preserve">
+<source xml:lang="en">Now the particles move cohesively.</source>
+<target xml:lang="pt">Now the particles move cohesively.</target>
+</trans-unit>
+<trans-unit id="tu84" xml:space="preserve">
+<source xml:lang="en">5. Change the length</source>
+<target xml:lang="pt">5. Change the length</target>
+</trans-unit>
+<trans-unit id="tu85" xml:space="preserve">
+<source xml:lang="en">In the SwordModel properties, under <g id="1">Particle System &gt; Source &gt; Emitters</g>, change the <g id="2">Lifespan</g> to <g id="3">0.2, 0.2</g>.</source>
+<target xml:lang="pt">In the SwordModel properties, under <g id="1">Particle System &gt; Source &gt; Emitters</g>, change the <g id="2">Lifespan</g> to <g id="3">0.2, 0.2</g>.</target>
+</trans-unit>
+<trans-unit id="tu86" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Change emitter lifespan<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Change emitter lifespan<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu87" xml:space="preserve">
+<source xml:lang="en">Move the mannequin around the scene and notice how the trails extinguish more quickly.</source>
+<target xml:lang="pt">Move the mannequin around the scene and notice how the trails extinguish more quickly.</target>
+</trans-unit>
+<trans-unit id="tu88" xml:space="preserve">
+<source xml:lang="en">6. Add a texture</source>
+<target xml:lang="pt">6. Add a texture</target>
+</trans-unit>
+<trans-unit id="tu89" xml:space="preserve">
+<source xml:lang="en">To fix the color, we'll give the particles a "swoosh" texture:</source>
+<target xml:lang="pt">To fix the color, we'll give the particles a "swoosh" texture:</target>
+</trans-unit>
+<trans-unit id="tu90" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Swoosh.png texture<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Swoosh.png texture<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu91" xml:space="preserve">
+<source xml:lang="en">Save the texture image above (<g id="1">swoosh.png</g>) to disk.</source>
+<target xml:lang="pt">Save the texture image above (<g id="1">swoosh.png</g>) to disk.</target>
+</trans-unit>
+<trans-unit id="tu92" xml:space="preserve">
+<source xml:lang="en">Import it into the project. To do this, in the <g id="1">Asset View</g>, click <g id="2">Add asset &gt; Textures &gt; Color</g> and select <g id="3">swoosh.png</g>.</source>
+<target xml:lang="pt">Import it into the project. To do this, in the <g id="1">Asset View</g>, click <g id="2">Add asset &gt; Textures &gt; Color</g> and select <g id="3">swoosh.png</g>.</target>
+</trans-unit>
+<trans-unit id="tu93" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Add a texture<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Add a texture<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu94" xml:space="preserve">
+<source xml:lang="en">In the <g id="1">SwordModel</g> properties, expand <g id="2">Emitters &gt; Material</g>. Click <x id="3"/>Hand icon<x id="4"/> (<g id="5">Select an asset</g>). Browse to the <g id="6">Textures</g> folder and select <g id="7">swoosh.png</g>.</source>
+<target xml:lang="pt">In the <g id="1">SwordModel</g> properties, expand <g id="2">Emitters &gt; Material</g>. Click <x id="3"/>Hand icon<x id="4"/> (<g id="5">Select an asset</g>). Browse to the <g id="6">Textures</g> folder and select <g id="7">swoosh.png</g>.</target>
+</trans-unit>
+<trans-unit id="tu95" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Add material texture<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Add material texture<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu96" xml:space="preserve">
+<source xml:lang="en">Set the <g id="1">Alpha-Add</g> bar to <g id="2">1</g>, so it's 100% emissive.</source>
+<target xml:lang="pt">Set the <g id="1">Alpha-Add</g> bar to <g id="2">1</g>, so it's 100% emissive.</target>
+</trans-unit>
+<trans-unit id="tu97" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Alpha add bar<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Alpha add bar<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu98" xml:space="preserve">
+<source xml:lang="en">Under the <g id="1">Particle emitter</g> properties, expand <g id="2">Shape</g> and set <g id="3">UV Coords</g> to <g id="4">Stretched</g> and <g id="5">UV Factor</g> to <g id="6">1</g>.</source>
+<target xml:lang="pt">Under the <g id="1">Particle emitter</g> properties, expand <g id="2">Shape</g> and set <g id="3">UV Coords</g> to <g id="4">Stretched</g> and <g id="5">UV Factor</g> to <g id="6">1</g>.</target>
+</trans-unit>
+<trans-unit id="tu99" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Set UV<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Set UV<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu100" xml:space="preserve">
+<source xml:lang="en">Expand <g id="1">UV Rotate</g>. Under <g id="2">Clockwise</g>, select 90 degrees. This rotates the texture 90 degrees clockwise, so the "swoosh" lines point in the right direction.</source>
+<target xml:lang="pt">Expand <g id="1">UV Rotate</g>. Under <g id="2">Clockwise</g>, select 90 degrees. This rotates the texture 90 degrees clockwise, so the "swoosh" lines point in the right direction.</target>
+</trans-unit>
+<trans-unit id="tu101" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Rotate material<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Rotate material<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu102" xml:space="preserve">
+<source xml:lang="en">Run the game.</source>
+<target xml:lang="pt">Run the game.</target>
+</trans-unit>
+<group id="sd1_ssf11" resname="sub-filter:sd1">
+</group>
+<trans-unit id="tu103" xml:space="preserve">
+<source xml:lang="en">We're getting closer. But the trail doesn't disappear, so it looks like it's attached to the sword. We need to make the effect appear when the mannequin swings, then disappear at the end of the swing.</source>
+<target xml:lang="pt">We're getting closer. But the trail doesn't disappear, so it looks like it's attached to the sword. We need to make the effect appear when the mannequin swings, then disappear at the end of the swing.</target>
+</trans-unit>
+<trans-unit id="tu104" xml:space="preserve">
+<source xml:lang="en">7. Make the particle effect a prefab</source>
+<target xml:lang="pt">7. Make the particle effect a prefab</target>
+</trans-unit>
+<trans-unit id="tu105" xml:space="preserve">
+<source xml:lang="en">So far, we've created a particle effect by attaching it as a component to the sword. Now we're going to separate the effect from the sword and make it an independent entity we can turn on and off when we like. To do this, we'll create a prefab. For more information about prefabs, see the <g id="1">prefab documentation</g>.</source>
+<target xml:lang="pt">So far, we've created a particle effect by attaching it as a component to the sword. Now we're going to separate the effect from the sword and make it an independent entity we can turn on and off when we like. To do this, we'll create a prefab. For more information about prefabs, see the <g id="1">prefab documentation</g>.</target>
+</trans-unit>
+<trans-unit id="tu106" xml:space="preserve">
+<source xml:lang="en">Right-click the <g id="1">SwordModel</g> and select <g id="2">Create prefab from selection</g>.</source>
+<target xml:lang="pt">Right-click the <g id="1">SwordModel</g> and select <g id="2">Create prefab from selection</g>.</target>
+</trans-unit>
+<trans-unit id="tu107" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Create prefab from selection<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Create prefab from selection<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu108" xml:space="preserve">
+<source xml:lang="en">Game Studio creates a prefab from the SwordModel and adds it to the Asset View. By creating a prefab from the selection, we can quickly copy over the options we've set up so far.</source>
+<target xml:lang="pt">Game Studio creates a prefab from the SwordModel and adds it to the Asset View. By creating a prefab from the selection, we can quickly copy over the options we've set up so far.</target>
+</trans-unit>
+<trans-unit id="tu109" xml:space="preserve">
+<source xml:lang="en">We don't want the SwordModel itself to be a prefab — we just used it as a template to create the prefab from. It should be separate from our new particle effect prefab, so right-click it and select <g id="1">Break link to prefab</g>.</source>
+<target xml:lang="pt">We don't want the SwordModel itself to be a prefab — we just used it as a template to create the prefab from. It should be separate from our new particle effect prefab, so right-click it and select <g id="1">Break link to prefab</g>.</target>
+</trans-unit>
+<trans-unit id="tu110" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Break link to prefab<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Break link to prefab<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu111" xml:space="preserve">
+<source xml:lang="en">Because naming things properly makes everything easier, rename the prefab <g id="1">SwordTrail</g>. To do this, in the <g id="2">Asset View</g>, right-click the <g id="3">SwordModel</g> prefab, select <g id="4">Rename</g>, and type <g id="5">SwordTrail</g>.</source>
+<target xml:lang="pt">Because naming things properly makes everything easier, rename the prefab <g id="1">SwordTrail</g>. To do this, in the <g id="2">Asset View</g>, right-click the <g id="3">SwordModel</g> prefab, select <g id="4">Rename</g>, and type <g id="5">SwordTrail</g>.</target>
+</trans-unit>
+<trans-unit id="tu112" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Rename prefab<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Rename prefab<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu113" xml:space="preserve">
+<source xml:lang="en">Double-click the <g id="1">SwordTrail</g> prefab to open it in the Prefab Editor. This is where we'll customize the prefab.</source>
+<target xml:lang="pt">Double-click the <g id="1">SwordTrail</g> prefab to open it in the Prefab Editor. This is where we'll customize the prefab.</target>
+</trans-unit>
+<trans-unit id="tu114" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Prefab Editor<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Prefab Editor<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu115" xml:space="preserve">
+<source xml:lang="en">The prefab contains just one entity, SwordModel. It's not going to be a model for much longer, so let's rename this entity <g id="1">SwordTrail</g> (the same as the prefab it belongs to).</source>
+<target xml:lang="pt">The prefab contains just one entity, SwordModel. It's not going to be a model for much longer, so let's rename this entity <g id="1">SwordTrail</g> (the same as the prefab it belongs to).</target>
+</trans-unit>
+<trans-unit id="tu116" xml:space="preserve">
+<source xml:lang="en">Remove the <g id="1">Model</g> and the <g id="2">Model Node Link</g> (or <g id="3">Bone Link</g>) components from the <g id="4">SwordTrail</g> entity. We don't need them any more — this prefab will just be a particle effect.</source>
+<target xml:lang="pt">Remove the <g id="1">Model</g> and the <g id="2">Model Node Link</g> (or <g id="3">Bone Link</g>) components from the <g id="4">SwordTrail</g> entity. We don't need them any more — this prefab will just be a particle effect.</target>
+</trans-unit>
+<trans-unit id="tu117" xml:space="preserve">
+<source xml:lang="en">Likewise, under <g id="1">Particle System &gt; Source &gt; Emitters &gt; Initializers</g>, delete the <g id="2">Velocity</g> initializer. For now, we want the prefab effect to be static.</source>
+<target xml:lang="pt">Likewise, under <g id="1">Particle System &gt; Source &gt; Emitters &gt; Initializers</g>, delete the <g id="2">Velocity</g> initializer. For now, we want the prefab effect to be static.</target>
+</trans-unit>
+<trans-unit id="tu118" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Delete velocity initializer<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Delete velocity initializer<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu119" xml:space="preserve">
+<source xml:lang="en">In the <g id="1">SwordTrail</g> properties, under <g id="2">Particle System &gt; Source &gt; Emitters &gt; Spawners</g>, set <g id="3">Loop</g> to <g id="4">One shot</g> and change <g id="5">Duration</g> to <g id="6">0.2, 0.2</g>.</source>
+<target xml:lang="pt">In the <g id="1">SwordTrail</g> properties, under <g id="2">Particle System &gt; Source &gt; Emitters &gt; Spawners</g>, set <g id="3">Loop</g> to <g id="4">One shot</g> and change <g id="5">Duration</g> to <g id="6">0.2, 0.2</g>.</target>
+</trans-unit>
+<trans-unit id="tu120" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Set the initializer loop and duration<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Set the initializer loop and duration<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu121" xml:space="preserve">
+<source xml:lang="en">Now we've created a separate prefab for the particle effect, we don't need to keep a particle effect on the sword model. In the main scene, select <g id="1">SwordModel</g> and delete the <g id="2">Particle System</g> component.</source>
+<target xml:lang="pt">Now we've created a separate prefab for the particle effect, we don't need to keep a particle effect on the sword model. In the main scene, select <g id="1">SwordModel</g> and delete the <g id="2">Particle System</g> component.</target>
+</trans-unit>
+<trans-unit id="tu122" xml:space="preserve">
+<source xml:lang="en">8. Control the effect prefab with a script</source>
+<target xml:lang="pt">8. Control the effect prefab with a script</target>
+</trans-unit>
+<trans-unit id="tu123" xml:space="preserve">
+<source xml:lang="en">We've created a sword trail effect prefab. Next we'll use a script to spawn the effect every time the mannequin swings and delete the effect a few frames later.</source>
+<target xml:lang="pt">We've created a sword trail effect prefab. Next we'll use a script to spawn the effect every time the mannequin swings and delete the effect a few frames later.</target>
+</trans-unit>
+<trans-unit id="tu124" xml:space="preserve">
+<source xml:lang="en">Open the project in Visual Studio. To do this, in Game Studio, click the Visual Studio icon (<g id="1">Open in IDE</g>).</source>
+<target xml:lang="pt">Open the project in Visual Studio. To do this, in Game Studio, click the Visual Studio icon (<g id="1">Open in IDE</g>).</target>
+</trans-unit>
+<trans-unit id="tu125" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Open Visual Studio<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Open Visual Studio<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu126" xml:space="preserve">
+<source xml:lang="en">In Visual Studio, right-click the game project and select <g id="1">Add &gt; New item</g>. In the <g id="2">Name</g> field, give your script the name <g id="3">SpawnTrail</g>, and click <g id="4">Add</g>.</source>
+<target xml:lang="pt">In Visual Studio, right-click the game project and select <g id="1">Add &gt; New item</g>. In the <g id="2">Name</g> field, give your script the name <g id="3">SpawnTrail</g>, and click <g id="4">Add</g>.</target>
+</trans-unit>
+<trans-unit id="tu127" xml:space="preserve">
+<source xml:lang="en">Replace the script content with the code in this script: <g id="1">SpawnTrail.cs</g></source>
+<target xml:lang="pt">Replace the script content with the code in this script: <g id="1">SpawnTrail.cs</g></target>
+</trans-unit>
+<trans-unit id="tu128" xml:space="preserve">
+<source xml:lang="en">This is a modified version of the Prefab Instance script included in Stride. Instead of listening to events or key presses, it listens to animation changes — such as our sword swing animation.</source>
+<target xml:lang="pt">This is a modified version of the Prefab Instance script included in Stride. Instead of listening to events or key presses, it listens to animation changes — such as our sword swing animation.</target>
+</trans-unit>
+<trans-unit id="tu129" xml:space="preserve">
+<source xml:lang="en">In the script, make sure the <g id="1">namespace</g> is correct. This usually matches your Stride project name (eg <g id="2">MyTrailEffect</g>).</source>
+<target xml:lang="pt">In the script, make sure the <g id="1">namespace</g> is correct. This usually matches your Stride project name (eg <g id="2">MyTrailEffect</g>).</target>
+</trans-unit>
+<trans-unit id="tu130" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Namespace<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Namespace<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu131" xml:space="preserve">
+<source xml:lang="en">Save the script and the Visual Studio project (<g id="1">Ctrl + Shift + S</g>).</source>
+<target xml:lang="pt">Save the script and the Visual Studio project (<g id="1">Ctrl + Shift + S</g>).</target>
+</trans-unit>
+<trans-unit id="tu132" xml:space="preserve">
+<source xml:lang="en">In Game Studio, reload the assemblies.</source>
+<target xml:lang="pt">In Game Studio, reload the assemblies.</target>
+</trans-unit>
+<trans-unit id="tu133" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Reload assemblies<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Reload assemblies<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu134" xml:space="preserve">
+<source xml:lang="en">In the <g id="1">MainScene</g>, select the <g id="2">SwordModel</g>.</source>
+<target xml:lang="pt">In the <g id="1">MainScene</g>, select the <g id="2">SwordModel</g>.</target>
+</trans-unit>
+<trans-unit id="tu135" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Select SwordModel<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Select SwordModel<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu136" xml:space="preserve">
+<source xml:lang="en">In the SwordModel properties, click <g id="1">Add component</g> and select the <g id="2">SpawnTrail</g> script. This adds the script as a component.</source>
+<target xml:lang="pt">In the SwordModel properties, click <g id="1">Add component</g> and select the <g id="2">SpawnTrail</g> script. This adds the script as a component.</target>
+</trans-unit>
+<trans-unit id="tu137" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Add script component<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Add script component<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu138" xml:space="preserve">
+<source xml:lang="en">Under the <g id="1">SpawnTrail</g> component properties, next to <g id="2">Source</g>, click <x id="3"/>Hand icon<x id="4"/> (<g id="5">Select an asset</g>).</source>
+<target xml:lang="pt">Under the <g id="1">SpawnTrail</g> component properties, next to <g id="2">Source</g>, click <x id="3"/>Hand icon<x id="4"/> (<g id="5">Select an asset</g>).</target>
+</trans-unit>
+<trans-unit id="tu139" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Select a source<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Select a source<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu140" xml:space="preserve">
+<source xml:lang="en">In the Entity Picker, select the <g id="1">SwordTrail</g> prefab.</source>
+<target xml:lang="pt">In the Entity Picker, select the <g id="1">SwordTrail</g> prefab.</target>
+</trans-unit>
+<trans-unit id="tu141" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Select the swordtrail prefab<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Select the swordtrail prefab<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu142" xml:space="preserve">
+<source xml:lang="en">In the SpawnTrail component, in the <g id="1">Animation</g> field, click the hand icon (<g id="2">Select an asset</g>).     The <g id="3">Select an asset</g> window opens.</source>
+<target xml:lang="pt">In the SpawnTrail component, in the <g id="1">Animation</g> field, click the hand icon (<g id="2">Select an asset</g>).     The <g id="3">Select an asset</g> window opens.</target>
+</trans-unit>
+<trans-unit id="tu143" xml:space="preserve">
+<source xml:lang="en">In the left pane, select the <g id="1">mannequinModel</g> and click <g id="2">OK</g>.</source>
+<target xml:lang="pt">In the left pane, select the <g id="1">mannequinModel</g> and click <g id="2">OK</g>.</target>
+</trans-unit>
+<trans-unit id="tu144" xml:space="preserve">
+<source xml:lang="en">![Pick mannequin model in Entity Picker](media/pick-mannequin-model.png)
+</source>
+<target xml:lang="pt">![Pick mannequin model in Entity Picker](media/pick-mannequin-model.png)
+</target>
+</trans-unit>
+<trans-unit id="tu145" xml:space="preserve">
+<source xml:lang="en">Run the game.</source>
+<target xml:lang="pt">Run the game.</target>
+</trans-unit>
+<group id="sd1_ssf12" resname="sub-filter:sd1">
+</group>
+<trans-unit id="tu146" xml:space="preserve">
+<source xml:lang="en">Thanks to our script, the particle effect appears at the start of the sword swing animation and disappears at the end.</source>
+<target xml:lang="pt">Thanks to our script, the particle effect appears at the start of the sword swing animation and disappears at the end.</target>
+</trans-unit>
+<trans-unit id="tu147" xml:space="preserve">
+<source xml:lang="en">9. Adjust the trail start time</source>
+<target xml:lang="pt">9. Adjust the trail start time</target>
+</trans-unit>
+<trans-unit id="tu148" xml:space="preserve">
+<source xml:lang="en">With the <g id="1">Sword_R</g> animation asset selected, check the swing animation in the <g id="2">Asset Preview</g> in the bottom-right. (If the Asset Preview isn't displayed, check <g id="3">View &gt; Asset Preview</g>.)</source>
+<target xml:lang="pt">With the <g id="1">Sword_R</g> animation asset selected, check the swing animation in the <g id="2">Asset Preview</g> in the bottom-right. (If the Asset Preview isn't displayed, check <g id="3">View &gt; Asset Preview</g>.)</target>
+</trans-unit>
+<trans-unit id="tu149" xml:space="preserve">
+<source xml:lang="en">The Asset Preview shows the animation length in seconds. If you look closely, you can see the mannequin doesn't begin to swing the sword down until about 0.1 seconds into the animation. Let's set the trail effect to spawn just when the mannequin swings.</source>
+<target xml:lang="pt">The Asset Preview shows the animation length in seconds. If you look closely, you can see the mannequin doesn't begin to swing the sword down until about 0.1 seconds into the animation. Let's set the trail effect to spawn just when the mannequin swings.</target>
+</trans-unit>
+<trans-unit id="tu150" xml:space="preserve">
+<source xml:lang="en">Select the <g id="1">SwordModel</g>.</source>
+<target xml:lang="pt">Select the <g id="1">SwordModel</g>.</target>
+</trans-unit>
+<trans-unit id="tu151" xml:space="preserve">
+<source xml:lang="en">In the <g id="1">SpawnTrail</g> properties, set the <g id="2">Start time</g> to 0.06. This means the trail effect won't spawn until 0.06 seconds into the swing animation, which looks a little more natural. Feel free to tweak this to your liking.</source>
+<target xml:lang="pt">In the <g id="1">SpawnTrail</g> properties, set the <g id="2">Start time</g> to 0.06. This means the trail effect won't spawn until 0.06 seconds into the swing animation, which looks a little more natural. Feel free to tweak this to your liking.</target>
+</trans-unit>
+<trans-unit id="tu152" xml:space="preserve">
+<source xml:lang="en">Run the game to see how it looks.</source>
+<target xml:lang="pt">Run the game to see how it looks.</target>
+</trans-unit>
+<group id="sd1_ssf13" resname="sub-filter:sd1">
+</group>
+<trans-unit id="tu153" xml:space="preserve">
+<source xml:lang="en">You might notice our trail effect looks a little jagged, creating a "spiderweb" effect. Let's make it more curved.</source>
+<target xml:lang="pt">You might notice our trail effect looks a little jagged, creating a "spiderweb" effect. Let's make it more curved.</target>
+</trans-unit>
+<trans-unit id="tu154" xml:space="preserve">
+<source xml:lang="en">10. Curve the trail</source>
+<target xml:lang="pt">10. Curve the trail</target>
+</trans-unit>
+<trans-unit id="tu155" xml:space="preserve">
+<source xml:lang="en">In the <g id="1">SwordTrail</g> prefab, on the <g id="2">SwordTrail</g> entity, under <g id="3">Particle System &gt; Source &gt; Emitters &gt; Shape</g>, set <g id="4">Smoothing</g> to <g id="5">Best</g> and <g id="6">Segments</g> to <g id="7">5</g>.</source>
+<target xml:lang="pt">In the <g id="1">SwordTrail</g> prefab, on the <g id="2">SwordTrail</g> entity, under <g id="3">Particle System &gt; Source &gt; Emitters &gt; Shape</g>, set <g id="4">Smoothing</g> to <g id="5">Best</g> and <g id="6">Segments</g> to <g id="7">5</g>.</target>
+</trans-unit>
+<trans-unit id="tu156" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Smoothing and segments<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Smoothing and segments<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu157" xml:space="preserve">
+<source xml:lang="en">This adds three vertices between the particles of our trail, which should be enough to create a noticeably smoother effect.</source>
+<target xml:lang="pt">This adds three vertices between the particles of our trail, which should be enough to create a noticeably smoother effect.</target>
+</trans-unit>
+<trans-unit id="tu158" xml:space="preserve">
+<source xml:lang="en">Run the game.</source>
+<target xml:lang="pt">Run the game.</target>
+</trans-unit>
+<group id="sd1_ssf14" resname="sub-filter:sd1">
+</group>
+<trans-unit id="tu159" xml:space="preserve">
+<source xml:lang="en">The inner curve, at the sword hilt, is smoother. But the curve at the sword's edge is still jagged.</source>
+<target xml:lang="pt">The inner curve, at the sword hilt, is smoother. But the curve at the sword's edge is still jagged.</target>
+</trans-unit>
+<trans-unit id="tu160" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Smoothed and unsmoothed areas<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Smoothed and unsmoothed areas<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu161" xml:space="preserve">
+<source xml:lang="en">We want to smooth the effect at the sword's edge, where it's more noticeable. To do that, we'll flip the particle direction.</source>
+<target xml:lang="pt">We want to smooth the effect at the sword's edge, where it's more noticeable. To do that, we'll flip the particle direction.</target>
+</trans-unit>
+<trans-unit id="tu162" xml:space="preserve">
+<source xml:lang="en">Still in the <g id="1">SwordTrail</g> prefab, in the <g id="2">Transform</g> component properties, change the <g id="3">Position</g> to <g id="4">0, 0, -1</g>.</source>
+<target xml:lang="pt">Still in the <g id="1">SwordTrail</g> prefab, in the <g id="2">Transform</g> component properties, change the <g id="3">Position</g> to <g id="4">0, 0, -1</g>.</target>
+</trans-unit>
+<trans-unit id="tu163" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Swordtrail position<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Swordtrail position<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu164" xml:space="preserve">
+<source xml:lang="en">This moves the starting point of the particle effect to the tip of the sword.</source>
+<target xml:lang="pt">This moves the starting point of the particle effect to the tip of the sword.</target>
+</trans-unit>
+<trans-unit id="tu165" xml:space="preserve">
+<source xml:lang="en">Run the game.</source>
+<target xml:lang="pt">Run the game.</target>
+</trans-unit>
+<group id="sd1_ssf15" resname="sub-filter:sd1">
+</group>
+<trans-unit id="tu166" xml:space="preserve">
+<source xml:lang="en">Now we have a new problem. Because we moved the particle effect to the tip of the sword, the particles are flying from the tip. We need to reverse their direction, so they move down along the sword blade to the hilt.</source>
+<target xml:lang="pt">Now we have a new problem. Because we moved the particle effect to the tip of the sword, the particles are flying from the tip. We need to reverse their direction, so they move down along the sword blade to the hilt.</target>
+</trans-unit>
+<trans-unit id="tu167" xml:space="preserve">
+<source xml:lang="en">Under <g id="1">Particle System &gt; Source &gt; Emitters &gt; Initializers</g>, under the <g id="2">Direction</g> initializer, change both the <g id="3">Direction min</g> and <g id="4">Direction max</g> to <g id="5">0, 0, 1</g>. This inverts the trail direction.</source>
+<target xml:lang="pt">Under <g id="1">Particle System &gt; Source &gt; Emitters &gt; Initializers</g>, under the <g id="2">Direction</g> initializer, change both the <g id="3">Direction min</g> and <g id="4">Direction max</g> to <g id="5">0, 0, 1</g>. This inverts the trail direction.</target>
+</trans-unit>
+<trans-unit id="tu168" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Initializer direction<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Initializer direction<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu169" xml:space="preserve">
+<source xml:lang="en">Run the game.</source>
+<target xml:lang="pt">Run the game.</target>
+</trans-unit>
+<group id="sd1_ssf16" resname="sub-filter:sd1">
+</group>
+<trans-unit id="tu170" xml:space="preserve">
+<source xml:lang="en">Congratulations! You created a trail effect from scratch. How you tweak it now is up to you.</source>
+<target xml:lang="pt">Congratulations! You created a trail effect from scratch. How you tweak it now is up to you.</target>
+</trans-unit>
+<trans-unit id="tu171" xml:space="preserve">
+<source xml:lang="en">Sample project</source>
+<target xml:lang="pt">Sample project</target>
+</trans-unit>
+<trans-unit id="tu172" xml:space="preserve">
+<source xml:lang="en">Here's a more elaborate trail that combines multiple particle effects:</source>
+<target xml:lang="pt">Here's a more elaborate trail that combines multiple particle effects:</target>
+</trans-unit>
+<group id="sd1_ssf17" resname="sub-filter:sd1">
+</group>
+<trans-unit id="tu173" xml:space="preserve">
+<source xml:lang="en">If you'd like to see how it works, <g id="1">download the project file</g> and take a look.</source>
+<target xml:lang="pt">If you'd like to see how it works, <g id="1">download the project file</g> and take a look.</target>
+</trans-unit>
+<trans-unit id="tu174" xml:space="preserve">
+<source xml:lang="en">See also</source>
+<target xml:lang="pt">See also</target>
+</trans-unit>
+<trans-unit id="tu175" xml:space="preserve">
+<source xml:lang="en"><g id="1">Tutorial: Custom particles</g></source>
+<target xml:lang="pt"><g id="1">Tutorial: Custom particles</g></target>
+</trans-unit>
+<trans-unit id="tu176" xml:space="preserve">
+<source xml:lang="en"><g id="1">Tutorial: Inheritance</g></source>
+<target xml:lang="pt"><g id="1">Tutorial: Inheritance</g></target>
+</trans-unit>
+<trans-unit id="tu177" xml:space="preserve">
+<source xml:lang="en"><g id="1">Tutorial: Lasers and lightning</g></source>
+<target xml:lang="pt"><g id="1">Tutorial: Lasers and lightning</g></target>
+</trans-unit>
+<trans-unit id="tu178" xml:space="preserve">
+<source xml:lang="en"><g id="1">Particles</g></source>
+<target xml:lang="pt"><g id="1">Particles</g></target>
+</trans-unit>
+<trans-unit id="tu179" xml:space="preserve">
+<source xml:lang="en"><g id="1">Create particles</g></source>
+<target xml:lang="pt"><g id="1">Create particles</g></target>
+</trans-unit>
+<trans-unit id="tu180" xml:space="preserve">
+<source xml:lang="en"><g id="1">Model node links</g></source>
+<target xml:lang="pt"><g id="1">Model node links</g></target>
+</trans-unit>
+</body>
+</file>
+</xliff>

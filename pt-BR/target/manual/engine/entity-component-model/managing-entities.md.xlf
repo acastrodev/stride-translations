@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" xmlns:okp="okapi-framework:xliff-extensions" its:version="2.0" version="1.2">
+<file datatype="x-text/x-markdown" okp:inputEncoding="UTF-8" original="/D:/repos/rr/source/manual/engine/entity-component-model/managing-entities.md" source-language="en" target-language="pt">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en">Manage entities</source>
+<target xml:lang="pt">Manage entities</target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en">[!INCLUDE <g id="1">stride-studio-note</g>]</source>
+<target xml:lang="pt">[!INCLUDE <g id="1">stride-studio-note</g>]</target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">Overview</source>
+<target xml:lang="pt">Overview</target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">User usually want to manipulate Component contained in a specific entity, while engine wants to access component by types (i.e. all Mesh Component while drawing, all animation components while updating animations, etc...):</source>
+<target xml:lang="pt">User usually want to manipulate Component contained in a specific entity, while engine wants to access component by types (i.e. all Mesh Component while drawing, all animation components while updating animations, etc...):</target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>media/7438984.png<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>media/7438984.png<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en">User will add component-based entities into an entity manager.</source>
+<target xml:lang="pt">User will add component-based entities into an entity manager.</target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en">Engine or user registers entity processors that can process specific entities and/or components.</source>
+<target xml:lang="pt">Engine or user registers entity processors that can process specific entities and/or components.</target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en">Entity Processor</source>
+<target xml:lang="pt">Entity Processor</target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en">To solve this problem, the concept of Entity Processor has been added. An Entity Processor will access Entities that matches specific requirements (i.e. process all entities with MeshComponent) and process all of them in a single update function. This allows for greater efficiency and cache-friendliness, as there is no need to check every entity/components many times per frame.</source>
+<target xml:lang="pt">To solve this problem, the concept of Entity Processor has been added. An Entity Processor will access Entities that matches specific requirements (i.e. process all entities with MeshComponent) and process all of them in a single update function. This allows for greater efficiency and cache-friendliness, as there is no need to check every entity/components many times per frame.</target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en">This approach also solves many update order dependencies issues (just need to order the entity processors updates properly).</source>
+<target xml:lang="pt">This approach also solves many update order dependencies issues (just need to order the entity processors updates properly).</target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en">Here is some examples of entity processors:</source>
+<target xml:lang="pt">Here is some examples of entity processors:</target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en">@'Stride.Engine.TransformationProcessor': Compute transformation matrices from hierarchy and local transformation stored in @'Stride.Engine.TransformationComponent'.</source>
+<target xml:lang="pt">@'Stride.Engine.TransformationProcessor': Compute transformation matrices from hierarchy and local transformation stored in @'Stride.Engine.TransformationComponent'.</target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en">As a result, @'Stride.Engine.EntityManager' can be used as a hierarchical scenegraph instead of a simple entity list.</source>
+<target xml:lang="pt">As a result, @'Stride.Engine.EntityManager' can be used as a hierarchical scenegraph instead of a simple entity list.</target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en">@'Stride.Engine.MeshProcessor': Add @'Stride.Engine.ModelComponent.Model' to rendering.</source>
+<target xml:lang="pt">@'Stride.Engine.MeshProcessor': Add @'Stride.Engine.ModelComponent.Model' to rendering.</target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en">@'Stride.Engine.LightProcessor': Collects and update lights, and transfer it to rendering system. It can hides implementation details (deferred or forward rendering, etc...)</source>
+<target xml:lang="pt">@'Stride.Engine.LightProcessor': Collects and update lights, and transfer it to rendering system. It can hides implementation details (deferred or forward rendering, etc...)</target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en">Entity System</source>
+<target xml:lang="pt">Entity System</target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en">Entity are grouped together in an @'Stride.Engine.EntityManager'. It will also contains the list of entity processors. When an entity is added or an entity components changes, it will ask entity processors if they should be included.</source>
+<target xml:lang="pt">Entity are grouped together in an @'Stride.Engine.EntityManager'. It will also contains the list of entity processors. When an entity is added or an entity components changes, it will ask entity processors if they should be included.</target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en">// Add an entity:
+var myEntity = new Entity();
+engine.EntityManager.AddEntity(myEntity);
+ 
+// Iterate through added entities:
+foreach (var entity in engine.EntityManager.Entities)
+{
+	Console.WriteLine(entity.Name);
+}
+</source>
+<target xml:lang="pt">// Add an entity:
+var myEntity = new Entity();
+engine.EntityManager.AddEntity(myEntity);
+ 
+// Iterate through added entities:
+foreach (var entity in engine.EntityManager.Entities)
+{
+	Console.WriteLine(entity.Name);
+}
+</target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en">@'Stride.Engine.EntityManager' can be used to enumerate its <g id="1">Entities (ref:{Stride.Engine.Entity})</g>. Note that children of a given entities will also be in this list.</source>
+<target xml:lang="pt">@'Stride.Engine.EntityManager' can be used to enumerate its <g id="1">Entities (ref:{Stride.Engine.Entity})</g>. Note that children of a given entities will also be in this list.</target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en">To manipulate entities as a scenegraph, refer to @'Stride.Engine.TransformationComponent' class.</source>
+<target xml:lang="pt">To manipulate entities as a scenegraph, refer to @'Stride.Engine.TransformationComponent' class.</target>
+</trans-unit>
+</body>
+</file>
+</xliff>

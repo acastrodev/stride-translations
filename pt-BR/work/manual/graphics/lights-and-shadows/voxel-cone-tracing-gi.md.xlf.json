@@ -1,0 +1,289 @@
+{
+    "filename": "manual\\graphics\\lights-and-shadows\\voxel-cone-tracing-gi.md.xlf",
+    "files": [
+        {
+            "\/D:\/repos\/rr\/source\/manual\/graphics\/lights-and-shadows\/voxel-cone-tracing-gi.md": [
+                [
+                    "Voxel Cone Tracing Global Illumination",
+                    "",
+                    "Voxel Cone Tracing Global Illumination",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/lights-and-shadows\/voxel-cone-tracing-gi.md",
+                    {
+                        "id": "tu1"
+                    }
+                ],
+                [
+                    "Howto: setup existing project with Voxel Cone Tracing GI",
+                    "",
+                    "Howto: setup existing project with Voxel Cone Tracing GI",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/lights-and-shadows\/voxel-cone-tracing-gi.md",
+                    {
+                        "id": "tu2"
+                    }
+                ],
+                [
+                    "Reference Stride.Voxels",
+                    "",
+                    "Reference Stride.Voxels",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/lights-and-shadows\/voxel-cone-tracing-gi.md",
+                    {
+                        "id": "tu3"
+                    }
+                ],
+                [
+                    "Since Stride is modular based, we need to add a reference to <g1>Stride.Voxels<\/g1> plugin:",
+                    "",
+                    "Since Stride is modular based, we need to add a reference to <g1>Stride.Voxels<\/g1> plugin:",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/lights-and-shadows\/voxel-cone-tracing-gi.md",
+                    {
+                        "id": "tu4"
+                    }
+                ],
+                [
+                    "In the <g1>Solution Explorer<\/g1>, right-click on the user project",
+                    "",
+                    "In the <g1>Solution Explorer<\/g1>, right-click on the user project",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/lights-and-shadows\/voxel-cone-tracing-gi.md",
+                    {
+                        "id": "tu5"
+                    }
+                ],
+                [
+                    "Select <g1>Add Dependency<\/g1>",
+                    "",
+                    "Select <g1>Add Dependency<\/g1>",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/lights-and-shadows\/voxel-cone-tracing-gi.md",
+                    {
+                        "id": "tu6"
+                    }
+                ],
+                [
+                    "<x1\/>Add dependency<x2\/>",
+                    "",
+                    "<x1\/>Add dependency<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/lights-and-shadows\/voxel-cone-tracing-gi.md",
+                    {
+                        "id": "tu7"
+                    }
+                ],
+                [
+                    "Select <g1>Stride.Voxels<\/g1> in the list and press <g2>OK<\/g2>",
+                    "",
+                    "Select <g1>Stride.Voxels<\/g1> in the list and press <g2>OK<\/g2>",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/lights-and-shadows\/voxel-cone-tracing-gi.md",
+                    {
+                        "id": "tu8"
+                    }
+                ],
+                [
+                    "You might be asked if you want to reload project, choose whichever option, both are OK.",
+                    "",
+                    "You might be asked if you want to reload project, choose whichever option, both are OK.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/lights-and-shadows\/voxel-cone-tracing-gi.md",
+                    {
+                        "id": "tu9"
+                    }
+                ],
+                [
+                    "Graphics Compositor",
+                    "",
+                    "Graphics Compositor",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/lights-and-shadows\/voxel-cone-tracing-gi.md",
+                    {
+                        "id": "tu10"
+                    }
+                ],
+                [
+                    "Voxel Cone Tracing requires several changes to the graphics compositor.",
+                    "",
+                    "Voxel Cone Tracing requires several changes to the graphics compositor.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/lights-and-shadows\/voxel-cone-tracing-gi.md",
+                    {
+                        "id": "tu11"
+                    }
+                ],
+                [
+                    "To make this easier, we prepared a graphics compositor ready to use with Voxel GI in the asset templates:",
+                    "",
+                    "To make this easier, we prepared a graphics compositor ready to use with Voxel GI in the asset templates:",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/lights-and-shadows\/voxel-cone-tracing-gi.md",
+                    {
+                        "id": "tu12"
+                    }
+                ],
+                [
+                    "In the <g1>Asset View<\/g1>, click <x1\/><x2\/>",
+                    "",
+                    "In the <g1>Asset View<\/g1>, click <x1\/><x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/lights-and-shadows\/voxel-cone-tracing-gi.md",
+                    {
+                        "id": "tu13"
+                    }
+                ],
+                [
+                    "Start to type <g1>Voxel<\/g1> in the search bar",
+                    "",
+                    "Start to type <g1>Voxel<\/g1> in the search bar",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/lights-and-shadows\/voxel-cone-tracing-gi.md",
+                    {
+                        "id": "tu14"
+                    }
+                ],
+                [
+                    "Select <g1>Graphics Compositor (Voxel Cone Tracing)<\/g1>",
+                    "",
+                    "Select <g1>Graphics Compositor (Voxel Cone Tracing)<\/g1>",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/lights-and-shadows\/voxel-cone-tracing-gi.md",
+                    {
+                        "id": "tu15"
+                    }
+                ],
+                [
+                    "<x1\/>Create Graphics Compositor<x2\/>",
+                    "",
+                    "<x1\/>Create Graphics Compositor<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/lights-and-shadows\/voxel-cone-tracing-gi.md",
+                    {
+                        "id": "tu16"
+                    }
+                ],
+                [
+                    "In your <g1>Game Settings<\/g1> asset, change the graphics compositor to the newly created one:",
+                    "",
+                    "In your <g1>Game Settings<\/g1> asset, change the graphics compositor to the newly created one:",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/lights-and-shadows\/voxel-cone-tracing-gi.md",
+                    {
+                        "id": "tu17"
+                    }
+                ],
+                [
+                    "<x1\/>Set Graphics Compositor<x2\/>",
+                    "",
+                    "<x1\/>Set Graphics Compositor<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/lights-and-shadows\/voxel-cone-tracing-gi.md",
+                    {
+                        "id": "tu18"
+                    }
+                ],
+                [
+                    "Setup scene:",
+                    "",
+                    "Setup scene:",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/lights-and-shadows\/voxel-cone-tracing-gi.md",
+                    {
+                        "id": "tu19"
+                    }
+                ],
+                [
+                    "Volume and Light",
+                    "",
+                    " Volume and Light",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/lights-and-shadows\/voxel-cone-tracing-gi.md",
+                    {
+                        "id": "tu19"
+                    }
+                ],
+                [
+                    "In the scene explorer, above the <g1>Entity Tree<\/g1>, click the <x1\/>Plus<x2\/> icon and select <g2>Lights<\/g2> then <g3>Voxel volume<\/g3>",
+                    "",
+                    "In the scene explorer, above the <g1>Entity Tree<\/g1>, click the <x1\/>Plus<x2\/> icon and select <g2>Lights<\/g2> then <g3>Voxel volume<\/g3>",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/lights-and-shadows\/voxel-cone-tracing-gi.md",
+                    {
+                        "id": "tu20"
+                    }
+                ],
+                [
+                    "Click the <x1\/>Plus<x2\/> icon again and select <g1>Lights<\/g1> then <g2>Voxel light<\/g2>",
+                    "",
+                    "Click the <x1\/>Plus<x2\/> icon again and select <g1>Lights<\/g1> then <g2>Voxel light<\/g2>",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/lights-and-shadows\/voxel-cone-tracing-gi.md",
+                    {
+                        "id": "tu21"
+                    }
+                ],
+                [
+                    "At that point, the scene rendering will likely crash due to the light not being setup correctly (with error <g1>No Voxel Volume Component selected for voxel light.<\/g1>), but that's expected.",
+                    "",
+                    "At that point, the scene rendering will likely crash due to the light not being setup correctly (with error <g1>No Voxel Volume Component selected for voxel light.<\/g1>), but that's expected.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/lights-and-shadows\/voxel-cone-tracing-gi.md",
+                    {
+                        "id": "tu22"
+                    }
+                ],
+                [
+                    "In the property grid, change the Light Volume to the previously created entity:",
+                    "",
+                    "In the property grid, change the Light Volume to the previously created entity:",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/lights-and-shadows\/voxel-cone-tracing-gi.md",
+                    {
+                        "id": "tu23"
+                    }
+                ],
+                [
+                    "<x1\/>Setup light volume<x2\/>",
+                    "",
+                    "<x1\/>Setup light volume<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/lights-and-shadows\/voxel-cone-tracing-gi.md",
+                    {
+                        "id": "tu24"
+                    }
+                ],
+                [
+                    "At that point, you can click the <g1>Resume<\/g1> button in scene renderer, and everything should be setup!",
+                    "",
+                    "At that point, you can click the <g1>Resume<\/g1> button in scene renderer, and everything should be setup!",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/lights-and-shadows\/voxel-cone-tracing-gi.md",
+                    {
+                        "id": "tu25"
+                    }
+                ],
+                [
+                    "Play with it",
+                    "",
+                    "Play with it",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/lights-and-shadows\/voxel-cone-tracing-gi.md",
+                    {
+                        "id": "tu26"
+                    }
+                ],
+                [
+                    "To do a quick test, you can disable Skybox light (keep only directional light), go in shadow area and see if some ambient light spread there.",
+                    "",
+                    "To do a quick test, you can disable Skybox light (keep only directional light), go in shadow area and see if some ambient light spread there.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/lights-and-shadows\/voxel-cone-tracing-gi.md",
+                    {
+                        "id": "tu27"
+                    }
+                ],
+                [
+                    "You can also play with <g1>emissive materials<\/g1>.",
+                    "",
+                    " You can also play with <g1>emissive materials<\/g1>.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/lights-and-shadows\/voxel-cone-tracing-gi.md",
+                    {
+                        "id": "tu27"
+                    }
+                ],
+                [
+                    "Video tutorial",
+                    "",
+                    "Video tutorial",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/lights-and-shadows\/voxel-cone-tracing-gi.md",
+                    {
+                        "id": "tu28"
+                    }
+                ],
+                [
+                    "Here's a youtube alternative tutorial made by David Jeske on how to set it up:",
+                    "",
+                    "Here's a youtube alternative tutorial made by David Jeske on how to set it up:",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/lights-and-shadows\/voxel-cone-tracing-gi.md",
+                    {
+                        "id": "tu29"
+                    }
+                ]
+            ]
+        }
+    ],
+    "seg_enabled": false
+}

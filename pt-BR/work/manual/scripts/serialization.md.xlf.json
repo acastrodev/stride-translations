@@ -1,0 +1,946 @@
+{
+    "filename": "manual\\scripts\\serialization.md.xlf",
+    "files": [
+        {
+            "\/D:\/repos\/rr\/source\/manual\/scripts\/serialization.md": [
+                [
+                    "Serialization",
+                    "",
+                    "Serialization",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/serialization.md",
+                    {
+                        "id": "tu1"
+                    }
+                ],
+                [
+                    "<x1\/>Beginner<x2\/>",
+                    "",
+                    "<x1\/>Beginner<x2\/>\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/serialization.md",
+                    {
+                        "id": "tu2"
+                    }
+                ],
+                [
+                    "<x3\/>Programmer<x4\/>",
+                    "",
+                    "<x3\/>Programmer<x4\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/serialization.md",
+                    {
+                        "id": "tu2"
+                    }
+                ],
+                [
+                    "The editor and serialization system uses four attributes to determine what is serialized and visible in the editor.",
+                    "",
+                    "The editor and serialization system uses four attributes to determine what is serialized and visible in the editor.",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/serialization.md",
+                    {
+                        "id": "tu3"
+                    }
+                ],
+                [
+                    "DataContractAttribute",
+                    "",
+                    "<g1>DataContractAttribute<\/g1>",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/serialization.md",
+                    {
+                        "id": "tu4"
+                    }
+                ],
+                [
+                    "Adding this attribute to your <g1>class<\/g1> or <g2>struct<\/g2> notifies the serializer and the editor that it should",
+                    "",
+                    "Adding this attribute to your <g1>class<\/g1> or <g2>struct<\/g2> notifies the serializer and the editor that it should\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/serialization.md",
+                    {
+                        "id": "tu5"
+                    }
+                ],
+                [
+                    "show fields and properties of that type, and serialize the data it contains with the scenes or assets that might include it.",
+                    "",
+                    "show fields and properties of that type, and serialize the data it contains with the scenes or assets that might include it.",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/serialization.md",
+                    {
+                        "id": "tu5"
+                    }
+                ],
+                [
+                    "[Stride.Core.DataContract(Inherited = true)]",
+                    "",
+                    "[Stride.Core.DataContract(Inherited = true)]\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/serialization.md",
+                    {
+                        "id": "tu6"
+                    }
+                ],
+                [
+                    "public class MySerializedClass",
+                    "",
+                    "public class MySerializedClass\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/serialization.md",
+                    {
+                        "id": "tu6"
+                    }
+                ],
+                [
+                    "{",
+                    "",
+                    "{\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/serialization.md",
+                    {
+                        "id": "tu6"
+                    }
+                ],
+                [
+                    "public float MyValue;",
+                    "",
+                    "    public float MyValue;\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/serialization.md",
+                    {
+                        "id": "tu6"
+                    }
+                ],
+                [
+                    "}",
+                    "",
+                    "}\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/serialization.md",
+                    {
+                        "id": "tu6"
+                    }
+                ],
+                [
+                    "\/\/ 'DataContract' is inherited above.",
+                    "",
+                    "\r\n\/\/ 'DataContract' is inherited above.",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/serialization.md",
+                    {
+                        "id": "tu6"
+                    }
+                ],
+                [
+                    "You don't need to specify it for a derived class.",
+                    "",
+                    " You don't need to specify it for a derived class.\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/serialization.md",
+                    {
+                        "id": "tu6"
+                    }
+                ],
+                [
+                    "public class MyDerivedSerializedClass :",
+                    "",
+                    "public class MyDerivedSerializedClass :",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/serialization.md",
+                    {
+                        "id": "tu6"
+                    }
+                ],
+                [
+                    "MySerializedClass",
+                    "",
+                    " MySerializedClass\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/serialization.md",
+                    {
+                        "id": "tu6"
+                    }
+                ],
+                [
+                    "{",
+                    "",
+                    "{\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/serialization.md",
+                    {
+                        "id": "tu6"
+                    }
+                ],
+                [
+                    "public string MyName;",
+                    "",
+                    "    public string MyName;\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/serialization.md",
+                    {
+                        "id": "tu6"
+                    }
+                ],
+                [
+                    "}",
+                    "",
+                    "}\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/serialization.md",
+                    {
+                        "id": "tu6"
+                    }
+                ],
+                [
+                    "<x1\/>!Note<x2\/>",
+                    "",
+                    "<x1\/>!Note<x2\/>\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/serialization.md",
+                    {
+                        "id": "tu7"
+                    }
+                ],
+                [
+                    "Your IDE may wrongfully add <g1>System.Runtime.Serialization<\/g1> to your list of <g2>using<\/g2> when adding <g3>DataContract<\/g3>.",
+                    "",
+                    "Your IDE may wrongfully add <g1>System.Runtime.Serialization<\/g1> to your list of <g2>using<\/g2> when adding <g3>DataContract<\/g3>.\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/serialization.md",
+                    {
+                        "id": "tu7"
+                    }
+                ],
+                [
+                    "They are not interchangeable.",
+                    "",
+                    "They are not interchangeable.\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/serialization.md",
+                    {
+                        "id": "tu7"
+                    }
+                ],
+                [
+                    "Make sure that your <g4>DataContract<\/g4> comes from <g5>Stride.Core<\/g5>, specifying the namespace explicitly like shown above if necessary.",
+                    "",
+                    "Make sure that your <g4>DataContract<\/g4> comes from <g5>Stride.Core<\/g5>, specifying the namespace explicitly like shown above if necessary.",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/serialization.md",
+                    {
+                        "id": "tu7"
+                    }
+                ],
+                [
+                    "DataMemberAttribute",
+                    "",
+                    "<g1>DataMemberAttribute<\/g1>",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/serialization.md",
+                    {
+                        "id": "tu8"
+                    }
+                ],
+                [
+                    "This notifies the editor and serializer that the property or field on this <g1>DataContract<\/g1>'ed",
+                    "",
+                    "This notifies the editor and serializer that the property or field on this <g1>DataContract<\/g1>'ed\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/serialization.md",
+                    {
+                        "id": "tu9"
+                    }
+                ],
+                [
+                    "<g2>class<\/g2> or <g3>struct<\/g3> should be serialized.",
+                    "",
+                    "<g2>class<\/g2> or <g3>struct<\/g3> should be serialized.\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/serialization.md",
+                    {
+                        "id": "tu9"
+                    }
+                ],
+                [
+                    "Note that you can omit this attribute for most public fields and properties, they will be included by default,",
+                    "",
+                    "Note that you can omit this attribute for most public fields and properties, they will be included by default,\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/serialization.md",
+                    {
+                        "id": "tu9"
+                    }
+                ],
+                [
+                    "see <g4>Fields<\/g4> and <g5>Properties<\/g5> for specifics.",
+                    "",
+                    "see <g4>Fields<\/g4> and <g5>Properties<\/g5> for specifics.",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/serialization.md",
+                    {
+                        "id": "tu9"
+                    }
+                ],
+                [
+                    "[Stride.Core.DataContract]",
+                    "",
+                    "[Stride.Core.DataContract]\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/serialization.md",
+                    {
+                        "id": "tu10"
+                    }
+                ],
+                [
+                    "public class MySerializedClass",
+                    "",
+                    "public class MySerializedClass\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/serialization.md",
+                    {
+                        "id": "tu10"
+                    }
+                ],
+                [
+                    "{",
+                    "",
+                    "{\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/serialization.md",
+                    {
+                        "id": "tu10"
+                    }
+                ],
+                [
+                    "[Stride.Core.DataMember]",
+                    "",
+                    "    [Stride.Core.DataMember]\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/serialization.md",
+                    {
+                        "id": "tu10"
+                    }
+                ],
+                [
+                    "internal float MyValue;",
+                    "",
+                    "    internal float MyValue;\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/serialization.md",
+                    {
+                        "id": "tu10"
+                    }
+                ],
+                [
+                    "}",
+                    "",
+                    "}\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/serialization.md",
+                    {
+                        "id": "tu10"
+                    }
+                ],
+                [
+                    "DataAliasAttribute",
+                    "",
+                    "<g1>DataAliasAttribute<\/g1>",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/serialization.md",
+                    {
+                        "id": "tu11"
+                    }
+                ],
+                [
+                    "Can be used to ensure you do not break previously serialized data whenever you have to change how that member is named in your source.",
+                    "",
+                    "Can be used to ensure you do not break previously serialized data whenever you have to change how that member is named in your source.",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/serialization.md",
+                    {
+                        "id": "tu12"
+                    }
+                ],
+                [
+                    "[Stride.Core.DataAlias(\"PreviousNameOfProp\")]",
+                    "",
+                    "[Stride.Core.DataAlias(\"PreviousNameOfProp\")]\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/serialization.md",
+                    {
+                        "id": "tu13"
+                    }
+                ],
+                [
+                    "public string MyRenamedProp { get; set; }",
+                    "",
+                    "public string MyRenamedProp { get; set; }\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/serialization.md",
+                    {
+                        "id": "tu13"
+                    }
+                ],
+                [
+                    "<x1\/>!Note<x2\/>",
+                    "",
+                    "<x1\/>!Note<x2\/>\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/serialization.md",
+                    {
+                        "id": "tu14"
+                    }
+                ],
+                [
+                    "Alias remaps values only while in the editor; this feature is specific to the YAML serialization system.",
+                    "",
+                    "Alias remaps values only while in the editor; this feature is specific to the YAML serialization system.",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/serialization.md",
+                    {
+                        "id": "tu14"
+                    }
+                ],
+                [
+                    "Alias will be ignored during builds and at runtime.",
+                    "",
+                    " Alias will be ignored during builds and at runtime.",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/serialization.md",
+                    {
+                        "id": "tu14"
+                    }
+                ],
+                [
+                    "DataMemberIgnoreAttribute",
+                    "",
+                    "<g1>DataMemberIgnoreAttribute<\/g1>",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/serialization.md",
+                    {
+                        "id": "tu15"
+                    }
+                ],
+                [
+                    "This notifies the editor and serializer that the property or field on this <g1>DataContract<\/g1>'ed",
+                    "",
+                    "This notifies the editor and serializer that the property or field on this <g1>DataContract<\/g1>'ed\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/serialization.md",
+                    {
+                        "id": "tu16"
+                    }
+                ],
+                [
+                    "<g2>class<\/g2> or <g3>struct<\/g3> should <g4><g5>NOT<\/g5><\/g4> be serialized.",
+                    "",
+                    "<g2>class<\/g2> or <g3>struct<\/g3> should <g4><g5>NOT<\/g5><\/g4> be serialized.",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/serialization.md",
+                    {
+                        "id": "tu16"
+                    }
+                ],
+                [
+                    "[Stride.Core.DataContract]",
+                    "",
+                    "[Stride.Core.DataContract]\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/serialization.md",
+                    {
+                        "id": "tu17"
+                    }
+                ],
+                [
+                    "public class MySerializedClass",
+                    "",
+                    "public class MySerializedClass\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/serialization.md",
+                    {
+                        "id": "tu17"
+                    }
+                ],
+                [
+                    "{",
+                    "",
+                    "{\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/serialization.md",
+                    {
+                        "id": "tu17"
+                    }
+                ],
+                [
+                    "[Stride.Core.DataMemberIgnore]",
+                    "",
+                    "    [Stride.Core.DataMemberIgnore]\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/serialization.md",
+                    {
+                        "id": "tu17"
+                    }
+                ],
+                [
+                    "public float MyValue { get; set; } \/\/ This public property will NOT show up in the editor",
+                    "",
+                    "    public float MyValue { get; set; } \/\/ This public property will NOT show up in the editor\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/serialization.md",
+                    {
+                        "id": "tu17"
+                    }
+                ],
+                [
+                    "}",
+                    "",
+                    "}\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/serialization.md",
+                    {
+                        "id": "tu17"
+                    }
+                ],
+                [
+                    "TODO",
+                    "",
+                    "TODO",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/serialization.md",
+                    {
+                        "id": "tu18"
+                    }
+                ],
+                [
+                    "DataMemberCustomSerializerAttribute",
+                    "",
+                    "<g1>DataMemberCustomSerializerAttribute<\/g1>",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/serialization.md",
+                    {
+                        "id": "tu19"
+                    }
+                ],
+                [
+                    "DataMemberUpdatableAttribute",
+                    "",
+                    "<g1>DataMemberUpdatableAttribute<\/g1>",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/serialization.md",
+                    {
+                        "id": "tu20"
+                    }
+                ],
+                [
+                    "Rule of Thumb",
+                    "",
+                    "Rule of Thumb",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/serialization.md",
+                    {
+                        "id": "tu21"
+                    }
+                ],
+                [
+                    "Serialization and the editor's access and view of your properties mirrors how access modifiers work in C#;",
+                    "",
+                    "Serialization and the editor's access and view of your properties mirrors how access modifiers work in C#;",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/serialization.md",
+                    {
+                        "id": "tu22"
+                    }
+                ],
+                [
+                    "Think of the serializer\/editor as being a class external to your codebase, if you want the serializer to",
+                    "",
+                    "Think of the serializer\/editor as being a class external to your codebase, if you want the serializer to\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/serialization.md",
+                    {
+                        "id": "tu23"
+                    }
+                ],
+                [
+                    "read and write your properties you have to ensure that the access modifiers for its getter and setter",
+                    "",
+                    "read and write your properties you have to ensure that the access modifiers for its getter and setter\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/serialization.md",
+                    {
+                        "id": "tu23"
+                    }
+                ],
+                [
+                    "allows the serializer to access them.",
+                    "",
+                    "allows the serializer to access them.",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/serialization.md",
+                    {
+                        "id": "tu23"
+                    }
+                ],
+                [
+                    "If you're hiding that property behind an <g1>internal<\/g1> access modifier, you have to annotate it with",
+                    "",
+                    "If you're hiding that property behind an <g1>internal<\/g1> access modifier, you have to annotate it with\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/serialization.md",
+                    {
+                        "id": "tu24"
+                    }
+                ],
+                [
+                    "the attribute to ensure it is visible to the serializer.",
+                    "",
+                    "the attribute to ensure it is visible to the serializer.",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/serialization.md",
+                    {
+                        "id": "tu24"
+                    }
+                ],
+                [
+                    "Fields",
+                    "",
+                    "Fields",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/serialization.md",
+                    {
+                        "id": "tu25"
+                    }
+                ],
+                [
+                    "\/\/ Read and set in the editor by default",
+                    "",
+                    "\/\/ Read and set in the editor by default\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/serialization.md",
+                    {
+                        "id": "tu26"
+                    }
+                ],
+                [
+                    "public object obj;",
+                    "",
+                    "public object obj;\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/serialization.md",
+                    {
+                        "id": "tu26"
+                    }
+                ],
+                [
+                    "\/\/ Read and set in editor with attribute",
+                    "",
+                    "\r\n\/\/ Read and set in editor with attribute\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/serialization.md",
+                    {
+                        "id": "tu26"
+                    }
+                ],
+                [
+                    "[DataMember] public internal object obj;",
+                    "",
+                    "[DataMember] public internal object obj;\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/serialization.md",
+                    {
+                        "id": "tu26"
+                    }
+                ],
+                [
+                    "\/\/ Read only fields cannot be modified to point at another object, but the currently set object may be modified",
+                    "",
+                    "\r\n\/\/ Read only fields cannot be modified to point at another object, but the currently set object may be modified\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/serialization.md",
+                    {
+                        "id": "tu26"
+                    }
+                ],
+                [
+                    "public readonly object obj;",
+                    "",
+                    "public readonly object obj;\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/serialization.md",
+                    {
+                        "id": "tu26"
+                    }
+                ],
+                [
+                    "[DataMember] internal readonly object obj;",
+                    "",
+                    "[DataMember] internal readonly object obj;\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/serialization.md",
+                    {
+                        "id": "tu26"
+                    }
+                ],
+                [
+                    "\/\/ Never",
+                    "",
+                    "\r\n\/\/ Never\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/serialization.md",
+                    {
+                        "id": "tu26"
+                    }
+                ],
+                [
+                    "private protected\/private\/protected object obj;",
+                    "",
+                    "private protected\/private\/protected object obj;\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/serialization.md",
+                    {
+                        "id": "tu26"
+                    }
+                ],
+                [
+                    "Properties",
+                    "",
+                    "Properties",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/serialization.md",
+                    {
+                        "id": "tu27"
+                    }
+                ],
+                [
+                    "\/\/ Read and set in the editor ...",
+                    "",
+                    "\/\/ Read and set in the editor ...\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/serialization.md",
+                    {
+                        "id": "tu28"
+                    }
+                ],
+                [
+                    "\/\/ By default",
+                    "",
+                    "\r\n\/\/ By default\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/serialization.md",
+                    {
+                        "id": "tu28"
+                    }
+                ],
+                [
+                    "public object obj { get; set; }",
+                    "",
+                    "public object obj { get; set; }\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/serialization.md",
+                    {
+                        "id": "tu28"
+                    }
+                ],
+                [
+                    "public object obj { get => x; set => x = value; }",
+                    "",
+                    "public object obj { get => x; set => x = value; }\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/serialization.md",
+                    {
+                        "id": "tu28"
+                    }
+                ],
+                [
+                    "\/\/ Forced with the attribute for 'internal' modifiers",
+                    "",
+                    "\r\n\/\/ Forced with the attribute for 'internal' modifiers\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/serialization.md",
+                    {
+                        "id": "tu28"
+                    }
+                ],
+                [
+                    "[DataMember] public object obj { internal get; public\/internal set; }",
+                    "",
+                    "[DataMember] public object obj { internal get; public\/internal set; }\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/serialization.md",
+                    {
+                        "id": "tu28"
+                    }
+                ],
+                [
+                    "[DataMember] public object obj { internal get => x; public\/internal set => x; }",
+                    "",
+                    "[DataMember] public object obj { internal get => x; public\/internal set => x; }\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/serialization.md",
+                    {
+                        "id": "tu28"
+                    }
+                ],
+                [
+                    "\/\/ Read only",
+                    "",
+                    "\r\n\/\/ Read only\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/serialization.md",
+                    {
+                        "id": "tu28"
+                    }
+                ],
+                [
+                    "public object obj { get; }",
+                    "",
+                    "public object obj { get; }\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/serialization.md",
+                    {
+                        "id": "tu28"
+                    }
+                ],
+                [
+                    "\/\/ Read only for any non-public access modifier",
+                    "",
+                    "\r\n\/\/ Read only for any non-public access modifier\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/serialization.md",
+                    {
+                        "id": "tu28"
+                    }
+                ],
+                [
+                    "public object obj { get; internal\/private protected\/private\/protected set; }",
+                    "",
+                    "public object obj { get; internal\/private protected\/private\/protected set; }\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/serialization.md",
+                    {
+                        "id": "tu28"
+                    }
+                ],
+                [
+                    "public object obj { get => x; internal\/private protected\/private\/protected set => x = value; }",
+                    "",
+                    "public object obj { get => x; internal\/private protected\/private\/protected set => x = value; }\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/serialization.md",
+                    {
+                        "id": "tu28"
+                    }
+                ],
+                [
+                    "\/\/ Read only for internal properties must be enforced through the attribute",
+                    "",
+                    "\r\n\/\/ Read only for internal properties must be enforced through the attribute\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/serialization.md",
+                    {
+                        "id": "tu28"
+                    }
+                ],
+                [
+                    "[DataMember] internal object obj { get; }",
+                    "",
+                    "[DataMember] internal object obj { get; }\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/serialization.md",
+                    {
+                        "id": "tu28"
+                    }
+                ],
+                [
+                    "[DataMember] internal object obj { get => x; }",
+                    "",
+                    "[DataMember] internal object obj { get => x; }\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/serialization.md",
+                    {
+                        "id": "tu28"
+                    }
+                ],
+                [
+                    "\/\/ Read only, special case for get-only public properties without backing field,",
+                    "",
+                    "\r\n\/\/ Read only, special case for get-only public properties without backing field, \r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/serialization.md",
+                    {
+                        "id": "tu28"
+                    }
+                ],
+                [
+                    "\/\/They must use the attribute to be deserialized, see the comment below",
+                    "",
+                    "\/\/They must use the attribute to be deserialized, see the comment below\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/serialization.md",
+                    {
+                        "id": "tu28"
+                    }
+                ],
+                [
+                    "[DataMember] public object obj { get => x; }",
+                    "",
+                    "[DataMember] public object obj { get => x; }\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/serialization.md",
+                    {
+                        "id": "tu28"
+                    }
+                ],
+                [
+                    "\/\/ Read only for access modifiers more restrictive than internal, even with the attribute",
+                    "",
+                    "\r\n\/\/ Read only for access modifiers more restrictive than internal, even with the attribute\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/serialization.md",
+                    {
+                        "id": "tu28"
+                    }
+                ],
+                [
+                    "[DataMember] public object obj { internal get; private protected\/private\/protected set; }",
+                    "",
+                    "[DataMember] public object obj { internal get; private protected\/private\/protected set; }\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/serialization.md",
+                    {
+                        "id": "tu28"
+                    }
+                ],
+                [
+                    "[DataMember] public object obj { internal get => x; private protected\/private\/protected set => x; }",
+                    "",
+                    "[DataMember] public object obj { internal get => x; private protected\/private\/protected set => x; }\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/serialization.md",
+                    {
+                        "id": "tu28"
+                    }
+                ],
+                [
+                    "\/\/ Never",
+                    "",
+                    "\r\n\/\/ Never\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/serialization.md",
+                    {
+                        "id": "tu28"
+                    }
+                ],
+                [
+                    "private protected\/private\/protected object obj { get; set; }",
+                    "",
+                    "private protected\/private\/protected object obj { get; set; }\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/serialization.md",
+                    {
+                        "id": "tu28"
+                    }
+                ],
+                [
+                    "private protected\/private\/protected object obj { get => x; set => x; }",
+                    "",
+                    "private protected\/private\/protected object obj { get => x; set => x; }\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/serialization.md",
+                    {
+                        "id": "tu28"
+                    }
+                ],
+                [
+                    "<x1\/>!Note<x2\/>",
+                    "",
+                    "<x1\/>!Note<x2\/>\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/serialization.md",
+                    {
+                        "id": "tu29"
+                    }
+                ],
+                [
+                    "Get-only public properties without backing field (<g1>public object obj { get => x; }<\/g1>) are not serialized by default as",
+                    "",
+                    "Get-only public properties without backing field (<g1>public object obj { get => x; }<\/g1>) are not serialized by default as\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/serialization.md",
+                    {
+                        "id": "tu29"
+                    }
+                ],
+                [
+                    "they are, more often than not, shortcuts to values of another object or used purely as a function.",
+                    "",
+                    "they are, more often than not, shortcuts to values of another object or used purely as a function.\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/serialization.md",
+                    {
+                        "id": "tu29"
+                    }
+                ],
+                [
+                    "It might make more sense to change it to <g2>{ get; } = new MyObject();<\/g2> or <g3>{ get; init; }<\/g3> if you want to serialize it,",
+                    "",
+                    "It might make more sense to change it to <g2>{ get; } = new MyObject();<\/g2> or <g3>{ get; init; }<\/g3> if you want to serialize it,\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/serialization.md",
+                    {
+                        "id": "tu29"
+                    }
+                ],
+                [
+                    "and if that doesn't work for you, feel free to add the attribute to enforce serialization.",
+                    "",
+                    "and if that doesn't work for you, feel free to add the attribute to enforce serialization.",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/serialization.md",
+                    {
+                        "id": "tu29"
+                    }
+                ],
+                [
+                    "What about <g1>init<\/g1> ?",
+                    "",
+                    "What about <g1>init<\/g1> ?",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/serialization.md",
+                    {
+                        "id": "tu30"
+                    }
+                ],
+                [
+                    "The <g1>init<\/g1> access modifier is seen as a <g2>public set<\/g2> by the editor and serialization, it will be settable in the editor.",
+                    "",
+                    "The <g1>init<\/g1> access modifier is seen as a <g2>public set<\/g2> by the editor and serialization, it will be settable in the editor.",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/serialization.md",
+                    {
+                        "id": "tu31"
+                    }
+                ],
+                [
+                    "See also",
+                    "",
+                    "See also",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/serialization.md",
+                    {
+                        "id": "tu32"
+                    }
+                ],
+                [
+                    "Public properties and fields",
+                    "",
+                    "<g1>Public properties and fields<\/g1>",
+                    "\/D:\/repos\/rr\/source\/manual\/scripts\/serialization.md",
+                    {
+                        "id": "tu33"
+                    }
+                ]
+            ]
+        }
+    ],
+    "seg_enabled": false
+}

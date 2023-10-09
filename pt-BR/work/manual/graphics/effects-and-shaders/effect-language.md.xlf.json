@@ -1,0 +1,901 @@
+{
+    "filename": "manual\\graphics\\effects-and-shaders\\effect-language.md.xlf",
+    "files": [
+        {
+            "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/effect-language.md": [
+                [
+                    "Effect language",
+                    "",
+                    "Effect language",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/effect-language.md",
+                    {
+                        "id": "tu1"
+                    }
+                ],
+                [
+                    "Create shaders in C&#35;",
+                    "",
+                    "Create shaders in C&#35;",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/effect-language.md",
+                    {
+                        "id": "tu2"
+                    }
+                ],
+                [
+                    "You can create a shader at runtime with @'Stride.Shaders.ShaderSource' objects.",
+                    "",
+                    "You can create a shader at runtime with @'Stride.Shaders.ShaderSource' objects.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/effect-language.md",
+                    {
+                        "id": "tu3"
+                    }
+                ],
+                [
+                    "Shaders come in three types:",
+                    "",
+                    " Shaders come in three types:",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/effect-language.md",
+                    {
+                        "id": "tu3"
+                    }
+                ],
+                [
+                    "@'Stride.Shaders.ShaderClassSource' correspond to a unique shader class",
+                    "",
+                    "@'Stride.Shaders.ShaderClassSource' correspond to a unique shader class",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/effect-language.md",
+                    {
+                        "id": "tu4"
+                    }
+                ],
+                [
+                    "@'Stride.Shaders.ShaderMixinSource' mix several @'Stride.Shaders.ShaderSource', set preprocessor values, define compositions",
+                    "",
+                    "@'Stride.Shaders.ShaderMixinSource' mix several @'Stride.Shaders.ShaderSource', set preprocessor values, define compositions",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/effect-language.md",
+                    {
+                        "id": "tu5"
+                    }
+                ],
+                [
+                    "@'Stride.Shaders.ShaderArraySource' are used for arrays of compositions",
+                    "",
+                    "@'Stride.Shaders.ShaderArraySource' are used for arrays of compositions",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/effect-language.md",
+                    {
+                        "id": "tu6"
+                    }
+                ],
+                [
+                    "This method produces shaders at runtime.",
+                    "",
+                    "This method produces shaders at runtime.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/effect-language.md",
+                    {
+                        "id": "tu7"
+                    }
+                ],
+                [
+                    "However, many platforms don't support HLSL and have no ability to compile shaders at runtime.",
+                    "",
+                    " However, many platforms don't support HLSL and have no ability to compile shaders at runtime.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/effect-language.md",
+                    {
+                        "id": "tu7"
+                    }
+                ],
+                [
+                    "Additionally, the approach doesn't benefit from the reusability of mixins.",
+                    "",
+                    " Additionally, the approach doesn't benefit from the reusability of mixins.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/effect-language.md",
+                    {
+                        "id": "tu7"
+                    }
+                ],
+                [
+                    "Stride Effects (SDFX)",
+                    "",
+                    "Stride Effects (SDFX)",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/effect-language.md",
+                    {
+                        "id": "tu8"
+                    }
+                ],
+                [
+                    "Many shaders are variations or combinations of pre-existing shaders.",
+                    "",
+                    "Many shaders are variations or combinations of pre-existing shaders.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/effect-language.md",
+                    {
+                        "id": "tu9"
+                    }
+                ],
+                [
+                    "For example, some meshes cast shadows, others receive them, and others need skinning.",
+                    "",
+                    " For example, some meshes cast shadows, others receive them, and others need skinning.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/effect-language.md",
+                    {
+                        "id": "tu9"
+                    }
+                ],
+                [
+                    "To reuse code, it's a good idea to select which parts to use through conditions (eg \"Skinning required\").",
+                    "",
+                    " To reuse code, it's a good idea to select which parts to use through conditions (eg \"Skinning required\").",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/effect-language.md",
+                    {
+                        "id": "tu9"
+                    }
+                ],
+                [
+                    "This is often solved by \"uber shaders\": monolithic shaders configured by a set of preprocessor parameters.",
+                    "",
+                    " This is often solved by \"uber shaders\": monolithic shaders configured by a set of preprocessor parameters.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/effect-language.md",
+                    {
+                        "id": "tu9"
+                    }
+                ],
+                [
+                    "Stride offers the same kind of control, keeping extensibility and reusability in mind.",
+                    "",
+                    "Stride offers the same kind of control, keeping extensibility and reusability in mind.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/effect-language.md",
+                    {
+                        "id": "tu10"
+                    }
+                ],
+                [
+                    "The simple code blocks defined by shader classes can be mixed together by a shader mixer.",
+                    "",
+                    " The simple code blocks defined by shader classes can be mixed together by a shader mixer.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/effect-language.md",
+                    {
+                        "id": "tu10"
+                    }
+                ],
+                [
+                    "This process can use more complex logic, described in Stride Effect (*.sdfx) files.",
+                    "",
+                    " This process can use more complex logic, described in Stride Effect (*.sdfx) files.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/effect-language.md",
+                    {
+                        "id": "tu10"
+                    }
+                ],
+                [
+                    "General syntax",
+                    "",
+                    "General syntax",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/effect-language.md",
+                    {
+                        "id": "tu11"
+                    }
+                ],
+                [
+                    "An .sdfx file is a small program used to generate shader permutations.",
+                    "",
+                    "An .sdfx file is a small program used to generate shader permutations.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/effect-language.md",
+                    {
+                        "id": "tu12"
+                    }
+                ],
+                [
+                    "It takes a set of parameters (key and value in a collection) and produces a <g1>ShaderMixinSource<\/g1> ready to be compiled.",
+                    "",
+                    " It takes a set of parameters (key and value in a collection) and produces a <g1>ShaderMixinSource<\/g1> ready to be compiled.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/effect-language.md",
+                    {
+                        "id": "tu12"
+                    }
+                ],
+                [
+                    "An example .sdfx file:",
+                    "",
+                    "An example .sdfx file:",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/effect-language.md",
+                    {
+                        "id": "tu13"
+                    }
+                ],
+                [
+                    "using Stride.Effects.Data;",
+                    "",
+                    "using Stride.Effects.Data;\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/effect-language.md",
+                    {
+                        "id": "tu14"
+                    }
+                ],
+                [
+                    "namespace StrideEffects",
+                    "",
+                    "\r\nnamespace StrideEffects\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/effect-language.md",
+                    {
+                        "id": "tu14"
+                    }
+                ],
+                [
+                    "{",
+                    "",
+                    "{\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/effect-language.md",
+                    {
+                        "id": "tu14"
+                    }
+                ],
+                [
+                    "params MyParameters",
+                    "",
+                    "\tparams MyParameters\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/effect-language.md",
+                    {
+                        "id": "tu14"
+                    }
+                ],
+                [
+                    "{",
+                    "",
+                    "\t{\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/effect-language.md",
+                    {
+                        "id": "tu14"
+                    }
+                ],
+                [
+                    "bool EnableSpecular = true;",
+                    "",
+                    "\t\tbool EnableSpecular = true;\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/effect-language.md",
+                    {
+                        "id": "tu14"
+                    }
+                ],
+                [
+                    "};",
+                    "",
+                    "\t};\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/effect-language.md",
+                    {
+                        "id": "tu14"
+                    }
+                ],
+                [
+                    "effect BasicEffect",
+                    "",
+                    "\t\r\n\teffect BasicEffect\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/effect-language.md",
+                    {
+                        "id": "tu14"
+                    }
+                ],
+                [
+                    "{",
+                    "",
+                    "\t{\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/effect-language.md",
+                    {
+                        "id": "tu14"
+                    }
+                ],
+                [
+                    "using params MaterialParameters;",
+                    "",
+                    "\t\tusing params MaterialParameters;\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/effect-language.md",
+                    {
+                        "id": "tu14"
+                    }
+                ],
+                [
+                    "using params MyParameters;",
+                    "",
+                    "\t\tusing params MyParameters;\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/effect-language.md",
+                    {
+                        "id": "tu14"
+                    }
+                ],
+                [
+                    "mixin ShaderBase;",
+                    "",
+                    "\r\n\t\tmixin ShaderBase;\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/effect-language.md",
+                    {
+                        "id": "tu14"
+                    }
+                ],
+                [
+                    "mixin TransformationWAndVP;",
+                    "",
+                    "\t\tmixin TransformationWAndVP;\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/effect-language.md",
+                    {
+                        "id": "tu14"
+                    }
+                ],
+                [
+                    "mixin NormalVSStream;",
+                    "",
+                    "\t\tmixin NormalVSStream;\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/effect-language.md",
+                    {
+                        "id": "tu14"
+                    }
+                ],
+                [
+                    "mixin PositionVSStream;",
+                    "",
+                    "\t\tmixin PositionVSStream;\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/effect-language.md",
+                    {
+                        "id": "tu14"
+                    }
+                ],
+                [
+                    "mixin BRDFDiffuseBase;",
+                    "",
+                    "\t\tmixin BRDFDiffuseBase;\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/effect-language.md",
+                    {
+                        "id": "tu14"
+                    }
+                ],
+                [
+                    "mixin BRDFSpecularBase;",
+                    "",
+                    "\t\tmixin BRDFSpecularBase;\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/effect-language.md",
+                    {
+                        "id": "tu14"
+                    }
+                ],
+                [
+                    "mixin LightMultiDirectionalShadingPerPixel<2>;",
+                    "",
+                    "\t\tmixin LightMultiDirectionalShadingPerPixel<2>;\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/effect-language.md",
+                    {
+                        "id": "tu14"
+                    }
+                ],
+                [
+                    "mixin TransparentShading;",
+                    "",
+                    "\t\tmixin TransparentShading;\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/effect-language.md",
+                    {
+                        "id": "tu14"
+                    }
+                ],
+                [
+                    "mixin DiscardTransparent;",
+                    "",
+                    "\t\tmixin DiscardTransparent;\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/effect-language.md",
+                    {
+                        "id": "tu14"
+                    }
+                ],
+                [
+                    "if (MaterialParameters.AlbedoDiffuse != null)",
+                    "",
+                    "\r\n\t\tif (MaterialParameters.AlbedoDiffuse != null)\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/effect-language.md",
+                    {
+                        "id": "tu14"
+                    }
+                ],
+                [
+                    "{",
+                    "",
+                    "\t\t{\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/effect-language.md",
+                    {
+                        "id": "tu14"
+                    }
+                ],
+                [
+                    "mixin compose DiffuseColor = ComputeBRDFDiffuseLambert;",
+                    "",
+                    "\t\t\tmixin compose DiffuseColor = ComputeBRDFDiffuseLambert;\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/effect-language.md",
+                    {
+                        "id": "tu14"
+                    }
+                ],
+                [
+                    "mixin compose albedoDiffuse = MaterialParameters.AlbedoDiffuse;",
+                    "",
+                    "\t\t\tmixin compose albedoDiffuse = MaterialParameters.AlbedoDiffuse;\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/effect-language.md",
+                    {
+                        "id": "tu14"
+                    }
+                ],
+                [
+                    "}",
+                    "",
+                    "\t\t}\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/effect-language.md",
+                    {
+                        "id": "tu14"
+                    }
+                ],
+                [
+                    "if (MaterialParameters.AlbedoSpecular != null)",
+                    "",
+                    "\r\n\t\tif (MaterialParameters.AlbedoSpecular != null)\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/effect-language.md",
+                    {
+                        "id": "tu14"
+                    }
+                ],
+                [
+                    "{",
+                    "",
+                    "\t\t{\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/effect-language.md",
+                    {
+                        "id": "tu14"
+                    }
+                ],
+                [
+                    "mixin compose SpecularColor = ComputeBRDFColorSpecularBlinnPhong;",
+                    "",
+                    "\t\t\tmixin compose SpecularColor = ComputeBRDFColorSpecularBlinnPhong;\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/effect-language.md",
+                    {
+                        "id": "tu14"
+                    }
+                ],
+                [
+                    "mixin compose albedoSpecular = MaterialParameters.AlbedoSpecular;",
+                    "",
+                    "\t\t\tmixin compose albedoSpecular = MaterialParameters.AlbedoSpecular;\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/effect-language.md",
+                    {
+                        "id": "tu14"
+                    }
+                ],
+                [
+                    "}",
+                    "",
+                    "\t\t}\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/effect-language.md",
+                    {
+                        "id": "tu14"
+                    }
+                ],
+                [
+                    "};",
+                    "",
+                    "\t};\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/effect-language.md",
+                    {
+                        "id": "tu14"
+                    }
+                ],
+                [
+                    "}",
+                    "",
+                    "}\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/effect-language.md",
+                    {
+                        "id": "tu14"
+                    }
+                ],
+                [
+                    "Add a mixin",
+                    "",
+                    "Add a mixin",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/effect-language.md",
+                    {
+                        "id": "tu15"
+                    }
+                ],
+                [
+                    "To add a mixin, use <g1>mixin <mixin_name><\/g1>.",
+                    "",
+                    "To add a mixin, use <g1>mixin <mixin_name><\/g1>.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/effect-language.md",
+                    {
+                        "id": "tu16"
+                    }
+                ],
+                [
+                    "Use parameters",
+                    "",
+                    "Use parameters",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/effect-language.md",
+                    {
+                        "id": "tu17"
+                    }
+                ],
+                [
+                    "The syntax is similar to C#.",
+                    "",
+                    "The syntax is similar to C#.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/effect-language.md",
+                    {
+                        "id": "tu18"
+                    }
+                ],
+                [
+                    "The following rules are added:",
+                    "",
+                    " The following rules are added:",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/effect-language.md",
+                    {
+                        "id": "tu18"
+                    }
+                ],
+                [
+                    "When you use parameter keys, add them using <g1>params <shader_name><\/g1>.",
+                    "",
+                    "When you use parameter keys, add them using <g1>params <shader_name><\/g1>.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/effect-language.md",
+                    {
+                        "id": "tu19"
+                    }
+                ],
+                [
+                    "If you don't, keys are treated as variables.",
+                    "",
+                    " If you don't, keys are treated as variables.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/effect-language.md",
+                    {
+                        "id": "tu19"
+                    }
+                ],
+                [
+                    "You don't need to tell the program where to check the values behind the keys.",
+                    "",
+                    "You don't need to tell the program where to check the values behind the keys.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/effect-language.md",
+                    {
+                        "id": "tu20"
+                    }
+                ],
+                [
+                    "Just use the key.",
+                    "",
+                    " Just use the key.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/effect-language.md",
+                    {
+                        "id": "tu20"
+                    }
+                ],
+                [
+                    "using params MaterialParameters;",
+                    "",
+                    "using params MaterialParameters;\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/effect-language.md",
+                    {
+                        "id": "tu21"
+                    }
+                ],
+                [
+                    "if (MaterialParameters.AlbedoDiffuse != null)",
+                    "",
+                    " \r\nif (MaterialParameters.AlbedoDiffuse != null)\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/effect-language.md",
+                    {
+                        "id": "tu21"
+                    }
+                ],
+                [
+                    "{",
+                    "",
+                    "{\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/effect-language.md",
+                    {
+                        "id": "tu21"
+                    }
+                ],
+                [
+                    "mixin MaterialParameters.AlbedoDiffuse;",
+                    "",
+                    "\tmixin MaterialParameters.AlbedoDiffuse;\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/effect-language.md",
+                    {
+                        "id": "tu21"
+                    }
+                ],
+                [
+                    "}",
+                    "",
+                    "}\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/effect-language.md",
+                    {
+                        "id": "tu21"
+                    }
+                ],
+                [
+                    "The parameters behave like any variable.",
+                    "",
+                    "The parameters behave like any variable.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/effect-language.md",
+                    {
+                        "id": "tu22"
+                    }
+                ],
+                [
+                    "You can read and write their value, compare their values, and set template parameters.",
+                    "",
+                    " You can read and write their value, compare their values, and set template parameters.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/effect-language.md",
+                    {
+                        "id": "tu22"
+                    }
+                ],
+                [
+                    "Since some parameters store mixins, they can be used for composition and inheritance, too.",
+                    "",
+                    " Since some parameters store mixins, they can be used for composition and inheritance, too.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/effect-language.md",
+                    {
+                        "id": "tu22"
+                    }
+                ],
+                [
+                    "Custom parameters",
+                    "",
+                    "Custom parameters",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/effect-language.md",
+                    {
+                        "id": "tu23"
+                    }
+                ],
+                [
+                    "You can create your own set of parameters using a structure definition syntax.",
+                    "",
+                    "You can create your own set of parameters using a structure definition syntax.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/effect-language.md",
+                    {
+                        "id": "tu24"
+                    }
+                ],
+                [
+                    "<x1\/>!Note<x2\/>",
+                    "",
+                    "<x1\/>!Note<x2\/>\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/effect-language.md",
+                    {
+                        "id": "tu25"
+                    }
+                ],
+                [
+                    "Even if they're defined in the XKFX file, don't forget the <g1>using<\/g1> statement when you want to use them.",
+                    "",
+                    "Even if they're defined in the XKFX file, don't forget the <g1>using<\/g1> statement when you want to use them.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/effect-language.md",
+                    {
+                        "id": "tu25"
+                    }
+                ],
+                [
+                    "params MyParameters",
+                    "",
+                    "params MyParameters\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/effect-language.md",
+                    {
+                        "id": "tu26"
+                    }
+                ],
+                [
+                    "{",
+                    "",
+                    "{\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/effect-language.md",
+                    {
+                        "id": "tu26"
+                    }
+                ],
+                [
+                    "bool EnableSpecular = true; \/\/ true is the default value",
+                    "",
+                    "\tbool EnableSpecular = true; \/\/ true is the default value\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/effect-language.md",
+                    {
+                        "id": "tu26"
+                    }
+                ],
+                [
+                    "}",
+                    "",
+                    "}\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/effect-language.md",
+                    {
+                        "id": "tu26"
+                    }
+                ],
+                [
+                    "Compositions",
+                    "",
+                    "Compositions",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/effect-language.md",
+                    {
+                        "id": "tu27"
+                    }
+                ],
+                [
+                    "To add a composition, assign the composition variable to your mixin with the syntax below.",
+                    "",
+                    "To add a composition, assign the composition variable to your mixin with the syntax below.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/effect-language.md",
+                    {
+                        "id": "tu28"
+                    }
+                ],
+                [
+                    "\/\/ albedoSpecular is the name of the composition variable in the mixin",
+                    "",
+                    "\/\/ albedoSpecular is the name of the composition variable in the mixin\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/effect-language.md",
+                    {
+                        "id": "tu29"
+                    }
+                ],
+                [
+                    "mixin compose albedoSpecular = ComputeColorTexture;",
+                    "",
+                    "mixin compose albedoSpecular = ComputeColorTexture;\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/effect-language.md",
+                    {
+                        "id": "tu29"
+                    }
+                ],
+                [
+                    "or",
+                    "",
+                    " \r\nor\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/effect-language.md",
+                    {
+                        "id": "tu29"
+                    }
+                ],
+                [
+                    "mixin compose albedoSpecular = MaterialParameters.AlbedoSpecular;",
+                    "",
+                    " \r\nmixin compose albedoSpecular = MaterialParameters.AlbedoSpecular;\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/effect-language.md",
+                    {
+                        "id": "tu29"
+                    }
+                ],
+                [
+                    "Partial effects",
+                    "",
+                    "Partial effects",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/effect-language.md",
+                    {
+                        "id": "tu30"
+                    }
+                ],
+                [
+                    "You can also break the code into sub-mixins to reuse elsewhere with the syntax below.",
+                    "",
+                    "You can also break the code into sub-mixins to reuse elsewhere with the syntax below.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/effect-language.md",
+                    {
+                        "id": "tu31"
+                    }
+                ],
+                [
+                    "partial effect MyPartialEffect",
+                    "",
+                    "partial effect MyPartialEffect\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/effect-language.md",
+                    {
+                        "id": "tu32"
+                    }
+                ],
+                [
+                    "{",
+                    "",
+                    "{\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/effect-language.md",
+                    {
+                        "id": "tu32"
+                    }
+                ],
+                [
+                    "mixin ComputeColorMultiply;",
+                    "",
+                    "\tmixin ComputeColorMultiply;\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/effect-language.md",
+                    {
+                        "id": "tu32"
+                    }
+                ],
+                [
+                    "mixin compose color1 = ComputeColorStream;",
+                    "",
+                    "\tmixin compose color1 = ComputeColorStream;\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/effect-language.md",
+                    {
+                        "id": "tu32"
+                    }
+                ],
+                [
+                    "mixin compose color2 = ComputeColorFixed;",
+                    "",
+                    "\tmixin compose color2 = ComputeColorFixed;\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/effect-language.md",
+                    {
+                        "id": "tu32"
+                    }
+                ],
+                [
+                    "}",
+                    "",
+                    "}\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/effect-language.md",
+                    {
+                        "id": "tu32"
+                    }
+                ],
+                [
+                    "\/\/ to use it",
+                    "",
+                    " \r\n\/\/ to use it\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/effect-language.md",
+                    {
+                        "id": "tu32"
+                    }
+                ],
+                [
+                    "mixin MyPartialEffect;",
+                    "",
+                    "mixin MyPartialEffect;\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/effect-language.md",
+                    {
+                        "id": "tu32"
+                    }
+                ],
+                [
+                    "mixin compose myComposition = MyPartialEffect;",
+                    "",
+                    "mixin compose myComposition = MyPartialEffect;\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/effect-language.md",
+                    {
+                        "id": "tu32"
+                    }
+                ],
+                [
+                    "You can use the <g1>MyPartialEffect<\/g1> mixin like any other mixin in the code.",
+                    "",
+                    "You can use the <g1>MyPartialEffect<\/g1> mixin like any other mixin in the code.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/effect-language.md",
+                    {
+                        "id": "tu33"
+                    }
+                ],
+                [
+                    "See also",
+                    "",
+                    "See also",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/effect-language.md",
+                    {
+                        "id": "tu34"
+                    }
+                ],
+                [
+                    "Shading language",
+                    "",
+                    "<g1>Shading language<\/g1>",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/effect-language.md",
+                    {
+                        "id": "tu35"
+                    }
+                ]
+            ]
+        }
+    ],
+    "seg_enabled": false
+}

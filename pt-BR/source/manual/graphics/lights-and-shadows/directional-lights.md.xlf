@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="/D:/repos/rr/source/manual/graphics/lights-and-shadows/directional-lights.md" source-language="en" target-language="pt" datatype="x-text/x-markdown" okp:inputEncoding="UTF-8">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en">Directional lights</source>
+<target xml:lang="pt">Directional lights</target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Beginner<x id="2"/>
+<x id="3"/>Designer<x id="4"/>
+<x id="5"/>Artist<x id="6"/></source>
+<target xml:lang="pt"><x id="1"/>Beginner<x id="2"/>
+<x id="3"/>Designer<x id="4"/>
+<x id="5"/>Artist<x id="6"/></target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en"><g id="1">Directional lights</g> come uniformly from one direction. They're often used for simulating large, distant light sources such as the sun, and cast shadows. By default, new scenes you create in Stride contain a directional light.</source>
+<target xml:lang="pt"><g id="1">Directional lights</g> come uniformly from one direction. They're often used for simulating large, distant light sources such as the sun, and cast shadows. By default, new scenes you create in Stride contain a directional light.</target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>media/DirectionalLightOverview.png<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>media/DirectionalLightOverview.png<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">The Scene Editor shows the position of directional lights with the following icon:</source>
+<target xml:lang="pt">The Scene Editor shows the position of directional lights with the following icon:</target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>media/DirectionalLight.png<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>media/DirectionalLight.png<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en">When you select a directional light, the gizmo displays the light's main direction:</source>
+<target xml:lang="pt">When you select a directional light, the gizmo displays the light's main direction:</target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>media/DirectionalLightSelected.png<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>media/DirectionalLightSelected.png<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en">Properties</source>
+<target xml:lang="pt">Properties</target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>media/DirectionalLightProperties.png<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>media/DirectionalLightProperties.png<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en">Property</source>
+<target xml:lang="pt">Property</target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en">Description</source>
+<target xml:lang="pt">Description</target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en">Color</source>
+<target xml:lang="pt">Color</target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en">The color of the light (RGB)</source>
+<target xml:lang="pt">The color of the light (RGB)</target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en">Shadow</source>
+<target xml:lang="pt">Shadow</target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en">See <g id="1">Shadow properties</g> below</source>
+<target xml:lang="pt">See <g id="1">Shadow properties</g> below</target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en">Intensity</source>
+<target xml:lang="pt">Intensity</target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en">The intensity of the light. The color is multiplied by this value before being sent to the shader. Note: negative values produce darkness and have unpredictable effects</source>
+<target xml:lang="pt">The intensity of the light. The color is multiplied by this value before being sent to the shader. Note: negative values produce darkness and have unpredictable effects</target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en">Culling Mask</source>
+<target xml:lang="pt">Culling Mask</target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en">Defines which entity groups are affected by this light. By default, all groups are affected</source>
+<target xml:lang="pt">Defines which entity groups are affected by this light. By default, all groups are affected</target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en">Shadows cast by directional lights</source>
+<target xml:lang="pt">Shadows cast by directional lights</target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en">Like <g id="1">point lights</g> and <g id="2">spot lights</g>, directional lights cast shadows. However, shadows cast by directional lights can spawn across a large view range, so they require special treatment to improve their realism.</source>
+<target xml:lang="pt">Like <g id="1">point lights</g> and <g id="2">spot lights</g>, directional lights cast shadows. However, shadows cast by directional lights can spawn across a large view range, so they require special treatment to improve their realism.</target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en">Directional lights use an additional technique, <g id="1">cascaded shadow mapping</g>. This consists of rendering the depth of occluding objects from the point of view of the light to a texture, then rendering the scene taking the occluder information into account.</source>
+<target xml:lang="pt">Directional lights use an additional technique, <g id="1">cascaded shadow mapping</g>. This consists of rendering the depth of occluding objects from the point of view of the light to a texture, then rendering the scene taking the occluder information into account.</target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en">This method slices the depth range from the camera's point of view into different sections or "cascades" of different resolutions. The nearer each cascade is to the camera, the higher resolution it has, and the higher-resolution its shadows are.</source>
+<target xml:lang="pt">This method slices the depth range from the camera's point of view into different sections or "cascades" of different resolutions. The nearer each cascade is to the camera, the higher resolution it has, and the higher-resolution its shadows are.</target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>media/ShadowMappingCascades.png<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>media/ShadowMappingCascades.png<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en">Put simply, the closer shadows are to the camera, the better quality they are. This means you can spend more memory on shadows closer to the camera, where you can see them, and less on distant shadows.</source>
+<target xml:lang="pt">Put simply, the closer shadows are to the camera, the better quality they are. This means you can spend more memory on shadows closer to the camera, where you can see them, and less on distant shadows.</target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en">You can have one, two, or four cascades. The more cascades you use, the more memory you save, but the lower resolution your shadows become over distance.</source>
+<target xml:lang="pt">You can have one, two, or four cascades. The more cascades you use, the more memory you save, but the lower resolution your shadows become over distance.</target>
+</trans-unit>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en">This an example of a shadow map generated from a directional light, using four cascades:</source>
+<target xml:lang="pt">This an example of a shadow map generated from a directional light, using four cascades:</target>
+</trans-unit>
+<trans-unit id="tu29" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>FPS scene shadow map<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>FPS scene shadow map<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu30" xml:space="preserve">
+<source xml:lang="en">See shadow cascades in the editor</source>
+<target xml:lang="pt">See shadow cascades in the editor</target>
+</trans-unit>
+<trans-unit id="tu31" xml:space="preserve">
+<source xml:lang="en">In the <g id="1">Property Grid</g>, under the <g id="2">Shadow</g> properties, enable the <g id="3">Debug</g> option.</source>
+<target xml:lang="pt">In the <g id="1">Property Grid</g>, under the <g id="2">Shadow</g> properties, enable the <g id="3">Debug</g> option.</target>
+</trans-unit>
+<trans-unit id="tu32" xml:space="preserve">
+<source xml:lang="en">Cascades debug off</source>
+<target xml:lang="pt">Cascades debug off</target>
+</trans-unit>
+<trans-unit id="tu33" xml:space="preserve">
+<source xml:lang="en">Cascades debug on</source>
+<target xml:lang="pt">Cascades debug on</target>
+</trans-unit>
+<trans-unit id="tu34" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>media/directional-lights-8.png<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>media/directional-lights-8.png<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu35" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>media/directional-lights-9.png<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>media/directional-lights-9.png<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu36" xml:space="preserve">
+<source xml:lang="en">The different colors indicate the cascade for each distance range (Green: 0, Blue: 1, Purple: 2, Red: 3).</source>
+<target xml:lang="pt">The different colors indicate the cascade for each distance range (Green: 0, Blue: 1, Purple: 2, Red: 3).</target>
+</trans-unit>
+<trans-unit id="tu37" xml:space="preserve">
+<source xml:lang="en">Directional light shadow properties</source>
+<target xml:lang="pt">Directional light shadow properties</target>
+</trans-unit>
+<trans-unit id="tu38" xml:space="preserve">
+<source xml:lang="en">Property</source>
+<target xml:lang="pt">Property</target>
+</trans-unit>
+<trans-unit id="tu39" xml:space="preserve">
+<source xml:lang="en">Description</source>
+<target xml:lang="pt">Description</target>
+</trans-unit>
+<trans-unit id="tu40" xml:space="preserve">
+<source xml:lang="en">Filter</source>
+<target xml:lang="pt">Filter</target>
+</trans-unit>
+<trans-unit id="tu41" xml:space="preserve">
+<source xml:lang="en">Filtering produces <g id="1">soft shadows</g> instead of <g id="2">hard shadows</g>. Currently, the implemented technique is PCF (Percentage Closer Filtering)</source>
+<target xml:lang="pt">Filtering produces <g id="1">soft shadows</g> instead of <g id="2">hard shadows</g>. Currently, the implemented technique is PCF (Percentage Closer Filtering)</target>
+</trans-unit>
+<trans-unit id="tu42" xml:space="preserve">
+<source xml:lang="en">Size</source>
+<target xml:lang="pt">Size</target>
+</trans-unit>
+<trans-unit id="tu43" xml:space="preserve">
+<source xml:lang="en">The size of the shadow map texture. For the directional light, this value is <g id="1">x1</g> by default, as a directional light has more visual impact than lights with shorter ranges</source>
+<target xml:lang="pt">The size of the shadow map texture. For the directional light, this value is <g id="1">x1</g> by default, as a directional light has more visual impact than lights with shorter ranges</target>
+</trans-unit>
+<trans-unit id="tu44" xml:space="preserve">
+<source xml:lang="en">Cascade Count</source>
+<target xml:lang="pt">Cascade Count</target>
+</trans-unit>
+<trans-unit id="tu45" xml:space="preserve">
+<source xml:lang="en">The number of cascades used for slicing the range of depth covered by the light. Values are 1, 2 or 4 cascades; a typical scene uses 4 cascades</source>
+<target xml:lang="pt">The number of cascades used for slicing the range of depth covered by the light. Values are 1, 2 or 4 cascades; a typical scene uses 4 cascades</target>
+</trans-unit>
+<trans-unit id="tu46" xml:space="preserve">
+<source xml:lang="en">Stabilization mode</source>
+<target xml:lang="pt">Stabilization mode</target>
+</trans-unit>
+<trans-unit id="sd1_sf7_tu1" resname="sd1_1" restype="x-paragraph" xml:space="preserve">
+<source xml:lang="en"></source>
+<target xml:lang="pt"></target>
+</trans-unit>
+<trans-unit id="tu47" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>The technique used to reduce shadow map flickering. Flickering is a result of the potential aliasing introduced by the shadow map when a texel from the perspective of the light covers more space than a texel from the camera's perspective.</source>
+<target xml:lang="pt"><x id="1"/>The technique used to reduce shadow map flickering. Flickering is a result of the potential aliasing introduced by the shadow map when a texel from the perspective of the light covers more space than a texel from the camera's perspective.</target>
+</trans-unit>
+<trans-unit id="tu48" xml:space="preserve">
+<source xml:lang="en"><x id="1"/></source>
+<target xml:lang="pt"><x id="1"/></target>
+</trans-unit>
+<trans-unit id="sd1_sf11_tu1" resname="sd1_1" restype="x-paragraph" xml:space="preserve">
+<source xml:lang="en"></source>
+<target xml:lang="pt"></target>
+</trans-unit>
+<trans-unit id="tu49" xml:space="preserve">
+<source xml:lang="en"><x id="1"/></source>
+<target xml:lang="pt"><x id="1"/></target>
+</trans-unit>
+<trans-unit id="tu50" xml:space="preserve">
+<source xml:lang="en"><g id="1">Projection snapping</g> tries to snap the projection matrix of the light to a texel dependent on the resolution of the shadow map texture</source>
+<target xml:lang="pt"><g id="1">Projection snapping</g> tries to snap the projection matrix of the light to a texel dependent on the resolution of the shadow map texture</target>
+</trans-unit>
+<trans-unit id="tu51" xml:space="preserve">
+<source xml:lang="en"><x id="1"/></source>
+<target xml:lang="pt"><x id="1"/></target>
+</trans-unit>
+<trans-unit id="sd1_sf15_tu1" resname="sd1_1" restype="x-paragraph" xml:space="preserve">
+<source xml:lang="en"></source>
+<target xml:lang="pt"></target>
+</trans-unit>
+<trans-unit id="tu52" xml:space="preserve">
+<source xml:lang="en"><x id="1"/><g id="2">View snapping</g> tries to snap the target of the view matrix of the light (center of the camera view cascade frustum)</source>
+<target xml:lang="pt"><x id="1"/><g id="2">View snapping</g> tries to snap the target of the view matrix of the light (center of the camera view cascade frustum)</target>
+</trans-unit>
+<trans-unit id="tu53" xml:space="preserve">
+<source xml:lang="en"><x id="1"/></source>
+<target xml:lang="pt"><x id="1"/></target>
+</trans-unit>
+<trans-unit id="sd1_sf19_tu1" resname="sd1_1" restype="x-paragraph" xml:space="preserve">
+<source xml:lang="en"></source>
+<target xml:lang="pt"></target>
+</trans-unit>
+<trans-unit id="tu54" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Both projection and view snapping force the shadow matrix to cover a larger region, increasing the aliasing of the shadow map texture. Note that when using depth range camera is set to automatic, the stabilization mode is ignored</source>
+<target xml:lang="pt"><x id="1"/>Both projection and view snapping force the shadow matrix to cover a larger region, increasing the aliasing of the shadow map texture. Note that when using depth range camera is set to automatic, the stabilization mode is ignored</target>
+</trans-unit>
+<trans-unit id="tu55" xml:space="preserve">
+<source xml:lang="en"><x id="1"/></source>
+<target xml:lang="pt"><x id="1"/></target>
+</trans-unit>
+<trans-unit id="tu56" xml:space="preserve">
+<source xml:lang="en">Depth Range</source>
+<target xml:lang="pt">Depth Range</target>
+</trans-unit>
+<trans-unit id="tu57" xml:space="preserve">
+<source xml:lang="en">How the visible depth range from the camera's perspective is calculated. This directly affects how near and how far cascades splits occur</source>
+<target xml:lang="pt">How the visible depth range from the camera's perspective is calculated. This directly affects how near and how far cascades splits occur</target>
+</trans-unit>
+<trans-unit id="tu58" xml:space="preserve">
+<source xml:lang="en">Blend Cascades</source>
+<target xml:lang="pt">Blend Cascades</target>
+</trans-unit>
+<trans-unit id="tu59" xml:space="preserve">
+<source xml:lang="en">Smooths the transition between cascades</source>
+<target xml:lang="pt">Smooths the transition between cascades</target>
+</trans-unit>
+<trans-unit id="tu60" xml:space="preserve">
+<source xml:lang="en">Partition mode</source>
+<target xml:lang="pt">Partition mode</target>
+</trans-unit>
+<trans-unit id="sd1_sf23_tu1" resname="sd1_1" restype="x-paragraph" xml:space="preserve">
+<source xml:lang="en"></source>
+<target xml:lang="pt"></target>
+</trans-unit>
+<trans-unit id="tu61" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>How the cascade split distance is determined.</source>
+<target xml:lang="pt"><x id="1"/>How the cascade split distance is determined.</target>
+</trans-unit>
+<trans-unit id="tu62" xml:space="preserve">
+<source xml:lang="en"><x id="1"/></source>
+<target xml:lang="pt"><x id="1"/></target>
+</trans-unit>
+<trans-unit id="sd1_sf27_tu1" resname="sd1_1" restype="x-paragraph" xml:space="preserve">
+<source xml:lang="en"></source>
+<target xml:lang="pt"></target>
+</trans-unit>
+<trans-unit id="tu63" xml:space="preserve">
+<source xml:lang="en"><x id="1"/></source>
+<target xml:lang="pt"><x id="1"/></target>
+</trans-unit>
+<trans-unit id="tu64" xml:space="preserve">
+<source xml:lang="en"><g id="1">Manual</g>: the split is defined manually for each cascade, in percentage of the visible depth range. A value of 0.1 for a cascade means that the cascade is rendered on the distance 0.1 * (VisibleDepthMax - VisibleDepthMin)</source>
+<target xml:lang="pt"><g id="1">Manual</g>: the split is defined manually for each cascade, in percentage of the visible depth range. A value of 0.1 for a cascade means that the cascade is rendered on the distance 0.1 * (VisibleDepthMax - VisibleDepthMin)</target>
+</trans-unit>
+<trans-unit id="sd1_sf29_tu1" resname="sd1_1" restype="x-paragraph" xml:space="preserve">
+<source xml:lang="en"></source>
+<target xml:lang="pt"></target>
+</trans-unit>
+<trans-unit id="tu65" xml:space="preserve">
+<source xml:lang="en"><x id="1"/></source>
+<target xml:lang="pt"><x id="1"/></target>
+</trans-unit>
+<trans-unit id="sd1_sf31_tu1" resname="sd1_1" restype="x-paragraph" xml:space="preserve">
+<source xml:lang="en"></source>
+<target xml:lang="pt"></target>
+</trans-unit>
+<trans-unit id="tu66" xml:space="preserve">
+<source xml:lang="en"><x id="1"/></source>
+<target xml:lang="pt"><x id="1"/></target>
+</trans-unit>
+<trans-unit id="tu67" xml:space="preserve">
+<source xml:lang="en"><g id="1">Logarithmic</g>: the split is automatically calculated using a logarithmic scale </source>
+<target xml:lang="pt"><g id="1">Logarithmic</g>: the split is automatically calculated using a logarithmic scale </target>
+</trans-unit>
+<trans-unit id="sd1_sf33_tu1" resname="sd1_1" restype="x-paragraph" xml:space="preserve">
+<source xml:lang="en"></source>
+<target xml:lang="pt"></target>
+</trans-unit>
+<trans-unit id="tu68" xml:space="preserve">
+<source xml:lang="en"><x id="1"/> The PSSM factor lets you blend from a pure logarithmic scale (0.0f) to a pure uniform scale (1.0f)</source>
+<target xml:lang="pt"><x id="1"/> The PSSM factor lets you blend from a pure logarithmic scale (0.0f) to a pure uniform scale (1.0f)</target>
+</trans-unit>
+<trans-unit id="sd1_sf35_tu1" resname="sd1_1" restype="x-paragraph" xml:space="preserve">
+<source xml:lang="en"></source>
+<target xml:lang="pt"></target>
+</trans-unit>
+<trans-unit id="tu69" xml:space="preserve">
+<source xml:lang="en"><x id="1"/></source>
+<target xml:lang="pt"><x id="1"/></target>
+</trans-unit>
+<trans-unit id="tu70" xml:space="preserve">
+<source xml:lang="en">Depth Bias</source>
+<target xml:lang="pt">Depth Bias</target>
+</trans-unit>
+<trans-unit id="tu71" xml:space="preserve">
+<source xml:lang="en">The amount of depth to add to the sampling depth to avoid the phenomenon of shadow acne</source>
+<target xml:lang="pt">The amount of depth to add to the sampling depth to avoid the phenomenon of shadow acne</target>
+</trans-unit>
+<trans-unit id="tu72" xml:space="preserve">
+<source xml:lang="en">Normal Offset Scale</source>
+<target xml:lang="pt">Normal Offset Scale</target>
+</trans-unit>
+<trans-unit id="tu73" xml:space="preserve">
+<source xml:lang="en">A factor multiplied by the depth bias toward the normal</source>
+<target xml:lang="pt">A factor multiplied by the depth bias toward the normal</target>
+</trans-unit>
+<trans-unit id="tu74" xml:space="preserve">
+<source xml:lang="en">Debug</source>
+<target xml:lang="pt">Debug</target>
+</trans-unit>
+<trans-unit id="tu75" xml:space="preserve">
+<source xml:lang="en">Displays the shadow map cascades in the Scene Editor</source>
+<target xml:lang="pt">Displays the shadow map cascades in the Scene Editor</target>
+</trans-unit>
+<trans-unit id="tu76" xml:space="preserve">
+<source xml:lang="en">See also</source>
+<target xml:lang="pt">See also</target>
+</trans-unit>
+<trans-unit id="tu77" xml:space="preserve">
+<source xml:lang="en"><g id="1">Add a light</g></source>
+<target xml:lang="pt"><g id="1">Add a light</g></target>
+</trans-unit>
+<trans-unit id="tu78" xml:space="preserve">
+<source xml:lang="en"><g id="1">Point lights</g></source>
+<target xml:lang="pt"><g id="1">Point lights</g></target>
+</trans-unit>
+<trans-unit id="tu79" xml:space="preserve">
+<source xml:lang="en"><g id="1">Ambient lights</g></source>
+<target xml:lang="pt"><g id="1">Ambient lights</g></target>
+</trans-unit>
+<trans-unit id="tu80" xml:space="preserve">
+<source xml:lang="en"><g id="1">Skybox lights</g></source>
+<target xml:lang="pt"><g id="1">Skybox lights</g></target>
+</trans-unit>
+<trans-unit id="tu81" xml:space="preserve">
+<source xml:lang="en"><g id="1">Spot lights</g></source>
+<target xml:lang="pt"><g id="1">Spot lights</g></target>
+</trans-unit>
+<trans-unit id="tu82" xml:space="preserve">
+<source xml:lang="en"><g id="1">Light probes</g></source>
+<target xml:lang="pt"><g id="1">Light probes</g></target>
+</trans-unit>
+<trans-unit id="tu83" xml:space="preserve">
+<source xml:lang="en"><g id="1">Light shafts</g></source>
+<target xml:lang="pt"><g id="1">Light shafts</g></target>
+</trans-unit>
+<trans-unit id="tu84" xml:space="preserve">
+<source xml:lang="en"><g id="1">Shadows</g></source>
+<target xml:lang="pt"><g id="1">Shadows</g></target>
+</trans-unit>
+</body>
+</file>
+</xliff>

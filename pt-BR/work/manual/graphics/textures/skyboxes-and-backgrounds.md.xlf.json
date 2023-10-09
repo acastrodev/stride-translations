@@ -1,0 +1,892 @@
+{
+    "filename": "manual\\graphics\\textures\\skyboxes-and-backgrounds.md.xlf",
+    "files": [
+        {
+            "\/D:\/repos\/rr\/source\/manual\/graphics\/textures\/skyboxes-and-backgrounds.md": [
+                [
+                    "Skyboxes and backgrounds",
+                    "",
+                    "Skyboxes and backgrounds",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/textures\/skyboxes-and-backgrounds.md",
+                    {
+                        "id": "tu1"
+                    }
+                ],
+                [
+                    "<x1\/>Beginner<x2\/>",
+                    "",
+                    "<x1\/>Beginner<x2\/>\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/textures\/skyboxes-and-backgrounds.md",
+                    {
+                        "id": "tu2"
+                    }
+                ],
+                [
+                    "<x3\/>Designer<x4\/>",
+                    "",
+                    "<x3\/>Designer<x4\/>\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/textures\/skyboxes-and-backgrounds.md",
+                    {
+                        "id": "tu2"
+                    }
+                ],
+                [
+                    "<x5\/>Programmer<x6\/>",
+                    "",
+                    "<x5\/>Programmer<x6\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/textures\/skyboxes-and-backgrounds.md",
+                    {
+                        "id": "tu2"
+                    }
+                ],
+                [
+                    "<g1>Skyboxes<\/g1> are backgrounds that create the illusion of space and distance.",
+                    "",
+                    "<g1>Skyboxes<\/g1> are backgrounds that create the illusion of space and distance.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/textures\/skyboxes-and-backgrounds.md",
+                    {
+                        "id": "tu3"
+                    }
+                ],
+                [
+                    "Typical skybox backgrounds include skies, clouds, mountains, and other scenery.",
+                    "",
+                    " Typical skybox backgrounds include skies, clouds, mountains, and other scenery.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/textures\/skyboxes-and-backgrounds.md",
+                    {
+                        "id": "tu3"
+                    }
+                ],
+                [
+                    "As skyboxes are prerendered, they require little GPU and CPU.",
+                    "",
+                    " As skyboxes are prerendered, they require little GPU and CPU.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/textures\/skyboxes-and-backgrounds.md",
+                    {
+                        "id": "tu3"
+                    }
+                ],
+                [
+                    "You can use <g1>cubemaps<\/g1> or <g2>360° panoramic textures<\/g2> as skyboxes.",
+                    "",
+                    "You can use <g1>cubemaps<\/g1> or <g2>360° panoramic textures<\/g2> as skyboxes.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/textures\/skyboxes-and-backgrounds.md",
+                    {
+                        "id": "tu4"
+                    }
+                ],
+                [
+                    "You can also <g3>use them to light the scene<\/g3>.",
+                    "",
+                    " You can also <g3>use them to light the scene<\/g3>.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/textures\/skyboxes-and-backgrounds.md",
+                    {
+                        "id": "tu4"
+                    }
+                ],
+                [
+                    "<x1\/>!Note<x2\/>",
+                    "",
+                    "<x1\/>!Note<x2\/>\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/textures\/skyboxes-and-backgrounds.md",
+                    {
+                        "id": "tu5"
+                    }
+                ],
+                [
+                    "Currently, Stride doesn't support skydomes or local skyboxes.",
+                    "",
+                    "Currently, Stride doesn't support skydomes or local skyboxes.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/textures\/skyboxes-and-backgrounds.md",
+                    {
+                        "id": "tu5"
+                    }
+                ],
+                [
+                    "Alternatively, you can display a <g1>2D background<\/g1>, which is often useful for 2D games.",
+                    "",
+                    "Alternatively, you can display a <g1>2D background<\/g1>, which is often useful for 2D games.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/textures\/skyboxes-and-backgrounds.md",
+                    {
+                        "id": "tu6"
+                    }
+                ],
+                [
+                    "Cubemaps",
+                    "",
+                    "Cubemaps",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/textures\/skyboxes-and-backgrounds.md",
+                    {
+                        "id": "tu7"
+                    }
+                ],
+                [
+                    "A <g1>cubemap<\/g1> is a six-sided texture.",
+                    "",
+                    "A <g1>cubemap<\/g1> is a six-sided texture.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/textures\/skyboxes-and-backgrounds.md",
+                    {
+                        "id": "tu8"
+                    }
+                ],
+                [
+                    "When these textures are assembled in a cube around the scene, the cubemap simulates spacious 3D surroundings.",
+                    "",
+                    " When these textures are assembled in a cube around the scene, the cubemap simulates spacious 3D surroundings.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/textures\/skyboxes-and-backgrounds.md",
+                    {
+                        "id": "tu8"
+                    }
+                ],
+                [
+                    "<x1\/>Distant planet skybox<x2\/>",
+                    "",
+                    "<x1\/>Distant planet skybox<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/textures\/skyboxes-and-backgrounds.md",
+                    {
+                        "id": "tu9"
+                    }
+                ],
+                [
+                    "<x1\/>Merged skybox<x2\/>",
+                    "",
+                    "<x1\/>Merged skybox<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/textures\/skyboxes-and-backgrounds.md",
+                    {
+                        "id": "tu10"
+                    }
+                ],
+                [
+                    "Currently, Game Studio can't convert image files to cubemaps (<g1>.dds<\/g1> files).",
+                    "",
+                    "Currently, Game Studio can't convert image files to cubemaps (<g1>.dds<\/g1> files).",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/textures\/skyboxes-and-backgrounds.md",
+                    {
+                        "id": "tu11"
+                    }
+                ],
+                [
+                    "Use another application to create a cubemap from separate image files, such as:",
+                    "",
+                    " Use another application to create a cubemap from separate image files, such as:",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/textures\/skyboxes-and-backgrounds.md",
+                    {
+                        "id": "tu11"
+                    }
+                ],
+                [
+                    "Nvidia conversion tool",
+                    "",
+                    "<g1>Nvidia conversion tool<\/g1>",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/textures\/skyboxes-and-backgrounds.md",
+                    {
+                        "id": "tu12"
+                    }
+                ],
+                [
+                    "ATI conversion tool",
+                    "",
+                    "<g1>ATI conversion tool<\/g1>",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/textures\/skyboxes-and-backgrounds.md",
+                    {
+                        "id": "tu13"
+                    }
+                ],
+                [
+                    "Create a cubemap in Game Studio",
+                    "",
+                    "Create a cubemap in Game Studio",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/textures\/skyboxes-and-backgrounds.md",
+                    {
+                        "id": "tu14"
+                    }
+                ],
+                [
+                    "You can capture a cubemap from a position in your scene.",
+                    "",
+                    "You can capture a cubemap from a position in your scene.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/textures\/skyboxes-and-backgrounds.md",
+                    {
+                        "id": "tu15"
+                    }
+                ],
+                [
+                    "In the <g1>scene editor<\/g1>, position the camera at the point where you want to capture the cubemap.",
+                    "",
+                    "In the <g1>scene editor<\/g1>, position the camera at the point where you want to capture the cubemap.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/textures\/skyboxes-and-backgrounds.md",
+                    {
+                        "id": "tu16"
+                    }
+                ],
+                [
+                    "The direction the camera faces doesn't matter, only the position.",
+                    "",
+                    " The direction the camera faces doesn't matter, only the position.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/textures\/skyboxes-and-backgrounds.md",
+                    {
+                        "id": "tu16"
+                    }
+                ],
+                [
+                    "Typically, you should capture cubemaps at the center of your scene to create the best all-round view.",
+                    "",
+                    "Typically, you should capture cubemaps at the center of your scene to create the best all-round view.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/textures\/skyboxes-and-backgrounds.md",
+                    {
+                        "id": "tu17"
+                    }
+                ],
+                [
+                    "In the scene editor toolbar, open the <g1>Lighting options<\/g1> menu.",
+                    "",
+                    "In the scene editor toolbar, open the <g1>Lighting options<\/g1> menu.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/textures\/skyboxes-and-backgrounds.md",
+                    {
+                        "id": "tu18"
+                    }
+                ],
+                [
+                    "<x1\/>Lighting options<x2\/>",
+                    "",
+                    "<x1\/>Lighting options<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/textures\/skyboxes-and-backgrounds.md",
+                    {
+                        "id": "tu19"
+                    }
+                ],
+                [
+                    "Under <g1>Cubemap<\/g1>, click <g2>Generate<\/g2>.",
+                    "",
+                    "Under <g1>Cubemap<\/g1>, click <g2>Generate<\/g2>.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/textures\/skyboxes-and-backgrounds.md",
+                    {
+                        "id": "tu20"
+                    }
+                ],
+                [
+                    "Browse to the location on disk you want to save the cubemap, specify a name, and click <g1>Save<\/g1>.",
+                    "",
+                    "Browse to the location on disk you want to save the cubemap, specify a name, and click <g1>Save<\/g1>.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/textures\/skyboxes-and-backgrounds.md",
+                    {
+                        "id": "tu21"
+                    }
+                ],
+                [
+                    "<x1\/>!Tip<x2\/>",
+                    "",
+                    "<x1\/>!Tip<x2\/>\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/textures\/skyboxes-and-backgrounds.md",
+                    {
+                        "id": "tu22"
+                    }
+                ],
+                [
+                    "We recommend you save the cubemap in your project <g1>Resources<\/g1> folder.",
+                    "",
+                    "We recommend you save the cubemap in your project <g1>Resources<\/g1> folder.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/textures\/skyboxes-and-backgrounds.md",
+                    {
+                        "id": "tu22"
+                    }
+                ],
+                [
+                    "For more information, see <g2>Organize your files in version control<\/g2>.",
+                    "",
+                    " For more information, see <g2>Organize your files in version control<\/g2>.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/textures\/skyboxes-and-backgrounds.md",
+                    {
+                        "id": "tu22"
+                    }
+                ],
+                [
+                    "Game Studio creates a cubemap <g1>.dds<\/g1> file in the location you specified.",
+                    "",
+                    "Game Studio creates a cubemap <g1>.dds<\/g1> file in the location you specified.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/textures\/skyboxes-and-backgrounds.md",
+                    {
+                        "id": "tu23"
+                    }
+                ],
+                [
+                    "360° panoramic textures",
+                    "",
+                    "360° panoramic textures",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/textures\/skyboxes-and-backgrounds.md",
+                    {
+                        "id": "tu24"
+                    }
+                ],
+                [
+                    "Instead of using a cubemap, you can use a <g1>360° panoramic texture<\/g1> as a 3D background.",
+                    "",
+                    "Instead of using a cubemap, you can use a <g1>360° panoramic texture<\/g1> as a 3D background.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/textures\/skyboxes-and-backgrounds.md",
+                    {
+                        "id": "tu25"
+                    }
+                ],
+                [
+                    "360° panorama",
+                    "",
+                    "360° panorama",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/textures\/skyboxes-and-backgrounds.md",
+                    {
+                        "id": "tu26"
+                    }
+                ],
+                [
+                    "Appearance in game",
+                    "",
+                    "Appearance in game",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/textures\/skyboxes-and-backgrounds.md",
+                    {
+                        "id": "tu27"
+                    }
+                ],
+                [
+                    "<x1\/>Panorama texture<x2\/>",
+                    "",
+                    "<x1\/>Panorama texture<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/textures\/skyboxes-and-backgrounds.md",
+                    {
+                        "id": "tu28"
+                    }
+                ],
+                [
+                    "<x1\/>Panorama in game<x2\/>",
+                    "",
+                    "<x1\/>Panorama in game<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/textures\/skyboxes-and-backgrounds.md",
+                    {
+                        "id": "tu29"
+                    }
+                ],
+                [
+                    "Image courtesy of <g2>Texturify<\/g2>",
+                    "",
+                    "<g1>Image courtesy of <g2>Texturify<\/g2><\/g1>",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/textures\/skyboxes-and-backgrounds.md",
+                    {
+                        "id": "tu30"
+                    }
+                ],
+                [
+                    "<x1\/>!Note<x2\/>",
+                    "",
+                    "<x1\/>!Note<x2\/>\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/textures\/skyboxes-and-backgrounds.md",
+                    {
+                        "id": "tu31"
+                    }
+                ],
+                [
+                    "Remember that <g1>post effects<\/g1> affect the appearance of your skybox.",
+                    "",
+                    "Remember that <g1>post effects<\/g1> affect the appearance of your skybox.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/textures\/skyboxes-and-backgrounds.md",
+                    {
+                        "id": "tu31"
+                    }
+                ],
+                [
+                    "If it doesn't look how you expect, try changing your post effect settings.",
+                    "",
+                    " If it doesn't look how you expect, try changing your post effect settings.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/textures\/skyboxes-and-backgrounds.md",
+                    {
+                        "id": "tu31"
+                    }
+                ],
+                [
+                    "Add a cubemap or 360° panoramic texture to the project",
+                    "",
+                    "Add a cubemap or 360° panoramic texture to the project",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/textures\/skyboxes-and-backgrounds.md",
+                    {
+                        "id": "tu32"
+                    }
+                ],
+                [
+                    "You add these like other color textures.",
+                    "",
+                    "You add these like other color textures.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/textures\/skyboxes-and-backgrounds.md",
+                    {
+                        "id": "tu33"
+                    }
+                ],
+                [
+                    "In the <g1>Asset View<\/g1>, click <x1\/>Add asset<x2\/>, select <g2>Textures<\/g2> > <g3>Color texture<\/g3>, and browse to the file.",
+                    "",
+                    "In the <g1>Asset View<\/g1>, click <x1\/>Add asset<x2\/>, select <g2>Textures<\/g2> > <g3>Color texture<\/g3>, and browse to the file.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/textures\/skyboxes-and-backgrounds.md",
+                    {
+                        "id": "tu34"
+                    }
+                ],
+                [
+                    "<x1\/>Select texture as asset type<x2\/>",
+                    "",
+                    "<x1\/>Select texture as asset type<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/textures\/skyboxes-and-backgrounds.md",
+                    {
+                        "id": "tu35"
+                    }
+                ],
+                [
+                    "Alternatively, drag and drop the file from <g1>Windows Explorer<\/g1> to the <g2>Asset View<\/g2>, then select <g3>Color texture<\/g3>.",
+                    "",
+                    "Alternatively, drag and drop the file from <g1>Windows Explorer<\/g1> to the <g2>Asset View<\/g2>, then select <g3>Color texture<\/g3>.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/textures\/skyboxes-and-backgrounds.md",
+                    {
+                        "id": "tu36"
+                    }
+                ],
+                [
+                    "<x1\/>Drag and drop background texture<x2\/>",
+                    "",
+                    "<x1\/>Drag and drop background texture<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/textures\/skyboxes-and-backgrounds.md",
+                    {
+                        "id": "tu37"
+                    }
+                ],
+                [
+                    "Create a skybox",
+                    "",
+                    "Create a skybox",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/textures\/skyboxes-and-backgrounds.md",
+                    {
+                        "id": "tu38"
+                    }
+                ],
+                [
+                    "To create a skybox, add a cubemap or 360° panoramic texture to a <g1>background component<\/g1>.",
+                    "",
+                    "To create a skybox, add a cubemap or 360° panoramic texture to a <g1>background component<\/g1>.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/textures\/skyboxes-and-backgrounds.md",
+                    {
+                        "id": "tu39"
+                    }
+                ],
+                [
+                    "Stride includes an entity with a background component in the project by default.",
+                    "",
+                    "Stride includes an entity with a background component in the project by default.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/textures\/skyboxes-and-backgrounds.md",
+                    {
+                        "id": "tu40"
+                    }
+                ],
+                [
+                    "Only one background can be active in a scene at a time.",
+                    "",
+                    " Only one background can be active in a scene at a time.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/textures\/skyboxes-and-backgrounds.md",
+                    {
+                        "id": "tu40"
+                    }
+                ],
+                [
+                    "If there are multiple backgrounds, Stride only loads the first.",
+                    "",
+                    " If there are multiple backgrounds, Stride only loads the first.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/textures\/skyboxes-and-backgrounds.md",
+                    {
+                        "id": "tu40"
+                    }
+                ],
+                [
+                    "You can add background components to as many entities as you need.",
+                    "",
+                    "You can add background components to as many entities as you need.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/textures\/skyboxes-and-backgrounds.md",
+                    {
+                        "id": "tu41"
+                    }
+                ],
+                [
+                    "You might want to include more than one background, for example, if you want to switch skyboxes at runtime.",
+                    "",
+                    " You might want to include more than one background, for example, if you want to switch skyboxes at runtime.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/textures\/skyboxes-and-backgrounds.md",
+                    {
+                        "id": "tu41"
+                    }
+                ],
+                [
+                    "Add a background entity",
+                    "",
+                    "Add a background entity",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/textures\/skyboxes-and-backgrounds.md",
+                    {
+                        "id": "tu42"
+                    }
+                ],
+                [
+                    "In the <g1>Scene view<\/g1>, select the entity you want to add the component to.",
+                    "",
+                    "In the <g1>Scene view<\/g1>, select the entity you want to add the component to.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/textures\/skyboxes-and-backgrounds.md",
+                    {
+                        "id": "tu43"
+                    }
+                ],
+                [
+                    "This can be an empty entity.",
+                    "",
+                    "This can be an empty entity.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/textures\/skyboxes-and-backgrounds.md",
+                    {
+                        "id": "tu44"
+                    }
+                ],
+                [
+                    "Its position in the scene doesn't matter.",
+                    "",
+                    " Its position in the scene doesn't matter.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/textures\/skyboxes-and-backgrounds.md",
+                    {
+                        "id": "tu44"
+                    }
+                ],
+                [
+                    "In the <g1>Property Grid<\/g1> (on the right by default), click <g2>Add component<\/g2> and select <g3>Background<\/g3>.",
+                    "",
+                    "In the <g1>Property Grid<\/g1> (on the right by default), click <g2>Add component<\/g2> and select <g3>Background<\/g3>.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/textures\/skyboxes-and-backgrounds.md",
+                    {
+                        "id": "tu45"
+                    }
+                ],
+                [
+                    "<x1\/>Add background component<x2\/>",
+                    "",
+                    "<x1\/>Add background component<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/textures\/skyboxes-and-backgrounds.md",
+                    {
+                        "id": "tu46"
+                    }
+                ],
+                [
+                    "Under <g1>Texture<\/g1>, select the cubemap or 360° panoramic texture you want to use in the skybox.",
+                    "",
+                    "Under <g1>Texture<\/g1>, select the cubemap or 360° panoramic texture you want to use in the skybox.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/textures\/skyboxes-and-backgrounds.md",
+                    {
+                        "id": "tu47"
+                    }
+                ],
+                [
+                    "<x1\/>Background component properties<x2\/>",
+                    "",
+                    "<x1\/>Background component properties<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/textures\/skyboxes-and-backgrounds.md",
+                    {
+                        "id": "tu48"
+                    }
+                ],
+                [
+                    "Use a skybox as a light source",
+                    "",
+                    "Use a skybox as a light source",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/textures\/skyboxes-and-backgrounds.md",
+                    {
+                        "id": "tu49"
+                    }
+                ],
+                [
+                    "You can use a skybox to light the scene.",
+                    "",
+                    "You can use a skybox to light the scene.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/textures\/skyboxes-and-backgrounds.md",
+                    {
+                        "id": "tu50"
+                    }
+                ],
+                [
+                    "Stride analyzes the skybox texture and generates lighting using <g1>image-based lighting (Wikipedia)<\/g1>.",
+                    "",
+                    " Stride analyzes the skybox texture and generates lighting using <g1>image-based lighting (Wikipedia)<\/g1>.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/textures\/skyboxes-and-backgrounds.md",
+                    {
+                        "id": "tu50"
+                    }
+                ],
+                [
+                    "For more information, see <g2>Skybox lights<\/g2>.",
+                    "",
+                    " For more information, see <g2>Skybox lights<\/g2>.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/textures\/skyboxes-and-backgrounds.md",
+                    {
+                        "id": "tu50"
+                    }
+                ],
+                [
+                    "Change the skybox at runtime",
+                    "",
+                    "Change the skybox at runtime",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/textures\/skyboxes-and-backgrounds.md",
+                    {
+                        "id": "tu51"
+                    }
+                ],
+                [
+                    "The following code changes the cubemap in a background:",
+                    "",
+                    "The following code changes the cubemap in a background:",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/textures\/skyboxes-and-backgrounds.md",
+                    {
+                        "id": "tu52"
+                    }
+                ],
+                [
+                    "public Texture cubemapTexture;",
+                    "",
+                    "public Texture cubemapTexture;\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/textures\/skyboxes-and-backgrounds.md",
+                    {
+                        "id": "tu53"
+                    }
+                ],
+                [
+                    "public void ChangeBackgroundParameters()",
+                    "",
+                    "public void ChangeBackgroundParameters()\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/textures\/skyboxes-and-backgrounds.md",
+                    {
+                        "id": "tu53"
+                    }
+                ],
+                [
+                    "{",
+                    "",
+                    "{\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/textures\/skyboxes-and-backgrounds.md",
+                    {
+                        "id": "tu53"
+                    }
+                ],
+                [
+                    "\/\/ Get the background component from an entity",
+                    "",
+                    "    \/\/ Get the background component from an entity\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/textures\/skyboxes-and-backgrounds.md",
+                    {
+                        "id": "tu53"
+                    }
+                ],
+                [
+                    "var background = directionalLight.Get<BackgroundComponent>();",
+                    "",
+                    "\tvar background = directionalLight.Get<BackgroundComponent>();\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/textures\/skyboxes-and-backgrounds.md",
+                    {
+                        "id": "tu53"
+                    }
+                ],
+                [
+                    "\/\/ Replace the existing background",
+                    "",
+                    "\r\n\t\/\/ Replace the existing background\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/textures\/skyboxes-and-backgrounds.md",
+                    {
+                        "id": "tu53"
+                    }
+                ],
+                [
+                    "background.Texture = cubemapTexture;",
+                    "",
+                    "\tbackground.Texture = cubemapTexture;\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/textures\/skyboxes-and-backgrounds.md",
+                    {
+                        "id": "tu53"
+                    }
+                ],
+                [
+                    "\/\/ Change the background intensity",
+                    "",
+                    "\r\n\t\/\/ Change the background intensity\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/textures\/skyboxes-and-backgrounds.md",
+                    {
+                        "id": "tu53"
+                    }
+                ],
+                [
+                    "background.Intensity = 1.5f;",
+                    "",
+                    "\tbackground.Intensity = 1.5f;\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/textures\/skyboxes-and-backgrounds.md",
+                    {
+                        "id": "tu53"
+                    }
+                ],
+                [
+                    "}",
+                    "",
+                    "}\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/textures\/skyboxes-and-backgrounds.md",
+                    {
+                        "id": "tu53"
+                    }
+                ],
+                [
+                    "Convert cubemaps to panoramas and vice versa",
+                    "",
+                    "Convert cubemaps to panoramas and vice versa",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/textures\/skyboxes-and-backgrounds.md",
+                    {
+                        "id": "tu54"
+                    }
+                ],
+                [
+                    "Various tools exist to convert a panoramas to cubemaps and vice versa, including:",
+                    "",
+                    "Various tools exist to convert a panoramas to cubemaps and vice versa, including:",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/textures\/skyboxes-and-backgrounds.md",
+                    {
+                        "id": "tu55"
+                    }
+                ],
+                [
+                    "Panorama Converter",
+                    "",
+                    "<g1>Panorama Converter<\/g1>",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/textures\/skyboxes-and-backgrounds.md",
+                    {
+                        "id": "tu56"
+                    }
+                ],
+                [
+                    "Panorama to Cubemap",
+                    "",
+                    "<g1>Panorama to Cubemap<\/g1>",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/textures\/skyboxes-and-backgrounds.md",
+                    {
+                        "id": "tu57"
+                    }
+                ],
+                [
+                    "Convert Cubemap to Equirectangular",
+                    "",
+                    "<g1>Convert Cubemap to Equirectangular<\/g1>",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/textures\/skyboxes-and-backgrounds.md",
+                    {
+                        "id": "tu58"
+                    }
+                ],
+                [
+                    "Set a 2D background",
+                    "",
+                    "Set a 2D background",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/textures\/skyboxes-and-backgrounds.md",
+                    {
+                        "id": "tu59"
+                    }
+                ],
+                [
+                    "Instead of using a 3D skybox, you can display the texture as a static background.",
+                    "",
+                    "Instead of using a 3D skybox, you can display the texture as a static background.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/textures\/skyboxes-and-backgrounds.md",
+                    {
+                        "id": "tu60"
+                    }
+                ],
+                [
+                    "This displays the texture as a flat image that stays static no matter how you move the camera.",
+                    "",
+                    " This displays the texture as a flat image that stays static no matter how you move the camera.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/textures\/skyboxes-and-backgrounds.md",
+                    {
+                        "id": "tu60"
+                    }
+                ],
+                [
+                    "This is often useful for 2D games.",
+                    "",
+                    " This is often useful for 2D games.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/textures\/skyboxes-and-backgrounds.md",
+                    {
+                        "id": "tu60"
+                    }
+                ],
+                [
+                    "To do this, in the <g1>Background<\/g1> component properties, select <g2>2D background<\/g2>.",
+                    "",
+                    "To do this, in the <g1>Background<\/g1> component properties, select <g2>2D background<\/g2>.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/textures\/skyboxes-and-backgrounds.md",
+                    {
+                        "id": "tu61"
+                    }
+                ],
+                [
+                    "<x1\/>Background component properties<x2\/>",
+                    "",
+                    "<x1\/>Background component properties<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/textures\/skyboxes-and-backgrounds.md",
+                    {
+                        "id": "tu62"
+                    }
+                ],
+                [
+                    "If you enable this with a cubemap, Stride uses the first face of the cubemap as the background.",
+                    "",
+                    "If you enable this with a cubemap, Stride uses the first face of the cubemap as the background.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/textures\/skyboxes-and-backgrounds.md",
+                    {
+                        "id": "tu63"
+                    }
+                ],
+                [
+                    "Use a video as a skybox",
+                    "",
+                    "Use a video as a skybox",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/textures\/skyboxes-and-backgrounds.md",
+                    {
+                        "id": "tu64"
+                    }
+                ],
+                [
+                    "For details, see <g1>Videos - Use a video as a skybox<\/g1>.",
+                    "",
+                    "For details, see <g1>Videos - Use a video as a skybox<\/g1>.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/textures\/skyboxes-and-backgrounds.md",
+                    {
+                        "id": "tu65"
+                    }
+                ],
+                [
+                    "See also",
+                    "",
+                    "See also",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/textures\/skyboxes-and-backgrounds.md",
+                    {
+                        "id": "tu66"
+                    }
+                ],
+                [
+                    "Skybox lights",
+                    "",
+                    "<g1>Skybox lights<\/g1>",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/textures\/skyboxes-and-backgrounds.md",
+                    {
+                        "id": "tu67"
+                    }
+                ],
+                [
+                    "Lights and shadows",
+                    "",
+                    "<g1>Lights and shadows<\/g1>",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/textures\/skyboxes-and-backgrounds.md",
+                    {
+                        "id": "tu68"
+                    }
+                ]
+            ]
+        }
+    ],
+    "seg_enabled": false
+}

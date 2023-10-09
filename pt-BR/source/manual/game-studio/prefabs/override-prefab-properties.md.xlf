@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="/D:/repos/rr/source/manual/game-studio/prefabs/override-prefab-properties.md" source-language="en" target-language="pt" datatype="x-text/x-markdown" okp:inputEncoding="UTF-8">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en">Override prefab properties</source>
+<target xml:lang="pt">Override prefab properties</target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Intermediate<x id="2"/>
+<x id="3"/>Programmer<x id="4"/>
+<x id="5"/>Designer<x id="6"/></source>
+<target xml:lang="pt"><x id="1"/>Intermediate<x id="2"/>
+<x id="3"/>Programmer<x id="4"/>
+<x id="5"/>Designer<x id="6"/></target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">If you modify a property in a prefab instance, the instance no longer inherits changes from the prefab for that property. This is called an <g id="1">override</g>.</source>
+<target xml:lang="pt">If you modify a property in a prefab instance, the instance no longer inherits changes from the prefab for that property. This is called an <g id="1">override</g>.</target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>How prefabs work<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>How prefabs work<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">In the following video, the <g id="1">Lamp</g> prefab contains several box entities that belong to the <g id="2">Boxes</g> parent. When we delete the boxes from the instance, only that instance is affected. The prefab (shown on the right) is unchanged.</source>
+<target xml:lang="pt">In the following video, the <g id="1">Lamp</g> prefab contains several box entities that belong to the <g id="2">Boxes</g> parent. When we delete the boxes from the instance, only that instance is affected. The prefab (shown on the right) is unchanged.</target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en">If we add another box to the <g id="1">Boxes</g> parent in the prefab, it doesn't appear in the overridden instance. That's because we deleted the <g id="2">Boxes</g> parent from that instance.</source>
+<target xml:lang="pt">If we add another box to the <g id="1">Boxes</g> parent in the prefab, it doesn't appear in the overridden instance. That's because we deleted the <g id="2">Boxes</g> parent from that instance.</target>
+</trans-unit>
+<group id="sd1_ssf7" resname="sub-filter:sd1">
+<trans-unit id="sd1_sf7_tu1" resname="sd1_1" restype="x-paragraph" xml:space="preserve">
+<source xml:lang="en">
+</source>
+<target xml:lang="pt">
+</target>
+</trans-unit>
+</group>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en">View overridden properties</source>
+<target xml:lang="pt">View overridden properties</target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en">In the <g id="1">Property Grid</g>, you can see which properties of the prefab instance differ from the base values in the prefab.</source>
+<target xml:lang="pt">In the <g id="1">Property Grid</g>, you can see which properties of the prefab instance differ from the base values in the prefab.</target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en"><g id="1">Overridden</g> and <g id="2">unique</g> properties are <g id="3">white and bold</g>:</source>
+<target xml:lang="pt"><g id="1">Overridden</g> and <g id="2">unique</g> properties are <g id="3">white and bold</g>:</target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Overridden properties are white<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Overridden properties are white<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en"><g id="1">Identical</g> properties are <g id="2">gray</g>:</source>
+<target xml:lang="pt"><g id="1">Identical</g> properties are <g id="2">gray</g>:</target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Identical properties are gray<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Identical properties are gray<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en">Reset a property to the prefab value</source>
+<target xml:lang="pt">Reset a property to the prefab value</target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en">To reset an overridden property to the value in the parent prefab, right-click the property and click <g id="1">Reset to base value</g>.</source>
+<target xml:lang="pt">To reset an overridden property to the value in the parent prefab, right-click the property and click <g id="1">Reset to base value</g>.</target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Reset to base value<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Reset to base value<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en">Example</source>
+<target xml:lang="pt">Example</target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en">In this example, we have a prefab of a futuristic lamppost.</source>
+<target xml:lang="pt">In this example, we have a prefab of a futuristic lamppost.</target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Lamppost<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Lamppost<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en">The lamppost prefab is composed of three entities: a column, a pillar, and a spot light. These are listed in the Entity Tree in the Prefab Editor.</source>
+<target xml:lang="pt">The lamppost prefab is composed of three entities: a column, a pillar, and a spot light. These are listed in the Entity Tree in the Prefab Editor.</target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Add entities<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Add entities<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en">Let's add five instances of the lamppost prefab to our scene.</source>
+<target xml:lang="pt">Let's add five instances of the lamppost prefab to our scene.</target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Five lampposts<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Five lampposts<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en">Now we'll modify one of the instances. In the Scene Editor, we select one <g id="1">spot light</g> entity and, in the spot light component properties, change its color to red. The Property Grid displays the modified <g id="2">Color</g> property in <g id="3">bold white</g>. This means it's overriding the prefab property.</source>
+<target xml:lang="pt">Now we'll modify one of the instances. In the Scene Editor, we select one <g id="1">spot light</g> entity and, in the spot light component properties, change its color to red. The Property Grid displays the modified <g id="2">Color</g> property in <g id="3">bold white</g>. This means it's overriding the prefab property.</target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Overridden property<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Overridden property<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en">We can see this in the scene view.</source>
+<target xml:lang="pt">We can see this in the scene view.</target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Pink spotlight<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Pink spotlight<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en">Now let's see what happens when we go back to the Prefab Editor and change the color of the spot light in the prefab to green.</source>
+<target xml:lang="pt">Now let's see what happens when we go back to the Prefab Editor and change the color of the spot light in the prefab to green.</target>
+</trans-unit>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Change color to green<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Change color to green<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu29" xml:space="preserve">
+<source xml:lang="en">Four of the lampposts now have a green light. The fifth is still red, as overridden properties don't change when you modify the prefab.</source>
+<target xml:lang="pt">Four of the lampposts now have a green light. The fifth is still red, as overridden properties don't change when you modify the prefab.</target>
+</trans-unit>
+<trans-unit id="tu30" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Changed colors<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Changed colors<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu31" xml:space="preserve">
+<source xml:lang="en">See also</source>
+<target xml:lang="pt">See also</target>
+</trans-unit>
+<trans-unit id="tu32" xml:space="preserve">
+<source xml:lang="en"><g id="1">Prefab index</g></source>
+<target xml:lang="pt"><g id="1">Prefab index</g></target>
+</trans-unit>
+<trans-unit id="tu33" xml:space="preserve">
+<source xml:lang="en"><g id="1">Create a prefab</g></source>
+<target xml:lang="pt"><g id="1">Create a prefab</g></target>
+</trans-unit>
+<trans-unit id="tu34" xml:space="preserve">
+<source xml:lang="en"><g id="1">Use prefabs</g></source>
+<target xml:lang="pt"><g id="1">Use prefabs</g></target>
+</trans-unit>
+<trans-unit id="tu35" xml:space="preserve">
+<source xml:lang="en"><g id="1">Edit prefabs</g></source>
+<target xml:lang="pt"><g id="1">Edit prefabs</g></target>
+</trans-unit>
+<trans-unit id="tu36" xml:space="preserve">
+<source xml:lang="en"><g id="1">Nested prefabs</g></source>
+<target xml:lang="pt"><g id="1">Nested prefabs</g></target>
+</trans-unit>
+<trans-unit id="tu37" xml:space="preserve">
+<source xml:lang="en"><g id="1">Prefab models</g></source>
+<target xml:lang="pt"><g id="1">Prefab models</g></target>
+</trans-unit>
+</body>
+</file>
+</xliff>

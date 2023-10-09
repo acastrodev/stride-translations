@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="/D:/repos/rr/source/manual/graphics/graphics-compositor/debug-renderers.md" source-language="en" target-language="pt" datatype="x-text/x-markdown" okp:inputEncoding="UTF-8">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en">Debug renderer</source>
+<target xml:lang="pt">Debug renderer</target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en">The <g id="1">debug renderer</g> is a placeholder renderer you can use with scripts to print debug information. By default, the debug renderer is included in the graphics compositor as a child of the game entry point.</source>
+<target xml:lang="pt">The <g id="1">debug renderer</g> is a placeholder renderer you can use with scripts to print debug information. By default, the debug renderer is included in the graphics compositor as a child of the game entry point.</target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Debug renderer<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Debug renderer<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">Create a debug renderer</source>
+<target xml:lang="pt">Create a debug renderer</target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">To create a debug renderer, right-click the graphics compositor editor and select <g id="1">Debug renderer</g>.</source>
+<target xml:lang="pt">To create a debug renderer, right-click the graphics compositor editor and select <g id="1">Debug renderer</g>.</target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Create debug renderer<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Create debug renderer<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en">Connect a debug renderer to an entry point</source>
+<target xml:lang="pt">Connect a debug renderer to an entry point</target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en">In most cases, you want the debug renderer to share an entry point with one or more forward renderers. To do this, use a <g id="1">scene renderer collection</g> and select the debug renderer and forward renderer(s) as children, as in the screenshot below:</source>
+<target xml:lang="pt">In most cases, you want the debug renderer to share an entry point with one or more forward renderers. To do this, use a <g id="1">scene renderer collection</g> and select the debug renderer and forward renderer(s) as children, as in the screenshot below:</target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Debug renderer Property Grid<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Debug renderer Property Grid<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en">Use a debug renderer</source>
+<target xml:lang="pt">Use a debug renderer</target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en">To use the debug renderer, reference it in your script and add debug render stages.</source>
+<target xml:lang="pt">To use the debug renderer, reference it in your script and add debug render stages.</target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en">For example, the <g id="1">Debug physics shapes</g> script included in Stride uses the debug renderer to display collider shapes at runtime.</source>
+<target xml:lang="pt">For example, the <g id="1">Debug physics shapes</g> script included in Stride uses the debug renderer to display collider shapes at runtime.</target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en">using System.Linq;
+using System.Threading.Tasks;
+using Stride.Input;
+using Stride.Engine;
+using Stride.Physics;
+using Stride.Rendering;
+using Stride.Rendering.Compositing;
+
+namespace MyGame
+{
+    public class DebugPhysicsShapes : AsyncScript
+    {
+        public RenderGroup RenderGroup = RenderGroup.Group7;
+
+        public override async Task Execute()
+        {
+        //set up rendering in the debug entry point if we have it
+        var compositor = SceneSystem.GraphicsCompositor;
+        var debugRenderer =
+            ((compositor.Game as SceneCameraRenderer)?.Child as SceneRendererCollection)?.Children.Where(
+                x => x is DebugRenderer).Cast&lt;DebugRenderer>().FirstOrDefault();
+        if (debugRenderer == null)
+            return;
+
+        var shapesRenderState = new RenderStage("PhysicsDebugShapes", "Main");
+            compositor.RenderStages.Add(shapesRenderState);
+            var meshRenderFeature = compositor.RenderFeatures.OfType&lt;MeshRenderFeature>().First();
+            meshRenderFeature.RenderStageSelectors.Add(new SimpleGroupToRenderStageSelector
+            {
+                EffectName = "StrideForwardShadingEffect",
+                RenderGroup = (RenderGroupMask)(1 &lt;&lt; (int)RenderGroup),
+                RenderStage = shapesRenderState,
+            });
+            meshRenderFeature.PipelineProcessors.Add(new WireframePipelineProcessor { RenderStage = shapesRenderState });
+            debugRenderer.DebugRenderStages.Add(shapesRenderState);
+
+            var simulation = this.GetSimulation();
+            if (simulation != null)
+                simulation.ColliderShapesRenderGroup = RenderGroup;
+
+            var enabled = false;
+            while (Game.IsRunning)
+            {
+                if (Input.IsKeyDown(Keys.LeftShift) &amp;&amp; Input.IsKeyDown(Keys.LeftCtrl) &amp;&amp; Input.IsKeyReleased(Keys.P))
+                {
+                    if (simulation != null)
+                    {
+                        if (enabled)
+                        {
+                            simulation.ColliderShapesRendering = false;
+                            enabled = false;
+                        }
+                        else
+                        {
+                            simulation.ColliderShapesRendering = true;
+                            enabled = true;
+                        }
+                    }
+                }
+
+                await Script.NextFrame();
+            }
+        }
+    }
+}
+</source>
+<target xml:lang="pt">using System.Linq;
+using System.Threading.Tasks;
+using Stride.Input;
+using Stride.Engine;
+using Stride.Physics;
+using Stride.Rendering;
+using Stride.Rendering.Compositing;
+
+namespace MyGame
+{
+    public class DebugPhysicsShapes : AsyncScript
+    {
+        public RenderGroup RenderGroup = RenderGroup.Group7;
+
+        public override async Task Execute()
+        {
+        //set up rendering in the debug entry point if we have it
+        var compositor = SceneSystem.GraphicsCompositor;
+        var debugRenderer =
+            ((compositor.Game as SceneCameraRenderer)?.Child as SceneRendererCollection)?.Children.Where(
+                x => x is DebugRenderer).Cast&lt;DebugRenderer>().FirstOrDefault();
+        if (debugRenderer == null)
+            return;
+
+        var shapesRenderState = new RenderStage("PhysicsDebugShapes", "Main");
+            compositor.RenderStages.Add(shapesRenderState);
+            var meshRenderFeature = compositor.RenderFeatures.OfType&lt;MeshRenderFeature>().First();
+            meshRenderFeature.RenderStageSelectors.Add(new SimpleGroupToRenderStageSelector
+            {
+                EffectName = "StrideForwardShadingEffect",
+                RenderGroup = (RenderGroupMask)(1 &lt;&lt; (int)RenderGroup),
+                RenderStage = shapesRenderState,
+            });
+            meshRenderFeature.PipelineProcessors.Add(new WireframePipelineProcessor { RenderStage = shapesRenderState });
+            debugRenderer.DebugRenderStages.Add(shapesRenderState);
+
+            var simulation = this.GetSimulation();
+            if (simulation != null)
+                simulation.ColliderShapesRenderGroup = RenderGroup;
+
+            var enabled = false;
+            while (Game.IsRunning)
+            {
+                if (Input.IsKeyDown(Keys.LeftShift) &amp;&amp; Input.IsKeyDown(Keys.LeftCtrl) &amp;&amp; Input.IsKeyReleased(Keys.P))
+                {
+                    if (simulation != null)
+                    {
+                        if (enabled)
+                        {
+                            simulation.ColliderShapesRendering = false;
+                            enabled = false;
+                        }
+                        else
+                        {
+                            simulation.ColliderShapesRendering = true;
+                            enabled = true;
+                        }
+                    }
+                }
+
+                await Script.NextFrame();
+            }
+        }
+    }
+}
+</target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en">For information about how to use this script, see <g id="1">Colliders</g>.</source>
+<target xml:lang="pt">For information about how to use this script, see <g id="1">Colliders</g>.</target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en">See also</source>
+<target xml:lang="pt">See also</target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en"><g id="1">Scene renderers</g></source>
+<target xml:lang="pt"><g id="1">Scene renderers</g></target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en"><g id="1">Custom scene renders</g></source>
+<target xml:lang="pt"><g id="1">Custom scene renders</g></target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en"><g id="1">Physics — Colliders</g></source>
+<target xml:lang="pt"><g id="1">Physics — Colliders</g></target>
+</trans-unit>
+</body>
+</file>
+</xliff>
