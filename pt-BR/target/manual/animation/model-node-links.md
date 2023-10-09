@@ -1,14 +1,14 @@
-# Model node links
+# Links de nó de modelo
 
-<span class="badge text-bg-primary">Beginner</span>
-<span class="badge text-bg-success">Artist</span>
+<span class="badge text-bg-primary">Iniciante</span>
+<span class="badge text-bg-success">Arte</span>
 
 > [!Note]
-> In some versions of Stride, **Model node links** are called **Bone links**.
+> Em algumas versões do Stride, os **links de nó de modelo** são chamados de **links de osso**.
 
-The **model node link** component attaches an entity to a node of a skeleton on another entity.
+O componente **link de nó de modelo** conecta uma entidade a um nó de um esqueleto em outra entidade.
 
-For example, imagine you have two models: a knight, and a sword. The character has a sword swinging animation. You can use a model link node to place the sword in the knight's hand and attach it to the correct node in the knight skeleton, so the sword swings with the knight animation.
+Por exemplo, imagine que você tem dois modelos: um cavaleiro e uma espada. O personagem possui uma animação de golpe com a espada. Você pode usar um nó de link de modelo para colocar a espada na mão do cavaleiro e anexá-la ao nó correto no esqueleto do cavaleiro, para que a espada se mova junto com a animação do cavaleiro.
 
 <p>
 <video autoplay loop class="responsive-video" poster="../particles/tutorials/media/sword-slash-1.jpg">
@@ -16,64 +16,64 @@ For example, imagine you have two models: a knight, and a sword. The character h
 </video>
 </p>
 
-## Set up a model node link component
+## Configure um componente de link de nó de modelo.
 
-1. In the **Scene Editor**, select the entity you want to link to a node in another entity.
+1. No **Editor de Cenas**, selecione a entidade à qual você deseja vincular a um nó em outra entidade.
 
-2. In the **Property Grid**, click **Add component** and select **Model node link**.
+2. No **Editor de Propriedades**, clique em **Adicionar componente** e selecione **Link de nó de modelo**.
 
-   ![Add component](../particles/tutorials/media/add-model-node-link.png)
+   ![Adicionar componente](../particles/tutorials/media/add-model-node-link.png)
 
-   Game Studio adds a model node link component to the entity.
+   O Game Studio adiciona um componente de link de nó de modelo à entidade.
 
-   ![Model node link component](media/model-node-component.png)
+   ![Componente de link de nó de modelo](media/model-node-component.png)
 
-   The component only has two properties: **Node name** and **Target**.
+   O componente tem apenas duas propriedades: **Nome do nó** e **Destino**.
 
-3. Next to **Target**, click ![Hand icon](~/manual/game-studio/media/hand-icon.png).
+3. Ao lado de **Alvo**, clique em ![Ícone de mão](~/manual/game-studio/media/hand-icon.png).
 
-   The **Select an entity** window opens.
+   A janela **Selecionar uma entidade** é exibida.
 
-   ![Select an entity](media/select-an-entity-window.png)
+   ![Selecione uma entidade](media/select-an-entity-window.png)
 
-4. Select the model you want to link the entity to and click **OK**.
+4. Selecione o modelo ao qual você deseja vincular a entidade e clique em **OK**.
 
    > [!Note]
-   > The entity you link to must have a model with a skeleton, even if the model isn't visible at runtime.
+   > A entidade de destino deve conter um modelo com uma estrutura de esqueleto, mesmo que o modelo não seja visível durante a execução.
 
    > [!Tip]
-   > If you don't specify a model, Stride links the entity to the model on the parent entity.
+   > Se você não especificar um modelo, o Stride vinculará a entidade ao modelo na entidade pai.
 
-5. In **Node name**, select the node in the model you want to attach this entity to.
+5. Em **Nome do nó**, selecione o nó no modelo ao qual você deseja anexar esta entidade.
 
-   ![Select node](media/select-node.png)
+   ![Selecionar nó](media/select-node.png)
 
-   After you link the node, the Entity Tree shows the link in blue next to the entity name.
+   Após vincular o nó, a Árvore de Entidades exibe o link em azul ao lado do nome da entidade.
 
-   ![Model node link](media/model-node-link-sword-added.png)
+   Link de nó de modelo![](media/model-node-link-sword-added.png)
 
-## Offset
+## Deslocamento
 
-To add an offset to the linked entity, use the entity's [TransformComponent](xref:Stride.Engine.TransformComponent).
+Para adicionar um deslocamento à entidade vinculada, utilize o [TransformComponent](xref:Stride.Engine.TransformComponent) da entidade.
 
-![Transform](media/transform-component.png)
+![Transformação](media/transform-component.png)
 
 > [!Note]
-> If you don't want to add an offset, make sure the values are all set to `0,0,0`.
+> Se você não deseja adicionar um deslocamento, certifique-se de que os valores estejam todos definidos como `0,0,0`.
 
-## See also
+## Veja também
 
-* [Import animations](import-animations.md)
-* [Animation properties](animation-properties.md)
-* [Set up animations](set-up-animations.md)
-* [Preview animations](preview-animations.md)
-* [Animation scripts](animation-scripts.md)
-* [Additive animation](additive-animation.md)
-* [Procedural animation](procedural-animation.md)
-* [Custom blend trees](custom-blend-trees.md)
-* [custom attributes](custom-attributes.md)
+* [Importar animações](import-animations.md)
+* [Propriedades de animação](animation-properties.md)
+* [Configurar animações](set-up-animations.md)
+* [Visualizar animações](preview-animations.md)
+* [Scripts de animação](animation-scripts.md)
+* [Animação aditiva](additive-animation.md)
+* [Animação procedural](procedural-animation.md)
+* [Árvores de transição personalizadas](custom-blend-trees.md)
+* [Atributos personalizados](custom-attributes.md)
 
-For examples of how model node links are used, see:
+Para exemplos de como os links de nós de modelo são usados, consulte:
 
-* [Particles — Create a trail](../particles/tutorials/create-a-trail.md)
-* [Cameras — Animate a camera with a model file](../graphics/cameras/animate-a-camera-with-a-model-file.md)
+* [Partículas — Criar um rastro](../particles/tutorials/create-a-trail.md)
+* [Câmeras — Animação de uma câmera com um arquivo de modelo](../graphics/cameras/animate-a-camera-with-a-model-file.md)
