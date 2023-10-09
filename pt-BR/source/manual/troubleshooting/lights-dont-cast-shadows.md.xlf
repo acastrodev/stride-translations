@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="/D:/repos/rr/source/manual/troubleshooting/lights-dont-cast-shadows.md" source-language="en" target-language="pt" datatype="x-text/x-markdown" okp:inputEncoding="UTF-8">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en">Lights don't cast shadows</source>
+<target xml:lang="pt">Lights don't cast shadows</target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en">If you've enabled shadows on a light in your scene, but it isn't casting shadows, make sure you have enough space in the shadow atlas. You might need to reduce the size of the shadows in the properties of your light components to create room.</source>
+<target xml:lang="pt">If you've enabled shadows on a light in your scene, but it isn't casting shadows, make sure you have enough space in the shadow atlas. You might need to reduce the size of the shadows in the properties of your light components to create room.</target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">For more information about shadows and the shadow atlas, see <g id="1">Graphics - Shadows</g>.</source>
+<target xml:lang="pt">For more information about shadows and the shadow atlas, see <g id="1">Graphics - Shadows</g>.</target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">Shadow atlas comparison</source>
+<target xml:lang="pt">Shadow atlas comparison</target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">Size: 2x</source>
+<target xml:lang="pt">Size: 2x</target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en">Size: 1x</source>
+<target xml:lang="pt">Size: 1x</target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>FPS scene shadow map<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>FPS scene shadow map<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>FPS scene shadow map<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>FPS scene shadow map<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en">This light source uses the entirety of the shadow atlas. This means other lights won't cast shadows, as there's no room left in the atlas.</source>
+<target xml:lang="pt">This light source uses the entirety of the shadow atlas. This means other lights won't cast shadows, as there's no room left in the atlas.</target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en">This light source uses one quarter of the shadow atlas. The rest can be allocated to other light sources.</source>
+<target xml:lang="pt">This light source uses one quarter of the shadow atlas. The rest can be allocated to other light sources.</target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en">Reduce the shadow size</source>
+<target xml:lang="pt">Reduce the shadow size</target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en">In the Scene Editor, select an entity with a light that casts a shadow.</source>
+<target xml:lang="pt">In the Scene Editor, select an entity with a light that casts a shadow.</target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en">In the <g id="1">Light</g> component properties, under <g id="2">Shadow > Size</g>, reduce the size of the shadow using the drop-down menu.</source>
+<target xml:lang="pt">In the <g id="1">Light</g> component properties, under <g id="2">Shadow > Size</g>, reduce the size of the shadow using the drop-down menu.</target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>media/DirectionalLightProperties.png<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>media/DirectionalLightProperties.png<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en">Alternatively, disable shadows on the light entirely by clearing the <g id="1">Shadows</g> checkbox.</source>
+<target xml:lang="pt">Alternatively, disable shadows on the light entirely by clearing the <g id="1">Shadows</g> checkbox.</target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en">Repeat these steps for as many light entities as you need to create space in the shadow atlas.</source>
+<target xml:lang="pt">Repeat these steps for as many light entities as you need to create space in the shadow atlas.</target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en">See also</source>
+<target xml:lang="pt">See also</target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en"><g id="1">Graphics — Shadows</g></source>
+<target xml:lang="pt"><g id="1">Graphics — Shadows</g></target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en"><g id="1">Graphics — Directional lights</g></source>
+<target xml:lang="pt"><g id="1">Graphics — Directional lights</g></target>
+</trans-unit>
+</body>
+</file>
+</xliff>

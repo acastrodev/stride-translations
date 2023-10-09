@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" xmlns:okp="okapi-framework:xliff-extensions" its:version="2.0" version="1.2">
+<file datatype="x-text/x-markdown" okp:inputEncoding="UTF-8" original="/D:/repos/rr/source/manual/input/mouse.md" source-language="en" target-language="pt">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en">Mouse</source>
+<target xml:lang="pt">Mouse</target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Beginner<x id="2"/>
+<x id="3"/>Programmer<x id="4"/></source>
+<target xml:lang="pt"><x id="1"/>Beginner<x id="2"/>
+<x id="3"/>Programmer<x id="4"/></target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">The <g id="1">mouse</g> is a common input device for desktop games.</source>
+<target xml:lang="pt">The <g id="1">mouse</g> is a common input device for desktop games.</target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">There are two ways to handle mouse input in Stride:</source>
+<target xml:lang="pt">There are two ways to handle mouse input in Stride:</target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">Query <g id="1">mouse button states</g>.</source>
+<target xml:lang="pt">Query <g id="1">mouse button states</g>.</target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en">For cross-platform games that target mobile devices, you can use <g id="1">PointerEvent</g> lists.
+For more information, see <g id="2">Pointers</g>.</source>
+<target xml:lang="pt">For cross-platform games that target mobile devices, you can use <g id="1">PointerEvent</g> lists.
+For more information, see <g id="2">Pointers</g>.</target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en">You can access <g id="1">mouse button states</g> and <g id="2">pointer events list</g> from the <g id="3">Input manager</g>.</source>
+<target xml:lang="pt">You can access <g id="1">mouse button states</g> and <g id="2">pointer events list</g> from the <g id="3">Input manager</g>.</target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en">Class</source>
+<target xml:lang="pt">Class</target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en">Project type</source>
+<target xml:lang="pt">Project type</target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en">When to use</source>
+<target xml:lang="pt">When to use</target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en"><g id="1">InputManager</g></source>
+<target xml:lang="pt"><g id="1">InputManager</g></target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en">Desktop only</source>
+<target xml:lang="pt">Desktop only</target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en">For desktop games, you usually handle input with multiple mouse buttons. This means you should use <g id="1">mouse button states</g>.</source>
+<target xml:lang="pt">For desktop games, you usually handle input with multiple mouse buttons. This means you should use <g id="1">mouse button states</g>.</target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en"><g id="1">PointerEvent</g></source>
+<target xml:lang="pt"><g id="1">PointerEvent</g></target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en">Cross-platform</source>
+<target xml:lang="pt">Cross-platform</target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en">For mobile games, you usually simulate pointers with just the left mouse button. This means you can treat the mouse input like pointers. There's no need to create separate mouse-specific controls. For more information, see <g id="1">Pointers</g>.</source>
+<target xml:lang="pt">For mobile games, you usually simulate pointers with just the left mouse button. This means you can treat the mouse input like pointers. There's no need to create separate mouse-specific controls. For more information, see <g id="1">Pointers</g>.</target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en">For more information about these options, see the <g id="1">Input index</g>.</source>
+<target xml:lang="pt">For more information about these options, see the <g id="1">Input index</g>.</target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en">Check mouse availability</source>
+<target xml:lang="pt">Check mouse availability</target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en">Before handling mouse input, use <g id="1">Input.HasMouse</g> to check if a mouse is connected.</source>
+<target xml:lang="pt">Before handling mouse input, use <g id="1">Input.HasMouse</g> to check if a mouse is connected.</target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en">Get the mouse position</source>
+<target xml:lang="pt">Get the mouse position</target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en">You can get the mouse position in normalized or absolute coordinates.</source>
+<target xml:lang="pt">You can get the mouse position in normalized or absolute coordinates.</target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en">Normalized coordinates</source>
+<target xml:lang="pt">Normalized coordinates</target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en">@'Stride.Input.InputManager.MousePosition' returns the mouse pointer position in <g id="1">normalized</g> X, Y coordinates instead of actual screen sizes in pixels. This means the pointer position adjusts to any resolution and you don't have to write separate code for different resolutions.</source>
+<target xml:lang="pt">@'Stride.Input.InputManager.MousePosition' returns the mouse pointer position in <g id="1">normalized</g> X, Y coordinates instead of actual screen sizes in pixels. This means the pointer position adjusts to any resolution and you don't have to write separate code for different resolutions.</target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en">(0,0): the pointer is in the top-left corner of the screen</source>
+<target xml:lang="pt">(0,0): the pointer is in the top-left corner of the screen</target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en">(1,1): the pointer is in the bottom-right corner of the screen</source>
+<target xml:lang="pt">(1,1): the pointer is in the bottom-right corner of the screen</target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en">Absolute coordinates</source>
+<target xml:lang="pt">Absolute coordinates</target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en"><g id="1">InputManager.AbsoluteMousePosition</g> returns the mouse pointer position in absolute X and Y coordinates (the actual screen size in pixels). For example, if the pointer is in the top-left corner of the screen, the values are (0,0). If the pointer is in the bottom-right corner, the values depends on the screen resolution (eg 1280, 720).</source>
+<target xml:lang="pt"><g id="1">InputManager.AbsoluteMousePosition</g> returns the mouse pointer position in absolute X and Y coordinates (the actual screen size in pixels). For example, if the pointer is in the top-left corner of the screen, the values are (0,0). If the pointer is in the bottom-right corner, the values depends on the screen resolution (eg 1280, 720).</target>
+</trans-unit>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>!Tip<x id="2"/>
+To get the actual size of the screen, access <g id="3">IPointerDevice.SurfaceSize</g>. For example:</source>
+<target xml:lang="pt"><x id="1"/>!Tip<x id="2"/>
+To get the actual size of the screen, access <g id="3">IPointerDevice.SurfaceSize</g>. For example:</target>
+</trans-unit>
+<trans-unit id="tu29" xml:space="preserve">
+<source xml:lang="en">var surfaceSize = Input.Mouse.SurfaceSize;
+</source>
+<target xml:lang="pt">var surfaceSize = Input.Mouse.SurfaceSize;
+</target>
+</trans-unit>
+<trans-unit id="tu30" xml:space="preserve">
+<source xml:lang="en">Query mouse button state changes</source>
+<target xml:lang="pt">Query mouse button state changes</target>
+</trans-unit>
+<trans-unit id="tu31" xml:space="preserve">
+<source xml:lang="en">You can use the mouse buttons to trigger actions in a project. For example, in first-person shooter games, the left mouse button is commonly used to shoot.</source>
+<target xml:lang="pt">You can use the mouse buttons to trigger actions in a project. For example, in first-person shooter games, the left mouse button is commonly used to shoot.</target>
+</trans-unit>
+<trans-unit id="tu32" xml:space="preserve">
+<source xml:lang="en">The <g id="1">Input manager</g> has several methods that check mouse button states (<g id="2">Pressed</g>, <g id="3">Down</g>, or <g id="4">Released</g>):</source>
+<target xml:lang="pt">The <g id="1">Input manager</g> has several methods that check mouse button states (<g id="2">Pressed</g>, <g id="3">Down</g>, or <g id="4">Released</g>):</target>
+</trans-unit>
+<trans-unit id="tu33" xml:space="preserve">
+<source xml:lang="en">Method</source>
+<target xml:lang="pt">Method</target>
+</trans-unit>
+<trans-unit id="tu34" xml:space="preserve">
+<source xml:lang="en">Description</source>
+<target xml:lang="pt">Description</target>
+</trans-unit>
+<trans-unit id="tu35" xml:space="preserve">
+<source xml:lang="en"><g id="1">HasDownMouseButtons</g></source>
+<target xml:lang="pt"><g id="1">HasDownMouseButtons</g></target>
+</trans-unit>
+<trans-unit id="tu36" xml:space="preserve">
+<source xml:lang="en">Checks if one or more mouse buttons are currently pressed down.</source>
+<target xml:lang="pt">Checks if one or more mouse buttons are currently pressed down.</target>
+</trans-unit>
+<trans-unit id="tu37" xml:space="preserve">
+<source xml:lang="en"><g id="1">HasPressedMouseButtons</g></source>
+<target xml:lang="pt"><g id="1">HasPressedMouseButtons</g></target>
+</trans-unit>
+<trans-unit id="tu38" xml:space="preserve">
+<source xml:lang="en">Checks if one or more mouse buttons were pressed in the last update.</source>
+<target xml:lang="pt">Checks if one or more mouse buttons were pressed in the last update.</target>
+</trans-unit>
+<trans-unit id="tu39" xml:space="preserve">
+<source xml:lang="en"><g id="1">HasReleasedMouseButtons</g></source>
+<target xml:lang="pt"><g id="1">HasReleasedMouseButtons</g></target>
+</trans-unit>
+<trans-unit id="tu40" xml:space="preserve">
+<source xml:lang="en">Checks if one or more mouse buttons were released in the last update.</source>
+<target xml:lang="pt">Checks if one or more mouse buttons were released in the last update.</target>
+</trans-unit>
+<trans-unit id="tu41" xml:space="preserve">
+<source xml:lang="en"><g id="1">IsMouseButtonDown (MouseButton)</g></source>
+<target xml:lang="pt"><g id="1">IsMouseButtonDown (MouseButton)</g></target>
+</trans-unit>
+<trans-unit id="tu42" xml:space="preserve">
+<source xml:lang="en">Checks if a specified mouse button is currently pressed down.</source>
+<target xml:lang="pt">Checks if a specified mouse button is currently pressed down.</target>
+</trans-unit>
+<trans-unit id="tu43" xml:space="preserve">
+<source xml:lang="en"><g id="1">IsMouseButtonPressed (MouseButton)</g></source>
+<target xml:lang="pt"><g id="1">IsMouseButtonPressed (MouseButton)</g></target>
+</trans-unit>
+<trans-unit id="tu44" xml:space="preserve">
+<source xml:lang="en">Checks if a specified mouse button was pressed in the last update.</source>
+<target xml:lang="pt">Checks if a specified mouse button was pressed in the last update.</target>
+</trans-unit>
+<trans-unit id="tu45" xml:space="preserve">
+<source xml:lang="en"><g id="1">IsMouseButtonReleased (MouseButton)</g></source>
+<target xml:lang="pt"><g id="1">IsMouseButtonReleased (MouseButton)</g></target>
+</trans-unit>
+<trans-unit id="tu46" xml:space="preserve">
+<source xml:lang="en">Checks if a specified mouse button was released in the last update.</source>
+<target xml:lang="pt">Checks if a specified mouse button was released in the last update.</target>
+</trans-unit>
+<trans-unit id="tu47" xml:space="preserve">
+<source xml:lang="en">Mouse delta</source>
+<target xml:lang="pt">Mouse delta</target>
+</trans-unit>
+<trans-unit id="tu48" xml:space="preserve">
+<source xml:lang="en">Use <g id="1">InputManager.MouseDelta</g> to get the change in mouse position in normalized coordinates since the last update. You can use this to analyze mouse movement speed and direction.</source>
+<target xml:lang="pt">Use <g id="1">InputManager.MouseDelta</g> to get the change in mouse position in normalized coordinates since the last update. You can use this to analyze mouse movement speed and direction.</target>
+</trans-unit>
+<trans-unit id="tu49" xml:space="preserve">
+<source xml:lang="en">Mouse wheel delta</source>
+<target xml:lang="pt">Mouse wheel delta</target>
+</trans-unit>
+<trans-unit id="tu50" xml:space="preserve">
+<source xml:lang="en">You can use the mouse wheel to trigger actions in a project. For example, in a first-person shooter game, moving the mouse wheel might switch weapons or zoom a camera.</source>
+<target xml:lang="pt">You can use the mouse wheel to trigger actions in a project. For example, in a first-person shooter game, moving the mouse wheel might switch weapons or zoom a camera.</target>
+</trans-unit>
+<trans-unit id="tu51" xml:space="preserve">
+<source xml:lang="en">The <g id="1">InputManager.MouseWheelDelta</g> returns a positive value when the user scrolls forwards and a negative value when the user scrolls backwards. A value of <g id="2">0</g> indicates no movement.</source>
+<target xml:lang="pt">The <g id="1">InputManager.MouseWheelDelta</g> returns a positive value when the user scrolls forwards and a negative value when the user scrolls backwards. A value of <g id="2">0</g> indicates no movement.</target>
+</trans-unit>
+<trans-unit id="tu52" xml:space="preserve">
+<source xml:lang="en">Lock the mouse position</source>
+<target xml:lang="pt">Lock the mouse position</target>
+</trans-unit>
+<trans-unit id="tu53" xml:space="preserve">
+<source xml:lang="en">For some projects, the user needs to move the mouse cursor beyond the borders of the screen. For example, first-person shooter games usually need 360-degree camera rotation. In these cases, you also probably want the mouse cursor to be hidden.</source>
+<target xml:lang="pt">For some projects, the user needs to move the mouse cursor beyond the borders of the screen. For example, first-person shooter games usually need 360-degree camera rotation. In these cases, you also probably want the mouse cursor to be hidden.</target>
+</trans-unit>
+<trans-unit id="tu54" xml:space="preserve">
+<source xml:lang="en">You can lock the mouse position and hide the cursor with the following properties and methods:</source>
+<target xml:lang="pt">You can lock the mouse position and hide the cursor with the following properties and methods:</target>
+</trans-unit>
+<trans-unit id="tu55" xml:space="preserve">
+<source xml:lang="en">Method or property</source>
+<target xml:lang="pt">Method or property</target>
+</trans-unit>
+<trans-unit id="tu56" xml:space="preserve">
+<source xml:lang="en">Description</source>
+<target xml:lang="pt">Description</target>
+</trans-unit>
+<trans-unit id="tu57" xml:space="preserve">
+<source xml:lang="en"><g id="1">LockMousePosition(Boolean)</g></source>
+<target xml:lang="pt"><g id="1">LockMousePosition(Boolean)</g></target>
+</trans-unit>
+<trans-unit id="tu58" xml:space="preserve">
+<source xml:lang="en">Locks the mouse position until the next call to the <g id="1">UnlockMousePosition()</g> event.</source>
+<target xml:lang="pt">Locks the mouse position until the next call to the <g id="1">UnlockMousePosition()</g> event.</target>
+</trans-unit>
+<trans-unit id="tu59" xml:space="preserve">
+<source xml:lang="en"><g id="1">UnlockMousePosition()</g></source>
+<target xml:lang="pt"><g id="1">UnlockMousePosition()</g></target>
+</trans-unit>
+<trans-unit id="tu60" xml:space="preserve">
+<source xml:lang="en">Unlocks the mouse position locked by the <g id="1">LockMousePosition(Boolean)</g> event.</source>
+<target xml:lang="pt">Unlocks the mouse position locked by the <g id="1">LockMousePosition(Boolean)</g> event.</target>
+</trans-unit>
+<trans-unit id="tu61" xml:space="preserve">
+<source xml:lang="en"><g id="1">IsMousePositionLocked</g></source>
+<target xml:lang="pt"><g id="1">IsMousePositionLocked</g></target>
+</trans-unit>
+<trans-unit id="tu62" xml:space="preserve">
+<source xml:lang="en">Checks if the mouse position is locked.</source>
+<target xml:lang="pt">Checks if the mouse position is locked.</target>
+</trans-unit>
+<trans-unit id="tu63" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>!Tip<x id="2"/>
+You can get or set mouse visibility with <g id="3">GameWindow.IsMouseVisible</g>.</source>
+<target xml:lang="pt"><x id="1"/>!Tip<x id="2"/>
+You can get or set mouse visibility with <g id="3">GameWindow.IsMouseVisible</g>.</target>
+</trans-unit>
+<trans-unit id="tu64" xml:space="preserve">
+<source xml:lang="en">Example code</source>
+<target xml:lang="pt">Example code</target>
+</trans-unit>
+<trans-unit id="tu65" xml:space="preserve">
+<source xml:lang="en">public class MouseInputScript : SyncScript
+{
+	public override void Update()
+	{
+		//If the left mouse button is pressed in this update, do something.
+		if (Input.IsMouseButtonDown(MouseButton.Left))
+		{   
+		}
+		//If the middle mouse button has been pressed since the last update, do something.
+		if (Input.IsMouseButtonPressed(MouseButton.Middle))
+		{  
+		}
+
+		//If the mouse moved more than 0.2 units of the screen size in X direction, do something.
+		if (Input.MouseDelta.X &gt; 0.2f)
+		{
+		}
+		
+	}
+}
+</source>
+<target xml:lang="pt">public class MouseInputScript : SyncScript
+{
+	public override void Update()
+	{
+		//If the left mouse button is pressed in this update, do something.
+		if (Input.IsMouseButtonDown(MouseButton.Left))
+		{   
+		}
+		//If the middle mouse button has been pressed since the last update, do something.
+		if (Input.IsMouseButtonPressed(MouseButton.Middle))
+		{  
+		}
+
+		//If the mouse moved more than 0.2 units of the screen size in X direction, do something.
+		if (Input.MouseDelta.X &gt; 0.2f)
+		{
+		}
+		
+	}
+}
+</target>
+</trans-unit>
+<trans-unit id="tu66" xml:space="preserve">
+<source xml:lang="en">See also</source>
+<target xml:lang="pt">See also</target>
+</trans-unit>
+<trans-unit id="tu67" xml:space="preserve">
+<source xml:lang="en"><g id="1">Pointers</g></source>
+<target xml:lang="pt"><g id="1">Pointers</g></target>
+</trans-unit>
+<trans-unit id="tu68" xml:space="preserve">
+<source xml:lang="en"><g id="1">Virtual buttons</g></source>
+<target xml:lang="pt"><g id="1">Virtual buttons</g></target>
+</trans-unit>
+<trans-unit id="tu69" xml:space="preserve">
+<source xml:lang="en"><g id="1">Keyboard</g></source>
+<target xml:lang="pt"><g id="1">Keyboard</g></target>
+</trans-unit>
+<trans-unit id="tu70" xml:space="preserve">
+<source xml:lang="en"><g id="1">Gamepads</g></source>
+<target xml:lang="pt"><g id="1">Gamepads</g></target>
+</trans-unit>
+<trans-unit id="tu71" xml:space="preserve">
+<source xml:lang="en"><g id="1">Input overview</g></source>
+<target xml:lang="pt"><g id="1">Input overview</g></target>
+</trans-unit>
+</body>
+</file>
+</xliff>

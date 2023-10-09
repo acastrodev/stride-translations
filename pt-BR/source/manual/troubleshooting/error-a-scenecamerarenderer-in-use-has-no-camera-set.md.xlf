@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="/D:/repos/rr/source/manual/troubleshooting/error-a-scenecamerarenderer-in-use-has-no-camera-set.md" source-language="en" target-language="pt" datatype="x-text/x-markdown" okp:inputEncoding="UTF-8">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en">Error: "A SceneCameraRenderer in use has no camera assigned to its <x id="1"/>Slot<x id="2"/>. Make sure a camera is enabled and assigned to the <x id="3"/>Slot<x id="4"/>."</source>
+<target xml:lang="pt">Error: "A SceneCameraRenderer in use has no camera assigned to its <x id="1"/>Slot<x id="2"/>. Make sure a camera is enabled and assigned to the <x id="3"/>Slot<x id="4"/>."</target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>!Note<x id="2"/>
+In earlier versions of Stride, this error message was: "A SceneCameraRenderer in use has no camera set. Make sure the camera component to use is enabled and has its <x id="3"/>Slot<x id="4"/> property correctly set."</source>
+<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
+In earlier versions of Stride, this error message was: "A SceneCameraRenderer in use has no camera set. Make sure the camera component to use is enabled and has its <x id="3"/>Slot<x id="4"/> property correctly set."</target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">This error means there's no camera available for the scene renderer to use. This has several possible causes:</source>
+<target xml:lang="pt">This error means there's no camera available for the scene renderer to use. This has several possible causes:</target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">there's no enabled <g id="1">camera</g></source>
+<target xml:lang="pt">there's no enabled <g id="1">camera</g></target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">the camera is set to the wrong <g id="1">camera slot</g></source>
+<target xml:lang="pt">the camera is set to the wrong <g id="1">camera slot</g></target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en">there are multiple enabled cameras assigned to the same camera slot</source>
+<target xml:lang="pt">there are multiple enabled cameras assigned to the same camera slot</target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en">Fix</source>
+<target xml:lang="pt">Fix</target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en">If you create your camera components in Game Studio, make sure:</source>
+<target xml:lang="pt">If you create your camera components in Game Studio, make sure:</target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en">the camera slots are set to the <g id="1">Main</g> slot (see <g id="2">Graphics — Camera slots</g>)</source>
+<target xml:lang="pt">the camera slots are set to the <g id="1">Main</g> slot (see <g id="2">Graphics — Camera slots</g>)</target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en">only the initial camera is enabled</source>
+<target xml:lang="pt">only the initial camera is enabled</target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en">If you create your camera components in code, make sure you retrieve the correct slot from the graphics compositor. Use:</source>
+<target xml:lang="pt">If you create your camera components in code, make sure you retrieve the correct slot from the graphics compositor. Use:</target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en">var camera = new CameraComponent();
+camera.Slot = SceneSystem.GraphicsCompositor.Cameras[0].ToSlotId();
+</source>
+<target xml:lang="pt">var camera = new CameraComponent();
+camera.Slot = SceneSystem.GraphicsCompositor.Cameras[0].ToSlotId();
+</target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en">To change the camera at runtime, toggle the <g id="1">Enabled</g> property.</source>
+<target xml:lang="pt">To change the camera at runtime, toggle the <g id="1">Enabled</g> property.</target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>!Note<x id="2"/>
+Make sure you:</source>
+<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
+Make sure you:</target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en">always have at least one enabled camera</source>
+<target xml:lang="pt">always have at least one enabled camera</target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en">don't have multiple cameras enabled and assigned to the same slot at the same time</source>
+<target xml:lang="pt">don't have multiple cameras enabled and assigned to the same slot at the same time</target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en">See also</source>
+<target xml:lang="pt">See also</target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en"><g id="1">Graphics — Camera slots</g></source>
+<target xml:lang="pt"><g id="1">Graphics — Camera slots</g></target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en"><g id="1">Graphics — Cameras</g></source>
+<target xml:lang="pt"><g id="1">Graphics — Cameras</g></target>
+</trans-unit>
+</body>
+</file>
+</xliff>

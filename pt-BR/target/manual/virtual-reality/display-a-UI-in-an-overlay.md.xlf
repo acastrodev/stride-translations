@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" xmlns:okp="okapi-framework:xliff-extensions" its:version="2.0" version="1.2">
+<file datatype="x-text/x-markdown" okp:inputEncoding="UTF-8" original="/D:/repos/rr/source/manual/virtual-reality/display-a-UI-in-an-overlay.md" source-language="en" target-language="pt">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en">Display a UI in an overlay</source>
+<target xml:lang="pt">Display a UI in an overlay</target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en">This page explains how to render a UI to a texture, then display it as an overlay.</source>
+<target xml:lang="pt">This page explains how to render a UI to a texture, then display it as an overlay.</target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">These instructions assume you already have a UI that you want to display in the overlay. For information about creating UIs, see the <g id="1">UI</g> section.</source>
+<target xml:lang="pt">These instructions assume you already have a UI that you want to display in the overlay. For information about creating UIs, see the <g id="1">UI</g> section.</target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>!Note<x id="2"/>
+You can't see overlays when you don't run your game in your VR device. This is because the VR device itself creates the overlay, not other hardware.</source>
+<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
+You can't see overlays when you don't run your game in your VR device. This is because the VR device itself creates the overlay, not other hardware.</target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">1. Create a render target texture</source>
+<target xml:lang="pt">1. Create a render target texture</target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en">In the <g id="1">Asset View</g>, click <g id="2">Add asset</g> and select <g id="3">Texture</g> &gt; <g id="4">Render target</g>.</source>
+<target xml:lang="pt">In the <g id="1">Asset View</g>, click <g id="2">Add asset</g> and select <g id="3">Texture</g> &gt; <g id="4">Render target</g>.</target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Add render target<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Add render target<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en">Game Studio adds a <g id="1">render target</g> texture to your project assets.</source>
+<target xml:lang="pt">Game Studio adds a <g id="1">render target</g> texture to your project assets.</target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Render texture<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Render texture<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en">In the following steps, we'll render the UI to this texture, then display it in the overlay.</source>
+<target xml:lang="pt">In the following steps, we'll render the UI to this texture, then display it in the overlay.</target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en">2. Add a VR overlay</source>
+<target xml:lang="pt">2. Add a VR overlay</target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en">In the <g id="1">Asset View</g> (in the bottom pane by default), double-click the <g id="2">Graphics Compositor</g> asset.</source>
+<target xml:lang="pt">In the <g id="1">Asset View</g> (in the bottom pane by default), double-click the <g id="2">Graphics Compositor</g> asset.</target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Graphics compositor asset<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Graphics compositor asset<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en">The graphics compositor editor opens. For more information about the graphics compositor, see the <g id="1">Graphics compositor</g> page.</source>
+<target xml:lang="pt">The graphics compositor editor opens. For more information about the graphics compositor, see the <g id="1">Graphics compositor</g> page.</target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en">In the graphics compositor editor, select the <g id="1">forward renderer</g> node.</source>
+<target xml:lang="pt">In the graphics compositor editor, select the <g id="1">forward renderer</g> node.</target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Select forward renderer<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Select forward renderer<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en">In the <g id="1">Property Grid</g> (on the right by default), expand <g id="2">VR Settings</g>.</source>
+<target xml:lang="pt">In the <g id="1">Property Grid</g> (on the right by default), expand <g id="2">VR Settings</g>.</target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>VR settings<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>VR settings<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en">Next to <g id="1">Overlays</g>, click <x id="2"/>Green plus button<x id="3"/> (<g id="4">Add</g>).</source>
+<target xml:lang="pt">Next to <g id="1">Overlays</g>, click <x id="2"/>Green plus button<x id="3"/> (<g id="4">Add</g>).</target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en">Game Studio adds a new overlay to the list.</source>
+<target xml:lang="pt">Game Studio adds a new overlay to the list.</target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Add VR item<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Add VR item<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en">Next to <g id="1">Texture</g>, click <x id="2"/>Hand icon<x id="3"/> (<g id="4">Select an asset</g>).</source>
+<target xml:lang="pt">Next to <g id="1">Texture</g>, click <x id="2"/>Hand icon<x id="3"/> (<g id="4">Select an asset</g>).</target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en">The <g id="1">Select an asset</g> window opens.</source>
+<target xml:lang="pt">The <g id="1">Select an asset</g> window opens.</target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Select render texture<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Select render texture<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en">Select the <g id="1">render texture</g> you created and click <g id="2">OK</g>.</source>
+<target xml:lang="pt">Select the <g id="1">render texture</g> you created and click <g id="2">OK</g>.</target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en">3. Set up the UI render feature</source>
+<target xml:lang="pt">3. Set up the UI render feature</target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en">In the graphics compositor editor, on the left, under <g id="1">Render Features</g>, select the <g id="2">UIRenderFeature</g>.</source>
+<target xml:lang="pt">In the graphics compositor editor, on the left, under <g id="1">Render Features</g>, select the <g id="2">UIRenderFeature</g>.</target>
+</trans-unit>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Select UI render feature<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Select UI render feature<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu29" xml:space="preserve">
+<source xml:lang="en">In the Property Grid, make sure <g id="1">SimpleGroupToRenderStageSelector</g> is selected.</source>
+<target xml:lang="pt">In the Property Grid, make sure <g id="1">SimpleGroupToRenderStageSelector</g> is selected.</target>
+</trans-unit>
+<trans-unit id="tu30" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Select SimpleGroupToRenderStageSelector.png<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Select SimpleGroupToRenderStageSelector.png<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu31" xml:space="preserve">
+<source xml:lang="en">Under <g id="1">Render Stage</g>, make sure <g id="2">UIRenderStage</g> is selected.</source>
+<target xml:lang="pt">Under <g id="1">Render Stage</g>, make sure <g id="2">UIRenderStage</g> is selected.</target>
+</trans-unit>
+<trans-unit id="tu32" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Select UIRenderStage.png<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Select UIRenderStage.png<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu33" xml:space="preserve">
+<source xml:lang="en">This makes sure the UI is rendered in the UI render stage, which we'll use in the next step.</source>
+<target xml:lang="pt">This makes sure the UI is rendered in the UI render stage, which we'll use in the next step.</target>
+</trans-unit>
+<trans-unit id="tu34" xml:space="preserve">
+<source xml:lang="en">4. Set up the renderers</source>
+<target xml:lang="pt">4. Set up the renderers</target>
+</trans-unit>
+<trans-unit id="tu35" xml:space="preserve">
+<source xml:lang="en">To display an overlay, you need at least two renderers:</source>
+<target xml:lang="pt">To display an overlay, you need at least two renderers:</target>
+</trans-unit>
+<trans-unit id="tu36" xml:space="preserve">
+<source xml:lang="en">one to render your main camera</source>
+<target xml:lang="pt">one to render your main camera</target>
+</trans-unit>
+<trans-unit id="tu37" xml:space="preserve">
+<source xml:lang="en">one to render the UI to the overlay</source>
+<target xml:lang="pt">one to render the UI to the overlay</target>
+</trans-unit>
+<trans-unit id="tu38" xml:space="preserve">
+<source xml:lang="en">This page describes the simplest way to do this from scratch, using two cameras and two renderers. Depending on your pipeline, you might need to create a different setup.</source>
+<target xml:lang="pt">This page describes the simplest way to do this from scratch, using two cameras and two renderers. Depending on your pipeline, you might need to create a different setup.</target>
+</trans-unit>
+<trans-unit id="tu39" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>!Warning<x id="2"/>
+These instructions involve deleting your existing renderers for the game entry point. You might want to make a backup of your project in case you want to restore your pipeline afterwards.</source>
+<target xml:lang="pt"><x id="1"/>!Warning<x id="2"/>
+These instructions involve deleting your existing renderers for the game entry point. You might want to make a backup of your project in case you want to restore your pipeline afterwards.</target>
+</trans-unit>
+<trans-unit id="tu40" xml:space="preserve">
+<source xml:lang="en">In the graphics compositor editor, select the <g id="1">Entry points</g> node.</source>
+<target xml:lang="pt">In the graphics compositor editor, select the <g id="1">Entry points</g> node.</target>
+</trans-unit>
+<trans-unit id="tu41" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Entry points node<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Entry points node<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu42" xml:space="preserve">
+<source xml:lang="en">In the <g id="1">Property Grid</g> on the right, next to <g id="2">Game renderer</g>, click <x id="3"/>Blue arrow button<x id="4"/> (<g id="5">Replace</g>) and select <g id="6">None</g> to delete your existing renderers.</source>
+<target xml:lang="pt">In the <g id="1">Property Grid</g> on the right, next to <g id="2">Game renderer</g>, click <x id="3"/>Blue arrow button<x id="4"/> (<g id="5">Replace</g>) and select <g id="6">None</g> to delete your existing renderers.</target>
+</trans-unit>
+<trans-unit id="tu43" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Cleared game renderers<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Cleared game renderers<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu44" xml:space="preserve">
+<source xml:lang="en">Next to <g id="1">Game rendererer</g>, click <x id="2"/>Blue arrow button<x id="3"/> (<g id="4">Replace</g>) and select <g id="5">Camera Renderer</g>.</source>
+<target xml:lang="pt">Next to <g id="1">Game rendererer</g>, click <x id="2"/>Blue arrow button<x id="3"/> (<g id="4">Replace</g>) and select <g id="5">Camera Renderer</g>.</target>
+</trans-unit>
+<trans-unit id="tu45" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Select camera renderer.png<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Select camera renderer.png<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu46" xml:space="preserve">
+<source xml:lang="en">Currently, <g id="1">all</g> renderers must have a camera, or be a child of a renderer that has a camera. This applies even to renderers that don't necessarily use cameras, such as the single stage renderer, which renders the UI.</source>
+<target xml:lang="pt">Currently, <g id="1">all</g> renderers must have a camera, or be a child of a renderer that has a camera. This applies even to renderers that don't necessarily use cameras, such as the single stage renderer, which renders the UI.</target>
+</trans-unit>
+<trans-unit id="tu47" xml:space="preserve">
+<source xml:lang="en">For this reason, in these instructions, we'll add a game renderer with a camera, then make the two renderers children of that renderer. This makes sure both renderers have a parent with a camera.</source>
+<target xml:lang="pt">For this reason, in these instructions, we'll add a game renderer with a camera, then make the two renderers children of that renderer. This makes sure both renderers have a parent with a camera.</target>
+</trans-unit>
+<trans-unit id="tu48" xml:space="preserve">
+<source xml:lang="en">Next to <g id="1">Camera</g>, click <x id="2"/>Blue arrow button<x id="3"/> (<g id="4">Replace</g>) and select your main game camera.</source>
+<target xml:lang="pt">Next to <g id="1">Camera</g>, click <x id="2"/>Blue arrow button<x id="3"/> (<g id="4">Replace</g>) and select your main game camera.</target>
+</trans-unit>
+<trans-unit id="tu49" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Select main camera<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Select main camera<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu50" xml:space="preserve">
+<source xml:lang="en">Next to <g id="1">Child</g>, click <x id="2"/>Blue arrow button<x id="3"/> (<g id="4">Replace</g>) and select <g id="5">SceneRendererCollection</g>.</source>
+<target xml:lang="pt">Next to <g id="1">Child</g>, click <x id="2"/>Blue arrow button<x id="3"/> (<g id="4">Replace</g>) and select <g id="5">SceneRendererCollection</g>.</target>
+</trans-unit>
+<trans-unit id="tu51" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Select scene renderer collection<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Select scene renderer collection<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu52" xml:space="preserve">
+<source xml:lang="en">Next to <g id="1">Children</g>, Click <x id="2"/>Green plus button<x id="3"/> (<g id="4">Add</g>) and select <g id="5">RenderTextureSceneRenderer</g>.</source>
+<target xml:lang="pt">Next to <g id="1">Children</g>, Click <x id="2"/>Green plus button<x id="3"/> (<g id="4">Add</g>) and select <g id="5">RenderTextureSceneRenderer</g>.</target>
+</trans-unit>
+<trans-unit id="tu53" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Select RenderTextureSceneRenderer<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Select RenderTextureSceneRenderer<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu54" xml:space="preserve">
+<source xml:lang="en">Next to <g id="1">Child</g>, click <x id="2"/>Blue arrow button<x id="3"/> (<g id="4">Replace</g>) and select <g id="5">SingleStageRenderer</g>.</source>
+<target xml:lang="pt">Next to <g id="1">Child</g>, click <x id="2"/>Blue arrow button<x id="3"/> (<g id="4">Replace</g>) and select <g id="5">SingleStageRenderer</g>.</target>
+</trans-unit>
+<trans-unit id="tu55" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Select single stage renderer<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Select single stage renderer<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu56" xml:space="preserve">
+<source xml:lang="en">Next to <g id="1">Render Stage</g>, click <x id="2"/>Blue arrow button<x id="3"/> (<g id="4">Replace</g>) and select <g id="5">UIRenderStage</g>. This is the renderer that renders the UI.</source>
+<target xml:lang="pt">Next to <g id="1">Render Stage</g>, click <x id="2"/>Blue arrow button<x id="3"/> (<g id="4">Replace</g>) and select <g id="5">UIRenderStage</g>. This is the renderer that renders the UI.</target>
+</trans-unit>
+<trans-unit id="tu57" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Select UI render stage<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Select UI render stage<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu58" xml:space="preserve">
+<source xml:lang="en">Next to <g id="1">Render Texture</g>, click <x id="2"/>Hand icon<x id="3"/> (<g id="4">Select an asset</g>).</source>
+<target xml:lang="pt">Next to <g id="1">Render Texture</g>, click <x id="2"/>Hand icon<x id="3"/> (<g id="4">Select an asset</g>).</target>
+</trans-unit>
+<trans-unit id="tu59" xml:space="preserve">
+<source xml:lang="en">The <g id="1">Select an asset</g> window opens.</source>
+<target xml:lang="pt">The <g id="1">Select an asset</g> window opens.</target>
+</trans-unit>
+<trans-unit id="tu60" xml:space="preserve">
+<source xml:lang="en">Select the <g id="1">render texture</g> and click <g id="2">OK</g>.</source>
+<target xml:lang="pt">Select the <g id="1">render texture</g> and click <g id="2">OK</g>.</target>
+</trans-unit>
+<trans-unit id="tu61" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Select render texture<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Select render texture<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu62" xml:space="preserve">
+<source xml:lang="en">Game Studio adds the render texture to the renderer.</source>
+<target xml:lang="pt">Game Studio adds the render texture to the renderer.</target>
+</trans-unit>
+<trans-unit id="tu63" xml:space="preserve">
+<source xml:lang="en">Under <g id="1">Game renderer</g>, next to <g id="2">Children</g>, click <x id="3"/>Green plus button<x id="4"/> (<g id="5">Add</g>) and select <g id="6">Forward renderer</g>.</source>
+<target xml:lang="pt">Under <g id="1">Game renderer</g>, next to <g id="2">Children</g>, click <x id="3"/>Green plus button<x id="4"/> (<g id="5">Add</g>) and select <g id="6">Forward renderer</g>.</target>
+</trans-unit>
+<trans-unit id="tu64" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Select forward renderer<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Select forward renderer<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu65" xml:space="preserve">
+<source xml:lang="en">Your game is now ready to render the UI to an overlay in your VR device.</source>
+<target xml:lang="pt">Your game is now ready to render the UI to an overlay in your VR device.</target>
+</trans-unit>
+<trans-unit id="tu66" xml:space="preserve">
+<source xml:lang="en">VR template</source>
+<target xml:lang="pt">VR template</target>
+</trans-unit>
+<trans-unit id="tu67" xml:space="preserve">
+<source xml:lang="en">For an example of a UI overlay implemented in a VR game, see the VR template included with Stride.</source>
+<target xml:lang="pt">For an example of a UI overlay implemented in a VR game, see the VR template included with Stride.</target>
+</trans-unit>
+<trans-unit id="tu68" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>VR template<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>VR template<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu69" xml:space="preserve">
+<source xml:lang="en">See also</source>
+<target xml:lang="pt">See also</target>
+</trans-unit>
+<trans-unit id="tu70" xml:space="preserve">
+<source xml:lang="en"><g id="1">Overlays</g></source>
+<target xml:lang="pt"><g id="1">Overlays</g></target>
+</trans-unit>
+<trans-unit id="tu71" xml:space="preserve">
+<source xml:lang="en"><g id="1">UI</g></source>
+<target xml:lang="pt"><g id="1">UI</g></target>
+</trans-unit>
+<trans-unit id="tu72" xml:space="preserve">
+<source xml:lang="en"><g id="1">Render textures</g></source>
+<target xml:lang="pt"><g id="1">Render textures</g></target>
+</trans-unit>
+<trans-unit id="tu73" xml:space="preserve">
+<source xml:lang="en"><g id="1">Graphics compositor</g></source>
+<target xml:lang="pt"><g id="1">Graphics compositor</g></target>
+</trans-unit>
+</body>
+</file>
+</xliff>

@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" xmlns:okp="okapi-framework:xliff-extensions" its:version="2.0" version="1.2">
+<file datatype="x-text/x-markdown" okp:inputEncoding="UTF-8" original="/D:/repos/rr/source/manual/graphics/graphics-compositor/index.md" source-language="en" target-language="pt">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en">Graphics compositor</source>
+<target xml:lang="pt">Graphics compositor</target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Advanced<x id="2"/>
+<x id="3"/>Programmer<x id="4"/></source>
+<target xml:lang="pt"><x id="1"/>Advanced<x id="2"/>
+<x id="3"/>Programmer<x id="4"/></target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>!Note<x id="2"/>
+This page requires a basic understanding of graphics pipelines.</source>
+<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
+This page requires a basic understanding of graphics pipelines.</target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">The <g id="1">graphics compositor</g> organizes how <g id="2">scenes</g> are rendered. You can use it to customize almost every part of the rendering pipeline. For example, you can:</source>
+<target xml:lang="pt">The <g id="1">graphics compositor</g> organizes how <g id="2">scenes</g> are rendered. You can use it to customize almost every part of the rendering pipeline. For example, you can:</target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">use one or multiple <g id="1">cameras</g></source>
+<target xml:lang="pt">use one or multiple <g id="1">cameras</g></target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en">filter entities</source>
+<target xml:lang="pt">filter entities</target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en">render to one or more <g id="1">render textures</g>, with different viewports</source>
+<target xml:lang="pt">render to one or more <g id="1">render textures</g>, with different viewports</target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en">set HDR or LDR rendering</source>
+<target xml:lang="pt">set HDR or LDR rendering</target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en">apply <g id="1">post effects</g> to a render target, selected before or after rendering a camera</source>
+<target xml:lang="pt">apply <g id="1">post effects</g> to a render target, selected before or after rendering a camera</target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en">clear a render target or clear only the depth buffer (eg to always render on top of a render target in a FPS game, or render the UI)</source>
+<target xml:lang="pt">clear a render target or clear only the depth buffer (eg to always render on top of a render target in a FPS game, or render the UI)</target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en">modify the compositor from scripts (or any animation system), for example to modify post effects</source>
+<target xml:lang="pt">modify the compositor from scripts (or any animation system), for example to modify post effects</target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en">Create a graphics compositor</source>
+<target xml:lang="pt">Create a graphics compositor</target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en">Stride includes a graphics compositor when you create a project.</source>
+<target xml:lang="pt">Stride includes a graphics compositor when you create a project.</target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en">If you need to create another graphics compositor, in the <g id="1">Asset View</g>, click <g id="2">Add asset</g> and select <g id="3">Misc &gt; Graphics compositor</g>.</source>
+<target xml:lang="pt">If you need to create another graphics compositor, in the <g id="1">Asset View</g>, click <g id="2">Add asset</g> and select <g id="3">Misc &gt; Graphics compositor</g>.</target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Add graphics compositor<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Add graphics compositor<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en">You can choose one of two presets:</source>
+<target xml:lang="pt">You can choose one of two presets:</target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en">Level 10 (HDR with <g id="1">post effects</g>)</source>
+<target xml:lang="pt">Level 10 (HDR with <g id="1">post effects</g>)</target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en">Level 9 (LDR with no post effects)</source>
+<target xml:lang="pt">Level 9 (LDR with no post effects)</target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en">Set the graphics compositor</source>
+<target xml:lang="pt">Set the graphics compositor</target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en">You can have multiple graphics compositors in your project, but you can only use one compositor at a time. At runtime, Stride uses the graphics compositor you specify in <g id="1">Game Settings</g>.</source>
+<target xml:lang="pt">You can have multiple graphics compositors in your project, but you can only use one compositor at a time. At runtime, Stride uses the graphics compositor you specify in <g id="1">Game Settings</g>.</target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Set default scene<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Set default scene<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en">You can also change the graphics compositor at runtime in a script.</source>
+<target xml:lang="pt">You can also change the graphics compositor at runtime in a script.</target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en">Open the graphics compositor editor</source>
+<target xml:lang="pt">Open the graphics compositor editor</target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en">You customize the graphics compositor in the <g id="1">graphics compositor editor</g>.</source>
+<target xml:lang="pt">You customize the graphics compositor in the <g id="1">graphics compositor editor</g>.</target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>!Note<x id="2"/>
+The graphics compositor editor is an experimental feature.</source>
+<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
+The graphics compositor editor is an experimental feature.</target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en">In the <g id="1">Asset View</g> (in the bottom pane by default), double-click the <g id="2">Graphics Compositor</g> asset.</source>
+<target xml:lang="pt">In the <g id="1">Asset View</g> (in the bottom pane by default), double-click the <g id="2">Graphics Compositor</g> asset.</target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Graphics Compositor asset<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Graphics Compositor asset<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en">The <g id="1">graphics compositor editor</g> opens.</source>
+<target xml:lang="pt">The <g id="1">graphics compositor editor</g> opens.</target>
+</trans-unit>
+<trans-unit id="tu29" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Graphics Compositor editor<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Graphics Compositor editor<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu30" xml:space="preserve">
+<source xml:lang="en">Nodes</source>
+<target xml:lang="pt">Nodes</target>
+</trans-unit>
+<trans-unit id="tu31" xml:space="preserve">
+<source xml:lang="en">The graphics compositor editor is divided into <g id="1">nodes</g>. You can set the properties of each node in the <g id="2">Property Grid</g> on the right.</source>
+<target xml:lang="pt">The graphics compositor editor is divided into <g id="1">nodes</g>. You can set the properties of each node in the <g id="2">Property Grid</g> on the right.</target>
+</trans-unit>
+<trans-unit id="tu32" xml:space="preserve">
+<source xml:lang="en">Entry points</source>
+<target xml:lang="pt">Entry points</target>
+</trans-unit>
+<trans-unit id="tu33" xml:space="preserve">
+<source xml:lang="en">In the <g id="1">Entry Points</g> node, you configure the pipeline for each entry point.</source>
+<target xml:lang="pt">In the <g id="1">Entry Points</g> node, you configure the pipeline for each entry point.</target>
+</trans-unit>
+<trans-unit id="tu34" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Entry points node<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Entry points node<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu35" xml:space="preserve">
+<source xml:lang="en">There are three entry points:</source>
+<target xml:lang="pt">There are three entry points:</target>
+</trans-unit>
+<trans-unit id="tu36" xml:space="preserve">
+<source xml:lang="en"><g id="1">Game</g>, to render your game</source>
+<target xml:lang="pt"><g id="1">Game</g>, to render your game</target>
+</trans-unit>
+<trans-unit id="tu37" xml:space="preserve">
+<source xml:lang="en"><g id="1">Editor</g>, to render the Game Studio editor</source>
+<target xml:lang="pt"><g id="1">Editor</g>, to render the Game Studio editor</target>
+</trans-unit>
+<trans-unit id="tu38" xml:space="preserve">
+<source xml:lang="en"><g id="1">Single view</g> (referred to as <g id="2">Utility</g> in the Property Grid), to render other things, such as <g id="3">light probes</g> and <g id="4">cubemaps</g></source>
+<target xml:lang="pt"><g id="1">Single view</g> (referred to as <g id="2">Utility</g> in the Property Grid), to render other things, such as <g id="3">light probes</g> and <g id="4">cubemaps</g></target>
+</trans-unit>
+<trans-unit id="tu39" xml:space="preserve">
+<source xml:lang="en">Each entry point can use a separate rendering pipeline. For example, the game and editor might share the same forward renderer and <g id="1">post-processing effects</g> while your single view uses a separate forward renderer.</source>
+<target xml:lang="pt">Each entry point can use a separate rendering pipeline. For example, the game and editor might share the same forward renderer and <g id="1">post-processing effects</g> while your single view uses a separate forward renderer.</target>
+</trans-unit>
+<trans-unit id="tu40" xml:space="preserve">
+<source xml:lang="en">Connect an entry point to a renderer</source>
+<target xml:lang="pt">Connect an entry point to a renderer</target>
+</trans-unit>
+<trans-unit id="tu41" xml:space="preserve">
+<source xml:lang="en">Select the <g id="1">Entry point</g> node.</source>
+<target xml:lang="pt">Select the <g id="1">Entry point</g> node.</target>
+</trans-unit>
+<trans-unit id="tu42" xml:space="preserve">
+<source xml:lang="en">In the <g id="1">Property Grid</g>, next to the entry point you want to connect (<g id="2">Editor</g>, <g id="3">Game</g> or <g id="4">Utility</g>), select the renderer you want to connect to.</source>
+<target xml:lang="pt">In the <g id="1">Property Grid</g>, next to the entry point you want to connect (<g id="2">Editor</g>, <g id="3">Game</g> or <g id="4">Utility</g>), select the renderer you want to connect to.</target>
+</trans-unit>
+<trans-unit id="tu43" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Select renderer<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Select renderer<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu44" xml:space="preserve">
+<source xml:lang="en">For information about the different renderers, see <g id="1">Scene renderers</g>.</source>
+<target xml:lang="pt">For information about the different renderers, see <g id="1">Scene renderers</g>.</target>
+</trans-unit>
+<trans-unit id="tu45" xml:space="preserve">
+<source xml:lang="en">Forward renderer</source>
+<target xml:lang="pt">Forward renderer</target>
+</trans-unit>
+<trans-unit id="tu46" xml:space="preserve">
+<source xml:lang="en">In a typical setup, the <g id="1">forward renderer</g> renders almost everything in your scene. It renders, in order:</source>
+<target xml:lang="pt">In a typical setup, the <g id="1">forward renderer</g> renders almost everything in your scene. It renders, in order:</target>
+</trans-unit>
+<trans-unit id="tu47" xml:space="preserve">
+<source xml:lang="en">opaque objects</source>
+<target xml:lang="pt">opaque objects</target>
+</trans-unit>
+<trans-unit id="tu48" xml:space="preserve">
+<source xml:lang="en">transparent objects</source>
+<target xml:lang="pt">transparent objects</target>
+</trans-unit>
+<trans-unit id="tu49" xml:space="preserve">
+<source xml:lang="en"><g id="1">post effects</g></source>
+<target xml:lang="pt"><g id="1">post effects</g></target>
+</trans-unit>
+<trans-unit id="tu50" xml:space="preserve">
+<source xml:lang="en">The forward renderer is also where you set <g id="1">virtual reality</g> options. You configure the forward renderer properties in the <g id="2">forward entry node</g>.</source>
+<target xml:lang="pt">The forward renderer is also where you set <g id="1">virtual reality</g> options. You configure the forward renderer properties in the <g id="2">forward entry node</g>.</target>
+</trans-unit>
+<trans-unit id="tu51" xml:space="preserve">
+<source xml:lang="en">Debug renderer</source>
+<target xml:lang="pt">Debug renderer</target>
+</trans-unit>
+<trans-unit id="tu52" xml:space="preserve">
+<source xml:lang="en">The <g id="1">debug renderer</g> is used by scripts to print debug information. For more information, see <g id="2">Debug renderers</g>.</source>
+<target xml:lang="pt">The <g id="1">debug renderer</g> is used by scripts to print debug information. For more information, see <g id="2">Debug renderers</g>.</target>
+</trans-unit>
+<trans-unit id="tu53" xml:space="preserve">
+<source xml:lang="en">Post-processing effects</source>
+<target xml:lang="pt">Post-processing effects</target>
+</trans-unit>
+<trans-unit id="tu54" xml:space="preserve">
+<source xml:lang="en">The <g id="1">post-processing effects</g> node comes after the forward renderer and controls the post effects in your game. For more information, see <g id="2">post-processing effects</g>.</source>
+<target xml:lang="pt">The <g id="1">post-processing effects</g> node comes after the forward renderer and controls the post effects in your game. For more information, see <g id="2">post-processing effects</g>.</target>
+</trans-unit>
+<trans-unit id="tu55" xml:space="preserve">
+<source xml:lang="en">Create a node</source>
+<target xml:lang="pt">Create a node</target>
+</trans-unit>
+<trans-unit id="tu56" xml:space="preserve">
+<source xml:lang="en">To create a node, right-click the graphics compositor editor and select the type of node you want to create:</source>
+<target xml:lang="pt">To create a node, right-click the graphics compositor editor and select the type of node you want to create:</target>
+</trans-unit>
+<trans-unit id="tu57" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Create node<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Create node<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu58" xml:space="preserve">
+<source xml:lang="en">See also</source>
+<target xml:lang="pt">See also</target>
+</trans-unit>
+<trans-unit id="tu59" xml:space="preserve">
+<source xml:lang="en"><g id="1">Camera slots</g></source>
+<target xml:lang="pt"><g id="1">Camera slots</g></target>
+</trans-unit>
+<trans-unit id="tu60" xml:space="preserve">
+<source xml:lang="en"><g id="1">Scene renderers</g></source>
+<target xml:lang="pt"><g id="1">Scene renderers</g></target>
+</trans-unit>
+<trans-unit id="tu61" xml:space="preserve">
+<source xml:lang="en"><g id="1">Custom scene renders</g></source>
+<target xml:lang="pt"><g id="1">Custom scene renders</g></target>
+</trans-unit>
+<trans-unit id="tu62" xml:space="preserve">
+<source xml:lang="en"><g id="1">Debug renderers</g></source>
+<target xml:lang="pt"><g id="1">Debug renderers</g></target>
+</trans-unit>
+</body>
+</file>
+</xliff>

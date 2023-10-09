@@ -1,0 +1,943 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="/D:/repos/rr/source/ReleaseNotes/ReleaseNotes-1.7.md" source-language="en" target-language="pt" datatype="x-text/x-markdown" okp:inputEncoding="UTF-8">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en">Xenko release notes 1.7</source>
+<target xml:lang="pt">Xenko release notes 1.7</target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en">Highlights</source>
+<target xml:lang="pt">Highlights</target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">Rendering</source>
+<target xml:lang="pt">Rendering</target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">Forward+</source>
+<target xml:lang="pt">Forward+</target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">Xenko now features <g id="1">Practical Clustered Shading</g>, a technique similar to Forward+ rendering.</source>
+<target xml:lang="pt">Xenko now features <g id="1">Practical Clustered Shading</g>, a technique similar to Forward+ rendering.</target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en">It allows you to use many point and spot lights at the same time.
+You will gain more control over the lighting of your scene by adding lights wherever they are needed.
+It also works with transparent objects out of the box, just like ordinary forward rendering does.</source>
+<target xml:lang="pt">It allows you to use many point and spot lights at the same time.
+You will gain more control over the lighting of your scene by adding lights wherever they are needed.
+It also works with transparent objects out of the box, just like ordinary forward rendering does.</target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en"><g id="1"><x id="2"/>Hundreds of lights<x id="3"/></g>Hundreds of lights<ex id="4"/></source>
+<target xml:lang="pt"><g id="1"><x id="2"/>Hundreds of lights<x id="3"/></g>Hundreds of lights<ex id="4"/></target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en">If your game requires Direct3D10+ (or equivalent OpenGL), this will be the default setting - no changes needed! As a bonus, you'll see a decrease in compilation times and the number of shader permutations.</source>
+<target xml:lang="pt">If your game requires Direct3D10+ (or equivalent OpenGL), this will be the default setting - no changes needed! As a bonus, you'll see a decrease in compilation times and the number of shader permutations.</target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en">We also took this opportunity to rewrite most of our lighting code for improved performance and extensibility.</source>
+<target xml:lang="pt">We also took this opportunity to rewrite most of our lighting code for improved performance and extensibility.</target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en">Vulkan</source>
+<target xml:lang="pt">Vulkan</target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en"><g id="1">Vulkan</g> joins our happy family of graphics platforms!
+Experimental support has also been added for Windows and Linux. Android will follow soon.</source>
+<target xml:lang="pt"><g id="1">Vulkan</g> joins our happy family of graphics platforms!
+Experimental support has also been added for Windows and Linux. Android will follow soon.</target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Vulkan<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Vulkan<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en">Together with Direct3D12 and the recent overhaul of our rendering pipeline, this is another step toward preparing Xenko for the next generation of graphics. Stay tuned for performance improvements and hard numbers in the near future.</source>
+<target xml:lang="pt">Together with Direct3D12 and the recent overhaul of our rendering pipeline, this is another step toward preparing Xenko for the next generation of graphics. Stay tuned for performance improvements and hard numbers in the near future.</target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en">Try running your project on Vulkan by selecting it as the <g id="1">Preferred Graphics Platform</g> in the <g id="2">Rendering Settings</g> of your <g id="3">Game Settings</g> asset.</source>
+<target xml:lang="pt">Try running your project on Vulkan by selecting it as the <g id="1">Preferred Graphics Platform</g> in the <g id="2">Rendering Settings</g> of your <g id="3">Game Settings</g> asset.</target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en">GameStudio Improvements</source>
+<target xml:lang="pt">GameStudio Improvements</target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en">Simplified Asset Creation</source>
+<target xml:lang="pt">Simplified Asset Creation</target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en">The workflow to create assets has been simplified! The new menu for asset creation contains multiple templates for each type of asset. You can now import assets from files more directly. With Xenko's efficient search function, creating assets should be faster and easier than ever!</source>
+<target xml:lang="pt">The workflow to create assets has been simplified! The new menu for asset creation contains multiple templates for each type of asset. You can now import assets from files more directly. With Xenko's efficient search function, creating assets should be faster and easier than ever!</target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>New add asset menu<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>New add asset menu<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en">Camera Preview</source>
+<target xml:lang="pt">Camera Preview</target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en">We've updated GameStudio's camera preview to now display only the camera currently selected. It also now displays the borders and the camera's name making it easier to see the camera and it's settings.</source>
+<target xml:lang="pt">We've updated GameStudio's camera preview to now display only the camera currently selected. It also now displays the borders and the camera's name making it easier to see the camera and it's settings.</target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Camera preview<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Camera preview<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en">Drag &amp; Drop Assets into the Property Grid</source>
+<target xml:lang="pt">Drag &amp; Drop Assets into the Property Grid</target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en">So far, you could drag &amp; drop assets into your scene or the tree view.</source>
+<target xml:lang="pt">So far, you could drag &amp; drop assets into your scene or the tree view.</target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en">New in this release, components can now be added to entities just by dragging &amp; dropping matching assets into the property grid.</source>
+<target xml:lang="pt">New in this release, components can now be added to entities just by dragging &amp; dropping matching assets into the property grid.</target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Drag &amp; Drop into the Property Grid<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Drag &amp; Drop into the Property Grid<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en">Drag &amp; Drop scripts</source>
+<target xml:lang="pt">Drag &amp; Drop scripts</target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en">You can also drag &amp; drop scripts directly into the scene, tree view and property view:</source>
+<target xml:lang="pt">You can also drag &amp; drop scripts directly into the scene, tree view and property view:</target>
+</trans-unit>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Drag &amp; Drop into the Property Grid<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Drag &amp; Drop into the Property Grid<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu29" xml:space="preserve">
+<source xml:lang="en">Linux</source>
+<target xml:lang="pt">Linux</target>
+</trans-unit>
+<trans-unit id="tu30" xml:space="preserve">
+<source xml:lang="en">Linux users rejoice! Linux is now a supported platform of Xenko among Windows, Android, iOS, and more! All you need is a PC running Linux Ubuntu 16.04 x64 or equivalent with a video card supporting OpenGL 4.2 or Vulkan 1.0. Mono or .NET Core (which need to be installed separately) will be powering your game.</source>
+<target xml:lang="pt">Linux users rejoice! Linux is now a supported platform of Xenko among Windows, Android, iOS, and more! All you need is a PC running Linux Ubuntu 16.04 x64 or equivalent with a video card supporting OpenGL 4.2 or Vulkan 1.0. Mono or .NET Core (which need to be installed separately) will be powering your game.</target>
+</trans-unit>
+<trans-unit id="tu31" xml:space="preserve">
+<source xml:lang="en">In order to use the <g id="1">Linux</g> platform, check <g id="2">Linux</g> from the list of platforms in the GameStudio then compile.</source>
+<target xml:lang="pt">In order to use the <g id="1">Linux</g> platform, check <g id="2">Linux</g> from the list of platforms in the GameStudio then compile.</target>
+</trans-unit>
+<trans-unit id="tu32" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Select Platforms Dialog<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Select Platforms Dialog<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu33" xml:space="preserve">
+<source xml:lang="en">Deployment to a remote Linux box is done via SSH when running your project from GameStudio.</source>
+<target xml:lang="pt">Deployment to a remote Linux box is done via SSH when running your project from GameStudio.</target>
+</trans-unit>
+<trans-unit id="tu34" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Platform Selector<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Platform Selector<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu35" xml:space="preserve">
+<source xml:lang="en">To know more about our Linux support, read the <g id="1">Linux documentation</g></source>
+<target xml:lang="pt">To know more about our Linux support, read the <g id="1">Linux documentation</g></target>
+</trans-unit>
+<trans-unit id="tu36" xml:space="preserve">
+<source xml:lang="en">Audio</source>
+<target xml:lang="pt">Audio</target>
+</trans-unit>
+<trans-unit id="tu37" xml:space="preserve">
+<source xml:lang="en">We've rewritten our Audio engine!
+While most changes are internal, the public API has improved, and we are still working to make it great!</source>
+<target xml:lang="pt">We've rewritten our Audio engine!
+While most changes are internal, the public API has improved, and we are still working to make it great!</target>
+</trans-unit>
+<trans-unit id="tu38" xml:space="preserve">
+<source xml:lang="en">The <g id="1">SoundEffect</g> and <g id="2">SoundMusic</g> classes have been consolidated into <g id="3">Sound</g>, also <g id="4">SoundEffectInstance</g> is now <g id="5">SoundInstance</g>. Sound formats are now converted using <g id="6">FFmpeg</g>. Because of these updates, the range of supported formats has also improved.</source>
+<target xml:lang="pt">The <g id="1">SoundEffect</g> and <g id="2">SoundMusic</g> classes have been consolidated into <g id="3">Sound</g>, also <g id="4">SoundEffectInstance</g> is now <g id="5">SoundInstance</g>. Sound formats are now converted using <g id="6">FFmpeg</g>. Because of these updates, the range of supported formats has also improved.</target>
+</trans-unit>
+<trans-unit id="tu39" xml:space="preserve">
+<source xml:lang="en">Under the hood, the <g id="1">CELT</g> codec (part of <g id="2">Opus</g>) is now being used. We're delighted to say that performance has since skyrocketed! Music can now be mixed and crossfaded while streaming and decompressing directly from disk.</source>
+<target xml:lang="pt">Under the hood, the <g id="1">CELT</g> codec (part of <g id="2">Opus</g>) is now being used. We're delighted to say that performance has since skyrocketed! Music can now be mixed and crossfaded while streaming and decompressing directly from disk.</target>
+</trans-unit>
+<trans-unit id="tu40" xml:space="preserve">
+<source xml:lang="en">Xenko's API now builds on OpenAL for Linux/macOS/iOS, on OpenSLES for Android and on XAudio2 for Windows platforms.</source>
+<target xml:lang="pt">Xenko's API now builds on OpenAL for Linux/macOS/iOS, on OpenSLES for Android and on XAudio2 for Windows platforms.</target>
+</trans-unit>
+<trans-unit id="tu41" xml:space="preserve">
+<source xml:lang="en">How To Upgrade</source>
+<target xml:lang="pt">How To Upgrade</target>
+</trans-unit>
+<trans-unit id="tu42" xml:space="preserve">
+<source xml:lang="en">This section explains how to migrate a project from version 1.6.x to version 1.7.x.</source>
+<target xml:lang="pt">This section explains how to migrate a project from version 1.6.x to version 1.7.x.</target>
+</trans-unit>
+<trans-unit id="tu43" xml:space="preserve">
+<source xml:lang="en">UIComponent</source>
+<target xml:lang="pt">UIComponent</target>
+</trans-unit>
+<trans-unit id="tu44" xml:space="preserve">
+<source xml:lang="en"><g id="1">VirtualResolution</g> property has been renamed to <g id="2">Resolution</g></source>
+<target xml:lang="pt"><g id="1">VirtualResolution</g> property has been renamed to <g id="2">Resolution</g></target>
+</trans-unit>
+<trans-unit id="tu45" xml:space="preserve">
+<source xml:lang="en"><g id="1">VirtualResolutionMode</g> property has been renamed to <g id="2">ResolutionStretch</g></source>
+<target xml:lang="pt"><g id="1">VirtualResolutionMode</g> property has been renamed to <g id="2">ResolutionStretch</g></target>
+</trans-unit>
+<trans-unit id="tu46" xml:space="preserve">
+<source xml:lang="en">ISpriteProvider</source>
+<target xml:lang="pt">ISpriteProvider</target>
+</trans-unit>
+<trans-unit id="tu47" xml:space="preserve">
+<source xml:lang="en">The properties of type <g id="1">Sprite</g> have been changed to properties of type <g id="2">ISpriteProvider</g>. Currently two implementations of <g id="3">ISpriteProvider</g> are available:</source>
+<target xml:lang="pt">The properties of type <g id="1">Sprite</g> have been changed to properties of type <g id="2">ISpriteProvider</g>. Currently two implementations of <g id="3">ISpriteProvider</g> are available:</target>
+</trans-unit>
+<trans-unit id="tu48" xml:space="preserve">
+<source xml:lang="en"><g id="1">SpriteFromSheet</g> for use with a <g id="2">SpriteSheet</g> (i.e. a collection of <g id="3">Sprite</g>)</source>
+<target xml:lang="pt"><g id="1">SpriteFromSheet</g> for use with a <g id="2">SpriteSheet</g> (i.e. a collection of <g id="3">Sprite</g>)</target>
+</trans-unit>
+<trans-unit id="tu49" xml:space="preserve">
+<source xml:lang="en"><g id="1">SpriteFromTexture</g> for use with a single <g id="2">Texture</g></source>
+<target xml:lang="pt"><g id="1">SpriteFromTexture</g> for use with a single <g id="2">Texture</g></target>
+</trans-unit>
+<trans-unit id="tu50" xml:space="preserve">
+<source xml:lang="en">To upgrade where a single Sprite was previously used cast the assignment with the following (<g id="1">SpriteFromTexture</g> provides a convenient explicit converter from <g id="2">Sprite</g>).</source>
+<target xml:lang="pt">To upgrade where a single Sprite was previously used cast the assignment with the following (<g id="1">SpriteFromTexture</g> provides a convenient explicit converter from <g id="2">Sprite</g>).</target>
+</trans-unit>
+<trans-unit id="tu51" xml:space="preserve">
+<source xml:lang="en">var button = new Button
+{
+  PressedImage = (SpriteFromTexture)new Sprite(Content.Load&lt;Texture>("ImageButtonPressed"))
+}
+</source>
+<target xml:lang="pt">var button = new Button
+{
+  PressedImage = (SpriteFromTexture)new Sprite(Content.Load&lt;Texture>("ImageButtonPressed"))
+}
+</target>
+</trans-unit>
+<trans-unit id="tu52" xml:space="preserve">
+<source xml:lang="en">To upgrade where a sprite from a SpriteSheet was previously used:
+Create a new <g id="1">SpriteFromSheet</g> and provide a reference to the <g id="2">SpriteSheet</g> instance and the corresponding frame index.</source>
+<target xml:lang="pt">To upgrade where a sprite from a SpriteSheet was previously used:
+Create a new <g id="1">SpriteFromSheet</g> and provide a reference to the <g id="2">SpriteSheet</g> instance and the corresponding frame index.</target>
+</trans-unit>
+<trans-unit id="tu53" xml:space="preserve">
+<source xml:lang="en">var button = new Button
+{
+  PressedImage = new SpriteFromSheet
+  {
+    Sheet = sprites,
+    CurrentFrame = sprites.FindImageIndex("ButtonPressed")
+  }
+}
+</source>
+<target xml:lang="pt">var button = new Button
+{
+  PressedImage = new SpriteFromSheet
+  {
+    Sheet = sprites,
+    CurrentFrame = sprites.FindImageIndex("ButtonPressed")
+  }
+}
+</target>
+</trans-unit>
+<trans-unit id="tu54" xml:space="preserve">
+<source xml:lang="en">For convenience, we provide a helper method which does exactly the same: <g id="1">SpriteFromSheet.Create(sprites, "ButtonPressed")</g>.</source>
+<target xml:lang="pt">For convenience, we provide a helper method which does exactly the same: <g id="1">SpriteFromSheet.Create(sprites, "ButtonPressed")</g>.</target>
+</trans-unit>
+<trans-unit id="tu55" xml:space="preserve">
+<source xml:lang="en">To change the <g id="1">CurrentFrame</g> (which now only exists in <g id="2">SpriteFromSheet</g>), a cast is required:</source>
+<target xml:lang="pt">To change the <g id="1">CurrentFrame</g> (which now only exists in <g id="2">SpriteFromSheet</g>), a cast is required:</target>
+</trans-unit>
+<trans-unit id="tu56" xml:space="preserve">
+<source xml:lang="en">var provider = Entity.Get&lt;SpriteComponent>().SpriteProvider as SpriteFromSheet;
+if (provider != null)
+  provider.CurrentFrame = SomeIndex;
+</source>
+<target xml:lang="pt">var provider = Entity.Get&lt;SpriteComponent>().SpriteProvider as SpriteFromSheet;
+if (provider != null)
+  provider.CurrentFrame = SomeIndex;
+</target>
+</trans-unit>
+<trans-unit id="tu57" xml:space="preserve">
+<source xml:lang="en">SoundEffect (Instance) and SoundMusic to Sound(Instance)</source>
+<target xml:lang="pt">SoundEffect (Instance) and SoundMusic to Sound(Instance)</target>
+</trans-unit>
+<trans-unit id="tu58" xml:space="preserve">
+<source xml:lang="en">Kindly note that there is no more <g id="1">SoundMusic</g>. Instead, you should now use <g id="2">Sound</g> and <g id="3">SoundInstance</g> for any kind of sound.</source>
+<target xml:lang="pt">Kindly note that there is no more <g id="1">SoundMusic</g>. Instead, you should now use <g id="2">Sound</g> and <g id="3">SoundInstance</g> for any kind of sound.</target>
+</trans-unit>
+<trans-unit id="tu59" xml:space="preserve">
+<source xml:lang="en">From the game studio, you can now set compression ratio, spatialization or you have the option to stream the sound directly from disk.
+You now need a <g id="1">SoundInstance</g> to play a sound, the helper methods in <g id="2">Sound</g> were convenient but a bit confusing.
+You can still assign <g id="3">Sound</g> assets to Scripts like before:</source>
+<target xml:lang="pt">From the game studio, you can now set compression ratio, spatialization or you have the option to stream the sound directly from disk.
+You now need a <g id="1">SoundInstance</g> to play a sound, the helper methods in <g id="2">Sound</g> were convenient but a bit confusing.
+You can still assign <g id="3">Sound</g> assets to Scripts like before:</target>
+</trans-unit>
+<trans-unit id="tu60" xml:space="preserve">
+<source xml:lang="en">public Sound MySound;
+private SoundInstance mySoundInstance;
+</source>
+<target xml:lang="pt">public Sound MySound;
+private SoundInstance mySoundInstance;
+</target>
+</trans-unit>
+<trans-unit id="tu61" xml:space="preserve">
+<source xml:lang="en">Also note, the way you use them has changed.
+Before:</source>
+<target xml:lang="pt">Also note, the way you use them has changed.
+Before:</target>
+</trans-unit>
+<trans-unit id="tu62" xml:space="preserve">
+<source xml:lang="en">MySound.Play();
+</source>
+<target xml:lang="pt">MySound.Play();
+</target>
+</trans-unit>
+<trans-unit id="tu63" xml:space="preserve">
+<source xml:lang="en">After:</source>
+<target xml:lang="pt">After:</target>
+</trans-unit>
+<trans-unit id="tu64" xml:space="preserve">
+<source xml:lang="en">mySoundInstance = MySound.CreateInstance();
+mySoundInstance.Play();
+</source>
+<target xml:lang="pt">mySoundInstance = MySound.CreateInstance();
+mySoundInstance.Play();
+</target>
+</trans-unit>
+<trans-unit id="tu65" xml:space="preserve">
+<source xml:lang="en">Lastly, you no longer have to register (<g id="1">AddListener</g>/<g id="2">RemoveListener</g>) <g id="3">AudioListenerComponent</g> from your code anymore.</source>
+<target xml:lang="pt">Lastly, you no longer have to register (<g id="1">AddListener</g>/<g id="2">RemoveListener</g>) <g id="3">AudioListenerComponent</g> from your code anymore.</target>
+</trans-unit>
+<trans-unit id="tu66" xml:space="preserve">
+<source xml:lang="en">Breaking changes</source>
+<target xml:lang="pt">Breaking changes</target>
+</trans-unit>
+<trans-unit id="tu67" xml:space="preserve">
+<source xml:lang="en">Audio</source>
+<target xml:lang="pt">Audio</target>
+</trans-unit>
+<trans-unit id="tu68" xml:space="preserve">
+<source xml:lang="en">Removed <g id="1">DistanceScale</g> and <g id="2">DopplerScale</g> since internally not all the backends were supporting it ( we might add it back in the future as a global factor if needed)</source>
+<target xml:lang="pt">Removed <g id="1">DistanceScale</g> and <g id="2">DopplerScale</g> since internally not all the backends were supporting it ( we might add it back in the future as a global factor if needed)</target>
+</trans-unit>
+<trans-unit id="tu69" xml:space="preserve">
+<source xml:lang="en"><g id="1">DynamicSoundEffectInstance</g> has been removed, you can now use <g id="2">DynamicSoundSource</g> to stream your custom sound sources. Works on every platform</source>
+<target xml:lang="pt"><g id="1">DynamicSoundEffectInstance</g> has been removed, you can now use <g id="2">DynamicSoundSource</g> to stream your custom sound sources. Works on every platform</target>
+</trans-unit>
+<trans-unit id="tu70" xml:space="preserve">
+<source xml:lang="en">Removed <g id="1">SoundEffect</g>, <g id="2">SoundEffectInstance</g>, <g id="3">SoundMusic</g>. Please use <g id="4">Sound</g> and <g id="5">SoundInstance</g> instead of all kind of sounds</source>
+<target xml:lang="pt">Removed <g id="1">SoundEffect</g>, <g id="2">SoundEffectInstance</g>, <g id="3">SoundMusic</g>. Please use <g id="4">Sound</g> and <g id="5">SoundInstance</g> instead of all kind of sounds</target>
+</trans-unit>
+<trans-unit id="tu71" xml:space="preserve">
+<source xml:lang="en">Removed <g id="1">AddListener</g>, <g id="2">RemoveListener</g> from <g id="3">AudioSystem</g></source>
+<target xml:lang="pt">Removed <g id="1">AddListener</g>, <g id="2">RemoveListener</g> from <g id="3">AudioSystem</g></target>
+</trans-unit>
+<trans-unit id="tu72" xml:space="preserve">
+<source xml:lang="en">Many Methods that had <g id="1">SoundEffect</g> or <g id="2">SoundMusic</g> in the signature now have just <g id="3">Sound</g>, e.g. <g id="4">AudioEmitterComponent.AttachSound</g></source>
+<target xml:lang="pt">Many Methods that had <g id="1">SoundEffect</g> or <g id="2">SoundMusic</g> in the signature now have just <g id="3">Sound</g>, e.g. <g id="4">AudioEmitterComponent.AttachSound</g></target>
+</trans-unit>
+<trans-unit id="tu73" xml:space="preserve">
+<source xml:lang="en">UI</source>
+<target xml:lang="pt">UI</target>
+</trans-unit>
+<trans-unit id="tu74" xml:space="preserve">
+<source xml:lang="en">Font size has been completely changed to pixel height. Existing sprite font assets will be updated automatically</source>
+<target xml:lang="pt">Font size has been completely changed to pixel height. Existing sprite font assets will be updated automatically</target>
+</trans-unit>
+<trans-unit id="tu75" xml:space="preserve">
+<source xml:lang="en">Properties of type <g id="1">Sprite</g> have been changed to properties of type <g id="2">ISpriteProvider</g></source>
+<target xml:lang="pt">Properties of type <g id="1">Sprite</g> have been changed to properties of type <g id="2">ISpriteProvider</g></target>
+</trans-unit>
+<trans-unit id="tu76" xml:space="preserve">
+<source xml:lang="en">Changelog</source>
+<target xml:lang="pt">Changelog</target>
+</trans-unit>
+<trans-unit id="tu77" xml:space="preserve">
+<source xml:lang="en">Version 1.7.0-Beta</source>
+<target xml:lang="pt">Version 1.7.0-Beta</target>
+</trans-unit>
+<trans-unit id="tu78" xml:space="preserve">
+<source xml:lang="en">Release date: 2016/07/01</source>
+<target xml:lang="pt">Release date: 2016/07/01</target>
+</trans-unit>
+<trans-unit id="tu79" xml:space="preserve">
+<source xml:lang="en">Enhancements</source>
+<target xml:lang="pt">Enhancements</target>
+</trans-unit>
+<trans-unit id="tu80" xml:space="preserve">
+<source xml:lang="en">General</source>
+<target xml:lang="pt">General</target>
+</trans-unit>
+<trans-unit id="tu81" xml:space="preserve">
+<source xml:lang="en">Debug locals were not displaying properly in some cases due to Mono.Cecil processing. This has been fixed and should now work properly.</source>
+<target xml:lang="pt">Debug locals were not displaying properly in some cases due to Mono.Cecil processing. This has been fixed and should now work properly.</target>
+</trans-unit>
+<trans-unit id="tu82" xml:space="preserve">
+<source xml:lang="en">Audio</source>
+<target xml:lang="pt">Audio</target>
+</trans-unit>
+<trans-unit id="tu83" xml:space="preserve">
+<source xml:lang="en">You can now change the Pitch/Speed of a <g id="1">SoundInstance</g>!</source>
+<target xml:lang="pt">You can now change the Pitch/Speed of a <g id="1">SoundInstance</g>!</target>
+</trans-unit>
+<trans-unit id="tu84" xml:space="preserve">
+<source xml:lang="en">Added master volume control in <g id="1">AudioEngine</g> (<g id="2">AudioEngine.MasterVolume</g>)</source>
+<target xml:lang="pt">Added master volume control in <g id="1">AudioEngine</g> (<g id="2">AudioEngine.MasterVolume</g>)</target>
+</trans-unit>
+<trans-unit id="tu85" xml:space="preserve">
+<source xml:lang="en">Particles</source>
+<target xml:lang="pt">Particles</target>
+</trans-unit>
+<trans-unit id="tu86" xml:space="preserve">
+<source xml:lang="en">This release brings many improvements to the particle engine.</source>
+<target xml:lang="pt">This release brings many improvements to the particle engine.</target>
+</trans-unit>
+<trans-unit id="tu87" xml:space="preserve">
+<source xml:lang="en">You can now create lightning and laser effects thanks to the arc position initializers and ability to follow two target points</source>
+<target xml:lang="pt">You can now create lightning and laser effects thanks to the arc position initializers and ability to follow two target points</target>
+</trans-unit>
+<trans-unit id="tu88" xml:space="preserve">
+<source xml:lang="en">Child particles support and attribute inheritance added, allowing one emitter's particles to follow and inherit attributes from another emitter's particles</source>
+<target xml:lang="pt">Child particles support and attribute inheritance added, allowing one emitter's particles to follow and inherit attributes from another emitter's particles</target>
+</trans-unit>
+<trans-unit id="tu89" xml:space="preserve">
+<source xml:lang="en">Child ribbon particle samples showing how to create wispy particle trails in a single effect</source>
+<target xml:lang="pt">Child ribbon particle samples showing how to create wispy particle trails in a single effect</target>
+</trans-unit>
+<trans-unit id="tu90" xml:space="preserve">
+<source xml:lang="en">Soft edge particles allow you to smooth out the billboard edges when rendering particles close to opaque objects</source>
+<target xml:lang="pt">Soft edge particles allow you to smooth out the billboard edges when rendering particles close to opaque objects</target>
+</trans-unit>
+<trans-unit id="tu91" xml:space="preserve">
+<source xml:lang="en">More spawner types, including Burst, On-Hit and a few other conditional ones</source>
+<target xml:lang="pt">More spawner types, including Burst, On-Hit and a few other conditional ones</target>
+</trans-unit>
+<trans-unit id="tu92" xml:space="preserve">
+<source xml:lang="en">Color updater now uses a Color4 curve</source>
+<target xml:lang="pt">Color updater now uses a Color4 curve</target>
+</trans-unit>
+<trans-unit id="tu93" xml:space="preserve">
+<source xml:lang="en">Game Studio</source>
+<target xml:lang="pt">Game Studio</target>
+</trans-unit>
+<trans-unit id="tu94" xml:space="preserve">
+<source xml:lang="en">The selection history feature has been rewritten. It is now shared by all editors and the asset view. The buttons to navigate the selection history have been moved to the property grid</source>
+<target xml:lang="pt">The selection history feature has been rewritten. It is now shared by all editors and the asset view. The buttons to navigate the selection history have been moved to the property grid</target>
+</trans-unit>
+<trans-unit id="tu95" xml:space="preserve">
+<source xml:lang="en">The re-import operation has been replaced by a "Update asset from source" which directly applies the changes from the source to the asset without displaying the import UI. (For skeleton, model, sprite studio assets...)</source>
+<target xml:lang="pt">The re-import operation has been replaced by a "Update asset from source" which directly applies the changes from the source to the asset without displaying the import UI. (For skeleton, model, sprite studio assets...)</target>
+</trans-unit>
+<trans-unit id="tu96" xml:space="preserve">
+<source xml:lang="en">Dropping a large number of files to import is now a lot faster</source>
+<target xml:lang="pt">Dropping a large number of files to import is now a lot faster</target>
+</trans-unit>
+<trans-unit id="tu97" xml:space="preserve">
+<source xml:lang="en">The notification when the sources of some assets have changed is now a dialog message instead of a notification popup on the corner of the screen</source>
+<target xml:lang="pt">The notification when the sources of some assets have changed is now a dialog message instead of a notification popup on the corner of the screen</target>
+</trans-unit>
+<trans-unit id="tu98" xml:space="preserve">
+<source xml:lang="en">You can now drag &amp; drop assets directly into the Property Grid to create components</source>
+<target xml:lang="pt">You can now drag &amp; drop assets directly into the Property Grid to create components</target>
+</trans-unit>
+<trans-unit id="tu99" xml:space="preserve">
+<source xml:lang="en">UI</source>
+<target xml:lang="pt">UI</target>
+</trans-unit>
+<trans-unit id="tu100" xml:space="preserve">
+<source xml:lang="en">Signed Distance Field sprite font asset type added, allowing users to create sharp, scalable fonts which can be easily resized at runtime at no extra cost</source>
+<target xml:lang="pt">Signed Distance Field sprite font asset type added, allowing users to create sharp, scalable fonts which can be easily resized at runtime at no extra cost</target>
+</trans-unit>
+<trans-unit id="tu101" xml:space="preserve">
+<source xml:lang="en">Added support for EditText on Windows 10, Windows Store and Windows Phone platforms</source>
+<target xml:lang="pt">Added support for EditText on Windows 10, Windows Store and Windows Phone platforms</target>
+</trans-unit>
+<trans-unit id="tu102" xml:space="preserve">
+<source xml:lang="en">Assets</source>
+<target xml:lang="pt">Assets</target>
+</trans-unit>
+<trans-unit id="tu103" xml:space="preserve">
+<source xml:lang="en">The internal YAML format of the SceneAsset and PrefabAsset has been updated to be more generic regarding asset composite.</source>
+<target xml:lang="pt">The internal YAML format of the SceneAsset and PrefabAsset has been updated to be more generic regarding asset composite.</target>
+</trans-unit>
+<trans-unit id="tu104" xml:space="preserve">
+<source xml:lang="en">The tracking of source files for assets, in particular, has been improved and fixed</source>
+<target xml:lang="pt">The tracking of source files for assets, in particular, has been improved and fixed</target>
+</trans-unit>
+<trans-unit id="tu105" xml:space="preserve">
+<source xml:lang="en">Graphics</source>
+<target xml:lang="pt">Graphics</target>
+</trans-unit>
+<trans-unit id="tu106" xml:space="preserve">
+<source xml:lang="en">Added a way to keep a constrained aspect ratio in Render Camera, and automatically have pillarboxes/letterboxes when there are screens with different ratios</source>
+<target xml:lang="pt">Added a way to keep a constrained aspect ratio in Render Camera, and automatically have pillarboxes/letterboxes when there are screens with different ratios</target>
+</trans-unit>
+<trans-unit id="tu107" xml:space="preserve">
+<source xml:lang="en">Added the concept of "LogicalGroup" to easily do partial updates of constant buffer and resources</source>
+<target xml:lang="pt">Added the concept of "LogicalGroup" to easily do partial updates of constant buffer and resources</target>
+</trans-unit>
+<trans-unit id="tu108" xml:space="preserve">
+<source xml:lang="en">Improved OpenGL support: texture buffers, more texture formats, debug markers, etc.</source>
+<target xml:lang="pt">Improved OpenGL support: texture buffers, more texture formats, debug markers, etc.</target>
+</trans-unit>
+<trans-unit id="tu109" xml:space="preserve">
+<source xml:lang="en">Unified OpenTK: we now compile our own OpenTK for Windows, iOS and Android. This means our OpenGL renderer code is now unified and should have fewer bugs</source>
+<target xml:lang="pt">Unified OpenTK: we now compile our own OpenTK for Windows, iOS and Android. This means our OpenGL renderer code is now unified and should have fewer bugs</target>
+</trans-unit>
+<trans-unit id="tu110" xml:space="preserve">
+<source xml:lang="en">Camera is not affected anymore by scaling</source>
+<target xml:lang="pt">Camera is not affected anymore by scaling</target>
+</trans-unit>
+<trans-unit id="tu111" xml:space="preserve">
+<source xml:lang="en">Implemented the required changes to allow rendering to Oculus Rift devices. Also, we have already begun including the native interfaces in the API for the Oculus Rift SDK. See the <g id="1">VR documentation</g> for more information.</source>
+<target xml:lang="pt">Implemented the required changes to allow rendering to Oculus Rift devices. Also, we have already begun including the native interfaces in the API for the Oculus Rift SDK. See the <g id="1">VR documentation</g> for more information.</target>
+</trans-unit>
+<trans-unit id="tu112" xml:space="preserve">
+<source xml:lang="en">Input</source>
+<target xml:lang="pt">Input</target>
+</trans-unit>
+<trans-unit id="tu113" xml:space="preserve">
+<source xml:lang="en">Added a helper method <g id="1">InputManager.TransformPosition</g> to allow you to transform input events in the case of multiple viewports.</source>
+<target xml:lang="pt">Added a helper method <g id="1">InputManager.TransformPosition</g> to allow you to transform input events in the case of multiple viewports.</target>
+</trans-unit>
+<trans-unit id="tu114" xml:space="preserve">
+<source xml:lang="en">Issues fixed</source>
+<target xml:lang="pt">Issues fixed</target>
+</trans-unit>
+<trans-unit id="tu115" xml:space="preserve">
+<source xml:lang="en">Game Studio</source>
+<target xml:lang="pt">Game Studio</target>
+</trans-unit>
+<trans-unit id="tu116" xml:space="preserve">
+<source xml:lang="en">Undo/redo has been fixed in a lot of scenarios</source>
+<target xml:lang="pt">Undo/redo has been fixed in a lot of scenarios</target>
+</trans-unit>
+<trans-unit id="tu117" xml:space="preserve">
+<source xml:lang="en">GameStudio layout issue when creating a new game with the same name as a previous (but deleted) game</source>
+<target xml:lang="pt">GameStudio layout issue when creating a new game with the same name as a previous (but deleted) game</target>
+</trans-unit>
+<trans-unit id="tu118" xml:space="preserve">
+<source xml:lang="en">Issue preventing a newly created script to be marked as saved</source>
+<target xml:lang="pt">Issue preventing a newly created script to be marked as saved</target>
+</trans-unit>
+<trans-unit id="tu119" xml:space="preserve">
+<source xml:lang="en">Regression introduced in 1.6.5 where the texture region of a sprite was not correctly resized when the source image had been changed</source>
+<target xml:lang="pt">Regression introduced in 1.6.5 where the texture region of a sprite was not correctly resized when the source image had been changed</target>
+</trans-unit>
+<trans-unit id="tu120" xml:space="preserve">
+<source xml:lang="en">Compilation errors occurring when creating a project with a dash character in its name. Additional checks have been added to replace illegal characters in script names</source>
+<target xml:lang="pt">Compilation errors occurring when creating a project with a dash character in its name. Additional checks have been added to replace illegal characters in script names</target>
+</trans-unit>
+<trans-unit id="tu121" xml:space="preserve">
+<source xml:lang="en">Multiple cases where modifications of a prefab were not propagated to the instances of this prefab</source>
+<target xml:lang="pt">Multiple cases where modifications of a prefab were not propagated to the instances of this prefab</target>
+</trans-unit>
+<trans-unit id="tu122" xml:space="preserve">
+<source xml:lang="en">Preserve Nodes that were working improperly</source>
+<target xml:lang="pt">Preserve Nodes that were working improperly</target>
+</trans-unit>
+<trans-unit id="tu123" xml:space="preserve">
+<source xml:lang="en">Tracking changes in source images in the sprite sheet editor</source>
+<target xml:lang="pt">Tracking changes in source images in the sprite sheet editor</target>
+</trans-unit>
+<trans-unit id="tu124" xml:space="preserve">
+<source xml:lang="en">Some scenarios where thumbnails never complete to build</source>
+<target xml:lang="pt">Some scenarios where thumbnails never complete to build</target>
+</trans-unit>
+<trans-unit id="tu125" xml:space="preserve">
+<source xml:lang="en">Improved name collision handling when creating/importing assets</source>
+<target xml:lang="pt">Improved name collision handling when creating/importing assets</target>
+</trans-unit>
+<trans-unit id="tu126" xml:space="preserve">
+<source xml:lang="en">Issues with the selection of entities in the scene editor (some entities remained selected from the property grid point of view even after being unselected from the tree view)</source>
+<target xml:lang="pt">Issues with the selection of entities in the scene editor (some entities remained selected from the property grid point of view even after being unselected from the tree view)</target>
+</trans-unit>
+<trans-unit id="tu127" xml:space="preserve">
+<source xml:lang="en">Some windowing issues when multiple modal dialogs are displayed in the wrong order, preventing to close them</source>
+<target xml:lang="pt">Some windowing issues when multiple modal dialogs are displayed in the wrong order, preventing to close them</target>
+</trans-unit>
+<trans-unit id="tu128" xml:space="preserve">
+<source xml:lang="en">Several crashes occurring when modifying properties of entities</source>
+<target xml:lang="pt">Several crashes occurring when modifying properties of entities</target>
+</trans-unit>
+<trans-unit id="tu129" xml:space="preserve">
+<source xml:lang="en">Drag'n'drop issues where it was sometimes hard to drag the correct asset or entity</source>
+<target xml:lang="pt">Drag'n'drop issues where it was sometimes hard to drag the correct asset or entity</target>
+</trans-unit>
+<trans-unit id="tu130" xml:space="preserve">
+<source xml:lang="en">Version 1.7.1-Beta</source>
+<target xml:lang="pt">Version 1.7.1-Beta</target>
+</trans-unit>
+<trans-unit id="tu131" xml:space="preserve">
+<source xml:lang="en">Release date: 2016/07/04</source>
+<target xml:lang="pt">Release date: 2016/07/04</target>
+</trans-unit>
+<trans-unit id="tu132" xml:space="preserve">
+<source xml:lang="en">Enhancements</source>
+<target xml:lang="pt">Enhancements</target>
+</trans-unit>
+<trans-unit id="tu133" xml:space="preserve">
+<source xml:lang="en">Increase the speed when manipulating entities that comes from prefabs</source>
+<target xml:lang="pt">Increase the speed when manipulating entities that comes from prefabs</target>
+</trans-unit>
+<trans-unit id="tu134" xml:space="preserve">
+<source xml:lang="en">Issues fixed</source>
+<target xml:lang="pt">Issues fixed</target>
+</trans-unit>
+<trans-unit id="tu135" xml:space="preserve">
+<source xml:lang="en">Fix scene editor not refreshing when changing properties of a component that was added just before</source>
+<target xml:lang="pt">Fix scene editor not refreshing when changing properties of a component that was added just before</target>
+</trans-unit>
+<trans-unit id="tu136" xml:space="preserve">
+<source xml:lang="en">Fix audio engine creation on Windows 7 32bits</source>
+<target xml:lang="pt">Fix audio engine creation on Windows 7 32bits</target>
+</trans-unit>
+<trans-unit id="tu137" xml:space="preserve">
+<source xml:lang="en">zlib1.dll was missing and preventing to use SDF fonts</source>
+<target xml:lang="pt">zlib1.dll was missing and preventing to use SDF fonts</target>
+</trans-unit>
+<trans-unit id="tu138" xml:space="preserve">
+<source xml:lang="en">Fix the rotation over time updater for particle systems</source>
+<target xml:lang="pt">Fix the rotation over time updater for particle systems</target>
+</trans-unit>
+<trans-unit id="tu139" xml:space="preserve">
+<source xml:lang="en">Fix the camera preview that wasn't properly handling when adding or removing the camera component</source>
+<target xml:lang="pt">Fix the camera preview that wasn't properly handling when adding or removing the camera component</target>
+</trans-unit>
+<trans-unit id="tu140" xml:space="preserve">
+<source xml:lang="en">Version 1.7.2-Beta</source>
+<target xml:lang="pt">Version 1.7.2-Beta</target>
+</trans-unit>
+<trans-unit id="tu141" xml:space="preserve">
+<source xml:lang="en">Release date: 2016/07/09</source>
+<target xml:lang="pt">Release date: 2016/07/09</target>
+</trans-unit>
+<trans-unit id="tu142" xml:space="preserve">
+<source xml:lang="en">Enhancements</source>
+<target xml:lang="pt">Enhancements</target>
+</trans-unit>
+<trans-unit id="tu143" xml:space="preserve">
+<source xml:lang="en">Error messages added when fonts fail to load.</source>
+<target xml:lang="pt">Error messages added when fonts fail to load.</target>
+</trans-unit>
+<trans-unit id="tu144" xml:space="preserve">
+<source xml:lang="en">Add new identification scheme for Linux deployement</source>
+<target xml:lang="pt">Add new identification scheme for Linux deployement</target>
+</trans-unit>
+<trans-unit id="tu145" xml:space="preserve">
+<source xml:lang="en">Slightly faster initialization of projects in the Game Studio</source>
+<target xml:lang="pt">Slightly faster initialization of projects in the Game Studio</target>
+</trans-unit>
+<trans-unit id="tu146" xml:space="preserve">
+<source xml:lang="en">Issues fixed</source>
+<target xml:lang="pt">Issues fixed</target>
+</trans-unit>
+<trans-unit id="tu147" xml:space="preserve">
+<source xml:lang="en">Fix issue making compute curve properties display improperly in the Game Studio.</source>
+<target xml:lang="pt">Fix issue making compute curve properties display improperly in the Game Studio.</target>
+</trans-unit>
+<trans-unit id="tu148" xml:space="preserve">
+<source xml:lang="en">Fix upgrade of assets that had SourceKeepSideBySide set to true</source>
+<target xml:lang="pt">Fix upgrade of assets that had SourceKeepSideBySide set to true</target>
+</trans-unit>
+<trans-unit id="tu149" xml:space="preserve">
+<source xml:lang="en">Fix a serialization issue with scenes that are using prefabs</source>
+<target xml:lang="pt">Fix a serialization issue with scenes that are using prefabs</target>
+</trans-unit>
+<trans-unit id="tu150" xml:space="preserve">
+<source xml:lang="en">Fix a potential crash that could occur when navigating through the selection history</source>
+<target xml:lang="pt">Fix a potential crash that could occur when navigating through the selection history</target>
+</trans-unit>
+<trans-unit id="tu151" xml:space="preserve">
+<source xml:lang="en">Fix border thickness in UI did not take opacity into account</source>
+<target xml:lang="pt">Fix border thickness in UI did not take opacity into account</target>
+</trans-unit>
+<trans-unit id="tu152" xml:space="preserve">
+<source xml:lang="en">Fix copy of glslangValidator</source>
+<target xml:lang="pt">Fix copy of glslangValidator</target>
+</trans-unit>
+<trans-unit id="tu153" xml:space="preserve">
+<source xml:lang="en">Fix depth-stencil state of GameProfilingSystem</source>
+<target xml:lang="pt">Fix depth-stencil state of GameProfilingSystem</target>
+</trans-unit>
+<trans-unit id="tu154" xml:space="preserve">
+<source xml:lang="en">Version 1.7.3-Beta</source>
+<target xml:lang="pt">Version 1.7.3-Beta</target>
+</trans-unit>
+<trans-unit id="tu155" xml:space="preserve">
+<source xml:lang="en">Release date: 2016/07/16</source>
+<target xml:lang="pt">Release date: 2016/07/16</target>
+</trans-unit>
+<trans-unit id="tu156" xml:space="preserve">
+<source xml:lang="en">Enhancements</source>
+<target xml:lang="pt">Enhancements</target>
+</trans-unit>
+<trans-unit id="tu157" xml:space="preserve">
+<source xml:lang="en">Prevent unidentified exception to occur when the camera is not set in the graphics compositor</source>
+<target xml:lang="pt">Prevent unidentified exception to occur when the camera is not set in the graphics compositor</target>
+</trans-unit>
+<trans-unit id="tu158" xml:space="preserve">
+<source xml:lang="en">Issues fixed</source>
+<target xml:lang="pt">Issues fixed</target>
+</trans-unit>
+<trans-unit id="tu159" xml:space="preserve">
+<source xml:lang="en">Fix the property grid that was malfunctioning after certain types of operation</source>
+<target xml:lang="pt">Fix the property grid that was malfunctioning after certain types of operation</target>
+</trans-unit>
+<trans-unit id="tu160" xml:space="preserve">
+<source xml:lang="en">Fix updates from prefab that were sometimes not propagated to the instances of this prefab</source>
+<target xml:lang="pt">Fix updates from prefab that were sometimes not propagated to the instances of this prefab</target>
+</trans-unit>
+<trans-unit id="tu161" xml:space="preserve">
+<source xml:lang="en">Fix thumbnails of source code asset that were not properly generated sometimes</source>
+<target xml:lang="pt">Fix thumbnails of source code asset that were not properly generated sometimes</target>
+</trans-unit>
+<trans-unit id="tu162" xml:space="preserve">
+<source xml:lang="en">DDS now properly set header flags when saving cubemaps</source>
+<target xml:lang="pt">DDS now properly set header flags when saving cubemaps</target>
+</trans-unit>
+<trans-unit id="tu163" xml:space="preserve">
+<source xml:lang="en">Version 1.7.4-Beta</source>
+<target xml:lang="pt">Version 1.7.4-Beta</target>
+</trans-unit>
+<trans-unit id="tu164" xml:space="preserve">
+<source xml:lang="en">Hotfix release (critical crash in editor)</source>
+<target xml:lang="pt">Hotfix release (critical crash in editor)</target>
+</trans-unit>
+<trans-unit id="tu165" xml:space="preserve">
+<source xml:lang="en">Version 1.7.5-Beta</source>
+<target xml:lang="pt">Version 1.7.5-Beta</target>
+</trans-unit>
+<trans-unit id="tu166" xml:space="preserve">
+<source xml:lang="en">Release date: 2016/07/21</source>
+<target xml:lang="pt">Release date: 2016/07/21</target>
+</trans-unit>
+<trans-unit id="tu167" xml:space="preserve">
+<source xml:lang="en">New features</source>
+<target xml:lang="pt">New features</target>
+</trans-unit>
+<trans-unit id="tu168" xml:space="preserve">
+<source xml:lang="en">Effects can now be compiled directly by the runtime without needing an attached developer computer with Connection Router. This is still quite slow (and will be optimized later), but at least it solves many problem caused by the previous workflow. You can still go back to the previous mode in the "package properties" (right-click on the package in solution explorer), and setting the "Remote Compiler"</source>
+<target xml:lang="pt">Effects can now be compiled directly by the runtime without needing an attached developer computer with Connection Router. This is still quite slow (and will be optimized later), but at least it solves many problem caused by the previous workflow. You can still go back to the previous mode in the "package properties" (right-click on the package in solution explorer), and setting the "Remote Compiler"</target>
+</trans-unit>
+<trans-unit id="tu169" xml:space="preserve">
+<source xml:lang="en">Enhancements</source>
+<target xml:lang="pt">Enhancements</target>
+</trans-unit>
+<trans-unit id="tu170" xml:space="preserve">
+<source xml:lang="en">Faster startup time (serialization code is initialized and JIT-ed more lazily)</source>
+<target xml:lang="pt">Faster startup time (serialization code is initialized and JIT-ed more lazily)</target>
+</trans-unit>
+<trans-unit id="tu171" xml:space="preserve">
+<source xml:lang="en">Compatible with latest Xamarin iOS Alpha (symbols are static-linked, so unused P/Invoke needs to be removed)</source>
+<target xml:lang="pt">Compatible with latest Xamarin iOS Alpha (symbols are static-linked, so unused P/Invoke needs to be removed)</target>
+</trans-unit>
+<trans-unit id="tu172" xml:space="preserve">
+<source xml:lang="en">Issues fixed</source>
+<target xml:lang="pt">Issues fixed</target>
+</trans-unit>
+<trans-unit id="tu173" xml:space="preserve">
+<source xml:lang="en">Some fonts were not working properly with the new Signed Distance Field feature (<g id="1">#436</g>)</source>
+<target xml:lang="pt">Some fonts were not working properly with the new Signed Distance Field feature (<g id="1">#436</g>)</target>
+</trans-unit>
+<trans-unit id="tu174" xml:space="preserve">
+<source xml:lang="en">Green and blue channels were inverted in the color curve editor</source>
+<target xml:lang="pt">Green and blue channels were inverted in the color curve editor</target>
+</trans-unit>
+<trans-unit id="tu175" xml:space="preserve">
+<source xml:lang="en">Version 1.7.6-Beta</source>
+<target xml:lang="pt">Version 1.7.6-Beta</target>
+</trans-unit>
+<trans-unit id="tu176" xml:space="preserve">
+<source xml:lang="en">Release date: 2016/07/22</source>
+<target xml:lang="pt">Release date: 2016/07/22</target>
+</trans-unit>
+<trans-unit id="tu177" xml:space="preserve">
+<source xml:lang="en">New fatures</source>
+<target xml:lang="pt">New fatures</target>
+</trans-unit>
+<trans-unit id="tu178" xml:space="preserve">
+<source xml:lang="en">In the Sprite component, you can now choose the sampler between linear, point (nearest) and anisotropic (<g id="1">#409</g>)</source>
+<target xml:lang="pt">In the Sprite component, you can now choose the sampler between linear, point (nearest) and anisotropic (<g id="1">#409</g>)</target>
+</trans-unit>
+<trans-unit id="tu179" xml:space="preserve">
+<source xml:lang="en">Issues fixed</source>
+<target xml:lang="pt">Issues fixed</target>
+</trans-unit>
+<trans-unit id="tu180" xml:space="preserve">
+<source xml:lang="en">Default SpriteBatch and others precompiled shaders were missing integer precision, resulting shader links error on iOS</source>
+<target xml:lang="pt">Default SpriteBatch and others precompiled shaders were missing integer precision, resulting shader links error on iOS</target>
+</trans-unit>
+<trans-unit id="tu181" xml:space="preserve">
+<source xml:lang="en">Particles: Ribbons geometry can now be split, useful to emit multiple separate groups of particles</source>
+<target xml:lang="pt">Particles: Ribbons geometry can now be split, useful to emit multiple separate groups of particles</target>
+</trans-unit>
+<trans-unit id="tu182" xml:space="preserve">
+<source xml:lang="en">D3D11: Check if QueryInterface of DebugDevice actually worked (sometimes it doesn't, i.e. when using RenderDoc)</source>
+<target xml:lang="pt">D3D11: Check if QueryInterface of DebugDevice actually worked (sometimes it doesn't, i.e. when using RenderDoc)</target>
+</trans-unit>
+<trans-unit id="tu183" xml:space="preserve">
+<source xml:lang="en">Various fixes for additive animation</source>
+<target xml:lang="pt">Various fixes for additive animation</target>
+</trans-unit>
+<trans-unit id="tu184" xml:space="preserve">
+<source xml:lang="en">Fixed wrong exception text in AudioLayer initialization</source>
+<target xml:lang="pt">Fixed wrong exception text in AudioLayer initialization</target>
+</trans-unit>
+<trans-unit id="tu185" xml:space="preserve">
+<source xml:lang="en">Version 1.7.7-Beta</source>
+<target xml:lang="pt">Version 1.7.7-Beta</target>
+</trans-unit>
+<trans-unit id="tu186" xml:space="preserve">
+<source xml:lang="en">Release date: 2016/07/29</source>
+<target xml:lang="pt">Release date: 2016/07/29</target>
+</trans-unit>
+<trans-unit id="tu187" xml:space="preserve">
+<source xml:lang="en">New features</source>
+<target xml:lang="pt">New features</target>
+</trans-unit>
+<trans-unit id="tu188" xml:space="preserve">
+<source xml:lang="en">FBX: Added PivotPosition in ModelAsset (in case it is not properly centered)</source>
+<target xml:lang="pt">FBX: Added PivotPosition in ModelAsset (in case it is not properly centered)</target>
+</trans-unit>
+<trans-unit id="tu189" xml:space="preserve">
+<source xml:lang="en">Engine: Added an experimental "DebugConsoleSystem" to easily display text (API might change)</source>
+<target xml:lang="pt">Engine: Added an experimental "DebugConsoleSystem" to easily display text (API might change)</target>
+</trans-unit>
+<trans-unit id="tu190" xml:space="preserve">
+<source xml:lang="en">Issues fixed</source>
+<target xml:lang="pt">Issues fixed</target>
+</trans-unit>
+<trans-unit id="tu191" xml:space="preserve">
+<source xml:lang="en">GameStudio: Undo was not working properly for the first change (due to the undo flag not being properly reset)</source>
+<target xml:lang="pt">GameStudio: Undo was not working properly for the first change (due to the undo flag not being properly reset)</target>
+</trans-unit>
+<trans-unit id="tu192" xml:space="preserve">
+<source xml:lang="en">GameStudio: Some asset change notifications were not sent properly in case of undo/redo</source>
+<target xml:lang="pt">GameStudio: Some asset change notifications were not sent properly in case of undo/redo</target>
+</trans-unit>
+<trans-unit id="tu193" xml:space="preserve">
+<source xml:lang="en">GameStudio: Entity focus was not working in some cases</source>
+<target xml:lang="pt">GameStudio: Entity focus was not working in some cases</target>
+</trans-unit>
+<trans-unit id="tu194" xml:space="preserve">
+<source xml:lang="en">GameStudio: Fix EntityComponent reloading after assembly reload</source>
+<target xml:lang="pt">GameStudio: Fix EntityComponent reloading after assembly reload</target>
+</trans-unit>
+<trans-unit id="tu195" xml:space="preserve">
+<source xml:lang="en">GameStudio: Picking in GameStudio was not working properly with some AMD cards</source>
+<target xml:lang="pt">GameStudio: Picking in GameStudio was not working properly with some AMD cards</target>
+</trans-unit>
+<trans-unit id="tu196" xml:space="preserve">
+<source xml:lang="en">GameStudio: String could not be used on the value side of a dictionary (in property grid)</source>
+<target xml:lang="pt">GameStudio: String could not be used on the value side of a dictionary (in property grid)</target>
+</trans-unit>
+<trans-unit id="tu197" xml:space="preserve">
+<source xml:lang="en">Audio: Only create one audio engine, even if multiple game are started</source>
+<target xml:lang="pt">Audio: Only create one audio engine, even if multiple game are started</target>
+</trans-unit>
+<trans-unit id="tu198" xml:space="preserve">
+<source xml:lang="en">FBX: Fix some cases where a material was not properly set</source>
+<target xml:lang="pt">FBX: Fix some cases where a material was not properly set</target>
+</trans-unit>
+<trans-unit id="tu199" xml:space="preserve">
+<source xml:lang="en">Various bugfixes</source>
+<target xml:lang="pt">Various bugfixes</target>
+</trans-unit>
+<trans-unit id="tu200" xml:space="preserve">
+<source xml:lang="en">Version 1.7.8-Beta</source>
+<target xml:lang="pt">Version 1.7.8-Beta</target>
+</trans-unit>
+<trans-unit id="tu201" xml:space="preserve">
+<source xml:lang="en">Release date: 2016/08/05</source>
+<target xml:lang="pt">Release date: 2016/08/05</target>
+</trans-unit>
+<trans-unit id="tu202" xml:space="preserve">
+<source xml:lang="en">New features</source>
+<target xml:lang="pt">New features</target>
+</trans-unit>
+<trans-unit id="tu203" xml:space="preserve">
+<source xml:lang="en">Greatly improved performance when building assets (esp. when no changes) and loading Visual Studio solution; it was due to wildcard patterns in our build target files, forcing MSBuild to list files recursively</source>
+<target xml:lang="pt">Greatly improved performance when building assets (esp. when no changes) and loading Visual Studio solution; it was due to wildcard patterns in our build target files, forcing MSBuild to list files recursively</target>
+</trans-unit>
+<trans-unit id="tu204" xml:space="preserve">
+<source xml:lang="en">Serialization code is now lockless for the hot path (faster startup)</source>
+<target xml:lang="pt">Serialization code is now lockless for the hot path (faster startup)</target>
+</trans-unit>
+<trans-unit id="tu205" xml:space="preserve">
+<source xml:lang="en">Graphics profile are now cached on D3D, making it faster to open new 3D windows in the GameStudio</source>
+<target xml:lang="pt">Graphics profile are now cached on D3D, making it faster to open new 3D windows in the GameStudio</target>
+</trans-unit>
+<trans-unit id="tu206" xml:space="preserve">
+<source xml:lang="en">Issues fixed</source>
+<target xml:lang="pt">Issues fixed</target>
+</trans-unit>
+<trans-unit id="tu207" xml:space="preserve">
+<source xml:lang="en">Physics bugfixes &amp; optimizations (don't process bone when disabled, and disabled in editor)</source>
+<target xml:lang="pt">Physics bugfixes &amp; optimizations (don't process bone when disabled, and disabled in editor)</target>
+</trans-unit>
+<trans-unit id="tu208" xml:space="preserve">
+<source xml:lang="en">SDL2.dll was missing when targeting OpenGL</source>
+<target xml:lang="pt">SDL2.dll was missing when targeting OpenGL</target>
+</trans-unit>
+<trans-unit id="tu209" xml:space="preserve">
+<source xml:lang="en">Vulkan: sometimes texture pixel size was not properly computed, resulting in invalid Texture CPU readback</source>
+<target xml:lang="pt">Vulkan: sometimes texture pixel size was not properly computed, resulting in invalid Texture CPU readback</target>
+</trans-unit>
+<trans-unit id="tu210" xml:space="preserve">
+<source xml:lang="en">Fixed a crash when creating new packages</source>
+<target xml:lang="pt">Fixed a crash when creating new packages</target>
+</trans-unit>
+<trans-unit id="tu211" xml:space="preserve">
+<source xml:lang="en">D3D12: pipeline state was not properly reset on ClearState &amp; CommandList resets</source>
+<target xml:lang="pt">D3D12: pipeline state was not properly reset on ClearState &amp; CommandList resets</target>
+</trans-unit>
+<trans-unit id="tu212" xml:space="preserve">
+<source xml:lang="en">D3D12: rewrote texture and buffer initial data upload, which was failing on AMD hardware</source>
+<target xml:lang="pt">D3D12: rewrote texture and buffer initial data upload, which was failing on AMD hardware</target>
+</trans-unit>
+<trans-unit id="tu213" xml:space="preserve">
+<source xml:lang="en">D3D12: optimizations to avoid calling unecessary state changes</source>
+<target xml:lang="pt">D3D12: optimizations to avoid calling unecessary state changes</target>
+</trans-unit>
+<trans-unit id="tu214" xml:space="preserve">
+<source xml:lang="en">Version 1.7.9-Beta</source>
+<target xml:lang="pt">Version 1.7.9-Beta</target>
+</trans-unit>
+<trans-unit id="tu215" xml:space="preserve">
+<source xml:lang="en">Release date: 2016/08/05</source>
+<target xml:lang="pt">Release date: 2016/08/05</target>
+</trans-unit>
+<trans-unit id="tu216" xml:space="preserve">
+<source xml:lang="en">Note: emergency bugfix for 1.7.8 release, which was not properly copying native libraries.</source>
+<target xml:lang="pt">Note: emergency bugfix for 1.7.8 release, which was not properly copying native libraries.</target>
+</trans-unit>
+<trans-unit id="tu217" xml:space="preserve">
+<source xml:lang="en">Known Issues</source>
+<target xml:lang="pt">Known Issues</target>
+</trans-unit>
+<trans-unit id="tu218" xml:space="preserve">
+<source xml:lang="en">Sometimes duplicate contacts are detected by the physics engine.</source>
+<target xml:lang="pt">Sometimes duplicate contacts are detected by the physics engine.</target>
+</trans-unit>
+<trans-unit id="tu219" xml:space="preserve">
+<source xml:lang="en">On Linux, when switching the underlying Graphics Platform, rendering will not occur. Delete the cache, local and roaming folder on the Linux host and restarting the game should fix the issue.</source>
+<target xml:lang="pt">On Linux, when switching the underlying Graphics Platform, rendering will not occur. Delete the cache, local and roaming folder on the Linux host and restarting the game should fix the issue.</target>
+</trans-unit>
+<trans-unit id="tu220" xml:space="preserve">
+<source xml:lang="en">Linux Mono has some troubles with the new effect compiler (since 1.7.5-Beta). Please use the "remote compiler" in the "package properties" (right-click on the package in solution explorer), or use Linux CoreCLR in the meantime.</source>
+<target xml:lang="pt">Linux Mono has some troubles with the new effect compiler (since 1.7.5-Beta). Please use the "remote compiler" in the "package properties" (right-click on the package in solution explorer), or use Linux CoreCLR in the meantime.</target>
+</trans-unit>
+</body>
+</file>
+</xliff>

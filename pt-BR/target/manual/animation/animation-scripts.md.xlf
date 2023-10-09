@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" xmlns:okp="okapi-framework:xliff-extensions" its:version="2.0" version="1.2">
+<file datatype="x-text/x-markdown" okp:inputEncoding="UTF-8" original="/D:/repos/rr/source/manual/animation/animation-scripts.md" source-language="en" target-language="pt">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en">Animation scripts</source>
+<target xml:lang="pt">Scripts de animação</target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Intermediate<x id="2"/>
+<x id="3"/>Programmer<x id="4"/></source>
+<target xml:lang="pt"><x id="1"/>Intermediário<x id="2"/>
+<x id="3"/>Programação<x id="4"/></target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">Animations are controlled using scripts.</source>
+<target xml:lang="pt">As animações são controladas por meio de scripts.</target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">You can add an <g id="1">AnimationComponent</g> to an entity and <g id="2">set up its parameters</g> in Game Studio. The <g id="3">AnimationComponent</g> class is designed to be used mainly from a script.</source>
+<target xml:lang="pt">Você pode adicionar um <g id="1">AnimationComponent</g> a uma entidade e <g id="2">configurar seus parâmetros</g> no Game Studio. A classe <g id="3">AnimationComponent</g> foi projetada para ser usada a partir de um script.</target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">The more useful properties include:</source>
+<target xml:lang="pt">As propriedades mais úteis incluem:</target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en">Property</source>
+<target xml:lang="pt">Propriedade</target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en">Description</source>
+<target xml:lang="pt">Descrição</target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en"><g id="1">Animations</g></source>
+<target xml:lang="pt"><g id="1">Animações</g></target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en">Gets the animation clips associated with this <g id="1">AnimationComponent</g></source>
+<target xml:lang="pt">Obtém os clipes de animação associados a este <g id="1">AnimationComponent</g></target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en"><g id="1">BlendTreeBuilder</g></source>
+<target xml:lang="pt"><g id="1">BlendTreeBuilder</g></target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en">Gets or sets animation blend tree builder. Note you can create custom blend trees; for more information, see <g id="1">Custom blend tree</g></source>
+<target xml:lang="pt">Obtém ou define o builder de árvore de transições de animação. Tenha em mente que você pode criar Scripts de animação; para mais informações, consulte <g id="1">Árvore de transição personalizada</g>.</target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en"><g id="1">PlayingAnimations</g></source>
+<target xml:lang="pt"><g id="1">PlayingAnimations</g></target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en">Gets the list of active animations. Use it to customize your startup animations. The playing animations are updated automatically by the animation processor, so be careful when changing the list or keeping a reference to a playing animation</source>
+<target xml:lang="pt">Obtém a lista de animações ativas. Use para personalizar a inicialização das suas animações. As animações em execução são atualizadas automaticamente pelo processador de animação, portanto, tome cuidado ao alterar a lista ou manter uma referência a uma animação em execução.</target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>!Note<x id="2"/>
+Animation clips you reference in scripts must be added to the same entity under the <g id="3">AnimationComponent</g>.</source>
+<target xml:lang="pt"><x id="1"/>!Nota<x id="2"/>
+Os clipes de animação aos quais você faz referência em scripts devem ser adicionados à mesma entidade no <g id="3">AnimationComponent</g>.</target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Animations added to component<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Animações adicionadas ao componente<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en">For more information, see <g id="1">Set up animations</g>.</source>
+<target xml:lang="pt">Para mais informações, consulte <g id="1">Configurar animações</g></target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en">Use the pre-built <g id="1">AnimationStart</g> script</source>
+<target xml:lang="pt">Use o script pré-definido <g id="1">AnimationStart</g></target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en">Stride includes a pre-built <g id="1">AnimationStart</g> script. You can use this script as a template to write your own animation scripts.</source>
+<target xml:lang="pt">Stride inclui um script <g id="1">AnimationStart</g> pré-definido.
+ Você pode usar este script como um modelo para escrever seus próprios scripts de animação.</target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en">To use the <g id="1">AnimationStart</g> script:</source>
+<target xml:lang="pt">Para usar o script <g id="1">AnimationStart</g>:</target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en">In the <g id="1">Asset View</g> (bottom pane by default), click <g id="2">Add asset</g>.</source>
+<target xml:lang="pt">No <g id="1">Visualizador de Recursos</g> (na parte inferior, por padrão), clique em <g id="2">Adicionar recurso</g>.</target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en">Choose <g id="1">Add asset &gt; Scripts &gt; Animation start</g>.</source>
+<target xml:lang="pt">Escolha <g id="1">Adicionar recurso &gt; Scripts &gt; Animation start</g>.</target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Add animation script<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Adicionar script de animação<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en">Specify a name for the script and click <g id="1">Create script</g>.</source>
+<target xml:lang="pt">Especifique um nome para o script e clique em <g id="1">Criar script</g>.</target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Create script<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Criar script<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en">3a. If Game Studio asks if you want to save your script, click <g id="1">Save script</g>.</source>
+<target xml:lang="pt">3a. Se o Game Studio perguntar se você deseja salvar seu script, clique em <g id="1">Salvar script</g>.</target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en">3b. If Game Studio asks if you want to reload the assemblies, click <g id="1">Reload assemblies</g>.</source>
+<target xml:lang="pt">3b. Se o Game Studio perguntar se você deseja recarregar os assemblies, clique em <g id="1">Recarregar assemblies</g>.</target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en">Edit the script as necessary and save it.</source>
+<target xml:lang="pt">Edite o script conforme necessário e salve-o.</target>
+</trans-unit>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en">Example animation script</source>
+<target xml:lang="pt">Exemplo de script de animação</target>
+</trans-unit>
+<trans-unit id="tu29" xml:space="preserve">
+<source xml:lang="en">This sample script assigns a simple animation to a character based on its walking speed.</source>
+<target xml:lang="pt">Este script de exemplo atribui uma animação simples a um personagem com base em sua velocidade de caminhada.</target>
+</trans-unit>
+<trans-unit id="tu30" xml:space="preserve">
+<source xml:lang="en">using Stride.Engine;
+
+namespace AdditiveAnimation
+{
+    public class AnimationClipExample : SyncScript
+    {
+        public float MovementSpeed { get; set; } = 0f;
+
+        private float walkingSpeedLimit = 1.0f;
+
+        // Assuming the script is attached to an entity which has an animation component
+        private AnimationComponent animationComponent;
+
+        public override void Start()
+        {
+            // Cache some variables we'll need later
+            animationComponent = Entity.Get&lt;AnimationComponent&gt;();
+            animationComponent.Play("Idle");
+        }
+
+        protected void PlayAnimation(string name)
+        {
+            if (!animationComponent.IsPlaying(name))
+                animationComponent.Play(name);
+        }
+
+        public override void Update()
+        {
+            if (MovementSpeed &lt;= 0)
+            {
+                PlayAnimation("Idle");
+            }
+            else if (MovementSpeed &lt;= walkingSpeedLimit)
+            {
+                PlayAnimation("Walk");
+            }
+            else 
+            {
+                PlayAnimation("Run");
+            }
+        }
+    }
+}
+</source>
+<target xml:lang="pt">using Stride.Engine;
+
+namespace AdditiveAnimation
+{
+    public class AnimationClipExample : SyncScript
+    {
+        public float MovementSpeed { get; set; } = 0f;
+
+        private float walkingSpeedLimit = 1.0f;
+
+        // Supondo que o script está anexado a uma entidade que possui um componente de animação
+        private AnimationComponent animationComponent;
+
+        public override void Start()
+        {
+            // Armazena em cache algumas variáveis que serão necessárias posteriormente
+            animationComponent = Entity.Get&lt;AnimationComponent&gt;();
+            animationComponent.Play("Idle");
+        }
+
+        protected void PlayAnimation(string name)
+        {
+            if (!animationComponent.IsPlaying(name))
+                animationComponent.Play(name);
+        }
+
+        public override void Update()
+        {
+            if (MovementSpeed &lt;= 0)
+            {
+                PlayAnimation("Idle");
+            }
+            else if (MovementSpeed &lt;= walkingSpeedLimit)
+            {
+                PlayAnimation("Walk");
+            }
+            else 
+            {
+                PlayAnimation("Run");
+            }
+        }
+    }
+}
+</target>
+</trans-unit>
+<trans-unit id="tu31" xml:space="preserve">
+<source xml:lang="en">Override the animation blend tree</source>
+<target xml:lang="pt">Sobrescrever a árvore de  de animação</target>
+</trans-unit>
+<trans-unit id="tu32" xml:space="preserve">
+<source xml:lang="en">You can also override the animation blend tree and do all animation blending in the script. The templates <g id="1">First-person shooter</g>, <g id="2">Third-person platformer</g> and <g id="3">Top-down RPG</g>, which use some advanced techniques, are examples of how to do this. For more information, see <g id="4">custom blend trees</g>.</source>
+<target xml:lang="pt">Você também pode sobrescrever a árvore de transição de animação e executar todas as transição de animação no script. Os modelos <g id="1">Tiro em primeira pessoa</g>, <g id="2">Plataforma em terceira pessoa</g> e <g id="3">RPG de visão superior</g>, utilizam algumas técnicas avançadas, e são exemplos de como sobrescrever a árvore de transição de animação e executar todas as transição de animação no script. Para mais informações, consulte <g id="4">Árvores de transição personalizadas</g>.</target>
+</trans-unit>
+<trans-unit id="tu33" xml:space="preserve">
+<source xml:lang="en">See also</source>
+<target xml:lang="pt">Veja também</target>
+</trans-unit>
+<trans-unit id="tu34" xml:space="preserve">
+<source xml:lang="en"><g id="1">Scripts</g></source>
+<target xml:lang="pt"><g id="1">Scripts</g></target>
+</trans-unit>
+<trans-unit id="tu35" xml:space="preserve">
+<source xml:lang="en"><g id="1">Animation index</g></source>
+<target xml:lang="pt"><g id="1">Índice de animação</g></target>
+</trans-unit>
+<trans-unit id="tu36" xml:space="preserve">
+<source xml:lang="en"><g id="1">Import animations</g></source>
+<target xml:lang="pt"><g id="1">Importar animações</g></target>
+</trans-unit>
+<trans-unit id="tu37" xml:space="preserve">
+<source xml:lang="en"><g id="1">Animation properties</g></source>
+<target xml:lang="pt"><g id="1">Propriedades de animação</g></target>
+</trans-unit>
+<trans-unit id="tu38" xml:space="preserve">
+<source xml:lang="en"><g id="1">Set up animations</g></source>
+<target xml:lang="pt"><g id="1">Configurar animações</g></target>
+</trans-unit>
+<trans-unit id="tu39" xml:space="preserve">
+<source xml:lang="en"><g id="1">Preview animations</g></source>
+<target xml:lang="pt"><g id="1">Visualizar animações</g></target>
+</trans-unit>
+<trans-unit id="tu40" xml:space="preserve">
+<source xml:lang="en"><g id="1">Additive animation</g></source>
+<target xml:lang="pt"><g id="1">Animação aditiva</g></target>
+</trans-unit>
+<trans-unit id="tu41" xml:space="preserve">
+<source xml:lang="en"><g id="1">Procedural animation</g></source>
+<target xml:lang="pt"><g id="1">Animação procedural</g></target>
+</trans-unit>
+<trans-unit id="tu42" xml:space="preserve">
+<source xml:lang="en"><g id="1">Custom blend trees</g></source>
+<target xml:lang="pt"><g id="1">Árvores de transição personalizadas</g></target>
+</trans-unit>
+<trans-unit id="tu43" xml:space="preserve">
+<source xml:lang="en"><g id="1">Model node links</g></source>
+<target xml:lang="pt"><g id="1">Links de nós de modelo</g></target>
+</trans-unit>
+<trans-unit id="tu44" xml:space="preserve">
+<source xml:lang="en"><g id="1">custom attributes</g></source>
+<target xml:lang="pt"><g id="1">Atributos personalizados</g></target>
+</trans-unit>
+</body>
+</file>
+</xliff>

@@ -1,0 +1,973 @@
+{
+    "filename": "manual\\input\\mouse.md.xlf",
+    "files": [
+        {
+            "\/D:\/repos\/rr\/source\/manual\/input\/mouse.md": [
+                [
+                    "Mouse",
+                    "",
+                    "Mouse",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/mouse.md",
+                    {
+                        "id": "tu1"
+                    }
+                ],
+                [
+                    "<x1\/>Beginner<x2\/>",
+                    "",
+                    "<x1\/>Beginner<x2\/>\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/mouse.md",
+                    {
+                        "id": "tu2"
+                    }
+                ],
+                [
+                    "<x3\/>Programmer<x4\/>",
+                    "",
+                    "<x3\/>Programmer<x4\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/mouse.md",
+                    {
+                        "id": "tu2"
+                    }
+                ],
+                [
+                    "The <g1>mouse<\/g1> is a common input device for desktop games.",
+                    "",
+                    "The <g1>mouse<\/g1> is a common input device for desktop games.",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/mouse.md",
+                    {
+                        "id": "tu3"
+                    }
+                ],
+                [
+                    "There are two ways to handle mouse input in Stride:",
+                    "",
+                    "There are two ways to handle mouse input in Stride:",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/mouse.md",
+                    {
+                        "id": "tu4"
+                    }
+                ],
+                [
+                    "Query <g1>mouse button states<\/g1>.",
+                    "",
+                    "Query <g1>mouse button states<\/g1>.",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/mouse.md",
+                    {
+                        "id": "tu5"
+                    }
+                ],
+                [
+                    "For cross-platform games that target mobile devices, you can use <g1>PointerEvent<\/g1> lists.",
+                    "",
+                    "For cross-platform games that target mobile devices, you can use <g1>PointerEvent<\/g1> lists.\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/mouse.md",
+                    {
+                        "id": "tu6"
+                    }
+                ],
+                [
+                    "For more information, see <g2>Pointers<\/g2>.",
+                    "",
+                    "For more information, see <g2>Pointers<\/g2>.",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/mouse.md",
+                    {
+                        "id": "tu6"
+                    }
+                ],
+                [
+                    "You can access <g1>mouse button states<\/g1> and <g2>pointer events list<\/g2> from the <g3>Input manager<\/g3>.",
+                    "",
+                    "You can access <g1>mouse button states<\/g1> and <g2>pointer events list<\/g2> from the <g3>Input manager<\/g3>.",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/mouse.md",
+                    {
+                        "id": "tu7"
+                    }
+                ],
+                [
+                    "Class",
+                    "",
+                    "Class",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/mouse.md",
+                    {
+                        "id": "tu8"
+                    }
+                ],
+                [
+                    "Project type",
+                    "",
+                    "Project type",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/mouse.md",
+                    {
+                        "id": "tu9"
+                    }
+                ],
+                [
+                    "When to use",
+                    "",
+                    "When to use",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/mouse.md",
+                    {
+                        "id": "tu10"
+                    }
+                ],
+                [
+                    "InputManager",
+                    "",
+                    "<g1>InputManager<\/g1>",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/mouse.md",
+                    {
+                        "id": "tu11"
+                    }
+                ],
+                [
+                    "Desktop only",
+                    "",
+                    "Desktop only",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/mouse.md",
+                    {
+                        "id": "tu12"
+                    }
+                ],
+                [
+                    "For desktop games, you usually handle input with multiple mouse buttons.",
+                    "",
+                    "For desktop games, you usually handle input with multiple mouse buttons.",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/mouse.md",
+                    {
+                        "id": "tu13"
+                    }
+                ],
+                [
+                    "This means you should use <g1>mouse button states<\/g1>.",
+                    "",
+                    " This means you should use <g1>mouse button states<\/g1>.",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/mouse.md",
+                    {
+                        "id": "tu13"
+                    }
+                ],
+                [
+                    "PointerEvent",
+                    "",
+                    "<g1>PointerEvent<\/g1>",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/mouse.md",
+                    {
+                        "id": "tu14"
+                    }
+                ],
+                [
+                    "Cross-platform",
+                    "",
+                    "Cross-platform",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/mouse.md",
+                    {
+                        "id": "tu15"
+                    }
+                ],
+                [
+                    "For mobile games, you usually simulate pointers with just the left mouse button.",
+                    "",
+                    "For mobile games, you usually simulate pointers with just the left mouse button.",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/mouse.md",
+                    {
+                        "id": "tu16"
+                    }
+                ],
+                [
+                    "This means you can treat the mouse input like pointers.",
+                    "",
+                    " This means you can treat the mouse input like pointers.",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/mouse.md",
+                    {
+                        "id": "tu16"
+                    }
+                ],
+                [
+                    "There's no need to create separate mouse-specific controls.",
+                    "",
+                    " There's no need to create separate mouse-specific controls.",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/mouse.md",
+                    {
+                        "id": "tu16"
+                    }
+                ],
+                [
+                    "For more information, see <g1>Pointers<\/g1>.",
+                    "",
+                    " For more information, see <g1>Pointers<\/g1>.",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/mouse.md",
+                    {
+                        "id": "tu16"
+                    }
+                ],
+                [
+                    "For more information about these options, see the <g1>Input index<\/g1>.",
+                    "",
+                    "For more information about these options, see the <g1>Input index<\/g1>.",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/mouse.md",
+                    {
+                        "id": "tu17"
+                    }
+                ],
+                [
+                    "Check mouse availability",
+                    "",
+                    "Check mouse availability",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/mouse.md",
+                    {
+                        "id": "tu18"
+                    }
+                ],
+                [
+                    "Before handling mouse input, use <g1>Input.HasMouse<\/g1> to check if a mouse is connected.",
+                    "",
+                    "Before handling mouse input, use <g1>Input.HasMouse<\/g1> to check if a mouse is connected.",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/mouse.md",
+                    {
+                        "id": "tu19"
+                    }
+                ],
+                [
+                    "Get the mouse position",
+                    "",
+                    "Get the mouse position",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/mouse.md",
+                    {
+                        "id": "tu20"
+                    }
+                ],
+                [
+                    "You can get the mouse position in normalized or absolute coordinates.",
+                    "",
+                    "You can get the mouse position in normalized or absolute coordinates.",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/mouse.md",
+                    {
+                        "id": "tu21"
+                    }
+                ],
+                [
+                    "Normalized coordinates",
+                    "",
+                    "Normalized coordinates",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/mouse.md",
+                    {
+                        "id": "tu22"
+                    }
+                ],
+                [
+                    "@'Stride.Input.InputManager.MousePosition' returns the mouse pointer position in <g1>normalized<\/g1> X, Y coordinates instead of actual screen sizes in pixels.",
+                    "",
+                    "@'Stride.Input.InputManager.MousePosition' returns the mouse pointer position in <g1>normalized<\/g1> X, Y coordinates instead of actual screen sizes in pixels.",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/mouse.md",
+                    {
+                        "id": "tu23"
+                    }
+                ],
+                [
+                    "This means the pointer position adjusts to any resolution and you don't have to write separate code for different resolutions.",
+                    "",
+                    " This means the pointer position adjusts to any resolution and you don't have to write separate code for different resolutions.",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/mouse.md",
+                    {
+                        "id": "tu23"
+                    }
+                ],
+                [
+                    "(0,0): the pointer is in the top-left corner of the screen",
+                    "",
+                    "(0,0): the pointer is in the top-left corner of the screen",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/mouse.md",
+                    {
+                        "id": "tu24"
+                    }
+                ],
+                [
+                    "(1,1): the pointer is in the bottom-right corner of the screen",
+                    "",
+                    "(1,1): the pointer is in the bottom-right corner of the screen",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/mouse.md",
+                    {
+                        "id": "tu25"
+                    }
+                ],
+                [
+                    "Absolute coordinates",
+                    "",
+                    "Absolute coordinates",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/mouse.md",
+                    {
+                        "id": "tu26"
+                    }
+                ],
+                [
+                    "<g1>InputManager.AbsoluteMousePosition<\/g1> returns the mouse pointer position in absolute X and Y coordinates (the actual screen size in pixels).",
+                    "",
+                    "<g1>InputManager.AbsoluteMousePosition<\/g1> returns the mouse pointer position in absolute X and Y coordinates (the actual screen size in pixels).",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/mouse.md",
+                    {
+                        "id": "tu27"
+                    }
+                ],
+                [
+                    "For example, if the pointer is in the top-left corner of the screen, the values are (0,0).",
+                    "",
+                    " For example, if the pointer is in the top-left corner of the screen, the values are (0,0).",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/mouse.md",
+                    {
+                        "id": "tu27"
+                    }
+                ],
+                [
+                    "If the pointer is in the bottom-right corner, the values depends on the screen resolution (eg 1280, 720).",
+                    "",
+                    " If the pointer is in the bottom-right corner, the values depends on the screen resolution (eg 1280, 720).",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/mouse.md",
+                    {
+                        "id": "tu27"
+                    }
+                ],
+                [
+                    "<x1\/>!Tip<x2\/>",
+                    "",
+                    "<x1\/>!Tip<x2\/>\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/mouse.md",
+                    {
+                        "id": "tu28"
+                    }
+                ],
+                [
+                    "To get the actual size of the screen, access <g1>IPointerDevice.SurfaceSize<\/g1>.",
+                    "",
+                    "To get the actual size of the screen, access <g1>IPointerDevice.SurfaceSize<\/g1>.",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/mouse.md",
+                    {
+                        "id": "tu28"
+                    }
+                ],
+                [
+                    "For example:",
+                    "",
+                    " For example:",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/mouse.md",
+                    {
+                        "id": "tu28"
+                    }
+                ],
+                [
+                    "var surfaceSize = Input.Mouse.SurfaceSize;",
+                    "",
+                    "var surfaceSize = Input.Mouse.SurfaceSize;\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/mouse.md",
+                    {
+                        "id": "tu29"
+                    }
+                ],
+                [
+                    "Query mouse button state changes",
+                    "",
+                    "Query mouse button state changes",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/mouse.md",
+                    {
+                        "id": "tu30"
+                    }
+                ],
+                [
+                    "You can use the mouse buttons to trigger actions in a project.",
+                    "",
+                    "You can use the mouse buttons to trigger actions in a project.",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/mouse.md",
+                    {
+                        "id": "tu31"
+                    }
+                ],
+                [
+                    "For example, in first-person shooter games, the left mouse button is commonly used to shoot.",
+                    "",
+                    " For example, in first-person shooter games, the left mouse button is commonly used to shoot.",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/mouse.md",
+                    {
+                        "id": "tu31"
+                    }
+                ],
+                [
+                    "The <g1>Input manager<\/g1> has several methods that check mouse button states (<g2>Pressed<\/g2>, <g3>Down<\/g3>, or <g4>Released<\/g4>):",
+                    "",
+                    "The <g1>Input manager<\/g1> has several methods that check mouse button states (<g2>Pressed<\/g2>, <g3>Down<\/g3>, or <g4>Released<\/g4>):",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/mouse.md",
+                    {
+                        "id": "tu32"
+                    }
+                ],
+                [
+                    "Method",
+                    "",
+                    "Method",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/mouse.md",
+                    {
+                        "id": "tu33"
+                    }
+                ],
+                [
+                    "Description",
+                    "",
+                    "Description",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/mouse.md",
+                    {
+                        "id": "tu34"
+                    }
+                ],
+                [
+                    "HasDownMouseButtons",
+                    "",
+                    "<g1>HasDownMouseButtons<\/g1>",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/mouse.md",
+                    {
+                        "id": "tu35"
+                    }
+                ],
+                [
+                    "Checks if one or more mouse buttons are currently pressed down.",
+                    "",
+                    "Checks if one or more mouse buttons are currently pressed down.",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/mouse.md",
+                    {
+                        "id": "tu36"
+                    }
+                ],
+                [
+                    "HasPressedMouseButtons",
+                    "",
+                    "<g1>HasPressedMouseButtons<\/g1>",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/mouse.md",
+                    {
+                        "id": "tu37"
+                    }
+                ],
+                [
+                    "Checks if one or more mouse buttons were pressed in the last update.",
+                    "",
+                    "Checks if one or more mouse buttons were pressed in the last update.",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/mouse.md",
+                    {
+                        "id": "tu38"
+                    }
+                ],
+                [
+                    "HasReleasedMouseButtons",
+                    "",
+                    "<g1>HasReleasedMouseButtons<\/g1>",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/mouse.md",
+                    {
+                        "id": "tu39"
+                    }
+                ],
+                [
+                    "Checks if one or more mouse buttons were released in the last update.",
+                    "",
+                    "Checks if one or more mouse buttons were released in the last update.",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/mouse.md",
+                    {
+                        "id": "tu40"
+                    }
+                ],
+                [
+                    "IsMouseButtonDown (MouseButton)",
+                    "",
+                    "<g1>IsMouseButtonDown (MouseButton)<\/g1>",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/mouse.md",
+                    {
+                        "id": "tu41"
+                    }
+                ],
+                [
+                    "Checks if a specified mouse button is currently pressed down.",
+                    "",
+                    "Checks if a specified mouse button is currently pressed down.",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/mouse.md",
+                    {
+                        "id": "tu42"
+                    }
+                ],
+                [
+                    "IsMouseButtonPressed (MouseButton)",
+                    "",
+                    "<g1>IsMouseButtonPressed (MouseButton)<\/g1>",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/mouse.md",
+                    {
+                        "id": "tu43"
+                    }
+                ],
+                [
+                    "Checks if a specified mouse button was pressed in the last update.",
+                    "",
+                    "Checks if a specified mouse button was pressed in the last update.",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/mouse.md",
+                    {
+                        "id": "tu44"
+                    }
+                ],
+                [
+                    "IsMouseButtonReleased (MouseButton)",
+                    "",
+                    "<g1>IsMouseButtonReleased (MouseButton)<\/g1>",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/mouse.md",
+                    {
+                        "id": "tu45"
+                    }
+                ],
+                [
+                    "Checks if a specified mouse button was released in the last update.",
+                    "",
+                    "Checks if a specified mouse button was released in the last update.",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/mouse.md",
+                    {
+                        "id": "tu46"
+                    }
+                ],
+                [
+                    "Mouse delta",
+                    "",
+                    "Mouse delta",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/mouse.md",
+                    {
+                        "id": "tu47"
+                    }
+                ],
+                [
+                    "Use <g1>InputManager.MouseDelta<\/g1> to get the change in mouse position in normalized coordinates since the last update.",
+                    "",
+                    "Use <g1>InputManager.MouseDelta<\/g1> to get the change in mouse position in normalized coordinates since the last update.",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/mouse.md",
+                    {
+                        "id": "tu48"
+                    }
+                ],
+                [
+                    "You can use this to analyze mouse movement speed and direction.",
+                    "",
+                    " You can use this to analyze mouse movement speed and direction.",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/mouse.md",
+                    {
+                        "id": "tu48"
+                    }
+                ],
+                [
+                    "Mouse wheel delta",
+                    "",
+                    "Mouse wheel delta",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/mouse.md",
+                    {
+                        "id": "tu49"
+                    }
+                ],
+                [
+                    "You can use the mouse wheel to trigger actions in a project.",
+                    "",
+                    "You can use the mouse wheel to trigger actions in a project.",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/mouse.md",
+                    {
+                        "id": "tu50"
+                    }
+                ],
+                [
+                    "For example, in a first-person shooter game, moving the mouse wheel might switch weapons or zoom a camera.",
+                    "",
+                    " For example, in a first-person shooter game, moving the mouse wheel might switch weapons or zoom a camera.",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/mouse.md",
+                    {
+                        "id": "tu50"
+                    }
+                ],
+                [
+                    "The <g1>InputManager.MouseWheelDelta<\/g1> returns a positive value when the user scrolls forwards and a negative value when the user scrolls backwards.",
+                    "",
+                    "The <g1>InputManager.MouseWheelDelta<\/g1> returns a positive value when the user scrolls forwards and a negative value when the user scrolls backwards.",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/mouse.md",
+                    {
+                        "id": "tu51"
+                    }
+                ],
+                [
+                    "A value of <g2>0<\/g2> indicates no movement.",
+                    "",
+                    " A value of <g2>0<\/g2> indicates no movement.",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/mouse.md",
+                    {
+                        "id": "tu51"
+                    }
+                ],
+                [
+                    "Lock the mouse position",
+                    "",
+                    "Lock the mouse position",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/mouse.md",
+                    {
+                        "id": "tu52"
+                    }
+                ],
+                [
+                    "For some projects, the user needs to move the mouse cursor beyond the borders of the screen.",
+                    "",
+                    "For some projects, the user needs to move the mouse cursor beyond the borders of the screen.",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/mouse.md",
+                    {
+                        "id": "tu53"
+                    }
+                ],
+                [
+                    "For example, first-person shooter games usually need 360-degree camera rotation.",
+                    "",
+                    " For example, first-person shooter games usually need 360-degree camera rotation.",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/mouse.md",
+                    {
+                        "id": "tu53"
+                    }
+                ],
+                [
+                    "In these cases, you also probably want the mouse cursor to be hidden.",
+                    "",
+                    " In these cases, you also probably want the mouse cursor to be hidden.",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/mouse.md",
+                    {
+                        "id": "tu53"
+                    }
+                ],
+                [
+                    "You can lock the mouse position and hide the cursor with the following properties and methods:",
+                    "",
+                    "You can lock the mouse position and hide the cursor with the following properties and methods:",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/mouse.md",
+                    {
+                        "id": "tu54"
+                    }
+                ],
+                [
+                    "Method or property",
+                    "",
+                    "Method or property",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/mouse.md",
+                    {
+                        "id": "tu55"
+                    }
+                ],
+                [
+                    "Description",
+                    "",
+                    "Description",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/mouse.md",
+                    {
+                        "id": "tu56"
+                    }
+                ],
+                [
+                    "LockMousePosition(Boolean)",
+                    "",
+                    "<g1>LockMousePosition(Boolean)<\/g1>",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/mouse.md",
+                    {
+                        "id": "tu57"
+                    }
+                ],
+                [
+                    "Locks the mouse position until the next call to the <g1>UnlockMousePosition()<\/g1> event.",
+                    "",
+                    "Locks the mouse position until the next call to the <g1>UnlockMousePosition()<\/g1> event.",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/mouse.md",
+                    {
+                        "id": "tu58"
+                    }
+                ],
+                [
+                    "UnlockMousePosition()",
+                    "",
+                    "<g1>UnlockMousePosition()<\/g1>",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/mouse.md",
+                    {
+                        "id": "tu59"
+                    }
+                ],
+                [
+                    "Unlocks the mouse position locked by the <g1>LockMousePosition(Boolean)<\/g1> event.",
+                    "",
+                    "Unlocks the mouse position locked by the <g1>LockMousePosition(Boolean)<\/g1> event.",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/mouse.md",
+                    {
+                        "id": "tu60"
+                    }
+                ],
+                [
+                    "IsMousePositionLocked",
+                    "",
+                    "<g1>IsMousePositionLocked<\/g1>",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/mouse.md",
+                    {
+                        "id": "tu61"
+                    }
+                ],
+                [
+                    "Checks if the mouse position is locked.",
+                    "",
+                    "Checks if the mouse position is locked.",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/mouse.md",
+                    {
+                        "id": "tu62"
+                    }
+                ],
+                [
+                    "<x1\/>!Tip<x2\/>",
+                    "",
+                    "<x1\/>!Tip<x2\/>\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/mouse.md",
+                    {
+                        "id": "tu63"
+                    }
+                ],
+                [
+                    "You can get or set mouse visibility with <g1>GameWindow.IsMouseVisible<\/g1>.",
+                    "",
+                    "You can get or set mouse visibility with <g1>GameWindow.IsMouseVisible<\/g1>.",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/mouse.md",
+                    {
+                        "id": "tu63"
+                    }
+                ],
+                [
+                    "Example code",
+                    "",
+                    "Example code",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/mouse.md",
+                    {
+                        "id": "tu64"
+                    }
+                ],
+                [
+                    "public class MouseInputScript :",
+                    "",
+                    "public class MouseInputScript :",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/mouse.md",
+                    {
+                        "id": "tu65"
+                    }
+                ],
+                [
+                    "SyncScript",
+                    "",
+                    " SyncScript\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/mouse.md",
+                    {
+                        "id": "tu65"
+                    }
+                ],
+                [
+                    "{",
+                    "",
+                    "{\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/mouse.md",
+                    {
+                        "id": "tu65"
+                    }
+                ],
+                [
+                    "public override void Update()",
+                    "",
+                    "\tpublic override void Update()\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/mouse.md",
+                    {
+                        "id": "tu65"
+                    }
+                ],
+                [
+                    "{",
+                    "",
+                    "\t{\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/mouse.md",
+                    {
+                        "id": "tu65"
+                    }
+                ],
+                [
+                    "\/\/If the left mouse button is pressed in this update, do something.",
+                    "",
+                    "\t\t\/\/If the left mouse button is pressed in this update, do something.\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/mouse.md",
+                    {
+                        "id": "tu65"
+                    }
+                ],
+                [
+                    "if (Input.IsMouseButtonDown(MouseButton.Left))",
+                    "",
+                    "\t\tif (Input.IsMouseButtonDown(MouseButton.Left))\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/mouse.md",
+                    {
+                        "id": "tu65"
+                    }
+                ],
+                [
+                    "{",
+                    "",
+                    "\t\t{   \r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/mouse.md",
+                    {
+                        "id": "tu65"
+                    }
+                ],
+                [
+                    "}",
+                    "",
+                    "\t\t}\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/mouse.md",
+                    {
+                        "id": "tu65"
+                    }
+                ],
+                [
+                    "\/\/If the middle mouse button has been pressed since the last update, do something.",
+                    "",
+                    "\t\t\/\/If the middle mouse button has been pressed since the last update, do something.\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/mouse.md",
+                    {
+                        "id": "tu65"
+                    }
+                ],
+                [
+                    "if (Input.IsMouseButtonPressed(MouseButton.Middle))",
+                    "",
+                    "\t\tif (Input.IsMouseButtonPressed(MouseButton.Middle))\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/mouse.md",
+                    {
+                        "id": "tu65"
+                    }
+                ],
+                [
+                    "{",
+                    "",
+                    "\t\t{  \r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/mouse.md",
+                    {
+                        "id": "tu65"
+                    }
+                ],
+                [
+                    "}",
+                    "",
+                    "\t\t}\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/mouse.md",
+                    {
+                        "id": "tu65"
+                    }
+                ],
+                [
+                    "\/\/If the mouse moved more than 0.2 units of the screen size in X direction, do something.",
+                    "",
+                    "\r\n\t\t\/\/If the mouse moved more than 0.2 units of the screen size in X direction, do something.\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/mouse.md",
+                    {
+                        "id": "tu65"
+                    }
+                ],
+                [
+                    "if (Input.MouseDelta.X > 0.2f)",
+                    "",
+                    "\t\tif (Input.MouseDelta.X > 0.2f)\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/mouse.md",
+                    {
+                        "id": "tu65"
+                    }
+                ],
+                [
+                    "{",
+                    "",
+                    "\t\t{\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/mouse.md",
+                    {
+                        "id": "tu65"
+                    }
+                ],
+                [
+                    "}",
+                    "",
+                    "\t\t}\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/mouse.md",
+                    {
+                        "id": "tu65"
+                    }
+                ],
+                [
+                    "}",
+                    "",
+                    "\t\t\r\n\t}\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/mouse.md",
+                    {
+                        "id": "tu65"
+                    }
+                ],
+                [
+                    "}",
+                    "",
+                    "}\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/mouse.md",
+                    {
+                        "id": "tu65"
+                    }
+                ],
+                [
+                    "See also",
+                    "",
+                    "See also",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/mouse.md",
+                    {
+                        "id": "tu66"
+                    }
+                ],
+                [
+                    "Pointers",
+                    "",
+                    "<g1>Pointers<\/g1>",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/mouse.md",
+                    {
+                        "id": "tu67"
+                    }
+                ],
+                [
+                    "Virtual buttons",
+                    "",
+                    "<g1>Virtual buttons<\/g1>",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/mouse.md",
+                    {
+                        "id": "tu68"
+                    }
+                ],
+                [
+                    "Keyboard",
+                    "",
+                    "<g1>Keyboard<\/g1>",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/mouse.md",
+                    {
+                        "id": "tu69"
+                    }
+                ],
+                [
+                    "Gamepads",
+                    "",
+                    "<g1>Gamepads<\/g1>",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/mouse.md",
+                    {
+                        "id": "tu70"
+                    }
+                ],
+                [
+                    "Input overview",
+                    "",
+                    "<g1>Input overview<\/g1>",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/mouse.md",
+                    {
+                        "id": "tu71"
+                    }
+                ]
+            ]
+        }
+    ],
+    "seg_enabled": false
+}

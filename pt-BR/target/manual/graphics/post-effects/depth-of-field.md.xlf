@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" xmlns:okp="okapi-framework:xliff-extensions" its:version="2.0" version="1.2">
+<file datatype="x-text/x-markdown" okp:inputEncoding="UTF-8" original="/D:/repos/rr/source/manual/graphics/post-effects/depth-of-field.md" source-language="en" target-language="pt">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en">Depth of field</source>
+<target xml:lang="pt">Depth of field</target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Intermediate<x id="2"/>
+<x id="3"/>Artist<x id="4"/></source>
+<target xml:lang="pt"><x id="1"/>Intermediate<x id="2"/>
+<x id="3"/>Artist<x id="4"/></target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">By default, rendering produces a very sharp image, which can look artificial. <g id="1">Depth of field</g> effects simulate the behavior of a real camera lens focusing an object, leaving background and foreground objects out of focus.</source>
+<target xml:lang="pt">By default, rendering produces a very sharp image, which can look artificial. <g id="1">Depth of field</g> effects simulate the behavior of a real camera lens focusing an object, leaving background and foreground objects out of focus.</target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>media/realworld_dof_agave_flowers.jpg<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>media/realworld_dof_agave_flowers.jpg<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">To create the effect, Stride creates several versions of the original image with different intensities of blur, and interpolates between them. The more layers used, the better the quality, but at performance cost.</source>
+<target xml:lang="pt">To create the effect, Stride creates several versions of the original image with different intensities of blur, and interpolates between them. The more layers used, the better the quality, but at performance cost.</target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en">Properties</source>
+<target xml:lang="pt">Properties</target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>media/depth-of-field-2.png<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>media/depth-of-field-2.png<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en">Property</source>
+<target xml:lang="pt">Property</target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en">Description</source>
+<target xml:lang="pt">Description</target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en">Size</source>
+<target xml:lang="pt">Size</target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en">Size of the <g id="1">bokeh (Wikipedia)</g>, expressed as a factor of the image width so it's resolution-independent. The bigger the size, the worse the performance</source>
+<target xml:lang="pt">Size of the <g id="1">bokeh (Wikipedia)</g>, expressed as a factor of the image width so it's resolution-independent. The bigger the size, the worse the performance</target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en">DOF Areas</source>
+<target xml:lang="pt">DOF Areas</target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en">Areas of the depth of field. There are three main zones defined by their distance from the camera: near out-of-focus area (from X to Y), in-focus area (from Y to Z), and far out-of-focus area (from Z to W)</source>
+<target xml:lang="pt">Areas of the depth of field. There are three main zones defined by their distance from the camera: near out-of-focus area (from X to Y), in-focus area (from Y to Z), and far out-of-focus area (from Z to W)</target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en">Technique</source>
+<target xml:lang="pt">Technique</target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en">The technique affects both the performance and the shape of the bokeh.  </source>
+<target xml:lang="pt">The technique affects both the performance and the shape of the bokeh.  </target>
+</trans-unit>
+<trans-unit id="sd1_sf5_tu1" resname="sd1_1" restype="x-paragraph" xml:space="preserve">
+<source xml:lang="en"/>
+<target xml:lang="pt"/>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en"><x id="1"/><g id="2">Circular Gaussian</g> is fast but unrealistic. </source>
+<target xml:lang="pt"><x id="1"/><g id="2">Circular Gaussian</g> is fast but unrealistic. </target>
+</trans-unit>
+<trans-unit id="sd1_sf7_tu1" resname="sd1_1" restype="x-paragraph" xml:space="preserve">
+<source xml:lang="en"/>
+<target xml:lang="pt"/>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en"><x id="1"/><x id="2"/>media/depth-of-field-3.png<x id="3"/> </source>
+<target xml:lang="pt"><x id="1"/><x id="2"/>media/depth-of-field-3.png<x id="3"/> </target>
+</trans-unit>
+<trans-unit id="sd1_sf9_tu1" resname="sd1_1" restype="x-paragraph" xml:space="preserve">
+<source xml:lang="en"/>
+<target xml:lang="pt"/>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en"><x id="1"/><g id="2">Hexagonal Triple Rhombi</g> is heavier than Gaussian. </source>
+<target xml:lang="pt"><x id="1"/><g id="2">Hexagonal Triple Rhombi</g> is heavier than Gaussian. </target>
+</trans-unit>
+<trans-unit id="sd1_sf11_tu1" resname="sd1_1" restype="x-paragraph" xml:space="preserve">
+<source xml:lang="en"/>
+<target xml:lang="pt"/>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en"><x id="1"/><x id="2"/>media/depth-of-field-4.png<x id="3"/> </source>
+<target xml:lang="pt"><x id="1"/><x id="2"/>media/depth-of-field-4.png<x id="3"/> </target>
+</trans-unit>
+<trans-unit id="sd1_sf13_tu1" resname="sd1_1" restype="x-paragraph" xml:space="preserve">
+<source xml:lang="en"/>
+<target xml:lang="pt"/>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en"><x id="1"/><g id="2">Hexagonal McIntosh</g> is the heaviest. </source>
+<target xml:lang="pt"><x id="1"/><g id="2">Hexagonal McIntosh</g> is the heaviest. </target>
+</trans-unit>
+<trans-unit id="sd1_sf15_tu1" resname="sd1_1" restype="x-paragraph" xml:space="preserve">
+<source xml:lang="en"/>
+<target xml:lang="pt"/>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en"><x id="1"/><x id="2"/>media/depth-of-field-5.png<x id="3"/></source>
+<target xml:lang="pt"><x id="1"/><x id="2"/>media/depth-of-field-5.png<x id="3"/></target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en">Auto Focus</source>
+<target xml:lang="pt">Auto Focus</target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en">Automatically updates the DOF areas so the camera focuses on the object at the center of the screen</source>
+<target xml:lang="pt">Automatically updates the DOF areas so the camera focuses on the object at the center of the screen</target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en">See also</source>
+<target xml:lang="pt">See also</target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en"><g id="1">Anti-aliasing</g></source>
+<target xml:lang="pt"><g id="1">Anti-aliasing</g></target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en"><g id="1">Fog</g></source>
+<target xml:lang="pt"><g id="1">Fog</g></target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en"><g id="1">Outline</g></source>
+<target xml:lang="pt"><g id="1">Outline</g></target>
+</trans-unit>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en"><g id="1">Ambient occlusion</g></source>
+<target xml:lang="pt"><g id="1">Ambient occlusion</g></target>
+</trans-unit>
+<trans-unit id="tu29" xml:space="preserve">
+<source xml:lang="en"><g id="1">Bloom</g></source>
+<target xml:lang="pt"><g id="1">Bloom</g></target>
+</trans-unit>
+<trans-unit id="tu30" xml:space="preserve">
+<source xml:lang="en"><g id="1">Bright filter</g></source>
+<target xml:lang="pt"><g id="1">Bright filter</g></target>
+</trans-unit>
+<trans-unit id="tu31" xml:space="preserve">
+<source xml:lang="en"><g id="1">Color transforms</g></source>
+<target xml:lang="pt"><g id="1">Color transforms</g></target>
+</trans-unit>
+<trans-unit id="tu32" xml:space="preserve">
+<source xml:lang="en"><g id="1">Lens flare</g></source>
+<target xml:lang="pt"><g id="1">Lens flare</g></target>
+</trans-unit>
+<trans-unit id="tu33" xml:space="preserve">
+<source xml:lang="en"><g id="1">Light streaks</g></source>
+<target xml:lang="pt"><g id="1">Light streaks</g></target>
+</trans-unit>
+</body>
+</file>
+</xliff>

@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" xmlns:okp="okapi-framework:xliff-extensions" its:version="2.0" version="1.2">
+<file datatype="x-text/x-markdown" okp:inputEncoding="UTF-8" original="/D:/repos/rr/source/manual/input/sensors.md" source-language="en" target-language="pt">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en">Sensors</source>
+<target xml:lang="pt">Sensors</target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Intermediate<x id="2"/>
+<x id="3"/>Programmer<x id="4"/></source>
+<target xml:lang="pt"><x id="1"/>Intermediate<x id="2"/>
+<x id="3"/>Programmer<x id="4"/></target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">You can use various <g id="1">sensors</g>, such as gyroscopes and accelerometers, as input devices in your project. Sensors are often used in mobile games.</source>
+<target xml:lang="pt">You can use various <g id="1">sensors</g>, such as gyroscopes and accelerometers, as input devices in your project. Sensors are often used in mobile games.</target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">Use @'Stride.Input.InputManager' to access sensors and:</source>
+<target xml:lang="pt">Use @'Stride.Input.InputManager' to access sensors and:</target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">check if a sensor is supported by Stride</source>
+<target xml:lang="pt">check if a sensor is supported by Stride</target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en">disable a sensor</source>
+<target xml:lang="pt">disable a sensor</target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en">retrieve sensor data</source>
+<target xml:lang="pt">retrieve sensor data</target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en">Stride can receive data from six types of sensor:</source>
+<target xml:lang="pt">Stride can receive data from six types of sensor:</target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en">Orientation</source>
+<target xml:lang="pt">Orientation</target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en">Accelerometer</source>
+<target xml:lang="pt">Accelerometer</target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en">UserAcceleration</source>
+<target xml:lang="pt">UserAcceleration</target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en">Gravity</source>
+<target xml:lang="pt">Gravity</target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en">Compass</source>
+<target xml:lang="pt">Compass</target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en">Gyroscope</source>
+<target xml:lang="pt">Gyroscope</target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en">They inherit from @'Stride.Input.ISensorDevice'.</source>
+<target xml:lang="pt">They inherit from @'Stride.Input.ISensorDevice'.</target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en">Stride creates a default instance for each sensor type. You can access each instance from the @'Stride.Input.InputManager'.</source>
+<target xml:lang="pt">Stride creates a default instance for each sensor type. You can access each instance from the @'Stride.Input.InputManager'.</target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en">Sensors are state-based. Each sensor instance is automatically updated every frame, and contains the value of the sensor just before the update.</source>
+<target xml:lang="pt">Sensors are state-based. Each sensor instance is automatically updated every frame, and contains the value of the sensor just before the update.</target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en">For example, to access the accelerometer, use:</source>
+<target xml:lang="pt">For example, to access the accelerometer, use:</target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en">var accelerometer = Input.Accelerometer;
+</source>
+<target xml:lang="pt">var accelerometer = Input.Accelerometer;
+</target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en">Check if a sensor is available</source>
+<target xml:lang="pt">Check if a sensor is available</target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en">Before you get the value of a sensor, check that the sensor is available in the device (ie not null). For example, to check if the compass is available:</source>
+<target xml:lang="pt">Before you get the value of a sensor, check that the sensor is available in the device (ie not null). For example, to check if the compass is available:</target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en">var hasCompass = Input.Compass != null;
+</source>
+<target xml:lang="pt">var hasCompass = Input.Compass != null;
+</target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>!Note<x id="2"/>
+If a sensor isn't natively supported by the device, Stride tries to emulate it using the device's other sensors.</source>
+<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
+If a sensor isn't natively supported by the device, Stride tries to emulate it using the device's other sensors.</target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en">Enable a sensor</source>
+<target xml:lang="pt">Enable a sensor</target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en">By default, Stride disables all available sensors, as retrieving and updating sensor data takes significant CPU time.</source>
+<target xml:lang="pt">By default, Stride disables all available sensors, as retrieving and updating sensor data takes significant CPU time.</target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en">To enable a sensor, set @'Stride.Input.ISensorDevice.IsEnabled' to <g id="1">true</g>. When you don't need the sensor, disable it by setting the property to <g id="2">false</g>.</source>
+<target xml:lang="pt">To enable a sensor, set @'Stride.Input.ISensorDevice.IsEnabled' to <g id="1">true</g>. When you don't need the sensor, disable it by setting the property to <g id="2">false</g>.</target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en">Use the orientation sensor</source>
+<target xml:lang="pt">Use the orientation sensor</target>
+</trans-unit>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en">The <g id="1">orientation sensor</g> indicates the <g id="2">orientation of the device</g> with respect to gravity and the Earth's north pole. The orientation is null when the device's Y-axis is aligned with the magnetic north pole and the Z-axis with the gravity. You can use orientation data to control various actions in a game.</source>
+<target xml:lang="pt">The <g id="1">orientation sensor</g> indicates the <g id="2">orientation of the device</g> with respect to gravity and the Earth's north pole. The orientation is null when the device's Y-axis is aligned with the magnetic north pole and the Z-axis with the gravity. You can use orientation data to control various actions in a game.</target>
+</trans-unit>
+<trans-unit id="tu29" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Orientation sensor<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Orientation sensor<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu30" xml:space="preserve">
+<source xml:lang="en">Use <g id="1">Input.Orientation</g> to get the current orientation of the device.</source>
+<target xml:lang="pt">Use <g id="1">Input.Orientation</g> to get the current orientation of the device.</target>
+</trans-unit>
+<trans-unit id="tu31" xml:space="preserve">
+<source xml:lang="en">Property</source>
+<target xml:lang="pt">Property</target>
+</trans-unit>
+<trans-unit id="tu32" xml:space="preserve">
+<source xml:lang="en">Description</source>
+<target xml:lang="pt">Description</target>
+</trans-unit>
+<trans-unit id="tu33" xml:space="preserve">
+<source xml:lang="en">Declaration</source>
+<target xml:lang="pt">Declaration</target>
+</trans-unit>
+<trans-unit id="tu34" xml:space="preserve">
+<source xml:lang="en"><g id="1">Roll</g></source>
+<target xml:lang="pt"><g id="1">Roll</g></target>
+</trans-unit>
+<trans-unit id="tu35" xml:space="preserve">
+<source xml:lang="en">The rotation around the X-axis</source>
+<target xml:lang="pt">The rotation around the X-axis</target>
+</trans-unit>
+<trans-unit id="tu36" xml:space="preserve">
+<source xml:lang="en"><g id="1">public float Roll { get; }</g></source>
+<target xml:lang="pt"><g id="1">public float Roll { get; }</g></target>
+</trans-unit>
+<trans-unit id="tu37" xml:space="preserve">
+<source xml:lang="en"><g id="1">Pitch</g></source>
+<target xml:lang="pt"><g id="1">Pitch</g></target>
+</trans-unit>
+<trans-unit id="tu38" xml:space="preserve">
+<source xml:lang="en">The rotation around the Y-axis</source>
+<target xml:lang="pt">The rotation around the Y-axis</target>
+</trans-unit>
+<trans-unit id="tu39" xml:space="preserve">
+<source xml:lang="en"><g id="1">public float Pitch { get; }</g></source>
+<target xml:lang="pt"><g id="1">public float Pitch { get; }</g></target>
+</trans-unit>
+<trans-unit id="tu40" xml:space="preserve">
+<source xml:lang="en"><g id="1">Yaw</g></source>
+<target xml:lang="pt"><g id="1">Yaw</g></target>
+</trans-unit>
+<trans-unit id="tu41" xml:space="preserve">
+<source xml:lang="en">The rotation around the Z-axis</source>
+<target xml:lang="pt">The rotation around the Z-axis</target>
+</trans-unit>
+<trans-unit id="tu42" xml:space="preserve">
+<source xml:lang="en"><g id="1">public float Yaw { get; }</g></source>
+<target xml:lang="pt"><g id="1">public float Yaw { get; }</g></target>
+</trans-unit>
+<trans-unit id="tu43" xml:space="preserve">
+<source xml:lang="en"><g id="1">Rotation Matrix</g></source>
+<target xml:lang="pt"><g id="1">Rotation Matrix</g></target>
+</trans-unit>
+<trans-unit id="tu44" xml:space="preserve">
+<source xml:lang="en">The device rotation</source>
+<target xml:lang="pt">The device rotation</target>
+</trans-unit>
+<trans-unit id="tu45" xml:space="preserve">
+<source xml:lang="en"><g id="1">public Matrix RotationMatrix { get; }</g></source>
+<target xml:lang="pt"><g id="1">public Matrix RotationMatrix { get; }</g></target>
+</trans-unit>
+<trans-unit id="tu46" xml:space="preserve">
+<source xml:lang="en"><g id="1">Quaternion</g></source>
+<target xml:lang="pt"><g id="1">Quaternion</g></target>
+</trans-unit>
+<trans-unit id="tu47" xml:space="preserve">
+<source xml:lang="en">The device orientation and rotation</source>
+<target xml:lang="pt">The device orientation and rotation</target>
+</trans-unit>
+<trans-unit id="tu48" xml:space="preserve">
+<source xml:lang="en"><g id="1">public Quaternion Quaternion { get; }</g></source>
+<target xml:lang="pt"><g id="1">public Quaternion Quaternion { get; }</g></target>
+</trans-unit>
+<trans-unit id="tu49" xml:space="preserve">
+<source xml:lang="en">For example:</source>
+<target xml:lang="pt">For example:</target>
+</trans-unit>
+<trans-unit id="tu50" xml:space="preserve">
+<source xml:lang="en">  var orientation = Input.Orientation.Quaternion;
+</source>
+<target xml:lang="pt">  var orientation = Input.Orientation.Quaternion;
+</target>
+</trans-unit>
+<trans-unit id="tu51" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>!Note<x id="2"/>
+Stride provides the orientation under the pitch/yaw/roll, rotation matrix, or quaternion forms. We recommend the quaternion form as it doesn't suffer from <g id="3">gimbal lock</g>.</source>
+<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
+Stride provides the orientation under the pitch/yaw/roll, rotation matrix, or quaternion forms. We recommend the quaternion form as it doesn't suffer from <g id="3">gimbal lock</g>.</target>
+</trans-unit>
+<trans-unit id="tu52" xml:space="preserve">
+<source xml:lang="en">Motion sensors</source>
+<target xml:lang="pt">Motion sensors</target>
+</trans-unit>
+<trans-unit id="tu53" xml:space="preserve">
+<source xml:lang="en"><g id="1">Motion sensors</g> measure <g id="2">acceleration forces</g> such as tilts, shakes, and swing. Stride supports three types of motion sensor:</source>
+<target xml:lang="pt"><g id="1">Motion sensors</g> measure <g id="2">acceleration forces</g> such as tilts, shakes, and swing. Stride supports three types of motion sensor:</target>
+</trans-unit>
+<trans-unit id="tu54" xml:space="preserve">
+<source xml:lang="en"><g id="1">Accelerometer</g>: measures the <g id="2">raw acceleration</g></source>
+<target xml:lang="pt"><g id="1">Accelerometer</g>: measures the <g id="2">raw acceleration</g></target>
+</trans-unit>
+<trans-unit id="tu55" xml:space="preserve">
+<source xml:lang="en"><g id="1">Gravity</g>: measures gravity only</source>
+<target xml:lang="pt"><g id="1">Gravity</g>: measures gravity only</target>
+</trans-unit>
+<trans-unit id="tu56" xml:space="preserve">
+<source xml:lang="en"><g id="1">UserAcceleration</g>: measures only the acceleration applied by the user</source>
+<target xml:lang="pt"><g id="1">UserAcceleration</g>: measures only the acceleration applied by the user</target>
+</trans-unit>
+<trans-unit id="tu57" xml:space="preserve">
+<source xml:lang="en">The sensors use the physic relation <g id="1">Accelerometer = Gravity + UserAcceleration</g>.</source>
+<target xml:lang="pt">The sensors use the physic relation <g id="1">Accelerometer = Gravity + UserAcceleration</g>.</target>
+</trans-unit>
+<trans-unit id="tu58" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Motion sensors<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Motion sensors<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu59" xml:space="preserve">
+<source xml:lang="en">Motion sensors have a single field that specifies the current <g id="1">acceleration vector</g> on the device. Stride measures the acceleration in <g id="2">meters per second squared</g>.</source>
+<target xml:lang="pt">Motion sensors have a single field that specifies the current <g id="1">acceleration vector</g> on the device. Stride measures the acceleration in <g id="2">meters per second squared</g>.</target>
+</trans-unit>
+<trans-unit id="tu60" xml:space="preserve">
+<source xml:lang="en">This image shows the <g id="1">coordinate basis</g> Stride uses to measure acceleration on smartphones and tablets:</source>
+<target xml:lang="pt">This image shows the <g id="1">coordinate basis</g> Stride uses to measure acceleration on smartphones and tablets:</target>
+</trans-unit>
+<trans-unit id="tu61" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Accelerometer<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Accelerometer<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu62" xml:space="preserve">
+<source xml:lang="en">Use the accelerometer</source>
+<target xml:lang="pt">Use the accelerometer</target>
+</trans-unit>
+<trans-unit id="tu63" xml:space="preserve">
+<source xml:lang="en">The <g id="1">accelerometer</g> measures the raw acceleration applied to the device. This includes <g id="2">gravity</g> and <g id="3">user acceleration</g>.</source>
+<target xml:lang="pt">The <g id="1">accelerometer</g> measures the raw acceleration applied to the device. This includes <g id="2">gravity</g> and <g id="3">user acceleration</g>.</target>
+</trans-unit>
+<trans-unit id="tu64" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>!NOTE<x id="2"/>
+When the user isn't applying force, the <g id="3">device acceleration</g> is equal to its <g id="4">gravity</g>.</source>
+<target xml:lang="pt"><x id="1"/>!NOTE<x id="2"/>
+When the user isn't applying force, the <g id="3">device acceleration</g> is equal to its <g id="4">gravity</g>.</target>
+</trans-unit>
+<trans-unit id="tu65" xml:space="preserve">
+<source xml:lang="en">To get the raw acceleration, use <g id="1">Accelerometer.Acceleration</g>. For example:</source>
+<target xml:lang="pt">To get the raw acceleration, use <g id="1">Accelerometer.Acceleration</g>. For example:</target>
+</trans-unit>
+<trans-unit id="tu66" xml:space="preserve">
+<source xml:lang="en">var acceleration = Input.Accelerometer.Acceleration;
+</source>
+<target xml:lang="pt">var acceleration = Input.Accelerometer.Acceleration;
+</target>
+</trans-unit>
+<trans-unit id="tu67" xml:space="preserve">
+<source xml:lang="en">Use the user acceleration sensor</source>
+<target xml:lang="pt">Use the user acceleration sensor</target>
+</trans-unit>
+<trans-unit id="tu68" xml:space="preserve">
+<source xml:lang="en">The <g id="1">user acceleration sensor</g> is similar to the accelerometer, but measures the acceleration applied <g id="2">only</g> by a user (without gravitational acceleration).</source>
+<target xml:lang="pt">The <g id="1">user acceleration sensor</g> is similar to the accelerometer, but measures the acceleration applied <g id="2">only</g> by a user (without gravitational acceleration).</target>
+</trans-unit>
+<trans-unit id="tu69" xml:space="preserve">
+<source xml:lang="en">To get the user acceleration, use <g id="1">UserAcceleration.Acceleration</g>. For example:</source>
+<target xml:lang="pt">To get the user acceleration, use <g id="1">UserAcceleration.Acceleration</g>. For example:</target>
+</trans-unit>
+<trans-unit id="tu70" xml:space="preserve">
+<source xml:lang="en">var userAcceleration = Input.UserAcceleration.Acceleration;
+</source>
+<target xml:lang="pt">var userAcceleration = Input.UserAcceleration.Acceleration;
+</target>
+</trans-unit>
+<trans-unit id="tu71" xml:space="preserve">
+<source xml:lang="en">Use the gravity sensor</source>
+<target xml:lang="pt">Use the gravity sensor</target>
+</trans-unit>
+<trans-unit id="tu72" xml:space="preserve">
+<source xml:lang="en">The gravity sensor gives a 3D vector indicating the direction and magnitude of gravity (meters per second squared) acting on the device.</source>
+<target xml:lang="pt">The gravity sensor gives a 3D vector indicating the direction and magnitude of gravity (meters per second squared) acting on the device.</target>
+</trans-unit>
+<trans-unit id="tu73" xml:space="preserve">
+<source xml:lang="en">To get the gravity vector, use <g id="1">GravitySensor</g>. For example:</source>
+<target xml:lang="pt">To get the gravity vector, use <g id="1">GravitySensor</g>. For example:</target>
+</trans-unit>
+<trans-unit id="tu74" xml:space="preserve">
+<source xml:lang="en"> var gravityVector = Input.Gravity.Vector;
+</source>
+<target xml:lang="pt"> var gravityVector = Input.Gravity.Vector;
+</target>
+</trans-unit>
+<trans-unit id="tu75" xml:space="preserve">
+<source xml:lang="en">Use the compass sensor</source>
+<target xml:lang="pt">Use the compass sensor</target>
+</trans-unit>
+<trans-unit id="tu76" xml:space="preserve">
+<source xml:lang="en">The <g id="1">compass</g> indicates measures the angle between the top of the device and the <g id="2">North Pole</g>. This is useful, for example, to rotate and align digital maps.</source>
+<target xml:lang="pt">The <g id="1">compass</g> indicates measures the angle between the top of the device and the <g id="2">North Pole</g>. This is useful, for example, to rotate and align digital maps.</target>
+</trans-unit>
+<trans-unit id="tu77" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Compass<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Compass<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu78" xml:space="preserve">
+<source xml:lang="en">To get this angle, use <g id="1">CompassSensor.Heading</g>. For example:</source>
+<target xml:lang="pt">To get this angle, use <g id="1">CompassSensor.Heading</g>. For example:</target>
+</trans-unit>
+<trans-unit id="tu79" xml:space="preserve">
+<source xml:lang="en">var heading = Input.Compass.Heading;
+</source>
+<target xml:lang="pt">var heading = Input.Compass.Heading;
+</target>
+</trans-unit>
+<trans-unit id="tu80" xml:space="preserve">
+<source xml:lang="en">Use the gyroscope</source>
+<target xml:lang="pt">Use the gyroscope</target>
+</trans-unit>
+<trans-unit id="tu81" xml:space="preserve">
+<source xml:lang="en">The gyroscope measures the <g id="1">rotation speed</g> of the device (<g id="2">radians per second</g>).</source>
+<target xml:lang="pt">The gyroscope measures the <g id="1">rotation speed</g> of the device (<g id="2">radians per second</g>).</target>
+</trans-unit>
+<trans-unit id="tu82" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Gyroscope<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Gyroscope<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu83" xml:space="preserve">
+<source xml:lang="en">To get the rotation speed, use <g id="1">GyroscopeSensor.RotationRate</g>. For example:</source>
+<target xml:lang="pt">To get the rotation speed, use <g id="1">GyroscopeSensor.RotationRate</g>. For example:</target>
+</trans-unit>
+<trans-unit id="tu84" xml:space="preserve">
+<source xml:lang="en">  var rotationRate = Input.Gyroscope.RotationRate; 
+  var rotationSpeedX =  rotationRate.X;
+  var rotationSpeedY =  rotationRate.Y;
+  var rotationSpeedZ =  rotationRate.Z;
+</source>
+<target xml:lang="pt">  var rotationRate = Input.Gyroscope.RotationRate; 
+  var rotationSpeedX =  rotationRate.X;
+  var rotationSpeedY =  rotationRate.Y;
+  var rotationSpeedZ =  rotationRate.Z;
+</target>
+</trans-unit>
+<trans-unit id="tu85" xml:space="preserve">
+<source xml:lang="en">Example code</source>
+<target xml:lang="pt">Example code</target>
+</trans-unit>
+<trans-unit id="tu86" xml:space="preserve">
+<source xml:lang="en">public class SensorScript : AsyncScript
+{
+	public override async Task Execute()
+	{
+		// Check availability of the sensor
+		if(Input.Accelerometer != null)
+			return;
+			
+		// Activate the sensor
+		Input.Accelerometer.IsEnabled = true;
+				
+		while (Game.IsRunning)
+		{
+			// read current acceleration
+			var accel = Input.Accelerometer.Acceleration;
+			
+			// perform require works...
+			await Script.NextFrame();
+		}		
+		// Disable the sensor after use
+		Input.Accelerometer.IsEnabled = false;
+	}
+}
+</source>
+<target xml:lang="pt">public class SensorScript : AsyncScript
+{
+	public override async Task Execute()
+	{
+		// Check availability of the sensor
+		if(Input.Accelerometer != null)
+			return;
+			
+		// Activate the sensor
+		Input.Accelerometer.IsEnabled = true;
+				
+		while (Game.IsRunning)
+		{
+			// read current acceleration
+			var accel = Input.Accelerometer.Acceleration;
+			
+			// perform require works...
+			await Script.NextFrame();
+		}		
+		// Disable the sensor after use
+		Input.Accelerometer.IsEnabled = false;
+	}
+}
+</target>
+</trans-unit>
+<trans-unit id="tu87" xml:space="preserve">
+<source xml:lang="en">See also</source>
+<target xml:lang="pt">See also</target>
+</trans-unit>
+<trans-unit id="tu88" xml:space="preserve">
+<source xml:lang="en"><g id="1">Gestures</g></source>
+<target xml:lang="pt"><g id="1">Gestures</g></target>
+</trans-unit>
+<trans-unit id="tu89" xml:space="preserve">
+<source xml:lang="en"><g id="1">Pointers</g></source>
+<target xml:lang="pt"><g id="1">Pointers</g></target>
+</trans-unit>
+<trans-unit id="tu90" xml:space="preserve">
+<source xml:lang="en"><g id="1">Input overview</g></source>
+<target xml:lang="pt"><g id="1">Input overview</g></target>
+</trans-unit>
+</body>
+</file>
+</xliff>

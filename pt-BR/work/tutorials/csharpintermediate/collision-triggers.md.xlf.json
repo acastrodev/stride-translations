@@ -1,0 +1,190 @@
+{
+    "filename": "tutorials\\csharpintermediate\\collision-triggers.md.xlf",
+    "files": [
+        {
+            "\/D:\/repos\/rr\/source\/tutorials\/csharpintermediate\/collision-triggers.md": [
+                [
+                    "Collision triggers",
+                    "",
+                    "Collision triggers",
+                    "\/D:\/repos\/rr\/source\/tutorials\/csharpintermediate\/collision-triggers.md",
+                    {
+                        "id": "tu1"
+                    }
+                ],
+                [
+                    "This C# intermediate tutorial covers the use of collision triggers.",
+                    "",
+                    "This C# intermediate tutorial covers the use of collision triggers.",
+                    "\/D:\/repos\/rr\/source\/tutorials\/csharpintermediate\/collision-triggers.md",
+                    {
+                        "id": "tu2"
+                    }
+                ],
+                [
+                    "It teaches about rigid bodies and how to set those up in the editor.",
+                    "",
+                    " It teaches about rigid bodies and how to set those up in the editor.",
+                    "\/D:\/repos\/rr\/source\/tutorials\/csharpintermediate\/collision-triggers.md",
+                    {
+                        "id": "tu2"
+                    }
+                ],
+                [
+                    "Explanation",
+                    "",
+                    "Explanation",
+                    "\/D:\/repos\/rr\/source\/tutorials\/csharpintermediate\/collision-triggers.md",
+                    {
+                        "id": "tu3"
+                    }
+                ],
+                [
+                    "Rigid bodies determine how entities in our scene behave on gravity, whether they collide with other objects or in the case of this tutorial\": trigger collision events in our code.",
+                    "",
+                    "Rigid bodies determine how entities in our scene behave on gravity, whether they collide with other objects or in the case of this tutorial\": trigger collision events in our code.",
+                    "\/D:\/repos\/rr\/source\/tutorials\/csharpintermediate\/collision-triggers.md",
+                    {
+                        "id": "tu4"
+                    }
+                ],
+                [
+                    "We do this by setting up a collider box in our scene and letting a sphere roll through this object.",
+                    "",
+                    " We do this by setting up a collider box in our scene and letting a sphere roll through this object.",
+                    "\/D:\/repos\/rr\/source\/tutorials\/csharpintermediate\/collision-triggers.md",
+                    {
+                        "id": "tu4"
+                    }
+                ],
+                [
+                    "The events that are triggered are then processed by the script that we will make for it.",
+                    "",
+                    " The events that are triggered are then processed by the script that we will make for it.",
+                    "\/D:\/repos\/rr\/source\/tutorials\/csharpintermediate\/collision-triggers.md",
+                    {
+                        "id": "tu4"
+                    }
+                ],
+                [
+                    "<x1\/>!Video https:\/\/www.youtube.com\/embed\/SIy3pfoXfoQ<x2\/>",
+                    "",
+                    "<x1\/>!Video https:\/\/www.youtube.com\/embed\/SIy3pfoXfoQ<x2\/>",
+                    "\/D:\/repos\/rr\/source\/tutorials\/csharpintermediate\/collision-triggers.md",
+                    {
+                        "id": "tu5"
+                    }
+                ],
+                [
+                    "Rigidbodies and collisions",
+                    "",
+                    "Rigidbodies and collisions",
+                    "\/D:\/repos\/rr\/source\/tutorials\/csharpintermediate\/collision-triggers.md",
+                    {
+                        "id": "tu6"
+                    }
+                ],
+                [
+                    "The code below looks for the rigidbody component that is attached to our entity.",
+                    "",
+                    "The code below looks for the rigidbody component that is attached to our entity.",
+                    "\/D:\/repos\/rr\/source\/tutorials\/csharpintermediate\/collision-triggers.md",
+                    {
+                        "id": "tu7"
+                    }
+                ],
+                [
+                    "The rigidbody component contains all information we need for setting up triggers.",
+                    "",
+                    " The rigidbody component contains all information we need for setting up triggers.",
+                    "\/D:\/repos\/rr\/source\/tutorials\/csharpintermediate\/collision-triggers.md",
+                    {
+                        "id": "tu7"
+                    }
+                ],
+                [
+                    "The <g1>IsTrigger<\/g1> property determines that our collider doesn't stop other physics objects, but that it does trigger events in code (if they are set up at least).",
+                    "",
+                    " The <g1>IsTrigger<\/g1> property determines that our collider doesn't stop other physics objects, but that it does trigger events in code (if they are set up at least).",
+                    "\/D:\/repos\/rr\/source\/tutorials\/csharpintermediate\/collision-triggers.md",
+                    {
+                        "id": "tu7"
+                    }
+                ],
+                [
+                    "We spawn a sphere which also has a rigidbody.",
+                    "",
+                    "We spawn a sphere which also has a rigidbody.",
+                    "\/D:\/repos\/rr\/source\/tutorials\/csharpintermediate\/collision-triggers.md",
+                    {
+                        "id": "tu8"
+                    }
+                ],
+                [
+                    "This sphere has a mass and is affected by gravity.",
+                    "",
+                    " This sphere has a mass and is affected by gravity.",
+                    "\/D:\/repos\/rr\/source\/tutorials\/csharpintermediate\/collision-triggers.md",
+                    {
+                        "id": "tu8"
+                    }
+                ],
+                [
+                    "The sphere will fall down and eventually roll through our collider box.",
+                    "",
+                    " The sphere will fall down and eventually roll through our collider box.",
+                    "\/D:\/repos\/rr\/source\/tutorials\/csharpintermediate\/collision-triggers.md",
+                    {
+                        "id": "tu8"
+                    }
+                ],
+                [
+                    "In our update loop we check if there are collisions happening.",
+                    "",
+                    " In our update loop we check if there are collisions happening.",
+                    "\/D:\/repos\/rr\/source\/tutorials\/csharpintermediate\/collision-triggers.md",
+                    {
+                        "id": "tu8"
+                    }
+                ],
+                [
+                    "If there are collisions, we get the colliding object and print out some text on screen.",
+                    "",
+                    " If there are collisions, we get the colliding object and print out some text on screen.",
+                    "\/D:\/repos\/rr\/source\/tutorials\/csharpintermediate\/collision-triggers.md",
+                    {
+                        "id": "tu8"
+                    }
+                ],
+                [
+                    "Once the sphere leaves the trigger box, our update loop sees that we no longer have collisions.",
+                    "",
+                    " Once the sphere leaves the trigger box, our update loop sees that we no longer have collisions.",
+                    "\/D:\/repos\/rr\/source\/tutorials\/csharpintermediate\/collision-triggers.md",
+                    {
+                        "id": "tu8"
+                    }
+                ],
+                [
+                    "Instead of using our update loop, we can also use collision events.",
+                    "",
+                    "Instead of using our update loop, we can also use collision events.\r\n",
+                    "\/D:\/repos\/rr\/source\/tutorials\/csharpintermediate\/collision-triggers.md",
+                    {
+                        "id": "tu9"
+                    }
+                ],
+                [
+                    "[!code-csharp<g1>collisiontriggerdemo<\/g1>]",
+                    "",
+                    "[!code-csharp<g1>collisiontriggerdemo<\/g1>]",
+                    "\/D:\/repos\/rr\/source\/tutorials\/csharpintermediate\/collision-triggers.md",
+                    {
+                        "id": "tu9"
+                    }
+                ]
+            ]
+        }
+    ],
+    "seg_enabled": false
+}

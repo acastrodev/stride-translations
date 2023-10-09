@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="/D:/repos/rr/source/manual/graphics/effects-and-shaders/index.md" source-language="en" target-language="pt" datatype="x-text/x-markdown" okp:inputEncoding="UTF-8">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en">Effects and shaders</source>
+<target xml:lang="pt">Effects and shaders</target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en">Stride uses a programmable shading pipeline. You can write <g id="1">custom shaders</g>, create @'Stride.Graphics.Effect's from them, and use them for drawing. The @'Stride.Rendering.EffectSystem' class provides an easy way to load an effect.</source>
+<target xml:lang="pt">Stride uses a programmable shading pipeline. You can write <g id="1">custom shaders</g>, create @'Stride.Graphics.Effect's from them, and use them for drawing. The @'Stride.Rendering.EffectSystem' class provides an easy way to load an effect.</target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">Load an effect</source>
+<target xml:lang="pt">Load an effect</target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">Use:</source>
+<target xml:lang="pt">Use:</target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">var myEffect = EffectSystem.LoadEffect("MyEffect").WaitForResult();
+</source>
+<target xml:lang="pt">var myEffect = EffectSystem.LoadEffect("MyEffect").WaitForResult();
+</target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en">You can then bind the effect as <g id="1">pipeline state</g>.</source>
+<target xml:lang="pt">You can then bind the effect as <g id="1">pipeline state</g>.</target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en">An effect also often defines a set of parameters. To set these, you need to <g id="1">bind resources</g> before drawing.</source>
+<target xml:lang="pt">An effect also often defines a set of parameters. To set these, you need to <g id="1">bind resources</g> before drawing.</target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en">Shaders</source>
+<target xml:lang="pt">Shaders</target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en">Shaders are authored in the <g id="1">Stride's shading language</g>, which is an extension of <g id="2">HLSL</g>. They provide true composition of modular shaders via <g id="3">inheritance</g>, shader <g id="4">mixins</g> and <g id="5">automatic weaving of shader in-out attributes</g>.</source>
+<target xml:lang="pt">Shaders are authored in the <g id="1">Stride's shading language</g>, which is an extension of <g id="2">HLSL</g>. They provide true composition of modular shaders via <g id="3">inheritance</g>, shader <g id="4">mixins</g> and <g id="5">automatic weaving of shader in-out attributes</g>.</target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en">Effects</source>
+<target xml:lang="pt">Effects</target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en"><g id="1">Effects</g> in Stride use C#-like syntax to further combine shaders. They provide conditional composition of shaders to generate effect permutations.</source>
+<target xml:lang="pt"><g id="1">Effects</g> in Stride use C#-like syntax to further combine shaders. They provide conditional composition of shaders to generate effect permutations.</target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en">As some platforms can't compile shaders at runtime (eg iOS, Android, etc), effect permutation files (<g id="1">.sdeffectlog</g>) are used to enumerate all permutations ahead of time.</source>
+<target xml:lang="pt">As some platforms can't compile shaders at runtime (eg iOS, Android, etc), effect permutation files (<g id="1">.sdeffectlog</g>) are used to enumerate all permutations ahead of time.</target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en">Target everything</source>
+<target xml:lang="pt">Target everything</target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en">Stride shaders are converted automatically to the target graphics platform — either plain HLSL for Direct3D, <g id="1">GLSL</g> for OpenGL, or <g id="2">SPIR-V</g> for Vulkan platforms.</source>
+<target xml:lang="pt">Stride shaders are converted automatically to the target graphics platform — either plain HLSL for Direct3D, <g id="1">GLSL</g> for OpenGL, or <g id="2">SPIR-V</g> for Vulkan platforms.</target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en">For mobile platforms, shaders are optimized by a GLSL optimizer to improve performance.</source>
+<target xml:lang="pt">For mobile platforms, shaders are optimized by a GLSL optimizer to improve performance.</target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en">In this section</source>
+<target xml:lang="pt">In this section</target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en"><g id="1">Effect language</g></source>
+<target xml:lang="pt"><g id="1">Effect language</g></target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en"><g id="1">Shading language</g></source>
+<target xml:lang="pt"><g id="1">Shading language</g></target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en"><g id="1">Shader classes, mixins and inheritance</g></source>
+<target xml:lang="pt"><g id="1">Shader classes, mixins and inheritance</g></target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en"><g id="1">Composition</g></source>
+<target xml:lang="pt"><g id="1">Composition</g></target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en"><g id="1">Compile shaders</g></source>
+<target xml:lang="pt"><g id="1">Compile shaders</g></target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en"><g id="1">Templates</g></source>
+<target xml:lang="pt"><g id="1">Templates</g></target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en"><g id="1">Shader stage input/output automatic management</g></source>
+<target xml:lang="pt"><g id="1">Shader stage input/output automatic management</g></target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en"><g id="1">Custom shaders</g></source>
+<target xml:lang="pt"><g id="1">Custom shaders</g></target>
+</trans-unit>
+</body>
+</file>
+</xliff>

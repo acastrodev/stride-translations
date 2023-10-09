@@ -1,0 +1,478 @@
+{
+    "filename": "manual\\game-studio\\archetypes.md.xlf",
+    "files": [
+        {
+            "\/D:\/repos\/rr\/source\/manual\/game-studio\/archetypes.md": [
+                [
+                    "Archetypes",
+                    "",
+                    "Archetypes",
+                    "\/D:\/repos\/rr\/source\/manual\/game-studio\/archetypes.md",
+                    {
+                        "id": "tu1"
+                    }
+                ],
+                [
+                    "<x1\/>Intermediate<x2\/>",
+                    "",
+                    "<x1\/>Intermediate<x2\/>\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/game-studio\/archetypes.md",
+                    {
+                        "id": "tu2"
+                    }
+                ],
+                [
+                    "<x3\/>Designer<x4\/>",
+                    "",
+                    "<x3\/>Designer<x4\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/game-studio\/archetypes.md",
+                    {
+                        "id": "tu2"
+                    }
+                ],
+                [
+                    "An <g1>archetype<\/g1> is a master asset that controls the properties of assets you <g2>derive<\/g2> from it.",
+                    "",
+                    "An <g1>archetype<\/g1> is a master asset that controls the properties of assets you <g2>derive<\/g2> from it.",
+                    "\/D:\/repos\/rr\/source\/manual\/game-studio\/archetypes.md",
+                    {
+                        "id": "tu3"
+                    }
+                ],
+                [
+                    "Derived assets are useful when you want to create a \"remixed\" version of an asset.",
+                    "",
+                    " Derived assets are useful when you want to create a \"remixed\" version of an asset.",
+                    "\/D:\/repos\/rr\/source\/manual\/game-studio\/archetypes.md",
+                    {
+                        "id": "tu3"
+                    }
+                ],
+                [
+                    "For example, imagine we have three sphere entities that share a material asset named <g1>Metal<\/g1>.",
+                    "",
+                    "For example, imagine we have three sphere entities that share a material asset named <g1>Metal<\/g1>.",
+                    "\/D:\/repos\/rr\/source\/manual\/game-studio\/archetypes.md",
+                    {
+                        "id": "tu4"
+                    }
+                ],
+                [
+                    "The Metal asset has properties including color, gloss, and so on.",
+                    "",
+                    " The Metal asset has properties including color, gloss, and so on.",
+                    "\/D:\/repos\/rr\/source\/manual\/game-studio\/archetypes.md",
+                    {
+                        "id": "tu4"
+                    }
+                ],
+                [
+                    "<x1\/>Three metal spheres<x2\/>",
+                    "",
+                    "<x1\/>Three metal spheres<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/game-studio\/archetypes.md",
+                    {
+                        "id": "tu5"
+                    }
+                ],
+                [
+                    "If we change a property in the <g1>Metal<\/g1> asset, it applies to all three spheres.",
+                    "",
+                    "If we change a property in the <g1>Metal<\/g1> asset, it applies to all three spheres.",
+                    "\/D:\/repos\/rr\/source\/manual\/game-studio\/archetypes.md",
+                    {
+                        "id": "tu6"
+                    }
+                ],
+                [
+                    "So, for example, if we change the color property, all three spheres change color.",
+                    "",
+                    " So, for example, if we change the color property, all three spheres change color.",
+                    "\/D:\/repos\/rr\/source\/manual\/game-studio\/archetypes.md",
+                    {
+                        "id": "tu6"
+                    }
+                ],
+                [
+                    "<x1\/>Three gold spheres<x2\/>",
+                    "",
+                    "<x1\/>Three gold spheres<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/game-studio\/archetypes.md",
+                    {
+                        "id": "tu7"
+                    }
+                ],
+                [
+                    "Now imagine we want to change the color of only <g1>one<\/g1> sphere, but keep its other properties the same.",
+                    "",
+                    "Now imagine we want to change the color of only <g1>one<\/g1> sphere, but keep its other properties the same.",
+                    "\/D:\/repos\/rr\/source\/manual\/game-studio\/archetypes.md",
+                    {
+                        "id": "tu8"
+                    }
+                ],
+                [
+                    "We could duplicate the material asset, change its color, and then apply the new asset to only one sphere.",
+                    "",
+                    " We could duplicate the material asset, change its color, and then apply the new asset to only one sphere.",
+                    "\/D:\/repos\/rr\/source\/manual\/game-studio\/archetypes.md",
+                    {
+                        "id": "tu8"
+                    }
+                ],
+                [
+                    "But if we later want to change a different property across <g2>all<\/g2> the spheres, we have to modify both assets.",
+                    "",
+                    " But if we later want to change a different property across <g2>all<\/g2> the spheres, we have to modify both assets.",
+                    "\/D:\/repos\/rr\/source\/manual\/game-studio\/archetypes.md",
+                    {
+                        "id": "tu8"
+                    }
+                ],
+                [
+                    "This is time-consuming and leaves room for mistakes.",
+                    "",
+                    " This is time-consuming and leaves room for mistakes.",
+                    "\/D:\/repos\/rr\/source\/manual\/game-studio\/archetypes.md",
+                    {
+                        "id": "tu8"
+                    }
+                ],
+                [
+                    "The better approach is to derive a new asset from the archetype.",
+                    "",
+                    "The better approach is to derive a new asset from the archetype.",
+                    "\/D:\/repos\/rr\/source\/manual\/game-studio\/archetypes.md",
+                    {
+                        "id": "tu9"
+                    }
+                ],
+                [
+                    "The derived asset inherits properties from the archetype and lets you override individual properties where you need them.",
+                    "",
+                    " The derived asset inherits properties from the archetype and lets you override individual properties where you need them.",
+                    "\/D:\/repos\/rr\/source\/manual\/game-studio\/archetypes.md",
+                    {
+                        "id": "tu9"
+                    }
+                ],
+                [
+                    "For example, we can derive the sphere's material asset and override its color.",
+                    "",
+                    " For example, we can derive the sphere's material asset and override its color.",
+                    "\/D:\/repos\/rr\/source\/manual\/game-studio\/archetypes.md",
+                    {
+                        "id": "tu9"
+                    }
+                ],
+                [
+                    "Then, if we change the gloss of the archetype, the gloss of all three spheres changes.",
+                    "",
+                    " Then, if we change the gloss of the archetype, the gloss of all three spheres changes.",
+                    "\/D:\/repos\/rr\/source\/manual\/game-studio\/archetypes.md",
+                    {
+                        "id": "tu9"
+                    }
+                ],
+                [
+                    "<x1\/>Create derived asset<x2\/>",
+                    "",
+                    "<x1\/>Create derived asset<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/game-studio\/archetypes.md",
+                    {
+                        "id": "tu10"
+                    }
+                ],
+                [
+                    "You can derive an asset from an archetype, then in turn derive another asset from that derived asset.",
+                    "",
+                    "You can derive an asset from an archetype, then in turn derive another asset from that derived asset.",
+                    "\/D:\/repos\/rr\/source\/manual\/game-studio\/archetypes.md",
+                    {
+                        "id": "tu11"
+                    }
+                ],
+                [
+                    "This way you can create different layers of assets to keep your project organized:",
+                    "",
+                    " This way you can create different layers of assets to keep your project organized:",
+                    "\/D:\/repos\/rr\/source\/manual\/game-studio\/archetypes.md",
+                    {
+                        "id": "tu11"
+                    }
+                ],
+                [
+                    "Archetype",
+                    "",
+                    "Archetype\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/game-studio\/archetypes.md",
+                    {
+                        "id": "tu12"
+                    }
+                ],
+                [
+                    "Derived asset",
+                    "",
+                    "    Derived asset\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/game-studio\/archetypes.md",
+                    {
+                        "id": "tu12"
+                    }
+                ],
+                [
+                    "Derived asset",
+                    "",
+                    "        Derived asset\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/game-studio\/archetypes.md",
+                    {
+                        "id": "tu12"
+                    }
+                ],
+                [
+                    "Derive an asset from an archetype",
+                    "",
+                    "Derive an asset from an archetype",
+                    "\/D:\/repos\/rr\/source\/manual\/game-studio\/archetypes.md",
+                    {
+                        "id": "tu13"
+                    }
+                ],
+                [
+                    "In the <g1>Asset View<\/g1>, right-click the asset you want to derive an asset from and select <g2>Create derived asset<\/g2>:",
+                    "",
+                    "In the <g1>Asset View<\/g1>, right-click the asset you want to derive an asset from and select <g2>Create derived asset<\/g2>:",
+                    "\/D:\/repos\/rr\/source\/manual\/game-studio\/archetypes.md",
+                    {
+                        "id": "tu14"
+                    }
+                ],
+                [
+                    "<x1\/>Create derived asset<x2\/>",
+                    "",
+                    "<x1\/>Create derived asset<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/game-studio\/archetypes.md",
+                    {
+                        "id": "tu15"
+                    }
+                ],
+                [
+                    "Game Studio adds a new <g1>derived asset<\/g1> to the project.",
+                    "",
+                    "Game Studio adds a new <g1>derived asset<\/g1> to the project.",
+                    "\/D:\/repos\/rr\/source\/manual\/game-studio\/archetypes.md",
+                    {
+                        "id": "tu16"
+                    }
+                ],
+                [
+                    "This asset derives its properties from the <g2>archetype<\/g2> asset.",
+                    "",
+                    " This asset derives its properties from the <g2>archetype<\/g2> asset.",
+                    "\/D:\/repos\/rr\/source\/manual\/game-studio\/archetypes.md",
+                    {
+                        "id": "tu16"
+                    }
+                ],
+                [
+                    "The derived asset properties display the archetype asset under <g1>Archetype<\/g1>:",
+                    "",
+                    "The derived asset properties display the archetype asset under <g1>Archetype<\/g1>:",
+                    "\/D:\/repos\/rr\/source\/manual\/game-studio\/archetypes.md",
+                    {
+                        "id": "tu17"
+                    }
+                ],
+                [
+                    "<x1\/>Derived asset in Property Grid<x2\/>",
+                    "",
+                    "<x1\/>Derived asset in Property Grid<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/game-studio\/archetypes.md",
+                    {
+                        "id": "tu18"
+                    }
+                ],
+                [
+                    "You can right-click the archetype asset in the Property Grid and select <g1>Select the referenced asset<\/g1> to quickly select the archetype asset:",
+                    "",
+                    "You can right-click the archetype asset in the Property Grid and select <g1>Select the referenced asset<\/g1> to quickly select the archetype asset:",
+                    "\/D:\/repos\/rr\/source\/manual\/game-studio\/archetypes.md",
+                    {
+                        "id": "tu19"
+                    }
+                ],
+                [
+                    "<x1\/>Select referenced asset<x2\/>",
+                    "",
+                    "<x1\/>Select referenced asset<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/game-studio\/archetypes.md",
+                    {
+                        "id": "tu20"
+                    }
+                ],
+                [
+                    "Overridden properties",
+                    "",
+                    "Overridden properties",
+                    "\/D:\/repos\/rr\/source\/manual\/game-studio\/archetypes.md",
+                    {
+                        "id": "tu21"
+                    }
+                ],
+                [
+                    "The <g1>Property Grid<\/g1> shows which properties of the derived asset differ from the archetype.",
+                    "",
+                    "The <g1>Property Grid<\/g1> shows which properties of the derived asset differ from the archetype.",
+                    "\/D:\/repos\/rr\/source\/manual\/game-studio\/archetypes.md",
+                    {
+                        "id": "tu22"
+                    }
+                ],
+                [
+                    "<g2>Overridden<\/g2> and <g3>unique<\/g3> properties are <g4>white<\/g4>, and <g5>inherited<\/g5> (identical) properties are <g6>gray<\/g6>.",
+                    "",
+                    " <g2>Overridden<\/g2> and <g3>unique<\/g3> properties are <g4>white<\/g4>, and <g5>inherited<\/g5> (identical) properties are <g6>gray<\/g6>.",
+                    "\/D:\/repos\/rr\/source\/manual\/game-studio\/archetypes.md",
+                    {
+                        "id": "tu22"
+                    }
+                ],
+                [
+                    "In this screenshot, the <g1>Diffuse Map<\/g1> property is overridden.",
+                    "",
+                    "In this screenshot, the <g1>Diffuse Map<\/g1> property is overridden.",
+                    "\/D:\/repos\/rr\/source\/manual\/game-studio\/archetypes.md",
+                    {
+                        "id": "tu23"
+                    }
+                ],
+                [
+                    "The other properties are inherited:",
+                    "",
+                    " The other properties are inherited:",
+                    "\/D:\/repos\/rr\/source\/manual\/game-studio\/archetypes.md",
+                    {
+                        "id": "tu23"
+                    }
+                ],
+                [
+                    "<x1\/>Overridden properties are white<x2\/>",
+                    "",
+                    "<x1\/>Overridden properties are white<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/game-studio\/archetypes.md",
+                    {
+                        "id": "tu24"
+                    }
+                ],
+                [
+                    "Reset a property to archetype value",
+                    "",
+                    "Reset a property to archetype value",
+                    "\/D:\/repos\/rr\/source\/manual\/game-studio\/archetypes.md",
+                    {
+                        "id": "tu25"
+                    }
+                ],
+                [
+                    "You can reset overridden or unique properties of a derived asset to the values in the archetype.",
+                    "",
+                    "You can reset overridden or unique properties of a derived asset to the values in the archetype.",
+                    "\/D:\/repos\/rr\/source\/manual\/game-studio\/archetypes.md",
+                    {
+                        "id": "tu26"
+                    }
+                ],
+                [
+                    "To do this, right-click the overridden property and select <g1>Reset to base value<\/g1>.",
+                    "",
+                    " To do this, right-click the overridden property and select <g1>Reset to base value<\/g1>.",
+                    "\/D:\/repos\/rr\/source\/manual\/game-studio\/archetypes.md",
+                    {
+                        "id": "tu26"
+                    }
+                ],
+                [
+                    "<x1\/>Reset to base value<x2\/>",
+                    "",
+                    "<x1\/>Reset to base value<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/game-studio\/archetypes.md",
+                    {
+                        "id": "tu27"
+                    }
+                ],
+                [
+                    "Clear an archetype",
+                    "",
+                    "Clear an archetype",
+                    "\/D:\/repos\/rr\/source\/manual\/game-studio\/archetypes.md",
+                    {
+                        "id": "tu28"
+                    }
+                ],
+                [
+                    "You can remove the link between the archetype and the derived asset.",
+                    "",
+                    "You can remove the link between the archetype and the derived asset.",
+                    "\/D:\/repos\/rr\/source\/manual\/game-studio\/archetypes.md",
+                    {
+                        "id": "tu29"
+                    }
+                ],
+                [
+                    "This means the derived asset no longer inherits changes to the archetype; it becomes a completely independent.",
+                    "",
+                    " This means the derived asset no longer inherits changes to the archetype; it becomes a completely independent.",
+                    "\/D:\/repos\/rr\/source\/manual\/game-studio\/archetypes.md",
+                    {
+                        "id": "tu29"
+                    }
+                ],
+                [
+                    "To do this, in the <g1>Asset View<\/g1>, right-click the derived asset and select <g2>Clear archetype<\/g2>.",
+                    "",
+                    "To do this, in the <g1>Asset View<\/g1>, right-click the derived asset and select <g2>Clear archetype<\/g2>.",
+                    "\/D:\/repos\/rr\/source\/manual\/game-studio\/archetypes.md",
+                    {
+                        "id": "tu30"
+                    }
+                ],
+                [
+                    "<x1\/>Clear archetype<x2\/>",
+                    "",
+                    "<x1\/>Clear archetype<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/game-studio\/archetypes.md",
+                    {
+                        "id": "tu31"
+                    }
+                ],
+                [
+                    "See also",
+                    "",
+                    "See also",
+                    "\/D:\/repos\/rr\/source\/manual\/game-studio\/archetypes.md",
+                    {
+                        "id": "tu32"
+                    }
+                ],
+                [
+                    "Assets",
+                    "",
+                    "<g1>Assets<\/g1>",
+                    "\/D:\/repos\/rr\/source\/manual\/game-studio\/archetypes.md",
+                    {
+                        "id": "tu33"
+                    }
+                ],
+                [
+                    "Prefabs",
+                    "",
+                    "<g1>Prefabs<\/g1>",
+                    "\/D:\/repos\/rr\/source\/manual\/game-studio\/archetypes.md",
+                    {
+                        "id": "tu34"
+                    }
+                ]
+            ]
+        }
+    ],
+    "seg_enabled": false
+}

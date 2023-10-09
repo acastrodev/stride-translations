@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" xmlns:okp="okapi-framework:xliff-extensions" its:version="2.0" version="1.2">
+<file datatype="x-text/x-markdown" okp:inputEncoding="UTF-8" original="/D:/repos/rr/source/diagnostics/strd007.md" source-language="en" target-language="pt">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en">Diagnostics Warning STRD007</source>
+<target xml:lang="pt">Diagnostics Warning STRD007</target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en">It's invalid to DataMember a private property. Also its invalid to DataMember a property which has DataMemberIgnore.</source>
+<target xml:lang="pt">It's invalid to DataMember a private property. Also its invalid to DataMember a property which has DataMemberIgnore.</target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">Example</source>
+<target xml:lang="pt">Example</target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">The following example generates STRD001:</source>
+<target xml:lang="pt">The following example generates STRD001:</target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">// STRD001.cs
+// compile with: /W:2
+public class Program
+{
+    public static void Main()
+    {
+        goto lab1;
+        {
+            // The following statements cannot be reached:
+            int i = 9;   // STRD001
+            i++;
+        }
+    lab1:
+        {
+        }
+    }
+}
+
+</source>
+<target xml:lang="pt">// STRD001.cs
+// compile with: /W:2
+public class Program
+{
+    public static void Main()
+    {
+        goto lab1;
+        {
+            // The following statements cannot be reached:
+            int i = 9;   // STRD001
+            i++;
+        }
+    lab1:
+        {
+        }
+    }
+}
+
+</target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en">Another common example where this error is generated is as follows:</source>
+<target xml:lang="pt">Another common example where this error is generated is as follows:</target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en">public static class Class1
+{
+    public static string Method1()
+    {
+        string x = "a";
+        switch (x)
+        {
+            case "a":
+                return "a";
+                break;          // CS0162
+        }
+        return "";
+    }
+}
+</source>
+<target xml:lang="pt">public static class Class1
+{
+    public static string Method1()
+    {
+        string x = "a";
+        switch (x)
+        {
+            case "a":
+                return "a";
+                break;          // CS0162
+        }
+        return "";
+    }
+}
+</target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en">The <g id="1">break</g> statement cannot be reached because it occurs after the <g id="2">return</g> statement. The <g id="3">return</g> statement ends the enclosing <g id="4">case</g> branch.</source>
+<target xml:lang="pt">The <g id="1">break</g> statement cannot be reached because it occurs after the <g id="2">return</g> statement. The <g id="3">return</g> statement ends the enclosing <g id="4">case</g> branch.</target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en">See also</source>
+<target xml:lang="pt">See also</target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en"><g id="1">C# Compiler Options</g></source>
+<target xml:lang="pt"><g id="1">C# Compiler Options</g></target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en"><g id="1">C# Compiler Errors</g></source>
+<target xml:lang="pt"><g id="1">C# Compiler Errors</g></target>
+</trans-unit>
+</body>
+</file>
+</xliff>

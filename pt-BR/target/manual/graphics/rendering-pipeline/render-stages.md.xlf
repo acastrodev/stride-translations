@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" xmlns:okp="okapi-framework:xliff-extensions" its:version="2.0" version="1.2">
+<file datatype="x-text/x-markdown" okp:inputEncoding="UTF-8" original="/D:/repos/rr/source/manual/graphics/rendering-pipeline/render-stages.md" source-language="en" target-language="pt">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en">Render stages</source>
+<target xml:lang="pt">Render stages</target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en"><g id="1">Render stages</g> define how given objects are rendered (usually with their associated <g id="2">effect/shader</g>). They also let you control advanced properties such as sorting and filtering objects.</source>
+<target xml:lang="pt"><g id="1">Render stages</g> define how given objects are rendered (usually with their associated <g id="2">effect/shader</g>). They also let you control advanced properties such as sorting and filtering objects.</target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">Objects can subscribe to multiple render stages. For example, a mesh typically subscribes to both the <g id="1">Opaque</g> and <g id="2">ShadowCaster</g> stages, or the <g id="3">Transparent</g> stage.</source>
+<target xml:lang="pt">Objects can subscribe to multiple render stages. For example, a mesh typically subscribes to both the <g id="1">Opaque</g> and <g id="2">ShadowCaster</g> stages, or the <g id="3">Transparent</g> stage.</target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>!Note<x id="2"/>
+Render stages don't define the rendering order. The rendering order is controlled by the <g id="3">graphics compositor</g>.</source>
+<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
+Render stages don't define the rendering order. The rendering order is controlled by the <g id="3">graphics compositor</g>.</target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">Effect slots</source>
+<target xml:lang="pt">Effect slots</target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en"><g id="1">Effect slots</g> determine which <g id="2">effect/shader</g> a render stage uses. You choose the effect slot with @'Stride.Rendering.RenderStage.EffectSlotName'.</source>
+<target xml:lang="pt"><g id="1">Effect slots</g> determine which <g id="2">effect/shader</g> a render stage uses. You choose the effect slot with @'Stride.Rendering.RenderStage.EffectSlotName'.</target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en">If multiple render stages exclusively render different objects, the stages can share the same effect slot. For example, as the opaque stage only renders opaque objects and the transparent stage only renders transparent objects, both stages can use the main effect slot.</source>
+<target xml:lang="pt">If multiple render stages exclusively render different objects, the stages can share the same effect slot. For example, as the opaque stage only renders opaque objects and the transparent stage only renders transparent objects, both stages can use the main effect slot.</target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en">If they render any of the same objects, they can't share effect slots. This is why, for example, we typically render opaque meshes with the main effect slot, then render opaque meshes again with the shadow caster effect slot to create shadows.</source>
+<target xml:lang="pt">If they render any of the same objects, they can't share effect slots. This is why, for example, we typically render opaque meshes with the main effect slot, then render opaque meshes again with the shadow caster effect slot to create shadows.</target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en">A typical setup of render stages:</source>
+<target xml:lang="pt">A typical setup of render stages:</target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en">Render stage</source>
+<target xml:lang="pt">Render stage</target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en">Effect slot</source>
+<target xml:lang="pt">Effect slot</target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en">Opaque</source>
+<target xml:lang="pt">Opaque</target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en">Main</source>
+<target xml:lang="pt">Main</target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en">Transparent</source>
+<target xml:lang="pt">Transparent</target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en">Main</source>
+<target xml:lang="pt">Main</target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en">UI</source>
+<target xml:lang="pt">UI</target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en">Main</source>
+<target xml:lang="pt">Main</target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en">Shadow caster</source>
+<target xml:lang="pt">Shadow caster</target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en">Shadow caster</source>
+<target xml:lang="pt">Shadow caster</target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en">Sort objects in a render stage</source>
+<target xml:lang="pt">Sort objects in a render stage</target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en">@'Stride.Rendering.RenderStage.SortMode' defines how Stride sorts objects in that render stage. Stride comes with several @'Stride.Rendering.SortMode' implementations, such as:</source>
+<target xml:lang="pt">@'Stride.Rendering.RenderStage.SortMode' defines how Stride sorts objects in that render stage. Stride comes with several @'Stride.Rendering.SortMode' implementations, such as:</target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en">@'Stride.Rendering.FrontToBackSortMode', which renders objects from front to back with limited precision, and tries to avoid state changes in the same depth range of objects (useful for opaque objects and shadows)</source>
+<target xml:lang="pt">@'Stride.Rendering.FrontToBackSortMode', which renders objects from front to back with limited precision, and tries to avoid state changes in the same depth range of objects (useful for opaque objects and shadows)</target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en">@'Stride.Rendering.BackToFrontSortMode', which renders objects strictly from back to front (useful for transparent objects)</source>
+<target xml:lang="pt">@'Stride.Rendering.BackToFrontSortMode', which renders objects strictly from back to front (useful for transparent objects)</target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en">@'Stride.Rendering.StateChangeSortMode', which tries to reduce state changes</source>
+<target xml:lang="pt">@'Stride.Rendering.StateChangeSortMode', which tries to reduce state changes</target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en">Of course, you're free to implement your own, too.</source>
+<target xml:lang="pt">Of course, you're free to implement your own, too.</target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en">Filter objects in a render stage</source>
+<target xml:lang="pt">Filter objects in a render stage</target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en">To create your own filter for objects in a render stage, inherit from @'Stride.Rendering.RenderStageFilter'.</source>
+<target xml:lang="pt">To create your own filter for objects in a render stage, inherit from @'Stride.Rendering.RenderStageFilter'.</target>
+</trans-unit>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en">Render stage selectors</source>
+<target xml:lang="pt">Render stage selectors</target>
+</trans-unit>
+<trans-unit id="tu29" xml:space="preserve">
+<source xml:lang="en"><g id="1">Render stage selectors</g> define which objects in your scene are sent to which render stage, and choose which <g id="2">effect</g> to use when rendering a given object.</source>
+<target xml:lang="pt"><g id="1">Render stage selectors</g> define which objects in your scene are sent to which render stage, and choose which <g id="2">effect</g> to use when rendering a given object.</target>
+</trans-unit>
+<trans-unit id="tu30" xml:space="preserve">
+<source xml:lang="en">For example, this is the typical setup for meshes:</source>
+<target xml:lang="pt">For example, this is the typical setup for meshes:</target>
+</trans-unit>
+<trans-unit id="tu31" xml:space="preserve">
+<source xml:lang="en">@'Stride.Rendering.MeshTransparentRenderStageSelector' chooses either the <g id="1">Main</g> or <g id="2">Transparent</g> render stage, depending on the material properties. The default effect is <g id="3">StrideForwardShadingEffect</g> defined by Stride (you can create your own if you want).</source>
+<target xml:lang="pt">@'Stride.Rendering.MeshTransparentRenderStageSelector' chooses either the <g id="1">Main</g> or <g id="2">Transparent</g> render stage, depending on the material properties. The default effect is <g id="3">StrideForwardShadingEffect</g> defined by Stride (you can create your own if you want).</target>
+</trans-unit>
+<trans-unit id="tu32" xml:space="preserve">
+<source xml:lang="en">@'Stride.Rendering.Shadows.ShadowMapRenderStageSelector' selects opaque meshes that cast shadows and adds them to the <g id="1">ShadowMapCaster</g> render stage. The default effect is <g id="2">StrideForwardShadingEffect.ShadowMapCaster</g>, defined by Stride.</source>
+<target xml:lang="pt">@'Stride.Rendering.Shadows.ShadowMapRenderStageSelector' selects opaque meshes that cast shadows and adds them to the <g id="1">ShadowMapCaster</g> render stage. The default effect is <g id="2">StrideForwardShadingEffect.ShadowMapCaster</g>, defined by Stride.</target>
+</trans-unit>
+<trans-unit id="tu33" xml:space="preserve">
+<source xml:lang="en">Either can filter by <g id="1">render group</g>.</source>
+<target xml:lang="pt">Either can filter by <g id="1">render group</g>.</target>
+</trans-unit>
+<trans-unit id="tu34" xml:space="preserve">
+<source xml:lang="en">You can customize everything, so you can add other predefined render stage selectors (eg to add UI to a later full-screen pass), or create your own selector specific to your game.</source>
+<target xml:lang="pt">You can customize everything, so you can add other predefined render stage selectors (eg to add UI to a later full-screen pass), or create your own selector specific to your game.</target>
+</trans-unit>
+<trans-unit id="tu35" xml:space="preserve">
+<source xml:lang="en">See also</source>
+<target xml:lang="pt">See also</target>
+</trans-unit>
+<trans-unit id="tu36" xml:space="preserve">
+<source xml:lang="en"><g id="1">Rendering pipeline</g></source>
+<target xml:lang="pt"><g id="1">Rendering pipeline</g></target>
+</trans-unit>
+<trans-unit id="tu37" xml:space="preserve">
+<source xml:lang="en"><g id="1">Render features</g></source>
+<target xml:lang="pt"><g id="1">Render features</g></target>
+</trans-unit>
+<trans-unit id="tu38" xml:space="preserve">
+<source xml:lang="en"><g id="1">Effects and shaders</g></source>
+<target xml:lang="pt"><g id="1">Effects and shaders</g></target>
+</trans-unit>
+<trans-unit id="tu39" xml:space="preserve">
+<source xml:lang="en"><g id="1">Graphics compositor</g></source>
+<target xml:lang="pt"><g id="1">Graphics compositor</g></target>
+</trans-unit>
+</body>
+</file>
+</xliff>

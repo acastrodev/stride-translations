@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" xmlns:okp="okapi-framework:xliff-extensions" its:version="2.0" version="1.2">
+<file datatype="x-text/x-markdown" okp:inputEncoding="UTF-8" original="/D:/repos/rr/source/manual/input/pointers.md" source-language="en" target-language="pt">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en">Pointers</source>
+<target xml:lang="pt">Pointers</target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Beginner<x id="2"/>
+<x id="3"/>Programmer<x id="4"/></source>
+<target xml:lang="pt"><x id="1"/>Beginner<x id="2"/>
+<x id="3"/>Programmer<x id="4"/></target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en"><g id="1">Pointers</g> are points on the device screen corresponding to <g id="2">finger touches</g>. Devices with multi-touch functionality support multiple simultaneous pointers.</source>
+<target xml:lang="pt"><g id="1">Pointers</g> are points on the device screen corresponding to <g id="2">finger touches</g>. Devices with multi-touch functionality support multiple simultaneous pointers.</target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">On desktop platforms, the left mouse button can be used to simulate pointers. For more information about mouse input, see <g id="1">Mouse</g>.</source>
+<target xml:lang="pt">On desktop platforms, the left mouse button can be used to simulate pointers. For more information about mouse input, see <g id="1">Mouse</g>.</target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">How Stride processes pointer input</source>
+<target xml:lang="pt">How Stride processes pointer input</target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en">The user touches the screen or clicks the left mouse button.</source>
+<target xml:lang="pt">The user touches the screen or clicks the left mouse button.</target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en">Stride creates a pointer.</source>
+<target xml:lang="pt">Stride creates a pointer.</target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en">Stride assigns <g id="1">pointer ID</g> to that pointer corresponding to a given finger.</source>
+<target xml:lang="pt">Stride assigns <g id="1">pointer ID</g> to that pointer corresponding to a given finger.</target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en">Every time the pointer is modified, Stride creates a new <g id="1">pointer event</g> with that pointer.</source>
+<target xml:lang="pt">Every time the pointer is modified, Stride creates a new <g id="1">pointer event</g> with that pointer.</target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en">For each new finger, Stride creates a new pointer with a new pointer ID.</source>
+<target xml:lang="pt">For each new finger, Stride creates a new pointer with a new pointer ID.</target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>!Note<x id="2"/>
+Each pointer event contains information about only one pointer. If several pointers are modified simultaneously in the same update, Stride creates a separate event for each pointer.</source>
+<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
+Each pointer event contains information about only one pointer. If several pointers are modified simultaneously in the same update, Stride creates a separate event for each pointer.</target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>!Warning<x id="2"/>
+Each OS handles pointer modifications differently. This means the same finger gesture can generate slightly different pointer event sequences across different platforms. For example, Android doesn't create a new pointer event when a finger touches the screen but doesn't move. For more information, check your OS documentation.</source>
+<target xml:lang="pt"><x id="1"/>!Warning<x id="2"/>
+Each OS handles pointer modifications differently. This means the same finger gesture can generate slightly different pointer event sequences across different platforms. For example, Android doesn't create a new pointer event when a finger touches the screen but doesn't move. For more information, check your OS documentation.</target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en">You can enable gesture recognition to detect gestures such as long presses and taps. For more information, see <g id="1">Gestures</g>.</source>
+<target xml:lang="pt">You can enable gesture recognition to detect gestures such as long presses and taps. For more information, see <g id="1">Gestures</g>.</target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en">The PointerEvent class</source>
+<target xml:lang="pt">The PointerEvent class</target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en"><g id="1">PointerEvent</g> reports pointer events. It contains the current <g id="2">pointer status</g> and time information. It is thrown every time the <g id="3">pointer</g> is modified.</source>
+<target xml:lang="pt"><g id="1">PointerEvent</g> reports pointer events. It contains the current <g id="2">pointer status</g> and time information. It is thrown every time the <g id="3">pointer</g> is modified.</target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en">You can access the list of <g id="1">pointer events</g> since the last update using <g id="2">InputManager.PointerEvents</g>. Stride lists pointer events in chronological order. The list is cleared at every update, so you don't need to clear it manually.</source>
+<target xml:lang="pt">You can access the list of <g id="1">pointer events</g> since the last update using <g id="2">InputManager.PointerEvents</g>. Stride lists pointer events in chronological order. The list is cleared at every update, so you don't need to clear it manually.</target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en">Get pointer information</source>
+<target xml:lang="pt">Get pointer information</target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en">You can use the following properties to get information about the pointer that triggered the event:</source>
+<target xml:lang="pt">You can use the following properties to get information about the pointer that triggered the event:</target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en">Property</source>
+<target xml:lang="pt">Property</target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en">Description</source>
+<target xml:lang="pt">Description</target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en"><g id="1">PointerEvent.PointerId</g></source>
+<target xml:lang="pt"><g id="1">PointerEvent.PointerId</g></target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en">Indicates the ID of the pointer which triggered the event.</source>
+<target xml:lang="pt">Indicates the ID of the pointer which triggered the event.</target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>!Warning<x id="2"/>
+The ID of a pointer is valid only during a single <g id="3">Pressed-&gt;Moved-&gt;Released</g> sequence of pointer events.
+A finger can have different IDs each time it touches the screen (even if this happens very quickly).</source>
+<target xml:lang="pt"><x id="1"/>!Warning<x id="2"/>
+The ID of a pointer is valid only during a single <g id="3">Pressed-&gt;Moved-&gt;Released</g> sequence of pointer events.
+A finger can have different IDs each time it touches the screen (even if this happens very quickly).</target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>!Warning<x id="2"/>
+Each OS has its own way of assigning IDs to pointers.
+There's no relation between the pointer ID values and corresponding fingers.</source>
+<target xml:lang="pt"><x id="1"/>!Warning<x id="2"/>
+Each OS has its own way of assigning IDs to pointers.
+There's no relation between the pointer ID values and corresponding fingers.</target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en">To check if a pointer event was triggered by a mouse or touch, use:</source>
+<target xml:lang="pt">To check if a pointer event was triggered by a mouse or touch, use:</target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en">bool isTriggeredByMouse = event.Pointer is IMouseDevice
+</source>
+<target xml:lang="pt">bool isTriggeredByMouse = event.Pointer is IMouseDevice
+</target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en">Get the pointer position</source>
+<target xml:lang="pt">Get the pointer position</target>
+</trans-unit>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en">You can get the pointer position in normalized or absolute coordinates.</source>
+<target xml:lang="pt">You can get the pointer position in normalized or absolute coordinates.</target>
+</trans-unit>
+<trans-unit id="tu29" xml:space="preserve">
+<source xml:lang="en">Normalized coordinates</source>
+<target xml:lang="pt">Normalized coordinates</target>
+</trans-unit>
+<trans-unit id="tu30" xml:space="preserve">
+<source xml:lang="en">@'Stride.Input.PointerEvent.Position' returns the pointer position in <g id="1">normalized</g> X and Y coordinates instead of actual screen sizes in pixels. This means the pointer position adjusts to any resolution and you don't have to write separate code for different resolutions.</source>
+<target xml:lang="pt">@'Stride.Input.PointerEvent.Position' returns the pointer position in <g id="1">normalized</g> X and Y coordinates instead of actual screen sizes in pixels. This means the pointer position adjusts to any resolution and you don't have to write separate code for different resolutions.</target>
+</trans-unit>
+<trans-unit id="tu31" xml:space="preserve">
+<source xml:lang="en">(0,0): the pointer is in the top-left corner of the screen</source>
+<target xml:lang="pt">(0,0): the pointer is in the top-left corner of the screen</target>
+</trans-unit>
+<trans-unit id="tu32" xml:space="preserve">
+<source xml:lang="en">(1,1): the pointer is in the bottom-right corner of the screen</source>
+<target xml:lang="pt">(1,1): the pointer is in the bottom-right corner of the screen</target>
+</trans-unit>
+<trans-unit id="tu33" xml:space="preserve">
+<source xml:lang="en">Absolute coordinates</source>
+<target xml:lang="pt">Absolute coordinates</target>
+</trans-unit>
+<trans-unit id="tu34" xml:space="preserve">
+<source xml:lang="en"><g id="1">PointerEvent.AbsolutePosition</g> returns the pointer position in absolute X and Y coordinates (the actual screen size in pixels). For example, if the pointer is in the top-left corner of the screen, the values are (0,0). If the pointer is in the bottom-right corner, the values depends on the screen resolution (eg 1280, 720).</source>
+<target xml:lang="pt"><g id="1">PointerEvent.AbsolutePosition</g> returns the pointer position in absolute X and Y coordinates (the actual screen size in pixels). For example, if the pointer is in the top-left corner of the screen, the values are (0,0). If the pointer is in the bottom-right corner, the values depends on the screen resolution (eg 1280, 720).</target>
+</trans-unit>
+<trans-unit id="tu35" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>!Tip<x id="2"/>
+To get the actual size of the screen, access <g id="3">IPointerDevice.SurfaceSize</g>. For example:</source>
+<target xml:lang="pt"><x id="1"/>!Tip<x id="2"/>
+To get the actual size of the screen, access <g id="3">IPointerDevice.SurfaceSize</g>. For example:</target>
+</trans-unit>
+<trans-unit id="tu36" xml:space="preserve">
+<source xml:lang="en">var surfaceSize = Input.Pointer.SurfaceSize;
+</source>
+<target xml:lang="pt">var surfaceSize = Input.Pointer.SurfaceSize;
+</target>
+</trans-unit>
+<trans-unit id="tu37" xml:space="preserve">
+<source xml:lang="en">Get pointer events</source>
+<target xml:lang="pt">Get pointer events</target>
+</trans-unit>
+<trans-unit id="tu38" xml:space="preserve">
+<source xml:lang="en">Use the <g id="1">PointerEvent.EventType</g> to check the pointer events.</source>
+<target xml:lang="pt">Use the <g id="1">PointerEvent.EventType</g> to check the pointer events.</target>
+</trans-unit>
+<trans-unit id="tu39" xml:space="preserve">
+<source xml:lang="en">There are five types of pointer event:</source>
+<target xml:lang="pt">There are five types of pointer event:</target>
+</trans-unit>
+<trans-unit id="tu40" xml:space="preserve">
+<source xml:lang="en"><g id="1">Pressed</g>: The finger touched the screen.</source>
+<target xml:lang="pt"><g id="1">Pressed</g>: The finger touched the screen.</target>
+</trans-unit>
+<trans-unit id="tu41" xml:space="preserve">
+<source xml:lang="en"><g id="1">Moved</g>: The finger moved along the screen.</source>
+<target xml:lang="pt"><g id="1">Moved</g>: The finger moved along the screen.</target>
+</trans-unit>
+<trans-unit id="tu42" xml:space="preserve">
+<source xml:lang="en"><g id="1">Released</g>: The finger left the screen.</source>
+<target xml:lang="pt"><g id="1">Released</g>: The finger left the screen.</target>
+</trans-unit>
+<trans-unit id="tu43" xml:space="preserve">
+<source xml:lang="en"><g id="1">Canceled</g>: The pointer sequence was canceled. This can happen when the application is interrupted; for example, a phone app might be interrupted by an incoming phone call.</source>
+<target xml:lang="pt"><g id="1">Canceled</g>: The pointer sequence was canceled. This can happen when the application is interrupted; for example, a phone app might be interrupted by an incoming phone call.</target>
+</trans-unit>
+<trans-unit id="tu44" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>!Note<x id="2"/>
+A sequence of pointer events for one pointer always starts with a <g id="3">Pressed</g> event. This might be followed by one or more <g id="4">Moved</g> events, and always ends with a <g id="5">Released</g> or <g id="6">Canceled</g> event.</source>
+<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
+A sequence of pointer events for one pointer always starts with a <g id="3">Pressed</g> event. This might be followed by one or more <g id="4">Moved</g> events, and always ends with a <g id="5">Released</g> or <g id="6">Canceled</g> event.</target>
+</trans-unit>
+<trans-unit id="tu45" xml:space="preserve">
+<source xml:lang="en">Get delta values</source>
+<target xml:lang="pt">Get delta values</target>
+</trans-unit>
+<trans-unit id="tu46" xml:space="preserve">
+<source xml:lang="en"><g id="1">PointerEvent.DeltaTime</g> gets the time elapsed from the previous @'Stride.Input.PointerEvent'.</source>
+<target xml:lang="pt"><g id="1">PointerEvent.DeltaTime</g> gets the time elapsed from the previous @'Stride.Input.PointerEvent'.</target>
+</trans-unit>
+<trans-unit id="tu47" xml:space="preserve">
+<source xml:lang="en">You can get the delta position in normalized or absolute coordinates.</source>
+<target xml:lang="pt">You can get the delta position in normalized or absolute coordinates.</target>
+</trans-unit>
+<trans-unit id="tu48" xml:space="preserve">
+<source xml:lang="en">Normalized delta values</source>
+<target xml:lang="pt">Normalized delta values</target>
+</trans-unit>
+<trans-unit id="tu49" xml:space="preserve">
+<source xml:lang="en"><g id="1">PointerEvent.DeltaPosition</g> gets the change in position since the previous @'Stride.Input.PointerEvent' in <g id="2">normalized</g> X,Y coordinates.</source>
+<target xml:lang="pt"><g id="1">PointerEvent.DeltaPosition</g> gets the change in position since the previous @'Stride.Input.PointerEvent' in <g id="2">normalized</g> X,Y coordinates.</target>
+</trans-unit>
+<trans-unit id="tu50" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>!Note<x id="2"/>
+Delta values are always nulls at the beginning of the sequence of pointer events (ie when the <g id="3">pointer state</g> is <g id="4">down</g>).</source>
+<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
+Delta values are always nulls at the beginning of the sequence of pointer events (ie when the <g id="3">pointer state</g> is <g id="4">down</g>).</target>
+</trans-unit>
+<trans-unit id="tu51" xml:space="preserve">
+<source xml:lang="en">Absolute delta values</source>
+<target xml:lang="pt">Absolute delta values</target>
+</trans-unit>
+<trans-unit id="tu52" xml:space="preserve">
+<source xml:lang="en"><g id="1">PointerEvent.DeltaPosition</g> gets the change in position since the previous @'Stride.Input.PointerEvent' in <g id="2">absolute</g> (X,Y) coordinates.</source>
+<target xml:lang="pt"><g id="1">PointerEvent.DeltaPosition</g> gets the change in position since the previous @'Stride.Input.PointerEvent' in <g id="2">absolute</g> (X,Y) coordinates.</target>
+</trans-unit>
+<trans-unit id="tu53" xml:space="preserve">
+<source xml:lang="en">Example code</source>
+<target xml:lang="pt">Example code</target>
+</trans-unit>
+<trans-unit id="tu54" xml:space="preserve">
+<source xml:lang="en">This script tracks the pointer movement and prints its positions:</source>
+<target xml:lang="pt">This script tracks the pointer movement and prints its positions:</target>
+</trans-unit>
+<trans-unit id="tu55" xml:space="preserve">
+<source xml:lang="en">using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using Stride.Core.Mathematics;
+using Stride.Engine;
+
+namespace Stride.Input.Tests
+{
+    public class PointerTestScript : AsyncScript
+    {
+        public override async Task Execute()
+        {
+            var pointerPositions = new Dictionary&lt;int, Vector2&gt;();
+            while (true)
+            {
+                await Script.NextFrame();
+                foreach (var pointerEvent in Input.PointerEvents)
+                {
+                    switch (pointerEvent.EventType)
+                    {
+                    case PointerEventType.Pressed:
+                        pointerPositions[pointerEvent.PointerId] = pointerEvent.Position;
+                        break;
+                    case PointerEventType.Moved:
+                        pointerPositions[pointerEvent.PointerId] = pointerEvent.Position;
+                        break;
+                    case PointerEventType.Released:
+                    case PointerEventType.Canceled:
+                        pointerPositions.Remove(pointerEvent.PointerId);
+                        break;
+                    default:
+                        throw new ArgumentOutOfRangeException();
+                    }
+                }
+                var positionsStr = pointerPositions.Values.Aggregate("", (current, pointer) =&gt; current + (pointer.ToString() + ", "));
+                Log.Info("There are currently {0} pointers on the screen located at {1}", pointerPositions.Count, positionsStr);
+            }
+        }
+    }
+}
+</source>
+<target xml:lang="pt">using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using Stride.Core.Mathematics;
+using Stride.Engine;
+
+namespace Stride.Input.Tests
+{
+    public class PointerTestScript : AsyncScript
+    {
+        public override async Task Execute()
+        {
+            var pointerPositions = new Dictionary&lt;int, Vector2&gt;();
+            while (true)
+            {
+                await Script.NextFrame();
+                foreach (var pointerEvent in Input.PointerEvents)
+                {
+                    switch (pointerEvent.EventType)
+                    {
+                    case PointerEventType.Pressed:
+                        pointerPositions[pointerEvent.PointerId] = pointerEvent.Position;
+                        break;
+                    case PointerEventType.Moved:
+                        pointerPositions[pointerEvent.PointerId] = pointerEvent.Position;
+                        break;
+                    case PointerEventType.Released:
+                    case PointerEventType.Canceled:
+                        pointerPositions.Remove(pointerEvent.PointerId);
+                        break;
+                    default:
+                        throw new ArgumentOutOfRangeException();
+                    }
+                }
+                var positionsStr = pointerPositions.Values.Aggregate("", (current, pointer) =&gt; current + (pointer.ToString() + ", "));
+                Log.Info("There are currently {0} pointers on the screen located at {1}", pointerPositions.Count, positionsStr);
+            }
+        }
+    }
+}
+</target>
+</trans-unit>
+<trans-unit id="tu56" xml:space="preserve">
+<source xml:lang="en">See also</source>
+<target xml:lang="pt">See also</target>
+</trans-unit>
+<trans-unit id="tu57" xml:space="preserve">
+<source xml:lang="en"><g id="1">Gestures</g></source>
+<target xml:lang="pt"><g id="1">Gestures</g></target>
+</trans-unit>
+<trans-unit id="tu58" xml:space="preserve">
+<source xml:lang="en"><g id="1">Mouse</g></source>
+<target xml:lang="pt"><g id="1">Mouse</g></target>
+</trans-unit>
+<trans-unit id="tu59" xml:space="preserve">
+<source xml:lang="en"><g id="1">Virtual buttons</g></source>
+<target xml:lang="pt"><g id="1">Virtual buttons</g></target>
+</trans-unit>
+<trans-unit id="tu60" xml:space="preserve">
+<source xml:lang="en"><g id="1">Input overview</g></source>
+<target xml:lang="pt"><g id="1">Input overview</g></target>
+</trans-unit>
+</body>
+</file>
+</xliff>

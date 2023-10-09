@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="/D:/repos/rr/source/manual/scripts/index.md" source-language="en" target-language="pt" datatype="x-text/x-markdown" okp:inputEncoding="UTF-8">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en">Scripts</source>
+<target xml:lang="pt">Scripts</target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en"><g id="1">Scripts</g> are units of code that handle game events, respond to user input, and control entities. In short, scripts make games interactive by adding gameplay.</source>
+<target xml:lang="pt"><g id="1">Scripts</g> are units of code that handle game events, respond to user input, and control entities. In short, scripts make games interactive by adding gameplay.</target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">You use scripts by adding them to entities in the scene as components. Stride loads a script when the entity it is added to is loaded in the scene.</source>
+<target xml:lang="pt">You use scripts by adding them to entities in the scene as components. Stride loads a script when the entity it is added to is loaded in the scene.</target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">Stride scripts are written in <g id="1">C#</g>. You can edit scripts in Game Studio or another IDE (such as Visual Studio). Scripts are debugged in Visual Studio.</source>
+<target xml:lang="pt">Stride scripts are written in <g id="1">C#</g>. You can edit scripts in Game Studio or another IDE (such as Visual Studio). Scripts are debugged in Visual Studio.</target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Scripts<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Scripts<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>!NOTE<x id="2"/>
+Explaining C# is out of the scope of this documentation.</source>
+<target xml:lang="pt"><x id="1"/>!NOTE<x id="2"/>
+Explaining C# is out of the scope of this documentation.</target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en">Scripts have access to the main modules of the Stride engine:</source>
+<target xml:lang="pt">Scripts have access to the main modules of the Stride engine:</target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en"><g id="1">Audio</g>: the audio system</source>
+<target xml:lang="pt"><g id="1">Audio</g>: the audio system</target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en"><g id="1">Content</g>: loads and saves content from assets</source>
+<target xml:lang="pt"><g id="1">Content</g>: loads and saves content from assets</target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en"><g id="1">DebugText</g>: prints debug text</source>
+<target xml:lang="pt"><g id="1">DebugText</g>: prints debug text</target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en"><g id="1">EffectSystem</g>: loads and compiles effects and shaders</source>
+<target xml:lang="pt"><g id="1">EffectSystem</g>: loads and compiles effects and shaders</target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en"><g id="1">Game</g>: accesses all information related to your game</source>
+<target xml:lang="pt"><g id="1">Game</g>: accesses all information related to your game</target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en"><g id="1">GraphicsDevice</g>: low-level graphics device to create GPU resources</source>
+<target xml:lang="pt"><g id="1">GraphicsDevice</g>: low-level graphics device to create GPU resources</target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en"><g id="1">Input</g>: keyboard, mouse and gamepad states and events</source>
+<target xml:lang="pt"><g id="1">Input</g>: keyboard, mouse and gamepad states and events</target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en"><g id="1">Log</g>: logs messages and errors from scripts</source>
+<target xml:lang="pt"><g id="1">Log</g>: logs messages and errors from scripts</target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en"><g id="1">SceneSystem</g>: the currently displayed scene</source>
+<target xml:lang="pt"><g id="1">SceneSystem</g>: the currently displayed scene</target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en"><g id="1">Script</g>: accesses the script manager to schedule or wait for the termination of scripts</source>
+<target xml:lang="pt"><g id="1">Script</g>: accesses the script manager to schedule or wait for the termination of scripts</target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en"><g id="1">Services</g>: a registry of services you can use to register your own services</source>
+<target xml:lang="pt"><g id="1">Services</g>: a registry of services you can use to register your own services</target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en"><g id="1">SpriteAnimation</g>: animates sprites</source>
+<target xml:lang="pt"><g id="1">SpriteAnimation</g>: animates sprites</target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en"><g id="1">Streaming</g>: streams content</source>
+<target xml:lang="pt"><g id="1">Streaming</g>: streams content</target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en">You can still use standard C# classes in Stride, but these aren't called scripts and you can't attach them to entities in Game Studio.</source>
+<target xml:lang="pt">You can still use standard C# classes in Stride, but these aren't called scripts and you can't attach them to entities in Game Studio.</target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en">In this section</source>
+<target xml:lang="pt">In this section</target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en"><g id="1">Types of script</g></source>
+<target xml:lang="pt"><g id="1">Types of script</g></target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en"><g id="1">Create a script</g></source>
+<target xml:lang="pt"><g id="1">Create a script</g></target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en"><g id="1">Use a script</g></source>
+<target xml:lang="pt"><g id="1">Use a script</g></target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en"><g id="1">Public properties and fields</g></source>
+<target xml:lang="pt"><g id="1">Public properties and fields</g></target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en"><g id="1">Scheduling and priorities</g></source>
+<target xml:lang="pt"><g id="1">Scheduling and priorities</g></target>
+</trans-unit>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en"><g id="1">Events</g></source>
+<target xml:lang="pt"><g id="1">Events</g></target>
+</trans-unit>
+<trans-unit id="tu29" xml:space="preserve">
+<source xml:lang="en"><g id="1">Debugging</g></source>
+<target xml:lang="pt"><g id="1">Debugging</g></target>
+</trans-unit>
+<trans-unit id="tu30" xml:space="preserve">
+<source xml:lang="en"><g id="1">Preprocessor variables</g></source>
+<target xml:lang="pt"><g id="1">Preprocessor variables</g></target>
+</trans-unit>
+<trans-unit id="tu31" xml:space="preserve">
+<source xml:lang="en"><g id="1">Create a model from code</g></source>
+<target xml:lang="pt"><g id="1">Create a model from code</g></target>
+</trans-unit>
+</body>
+</file>
+</xliff>

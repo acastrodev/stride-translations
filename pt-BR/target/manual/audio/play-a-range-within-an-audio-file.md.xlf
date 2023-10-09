@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" xmlns:okp="okapi-framework:xliff-extensions" its:version="2.0" version="1.2">
+<file datatype="x-text/x-markdown" okp:inputEncoding="UTF-8" original="/D:/repos/rr/source/manual/audio/play-a-range-within-an-audio-file.md" source-language="en" target-language="pt">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en">Play a range within an audio asset</source>
+<target xml:lang="pt">Play a range within an audio asset</target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Intermediate<x id="2"/>
+<x id="3"/>Programmer<x id="4"/></source>
+<target xml:lang="pt"><x id="1"/>Intermediate<x id="2"/>
+<x id="3"/>Programmer<x id="4"/></target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">You can have Stride play only certain portions of an audio asset. This means, for example, that you can create multiple samples from a single audio asset by specifying different ranges in different <g id="1">SoundInstance</g> objects.</source>
+<target xml:lang="pt">You can have Stride play only certain portions of an audio asset. This means, for example, that you can create multiple samples from a single audio asset by specifying different ranges in different <g id="1">SoundInstance</g> objects.</target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Loop points<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Loop points<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">You can use the following properties, methods, and structures:</source>
+<target xml:lang="pt">You can use the following properties, methods, and structures:</target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en">Property, method, or structure</source>
+<target xml:lang="pt">Property, method, or structure</target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en">Function</source>
+<target xml:lang="pt">Function</target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en"><g id="1">TotalLength</g></source>
+<target xml:lang="pt"><g id="1">TotalLength</g></target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en">The total length of the <g id="1">sound</g>.</source>
+<target xml:lang="pt">The total length of the <g id="1">sound</g>.</target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en"><g id="1">SoundInstance.SetRange(PlayRange)</g></source>
+<target xml:lang="pt"><g id="1">SoundInstance.SetRange(PlayRange)</g></target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en">Sets the time range to play within the audio asset.</source>
+<target xml:lang="pt">Sets the time range to play within the audio asset.</target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en"><g id="1">PlayRange</g></source>
+<target xml:lang="pt"><g id="1">PlayRange</g></target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en">Time information, including the range's starting point and length.</source>
+<target xml:lang="pt">Time information, including the range's starting point and length.</target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en"><g id="1">SoundInstance.Position</g></source>
+<target xml:lang="pt"><g id="1">SoundInstance.Position</g></target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en">Gets the current play position as <g id="1">TimeSpan</g>.</source>
+<target xml:lang="pt">Gets the current play position as <g id="1">TimeSpan</g>.</target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en">For example:</source>
+<target xml:lang="pt">For example:</target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en">//Assume sample length is 5 seconds.
+var length = mySound.TotalLength;
+var begin = TimeSpan.FromSeconds(2);
+var duration = TimeSpan.FromSeconds(2);
+mySoundInstance.SetRange(new PlayRange(begin, duration));
+</source>
+<target xml:lang="pt">//Assume sample length is 5 seconds.
+var length = mySound.TotalLength;
+var begin = TimeSpan.FromSeconds(2);
+var duration = TimeSpan.FromSeconds(2);
+mySoundInstance.SetRange(new PlayRange(begin, duration));
+</target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en">See also</source>
+<target xml:lang="pt">See also</target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en"><g id="1">Global audio settings</g></source>
+<target xml:lang="pt"><g id="1">Global audio settings</g></target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en"><g id="1">Spatialized audio</g></source>
+<target xml:lang="pt"><g id="1">Spatialized audio</g></target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en"><g id="1">Non-spatialized audio</g></source>
+<target xml:lang="pt"><g id="1">Non-spatialized audio</g></target>
+</trans-unit>
+</body>
+</file>
+</xliff>

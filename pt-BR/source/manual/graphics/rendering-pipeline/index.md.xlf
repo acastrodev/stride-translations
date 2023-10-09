@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="/D:/repos/rr/source/manual/graphics/rendering-pipeline/index.md" source-language="en" target-language="pt" datatype="x-text/x-markdown" okp:inputEncoding="UTF-8">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en">Rendering pipeline</source>
+<target xml:lang="pt">Rendering pipeline</target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en">Render features</source>
+<target xml:lang="pt">Render features</target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">Rendering logic is divided into @'Stride.Rendering.RenderFeature's. Each render feature processes one type of @'Stride.Rendering.RenderObject' (eg meshes, sprites, particles, etc).</source>
+<target xml:lang="pt">Rendering logic is divided into @'Stride.Rendering.RenderFeature's. Each render feature processes one type of @'Stride.Rendering.RenderObject' (eg meshes, sprites, particles, etc).</target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">Stride executes features in phases: <g id="1">collect</g>, <g id="2">extract</g>, <g id="3">prepare</g> and <g id="4">draw</g>. This means each step of the pipeline can be isolated, parallelized and optimized separately.</source>
+<target xml:lang="pt">Stride executes features in phases: <g id="1">collect</g>, <g id="2">extract</g>, <g id="3">prepare</g> and <g id="4">draw</g>. This means each step of the pipeline can be isolated, parallelized and optimized separately.</target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">For more information, see <g id="1">Render features</g>.</source>
+<target xml:lang="pt">For more information, see <g id="1">Render features</g>.</target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en">Render views</source>
+<target xml:lang="pt">Render views</target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en">You can render scenes from multiple points of view, represented as @'Stride.Rendering.RenderView's – eg player views in a splitscreen game, or separate shadow views for cascades in a <g id="1">shadow map cascade</g>.</source>
+<target xml:lang="pt">You can render scenes from multiple points of view, represented as @'Stride.Rendering.RenderView's – eg player views in a splitscreen game, or separate shadow views for cascades in a <g id="1">shadow map cascade</g>.</target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en">Views are a first-class concept available to all rendering phases, allowing batching across multiple views.</source>
+<target xml:lang="pt">Views are a first-class concept available to all rendering phases, allowing batching across multiple views.</target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en">Render stages</source>
+<target xml:lang="pt">Render stages</target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en">@'Stride.Rendering.RenderStage's select the <g id="1">effect</g> and <g id="2">pipeline state</g> per object, and define the output of a render pass.</source>
+<target xml:lang="pt">@'Stride.Rendering.RenderStage's select the <g id="1">effect</g> and <g id="2">pipeline state</g> per object, and define the output of a render pass.</target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en">For more information, see <g id="1">Render stages</g>.</source>
+<target xml:lang="pt">For more information, see <g id="1">Render stages</g>.</target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en">Visibility</source>
+<target xml:lang="pt">Visibility</target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en">@'Stride.Rendering.RenderObject's are registered with a @'Stride.Rendering.VisibilityGroup'. During the <g id="1">collect</g> phase, the visibility group culls and filters them based on the @'Stride.Rendering.RenderView' and @'Stride.Rendering.RenderStage'.</source>
+<target xml:lang="pt">@'Stride.Rendering.RenderObject's are registered with a @'Stride.Rendering.VisibilityGroup'. During the <g id="1">collect</g> phase, the visibility group culls and filters them based on the @'Stride.Rendering.RenderView' and @'Stride.Rendering.RenderStage'.</target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en">In this section</source>
+<target xml:lang="pt">In this section</target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en"><g id="1">Render features</g></source>
+<target xml:lang="pt"><g id="1">Render features</g></target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en"><g id="1">Render stages</g></source>
+<target xml:lang="pt"><g id="1">Render stages</g></target>
+</trans-unit>
+</body>
+</file>
+</xliff>

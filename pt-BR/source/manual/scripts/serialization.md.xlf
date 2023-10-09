@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="/D:/repos/rr/source/manual/scripts/serialization.md" source-language="en" target-language="pt" datatype="x-text/x-markdown" okp:inputEncoding="UTF-8">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en">Serialization</source>
+<target xml:lang="pt">Serialization</target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Beginner<x id="2"/>
+<x id="3"/>Programmer<x id="4"/></source>
+<target xml:lang="pt"><x id="1"/>Beginner<x id="2"/>
+<x id="3"/>Programmer<x id="4"/></target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">The editor and serialization system uses four attributes to determine what is serialized and visible in the editor.</source>
+<target xml:lang="pt">The editor and serialization system uses four attributes to determine what is serialized and visible in the editor.</target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en"><g id="1">DataContractAttribute</g></source>
+<target xml:lang="pt"><g id="1">DataContractAttribute</g></target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">Adding this attribute to your <g id="1">class</g> or <g id="2">struct</g> notifies the serializer and the editor that it should
+show fields and properties of that type, and serialize the data it contains with the scenes or assets that might include it.</source>
+<target xml:lang="pt">Adding this attribute to your <g id="1">class</g> or <g id="2">struct</g> notifies the serializer and the editor that it should
+show fields and properties of that type, and serialize the data it contains with the scenes or assets that might include it.</target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en">[Stride.Core.DataContract(Inherited = true)]
+public class MySerializedClass
+{
+    public float MyValue;
+}
+
+// 'DataContract' is inherited above. You don't need to specify it for a derived class.
+public class MyDerivedSerializedClass : MySerializedClass
+{
+    public string MyName;
+}
+</source>
+<target xml:lang="pt">[Stride.Core.DataContract(Inherited = true)]
+public class MySerializedClass
+{
+    public float MyValue;
+}
+
+// 'DataContract' is inherited above. You don't need to specify it for a derived class.
+public class MyDerivedSerializedClass : MySerializedClass
+{
+    public string MyName;
+}
+</target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>!Note<x id="2"/>
+Your IDE may wrongfully add <g id="3">System.Runtime.Serialization</g> to your list of <g id="4">using</g> when adding <g id="5">DataContract</g>.
+They are not interchangeable.
+Make sure that your <g id="6">DataContract</g> comes from <g id="7">Stride.Core</g>, specifying the namespace explicitly like shown above if necessary.</source>
+<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
+Your IDE may wrongfully add <g id="3">System.Runtime.Serialization</g> to your list of <g id="4">using</g> when adding <g id="5">DataContract</g>.
+They are not interchangeable.
+Make sure that your <g id="6">DataContract</g> comes from <g id="7">Stride.Core</g>, specifying the namespace explicitly like shown above if necessary.</target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en"><g id="1">DataMemberAttribute</g></source>
+<target xml:lang="pt"><g id="1">DataMemberAttribute</g></target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en">This notifies the editor and serializer that the property or field on this <g id="1">DataContract</g>'ed
+<g id="2">class</g> or <g id="3">struct</g> should be serialized.
+Note that you can omit this attribute for most public fields and properties, they will be included by default,
+see <g id="4">Fields</g> and <g id="5">Properties</g> for specifics.</source>
+<target xml:lang="pt">This notifies the editor and serializer that the property or field on this <g id="1">DataContract</g>'ed
+<g id="2">class</g> or <g id="3">struct</g> should be serialized.
+Note that you can omit this attribute for most public fields and properties, they will be included by default,
+see <g id="4">Fields</g> and <g id="5">Properties</g> for specifics.</target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en">[Stride.Core.DataContract]
+public class MySerializedClass
+{
+    [Stride.Core.DataMember]
+    internal float MyValue;
+}
+</source>
+<target xml:lang="pt">[Stride.Core.DataContract]
+public class MySerializedClass
+{
+    [Stride.Core.DataMember]
+    internal float MyValue;
+}
+</target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en"><g id="1">DataAliasAttribute</g></source>
+<target xml:lang="pt"><g id="1">DataAliasAttribute</g></target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en">Can be used to ensure you do not break previously serialized data whenever you have to change how that member is named in your source.</source>
+<target xml:lang="pt">Can be used to ensure you do not break previously serialized data whenever you have to change how that member is named in your source.</target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en">[Stride.Core.DataAlias("PreviousNameOfProp")]
+public string MyRenamedProp { get; set; }
+</source>
+<target xml:lang="pt">[Stride.Core.DataAlias("PreviousNameOfProp")]
+public string MyRenamedProp { get; set; }
+</target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>!Note<x id="2"/>
+Alias remaps values only while in the editor; this feature is specific to the YAML serialization system. Alias will be ignored during builds and at runtime.</source>
+<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
+Alias remaps values only while in the editor; this feature is specific to the YAML serialization system. Alias will be ignored during builds and at runtime.</target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en"><g id="1">DataMemberIgnoreAttribute</g></source>
+<target xml:lang="pt"><g id="1">DataMemberIgnoreAttribute</g></target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en">This notifies the editor and serializer that the property or field on this <g id="1">DataContract</g>'ed
+<g id="2">class</g> or <g id="3">struct</g> should <g id="4"><g id="5">NOT</g></g> be serialized.</source>
+<target xml:lang="pt">This notifies the editor and serializer that the property or field on this <g id="1">DataContract</g>'ed
+<g id="2">class</g> or <g id="3">struct</g> should <g id="4"><g id="5">NOT</g></g> be serialized.</target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en">[Stride.Core.DataContract]
+public class MySerializedClass
+{
+    [Stride.Core.DataMemberIgnore]
+    public float MyValue { get; set; } // This public property will NOT show up in the editor
+}
+</source>
+<target xml:lang="pt">[Stride.Core.DataContract]
+public class MySerializedClass
+{
+    [Stride.Core.DataMemberIgnore]
+    public float MyValue { get; set; } // This public property will NOT show up in the editor
+}
+</target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en">TODO</source>
+<target xml:lang="pt">TODO</target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en"><g id="1">DataMemberCustomSerializerAttribute</g></source>
+<target xml:lang="pt"><g id="1">DataMemberCustomSerializerAttribute</g></target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en"><g id="1">DataMemberUpdatableAttribute</g></source>
+<target xml:lang="pt"><g id="1">DataMemberUpdatableAttribute</g></target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en">Rule of Thumb</source>
+<target xml:lang="pt">Rule of Thumb</target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en">Serialization and the editor's access and view of your properties mirrors how access modifiers work in C#;</source>
+<target xml:lang="pt">Serialization and the editor's access and view of your properties mirrors how access modifiers work in C#;</target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en">Think of the serializer/editor as being a class external to your codebase, if you want the serializer to
+read and write your properties you have to ensure that the access modifiers for its getter and setter
+allows the serializer to access them.</source>
+<target xml:lang="pt">Think of the serializer/editor as being a class external to your codebase, if you want the serializer to
+read and write your properties you have to ensure that the access modifiers for its getter and setter
+allows the serializer to access them.</target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en">If you're hiding that property behind an <g id="1">internal</g> access modifier, you have to annotate it with
+the attribute to ensure it is visible to the serializer.</source>
+<target xml:lang="pt">If you're hiding that property behind an <g id="1">internal</g> access modifier, you have to annotate it with
+the attribute to ensure it is visible to the serializer.</target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en">Fields</source>
+<target xml:lang="pt">Fields</target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en">// Read and set in the editor by default
+public object obj;
+
+// Read and set in editor with attribute
+[DataMember] public internal object obj;
+
+// Read only fields cannot be modified to point at another object, but the currently set object may be modified
+public readonly object obj;
+[DataMember] internal readonly object obj;
+
+// Never
+private protected/private/protected object obj;
+</source>
+<target xml:lang="pt">// Read and set in the editor by default
+public object obj;
+
+// Read and set in editor with attribute
+[DataMember] public internal object obj;
+
+// Read only fields cannot be modified to point at another object, but the currently set object may be modified
+public readonly object obj;
+[DataMember] internal readonly object obj;
+
+// Never
+private protected/private/protected object obj;
+</target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en">Properties</source>
+<target xml:lang="pt">Properties</target>
+</trans-unit>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en">// Read and set in the editor ...
+
+// By default
+public object obj { get; set; }
+public object obj { get => x; set => x = value; }
+
+// Forced with the attribute for 'internal' modifiers
+[DataMember] public object obj { internal get; public/internal set; }
+[DataMember] public object obj { internal get => x; public/internal set => x; }
+
+// Read only
+public object obj { get; }
+
+// Read only for any non-public access modifier
+public object obj { get; internal/private protected/private/protected set; }
+public object obj { get => x; internal/private protected/private/protected set => x = value; }
+
+// Read only for internal properties must be enforced through the attribute
+[DataMember] internal object obj { get; }
+[DataMember] internal object obj { get => x; }
+
+// Read only, special case for get-only public properties without backing field, 
+//They must use the attribute to be deserialized, see the comment below
+[DataMember] public object obj { get => x; }
+
+// Read only for access modifiers more restrictive than internal, even with the attribute
+[DataMember] public object obj { internal get; private protected/private/protected set; }
+[DataMember] public object obj { internal get => x; private protected/private/protected set => x; }
+
+// Never
+private protected/private/protected object obj { get; set; }
+private protected/private/protected object obj { get => x; set => x; }
+</source>
+<target xml:lang="pt">// Read and set in the editor ...
+
+// By default
+public object obj { get; set; }
+public object obj { get => x; set => x = value; }
+
+// Forced with the attribute for 'internal' modifiers
+[DataMember] public object obj { internal get; public/internal set; }
+[DataMember] public object obj { internal get => x; public/internal set => x; }
+
+// Read only
+public object obj { get; }
+
+// Read only for any non-public access modifier
+public object obj { get; internal/private protected/private/protected set; }
+public object obj { get => x; internal/private protected/private/protected set => x = value; }
+
+// Read only for internal properties must be enforced through the attribute
+[DataMember] internal object obj { get; }
+[DataMember] internal object obj { get => x; }
+
+// Read only, special case for get-only public properties without backing field, 
+//They must use the attribute to be deserialized, see the comment below
+[DataMember] public object obj { get => x; }
+
+// Read only for access modifiers more restrictive than internal, even with the attribute
+[DataMember] public object obj { internal get; private protected/private/protected set; }
+[DataMember] public object obj { internal get => x; private protected/private/protected set => x; }
+
+// Never
+private protected/private/protected object obj { get; set; }
+private protected/private/protected object obj { get => x; set => x; }
+</target>
+</trans-unit>
+<trans-unit id="tu29" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>!Note<x id="2"/>
+Get-only public properties without backing field (<g id="3">public object obj { get => x; }</g>) are not serialized by default as
+they are, more often than not, shortcuts to values of another object or used purely as a function.
+It might make more sense to change it to <g id="4">{ get; } = new MyObject();</g> or <g id="5">{ get; init; }</g> if you want to serialize it,
+and if that doesn't work for you, feel free to add the attribute to enforce serialization.</source>
+<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
+Get-only public properties without backing field (<g id="3">public object obj { get => x; }</g>) are not serialized by default as
+they are, more often than not, shortcuts to values of another object or used purely as a function.
+It might make more sense to change it to <g id="4">{ get; } = new MyObject();</g> or <g id="5">{ get; init; }</g> if you want to serialize it,
+and if that doesn't work for you, feel free to add the attribute to enforce serialization.</target>
+</trans-unit>
+<trans-unit id="tu30" xml:space="preserve">
+<source xml:lang="en">What about <g id="1">init</g> ?</source>
+<target xml:lang="pt">What about <g id="1">init</g> ?</target>
+</trans-unit>
+<trans-unit id="tu31" xml:space="preserve">
+<source xml:lang="en">The <g id="1">init</g> access modifier is seen as a <g id="2">public set</g> by the editor and serialization, it will be settable in the editor.</source>
+<target xml:lang="pt">The <g id="1">init</g> access modifier is seen as a <g id="2">public set</g> by the editor and serialization, it will be settable in the editor.</target>
+</trans-unit>
+<trans-unit id="tu32" xml:space="preserve">
+<source xml:lang="en">See also</source>
+<target xml:lang="pt">See also</target>
+</trans-unit>
+<trans-unit id="tu33" xml:space="preserve">
+<source xml:lang="en"><g id="1">Public properties and fields</g></source>
+<target xml:lang="pt"><g id="1">Public properties and fields</g></target>
+</trans-unit>
+</body>
+</file>
+</xliff>

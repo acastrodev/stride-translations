@@ -1,0 +1,199 @@
+{
+    "filename": "manual\\troubleshooting\\default-value-changes-ignored-at-runtime.md.xlf",
+    "files": [
+        {
+            "\/D:\/repos\/rr\/source\/manual\/troubleshooting\/default-value-changes-ignored-at-runtime.md": [
+                [
+                    "Default value changes ignored at runtime",
+                    "",
+                    "Default value changes ignored at runtime",
+                    "\/D:\/repos\/rr\/source\/manual\/troubleshooting\/default-value-changes-ignored-at-runtime.md",
+                    {
+                        "id": "tu1"
+                    }
+                ],
+                [
+                    "When you add a script to your project as a component, Game Studio lists its public variables in the Property Grid.",
+                    "",
+                    "When you add a script to your project as a component, Game Studio lists its public variables in the Property Grid.",
+                    "\/D:\/repos\/rr\/source\/manual\/troubleshooting\/default-value-changes-ignored-at-runtime.md",
+                    {
+                        "id": "tu2"
+                    }
+                ],
+                [
+                    "These are the values used at runtime.",
+                    "",
+                    " These are the values used at runtime.",
+                    "\/D:\/repos\/rr\/source\/manual\/troubleshooting\/default-value-changes-ignored-at-runtime.md",
+                    {
+                        "id": "tu2"
+                    }
+                ],
+                [
+                    "However, if you then change the default value in the script, Game Studio doesn't update the component with the new value.",
+                    "",
+                    "However, if you then change the default value in the script, Game Studio doesn't update the component with the new value.",
+                    "\/D:\/repos\/rr\/source\/manual\/troubleshooting\/default-value-changes-ignored-at-runtime.md",
+                    {
+                        "id": "tu3"
+                    }
+                ],
+                [
+                    "For example, imagine you have a script with the variable <g1>SpeedFactor<\/g1> with a default value of <g2>5.0f<\/g2>.",
+                    "",
+                    "For example, imagine you have a script with the variable <g1>SpeedFactor<\/g1> with a default value of <g2>5.0f<\/g2>.",
+                    "\/D:\/repos\/rr\/source\/manual\/troubleshooting\/default-value-changes-ignored-at-runtime.md",
+                    {
+                        "id": "tu4"
+                    }
+                ],
+                [
+                    "You add the script to the project as a component.",
+                    "",
+                    " You add the script to the project as a component.",
+                    "\/D:\/repos\/rr\/source\/manual\/troubleshooting\/default-value-changes-ignored-at-runtime.md",
+                    {
+                        "id": "tu4"
+                    }
+                ],
+                [
+                    "Now, in the script, you change the default value of the <g3>SpeedFactor<\/g3> variable to <g4>6.0f<\/g4>, save the script, and run the project.",
+                    "",
+                    " Now, in the script, you change the default value of the <g3>SpeedFactor<\/g3> variable to <g4>6.0f<\/g4>, save the script, and run the project.",
+                    "\/D:\/repos\/rr\/source\/manual\/troubleshooting\/default-value-changes-ignored-at-runtime.md",
+                    {
+                        "id": "tu4"
+                    }
+                ],
+                [
+                    "Game Studio doesn't update the component with the script changes, so the speed <g5>SpeedFactor<\/g5> value is still <g6>5.0f<\/g6>.",
+                    "",
+                    " Game Studio doesn't update the component with the script changes, so the speed <g5>SpeedFactor<\/g5> value is still <g6>5.0f<\/g6>.",
+                    "\/D:\/repos\/rr\/source\/manual\/troubleshooting\/default-value-changes-ignored-at-runtime.md",
+                    {
+                        "id": "tu4"
+                    }
+                ],
+                [
+                    "Fix",
+                    "",
+                    "Fix",
+                    "\/D:\/repos\/rr\/source\/manual\/troubleshooting\/default-value-changes-ignored-at-runtime.md",
+                    {
+                        "id": "tu5"
+                    }
+                ],
+                [
+                    "In your project, delete and re-add the script component.",
+                    "",
+                    "In your project, delete and re-add the script component.",
+                    "\/D:\/repos\/rr\/source\/manual\/troubleshooting\/default-value-changes-ignored-at-runtime.md",
+                    {
+                        "id": "tu6"
+                    }
+                ],
+                [
+                    "Alternatively, if you want Game Studio to update the values in the component properties after you change them in the script, you can do this with additional code.",
+                    "",
+                    "Alternatively, if you want Game Studio to update the values in the component properties after you change them in the script, you can do this with additional code.",
+                    "\/D:\/repos\/rr\/source\/manual\/troubleshooting\/default-value-changes-ignored-at-runtime.md",
+                    {
+                        "id": "tu7"
+                    }
+                ],
+                [
+                    "You need to add a new line of code for every property you want this to apply to.",
+                    "",
+                    " You need to add a new line of code for every property you want this to apply to.",
+                    "\/D:\/repos\/rr\/source\/manual\/troubleshooting\/default-value-changes-ignored-at-runtime.md",
+                    {
+                        "id": "tu7"
+                    }
+                ],
+                [
+                    "Add <g1>using System.ComponentModel<\/g1> at the top of the script.",
+                    "",
+                    "Add <g1>using System.ComponentModel<\/g1> at the top of the script.",
+                    "\/D:\/repos\/rr\/source\/manual\/troubleshooting\/default-value-changes-ignored-at-runtime.md",
+                    {
+                        "id": "tu8"
+                    }
+                ],
+                [
+                    "Above the variable you want to update, add <g1>[DefaultValue()]<\/g1>.",
+                    "",
+                    "Above the variable you want to update, add <g1>[DefaultValue()]<\/g1>.",
+                    "\/D:\/repos\/rr\/source\/manual\/troubleshooting\/default-value-changes-ignored-at-runtime.md",
+                    {
+                        "id": "tu9"
+                    }
+                ],
+                [
+                    "For example, if the variable is <g2>SpeedFactor<\/g2>, use:",
+                    "",
+                    " For example, if the variable is <g2>SpeedFactor<\/g2>, use:",
+                    "\/D:\/repos\/rr\/source\/manual\/troubleshooting\/default-value-changes-ignored-at-runtime.md",
+                    {
+                        "id": "tu9"
+                    }
+                ],
+                [
+                    "[DefaultValue(6.0f)]",
+                    "",
+                    "[DefaultValue(6.0f)]\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/troubleshooting\/default-value-changes-ignored-at-runtime.md",
+                    {
+                        "id": "tu10"
+                    }
+                ],
+                [
+                    "public float SpeedFactor { get; set; } = 6.0f;",
+                    "",
+                    "public float SpeedFactor { get; set; } = 6.0f;\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/troubleshooting\/default-value-changes-ignored-at-runtime.md",
+                    {
+                        "id": "tu10"
+                    }
+                ],
+                [
+                    "When you change the value, update both the <g1>SpeedFactor<\/g1> and the <g2>DefaultValue<\/g2> to the same value.",
+                    "",
+                    "When you change the value, update both the <g1>SpeedFactor<\/g1> and the <g2>DefaultValue<\/g2> to the same value.",
+                    "\/D:\/repos\/rr\/source\/manual\/troubleshooting\/default-value-changes-ignored-at-runtime.md",
+                    {
+                        "id": "tu11"
+                    }
+                ],
+                [
+                    "<x1\/>!Note<x2\/>",
+                    "",
+                    "<x1\/>!Note<x2\/>\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/troubleshooting\/default-value-changes-ignored-at-runtime.md",
+                    {
+                        "id": "tu12"
+                    }
+                ],
+                [
+                    "This doesn't work in both directions.",
+                    "",
+                    "This doesn't work in both directions.",
+                    "\/D:\/repos\/rr\/source\/manual\/troubleshooting\/default-value-changes-ignored-at-runtime.md",
+                    {
+                        "id": "tu12"
+                    }
+                ],
+                [
+                    "If you set a value other than the <g1>DefaultValue<\/g1> in the Property Grid, Game Studio saves the value in the asset and overrides the default value at runtime.",
+                    "",
+                    " If you set a value other than the <g1>DefaultValue<\/g1> in the Property Grid, Game Studio saves the value in the asset and overrides the default value at runtime.",
+                    "\/D:\/repos\/rr\/source\/manual\/troubleshooting\/default-value-changes-ignored-at-runtime.md",
+                    {
+                        "id": "tu12"
+                    }
+                ]
+            ]
+        }
+    ],
+    "seg_enabled": false
+}

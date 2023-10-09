@@ -1,0 +1,903 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="/D:/repos/rr/source/ReleaseNotes/ReleaseNotes-1.9.md" source-language="en" target-language="pt" datatype="x-text/x-markdown" okp:inputEncoding="UTF-8">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en">Xenko 1.9 beta release notes</source>
+<target xml:lang="pt">Xenko 1.9 beta release notes</target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en">Highlights</source>
+<target xml:lang="pt">Highlights</target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">Xenko 1.9 Beta introduces several major new features along with several relevant enhancements to existing features.</source>
+<target xml:lang="pt">Xenko 1.9 Beta introduces several major new features along with several relevant enhancements to existing features.</target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">We are excited to offer three new game templates to speed up your game design time, a brand new script editor as well as expanded copy-paste functionality.</source>
+<target xml:lang="pt">We are excited to offer three new game templates to speed up your game design time, a brand new script editor as well as expanded copy-paste functionality.</target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">The last major new feature is our new Navigation Mesh system.</source>
+<target xml:lang="pt">The last major new feature is our new Navigation Mesh system.</target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en">Game Templates</source>
+<target xml:lang="pt">Game Templates</target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en">We have added several templates packed with a lot of functionality to help you kickstart your games. Choose from:</source>
+<target xml:lang="pt">We have added several templates packed with a lot of functionality to help you kickstart your games. Choose from:</target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en">First Person Shooter</source>
+<target xml:lang="pt">First Person Shooter</target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en">Third Person Platformer</source>
+<target xml:lang="pt">Third Person Platformer</target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en">Top-View RPG</source>
+<target xml:lang="pt">Top-View RPG</target>
+</trans-unit>
+<group id="sd1_ssf1" resname="sub-filter:sd1">
+</group>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en">All of them come with basic camera and player functionality found in most games of their respective genres. They also have many production-quality assets so you can easily try different features on your own.</source>
+<target xml:lang="pt">All of them come with basic camera and player functionality found in most games of their respective genres. They also have many production-quality assets so you can easily try different features on your own.</target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en">In addition to the game templates, the <g id="1">New Game</g> project now includes optional packages with all the assets we used to build the samples. Unlike the game templates which are trimmed down, the optional packages include ALL assets, including some which are not used by any Xenko sample.</source>
+<target xml:lang="pt">In addition to the game templates, the <g id="1">New Game</g> project now includes optional packages with all the assets we used to build the samples. Unlike the game templates which are trimmed down, the optional packages include ALL assets, including some which are not used by any Xenko sample.</target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en">Script Editor</source>
+<target xml:lang="pt">Script Editor</target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en">To ease friction from switching back and forth between the Game Studio and your IDE, we’ve built a new Script Editor.  Relying fully on Visual Studio is no longer necessary because you can now edit your code directly within the Game Studio itself. You’ll get full syntax highlighting, auto-completion, live diagnostics and even the ability to auto-reload C# files and projects that changed on your hard drive due to changes in your external editor (e.g., Visual Studio).</source>
+<target xml:lang="pt">To ease friction from switching back and forth between the Game Studio and your IDE, we’ve built a new Script Editor.  Relying fully on Visual Studio is no longer necessary because you can now edit your code directly within the Game Studio itself. You’ll get full syntax highlighting, auto-completion, live diagnostics and even the ability to auto-reload C# files and projects that changed on your hard drive due to changes in your external editor (e.g., Visual Studio).</target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en">In fact, expect:</source>
+<target xml:lang="pt">In fact, expect:</target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en">Highlight, auto-completion and live diagnostics is available in the Xenko API, your own game code and libraries that you use</source>
+<target xml:lang="pt">Highlight, auto-completion and live diagnostics is available in the Xenko API, your own game code and libraries that you use</target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en">Auto-reload C# scripts and C# project changes that happened in the background</source>
+<target xml:lang="pt">Auto-reload C# scripts and C# project changes that happened in the background</target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en">A Visual Studio like experience for all your code editing!</source>
+<target xml:lang="pt">A Visual Studio like experience for all your code editing!</target>
+</trans-unit>
+<group id="sd1_ssf2" resname="sub-filter:sd1">
+</group>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en">We had some help from Microsoft’s .NET compiler, <g id="1">Roslyn</g>, so Xenko users will also receive the full benefit of all the latest features of .NET. Adding a Rosyln-based Script Editor makes it easier to keep up with the latest C# updates.</source>
+<target xml:lang="pt">We had some help from Microsoft’s .NET compiler, <g id="1">Roslyn</g>, so Xenko users will also receive the full benefit of all the latest features of .NET. Adding a Rosyln-based Script Editor makes it easier to keep up with the latest C# updates.</target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en">Using the Xenko Script Editor is fairly straightforward. Just follow these steps:</source>
+<target xml:lang="pt">Using the Xenko Script Editor is fairly straightforward. Just follow these steps:</target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en">Create a new project/game in Game Studio</source>
+<target xml:lang="pt">Create a new project/game in Game Studio</target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en">Add a script in Game Studio</source>
+<target xml:lang="pt">Add a script in Game Studio</target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en">Edit the script in Game Studio</source>
+<target xml:lang="pt">Edit the script in Game Studio</target>
+</trans-unit>
+<group id="sd1_ssf3" resname="sub-filter:sd1">
+</group>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en">C# scripts saved on Visual Studio side (or any text editor, for that matter) will automatically be updated in Game Studio without reloading. Same goes for project changes (.csproj): new scripts will appear automatically upon saving. GameStudio will automatically listen for file changes on the hard drive and update them live, or ask you what to do in case of conflicts.</source>
+<target xml:lang="pt">C# scripts saved on Visual Studio side (or any text editor, for that matter) will automatically be updated in Game Studio without reloading. Same goes for project changes (.csproj): new scripts will appear automatically upon saving. GameStudio will automatically listen for file changes on the hard drive and update them live, or ask you what to do in case of conflicts.</target>
+</trans-unit>
+<group id="sd1_ssf4" resname="sub-filter:sd1">
+</group>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en">Under the hood, <g id="1">Rosyln</g> is the underlying technology that can process your Xenko source code. But we didn’t stop there! We were fortunate to find <g id="2">AvalonEdit</g>, which provided us what we wanted for the visual appearance of the UI aspect of the Xenko script editor. We also integrated <g id="3">RoslynPad</g>, which connects Roslyn and AvalonEdit together.</source>
+<target xml:lang="pt">Under the hood, <g id="1">Rosyln</g> is the underlying technology that can process your Xenko source code. But we didn’t stop there! We were fortunate to find <g id="2">AvalonEdit</g>, which provided us what we wanted for the visual appearance of the UI aspect of the Xenko script editor. We also integrated <g id="3">RoslynPad</g>, which connects Roslyn and AvalonEdit together.</target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en">Navigation Meshes</source>
+<target xml:lang="pt">Navigation Meshes</target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en">In Xenko 1.9β, you can create a <g id="1">navigation mesh</g> powered by <g id="2">Recast and Detour</g> with <g id="3">real-time feedback</g> directly in the <g id="4">Xenko GameStudio!</g> The navigation mesh is especially useful for RPGs or top-down strategy games, as you can use it to <g id="5">guide characters through complex scenes</g>. The real-time feedback makes it easy to adjust and conveniently customize AI movement and the dimensions of the navigation mesh itself. The green outline of Xenko’s Navigation Mesh shows where the AI comes into play and where the colliders are set.</source>
+<target xml:lang="pt">In Xenko 1.9β, you can create a <g id="1">navigation mesh</g> powered by <g id="2">Recast and Detour</g> with <g id="3">real-time feedback</g> directly in the <g id="4">Xenko GameStudio!</g> The navigation mesh is especially useful for RPGs or top-down strategy games, as you can use it to <g id="5">guide characters through complex scenes</g>. The real-time feedback makes it easy to adjust and conveniently customize AI movement and the dimensions of the navigation mesh itself. The green outline of Xenko’s Navigation Mesh shows where the AI comes into play and where the colliders are set.</target>
+</trans-unit>
+<group id="sd1_ssf5" resname="sub-filter:sd1">
+</group>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en">In the videos, you can see how the AI navigates the level using the logic within the navigation mesh, and how the colliders will automatically be set in real-time. Of course, you can script AI movement manually, too.</source>
+<target xml:lang="pt">In the videos, you can see how the AI navigates the level using the logic within the navigation mesh, and how the colliders will automatically be set in real-time. Of course, you can script AI movement manually, too.</target>
+</trans-unit>
+<group id="sd1_ssf6" resname="sub-filter:sd1">
+</group>
+<trans-unit id="tu29" xml:space="preserve">
+<source xml:lang="en">Copy &amp; Paste Functionality Expanded</source>
+<target xml:lang="pt">Copy &amp; Paste Functionality Expanded</target>
+</trans-unit>
+<trans-unit id="tu30" xml:space="preserve">
+<source xml:lang="en">In the past we only supported copy and pasting of assets, but now you can <g id="1">copy-paste pretty much anything</g> in the Game Studio.</source>
+<target xml:lang="pt">In the past we only supported copy and pasting of assets, but now you can <g id="1">copy-paste pretty much anything</g> in the Game Studio.</target>
+</trans-unit>
+<trans-unit id="tu31" xml:space="preserve">
+<source xml:lang="en">Any entities in a scene are now copyable, as well as any sprites of a sprite sheet, UI elements, or even a single property in the property grid! For instance, you can copy a list and perform any of the following operations.</source>
+<target xml:lang="pt">Any entities in a scene are now copyable, as well as any sprites of a sprite sheet, UI elements, or even a single property in the property grid! For instance, you can copy a list and perform any of the following operations.</target>
+</trans-unit>
+<trans-unit id="tu32" xml:space="preserve">
+<source xml:lang="en">Insert it into another list at various positions, for example:</source>
+<target xml:lang="pt">Insert it into another list at various positions, for example:</target>
+</trans-unit>
+<group id="sd1_ssf7" resname="sub-filter:sd1">
+</group>
+<trans-unit id="tu33" xml:space="preserve">
+<source xml:lang="en">Copy and insert into the list (by pasting at a list item level).*</source>
+<target xml:lang="pt">Copy and insert into the list (by pasting at a list item level).*</target>
+</trans-unit>
+<group id="sd1_ssf8" resname="sub-filter:sd1">
+</group>
+<trans-unit id="tu34" xml:space="preserve">
+<source xml:lang="en">Copy and append to a list, for example, append it to the end of the list.</source>
+<target xml:lang="pt">Copy and append to a list, for example, append it to the end of the list.</target>
+</trans-unit>
+<group id="sd1_ssf9" resname="sub-filter:sd1">
+</group>
+<trans-unit id="tu35" xml:space="preserve">
+<source xml:lang="en">Copy and replace the whole list.</source>
+<target xml:lang="pt">Copy and replace the whole list.</target>
+</trans-unit>
+<trans-unit id="tu36" xml:space="preserve">
+<source xml:lang="en">A bit more difficult to explain, but perhaps easier to show than write about is <g id="1">copy and replace at an item level</g>. This action (shown in the video below) will remove the item (at its position in the list) and insert the copied ones starting at the same position of the item in the list. In our example below, the copy replace starts from Item 2 in List 2:</source>
+<target xml:lang="pt">A bit more difficult to explain, but perhaps easier to show than write about is <g id="1">copy and replace at an item level</g>. This action (shown in the video below) will remove the item (at its position in the list) and insert the copied ones starting at the same position of the item in the list. In our example below, the copy replace starts from Item 2 in List 2:</target>
+</trans-unit>
+<group id="sd1_ssf10" resname="sub-filter:sd1">
+</group>
+<trans-unit id="tu37" xml:space="preserve">
+<source xml:lang="en">Some information about copying entities and prefabs:</source>
+<target xml:lang="pt">Some information about copying entities and prefabs:</target>
+</trans-unit>
+<trans-unit id="tu38" xml:space="preserve">
+<source xml:lang="en"><g id="1">An entire hierarchy of entities can be copied from one scene or prefab to another scene or prefab</g>. Prefab instance will keep their reference to the source prefab as illustrated in the following example:</source>
+<target xml:lang="pt"><g id="1">An entire hierarchy of entities can be copied from one scene or prefab to another scene or prefab</g>. Prefab instance will keep their reference to the source prefab as illustrated in the following example:</target>
+</trans-unit>
+<group id="sd1_ssf11" resname="sub-filter:sd1">
+</group>
+<trans-unit id="tu39" xml:space="preserve">
+<source xml:lang="en"><g id="1">The prefab “MyHero” is copied into the scene. Links to the prefab are maintained.</g></source>
+<target xml:lang="pt"><g id="1">The prefab “MyHero” is copied into the scene. Links to the prefab are maintained.</g></target>
+</trans-unit>
+<trans-unit id="tu40" xml:space="preserve">
+<source xml:lang="en">It is also possible to <g id="1">copy a component from an entity and paste it into another entity</g>.</source>
+<target xml:lang="pt">It is also possible to <g id="1">copy a component from an entity and paste it into another entity</g>.</target>
+</trans-unit>
+<trans-unit id="tu41" xml:space="preserve">
+<source xml:lang="en"><g id="1">Any absolutely any property that can be serialized can be copied</g>. You can copy something from one scene to another scene, from a sub-element in one scene to another scene and even from a scene to a text file, back and forth as needed. You can also copy simple values in the property grid (e.g., primitives such as int, vector3, string…) between separate Game Studio instances if that is something you find practical and useful.</source>
+<target xml:lang="pt"><g id="1">Any absolutely any property that can be serialized can be copied</g>. You can copy something from one scene to another scene, from a sub-element in one scene to another scene and even from a scene to a text file, back and forth as needed. You can also copy simple values in the property grid (e.g., primitives such as int, vector3, string…) between separate Game Studio instances if that is something you find practical and useful.</target>
+</trans-unit>
+<trans-unit id="tu42" xml:space="preserve">
+<source xml:lang="en">Here’s an example of copying between scripts and transform entities in the GameStudio Property Grid:</source>
+<target xml:lang="pt">Here’s an example of copying between scripts and transform entities in the GameStudio Property Grid:</target>
+</trans-unit>
+<group id="sd1_ssf12" resname="sub-filter:sd1">
+</group>
+<trans-unit id="tu43" xml:space="preserve">
+<source xml:lang="en">.NET Standard</source>
+<target xml:lang="pt">.NET Standard</target>
+</trans-unit>
+<trans-unit id="tu44" xml:space="preserve">
+<source xml:lang="en">Starting with Xenko 1.9, shared Game assemblies will be created using <g id="1">.NET Standard</g> rather than PCL.</source>
+<target xml:lang="pt">Starting with Xenko 1.9, shared Game assemblies will be created using <g id="1">.NET Standard</g> rather than PCL.</target>
+</trans-unit>
+<trans-unit id="tu45" xml:space="preserve">
+<source xml:lang="en">It offers <g id="1">many advantages</g>: much better API surface for the developer, improved forward and backward compatibility, reduced fragmentation, finer-grained modularity of the framework, easier to write cross-platform apps, more frequent updates, etc.</source>
+<target xml:lang="pt">It offers <g id="1">many advantages</g>: much better API surface for the developer, improved forward and backward compatibility, reduced fragmentation, finer-grained modularity of the framework, easier to write cross-platform apps, more frequent updates, etc.</target>
+</trans-unit>
+<trans-unit id="tu46" xml:space="preserve">
+<source xml:lang="en">Newly created applications will target .NET Standard 1.4, but users are of course free to target a different version. Also, your existing PCL projects will still work as is, but we recommend you to update your projects to .NET Standard!</source>
+<target xml:lang="pt">Newly created applications will target .NET Standard 1.4, but users are of course free to target a different version. Also, your existing PCL projects will still work as is, but we recommend you to update your projects to .NET Standard!</target>
+</trans-unit>
+<trans-unit id="tu47" xml:space="preserve">
+<source xml:lang="en">Assembly Reloading</source>
+<target xml:lang="pt">Assembly Reloading</target>
+</trans-unit>
+<trans-unit id="tu48" xml:space="preserve">
+<source xml:lang="en">Iterating on code is very important. So far, Xenko was supporting changes in scripts: as soon as you saved any C# file, Game Studio was offering to recompile and reload the assembly with the updated scripts. If there is an error loading the type, you can still edit other part of the asset, save it back while preserving the parts that could not be loaded.</source>
+<target xml:lang="pt">Iterating on code is very important. So far, Xenko was supporting changes in scripts: as soon as you saved any C# file, Game Studio was offering to recompile and reload the assembly with the updated scripts. If there is an error loading the type, you can still edit other part of the asset, save it back while preserving the parts that could not be loaded.</target>
+</trans-unit>
+<trans-unit id="tu49" xml:space="preserve">
+<source xml:lang="en">In this version, we generalized the approach so that any type embedded in your assets can be reloaded! As a result, you can now implement your own classes for anything you want directly in your game or plugin assemblies, and keep editing them without restarting the Game Studio.</source>
+<target xml:lang="pt">In this version, we generalized the approach so that any type embedded in your assets can be reloaded! As a result, you can now implement your own classes for anything you want directly in your game or plugin assemblies, and keep editing them without restarting the Game Studio.</target>
+</trans-unit>
+<trans-unit id="tu50" xml:space="preserve">
+<source xml:lang="en">This includes renderers, material features, and will soon be extensively used in new assets.</source>
+<target xml:lang="pt">This includes renderers, material features, and will soon be extensively used in new assets.</target>
+</trans-unit>
+<trans-unit id="tu51" xml:space="preserve">
+<source xml:lang="en">Breaking changes</source>
+<target xml:lang="pt">Breaking changes</target>
+</trans-unit>
+<trans-unit id="tu52" xml:space="preserve">
+<source xml:lang="en">Windows Phone and Windows Store Removed</source>
+<target xml:lang="pt">Windows Phone and Windows Store Removed</target>
+</trans-unit>
+<trans-unit id="tu53" xml:space="preserve">
+<source xml:lang="en">Windows Phone and Windows Store platforms are both removed.
+Please use the newer <g id="1">Universal Windows Apps (UWP)</g> instead. This platform was previously known as <g id="2">Windows 10</g>.
+Projects will be automatically upgraded to reflect this change.</source>
+<target xml:lang="pt">Windows Phone and Windows Store platforms are both removed.
+Please use the newer <g id="1">Universal Windows Apps (UWP)</g> instead. This platform was previously known as <g id="2">Windows 10</g>.
+Projects will be automatically upgraded to reflect this change.</target>
+</trans-unit>
+<trans-unit id="tu54" xml:space="preserve">
+<source xml:lang="en">Also, we renamed preprocessor definition <g id="1">SILICONSTUDIO_PLATFORM_WINDOWS_RUNTIME</g> into <g id="2">SILICONSTUDIO_PLATFORM_UWP</g>.</source>
+<target xml:lang="pt">Also, we renamed preprocessor definition <g id="1">SILICONSTUDIO_PLATFORM_WINDOWS_RUNTIME</g> into <g id="2">SILICONSTUDIO_PLATFORM_UWP</g>.</target>
+</trans-unit>
+<trans-unit id="tu55" xml:space="preserve">
+<source xml:lang="en">.NET Standard</source>
+<target xml:lang="pt">.NET Standard</target>
+</trans-unit>
+<trans-unit id="tu56" xml:space="preserve">
+<source xml:lang="en">The switch to .NET Standard for newly created projects implies that:</source>
+<target xml:lang="pt">The switch to .NET Standard for newly created projects implies that:</target>
+</trans-unit>
+<trans-unit id="tu57" xml:space="preserve">
+<source xml:lang="en">Runtime .NET framework requirement when distributing your projects is bumped from .NET 4.5 to .NET 4.6.1.</source>
+<target xml:lang="pt">Runtime .NET framework requirement when distributing your projects is bumped from .NET 4.5 to .NET 4.6.1.</target>
+</trans-unit>
+<trans-unit id="tu58" xml:space="preserve">
+<source xml:lang="en">You need Visual Studio 2015 to open and compile newly created projects</source>
+<target xml:lang="pt">You need Visual Studio 2015 to open and compile newly created projects</target>
+</trans-unit>
+<trans-unit id="tu59" xml:space="preserve">
+<source xml:lang="en">You can upgrade older projects to use .NET Standard using Visual Studio 2015 Update 3 (in project properties)</source>
+<target xml:lang="pt">You can upgrade older projects to use .NET Standard using Visual Studio 2015 Update 3 (in project properties)</target>
+</trans-unit>
+<trans-unit id="tu60" xml:space="preserve">
+<source xml:lang="en">From version 1.9, we don't install prerequisites to compile PCL projects anymore. If you have somebody in your team still working on a project created with a previous version of Xenko on a fresh PC, please make them install Xenko 1.8 so that it installs the proper prerequisites (even if the project has been updated to a newer version of Xenko).</source>
+<target xml:lang="pt">From version 1.9, we don't install prerequisites to compile PCL projects anymore. If you have somebody in your team still working on a project created with a previous version of Xenko on a fresh PC, please make them install Xenko 1.8 so that it installs the proper prerequisites (even if the project has been updated to a newer version of Xenko).</target>
+</trans-unit>
+<trans-unit id="tu61" xml:space="preserve">
+<source xml:lang="en">Asset Serialization</source>
+<target xml:lang="pt">Asset Serialization</target>
+</trans-unit>
+<trans-unit id="tu62" xml:space="preserve">
+<source xml:lang="en">We changed how we serialize asset in YAML. We introduced new concepts that improve how we can track overrides between an archetype or a prefab and assets/entities inheriting from it. Although everything happens "under the hood", this is a actually a heavy change that might impact the upgrading of your project.</source>
+<target xml:lang="pt">We changed how we serialize asset in YAML. We introduced new concepts that improve how we can track overrides between an archetype or a prefab and assets/entities inheriting from it. Although everything happens "under the hood", this is a actually a heavy change that might impact the upgrading of your project.</target>
+</trans-unit>
+<trans-unit id="tu63" xml:space="preserve">
+<source xml:lang="en">We removed asset upgrading for projects made with version 1.3 and below (released more than a year ago). It is possible that you experience some issues when upgrading a project made with versions 1.4 to 1.7, but you should properly be able to upgrade any project that uses version 1.8. However a few cases are not supported:</source>
+<target xml:lang="pt">We removed asset upgrading for projects made with version 1.3 and below (released more than a year ago). It is possible that you experience some issues when upgrading a project made with versions 1.4 to 1.7, but you should properly be able to upgrade any project that uses version 1.8. However a few cases are not supported:</target>
+</trans-unit>
+<trans-unit id="tu64" xml:space="preserve">
+<source xml:lang="en">Dependency Properties of UI elements that are overridden from an UI library will be reset during upgrade. Therefore, properties such as Grid Column and Row will have to be manually restored.</source>
+<target xml:lang="pt">Dependency Properties of UI elements that are overridden from an UI library will be reset during upgrade. Therefore, properties such as Grid Column and Row will have to be manually restored.</target>
+</trans-unit>
+<trans-unit id="tu65" xml:space="preserve">
+<source xml:lang="en">Some case of overriden materials in the material list of ModelComponent might be improperly upgraded.</source>
+<target xml:lang="pt">Some case of overriden materials in the material list of ModelComponent might be improperly upgraded.</target>
+</trans-unit>
+<trans-unit id="tu66" xml:space="preserve">
+<source xml:lang="en">Dropping Support for Windows Store 8.1 and Windows Phone 8.1</source>
+<target xml:lang="pt">Dropping Support for Windows Store 8.1 and Windows Phone 8.1</target>
+</trans-unit>
+<trans-unit id="tu67" xml:space="preserve">
+<source xml:lang="en">To properly support the .NET Standard 1.4 and offer our developers a more up-to-date and robust API, we decided to drop support for Windows Store 8.1 and Windows Phone 8.1 platforms.</source>
+<target xml:lang="pt">To properly support the .NET Standard 1.4 and offer our developers a more up-to-date and robust API, we decided to drop support for Windows Store 8.1 and Windows Phone 8.1 platforms.</target>
+</trans-unit>
+<trans-unit id="tu68" xml:space="preserve">
+<source xml:lang="en">As Microsoft seems to be focusing on Universal Windows Platform (UWP), we’ve also decided it was best to refocus on more pertinent and relevant platforms for Xenko users. UWP was introduced with Windows 10, and a whole range of devices already support it.</source>
+<target xml:lang="pt">As Microsoft seems to be focusing on Universal Windows Platform (UWP), we’ve also decided it was best to refocus on more pertinent and relevant platforms for Xenko users. UWP was introduced with Windows 10, and a whole range of devices already support it.</target>
+</trans-unit>
+<trans-unit id="tu69" xml:space="preserve">
+<source xml:lang="en">Of course, you are free to stick with Xenko 1.8 in case you have a project targeting one of those two platforms -- we know this is a big change, and we will make every effort to help our developers with this transition. We apologize for the inconvenience, and aim to bring you a top-notch .NET user experience!</source>
+<target xml:lang="pt">Of course, you are free to stick with Xenko 1.8 in case you have a project targeting one of those two platforms -- we know this is a big change, and we will make every effort to help our developers with this transition. We apologize for the inconvenience, and aim to bring you a top-notch .NET user experience!</target>
+</trans-unit>
+<trans-unit id="tu70" xml:space="preserve">
+<source xml:lang="en">Just as a reminder, we already support Universal Windows Platform (UWP) on x86, x64 and ARM as of Xenko 1.8, which means games and apps developed with Xenko can be deployed on a whole range of Microsoft devices, including <g id="1">Xbox One</g>. Until 1.9, this platform was named Windows10 in Xenko, but we took the liberty to rename it UWP to better match the official naming.</source>
+<target xml:lang="pt">Just as a reminder, we already support Universal Windows Platform (UWP) on x86, x64 and ARM as of Xenko 1.8, which means games and apps developed with Xenko can be deployed on a whole range of Microsoft devices, including <g id="1">Xbox One</g>. Until 1.9, this platform was named Windows10 in Xenko, but we took the liberty to rename it UWP to better match the official naming.</target>
+</trans-unit>
+<trans-unit id="tu71" xml:space="preserve">
+<source xml:lang="en">Changelog</source>
+<target xml:lang="pt">Changelog</target>
+</trans-unit>
+<trans-unit id="tu72" xml:space="preserve">
+<source xml:lang="en">Version 1.9.0-beta</source>
+<target xml:lang="pt">Version 1.9.0-beta</target>
+</trans-unit>
+<trans-unit id="tu73" xml:space="preserve">
+<source xml:lang="en">Release date 2016/11/24</source>
+<target xml:lang="pt">Release date 2016/11/24</target>
+</trans-unit>
+<trans-unit id="tu74" xml:space="preserve">
+<source xml:lang="en">Enhancements</source>
+<target xml:lang="pt">Enhancements</target>
+</trans-unit>
+<trans-unit id="tu75" xml:space="preserve">
+<source xml:lang="en">General</source>
+<target xml:lang="pt">General</target>
+</trans-unit>
+<trans-unit id="tu76" xml:space="preserve">
+<source xml:lang="en">From now on, new projects are created as .NET Standard projects rather than PCL projects.</source>
+<target xml:lang="pt">From now on, new projects are created as .NET Standard projects rather than PCL projects.</target>
+</trans-unit>
+<trans-unit id="tu77" xml:space="preserve">
+<source xml:lang="en"><g id="1">NuGet restore</g> is automatically run on projects having a <g id="2">project.json</g> file</source>
+<target xml:lang="pt"><g id="1">NuGet restore</g> is automatically run on projects having a <g id="2">project.json</g> file</target>
+</trans-unit>
+<trans-unit id="tu78" xml:space="preserve">
+<source xml:lang="en">Bumped FBX SDK to 2017.0.1</source>
+<target xml:lang="pt">Bumped FBX SDK to 2017.0.1</target>
+</trans-unit>
+<trans-unit id="tu79" xml:space="preserve">
+<source xml:lang="en">Mesh importing now supports <g id="1">ByEdge</g> smoothing which was previously ignored. If you notice any difference with vertex normals for your models please check your FBX export settings.</source>
+<target xml:lang="pt">Mesh importing now supports <g id="1">ByEdge</g> smoothing which was previously ignored. If you notice any difference with vertex normals for your models please check your FBX export settings.</target>
+</trans-unit>
+<trans-unit id="tu80" xml:space="preserve">
+<source xml:lang="en">Prerequisites installer will ask for UAC once instead of many times, and perform a silent installation for all of the prerequisites.</source>
+<target xml:lang="pt">Prerequisites installer will ask for UAC once instead of many times, and perform a silent installation for all of the prerequisites.</target>
+</trans-unit>
+<trans-unit id="tu81" xml:space="preserve">
+<source xml:lang="en">Game Studio</source>
+<target xml:lang="pt">Game Studio</target>
+</trans-unit>
+<trans-unit id="tu82" xml:space="preserve">
+<source xml:lang="en">Previously, when an <g id="1">EntityComponent</g> (i.e. script) couldn't be loaded because game or plugin assembly didn't compile properly, we kept a Yaml representation of it so that it could be saved or reloaded after a code fix. Now we allow it to happen anywhere, so that you can use and/or implement custom classes for any type of the engine in your game/plugin.</source>
+<target xml:lang="pt">Previously, when an <g id="1">EntityComponent</g> (i.e. script) couldn't be loaded because game or plugin assembly didn't compile properly, we kept a Yaml representation of it so that it could be saved or reloaded after a code fix. Now we allow it to happen anywhere, so that you can use and/or implement custom classes for any type of the engine in your game/plugin.</target>
+</trans-unit>
+<trans-unit id="tu83" xml:space="preserve">
+<source xml:lang="en">Improve asset logs and errors to properly display failure/warning icon on all assets, including the one with icon-style thumbnails.</source>
+<target xml:lang="pt">Improve asset logs and errors to properly display failure/warning icon on all assets, including the one with icon-style thumbnails.</target>
+</trans-unit>
+<trans-unit id="tu84" xml:space="preserve">
+<source xml:lang="en">Improve loading/refreshing of assets in the scene editor.</source>
+<target xml:lang="pt">Improve loading/refreshing of assets in the scene editor.</target>
+</trans-unit>
+<trans-unit id="tu85" xml:space="preserve">
+<source xml:lang="en">Asset editors will display a * in the tab name when an asset is dirty.</source>
+<target xml:lang="pt">Asset editors will display a * in the tab name when an asset is dirty.</target>
+</trans-unit>
+<trans-unit id="tu86" xml:space="preserve">
+<source xml:lang="en">Add editor for C# source code.</source>
+<target xml:lang="pt">Add editor for C# source code.</target>
+</trans-unit>
+<trans-unit id="tu87" xml:space="preserve">
+<source xml:lang="en">C# files and .csproj files are automatically reloaded as they are modified on hard drive (using a Yes, Yes to All, No, No to All dialog).</source>
+<target xml:lang="pt">C# files and .csproj files are automatically reloaded as they are modified on hard drive (using a Yes, Yes to All, No, No to All dialog).</target>
+</trans-unit>
+<trans-unit id="tu88" xml:space="preserve">
+<source xml:lang="en">C# files have their own undo/redo stack</source>
+<target xml:lang="pt">C# files have their own undo/redo stack</target>
+</trans-unit>
+<trans-unit id="tu89" xml:space="preserve">
+<source xml:lang="en">Add a Save All button that saves both assets and source code files.</source>
+<target xml:lang="pt">Add a Save All button that saves both assets and source code files.</target>
+</trans-unit>
+<trans-unit id="tu90" xml:space="preserve">
+<source xml:lang="en">The Game Studio now uses <g id="1">AvalonDock</g> as docking system</source>
+<target xml:lang="pt">The Game Studio now uses <g id="1">AvalonDock</g> as docking system</target>
+</trans-unit>
+<trans-unit id="tu91" xml:space="preserve">
+<source xml:lang="en">Improve DPI support (<g id="1">#454</g> and <g id="2">#470</g>)</source>
+<target xml:lang="pt">Improve DPI support (<g id="1">#454</g> and <g id="2">#470</g>)</target>
+</trans-unit>
+<trans-unit id="tu92" xml:space="preserve">
+<source xml:lang="en">Assets</source>
+<target xml:lang="pt">Assets</target>
+</trans-unit>
+<trans-unit id="tu93" xml:space="preserve">
+<source xml:lang="en">Asset YAML serialization has been changed to handle overrides in collection in a better way. More scenario of overrides are now supported.</source>
+<target xml:lang="pt">Asset YAML serialization has been changed to handle overrides in collection in a better way. More scenario of overrides are now supported.</target>
+</trans-unit>
+<trans-unit id="tu94" xml:space="preserve">
+<source xml:lang="en"><g id="1">SharpYaml</g> has been integrated into our codebase as <g id="2">SiliconStudio.Core.Yaml</g>. Most of the duplicated types have been merged back in the <g id="3">SiliconStudio.Core.Reflection</g>.</source>
+<target xml:lang="pt"><g id="1">SharpYaml</g> has been integrated into our codebase as <g id="2">SiliconStudio.Core.Yaml</g>. Most of the duplicated types have been merged back in the <g id="3">SiliconStudio.Core.Reflection</g>.</target>
+</trans-unit>
+<trans-unit id="tu95" xml:space="preserve">
+<source xml:lang="en">Assets don't use a ~Base section nor a ~BasePart.</source>
+<target xml:lang="pt">Assets don't use a ~Base section nor a ~BasePart.</target>
+</trans-unit>
+<trans-unit id="tu96" xml:space="preserve">
+<source xml:lang="en">Change <g id="1">Asset.Id</g> to be of an <g id="2">AssetId</g> type rather than <g id="3">Guid</g>, to avoid invalid comparisons with other kind of ids.</source>
+<target xml:lang="pt">Change <g id="1">Asset.Id</g> to be of an <g id="2">AssetId</g> type rather than <g id="3">Guid</g>, to avoid invalid comparisons with other kind of ids.</target>
+</trans-unit>
+<trans-unit id="tu97" xml:space="preserve">
+<source xml:lang="en">Remove the <g id="1">Properties</g> member of Package.</source>
+<target xml:lang="pt">Remove the <g id="1">Properties</g> member of Package.</target>
+</trans-unit>
+<trans-unit id="tu98" xml:space="preserve">
+<source xml:lang="en">Introduce a new assembly Assets.Quantum</source>
+<target xml:lang="pt">Introduce a new assembly Assets.Quantum</target>
+</trans-unit>
+<trans-unit id="tu99" xml:space="preserve">
+<source xml:lang="en">Overrides of properties is now handled using <g id="1">Quantum</g> instead of <g id="2">ShadowObject</g>.</source>
+<target xml:lang="pt">Overrides of properties is now handled using <g id="1">Quantum</g> instead of <g id="2">ShadowObject</g>.</target>
+</trans-unit>
+<trans-unit id="tu100" xml:space="preserve">
+<source xml:lang="en">Remove the asset diff/merge classes.</source>
+<target xml:lang="pt">Remove the asset diff/merge classes.</target>
+</trans-unit>
+<trans-unit id="tu101" xml:space="preserve">
+<source xml:lang="en">Engine</source>
+<target xml:lang="pt">Engine</target>
+</trans-unit>
+<trans-unit id="tu102" xml:space="preserve">
+<source xml:lang="en">DataSerializers are now generated in a file with .pdb information, so that the user can debug them.</source>
+<target xml:lang="pt">DataSerializers are now generated in a file with .pdb information, so that the user can debug them.</target>
+</trans-unit>
+<trans-unit id="tu103" xml:space="preserve">
+<source xml:lang="en">Add Local offsets to procedural models.</source>
+<target xml:lang="pt">Add Local offsets to procedural models.</target>
+</trans-unit>
+<trans-unit id="tu104" xml:space="preserve">
+<source xml:lang="en"><g id="1">EntityComponent</g> now implements <g id="2">IIdentifiable</g> and has an <g id="3">Id</g> property.</source>
+<target xml:lang="pt"><g id="1">EntityComponent</g> now implements <g id="2">IIdentifiable</g> and has an <g id="3">Id</g> property.</target>
+</trans-unit>
+<trans-unit id="tu105" xml:space="preserve">
+<source xml:lang="en">Audio</source>
+<target xml:lang="pt">Audio</target>
+</trans-unit>
+<trans-unit id="tu106" xml:space="preserve">
+<source xml:lang="en">Add <g id="1">SetRange</g> support to <g id="2">AudioEmitterSoundController</g></source>
+<target xml:lang="pt">Add <g id="1">SetRange</g> support to <g id="2">AudioEmitterSoundController</g></target>
+</trans-unit>
+<trans-unit id="tu107" xml:space="preserve">
+<source xml:lang="en">Improve compilation speed of audio files</source>
+<target xml:lang="pt">Improve compilation speed of audio files</target>
+</trans-unit>
+<trans-unit id="tu108" xml:space="preserve">
+<source xml:lang="en">Materials</source>
+<target xml:lang="pt">Materials</target>
+</trans-unit>
+<trans-unit id="tu109" xml:space="preserve">
+<source xml:lang="en">Normal maps now have the option to <g id="1">Invert Y</g>, supporting both textures where the green component is facing up or down</source>
+<target xml:lang="pt">Normal maps now have the option to <g id="1">Invert Y</g>, supporting both textures where the green component is facing up or down</target>
+</trans-unit>
+<trans-unit id="tu110" xml:space="preserve">
+<source xml:lang="en">Particles</source>
+<target xml:lang="pt">Particles</target>
+</trans-unit>
+<trans-unit id="tu111" xml:space="preserve">
+<source xml:lang="en">Minor optimizations around vertex buffer building</source>
+<target xml:lang="pt">Minor optimizations around vertex buffer building</target>
+</trans-unit>
+<trans-unit id="tu112" xml:space="preserve">
+<source xml:lang="en">Add StopEmitters() method to the particle system, which prevents new particles from spawning without pausing the entire system</source>
+<target xml:lang="pt">Add StopEmitters() method to the particle system, which prevents new particles from spawning without pausing the entire system</target>
+</trans-unit>
+<trans-unit id="tu113" xml:space="preserve">
+<source xml:lang="en">Physics</source>
+<target xml:lang="pt">Physics</target>
+</trans-unit>
+<trans-unit id="tu114" xml:space="preserve">
+<source xml:lang="en">Add Cone collider shape.</source>
+<target xml:lang="pt">Add Cone collider shape.</target>
+</trans-unit>
+<trans-unit id="tu115" xml:space="preserve">
+<source xml:lang="en">Replace float with <g id="1">AngleSingle</g> for <g id="2">MaxSlope</g> of character controllers.</source>
+<target xml:lang="pt">Replace float with <g id="1">AngleSingle</g> for <g id="2">MaxSlope</g> of character controllers.</target>
+</trans-unit>
+<trans-unit id="tu116" xml:space="preserve">
+<source xml:lang="en">Issues Fixed</source>
+<target xml:lang="pt">Issues Fixed</target>
+</trans-unit>
+<trans-unit id="tu117" xml:space="preserve">
+<source xml:lang="en">General</source>
+<target xml:lang="pt">General</target>
+</trans-unit>
+<trans-unit id="tu118" xml:space="preserve">
+<source xml:lang="en">UWP platform now uses UniversalWindowsPlatform 5.2.2 (was previously 5.0.0).</source>
+<target xml:lang="pt">UWP platform now uses UniversalWindowsPlatform 5.2.2 (was previously 5.0.0).</target>
+</trans-unit>
+<trans-unit id="tu119" xml:space="preserve">
+<source xml:lang="en">Game Studio</source>
+<target xml:lang="pt">Game Studio</target>
+</trans-unit>
+<trans-unit id="tu120" xml:space="preserve">
+<source xml:lang="en">Fix many issues with property overrides.</source>
+<target xml:lang="pt">Fix many issues with property overrides.</target>
+</trans-unit>
+<trans-unit id="tu121" xml:space="preserve">
+<source xml:lang="en">Fix many issues when setting/overriding materials in ModelComponent.</source>
+<target xml:lang="pt">Fix many issues when setting/overriding materials in ModelComponent.</target>
+</trans-unit>
+<trans-unit id="tu122" xml:space="preserve">
+<source xml:lang="en">Asset logs were not properly sent forward to editor, resulting in an empty log for all assets.</source>
+<target xml:lang="pt">Asset logs were not properly sent forward to editor, resulting in an empty log for all assets.</target>
+</trans-unit>
+<trans-unit id="tu123" xml:space="preserve">
+<source xml:lang="en">Sometimes there was a deadlock when compiling effects due to the way we were using the thread pool and task continuations.</source>
+<target xml:lang="pt">Sometimes there was a deadlock when compiling effects due to the way we were using the thread pool and task continuations.</target>
+</trans-unit>
+<trans-unit id="tu124" xml:space="preserve">
+<source xml:lang="en">Fix performance issue that could occur when duplicating entities with the same name many times.</source>
+<target xml:lang="pt">Fix performance issue that could occur when duplicating entities with the same name many times.</target>
+</trans-unit>
+<trans-unit id="tu125" xml:space="preserve">
+<source xml:lang="en">Fix 'Rename' menu entry when right-clicking a folder of the scene editor.</source>
+<target xml:lang="pt">Fix 'Rename' menu entry when right-clicking a folder of the scene editor.</target>
+</trans-unit>
+<trans-unit id="tu126" xml:space="preserve">
+<source xml:lang="en">Fix crashes in the UI editor that could occur when deleting or moving an element.</source>
+<target xml:lang="pt">Fix crashes in the UI editor that could occur when deleting or moving an element.</target>
+</trans-unit>
+<trans-unit id="tu127" xml:space="preserve">
+<source xml:lang="en">Fix crashes in sprite sheet editor that could occur when deleting, duplicating or moving sprites.</source>
+<target xml:lang="pt">Fix crashes in sprite sheet editor that could occur when deleting, duplicating or moving sprites.</target>
+</trans-unit>
+<trans-unit id="tu128" xml:space="preserve">
+<source xml:lang="en">Fix sort order of assets in the asset view.</source>
+<target xml:lang="pt">Fix sort order of assets in the asset view.</target>
+</trans-unit>
+<trans-unit id="tu129" xml:space="preserve">
+<source xml:lang="en">Assets</source>
+<target xml:lang="pt">Assets</target>
+</trans-unit>
+<trans-unit id="tu130" xml:space="preserve">
+<source xml:lang="en">Fix tangents of imported meshes, when transforms are negative along some axes</source>
+<target xml:lang="pt">Fix tangents of imported meshes, when transforms are negative along some axes</target>
+</trans-unit>
+<trans-unit id="tu131" xml:space="preserve">
+<source xml:lang="en">Engine</source>
+<target xml:lang="pt">Engine</target>
+</trans-unit>
+<trans-unit id="tu132" xml:space="preserve">
+<source xml:lang="en">Several issues with spot lights were fixed, including shadow maps</source>
+<target xml:lang="pt">Several issues with spot lights were fixed, including shadow maps</target>
+</trans-unit>
+<trans-unit id="tu133" xml:space="preserve">
+<source xml:lang="en">Fix flickering of some materials when no ambient light is present</source>
+<target xml:lang="pt">Fix flickering of some materials when no ambient light is present</target>
+</trans-unit>
+<trans-unit id="tu134" xml:space="preserve">
+<source xml:lang="en">Fix an issue on OpenGL that caused low frame rates when using post effects, due to blocking GPU-readback</source>
+<target xml:lang="pt">Fix an issue on OpenGL that caused low frame rates when using post effects, due to blocking GPU-readback</target>
+</trans-unit>
+<trans-unit id="tu135" xml:space="preserve">
+<source xml:lang="en">Animation</source>
+<target xml:lang="pt">Animation</target>
+</trans-unit>
+<trans-unit id="tu136" xml:space="preserve">
+<source xml:lang="en">Fix a bug where an empty animation clip caused a crash</source>
+<target xml:lang="pt">Fix a bug where an empty animation clip caused a crash</target>
+</trans-unit>
+<trans-unit id="tu137" xml:space="preserve">
+<source xml:lang="en">Version 1.9.1-beta</source>
+<target xml:lang="pt">Version 1.9.1-beta</target>
+</trans-unit>
+<trans-unit id="tu138" xml:space="preserve">
+<source xml:lang="en">Release date 2016/11/29</source>
+<target xml:lang="pt">Release date 2016/11/29</target>
+</trans-unit>
+<trans-unit id="tu139" xml:space="preserve">
+<source xml:lang="en">Issues fixed</source>
+<target xml:lang="pt">Issues fixed</target>
+</trans-unit>
+<trans-unit id="tu140" xml:space="preserve">
+<source xml:lang="en">Game Studio</source>
+<target xml:lang="pt">Game Studio</target>
+</trans-unit>
+<trans-unit id="tu141" xml:space="preserve">
+<source xml:lang="en">Moving or renaming an asset that has overridden properties (eg. a scene using prefabs) was loosing override information once saved.</source>
+<target xml:lang="pt">Moving or renaming an asset that has overridden properties (eg. a scene using prefabs) was loosing override information once saved.</target>
+</trans-unit>
+<trans-unit id="tu142" xml:space="preserve">
+<source xml:lang="en">Engine</source>
+<target xml:lang="pt">Engine</target>
+</trans-unit>
+<trans-unit id="tu143" xml:space="preserve">
+<source xml:lang="en">Normal maps issue fixed where z-component was wrongly assumed to be 1 (it's now equal to sqrt(1 - x^2 - y^2))</source>
+<target xml:lang="pt">Normal maps issue fixed where z-component was wrongly assumed to be 1 (it's now equal to sqrt(1 - x^2 - y^2))</target>
+</trans-unit>
+<trans-unit id="tu144" xml:space="preserve">
+<source xml:lang="en">Depth of Field halo around foreground objects issue resolved</source>
+<target xml:lang="pt">Depth of Field halo around foreground objects issue resolved</target>
+</trans-unit>
+<trans-unit id="tu145" xml:space="preserve">
+<source xml:lang="en">Samples</source>
+<target xml:lang="pt">Samples</target>
+</trans-unit>
+<trans-unit id="tu146" xml:space="preserve">
+<source xml:lang="en">Missing normal maps on some samples have been restored</source>
+<target xml:lang="pt">Missing normal maps on some samples have been restored</target>
+</trans-unit>
+<trans-unit id="tu147" xml:space="preserve">
+<source xml:lang="en">Version 1.9.2-beta</source>
+<target xml:lang="pt">Version 1.9.2-beta</target>
+</trans-unit>
+<trans-unit id="tu148" xml:space="preserve">
+<source xml:lang="en">Release date 2016/12/13</source>
+<target xml:lang="pt">Release date 2016/12/13</target>
+</trans-unit>
+<trans-unit id="tu149" xml:space="preserve">
+<source xml:lang="en">Enhancements</source>
+<target xml:lang="pt">Enhancements</target>
+</trans-unit>
+<trans-unit id="tu150" xml:space="preserve">
+<source xml:lang="en">Game Studio</source>
+<target xml:lang="pt">Game Studio</target>
+</trans-unit>
+<trans-unit id="tu151" xml:space="preserve">
+<source xml:lang="en">Maintaining ALT key down when dropping a prefab into a scene won't create a container entity for the prefab instance.</source>
+<target xml:lang="pt">Maintaining ALT key down when dropping a prefab into a scene won't create a container entity for the prefab instance.</target>
+</trans-unit>
+<trans-unit id="tu152" xml:space="preserve">
+<source xml:lang="en">Creation of prefabs from entities that are already instances of other prefabs and contains overridden properties will maintain prefab links and overrides in the newly created prefab.</source>
+<target xml:lang="pt">Creation of prefabs from entities that are already instances of other prefabs and contains overridden properties will maintain prefab links and overrides in the newly created prefab.</target>
+</trans-unit>
+<trans-unit id="tu153" xml:space="preserve">
+<source xml:lang="en">Issues fixed</source>
+<target xml:lang="pt">Issues fixed</target>
+</trans-unit>
+<trans-unit id="tu154" xml:space="preserve">
+<source xml:lang="en">Game Studio</source>
+<target xml:lang="pt">Game Studio</target>
+</trans-unit>
+<trans-unit id="tu155" xml:space="preserve">
+<source xml:lang="en">Duplicating an entity that was linked to a prefab was not maintaining the prefab link to the copy in some scenarios.</source>
+<target xml:lang="pt">Duplicating an entity that was linked to a prefab was not maintaining the prefab link to the copy in some scenarios.</target>
+</trans-unit>
+<trans-unit id="tu156" xml:space="preserve">
+<source xml:lang="en">Adding a new or existing package to a solution was causing a crash.</source>
+<target xml:lang="pt">Adding a new or existing package to a solution was causing a crash.</target>
+</trans-unit>
+<trans-unit id="tu157" xml:space="preserve">
+<source xml:lang="en">Fix hashing of source files to detect if an source file has changed.</source>
+<target xml:lang="pt">Fix hashing of source files to detect if an source file has changed.</target>
+</trans-unit>
+<trans-unit id="tu158" xml:space="preserve">
+<source xml:lang="en">Adding a component that requires unicity to a prefab when one of the instance already had an instance of this prefab was crashing.</source>
+<target xml:lang="pt">Adding a component that requires unicity to a prefab when one of the instance already had an instance of this prefab was crashing.</target>
+</trans-unit>
+<trans-unit id="tu159" xml:space="preserve">
+<source xml:lang="en">Fix a crash that could occurs when removing an animation or a sound from an Animation Component or an Audio Emitter Component while the Game Studio was still compiling the asset.</source>
+<target xml:lang="pt">Fix a crash that could occurs when removing an animation or a sound from an Animation Component or an Audio Emitter Component while the Game Studio was still compiling the asset.</target>
+</trans-unit>
+<trans-unit id="tu160" xml:space="preserve">
+<source xml:lang="en">Render stages are now properly re-evaluated when a property affecting rendering is modified (eg. casting shadows, adding transparency to a material...)</source>
+<target xml:lang="pt">Render stages are now properly re-evaluated when a property affecting rendering is modified (eg. casting shadows, adding transparency to a material...)</target>
+</trans-unit>
+<trans-unit id="tu161" xml:space="preserve">
+<source xml:lang="en">Fix insert position when dropping multiple assets into a scene at the same time</source>
+<target xml:lang="pt">Fix insert position when dropping multiple assets into a scene at the same time</target>
+</trans-unit>
+<trans-unit id="tu162" xml:space="preserve">
+<source xml:lang="en">Fix opening a scene from a package project that is not a game was crashing.</source>
+<target xml:lang="pt">Fix opening a scene from a package project that is not a game was crashing.</target>
+</trans-unit>
+<trans-unit id="tu163" xml:space="preserve">
+<source xml:lang="en">Fix a crash that was occurring when adding a new Override in the GameSettings asset</source>
+<target xml:lang="pt">Fix a crash that was occurring when adding a new Override in the GameSettings asset</target>
+</trans-unit>
+<trans-unit id="tu164" xml:space="preserve">
+<source xml:lang="en">Fix an issue when copy/pasting a component that requires unicity to an entity that already has one. Now the user will be correctly prompted whether this component should be replaced by the copy.</source>
+<target xml:lang="pt">Fix an issue when copy/pasting a component that requires unicity to an entity that already has one. Now the user will be correctly prompted whether this component should be replaced by the copy.</target>
+</trans-unit>
+<trans-unit id="tu165" xml:space="preserve">
+<source xml:lang="en">Fix incorrect filter list of asset types in the asset view.</source>
+<target xml:lang="pt">Fix incorrect filter list of asset types in the asset view.</target>
+</trans-unit>
+<trans-unit id="tu166" xml:space="preserve">
+<source xml:lang="en">Engine</source>
+<target xml:lang="pt">Engine</target>
+</trans-unit>
+<trans-unit id="tu167" xml:space="preserve">
+<source xml:lang="en">Fix an issue in the code detecting when a second component of the same type is added to an entity that should accept only one component of that type.</source>
+<target xml:lang="pt">Fix an issue in the code detecting when a second component of the same type is added to an entity that should accept only one component of that type.</target>
+</trans-unit>
+<trans-unit id="tu168" xml:space="preserve">
+<source xml:lang="en">Spotlights with shadows bug fix where multiple spotlights would reference the wrong shadowmap.</source>
+<target xml:lang="pt">Spotlights with shadows bug fix where multiple spotlights would reference the wrong shadowmap.</target>
+</trans-unit>
+<trans-unit id="tu169" xml:space="preserve">
+<source xml:lang="en">Normal maps property names changed and some shader crashes fixed.</source>
+<target xml:lang="pt">Normal maps property names changed and some shader crashes fixed.</target>
+</trans-unit>
+<trans-unit id="tu170" xml:space="preserve">
+<source xml:lang="en">Fix compressed normal maps having different signedness on different platforms; they are now always unsigned</source>
+<target xml:lang="pt">Fix compressed normal maps having different signedness on different platforms; they are now always unsigned</target>
+</trans-unit>
+<trans-unit id="tu171" xml:space="preserve">
+<source xml:lang="en">Fix Z component of normal maps when Scale &amp; Offset is enabled</source>
+<target xml:lang="pt">Fix Z component of normal maps when Scale &amp; Offset is enabled</target>
+</trans-unit>
+<trans-unit id="tu172" xml:space="preserve">
+<source xml:lang="en">Fix NaN values in normal mapping which caused glitches in post effects</source>
+<target xml:lang="pt">Fix NaN values in normal mapping which caused glitches in post effects</target>
+</trans-unit>
+<trans-unit id="tu173" xml:space="preserve">
+<source xml:lang="en">Fix shadow map range computation that caused parts of the scene not to be lit</source>
+<target xml:lang="pt">Fix shadow map range computation that caused parts of the scene not to be lit</target>
+</trans-unit>
+<trans-unit id="tu174" xml:space="preserve">
+<source xml:lang="en">Reenable shadow cascade blending when automatic depth range computation is enabled and reduce the region of blending</source>
+<target xml:lang="pt">Reenable shadow cascade blending when automatic depth range computation is enabled and reduce the region of blending</target>
+</trans-unit>
+<trans-unit id="tu175" xml:space="preserve">
+<source xml:lang="en">Fix invalid IL that prevented building UWP apps in release mode</source>
+<target xml:lang="pt">Fix invalid IL that prevented building UWP apps in release mode</target>
+</trans-unit>
+<trans-unit id="tu176" xml:space="preserve">
+<source xml:lang="en">Version 1.9.3-beta</source>
+<target xml:lang="pt">Version 1.9.3-beta</target>
+</trans-unit>
+<trans-unit id="tu177" xml:space="preserve">
+<source xml:lang="en">Release date 2017/1/11</source>
+<target xml:lang="pt">Release date 2017/1/11</target>
+</trans-unit>
+<trans-unit id="tu178" xml:space="preserve">
+<source xml:lang="en">Enhancement</source>
+<target xml:lang="pt">Enhancement</target>
+</trans-unit>
+<trans-unit id="tu179" xml:space="preserve">
+<source xml:lang="en">Game Studio</source>
+<target xml:lang="pt">Game Studio</target>
+</trans-unit>
+<trans-unit id="tu180" xml:space="preserve">
+<source xml:lang="en">Maintaining ALT key down while moving an entity to a different parent will now keep its absolute position/orientation/scale</source>
+<target xml:lang="pt">Maintaining ALT key down while moving an entity to a different parent will now keep its absolute position/orientation/scale</target>
+</trans-unit>
+<trans-unit id="tu181" xml:space="preserve">
+<source xml:lang="en">Display the current version of Xenko in the Project Selection window</source>
+<target xml:lang="pt">Display the current version of Xenko in the Project Selection window</target>
+</trans-unit>
+<trans-unit id="tu182" xml:space="preserve">
+<source xml:lang="en">Add more logging messages when creating a new project</source>
+<target xml:lang="pt">Add more logging messages when creating a new project</target>
+</trans-unit>
+<trans-unit id="tu183" xml:space="preserve">
+<source xml:lang="en">Improve tab header presentation, allow to see all open editors at once</source>
+<target xml:lang="pt">Improve tab header presentation, allow to see all open editors at once</target>
+</trans-unit>
+<trans-unit id="tu184" xml:space="preserve">
+<source xml:lang="en">Engine</source>
+<target xml:lang="pt">Engine</target>
+</trans-unit>
+<trans-unit id="tu185" xml:space="preserve">
+<source xml:lang="en">Animation: UpdateEngine (used by animation system to update values) will skip updating values if target is an array or list (i.e. list of bones) whose size is not big enough. This was previously leading to memory corruption.</source>
+<target xml:lang="pt">Animation: UpdateEngine (used by animation system to update values) will skip updating values if target is an array or list (i.e. list of bones) whose size is not big enough. This was previously leading to memory corruption.</target>
+</trans-unit>
+<trans-unit id="tu186" xml:space="preserve">
+<source xml:lang="en">Issues fixed</source>
+<target xml:lang="pt">Issues fixed</target>
+</trans-unit>
+<trans-unit id="tu187" xml:space="preserve">
+<source xml:lang="en">Game Studio</source>
+<target xml:lang="pt">Game Studio</target>
+</trans-unit>
+<trans-unit id="tu188" xml:space="preserve">
+<source xml:lang="en">Fix issues with collection properties in the property grid.</source>
+<target xml:lang="pt">Fix issues with collection properties in the property grid.</target>
+</trans-unit>
+<trans-unit id="tu189" xml:space="preserve">
+<source xml:lang="en">Fix an issue where thumbnail backgrounds get dark when in Gamma rendering pipeline.</source>
+<target xml:lang="pt">Fix an issue where thumbnail backgrounds get dark when in Gamma rendering pipeline.</target>
+</trans-unit>
+<trans-unit id="tu190" xml:space="preserve">
+<source xml:lang="en">Fix some broken cases when clearing the archetype of an asset</source>
+<target xml:lang="pt">Fix some broken cases when clearing the archetype of an asset</target>
+</trans-unit>
+<trans-unit id="tu191" xml:space="preserve">
+<source xml:lang="en">Fix a crash when dropping an object into the viewport</source>
+<target xml:lang="pt">Fix a crash when dropping an object into the viewport</target>
+</trans-unit>
+<trans-unit id="tu192" xml:space="preserve">
+<source xml:lang="en">Fix many crashes and issues occurring when moving or duplicating entities and folders in the entity tree of a scene or a prefab</source>
+<target xml:lang="pt">Fix many crashes and issues occurring when moving or duplicating entities and folders in the entity tree of a scene or a prefab</target>
+</trans-unit>
+<trans-unit id="tu193" xml:space="preserve">
+<source xml:lang="en">Fix some issues with selection of entities</source>
+<target xml:lang="pt">Fix some issues with selection of entities</target>
+</trans-unit>
+<trans-unit id="tu194" xml:space="preserve">
+<source xml:lang="en">Fix issues with some pane of the editor not being visible while they were checked as visible in the View menu</source>
+<target xml:lang="pt">Fix issues with some pane of the editor not being visible while they were checked as visible in the View menu</target>
+</trans-unit>
+<trans-unit id="tu195" xml:space="preserve">
+<source xml:lang="en">Prevent TreeViews to change scroll position when selecting an item if they were scrolled to another position while they didn't have the focus</source>
+<target xml:lang="pt">Prevent TreeViews to change scroll position when selecting an item if they were scrolled to another position while they didn't have the focus</target>
+</trans-unit>
+<trans-unit id="tu196" xml:space="preserve">
+<source xml:lang="en">Fix properties that were all grayed when selecting multiple objects.</source>
+<target xml:lang="pt">Fix properties that were all grayed when selecting multiple objects.</target>
+</trans-unit>
+<trans-unit id="tu197" xml:space="preserve">
+<source xml:lang="en">Fix a case where Script assets would not open in the external text editor.</source>
+<target xml:lang="pt">Fix a case where Script assets would not open in the external text editor.</target>
+</trans-unit>
+<trans-unit id="tu198" xml:space="preserve">
+<source xml:lang="en">Particles</source>
+<target xml:lang="pt">Particles</target>
+</trans-unit>
+<trans-unit id="tu199" xml:space="preserve">
+<source xml:lang="en">Fix a bug where Edge and Center definitions for trail shape renderer were swapped</source>
+<target xml:lang="pt">Fix a bug where Edge and Center definitions for trail shape renderer were swapped</target>
+</trans-unit>
+<trans-unit id="tu200" xml:space="preserve">
+<source xml:lang="en">Fix a bug where None for particle material still displays color</source>
+<target xml:lang="pt">Fix a bug where None for particle material still displays color</target>
+</trans-unit>
+<trans-unit id="tu201" xml:space="preserve">
+<source xml:lang="en">Physics</source>
+<target xml:lang="pt">Physics</target>
+</trans-unit>
+<trans-unit id="tu202" xml:space="preserve">
+<source xml:lang="en">Fix 2D boxes shapes collisions.</source>
+<target xml:lang="pt">Fix 2D boxes shapes collisions.</target>
+</trans-unit>
+<trans-unit id="tu203" xml:space="preserve">
+<source xml:lang="en">Fix drawing of Characters debug shapes at run-time.</source>
+<target xml:lang="pt">Fix drawing of Characters debug shapes at run-time.</target>
+</trans-unit>
+<trans-unit id="tu204" xml:space="preserve">
+<source xml:lang="en">Throwing if mass is negative.</source>
+<target xml:lang="pt">Throwing if mass is negative.</target>
+</trans-unit>
+<trans-unit id="tu205" xml:space="preserve">
+<source xml:lang="en">Fixed an issue with scaling and single collider shapes</source>
+<target xml:lang="pt">Fixed an issue with scaling and single collider shapes</target>
+</trans-unit>
+<trans-unit id="tu206" xml:space="preserve">
+<source xml:lang="en">Audio</source>
+<target xml:lang="pt">Audio</target>
+</trans-unit>
+<trans-unit id="tu207" xml:space="preserve">
+<source xml:lang="en">Fix XAudio audio clipping when sounds were not looped.</source>
+<target xml:lang="pt">Fix XAudio audio clipping when sounds were not looped.</target>
+</trans-unit>
+<trans-unit id="tu208" xml:space="preserve">
+<source xml:lang="en">Fix OpenSLES multiple play of non looped sound.</source>
+<target xml:lang="pt">Fix OpenSLES multiple play of non looped sound.</target>
+</trans-unit>
+<trans-unit id="tu209" xml:space="preserve">
+<source xml:lang="en">Improvements</source>
+<target xml:lang="pt">Improvements</target>
+</trans-unit>
+<trans-unit id="tu210" xml:space="preserve">
+<source xml:lang="en">Game Studio</source>
+<target xml:lang="pt">Game Studio</target>
+</trans-unit>
+<trans-unit id="tu211" xml:space="preserve">
+<source xml:lang="en">Normal maps and Grayscale textures will now appear as 3-channel textures in the thumbnails and the preview.</source>
+<target xml:lang="pt">Normal maps and Grayscale textures will now appear as 3-channel textures in the thumbnails and the preview.</target>
+</trans-unit>
+<trans-unit id="tu212" xml:space="preserve">
+<source xml:lang="en">Connection Router</source>
+<target xml:lang="pt">Connection Router</target>
+</trans-unit>
+<trans-unit id="tu213" xml:space="preserve">
+<source xml:lang="en">Due to the way adb was spawning a daemon process, connection router port was locked due to socket handle inheritability. This is now properly disabled.</source>
+<target xml:lang="pt">Due to the way adb was spawning a daemon process, connection router port was locked due to socket handle inheritability. This is now properly disabled.</target>
+</trans-unit>
+<trans-unit id="tu214" xml:space="preserve">
+<source xml:lang="en">Known Issues</source>
+<target xml:lang="pt">Known Issues</target>
+</trans-unit>
+<trans-unit id="tu215" xml:space="preserve">
+<source xml:lang="en">On Linux, when switching the underlying Graphics Platform, rendering will not occur or fail. Delete the cache, local and roaming folder on the Linux host and restarting the game should fix the issue.</source>
+<target xml:lang="pt">On Linux, when switching the underlying Graphics Platform, rendering will not occur or fail. Delete the cache, local and roaming folder on the Linux host and restarting the game should fix the issue.</target>
+</trans-unit>
+<trans-unit id="tu216" xml:space="preserve">
+<source xml:lang="en">Performance issues on mobile (being worked on)</source>
+<target xml:lang="pt">Performance issues on mobile (being worked on)</target>
+</trans-unit>
+<trans-unit id="tu217" xml:space="preserve">
+<source xml:lang="en">On iOS if <g id="1">Enable device-specific builds</g> is toggled on (from the project properties) it won't be possible to debug game code. Please manually select the architecture of your device from the Advanced tab to speed up your development.</source>
+<target xml:lang="pt">On iOS if <g id="1">Enable device-specific builds</g> is toggled on (from the project properties) it won't be possible to debug game code. Please manually select the architecture of your device from the Advanced tab to speed up your development.</target>
+</trans-unit>
+</body>
+</file>
+</xliff>

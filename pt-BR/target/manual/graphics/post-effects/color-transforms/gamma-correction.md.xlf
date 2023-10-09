@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" xmlns:okp="okapi-framework:xliff-extensions" its:version="2.0" version="1.2">
+<file datatype="x-text/x-markdown" okp:inputEncoding="UTF-8" original="/D:/repos/rr/source/manual/graphics/post-effects/color-transforms/gamma-correction.md" source-language="en" target-language="pt">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en">Gamma correction</source>
+<target xml:lang="pt">Gamma correction</target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Beginner<x id="2"/>
+<x id="3"/>Artist<x id="4"/>
+<x id="5"/>Programmer<x id="6"/></source>
+<target xml:lang="pt"><x id="1"/>Beginner<x id="2"/>
+<x id="3"/>Artist<x id="4"/>
+<x id="5"/>Programmer<x id="6"/></target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">All post effect calculations are made in a linear space (ie RGB space). This means doubling the color value of a pixel doubles the light it emits. This guarantees correct lighting calculations.</source>
+<target xml:lang="pt">All post effect calculations are made in a linear space (ie RGB space). This means doubling the color value of a pixel doubles the light it emits. This guarantees correct lighting calculations.</target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">However, real-world computer monitors don't behave this way: for dark color values they tend to emit much less light than they should. For this reason, after our other post effects have been applied, we apply <g id="1">gamma correction</g> to transform our image from a linear space to a sRGB space (or gamma space).</source>
+<target xml:lang="pt">However, real-world computer monitors don't behave this way: for dark color values they tend to emit much less light than they should. For this reason, after our other post effects have been applied, we apply <g id="1">gamma correction</g> to transform our image from a linear space to a sRGB space (or gamma space).</target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">A buffer in the sRGB space displays correctly on a monitor or a TV screen.</source>
+<target xml:lang="pt">A buffer in the sRGB space displays correctly on a monitor or a TV screen.</target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>media/gamma-correction-1.png<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>media/gamma-correction-1.png<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en">Non-gamma-corrected images have dark areas appear darker than they're supposed to.</source>
+<target xml:lang="pt">Non-gamma-corrected images have dark areas appear darker than they're supposed to.</target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>media/gamma-correction-2.png<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>media/gamma-correction-2.png<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en">Properties</source>
+<target xml:lang="pt">Properties</target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en">Property</source>
+<target xml:lang="pt">Property</target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en">Description</source>
+<target xml:lang="pt">Description</target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en">Value</source>
+<target xml:lang="pt">Value</target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en">Gamma value. A typical value is around 2.2.</source>
+<target xml:lang="pt">Gamma value. A typical value is around 2.2.</target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en">See also</source>
+<target xml:lang="pt">See also</target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en"><g id="1">Gamma correction (Wikipedia)</g></source>
+<target xml:lang="pt"><g id="1">Gamma correction (Wikipedia)</g></target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en"><g id="1">Film grain</g></source>
+<target xml:lang="pt"><g id="1">Film grain</g></target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en"><g id="1">ToneMap</g></source>
+<target xml:lang="pt"><g id="1">ToneMap</g></target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en"><g id="1">Vignetting</g></source>
+<target xml:lang="pt"><g id="1">Vignetting</g></target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en"><g id="1">Custom color transforms</g></source>
+<target xml:lang="pt"><g id="1">Custom color transforms</g></target>
+</trans-unit>
+</body>
+</file>
+</xliff>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" xmlns:okp="okapi-framework:xliff-extensions" its:version="2.0" version="1.2">
+<file datatype="x-text/x-markdown" okp:inputEncoding="UTF-8" original="/D:/repos/rr/source/manual/audio/hrtf.md" source-language="en" target-language="pt">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en">Head-related transfer function (HRTF) audio</source>
+<target xml:lang="pt">Head-related transfer function (HRTF) audio</target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en"><g id="1">Head-related transfer function (HRTF)</g> is an advanced way of rendering audio so that sounds appear to come from a specific point in 3D space, synthesizing binaural audio. It provides more realistic audio than standard <g id="2">spatialized audio</g>. For example, with HRTF, the player can hear whether a character is above or below them. This is particularly useful for <g id="3">VR applications</g>, as it increases immersion.</source>
+<target xml:lang="pt"><g id="1">Head-related transfer function (HRTF)</g> is an advanced way of rendering audio so that sounds appear to come from a specific point in 3D space, synthesizing binaural audio. It provides more realistic audio than standard <g id="2">spatialized audio</g>. For example, with HRTF, the player can hear whether a character is above or below them. This is particularly useful for <g id="3">VR applications</g>, as it increases immersion.</target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">Players don't need special hardware to use HRTF. However, the effect works much better with headphones than speakers.</source>
+<target xml:lang="pt">Players don't need special hardware to use HRTF. However, the effect works much better with headphones than speakers.</target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">This video demonstrates the effect of HRTF audio:</source>
+<target xml:lang="pt">This video demonstrates the effect of HRTF audio:</target>
+</trans-unit>
+<group id="sd1_ssf1" resname="sub-filter:sd1">
+<trans-unit id="sd1_sf1_tu1" resname="sd1_1" restype="x-paragraph" xml:space="preserve">
+<source xml:lang="en">
+</source>
+<target xml:lang="pt">
+</target>
+</trans-unit>
+</group>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>!Note<x id="2"/>
+For now, you can only use HRTF on Windows 10.</source>
+<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
+For now, you can only use HRTF on Windows 10.</target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en">Enable HRTF</source>
+<target xml:lang="pt">Enable HRTF</target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en">To use HRTF, first enable it globally in the <g id="1">Game Settings</g> asset, then enable HRTF on the entities you want to use it with.</source>
+<target xml:lang="pt">To use HRTF, first enable it globally in the <g id="1">Game Settings</g> asset, then enable HRTF on the entities you want to use it with.</target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en">1. Enable HRTF globally</source>
+<target xml:lang="pt">1. Enable HRTF globally</target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en">In the <g id="1">Solution Explorer</g> (the bottom-left pane by default), select the <g id="2">Assets folder</g>.</source>
+<target xml:lang="pt">In the <g id="1">Solution Explorer</g> (the bottom-left pane by default), select the <g id="2">Assets folder</g>.</target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Select Assets folder asset<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Select Assets folder asset<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en">In the <g id="1">Asset View</g> (the bottom pane by default), select the <g id="2">GameSettings</g> asset.</source>
+<target xml:lang="pt">In the <g id="1">Asset View</g> (the bottom pane by default), select the <g id="2">GameSettings</g> asset.</target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Select Game Settings asset<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Select Game Settings asset<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en">In the <g id="1">Property Grid</g> (the right-hand pane by default), under <g id="2">Audio settings</g>, select <g id="3">HRTF support</g>.</source>
+<target xml:lang="pt">In the <g id="1">Property Grid</g> (the right-hand pane by default), under <g id="2">Audio settings</g>, select <g id="3">HRTF support</g>.</target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Audio settings<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Audio settings<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en">For more information about the Game Settings asset, see <g id="1">Game settings</g>.</source>
+<target xml:lang="pt">For more information about the Game Settings asset, see <g id="1">Game settings</g>.</target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en">2. Enable HRTF on the entities</source>
+<target xml:lang="pt">2. Enable HRTF on the entities</target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en">Select the entity with the <g id="1">audio emitter</g> that contains the sound you want to enable for HRTF.</source>
+<target xml:lang="pt">Select the entity with the <g id="1">audio emitter</g> that contains the sound you want to enable for HRTF.</target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en">In the <g id="1">Property Grid</g> (on the right by default), under <g id="2">Audio emitter</g>, select <g id="3">Use HRTF</g>.</source>
+<target xml:lang="pt">In the <g id="1">Property Grid</g> (on the right by default), under <g id="2">Audio emitter</g>, select <g id="3">Use HRTF</g>.</target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Audio emitter properties<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Audio emitter properties<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en">Sounds emitted from this entity will use HRTF.</source>
+<target xml:lang="pt">Sounds emitted from this entity will use HRTF.</target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>!Note<x id="2"/>
+The HRTF option applies to every sound emitted from this audio emitter.</source>
+<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
+The HRTF option applies to every sound emitted from this audio emitter.</target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en">For more information about audio emitters, including the properties you can change, see <g id="1">Audio emitters</g>.</source>
+<target xml:lang="pt">For more information about audio emitters, including the properties you can change, see <g id="1">Audio emitters</g>.</target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en">See also</source>
+<target xml:lang="pt">See also</target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en"><g id="1">Head-related transfer function (Wikipedia)</g></source>
+<target xml:lang="pt"><g id="1">Head-related transfer function (Wikipedia)</g></target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en"><g id="1">Spatialized audio</g></source>
+<target xml:lang="pt"><g id="1">Spatialized audio</g></target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en"><g id="1">Audio emitters</g></source>
+<target xml:lang="pt"><g id="1">Audio emitters</g></target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en"><g id="1">Audio listeners</g></source>
+<target xml:lang="pt"><g id="1">Audio listeners</g></target>
+</trans-unit>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en"><g id="1">Game settings</g></source>
+<target xml:lang="pt"><g id="1">Game settings</g></target>
+</trans-unit>
+</body>
+</file>
+</xliff>

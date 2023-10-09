@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="/D:/repos/rr/source/manual/animation/additive-animation.md" source-language="en" target-language="pt" datatype="x-text/x-markdown" okp:inputEncoding="UTF-8">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en">Additive animation</source>
+<target xml:lang="pt">Additive animation</target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Intermediate<x id="2"/>
+<x id="3"/>Designer<x id="4"/></source>
+<target xml:lang="pt"><x id="1"/>Intermediate<x id="2"/>
+<x id="3"/>Designer<x id="4"/></target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en"><g id="1">Additive animation</g> is the process of combining animations using <g id="2">difference clips</g> (also known as <g id="3">additive animation clips</g>).</source>
+<target xml:lang="pt"><g id="1">Additive animation</g> is the process of combining animations using <g id="2">difference clips</g> (also known as <g id="3">additive animation clips</g>).</target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Additive animations<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Additive animations<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">In the example above, the leftmost animation is the <g id="1">Walk</g> animation. The rightmost animation is the <g id="2">Idle</g> animation. The two animations in the center are the <g id="3">Walk</g> and <g id="4">Idle</g> animations respectively, but have the <g id="5">Reload</g> animation added to them.</source>
+<target xml:lang="pt">In the example above, the leftmost animation is the <g id="1">Walk</g> animation. The rightmost animation is the <g id="2">Idle</g> animation. The two animations in the center are the <g id="3">Walk</g> and <g id="4">Idle</g> animations respectively, but have the <g id="5">Reload</g> animation added to them.</target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en">This means we only had to create three animations: <g id="1">Walk</g>, <g id="2">Idle</g>, and <g id="3">Reload</g>. Additionally, we can add the <g id="4">Reload</g> animation to other suitable animations (eg <g id="5">Crouch</g>, <g id="6">Strafe</g> or <g id="7">Run</g>). This helps keep the memory budget and number of animations low.</source>
+<target xml:lang="pt">This means we only had to create three animations: <g id="1">Walk</g>, <g id="2">Idle</g>, and <g id="3">Reload</g>. Additionally, we can add the <g id="4">Reload</g> animation to other suitable animations (eg <g id="5">Crouch</g>, <g id="6">Strafe</g> or <g id="7">Run</g>). This helps keep the memory budget and number of animations low.</target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en">Difference clips</source>
+<target xml:lang="pt">Difference clips</target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en">A <g id="1">difference clip</g> describes the difference between two animation clips: a <g id="2">source</g> and a <g id="3">reference</g>.</source>
+<target xml:lang="pt">A <g id="1">difference clip</g> describes the difference between two animation clips: a <g id="2">source</g> and a <g id="3">reference</g>.</target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en">Take the <g id="1">Reload</g> animation above, which we want to add to other animation clips. This is our <g id="2">source</g> clip (S). Because the <g id="3">Reload</g> animation mainly involves the arms, it will blend well with animations that don't involve the arms (such as idling and crouching). We can use one of these animations — let's say the <g id="4">Idle</g> animation — as our <g id="5">reference</g> clip (R).</source>
+<target xml:lang="pt">Take the <g id="1">Reload</g> animation above, which we want to add to other animation clips. This is our <g id="2">source</g> clip (S). Because the <g id="3">Reload</g> animation mainly involves the arms, it will blend well with animations that don't involve the arms (such as idling and crouching). We can use one of these animations — let's say the <g id="4">Idle</g> animation — as our <g id="5">reference</g> clip (R).</target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en">Stride calculates the difference between the source and reference clips to create the <g id="1">difference clip</g> (D). The difference clip encodes the difference between the source and reference clips. We can express it as D = S - R.</source>
+<target xml:lang="pt">Stride calculates the difference between the source and reference clips to create the <g id="1">difference clip</g> (D). The difference clip encodes the difference between the source and reference clips. We can express it as D = S - R.</target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en">We can use use the difference clip to blend the source and reference animations. We can also use the same difference clip to blend the source animation with <g id="1">other</g> animations. If the animation you add it to is sufficiently similar to the original reference clip, then the animations blend effectively. For example, you could use it to add the reload animation to any animation that doesn't use the arms, such as crouching.</source>
+<target xml:lang="pt">We can use use the difference clip to blend the source and reference animations. We can also use the same difference clip to blend the source animation with <g id="1">other</g> animations. If the animation you add it to is sufficiently similar to the original reference clip, then the animations blend effectively. For example, you could use it to add the reload animation to any animation that doesn't use the arms, such as crouching.</target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>!Note<x id="2"/>
+Additive animations should use the same skinned mesh and skeleton.</source>
+<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
+Additive animations should use the same skinned mesh and skeleton.</target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en">Create a difference clip</source>
+<target xml:lang="pt">Create a difference clip</target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en">In the <g id="1">Asset View</g> (at the bottom by default), click <g id="2">Add asset</g> and select <g id="3">Animations > Animation</g>. A browser dialog opens.</source>
+<target xml:lang="pt">In the <g id="1">Asset View</g> (at the bottom by default), click <g id="2">Add asset</g> and select <g id="3">Animations > Animation</g>. A browser dialog opens.</target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en">As we don't need a source for this animation, click <g id="1">Cancel</g>.</source>
+<target xml:lang="pt">As we don't need a source for this animation, click <g id="1">Cancel</g>.</target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en">Game Studio asks if you want to create an animation without a source file.</source>
+<target xml:lang="pt">Game Studio asks if you want to create an animation without a source file.</target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Create animation without source file<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Create animation without source file<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en">Click <g id="1">Yes</g>. Game Studio adds a new empty animation asset to the Asset View.</source>
+<target xml:lang="pt">Click <g id="1">Yes</g>. Game Studio adds a new empty animation asset to the Asset View.</target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en">Give the asset a name that makes it easy to identify. For example, if you want to make a reload animation that can be used with other animations, you could name the asset <g id="1">ReloadAdditive</g>.</source>
+<target xml:lang="pt">Give the asset a name that makes it easy to identify. For example, if you want to make a reload animation that can be used with other animations, you could name the asset <g id="1">ReloadAdditive</g>.</target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en">In the <g id="1">Asset View</g> (bottom pane by default), select the animation asset you created.</source>
+<target xml:lang="pt">In the <g id="1">Asset View</g> (bottom pane by default), select the animation asset you created.</target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en">In the <g id="1">Property Grid</g> (on the right by default), add the <g id="2">Source</g> animation clip. This is the animation you want to apply to other animations.</source>
+<target xml:lang="pt">In the <g id="1">Property Grid</g> (on the right by default), add the <g id="2">Source</g> animation clip. This is the animation you want to apply to other animations.</target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Choose source file<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Choose source file<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>!Note<x id="2"/>
+Make sure you add the file that contains the animation itself (eg a model file such as .fbx), <g id="3">not</g> the animation asset that references it. Animation files are usually saved in the <g id="4">Resources</g> folder.</source>
+<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
+Make sure you add the file that contains the animation itself (eg a model file such as .fbx), <g id="3">not</g> the animation asset that references it. Animation files are usually saved in the <g id="4">Resources</g> folder.</target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en">Under <g id="1">Type</g>, choose <g id="2">Difference Clip</g>.</source>
+<target xml:lang="pt">Under <g id="1">Type</g>, choose <g id="2">Difference Clip</g>.</target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en">Under <g id="1">Reference</g>, specify the animation you want to use as your <g id="2">reference clip</g>. This is the animation Stride references to create a difference clip.</source>
+<target xml:lang="pt">Under <g id="1">Reference</g>, specify the animation you want to use as your <g id="2">reference clip</g>. This is the animation Stride references to create a difference clip.</target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Choose reference file<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Choose reference file<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en">Choose the <g id="1">Mode</g> from the drop-down menu.</source>
+<target xml:lang="pt">Choose the <g id="1">Mode</g> from the drop-down menu.</target>
+</trans-unit>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en"><g id="1">Animation</g> creates a difference clip from the entire source animation, referencing it frame by frame.</source>
+<target xml:lang="pt"><g id="1">Animation</g> creates a difference clip from the entire source animation, referencing it frame by frame.</target>
+</trans-unit>
+<trans-unit id="tu29" xml:space="preserve">
+<source xml:lang="en"><g id="1">FirstFrame</g> creates a difference clip from only the first frame of the source animation, as a still pose.</source>
+<target xml:lang="pt"><g id="1">FirstFrame</g> creates a difference clip from only the first frame of the source animation, as a still pose.</target>
+</trans-unit>
+<trans-unit id="tu30" xml:space="preserve">
+<source xml:lang="en">Next to <g id="1">Skeleton</g>, specify a skeleton for the difference clip.</source>
+<target xml:lang="pt">Next to <g id="1">Skeleton</g>, specify a skeleton for the difference clip.</target>
+</trans-unit>
+<trans-unit id="tu31" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Choose skeleton<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Choose skeleton<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu32" xml:space="preserve">
+<source xml:lang="en">This should be a skeleton that works for all the animations you want to blend with the difference clip. In most cases, you should use the same skeleton you used for the source and reference animations.</source>
+<target xml:lang="pt">This should be a skeleton that works for all the animations you want to blend with the difference clip. In most cases, you should use the same skeleton you used for the source and reference animations.</target>
+</trans-unit>
+<trans-unit id="tu33" xml:space="preserve">
+<source xml:lang="en">If you want to <g id="1">Preview the animation</g> in the Asset Preview,
+specify a <g id="2">Preview model</g> suitable for the animation.</source>
+<target xml:lang="pt">If you want to <g id="1">Preview the animation</g> in the Asset Preview,
+specify a <g id="2">Preview model</g> suitable for the animation.</target>
+</trans-unit>
+<trans-unit id="tu34" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Choose play mode<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Choose play mode<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu35" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>!Note<x id="2"/>
+The Asset Preview shows only the source animation you specify in the difference clip.</source>
+<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
+The Asset Preview shows only the source animation you specify in the difference clip.</target>
+</trans-unit>
+<trans-unit id="tu36" xml:space="preserve">
+<source xml:lang="en">Use an additive animation</source>
+<target xml:lang="pt">Use an additive animation</target>
+</trans-unit>
+<trans-unit id="tu37" xml:space="preserve">
+<source xml:lang="en">You can use additive animations with animations that use the same skeleton and skinned mesh.</source>
+<target xml:lang="pt">You can use additive animations with animations that use the same skeleton and skinned mesh.</target>
+</trans-unit>
+<trans-unit id="tu38" xml:space="preserve">
+<source xml:lang="en">In the <g id="1">Asset View</g> (in the bottom pane by default), click <g id="2">Add asset</g>.</source>
+<target xml:lang="pt">In the <g id="1">Asset View</g> (in the bottom pane by default), click <g id="2">Add asset</g>.</target>
+</trans-unit>
+<trans-unit id="tu39" xml:space="preserve">
+<source xml:lang="en">Select <g id="1">Scripts > Animation Start</g>.</source>
+<target xml:lang="pt">Select <g id="1">Scripts > Animation Start</g>.</target>
+</trans-unit>
+<trans-unit id="tu40" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Animation start<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Animation start<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu41" xml:space="preserve">
+<source xml:lang="en"><g id="1">AnimationStart</g> is a startup script you can use to load animations into your model, including additive animations. For more information, see <g id="2">Animation scripts</g>.</source>
+<target xml:lang="pt"><g id="1">AnimationStart</g> is a startup script you can use to load animations into your model, including additive animations. For more information, see <g id="2">Animation scripts</g>.</target>
+</trans-unit>
+<trans-unit id="tu42" xml:space="preserve">
+<source xml:lang="en">Recompile your project to apply the changes.</source>
+<target xml:lang="pt">Recompile your project to apply the changes.</target>
+</trans-unit>
+<trans-unit id="tu43" xml:space="preserve">
+<source xml:lang="en">In the <g id="1">scene view</g>, select the entity you want to animate.</source>
+<target xml:lang="pt">In the <g id="1">scene view</g>, select the entity you want to animate.</target>
+</trans-unit>
+<trans-unit id="tu44" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Select an entity<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Select an entity<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu45" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>!Note<x id="2"/>
+To animate an entity, the entity must have a model component.</source>
+<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
+To animate an entity, the entity must have a model component.</target>
+</trans-unit>
+<trans-unit id="tu46" xml:space="preserve">
+<source xml:lang="en">In the <g id="1">Property Grid</g> (on the right by default), click <g id="2">Add component</g> and choose <g id="3">Animations</g>.</source>
+<target xml:lang="pt">In the <g id="1">Property Grid</g> (on the right by default), click <g id="2">Add component</g> and choose <g id="3">Animations</g>.</target>
+</trans-unit>
+<trans-unit id="tu47" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Add animation component<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Add animation component<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu48" xml:space="preserve">
+<source xml:lang="en">Game Studio adds an animation component to the entity.</source>
+<target xml:lang="pt">Game Studio adds an animation component to the entity.</target>
+</trans-unit>
+<trans-unit id="tu49" xml:space="preserve">
+<source xml:lang="en">Click <g id="1">Add component</g> and choose the <g id="2">Animation Start</g> script.</source>
+<target xml:lang="pt">Click <g id="1">Add component</g> and choose the <g id="2">Animation Start</g> script.</target>
+</trans-unit>
+<trans-unit id="tu50" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Add animation start script<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Add animation start script<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu51" xml:space="preserve">
+<source xml:lang="en">The script lets you customize a list of animations to be loaded into your entity.</source>
+<target xml:lang="pt">The script lets you customize a list of animations to be loaded into your entity.</target>
+</trans-unit>
+<trans-unit id="tu52" xml:space="preserve">
+<source xml:lang="en">In the <g id="1">Animation Start</g> properties, next to <g id="2">Animations</g>, click <x id="3"/>Green plus button<x id="4"/> (<g id="5">Add</g>).</source>
+<target xml:lang="pt">In the <g id="1">Animation Start</g> properties, next to <g id="2">Animations</g>, click <x id="3"/>Green plus button<x id="4"/> (<g id="5">Add</g>).</target>
+</trans-unit>
+<trans-unit id="tu53" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Add animation to the list<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Add animation to the list<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu54" xml:space="preserve">
+<source xml:lang="en">Next to <g id="1">Clip</g>, specify the <g id="2">source</g> animation you set in the difference clip.</source>
+<target xml:lang="pt">Next to <g id="1">Clip</g>, specify the <g id="2">source</g> animation you set in the difference clip.</target>
+</trans-unit>
+<trans-unit id="tu55" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Specify source<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Specify source<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu56" xml:space="preserve">
+<source xml:lang="en">Next to <g id="1">Add to Animations</g>, click <x id="2"/>Green plus button<x id="3"/> (<g id="4">Add</g>).</source>
+<target xml:lang="pt">Next to <g id="1">Add to Animations</g>, click <x id="2"/>Green plus button<x id="3"/> (<g id="4">Add</g>).</target>
+</trans-unit>
+<trans-unit id="tu57" xml:space="preserve">
+<source xml:lang="en">Expand the animation properties. Next to <g id="1">Clip</g>, specify the <g id="2">reference</g> animation you set in the difference clip.</source>
+<target xml:lang="pt">Expand the animation properties. Next to <g id="1">Clip</g>, specify the <g id="2">reference</g> animation you set in the difference clip.</target>
+</trans-unit>
+<trans-unit id="tu58" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Specify source<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Specify source<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu59" xml:space="preserve">
+<source xml:lang="en">Under <g id="1">Blend Operation</g>, select <g id="2">Additive</g>.</source>
+<target xml:lang="pt">Under <g id="1">Blend Operation</g>, select <g id="2">Additive</g>.</target>
+</trans-unit>
+<trans-unit id="tu60" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Specify source<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Specify source<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu61" xml:space="preserve">
+<source xml:lang="en">Repeat the steps to add as many animations as you need.</source>
+<target xml:lang="pt">Repeat the steps to add as many animations as you need.</target>
+</trans-unit>
+<trans-unit id="tu62" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Animation start<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Animation start<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu63" xml:space="preserve">
+<source xml:lang="en">See also</source>
+<target xml:lang="pt">See also</target>
+</trans-unit>
+<trans-unit id="tu64" xml:space="preserve">
+<source xml:lang="en"><g id="1">Animation index</g></source>
+<target xml:lang="pt"><g id="1">Animation index</g></target>
+</trans-unit>
+<trans-unit id="tu65" xml:space="preserve">
+<source xml:lang="en"><g id="1">Import animations</g></source>
+<target xml:lang="pt"><g id="1">Import animations</g></target>
+</trans-unit>
+<trans-unit id="tu66" xml:space="preserve">
+<source xml:lang="en"><g id="1">Animation properties</g></source>
+<target xml:lang="pt"><g id="1">Animation properties</g></target>
+</trans-unit>
+<trans-unit id="tu67" xml:space="preserve">
+<source xml:lang="en"><g id="1">Set up animations</g></source>
+<target xml:lang="pt"><g id="1">Set up animations</g></target>
+</trans-unit>
+<trans-unit id="tu68" xml:space="preserve">
+<source xml:lang="en"><g id="1">Preview animations</g></source>
+<target xml:lang="pt"><g id="1">Preview animations</g></target>
+</trans-unit>
+<trans-unit id="tu69" xml:space="preserve">
+<source xml:lang="en"><g id="1">Animation scripts</g></source>
+<target xml:lang="pt"><g id="1">Animation scripts</g></target>
+</trans-unit>
+<trans-unit id="tu70" xml:space="preserve">
+<source xml:lang="en"><g id="1">Procedural animation</g></source>
+<target xml:lang="pt"><g id="1">Procedural animation</g></target>
+</trans-unit>
+<trans-unit id="tu71" xml:space="preserve">
+<source xml:lang="en"><g id="1">Custom blend trees</g></source>
+<target xml:lang="pt"><g id="1">Custom blend trees</g></target>
+</trans-unit>
+<trans-unit id="tu72" xml:space="preserve">
+<source xml:lang="en"><g id="1">custom attributes</g></source>
+<target xml:lang="pt"><g id="1">custom attributes</g></target>
+</trans-unit>
+</body>
+</file>
+</xliff>

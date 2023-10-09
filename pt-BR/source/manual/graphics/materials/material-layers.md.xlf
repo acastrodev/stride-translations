@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="/D:/repos/rr/source/manual/graphics/materials/material-layers.md" source-language="en" target-language="pt" datatype="x-text/x-markdown" okp:inputEncoding="UTF-8">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en">Material layers</source>
+<target xml:lang="pt">Material layers</target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Intermediate<x id="2"/>
+<x id="3"/>Artist<x id="4"/>
+<x id="5"/>Programmer<x id="6"/></source>
+<target xml:lang="pt"><x id="1"/>Intermediate<x id="2"/>
+<x id="3"/>Artist<x id="4"/>
+<x id="5"/>Programmer<x id="6"/></target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">You can combine layers of materials to build more complex materials. For example, this screenshot shows the blending of a rust material (left) with a gold material (right):</source>
+<target xml:lang="pt">You can combine layers of materials to build more complex materials. For example, this screenshot shows the blending of a rust material (left) with a gold material (right):</target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>media/material-layers-2.png<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>media/material-layers-2.png<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">This diagram shows the definition of the materials blended in the screenshot above:</source>
+<target xml:lang="pt">This diagram shows the definition of the materials blended in the screenshot above:</target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>media/material-layers-3.png<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>media/material-layers-3.png<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en">Blend maps</source>
+<target xml:lang="pt">Blend maps</target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en"><g id="1">Blend maps</g> are <g id="2">material maps</g> that determine how Game Studio blends layers. For example, you can use a texture as a blend map:</source>
+<target xml:lang="pt"><g id="1">Blend maps</g> are <g id="2">material maps</g> that determine how Game Studio blends layers. For example, you can use a texture as a blend map:</target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Blend map diagram<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Blend map diagram<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Blend map diagram<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Blend map diagram<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en">Note how the blend map texture corresponds to the patterning on the result.</source>
+<target xml:lang="pt">Note how the blend map texture corresponds to the patterning on the result.</target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en">Blend maps work the same way as any other kind of material map. For more information, see <g id="1">Material maps</g>.</source>
+<target xml:lang="pt">Blend maps work the same way as any other kind of material map. For more information, see <g id="1">Material maps</g>.</target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en">Shading models</source>
+<target xml:lang="pt">Shading models</target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en">Stride blends materials differently depending on whether their shading models (eg diffuse models, specular models, etc) are different.</source>
+<target xml:lang="pt">Stride blends materials differently depending on whether their shading models (eg diffuse models, specular models, etc) are different.</target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en">If you blend materials that have <g id="1">identical</g> shading models, Stride collects the <g id="2">attributes</g> of the materials, then applies the shading models to all of them. This saves GPU.</source>
+<target xml:lang="pt">If you blend materials that have <g id="1">identical</g> shading models, Stride collects the <g id="2">attributes</g> of the materials, then applies the shading models to all of them. This saves GPU.</target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en">If the materials have <g id="1">different</g> shading models, Stride applies each material's shading models to that material's attributes, then blends the results. This uses more GPU.</source>
+<target xml:lang="pt">If the materials have <g id="1">different</g> shading models, Stride applies each material's shading models to that material's attributes, then blends the results. This uses more GPU.</target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en">Add a layer</source>
+<target xml:lang="pt">Add a layer</target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en">Select the material you want to add a layer to.</source>
+<target xml:lang="pt">Select the material you want to add a layer to.</target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en">In the <g id="1">Property Grid</g> (on the right by default), next to <g id="2">Layers</g>, click <x id="3"/>Green plus button<x id="4"/> (<g id="5">Add</g>).</source>
+<target xml:lang="pt">In the <g id="1">Property Grid</g> (on the right by default), next to <g id="2">Layers</g>, click <x id="3"/>Green plus button<x id="4"/> (<g id="5">Add</g>).</target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Add a layer<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Add a layer<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en">Game Studio adds a layer to the material.</source>
+<target xml:lang="pt">Game Studio adds a layer to the material.</target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Empty layer<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Empty layer<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en">Next to the layer, click <x id="1"/>Hand icon<x id="2"/> (<g id="3">Select an asset</g>).</source>
+<target xml:lang="pt">Next to the layer, click <x id="1"/>Hand icon<x id="2"/> (<g id="3">Select an asset</g>).</target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en">The <g id="1">Select an asset</g> window opens.</source>
+<target xml:lang="pt">The <g id="1">Select an asset</g> window opens.</target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Select an asset<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Select an asset<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en">Specify a material you want to add as a layer and click <g id="1">OK</g>.</source>
+<target xml:lang="pt">Specify a material you want to add as a layer and click <g id="1">OK</g>.</target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en">Game Studio adds the material as a layer.</source>
+<target xml:lang="pt">Game Studio adds the material as a layer.</target>
+</trans-unit>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Added layer<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Added layer<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu29" xml:space="preserve">
+<source xml:lang="en">Next to <g id="1">Blend Map</g>, click <x id="2"/>Blue arrow button<x id="3"/> (<g id="4">Replace</g>) and select the type of blend map you want to use to blend the layers. For more information about blend maps, see <g id="5">Material maps</g>.</source>
+<target xml:lang="pt">Next to <g id="1">Blend Map</g>, click <x id="2"/>Blue arrow button<x id="3"/> (<g id="4">Replace</g>) and select the type of blend map you want to use to blend the layers. For more information about blend maps, see <g id="5">Material maps</g>.</target>
+</trans-unit>
+<trans-unit id="tu30" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Select blend map<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Select blend map<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu31" xml:space="preserve">
+<source xml:lang="en">Game Studio blends the material layers using the blend map you specified. You can add as many layers as you need.</source>
+<target xml:lang="pt">Game Studio blends the material layers using the blend map you specified. You can add as many layers as you need.</target>
+</trans-unit>
+<trans-unit id="tu32" xml:space="preserve">
+<source xml:lang="en">Layer properties</source>
+<target xml:lang="pt">Layer properties</target>
+</trans-unit>
+<trans-unit id="tu33" xml:space="preserve">
+<source xml:lang="en">Property</source>
+<target xml:lang="pt">Property</target>
+</trans-unit>
+<trans-unit id="tu34" xml:space="preserve">
+<source xml:lang="en">Description</source>
+<target xml:lang="pt">Description</target>
+</trans-unit>
+<trans-unit id="tu35" xml:space="preserve">
+<source xml:lang="en">Material</source>
+<target xml:lang="pt">Material</target>
+</trans-unit>
+<trans-unit id="tu36" xml:space="preserve">
+<source xml:lang="en">The material blended in this layer</source>
+<target xml:lang="pt">The material blended in this layer</target>
+</trans-unit>
+<trans-unit id="tu37" xml:space="preserve">
+<source xml:lang="en">Blend Map</source>
+<target xml:lang="pt">Blend Map</target>
+</trans-unit>
+<trans-unit id="tu38" xml:space="preserve">
+<source xml:lang="en">The <g id="1">blend map</g> used to blend this layer with the layer above</source>
+<target xml:lang="pt">The <g id="1">blend map</g> used to blend this layer with the layer above</target>
+</trans-unit>
+<trans-unit id="tu39" xml:space="preserve">
+<source xml:lang="en">Layer Overrides</source>
+<target xml:lang="pt">Layer Overrides</target>
+</trans-unit>
+<trans-unit id="tu40" xml:space="preserve">
+<source xml:lang="en"><g id="1">UV Scale</g>: A UV scale applied to all textures UV of the material of the layer (excluding the occlusion map)</source>
+<target xml:lang="pt"><g id="1">UV Scale</g>: A UV scale applied to all textures UV of the material of the layer (excluding the occlusion map)</target>
+</trans-unit>
+<trans-unit id="tu41" xml:space="preserve">
+<source xml:lang="en">See also</source>
+<target xml:lang="pt">See also</target>
+</trans-unit>
+<trans-unit id="tu42" xml:space="preserve">
+<source xml:lang="en"><g id="1">Material maps</g></source>
+<target xml:lang="pt"><g id="1">Material maps</g></target>
+</trans-unit>
+<trans-unit id="tu43" xml:space="preserve">
+<source xml:lang="en"><g id="1">Material attributes</g></source>
+<target xml:lang="pt"><g id="1">Material attributes</g></target>
+</trans-unit>
+<trans-unit id="tu44" xml:space="preserve">
+<source xml:lang="en"><g id="1">Material slots</g></source>
+<target xml:lang="pt"><g id="1">Material slots</g></target>
+</trans-unit>
+<trans-unit id="tu45" xml:space="preserve">
+<source xml:lang="en"><g id="1">Materials for developers</g></source>
+<target xml:lang="pt"><g id="1">Materials for developers</g></target>
+</trans-unit>
+</body>
+</file>
+</xliff>

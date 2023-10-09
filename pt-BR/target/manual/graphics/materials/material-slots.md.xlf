@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" xmlns:okp="okapi-framework:xliff-extensions" its:version="2.0" version="1.2">
+<file datatype="x-text/x-markdown" okp:inputEncoding="UTF-8" original="/D:/repos/rr/source/manual/graphics/materials/material-slots.md" source-language="en" target-language="pt">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en">Material slots</source>
+<target xml:lang="pt">Material slots</target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Intermediate<x id="2"/>
+<x id="3"/>Artist<x id="4"/>
+<x id="5"/>Programmer<x id="6"/></source>
+<target xml:lang="pt"><x id="1"/>Intermediate<x id="2"/>
+<x id="3"/>Artist<x id="4"/>
+<x id="5"/>Programmer<x id="6"/></target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">Models can use multiple materials. You can set the materials in the model's <g id="1">material slots</g>.</source>
+<target xml:lang="pt">Models can use multiple materials. You can set the materials in the model's <g id="1">material slots</g>.</target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Material slots<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Material slots<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">For example, the second material slot in this model specifies the material for the visor and the shoulder and chest plate stripes. By changing the material in this slot, we change the material used in these parts of the model.</source>
+<target xml:lang="pt">For example, the second material slot in this model specifies the material for the visor and the shoulder and chest plate stripes. By changing the material in this slot, we change the material used in these parts of the model.</target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Materials<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Materials<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en">The material slots themselves — their number and position — are defined in the model source file (eg  <g id="1">.fbx</g>, <g id="2">.obj</g>, etc). You can't edit material slots in Game Studio; you can only change which materials are used in each slot.</source>
+<target xml:lang="pt">The material slots themselves — their number and position — are defined in the model source file (eg  <g id="1">.fbx</g>, <g id="2">.obj</g>, etc). You can't edit material slots in Game Studio; you can only change which materials are used in each slot.</target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en">Set materials on a model</source>
+<target xml:lang="pt">Set materials on a model</target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en">You can change the materials a model uses in two places:</source>
+<target xml:lang="pt">You can change the materials a model uses in two places:</target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en">Under the <g id="1">Materials</g> properties of the model itself:</source>
+<target xml:lang="pt">Under the <g id="1">Materials</g> properties of the model itself:</target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Model materials<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Model materials<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>!Note<x id="2"/>
+This affects every instance of this model.</source>
+<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
+This affects every instance of this model.</target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en">In the <g id="1">model component</g> of an entity or <g id="2">prefab</g>:</source>
+<target xml:lang="pt">In the <g id="1">model component</g> of an entity or <g id="2">prefab</g>:</target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Model materials on entity<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Model materials on entity<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en">This only affects <g id="1">this</g> instance or prefab.</source>
+<target xml:lang="pt">This only affects <g id="1">this</g> instance or prefab.</target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en">Meshes and material slots</source>
+<target xml:lang="pt">Meshes and material slots</target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en">Models imported from modeling software can contain meshes. Meshes can share materials via material slots.</source>
+<target xml:lang="pt">Models imported from modeling software can contain meshes. Meshes can share materials via material slots.</target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Mesh<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Mesh<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en">The association between a mesh and a material slot is defined in the model source file. You can't change these associations in Game Studio, but you can change them in code at runtime.</source>
+<target xml:lang="pt">The association between a mesh and a material slot is defined in the model source file. You can't change these associations in Game Studio, but you can change them in code at runtime.</target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en">To change the association between a mesh and a material, use:</source>
+<target xml:lang="pt">To change the association between a mesh and a material, use:</target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en">MyModelComponent.Model.Meshes[submeshIndex].MaterialIndex = materialIndex;
+</source>
+<target xml:lang="pt">MyModelComponent.Model.Meshes[submeshIndex].MaterialIndex = materialIndex;
+</target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en">To change or add a material to the list of materials:</source>
+<target xml:lang="pt">To change or add a material to the list of materials:</target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en">MyModelComponent.Materials[ExistingOrNewMaterialIndex] = myMaterial;
+</source>
+<target xml:lang="pt">MyModelComponent.Materials[ExistingOrNewMaterialIndex] = myMaterial;
+</target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en">Merging meshes</source>
+<target xml:lang="pt">Merging meshes</target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en">When Stride draws a model with meshes, it performs one GPU draw call for each mesh. By default, to improve performance, at build time, Stride merges meshes that share materials.</source>
+<target xml:lang="pt">When Stride draws a model with meshes, it performs one GPU draw call for each mesh. By default, to improve performance, at build time, Stride merges meshes that share materials.</target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Mesh<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Mesh<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en">In the example above, there are five meshes and five draw calls. After merging, there are three meshes and three draw calls.</source>
+<target xml:lang="pt">In the example above, there are five meshes and five draw calls. After merging, there are three meshes and three draw calls.</target>
+</trans-unit>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>!Note<x id="2"/>
+When Stride merges meshes, it merges the vertex and index buffers. This means you can't draw the meshes separately at runtime, and you can't change the original mesh position (transformation matrix). The meshes become a single mesh with a single material and a single transformation matrix (relative to the model).</source>
+<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
+When Stride merges meshes, it merges the vertex and index buffers. This means you can't draw the meshes separately at runtime, and you can't change the original mesh position (transformation matrix). The meshes become a single mesh with a single material and a single transformation matrix (relative to the model).</target>
+</trans-unit>
+<trans-unit id="tu29" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>!Note<x id="2"/>
+When Stride merges meshes, it changes the draw order of elements. In the case of transparent materials, this can produce different results.</source>
+<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
+When Stride merges meshes, it changes the draw order of elements. In the case of transparent materials, this can produce different results.</target>
+</trans-unit>
+<trans-unit id="tu30" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>!Note<x id="2"/>
+When you create a <g id="3">physics collider from a model</g>, Stride builds separate convex hulls for each mesh in the model. If the meshes are merged, only one mesh remains per material, so convex hulls are also built from merged meshes.</source>
+<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
+When you create a <g id="3">physics collider from a model</g>, Stride builds separate convex hulls for each mesh in the model. If the meshes are merged, only one mesh remains per material, so convex hulls are also built from merged meshes.</target>
+</trans-unit>
+<trans-unit id="tu31" xml:space="preserve">
+<source xml:lang="en">Disable mesh merging</source>
+<target xml:lang="pt">Disable mesh merging</target>
+</trans-unit>
+<trans-unit id="tu32" xml:space="preserve">
+<source xml:lang="en">You might want to disable mesh merging if you want to:</source>
+<target xml:lang="pt">You might want to disable mesh merging if you want to:</target>
+</trans-unit>
+<trans-unit id="tu33" xml:space="preserve">
+<source xml:lang="en">animate a mesh</source>
+<target xml:lang="pt">animate a mesh</target>
+</trans-unit>
+<trans-unit id="tu34" xml:space="preserve">
+<source xml:lang="en">change the material of a mesh at runtime</source>
+<target xml:lang="pt">change the material of a mesh at runtime</target>
+</trans-unit>
+<trans-unit id="tu35" xml:space="preserve">
+<source xml:lang="en">To disable mesh merging on a model:</source>
+<target xml:lang="pt">To disable mesh merging on a model:</target>
+</trans-unit>
+<trans-unit id="tu36" xml:space="preserve">
+<source xml:lang="en">Select the model you want to disable mesh merging for.</source>
+<target xml:lang="pt">Select the model you want to disable mesh merging for.</target>
+</trans-unit>
+<trans-unit id="tu37" xml:space="preserve">
+<source xml:lang="en">In the <g id="1">Property Grid</g>, disable <g id="2">Merge meshes</g>.</source>
+<target xml:lang="pt">In the <g id="1">Property Grid</g>, disable <g id="2">Merge meshes</g>.</target>
+</trans-unit>
+<trans-unit id="tu38" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Disable merge meshes<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Disable merge meshes<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu39" xml:space="preserve">
+<source xml:lang="en">Disable merging for specific meshes</source>
+<target xml:lang="pt">Disable merging for specific meshes</target>
+</trans-unit>
+<trans-unit id="tu40" xml:space="preserve">
+<source xml:lang="en">To disable merging only for specific meshes, enable their corresponding <g id="1">nodes</g>.</source>
+<target xml:lang="pt">To disable merging only for specific meshes, enable their corresponding <g id="1">nodes</g>.</target>
+</trans-unit>
+<trans-unit id="tu41" xml:space="preserve">
+<source xml:lang="en">Select the model that contains the meshes.</source>
+<target xml:lang="pt">Select the model that contains the meshes.</target>
+</trans-unit>
+<trans-unit id="tu42" xml:space="preserve">
+<source xml:lang="en">In the <g id="1">Property Grid</g>, under <g id="2">Skeleton</g>, make sure the model has a skeleton associated with it.</source>
+<target xml:lang="pt">In the <g id="1">Property Grid</g>, under <g id="2">Skeleton</g>, make sure the model has a skeleton associated with it.</target>
+</trans-unit>
+<trans-unit id="tu43" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Model skeleton<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Model skeleton<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu44" xml:space="preserve">
+<source xml:lang="en">For more information about skeletons, see <g id="1">Animation</g>.</source>
+<target xml:lang="pt">For more information about skeletons, see <g id="1">Animation</g>.</target>
+</trans-unit>
+<trans-unit id="tu45" xml:space="preserve">
+<source xml:lang="en">In the <g id="1">Asset View</g>, select the skeleton.</source>
+<target xml:lang="pt">In the <g id="1">Asset View</g>, select the skeleton.</target>
+</trans-unit>
+<trans-unit id="tu46" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Select model skeleton<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Select model skeleton<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu47" xml:space="preserve">
+<source xml:lang="en">In the <g id="1">Property Grid</g>, under <g id="2">Nodes</g>, select the nodes that correspond to the meshes you don't want to merge.</source>
+<target xml:lang="pt">In the <g id="1">Property Grid</g>, under <g id="2">Nodes</g>, select the nodes that correspond to the meshes you don't want to merge.</target>
+</trans-unit>
+<trans-unit id="tu48" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Nodes<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Nodes<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu49" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>!Tip<x id="2"/>
+To see which nodes correspond to which mesh, open the model source file in a modeling application such as Maya.</source>
+<target xml:lang="pt"><x id="1"/>!Tip<x id="2"/>
+To see which nodes correspond to which mesh, open the model source file in a modeling application such as Maya.</target>
+</trans-unit>
+<trans-unit id="tu50" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>!Note<x id="2"/>
+Make sure you don't disable nodes that are animated at runtime.</source>
+<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
+Make sure you don't disable nodes that are animated at runtime.</target>
+</trans-unit>
+<trans-unit id="tu51" xml:space="preserve">
+<source xml:lang="en">See also</source>
+<target xml:lang="pt">See also</target>
+</trans-unit>
+<trans-unit id="tu52" xml:space="preserve">
+<source xml:lang="en"><g id="1">Material maps</g></source>
+<target xml:lang="pt"><g id="1">Material maps</g></target>
+</trans-unit>
+<trans-unit id="tu53" xml:space="preserve">
+<source xml:lang="en"><g id="1">Material attributes</g></source>
+<target xml:lang="pt"><g id="1">Material attributes</g></target>
+</trans-unit>
+<trans-unit id="tu54" xml:space="preserve">
+<source xml:lang="en"><g id="1">Material slots</g></source>
+<target xml:lang="pt"><g id="1">Material slots</g></target>
+</trans-unit>
+</body>
+</file>
+</xliff>

@@ -1,0 +1,991 @@
+{
+    "filename": "manual\\graphics\\post-effects\\color-transforms\\custom-color-transforms.md.xlf",
+    "files": [
+        {
+            "\/D:\/repos\/rr\/source\/manual\/graphics\/post-effects\/color-transforms\/custom-color-transforms.md": [
+                [
+                    "Custom color transforms",
+                    "",
+                    "Custom color transforms",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/post-effects\/color-transforms\/custom-color-transforms.md",
+                    {
+                        "id": "tu1"
+                    }
+                ],
+                [
+                    "<x1\/>Advanced<x2\/>",
+                    "",
+                    "<x1\/>Advanced<x2\/>\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/post-effects\/color-transforms\/custom-color-transforms.md",
+                    {
+                        "id": "tu2"
+                    }
+                ],
+                [
+                    "<x3\/>Programmer<x4\/>",
+                    "",
+                    "<x3\/>Programmer<x4\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/post-effects\/color-transforms\/custom-color-transforms.md",
+                    {
+                        "id": "tu2"
+                    }
+                ],
+                [
+                    "You can write your own <g1>custom color transform<\/g1> effects.",
+                    "",
+                    "You can write your own <g1>custom color transform<\/g1> effects.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/post-effects\/color-transforms\/custom-color-transforms.md",
+                    {
+                        "id": "tu3"
+                    }
+                ],
+                [
+                    "For example, you can create:",
+                    "",
+                    " For example, you can create:",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/post-effects\/color-transforms\/custom-color-transforms.md",
+                    {
+                        "id": "tu3"
+                    }
+                ],
+                [
+                    "water droplets on the camera",
+                    "",
+                    "water droplets on the camera",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/post-effects\/color-transforms\/custom-color-transforms.md",
+                    {
+                        "id": "tu4"
+                    }
+                ],
+                [
+                    "screen transitions (such as fade-ins and fade-outs)",
+                    "",
+                    "screen transitions (such as fade-ins and fade-outs)",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/post-effects\/color-transforms\/custom-color-transforms.md",
+                    {
+                        "id": "tu5"
+                    }
+                ],
+                [
+                    "effects simulating pain or intoxication (eg by applying tints or other effects)",
+                    "",
+                    "effects simulating pain or intoxication (eg by applying tints or other effects)",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/post-effects\/color-transforms\/custom-color-transforms.md",
+                    {
+                        "id": "tu6"
+                    }
+                ],
+                [
+                    "object outlines",
+                    "",
+                    "object outlines",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/post-effects\/color-transforms\/custom-color-transforms.md",
+                    {
+                        "id": "tu7"
+                    }
+                ],
+                [
+                    "To create a custom color transform, you need to write two files: an effect shader (containing the effect itself), and a C# class (to make the effect accessible in Game Studio).",
+                    "",
+                    "To create a custom color transform, you need to write two files: an effect shader (containing the effect itself), and a C# class (to make the effect accessible in Game Studio).",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/post-effects\/color-transforms\/custom-color-transforms.md",
+                    {
+                        "id": "tu8"
+                    }
+                ],
+                [
+                    "1.",
+                    "",
+                    "1.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/post-effects\/color-transforms\/custom-color-transforms.md",
+                    {
+                        "id": "tu9"
+                    }
+                ],
+                [
+                    "Create a shader",
+                    "",
+                    " Create a shader",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/post-effects\/color-transforms\/custom-color-transforms.md",
+                    {
+                        "id": "tu9"
+                    }
+                ],
+                [
+                    "Make sure you have the <g1>Stride Visual Studio extension<\/g1> installed.",
+                    "",
+                    "Make sure you have the <g1>Stride Visual Studio extension<\/g1> installed.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/post-effects\/color-transforms\/custom-color-transforms.md",
+                    {
+                        "id": "tu10"
+                    }
+                ],
+                [
+                    "This is necessary to convert the shader files from SDSL (<g2>Stride shading language<\/g2>) to <g3>.cs<\/g3> files.",
+                    "",
+                    " This is necessary to convert the shader files from SDSL (<g2>Stride shading language<\/g2>) to <g3>.cs<\/g3> files.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/post-effects\/color-transforms\/custom-color-transforms.md",
+                    {
+                        "id": "tu10"
+                    }
+                ],
+                [
+                    "In Game Studio, in the toolbar, click <x1\/>Open in IDE<x2\/> (<g1>Open in IDE<\/g1>) to open your project in Visual Studio.",
+                    "",
+                    "In Game Studio, in the toolbar, click <x1\/>Open in IDE<x2\/> (<g1>Open in IDE<\/g1>) to open your project in Visual Studio.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/post-effects\/color-transforms\/custom-color-transforms.md",
+                    {
+                        "id": "tu11"
+                    }
+                ],
+                [
+                    "In the Visual Studio <g1>Solution Explorer<\/g1>, right-click the project (eg <g2>MyGame.Game<\/g2>) and select <g3>New item<\/g3>.",
+                    "",
+                    "In the Visual Studio <g1>Solution Explorer<\/g1>, right-click the project (eg <g2>MyGame.Game<\/g2>) and select <g3>New item<\/g3>.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/post-effects\/color-transforms\/custom-color-transforms.md",
+                    {
+                        "id": "tu12"
+                    }
+                ],
+                [
+                    "<x1\/>New item<x2\/>",
+                    "",
+                    "<x1\/>New item<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/post-effects\/color-transforms\/custom-color-transforms.md",
+                    {
+                        "id": "tu13"
+                    }
+                ],
+                [
+                    "Select <g1>Class<\/g1>.",
+                    "",
+                    "Select <g1>Class<\/g1>.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/post-effects\/color-transforms\/custom-color-transforms.md",
+                    {
+                        "id": "tu14"
+                    }
+                ],
+                [
+                    "<x1\/>Select class<x2\/>",
+                    "",
+                    "<x1\/>Select class<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/post-effects\/color-transforms\/custom-color-transforms.md",
+                    {
+                        "id": "tu15"
+                    }
+                ],
+                [
+                    "In the <g1>Name<\/g1> field, specify a name with the extension <g2>.sdsl<\/g2> (eg <g3>MyColorTransformShader.sdsl<\/g3>), and click <g4>Add<\/g4>.",
+                    "",
+                    "In the <g1>Name<\/g1> field, specify a name with the extension <g2>.sdsl<\/g2> (eg <g3>MyColorTransformShader.sdsl<\/g3>), and click <g4>Add<\/g4>.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/post-effects\/color-transforms\/custom-color-transforms.md",
+                    {
+                        "id": "tu16"
+                    }
+                ],
+                [
+                    "<x1\/>Create post effect<x2\/>",
+                    "",
+                    "<x1\/>Create post effect<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/post-effects\/color-transforms\/custom-color-transforms.md",
+                    {
+                        "id": "tu17"
+                    }
+                ],
+                [
+                    "The Stride Visual Studio extension automatically generates a <g1>.cs<\/g1> file from the <g2>.sdsl<\/g2> file.",
+                    "",
+                    "The Stride Visual Studio extension automatically generates a <g1>.cs<\/g1> file from the <g2>.sdsl<\/g2> file.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/post-effects\/color-transforms\/custom-color-transforms.md",
+                    {
+                        "id": "tu18"
+                    }
+                ],
+                [
+                    "The Solution Explorer lists it as a child of the <g3>.sdsl<\/g3> file.",
+                    "",
+                    " The Solution Explorer lists it as a child of the <g3>.sdsl<\/g3> file.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/post-effects\/color-transforms\/custom-color-transforms.md",
+                    {
+                        "id": "tu18"
+                    }
+                ],
+                [
+                    "<x1\/>My post effect<x2\/>",
+                    "",
+                    "<x1\/>My post effect<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/post-effects\/color-transforms\/custom-color-transforms.md",
+                    {
+                        "id": "tu19"
+                    }
+                ],
+                [
+                    "Open the <g1>.sdsl<\/g1> file, remove the existing lines, and write your shader.",
+                    "",
+                    "Open the <g1>.sdsl<\/g1> file, remove the existing lines, and write your shader.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/post-effects\/color-transforms\/custom-color-transforms.md",
+                    {
+                        "id": "tu20"
+                    }
+                ],
+                [
+                    "Shaders are written in Stride Shading Language (SDSL), which is based on HLSL.",
+                    "",
+                    "Shaders are written in Stride Shading Language (SDSL), which is based on HLSL.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/post-effects\/color-transforms\/custom-color-transforms.md",
+                    {
+                        "id": "tu21"
+                    }
+                ],
+                [
+                    "For more information, see <g1>Shading language<\/g1>.",
+                    "",
+                    " For more information, see <g1>Shading language<\/g1>.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/post-effects\/color-transforms\/custom-color-transforms.md",
+                    {
+                        "id": "tu21"
+                    }
+                ],
+                [
+                    "For example, the shader below multiplies the image color by the <g1>MyColor<\/g1> parameter:",
+                    "",
+                    "For example, the shader below multiplies the image color by the <g1>MyColor<\/g1> parameter:",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/post-effects\/color-transforms\/custom-color-transforms.md",
+                    {
+                        "id": "tu22"
+                    }
+                ],
+                [
+                    "shader MyColorTransformShader :",
+                    "",
+                    "shader MyColorTransformShader :",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/post-effects\/color-transforms\/custom-color-transforms.md",
+                    {
+                        "id": "tu23"
+                    }
+                ],
+                [
+                    "ColorTransformShader",
+                    "",
+                    " ColorTransformShader\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/post-effects\/color-transforms\/custom-color-transforms.md",
+                    {
+                        "id": "tu23"
+                    }
+                ],
+                [
+                    "{",
+                    "",
+                    "{\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/post-effects\/color-transforms\/custom-color-transforms.md",
+                    {
+                        "id": "tu23"
+                    }
+                ],
+                [
+                    "[Color]",
+                    "",
+                    "    [Color]\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/post-effects\/color-transforms\/custom-color-transforms.md",
+                    {
+                        "id": "tu23"
+                    }
+                ],
+                [
+                    "float4 MyColor;",
+                    "",
+                    "    float4 MyColor;\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/post-effects\/color-transforms\/custom-color-transforms.md",
+                    {
+                        "id": "tu23"
+                    }
+                ],
+                [
+                    "override float4 Compute(float4 color)",
+                    "",
+                    "\r\n    override float4 Compute(float4 color)\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/post-effects\/color-transforms\/custom-color-transforms.md",
+                    {
+                        "id": "tu23"
+                    }
+                ],
+                [
+                    "{",
+                    "",
+                    "    {\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/post-effects\/color-transforms\/custom-color-transforms.md",
+                    {
+                        "id": "tu23"
+                    }
+                ],
+                [
+                    "return color * MyColor;",
+                    "",
+                    "        return color * MyColor;\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/post-effects\/color-transforms\/custom-color-transforms.md",
+                    {
+                        "id": "tu23"
+                    }
+                ],
+                [
+                    "}",
+                    "",
+                    "    }\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/post-effects\/color-transforms\/custom-color-transforms.md",
+                    {
+                        "id": "tu23"
+                    }
+                ],
+                [
+                    "};",
+                    "",
+                    "};\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/post-effects\/color-transforms\/custom-color-transforms.md",
+                    {
+                        "id": "tu23"
+                    }
+                ],
+                [
+                    "<x1\/>!Note<x2\/>",
+                    "",
+                    "<x1\/>!Note<x2\/>\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/post-effects\/color-transforms\/custom-color-transforms.md",
+                    {
+                        "id": "tu24"
+                    }
+                ],
+                [
+                    "Make sure the shader name in the file (eg <g1>MyColorTransformShader<\/g1> in the code above) is the same as the filename (eg <g2>MyColorTransformShader.sdsl<\/g2>).",
+                    "",
+                    "Make sure the shader name in the file (eg <g1>MyColorTransformShader<\/g1> in the code above) is the same as the filename (eg <g2>MyColorTransformShader.sdsl<\/g2>).",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/post-effects\/color-transforms\/custom-color-transforms.md",
+                    {
+                        "id": "tu24"
+                    }
+                ],
+                [
+                    "2.",
+                    "",
+                    "2.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/post-effects\/color-transforms\/custom-color-transforms.md",
+                    {
+                        "id": "tu25"
+                    }
+                ],
+                [
+                    "Create a C# class",
+                    "",
+                    " Create a C# class",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/post-effects\/color-transforms\/custom-color-transforms.md",
+                    {
+                        "id": "tu25"
+                    }
+                ],
+                [
+                    "In the Visual Studio <g1>Solution Explorer<\/g1>, right-click the project (eg <g2>MyGame.Game<\/g2>) and select <g3>Add > New item<\/g3>.",
+                    "",
+                    "In the Visual Studio <g1>Solution Explorer<\/g1>, right-click the project (eg <g2>MyGame.Game<\/g2>) and select <g3>Add > New item<\/g3>.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/post-effects\/color-transforms\/custom-color-transforms.md",
+                    {
+                        "id": "tu26"
+                    }
+                ],
+                [
+                    "<x1\/>New item<x2\/>",
+                    "",
+                    "<x1\/>New item<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/post-effects\/color-transforms\/custom-color-transforms.md",
+                    {
+                        "id": "tu27"
+                    }
+                ],
+                [
+                    "Select <g1>Class<\/g1>, specify a <g2>name<\/g2> (eg <g3>MyColorTransform.cs<\/g3>), and click <g4>Add<\/g4>.",
+                    "",
+                    "Select <g1>Class<\/g1>, specify a <g2>name<\/g2> (eg <g3>MyColorTransform.cs<\/g3>), and click <g4>Add<\/g4>.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/post-effects\/color-transforms\/custom-color-transforms.md",
+                    {
+                        "id": "tu28"
+                    }
+                ],
+                [
+                    "<x1\/>Add script<x2\/>",
+                    "",
+                    "<x1\/>Add script<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/post-effects\/color-transforms\/custom-color-transforms.md",
+                    {
+                        "id": "tu29"
+                    }
+                ],
+                [
+                    "Open the file and write the class.",
+                    "",
+                    "Open the file and write the class.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/post-effects\/color-transforms\/custom-color-transforms.md",
+                    {
+                        "id": "tu30"
+                    }
+                ],
+                [
+                    "For example, the code below creates the class <g1>MyColorTransform<\/g1>, which uses the shader and supplies a value for the color <g2>MyColor<\/g2> (defined in the shader).",
+                    "",
+                    "For example, the code below creates the class <g1>MyColorTransform<\/g1>, which uses the shader and supplies a value for the color <g2>MyColor<\/g2> (defined in the shader).",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/post-effects\/color-transforms\/custom-color-transforms.md",
+                    {
+                        "id": "tu31"
+                    }
+                ],
+                [
+                    "using Stride.Core;",
+                    "",
+                    "using Stride.Core;\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/post-effects\/color-transforms\/custom-color-transforms.md",
+                    {
+                        "id": "tu32"
+                    }
+                ],
+                [
+                    "using Stride.Core.Mathematics;",
+                    "",
+                    "using Stride.Core.Mathematics;\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/post-effects\/color-transforms\/custom-color-transforms.md",
+                    {
+                        "id": "tu32"
+                    }
+                ],
+                [
+                    "using Stride.Rendering;",
+                    "",
+                    "using Stride.Rendering;\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/post-effects\/color-transforms\/custom-color-transforms.md",
+                    {
+                        "id": "tu32"
+                    }
+                ],
+                [
+                    "using Stride.Rendering.Images;",
+                    "",
+                    "using Stride.Rendering.Images;\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/post-effects\/color-transforms\/custom-color-transforms.md",
+                    {
+                        "id": "tu32"
+                    }
+                ],
+                [
+                    "namespace MyGame",
+                    "",
+                    "\r\nnamespace MyGame\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/post-effects\/color-transforms\/custom-color-transforms.md",
+                    {
+                        "id": "tu32"
+                    }
+                ],
+                [
+                    "{",
+                    "",
+                    "{\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/post-effects\/color-transforms\/custom-color-transforms.md",
+                    {
+                        "id": "tu32"
+                    }
+                ],
+                [
+                    "[DataContract(\"MyColorTransform\")]",
+                    "",
+                    "    [DataContract(\"MyColorTransform\")]\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/post-effects\/color-transforms\/custom-color-transforms.md",
+                    {
+                        "id": "tu32"
+                    }
+                ],
+                [
+                    "public class MyColorTransform :",
+                    "",
+                    "    public class MyColorTransform :",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/post-effects\/color-transforms\/custom-color-transforms.md",
+                    {
+                        "id": "tu32"
+                    }
+                ],
+                [
+                    "ColorTransform",
+                    "",
+                    " ColorTransform\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/post-effects\/color-transforms\/custom-color-transforms.md",
+                    {
+                        "id": "tu32"
+                    }
+                ],
+                [
+                    "{",
+                    "",
+                    "    {\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/post-effects\/color-transforms\/custom-color-transforms.md",
+                    {
+                        "id": "tu32"
+                    }
+                ],
+                [
+                    "\/\/\/",
+                    "",
+                    "        \/\/\/ <inheritdoc \/>\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/post-effects\/color-transforms\/custom-color-transforms.md",
+                    {
+                        "id": "tu32"
+                    }
+                ],
+                [
+                    "public MyColorTransform()",
+                    "",
+                    "        public MyColorTransform() \r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/post-effects\/color-transforms\/custom-color-transforms.md",
+                    {
+                        "id": "tu32"
+                    }
+                ],
+                [
+                    ": base(\"MyColorTransformShader\")",
+                    "",
+                    "            : base(\"MyColorTransformShader\")\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/post-effects\/color-transforms\/custom-color-transforms.md",
+                    {
+                        "id": "tu32"
+                    }
+                ],
+                [
+                    "{",
+                    "",
+                    "        {\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/post-effects\/color-transforms\/custom-color-transforms.md",
+                    {
+                        "id": "tu32"
+                    }
+                ],
+                [
+                    "}",
+                    "",
+                    "        }\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/post-effects\/color-transforms\/custom-color-transforms.md",
+                    {
+                        "id": "tu32"
+                    }
+                ],
+                [
+                    "public Color4 MyColor { get; set; }",
+                    "",
+                    "\r\n        public Color4 MyColor { get; set; }\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/post-effects\/color-transforms\/custom-color-transforms.md",
+                    {
+                        "id": "tu32"
+                    }
+                ],
+                [
+                    "public override void UpdateParameters(ColorTransformContext context)",
+                    "",
+                    "\r\n        public override void UpdateParameters(ColorTransformContext context)\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/post-effects\/color-transforms\/custom-color-transforms.md",
+                    {
+                        "id": "tu32"
+                    }
+                ],
+                [
+                    "{",
+                    "",
+                    "        {\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/post-effects\/color-transforms\/custom-color-transforms.md",
+                    {
+                        "id": "tu32"
+                    }
+                ],
+                [
+                    "Parameters.Set(MyColorTransformShaderKeys.MyColor, MyColor);",
+                    "",
+                    "            Parameters.Set(MyColorTransformShaderKeys.MyColor, MyColor);\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/post-effects\/color-transforms\/custom-color-transforms.md",
+                    {
+                        "id": "tu32"
+                    }
+                ],
+                [
+                    "\/\/ Copy parameters to parent",
+                    "",
+                    "\r\n            \/\/ Copy parameters to parent\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/post-effects\/color-transforms\/custom-color-transforms.md",
+                    {
+                        "id": "tu32"
+                    }
+                ],
+                [
+                    "base.UpdateParameters(context);",
+                    "",
+                    "            base.UpdateParameters(context);\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/post-effects\/color-transforms\/custom-color-transforms.md",
+                    {
+                        "id": "tu32"
+                    }
+                ],
+                [
+                    "}",
+                    "",
+                    "        }\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/post-effects\/color-transforms\/custom-color-transforms.md",
+                    {
+                        "id": "tu32"
+                    }
+                ],
+                [
+                    "}",
+                    "",
+                    "    }\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/post-effects\/color-transforms\/custom-color-transforms.md",
+                    {
+                        "id": "tu32"
+                    }
+                ],
+                [
+                    "}",
+                    "",
+                    "}\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/post-effects\/color-transforms\/custom-color-transforms.md",
+                    {
+                        "id": "tu32"
+                    }
+                ],
+                [
+                    "<x1\/>!Note<x2\/>",
+                    "",
+                    "<x1\/>!Note<x2\/>\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/post-effects\/color-transforms\/custom-color-transforms.md",
+                    {
+                        "id": "tu33"
+                    }
+                ],
+                [
+                    "Make sure the class name in the file (eg <g1>MyColorTransform<\/g1> in the class above) is the same as the filename (eg <g2>MyColorTransform.cs<\/g2>).",
+                    "",
+                    "Make sure the class name in the file (eg <g1>MyColorTransform<\/g1> in the class above) is the same as the filename (eg <g2>MyColorTransform.cs<\/g2>).",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/post-effects\/color-transforms\/custom-color-transforms.md",
+                    {
+                        "id": "tu33"
+                    }
+                ],
+                [
+                    "Save all the files in the solution (<g1>File > Save All<\/g1>).",
+                    "",
+                    "Save all the files in the solution (<g1>File > Save All<\/g1>).",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/post-effects\/color-transforms\/custom-color-transforms.md",
+                    {
+                        "id": "tu34"
+                    }
+                ],
+                [
+                    "In Game Studio, reload the assemblies.",
+                    "",
+                    "In Game Studio, reload the assemblies.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/post-effects\/color-transforms\/custom-color-transforms.md",
+                    {
+                        "id": "tu35"
+                    }
+                ],
+                [
+                    "<x1\/>Reload assemblies<x2\/>",
+                    "",
+                    "<x1\/>Reload assemblies<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/post-effects\/color-transforms\/custom-color-transforms.md",
+                    {
+                        "id": "tu36"
+                    }
+                ],
+                [
+                    "The <g1>Asset View<\/g1> lists the class and effect shader in the same directory as your scripts (eg <g2>MyGame.Game<\/g2>).",
+                    "",
+                    "The <g1>Asset View<\/g1> lists the class and effect shader in the same directory as your scripts (eg <g2>MyGame.Game<\/g2>).",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/post-effects\/color-transforms\/custom-color-transforms.md",
+                    {
+                        "id": "tu37"
+                    }
+                ],
+                [
+                    "<x1\/>Shader in Asset View<x2\/>",
+                    "",
+                    "<x1\/>Shader in Asset View<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/post-effects\/color-transforms\/custom-color-transforms.md",
+                    {
+                        "id": "tu38"
+                    }
+                ],
+                [
+                    "<x1\/>!Note<x2\/>",
+                    "",
+                    "<x1\/>!Note<x2\/>\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/post-effects\/color-transforms\/custom-color-transforms.md",
+                    {
+                        "id": "tu39"
+                    }
+                ],
+                [
+                    "In some situations, Game Studio incorrectly detects the shader as a script, as in the screenshot below:",
+                    "",
+                    "In some situations, Game Studio incorrectly detects the shader as a script, as in the screenshot below:",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/post-effects\/color-transforms\/custom-color-transforms.md",
+                    {
+                        "id": "tu39"
+                    }
+                ],
+                [
+                    "<x1\/>Shader as script<x2\/>",
+                    "",
+                    "<x1\/>Shader as script<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/post-effects\/color-transforms\/custom-color-transforms.md",
+                    {
+                        "id": "tu40"
+                    }
+                ],
+                [
+                    "If this happens, restart Game Studio (<g1>File > Reload project<\/g1>).",
+                    "",
+                    "If this happens, restart Game Studio (<g1>File > Reload project<\/g1>).",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/post-effects\/color-transforms\/custom-color-transforms.md",
+                    {
+                        "id": "tu41"
+                    }
+                ],
+                [
+                    "3.",
+                    "",
+                    "3.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/post-effects\/color-transforms\/custom-color-transforms.md",
+                    {
+                        "id": "tu42"
+                    }
+                ],
+                [
+                    "Use a custom color transform",
+                    "",
+                    " Use a custom color transform",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/post-effects\/color-transforms\/custom-color-transforms.md",
+                    {
+                        "id": "tu42"
+                    }
+                ],
+                [
+                    "In the <g1>Asset View<\/g1> (in the bottom pane by default), double-click the <g2>Graphics Compositor<\/g2> asset.",
+                    "",
+                    "In the <g1>Asset View<\/g1> (in the bottom pane by default), double-click the <g2>Graphics Compositor<\/g2> asset.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/post-effects\/color-transforms\/custom-color-transforms.md",
+                    {
+                        "id": "tu43"
+                    }
+                ],
+                [
+                    "<x1\/>Graphics Compositor asset<x2\/>",
+                    "",
+                    "<x1\/>Graphics Compositor asset<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/post-effects\/color-transforms\/custom-color-transforms.md",
+                    {
+                        "id": "tu44"
+                    }
+                ],
+                [
+                    "The <g1>graphics compositor editor<\/g1> opens.",
+                    "",
+                    "The <g1>graphics compositor editor<\/g1> opens.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/post-effects\/color-transforms\/custom-color-transforms.md",
+                    {
+                        "id": "tu45"
+                    }
+                ],
+                [
+                    "<x1\/>Graphics Compositor editor<x2\/>",
+                    "",
+                    "<x1\/>Graphics Compositor editor<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/post-effects\/color-transforms\/custom-color-transforms.md",
+                    {
+                        "id": "tu46"
+                    }
+                ],
+                [
+                    "Select the <g1>Post-processing effects<\/g1> node.",
+                    "",
+                    "Select the <g1>Post-processing effects<\/g1> node.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/post-effects\/color-transforms\/custom-color-transforms.md",
+                    {
+                        "id": "tu47"
+                    }
+                ],
+                [
+                    "In the <g1>Property Grid<\/g1>, under <g2>Color transforms<\/g2>, click <x1\/>Green plus button<x2\/> (<g3>Change<\/g3>) and select your color transform (eg <g4>MyColorTransform<\/g4>).",
+                    "",
+                    "In the <g1>Property Grid<\/g1>, under <g2>Color transforms<\/g2>, click <x1\/>Green plus button<x2\/> (<g3>Change<\/g3>) and select your color transform (eg <g4>MyColorTransform<\/g4>).",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/post-effects\/color-transforms\/custom-color-transforms.md",
+                    {
+                        "id": "tu48"
+                    }
+                ],
+                [
+                    "<x1\/>Add script<x2\/>",
+                    "",
+                    "<x1\/>Add script<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/post-effects\/color-transforms\/custom-color-transforms.md",
+                    {
+                        "id": "tu49"
+                    }
+                ],
+                [
+                    "To enable and disable the effect, use the check box next to the item.",
+                    "",
+                    "To enable and disable the effect, use the check box next to the item.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/post-effects\/color-transforms\/custom-color-transforms.md",
+                    {
+                        "id": "tu50"
+                    }
+                ],
+                [
+                    "<x1\/>Enable and disable custom post effect<x2\/>",
+                    "",
+                    "<x1\/>Enable and disable custom post effect<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/post-effects\/color-transforms\/custom-color-transforms.md",
+                    {
+                        "id": "tu51"
+                    }
+                ],
+                [
+                    "To edit the public properties you specified in the class, expand the item.",
+                    "",
+                    "To edit the public properties you specified in the class, expand the item.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/post-effects\/color-transforms\/custom-color-transforms.md",
+                    {
+                        "id": "tu52"
+                    }
+                ],
+                [
+                    "<x1\/>Expand item<x2\/>",
+                    "",
+                    "<x1\/>Expand item<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/post-effects\/color-transforms\/custom-color-transforms.md",
+                    {
+                        "id": "tu53"
+                    }
+                ],
+                [
+                    "When you adjust the properties, Game Studio updates the effect automatically.",
+                    "",
+                    "When you adjust the properties, Game Studio updates the effect automatically.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/post-effects\/color-transforms\/custom-color-transforms.md",
+                    {
+                        "id": "tu54"
+                    }
+                ],
+                [
+                    "<x1\/>!Warning<x2\/>",
+                    "",
+                    "<x1\/>!Warning<x2\/>\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/post-effects\/color-transforms\/custom-color-transforms.md",
+                    {
+                        "id": "tu55"
+                    }
+                ],
+                [
+                    "Unfortunately, this part of Game Studio has a memory leak problem.",
+                    "",
+                    "Unfortunately, this part of Game Studio has a memory leak problem.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/post-effects\/color-transforms\/custom-color-transforms.md",
+                    {
+                        "id": "tu55"
+                    }
+                ],
+                [
+                    "Every time you change a value in the graphics compositor, it uses 60MB of memory.",
+                    "",
+                    " Every time you change a value in the graphics compositor, it uses 60MB of memory.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/post-effects\/color-transforms\/custom-color-transforms.md",
+                    {
+                        "id": "tu55"
+                    }
+                ],
+                [
+                    "To prevent Game Studio using too much memory, we recommend you restart it after you change a property a few times.",
+                    "",
+                    " To prevent Game Studio using too much memory, we recommend you restart it after you change a property a few times.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/post-effects\/color-transforms\/custom-color-transforms.md",
+                    {
+                        "id": "tu55"
+                    }
+                ],
+                [
+                    "This is a known issue.",
+                    "",
+                    " This is a known issue.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/post-effects\/color-transforms\/custom-color-transforms.md",
+                    {
+                        "id": "tu55"
+                    }
+                ],
+                [
+                    "See also",
+                    "",
+                    "See also",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/post-effects\/color-transforms\/custom-color-transforms.md",
+                    {
+                        "id": "tu56"
+                    }
+                ],
+                [
+                    "Shading language",
+                    "",
+                    "<g1>Shading language<\/g1>",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/post-effects\/color-transforms\/custom-color-transforms.md",
+                    {
+                        "id": "tu57"
+                    }
+                ],
+                [
+                    "Custom shaders",
+                    "",
+                    "<g1>Custom shaders<\/g1>",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/post-effects\/color-transforms\/custom-color-transforms.md",
+                    {
+                        "id": "tu58"
+                    }
+                ],
+                [
+                    "Graphics compositor",
+                    "",
+                    "<g1>Graphics compositor<\/g1>",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/post-effects\/color-transforms\/custom-color-transforms.md",
+                    {
+                        "id": "tu59"
+                    }
+                ],
+                [
+                    "Post effects",
+                    "",
+                    "<g1>Post effects<\/g1>",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/post-effects\/color-transforms\/custom-color-transforms.md",
+                    {
+                        "id": "tu60"
+                    }
+                ],
+                [
+                    "Color transforms",
+                    "",
+                    "<g1>Color transforms<\/g1>",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/post-effects\/color-transforms\/custom-color-transforms.md",
+                    {
+                        "id": "tu61"
+                    }
+                ],
+                [
+                    "Stride Visual Studio extension",
+                    "",
+                    "<g1>Stride Visual Studio extension<\/g1>",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/post-effects\/color-transforms\/custom-color-transforms.md",
+                    {
+                        "id": "tu62"
+                    }
+                ]
+            ]
+        }
+    ],
+    "seg_enabled": false
+}

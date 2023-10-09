@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="/D:/repos/rr/source/manual/game-studio/prefabs/use-prefabs.md" source-language="en" target-language="pt" datatype="x-text/x-markdown" okp:inputEncoding="UTF-8">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en">Use prefabs</source>
+<target xml:lang="pt">Use prefabs</target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Intermediate<x id="2"/>
+<x id="3"/>Programmer<x id="4"/>
+<x id="5"/>Designer<x id="6"/></source>
+<target xml:lang="pt"><x id="1"/>Intermediate<x id="2"/>
+<x id="3"/>Programmer<x id="4"/>
+<x id="5"/>Designer<x id="6"/></target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">To instantiate a prefab, drag and drop it from the <g id="1">Asset View</g> to the scene.</source>
+<target xml:lang="pt">To instantiate a prefab, drag and drop it from the <g id="1">Asset View</g> to the scene.</target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">You can re-arrange entities in the prefab instance just like you do with other entities:</source>
+<target xml:lang="pt">You can re-arrange entities in the prefab instance just like you do with other entities:</target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">create child and parent entities</source>
+<target xml:lang="pt">create child and parent entities</target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en">drag entities to add them to the prefab instance</source>
+<target xml:lang="pt">drag entities to add them to the prefab instance</target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en">drag entities from the prefab instance to make them independent entities</source>
+<target xml:lang="pt">drag entities from the prefab instance to make them independent entities</target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en">Manage prefab parent entities</source>
+<target xml:lang="pt">Manage prefab parent entities</target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en">By default, Game Studio creates an empty parent entity with the prefab's entities as its children. The Entity Tree displays the prefab parent name in green next to the child entities.</source>
+<target xml:lang="pt">By default, Game Studio creates an empty parent entity with the prefab's entities as its children. The Entity Tree displays the prefab parent name in green next to the child entities.</target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Prefab parent and children in Entity Tree<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Prefab parent and children in Entity Tree<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en">This is useful because you can manage the prefab entities as a group and maintain their relative positions. For example, imagine you have a car prefab assembled from several entities (a body, seats, four wheels, etc). You want its component entities to stay grouped together as you move the car around the scene. You can do this by moving the prefab parent entity.</source>
+<target xml:lang="pt">This is useful because you can manage the prefab entities as a group and maintain their relative positions. For example, imagine you have a car prefab assembled from several entities (a body, seats, four wheels, etc). You want its component entities to stay grouped together as you move the car around the scene. You can do this by moving the prefab parent entity.</target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en">If you don't want to create a parent entity with the prefab, hold <g id="1">Alt</g> when you drop the prefab into the scene. This is useful if you don't care about the relative positions of the prefab's entities and don't need to move them together as a group. For example, imagine you have a prefab composed of several crate entities arranged in a random fashion. It's not important that the crates maintain their relative position after you place them; in fact, several identical stacks of "randomly" arranged crates looks artificial.</source>
+<target xml:lang="pt">If you don't want to create a parent entity with the prefab, hold <g id="1">Alt</g> when you drop the prefab into the scene. This is useful if you don't care about the relative positions of the prefab's entities and don't need to move them together as a group. For example, imagine you have a prefab composed of several crate entities arranged in a random fashion. It's not important that the crates maintain their relative position after you place them; in fact, several identical stacks of "randomly" arranged crates looks artificial.</target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en">In this case, a parent entity is unnecessary. Instead, you can create several instances of the prefab, then re-arrange their individual crate entities to create the effect you need.</source>
+<target xml:lang="pt">In this case, a parent entity is unnecessary. Instead, you can create several instances of the prefab, then re-arrange their individual crate entities to create the effect you need.</target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en">Relative positions maintained</source>
+<target xml:lang="pt">Relative positions maintained</target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en">Relative positions ignored</source>
+<target xml:lang="pt">Relative positions ignored</target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Boxes duplicated<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Boxes duplicated<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Boxes duplicated<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Boxes duplicated<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en">Break link to prefab</source>
+<target xml:lang="pt">Break link to prefab</target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en">After you add a prefab instance, you can break the link between the prefab and any of its child entities. This means the child entity is no longer affected by changes you make to the prefab.</source>
+<target xml:lang="pt">After you add a prefab instance, you can break the link between the prefab and any of its child entities. This means the child entity is no longer affected by changes you make to the prefab.</target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en">To do this, in the <g id="1">Scene Editor</g>, right-click a child entity or entities and select <g id="2">Break link to prefab</g>.</source>
+<target xml:lang="pt">To do this, in the <g id="1">Scene Editor</g>, right-click a child entity or entities and select <g id="2">Break link to prefab</g>.</target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Break link between child and prefab<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Break link between child and prefab<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en">Instantiate and add prefabs at runtime</source>
+<target xml:lang="pt">Instantiate and add prefabs at runtime</target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en">To use prefabs at runtime, you need to instantiate them and then add them to the scene in code.</source>
+<target xml:lang="pt">To use prefabs at runtime, you need to instantiate them and then add them to the scene in code.</target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en">public class SpawnPrefabOnStart : StartupScript
+{
+    public Prefab MyPrefab { get; init; } // init here prevents other scripts from changing this property
+    
+    public override void Start()
+    {
+        // A prefab may contain multiple entities
+        var entities = MyPrefab.Instantiate();
+        // Adding them to the scene this entity is on
+        Entity.Scene.Entities.AddRange(entities);
+    }
+}
+</source>
+<target xml:lang="pt">public class SpawnPrefabOnStart : StartupScript
+{
+    public Prefab MyPrefab { get; init; } // init here prevents other scripts from changing this property
+    
+    public override void Start()
+    {
+        // A prefab may contain multiple entities
+        var entities = MyPrefab.Instantiate();
+        // Adding them to the scene this entity is on
+        Entity.Scene.Entities.AddRange(entities);
+    }
+}
+</target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>!Note<x id="2"/>
+<g id="3">Instantiate()</g> by itself isn't enough to add a prefab instance to the scene. You also need to <g id="4">Add()</g> or <g id="5">AddRange()</g> them to a scene . For example, if your prefab contains a model, the model is invisible until you add the prefab instance. Likewise, if your prefab contains a script, the script won't work until you add the prefab instance.</source>
+<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
+<g id="3">Instantiate()</g> by itself isn't enough to add a prefab instance to the scene. You also need to <g id="4">Add()</g> or <g id="5">AddRange()</g> them to a scene . For example, if your prefab contains a model, the model is invisible until you add the prefab instance. Likewise, if your prefab contains a script, the script won't work until you add the prefab instance.</target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en">If you have a prefab named <g id="1">MyBulletPrefab</g> in the root folder of your project, you can instantiate and add it with the following code:</source>
+<target xml:lang="pt">If you have a prefab named <g id="1">MyBulletPrefab</g> in the root folder of your project, you can instantiate and add it with the following code:</target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en">private void InstantiateBulletPrefab()
+{
+    // Note that "MyBulletPrefab" refers to the name and location of your prefab asset
+    var myBulletPrefab = Content.Load&lt;Prefab>("MyBulletPrefab");
+
+    // Instantiate a prefab
+    var instance = myBulletPrefab.Instantiate();
+    var bullet = instance[0];
+
+    // Change the X coordinate
+    bullet.Transform.Position.X = 20.0f;
+
+    // Adding just the bullet to the root scene
+    SceneSystem.SceneInstance.RootScene.Entities.Add(bullet);
+}
+</source>
+<target xml:lang="pt">private void InstantiateBulletPrefab()
+{
+    // Note that "MyBulletPrefab" refers to the name and location of your prefab asset
+    var myBulletPrefab = Content.Load&lt;Prefab>("MyBulletPrefab");
+
+    // Instantiate a prefab
+    var instance = myBulletPrefab.Instantiate();
+    var bullet = instance[0];
+
+    // Change the X coordinate
+    bullet.Transform.Position.X = 20.0f;
+
+    // Adding just the bullet to the root scene
+    SceneSystem.SceneInstance.RootScene.Entities.Add(bullet);
+}
+</target>
+</trans-unit>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>!Note<x id="2"/>
+At runtime, changes made to prefabs (<g id="3">myBulletPrefab</g> in the above example) don't affect existing prefab instances (<g id="4">bullet</g> in the above example). Subsequent calls to <g id="5">Instantiate(Prefab)</g> include new changes.
+For example, imagine you have a tree prefab that contains a script to change the tree color from green to red at runtime. The script won't affect existing instances of the prefab; it can only change the color of <g id="6">future</g> instances. This means prefabs instantiated after the code runs will have the new color, but existing prefabs won't.</source>
+<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
+At runtime, changes made to prefabs (<g id="3">myBulletPrefab</g> in the above example) don't affect existing prefab instances (<g id="4">bullet</g> in the above example). Subsequent calls to <g id="5">Instantiate(Prefab)</g> include new changes.
+For example, imagine you have a tree prefab that contains a script to change the tree color from green to red at runtime. The script won't affect existing instances of the prefab; it can only change the color of <g id="6">future</g> instances. This means prefabs instantiated after the code runs will have the new color, but existing prefabs won't.</target>
+</trans-unit>
+<trans-unit id="tu29" xml:space="preserve">
+<source xml:lang="en">See also</source>
+<target xml:lang="pt">See also</target>
+</trans-unit>
+<trans-unit id="tu30" xml:space="preserve">
+<source xml:lang="en"><g id="1">Prefab index</g></source>
+<target xml:lang="pt"><g id="1">Prefab index</g></target>
+</trans-unit>
+<trans-unit id="tu31" xml:space="preserve">
+<source xml:lang="en"><g id="1">Create a prefab</g></source>
+<target xml:lang="pt"><g id="1">Create a prefab</g></target>
+</trans-unit>
+<trans-unit id="tu32" xml:space="preserve">
+<source xml:lang="en"><g id="1">Edit prefabs</g></source>
+<target xml:lang="pt"><g id="1">Edit prefabs</g></target>
+</trans-unit>
+<trans-unit id="tu33" xml:space="preserve">
+<source xml:lang="en"><g id="1">Nested prefabs</g></source>
+<target xml:lang="pt"><g id="1">Nested prefabs</g></target>
+</trans-unit>
+<trans-unit id="tu34" xml:space="preserve">
+<source xml:lang="en"><g id="1">Override prefab properties</g></source>
+<target xml:lang="pt"><g id="1">Override prefab properties</g></target>
+</trans-unit>
+<trans-unit id="tu35" xml:space="preserve">
+<source xml:lang="en"><g id="1">Prefab models</g></source>
+<target xml:lang="pt"><g id="1">Prefab models</g></target>
+</trans-unit>
+</body>
+</file>
+</xliff>

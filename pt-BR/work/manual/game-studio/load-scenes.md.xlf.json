@@ -1,0 +1,685 @@
+{
+    "filename": "manual\\game-studio\\load-scenes.md.xlf",
+    "files": [
+        {
+            "\/D:\/repos\/rr\/source\/manual\/game-studio\/load-scenes.md": [
+                [
+                    "Load and unload scenes at runtime",
+                    "",
+                    "Load and unload scenes at runtime",
+                    "\/D:\/repos\/rr\/source\/manual\/game-studio\/load-scenes.md",
+                    {
+                        "id": "tu1"
+                    }
+                ],
+                [
+                    "Loading scenes",
+                    "",
+                    "Loading scenes",
+                    "\/D:\/repos\/rr\/source\/manual\/game-studio\/load-scenes.md",
+                    {
+                        "id": "tu2"
+                    }
+                ],
+                [
+                    "You can use <g1>UrlReference<Scene><\/g1> properties on your scripts to assign <g2>Scene<\/g2> assets then load the via code:",
+                    "",
+                    "You can use <g1>UrlReference<Scene><\/g1> properties on your scripts to assign <g2>Scene<\/g2> assets then load the via code:",
+                    "\/D:\/repos\/rr\/source\/manual\/game-studio\/load-scenes.md",
+                    {
+                        "id": "tu3"
+                    }
+                ],
+                [
+                    "public UrlReference<Scene> ChildSceneUrl { get; set; }",
+                    "",
+                    "public UrlReference<Scene> ChildSceneUrl { get; set; }\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/game-studio\/load-scenes.md",
+                    {
+                        "id": "tu4"
+                    }
+                ],
+                [
+                    "\/\/...",
+                    "",
+                    "\r\n\/\/...\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/game-studio\/load-scenes.md",
+                    {
+                        "id": "tu4"
+                    }
+                ],
+                [
+                    "var childScene = Content.Load(ChildSceneUrl);",
+                    "",
+                    "var childScene = Content.Load(ChildSceneUrl);\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/game-studio\/load-scenes.md",
+                    {
+                        "id": "tu4"
+                    }
+                ],
+                [
+                    "parentScene.Children.Add(childScene);",
+                    "",
+                    "\r\nparentScene.Children.Add(childScene);\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/game-studio\/load-scenes.md",
+                    {
+                        "id": "tu4"
+                    }
+                ],
+                [
+                    "Alternatively you can load scenes by name.",
+                    "",
+                    "Alternatively you can load scenes by name.",
+                    "\/D:\/repos\/rr\/source\/manual\/game-studio\/load-scenes.md",
+                    {
+                        "id": "tu5"
+                    }
+                ],
+                [
+                    "The following code loads three scenes and adds them as children:",
+                    "",
+                    " The following code loads three scenes and adds them as children:",
+                    "\/D:\/repos\/rr\/source\/manual\/game-studio\/load-scenes.md",
+                    {
+                        "id": "tu5"
+                    }
+                ],
+                [
+                    "var myChildScene0 = Content.Load<Scene>(url0);",
+                    "",
+                    "var myChildScene0 = Content.Load<Scene>(url0);\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/game-studio\/load-scenes.md",
+                    {
+                        "id": "tu6"
+                    }
+                ],
+                [
+                    "var myChildScene1 = Content.Load<Scene>(url1);",
+                    "",
+                    "var myChildScene1 = Content.Load<Scene>(url1);\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/game-studio\/load-scenes.md",
+                    {
+                        "id": "tu6"
+                    }
+                ],
+                [
+                    "var myChildScene2 = Content.Load<Scene>(url2);",
+                    "",
+                    "var myChildScene2 = Content.Load<Scene>(url2);\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/game-studio\/load-scenes.md",
+                    {
+                        "id": "tu6"
+                    }
+                ],
+                [
+                    "myParentScene.Children.Add(myChildScene0);",
+                    "",
+                    "\r\nmyParentScene.Children.Add(myChildScene0);\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/game-studio\/load-scenes.md",
+                    {
+                        "id": "tu6"
+                    }
+                ],
+                [
+                    "myParentScene.Children.Add(myChildScene1);",
+                    "",
+                    "myParentScene.Children.Add(myChildScene1);\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/game-studio\/load-scenes.md",
+                    {
+                        "id": "tu6"
+                    }
+                ],
+                [
+                    "myChildScene1.Add(myChildScene2);",
+                    "",
+                    "myChildScene1.Add(myChildScene2);\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/game-studio\/load-scenes.md",
+                    {
+                        "id": "tu6"
+                    }
+                ],
+                [
+                    "<x1\/>!Note<x2\/>",
+                    "",
+                    "<x1\/>!Note<x2\/>\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/game-studio\/load-scenes.md",
+                    {
+                        "id": "tu7"
+                    }
+                ],
+                [
+                    "If you are not using <g1>UrlReference<\/g1> make sure all the scenes you want to load are included in the build as <g2>root assets<\/g2> (indicated with blue icons in the <g3>Asset View<\/g3>).",
+                    "",
+                    "If you are not using <g1>UrlReference<\/g1> make sure all the scenes you want to load are included in the build as <g2>root assets<\/g2> (indicated with blue icons in the <g3>Asset View<\/g3>).",
+                    "\/D:\/repos\/rr\/source\/manual\/game-studio\/load-scenes.md",
+                    {
+                        "id": "tu7"
+                    }
+                ],
+                [
+                    "<x1\/>Scenes included in root<x2\/>",
+                    "",
+                    "<x1\/>Scenes included in root<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/game-studio\/load-scenes.md",
+                    {
+                        "id": "tu8"
+                    }
+                ],
+                [
+                    "To include a scene in the build, in the <g1>Asset View<\/g1>, right-click the scene asset and select <g2>Include in build as root asset<\/g2>.",
+                    "",
+                    "To include a scene in the build, in the <g1>Asset View<\/g1>, right-click the scene asset and select <g2>Include in build as root asset<\/g2>.",
+                    "\/D:\/repos\/rr\/source\/manual\/game-studio\/load-scenes.md",
+                    {
+                        "id": "tu9"
+                    }
+                ],
+                [
+                    "For more information about including assets in the build, see <g1>Manage assets<\/g1>.",
+                    "",
+                    "For more information about including assets in the build, see <g1>Manage assets<\/g1>.",
+                    "\/D:\/repos\/rr\/source\/manual\/game-studio\/load-scenes.md",
+                    {
+                        "id": "tu10"
+                    }
+                ],
+                [
+                    "For more information about scene hierarchies, see <g1>Manage scenes<\/g1>.",
+                    "",
+                    "For more information about scene hierarchies, see <g1>Manage scenes<\/g1>.",
+                    "\/D:\/repos\/rr\/source\/manual\/game-studio\/load-scenes.md",
+                    {
+                        "id": "tu11"
+                    }
+                ],
+                [
+                    "Unloading scenes",
+                    "",
+                    "Unloading scenes",
+                    "\/D:\/repos\/rr\/source\/manual\/game-studio\/load-scenes.md",
+                    {
+                        "id": "tu12"
+                    }
+                ],
+                [
+                    "Before a scene is unloaded remove it from the scene hierarchy:",
+                    "",
+                    "Before a scene is unloaded remove it from the scene hierarchy:",
+                    "\/D:\/repos\/rr\/source\/manual\/game-studio\/load-scenes.md",
+                    {
+                        "id": "tu13"
+                    }
+                ],
+                [
+                    "parentScene.Children.Remove(childScene);",
+                    "",
+                    "parentScene.Children.Remove(childScene);\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/game-studio\/load-scenes.md",
+                    {
+                        "id": "tu14"
+                    }
+                ],
+                [
+                    "\/\/Alternatively",
+                    "",
+                    "\r\n\/\/Alternatively\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/game-studio\/load-scenes.md",
+                    {
+                        "id": "tu14"
+                    }
+                ],
+                [
+                    "childScene.Parent = null;",
+                    "",
+                    "childScene.Parent = null;\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/game-studio\/load-scenes.md",
+                    {
+                        "id": "tu14"
+                    }
+                ],
+                [
+                    "Once the scene asset is no longer required make sure to unload it:",
+                    "",
+                    "Once the scene asset is no longer required make sure to unload it:",
+                    "\/D:\/repos\/rr\/source\/manual\/game-studio\/load-scenes.md",
+                    {
+                        "id": "tu15"
+                    }
+                ],
+                [
+                    "Content.Unload(childScene);",
+                    "",
+                    "Content.Unload(childScene);\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/game-studio\/load-scenes.md",
+                    {
+                        "id": "tu16"
+                    }
+                ],
+                [
+                    "Scene streaming script",
+                    "",
+                    "Scene streaming script",
+                    "\/D:\/repos\/rr\/source\/manual\/game-studio\/load-scenes.md",
+                    {
+                        "id": "tu17"
+                    }
+                ],
+                [
+                    "Stride also includes a scene streaming script that uses a <g1>trigger<\/g1> to load scenes.",
+                    "",
+                    "Stride also includes a scene streaming script that uses a <g1>trigger<\/g1> to load scenes.",
+                    "\/D:\/repos\/rr\/source\/manual\/game-studio\/load-scenes.md",
+                    {
+                        "id": "tu18"
+                    }
+                ],
+                [
+                    "<x1\/>!Note<x2\/>",
+                    "",
+                    "<x1\/>!Note<x2\/>\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/game-studio\/load-scenes.md",
+                    {
+                        "id": "tu19"
+                    }
+                ],
+                [
+                    "The scene streaming script is included as an example.",
+                    "",
+                    "The scene streaming script is included as an example.",
+                    "\/D:\/repos\/rr\/source\/manual\/game-studio\/load-scenes.md",
+                    {
+                        "id": "tu19"
+                    }
+                ],
+                [
+                    "It isn't always the most appropriate way to load scenes.",
+                    "",
+                    " It isn't always the most appropriate way to load scenes.",
+                    "\/D:\/repos\/rr\/source\/manual\/game-studio\/load-scenes.md",
+                    {
+                        "id": "tu19"
+                    }
+                ],
+                [
+                    "Feel free to modify it as much as you need.",
+                    "",
+                    " Feel free to modify it as much as you need.",
+                    "\/D:\/repos\/rr\/source\/manual\/game-studio\/load-scenes.md",
+                    {
+                        "id": "tu19"
+                    }
+                ],
+                [
+                    "Add a scene streaming script",
+                    "",
+                    "Add a scene streaming script",
+                    "\/D:\/repos\/rr\/source\/manual\/game-studio\/load-scenes.md",
+                    {
+                        "id": "tu20"
+                    }
+                ],
+                [
+                    "To add a scene streaming script, in the <g1>Asset View<\/g1> (bottom pane by default), click <g2>Add asset<\/g2> and select <g3>Scripts > Scene streaming<\/g3>.",
+                    "",
+                    "To add a scene streaming script, in the <g1>Asset View<\/g1> (bottom pane by default), click <g2>Add asset<\/g2> and select <g3>Scripts > Scene streaming<\/g3>.",
+                    "\/D:\/repos\/rr\/source\/manual\/game-studio\/load-scenes.md",
+                    {
+                        "id": "tu21"
+                    }
+                ],
+                [
+                    "<x1\/>Scene streaming script<x2\/>",
+                    "",
+                    "<x1\/>Scene streaming script<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/game-studio\/load-scenes.md",
+                    {
+                        "id": "tu22"
+                    }
+                ],
+                [
+                    "Game Studio adds a scene streaming script to your project assets.",
+                    "",
+                    "Game Studio adds a scene streaming script to your project assets.",
+                    "\/D:\/repos\/rr\/source\/manual\/game-studio\/load-scenes.md",
+                    {
+                        "id": "tu23"
+                    }
+                ],
+                [
+                    "Use the scene streaming script",
+                    "",
+                    "Use the scene streaming script",
+                    "\/D:\/repos\/rr\/source\/manual\/game-studio\/load-scenes.md",
+                    {
+                        "id": "tu24"
+                    }
+                ],
+                [
+                    "Create a trigger entity.",
+                    "",
+                    "Create a trigger entity.",
+                    "\/D:\/repos\/rr\/source\/manual\/game-studio\/load-scenes.md",
+                    {
+                        "id": "tu25"
+                    }
+                ],
+                [
+                    "When this is triggered at runtime, Stride loads the scene.",
+                    "",
+                    " When this is triggered at runtime, Stride loads the scene.",
+                    "\/D:\/repos\/rr\/source\/manual\/game-studio\/load-scenes.md",
+                    {
+                        "id": "tu25"
+                    }
+                ],
+                [
+                    "For more information about creating triggers, see <g1>Triggers<\/g1>.",
+                    "",
+                    " For more information about creating triggers, see <g1>Triggers<\/g1>.",
+                    "\/D:\/repos\/rr\/source\/manual\/game-studio\/load-scenes.md",
+                    {
+                        "id": "tu25"
+                    }
+                ],
+                [
+                    "How the entity is triggered is defined in the collider properties.",
+                    "",
+                    "How the entity is triggered is defined in the collider properties.",
+                    "\/D:\/repos\/rr\/source\/manual\/game-studio\/load-scenes.md",
+                    {
+                        "id": "tu26"
+                    }
+                ],
+                [
+                    "For more information, see <g1>Colliders<\/g1>.",
+                    "",
+                    " For more information, see <g1>Colliders<\/g1>.",
+                    "\/D:\/repos\/rr\/source\/manual\/game-studio\/load-scenes.md",
+                    {
+                        "id": "tu26"
+                    }
+                ],
+                [
+                    "Create an entity and position it where you want the scene to load.",
+                    "",
+                    "Create an entity and position it where you want the scene to load.",
+                    "\/D:\/repos\/rr\/source\/manual\/game-studio\/load-scenes.md",
+                    {
+                        "id": "tu27"
+                    }
+                ],
+                [
+                    "With the entity selected, in the <g1>Property Grid<\/g1> (on the righy by default), click <g2>Add component<\/g2> and select the <g3>scene streaming<\/g3> script.",
+                    "",
+                    "With the entity selected, in the <g1>Property Grid<\/g1> (on the righy by default), click <g2>Add component<\/g2> and select the <g3>scene streaming<\/g3> script.",
+                    "\/D:\/repos\/rr\/source\/manual\/game-studio\/load-scenes.md",
+                    {
+                        "id": "tu28"
+                    }
+                ],
+                [
+                    "<x1\/>Add script<x2\/>",
+                    "",
+                    "<x1\/>Add script<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/game-studio\/load-scenes.md",
+                    {
+                        "id": "tu29"
+                    }
+                ],
+                [
+                    "<x1\/>!Note<x2\/>",
+                    "",
+                    "<x1\/>!Note<x2\/>\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/game-studio\/load-scenes.md",
+                    {
+                        "id": "tu30"
+                    }
+                ],
+                [
+                    "If the scene streaming script doesn't appear in the list of components, reload the assemblies.",
+                    "",
+                    "If the scene streaming script doesn't appear in the list of components, reload the assemblies.",
+                    "\/D:\/repos\/rr\/source\/manual\/game-studio\/load-scenes.md",
+                    {
+                        "id": "tu30"
+                    }
+                ],
+                [
+                    "Game Studio adds the script to the entity as a component.",
+                    "",
+                    "Game Studio adds the script to the entity as a component.",
+                    "\/D:\/repos\/rr\/source\/manual\/game-studio\/load-scenes.md",
+                    {
+                        "id": "tu31"
+                    }
+                ],
+                [
+                    "<x1\/>Scene streaming properties<x2\/>",
+                    "",
+                    "<x1\/>Scene streaming properties<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/game-studio\/load-scenes.md",
+                    {
+                        "id": "tu32"
+                    }
+                ],
+                [
+                    "Under <g1>Url<\/g1>, specify the scene asset you want to load.",
+                    "",
+                    "Under <g1>Url<\/g1>, specify the scene asset you want to load.",
+                    "\/D:\/repos\/rr\/source\/manual\/game-studio\/load-scenes.md",
+                    {
+                        "id": "tu33"
+                    }
+                ],
+                [
+                    "Under <g1>Trigger<\/g1>, specify the entity you created in step 1.",
+                    "",
+                    "Under <g1>Trigger<\/g1>, specify the entity you created in step 1.",
+                    "\/D:\/repos\/rr\/source\/manual\/game-studio\/load-scenes.md",
+                    {
+                        "id": "tu34"
+                    }
+                ],
+                [
+                    "At runtime, when the trigger you created in step 1 is triggered, Stride loads the scene you specified in step 4.",
+                    "",
+                    "At runtime, when the trigger you created in step 1 is triggered, Stride loads the scene you specified in step 4.",
+                    "\/D:\/repos\/rr\/source\/manual\/game-studio\/load-scenes.md",
+                    {
+                        "id": "tu35"
+                    }
+                ],
+                [
+                    "Scene streaming script properties",
+                    "",
+                    "Scene streaming script properties",
+                    "\/D:\/repos\/rr\/source\/manual\/game-studio\/load-scenes.md",
+                    {
+                        "id": "tu36"
+                    }
+                ],
+                [
+                    "<x1\/>Scene streaming properties<x2\/>",
+                    "",
+                    "<x1\/>Scene streaming properties<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/game-studio\/load-scenes.md",
+                    {
+                        "id": "tu37"
+                    }
+                ],
+                [
+                    "Property",
+                    "",
+                    "Property",
+                    "\/D:\/repos\/rr\/source\/manual\/game-studio\/load-scenes.md",
+                    {
+                        "id": "tu38"
+                    }
+                ],
+                [
+                    "Description",
+                    "",
+                    "Description",
+                    "\/D:\/repos\/rr\/source\/manual\/game-studio\/load-scenes.md",
+                    {
+                        "id": "tu39"
+                    }
+                ],
+                [
+                    "Pre Load Depth",
+                    "",
+                    "Pre Load Depth",
+                    "\/D:\/repos\/rr\/source\/manual\/game-studio\/load-scenes.md",
+                    {
+                        "id": "tu40"
+                    }
+                ],
+                [
+                    "The point (in <g1>world units<\/g1>) at which the scene begins to load.",
+                    "",
+                    "The point (in <g1>world units<\/g1>) at which the scene begins to load.",
+                    "\/D:\/repos\/rr\/source\/manual\/game-studio\/load-scenes.md",
+                    {
+                        "id": "tu41"
+                    }
+                ],
+                [
+                    "For example, if <g2>2.5<\/g2>, the scene begins to load when the player is 2.5 units into the trigger area",
+                    "",
+                    " For example, if <g2>2.5<\/g2>, the scene begins to load when the player is 2.5 units into the trigger area",
+                    "\/D:\/repos\/rr\/source\/manual\/game-studio\/load-scenes.md",
+                    {
+                        "id": "tu41"
+                    }
+                ],
+                [
+                    "Load Depth",
+                    "",
+                    "Load Depth",
+                    "\/D:\/repos\/rr\/source\/manual\/game-studio\/load-scenes.md",
+                    {
+                        "id": "tu42"
+                    }
+                ],
+                [
+                    "The point (in <g1>world units<\/g1>) at which the game freezes to finish loading the scene if it hasn't loaded already.",
+                    "",
+                    "The point (in <g1>world units<\/g1>) at which the game freezes to finish loading the scene if it hasn't loaded already.",
+                    "\/D:\/repos\/rr\/source\/manual\/game-studio\/load-scenes.md",
+                    {
+                        "id": "tu43"
+                    }
+                ],
+                [
+                    "For example, if <g2>5<\/g2>, the game freezes when the player is 5 units into the trigger area",
+                    "",
+                    " For example, if <g2>5<\/g2>, the game freezes when the player is 5 units into the trigger area",
+                    "\/D:\/repos\/rr\/source\/manual\/game-studio\/load-scenes.md",
+                    {
+                        "id": "tu43"
+                    }
+                ],
+                [
+                    "Priority",
+                    "",
+                    "Priority",
+                    "\/D:\/repos\/rr\/source\/manual\/game-studio\/load-scenes.md",
+                    {
+                        "id": "tu44"
+                    }
+                ],
+                [
+                    "The script priority.",
+                    "",
+                    "The script priority.",
+                    "\/D:\/repos\/rr\/source\/manual\/game-studio\/load-scenes.md",
+                    {
+                        "id": "tu45"
+                    }
+                ],
+                [
+                    "For more information, see <g1>Scheduling and priorities<\/g1>",
+                    "",
+                    " For more information, see <g1>Scheduling and priorities<\/g1>",
+                    "\/D:\/repos\/rr\/source\/manual\/game-studio\/load-scenes.md",
+                    {
+                        "id": "tu45"
+                    }
+                ],
+                [
+                    "See also",
+                    "",
+                    "See also",
+                    "\/D:\/repos\/rr\/source\/manual\/game-studio\/load-scenes.md",
+                    {
+                        "id": "tu46"
+                    }
+                ],
+                [
+                    "Colliders",
+                    "",
+                    "<g1>Colliders<\/g1>",
+                    "\/D:\/repos\/rr\/source\/manual\/game-studio\/load-scenes.md",
+                    {
+                        "id": "tu47"
+                    }
+                ],
+                [
+                    "Triggers",
+                    "",
+                    "<g1>Triggers<\/g1>",
+                    "\/D:\/repos\/rr\/source\/manual\/game-studio\/load-scenes.md",
+                    {
+                        "id": "tu48"
+                    }
+                ],
+                [
+                    "Create and open a scene",
+                    "",
+                    "<g1>Create and open a scene<\/g1>",
+                    "\/D:\/repos\/rr\/source\/manual\/game-studio\/load-scenes.md",
+                    {
+                        "id": "tu49"
+                    }
+                ],
+                [
+                    "Navigate in the Scene Editor",
+                    "",
+                    "<g1>Navigate in the Scene Editor<\/g1>",
+                    "\/D:\/repos\/rr\/source\/manual\/game-studio\/load-scenes.md",
+                    {
+                        "id": "tu50"
+                    }
+                ],
+                [
+                    "Manage scenes",
+                    "",
+                    "<g1>Manage scenes<\/g1>",
+                    "\/D:\/repos\/rr\/source\/manual\/game-studio\/load-scenes.md",
+                    {
+                        "id": "tu51"
+                    }
+                ],
+                [
+                    "Add entities",
+                    "",
+                    "<g1>Add entities<\/g1>",
+                    "\/D:\/repos\/rr\/source\/manual\/game-studio\/load-scenes.md",
+                    {
+                        "id": "tu52"
+                    }
+                ],
+                [
+                    "Manage entities",
+                    "",
+                    "<g1>Manage entities<\/g1>",
+                    "\/D:\/repos\/rr\/source\/manual\/game-studio\/load-scenes.md",
+                    {
+                        "id": "tu53"
+                    }
+                ]
+            ]
+        }
+    ],
+    "seg_enabled": false
+}

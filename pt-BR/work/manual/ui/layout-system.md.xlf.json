@@ -1,0 +1,289 @@
+{
+    "filename": "manual\\ui\\layout-system.md.xlf",
+    "files": [
+        {
+            "\/D:\/repos\/rr\/source\/manual\/ui\/layout-system.md": [
+                [
+                    "Layout system",
+                    "",
+                    "Layout system",
+                    "\/D:\/repos\/rr\/source\/manual\/ui\/layout-system.md",
+                    {
+                        "id": "tu1"
+                    }
+                ],
+                [
+                    "<x1\/>Intermediate<x2\/>",
+                    "",
+                    "<x1\/>Intermediate<x2\/>\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/ui\/layout-system.md",
+                    {
+                        "id": "tu2"
+                    }
+                ],
+                [
+                    "<x3\/>Programmer<x4\/>",
+                    "",
+                    "<x3\/>Programmer<x4\/>\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/ui\/layout-system.md",
+                    {
+                        "id": "tu2"
+                    }
+                ],
+                [
+                    "<x5\/>Designer<x6\/>",
+                    "",
+                    "<x5\/>Designer<x6\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/ui\/layout-system.md",
+                    {
+                        "id": "tu2"
+                    }
+                ],
+                [
+                    "The Stride UI layout system is similar to Windows Presentation Foundation (WPF).",
+                    "",
+                    "The Stride UI layout system is similar to Windows Presentation Foundation (WPF).",
+                    "\/D:\/repos\/rr\/source\/manual\/ui\/layout-system.md",
+                    {
+                        "id": "tu3"
+                    }
+                ],
+                [
+                    "For more information about the WPF layout system, see the <g1>MSDN documentation<\/g1>.",
+                    "",
+                    " For more information about the WPF layout system, see the <g1>MSDN documentation<\/g1>.",
+                    "\/D:\/repos\/rr\/source\/manual\/ui\/layout-system.md",
+                    {
+                        "id": "tu3"
+                    }
+                ],
+                [
+                    "Much of the WPF documentation also applies to the Stride layout system.",
+                    "",
+                    " Much of the WPF documentation also applies to the Stride layout system.",
+                    "\/D:\/repos\/rr\/source\/manual\/ui\/layout-system.md",
+                    {
+                        "id": "tu3"
+                    }
+                ],
+                [
+                    "Every @'Stride.UI.UIElement' in the Stride UI system has a surrounding rectangle used in layouts.",
+                    "",
+                    "Every @'Stride.UI.UIElement' in the Stride UI system has a surrounding rectangle used in layouts.",
+                    "\/D:\/repos\/rr\/source\/manual\/ui\/layout-system.md",
+                    {
+                        "id": "tu4"
+                    }
+                ],
+                [
+                    "Stride computes layouts according to the @'Stride.UI.UIElement' requirement, available screen space, constraints, margins, padding, and the special behavior of @'Stride.UI.Panels.Panel' elements (which arrange children in specific ways).",
+                    "",
+                    " Stride computes layouts according to the @'Stride.UI.UIElement' requirement, available screen space, constraints, margins, padding, and the special behavior of @'Stride.UI.Panels.Panel' elements (which arrange children in specific ways).",
+                    "\/D:\/repos\/rr\/source\/manual\/ui\/layout-system.md",
+                    {
+                        "id": "tu4"
+                    }
+                ],
+                [
+                    "Processing this data recursively, the layout system computes a position and size for every @'Stride.UI.UIElement' in the UI system.",
+                    "",
+                    "Processing this data recursively, the layout system computes a position and size for every @'Stride.UI.UIElement' in the UI system.",
+                    "\/D:\/repos\/rr\/source\/manual\/ui\/layout-system.md",
+                    {
+                        "id": "tu5"
+                    }
+                ],
+                [
+                    "Measure and arrange",
+                    "",
+                    "Measure and arrange",
+                    "\/D:\/repos\/rr\/source\/manual\/ui\/layout-system.md",
+                    {
+                        "id": "tu6"
+                    }
+                ],
+                [
+                    "Stride performs the layout process recursively in two passes:",
+                    "",
+                    "Stride performs the layout process recursively in two passes:",
+                    "\/D:\/repos\/rr\/source\/manual\/ui\/layout-system.md",
+                    {
+                        "id": "tu7"
+                    }
+                ],
+                [
+                    "<g1>Measure<\/g1> and <g2>Arrange<\/g2>.",
+                    "",
+                    " <g1>Measure<\/g1> and <g2>Arrange<\/g2>.",
+                    "\/D:\/repos\/rr\/source\/manual\/ui\/layout-system.md",
+                    {
+                        "id": "tu7"
+                    }
+                ],
+                [
+                    "Measure",
+                    "",
+                    "Measure",
+                    "\/D:\/repos\/rr\/source\/manual\/ui\/layout-system.md",
+                    {
+                        "id": "tu8"
+                    }
+                ],
+                [
+                    "In the <g1>Measure<\/g1> pass, each element recursively computes its <g2>DesiredSize<\/g2> according to the properties you set, such as @'Stride.UI.UIElement.Width', @'Stride.UI.UIElement.Height', and @'Stride.UI.UIElement.Margin'.",
+                    "",
+                    "In the <g1>Measure<\/g1> pass, each element recursively computes its <g2>DesiredSize<\/g2> according to the properties you set, such as @'Stride.UI.UIElement.Width', @'Stride.UI.UIElement.Height', and @'Stride.UI.UIElement.Margin'.",
+                    "\/D:\/repos\/rr\/source\/manual\/ui\/layout-system.md",
+                    {
+                        "id": "tu9"
+                    }
+                ],
+                [
+                    "Some @'Stride.UI.Panels.Panel' elements call <g1>Measure<\/g1> recursively to determine the  <g2>DesiredSize<\/g2> of their children, and act accordingly.",
+                    "",
+                    "Some @'Stride.UI.Panels.Panel' elements call <g1>Measure<\/g1> recursively to determine the  <g2>DesiredSize<\/g2> of their children, and act accordingly.",
+                    "\/D:\/repos\/rr\/source\/manual\/ui\/layout-system.md",
+                    {
+                        "id": "tu10"
+                    }
+                ],
+                [
+                    "Arrange",
+                    "",
+                    "Arrange",
+                    "\/D:\/repos\/rr\/source\/manual\/ui\/layout-system.md",
+                    {
+                        "id": "tu11"
+                    }
+                ],
+                [
+                    "The <g1>Arrange<\/g1> pass arranges the elements, taking into account:",
+                    "",
+                    "The <g1>Arrange<\/g1> pass arranges the elements, taking into account:",
+                    "\/D:\/repos\/rr\/source\/manual\/ui\/layout-system.md",
+                    {
+                        "id": "tu12"
+                    }
+                ],
+                [
+                    "@'Stride.UI.UIElement.Margin'",
+                    "",
+                    "@'Stride.UI.UIElement.Margin'",
+                    "\/D:\/repos\/rr\/source\/manual\/ui\/layout-system.md",
+                    {
+                        "id": "tu13"
+                    }
+                ],
+                [
+                    "@'Stride.UI.UIElement.Width'",
+                    "",
+                    "@'Stride.UI.UIElement.Width'",
+                    "\/D:\/repos\/rr\/source\/manual\/ui\/layout-system.md",
+                    {
+                        "id": "tu14"
+                    }
+                ],
+                [
+                    "@'Stride.UI.UIElement.Height'",
+                    "",
+                    "@'Stride.UI.UIElement.Height'",
+                    "\/D:\/repos\/rr\/source\/manual\/ui\/layout-system.md",
+                    {
+                        "id": "tu15"
+                    }
+                ],
+                [
+                    "@'Stride.UI.UIElement.HorizontalAlignment'",
+                    "",
+                    "@'Stride.UI.UIElement.HorizontalAlignment'",
+                    "\/D:\/repos\/rr\/source\/manual\/ui\/layout-system.md",
+                    {
+                        "id": "tu16"
+                    }
+                ],
+                [
+                    "@'Stride.UI.UIElement.VerticalAlignment'",
+                    "",
+                    "@'Stride.UI.UIElement.VerticalAlignment'",
+                    "\/D:\/repos\/rr\/source\/manual\/ui\/layout-system.md",
+                    {
+                        "id": "tu17"
+                    }
+                ],
+                [
+                    "@'Stride.UI.Panels.Panel'",
+                    "",
+                    "@'Stride.UI.Panels.Panel'",
+                    "\/D:\/repos\/rr\/source\/manual\/ui\/layout-system.md",
+                    {
+                        "id": "tu18"
+                    }
+                ],
+                [
+                    "specific <g1>Arrange<\/g1> rules",
+                    "",
+                    "specific <g1>Arrange<\/g1> rules",
+                    "\/D:\/repos\/rr\/source\/manual\/ui\/layout-system.md",
+                    {
+                        "id": "tu19"
+                    }
+                ],
+                [
+                    "See also",
+                    "",
+                    "See also",
+                    "\/D:\/repos\/rr\/source\/manual\/ui\/layout-system.md",
+                    {
+                        "id": "tu20"
+                    }
+                ],
+                [
+                    "MSDN WPF layout documentation",
+                    "",
+                    "<g1>MSDN WPF layout documentation<\/g1>",
+                    "\/D:\/repos\/rr\/source\/manual\/ui\/layout-system.md",
+                    {
+                        "id": "tu21"
+                    }
+                ],
+                [
+                    "UI pages",
+                    "",
+                    "<g1>UI pages<\/g1>",
+                    "\/D:\/repos\/rr\/source\/manual\/ui\/layout-system.md",
+                    {
+                        "id": "tu22"
+                    }
+                ],
+                [
+                    "UI libraries",
+                    "",
+                    "<g1>UI libraries<\/g1>",
+                    "\/D:\/repos\/rr\/source\/manual\/ui\/layout-system.md",
+                    {
+                        "id": "tu23"
+                    }
+                ],
+                [
+                    "UI editor",
+                    "",
+                    "<g1>UI editor<\/g1>",
+                    "\/D:\/repos\/rr\/source\/manual\/ui\/layout-system.md",
+                    {
+                        "id": "tu24"
+                    }
+                ],
+                [
+                    "Add a UI to a scene",
+                    "",
+                    "<g1>Add a UI to a scene<\/g1>",
+                    "\/D:\/repos\/rr\/source\/manual\/ui\/layout-system.md",
+                    {
+                        "id": "tu25"
+                    }
+                ]
+            ]
+        }
+    ],
+    "seg_enabled": false
+}

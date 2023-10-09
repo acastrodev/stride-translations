@@ -1,0 +1,316 @@
+{
+    "filename": "manual\\graphics\\effects-and-shaders\\shading-language\\templates.md.xlf",
+    "files": [
+        {
+            "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/templates.md": [
+                [
+                    "Templates",
+                    "",
+                    "Templates",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/templates.md",
+                    {
+                        "id": "tu1"
+                    }
+                ],
+                [
+                    "Shader templating is available in SDSL.",
+                    "",
+                    "Shader templating is available in SDSL.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/templates.md",
+                    {
+                        "id": "tu2"
+                    }
+                ],
+                [
+                    "Unlike many templating systems, sdsl requires strong typed templates.",
+                    "",
+                    " Unlike many templating systems, sdsl requires strong typed templates.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/templates.md",
+                    {
+                        "id": "tu2"
+                    }
+                ],
+                [
+                    "The available types are:",
+                    "",
+                    " The available types are:",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/templates.md",
+                    {
+                        "id": "tu2"
+                    }
+                ],
+                [
+                    "value types from HLSL (float, int, float2, float3, float4)",
+                    "",
+                    "value types from HLSL (float, int, float2, float3, float4)",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/templates.md",
+                    {
+                        "id": "tu3"
+                    }
+                ],
+                [
+                    "2D textures",
+                    "",
+                    "2D textures",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/templates.md",
+                    {
+                        "id": "tu4"
+                    }
+                ],
+                [
+                    "sampler states",
+                    "",
+                    "sampler states",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/templates.md",
+                    {
+                        "id": "tu5"
+                    }
+                ],
+                [
+                    "semantics (used to replace semantics on variables)",
+                    "",
+                    "semantics (used to replace semantics on variables)",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/templates.md",
+                    {
+                        "id": "tu6"
+                    }
+                ],
+                [
+                    "link types (used to replace link annotations)",
+                    "",
+                    "link types (used to replace link annotations)",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/templates.md",
+                    {
+                        "id": "tu7"
+                    }
+                ],
+                [
+                    "An instantiated shader behaves the same way as any other shader.",
+                    "",
+                    "An instantiated shader behaves the same way as any other shader.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/templates.md",
+                    {
+                        "id": "tu8"
+                    }
+                ],
+                [
+                    "The value, texture and sampler template parameters are accessible like any other variable.",
+                    "",
+                    " The value, texture and sampler template parameters are accessible like any other variable.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/templates.md",
+                    {
+                        "id": "tu8"
+                    }
+                ],
+                [
+                    "However, it's impossible to modify their value; attempting to do so results in a compilation error.",
+                    "",
+                    " However, it's impossible to modify their value; attempting to do so results in a compilation error.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/templates.md",
+                    {
+                        "id": "tu8"
+                    }
+                ],
+                [
+                    "If a template variable is incorrectly used (eg using a sampler as a semantic), it should result in a compilation error.",
+                    "",
+                    " If a template variable is incorrectly used (eg using a sampler as a semantic), it should result in a compilation error.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/templates.md",
+                    {
+                        "id": "tu8"
+                    }
+                ],
+                [
+                    "However, the behavior is officially unknown.",
+                    "",
+                    " However, the behavior is officially unknown.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/templates.md",
+                    {
+                        "id": "tu8"
+                    }
+                ],
+                [
+                    "<g1>Code:<\/g1> Templating",
+                    "",
+                    "<g1>Code:<\/g1> Templating",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/templates.md",
+                    {
+                        "id": "tu9"
+                    }
+                ],
+                [
+                    "shader TemplateShader",
+                    "",
+                    "shader TemplateShader<float speed, Texture2D myTexture, SamplerState mySampler, Semantic mySemantic, LinkType myLink>\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/templates.md",
+                    {
+                        "id": "tu10"
+                    }
+                ],
+                [
+                    "{",
+                    "",
+                    "{\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/templates.md",
+                    {
+                        "id": "tu10"
+                    }
+                ],
+                [
+                    "[Color]",
+                    "",
+                    "\t[Color]\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/templates.md",
+                    {
+                        "id": "tu10"
+                    }
+                ],
+                [
+                    "[Link(\"myLink\")]",
+                    "",
+                    "\t[Link(\"myLink\")]\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/templates.md",
+                    {
+                        "id": "tu10"
+                    }
+                ],
+                [
+                    "float4 myColor;",
+                    "",
+                    "\tfloat4 myColor;\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/templates.md",
+                    {
+                        "id": "tu10"
+                    }
+                ],
+                [
+                    "stream float2 texcoord : mySemantic;",
+                    "",
+                    " \r\n\tstream float2 texcoord : mySemantic;\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/templates.md",
+                    {
+                        "id": "tu10"
+                    }
+                ],
+                [
+                    "float4 GetValue()",
+                    "",
+                    " \r\n\tfloat4 GetValue()\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/templates.md",
+                    {
+                        "id": "tu10"
+                    }
+                ],
+                [
+                    "{",
+                    "",
+                    "\t{\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/templates.md",
+                    {
+                        "id": "tu10"
+                    }
+                ],
+                [
+                    "return speed * myColor * myTexture.Sample(mySampler, streams.texcoord);",
+                    "",
+                    "\t\treturn speed * myColor * myTexture.Sample(mySampler, streams.texcoord);\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/templates.md",
+                    {
+                        "id": "tu10"
+                    }
+                ],
+                [
+                    "}",
+                    "",
+                    "\t}\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/templates.md",
+                    {
+                        "id": "tu10"
+                    }
+                ],
+                [
+                    "};",
+                    "",
+                    "};\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/templates.md",
+                    {
+                        "id": "tu10"
+                    }
+                ],
+                [
+                    "\/\/ To instantiate the shader, use:",
+                    "",
+                    " \r\n\/\/ To instantiate the shader, use:\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/templates.md",
+                    {
+                        "id": "tu10"
+                    }
+                ],
+                [
+                    "TemplateShader",
+                    "",
+                    "TemplateShader<1.0f, Texturing.Texture0, Texturing.Sampler0, TEXCOORD0, MyColorLink>\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/templates.md",
+                    {
+                        "id": "tu10"
+                    }
+                ],
+                [
+                    "See also",
+                    "",
+                    "See also",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/templates.md",
+                    {
+                        "id": "tu11"
+                    }
+                ],
+                [
+                    "Effect language",
+                    "",
+                    "<g1>Effect language<\/g1>",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/templates.md",
+                    {
+                        "id": "tu12"
+                    }
+                ],
+                [
+                    "Shading language index",
+                    "",
+                    "<g1>Shading language index<\/g1>",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/templates.md",
+                    {
+                        "id": "tu13"
+                    }
+                ],
+                [
+                    "Shader classes, mixins, and inheritance",
+                    "",
+                    "<g1>Shader classes, mixins, and inheritance<\/g1>",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/templates.md",
+                    {
+                        "id": "tu14"
+                    }
+                ],
+                [
+                    "Composition",
+                    "",
+                    "<g1>Composition<\/g1>",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/templates.md",
+                    {
+                        "id": "tu15"
+                    }
+                ],
+                [
+                    "Shader stage input\/output automatic management",
+                    "",
+                    "<g1>Shader stage input\/output automatic management<\/g1>",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/templates.md",
+                    {
+                        "id": "tu16"
+                    }
+                ]
+            ]
+        }
+    ],
+    "seg_enabled": false
+}

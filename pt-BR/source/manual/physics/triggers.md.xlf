@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="/D:/repos/rr/source/manual/physics/triggers.md" source-language="en" target-language="pt" datatype="x-text/x-markdown" okp:inputEncoding="UTF-8">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en">Triggers</source>
+<target xml:lang="pt">Triggers</target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Beginner<x id="2"/>
+<x id="3"/>Designer<x id="4"/></source>
+<target xml:lang="pt"><x id="1"/>Beginner<x id="2"/>
+<x id="3"/>Designer<x id="4"/></target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">If you set a collider to be a <g id="1">trigger</g>, other colliders no longer bump into it. Instead, they pass through.</source>
+<target xml:lang="pt">If you set a collider to be a <g id="1">trigger</g>, other colliders no longer bump into it. Instead, they pass through.</target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">The trigger detects when colliders enter it, which you can use to script events. For example, you can detect when a player character enters a room, and use this in your script to trigger an event. For more information, see <g id="1">Events</g>.</source>
+<target xml:lang="pt">The trigger detects when colliders enter it, which you can use to script events. For example, you can detect when a player character enters a room, and use this in your script to trigger an event. For more information, see <g id="1">Events</g>.</target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>!Note<x id="2"/>
+<g id="3">Character colliders</g> can't be used as triggers.</source>
+<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
+<g id="3">Character colliders</g> can't be used as triggers.</target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en">Create a trigger</source>
+<target xml:lang="pt">Create a trigger</target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en">Create a <g id="1">collider</g>.</source>
+<target xml:lang="pt">Create a <g id="1">collider</g>.</target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en">In the <g id="1">Property Grid</g>, under the collider component properties, select <g id="2">Is Trigger</g>.</source>
+<target xml:lang="pt">In the <g id="1">Property Grid</g>, under the collider component properties, select <g id="2">Is Trigger</g>.</target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Select 'Is trigger'<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Select 'Is trigger'<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en">Detect trigger collisions</source>
+<target xml:lang="pt">Detect trigger collisions</target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en">You can see when something enters the trigger using the following code:</source>
+<target xml:lang="pt">You can see when something enters the trigger using the following code:</target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en">// Wait for an entity to collide with the trigger
+var firstCollision = await trigger.NewCollision();
+
+var otherCollider = trigger == firstCollision.ColliderA
+    ? firstCollision.ColliderB
+    : firstCollision.ColliderA;
+</source>
+<target xml:lang="pt">// Wait for an entity to collide with the trigger
+var firstCollision = await trigger.NewCollision();
+
+var otherCollider = trigger == firstCollision.ColliderA
+    ? firstCollision.ColliderB
+    : firstCollision.ColliderA;
+</target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en">Alternatively, directly access the <g id="1">TrackingHashSet</g>:</source>
+<target xml:lang="pt">Alternatively, directly access the <g id="1">TrackingHashSet</g>:</target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en">var trigger = Entity.Get&lt;PhysicsComponent>();
+foreach (var collision in trigger.Collisions)
+{
+    //do something with the collision
+}
+</source>
+<target xml:lang="pt">var trigger = Entity.Get&lt;PhysicsComponent>();
+foreach (var collision in trigger.Collisions)
+{
+    //do something with the collision
+}
+</target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en">Or use the <g id="1">TrackingHashSet</g> events:</source>
+<target xml:lang="pt">Or use the <g id="1">TrackingHashSet</g> events:</target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en">var trigger = Entity.Get&lt;PhysicsComponent>();
+trigger.Collisions.CollectionChanged += (sender, args) =>
+{
+    if (args.Action == NotifyCollectionChangedAction.Add)
+    {
+        //new collision
+        var collision = (Collision) args.Item;
+        //do something
+    }
+    else if (args.Action == NotifyCollectionChangedAction.Remove)
+    {
+        //old collision
+        var collision = (Collision)args.Item;
+        //do something
+    }
+};
+</source>
+<target xml:lang="pt">var trigger = Entity.Get&lt;PhysicsComponent>();
+trigger.Collisions.CollectionChanged += (sender, args) =>
+{
+    if (args.Action == NotifyCollectionChangedAction.Add)
+    {
+        //new collision
+        var collision = (Collision) args.Item;
+        //do something
+    }
+    else if (args.Action == NotifyCollectionChangedAction.Remove)
+    {
+        //old collision
+        var collision = (Collision)args.Item;
+        //do something
+    }
+};
+</target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en">For an example of how to use triggers, see the <g id="1">Script a trigger</g> tutorial.</source>
+<target xml:lang="pt">For an example of how to use triggers, see the <g id="1">Script a trigger</g> tutorial.</target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en">See also</source>
+<target xml:lang="pt">See also</target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en"><g id="1">Tutorial: Script a trigger</g></source>
+<target xml:lang="pt"><g id="1">Tutorial: Script a trigger</g></target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en"><g id="1">Colliders</g></source>
+<target xml:lang="pt"><g id="1">Colliders</g></target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en"><g id="1">Collider shapes</g></source>
+<target xml:lang="pt"><g id="1">Collider shapes</g></target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en"><g id="1">Events</g></source>
+<target xml:lang="pt"><g id="1">Events</g></target>
+</trans-unit>
+</body>
+</file>
+</xliff>

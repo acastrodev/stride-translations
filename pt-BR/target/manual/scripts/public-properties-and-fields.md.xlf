@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" xmlns:okp="okapi-framework:xliff-extensions" its:version="2.0" version="1.2">
+<file datatype="x-text/x-markdown" okp:inputEncoding="UTF-8" original="/D:/repos/rr/source/manual/scripts/public-properties-and-fields.md" source-language="en" target-language="pt">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en">Public properties and fields</source>
+<target xml:lang="pt">Public properties and fields</target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Beginner<x id="2"/>
+<x id="3"/>Programmer<x id="4"/></source>
+<target xml:lang="pt"><x id="1"/>Beginner<x id="2"/>
+<x id="3"/>Programmer<x id="4"/></target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">When you declare a public property or field in a script, the property becomes accessible in Game Studio from the script component properties.</source>
+<target xml:lang="pt">When you declare a public property or field in a script, the property becomes accessible in Game Studio from the script component properties.</target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Property in Game Studio<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Property in Game Studio<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">You can attach the same script to multiple entities and set different property values on each entity.</source>
+<target xml:lang="pt">You can attach the same script to multiple entities and set different property values on each entity.</target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>!Note<x id="2"/>
+Properties and fields must be <g id="3">serializable</g> to be used in Game Studio.</source>
+<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
+Properties and fields must be <g id="3">serializable</g> to be used in Game Studio.</target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en">Add a public property or field</source>
+<target xml:lang="pt">Add a public property or field</target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en">This script has a public property (<g id="1">DelayTimeOut</g>):</source>
+<target xml:lang="pt">This script has a public property (<g id="1">DelayTimeOut</g>):</target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en">public class SampleSyncScript : StartupScript
+{
+	// This public member will appear in Game Studio
+	public float DelayTimeOut { get; set; }
+}
+</source>
+<target xml:lang="pt">public class SampleSyncScript : StartupScript
+{
+	// This public member will appear in Game Studio
+	public float DelayTimeOut { get; set; }
+}
+</target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en">Game Studio shows the <g id="1">DelayTimeOut</g> property in the script component properties:</source>
+<target xml:lang="pt">Game Studio shows the <g id="1">DelayTimeOut</g> property in the script component properties:</target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Public property appears in the Property Grid<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Public property appears in the Property Grid<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>!Note<x id="2"/>
+As a general rule, if you want to display the property or field in Game Studio, getters and setters should do as little as possible. For example, they shouldn't try to call methods or access Stride runtime API.</source>
+<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
+As a general rule, if you want to display the property or field in Game Studio, getters and setters should do as little as possible. For example, they shouldn't try to call methods or access Stride runtime API.</target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en">For example, the following code will create problems, as it tries to access <g id="1">Entity.Components</g>, which is only available at runtime:</source>
+<target xml:lang="pt">For example, the following code will create problems, as it tries to access <g id="1">Entity.Components</g>, which is only available at runtime:</target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en">public class SampleSyncScript : StartupScript
+{
+	private float delayTimeOut;
+	// This public member will appear in Game Studio
+	public float DelayTimeOut
+	{
+		get { return delayTimeOut; }
+		set
+		{ 
+			delayTimeOut = value;
+			Entity.Components.Add(new SkyboxComponent());
+		}
+	}
+}
+</source>
+<target xml:lang="pt">public class SampleSyncScript : StartupScript
+{
+	private float delayTimeOut;
+	// This public member will appear in Game Studio
+	public float DelayTimeOut
+	{
+		get { return delayTimeOut; }
+		set
+		{ 
+			delayTimeOut = value;
+			Entity.Components.Add(new SkyboxComponent());
+		}
+	}
+}
+</target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en">If you want to include code like this in a property or field, hide it so Game Studio doesn't display it (see below).</source>
+<target xml:lang="pt">If you want to include code like this in a property or field, hide it so Game Studio doesn't display it (see below).</target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en">Hide properties or fields in the Property Grid</source>
+<target xml:lang="pt">Hide properties or fields in the Property Grid</target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en">If you don't want Game Studio to show a property in the Property Grid, you can:</source>
+<target xml:lang="pt">If you don't want Game Studio to show a property in the Property Grid, you can:</target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en">declare your member internal or private, or</source>
+<target xml:lang="pt">declare your member internal or private, or</target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en">use the <g id="1">DataMemberIgnore</g> attribute like this:</source>
+<target xml:lang="pt">use the <g id="1">DataMemberIgnore</g> attribute like this:</target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en">
+	// This public property isn't available in Game Studio
+	[DataMemberIgnore]
+	public float DelayTimeOut { get; set; }
+	
+</source>
+<target xml:lang="pt">
+	// This public property isn't available in Game Studio
+	[DataMemberIgnore]
+	public float DelayTimeOut { get; set; }
+	
+</target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en">Game Studio no longer shows the property:</source>
+<target xml:lang="pt">Game Studio no longer shows the property:</target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Public property been hidden with <g id="2">[DataMemberIgnore]</g><x id="3"/></source>
+<target xml:lang="pt"><x id="1"/>Public property been hidden with <g id="2">[DataMemberIgnore]</g><x id="3"/></target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en">Adding property descriptions</source>
+<target xml:lang="pt">Adding property descriptions</target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en">When you add a <g id="1">&lt;userdoc&gt;</g> comment block above your public property in code, Game Studio will display it in the description field.</source>
+<target xml:lang="pt">When you add a <g id="1">&lt;userdoc&gt;</g> comment block above your public property in code, Game Studio will display it in the description field.</target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en">	///&lt;summary&gt;
+	/// This summary won't show in Game Studio
+	///&lt;/summary&gt;
+	///&lt;userdoc&gt;
+	/// This description will show in Game Studio
+	///&lt;/userdoc&gt;
+	public float DelayTimeOut { get; set; }
+
+</source>
+<target xml:lang="pt">	///&lt;summary&gt;
+	/// This summary won't show in Game Studio
+	///&lt;/summary&gt;
+	///&lt;userdoc&gt;
+	/// This description will show in Game Studio
+	///&lt;/userdoc&gt;
+	public float DelayTimeOut { get; set; }
+
+</target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en">Enable documentation file generation:</source>
+<target xml:lang="pt">Enable documentation file generation:</target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en">  &lt;PropertyGroup&gt;
+    &lt;TargetFrameworks&gt;net6.0&lt;/TargetFrameworks&gt;
+    &lt;DocumentationFile&gt;bin\$(Configuration)\$(TargetFramework)\$(AssemblyName).xml&lt;/DocumentationFile&gt;
+  &lt;/PropertyGroup&gt;
+</source>
+<target xml:lang="pt">  &lt;PropertyGroup&gt;
+    &lt;TargetFrameworks&gt;net6.0&lt;/TargetFrameworks&gt;
+    &lt;DocumentationFile&gt;bin\$(Configuration)\$(TargetFramework)\$(AssemblyName).xml&lt;/DocumentationFile&gt;
+  &lt;/PropertyGroup&gt;
+</target>
+</trans-unit>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>!NOTE<x id="2"/>
+Game Studio will only look in your build output directory for each assembly. Using the above path is recommended.</source>
+<target xml:lang="pt"><x id="1"/>!NOTE<x id="2"/>
+Game Studio will only look in your build output directory for each assembly. Using the above path is recommended.</target>
+</trans-unit>
+<trans-unit id="tu29" xml:space="preserve">
+<source xml:lang="en">On next reload, the Game Studio should display the documentation:</source>
+<target xml:lang="pt">On next reload, the Game Studio should display the documentation:</target>
+</trans-unit>
+<trans-unit id="tu30" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>The description now shows in the Property Grid<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>The description now shows in the Property Grid<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu31" xml:space="preserve">
+<source xml:lang="en"><g id="1">MemberRequiredAttribute</g></source>
+<target xml:lang="pt"><g id="1">MemberRequiredAttribute</g></target>
+</trans-unit>
+<trans-unit id="tu32" xml:space="preserve">
+<source xml:lang="en">This attribute is used to specify if a field or property should not be left null in editor.
+If no values are set for this member, a warning or error will be logged when building your game.</source>
+<target xml:lang="pt">This attribute is used to specify if a field or property should not be left null in editor.
+If no values are set for this member, a warning or error will be logged when building your game.</target>
+</trans-unit>
+<trans-unit id="tu33" xml:space="preserve">
+<source xml:lang="en">[Stride.Core.Annotations.MemberRequired(MemberRequiredReportType.Error)] public CharacterComponent MyCharacter;
+</source>
+<target xml:lang="pt">[Stride.Core.Annotations.MemberRequired(MemberRequiredReportType.Error)] public CharacterComponent MyCharacter;
+</target>
+</trans-unit>
+<trans-unit id="tu34" xml:space="preserve">
+<source xml:lang="en"><g id="1">DataMemberRangeAttribute</g></source>
+<target xml:lang="pt"><g id="1">DataMemberRangeAttribute</g></target>
+</trans-unit>
+<trans-unit id="tu35" xml:space="preserve">
+<source xml:lang="en"><g id="1">InlinePropertyAttribute</g></source>
+<target xml:lang="pt"><g id="1">InlinePropertyAttribute</g></target>
+</trans-unit>
+<trans-unit id="tu36" xml:space="preserve">
+<source xml:lang="en"><g id="1">ItemCanBeNullAttribute</g></source>
+<target xml:lang="pt"><g id="1">ItemCanBeNullAttribute</g></target>
+</trans-unit>
+<trans-unit id="tu37" xml:space="preserve">
+<source xml:lang="en"><g id="1">ItemNotNullAttribute</g></source>
+<target xml:lang="pt"><g id="1">ItemNotNullAttribute</g></target>
+</trans-unit>
+<trans-unit id="tu38" xml:space="preserve">
+<source xml:lang="en"><g id="1">MemberCollectionAttribute</g></source>
+<target xml:lang="pt"><g id="1">MemberCollectionAttribute</g></target>
+</trans-unit>
+<trans-unit id="tu39" xml:space="preserve">
+<source xml:lang="en"><g id="1">DataStyleAttribute</g></source>
+<target xml:lang="pt"><g id="1">DataStyleAttribute</g></target>
+</trans-unit>
+<trans-unit id="tu40" xml:space="preserve">
+<source xml:lang="en"><g id="1">DisplayAttribute</g></source>
+<target xml:lang="pt"><g id="1">DisplayAttribute</g></target>
+</trans-unit>
+<trans-unit id="tu41" xml:space="preserve">
+<source xml:lang="en">See also</source>
+<target xml:lang="pt">See also</target>
+</trans-unit>
+<trans-unit id="tu42" xml:space="preserve">
+<source xml:lang="en"><g id="1">Serialization</g></source>
+<target xml:lang="pt"><g id="1">Serialization</g></target>
+</trans-unit>
+<trans-unit id="tu43" xml:space="preserve">
+<source xml:lang="en"><g id="1">Types of script</g></source>
+<target xml:lang="pt"><g id="1">Types of script</g></target>
+</trans-unit>
+<trans-unit id="tu44" xml:space="preserve">
+<source xml:lang="en"><g id="1">Create a script</g></source>
+<target xml:lang="pt"><g id="1">Create a script</g></target>
+</trans-unit>
+<trans-unit id="tu45" xml:space="preserve">
+<source xml:lang="en"><g id="1">Use a script</g></source>
+<target xml:lang="pt"><g id="1">Use a script</g></target>
+</trans-unit>
+<trans-unit id="tu46" xml:space="preserve">
+<source xml:lang="en"><g id="1">Scheduling and priorities</g></source>
+<target xml:lang="pt"><g id="1">Scheduling and priorities</g></target>
+</trans-unit>
+<trans-unit id="tu47" xml:space="preserve">
+<source xml:lang="en"><g id="1">Events</g></source>
+<target xml:lang="pt"><g id="1">Events</g></target>
+</trans-unit>
+<trans-unit id="tu48" xml:space="preserve">
+<source xml:lang="en"><g id="1">Debugging</g></source>
+<target xml:lang="pt"><g id="1">Debugging</g></target>
+</trans-unit>
+<trans-unit id="tu49" xml:space="preserve">
+<source xml:lang="en"><g id="1">Preprocessor variables</g></source>
+<target xml:lang="pt"><g id="1">Preprocessor variables</g></target>
+</trans-unit>
+</body>
+</file>
+</xliff>

@@ -1,0 +1,1603 @@
+{
+    "filename": "manual\\input\\gestures.md.xlf",
+    "files": [
+        {
+            "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md": [
+                [
+                    "Gestures",
+                    "",
+                    "Gestures",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu1"
+                    }
+                ],
+                [
+                    "<x1\/>Intermediate<x2\/>",
+                    "",
+                    "<x1\/>Intermediate<x2\/>\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu2"
+                    }
+                ],
+                [
+                    "<x3\/>Programmer<x4\/>",
+                    "",
+                    "<x3\/>Programmer<x4\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu2"
+                    }
+                ],
+                [
+                    "Gestures are predefined <g1>pointer<\/g1> patterns.",
+                    "",
+                    "Gestures are predefined <g1>pointer<\/g1> patterns.",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu3"
+                    }
+                ],
+                [
+                    "Stride can recognize gestures and trigger corresponding events.",
+                    "",
+                    " Stride can recognize gestures and trigger corresponding events.",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu3"
+                    }
+                ],
+                [
+                    "For example, in a strategy game, the player can drag and drop a unit to the battlefield with a <g2>drag<\/g2> gesture.",
+                    "",
+                    " For example, in a strategy game, the player can drag and drop a unit to the battlefield with a <g2>drag<\/g2> gesture.",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu3"
+                    }
+                ],
+                [
+                    "Gestures can use one or several fingers.",
+                    "",
+                    " Gestures can use one or several fingers.",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu3"
+                    }
+                ],
+                [
+                    "<x1\/>!Note<x2\/>",
+                    "",
+                    "<x1\/>!Note<x2\/>\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu4"
+                    }
+                ],
+                [
+                    "All lengths, speeds and error margins of configuration files must use normalized values.",
+                    "",
+                    "All lengths, speeds and error margins of configuration files must use normalized values.",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu4"
+                    }
+                ],
+                [
+                    "Turn on gesture recognition",
+                    "",
+                    "Turn on gesture recognition",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu5"
+                    }
+                ],
+                [
+                    "By default, the input system doesn't recognize gestures, as this requires CPU time.",
+                    "",
+                    "By default, the input system doesn't recognize gestures, as this requires CPU time.",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu6"
+                    }
+                ],
+                [
+                    "To turn on gesture recognition:",
+                    "",
+                    "To turn on gesture recognition:",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu7"
+                    }
+                ],
+                [
+                    "Create an instance of the configuration class for the gesture you want to recognize.",
+                    "",
+                    "Create an instance of the configuration class for the gesture you want to recognize.",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu8"
+                    }
+                ],
+                [
+                    "For example, for the drag gesture, create an instance of @'Stride.Input.GestureConfigDrag'.",
+                    "",
+                    " For example, for the drag gesture, create an instance of @'Stride.Input.GestureConfigDrag'.",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu8"
+                    }
+                ],
+                [
+                    "Configure the class parameters.",
+                    "",
+                    "Configure the class parameters.",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu9"
+                    }
+                ],
+                [
+                    "Add the gesture configuration to the @'Stride.Input.InputManager.Gestures' collection.",
+                    "",
+                    "Add the gesture configuration to the @'Stride.Input.InputManager.Gestures' collection.",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu10"
+                    }
+                ],
+                [
+                    "<x1\/>!Warning<x2\/>",
+                    "",
+                    "<x1\/>!Warning<x2\/>\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu11"
+                    }
+                ],
+                [
+                    "After you activate recognition for a gesture, you can't modify the gesture's parameters.",
+                    "",
+                    "After you activate recognition for a gesture, you can't modify the gesture's parameters.",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu11"
+                    }
+                ],
+                [
+                    "If you need to do this, delete the gesture from the @'Stride.Input.InputManager.Gestures' collection and create a new entry with new parameters.",
+                    "",
+                    " If you need to do this, delete the gesture from the @'Stride.Input.InputManager.Gestures' collection and create a new entry with new parameters.",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu11"
+                    }
+                ],
+                [
+                    "Turn off gesture recognition",
+                    "",
+                    "Turn off gesture recognition",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu12"
+                    }
+                ],
+                [
+                    "Delete the gesture from the <g1>InputManager.Gestures<\/g1> collection.",
+                    "",
+                    "Delete the gesture from the <g1>InputManager.Gestures<\/g1> collection.",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu13"
+                    }
+                ],
+                [
+                    "Gesture recognition",
+                    "",
+                    "Gesture recognition",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu14"
+                    }
+                ],
+                [
+                    "When the input system detects a gesture, it adds a @'Stride.Input.GestureEvent' to the list of <g1>InputManager.GestureEvents<\/g1>.",
+                    "",
+                    "When the input system detects a gesture, it adds a @'Stride.Input.GestureEvent' to the list of <g1>InputManager.GestureEvents<\/g1>.",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu15"
+                    }
+                ],
+                [
+                    "The event contains information about the gesture and its state, such as its location and the number of fingers used.",
+                    "",
+                    " The event contains information about the gesture and its state, such as its location and the number of fingers used.",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu15"
+                    }
+                ],
+                [
+                    "<x1\/>!Note<x2\/>",
+                    "",
+                    "<x1\/>!Note<x2\/>\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu16"
+                    }
+                ],
+                [
+                    "Each gesture has its own associated gesture event class (see below).",
+                    "",
+                    "Each gesture has its own associated gesture event class (see below).",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu16"
+                    }
+                ],
+                [
+                    "The <g1>GestureEvent.Type<\/g1> field indicates which gesture has been recognized.",
+                    "",
+                    "The <g1>GestureEvent.Type<\/g1> field indicates which gesture has been recognized.",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu17"
+                    }
+                ],
+                [
+                    "You can then cast the base gesture event into the gesture-specific event type to have gesture-type-specific information about the event.",
+                    "",
+                    " You can then cast the base gesture event into the gesture-specific event type to have gesture-type-specific information about the event.",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu17"
+                    }
+                ],
+                [
+                    "Stride can detect several gestures simultaneously, so the event list can contain more than one item in an update.",
+                    "",
+                    "Stride can detect several gestures simultaneously, so the event list can contain more than one item in an update.",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu18"
+                    }
+                ],
+                [
+                    "The list is cleared with every update, so you don't need to clear it manually.",
+                    "",
+                    "The list is cleared with every update, so you don't need to clear it manually.",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu19"
+                    }
+                ],
+                [
+                    "Configure gestures",
+                    "",
+                    "Configure gestures",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu20"
+                    }
+                ],
+                [
+                    "In the @'Stride.Input.GestureConfig' classes, you can configure parameters including:",
+                    "",
+                    "In the @'Stride.Input.GestureConfig' classes, you can configure parameters including:",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu21"
+                    }
+                ],
+                [
+                    "the number of fingers the gesture uses",
+                    "",
+                    "the number of fingers the gesture uses",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu22"
+                    }
+                ],
+                [
+                    "the number and duration of taps the gesture uses",
+                    "",
+                    "the number and duration of taps the gesture uses",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu23"
+                    }
+                ],
+                [
+                    "the gesture direction",
+                    "",
+                    "the gesture direction",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu24"
+                    }
+                ],
+                [
+                    "<x1\/>!Note<x2\/>",
+                    "",
+                    "<x1\/>!Note<x2\/>\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu25"
+                    }
+                ],
+                [
+                    "Each gesture has its own configuration class with specific configuration parameters (see below).",
+                    "",
+                    "Each gesture has its own configuration class with specific configuration parameters (see below).",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu25"
+                    }
+                ],
+                [
+                    "Types of gesture",
+                    "",
+                    "Types of gesture",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu26"
+                    }
+                ],
+                [
+                    "Stride supports two main types of gesture:",
+                    "",
+                    "Stride supports two main types of gesture:",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu27"
+                    }
+                ],
+                [
+                    "<g1>Discrete<\/g1> gestures (tap, flick, long press) trigger a single event.",
+                    "",
+                    "<g1>Discrete<\/g1> gestures (tap, flick, long press) trigger a single event.",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu28"
+                    }
+                ],
+                [
+                    "Tap",
+                    "",
+                    "<g1>Tap<\/g1>",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu29"
+                    }
+                ],
+                [
+                    "Flick",
+                    "",
+                    "<g1>Flick<\/g1>",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu30"
+                    }
+                ],
+                [
+                    "Long press",
+                    "",
+                    "<g1>Long press<\/g1>",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu31"
+                    }
+                ],
+                [
+                    "<g1>Continuous<\/g1> gestures (drag and composite) trigger a series of events when the user changes the direction of the gesture.",
+                    "",
+                    "<g1>Continuous<\/g1> gestures (drag and composite) trigger a series of events when the user changes the direction of the gesture.",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu32"
+                    }
+                ],
+                [
+                    "Drag",
+                    "",
+                    "<g1>Drag<\/g1>",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu33"
+                    }
+                ],
+                [
+                    "Composite",
+                    "",
+                    "<g1>Composite<\/g1>",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu34"
+                    }
+                ],
+                [
+                    "Discrete gestures",
+                    "",
+                    "Discrete gestures",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu35"
+                    }
+                ],
+                [
+                    "<x1\/> Tap <x2\/>",
+                    "",
+                    "<x1\/> Tap <x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu36"
+                    }
+                ],
+                [
+                    "<x1\/>Tap gesture<x2\/>",
+                    "",
+                    "<x1\/>Tap gesture<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu37"
+                    }
+                ],
+                [
+                    "The user touches the screen and quickly removes their finger.",
+                    "",
+                    "The user touches the screen and quickly removes their finger.",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu38"
+                    }
+                ],
+                [
+                    "<g1>Configuration class<\/g1>:",
+                    "",
+                    "<g1>Configuration class<\/g1>:",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu39"
+                    }
+                ],
+                [
+                    "@'Stride.Input.GestureConfigTap'",
+                    "",
+                    " @'Stride.Input.GestureConfigTap'",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu39"
+                    }
+                ],
+                [
+                    "<g1>Event class<\/g1>:",
+                    "",
+                    "<g1>Event class<\/g1>:",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu40"
+                    }
+                ],
+                [
+                    "@'Stride.Input.GestureEventTap'",
+                    "",
+                    " @'Stride.Input.GestureEventTap'",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu40"
+                    }
+                ],
+                [
+                    "The number of fingers on the screen can't vary during the gesture.",
+                    "",
+                    "The number of fingers on the screen can't vary during the gesture.",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu41"
+                    }
+                ],
+                [
+                    "To set the number of fingers required for a tap, modify @'Stride.Input.GestureConfig.RequiredNumberOfFingers'.",
+                    "",
+                    " To set the number of fingers required for a tap, modify @'Stride.Input.GestureConfig.RequiredNumberOfFingers'.",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu41"
+                    }
+                ],
+                [
+                    "<x1\/>!TIP<x2\/>",
+                    "",
+                    "<x1\/>!TIP<x2\/>\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu42"
+                    }
+                ],
+                [
+                    "To distinguish single taps from multi-taps, the system uses latency in tap events.",
+                    "",
+                    "To distinguish single taps from multi-taps, the system uses latency in tap events.",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu42"
+                    }
+                ],
+                [
+                    "To disable this, set the <g1>GestureConfigTap.MaximumTimeBetweenTaps<\/g1> field to <g2>0<\/g2>.",
+                    "",
+                    " To disable this, set the <g1>GestureConfigTap.MaximumTimeBetweenTaps<\/g1> field to <g2>0<\/g2>.",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu42"
+                    }
+                ],
+                [
+                    "<x1\/> Flick<x2\/>",
+                    "",
+                    "<x1\/> Flick<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu43"
+                    }
+                ],
+                [
+                    "<x1\/>Flick gesture<x2\/>",
+                    "",
+                    "<x1\/>Flick gesture<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu44"
+                    }
+                ],
+                [
+                    "The user touches the screen, performs a quick straight translation, and withdraws their finger(s).",
+                    "",
+                    "The user touches the screen, performs a quick straight translation, and withdraws their finger(s).",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu45"
+                    }
+                ],
+                [
+                    "<g1>Configuration class<\/g1>:",
+                    "",
+                    "<g1>Configuration class<\/g1>:",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu46"
+                    }
+                ],
+                [
+                    "@'Stride.Input.GestureConfigFlick'",
+                    "",
+                    " @'Stride.Input.GestureConfigFlick'",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu46"
+                    }
+                ],
+                [
+                    "<g1>Event class<\/g1>:",
+                    "",
+                    "<g1>Event class<\/g1>:",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu47"
+                    }
+                ],
+                [
+                    "@'Stride.Input.GestureEventFlick'",
+                    "",
+                    " @'Stride.Input.GestureEventFlick'",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu47"
+                    }
+                ],
+                [
+                    "The number of fingers on the screen can't during the gesture.",
+                    "",
+                    "The number of fingers on the screen can't during the gesture.",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu48"
+                    }
+                ],
+                [
+                    "To set a minimum length for the flick gesture, use <g1>GestureConfigFlick.MinimumFlickLength<\/g1>.",
+                    "",
+                    "To set a minimum length for the flick gesture, use <g1>GestureConfigFlick.MinimumFlickLength<\/g1>.",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu49"
+                    }
+                ],
+                [
+                    "To restrict the direction of the flick to <g1>vertical<\/g1> or <g2>horizontal<\/g2>, use",
+                    "",
+                    "To restrict the direction of the flick to <g1>vertical<\/g1> or <g2>horizontal<\/g2>, use\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu50"
+                    }
+                ],
+                [
+                    "<g3>GestureConfigFlick.FlickShape<\/g3>.",
+                    "",
+                    "<g3>GestureConfigFlick.FlickShape<\/g3>.",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu50"
+                    }
+                ],
+                [
+                    "<x1\/> Long press<x2\/>",
+                    "",
+                    "<x1\/> Long press<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu51"
+                    }
+                ],
+                [
+                    "<x1\/>Long press gesture<x2\/>",
+                    "",
+                    "<x1\/>Long press gesture<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu52"
+                    }
+                ],
+                [
+                    "The user touches the screen and maintains pressure without removing their finger for a certain period of time (the default time is one second).",
+                    "",
+                    "The user touches the screen and maintains pressure without removing their finger for a certain period of time (the default time is one second).",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu53"
+                    }
+                ],
+                [
+                    "<g1>Configuration class<\/g1>:",
+                    "",
+                    "<g1>Configuration class<\/g1>:",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu54"
+                    }
+                ],
+                [
+                    "GestureConfigLongPress",
+                    "",
+                    " <g2>GestureConfigLongPress<\/g2>",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu54"
+                    }
+                ],
+                [
+                    "<g1>Event class<\/g1>:",
+                    "",
+                    "<g1>Event class<\/g1>:",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu55"
+                    }
+                ],
+                [
+                    "GestureEventLongPress",
+                    "",
+                    " <g2>GestureEventLongPress<\/g2>",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu55"
+                    }
+                ],
+                [
+                    "The number of fingers on the screen can't vary during the gesture.",
+                    "",
+                    "The number of fingers on the screen can't vary during the gesture.",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu56"
+                    }
+                ],
+                [
+                    "To change the minimum press length for the long press gesture, modify  <g1>GestureConfigLongPress.RequiredPressTime<\/g1>.",
+                    "",
+                    "To change the minimum press length for the long press gesture, modify  <g1>GestureConfigLongPress.RequiredPressTime<\/g1>.",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu57"
+                    }
+                ],
+                [
+                    "Continuous gestures",
+                    "",
+                    "Continuous gestures",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu58"
+                    }
+                ],
+                [
+                    "<x1\/> Drag<x2\/>",
+                    "",
+                    "<x1\/> Drag<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu59"
+                    }
+                ],
+                [
+                    "<x1\/>Drag gesture<x2\/>",
+                    "",
+                    "<x1\/>Drag gesture<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu60"
+                    }
+                ],
+                [
+                    "The user touches the screen, performs a translation, and withdraws their finger(s).",
+                    "",
+                    "The user touches the screen, performs a translation, and withdraws their finger(s).",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu61"
+                    }
+                ],
+                [
+                    "<g1>Configuration class<\/g1>:",
+                    "",
+                    "<g1>Configuration class<\/g1>:",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu62"
+                    }
+                ],
+                [
+                    "GestureConfigDrag",
+                    "",
+                    " <g2>GestureConfigDrag<\/g2>",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu62"
+                    }
+                ],
+                [
+                    "<g1>Event class<\/g1>:",
+                    "",
+                    "<g1>Event class<\/g1>:",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu63"
+                    }
+                ],
+                [
+                    "GestureEventDrag",
+                    "",
+                    " <g2>GestureEventDrag<\/g2>",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu63"
+                    }
+                ],
+                [
+                    "The number of fingers on the screen can't vary during the gesture.",
+                    "",
+                    "The number of fingers on the screen can't vary during the gesture.",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu64"
+                    }
+                ],
+                [
+                    "To detect smaller drags, decrease <g1>GestureConfigDrag.MinimumDragDistance<\/g1>.",
+                    "",
+                    "To detect smaller drags, decrease <g1>GestureConfigDrag.MinimumDragDistance<\/g1>.",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu65"
+                    }
+                ],
+                [
+                    "To restrict the direction of the drag to <g1>vertical<\/g1> or <g2>horizontal<\/g2>, use <g3>GestureConfigDrag.DragShape<\/g3>.",
+                    "",
+                    "To restrict the direction of the drag to <g1>vertical<\/g1> or <g2>horizontal<\/g2>, use <g3>GestureConfigDrag.DragShape<\/g3>.",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu66"
+                    }
+                ],
+                [
+                    "<x1\/> Composite<x2\/>",
+                    "",
+                    "<x1\/> Composite<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu67"
+                    }
+                ],
+                [
+                    "<x1\/>Translation gesture<x2\/> <x3\/>Scale gesture<x4\/> <x5\/>Rotation gesture<x6\/>",
+                    "",
+                    "<x1\/>Translation gesture<x2\/> <x3\/>Scale gesture<x4\/> <x5\/>Rotation gesture<x6\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu68"
+                    }
+                ],
+                [
+                    "The user touches the screen with two fingers and moves them independently.",
+                    "",
+                    "The user touches the screen with two fingers and moves them independently.",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu69"
+                    }
+                ],
+                [
+                    "<g1>Configuration class<\/g1>:",
+                    "",
+                    "<g1>Configuration class<\/g1>:",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu70"
+                    }
+                ],
+                [
+                    "@'Stride.Input.GestureConfigComposite'",
+                    "",
+                    " @'Stride.Input.GestureConfigComposite'",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu70"
+                    }
+                ],
+                [
+                    "<g1>Event class<\/g1>:",
+                    "",
+                    "<g1>Event class<\/g1>:",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu71"
+                    }
+                ],
+                [
+                    "@'Stride.Input.GestureEventComposite'",
+                    "",
+                    " @'Stride.Input.GestureEventComposite'",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu71"
+                    }
+                ],
+                [
+                    "The composite gesture requires exactly two fingers on the screen.",
+                    "",
+                    "The composite gesture requires exactly two fingers on the screen.",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu72"
+                    }
+                ],
+                [
+                    "It's triggered when the system detects one of the three basic actions:",
+                    "",
+                    " It's triggered when the system detects one of the three basic actions:",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu72"
+                    }
+                ],
+                [
+                    "<g1>Translation<\/g1>: the user translates two fingers together in the same direction.",
+                    "",
+                    "<g1>Translation<\/g1>: the user translates two fingers together in the same direction.",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu73"
+                    }
+                ],
+                [
+                    "<g1>Scale<\/g1>: the user moves two fingers closer together or further apart.",
+                    "",
+                    "<g1>Scale<\/g1>: the user moves two fingers closer together or further apart.",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu74"
+                    }
+                ],
+                [
+                    "<g1>Rotation<\/g1>: the user rotates two fingers around a center point.",
+                    "",
+                    "<g1>Rotation<\/g1>: the user rotates two fingers around a center point.",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu75"
+                    }
+                ],
+                [
+                    "Gesture states",
+                    "",
+                    "Gesture states",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu76"
+                    }
+                ],
+                [
+                    "A gesture always has one of four states:",
+                    "",
+                    "A gesture always has one of four states:",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu77"
+                    }
+                ],
+                [
+                    "Began",
+                    "",
+                    "Began",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu78"
+                    }
+                ],
+                [
+                    "Changed",
+                    "",
+                    "Changed",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu79"
+                    }
+                ],
+                [
+                    "Ended",
+                    "",
+                    "Ended",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu80"
+                    }
+                ],
+                [
+                    "Occurred",
+                    "",
+                    "Occurred",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu81"
+                    }
+                ],
+                [
+                    "<g1>Discrete<\/g1> gestures (tap, flick, long press) always have the state <g2>occurred<\/g2>.",
+                    "",
+                    "<g1>Discrete<\/g1> gestures (tap, flick, long press) always have the state <g2>occurred<\/g2>.",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu82"
+                    }
+                ],
+                [
+                    "<g3>Continuous<\/g3> gestures (drag and composite) always begin with the state <g4>began<\/g4>, followed by any  <g5>changed<\/g5> states, and end with the <g6>ended<\/g6> state.",
+                    "",
+                    " <g3>Continuous<\/g3> gestures (drag and composite) always begin with the state <g4>began<\/g4>, followed by any  <g5>changed<\/g5> states, and end with the <g6>ended<\/g6> state.",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu82"
+                    }
+                ],
+                [
+                    "To query the current state of a gesture, use the <g1>GestureEvent.State<\/g1> field of the triggered gesture event.",
+                    "",
+                    "To query the current state of a gesture, use the <g1>GestureEvent.State<\/g1> field of the triggered gesture event.",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu83"
+                    }
+                ],
+                [
+                    "Example code",
+                    "",
+                    "Example code",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu84"
+                    }
+                ],
+                [
+                    "Activate or deactivate gesture recognition",
+                    "",
+                    "Activate or deactivate gesture recognition",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu85"
+                    }
+                ],
+                [
+                    "To create the configuration of a gesture you want to recognize:",
+                    "",
+                    "To create the configuration of a gesture you want to recognize:",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu86"
+                    }
+                ],
+                [
+                    "\/\/ Create the configuration of a gesture you want to recognize.",
+                    "",
+                    "\/\/ Create the configuration of a gesture you want to recognize.\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu87"
+                    }
+                ],
+                [
+                    "var singleTapConfig = new GestureConfigTap();",
+                    "",
+                    "var singleTapConfig = new GestureConfigTap();\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu87"
+                    }
+                ],
+                [
+                    "\/\/ Start tap gesture recognition.",
+                    "",
+                    "\r\n\/\/ Start tap gesture recognition.\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu87"
+                    }
+                ],
+                [
+                    "Input.Gestures.Add(singleTapConfig);",
+                    "",
+                    "Input.Gestures.Add(singleTapConfig);\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu87"
+                    }
+                ],
+                [
+                    "\/\/ Create the configuration of the gesture you want to recognize.",
+                    "",
+                    "\r\n\/\/ Create the configuration of the gesture you want to recognize.\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu87"
+                    }
+                ],
+                [
+                    "var doubleTapConfig = new GestureConfigTap(2, 1);",
+                    "",
+                    "var doubleTapConfig = new GestureConfigTap(2, 1);\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu87"
+                    }
+                ],
+                [
+                    "\/\/ Start double tap gesture recognition.",
+                    "",
+                    "\r\n\/\/ Start double tap gesture recognition.\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu87"
+                    }
+                ],
+                [
+                    "Input.Gestures.Add(doubleTapConfig);",
+                    "",
+                    "Input.Gestures.Add(doubleTapConfig);\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu87"
+                    }
+                ],
+                [
+                    "\/\/ Stop tap gesture recognition.",
+                    "",
+                    "\r\n\/\/ Stop tap gesture recognition.\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu87"
+                    }
+                ],
+                [
+                    "Input.Gestures.Remove(singleTapConfig);",
+                    "",
+                    "Input.Gestures.Remove(singleTapConfig);\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu87"
+                    }
+                ],
+                [
+                    "\/\/ Stop all gesture recognitions.",
+                    "",
+                    "\r\n\/\/ Stop all gesture recognitions.\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu87"
+                    }
+                ],
+                [
+                    "Input.Gestures.Clear();",
+                    "",
+                    "Input.Gestures.Clear();\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu87"
+                    }
+                ],
+                [
+                    "Configure the gesture",
+                    "",
+                    "Configure the gesture",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu88"
+                    }
+                ],
+                [
+                    "Each configuration class has a parameterless constructor that corresponds to the default gesture configuration.",
+                    "",
+                    "Each configuration class has a parameterless constructor that corresponds to the default gesture configuration.",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu89"
+                    }
+                ],
+                [
+                    "You can use special constructors for frequently-modified parameters.",
+                    "",
+                    " You can use special constructors for frequently-modified parameters.",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu89"
+                    }
+                ],
+                [
+                    "<x1\/>!warning<x2\/>",
+                    "",
+                    "<x1\/>!warning<x2\/>\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu90"
+                    }
+                ],
+                [
+                    "We don't recommend you modify other fields as this might break the input system.",
+                    "",
+                    "We don't recommend you modify other fields as this might break the input system.",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu90"
+                    }
+                ],
+                [
+                    "But if you need to, you can modify them using the corresponding properties.",
+                    "",
+                    " But if you need to, you can modify them using the corresponding properties.",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu90"
+                    }
+                ],
+                [
+                    "\/\/ Default gesture config.",
+                    "",
+                    "\/\/ Default gesture config.\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu91"
+                    }
+                ],
+                [
+                    "var singleTapConfig = new GestureConfigTap();",
+                    "",
+                    "var singleTapConfig = new GestureConfigTap();\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu91"
+                    }
+                ],
+                [
+                    "\/\/ Personalize gesture config using the dedicated constructor.",
+                    "",
+                    "\r\n\/\/ Personalize gesture config using the dedicated constructor.\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu91"
+                    }
+                ],
+                [
+                    "var doubleTapConfig = new GestureConfigTap(2, 2);",
+                    "",
+                    "var doubleTapConfig = new GestureConfigTap(2, 2);\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu91"
+                    }
+                ],
+                [
+                    "\/\/ Personalize gesture config by directly accessing the desired property.",
+                    "",
+                    "\r\n\/\/ Personalize gesture config by directly accessing the desired property.\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu91"
+                    }
+                ],
+                [
+                    "\/\/ Make sure you know what you're doing!",
+                    "",
+                    "\/\/ Make sure you know what you're doing!",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu91"
+                    }
+                ],
+                [
+                    "Modifying this might break the input system.",
+                    "",
+                    " Modifying this might break the input system.\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu91"
+                    }
+                ],
+                [
+                    "var noLatencyTap = new GestureConfigTap() { MaximumTimeBetweenTaps= TimeSpan.Zero };",
+                    "",
+                    "var noLatencyTap = new GestureConfigTap() { MaximumTimeBetweenTaps= TimeSpan.Zero };\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu91"
+                    }
+                ],
+                [
+                    "Access gesture events",
+                    "",
+                    "Access gesture events",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu92"
+                    }
+                ],
+                [
+                    "You can access the list of events triggered by recognized gestures using the <g1>InputManager.GestureEvents<\/g1> collection.",
+                    "",
+                    "You can access the list of events triggered by recognized gestures using the <g1>InputManager.GestureEvents<\/g1> collection.",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu93"
+                    }
+                ],
+                [
+                    "The collection is automatically cleared at every update.",
+                    "",
+                    " The collection is automatically cleared at every update.",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu93"
+                    }
+                ],
+                [
+                    "var currentFrameGestureEvents = Input.GestureEvents;",
+                    "",
+                    "var currentFrameGestureEvents = Input.GestureEvents;\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu94"
+                    }
+                ],
+                [
+                    "Identify the gesture type",
+                    "",
+                    "Identify the gesture type",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu95"
+                    }
+                ],
+                [
+                    "Use the <g1>GestureEvent.Type<\/g1> field to identity the gesture type, then cast it to the appropriate event type to get extra information about the event.",
+                    "",
+                    "Use the <g1>GestureEvent.Type<\/g1> field to identity the gesture type, then cast it to the appropriate event type to get extra information about the event.",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu96"
+                    }
+                ],
+                [
+                    "foreach( var gestureEvent in Input.GestureEvents)",
+                    "",
+                    "foreach( var gestureEvent in Input.GestureEvents)\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu97"
+                    }
+                ],
+                [
+                    "{",
+                    "",
+                    "{\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu97"
+                    }
+                ],
+                [
+                    "\/\/ Determine if the event is from a tap gesture",
+                    "",
+                    "   \t\/\/ Determine if the event is from a tap gesture\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu97"
+                    }
+                ],
+                [
+                    "if (gestureEvent.Type != GestureType.Tap)",
+                    "",
+                    "\tif (gestureEvent.Type != GestureType.Tap)\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu97"
+                    }
+                ],
+                [
+                    "continue;",
+                    "",
+                    "\t\tcontinue;\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu97"
+                    }
+                ],
+                [
+                    "\/\/ Cast a specific tap event class.",
+                    "",
+                    "   \r\n\t\/\/ Cast a specific tap event class.\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu97"
+                    }
+                ],
+                [
+                    "GestureEventTap  tapEvent = (GestureEventTap) gestureEvent;",
+                    "",
+                    "\tGestureEventTap  tapEvent = (GestureEventTap) gestureEvent;\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu97"
+                    }
+                ],
+                [
+                    "\/\/ Access tap-event-specific field.",
+                    "",
+                    "\t\r\n    \/\/ Access tap-event-specific field.\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu97"
+                    }
+                ],
+                [
+                    "log.Info(\"Tap position:",
+                    "",
+                    "    log.Info(\"Tap position:",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu97"
+                    }
+                ],
+                [
+                    "{0}.\", tapEvent.TapPosition);",
+                    "",
+                    " {0}.\", tapEvent.TapPosition);\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu97"
+                    }
+                ],
+                [
+                    "}",
+                    "",
+                    "}\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu97"
+                    }
+                ],
+                [
+                    "Identify the gesture state",
+                    "",
+                    "Identify the gesture state",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu98"
+                    }
+                ],
+                [
+                    "Use the <g1>GestureEvent.State<\/g1> field to get gesture event state.",
+                    "",
+                    "Use the <g1>GestureEvent.State<\/g1> field to get gesture event state.",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu99"
+                    }
+                ],
+                [
+                    "switch(compositeGestureEvent.State)",
+                    "",
+                    "switch(compositeGestureEvent.State)\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu100"
+                    }
+                ],
+                [
+                    "{",
+                    "",
+                    "{\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu100"
+                    }
+                ],
+                [
+                    "case GestureState.Began:",
+                    "",
+                    "case GestureState.Began:\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu100"
+                    }
+                ],
+                [
+                    "image.ComputePreview();",
+                    "",
+                    "\timage.ComputePreview();\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu100"
+                    }
+                ],
+                [
+                    "break;",
+                    "",
+                    "\tbreak;\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu100"
+                    }
+                ],
+                [
+                    "case GestureState.Changed:",
+                    "",
+                    "case GestureState.Changed:\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu100"
+                    }
+                ],
+                [
+                    "image.TransformPreview(compositeGestureEvent.TotalScale, compositionGestureEvent.TotalRotation);",
+                    "",
+                    "\timage.TransformPreview(compositeGestureEvent.TotalScale, compositionGestureEvent.TotalRotation);\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu100"
+                    }
+                ],
+                [
+                    "break;",
+                    "",
+                    "\tbreak;\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu100"
+                    }
+                ],
+                [
+                    "case GestureState.Ended:",
+                    "",
+                    "case GestureState.Ended:\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu100"
+                    }
+                ],
+                [
+                    "image.TransformRealImage(compositeGestureEvent.TotalScale, compositionGestureEvent.TotalRotation);",
+                    "",
+                    "\timage.TransformRealImage(compositeGestureEvent.TotalScale, compositionGestureEvent.TotalRotation);\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu100"
+                    }
+                ],
+                [
+                    "break;",
+                    "",
+                    "\tbreak;\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu100"
+                    }
+                ],
+                [
+                    "default:",
+                    "",
+                    "default:\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu100"
+                    }
+                ],
+                [
+                    "break;",
+                    "",
+                    "\tbreak;\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu100"
+                    }
+                ],
+                [
+                    "}",
+                    "",
+                    "}\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu100"
+                    }
+                ],
+                [
+                    "See also",
+                    "",
+                    "See also",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu101"
+                    }
+                ],
+                [
+                    "Pointers",
+                    "",
+                    "<g1>Pointers<\/g1>",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu102"
+                    }
+                ],
+                [
+                    "Virtual buttons",
+                    "",
+                    "<g1>Virtual buttons<\/g1>",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu103"
+                    }
+                ],
+                [
+                    "Input overview",
+                    "",
+                    "<g1>Input overview<\/g1>",
+                    "\/D:\/repos\/rr\/source\/manual\/input\/gestures.md",
+                    {
+                        "id": "tu104"
+                    }
+                ]
+            ]
+        }
+    ],
+    "seg_enabled": false
+}

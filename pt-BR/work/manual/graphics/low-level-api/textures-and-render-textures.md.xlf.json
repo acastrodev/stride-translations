@@ -1,0 +1,757 @@
+{
+    "filename": "manual\\graphics\\low-level-api\\textures-and-render-textures.md.xlf",
+    "files": [
+        {
+            "\/D:\/repos\/rr\/source\/manual\/graphics\/low-level-api\/textures-and-render-textures.md": [
+                [
+                    "Textures and render textures",
+                    "",
+                    "Textures and render textures",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/low-level-api\/textures-and-render-textures.md",
+                    {
+                        "id": "tu1"
+                    }
+                ],
+                [
+                    "<x1\/>Advanced<x2\/>",
+                    "",
+                    "<x1\/>Advanced<x2\/>\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/low-level-api\/textures-and-render-textures.md",
+                    {
+                        "id": "tu2"
+                    }
+                ],
+                [
+                    "<x3\/>Programmer<x4\/>",
+                    "",
+                    "<x3\/>Programmer<x4\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/low-level-api\/textures-and-render-textures.md",
+                    {
+                        "id": "tu2"
+                    }
+                ],
+                [
+                    "Stride uses the @'Stride.Graphics.Texture' class to interact with texture objects in code.",
+                    "",
+                    "Stride uses the @'Stride.Graphics.Texture' class to interact with texture objects in code.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/low-level-api\/textures-and-render-textures.md",
+                    {
+                        "id": "tu3"
+                    }
+                ],
+                [
+                    "For more information about rendering to a texture, see <g1>Render textures<\/g1>.",
+                    "",
+                    "For more information about rendering to a texture, see <g1>Render textures<\/g1>.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/low-level-api\/textures-and-render-textures.md",
+                    {
+                        "id": "tu4"
+                    }
+                ],
+                [
+                    "Load a texture",
+                    "",
+                    "Load a texture",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/low-level-api\/textures-and-render-textures.md",
+                    {
+                        "id": "tu5"
+                    }
+                ],
+                [
+                    "To load a texture from an asset in Stride, call this function:",
+                    "",
+                    "To load a texture from an asset in Stride, call this function:",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/low-level-api\/textures-and-render-textures.md",
+                    {
+                        "id": "tu6"
+                    }
+                ],
+                [
+                    "\/\/ loads the texture called duck.dds (or .png etc.)",
+                    "",
+                    "\/\/ loads the texture called duck.dds (or .png etc.)\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/low-level-api\/textures-and-render-textures.md",
+                    {
+                        "id": "tu7"
+                    }
+                ],
+                [
+                    "var myTexture = Content.Load<Texture>(\"duck\");",
+                    "",
+                    "var myTexture = Content.Load<Texture>(\"duck\");\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/low-level-api\/textures-and-render-textures.md",
+                    {
+                        "id": "tu7"
+                    }
+                ],
+                [
+                    "This automatically generates a texture object with all its fields correctly filled.",
+                    "",
+                    "This automatically generates a texture object with all its fields correctly filled.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/low-level-api\/textures-and-render-textures.md",
+                    {
+                        "id": "tu8"
+                    }
+                ],
+                [
+                    "Create a texture",
+                    "",
+                    "Create a texture",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/low-level-api\/textures-and-render-textures.md",
+                    {
+                        "id": "tu9"
+                    }
+                ],
+                [
+                    "You can also create textures without any assets (eg to be used as render target).",
+                    "",
+                    "You can also create textures without any assets (eg to be used as render target).",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/low-level-api\/textures-and-render-textures.md",
+                    {
+                        "id": "tu10"
+                    }
+                ],
+                [
+                    "To do this, call the constructor of the @'Stride.Graphics.Texture' class.",
+                    "",
+                    " To do this, call the constructor of the @'Stride.Graphics.Texture' class.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/low-level-api\/textures-and-render-textures.md",
+                    {
+                        "id": "tu10"
+                    }
+                ],
+                [
+                    "See the @'Stride.Graphics.Texture' class reference to get the full list of available options and parameters.",
+                    "",
+                    " See the @'Stride.Graphics.Texture' class reference to get the full list of available options and parameters.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/low-level-api\/textures-and-render-textures.md",
+                    {
+                        "id": "tu10"
+                    }
+                ],
+                [
+                    "Some texture formats might not be available on all platforms.",
+                    "",
+                    " Some texture formats might not be available on all platforms.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/low-level-api\/textures-and-render-textures.md",
+                    {
+                        "id": "tu10"
+                    }
+                ],
+                [
+                    "Code:",
+                    "",
+                    "Code:",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/low-level-api\/textures-and-render-textures.md",
+                    {
+                        "id": "tu11"
+                    }
+                ],
+                [
+                    "Create a texture",
+                    "",
+                    " Create a texture",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/low-level-api\/textures-and-render-textures.md",
+                    {
+                        "id": "tu11"
+                    }
+                ],
+                [
+                    "var myTexture = Texture.New2D(GraphicsDevice, 512, 512, false, PixelFormat.R8G8B8A8_UNorm, TextureFlags.ShaderResource);",
+                    "",
+                    "var myTexture = Texture.New2D(GraphicsDevice, 512, 512, false, PixelFormat.R8G8B8A8_UNorm, TextureFlags.ShaderResource);\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/low-level-api\/textures-and-render-textures.md",
+                    {
+                        "id": "tu12"
+                    }
+                ],
+                [
+                    "Render textures",
+                    "",
+                    "Render textures",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/low-level-api\/textures-and-render-textures.md",
+                    {
+                        "id": "tu13"
+                    }
+                ],
+                [
+                    "Create a render target",
+                    "",
+                    "Create a render target",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/low-level-api\/textures-and-render-textures.md",
+                    {
+                        "id": "tu14"
+                    }
+                ],
+                [
+                    "The @'Stride.Graphics.GraphicsPresenter' class always provides a default render target and a depth buffer.",
+                    "",
+                    "The @'Stride.Graphics.GraphicsPresenter' class always provides a default render target and a depth buffer.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/low-level-api\/textures-and-render-textures.md",
+                    {
+                        "id": "tu15"
+                    }
+                ],
+                [
+                    "They are accessible through the @'Stride.Graphics.GraphicsPresenter.BackBuffer' and @'Stride.Graphics.GraphicsPresenter.DepthStencilBuffer' properties.",
+                    "",
+                    " They are accessible through the @'Stride.Graphics.GraphicsPresenter.BackBuffer' and @'Stride.Graphics.GraphicsPresenter.DepthStencilBuffer' properties.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/low-level-api\/textures-and-render-textures.md",
+                    {
+                        "id": "tu15"
+                    }
+                ],
+                [
+                    "The presenter is exposed by the @'Stride.Graphics.GraphicsDevice.Presenter' property of the @'Stride.Graphics.GraphicsDevice'.",
+                    "",
+                    " The presenter is exposed by the @'Stride.Graphics.GraphicsDevice.Presenter' property of the @'Stride.Graphics.GraphicsDevice'.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/low-level-api\/textures-and-render-textures.md",
+                    {
+                        "id": "tu15"
+                    }
+                ],
+                [
+                    "However, you might want to use your own buffer to perform off-screen rendering or post-processes.",
+                    "",
+                    " However, you might want to use your own buffer to perform off-screen rendering or post-processes.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/low-level-api\/textures-and-render-textures.md",
+                    {
+                        "id": "tu15"
+                    }
+                ],
+                [
+                    "As a result, Stride offers a simple way to create textures that can act as render textures and a depth buffers.",
+                    "",
+                    " As a result, Stride offers a simple way to create textures that can act as render textures and a depth buffers.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/low-level-api\/textures-and-render-textures.md",
+                    {
+                        "id": "tu15"
+                    }
+                ],
+                [
+                    "Code:",
+                    "",
+                    "Code:",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/low-level-api\/textures-and-render-textures.md",
+                    {
+                        "id": "tu16"
+                    }
+                ],
+                [
+                    "Create a custom render target and depth buffer",
+                    "",
+                    " Create a custom render target and depth buffer",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/low-level-api\/textures-and-render-textures.md",
+                    {
+                        "id": "tu16"
+                    }
+                ],
+                [
+                    "\/\/ render target",
+                    "",
+                    "\/\/ render target\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/low-level-api\/textures-and-render-textures.md",
+                    {
+                        "id": "tu17"
+                    }
+                ],
+                [
+                    "var myRenderTarget = Texture.New2D(GraphicsDevice, 512, 512, false, PixelFormat.R8G8B8A8_UNorm, TextureFlags.ShaderResource | TextureFlags.RenderTarget);",
+                    "",
+                    "var myRenderTarget = Texture.New2D(GraphicsDevice, 512, 512, false, PixelFormat.R8G8B8A8_UNorm, TextureFlags.ShaderResource | TextureFlags.RenderTarget);\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/low-level-api\/textures-and-render-textures.md",
+                    {
+                        "id": "tu17"
+                    }
+                ],
+                [
+                    "\/\/ writable depth buffer",
+                    "",
+                    " \r\n\/\/ writable depth buffer\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/low-level-api\/textures-and-render-textures.md",
+                    {
+                        "id": "tu17"
+                    }
+                ],
+                [
+                    "var myDepthBuffer = Texture.New2D(GraphicsDevice, 512, 512, false, PixelFormat.D16_UNorm, TextureFlags.DepthStencil);",
+                    "",
+                    "var myDepthBuffer = Texture.New2D(GraphicsDevice, 512, 512, false, PixelFormat.D16_UNorm, TextureFlags.DepthStencil);\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/low-level-api\/textures-and-render-textures.md",
+                    {
+                        "id": "tu17"
+                    }
+                ],
+                [
+                    "<x1\/>!Note<x2\/>",
+                    "",
+                    "<x1\/>!Note<x2\/>\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/low-level-api\/textures-and-render-textures.md",
+                    {
+                        "id": "tu18"
+                    }
+                ],
+                [
+                    "Don't forget the flag @'Stride.Graphics.TextureFlags.RenderTarget' to enable the render target behavior.",
+                    "",
+                    "Don't forget the flag @'Stride.Graphics.TextureFlags.RenderTarget' to enable the render target behavior.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/low-level-api\/textures-and-render-textures.md",
+                    {
+                        "id": "tu18"
+                    }
+                ],
+                [
+                    "Make sure the PixelFormat is correct, especially for the depth buffer.",
+                    "",
+                    "Make sure the PixelFormat is correct, especially for the depth buffer.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/low-level-api\/textures-and-render-textures.md",
+                    {
+                        "id": "tu19"
+                    }
+                ],
+                [
+                    "Be careful of the available formats on the target platform.",
+                    "",
+                    " Be careful of the available formats on the target platform.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/low-level-api\/textures-and-render-textures.md",
+                    {
+                        "id": "tu19"
+                    }
+                ],
+                [
+                    "Use a render target",
+                    "",
+                    "Use a render target",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/low-level-api\/textures-and-render-textures.md",
+                    {
+                        "id": "tu20"
+                    }
+                ],
+                [
+                    "Once these buffers are created, you can can easily set them as current render textures.",
+                    "",
+                    "Once these buffers are created, you can can easily set them as current render textures.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/low-level-api\/textures-and-render-textures.md",
+                    {
+                        "id": "tu21"
+                    }
+                ],
+                [
+                    "Code:",
+                    "",
+                    "Code:",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/low-level-api\/textures-and-render-textures.md",
+                    {
+                        "id": "tu22"
+                    }
+                ],
+                [
+                    "Use a render target",
+                    "",
+                    " Use a render target",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/low-level-api\/textures-and-render-textures.md",
+                    {
+                        "id": "tu22"
+                    }
+                ],
+                [
+                    "\/\/ settings the render textures",
+                    "",
+                    "\/\/ settings the render textures\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/low-level-api\/textures-and-render-textures.md",
+                    {
+                        "id": "tu23"
+                    }
+                ],
+                [
+                    "CommandList.SetRenderTargetAndViewport(myDepthBuffer, myRenderTarget);",
+                    "",
+                    "CommandList.SetRenderTargetAndViewport(myDepthBuffer, myRenderTarget);\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/low-level-api\/textures-and-render-textures.md",
+                    {
+                        "id": "tu23"
+                    }
+                ],
+                [
+                    "\/\/ setting the default render target",
+                    "",
+                    " \r\n\/\/ setting the default render target\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/low-level-api\/textures-and-render-textures.md",
+                    {
+                        "id": "tu23"
+                    }
+                ],
+                [
+                    "CommandList.SetRenderTargetAndViewport(GraphicsDevice.Presenter.DepthStencilBuffer, GraphicsDevice.Presenter.BackBuffer);",
+                    "",
+                    "CommandList.SetRenderTargetAndViewport(GraphicsDevice.Presenter.DepthStencilBuffer, GraphicsDevice.Presenter.BackBuffer);\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/low-level-api\/textures-and-render-textures.md",
+                    {
+                        "id": "tu23"
+                    }
+                ],
+                [
+                    "<x1\/>!Note<x2\/>",
+                    "",
+                    "<x1\/>!Note<x2\/>\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/low-level-api\/textures-and-render-textures.md",
+                    {
+                        "id": "tu24"
+                    }
+                ],
+                [
+                    "Make sure both the render target and the depth buffer have the same size.",
+                    "",
+                    "Make sure both the render target and the depth buffer have the same size.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/low-level-api\/textures-and-render-textures.md",
+                    {
+                        "id": "tu24"
+                    }
+                ],
+                [
+                    "Otherwise, the depth buffer isn't used.",
+                    "",
+                    " Otherwise, the depth buffer isn't used.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/low-level-api\/textures-and-render-textures.md",
+                    {
+                        "id": "tu24"
+                    }
+                ],
+                [
+                    "You can set multiple render textures at the same time.",
+                    "",
+                    "You can set multiple render textures at the same time.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/low-level-api\/textures-and-render-textures.md",
+                    {
+                        "id": "tu25"
+                    }
+                ],
+                [
+                    "See the overloads of @'Stride.Graphics.CommandList.SetRenderTargets(Stride.Graphics.Texture,Stride.Graphics.Texture<x1\/><x2\/>)' and @'Stride.Graphics.CommandList.SetRenderTargetsAndViewport(Stride.Graphics.Texture,Stride.Graphics.Texture<x3\/><x4\/>)' method.",
+                    "",
+                    " See the overloads of @'Stride.Graphics.CommandList.SetRenderTargets(Stride.Graphics.Texture,Stride.Graphics.Texture<x1\/><x2\/>)' and @'Stride.Graphics.CommandList.SetRenderTargetsAndViewport(Stride.Graphics.Texture,Stride.Graphics.Texture<x3\/><x4\/>)' method.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/low-level-api\/textures-and-render-textures.md",
+                    {
+                        "id": "tu25"
+                    }
+                ],
+                [
+                    "<x1\/>!Note<x2\/>",
+                    "",
+                    "<x1\/>!Note<x2\/>\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/low-level-api\/textures-and-render-textures.md",
+                    {
+                        "id": "tu26"
+                    }
+                ],
+                [
+                    "Only the @'Stride.Graphics.GraphicsPresenter.BackBuffer' is displayed on screen, so you need to render it to display something.",
+                    "",
+                    "Only the @'Stride.Graphics.GraphicsPresenter.BackBuffer' is displayed on screen, so you need to render it to display something.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/low-level-api\/textures-and-render-textures.md",
+                    {
+                        "id": "tu26"
+                    }
+                ],
+                [
+                    "Clear a render target",
+                    "",
+                    "Clear a render target",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/low-level-api\/textures-and-render-textures.md",
+                    {
+                        "id": "tu27"
+                    }
+                ],
+                [
+                    "To clear render textures, call the @'Stride.Graphics.CommandList.Clear(Stride.Graphics.Texture,Stride.Core.Mathematics.Color4)' and @'Stride.Graphics.CommandList.Clear(Stride.Graphics.Texture,Stride.Graphics.DepthStencilClearOptions,System.Single,System.Byte)' methods.",
+                    "",
+                    "To clear render textures, call the @'Stride.Graphics.CommandList.Clear(Stride.Graphics.Texture,Stride.Core.Mathematics.Color4)' and @'Stride.Graphics.CommandList.Clear(Stride.Graphics.Texture,Stride.Graphics.DepthStencilClearOptions,System.Single,System.Byte)' methods.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/low-level-api\/textures-and-render-textures.md",
+                    {
+                        "id": "tu28"
+                    }
+                ],
+                [
+                    "Code:",
+                    "",
+                    "Code:",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/low-level-api\/textures-and-render-textures.md",
+                    {
+                        "id": "tu29"
+                    }
+                ],
+                [
+                    "Clear the targets",
+                    "",
+                    " Clear the targets",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/low-level-api\/textures-and-render-textures.md",
+                    {
+                        "id": "tu29"
+                    }
+                ],
+                [
+                    "CommandList.Clear(GraphicsDevice.Presenter.BackBuffer, Color.Black);",
+                    "",
+                    "CommandList.Clear(GraphicsDevice.Presenter.BackBuffer, Color.Black);\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/low-level-api\/textures-and-render-textures.md",
+                    {
+                        "id": "tu30"
+                    }
+                ],
+                [
+                    "CommandList.Clear(GraphicsDevice.Presenter.DepthStencilBuffer, DepthStencilClearOptions.DepthBuffer); \/\/ only clear the depth buffer",
+                    "",
+                    "CommandList.Clear(GraphicsDevice.Presenter.DepthStencilBuffer, DepthStencilClearOptions.DepthBuffer); \/\/ only clear the depth buffer\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/low-level-api\/textures-and-render-textures.md",
+                    {
+                        "id": "tu30"
+                    }
+                ],
+                [
+                    "<x1\/>!Note<x2\/>",
+                    "",
+                    "<x1\/>!Note<x2\/>\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/low-level-api\/textures-and-render-textures.md",
+                    {
+                        "id": "tu31"
+                    }
+                ],
+                [
+                    "Don't forget to clear the @'Stride.Graphics.GraphicsPresenter.BackBuffer' and the @'Stride.Graphics.GraphicsPresenter.DepthStencilBuffer' each frame.",
+                    "",
+                    "Don't forget to clear the @'Stride.Graphics.GraphicsPresenter.BackBuffer' and the @'Stride.Graphics.GraphicsPresenter.DepthStencilBuffer' each frame.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/low-level-api\/textures-and-render-textures.md",
+                    {
+                        "id": "tu31"
+                    }
+                ],
+                [
+                    "If you don't, you might get unexpected behavior depending on the device.",
+                    "",
+                    " If you don't, you might get unexpected behavior depending on the device.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/low-level-api\/textures-and-render-textures.md",
+                    {
+                        "id": "tu31"
+                    }
+                ],
+                [
+                    "If you want to keep the contents of a frame, use an intermediate render target.",
+                    "",
+                    " If you want to keep the contents of a frame, use an intermediate render target.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/low-level-api\/textures-and-render-textures.md",
+                    {
+                        "id": "tu31"
+                    }
+                ],
+                [
+                    "Viewport",
+                    "",
+                    "Viewport",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/low-level-api\/textures-and-render-textures.md",
+                    {
+                        "id": "tu32"
+                    }
+                ],
+                [
+                    "@'Stride.Graphics.CommandList.SetRenderTargetAndViewport(Stride.Graphics.Texture,Stride.Graphics.Texture)' adjusts the current @'Stride.Graphics.Viewport' to the full size of the render target.",
+                    "",
+                    "@'Stride.Graphics.CommandList.SetRenderTargetAndViewport(Stride.Graphics.Texture,Stride.Graphics.Texture)' adjusts the current @'Stride.Graphics.Viewport' to the full size of the render target.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/low-level-api\/textures-and-render-textures.md",
+                    {
+                        "id": "tu33"
+                    }
+                ],
+                [
+                    "If you only want to render to a subset of the texture, set the render target and viewport separately using @'Stride.Graphics.CommandList.SetRenderTarget(Stride.Graphics.Texture,Stride.Graphics.Texture)' and @'Stride.Graphics.CommandList.SetViewport(Stride.Graphics.Viewport)'.",
+                    "",
+                    "If you only want to render to a subset of the texture, set the render target and viewport separately using @'Stride.Graphics.CommandList.SetRenderTarget(Stride.Graphics.Texture,Stride.Graphics.Texture)' and @'Stride.Graphics.CommandList.SetViewport(Stride.Graphics.Viewport)'.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/low-level-api\/textures-and-render-textures.md",
+                    {
+                        "id": "tu34"
+                    }
+                ],
+                [
+                    "You can bind multiple viewports using @'Stride.Graphics.CommandList.SetViewports(Stride.Graphics.Viewport<x1\/><x2\/>)' and @'Stride.Graphics.CommandList.SetViewports(System.Int32,Stride.Graphics.Viewport<x3\/><x4\/>)' overloads for use with a geometry shader.",
+                    "",
+                    "You can bind multiple viewports using @'Stride.Graphics.CommandList.SetViewports(Stride.Graphics.Viewport<x1\/><x2\/>)' and @'Stride.Graphics.CommandList.SetViewports(System.Int32,Stride.Graphics.Viewport<x3\/><x4\/>)' overloads for use with a geometry shader.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/low-level-api\/textures-and-render-textures.md",
+                    {
+                        "id": "tu35"
+                    }
+                ],
+                [
+                    "Code:",
+                    "",
+                    "Code:",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/low-level-api\/textures-and-render-textures.md",
+                    {
+                        "id": "tu36"
+                    }
+                ],
+                [
+                    "Set the viewports",
+                    "",
+                    " Set the viewports",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/low-level-api\/textures-and-render-textures.md",
+                    {
+                        "id": "tu36"
+                    }
+                ],
+                [
+                    "\/\/ example of a full HD buffer",
+                    "",
+                    "\/\/ example of a full HD buffer\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/low-level-api\/textures-and-render-textures.md",
+                    {
+                        "id": "tu37"
+                    }
+                ],
+                [
+                    "CommandList.SetRenderTarget(GraphicsDevice.Presenter.DepthStencilBuffer, GraphicsDevice.Presenter.BackBuffer); \/\/ no viewport set",
+                    "",
+                    "CommandList.SetRenderTarget(GraphicsDevice.Presenter.DepthStencilBuffer, GraphicsDevice.Presenter.BackBuffer); \/\/ no viewport set\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/low-level-api\/textures-and-render-textures.md",
+                    {
+                        "id": "tu37"
+                    }
+                ],
+                [
+                    "\/\/ example of setting the viewport to have a 10-pixel border around the image in a full HD buffer (1920x1080)",
+                    "",
+                    " \r\n\/\/ example of setting the viewport to have a 10-pixel border around the image in a full HD buffer (1920x1080)\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/low-level-api\/textures-and-render-textures.md",
+                    {
+                        "id": "tu37"
+                    }
+                ],
+                [
+                    "var viewport = new Viewport(10, 10, 1900, 1060);",
+                    "",
+                    "var viewport = new Viewport(10, 10, 1900, 1060);\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/low-level-api\/textures-and-render-textures.md",
+                    {
+                        "id": "tu37"
+                    }
+                ],
+                [
+                    "CommandList.SetViewport(viewport);",
+                    "",
+                    "CommandList.SetViewport(viewport);\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/low-level-api\/textures-and-render-textures.md",
+                    {
+                        "id": "tu37"
+                    }
+                ],
+                [
+                    "Scissor",
+                    "",
+                    "Scissor",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/low-level-api\/textures-and-render-textures.md",
+                    {
+                        "id": "tu38"
+                    }
+                ],
+                [
+                    "The @'Stride.Graphics.CommandList.SetScissorRectangle(Stride.Core.Mathematics.Rectangle)' and @'Stride.Graphics.CommandList.SetScissorRectangles(Stride.Core.Mathematics.Rectangle<x1\/><x2\/>)' methods set the scissors.",
+                    "",
+                    "The @'Stride.Graphics.CommandList.SetScissorRectangle(Stride.Core.Mathematics.Rectangle)' and @'Stride.Graphics.CommandList.SetScissorRectangles(Stride.Core.Mathematics.Rectangle<x1\/><x2\/>)' methods set the scissors.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/low-level-api\/textures-and-render-textures.md",
+                    {
+                        "id": "tu39"
+                    }
+                ],
+                [
+                    "Unlike the viewport, you need to provide the coordinates of the location of the vertices defining the scissor instead of its size.",
+                    "",
+                    " Unlike the viewport, you need to provide the coordinates of the location of the vertices defining the scissor instead of its size.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/low-level-api\/textures-and-render-textures.md",
+                    {
+                        "id": "tu39"
+                    }
+                ],
+                [
+                    "Code:",
+                    "",
+                    "Code:",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/low-level-api\/textures-and-render-textures.md",
+                    {
+                        "id": "tu40"
+                    }
+                ],
+                [
+                    "Set the scissor",
+                    "",
+                    " Set the scissor",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/low-level-api\/textures-and-render-textures.md",
+                    {
+                        "id": "tu40"
+                    }
+                ],
+                [
+                    "\/\/ example of setting the scissor to crop the image by 10 pixel around it in a full hd buffer (1920x1080)",
+                    "",
+                    "\/\/ example of setting the scissor to crop the image by 10 pixel around it in a full hd buffer (1920x1080)\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/low-level-api\/textures-and-render-textures.md",
+                    {
+                        "id": "tu41"
+                    }
+                ],
+                [
+                    "var rectangle = new Rectangle(10, 10, 1910, 1070);",
+                    "",
+                    "var rectangle = new Rectangle(10, 10, 1910, 1070);\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/low-level-api\/textures-and-render-textures.md",
+                    {
+                        "id": "tu41"
+                    }
+                ],
+                [
+                    "CommandList.SetScissorRectangles(rectangle);",
+                    "",
+                    "CommandList.SetScissorRectangles(rectangle);\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/low-level-api\/textures-and-render-textures.md",
+                    {
+                        "id": "tu41"
+                    }
+                ],
+                [
+                    "var rectangles = new[] { new Rectangle(10, 10, 1900, 1060), new Rectangle(0, 0, 256, 256) };",
+                    "",
+                    " \r\nvar rectangles = new[] { new Rectangle(10, 10, 1900, 1060), new Rectangle(0, 0, 256, 256) };\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/low-level-api\/textures-and-render-textures.md",
+                    {
+                        "id": "tu41"
+                    }
+                ],
+                [
+                    "CommandList.SetScissorRectangles(rectangles);",
+                    "",
+                    "CommandList.SetScissorRectangles(rectangles);\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/low-level-api\/textures-and-render-textures.md",
+                    {
+                        "id": "tu41"
+                    }
+                ],
+                [
+                    "See also",
+                    "",
+                    "See also",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/low-level-api\/textures-and-render-textures.md",
+                    {
+                        "id": "tu42"
+                    }
+                ],
+                [
+                    "Render textures",
+                    "",
+                    "<g1>Render textures<\/g1>",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/low-level-api\/textures-and-render-textures.md",
+                    {
+                        "id": "tu43"
+                    }
+                ]
+            ]
+        }
+    ],
+    "seg_enabled": false
+}

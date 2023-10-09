@@ -1,0 +1,415 @@
+{
+    "filename": "manual\\virtual-reality\\preview-a-scene-in-vr.md.xlf",
+    "files": [
+        {
+            "\/D:\/repos\/rr\/source\/manual\/virtual-reality\/preview-a-scene-in-vr.md": [
+                [
+                    "Preview a scene in VR",
+                    "",
+                    "Preview a scene in VR",
+                    "\/D:\/repos\/rr\/source\/manual\/virtual-reality\/preview-a-scene-in-vr.md",
+                    {
+                        "id": "tu1"
+                    }
+                ],
+                [
+                    "To preview your scene in your VR device, connect the editor to a <g1>VR-enabled<\/g1> renderer.",
+                    "",
+                    "To preview your scene in your VR device, connect the editor to a <g1>VR-enabled<\/g1> renderer.",
+                    "\/D:\/repos\/rr\/source\/manual\/virtual-reality\/preview-a-scene-in-vr.md",
+                    {
+                        "id": "tu2"
+                    }
+                ],
+                [
+                    "To do this:",
+                    "",
+                    "To do this:",
+                    "\/D:\/repos\/rr\/source\/manual\/virtual-reality\/preview-a-scene-in-vr.md",
+                    {
+                        "id": "tu3"
+                    }
+                ],
+                [
+                    "In the <g1>Asset View<\/g1> (in the bottom pane by default), double-click the <g2>Graphics Compositor<\/g2> asset.",
+                    "",
+                    "In the <g1>Asset View<\/g1> (in the bottom pane by default), double-click the <g2>Graphics Compositor<\/g2> asset.",
+                    "\/D:\/repos\/rr\/source\/manual\/virtual-reality\/preview-a-scene-in-vr.md",
+                    {
+                        "id": "tu4"
+                    }
+                ],
+                [
+                    "<x1\/>Graphics Compositor asset<x2\/>",
+                    "",
+                    "<x1\/>Graphics Compositor asset<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/virtual-reality\/preview-a-scene-in-vr.md",
+                    {
+                        "id": "tu5"
+                    }
+                ],
+                [
+                    "The graphics compositor editor opens.",
+                    "",
+                    "The graphics compositor editor opens.",
+                    "\/D:\/repos\/rr\/source\/manual\/virtual-reality\/preview-a-scene-in-vr.md",
+                    {
+                        "id": "tu6"
+                    }
+                ],
+                [
+                    "<x1\/>Graphics Compositor editor<x2\/>",
+                    "",
+                    "<x1\/>Graphics Compositor editor<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/virtual-reality\/preview-a-scene-in-vr.md",
+                    {
+                        "id": "tu7"
+                    }
+                ],
+                [
+                    "Select the <g1>forward render node<\/g1> connected to the editor node.",
+                    "",
+                    "Select the <g1>forward render node<\/g1> connected to the editor node.",
+                    "\/D:\/repos\/rr\/source\/manual\/virtual-reality\/preview-a-scene-in-vr.md",
+                    {
+                        "id": "tu8"
+                    }
+                ],
+                [
+                    "For example, in the screenshot below (taken from the Stride VR sample project), the editor is connected to the lower forward renderer node.",
+                    "",
+                    " For example, in the screenshot below (taken from the Stride VR sample project), the editor is connected to the lower forward renderer node.",
+                    "\/D:\/repos\/rr\/source\/manual\/virtual-reality\/preview-a-scene-in-vr.md",
+                    {
+                        "id": "tu8"
+                    }
+                ],
+                [
+                    "<x1\/>Node connections<x2\/>",
+                    "",
+                    "<x1\/>Node connections<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/virtual-reality\/preview-a-scene-in-vr.md",
+                    {
+                        "id": "tu9"
+                    }
+                ],
+                [
+                    "With the forward renderer node selected, in the <g1>Property Grid<\/g1>, enable <g2>VRRendererSettings<\/g2>.",
+                    "",
+                    "With the forward renderer node selected, in the <g1>Property Grid<\/g1>, enable <g2>VRRendererSettings<\/g2>.",
+                    "\/D:\/repos\/rr\/source\/manual\/virtual-reality\/preview-a-scene-in-vr.md",
+                    {
+                        "id": "tu10"
+                    }
+                ],
+                [
+                    "<x1\/>Select editor renderer<x2\/>",
+                    "",
+                    "<x1\/>Select editor renderer<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/virtual-reality\/preview-a-scene-in-vr.md",
+                    {
+                        "id": "tu11"
+                    }
+                ],
+                [
+                    "Your VR device displays the scene preview.",
+                    "",
+                    "Your VR device displays the scene preview.",
+                    "\/D:\/repos\/rr\/source\/manual\/virtual-reality\/preview-a-scene-in-vr.md",
+                    {
+                        "id": "tu12"
+                    }
+                ],
+                [
+                    "To display the scene on your monitor instead, disable <g1>VRRendererSettings<\/g1>.",
+                    "",
+                    " To display the scene on your monitor instead, disable <g1>VRRendererSettings<\/g1>.",
+                    "\/D:\/repos\/rr\/source\/manual\/virtual-reality\/preview-a-scene-in-vr.md",
+                    {
+                        "id": "tu12"
+                    }
+                ],
+                [
+                    "Create a separate renderer to preview scenes in VR",
+                    "",
+                    "Create a separate renderer to preview scenes in VR",
+                    "\/D:\/repos\/rr\/source\/manual\/virtual-reality\/preview-a-scene-in-vr.md",
+                    {
+                        "id": "tu13"
+                    }
+                ],
+                [
+                    "If your editor and game nodes are connected to the same forward renderer, you might want to create a separate renderer dedicated to the editor.",
+                    "",
+                    "If your editor and game nodes are connected to the same forward renderer, you might want to create a separate renderer dedicated to the editor.",
+                    "\/D:\/repos\/rr\/source\/manual\/virtual-reality\/preview-a-scene-in-vr.md",
+                    {
+                        "id": "tu14"
+                    }
+                ],
+                [
+                    "This lets you easily switch between previewing the scene in your VR device and on your monitor.",
+                    "",
+                    " This lets you easily switch between previewing the scene in your VR device and on your monitor.",
+                    "\/D:\/repos\/rr\/source\/manual\/virtual-reality\/preview-a-scene-in-vr.md",
+                    {
+                        "id": "tu14"
+                    }
+                ],
+                [
+                    "<x1\/>!Note<x2\/>",
+                    "",
+                    "<x1\/>!Note<x2\/>\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/virtual-reality\/preview-a-scene-in-vr.md",
+                    {
+                        "id": "tu15"
+                    }
+                ],
+                [
+                    "If your editor and game nodes already use separate renderers (as in the VR sample project), you don't need to follow these instructions.",
+                    "",
+                    "If your editor and game nodes already use separate renderers (as in the VR sample project), you don't need to follow these instructions.",
+                    "\/D:\/repos\/rr\/source\/manual\/virtual-reality\/preview-a-scene-in-vr.md",
+                    {
+                        "id": "tu15"
+                    }
+                ],
+                [
+                    "In the <g1>Asset View<\/g1> (in the bottom pane by default), double-click the <g2>Graphics Compositor<\/g2> asset.",
+                    "",
+                    "In the <g1>Asset View<\/g1> (in the bottom pane by default), double-click the <g2>Graphics Compositor<\/g2> asset.",
+                    "\/D:\/repos\/rr\/source\/manual\/virtual-reality\/preview-a-scene-in-vr.md",
+                    {
+                        "id": "tu16"
+                    }
+                ],
+                [
+                    "<x1\/>Graphics Compositor asset<x2\/>",
+                    "",
+                    "<x1\/>Graphics Compositor asset<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/virtual-reality\/preview-a-scene-in-vr.md",
+                    {
+                        "id": "tu17"
+                    }
+                ],
+                [
+                    "The graphics compositor editor opens.",
+                    "",
+                    "The graphics compositor editor opens.",
+                    "\/D:\/repos\/rr\/source\/manual\/virtual-reality\/preview-a-scene-in-vr.md",
+                    {
+                        "id": "tu18"
+                    }
+                ],
+                [
+                    "<x1\/>Graphics compositor editor<x2\/>",
+                    "",
+                    "<x1\/>Graphics compositor editor<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/virtual-reality\/preview-a-scene-in-vr.md",
+                    {
+                        "id": "tu19"
+                    }
+                ],
+                [
+                    "Create a new forward renderer node.",
+                    "",
+                    "Create a new forward renderer node.",
+                    "\/D:\/repos\/rr\/source\/manual\/virtual-reality\/preview-a-scene-in-vr.md",
+                    {
+                        "id": "tu20"
+                    }
+                ],
+                [
+                    "To do this, right-click the game compositor editor and select <g1>Create > Forward renderer<\/g1>.",
+                    "",
+                    " To do this, right-click the game compositor editor and select <g1>Create > Forward renderer<\/g1>.",
+                    "\/D:\/repos\/rr\/source\/manual\/virtual-reality\/preview-a-scene-in-vr.md",
+                    {
+                        "id": "tu20"
+                    }
+                ],
+                [
+                    "<x1\/>Create forward renderer<x2\/>",
+                    "",
+                    "<x1\/>Create forward renderer<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/virtual-reality\/preview-a-scene-in-vr.md",
+                    {
+                        "id": "tu21"
+                    }
+                ],
+                [
+                    "Select the <g1>Entry points<\/g1> node.",
+                    "",
+                    "Select the <g1>Entry points<\/g1> node.",
+                    "\/D:\/repos\/rr\/source\/manual\/virtual-reality\/preview-a-scene-in-vr.md",
+                    {
+                        "id": "tu22"
+                    }
+                ],
+                [
+                    "<x1\/>Entry points node<x2\/>",
+                    "",
+                    "<x1\/>Entry points node<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/virtual-reality\/preview-a-scene-in-vr.md",
+                    {
+                        "id": "tu23"
+                    }
+                ],
+                [
+                    "In the <g1>Property Grid<\/g1>, next to <g2>Editor renderer<\/g2>, select the forward renderer you created.",
+                    "",
+                    "In the <g1>Property Grid<\/g1>, next to <g2>Editor renderer<\/g2>, select the forward renderer you created.",
+                    "\/D:\/repos\/rr\/source\/manual\/virtual-reality\/preview-a-scene-in-vr.md",
+                    {
+                        "id": "tu24"
+                    }
+                ],
+                [
+                    "<x1\/>Select forward renderer<x2\/>",
+                    "",
+                    "<x1\/>Select forward renderer<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/virtual-reality\/preview-a-scene-in-vr.md",
+                    {
+                        "id": "tu25"
+                    }
+                ],
+                [
+                    "Stride links the editor to the forward renderer node.",
+                    "",
+                    "Stride links the editor to the forward renderer node.",
+                    "\/D:\/repos\/rr\/source\/manual\/virtual-reality\/preview-a-scene-in-vr.md",
+                    {
+                        "id": "tu26"
+                    }
+                ],
+                [
+                    "<x1\/>Node connections<x2\/>",
+                    "",
+                    "<x1\/>Node connections<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/virtual-reality\/preview-a-scene-in-vr.md",
+                    {
+                        "id": "tu27"
+                    }
+                ],
+                [
+                    "Set the properties of the new forward renderer so they're identical to the forward renderer you use to run the game in VR, including the VR settings.",
+                    "",
+                    "Set the properties of the new forward renderer so they're identical to the forward renderer you use to run the game in VR, including the VR settings.",
+                    "\/D:\/repos\/rr\/source\/manual\/virtual-reality\/preview-a-scene-in-vr.md",
+                    {
+                        "id": "tu28"
+                    }
+                ],
+                [
+                    "<x1\/>!Tip<x2\/>",
+                    "",
+                    "<x1\/>!Tip<x2\/>\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/virtual-reality\/preview-a-scene-in-vr.md",
+                    {
+                        "id": "tu29"
+                    }
+                ],
+                [
+                    "You can right-click a property to copy or paste it.",
+                    "",
+                    "You can right-click a property to copy or paste it.",
+                    "\/D:\/repos\/rr\/source\/manual\/virtual-reality\/preview-a-scene-in-vr.md",
+                    {
+                        "id": "tu29"
+                    }
+                ],
+                [
+                    "<x1\/>Copy-paste properties<x2\/>",
+                    "",
+                    "<x1\/>Copy-paste properties<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/virtual-reality\/preview-a-scene-in-vr.md",
+                    {
+                        "id": "tu30"
+                    }
+                ],
+                [
+                    "<x1\/>!Note<x2\/>",
+                    "",
+                    "<x1\/>!Note<x2\/>\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/virtual-reality\/preview-a-scene-in-vr.md",
+                    {
+                        "id": "tu31"
+                    }
+                ],
+                [
+                    "Make sure the forward renderer has VR enabled.",
+                    "",
+                    "Make sure the forward renderer has VR enabled.",
+                    "\/D:\/repos\/rr\/source\/manual\/virtual-reality\/preview-a-scene-in-vr.md",
+                    {
+                        "id": "tu31"
+                    }
+                ],
+                [
+                    "For instructions, see <g1>Enable VR<\/g1>.",
+                    "",
+                    " For instructions, see <g1>Enable VR<\/g1>.",
+                    "\/D:\/repos\/rr\/source\/manual\/virtual-reality\/preview-a-scene-in-vr.md",
+                    {
+                        "id": "tu31"
+                    }
+                ],
+                [
+                    "Stride displays the scene preview in your VR device.",
+                    "",
+                    "Stride displays the scene preview in your VR device.",
+                    "\/D:\/repos\/rr\/source\/manual\/virtual-reality\/preview-a-scene-in-vr.md",
+                    {
+                        "id": "tu32"
+                    }
+                ],
+                [
+                    "To display the scene on your monitor instead, disable <g1>VRRendererSettings<\/g1> in the properties of the new forward renderer.",
+                    "",
+                    " To display the scene on your monitor instead, disable <g1>VRRendererSettings<\/g1> in the properties of the new forward renderer.",
+                    "\/D:\/repos\/rr\/source\/manual\/virtual-reality\/preview-a-scene-in-vr.md",
+                    {
+                        "id": "tu32"
+                    }
+                ],
+                [
+                    "<x1\/>Enable VR<x2\/>",
+                    "",
+                    "<x1\/>Enable VR<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/virtual-reality\/preview-a-scene-in-vr.md",
+                    {
+                        "id": "tu33"
+                    }
+                ],
+                [
+                    "See also",
+                    "",
+                    "See also",
+                    "\/D:\/repos\/rr\/source\/manual\/virtual-reality\/preview-a-scene-in-vr.md",
+                    {
+                        "id": "tu34"
+                    }
+                ],
+                [
+                    "Enable VR",
+                    "",
+                    "<g1>Enable VR<\/g1>",
+                    "\/D:\/repos\/rr\/source\/manual\/virtual-reality\/preview-a-scene-in-vr.md",
+                    {
+                        "id": "tu35"
+                    }
+                ],
+                [
+                    "Graphics compositor",
+                    "",
+                    "<g1>Graphics compositor<\/g1>",
+                    "\/D:\/repos\/rr\/source\/manual\/virtual-reality\/preview-a-scene-in-vr.md",
+                    {
+                        "id": "tu36"
+                    }
+                ]
+            ]
+        }
+    ],
+    "seg_enabled": false
+}

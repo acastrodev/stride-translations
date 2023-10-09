@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="/D:/repos/rr/source/manual/graphics/low-level-api/spritebatch.md" source-language="en" target-language="pt" datatype="x-text/x-markdown" okp:inputEncoding="UTF-8">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en">SpriteBatch</source>
+<target xml:lang="pt">SpriteBatch</target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Advanced<x id="2"/>
+<x id="3"/>Programmer<x id="4"/></source>
+<target xml:lang="pt"><x id="1"/>Advanced<x id="2"/>
+<x id="3"/>Programmer<x id="4"/></target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">A sprite batch is a collection of sprites (2D textured planes).</source>
+<target xml:lang="pt">A sprite batch is a collection of sprites (2D textured planes).</target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>!Note<x id="2"/>
+Remember that you need to put all custom code in a <g id="3">custom scene renderer</g> to include it in the composition.</source>
+<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
+Remember that you need to put all custom code in a <g id="3">custom scene renderer</g> to include it in the composition.</target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">Create a sprite batch</source>
+<target xml:lang="pt">Create a sprite batch</target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en">Stride offers a easy way to deal will batches of sprites through the @'Stride.Graphics.SpriteBatch' class. You can use this class to regroup, update, and display sprites efficiently.</source>
+<target xml:lang="pt">Stride offers a easy way to deal will batches of sprites through the @'Stride.Graphics.SpriteBatch' class. You can use this class to regroup, update, and display sprites efficiently.</target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en"><g id="1">Code:</g> Creating a sprite batch</source>
+<target xml:lang="pt"><g id="1">Code:</g> Creating a sprite batch</target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en">var spriteBatch = new SpriteBatch(GraphicsDevice);
+</source>
+<target xml:lang="pt">var spriteBatch = new SpriteBatch(GraphicsDevice);
+</target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en">You can specify the size of your batch size. This isn't the maximum number of sprites the SpriteBatch is able to display, but the maximum number of sprites it can store before drawing.</source>
+<target xml:lang="pt">You can specify the size of your batch size. This isn't the maximum number of sprites the SpriteBatch is able to display, but the maximum number of sprites it can store before drawing.</target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en"><g id="1">Code:</g> Setting the batch size</source>
+<target xml:lang="pt"><g id="1">Code:</g> Setting the batch size</target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en">var spriteBatch = new SpriteBatch(GraphicsDevice, 2000);
+</source>
+<target xml:lang="pt">var spriteBatch = new SpriteBatch(GraphicsDevice, 2000);
+</target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en">You can also set states like the ones discussed on the <g id="1">Pipeline state</g> page.</source>
+<target xml:lang="pt">You can also set states like the ones discussed on the <g id="1">Pipeline state</g> page.</target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en">Draw a sprite batch</source>
+<target xml:lang="pt">Draw a sprite batch</target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en">The @'Stride.Graphics.SpriteBatch' class has multiple draw methods to set various parameters. For a list of features, see the @'Stride.Graphics.SpriteBatch' API documentation.</source>
+<target xml:lang="pt">The @'Stride.Graphics.SpriteBatch' class has multiple draw methods to set various parameters. For a list of features, see the @'Stride.Graphics.SpriteBatch' API documentation.</target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en"><g id="1">Code:</g> Drawing a sprite batch</source>
+<target xml:lang="pt"><g id="1">Code:</g> Drawing a sprite batch</target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en">// begin the sprite batch operations
+spriteBatch.Begin(GraphicsContext, SpriteSortMode.Immediate);
+ 
+// draw the sprite immediately
+spriteBatch.Draw(myTexture, new Vector2(10, 20));
+ 
+// end the sprite batch operations
+spriteBatch.End();
+</source>
+<target xml:lang="pt">// begin the sprite batch operations
+spriteBatch.Begin(GraphicsContext, SpriteSortMode.Immediate);
+ 
+// draw the sprite immediately
+spriteBatch.Draw(myTexture, new Vector2(10, 20));
+ 
+// end the sprite batch operations
+spriteBatch.End();
+</target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en">There are five modes to draw a sprite batch. They are enumerated in the @'Stride.Graphics.SpriteSortMode' enum:</source>
+<target xml:lang="pt">There are five modes to draw a sprite batch. They are enumerated in the @'Stride.Graphics.SpriteSortMode' enum:</target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en">Deferred (default mode): the sprites are drawn at the same time at the end to reduce the drawcall overhead</source>
+<target xml:lang="pt">Deferred (default mode): the sprites are drawn at the same time at the end to reduce the drawcall overhead</target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en">Immediate: the sprites are draw after each each @'Stride.Graphics.SpriteBatch.Draw' call</source>
+<target xml:lang="pt">Immediate: the sprites are draw after each each @'Stride.Graphics.SpriteBatch.Draw' call</target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en">Texture: Deferred mode but sprites are sorted based on their texture to reduce effect parameters update</source>
+<target xml:lang="pt">Texture: Deferred mode but sprites are sorted based on their texture to reduce effect parameters update</target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en">BackToFront: Deferred mode with a sort based on the z-order of the sprites</source>
+<target xml:lang="pt">BackToFront: Deferred mode with a sort based on the z-order of the sprites</target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en">FrontToBack: Deferred mode with a sort based on the z-order of the sprites</source>
+<target xml:lang="pt">FrontToBack: Deferred mode with a sort based on the z-order of the sprites</target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en">To set the mode, specify it in the @'Stride.Graphics.SpriteBatch.Begin' method.</source>
+<target xml:lang="pt">To set the mode, specify it in the @'Stride.Graphics.SpriteBatch.Begin' method.</target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en"><g id="1">Code:</g> Deferred drawing of the sprite batch</source>
+<target xml:lang="pt"><g id="1">Code:</g> Deferred drawing of the sprite batch</target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en">// begin the sprite batch operations
+spriteBatch.Begin(GraphicsContext); // same as spriteBatch.Begin(GraphicsContext, SpriteSortMode.Deferred);
+
+// store the modification of the sprite
+spriteBatch.Draw(myTexture, new Vector2(10, 20));
+
+// end the sprite batch operations, draw all the sprites
+spriteBatch.End();
+</source>
+<target xml:lang="pt">// begin the sprite batch operations
+spriteBatch.Begin(GraphicsContext); // same as spriteBatch.Begin(GraphicsContext, SpriteSortMode.Deferred);
+
+// store the modification of the sprite
+spriteBatch.Draw(myTexture, new Vector2(10, 20));
+
+// end the sprite batch operations, draw all the sprites
+spriteBatch.End();
+</target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en">You can set several parameters on the sprite. For example:</source>
+<target xml:lang="pt">You can set several parameters on the sprite. For example:</target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en">position</source>
+<target xml:lang="pt">position</target>
+</trans-unit>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en">rotation</source>
+<target xml:lang="pt">rotation</target>
+</trans-unit>
+<trans-unit id="tu29" xml:space="preserve">
+<source xml:lang="en">scale</source>
+<target xml:lang="pt">scale</target>
+</trans-unit>
+<trans-unit id="tu30" xml:space="preserve">
+<source xml:lang="en">depth</source>
+<target xml:lang="pt">depth</target>
+</trans-unit>
+<trans-unit id="tu31" xml:space="preserve">
+<source xml:lang="en">center offset</source>
+<target xml:lang="pt">center offset</target>
+</trans-unit>
+<trans-unit id="tu32" xml:space="preserve">
+<source xml:lang="en">color tint</source>
+<target xml:lang="pt">color tint</target>
+</trans-unit>
+<trans-unit id="tu33" xml:space="preserve">
+<source xml:lang="en">For a full list, see the @'Stride.Graphics.SpriteBatch' API documentation, especially the <g id="1">Draw</g> methods.</source>
+<target xml:lang="pt">For a full list, see the @'Stride.Graphics.SpriteBatch' API documentation, especially the <g id="1">Draw</g> methods.</target>
+</trans-unit>
+<trans-unit id="tu34" xml:space="preserve">
+<source xml:lang="en"><g id="1">Code:</g> More complex sprite batch drawing</source>
+<target xml:lang="pt"><g id="1">Code:</g> More complex sprite batch drawing</target>
+</trans-unit>
+<trans-unit id="tu35" xml:space="preserve">
+<source xml:lang="en">// begin the sprite batch operations
+spriteBatch.Begin(GraphicsContext);
+const int gridCount = 10;
+var textureOffset = new Vector2((float)graphicsDevice.BackBuffer.Width/gridCount, (float)graphicsDevice.BackBuffer.Height/gridCount);
+var textureOrigin = new Vector2(myTexture.Width/2.0f, myTexture.Height/2.0f);
+
+// draw 100 sprites on a 10x10 grid with a rotation of 1.2 rad and a scale of 0.5 for each of them
+for (int y = 0; y &lt; gridCount; y++)
+{
+    for (int x = 0; x &lt; gridCount; x++)
+    {
+        spriteBatch.Draw(UVTexture, new Vector2(x * textureOffset.X + textureOffset.X / 2.0f, y * textureOffset.Y + textureOffset.Y / 2.0f), Color.White, 1.2f, textureOrigin, 0.5f);
+    }
+}
+ 
+// end the sprite batch operations, draw all the sprites
+spriteBatch.End();
+</source>
+<target xml:lang="pt">// begin the sprite batch operations
+spriteBatch.Begin(GraphicsContext);
+const int gridCount = 10;
+var textureOffset = new Vector2((float)graphicsDevice.BackBuffer.Width/gridCount, (float)graphicsDevice.BackBuffer.Height/gridCount);
+var textureOrigin = new Vector2(myTexture.Width/2.0f, myTexture.Height/2.0f);
+
+// draw 100 sprites on a 10x10 grid with a rotation of 1.2 rad and a scale of 0.5 for each of them
+for (int y = 0; y &lt; gridCount; y++)
+{
+    for (int x = 0; x &lt; gridCount; x++)
+    {
+        spriteBatch.Draw(UVTexture, new Vector2(x * textureOffset.X + textureOffset.X / 2.0f, y * textureOffset.Y + textureOffset.Y / 2.0f), Color.White, 1.2f, textureOrigin, 0.5f);
+    }
+}
+ 
+// end the sprite batch operations, draw all the sprites
+spriteBatch.End();
+</target>
+</trans-unit>
+<trans-unit id="tu36" xml:space="preserve">
+<source xml:lang="en">See also</source>
+<target xml:lang="pt">See also</target>
+</trans-unit>
+<trans-unit id="tu37" xml:space="preserve">
+<source xml:lang="en"><g id="1">SpriteFont</g></source>
+<target xml:lang="pt"><g id="1">SpriteFont</g></target>
+</trans-unit>
+</body>
+</file>
+</xliff>

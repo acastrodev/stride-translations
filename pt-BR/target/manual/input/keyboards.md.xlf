@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" xmlns:okp="okapi-framework:xliff-extensions" its:version="2.0" version="1.2">
+<file datatype="x-text/x-markdown" okp:inputEncoding="UTF-8" original="/D:/repos/rr/source/manual/input/keyboards.md" source-language="en" target-language="pt">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en">Keyboards</source>
+<target xml:lang="pt">Keyboards</target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Beginner<x id="2"/>
+<x id="3"/>Programmer<x id="4"/></source>
+<target xml:lang="pt"><x id="1"/>Beginner<x id="2"/>
+<x id="3"/>Programmer<x id="4"/></target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">The <g id="1">keyboard</g> is the most common input device for desktop games. There are two ways to handle keyboard input in Stride:</source>
+<target xml:lang="pt">The <g id="1">keyboard</g> is the most common input device for desktop games. There are two ways to handle keyboard input in Stride:</target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">query <g id="1">key states</g></source>
+<target xml:lang="pt">query <g id="1">key states</g></target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">use <g id="1">KeyEvent</g> lists</source>
+<target xml:lang="pt">use <g id="1">KeyEvent</g> lists</target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en">You can access both from the <g id="1">input</g> base class. For more information about these options, see the <g id="2">input index</g></source>
+<target xml:lang="pt">You can access both from the <g id="1">input</g> base class. For more information about these options, see the <g id="2">input index</g></target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en">Check keyboard availability</source>
+<target xml:lang="pt">Check keyboard availability</target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en">Before handling keyboard input, check whether a keyboard is connected using <g id="1">Input.HasKeyboard</g>.</source>
+<target xml:lang="pt">Before handling keyboard input, check whether a keyboard is connected using <g id="1">Input.HasKeyboard</g>.</target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en">Get key states</source>
+<target xml:lang="pt">Get key states</target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en">You can query <g id="1">key states</g> and <g id="2">state changes</g> with the following methods:</source>
+<target xml:lang="pt">You can query <g id="1">key states</g> and <g id="2">state changes</g> with the following methods:</target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en">Method</source>
+<target xml:lang="pt">Method</target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en">Description</source>
+<target xml:lang="pt">Description</target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en"><g id="1">IsKeyDown(Keys)</g></source>
+<target xml:lang="pt"><g id="1">IsKeyDown(Keys)</g></target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en">Checks if a specified key is in the <g id="1">down</g> state.</source>
+<target xml:lang="pt">Checks if a specified key is in the <g id="1">down</g> state.</target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en"><g id="1">IsKeyPressed(Keys)</g></source>
+<target xml:lang="pt"><g id="1">IsKeyPressed(Keys)</g></target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en">Checks if a specified key has been <g id="1">pressed</g> since the last update.</source>
+<target xml:lang="pt">Checks if a specified key has been <g id="1">pressed</g> since the last update.</target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en"><g id="1">IsKeyReleased(Keys)</g></source>
+<target xml:lang="pt"><g id="1">IsKeyReleased(Keys)</g></target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en">Checks if a specified key has been <g id="1">released</g> since the last update.</source>
+<target xml:lang="pt">Checks if a specified key has been <g id="1">released</g> since the last update.</target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>!Note<x id="2"/>
+Stride doesn't support retrieving interpreted keys, such as special characters and capital letters.</source>
+<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
+Stride doesn't support retrieving interpreted keys, such as special characters and capital letters.</target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en">Get key events</source>
+<target xml:lang="pt">Get key events</target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en">In some cases, you want to know all the keys that are currently <g id="1">Down</g>, or all the keys that have been <g id="2">Pressed</g> since the last update. The key state API isn't good for this situation, as you have to query each available key separately.</source>
+<target xml:lang="pt">In some cases, you want to know all the keys that are currently <g id="1">Down</g>, or all the keys that have been <g id="2">Pressed</g> since the last update. The key state API isn't good for this situation, as you have to query each available key separately.</target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en">Instead, use the <g id="1">key events</g> collections available in the <g id="2">Input</g> base class.</source>
+<target xml:lang="pt">Instead, use the <g id="1">key events</g> collections available in the <g id="2">Input</g> base class.</target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en">Public List</source>
+<target xml:lang="pt">Public List</target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en">Description l</source>
+<target xml:lang="pt">Description l</target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en"><g id="1">InputManager.DownKeys</g></source>
+<target xml:lang="pt"><g id="1">InputManager.DownKeys</g></target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en">Gets a list of the keys that were down in the last update.</source>
+<target xml:lang="pt">Gets a list of the keys that were down in the last update.</target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en"><g id="1">InputManager.PressedKeys</g></source>
+<target xml:lang="pt"><g id="1">InputManager.PressedKeys</g></target>
+</trans-unit>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en">Gets a list of the keys pressed in the last update.</source>
+<target xml:lang="pt">Gets a list of the keys pressed in the last update.</target>
+</trans-unit>
+<trans-unit id="tu29" xml:space="preserve">
+<source xml:lang="en"><g id="1">InputManager.ReleasedKeys</g></source>
+<target xml:lang="pt"><g id="1">InputManager.ReleasedKeys</g></target>
+</trans-unit>
+<trans-unit id="tu30" xml:space="preserve">
+<source xml:lang="en">Gets a list of the keys released in the last update.</source>
+<target xml:lang="pt">Gets a list of the keys released in the last update.</target>
+</trans-unit>
+<trans-unit id="tu31" xml:space="preserve">
+<source xml:lang="en"><g id="1">InputManager.KeyEvents</g></source>
+<target xml:lang="pt"><g id="1">InputManager.KeyEvents</g></target>
+</trans-unit>
+<trans-unit id="tu32" xml:space="preserve">
+<source xml:lang="en">Gets a list of the key events in the last update (keys pressed or released).</source>
+<target xml:lang="pt">Gets a list of the key events in the last update (keys pressed or released).</target>
+</trans-unit>
+<trans-unit id="tu33" xml:space="preserve">
+<source xml:lang="en">Every @'Stride.Input.KeyEvent' has two properties: @'Stride.Input.KeyEvent.Key' (the affected key) and @'Stride.Input.ButtonEvent.IsDown' (the new state of the key).</source>
+<target xml:lang="pt">Every @'Stride.Input.KeyEvent' has two properties: @'Stride.Input.KeyEvent.Key' (the affected key) and @'Stride.Input.ButtonEvent.IsDown' (the new state of the key).</target>
+</trans-unit>
+<trans-unit id="tu34" xml:space="preserve">
+<source xml:lang="en">Example code</source>
+<target xml:lang="pt">Example code</target>
+</trans-unit>
+<trans-unit id="tu35" xml:space="preserve">
+<source xml:lang="en">public class KeyboardEventsScript : SyncScript
+{
+	//Declared public member variables and properties show in Game Studio.
+
+	public override void Update()
+	{
+		//Perform an action in every update.
+		if (Game.IsRunning)
+		{
+			if (Input.IsKeyDown(Keys.Left))
+			{
+				this.Entity.Transform.Position.X -= 0.1f;
+			}
+			if (Input.IsKeyDown(Keys.Right))
+			{
+				this.Entity.Transform.Position.X += 0.1f;
+			}
+		}
+	}
+}
+</source>
+<target xml:lang="pt">public class KeyboardEventsScript : SyncScript
+{
+	//Declared public member variables and properties show in Game Studio.
+
+	public override void Update()
+	{
+		//Perform an action in every update.
+		if (Game.IsRunning)
+		{
+			if (Input.IsKeyDown(Keys.Left))
+			{
+				this.Entity.Transform.Position.X -= 0.1f;
+			}
+			if (Input.IsKeyDown(Keys.Right))
+			{
+				this.Entity.Transform.Position.X += 0.1f;
+			}
+		}
+	}
+}
+</target>
+</trans-unit>
+<trans-unit id="tu36" xml:space="preserve">
+<source xml:lang="en">See also</source>
+<target xml:lang="pt">See also</target>
+</trans-unit>
+<trans-unit id="tu37" xml:space="preserve">
+<source xml:lang="en"><g id="1">Gamepads</g></source>
+<target xml:lang="pt"><g id="1">Gamepads</g></target>
+</trans-unit>
+<trans-unit id="tu38" xml:space="preserve">
+<source xml:lang="en"><g id="1">Mouse</g></source>
+<target xml:lang="pt"><g id="1">Mouse</g></target>
+</trans-unit>
+<trans-unit id="tu39" xml:space="preserve">
+<source xml:lang="en"><g id="1">Virtual buttons</g></source>
+<target xml:lang="pt"><g id="1">Virtual buttons</g></target>
+</trans-unit>
+<trans-unit id="tu40" xml:space="preserve">
+<source xml:lang="en"><g id="1">Input overview</g></source>
+<target xml:lang="pt"><g id="1">Input overview</g></target>
+</trans-unit>
+</body>
+</file>
+</xliff>

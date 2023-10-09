@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="/D:/repos/rr/source/manual/graphics/effects-and-shaders/shading-language/shader-stages.md" source-language="en" target-language="pt" datatype="x-text/x-markdown" okp:inputEncoding="UTF-8">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en">Shader stages</source>
+<target xml:lang="pt">Shader stages</target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en">The function for each stage has a predefined name, so we recommend you don't change it.</source>
+<target xml:lang="pt">The function for each stage has a predefined name, so we recommend you don't change it.</target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en"><g id="1">HSMain</g> for hull shader</source>
+<target xml:lang="pt"><g id="1">HSMain</g> for hull shader</target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en"><g id="1">HSConstantMain</g> for patch constant function</source>
+<target xml:lang="pt"><g id="1">HSConstantMain</g> for patch constant function</target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en"><g id="1">DSMain</g> for domain shader</source>
+<target xml:lang="pt"><g id="1">DSMain</g> for domain shader</target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en"><g id="1">VSMain</g> for vertex shader (takes no arguments)</source>
+<target xml:lang="pt"><g id="1">VSMain</g> for vertex shader (takes no arguments)</target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en"><g id="1">GSMain</g> for geometry shader</source>
+<target xml:lang="pt"><g id="1">GSMain</g> for geometry shader</target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en"><g id="1">PSMain</g> for pixel shader (takes no arguments)</source>
+<target xml:lang="pt"><g id="1">PSMain</g> for pixel shader (takes no arguments)</target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en"><g id="1">CSMain</g> for compute shader (takes no arguments)</source>
+<target xml:lang="pt"><g id="1">CSMain</g> for compute shader (takes no arguments)</target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en">These are all void methods.</source>
+<target xml:lang="pt">These are all void methods.</target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en">The geometry and tessellation shaders need some kind of predefined structure as input and output. However, since Stride shaders are generic, it's impossible to know beforehand what the structure will be. As a result, these shaders use <g id="1">Input</g> and <g id="2">Output</g> structures that are automatically generated to fit the final shader.</source>
+<target xml:lang="pt">The geometry and tessellation shaders need some kind of predefined structure as input and output. However, since Stride shaders are generic, it's impossible to know beforehand what the structure will be. As a result, these shaders use <g id="1">Input</g> and <g id="2">Output</g> structures that are automatically generated to fit the final shader.</target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en">Vertex shader</source>
+<target xml:lang="pt">Vertex shader</target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en">A vertex shader has to set the variable with the semantic <g id="1">SV_Position</g>. In <g id="2">ShaderBase</g>, it's <g id="3">ShadingPosition</g>.</source>
+<target xml:lang="pt">A vertex shader has to set the variable with the semantic <g id="1">SV_Position</g>. In <g id="2">ShaderBase</g>, it's <g id="3">ShadingPosition</g>.</target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en">For example:</source>
+<target xml:lang="pt">For example:</target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en">override stage void VSMain()
+{
+	...
+	streams.ShadingPosition = ...;
+	...
+}
+</source>
+<target xml:lang="pt">override stage void VSMain()
+{
+	...
+	streams.ShadingPosition = ...;
+	...
+}
+</target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en">Pixel shader</source>
+<target xml:lang="pt">Pixel shader</target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en">A pixel shader has to set the variable with the semantic <g id="1">SV_Target</g>. In <g id="2">ShaderBase</g>, it is <g id="3">ColorTarget</g>.</source>
+<target xml:lang="pt">A pixel shader has to set the variable with the semantic <g id="1">SV_Target</g>. In <g id="2">ShaderBase</g>, it is <g id="3">ColorTarget</g>.</target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en">For example:</source>
+<target xml:lang="pt">For example:</target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en">override stage void PSMain()
+{
+	...
+	streams.ColorTarget = ...;
+	...
+}
+</source>
+<target xml:lang="pt">override stage void PSMain()
+{
+	...
+	streams.ColorTarget = ...;
+	...
+}
+</target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en">Geometry shader</source>
+<target xml:lang="pt">Geometry shader</target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en">An example of geometry shader:</source>
+<target xml:lang="pt">An example of geometry shader:</target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en">[maxvertexcount(1)]
+void GSMain(triangle Input input[3], inout PointStream&lt;Output> pointStream)
+{
+	...
+	// fill the streams object
+	streams = input[0];
+ 	...
+ 
+	// always append streams
+	pointStream.Append(streams);
+	...
+}
+</source>
+<target xml:lang="pt">[maxvertexcount(1)]
+void GSMain(triangle Input input[3], inout PointStream&lt;Output> pointStream)
+{
+	...
+	// fill the streams object
+	streams = input[0];
+ 	...
+ 
+	// always append streams
+	pointStream.Append(streams);
+	...
+}
+</target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en"><g id="1">Input</g> can be used in the method body. It behaves like the streams object and contains the same members.</source>
+<target xml:lang="pt"><g id="1">Input</g> can be used in the method body. It behaves like the streams object and contains the same members.</target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en"><g id="1">Output</g> is only used in the declaration of the method. You should append the streams object to your geometry shader output stream.</source>
+<target xml:lang="pt"><g id="1">Output</g> is only used in the declaration of the method. You should append the streams object to your geometry shader output stream.</target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en">Tessellation shader</source>
+<target xml:lang="pt">Tessellation shader</target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en">An example of a tessellation shader:</source>
+<target xml:lang="pt">An example of a tessellation shader:</target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en">[domain("tri")]
+[partitioning("fractional_odd")]
+[outputtopology("triangle_cw")]
+[outputcontrolpoints(3)]
+[patchconstantfunc("HSConstantMain")]
+[maxtessfactor(48.0)]
+void HSMain(InputPatch&lt;Input, 3> input, out Output output, uint uCPID : SV_OutputControlPointID)
+{
+	...
+	output = streams;
+}
+ 
+void HSConstantMain(InputPatch&lt;Input, 3> input, const OutputPatch&lt;Input2, 3> output, out Constants constants)
+{
+	...
+	output = streams;
+	...
+}
+ 
+[domain("tri")]
+void DSMain(const OutputPatch&lt;Input, 3> input, out Output output, in Constants constants, float3 f3BarycentricCoords : SV_DomainLocation)
+{
+	...
+	output = streams;
+	...
+}
+</source>
+<target xml:lang="pt">[domain("tri")]
+[partitioning("fractional_odd")]
+[outputtopology("triangle_cw")]
+[outputcontrolpoints(3)]
+[patchconstantfunc("HSConstantMain")]
+[maxtessfactor(48.0)]
+void HSMain(InputPatch&lt;Input, 3> input, out Output output, uint uCPID : SV_OutputControlPointID)
+{
+	...
+	output = streams;
+}
+ 
+void HSConstantMain(InputPatch&lt;Input, 3> input, const OutputPatch&lt;Input2, 3> output, out Constants constants)
+{
+	...
+	output = streams;
+	...
+}
+ 
+[domain("tri")]
+void DSMain(const OutputPatch&lt;Input, 3> input, out Output output, in Constants constants, float3 f3BarycentricCoords : SV_DomainLocation)
+{
+	...
+	output = streams;
+	...
+}
+</target>
+</trans-unit>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en"><g id="1">Input</g> and <g id="2">Input2</g> both behave like streams.</source>
+<target xml:lang="pt"><g id="1">Input</g> and <g id="2">Input2</g> both behave like streams.</target>
+</trans-unit>
+<trans-unit id="tu29" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>!Note<x id="2"/>
+Don't forget to assign <g id="3">output</g> to <g id="4">streams</g> at the end of your stage.</source>
+<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
+Don't forget to assign <g id="3">output</g> to <g id="4">streams</g> at the end of your stage.</target>
+</trans-unit>
+<trans-unit id="tu30" xml:space="preserve">
+<source xml:lang="en">Compute shader</source>
+<target xml:lang="pt">Compute shader</target>
+</trans-unit>
+<trans-unit id="tu31" xml:space="preserve">
+<source xml:lang="en">An example of a compute shader:</source>
+<target xml:lang="pt">An example of a compute shader:</target>
+</trans-unit>
+<trans-unit id="tu32" xml:space="preserve">
+<source xml:lang="en">[numthreads(2, 3, 5)]
+void CSMain()
+{
+	...
+}
+</source>
+<target xml:lang="pt">[numthreads(2, 3, 5)]
+void CSMain()
+{
+	...
+}
+</target>
+</trans-unit>
+<trans-unit id="tu33" xml:space="preserve">
+<source xml:lang="en">You can inherit from <g id="1">ComputeShaderBase</g> and override the <g id="2">Compute</g> method.</source>
+<target xml:lang="pt">You can inherit from <g id="1">ComputeShaderBase</g> and override the <g id="2">Compute</g> method.</target>
+</trans-unit>
+<trans-unit id="tu34" xml:space="preserve">
+<source xml:lang="en">See also</source>
+<target xml:lang="pt">See also</target>
+</trans-unit>
+<trans-unit id="tu35" xml:space="preserve">
+<source xml:lang="en"><g id="1">Effect language</g></source>
+<target xml:lang="pt"><g id="1">Effect language</g></target>
+</trans-unit>
+<trans-unit id="tu36" xml:space="preserve">
+<source xml:lang="en"><g id="1">Shading language index</g></source>
+<target xml:lang="pt"><g id="1">Shading language index</g></target>
+</trans-unit>
+<trans-unit id="tu37" xml:space="preserve">
+<source xml:lang="en"><g id="1">Shader classes, mixins, and inheritance</g></source>
+<target xml:lang="pt"><g id="1">Shader classes, mixins, and inheritance</g></target>
+</trans-unit>
+<trans-unit id="tu38" xml:space="preserve">
+<source xml:lang="en"><g id="1">Composition</g></source>
+<target xml:lang="pt"><g id="1">Composition</g></target>
+</trans-unit>
+<trans-unit id="tu39" xml:space="preserve">
+<source xml:lang="en"><g id="1">Templates</g></source>
+<target xml:lang="pt"><g id="1">Templates</g></target>
+</trans-unit>
+<trans-unit id="tu40" xml:space="preserve">
+<source xml:lang="en"><g id="1">Shader stage input/output automatic management</g></source>
+<target xml:lang="pt"><g id="1">Shader stage input/output automatic management</g></target>
+</trans-unit>
+</body>
+</file>
+</xliff>

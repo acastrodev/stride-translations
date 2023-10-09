@@ -1,0 +1,874 @@
+{
+    "filename": "manual\\graphics\\effects-and-shaders\\shading-language\\shader-stages.md.xlf",
+    "files": [
+        {
+            "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/shader-stages.md": [
+                [
+                    "Shader stages",
+                    "",
+                    "Shader stages",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/shader-stages.md",
+                    {
+                        "id": "tu1"
+                    }
+                ],
+                [
+                    "The function for each stage has a predefined name, so we recommend you don't change it.",
+                    "",
+                    "The function for each stage has a predefined name, so we recommend you don't change it.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/shader-stages.md",
+                    {
+                        "id": "tu2"
+                    }
+                ],
+                [
+                    "<g1>HSMain<\/g1> for hull shader",
+                    "",
+                    "<g1>HSMain<\/g1> for hull shader",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/shader-stages.md",
+                    {
+                        "id": "tu3"
+                    }
+                ],
+                [
+                    "<g1>HSConstantMain<\/g1> for patch constant function",
+                    "",
+                    "<g1>HSConstantMain<\/g1> for patch constant function",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/shader-stages.md",
+                    {
+                        "id": "tu4"
+                    }
+                ],
+                [
+                    "<g1>DSMain<\/g1> for domain shader",
+                    "",
+                    "<g1>DSMain<\/g1> for domain shader",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/shader-stages.md",
+                    {
+                        "id": "tu5"
+                    }
+                ],
+                [
+                    "<g1>VSMain<\/g1> for vertex shader (takes no arguments)",
+                    "",
+                    "<g1>VSMain<\/g1> for vertex shader (takes no arguments)",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/shader-stages.md",
+                    {
+                        "id": "tu6"
+                    }
+                ],
+                [
+                    "<g1>GSMain<\/g1> for geometry shader",
+                    "",
+                    "<g1>GSMain<\/g1> for geometry shader",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/shader-stages.md",
+                    {
+                        "id": "tu7"
+                    }
+                ],
+                [
+                    "<g1>PSMain<\/g1> for pixel shader (takes no arguments)",
+                    "",
+                    "<g1>PSMain<\/g1> for pixel shader (takes no arguments)",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/shader-stages.md",
+                    {
+                        "id": "tu8"
+                    }
+                ],
+                [
+                    "<g1>CSMain<\/g1> for compute shader (takes no arguments)",
+                    "",
+                    "<g1>CSMain<\/g1> for compute shader (takes no arguments)",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/shader-stages.md",
+                    {
+                        "id": "tu9"
+                    }
+                ],
+                [
+                    "These are all void methods.",
+                    "",
+                    "These are all void methods.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/shader-stages.md",
+                    {
+                        "id": "tu10"
+                    }
+                ],
+                [
+                    "The geometry and tessellation shaders need some kind of predefined structure as input and output.",
+                    "",
+                    "The geometry and tessellation shaders need some kind of predefined structure as input and output.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/shader-stages.md",
+                    {
+                        "id": "tu11"
+                    }
+                ],
+                [
+                    "However, since Stride shaders are generic, it's impossible to know beforehand what the structure will be.",
+                    "",
+                    " However, since Stride shaders are generic, it's impossible to know beforehand what the structure will be.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/shader-stages.md",
+                    {
+                        "id": "tu11"
+                    }
+                ],
+                [
+                    "As a result, these shaders use <g1>Input<\/g1> and <g2>Output<\/g2> structures that are automatically generated to fit the final shader.",
+                    "",
+                    " As a result, these shaders use <g1>Input<\/g1> and <g2>Output<\/g2> structures that are automatically generated to fit the final shader.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/shader-stages.md",
+                    {
+                        "id": "tu11"
+                    }
+                ],
+                [
+                    "Vertex shader",
+                    "",
+                    "Vertex shader",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/shader-stages.md",
+                    {
+                        "id": "tu12"
+                    }
+                ],
+                [
+                    "A vertex shader has to set the variable with the semantic <g1>SV_Position<\/g1>.",
+                    "",
+                    "A vertex shader has to set the variable with the semantic <g1>SV_Position<\/g1>.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/shader-stages.md",
+                    {
+                        "id": "tu13"
+                    }
+                ],
+                [
+                    "In <g2>ShaderBase<\/g2>, it's <g3>ShadingPosition<\/g3>.",
+                    "",
+                    " In <g2>ShaderBase<\/g2>, it's <g3>ShadingPosition<\/g3>.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/shader-stages.md",
+                    {
+                        "id": "tu13"
+                    }
+                ],
+                [
+                    "For example:",
+                    "",
+                    "For example:",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/shader-stages.md",
+                    {
+                        "id": "tu14"
+                    }
+                ],
+                [
+                    "override stage void VSMain()",
+                    "",
+                    "override stage void VSMain()\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/shader-stages.md",
+                    {
+                        "id": "tu15"
+                    }
+                ],
+                [
+                    "{",
+                    "",
+                    "{\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/shader-stages.md",
+                    {
+                        "id": "tu15"
+                    }
+                ],
+                [
+                    "...",
+                    "",
+                    "\t...\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/shader-stages.md",
+                    {
+                        "id": "tu15"
+                    }
+                ],
+                [
+                    "streams.ShadingPosition = ...;",
+                    "",
+                    "\tstreams.ShadingPosition = ...;\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/shader-stages.md",
+                    {
+                        "id": "tu15"
+                    }
+                ],
+                [
+                    "...",
+                    "",
+                    "\t...\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/shader-stages.md",
+                    {
+                        "id": "tu15"
+                    }
+                ],
+                [
+                    "}",
+                    "",
+                    "}\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/shader-stages.md",
+                    {
+                        "id": "tu15"
+                    }
+                ],
+                [
+                    "Pixel shader",
+                    "",
+                    "Pixel shader",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/shader-stages.md",
+                    {
+                        "id": "tu16"
+                    }
+                ],
+                [
+                    "A pixel shader has to set the variable with the semantic <g1>SV_Target<\/g1>.",
+                    "",
+                    "A pixel shader has to set the variable with the semantic <g1>SV_Target<\/g1>.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/shader-stages.md",
+                    {
+                        "id": "tu17"
+                    }
+                ],
+                [
+                    "In <g2>ShaderBase<\/g2>, it is <g3>ColorTarget<\/g3>.",
+                    "",
+                    " In <g2>ShaderBase<\/g2>, it is <g3>ColorTarget<\/g3>.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/shader-stages.md",
+                    {
+                        "id": "tu17"
+                    }
+                ],
+                [
+                    "For example:",
+                    "",
+                    "For example:",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/shader-stages.md",
+                    {
+                        "id": "tu18"
+                    }
+                ],
+                [
+                    "override stage void PSMain()",
+                    "",
+                    "override stage void PSMain()\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/shader-stages.md",
+                    {
+                        "id": "tu19"
+                    }
+                ],
+                [
+                    "{",
+                    "",
+                    "{\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/shader-stages.md",
+                    {
+                        "id": "tu19"
+                    }
+                ],
+                [
+                    "...",
+                    "",
+                    "\t...\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/shader-stages.md",
+                    {
+                        "id": "tu19"
+                    }
+                ],
+                [
+                    "streams.ColorTarget = ...;",
+                    "",
+                    "\tstreams.ColorTarget = ...;\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/shader-stages.md",
+                    {
+                        "id": "tu19"
+                    }
+                ],
+                [
+                    "...",
+                    "",
+                    "\t...\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/shader-stages.md",
+                    {
+                        "id": "tu19"
+                    }
+                ],
+                [
+                    "}",
+                    "",
+                    "}\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/shader-stages.md",
+                    {
+                        "id": "tu19"
+                    }
+                ],
+                [
+                    "Geometry shader",
+                    "",
+                    "Geometry shader",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/shader-stages.md",
+                    {
+                        "id": "tu20"
+                    }
+                ],
+                [
+                    "An example of geometry shader:",
+                    "",
+                    "An example of geometry shader:",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/shader-stages.md",
+                    {
+                        "id": "tu21"
+                    }
+                ],
+                [
+                    "[maxvertexcount(1)]",
+                    "",
+                    "[maxvertexcount(1)]\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/shader-stages.md",
+                    {
+                        "id": "tu22"
+                    }
+                ],
+                [
+                    "void GSMain(triangle Input input[3], inout PointStream<Output> pointStream)",
+                    "",
+                    "void GSMain(triangle Input input[3], inout PointStream<Output> pointStream)\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/shader-stages.md",
+                    {
+                        "id": "tu22"
+                    }
+                ],
+                [
+                    "{",
+                    "",
+                    "{\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/shader-stages.md",
+                    {
+                        "id": "tu22"
+                    }
+                ],
+                [
+                    "...",
+                    "",
+                    "\t...\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/shader-stages.md",
+                    {
+                        "id": "tu22"
+                    }
+                ],
+                [
+                    "\/\/ fill the streams object",
+                    "",
+                    "\t\/\/ fill the streams object\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/shader-stages.md",
+                    {
+                        "id": "tu22"
+                    }
+                ],
+                [
+                    "streams = input[0];",
+                    "",
+                    "\tstreams = input[0];\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/shader-stages.md",
+                    {
+                        "id": "tu22"
+                    }
+                ],
+                [
+                    "...",
+                    "",
+                    " \t...\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/shader-stages.md",
+                    {
+                        "id": "tu22"
+                    }
+                ],
+                [
+                    "\/\/ always append streams",
+                    "",
+                    " \r\n\t\/\/ always append streams\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/shader-stages.md",
+                    {
+                        "id": "tu22"
+                    }
+                ],
+                [
+                    "pointStream.Append(streams);",
+                    "",
+                    "\tpointStream.Append(streams);\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/shader-stages.md",
+                    {
+                        "id": "tu22"
+                    }
+                ],
+                [
+                    "...",
+                    "",
+                    "\t...\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/shader-stages.md",
+                    {
+                        "id": "tu22"
+                    }
+                ],
+                [
+                    "}",
+                    "",
+                    "}\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/shader-stages.md",
+                    {
+                        "id": "tu22"
+                    }
+                ],
+                [
+                    "<g1>Input<\/g1> can be used in the method body.",
+                    "",
+                    "<g1>Input<\/g1> can be used in the method body.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/shader-stages.md",
+                    {
+                        "id": "tu23"
+                    }
+                ],
+                [
+                    "It behaves like the streams object and contains the same members.",
+                    "",
+                    " It behaves like the streams object and contains the same members.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/shader-stages.md",
+                    {
+                        "id": "tu23"
+                    }
+                ],
+                [
+                    "<g1>Output<\/g1> is only used in the declaration of the method.",
+                    "",
+                    "<g1>Output<\/g1> is only used in the declaration of the method.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/shader-stages.md",
+                    {
+                        "id": "tu24"
+                    }
+                ],
+                [
+                    "You should append the streams object to your geometry shader output stream.",
+                    "",
+                    " You should append the streams object to your geometry shader output stream.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/shader-stages.md",
+                    {
+                        "id": "tu24"
+                    }
+                ],
+                [
+                    "Tessellation shader",
+                    "",
+                    "Tessellation shader",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/shader-stages.md",
+                    {
+                        "id": "tu25"
+                    }
+                ],
+                [
+                    "An example of a tessellation shader:",
+                    "",
+                    "An example of a tessellation shader:",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/shader-stages.md",
+                    {
+                        "id": "tu26"
+                    }
+                ],
+                [
+                    "[domain(\"tri\")]",
+                    "",
+                    "[domain(\"tri\")]\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/shader-stages.md",
+                    {
+                        "id": "tu27"
+                    }
+                ],
+                [
+                    "[partitioning(\"fractional_odd\")]",
+                    "",
+                    "[partitioning(\"fractional_odd\")]\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/shader-stages.md",
+                    {
+                        "id": "tu27"
+                    }
+                ],
+                [
+                    "[outputtopology(\"triangle_cw\")]",
+                    "",
+                    "[outputtopology(\"triangle_cw\")]\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/shader-stages.md",
+                    {
+                        "id": "tu27"
+                    }
+                ],
+                [
+                    "[outputcontrolpoints(3)]",
+                    "",
+                    "[outputcontrolpoints(3)]\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/shader-stages.md",
+                    {
+                        "id": "tu27"
+                    }
+                ],
+                [
+                    "[patchconstantfunc(\"HSConstantMain\")]",
+                    "",
+                    "[patchconstantfunc(\"HSConstantMain\")]\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/shader-stages.md",
+                    {
+                        "id": "tu27"
+                    }
+                ],
+                [
+                    "[maxtessfactor(48.0)]",
+                    "",
+                    "[maxtessfactor(48.0)]\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/shader-stages.md",
+                    {
+                        "id": "tu27"
+                    }
+                ],
+                [
+                    "void HSMain(InputPatch<Input, 3> input, out Output output, uint uCPID :",
+                    "",
+                    "void HSMain(InputPatch<Input, 3> input, out Output output, uint uCPID :",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/shader-stages.md",
+                    {
+                        "id": "tu27"
+                    }
+                ],
+                [
+                    "SV_OutputControlPointID)",
+                    "",
+                    " SV_OutputControlPointID)\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/shader-stages.md",
+                    {
+                        "id": "tu27"
+                    }
+                ],
+                [
+                    "{",
+                    "",
+                    "{\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/shader-stages.md",
+                    {
+                        "id": "tu27"
+                    }
+                ],
+                [
+                    "...",
+                    "",
+                    "\t...\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/shader-stages.md",
+                    {
+                        "id": "tu27"
+                    }
+                ],
+                [
+                    "output = streams;",
+                    "",
+                    "\toutput = streams;\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/shader-stages.md",
+                    {
+                        "id": "tu27"
+                    }
+                ],
+                [
+                    "}",
+                    "",
+                    "}\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/shader-stages.md",
+                    {
+                        "id": "tu27"
+                    }
+                ],
+                [
+                    "void HSConstantMain(InputPatch<Input, 3> input, const OutputPatch<Input2, 3> output, out Constants constants)",
+                    "",
+                    " \r\nvoid HSConstantMain(InputPatch<Input, 3> input, const OutputPatch<Input2, 3> output, out Constants constants)\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/shader-stages.md",
+                    {
+                        "id": "tu27"
+                    }
+                ],
+                [
+                    "{",
+                    "",
+                    "{\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/shader-stages.md",
+                    {
+                        "id": "tu27"
+                    }
+                ],
+                [
+                    "...",
+                    "",
+                    "\t...\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/shader-stages.md",
+                    {
+                        "id": "tu27"
+                    }
+                ],
+                [
+                    "output = streams;",
+                    "",
+                    "\toutput = streams;\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/shader-stages.md",
+                    {
+                        "id": "tu27"
+                    }
+                ],
+                [
+                    "...",
+                    "",
+                    "\t...\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/shader-stages.md",
+                    {
+                        "id": "tu27"
+                    }
+                ],
+                [
+                    "}",
+                    "",
+                    "}\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/shader-stages.md",
+                    {
+                        "id": "tu27"
+                    }
+                ],
+                [
+                    "[domain(\"tri\")]",
+                    "",
+                    " \r\n[domain(\"tri\")]\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/shader-stages.md",
+                    {
+                        "id": "tu27"
+                    }
+                ],
+                [
+                    "void DSMain(const OutputPatch<Input, 3> input, out Output output, in Constants constants, float3 f3BarycentricCoords :",
+                    "",
+                    "void DSMain(const OutputPatch<Input, 3> input, out Output output, in Constants constants, float3 f3BarycentricCoords :",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/shader-stages.md",
+                    {
+                        "id": "tu27"
+                    }
+                ],
+                [
+                    "SV_DomainLocation)",
+                    "",
+                    " SV_DomainLocation)\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/shader-stages.md",
+                    {
+                        "id": "tu27"
+                    }
+                ],
+                [
+                    "{",
+                    "",
+                    "{\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/shader-stages.md",
+                    {
+                        "id": "tu27"
+                    }
+                ],
+                [
+                    "...",
+                    "",
+                    "\t...\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/shader-stages.md",
+                    {
+                        "id": "tu27"
+                    }
+                ],
+                [
+                    "output = streams;",
+                    "",
+                    "\toutput = streams;\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/shader-stages.md",
+                    {
+                        "id": "tu27"
+                    }
+                ],
+                [
+                    "...",
+                    "",
+                    "\t...\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/shader-stages.md",
+                    {
+                        "id": "tu27"
+                    }
+                ],
+                [
+                    "}",
+                    "",
+                    "}\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/shader-stages.md",
+                    {
+                        "id": "tu27"
+                    }
+                ],
+                [
+                    "<g1>Input<\/g1> and <g2>Input2<\/g2> both behave like streams.",
+                    "",
+                    "<g1>Input<\/g1> and <g2>Input2<\/g2> both behave like streams.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/shader-stages.md",
+                    {
+                        "id": "tu28"
+                    }
+                ],
+                [
+                    "<x1\/>!Note<x2\/>",
+                    "",
+                    "<x1\/>!Note<x2\/>\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/shader-stages.md",
+                    {
+                        "id": "tu29"
+                    }
+                ],
+                [
+                    "Don't forget to assign <g1>output<\/g1> to <g2>streams<\/g2> at the end of your stage.",
+                    "",
+                    "Don't forget to assign <g1>output<\/g1> to <g2>streams<\/g2> at the end of your stage.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/shader-stages.md",
+                    {
+                        "id": "tu29"
+                    }
+                ],
+                [
+                    "Compute shader",
+                    "",
+                    "Compute shader",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/shader-stages.md",
+                    {
+                        "id": "tu30"
+                    }
+                ],
+                [
+                    "An example of a compute shader:",
+                    "",
+                    "An example of a compute shader:",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/shader-stages.md",
+                    {
+                        "id": "tu31"
+                    }
+                ],
+                [
+                    "[numthreads(2, 3, 5)]",
+                    "",
+                    "[numthreads(2, 3, 5)]\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/shader-stages.md",
+                    {
+                        "id": "tu32"
+                    }
+                ],
+                [
+                    "void CSMain()",
+                    "",
+                    "void CSMain()\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/shader-stages.md",
+                    {
+                        "id": "tu32"
+                    }
+                ],
+                [
+                    "{",
+                    "",
+                    "{\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/shader-stages.md",
+                    {
+                        "id": "tu32"
+                    }
+                ],
+                [
+                    "...",
+                    "",
+                    "\t...\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/shader-stages.md",
+                    {
+                        "id": "tu32"
+                    }
+                ],
+                [
+                    "}",
+                    "",
+                    "}\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/shader-stages.md",
+                    {
+                        "id": "tu32"
+                    }
+                ],
+                [
+                    "You can inherit from <g1>ComputeShaderBase<\/g1> and override the <g2>Compute<\/g2> method.",
+                    "",
+                    "You can inherit from <g1>ComputeShaderBase<\/g1> and override the <g2>Compute<\/g2> method.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/shader-stages.md",
+                    {
+                        "id": "tu33"
+                    }
+                ],
+                [
+                    "See also",
+                    "",
+                    "See also",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/shader-stages.md",
+                    {
+                        "id": "tu34"
+                    }
+                ],
+                [
+                    "Effect language",
+                    "",
+                    "<g1>Effect language<\/g1>",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/shader-stages.md",
+                    {
+                        "id": "tu35"
+                    }
+                ],
+                [
+                    "Shading language index",
+                    "",
+                    "<g1>Shading language index<\/g1>",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/shader-stages.md",
+                    {
+                        "id": "tu36"
+                    }
+                ],
+                [
+                    "Shader classes, mixins, and inheritance",
+                    "",
+                    "<g1>Shader classes, mixins, and inheritance<\/g1>",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/shader-stages.md",
+                    {
+                        "id": "tu37"
+                    }
+                ],
+                [
+                    "Composition",
+                    "",
+                    "<g1>Composition<\/g1>",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/shader-stages.md",
+                    {
+                        "id": "tu38"
+                    }
+                ],
+                [
+                    "Templates",
+                    "",
+                    "<g1>Templates<\/g1>",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/shader-stages.md",
+                    {
+                        "id": "tu39"
+                    }
+                ],
+                [
+                    "Shader stage input\/output automatic management",
+                    "",
+                    "<g1>Shader stage input\/output automatic management<\/g1>",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/shader-stages.md",
+                    {
+                        "id": "tu40"
+                    }
+                ]
+            ]
+        }
+    ],
+    "seg_enabled": false
+}

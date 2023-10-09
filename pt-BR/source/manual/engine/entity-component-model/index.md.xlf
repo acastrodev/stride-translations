@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="/D:/repos/rr/source/manual/engine/entity-component-model/index.md" source-language="en" target-language="pt" datatype="x-text/x-markdown" okp:inputEncoding="UTF-8">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en">Entity-Component Model</source>
+<target xml:lang="pt">Entity-Component Model</target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en">[!INCLUDE <g id="1">stride-studio-note</g>]</source>
+<target xml:lang="pt">[!INCLUDE <g id="1">stride-studio-note</g>]</target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">Overview</source>
+<target xml:lang="pt">Overview</target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">@'Stride.Engine.Entity' is the base class for objects that are managed by the high-level engine.</source>
+<target xml:lang="pt">@'Stride.Engine.Entity' is the base class for objects that are managed by the high-level engine.</target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">To improve flexibility, entity are component-based: they can contains as many components as required, containing data and/or logic.</source>
+<target xml:lang="pt">To improve flexibility, entity are component-based: they can contains as many components as required, containing data and/or logic.</target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>media/7438980.png<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>media/7438980.png<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en">A @'Stride.Engine.Entitycomponent' is tied to its entity (that is, one component can't be added to two entities at the same time).</source>
+<target xml:lang="pt">A @'Stride.Engine.Entitycomponent' is tied to its entity (that is, one component can't be added to two entities at the same time).</target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en">How to create an entity and some components</source>
+<target xml:lang="pt">How to create an entity and some components</target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en">// Create entity
+var myEntity = new Entity();
+ 
+// Create a model component (so that model is rendered)
+var modelComponent = new ModelComponent { Model = model };
+myEntity.Set(ModelComponent.Key, modelComponent);
+
+// Set entity position
+myEntity.Transformation.Translation = new Vector3(100.0f, 100.0f, 0.0f);
+ 
+// Add entity to scene; from now on its model will be rendered
+Entities.Add(myEntity);
+</source>
+<target xml:lang="pt">// Create entity
+var myEntity = new Entity();
+ 
+// Create a model component (so that model is rendered)
+var modelComponent = new ModelComponent { Model = model };
+myEntity.Set(ModelComponent.Key, modelComponent);
+
+// Set entity position
+myEntity.Transformation.Translation = new Vector3(100.0f, 100.0f, 0.0f);
+ 
+// Add entity to scene; from now on its model will be rendered
+Entities.Add(myEntity);
+</target>
+</trans-unit>
+</body>
+</file>
+</xliff>

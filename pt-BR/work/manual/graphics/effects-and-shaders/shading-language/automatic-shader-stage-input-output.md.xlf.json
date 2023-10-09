@@ -1,0 +1,1603 @@
+{
+    "filename": "manual\\graphics\\effects-and-shaders\\shading-language\\automatic-shader-stage-input-output.md.xlf",
+    "files": [
+        {
+            "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md": [
+                [
+                    "Automatic shader stage input\/output",
+                    "",
+                    "Automatic shader stage input\/output",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu1"
+                    }
+                ],
+                [
+                    "<x1\/>Advanced<x2\/>",
+                    "",
+                    "<x1\/>Advanced<x2\/>\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu2"
+                    }
+                ],
+                [
+                    "<x3\/>Programmer<x4\/>",
+                    "",
+                    "<x3\/>Programmer<x4\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu2"
+                    }
+                ],
+                [
+                    "When you write a HLSL shader, you have to precisely define your vertex attributes and carefully pass them across the stage of your final shader.",
+                    "",
+                    "When you write a HLSL shader, you have to precisely define your vertex attributes and carefully pass them across the stage of your final shader.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu3"
+                    }
+                ],
+                [
+                    "Here's an example of a simple HLSL shader that uses the color from the vertex.",
+                    "",
+                    "Here's an example of a simple HLSL shader that uses the color from the vertex.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu4"
+                    }
+                ],
+                [
+                    "struct VS_IN",
+                    "",
+                    "struct VS_IN\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu5"
+                    }
+                ],
+                [
+                    "{",
+                    "",
+                    "{\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu5"
+                    }
+                ],
+                [
+                    "float4 pos :",
+                    "",
+                    "\tfloat4 pos :",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu5"
+                    }
+                ],
+                [
+                    "POSITION;",
+                    "",
+                    " POSITION;\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu5"
+                    }
+                ],
+                [
+                    "float4 col :",
+                    "",
+                    "\tfloat4 col :",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu5"
+                    }
+                ],
+                [
+                    "COLOR;",
+                    "",
+                    " COLOR;\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu5"
+                    }
+                ],
+                [
+                    "};",
+                    "",
+                    "};\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu5"
+                    }
+                ],
+                [
+                    "struct PS_IN",
+                    "",
+                    "\r\nstruct PS_IN\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu5"
+                    }
+                ],
+                [
+                    "{",
+                    "",
+                    "{\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu5"
+                    }
+                ],
+                [
+                    "float4 pos :",
+                    "",
+                    "\tfloat4 pos :",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu5"
+                    }
+                ],
+                [
+                    "SV_POSITION;",
+                    "",
+                    " SV_POSITION;\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu5"
+                    }
+                ],
+                [
+                    "float4 col :",
+                    "",
+                    "\tfloat4 col :",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu5"
+                    }
+                ],
+                [
+                    "COLOR;",
+                    "",
+                    " COLOR;\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu5"
+                    }
+                ],
+                [
+                    "};",
+                    "",
+                    "};\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu5"
+                    }
+                ],
+                [
+                    "PS_IN VS( VS_IN input )",
+                    "",
+                    "\r\nPS_IN VS( VS_IN input )\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu5"
+                    }
+                ],
+                [
+                    "{",
+                    "",
+                    "{\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu5"
+                    }
+                ],
+                [
+                    "PS_IN output = (PS_IN)0;",
+                    "",
+                    "\tPS_IN output = (PS_IN)0;\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu5"
+                    }
+                ],
+                [
+                    "output.pos = input.pos;",
+                    "",
+                    "\r\n\toutput.pos = input.pos;\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu5"
+                    }
+                ],
+                [
+                    "output.col = input.col;",
+                    "",
+                    "\toutput.col = input.col;\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu5"
+                    }
+                ],
+                [
+                    "return output;",
+                    "",
+                    "\r\n\treturn output;\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu5"
+                    }
+                ],
+                [
+                    "}",
+                    "",
+                    "}\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu5"
+                    }
+                ],
+                [
+                    "float4 PS( PS_IN input ) :",
+                    "",
+                    "\r\nfloat4 PS( PS_IN input ) :",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu5"
+                    }
+                ],
+                [
+                    "SV_Target",
+                    "",
+                    " SV_Target\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu5"
+                    }
+                ],
+                [
+                    "{",
+                    "",
+                    "{\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu5"
+                    }
+                ],
+                [
+                    "return input.col;",
+                    "",
+                    "\treturn input.col;\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu5"
+                    }
+                ],
+                [
+                    "}",
+                    "",
+                    "}\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu5"
+                    }
+                ],
+                [
+                    "technique10 Render",
+                    "",
+                    "\r\ntechnique10 Render\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu5"
+                    }
+                ],
+                [
+                    "{",
+                    "",
+                    "{\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu5"
+                    }
+                ],
+                [
+                    "pass P0",
+                    "",
+                    "\tpass P0\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu5"
+                    }
+                ],
+                [
+                    "{",
+                    "",
+                    "\t{\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu5"
+                    }
+                ],
+                [
+                    "SetGeometryShader( 0 );",
+                    "",
+                    "\t\tSetGeometryShader( 0 );\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu5"
+                    }
+                ],
+                [
+                    "SetVertexShader( CompileShader( vs_4_0, VS() ) );",
+                    "",
+                    "\t\tSetVertexShader( CompileShader( vs_4_0, VS() ) );\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu5"
+                    }
+                ],
+                [
+                    "SetPixelShader( CompileShader( ps_4_0, PS() ) );",
+                    "",
+                    "\t\tSetPixelShader( CompileShader( ps_4_0, PS() ) );\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu5"
+                    }
+                ],
+                [
+                    "}",
+                    "",
+                    "\t}\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu5"
+                    }
+                ],
+                [
+                    "}",
+                    "",
+                    "}\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu5"
+                    }
+                ],
+                [
+                    "Imagine you want to add a normal to your model and modify the resulting color accordingly.",
+                    "",
+                    "Imagine you want to add a normal to your model and modify the resulting color accordingly.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu6"
+                    }
+                ],
+                [
+                    "You have to modify the code that computes the color and adjust the intermediate structures to pass the attribute from the vertex to the pixel shader.",
+                    "",
+                    " You have to modify the code that computes the color and adjust the intermediate structures to pass the attribute from the vertex to the pixel shader.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu6"
+                    }
+                ],
+                [
+                    "You also have to be careful of the semantics you use.",
+                    "",
+                    " You also have to be careful of the semantics you use.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu6"
+                    }
+                ],
+                [
+                    "<g1>Code:<\/g1> Modified HLSL shader",
+                    "",
+                    "<g1>Code:<\/g1> Modified HLSL shader",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu7"
+                    }
+                ],
+                [
+                    "struct VS_IN",
+                    "",
+                    "struct VS_IN\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu8"
+                    }
+                ],
+                [
+                    "{",
+                    "",
+                    "{\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu8"
+                    }
+                ],
+                [
+                    "float4 pos :",
+                    "",
+                    "\tfloat4 pos :",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu8"
+                    }
+                ],
+                [
+                    "POSITION;",
+                    "",
+                    " POSITION;\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu8"
+                    }
+                ],
+                [
+                    "float4 col :",
+                    "",
+                    "\tfloat4 col :",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu8"
+                    }
+                ],
+                [
+                    "COLOR;",
+                    "",
+                    " COLOR;\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu8"
+                    }
+                ],
+                [
+                    "float3 normal :",
+                    "",
+                    "\tfloat3 normal :",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu8"
+                    }
+                ],
+                [
+                    "NORMAL;",
+                    "",
+                    " NORMAL;\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu8"
+                    }
+                ],
+                [
+                    "};",
+                    "",
+                    "};\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu8"
+                    }
+                ],
+                [
+                    "struct PS_IN",
+                    "",
+                    "\r\nstruct PS_IN\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu8"
+                    }
+                ],
+                [
+                    "{",
+                    "",
+                    "{\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu8"
+                    }
+                ],
+                [
+                    "float4 pos :",
+                    "",
+                    "\tfloat4 pos :",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu8"
+                    }
+                ],
+                [
+                    "SV_POSITION;",
+                    "",
+                    " SV_POSITION;\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu8"
+                    }
+                ],
+                [
+                    "float4 col :",
+                    "",
+                    "\tfloat4 col :",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu8"
+                    }
+                ],
+                [
+                    "COLOR;",
+                    "",
+                    " COLOR;\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu8"
+                    }
+                ],
+                [
+                    "float3 normal :",
+                    "",
+                    "\tfloat3 normal :",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu8"
+                    }
+                ],
+                [
+                    "TEXCOORD0;",
+                    "",
+                    " TEXCOORD0;\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu8"
+                    }
+                ],
+                [
+                    "};",
+                    "",
+                    "};\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu8"
+                    }
+                ],
+                [
+                    "PS_IN VS( VS_IN input )",
+                    "",
+                    "\r\nPS_IN VS( VS_IN input )\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu8"
+                    }
+                ],
+                [
+                    "{",
+                    "",
+                    "{\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu8"
+                    }
+                ],
+                [
+                    "PS_IN output = (PS_IN)0;",
+                    "",
+                    "\tPS_IN output = (PS_IN)0;\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu8"
+                    }
+                ],
+                [
+                    "output.pos = input.pos;",
+                    "",
+                    "\r\n\toutput.pos = input.pos;\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu8"
+                    }
+                ],
+                [
+                    "output.col = input.col;",
+                    "",
+                    "\toutput.col = input.col;\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu8"
+                    }
+                ],
+                [
+                    "output.normal = input.normal;",
+                    "",
+                    "\toutput.normal = input.normal;\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu8"
+                    }
+                ],
+                [
+                    "return output;",
+                    "",
+                    "\r\n\treturn output;\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu8"
+                    }
+                ],
+                [
+                    "}",
+                    "",
+                    "}\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu8"
+                    }
+                ],
+                [
+                    "float4 PS( PS_IN input ) :",
+                    "",
+                    "\r\nfloat4 PS( PS_IN input ) :",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu8"
+                    }
+                ],
+                [
+                    "SV_Target",
+                    "",
+                    " SV_Target\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu8"
+                    }
+                ],
+                [
+                    "{",
+                    "",
+                    "{\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu8"
+                    }
+                ],
+                [
+                    "return input.col * max(input.normal.z, 0.0);",
+                    "",
+                    "\treturn input.col * max(input.normal.z, 0.0);\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu8"
+                    }
+                ],
+                [
+                    "}",
+                    "",
+                    "}\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu8"
+                    }
+                ],
+                [
+                    "technique10 Render",
+                    "",
+                    "\r\ntechnique10 Render\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu8"
+                    }
+                ],
+                [
+                    "{",
+                    "",
+                    "{\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu8"
+                    }
+                ],
+                [
+                    "pass P0",
+                    "",
+                    "\tpass P0\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu8"
+                    }
+                ],
+                [
+                    "{",
+                    "",
+                    "\t{\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu8"
+                    }
+                ],
+                [
+                    "SetGeometryShader( 0 );",
+                    "",
+                    "\t\tSetGeometryShader( 0 );\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu8"
+                    }
+                ],
+                [
+                    "SetVertexShader( CompileShader( vs_4_0, VS() ) );",
+                    "",
+                    "\t\tSetVertexShader( CompileShader( vs_4_0, VS() ) );\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu8"
+                    }
+                ],
+                [
+                    "SetPixelShader( CompileShader( ps_4_0, PS() ) );",
+                    "",
+                    "\t\tSetPixelShader( CompileShader( ps_4_0, PS() ) );\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu8"
+                    }
+                ],
+                [
+                    "}",
+                    "",
+                    "\t}\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu8"
+                    }
+                ],
+                [
+                    "}",
+                    "",
+                    "}\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu8"
+                    }
+                ],
+                [
+                    "This example is simple.",
+                    "",
+                    "This example is simple.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu9"
+                    }
+                ],
+                [
+                    "Real projects have many more shaders, so a single change might mean rewriting lots of shaders, structures, and so on.",
+                    "",
+                    " Real projects have many more shaders, so a single change might mean rewriting lots of shaders, structures, and so on.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu9"
+                    }
+                ],
+                [
+                    "Schematically, adding a new attribute requires you to update all the stages and intermediate structures from the vertex input to the last stage you want to use the attribute in.",
+                    "",
+                    "Schematically, adding a new attribute requires you to update all the stages and intermediate structures from the vertex input to the last stage you want to use the attribute in.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu10"
+                    }
+                ],
+                [
+                    "<x1\/>media\/hlsl_add_normal.png<x2\/>",
+                    "",
+                    "<x1\/>media\/hlsl_add_normal.png<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu11"
+                    }
+                ],
+                [
+                    "SDSL",
+                    "",
+                    "SDSL",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu12"
+                    }
+                ],
+                [
+                    "SDSL has a convenient way to pass parameters across the different stages of your shader.",
+                    "",
+                    "SDSL has a convenient way to pass parameters across the different stages of your shader.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu13"
+                    }
+                ],
+                [
+                    "The stream variables are:",
+                    "",
+                    " The stream variables are:",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu13"
+                    }
+                ],
+                [
+                    "variables",
+                    "",
+                    "variables",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu14"
+                    }
+                ],
+                [
+                    "defined like any shader member, with the stream keyword",
+                    "",
+                    "defined like any shader member, with the stream keyword",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu15"
+                    }
+                ],
+                [
+                    "used with the stream prefix (omitting it results in a compilation error).",
+                    "",
+                    "used with the stream prefix (omitting it results in a compilation error).",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu16"
+                    }
+                ],
+                [
+                    "When the stream is ambiguous (same name), you should provide the shader name in front of the variable (ie <g1>streams.<my_shader>.<my_variable><\/g1>)",
+                    "",
+                    " When the stream is ambiguous (same name), you should provide the shader name in front of the variable (ie <g1>streams.<my_shader>.<my_variable><\/g1>)",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu16"
+                    }
+                ],
+                [
+                    "Streams regroup the concepts of attributes, varyings and outputs in a single concept.",
+                    "",
+                    "Streams regroup the concepts of attributes, varyings and outputs in a single concept.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu17"
+                    }
+                ],
+                [
+                    "An attribute is a stream read in a vertex shader before being written to.",
+                    "",
+                    "An attribute is a stream read in a vertex shader before being written to.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu18"
+                    }
+                ],
+                [
+                    "A varying is a stream present across shader stages.",
+                    "",
+                    "A varying is a stream present across shader stages.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu19"
+                    }
+                ],
+                [
+                    "An output is a stream assigned before being read.",
+                    "",
+                    "An output is a stream assigned before being read.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu20"
+                    }
+                ],
+                [
+                    "Think of streams as global objects that you can access everywhere without specifying as a parameter of your functions.",
+                    "",
+                    "Think of streams as global objects that you can access everywhere without specifying as a parameter of your functions.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu21"
+                    }
+                ],
+                [
+                    "<x1\/>!Note<x2\/>",
+                    "",
+                    "<x1\/>!Note<x2\/>\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu22"
+                    }
+                ],
+                [
+                    "You don't have to create a semantic for these variables; the compiler creates them automatically.",
+                    "",
+                    "You don't have to create a semantic for these variables; the compiler creates them automatically.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu22"
+                    }
+                ],
+                [
+                    "However, keep in mind that <g1>the variables sharing the same semantic will be merged in the final shader<\/g1>.",
+                    "",
+                    " However, keep in mind that <g1>the variables sharing the same semantic will be merged in the final shader<\/g1>.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu22"
+                    }
+                ],
+                [
+                    "This behavior can be useful when you want to use a stream variable locally without inheriting from the shader where it was declared.",
+                    "",
+                    " This behavior can be useful when you want to use a stream variable locally without inheriting from the shader where it was declared.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu22"
+                    }
+                ],
+                [
+                    "After you declare a stream, you can access it at any stage of your shader.",
+                    "",
+                    "After you declare a stream, you can access it at any stage of your shader.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu23"
+                    }
+                ],
+                [
+                    "The shader compiler takes care of everything.",
+                    "",
+                    " The shader compiler takes care of everything.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu23"
+                    }
+                ],
+                [
+                    "The variables just have to be visible from the calling code (ie in the inheritance hierarchy) like any other variable.",
+                    "",
+                    " The variables just have to be visible from the calling code (ie in the inheritance hierarchy) like any other variable.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu23"
+                    }
+                ],
+                [
+                    "<g1>Code:<\/g1> Stream definition and use:",
+                    "",
+                    "<g1>Code:<\/g1> Stream definition and use:",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu24"
+                    }
+                ],
+                [
+                    "shader BaseShader",
+                    "",
+                    "shader BaseShader\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu25"
+                    }
+                ],
+                [
+                    "{",
+                    "",
+                    "{\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu25"
+                    }
+                ],
+                [
+                    "stream float3 myVar;",
+                    "",
+                    "\tstream float3 myVar;\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu25"
+                    }
+                ],
+                [
+                    "float3 Compute()",
+                    "",
+                    " \r\n\tfloat3 Compute()\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu25"
+                    }
+                ],
+                [
+                    "{",
+                    "",
+                    "\t{\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu25"
+                    }
+                ],
+                [
+                    "return streams.myVar;",
+                    "",
+                    "\t\treturn streams.myVar;\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu25"
+                    }
+                ],
+                [
+                    "}",
+                    "",
+                    "\t}\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu25"
+                    }
+                ],
+                [
+                    "};",
+                    "",
+                    "};\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu25"
+                    }
+                ],
+                [
+                    "<g1>Code:<\/g1> Stream specification",
+                    "",
+                    "<g1>Code:<\/g1> Stream specification",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu26"
+                    }
+                ],
+                [
+                    "shader StreamShader",
+                    "",
+                    "shader StreamShader\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu27"
+                    }
+                ],
+                [
+                    "{",
+                    "",
+                    "{\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu27"
+                    }
+                ],
+                [
+                    "stream float3 myVar;",
+                    "",
+                    "\tstream float3 myVar;\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu27"
+                    }
+                ],
+                [
+                    "};",
+                    "",
+                    "};\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu27"
+                    }
+                ],
+                [
+                    "shader ShaderA :",
+                    "",
+                    "\r\nshader ShaderA :",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu27"
+                    }
+                ],
+                [
+                    "BaseShader, StreamShader",
+                    "",
+                    " BaseShader, StreamShader\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu27"
+                    }
+                ],
+                [
+                    "{",
+                    "",
+                    "{\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu27"
+                    }
+                ],
+                [
+                    "float3 Test()",
+                    "",
+                    "\tfloat3 Test()\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu27"
+                    }
+                ],
+                [
+                    "{",
+                    "",
+                    "\t{\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu27"
+                    }
+                ],
+                [
+                    "return streams.BaseShader.myVar + streams.StreamShader.myVar;",
+                    "",
+                    "\t\treturn streams.BaseShader.myVar + streams.StreamShader.myVar;\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu27"
+                    }
+                ],
+                [
+                    "}",
+                    "",
+                    "\t}\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu27"
+                    }
+                ],
+                [
+                    "}",
+                    "",
+                    "}\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu27"
+                    }
+                ],
+                [
+                    "Example of SDSL shader",
+                    "",
+                    "Example of SDSL shader",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu28"
+                    }
+                ],
+                [
+                    "Let's look at the same HLSL shader as the first example but in SDSL.",
+                    "",
+                    "Let's look at the same HLSL shader as the first example but in SDSL.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu29"
+                    }
+                ],
+                [
+                    "<g1>Code:<\/g1> Same shader in SDSL",
+                    "",
+                    "<g1>Code:<\/g1> Same shader in SDSL",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu30"
+                    }
+                ],
+                [
+                    "shader MyShader :",
+                    "",
+                    "shader MyShader :",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu31"
+                    }
+                ],
+                [
+                    "ShaderBase",
+                    "",
+                    " ShaderBase\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu31"
+                    }
+                ],
+                [
+                    "{",
+                    "",
+                    "{\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu31"
+                    }
+                ],
+                [
+                    "stream float4 pos :",
+                    "",
+                    "\tstream float4 pos :",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu31"
+                    }
+                ],
+                [
+                    "POSITION;",
+                    "",
+                    " POSITION;\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu31"
+                    }
+                ],
+                [
+                    "stream float4 col :",
+                    "",
+                    "\tstream float4 col :",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu31"
+                    }
+                ],
+                [
+                    "COLOR;",
+                    "",
+                    " COLOR;\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu31"
+                    }
+                ],
+                [
+                    "override void VSMain()",
+                    "",
+                    "\r\n\toverride void VSMain()\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu31"
+                    }
+                ],
+                [
+                    "{",
+                    "",
+                    "\t{\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu31"
+                    }
+                ],
+                [
+                    "streams.ShadingPosition = streams.pos;",
+                    "",
+                    "\t\tstreams.ShadingPosition = streams.pos;\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu31"
+                    }
+                ],
+                [
+                    "}",
+                    "",
+                    "\t}\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu31"
+                    }
+                ],
+                [
+                    "override void PSMain()",
+                    "",
+                    "\r\n\toverride void PSMain()\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu31"
+                    }
+                ],
+                [
+                    "{",
+                    "",
+                    "\t{\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu31"
+                    }
+                ],
+                [
+                    "streams.ColorTarget = streams.col;",
+                    "",
+                    "\t\tstreams.ColorTarget = streams.col;\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu31"
+                    }
+                ],
+                [
+                    "}",
+                    "",
+                    "\t}\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu31"
+                    }
+                ],
+                [
+                    "};",
+                    "",
+                    "};\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu31"
+                    }
+                ],
+                [
+                    "Now let's add the normal computation.",
+                    "",
+                    "Now let's add the normal computation.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu32"
+                    }
+                ],
+                [
+                    "<g1>Code:<\/g1> Modified shader in SDSL",
+                    "",
+                    "<g1>Code:<\/g1> Modified shader in SDSL",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu33"
+                    }
+                ],
+                [
+                    "shader MyShader :",
+                    "",
+                    "shader MyShader :",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu34"
+                    }
+                ],
+                [
+                    "ShaderBase",
+                    "",
+                    " ShaderBase\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu34"
+                    }
+                ],
+                [
+                    "{",
+                    "",
+                    "{\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu34"
+                    }
+                ],
+                [
+                    "stream float4 pos :",
+                    "",
+                    "\tstream float4 pos :",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu34"
+                    }
+                ],
+                [
+                    "POSITION;",
+                    "",
+                    " POSITION;\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu34"
+                    }
+                ],
+                [
+                    "stream float4 col :",
+                    "",
+                    "\tstream float4 col :",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu34"
+                    }
+                ],
+                [
+                    "COLOR;",
+                    "",
+                    " COLOR;\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu34"
+                    }
+                ],
+                [
+                    "stream float3 normal :",
+                    "",
+                    "\tstream float3 normal :",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu34"
+                    }
+                ],
+                [
+                    "NORMAL;",
+                    "",
+                    " NORMAL;\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu34"
+                    }
+                ],
+                [
+                    "override void VSMain()",
+                    "",
+                    "\r\n\toverride void VSMain()\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu34"
+                    }
+                ],
+                [
+                    "{",
+                    "",
+                    "\t{\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu34"
+                    }
+                ],
+                [
+                    "streams.ShadingPosition = streams.pos;",
+                    "",
+                    "\t\tstreams.ShadingPosition = streams.pos;\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu34"
+                    }
+                ],
+                [
+                    "}",
+                    "",
+                    "\t}\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu34"
+                    }
+                ],
+                [
+                    "override void PSMain()",
+                    "",
+                    "\r\n\toverride void PSMain()\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu34"
+                    }
+                ],
+                [
+                    "{",
+                    "",
+                    "\t{\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu34"
+                    }
+                ],
+                [
+                    "streams.ColorTarget = streams.col * max(streams.normal.z, 0.0);",
+                    "",
+                    "\t\tstreams.ColorTarget = streams.col * max(streams.normal.z, 0.0);\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu34"
+                    }
+                ],
+                [
+                    "}",
+                    "",
+                    "\t}\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu34"
+                    }
+                ],
+                [
+                    "};",
+                    "",
+                    "};\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu34"
+                    }
+                ],
+                [
+                    "In SDSL, adding a new attribute is as simple as adding it to the pool of streams and using it where you want.",
+                    "",
+                    "In SDSL, adding a new attribute is as simple as adding it to the pool of streams and using it where you want.",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu35"
+                    }
+                ],
+                [
+                    "<x1\/>media\/sdsl_add_normal.png<x2\/>",
+                    "",
+                    "<x1\/>media\/sdsl_add_normal.png<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu36"
+                    }
+                ],
+                [
+                    "See also",
+                    "",
+                    "See also",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu37"
+                    }
+                ],
+                [
+                    "Effect language",
+                    "",
+                    "<g1>Effect language<\/g1>",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu38"
+                    }
+                ],
+                [
+                    "Shading language index",
+                    "",
+                    "<g1>Shading language index<\/g1>",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu39"
+                    }
+                ],
+                [
+                    "Shader classes, mixins and inheritance",
+                    "",
+                    "<g1>Shader classes, mixins and inheritance<\/g1>",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu40"
+                    }
+                ],
+                [
+                    "Composition",
+                    "",
+                    "<g1>Composition<\/g1>",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu41"
+                    }
+                ],
+                [
+                    "Templates",
+                    "",
+                    "<g1>Templates<\/g1>",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu42"
+                    }
+                ],
+                [
+                    "Shader stages",
+                    "",
+                    "<g1>Shader stages<\/g1>",
+                    "\/D:\/repos\/rr\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/automatic-shader-stage-input-output.md",
+                    {
+                        "id": "tu43"
+                    }
+                ]
+            ]
+        }
+    ],
+    "seg_enabled": false
+}

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" xmlns:okp="okapi-framework:xliff-extensions" its:version="2.0" version="1.2">
+<file datatype="x-text/x-markdown" okp:inputEncoding="UTF-8" original="/D:/repos/rr/source/manual/particles/emitters.md" source-language="en" target-language="pt">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en">Emitters</source>
+<target xml:lang="pt">Emitters</target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Beginner<x id="2"/>
+<x id="3"/>Artist<x id="4"/>
+<x id="5"/>Programmer<x id="6"/></source>
+<target xml:lang="pt"><x id="1"/>Beginner<x id="2"/>
+<x id="3"/>Artist<x id="4"/>
+<x id="5"/>Programmer<x id="6"/></target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en"><g id="1">Particle emitters</g> manage how many particles are in an effect, how they appear, move, and disappear, and how they are drawn. For example, a fire effect might be composed of three separate particle effects: flames, embers, and smoke. Each of these effects is managed by a separate particle emitter.</source>
+<target xml:lang="pt"><g id="1">Particle emitters</g> manage how many particles are in an effect, how they appear, move, and disappear, and how they are drawn. For example, a fire effect might be composed of three separate particle effects: flames, embers, and smoke. Each of these effects is managed by a separate particle emitter.</target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">Emitters contain further controls such as <g id="1">spawners</g>, <g id="2">initializers</g>, and <g id="3">updaters</g>.</source>
+<target xml:lang="pt">Emitters contain further controls such as <g id="1">spawners</g>, <g id="2">initializers</g>, and <g id="3">updaters</g>.</target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>media/particles-reference-emitters-1.png<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>media/particles-reference-emitters-1.png<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en">Property</source>
+<target xml:lang="pt">Property</target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en">Description</source>
+<target xml:lang="pt">Description</target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en">Emitter name</source>
+<target xml:lang="pt">Emitter name</target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en">A unique identifier for the particle emitter</source>
+<target xml:lang="pt">A unique identifier for the particle emitter</target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en">Max particles</source>
+<target xml:lang="pt">Max particles</target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en">The maximum number of active particles the emitter can manage at a given time, based on the particles' spawn rate and lifespan. If you leave this at 0, Stride uses its own estimate.</source>
+<target xml:lang="pt">The maximum number of active particles the emitter can manage at a given time, based on the particles' spawn rate and lifespan. If you leave this at 0, Stride uses its own estimate.</target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en">Lifespan</source>
+<target xml:lang="pt">Lifespan</target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en">New particles have a lifespan between these two values</source>
+<target xml:lang="pt">New particles have a lifespan between these two values</target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en">Space</source>
+<target xml:lang="pt">Space</target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en">Particles in <g id="1">world</g> space remain in the world space when the emitter moves away from them. Particles in <g id="2">local</g> space always exist in the emitter's local coordinate system; if the emitter moves, rotates, or scales, the particles move with it.</source>
+<target xml:lang="pt">Particles in <g id="1">world</g> space remain in the world space when the emitter moves away from them. Particles in <g id="2">local</g> space always exist in the emitter's local coordinate system; if the emitter moves, rotates, or scales, the particles move with it.</target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en">Randomize</source>
+<target xml:lang="pt">Randomize</target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en">Particles use pseudo-random values for everything which requires randomness. If you set this to <g id="1">Time</g>, different emitters generate different random numbers. If you set it to <g id="2">Fixed</g>, different instances of the same effect behave identically. <g id="3">Position</g> acts as Fixed but is different for different positions.</source>
+<target xml:lang="pt">Particles use pseudo-random values for everything which requires randomness. If you set this to <g id="1">Time</g>, different emitters generate different random numbers. If you set it to <g id="2">Fixed</g>, different instances of the same effect behave identically. <g id="3">Position</g> acts as Fixed but is different for different positions.</target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en">Draw priority</source>
+<target xml:lang="pt">Draw priority</target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en">This controls the order in which particles are drawn. Higher numbers have higher priority. For example, if this particle effect has a draw priority of 2, it will be drawn after a particle effect with a draw priority of 1.</source>
+<target xml:lang="pt">This controls the order in which particles are drawn. Higher numbers have higher priority. For example, if this particle effect has a draw priority of 2, it will be drawn after a particle effect with a draw priority of 1.</target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en">Sorting</source>
+<target xml:lang="pt">Sorting</target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en">Choose if the articles should be drawn by <g id="1">depth</g> (away from the camera), <g id="2">age</g> (particles spawned first are drawn on top), <g id="3">order</g>, or in no order <g id="4">none</g> (good for additive particles, which need no sorting).</source>
+<target xml:lang="pt">Choose if the articles should be drawn by <g id="1">depth</g> (away from the camera), <g id="2">age</g> (particles spawned first are drawn on top), <g id="3">order</g>, or in no order <g id="4">none</g> (good for additive particles, which need no sorting).</target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en">Shape</source>
+<target xml:lang="pt">Shape</target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en">Specifies the <g id="1">shape</g> used to draw the particles</source>
+<target xml:lang="pt">Specifies the <g id="1">shape</g> used to draw the particles</target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en">Material</source>
+<target xml:lang="pt">Material</target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en">Specifies the <g id="1">material</g> used to render the particles</source>
+<target xml:lang="pt">Specifies the <g id="1">material</g> used to render the particles</target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en">Spawners</source>
+<target xml:lang="pt">Spawners</target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en"><g id="1">Spawners</g> control how quickly new particles are emitted. To emit particles, emitters must have at least one spawner.</source>
+<target xml:lang="pt"><g id="1">Spawners</g> control how quickly new particles are emitted. To emit particles, emitters must have at least one spawner.</target>
+</trans-unit>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en">Initializers</source>
+<target xml:lang="pt">Initializers</target>
+</trans-unit>
+<trans-unit id="tu29" xml:space="preserve">
+<source xml:lang="en"><g id="1">Initializers</g> set the initial values of new particles</source>
+<target xml:lang="pt"><g id="1">Initializers</g> set the initial values of new particles</target>
+</trans-unit>
+<trans-unit id="tu30" xml:space="preserve">
+<source xml:lang="en">Updaters</source>
+<target xml:lang="pt">Updaters</target>
+</trans-unit>
+<trans-unit id="tu31" xml:space="preserve">
+<source xml:lang="en"><g id="1">Updaters</g> update living particles every frame, changing their attributes. Updaters execute in the order in which they appear on the list.</source>
+<target xml:lang="pt"><g id="1">Updaters</g> update living particles every frame, changing their attributes. Updaters execute in the order in which they appear on the list.</target>
+</trans-unit>
+<trans-unit id="tu32" xml:space="preserve">
+<source xml:lang="en">See also</source>
+<target xml:lang="pt">See also</target>
+</trans-unit>
+<trans-unit id="tu33" xml:space="preserve">
+<source xml:lang="en"><g id="1">Create particles</g></source>
+<target xml:lang="pt"><g id="1">Create particles</g></target>
+</trans-unit>
+<trans-unit id="tu34" xml:space="preserve">
+<source xml:lang="en"><g id="1">Shapes</g></source>
+<target xml:lang="pt"><g id="1">Shapes</g></target>
+</trans-unit>
+<trans-unit id="tu35" xml:space="preserve">
+<source xml:lang="en"><g id="1">Materials</g></source>
+<target xml:lang="pt"><g id="1">Materials</g></target>
+</trans-unit>
+<trans-unit id="tu36" xml:space="preserve">
+<source xml:lang="en"><g id="1">Spawners</g></source>
+<target xml:lang="pt"><g id="1">Spawners</g></target>
+</trans-unit>
+<trans-unit id="tu37" xml:space="preserve">
+<source xml:lang="en"><g id="1">Initializers</g></source>
+<target xml:lang="pt"><g id="1">Initializers</g></target>
+</trans-unit>
+<trans-unit id="tu38" xml:space="preserve">
+<source xml:lang="en"><g id="1">Updaters</g></source>
+<target xml:lang="pt"><g id="1">Updaters</g></target>
+</trans-unit>
+</body>
+</file>
+</xliff>

@@ -1,0 +1,703 @@
+{
+    "filename": "manual\\engine\\assets\\asset-bundles.md.xlf",
+    "files": [
+        {
+            "\/D:\/repos\/rr\/source\/manual\/engine\/assets\/asset-bundles.md": [
+                [
+                    "Asset bundles",
+                    "",
+                    "Asset bundles",
+                    "\/D:\/repos\/rr\/source\/manual\/engine\/assets\/asset-bundles.md",
+                    {
+                        "id": "tu1"
+                    }
+                ],
+                [
+                    "<x1\/>!Warning<x2\/>",
+                    "",
+                    "<x1\/>!Warning<x2\/>\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/engine\/assets\/asset-bundles.md",
+                    {
+                        "id": "tu2"
+                    }
+                ],
+                [
+                    "This section is out of date.",
+                    "",
+                    "This section is out of date.",
+                    "\/D:\/repos\/rr\/source\/manual\/engine\/assets\/asset-bundles.md",
+                    {
+                        "id": "tu2"
+                    }
+                ],
+                [
+                    "For now, you should only use it for reference.",
+                    "",
+                    " For now, you should only use it for reference.",
+                    "\/D:\/repos\/rr\/source\/manual\/engine\/assets\/asset-bundles.md",
+                    {
+                        "id": "tu2"
+                    }
+                ],
+                [
+                    "A bundle of assets allows to package assets into a single archive that can be downloaded into the game at a specific time.",
+                    "",
+                    "A bundle of assets allows to package assets into a single archive that can be downloaded into the game at a specific time.",
+                    "\/D:\/repos\/rr\/source\/manual\/engine\/assets\/asset-bundles.md",
+                    {
+                        "id": "tu3"
+                    }
+                ],
+                [
+                    "It allows creation of <g1>Downloadable Content (DLC)<\/g1>.",
+                    "",
+                    "It allows creation of <g1>Downloadable Content (DLC)<\/g1>.",
+                    "\/D:\/repos\/rr\/source\/manual\/engine\/assets\/asset-bundles.md",
+                    {
+                        "id": "tu4"
+                    }
+                ],
+                [
+                    "Basic rules:",
+                    "",
+                    "Basic rules:",
+                    "\/D:\/repos\/rr\/source\/manual\/engine\/assets\/asset-bundles.md",
+                    {
+                        "id": "tu5"
+                    }
+                ],
+                [
+                    "A project can generate several bundle.",
+                    "",
+                    "A project can generate several bundle.",
+                    "\/D:\/repos\/rr\/source\/manual\/engine\/assets\/asset-bundles.md",
+                    {
+                        "id": "tu6"
+                    }
+                ],
+                [
+                    "A bundle is created from several <g1>assets selectors<\/g1>  (Currently, only the <g2>PathSelector<\/g2> and <g3>TagSelector<\/g3> are supported)",
+                    "",
+                    "A bundle is created from several <g1>assets selectors<\/g1>  (Currently, only the <g2>PathSelector<\/g2> and <g3>TagSelector<\/g3> are supported)",
+                    "\/D:\/repos\/rr\/source\/manual\/engine\/assets\/asset-bundles.md",
+                    {
+                        "id": "tu7"
+                    }
+                ],
+                [
+                    "A bundle can have dependencies to others bundles",
+                    "",
+                    "A bundle can have dependencies to others bundles",
+                    "\/D:\/repos\/rr\/source\/manual\/engine\/assets\/asset-bundles.md",
+                    {
+                        "id": "tu8"
+                    }
+                ],
+                [
+                    "Every bundle implicitly references <g1>default<\/g1> bundle, where every asset which shouldn't go in a specific bundle will be packaged",
+                    "",
+                    "Every bundle implicitly references <g1>default<\/g1> bundle, where every asset which shouldn't go in a specific bundle will be packaged",
+                    "\/D:\/repos\/rr\/source\/manual\/engine\/assets\/asset-bundles.md",
+                    {
+                        "id": "tu9"
+                    }
+                ],
+                [
+                    "Once a bundle is deployed into the game, all assets from this bundle and all its dependencies are accessible",
+                    "",
+                    "Once a bundle is deployed into the game, all assets from this bundle and all its dependencies are accessible",
+                    "\/D:\/repos\/rr\/source\/manual\/engine\/assets\/asset-bundles.md",
+                    {
+                        "id": "tu10"
+                    }
+                ],
+                [
+                    "Bundle resolution is done through an asynchronous callback that allows you to download bundle, and will be called once per dependency (similar to AssemblyResolve event).",
+                    "",
+                    "Bundle resolution is done through an asynchronous callback that allows you to download bundle, and will be called once per dependency (similar to AssemblyResolve event).",
+                    "\/D:\/repos\/rr\/source\/manual\/engine\/assets\/asset-bundles.md",
+                    {
+                        "id": "tu11"
+                    }
+                ],
+                [
+                    "Create a bundle",
+                    "",
+                    "Create a bundle",
+                    "\/D:\/repos\/rr\/source\/manual\/engine\/assets\/asset-bundles.md",
+                    {
+                        "id": "tu12"
+                    }
+                ],
+                [
+                    "<x1\/>!Note<x2\/>",
+                    "",
+                    "<x1\/>!Note<x2\/>\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/engine\/assets\/asset-bundles.md",
+                    {
+                        "id": "tu13"
+                    }
+                ],
+                [
+                    "Creating currently requires some manual steps (i.e. editing <g1>sdpkg<\/g1> by hand).",
+                    "",
+                    "Creating currently requires some manual steps (i.e. editing <g1>sdpkg<\/g1> by hand).",
+                    "\/D:\/repos\/rr\/source\/manual\/engine\/assets\/asset-bundles.md",
+                    {
+                        "id": "tu13"
+                    }
+                ],
+                [
+                    "Open the <g1>sdprj<\/g1> file of the game executable and add the following configuration:",
+                    "",
+                    "Open the <g1>sdprj<\/g1> file of the game executable and add the following configuration:",
+                    "\/D:\/repos\/rr\/source\/manual\/engine\/assets\/asset-bundles.md",
+                    {
+                        "id": "tu14"
+                    }
+                ],
+                [
+                    "Example:",
+                    "",
+                    "Example:",
+                    "\/D:\/repos\/rr\/source\/manual\/engine\/assets\/asset-bundles.md",
+                    {
+                        "id": "tu15"
+                    }
+                ],
+                [
+                    "A bundle named <g1>MyBundleName<\/g1> will embed assets with tags <g2>MyTag1<\/g2> and <g3>MyTag2<\/g3>",
+                    "",
+                    "A bundle named <g1>MyBundleName<\/g1> will embed assets with tags <g2>MyTag1<\/g2> and <g3>MyTag2<\/g3>",
+                    "\/D:\/repos\/rr\/source\/manual\/engine\/assets\/asset-bundles.md",
+                    {
+                        "id": "tu16"
+                    }
+                ],
+                [
+                    "A bundle named <g1>MyBundleName2<\/g1> will embed assets with tags <g2>MyTag3<\/g2> and <g3>MyTag4<\/g3>.",
+                    "",
+                    "A bundle named <g1>MyBundleName2<\/g1> will embed assets with tags <g2>MyTag3<\/g2> and <g3>MyTag4<\/g3>.",
+                    "\/D:\/repos\/rr\/source\/manual\/engine\/assets\/asset-bundles.md",
+                    {
+                        "id": "tu17"
+                    }
+                ],
+                [
+                    "This bundle has a dependency to <g4>MyBundleName<\/g4>",
+                    "",
+                    " This bundle has a dependency to <g4>MyBundleName<\/g4>",
+                    "\/D:\/repos\/rr\/source\/manual\/engine\/assets\/asset-bundles.md",
+                    {
+                        "id": "tu17"
+                    }
+                ],
+                [
+                    "There is also a <g1>PathSelector<\/g1> which follow the <g2>.gitignore<\/g2> filtering convention.",
+                    "",
+                    "There is also a <g1>PathSelector<\/g1> which follow the <g2>.gitignore<\/g2> filtering convention.",
+                    "\/D:\/repos\/rr\/source\/manual\/engine\/assets\/asset-bundles.md",
+                    {
+                        "id": "tu18"
+                    }
+                ],
+                [
+                    "Bundles:",
+                    "",
+                    "Bundles:\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/engine\/assets\/asset-bundles.md",
+                    {
+                        "id": "tu19"
+                    }
+                ],
+                [
+                    "- Name:",
+                    "",
+                    " - Name:",
+                    "\/D:\/repos\/rr\/source\/manual\/engine\/assets\/asset-bundles.md",
+                    {
+                        "id": "tu19"
+                    }
+                ],
+                [
+                    "MyBundleName",
+                    "",
+                    " MyBundleName\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/engine\/assets\/asset-bundles.md",
+                    {
+                        "id": "tu19"
+                    }
+                ],
+                [
+                    "Selectors:",
+                    "",
+                    "   Selectors:\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/engine\/assets\/asset-bundles.md",
+                    {
+                        "id": "tu19"
+                    }
+                ],
+                [
+                    "- !TagSelector",
+                    "",
+                    "    - !TagSelector\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/engine\/assets\/asset-bundles.md",
+                    {
+                        "id": "tu19"
+                    }
+                ],
+                [
+                    "Tags:",
+                    "",
+                    "      Tags:",
+                    "\/D:\/repos\/rr\/source\/manual\/engine\/assets\/asset-bundles.md",
+                    {
+                        "id": "tu19"
+                    }
+                ],
+                [
+                    "- MyTag1",
+                    "",
+                    " \r\n        - MyTag1\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/engine\/assets\/asset-bundles.md",
+                    {
+                        "id": "tu19"
+                    }
+                ],
+                [
+                    "- MyTag2",
+                    "",
+                    "        - MyTag2\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/engine\/assets\/asset-bundles.md",
+                    {
+                        "id": "tu19"
+                    }
+                ],
+                [
+                    "- Name:",
+                    "",
+                    " - Name:",
+                    "\/D:\/repos\/rr\/source\/manual\/engine\/assets\/asset-bundles.md",
+                    {
+                        "id": "tu19"
+                    }
+                ],
+                [
+                    "MyBundleName2",
+                    "",
+                    " MyBundleName2\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/engine\/assets\/asset-bundles.md",
+                    {
+                        "id": "tu19"
+                    }
+                ],
+                [
+                    "Dependencies:",
+                    "",
+                    "   Dependencies:\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/engine\/assets\/asset-bundles.md",
+                    {
+                        "id": "tu19"
+                    }
+                ],
+                [
+                    "- MyBundleName",
+                    "",
+                    "    - MyBundleName\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/engine\/assets\/asset-bundles.md",
+                    {
+                        "id": "tu19"
+                    }
+                ],
+                [
+                    "Selectors:",
+                    "",
+                    "   Selectors:\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/engine\/assets\/asset-bundles.md",
+                    {
+                        "id": "tu19"
+                    }
+                ],
+                [
+                    "- !TagSelector",
+                    "",
+                    "    - !TagSelector\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/engine\/assets\/asset-bundles.md",
+                    {
+                        "id": "tu19"
+                    }
+                ],
+                [
+                    "Tags:",
+                    "",
+                    "      Tags:",
+                    "\/D:\/repos\/rr\/source\/manual\/engine\/assets\/asset-bundles.md",
+                    {
+                        "id": "tu19"
+                    }
+                ],
+                [
+                    "- MyTag3",
+                    "",
+                    " \r\n        - MyTag3\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/engine\/assets\/asset-bundles.md",
+                    {
+                        "id": "tu19"
+                    }
+                ],
+                [
+                    "- MyTag4",
+                    "",
+                    "        - MyTag4\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/engine\/assets\/asset-bundles.md",
+                    {
+                        "id": "tu19"
+                    }
+                ],
+                [
+                    "- !PathSelector",
+                    "",
+                    "    - !PathSelector\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/engine\/assets\/asset-bundles.md",
+                    {
+                        "id": "tu19"
+                    }
+                ],
+                [
+                    "Paths:",
+                    "",
+                    "      Paths:\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/engine\/assets\/asset-bundles.md",
+                    {
+                        "id": "tu19"
+                    }
+                ],
+                [
+                    "- folder1\/",
+                    "",
+                    "        - folder1\/\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/engine\/assets\/asset-bundles.md",
+                    {
+                        "id": "tu19"
+                    }
+                ],
+                [
+                    "- \/folder2\/",
+                    "",
+                    "        - \/folder2\/\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/engine\/assets\/asset-bundles.md",
+                    {
+                        "id": "tu19"
+                    }
+                ],
+                [
+                    "- *.bin",
+                    "",
+                    "        - *.bin\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/engine\/assets\/asset-bundles.md",
+                    {
+                        "id": "tu19"
+                    }
+                ],
+                [
+                    "- folder3\/*.xml",
+                    "",
+                    "        - folder3\/*.xml\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/engine\/assets\/asset-bundles.md",
+                    {
+                        "id": "tu19"
+                    }
+                ],
+                [
+                    "<x1\/>!Note<x2\/>",
+                    "",
+                    "<x1\/>!Note<x2\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/engine\/assets\/asset-bundles.md",
+                    {
+                        "id": "tu20"
+                    }
+                ],
+                [
+                    "Asset dependencies are automatically placed in the most appropriate bundle.",
+                    "",
+                    "Asset dependencies are automatically placed in the most appropriate bundle.",
+                    "\/D:\/repos\/rr\/source\/manual\/engine\/assets\/asset-bundles.md",
+                    {
+                        "id": "tu21"
+                    }
+                ],
+                [
+                    "Current process works that way:",
+                    "",
+                    "Current process works that way:",
+                    "\/D:\/repos\/rr\/source\/manual\/engine\/assets\/asset-bundles.md",
+                    {
+                        "id": "tu22"
+                    }
+                ],
+                [
+                    "Find assets that matches specific Tag Selectors (\"roots\" of bundle assets).",
+                    "",
+                    "Find assets that matches specific Tag Selectors (\"roots\" of bundle assets).",
+                    "\/D:\/repos\/rr\/source\/manual\/engine\/assets\/asset-bundles.md",
+                    {
+                        "id": "tu23"
+                    }
+                ],
+                [
+                    "Enumerate assets that are dependent on those \"roots\" bundle assets and put them in the same bundle than their \"roots\" asset.",
+                    "",
+                    "Enumerate assets that are dependent on those \"roots\" bundle assets and put them in the same bundle than their \"roots\" asset.",
+                    "\/D:\/repos\/rr\/source\/manual\/engine\/assets\/asset-bundles.md",
+                    {
+                        "id": "tu24"
+                    }
+                ],
+                [
+                    "Except if already accessible through one of package dependencies (i.e. a shared dependent package or default package).",
+                    "",
+                    "Except if already accessible through one of package dependencies (i.e. a shared dependent package or default package).",
+                    "\/D:\/repos\/rr\/source\/manual\/engine\/assets\/asset-bundles.md",
+                    {
+                        "id": "tu25"
+                    }
+                ],
+                [
+                    "Place everything else in default bundle.",
+                    "",
+                    "Place everything else in default bundle.",
+                    "\/D:\/repos\/rr\/source\/manual\/engine\/assets\/asset-bundles.md",
+                    {
+                        "id": "tu26"
+                    }
+                ],
+                [
+                    "Note that:",
+                    "",
+                    "Note that:",
+                    "\/D:\/repos\/rr\/source\/manual\/engine\/assets\/asset-bundles.md",
+                    {
+                        "id": "tu27"
+                    }
+                ],
+                [
+                    "Shared assets might be duplicated if not specifically placed in common or default package, but that is intended (i.e. if user wishes to distribute 2 separate DLC that need common assets but need to be self-contained).",
+                    "",
+                    "Shared assets might be duplicated if not specifically placed in common or default package, but that is intended (i.e. if user wishes to distribute 2 separate DLC that need common assets but need to be self-contained).",
+                    "\/D:\/repos\/rr\/source\/manual\/engine\/assets\/asset-bundles.md",
+                    {
+                        "id": "tu28"
+                    }
+                ],
+                [
+                    "Every bundle implicitly depends on default bundle.",
+                    "",
+                    "Every bundle implicitly depends on default bundle.",
+                    "\/D:\/repos\/rr\/source\/manual\/engine\/assets\/asset-bundles.md",
+                    {
+                        "id": "tu29"
+                    }
+                ],
+                [
+                    "Load a bundle at runtime",
+                    "",
+                    "Load a bundle at runtime",
+                    "\/D:\/repos\/rr\/source\/manual\/engine\/assets\/asset-bundles.md",
+                    {
+                        "id": "tu30"
+                    }
+                ],
+                [
+                    "Loading bundle is done through <g1>ObjectDatabase.LoadBundle(string bundleName) (ref:{Stride.Core.Storage.ObjectDatabase.LoadBundle})<\/g1>:",
+                    "",
+                    "Loading bundle is done through <g1>ObjectDatabase.LoadBundle(string bundleName) (ref:{Stride.Core.Storage.ObjectDatabase.LoadBundle})<\/g1>:",
+                    "\/D:\/repos\/rr\/source\/manual\/engine\/assets\/asset-bundles.md",
+                    {
+                        "id": "tu31"
+                    }
+                ],
+                [
+                    "\/\/ Load bundle",
+                    "",
+                    "\/\/ Load bundle\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/engine\/assets\/asset-bundles.md",
+                    {
+                        "id": "tu32"
+                    }
+                ],
+                [
+                    "Assets.DatabaseFileProvider.ObjectDatabase.LoadBundle(\"MyBundleName2\");",
+                    "",
+                    "Assets.DatabaseFileProvider.ObjectDatabase.LoadBundle(\"MyBundleName2\");\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/engine\/assets\/asset-bundles.md",
+                    {
+                        "id": "tu32"
+                    }
+                ],
+                [
+                    "\/\/ Load specified asset",
+                    "",
+                    " \r\n\/\/ Load specified asset\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/engine\/assets\/asset-bundles.md",
+                    {
+                        "id": "tu32"
+                    }
+                ],
+                [
+                    "var texture = Assets.Load<Texture2D>(\"AssetContainedInMyBundleName2\");",
+                    "",
+                    "var texture = Assets.Load<Texture2D>(\"AssetContainedInMyBundleName2\");\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/engine\/assets\/asset-bundles.md",
+                    {
+                        "id": "tu32"
+                    }
+                ],
+                [
+                    "Selectors",
+                    "",
+                    "Selectors",
+                    "\/D:\/repos\/rr\/source\/manual\/engine\/assets\/asset-bundles.md",
+                    {
+                        "id": "tu33"
+                    }
+                ],
+                [
+                    "Selectors help deciding which assets are stored in a specific bundle.",
+                    "",
+                    "Selectors help deciding which assets are stored in a specific bundle.",
+                    "\/D:\/repos\/rr\/source\/manual\/engine\/assets\/asset-bundles.md",
+                    {
+                        "id": "tu34"
+                    }
+                ],
+                [
+                    "Tag selector",
+                    "",
+                    "Tag selector",
+                    "\/D:\/repos\/rr\/source\/manual\/engine\/assets\/asset-bundles.md",
+                    {
+                        "id": "tu35"
+                    }
+                ],
+                [
+                    "Select assets based on a list of tag attached on each asset.",
+                    "",
+                    "Select assets based on a list of tag attached on each asset.",
+                    "\/D:\/repos\/rr\/source\/manual\/engine\/assets\/asset-bundles.md",
+                    {
+                        "id": "tu36"
+                    }
+                ],
+                [
+                    "Properties:",
+                    "",
+                    "Properties:",
+                    "\/D:\/repos\/rr\/source\/manual\/engine\/assets\/asset-bundles.md",
+                    {
+                        "id": "tu37"
+                    }
+                ],
+                [
+                    "Tags:",
+                    "",
+                    "Tags:",
+                    "\/D:\/repos\/rr\/source\/manual\/engine\/assets\/asset-bundles.md",
+                    {
+                        "id": "tu38"
+                    }
+                ],
+                [
+                    "List of Tags.",
+                    "",
+                    " List of Tags.",
+                    "\/D:\/repos\/rr\/source\/manual\/engine\/assets\/asset-bundles.md",
+                    {
+                        "id": "tu38"
+                    }
+                ],
+                [
+                    "Any asset that contains at least one of the tag will be included.",
+                    "",
+                    " Any asset that contains at least one of the tag will be included.",
+                    "\/D:\/repos\/rr\/source\/manual\/engine\/assets\/asset-bundles.md",
+                    {
+                        "id": "tu38"
+                    }
+                ],
+                [
+                    "Path selector",
+                    "",
+                    "Path selector",
+                    "\/D:\/repos\/rr\/source\/manual\/engine\/assets\/asset-bundles.md",
+                    {
+                        "id": "tu39"
+                    }
+                ],
+                [
+                    "Select assets based on their path.",
+                    "",
+                    "Select assets based on their path.",
+                    "\/D:\/repos\/rr\/source\/manual\/engine\/assets\/asset-bundles.md",
+                    {
+                        "id": "tu40"
+                    }
+                ],
+                [
+                    "Standard .gitignore patterns are supported (except !",
+                    "",
+                    "Standard .gitignore patterns are supported (except !",
+                    "\/D:\/repos\/rr\/source\/manual\/engine\/assets\/asset-bundles.md",
+                    {
+                        "id": "tu41"
+                    }
+                ],
+                [
+                    "(negate), # (comments) and \\[0-9\\] (groups)).",
+                    "",
+                    " (negate), # (comments) and \\[0-9\\] (groups)).",
+                    "\/D:\/repos\/rr\/source\/manual\/engine\/assets\/asset-bundles.md",
+                    {
+                        "id": "tu41"
+                    }
+                ],
+                [
+                    "Properties:",
+                    "",
+                    "Properties:",
+                    "\/D:\/repos\/rr\/source\/manual\/engine\/assets\/asset-bundles.md",
+                    {
+                        "id": "tu42"
+                    }
+                ],
+                [
+                    "Paths:",
+                    "",
+                    "Paths:",
+                    "\/D:\/repos\/rr\/source\/manual\/engine\/assets\/asset-bundles.md",
+                    {
+                        "id": "tu43"
+                    }
+                ],
+                [
+                    "List of filters.",
+                    "",
+                    " List of filters.",
+                    "\/D:\/repos\/rr\/source\/manual\/engine\/assets\/asset-bundles.md",
+                    {
+                        "id": "tu43"
+                    }
+                ],
+                [
+                    "Any asset whose URL matches one of the filter will be included.",
+                    "",
+                    " Any asset whose URL matches one of the filter will be included.",
+                    "\/D:\/repos\/rr\/source\/manual\/engine\/assets\/asset-bundles.md",
+                    {
+                        "id": "tu43"
+                    }
+                ]
+            ]
+        }
+    ],
+    "seg_enabled": false
+}

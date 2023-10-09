@@ -1,0 +1,217 @@
+{
+    "filename": "manual\\audio\\set-an-audio-device.md.xlf",
+    "files": [
+        {
+            "\/D:\/repos\/rr\/source\/manual\/audio\/set-an-audio-device.md": [
+                [
+                    "Set an audio device",
+                    "",
+                    "Set an audio device",
+                    "\/D:\/repos\/rr\/source\/manual\/audio\/set-an-audio-device.md",
+                    {
+                        "id": "tu1"
+                    }
+                ],
+                [
+                    "<x1\/>Advanced<x2\/>",
+                    "",
+                    "<x1\/>Advanced<x2\/>\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/audio\/set-an-audio-device.md",
+                    {
+                        "id": "tu2"
+                    }
+                ],
+                [
+                    "<x3\/>Programmer<x4\/>",
+                    "",
+                    "<x3\/>Programmer<x4\/>",
+                    "\/D:\/repos\/rr\/source\/manual\/audio\/set-an-audio-device.md",
+                    {
+                        "id": "tu2"
+                    }
+                ],
+                [
+                    "You can set which audio device Stride uses.",
+                    "",
+                    "You can set which audio device Stride uses.",
+                    "\/D:\/repos\/rr\/source\/manual\/audio\/set-an-audio-device.md",
+                    {
+                        "id": "tu3"
+                    }
+                ],
+                [
+                    "For example, you can access the <g1>Oculus Rift<\/g1> audio device from your custom game constructor.",
+                    "",
+                    " For example, you can access the <g1>Oculus Rift<\/g1> audio device from your custom game constructor.",
+                    "\/D:\/repos\/rr\/source\/manual\/audio\/set-an-audio-device.md",
+                    {
+                        "id": "tu3"
+                    }
+                ],
+                [
+                    "If you don't specify a device, Stride uses the default audio advice.",
+                    "",
+                    "If you don't specify a device, Stride uses the default audio advice.",
+                    "\/D:\/repos\/rr\/source\/manual\/audio\/set-an-audio-device.md",
+                    {
+                        "id": "tu4"
+                    }
+                ],
+                [
+                    "Example code",
+                    "",
+                    "Example code",
+                    "\/D:\/repos\/rr\/source\/manual\/audio\/set-an-audio-device.md",
+                    {
+                        "id": "tu5"
+                    }
+                ],
+                [
+                    "This code sets the Oculus Rift device at runtime:",
+                    "",
+                    "This code sets the Oculus Rift device at runtime:",
+                    "\/D:\/repos\/rr\/source\/manual\/audio\/set-an-audio-device.md",
+                    {
+                        "id": "tu6"
+                    }
+                ],
+                [
+                    "namespace OculusRenderer",
+                    "",
+                    "namespace OculusRenderer\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/audio\/set-an-audio-device.md",
+                    {
+                        "id": "tu7"
+                    }
+                ],
+                [
+                    "{",
+                    "",
+                    "{\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/audio\/set-an-audio-device.md",
+                    {
+                        "id": "tu7"
+                    }
+                ],
+                [
+                    "public class OculusGame :",
+                    "",
+                    "    public class OculusGame :",
+                    "\/D:\/repos\/rr\/source\/manual\/audio\/set-an-audio-device.md",
+                    {
+                        "id": "tu7"
+                    }
+                ],
+                [
+                    "Game",
+                    "",
+                    " Game\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/audio\/set-an-audio-device.md",
+                    {
+                        "id": "tu7"
+                    }
+                ],
+                [
+                    "{",
+                    "",
+                    "    {\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/audio\/set-an-audio-device.md",
+                    {
+                        "id": "tu7"
+                    }
+                ],
+                [
+                    "public OculusGame()",
+                    "",
+                    "        public OculusGame()\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/audio\/set-an-audio-device.md",
+                    {
+                        "id": "tu7"
+                    }
+                ],
+                [
+                    "{",
+                    "",
+                    "        {\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/audio\/set-an-audio-device.md",
+                    {
+                        "id": "tu7"
+                    }
+                ],
+                [
+                    "var deviceName = OculusOvr.GetAudioDeviceFullName();",
+                    "",
+                    "            var deviceName = OculusOvr.GetAudioDeviceFullName();\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/audio\/set-an-audio-device.md",
+                    {
+                        "id": "tu7"
+                    }
+                ],
+                [
+                    "var deviceUuid = new AudioDevice { Name = deviceName };",
+                    "",
+                    "            var deviceUuid = new AudioDevice { Name = deviceName };\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/audio\/set-an-audio-device.md",
+                    {
+                        "id": "tu7"
+                    }
+                ],
+                [
+                    "Audio.RequestedAudioDevice = deviceUuid;",
+                    "",
+                    "            Audio.RequestedAudioDevice = deviceUuid;\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/audio\/set-an-audio-device.md",
+                    {
+                        "id": "tu7"
+                    }
+                ],
+                [
+                    "}",
+                    "",
+                    "        }\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/audio\/set-an-audio-device.md",
+                    {
+                        "id": "tu7"
+                    }
+                ],
+                [
+                    "}",
+                    "",
+                    "    }\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/audio\/set-an-audio-device.md",
+                    {
+                        "id": "tu7"
+                    }
+                ],
+                [
+                    "}",
+                    "",
+                    "}\r\n",
+                    "\/D:\/repos\/rr\/source\/manual\/audio\/set-an-audio-device.md",
+                    {
+                        "id": "tu7"
+                    }
+                ],
+                [
+                    "See also",
+                    "",
+                    "See also",
+                    "\/D:\/repos\/rr\/source\/manual\/audio\/set-an-audio-device.md",
+                    {
+                        "id": "tu8"
+                    }
+                ],
+                [
+                    "Global audio settings",
+                    "",
+                    "<g1>Global audio settings<\/g1>",
+                    "\/D:\/repos\/rr\/source\/manual\/audio\/set-an-audio-device.md",
+                    {
+                        "id": "tu9"
+                    }
+                ]
+            ]
+        }
+    ],
+    "seg_enabled": false
+}

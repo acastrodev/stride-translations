@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" xmlns:okp="okapi-framework:xliff-extensions" its:version="2.0" version="1.2">
+<file datatype="x-text/x-markdown" okp:inputEncoding="UTF-8" original="/D:/repos/rr/source/manual/physics/raycasting.md" source-language="en" target-language="pt">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en">Raycasting</source>
+<target xml:lang="pt">Raycasting</target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Intermediate<x id="2"/>
+<x id="3"/>Programmer<x id="4"/></source>
+<target xml:lang="pt"><x id="1"/>Intermediate<x id="2"/>
+<x id="3"/>Programmer<x id="4"/></target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en"><g id="1">Raycasting</g> traces an invisible line through the scene to find intersecting <g id="2">colliders</g>. This is useful, for example, to check which objects are in a gun's line of fire, or are under the mouse cursor when the user clicks.</source>
+<target xml:lang="pt"><g id="1">Raycasting</g> traces an invisible line through the scene to find intersecting <g id="2">colliders</g>. This is useful, for example, to check which objects are in a gun's line of fire, or are under the mouse cursor when the user clicks.</target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>!Note<x id="2"/>
+Raycasting uses <g id="3">colliders</g> to calculate intersections. It ignores entities that have no collider component. For more information, see <g id="4">Colliders</g>.</source>
+<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
+Raycasting uses <g id="3">colliders</g> to calculate intersections. It ignores entities that have no collider component. For more information, see <g id="4">Colliders</g>.</target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">To use a raycast, in the current <g id="1">Simulation</g>, use <x id="2"/>Simulation.Raycast<x id="3"/>(xref:Stride.Physics.Simulation.Raycast(Vector3, Vector3, CollisionFilterGroups, CollisionFilterGroupFlags, bool)).</source>
+<target xml:lang="pt">To use a raycast, in the current <g id="1">Simulation</g>, use <x id="2"/>Simulation.Raycast<x id="3"/>(xref:Stride.Physics.Simulation.Raycast(Vector3, Vector3, CollisionFilterGroups, CollisionFilterGroupFlags, bool)).</target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en">For an example of raycasting, see the <g id="1">Physics Sample</g> project included with Stride.</source>
+<target xml:lang="pt">For an example of raycasting, see the <g id="1">Physics Sample</g> project included with Stride.</target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en">Example code</source>
+<target xml:lang="pt">Example code</target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en">This code sends a raycast from the mouse's screen position:</source>
+<target xml:lang="pt">This code sends a raycast from the mouse's screen position:</target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en">public static bool ScreenPositionToWorldPositionRaycast(Vector2 screenPos, CameraComponent camera, Simulation simulation)
+{
+    Matrix invViewProj = Matrix.Invert(camera.ViewProjectionMatrix);
+
+    // Reconstruct the projection-space position in the (-1, +1) range.
+    //    Don't forget that Y is down in screen coordinates, but up in projection space
+    Vector3 sPos;
+    sPos.X = screenPos.X * 2f - 1f;
+    sPos.Y = 1f - screenPos.Y * 2f;
+
+    // Compute the near (start) point for the raycast
+    // It's assumed to have the same projection space (x,y) coordinates and z = 0 (lying on the near plane)
+    // We need to unproject it to world space
+    sPos.Z = 0f;
+    var vectorNear = Vector3.Transform(sPos, invViewProj);
+    vectorNear /= vectorNear.W;
+
+    // Compute the far (end) point for the raycast
+    // It's assumed to have the same projection space (x,y) coordinates and z = 1 (lying on the far plane)
+    // We need to unproject it to world space
+    sPos.Z = 1f;
+    var vectorFar = Vector3.Transform(sPos, invViewProj);
+    vectorFar /= vectorFar.W;
+
+    // Raycast from the point on the near plane to the point on the far plane and get the collision result
+    var result = simulation.Raycast(vectorNear.XYZ(), vectorFar.XYZ());
+    return result.Succeeded;
+}
+</source>
+<target xml:lang="pt">public static bool ScreenPositionToWorldPositionRaycast(Vector2 screenPos, CameraComponent camera, Simulation simulation)
+{
+    Matrix invViewProj = Matrix.Invert(camera.ViewProjectionMatrix);
+
+    // Reconstruct the projection-space position in the (-1, +1) range.
+    //    Don't forget that Y is down in screen coordinates, but up in projection space
+    Vector3 sPos;
+    sPos.X = screenPos.X * 2f - 1f;
+    sPos.Y = 1f - screenPos.Y * 2f;
+
+    // Compute the near (start) point for the raycast
+    // It's assumed to have the same projection space (x,y) coordinates and z = 0 (lying on the near plane)
+    // We need to unproject it to world space
+    sPos.Z = 0f;
+    var vectorNear = Vector3.Transform(sPos, invViewProj);
+    vectorNear /= vectorNear.W;
+
+    // Compute the far (end) point for the raycast
+    // It's assumed to have the same projection space (x,y) coordinates and z = 1 (lying on the far plane)
+    // We need to unproject it to world space
+    sPos.Z = 1f;
+    var vectorFar = Vector3.Transform(sPos, invViewProj);
+    vectorFar /= vectorFar.W;
+
+    // Raycast from the point on the near plane to the point on the far plane and get the collision result
+    var result = simulation.Raycast(vectorNear.XYZ(), vectorFar.XYZ());
+    return result.Succeeded;
+}
+</target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>!Note<x id="2"/>
+There are multiple ways to retrieve a reference to this <g id="3">Simulation</g> from inside one of your <g id="4">ScriptComponent</g>:</source>
+<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
+There are multiple ways to retrieve a reference to this <g id="3">Simulation</g> from inside one of your <g id="4">ScriptComponent</g>:</target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en">The recommended way is through a reference to a physics component, something like <g id="1">myRigidBody.Simulation</g> or <g id="2">myCollision.Simulation</g> as it is the fastest.</source>
+<target xml:lang="pt">The recommended way is through a reference to a physics component, something like <g id="1">myRigidBody.Simulation</g> or <g id="2">myCollision.Simulation</g> as it is the fastest.</target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en">Then through <g id="1">SceneSystem</g> by calling <g id="2">SceneSystem.SceneInstance.GetProcessor&lt;PhysicsProcessor&gt;()?.Simulation</g>.</source>
+<target xml:lang="pt">Then through <g id="1">SceneSystem</g> by calling <g id="2">SceneSystem.SceneInstance.GetProcessor&lt;PhysicsProcessor&gt;()?.Simulation</g>.</target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en">Or through <g id="1">this.GetSimulation()</g>, note that the <g id="2">this</g> is required as it is an extension method.</source>
+<target xml:lang="pt">Or through <g id="1">this.GetSimulation()</g>, note that the <g id="2">this</g> is required as it is an extension method.</target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en">See also</source>
+<target xml:lang="pt">See also</target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en"><g id="1">Colliders</g></source>
+<target xml:lang="pt"><g id="1">Colliders</g></target>
+</trans-unit>
+</body>
+</file>
+</xliff>
