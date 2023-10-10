@@ -1,6 +1,6 @@
 # Documentação do Stride
 
-Bem-vindo à documentação do Stride, especificamente projetada para desenvolvedores de jogos, criadores de conteúdo visual e para todos os usuários do poderoso [motor de jogo Stride](https://www.stride3d.net/). Esta documentação está repleta de tutoriais detalhados, manuais abrangentes e referências detalhadas à API para ajudá-lo a dar vida às suas idéias de desenvolvimento de jogos com o Stride. Esteja você começando no Stride ou buscando aprimorar suas habilidades, você encontrará tudo o que precisa aqui mesmo. Mergulhe fundo e vamos criar algo extraordinário!
+Bem-vindo à documentação do Stride, especificamente projetado para desenvolvedores de jogos, criadores de conteúdo visual e para todos os usuários do poderoso [motor de criação de jogo Stride](https://www.stride3d.net/). Esta documentação está repleta de tutoriais, manuais e referências detalhadas à API para lhe ajudar a dar vida às suas idéias usando o Stride. Esteja você começando no Stride ou buscando aprimorar suas habilidades, você encontrará tudo o que precisa aqui mesmo. Mergulhe fundo e vamos criar algo extraordinário!
 
 > [!Tip]
 > Esta documentação é voltada para os usuários do motor Stride. Se você estiver interessado em contribuir com o código-fonte do motor Stride, siga as [instruções de contribuição do Stride](https://github.com/stride3d/stride).
@@ -10,7 +10,7 @@ Bem-vindo à documentação do Stride, especificamente projetada para desenvolve
         <div class="card h-100">
             <div class="card-body">
                 <h2 class="card-title h5">&amp;#128218; Manual</h2>
-                <p class="card-text">Descubra como construir projetos e concluir tarefas no Stride com nossos tutoriais passo a passo relacionados ao manual.</p>
+                <p class="card-text">Descubra como criar projetos e realizar tarefas no Stride com nossos tutoriais passo a passo relacionados ao manual.</p>
             </div>
             <p class="px-3 mb-4"><a class="stretched-link" href="manual/index.md">Acesse o nosso Manual do Stride</a></p>
         </div>
@@ -19,7 +19,7 @@ Bem-vindo à documentação do Stride, especificamente projetada para desenvolve
         <div class="card h-100">
             <div class="card-body">
                 <h2 class="card-title h5">&amp;#127891; Tutoriais</h2>
-                <p class="card-text">Explore uma variedade de tutoriais para o motor de jogo Stride. Nossos atuais tutoriais incluem: <a href="tutorials/gamestudio/index.md">Game Studio</a>, <a href="tutorials/csharpbeginner/index.md">C# Iniciante</a> e <a href="tutorials/csharpintermediate/index.md">C# Intermediário</a>.</p>
+                <p class="card-text">Explore uma variedade de tutoriais desenvolvidos para o Stride. Nossos tutoriais incluem: <a href="tutorials/gamestudio/index.md">Game Studio</a>, <a href="tutorials/csharpbeginner/index.md">C# Iniciante</a> e <a href="tutorials/csharpintermediate/index.md">C# Intermediário</a>.</p>
             </div>
             <p class="px-3 mb-4"><a class="" href="tutorials/index.md">Navegue pelos Tutoriais do Stride</a></p>
         </div>
@@ -45,4 +45,4 @@ Bem-vindo à documentação do Stride, especificamente projetada para desenvolve
 </div>
 
 > [!Note]
-> Tenha em mente que, enquanto a nossa documentação em inglês é atualizada regularmente, as traduções nem sempre podem estar atualizadas.. Recomendamos que os usuários proficientes em inglês consultem a documentação original para obter as informações mais recentes. Para ajudar com as traduções ou relatar discrepâncias, por favor, consulte o nosso GitHub ou os fóruns da comunidade. Sua contribuição é inestimável!
+> Tenha em mente que, enquanto a nossa documentação em inglês é atualizada regularmente, as traduções podem nem sempre estar atualizadas. Recomendamos que os usuários proficientes em inglês consultem a documentação original para obter as informações mais recentes. Para ajudar com as traduções ou relatar discrepâncias, por favor, consulte o nosso GitHub ou os fóruns da comunidade. Sua contribuição é muito bem-vinda!

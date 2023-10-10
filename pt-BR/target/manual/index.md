@@ -2,10 +2,10 @@
 
 ![Manual](get-started/media/game-editor-scene.jpg)
 
-Estas páginas contêm informações sobre como usar o Stride, um motor de jogo de código aberto em C#.
+Estas páginas contêm informações sobre como usar o Stride, um motor de criação de jogos de código aberto desenvolvido em C#.
 
 > [!Note]
-> O manual do Stride está em construção e é regularmente atualizado com novo conteúdo. Siga o [Stride no X](https://twitter.com/stridedotnet?lang=en) para atualizações na documentação.
+> O manual do Stride está em construção e é regularmente atualizado com novo conteúdo. Siga o [Stride no X](https://twitter.com/stridedotnet?lang=en) para ficar por dentro das atualizações na documentação.
 
 ## Documentação mais recente
 
@@ -26,6 +26,6 @@ Estas páginas contêm informações sobre como usar o Stride, um motor de jogo 
 
 ## Melhore esta documentação
 
-A documentação do Stride é de código aberto, então qualquer pessoa pode editá-la. Se você encontrar um erro, pode corrigi-lo ou comentar no [GitHub](https://github.com/stride3d/stride-docs).
+A documentação do Stride é de código aberto e qualquer pessoa pode editá-la. Se você, por acaso, encontrar algum erro, pode corrigi-lo ou deixar um comentário no [GitHub](https://github.com/stride3d/stride-docs).
 
 Para editar qualquer página deste manual, no final, clique no link **Editar esta página**. Por favor, certifique-se de seguir as [diretrizes de escrita](https://github.com/stride3d/stride-docs/wiki).
