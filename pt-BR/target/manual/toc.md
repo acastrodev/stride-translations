@@ -44,7 +44,7 @@
 ### [Receptores de áudio](audio/audio-listeners.md)
 ### [HRTF](audio/hrtf.md)
 ## [Transmitir áudio](audio/stream-audio.md)
-## [Configurações de áudio globais](audio/global-audio-settings.md)
+## [Configurações globais de áudio](audio/global-audio-settings.md)
 ## [Reproduzir uma faixa dentro de um arquivo de áudio](audio/play-a-range-within-an-audio-file.md)
 ## [Dados de áudio personalizados](audio/custom-audio-data.md)
 ## [Configurar um dispositivo de áudio](audio/set-an-audio-device.md)

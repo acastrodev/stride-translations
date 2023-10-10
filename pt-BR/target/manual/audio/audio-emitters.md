@@ -48,7 +48,7 @@ O tom e o volume do som mudam à medida que o [receptor de áudio](audio-listene
 | Propriedade | Descrição |
 |--------------------|-------------
 | Usar HRTF | Habilite a função de transferência relacionada à cabeça (HRTF). Com essa funcionalidade habilitada, os sons parecem vir de um ponto específico no espaço 3D, sintetizando áudio binaural. Para mais informações, consulte [HRTF](hrtf.md). |
-| Fator direcional | O quão direcional o áudio é, de 0 (mínimo) a 1 (máximo). Se definido como 0, o áudio é emitido de todas as direções. Você pode ajustar o fator direcional usando o controle deslizante ou inserindo um valor numérico. |
+| Fator direcional | Determina o quão direcional é o áudio, de 0 (mínimo) a 1 (máximo). Se definido como 0, o áudio é emitido de todas as direções. Você pode ajustar o fator direcional usando o controle deslizante ou inserindo um valor numérico. |
 | Ambiente | O tipo de reverberação para o áudio, simulando a reverberação de ambientes reais (pequeno, médio, grande ou ao ar livre). |
 
 ## 2. Criar um script para reproduzir o áudio
