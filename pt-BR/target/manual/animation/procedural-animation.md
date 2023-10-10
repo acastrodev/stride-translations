@@ -1,56 +1,56 @@
-# Procedural animation
+# Animação procedural
 
-<span class="badge text-bg-primary">Intermediate</span>
-<span class="badge text-bg-success">Programmer</span>
+<span class="badge text-bg-primary">Intermediário</span>
+<span class="badge text-bg-success">Programação</span>
 
-**Procedural animation** is an alternative method of animation. Instead of creating animations yourself, you can use engine components to animate 3D models at runtime.
+A **animação procedural** é um método alternativo de animação. Em vez de criar animações manualmente, você pode usar componentes do motor para animar modelos 3D em tempo de execução.
 
-In some cases, this creates more effective and efficient animations. For example, imagine a shrink effect that happens when the player shoots a monster with a shrink weapon. Instead of creating a complex shrinking animation, you can access the entity [TransformComponent](xref:Stride.Engine.TransformComponent) and simply scale the enemy down to the required size.
+Em alguns casos, isso resulta em animações mais eficazes e eficientes. Por exemplo, imagine um efeito de encolhimento que ocorre quando o jogador atira em um monstro com uma arma de encolhimento. Em vez de criar uma animação de encolhimento complexa, você pode acessar o [TransformComponent](xref:Stride.Engine.TransformComponent) da entidade e simplesmente dimensionar o inimigo até o tamanho necessário.
 
-The animation can animate a wide variety of components besides Skeleton bones, including:
+A animação pode abranger uma ampla variedade de componentes além dos ossos do esqueleto, incluindo:
 
 * [TransformComponent](xref:Stride.Engine.TransformComponent)
 * [LightComponent](xref:Stride.Engine.LightComponent)
 * [RigidBodyComponent](xref:Stride.Physics.RigidbodyComponent)
-* [Custom components](xref:Stride.Engine.EntityComponent)
+* [Componentes personalizados](xref:Stride.Engine.EntityComponent)
 
-Stride's animation system works just like Blender or Maya's curve animation editor. Each bone/value is assigned a [curve](xref:Stride.Animations.AnimationCurve) composed of several [points](xref:Stride.Animations.KeyFrameData`1) that are interpolated either in linear, cubic or constant fashion.
+O sistema de animação do Stride funciona da mesma maneira que o editor de animação de curvas do Blender ou do Maya. Cada osso/valor é atribuído a uma [curva](xref:Stride.Animations.AnimationCurve) composta por vários [pontos](xref:Stride.Animations.KeyFrameData`1) que são interpolados de forma linear, cúbica ou constante.
 
-## Code samples
+## Exemplo de código
 
-### Transform component
+### Componente de transformação
 
 ```cs
 public class AnimationScript : StartupScript
 {
     public override void Start()
     {
-        // Create an AnimationClip. Make sure you set its duration properly.
+        // Cria um AnimationClip. Certifique-se de definir sua duração corretamente.
         var animationClip = new AnimationClip { Duration = TimeSpan.FromSeconds(1) };
 
-        // Add a curves specifying the path to the transformation property.
-        // - You can index components using a special syntax to their key.
-        // - Properties can be qualified with a type name in parenthesis.
-        // - If a type isn't serializable, its fully qualified name must be used.
+        // Adicione curvas especificando o caminho para a propriedade de transformação.
+        // - Você pode indexar componentes usando uma sintaxe especial para suas chaves.
+        // - As propriedades podem ser qualificadas com o nome do tipo entre parênteses.
+        // - Se um tipo não for serializável, deve ser usado o nome completo qualificado dele.
 
         animationClip.AddCurve("[TransformComponent.Key].Rotation", CreateRotationCurve());
 
-        // Optional: pack all animation channels into an optimized interleaved format.
+        // Opcional: compacte todos os canais de animação em um formato otimizado intercalado.
         animationClip.Optimize();
 
-        // Add an AnimationComponent to the current entity and register our custom clip.
+        / Adiciona um AnimationComponent à entidade atual e registra nosso clipe personalizado.
         const string animationName = "MyCustomAnimation";
         var animationComponent = Entity.GetOrCreate<AnimationComponent>();
         animationComponent.Animations.Add(animationName, animationClip);
 
-        // Play the animation right away and loop it.
+        // Inicia imediatamente a animação em loop.
         var playingAnimation = animationComponent.Play(animationName);
         playingAnimation.RepeatMode = AnimationRepeatMode.LoopInfinite;
-        playingAnimation.TimeFactor = 0.1f; // slow down
-        playingAnimation.CurrentTime = TimeSpan.FromSeconds(0.6f); // start at different time
+        playingAnimation.TimeFactor = 0.1f; // desacelera
+        playingAnimation.CurrentTime = TimeSpan.FromSeconds(0.6f); // Inicia em momentos diferentes
     }
 
-    // Set custom linear rotation curve.
+    // Define uma curva de rotação linear personalizada.
     private AnimationCurve CreateRotationCurve()
     {
         return new AnimationCurve<Quaternion>
@@ -75,28 +75,28 @@ public class AnimationScript : StartupScript
 ```
 
 
-### Light component's color
+### Cor do componente de luz
 
 ```csharp
 public class AnimationLight : StartupScript
 {
     public override void Start()
     {
-        // Our entity should have a light component
+        // Nossa entidade deve ter um componente de luz
         var lightC = Entity.Get<LightComponent>();
 
-        // Create an AnimationClip and store unserializable types. Make sure you set its duration properly.
+        // Cria um AnimationClip e armazena os tipos não serializáveis. Certifique-se de a duração corretamente.
         var clip = new AnimationClip { Duration = TimeSpan.FromSeconds(1) };
         var colorLightBaseName = typeof(ColorLightBase).AssemblyQualifiedName;
         var colorRgbProviderName = typeof(ColorRgbProvider).AssemblyQualifiedName;
 
-        // Point to the path of the color property of the light component
+        // Aponta para o caminho da propriedade de cor do componente de luz
         clip.AddCurve(
             $"[LightComponent.Key].Type.({colorLightBaseName})Color.({colorRgbProviderName})Value", 
             CreateLightColorCurve()
         );
 
-        // Play the animation right away and loop it.
+        // Inicia imediatamente a animação em loop.
         clip.RepeatMode = AnimationRepeatMode.LoopInfinite;
         var animC = Entity.GetOrCreate<AnimationComponent>();
         animC.Animations.Add("LightCurve",clip);
@@ -109,11 +109,11 @@ public class AnimationLight : StartupScript
             InterpolationType = AnimationCurveInterpolationType.Linear,
             KeyFrames =
             {
-                CreateKeyFrame(0.00f, Vector3.UnitX), // Make the first keyframe a red color
+                CreateKeyFrame(0.00f, Vector3.UnitX), // Defina o primeiro quadro-chave com a cor vermelha
 
-                CreateKeyFrame(0.50f, Vector3.UnitZ), // then blue
+                CreateKeyFrame(0.50f, Vector3.UnitZ), // depois azul
 
-                CreateKeyFrame(1.00f, Vector3.UnitX), // then red again
+                CreateKeyFrame(1.00f, Vector3.UnitX), // e vermelho novamente
             }
         };
     }
@@ -125,18 +125,18 @@ public class AnimationLight : StartupScript
 }
 ```
 
-> [!NOTE]
-> If you need to animate a bone procedurally you must use the `NodeTransformations` field of the `Skeleton`.
+> [!Note]
+> Se precisar animar um osso proceduralmente, você deve usar o campo `NodeTransformations` do `Esqueleto`.
 
-## See also
+## Veja também
 
-* [Animation index](index.md)
-* [Import animations](import-animations.md)
-* [Animation properties](animation-properties.md)
-* [Set up animations](set-up-animations.md)
-* [Preview animations](preview-animations.md)
-* [Animation scripts](animation-scripts.md)
-* [Additive animation](additive-animation.md)
-* [Custom blend trees](custom-blend-trees.md)
-* [Model node links](model-node-links.md)
-* [custom attributes](custom-attributes.md)
+* [Índice de animação](index.md)
+* [Importar animações](import-animations.md)
+* [Propriedades de animação](animation-properties.md)
+* [Configurar animações](set-up-animations.md)
+* [Visualizar animações](preview-animations.md)
+* [Scripts de animação](animation-scripts.md)
+* [Animação aditiva](additive-animation.md)
+* [Árvores de transição personalizadas](custom-blend-trees.md)
+* [Links de nó de modelo](model-node-links.md)
+* [Atributos personalizados](custom-attributes.md)

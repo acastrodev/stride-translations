@@ -9,7 +9,7 @@ Para animar um modelo, você precisa usar três tipos de recursos juntos:
 * equeletos
 * animações
 
-Você pode importar esses recursos de arquivos de modelo 3D. Stride oferece suporte aos seguintes tipos de arquivo de modelo 3D: ``.3ds``, ``.blend``, ``.dae``, ``.dxf``, ``.fbx``, ``.md2``, ``.md3``, ``.obj``, ``.x``
+Você pode importar esses recursos de arquivos de modelo 3D. O Stride oferece suporte aos seguintes tipos de arquivo de modelo 3D: ``.3ds``, ``.blend``, ``.dae``, ``.dxf``, ``.fbx``, ``.md2``, ``.md3``, ``.obj``, ``.x``
 
 ## Importar um modelo, esqueleto ou animação de um arquivo de modelo
 
@@ -19,7 +19,7 @@ Você pode importar esses recursos de arquivos de modelo 3D. Stride oferece supo
 
    Alternativamente, no **Visualizador de Recursos**:
 
-   1a. Clique em ![Adicionar recurso](media/create-and-add-assets-add-new-asset-button.png) e selecione **Importar diretamente de arquivos**.
+   1a. Clique em ![Adicionar recurso](media/create-and-add-assets-add-new-asset-button.png) e selecione **Importar diretamente dos arquivos**.
 
    ![Escolher tipo de recurso](media/create-and-add-assets-add-new1.png)
 
@@ -50,7 +50,7 @@ Você pode visualizar e editar suas propriedades no **Editor de Propriedades** (
 Para usar um recurso de animação, adicione um [AnimationComponent](xref:Stride.Engine.AnimationComponent) a uma entidade e, em seguida, adicione o recurso de animação ao componente de animação. Para mais informações, consulte [Configurar animações](set-up-animations.md).
 
 > [!Note]
-> Certifique-se de ajustar corretamente a malha ao esqueleto. Se não fizer isso, você não consiguirá animar seu modelo corretamente.
+> Certifique-se de ajustar corretamente a malha ao esqueleto. Se isso não for feito, você não consiguirá animar seu modelo corretamente.
 
 ## Veja também
 

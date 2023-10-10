@@ -7,32 +7,32 @@ A **animação aditiva** é o processo de combinar animações usando **clipes d
 
 ![Animações aditivas](media/animations-additive-sample.gif)
 
-No exemplo acima, a animação mais à esquerda é a animação de *Caminhar*. A animação mais à direita é a animação *Parado*. As duas animações no centro são, respectivamente, as animações *Caminhar* e *Parado*, mas têm a animação *Recarregar* adicionada a elas.
+No exemplo acima, a animação mais à esquerda é a animação de *Caminhar*. A animação mais à direita é a animação *Parado*. As duas animações no centro são, respectivamente, as animações *Caminhar* e *Parado*, mas com a animação *Recarregar* adicionada a elas.
 
 Isso significa que só precisamos criar três animações: *Caminhar*, *Parado* e *Recarregar*. Além disso, podemos adicionar a animação *Recarregar* a outras possíveis animações (por exemplo, *Agachar*, *Mover-se lateralmente* ou *Correr*). Isso ajuda a manter o consumo de memória e o número de animações em níveis baixos.
 
 ## Clipes de variação
 
-Um **clip de variação** descreve a diferença entre dois clipes de animação: um clipe de **origem** e um clipe de **referência**.
+Um **clipe de variação** descreve a diferença entre dois clipes de animação: um clipe de **origem** e um clipe de **referência**.
 
-Considere a animação *Recarregar* acima, que desejamos adicionar a outros clipes de animação. Este é o nosso clipe de **origem** (O). Como a animação de *Recarregar* envolve principalmente os braços, ela terá uma boa transição com animações que não envolvem os braços, como ficar parado e agachar. Podemos usar uma dessas animações, digamos a animação *Parado*, como nosso clipe de **referência** (R).
+Considere a animação *Recarregar* acima, a qual desejamos adicionar a outros clipes de animação. Este é o nosso clipe de **origem** (O). Como a animação de *Recarregar* envolve principalmente os braços, ela terá uma boa transição com animações que não envolvem os braços, como ficar parado e agachar. Podemos usar uma dessas animações, digamos a animação *Parado*, como nosso clipe de **referência** (R).
 
-O Stride calcula a diferença entre os clipes de origem e de referência para criar o clipe de **variação** (V). O clipe de variação codifica a diferença entre os clipes de origem e de referência. Podemos expressá-lo como V = O - R.
+O Stride calcula a diferença entre os clipes de origem e de referência para criar o clipe de **variação** (V). O clipe de variação codifica a diferença entre os clipes de origem e de referência,  expresso como V = O - R.
 
-Podemos usar o clipe de variação para mesclar as animações de origem e de referência. Também podemos usar o mesmo clipe de variação para mesclar a animação de origem com outras animações.**** Se a animação à qual você a adiciona for parecida o bastante com o clipe de referência original, então as animações se mesclam bem. Essa animação pode ser adicionada a qualquer outra que não utilize os braços, como, por exemplo, a animação de agachar.
+Podemos usar o clipe de variação para combinar as animações de origem e de referência. Também podemos usar o mesmo clipe de variação para mesclar a animação de origem com **outras** animações. Se a animação à qual você a adiciona for suficientemente semelhante ao clipe de referência original, as animações se combinarão harmoniosamente. Essa animação pode ser incorporada a qualquer outra que não envolva o uso dos braços, como, por exemplo, a animação de agachar.
 
 > [!Note]
 > Animações aditivas devem usar a mesma malha articulada e esqueleto.
 
-### Criando um clipe de variação
+### Criar um clipe de variação
 
-1. No **Visualizador de Recursos** (por padrão, na parte inferior), clique em **Adicionar recurso** e selecione **Animações > Animação**. Uma janela de seleção de arquivos é aberta.
+1. No **Visualizador de Recursos** (por padrão, na parte inferior), clique em **Adicionar recurso** e selecione **Animações > Animação**. Uma janela de seleção de arquivos é exibida.
 
 2. Como não precisamos de um arquivo de origem para esta animação, clique em **Cancelar**.
 
    O Game Studio perguntará se você deseja criar uma animação sem um arquivo de origem.
 
-   ![Crie uma animação sem um arquivo de origem](media/create-animation-without-source-file.png)
+   ![Criar uma animação sem um arquivo de origem](media/create-animation-without-source-file.png)
 
 3. Clique em **Sim**. O Game Studio adicionará um novo recurso de animação vazio ao Visualizador de Recursos.
 
@@ -45,27 +45,27 @@ Podemos usar o clipe de variação para mesclar as animações de origem e de re
    ![Escolha o arquivo de origem](media/animations-additive-animations-1.png)
 
    > [!Note]
-   > Certifique-se de adicionar o arquivo que contém a animação (por exemplo, um arquivo de modelo como .fbx), **não** o recurso de animação que a referencia. Arquivos de animação geralmente são salvos na pasta **Resources**
+   > Certifique-se de adicionar o arquivo que contém a animação (por exemplo, um arquivo de modelo como um .fbx), e **não** o recurso de animação que a referencia. Arquivos de animação geralmente são salvos na pasta **Resources**
 
 7. Em **Tipo**, escolha **Clipe de variação**.
 
-8. Em **Referência**, especifique a animação que deseja usar como seu clip de **referência**. Essa é a animação que o Stride referencia para criar um clipe de variação.
+8. Em **Referência**, especifique a animação que deseja usar como seu clip de **referência**. Essa é a animação que o Stride utilizará para criar um clipe de variação.
 
-   ![Escolha o arquivo de referência](media/animations-additive-animations-2.png)
+   ![Selecione o arquivo de referência](media/animations-additive-animations-2.png)
 
 9. Escolha o **Modo** no menu suspenso.
 
-   * A **animação** criará um clip de variação a partir da animação completa de origem, fazendo referência a ela quadro a quadro.
-   * **PrimeiroQuadro** cria um clip de variação apenas a partir do primeiro quadro da animação de origem, como uma pose estática.
+   * A opção **animação** criará um clipe de variação baseado na animação completa de origem, fazendo referência a ela quadro a quadro.
+   * A opção **PrimeiroQuadro** criará um clipe de variação a partir apenas do primeiro quadro da animação de origem, como uma pose estática.
 
-10. Ao lado de **Esqueleto**, especifique um esqueleto para o clip de variação.
+10. Ao lado de **Esqueleto**, especifique um esqueleto para o clipe de variação.
 
    ![Escolha o esqueleto](media/animations-additive-animations-3.png)
 
-   Este deve ser um esqueleto que funcione para todas as animações que você deseja mesclar com o clipe de variação. Na maioria dos casos, você deverá usar o mesmo esqueleto que usou para as animações de origem e referência.
+   Este esqueleto deve ser compatível com todas as animações que você deseja combinar com o clipe de variação. Na maioria dos casos, é aconselhável utilizar o mesmo esqueleto que foi usado nas animações de origem e de referência.
 
-11. Se você deseja [visualizar a animação](preview-animations.md) no Visualizador de Recursos,
-   especifique um **modelo de visualização** adequado para a animação.
+11. Se desejar [visualizar a animação](preview-animations.md) na Visualização de Recursos,
+   certifique-se de especificar um **modelo de visualização** adequado para a animação.
 
    ![Escolha o modo de reprodução](media/animations-additive-animations-4.png)
 
@@ -82,7 +82,7 @@ Você pode usar animações aditivas com animações que usam o mesmo esqueleto 
 
    ![Iniciar animação](media/animations-additive-animations-animation-start.png)
 
-   *AnimationStart* é um script de inicialização que você pode usar para carregar animações em seu modelo, incluindo animações aditivas. Para mais informações, consulte [](animation-scripts.md).
+   *AnimationStart* é um script de inicialização que você pode usar para carregar animações em seu modelo, incluindo animações aditivas. Para mais informações, consulte [Scripts de Animação](animation-scripts.md).
 
 3. Recompile seu projeto para aplicar as alterações.
 
@@ -109,13 +109,13 @@ Você pode usar animações aditivas com animações que usam o mesmo esqueleto 
 
    ![Adicionar uma animação à lista](media/add-animation-to-list.png)
 
-8. Ao lado de **Clip**, especifique a animação de **origem** que você definiu no clipe de variação.
+8. Ao lado de **Clipe**, especifique a animação de **origem** que você definiu no clipe de variação.
 
    ![Especificar origem](media/specify-clip-1.png)
 
 9. Ao lado de **Adicionar às Animações**, clique no ![botão verde](~/manual/game-studio/media/green-plus-icon.png) com o sinal de mais (**Adicionar**).
 
-10. Expanda as propriedades da animação. Ao lado de **Clip**, especifique a animação de **referência** que você definiu no clipe de variação.
+10. Expanda as propriedades da animação. Ao lado de **Clipe**, especifique a animação de **referência** que você definiu no clipe de variação.
 
    ![Especificar origem](media/specify-clip-2.png)
 

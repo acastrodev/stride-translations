@@ -17,27 +17,27 @@ O arquivo de origem usado pelo recurso de animação. Se você alterá-lo, o Gam
 
 Por padrão, a duração do clipe está desativada. Isso significa que a animação começa no quadro 0 e vai até o último quadro-chave registrado no arquivo.
 
-No entanto, às vezes, uma única faixa de animação inclui várias animações. Nestes casos, você deve dividir a faixa. Para isso, ative **Duração do clipe** e ajuste os quadros de **início** e **fim** para corresponder à duração de cada animação.
+No entanto, em alguns casos, uma única faixa de animação pode conter várias animações diferentes. Nessas situações, é necessário dividir a faixa. Para fazer isso, ative a opção **Duração do clipe** e ajuste os quadros de **início** e **fim** para corresponder à duração de cada animação.
 
-Os quadros de início e fim ainda serão limitados pelos quadros-chave exportados no arquivo. Por exemplo, se você originalmente exportou os quadros de 20 a 40 usando a ferramenta de animação, o quadro de início não pode ser inferior a 20 e o quadro de fim não pode ser superior a 40.
+É importante ressaltar que os quadros de início e fim ainda devem estar dentro dos quadros-chave exportados no arquivo. Por exemplo, se originalmente você exportou os quadros de 20 a 40 usando a ferramenta de animação, o quadro de início não pode ser menor que 20 e o quadro de fim não pode ser maior que 40.
 
 Por padrão, o Game Studio assume uma taxa 30 de quadros. Você pode alterar essa configuração nas propriedades do recurso **Configurações do jogo** em **Configurações do editor > Taxa de quadros da animação**.
 
 ## Posição de pivô
 
-O Game Studio assume que o pivô é a origem do sistema de coordenadas local à animação. Deve ser configurado em `(0, 0, 0)`. Se a sua animação estiver deslocada da origem quando for exportada, você pode usar essa propriedade para fazer o ajuste necessário.
+O Game Studio pressupõe que o pivô é a origem do sistema de coordenadas local à animação e  deve ser configurado como `(0, 0, 0)`. Se a sua animação estiver deslocada da origem quando for exportada, você pode utilizar esta propriedade para realizar o ajuste necessário.
 
 ## Escala de importação
 
-A escala de importação deve ser definida como `1`. O Stride detecta as unidades nas quais seus dados foram exportados e faz os ajustes automaticamente. Se não houver configurações de exportação em seu arquivo de animação e a escala parecer incorreta, você pode usar a propriedade de escala de importação para reajustá-la.
+A escala de importação deve ser definida como `1`. O Stride detecta automaticamente as unidades nas quais seus dados foram exportados e faz os ajustes necessários. Caso não haja configurações de exportação no seu arquivo de animação e a escala pareça incorreta, você pode utilizar a propriedade de escala de importação para realizar o reajuste necessário.
 
 ## Modo de repetição
 
-Você pode escolher **Reproduzir Uma Vez**, **Loop Infinito** ou **Reproduzir Uma Vez e Manter**. Isso é apenas uma *dica* para o motor. Quando você vincula um recurso de animação ao modelo, você pode especificar de maneiras diferentes. Se você não especificar o modo posteriormente, o Stride usará o atributo que você definiu aqui por padrão.
+Você pode escolher entre **Reproduzir Uma Vez**, **Loop Infinito** ou **Reproduzir Uma Vez e Manter**. Isso é apenas uma *dica* para o motor. Quando você vincula um recurso de animação ao modelo, você pode especificar de diferentes maneiras. Se você não especificar o modo posteriormente, o Stride usará o atributo que você definiu aqui como padrão.
 
 ## Tipo
 
-O Stride suporta dois tipos de clipes de animação. As animações regulares são definidas como **Clipes de animação** por padrão e são usadas com  linear se forem mescladas. No caso de **Clipe de variação**, existem algumas configurações adicionais. Para mais informações, consulte <g id="2">Animação aditiva</g>.[](additive-animation.md)
+O Stride suporta dois tipos de clipes de animação. As animações regulares são definidas como **Clipes de animação** por padrão e são usadas de forma linear quando mescladas. No caso dos **clipes de variação**, existem algumas configurações adicionais. Para mais informações, consulte <g id="2">Animação aditiva</g>.[](additive-animation.md)
 
 ## Esqueleto
 

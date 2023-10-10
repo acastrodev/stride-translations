@@ -21,7 +21,7 @@
 </trans-unit>
 <trans-unit id="tu5" xml:space="preserve">
 <source xml:lang="en">In the example above, the leftmost animation is the <g id="1">Walk</g> animation. The rightmost animation is the <g id="2">Idle</g> animation. The two animations in the center are the <g id="3">Walk</g> and <g id="4">Idle</g> animations respectively, but have the <g id="5">Reload</g> animation added to them.</source>
-<target xml:lang="pt">No exemplo acima, a animação mais à esquerda é a animação de <g id="1">Caminhar</g>. A animação mais à direita é a animação <g id="2">Parado</g>. As duas animações no centro são, respectivamente, as animações <g id="3">Caminhar</g> e <g id="4">Parado</g>, mas têm a animação <g id="5">Recarregar</g> adicionada a elas.</target>
+<target xml:lang="pt">No exemplo acima, a animação mais à esquerda é a animação de <g id="1">Caminhar</g>. A animação mais à direita é a animação <g id="2">Parado</g>. As duas animações no centro são, respectivamente, as animações <g id="3">Caminhar</g> e <g id="4">Parado</g>, mas com a animação <g id="5">Recarregar</g> adicionada a elas.</target>
 </trans-unit>
 <trans-unit id="tu6" xml:space="preserve">
 <source xml:lang="en">This means we only had to create three animations: <g id="1">Walk</g>, <g id="2">Idle</g>, and <g id="3">Reload</g>. Additionally, we can add the <g id="4">Reload</g> animation to other suitable animations (eg <g id="5">Crouch</g>, <g id="6">Strafe</g> or <g id="7">Run</g>). This helps keep the memory budget and number of animations low.</source>
@@ -33,19 +33,19 @@
 </trans-unit>
 <trans-unit id="tu8" xml:space="preserve">
 <source xml:lang="en">A <g id="1">difference clip</g> describes the difference between two animation clips: a <g id="2">source</g> and a <g id="3">reference</g>.</source>
-<target xml:lang="pt">Um <g id="1">clip de variação</g> descreve a diferença entre dois clipes de animação: um clipe de <g id="2">origem</g> e um clipe de <g id="3">referência</g>.</target>
+<target xml:lang="pt">Um <g id="1">clipe de variação</g> descreve a diferença entre dois clipes de animação: um clipe de <g id="2">origem</g> e um clipe de <g id="3">referência</g>.</target>
 </trans-unit>
 <trans-unit id="tu9" xml:space="preserve">
 <source xml:lang="en">Take the <g id="1">Reload</g> animation above, which we want to add to other animation clips. This is our <g id="2">source</g> clip (S). Because the <g id="3">Reload</g> animation mainly involves the arms, it will blend well with animations that don't involve the arms (such as idling and crouching). We can use one of these animations — let's say the <g id="4">Idle</g> animation — as our <g id="5">reference</g> clip (R).</source>
-<target xml:lang="pt">Considere a animação <g id="1">Recarregar</g> acima, que desejamos adicionar a outros clipes de animação. Este é o nosso clipe de <g id="2">origem</g> (O). Como a animação de <g id="3">Recarregar</g> envolve principalmente os braços, ela terá uma boa transição com animações que não envolvem os braços, como ficar parado e agachar. Podemos usar uma dessas animações, digamos a animação <g id="4">Parado</g>, como nosso clipe de <g id="5">referência</g> (R).</target>
+<target xml:lang="pt">Considere a animação <g id="1">Recarregar</g> acima, a qual desejamos adicionar a outros clipes de animação. Este é o nosso clipe de <g id="2">origem</g> (O). Como a animação de <g id="3">Recarregar</g> envolve principalmente os braços, ela terá uma boa transição com animações que não envolvem os braços, como ficar parado e agachar. Podemos usar uma dessas animações, digamos a animação <g id="4">Parado</g>, como nosso clipe de <g id="5">referência</g> (R).</target>
 </trans-unit>
 <trans-unit id="tu10" xml:space="preserve">
 <source xml:lang="en">Stride calculates the difference between the source and reference clips to create the <g id="1">difference clip</g> (D). The difference clip encodes the difference between the source and reference clips. We can express it as D = S - R.</source>
-<target xml:lang="pt">O Stride calcula a diferença entre os clipes de origem e de referência para criar o clipe de <g id="1">variação</g> (V). O clipe de variação codifica a diferença entre os clipes de origem e de referência. Podemos expressá-lo como V = O - R.</target>
+<target xml:lang="pt">O Stride calcula a diferença entre os clipes de origem e de referência para criar o clipe de <g id="1">variação</g> (V). O clipe de variação codifica a diferença entre os clipes de origem e de referência,  expresso como V = O - R.</target>
 </trans-unit>
 <trans-unit id="tu11" xml:space="preserve">
 <source xml:lang="en">We can use use the difference clip to blend the source and reference animations. We can also use the same difference clip to blend the source animation with <g id="1">other</g> animations. If the animation you add it to is sufficiently similar to the original reference clip, then the animations blend effectively. For example, you could use it to add the reload animation to any animation that doesn't use the arms, such as crouching.</source>
-<target xml:lang="pt">Podemos usar o clipe de variação para mesclar as animações de origem e de referência. Também podemos usar o mesmo clipe de variação para mesclar a animação de origem com outras animações.<g id="1"/> Se a animação à qual você a adiciona for parecida o bastante com o clipe de referência original, então as animações se mesclam bem. Essa animação pode ser adicionada a qualquer outra que não utilize os braços, como, por exemplo, a animação de agachar.</target>
+<target xml:lang="pt">Podemos usar o clipe de variação para combinar as animações de origem e de referência. Também podemos usar o mesmo clipe de variação para mesclar a animação de origem com <g id="1">outras</g> animações. Se a animação à qual você a adiciona for suficientemente semelhante ao clipe de referência original, as animações se combinarão harmoniosamente. Essa animação pode ser incorporada a qualquer outra que não envolva o uso dos braços, como, por exemplo, a animação de agachar.</target>
 </trans-unit>
 <trans-unit id="tu12" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>!Note<x id="2"/>
@@ -55,11 +55,11 @@ Animações aditivas devem usar a mesma malha articulada e esqueleto.</target>
 </trans-unit>
 <trans-unit id="tu13" xml:space="preserve">
 <source xml:lang="en">Create a difference clip</source>
-<target xml:lang="pt">Criando um clipe de variação</target>
+<target xml:lang="pt">Criar um clipe de variação</target>
 </trans-unit>
 <trans-unit id="tu14" xml:space="preserve">
 <source xml:lang="en">In the <g id="1">Asset View</g> (at the bottom by default), click <g id="2">Add asset</g> and select <g id="3">Animations &gt; Animation</g>. A browser dialog opens.</source>
-<target xml:lang="pt">No <g id="1">Visualizador de Recursos</g> (por padrão, na parte inferior), clique em <g id="2">Adicionar recurso</g> e selecione <g id="3">Animações &gt; Animação</g>. Uma janela de seleção de arquivos é aberta.</target>
+<target xml:lang="pt">No <g id="1">Visualizador de Recursos</g> (por padrão, na parte inferior), clique em <g id="2">Adicionar recurso</g> e selecione <g id="3">Animações &gt; Animação</g>. Uma janela de seleção de arquivos é exibida.</target>
 </trans-unit>
 <trans-unit id="tu15" xml:space="preserve">
 <source xml:lang="en">As we don't need a source for this animation, click <g id="1">Cancel</g>.</source>
@@ -71,7 +71,7 @@ Animações aditivas devem usar a mesma malha articulada e esqueleto.</target>
 </trans-unit>
 <trans-unit id="tu17" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Create animation without source file<x id="2"/></source>
-<target xml:lang="pt"><x id="1"/>Crie uma animação sem um arquivo de origem<x id="2"/></target>
+<target xml:lang="pt"><x id="1"/>Criar uma animação sem um arquivo de origem<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu18" xml:space="preserve">
 <source xml:lang="en">Click <g id="1">Yes</g>. Game Studio adds a new empty animation asset to the Asset View.</source>
@@ -97,7 +97,7 @@ Animações aditivas devem usar a mesma malha articulada e esqueleto.</target>
 <source xml:lang="en"><x id="1"/>!Note<x id="2"/>
 Make sure you add the file that contains the animation itself (eg a model file such as .fbx), <g id="3">not</g> the animation asset that references it. Animation files are usually saved in the <g id="4">Resources</g> folder.</source>
 <target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
-Certifique-se de adicionar o arquivo que contém a animação (por exemplo, um arquivo de modelo como .fbx), <g id="3">não</g> o recurso de animação que a referencia. Arquivos de animação geralmente são salvos na pasta <g id="4">Resources</g></target>
+Certifique-se de adicionar o arquivo que contém a animação (por exemplo, um arquivo de modelo como um .fbx), e <g id="3">não</g> o recurso de animação que a referencia. Arquivos de animação geralmente são salvos na pasta <g id="4">Resources</g></target>
 </trans-unit>
 <trans-unit id="tu24" xml:space="preserve">
 <source xml:lang="en">Under <g id="1">Type</g>, choose <g id="2">Difference Clip</g>.</source>
@@ -105,11 +105,11 @@ Certifique-se de adicionar o arquivo que contém a animação (por exemplo, um a
 </trans-unit>
 <trans-unit id="tu25" xml:space="preserve">
 <source xml:lang="en">Under <g id="1">Reference</g>, specify the animation you want to use as your <g id="2">reference clip</g>. This is the animation Stride references to create a difference clip.</source>
-<target xml:lang="pt">Em <g id="1">Referência</g>, especifique a animação que deseja usar como seu clip de <g id="2">referência</g>. Essa é a animação que o Stride referencia para criar um clipe de variação.</target>
+<target xml:lang="pt">Em <g id="1">Referência</g>, especifique a animação que deseja usar como seu clip de <g id="2">referência</g>. Essa é a animação que o Stride utilizará para criar um clipe de variação.</target>
 </trans-unit>
 <trans-unit id="tu26" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Choose reference file<x id="2"/></source>
-<target xml:lang="pt"><x id="1"/>Escolha o arquivo de referência<x id="2"/></target>
+<target xml:lang="pt"><x id="1"/>Selecione o arquivo de referência<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu27" xml:space="preserve">
 <source xml:lang="en">Choose the <g id="1">Mode</g> from the drop-down menu.</source>
@@ -117,15 +117,15 @@ Certifique-se de adicionar o arquivo que contém a animação (por exemplo, um a
 </trans-unit>
 <trans-unit id="tu28" xml:space="preserve">
 <source xml:lang="en"><g id="1">Animation</g> creates a difference clip from the entire source animation, referencing it frame by frame.</source>
-<target xml:lang="pt">A <g id="1">animação</g> criará um clip de variação a partir da animação completa de origem, fazendo referência a ela quadro a quadro.</target>
+<target xml:lang="pt">A opção <g id="1">animação</g> criará um clipe de variação baseado na animação completa de origem, fazendo referência a ela quadro a quadro.</target>
 </trans-unit>
 <trans-unit id="tu29" xml:space="preserve">
 <source xml:lang="en"><g id="1">FirstFrame</g> creates a difference clip from only the first frame of the source animation, as a still pose.</source>
-<target xml:lang="pt"><g id="1">PrimeiroQuadro</g> cria um clip de variação apenas a partir do primeiro quadro da animação de origem, como uma pose estática.</target>
+<target xml:lang="pt">A opção <g id="1">PrimeiroQuadro</g> criará um clipe de variação a partir apenas do primeiro quadro da animação de origem, como uma pose estática.</target>
 </trans-unit>
 <trans-unit id="tu30" xml:space="preserve">
 <source xml:lang="en">Next to <g id="1">Skeleton</g>, specify a skeleton for the difference clip.</source>
-<target xml:lang="pt">Ao lado de <g id="1">Esqueleto</g>, especifique um esqueleto para o clip de variação.</target>
+<target xml:lang="pt">Ao lado de <g id="1">Esqueleto</g>, especifique um esqueleto para o clipe de variação.</target>
 </trans-unit>
 <trans-unit id="tu31" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Choose skeleton<x id="2"/></source>
@@ -133,13 +133,13 @@ Certifique-se de adicionar o arquivo que contém a animação (por exemplo, um a
 </trans-unit>
 <trans-unit id="tu32" xml:space="preserve">
 <source xml:lang="en">This should be a skeleton that works for all the animations you want to blend with the difference clip. In most cases, you should use the same skeleton you used for the source and reference animations.</source>
-<target xml:lang="pt">Este deve ser um esqueleto que funcione para todas as animações que você deseja mesclar com o clipe de variação. Na maioria dos casos, você deverá usar o mesmo esqueleto que usou para as animações de origem e referência.</target>
+<target xml:lang="pt">Este esqueleto deve ser compatível com todas as animações que você deseja combinar com o clipe de variação. Na maioria dos casos, é aconselhável utilizar o mesmo esqueleto que foi usado nas animações de origem e de referência.</target>
 </trans-unit>
 <trans-unit id="tu33" xml:space="preserve">
 <source xml:lang="en">If you want to <g id="1">Preview the animation</g> in the Asset Preview,
 specify a <g id="2">Preview model</g> suitable for the animation.</source>
-<target xml:lang="pt">Se você deseja <g id="1">visualizar a animação</g> no Visualizador de Recursos,
-especifique um <g id="2">modelo de visualização</g> adequado para a animação.</target>
+<target xml:lang="pt">Se desejar <g id="1">visualizar a animação</g> na Visualização de Recursos,
+certifique-se de especificar um <g id="2">modelo de visualização</g> adequado para a animação.</target>
 </trans-unit>
 <trans-unit id="tu34" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Choose play mode<x id="2"/></source>
@@ -173,7 +173,7 @@ A Visualização de Recursos mostra apenas a animação de origem que você espe
 </trans-unit>
 <trans-unit id="tu41" xml:space="preserve">
 <source xml:lang="en"><g id="1">AnimationStart</g> is a startup script you can use to load animations into your model, including additive animations. For more information, see <g id="2">Animation scripts</g>.</source>
-<target xml:lang="pt"><g id="1">AnimationStart</g> é um script de inicialização que você pode usar para carregar animações em seu modelo, incluindo animações aditivas. Para mais informações, consulte <g id="2"/>.</target>
+<target xml:lang="pt"><g id="1">AnimationStart</g> é um script de inicialização que você pode usar para carregar animações em seu modelo, incluindo animações aditivas. Para mais informações, consulte <g id="2">Scripts de Animação</g>.</target>
 </trans-unit>
 <trans-unit id="tu42" xml:space="preserve">
 <source xml:lang="en">Recompile your project to apply the changes.</source>
@@ -227,7 +227,7 @@ Para animar uma entidade, a entidade deve ter um componente do tipo modelo.</tar
 </trans-unit>
 <trans-unit id="tu54" xml:space="preserve">
 <source xml:lang="en">Next to <g id="1">Clip</g>, specify the <g id="2">source</g> animation you set in the difference clip.</source>
-<target xml:lang="pt">Ao lado de <g id="1">Clip</g>, especifique a animação de <g id="2">origem</g> que você definiu no clipe de variação.</target>
+<target xml:lang="pt">Ao lado de <g id="1">Clipe</g>, especifique a animação de <g id="2">origem</g> que você definiu no clipe de variação.</target>
 </trans-unit>
 <trans-unit id="tu55" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Specify source<x id="2"/></source>
@@ -239,7 +239,7 @@ Para animar uma entidade, a entidade deve ter um componente do tipo modelo.</tar
 </trans-unit>
 <trans-unit id="tu57" xml:space="preserve">
 <source xml:lang="en">Expand the animation properties. Next to <g id="1">Clip</g>, specify the <g id="2">reference</g> animation you set in the difference clip.</source>
-<target xml:lang="pt">Expanda as propriedades da animação. Ao lado de <g id="1">Clip</g>, especifique a animação de <g id="2">referência</g> que você definiu no clipe de variação.</target>
+<target xml:lang="pt">Expanda as propriedades da animação. Ao lado de <g id="1">Clipe</g>, especifique a animação de <g id="2">referência</g> que você definiu no clipe de variação.</target>
 </trans-unit>
 <trans-unit id="tu58" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Specify source<x id="2"/></source>

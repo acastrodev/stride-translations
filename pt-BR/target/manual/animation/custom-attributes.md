@@ -10,7 +10,7 @@ Atualmente, você só pode importar atributos **animados**  personalizados. Atri
 
 ## 1. Importar atributos personalizados
 
-1. Importar a animação. Para mais informações, consulte [Importar animações](import-animations.md)
+1. Importe a animação. Para mais informações, consulte [Importar animações](import-animations.md)
 
 2. No **Visualizador de Recursos**, selecione o recurso de animação.
 
@@ -24,9 +24,9 @@ Atualmente, você só pode importar atributos **animados**  personalizados. Atri
 
 ## 2. Controlar atributos personalizados através de um script.
 
-Adicione um script para ler os atributos personalizados e copie seus valores para outra propriedade. Pode ser em um script separado ou fazer parte de outro [script de animação](animation-scripts.md).
+Adicione um script para ler os atributos personalizados e copie os seus valores para outra propriedade. Isso pode ser feito em um script separado ou como parte de outro [script de animação](animation-scripts.md).
 
-Para procurar um atributo, use `NodeName_AttributeName`. Por exemplo, se você tiver o nó `myNode` com o atributo customizado `myAttribute`, use `myNode_myAttribute`.
+Para buscar um atributo, utilize `NodeName_AttributeName`. Por exemplo, se você tiver o nó `myNode` com o atributo personalizado `myAttribute`, utilize `myNode_myAttribute`.
 
 ### Exemplo de script
 
@@ -60,7 +60,7 @@ namespace Sample
             if (animationProcessor == null || MyMaterial == null)
                 return;
 
-            // O resultado da animação pode ser Null se a animação ainda não tiver sido reproduzida.
+            // O resultado da animação pode ser nulo se a animação ainda não tiver sido reproduzida.
             var animResult = animationProcessor.GetAnimationClipResult(animationComponent);
             if (animResult == null)
                 return;

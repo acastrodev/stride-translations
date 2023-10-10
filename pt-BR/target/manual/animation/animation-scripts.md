@@ -24,7 +24,7 @@ As propriedades mais úteis incluem:
 
 ## Use o script pré-definido **AnimationStart**
 
-Stride inclui um script **AnimationStart** pré-definido.
+O Stride inclui um script **AnimationStart** pré-definido.
  Você pode usar este script como um modelo para escrever seus próprios scripts de animação.
 
 Para usar o script **AnimationStart**:
@@ -60,7 +60,7 @@ namespace AdditiveAnimation
 
         private float walkingSpeedLimit = 1.0f;
 
-        // Supondo que o script está anexado a uma entidade que possui um componente de animação
+        // Assumindo que o script está anexado a uma entidade que possui um componente de animação
         private AnimationComponent animationComponent;
 
         public override void Start()

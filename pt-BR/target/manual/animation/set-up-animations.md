@@ -1,96 +1,96 @@
-# Set up animations
+# Configurar animações
 
-<span class="badge text-bg-primary">Beginner</span>
-<span class="badge text-bg-success">Designer</span>
-<span class="badge text-bg-success">Programmer</span>
+<span class="badge text-bg-primary">Iniciante</span>
+<span class="badge text-bg-success">Design</span>
+<x id="3"/>Programação<x id="4"/><span class="badge text-bg-success"></span>
 
-After you [import animation assets](import-animations.md), you need add them to an entity and play them with a script.
+Depois de [importar recursos de animação](import-animations.md), você precisa adicioná-los a uma entidade e reproduzi-los com um script.
 
-## 1. Add animation assets to an entity
+## 1. Adicionar recursos de animação a uma entidade
 
-1. In the **Scene Editor**, select the entity you want to animate.
+1. No **Editor de Cenas**, selecione a entidade que você deseja animar.
 
-   ![Select an entity](media/select-entity.png)
+   ![Selecionar uma entidade](media/select-entity.png)
 
    > [!Note]
-   > To animate an entity, the entity must have a model component.
+   > Para animar uma entidade, a entidade deve ter um componente do tipo modelo.
 
-2. In the **Property Grid**, click **Add component** and choose **Animations**.
+2. No **Editor de Propriedades**, clique em **Adicionar componente** e escolha **Animações**.
 
-   ![Select an entity](media/select-animation-component.png)
+   ![Selecionar uma entidade](media/select-animation-component.png)
 
-   Game Studio adds an animation component to the entity.
+   O Game Studio adicionará um componente de animação à entidade.
 
-3. In the animation component properties, next to **Animations**, click ![Green plus button](~/manual/game-studio/media/green-plus-icon.png) (**Add**) to add a new animation to the library.
+3. Nas propriedades do componente de animação, ao lado de **Animações**, clique no ![botão verde](~/manual/game-studio/media/green-plus-icon.png) com o sinal de mais (**Adicionar**) para adicionar uma nova animação à biblioteca.
 
-4. Type a name for the animation and press Enter.
+4. Digite um nome para a animação e pressione Enter.
 
-   ![Add animation](media/add-animation.png)
+   ![Adicionar animação](media/add-animation.png)
 
    > [!Tip]
-   > When you play animations using scripts later, you use this name, **not** the name of the animation asset. To make identification easy, we recommend you give your animation the same name as the animation asset.
+   > Posteriormente, ao reproduzir animações usando scripts, você utilizará esse nome, **não** o nome do recurso de animação. Para facilitar a identificação, recomendamos que você dê à sua animação o mesmo nome do recurso de animação.
 
-5. Click ![Hand icon](~/manual/game-studio/media/hand-icon.png) (**Select an asset**).
+5. Clique no ![Ícone de mão](~/manual/game-studio/media/hand-icon.png) (**Selecionar um recurso**).
 
-   ![Pick asset up](media/pick-asset-up.png)
+   ![Selecione o recurso](media/pick-asset-up.png)
 
-   The **Select an asset** window opens.
+   A janela **Selecionar um recurso** é exibida.
 
-6. Browse to the animation asset you want to add and click **OK**.
+6. Navegue até o recurso de animação que você deseja adicionar e clique em **OK**.
 
-   ![Select an asset](media/asset-picker.png)
+   ![Selecionar recurso](media/asset-picker.png)
 
-   Game Studio adds the animation asset to the entity.
+   O Game Studio adicionará o recurso de animação à entidade.
 
-   ![Animation asset added](media/animation-asset-added.png)
+   ![Recurso de animação adicionado](media/animation-asset-added.png)
 
-You can add as many animations to the animation component as you need. The Property Grid lists them in alphabetical order.
+Você pode adicionar quantas animações forem necessárias ao componente de animação. O Editor de Propriedades lista as animações em ordem alfabética.
 
-![Animations list](media/animations-list.png)
+![Lista de animações](media/animations-list.png)
 
-## 2. Create a script to play the animations
+## 2. Criar um script para reproduzir as animações
 
-After you add animations to an entity, you need to play them with a [script](../scripts/index.md).
+Após adicionar animações a uma entidade, você precisa reproduzi-las com um [script](../scripts/index.md).
 
-### Example script
+### Exemplo de script
 
 ```cs
     public class SimpleAnimationScript : StartupScript
     {
         public override void Start()
         {
-            Entity.Get<AnimationComponent>().Play("Walk");
+            Entity.Get<AnimationComponent>().Play("Caminhar");
         }
     }
 ```
 
-This script looks for an animation with the name *Walk* under the animation component on the entity.
+Este script procura por uma animação com o nome *Caminhar* sob o componente de animação na entidade.
 
-For more information about creating animation scripts, see [animation scripts](animation-scripts.md).
+Para mais informações sobre a criação de scripts de animação, consulte [Scripts de Animação](animation-scripts.md).
 
-## 3. Add the script to the entity
+## 3. Adicionar o script à entidade
 
-1. In the **Scene Editor**, select the entity you want to animate.
+1. No **Editor de Cenas**, selecione a entidade que você deseja animar.
 
-   ![Select an entity](media/select-entity.png)
+   ![Selecionar uma entidade](media/select-entity.png)
 
-2. In the **Property Grid**, click **Add component** and choose the animation script you want to add.
+2. No **Editor de Propriedades**, clique em **Adicionar componente** e escolha o script de animação que deseja adicionar.
 
-   ![Select an entity](media/add-animation-script-component.png)
+   ![Selecionar uma entidade](media/add-animation-script-component.png)
 
-Game Studio adds the script as a component. You can adjust [public variables you define in the script](../scripts/public-properties-and-fields.md) in the **Property Grid** under the script component properties.
+O Game Studio adicionará o script como um componente. Você pode ajustar as [variáveis públicas que definiu no script](../scripts/public-properties-and-fields.md) no **Editor de Propriedades**, abaixo de propriedades do componente de script.
 
-![Select an entity](media/animations-setup3.png)
+![Selecionar uma entidade](media/animations-setup3.png)
 
-## See also
+## Veja também
 
-* [Animation index](index.md)
-* [Import animations](import-animations.md)
-* [Animation properties](animation-properties.md)
-* [Preview animations](preview-animations.md)
-* [Animation scripts](animation-scripts.md)
-* [Additive animation](additive-animation.md)
-* [Procedural animation](procedural-animation.md)
-* [Custom blend trees](custom-blend-trees.md)
-* [Model node links](model-node-links.md)
-* [custom attributes](custom-attributes.md)
+* [Índice de animação](index.md)
+* [Importar animações](import-animations.md)
+* [Propriedades de animação](animation-properties.md)
+* [Visualizar animações](preview-animations.md)
+* [Scripts de animação](animation-scripts.md)
+* [Animação aditiva](additive-animation.md)
+* [Animação procedural](procedural-animation.md)
+* [Árvores de transição personalizadas](custom-blend-trees.md)
+* [Links de nó de modelo](model-node-links.md)
+* [Atributos personalizados](custom-attributes.md)

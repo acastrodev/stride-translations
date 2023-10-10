@@ -3,25 +3,25 @@
 <body>
 <trans-unit id="tu1" xml:space="preserve">
 <source xml:lang="en">Procedural animation</source>
-<target xml:lang="pt">Procedural animation</target>
+<target xml:lang="pt">Animação procedural</target>
 </trans-unit>
 <trans-unit id="tu2" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Intermediate<x id="2"/>
 <x id="3"/>Programmer<x id="4"/></source>
-<target xml:lang="pt"><x id="1"/>Intermediate<x id="2"/>
-<x id="3"/>Programmer<x id="4"/></target>
+<target xml:lang="pt"><x id="1"/>Intermediário<x id="2"/>
+<x id="3"/>Programação<x id="4"/></target>
 </trans-unit>
 <trans-unit id="tu3" xml:space="preserve">
 <source xml:lang="en"><g id="1">Procedural animation</g> is an alternative method of animation. Instead of creating animations yourself, you can use engine components to animate 3D models at runtime.</source>
-<target xml:lang="pt"><g id="1">Procedural animation</g> is an alternative method of animation. Instead of creating animations yourself, you can use engine components to animate 3D models at runtime.</target>
+<target xml:lang="pt">A <g id="1">animação procedural</g> é um método alternativo de animação. Em vez de criar animações manualmente, você pode usar componentes do motor para animar modelos 3D em tempo de execução.</target>
 </trans-unit>
 <trans-unit id="tu4" xml:space="preserve">
 <source xml:lang="en">In some cases, this creates more effective and efficient animations. For example, imagine a shrink effect that happens when the player shoots a monster with a shrink weapon. Instead of creating a complex shrinking animation, you can access the entity <g id="1">TransformComponent</g> and simply scale the enemy down to the required size.</source>
-<target xml:lang="pt">In some cases, this creates more effective and efficient animations. For example, imagine a shrink effect that happens when the player shoots a monster with a shrink weapon. Instead of creating a complex shrinking animation, you can access the entity <g id="1">TransformComponent</g> and simply scale the enemy down to the required size.</target>
+<target xml:lang="pt">Em alguns casos, isso resulta em animações mais eficazes e eficientes. Por exemplo, imagine um efeito de encolhimento que ocorre quando o jogador atira em um monstro com uma arma de encolhimento. Em vez de criar uma animação de encolhimento complexa, você pode acessar o <g id="1">TransformComponent</g> da entidade e simplesmente dimensionar o inimigo até o tamanho necessário.</target>
 </trans-unit>
 <trans-unit id="tu5" xml:space="preserve">
 <source xml:lang="en">The animation can animate a wide variety of components besides Skeleton bones, including:</source>
-<target xml:lang="pt">The animation can animate a wide variety of components besides Skeleton bones, including:</target>
+<target xml:lang="pt">A animação pode abranger uma ampla variedade de componentes além dos ossos do esqueleto, incluindo:</target>
 </trans-unit>
 <trans-unit id="tu6" xml:space="preserve">
 <source xml:lang="en"><g id="1">TransformComponent</g></source>
@@ -37,19 +37,19 @@
 </trans-unit>
 <trans-unit id="tu9" xml:space="preserve">
 <source xml:lang="en"><g id="1">Custom components</g></source>
-<target xml:lang="pt"><g id="1">Custom components</g></target>
+<target xml:lang="pt"><g id="1">Componentes personalizados</g></target>
 </trans-unit>
 <trans-unit id="tu10" xml:space="preserve">
 <source xml:lang="en">Stride's animation system works just like Blender or Maya's curve animation editor. Each bone/value is assigned a <g id="1">curve</g> composed of several <g id="2">points</g> that are interpolated either in linear, cubic or constant fashion.</source>
-<target xml:lang="pt">Stride's animation system works just like Blender or Maya's curve animation editor. Each bone/value is assigned a <g id="1">curve</g> composed of several <g id="2">points</g> that are interpolated either in linear, cubic or constant fashion.</target>
+<target xml:lang="pt">O sistema de animação do Stride funciona da mesma maneira que o editor de animação de curvas do Blender ou do Maya. Cada osso/valor é atribuído a uma <g id="1">curva</g> composta por vários <g id="2">pontos</g> que são interpolados de forma linear, cúbica ou constante.</target>
 </trans-unit>
 <trans-unit id="tu11" xml:space="preserve">
 <source xml:lang="en">Code samples</source>
-<target xml:lang="pt">Code samples</target>
+<target xml:lang="pt">Exemplo de código</target>
 </trans-unit>
 <trans-unit id="tu12" xml:space="preserve">
 <source xml:lang="en">Transform component</source>
-<target xml:lang="pt">Transform component</target>
+<target xml:lang="pt"><x1/>Componente de transformação<x2/></target>
 </trans-unit>
 <trans-unit id="tu13" xml:space="preserve">
 <source xml:lang="en">public class AnimationScript : StartupScript
@@ -108,32 +108,32 @@
 {
     public override void Start()
     {
-        // Create an AnimationClip. Make sure you set its duration properly.
+        // Cria um AnimationClip. Certifique-se de definir sua duração corretamente.
         var animationClip = new AnimationClip { Duration = TimeSpan.FromSeconds(1) };
 
-        // Add a curves specifying the path to the transformation property.
-        // - You can index components using a special syntax to their key.
-        // - Properties can be qualified with a type name in parenthesis.
-        // - If a type isn't serializable, its fully qualified name must be used.
+        // Adicione curvas especificando o caminho para a propriedade de transformação.
+        // - Você pode indexar componentes usando uma sintaxe especial para suas chaves.
+        // - As propriedades podem ser qualificadas com o nome do tipo entre parênteses.
+        // - Se um tipo não for serializável, deve ser usado o nome completo qualificado dele.
 
         animationClip.AddCurve("[TransformComponent.Key].Rotation", CreateRotationCurve());
 
-        // Optional: pack all animation channels into an optimized interleaved format.
+        // Opcional: compacte todos os canais de animação em um formato otimizado intercalado.
         animationClip.Optimize();
 
-        // Add an AnimationComponent to the current entity and register our custom clip.
+        / Adiciona um AnimationComponent à entidade atual e registra nosso clipe personalizado.
         const string animationName = "MyCustomAnimation";
         var animationComponent = Entity.GetOrCreate&lt;AnimationComponent&gt;();
         animationComponent.Animations.Add(animationName, animationClip);
 
-        // Play the animation right away and loop it.
+        // Inicia imediatamente a animação em loop.
         var playingAnimation = animationComponent.Play(animationName);
         playingAnimation.RepeatMode = AnimationRepeatMode.LoopInfinite;
-        playingAnimation.TimeFactor = 0.1f; // slow down
-        playingAnimation.CurrentTime = TimeSpan.FromSeconds(0.6f); // start at different time
+        playingAnimation.TimeFactor = 0.1f; // desacelera
+        playingAnimation.CurrentTime = TimeSpan.FromSeconds(0.6f); // Inicia em momentos diferentes
     }
 
-    // Set custom linear rotation curve.
+    // Define uma curva de rotação linear personalizada.
     private AnimationCurve CreateRotationCurve()
     {
         return new AnimationCurve&lt;Quaternion&gt;
@@ -159,7 +159,7 @@
 </trans-unit>
 <trans-unit id="tu14" xml:space="preserve">
 <source xml:lang="en">Light component's color</source>
-<target xml:lang="pt">Light component's color</target>
+<target xml:lang="pt">Cor do componente de luz</target>
 </trans-unit>
 <trans-unit id="tu15" xml:space="preserve">
 <source xml:lang="en">public class AnimationLight : StartupScript
@@ -212,21 +212,21 @@
 {
     public override void Start()
     {
-        // Our entity should have a light component
+        // Nossa entidade deve ter um componente de luz
         var lightC = Entity.Get&lt;LightComponent&gt;();
 
-        // Create an AnimationClip and store unserializable types. Make sure you set its duration properly.
+        // Cria um AnimationClip e armazena os tipos não serializáveis. Certifique-se de a duração corretamente.
         var clip = new AnimationClip { Duration = TimeSpan.FromSeconds(1) };
         var colorLightBaseName = typeof(ColorLightBase).AssemblyQualifiedName;
         var colorRgbProviderName = typeof(ColorRgbProvider).AssemblyQualifiedName;
 
-        // Point to the path of the color property of the light component
+        // Aponta para o caminho da propriedade de cor do componente de luz
         clip.AddCurve(
             $"[LightComponent.Key].Type.({colorLightBaseName})Color.({colorRgbProviderName})Value", 
             CreateLightColorCurve()
         );
 
-        // Play the animation right away and loop it.
+        // Inicia imediatamente a animação em loop.
         clip.RepeatMode = AnimationRepeatMode.LoopInfinite;
         var animC = Entity.GetOrCreate&lt;AnimationComponent&gt;();
         animC.Animations.Add("LightCurve",clip);
@@ -239,11 +239,11 @@
             InterpolationType = AnimationCurveInterpolationType.Linear,
             KeyFrames =
             {
-                CreateKeyFrame(0.00f, Vector3.UnitX), // Make the first keyframe a red color
+                CreateKeyFrame(0.00f, Vector3.UnitX), // Defina o primeiro quadro-chave com a cor vermelha
 
-                CreateKeyFrame(0.50f, Vector3.UnitZ), // then blue
+                CreateKeyFrame(0.50f, Vector3.UnitZ), // depois azul
 
-                CreateKeyFrame(1.00f, Vector3.UnitX), // then red again
+                CreateKeyFrame(1.00f, Vector3.UnitX), // e vermelho novamente
             }
         };
     }
@@ -258,52 +258,52 @@
 <trans-unit id="tu16" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>!NOTE<x id="2"/>
 If you need to animate a bone procedurally you must use the <g id="3">NodeTransformations</g> field of the <g id="4">Skeleton</g>.</source>
-<target xml:lang="pt"><x id="1"/>!NOTE<x id="2"/>
-If you need to animate a bone procedurally you must use the <g id="3">NodeTransformations</g> field of the <g id="4">Skeleton</g>.</target>
+<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
+Se precisar animar um osso proceduralmente, você deve usar o campo <g id="3">NodeTransformations</g> do <g id="4">Esqueleto</g>.</target>
 </trans-unit>
 <trans-unit id="tu17" xml:space="preserve">
 <source xml:lang="en">See also</source>
-<target xml:lang="pt">See also</target>
+<target xml:lang="pt">Veja também</target>
 </trans-unit>
 <trans-unit id="tu18" xml:space="preserve">
 <source xml:lang="en"><g id="1">Animation index</g></source>
-<target xml:lang="pt"><g id="1">Animation index</g></target>
+<target xml:lang="pt"><g id="1">Índice de animação</g></target>
 </trans-unit>
 <trans-unit id="tu19" xml:space="preserve">
 <source xml:lang="en"><g id="1">Import animations</g></source>
-<target xml:lang="pt"><g id="1">Import animations</g></target>
+<target xml:lang="pt"><g id="1">Importar animações</g></target>
 </trans-unit>
 <trans-unit id="tu20" xml:space="preserve">
 <source xml:lang="en"><g id="1">Animation properties</g></source>
-<target xml:lang="pt"><g id="1">Animation properties</g></target>
+<target xml:lang="pt"><g id="1">Propriedades de animação</g></target>
 </trans-unit>
 <trans-unit id="tu21" xml:space="preserve">
 <source xml:lang="en"><g id="1">Set up animations</g></source>
-<target xml:lang="pt"><g id="1">Set up animations</g></target>
+<target xml:lang="pt"><g id="1">Configurar animações</g></target>
 </trans-unit>
 <trans-unit id="tu22" xml:space="preserve">
 <source xml:lang="en"><g id="1">Preview animations</g></source>
-<target xml:lang="pt"><g id="1">Preview animations</g></target>
+<target xml:lang="pt"><g id="1">Visualizar animações</g></target>
 </trans-unit>
 <trans-unit id="tu23" xml:space="preserve">
 <source xml:lang="en"><g id="1">Animation scripts</g></source>
-<target xml:lang="pt"><g id="1">Animation scripts</g></target>
+<target xml:lang="pt"><g id="1">Scripts de animação</g></target>
 </trans-unit>
 <trans-unit id="tu24" xml:space="preserve">
 <source xml:lang="en"><g id="1">Additive animation</g></source>
-<target xml:lang="pt"><g id="1">Additive animation</g></target>
+<target xml:lang="pt"><g id="1">Animação aditiva</g></target>
 </trans-unit>
 <trans-unit id="tu25" xml:space="preserve">
 <source xml:lang="en"><g id="1">Custom blend trees</g></source>
-<target xml:lang="pt"><g id="1">Custom blend trees</g></target>
+<target xml:lang="pt"><g id="1">Árvores de transição personalizadas</g></target>
 </trans-unit>
 <trans-unit id="tu26" xml:space="preserve">
 <source xml:lang="en"><g id="1">Model node links</g></source>
-<target xml:lang="pt"><g id="1">Model node links</g></target>
+<target xml:lang="pt"><g id="1">Links de nó de modelo</g></target>
 </trans-unit>
 <trans-unit id="tu27" xml:space="preserve">
 <source xml:lang="en"><g id="1">custom attributes</g></source>
-<target xml:lang="pt"><g id="1">custom attributes</g></target>
+<target xml:lang="pt"><g id="1">Atributos personalizados</g></target>
 </trans-unit>
 </body>
 </file>

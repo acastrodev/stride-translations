@@ -8,7 +8,7 @@
 
 O componente **link de nó de modelo** conecta uma entidade a um nó de um esqueleto em outra entidade.
 
-Por exemplo, imagine que você tem dois modelos: um cavaleiro e uma espada. O personagem possui uma animação de golpe com a espada. Você pode usar um nó de link de modelo para colocar a espada na mão do cavaleiro e anexá-la ao nó correto no esqueleto do cavaleiro, para que a espada se mova junto com a animação do cavaleiro.
+Por exemplo, imagine que você tem dois modelos: um cavaleiro e uma espada. O personagem possui uma animação de golpe com a espada. Você pode utilizar um nó de link de modelo para posicionar a espada na mão do cavaleiro e anexá-la ao nó correto no esqueleto do cavaleiro, para que a espada se mova junto com a animação do cavaleiro.
 
 <p>
 <video autoplay loop class="responsive-video" poster="../particles/tutorials/media/sword-slash-1.jpg">
@@ -18,7 +18,7 @@ Por exemplo, imagine que você tem dois modelos: um cavaleiro e uma espada. O pe
 
 ## Configure um componente de link de nó de modelo.
 
-1. No **Editor de Cenas**, selecione a entidade à qual você deseja vincular a um nó em outra entidade.
+1. No **Editor de Cenas**, selecione a entidade à qual você deseja vincular a um nó de outra entidade.
 
 2. No **Editor de Propriedades**, clique em **Adicionar componente** e selecione **Link de nó de modelo**.
 
@@ -30,11 +30,11 @@ Por exemplo, imagine que você tem dois modelos: um cavaleiro e uma espada. O pe
 
    O componente tem apenas duas propriedades: **Nome do nó** e **Destino**.
 
-3. Ao lado de **Alvo**, clique em ![Ícone de mão](~/manual/game-studio/media/hand-icon.png).
+3. Ao lado de **Destino**, clique no ![Ícone de mão](~/manual/game-studio/media/hand-icon.png).
 
    A janela **Selecionar uma entidade** é exibida.
 
-   ![Selecione uma entidade](media/select-an-entity-window.png)
+   ![Selecionar uma entidade](media/select-an-entity-window.png)
 
 4. Selecione o modelo ao qual você deseja vincular a entidade e clique em **OK**.
 
@@ -48,7 +48,7 @@ Por exemplo, imagine que você tem dois modelos: um cavaleiro e uma espada. O pe
 
    ![Selecionar nó](media/select-node.png)
 
-   Após vincular o nó, a Árvore de Entidades exibe o link em azul ao lado do nome da entidade.
+   Após vincular o nó, a Árvore de Entidades exibirá o link em azul ao lado do nome da entidade.
 
    ![Link de nó de modelo](media/model-node-link-sword-added.png)
 

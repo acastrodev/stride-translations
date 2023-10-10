@@ -28,4 +28,4 @@ Estas páginas contêm informações sobre como usar o Stride, um motor de cria�
 
 A documentação do Stride é de código aberto e qualquer pessoa pode editá-la. Se por acaso encontrar algum erro, pode corrigi-lo ou deixar um comentário no [GitHub](https://github.com/stride3d/stride-docs).
 
-Para editar qualquer página deste manual, na parte inferior da página, clique no link **Editar esta página**. Por favor, certifique-se de seguir as [diretrizes de escrita](https://github.com/stride3d/stride-docs/wiki).
+Para editar qualquer página deste manual, na parte inferior, clique no link **Editar esta página**. Por favor, certifique-se de seguir as [diretrizes de escrita](https://github.com/stride3d/stride-docs/wiki).

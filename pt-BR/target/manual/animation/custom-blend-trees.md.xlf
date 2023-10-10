@@ -13,11 +13,11 @@
 </trans-unit>
 <trans-unit id="tu3" xml:space="preserve">
 <source xml:lang="en">The <g id="1">AnimationComponent</g> has the property <g id="2">AnimationComponent.BlendTreeBuilder</g>. If you want absolute control over which animations are played, how are they blended and what weights they have, you can create a script which inherits from <g id="3">IBlendTreeBuilder</g> and assign it to the BlendTreeBuilder under your animation component.</source>
-<target xml:lang="pt">O <g id="1">AnimationComponent</g> possui a propriedade <g id="2">AnimationComponent.BlendTreeBuilder</g>. Se você deseja ter controle absoluto sobre quais animações são reproduzidas, como é realizado a transição entre elas e que pesos elas têm, você pode criar um script que implemente <g id="3">IBlendTreeBuilder</g> e atribuí-lo ao BlendTreeBuilder do seu componente de animação.</target>
+<target xml:lang="pt">O <g id="1">AnimationComponent</g> possui a propriedade <g id="2">AnimationComponent.BlendTreeBuilder</g>. Se você deseja ter controle total sobre quais animações são reproduzidas, como ocorrem as transições entre elas e qual é o peso de cada uma, você pode criar um script que implementa a interface <g id="3">IBlendTreeBuilder</g> e atribuí-lo ao BlendTreeBuilder do seu componente de animação.</target>
 </trans-unit>
 <trans-unit id="tu4" xml:space="preserve">
 <source xml:lang="en">When the animation component is updated, it calls <g id="1">void BuildBlendTree(FastList&lt;AnimationOperation&gt; animationList)</g> on your script instead of updating the animations itself. This allows you to choose any combination of animation clips, speeds and blends, but is also more difficult, as all the heavy lifting is now on the script side.</source>
-<target xml:lang="pt">Quando o componente de animação é atualizado, ele executa <g id="1">void BuildBlendTree(FastList&lt;AnimationOperation&gt; AnimationList)</g> no seu script em vez de atualizar as próprias animações. Isso permite que você escolha qualquer combinação de clipes de animação, velocidades e transições, mas também é mais difícil, já que todo o trabalho pesado agora está no lado do script.</target>
+<target xml:lang="pt">Quando o componente de animação é atualizado, ele executa o método <g id="1">void BuildBlendTree(FastList&lt;AnimationOperation&gt; AnimationList)</g> no seu script em vez de atualizar as próprias animações. Isso permite que você escolha qualquer combinação de clipes de animação, velocidades e transições, mas também é mais complexo, já que todo o trabalho pesado agora está no lado do script.</target>
 </trans-unit>
 <trans-unit id="tu5" xml:space="preserve">
 <source xml:lang="en">The templates <g id="1">First-person shooter</g>, <g id="2">Third-person platformer</g> and <g id="3">Top-down RPG</g>, included with Stride, are examples of how to use custom blend trees.</source>
@@ -138,13 +138,13 @@
         base.Start();
 
         //PASSO IMPORTANTE
-        // Ao definir um builder de Árvore de transição personalizada, podemos substituir o comportamento padrão do sistema de animação.
-        // Em vez disso, BuildBlendTree(FastList&lt;AnimationOperation&gt; blendStack) será executado a cada quadro.
-        // Precisamos atualizar o estado da animação em Update() e então
+        // Ao definir um construtor de Árvore de Transição Personalizada, podemos substituir o comportamento padrão do sistema de animação.
+        // Em vez disso, o método BuildBlendTree(FastList&lt;AnimationOperation&gt; blendStack) será executado a cada quadro.
+        // Precisamos atualizar o estado da animação no método Update() e, em seguida,
         // passar o novo estado da animação (pilha = árvore de transição) para o sistema de animação.
         AnimationComponent.BlendTreeBuilder = this;
 
-        // À medida que substituímos o sistema de animação, precisamos criar um AnimationClipEvaluator para cada clipe que queremos usar.
+        // À medida que substituímos o sistema de animação, precisamos criar um AnimationClipEvaluator para cada clipe que queremos utilizar.
         animEvaluatorWalk = AnimationComponent.Blender.CreateEvaluator(AnimationWalk);
         animEvaluatorRun = AnimationComponent.Blender.CreateEvaluator(AnimationRun);
     }
@@ -161,7 +161,7 @@
         // Use DrawTime em vez de UpdateTime, pois as animações são atualizadas somente quando são desenhadas.
         var time = Game.DrawTime;
 
-        // Esta função de atualização leva em conta animações com durações diferentes,
+        // Este método de atualização leva em conta animações com durações diferentes,
         // mantendo o tempo atual (instante) relativo à duração máxima de transição.
 
         long blendedMaxDuration = (long)MathUtil.Lerp(AnimationWalk.Duration.Ticks, AnimationRun.Duration.Ticks, LerpFactor);
@@ -175,7 +175,7 @@
         currentTime = ((double)currentTicks.Ticks / (double)blendedMaxDuration);
     }
 
-    /// BuildBlendTree é chamado a cada quadro do sistema de animação quando o AnimationComponent precisa ser avaliado.
+    /// O método BuildBlendTree é executado a cada quadro do sistema de animação quando o AnimationComponent precisa ser avaliado.
     /// Isso substitui o comportamento padrão do AnimationComponent definindo uma Árvore de transição personalizada.
     public void BuildBlendTree(FastList&lt;AnimationOperation&gt; blendStack)
     {
@@ -188,12 +188,12 @@
         blendStack.Add(AnimationOperation.NewBlend(CoreAnimationOperation.Blend, LerpFactor)); // Exibirá (POP) os dois últimos estados combinando os dois com o fator e enviará o resultado de volta (PUSH).
 
         // NOTA
-        // Devido as operações de transição serem dispostas em uma pilha, você precisa compactar as operações dessa maneira.
-        // De maneira geral, percorrer uma árvore binária em profundidade e adicionar operações à medida que você *sai* dos nós processados deve ser suficiente.
-        // Para árvores não binárias, você também deve ponderar adequadamente os fatores de transição.
+        // Devido às operações de transição estarem organizadas em uma pilha, você precisa compactar as operações dessa maneira.
+        // Em geral, percorrer uma árvore binária em profundidade e adicionar operações à medida que você *sai* dos nós processados deve ser suficiente.
+        // Para árvores não binárias, você também deve ajustar adequadamente os fatores de transição.
 
         // PRONTO
-        // O topo da pilha agora contém o estado final usado pelo o modelo animado.
+        // O topo da pilha agora contém o estado final utilizado pelo modelo animado.
     }
 }
 </target>

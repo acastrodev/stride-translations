@@ -3,9 +3,9 @@
 <span class="badge text-bg-primary">Avançado</span>
 <span class="badge text-bg-success">Programação</span>
 
-O [AnimationComponent](xref:Stride.Engine.AnimationComponent) possui a propriedade [AnimationComponent.BlendTreeBuilder](xref:Stride.Engine.AnimationComponent#Stride_Engine_AnimationComponent_BlendTreeBuilder). Se você deseja ter controle absoluto sobre quais animações são reproduzidas, como é realizado a transição entre elas e que pesos elas têm, você pode criar um script que implemente `IBlendTreeBuilder` e atribuí-lo ao BlendTreeBuilder do seu componente de animação.
+O [AnimationComponent](xref:Stride.Engine.AnimationComponent) possui a propriedade [AnimationComponent.BlendTreeBuilder](xref:Stride.Engine.AnimationComponent#Stride_Engine_AnimationComponent_BlendTreeBuilder). Se você deseja ter controle total sobre quais animações são reproduzidas, como ocorrem as transições entre elas e qual é o peso de cada uma, você pode criar um script que implementa a interface `IBlendTreeBuilder` e atribuí-lo ao BlendTreeBuilder do seu componente de animação.
 
-Quando o componente de animação é atualizado, ele executa `void BuildBlendTree(FastList<AnimationOperation> AnimationList)` no seu script em vez de atualizar as próprias animações. Isso permite que você escolha qualquer combinação de clipes de animação, velocidades e transições, mas também é mais difícil, já que todo o trabalho pesado agora está no lado do script.
+Quando o componente de animação é atualizado, ele executa o método `void BuildBlendTree(FastList<AnimationOperation> AnimationList)` no seu script em vez de atualizar as próprias animações. Isso permite que você escolha qualquer combinação de clipes de animação, velocidades e transições, mas também é mais complexo, já que todo o trabalho pesado agora está no lado do script.
 
 Os modelos *Tiro em primeira pessoa*, *Plataforma em terceira pessoa* e *RPG de visão superior*, incluídos no Stride, são exemplos de como usar árvores de transição personalizadas.
 
@@ -38,13 +38,13 @@ public class AnimationBlendTree : SyncScript, IBlendTreeBuilder
         base.Start();
 
         //PASSO IMPORTANTE
-        // Ao definir um builder de Árvore de transição personalizada, podemos substituir o comportamento padrão do sistema de animação.
-        // Em vez disso, BuildBlendTree(FastList<AnimationOperation> blendStack) será executado a cada quadro.
-        // Precisamos atualizar o estado da animação em Update() e então
+        // Ao definir um construtor de Árvore de Transição Personalizada, podemos substituir o comportamento padrão do sistema de animação.
+        // Em vez disso, o método BuildBlendTree(FastList<AnimationOperation> blendStack) será executado a cada quadro.
+        // Precisamos atualizar o estado da animação no método Update() e, em seguida,
         // passar o novo estado da animação (pilha = árvore de transição) para o sistema de animação.
         AnimationComponent.BlendTreeBuilder = this;
 
-        // À medida que substituímos o sistema de animação, precisamos criar um AnimationClipEvaluator para cada clipe que queremos usar.
+        // À medida que substituímos o sistema de animação, precisamos criar um AnimationClipEvaluator para cada clipe que queremos utilizar.
         animEvaluatorWalk = AnimationComponent.Blender.CreateEvaluator(AnimationWalk);
         animEvaluatorRun = AnimationComponent.Blender.CreateEvaluator(AnimationRun);
     }
@@ -61,7 +61,7 @@ public class AnimationBlendTree : SyncScript, IBlendTreeBuilder
         // Use DrawTime em vez de UpdateTime, pois as animações são atualizadas somente quando são desenhadas.
         var time = Game.DrawTime;
 
-        // Esta função de atualização leva em conta animações com durações diferentes,
+        // Este método de atualização leva em conta animações com durações diferentes,
         // mantendo o tempo atual (instante) relativo à duração máxima de transição.
 
         long blendedMaxDuration = (long)MathUtil.Lerp(AnimationWalk.Duration.Ticks, AnimationRun.Duration.Ticks, LerpFactor);
@@ -75,7 +75,7 @@ public class AnimationBlendTree : SyncScript, IBlendTreeBuilder
         currentTime = ((double)currentTicks.Ticks / (double)blendedMaxDuration);
     }
 
-    /// BuildBlendTree é chamado a cada quadro do sistema de animação quando o AnimationComponent precisa ser avaliado.
+    /// O método BuildBlendTree é executado a cada quadro do sistema de animação quando o AnimationComponent precisa ser avaliado.
     /// Isso substitui o comportamento padrão do AnimationComponent definindo uma Árvore de transição personalizada.
     public void BuildBlendTree(FastList<AnimationOperation> blendStack)
     {
@@ -88,12 +88,12 @@ public class AnimationBlendTree : SyncScript, IBlendTreeBuilder
         blendStack.Add(AnimationOperation.NewBlend(CoreAnimationOperation.Blend, LerpFactor)); // Exibirá (POP) os dois últimos estados combinando os dois com o fator e enviará o resultado de volta (PUSH).
 
         // NOTA
-        // Devido as operações de transição serem dispostas em uma pilha, você precisa compactar as operações dessa maneira.
-        // De maneira geral, percorrer uma árvore binária em profundidade e adicionar operações à medida que você *sai* dos nós processados deve ser suficiente.
-        // Para árvores não binárias, você também deve ponderar adequadamente os fatores de transição.
+        // Devido às operações de transição estarem organizadas em uma pilha, você precisa compactar as operações dessa maneira.
+        // Em geral, percorrer uma árvore binária em profundidade e adicionar operações à medida que você *sai* dos nós processados deve ser suficiente.
+        // Para árvores não binárias, você também deve ajustar adequadamente os fatores de transição.
 
         // PRONTO
-        // O topo da pilha agora contém o estado final usado pelo o modelo animado.
+        // O topo da pilha agora contém o estado final utilizado pelo modelo animado.
     }
 }
 ```

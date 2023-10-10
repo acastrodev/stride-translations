@@ -51,34 +51,34 @@
                 ],
                 [
                     "If you want absolute control over which animations are played, how are they blended and what weights they have, you can create a script which inherits from <g3>IBlendTreeBuilder<\/g3> and assign it to the BlendTreeBuilder under your animation component.",
-                    "Se você deseja ter controle absoluto sobre quais animações são reproduzidas, como é realizado a transição entre elas e que pesos elas têm, você pode criar um script que implemente <g3>IBlendTreeBuilder<\/g3> e atribuí-lo ao BlendTreeBuilder do seu componente de animação.",
+                    "Se você deseja ter controle total sobre quais animações são reproduzidas, como ocorrem as transições entre elas e qual é o peso de cada uma, você pode criar um script que implementa a interface <g3>IBlendTreeBuilder<\/g3> e atribuí-lo ao BlendTreeBuilder do seu componente de animação.",
                     " If you want absolute control over which animations are played, how are they blended and what weights they have, you can create a script which inherits from <g3>IBlendTreeBuilder<\/g3> and assign it to the BlendTreeBuilder under your animation component.",
                     "\/D:\/repos\/rr\/source\/manual\/animation\/custom-blend-trees.md",
                     {
                         "creator": "Alexandre Castro",
-                        "createdTime": 1696784524030,
+                        "createdTime": 1696963453534,
                         "id": "tu3"
                     }
                 ],
                 [
                     "When the animation component is updated, it calls <g1>void BuildBlendTree(FastList<AnimationOperation> animationList)<\/g1> on your script instead of updating the animations itself.",
-                    "Quando o componente de animação é atualizado, ele executa <g1>void BuildBlendTree(FastList<AnimationOperation> AnimationList)<\/g1> no seu script em vez de atualizar as próprias animações.",
+                    "Quando o componente de animação é atualizado, ele executa o método <g1>void BuildBlendTree(FastList<AnimationOperation> AnimationList)<\/g1> no seu script em vez de atualizar as próprias animações.",
                     "When the animation component is updated, it calls <g1>void BuildBlendTree(FastList<AnimationOperation> animationList)<\/g1> on your script instead of updating the animations itself.",
                     "\/D:\/repos\/rr\/source\/manual\/animation\/custom-blend-trees.md",
                     {
                         "creator": "Alexandre Castro",
-                        "createdTime": 1696784988918,
+                        "createdTime": 1696963512738,
                         "id": "tu4"
                     }
                 ],
                 [
                     "This allows you to choose any combination of animation clips, speeds and blends, but is also more difficult, as all the heavy lifting is now on the script side.",
-                    "Isso permite que você escolha qualquer combinação de clipes de animação, velocidades e transições, mas também é mais difícil, já que todo o trabalho pesado agora está no lado do script.",
+                    "Isso permite que você escolha qualquer combinação de clipes de animação, velocidades e transições, mas também é mais complexo, já que todo o trabalho pesado agora está no lado do script.",
                     " This allows you to choose any combination of animation clips, speeds and blends, but is also more difficult, as all the heavy lifting is now on the script side.",
                     "\/D:\/repos\/rr\/source\/manual\/animation\/custom-blend-trees.md",
                     {
                         "creator": "Alexandre Castro",
-                        "createdTime": 1696785049718,
+                        "createdTime": 1696963507742,
                         "id": "tu4"
                     }
                 ],
@@ -338,34 +338,34 @@
                 ],
                 [
                     "\/\/ By setting a custom blend tree builder we can override the default behavior of the animation system.",
-                    "\/\/ Ao definir um builder de Árvore de transição personalizada, podemos substituir o comportamento padrão do sistema de animação.",
+                    "\/\/ Ao definir um construtor de Árvore de Transição Personalizada, podemos substituir o comportamento padrão do sistema de animação.",
                     "        \/\/ By setting a custom blend tree builder we can override the default behavior of the animation system.\r\n",
                     "\/D:\/repos\/rr\/source\/manual\/animation\/custom-blend-trees.md",
                     {
                         "creator": "Alexandre Castro",
-                        "createdTime": 1696786377699,
+                        "createdTime": 1696963582950,
                         "id": "tu7"
                     }
                 ],
                 [
                     "\/\/ Instead, BuildBlendTree(FastList<AnimationOperation> blendStack) will be called each frame.",
-                    "\/\/ Em vez disso, BuildBlendTree(FastList<AnimationOperation> blendStack) será executado a cada quadro.",
+                    "\/\/ Em vez disso, o método BuildBlendTree(FastList<AnimationOperation> blendStack) será executado a cada quadro.",
                     "        \/\/ Instead, BuildBlendTree(FastList<AnimationOperation> blendStack) will be called each frame.\r\n",
                     "\/D:\/repos\/rr\/source\/manual\/animation\/custom-blend-trees.md",
                     {
                         "creator": "Alexandre Castro",
-                        "createdTime": 1696785364374,
+                        "createdTime": 1696963572303,
                         "id": "tu7"
                     }
                 ],
                 [
                     "\/\/ We need to update the animation state in Update() and then",
-                    "\/\/ Precisamos atualizar o estado da animação em Update() e então",
+                    "\/\/ Precisamos atualizar o estado da animação no método Update() e, em seguida,",
                     "        \/\/ We need to update the animation state in Update() and then\r\n",
                     "\/D:\/repos\/rr\/source\/manual\/animation\/custom-blend-trees.md",
                     {
                         "creator": "Alexandre Castro",
-                        "createdTime": 1696785389462,
+                        "createdTime": 1696963592167,
                         "id": "tu7"
                     }
                 ],
@@ -393,12 +393,12 @@
                 ],
                 [
                     "\/\/ As we override the animation system, we need to create an AnimationClipEvaluator for each clip we want to use.",
-                    "\/\/ À medida que substituímos o sistema de animação, precisamos criar um AnimationClipEvaluator para cada clipe que queremos usar.",
+                    "\/\/ À medida que substituímos o sistema de animação, precisamos criar um AnimationClipEvaluator para cada clipe que queremos utilizar.",
                     "\r\n        \/\/ As we override the animation system, we need to create an AnimationClipEvaluator for each clip we want to use.\r\n",
                     "\/D:\/repos\/rr\/source\/manual\/animation\/custom-blend-trees.md",
                     {
                         "creator": "Alexandre Castro",
-                        "createdTime": 1696785453189,
+                        "createdTime": 1696963615414,
                         "id": "tu7"
                     }
                 ],
@@ -547,12 +547,12 @@
                 ],
                 [
                     "\/\/ This update function accounts for animation with different durations,",
-                    "\/\/ Esta função de atualização leva em conta animações com durações diferentes,",
+                    "\/\/ Este método de atualização leva em conta animações com durações diferentes,",
                     "\r\n        \/\/ This update function accounts for animation with different durations,\r\n",
                     "\/D:\/repos\/rr\/source\/manual\/animation\/custom-blend-trees.md",
                     {
                         "creator": "Alexandre Castro",
-                        "createdTime": 1696785586942,
+                        "createdTime": 1696963710872,
                         "id": "tu7"
                     }
                 ],
@@ -668,12 +668,12 @@
                 ],
                 [
                     "\/\/\/ BuildBlendTree is called every frame from the animation system when the AnimationComponent needs to be evaluated.",
-                    "\/\/\/ BuildBlendTree é chamado a cada quadro do sistema de animação quando o AnimationComponent precisa ser avaliado.",
+                    "\/\/\/ O método BuildBlendTree é executado a cada quadro do sistema de animação quando o AnimationComponent precisa ser avaliado.",
                     "\r\n    \/\/\/ BuildBlendTree is called every frame from the animation system when the AnimationComponent needs to be evaluated.\r\n",
                     "\/D:\/repos\/rr\/source\/manual\/animation\/custom-blend-trees.md",
                     {
                         "creator": "Alexandre Castro",
-                        "createdTime": 1696785747613,
+                        "createdTime": 1696963739575,
                         "id": "tu7"
                     }
                 ],
@@ -789,34 +789,34 @@
                 ],
                 [
                     "\/\/ Because the blending operations are laid out in a stack you have to pack the operations in this manner.",
-                    "\/\/ Devido as operações de transição serem dispostas em uma pilha, você precisa compactar as operações dessa maneira.",
+                    "\/\/ Devido às operações de transição estarem organizadas em uma pilha, você precisa compactar as operações dessa maneira.",
                     "        \/\/ Because the blending operations are laid out in a stack you have to pack the operations in this manner.\r\n",
                     "\/D:\/repos\/rr\/source\/manual\/animation\/custom-blend-trees.md",
                     {
                         "creator": "Alexandre Castro",
-                        "createdTime": 1696786146109,
+                        "createdTime": 1696963780382,
                         "id": "tu7"
                     }
                 ],
                 [
                     "\/\/ In general, traversing a binary tree depth-first and adding operations as you *leave* precessed nodes should be sufficient.",
-                    "\/\/ De maneira geral, percorrer uma árvore binária em profundidade e adicionar operações à medida que você *sai* dos nós processados deve ser suficiente.",
+                    "\/\/ Em geral, percorrer uma árvore binária em profundidade e adicionar operações à medida que você *sai* dos nós processados deve ser suficiente.",
                     "        \/\/ In general, traversing a binary tree depth-first and adding operations as you *leave* precessed nodes should be sufficient.\r\n",
                     "\/D:\/repos\/rr\/source\/manual\/animation\/custom-blend-trees.md",
                     {
                         "creator": "Alexandre Castro",
-                        "createdTime": 1696786192909,
+                        "createdTime": 1696963791982,
                         "id": "tu7"
                     }
                 ],
                 [
                     "\/\/ For non-binary trees, you have to properly weight the blending factors as well",
-                    "\/\/ Para árvores não binárias, você também deve ponderar adequadamente os fatores de transição.",
+                    "\/\/ Para árvores não binárias, você também deve ajustar adequadamente os fatores de transição.",
                     "        \/\/ For non-binary trees, you have to properly weight the blending factors as well\r\n",
                     "\/D:\/repos\/rr\/source\/manual\/animation\/custom-blend-trees.md",
                     {
                         "creator": "Alexandre Castro",
-                        "createdTime": 1696786220942,
+                        "createdTime": 1696963813638,
                         "id": "tu7"
                     }
                 ],
@@ -833,12 +833,12 @@
                 ],
                 [
                     "\/\/ The top of the stack now contains the final state used for the animated model",
-                    "\/\/ O topo da pilha agora contém o estado final usado pelo o modelo animado.",
+                    "\/\/ O topo da pilha agora contém o estado final utilizado pelo modelo animado.",
                     "        \/\/ The top of the stack now contains the final state used for the animated model\r\n",
                     "\/D:\/repos\/rr\/source\/manual\/animation\/custom-blend-trees.md",
                     {
                         "creator": "Alexandre Castro",
-                        "createdTime": 1696786267198,
+                        "createdTime": 1696963820118,
                         "id": "tu7"
                     }
                 ],

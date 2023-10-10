@@ -11,7 +11,7 @@ Depois de [importar uma animação](import-animations.md), você pode visualizá
 </video>
 </p>
 
-Por padrão, a Visualização de Recursos está na parte inferior direita, sob a guia **Visualização de Recursos**.
+Por padrão, a Visualização de Recursos está na parte inferior direita, abaixo da guia **Visualização de Recursos**.
 
 ![Guia Visualização de Recursos](media/animations-import-animations-asset-preview-tab.png)
 
@@ -20,13 +20,13 @@ Por padrão, a Visualização de Recursos está na parte inferior direita, sob a
 
 A pré-visualização da animação utiliza o modelo selecionado em **modelo de pré-visualização** nas **propriedades do recurso de animação**.
 
-## Defina o modelo de pré-visualização
+## Definir o modelo de pré-visualização
 
 1. No **Visualizador de Recursos** (na parte inferior por padrão), selecione o recurso de animação.
 
    ![Selecionar recurso](media/select-asset.png)
 
-2. No **Editor de Propriedades** (à direita por padrão), sob **Visualizador de modelo**, clique no ![Ícone de mão](~/manual/game-studio/media/hand-icon.png) (**Selecionar um recurso**).
+2. No **Editor de Propriedades** (à direita por padrão), abaixo de **Visualizador de modelo**, clique no ![Ícone de mão](~/manual/game-studio/media/hand-icon.png) (**Selecionar um recurso**).
 
    ![Selecionar recurso](media/pick-an-asset-up.png)
 

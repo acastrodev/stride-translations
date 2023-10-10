@@ -27,7 +27,7 @@
 </trans-unit>
 <trans-unit id="tu7" xml:space="preserve">
 <source xml:lang="en">Import the animation. For instructions, see <g id="1">Import animations</g>.</source>
-<target xml:lang="pt">Importar a animação. Para mais informações, consulte <g id="1">Importar animações</g></target>
+<target xml:lang="pt">Importe a animação. Para mais informações, consulte <g id="1">Importar animações</g></target>
 </trans-unit>
 <trans-unit id="tu8" xml:space="preserve">
 <source xml:lang="en">In the <g id="1">Asset View</g>, select the animation asset.</source>
@@ -55,11 +55,11 @@
 </trans-unit>
 <trans-unit id="tu14" xml:space="preserve">
 <source xml:lang="en">Add a script to read the custom attributes and copy their value to another property. This can be a separate script, or part of another <g id="1">animation script</g>.</source>
-<target xml:lang="pt">Adicione um script para ler os atributos personalizados e copie seus valores para outra propriedade. Pode ser em um script separado ou fazer parte de outro <g id="1">script de animação</g>.</target>
+<target xml:lang="pt">Adicione um script para ler os atributos personalizados e copie os seus valores para outra propriedade. Isso pode ser feito em um script separado ou como parte de outro <g id="1">script de animação</g>.</target>
 </trans-unit>
 <trans-unit id="tu15" xml:space="preserve">
 <source xml:lang="en">To look up an attribute, use <g id="1">NodeName_AttributeName</g>. For example, if you have the node <g id="2">myNode</g> with the custom attribute <g id="3">myAttribute</g>, use <g id="4">myNode_myAttribute</g>.</source>
-<target xml:lang="pt">Para procurar um atributo, use <g id="1">NodeName_AttributeName</g>. Por exemplo, se você tiver o nó <g id="2">myNode</g> com o atributo customizado <g id="3">myAttribute</g>, use <g id="4">myNode_myAttribute</g>.</target>
+<target xml:lang="pt">Para buscar um atributo, utilize <g id="1">NodeName_AttributeName</g>. Por exemplo, se você tiver o nó <g id="2">myNode</g> com o atributo personalizado <g id="3">myAttribute</g>, utilize <g id="4">myNode_myAttribute</g>.</target>
 </trans-unit>
 <trans-unit id="tu16" xml:space="preserve">
 <source xml:lang="en">Example script</source>
@@ -159,7 +159,7 @@ namespace Sample
             if (animationProcessor == null || MyMaterial == null)
                 return;
 
-            // O resultado da animação pode ser Null se a animação ainda não tiver sido reproduzida.
+            // O resultado da animação pode ser nulo se a animação ainda não tiver sido reproduzida.
             var animResult = animationProcessor.GetAnimationClipResult(animationComponent);
             if (animResult == null)
                 return;
