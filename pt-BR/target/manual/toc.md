@@ -41,7 +41,7 @@
 ## [Áudio não espacializado](audio/non-spatialized-audio.md)
 ## [Áudio espacializado](audio/spatialized-audio.md)
 ### [Emissores de áudio](audio/audio-emitters.md)
-### [Ouvintes de Áudio](audio/audio-listeners.md)
+### [Receptores de áudio](audio/audio-listeners.md)
 ### [HRTF](audio/hrtf.md)
 ## [Transmitir áudio](audio/stream-audio.md)
 ## [Configurações de áudio globais](audio/global-audio-settings.md)
