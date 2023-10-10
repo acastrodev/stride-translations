@@ -5,56 +5,56 @@
             "\/D:\/repos\/rr\/source\/examples\/Stride.Utilities-remarks.md": [
                 [
                     "Use the FileStream class to read from, write to, open, and close files on a file system, and to manipulate other file-related operating system handles, including pipes, standard input, and standard output.",
-                    "Use a classe FileStream para ler, escrever, abrir e fechar arquivos em um sistema de arquivos, e para manipular outros identificadores do sistema operacional relacionados a arquivos, incluindo pipes, entrada padrão e saída padrão.",
+                    "Utilize a classe FileStream para ler, escrever, abrir e fechar arquivos em um sistema de arquivos, bem como para manipular outros identificadores relacionados a arquivos do sistema operacional, como pipes, entrada padrão e saída padrão.",
                     "Use the FileStream class to read from, write to, open, and close files on a file system, and to manipulate other file-related operating system handles, including pipes, standard input, and standard output.",
                     "\/D:\/repos\/rr\/source\/examples\/Stride.Utilities-remarks.md",
                     {
                         "creator": "Alexandre Castro",
-                        "createdTime": 1696712954849,
+                        "createdTime": 1696955495522,
                         "id": "tu1"
                     }
                 ],
                 [
                     "You can use the Read, Write, CopyTo, and Flush methods to perform synchronous operations, or the ReadAsync, WriteAsync, CopyToAsync, and FlushAsync methods to perform asynchronous operations.",
-                    "Você pode usar os métodos Read, Write, CopyTo e Flush para realizar operações síncronas ou os métodos ReadAsync, WriteAsync, CopyToAsync e FlushAsync para realizar operações assíncronas.",
+                    "Você pode empregar os métodos Read, Write, CopyTo e Flush para realizar operações síncronas ou os métodos ReadAsync, WriteAsync, CopyToAsync e FlushAsync para executar operações assíncronas.",
                     " You can use the Read, Write, CopyTo, and Flush methods to perform synchronous operations, or the ReadAsync, WriteAsync, CopyToAsync, and FlushAsync methods to perform asynchronous operations.",
                     "\/D:\/repos\/rr\/source\/examples\/Stride.Utilities-remarks.md",
                     {
                         "creator": "Alexandre Castro",
-                        "createdTime": 1696714733383,
+                        "createdTime": 1696955495522,
                         "id": "tu1"
                     }
                 ],
                 [
                     "Use the asynchronous methods to perform resource-intensive file operations without blocking the main thread.",
-                    "Utilize os métodos assíncronos para realizar operações de arquivo intensivas em recursos sem bloquear a thread principal.",
+                    "Prefira os métodos assíncronos para operações intensivas em recursos de arquivo, evitando o bloqueio da thread principal.",
                     " Use the asynchronous methods to perform resource-intensive file operations without blocking the main thread.",
                     "\/D:\/repos\/rr\/source\/examples\/Stride.Utilities-remarks.md",
                     {
                         "creator": "Alexandre Castro",
-                        "createdTime": 1696714733383,
+                        "createdTime": 1696955400106,
                         "id": "tu1"
                     }
                 ],
                 [
                     "This performance consideration is particularly important in a Windows 8.x Store app or desktop app where a time-consuming stream operation can block the UI thread and make your app appear as if it is not working.",
-                    "Essa consideração de desempenho é especialmente importante em um aplicativo Windows 8.x Store ou em um aplicativo para desktop, onde uma operação de fluxo demorada pode bloquear a thread de interface do usuário e fazer com que seu aplicativo pareça não estar funcionando.",
+                    "Esta consideração de desempenho é particularmente crucial em aplicativos Windows 8.x Store ou aplicativos desktop, onde uma operação de fluxo demorada pode bloquear a thread de interface do usuário, fazendo com que o aplicativo pareça não estar respondendo.",
                     " This performance consideration is particularly important in a Windows 8.x Store app or desktop app where a time-consuming stream operation can block the UI thread and make your app appear as if it is not working.",
                     "\/D:\/repos\/rr\/source\/examples\/Stride.Utilities-remarks.md",
                     {
                         "creator": "Alexandre Castro",
-                        "createdTime": 1696714733383,
+                        "createdTime": 1696955400106,
                         "id": "tu1"
                     }
                 ],
                 [
                     "FileStream buffers input and output for better performance.",
-                    "O FileStream faz o buffering de entrada e saída para melhorar o desempenho.",
+                    "O FileStream realiza buffering de entrada e saída para aprimorar o desempenho.",
                     " FileStream buffers input and output for better performance.",
                     "\/D:\/repos\/rr\/source\/examples\/Stride.Utilities-remarks.md",
                     {
                         "creator": "Alexandre Castro",
-                        "createdTime": 1696714733383,
+                        "createdTime": 1696955398653,
                         "id": "tu1"
                     }
                 ],
@@ -83,199 +83,199 @@
                 ],
                 [
                     "When you have finished using the type, you should dispose of it either directly or indirectly.",
-                    "Quando terminar de usar o tipo, você deve descartá-lo, seja diretamente ou indiretamente.",
+                    "Quando você terminar de usar o tipo, é necessário liberar seus recursos, seja diretamente ou indiretamente.",
                     " When you have finished using the type, you should dispose of it either directly or indirectly.",
                     "\/D:\/repos\/rr\/source\/examples\/Stride.Utilities-remarks.md",
                     {
                         "creator": "Alexandre Castro",
-                        "createdTime": 1696715505190,
+                        "createdTime": 1696955474645,
                         "id": "tu2"
                     }
                 ],
                 [
                     "To dispose of the type directly, call its Dispose method in a <g1>try\/catch block<\/g1>.",
-                    "Para descartar o tipo diretamente, execute o método Dispose dele em um bloco <g1>try\/catch<\/g1>.",
+                    "Para liberá-lo diretamente, chame o método Dispose dele dentro de um bloco <g1>try\/catch<\/g1>.",
                     " To dispose of the type directly, call its Dispose method in a <g1>try\/catch block<\/g1>.",
                     "\/D:\/repos\/rr\/source\/examples\/Stride.Utilities-remarks.md",
                     {
                         "creator": "Alexandre Castro",
-                        "createdTime": 1696715505190,
+                        "createdTime": 1696955510950,
                         "id": "tu2"
                     }
                 ],
                 [
                     "To dispose of it indirectly, use a language construct such as <g2>using<\/g2> (in C#) or Using (in Visual Basic).",
-                    "Para descartá-lo indiretamente, utilize uma construção de linguagem como <g2>using<\/g2> (em C#) ou Using (em Visual Basic).",
+                    "Para liberá-lo indiretamente, utilize uma construção de linguagem como o uso do bloco <g2>using<\/g2> (em C#) ou Using (em Visual Basic).",
                     " To dispose of it indirectly, use a language construct such as <g2>using<\/g2> (in C#) or Using (in Visual Basic).",
                     "\/D:\/repos\/rr\/source\/examples\/Stride.Utilities-remarks.md",
                     {
                         "creator": "Alexandre Castro",
-                        "createdTime": 1696715505190,
+                        "createdTime": 1696955591185,
                         "id": "tu2"
                     }
                 ],
                 [
                     "For more information, see the \"Using an Object that Implements IDisposable\" section in the IDisposable interface topic.",
-                    "Para obter mais informações, consulte a seção \"Usando um Objeto que Implementa IDisposable\" no tópico da interface IDisposable.",
+                    "Para obter mais informações, consulte a seção \"Utilizando um Objeto que Implementa IDisposable\" no tópico da interface IDisposable.",
                     " For more information, see the \"Using an Object that Implements IDisposable\" section in the IDisposable interface topic.",
                     "\/D:\/repos\/rr\/source\/examples\/Stride.Utilities-remarks.md",
                     {
                         "creator": "Alexandre Castro",
-                        "createdTime": 1696715505190,
+                        "createdTime": 1696955588357,
                         "id": "tu2"
                     }
                 ],
                 [
                     "The IsAsync property detects whether the file handle was opened asynchronously.",
-                    "A propriedade IsAsync detecta se o identificador de arquivo foi aberto de forma assíncrona.",
+                    "A propriedade IsAsync indica se o identificador de arquivo foi aberto de forma assíncrona.",
                     "The IsAsync property detects whether the file handle was opened asynchronously.",
                     "\/D:\/repos\/rr\/source\/examples\/Stride.Utilities-remarks.md",
                     {
                         "creator": "Alexandre Castro",
-                        "createdTime": 1696715597149,
+                        "createdTime": 1696955637709,
                         "id": "tu3"
                     }
                 ],
                 [
                     "You specify this value when you create an instance of the FileStream class using a constructor that has an isAsync, useAsync, or options parameter.",
-                    "Você especifica esse valor ao criar uma instância da classe FileStream usando um construtor que possui um parâmetro isAsync, useAsync ou options.",
+                    "Você deve especificar esse valor ao criar uma instância da classe FileStream usando um construtor que aceita o parâmetro isAsync, useAsync ou options.",
                     " You specify this value when you create an instance of the FileStream class using a constructor that has an isAsync, useAsync, or options parameter.",
                     "\/D:\/repos\/rr\/source\/examples\/Stride.Utilities-remarks.md",
                     {
                         "creator": "Alexandre Castro",
-                        "createdTime": 1696715596677,
+                        "createdTime": 1696955658805,
                         "id": "tu3"
                     }
                 ],
                 [
                     "When the property is true, the stream utilizes overlapped I\/O to perform file operations asynchronously.",
-                    "Quando a propriedade é verdadeira, o fluxo utiliza E\/S sobreposta para realizar operações de arquivo de forma assíncrona.",
+                    "Quando essa propriedade é definida como verdadeira, o fluxo usa E\/S sobreposta para executar operações de arquivo de forma assíncrona.",
                     " When the property is true, the stream utilizes overlapped I\/O to perform file operations asynchronously.",
                     "\/D:\/repos\/rr\/source\/examples\/Stride.Utilities-remarks.md",
                     {
                         "creator": "Alexandre Castro",
-                        "createdTime": 1696715596677,
+                        "createdTime": 1696955678989,
                         "id": "tu3"
                     }
                 ],
                 [
                     "However, the IsAsync property does not have to be true to call the ReadAsync, WriteAsync, or CopyToAsync method.",
-                    "No entanto, a propriedade IsAsync não precisa ser verdadeira para executar o método ReadAsync, WriteAsync ou CopyToAsync.",
+                    "No entanto, a propriedade IsAsync não precisa estar definida como verdadeira para utilizar os métodos ReadAsync, WriteAsync ou CopyToAsync.",
                     " However, the IsAsync property does not have to be true to call the ReadAsync, WriteAsync, or CopyToAsync method.",
                     "\/D:\/repos\/rr\/source\/examples\/Stride.Utilities-remarks.md",
                     {
                         "creator": "Alexandre Castro",
-                        "createdTime": 1696715808675,
+                        "createdTime": 1696955692741,
                         "id": "tu3"
                     }
                 ],
                 [
                     "When the IsAsync property is false and you call the asynchronous read and write operations, the UI thread is still not blocked, but the actual I\/O operation is performed synchronously.",
-                    "Quando a propriedade IsAsync é falsa e você executa as operações de leitura e escrita assíncronas, a thread de interface do usuário não será bloqueada, mas a operação de E\/S será realizada de forma síncrona.",
+                    "Quando a propriedade IsAsync está definida como falsa e você realiza operações de leitura e escrita de forma assíncrona, a thread de interface do usuário não é bloqueada, mas a operação de E\/S é executada de forma síncrona.",
                     " When the IsAsync property is false and you call the asynchronous read and write operations, the UI thread is still not blocked, but the actual I\/O operation is performed synchronously.",
                     "\/D:\/repos\/rr\/source\/examples\/Stride.Utilities-remarks.md",
                     {
                         "creator": "Alexandre Castro",
-                        "createdTime": 1696715808675,
+                        "createdTime": 1696955764485,
                         "id": "tu3"
                     }
                 ],
                 [
                     "The Seek method supports random access to files.",
-                    "O método Seek oferece suporte ao acesso aleatório a arquivos.",
+                    "O método Seek oferece suporte ao acesso aleatório a arquivos, ",
                     "The Seek method supports random access to files.",
                     "\/D:\/repos\/rr\/source\/examples\/Stride.Utilities-remarks.md",
                     {
                         "creator": "Alexandre Castro",
-                        "createdTime": 1696715909603,
+                        "createdTime": 1696955927680,
                         "id": "tu4"
                     }
                 ],
                 [
                     "Seek allows the read\/write position to be moved to any position within the file.",
-                    "O Seek permite que a posição de leitura\/escrita seja movida para qualquer posição dentro do arquivo.",
+                    "permitindo que a posição de leitura\/escrita seja movida para qualquer ponto dentro do arquivo.",
                     " Seek allows the read\/write position to be moved to any position within the file.",
                     "\/D:\/repos\/rr\/source\/examples\/Stride.Utilities-remarks.md",
                     {
                         "creator": "Alexandre Castro",
-                        "createdTime": 1696715909603,
+                        "createdTime": 1696955835501,
                         "id": "tu4"
                     }
                 ],
                 [
                     "This is done with byte offset reference point parameters.",
-                    "Isso é feito com parâmetros de ponto de referência de deslocamento de bytes.",
+                    "Isso é feito por meio de parâmetros que indicam o deslocamento em bytes em relação a um ponto de referência de busca.",
                     " This is done with byte offset reference point parameters.",
                     "\/D:\/repos\/rr\/source\/examples\/Stride.Utilities-remarks.md",
                     {
                         "creator": "Alexandre Castro",
-                        "createdTime": 1696716136740,
+                        "createdTime": 1696955927680,
                         "id": "tu4"
                     }
                 ],
                 [
                     "The byte offset is relative to the seek reference point, which can be the beginning, the current position, or the end of the underlying file, as represented by the three members of the SeekOrigin enumeration.",
-                    "O deslocamento em bytes é relativo ao ponto de referência de busca, que pode ser o início, a posição atual ou o final do arquivo subjacente, conforme representado pelos três membros da enumeração SeekOrigin.",
+                    "O ponto de referência pode ser o início, a posição atual ou o final do arquivo subjacente, conforme representado pelos três membros da enumeração SeekOrigin.",
                     " The byte offset is relative to the seek reference point, which can be the beginning, the current position, or the end of the underlying file, as represented by the three members of the SeekOrigin enumeration.",
                     "\/D:\/repos\/rr\/source\/examples\/Stride.Utilities-remarks.md",
                     {
                         "creator": "Alexandre Castro",
-                        "createdTime": 1696716136740,
+                        "createdTime": 1696955927621,
                         "id": "tu4"
                     }
                 ],
                 [
                     "<x1\/>!CAUTION<x2\/>",
-                    "<x1\/>!CUIDADO<x2\/>",
+                    "<x1\/>!CAUTION<x2\/>",
                     "<x1\/>!CAUTION<x2\/>\r\n",
                     "\/D:\/repos\/rr\/source\/examples\/Stride.Utilities-remarks.md",
                     {
                         "creator": "Alexandre Castro",
-                        "createdTime": 1696716136740,
+                        "createdTime": 1696955932213,
                         "id": "tu5"
                     }
                 ],
                 [
                     "Disk files always support random access.",
-                    "Arquivos em disco sempre suportam acesso aleatório.",
+                    "Arquivos em disco suportam acesso aleatório.",
                     "Disk files always support random access.",
                     "\/D:\/repos\/rr\/source\/examples\/Stride.Utilities-remarks.md",
                     {
                         "creator": "Alexandre Castro",
-                        "createdTime": 1696716136740,
+                        "createdTime": 1696955977053,
                         "id": "tu5"
                     }
                 ],
                 [
                     "At the time of construction, the CanSeek property value is set to true or false depending on the underlying file type.",
-                    "No momento da construção, o valor da propriedade CanSeek é definido como verdadeiro ou falso, dependendo do tipo de arquivo subjacente.",
+                    "Durante a criação, o valor da propriedade CanSeek é definido como verdadeiro ou falso, dependendo do tipo de arquivo subjacente.",
                     " At the time of construction, the CanSeek property value is set to true or false depending on the underlying file type.",
                     "\/D:\/repos\/rr\/source\/examples\/Stride.Utilities-remarks.md",
                     {
                         "creator": "Alexandre Castro",
-                        "createdTime": 1696716136740,
+                        "createdTime": 1696956000070,
                         "id": "tu5"
                     }
                 ],
                 [
                     "If the underlying file type is FILE_TYPE_DISK, as defined in winbase.h, the CanSeek property value is true.",
-                    "Se o tipo de arquivo subjacente for FILE_TYPE_DISK, conforme definido em winbase.h, o valor da propriedade CanSeek será verdadeiro.",
+                    "Se o tipo de arquivo subjacente for FILE_TYPE_DISK, conforme definido em winbase.h, a propriedade CanSeek será definida como verdadeira.",
                     " If the underlying file type is FILE_TYPE_DISK, as defined in winbase.h, the CanSeek property value is true.",
                     "\/D:\/repos\/rr\/source\/examples\/Stride.Utilities-remarks.md",
                     {
                         "creator": "Alexandre Castro",
-                        "createdTime": 1696716136740,
+                        "createdTime": 1696956029420,
                         "id": "tu5"
                     }
                 ],
                 [
                     "Otherwise, the CanSeek property value is false.",
-                    "Caso contrário, o valor da propriedade CanSeek é falso.",
+                    "Caso contrário, a propriedade CanSeek será definida como falsa.",
                     " Otherwise, the CanSeek property value is false.",
                     "\/D:\/repos\/rr\/source\/examples\/Stride.Utilities-remarks.md",
                     {
                         "creator": "Alexandre Castro",
-                        "createdTime": 1696716136740,
+                        "createdTime": 1696956028068,
                         "id": "tu5"
                     }
                 ]
