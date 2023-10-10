@@ -1,84 +1,84 @@
-# Audio emitters
+# Emissores de áudio
 
-<span class="badge text-bg-primary">Beginner</span>
-<span class="badge text-bg-success">Programmer</span>
-<span class="badge text-bg-success">Designer</span>
+<span class="badge text-bg-primary">Iniciante</span>
+<span class="badge text-bg-success">Programação</span>
+<x id="1"/>Design<x id="2"/><span class="badge text-bg-success"></span>
 
-[Audio emitter components](xref:Stride.Audio.AudioEmitter) emit audio used to create [spatialized audio](spatialized-audio.md). You can add them to any entity.
+Os componentes de emissão de áudio são responsáveis por criar [áudio espacializado](xref:Stride.Audio.AudioEmitter).[](spatialized-audio.md) Você pode adicioná-los a qualquer entidade.
 
-The pitch and volume of the sound changes as the [audio listener](audio-listeners.md) moves closer to and away from the audio emitter.
+O tom e o volume do som mudam à medida que o [receptor de áudio](audio-listeners.md) se aproxima e se afasta do emissor de áudio.
 
 > [!Note]
-> You need at least one [AudioListenerComponent](xref:Stride.Audio.AudioListener) in the scene to hear audio from audio emitters.
+> Você precisa de pelo menos um [AudioListenerComponent](xref:Stride.Audio.AudioListener) na cena para captar o áudio dos emissores de áudio.
 
-## 1. Set up an audio emitter asset
+## 1. Configurar um recurso de emissor de áudio
 
-1. In the **Scene view**, select an entity you want to be an audio emitter.
+1. No **Visualizador de cenas**, selecione uma entidade que você deseja que seja um emissor de áudio.
 
-   ![Select an entity](media/audio-add-audiolistener-component-select-entity.png)
+   ![Selecionar uma entidade](media/audio-add-audiolistener-component-select-entity.png)
 
-2. In the **Property Grid**, click **Add component** and select **Audio Emitter**.
+2. No **Editor de Propriedades**, clique em **Adicionar componente** e selecione **Emissor de áudio**.
 
-   ![Add AudioEmitter Component](media/audio-add-audioemitter-component-select-entity.png)
+   ![Adicionar componente AudioEmitter](media/audio-add-audioemitter-component-select-entity.png)
 
-   Now we need to add audio to the emitter.
+   Agora precisamos adicionar um áudio ao emissor.
 
-3. Under **Audio Emitter**, click ![Green plus button](~/manual/game-studio/media/green-plus-icon.png) (**Add**) and specify a name for the audio.
+3. No **Emissor de áudio**, clique no ![botão verde](~/manual/game-studio/media/green-plus-icon.png) com o sinal de mais (**Adicionar**) e especifique um nome para o áudio.
 
-   ![Add new sound entry](media/audio-play-audioemitter-component-add-new-entry.png)
+   ![Adicionar nova entrada de som](media/audio-play-audioemitter-component-add-new-entry.png)
 
-4. From the **Asset View**, drag and drop an audio asset to the audio you just added:
+4. No **Visualizador de Recursos**, arraste e solte um recurso de áudio no áudio que você acabou de adicionar:
 
-   ![Drag and drop an audio asset](media/audio-play-drag-and-drop-audio-asset.gif)
+   ![Arrastar e soltar um recurso de áudio](media/audio-play-drag-and-drop-audio-asset.gif)
 
-   Alternatively, click ![Hand icon](~/manual/game-studio/media/hand-icon.png) (**Select an asset**).
+   Você também pode clicar no ![Ícone de mão](~/manual/game-studio/media/hand-icon.png) (**Selecionar um recurso**).
 
-   ![Pick up an asset](media/audio-play-audioemitter-component-pick-an-asset.png)
+   ![Selecionar um recurso](media/audio-play-audioemitter-component-pick-an-asset.png)
 
-   Then choose an audio asset:
+   Em seguida, escolha um recurso de áudio:
 
-   ![Select audio  asset](media/audio-play-audioemitter-component-add-select-audio-asset.png)
+   ![Selecionar um recurso de áudio](media/audio-play-audioemitter-component-add-select-audio-asset.png)
 
-5. Repeat steps 3 and 4 to add as many audio assets as you need.
+5. Repita os passos 3 e 4 para adicionar quantos recursos de áudio forem necessários.
 
-6. Configure the properties for this audio emitter.
+6. Configure as propriedades para este emissor de áudio.
 
-   ![Audio emitter properties](media/audio-emitter-properties.png)
+   ![Propriedades do emissor de áudio](media/audio-emitter-properties.png)
 
-| Property | Description |
+| Propriedade | Descrição |
 |--------------------|-------------
-| Use HRTF | Enable head-related transfer function (HRTF). With this enabled, sounds appear to come from a specific point in 3D space, synthesizing binaural audio. For more information, see [HRTF](hrtf.md). |
-| Directional factor | How directional the audio is, from 0 (min) to 1 (max). If set to 0, the audio is emitted from all directions. You can control this with a slider or number value. |
-| Environment | The reverb type for the audio, simulating reverberation of real environments (small, medium, large, or outdoors). |
+| Usar HRTF | Habilite a função de transferência relacionada à cabeça (HRTF). Com essa funcionalidade habilitada, os sons parecem vir de um ponto específico no espaço 3D, sintetizando áudio binaural. Para mais informações, consulte [HRTF](hrtf.md). |
+| Fator direcional | O quão direcional o áudio é, de 0 (mínimo) a 1 (máximo). Se definido como 0, o áudio é emitido de todas as direções. Você pode ajustar o fator direcional usando o controle deslizante ou inserindo um valor numérico. |
+| Ambiente | O tipo de reverberação para o áudio, simulando a reverberação de ambientes reais (pequeno, médio, grande ou ao ar livre). |
 
-## 2. Create a script to play the audio
+## 2. Criar um script para reproduzir o áudio
 
-Now we need to create a script to play and configure the audio asset.
+Agora precisamos criar um script para reproduzir e configurar o recurso de áudio.
 
-1. In your script, instantiate [AudioEmitterSoundController](xref:Stride.Audio.AudioEmitterSoundController) for each sound you want to use in the script.
+1. No seu script, instancie um [AudioEmitterSoundController](xref:Stride.Audio.AudioEmitterSoundController) para cada som que você deseja usar.
 
-   For example, say we have two sounds, **MySound1** and **MySound2**:
+   Por exemplo, digamos que temos dois sons, **MeuSom1** e **MeuSom2**:
 
    ```cs
    	AudioEmitterComponent audioEmitterComponent = Entity.Get<AudioEmitterComponent>();
-   	AudioEmitterSoundController mySound1Controller = audioEmitterComponent["MySound1"];
-   	AudioEmitterSoundController mySound2Controller = audioEmitterComponent["MySound2"];
+   	AudioEmitterSoundController mySound1Controller = audioEmitterComponent["MeuSom1"];
+   	AudioEmitterSoundController mySound2Controller = audioEmitterComponent["MeuSom2"];
    ```
 
-2. Use the following [AudioEmitterSoundController](xref:Stride.Audio.AudioEmitterSoundController) properties and methods to play and configure the audio:
+2. Use as seguintes propriedades e métodos de [AudioEmitterSoundController](xref:Stride.Audio.AudioEmitterSoundController) para reproduzir e configurar o áudio:
 
-| Property / method | Description |
+| Propriedade / método | Descrição |
 |-------    |-------|
-| [IsLooping](xref:Stride.Audio.AudioEmitterSoundController.IsLooping) | Loops audio. Has no effect if [PlayAndForget()](xref:Stride.Audio.AudioEmitterSoundController.PlayAndForget) is set to true. |
-| [Pitch](xref:Stride.Audio.AudioEmitterSoundController.Pitch) | Gets or sets sound pitch (frequency). Use with caution for spatialized audio. |
-| [PlayState](xref:Stride.Audio.AudioEmitterSoundController.PlayState) | Gets the current state of the audio emitter sound controller. |
-| [Volume](xref:Stride.Audio.AudioEmitterSoundController.Volume) | Volume of the audio. |
-| [Pause()](xref:Stride.Audio.AudioEmitterSoundController.Pause) | Pauses audio. |
-| [Play()](xref:Stride.Audio.AudioEmitterSoundController.Play) | Plays audio. |
-| [PlayAndForget()](xref:Stride.Audio.AudioEmitterSoundController.PlayAndForget) | Plays audio once, then clears the memory. Useful for short sounds such as gunshots. Overrides [IsLooping](xref:Stride.Audio.AudioEmitterSoundController.IsLooping). |
-| [Stop()](xref:Stride.Audio.AudioEmitterSoundController.Stop) | Stops audio. |
+| [IsLooping](xref:Stride.Audio.AudioEmitterSoundController.IsLooping) | Repete o áudio. Não tem efeito se [PlayAndForget()](xref:Stride.Audio.AudioEmitterSoundController.PlayAndForget) estiver definido como verdadeiro. |
+| [Pitch](xref:Stride.Audio.AudioEmitterSoundController.Pitch) | Obtém ou define o tom do som (frequência). Use com cuidado com áudio espacializado. |
+| [PlayState](xref:Stride.Audio.AudioEmitterSoundController.PlayState) | Obtém o estado atual do controlador de som do emissor de áudio. |
+| [Volume](xref:Stride.Audio.AudioEmitterSoundController.Volume) | Volume do áudio. |
+| [Pause()](xref:Stride.Audio.AudioEmitterSoundController.Pause) | Pausa o áudio. |
+| [Play()](xref:Stride.Audio.AudioEmitterSoundController.Play) | Reproduz o áudio. |
+| [PlayAndForget()](xref:Stride.Audio.AudioEmitterSoundController.PlayAndForget) | Reproduz o áudio uma vez e, em seguida, limpa a memória. Útil para sons curtos, como tiros. Substitui [IsLooping](xref:Stride.Audio.AudioEmitterSoundController.IsLooping). |
+| [Stop()](xref:Stride.Audio.AudioEmitterSoundController.Stop) | Para o áudio. |
 
-For example:
+Por exemplo:
 
 ```cs
 mySound1Controller.IsLooping = true;
@@ -87,21 +87,21 @@ mySound1Controller.Volume = 0.5f;
 mySound1Controller.Play();
 ```
 
-This sound will loop at double the original pitch and half the original volume. For more information, see the [AudioEmitterSoundController Stride API documentation](xref:Stride.Audio.AudioEmitterSoundController).
+Este som será repetido com o dobro do tom original e metade do volume original. Para mais informações, consulte a documentação da API do Stride sobre [AudioEmitterSoundController](xref:Stride.Audio.AudioEmitterSoundController).
 
-## 3. Add the script to the audio emitter entity
+## 3. Adicionar o script à entidade emissor de áudio
 
-Game Studio lists the script as a component under **Add component**. Add the script to the audio emitter entity.
+O Game Studio lista o script como um componente em **Adicionar componente**. Adicione o script à entidade emissor de áudio.
 
-1. In the **Scene view**, select an entity you want to be an audio emitter.
+1. No **Visualizador de cenas**, selecione uma entidade que você deseja que seja um emissor de áudio.
 
-   ![Select an entity](media/audio-add-audiolistener-component-select-entity.png)
+   ![Selecionar uma entidade](media/audio-add-audiolistener-component-select-entity.png)
 
-2. Click **Add component** and select the script.
+2. Clique em **Adicionar componente** e selecione o script.
 
-   ![Add audio script](media/add-sound-script.png)
+   ![Adicionar script de áudio](media/add-sound-script.png)
 
-## See also
-* [Spatialized audio](spatialized-audio.md)
-* [Audio listeners](audio-listeners.md)
-* [Global audio settings](global-audio-settings.md)
+## Veja também
+* [Áudio espacializado](spatialized-audio.md)
+* [Receptores de áudio](audio-listeners.md)
+* [Configurações globais de áudio](global-audio-settings.md)

@@ -12,5 +12,5 @@ A propriedade IsAsync indica se o identificador de arquivo foi aberto de forma a
 
 O método Seek oferece suporte ao acesso aleatório a arquivos,  permitindo que a posição de leitura/escrita seja movida para qualquer ponto dentro do arquivo. Isso é feito por meio de parâmetros que indicam o deslocamento em bytes em relação a um ponto de referência de busca. O ponto de referência pode ser o início, a posição atual ou o final do arquivo subjacente, conforme representado pelos três membros da enumeração SeekOrigin.
 
-> [!CAUTION]
+> [!Caution]
 > Arquivos em disco suportam acesso aleatório. Durante a criação, o valor da propriedade CanSeek é definido como verdadeiro ou falso, dependendo do tipo de arquivo subjacente. Se o tipo de arquivo subjacente for FILE_TYPE_DISK, conforme definido em winbase.h, a propriedade CanSeek será definida como verdadeira. Caso contrário, a propriedade CanSeek será definida como falsa.

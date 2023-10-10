@@ -18,7 +18,7 @@ Por exemplo, imagine que você tem dois modelos: um cavaleiro e uma espada. O pe
 
 ## Configure um componente de link de nó de modelo.
 
-1. No **Editor de Cenas**, selecione a entidade à qual você deseja vincular a um nó de outra entidade.
+1. No **Editor de cenas**, selecione a entidade à qual você deseja vincular a um nó de outra entidade.
 
 2. No **Editor de Propriedades**, clique em **Adicionar componente** e selecione **Link de nó de modelo**.
 

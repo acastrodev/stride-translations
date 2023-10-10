@@ -86,7 +86,7 @@ Você pode usar animações aditivas com animações que usam o mesmo esqueleto 
 
 3. Recompile seu projeto para aplicar as alterações.
 
-4. No **Editor de Cenas**, selecione a entidade que você deseja animar.
+4. No **Visualizador de cenas**, selecione a entidade que você deseja animar.
 
    ![Selecione uma entidade](media/animations-use-3d-animations-select-entity.png)
 
@@ -99,7 +99,7 @@ Você pode usar animações aditivas com animações que usam o mesmo esqueleto 
 
    O Game Studio adicionará um componente de animação à entidade.
 
-6. Clique em **Adicionar componente** e escolha o script **AnimationStart**.
+6. Clique em **Adicionar componente** e selecione o script **AnimationStart**.
 
    ![Adicionar script de início de animação](media/add-animation-start-script.png)
 

@@ -8,7 +8,7 @@ Depois de [importar recursos de animação](import-animations.md), você precisa
 
 ## 1. Adicionar recursos de animação a uma entidade
 
-1. No **Editor de Cenas**, selecione a entidade que você deseja animar.
+1. No **Editor de cenas**, selecione a entidade que você deseja animar.
 
    ![Selecionar uma entidade](media/select-entity.png)
 
@@ -70,11 +70,11 @@ Para mais informações sobre a criação de scripts de animação, consulte [Sc
 
 ## 3. Adicionar o script à entidade
 
-1. No **Editor de Cenas**, selecione a entidade que você deseja animar.
+1. No **Editor de cenas**, selecione a entidade que você deseja animar.
 
    ![Selecionar uma entidade](media/select-entity.png)
 
-2. No **Editor de Propriedades**, clique em **Adicionar componente** e escolha o script de animação que deseja adicionar.
+2. No **Editor de Propriedades**, clique em **Adicionar componente** e selecione o script de animação que deseja adicionar.
 
    ![Selecionar uma entidade](media/add-animation-script-component.png)
 
