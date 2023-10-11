@@ -1,4 +1,4 @@
-# Propriedades de ativos de áudio
+# Propriedades de recurso de áudio
 
 Após selecionar um recurso de áudio no **Visualizador de Recursos**, você pode configurar suas propriedades no **Editor de Propriedades**.
 

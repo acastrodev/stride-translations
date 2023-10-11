@@ -32,7 +32,7 @@
 ## [Animação aditiva](animation/additive-animation.md)
 ## [Animação procedural](animation/procedural-animation.md)
 ## [Árvores de transição personalizadas](animation/custom-blend-trees.md)
-## [Model node links](animation/model-node-links.md)
+## [Links de nó de modelo](animation/model-node-links.md)
 ## [Atributos personalizados](animation/custom-attributes.md)
 
 # [Áudio](audio/index.md)

@@ -76,4 +76,4 @@ Se você tiver um atributo personalizado no arquivo de animação...
 * [Animação aditiva](additive-animation.md)
 * [Animação procedural](procedural-animation.md)
 * [Árvores de transição personalizadas](custom-blend-trees.md)
-* [Model node links](model-node-links.md)
+* [Links de nó de modelo](model-node-links.md)
