@@ -10,4 +10,4 @@ Vamos abordar estes tópicos:
 - Logging
 - Depuração
 
-> <x1\/>!Vídeo https:\/\/www.youtube.com\/embed\/Z2kUQhSmdr0<x2\/>
+> [!Vídeo https://www.youtube.com/embed/Z2kUQhSmdr0]

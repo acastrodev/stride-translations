@@ -9,9 +9,9 @@
 <source xml:lang="en"><x id="1"/>Beginner<x id="2"/>
 <x id="3"/>Designer<x id="4"/>
 <x id="5"/>Programmer<x id="6"/></source>
-<target xml:lang="pt">&lt;x1\/&gt;Introdução&lt;x2\/&gt;
-&lt;x3\/&gt;Designer&lt;x4\/&gt;
-&lt;x5\/&gt;Programação&lt;x6\/&gt;</target>
+<target xml:lang="pt"><x id="1"/>Introdução<x id="2"/>
+<x id="3"/>Designer<x id="4"/>
+<x id="5"/>Programação<x id="6"/></target>
 </trans-unit>
 <trans-unit id="tu3" xml:space="preserve">
 <source xml:lang="en">By default, Stride plays audio directly from memory. This is useful for short sound effects such as gunshots or footsteps.</source>
@@ -19,7 +19,7 @@
 </trans-unit>
 <trans-unit id="tu4" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Non-streamed audio<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt; Áudio não &lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/> Áudio não <x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu5" xml:space="preserve">
 <source xml:lang="en">Alternatively, Stride can buffer audio and stream it in sequences. As soon as the first sequence is buffered, Stride plays it while buffering the following sequences in parallel. This saves a lot of memory when used for larger audio files such as background music and character dialogue.</source>
@@ -28,12 +28,12 @@
 <trans-unit id="tu6" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>!Note<x id="2"/>
 Streaming audio increases latency unless you preload it with the ReadyToPlay task (see below).</source>
-<target xml:lang="pt">&lt;x1\/&gt;!Note&lt;x2\/&gt;
+<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
 Streaming de áudio aumenta a latência a menos que você preload com a tarefa ReadyToPlay (veja abaixo).</target>
 </trans-unit>
 <trans-unit id="tu7" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Streamed audio<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt;Streamed audio&lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/>Streamed audio<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu8" xml:space="preserve">
 <source xml:lang="en">To stream an audio asset:</source>
@@ -49,7 +49,7 @@ Streaming de áudio aumenta a latência a menos que você preload com a tarefa R
 </trans-unit>
 <trans-unit id="tu11" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Audio asset properties<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt;Audio asset properties&lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/>Audio asset properties<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu12" xml:space="preserve">
 <source xml:lang="en">In the script for the asset, you can configure an audio file to play once the audio engine buffers enough audio samples. To do this, use this task:</source>

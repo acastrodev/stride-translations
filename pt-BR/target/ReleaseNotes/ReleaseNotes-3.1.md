@@ -945,5 +945,5 @@ xwellingtonx (1):
 
 Gerado usando
 ```
-git shortlog origin\/master-3.0..origin\/master-3.1 -w0,0 --pretty=formato:"* %s [view commit](https:\/\/github.com\/xenko3d\/xenko\/commit\/%H)" | sed -r "s\/#([:digit:]*)\/[#\1](https:\\/\\/github.com\\/xenko3d\\/xenko\\/issues\\/\1)\/g"
+git shortlog origin\/master-3.0..origin\/master-3.1 -w0,0 --pretty=formato:"* %s [view commit](https:\/\/github.com\/xenko3d\/xenko\/commit\/%H)" | sed -r "s\/#([:digit:]*)\/[#\1](https:\/\/github.com\/xenko3d\/xenko\/issues\/\1)\/g"
 ```

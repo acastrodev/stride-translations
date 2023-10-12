@@ -2,7 +2,7 @@
 
 <x1\/> Intermediário <x2\/>
 <x3\/>Artista <x4\/>
-<x5\/> Programador <x6\/>
+<x5\/>Programação<x6\/>
 
 **Initializadores** controlam os estados de partículas como posição, velocidade, tamanho e assim por diante quando as partículas são primeiro desovadas. Eles não têm efeito sobre partículas geradas em quadros anteriores.
 

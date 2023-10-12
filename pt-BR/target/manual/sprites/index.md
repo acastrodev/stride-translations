@@ -2,7 +2,7 @@
 
 As aplicações 2D são feitas de **sprites**.
 
-<x1\/> Folha de preços <x2\/>
+![ Folha de preços ](media/SpriteEntity.png)
 
 A maneira mais eficiente de renderizar sprites é adicioná-los todos a uma folha **sprite**, uma única imagem. Você pode então definir regiões da folha de sprite como diferentes sprites no Editor Sprite do Game Studio. Depois de definir sprites, você pode adicioná-los a entidades usando componentes sprite e renderizá-los com scripts.
 

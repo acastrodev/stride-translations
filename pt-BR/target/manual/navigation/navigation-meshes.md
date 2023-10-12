@@ -2,7 +2,7 @@
 
 <x1\/>Introdução<x2\/>
 <x3\/> Designer de nível <x4\/>
-<x5\/> Programador <x6\/>
+<x5\/>Programação<x6\/>
 
 ** malhas de navegação** formam a área que as entidades com componentes de navegação podem navegar. Stride cria uma camada na malha de navegação para cada grupo de navegação [navigação](navigation-groups.md) que você cria.
 

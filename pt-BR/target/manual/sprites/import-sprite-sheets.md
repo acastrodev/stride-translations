@@ -1,7 +1,7 @@
 # Folhas de sprite de importação
 
-<x1\/>Introdução<x2\/>
-<x3\/>Designer<x4\/>
+<span class="badge text-bg-primary">Introdução</span>
+<span class="badge text-bg-success">Designer</span>
 
 Você pode importar folhas de sprite (arquivos de imagem contendo sprites) como qualquer outro tipo de ativo.
 
@@ -19,10 +19,10 @@ Você pode importar folhas de sprite (arquivos de imagem contendo sprites) como 
 
    Se você quiser usar a folha de sprite para elementos de interface do usuário, como botões de menu, selecione **Falha privada - UI sprites**. Isso permite definir fronteiras para o sprite (ver [Set sprite border](set-sprite-borders.md)). Caso contrário, selecione **Fabricação prita - 2D sprites**.
 
-   > <x1\/>!Note<x2\/>
+   > [!Note]
    > Você pode mudar isso a qualquer momento. Para mais informações, consulte [Edit sprites](edit-sprites.md).
 
-   <x1\/>Criar do arquivo<x2\/>
+   ![Criar do arquivo](media/create-and-add-assets-import-directly-from-file.png)
 
    Game Studio adiciona um ativo sprite folha.
 
