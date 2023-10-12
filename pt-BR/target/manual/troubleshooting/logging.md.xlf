@@ -8,8 +8,8 @@
 <trans-unit id="tu2" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Intermediate<x id="2"/>
 <x id="3"/>Programmer<x id="4"/></source>
-<target xml:lang="pt">&lt;x1\/&gt; Intermediário &lt;x2\/&gt;
-&lt;x3\/&gt;Programação&lt;x4\/&gt;</target>
+<target xml:lang="pt"><x id="1"/> Intermediário <x id="2"/>
+<x id="3"/>Programação<x id="4"/></target>
 </trans-unit>
 <trans-unit id="tu3" xml:space="preserve">
 <source xml:lang="en">You can <g id="1">log</g> information about your game while it runs using <g id="2">Log</g>.</source>
@@ -22,7 +22,7 @@
 <trans-unit id="tu5" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>!Note<x id="2"/>
 Logging is disabled when you build the game in release mode.</source>
-<target xml:lang="pt">&lt;x1\/&gt;!Note&lt;x2\/&gt;
+<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
 Logging é desativado quando você construir o jogo no modo de lançamento.</target>
 </trans-unit>
 <trans-unit id="tu6" xml:space="preserve">
@@ -33,7 +33,7 @@ O nome do módulo (como o script contendo a mensagem de log) é exibido em supor
 </trans-unit>
 <trans-unit id="tu7" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Logging in console<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt;Logging em console&lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/>Logging em console<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu8" xml:space="preserve">
 <source xml:lang="en">The console displays log messages from all modules, not just your own scripts. For example, it also displays messages from the @'Stride.Core.Serialization.Contents.ContentManager'.</source>
@@ -45,7 +45,7 @@ O nome do módulo (como o script contendo a mensagem de log) é exibido em supor
 </trans-unit>
 <trans-unit id="tu10" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Log output window<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt;Log janela de saída&lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/>Log janela de saída<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu11" xml:space="preserve">
 <source xml:lang="en">Log levels</source>
@@ -182,7 +182,7 @@ O nome do módulo (como o script contendo a mensagem de log) é exibido em supor
 <trans-unit id="tu43" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>!Note<x id="2"/>
 This isn't a global setting. The log level you set only applies to the script you set it in.</source>
-<target xml:lang="pt">&lt;x1\/&gt;!Note&lt;x2\/&gt;
+<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
 Isto não é um cenário global. O nível de log que você definiu só se aplica ao script que você configurou.</target>
 </trans-unit>
 <trans-unit id="tu44" xml:space="preserve">
@@ -204,7 +204,7 @@ Isto não é um cenário global. O nível de log que você definiu só se aplica
 // Disables logging of the RouterClient module
 </source>
 <target xml:lang="pt">GlobalLogger.GetLogger("RouterClient"). ActivateLog (LogMessageType.Debug, LogMessageType.Fatal, false); 
-\/\/ Desativa o registro do módulo RouterClient
+// Desativa o registro do módulo RouterClient
 </target>
 </trans-unit>
 <trans-unit id="tu48" xml:space="preserve">
@@ -297,7 +297,7 @@ namespace MyGame
 
         anula de sobreposição pública Start()
         (
-            \/\/ Inicialização do script.
+            // Inicialização do script.
             Log.ActivateLog (LogMessageType.Debug);
             Log.Debug("Start loading MyTexture");
 

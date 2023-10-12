@@ -15,7 +15,7 @@ Cada cena é carregada como uma cena infantil e demonstra um script de amostra.
 
 Todos os tutoriais são acompanhados por um vídeo do YouTube. Você pode assistir toda a lista de reprodução C# Beginners aqui.
 
-> <x1\/>!Vídeo https:\/\/www.youtube.com\/embed\/videoseries?list=PLRZx2y7uC8mNySUMfOQf-TLNVnnHkLfPi<x2\/>
+> [!Vídeo https://www.youtube.com/embed/videoseries?list=PLRZx2y7uC8mNySUMfOQf-TLNVnnHkLfPi]
 
 ## Todos os tutoriais
 <div class="row g-4 mb-4">

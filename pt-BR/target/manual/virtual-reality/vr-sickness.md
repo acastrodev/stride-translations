@@ -14,21 +14,21 @@ Para desativar o movimento da câmera de entradas diferentes de dispositivos VR:
 
 1. No **Asset View** (no painel inferior por padrão), clique duas vezes no **Graphics Compositor** ativo.
 
-   <x1\/>Graphics compositor asset<x2\/>
+   ![Graphics compositor asset](../graphics/graphics-compositor/media/graphics-compositor-asset.png)
 
    O editor de compositores gráficos abre.
 
 2. Selecione o **ForwardRenderer**.
 
-   <x1\/>Selecionar renderizador <x2\/>
+   ![Selecionar renderizador ](media/select-forward-renderer.png)
 
 3. No **Property Grid** (à direita por padrão), expanda **VR Settings**.
 
-   <x1\/>VR configurações<x2\/>
+   ![VR configurações](media/vr-settings.png)
 
 4. Selecione **Ignore rotação da câmera**.
 
-   <x1\/>Ignore a rotação da câmera<x2\/>
+   ![Ignore a rotação da câmera](media/ignore-camera-rotation.png)
 
 Para obter mais informações sobre o compositor gráfico, consulte a página [Graphics compositor](../graphics/graphics-compositor/index.md).
 

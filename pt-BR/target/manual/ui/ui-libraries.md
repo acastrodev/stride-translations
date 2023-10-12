@@ -1,14 +1,14 @@
 # Bibliotecas de interface
 
-<x1\/>Introdução<x2\/>
-<x3\/>Artista <x4\/>
-<x5\/>Designer<x6\/>
+<span class="badge text-bg-primary">Introdução</span>
+<span class="badge text-bg-success">Artista </span>
+<span class="badge text-bg-success">Designer</span>
 
 **UI bibliotecas** contêm **UI elementos** tais como grades, botões, controles deslizantes e assim por diante que você pode usar e reutilizar em suas páginas [UI](UI-pages.md).
 
 Os projetos Stride incluem uma biblioteca padrão **** de elementos UI. Você pode criar suas próprias bibliotecas de elementos personalizados também.
 
-<x1\/>UI biblioteca<x2\/>
+![UI biblioteca](media/UI-library.png)
 
 As bibliotecas de interface de usuário são semelhantes a [prefabs](../game-studio/prefabs/index.md) no Editor de cenas; você pode criar seus próprios elementos, salvá-los em uma biblioteca de interface de usuário personalizada e, em seguida, usá-los onde você precisar em várias páginas de interface de usuário. Você também pode aninhar bibliotecas dentro de outras bibliotecas, assim como [nested prefabs](../game-studio/prefabs/nested-prefabs.md).
 
@@ -18,11 +18,11 @@ No tempo de execução, você pode re-instancializar as raízes da biblioteca UI
 
 No **Asset View**, clique em **Add asset > UI > UI library**.
 
-<x1\/> Adicionar biblioteca UI<x2\/>
+![ Adicionar biblioteca UI](media/add-ui-library.png)
 
 Game Studio adiciona a biblioteca UI para o **Asset View**.
 
-<x1\/>Adicionado biblioteca UI<x2\/>
+![Adicionado biblioteca UI](media/added-ui-library.png)
 
 Alternativamente, para criar uma biblioteca UI de um elemento UI existente:
 
@@ -30,29 +30,29 @@ Alternativamente, para criar uma biblioteca UI de um elemento UI existente:
 
 2. Clique com o botão direito e selecione **Criar biblioteca de seleção**.
 
-<x1\/>Adicionado biblioteca UI<x2\/>
+![Adicionado biblioteca UI](media/create-library-from-selection.png)
 
 Game Studio cria uma biblioteca com uma cópia dos elementos que você selecionou.
 
 ## Atribuir uma biblioteca UI em código
 
 ```cs
-\/\/ Esta propriedade pode ser atribuída a partir de um ativo de biblioteca UI no Game Studio
+// Esta propriedade pode ser atribuída a partir de um ativo de biblioteca UI no Game Studio
 público UILibrary MyLibrary { get; set; }
 
 botão público Criar botão()
 (
-    \/\/ assumindo que há um elemento raiz chamado "MyButton" do tipo (ou derivado de) Botão
+    // assumindo que há um elemento raiz chamado "MyButton" do tipo (ou derivado de) Botão
     var button = MyLibrary.InstantiateElement<Button>("MyButton");
 
-    \/\/ se não houver raiz chamada "MyButton" na biblioteca ou o tipo não coincide,
-    \/\/ o método anterior retornará null
+    // se não houver raiz chamada "MyButton" na biblioteca ou o tipo não coincide,
+    // o método anterior retornará null
     se (botão)
     (        
-        \/\/ anexar um delegado ao evento Click
+        // anexar um delegado ao evento Click
         alguma Button. - Sim. Anexo
         (
-            \/\/ fazer algo aqui...
+            // fazer algo aqui...
         };
     }
 

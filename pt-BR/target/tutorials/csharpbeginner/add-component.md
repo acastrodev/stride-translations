@@ -8,10 +8,10 @@ No tutorial anterior aprendemos como podemos recuperar componentes que já estã
 
 Podemos adicionar o mesmo componente várias vezes à mesma entidade. Também aprendemos como remover todos os componentes do mesmo tipo novamente.
 
-<x1\/> Adicionar um componente<x2\/>
+![ Adicionar um componente](media/adding-a-component.webp)
 
 
-> <x1\/>!Vídeo https:\/\/www.youtube.com\/embed\/KGuBSRyRmVo<x2\/>
+> [!Vídeo https://www.youtube.com/embed/KGuBSRyRmVo]
 
 ## Código
 ### AmmoComponent

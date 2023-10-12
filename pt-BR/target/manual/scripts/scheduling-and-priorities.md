@@ -1,7 +1,7 @@
 # Programação e prioridades
 
 <x1\/>Introdução<x2\/>
-<x3\/> Programador <x4\/>
+<x3\/>Programação<x4\/>
 
 Stride não executa scripts simultaneamente; eles executam um de cada vez. Onde os scripts dependem uns dos outros, você deve ter certeza de que eles funcionam na ordem correta, dando-lhes prioridades.
 

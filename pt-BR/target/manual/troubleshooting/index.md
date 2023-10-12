@@ -2,7 +2,7 @@
 
 Estas páginas descrevem como corrigir problemas com o Stride.
 
-<x1\/> Solução de problemas <x2\/>
+![ Solução de problemas ](media/troubleshooting.png)
 
 * [Logging](logging.md)
 * [Texto de depuração](debug-text.md)

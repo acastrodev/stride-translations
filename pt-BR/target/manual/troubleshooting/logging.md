@@ -1,25 +1,25 @@
 # Logging
 
-<x1\/> Intermediário <x2\/>
-<x3\/>Programação<x4\/>
+<span class="badge text-bg-primary"> Intermediário </span>
+<span class="badge text-bg-success">Programação</span>
 
 Você pode **log** informações sobre o seu jogo enquanto ele é executado usando [Log](xref:Stride.Engine.ScriptComponent.Log).
 
 Ao contrário de [profiling](profiling.md), que recupera informações automaticamente, cabe a você criar suas próprias mensagens de log e definir quando elas são acionadas. Por exemplo, você pode criar uma mensagem de log que dispara quando um personagem executa uma determinada ação. Isso é útil para investigar como seu jogo está executando.
 
-> <x1\/>!Note<x2\/>
+> [!Note]
 > Logging é desativado quando você construir o jogo no modo de lançamento.
 
 Quando você usa o registro e executa seu jogo no modo de depuração, o Stride abre um console em uma segunda janela para exibir informações de registro. As mensagens são codificadas por nível.
 O nome do módulo (como o script contendo a mensagem de log) é exibido em suportes. Isso é seguido pelo nível de log (por exemplo **Warning**, **Error**, etc), então a mensagem de log.
 
-<x1\/>Logging em console<x2\/>
+![Logging em console](media/logging-in-console.png)
 
 O console exibe mensagens de log de todos os módulos, não apenas seus próprios scripts. Por exemplo, também exibe mensagens do @'Stride.Core.Serialization.Contents.ContentManager'.
 
 Se você executar seu jogo do Visual Studio, as mensagens de log são mostradas na janela Visual Studio **Output** em vez disso.
 
-<x1\/>Log janela de saída<x2\/>
+![Log janela de saída](media/log-output-in-visual-studio.png)
 
 ## Níveis de registo
 
@@ -56,7 +56,7 @@ Você pode definir um nível mínimo de log para exibir. Por exemplo, se você q
 Log.ActivateLog (LogMessageType.Warning);
 ```
 
-> <x1\/>!Note<x2\/>
+> [!Note]
 > Isto não é um cenário global. O nível de log que você definiu só se aplica ao script que você configurou.
 
 ### Alterar o nível de log no tempo de execução
@@ -69,7 +69,7 @@ Log.ActivateLog (LogMessageType.Warning);
 
 ```cs
 GlobalLogger.GetLogger("RouterClient"). ActivateLog (LogMessageType.Debug, LogMessageType.Fatal, false); 
-\/\/ Desativa o registro do módulo RouterClient
+// Desativa o registro do módulo RouterClient
 ```
 
 ### Desativar o registro no console
@@ -111,7 +111,7 @@ namespace MyGame
 
         anula de sobreposição pública Start()
         (
-            \/\/ Inicialização do script.
+            // Inicialização do script.
             Log.ActivateLog (LogMessageType.Debug);
             Log.Debug("Start loading MyTexture");
 

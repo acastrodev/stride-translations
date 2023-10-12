@@ -6,13 +6,13 @@ Para quebrar assim que uma exceção for lançada, adicione condições adiciona
 
 1. Na barra de ferramentas do Visual Studio, sob o menu **Debug**, selecione **Windows > Configurações de exceção**.
 
-   <x1\/> Configurações de percepção <x2\/>
+   ![ Configurações de percepção ](media/exception-settings.png)
 
 2. Expandir ** Common Language Runtime Exceções** e selecione ** Todas as Exceções de tempo de execução de linguagem comum não nesta lista**. Você pode precisar selecionar outras condições também.
 
-   <x1\/> Todas as exceções de tempo de execução de linguagem comum não nesta lista<x2\/>
+   ![ Todas as exceções de tempo de execução de linguagem comum não nesta lista](media/all-common-language-runtime-exceptions.png)
 
-> <x1\/>!Tip<x2\/>
-> Para restaurar a lista padrão de exceções, clique com o botão direito do mouse e selecione **Restore Defaults**.
+> [!Tip]
+> To restore the default list of exceptions, right-click and select **Restore Defaults**.
 
 Para obter mais informações sobre como gerenciar exceções no Visual Studio, consulte exceções [Manage com o depurador no Visual Studio](https://docs.microsoft.com/en-us/visualstudio/debugger/managing-exceptions-with-the-debugger) na documentação do Microsoft Visual Studio.

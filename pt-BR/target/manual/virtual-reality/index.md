@@ -2,13 +2,13 @@
 
 O Stride atualmente suporta os dispositivos Oculus Rift e Vive realidade virtual (VR).
 
-<x1\/> Realidade virtual <x2\/>
+![ Realidade virtual ](media/virtual-reality.png)
 
 ## Modelo de RV
 
 O Stride inclui um modelo VR que você pode usar para verificar a implementação VR.
 
-<x1\/>VR template<x2\/>
+![VR template](media/template-virtual-reality.png)
 
 ## Nesta secção
 

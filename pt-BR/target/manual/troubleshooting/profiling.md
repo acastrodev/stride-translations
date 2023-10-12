@@ -1,27 +1,27 @@
 # Perfil
 
-<x1\/>Introdução<x2\/>
-<x3\/>Programação<x4\/>
+<span class="badge text-bg-primary">Introdução</span>
+<span class="badge text-bg-success">Programação</span>
 
 Você pode **profile** seu projeto para verificar seu desempenho de tempo de execução e encontrar problemas. Use o script Stride **Game Profiler** ou uma ferramenta de perfil externo, como o Performance Profiler no Visual Studio.
 
-<x1\/> Perfil <x2\/>
+![ Perfil ](media/profiling.png)
 
 ## Perfil com o script Stride **Game Profiler**
 
 O script **Game Profiler** mostra como os custos de desempenho mudam em tempo de execução. Isso ajuda a isolar gargalos e encontrar sua causa.
 
-<x1\/> Perfil em tempo de execução<x2\/>
+![ Perfil em tempo de execução](media/profiling-profiler-at-runtime.jpg)
 
 Para usar o script:
 
-1. No **Asset View**, clique em <x1\/>Adicionar novo botão de ativo<x2\/> e selecione **Scripts > Game Profiler**.
+1. No **Asset View**, clique em ![Adicionar novo botão de ativo](media/profiling-add-new-asset-button.png) e selecione **Scripts > Game Profiler**.
 
-   <x1\/> Adicionar Perfil do Jogo script<x2\/>
+   ![ Adicionar Perfil do Jogo script](media/profiling-add-game-profiler-script.png)
 
 2. O **Novo script diálogo** abre. Deixe as informações padrão e clique em **Create script**.
 
-   <x1\/> Novo script<x2\/>
+   ![ Novo script](media/create-profiler-script.png)
 
    Game Studio adiciona o script GameProfiler ao seu projeto.
 
@@ -31,29 +31,29 @@ Para usar o script:
 
 5. No **Property Grid** (à direita por padrão), ative o componente **Game Profiler**.
 
-   <x1\/> Habilitar componente<x2\/>
+   ![ Habilitar componente](media/enable-profiler-component.png)
 
-   > <x1\/>!Tip<x2\/>
+   > [!Tip]
    > Você também pode ativar e desativar o profiler no tempo de execução com **Left Ctrl + Esquerda Shift + P**.
 
 6. Corre o jogo.
 
    O Game Profiler mostra os resultados de profiling à medida que o seu jogo é executado.
 
-   > <x1\/>!Note<x2\/>
+   > [!Note]
    > Game Profiler desabilita VSync. Isso lhe dá os verdadeiros valores de perfil, ignorando o tempo de sincronização.
 
 ### Propriedades do Game Profiler
 
 Para alterar as propriedades do Game Profiler, selecione a entidade **GameProfiler** e use o **Property Grid**.
 
-<x1\/>Profiler properties<x2\/>
+![Profiler properties](media/profiler-properties.png)
 
 | Propriedade | Descrição |
 | -------- | --------
 | Filtro | O tipo de informação que o profiler exibe (apenas FPS, CPU ou GPU). No tempo de execução, mude com **F1**. |
-| Ordenar por | Ordenar as páginas de resultados por: <x1\/><p>**Nome**: a chave de perfil (a coisa sendo perfilada) <x1\/><p>**Time**: a chave que usa mais tempo <x1\/><p>No tempo de execução, alterne com **F2**. |
-| Intervalo de atualização (ms) | Com que frequência o profiler recebe e exibe novos resultados. No tempo de execução, controle com **- \/ +**. |
+| Ordenar por | Ordenar as páginas de resultados por: <br><p>**Nome**: a chave de perfil (a coisa sendo perfilada) <br><p>**Time**: a chave que usa mais tempo <br><p>No tempo de execução, alterne com **F2**. |
+| Intervalo de atualização (ms) | Com que frequência o profiler recebe e exibe novos resultados. No tempo de execução, controle com **- / +**. |
 | Página de exibição | A página de resultados exibida. No tempo de execução, pule para uma página com as teclas de número ****, ou mova para a frente e para trás com **F3** e **F4**. |
 | Cor do texto | A cor do texto do profiler |
 | Prioridade | Veja [Esquecimento e prioridades](../scripts/scheduling-and-priorities.md) |
@@ -62,7 +62,7 @@ Para alterar as propriedades do Game Profiler, selecione a entidade **GameProfil
 
 A linha superior exibe informações sobre o desempenho básico.
 
-<x1\/>FPS profiling<x2\/>
+![FPS profiling](media/fps-profiling.png)
 
 * `Displaying`: o tipo de informação que o profiler exibe (apenas FPS, CPU ou GPU)
 * `Frame`: o quadro atual
@@ -72,7 +72,7 @@ A linha superior exibe informações sobre o desempenho básico.
 
 Se você selecionar **CPU** como o modo de exibição, o profiler exibe:
 
-<x1\/>CPU profiling<x2\/>
+![CPU profiling](media/fps-cpu.png)
 
 * `Total`: a quantidade de memória utilizada atualmente
 * `Peak`: o uso de memória de pico desde o início do jogo
@@ -81,7 +81,7 @@ Se você selecionar **CPU** como o modo de exibição, o profiler exibe:
 
 Se você selecionar **GPU** como o modo de exibição, o profiler exibe:
 
-<x1\/>GPU profiling<x2\/>
+![GPU profiling](media/fps-gpu.png)
 
 * `Device`: o dispositivo gráfico (descrição do fabricante)
 * `Platform`: o backend usado atualmente (por exemplo, DirectX, OpenGL, Vulkan, etc)
@@ -94,20 +94,20 @@ Se você selecionar **GPU** como o modo de exibição, o profiler exibe:
 
 Nos modos **GPU** e **CPU**, o profiler exibe informações sobre as partes do código sendo perfilado, incluindo scripts ativos.
 
-<x1\/>Colunas do perfil<x2\/>
+![Colunas do perfil](media/profiler-columns.png)
 
-> <x1\/>!Note<x2\/>
+> [!Note]
 > Cada valor descreve os eventos por quadro desde a última atualização do profiler.
 
 | Coluna | Descrição |
 --------|--------
 | `TOTAL` | O tempo total tomado para executar o código em um quadro |
-| `AVG\/CALL` | Tempo médio tomado para executar uma única chamada do código |
-| `MIN\/CALL` | A menor quantidade de tempo tomada para executar uma única chamada do código |
-| `MAX\/CALL` | A maior quantidade de tempo tomada para executar uma única chamada do código |
+| `AVG/CALL` | Tempo médio tomado para executar uma única chamada do código |
+| `MIN/CALL` | A menor quantidade de tempo tomada para executar uma única chamada do código |
+| `MAX/CALL` | A maior quantidade de tempo tomada para executar uma única chamada do código |
 | `CHAMADAS` | O número de vezes que o código foi executado em um quadro |
 | `MARKS` | O número de vezes por quadro marcado código é executado. Esta coluna só é exibida se o código marcado for executado |
-| `PROFILE KEY \/ EXTRA INFO` | A parte do código (como uma função ou script) está sendo perfilada. Esta coluna também exibe informações adicionais, como o número de entidades afetadas. |
+| `PROFILE KEY / EXTRA INFO` | A parte do código (como uma função ou script) está sendo perfilada. Esta coluna também exibe informações adicionais, como o número de entidades afetadas. |
 
 ### Controles de tempo de execução do Game Profiler
 
@@ -115,11 +115,11 @@ Você pode alterar as configurações do Game Profiler em tempo de execução us
 
 | Acção | Controlo |
 --------|--------
-| Esquerda Ctrl + Esquerda Shift + P | Habilitar\/desativar o profiler |
+| Esquerda Ctrl + Esquerda Shift + P | Habilitar/desativar o profiler |
 | F1 | Alternar entre CPU, GPU e resultados somente FPS |
 | F2 | Alternar entre a classificação por chave de perfil e tempo |
-- \/ + | Abrandar \/ acelerar o tempo de atualização
-   F3 \/ F4 | Página de volta \/ página para a frente
+- / + | Abrandar / acelerar o tempo de atualização
+   F3 / F4 | Página de volta / página para a frente
    Número de chaves | Saltar para uma página
 
 ### Use o Perfil de Jogo no código
@@ -162,17 +162,17 @@ O Visual Studio tem poderosas ferramentas de perfis embutidas que podem identifi
 
 2. Para abrir o profiler, pressione **Alt + F2**, ou na barra de tarefas clique **Analyze > Performance Profiler**.
 
-   <x1\/>Launch Visual Studio profiler<x2\/>
+   ![Launch Visual Studio profiler](media/profiling-profiling-in-visual-studio-start-profiler.png)
 
 3. Na janela **Profiler**, selecione as ferramentas de perfil que deseja executar.
 
-   <x1\/>Launch Visual Studio profiler<x2\/>
+   ![Launch Visual Studio profiler](media/profiling-profiling-in-visual-studio-gpu-cpu-profiling-launch.png)
 
    Você pode executar várias ferramentas de perfil de uma só vez.
 
 4. Para iniciar o profiler, na guia Performance Profiler, na parte inferior, clique em **Start**.
 
-   <x1\/> Perfil Iniciar botão<x2\/>
+   ![ Perfil Iniciar botão](media/profiler-start-button.png)
 
    Visual Studio executa sua aplicação e começa a perfilar.
 
@@ -191,8 +191,8 @@ RenderDoc é um depurador de gráficos autônomo licenciado MIT gratuito que per
    ```cs
    game.GraphicsDeviceManager.DeviceCreation Bandeiras |= DeviceCreationFlags. Debug;
    ```
-   > <x1\/>!Note<x2\/>
-   > Se você tiver um `SharpDXException` do tipo `DXGI_ERROR_SDK_COMPONENT_MISSING`, siga as instruções do https:\/\/docs.microsoft.com\/en-us\/windows\/uwp\/gaming\/use-the-directx-runtime-and-visual-graphics-
+   > [!Note]
+   > Se você tiver um `SharpDXException` do tipo `DXGI_ERROR_SDK_COMPONENT_MISSING`, siga as instruções do https://docs.microsoft.com/en-us/windows/uwp/gaming/use-the-directx-runtime-and-visual-graphics-
 
    2.2. Além disso, certifique-se que o profiler está habilitado chamando este código de qualquer um dos seus scripts de jogo:
 
@@ -207,7 +207,7 @@ RenderDoc é um depurador de gráficos autônomo licenciado MIT gratuito que per
    ```cs
    renderização DocManager = novo RenderDocManager();
    renderDocManager.StartCapture (GraphicsDevice, IntPtr.Zero);
-   \/\/ Alguns códigos de renderização...
+   // Alguns códigos de renderização...
    renderDocManager.EndFrameCapture (GraphicsDevice, IntPtr.Zero);
    ```
 

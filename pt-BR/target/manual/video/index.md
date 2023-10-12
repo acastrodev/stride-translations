@@ -1,7 +1,7 @@
 # Vídeo
 
-<x1\/>Introdução<x2\/>
-<x3\/>Designer<x4\/>
+<span class="badge text-bg-primary">Introdução</span>
+<span class="badge text-bg-success">Designer</span>
 
 Você pode importar ** arquivos de vídeo** e usá-los em suas cenas.
 
@@ -11,7 +11,7 @@ Você pode importar ** arquivos de vídeo** e usá-los em suas cenas.
 </video>
 </p>
 
-> <x1\/>!Note<x2\/>
+> [!Note]
 > Atualmente, Stride não suporta vídeo em plataformas iOS.
 
 ## Nesta secção

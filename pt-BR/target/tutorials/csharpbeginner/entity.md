@@ -6,9 +6,9 @@ Este tutorial C# Beginner abrange como obter o objeto de entidade.
 
 Quando um script é anexado a uma entidade na cena, podemos acessar todas as propriedades dessa Entidade usando a propriedade `Entidade`. Podemos, por exemplo, obter o nome da entidade ou podemos verificar se a entidade tem um pai no local.
 
-<x1\/> Obtendo o exemplo de entidade<x2\/>
+![ Obtendo o exemplo de entidade](media/getting-the-entity.webp)
 
-> <x1\/>!Vídeo https:\/\/www.youtube.com\/embed\/DUmZujopcY8<x2\/>
+> [!Vídeo https://www.youtube.com/embed/DUmZujopcY8]
 
 ## Código
 [!code-csharp[Entidade](../../../../stride/samples/Tutorials/CSharpBeginner/CSharpBeginner/CSharpBeginner.Game/Code/GettingTheEntityDemo.cs)]

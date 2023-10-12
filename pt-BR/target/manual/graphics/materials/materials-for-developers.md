@@ -1,7 +1,7 @@
 # Materiais para desenvolvedores
 
-<x1\/> Avançado <x2\/>
-<x3\/> Programador <x4\/>
+<x1\/>Avançado<x2\/>
+<x3\/>Programação<x4\/>
 
 Este diagrama mostra as interfaces Material e classes de implementação:
 

@@ -8,7 +8,7 @@ Para mais informações sobre sombras e o atlas sombra, veja [Graphics - Shadows
 
 | Tamanho: 2x | Tamanho: 1x |
 | ---------------------------------------------------------------- | -------------------------------------------------------------
-| <x1\/>FPS cena sombra map<x2\/> | <x1\/>FPS cena sombra map<x2\/> |
+| ![FPS cena sombra map](../graphics/lights-and-shadows/media/shadow-atlas-2x.png) | ![FPS cena sombra map](../graphics/lights-and-shadows/media/shadow-atlas-1x.png) |
 | Esta fonte de luz usa a totalidade do atlas sombra. Isso significa que outras luzes não vão lançar sombras, pois não há espaço no atlas. | Esta fonte de luz usa um quarto do atlas sombra. O resto pode ser atribuído a outras fontes de luz. |
 
 ## Reduza o tamanho da sombra
@@ -17,7 +17,7 @@ Para mais informações sobre sombras e o atlas sombra, veja [Graphics - Shadows
 
 2. Nas propriedades do componente **Light**, abaixo de **Shadow > Size**, reduza o tamanho da sombra usando o menu suspenso.
 
-   <x1\/>media\/DirectionalLightProperties.png<x2\/>
+   ![media/DirectionalLightProperties.png](../graphics/lights-and-shadows/media/DirectionalLightProperties-size.png)
 
    Alternativamente, desabilite as sombras na luz inteiramente limpando a caixa de seleção **Shadows**.
 

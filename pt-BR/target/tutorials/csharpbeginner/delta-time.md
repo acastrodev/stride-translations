@@ -8,9 +8,9 @@ Um jogo tenta atualizar-se o mais frequentemente possível. A quantidade de veze
 
 Se quisermos atualizar um valor de temporizador, precisamos de um valor que leve em conta o que é a quantidade atual de quadros por segundo. É para isso que o tempo delta é usado. Então, se o seu jogo roda 30 FPS ou 120 FPS: você sempre quer ter a mesma escala de tempo.
 
-<x1\/>Delta Tempo<x2\/>
+![Delta Tempo](media/deltatime.webp)
 
-> <x1\/>!Vídeo https:\/\/www.youtube.com\/embed\/WMGY8JOqzeE<x2\/>
+> [!Vídeo https://www.youtube.com/embed/WMGY8JOqzeE]
 
 ## Código
 [!code-csharp[DeltaTime](../../../../stride/samples/Tutorials/CSharpBeginner/CSharpBeginner/CSharpBeginner.Game/Code/DeltaTimeDemo.cs)]

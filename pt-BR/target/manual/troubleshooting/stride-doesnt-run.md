@@ -14,25 +14,25 @@ Alternativamente, desinstale Stride, reinicie o instalador Stride e instale os p
 
 Para verificar se isso é instalado, consulte **Control Panel > Programas > Programas e Recursos** e procure uma entrada contendo **. NET 4.7.2**.
 
-<x1\/>Programas e características<x2\/>
+![Programas e características](media/programs-and-features.png)
 
 Se não estiver instalado, você pode baixá-lo do [Microsoft Download Center](https://dotnet.microsoft.com/download/dotnet-framework/thank-you/net472-web-installer).
 
-> <x1\/>!Note<x2\/>
+> [!Note]
 > Se você instalar o Visual Studio, certifique-se de instalar também o suporte .Net Framework. Apenas a instalação da base do Visual Studio não é suficiente.
 
 ### Visual C++ Redistributável 2019
 
 Para verificar se isso é instalado, consulte **Control Panel > Programas > Programas e Recursos** e procure **2015-2019 Redistributável**.
 
-<x1\/>Programas e características<x2\/>
+![Programas e características](media/programs-and-features-redistributable.png)
 
 Se não estiver instalado, você pode baixar o Redistributable 2019 de [Visual Studio Downloads](https://www.visualstudio.com/downloads/) (em **Outras ferramentas e quadros**).
 
 
 ### Visual Studio (apenas para versão .NET Framework)
 
-Se você tiver o Visual Studio 2019 instalado, você precisa ter as seguintes cargas de trabalho e \/ ou componentes instalados:
+Se você tiver o Visual Studio 2019 instalado, você precisa ter as seguintes cargas de trabalho e / ou componentes instalados:
 * **. Desenvolvimento de desktop NET**
 * **.NET core cross-platform development**, com **.NET Core 2.1 Runtime (LTS)** componente opcional habilitado.
 
@@ -42,9 +42,9 @@ Além disso, se ainda tiver o Visual Studio 2017 instalado, deve ser a versão 1
 
 Se você **don't** tiver Visual Studio instalado e não quiser instalá-lo, você precisa instalar **Build Tools for Visual Studio**. Você pode baixar isso de [Visual Studio Downloads](https://www.visualstudio.com/downloads/) (em **Outras ferramentas e quadros**).
 
-> <x1\/>!Note<x2\/>
+> [!Note]
 > O Windows usa o instalador do Visual Studio para instalar o Visual C++ Redistributable e Ferramentas de Construção para pré-requisitos do Visual Studio. Se você não precisa do Visual Studio, não se preocupe – ele não o instala.
-> <x3\/>Instalando ferramentas de construção VS<x4\/>
+> ![Instalando ferramentas de construção VS](../get-started/media/installing-vs-build-tools.png)
 
 ### .NET SDK 5.0 (apenas para versão .NET)
 

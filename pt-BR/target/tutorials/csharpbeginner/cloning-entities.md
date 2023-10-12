@@ -6,9 +6,9 @@ Este tutorial C# Beginner abrange como clonar uma entidade existente e como adic
 
 Uma entidade clonada é uma cópia exata de uma entidade, o que significa que o Transform e todos os outros componentes com seus valores definidos também são copiados.
 
-<x1\/> Entidades de clonagem<x2\/>
+![ Entidades de clonagem](media/cloning-entities.webp)
 
-> <x1\/>!Vídeo https:\/\/www.youtube.com\/embed\/klcTyUDI1yg<x2\/>
+> [!Vídeo https://www.youtube.com/embed/klcTyUDI1yg]
 
 ## Código
 [!code-csharp[Entidade](../../../../stride/samples/Tutorials/CSharpBeginner/CSharpBeginner/CSharpBeginner.Game/Code/CloneEntityDemo.cs)]

@@ -1,7 +1,7 @@
 # Raycasting
 
 <x1\/> Intermediário <x2\/>
-<x3\/> Programador <x4\/>
+<x3\/>Programação<x4\/>
 
 **Raycasting** traça uma linha invisível através da cena para encontrar intersectando [colliders](colliders.md). Isso é útil, por exemplo, para verificar quais objetos estão na linha de fogo de uma arma, ou estão sob o cursor do mouse quando o usuário clica.
 

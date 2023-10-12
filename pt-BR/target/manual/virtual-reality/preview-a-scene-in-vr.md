@@ -12,19 +12,19 @@ Para fazer isso:
 
 1. No **Asset View** (no painel inferior por padrão), clique duas vezes no **Graphics Compositor** ativo.
 
-   <x1\/>Gráficos Compositor asset<x2\/>
+   ![Gráficos Compositor asset](../graphics/graphics-compositor/media/graphics-compositor-asset.png)
 
    O editor de compositores gráficos abre.
 
-   <x1\/>Gráfico Compositor editor<x2\/>
+   ![Gráfico Compositor editor](media/graphics-compositor-VR-template.png)
 
 2. Selecione o **forward render node** conectado ao nó do editor. Por exemplo, na captura de tela abaixo (tomada do projeto de amostra Stride VR), o editor está conectado ao nó de renderizador avançado inferior.
 
-   <x1\/>Conexões de nó<x2\/>
+   ![Conexões de nó](media/node-connections.png)
 
 3. Com o nó de renderizador para a frente selecionado, no **Property Grid**, habilitar **VRRendererConfigurações**.
 
-   <x1\/>Select editor renderer<x2\/>
+   ![Select editor renderer](media/enable-vr.png)
 
 Seu dispositivo VR exibe a visualização da cena. Para exibir a cena em seu monitor, desative **VRRendererSettings**.
 
@@ -32,46 +32,46 @@ Seu dispositivo VR exibe a visualização da cena. Para exibir a cena em seu mon
 
 Se o seu editor e os nós do jogo estiverem conectados ao mesmo renderizador para a frente, você pode querer criar um renderizador separado dedicado ao editor. Isso permite que você alterne facilmente entre visualizar a cena em seu dispositivo VR e em seu monitor.
 
-> <x1\/>!Note<x2\/>
+> [!Note]
 > Se o editor e os nós do jogo já usarem renderizadores separados (como no projeto de amostra VR), você não precisa seguir essas instruções.
 
 1. No **Asset View** (no painel inferior por padrão), clique duas vezes no **Graphics Compositor** ativo.
 
-   <x1\/>Gráficos Compositor asset<x2\/>
+   ![Gráficos Compositor asset](../graphics/graphics-compositor/media/graphics-compositor-asset.png)
 
    O editor de compositores gráficos abre.
 
-   <x1\/>Gráfico compositor editor<x2\/>
+   ![Gráfico compositor editor](media/graphics-compositor-no-editor-node.png)
 
 2. Crie um novo nó de renderizador para a frente. Para fazer isso, clique com o botão direito do mouse no editor do compositor do jogo e selecione **Create > Forward renderer**.
 
-   <x1\/>Criar renderizador <x2\/>
+   ![Criar renderizador ](media/create-forward-renderer.png)
 
 3. Selecione o nó ** Pontos de entrada**.
 
-   <x1\/> Pontos de entrada node<x2\/>
+   ![ Pontos de entrada node](media/entry-points-node.png)
 
 4. No **Property Grid**, ao lado de **Editor renderer**, selecione o renderizador para a frente que você criou.
 
-   <x1\/>Selecionar renderizador <x2\/>
+   ![Selecionar renderizador ](media/select-editor-forward-renderer.png)
 
    Stride liga o editor ao nó do renderizador para a frente.
 
-   <x1\/>Conexões de nó<x2\/>
+   ![Conexões de nó](media/node-connections.png)
 
 5. Defina as propriedades do novo renderizador para a frente, de modo que eles sejam idênticos ao renderizador para a frente que você usa para executar o jogo em VR, incluindo as configurações de VR.
 
-   > <x1\/>!Tip<x2\/>
+   > [!Tip]
    > Você pode clicar com o botão direito do mouse em uma propriedade para copiar ou colar.
 
-   > <x1\/> Propriedades copi-paste<x2\/>
+   > ![ Propriedades copi-paste](media/copy-paste-properties.png)
 
-   > <x1\/>!Note<x2\/>
+   > [!Note]
    > Certifique-se de que o renderizador para a frente tenha VR ativado. Para obter instruções, consulte [Ativar VR](enable-vr.md).
 
 Stride exibe a visualização da cena em seu dispositivo VR. Para exibir a cena em seu monitor, desative **VRRendererSettings** nas propriedades do novo renderizador para a frente.
 
-<x1\/> Habilitar VR<x2\/>
+![ Habilitar VR](media/vr-renderer-settings.png)
 
 ## Ver também
 

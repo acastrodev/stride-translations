@@ -9,9 +9,9 @@
 <source xml:lang="en"><x id="1"/>Beginner<x id="2"/>
 <x id="3"/>Artist<x id="4"/>
 <x id="5"/>Designer<x id="6"/></source>
-<target xml:lang="pt">&lt;x1\/&gt;Introdução&lt;x2\/&gt;
-&lt;x3\/&gt;Artista &lt;x4\/&gt;
-&lt;x5\/&gt;Designer&lt;x6\/&gt;</target>
+<target xml:lang="pt"><x id="1"/>Introdução<x id="2"/>
+<x id="3"/>Artista <x id="4"/>
+<x id="5"/>Designer<x id="6"/></target>
 </trans-unit>
 <trans-unit id="tu3" xml:space="preserve">
 <source xml:lang="en"><g id="1">UI libraries</g> contain <g id="2">UI elements</g> such as grids, buttons, sliders and so on that you can use and re-use in your <g id="3">UI pages</g>.</source>
@@ -23,7 +23,7 @@
 </trans-unit>
 <trans-unit id="tu5" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>UI library<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt;UI biblioteca&lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/>UI biblioteca<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu6" xml:space="preserve">
 <source xml:lang="en">UI libraries are similar to <g id="1">prefabs</g> in the Scene Editor; you can create your own elements, save them in a custom UI library, and then use them wherever you need across multiple UI pages. You can also nest libraries inside other libraries, just like <g id="2">nested prefabs</g>.</source>
@@ -43,7 +43,7 @@
 </trans-unit>
 <trans-unit id="tu10" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Add UI library<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt; Adicionar biblioteca UI&lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/> Adicionar biblioteca UI<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu11" xml:space="preserve">
 <source xml:lang="en">Game Studio adds the UI library to the <g id="1">Asset View</g>.</source>
@@ -51,7 +51,7 @@
 </trans-unit>
 <trans-unit id="tu12" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Added UI library<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt;Adicionado biblioteca UI&lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/>Adicionado biblioteca UI<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu13" xml:space="preserve">
 <source xml:lang="en">Alternatively, to create a UI library from an existing UI element:</source>
@@ -67,7 +67,7 @@
 </trans-unit>
 <trans-unit id="tu16" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Added UI library<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt;Adicionado biblioteca UI&lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/>Adicionado biblioteca UI<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu17" xml:space="preserve">
 <source xml:lang="en">Game Studio creates a library with a copy of the elements you selected.</source>
@@ -100,22 +100,22 @@ public Button CreateButton()
     return button;
 }
 </source>
-<target xml:lang="pt">\/\/ Esta propriedade pode ser atribuída a partir de um ativo de biblioteca UI no Game Studio
+<target xml:lang="pt">// Esta propriedade pode ser atribuída a partir de um ativo de biblioteca UI no Game Studio
 público UILibrary MyLibrary { get; set; }
 
 botão público Criar botão()
 (
-    \/\/ assumindo que há um elemento raiz chamado "MyButton" do tipo (ou derivado de) Botão
+    // assumindo que há um elemento raiz chamado "MyButton" do tipo (ou derivado de) Botão
     var button = MyLibrary.InstantiateElement&lt;Button&gt;("MyButton");
 
-    \/\/ se não houver raiz chamada "MyButton" na biblioteca ou o tipo não coincide,
-    \/\/ o método anterior retornará null
+    // se não houver raiz chamada "MyButton" na biblioteca ou o tipo não coincide,
+    // o método anterior retornará null
     se (botão)
     (        
-        \/\/ anexar um delegado ao evento Click
+        // anexar um delegado ao evento Click
         alguma Button. - Sim. Anexo
         (
-            \/\/ fazer algo aqui...
+            // fazer algo aqui...
         };
     }
 

@@ -1,7 +1,7 @@
-# Erro: "Um SceneCameraRenderer em uso não tem nenhuma câmera atribuída a sua <x1\/>Slot<x2\/>. Certifique-se de que uma câmera está ativada e atribuída ao <x3\/>Slot<x4\/>."
+# Erro: "Um SceneCameraRenderer em uso não tem nenhuma câmera atribuída a sua [Slot]. Certifique-se de que uma câmera está ativada e atribuída ao [Slot]."
 
-> <x1\/>!Note<x2\/>
-> Em versões anteriores de Stride, esta mensagem de erro foi: "Um SceneCameraRenderer em uso não tem conjunto de câmera. Certifique-se de que o componente da câmera a usar está habilitado e tem sua propriedade <x3\/>Slot<x4\/> corretamente definida."
+> [!Note]
+> Em versões anteriores de Stride, esta mensagem de erro foi: "Um SceneCameraRenderer em uso não tem conjunto de câmera. Certifique-se de que o componente da câmera a usar está habilitado e tem sua propriedade [Slot] corretamente definida."
 
 Este erro significa que não há nenhuma câmera disponível para o renderizador de cena usar. Isso tem várias causas possíveis:
 
@@ -25,7 +25,7 @@ câmera. Slot = System Scene.GraphicsCompositor.Cameras[0].ToSlotId();
 
 Para alterar a câmera no tempo de execução, alterne a propriedade ``Ativado``.
 
-> <x1\/>!Note<x2\/>
+> [!Note]
 > Certifique-se de que:
 >
 > * sempre tem pelo menos uma câmera habilitada

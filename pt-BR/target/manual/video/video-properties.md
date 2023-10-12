@@ -1,11 +1,11 @@
 # Propriedades do vídeo
 
-<x1\/>Introdução<x2\/>
-<x3\/>Designer<x4\/>
+<span class="badge text-bg-primary">Introdução</span>
+<span class="badge text-bg-success">Designer</span>
 
 Para visualizar as propriedades de um ativo de vídeo, selecione-o no **Asset View** e use o **Property Grid**.
 
-<x1\/> Propriedades de ativos de vídeo<x2\/>
+![ Propriedades de ativos de vídeo](media/video-asset-properties.png)
 
 | Propriedade | Descrição |
 |-----------| -----------
@@ -18,7 +18,7 @@ Para visualizar as propriedades de um ativo de vídeo, selecione-o no **Asset Vi
 | Força mono canal | Converta áudio de vídeo para mono. Isso é útil quando você quer que o vídeo use [spatialized audio](../audio/spatialized-audio.md). |
 
 
-> <x1\/>!Note<x2\/>
+> [!Note]
 > Atualmente, você não pode visualizar vídeos no Asset Preview.
 
 ## Ver também

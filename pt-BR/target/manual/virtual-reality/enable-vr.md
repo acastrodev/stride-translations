@@ -1,33 +1,33 @@
 # Habilitar VR
 
-<x1\/>Introdução<x2\/>
-<x3\/>Programação<x4\/>
+<span class="badge text-bg-primary">Introdução</span>
+<span class="badge text-bg-success">Programação</span>
 
 Esta página explica como adicionar suporte para os dispositivos Oculus Rift e Vive ao seu jogo. O Stride ainda não suporta outros dispositivos VR.
 
 1. No **Asset View** (no painel inferior por padrão), clique duas vezes no **Graphics Compositor** ativo.
 
-   <x1\/>Graphics compositor asset<x2\/>
+   ![Graphics compositor asset](../graphics/graphics-compositor/media/graphics-compositor-asset.png)
 
    O editor de compositores gráficos abre.
 
 2. No editor de compositores gráficos, selecione o nó **forward renderer**.
 
-   <x1\/>Selecionar renderizador <x2\/>
+   ![Selecionar renderizador ](media/select-forward-renderer.png)
 
 3. No **Property Grid** (à direita por padrão), expanda **VR Settings**.
 
-   <x1\/>VR configurações<x2\/>
+   ![VR configurações](media/vr-settings.png)
 
-4. Ao lado de ** APIs exigidas**, clique em <x1\/>Green plus button<x2\/> (**Add**).
+4. Ao lado de ** APIs exigidas**, clique em ![Green plus button](~/manual/game-studio/media/green-plus-icon.png) (**Add**).
 
    Game Studio adiciona uma nova API à lista.
 
-   <x1\/> Adicionar item VR<x2\/>
+   ![ Adicionar item VR](media/add-vr-api.png)
 
 5. No menu drop-down **Item**, selecione uma API VR que você deseja que seu jogo suporte.
 
-   <x1\/> Adicionar API<x2\/>
+   ![ Adicionar API](media/select-vr-api.png)
 
    | API | Descrição |
    |--------| --------
@@ -41,7 +41,7 @@ Esta página explica como adicionar suporte para os dispositivos Oculus Rift e V
 
    Para alterar a ordem, altere o dispositivo VR selecionado em cada item.
 
-   > <x1\/>!Tip<x2\/>
+   > [!Tip]
    > Embora a API OpenVR suporta dispositivos Vive e Oculus Rift, a API Oculus oferece melhor suporte para o Oculus Rift. Por esta razão, recomendamos a seguinte ordem de lista para a maioria das situações:
    >
    > * Item 0: Oculus
@@ -52,11 +52,11 @@ Esta página explica como adicionar suporte para os dispositivos Oculus Rift e V
 
 8. Habilitar **VRRendererConfigurações**.
 
-   <x1\/>VR configurações de renderizador<x2\/>
+   ![VR configurações de renderizador](media/vr-renderer-settings.png)
 
 Seu jogo agora está pronto para usar VR.
 
-> <x1\/>!Note<x2\/>
+> [!Note]
 > Depois de alterar APIs, você precisa recarregar o projeto (**File > Recarregue projeto**) para que a mudança tenha efeito no tempo de execução.
 
 ## Propriedades de VR
@@ -70,9 +70,9 @@ Seu jogo agora está pronto para usar VR.
 
 Como os artefatos de aliasing são mais óbvios em VR, recomendamos que você **MSAA** (multisample anti-aliasing) nas propriedades de renderizador para a frente (acima das configurações de VR).
 
-<x1\/>MSAA<x2\/>
+![MSAA](media/MSAA.png)
 
-> <x1\/>!Note<x2\/>
+> [!Note]
 > MSAA não é suportado para Direct3D 11 ou inferior.
 
 ## Sincronização de tela desabilitada
@@ -93,12 +93,12 @@ namespace VRSandbox
         (
             usando (jogo devar = novo Jogo()))
             (
-                \/\/VR precisa ser executado em 90 fps, vsync deve ser desativado, o sorteio não deve ser sincronizado
-                \/\/Você pode querer definir o passo do tempo da física para 90 fps, bem se você usar o controlador de caracteres com movimentos não regulares, mas, por favor, evite isso! usar rígidas Kinematic quando possível.
+                //VR precisa ser executado em 90 fps, vsync deve ser desativado, o sorteio não deve ser sincronizado
+                //Você pode querer definir o passo do tempo da física para 90 fps, bem se você usar o controlador de caracteres com movimentos não regulares, mas, por favor, evite isso! usar rígidas Kinematic quando possível.
                 game.IsFixedTimeStep = true;
                 game.IsDrawDesynchronized = true;
                 game.GraphicsDeviceManager.SynchronizeWithVerticalRetrace = false;
-                game.TargetElapsedTime = TimeSpan.FromSeconds(1 \/ 90.0f);
+                game.TargetElapsedTime = TimeSpan.FromSeconds(1 / 90.0f);
                 game.Run();
             }
         }

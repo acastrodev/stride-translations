@@ -8,9 +8,9 @@ Os componentes são um dos conceitos mais importantes em Stride. Cada entidade n
 
 Quando fazemos scripts personalizados que herdam de `SyncScript` ou `AsyncScript`, eles se transformam em Componentes que podemos anexar a entidades. Podemos anexar esses componentes a entidades usando o editor ou podemos anexá-los por código.
 
-<x1\/> Obter um componente<x2\/>
+![ Obter um componente](media/getting-a-component.webp)
 
-> <x1\/>!Vídeo https:\/\/www.youtube.com\/embed\/qRZG8qXkvDQ<x2\/>
+> [!Vídeo https://www.youtube.com/embed/qRZG8qXkvDQ]
 
 ## Código
 ### AmmoComponent

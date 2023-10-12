@@ -1,8 +1,8 @@
 # Sistema de Layout
 
-<x1\/> Intermediário <x2\/>
-<x3\/>Programação<x4\/>
-<x5\/>Designer<x6\/>
+<span class="badge text-bg-primary"> Intermediário </span>
+<span class="badge text-bg-success">Programação</span>
+<span class="badge text-bg-success">Designer</span>
 
 O sistema de layout de IU Stride é semelhante ao Windows Presentation Foundation (WPF). Para obter mais informações sobre o sistema de layout WPF, consulte a documentação [MSDN](https://docs.microsoft.com/en-us/dotnet/framework/wpf/advanced/layout). Grande parte da documentação WPF também se aplica ao sistema de layout Stride.
 

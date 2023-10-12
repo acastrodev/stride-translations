@@ -6,13 +6,13 @@ Este tutorial C# Beginner abrange como expor propriedades do editor para Stride 
 
 Ao criar uma variável pública no topo do nosso script, podemos criar propriedades do editor. Algumas das propriedades mais comuns são demonstradas. Também podemos criar variáveis públicas que não são mostradas no editor.
 
-<x1\/> Propriedades do editor<x2\/>
+![ Propriedades do editor](media/editor-properties2.webp)
 
-> <x1\/>!Vídeo https:\/\/www.youtube.com\/embed\/GPiWbfsG5F0<x2\/>
+> [!Vídeo https://www.youtube.com/embed/GPiWbfsG5F0]
 
 ## Código
 [!code-csharp[Entidade](../../../../stride/samples/Tutorials/CSharpBeginner/CSharpBeginner/CSharpBeginner.Game/Code/PropertiesDemo.cs)]
 
 O código acima resultará nas seguintes propriedades dentro do estúdio de jogo Stride.
 
-<x1\/> Propriedades do editor<x2\/>
+![ Propriedades do editor](media/editor-properties.webp)

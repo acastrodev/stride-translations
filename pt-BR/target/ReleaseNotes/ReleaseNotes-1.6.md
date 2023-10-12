@@ -101,7 +101,7 @@ Por exemplo, você pode querer definir diferentes resoluções off-screen para o
 
 ## Versão 1.6.7-beta
 
-Data de lançamento: 2016\/2009
+Data de lançamento: 2016/2009
 
 ### Melhorias
 
@@ -116,7 +116,7 @@ Data de lançamento: 2016\/2009
 - OpenGL ES: Formato de textura melhorado suporta dependendo da versão e extensão do OpenGL ES (esp. para textura flutuante em ES2)
 - OpenGL ES: EXT_sRGB não parece funcionar corretamente no Adreno 4xx, mas como geralmente está disponível através do contexto ES3, usamos isso primeiro quando disponível
 - OpenGL: O driver AMD GPU não gostou do fato de não haver #versão no shader Copy GLSL
-- OpenGL: Mesmo que usemos SDL, o carregamento de imagem agora usa o mesmo código que WinForms\/WPF (desde que o código de carregamento SDL_image ainda não seja implementado)
+- OpenGL: Mesmo que usemos SDL, o carregamento de imagem agora usa o mesmo código que WinForms/WPF (desde que o código de carregamento SDL_image ainda não seja implementado)
 
 #### Activos
 - A AssetCompiler era um conjunto de cache para que eles pudessem ser modificados durante a execução. Esse recurso é útil apenas no desenvolvimento e estava fazendo algo mais lento e causando problemas de caminho muito longos, portanto, foi desativado para a instalação do usuário final ([#410](https://github.com/SiliconStudio/xenko/issues/410))
@@ -133,7 +133,7 @@ Data de lançamento: 2016\/2009
 
 ## Versão 1.6.6-beta
 
-Data de lançamento: 2016\/05\/27
+Data de lançamento: 2016/05/27
 
 ### Melhorias
 
@@ -161,7 +161,7 @@ Data de lançamento: 2016\/05\/27
 
 ## Versão 1.6.5-beta
 
-Data de lançamento: 2016\/05\/17
+Data de lançamento: 2016/05/17
 
 ### Melhorias
 
@@ -194,7 +194,7 @@ Data de lançamento: 2016\/05\/17
 
 ## Versão 1.6.4-beta
 
-Data de lançamento: 2016\/04\/28
+Data de lançamento: 2016/04/28
 
 ### Questões corrigidas
 
@@ -203,7 +203,7 @@ Data de lançamento: 2016\/04\/28
 
 ## Versão 1.6.3-beta
 
-Data de lançamento: 2016\/04\/27
+Data de lançamento: 2016/04/27
 
 ### Melhorias
 
@@ -231,7 +231,7 @@ Data de lançamento: 2016\/04\/27
 - Corrigir um problema no editor sprite impedindo editar corretamente quadros recém adicionados
 - Corrigir um problema de cache no editor de sprite impedindo que a varinha mágica funcione corretamente depois de modificar uma imagem de origem externamente ([#389](https://github.com/SiliconStudio/xenko/issues/389))
 - Corrigir um acidente que poderia ocorrer ao manipular os Materiais de um componente modelo no editor de cena
-- Corrigir um acidente ao carregar projetos com componentes\/assets relacionados a áudio
+- Corrigir um acidente ao carregar projetos com componentes/assets relacionados a áudio
 - Corrigir um acidente que pode ocorrer ao fechar um editor
 - Corrigir um problema quando o compilador de ativos estava falhando, mas não retornando corretamente o erro. Como resultado, foi fácil correr em questão como executar o jogo uma vez e mantê-lo em segundo plano (arquivos de bloqueio), edição, e quando executá-lo novamente ele ainda usaria os ativos compilados mais antigos.
 - Luzes e gizmo câmera foram impróprias escaladas
@@ -264,7 +264,7 @@ Data de lançamento: 2016\/04\/27
 
 ## Versão 1.6.2-beta
 
-Data de lançamento: 2016\/04\/04
+Data de lançamento: 2016/04/04
 
 ### Questões corrigidas
 
@@ -280,7 +280,7 @@ Data de lançamento: 2016\/04\/04
 
 ## Versão 1.6.1-beta
 
-Data de lançamento: 2016\/03\/30
+Data de lançamento: 2016/03/30
 
 ### Melhorias
 
@@ -301,7 +301,7 @@ Data de lançamento: 2016\/03\/30
 #### Física
 
 - Adicionado o deslocamento de entidade adequada em CharacterComponent Teleport.
-- Adicionado método utilitário terminado em Collision, para evitar escrever do \/ enquanto construtos.
+- Adicionado método utilitário terminado em Collision, para evitar escrever do / enquanto construtos.
 
 ### Questões corrigidas
 
@@ -344,7 +344,7 @@ Data de lançamento: 2016\/03\/30
 
 ## Versão 1.6.0-beta
 
-Data de lançamento: 2016\/03\/15
+Data de lançamento: 2016/03/15
 
 ### Como atualizar
 
@@ -403,7 +403,7 @@ Então, salve seu projeto no GameStudio. Agora você pode abrir seu projeto com 
 - Corrigir um acidente ocorrendo ao duplicar um objeto rapidamente após a seleção.
 - Corrigir um problema com a caixa de mensagem incorretamente redimensionando.
 - Dicas de ferramentas são sempre visíveis mesmo se o controle (menu, botão..) está desativado.
-- Corrigir vários problemas com desfazer\/refazer.
+- Corrigir vários problemas com desfazer/refazer.
 - Fix arrastar e soltar componentes em propriedades
 - Às vezes, o Game Studio não estava pedindo para salvar quando fechado com algumas mudanças em um projeto.
 - Corrigir alguns problemas relacionados a pastas no editor de cena.
@@ -417,7 +417,7 @@ Então, salve seu projeto no GameStudio. Agora você pode abrir seu projeto com 
 
 - Melhor confiabilidade na detecção de colisão
 - Grupos de filtro de colisão fixa
-- Comportamento de componente fixo\/desativado
+- Comportamento de componente fixo/desativado
 
 ### Alterações de ruptura
 

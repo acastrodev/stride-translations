@@ -2,7 +2,7 @@
 
 O Stride possui um sistema de editor e layout de interface de usuário sofisticado que você pode usar para construir interfaces de usuário sofisticadas. Ele suporta 2D e 3D independentemente da resolução.
 
-<x1\/>UI editor<x2\/>
+![UI editor](media/ui-editor.png)
 
 Stride usa dois tipos de UI ativo: `UIPageAsset` e `UILibraryAsset`. Suas contrapartes de tempo de execução são `UIPage` e `UILibrary` respectivamente.
 
@@ -37,7 +37,7 @@ Sem scripts, UIs são simplesmente imagens não interativas. Para torná-los int
 
 Para um exemplo de uma interface de usuário implementada no Stride, veja a amostra do menu UI</g>game incluída no Stride.<g id="1">
 
-<x1\/>Projeto de interface de usuário amplo<x2\/>
+![Projeto de interface de usuário amplo](media/ui-sample-project.png)
 
 ## Nesta secção
 

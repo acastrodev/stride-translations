@@ -1,8 +1,8 @@
 # Configurar um vídeo
 
-<x1\/>Introdução<x2\/>
-<x3\/>Programação<x4\/>
-<x5\/>Designer<x6\/>
+<span class="badge text-bg-primary">Introdução</span>
+<span class="badge text-bg-success">Programação</span>
+<span class="badge text-bg-success">Designer</span>
 
 <p>
 <video autoplay loop class="responsive-video" poster="media/video-thumbnail.jpg">
@@ -10,10 +10,10 @@
 </video>
 </p>
 
-> <x1\/>!Note<x2\/>
+> [!Note]
 > Stride suporta a maioria dos principais formatos de vídeo, mas os converte em `.mp4`. Para reduzir o tempo de compilação, recomendamos que você use arquivos `.mp4` para que Stride não precise convertê-los.
 
-> <x1\/>!Note<x2\/>
+> [!Note]
 > Atualmente, Stride não suporta vídeo em plataformas iOS.
 
 ## 1. Adicionar um ativo de vídeo
@@ -24,19 +24,19 @@ Antes que você possa usar um vídeo em seu jogo, você precisa importá-lo como
 
    Alternativamente, no **Asset View**, clique em **Adicionar asset** e selecione **Media > Vídeo**, então procure o vídeo que deseja adicionar e clique em **Open**.
 
-   <x1\/> Adicionar vídeo asset<x2\/>
+   ![ Adicionar vídeo asset](media/add-video-asset.png)
 
 2. Se o vídeo tem faixas de áudio, você pode importá-las ao mesmo tempo, ou importar apenas o áudio do vídeo.
 
-   <x1\/>Import vídeo<x2\/>
+   ![Import vídeo](media/import-from-video.png)
 
 3. Clique em **OK**.
 
    Stride adiciona o vídeo como um ativo no **Asset View**. Se você importou faixas de áudio do arquivo de vídeo, Stride os adiciona como ativos separados [audio](../audio/index.md).
 
-   <x1\/> Activos de vídeo e áudio<x2\/>
+   ![ Activos de vídeo e áudio](media/video-and-audio-assets.png)
 
-   > <x1\/>!Note<x2\/>
+   > [!Note]
    > Atualmente, você não pode visualizar vídeos no Asset Preview.
 
    Para obter informações sobre propriedades de ativos de vídeo, consulte [ Propriedades de vídeo](video-properties.md).
@@ -45,24 +45,24 @@ Antes que você possa usar um vídeo em seu jogo, você precisa importá-lo como
 
 1. No **Scene Editor**, selecione ou crie uma entidade para adicionar um componente de vídeo.
 
-   > <x1\/>!Tip<x2\/>
+   > [!Tip]
    > É geralmente mais simples adicionar o componente à mesma entidade que tem a textura reproduz o vídeo. Isso torna mais fácil organizar sua cena.
 
 2. No **Property Grid**, clique em **Add component** e selecione **Video**.
 
-   <x1\/> Adicionar componente de vídeo<x2\/>
+   ![ Adicionar componente de vídeo](media/add-component.png)
 
    Stride adiciona um componente **video** à entidade.
 
-   <x1\/> Componente de vídeo<x2\/>
+   ![ Componente de vídeo](media/video-component.png)
 
 3. Nas propriedades **Video**, abaixo de **Fonte**, selecione o ativo de vídeo.
 
-   <x1\/> Fonte de vídeo <x2\/>
+   ![ Fonte de vídeo ](media/video-source.png)
 
 4. Em **Target**, selecione a textura que deseja exibir o vídeo.
 
-   <x1\/>Vídeo <x2\/>
+   ![Vídeo ](media/video-target.png)
 
    Os modelos que usam esta textura exibirão o vídeo.
 
@@ -86,7 +86,7 @@ myVideoComponent.Instance.Play();
 * `CurrentTime`: O tempo de jogo atual no vídeo
 * `Volume`: O volume de áudio
 * `PlayRange`: O início e o fim do vídeo
-* `Play\/Pause\/Stop`: Jogar, pausar ou parar o vídeo
+* `Play/Pause/Stop`: Jogar, pausar ou parar o vídeo
 * `Seek`: Buscar um determinado tempo
 
 ### Exemplo de script
@@ -95,11 +95,11 @@ myVideoComponent.Instance.Play();
 (
     vídeoescrito : StartupScript
     (
-        \/\/ Game Studio exibe os campos e propriedades que você declara neste script
+        // Game Studio exibe os campos e propriedades que você declara neste script
 
         anula de sobreposição pública Start()
         (
-            \/\/ Inicialização do script.
+            // Inicialização do script.
             Entity.Get<VideoComponent>().Instance.Play();
         }
     }
@@ -112,13 +112,13 @@ myVideoComponent.Instance.Play();
 
 2. No **Property Grid**, clique em **Add component** e selecione o script de vídeo.
 
-   <x1\/> Meu script de vídeo<x2\/>
+   ![ Meu script de vídeo](media/add-video-script.png)
 
    Stride adiciona o script como um componente.
 
    Você pode ajustar as variáveis [public que você define no script](../scripts/public-properties-and-fields.md) no **Property Grid** sob as propriedades do componente script.
 
-   <x1\/>Propriedades <x2\/>
+   ![Propriedades ](media/video-script-properties.png)
 
 ## Ver também
 
