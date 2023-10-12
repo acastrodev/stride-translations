@@ -4,7 +4,7 @@
 <span class="badge text-bg-success">Design</span>
 <span class="badge text-bg-success">Programação</span>
 
-**Áudio espacial**, também conhecido como ** áudio 3D**, simula o som tridimensional, 
+**Áudio espacial**, também conhecido como **áudio 3D**, simula o som tridimensional, 
 criando um áudio mais realista do que [áudio não espacial](non-spatialized-audio.md).
 
 No dia a dia, nossa experiência de som é afetada por fatores como o volume, o ambiente que nos circunda (como uma caverna ou um pequeno quarto) e a posição e movimento da fonte de som. Geralmente, conseguimos determinar aproximadamente de onde um som está vindo e se ele está se movendo.
