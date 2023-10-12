@@ -3,7 +3,7 @@
 <body>
 <trans-unit id="tu1" xml:space="preserve">
 <source xml:lang="en">Play a range within an audio asset</source>
-<target xml:lang="pt">Jogue um intervalo dentro de um ativo de áudio</target>
+<target xml:lang="pt">Reproduzir um intervalo dentro de um recurso de áudio</target>
 </trans-unit>
 <trans-unit id="tu2" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Intermediate<x id="2"/>
@@ -13,11 +13,11 @@
 </trans-unit>
 <trans-unit id="tu3" xml:space="preserve">
 <source xml:lang="en">You can have Stride play only certain portions of an audio asset. This means, for example, that you can create multiple samples from a single audio asset by specifying different ranges in different <g id="1">SoundInstance</g> objects.</source>
-<target xml:lang="pt">Você pode ter Stride tocar apenas algumas partes de um ativo de áudio. Isso significa, por exemplo, que você pode criar várias amostras de um único ativo de áudio especificando diferentes intervalos em diferentes objetos <g id="1">SoundInstance</g>.</target>
+<target xml:lang="pt">Você pode fazer o Stride reproduzir apenas partes específicas de um recurso de áudio. Isso significa, por exemplo, que você pode criar várias amostras de um único recurso de áudio especificando diferentes intervalos em diferentes objetos <g id="1">SoundInstance</g>.</target>
 </trans-unit>
 <trans-unit id="tu4" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Loop points<x id="2"/></source>
-<target xml:lang="pt"><x id="1"/>Loop pontos<x id="2"/></target>
+<target xml:lang="pt"><x id="1"/>Pontos de repetição<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu5" xml:space="preserve">
 <source xml:lang="en">You can use the following properties, methods, and structures:</source>
@@ -33,19 +33,19 @@
 </trans-unit>
 <trans-unit id="tu8" xml:space="preserve">
 <source xml:lang="en"><g id="1">TotalLength</g></source>
-<target xml:lang="pt"><g id="1">Total de comprimento</g></target>
+<target xml:lang="pt"><g id="1">TotalLength</g></target>
 </trans-unit>
 <trans-unit id="tu9" xml:space="preserve">
 <source xml:lang="en">The total length of the <g id="1">sound</g>.</source>
-<target xml:lang="pt">O comprimento total do <g id="1">sound</g>.</target>
+<target xml:lang="pt">O comprimento total do <g id="1">som</g>.</target>
 </trans-unit>
 <trans-unit id="tu10" xml:space="preserve">
 <source xml:lang="en"><g id="1">SoundInstance.SetRange(PlayRange)</g></source>
-<target xml:lang="pt"><g id="1">SoundInstance.SetRange (PlayRange)</g></target>
+<target xml:lang="pt"><g id="1">SoundInstance.SetRange(PlayRange)</g></target>
 </trans-unit>
 <trans-unit id="tu11" xml:space="preserve">
 <source xml:lang="en">Sets the time range to play within the audio asset.</source>
-<target xml:lang="pt">Define o intervalo de tempo para jogar dentro do ativo de áudio.</target>
+<target xml:lang="pt">Define o intervalo de tempo para reprodução dentro do recurso de áudio.</target>
 </trans-unit>
 <trans-unit id="tu12" xml:space="preserve">
 <source xml:lang="en"><g id="1">PlayRange</g></source>
@@ -53,15 +53,15 @@
 </trans-unit>
 <trans-unit id="tu13" xml:space="preserve">
 <source xml:lang="en">Time information, including the range's starting point and length.</source>
-<target xml:lang="pt">InformaÃ§Ãμes do tempo, incluindo o ponto de partida e o comprimento do intervalo.</target>
+<target xml:lang="pt">Informações de tempo, incluindo o ponto de início e a duração do intervalo.</target>
 </trans-unit>
 <trans-unit id="tu14" xml:space="preserve">
 <source xml:lang="en"><g id="1">SoundInstance.Position</g></source>
-<target xml:lang="pt"><g id="1">Instância Sonora.Posição</g></target>
+<target xml:lang="pt"><g id="1">SoundInstance.Position</g></target>
 </trans-unit>
 <trans-unit id="tu15" xml:space="preserve">
 <source xml:lang="en">Gets the current play position as <g id="1">TimeSpan</g>.</source>
-<target xml:lang="pt">Obtém a posição de jogo atual como <g id="1">TimeSpan</g>.</target>
+<target xml:lang="pt">Obtém o <g id="1">TimeSpan</g> da posição atual da reprodução.</target>
 </trans-unit>
 <trans-unit id="tu16" xml:space="preserve">
 <source xml:lang="en">For example:</source>
@@ -74,16 +74,16 @@ var begin = TimeSpan.FromSeconds(2);
 var duration = TimeSpan.FromSeconds(2);
 mySoundInstance.SetRange(new PlayRange(begin, duration));
 </source>
-<target xml:lang="pt">O comprimento da amostra //Assume é de 5 segundos.
-comprimento var = mySound.TotalLength;
+<target xml:lang="pt">// Assumindo que o comprimento da amostra é de 5 segundos.
+var length = mySound.TotalLength;
 var begin = TimeSpan.FromSeconds(2);
-var Duração = TimeSpan.FromSeconds(2);
-mySoundInstance.SetRange(new PlayRange(início, duração));
+var duration = TimeSpan.FromSeconds(2);
+mySoundInstance.SetRange(new PlayRange(begin, duration));
 </target>
 </trans-unit>
 <trans-unit id="tu18" xml:space="preserve">
 <source xml:lang="en">See also</source>
-<target xml:lang="pt">Ver também</target>
+<target xml:lang="pt">Veja também</target>
 </trans-unit>
 <trans-unit id="tu19" xml:space="preserve">
 <source xml:lang="en"><g id="1">Global audio settings</g></source>
