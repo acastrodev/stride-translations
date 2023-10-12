@@ -1,55 +1,55 @@
-# Create and open a scene
+# Criar e abrir uma cena
 
-<span class="badge text-bg-primary">Beginner</span>
-<span class="badge text-bg-success">Level Designer</span>
+<x1\/>Introdução<x2\/>
+<x3\/>Level Designer<x4\/>
 
-When you create a new project, Game Studio creates an initial scene and populates it with basic entities such as a light, a camera, and a skybox.
+Quando você cria um novo projeto, o Game Studio cria uma cena inicial e o popula com entidades básicas, como uma luz, uma câmera e um skybox.
 
-You can create scenes like any other asset. As they are complex assets, they have a dedicated editor, the **Scene Editor**.
+Você pode criar cenas como qualquer outro ativo. Como eles são ativos complexos, eles têm um editor dedicado, o **Scene Editor**.
 
-## Create a scene
+## Criar uma cena
 
-1. In the **Asset View** (by default in the bottom pane), click **Add asset** and select **Scenes**.
+1. No **Asset View** (por padrão no painel inferior), clique em **Add asset** e selecione **Scenes**.
 
-   ![Add a scene](media/add-scene.png)
+   <x1\/> Adicionar uma cena<x2\/>
 
-2. Select the appropriate **scene template**.
+2. Selecione o modelo **scene apropriado**.
 
-   | Template | Result |
+   | Modelo | Resultado |
    ---------|--------
-   | Empty scene | An empty scene with no entities or preconfigured rendering pipeline |
-   | Scene with HDR pipeline | A scene containing basic entities and preconfigured for HDR rendering |
-   | Scene with LDR pipeline | A scene containing basic entities and preconfigured for LDR rendering |
+   | Cena vazia | Uma cena vazia sem entidades ou pipeline de renderização pré-configurado |
+   | Cena com pipeline HDR | Uma cena contendo entidades básicas e pré-configurada para renderização HDR |
+   | Cena com gasoduto LDR | Uma cena contendo entidades básicas e pré-configurada para renderização LDR |
 
-## Open a scene in the Scene Editor
+## Abra uma cena no Editor de cenas
 
-In the **Asset View**:
+No **Asset View**:
 
-![Select a scene in the Asset View](media/open-scene-from-asset-view.png)
+<x1\/> Selecione uma cena no Asset View<x2\/>
 
-* double-click the scene asset, or
-* right-click the asset and select **Edit asset**, or
-* select the asset and type **Ctrl + Enter**
+* clique duas vezes no ativo da cena, ou
+* clique com o botão direito do mouse no ativo e selecione **Editar asset**, ou
+* selecione o ativo e digite **Ctrl + Enter**
 
-> [!TIP]
-> You can have several scenes open simultaneously.
+> <x1\/>!TIP<x2\/>
+> Você pode ter várias cenas abertas simultaneamente.
 
-## Use the Scene Editor
+## Use o editor de cenas
 
-![Scene Editor](media/create-a-scene-default-scene-editor.png)
+<x1\/>Scene Editor<x2\/>
 
-The **Scene Editor tabs** (A) display the open scenes. You can switch between open scenes using the tabs.
+As guias **Scene Editor** (A) exibem as cenas abertas. Você pode alternar entre cenas abertas usando as abas.
 
-The **Entity Tree** (B) shows the hierarchy of the entities included in the scene. The same entity hierarchy is applied at runtime. You can use the Entity Tree to browse, select, rename, and reorganize your entities.
+O **Entity Tree** (B) mostra a hierarquia das entidades incluídas na cena. A mesma hierarquia de entidades é aplicada em tempo de execução. Você pode usar o Entity Tree para navegar, selecionar, renomear e reorganizar suas entidades.
 
-You can use the **tool bar** (C) to modify entities and change the Scene Editor display.
+Você pode usar o **tool bar** (C) para modificar entidades e alterar a exibição do Editor de cena.
 
-The **main window** (D) shows a simplified representation of your scene, with your entities positioned inside it. For entities that have no shape (E), Game Studio represents them with **2D gizmos**; for example, cameras are represented with camera icons.
+A janela **main** (D) mostra uma representação simplificada de sua cena, com suas entidades posicionadas dentro dela. Para entidades que não têm forma (E), Game Studio os representa com **2D gizmos**; por exemplo, as câmeras são representadas com ícones da câmera.
 
-## See also
+## Ver também
 
-* [Navigate in the Scene Editor](navigate-in-the-scene-editor.md)
-* [Manage scenes](manage-scenes.md)
-* [Load scenes](load-scenes.md)
-* [Add entities](add-entities.md)
-* [Manage entities](manage-entities.md)
+* [Navegue no Editor de Cena](navigate-in-the-scene-editor.md)
+* [Gerenciar cenas](manage-scenes.md)
+* [Cenas de carga](load-scenes.md)
+* [Adicionar entidades](add-entities.md)
+* [Gerenciar entidades](manage-entities.md)

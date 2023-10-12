@@ -1,46 +1,46 @@
-# Navigation bounding boxes
+# Caixas de ligação de navegação
 
-<span class="badge text-bg-primary">Beginner</span>
-<span class="badge text-bg-success">Level designer</span>
-<span class="badge text-bg-success">Programmer</span>
+<x1\/>Introdução<x2\/>
+<x3\/> Designer de nível <x4\/>
+<x5\/> Programador <x6\/>
 
-**Navigation bounding boxes** define the area that [navigation meshes](navigation-meshes.md) cover. You can use them to create smaller navigation areas in your scene, rather than having a mesh cover the entire scene.
+**Navigação delimitando caixas** define a área que [navigation meshes](navigation-meshes.md) cobrir. Você pode usá-los para criar áreas de navegação menores em sua cena, em vez de ter uma malha cobrir toda a cena.
 
-The Scene Editor displays the bounding box as a blue outline.
+O Editor de Cena exibe a caixa de ligação como um contorno azul.
 
-![Bounding box shown](media/navigation-bounding-box-on.jpg)
+<x1\/>Caixa de captura mostrada <x2\/>
 
-## Create a navigation bounding box
+## Criar uma caixa de ligação de navegação
 
-To create a navigation bounding box, add a **navigation bounding box component** to an entity.
+Para criar uma caixa de ligação de navegação, adicione um **navigation limiting box component** a uma entidade.
 
-1. In the scene, select the entity you want to contain the bounding box, or create a new entity.
+1. Na cena, selecione a entidade que deseja conter a caixa de ligação ou crie uma nova entidade.
 
-2. With the entity selected, in the **Property Grid**, click **Add component** and select **Navigation bounding box**.
+2. Com a entidade selecionada, no **Property Grid**, clique em **Add component** e selecione **Navigation limiting box**.
 
-   ![Add navigation bounding box](media/add-navigation-bounding-box.png)
+   <x1\/> Adicionar caixa de ligação de navegação<x2\/>
 
-   Game Studio adds a navigation bounding box to the entity.
+   Game Studio adiciona uma caixa de ligação de navegação à entidade.
 
-3. Under the **Navigation bounding box** component properties, use the **XYZ** values to set the size of the bounding box.
+3. Sob as propriedades do componente **Navigation, use os valores **XYZ** para definir o tamanho da caixa de ligação.**
 
-   ![Navigation bounding box properties](media/navigation-bounding-box-properties.png)
+   <x1\/>Navigação delimitando propriedades de caixa<x2\/>
 
-4. Use the entity's **transform component** to position the bounding box in your scene.
+4. Use o componente **transform da entidade** para posicionar a caixa de ligação em sua cena.
 
-## Show or hide the bounding box in the Scene Editor
+## Mostrar ou ocultar a caixa de ligação no Editor de cena
 
-In the Scene Editor toolbar, open the **gizmo options** menu and use the **Navigation bounding box** checkbox.
+Na barra de ferramentas do Editor de Cena, abra o menu **gizmo e use a caixa de conexão **Navigation**.**
 
-![Navigation bounding box checkbox](media/navigation-bounding-box-checkbox.png)
+<x1\/>Navigação caixa de seleção delimitada<x2\/>
 
-| Bounding box hidden | Bounding box shown (note blue box outline) |
+| Caixa de som escondida | Bounding box mostrado (note blue box outline) |
 |----------------------|------------
-| ![Bounding box hidden](media/navigation-bounding-box-off.jpg) | ![Bounding box shown](media/navigation-bounding-box-on.jpg) |
+| <x1\/>Bounding box oculto<x2\/> | <x1\/>Caixa de captura mostrada <x2\/> |
 
-## See also
+## Ver também
 
-* [Navigation groups](navigation-groups.md)
-* [Navigation meshes](navigation-meshes.md)
-* [Navigation components](navigation-components.md)
-* [Dynamic navigation](dynamic-navigation.md)
+* [Grupos de navegação](navigation-groups.md)
+* [Malhas de navegação](navigation-meshes.md)
+* [Componentes de navegação](navigation-components.md)
+* [Navegação dinâmica](dynamic-navigation.md)

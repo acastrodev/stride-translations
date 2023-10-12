@@ -1,228 +1,228 @@
-# Game settings
+# Definições do jogo
 
-<span class="badge text-bg-primary">Beginner</span>
-<span class="badge text-bg-success">Programmer</span>
-<span class="badge text-bg-success">Designer</span>
+<x1\/>Introdução<x2\/>
+<x3\/> Programador <x4\/>
+<x5\/>Designer<x6\/>
 
-You can configure the global settings of your game in the **Game Settings** asset. By default, the Game Settings asset is stored in your project's **Assets** folder.
+Você pode configurar as configurações globais do seu jogo no ativo **Game Settings**. Por padrão, o ativo Configurações do Jogo é armazenado na pasta **Assets** do seu projeto.
 
-## Edit game settings
+## Editar configurações de jogo
 
-1. In the **Solution Explorer** (the bottom-left pane by default), select the **Assets** folder.
+1. No **Solution Explorer** (o painel inferior esquerdo por padrão), selecione a pasta **Assets**.
 
-   ![Select Assets folder asset](media/select-asset-folder.png)
+   <x1\/>Select Assets pasta asset<x2\/>
 
-2. In the **Asset View** (the bottom pane by default), select the **GameSettings** asset.
+2. No **Asset View** (o painel inferior por padrão), selecione o ativo **GameSettings**.
 
-   ![Select Game Settings asset](media/select-game-settings-asset.png)
+   <x1\/>Selecionar configurações de jogo asset<x2\/>
 
-3. In the **Property Grid** (the right-hand pane by default), edit the Game Settings properties.
+3. No **Property Grid** (o painel direito por padrão), edite as propriedades Configurações do Jogo.
 
-   ![Game settings](media/game-settings.png)
+   <x1\/> Configurações do jogo <x2\/>
 
-## Default scene
+## A cena padrão
 
-You can have multiple scenes in your project. The **default scene** is the scene Stride loads at runtime.
+Você pode ter várias cenas em seu projeto. O **default cena** é a cena Stride carrega no tempo de execução.
 
-To set the default scene:
+Para definir a cena padrão:
 
-1. In the **GameSettings** properties, next to **Default Scene**, click ![Hand icon](~/manual/game-studio/media/hand-icon.png) (**Select an asset**).
+1. Nas propriedades **GameSettings**, ao lado de **Default Scene**, clique em <x1\/>Hand icon<x2\/> (**Select an asset**).
 
-   ![Set default scene](media/game-settings-default-scene.png)
+   <x1\/> Definir a cena padrão<x2\/>
 
-   The **Select an asset** window opens.
+   A janela **Selecione um ativo** abre.
 
-2. Select the default scene and click **OK**.
+2. Selecione a cena padrão e clique em **OK**.
 
-For more information about scenes, see [Manage scenes](../game-studio/manage-scenes.md).
+Para obter mais informações sobre cenas, consulte [Gerenciar cenas](../game-studio/manage-scenes.md).
 
-## Graphics compositor
+## Compositor gráfico
 
-You can have multiple graphics compositors in your project, but you can only use one at a time.
+Você pode ter vários compositores gráficos em seu projeto, mas você só pode usar um de cada vez.
 
-To set the graphics compositor:
+Para definir o compositor gráfico:
 
-1. In the **GameSettings** properties, next to **Graphics compositor**, click ![Hand icon](~/manual/game-studio/media/hand-icon.png) (**Select an asset**).
+1. Nas propriedades **GameSettings**, ao lado de **Graphics compositor**, clique em <x1\/>Hand icon<x2\/> (**Select an asset**).
 
-   ![Set default scene](media/game-settings-graphics-compositor.png)
+   <x1\/> Definir a cena padrão<x2\/>
 
-   The **Select an asset** window opens.
+   A janela **Selecione um ativo** abre.
 
-2. Select the graphics compositor and click **OK**.
+2. Selecione o compositor gráfico e clique em **OK**.
 
-For more information, see [Graphics compositor](../graphics/graphics-compositor/index.md).
+Para mais informações, consulte o compositor [Graphics](../graphics/graphics-compositor/index.md).
 
-## Audio
+## Áudio
 
-![Audio settings](media/audio-settings.png)
+<x1\/> Configurações de áudio <x2\/>
 
-| Property | Description |
+| Propriedade | Descrição |
 |--------------|--------------
-| HRTF support | Enable HRTF audio. Note that only audio emitters with HRTF enabled will produce HRTF audio. For more details, see [HRTF](../audio/hrtf.md). |
+| Suporte HRTF | Ativar áudio HRTF. Note que apenas emissores de áudio com HRTF habilitado produzirá áudio HRTF. Para mais detalhes, consulte [HRTF](../audio/hrtf.md). |
 
-For more details about audio, see [Audio](../audio/index.md).
+Para mais detalhes sobre áudio, veja [Audio](../audio/index.md).
 
 ## Editor
 
-The **editor** settings control how Game Studio displays entities in the Scene Editor. These settings have no effect on your game.
+As configurações **editor** controlam como Game Studio exibe entidades no Editor de cena. Essas configurações não têm efeito no seu jogo.
 
-> [!Note]
-> How Game Studio displays entities is also affected by the **Color space** setting under **Rendering**.
+> <x1\/>!Note<x2\/>
+> Como o Game Studio exibe entidades também é afetado pela configuração **Color space** abaixo de **Rendering**.
 
-![Editor settings](media/editor-settings.png)
+<x1\/> Configurações do editor<x2\/>
 
-| Property | Description |
+| Propriedade | Descrição |
 |---------------------|--------------
-| Rendering mode | How Game Studio renders thumbnails and Asset Previews |
-| Animation framerate | The framerate of animations shown in Game Studio. This doesn't affect animation data. |
+| Modo de renderização | Como o Game Studio renderiza miniaturas e Visualizações de ativos |
+| Quadro de animação | O framerate das animações mostradas no Game Studio. Isso não afeta os dados de animação. |
 
-## Navigation
+## Navegação
 
-![Navigation settings](../navigation/media/navigation-settings.png)
+<x1\/> Configurações de navegação<x2\/>
 
-### Dynamic navigation mesh properties
+### Propriedades de malha de navegação dinâmica
 
-| Property | Description |
+| Propriedade | Descrição |
 |---------------------------|--------------
-| Enabled | Enable dynamic navigation on navigation components that have no assigned navigation mesh |
-| Included collision groups | Set which collision groups dynamically-generated navigation meshes use. By default, meshes use all collision groups |
-| Build settings | Advanced settings for dynamically-generated navigation meshes |
+| Activado | Habilitar navegação dinâmica em componentes de navegação que não tenham rede de navegação atribuída |
+| Grupos de colisão incluídos | Defina quais grupos de colisão usam malhas de navegação geradas dinamicamente. Por padrão, as malhas usam todos os grupos de colisão |
+| Configurar configurações | Configurações avançadas para malhas de navegação geradas dinamicamente |
 
-For more details, see [Dynamic navigation](../navigation/dynamic-navigation.md).
+Para mais detalhes, consulte [ Navegação dinâmica](../navigation/dynamic-navigation.md).
 
-### Navigation group properties
+### Propriedades do grupo de navegação
 
-| Property | Description |
+| Propriedade | Descrição |
 |----------------------|------------
-| Item | The name of the group. |
-| Height | The height of the entities in this group. Entities can't enter areas with ceilings lower than this value. |
-| Maximum climb height | The maximum height that entities in this group can climb. |
-| Maximum slope | The maximum incline (in degrees) that entities in this group can climb. Entities can't go up or down slopes higher than this value. |
-| Radius | The larger this value, the larger the area of the navigation mesh entities use. Entities can't pass through gaps of less than twice the radius. |
+| Item | O nome do grupo. |
+| Altura | A altura das entidades neste grupo. As entidades não podem entrar em áreas com tectos inferiores a este valor. |
+| Altura de escalada máxima | A altura máxima que as entidades deste grupo podem subir. |
+| Inclinação máxima | A inclinação máxima (em graus) que as entidades neste grupo podem subir. As entidades não podem subir ou descer declives superiores a este valor. |
+| Radius | Quanto maior este valor, maior a área das entidades de malha de navegação usar. As entidades não podem passar por lacunas de menos do do dobro do raio. |
 
-For more details, see [Navigation](../navigation/index.md).
+Para mais detalhes, veja [Navigation](../navigation/index.md).
 
-## Physics
+## Física
 
-![Physics settings](media/physics-settings.png)
+<x1\/> Configurações de tópico <x2\/>
 
-| Property | Description |
+| Propriedade | Descrição |
 |-----------------|----------------
-| Flags | **CollisionsOnly** disables [physics](../physics/index.md) except for collisions. For example, if this is enabled, objects aren't moved by gravity, but will still collide if you move them manually. **ContinuousCollisionDetection** prevents fast-moving entities erroneously moving through other entities. Note: other flags listed here currently aren't enabled in Stride. |
-| Max sub steps | The maximum number of simulations the physics engine can run in a frame to compensate for slowdown. |
-| Fixed time step | The length in seconds of a physics simulation frame. The default is 0.016667 (one sixtieth of a second). |
+| Bandeiras | **CollisionsOnly** desabilita [física](../physics/index.md) exceto para colisões. Por exemplo, se isso estiver ativado, os objetos não são movidos pela gravidade, mas ainda colide se você os mover manualmente. **ContinuousCollisionDetection** impede que as entidades em movimento rápido passem erroneamente por outras entidades. Nota: outras bandeiras listadas aqui atualmente não estão habilitados em Stride. |
+| Max sub passos | O número máximo de simulações que o motor de física pode executar em um quadro para compensar a desaceleração. |
+| Passo de tempo fixo | O comprimento em segundos de um quadro de simulação de física. O padrão é 0,016667 (um sexto de segundo). |
 
-## Rendering
+## Renderização
 
-![Rendering settings](media/rendering-settings.png)
+<x1\/> Configurações de reprodução<x2\/>
 
-| Property | Description |
+| Propriedade | Descrição |
 |-----------------------------|----------------
-| Default back buffer width | This might be overridden depending on the ratio and/or resolution of the device. On Windows, this is the window size. On Android/iOS, this is the off-screen target resolution. |
-| Default back buffer height | This might be overridden depending on the ratio and/or resolution of the device. On Windows, this is the window size. On Android/iOS, this is the off-screen target resolution. |
-| Adapt back buffer to screen | Adapt the ratio of the back buffer to fit the screen ratio |
-| Default graphics profile | The graphics feature level required by the project |
-| Color space | The color space (gamma or linear) used for rendering. This affects the game at runtime and how elements are displayed in Game Studio. |
-| Display orientation | The display orientation of the game (default, portrait, left landscape, or right landscape). |
-| Target graphics platform | The target platform Stride builds the project for. If you set this to **Default**, Stride chooses the most appropriate platform. For more information, see [Set the graphics platform](../platforms/set-the-graphics-platform.md). |
+| Largura do amortecedor traseiro padrão | Isso pode ser substituído dependendo da relação e\/ou resolução do dispositivo. No Windows, este é o tamanho da janela. No Android\/iOS, esta é a resolução de alvo fora da tela. |
+| Altura do amortecedor traseiro padrão | Isso pode ser substituído dependendo da relação e\/ou resolução do dispositivo. No Windows, este é o tamanho da janela. No Android\/iOS, esta é a resolução de alvo fora da tela. |
+| Adapte o buffer de volta para a tela | Adapte a relação do buffer traseiro para ajustar a relação de tela |
+| Perfil gráfico padrão | O nível de recursos gráficos exigido pelo projeto |
+| Espaço de cor | O espaço de cor (gama ou linear) usado para renderização. Isso afeta o jogo em tempo de execução e como os elementos são exibidos no Game Studio. |
+| Orientação de exibição | A orientação de exibição do jogo (padrão, retrato, paisagem esquerda ou paisagem direita). |
+| Plataforma gráfica de destino | A plataforma de destino Stride constrói o projeto para. Se você definir isso para **Default**, Stride escolhe a plataforma mais apropriada. Para obter mais informações, consulte [Defina a plataforma gráfica](../platforms/set-the-graphics-platform.md). |
 
-> [!Tip]
-> To check which default platform your project uses, add a break point to your code (eg in a script), run the project, and check the value of the [GraphicsDevice.Platform](xref:Stride.Graphics.GraphicsDevice.Platform) variable.
+> <x1\/>!Tip<x2\/>
+> Para verificar qual plataforma padrão seu projeto usa, adicione um ponto de interrupção ao seu código (por exemplo, em um script), execute o projeto e verifique o valor da variável [GraphicsDevice.Platform](xref:Stride.Graphics.GraphicsDevice.Platform).
 
 ## Streaming
 
-![Streaming settings](media/streaming-settings.png)
+<x1\/>Streaming settings<x2\/>
 
-| Property | Description |
+| Propriedade | Descrição |
 |----------------------|------------
-| Streaming | Enable streaming |
-| Update interval | How frequently Stride updates the streaming. Smaller intervals mean the streaming system reacts faster, but use more CPU and cause more memory fluctuations. |
-| Max resources per update | The maximum number of textures loaded or unloaded per streaming update. Higher numbers reduce pop-in but might slow down the framerate. |
-| Resource timeout (ms) | How long resources stay loaded after they're no longer used (when the **memory budget** is exceeded) |
-| Memory budget (in MB) | When the memory used by streaming exceeds this budget, Stride unloads unused textures. You can increase this to keep more textures loaded when you have memory to spare, and vice versa. |
+| Streaming | Activar streaming |
+| Intervalo de atualização | Com que frequência Stride atualiza o streaming. Intervalos menores significam que o sistema de streaming reage mais rápido, mas use mais CPU e cause mais flutuações de memória. |
+| Recursos máximos por atualização | O número máximo de texturas carregadas ou descarregadas por atualização de streaming. Números mais elevados reduzem o pop-in, mas podem retardar o framerate. |
+| Tempo de recurso (ms) | Quanto tempo os recursos permanecem carregados após não serem mais utilizados (quando o orçamento de memória **** é excedido) |
+| Orçamento de memória (em MB) | Quando a memória usada por streaming excede este orçamento, Stride descarrega texturas não utilizadas. Você pode aumentar isso para manter mais texturas carregadas quando você tem memória para poupar, e vice-versa. |
 
-> [!Note]
-> Currently, only textures can be streamed.
+> <x1\/>!Note<x2\/>
+> Atualmente, apenas texturas podem ser transmitidas.
 
-For more details, see [Streaming](../graphics/textures/streaming.md).
+Para mais detalhes, consulte [Streaming](../graphics/textures/streaming.md).
 
-## Textures
+## Texturas
 
-![Texture settings](media/texture-settings.png)
+<x1\/> Configurações de exposição<x2\/>
 
-| Property | Description |
+| Propriedade | Descrição |
 |-----------------|--------------
-| Texture quality | The texture quality when encoding textures. **Fast** uses the least CPU, but has the lowest quality. Higher settings might result in slower builds, depending on the target platform. |
+| Qualidade da textura | A qualidade da textura ao codificar texturas. **Fast** usa o menor CPU, mas tem a menor qualidade. As configurações mais altas podem resultar em compilações mais lentas, dependendo da plataforma de destino. |
 
-## Overrides
+## Substituições
 
-You can override settings for particular platforms, graphics APIs, and so on. For example, you can set different texture qualities for different platforms.
+Você pode substituir configurações para plataformas específicas, APIs gráficas e assim por diante. Por exemplo, você pode definir diferentes qualidades de textura para diferentes plataformas.
 
-1. With the **GameSettings** asset selected, in the **Property Grid**, under **Overrides**, click ![Green plus button](~/manual/game-studio/media/green-plus-icon.png) (**Add**).
+1. Com o ativo **GameSettings** selecionado, no **Property Grid**, abaixo de **Overrides**, clique em <x1\/>Green plus button<x2\/> (**Add**).
 
-   ![Select graphics platform](../platforms/media/add-override.png)
+   <x1\/> Selecione a plataforma gráfica<x2\/>
 
-   Game Studio adds an override.
+   Game Studio adiciona uma substituição.
 
-2. In the new override, next to **Platforms**, select the platforms you want the override to apply to. You can select as many as you need.
+2. Na nova substituição, ao lado de **Platforms**, selecione as plataformas às quais deseja que a substituição se aplique. Você pode selecionar quantos precisar.
 
-   ![Select graphics platform override](../platforms/media/select-override-platform.png)
+   <x1\/>Selecione a plataforma de gráficos sobrescrevendo<x2\/>
 
-3. **Optional**: If you want this override to apply only to a specific GPU platform, choose it from the **Specific filter** drop-down list.
+3. **Opcional**: Se você quiser que essa substituição se aplique apenas a uma plataforma GPU específica, escolha-a na lista suspensa **Specific filter**.
 
-   ![Specific filter](media/specific-filter.png)
+   <x1\/> Filtro específico <x2\/>
 
-   You can add GPU platforms to this list under **Platform filters** (see **Add a platform filter** below).
+   Você pode adicionar plataformas GPU a esta lista em filtros **Platform** (veja **Adicione um filtro de plataforma** abaixo).
 
-4. In the **Configuration** drop-down menu, select the kind of setting you want to override (**Editor**, **Texture**, **Rendering** or **Physics**).
+4. No menu suspenso **Configuration**, selecione o tipo de configuração que deseja substituir (**Editor**, **Texture**, **Rendering** ou **Physics**).
 
-   ![Select graphics platform override](../platforms/media/select-override-configuration.png)
+   <x1\/>Selecione a plataforma de gráficos sobrescrevendo<x2\/>
 
-5. Set the options you want to override.
+5. Defina as opções que deseja substituir.
 
-### Add a platform filter
+### Adicionar um filtro de plataforma
 
-You can choose items in the **Platform Filters** list as a specific platform filter when you set an override (see above).
+Você pode escolher itens na lista **Platform Filters** como um filtro de plataforma específico quando você definir uma substituição (veja acima).
 
-![Specific filter](media/specific-filter.png)
+<x1\/> Filtro específico <x2\/>
 
-1. With the **GameSettings** asset selected, in the **Property Grid**, expand **Platform Filters**.
+1. Com o ativo **GameSettings** selecionado, no **Property Grid**, expanda **Platform Filters**.
 
-   The Property Grid displays a list of platform filters you can use.
+   A Grade de Propriedade exibe uma lista de filtros de plataforma que você pode usar.
 
-   ![List of platform filters](media/list-of-platform-filters.png)
+   <x1\/>Lista de filtros de plataforma<x2\/>
 
-2. At the bottom of the list, click **Add to Platform Filters**.
+2. Na parte inferior da lista, clique em **Add to Platform Filters**.
 
-   Game Studio adds a new empty item.
+   Game Studio adiciona um novo item vazio.
 
-3. In the item field, type the GPU filter you want to add.
+3. No campo do item, digite o filtro GPU que deseja adicionar.
 
-   ![Type platform filter](media/add-platform-filter-name.png)
+   <x1\/>Tipe filtro de plataforma<x2\/>
 
-After you add a platform filter, you can select it under **Override > Specific filter**.
+Depois de adicionar um filtro de plataforma, você pode selecioná-lo em **Override > Filtro específico**.
 
-![Override](media/new-GPU-in-override-list.png)
+<x1\/>Override<x2\/>
 
-> [!Note]
-> If the new filter isn't listed, remove the override and re-add it.
+> <x1\/>!Note<x2\/>
+> Se o novo filtro não estiver listado, remova a substituição e volte a adicioná-lo.
 
-## Splash screen
+## Tela de Splash
 
-The **splash screen** is displayed when your game starts. The default is the Stride splash screen.
+A tela **splash** é exibida quando seu jogo começa. O padrão é a tela de respingo Stride.
 
-> [!Note]
-> The splash screen is only displayed when the game is built in release mode.
+> <x1\/>!Note<x2\/>
+> A tela de respingo só é exibida quando o jogo é construído no modo de lançamento.
 
-![Settings](media/splash-screen.png)
+<x1\/>Configurações <x2\/>
 
-| Property | Description |
+| Propriedade | Descrição |
 |----------|------------
-| Texture | The image (eg company logo) displayed as the splash screen. By default, this is *StrideDefaultSplashScreen*. |
-| Color | The color the splash screen fades in on top of. By default, this is black  (*#FF000000*). |
+| Textura | A imagem (por exemplo, logotipo da empresa) exibida como a tela de respingo. Por padrão, isso é *StrideDefaultSplashScreen*. |
+| Cor | A cor da tela de respingo desaparece em cima de. Por padrão, isso é preto (*#FF000000*). |
 
-For more information, see [Splash screen](/splash-screen.md).
+Para mais informações, consulte [Splash screen](/splash-screen.md).
 
-## See also
+## Ver também
 
-* [Assets](../game-studio/assets.md)
+* [Activos](../game-studio/assets.md)

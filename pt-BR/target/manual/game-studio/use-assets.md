@@ -1,175 +1,175 @@
-# Use assets
+# Utilizar activos
 
-<span class="badge text-bg-primary">Beginner</span>
+<x1\/>Introdução<x2\/>
 
-There are four ways to use assets:
+Existem quatro maneiras de usar ativos:
 
-* reference them in entity components
-* reference them in other assets
-* load them from code as content
-* load them from code as content using `UrlReference`
+* referenciá-los em componentes da entidade
+* referenciá-los em outros ativos
+* carregá-los do código como conteúdo
+* carregá-los do código como conteúdo usando `UrlReference`
 
-## Reference assets in components
+## Activos de referência em componentes
 
-Many kinds of component use assets. For example, model components use model assets.
+Muitos tipos de ativos de uso de componentes. Por exemplo, os componentes do modelo usam ativos do modelo.
 
-Components that use assets have **asset docks** in the **property grid**.
+Componentes que usam ativos têm **asset docks** no **property grid**.
 
-![Select an asset](media/use-assets-asset-picker-dock.png)
+<x1\/> Selecione um ativo<x2\/>
 
-To add an asset to an entity component, drag the asset to the asset dock in the component properties (in the **property grid**). You can drop assets in the text field or the empty thumbnail.
+Para adicionar um ativo a um componente de entidade, arraste o ativo para a doca de ativos nas propriedades do componente (na grade **property**). Você pode soltar ativos no campo de texto ou na miniatura vazia.
 
-![Drag and drop an asset](media/use-assets-drag-and-drop.png)
+<x1\/>Drag e drop a asset<x2\/>
 
-Alternatively, click ![Hand icon](~/manual/game-studio/media/hand-icon.png) (**Select an asset**).
+Em alternativa, clique em <x1\/>Hand icon<x2\/> (**Select an asset**).
 
-![Select an asset](media/use-assets-asset-picker.png)
+<x1\/> Selecione um ativo<x2\/>
 
-The **Select an asset** window opens.
+A janela **Selecione um ativo** abre.
 
-> [!NOTE]
-> The **Select an asset** window only displays assets of types expected by the component. For example, if the component is an audio listener, the window only displays audio assets.
+> <x1\/>!NOTE<x2\/>
+> A janela **Selecione um ativo** só exibe ativos de tipos esperados pelo componente. Por exemplo, se o componente é um receptor de áudio, a janela só exibe ativos de áudio.
 
-After you add an asset to a component, the asset dock displays its name and a thumbnail image.
+Depois de adicionar um ativo a um componente, a doca de ativos exibe seu nome e uma imagem de miniatura.
 
-![Asset displayed](media/asset-displayed.png)
+<x1\/> Aset exibido<x2\/>
 
-## Reference assets in other assets
+## Activos de referência em outros activos
 
-Assets can reference other assets. For example, a model asset might use material assets.
+Os ativos podem referenciar outros ativos. Por exemplo, um ativo modelo pode usar ativos materiais.
 
-You can add asset references to assets the same way you add them to entity components (see above).
+Você pode adicionar referências de ativos da mesma forma que você os adiciona aos componentes da entidade (veja acima).
 
-## Clear a reference
+## Limpar uma referência
 
-To clear a reference to an asset, in the **asset dock**, click ![eraser](media/use-assets-eraser.png) (**Clear reference**).
+Para limpar uma referência a um ativo, no **asset dock**, clique em <x1\/>eraser<x2\/> (**Clear reference**).
 
-![Use eraser](media/use-eraser.png)
+<x1\/>Usar eraser<x2\/>
 
-## Examine references
+## Referências examinadas
 
-You can see the references in a selected asset in the **References** tab. By default, this is in the bottom right of Game Studio.
+Você pode ver as referências em um ativo selecionado na aba **References**. Por padrão, isso está na parte inferior direita do Game Studio.
 
-![References tab](media/use-assets-references-tab.png)
+<x1\/>Referências tab<x2\/>
 
-* The **References** tab displays the assets referenced by the selected asset.
-* The **Referenced by** tab displays the assets that reference the selected asset.
+* A aba **References** exibe os ativos referenciados pelo ativo selecionado.
+* A aba **Referenced by** exibe os ativos que referem o ativo selecionado.
 
-> [!Tip]
-> If you can't see the References tab, make sure it's displayed under **View > References**.
+> <x1\/>!Tip<x2\/>
+> Se você não consegue ver a guia Referências, certifique-se de que ela é exibida em **View > Referências**.
 
-## Load assets from code
+## Carga de ativos de código
 
-When loading in assets at runtime we speak of "Content" rather than assets. The loaded content refers to the asset and can then be used in your script.
+Ao carregar em ativos no tempo de execução, falamos de "Conteúdo" em vez de ativos. O conteúdo carregado refere-se ao ativo e pode ser usado em seu script.
 
 ```cs
-// Load a model (replace URL with valid URL)
-var model = Content.Load<Model>("AssetFolder/MyModel");
+\/\/ Carregar um modelo (substituir URL com URL válida)
+var model = Content.Load<Model>("AssetFolder\/MyModel");
 
-// Create a new entity to add to the scene
-Entity entity = new Entity(position, "Entity Added by Script") { new ModelComponent { Model = model } };
+\/\/ Criar uma nova entidade para adicionar à cena
+Entidade entidade = nova Entidade (posição, "Entidade Adicionado por Script") { new ModelComponent { Model = model } };
 
-// Add a new entity to the scene
-SceneSystem.SceneInstance.RootScene.Entities.Add(entity);
+\/\/ Adicionar uma nova entidade à cena
+SceneSystem.SceneInstance.RootScene.Entities.Add (entidade);
 ```
 
-> [!TIP]
-> To find the asset URL, in Game Studio, move the mouse over the asset. Game Studio displays the asset URL in a tooltip.  URLs typically have the format *AssetFolder/AssetName*.
-> [!WARNING]
-> When loading assets from scripts, make sure you:
+> <x1\/>!TIP<x2\/>
+> Para encontrar a URL de ativos, no Game Studio, mova o mouse sobre o ativo. Game Studio exibe a URL de ativos em uma ponta de ferramenta.  URLs normalmente têm o formato * AssetFolder\/AssetName*.
+> <x3\/><x4\/>
+> Ao carregar ativos de scripts, certifique-se de:
 >
-> * include the asset in the build as described in [Manage assets](manage-assets.md)
-> * make sure you add the script as a component to an entity in the scene
+> * incluir o ativo na compilação como descrito em [Gerenciar ativos](manage-assets.md)
+> * certifique-se de adicionar o script como um componente a uma entidade na cena
 
-### Unload unneeded assets
+### Descarga de ativos desnecessários
 
-When loading content from code, you should unload content when you don't need them any more. If you don't, content stays in memory, wasting GPU.
+Ao carregar conteúdo do código, você deve descarregar o conteúdo quando você não precisa mais deles. Se você não o fizer, o conteúdo fica na memória, desperdiçando GPU.
 
-To do unload an asset, use ``Content.Unload(myAsset)``.
+Para descarregar um ativo, use ``Content.Unload(myAsset)``.
 
-## Load assets from code using UrlReference
+## Carga de ativos de código usando UrlReference
 
-`UrlReference` allows you to reference assets in your scripts the same way you would with normal assets but they are loaded dynamically in code. Referencing an asset with a `UrlReference` causes the asset to be included in the build.
+`UrlReference` permite que você referencie ativos em seus scripts da mesma maneira que você faria com ativos normais, mas eles são carregados dinamicamente no código. A referência a um ativo com um `UrlReference` faz com que o ativo seja incluído na compilação.
 
-You can reference assets in your scripts using properties/fields of type `UrlReference` or `UrlReference<T>`:
+Você pode referenciar ativos em seus scripts usando propriedades\/campos do tipo `UrlReference` ou `UrlReference<T>`:
 
-* `UrlReference` can be used to reference any asset. This is most useful for the "Raw asset".
-* `UrlReference<T>` can be used to specify the desired type. i.e. `UrlReference<Scene>`. This gives Game Studio a hint about what type of asset this `UrlReference` can be used for.
+* `UrlReference` pode ser usado para referenciar qualquer ativo. Isso é mais útil para o "Ativo Raw".
+* `UrlReference<T>` pode ser usado para especificar o tipo desejado. i.e. `UrlReference<Scene>`. Isso dá ao Game Studio uma dica sobre que tipo de ativo este `UrlReference` pode ser usado para.
 
-## Examples
+## Exemplos
 
-### Loading a Scene
+### Carregando uma cena
 
-Using `UrlReference<Scene>` to load the next scene.
+Usando `UrlReference<Scene>` para carregar a próxima cena.
 
 ```cs
-using System.Threading.Tasks;
-//Include the Stride.Core.Serialization namespace to use UrlReference
-using Stride.Core.Serialization;
-using Stride.Engine;
+usando o Sistema. Threading. Tarefas;
+\/\/Incluir o Stride. Core.Serialization namespace para usar UrlReference
+usando Stride. Core.Serialização;
+usando Stride. Motor;
 
-namespace Examples
-{
-    public class UrlReferenceExample : AsyncScript
-    {
-        public UrlReference<Scene> NextSceneUrl { get; set; }
+exemplos de namespace
+(
+    classe pública UrlReference Exemplo : AsyncScript
+    (
+        público UrlReference<Scene> NextScene Url { get; set; }
 
-        public override async Task Execute()
-        {
-            //...
+        override público async Task Execute()
+        (
+            \/\/...
         }
 
-        private async Task LoadNextScene()
-        {
-            //Dynamically load next scene asynchronously
-            var nextScene = await Content.LoadAsync(NextSceneUrl);
+        async privado Task LoadNextScene()
+        (
+            \/\/ Carga dinamicamente próxima cena assíncrona
+            var nextScene = await Content.LoadAsync (NextSceneUrl);
             SceneSystem.SceneInstance.RootScene = nextScene;
         }
     }
 }
 ```
 
-### Load data from a Raw asset JSON file
+### Carregar dados de um arquivo JSON de ativos crus
 
-Use a Raw asset to store data in a JSON file and load using [Newtonsoft.Json](https://www.newtonsoft.com/json). To use `Newtonsoft.Json` you also need to add the `Newtonsoft.Json` NuGet package to the project.
+Use um ativo Raw para armazenar dados em um arquivo JSON e carregar usando [Newtonsoft. Json](https://www.newtonsoft.com/json). Para usar `Newtonsoft.Json` você também precisa adicionar o `Newtonsoft.Json` NuGet pacote para o projeto.
 
 ```cs
-//Include the Newtonsoft.Json namespace.
-using Newtonsoft.Json;
-using System.IO;
-using System.Threading.Tasks;
-//Include the Stride.Core.Serialization namespace to use UrlReference
-using Stride.Core.Serialization;
-using Stride.Engine;
+\/\/Incluir o Newtonsoft. Espaço de nomes Json.
+usando Newtonsoft. Json;
+usando o Sistema. IO;
+usando o Sistema. Threading. Tarefas;
+\/\/Incluir o Stride. Core.Serialization namespace para usar UrlReference
+usando Stride. Core.Serialização;
+usando Stride. Motor;
 
-namespace Examples
-{
-    public class UrlReferenceExample : AsyncScript
-    {
-        public UrlReference RawAssetUrl { get; set; }
+exemplos de namespace
+(
+    classe pública UrlReference Exemplo : AsyncScript
+    (
+        ulReference RawAset Url { get; set; }
 
-        public override async Task Execute()
-        {
-            //...
+        override público async Task Execute()
+        (
+            \/\/...
         }
 
-        private async Task<MyDataClass> LoadMyData()
-        {
-            //Open a StreamReader to read the content
-            using (var stream = Content.OpenAsStream(RawAssetUrl))
-            using (var streamReader = new StreamReader(stream))
-            {
-                //read the raw asset content
+        async privado Task<MyDataClass> LoadMyData()
+        (
+            \/\/Abra um StreamReader para ler o conteúdo
+            using (var stream = Content.OpenAsStream (RawAssetUrl))
+            usando (varRead streamer = novo StreamReader (stream)
+            (
+                \/\/leia o conteúdo de ativos crus
                 string json = await streamReader.ReadToEndAsync();
-                //Deserialize the JSON to your custom MyDataClass Type.
-                return JsonConvert.DeserializeObject<MyDataClass>(json);
+                \/\/Deserialize o JSON para o seu tipo personalizado MyDataClass.
+                retorno JsonConvert.DeserializeObject<MyDataClass>(json);
             }
         }
     }
 }
 ```
 
-## See also
+## Ver também
 
-* [Create assets](create-assets.md)
-* [Manage assets](manage-assets.md)
+* [Criar ativos](create-assets.md)
+* [Gerenciar ativos](manage-assets.md)

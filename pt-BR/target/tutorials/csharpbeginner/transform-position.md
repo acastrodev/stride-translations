@@ -1,16 +1,16 @@
-# Transform Position
-You can find this sample in the tutorial project: **Menu** &rarr; **Transform Position**
+# Posição de transformação
+Você pode encontrar esta amostra no projeto tutorial: **Menu** → **Transform Position**
 
-## Explanation
-This C# Beginner tutorial covers the Transform component of an entity.
+## Explicação
+Este tutorial C# Beginner cobre o componente Transform de uma entidade.
 
-The Transform component is such a commonly used component, that you can quick access it via `Entity.Transform`.
+O componente Transform é um componente tão comumente usado, que você pode acessá-lo rapidamente através de `Entity.Transform`.
 
-The transform contains all kinds of properties and methods for `Position`, `Rotation` and `Scale`. In this example we learn the difference between local and world position.
+A transformação contém todos os tipos de propriedades e métodos para `Position`, `Rotation` e `Scale`. Neste exemplo aprendemos a diferença entre a posição local e o mundo.
 
-![Transform Position](media/transform-position.webp)
+![ Posição de transposição ](media/transform-position.webp)
 
-> [!Video https://www.youtube.com/embed/2N6NhijZuJk]
+> [!Vídeo https://www.youtube.com/embed/2N6NhijZuJk]
 
-## Code
-[!code-csharp[Entity](../../../../stride/samples/Tutorials/CSharpBeginner/CSharpBeginner/CSharpBeginner.Game/Code/TransformPositionDemo.cs)]
+## Código
+[!code-csharp[Entidade](../../../../stride/samples/Tutorials/CSharpBeginner/CSharpBeginner/CSharpBeginner.Game/Code/TransformPositionDemo.cs)]

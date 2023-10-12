@@ -1,41 +1,41 @@
-# Consume packages
+# Pacotes de consumo
 
-<span class="badge text-bg-primary">Beginner</span>
-<span class="badge text-bg-success">Programmer</span>
+<x1\/>Introdução<x2\/>
+<x3\/> Programador <x4\/>
 
-## Open your project in Visual Studio
+## Abra seu projeto no Visual Studio
 
-> [!Note]
-> Game Studio will later support adding NuGet packages directly.
+> <x1\/>!Note<x2\/>
+> Game Studio irá mais tarde apoiar adicionar pacotes NuGet diretamente.
 
-First of all, after saving all your changes, open your project with Visual Studio. You can easily do this by clicking the appropriate button on the toolbar:
+Primeiro de tudo, depois de salvar todas as suas mudanças, abra seu projeto com Visual Studio. Você pode facilmente fazer isso clicando no botão apropriado na barra de ferramentas:
 
-![Open project in Visual Studio](../game-studio/media/open-project-in-visual-studio.png)
+<x1\/> Projeto aberto em Visual Studio<x2\/>
 
-## Add a reference
+## Adicionar uma referência
 
-1. In the **Solution Explorer**, right-click on the project and click on **Manage NuGet Packages...**
+1. No **Solution Explorer**, clique com o botão direito do mouse no projeto e clique em **Manage NuGet Packages...**
 
-   ![Visual Studio Start button](media/manage-nuget-packages.png)
+   <x1\/>Visual Studio Iniciar botão<x2\/>
 
-2. For our example, let's use `Stride.AssetPack.BuildingBlocks` package:
-   * Choose "nuget.org" or "All" as the **Package source**
-   * Make sure **Include prerelease** is checked (if necessary)
-   * Go to the **Browse** tab
-   * **Search** for a Stride asset package (i.e. **Stride.AssetPack.BuildingBlocks**) and select **Install**
+2. Por nosso exemplo, vamos usar `Stride.AssetPack.BuildingBlocks` pacote:
+   * Escolha "nuget.org" ou "All" como a fonte **Package**
+   * Certifique-se de **Incluir pré-lançamento** é verificado (se necessário)
+   * Vá para a guia **Browse**
+   * ** Pesquisa ** para um pacote de ativos Stride (i.e. **Stride.AssetPack.BuildingBlocks**) e selecione **Install**
 
-   ![Install package](media/install-package.png)
+   <x1\/>Install package<x2\/>
 
-3. Save the Visual Studio project.
+3. Salve o projeto Visual Studio.
 
-## Use assets in Game Studio
+## Use ativos no Game Studio
 
-1. In **Game Studio**, go to the **File** menu and select **Reload project**
+1. Em **Game Studio**, vá para o menu **File** e selecione **Reload project**
 
-2. You should now be able to see the referenced project and its assets in **Solution explorer**
+2. Agora você deve ser capaz de ver o projeto referenciado e seus ativos em **Solution explorer**
 
-   ![Use package](media/use-package-from-game-studio.png)
+   <x1\/>Use pacote<x2\/>
 
-> [!Note]
-> Those assets are readonly and as such can't be dragged and dropped into the scene. This will be fixed soon.
-> In the meantime, you can still use the asset selector to change an existing model or material reference to one from the asset pack.
+> <x1\/>!Note<x2\/>
+> Esses ativos são somente leitura e, como tal, não podem ser arrastados e deixados cair na cena. Isto será corrigido em breve.
+> Entretanto, você ainda pode usar o seletor de ativos para alterar um modelo ou referência de material existente para um do pacote de ativos.

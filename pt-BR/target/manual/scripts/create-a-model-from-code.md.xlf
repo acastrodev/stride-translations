@@ -3,45 +3,45 @@
 <body>
 <trans-unit id="tu1" xml:space="preserve">
 <source xml:lang="en">Create a model from code</source>
-<target xml:lang="pt">Create a model from code</target>
+<target xml:lang="pt">Criar um modelo de código</target>
 </trans-unit>
 <trans-unit id="tu2" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Beginner<x id="2"/>
 <x id="3"/>Programmer<x id="4"/></source>
-<target xml:lang="pt"><x id="1"/>Beginner<x id="2"/>
-<x id="3"/>Programmer<x id="4"/></target>
+<target xml:lang="pt">&lt;x1\/&gt;Introdução&lt;x2\/&gt;
+&lt;x3\/&gt; Programador &lt;x4\/&gt;</target>
 </trans-unit>
 <trans-unit id="tu3" xml:space="preserve">
 <source xml:lang="en">You can create models in scripts at runtime. You can do this in several different ways, including:</source>
-<target xml:lang="pt">You can create models in scripts at runtime. You can do this in several different ways, including:</target>
+<target xml:lang="pt">Você pode criar modelos em scripts no runtime. Você pode fazer isso de várias maneiras diferentes, incluindo:</target>
 </trans-unit>
 <trans-unit id="tu4" xml:space="preserve">
 <source xml:lang="en">creating a model from an asset</source>
-<target xml:lang="pt">creating a model from an asset</target>
+<target xml:lang="pt">criar um modelo de um ativo</target>
 </trans-unit>
 <trans-unit id="tu5" xml:space="preserve">
 <source xml:lang="en">creating a procedural model using built-in geometric primitives (eg a sphere or cube)</source>
-<target xml:lang="pt">creating a procedural model using built-in geometric primitives (eg a sphere or cube)</target>
+<target xml:lang="pt">criando um modelo processual usando primitivas geométricas incorporadas (por exemplo, uma esfera ou cubo)</target>
 </trans-unit>
 <trans-unit id="tu6" xml:space="preserve">
 <source xml:lang="en">instantiating a prefab that contains a model (see <g id="1">Use prefabs</g>)</source>
-<target xml:lang="pt">instantiating a prefab that contains a model (see <g id="1">Use prefabs</g>)</target>
+<target xml:lang="pt">instanciando um prefab que contenha um modelo (veja <g id="1">Use prefabs</g>)</target>
 </trans-unit>
 <trans-unit id="tu7" xml:space="preserve">
 <source xml:lang="en">Create a model from an asset</source>
-<target xml:lang="pt">Create a model from an asset</target>
+<target xml:lang="pt">Criar um modelo de um ativo</target>
 </trans-unit>
 <trans-unit id="tu8" xml:space="preserve">
 <source xml:lang="en">Create a new, empty synchronous script. For full instructions, see <g id="1">Create a script</g>.</source>
-<target xml:lang="pt">Create a new, empty synchronous script. For full instructions, see <g id="1">Create a script</g>.</target>
+<target xml:lang="pt">Crie um novo e vazio script síncrono. Para instruções completas, consulte <g id="1">Criar um script</g>.</target>
 </trans-unit>
 <trans-unit id="tu9" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Create a script<x id="2"/></source>
-<target xml:lang="pt"><x id="1"/>Create a script<x id="2"/></target>
+<target xml:lang="pt">&lt;x1\/&gt;Criar um script&lt;x2\/&gt;</target>
 </trans-unit>
 <trans-unit id="tu10" xml:space="preserve">
 <source xml:lang="en">In the script, load the model using its asset URL. For example:</source>
-<target xml:lang="pt">In the script, load the model using its asset URL. For example:</target>
+<target xml:lang="pt">No script, carregar o modelo usando sua URL de ativos. Por exemplo:</target>
 </trans-unit>
 <trans-unit id="tu11" xml:space="preserve">
 <source xml:lang="en">// Create a new entity and add it to the scene.
@@ -52,66 +52,66 @@
 	var modelComponent = entity.GetOrCreate&lt;ModelComponent&gt;();
 	modelComponent.Model = Content.Load&lt;Model&gt;("MyFolder/MyModel");
 </source>
-<target xml:lang="pt">// Create a new entity and add it to the scene.
+<target xml:lang="pt">\/\/ Criar uma nova entidade e adicioná-la à cena.
 	var entity = new Entity();
-	SceneSystem.SceneInstance.RootScene.Entities.Add(entity);
+	SceneSystem.SceneInstance.RootScene.Entities.Add (entidade);
 
-// Add a model included in the game files.
+\/\/ Adicione um modelo incluído nos arquivos do jogo.
 	var modelComponent = entity.GetOrCreate&lt;ModelComponent&gt;();
-	modelComponent.Model = Content.Load&lt;Model&gt;("MyFolder/MyModel");
+	modelComponent. Modelo = Content.Load&lt;Model&gt;("MyFolder\/MyModel");
 </target>
 </trans-unit>
 <trans-unit id="tu12" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>!Tip<x id="2"/>
 To find the model's asset URL, in the <g id="3">Asset View</g>, move the mouse over the model.
 <x id="4"/>(Get asset URL<x id="5"/></source>
-<target xml:lang="pt"><x id="1"/>!Tip<x id="2"/>
-To find the model's asset URL, in the <g id="3">Asset View</g>, move the mouse over the model.
-<x id="4"/>(Get asset URL<x id="5"/></target>
+<target xml:lang="pt">&lt;x1\/&gt;!Tip&lt;x2\/&gt;
+Para encontrar a URL de ativos do modelo, no <g id="3">Asset View</g>, mova o mouse sobre o modelo.
+&lt;x3\/&gt; (Get asset URL&lt;x4\/&gt;</target>
 </trans-unit>
 <trans-unit id="tu13" xml:space="preserve">
 <source xml:lang="en">Add the script as a <g id="1">script component</g> to any entity in the scene. It doesn't matter which entity you use. For instructions, see <g id="2">Use a script</g>.</source>
-<target xml:lang="pt">Add the script as a <g id="1">script component</g> to any entity in the scene. It doesn't matter which entity you use. For instructions, see <g id="2">Use a script</g>.</target>
+<target xml:lang="pt">Adicione o script como um componente <g id="1">script</g> a qualquer entidade na cena. Não importa qual entidade você usa. Para instruções, veja <g id="2">Use um script</g>.</target>
 </trans-unit>
 <trans-unit id="tu14" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Add script component to entity<x id="2"/></source>
-<target xml:lang="pt"><x id="1"/>Add script component to entity<x id="2"/></target>
+<target xml:lang="pt">&lt;x1\/&gt; Adicionar componente de script para entidade&lt;x2\/&gt;</target>
 </trans-unit>
 <trans-unit id="tu15" xml:space="preserve">
 <source xml:lang="en">In the <g id="1">Asset View</g>, right-click the model you want to create at runtime and select <g id="2">Include in build as root asset</g>.</source>
-<target xml:lang="pt">In the <g id="1">Asset View</g>, right-click the model you want to create at runtime and select <g id="2">Include in build as root asset</g>.</target>
+<target xml:lang="pt">No <g id="1">Asset View</g>, clique com o botão direito do mouse no modelo que você deseja criar no tempo de execução e selecione <g id="2">Incluir na compilação como root asset</g>.</target>
 </trans-unit>
 <trans-unit id="tu16" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Include in build as root asset<x id="2"/></source>
-<target xml:lang="pt"><x id="1"/>Include in build as root asset<x id="2"/></target>
+<target xml:lang="pt">&lt;x1\/&gt;Incluir em compilação como root asset&lt;x2\/&gt;</target>
 </trans-unit>
 <trans-unit id="tu17" xml:space="preserve">
 <source xml:lang="en">This makes sure the asset is available for the script to use at runtime. For more information, see <g id="1">Manage assets</g>.</source>
-<target xml:lang="pt">This makes sure the asset is available for the script to use at runtime. For more information, see <g id="1">Manage assets</g>.</target>
+<target xml:lang="pt">Isso garante que o ativo esteja disponível para o script usar em tempo de execução. Para obter mais informações, consulte <g id="1">Gerenciar ativos</g>.</target>
 </trans-unit>
 <trans-unit id="tu18" xml:space="preserve">
 <source xml:lang="en">Create a procedural model</source>
-<target xml:lang="pt">Create a procedural model</target>
+<target xml:lang="pt">Criar um modelo processual</target>
 </trans-unit>
 <trans-unit id="tu19" xml:space="preserve">
 <source xml:lang="en">Create a new, empty synchronous script. For full instructions, see <g id="1">Create a script</g>.</source>
-<target xml:lang="pt">Create a new, empty synchronous script. For full instructions, see <g id="1">Create a script</g>.</target>
+<target xml:lang="pt">Crie um novo e vazio script síncrono. Para instruções completas, consulte <g id="1">Criar um script</g>.</target>
 </trans-unit>
 <trans-unit id="tu20" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Add new script<x id="2"/></source>
-<target xml:lang="pt"><x id="1"/>Add new script<x id="2"/></target>
+<target xml:lang="pt">&lt;x1\/&gt; Adicionar novo script&lt;x2\/&gt;</target>
 </trans-unit>
 <trans-unit id="tu21" xml:space="preserve">
 <source xml:lang="en">Add the script as a <g id="1">script component</g> to any entity in the scene. It doesn't matter which entity you use. For instructions, see <g id="2">Use a script</g>.</source>
-<target xml:lang="pt">Add the script as a <g id="1">script component</g> to any entity in the scene. It doesn't matter which entity you use. For instructions, see <g id="2">Use a script</g>.</target>
+<target xml:lang="pt">Adicione o script como um componente <g id="1">script</g> a qualquer entidade na cena. Não importa qual entidade você usa. Para instruções, veja <g id="2">Use um script</g>.</target>
 </trans-unit>
 <trans-unit id="tu22" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Add script component to entity<x id="2"/></source>
-<target xml:lang="pt"><x id="1"/>Add script component to entity<x id="2"/></target>
+<target xml:lang="pt">&lt;x1\/&gt; Adicionar componente de script para entidade&lt;x2\/&gt;</target>
 </trans-unit>
 <trans-unit id="tu23" xml:space="preserve">
 <source xml:lang="en">In your script, instantiate an empty entity and an empty model. For example:</source>
-<target xml:lang="pt">In your script, instantiate an empty entity and an empty model. For example:</target>
+<target xml:lang="pt">No seu script, posicione uma entidade vazia e um modelo vazio. Por exemplo:</target>
 </trans-unit>
 <trans-unit id="tu24" xml:space="preserve">
 <source xml:lang="en">// Create an entity and add it to the scene.
@@ -122,18 +122,18 @@ SceneSystem.SceneInstance.RootScene.Entities.Add(entity);
 var model = new Model();
 entity.GetOrCreate&lt;ModelComponent&gt;().Model = model;  
 </source>
-<target xml:lang="pt">// Create an entity and add it to the scene.
+<target xml:lang="pt">\/\/ Criar uma entidade e adicioná-la à cena.
 var entity = new Entity();
-SceneSystem.SceneInstance.RootScene.Entities.Add(entity);
+SceneSystem.SceneInstance.RootScene.Entities.Add (entidade);
 
-// Create a model and assign it to the model component.
-var model = new Model();
-entity.GetOrCreate&lt;ModelComponent&gt;().Model = model;  
+\/\/ Criar um modelo e atribuí-lo ao componente do modelo.
+modelo var = novo Modelo();
+entity.GetOrCreate&lt;ModelComponent&gt;(). Modelo = modelo;  
 </target>
 </trans-unit>
 <trans-unit id="tu25" xml:space="preserve">
 <source xml:lang="en">In your script, create a procedural model using built-in geometric primitives (eg a sphere or cube). For example:</source>
-<target xml:lang="pt">In your script, create a procedural model using built-in geometric primitives (eg a sphere or cube). For example:</target>
+<target xml:lang="pt">Em seu script, crie um modelo processual usando primitivas geométricas incorporadas (por exemplo, uma esfera ou cubo). Por exemplo:</target>
 </trans-unit>
 <trans-unit id="tu26" xml:space="preserve">
 <source xml:lang="en">// Add one or more meshes using geometric primitives (eg spheres or cubes).
@@ -142,22 +142,22 @@ var meshDraw = GeometricPrimitive.Sphere.New(GraphicsDevice).ToMeshDraw();
 var mesh = new Mesh { Draw = meshDraw }; 
 model.Meshes.Add(mesh);
 </source>
-<target xml:lang="pt">// Add one or more meshes using geometric primitives (eg spheres or cubes).
-var meshDraw = GeometricPrimitive.Sphere.New(GraphicsDevice).ToMeshDraw();
+<target xml:lang="pt">\/\/ Adicione uma ou mais malhas usando primitivas geométricas (por exemplo, esferas ou cubos).
+var meshDraw = GeometricPrimitive.Sphere.New (GraphicsDevice).ToMeshDraw();
 
 var mesh = new Mesh { Draw = meshDraw }; 
-model.Meshes.Add(mesh);
+modelo. Meshes.Add(mesh);
 </target>
 </trans-unit>
 <trans-unit id="tu27" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>!Note<x id="2"/>
 To use the code above, make sure you add <g id="3">using Stride.Extensions</g> to the top of your script.</source>
-<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
-To use the code above, make sure you add <g id="3">using Stride.Extensions</g> to the top of your script.</target>
+<target xml:lang="pt">&lt;x1\/&gt;!Note&lt;x2\/&gt;
+Para usar o código acima, certifique-se de adicionar <g id="3">usando Stride. Extensões</g> para o topo do seu script.</target>
 </trans-unit>
 <trans-unit id="tu28" xml:space="preserve">
 <source xml:lang="en">Alternatively, create a mesh using your own vertex and index buffers. For example:</source>
-<target xml:lang="pt">Alternatively, create a mesh using your own vertex and index buffers. For example:</target>
+<target xml:lang="pt">Alternativamente, crie uma malha usando seu próprio vértice e buffers de índice. Por exemplo:</target>
 </trans-unit>
 <trans-unit id="tu29" xml:space="preserve">
 <source xml:lang="en">// Create a mesh using your own vertex and index buffers.
@@ -165,15 +165,15 @@ To use the code above, make sure you add <g id="3">using Stride.Extensions</g> t
 mesh = new Mesh { Draw = new MeshDraw { /* Vertex buffer and index buffer setup */ } };
 model.Meshes.Add(mesh);
 </source>
-<target xml:lang="pt">// Create a mesh using your own vertex and index buffers.
+<target xml:lang="pt">\/\/ Criar uma malha usando seu próprio vértice e buffers de índice.
 
-mesh = new Mesh { Draw = new MeshDraw { /* Vertex buffer and index buffer setup */ } };
-model.Meshes.Add(mesh);
+mesh = novo Mesh { Draw = novo MeshDraw { \/* Tampão de vértice e configuração de tampão de índice *\/ } };
+modelo. Meshes.Add(mesh);
 </target>
 </trans-unit>
 <trans-unit id="tu30" xml:space="preserve">
 <source xml:lang="en">Here is a more complete example that draws a custom triangle..</source>
-<target xml:lang="pt">Here is a more complete example that draws a custom triangle..</target>
+<target xml:lang="pt">Aqui está um exemplo mais completo que desenha um triângulo personalizado..</target>
 </trans-unit>
 <trans-unit id="tu31" xml:space="preserve">
 <source xml:lang="en">var vertices = new VertexPositionTexture[3];
@@ -200,52 +200,52 @@ var customMesh = new Stride.Rendering.Mesh
 // add the mesh to the model
 model.Meshes.Add(customMesh);
 </source>
-<target xml:lang="pt">var vertices = new VertexPositionTexture[3];
-vertices[0].Position = new Vector3(0f,0f,1f);            
-vertices[1].Position = new Vector3(0f,1f,0f);
-vertices[2].Position = new Vector3(0f,1f,1f);
-var vertexBuffer = Stride.Graphics.Buffer.Vertex.New(GraphicsDevice, vertices,
+<target xml:lang="pt">vértices var = novo VertexPositionTexture[3];
+vértices[0].Posição = novo Vector3(0f,0f,1f);            
+vértices[1].Posição = novo Vector3(0f,1f,0f);
+vértices[2].Posição = novo Vector3(0f,1f,1f);
+var vertexBuffer = Stride.Graphics.Buffer.Vertex.New (GraphicsDevice, vértices,
                                                      GraphicsResourceUsage.Dynamic);
-int[] indices = { 0, 2, 1 };
-var indexBuffer = Stride.Graphics.Buffer.Index.New(GraphicsDevice, indices);
+índices = { 0, 2, 1 };
+var indexBuffer = Stride.Graphics.Buffer.Index.New (GraphicsDevice, índices);
 
-var customMesh = new Stride.Rendering.Mesh
-{ 
-    Draw = new Stride.Rendering.MeshDraw
-    { 
-        /* Vertex buffer and index buffer setup */ 
+vara personalizada Malha = novo Stride. Renderização. Malha de malha
+( 
+    Desenho = novo Stride.Rendering.MeshDraw
+    ( 
+        \/* Tampão de vértice e configuração de tampão de índice *\/ 
         PrimitiveType = Stride.Graphics.PrimitiveType.TriangleList,
-        DrawCount = indicies.Length,
-        IndexBuffer = new IndexBufferBinding(indexBuffer, true, indices.Length),
-        VertexBuffers = new[] { new VertexBufferBinding(vertexBuffer, 
+        DrawCount = indícios. Comprimento,
+        IndexBuffer = novo IndexBufferBinding(indexBuffer, true, indices.Length),
+        VertexBuffers = novo[] { novo VertexBufferBinding (vertexBuffer, 
                                   VertexPositionTexture.Layout, vertexBuffer.ElementCount) },
     }
 };            
-// add the mesh to the model
-model.Meshes.Add(customMesh);
+\/\/ adicionar a malha ao modelo
+model.Meshes.Add (personalizado Malha);
 </target>
 </trans-unit>
 <trans-unit id="tu32" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>!Note<x id="2"/>
 For more information about how to set up vertex and index buffers, see <g id="3">Drawing vertices</g>.</source>
-<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
-For more information about how to set up vertex and index buffers, see <g id="3">Drawing vertices</g>.</target>
+<target xml:lang="pt">&lt;x1\/&gt;!Note&lt;x2\/&gt;
+Para obter mais informações sobre como configurar os amortecedores de vértice e índice, consulte os vértices <g id="3">Drawing</g>.</target>
 </trans-unit>
 <trans-unit id="tu33" xml:space="preserve">
 <source xml:lang="en">Finally, you need to give the model one or more materials. There are two ways to do this.</source>
-<target xml:lang="pt">Finally, you need to give the model one or more materials. There are two ways to do this.</target>
+<target xml:lang="pt">Finalmente, você precisa dar o modelo um ou mais materiais. Há duas formas de fazer isto.</target>
 </trans-unit>
 <trans-unit id="tu34" xml:space="preserve">
 <source xml:lang="en">Option 1: load a material in code</source>
-<target xml:lang="pt">Option 1: load a material in code</target>
+<target xml:lang="pt">Opção 1: carregar um material no código</target>
 </trans-unit>
 <trans-unit id="tu35" xml:space="preserve">
 <source xml:lang="en">In your code, load one or more materials and add them to the model. Because models can use multiple materials (one for each mesh in the model), use <g id="1">Mesh.MaterialIndex</g> to specify which materials in the list are used for which mesh.</source>
-<target xml:lang="pt">In your code, load one or more materials and add them to the model. Because models can use multiple materials (one for each mesh in the model), use <g id="1">Mesh.MaterialIndex</g> to specify which materials in the list are used for which mesh.</target>
+<target xml:lang="pt">No seu código, carregar um ou mais materiais e adicioná-los ao modelo. Como os modelos podem usar vários materiais (um para cada malha no modelo), use <g id="1">Mesh.MaterialIndex</g> para especificar quais materiais na lista são usados para que malha.</target>
 </trans-unit>
 <trans-unit id="tu36" xml:space="preserve">
 <source xml:lang="en">For example:</source>
-<target xml:lang="pt">For example:</target>
+<target xml:lang="pt">Por exemplo:</target>
 </trans-unit>
 <trans-unit id="tu37" xml:space="preserve">
 <source xml:lang="en">// Add one or more materials. Because models might expect multiple materials (one per mesh), Mesh.MaterialIndex specifies which material in the list is used for which mesh.
@@ -253,31 +253,31 @@ For more information about how to set up vertex and index buffers, see <g id="3"
 Material material = Content.Load&lt;Material&gt;("MyFolder/MyMaterial");
 model.Materials.Add(material);
 </source>
-<target xml:lang="pt">// Add one or more materials. Because models might expect multiple materials (one per mesh), Mesh.MaterialIndex specifies which material in the list is used for which mesh.
+<target xml:lang="pt">\/\/ Adicione um ou mais materiais. Como os modelos podem esperar vários materiais (um por malha), Mesh.MaterialIndex especifica qual material na lista é usado para que malha.
 
-Material material = Content.Load&lt;Material&gt;("MyFolder/MyMaterial");
-model.Materials.Add(material);
+Material material = Conteúdo.Load&lt;Material&gt;("MyFolder\/MyMaterial");
+modelo. Material.Adicionar (material);
 </target>
 </trans-unit>
 <trans-unit id="tu38" xml:space="preserve">
 <source xml:lang="en">In the <g id="1">Asset View</g>, right-click every material asset your script uses and select <g id="2">Include in build as root asset</g>.</source>
-<target xml:lang="pt">In the <g id="1">Asset View</g>, right-click every material asset your script uses and select <g id="2">Include in build as root asset</g>.</target>
+<target xml:lang="pt">No <g id="1">Asset View</g>, clique com o botão direito de cada ativo de material que o seu script usa e selecione <g id="2">Incluir na compilação como root asset</g>.</target>
 </trans-unit>
 <trans-unit id="tu39" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Include in build as root asset<x id="2"/></source>
-<target xml:lang="pt"><x id="1"/>Include in build as root asset<x id="2"/></target>
+<target xml:lang="pt">&lt;x1\/&gt;Incluir em compilação como root asset&lt;x2\/&gt;</target>
 </trans-unit>
 <trans-unit id="tu40" xml:space="preserve">
 <source xml:lang="en">This makes sure the asset is available for the script to use at runtime. For more information, see <g id="1">Manage assets</g>.</source>
-<target xml:lang="pt">This makes sure the asset is available for the script to use at runtime. For more information, see <g id="1">Manage assets</g>.</target>
+<target xml:lang="pt">Isso garante que o ativo esteja disponível para o script usar em tempo de execução. Para obter mais informações, consulte <g id="1">Gerenciar ativos</g>.</target>
 </trans-unit>
 <trans-unit id="tu41" xml:space="preserve">
 <source xml:lang="en">Option 2: Create new materials in code</source>
-<target xml:lang="pt">Option 2: Create new materials in code</target>
+<target xml:lang="pt">Opção 2: Criar novos materiais em código</target>
 </trans-unit>
 <trans-unit id="tu42" xml:space="preserve">
 <source xml:lang="en">For example:</source>
-<target xml:lang="pt">For example:</target>
+<target xml:lang="pt">Por exemplo:</target>
 </trans-unit>
 <trans-unit id="tu43" xml:space="preserve">
 <source xml:lang="en">    // Create a material (eg with red diffuse color).
@@ -293,31 +293,31 @@ model.Materials.Add(material);
     material.Parameters[0].Set(MaterialKeys.DiffuseValue, Color.Red);
     model.Materials.Add(0, material);
 </source>
-<target xml:lang="pt">    // Create a material (eg with red diffuse color).
-    var materialDescription = new MaterialDescriptor
-    {
-        Attributes =
-	    {
-	        DiffuseModel = new MaterialDiffuseLambertModelFeature(),
-	        Diffuse = new MaterialDiffuseMapFeature(new ComputeColor { Key = MaterialKeys.DiffuseValue })
+<target xml:lang="pt">    \/\/ Criar um material (por exemplo, com cor difusa vermelha).
+    material de vareta Descrição: new MaterialDescriptor
+    (
+        Atributos =
+	    (
+	        DiffuseModel = novo MaterialDiffuseLambertModelFeature(),
+	        Diffuse = novo MaterialDiffuseMapFeature (novo ComputeColor { Chave = MaterialKeys.DiffuseValue })
 	    }
     };
-    var material = Material.New(GraphicsDevice, materialDescription);
-    material.Parameters[0].Set(MaterialKeys.DiffuseValue, Color.Red);
-    model.Materials.Add(0, material);
+    var material = Material.Novo (GráficoDispositivo, materialDescrição);
+    material. Parâmetros[0]. Conjunto (MaterialKeys.DiffuseValue, Color.Red);
+    modelo. Material.Add(0, material);
 </target>
 </trans-unit>
 <trans-unit id="tu44" xml:space="preserve">
 <source xml:lang="en">See also</source>
-<target xml:lang="pt">See also</target>
+<target xml:lang="pt">Ver também</target>
 </trans-unit>
 <trans-unit id="tu45" xml:space="preserve">
 <source xml:lang="en"><g id="1">Create a script</g></source>
-<target xml:lang="pt"><g id="1">Create a script</g></target>
+<target xml:lang="pt"><g id="1">Criar um script</g></target>
 </trans-unit>
 <trans-unit id="tu46" xml:space="preserve">
 <source xml:lang="en"><g id="1">Use a script</g></source>
-<target xml:lang="pt"><g id="1">Use a script</g></target>
+<target xml:lang="pt"><g id="1">Use um script</g></target>
 </trans-unit>
 <trans-unit id="tu47" xml:space="preserve">
 <source xml:lang="en"><g id="1">Use prefabs</g></source>

@@ -1,199 +1,199 @@
 {
-    "filename": "tutorials\\csharpintermediate\\raycasting.md.xlf",
-    "files": [
-        {
-            "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpintermediate\/raycasting.md": [
-                [
-                    "Raycasting",
-                    "",
-                    "Raycasting",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpintermediate\/raycasting.md",
-                    {
-                        "id": "tu1"
-                    }
-                ],
-                [
-                    "This C# Intermediate tutorial covers raycasting.",
-                    "",
-                    "This C# Intermediate tutorial covers raycasting.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpintermediate\/raycasting.md",
-                    {
-                        "id": "tu2"
-                    }
-                ],
-                [
-                    "Explanation",
-                    "",
-                    "Explanation",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpintermediate\/raycasting.md",
-                    {
-                        "id": "tu3"
-                    }
-                ],
-                [
-                    "Raycasting is an essential subject in 3D games.",
-                    "",
-                    "Raycasting is an essential subject in 3D games.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpintermediate\/raycasting.md",
-                    {
-                        "id": "tu4"
-                    }
-                ],
-                [
-                    "With raycasts we can detect if and what kinds of objects are in our line of sight.",
-                    "",
-                    " With raycasts we can detect if and what kinds of objects are in our line of sight.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpintermediate\/raycasting.md",
-                    {
-                        "id": "tu4"
-                    }
-                ],
-                [
-                    "This can be used for detecting enemies or how far an object really is.",
-                    "",
-                    " This can be used for detecting enemies or how far an object really is.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpintermediate\/raycasting.md",
-                    {
-                        "id": "tu4"
-                    }
-                ],
-                [
-                    "<x1\/>!Video https:\/\/www.youtube.com\/embed\/uIM6jxM7OyE<x2\/>",
-                    "",
-                    "<x1\/>!Video https:\/\/www.youtube.com\/embed\/uIM6jxM7OyE<x2\/>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpintermediate\/raycasting.md",
-                    {
-                        "id": "tu5"
-                    }
-                ],
-                [
-                    "Raycast",
-                    "",
-                    "Raycast",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpintermediate\/raycasting.md",
-                    {
-                        "id": "tu6"
-                    }
-                ],
-                [
-                    "This script sends out a raycast from the weapons barrel and sends it to an endpoint a little further.",
-                    "",
-                    "This script sends out a raycast from the weapons barrel and sends it to an endpoint a little further.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpintermediate\/raycasting.md",
-                    {
-                        "id": "tu7"
-                    }
-                ],
-                [
-                    "We check if we hit something along the way.",
-                    "",
-                    " We check if we hit something along the way.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpintermediate\/raycasting.md",
-                    {
-                        "id": "tu7"
-                    }
-                ],
-                [
-                    "If we do, we calculate the distance between the weapon barrel and the hit point.",
-                    "",
-                    " If we do, we calculate the distance between the weapon barrel and the hit point.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpintermediate\/raycasting.md",
-                    {
-                        "id": "tu7"
-                    }
-                ],
-                [
-                    "We then scale a laser to that distance to visualize the actual raycast.",
-                    "",
-                    " We then scale a laser to that distance to visualize the actual raycast.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpintermediate\/raycasting.md",
-                    {
-                        "id": "tu7"
-                    }
-                ],
-                [
-                    "Depending on the collision group and filters, some objects are ignored.",
-                    "",
-                    " Depending on the collision group and filters, some objects are ignored.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpintermediate\/raycasting.md",
-                    {
-                        "id": "tu7"
-                    }
-                ],
-                [
-                    "[!code-csharp<g1>editorpages<\/g1>]",
-                    "",
-                    "[!code-csharp<g1>editorpages<\/g1>]",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpintermediate\/raycasting.md",
-                    {
-                        "id": "tu8"
-                    }
-                ],
-                [
-                    "Penetrative raycast",
-                    "",
-                    "Penetrative raycast",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpintermediate\/raycasting.md",
-                    {
-                        "id": "tu9"
-                    }
-                ],
-                [
-                    "In our first script, the raycast returns to us as soon as it hits the first object along its path.",
-                    "",
-                    "In our first script, the raycast returns to us as soon as it hits the first object along its path.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpintermediate\/raycasting.md",
-                    {
-                        "id": "tu10"
-                    }
-                ],
-                [
-                    "We can also send out a raycast to an endpoint, and let it return to us when it has reached its endpoint.",
-                    "",
-                    " We can also send out a raycast to an endpoint, and let it return to us when it has reached its endpoint.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpintermediate\/raycasting.md",
-                    {
-                        "id": "tu10"
-                    }
-                ],
-                [
-                    "It gives us back a list of objects that it has hit along the way.",
-                    "",
-                    " It gives us back a list of objects that it has hit along the way.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpintermediate\/raycasting.md",
-                    {
-                        "id": "tu10"
-                    }
-                ],
-                [
-                    "This list can be empty but also exists out of various objects.",
-                    "",
-                    " This list can be empty but also exists out of various objects.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpintermediate\/raycasting.md",
-                    {
-                        "id": "tu10"
-                    }
-                ],
-                [
-                    "Depending on the collision group and filters, some objects are ignored.",
-                    "",
-                    " Depending on the collision group and filters, some objects are ignored.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpintermediate\/raycasting.md",
-                    {
-                        "id": "tu10"
-                    }
-                ],
-                [
-                    "[!code-csharp<g1>editorpages<\/g1>]",
-                    "",
-                    "[!code-csharp<g1>editorpages<\/g1>]",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpintermediate\/raycasting.md",
-                    {
-                        "id": "tu11"
-                    }
-                ]
-            ]
-        }
-    ],
-    "seg_enabled": false
+  "filename": "tutorials\\csharpintermediate\\raycasting.md.xlf",
+  "files": [
+    {
+      "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpintermediate\/raycasting.md": [
+        [
+          "Raycasting",
+          "Raycasting",
+          "Raycasting",
+          "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpintermediate\/raycasting.md",
+          {
+            "id": "tu1"
+          }
+        ],
+        [
+          "This C# Intermediate tutorial covers raycasting.",
+          "Este tutorial C# Intermediate cobre a transmissão de raios.",
+          "This C# Intermediate tutorial covers raycasting.",
+          "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpintermediate\/raycasting.md",
+          {
+            "id": "tu2"
+          }
+        ],
+        [
+          "Explanation",
+          "Explicação",
+          "Explanation",
+          "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpintermediate\/raycasting.md",
+          {
+            "id": "tu3"
+          }
+        ],
+        [
+          "Raycasting is an essential subject in 3D games.",
+          "Raycasting é um assunto essencial em jogos 3D.",
+          "Raycasting is an essential subject in 3D games.",
+          "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpintermediate\/raycasting.md",
+          {
+            "id": "tu4"
+          }
+        ],
+        [
+          "With raycasts we can detect if and what kinds of objects are in our line of sight.",
+          "Com raycasts podemos detectar se e que tipos de objetos estão em nossa linha de visão.",
+          " With raycasts we can detect if and what kinds of objects are in our line of sight.",
+          "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpintermediate\/raycasting.md",
+          {
+            "id": "tu4"
+          }
+        ],
+        [
+          "This can be used for detecting enemies or how far an object really is.",
+          "Isso pode ser usado para detectar inimigos ou quão longe um objeto realmente é.",
+          " This can be used for detecting enemies or how far an object really is.",
+          "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpintermediate\/raycasting.md",
+          {
+            "id": "tu4"
+          }
+        ],
+        [
+          "<x1\/>!Video https:\/\/www.youtube.com\/embed\/uIM6jxM7OyE<x2\/>",
+          "<x1\/>!Vídeo https:\/\/www.youtube.com\/embed\/uIM6jxM7OyE<x2\/>",
+          "<x1\/>!Video https:\/\/www.youtube.com\/embed\/uIM6jxM7OyE<x2\/>",
+          "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpintermediate\/raycasting.md",
+          {
+            "id": "tu5"
+          }
+        ],
+        [
+          "Raycast",
+          "Raycast",
+          "Raycast",
+          "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpintermediate\/raycasting.md",
+          {
+            "id": "tu6"
+          }
+        ],
+        [
+          "This script sends out a raycast from the weapons barrel and sends it to an endpoint a little further.",
+          "Este script envia um raycast do barril de armas e o envia para um ponto final um pouco mais.",
+          "This script sends out a raycast from the weapons barrel and sends it to an endpoint a little further.",
+          "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpintermediate\/raycasting.md",
+          {
+            "id": "tu7"
+          }
+        ],
+        [
+          "We check if we hit something along the way.",
+          "Verificamos se atingimos algo ao longo do caminho.",
+          " We check if we hit something along the way.",
+          "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpintermediate\/raycasting.md",
+          {
+            "id": "tu7"
+          }
+        ],
+        [
+          "If we do, we calculate the distance between the weapon barrel and the hit point.",
+          "Se o fizermos, calculamos a distância entre o barril de arma e o ponto de acerto.",
+          " If we do, we calculate the distance between the weapon barrel and the hit point.",
+          "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpintermediate\/raycasting.md",
+          {
+            "id": "tu7"
+          }
+        ],
+        [
+          "We then scale a laser to that distance to visualize the actual raycast.",
+          "Então escalamos um laser para essa distância para visualizar o raio real.",
+          " We then scale a laser to that distance to visualize the actual raycast.",
+          "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpintermediate\/raycasting.md",
+          {
+            "id": "tu7"
+          }
+        ],
+        [
+          "Depending on the collision group and filters, some objects are ignored.",
+          "Dependendo do grupo de colisão e dos filtros, alguns objetos são ignorados.",
+          " Depending on the collision group and filters, some objects are ignored.",
+          "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpintermediate\/raycasting.md",
+          {
+            "id": "tu7"
+          }
+        ],
+        [
+          "[!code-csharp<g1>editorpages<\/g1>]",
+          "[!code-csharp<g1>editorpages<\/g1>]",
+          "[!code-csharp<g1>editorpages<\/g1>]",
+          "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpintermediate\/raycasting.md",
+          {
+            "id": "tu8"
+          }
+        ],
+        [
+          "Penetrative raycast",
+          "Radiografia penetrativa",
+          "Penetrative raycast",
+          "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpintermediate\/raycasting.md",
+          {
+            "id": "tu9"
+          }
+        ],
+        [
+          "In our first script, the raycast returns to us as soon as it hits the first object along its path.",
+          "Em nosso primeiro script, o raycast retorna para nós assim que atinge o primeiro objeto ao longo de seu caminho.",
+          "In our first script, the raycast returns to us as soon as it hits the first object along its path.",
+          "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpintermediate\/raycasting.md",
+          {
+            "id": "tu10"
+          }
+        ],
+        [
+          "We can also send out a raycast to an endpoint, and let it return to us when it has reached its endpoint.",
+          "Também podemos enviar um raio para um ponto final, e deixá-lo voltar para nós quando ele chegou ao seu ponto final.",
+          " We can also send out a raycast to an endpoint, and let it return to us when it has reached its endpoint.",
+          "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpintermediate\/raycasting.md",
+          {
+            "id": "tu10"
+          }
+        ],
+        [
+          "It gives us back a list of objects that it has hit along the way.",
+          "Ele nos devolve uma lista de objetos que ele atingiu ao longo do caminho.",
+          " It gives us back a list of objects that it has hit along the way.",
+          "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpintermediate\/raycasting.md",
+          {
+            "id": "tu10"
+          }
+        ],
+        [
+          "This list can be empty but also exists out of various objects.",
+          "Esta lista pode ser vazia, mas também existe de vários objetos.",
+          " This list can be empty but also exists out of various objects.",
+          "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpintermediate\/raycasting.md",
+          {
+            "id": "tu10"
+          }
+        ],
+        [
+          "Depending on the collision group and filters, some objects are ignored.",
+          "Dependendo do grupo de colisão e dos filtros, alguns objetos são ignorados.",
+          " Depending on the collision group and filters, some objects are ignored.",
+          "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpintermediate\/raycasting.md",
+          {
+            "id": "tu10"
+          }
+        ],
+        [
+          "[!code-csharp<g1>editorpages<\/g1>]",
+          "[!code-csharp<g1>editorpages<\/g1>]",
+          "[!code-csharp<g1>editorpages<\/g1>]",
+          "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpintermediate\/raycasting.md",
+          {
+            "id": "tu11"
+          }
+        ]
+      ]
+    }
+  ],
+  "seg_enabled": false
 }

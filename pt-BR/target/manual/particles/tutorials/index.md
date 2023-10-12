@@ -1,7 +1,7 @@
-# Tutorials
+# Tutoriais
 
-* [Inheritance](inheritance.md)
-* [Lasers and lightning](lasers-and-lightning.md)
-* [Create a trail](create-a-trail.md)
-* [Custom particles](custom-particles.md)
-* [Particle materials](particle-materials.md)
+* [Herança](inheritance.md)
+* [Lasers e raios](lasers-and-lightning.md)
+* [Criar uma trilha](create-a-trail.md)
+* [Partículas personalizadas](custom-particles.md)
+* [Materiais de partículas](particle-materials.md)

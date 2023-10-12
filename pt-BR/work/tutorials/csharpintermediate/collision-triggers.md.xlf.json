@@ -1,190 +1,190 @@
 {
-    "filename": "tutorials\\csharpintermediate\\collision-triggers.md.xlf",
-    "files": [
-        {
-            "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpintermediate\/collision-triggers.md": [
-                [
-                    "Collision triggers",
-                    "",
-                    "Collision triggers",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpintermediate\/collision-triggers.md",
-                    {
-                        "id": "tu1"
-                    }
-                ],
-                [
-                    "This C# intermediate tutorial covers the use of collision triggers.",
-                    "",
-                    "This C# intermediate tutorial covers the use of collision triggers.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpintermediate\/collision-triggers.md",
-                    {
-                        "id": "tu2"
-                    }
-                ],
-                [
-                    "It teaches about rigid bodies and how to set those up in the editor.",
-                    "",
-                    " It teaches about rigid bodies and how to set those up in the editor.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpintermediate\/collision-triggers.md",
-                    {
-                        "id": "tu2"
-                    }
-                ],
-                [
-                    "Explanation",
-                    "",
-                    "Explanation",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpintermediate\/collision-triggers.md",
-                    {
-                        "id": "tu3"
-                    }
-                ],
-                [
-                    "Rigid bodies determine how entities in our scene behave on gravity, whether they collide with other objects or in the case of this tutorial\": trigger collision events in our code.",
-                    "",
-                    "Rigid bodies determine how entities in our scene behave on gravity, whether they collide with other objects or in the case of this tutorial\": trigger collision events in our code.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpintermediate\/collision-triggers.md",
-                    {
-                        "id": "tu4"
-                    }
-                ],
-                [
-                    "We do this by setting up a collider box in our scene and letting a sphere roll through this object.",
-                    "",
-                    " We do this by setting up a collider box in our scene and letting a sphere roll through this object.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpintermediate\/collision-triggers.md",
-                    {
-                        "id": "tu4"
-                    }
-                ],
-                [
-                    "The events that are triggered are then processed by the script that we will make for it.",
-                    "",
-                    " The events that are triggered are then processed by the script that we will make for it.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpintermediate\/collision-triggers.md",
-                    {
-                        "id": "tu4"
-                    }
-                ],
-                [
-                    "<x1\/>!Video https:\/\/www.youtube.com\/embed\/SIy3pfoXfoQ<x2\/>",
-                    "",
-                    "<x1\/>!Video https:\/\/www.youtube.com\/embed\/SIy3pfoXfoQ<x2\/>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpintermediate\/collision-triggers.md",
-                    {
-                        "id": "tu5"
-                    }
-                ],
-                [
-                    "Rigidbodies and collisions",
-                    "",
-                    "Rigidbodies and collisions",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpintermediate\/collision-triggers.md",
-                    {
-                        "id": "tu6"
-                    }
-                ],
-                [
-                    "The code below looks for the rigidbody component that is attached to our entity.",
-                    "",
-                    "The code below looks for the rigidbody component that is attached to our entity.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpintermediate\/collision-triggers.md",
-                    {
-                        "id": "tu7"
-                    }
-                ],
-                [
-                    "The rigidbody component contains all information we need for setting up triggers.",
-                    "",
-                    " The rigidbody component contains all information we need for setting up triggers.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpintermediate\/collision-triggers.md",
-                    {
-                        "id": "tu7"
-                    }
-                ],
-                [
-                    "The <g1>IsTrigger<\/g1> property determines that our collider doesn't stop other physics objects, but that it does trigger events in code (if they are set up at least).",
-                    "",
-                    " The <g1>IsTrigger<\/g1> property determines that our collider doesn't stop other physics objects, but that it does trigger events in code (if they are set up at least).",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpintermediate\/collision-triggers.md",
-                    {
-                        "id": "tu7"
-                    }
-                ],
-                [
-                    "We spawn a sphere which also has a rigidbody.",
-                    "",
-                    "We spawn a sphere which also has a rigidbody.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpintermediate\/collision-triggers.md",
-                    {
-                        "id": "tu8"
-                    }
-                ],
-                [
-                    "This sphere has a mass and is affected by gravity.",
-                    "",
-                    " This sphere has a mass and is affected by gravity.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpintermediate\/collision-triggers.md",
-                    {
-                        "id": "tu8"
-                    }
-                ],
-                [
-                    "The sphere will fall down and eventually roll through our collider box.",
-                    "",
-                    " The sphere will fall down and eventually roll through our collider box.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpintermediate\/collision-triggers.md",
-                    {
-                        "id": "tu8"
-                    }
-                ],
-                [
-                    "In our update loop we check if there are collisions happening.",
-                    "",
-                    " In our update loop we check if there are collisions happening.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpintermediate\/collision-triggers.md",
-                    {
-                        "id": "tu8"
-                    }
-                ],
-                [
-                    "If there are collisions, we get the colliding object and print out some text on screen.",
-                    "",
-                    " If there are collisions, we get the colliding object and print out some text on screen.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpintermediate\/collision-triggers.md",
-                    {
-                        "id": "tu8"
-                    }
-                ],
-                [
-                    "Once the sphere leaves the trigger box, our update loop sees that we no longer have collisions.",
-                    "",
-                    " Once the sphere leaves the trigger box, our update loop sees that we no longer have collisions.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpintermediate\/collision-triggers.md",
-                    {
-                        "id": "tu8"
-                    }
-                ],
-                [
-                    "Instead of using our update loop, we can also use collision events.",
-                    "",
-                    "Instead of using our update loop, we can also use collision events.\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpintermediate\/collision-triggers.md",
-                    {
-                        "id": "tu9"
-                    }
-                ],
-                [
-                    "[!code-csharp<g1>collisiontriggerdemo<\/g1>]",
-                    "",
-                    "[!code-csharp<g1>collisiontriggerdemo<\/g1>]",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpintermediate\/collision-triggers.md",
-                    {
-                        "id": "tu9"
-                    }
-                ]
-            ]
-        }
-    ],
-    "seg_enabled": false
+  "filename": "tutorials\\csharpintermediate\\collision-triggers.md.xlf",
+  "files": [
+    {
+      "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpintermediate\/collision-triggers.md": [
+        [
+          "Collision triggers",
+          "Gatilhos de colisão",
+          "Collision triggers",
+          "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpintermediate\/collision-triggers.md",
+          {
+            "id": "tu1"
+          }
+        ],
+        [
+          "This C# intermediate tutorial covers the use of collision triggers.",
+          "Este tutorial intermediário C# cobre o uso de gatilhos de colisão.",
+          "This C# intermediate tutorial covers the use of collision triggers.",
+          "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpintermediate\/collision-triggers.md",
+          {
+            "id": "tu2"
+          }
+        ],
+        [
+          "It teaches about rigid bodies and how to set those up in the editor.",
+          "Ele ensina sobre corpos rígidos e como configurar aqueles no editor.",
+          " It teaches about rigid bodies and how to set those up in the editor.",
+          "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpintermediate\/collision-triggers.md",
+          {
+            "id": "tu2"
+          }
+        ],
+        [
+          "Explanation",
+          "Explicação",
+          "Explanation",
+          "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpintermediate\/collision-triggers.md",
+          {
+            "id": "tu3"
+          }
+        ],
+        [
+          "Rigid bodies determine how entities in our scene behave on gravity, whether they collide with other objects or in the case of this tutorial\": trigger collision events in our code.",
+          "Corpos rígidos determinam como as entidades em nossa cena se comportam em gravidade, se elas colidem com outros objetos ou no caso deste tutorial\": desencadear eventos de colisão em nosso código.",
+          "Rigid bodies determine how entities in our scene behave on gravity, whether they collide with other objects or in the case of this tutorial\": trigger collision events in our code.",
+          "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpintermediate\/collision-triggers.md",
+          {
+            "id": "tu4"
+          }
+        ],
+        [
+          "We do this by setting up a collider box in our scene and letting a sphere roll through this object.",
+          "Fazemos isso configurando uma caixa de colisão em nossa cena e deixando uma esfera rolar através deste objeto.",
+          " We do this by setting up a collider box in our scene and letting a sphere roll through this object.",
+          "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpintermediate\/collision-triggers.md",
+          {
+            "id": "tu4"
+          }
+        ],
+        [
+          "The events that are triggered are then processed by the script that we will make for it.",
+          "Os eventos que são acionados são então processados pelo script que faremos para ele.",
+          " The events that are triggered are then processed by the script that we will make for it.",
+          "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpintermediate\/collision-triggers.md",
+          {
+            "id": "tu4"
+          }
+        ],
+        [
+          "<x1\/>!Video https:\/\/www.youtube.com\/embed\/SIy3pfoXfoQ<x2\/>",
+          "<x1\/>!Vídeo https:\/\/www.youtube.com\/embed\/SIy3pfoXfoQ<x2\/>",
+          "<x1\/>!Video https:\/\/www.youtube.com\/embed\/SIy3pfoXfoQ<x2\/>",
+          "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpintermediate\/collision-triggers.md",
+          {
+            "id": "tu5"
+          }
+        ],
+        [
+          "Rigidbodies and collisions",
+          "Rígidos e colisões",
+          "Rigidbodies and collisions",
+          "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpintermediate\/collision-triggers.md",
+          {
+            "id": "tu6"
+          }
+        ],
+        [
+          "The code below looks for the rigidbody component that is attached to our entity.",
+          "O código abaixo procura o componente rigidbody que está ligado à nossa entidade.",
+          "The code below looks for the rigidbody component that is attached to our entity.",
+          "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpintermediate\/collision-triggers.md",
+          {
+            "id": "tu7"
+          }
+        ],
+        [
+          "The rigidbody component contains all information we need for setting up triggers.",
+          "O componente de corpo rígido contém todas as informações que precisamos para configurar gatilhos.",
+          " The rigidbody component contains all information we need for setting up triggers.",
+          "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpintermediate\/collision-triggers.md",
+          {
+            "id": "tu7"
+          }
+        ],
+        [
+          "The <g1>IsTrigger<\/g1> property determines that our collider doesn't stop other physics objects, but that it does trigger events in code (if they are set up at least).",
+          "A propriedade <g1>IsTrigger<\/g1> determina que nosso colisor não impede outros objetos de física, mas que ele desencadeia eventos em código (se eles forem configurados pelo menos).",
+          " The <g1>IsTrigger<\/g1> property determines that our collider doesn't stop other physics objects, but that it does trigger events in code (if they are set up at least).",
+          "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpintermediate\/collision-triggers.md",
+          {
+            "id": "tu7"
+          }
+        ],
+        [
+          "We spawn a sphere which also has a rigidbody.",
+          "Nós geramos uma esfera que também tem um corpo rígido.",
+          "We spawn a sphere which also has a rigidbody.",
+          "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpintermediate\/collision-triggers.md",
+          {
+            "id": "tu8"
+          }
+        ],
+        [
+          "This sphere has a mass and is affected by gravity.",
+          "Esta esfera tem uma massa e é afetada pela gravidade.",
+          " This sphere has a mass and is affected by gravity.",
+          "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpintermediate\/collision-triggers.md",
+          {
+            "id": "tu8"
+          }
+        ],
+        [
+          "The sphere will fall down and eventually roll through our collider box.",
+          "A esfera vai cair e eventualmente rolar através da nossa caixa de colisões.",
+          " The sphere will fall down and eventually roll through our collider box.",
+          "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpintermediate\/collision-triggers.md",
+          {
+            "id": "tu8"
+          }
+        ],
+        [
+          "In our update loop we check if there are collisions happening.",
+          "Em nosso loop de atualização verificamos se há colisões acontecendo.",
+          " In our update loop we check if there are collisions happening.",
+          "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpintermediate\/collision-triggers.md",
+          {
+            "id": "tu8"
+          }
+        ],
+        [
+          "If there are collisions, we get the colliding object and print out some text on screen.",
+          "Se houver colisões, obtemos o objeto colidindo e imprimimos algum texto na tela.",
+          " If there are collisions, we get the colliding object and print out some text on screen.",
+          "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpintermediate\/collision-triggers.md",
+          {
+            "id": "tu8"
+          }
+        ],
+        [
+          "Once the sphere leaves the trigger box, our update loop sees that we no longer have collisions.",
+          "Uma vez que a esfera deixa a caixa de gatilho, nosso loop de atualização vê que não temos mais colisões.",
+          " Once the sphere leaves the trigger box, our update loop sees that we no longer have collisions.",
+          "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpintermediate\/collision-triggers.md",
+          {
+            "id": "tu8"
+          }
+        ],
+        [
+          "Instead of using our update loop, we can also use collision events.",
+          "Em vez de usar nosso loop de atualização, também podemos usar eventos de colisão.",
+          "Instead of using our update loop, we can also use collision events.\r\n",
+          "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpintermediate\/collision-triggers.md",
+          {
+            "id": "tu9"
+          }
+        ],
+        [
+          "[!code-csharp<g1>collisiontriggerdemo<\/g1>]",
+          "[!code-csharp<g1>collisiontriggerdemo<\/g1>]",
+          "[!code-csharp<g1>collisiontriggerdemo<\/g1>]",
+          "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpintermediate\/collision-triggers.md",
+          {
+            "id": "tu9"
+          }
+        ]
+      ]
+    }
+  ],
+  "seg_enabled": false
 }

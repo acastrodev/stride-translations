@@ -1,6 +1,6 @@
 # Links de nó de modelo
 
-<span class="badge text-bg-primary">Iniciante</span>
+<span class="badge text-bg-primary">Introdução</span>
 <span class="badge text-bg-success">Arte</span>
 
 > [!Note]

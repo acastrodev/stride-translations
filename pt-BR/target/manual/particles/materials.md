@@ -1,64 +1,64 @@
-# Particle materials
+# Materiais de partículas
 
-<span class="badge text-bg-primary">Beginner</span>
-<span class="badge text-bg-success">Artist</span>
-<span class="badge text-bg-success">Programmer</span>
+<x1\/>Introdução<x2\/>
+<x3\/>Artista <x4\/>
+<x5\/> Programador <x6\/>
 
-**Materials** define how the expanded shape should be rendered. They defines color, textures, and other parameters.
+**Materials** define como a forma expandida deve ser renderizada. Eles definem cores, texturas e outros parâmetros.
 
-**Particle materials** are simplified versions of [materials used for meshes](../graphics/materials/index.md). There is only one type of material currently, the Dynamic Emissive material.
+**Materiais de peças** são versões simplificadas de [materiais usados para malhas](../graphics/materials/index.md). Há apenas um tipo de material atualmente, o material emissivo dinâmico.
 
-## Dynamic emissive
+## Dinâmica emissiva
 
-This material uses a translucent emissive color RGBA for the pixel shading. In HDR rendering mode, the values are used as intensity, and can be higher than 1.
+Este material usa uma cor translúcida emissiva RGBA para o pixel shading. No modo de renderização HDR, os valores são usados como intensidade e podem ser superiores a 1.
 
-![media/particles-reference-materials-1.png](media/particles-reference-materials-1.png)
+<x1\/>media\/particles-reference-materials-1.png<x2\/>
 
-| Property | Description |
+| Propriedade | Descrição |
 |---------------------|------------
-| Alpha-Add | Translucent rendering supports alpha-blending, additive blending or anything in-between. With this parameter you can control how much alpha-blended (0) or additive (1) the particles should be. |
-| Culling | There are options for no culling, front face culling and back face culling. Camera-facing particles always have their front face towards the camera. |
-| Emissive | The emissive RGBA color for the particle. See [Material maps](../graphics/materials/material-maps.md) for a full description. |
-| UV coords | For particles which use texture sampling uv coordinates animation can be specified. The two currently existing types are specified below. |
-### UV Coords — Flipbook
+| Alfa-Add | A renderização translúcida suporta a solução alfa, mistura aditiva ou qualquer coisa no meio. Com este parâmetro, você pode controlar o quanto as partículas em branco (0) ou aditivo (1) devem ser. |
+| Culinária | Não há opções para não abraçar, cara frontal e traseiro. Partículas voltadas para a câmera sempre têm sua face frontal em direção à câmera. |
+| Emissário | A cor RGBA emissiva para a partícula. Veja [Mapas importantes](../graphics/materials/material-maps.md) para uma descrição completa. |
+| Coords UV | Para partículas que usam textura amostragem uv coordena animação pode ser especificado. Os dois tipos atualmente existentes são especificados abaixo. |
+### Coords UV — Flipbook
 
-The flipbook animation considers a texture a sequence of frames and displays it one frame at a time, like a flipbook.
+A animação flipbook considera uma textura uma sequência de quadros e exibe-o um quadro de cada vez, como um flipbook.
 
-This image is an example of a 4x4 flipbook animation texture of an explosion:
+Esta imagem é um exemplo de uma textura de animação 4x4 flipbook de uma explosão:
 
-![media/particles-reference-materials-4.png](media/particles-reference-materials-4.png)
+<x1\/>media\/particles-reference-materials-4.png<x2\/>
 
-The flipbook animation has the following properties:
+A animação flipbook tem as seguintes propriedades:
 
-![media/particles-reference-materials-2.png](media/particles-reference-materials-2.png)
+<x1\/>media\/particles-reference-materials-2.png<x2\/>
 
-| Property | Description |
+| Propriedade | Descrição |
 |---------------------|------------
-| X divisions | The number of columns to split the texture into |
-| Y divisions | The number of rows to split the texture into |
-| Starting frame | The frame to start the animation at. The top-left frame is 0 and increases by 1 from left to right before moving down. |
-| Animation speed | The total number of frames to show over the particle lifetime. If Speed = X x Y, then the animation shows **all** frames over the particle lifetime. The speed is relative; particles with longer lifespans have slower animation. |
+| Divisões X | O número de colunas para dividir a textura em |
+| Divisão Y | O número de linhas para dividir a textura em |
+| Quadro de partida | O quadro para iniciar a animação. O quadro superior esquerdo é 0 e aumenta 1 da esquerda para a direita antes de descer. |
+| Velocidade de animação | O número total de quadros para mostrar a vida útil da partícula. Se Speed = X x Y, então a animação mostra quadros **all** sobre a vida útil da partícula. A velocidade é relativa; partículas com mais tempo de vida têm animação mais lenta. |
 
-### UV Coords — Scrolling
+### Coords UV — Rolagem
 
-The scrolling animation defines a starting rectangle for the billboard or quad, which moves across the texture to its end position. This creates a scrolling or a scaling effect of the texture across the quad's surface.
+A animação de rolagem define um retângulo inicial para o outdoor ou quad, que se move através da textura para sua posição final. Isso cria uma rolagem ou um efeito de escala da textura através da superfície do quad.
 
-The texture coordinates can go below 0 or above 1. How the texture is sampled depends on the addressing mode defined in the [material maps](../graphics/materials/material-maps.md). For more information, see the [MSDN documentation](http://tinyurl.com/TextureAddressingModes).
+As coordenadas de textura podem ir abaixo de 0 ou acima 1. Como a textura é amostrada depende do modo de endereçamento definido nos mapas materiais [](../graphics/materials/material-maps.md). Para mais informações, consulte a documentação [MSDN](http://tinyurl.com/TextureAddressingModes).
 
-The scrolling animation has the following properties:
+A animação de rolagem tem as seguintes propriedades:
 
-![media/particles-reference-materials-3.png](media/particles-reference-materials-3.png)
+<x1\/>media\/particles-reference-materials-3.png<x2\/>
 
-| Property | Description |
+| Propriedade | Descrição |
 |---------------------|-------------
-| Start frame | The initial rectangle for texture sampling when the particle first spawns |
-| End frame | The last rectangle for texture sampling when the particle disappears |
+| Quadro de início | O retângulo inicial para amostragem de textura quando a partícula primeiro desova |
+| Quadro final | O último retângulo para amostragem de textura quando a partícula desaparece |
 
-## See also
+## Ver também
 
-* [Create particles](create-particles.md)
+* [Criar partículas](create-particles.md)
 * [Emitters](emitters.md)
-* [Shapes](shapes.md)
+* [Formas](shapes.md)
 * [Spawners](spawners.md)
-* [Initializers](initializers.md)
-* [Updaters](updaters.md)
+* [Iniciantes](initializers.md)
+* [Atualizações](updaters.md)

@@ -1,43 +1,43 @@
-# Create packages
+# Criar pacotes
 
-<span class="badge text-bg-primary">Intermediate</span>
-<span class="badge text-bg-success">Programmer</span>
+<x1\/> Intermediário <x2\/>
+<x3\/> Programador <x4\/>
 
-## Open your project in Visual Studio
+## Abra seu projeto no Visual Studio
 
-> [!Note]
-> Game Studio will later support creating NuGet packages directly.
+> <x1\/>!Note<x2\/>
+> Game Studio irá mais tarde apoiar a criação de pacotes NuGet diretamente.
 
-First of all, after saving all your changes, open your project with Visual Studio. You can easily do this by clicking the appropriate button on the toolbar:
+Primeiro de tudo, depois de salvar todas as suas mudanças, abra seu projeto com Visual Studio. Você pode facilmente fazer isso clicando no botão apropriado na barra de ferramentas:
 
-![Open project in Visual Studio](../game-studio/media/open-project-in-visual-studio.png)
+<x1\/> Projeto aberto em Visual Studio<x2\/>
 
-A few things to look out for:
-* Delete unecessary assets (i.e. GameSettings, etc...)
-* Delete unecessary `PackageReference`
+Algumas coisas para cuidar:
+* Excluir ativos não-ecessários (i.e. GameSettings, etc...)
+* Excluir não-ecessário `PackageReference`
 
-## Optional: Setup Package properties
+## Opcional: Propriedades do pacote de configuração
 
-1. In the **Solution Explorer**, right-click on the project and click on **Properties**.
+1. No **Solution Explorer**, clique com o botão direito do mouse no projeto e clique em **Properties**.
 
-2. Go to the **Package** tab and edit Package version, description, URL, etc.
+2. Vá para a guia **Package** e edite versão do pacote, descrição, URL, etc.
 
-   ![Setup package properties](media/setup-package-properties.png)
+   <x1\/> Propriedades do pacote de configuração<x2\/>
 
-## Pack
+## Pacote
 
-1. In the **Solution Explorer**, right-click on the project and click on **Pack**.
+1. No **Solution Explorer**, clique com o botão direito do mouse no projeto e clique em **Pack**.
 
-   ![Pack project](media/pack-project.png)
+   <x1\/>Pack project<x2\/>
 
-2. Visual Studio will build and pack the project. The resulting `.nupkg` should be in `bin\Debug` or `bin\Release` folder, depending on your configuration.
+2. Visual Studio irá construir e embalar o projeto. O resultado `.nupkg` deve estar em `bin\Debug` ou `bin\Release` pasta, dependendo da sua configuração.
 
-## Publish
+## Publicar
 
-You can now publish the `.nupkg` file on a NuGet repository such as [nuget.org](https://nuget.org).
+Agora você pode publicar o arquivo `.nupkg` em um repositório NuGet, como [nuget.org](https://nuget.org).
 
-There is several ways to do that: `nuget.exe` client, `dotnet.exe` client or [nuget.org Upload Package](https://www.nuget.org/packages/manage/upload)
+Há várias maneiras de fazer isso: `nuget.exe` client, `dotnet.exe` client ou [nuget.org Upload Package](https://www.nuget.org/packages/manage/upload)
 
-For additional information, please reference to [Publishing packages](https://docs.microsoft.com/en-us/nuget/create-packages/publish-a-package) in NuGet documentation.
+Para obter informações adicionais, consulte [Publishing pacotes](https://docs.microsoft.com/en-us/nuget/create-packages/publish-a-package) na documentação NuGet.
 
-Once your package is properly listed, it can now be [consumed](consume-packages.md) by other Stride users!
+Uma vez que seu pacote está devidamente listado, ele agora pode ser [consumed](consume-packages.md) por outros usuários Stride!

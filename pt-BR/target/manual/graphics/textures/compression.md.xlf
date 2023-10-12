@@ -3,79 +3,79 @@
 <body>
 <trans-unit id="tu1" xml:space="preserve">
 <source xml:lang="en">Texture compression</source>
-<target xml:lang="pt">Texture compression</target>
+<target xml:lang="pt">Compressão de textura</target>
 </trans-unit>
 <trans-unit id="tu2" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Beginner<x id="2"/>
 <x id="3"/>Artist<x id="4"/>
 <x id="5"/>Programmer<x id="6"/></source>
-<target xml:lang="pt"><x id="1"/>Beginner<x id="2"/>
-<x id="3"/>Artist<x id="4"/>
-<x id="5"/>Programmer<x id="6"/></target>
+<target xml:lang="pt">&lt;x1\/&gt;Introdução&lt;x2\/&gt;
+&lt;x3\/&gt;Artista &lt;x4\/&gt;
+&lt;x5\/&gt; Programador &lt;x6\/&gt;</target>
 </trans-unit>
 <trans-unit id="tu3" xml:space="preserve">
 <source xml:lang="en"><g id="1">Compressed textures</g> use up to 50% less space and are faster to load. Compression produces results similar to JPEG compression. The animation below was recorded with the camera positioned extremely close to the texture; at normal distances, the difference isn't noticable.</source>
-<target xml:lang="pt"><g id="1">Compressed textures</g> use up to 50% less space and are faster to load. Compression produces results similar to JPEG compression. The animation below was recorded with the camera positioned extremely close to the texture; at normal distances, the difference isn't noticable.</target>
+<target xml:lang="pt"><g id="1"> Texturas compactas</g> usam até 50% menos espaço e são mais rápidos para carregar. A compressão produz resultados semelhantes à compressão JPEG. A animação abaixo foi gravada com a câmera posicionada extremamente perto da textura; a distâncias normais, a diferença não é notável.</target>
 </trans-unit>
 <trans-unit id="tu4" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Texture compression<x id="2"/></source>
-<target xml:lang="pt"><x id="1"/>Texture compression<x id="2"/></target>
+<target xml:lang="pt">&lt;x1\/&gt; Compressão de tensão&lt;x2\/&gt;</target>
 </trans-unit>
 <trans-unit id="tu5" xml:space="preserve">
 <source xml:lang="en">For color textures, compression is best used for visually busy images, where the effects are less noticeable. You probably don't want to compress textures with fine edges, such as logos used in <g id="1">splash screens</g>.</source>
-<target xml:lang="pt">For color textures, compression is best used for visually busy images, where the effects are less noticeable. You probably don't want to compress textures with fine edges, such as logos used in <g id="1">splash screens</g>.</target>
+<target xml:lang="pt">Para texturas coloridas, a compressão é melhor usada para imagens visualmente ocupadas, onde os efeitos são menos perceptíveis. Você provavelmente não quer comprimir texturas com bordas finas, como logotipos usados em telas <g id="1">splash</g>.</target>
 </trans-unit>
 <trans-unit id="tu6" xml:space="preserve">
 <source xml:lang="en">Compression converts the texture to a multiple of 4. If the texture isn't already a multiple of 4, Stride expands it.</source>
-<target xml:lang="pt">Compression converts the texture to a multiple of 4. If the texture isn't already a multiple of 4, Stride expands it.</target>
+<target xml:lang="pt">A compressão converte a textura em um múltiplo de 4. Se a textura já não é um múltiplo de 4, Stride expande-a.</target>
 </trans-unit>
 <trans-unit id="tu7" xml:space="preserve">
 <source xml:lang="en">Compression removes data from the image based on the texture type:</source>
-<target xml:lang="pt">Compression removes data from the image based on the texture type:</target>
+<target xml:lang="pt">A compressão remove dados da imagem com base no tipo de textura:</target>
 </trans-unit>
 <trans-unit id="tu8" xml:space="preserve">
 <source xml:lang="en">Texture type</source>
-<target xml:lang="pt">Texture type</target>
+<target xml:lang="pt">Tipo de textura</target>
 </trans-unit>
 <trans-unit id="tu9" xml:space="preserve">
 <source xml:lang="en">Compression</source>
-<target xml:lang="pt">Compression</target>
+<target xml:lang="pt">Compressão</target>
 </trans-unit>
 <trans-unit id="tu10" xml:space="preserve">
 <source xml:lang="en">Color</source>
-<target xml:lang="pt">Color</target>
+<target xml:lang="pt">Cor</target>
 </trans-unit>
 <trans-unit id="tu11" xml:space="preserve">
 <source xml:lang="en">Compresses all RGBA channels. If the <g id="1">Alpha</g> property is set to <g id="2">None</g> in the texture properties, the alpha channel is removed</source>
-<target xml:lang="pt">Compresses all RGBA channels. If the <g id="1">Alpha</g> property is set to <g id="2">None</g> in the texture properties, the alpha channel is removed</target>
+<target xml:lang="pt">Abrange todos os canais RGBA. Se a propriedade <g id="1">Alpha</g> é definida para <g id="2">None</g> nas propriedades da textura, o canal alfa é removido</target>
 </trans-unit>
 <trans-unit id="tu12" xml:space="preserve">
 <source xml:lang="en">Grayscale</source>
-<target xml:lang="pt">Grayscale</target>
+<target xml:lang="pt">Escala de cinza</target>
 </trans-unit>
 <trans-unit id="tu13" xml:space="preserve">
 <source xml:lang="en">Removes all RGBA channels except red</source>
-<target xml:lang="pt">Removes all RGBA channels except red</target>
+<target xml:lang="pt">Remove todos os canais RGBA exceto vermelho</target>
 </trans-unit>
 <trans-unit id="tu14" xml:space="preserve">
 <source xml:lang="en">Normal map</source>
-<target xml:lang="pt">Normal map</target>
+<target xml:lang="pt">Mapa normal</target>
 </trans-unit>
 <trans-unit id="tu15" xml:space="preserve">
 <source xml:lang="en">Removes the blue and alpha channels (alpha isn't used in normal maps anyway). The blue channel is reconstructed from the red and green channels (assuming a pixel has a vector length of 1)</source>
-<target xml:lang="pt">Removes the blue and alpha channels (alpha isn't used in normal maps anyway). The blue channel is reconstructed from the red and green channels (assuming a pixel has a vector length of 1)</target>
+<target xml:lang="pt">Remove os canais azul e alfa (alfa não é usado em mapas normais de qualquer maneira). O canal azul é reconstruído a partir dos canais vermelho e verde (assumindo um pixel tem um comprimento vetorial de 1)</target>
 </trans-unit>
 <trans-unit id="tu16" xml:space="preserve">
 <source xml:lang="en"><g id="1">Textures index</g></source>
-<target xml:lang="pt"><g id="1">Textures index</g></target>
+<target xml:lang="pt"><g id="1">Índice de texturas</g></target>
 </trans-unit>
 <trans-unit id="tu17" xml:space="preserve">
 <source xml:lang="en"><g id="1">Normal maps</g></source>
-<target xml:lang="pt"><g id="1">Normal maps</g></target>
+<target xml:lang="pt"><g id="1">Mapas normais</g></target>
 </trans-unit>
 <trans-unit id="tu18" xml:space="preserve">
 <source xml:lang="en"><g id="1">Materials</g></source>
-<target xml:lang="pt"><g id="1">Materials</g></target>
+<target xml:lang="pt"><g id="1">Materiais</g></target>
 </trans-unit>
 <trans-unit id="tu19" xml:space="preserve">
 <source xml:lang="en"><g id="1">Sprites</g></source>
@@ -83,7 +83,7 @@
 </trans-unit>
 <trans-unit id="tu20" xml:space="preserve">
 <source xml:lang="en"><g id="1">Render textures</g></source>
-<target xml:lang="pt"><g id="1">Render textures</g></target>
+<target xml:lang="pt"><g id="1">Render texturas</g></target>
 </trans-unit>
 </body>
 </file>

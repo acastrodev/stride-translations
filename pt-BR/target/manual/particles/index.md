@@ -1,30 +1,30 @@
-# Particles
+# Partes
 
-**Particles** are shapes that, used in large numbers, create pseudo-3D effects. You can use particles to create effects such as liquid, fire, explosions, smoke, lightning, motion trails, magic effects, and so on.
+**Particles** são formas que, usadas em grandes números, criam efeitos pseudo-3D. Você pode usar partículas para criar efeitos como líquido, fogo, explosões, fumaça, relâmpago, trilhas de movimento, efeitos mágicos, e assim por diante.
 
-![Particles](media/particles.png)
+<x1\/>Particles<x2\/>
 
-## In this section
+## Nesta secção
 
-* [Create particles](create-particles.md)
+* [Criar partículas](create-particles.md)
    * [Emitters](emitters.md)
-      * [Shapes](shapes.md)
-         * [Ribbons and trails](ribbons-and-trails.md)
-      * [Materials](materials.md)
+      * [Formas](shapes.md)
+         * [Fitas e trilhas](ribbons-and-trails.md)
+      * [Materiais](materials.md)
       * [Spawners](spawners.md)
-      * [Initializers](initializers.md)
-      * [Updaters](updaters.md)
+      * [Iniciantes](initializers.md)
+      * [Atualizações](updaters.md)
 
-### Tutorials
+### Tutoriais
 
-* [Create a trail](tutorials/create-a-trail.md) — Create a motion trail for a sword slash animation
-* [Lasers and lightning](tutorials/lasers-and-lightning.md) — Create laser and lightning effects using particles and custom materials
-* [Inheritance](tutorials/inheritance.md) — Create particles that inherit attributes from other particles
-* [Particle materials](tutorials/particle-materials.md)
-* [Custom particles](tutorials/custom-particles.md)
+* [Criar uma trilha](tutorials/create-a-trail.md) — Criar uma trilha de movimento para uma animação de barra de espada
+* [Lasers e relâmpago](tutorials/lasers-and-lightning.md) — Criar efeitos laser e relâmpago usando partículas e materiais personalizados
+* [Inheritância](tutorials/inheritance.md) — Criar partículas que herdam atributos de outras partículas
+* [Materiais de partículas](tutorials/particle-materials.md)
+* [Partículas personalizadas](tutorials/custom-particles.md)
 
-## Sample project
+## Projeto de amostra
 
-To see some examples of particles implemented in a project, create a new **Sample: Particles** project and check out the different scenes.
+Para ver alguns exemplos de partículas implementadas em um projeto, crie um novo **Sample: Partículas** projeto e verificar as diferentes cenas.
 
-![Particles sample project](media/select-particles-sample-project.png)
+<x1\/>Particles sample project<x2\/>

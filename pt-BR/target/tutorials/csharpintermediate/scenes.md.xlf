@@ -3,42 +3,42 @@
 <body>
 <trans-unit id="tu1" xml:space="preserve">
 <source xml:lang="en">Scenes</source>
-<target xml:lang="pt">Scenes</target>
+<target xml:lang="pt">Cenas</target>
 </trans-unit>
 <trans-unit id="tu2" xml:space="preserve">
 <source xml:lang="en">This C# Intermediate tutorial covers the concept of Scenes in Stride.</source>
-<target xml:lang="pt">This C# Intermediate tutorial covers the concept of Scenes in Stride.</target>
+<target xml:lang="pt">Este tutorial intermediário C# cobre o conceito de cenas em Stride.</target>
 </trans-unit>
 <trans-unit id="tu3" xml:space="preserve">
 <source xml:lang="en">Explanation</source>
-<target xml:lang="pt">Explanation</target>
+<target xml:lang="pt">Explicação</target>
 </trans-unit>
 <trans-unit id="tu4" xml:space="preserve">
 <source xml:lang="en">Stride allows Scenes to have an infinite amount of child scenes which on their terms also can load an infinite amount of child scenes. However, every scene loaded is unique. A scene can not be loaded twice at the same time. Both the editor and when loading scenes through code, will prevent a scene from being loaded twice at the same time.</source>
-<target xml:lang="pt">Stride allows Scenes to have an infinite amount of child scenes which on their terms also can load an infinite amount of child scenes. However, every scene loaded is unique. A scene can not be loaded twice at the same time. Both the editor and when loading scenes through code, will prevent a scene from being loaded twice at the same time.</target>
+<target xml:lang="pt">Stride permite Cenas para ter uma quantidade infinita de cenas de criança que em seus termos também pode carregar uma quantidade infinita de cenas de criança. No entanto, cada cena carregada é única. Uma cena não pode ser carregada duas vezes ao mesmo tempo. Tanto o editor quanto ao carregar cenas através do código, impedirão que uma cena seja carregada duas vezes ao mesmo tempo.</target>
 </trans-unit>
 <trans-unit id="tu5" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>!Video https://www.youtube.com/embed/G7OvA-9erpE<x id="2"/></source>
-<target xml:lang="pt"><x id="1"/>!Video https://www.youtube.com/embed/G7OvA-9erpE<x id="2"/></target>
+<target xml:lang="pt"><x id="1"/>!Vídeo https://www.youtube.com/embed/G7OvA-9erpE<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu6" xml:space="preserve">
 <source xml:lang="en">Loading a child scene</source>
-<target xml:lang="pt">Loading a child scene</target>
+<target xml:lang="pt">Carregando uma cena infantil</target>
 </trans-unit>
 <trans-unit id="tu7" xml:space="preserve">
 <source xml:lang="en">This script loads in a child scene by pressing a defined key. Pressing that same key again, will unload the loaded child scene. Every time we load the child scene again, we offset it a little in the Y direction to demonstrate the offsetting option for child scenes.
 [!code-csharp<g id="1">editorpages</g>]</source>
-<target xml:lang="pt">This script loads in a child scene by pressing a defined key. Pressing that same key again, will unload the loaded child scene. Every time we load the child scene again, we offset it a little in the Y direction to demonstrate the offsetting option for child scenes.
+<target xml:lang="pt">Este script carrega em uma cena de criança pressionando uma chave definida. Pressionando essa mesma chave novamente, irá descarregar a cena da criança carregada. Cada vez que carregamos a cena da criança novamente, compensamos um pouco na direção Y para demonstrar a opção de compensação para cenas de crianças.
 [!code-csharp<g id="1">editorpages</g>]</target>
 </trans-unit>
 <trans-unit id="tu8" xml:space="preserve">
 <source xml:lang="en">(Re)loading a scene</source>
-<target xml:lang="pt">(Re)loading a scene</target>
+<target xml:lang="pt">(Re) carregar uma cena</target>
 </trans-unit>
 <trans-unit id="tu9" xml:space="preserve">
 <source xml:lang="en">We can get the top most scene in our world which is called the RootScene. If we unload that scene, we can then load in a completely new scene in order to swap or switch to a new scene. That same script can also be used to reload the same scene in case you want to restart your scene,
 [!code-csharp<g id="1">editorpages</g>]</source>
-<target xml:lang="pt">We can get the top most scene in our world which is called the RootScene. If we unload that scene, we can then load in a completely new scene in order to swap or switch to a new scene. That same script can also be used to reload the same scene in case you want to restart your scene,
+<target xml:lang="pt">Nós podemos obter o topo mais cena em nosso mundo que é chamado de RootScene. Se descarregarmos essa cena, podemos então carregar em uma cena completamente nova para trocar ou mudar para uma nova cena. Esse mesmo script também pode ser usado para recarregar a mesma cena no caso de você querer reiniciar sua cena,
 [!code-csharp<g id="1">editorpages</g>]</target>
 </trans-unit>
 </body>

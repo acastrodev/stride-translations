@@ -3,187 +3,187 @@
 <body>
 <trans-unit id="tu1" xml:space="preserve">
 <source xml:lang="en">Constraints</source>
-<target xml:lang="pt">Constraints</target>
+<target xml:lang="pt">Restrições</target>
 </trans-unit>
 <trans-unit id="tu2" xml:space="preserve">
 <source xml:lang="en">[!INCLUDE <g id="1">stride-studio-note</g>]</source>
-<target xml:lang="pt">[!INCLUDE <g id="1">stride-studio-note</g>]</target>
+<target xml:lang="pt">[! INCLUÍDO <g id="1">stride-studio-note</g>]</target>
 </trans-unit>
 <trans-unit id="tu3" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Advanced<x id="2"/>
 <x id="3"/>Programmer<x id="4"/></source>
-<target xml:lang="pt"><x id="1"/>Advanced<x id="2"/>
-<x id="3"/>Programmer<x id="4"/></target>
+<target xml:lang="pt">&lt;x1\/&gt; Avançado &lt;x2\/&gt;
+&lt;x3\/&gt; Programador &lt;x4\/&gt;</target>
 </trans-unit>
 <trans-unit id="tu4" xml:space="preserve">
 <source xml:lang="en"><g id="1">Constraints</g> restrict rigidbodies to certain movement patterns. For example, a realistic knee joint can only move along one axis and can't bend forwards.</source>
-<target xml:lang="pt"><g id="1">Constraints</g> restrict rigidbodies to certain movement patterns. For example, a realistic knee joint can only move along one axis and can't bend forwards.</target>
+<target xml:lang="pt"><g id="1">Constraints</g> restringem os corpos rígidos a certos padrões de movimento. Por exemplo, uma articulação de joelho realista só pode se mover ao longo de um eixo e não pode dobrar para a frente.</target>
 </trans-unit>
 <trans-unit id="tu5" xml:space="preserve">
 <source xml:lang="en">Constraints can either link two rigidbodies together, or link a single rigidbody to a point in the world. They allow for interaction and dependency among rigidbodies.</source>
-<target xml:lang="pt">Constraints can either link two rigidbodies together, or link a single rigidbody to a point in the world. They allow for interaction and dependency among rigidbodies.</target>
+<target xml:lang="pt">As restrições podem ligar dois corpos rígidos juntos, ou ligar um único corpo rígido a um ponto no mundo. Eles permitem a interação e dependência entre os corpos rígidos.</target>
 </trans-unit>
 <trans-unit id="tu6" xml:space="preserve">
 <source xml:lang="en">There are six <g id="1">types of constraints</g>:</source>
-<target xml:lang="pt">There are six <g id="1">types of constraints</g>:</target>
+<target xml:lang="pt">Existem seis <g id="1">tipos de restrições</g>:</target>
 </trans-unit>
 <trans-unit id="tu7" xml:space="preserve">
 <source xml:lang="en">hinges</source>
-<target xml:lang="pt">hinges</target>
+<target xml:lang="pt">dobradiças</target>
 </trans-unit>
 <trans-unit id="tu8" xml:space="preserve">
 <source xml:lang="en">gears</source>
-<target xml:lang="pt">gears</target>
+<target xml:lang="pt">engrenagem</target>
 </trans-unit>
 <trans-unit id="tu9" xml:space="preserve">
 <source xml:lang="en">sliders</source>
-<target xml:lang="pt">sliders</target>
+<target xml:lang="pt">controles deslizantes</target>
 </trans-unit>
 <trans-unit id="tu10" xml:space="preserve">
 <source xml:lang="en">cones (twist and turn)</source>
-<target xml:lang="pt">cones (twist and turn)</target>
+<target xml:lang="pt">cones (twist e turn)</target>
 </trans-unit>
 <trans-unit id="tu11" xml:space="preserve">
 <source xml:lang="en">point to point (fixed distance between two colliders)</source>
-<target xml:lang="pt">point to point (fixed distance between two colliders)</target>
+<target xml:lang="pt">ponto a ponto (a distância fixa entre dois colisões)</target>
 </trans-unit>
 <trans-unit id="tu12" xml:space="preserve">
 <source xml:lang="en">six degrees of freedom</source>
-<target xml:lang="pt">six degrees of freedom</target>
+<target xml:lang="pt">seis graus de liberdade</target>
 </trans-unit>
 <trans-unit id="tu13" xml:space="preserve">
 <source xml:lang="en">For a demonstration of the different constraints, load the <g id="1">PhysicsSample</g> sample project.</source>
-<target xml:lang="pt">For a demonstration of the different constraints, load the <g id="1">PhysicsSample</g> sample project.</target>
+<target xml:lang="pt">Para uma demonstração das diferentes restrições, carregue o projeto de amostra <g id="1">PhysicsSample</g>.</target>
 </trans-unit>
 <trans-unit id="tu14" xml:space="preserve">
 <source xml:lang="en">Create a constraint</source>
-<target xml:lang="pt">Create a constraint</target>
+<target xml:lang="pt">Criar uma restrição</target>
 </trans-unit>
 <trans-unit id="tu15" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>!Note<x id="2"/>
 Currently, you can only use constraints from scripts.</source>
-<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
-Currently, you can only use constraints from scripts.</target>
+<target xml:lang="pt">&lt;x1\/&gt;!Note&lt;x2\/&gt;
+Atualmente, você só pode usar restrições de scripts.</target>
 </trans-unit>
 <trans-unit id="tu16" xml:space="preserve">
 <source xml:lang="en">To create a constraint, use the <g id="1">Simulation</g> static method <g id="2">CreateConstraint</g>:</source>
-<target xml:lang="pt">To create a constraint, use the <g id="1">Simulation</g> static method <g id="2">CreateConstraint</g>:</target>
+<target xml:lang="pt">Para criar uma restrição, use o método estático <g id="1">Simulation</g> <g id="2">CreateConstraint</g>:</target>
 </trans-unit>
 <trans-unit id="tu17" xml:space="preserve">
 <source xml:lang="en">CreateConstraint(ConstraintTypes type, RigidbodyComponent rigidBodyA, Matrix frameA, bool useReferenceFrameA);
 </source>
-<target xml:lang="pt">CreateConstraint(ConstraintTypes type, RigidbodyComponent rigidBodyA, Matrix frameA, bool useReferenceFrameA);
+<target xml:lang="pt">CriarConstraint(Constraint) Tipos tipo, RigidbodyComponente rígido BodyA, Matrix frameA, uso de boolReferenceFrameA);
 </target>
 </trans-unit>
 <trans-unit id="tu18" xml:space="preserve">
 <source xml:lang="en">This links <g id="1">RigidBodyA</g> to the world at its current location.
 The boolean <g id="2">useReferenceFrameA</g> specifies which coordinate system the limit is applied to (either <g id="3">RigidBodyA</g> or the world).</source>
-<target xml:lang="pt">This links <g id="1">RigidBodyA</g> to the world at its current location.
-The boolean <g id="2">useReferenceFrameA</g> specifies which coordinate system the limit is applied to (either <g id="3">RigidBodyA</g> or the world).</target>
+<target xml:lang="pt">Isso liga <g id="1">RigidBodyA</g> ao mundo em sua localização atual.
+O booleano <g id="2">useReferenceFrameA</g> especifica qual sistema de coordenadas o limite é aplicado (quer <g id="3">RigidBodyA</g> ou o mundo).</target>
 </trans-unit>
 <trans-unit id="tu19" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>!Note<x id="2"/></source>
-<target xml:lang="pt"><x id="1"/>!Note<x id="2"/></target>
+<target xml:lang="pt">&lt;x1\/&gt;!Note&lt;x2\/&gt;</target>
 </trans-unit>
 <trans-unit id="tu20" xml:space="preserve">
 <source xml:lang="en">In the case of <g id="1">ConstraintTypes.Point2Point</g>, the frame represents a pivot in A. Only the translation vector is considered. <g id="2">useReferenceFrameA</g> is ignored.</source>
-<target xml:lang="pt">In the case of <g id="1">ConstraintTypes.Point2Point</g>, the frame represents a pivot in A. Only the translation vector is considered. <g id="2">useReferenceFrameA</g> is ignored.</target>
+<target xml:lang="pt">No caso de <g id="1">ConstraintTypes.Point2Point</g>, o quadro representa um pivô em A. Apenas o vetor de tradução é considerado. <g id="2">useReferenceFrameA</g> é ignorado.</target>
 </trans-unit>
 <trans-unit id="tu21" xml:space="preserve">
 <source xml:lang="en">In the case of <g id="1">ConstraintTypes.Hinge</g>, the frame represents a pivot in A and Axis in A. This is because the hinge allows only a limited angle of rotation between the rigidbody and the world.</source>
-<target xml:lang="pt">In the case of <g id="1">ConstraintTypes.Hinge</g>, the frame represents a pivot in A and Axis in A. This is because the hinge allows only a limited angle of rotation between the rigidbody and the world.</target>
+<target xml:lang="pt">No caso de <g id="1">ConstraintTypes.Hinge</g>, o quadro representa um pivô em A e Eixo em A. Isso porque a dobradiça permite apenas um ângulo limitado de rotação entre o corpo rígido e o mundo.</target>
 </trans-unit>
 <trans-unit id="tu22" xml:space="preserve">
 <source xml:lang="en">In the case of <g id="1">ConstraintTypes.ConeTwist</g>, <g id="2">useReferenceFrameA</g> is ignored.</source>
-<target xml:lang="pt">In the case of <g id="1">ConstraintTypes.ConeTwist</g>, <g id="2">useReferenceFrameA</g> is ignored.</target>
+<target xml:lang="pt">No caso de <g id="1">ConstraintTypes.ConeTwist</g>, <g id="2">useReferenceFrameA</g> é ignorado.</target>
 </trans-unit>
 <trans-unit id="tu23" xml:space="preserve">
 <source xml:lang="en"><g id="1">ConstraintTypes.Gear</g> needs two rigidbodies to be created. This function will throw an exception.</source>
-<target xml:lang="pt"><g id="1">ConstraintTypes.Gear</g> needs two rigidbodies to be created. This function will throw an exception.</target>
+<target xml:lang="pt"><g id="1">ConstraintTypes.Gear</g> precisa de dois corpos rígidos a serem criados. Esta função irá lançar uma exceção.</target>
 </trans-unit>
 <trans-unit id="tu24" xml:space="preserve">
 <source xml:lang="en">CreateConstraint(ConstraintTypes type, RigidbodyComponent rigidBodyA, RigidbodyComponent rigidBodyB, Matrix frameA, Matrix frameB, bool useReferenceFrameA)
 </source>
-<target xml:lang="pt">CreateConstraint(ConstraintTypes type, RigidbodyComponent rigidBodyA, RigidbodyComponent rigidBodyB, Matrix frameA, Matrix frameB, bool useReferenceFrameA)
+<target xml:lang="pt">CriarConstraint(Constraint) Tipos tipo, RigidbodyComponent rigidBodyA, RigidbodyComponent rigidBodyB, Matrix frameA, Matrix frameB, uso de boolReferenceFrameA)
 </target>
 </trans-unit>
 <trans-unit id="tu25" xml:space="preserve">
 <source xml:lang="en">This method links <g id="1">RigidBodyA</g> to  <g id="2">RigidBodyB</g>.</source>
-<target xml:lang="pt">This method links <g id="1">RigidBodyA</g> to  <g id="2">RigidBodyB</g>.</target>
+<target xml:lang="pt">Este método liga <g id="1">RigidBodyA</g> a <g id="2">RigidBodyB</g>.</target>
 </trans-unit>
 <trans-unit id="tu26" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>!Note<x id="2"/></source>
-<target xml:lang="pt"><x id="1"/>!Note<x id="2"/></target>
+<target xml:lang="pt">&lt;x1\/&gt;!Note&lt;x2\/&gt;</target>
 </trans-unit>
 <trans-unit id="tu27" xml:space="preserve">
 <source xml:lang="en">In the case of <g id="1">ConstraintTypes.Point2Point</g>, the frame represents a pivot in A or B. Only the translation vector is considered. <g id="2">useReferenceFrameA</g> is ignored.</source>
-<target xml:lang="pt">In the case of <g id="1">ConstraintTypes.Point2Point</g>, the frame represents a pivot in A or B. Only the translation vector is considered. <g id="2">useReferenceFrameA</g> is ignored.</target>
+<target xml:lang="pt">No caso de <g id="1">ConstraintTypes.Point2Point</g>, o quadro representa um pivô em A ou B. Apenas o vetor de tradução é considerado. <g id="2">useReferenceFrameA</g> é ignorado.</target>
 </trans-unit>
 <trans-unit id="tu28" xml:space="preserve">
 <source xml:lang="en">In the case of <g id="1">ConstraintTypes.Hinge</g> the frame represents pivot in A/B and Axis in A/B. This is because the hinge allows only a limited angle of rotation between the rigidbody and the world in this case.</source>
-<target xml:lang="pt">In the case of <g id="1">ConstraintTypes.Hinge</g> the frame represents pivot in A/B and Axis in A/B. This is because the hinge allows only a limited angle of rotation between the rigidbody and the world in this case.</target>
+<target xml:lang="pt">No caso de <g id="1">ConstraintTypes.Hinge</g> o quadro representa pivô em A\/B e Eixo em A\/B. Isto porque a dobradiça permite apenas um ângulo limitado de rotação entre o corpo rígido e o mundo neste caso.</target>
 </trans-unit>
 <trans-unit id="tu29" xml:space="preserve">
 <source xml:lang="en">In the case of <g id="1">ConstraintTypes.ConeTwist</g>, <g id="2">useReferenceFrameA</g> is ignored.</source>
-<target xml:lang="pt">In the case of <g id="1">ConstraintTypes.ConeTwist</g>, <g id="2">useReferenceFrameA</g> is ignored.</target>
+<target xml:lang="pt">No caso de <g id="1">ConstraintTypes.ConeTwist</g>, <g id="2">useReferenceFrameA</g> é ignorado.</target>
 </trans-unit>
 <trans-unit id="tu30" xml:space="preserve">
 <source xml:lang="en">In the case of <g id="1">ConstraintTypes.Gear</g>, <g id="2">useReferenceFrameA</g> is ignored. The frame just represents the axis either in A or B; only the translation vector (which should contain the axis) is used.</source>
-<target xml:lang="pt">In the case of <g id="1">ConstraintTypes.Gear</g>, <g id="2">useReferenceFrameA</g> is ignored. The frame just represents the axis either in A or B; only the translation vector (which should contain the axis) is used.</target>
+<target xml:lang="pt">No caso de <g id="1">ConstraintTypes.Gear</g>, <g id="2">useReferenceFrameA</g> é ignorado. O quadro representa apenas o eixo em A ou B; somente o vetor de tradução (que deve conter o eixo) é usado.</target>
 </trans-unit>
 <trans-unit id="tu31" xml:space="preserve">
 <source xml:lang="en">The boolean <g id="1">useReferenceFrameA</g> determines which coordinate system (<g id="2">RigidBodyA</g> or <g id="3">RigidBodyB</g>) the limits are applied to.</source>
-<target xml:lang="pt">The boolean <g id="1">useReferenceFrameA</g> determines which coordinate system (<g id="2">RigidBodyA</g> or <g id="3">RigidBodyB</g>) the limits are applied to.</target>
+<target xml:lang="pt">O booleano <g id="1">useReferenceFrameA</g> determina qual sistema de coordenadas (<g id="2">RigidBodyA</g> ou <g id="3">RigidBodyB</g>) os limites são aplicados.</target>
 </trans-unit>
 <trans-unit id="tu32" xml:space="preserve">
 <source xml:lang="en">Add constraints to the simulation</source>
-<target xml:lang="pt">Add constraints to the simulation</target>
+<target xml:lang="pt">Adicionar restrições à simulação</target>
 </trans-unit>
 <trans-unit id="tu33" xml:space="preserve">
 <source xml:lang="en">After you create a constraint, add it to the simulation from a script by calling:</source>
-<target xml:lang="pt">After you create a constraint, add it to the simulation from a script by calling:</target>
+<target xml:lang="pt">Depois de criar uma restrição, adicione-a à simulação de um script chamando:</target>
 </trans-unit>
 <trans-unit id="tu34" xml:space="preserve">
 <source xml:lang="en">this.GetSimulation().AddConstraint(constraint);
 </source>
-<target xml:lang="pt">this.GetSimulation().AddConstraint(constraint);
+<target xml:lang="pt">this.GetSimulation(). AddConstraint (constraint);
 </target>
 </trans-unit>
 <trans-unit id="tu35" xml:space="preserve">
 <source xml:lang="en">or:</source>
-<target xml:lang="pt">or:</target>
+<target xml:lang="pt">ou:</target>
 </trans-unit>
 <trans-unit id="tu36" xml:space="preserve">
 <source xml:lang="en">var disableCollisionsBetweenLinkedBodies = true;
 this.GetSimulation().AddConstraint(constraint, disableCollisionsBetweenLinkedBodies);
 </source>
-<target xml:lang="pt">var disableCollisionsBetweenLinkedBodies = true;
-this.GetSimulation().AddConstraint(constraint, disableCollisionsBetweenLinkedBodies);
+<target xml:lang="pt">var desativar cores Entre os corpos conectados = verdadeiro;
+this.GetSimulation(). AddConstraint (constrang, desabilitar CoresBetweenLinkedBodies);
 </target>
 </trans-unit>
 <trans-unit id="tu37" xml:space="preserve">
 <source xml:lang="en">The parameter <g id="1">disableCollisionsBetweenLinkedBodies</g>
 stops linked bodies colliding with each other.</source>
-<target xml:lang="pt">The parameter <g id="1">disableCollisionsBetweenLinkedBodies</g>
-stops linked bodies colliding with each other.</target>
+<target xml:lang="pt">O parâmetro <g id="1">disableCollisionsBetweenLinkedBodies</g>
+para corpos ligados colidindo uns com os outros.</target>
 </trans-unit>
 <trans-unit id="tu38" xml:space="preserve">
 <source xml:lang="en">Likewise, to remove a constraint from the simulation, use:</source>
-<target xml:lang="pt">Likewise, to remove a constraint from the simulation, use:</target>
+<target xml:lang="pt">Da mesma forma, para remover uma restrição da simulação, use:</target>
 </trans-unit>
 <trans-unit id="tu39" xml:space="preserve">
 <source xml:lang="en">this.GetSimulation().RemoveConstraint(constraint);
 </source>
-<target xml:lang="pt">this.GetSimulation().RemoveConstraint(constraint);
+<target xml:lang="pt">this.GetSimulation(). RemoverConstraint (constrangimento);
 </target>
 </trans-unit>
 <trans-unit id="tu40" xml:space="preserve">
 <source xml:lang="en">See also</source>
-<target xml:lang="pt">See also</target>
+<target xml:lang="pt">Ver também</target>
 </trans-unit>
 <trans-unit id="tu41" xml:space="preserve">
 <source xml:lang="en"><g id="1">Colliders</g></source>
-<target xml:lang="pt"><g id="1">Colliders</g></target>
+<target xml:lang="pt"><g id="1">Coleiras</g></target>
 </trans-unit>
 </body>
 </file>

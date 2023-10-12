@@ -1,53 +1,53 @@
-# Import audio
+# Importação de áudio
 
-<span class="badge text-bg-primary">Beginner</span>
-<span class="badge text-bg-success">Designer</span>
+<x1\/>Introdução<x2\/>
+<x3\/>Designer<x4\/>
 
-You can import audio files to use as **audio assets** in your project. You can import file types including .wav, .mp3, .ogg, .aac, .aiff, .flac, .m4a, .wma, and .mpc.
+Você pode importar arquivos de áudio para usar como ativos **audio** em seu projeto. Você pode importar tipos de arquivo, incluindo .wav, .mp3, .ogg, .aac, .aiff, .flac, .m4a, .wma e .mpc.
 
-1. Drag and drop the audio file from Windows Explorer to the **Asset View**:
+1. Arraste e solte o arquivo de áudio do Windows Explorer para o **Asset View**:
 
-   ![Drag and drop](media/import-setup-drag-and-drop-audio-to-asset-view.gif)
+   <x1\/>Drag e drop<x2\/>
 
-   Alternatively, in the **Asset View**:
+   Alternativamente, no **Asset View**:
 
-   1. Click ![](media/index-audio-add-new-asset-button.png)
+   1. Clique em <x1\/><x2\/>
 
-   2. Click ![](media/index-audio-import-audio-directly-from-file.png) (**Import audio directly from file**) and select the audio file.
+   2. Clique em <x1\/><x2\/> (**Import audio diretamente do arquivo**) e selecione o arquivo de áudio.
 
-2. To give the audio asset some default properties, choose a preset. (You can always [change the properties in the Property Grid later](audio-asset-properties.md).)
+2. Para dar ao ativo de áudio algumas propriedades padrão, escolha uma predefinição. (Você sempre pode [ alterar as propriedades na Grade de Propriedades mais tarde](audio-asset-properties.md).)
 
-   ![Choose Asset type](media/import-audio-choose-asset-type.png)
+   <x1\/>Escolha Tipo de Asset<x2\/>
 
-   * **Sound effect**: Recommended for smaller files that you want to play directly from memory.
+   * **Efeito de som**: Recomendado para arquivos menores que você deseja jogar diretamente da memória.
 
-   * **Spatialized sound**: Process the audio asset as [spatialized audio](spatialized-audio.md). Note that Stride processes audio files as mono (single-channel) audio. The source file is unaffected.
+   * **Spatialized sound**: Processe o ativo de áudio como [spatialized audio](spatialized-audio.md). Note que Stride processa arquivos de áudio como áudio mono (canal único). O arquivo de origem não é afetado.
 
-   * **Music**: Recommended for larger files that you want to stream from disk to save memory.
+   * **Music**: Recomendado para arquivos maiores que você deseja transmitir do disco para salvar a memória.
 
-After you import an audio file, you can select it as an asset in the **Asset View**.
+Depois de importar um arquivo de áudio, você pode selecioná-lo como um ativo no **Asset View**.
 
-## Import audio from a video file
+## Importar áudio de um arquivo de vídeo
 
-You can also import a [video](../video/index.md) file and choose to import only the audio tracks from it.
+Você também pode importar um arquivo [video](../video/index.md) e optar por importar apenas as faixas de áudio a partir dele.
 
-1. In the **Asset View**, click **Add assett** and select **Media > Video**.
+1. No **Asset View**, clique em **Add assett** e selecione **Media > Video**.
 
-   ![Add video asset](../video/media/add-video-asset.png)
+   <x1\/> Adicionar vídeo asset<x2\/>
 
-2. Browse to the video you want to import audio from and click **Open**.
+2. Navegue para o vídeo que deseja importar áudio e clique em **Open**.
 
-   Alternatively, drag the file from **Explorer** into the **Asset View**.
+   Alternativamente, arraste o arquivo de **Explorer** para o **Asset View**.
 
-3. Clear **Import video** and click **OK**.
+3. Limpar **Import vídeo** e clique em **OK**.
 
-   ![Import video](media/import-audio-only.png)
+   <x1\/>Import vídeo<x2\/>
 
-   Stride adds the audio tracks from the video to the **Asset View**.
+   Stride adiciona as faixas de áudio do vídeo ao **Asset View**.
 
-## See also
+## Ver também
 
-* [Spatialized audio](spatialized-audio.md)
-* [Non-spatialized audio](non-spatialized-audio.md)
-* [Global audio settings](global-audio-settings.md)
-* [Video](../video/index.md)
+* [Áudio espacial](spatialized-audio.md)
+* [Áudio não espacializado](non-spatialized-audio.md)
+* [Configurações de áudio globais](global-audio-settings.md)
+* [Vídeo](../video/index.md)

@@ -3,57 +3,57 @@
 <body>
 <trans-unit id="tu1" xml:space="preserve">
 <source xml:lang="en">Stream audio</source>
-<target xml:lang="pt">Stream audio</target>
+<target xml:lang="pt">Transmissão de áudio</target>
 </trans-unit>
 <trans-unit id="tu2" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Beginner<x id="2"/>
 <x id="3"/>Designer<x id="4"/>
 <x id="5"/>Programmer<x id="6"/></source>
-<target xml:lang="pt"><x id="1"/>Beginner<x id="2"/>
-<x id="3"/>Designer<x id="4"/>
-<x id="5"/>Programmer<x id="6"/></target>
+<target xml:lang="pt">&lt;x1\/&gt;Introdução&lt;x2\/&gt;
+&lt;x3\/&gt;Designer&lt;x4\/&gt;
+&lt;x5\/&gt; Programador &lt;x6\/&gt;</target>
 </trans-unit>
 <trans-unit id="tu3" xml:space="preserve">
 <source xml:lang="en">By default, Stride plays audio directly from memory. This is useful for short sound effects such as gunshots or footsteps.</source>
-<target xml:lang="pt">By default, Stride plays audio directly from memory. This is useful for short sound effects such as gunshots or footsteps.</target>
+<target xml:lang="pt">Por padrão, Stride reproduz áudio diretamente da memória. Isso é útil para efeitos sonoros curtos, como tiros ou passos.</target>
 </trans-unit>
 <trans-unit id="tu4" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Non-streamed audio<x id="2"/></source>
-<target xml:lang="pt"><x id="1"/>Non-streamed audio<x id="2"/></target>
+<target xml:lang="pt">&lt;x1\/&gt; Áudio não &lt;x2\/&gt;</target>
 </trans-unit>
 <trans-unit id="tu5" xml:space="preserve">
 <source xml:lang="en">Alternatively, Stride can buffer audio and stream it in sequences. As soon as the first sequence is buffered, Stride plays it while buffering the following sequences in parallel. This saves a lot of memory when used for larger audio files such as background music and character dialogue.</source>
-<target xml:lang="pt">Alternatively, Stride can buffer audio and stream it in sequences. As soon as the first sequence is buffered, Stride plays it while buffering the following sequences in parallel. This saves a lot of memory when used for larger audio files such as background music and character dialogue.</target>
+<target xml:lang="pt">Alternativamente, Stride pode buffer áudio e transmiti-lo em sequências. Assim que a primeira seqüência é buffer, Stride o joga enquanto buffer as seguintes seqüências em paralelo. Isso economiza muita memória quando usado para arquivos de áudio maiores, como música de fundo e diálogo de personagens.</target>
 </trans-unit>
 <trans-unit id="tu6" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>!Note<x id="2"/>
 Streaming audio increases latency unless you preload it with the ReadyToPlay task (see below).</source>
-<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
-Streaming audio increases latency unless you preload it with the ReadyToPlay task (see below).</target>
+<target xml:lang="pt">&lt;x1\/&gt;!Note&lt;x2\/&gt;
+Streaming de áudio aumenta a latência a menos que você preload com a tarefa ReadyToPlay (veja abaixo).</target>
 </trans-unit>
 <trans-unit id="tu7" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Streamed audio<x id="2"/></source>
-<target xml:lang="pt"><x id="1"/>Streamed audio<x id="2"/></target>
+<target xml:lang="pt">&lt;x1\/&gt;Streamed audio&lt;x2\/&gt;</target>
 </trans-unit>
 <trans-unit id="tu8" xml:space="preserve">
 <source xml:lang="en">To stream an audio asset:</source>
-<target xml:lang="pt">To stream an audio asset:</target>
+<target xml:lang="pt">Para transmitir um ativo de áudio:</target>
 </trans-unit>
 <trans-unit id="tu9" xml:space="preserve">
 <source xml:lang="en">In the <g id="1">Asset View</g>, select the audio asset.</source>
-<target xml:lang="pt">In the <g id="1">Asset View</g>, select the audio asset.</target>
+<target xml:lang="pt">No <g id="1">Asset View</g>, selecione o ativo de áudio.</target>
 </trans-unit>
 <trans-unit id="tu10" xml:space="preserve">
 <source xml:lang="en">In the <g id="1">Property Grid</g>, select <g id="2">Stream From Disk</g>:</source>
-<target xml:lang="pt">In the <g id="1">Property Grid</g>, select <g id="2">Stream From Disk</g>:</target>
+<target xml:lang="pt">No <g id="1">Property Grid</g>, selecione <g id="2">Stream From Disk</g>:</target>
 </trans-unit>
 <trans-unit id="tu11" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Audio asset properties<x id="2"/></source>
-<target xml:lang="pt"><x id="1"/>Audio asset properties<x id="2"/></target>
+<target xml:lang="pt">&lt;x1\/&gt;Audio asset properties&lt;x2\/&gt;</target>
 </trans-unit>
 <trans-unit id="tu12" xml:space="preserve">
 <source xml:lang="en">In the script for the asset, you can configure an audio file to play once the audio engine buffers enough audio samples. To do this, use this task:</source>
-<target xml:lang="pt">In the script for the asset, you can configure an audio file to play once the audio engine buffers enough audio samples. To do this, use this task:</target>
+<target xml:lang="pt">No script para o ativo, você pode configurar um arquivo de áudio para reproduzir uma vez que o motor de áudio buffers amostras de áudio suficientes. Para fazer isso, use esta tarefa:</target>
 </trans-unit>
 <trans-unit id="tu13" xml:space="preserve">
 <source xml:lang="en">SoundInstance music = musicSound.CreateInstance();
@@ -61,29 +61,29 @@ await music.ReadyToPlay();
 music.Play();
 </source>
 <target xml:lang="pt">SoundInstance music = musicSound.CreateInstance();
-await music.ReadyToPlay();
+esperar music.ReadyToPlay();
 music.Play();
 </target>
 </trans-unit>
 <trans-unit id="tu14" xml:space="preserve">
 <source xml:lang="en">See also</source>
-<target xml:lang="pt">See also</target>
+<target xml:lang="pt">Ver também</target>
 </trans-unit>
 <trans-unit id="tu15" xml:space="preserve">
 <source xml:lang="en"><g id="1">Global audio settings</g></source>
-<target xml:lang="pt"><g id="1">Global audio settings</g></target>
+<target xml:lang="pt"><g id="1">Configurações de áudio globais</g></target>
 </trans-unit>
 <trans-unit id="tu16" xml:space="preserve">
 <source xml:lang="en"><g id="1">Audio asset properties</g></source>
-<target xml:lang="pt"><g id="1">Audio asset properties</g></target>
+<target xml:lang="pt"><g id="1">Propriedades de ativos de áudio</g></target>
 </trans-unit>
 <trans-unit id="tu17" xml:space="preserve">
 <source xml:lang="en"><g id="1">Spatialized audio</g></source>
-<target xml:lang="pt"><g id="1">Spatialized audio</g></target>
+<target xml:lang="pt"><g id="1">Áudio espacial</g></target>
 </trans-unit>
 <trans-unit id="tu18" xml:space="preserve">
 <source xml:lang="en"><g id="1">Non-spatialized audio</g></source>
-<target xml:lang="pt"><g id="1">Non-spatialized audio</g></target>
+<target xml:lang="pt"><g id="1">Áudio não espacializado</g></target>
 </trans-unit>
 </body>
 </file>

@@ -3,47 +3,47 @@
 <body>
 <trans-unit id="tu1" xml:space="preserve">
 <source xml:lang="en">Shader stages</source>
-<target xml:lang="pt">Shader stages</target>
+<target xml:lang="pt">Etapas de Shader</target>
 </trans-unit>
 <trans-unit id="tu2" xml:space="preserve">
 <source xml:lang="en">The function for each stage has a predefined name, so we recommend you don't change it.</source>
-<target xml:lang="pt">The function for each stage has a predefined name, so we recommend you don't change it.</target>
+<target xml:lang="pt">A função para cada etapa tem um nome predefinido, por isso recomendamos que você não altere.</target>
 </trans-unit>
 <trans-unit id="tu3" xml:space="preserve">
 <source xml:lang="en"><g id="1">HSMain</g> for hull shader</source>
-<target xml:lang="pt"><g id="1">HSMain</g> for hull shader</target>
+<target xml:lang="pt"><g id="1">HSMain</g> para shader de casco</target>
 </trans-unit>
 <trans-unit id="tu4" xml:space="preserve">
 <source xml:lang="en"><g id="1">HSConstantMain</g> for patch constant function</source>
-<target xml:lang="pt"><g id="1">HSConstantMain</g> for patch constant function</target>
+<target xml:lang="pt"><g id="1">HSConstantMain</g> para função constante de patch</target>
 </trans-unit>
 <trans-unit id="tu5" xml:space="preserve">
 <source xml:lang="en"><g id="1">DSMain</g> for domain shader</source>
-<target xml:lang="pt"><g id="1">DSMain</g> for domain shader</target>
+<target xml:lang="pt"><g id="1">DSMain</g> para shader de domínio</target>
 </trans-unit>
 <trans-unit id="tu6" xml:space="preserve">
 <source xml:lang="en"><g id="1">VSMain</g> for vertex shader (takes no arguments)</source>
-<target xml:lang="pt"><g id="1">VSMain</g> for vertex shader (takes no arguments)</target>
+<target xml:lang="pt"><g id="1">VSMain</g> para o shader de vértice (não tem argumentos)</target>
 </trans-unit>
 <trans-unit id="tu7" xml:space="preserve">
 <source xml:lang="en"><g id="1">GSMain</g> for geometry shader</source>
-<target xml:lang="pt"><g id="1">GSMain</g> for geometry shader</target>
+<target xml:lang="pt"><g id="1">GSMain</g> para o shader de geometria</target>
 </trans-unit>
 <trans-unit id="tu8" xml:space="preserve">
 <source xml:lang="en"><g id="1">PSMain</g> for pixel shader (takes no arguments)</source>
-<target xml:lang="pt"><g id="1">PSMain</g> for pixel shader (takes no arguments)</target>
+<target xml:lang="pt"><g id="1">PSMain</g> para pixel shader (não tem argumentos)</target>
 </trans-unit>
 <trans-unit id="tu9" xml:space="preserve">
 <source xml:lang="en"><g id="1">CSMain</g> for compute shader (takes no arguments)</source>
-<target xml:lang="pt"><g id="1">CSMain</g> for compute shader (takes no arguments)</target>
+<target xml:lang="pt"><g id="1">CSMain</g> para o shader de computação (não tem argumentos)</target>
 </trans-unit>
 <trans-unit id="tu10" xml:space="preserve">
 <source xml:lang="en">These are all void methods.</source>
-<target xml:lang="pt">These are all void methods.</target>
+<target xml:lang="pt">Estes são todos métodos vazios.</target>
 </trans-unit>
 <trans-unit id="tu11" xml:space="preserve">
 <source xml:lang="en">The geometry and tessellation shaders need some kind of predefined structure as input and output. However, since Stride shaders are generic, it's impossible to know beforehand what the structure will be. As a result, these shaders use <g id="1">Input</g> and <g id="2">Output</g> structures that are automatically generated to fit the final shader.</source>
-<target xml:lang="pt">The geometry and tessellation shaders need some kind of predefined structure as input and output. However, since Stride shaders are generic, it's impossible to know beforehand what the structure will be. As a result, these shaders use <g id="1">Input</g> and <g id="2">Output</g> structures that are automatically generated to fit the final shader.</target>
+<target xml:lang="pt">Os shaders de geometria e tessellation precisam de algum tipo de estrutura predefinida como entrada e saída. No entanto, uma vez que os shaders Stride são genéricos, é impossível saber de antemão qual será a estrutura. Como resultado, esses shaders usam <g id="1">Input</g> e <g id="2">Output</g> estruturas que são geradas automaticamente para caber o shader final.</target>
 </trans-unit>
 <trans-unit id="tu12" xml:space="preserve">
 <source xml:lang="en">Vertex shader</source>
@@ -51,11 +51,11 @@
 </trans-unit>
 <trans-unit id="tu13" xml:space="preserve">
 <source xml:lang="en">A vertex shader has to set the variable with the semantic <g id="1">SV_Position</g>. In <g id="2">ShaderBase</g>, it's <g id="3">ShadingPosition</g>.</source>
-<target xml:lang="pt">A vertex shader has to set the variable with the semantic <g id="1">SV_Position</g>. In <g id="2">ShaderBase</g>, it's <g id="3">ShadingPosition</g>.</target>
+<target xml:lang="pt">Um shader de vértice tem de definir a variável com a semântica <g id="1">SV_Position</g>. Em <g id="2">ShaderBase</g>, é <g id="3">ShadingPosition</g>.</target>
 </trans-unit>
 <trans-unit id="tu14" xml:space="preserve">
 <source xml:lang="en">For example:</source>
-<target xml:lang="pt">For example:</target>
+<target xml:lang="pt">Por exemplo:</target>
 </trans-unit>
 <trans-unit id="tu15" xml:space="preserve">
 <source xml:lang="en">override stage void VSMain()
@@ -65,8 +65,8 @@
 	...
 }
 </source>
-<target xml:lang="pt">override stage void VSMain()
-{
+<target xml:lang="pt">anular fase VSMain()
+(
 	...
 	streams.ShadingPosition = ...;
 	...
@@ -79,11 +79,11 @@
 </trans-unit>
 <trans-unit id="tu17" xml:space="preserve">
 <source xml:lang="en">A pixel shader has to set the variable with the semantic <g id="1">SV_Target</g>. In <g id="2">ShaderBase</g>, it is <g id="3">ColorTarget</g>.</source>
-<target xml:lang="pt">A pixel shader has to set the variable with the semantic <g id="1">SV_Target</g>. In <g id="2">ShaderBase</g>, it is <g id="3">ColorTarget</g>.</target>
+<target xml:lang="pt">Um shader de pixel tem de definir a variável com o semântico <g id="1">SV_Target</g>. Em <g id="2">ShaderBase</g>, é <g id="3">ColorTarget</g>.</target>
 </trans-unit>
 <trans-unit id="tu18" xml:space="preserve">
 <source xml:lang="en">For example:</source>
-<target xml:lang="pt">For example:</target>
+<target xml:lang="pt">Por exemplo:</target>
 </trans-unit>
 <trans-unit id="tu19" xml:space="preserve">
 <source xml:lang="en">override stage void PSMain()
@@ -93,21 +93,21 @@
 	...
 }
 </source>
-<target xml:lang="pt">override stage void PSMain()
-{
+<target xml:lang="pt">anular fase PSMain()
+(
 	...
-	streams.ColorTarget = ...;
+	fluxos. ColorTarget = ...;
 	...
 }
 </target>
 </trans-unit>
 <trans-unit id="tu20" xml:space="preserve">
 <source xml:lang="en">Geometry shader</source>
-<target xml:lang="pt">Geometry shader</target>
+<target xml:lang="pt">Sombreador de geometria</target>
 </trans-unit>
 <trans-unit id="tu21" xml:space="preserve">
 <source xml:lang="en">An example of geometry shader:</source>
-<target xml:lang="pt">An example of geometry shader:</target>
+<target xml:lang="pt">Um exemplo de geometria shader:</target>
 </trans-unit>
 <trans-unit id="tu22" xml:space="preserve">
 <source xml:lang="en">[maxvertexcount(1)]
@@ -123,35 +123,35 @@ void GSMain(triangle Input input[3], inout PointStream&lt;Output&gt; pointStream
 	...
 }
 </source>
-<target xml:lang="pt">[maxvertexcount(1)]
-void GSMain(triangle Input input[3], inout PointStream&lt;Output&gt; pointStream)
-{
+<target xml:lang="pt">[conta máxima(1)]
+void GSMain (entrada de entrada de triângulo[3], inout PointStream&lt;Output&gt; pointStream)
+(
 	...
-	// fill the streams object
-	streams = input[0];
+	\/\/ preencher o objeto streams
+	fluxos = entrada[0];
  	...
  
-	// always append streams
-	pointStream.Append(streams);
+	\/\/ sempre apêndice fluxos
+	pointStream.Anexar(streams);
 	...
 }
 </target>
 </trans-unit>
 <trans-unit id="tu23" xml:space="preserve">
 <source xml:lang="en"><g id="1">Input</g> can be used in the method body. It behaves like the streams object and contains the same members.</source>
-<target xml:lang="pt"><g id="1">Input</g> can be used in the method body. It behaves like the streams object and contains the same members.</target>
+<target xml:lang="pt"><g id="1">Input</g> pode ser usado no corpo do método. Ele se comporta como o objeto de fluxos e contém os mesmos membros.</target>
 </trans-unit>
 <trans-unit id="tu24" xml:space="preserve">
 <source xml:lang="en"><g id="1">Output</g> is only used in the declaration of the method. You should append the streams object to your geometry shader output stream.</source>
-<target xml:lang="pt"><g id="1">Output</g> is only used in the declaration of the method. You should append the streams object to your geometry shader output stream.</target>
+<target xml:lang="pt"><g id="1">Output</g> só é usado na declaração do método. Você deve anexar os fluxos objeto ao fluxo de saída do shader geometria.</target>
 </trans-unit>
 <trans-unit id="tu25" xml:space="preserve">
 <source xml:lang="en">Tessellation shader</source>
-<target xml:lang="pt">Tessellation shader</target>
+<target xml:lang="pt">Sombra de Tessellation</target>
 </trans-unit>
 <trans-unit id="tu26" xml:space="preserve">
 <source xml:lang="en">An example of a tessellation shader:</source>
-<target xml:lang="pt">An example of a tessellation shader:</target>
+<target xml:lang="pt">Um exemplo de um shader de tessellation:</target>
 </trans-unit>
 <trans-unit id="tu27" xml:space="preserve">
 <source xml:lang="en">[domain("tri")]
@@ -182,50 +182,50 @@ void DSMain(const OutputPatch&lt;Input, 3&gt; input, out Output output, in Const
 }
 </source>
 <target xml:lang="pt">[domain("tri")]
-[partitioning("fractional_odd")]
+[partitioning("fractional_odd]]
 [outputtopology("triangle_cw")]
 [outputcontrolpoints(3)]
 [patchconstantfunc("HSConstantMain")]
 [maxtessfactor(48.0)]
-void HSMain(InputPatch&lt;Input, 3&gt; input, out Output output, uint uCPID : SV_OutputControlPointID)
-{
+void HSMain (InputPatch&lt;Input, 3&gt; input, out Output, uint uCPID : SV_OutputControlPointID)
+(
 	...
-	output = streams;
+	saída = fluxos;
 }
  
-void HSConstantMain(InputPatch&lt;Input, 3&gt; input, const OutputPatch&lt;Input2, 3&gt; output, out Constants constants)
-{
+vazio HSConstant Principal (InputPatch&lt;Input, entrada 3&gt;, const OutputPatch&lt;Input2, saída 3&gt;, fora constantes Constantes)&lt;Input, 3&gt;&lt;Input2, 3&gt;
+(
 	...
-	output = streams;
+	saída = fluxos;
 	...
 }
  
 [domain("tri")]
-void DSMain(const OutputPatch&lt;Input, 3&gt; input, out Output output, in Constants constants, float3 f3BarycentricCoords : SV_DomainLocation)
-{
+void DSMain(const OutputPatch&lt;Input, 3&gt; input, out Output, in Constantes constantes, float3 f3BarycentricCoords : SV_DomainLocation)
+(
 	...
-	output = streams;
+	saída = fluxos;
 	...
 }
 </target>
 </trans-unit>
 <trans-unit id="tu28" xml:space="preserve">
 <source xml:lang="en"><g id="1">Input</g> and <g id="2">Input2</g> both behave like streams.</source>
-<target xml:lang="pt"><g id="1">Input</g> and <g id="2">Input2</g> both behave like streams.</target>
+<target xml:lang="pt"><g id="1">Input</g> e <g id="2">Input2</g> ambos se comportam como fluxos.</target>
 </trans-unit>
 <trans-unit id="tu29" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>!Note<x id="2"/>
 Don't forget to assign <g id="3">output</g> to <g id="4">streams</g> at the end of your stage.</source>
-<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
-Don't forget to assign <g id="3">output</g> to <g id="4">streams</g> at the end of your stage.</target>
+<target xml:lang="pt">&lt;x1\/&gt;!Note&lt;x2\/&gt;
+Não se esqueça de atribuir <g id="3">output</g> a <g id="4">streams</g> no final do seu estágio.</target>
 </trans-unit>
 <trans-unit id="tu30" xml:space="preserve">
 <source xml:lang="en">Compute shader</source>
-<target xml:lang="pt">Compute shader</target>
+<target xml:lang="pt">Shader computado</target>
 </trans-unit>
 <trans-unit id="tu31" xml:space="preserve">
 <source xml:lang="en">An example of a compute shader:</source>
-<target xml:lang="pt">An example of a compute shader:</target>
+<target xml:lang="pt">Um exemplo de um shader de computação:</target>
 </trans-unit>
 <trans-unit id="tu32" xml:space="preserve">
 <source xml:lang="en">[numthreads(2, 3, 5)]
@@ -234,44 +234,44 @@ void CSMain()
 	...
 }
 </source>
-<target xml:lang="pt">[numthreads(2, 3, 5)]
-void CSMain()
-{
+<target xml:lang="pt">[numeração(2, 3, 5)]
+anular CSMain()
+(
 	...
 }
 </target>
 </trans-unit>
 <trans-unit id="tu33" xml:space="preserve">
 <source xml:lang="en">You can inherit from <g id="1">ComputeShaderBase</g> and override the <g id="2">Compute</g> method.</source>
-<target xml:lang="pt">You can inherit from <g id="1">ComputeShaderBase</g> and override the <g id="2">Compute</g> method.</target>
+<target xml:lang="pt">Você pode herdar de <g id="1">ComputeShaderBase</g> e substituir o método <g id="2">Compute</g>.</target>
 </trans-unit>
 <trans-unit id="tu34" xml:space="preserve">
 <source xml:lang="en">See also</source>
-<target xml:lang="pt">See also</target>
+<target xml:lang="pt">Ver também</target>
 </trans-unit>
 <trans-unit id="tu35" xml:space="preserve">
 <source xml:lang="en"><g id="1">Effect language</g></source>
-<target xml:lang="pt"><g id="1">Effect language</g></target>
+<target xml:lang="pt"><g id="1">Efeito da linguagem</g></target>
 </trans-unit>
 <trans-unit id="tu36" xml:space="preserve">
 <source xml:lang="en"><g id="1">Shading language index</g></source>
-<target xml:lang="pt"><g id="1">Shading language index</g></target>
+<target xml:lang="pt"><g id="1">Índice de linguagem de sombra</g></target>
 </trans-unit>
 <trans-unit id="tu37" xml:space="preserve">
 <source xml:lang="en"><g id="1">Shader classes, mixins, and inheritance</g></source>
-<target xml:lang="pt"><g id="1">Shader classes, mixins, and inheritance</g></target>
+<target xml:lang="pt"><g id="1">Shader classes, misturas e herança</g></target>
 </trans-unit>
 <trans-unit id="tu38" xml:space="preserve">
 <source xml:lang="en"><g id="1">Composition</g></source>
-<target xml:lang="pt"><g id="1">Composition</g></target>
+<target xml:lang="pt"><g id="1">Composição</g></target>
 </trans-unit>
 <trans-unit id="tu39" xml:space="preserve">
 <source xml:lang="en"><g id="1">Templates</g></source>
-<target xml:lang="pt"><g id="1">Templates</g></target>
+<target xml:lang="pt"><g id="1">Modelos</g></target>
 </trans-unit>
 <trans-unit id="tu40" xml:space="preserve">
 <source xml:lang="en"><g id="1">Shader stage input/output automatic management</g></source>
-<target xml:lang="pt"><g id="1">Shader stage input/output automatic management</g></target>
+<target xml:lang="pt"><g id="1">Shader fase de entrada \/ saída gestão automática</g></target>
 </trans-unit>
 </body>
 </file>

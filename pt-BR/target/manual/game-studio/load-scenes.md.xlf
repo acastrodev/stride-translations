@@ -3,15 +3,15 @@
 <body>
 <trans-unit id="tu1" xml:space="preserve">
 <source xml:lang="en">Load and unload scenes at runtime</source>
-<target xml:lang="pt">Load and unload scenes at runtime</target>
+<target xml:lang="pt">Carregar e descarregar cenas no tempo de execução</target>
 </trans-unit>
 <trans-unit id="tu2" xml:space="preserve">
 <source xml:lang="en">Loading scenes</source>
-<target xml:lang="pt">Loading scenes</target>
+<target xml:lang="pt">Cenas de carregamento</target>
 </trans-unit>
 <trans-unit id="tu3" xml:space="preserve">
 <source xml:lang="en">You can use <g id="1">UrlReference&lt;Scene&gt;</g> properties on your scripts to assign <g id="2">Scene</g> assets then load the via code:</source>
-<target xml:lang="pt">You can use <g id="1">UrlReference&lt;Scene&gt;</g> properties on your scripts to assign <g id="2">Scene</g> assets then load the via code:</target>
+<target xml:lang="pt">Você pode usar <g id="1">UrlReference&lt;Scene&gt;</g> propriedades em seus scripts para atribuir <g id="2">Scene</g> os ativos então carregam o código via:</target>
 </trans-unit>
 <trans-unit id="tu4" xml:space="preserve">
 <source xml:lang="en">public UrlReference&lt;Scene&gt; ChildSceneUrl { get; set; }
@@ -21,17 +21,17 @@ var childScene = Content.Load(ChildSceneUrl);
 
 parentScene.Children.Add(childScene);
 </source>
-<target xml:lang="pt">public UrlReference&lt;Scene&gt; ChildSceneUrl { get; set; }
+<target xml:lang="pt">público UrlReference&lt;Scene&gt; ChildScene Url { get; set; }
 
-//...
-var childScene = Content.Load(ChildSceneUrl);
+\/\/...
+var childScene = Content.Load (ChildSceneUrl);
 
-parentScene.Children.Add(childScene);
+parentScene.Children.Add (childScene);
 </target>
 </trans-unit>
 <trans-unit id="tu5" xml:space="preserve">
 <source xml:lang="en">Alternatively you can load scenes by name. The following code loads three scenes and adds them as children:</source>
-<target xml:lang="pt">Alternatively you can load scenes by name. The following code loads three scenes and adds them as children:</target>
+<target xml:lang="pt">Alternativamente, você pode carregar cenas por nome. O código a seguir carrega três cenas e os adiciona como crianças:</target>
 </trans-unit>
 <trans-unit id="tu6" xml:space="preserve">
 <source xml:lang="en">var myChildScene0 = Content.Load&lt;Scene&gt;(url0);
@@ -54,32 +54,32 @@ myChildScene1.Add(myChildScene2);
 <trans-unit id="tu7" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>!Note<x id="2"/>
 If you are not using <g id="3">UrlReference</g> make sure all the scenes you want to load are included in the build as <g id="4">root assets</g> (indicated with blue icons in the <g id="5">Asset View</g>).</source>
-<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
-If you are not using <g id="3">UrlReference</g> make sure all the scenes you want to load are included in the build as <g id="4">root assets</g> (indicated with blue icons in the <g id="5">Asset View</g>).</target>
+<target xml:lang="pt">&lt;x1\/&gt;!Note&lt;x2\/&gt;
+Se você não estiver usando <g id="3">UrlReference</g> certifique-se de que todas as cenas que você deseja carregar estão incluídas na compilação como <g id="4">root assets</g> (indicado com ícones azuis no <g id="5">Asset View</g>).</target>
 </trans-unit>
 <trans-unit id="tu8" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Scenes included in root<x id="2"/></source>
-<target xml:lang="pt"><x id="1"/>Scenes included in root<x id="2"/></target>
+<target xml:lang="pt">&lt;x1\/&gt; Cenas incluídas no root&lt;x2\/&gt;</target>
 </trans-unit>
 <trans-unit id="tu9" xml:space="preserve">
 <source xml:lang="en">To include a scene in the build, in the <g id="1">Asset View</g>, right-click the scene asset and select <g id="2">Include in build as root asset</g>.</source>
-<target xml:lang="pt">To include a scene in the build, in the <g id="1">Asset View</g>, right-click the scene asset and select <g id="2">Include in build as root asset</g>.</target>
+<target xml:lang="pt">Para incluir uma cena na compilação, no <g id="1">Asset View</g>, clique com o botão direito do mouse no ativo da cena e selecione <g id="2">Incluir na compilação como root asset</g>.</target>
 </trans-unit>
 <trans-unit id="tu10" xml:space="preserve">
 <source xml:lang="en">For more information about including assets in the build, see <g id="1">Manage assets</g>.</source>
-<target xml:lang="pt">For more information about including assets in the build, see <g id="1">Manage assets</g>.</target>
+<target xml:lang="pt">Para obter mais informações sobre incluir ativos na compilação, consulte <g id="1">Gerenciar ativos</g>.</target>
 </trans-unit>
 <trans-unit id="tu11" xml:space="preserve">
 <source xml:lang="en">For more information about scene hierarchies, see <g id="1">Manage scenes</g>.</source>
-<target xml:lang="pt">For more information about scene hierarchies, see <g id="1">Manage scenes</g>.</target>
+<target xml:lang="pt">Para obter mais informações sobre hierarquias de cena, consulte <g id="1">Gerenciar cenas</g>.</target>
 </trans-unit>
 <trans-unit id="tu12" xml:space="preserve">
 <source xml:lang="en">Unloading scenes</source>
-<target xml:lang="pt">Unloading scenes</target>
+<target xml:lang="pt">Descarregar cenas</target>
 </trans-unit>
 <trans-unit id="tu13" xml:space="preserve">
 <source xml:lang="en">Before a scene is unloaded remove it from the scene hierarchy:</source>
-<target xml:lang="pt">Before a scene is unloaded remove it from the scene hierarchy:</target>
+<target xml:lang="pt">Antes que uma cena seja descarregada, remova-a da hierarquia da cena:</target>
 </trans-unit>
 <trans-unit id="tu14" xml:space="preserve">
 <source xml:lang="en">parentScene.Children.Remove(childScene);
@@ -89,147 +89,147 @@ childScene.Parent = null;
 </source>
 <target xml:lang="pt">parentScene.Children.Remove(childScene);
 
-//Alternatively
-childScene.Parent = null;
+\/\/ Alternativamente
+criança Ceno. Pai = nulo;
 </target>
 </trans-unit>
 <trans-unit id="tu15" xml:space="preserve">
 <source xml:lang="en">Once the scene asset is no longer required make sure to unload it:</source>
-<target xml:lang="pt">Once the scene asset is no longer required make sure to unload it:</target>
+<target xml:lang="pt">Uma vez que o ativo da cena não é mais necessário certifique-se de descarregá-lo:</target>
 </trans-unit>
 <trans-unit id="tu16" xml:space="preserve">
 <source xml:lang="en">Content.Unload(childScene);
 </source>
-<target xml:lang="pt">Content.Unload(childScene);
+<target xml:lang="pt">Content.Unload (childScene);
 </target>
 </trans-unit>
 <trans-unit id="tu17" xml:space="preserve">
 <source xml:lang="en">Scene streaming script</source>
-<target xml:lang="pt">Scene streaming script</target>
+<target xml:lang="pt">Script de streaming de cenas</target>
 </trans-unit>
 <trans-unit id="tu18" xml:space="preserve">
 <source xml:lang="en">Stride also includes a scene streaming script that uses a <g id="1">trigger</g> to load scenes.</source>
-<target xml:lang="pt">Stride also includes a scene streaming script that uses a <g id="1">trigger</g> to load scenes.</target>
+<target xml:lang="pt">Stride também inclui um script de streaming de cena que usa um <g id="1">trigger</g> para carregar cenas.</target>
 </trans-unit>
 <trans-unit id="tu19" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>!Note<x id="2"/>
 The scene streaming script is included as an example. It isn't always the most appropriate way to load scenes. Feel free to modify it as much as you need.</source>
-<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
-The scene streaming script is included as an example. It isn't always the most appropriate way to load scenes. Feel free to modify it as much as you need.</target>
+<target xml:lang="pt">&lt;x1\/&gt;!Note&lt;x2\/&gt;
+O script de streaming de cena é incluído como um exemplo. Nem sempre é a maneira mais apropriada de carregar cenas. Sinta-se livre para modificá-lo tanto quanto você precisa.</target>
 </trans-unit>
 <trans-unit id="tu20" xml:space="preserve">
 <source xml:lang="en">Add a scene streaming script</source>
-<target xml:lang="pt">Add a scene streaming script</target>
+<target xml:lang="pt">Adicionar um script de streaming de cena</target>
 </trans-unit>
 <trans-unit id="tu21" xml:space="preserve">
 <source xml:lang="en">To add a scene streaming script, in the <g id="1">Asset View</g> (bottom pane by default), click <g id="2">Add asset</g> and select <g id="3">Scripts &gt; Scene streaming</g>.</source>
-<target xml:lang="pt">To add a scene streaming script, in the <g id="1">Asset View</g> (bottom pane by default), click <g id="2">Add asset</g> and select <g id="3">Scripts &gt; Scene streaming</g>.</target>
+<target xml:lang="pt">Para adicionar um script de streaming de cena, no <g id="1">Asset View</g> (pane inferior por padrão), clique em <g id="2"> Adicionar asset</g> e selecione <g id="3">Scripts &gt; Cena streaming</g>.</target>
 </trans-unit>
 <trans-unit id="tu22" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Scene streaming script<x id="2"/></source>
-<target xml:lang="pt"><x id="1"/>Scene streaming script<x id="2"/></target>
+<target xml:lang="pt">&lt;x1\/&gt;Scene streaming script&lt;x2\/&gt;</target>
 </trans-unit>
 <trans-unit id="tu23" xml:space="preserve">
 <source xml:lang="en">Game Studio adds a scene streaming script to your project assets.</source>
-<target xml:lang="pt">Game Studio adds a scene streaming script to your project assets.</target>
+<target xml:lang="pt">Game Studio adiciona um script de streaming de cena para seus ativos de projeto.</target>
 </trans-unit>
 <trans-unit id="tu24" xml:space="preserve">
 <source xml:lang="en">Use the scene streaming script</source>
-<target xml:lang="pt">Use the scene streaming script</target>
+<target xml:lang="pt">Use o script de streaming de cena</target>
 </trans-unit>
 <trans-unit id="tu25" xml:space="preserve">
 <source xml:lang="en">Create a trigger entity. When this is triggered at runtime, Stride loads the scene. For more information about creating triggers, see <g id="1">Triggers</g>.</source>
-<target xml:lang="pt">Create a trigger entity. When this is triggered at runtime, Stride loads the scene. For more information about creating triggers, see <g id="1">Triggers</g>.</target>
+<target xml:lang="pt">Criar uma entidade gatilho. Quando isso é disparado no tempo de execução, Stride carrega a cena. Para obter mais informações sobre a criação de gatilhos, consulte <g id="1">Triggers</g>.</target>
 </trans-unit>
 <trans-unit id="tu26" xml:space="preserve">
 <source xml:lang="en">How the entity is triggered is defined in the collider properties. For more information, see <g id="1">Colliders</g>.</source>
-<target xml:lang="pt">How the entity is triggered is defined in the collider properties. For more information, see <g id="1">Colliders</g>.</target>
+<target xml:lang="pt">Como a entidade é ativada é definida nas propriedades do colisor. Para mais informações, consulte <g id="1">Colliders</g>.</target>
 </trans-unit>
 <trans-unit id="tu27" xml:space="preserve">
 <source xml:lang="en">Create an entity and position it where you want the scene to load.</source>
-<target xml:lang="pt">Create an entity and position it where you want the scene to load.</target>
+<target xml:lang="pt">Crie uma entidade e posicione-a onde você deseja que a cena carregue.</target>
 </trans-unit>
 <trans-unit id="tu28" xml:space="preserve">
 <source xml:lang="en">With the entity selected, in the <g id="1">Property Grid</g> (on the righy by default), click <g id="2">Add component</g> and select the <g id="3">scene streaming</g> script.</source>
-<target xml:lang="pt">With the entity selected, in the <g id="1">Property Grid</g> (on the righy by default), click <g id="2">Add component</g> and select the <g id="3">scene streaming</g> script.</target>
+<target xml:lang="pt">Com a entidade selecionada, no <g id="1">Property Grid</g> (no righy por padrão), clique em <g id="2">Adicionar componente</g> e selecione o script <g id="3">scene streaming</g>.</target>
 </trans-unit>
 <trans-unit id="tu29" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Add script<x id="2"/></source>
-<target xml:lang="pt"><x id="1"/>Add script<x id="2"/></target>
+<target xml:lang="pt">&lt;x1\/&gt; Adicionar script&lt;x2\/&gt;</target>
 </trans-unit>
 <trans-unit id="tu30" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>!Note<x id="2"/>
 If the scene streaming script doesn't appear in the list of components, reload the assemblies.</source>
-<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
-If the scene streaming script doesn't appear in the list of components, reload the assemblies.</target>
+<target xml:lang="pt">&lt;x1\/&gt;!Note&lt;x2\/&gt;
+Se o script de streaming de cena não aparecer na lista de componentes, recarregue os conjuntos.</target>
 </trans-unit>
 <trans-unit id="tu31" xml:space="preserve">
 <source xml:lang="en">Game Studio adds the script to the entity as a component.</source>
-<target xml:lang="pt">Game Studio adds the script to the entity as a component.</target>
+<target xml:lang="pt">Game Studio adiciona o script à entidade como um componente.</target>
 </trans-unit>
 <trans-unit id="tu32" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Scene streaming properties<x id="2"/></source>
-<target xml:lang="pt"><x id="1"/>Scene streaming properties<x id="2"/></target>
+<target xml:lang="pt">&lt;x1\/&gt; Propriedades de streaming de faixa&lt;x2\/&gt;</target>
 </trans-unit>
 <trans-unit id="tu33" xml:space="preserve">
 <source xml:lang="en">Under <g id="1">Url</g>, specify the scene asset you want to load.</source>
-<target xml:lang="pt">Under <g id="1">Url</g>, specify the scene asset you want to load.</target>
+<target xml:lang="pt">Sob <g id="1">Url</g>, especifique o ativo de cena que deseja carregar.</target>
 </trans-unit>
 <trans-unit id="tu34" xml:space="preserve">
 <source xml:lang="en">Under <g id="1">Trigger</g>, specify the entity you created in step 1.</source>
-<target xml:lang="pt">Under <g id="1">Trigger</g>, specify the entity you created in step 1.</target>
+<target xml:lang="pt">Sob <g id="1">Trigger</g>, especifique a entidade criada na etapa 1.</target>
 </trans-unit>
 <trans-unit id="tu35" xml:space="preserve">
 <source xml:lang="en">At runtime, when the trigger you created in step 1 is triggered, Stride loads the scene you specified in step 4.</source>
-<target xml:lang="pt">At runtime, when the trigger you created in step 1 is triggered, Stride loads the scene you specified in step 4.</target>
+<target xml:lang="pt">No tempo de execução, quando o gatilho que você criou na etapa 1 é acionado, Stride carrega a cena que você especificou na etapa 4.</target>
 </trans-unit>
 <trans-unit id="tu36" xml:space="preserve">
 <source xml:lang="en">Scene streaming script properties</source>
-<target xml:lang="pt">Scene streaming script properties</target>
+<target xml:lang="pt">Propriedades do script de streaming de cenas</target>
 </trans-unit>
 <trans-unit id="tu37" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Scene streaming properties<x id="2"/></source>
-<target xml:lang="pt"><x id="1"/>Scene streaming properties<x id="2"/></target>
+<target xml:lang="pt">&lt;x1\/&gt; Propriedades de streaming de faixa&lt;x2\/&gt;</target>
 </trans-unit>
 <trans-unit id="tu38" xml:space="preserve">
 <source xml:lang="en">Property</source>
-<target xml:lang="pt">Property</target>
+<target xml:lang="pt">Propriedade</target>
 </trans-unit>
 <trans-unit id="tu39" xml:space="preserve">
 <source xml:lang="en">Description</source>
-<target xml:lang="pt">Description</target>
+<target xml:lang="pt">Descrição</target>
 </trans-unit>
 <trans-unit id="tu40" xml:space="preserve">
 <source xml:lang="en">Pre Load Depth</source>
-<target xml:lang="pt">Pre Load Depth</target>
+<target xml:lang="pt">Profundidade de carga</target>
 </trans-unit>
 <trans-unit id="tu41" xml:space="preserve">
 <source xml:lang="en">The point (in <g id="1">world units</g>) at which the scene begins to load. For example, if <g id="2">2.5</g>, the scene begins to load when the player is 2.5 units into the trigger area</source>
-<target xml:lang="pt">The point (in <g id="1">world units</g>) at which the scene begins to load. For example, if <g id="2">2.5</g>, the scene begins to load when the player is 2.5 units into the trigger area</target>
+<target xml:lang="pt">O ponto (em unidades <g id="1">world</g>) em que a cena começa a carregar. Por exemplo, se <g id="2">2.5</g>, a cena começa a carregar quando o jogador é 2,5 unidades na área de gatilho</target>
 </trans-unit>
 <trans-unit id="tu42" xml:space="preserve">
 <source xml:lang="en">Load Depth</source>
-<target xml:lang="pt">Load Depth</target>
+<target xml:lang="pt">Profundidade de carga</target>
 </trans-unit>
 <trans-unit id="tu43" xml:space="preserve">
 <source xml:lang="en">The point (in <g id="1">world units</g>) at which the game freezes to finish loading the scene if it hasn't loaded already. For example, if <g id="2">5</g>, the game freezes when the player is 5 units into the trigger area</source>
-<target xml:lang="pt">The point (in <g id="1">world units</g>) at which the game freezes to finish loading the scene if it hasn't loaded already. For example, if <g id="2">5</g>, the game freezes when the player is 5 units into the trigger area</target>
+<target xml:lang="pt">O ponto (em unidades <g id="1">world</g>) no qual o jogo congela para terminar de carregar a cena se ainda não tiver carregado. Por exemplo, se <g id="2">5</g>, o jogo congela quando o jogador é 5 unidades na área de gatilho</target>
 </trans-unit>
 <trans-unit id="tu44" xml:space="preserve">
 <source xml:lang="en">Priority</source>
-<target xml:lang="pt">Priority</target>
+<target xml:lang="pt">Prioridade</target>
 </trans-unit>
 <trans-unit id="tu45" xml:space="preserve">
 <source xml:lang="en">The script priority. For more information, see <g id="1">Scheduling and priorities</g></source>
-<target xml:lang="pt">The script priority. For more information, see <g id="1">Scheduling and priorities</g></target>
+<target xml:lang="pt">A prioridade do guião. Para mais informações, consulte <g id="1">Scheduling e prioridades</g></target>
 </trans-unit>
 <trans-unit id="tu46" xml:space="preserve">
 <source xml:lang="en">See also</source>
-<target xml:lang="pt">See also</target>
+<target xml:lang="pt">Ver também</target>
 </trans-unit>
 <trans-unit id="tu47" xml:space="preserve">
 <source xml:lang="en"><g id="1">Colliders</g></source>
-<target xml:lang="pt"><g id="1">Colliders</g></target>
+<target xml:lang="pt"><g id="1">Coleiras</g></target>
 </trans-unit>
 <trans-unit id="tu48" xml:space="preserve">
 <source xml:lang="en"><g id="1">Triggers</g></source>
@@ -237,23 +237,23 @@ If the scene streaming script doesn't appear in the list of components, reload t
 </trans-unit>
 <trans-unit id="tu49" xml:space="preserve">
 <source xml:lang="en"><g id="1">Create and open a scene</g></source>
-<target xml:lang="pt"><g id="1">Create and open a scene</g></target>
+<target xml:lang="pt"><g id="1">Criar e abrir uma cena</g></target>
 </trans-unit>
 <trans-unit id="tu50" xml:space="preserve">
 <source xml:lang="en"><g id="1">Navigate in the Scene Editor</g></source>
-<target xml:lang="pt"><g id="1">Navigate in the Scene Editor</g></target>
+<target xml:lang="pt"><g id="1">Navegue no Editor de Cena</g></target>
 </trans-unit>
 <trans-unit id="tu51" xml:space="preserve">
 <source xml:lang="en"><g id="1">Manage scenes</g></source>
-<target xml:lang="pt"><g id="1">Manage scenes</g></target>
+<target xml:lang="pt"><g id="1">Gerenciar cenas</g></target>
 </trans-unit>
 <trans-unit id="tu52" xml:space="preserve">
 <source xml:lang="en"><g id="1">Add entities</g></source>
-<target xml:lang="pt"><g id="1">Add entities</g></target>
+<target xml:lang="pt"><g id="1">Adicionar entidades</g></target>
 </trans-unit>
 <trans-unit id="tu53" xml:space="preserve">
 <source xml:lang="en"><g id="1">Manage entities</g></source>
-<target xml:lang="pt"><g id="1">Manage entities</g></target>
+<target xml:lang="pt"><g id="1">Gerenciar entidades</g></target>
 </trans-unit>
 </body>
 </file>

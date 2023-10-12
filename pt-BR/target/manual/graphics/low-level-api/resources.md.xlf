@@ -3,47 +3,47 @@
 <body>
 <trans-unit id="tu1" xml:space="preserve">
 <source xml:lang="en">Resource binding</source>
-<target xml:lang="pt">Resource binding</target>
+<target xml:lang="pt">Ligação de recursos</target>
 </trans-unit>
 <trans-unit id="tu2" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Advanced<x id="2"/>
 <x id="3"/>Programmer<x id="4"/></source>
-<target xml:lang="pt"><x id="1"/>Advanced<x id="2"/>
-<x id="3"/>Programmer<x id="4"/></target>
+<target xml:lang="pt">&lt;x1\/&gt; Avançado &lt;x2\/&gt;
+&lt;x3\/&gt; Programador &lt;x4\/&gt;</target>
 </trans-unit>
 <trans-unit id="tu3" xml:space="preserve">
 <source xml:lang="en">When <g id="1">drawing vertices</g> using an <g id="2">effect</g>, the shaders expect certain resources to be available, including:</source>
-<target xml:lang="pt">When <g id="1">drawing vertices</g> using an <g id="2">effect</g>, the shaders expect certain resources to be available, including:</target>
+<target xml:lang="pt">Quando vértices <g id="1">drawing</g> usando um efeito <g id="2"/>, os shaders esperam que certos recursos estejam disponíveis, incluindo:</target>
 </trans-unit>
 <trans-unit id="tu4" xml:space="preserve">
 <source xml:lang="en">textures and buffers</source>
-<target xml:lang="pt">textures and buffers</target>
+<target xml:lang="pt">texturas e buffers</target>
 </trans-unit>
 <trans-unit id="tu5" xml:space="preserve">
 <source xml:lang="en">samplers</source>
-<target xml:lang="pt">samplers</target>
+<target xml:lang="pt">amostradores</target>
 </trans-unit>
 <trans-unit id="tu6" xml:space="preserve">
 <source xml:lang="en">constant buffers</source>
-<target xml:lang="pt">constant buffers</target>
+<target xml:lang="pt">buffers constantes</target>
 </trans-unit>
 <trans-unit id="tu7" xml:space="preserve">
 <source xml:lang="en">Automatic resource binding</source>
-<target xml:lang="pt">Automatic resource binding</target>
+<target xml:lang="pt">Ligação automática de recursos</target>
 </trans-unit>
 <trans-unit id="tu8" xml:space="preserve">
 <source xml:lang="en">The @'Stride.Rendering.EffectInstance' class handles the details of enumerating these resources from a loaded effect as well as binding them.</source>
-<target xml:lang="pt">The @'Stride.Rendering.EffectInstance' class handles the details of enumerating these resources from a loaded effect as well as binding them.</target>
+<target xml:lang="pt">A classe @'Stride.Rendering.EffectInstance lida com os detalhes de enumerar esses recursos de um efeito carregado, bem como encadeá-los.</target>
 </trans-unit>
 <trans-unit id="tu9" xml:space="preserve">
 <source xml:lang="en">It exposes the @'Stride.Graphics.RootSignature', which has to be set as <g id="1">pipeline state</g>,
 and allows to fill constant buffers and bind resources based on a @'Stride.Rendering.ParameterCollection'.</source>
-<target xml:lang="pt">It exposes the @'Stride.Graphics.RootSignature', which has to be set as <g id="1">pipeline state</g>,
-and allows to fill constant buffers and bind resources based on a @'Stride.Rendering.ParameterCollection'.</target>
+<target xml:lang="pt">Expõe o @'Stride.Graphics.RootSignature', que tem de ser definido como <g id="1">pipeline state</g>,
+e permite preencher buffers constantes e ligar recursos com base em um @'Stride.Rendering.ParameterCollection'.</target>
 </trans-unit>
 <trans-unit id="tu10" xml:space="preserve">
 <source xml:lang="en"><g id="1">Code:</g> Using an EffectInstance</source>
-<target xml:lang="pt"><g id="1">Code:</g> Using an EffectInstance</target>
+<target xml:lang="pt"><g id="1">Código:</g> Usando um efeitoInstância</target>
 </trans-unit>
 <trans-unit id="tu11" xml:space="preserve">
 <source xml:lang="en">// Create a EffectInstance and use it to set up the pipeline
@@ -54,22 +54,22 @@ pipelineStateDescription.RootSignature = effectInstance.RootSignature;
 // Update constant buffers and bind resources
 effectInstance.Apply(context.GraphicsContext);
 </source>
-<target xml:lang="pt">// Create a EffectInstance and use it to set up the pipeline
-var effectInstance = new EffectInstance(EffectSystem.LoadEffect("MyEffect").WaitForResult());
-pipelineStateDescription.EffectBytecode = effectInstance.Effect.Bytecode;
-pipelineStateDescription.RootSignature = effectInstance.RootSignature;
+<target xml:lang="pt">\/\/ Criar um EffectInstance e usá-lo para configurar o pipeline
+var effectInstance = new EffectInstance (EffectSystem.LoadEffect("MyEffect").WaitForResult());
+pipelineStateDescription.EffectBytecode = efeitoInstance.Effect.Bytecode;
+pipelineStateDescription.RootSignature = efeitoInstance.RootSignature;
 
-// Update constant buffers and bind resources
-effectInstance.Apply(context.GraphicsContext);
+\/\/ Atualizar buffers constantes e vincular recursos
+efeitoInstance.Apply (context.GraphicsContext);
 </target>
 </trans-unit>
 <trans-unit id="tu12" xml:space="preserve">
 <source xml:lang="en">Manual resource binding</source>
-<target xml:lang="pt">Manual resource binding</target>
+<target xml:lang="pt">Ligação de recursos manual</target>
 </trans-unit>
 <trans-unit id="tu13" xml:space="preserve">
 <source xml:lang="en">When more optimized code is required (eg in the <g id="1">rendering pipeline</g>), constant buffer updates and resource binding can be done manually.</source>
-<target xml:lang="pt">When more optimized code is required (eg in the <g id="1">rendering pipeline</g>), constant buffer updates and resource binding can be done manually.</target>
+<target xml:lang="pt">Quando o código mais otimizado é necessário (por exemplo, no pipeline de renderização <g id="1">), atualizações de buffer constantes e vinculação de recursos podem ser feitas manualmente.</g></target>
 </trans-unit>
 </body>
 </file>

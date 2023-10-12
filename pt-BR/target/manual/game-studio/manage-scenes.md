@@ -1,113 +1,113 @@
-# Manage scenes
+# Gerenciar cenas
 
-<span class="badge text-bg-primary">Beginner</span>
-<span class="badge text-bg-success">Programmer</span>
-<span class="badge text-bg-success">Designer</span>
+<x1\/>Introdução<x2\/>
+<x3\/> Programador <x4\/>
+<x5\/>Designer<x6\/>
 
-Scenes and entities are arranged in a hierarchy, with the **root scene** at the top. This hierarchy is displayed in the **Entity Tree** in the Scene Editor on the left.
+As cenas e entidades são organizadas em uma hierarquia, com a cena **root** no topo. Esta hierarquia é exibida no **Entity Tree** no Editor de cenas à esquerda.
 
-![Scene hierarchy tree](media/scene-hierarchy-tree.png)
+<x1\/>Cerca de hierarquia cene<x2\/>
 
-The root scene contains all the scenes and entities in your game. It should contain common entities that the other scenes and entities use, such as game logic scripts.
+A cena raiz contém todas as cenas e entidades em seu jogo. Deve conter entidades comuns que as outras cenas e entidades usam, como scripts de lógica do jogo.
 
-![Scene hierarchy diagram](media/scene-hierarchy-diagram.png)
+<x1\/>Esquema hierarquizado <x2\/>
 
-Scenes are kept in different folders. This means that different people can work on them without overwriting each other's work.
+As cenas são mantidas em pastas diferentes. Isso significa que pessoas diferentes podem trabalhar nelas sem sobrescrever o trabalho um do outro.
 
-> [!Note]
-> When scenes load at runtime, their **child scenes aren't automatically loaded too**. You have to load child scenes in code. For more information, see [Load scenes](load-scenes.md).
+> <x1\/>!Note<x2\/>
+> Quando as cenas são carregadas no tempo de execução, suas cenas de **child não são carregadas automaticamente demais**. Você tem que carregar cenas de crianças em código. Para obter mais informações, consulte as cenas [Load](load-scenes.md).
 
-## Set parent and child scenes
+## Definir cenas de pais e filhos
 
-The relationship between parent and child scenes is set on the child, not the parent. In other words, child scenes know about their parent scenes, but parent scenes don't know about their child scenes.
+A relação entre os pais e as cenas infantis é definida na criança, não no pai. Em outras palavras, as cenas infantis sabem sobre suas cenas parentais, mas as cenas parentais não sabem sobre suas cenas infantis.
 
-There are several ways to make a scene a child of another scene:
+Há várias maneiras de fazer uma cena uma criança de outra cena:
 
-* In the Scene Editor **Entity Tree** (left by default), drag the scene onto the scene you want to make its parent.
+* No Editor de cena **Entity Tree** (esquerda por padrão), arraste a cena para a cena que você quer fazer seu pai.
 
-* Drag the scene from the **Asset View** (bottom by default) onto the scene you want to make its parent in the **Entity Tree**.
+* Arraste a cena do **Asset View** (bottom by default) para a cena que você deseja fazer seu pai no **Entity Tree**.
 
-* In the scene **Property Grid** (on the right by default), next to **Parent**, specify the scene you want to be the scene's parent.
+* Na cena **Property Grid** (à direita por padrão), ao lado de **Parent**, especifique a cena que deseja ser o pai da cena.
 
-   ![Properties parent scene](media/properties-parent-scene.png)
+   <x1\/>Propriedades cena pai<x2\/>
 
-## Set the default scene
+## Defina a cena padrão
 
-The **default scene** is the scene Stride loads at runtime. You can set this in the [Game Settings](game-settings.md) asset.
+O **default cena** é a cena Stride carrega no tempo de execução. Você pode definir isso no ativo [Game Settings](game-settings.md).
 
-1. In the **Solution Explorer** (the bottom-left pane by default), select the **Assets folder**.
+1. No **Solution Explorer** (o painel inferior esquerdo por padrão), selecione a pasta **Assets**.
 
-   ![Select Assets folder asset](media/select-asset-folder.png)
+   <x1\/>Select Assets pasta asset<x2\/>
 
-2. In the **Asset View** (the bottom pane by default), select the **GameSettings** asset.
+2. No **Asset View** (o painel inferior por padrão), selecione o ativo **GameSettings**.
 
-   ![Select Game Settings asset](media/select-game-settings-asset.png)
+   <x1\/>Selecionar configurações de jogo asset<x2\/>
 
-3. In the **Property Grid** (the right-hand pane by default), next to **Default Scene**, click ![Hand icon](~/manual/game-studio/media/hand-icon.png) (**Select an asset**).
+3. No **Property Grid** (o painel direito por padrão), ao lado de **Default Scene**, clique em <x1\/>Hand icon<x2\/> (**Select an asset**).
 
-   ![Set default scene](media/game-settings-default-scene.png)
+   <x1\/> Definir a cena padrão<x2\/>
 
-   The **Select an asset** window opens.
+   A janela **Selecione um ativo** abre.
 
-2. Select the default scene and click **OK**.
+2. Selecione a cena padrão e clique em **OK**.
 
-Stride loads this scene at runtime.
+Stride carrega esta cena em tempo de execução.
 
-For more information about the Game Settings asset, see [Game Settings](game-settings.md).
+Para obter mais informações sobre o ativo Configurações de Jogo, consulte [Configurações de Jogo](game-settings.md).
 
-## Set the active scene
+## Defina a cena ativa
 
-The **active scene** is the scene entities are added to when you drop them in the Scene Editor. Game Studio adds the entities as children to the active scene.
+A cena **active** é que as entidades de cena são adicionadas quando você as deixa cair no Editor de cena. Game Studio adiciona as entidades como crianças à cena ativa.
 
-To set the active scene, **Entity Tree** (left by default), right-click the scene and select **active scene**.
+Para definir a cena ativa, **Entity Tree** (esquerda por padrão), clique com o botão direito do mouse na cena e selecione ** cena ativa**.
 
-![Set active scene](media/set-active-scene.png)
+<x1\/> Set active cena<x2\/>
 
-The active scene has no effect on runtime.
+A cena ativa não tem efeito no tempo de execução.
 
-## Lock scenes and entities
+## Bloquear cenas e entidades
 
-You can lock scenes and entities so they can't be selected in the main window. This is useful when you have lots of things in your scene. You can still select scenes and entities in the Entity Tree.
+Você pode bloquear cenas e entidades para que eles não possam ser selecionados na janela principal. Isso é útil quando você tem muitas coisas em sua cena. Você ainda pode selecionar cenas e entidades na Entity Tree.
 
-To lock or unlock a scene or entity, in the Entity Tree, click the **padlock** icon.
+Para bloquear ou desbloquear uma cena ou entidade, na Árvore de Entidade, clique no ícone **padlock**.
 
-![Padlock icon](media/lock-scene-or-entity.png)
+<x1\/>Padlock icon<x2\/>
 
-> [!Tip]
-> When you lock a scene, all its child scenes and entities are locked too. To lock an entity along with its child entities, hold **Ctrl** and click the padlock icon.
+> <x1\/>!Tip<x2\/>
+> Quando você bloqueia uma cena, todas as cenas de crianças e entidades também estão bloqueadas. Para bloquear uma entidade junto com suas entidades de criança, segure **Ctrl** e clique no ícone do cadeado.
 
-Locked items have a **gold locked padlock** icon in the Entity Tree.
+Os itens bloqueados têm um ícone ** dourado bloqueado padlock** na Árvore da Entidade.
 
-![Locked entity](media/locked-entity.png)
+<x1\/>Entendimento linchado<x2\/>
 
-## Load and unload scenes in the Scene Editor
+## Carregar e descarregar cenas no Editor de cenas
 
-You can load and unload scenes (with all their child scenes and entities) in the Scene Editor. Unloading scenes in the editor is useful if, for example, you want to remove clutter from your editing view, or improve editor performance.
+Você pode carregar e descarregar cenas (com todas as cenas e entidades de crianças) no Editor de cenas. Descarregamento de cenas no editor é útil se, por exemplo, você quiser remover a desordem da sua visualização de edição ou melhorar o desempenho do editor.
 
-The screenshots below show a root scene with child scenes loaded and unloaded. The root scene contains entities that all the scenes use, including the [skybox](../graphics/textures/skyboxes-and-backgrounds.md), [scripts](../scripts/index.md), asteroids, and player character. The child scenes are sections of level.
+As capturas de tela abaixo mostram uma cena raiz com cenas de crianças carregadas e descarregadas. A cena raiz contém entidades que todas as cenas usam, incluindo o [skybox](../graphics/textures/skyboxes-and-backgrounds.md), [scripts](../scripts/index.md), asteroides e o personagem do jogador. As cenas infantis são seções de nível.
 
-![Unloaded and loaded scenes](media/scenes-unloaded.jpg)
+<x1\/> cenas carregadas e carregadas<x2\/>
 
-To load or unload a scene, in the **Scene Editor**, in the **Entity Tree** on the left, next to the scene you want to load or unload, click the **eye icon**.
+Para carregar ou descarregar uma cena, no **Scene Editor**, no **Entity Tree** à esquerda, ao lado da cena que pretende carregar ou descarregar, clique no ícone **eye**.
 
-![Load scene icon](media/load-unload-scene-icon.png)
+<x1\/>Load cena icon<x2\/>
 
-## Move a scene
+## Mover uma cena
 
-As scenes aren't entities, they don't have transform components. However, you can move a scene using its **offset** property.
+Como as cenas não são entidades, elas não têm componentes de transformação. No entanto, você pode mover uma cena usando sua propriedade **offset**.
 
-![Scene offset property](media/scene-offset.png)
+<x1\/>Scene offset property<x2\/>
 
-To move a scene at runtime, use:
+Para mover uma cena no tempo de execução, use:
 
-`myScene.Offset = new Vector3(x, y, z);`
+`myScene.Offset = novo Vector3(x, y, z);`
 
-Replace `myScene` with the name of the scene, and `x,y,z` with the XYZ coordinates you want to move the scene to.
+Substitua `myScene` com o nome da cena, e `x,y,z` com as coordenadas XYZ que você deseja mover a cena para.
 
-## See also
+## Ver também
 
-* [Create and open a scene](create-a-scene.md)
-* [Navigate in the Scene Editor](navigate-in-the-scene-editor.md)
-* [Load scenes](load-scenes.md)
-* [Add entities](add-entities.md)
-* [Manage entities](manage-entities.md)
+* [Criar e abrir uma cena](create-a-scene.md)
+* [Navegue no Editor de Cena](navigate-in-the-scene-editor.md)
+* [Cenas de carga](load-scenes.md)
+* [Adicionar entidades](add-entities.md)
+* [Gerenciar entidades](manage-entities.md)

@@ -1,178 +1,178 @@
-# Local reflections
+# Reflexões locais
 
-<span class="badge text-bg-primary">Intermediate</span>
-<span class="badge text-bg-success">Artist</span>
-<span class="badge text-bg-success">Programmer</span>
+<x1\/> Intermediário <x2\/>
+<x3\/>Artista <x4\/>
+<x5\/> Programador <x6\/>
 
-> [!Warning]
-> Currently, local reflections aren't compatible with mobile platforms and cause crashes.
+> <x1\/>!Warning<x2\/>
+> Atualmente, as reflexões locais não são compatíveis com plataformas móveis e causam falhas.
 
-> [!Note]
-> As with other depth-aware post effects, enabling local reflections nullifies MSAA (multisample anti-aliasing).
+> <x1\/>!Note<x2\/>
+> Tal como acontece com outros efeitos pós de profundidade, permitindo reflexões locais anula MSAA (multisample anti-aliasing).
 
-When **local reflections** are enabled, the scene is reflected in glossy [materials](../materials/index.md).
+Quando ** as reflexões locais** estão habilitadas, a cena é refletida em [materiais](../materials/index.md).
 
-![Local reflections](media/local-reflections.jpg)
+<x1\/> Reflexões locais<x2\/>
 
-Local reflections dramatically increase the realism of scenes. They're most obvious when they reflect bright spots onto other surfaces. The effect is especially striking in dark scenes, which have high contrast, and in conditions with lots of reflective surfaces and highlights.
+As reflexões locais aumentam drasticamente o realismo das cenas. Eles são mais óbvios quando refletem manchas brilhantes em outras superfícies. O efeito é especialmente impressionante em cenas escuras, que têm alto contraste, e em condições com muitas superfícies reflexivas e destaques.
 
-![Night reflections](media/night-reflections.jpg)
+<x1\/> Reflexões noturnas<x2\/>
 
-## Where to use local reflections
+## Onde usar reflexões locais
 
-Local reflections are a **screenspace effect**, which means they only reflect objects that are already on the screen; they don't reflect objects that are offscreen or obscured by other objects. Put simply, if the camera can't see an object at that moment, then that object isn't reflected.
+As reflexões locais são um efeito **screenspace**, o que significa que elas apenas refletem objetos que já estão na tela; eles não refletem objetos que estão fora de tela ou obscurecidos por outros objetos. Colocar simplesmente, se a câmera não consegue ver um objeto naquele momento, então esse objeto não é refletido.
 
-This means local reflections work well in enclosed areas such as corridors and rooms, but less well in open spaces, where you'd expect more of the world to be reflected. They also work best on bumpy surfaces, which hide imperfections in reflections, and less well on very glossy, mirror-like surfaces. Missing reflections are noticeable in mirrors, for example.
+Isso significa que as reflexões locais funcionam bem em áreas fechadas, como corredores e salas, mas menos bem em espaços abertos, onde você esperaria que mais do mundo fosse refletido. Eles também funcionam melhor em superfícies acidentadas, que escondem imperfeições em reflexos, e menos bem em superfícies muito brilhantes, como espelho. Reflexões perdidas são visíveis em espelhos, por exemplo.
 
-## Algorithm
+## Algoritmo
 
-Stride processes local reflections in four passes:
+Stride processa reflexões locais em quatro passes:
 
-1. The **raycast** pass performs screenspace ray tracing over the depth buffer to find intersections.
+1. O passe **raycast** executa o rastreamento de raios screenspace sobre o buffer de profundidade para encontrar interseções.
 
-2. The **resolve** pass resolves the rays and calculates the reflection color.
+2. O passe **resolve** resolve os raios e calcula a cor da reflexão.
 
-3. The **temporal** pass uses the history buffer to blur constantly between the current and previous frames. This reduces noise in the reflection, but produces an animated "jittering" effect that is sometimes noticeable. You can adjust or disable this step to create the effect you want.
+3. O passe **temporal** usa o buffer de história para borrar constantemente entre os quadros atuais e anteriores. Isso reduz o ruído na reflexão, mas produz um efeito animado "jittering" que às vezes é perceptível. Você pode ajustar ou desativar esta etapa para criar o efeito que deseja.
 
-4. The **combine** pass mixes the results of the effect with the rendered image.
+4. O passe **combine** mistura os resultados do efeito com a imagem renderizada.
 
-## Enable local reflections
+## Permitir reflexões locais
 
-To use local reflections, enable the effect in the **graphics compositor**.
+Para usar reflexões locais, permita o efeito no compositor **graphics**.
 
-1. In the **Asset View** (in the bottom pane by default), double-click the **Graphics Compositor** asset.
+1. No **Asset View** (no painel inferior por padrão), clique duas vezes no **Graphics Compositor** ativo.
 
-   ![Graphics Compositor asset](../graphics-compositor/media/graphics-compositor-asset.png)
+   <x1\/>Gráficos Compositor asset<x2\/>
 
-   The graphics compositor editor opens.
+   O editor de compositores gráficos abre.
 
-   ![Graphics Compositor editor](../graphics-compositor/media/graphics-compositor-editor.png)
+   <x1\/>Gráfico Compositor editor<x2\/>
 
-2. Select the **post-processing effects** node.
+2. Selecione o ** efeitos de pós-processamento** node.
 
-   > [!Tip]
-   > If there's no post-process effects node, right-click and select **Create > post-processing effects** to create one. On the new **forward renderer** node, on the **PostEffects** slot, click and drag a link to the **post-processing effects** node.
+   > <x1\/>!Tip<x2\/>
+   > Se não houver nenhum nó de efeitos pós-processo, clique com o botão direito e selecione **Create > efeitos pós-processamento** para criar um. No novo **forward renderer** node, no **PostEffects** slot, clique e arraste um link para o ** pós-processamento efeitos** node.
 
-   > ![Connect nodes](media/connect-nodes.png)
+   > <x1\/>Connect nós<x2\/>
 
-3. In the **Property Grid** (on the right by default), enable **Local reflections**.
+3. No **Property Grid** (à direita por padrão), habilitar **Reflexões locais**.
 
-   ![Enable local reflections](media/enable-local-reflections.png)
+   <x1\/> Habilitar reflexões locais<x2\/>
 
-After you enable local reflections, the scene is reflected in glossy materials.
-You can use the **gloss threshold** (see below) to set how glossy materials should be to reflect the scene.
+Depois de permitir reflexões locais, a cena se reflete em materiais brilhantes.
+Você pode usar o limiar **gloss** (veja abaixo) para definir como materiais brilhantes devem ser para refletir a cena.
 
-## Properties
+## Propriedades
 
-The local reflections properties affect all reflections in the scene.
+As propriedades de reflexos locais afetam todas as reflexões na cena.
 
-### Raycast properties
+### Propriedades de Raycast
 
-![Raycast properties](media/ray-trace-properties.png)
+<x1\/>Raycast properties<x2\/>
 
-#### BRDF bias
+#### Viés BRDF
 
-The reflection spread. Higher values provide finer, more mirror-like reflections. This setting has no effect on performance. The default value is `0.82`.
+O reflexo se espalhou. Os valores mais elevados proporcionam reflexos mais finos e mais parecidos com o espelho. Esta configuração não tem efeito no desempenho. O valor padrão é `0.82`.
 
-| BRDF: `0.6` | BRDF: `0.8` | BRDF: `1.0` |
+| BRDF: `0.6` | BRDF: `0` | BRDF: `1.0` |
 |---------------------|---------|---------
-| ![BRDF: 0.6](media/brdf-06.jpg) | ![BRDF: 0.8](media/brdf-08.jpg) | ![BRDF: 1.0](media/brdf-10.jpg) |
+| <x1\/>BRDF: 0.6<x2\/> | <x1\/>BRDF: 0<x2\/> | <x1\/>BRDF: 1.0<x2\/> |
 
-#### Depth resolution
+#### Resolução de profundidade
 
-Downscales the depth buffer to optimize raycast performance. Full gives better quality, but half improves performance. The default is half.
+Downscale o buffer de profundidade para otimizar o desempenho do raycast. Full dá melhor qualidade, mas metade melhora o desempenho. O padrão é metade.
 
-#### Gloss threshold
+#### Limite de brilho
 
-The amount of gloss a material must have to reflect the scene. For example, if this value is set to `0.4`, only materials with a **gloss map** value of `0.4` or above reflect the scene. The default value is `0.55`.
+A quantidade de brilho que um material deve ter que refletir a cena. Por exemplo, se esse valor é definido como `0.4`, somente materiais com um **gloss map** valor de `0.4` ou acima refletem a cena. O valor padrão é `0.55`.
 
-> [!Note]
-> If the **Invert** check box is selected in the material **micro surface** properties, the opposite is true. For example, if the reflections gloss value is set to `0.4`, only materials with a **gloss map** value of less than `0.4` reflect the scene.
+> <x1\/>!Note<x2\/>
+> Se a caixa de verificação **Invert** for selecionada nas propriedades material **micro superfície**, o oposto é verdadeiro. Por exemplo, se o valor do gloss reflexs é definido como `0.4`, somente materiais com um **gloss map** valor de menos do que `0.4` refletem a cena.
 
-For more information about gloss, see [Materials — geometry attributes](../materials/geometry-attributes.md).
+Para obter mais informações sobre o gloss, consulte [Materials — geometria atributos](../materials/geometry-attributes.md).
 
-#### Max steps
+#### Passos máximos
 
-The maximum number of raycast steps allowed per pixel. Higher values produce better results, but worse performance. The default value is `60`.
+O número máximo de etapas de transmissão permitidas por pixel. Valores mais elevados produzem melhores resultados, mas pior desempenho. O valor padrão é `60`.
 
-> [!Note]
-> This is the most important property for controlling performance.
+> <x1\/>!Note<x2\/>
+> Esta é a propriedade mais importante para controlar o desempenho.
 
-#### Resolution
+#### Resolução
 
-The raycast resolution. There are two options: **full** and **half**. Full gives better quality, but half improves performance. The default value is half.
+A resolução do raio. Existem duas opções: **full** e **half**. Full dá melhor qualidade, mas metade melhora o desempenho. O valor padrão é metade.
 
-#### Ray start bias
+#### Ray começar a viés
 
-The offset of the raycast origin. Lower values produce more correct reflection placement, but produce more artifacts. We recommend values of `0.03` or lower. The default value is `0.01`.
+O deslocamento da origem do raio. Valores mais baixos produzem um posicionamento de reflexão mais correto, mas produzem mais artefatos. Recomendamos valores de `0.03` ou inferiores. O valor padrão é `0.01`.
 
-| Start bias: `0.01` | Start bias: `0.1` |
+| Iniciar viés: `0,01` | Iniciar viés: `0.1` |
 |---------------------|---------
-| ![Start bias: 0.03](media/low-ray-start-bias.jpg) | ![Start bias: 0.1](media/high-ray-start-bias.jpg) |
-| Larger gap between reflection and box (more correct) | Narrower gap between reflection and box (less correct) |
+| <x1\/>Iniciar viés: 0,03<x2\/> | <x1\/>Iniciar viés: 0.1<x2\/> |
+| Maior lacuna entre a reflexão e a caixa (mais correta) | Intervalo mais estreito entre reflexão e caixa (menos correto) |
 
-### Resolve properties
+### Resolver propriedades
 
-![Resolve properties](media/resolve-properties.png)
+<x1\/>Resolver propriedades<x2\/>
 
-#### Resolution
+#### Resolução
 
-Calculates reflection color using raycast results. There are two options: **full** and **half**. Full gives the best results, but half improves performance. The default value is **full**.
+Calcula a cor da reflexão usando resultados do raycast. Existem duas opções: **full** e **half**. Full dá os melhores resultados, mas metade melhora o desempenho. O valor padrão é **full**.
 
-#### Samples
+#### Amostras
 
-The number of rays used to resolve the reflection color. Higher values produce less noise, but worse performance. The default value is `4`.
+O número de raios usados para resolver a cor da reflexão. Valores mais elevados produzem menos ruído, mas pior desempenho. O valor padrão é `4`.
 
-#### Reduce highlights
+#### Reduza os destaques
 
-Reduces the brightness of particularly bright areas of reflections. This has no effect on performance.
+Reduz o brilho de áreas particularmente brilhantes de reflexões. Isso não tem efeito no desempenho.
 
-| Reduce highlights: on | Reduce highlights: off |
+| Reduza os destaques: | Reduza os destaques: off |
 |---------------------|---------
-| ![Edge fade factor: 0.5](media/reduce-highlights-on.jpg) | ![Edge fade factor: 0](media/reduce-highlights-off.jpg) |
+| <x1\/>Fade de borda fator: 0,5<x2\/> | <x1\/>Fade de borda fator: 0<x2\/> |
 
-#### Edge fade factor
+#### Fade de borda fator
 
-The point at which the far edges of the reflection begin to fade. This has no effect on performance. The default value is `0.1`.
+O ponto em que as bordas distantes da reflexão começam a desaparecer. Isso não tem efeito no desempenho. O valor padrão é `0.1`.
 
-| Edge fade factor: `0` | Edge fade factor: `0.5` |
+| Fade de borda fator: `0` | Fade de borda fator: `0,5` |
 |---------------------|---------
-| ![Edge fade factor: 0](media/zero-edgefade.jpg) | ![Edge fade factor: 0.5](media/half-edgefade.jpg) |
+| <x1\/>Fade de borda fator: 0<x2\/> | <x1\/>Fade de borda fator: 0,5<x2\/> |
 
-#### Use color buffer mips
+#### Use mips de buffer de cor
 
-Downscales the input color buffer and uses blurred mipmaps when resolving the reflection color. This produces more realistic results by blurring distant parts of reflections in rough (low-gloss) materials. It also improves performance on most platforms. However, it uses more memory, so you might want to disable it on (for example) mobile platforms.
+Downscale o buffer de cor de entrada e usa mipmaps borrados ao resolver a cor da reflexão. Isso produz resultados mais realistas, borrando partes distantes de reflexões em materiais ásperos (low-gloss). Ele também melhora o desempenho na maioria das plataformas. No entanto, ele usa mais memória, então você pode querer desabilitá-lo em (por exemplo) plataformas móveis.
 
-### Temporal properties
+### Propriedades temporais
 
-![Temporal properties](media/temporal-properties.png)
+<x1\/> Propriedades temporárias<x2\/>
 
-#### Temporal effect
+#### Efeito temporal
 
-Enables the temporal pass. This reduces noise, but produces an animated "jittering" effect that is sometimes noticeable. The temporal effect is enabled by default.
+Permite o passe temporal. Isso reduz o ruído, mas produz um efeito animado "jittering" que às vezes é perceptível. O efeito temporal é ativado por padrão.
 
-| Temporal effect: on | Temporal effect: off |
+| Efeito temporal: em | Efeito temporal: off |
 |---------------------|---------
-| ![Temporal effect enabled](media/temporal-effect-enabled.jpg) | ![Temporal effect disabled](media/temporal-effect-disabled.jpg) |
+| <x1\/> Efeito temporário habilitado<x2\/> | <x1\/> Efeito temporário desativado<x2\/> |
 
-> [!Note]
-> If the temporal effect is disabled, the other temporal properties have no effect.
+> <x1\/>!Note<x2\/>
+> Se o efeito temporal for desativado, as outras propriedades temporais não têm efeito.
 
-#### Response
+#### Resposta
 
-How quickly reflections blend between the reflection in the current frame and the history buffer. Lower values produce reflections faster, but with more jittering.   Note the jittering in the reflection below:
+Quão rapidamente as reflexões se misturam entre a reflexão no quadro atual e o buffer de história. Valores mais baixos produzem reflexos mais rápidos, mas com mais agitação.   Note o jittering na reflexão abaixo:
 
-![Jittering](media/response-jiterring.gif)
+<x1\/>Jittering<x2\/>
 
-If the camera in your game doesn't move much, we recommend values closer to `1`. The default value is `0.9`.
+Se a câmera em seu jogo não se move muito, recomendamos valores mais próximos de `1`. O valor padrão é `0.9`.
 
-#### Scale
+#### Escala
 
-The intensity of the temporal effect. Lower values produce reflections faster, but with more noise. The default value is `4`.
+A intensidade do efeito temporal. Valores mais baixos produzem reflexos mais rápidos, mas com mais ruído. O valor padrão é `4`.
 
-## See also
+## Ver também
 
-* [Materials](../materials/index.md)
-* [Materials — geometry attributes](../materials/geometry-attributes.md)
-* [Post effects](index.md)
-* [Graphics compositor](../graphics-compositor/index.md)
+* [Materiais](../materials/index.md)
+* [Materiais — atributos de geometria](../materials/geometry-attributes.md)
+* [Efeitos postais](index.md)
+* [Compositor gráfico](../graphics-compositor/index.md)

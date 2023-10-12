@@ -3,157 +3,157 @@
 <body>
 <trans-unit id="tu1" xml:space="preserve">
 <source xml:lang="en">Render features</source>
-<target xml:lang="pt">Render features</target>
+<target xml:lang="pt">Render características</target>
 </trans-unit>
 <trans-unit id="tu2" xml:space="preserve">
 <source xml:lang="en">A @'Stride.Rendering.RenderFeature' is responsible for drawing a given type of @'Stride.Rendering.RenderObject'.</source>
-<target xml:lang="pt">A @'Stride.Rendering.RenderFeature' is responsible for drawing a given type of @'Stride.Rendering.RenderObject'.</target>
+<target xml:lang="pt">A @'Stride.Rendering.RenderFeature' é responsável por desenhar um determinado tipo de @'Stride. Renderização. RenderObject'.</target>
 </trans-unit>
 <trans-unit id="tu3" xml:space="preserve">
 <source xml:lang="en">Render phases</source>
-<target xml:lang="pt">Render phases</target>
+<target xml:lang="pt">Fases do Render</target>
 </trans-unit>
 <trans-unit id="tu4" xml:space="preserve">
 <source xml:lang="en">Render features have several phases.</source>
-<target xml:lang="pt">Render features have several phases.</target>
+<target xml:lang="pt">Render características têm várias fases.</target>
 </trans-unit>
 <trans-unit id="tu5" xml:space="preserve">
 <source xml:lang="en">Collect</source>
-<target xml:lang="pt">Collect</target>
+<target xml:lang="pt">Coleta</target>
 </trans-unit>
 <trans-unit id="tu6" xml:space="preserve">
 <source xml:lang="en">The <g id="1">collect</g> phase determines what needs to be processed and rendered. It's usually driven by the <g id="2">graphics compositor</g>.</source>
-<target xml:lang="pt">The <g id="1">collect</g> phase determines what needs to be processed and rendered. It's usually driven by the <g id="2">graphics compositor</g>.</target>
+<target xml:lang="pt">A fase <g id="1">collect</g> determina o que precisa ser processado e renderizado. Geralmente é conduzido pelo compositor <g id="2">graphics</g>.</target>
 </trans-unit>
 <trans-unit id="tu7" xml:space="preserve">
 <source xml:lang="en">The collect phase:</source>
-<target xml:lang="pt">The collect phase:</target>
+<target xml:lang="pt">A fase de recolha:</target>
 </trans-unit>
 <trans-unit id="tu8" xml:space="preserve">
 <source xml:lang="en">creates render views, and updating them with the most recent data such as view and projection matrices</source>
-<target xml:lang="pt">creates render views, and updating them with the most recent data such as view and projection matrices</target>
+<target xml:lang="pt">cria visualizações de renderização e atualizá-las com os dados mais recentes, como visualização e projeção matrizes</target>
 </trans-unit>
 <trans-unit id="tu9" xml:space="preserve">
 <source xml:lang="en">creates and setting up render stages</source>
-<target xml:lang="pt">creates and setting up render stages</target>
+<target xml:lang="pt">cria e configura etapas de renderização</target>
 </trans-unit>
 <trans-unit id="tu10" xml:space="preserve">
 <source xml:lang="en">performes visibility culling and sorting</source>
-<target xml:lang="pt">performes visibility culling and sorting</target>
+<target xml:lang="pt">executa sinalização e classificação de visibilidade</target>
 </trans-unit>
 <trans-unit id="tu11" xml:space="preserve">
 <source xml:lang="en">Extract</source>
-<target xml:lang="pt">Extract</target>
+<target xml:lang="pt">Extrato</target>
 </trans-unit>
 <trans-unit id="tu12" xml:space="preserve">
 <source xml:lang="en">The <g id="1">extract</g> phase copies data from game states of previously collected objects to short-lived render-specific structures. It's usually driven by the @'Stride.Rendering.RenderSystem' and @'Stride.Rendering.RenderFeature's.</source>
-<target xml:lang="pt">The <g id="1">extract</g> phase copies data from game states of previously collected objects to short-lived render-specific structures. It's usually driven by the @'Stride.Rendering.RenderSystem' and @'Stride.Rendering.RenderFeature's.</target>
+<target xml:lang="pt">A fase <g id="1">extract</g> copia dados de estados de jogo de objetos coletados anteriormente para estruturas específicas de renderização de curta duração. Normalmente é conduzido pelo @'Stride. Renderização. RenderSystem' e @'Stride. Renderização. RenderFeature's.</target>
 </trans-unit>
 <trans-unit id="tu13" xml:space="preserve">
 <source xml:lang="en">This should be as fast as possible and avoid heavy computations since game update and scripts are blocked. Heavy computations should be deferred to <g id="1">Prepare</g>.</source>
-<target xml:lang="pt">This should be as fast as possible and avoid heavy computations since game update and scripts are blocked. Heavy computations should be deferred to <g id="1">Prepare</g>.</target>
+<target xml:lang="pt">Isso deve ser o mais rápido possível e evitar computações pesadas desde a atualização do jogo e scripts são bloqueados. Computações pesadas devem ser diferidas para <g id="1">Prepare</g>.</target>
 </trans-unit>
 <trans-unit id="tu14" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>!Note<x id="2"/>
 Currently, Stride doesn't parallelize game updates and scripts, so they won't be resumed until the <g id="3">prepare</g> and <g id="4">draw</g> phases are finished.</source>
-<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
-Currently, Stride doesn't parallelize game updates and scripts, so they won't be resumed until the <g id="3">prepare</g> and <g id="4">draw</g> phases are finished.</target>
+<target xml:lang="pt">&lt;x1\/&gt;!Note&lt;x2\/&gt;
+Atualmente, o Stride não paralelo às atualizações e scripts do jogo, então eles não serão retomados até que as fases <g id="3">prepare</g> e <g id="4">draw</g> sejam concluídas.</target>
 </trans-unit>
 <trans-unit id="tu15" xml:space="preserve">
 <source xml:lang="en">Example tasks:</source>
-<target xml:lang="pt">Example tasks:</target>
+<target xml:lang="pt">Exemplo de tarefas:</target>
 </trans-unit>
 <trans-unit id="tu16" xml:space="preserve">
 <source xml:lang="en">copying object matrices</source>
-<target xml:lang="pt">copying object matrices</target>
+<target xml:lang="pt">cópia de matrizes de objetos</target>
 </trans-unit>
 <trans-unit id="tu17" xml:space="preserve">
 <source xml:lang="en">copying material parameters</source>
-<target xml:lang="pt">copying material parameters</target>
+<target xml:lang="pt">parâmetros do material de cópia</target>
 </trans-unit>
 <trans-unit id="tu18" xml:space="preserve">
 <source xml:lang="en">Prepare</source>
-<target xml:lang="pt">Prepare</target>
+<target xml:lang="pt">Preparem-se</target>
 </trans-unit>
 <trans-unit id="tu19" xml:space="preserve">
 <source xml:lang="en">The <g id="1">prepare</g> phase prepares GPU resources and performs heavy computations. This is usually driven by the @'Stride.Rendering.RenderSystem' and @'Stride.Rendering.RenderFeature's.</source>
-<target xml:lang="pt">The <g id="1">prepare</g> phase prepares GPU resources and performs heavy computations. This is usually driven by the @'Stride.Rendering.RenderSystem' and @'Stride.Rendering.RenderFeature's.</target>
+<target xml:lang="pt">A fase <g id="1">prepare</g> prepara recursos de GPU e executa computação pesada. Isso geralmente é conduzido pelo @'Stride. Renderização. RenderSystem' e @'Stride. Renderização. RenderFeature's.</target>
 </trans-unit>
 <trans-unit id="tu20" xml:space="preserve">
 <source xml:lang="en">Example tasks:</source>
-<target xml:lang="pt">Example tasks:</target>
+<target xml:lang="pt">Exemplo de tarefas:</target>
 </trans-unit>
 <trans-unit id="tu21" xml:space="preserve">
 <source xml:lang="en">computing lighting data and structures</source>
-<target xml:lang="pt">computing lighting data and structures</target>
+<target xml:lang="pt">dados de iluminação de computação e estruturas</target>
 </trans-unit>
 <trans-unit id="tu22" xml:space="preserve">
 <source xml:lang="en">filling constant buffers and resource tables</source>
-<target xml:lang="pt">filling constant buffers and resource tables</target>
+<target xml:lang="pt">enchendo buffers constantes e tabelas de recursos</target>
 </trans-unit>
 <trans-unit id="tu23" xml:space="preserve">
 <source xml:lang="en">Draw</source>
-<target xml:lang="pt">Draw</target>
+<target xml:lang="pt">Desenho</target>
 </trans-unit>
 <trans-unit id="tu24" xml:space="preserve">
 <source xml:lang="en">The <g id="1">draw</g> phase fills the GPU command list.</source>
-<target xml:lang="pt">The <g id="1">draw</g> phase fills the GPU command list.</target>
+<target xml:lang="pt">A fase <g id="1">draw</g> preenche a lista de comandos GPU.</target>
 </trans-unit>
 <trans-unit id="tu25" xml:space="preserve">
 <source xml:lang="en">Example tasks:</source>
-<target xml:lang="pt">Example tasks:</target>
+<target xml:lang="pt">Exemplo de tarefas:</target>
 </trans-unit>
 <trans-unit id="tu26" xml:space="preserve">
 <source xml:lang="en">setting up render textures</source>
-<target xml:lang="pt">setting up render textures</target>
+<target xml:lang="pt">configurando texturas de renderização</target>
 </trans-unit>
 <trans-unit id="tu27" xml:space="preserve">
 <source xml:lang="en">drawing combinations of render stage with render view.</source>
-<target xml:lang="pt">drawing combinations of render stage with render view.</target>
+<target xml:lang="pt">combinações de desenho de fase de renderização com vista de renderização.</target>
 </trans-unit>
 <trans-unit id="tu28" xml:space="preserve">
 <source xml:lang="en">Example</source>
-<target xml:lang="pt">Example</target>
+<target xml:lang="pt">Exemplo</target>
 </trans-unit>
 <trans-unit id="tu29" xml:space="preserve">
 <source xml:lang="en">A typical example of views and stages created during <g id="1">collect</g> phase, used during the <g id="2">draw</g> phase:</source>
-<target xml:lang="pt">A typical example of views and stages created during <g id="1">collect</g> phase, used during the <g id="2">draw</g> phase:</target>
+<target xml:lang="pt">Um exemplo típico de visões e estágios criados durante a fase <g id="1">collect</g>, usado durante a fase <g id="2">draw</g>:</target>
 </trans-unit>
 <trans-unit id="tu30" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>media/render-features-draw-example.png<x id="2"/></source>
-<target xml:lang="pt"><x id="1"/>media/render-features-draw-example.png<x id="2"/></target>
+<target xml:lang="pt">&lt;x1\/&gt;media\/render-features-draw-example.png&lt;x2\/&gt;</target>
 </trans-unit>
 <trans-unit id="tu31" xml:space="preserve">
 <source xml:lang="en">Pipeline processors</source>
-<target xml:lang="pt">Pipeline processors</target>
+<target xml:lang="pt">Processadores de tubulação</target>
 </trans-unit>
 <trans-unit id="tu32" xml:space="preserve">
 <source xml:lang="en"><g id="1">Pipeline processors</g> are classes called when creating the <g id="2">pipeline state</g>. This lets you do things such as enable alpha blending or wireframe rendering in a specific render stage.</source>
-<target xml:lang="pt"><g id="1">Pipeline processors</g> are classes called when creating the <g id="2">pipeline state</g>. This lets you do things such as enable alpha blending or wireframe rendering in a specific render stage.</target>
+<target xml:lang="pt"><g id="1"> Os processadores pipeline</g> são classes chamadas ao criar o estado <g id="2">pipeline</g>. Isso permite que você faça coisas como permitir a mistura alfa ou renderização de wireframe em uma etapa de renderização específica.</target>
 </trans-unit>
 <trans-unit id="tu33" xml:space="preserve">
 <source xml:lang="en">Stride includes several predefined pipeline processors. You can also create your own.</source>
-<target xml:lang="pt">Stride includes several predefined pipeline processors. You can also create your own.</target>
+<target xml:lang="pt">O Stride inclui vários processadores de pipeline predefinidos. Você também pode criar seu próprio.</target>
 </trans-unit>
 <trans-unit id="tu34" xml:space="preserve">
 <source xml:lang="en">See also</source>
-<target xml:lang="pt">See also</target>
+<target xml:lang="pt">Ver também</target>
 </trans-unit>
 <trans-unit id="tu35" xml:space="preserve">
 <source xml:lang="en"><g id="1">Rendering pipeline</g></source>
-<target xml:lang="pt"><g id="1">Rendering pipeline</g></target>
+<target xml:lang="pt"><g id="1">Oleoduto de renderização</g></target>
 </trans-unit>
 <trans-unit id="tu36" xml:space="preserve">
 <source xml:lang="en"><g id="1">Render stages</g></source>
-<target xml:lang="pt"><g id="1">Render stages</g></target>
+<target xml:lang="pt"><g id="1">Etapas de renderização</g></target>
 </trans-unit>
 <trans-unit id="tu37" xml:space="preserve">
 <source xml:lang="en"><g id="1">Effects and shaders</g></source>
-<target xml:lang="pt"><g id="1">Effects and shaders</g></target>
+<target xml:lang="pt"><g id="1">Efeitos e shaders</g></target>
 </trans-unit>
 <trans-unit id="tu38" xml:space="preserve">
 <source xml:lang="en"><g id="1">Graphics compositor</g></source>
-<target xml:lang="pt"><g id="1">Graphics compositor</g></target>
+<target xml:lang="pt"><g id="1">Compositor gráfico</g></target>
 </trans-unit>
 </body>
 </file>

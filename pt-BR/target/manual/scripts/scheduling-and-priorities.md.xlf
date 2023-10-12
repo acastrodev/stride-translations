@@ -3,87 +3,87 @@
 <body>
 <trans-unit id="tu1" xml:space="preserve">
 <source xml:lang="en">Scheduling and priorities</source>
-<target xml:lang="pt">Scheduling and priorities</target>
+<target xml:lang="pt">Programação e prioridades</target>
 </trans-unit>
 <trans-unit id="tu2" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Beginner<x id="2"/>
 <x id="3"/>Programmer<x id="4"/></source>
-<target xml:lang="pt"><x id="1"/>Beginner<x id="2"/>
-<x id="3"/>Programmer<x id="4"/></target>
+<target xml:lang="pt">&lt;x1\/&gt;Introdução&lt;x2\/&gt;
+&lt;x3\/&gt; Programador &lt;x4\/&gt;</target>
 </trans-unit>
 <trans-unit id="tu3" xml:space="preserve">
 <source xml:lang="en">Stride doesn't run scripts simultaneously; they run one at a time. Where scripts depend on each other, you should make sure they run in the correct order by giving them priorities.</source>
-<target xml:lang="pt">Stride doesn't run scripts simultaneously; they run one at a time. Where scripts depend on each other, you should make sure they run in the correct order by giving them priorities.</target>
+<target xml:lang="pt">Stride não executa scripts simultaneamente; eles executam um de cada vez. Onde os scripts dependem uns dos outros, você deve ter certeza de que eles funcionam na ordem correta, dando-lhes prioridades.</target>
 </trans-unit>
 <trans-unit id="tu4" xml:space="preserve">
 <source xml:lang="en">Priorities apply to all kinds of scripts. This means that, for example, <g id="1">synchronous and asynchronous scripts</g> don't have separate priority lists. They both join the same queue.</source>
-<target xml:lang="pt">Priorities apply to all kinds of scripts. This means that, for example, <g id="1">synchronous and asynchronous scripts</g> don't have separate priority lists. They both join the same queue.</target>
+<target xml:lang="pt">Prioridades aplicam-se a todos os tipos de scripts. Isso significa que, por exemplo, <g id="1">synchronous e assíncronos scripts</g> não têm listas de prioridade separadas. Ambos se juntam à mesma fila.</target>
 </trans-unit>
 <trans-unit id="tu5" xml:space="preserve">
 <source xml:lang="en">Scripts with lower priority numbers have higher priorities. For example, a script with priority 1 runs before a script with priority 2, and a script with priority -1 runs before a script with priority 1. By default, scripts have a priority of 0.</source>
-<target xml:lang="pt">Scripts with lower priority numbers have higher priorities. For example, a script with priority 1 runs before a script with priority 2, and a script with priority -1 runs before a script with priority 1. By default, scripts have a priority of 0.</target>
+<target xml:lang="pt">Os scripts com números de prioridade mais baixos têm prioridades mais altas. Por exemplo, um script com prioridade 1 é executado antes de um script com prioridade 2, e um script com prioridade -1 é executado antes de um script com prioridade 1. Por padrão, os scripts têm uma prioridade de 0.</target>
 </trans-unit>
 <trans-unit id="tu6" xml:space="preserve">
 <source xml:lang="en">If scripts have the same priority, the order in which Stride runs them isn't deterministic. You might give scripts the same priority if you don't care which order they run in.</source>
-<target xml:lang="pt">If scripts have the same priority, the order in which Stride runs them isn't deterministic. You might give scripts the same priority if you don't care which order they run in.</target>
+<target xml:lang="pt">Se os scripts têm a mesma prioridade, a ordem em que Stride os executa não é determinística. Você pode dar scripts a mesma prioridade se você não se importa em qual ordem eles funcionam.</target>
 </trans-unit>
 <trans-unit id="tu7" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>!Note<x id="2"/>
 Currently, there's no way to see a list of priorities in one place. You have to set each priority of each script individually in the script component properties.</source>
-<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
-Currently, there's no way to see a list of priorities in one place. You have to set each priority of each script individually in the script component properties.</target>
+<target xml:lang="pt">&lt;x1\/&gt;!Note&lt;x2\/&gt;
+Atualmente, não há como ver uma lista de prioridades em um só lugar. Você tem que definir cada prioridade de cada script individualmente nas propriedades do componente de script.</target>
 </trans-unit>
 <trans-unit id="tu8" xml:space="preserve">
 <source xml:lang="en">Set a script priority</source>
-<target xml:lang="pt">Set a script priority</target>
+<target xml:lang="pt">Definir uma prioridade de script</target>
 </trans-unit>
 <trans-unit id="tu9" xml:space="preserve">
 <source xml:lang="en">Priorities aren't set in the scripts themselves. Instead, they're set in the script component properties on the entity the script is attached to.</source>
-<target xml:lang="pt">Priorities aren't set in the scripts themselves. Instead, they're set in the script component properties on the entity the script is attached to.</target>
+<target xml:lang="pt">As prioridades não são definidas nos próprios scripts. Em vez disso, eles são definidos nas propriedades do componente de script na entidade a que o script é anexado.</target>
 </trans-unit>
 <trans-unit id="tu10" xml:space="preserve">
 <source xml:lang="en">Attach the script to an entity. For information about how to do this, see <g id="1">Use a script</g>.</source>
-<target xml:lang="pt">Attach the script to an entity. For information about how to do this, see <g id="1">Use a script</g>.</target>
+<target xml:lang="pt">Anexar o script a uma entidade. Para obter informações sobre como fazer isso, veja <g id="1">Use um script</g>.</target>
 </trans-unit>
 <trans-unit id="tu11" xml:space="preserve">
 <source xml:lang="en">With the entity selected, in the <g id="1">Property Grid</g>, under the <g id="2">script component properties</g>, set the <g id="3">Priority</g> you want the script to have.</source>
-<target xml:lang="pt">With the entity selected, in the <g id="1">Property Grid</g>, under the <g id="2">script component properties</g>, set the <g id="3">Priority</g> you want the script to have.</target>
+<target xml:lang="pt">Com a entidade selecionada, no <g id="1">Property Grid</g>, sob as propriedades do componente <g id="2">script</g>, defina o <g id="3">Priority</g> você quer que o script tenha.</target>
 </trans-unit>
 <trans-unit id="tu12" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Set script priority<x id="2"/></source>
-<target xml:lang="pt"><x id="1"/>Set script priority<x id="2"/></target>
+<target xml:lang="pt">&lt;x1\/&gt;Set script prioridade&lt;x2\/&gt;</target>
 </trans-unit>
 <trans-unit id="tu13" xml:space="preserve">
 <source xml:lang="en">See also</source>
-<target xml:lang="pt">See also</target>
+<target xml:lang="pt">Ver também</target>
 </trans-unit>
 <trans-unit id="tu14" xml:space="preserve">
 <source xml:lang="en"><g id="1">Types of script</g></source>
-<target xml:lang="pt"><g id="1">Types of script</g></target>
+<target xml:lang="pt"><g id="1">Tipos de script</g></target>
 </trans-unit>
 <trans-unit id="tu15" xml:space="preserve">
 <source xml:lang="en"><g id="1">Create a script</g></source>
-<target xml:lang="pt"><g id="1">Create a script</g></target>
+<target xml:lang="pt"><g id="1">Criar um script</g></target>
 </trans-unit>
 <trans-unit id="tu16" xml:space="preserve">
 <source xml:lang="en"><g id="1">Use a script</g></source>
-<target xml:lang="pt"><g id="1">Use a script</g></target>
+<target xml:lang="pt"><g id="1">Use um script</g></target>
 </trans-unit>
 <trans-unit id="tu17" xml:space="preserve">
 <source xml:lang="en"><g id="1">Public properties and fields</g></source>
-<target xml:lang="pt"><g id="1">Public properties and fields</g></target>
+<target xml:lang="pt"><g id="1">Propriedades e campos públicos</g></target>
 </trans-unit>
 <trans-unit id="tu18" xml:space="preserve">
 <source xml:lang="en"><g id="1">Events</g></source>
-<target xml:lang="pt"><g id="1">Events</g></target>
+<target xml:lang="pt"><g id="1">Eventos</g></target>
 </trans-unit>
 <trans-unit id="tu19" xml:space="preserve">
 <source xml:lang="en"><g id="1">Debugging</g></source>
-<target xml:lang="pt"><g id="1">Debugging</g></target>
+<target xml:lang="pt"><g id="1">Depuração</g></target>
 </trans-unit>
 <trans-unit id="tu20" xml:space="preserve">
 <source xml:lang="en"><g id="1">Preprocessor variables</g></source>
-<target xml:lang="pt"><g id="1">Preprocessor variables</g></target>
+<target xml:lang="pt"><g id="1">Variáveis de pré-processamento</g></target>
 </trans-unit>
 </body>
 </file>

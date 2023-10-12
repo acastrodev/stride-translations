@@ -1,35 +1,35 @@
-# Ambient lights
+# Luzes ambientais
 
-<span class="badge text-bg-primary">Beginner</span>
-<span class="badge text-bg-success">Designer</span>
-<span class="badge text-bg-success">Artist</span>
+<x1\/>Introdução<x2\/>
+<x3\/>Designer<x4\/>
+<x5\/>Artista <x6\/>
 
-**Ambient lights** are uniform lights that illuminate the entire scene. Because they don't come from any specific direction or source, ambient lights illuminate everything equally, even objects in shadow or obscured by other objects. They don't cast shadows.
+** Luzes abrangentes** são luzes uniformes que iluminam toda a cena. Porque eles não vêm de qualquer direção ou fonte específica, as luzes ambiente iluminam tudo igualmente, mesmo objetos na sombra ou obscurecidos por outros objetos. Eles não lançam sombras.
 
-Ambient lights aren't realistic light sources. Instead, they contribute to the overall brightness and aesthetic of a scene.
+As luzes ambiente não são fontes de luz realistas. Em vez disso, eles contribuem para o brilho geral e estética de uma cena.
 
-![media/AmbientLightOverview.png](media/AmbientLightOverview.png)
+<x1\/>media\/AmbientLightOverview.png<x2\/>
 
-An example of an object lit uniformly with ambient lighting (with a pure diffuse material):
+Um exemplo de um objeto iluminado uniformemente com iluminação ambiente (com um material difuso puro):
 
-![media/AmbientLight.png](media/AmbientLight.png)
+<x1\/>media\/AmbientLight.png<x2\/>
 
-## Properties
+## Propriedades
 
-![media/AmbientLightProperties.png](media/AmbientLightProperties.png)
+<x1\/>media\/AmbientLightProperties.png<x2\/>
 
-| Property | Description |
+| Propriedade | Descrição |
 | ------------ | --------------------
-| Color | The color of the light (RGB) |
-| Intensity | The intensity of the light. The color is multiplied by this value before being sent to the shader. Note: negative values produce darkness and have unpredictable effects |
-| Culling Mask | Which entity groups are affected by the light. By default, all groups are affected |
+| Cor | A cor da luz (RGB) |
+| Intensidade | A intensidade da luz. A cor é multiplicada por este valor antes de ser enviado para o shader. Nota: valores negativos produzem escuridão e têm efeitos imprevisíveis |
+| Máscara de Culing | Quais grupos de entidades são afetados pela luz. Por padrão, todos os grupos são afetados |
 
-## See also
+## Ver também
 
-* [Add a light](add-a-light.md)
-* [Point lights](point-lights.md)
-* [Directional lights](directional-lights.md)
-* [Skybox lights](skybox-lights.md)
-* [Spot lights](spot-lights.md)
-* [Light probes](light-probes.md)
-* [Shadows](shadows.md)
+* [Adicionar uma luz](add-a-light.md)
+* [Luzes de ponto](point-lights.md)
+* [Luzes direcionais](directional-lights.md)
+* [Luzes Skybox](skybox-lights.md)
+* [Luzes do ponto](spot-lights.md)
+* [Sondas de luz](light-probes.md)
+* [Sombras](shadows.md)

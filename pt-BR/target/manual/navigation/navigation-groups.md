@@ -1,51 +1,51 @@
-# Navigation groups
+# Grupos de navegação
 
-<span class="badge text-bg-primary">Beginner</span>
-<span class="badge text-bg-success">Level designer</span>
-<span class="badge text-bg-success">Programmer</span>
+<x1\/>Introdução<x2\/>
+<x3\/> Designer de nível <x4\/>
+<x5\/> Programador <x6\/>
 
-**Navigation groups** define different navigation properties for the entities you add to them. You define navigation groups in the project **game settings**.
+** Grupos de navegação** definem diferentes propriedades de navegação para as entidades que você adiciona a elas. Você define grupos de navegação no projeto **game settings**.
 
-You can create different navigation groups for different kinds of entity. For example, if your game features vehicles controlled by scripts, you might create different navigation groups for different sizes of vehicle, each with different properties: a car group, a bus group, a motorcycle group, and so on.
+Você pode criar diferentes grupos de navegação para diferentes tipos de entidade. Por exemplo, se o seu jogo possui veículos controlados por scripts, você pode criar diferentes grupos de navegação para diferentes tamanhos de veículo, cada um com diferentes propriedades: um grupo de carros, um grupo de ônibus, um grupo de motocicletas e assim por diante.
 
-## Create a navigation group
+## Criar um grupo de navegação
 
-1. In the **Solution Explorer** (the bottom-left pane by default), select the **Assets folder**.
+1. No **Solution Explorer** (o painel inferior esquerdo por padrão), selecione a pasta **Assets**.
 
-   ![Select Assets folder asset](media/select-asset-folder.png)
+   <x1\/>Select Assets pasta asset<x2\/>
 
-2. In the **Asset View** (the bottom pane by default), select the **Game Settings** asset.
+2. No **Asset View** (o painel inferior por padrão), selecione o ativo **Game Settings**.
 
-   ![Select Game Settings asset](media/select-game-settings-asset.png)
+   <x1\/>Selecionar configurações de jogo asset<x2\/>
 
-3. In the **Property Grid** (the right-hand pane by default), expand **Navigation Settings**.
+3. No **Property Grid** (o painel direito por padrão), expanda **Configurações de navegação**.
 
-   ![Game settings](media/navigation-settings.png)
+   <x1\/> Configurações do jogo <x2\/>
 
-4. Next to **Groups**, click ![Green plus button](~/manual/game-studio/media/green-plus-icon.png) (**Add**).
+4. Ao lado de **Groups**, clique em <x1\/>Green plus button<x2\/> (**Add**).
 
-   Game Studio adds a new item to the list of navigation groups.
+   Game Studio adiciona um novo item à lista de grupos de navegação.
 
-   ![Navigation group properties](media/navigation-group-properties.png)
+   <x1\/> Propriedades do grupo de navegação<x2\/>
 
-5. Set the properties for the navigation group. Entities you add to this group use these properties.
+5. Defina as propriedades para o grupo de navegação. As entidades que você adicionar a este grupo usam essas propriedades.
 
-## Navigation group properties
+## Propriedades do grupo de navegação
 
-In most cases, the navigation group properties should approximately match the properties in the [character component](../physics/characters.md) of the entities in the group, if they have one.
+Na maioria dos casos, as propriedades do grupo de navegação devem corresponder aproximadamente às propriedades no componente [caracter](../physics/characters.md) das entidades do grupo, se tiverem uma.
 
-| Property | Description |
+| Propriedade | Descrição |
 |----------------------|------------
-| Item | The name of the group |
-| Height | The height of the entities in this group. Entities can't enter areas with ceilings lower than this value |
-| Maximum climb height | The maximum height that entities in this group can climb |
-| Maximum slope | The maximum incline (in degrees) that entities in this group can climb. Entities can't go up or down slopes higher than this value. In most cases, this should be approximately the same value as the **max slope** property in the [character component](../physics/characters.md) of the entities in this group, if they have one. |
-| Radius | The larger this value, the larger the area of the navigation mesh entities use. Entities can't pass through gaps of less than twice the radius. |
+| Item | O nome do grupo |
+| Altura | A altura das entidades neste grupo. As entidades não podem entrar em áreas com tectos inferiores a este valor |
+| Altura de escalada máxima | A altura máxima que as entidades deste grupo podem subir |
+| Inclinação máxima | A inclinação máxima (em graus) que as entidades neste grupo podem subir. As entidades não podem subir ou descer declives superiores a este valor. Na maioria dos casos, este deve ser aproximadamente o mesmo valor que a propriedade **max inclinação** no componente [caracter](../physics/characters.md) das entidades neste grupo, se tiverem uma. |
+| Radius | Quanto maior este valor, maior a área das entidades de malha de navegação usar. As entidades não podem passar por lacunas de menos do do dobro do raio. |
 
-## See also
+## Ver também
 
-* [Navigation meshes](navigation-meshes.md)
-* [Navigation bounding boxes](navigation-bounding-boxes.md)
-* [Navigation components](navigation-components.md)
-* [Dynamic navigation](dynamic-navigation.md)
-* [Physics — Characters](../physics/characters.md)
+* [Malhas de navegação](navigation-meshes.md)
+* [Caixas de ligação de navegação](navigation-bounding-boxes.md)
+* [Componentes de navegação](navigation-components.md)
+* [Navegação dinâmica](dynamic-navigation.md)
+* [Física — Personagens](../physics/characters.md)

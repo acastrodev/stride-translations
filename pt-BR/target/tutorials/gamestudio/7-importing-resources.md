@@ -1,12 +1,12 @@
-# Importing resources
+# Recursos de importação
 
-In this tutorial, we will learn how to import resources into Stride game studio using two different methods:
+Neste tutorial, aprenderemos como importar recursos para o estúdio de jogo Stride usando dois métodos diferentes:
 
-- Creating an asset via the Asset View, or
-- Dragging and dropping files directly from a folder
+- Criando um ativo através do Asset View, ou
+- Dragging e soltar arquivos diretamente de uma pasta
 
-We also learn how important it is that we keep our resources in a projects resources folder, rather than having them scattered across our computer.
+Também aprendemos como é importante manter nossos recursos em uma pasta de recursos de projetos, em vez de tê-los espalhados em nosso computador.
 
-[!INCLUDE [stride-studio-note](../../includes/game-studio-xenko-note.md)]
+[! INCLUÍDO [stride-studio-note](../../includes/game-studio-xenko-note.md)]
 
-> [!Video https://www.youtube.com/embed/benbkZSHZ8s]
+> [!Vídeo https://www.youtube.com/embed/benbkZSHZ8s]

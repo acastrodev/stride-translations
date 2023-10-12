@@ -1,44 +1,44 @@
-# Automatic shader stage input/output
+# Entrada\/saída automática do palco do shader
 
-<span class="badge text-bg-primary">Advanced</span>
-<span class="badge text-bg-success">Programmer</span>
+<x1\/> Avançado <x2\/>
+<x3\/> Programador <x4\/>
 
-When you write a HLSL shader, you have to precisely define your vertex attributes and carefully pass them across the stage of your final shader.
+Quando você escreve um shader HLSL, você tem que definir precisamente seus atributos de vértice e passá-los cuidadosamente através do estágio do seu shader final.
 
-Here's an example of a simple HLSL shader that uses the color from the vertex.
+Aqui está um exemplo de um shader HLSL simples que usa a cor do vértice.
 
 ```cs
-struct VS_IN
-{
-	float4 pos : POSITION;
-	float4 col : COLOR;
+estranho VS_IN
+(
+	: POSIÇÃO;
+	flutuante4 col : COR;
 };
 
-struct PS_IN
-{
-	float4 pos : SV_POSITION;
-	float4 col : COLOR;
+pS_IN
+(
+	: SV_POSITION;
+	flutuante4 col : COR;
 };
 
-PS_IN VS( VS_IN input )
-{
-	PS_IN output = (PS_IN)0;
+PS_IN VS( Entrada VS_IN )
+(
+	Saída PS_IN = (PS_IN)0;
 
 	output.pos = input.pos;
 	output.col = input.col;
 
-	return output;
+	saída de retorno;
 }
 
-float4 PS( PS_IN input ) : SV_Target
-{
-	return input.col;
+float4 PS( PS_IN input) : SV_Target
+(
+	retornar input.col;
 }
 
-technique10 Render
-{
-	pass P0
-	{
+técnica10 Renderização
+(
+	passe P0
+	(
 		SetGeometryShader( 0 );
 		SetVertexShader( CompileShader( vs_4_0, VS() ) );
 		SetPixelShader( CompileShader( ps_4_0, PS() ) );
@@ -46,45 +46,45 @@ technique10 Render
 }
 ```
 
-Imagine you want to add a normal to your model and modify the resulting color accordingly. You have to modify the code that computes the color and adjust the intermediate structures to pass the attribute from the vertex to the pixel shader. You also have to be careful of the semantics you use.
+Imagine que você deseja adicionar um normal ao seu modelo e modificar a cor resultante de acordo. Você tem que modificar o código que computa a cor e ajustar as estruturas intermediárias para passar o atributo do vértice ao shader do pixel. Você também tem que ter cuidado com a semântica que você usa.
 
-**Code:** Modified HLSL shader
+** Código:** Modificado HLSL shader
 
 ```cs
-struct VS_IN
-{
-	float4 pos : POSITION;
-	float4 col : COLOR;
+estranho VS_IN
+(
+	: POSIÇÃO;
+	flutuante4 col : COR;
 	float3 normal : NORMAL;
 };
 
-struct PS_IN
-{
-	float4 pos : SV_POSITION;
-	float4 col : COLOR;
+pS_IN
+(
+	: SV_POSITION;
+	flutuante4 col : COR;
 	float3 normal : TEXCOORD0;
 };
 
-PS_IN VS( VS_IN input )
-{
-	PS_IN output = (PS_IN)0;
+PS_IN VS( Entrada VS_IN )
+(
+	Saída PS_IN = (PS_IN)0;
 
 	output.pos = input.pos;
 	output.col = input.col;
 	output.normal = input.normal;
 
-	return output;
+	saída de retorno;
 }
 
-float4 PS( PS_IN input ) : SV_Target
-{
-	return input.col * max(input.normal.z, 0.0);
+float4 PS( PS_IN input) : SV_Target
+(
+	retorno input.col * max (input.normal.z, 0,0);
 }
 
-technique10 Render
-{
-	pass P0
-	{
+técnica10 Renderização
+(
+	passe P0
+	(
 		SetGeometryShader( 0 );
 		SetVertexShader( CompileShader( vs_4_0, VS() ) );
 		SetPixelShader( CompileShader( ps_4_0, PS() ) );
@@ -92,120 +92,120 @@ technique10 Render
 }
 ```
 
-This example is simple. Real projects have many more shaders, so a single change might mean rewriting lots of shaders, structures, and so on.
+Este exemplo é simples. Projetos reais têm muitos mais shaders, então uma única mudança pode significar reescrever muitos shaders, estruturas, e assim por diante.
 
-Schematically, adding a new attribute requires you to update all the stages and intermediate structures from the vertex input to the last stage you want to use the attribute in.
+Esquematicamente, adicionar um novo atributo requer que você atualize todas as etapas e estruturas intermediárias da entrada do vértice para a última etapa em que você deseja usar o atributo.
 
-![media/hlsl_add_normal.png](media/hlsl_add_normal.png)
+<x1\/>media\/hlsl_add_normal.png<x2\/>
 
 ## SDSL
 
-SDSL has a convenient way to pass parameters across the different stages of your shader. The stream variables are:
+SDSL tem uma maneira conveniente de passar parâmetros através das diferentes etapas do seu shader. As variáveis de fluxo são:
 
-- variables
-- defined like any shader member, with the stream keyword
-- used with the stream prefix (omitting it results in a compilation error). When the stream is ambiguous (same name), you should provide the shader name in front of the variable (ie `streams.<my_shader>.<my_variable>`)
+- variáveis
+- definido como qualquer membro shader, com a palavra-chave stream
+- usado com o prefixo de fluxo (omitindo-o resulta em um erro de compilação). Quando o fluxo é ambíguo (mesmo nome), você deve fornecer o nome do shader na frente da variável (ou seja, `stream.<my_shader>.<my_variable>`)
 
-Streams regroup the concepts of attributes, varyings and outputs in a single concept.
+Os fluxos reagrupam os conceitos de atributos, variações e saídas em um único conceito.
 
-- An attribute is a stream read in a vertex shader before being written to.
-- A varying is a stream present across shader stages.
-- An output is a stream assigned before being read.
+- Um atributo é um fluxo lido em um shader vértice antes de ser escrito.
+- Uma variação é um fluxo presente através de fases de shader.
+- Uma saída é um fluxo atribuído antes de ser lido.
 
-Think of streams as global objects that you can access everywhere without specifying as a parameter of your functions.
+Pense em fluxos como objetos globais que você pode acessar em todos os lugares sem especificar como um parâmetro de suas funções.
 
-> [!Note]
-> You don't have to create a semantic for these variables; the compiler creates them automatically. However, keep in mind that **the variables sharing the same semantic will be merged in the final shader**. This behavior can be useful when you want to use a stream variable locally without inheriting from the shader where it was declared.
+> <x1\/>!Note<x2\/>
+> Você não precisa criar um semântico para essas variáveis; o compilador os cria automaticamente. No entanto, tenha em mente que ** as variáveis que compartilham a mesma semântica serão fundidas no shader final**. Este comportamento pode ser útil quando você deseja usar uma variável de fluxo localmente sem herdar do shader onde foi declarado.
 
-After you declare a stream, you can access it at any stage of your shader. The shader compiler takes care of everything. The variables just have to be visible from the calling code (ie in the inheritance hierarchy) like any other variable.
+Depois de declarar um fluxo, você pode acessá-lo em qualquer estágio do seu shader. O compilador de shader cuida de tudo. As variáveis precisam ser visíveis do código de chamada (ou seja, na hierarquia de herança) como qualquer outra variável.
 
-**Code:** Stream definition and use:
+** Código:** Definição e uso do fluxo:
 
 ```cs
-shader BaseShader
-{
+sombreador BaseShader
+(
 	stream float3 myVar;
  
-	float3 Compute()
-	{
-		return streams.myVar;
+	flutuante3 Compute()
+	(
+		retorno de fluxos. myVar;
 	}
 };
 ```
 
-**Code:** Stream specification
+** Código:** Especificação de fluxo
 
 ```cs
-shader StreamShader
-{
+córrego StreamShader
+(
 	stream float3 myVar;
 };
 
-shader ShaderA : BaseShader, StreamShader
-{
-	float3 Test()
-	{
-		return streams.BaseShader.myVar + streams.StreamShader.myVar;
+shaderA: BaseShader, StreamShader
+(
+	teste de flutuação3()
+	(
+		retorno streams.BaseShader.myVar + streams.StreamShader.myVar;
 	}
 }
 ```
 
-### Example of SDSL shader
+### Exemplo de shader SDSL
 
-Let's look at the same HLSL shader as the first example but in SDSL.
+Vamos olhar para o mesmo shader HLSL como o primeiro exemplo, mas no SDSL.
 
-**Code:** Same shader in SDSL
+** Código:** O mesmo shader em SDSL
 
 ```cs
-shader MyShader : ShaderBase
-{
-	stream float4 pos : POSITION;
-	stream float4 col : COLOR;
+shader MyShader: ShaderBase
+(
+	stream float4 pos : POSIÇÃO;
+	fluxo float4 col: COR;
 
-	override void VSMain()
-	{
+	anular VSMain()
+	(
 		streams.ShadingPosition = streams.pos;
 	}
 
-	override void PSMain()
-	{
-		streams.ColorTarget = streams.col;
+	anular PSMain()
+	(
+		fluxos. ColorTarget = streams.col;
 	}
 };
 ```
 
-Now let's add the normal computation.
+Agora vamos adicionar a computação normal.
 
-**Code:** Modified shader in SDSL
+** Código:** Modificado shader em SDSL
 
 ```cs
-shader MyShader : ShaderBase
-{
-	stream float4 pos : POSITION;
-	stream float4 col : COLOR;
-	stream float3 normal : NORMAL;
+shader MyShader: ShaderBase
+(
+	stream float4 pos : POSIÇÃO;
+	fluxo float4 col: COR;
+	fluxo float3 normal : NORMAL;
 
-	override void VSMain()
-	{
+	anular VSMain()
+	(
 		streams.ShadingPosition = streams.pos;
 	}
 
-	override void PSMain()
-	{
-		streams.ColorTarget = streams.col * max(streams.normal.z, 0.0);
+	anular PSMain()
+	(
+		streams.ColorTarget = streams.col * max(streams.normal.z, 0,0);
 	}
 };
 ```
 
-In SDSL, adding a new attribute is as simple as adding it to the pool of streams and using it where you want.
+No SDSL, adicionar um novo atributo é tão simples como adicioná-lo ao conjunto de fluxos e usá-lo onde quiser.
 
-![media/sdsl_add_normal.png](media/sdsl_add_normal.png)
+<x1\/>media\/sdsl_add_normal.png<x2\/>
 
-## See also
+## Ver também
 
-* [Effect language](../effect-language.md)
-* [Shading language index](index.md)
-   - [Shader classes, mixins and inheritance](shader-classes-mixins-and-inheritance.md)
-   - [Composition](composition.md)
-   - [Templates](templates.md)
-   - [Shader stages](shader-stages.md)
+* [Efeito da linguagem](../effect-language.md)
+* [Índice de linguagem de sombra](index.md)
+   - [Shader classes, misturas e herança](shader-classes-mixins-and-inheritance.md)
+   - [Composição](composition.md)
+   - [Modelos](templates.md)
+   - [Etapas de Shader](shader-stages.md)

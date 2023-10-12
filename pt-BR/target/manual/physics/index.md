@@ -1,27 +1,27 @@
-# Physics
+# Física
 
-![Physics in Stride](media/physics-index-physics-in-stride.png)
+<x1\/>Physics in Stride<x2\/>
 
-Stride simulates real-world physics such as gravity and collisions. This section explains how physics components work, how to add them to your project, and how to use them with scripts.
+Stride simula física do mundo real, como gravidade e colisões. Esta seção explica como os componentes da física funcionam, como adicioná-los ao seu projeto e como usá-los com scripts.
 
-## In this section
+## Nesta secção
 
-* [Colliders](colliders.md): Create physics by adding collider components to entities
-   * [Static colliders](static-colliders.md): Colliders that don't move
-   * [Rigidbodies](rigid-bodies.md): Moving objects, affected by gravity and collisions
-   * [Kinematic rigidbodies](kinematic-rigid-bodies.md): Physics objects controlled by scripts
-   * [Characters](characters.md): Colliders for characters (such as player characters and NPCs)
-   * [Collider shapes](collider-shapes.md): Define the shape of collider components
-   * [Triggers](triggers.md): Use triggers to detect passing objects
-   * [Constraints](constraints.md): Create appealing and realistic physics
+* [Colliders](colliders.md): Criar física adicionando componentes de colisão a entidades
+   * [ Colliders estatísticos](static-colliders.md): Colliders que não se movem
+   * [Rigidbodies](rigid-bodies.md): Movendo objetos, afetados pela gravidade e colisões
+   * [ Corpos rígidos clínicos](kinematic-rigid-bodies.md): Objetos de física controlados por scripts
+   * [Characters](characters.md): Colliders para personagens (como personagens de jogadores e NPCs)
+   * [ Formas de revestimento](collider-shapes.md): Defina a forma de componentes de colisão
+   * [ Triggers](triggers.md): Use gatilhos para detectar objetos de passagem
+   * [Constraints](constraints.md): Criar física atraente e realista
 * [Raycasting](raycasting.md): Trace intersecting objects
-* [Simulation](simulation.md): How Stride controls physics
+* [ Simulação](simulation.md): Como Stride controla a física
 
-### Tutorials
+### Tutoriais
 
-* [Create a bouncing ball](create-a-bouncing-ball.md): Use the static collider and rigidbody components to create a ball bouncing on a floor
-* [Script a trigger](script-a-trigger.md): Create a trigger that doubles the size of a ball when the ball passes through it
+* [Criar uma bola bouncing](create-a-bouncing-ball.md): Use os componentes estáticos do colide e do corpo rígido para criar uma bola saltando em um chão
+* [ Escreva um gatilho](script-a-trigger.md): Criar um gatilho que duplica o tamanho de uma bola quando a bola passa através dele
 
-## Further reference
+## Referências complementares
 
-Stride uses the open-source [Bullet Physics](http://bulletphysics.org/wordpress/) engine. For detailed information, see the [Bullet User Manual](https://github.com/bulletphysics/bullet3/blob/master/docs/Bullet_User_Manual.pdf).
+Stride usa o motor open-source [Bullet Physics](http://bulletphysics.org/wordpress/). Para obter informações detalhadas, consulte o Manual do Usuário [Bullet](https://github.com/bulletphysics/bullet3/blob/master/docs/Bullet_User_Manual.pdf).

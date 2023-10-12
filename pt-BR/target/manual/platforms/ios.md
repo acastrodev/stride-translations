@@ -1,108 +1,108 @@
 # iOS
 
-To deploy your game on iOS devices, you need to connect the device to a Mac with Xamarin.
+Para implantar seu jogo em dispositivos iOS, você precisa conectar o dispositivo a um Mac com Xamarin.
 
-1. Make sure Xamarin is installed on the PC and the Mac. For instructions about how to install and set up Xamarin, see the Xamarin documentation:
+1. Certifique-se de que Xamarin está instalado no PC e no Mac. Para obter instruções sobre como instalar e configurar o Xamarin, consulte a documentação do Xamarin:
 
-   * [Installing Xamarin in Visual Studio on Windows](https://developer.xamarin.com/guides/cross-platform/getting_started/installation/windows/)
+   * [Instalando Xamarin no Visual Studio no Windows](https://developer.xamarin.com/guides/cross-platform/getting_started/installation/windows/)
 
-   * [Connecting to Mac](https://developer.xamarin.com/guides/ios/getting_started/installation/windows/connecting-to-mac/)
+   * [Conectando ao Mac](https://developer.xamarin.com/guides/ios/getting_started/installation/windows/connecting-to-mac/)
 
-2. Make sure your iOS device is provisioned. For instructions, see [Device provisioning](https://developer.xamarin.com/guides/ios/getting_started/installation/device_provisioning/) in the Xamarin documentation.
+2. Certifique-se de que seu dispositivo iOS está provido. Para instruções, consulte [Device provisioning](https://developer.xamarin.com/guides/ios/getting_started/installation/device_provisioning/) na documentação do Xamarin.
 
-3. Make sure the iOS platform is added to your Stride project. To do this, in Game Studio, right-click the solution, select **Update package > Update Platforms**, and make sure **iOS** is selected.
+3. Certifique-se de que a plataforma iOS é adicionada ao seu projeto Stride. Para fazer isso, no Game Studio, clique com o botão direito do mouse na solução, selecione **Update package > Update Platforms** e certifique-se de **iOS** é selecionado.
 
-   ![Add iOS](media/add-ios-platform.png)
+   <x1\/> Adicionar iOS<x2\/>
 
-   For more information about adding platforms in Game Studio, see [Add or remove a platform](add-or-remove-a-platform.md).
+   Para obter mais informações sobre como adicionar plataformas no Game Studio, consulte [Adicionar ou remover uma plataforma](add-or-remove-a-platform.md).
 
-4. Open your solution in Visual Studio.
+4. Abra sua solução no Visual Studio.
 
-   > [!Tip]
-   > To open your project in Visual Studio from Game Studio, in the Game Studio toolbar, click ![Open in IDE](../scripts/media/launch-your-game-ide-icon.png) (**Open in IDE**).
+   > <x1\/>!Tip<x2\/>
+   > Para abrir seu projeto no Visual Studio do Game Studio, na barra de ferramentas Game Studio, clique em <x3\/>Open in IDE<x4\/> (**Open in IDE**).
 
-5. In the Visual Studio toolbar, click ![Xamarin button](media/xamarin-button.png).
+5. Na barra de ferramentas do Visual Studio, clique em <x1\/>Xamarin botão<x2\/>.
 
-   ![Connect to Xamarin](media/xamarin-button-in-toolbar.png)
+   <x1\/>Conectar a Xamarin<x2\/>
 
-   **Xamarin Agent** opens.
+   **Xamarin Agent** abre.
 
-   ![Xamarin agent](media/xamarin-agent.png)
+   <x1\/>Xamarin agente<x2\/>
 
-6. Connect to the Mac via Xamarin. For instructions, see [Introduction to Xamarin iOS for Visual Studio](https://developer.xamarin.com/guides/ios/getting_started/installation/windows/introduction_to_xamarin_ios_for_visual_studio/) in the Xamarin documentation.
+6. Conecte-se ao Mac via Xamarin. Para obter instruções, consulte [Introdução ao Xamarin iOS para Visual Studio](https://developer.xamarin.com/guides/ios/getting_started/installation/windows/introduction_to_xamarin_ios_for_visual_studio/) na documentação do Xamarin.
 
-7. In the **Solution Explorer**, right-click the project and select **Set as StartUp Project**.
+7. No **Solution Explorer**, clique com o botão direito do mouse no projeto e selecione ** Set as StartUp Project**.
 
-   ![Set as startup](media/set-ios-as-startup-project.png)
+   <x1\/>Configurar como startup<x2\/>
 
-8. In the **Solution Platforms** menu, select **iPhone** to build on physical iOS devices (including iPad), or **iPhoneSimulator** to build for the simulator. The simulator emulates iOS devices on your machine, but has some drawbacks (see below).
+8. No menu **Solution Platforms**, selecione **iPhone** para construir em dispositivos iOS físicos (incluindo iPad), ou **iPhoneSimulator** para construir para o simulador. O simulador emula dispositivos iOS em sua máquina, mas tem algumas desvantagens (veja abaixo).
 
-   ![Solution platform](media/solution-platform.png)
+   <x1\/> Plataforma de solução<x2\/>
 
-9. In the Visual Studio toolbar, select the iOs device you want to build for.
+9. Na barra de ferramentas do Visual Studio, selecione o dispositivo iOs para o qual você deseja construir.
 
-   ![Select device](media/select-ios-device-dropdown.png)
+   <x1\/>Select device<x2\/>
 
-10. From the **Solution Explorer**, open `info.plist`.
+10. Do **Solution Explorer**, aberto `info.plist`.
 
-   ![Select info file](media/info-plist.png)
+   <x1\/>Select info file<x2\/>
 
-11. If you want to create a release build, set the **bundle identifier**. This is a unique ID for your application.
+11. Se você quiser criar uma compilação de lançamento, defina o identificador **bundle**. Este é um ID único para sua aplicação.
 
-   ![Select bundle ID](media/bundle-identifier.png)
+   <x1\/>Select bundle ID<x2\/>
 
-12. If you want to deploy on iPad, under **Targeted device family**, click ![Add device icon](media/add-device-icon.png).
+12. Se você quiser implantar no iPad, abaixo de ** Família de dispositivos com certificação**, clique em <x1\/> Adicionar ícone de dispositivo<x2\/>.
 
-   ![Added iPad](media/ipad-device-added.png)
+   <x1\/> Adicionado iPad<x2\/>
 
-## Speed up builds on iOS devices
+## Acelere a compilação em dispositivos iOS
 
-It takes a long time to build on iOS devices. This is because:
+Demora muito tempo para construir em dispositivos iOS. Isso é porque:
 
-* the Mac needs to build code ahead of time (AOT) for the different devices
+* o Mac precisa construir código antes do tempo (AOT) para os diferentes dispositivos
 
-* the Apple sandbox system doesn't let you update packages incrementally, so the Mac needs to completely redeploy the application on the device for every change
+* o sistema de caixa de areia da Apple não permite que você atualize pacotes incrementalmente, então o Mac precisa redistribuir completamente o aplicativo no dispositivo para cada mudança
 
-To compile code more quickly, in the Solution Explorer, right-click the iOS project and select **Properties**.
+Para compilar o código mais rapidamente, no Solution Explorer, clique com o botão direito do mouse no projeto iOS e selecione **Properties**.
 
-![Project properties](media/ios-project-properties.png)
+<x1\/>Projeto propriedades<x2\/>
 
-* Under **Linker Behavior**, select **Don't link**.
-* Under **Supported Architectures**, select only the architecture of the debug device.
-* Disable **Strip native debugging symbols**.
-* Enable **incremental builds** (only code that changes from one execution to another is AOT)
+* Sob **Linker Behavior**, selecione ** Não link**.
+* Em **Arquiteturas suportadas**, selecione apenas a arquitetura do dispositivo de depuração.
+* Desativar **Strip símbolos de depuração nativas**.
+* **incremental builds** (apenas código que muda de uma execução para outra é AOT)
 
-For more information, see [iOS Build Mechanics](https://developer.xamarin.com/guides/ios/advanced_topics/ios-build-mechanics/) in the Xamarin documentation. For information about profiling, see [Using instruments to detect native leaks using markheap](https://developer.xamarin.com/guides/ios/deployment,_testing,_and_metrics/using_instruments_to_detect_native_leaks_using_markheap).
+Para mais informações, consulte [iOS Build Mechanics](https://developer.xamarin.com/guides/ios/advanced_topics/ios-build-mechanics/) na documentação do Xamarin. Para obter informações sobre o perfil, consulte [Usando instrumentos para detectar vazamentos nativos usando markheap](https://developer.xamarin.com/guides/ios/deployment,_testing,_and_metrics/using_instruments_to_detect_native_leaks_using_markheap).
 
-To make redeploying each time faster, make your debug packages as small as possible.
+Para fazer redeploying cada vez mais rápido, faça seus pacotes de debug o menor possível.
 
-* In Game Studio, reduce the **Size** of the [textures](../graphics/textures/index.md) in your project.
+* No Game Studio, reduza o **Size** do [textures](../graphics/textures/index.md) em seu projeto.
 
-* Remove unused assets.
+* Remova ativos não utilizados.
 
-* Test your scenes one by one rather than loading them simultaneously.
+* Teste suas cenas uma a uma em vez de carregá-las simultaneamente.
 
-* Debug your application on the **iPhone simulator** instead of a real device. However, execution is slow on the simulator and it produces some rendering artifacts, so we don't recommend using it to debug real-time graphics.
+* Depure sua aplicação no simulador **iPhone** em vez de um dispositivo real. No entanto, a execução é lenta no simulador e produz alguns artefatos de renderização, então não recomendamos usá-lo para depurar gráficos em tempo real.
 
-## Compile shaders on iOS
+## Shaders compilares no iOS
 
-As converting Stride shaders to OpenGL shaders on iPhone devices is slow, we recommend you convert them remotely (ie in Game Studio).
+Como converter shaders Stride para shaders OpenGL em dispositivos iPhone é lento, recomendamos que você convertê-los remotamente (ou seja, no Game Studio).
 
-Our recommended workflow is:
+Nosso fluxo de trabalho recomendado é:
 
-1. Execute the app on Windows. This creates the shader permutations.
+1. Execute o aplicativo no Windows. Isso cria permutações de shader.
 
-   ![New effects](../graphics/effects-and-shaders/media/new-effects-to-import.png)
+   <x1\/> Novos efeitos<x2\/>
 
-2. Import the new shaders in Game Studio. This generates an effect log.
+2. Importar os novos shaders no Game Studio. Isso gera um log de efeito.
 
-   ![Effect log](../graphics/effects-and-shaders/media/effect-log.png)
+   <x1\/> Efeito log<x2\/>
 
-3. Save and run the game on iOS.
+3. Salvar e executar o jogo no iOS.
 
-Ideally, this creates all the shader permutations remotely, so you don't need to convert them on the device. However, new permutations might still occur due to differences such as supported screen resolutions. For more information, including information about how to compile shaders remotely on iOS, see [Compile shaders](../graphics/effects-and-shaders/compile-shaders.md).
+Idealmente, isso cria todas as permutações de shader remotamente, então você não precisa convertê-las no dispositivo. No entanto, novas permutações podem ainda ocorrer devido a diferenças como resoluções de tela suportadas. Para obter mais informações, incluindo informações sobre como compilar shaders remotamente no iOS, consulte os shaders [Compile](../graphics/effects-and-shaders/compile-shaders.md).
 
-## See also
+## Ver também
 
-* [iOs in the Xamarin documentation](https://developer.xamarin.com/guides/ios/)
-* [Compile shaders](../graphics/effects-and-shaders/compile-shaders.md)
+* [eu... Os na documentação do Xamarin](https://developer.xamarin.com/guides/ios/)
+* [Sombreadores computacionais](../graphics/effects-and-shaders/compile-shaders.md)

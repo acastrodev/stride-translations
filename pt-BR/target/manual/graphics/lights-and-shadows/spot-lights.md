@@ -1,43 +1,43 @@
-# Spot lights
+# Luzes do ponto
 
-<span class="badge text-bg-primary">Beginner</span>
-<span class="badge text-bg-success">Designer</span>
-<span class="badge text-bg-success">Artist</span>
+<x1\/>Introdução<x2\/>
+<x3\/>Designer<x4\/>
+<x5\/>Artista <x6\/>
 
-**Spot lights** produce a cone of light in a specific direction. They're useful for simulating light from objects such as lampposts and flashlights. They cast shadows. You can control them with scripts or animation to create dramatic lighting effects.
+**Spot lights** produzir um cone de luz em uma direção específica. São úteis para simular luz de objetos como postes de lâmpadas e lanternas. Eles lançam sombras. Você pode controlá-los com scripts ou animação para criar efeitos de iluminação dramática.
 
-![media/SpotLightOverview.png](media/SpotLightOverview.png)
+<x1\/>media\/SpotLightOverview.png<x2\/>
 
-The Scene Editor shows the position of the spot light with the following icon:
+O Editor de cena mostra a posição da luz exata com o seguinte ícone:
 
-![media/SpotLight.png](media/SpotLight.png)
+<x1\/>media\/SpotLight.png<x2\/>
 
-Once selected, the gizmo of the spot light displays its main direction, range and the outer cone:
+Uma vez selecionado, o gizmo da luz exata exibe sua direção principal, alcance e o cone externo:
 
-![media/SpotLightSelected.png](media/SpotLightSelected.png)
+<x1\/>media\/SpotLightSelected.png<x2\/>
 
-## Properties
+## Propriedades
 
-![media/SpotLightProperties.png](media/SpotLightProperties.png)
+<x1\/>media\/SpotLightProperties.png<x2\/>
 
-| Property | Description |
+| Propriedade | Descrição |
 | ------------------- | -----------
-| Color | The color of the light (RGB) |
-| Range | The range in [world units](../../game-studio/world-units.md). Beyond the this range, the light doesn't affect models. |
-| Angle Inner | The inner angle of the spot cone where the light intensity influence is at one |
-| Angle Outer | The outer angle of the spot cone where the light intensity influence is zero |
-| Shadows | <p><br> Cast shadows</p></br><p><br>**Filter**: Produces soft shadows instead of hard shadows via PCF (Percentage Closer Filtering) </p></br> <p><br>**Size**: The size of texture to use for shadowing mapping. Larger textures produce better shadows edges, but are much more costly. For more information, see [Shadows](shadows.md)</p></br> <p><br>For spot lights, the default value is **medium**, as a spot light has usually a medium visual impact</p></br> |
-| Bias Parameters | <p><br>These parameters are used to avoid some artifacts of the shadow map technique.</p></br> <p><br>**Depth Bias:** The amount of depth to add to the sampling depth to avoid shadow acne </p></br> <p><br>**Normal Offset Scale**: A factor multiplied by the depth bias toward the normal</p></br> |
-| Intensity | The intensity of the light. The color is multiplied by this value before being sent to the shader. Note: negative values produce darkness and have unpredictable effects |
-| Culling Mask | Defines which entity groups are affected by this light. By default, all groups are affected |
+| Cor | A cor da luz (RGB) |
+| Gama | O intervalo em unidades do mundo [](../../game-studio/world-units.md). Além desta gama, a luz não afeta modelos. |
+| Ângulo interno | O ângulo interno do cone de ponto onde a influência da intensidade da luz está em um |
+| Ângulo exterior | O ângulo exterior do cone local onde a influência da intensidade da luz é zero |
+| Sombras | <p><x1\/> Sombras de elenco</p></br><p><x1\/>**Filter**: Produz sombras suaves em vez de sombras duras via PCF (Percentage Closer Filtering) </p></br> <p><x1\/>**Size**: O tamanho da textura para usar para mapeamento de sombras. Texturas maiores produzem melhores bordas sombras, mas são muito mais caros. Para mais informações, consulte [Shadows](shadows.md)</p></br> <p><x1\/> Para luzes de ponto, o valor padrão é **medium**, como uma luz de ponto tem geralmente um impacto visual médio</p></br> |
+| Parâmetros de Bias | <p><x1\/>Estes parâmetros são usados para evitar alguns artefatos da técnica de mapa sombra.</p></br> <p><x1\/>**Depth Bias:** A quantidade de profundidade para adicionar à profundidade de amostragem para evitar acne sombra </p></br> <p><x1\/>**Normal Offset Scale**: Um fator multiplicado pelo viés de profundidade para o normal</p></br> |
+| Intensidade | A intensidade da luz. A cor é multiplicada por este valor antes de ser enviado para o shader. Nota: valores negativos produzem escuridão e têm efeitos imprevisíveis |
+| Máscara de Culing | Define quais grupos de entidades são afetados por esta luz. Por padrão, todos os grupos são afetados |
 
-## See also
+## Ver também
 
-* [Add a light](add-a-light.md)
-* [Point lights](point-lights.md)
-* [Ambient lights](ambient-lights.md)
-* [Directional lights](directional-lights.md)
-* [Light shafts](light-shafts.md)
-* [Skybox lights](skybox-lights.md)
-* [Light probes](light-probes.md)
-* [Shadows](shadows.md)
+* [Adicionar uma luz](add-a-light.md)
+* [Luzes de ponto](point-lights.md)
+* [Luzes ambientais](ambient-lights.md)
+* [Luzes direcionais](directional-lights.md)
+* [Eixos de luz](light-shafts.md)
+* [Luzes Skybox](skybox-lights.md)
+* [Sondas de luz](light-probes.md)
+* [Sombras](shadows.md)

@@ -1,93 +1,93 @@
-# Colliders
+# Coleiras
 
-<span class="badge text-bg-primary">Beginner</span>
-<span class="badge text-bg-success">Designer</span>
+<x1\/>Introdução<x2\/>
+<x3\/>Designer<x4\/>
 
-To use physics in your project, add a **collider** component to an entity.
+Para usar a física em seu projeto, adicione um componente **collider** a uma entidade.
 
-Colliders define the shapes and rules of physics objects. There are three types:
+Colliders definem as formas e regras dos objetos de física. Existem três tipos:
 
-* [static colliders](static-colliders.md) don't move (eg walls, floors, heavy objects, etc)
-* [rigidbodies](rigid-bodies.md) are moved around by forces such as collision and gravity (eg balls, barrels, etc)
-* [characters](characters.md) are controlled by user input (ie player characters)
+* [ os coliders estáticos](static-colliders.md) não se movem (por exemplo, paredes, pisos, objetos pesados, etc)
+* [rigidbodies](rigid-bodies.md) são movidos por forças como colisão e gravidade (por exemplo, bolas, barris, etc)
+* [caracters](characters.md) são controlados pela entrada do usuário (ou seja, personagens do jogador)
 
-You can also:
+Você também pode:
 
-* set the [shape of collider components](collider-shapes.md)
-* make [triggers](triggers.md), and detect when objects pass through them
-* constrict collider movement with [constraints](constraints.md)
+* definir o formato [ de componentes do colisor](collider-shapes.md)
+* fazer [triggers](triggers.md), e detectar quando os objetos passam através deles
+* constrição movimento de colisão com [constraints](constraints.md)
 
-## How colliders interact
+## Como os colisões interagem
 
-Colliders interact according to the table below.
+Colliders interagem de acordo com a tabela abaixo.
 
-|   | Kinematic objects | Kinematic triggers | Rigidbody colliders | Rigidbody triggers | Static colliders | Static triggers |
+|   | Objetos kinemáticos | Acionadores Kinematic | Colliders de corpo rígido | Gatilhos de corpo rígido | Colliders estáticos | Acionadores estáticos |
 |---|-------------|---------------------|-------------|---------------------|----------|------------------
-| Kinematic objects | Collisions | Collisions | Collisions and dynamic | Collisions | Collisions | Collisions |
-| Kinematic triggers | Collisions | Collisions | Collisions | Collisions | Collisions | Collisions |
-| Rigidbody colliders | Collisions and dynamic | Collisions | Collisions and dynamic | Collisions | Collisions and dynamic | Collisions |
-| Rigidbody triggers | Collisions | Collisions | Collisions | Collisions | Collisions | Collisions |
-| Static colliders | Collisions | Collisions | Collisions and dynamic | Collisions | Nothing | Nothing |
-| Static triggers | Collisions | Collisions | Collisions | Collisions | Nothing | Nothing |
+| Objetos kinemáticos | Colisões | Colisões | Colisões e dinâmica | Colisões | Colisões | Colisões |
+| Acionadores Kinematic | Colisões | Colisões | Colisões | Colisões | Colisões | Colisões |
+| Colliders de corpo rígido | Colisões e dinâmica | Colisões | Colisões e dinâmica | Colisões | Colisões e dinâmica | Colisões |
+| Gatilhos de corpo rígido | Colisões | Colisões | Colisões | Colisões | Colisões | Colisões |
+| Colliders estáticos | Colisões | Colisões | Colisões e dinâmica | Colisões | Nada | Nada |
+| Acionadores estáticos | Colisões | Colisões | Colisões | Colisões | Nada | Nada |
 
-* "Collisions" refers to collision information and events only. This means the collision is detected in the code, but the objects don't bump into each other (no dynamic response).
+* "Colisões" refere-se apenas a informações de colisão e eventos. Isso significa que a colisão é detectada no código, mas os objetos não se chocam uns com os outros (sem resposta dinâmica).
 
-* "Dynamic" means both collision information and events, plus dynamic response (ie the colliders bump into each other instead of passing through).
+* "Dynamic" significa informações de colisão e eventos, além de resposta dinâmica (ou seja, os colisões se chocam em vez de passar).
 
-For example, rigidbody colliders dynamically collide with static colliders (ie bump into them). However, no objects dynamically collide with triggers; collisions are detected in the code, but objects simply pass through.
+Por exemplo, os colisões de corpo rígido colidem dinamicamente com colisões estáticos (ou seja, colhem-nos). No entanto, nenhum objeto colide dinamicamente com gatilhos; colisões são detectadas no código, mas os objetos simplesmente passam.
 
-## Show colliders in the Scene Editor
+## Mostrar colisões no Editor de Cena
 
-By default, colliders are invisible in the Scene Editor. To show them:
+Por padrão, os colisões são invisíveis no Editor de Cena. Para mostrar-lhes:
 
-1. In the Game Studio toolbar, in the top right, click the **Display gizmo options** icon.
+1. Na barra de ferramentas Game Studio, na parte superior direita, clique no ícone **Exibir opções gizmo**.
 
-   ![Display gizmo options](media/display-gizmo-options.png)
+   <x1\/>Exibir opções de gizmo<x2\/>
 
-2. Select **Physics**.
+2. Selecione **Physics**.
 
-   ![Display physics option](media/display-physics-option.png)
+   <x1\/> opção de física de reprodução<x2\/>
 
-The Scene Editor displays collider shapes.
+O Editor de Cena exibe formas de colisão.
 
-![Display physics](media/display-physics.png)
+<x1\/> Display física<x2\/>
 
-## Show colliders at runtime
+## Mostrar colisões no tempo de execução
 
-You can make colliders visible at runtime, which is useful for debugging problems with physics. To do this, use:
+Você pode tornar os colisões visíveis no tempo de execução, o que é útil para depurar problemas com a física. Para fazer isso, use:
 
 ``
-this.GetSimulation().ColliderShapesRendering = true;
+this.GetSimulation(). ColliderShapesRendering = verdadeiro;
 ``
 
-> [!Note]
-> Collider shapes for infinite planes are always invisible.
+> <x1\/>!Note<x2\/>
+> Formas de colar para planos infinitos são sempre invisíveis.
 
-### Keyboard shortcut
+### Atalho de teclado
 
-To show or hide collider shapes at runtime with a keyboard shortcut, use the **Debug physics shapes** script.
+Para mostrar ou ocultar formas de colisão no tempo de execução com um atalho de teclado, use o script **Debug Physics shapes**.
 
-1. In the **Asset View**, click **Add asset**.
+1. No **Asset View**, clique em **Add asset**.
 
-2. Select **Scripts** > **Debug physics shapes**.
+2. Selecione **Scripts** > **Debug formas físicas**.
 
-   ![Add debug physics shape script](media/add-debug-physics-shapes-script.png)
+   <x1\/> Adicionar script de forma de física de depuração<x2\/>
 
-3. In the Game Studio toolbar, click **Reload assemblies and update scripts**.
+3. Na barra de ferramentas do Game Studio, clique em **Reload assemblies e atualize scripts**.
 
-   ![Reload assemblies](../platforms/media/reload-assemblies.png)
+   <x1\/>Reload assemblies<x2\/>
 
-4. Add the **Debug physics shapes** script as a component to an entity in the scene. It doesn't matter which entity.
+4. Adicione o script **Debug Physics shapes** como um componente para uma entidade na cena. Não importa qual entidade.
 
-   ![Add debug physics shapes script component](media/add-debug-physics-shapes-component.png)
+   <x1\/> Adicionar debug física forma componente de script<x2\/>
 
-The script binds the collider shape visibility to **Left Shift + Left Ctrl + P**, so you can turn it on and off at runtime. You can edit the script to bind a different key combination.
+O script liga a visibilidade da forma do colisor a **Left Shift + Left Ctrl + P**, para que você possa ligá-la e desligar em tempo de execução. Você pode editar o script para vincular uma combinação de teclas diferente.
 
-## See also
+## Ver também
 
-* [Collider shapes](collider-shapes.md)
-* [Static colliders](static-colliders.md)
-* [Rigidbodies](rigid-bodies.md)
-* [Kinematic rigidbodies](kinematic-rigid-bodies.md)
-* [Simulation](simulation.md)
-* [Physics tutorials](tutorials.md)
+* [Formas de colarinho](collider-shapes.md)
+* [Colliders estáticos](static-colliders.md)
+* [Rígidos](rigid-bodies.md)
+* [Rígidos caninemáticos](kinematic-rigid-bodies.md)
+* [Simulação](simulation.md)
+* [Tutoriais de física](tutorials.md)

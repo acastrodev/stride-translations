@@ -1,83 +1,83 @@
-# Types of script
+# Tipos de script
 
-<span class="badge text-bg-primary">Beginner</span>
-<span class="badge text-bg-success">Programmer</span>
+<x1\/>Introdução<x2\/>
+<x3\/> Programador <x4\/>
 
-There are three main types of script in Stride: **startup scripts**, **synchronous scripts**, and **asynchronous scripts**.
+Existem três tipos principais de script em Stride: **startup scripts**, **synchronous scripts**, e **asynchronous scripts**.
 
-When you write your script, inherit from the type of script with the behavior that best fits your needs.
+Quando você escreve seu script, herda do tipo de script com o comportamento que melhor se adapta às suas necessidades.
 
-## Startup scripts
+## Scripts de inicialização
 
-Startup scripts only run when they are added or removed at runtime. They're mostly used to initialize game elements (eg spawning characters) and destroy them when the scene is unloaded. They have a [Start](xref:Stride.Engine.StartupScript.Start) method for initialization and a [Cancel](xref:Stride.Engine.ScriptComponent.Cancel) method. You can override either method if you need to.
+Os scripts de inicialização só rodam quando são adicionados ou removidos no tempo de execução. Eles são usados principalmente para inicializar elementos do jogo (por exemplo, personagens de desova) e destruí-los quando a cena é descarregada. Eles têm um método [Start](xref:Stride.Engine.StartupScript.Start) para inicialização e um método [Cancel](xref:Stride.Engine.ScriptComponent.Cancel). Você pode substituir qualquer método se precisar.
 
-Example:
+Exemplo:
 
 ```cs
-public class StartUpScriptExample : StartupScript
-{
-	public override void Start()
-	{
-		// Do some stuff during initialization
+classe pública StartUpScriptExample : StartupScript
+(
+	anula de sobreposição pública Start()
+	(
+		\/\/ Faça algumas coisas durante a inicialização
 	}
 }
 ```
 
-## Synchronous scripts
+## Scripts síncronos
 
-Synchronous scripts are initialized, then updated every frame, and finally canceled (when the script is removed).
+Os scripts síncronos são inicializados e, em seguida, atualizados cada frame, e finalmente cancelados (quando o script é removido).
 
-* The initialization code, if any, goes in the [Start](xref:Stride.Engine.StartupScript.Start) method.
-* The code performing the update goes in the [Update](xref:Stride.Engine.SyncScript.Update) method.
-* The code performing the cancellation goes in the [Cancel](xref:Stride.Engine.ScriptComponent.Cancel) method.
+* O código de inicialização, se houver, vai no método [Start](xref:Stride.Engine.StartupScript.Start).
+* O código que executa a atualização vai no método [Update](xref:Stride.Engine.SyncScript.Update).
+* O código que executa o cancelamento vai no método [Cancel](xref:Stride.Engine.ScriptComponent.Cancel).
 
-The following script performs updates every frame, no matter what:
+O seguinte script executa atualizações cada frame, não importa o que:
 
 ```cs
-public class SampleSyncScript : SyncScript
-{        
-	public override void Update()
-	{
-		// Performs the update on the entity — this code is executed every frame
+classe pública SampleSyncScript : Sincronização
+(        
+	atualização()
+	(
+		\/\/ Executa a atualização na entidade — este código é executado cada quadro
 	}
 }
 ```
 
-## Asynchronous scripts
+## Scripts assíncronos
 
-Asynchronous scripts are initialized only once, then canceled when removed from the scene.
+Os scripts assíncronos são inicializados apenas uma vez, depois cancelados quando removidos da cena.
 
-* Asynchronous code goes in the [Execute](xref:Stride.Engine.AsyncScript.Execute) function.
+* O código assíncrono entra na função [Execute](xref:Stride.Engine.AsyncScript.Execute).
 
-* Code performing the cancellation goes in the [Cancel](xref:Stride.Engine.ScriptComponent.Cancel) method.
+* Código que executa o cancelamento vai no método [Cancel](xref:Stride.Engine.ScriptComponent.Cancel).
 
-The following script performs actions that depend on events and triggers:
+O seguinte script executa ações que dependem de eventos e gatilhos:
 
 ```cs
-public class SampleAsyncScript : AsyncScript
-{        
-	public override async Task Execute() 
-	{
-		// The initialization code should come here, if necessary
+classe pública SampleAsyncScript : AsyncScript
+(        
+	override público async Task Execute() 
+	(
+		\/\/ O código de inicialização deve vir aqui, se necessário
 		
-		while (Game.IsRunning) // loop until the game ends (optional depending on the script)
-		{
-			await MyEvent;
+		enquanto (Game.IsRunning) \/\/ loop até que o jogo termina (opcional dependendo do script)
+		(
+			aguarde MyEvent;
 
-			// Do some stuff
+			\/\/ Faz alguma coisa
 			
-			await Script.NextFrame(); // wait for the next frame (optional depending on the script)
+			await Script.NextFrame(); \/\/ esperar pelo próximo frame (opcional dependendo do script)
 		}
 	}
 }
 ```
 
-## See also
+## Ver também
 
-* [Create a script](create-a-script.md)
-* [Use a script](use-a-script.md)
-* [Public properties and fields](public-properties-and-fields.md)
-* [Scheduling and priorities](scheduling-and-priorities.md)
-* [Events](events.md)
-* [Debugging](debugging.md)
-* [Preprocessor variables](preprocessor-variables.md)
+* [Criar um script](create-a-script.md)
+* [Use um script](use-a-script.md)
+* [Propriedades e campos públicos](public-properties-and-fields.md)
+* [Programação e prioridades](scheduling-and-priorities.md)
+* [Eventos](events.md)
+* [Depuração](debugging.md)
+* [Variáveis de pré-processamento](preprocessor-variables.md)

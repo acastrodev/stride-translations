@@ -1,318 +1,318 @@
-# Tutorial: Custom particles
+# Tutorial: Partículas personalizadas
 
-<span class="badge text-bg-primary">Intermediate</span>
-<span class="badge text-bg-success">Artist</span>
-<span class="badge text-bg-success">Programmer</span>
+<x1\/> Intermediário <x2\/>
+<x3\/>Artista <x4\/>
+<x5\/> Programador <x6\/>
 
-This walkthrough shows how you can create custom extensions for the particle system, providing functionality not available in the core engine.
+Este passo mostra como você pode criar extensões personalizadas para o sistema de partículas, fornecendo funcionalidade não disponível no motor central.
 
-If you're not familiar with editing particles, see [Create particles](../create-particles.md).
+Se você não estiver familiarizado com as partículas de edição, veja as partículas [Create](../create-particles.md).
 
-Start by creating a new **Sample: Particles** project.
+Comece criando um novo **Sample: Particles** projeto.
 
-![Particles sample project](media/select-particles-sample-project.png)
+<x1\/>Particles sample project<x2\/>
 
-This project contains different scenes that demonstrate different ways to use particles. Open the **CustomParticles** scene.
+Este projeto contém diferentes cenas que demonstram diferentes formas de usar partículas. Abra a cena **CustomParticles**.
 
-There are three particle entities in the scene: **ConeEmitter15**, **ConeEmitter30**, and **ConeEmitter45**.
+Há três entidades de partículas no local: **ConeEmitter15**, **ConeEmitter30** e **ConeEmitter45**.
 
-Select one of the particle entities. In the Property Grid, navigate to its source particle system and expand the emitter.
+Selecione uma das entidades de partículas. Na Grade de Propriedade, navegue até seu sistema de partículas de origem e expanda a emissora.
 
-![media/particles-samples-custom-1.png](media/particles-samples-custom-1.png)
+<x1\/>media\/particles-samples-custom-1.png<x2\/>
 
-There are four custom elements in this emitter:
+Há quatro elementos personalizados neste emissor:
 
-* The custom [spawner](../spawners.md) is similar to the spawn-per-second spawner, but also emits a burst of particles every time it loops.
+* O personalizado [spawner](../spawners.md) é semelhante ao spawner-por-segundo, mas também emite uma explosão de partículas cada vez que ele loops.
 
-* The custom [initializer](../initializers.md) initially positions the particles in a cone shape and sets their velocity accordingly.
+* O personalizado [inicializador](../initializers.md) inicialmente posiciona as partículas em uma forma de cone e define sua velocidade de acordo.
 
-* The custom [updater](../updaters.md) operates on a new particle field named **RactangleXY**, allowing the shape builder to use non-uniform sizes when building the billboards.
+* O personalizado [updater](../updaters.md) opera em um novo campo de partículas chamado **RactangleXY**, permitindo que o construtor de formas use tamanhos não uniformes ao construir os outdoors.
 
-* The custom [shape builder](../shapes.md) is similar to the billboard with two additions. It can create non-uniform rectangles, rather than the standard squares, and it can align (fix) the rectangle's Y axis to the world's Y axis rather than the camera space.
+* O custom [shape builder](../shapes.md) é semelhante ao outdoor com duas adições. Ele pode criar retângulos não uniformes, em vez dos quadrados padrão, e pode alinhar (fixar) o eixo Y do retângulo para o eixo Y do mundo em vez do espaço da câmera.
 
 ## Spawner
 
-We'll create a spawner which emits particles per second **and** in bursts every few seconds. We could do this by adding two different spawners, but for this sample we'll combine them.
+Vamos criar um spawner que emite partículas por segundo ** e** em rajadas a cada poucos segundos. Podemos fazer isso adicionando dois spawners diferentes, mas para esta amostra vamos combiná-los.
 
 ```cs
-  [DataContract("CustomParticleSpawner")] // Used for serialization, a good practice is to have the data contract have the same name as the class
+  [DataContract("CustomParticleSpawner")] \/\/ Usado para serialização, uma boa prática é ter o contrato de dados tem o mesmo nome que a classe
   [Display("CustomParticleSpawner")]
-  public sealed class CustomParticleSpawner : ParticleSpawner
-  {
+  classe selada pública CustomParticleSpawner : ParticleSpawner
+  (
       [DataMemberIgnore]
-      private float carryOver;    // Private members do not appear on the Property Grid
+      carro flutuante privado Sobre; \/\/ Os membros privados não aparecem na Grade de Propriedade
 
-      [DataMember(100)]                // When data is serialized, this attribute decides its priority
-      [Display("Number of particles")] // This is the name which will be displayed on the Property Grid
-      public float SpawnCount { get; set; }
+      [DataMember(100)] \/\/ Quando os dados são serializados, este atributo decide sua prioridade
+      [Display("Número de partículas")] \/\/ Este é o nome que será exibido na Grade de Propriedade
+      público float SpawnCount { get; set; }
 
       [DataMemberIgnore]
-      private float burstTimer;    // Private members do not appear on the Property Grid
+      float in privadaTimer; \/\/ Os membros privados não aparecem na Grade de Propriedade
 
-      [DataMember(200)]                // When data is serialized, this attribute decides its priority
-      [Display("Burst particles")]     // This is the name which will be displayed on the Property Grid
-      public float BurstCount {get;set;}
+      [DataMember(200)] \/\/ Quando os dados são serializados, este atributo decide sua prioridade
+      [Display("Burst partículas")] \/\/ Este é o nome que será exibido na Grade de Propriedade
+      float público BurstCount {get;set;}
 
 		...
 
-      public override int GetMaxParticlesPerSecond()
-      {
-          return (int)Math.Ceiling(SpawnCount) + (int)Math.Ceiling(BurstCount);
+      substituição pública no GetMaxParticlesPerSecond()
+      (
+          retorno (int)Math.Ceiling(SpawnCount) + (int)Math.Ceiling(BurstCount);
       }
 
-      public override void SpawnNew(float dt, ParticleEmitter emitter)
-      {
-          // State is handled by the base class. Generally you only want to spawn particle when in active state
+      override público void SpawnNew (float dt, ParticleEmitter emitter)
+      (
+          \/\/ O estado é tratado pela classe base. Geralmente você só quer gerar partículas quando em estado ativo
           var spawnerState = GetUpdatedState(dt, emitter);
-          if (spawnerState != SpawnerState.Active)
-              return;
+          se (espawnerState!= SpawnerState.Active)
+              voltar;
 
-          // Calculate particles per second
-          var toSpawn = spawnCount * dt + carryOver;
-          var integerPart = (int)Math.Floor(toSpawn);
-          carryOver = toSpawn - integerPart;
+          \/\/ Calcular partículas por segundo
+          var toSpawn = spawnCount * dt + carry Over;
+          linha de produção Parte = (int)Math.Floor(paraSpawn);
+          transporte Sobre = paraSpawn - inteiro Parte;
 
-          // Calculate burst particles
-          burstTimer -= dt;
-          if (burstTimer < 0)
-          {
-              burstTimer += 1f;
+          \/\/ Calcular partículas de explosão
+          estourarTimer -= dt;
+          se (burstTimer < 0)
+          (
+              explosão Temporizador += 1f;
               integerPart += (int)Math.Floor(BurstCount);
           }
 
-          // Lastly, tell the emitter how many new particles do we want to spawn this frame
-          emitter.EmitParticles(integerPart);
+          \/\/ Por fim, diga ao emissor quantas novas partículas queremos gerar este quadro
+          emitter.EmitParticles (Partido inteiro);
       }
   }
 ```
 
-This class mimics the @'Stride.Particles.Spawners.ParticleSpawner', with the addition of a `BurstCount` and a `burstTimer` to control how often and how many particles are spawned in bursts.
+Esta classe imita o @'Stride.Particles.Spawners.ParticleSpawner', com a adição de um `BurstCount` e um `burstTimer` para controlar com que frequência e quantas partículas são geradas em explosões.
 
-The `SpawnNew` method is called every frame to allow the spawner to calculate how many new particles should be emitted in the emitter based on the elapsed time.
+O método `SpawnNew` é chamado cada quadro para permitir que o proprietário calcule quantas novas partículas devem ser emitidas na emissora com base no tempo decorrido.
 
-As an exercise, try implementing the following changes:
+Como exercício, tente implementar as seguintes alterações:
 
-- Rather than one-second bursts, create a property and have the user control the timing.
-- Remove the spawn-per-second fields and make it a pure burst spawner.
+- Em vez de um segundo rajadas, criar uma propriedade e ter o usuário control o tempo.
+- Remova os campos espawn-per-second e torná-lo um spawner de explosão puro.
 
-Our spawner only emits particles, but doesn't set any fields. This is done by the initializer.
+Nosso spawner apenas emite partículas, mas não define nenhum campo. Isso é feito pelo inicializador.
 
-## Initializer
+## Inicialização
 
-We want to place the particles in a cone and shoot them outwards when they spawn.
+Queremos colocar as partículas em um cone e atirar neles para fora quando eles desovam.
 
 ```cs
   [DataContract("CustomParticleInitializer")]
   [Display("Cone Initializer")]
-  public class CustomParticleInitializer : ParticleInitializer
-  {
+  classe pública CustomParticleInitializer : ParticleInitializer
+  (
       [DataMember(100)]
       [DataMemberRange(0, 120, 0.01, 0.1)]
       [Display("Arc")]
-      public float Angle = 20f;
+      angle de flutuador público = 20f;
 
       [DataMember(200)]
       [Display("Velocity")]
-      public float Strength = 1f;
+      flutuador público Força = 1f;
 
-      public CustomParticleInitializer()
-      {
-          RequiredFields.Add(ParticleFields.Position);
-          RequiredFields.Add(ParticleFields.Velocity);
-          RequiredFields.Add(ParticleFields.RandomSeed);
+      personalizado()Iniciante()
+      (
+          Requisitos.Adicionar (Fields de Partículas.Posição);
+          Fields.Add (Fields de Partículas.Velocidade);
+          RequeridasFields.Add (Fields de Partículas.RandomSeed);
       }
 
-      public unsafe override void Initialize(ParticlePool pool, int startIdx, int endIdx, int maxCapacity)
-      {
+      anula de sobreposição inseguro público Inicialize(PartePool pool, int startIdx, int endIdx, int maxCapacity)
+      (
 			...
       }
   }
 ```
 
-Our initializer simply defines an angle for the cone and strength for the velocity. Any scaling and rotation of the cone come from the location inheritance and offset, which are common for all initializers and updaters and are ready to use. For more information, see the @'Stride.Particles.Initializers.ParticleInitializer'.
+Nosso inicializador simplesmente define um ângulo para o cone e força para a velocidade. Qualquer escala e rotação do cone vêm da herança de localização e deslocamento, que são comuns para todos os inicializadores e atualizadores e estão prontos para usar. Para obter mais informações, consulte o @'Stride.Particles.Initializers.ParticleInitializer'.
 
-The constructor for the initializer is important, as it sets the list of required fields we'll use. The initializer sets the particle's position and velocity, so we add those, and needs to generate some randomness, so we also add the random seed which we are going to use. All particles have `Life` and `RandomSeed` fields when they spawn.
+O construtor para o inicializador é importante, pois define a lista de campos necessários que usaremos. O inicializador define a posição e a velocidade da partícula, então adicionamos esses, e precisa gerar alguma aleatoriedade, então também adicionamos a semente aleatória que vamos usar. Todas as partículas têm campos `Life` e `RandomSeed` quando elas surgiram.
 
 ```cs
-// This method is called for all new particles once the initializer is added to an emitter. Rather than updating all of them, we are given a starting and end indices and must only use particles in the defined range.
-public unsafe override void Initialize(ParticlePool pool, int startIdx, int endIdx, int maxCapacity)
-{
-  // Make sure the fields exist and avoid illegal memory access
-	if (!pool.FieldExists(ParticleFields.Position) || !pool.FieldExists(ParticleFields.Velocity) || !pool.FieldExists(ParticleFields.RandomSeed))
-		return;
+\/\/ Este método é chamado para todas as novas partículas uma vez que o inicializador é adicionado a um emissor. Em vez de atualizar todos eles, temos um índice inicial e final e só devemos usar partículas no intervalo definido.
+anula de sobreposição inseguro público Inicialize(PartePool pool, int startIdx, int endIdx, int maxCapacity)
+(
+  \/\/ Certifique-se de que os campos existem e evite o acesso à memória ilegal
+	if (!pool.FieldExists(ParticleFields.Position) | !pool.FieldExists(ParticleFields.Velocity) | !pool.FieldExists(ParticleFields.RandomSeed)))))
+		voltar;
 
-	var posField = pool.GetField(ParticleFields.Position);
-	var velField = pool.GetField(ParticleFields.Velocity);
-	var rndField = pool.GetField(ParticleFields.RandomSeed);
+	var posField = pool.GetField (ParticleFields.Position);
+	var velField = pool.GetField (ParticleFields.Velocity);
+	var rndField = pool.GetField (ParticleFields.RandomSeed);
 
-	var range = (float) (Angle*Math.PI/180f);
-	var magnitude = WorldScale.X;
+	var range = (float) (Angle*Math.PI\/180f);
+	var magnitude = WorldScale. X;
 
-	var i = startIdx;
-	while (i != endIdx)
-	{
-		var particle = pool.FromIndex(i);
-		var randSeed = particle.Get(rndField);
+	var i = começar Idx;
+	(i!= endIdx)
+	(
+		var partícula = pool.FromIndex(i);
+		var randSeed = partícula.Get (rndField);
 
-		var x = (randSeed.GetFloat(RandomOffset.Offset2A + SeedOffset) - 0.5f)*range;
-		var z = (randSeed.GetFloat(RandomOffset.Offset2B + SeedOffset) - 0.5f) * range;
+		var x = (randSeed.GetFloat (RandomOffset.Offset2A + SeedOffset) - 0.5f)*range;
+		var z = (randSeed.GetFloat (RandomOffset.Offset2B + SeedOffset) - 0.5f) * intervalo;
 
-		var u = (randSeed.GetFloat(RandomOffset.Offset2A + SeedOffset) - 0.5f) * range;
-		var v = (randSeed.GetFloat(RandomOffset.Offset2B + SeedOffset) - 0.5f) * Math.PI;
+		var u = (randSeed.GetFloat (RandomOffset.Offset2A + SeedOffset) - 0.5f) * intervalo;
+		var v = (randSeed.GetFloat (RandomOffset.Offset2B + SeedOffset) - 0.5f) * Math.PI;
 
 		var xz = (float) Math.Sin(u);
-		var particleRandPos = new Vector3((float) Math.Cos(v) * xz, (float)Math.Sqrt(1 - u*u), (float)Math.Sin(v) * xz);
-		particleRandPos.Normalize();
+		var partícula RandPos = novo Vector3((float) Math.Cos(v) * xz, (float)Math.Sqrt(1 - u*u), (float)Math.Sin(v) * xz);
+		partículaRandPos.Normalize();
 
-		particleRandPos *= magnitude;
-		WorldRotation.Rotate(ref particleRandPos); // WorldRotation is the current rotation of our initializer. We can use it as it is, since inheritance and offset are already taken in account.
+		partículas de partículas RandPos *= magnitude;
+		WorldRotation. Rotate(ref partículaRandPos); \/\/ WorldRotation é a rotação atual do nosso inicializador. Podemos usá-lo como é, uma vez que herança e deslocamento já são tomados em consideração.
 
-		(*((Vector3*) particle[posField])) = particleRandPos + WorldPosition; // WorldPosition is the current position of our initializer. We can use it as it is, since inheritance and offset are already taken in account.
+		(*((Vector3*) partícula[posField])) = partículaRandPos + WorldPosition; \/\/ WorldPosition é a posição atual do nosso inicializador. Podemos usá-lo como é, uma vez que herança e deslocamento já são tomados em consideração.
 
-		(*((Vector3*) particle[velField])) = particleRandPos * Strength;
+		(*((Vector3*) partícula[velField])) = partículaRandPos * Força;
 
 		i = (i + 1) % maxCapacity;
 	}
 }
 ```
 
-## Updater
+## Atualização
 
-We want our updater to change a particle's width and height every frame based on a simple sine function over the particle's life.
+Queremos que nosso atualizador altere a largura e a altura de uma partícula cada quadro com base em uma função sine simples sobre a vida da partícula.
 
-Because there's no such field yet, start by creating a new particle field. Let's name it `RactangleXY`:
+Porque ainda não há tal campo, comece criando um novo campo de partículas. Vamos nomeá-lo `RactangleXY`:
 
 ```cs
-  public static class CustomParticleFields
-  {
-      public static readonly ParticleFieldDescription<Vector2> RectangleXY = new ParticleFieldDescription<Vector2>("RectangleXY", new Vector2(1, 1));
+  classe estática pública CustomParticle Campos
+  (
+      public static readonly ParticleFieldDescription<Vector2> RectangleXY = new ParticleFieldDescription<Vector2>("RectangleXY", novo Vector2(1, 1));
   }
 ```
 
-The field has type @'Stride.Core.Mathematics.Vector2', since we only need two values for the width and the height. No fields are added automatically to the particles, so even if you have many declarations, the particle size won't change. Fields are only added when we plug a module which requires them, such as the custom updater below.
+O campo tem tipo @'Stride.Core.Mathematics. Vector2', uma vez que só precisamos de dois valores para a largura e a altura. Nenhum campo é adicionado automaticamente às partículas, por isso mesmo que você tenha muitas declarações, o tamanho da partícula não mudará. Os campos só são adicionados quando conectamos um módulo que os requer, como o atualizador personalizado abaixo.
 
-For API reference, see @'Stride.Particles.Modules.ParticleUpdater'.
+Para referência de API, consulte @'Stride.Particles.Modules.ParticleUpdater'.
 
 ```cs
-  [DataContract("CustomParticleUpdater")] // Used for serialization so that our custom object can be saved. A good practice is to have the data contract have the same name as the class name.
-  [Display("CustomUpdater")]				// Unless a display name is specified, the name of the data contract will be used. Sometimes we want to hide it and display something simpler instead.
-  public class CustomParticleUpdater : ParticleUpdater
-  {
-      [DataMemberIgnore]	// Public fields and properties are serialized. We want to avoid this in some cases and can use the DataMemberIgnore attribute.
-      public override bool IsPostUpdater => true; // By making this updater a post-updater we can ensure it will be called for both newly spawned and old particles (1 frame or older)
+  [DataContract("CustomParticleUpdater")] \/\/ Usado para serialização para que nosso objeto personalizado possa ser salvo. Uma boa prática é ter o contrato de dados tem o mesmo nome que o nome da classe.
+  [Display("CustomUpdater")] \/\/ A menos que um nome de exibição seja especificado, o nome do contrato de dados será usado. Às vezes queremos escondê-lo e exibir algo mais simples.
+  classe pública Personalizado ParticleUpdater : ParticleUpdater
+  (
+      [DataMemberIgnore] \/\/ Campos públicos e propriedades são serializados. Queremos evitar isso em alguns casos e podemos usar o atributo DataMemberIgnore.
+      public override bool IsPostUpdater => true; \/\/ Ao fazer este atualizador um pós-updater podemos garantir que ele será chamado para partículas recém-sombradas e antigas (1 quadro ou mais)
 
-      [DataMember(10)]	// This public field will be serialized. With the DataMember attribute we can specify the serialization and display order.
-      public AnimatedCurveEnum Curve; // Refer to the actual sample code for AnimatedCurveEnum
+      [DataMember(10)] \/\/ Este campo público será serializado. Com o atributo DataMember podemos especificar a serialização e a ordem de exibição.
+      animação públicaCurveEnum Curva; \/\/ Consulte o código de amostra real para AnimatedCurveEnum
 
-		// In the constructor we have to specify all the fields we need for this updater.
-		// It calculates our newly created field by using the particle's lifetime so we need "RectangleXY" and "Life"
-      public CustomParticleUpdater()
-      {
-          // This is going to be our "input" field
-          RequiredFields.Add(ParticleFields.Life);
+		\/\/ No construtor temos que especificar todos os campos que precisamos para este atualizador.
+		\/\/ Ele calcula nosso campo recém-criado usando a vida útil da partícula, então precisamos de "RectangleXY" e "Life"
+      anúncio()
+      (
+          \/\/ Este vai ser o nosso campo de "input"
+          RequeridasFields.Add (Fields de Partículas.Life);
 
-          // This is the field we want to update
-          // It is not part of the basic fields - we created it just for this updater
-          RequiredFields.Add(CustomParticleFields.RectangleXY);
+          \/\/ Este é o campo que queremos atualizar
+          \/\/ Não faz parte dos campos básicos - criamos apenas para este atualizador
+          RequeridasFields.Add (CustomParticleFields.RectangleXY);
       }
 
-		// The update method is called once every frame and requires the updater to iterate over all particles in the pool and update their fields.
-		// If the updater is a post-updater it will get called **after** spawning new particles for this frame and might overwrite their initial values on the same frame
-		// If the updater is not a post-updater it will get called **before** spawning new particles for this frame and can't overwrite their initial values for the first frame
-      public override void Update(float dt, ParticlePool pool)
-      {
+		\/\/ O método de atualização é chamado uma vez cada quadro e requer o atualizador para iterar sobre todas as partículas no pool e atualizar seus campos.
+		\/\/ Se o atualizador é um pós-updater ele vai se chamar **depois * ** gerando novas partículas para este quadro e pode substituir seus valores iniciais no mesmo quadro
+		\/\/ Se o atualizador não for um pós-updater ele será chamado **antes** de gerar novas partículas para este quadro e não pode substituir seus valores iniciais para o primeiro quadro
+      override público void Update (float dt, ParticlePool pool)
+      (
 			...
       }
   }
 ```
 
-Let's take a look at the `Update` method. The sample code is longer, but here we've trimmed it for the sake of simplicity.
+Vamos dar uma olhada no método `Update`. O código da amostra é mais longo, mas aqui aparamos para a simplicidade.
 
 ```cs
-public override void Update(float dt, ParticlePool pool)
-{
-  // Make sure the fields exist and avoid illegal memory access
-  if (!pool.FieldExists(ParticleFields.Life) || !pool.FieldExists(CustomParticleFields.RectangleXY))
-      return;
+override público void Update (float dt, ParticlePool pool)
+(
+  \/\/ Certifique-se de que os campos existem e evite o acesso à memória ilegal
+  if (!pool.FieldExists (ParticleFields.Life) | !pool.FieldExists (CustomParticleFields.RectangleXY)))
+      voltar;
 
-  var lifeField = pool.GetField(ParticleFields.Life);
-  var rectangleField = pool.GetField(CustomParticleFields.RectangleXY);
+  vida selvagem Campo = piscina.GetField (Fields de Partícula.Life);
+  var retangular Campo = piscina.GetField (CustomParticleFields.RectangleXY);
 
-  // X and Y sides depend on sin(time) and cos(time)
-  foreach (var particle in pool)
-  {
-      // Get the particle's remaining life. It's already normalized between 0 and 1
-      var lifePi = particle.Get(lifeField) * MathUtil.Pi;
+  \/\/ Os lados X e Y dependem do pecado (tempo) e do cos(tempo)
+  foreach (partícula var em piscina)
+  (
+      \/\/ A partícula continua a viver. Já está normalizado entre 0 e 1
+      vida selvagem Pi = partícula.Get (lifeField) * MathUtil. Pi;
 
-      // Set the rectangle as a simple function over time
-      particle.Set(rectangleField, new Vector2((float)Math.Sin(lifePi), (float)Math.Cos(lifePi)));
+      \/\/ Defina o retângulo como uma função simples ao longo do tempo
+      partícula. Set(rectangleField, novo Vector2((float)Math.Sin(lifePi), (float)Math.Cos (lifePi)));
   }
 }
 ```
 
-The updater will animate all particles' RectangleXY fields with a simple sine and cosine functions over their life.
+O atualizador irá animar todos os campos RectangleXY de partículas com um simples sine e funções cosinas ao longo de sua vida.
 
-In the next step we'll demonstrate how to display the created values.
+No próximo passo, vamos demonstrar como exibir os valores criados.
 
-## Shape builder
+## Construtor de forma
 
-The `shape builder` is the class which takes all particle fields and creates the actual shape we are going to render. It's a little long, so let's break it down.
+O construtor de formato ` é a classe que leva todos os campos de partículas e cria a forma real que vamos renderizar.` É um pouco longo, por isso vamos acabar com isto.
 
 ```cs
-	public override int QuadsPerParticle { get; protected set; } = 1;
+	override público int QuadsPerParticle { get; protected set; } = 1;
 ```
 
-The engine draws quads using 1 quad = 4 vertices = 6 indices, but we can only specify the number of quads we need. For a rectangle we need only one.
+O motor desenha quads usando 1 quad = 4 vértices = 6 índices, mas só podemos especificar o número de quads que precisamos. Para um retângulo precisamos apenas de um.
 
-> [!Note]
-> The number of quads is important because the vertex buffer is allocated and mapped prior to writing out the vertex data. If we allocate smaller buffer it might result in illegal memory access and corruption.
+> <x1\/>!Note<x2\/>
+> O número de quads é importante porque o buffer de vértice é alocado e mapeado antes de escrever os dados do vértice. Se alocarmos um buffer menor pode resultar em acesso ilegal de memória e corrupção.
 
 ```cs
-public unsafe override int BuildVertexBuffer(ParticleVertexBuilder vtxBuilder, Vector3 inverseViewX, Vector3 inverseViewY,
-  ref Vector3 spaceTranslation, ref Quaternion spaceRotation, float spaceScale, ParticleSorter sorter)
+substituição não segura pública int BuildVertexBuffer (ParticleVertexBuilder vtxBuilder, Vector3 inverseViewX, Vector3 inverseViewY,
+  ref Vector3 spaceTranslation, ref Quaternion spaceRotation, float spaceScale, ParticleSorter classificador)
 ```
 
-This method is called when it needs our shape builder to iterate over all particles and build the shape. The @'Stride.Particles.VertexLayouts.ParticleVertexBuilder' is the wrapper around our vertex stream. We'll use it to write out the vertex data for the particles.
+Este método é chamado quando precisa de nosso construtor de forma para iterar sobre todas as partículas e construir a forma. O @'Stride.Particles.VertexLayouts.ParticleVertexBuilder' é o wrapper em torno de nosso fluxo de vértice. Vamos usá-lo para escrever os dados do vértice para as partículas.
 
-`inverseViewX` and `inverseViewY` are unit vectors in camera space passed down to the shape builder if we need to generate camera-facing shapes.
+`inverseViewX` e `inverseViewY` são vetores unitários no espaço da câmera passados para o construtor de forma, se precisamos gerar formas voltadas para a câmera.
 
 ```cs
-  foreach (var particle in sorter)
-  {
-      var centralPos = particle.Get(positionField);
+  foreach (partícula var no classificador)
+  (
+      var central Pos = partícula.Get (posiçãoField);
 
-      var particleSize = sizeField.IsValid() ? particle.Get(sizeField) : 1f;
-      var rectangleSize = rectangleField.IsValid() ? particle.Get(rectangleField) : new Vector2(1, 1);
+      var partícula Tamanho = tamanhoField.IsValid() ? partícula. Get(sizeField) : 1f;
+      var rectangleSize = retangleField.IsValid() ? partícula.Get (rectangleField) : novo Vector2(1, 1);
       var unitX = invViewX * (particleSize * 0.5f) * rectangleSize.X;
-      var unitY = invViewY * (particleSize * 0.5f) * rectangleSize.Y;
+      var unitY = invViewY * (particleSize * 0.5f) * retangleSize.Y;
 
-      // Particle rotation. Positive value means clockwise rotation.
-      if (hasAngle) { ... }
+      \/\/ Rotação de partículas. Valor positivo significa rotação no sentido horário.
+      se (tem Ângulo) { ... }
 
-      var particlePos = centralPos - unitX + unitY;
-      var uvCoord = new Vector2(0, 0);
+      var partícula Pos = central Pos - unitX + unitY;
+      var uvCoord = novo Vector2(0, 0);
 
-      // 0f 0f
+      \/\/ 0f 0f
       vtxBuilder.SetAttribute(posAttribute, (IntPtr)(&particlePos));
       vtxBuilder.SetAttribute(texAttribute, (IntPtr)(&uvCoord));
       vtxBuilder.NextVertex();
 
-      // 1f 0f
-      particlePos += unitX * 2;
+      \/\/ 1f 0f
+      partículas de partículas Pos += unitX * 2;
       uvCoord.X = 1;
       vtxBuilder.SetAttribute(posAttribute, (IntPtr)(&particlePos));
       vtxBuilder.SetAttribute(texAttribute, (IntPtr)(&uvCoord));
       vtxBuilder.NextVertex();
 
-      // 1f 1f
-      particlePos -= unitY * 2;
+      \/\/ 1f 1f
+      partículas de partículas Pos -= unitY * 2;
       uvCoord.Y = 1;
       vtxBuilder.SetAttribute(posAttribute, (IntPtr)(&particlePos));
       vtxBuilder.SetAttribute(texAttribute, (IntPtr)(&uvCoord));
       vtxBuilder.NextVertex();
 
-      // 0f 1f
-      particlePos -= unitX * 2;
+      \/\/ 0f 1f
+      partículas de partículas Pos -= unitX * 2;
       uvCoord.X = 0;
       vtxBuilder.SetAttribute(posAttribute, (IntPtr)(&particlePos));
       vtxBuilder.SetAttribute(texAttribute, (IntPtr)(&uvCoord));
@@ -322,23 +322,23 @@ This method is called when it needs our shape builder to iterate over all partic
   }
 ```
 
-Our particles' width and height depend both on the uniform size field `Size` and the field we created earlier in this walkthrough, `RectangleXY`. From there, we need to set the positions and texture coordinates for the four corner vertices of our quad. The number of vertices we have to set is per particle four times the number of quads we requested.
+A largura e a altura das nossas partículas dependem tanto do campo de tamanho uniforme `Size` e do campo que criamos anteriormente neste avanço, `RectangleXY`. A partir daí, precisamos definir as posições e coordenadas de textura para os quatro vértices de canto do nosso quad. O número de vértices que temos de definir é por partícula quatro vezes o número de quads que pedimos.
 
-You can add more complicated shapes or attributes here if your game requires them.
+Você pode adicionar formas ou atributos mais complicados aqui se o seu jogo requerê-los.
 
-## Conclusion
+## Conclusão
 
-With these 4 custom modules you can add a lot of functionality to the particle engine and tailor behavior to your needs. Because they're all serialized and loaded in Game Studio, once you create them, you can use them directly from Game Studio, together with the core modules.
+Com esses 4 módulos personalizados, você pode adicionar muita funcionalidade ao mecanismo de partículas e adaptar o comportamento às suas necessidades. Porque todos eles são serializados e carregados no Game Studio, uma vez que você os cria, você pode usá-los diretamente no Game Studio, juntamente com os módulos principais.
 
-If you want to experiment with the modules, try adding a new `.cs` file to the `CustomParticles.Game` project. You can duplicate one of the existing classes, but don't forget to change the class name and the data contract to avoid collisions.
+Se você quiser experimentar os módulos, tente adicionar um novo arquivo `.cs` para o `CustomParticles. Projeto Game`. Você pode duplicar uma das classes existentes, mas não se esqueça de alterar o nome da classe e o contrato de dados para evitar colisões.
 
-You can then reload the scripts in Game Studio. If they don't load, relaunch your project. If there are no compilation errors in your code you should see the new modules in the spawners, initializers, updaters and shape builders lists.
+Você pode então recarregar os scripts no Game Studio. Se eles não carregarem, relança o seu projeto. Se não houver erros de compilação em seu código, você deve ver os novos módulos nas listas de proprietários, inicializadores, atualizadores e construtores de formas.
 
-## See also
+## Ver também
 
-* [Tutorial: Create a trail](create-a-trail.md)
-* [Tutorial: Particle materials](particle-materials.md)
-* [Tutorial: Inheritance](inheritance.md)
-* [Tutorial: Lasers and lightning](lasers-and-lightning.md)
-* [Particles](../index.md)
-* [Create particles](../create-particles.md)
+* [Tutorial: Criar uma trilha](create-a-trail.md)
+* [Tutorial: Materiais de partículas](particle-materials.md)
+* [Tutorial: Herança](inheritance.md)
+* [Tutorial: Lasers e raios](lasers-and-lightning.md)
+* [Partes](../index.md)
+* [Criar partículas](../create-particles.md)

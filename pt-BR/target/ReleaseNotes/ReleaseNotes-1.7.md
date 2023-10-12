@@ -1,393 +1,393 @@
-# Xenko release notes 1.7
+# Notas de lançamento do Xenko 1.7
 
-## Highlights
+## Destaques
 
-### Rendering
+### Renderização
 
-#### Forward+
+#### Em frente
 
-Xenko now features [Practical Clustered Shading](http://www.humus.name/Articles/PracticalClusteredShading.pdf), a technique similar to Forward+ rendering.
+Xenko agora possui [Practical Clustered Shading](http://www.humus.name/Articles/PracticalClusteredShading.pdf), uma técnica semelhante à renderização Forward+.
 
-It allows you to use many point and spot lights at the same time.
-You will gain more control over the lighting of your scene by adding lights wherever they are needed.
-It also works with transparent objects out of the box, just like ordinary forward rendering does.
+Ele permite que você use muitas luzes de ponto e ponto ao mesmo tempo.
+Você vai ganhar mais controle sobre a iluminação de sua cena adicionando luzes onde quer que sejam necessárias.
+Ele também funciona com objetos transparentes fora da caixa, assim como renderização ordinária.
 
-[![Hundreds of lights](media/ReleaseNotes-1.7/launcher_lights.jpg)](https://www.youtube.com/watch?v=QWZqNT9xD5Q "Hundreds of lights")
+[<x1\/> Centrais de luzes<x2\/>](https://www.youtube.com/watch?v=QWZqNT9xD5Q " Centenas de luzes<ex1\/>
 
-If your game requires Direct3D10+ (or equivalent OpenGL), this will be the default setting - no changes needed! As a bonus, you'll see a decrease in compilation times and the number of shader permutations.
+Se o seu jogo requer Direct3D10+ (ou OpenGL equivalente), esta será a configuração padrão - sem alterações necessárias! Como um bônus, você verá uma diminuição nos tempos de compilação e o número de permutações de shader.
 
-We also took this opportunity to rewrite most of our lighting code for improved performance and extensibility.
+Também aproveitamos esta oportunidade para reescrever a maior parte do nosso código de iluminação para melhorar o desempenho e a extensibilidade.
 
-#### Vulkan
+#### Vulc
 
-[Vulkan](https://www.khronos.org/vulkan/) joins our happy family of graphics platforms!
-Experimental support has also been added for Windows and Linux. Android will follow soon.
+[Vulkan](https://www.khronos.org/vulkan/) junta-se à nossa família feliz de plataformas gráficas!
+O suporte experimental também foi adicionado para Windows e Linux. O Android seguirá em breve.
 
-![Vulkan](media/ReleaseNotes-1.7/Vulkan.png)
+<x1\/>Vulkan<x2\/>
 
-Together with Direct3D12 and the recent overhaul of our rendering pipeline, this is another step toward preparing Xenko for the next generation of graphics. Stay tuned for performance improvements and hard numbers in the near future.
+Juntamente com o Direct3D12 e a recente revisão do nosso pipeline de renderização, este é outro passo para preparar o Xenko para a próxima geração de gráficos. Fique atento para melhorias de desempenho e números duros no futuro próximo.
 
-Try running your project on Vulkan by selecting it as the **Preferred Graphics Platform** in the **Rendering Settings** of your **Game Settings** asset.
+Tente executar seu projeto no Vulkan selecionando-o como o **Plataforma gráfica preferida** nas configurações de **Rendering** do seu ativo **Configurações de jogo**.
 
-### GameStudio Improvements
+### Melhorias do GameStudio
 
-#### Simplified Asset Creation
+#### Criação de ativos simplificados
 
-The workflow to create assets has been simplified! The new menu for asset creation contains multiple templates for each type of asset. You can now import assets from files more directly. With Xenko's efficient search function, creating assets should be faster and easier than ever!
+O fluxo de trabalho para criar ativos foi simplificado! O novo menu para criação de ativos contém vários modelos para cada tipo de ativo. Agora você pode importar ativos de arquivos mais diretamente. Com a função de pesquisa eficiente do Xenko, a criação de ativos deve ser mais rápida e mais fácil do que nunca!
 
-![New add asset menu](media/ReleaseNotes-1.7/NewAddAsset.png)
+<x1\/> Novo adicionar menu de ativos<x2\/>
 
-#### Camera Preview
+#### Visualização da câmera
 
-We've updated GameStudio's camera preview to now display only the camera currently selected. It also now displays the borders and the camera's name making it easier to see the camera and it's settings.
+Nós atualizamos a visualização da câmera do GameStudio para agora exibir apenas a câmera selecionada atualmente. Também agora exibe as bordas e o nome da câmera facilitando a visualização da câmera e suas configurações.
 
-![Camera preview](media/ReleaseNotes-1.7/CameraPreview.png)
+<x1\/> Visualização da câmara <x2\/>
 
-#### Drag & Drop Assets into the Property Grid
+#### Arrastar e soltar ativos na grade de propriedade
 
-So far, you could drag & drop assets into your scene or the tree view.
+Até agora, você pode arrastar e soltar ativos em sua cena ou a vista da árvore.
 
-New in this release, components can now be added to entities just by dragging & dropping matching assets into the property grid.
+Nova nesta versão, os componentes agora podem ser adicionados a entidades apenas arrastando e soltando ativos correspondentes na grade de propriedade.
 
-![Drag & Drop into the Property Grid](media/ReleaseNotes-1.7/dragdrop_propertyview.gif)
+<x1\/>Drag & Drop in the Property Grid<x2\/>
 
 #### Drag & Drop scripts
 
-You can also drag & drop scripts directly into the scene, tree view and property view:
+Você também pode arrastar e soltar scripts diretamente na cena, vista da árvore e vista da propriedade:
 
-![Drag & Drop into the Property Grid](media/ReleaseNotes-1.7/dragdrop_scripts.gif)
+<x1\/>Drag & Drop in the Property Grid<x2\/>
 
 ### Linux
 
-Linux users rejoice! Linux is now a supported platform of Xenko among Windows, Android, iOS, and more! All you need is a PC running Linux Ubuntu 16.04 x64 or equivalent with a video card supporting OpenGL 4.2 or Vulkan 1.0. Mono or .NET Core (which need to be installed separately) will be powering your game.
+Usuários do Linux se alegram! Linux é agora uma plataforma suportada de Xenko entre Windows, Android, iOS e muito mais! Tudo que você precisa é de um PC com Linux Ubuntu 16.04 x64 ou equivalente com uma placa de vídeo que suporta OpenGL 4.2 ou Vulkan 1.0. Mono ou .NET Core (que precisa ser instalado separadamente) estará alimentando seu jogo.
 
-In order to use the **Linux** platform, check **Linux** from the list of platforms in the GameStudio then compile.
+A fim de usar a plataforma **Linux**, verifique **Linux** da lista de plataformas no GameStudio então compile.
 
-![Select Platforms Dialog](media/ReleaseNotes-1.7/linux2.png)
+<x1\/>Selecionar Plataformas Diálogo<x2\/>
 
-Deployment to a remote Linux box is done via SSH when running your project from GameStudio.
+A implantação para uma caixa remota do Linux é feita via SSH ao executar seu projeto no GameStudio.
 
-![Platform Selector](media/ReleaseNotes-1.7/Platform_selector.png)
+<x1\/> Seletor de formulários <x2\/>
 
-To know more about our Linux support, read the [Linux documentation](/manual/platforms/linux/index.md)
+Para saber mais sobre nosso suporte ao Linux, leia a documentação [Linux](/manual/platforms/linux/index.md)
 
-### Audio
+### Áudio
 
-We've rewritten our Audio engine!
-While most changes are internal, the public API has improved, and we are still working to make it great!
+Reescritamos o nosso motor de áudio!
+Embora a maioria das mudanças sejam internas, a API pública melhorou, e ainda estamos trabalhando para torná-lo ótimo!
 
-The `SoundEffect` and `SoundMusic` classes have been consolidated into `Sound`, also `SoundEffectInstance` is now `SoundInstance`. Sound formats are now converted using [FFmpeg](https://ffmpeg.org/). Because of these updates, the range of supported formats has also improved.
+As classes `SoundEffect` e `SoundMusic` foram consolidadas em `Sound`, também `SoundEffectInstance` é agora `SoundInstance`. Os formatos de som agora são convertidos usando [FFmpeg](https://ffmpeg.org/). Devido a essas atualizações, a gama de formatos suportados também melhorou.
 
-Under the hood, the [CELT](http://celt-codec.org/) codec (part of [Opus](https://www.opus-codec.org/)) is now being used. We're delighted to say that performance has since skyrocketed! Music can now be mixed and crossfaded while streaming and decompressing directly from disk.
+Sob o capô, o [CELT](http://celt-codec.org/) codec (parte de [Opus](https://www.opus-codec.org/)) agora está sendo usado. Temos o prazer de dizer que o desempenho desde o início! A música agora pode ser misturada e cruzada ao transmitir e descomprimir diretamente do disco.
 
-Xenko's API now builds on OpenAL for Linux/macOS/iOS, on OpenSLES for Android and on XAudio2 for Windows platforms.
+A API do Xenko agora baseia-se no OpenAL para Linux\/macOS\/iOS, no OpenSLES para Android e no XAudio2 para plataformas Windows.
 
-## How To Upgrade
+## Como atualizar
 
-This section explains how to migrate a project from version 1.6.x to version 1.7.x.
+Esta seção explica como migrar um projeto da versão 1.6.x para a versão 1.7.x.
 
 ### UIComponent
 
-- `VirtualResolution` property has been renamed to `Resolution`
-- `VirtualResolutionMode` property has been renamed to `ResolutionStretch`
+- `VirtualResolução` propriedade foi renomeada para `Resolução`
+- `VirtualResolutionMode` propriedade foi renomeada para `ResolutionStretch`
 
-### ISpriteProvider
+### Espécie de Província
 
-The properties of type `Sprite` have been changed to properties of type `ISpriteProvider`. Currently two implementations of `ISpriteProvider` are available:
-* `SpriteFromSheet` for use with a `SpriteSheet` (i.e. a collection of `Sprite`)
-* `SpriteFromTexture` for use with a single `Texture`
+As propriedades do tipo `Sprite` foram alteradas para propriedades do tipo `ISpriteProvider`. Atualmente, duas implementações de `ISpriteProvider` estão disponíveis:
+* `SpriteFromSheet` para uso com um `SpriteSheet` (ou seja, uma coleção de `Sprite`)
+* `SpriteFromTexture` para uso com um único `Texture`
 
-To upgrade where a single Sprite was previously used cast the assignment with the following (`SpriteFromTexture` provides a convenient explicit converter from `Sprite`).
+Para atualizar onde um único Sprite foi usado anteriormente elenco a atribuição com o seguinte (`SpriteFromTexture` fornece um conversor explícito conveniente de `Sprite`).
 
 ```
-var button = new Button
-{
-  PressedImage = (SpriteFromTexture)new Sprite(Content.Load<Texture>("ImageButtonPressed"))
+botão var = novo botão
+(
+  PressedImage = (SpriteFromTexture)new Sprite(Content.Load<Texture>("ImageButtonPressed")))
 }
 ```
 
-To upgrade where a sprite from a SpriteSheet was previously used:
-Create a new `SpriteFromSheet` and provide a reference to the `SpriteSheet` instance and the corresponding frame index.
+Para atualizar onde um sprite de um SpriteSheet foi usado anteriormente:
+Crie uma nova instância `SpriteFromSheet` e forneça uma referência à instância `SpriteSheet` e ao índice de quadros correspondente.
 
 ```
-var button = new Button
-{
-  PressedImage = new SpriteFromSheet
-  {
-    Sheet = sprites,
-    CurrentFrame = sprites.FindImageIndex("ButtonPressed")
+botão var = novo botão
+(
+  PressionadoImage = novo SpriteFromSheet
+  (
+    Folha = sprites,
+    CurrentFrame = sprites.FindImageIndex("ButtonPresed")
   }
 }
 ```
 
-For convenience, we provide a helper method which does exactly the same: `SpriteFromSheet.Create(sprites, "ButtonPressed")`.
+Para conveniência, nós fornecemos um método auxiliar que faz exatamente o mesmo: `SpriteFromSheet.Create(sprites, "ButtonPresed")`.
 
-To change the `CurrentFrame` (which now only exists in `SpriteFromSheet`), a cast is required:
-
-```
-var provider = Entity.Get<SpriteComponent>().SpriteProvider as SpriteFromSheet;
-if (provider != null)
-  provider.CurrentFrame = SomeIndex;
-```
-
-### SoundEffect (Instance) and SoundMusic to Sound(Instance)
-
-Kindly note that there is no more `SoundMusic`. Instead, you should now use `Sound` and `SoundInstance` for any kind of sound.
-
-From the game studio, you can now set compression ratio, spatialization or you have the option to stream the sound directly from disk.
-You now need a `SoundInstance` to play a sound, the helper methods in `Sound` were convenient but a bit confusing.
-You can still assign `Sound` assets to Scripts like before:
+Para mudar o `CurrentFrame` (que agora só existe em `SpriteFromSheet`), é necessário um elenco:
 
 ```
-public Sound MySound;
-private SoundInstance mySoundInstance;
+var provider = Entity.Get<SpriteComponent>(). SpriteProvider como SpriteFromSheet;
+se (provider!= null)
+  provedor. CurrentFrame = SomeIndex;
 ```
-Also note, the way you use them has changed.
-Before:
+
+### SoundEffect (Instance) e SoundMusic to Sound (Instance)
+
+Por favor, note que não há mais `SoundMusic`. Em vez disso, você deve agora usar `Sound` e `SoundInstance` para qualquer tipo de som.
+
+A partir do estúdio de jogo, você agora pode definir relação de compressão, espacialização ou você tem a opção de transmitir o som diretamente do disco.
+Agora você precisa de um `SoundInstance` para tocar um som, os métodos auxiliares em `Sound` foram convenientes, mas um pouco confusos.
+Você ainda pode atribuir `Sound` ativos para Scripts como antes:
+
+```
+público Sound MySound;
+privado SoundInstance mySoundInstance;
+```
+Observe também, a maneira como você usá-los mudou.
+Antes:
 
 ```
 MySound.Play();
 ```
-After:
+Depois:
 
 ```
 mySoundInstance = MySound.CreateInstance();
 mySoundInstance.Play();
 ```
 
-Lastly, you no longer have to register (`AddListener`/`RemoveListener`) `AudioListenerComponent` from your code anymore.
+Por último, você já não precisa se registrar (`AddListener`\/`RemoveListener`) `AudioListenerComponent` de seu código mais.
 
-## Breaking changes
+## Alterações de ruptura
 
-### Audio
+### Áudio
 
-- Removed `DistanceScale` and `DopplerScale` since internally not all the backends were supporting it ( we might add it back in the future as a global factor if needed)
-- `DynamicSoundEffectInstance` has been removed, you can now use `DynamicSoundSource` to stream your custom sound sources. Works on every platform
-- Removed `SoundEffect`, `SoundEffectInstance`, `SoundMusic`. Please use `Sound` and `SoundInstance` instead of all kind of sounds
-- Removed `AddListener`, `RemoveListener` from `AudioSystem`
-- Many Methods that had `SoundEffect` or `SoundMusic` in the signature now have just `Sound`, e.g. `AudioEmitterComponent.AttachSound`
+- Removedo `DistanceScale` e `DopplerScale` uma vez que internamente nem todos os backends estavam apoiando-o (podemos adicioná-lo no futuro como um fator global se necessário)
+- `DynamicSoundEffectInstance` foi removido, você agora pode usar `DynamicSoundSource` para transmitir suas fontes de som personalizadas. Funciona em todas as plataformas
+- Removedo `SoundEffect`, `SoundEffectInstance`, `SoundMusic`. Por favor, use `Sound` e `SoundInstance` em vez de todo o tipo de sons
+- Removedo `AddListener`, `RemoveListener` de `AudioSystem`
+- Muitos Métodos que tinham `SoundEffect` ou `SoundMusic` na assinatura agora têm apenas `Sound`, e.g. `AudioEmitterComponent.AttachSound`
 
 ### UI
 
-- Font size has been completely changed to pixel height. Existing sprite font assets will be updated automatically
-- Properties of type `Sprite` have been changed to properties of type `ISpriteProvider`
+- O tamanho da fonte foi completamente alterado para a altura do pixel. Os ativos de fonte sprite existentes serão atualizados automaticamente
+- Propriedades do tipo `Sprite` foram alteradas para propriedades do tipo `ISpriteProvider`
 
-## Changelog
+## Mudança
 
-### Version 1.7.0-Beta
+### Versão 1.7.0-Beta
 
-Release date: 2016/07/01
+Data de lançamento: 2016\/07\/01
 
-#### Enhancements
+#### Melhorias
 
-##### General
+##### Geral
 
-- Debug locals were not displaying properly in some cases due to Mono.Cecil processing. This has been fixed and should now work properly.
+- Os locais de depuração não estavam exibindo corretamente em alguns casos devido ao Mono. Processamento de cimento. Isto foi corrigido e agora deve funcionar corretamente.
 
-##### Audio
+##### Áudio
 
-- You can now change the Pitch/Speed of a `SoundInstance`!
-- Added master volume control in `AudioEngine` (`AudioEngine.MasterVolume`)
+- Agora você pode mudar o Pitch\/Speed de um `SoundInstance`!
+- Adicionado controle de volume mestre em `AudioEngine` (`AudioEngine.MasterVolume`)
 
-##### Particles
+##### Partes
 
-This release brings many improvements to the particle engine.
+Esta versão traz muitas melhorias para o motor de partículas.
 
-- You can now create lightning and laser effects thanks to the arc position initializers and ability to follow two target points
-- Child particles support and attribute inheritance added, allowing one emitter's particles to follow and inherit attributes from another emitter's particles
-- Child ribbon particle samples showing how to create wispy particle trails in a single effect
-- Soft edge particles allow you to smooth out the billboard edges when rendering particles close to opaque objects
-- More spawner types, including Burst, On-Hit and a few other conditional ones
-- Color updater now uses a Color4 curve
+- Agora você pode criar efeitos relâmpagos e laser graças aos inicializadores de posição de arco e capacidade de seguir dois pontos de alvo
+- As partículas de criança suportam e atribuem herança adicionada, permitindo que as partículas de um emissor sigam e herdam atributos de outras partículas de emissor
+- Amostras de partículas de fita infantil mostrando como criar trilhas de partículas wispy em um único efeito
+- As partículas de borda macia permitem que você alise as bordas do outdoor ao renderizar partículas próximas a objetos opacos
+- Mais tipos de spawner, incluindo Burst, On-Hit e alguns outros condicional
+- Atualizador de cores agora usa uma curva Color4
 
 ##### Game Studio
 
-- The selection history feature has been rewritten. It is now shared by all editors and the asset view. The buttons to navigate the selection history have been moved to the property grid
-- The re-import operation has been replaced by a "Update asset from source" which directly applies the changes from the source to the asset without displaying the import UI. (For skeleton, model, sprite studio assets...)
-- Dropping a large number of files to import is now a lot faster
-- The notification when the sources of some assets have changed is now a dialog message instead of a notification popup on the corner of the screen
-- You can now drag & drop assets directly into the Property Grid to create components
+- O recurso de histórico de seleção foi reescrito. Agora é compartilhado por todos os editores e a vista dos ativos. Os botões para navegar no histórico de seleção foram movidos para a grade da propriedade
+- A operação de re-import foi substituída por um "Update asset from source" que aplica diretamente as mudanças da fonte para o ativo sem exibir a interface de usuário de importação. (Para esqueleto, modelo, ativos de estúdio sprite...)
+- Deixar cair um grande número de arquivos para importar é agora muito mais rápido
+- A notificação quando as fontes de alguns ativos mudaram é agora uma mensagem de diálogo em vez de um pop-up de notificação no canto da tela
+- Agora você pode arrastar e soltar ativos diretamente na Grade de Propriedades para criar componentes
 
 ##### UI
 
-- Signed Distance Field sprite font asset type added, allowing users to create sharp, scalable fonts which can be easily resized at runtime at no extra cost
-- Added support for EditText on Windows 10, Windows Store and Windows Phone platforms
+- Signed Distance Field sprite tipo de fonte adicionado, permitindo que os usuários criem fontes afiadas e escaláveis que podem ser facilmente redimensionadas no tempo de execução sem custo extra
+- Adicionado suporte para EditText no Windows 10, Windows Store e Windows Phone plataformas
 
-##### Assets
+##### Activos
 
-- The internal YAML format of the SceneAsset and PrefabAsset has been updated to be more generic regarding asset composite.
-- The tracking of source files for assets, in particular, has been improved and fixed
+- O formato YAML interno do SceneAsset e PrefabAsset foi atualizado para ser mais genérico em relação ao composto de ativos.
+- O rastreamento de arquivos de origem para ativos, em particular, foi melhorado e fixo
 
-##### Graphics
+##### Gráficos
 
-- Added a way to keep a constrained aspect ratio in Render Camera, and automatically have pillarboxes/letterboxes when there are screens with different ratios
-- Added the concept of "LogicalGroup" to easily do partial updates of constant buffer and resources
-- Improved OpenGL support: texture buffers, more texture formats, debug markers, etc.
-- Unified OpenTK: we now compile our own OpenTK for Windows, iOS and Android. This means our OpenGL renderer code is now unified and should have fewer bugs
-- Camera is not affected anymore by scaling
-- Implemented the required changes to allow rendering to Oculus Rift devices. Also, we have already begun including the native interfaces in the API for the Oculus Rift SDK. See the [VR documentation](../manual/virtual-reality/index.md) for more information.
+- Adicionado uma maneira de manter uma relação de aspecto restrito em Render Camera, e automaticamente ter pilarboxes\/letterboxes quando há telas com diferentes razões
+- Adicionado o conceito de "LogicalGroup" para facilmente fazer atualizações parciais de buffer constante e recursos
+- Suporte OpenGL aprimorado: buffers de textura, mais formatos de textura, marcadores de depuração, etc.
+- OpenTK Unified: agora compilamos nosso próprio OpenTK para Windows, iOS e Android. Isso significa que nosso código do renderizador OpenGL está agora unificado e deve ter menos bugs
+- A câmera não é mais afetada pelo escalonamento
+- Implementou as mudanças necessárias para permitir renderização para dispositivos Oculus Rift. Além disso, já começamos a incluir as interfaces nativas na API para o Oculus Rift SDK. Veja a documentação [VR](../manual/virtual-reality/index.md) para mais informações.
 
-##### Input
+##### Entrada
 
-- Added a helper method `InputManager.TransformPosition` to allow you to transform input events in the case of multiple viewports.
+- Adicionado um método auxiliar `InputManager.TransformPosition` para permitir que você transforme eventos de entrada no caso de vários viewports.
 
-#### Issues fixed
+#### Questões corrigidas
 
 ##### Game Studio
 
-- Undo/redo has been fixed in a lot of scenarios
-- GameStudio layout issue when creating a new game with the same name as a previous (but deleted) game
-- Issue preventing a newly created script to be marked as saved
-- Regression introduced in 1.6.5 where the texture region of a sprite was not correctly resized when the source image had been changed
-- Compilation errors occurring when creating a project with a dash character in its name. Additional checks have been added to replace illegal characters in script names
-- Multiple cases where modifications of a prefab were not propagated to the instances of this prefab
-- Preserve Nodes that were working improperly
-- Tracking changes in source images in the sprite sheet editor
-- Some scenarios where thumbnails never complete to build
-- Improved name collision handling when creating/importing assets
-- Issues with the selection of entities in the scene editor (some entities remained selected from the property grid point of view even after being unselected from the tree view)
-- Some windowing issues when multiple modal dialogs are displayed in the wrong order, preventing to close them
-- Several crashes occurring when modifying properties of entities
-- Drag'n'drop issues where it was sometimes hard to drag the correct asset or entity
+- Desfazer\/refazer foi corrigido em muitos cenários
+- GameStudio layout questão ao criar um novo jogo com o mesmo nome que um jogo anterior (mas excluído)
+- Emitir impedir que um script recém-criado seja marcado como salvo
+- Regressão introduzida em 1.6.5 onde a região de textura de um sprite não foi corretamente redimensionada quando a imagem de origem tinha sido alterada
+- Erros de compilação ocorrem ao criar um projeto com um caractere de traço em seu nome. Verificações adicionais foram adicionadas para substituir caracteres ilegais em nomes de script
+- Múltiplos casos em que as modificações de um prefab não foram propagadas para as instâncias deste pré-fabricado
+- Preserve Nodes que estavam trabalhando indevidamente
+- Alterações de rastreamento em imagens de origem no editor de folhas de sprite
+- Alguns cenários onde as miniaturas nunca são completas para construir
+- Manuseio melhorado da colisão do nome ao criar\/importar ativos
+- Questões com a seleção de entidades no editor de cena (algumas entidades permaneceram selecionadas do ponto de vista da rede de propriedade mesmo depois de não serem selecionadas da vista da árvore)
+- Alguns problemas de janela quando vários diálogos modais são exibidos na ordem errada, evitando fechá-los
+- Várias falhas ocorrem ao modificar propriedades de entidades
+- Drag'n'drop problemas onde às vezes era difícil arrastar o ativo correto ou entidade
 
-### Version 1.7.1-Beta
+### Versão 1.7.1-Beta
 
-Release date: 2016/07/04
+Data de lançamento: 2016\/07\/04
 
-#### Enhancements
+#### Melhorias
 
-- Increase the speed when manipulating entities that comes from prefabs
+- Aumentar a velocidade quando manipular entidades que vem de pré-fabs
 
-#### Issues fixed
+#### Questões corrigidas
 
-- Fix scene editor not refreshing when changing properties of a component that was added just before
-- Fix audio engine creation on Windows 7 32bits
-- zlib1.dll was missing and preventing to use SDF fonts
-- Fix the rotation over time updater for particle systems
-- Fix the camera preview that wasn't properly handling when adding or removing the camera component
+- Corrigir editor de cena não refrescante ao alterar propriedades de um componente que foi adicionado pouco antes
+- Corrigir a criação do motor de áudio no Windows 7 32bits
+- zlib1.dll estava faltando e impedindo de usar fontes SDF
+- Corrigir a rotação ao longo do tempo de atualização para sistemas de partículas
+- Corrigir a visualização da câmera que não estava funcionando corretamente ao adicionar ou remover o componente da câmera
 
-### Version 1.7.2-Beta
+### Versão 1.7.2-Beta
 
-Release date: 2016/07/09
+Data de lançamento: 2016\/07\/2009
 
-#### Enhancements
+#### Melhorias
 
-- Error messages added when fonts fail to load.
-- Add new identification scheme for Linux deployement
-- Slightly faster initialization of projects in the Game Studio
+- Mensagens de erro adicionadas quando as fontes não carregarem.
+- Adicionar novo esquema de identificação para implantação Linux
+- Inicialização ligeiramente mais rápida de projetos no Game Studio
 
-#### Issues fixed
+#### Questões corrigidas
 
-- Fix issue making compute curve properties display improperly in the Game Studio.
-- Fix upgrade of assets that had SourceKeepSideBySide set to true
-- Fix a serialization issue with scenes that are using prefabs
-- Fix a potential crash that could occur when navigating through the selection history
-- Fix border thickness in UI did not take opacity into account
-- Fix copy of glslangValidator
-- Fix depth-stencil state of GameProfilingSystem
+- Corrigir problema fazendo com que as propriedades da curva de computação sejam exibidas incorretamente no Game Studio.
+- Fix upgrade de ativos que tinham SourceKeepSide BySide definido como verdadeiro
+- Corrigir um problema de serialização com cenas que estão usando prefabs
+- Corrigir um possível acidente que pode ocorrer ao navegar pelo histórico de seleção
+- A espessura da borda fixa na interface do usuário não levou em conta a opacidade
+- Cópia fixa de glslangValidator
+- Fix estado de estêncil de GameProfilingSystem
 
-### Version 1.7.3-Beta
+### Versão 1.7.3-Beta
 
-Release date: 2016/07/16
+Data de lançamento: 2016\/07\/16
 
-#### Enhancements
+#### Melhorias
 
-- Prevent unidentified exception to occur when the camera is not set in the graphics compositor
+- Evite a exceção não identificada para ocorrer quando a câmera não estiver definida no compositor gráfico
 
-#### Issues fixed
+#### Questões corrigidas
 
-- Fix the property grid that was malfunctioning after certain types of operation
-- Fix updates from prefab that were sometimes not propagated to the instances of this prefab
-- Fix thumbnails of source code asset that were not properly generated sometimes
-- DDS now properly set header flags when saving cubemaps
+- Corrigir a grade de propriedade que estava funcionando mal após certos tipos de operação
+- Corrigir atualizações do prefab que às vezes não foram propagadas para as instâncias deste pré-fabricado
+- Corrigir miniaturas de ativos de código fonte que não foram gerados corretamente às vezes
+- DDS agora definir corretamente bandeiras de cabeçalho ao salvar cubemaps
 
-### Version 1.7.4-Beta
+### Versão 1.7.4-Beta
 
-- Hotfix release (critical crash in editor)
+- Lançamento Hotfix (penha crítico no editor)
 
-### Version 1.7.5-Beta
+### Versão 1.7.5-Beta
 
-Release date: 2016/07/21
+Data de lançamento: 2016\/07\/21
 
-#### New features
+#### Novos recursos
 
-- Effects can now be compiled directly by the runtime without needing an attached developer computer with Connection Router. This is still quite slow (and will be optimized later), but at least it solves many problem caused by the previous workflow. You can still go back to the previous mode in the "package properties" (right-click on the package in solution explorer), and setting the "Remote Compiler"
+- Os efeitos agora podem ser compilados diretamente pelo tempo de execução sem precisar de um computador de desenvolvedor anexado com o Connection Router. Isso ainda é bastante lento (e será otimizado mais tarde), mas pelo menos resolve muitos problemas causados pelo fluxo de trabalho anterior. Você ainda pode voltar ao modo anterior nas "propriedades do pacote" (clique com o botão direito do mouse no pacote no explorador da solução), e definir o "Remote Compiler"
 
-#### Enhancements
+#### Melhorias
 
-- Faster startup time (serialization code is initialized and JIT-ed more lazily)
-- Compatible with latest Xamarin iOS Alpha (symbols are static-linked, so unused P/Invoke needs to be removed)
+- Tempo de inicialização mais rápido (o código de serialização é inicializado e JIT-ed mais preguiçoso)
+- Compatível com o mais recente Xamarin iOS Alpha (símbolos são ligados à estática, então P\/Invoke não utilizado precisa ser removido)
 
-#### Issues fixed
+#### Questões corrigidas
 
-- Some fonts were not working properly with the new Signed Distance Field feature ([#436](https://github.com/SiliconStudio/xenko/issues/436))
-- Green and blue channels were inverted in the color curve editor
+- Algumas fontes não estavam funcionando corretamente com o novo campo de distância assinado ([#436](https://github.com/SiliconStudio/xenko/issues/436))
+- Canais verdes e azuis foram invertidos no editor da curva de cor
 
-### Version 1.7.6-Beta
+### Versão 1.7.6-Beta
 
-Release date: 2016/07/22
+Data de lançamento: 2016\/07\/22
 
-#### New fatures
+#### Novos fatures
 
-- In the Sprite component, you can now choose the sampler between linear, point (nearest) and anisotropic ([#409](https://github.com/SiliconStudio/xenko/issues/409))
+- No componente Sprite, agora você pode escolher o sampler entre linear, ponto (nearest) e anisotropic ([#409](https://github.com/SiliconStudio/xenko/issues/409))
 
-#### Issues fixed
+#### Questões corrigidas
 
-- Default SpriteBatch and others precompiled shaders were missing integer precision, resulting shader links error on iOS
-- Particles: Ribbons geometry can now be split, useful to emit multiple separate groups of particles
-- D3D11: Check if QueryInterface of DebugDevice actually worked (sometimes it doesn't, i.e. when using RenderDoc)
-- Various fixes for additive animation
-- Fixed wrong exception text in AudioLayer initialization
+- SpriteBatch padrão e outros shaders pré-compilados estavam faltando precisão inteiro, resultando erro de links shader no iOS
+- Partes: A geometria das fitas agora pode ser dividida, útil para emitir vários grupos separados de partículas
+- D3D11: Verifique se a QueryInterface de DebugDevice realmente funcionou (às vezes não funciona, ou seja, quando estiver usando RenderDoc)
+- Várias correções para animação aditiva
+- Texto de exceção errado corrigido na inicialização do AudioLayer
 
-### Version 1.7.7-Beta
+### Versão 1.7.7-Beta
 
-Release date: 2016/07/29
+Data de lançamento: 2016\/07\/29
 
-#### New features
+#### Novos recursos
 
-- FBX: Added PivotPosition in ModelAsset (in case it is not properly centered)
-- Engine: Added an experimental "DebugConsoleSystem" to easily display text (API might change)
+- FBX: Adicionado PivotPosition em ModelAsset (no caso não é devidamente centrado)
+- Motor: Adicionado um experimental "DebugConsoleSystem" para exibir facilmente texto (API pode mudar)
 
-#### Issues fixed
+#### Questões corrigidas
 
-- GameStudio: Undo was not working properly for the first change (due to the undo flag not being properly reset)
-- GameStudio: Some asset change notifications were not sent properly in case of undo/redo
-- GameStudio: Entity focus was not working in some cases
-- GameStudio: Fix EntityComponent reloading after assembly reload
-- GameStudio: Picking in GameStudio was not working properly with some AMD cards
-- GameStudio: String could not be used on the value side of a dictionary (in property grid)
-- Audio: Only create one audio engine, even if multiple game are started
-- FBX: Fix some cases where a material was not properly set
-- Various bugfixes
+- GameStudio: Desfazer não estava funcionando corretamente para a primeira mudança (devido à bandeira desfazer não sendo corretamente reset)
+- GameStudio: Algumas notificações de alteração de ativos não foram enviadas corretamente em caso de desfazer\/refazer
+- GameStudio: Foco de entidade não estava funcionando em alguns casos
+- GameStudio: Fix EntityComponent reloading após a recarga de montagem
+- GameStudio: Escolher no GameStudio não estava funcionando corretamente com alguns cartões AMD
+- GameStudio: A corda não poderia ser usada no lado do valor de um dicionário (em grade de propriedade)
+- Áudio: Apenas crie um motor de áudio, mesmo que vários jogos sejam iniciados
+- FBX: Corrigir alguns casos em que um material não foi corretamente definido
+- Várias correções de bugs
 
-### Version 1.7.8-Beta
+### Versão 1.7.8-Beta
 
-Release date: 2016/08/05
+Data de lançamento: 2016\/08\/05
 
-#### New features
+#### Novos recursos
 
-- Greatly improved performance when building assets (esp. when no changes) and loading Visual Studio solution; it was due to wildcard patterns in our build target files, forcing MSBuild to list files recursively
-- Serialization code is now lockless for the hot path (faster startup)
-- Graphics profile are now cached on D3D, making it faster to open new 3D windows in the GameStudio
+- Excelente desempenho melhorado quando a construção de ativos (esp. quando nenhuma mudança) e o carregamento da solução Visual Studio; foi devido a padrões wildcard em nossos arquivos de destino de compilação, forçando MSBuild a listar arquivos recursivamente
+- Código de serialização é agora sem fechadura para o caminho quente (iniciação mais baixa)
+- O perfil gráfico agora está em cache no D3D, tornando-o mais rápido para abrir novas janelas 3D no GameStudio
 
-#### Issues fixed
+#### Questões corrigidas
 
-- Physics bugfixes & optimizations (don't process bone when disabled, and disabled in editor)
-- SDL2.dll was missing when targeting OpenGL
-- Vulkan: sometimes texture pixel size was not properly computed, resulting in invalid Texture CPU readback
-- Fixed a crash when creating new packages
-- D3D12: pipeline state was not properly reset on ClearState & CommandList resets
-- D3D12: rewrote texture and buffer initial data upload, which was failing on AMD hardware
-- D3D12: optimizations to avoid calling unecessary state changes
+- Física bugfixes & optimizations (não processe osso quando desativado, e desativado no editor)
+- O SDL2.dll estava faltando ao segmentar OpenGL
+- Vulkan: às vezes o tamanho do pixel de textura não foi devidamente computado, resultando em retorno inválido da CPU Texture
+- Corrigido um acidente ao criar novos pacotes
+- D3D12: o estado do pipeline não foi devidamente redefinido em ClearState & CommandList resets
+- D3D12: reescrever textura e buffer upload de dados iniciais, que estava falhando no hardware AMD
+- D3D12: otimizações para evitar chamar mudanças de estado não-ecessárias
 
-### Version 1.7.9-Beta
+### Versão 1.7.9-Beta
 
-Release date: 2016/08/05
+Data de lançamento: 2016\/08\/05
 
-Note: emergency bugfix for 1.7.8 release, which was not properly copying native libraries.
+Nota: bugfix de emergência para versão 1.7.8, que não estava copiando corretamente bibliotecas nativas.
 
-## Known Issues
+## Questões conhecidas
 
-- Sometimes duplicate contacts are detected by the physics engine.
-- On Linux, when switching the underlying Graphics Platform, rendering will not occur. Delete the cache, local and roaming folder on the Linux host and restarting the game should fix the issue.
-- Linux Mono has some troubles with the new effect compiler (since 1.7.5-Beta). Please use the "remote compiler" in the "package properties" (right-click on the package in solution explorer), or use Linux CoreCLR in the meantime.
+- Às vezes, contatos duplicados são detectados pelo motor de física.
+- No Linux, ao alternar a plataforma gráfica subjacente, a renderização não ocorrerá. Excluir o cache, local e roaming pasta no host Linux e reiniciar o jogo deve corrigir o problema.
+- Linux Mono tem alguns problemas com o novo compilador de efeitos (desde 1.7.5-Beta). Por favor, use o "compilador remoto" nas "propriedades do pacote" (clique com o botão direito do mouse no pacote em explorador de soluções), ou use Linux CoreCLR entretanto.

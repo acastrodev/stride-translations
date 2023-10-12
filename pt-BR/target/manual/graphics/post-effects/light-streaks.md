@@ -1,33 +1,33 @@
-# Light streaks
+# Estrefas de luz
 
-<span class="badge text-bg-primary">Intermediate</span>
-<span class="badge text-bg-success">Artist</span>
+<x1\/> Intermediário <x2\/>
+<x3\/>Artista <x4\/>
 
-Similar to the [bloom effect](bloom.md), the **light streak** effect uses the result of the [bright filter](bright-filter.md) to make the bright areas bleed along a direction. It creates star-pattern beams from the light point.
+Semelhante ao efeito [bloom](bloom.md), o efeito **light streak** usa o resultado do filtro [bright](bright-filter.md) para fazer as áreas brilhantes sangrar ao longo de uma direção. Ele cria feixes de padrão estrela do ponto de luz.
 
-![media/light-streaks-1.png](media/light-streaks-1.png)
+<x1\/>media\/light-streaks-1.png<x2\/>
 
-## Properties
+## Propriedades
 
-![media/light-streaks-2.png](media/light-streaks-2.png)
+<x1\/>media\/light-streaks-2.png<x2\/>
 
-| Property | Description |
+| Propriedade | Descrição |
 | ------------------------- | ---------------- 
-| Amount | Strength of the light streak |
-| Streak Count | Number of beams emitted by a bright point. The more streaks, the higher the performance cost. |
-| Attenuation | How fast the light attenuates along a streak (0 for immediate attenuation, 1 for no attenuation) |
-| Phase | Phase (angle) of the star-like pattern |
-| Color Aberration Strength | Strength of the color aberration along the streaks. <br>![media/light-streaks-3.png](media/light-streaks-3.png) <br>Notice the streaks involve multiple colors (yellow, purple, green, pink). |
-| Is Anamorphic | Simulates the behavior of anamorphic lenses, widely used in Hollywood productions. <br>![media/light-streaks-4.png](media/light-streaks-4.png) <br> The effect above is achieved by using two light streaks with a phase of 0, enabling anamorphic mode, and slightly distorting the bright pass result horizontally. |
+| Montante | Força da mancha de luz |
+| Contagem de Streak | Número de feixes emitidos por um ponto brilhante. Quanto mais manchas, maior o custo de desempenho. |
+| Atenuação | Quão rápido a luz atenua ao longo de uma série (0 para atenuação imediata, 1 para nenhuma atenuação) |
+| Fase | Fase (ângulo) do padrão semelhante a estrela |
+| Cor Aberração Força | Força da aberração de cor ao longo das manchas. <x1\/><x2\/>media\/light-streaks-3.png<x3\/> <x4\/> Anote as faixas envolvem várias cores (amarelo, roxo, verde, rosa). |
+| É Anamórfico | Simula o comportamento das lentes anamórficas, amplamente utilizadas nas produções de Hollywood. <x1\/><x2\/>media\/light-streaks-4.png<x3\/> <x4\/> O efeito acima é alcançado usando duas sequências de luz com uma fase de 0, permitindo o modo anamorfo, e ligeiramente distorcendo o resultado de passagem brilhante horizontalmente. |
 
-## See also
+## Ver também
 
 * [Anti-aliasing](anti-aliasing.md)
-* [Fog](fog.md)
-* [Outline](outline.md)
-* [Ambient occlusion](ambient-occlusion.md)
-* [Bloom](bloom.md)
-* [Bright filter](bright-filter.md)
-* [Color transforms](color-transforms/index.md)
-* [Depth of field](depth-of-field.md)
-* [Lens flare](lens-flare.md)
+* [Fogão](fog.md)
+* [Linha de produção](outline.md)
+* [Oclusão ambiente](ambient-occlusion.md)
+* [Floresce](bloom.md)
+* [Filtro brilhante](bright-filter.md)
+* [Transformações de cor](color-transforms/index.md)
+* [Profundidade de campo](depth-of-field.md)
+* [Flare de lente](lens-flare.md)

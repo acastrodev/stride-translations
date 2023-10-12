@@ -3,39 +3,39 @@
 <body>
 <trans-unit id="tu1" xml:space="preserve">
 <source xml:lang="en">Particle spawners</source>
-<target xml:lang="pt">Particle spawners</target>
+<target xml:lang="pt">Espawners de partículas</target>
 </trans-unit>
 <trans-unit id="tu2" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Beginner<x id="2"/>
 <x id="3"/>Artist<x id="4"/>
 <x id="5"/>Programmer<x id="6"/></source>
-<target xml:lang="pt"><x id="1"/>Beginner<x id="2"/>
-<x id="3"/>Artist<x id="4"/>
-<x id="5"/>Programmer<x id="6"/></target>
+<target xml:lang="pt">&lt;x1\/&gt;Introdução&lt;x2\/&gt;
+&lt;x3\/&gt;Artista &lt;x4\/&gt;
+&lt;x5\/&gt; Programador &lt;x6\/&gt;</target>
 </trans-unit>
 <trans-unit id="tu3" xml:space="preserve">
 <source xml:lang="en"><g id="1">Particle spawners</g> control when, how many, and how quickly particles are emitted. Emitters need at least one spawner, but can contain multiple spawners with different settings.</source>
-<target xml:lang="pt"><g id="1">Particle spawners</g> control when, how many, and how quickly particles are emitted. Emitters need at least one spawner, but can contain multiple spawners with different settings.</target>
+<target xml:lang="pt"><g id="1"> Espalhadores de partículas</g> control quando, quantos, e quão rapidamente as partículas são emitidas. Os emissores precisam de pelo menos um spawner, mas podem conter vários spawners com configurações diferentes.</target>
 </trans-unit>
 <trans-unit id="tu4" xml:space="preserve">
 <source xml:lang="en">Per second</source>
-<target xml:lang="pt">Per second</target>
+<target xml:lang="pt">Por segundo</target>
 </trans-unit>
 <trans-unit id="tu5" xml:space="preserve">
 <source xml:lang="en">Emits a fixed number of particles per second. It balances and interpolates them and is stable even if the framerate changes or drops. For example, at a rate of 20 particles per second, the spawner spawns one particle every three frames for 60fps games and two particles for every three frames (skipping every third frame) for 30fps games.</source>
-<target xml:lang="pt">Emits a fixed number of particles per second. It balances and interpolates them and is stable even if the framerate changes or drops. For example, at a rate of 20 particles per second, the spawner spawns one particle every three frames for 60fps games and two particles for every three frames (skipping every third frame) for 30fps games.</target>
+<target xml:lang="pt">Emite um número fixo de partículas por segundo. Ele equilibra e interpola-los e é estável, mesmo se o framerate muda ou cai. Por exemplo, a uma taxa de 20 partículas por segundo, o spawner gera uma partícula a cada três quadros para 60fps jogos e duas partículas para cada três frames (skipping cada terceiro frame) para 30fps jogos.</target>
 </trans-unit>
 <trans-unit id="tu6" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>media/particles-reference-spawners-1.png<x id="2"/></source>
-<target xml:lang="pt"><x id="1"/>media/particles-reference-spawners-1.png<x id="2"/></target>
+<target xml:lang="pt">&lt;x1\/&gt;media\/particles-reference-spawners-1.png&lt;x2\/&gt;</target>
 </trans-unit>
 <trans-unit id="tu7" xml:space="preserve">
 <source xml:lang="en">Property</source>
-<target xml:lang="pt">Property</target>
+<target xml:lang="pt">Propriedade</target>
 </trans-unit>
 <trans-unit id="tu8" xml:space="preserve">
 <source xml:lang="en">Description</source>
-<target xml:lang="pt">Description</target>
+<target xml:lang="pt">Descrição</target>
 </trans-unit>
 <trans-unit id="tu9" xml:space="preserve">
 <source xml:lang="en">Loop</source>
@@ -43,7 +43,7 @@
 </trans-unit>
 <trans-unit id="tu10" xml:space="preserve">
 <source xml:lang="en">To have the spawner loop when it reaches the end of its duration, select <g id="1">Looping</g> (default). To have the spawner loop with no wait between each loop, select <g id="2">Looping, no delay</g>. To have the spawner spawn once and then stop, select <g id="3">One shot</g>.</source>
-<target xml:lang="pt">To have the spawner loop when it reaches the end of its duration, select <g id="1">Looping</g> (default). To have the spawner loop with no wait between each loop, select <g id="2">Looping, no delay</g>. To have the spawner spawn once and then stop, select <g id="3">One shot</g>.</target>
+<target xml:lang="pt">Para ter o loop de spawner quando atingir o final de sua duração, selecione <g id="1">Looping</g> (padrão). Para ter o loop de spawner sem espera entre cada loop, selecione <g id="2">Looping, sem delay</g>. Para ter o spawner gerado uma vez e depois parar, selecione <g id="3">One shot</g>.</target>
 </trans-unit>
 <trans-unit id="tu11" xml:space="preserve">
 <source xml:lang="en">Delay</source>
@@ -51,43 +51,43 @@
 </trans-unit>
 <trans-unit id="tu12" xml:space="preserve">
 <source xml:lang="en">How long (in seconds) the spawner waits before spawning. This is a random value between the X (minimum) and Y (maximum) values.</source>
-<target xml:lang="pt">How long (in seconds) the spawner waits before spawning. This is a random value between the X (minimum) and Y (maximum) values.</target>
+<target xml:lang="pt">Quanto tempo (em segundos) o proprietário espera antes de desova. Este é um valor aleatório entre os valores X (mínimo) e Y (máximo).</target>
 </trans-unit>
 <trans-unit id="tu13" xml:space="preserve">
 <source xml:lang="en">Duration</source>
-<target xml:lang="pt">Duration</target>
+<target xml:lang="pt">Duração</target>
 </trans-unit>
 <trans-unit id="tu14" xml:space="preserve">
 <source xml:lang="en">How long (in seconds) the spawner spawns particles for. At the end of the duration, the spawner either starts again or stops, depending on the Loop property.</source>
-<target xml:lang="pt">How long (in seconds) the spawner spawns particles for. At the end of the duration, the spawner either starts again or stops, depending on the Loop property.</target>
+<target xml:lang="pt">Quanto tempo (em segundos) o spawner gera partículas para. No final da duração, o spawner começa novamente ou pára, dependendo da propriedade Loop.</target>
 </trans-unit>
 <trans-unit id="tu15" xml:space="preserve">
 <source xml:lang="en">Particles</source>
-<target xml:lang="pt">Particles</target>
+<target xml:lang="pt">Partes</target>
 </trans-unit>
 <trans-unit id="tu16" xml:space="preserve">
 <source xml:lang="en">The number of particles the spawned per second. This can be a floating value (eg 36.875).</source>
-<target xml:lang="pt">The number of particles the spawned per second. This can be a floating value (eg 36.875).</target>
+<target xml:lang="pt">O número de partículas desovadas por segundo. Este pode ser um valor flutuante (por exemplo 36.875).</target>
 </trans-unit>
 <trans-unit id="tu17" xml:space="preserve">
 <source xml:lang="en">Per frame</source>
-<target xml:lang="pt">Per frame</target>
+<target xml:lang="pt">Por quadro</target>
 </trans-unit>
 <trans-unit id="tu18" xml:space="preserve">
 <source xml:lang="en">Emits a fixed number of particles per frame, regardless of framerate. This can be useful if you require a fixed number of particles - for example, exactly one every frame, which is useful for trails and ribbons.</source>
-<target xml:lang="pt">Emits a fixed number of particles per frame, regardless of framerate. This can be useful if you require a fixed number of particles - for example, exactly one every frame, which is useful for trails and ribbons.</target>
+<target xml:lang="pt">Emite um número fixo de partículas por quadro, independentemente de framerate. Isso pode ser útil se você precisar de um número fixo de partículas - por exemplo, exatamente um cada quadro, que é útil para trilhas e fitas.</target>
 </trans-unit>
 <trans-unit id="tu19" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>media/particles-reference-spawners-2.png<x id="2"/></source>
-<target xml:lang="pt"><x id="1"/>media/particles-reference-spawners-2.png<x id="2"/></target>
+<target xml:lang="pt">&lt;x1\/&gt;media\/particles-reference-spawners-2.png&lt;x2\/&gt;</target>
 </trans-unit>
 <trans-unit id="tu20" xml:space="preserve">
 <source xml:lang="en">Property</source>
-<target xml:lang="pt">Property</target>
+<target xml:lang="pt">Propriedade</target>
 </trans-unit>
 <trans-unit id="tu21" xml:space="preserve">
 <source xml:lang="en">Description</source>
-<target xml:lang="pt">Description</target>
+<target xml:lang="pt">Descrição</target>
 </trans-unit>
 <trans-unit id="tu22" xml:space="preserve">
 <source xml:lang="en">Loop</source>
@@ -95,7 +95,7 @@
 </trans-unit>
 <trans-unit id="tu23" xml:space="preserve">
 <source xml:lang="en">To have the spawner loop when it reaches the end of its duration, select <g id="1">Looping</g> (default). To have the spawner loop with no wait between each loop, select <g id="2">Looping, no delay</g>. To have the spawner spawn once and then stop, select <g id="3">One shot</g>.</source>
-<target xml:lang="pt">To have the spawner loop when it reaches the end of its duration, select <g id="1">Looping</g> (default). To have the spawner loop with no wait between each loop, select <g id="2">Looping, no delay</g>. To have the spawner spawn once and then stop, select <g id="3">One shot</g>.</target>
+<target xml:lang="pt">Para ter o loop de spawner quando atingir o final de sua duração, selecione <g id="1">Looping</g> (padrão). Para ter o loop de spawner sem espera entre cada loop, selecione <g id="2">Looping, sem delay</g>. Para ter o spawner gerado uma vez e depois parar, selecione <g id="3">One shot</g>.</target>
 </trans-unit>
 <trans-unit id="tu24" xml:space="preserve">
 <source xml:lang="en">Delay</source>
@@ -103,31 +103,31 @@
 </trans-unit>
 <trans-unit id="tu25" xml:space="preserve">
 <source xml:lang="en">How long (in seconds) the spawner waits before spawning. This is a random value between the X (minimum) and Y (maximum) values.</source>
-<target xml:lang="pt">How long (in seconds) the spawner waits before spawning. This is a random value between the X (minimum) and Y (maximum) values.</target>
+<target xml:lang="pt">Quanto tempo (em segundos) o proprietário espera antes de desova. Este é um valor aleatório entre os valores X (mínimo) e Y (máximo).</target>
 </trans-unit>
 <trans-unit id="tu26" xml:space="preserve">
 <source xml:lang="en">Duration</source>
-<target xml:lang="pt">Duration</target>
+<target xml:lang="pt">Duração</target>
 </trans-unit>
 <trans-unit id="tu27" xml:space="preserve">
 <source xml:lang="en">How long (in seconds) the spawner spawns particles for.</source>
-<target xml:lang="pt">How long (in seconds) the spawner spawns particles for.</target>
+<target xml:lang="pt">Quanto tempo (em segundos) o spawner gera partículas para.</target>
 </trans-unit>
 <trans-unit id="tu28" xml:space="preserve">
 <source xml:lang="en">Particles</source>
-<target xml:lang="pt">Particles</target>
+<target xml:lang="pt">Partes</target>
 </trans-unit>
 <trans-unit id="tu29" xml:space="preserve">
 <source xml:lang="en">The number of particles spawned per frame. The value can be a floating value, including values less than 1, in which case a new particle is spawned every few frames.</source>
-<target xml:lang="pt">The number of particles spawned per frame. The value can be a floating value, including values less than 1, in which case a new particle is spawned every few frames.</target>
+<target xml:lang="pt">O número de partículas geradas por quadro. O valor pode ser um valor flutuante, incluindo valores inferiores a 1, caso em que uma nova partícula é gerada a cada poucos quadros.</target>
 </trans-unit>
 <trans-unit id="tu30" xml:space="preserve">
 <source xml:lang="en">Framerate</source>
-<target xml:lang="pt">Framerate</target>
+<target xml:lang="pt">Taxa de quadros</target>
 </trans-unit>
 <trans-unit id="tu31" xml:space="preserve">
 <source xml:lang="en">This is for estimation purposes only when the engine calculates the maximum number of particles.</source>
-<target xml:lang="pt">This is for estimation purposes only when the engine calculates the maximum number of particles.</target>
+<target xml:lang="pt">Isto é para fins de estimativa somente quando o motor calcula o número máximo de partículas.</target>
 </trans-unit>
 <trans-unit id="tu32" xml:space="preserve">
 <source xml:lang="en">Burst</source>
@@ -135,19 +135,19 @@
 </trans-unit>
 <trans-unit id="tu33" xml:space="preserve">
 <source xml:lang="en">Emits all particles in one burst.</source>
-<target xml:lang="pt">Emits all particles in one burst.</target>
+<target xml:lang="pt">Emite todas as partículas em uma explosão.</target>
 </trans-unit>
 <trans-unit id="tu34" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>media/particles-reference-spawners-2.png<x id="2"/></source>
-<target xml:lang="pt"><x id="1"/>media/particles-reference-spawners-2.png<x id="2"/></target>
+<target xml:lang="pt">&lt;x1\/&gt;media\/particles-reference-spawners-2.png&lt;x2\/&gt;</target>
 </trans-unit>
 <trans-unit id="tu35" xml:space="preserve">
 <source xml:lang="en">Property</source>
-<target xml:lang="pt">Property</target>
+<target xml:lang="pt">Propriedade</target>
 </trans-unit>
 <trans-unit id="tu36" xml:space="preserve">
 <source xml:lang="en">Description</source>
-<target xml:lang="pt">Description</target>
+<target xml:lang="pt">Descrição</target>
 </trans-unit>
 <trans-unit id="tu37" xml:space="preserve">
 <source xml:lang="en">Loop</source>
@@ -155,7 +155,7 @@
 </trans-unit>
 <trans-unit id="tu38" xml:space="preserve">
 <source xml:lang="en">To have the spawner loop when it reaches the end of its duration, select <g id="1">Looping</g> (default). To have the spawner loop with no wait between each loop, select <g id="2">Looping, no delay</g>. To have the spawner spawn once and then stop, select <g id="3">One shot</g>.</source>
-<target xml:lang="pt">To have the spawner loop when it reaches the end of its duration, select <g id="1">Looping</g> (default). To have the spawner loop with no wait between each loop, select <g id="2">Looping, no delay</g>. To have the spawner spawn once and then stop, select <g id="3">One shot</g>.</target>
+<target xml:lang="pt">Para ter o loop de spawner quando atingir o final de sua duração, selecione <g id="1">Looping</g> (padrão). Para ter o loop de spawner sem espera entre cada loop, selecione <g id="2">Looping, sem delay</g>. Para ter o spawner gerado uma vez e depois parar, selecione <g id="3">One shot</g>.</target>
 </trans-unit>
 <trans-unit id="tu39" xml:space="preserve">
 <source xml:lang="en">Delay</source>
@@ -163,43 +163,43 @@
 </trans-unit>
 <trans-unit id="tu40" xml:space="preserve">
 <source xml:lang="en">How long (in seconds) the spawner waits before spawning. This is a random value between the X (minimum) and Y (maximum) values.</source>
-<target xml:lang="pt">How long (in seconds) the spawner waits before spawning. This is a random value between the X (minimum) and Y (maximum) values.</target>
+<target xml:lang="pt">Quanto tempo (em segundos) o proprietário espera antes de desova. Este é um valor aleatório entre os valores X (mínimo) e Y (máximo).</target>
 </trans-unit>
 <trans-unit id="tu41" xml:space="preserve">
 <source xml:lang="en">Duration</source>
-<target xml:lang="pt">Duration</target>
+<target xml:lang="pt">Duração</target>
 </trans-unit>
 <trans-unit id="tu42" xml:space="preserve">
 <source xml:lang="en">How long (in seconds) the spawner spawns particles for.</source>
-<target xml:lang="pt">How long (in seconds) the spawner spawns particles for.</target>
+<target xml:lang="pt">Quanto tempo (em segundos) o spawner gera partículas para.</target>
 </trans-unit>
 <trans-unit id="tu43" xml:space="preserve">
 <source xml:lang="en">Particles/burst</source>
-<target xml:lang="pt">Particles/burst</target>
+<target xml:lang="pt">Partículas\/burst</target>
 </trans-unit>
 <trans-unit id="tu44" xml:space="preserve">
 <source xml:lang="en">The number of particles spawned in each burst.</source>
-<target xml:lang="pt">The number of particles spawned in each burst.</target>
+<target xml:lang="pt">O número de partículas geradas em cada explosão.</target>
 </trans-unit>
 <trans-unit id="tu45" xml:space="preserve">
 <source xml:lang="en">Distance</source>
-<target xml:lang="pt">Distance</target>
+<target xml:lang="pt">Distância</target>
 </trans-unit>
 <trans-unit id="tu46" xml:space="preserve">
 <source xml:lang="en">Emits particles based on the distance traveled by the emitter. If the emitter doesn't move, it spawns no particles.</source>
-<target xml:lang="pt">Emits particles based on the distance traveled by the emitter. If the emitter doesn't move, it spawns no particles.</target>
+<target xml:lang="pt">Emite partículas com base na distância percorrida pelo emissor. Se a emissora não se mexer, não gera partículas.</target>
 </trans-unit>
 <trans-unit id="tu47" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>media/particles-reference-spawners-2.png<x id="2"/></source>
-<target xml:lang="pt"><x id="1"/>media/particles-reference-spawners-2.png<x id="2"/></target>
+<target xml:lang="pt">&lt;x1\/&gt;media\/particles-reference-spawners-2.png&lt;x2\/&gt;</target>
 </trans-unit>
 <trans-unit id="tu48" xml:space="preserve">
 <source xml:lang="en">Property</source>
-<target xml:lang="pt">Property</target>
+<target xml:lang="pt">Propriedade</target>
 </trans-unit>
 <trans-unit id="tu49" xml:space="preserve">
 <source xml:lang="en">Description</source>
-<target xml:lang="pt">Description</target>
+<target xml:lang="pt">Descrição</target>
 </trans-unit>
 <trans-unit id="tu50" xml:space="preserve">
 <source xml:lang="en">Loop</source>
@@ -207,7 +207,7 @@
 </trans-unit>
 <trans-unit id="tu51" xml:space="preserve">
 <source xml:lang="en">To have the spawner loop when it reaches the end of its duration, select <g id="1">Looping</g> (default). To have the spawner loop with no wait between each loop, select <g id="2">Looping, no delay</g>. To have the spawner spawn once and then stop, select <g id="3">One shot</g>.</source>
-<target xml:lang="pt">To have the spawner loop when it reaches the end of its duration, select <g id="1">Looping</g> (default). To have the spawner loop with no wait between each loop, select <g id="2">Looping, no delay</g>. To have the spawner spawn once and then stop, select <g id="3">One shot</g>.</target>
+<target xml:lang="pt">Para ter o loop de spawner quando atingir o final de sua duração, selecione <g id="1">Looping</g> (padrão). Para ter o loop de spawner sem espera entre cada loop, selecione <g id="2">Looping, sem delay</g>. Para ter o spawner gerado uma vez e depois parar, selecione <g id="3">One shot</g>.</target>
 </trans-unit>
 <trans-unit id="tu52" xml:space="preserve">
 <source xml:lang="en">Delay</source>
@@ -215,43 +215,43 @@
 </trans-unit>
 <trans-unit id="tu53" xml:space="preserve">
 <source xml:lang="en">How long (in seconds) the spawner waits before spawning. This is a random value between the X (minimum) and Y (maximum) values.</source>
-<target xml:lang="pt">How long (in seconds) the spawner waits before spawning. This is a random value between the X (minimum) and Y (maximum) values.</target>
+<target xml:lang="pt">Quanto tempo (em segundos) o proprietário espera antes de desova. Este é um valor aleatório entre os valores X (mínimo) e Y (máximo).</target>
 </trans-unit>
 <trans-unit id="tu54" xml:space="preserve">
 <source xml:lang="en">Duration</source>
-<target xml:lang="pt">Duration</target>
+<target xml:lang="pt">Duração</target>
 </trans-unit>
 <trans-unit id="tu55" xml:space="preserve">
 <source xml:lang="en">How long (in seconds) the spawner spawns particles for.</source>
-<target xml:lang="pt">How long (in seconds) the spawner spawns particles for.</target>
+<target xml:lang="pt">Quanto tempo (em segundos) o spawner gera partículas para.</target>
 </trans-unit>
 <trans-unit id="tu56" xml:space="preserve">
 <source xml:lang="en">Particles/unit</source>
-<target xml:lang="pt">Particles/unit</target>
+<target xml:lang="pt">Partículas\/unidade</target>
 </trans-unit>
 <trans-unit id="tu57" xml:space="preserve">
 <source xml:lang="en">The number of particles spawned for every distance unit the spawner moves. You can use fractions if you need fewer than one particle per distance unit. The rate adjusts with scaling.</source>
-<target xml:lang="pt">The number of particles spawned for every distance unit the spawner moves. You can use fractions if you need fewer than one particle per distance unit. The rate adjusts with scaling.</target>
+<target xml:lang="pt">O número de partículas geradas para cada unidade de distância que o proprietário se move. Você pode usar frações se precisar de menos de uma partícula por unidade de distância. A taxa ajusta-se com escalonamento.</target>
 </trans-unit>
 <trans-unit id="tu58" xml:space="preserve">
 <source xml:lang="en">From parent</source>
-<target xml:lang="pt">From parent</target>
+<target xml:lang="pt">Do pai</target>
 </trans-unit>
 <trans-unit id="tu59" xml:space="preserve">
 <source xml:lang="en">Emits particles based on other particles (parents). When certain conditions in a parent particle are met, the spawner spawns particles.</source>
-<target xml:lang="pt">Emits particles based on other particles (parents). When certain conditions in a parent particle are met, the spawner spawns particles.</target>
+<target xml:lang="pt">Emite partículas baseadas em outras partículas (pais). Quando certas condições em uma partícula pai são atendidas, o spawner gera partículas.</target>
 </trans-unit>
 <trans-unit id="tu60" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>media/particles-reference-spawners-2.png<x id="2"/></source>
-<target xml:lang="pt"><x id="1"/>media/particles-reference-spawners-2.png<x id="2"/></target>
+<target xml:lang="pt">&lt;x1\/&gt;media\/particles-reference-spawners-2.png&lt;x2\/&gt;</target>
 </trans-unit>
 <trans-unit id="tu61" xml:space="preserve">
 <source xml:lang="en">Property</source>
-<target xml:lang="pt">Property</target>
+<target xml:lang="pt">Propriedade</target>
 </trans-unit>
 <trans-unit id="tu62" xml:space="preserve">
 <source xml:lang="en">Description</source>
-<target xml:lang="pt">Description</target>
+<target xml:lang="pt">Descrição</target>
 </trans-unit>
 <trans-unit id="tu63" xml:space="preserve">
 <source xml:lang="en">Loop</source>
@@ -259,7 +259,7 @@
 </trans-unit>
 <trans-unit id="tu64" xml:space="preserve">
 <source xml:lang="en">To have the spawner loop when it reaches the end of its duration, select <g id="1">Looping</g> (default). To have the spawner loop with no wait between each loop, select <g id="2">Looping, no delay</g>. To have the spawner spawn once and then stop, select <g id="3">One shot</g>.</source>
-<target xml:lang="pt">To have the spawner loop when it reaches the end of its duration, select <g id="1">Looping</g> (default). To have the spawner loop with no wait between each loop, select <g id="2">Looping, no delay</g>. To have the spawner spawn once and then stop, select <g id="3">One shot</g>.</target>
+<target xml:lang="pt">Para ter o loop de spawner quando atingir o final de sua duração, selecione <g id="1">Looping</g> (padrão). Para ter o loop de spawner sem espera entre cada loop, selecione <g id="2">Looping, sem delay</g>. Para ter o spawner gerado uma vez e depois parar, selecione <g id="3">One shot</g>.</target>
 </trans-unit>
 <trans-unit id="tu65" xml:space="preserve">
 <source xml:lang="en">Delay</source>
@@ -267,39 +267,39 @@
 </trans-unit>
 <trans-unit id="tu66" xml:space="preserve">
 <source xml:lang="en">How long (in seconds) the spawner waits before spawning. This is a random value between the X (minimum) and Y (maximum) values.</source>
-<target xml:lang="pt">How long (in seconds) the spawner waits before spawning. This is a random value between the X (minimum) and Y (maximum) values.</target>
+<target xml:lang="pt">Quanto tempo (em segundos) o proprietário espera antes de desova. Este é um valor aleatório entre os valores X (mínimo) e Y (máximo).</target>
 </trans-unit>
 <trans-unit id="tu67" xml:space="preserve">
 <source xml:lang="en">Duration</source>
-<target xml:lang="pt">Duration</target>
+<target xml:lang="pt">Duração</target>
 </trans-unit>
 <trans-unit id="tu68" xml:space="preserve">
 <source xml:lang="en">How long (in seconds) the spawner spawns particles for.</source>
-<target xml:lang="pt">How long (in seconds) the spawner spawns particles for.</target>
+<target xml:lang="pt">Quanto tempo (em segundos) o spawner gera partículas para.</target>
 </trans-unit>
 <trans-unit id="tu69" xml:space="preserve">
 <source xml:lang="en">Parent emitter</source>
-<target xml:lang="pt">Parent emitter</target>
+<target xml:lang="pt">Emitter dos pais</target>
 </trans-unit>
 <trans-unit id="tu70" xml:space="preserve">
 <source xml:lang="en">The parent emitter, which should match the emitter's name set on that emitter.</source>
-<target xml:lang="pt">The parent emitter, which should match the emitter's name set on that emitter.</target>
+<target xml:lang="pt">O emissor-mãe, que deve corresponder ao nome do emissor definido nessa emissora.</target>
 </trans-unit>
 <trans-unit id="tu71" xml:space="preserve">
 <source xml:lang="en">Spawn Control Group</source>
-<target xml:lang="pt">Spawn Control Group</target>
+<target xml:lang="pt">Grupo de controle de spam</target>
 </trans-unit>
 <trans-unit id="tu72" xml:space="preserve">
 <source xml:lang="en">This field will be added to the parent particles for more precise control over which parent particle spawns how many children. There are 4 groups you can choose from and they should match the initializers' groups, if initializers require control.</source>
-<target xml:lang="pt">This field will be added to the parent particles for more precise control over which parent particle spawns how many children. There are 4 groups you can choose from and they should match the initializers' groups, if initializers require control.</target>
+<target xml:lang="pt">Este campo será adicionado às partículas-mãe para um controle mais preciso sobre o qual a partícula pai gera quantas crianças. Existem 4 grupos que você pode escolher e eles devem combinar os grupos de inicializadores, se os inicializadores exigem controle.</target>
 </trans-unit>
 <trans-unit id="tu73" xml:space="preserve">
 <source xml:lang="en">Particles/trigger</source>
-<target xml:lang="pt">Particles/trigger</target>
+<target xml:lang="pt">Partículas \/ gatilho</target>
 </trans-unit>
 <trans-unit id="tu74" xml:space="preserve">
 <source xml:lang="en">How many particles (min and max) are spawned from a parent each time the triggering condition is met.</source>
-<target xml:lang="pt">How many particles (min and max) are spawned from a parent each time the triggering condition is met.</target>
+<target xml:lang="pt">Quantas partículas (min e max) são geradas a partir de um pai cada vez que a condição de gatilho é satisfeita.</target>
 </trans-unit>
 <trans-unit id="tu75" xml:space="preserve">
 <source xml:lang="en">Particle Spawn Trigger</source>
@@ -307,7 +307,7 @@
 </trans-unit>
 <trans-unit id="tu76" xml:space="preserve">
 <source xml:lang="en">What condition triggers child particles spawning (detailed below)</source>
-<target xml:lang="pt">What condition triggers child particles spawning (detailed below)</target>
+<target xml:lang="pt">Que condição desencadeia desova de partículas de crianças (detalhado abaixo)</target>
 </trans-unit>
 <trans-unit id="tu77" xml:space="preserve">
 <source xml:lang="en">Particle Spawn Trigger</source>
@@ -315,31 +315,31 @@
 </trans-unit>
 <trans-unit id="tu78" xml:space="preserve">
 <source xml:lang="en">On Birth - Child particles are spawned once when a parent particle is born (once per parent)</source>
-<target xml:lang="pt">On Birth - Child particles are spawned once when a parent particle is born (once per parent)</target>
+<target xml:lang="pt">Sobre o nascimento - Partículas infantis são geradas uma vez quando uma partícula pai nasce (uma vez por pai)</target>
 </trans-unit>
 <trans-unit id="tu79" xml:space="preserve">
 <source xml:lang="en">On Death - Child particles are spawned once when a parent particle dies (once per parent)</source>
-<target xml:lang="pt">On Death - Child particles are spawned once when a parent particle dies (once per parent)</target>
+<target xml:lang="pt">Na Morte - As partículas de criança são geradas uma vez quando uma partícula pai morre (uma vez por pai)</target>
 </trans-unit>
 <trans-unit id="tu80" xml:space="preserve">
 <source xml:lang="en">Distance - Child particles are spawned per distance traveled as the parent particle moves</source>
-<target xml:lang="pt">Distance - Child particles are spawned per distance traveled as the parent particle moves</target>
+<target xml:lang="pt">Distância - Partículas de crianças são geradas por distância percorrida como a partícula pai se move</target>
 </trans-unit>
 <trans-unit id="tu81" xml:space="preserve">
 <source xml:lang="en">On Hit - Parent particles need to implement <g id="1">Collision Updater</g>. Child particles are spawned when a parent particle hits the surface.</source>
-<target xml:lang="pt">On Hit - Parent particles need to implement <g id="1">Collision Updater</g>. Child particles are spawned when a parent particle hits the surface.</target>
+<target xml:lang="pt">Em Hit - As partículas pai precisam implementar <g id="1">Collision Updater</g>. As partículas de crianças são geradas quando uma partícula pai atinge a superfície.</target>
 </trans-unit>
 <trans-unit id="tu82" xml:space="preserve">
 <source xml:lang="en">Lifetime - Child particles are spawned when the parent particle's lifetime is between two limits, A and B, expressed as normalized values (0 to 1) over the particle's lifetime. If A &lt; B, the period is 0..(A..B)..1, if B &gt; A the period is reversed to (0..B)..(A..1). This method is less precise than the On Birth/On Death conditions.</source>
-<target xml:lang="pt">Lifetime - Child particles are spawned when the parent particle's lifetime is between two limits, A and B, expressed as normalized values (0 to 1) over the particle's lifetime. If A &lt; B, the period is 0..(A..B)..1, if B &gt; A the period is reversed to (0..B)..(A..1). This method is less precise than the On Birth/On Death conditions.</target>
+<target xml:lang="pt">Vida - Partículas de crianças são geradas quando a vida da partícula pai está entre dois limites, A e B, expressos como valores normalizados (0 a 1) ao longo da vida da partícula. Se A &lt; B, o período é 0..(A..B)..1, se B &gt; O período é revertido para (0..B).( A..1).&lt; B, the period is 0..(A..B)..1, if B &gt; Este método é menos preciso do que as condições Sobre o Nascimento \/ Sobre a Morte.</target>
 </trans-unit>
 <trans-unit id="tu83" xml:space="preserve">
 <source xml:lang="en">See also</source>
-<target xml:lang="pt">See also</target>
+<target xml:lang="pt">Ver também</target>
 </trans-unit>
 <trans-unit id="tu84" xml:space="preserve">
 <source xml:lang="en"><g id="1">Create particles</g></source>
-<target xml:lang="pt"><g id="1">Create particles</g></target>
+<target xml:lang="pt"><g id="1">Criar partículas</g></target>
 </trans-unit>
 <trans-unit id="tu85" xml:space="preserve">
 <source xml:lang="en"><g id="1">Emitters</g></source>
@@ -347,19 +347,19 @@
 </trans-unit>
 <trans-unit id="tu86" xml:space="preserve">
 <source xml:lang="en"><g id="1">Shapes</g></source>
-<target xml:lang="pt"><g id="1">Shapes</g></target>
+<target xml:lang="pt"><g id="1">Formas</g></target>
 </trans-unit>
 <trans-unit id="tu87" xml:space="preserve">
 <source xml:lang="en"><g id="1">Materials</g></source>
-<target xml:lang="pt"><g id="1">Materials</g></target>
+<target xml:lang="pt"><g id="1">Materiais</g></target>
 </trans-unit>
 <trans-unit id="tu88" xml:space="preserve">
 <source xml:lang="en"><g id="1">Initializers</g></source>
-<target xml:lang="pt"><g id="1">Initializers</g></target>
+<target xml:lang="pt"><g id="1">Iniciantes</g></target>
 </trans-unit>
 <trans-unit id="tu89" xml:space="preserve">
 <source xml:lang="en"><g id="1">Updaters</g></source>
-<target xml:lang="pt"><g id="1">Updaters</g></target>
+<target xml:lang="pt"><g id="1">Atualizações</g></target>
 </trans-unit>
 </body>
 </file>

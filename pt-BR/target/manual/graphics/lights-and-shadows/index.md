@@ -1,19 +1,19 @@
-# Lights and shadows
+# Luzes e sombras
 
-<span class="badge text-bg-primary">Beginner</span>
-<span class="badge text-bg-success">Designer</span>
-<span class="badge text-bg-success">Artist</span>
+<x1\/>Introdução<x2\/>
+<x3\/>Designer<x4\/>
+<x5\/>Artista <x6\/>
 
-Lights in Stride are provided by [light components](xref:Stride.Engine.LightComponent). There are several kinds of light.
+As luzes em Stride são fornecidas por componentes [light](xref:Stride.Engine.LightComponent). Existem vários tipos de luz.
 
-## In this section
+## Nesta secção
 
-* [Add a light](add-a-light.md)
-* [Point lights](point-lights.md)
-* [Ambient lights](ambient-lights.md)
-* [Directional lights](directional-lights.md)
-* [Skybox lights](skybox-lights.md)
-* [Spot lights](spot-lights.md)
-* [Light probes](light-probes.md)
-* [Light shafts](light-shafts.md)
-* [Shadows](shadows.md)
+* [Adicionar uma luz](add-a-light.md)
+* [Luzes de ponto](point-lights.md)
+* [Luzes ambientais](ambient-lights.md)
+* [Luzes direcionais](directional-lights.md)
+* [Luzes Skybox](skybox-lights.md)
+* [Luzes do ponto](spot-lights.md)
+* [Sondas de luz](light-probes.md)
+* [Eixos de luz](light-shafts.md)
+* [Sombras](shadows.md)

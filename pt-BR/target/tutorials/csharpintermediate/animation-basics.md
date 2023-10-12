@@ -1,12 +1,12 @@
-# Animation basics
+# Básicos de animação
 
-This C# Intermediate tutorial covers the basics of animation with Stride.
+Este tutorial intermediário C# cobre os conceitos básicos de animação com Stride.
 
-## Explanation
+## Explicação
 
-All animations exist as animation clips assets in your project. From there on we can start, pause and fade animations by using Stride's animation component.
+Todas as animações existem como ativos de clipes de animação em seu projeto. A partir daí podemos começar, pausar e desvanecer animações usando o componente de animação da Stride.
 
-> [!Video https://www.youtube.com/embed/o924grDYDjU]
+> [!Vídeo https://www.youtube.com/embed/o924grDYDjU]
 
-## Code
+## Código
 [!code-csharp[AnimationBasics](../../../../stride/samples/Tutorials/CSharpIntermediate/CSharpIntermediate/CSharpIntermediate.Game/07_Animation/AnimationBasics.cs)]

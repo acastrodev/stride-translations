@@ -1,68 +1,68 @@
-# Render features
+# Render características
 
-A @'Stride.Rendering.RenderFeature' is responsible for drawing a given type of @'Stride.Rendering.RenderObject'.
+A @'Stride.Rendering.RenderFeature' é responsável por desenhar um determinado tipo de @'Stride. Renderização. RenderObject'.
 
-## Render phases
+## Fases do Render
 
-Render features have several phases.
+Render características têm várias fases.
 
-### Collect
+### Coleta
 
-The **collect** phase determines what needs to be processed and rendered. It's usually driven by the [graphics compositor](../graphics-compositor/index.md).
+A fase **collect** determina o que precisa ser processado e renderizado. Geralmente é conduzido pelo compositor [graphics](../graphics-compositor/index.md).
 
-The collect phase:
+A fase de recolha:
 
-* creates render views, and updating them with the most recent data such as view and projection matrices
-* creates and setting up render stages
-* performes visibility culling and sorting
+* cria visualizações de renderização e atualizá-las com os dados mais recentes, como visualização e projeção matrizes
+* cria e configura etapas de renderização
+* executa sinalização e classificação de visibilidade
 
-### Extract
+### Extrato
 
-The **extract** phase copies data from game states of previously collected objects to short-lived render-specific structures. It's usually driven by the @'Stride.Rendering.RenderSystem' and @'Stride.Rendering.RenderFeature's.
+A fase **extract** copia dados de estados de jogo de objetos coletados anteriormente para estruturas específicas de renderização de curta duração. Normalmente é conduzido pelo @'Stride. Renderização. RenderSystem' e @'Stride. Renderização. RenderFeature's.
 
-This should be as fast as possible and avoid heavy computations since game update and scripts are blocked. Heavy computations should be deferred to [Prepare](#prepare).
+Isso deve ser o mais rápido possível e evitar computações pesadas desde a atualização do jogo e scripts são bloqueados. Computações pesadas devem ser diferidas para [Prepare](#prepare).
 
-> [!Note]
-> Currently, Stride doesn't parallelize game updates and scripts, so they won't be resumed until the **prepare** and **draw** phases are finished.
+> <x1\/>!Note<x2\/>
+> Atualmente, o Stride não paralelo às atualizações e scripts do jogo, então eles não serão retomados até que as fases **prepare** e **draw** sejam concluídas.
 
-Example tasks:
+Exemplo de tarefas:
 
-* copying object matrices
-* copying material parameters
+* cópia de matrizes de objetos
+* parâmetros do material de cópia
 
-### Prepare
+### Preparem-se
 
-The **prepare** phase prepares GPU resources and performs heavy computations. This is usually driven by the @'Stride.Rendering.RenderSystem' and @'Stride.Rendering.RenderFeature's.
+A fase **prepare** prepara recursos de GPU e executa computação pesada. Isso geralmente é conduzido pelo @'Stride. Renderização. RenderSystem' e @'Stride. Renderização. RenderFeature's.
 
-Example tasks:
+Exemplo de tarefas:
 
-* computing lighting data and structures
-* filling constant buffers and resource tables
+* dados de iluminação de computação e estruturas
+* enchendo buffers constantes e tabelas de recursos
 
-### Draw
+### Desenho
 
-The **draw** phase fills the GPU command list.
+A fase **draw** preenche a lista de comandos GPU.
 
-Example tasks:
+Exemplo de tarefas:
 
-* setting up render textures
-* drawing combinations of render stage with render view.
+* configurando texturas de renderização
+* combinações de desenho de fase de renderização com vista de renderização.
 
-### Example
+### Exemplo
 
-A typical example of views and stages created during **collect** phase, used during the **draw** phase:
+Um exemplo típico de visões e estágios criados durante a fase **collect**, usado durante a fase **draw**:
 
-![media/render-features-draw-example.png](media/render-features-draw-example.png)
+<x1\/>media\/render-features-draw-example.png<x2\/>
 
-### Pipeline processors
+### Processadores de tubulação
 
-**Pipeline processors** are classes called when creating the [pipeline state](../low-level-api/pipeline-state.md). This lets you do things such as enable alpha blending or wireframe rendering in a specific render stage.
+** Os processadores pipeline** são classes chamadas ao criar o estado [pipeline](../low-level-api/pipeline-state.md). Isso permite que você faça coisas como permitir a mistura alfa ou renderização de wireframe em uma etapa de renderização específica.
 
-Stride includes several predefined pipeline processors. You can also create your own.
+O Stride inclui vários processadores de pipeline predefinidos. Você também pode criar seu próprio.
 
-## See also
+## Ver também
 
-* [Rendering pipeline](index.md)
-* [Render stages](render-stages.md)
-* [Effects and shaders](../effects-and-shaders/index.md)
-* [Graphics compositor](../graphics-compositor/index.md)
+* [Oleoduto de renderização](index.md)
+* [Etapas de renderização](render-stages.md)
+* [Efeitos e shaders](../effects-and-shaders/index.md)
+* [Compositor gráfico](../graphics-compositor/index.md)

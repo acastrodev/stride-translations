@@ -1,38 +1,38 @@
-# Error: "A SceneCameraRenderer in use has no camera assigned to its [Slot]. Make sure a camera is enabled and assigned to the [Slot]."
+# Erro: "Um SceneCameraRenderer em uso não tem nenhuma câmera atribuída a sua <x1\/>Slot<x2\/>. Certifique-se de que uma câmera está ativada e atribuída ao <x3\/>Slot<x4\/>."
 
-> [!Note]
-> In earlier versions of Stride, this error message was: "A SceneCameraRenderer in use has no camera set. Make sure the camera component to use is enabled and has its [Slot] property correctly set."
+> <x1\/>!Note<x2\/>
+> Em versões anteriores de Stride, esta mensagem de erro foi: "Um SceneCameraRenderer em uso não tem conjunto de câmera. Certifique-se de que o componente da câmera a usar está habilitado e tem sua propriedade <x3\/>Slot<x4\/> corretamente definida."
 
-This error means there's no camera available for the scene renderer to use. This has several possible causes:
+Este erro significa que não há nenhuma câmera disponível para o renderizador de cena usar. Isso tem várias causas possíveis:
 
-* there's no enabled [camera](../graphics/cameras/index.md)
-* the camera is set to the wrong [camera slot](../graphics/cameras/camera-slots.md)
-* there are multiple enabled cameras assigned to the same camera slot
+* não há [camera](../graphics/cameras/index.md)
+* a câmera é definida para o errado [camera slot](../graphics/cameras/camera-slots.md)
+* há várias câmeras habilitadas atribuídas ao mesmo slot da câmera
 
-## Fix
+## Fixação
 
-If you create your camera components in Game Studio, make sure:
+Se você criar seus componentes de câmera no Game Studio, certifique-se:
 
-* the camera slots are set to the **Main** slot (see [Graphics — Camera slots](../graphics/cameras/camera-slots.md))
-* only the initial camera is enabled
+* os slots da câmera são definidos para o slot **Main** (veja [Graphics — Slots da câmera](../graphics/cameras/camera-slots.md))
+* apenas a câmera inicial está ativada
 
-If you create your camera components in code, make sure you retrieve the correct slot from the graphics compositor. Use:
+Se você criar seus componentes de câmera em código, certifique-se de recuperar o slot correto do compositor gráfico. Uso:
 
 ```cs
-var camera = new CameraComponent();
-camera.Slot = SceneSystem.GraphicsCompositor.Cameras[0].ToSlotId();
+var câmera = nova CameraComponent();
+câmera. Slot = System Scene.GraphicsCompositor.Cameras[0].ToSlotId();
 ```
 
-To change the camera at runtime, toggle the ``Enabled`` property.
+Para alterar a câmera no tempo de execução, alterne a propriedade ``Ativado``.
 
-> [!Note]
-> Make sure you:
+> <x1\/>!Note<x2\/>
+> Certifique-se de que:
 >
-> * always have at least one enabled camera
+> * sempre tem pelo menos uma câmera habilitada
 >
-> * don't have multiple cameras enabled and assigned to the same slot at the same time
+> * não tem várias câmeras habilitadas e atribuídas ao mesmo slot ao mesmo tempo
 
-## See also
+## Ver também
 
-* [Graphics — Camera slots](../graphics/cameras/camera-slots.md)
-* [Graphics — Cameras](../graphics/cameras/index.md)
+* [Gráficos — slots de câmera](../graphics/cameras/camera-slots.md)
+* [Gráficos — Câmeras](../graphics/cameras/index.md)

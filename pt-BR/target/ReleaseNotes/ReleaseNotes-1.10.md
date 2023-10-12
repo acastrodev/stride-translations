@@ -1,133 +1,133 @@
 
-# Xenko 1.10 release notes
+# Notas de lançamento do Xenko 1.10
 
-## Highlights
+## Destaques
 
-Xenko 1.10β improves stability and performance and introduces changes in the asset serialization.
+Xenko 1.10β melhora a estabilidade e o desempenho e introduz alterações na serialização de ativos.
 
-### Tool performance
+### Desempenho da ferramenta
 
-This release comes packed with several performance improvements, especially in the Game Studio and Asset Compiler.
+Esta versão vem repleta de várias melhorias de desempenho, especialmente no Game Studio e Asset Compiler.
 
-We've rewritten how assets are loaded in the scene editor, resulting in a faster and smoother loading in the background, as well as reduced memory usage.
+Reescritamos como os ativos são carregados no editor de cena, resultando em um carregamento mais rápido e mais suave no fundo, bem como o uso de memória reduzido.
 
-We've made various improvements to the Asset Compiler startup time (important since we start multiple Asset Compilers to process FBX files). Also various key importers, such as the FBX importers, weren't scaling well with lots of polygons.
+Fizemos várias melhorias no tempo de inicialização do Asset Compiler (importante desde que começamos vários compiladores de ativos para processar arquivos FBX). Também vários importadores-chave, como os importadores FBX, não estavam escalonando bem com muitos polígonos.
 
-The Content Bundle packing (run at the end of the Asset Compiler) can now work incrementally. Before, if you had several gigabytes of data but only changed a small asset, compilation was fast but saving the new bundle took a long time at the end of the build. This operation should be almost instant now.
+A embalagem do Pacote de Conteúdo (correr no final do Compilador de Ativos) agora pode funcionar de forma incremental. Antes, se você tinha vários gigabytes de dados, mas apenas mudou um pequeno ativo, a compilação foi rápida, mas salvar o novo pacote levou um longo tempo no final da compilação. Esta operação deve ser quase instantânea agora.
 
-### Unique GUID inside an asset
+### GUID único dentro de um ativo
 
-While not a breaking change, we've introduced a new paradigm in our asset infrastructure, implying that any _identifiable_ object (ie any object that implements `IIdentifiable` interface) must have a unique identifier in the asset containing it.
+Embora não seja uma mudança de ruptura, introduzimos um novo paradigma em nossa infraestrutura de ativos, implicando que qualquer objeto _identifiável_ (ou seja, qualquer objeto que implemente a interface `IIdentifiable`) deve ter um identificador único no ativo que o contém.
 
-This constraint makes it easier to handle internal references inside an asset. Since it wasn't enforced before, **the first time you open an existing project with version 1.10, you might see warnings stating that the identifiers of some objects have been rewritten** (especially entity components and scripts). This is expected and should be harmless. The warnings shouldn't appear the next time you open the project.
+Esta restrição torna mais fácil lidar com referências internas dentro de um ativo. Uma vez que não foi aplicada antes, **a primeira vez que você abre um projeto existente com a versão 1.10, você pode ver avisos afirmando que os identificadores de alguns objetos foram reescritos** (especialmente componentes de entidades e scripts). Isso é esperado e deve ser inofensivo. Os avisos não devem aparecer da próxima vez que abrir o projeto.
 
-## Changelog
+## Mudança
 
-### Version 1.10.0-beta
+### Versão 1.10.0-beta
 
-Release date 2017/3/9
+Data de lançamento 2017\/3\/9
 
-#### Enhancements
+#### Melhorias
 
-##### Animation
+##### Animação
 
-* The additive animation asset has been removed. Animation assets now support both regular and additive clips. Check the animation documentation for details
-* You can now specify start and end frames for animation clips. The animation framerate can be changed in the Game Settings asset. Actual data is still saved and used in seconds
-* PlayingAnimations is no longer visible in design time
-* The API for the animation component has changed. See the documentation or create an AnimationStart pre-built script for a quick look
-* Various bug fixes
+* O ativo de animação aditiva foi removido. Os ativos de animação agora suportam clipes regulares e aditivos. Verifique a documentação de animação para detalhes
+* Agora você pode especificar quadros de início e fim para clipes de animação. O framerate de animação pode ser alterado no ativo Configurações do jogo. Dados reais ainda são salvos e usados em segundos
+* PlayingAnimations não é mais visível no tempo de design
+* A API para o componente de animação mudou. Veja a documentação ou crie um script pré-construído do AnimationStart para um olhar rápido
+* Várias correções de bugs
 
-##### General
+##### Geral
 
-* Content packaging in bundles is now incremental in Debug and Release. It drastically improves iteration time when making small changes then re-running a game with many or large assets. AppStore configuration will do a full rebuild
-* Asset compilation should have better startup time and be faster when spawning sub-processes (used by FBX)
-* FBX import for meshes with lots of triangles was extremely slow due to unoptimized access to edge data
-* FBX asset compilation would sometimes fail because the data limit on WCF was too low
-* Removed unecessary hashing of assemblies when building assets
-* Assets (YAML) now supports multiline strings properly
-
-##### Game Studio
-
-* In the Scene and Prefab editors, asset loading is now async, much faster, and more memory-friendly
-* You can now right-click a prefab instance and select "Select prefab in asset view"
-* Improved keyboard navigation in tree views (eg solution explorer, scene hierarchy): left arrow goes to parent node, right arrow goes to first child (when on a node)
-* Nodes of the entity tree in the scene/prefab editors automatically expand when children are added
-
-##### Graphics
-
-* Improved SetViewport (which has a separate count from render target count)
-* Added SetScissorRectangle (note: viewport and scissors only work well for first viewport) [#521](https://github.com/SiliconStudio/xenko/issues/521)
-* Vulkan: SwapChain clearing wasn't passing validation layer
-* Forward+ light culling wasn't working well if projection matrix was off-center (ie VR)
-* RenderDocPlugin assembly lets you automatically load RenderDoc and capture inside editor (using /RenderDoc flag) or game
-* Cluster lighting wasn't working on OpenGL and OpenGL ES due to unimplemented `UpdateSubresource` for 3D textures
-
-##### Navigation
-
-* Debug overlay inside of the Game Studio is now slightly transparent
-
-##### Particles
-
-* ShapeBuilder API has been updated. Custom shape builder implementations have to be upgraded accordingly
-
-#### Bugs fixed
-
-##### General
-
-* C# "fixed" arrays didn't work due to IL changes
-* Connection Router sometimes couldn't restart properly due to adb child process keeping the parent process port open
+* A embalagem de conteúdo em pacotes agora é incremental em Debug e Release. Ele melhora drasticamente o tempo de iteração ao fazer pequenas mudanças, em seguida, reiniciando um jogo com muitos ou grandes ativos. A configuração do AppStore fará uma reconstrução completa
+* A compilação de ativos deve ter melhor tempo de inicialização e ser mais rápido ao gerar subprocessos (usado pelo FBX)
+* A importação de FBX para malhas com muitos triângulos foi extremamente lenta devido ao acesso não otimizado aos dados de borda
+* Compilação de ativos FBX às vezes falharia porque o limite de dados no WCF era muito baixo
+* Abertura desprevenida de conjuntos quando a construção de ativos
+* Ativos (YAML) agora suporta strings multiline corretamente
 
 ##### Game Studio
 
-* When importing an effect log, it often ended up in the wrong package. It's now created in the currently active package
-* Keyboard input often got stuck in the Game Studio (especially annoying when moving)
-* Script editor often crashed on saving or creation. Several related issues fixed
-* Mouse cursor could disappear during drag-and-drop operations [#385](https://github.com/SiliconStudio/xenko/issues/385) and [#546](https://github.com/SiliconStudio/xenko/issues/546)
-* Changing the layout type in the UI editor could make Game Studio crash [#547](https://github.com/SiliconStudio/xenko/issues/547)
-* Fix several issues related to folders in Scene and Prefab editors (renaming, copy/paste, undo/redo)
-* Fix a rare crash with the clipboard when another application is using it
-* Fix a crash that could occur when removing an item from certain types of collections
-* Fix input of Windows device name (CON, NUL, COM1) as folder names
+* Nos editores Scene e Prefab, o carregamento de ativos é agora async, muito mais rápido e mais amigável à memória
+* Agora você pode clicar com o botão direito do mouse em uma instância pré-fabricada e selecionar "Selecionar pré-fabricada na visualização de ativos"
+* Navegação de teclado melhorada em vistas de árvores (por exemplo, explorador de soluções, hierarquia de cena): a seta esquerda vai para o nó pai, a seta direita vai para a primeira criança (quando em um nó)
+* Os nós da árvore da entidade nos editores cena\/prefab expandem automaticamente quando as crianças são adicionadas
 
-##### Assets
+##### Gráficos
 
-* Assets that contain multiple identifiable objects with the same `Id` now go through a fixup pass at load to re-generate unique ids
-* Make sure we generate new Ids for such objects after manipulations such as copy/pasting, duplicating, etc
-* When a property of an asset was overridden (from the archetype or from a prefab) to a value equivalent to the default value of the property, the override information was lost after reloading
-* The deserialization of some types from an asset file could fail due to impropert type and assembly resolving
-* Animations wouldn't import when the skeleton used for the animation had missing or extra bones
-* Some texture compression pairs which failed before now attempt a two-step conversion to create the target output format
-* FBX importer now ignores empty string names during mesh importing
-* Several crash issues fixed in the Assimp importer
-* SDF fonts and msdfgen have been upgraded to handle overlapping contours
+* SetViewport melhorado (que tem uma contagem separada da contagem de destino de renderização)
+* Adicionado SetScissorRectangle (note: viewport and scissors only work well for first viewport) [#521](https://github.com/SiliconStudio/xenko/issues/521)
+* Vulkan: SwapChain compensação não estava passando camada de validação
+* Em frente + luz culling não estava funcionando bem se a matriz de projeção estava fora do centro (ie VR)
+* O conjunto RenderDocPlugin permite carregar automaticamente o RenderDoc e capturar o editor interno (usando a bandeira \/RenderDoc) ou o jogo
+* Iluminação de cluster não estava funcionando em OpenGL e OpenGL ES devido a `UpdateSubresource` para texturas 3D
 
-##### Graphics
+##### Navegação
 
-* Material culling wasn't applied properly
-* Multi Render Target info wasn't kept when doing multithread rendering with multiple command lists
-* Ambient lighting didn't update after the last Ambient Light had been removed from the scene
-* Fix possible shadow map hole between cascades, at specific viewing angles when using blending
+* Sobreposição de depuração dentro do Game Studio é agora ligeiramente transparente
 
-##### Navigation
+##### Partes
 
-* TryFindPath would return a valid path even if the starting and ending point weren't connected
+* Construtor de forma API foi atualizada. Implementações personalizadas do construtor de forma têm de ser atualizadas em conformidade
 
-### Version 1.10.1-beta
+#### Bugs corrigidos
 
-Release date 2017/3/13
+##### Geral
 
-#### Bugs fixed
+* Os arrays C# "fixed" não funcionaram devido a alterações de IL
+* Roteador de conexão às vezes não poderia reiniciar corretamente devido ao processo de criança adb mantendo a porta de processo pai aberta
 
 ##### Game Studio
 
-* Fix a concurrency problem that could make the Game Studio crash while loading or updating assets in the Scene Editor
+* Ao importar um log de efeito, muitas vezes acabou no pacote errado. Agora é criado no pacote ativo atualmente
+* Entrada de teclado muitas vezes ficou preso no Game Studio (especialmente irritante quando se move)
+* Editor de script muitas vezes caiu na economia ou criação. Várias questões relacionadas corrigidas
+* O cursor do mouse poderia desaparecer durante as operações de arrastar e soltar [#385](https://github.com/SiliconStudio/xenko/issues/385) e [#546](https://github.com/SiliconStudio/xenko/issues/546)
+* Alterar o tipo de layout no editor UI poderia fazer Game Studio falhar [#547](https://github.com/SiliconStudio/xenko/issues/547)
+* Corrigir vários problemas relacionados a pastas em Cena e editores Prefab (renaming, copy\/paste, undo\/redo)
+* Corrigir um acidente raro com a área de transferência quando outra aplicação está usando-a
+* Corrigir um acidente que poderia ocorrer ao remover um item de certos tipos de coleções
+* Corrigir a entrada do nome do dispositivo do Windows (CON, NUL, COM1) como nomes de pasta
 
-### Version 1.10.2-beta
+##### Activos
 
-Release date 2017/3/14
+* Os ativos que contêm múltiplos objetos identificáveis com o mesmo `Id` agora passam por um passe de correção na carga para re-generar ids únicos
+* Certifique-se de que geramos novos Ids para tais objetos após manipulações, tais como cópia \/ colar, duplicação, etc
+* Quando uma propriedade de um ativo foi substituída (do arquétipo ou de um pré-fabricado) a um valor equivalente ao valor padrão da propriedade, a informação de substituição foi perdida após a recarga
+* A deserialização de alguns tipos de um arquivo de ativos pode falhar devido à resolução de tipo e montagem imprópria
+* As animações não importaria quando o esqueleto usado para a animação tinha ossos ausentes ou extras
+* Alguns pares de compressão de textura que falharam antes agora tentar uma conversão de duas etapas para criar o formato de saída de destino
+* O importador FBX agora ignora nomes de string vazios durante a importação de malha
+* Vários problemas de acidente corrigidos no importador Assimp
+* Fontes SDF e msdfgen foram atualizados para lidar com contornos sobrepostos
 
-#### Bugs fixed
+##### Gráficos
+
+* O material não foi aplicado corretamente
+* Renderização multi A informação de destino não foi mantida ao fazer renderização multithread com várias listas de comando
+* A iluminação ambiente não atualizou após a última luz ambiente ter sido removida da cena
+* Corrigir possível buraco de mapa de sombra entre cascatas, em ângulos de visão específicos ao usar a mistura
+
+##### Navegação
+
+* TryFindPath retornaria um caminho válido mesmo que o ponto de partida e fim não estivesse conectado
+
+### Versão 1.10.1-beta
+
+Data de lançamento 2017\/3\/13
+
+#### Bugs corrigidos
 
 ##### Game Studio
 
-* Fix additional concurrency problems that could make the Game Studio crash while loading or updating assets in the Scene Editor
+* Corrigir um problema de confiança que poderia fazer o Game Studio falhar ao carregar ou atualizar ativos no Editor de cenas
+
+### Versão 1.10.2-beta
+
+Data de lançamento 2017\/3\/14
+
+#### Bugs corrigidos
+
+##### Game Studio
+
+* Corrigir problemas adicionais de confiança que poderiam fazer o Game Studio falhar ao carregar ou atualizar ativos no Editor de cenas

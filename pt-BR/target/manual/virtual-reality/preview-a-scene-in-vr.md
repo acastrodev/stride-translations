@@ -1,6 +1,6 @@
-# Preview a scene in VR
+# Visualizar uma cena em VR
 
-To preview your scene in your VR device, connect the editor to a [VR-enabled](enable-vr.md) renderer.
+Para visualizar sua cena em seu dispositivo VR, conecte o editor a um renderizador [VR habilitado](enable-vr.md).
 
 <p>
 <video autoplay loop class="responsive-video" poster="media/vr-editor_640.jpg">
@@ -8,72 +8,72 @@ To preview your scene in your VR device, connect the editor to a [VR-enabled](en
 </video>
 </p>
 
-To do this:
+Para fazer isso:
 
-1. In the **Asset View** (in the bottom pane by default), double-click the **Graphics Compositor** asset.
+1. No **Asset View** (no painel inferior por padrão), clique duas vezes no **Graphics Compositor** ativo.
 
-   ![Graphics Compositor asset](../graphics/graphics-compositor/media/graphics-compositor-asset.png)
+   <x1\/>Gráficos Compositor asset<x2\/>
 
-   The graphics compositor editor opens.
+   O editor de compositores gráficos abre.
 
-   ![Graphics Compositor editor](media/graphics-compositor-VR-template.png)
+   <x1\/>Gráfico Compositor editor<x2\/>
 
-2. Select the **forward render node** connected to the editor node. For example, in the screenshot below (taken from the Stride VR sample project), the editor is connected to the lower forward renderer node.
+2. Selecione o **forward render node** conectado ao nó do editor. Por exemplo, na captura de tela abaixo (tomada do projeto de amostra Stride VR), o editor está conectado ao nó de renderizador avançado inferior.
 
-   ![Node connections](media/node-connections.png)
+   <x1\/>Conexões de nó<x2\/>
 
-3. With the forward renderer node selected, in the **Property Grid**, enable **VRRendererSettings**.
+3. Com o nó de renderizador para a frente selecionado, no **Property Grid**, habilitar **VRRendererConfigurações**.
 
-   ![Select editor renderer](media/enable-vr.png)
+   <x1\/>Select editor renderer<x2\/>
 
-Your VR device displays the scene preview. To display the scene on your monitor instead, disable **VRRendererSettings**.
+Seu dispositivo VR exibe a visualização da cena. Para exibir a cena em seu monitor, desative **VRRendererSettings**.
 
-## Create a separate renderer to preview scenes in VR
+## Criar um renderizador separado para visualizar cenas em VR
 
-If your editor and game nodes are connected to the same forward renderer, you might want to create a separate renderer dedicated to the editor. This lets you easily switch between previewing the scene in your VR device and on your monitor.
+Se o seu editor e os nós do jogo estiverem conectados ao mesmo renderizador para a frente, você pode querer criar um renderizador separado dedicado ao editor. Isso permite que você alterne facilmente entre visualizar a cena em seu dispositivo VR e em seu monitor.
 
-> [!Note]
-> If your editor and game nodes already use separate renderers (as in the VR sample project), you don't need to follow these instructions.
+> <x1\/>!Note<x2\/>
+> Se o editor e os nós do jogo já usarem renderizadores separados (como no projeto de amostra VR), você não precisa seguir essas instruções.
 
-1. In the **Asset View** (in the bottom pane by default), double-click the **Graphics Compositor** asset.
+1. No **Asset View** (no painel inferior por padrão), clique duas vezes no **Graphics Compositor** ativo.
 
-   ![Graphics Compositor asset](../graphics/graphics-compositor/media/graphics-compositor-asset.png)
+   <x1\/>Gráficos Compositor asset<x2\/>
 
-   The graphics compositor editor opens.
+   O editor de compositores gráficos abre.
 
-   ![Graphics compositor editor](media/graphics-compositor-no-editor-node.png)
+   <x1\/>Gráfico compositor editor<x2\/>
 
-2. Create a new forward renderer node. To do this, right-click the game compositor editor and select **Create > Forward renderer**.
+2. Crie um novo nó de renderizador para a frente. Para fazer isso, clique com o botão direito do mouse no editor do compositor do jogo e selecione **Create > Forward renderer**.
 
-   ![Create forward renderer](media/create-forward-renderer.png)
+   <x1\/>Criar renderizador <x2\/>
 
-3. Select the **Entry points** node.
+3. Selecione o nó ** Pontos de entrada**.
 
-   ![Entry points node](media/entry-points-node.png)
+   <x1\/> Pontos de entrada node<x2\/>
 
-4. In the **Property Grid**, next to **Editor renderer**, select the forward renderer you created.
+4. No **Property Grid**, ao lado de **Editor renderer**, selecione o renderizador para a frente que você criou.
 
-   ![Select forward renderer](media/select-editor-forward-renderer.png)
+   <x1\/>Selecionar renderizador <x2\/>
 
-   Stride links the editor to the forward renderer node.
+   Stride liga o editor ao nó do renderizador para a frente.
 
-   ![Node connections](media/node-connections.png)
+   <x1\/>Conexões de nó<x2\/>
 
-5. Set the properties of the new forward renderer so they're identical to the forward renderer you use to run the game in VR, including the VR settings.
+5. Defina as propriedades do novo renderizador para a frente, de modo que eles sejam idênticos ao renderizador para a frente que você usa para executar o jogo em VR, incluindo as configurações de VR.
 
-   > [!Tip]
-   > You can right-click a property to copy or paste it.
+   > <x1\/>!Tip<x2\/>
+   > Você pode clicar com o botão direito do mouse em uma propriedade para copiar ou colar.
 
-   > ![Copy-paste properties](media/copy-paste-properties.png)
+   > <x1\/> Propriedades copi-paste<x2\/>
 
-   > [!Note]
-   > Make sure the forward renderer has VR enabled. For instructions, see [Enable VR](enable-vr.md).
+   > <x1\/>!Note<x2\/>
+   > Certifique-se de que o renderizador para a frente tenha VR ativado. Para obter instruções, consulte [Ativar VR](enable-vr.md).
 
-Stride displays the scene preview in your VR device. To display the scene on your monitor instead, disable **VRRendererSettings** in the properties of the new forward renderer.
+Stride exibe a visualização da cena em seu dispositivo VR. Para exibir a cena em seu monitor, desative **VRRendererSettings** nas propriedades do novo renderizador para a frente.
 
-![Enable VR](media/vr-renderer-settings.png)
+<x1\/> Habilitar VR<x2\/>
 
-## See also
+## Ver também
 
-* [Enable VR](enable-vr.md)
-* [Graphics compositor](../graphics/graphics-compositor/index.md)
+* [Habilitar VR](enable-vr.md)
+* [Compositor gráfico](../graphics/graphics-compositor/index.md)

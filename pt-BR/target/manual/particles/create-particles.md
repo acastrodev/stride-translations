@@ -1,50 +1,50 @@
-# Create particles
+# Criar partículas
 
-<span class="badge text-bg-primary">Beginner</span>
-<span class="badge text-bg-success">Artist</span>
-<span class="badge text-bg-success">Programmer</span>
+<x1\/>Introdução<x2\/>
+<x3\/>Artista <x4\/>
+<x5\/> Programador <x6\/>
 
-To create a particle system, right-click the scene or Entity Tree, select **Particle System**, and choose a preset (**Empty**, **Simple**, **Fountain**, or **Ribbon**).
+Para criar um sistema de partículas, clique com o botão direito do mouse na cena ou Entity Tree, selecione **Particle System** e escolha uma predefinição (**Empty**, **Simple**, **Fountain** ou **Ribbon**).
 
-![media/particles-reference-editor-1.png](media/particles-reference-editor-1.png)
+<x1\/>media\/particles-reference-editor-1.png<x2\/>
 
-Game Studio creates an entity with a **Transform** component and a **Particle System** component with your chosen preset. Particle entities are represented with a flame icon.
+Game Studio cria uma entidade com um componente **Transform** e um componente **Particle System** com sua predefinição escolhida. As entidades de partículas são representadas com um ícone de chama.
 
-![media/particles-reference-editor-2.png](media/particles-reference-editor-2.png)
+<x1\/>media\/particles-reference-editor-2.png<x2\/>
 
-Alternatively, you can add a particle component to an existing entity. With the entity selected, in the **Property Grid**, click **Add component** and select **Particle System**.
+Alternativamente, você pode adicionar um componente de partícula a uma entidade existente. Com a entidade selecionada, no **Property Grid**, clique em **Add component** e selecione **Particle System**.
 
-![Add Particle System](tutorials/media/add-particle-system.png)
+<x1\/> Adicionar sistema de partículas <x2\/>
 
-Game Studio adds an empty particle system to the entity.
+Game Studio adiciona um sistema de partículas vazio para a entidade.
 
-## Transform component
+## Componente de transformação
 
-All entities have a transform component. Some particle elements ignore some elements of the transform component, such as rotation or scaling. For example, the gravity force shouldn't depend on the rotation of the particle system, and always ignores rotation; however, fountain particle systems inherit the location for the purposes of initial particle velocity.
+Todas as entidades têm um componente de transformação. Alguns elementos de partículas ignoram alguns elementos do componente de transformação, como rotação ou escalação. Por exemplo, a força de gravidade não deve depender da rotação do sistema de partículas, e sempre ignora a rotação; no entanto, os sistemas de partículas de fonte herdam a localização para os propósitos da velocidade de partículas inicial.
 
-Only uniform scaling is supported. If you have a non-uniform scale on the transform component, only the X axis is used.
+Apenas o dimensionamento uniforme é suportado. Se você tem uma escala não uniforme no componente de transformação, apenas o eixo X é usado.
 
-If you want two particle systems to share a transform component, create two particle system entities and make one a child of the other.
+Se você quiser que dois sistemas de partículas compartilhem um componente de transformação, crie duas entidades do sistema de partículas e faça uma criança da outra.
 
-## Particle component properties
+## Propriedades de componentes de partículas
 
-With a particle system entity selected, you can edit its properties in the **Property Grid**, just like any other entity.
+Com uma entidade de sistema de partículas selecionada, você pode editar suas propriedades no **Property Grid**, assim como qualquer outra entidade.
 
-![media/particles-reference-editor-3.png](media/particles-reference-editor-3.png)
+<x1\/>media\/particles-reference-editor-3.png<x2\/>
 
-| Property | Description |
+| Propriedade | Descrição |
 | ---------------- | -------------
-| Editor control | This changes how Game Studio displays particles while you work on the scene. You can play, pause, and stop the particle system. You can also reset the particle effect at set intervals, which is useful for previewing one-shot effects. The editor controls don't affect how particles are displayed at runtime. |
-| Warm-up time | If you set the warm-up time to a value greater than 0, the particle appears as if it's already active when it appears. This value is in seconds. For example, if you set the warm-up time to 1, the particle effect appears as if it has already been active for 1 second when it appears. This is useful, for example, if you set a fire effect warm-up time to 0, the fire appears to ignite as soon as it's rendered. If you want the fire to appear as if it's already ignited when it's rendered, increase the warm-up time. |
-| Speed scale | Controls the speed of the particle effect. |
-| Culling AABB | This creates an axis-aligned bounding box (AABB) around the particle effect. If the bounding box isn't in the camera view, Stride doesn't render the particle effect. This is useful for culling and optimization. **Rotated AABB** sets box shape in XYZ co-ordinates. **Uniform AABB** creates a cube of the scale you specify (in [world units](../game-studio/world-units.md)). To view the AABB in the Scene Editor, select **Debug Draw**. |
-| Emitters | The emitters the particle system contains. The emitters are updated and drawn in the order they appear in the list, and can be re-ordered. For more information, see [Emitters](emitters.md). |
+| Controle do editor | Isso muda como o Game Studio exibe partículas enquanto você trabalha na cena. Você pode jogar, pausar e parar o sistema de partículas. Você também pode redefinir o efeito de partícula em intervalos definidos, o que é útil para visualizar os efeitos de um tiro. Os controles do editor não afetam como as partículas são exibidas no tempo de execução. |
+| Tempo de aquecimento | Se você definir o tempo de aquecimento para um valor maior que 0, a partícula aparece como se já estivesse ativa quando ela aparece. Este valor é em segundos. Por exemplo, se você definir o tempo de aquecimento para 1, o efeito de partícula aparece como se já estivesse ativo por 1 segundo quando ele aparece. Isto é útil, por exemplo, se você definir um efeito de fogo tempo de aquecimento para 0, o fogo parece inflamar assim que for renderizado. Se você quiser que o fogo apareça como se já estivesse ignido quando estiver renderizado, aumente o tempo de aquecimento. |
+| Escala de velocidade | Controla a velocidade do efeito de partícula. |
+| Culing AABB | Isso cria uma caixa de ligação alinhada ao eixo (AABB) em torno do efeito de partícula. Se a caixa de ligação não estiver na visualização da câmara, o Stride não produz o efeito de partícula. Isso é útil para a manipulação e otimização. **Rotated AABB** define forma de caixa em coordenadas XYZ. **Uniform AABB** cria um cubo da escala especificada (em unidades [world](../game-studio/world-units.md)). Para visualizar o AABB no Editor de Cena, selecione **Debug Draw**. |
+| Emitters | Os emissores contém o sistema de partículas. Os emissores são atualizados e desenhados na ordem que aparecem na lista, e podem ser re-ordenados. Para mais informações, consulte [Emitters](emitters.md). |
 
-## See also
+## Ver também
 
 * [Emitters](emitters.md)
-* [Shapes](shapes.md)
-* [Materials](materials.md)
+* [Formas](shapes.md)
+* [Materiais](materials.md)
 * [Spawners](spawners.md)
-* [Initializers](initializers.md)
-* [Updaters](updaters.md)
+* [Iniciantes](initializers.md)
+* [Atualizações](updaters.md)

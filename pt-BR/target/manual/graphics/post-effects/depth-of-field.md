@@ -1,33 +1,33 @@
-# Depth of field
+# Profundidade de campo
 
-<span class="badge text-bg-primary">Intermediate</span>
-<span class="badge text-bg-success">Artist</span>
+<x1\/> Intermediário <x2\/>
+<x3\/>Artista <x4\/>
 
-By default, rendering produces a very sharp image, which can look artificial. **Depth of field** effects simulate the behavior of a real camera lens focusing an object, leaving background and foreground objects out of focus.
+Por padrão, a renderização produz uma imagem muito afiada, que pode parecer artificial. ** A profundidade dos efeitos campo** simula o comportamento de uma lente de câmera real focando um objeto, deixando objetos de fundo e primeiro plano fora do foco.
 
-![media/realworld_dof_agave_flowers.jpg](media/realworld_dof_agave_flowers.jpg)
+<x1\/>media\/realworld_dof_agave_flowers.jpg<x2\/>
 
-To create the effect, Stride creates several versions of the original image with different intensities of blur, and interpolates between them. The more layers used, the better the quality, but at performance cost.
+Para criar o efeito, Stride cria várias versões da imagem original com diferentes intensidades de blur e interpola entre eles. Quanto mais camadas utilizadas, melhor a qualidade, mas ao custo de desempenho.
 
-## Properties
+## Propriedades
 
-![media/depth-of-field-2.png](media/depth-of-field-2.png)
+<x1\/>media\/depth-of-field-2.png<x2\/>
 
-| Property | Description |
+| Propriedade | Descrição |
 | ---------- | -------- 
-| Size | Size of the [bokeh (Wikipedia)](https://en.wikipedia.org/wiki/Bokeh), expressed as a factor of the image width so it's resolution-independent. The bigger the size, the worse the performance |
-| DOF Areas | Areas of the depth of field. There are three main zones defined by their distance from the camera: near out-of-focus area (from X to Y), in-focus area (from Y to Z), and far out-of-focus area (from Z to W) |
-| Technique | The technique affects both the performance and the shape of the bokeh.  <p><br>**Circular Gaussian** is fast but unrealistic. <p><br>![media/depth-of-field-3.png](media/depth-of-field-3.png) <p><br>**Hexagonal Triple Rhombi** is heavier than Gaussian. <p><br>![media/depth-of-field-4.png](media/depth-of-field-4.png) <p><br>**Hexagonal McIntosh** is the heaviest. <p><br>![media/depth-of-field-5.png](media/depth-of-field-5.png) |
-| Auto Focus | Automatically updates the DOF areas so the camera focuses on the object at the center of the screen |
+| Tamanho | Tamanho do [bokeh (Wikipedia)](https://en.wikipedia.org/wiki/Bokeh), expresso como um fator da largura da imagem para que seja independente da resolução. Quanto maior o tamanho, pior o desempenho |
+| DOF Áreas | Áreas da profundidade do campo. Existem três zonas principais definidas pela sua distância da câmera: perto da área de foco (de X a Y), área de foco interno (de Y a Z), e área de foco distante (de Z a W) |
+| Técnica | A técnica afeta tanto o desempenho quanto a forma do bokeh.  <p><x1\/>**Circular Gaussian** é rápido, mas irrealista. <p><x1\/><x2\/>media\/depth-of-field-3.png<x3\/> <p><x1\/>**Rómbi triplo hexagonal** é mais pesado do que gaussiano. <p><x1\/><x2\/>media\/depth-of-field-4.png<x3\/> <p><x1\/>**Hexagonal McIntosh** é o mais pesado. <p><x1\/><x2\/>media\/depth-of-field-5.png<x3\/> |
+| Foco automático | Atualiza automaticamente as áreas DOF para que a câmera se concentre no objeto no centro da tela |
 
-## See also
+## Ver também
 
 * [Anti-aliasing](anti-aliasing.md)
-* [Fog](fog.md)
-* [Outline](outline.md)
-* [Ambient occlusion](ambient-occlusion.md)
-* [Bloom](bloom.md)
-* [Bright filter](bright-filter.md)
-* [Color transforms](color-transforms/index.md)
-* [Lens flare](lens-flare.md)
-* [Light streaks](light-streaks.md)
+* [Fogão](fog.md)
+* [Linha de produção](outline.md)
+* [Oclusão ambiente](ambient-occlusion.md)
+* [Floresce](bloom.md)
+* [Filtro brilhante](bright-filter.md)
+* [Transformações de cor](color-transforms/index.md)
+* [Flare de lente](lens-flare.md)
+* [Estrefas de luz](light-streaks.md)

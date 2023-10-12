@@ -1,207 +1,207 @@
-# Particle initializers
+# Inicializadores de partículas
 
-<span class="badge text-bg-primary">Intermediate</span>
-<span class="badge text-bg-success">Artist</span>
-<span class="badge text-bg-success">Programmer</span>
+<x1\/> Intermediário <x2\/>
+<x3\/>Artista <x4\/>
+<x5\/> Programador <x6\/>
 
-**Initializers** control the states of particles such as position, velocity, size, and so on when the particles are first spawned. They have no effect on particles spawned on previous frames.
+**Initializadores** controlam os estados de partículas como posição, velocidade, tamanho e assim por diante quando as partículas são primeiro desovadas. Eles não têm efeito sobre partículas geradas em quadros anteriores.
 
-> [!Note]
-> Some [updaters](updaters.md) act change the particle's value at the *end* of the frame. They effectively overwrite any initial values set by a similar initializer. Such is the case with all animations. They operate on the particle's lifetime and a color animation updater will overwrite any initial values from a color initializer.
+> <x1\/>!Note<x2\/>
+> Alguns atos [updaters](updaters.md) alteram o valor da partícula no *end* do quadro. Eles efetivamente sobrescrevem quaisquer valores iniciais definidos por um inicializador semelhante. Tal é o caso com todas as animações. Eles operam na vida da partícula e um atualizador de animação de cor substituirá quaisquer valores iniciais de um inicializador de cor.
 
-Similarly, initializers which operate on the same field are exclusive and only the bottom one will have any effect, since they are executed in order. For example if you assign two color initializer, only the second one will have any effect.]
+Da mesma forma, inicializadores que operam no mesmo campo são exclusivos e apenas o inferior terá qualquer efeito, uma vez que são executados em ordem. Por exemplo, se você atribuir dois inicializador de cor, apenas o segundo terá qualquer efeito.]
 
-## Common properties
+## Propriedades comuns
 
-Several properties are common across many initializers.
+Várias propriedades são comuns em muitos inicializadores.
 
-![media/particles-reference-initializers-1.png](media/particles-reference-initializers-1.png)
+<x1\/>media\/particles-reference-initializers-1.png<x2\/>
 
-| Property | Description |
+| Propriedade | Descrição |
 |-----------------------------|-------------
-| Debug draw | Draws a debug wireframe in the scene to show the boundaries of the initializer. This is only visible in the Scene Editor, not at runtime. |
-| Position inheritance | Inherit the particle system component position, as defined in the particle entity's Transform component |
-| Position offset | Additional translation of the module. If it inherits the parent position, this is applied on top of the inherited position. |
-| Rotation inheritance | Inherit the particle system component's rotation, as defined in the Transform component |
-| Rotation offset | Additional rotation of the module. If it inherits the parent's rotation, this is applied on top of the inherited rotation. |
-| Scale inheritance | Inherit the particle system component's uniform scale, as defined in the Transform component |
-| Scale offset | Additional scaling of the module. If it inherits the parent's scale, this is applied on top of the inherited scale. |
+| Desenho de depuração | Desenha um wireframe de depuração na cena para mostrar os limites do inicializador. Isso só é visível no Editor de Cena, não no tempo de execução. |
+| Herança de posição | Inerir a posição do componente do sistema de partículas, conforme definido no componente Transform da entidade de partículas |
+| Posição de deslocamento | Tradução adicional do módulo. Se herda a posição pai, isso é aplicado em cima da posição herdadada. |
+| Rotação herança | Inerir a rotação do componente do sistema de partículas, conforme definido no componente Transform |
+| Offset rotativo | Rotação adicional do módulo. Se herda a rotação do pai, isso é aplicado em cima da rotação herdadada. |
+| Escala de herança | Inerir a escala uniforme do componente do sistema de partículas, conforme definido no componente Transform |
+| Escala de deslocamento | Escala adicional do módulo. Se herda a escala do pai, isso é aplicado em cima da escala herdada. |
 
-For example, a velocity initializer can change its direction depending on the parent's rotation or decide to ignore it and always shoot particles in a fixed direction.
+Por exemplo, um inicializador de velocidade pode mudar sua direção dependendo da rotação do pai ou decidir ignorá-lo e sempre atirar partículas em uma direção fixa.
 
-On the other hand, size initializers don't change based on the parent's rotation, so the rotation fields won't appear at all.
+Por outro lado, os inicializadores de tamanho não mudam com base na rotação dos pais, para que os campos de rotação não apareçam.
 
-## Position
+## Posição
 
-Particles are spawned in an axis-aligned bounding box, defined by its left lower back corner and its right upper front corner.
+As partículas são geradas em uma caixa de ligação alinhada ao eixo, definida por seu canto inferior esquerdo e seu canto superior direito.
 
-![media/particles-reference-initializers-2.png](media/particles-reference-initializers-2.png)
+<x1\/>media\/particles-reference-initializers-2.png<x2\/>
 
-| Property | Description |
+| Propriedade | Descrição |
 |-----------------------------|-------------
-| Seed offset | Used for random numbers. Set it to the same value to force the position to be coupled with other other particle fields which have three properties (X, Y, Z), eg velocity. Make them different to force the position to be unique and independent from other fields |
-| Position min | Left lower back corner for the box |
-| Position max | Right upper front corner for the box |
+| Offset de sementes | Usado para números aleatórios. Defina-o ao mesmo valor para forçar a posição a ser acoplada com outros campos de partículas que têm três propriedades (X, Y, Z), por exemplo, velocidade. Faça-os diferentes para forçar a posição de ser único e independente de outros campos |
+| Posição min | Canto inferior esquerdo para a caixa |
+| Posição máxima | Canto frontal superior direito para a caixa |
 
-This image shows the bounding box where particles initially appear for this emitter. In addition to the corners (-1, 0.8, -1) ~ (1, 1, 1), the box is further rotated by 45 degrees as seen from the offset rotation.
+Esta imagem mostra a caixa de ligação onde as partículas aparecem inicialmente para esta emissora. Além dos cantos (-1, 0.8, -1) ~ (1, 1, 1), a caixa é mais girada por 45 graus como visto a partir da rotação de deslocamento.
 
-![media/particles-reference-initializers-3.png](media/particles-reference-initializers-3.png)
+<x1\/>media\/particles-reference-initializers-3.png<x2\/>
 
-## Velocity
+## Velocidade
 
-Particles spawn with initial velocity which ranges between the defined values. The velocity is independent in all three directions between X, Y and Z.
+As partículas surgiram com velocidade inicial que varia entre os valores definidos. A velocidade é independente em todas as três direções entre X, Y e Z.
 
-![media/particles-reference-initializers-4.png](media/particles-reference-initializers-4.png)
+<x1\/>media\/particles-reference-initializers-4.png<x2\/>
 
-| Property | Description |
+| Propriedade | Descrição |
 |-----------------------------|-------------
-| Seed offset | This is used for random numbers. Set it to the same value to force the velocity to be coupled with other other particle fields which have 3 properties (x, Y, Z), like position for example. Make them different to force the velocity to be unique and independent from other fields. |
-| Velocity min | Left lower back corner for the box |
-| Velocity max | Right upper front corner for the box |
+| Offset de sementes | Isso é usado para números aleatórios. Defina-o ao mesmo valor para forçar a velocidade a ser acoplada com outros campos de partículas que têm 3 propriedades (x, Y, Z), como a posição, por exemplo. Faça-os diferentes para forçar a velocidade a ser único e independente de outros campos. |
+| Velocidade min | Canto inferior esquerdo para a caixa |
+| Velocidade máxima | Canto frontal superior direito para a caixa |
 
-## Size
+## Tamanho
 
-Initial size sets the particle's uniform size when it's spawned for the first time. A size of 1 will result in a 1 meter by 1 meter billboard or quad when rendered.
+O tamanho inicial define o tamanho uniforme da partícula quando é gerado pela primeira vez. Um tamanho de 1 resultará em um 1 metro por 1 metro de outdoor ou quad quando renderizado.
 
-![media/particles-reference-initializers-5.png](media/particles-reference-initializers-5.png)
+<x1\/>media\/particles-reference-initializers-5.png<x2\/>
 
-| Property | Description |
+| Propriedade | Descrição |
 |-----------------------------|--------------
-| Seed offset | This is used for random numbers. Set it to the same value to force the size to be coupled with other particle fields which have 1 property, like color for example. Make them different to force the size to be unique and independent from other fields |
-| Random size | Shows the minimum and maximum size a particle can have at spawn time |
+| Offset de sementes | Isso é usado para números aleatórios. Defina-o ao mesmo valor para forçar o tamanho a ser acoplado com outros campos de partículas que têm 1 propriedade, como cor, por exemplo. Faça-os diferentes para forçar o tamanho a ser único e independente de outros campos |
+| Tamanho aleatório | Mostra o tamanho mínimo e máximo que uma partícula pode ter no tempo livre |
 
-## Rotation
+## Rotação
 
-Initial rotation sets the particle's angular rotation when facing the camera. Positive values are clockwise rotations. The field only has meaning for camera-facing particles, such as billboards. It has no effect on oriented quads and models.
+A rotação inicial define a rotação angular da partícula quando enfrenta a câmera. Os valores positivos são rotações no sentido horário. O campo só tem significado para partículas voltadas para câmera, como outdoors. Não tem efeito sobre quads e modelos orientados.
 
-![media/particles-reference-initializers-6.png](media/particles-reference-initializers-6.png)
+<x1\/>media\/particles-reference-initializers-6.png<x2\/>
 
-| Property | Description |
+| Propriedade | Descrição |
 |-----------------------------|------------
-| Seed offset | This is used for random numbers. Set it to the same value to force the angle to be coupled with other particle fields which have 1 property, like color for example. Make them different to force the angle to be unique and independent from other fields |
-| Angle (degrees) | The minimum and maximum value, in degrees, for the initial rotation |
+| Offset de sementes | Isso é usado para números aleatórios. Defina-o ao mesmo valor para forçar o ângulo a ser acoplado com outros campos de partículas que têm 1 propriedade, como cor, por exemplo. Faça-os diferentes para forçar o ângulo a ser único e independente de outros campos |
+| Ângulo (graus) | O valor mínimo e máximo, em graus, para a rotação inicial |
 
-## Color
+## Cor
 
-Initial color sets the particle's initial color at spawn time. It goes into the vertex buffer when building the particles and can be used by the material, but might not if the option is not set in the material itself. If setting the color has no effect please refer to the [Material](materials.md) page for further discussion.
+A cor inicial define a cor inicial da partícula no tempo livre. Ele entra no buffer de vértice ao construir as partículas e pode ser usado pelo material, mas pode não se a opção não estiver definida no próprio material. Se definir a cor não tem efeito, consulte a página [Material](materials.md) para mais discussão.
 
-![media/particles-reference-initializers-7.png](media/particles-reference-initializers-7.png)
+<x1\/>media\/particles-reference-initializers-7.png<x2\/>
 
-| Property | Description |
+| Propriedade | Descrição |
 |-----------------------------|------------
-| Seed offset | This is used for random numbers. Set it to the same value to force the color to be coupled with other particle fields which have 1 property, like size for example. Make them different to force the color to be unique and independent from other fields |
-| Color A | The first value, in hexadecimal code. The color will be a random tint between this and the second color. |
-| Color B | The second value, in hexadecimal code. The color will be a random tint between this and the first color. |
+| Offset de sementes | Isso é usado para números aleatórios. Defina-o ao mesmo valor para forçar a cor a ser acoplada com outros campos de partículas que têm 1 propriedade, como o tamanho, por exemplo. Faça-os diferentes para forçar a cor a ser única e independente de outros campos |
+| Cor A | O primeiro valor, no código hexadecimal. A cor será uma tonalidade aleatória entre esta e a segunda cor. |
+| Cor B | O segundo valor, no código hexadecimal. A cor será uma tonalidade aleatória entre esta e a primeira cor. |
 
-## 3D Orientation
+## Orientação 3D
 
-Initial 3D orientation sets the orientation for 3D-aware particles when they first spawn. The editable fields use euclidean rotation which is packed into a quaternion orientation by the engine. The interpolated value is on the shortest path  between the two orientations, rather than interpolating each value separately.
+A orientação 3D inicial define a orientação para partículas 3D-aware quando elas primeiro desovam. Os campos editáveis usam rotação euclidiana que é embalado em uma orientação quaternion pelo motor. O valor interpolado está no caminho mais curto entre as duas orientações, em vez de interpolar cada valor separadamente.
 
-![media/particles-reference-initializers-8.png](media/particles-reference-initializers-8.png)
+<x1\/>media\/particles-reference-initializers-8.png<x2\/>
 
-| Property | Description |
+| Propriedade | Descrição |
 |-----------------------------|------------
-| Seed offset | This is used for random numbers. Set it to the same value to force the orientation to be coupled with other particle fields which have 1 property, like size for example. Make them different to force the orientation to be unique and independent from other fields. |
-| Orientation A | The first oriented position |
-| Orientation B | The second oriented position |
+| Offset de sementes | Isso é usado para números aleatórios. Defina-o ao mesmo valor para forçar a orientação a ser acoplada com outros campos de partículas que têm 1 propriedade, como o tamanho, por exemplo. Faça-os diferentes para forçar a orientação a ser única e independente de outros campos. |
+| Orientação A | A primeira posição orientada |
+| Orientação B | A segunda posição orientada |
 
-## Direction
+## Direcção
 
-This initializer creates the **Direction** field in the particle properties and sets its initial value. Some shape builders, like the Trail shape or the Direction Aligned Sprite shape use the particle's direction to properly display it.
+Este inicializador cria o campo **Direction** nas propriedades de partículas e define o seu valor inicial. Alguns construtores de forma, como a forma de Trilha ou a forma de Sprite Alinhada de Direção usam a direção da partícula para exibi-la corretamente.
 
-| Property | Description |
+| Propriedade | Descrição |
 |-----------------------------|-------------
-| Seed offset | This is used for random numbers. Set it to the same value to force the direction to be coupled with other other particle fields which have 3 properties (x, Y, Z), like position for example. Make them different to force the velocity to be unique and independent from other fields. |
-| Direction min | Left lower back corner for the box |
-| Direction max | Right upper front corner for the box |
+| Offset de sementes | Isso é usado para números aleatórios. Defina-o ao mesmo valor para forçar a direção a ser acoplada com outros campos de partículas que têm 3 propriedades (x, Y, Z), como a posição, por exemplo. Faça-os diferentes para forçar a velocidade a ser único e independente de outros campos. |
+| Direcção min | Canto inferior esquerdo para a caixa |
+| Direcção máxima | Canto frontal superior direito para a caixa |
 
-## Spawn Order
+## Ordem de Spawn
 
-This initializer has no properties. It simply sets an increasing number to each particle spawned from this emitter, starting from 0. The spawn order can be used for sorting or some custom calculations.
+Este inicializador não tem propriedades. Ele simplesmente define um número crescente para cada partícula gerada a partir deste emissor, a partir de 0. A ordem desova pode ser usada para classificação ou alguns cálculos personalizados.
 
-## Position (Arc)
+## Posição (Arc)
 
-The arc position initializer positions the particles in an arc (or a straight line if the arc's height is 0) between two point, the emitter's position and a target transform component. With random position offset you can cause the particles to deviate a little from their original location on the arc.
+O inicializador de posição de arco posiciona as partículas em um arco (ou uma linha reta se a altura do arco é 0) entre dois pontos, a posição do emissor e um componente de transformação de alvo. Com deslocamento de posição aleatória, você pode fazer com que as partículas se desviam um pouco de sua localização original no arco.
 
-![media/particles-reference-initializers-5.png](media/particles-reference-initializers-9.png)
+<x1\/>media\/particles-reference-initializers-5.png<x2\/>
 
-| Property | Description |
+| Propriedade | Descrição |
 |-----------------------------|------------
-| Seed offset | This is used for random numbers. Set it to the same value to force the position to be coupled with other other particle fields which have 3 properties (X, Y, Z), like velocity for example. Make them different to force the position to be unique and independent from other fields. |
-| Position min | Left lower back corner for the box |
-| Position max | Right upper front corner for the box |
-| Target | Allows you to pick up an Entity for the end of the arc. If no Entity is set, Fallback Target will be used, which is an offset from the emitter's location. |
-| Fallback Target | Offset from the emitter's location used as the end point in case Target is not set |
-| Arc Height | The height of the arc at its highest point (middle of the distance between the two points). By default it's the Y-up vector, but can be rotated with rotation offset and rotation inheritance |
-| Ordered | If checked, new particles will appear in order from the emitter towards the target. If unchecked, new particles will appear randomly on the arc anywhere between the emitter and the target. If you plan to visualize the particles as a ribbon or a trail you should set this box to checked. |
-| Fixed count | By default particles will appear on the arc at distances enough for the maximum number of particles to fit exactly on the line. If you want to control spawn rate and distance, you can set how many fixed "positions" are there on the arc. For example, with a fixed count of 10 and Ordered spawning, the first 10 particles will appear in order, then the 11th particle will appear from the beginning, at the same position as the first, and so on. |
-| Seed offset | This is used for random numbers. Set it to the same value to force the position to be coupled with other other particle fields which have 3 properties (X, Y, Z), like velocity for example. Make them different to force the position to be unique and independent from other fields. |
-| Position min | Left lower back corner for the box. This is an offset in addition to the arc position. |
-| Position max | Right upper front corner for the box. This is an offset in addition to the arc position. |
+| Offset de sementes | Isso é usado para números aleatórios. Defina-o ao mesmo valor para forçar a posição a ser acoplada com outros campos de partículas que têm 3 propriedades (X, Y, Z), como a velocidade, por exemplo. Faça-os diferentes para forçar a posição de ser único e independente de outros campos. |
+| Posição min | Canto inferior esquerdo para a caixa |
+| Posição máxima | Canto frontal superior direito para a caixa |
+| Alvo | Permite-lhe apanhar uma Entidade para o fim do arco. Se nenhum Entity for definido, o Fallback Target será usado, que é um deslocamento da localização do emissor. |
+| Destino de recuperação | Offset da localização do emissor usado como ponto final no caso Target não é definido |
+| Altura do arco | A altura do arco em seu ponto mais alto (meio da distância entre os dois pontos). Por padrão é o vetor Y-up, mas pode ser girado com deslocamento de rotação e herança de rotação |
+| Pedido | Se verificado, novas partículas aparecerão em ordem do emissor para o alvo. Se desmarcado, novas partículas aparecerão aleatoriamente no arco em qualquer lugar entre a emissora e o alvo. Se você planeja visualizar as partículas como uma fita ou uma trilha, você deve definir esta caixa para verificar. |
+| Contagem fixa | Por partículas padrão aparecerá no arco a distâncias suficientes para que o número máximo de partículas se ajuste exatamente na linha. Se você quiser controlar a taxa de desova e a distância, você pode definir quantas "posições" fixas estão lá no arco. Por exemplo, com uma contagem fixa de 10 e desova ordenada, as primeiras 10 partículas aparecerão em ordem, então a 11a partícula aparecerá do início, na mesma posição que a primeira, e assim por diante. |
+| Offset de sementes | Isso é usado para números aleatórios. Defina-o ao mesmo valor para forçar a posição a ser acoplada com outros campos de partículas que têm 3 propriedades (X, Y, Z), como a velocidade, por exemplo. Faça-os diferentes para forçar a posição de ser único e independente de outros campos. |
+| Posição min | Canto inferior esquerdo para a caixa. Este é um deslocamento, além da posição do arco. |
+| Posição máxima | Canto superior direito para a caixa. Este é um deslocamento, além da posição do arco. |
 
-## Position (parent)
+## Posição (pai)
 
-| Property | Description |
+| Propriedade | Descrição |
 |-----------------------------|-------------
-| Seed offset | This is used for random numbers. Set it to the same value to force the position to be coupled with other other particle fields which have 3 properties (X, Y, Z), like velocity for example. Make them different to force the position to be unique and independent from other fields. |
-| Position min | Left lower back corner for the box |
-| Position max | Right upper front corner for the box |
-| Parent emitter | You have to type the name of the parent emitter. Child particles' positions will match the parent emitter's particles' positions. |
-| Parent Offset | Random seed used to couple or decouple the way a parent particle is chosen. For example, if you want to pick position *and* color from seemingly random particles, you can use the same offset. If you want to avoid such connection, you can use different offsets for position and color initializers. |
-| Spawn Control Group | When None, parents will be picked randomly. When set to one of the four groups, only particles from a specific parent will be initialized. It should match a control group from the **Spawn from Parent** spawner to work properly. |
+| Offset de sementes | Isso é usado para números aleatórios. Defina-o ao mesmo valor para forçar a posição a ser acoplada com outros campos de partículas que têm 3 propriedades (X, Y, Z), como a velocidade, por exemplo. Faça-os diferentes para forçar a posição de ser único e independente de outros campos. |
+| Posição min | Canto inferior esquerdo para a caixa |
+| Posição máxima | Canto frontal superior direito para a caixa |
+| Emitter dos pais | Você tem que digitar o nome do emissor pai. As posições das partículas da criança correspondem às posições das partículas do emissor. |
+| Desativação dos pais | Semente aleatória usada para acasalar ou desconectar a forma como uma partícula pai é escolhida. Por exemplo, se você quiser escolher a posição * e* cor de partículas aparentemente aleatórias, você pode usar o mesmo deslocamento. Se você quiser evitar tal conexão, você pode usar diferentes compensações para inicializadores de posição e cor. |
+| Grupo de controle de spam | Quando Nenhum, os pais serão escolhidos aleatoriamente. Quando definido para um dos quatro grupos, apenas partículas de um pai específico serão inicializadas. Ele deve corresponder a um grupo de controle do **Spawn de Parent** spawner para trabalhar corretamente. |
 
-## Velocity (parent)
+## Velocidade (pai)
 
-| Property | Description |
+| Propriedade | Descrição |
 |-----------------------------|-------------
-| Seed offset | This is used for random numbers. Set it to the same value to force the velocity to be coupled with other other particle fields which have 3 properties (x, Y, Z), like position for example. Make them different to force the velocity to be unique and independent from other fields. |
-| Velocity min | Left lower back corner for the box |
-| Velocity max | Right upper front corner for the box |
-| Parent emitter | You have to type the name of the parent emitter. Child particles' positions will match the parent emitter's particles' positions. |
-| Parent Offset | Random seed used to couple or decouple the way a parent particle is chosen. For example, if you want to pick position *and* color from seemingly random particles, you can use the same offset. If you want to avoid such connection, you can use different offsets for position and color initializers. |
-| Spawn Control Group | When None, parents will be picked randomly. When set to one of the four groups, only particles from a specific parent will be initialized. It should match a control group from the *Spawn from Parent* spawner to work properly. |
+| Offset de sementes | Isso é usado para números aleatórios. Defina-o ao mesmo valor para forçar a velocidade a ser acoplada com outros campos de partículas que têm 3 propriedades (x, Y, Z), como a posição, por exemplo. Faça-os diferentes para forçar a velocidade a ser único e independente de outros campos. |
+| Velocidade min | Canto inferior esquerdo para a caixa |
+| Velocidade máxima | Canto frontal superior direito para a caixa |
+| Emitter dos pais | Você tem que digitar o nome do emissor pai. As posições das partículas da criança correspondem às posições das partículas do emissor. |
+| Desativação dos pais | Semente aleatória usada para acasalar ou desconectar a forma como uma partícula pai é escolhida. Por exemplo, se você quiser escolher a posição * e* cor de partículas aparentemente aleatórias, você pode usar o mesmo deslocamento. Se você quiser evitar tal conexão, você pode usar diferentes compensações para inicializadores de posição e cor. |
+| Grupo de controle de spam | Quando Nenhum, os pais serão escolhidos aleatoriamente. Quando definido para um dos quatro grupos, apenas partículas de um pai específico serão inicializadas. Ele deve corresponder a um grupo de controle do *Spawn de Parent* spawner para trabalhar corretamente. |
 
-## Size (parent)
+## Tamanho (pai)
 
-| Property | Description |
+| Propriedade | Descrição |
 |-----------------------------|------------
-| Seed offset | This is used for random numbers. Set it to the same value to force the size to be coupled with other particle fields which have 1 property, like color for example. Make them different to force the size to be unique and independent from other fields. |
-| Random size | Shows the minimum and maximum size a particle can have at spawn time |
-| Parent emitter | You have to type the name of the parent emitter. Child particles' positions will match the parent emitter's particles' positions. |
-| Parent Offset | Random seed used to couple or decouple the way a parent particle is chosen. For example, if you want to pick position *and* color from seemingly random particles, you can use the same offset. If you want to avoid such connection, you can use different offsets for position and color initializers. |
-| Spawn Control Group | When None, parents will be picked randomly. When set to one of the four groups, only particles from a specific parent will be initialized. It should match a control group from the *Spawn from Parent* spawner to work properly. |
+| Offset de sementes | Isso é usado para números aleatórios. Defina-o ao mesmo valor para forçar o tamanho a ser acoplado com outros campos de partículas que têm 1 propriedade, como cor, por exemplo. Faça-os diferentes para forçar o tamanho a ser único e independente de outros campos. |
+| Tamanho aleatório | Mostra o tamanho mínimo e máximo que uma partícula pode ter no tempo livre |
+| Emitter dos pais | Você tem que digitar o nome do emissor pai. As posições das partículas da criança correspondem às posições das partículas do emissor. |
+| Desativação dos pais | Semente aleatória usada para acasalar ou desconectar a forma como uma partícula pai é escolhida. Por exemplo, se você quiser escolher a posição * e* cor de partículas aparentemente aleatórias, você pode usar o mesmo deslocamento. Se você quiser evitar tal conexão, você pode usar diferentes compensações para inicializadores de posição e cor. |
+| Grupo de controle de spam | Quando Nenhum, os pais serão escolhidos aleatoriamente. Quando definido para um dos quatro grupos, apenas partículas de um pai específico serão inicializadas. Ele deve corresponder a um grupo de controle do *Spawn de Parent* spawner para trabalhar corretamente. |
 
-## Color (parent)
+## Cor (pai)
 
-| Property | Description |
+| Propriedade | Descrição |
 |-----------------------------|------------
-| Seed offset | This is used for random numbers. Set it to the same value to force the color to be coupled with other particle fields which have 1 property, like size for example. Make them different to force the color to be unique and independent from other fields. |
-| Color A | The first value, in hexadecimal code. The color will be a random tint between this and the second color. |
-| Color B | The second value, in hexadecimal code. The color will be a random tint between this and the first color. |
-| Parent emitter | You have to type the name of the parent emitter. Child particles' positions will match the parent emitter's particles' positions. |
-| Parent Offset | Random seed used to couple or decouple the way a parent particle is chosen. For example, if you want to pick position *and* color from seemingly random particles, you can use the same offset. If you want to avoid such connection, you can use different offsets for position and color initializers. |
-| Spawn Control Group | When None, parents will be picked randomly. When set to one of the four groups, only particles from a specific parent will be initialized. It should match a control group from the *Spawn from Parent* spawner to work properly. |
+| Offset de sementes | Isso é usado para números aleatórios. Defina-o ao mesmo valor para forçar a cor a ser acoplada com outros campos de partículas que têm 1 propriedade, como o tamanho, por exemplo. Faça-os diferentes para forçar a cor a ser única e independente de outros campos. |
+| Cor A | O primeiro valor, no código hexadecimal. A cor será uma tonalidade aleatória entre esta e a segunda cor. |
+| Cor B | O segundo valor, no código hexadecimal. A cor será uma tonalidade aleatória entre esta e a primeira cor. |
+| Emitter dos pais | Você tem que digitar o nome do emissor pai. As posições das partículas da criança correspondem às posições das partículas do emissor. |
+| Desativação dos pais | Semente aleatória usada para acasalar ou desconectar a forma como uma partícula pai é escolhida. Por exemplo, se você quiser escolher a posição * e* cor de partículas aparentemente aleatórias, você pode usar o mesmo deslocamento. Se você quiser evitar tal conexão, você pode usar diferentes compensações para inicializadores de posição e cor. |
+| Grupo de controle de spam | Quando Nenhum, os pais serão escolhidos aleatoriamente. Quando definido para um dos quatro grupos, apenas partículas de um pai específico serão inicializadas. Ele deve corresponder a um grupo de controle do *Spawn de Parent* spawner para trabalhar corretamente. |
 
-## Spawn Order (parent)
+## Ordem de Spawn (pai)
 
-This initializer requires the parent emitter to also have a Spawn Order initializer. It combines the parent's spawn number with its own, effectively creating groups of particles among the children. This initializer is required to properly sort and render child ribbon particles.
+Este inicializador requer que o emissor de pais também tenha um inicializador de Ordem de Spawn. Ele combina o número desova do pai com seu próprio, efetivamente criando grupos de partículas entre as crianças. Este inicializador é necessário para classificar corretamente e renderizar partículas de fita de criança.
 
-| Property | Description |
+| Propriedade | Descrição |
 |-----------------------------|------------
-| Parent emitter | You have to type the name of the parent emitter. Child particles' positions will match the parent emitter's particles' positions. |
-| Parent Offset | Random seed used to couple or decouple the way a parent particle is chosen. For example, if you want to pick position *and* color from seemingly random particles, you can use the same offset. If you want to avoid such connection, you can use different offsets for position and color initializers. |
-| Spawn Control Group | When None, parents will be picked randomly. When set to one of the four groups, only particles from a specific parent will be initialized. It should match a control group from the *Spawn from Parent* spawner to work properly. |
+| Emitter dos pais | Você tem que digitar o nome do emissor pai. As posições das partículas da criança correspondem às posições das partículas do emissor. |
+| Desativação dos pais | Semente aleatória usada para acasalar ou desconectar a forma como uma partícula pai é escolhida. Por exemplo, se você quiser escolher a posição * e* cor de partículas aparentemente aleatórias, você pode usar o mesmo deslocamento. Se você quiser evitar tal conexão, você pode usar diferentes compensações para inicializadores de posição e cor. |
+| Grupo de controle de spam | Quando Nenhum, os pais serão escolhidos aleatoriamente. Quando definido para um dos quatro grupos, apenas partículas de um pai específico serão inicializadas. Ele deve corresponder a um grupo de controle do *Spawn de Parent* spawner para trabalhar corretamente. |
 
-## See also
+## Ver também
 
-* [Create particles](create-particles.md)
+* [Criar partículas](create-particles.md)
 
 * [Emitters](emitters.md)
 
-* [Shapes](shapes.md)
+* [Formas](shapes.md)
 
-* [Materials](materials.md)
+* [Materiais](materials.md)
 
 * [Spawners](spawners.md)
 
-* [Updaters](updaters.md)
+* [Atualizações](updaters.md)

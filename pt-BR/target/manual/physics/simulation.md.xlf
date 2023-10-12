@@ -3,71 +3,71 @@
 <body>
 <trans-unit id="tu1" xml:space="preserve">
 <source xml:lang="en">Physics simulation</source>
-<target xml:lang="pt">Physics simulation</target>
+<target xml:lang="pt">Simulação de física</target>
 </trans-unit>
 <trans-unit id="tu2" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Intermediate<x id="2"/>
 <x id="3"/>Programmer<x id="4"/></source>
-<target xml:lang="pt"><x id="1"/>Intermediate<x id="2"/>
-<x id="3"/>Programmer<x id="4"/></target>
+<target xml:lang="pt">&lt;x1\/&gt; Intermediário &lt;x2\/&gt;
+&lt;x3\/&gt; Programador &lt;x4\/&gt;</target>
 </trans-unit>
 <trans-unit id="tu3" xml:space="preserve">
 <source xml:lang="en">Stride's physics are controlled by the <g id="1">Simulation</g> class.
 You can change how Stride initializes the <g id="2">simulation</g> by modifying flags in <g id="3">PhysicsSettings</g>, accessed in the <g id="4">GameSettings</g> asset properties.</source>
-<target xml:lang="pt">Stride's physics are controlled by the <g id="1">Simulation</g> class.
-You can change how Stride initializes the <g id="2">simulation</g> by modifying flags in <g id="3">PhysicsSettings</g>, accessed in the <g id="4">GameSettings</g> asset properties.</target>
+<target xml:lang="pt">A física de Stride é controlada pela classe <g id="1">Simulation</g>.
+Você pode mudar como Stride inicializa o <g id="2">simulation</g> modificando bandeiras em <g id="3">PhysicsDefinições</g>, acessado nas propriedades de ativos <g id="4">GameSettings</g>.</target>
 </trans-unit>
 <trans-unit id="tu4" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>!Note<x id="2"/>
 Your scene must have at least one <g id="3">Collider</g> in order for Stride to initialize the <g id="4">Simulation</g> instance.</source>
-<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
-Your scene must have at least one <g id="3">Collider</g> in order for Stride to initialize the <g id="4">Simulation</g> instance.</target>
+<target xml:lang="pt">&lt;x1\/&gt;!Note&lt;x2\/&gt;
+Sua cena deve ter pelo menos um <g id="3">Collider</g> para que Stride inicialize a instância <g id="4">Simulation</g>.</target>
 </trans-unit>
 <trans-unit id="tu5" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Physics Settings<x id="2"/></source>
-<target xml:lang="pt"><x id="1"/>Physics Settings<x id="2"/></target>
+<target xml:lang="pt">&lt;x1\/&gt;Physics Configurações&lt;x2\/&gt;</target>
 </trans-unit>
 <trans-unit id="tu6" xml:space="preserve">
 <source xml:lang="en"><g id="1">CollisionsOnly</g> initializes the <g id="2">Simulation</g> with collision detection turned on, but no other physics. Objects won't react to physical forces.</source>
-<target xml:lang="pt"><g id="1">CollisionsOnly</g> initializes the <g id="2">Simulation</g> with collision detection turned on, but no other physics. Objects won't react to physical forces.</target>
+<target xml:lang="pt"><g id="1">CollisionsOnly</g> inicializa o <g id="2">Simulation</g> com detecção de colisão ligada, mas nenhuma outra física. Os objectos não reagem às forças físicas.</target>
 </trans-unit>
 <trans-unit id="tu7" xml:space="preserve">
 <source xml:lang="en"><g id="1">ContinuousCollisionDetection</g> initializes the <g id="2">Simulation</g> with continuous collision detection (CCD). CCD prevents fast-moving entities (such as bullets) erroneously passing through other entities.</source>
-<target xml:lang="pt"><g id="1">ContinuousCollisionDetection</g> initializes the <g id="2">Simulation</g> with continuous collision detection (CCD). CCD prevents fast-moving entities (such as bullets) erroneously passing through other entities.</target>
+<target xml:lang="pt"><g id="1">ContinuousCollisionDetection</g> inicializa o <g id="2">Simulation</g> com detecção contínua (CCD). O CCD evita que entidades em movimento rápido (como balas) passem erroneamente por outras entidades.</target>
 </trans-unit>
 <trans-unit id="tu8" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>!Note<x id="2"/>
 The <g id="3">SoftBodySupport</g>, <g id="4">MultiThreaded</g>, and <g id="5">UseHardwareWhenPossible</g> flags are currently disabled.</source>
-<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
-The <g id="3">SoftBodySupport</g>, <g id="4">MultiThreaded</g>, and <g id="5">UseHardwareWhenPossible</g> flags are currently disabled.</target>
+<target xml:lang="pt">&lt;x1\/&gt;!Note&lt;x2\/&gt;
+O <g id="3">SoftBodySupport</g>, <g id="4">MultiThreaded</g> e <g id="5">UseHardwareWhenPossible</g> flags estão atualmente desativados.</target>
 </trans-unit>
 <trans-unit id="tu9" xml:space="preserve">
 <source xml:lang="en">At runtime, you can change some <g id="1">Simulation</g> parameters:</source>
-<target xml:lang="pt">At runtime, you can change some <g id="1">Simulation</g> parameters:</target>
+<target xml:lang="pt">No tempo de execução, você pode alterar alguns parâmetros <g id="1">Simulation</g>:</target>
 </trans-unit>
 <trans-unit id="tu10" xml:space="preserve">
 <source xml:lang="en"><g id="1">Gravity</g> — the global gravity, in <g id="2">world units</g> per second squared</source>
-<target xml:lang="pt"><g id="1">Gravity</g> — the global gravity, in <g id="2">world units</g> per second squared</target>
+<target xml:lang="pt"><g id="1">Gravidade</g> — a gravidade global, em unidades do mundo <g id="2"> por segundo quadrado</g></target>
 </trans-unit>
 <trans-unit id="tu11" xml:space="preserve">
 <source xml:lang="en"><g id="1">FixedTimeStep</g> — the length of a simulation timestep, in seconds</source>
-<target xml:lang="pt"><g id="1">FixedTimeStep</g> — the length of a simulation timestep, in seconds</target>
+<target xml:lang="pt"><g id="1">FixedTimeStep</g> — o comprimento de um tempo de simulação, em segundos</target>
 </trans-unit>
 <trans-unit id="tu12" xml:space="preserve">
 <source xml:lang="en"><g id="1">MaxSubSteps</g> — the maximum number of fixed timesteps the engine takes per update</source>
-<target xml:lang="pt"><g id="1">MaxSubSteps</g> — the maximum number of fixed timesteps the engine takes per update</target>
+<target xml:lang="pt"><g id="1">MaxSubSteps</g> — o número máximo de tempo fixo que o motor leva por atualização</target>
 </trans-unit>
 <trans-unit id="tu13" xml:space="preserve">
 <source xml:lang="en">See also</source>
-<target xml:lang="pt">See also</target>
+<target xml:lang="pt">Ver também</target>
 </trans-unit>
 <trans-unit id="tu14" xml:space="preserve">
 <source xml:lang="en"><g id="1">Colliders</g></source>
-<target xml:lang="pt"><g id="1">Colliders</g></target>
+<target xml:lang="pt"><g id="1">Coleiras</g></target>
 </trans-unit>
 <trans-unit id="tu15" xml:space="preserve">
 <source xml:lang="en"><g id="1">Collider shapes</g></source>
-<target xml:lang="pt"><g id="1">Collider shapes</g></target>
+<target xml:lang="pt"><g id="1">Formas de colarinho</g></target>
 </trans-unit>
 </body>
 </file>

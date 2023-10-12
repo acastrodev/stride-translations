@@ -1,117 +1,117 @@
-# Material slots
+# Slots de material
 
-<span class="badge text-bg-primary">Intermediate</span>
-<span class="badge text-bg-success">Artist</span>
-<span class="badge text-bg-success">Programmer</span>
+<x1\/> Intermediário <x2\/>
+<x3\/>Artista <x4\/>
+<x5\/> Programador <x6\/>
 
-Models can use multiple materials. You can set the materials in the model's **material slots**.
+Os modelos podem usar vários materiais. Você pode definir os materiais nos slots de material ** do modelo**.
 
-![Material slots](media/material-slots.png)
+<x1\/> slots de série<x2\/>
 
-For example, the second material slot in this model specifies the material for the visor and the shoulder and chest plate stripes. By changing the material in this slot, we change the material used in these parts of the model.
+Por exemplo, o segundo slot de material neste modelo especifica o material para a viseira e as listras de placa de ombro e peito. Ao mudar o material neste slot, mudamos o material usado nessas partes do modelo.
 
-![Materials](media/model-materials-both.png)
+<x1\/>materiais<x2\/>
 
-The material slots themselves — their number and position — are defined in the model source file (eg  `.fbx`, `.obj`, etc). You can't edit material slots in Game Studio; you can only change which materials are used in each slot.
+Os próprios slots de material — seu número e posição — são definidos no arquivo de origem do modelo (por exemplo `.fbx`, `.obj`, etc). Você não pode editar slots de material no Game Studio; você só pode alterar quais materiais são usados em cada slot.
 
-## Set materials on a model
+## Definir materiais em um modelo
 
-You can change the materials a model uses in two places:
+Você pode alterar os materiais que um modelo usa em dois lugares:
 
-* Under the **Materials** properties of the model itself:
+* Sob as propriedades **Materials** do próprio modelo:
 
-   ![Model materials](media/model-materials.png)
+   <x1\/>Materiais móveis<x2\/>
 
-   > [!Note]
-   > This affects every instance of this model.
+   > <x1\/>!Note<x2\/>
+   > Isso afeta cada instância deste modelo.
 
-* In the **model component** of an entity or [prefab](../../game-studio/prefabs/index.md):
+* No componente **model** de uma entidade ou [prefab](../../game-studio/prefabs/index.md):
 
-   ![Model materials on entity](media/model-materials-in-entity.png)
+   <x1\/> Materiais móveis em entidade<x2\/>
 
-   This only affects **this** instance or prefab.
+   Isso só afeta **this** instância ou pré-fabricado.
 
-## Meshes and material slots
+## Malhas e slots de material
 
-Models imported from modeling software can contain meshes. Meshes can share materials via material slots.
+Modelos importados do software de modelagem podem conter malhas. As malhas podem compartilhar materiais através de slots de material.
 
-![Mesh](media/material-slot-diagram-1.png)
+<x1\/>Mesh<x2\/>
 
-The association between a mesh and a material slot is defined in the model source file. You can't change these associations in Game Studio, but you can change them in code at runtime.
+A associação entre uma malha e um slot de material é definida no arquivo de origem do modelo. Você não pode alterar essas associações no Game Studio, mas você pode alterá-las em código no tempo de execução.
 
-To change the association between a mesh and a material, use:
+Para alterar a associação entre uma malha e um material, use:
 
 ```cs
 MyModelComponent.Model.Meshes[submeshIndex].MaterialIndex = materialIndex;
 ```
 
-To change or add a material to the list of materials:
+Para alterar ou adicionar um material à lista de materiais:
 
 ```cs
 MyModelComponent.Materials[ExistingOrNewMaterialIndex] = myMaterial;
 ```
 
-### Merging meshes
+### Malhas de fusão
 
-When Stride draws a model with meshes, it performs one GPU draw call for each mesh. By default, to improve performance, at build time, Stride merges meshes that share materials.
+Quando Stride desenha um modelo com malhas, ele executa uma chamada de desenho GPU para cada malha. Por padrão, para melhorar o desempenho, no tempo de compilação, a Stride mescla malhas que compartilham materiais.
 
-![Mesh](media/material-slot-diagram-2.png)
+<x1\/>Mesh<x2\/>
 
-In the example above, there are five meshes and five draw calls. After merging, there are three meshes and three draw calls.
+No exemplo acima, há cinco malhas e cinco chamadas de sorteio. Após a fusão, há três malhas e três chamadas de sorteio.
 
-> [!Note]
-> When Stride merges meshes, it merges the vertex and index buffers. This means you can't draw the meshes separately at runtime, and you can't change the original mesh position (transformation matrix). The meshes become a single mesh with a single material and a single transformation matrix (relative to the model).
+> <x1\/>!Note<x2\/>
+> Quando o Stride mescla malhas, ele mescla o vértice e os buffers de índice. Isso significa que você não pode desenhar as malhas separadamente no tempo de execução, e você não pode alterar a posição de malha original (matriz de transformação). As malhas se tornam uma única malha com um único material e uma única matriz de transformação (relativa ao modelo).
 
-> [!Note]
-> When Stride merges meshes, it changes the draw order of elements. In the case of transparent materials, this can produce different results.
+> <x1\/>!Note<x2\/>
+> Quando Stride mescla malhas, ele muda a ordem do sorteio de elementos. No caso de materiais transparentes, isso pode produzir resultados diferentes.
 
-> [!Note]
-> When you create a [physics collider from a model](../../physics/collider-shapes.md), Stride builds separate convex hulls for each mesh in the model. If the meshes are merged, only one mesh remains per material, so convex hulls are also built from merged meshes.
+> <x1\/>!Note<x2\/>
+> Quando você cria um [física colide de um modelo](../../physics/collider-shapes.md), Stride constrói cascos convexos separados para cada malha no modelo. Se as malhas são fundidas, apenas uma malha permanece por material, então cascos convexos também são construídos a partir de malhas mescladas.
 
-### Disable mesh merging
+### Desativar a fusão de malha
 
-You might want to disable mesh merging if you want to:
+Você pode querer desativar a fusão de malha se você quiser:
 
-* animate a mesh
+* animar uma malha
 
-* change the material of a mesh at runtime
+* mudar o material de uma malha no tempo de execução
 
-To disable mesh merging on a model:
+Para desativar a fusão de malha em um modelo:
 
-1. Select the model you want to disable mesh merging for.
+1. Selecione o modelo para o qual deseja desativar a fusão de malha.
 
-2. In the **Property Grid**, disable **Merge meshes**.
+2. No **Property Grid**, desative **Merge meshes**.
 
-   ![Disable merge meshes](media/disable-merge-meshes.png)
+   <x1\/> Desativar malhas mesclas<x2\/>
 
-#### Disable merging for specific meshes
+#### Desativar a fusão para malhas específicas
 
-To disable merging only for specific meshes, enable their corresponding **nodes**.
+Para desativar a fusão apenas para malhas específicas, ative seus **nodes** correspondentes.
 
-1. Select the model that contains the meshes.
+1. Selecione o modelo que contém as malhas.
 
-2. In the **Property Grid**, under **Skeleton**, make sure the model has a skeleton associated with it.
+2. No **Property Grid**, sob **Skeleton**, certifique-se de que o modelo tem um esqueleto associado a ele.
 
-   ![Model skeleton](media/model-skeleton.png)
+   <x1\/>Esqueleto padrão <x2\/>
 
-   For more information about skeletons, see [Animation](../../animation/index.md).
+   Para mais informações sobre esqueletos, veja [Animação](../../animation/index.md).
 
-3. In the **Asset View**, select the skeleton.
+3. No **Asset View**, selecione o esqueleto.
 
-   ![Select model skeleton](media/select-model-skeleton.png)
+   <x1\/>Selecione o esqueleto do modelo<x2\/>
 
-4. In the **Property Grid**, under **Nodes**, select the nodes that correspond to the meshes you don't want to merge.
+4. No **Property Grid**, sob **Nodes**, selecione os nós que correspondem às malhas que você não quer mesclar.
 
-   ![Nodes](media/select-model-skeleton-nodes.png)
+   <x1\/>Nodes<x2\/>
 
-   > [!Tip]
-   > To see which nodes correspond to which mesh, open the model source file in a modeling application such as Maya.
+   > <x1\/>!Tip<x2\/>
+   > Para ver quais nós correspondem a qual malha, abra o arquivo de origem do modelo em uma aplicação de modelagem como Maya.
 
-   > [!Note]
-   > Make sure you don't disable nodes that are animated at runtime.
+   > <x1\/>!Note<x2\/>
+   > Certifique-se de que você não desabilite nós que são animados em tempo de execução.
 
-## See also
+## Ver também
 
-* [Material maps](material-maps.md)
-* [Material attributes](material-attributes.md)
-* [Material slots](material-slots.md)
+* [Mapas de material](material-maps.md)
+* [Atributos de material](material-attributes.md)
+* [Slots de material](material-slots.md)

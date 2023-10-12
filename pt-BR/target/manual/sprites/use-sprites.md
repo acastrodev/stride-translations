@@ -1,24 +1,24 @@
 # Use sprites
 
-<span class="badge text-bg-primary">Intermediate</span>
-<span class="badge text-bg-success">Programmer</span>
+<x1\/> Intermediário <x2\/>
+<x3\/> Programador <x4\/>
 
-To add a sprite to a scene, add a **sprite component** to an entity. Afterwards, you can control the sprite with a script.
+Para adicionar um sprite a uma cena, adicione um componente **sprite** a uma entidade. Depois, você pode controlar o sprite com um script.
 
-## Add a sprite component
+## Adicionar um componente sprite
 
-1. In the **Scene Editor**, select the entity you want to add a sprite to.
+1. No **Scene Editor**, selecione a entidade a que deseja adicionar um sprite.
 
-   > [!Tip]
-   > To create an entity, right-click the scene or Entity Tree and select **Empty entity**.
+   > <x1\/>!Tip<x2\/>
+   > Para criar uma entidade, clique com o botão direito do mouse na cena ou Entity Tree e selecione **Empty entity**.
 
-2. In the **Property Grid**, click **Add component** and select **Sprite**.
+2. No **Property Grid**, clique em **Add component** e selecione **Sprite**.
 
-   ![Sprite sheet](media/SpriteEntity.png)
+   <x1\/> Folha de preços <x2\/>
 
-   Game Studio adds a Sprite component to the entity.
+   Game Studio adiciona um componente Sprite à entidade.
 
-3. From the **Asset View**, drag the sprite sheet to the **Source** field in the Sprite component:
+3. Do **Asset View**, arraste a folha de sprite para o campo **Fonte** no componente Sprite:
 
 <p>
         <video autoplay loop class="responsive-video" poster="media\drag-sprite-sheet-to-asset-picker.png">
@@ -26,74 +26,74 @@ To add a sprite to a scene, add a **sprite component** to an entity. Afterwards,
         </video>
     </p>
 
-   Alternatively, click ![Hand icon](~/manual/game-studio/media/hand-icon.png) (**Select an asset**):
+   Alternativamente, clique em <x1\/>Hand icon<x2\/> (**Select an asset**):
 
-   ![Pick asset up](media/pick-asset-up.png)
+   <x1\/>Ativação rápida até<x2\/>
 
-   Then choose a sprite sheet:
+   Em seguida, escolha uma folha de sprite:
 
-   ![Select an asset](media/asset-picker.png)
+   <x1\/> Selecione um ativo<x2\/>
 
-Game Studio adds the sprite to the entity.
+Game Studio adiciona o sprite à entidade.
 
-### Sprite component properties
+### Propriedades do componente Sprite
 
-You can access the sprite component properties in the **Property Grid**.
+Você pode acessar as propriedades do componente sprite no **Property Grid**.
 
-![Sprite component properties](media/sprite-component-properties.png)
+<x1\/> Propriedades do componente privado<x2\/>
 
-| Property | Function |
+| Propriedade | Função |
 |------------|-----------
-| Source | The source image file for the sprite |
-| Type | **Sprites** have 3D space in the scene. <br><p>**Billboards** always face the camera and appear fixed in 3D space. |
-| Color | Applies a color to the sprite |
-| Intensity | The intensity by which the color is scaled (mainly used for rendering LDR sprites in HDR scenes) |
-| Premultiply alpha | Premultiply color components by their alpha component |
-| Ignore depth | Ignore the depth of other elements in the scene when rendering the sprite. This always places the sprite on top of previous elements. |
-| Alpha cutoff | Ignore pixels with low alpha values when rendering the sprite |
-| Sampler | The texture sampling method used for the sprite: Point (nearest), Linear, or Anisotropic |
-| Swizzle | How the color channels are accessed. <br><p>**Default** leaves the image unchanged (finalRGB = originalRGB) <br><p>**Normal map** uses the color channels as a [normal map](../graphics/textures/normal-maps.md) <br><p>**Grayscale (alpha)** uses only the R channel (finalRGBA = originalRRRR), so the sprite is red <br><p>**Grayscale (opaque)** is the same as **Grayscale (alpha)**, but uses a value of `1` for the alpha channel, so the sprite is opaque |
-| Render group | Which render group the sprite belongs to. Cameras can render different groups. For more information, see [Render groups and render masks](../graphics/graphics-compositor/render-groups-and-masks.md). |
+| Fonte | O arquivo de imagem de origem para o sprite |
+| Tipo | **Sprites** have 3D space in the scene. <x1\/><p>**Billboards** sempre enfrentam a câmera e aparecem fixos no espaço 3D. |
+| Cor | Aplica uma cor ao sprite |
+| Intensidade | A intensidade pela qual a cor é dimensionada (principalmente usada para renderizar sprites LDR em cenas HDR) |
+| Premultiplicação alfa | Premultiplicar componentes de cor por seu componente alfa |
+| Ignorar profundidade | Ignore a profundidade de outros elementos na cena ao renderizar o sprite. Isso sempre coloca o sprite em cima de elementos anteriores. |
+| Corte alfa | Ignorar pixels com valores alfa baixos ao renderizar o sprite |
+| Sampler | O método de amostragem de textura utilizado para o sprite: Ponto (mais próximo), Linear ou Anisotrópico |
+| Swizzle | Como os canais de cores são acessados. <x1\/><p>** Padrão** deixa a imagem inalterada (finalRGB = originalRGB) <x1\/><p>**Normal map** usa os canais de cor como um mapa [normal](../graphics/textures/normal-maps.md) <x1\/><p>**Grayscale (alpha)** usa apenas o canal R (finalRGBA = originalRRRR), então o sprite é vermelho <x1\/><p>**Grayscale (opaque)** é o mesmo que **Grayscale (alpha)**, mas usa um valor de `1` para o canal alfa, de modo que o sprite é opaco |
+| Grupo de renderização | A qual faz o grupo ao qual pertence o sprite. As câmeras podem renderizar diferentes grupos. Para mais informações, consulte grupos [Render e torne máscaras](../graphics/graphics-compositor/render-groups-and-masks.md). |
 
-## Use sprites in a script
+## Use sprites em um script
 
-You can use scripts to render sprites at runtime. To do this, attach the script to an entity with a sprite component.
+Você pode usar scripts para renderizar sprites em tempo de execução. Para fazer isso, anexar o script a uma entidade com um componente sprite.
 
-For information about how to add scripts to entities, see [Use a script](../scripts/use-a-script.md).
+Para obter informações sobre como adicionar scripts a entidades, consulte [Use um script](../scripts/use-a-script.md).
 
-### Code sample
+### Amostra de código
 
-This script displays a sprite that advances to the next sprite in the index every second. After it reaches the end of the sprite index, it loops.
+Este script exibe um sprite que avança para o próximo sprite no índice a cada segundo. Depois de atingir o fim do índice de sprite, ele loops.
 
 ```cs
-using Stride.Rendering.Sprites;
+usando Stride. Renderização. Sprites;
 
-public class Animation : SyncScript
-{
-   // Declared public member fields and properties are displayed in Game Studio.
-   private SpriteFromSheet sprite;
-   private DateTime lastFrame;
+animação: Sincronização
+(
+   \/\/ Campos e propriedades de membros públicos declarados são exibidos no Game Studio.
+   sprite privado FromSheet sprite;
+   dataTime último privado Quadro;
 
-   public override void Start()
-   {
-       // Initialize the script.
-       sprite = Entity.Get<SpriteComponent>().SpriteProvider as SpriteFromSheet;
-       lastFrame = DateTime.Now;
+   anula de sobreposição pública Start()
+   (
+       \/\/ Inicializar o script.
+       sprite = Entity.Get<SpriteComponent>(). SpriteProvider como SpriteFromSheet;
+       último Quadro = DateTime.Now;
    }
 
-   public override void Update()
-   {
-      // Do something every new frame.
-      if ((DateTime.Now - lastFrame) > new TimeSpan(0, 0, 1))
-      {
-         sprite.CurrentFrame += 1;
-         lastFrame = DateTime.Now;
+   atualização()
+   (
+      \/\/ Faça algo em cada novo quadro.
+      se (DateTime. Agora - lastFrame) > novo TimeSpan(0, 0, 1))
+      (
+         sprite. CurrentFrame += 1;
+         último Quadro = DateTime.Now;
       }
    }
 }
 ```
 
-## See also
+## Ver também
 
-* [Import sprite sheets](import-sprite-sheets.md)
-* [Edit sprites](edit-sprites.md)
+* [Folhas de sprite de importação](import-sprite-sheets.md)
+* [Editar sprites](edit-sprites.md)

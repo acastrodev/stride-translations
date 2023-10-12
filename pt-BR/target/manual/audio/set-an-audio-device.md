@@ -1,30 +1,30 @@
-# Set an audio device
+# Definir um dispositivo de áudio
 
-<span class="badge text-bg-primary">Advanced</span>
-<span class="badge text-bg-success">Programmer</span>
+<x1\/> Avançado <x2\/>
+<x3\/> Programador <x4\/>
 
-You can set which audio device Stride uses. For example, you can access the _Oculus Rift_ audio device from your custom game constructor.
+Você pode definir qual dispositivo de áudio Stride usa. Por exemplo, você pode acessar o dispositivo de áudio _Oculus Rift_ do seu construtor de jogo personalizado.
 
-If you don't specify a device, Stride uses the default audio advice.
+Se você não especificar um dispositivo, o Stride usa o conselho de áudio padrão.
 
-## Example code
+## Exemplo de código
 
-This code sets the Oculus Rift device at runtime:
+Este código define o dispositivo Oculus Rift em tempo de execução:
 
 ```cs
 namespace OculusRenderer
-{
-    public class OculusGame : Game
-    {
-        public OculusGame()
-        {
+(
+    classe pública Oculus. Jogo : Jogo
+    (
+        oculusGame()
+        (
             var deviceName = OculusOvr.GetAudioDeviceFullName();
-            var deviceUuid = new AudioDevice { Name = deviceName };
-            Audio.RequestedAudioDevice = deviceUuid;
+            var deviceUuid = novo AudioDevice { Nome = dispositivoNome };
+            Áudio.Pedido AudioDevice = dispositivoUuid;
         }
     }
 }
 ```
 
-## See also
-* [Global audio settings](global-audio-settings.md)
+## Ver também
+* [Configurações de áudio globais](global-audio-settings.md)

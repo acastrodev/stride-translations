@@ -1,18 +1,18 @@
-# Project and Unproject
+# Projeto e Unproject
 
-This C# Intermediate tutorial covers projecting and unprojecting coordinates from 3D to 2D and vice versa.
+Este tutorial intermediário C# cobre as coordenadas de projeto e não projeto de 3D a 2D e vice-versa.
 
-## Explanation
+## Explicação
 
-When we want to 'convert' 3D coordinates to a 2D screen, we speak 'Projecting'. The other way around is called 'Unprojecting'. Both scenarios are fairly common in 3D games.
+Quando queremos "converter" coordenadas 3D para uma tela 2D, falamos "Projeção". O outro caminho é chamado de "Unprojecting". Ambos os cenários são bastante comuns em jogos 3D.
 
-The 3D to 2D or projecting happens for instance when you have a 3d quest marker. When the target you need to travel to is somewhere in front of you in the world, then you want to draw a 2D quest marker on screen that gives you an indication of where in the 3D world that target is located.
+O 3D para 2D ou projeto acontece por exemplo quando você tem um marcador de busca 3D. Quando o alvo que você precisa viajar é em algum lugar na frente de você no mundo, então você quer desenhar um marcador de busca 2D na tela que lhe dá uma indicação de onde no mundo 3D que o alvo está localizado.
 
-From 2D to 3D is often used to convert a mouse coordinate into the looking direction of the camera. This can be used for firing a weapon or setting a target on a map when playing a strategy game.
+De 2D a 3D é frequentemente usado para converter uma coordenada do mouse na direção de olhar da câmera. Isso pode ser usado para disparar uma arma ou definir um alvo em um mapa ao jogar um jogo de estratégia.
 
-> [!Video https://www.youtube.com/embed/r2sMWGPidis]
+> [!Vídeo https://www.youtube.com/embed/r2sMWGPidis]
 
-## Project
+## Projeto
 [!code-csharp[project](../../../../stride/samples/Tutorials/CSharpIntermediate/CSharpIntermediate/CSharpIntermediate.Game/04_Project-UnProject/ProjectDemo.cs)]
 
 ## Unproject

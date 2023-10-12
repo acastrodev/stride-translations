@@ -1,32 +1,32 @@
-# Project structure
+# Estrutura do projecto
 
-Stride saves your projects as [Visual Studio solution files](https://msdn.microsoft.com/en-us/library/bb165951.aspx?f=255&MSPPError=-2147217396). You can open the projects with Stride Game Studio or any IDE such as Visual Studio.
+Stride salva seus projetos como arquivos de solução [Visual Studio](https://msdn.microsoft.com/en-us/library/bb165951.aspx?f=255&MSPPError=-2147217396). Você pode abrir os projetos com Stride Game Studio ou qualquer IDE como Visual Studio.
 
-Stride organizes project files into **packages**. Each package comprises several folders and an *.sdpkg file which describes the package.
+Stride organiza arquivos de projeto em **packages**. Cada pacote compreende várias pastas e um arquivo *.sdpkg que descreve o pacote.
 
-A project can contain one package or several. You can share packages between projects.
+Um projeto pode conter um pacote ou vários. Você pode compartilhar pacotes entre projetos.
 
-## Package folder structure
+## Estrutura da pasta do pacote
 
-![Folder structure](media/folder-structure.png)
+<x1\/> Estrutura de base<x2\/>
 
-* **Assets** contains the [asset](../game-studio/assets.md) files which represent elements in your game.
+* **Ativos** contém os arquivos [asset](../game-studio/assets.md) que representam elementos no seu jogo.
 
-* **Bin** contains the compiled binaries and data. Stride creates the folder when you build the project, with a subdirectory for each platform.
+* **Bin** contém os binários e dados compilados. Stride cria a pasta quando você constrói o projeto, com um subdiretório para cada plataforma.
 
-* **MyGame.Game** contains the source code of your game as a cross-platform Visual Studio project (.csproj). You can add multiple projects to the same game.
+* **MyGame.Game** contém o código fonte do seu jogo como um projeto Visual Studio multiplataforma (.csproj). Você pode adicionar vários projetos ao mesmo jogo.
 
-* **MyGame.Platform** contains additional code for the platforms your project supports. Game Studio creates folders for each platform (eg *MyPackage.Windows*, *MyPackage.Linux*, etc). These folders are usually small, and only contain the entry point of the program.
+* **MyGame.Platform** contém código adicional para as plataformas suportadas pelo seu projeto. Game Studio cria pastas para cada plataforma (por exemplo *MyPackage. Windows*, *MyPackage.Linux*, etc.). Essas pastas são geralmente pequenas e contêm apenas o ponto de entrada do programa.
 
-* **obj** contains cached files. Game Studio creates this folder when you build your project.
+* **obj** contém arquivos em cache. Game Studio cria esta pasta quando você construir seu projeto.
 
-* **Resources** is a suggested location for files such as images and audio files used by your assets.
+* **Recursos** é um local sugerido para arquivos como imagens e arquivos de áudio usados por seus ativos.
 
-## Recommended project structure
+## Estrutura de projeto recomendada
 
-For advice about the best way to organize your project, see the [Version control](version-control.md) page.
+Para conselhos sobre a melhor maneira de organizar seu projeto, consulte a página [Version control](version-control.md).
 
-## See also
+## Ver também
 
-* [Version control](version-control.md)
-* [Distribute a game](distribute-a-game.md)
+* [Controle de versão](version-control.md)
+* [Distribuir um jogo](distribute-a-game.md)

@@ -1,29 +1,29 @@
-# Kinematic rigidbodies
+# Rígidos caninemáticos
 
-Sometimes you want to move [rigidbodies](rigid-bodies.md) in a specific way rather than have other objects move them. For example, you might control an elevator with a script, via its `Transform` property, rather than have other objects push and pull it. This is a **kinematic** rigidbody.
+Às vezes você quer mover [rigidbodies](rigid-bodies.md) de uma maneira específica em vez de ter outros objetos movê-los. Por exemplo, você pode controlar um elevador com um script, através de sua propriedade `Transform`, em vez de ter outros objetos empurrar e puxá-lo. Este é um **kinematic** rigidbody.
 
-Although kinematic rigidbodies aren't moved by physics, other objects can still collide with them. For example, in the case of the elevator, objects placed inside won't fall through the elevator floor.
+Embora os rígidos cinemáticos não sejam movidos pela física, outros objetos ainda podem colidir com eles. Por exemplo, no caso do elevador, os objetos colocados dentro não cairão no chão do elevador.
 
-![Kinematic elevator](media/rigid-bodies-kinematic-elevator.png)
+<x1\/>Elevador mecânico<x2\/>
 
-## Make a kinematic rigidbody
+## Faça um corpo rígido cinemático
 
-1. Select the entity you want to be a kinematic rigidbody.
+1. Selecione a entidade que deseja ser uma pessoa rígida cinemática.
 
-2. In the **Property Grid**, under the **Rigidbody** component properties, select **Is kinematic**.
+2. No **Property Grid**, sob as propriedades de componente **Rigidbody**, selecione **Is kinematic**.
 
-   ![Check 'Is kinematic'](media/rigid-bodies-is-kinematic-checkbox.png)
+   <x1\/>Check 'Is kinematic'<x2\/>
 
-## Scripting kinematic rigidbodies
+## Roteiros rígidos cinemáticos
 
-You can script the **Is kinematic** property to turn on and off on certain events. For example, imagine our kinematic elevator's suspension cables are cut. You can script the **Is kinematic** property to change to *false* when this happens. The elevator becomes subject to the usual forces of physics, and falls.
+Você pode escrever a propriedade **Is kinematic** para ativar e desativar certos eventos. Por exemplo, imagine que os cabos de suspensão do elevador cinemático são cortados. Você pode escrever a propriedade **Is kinematic** para mudar para *false* quando isso acontece. O elevador fica sujeito às forças habituais da física, e cai.
 
-![Non-kinematic elevator](media/rigid-bodies-non-kinematic-elevator.png)
+<x1\/> Elevador não-cinemático<x2\/>
 
-## See also
+## Ver também
 
-* [Rigidbodies](rigid-bodies.md)
-* [Static colliders](static-colliders.md)
-* [Characters](characters.md)
-* [Collider shapes](collider-shapes.md)
+* [Rígidos](rigid-bodies.md)
+* [Colliders estáticos](static-colliders.md)
+* [Personagens](characters.md)
+* [Formas de colarinho](collider-shapes.md)
 * [Triggers](triggers.md)

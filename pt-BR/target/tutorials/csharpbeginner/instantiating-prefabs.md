@@ -1,16 +1,16 @@
-# Instantiating Prefabs
-You can find this sample in the tutorial project: **Menu** &rarr; **Instantiating prefabs**
+# Prefabs instantâneas
+Você pode encontrar esta amostra no projeto tutorial: **Menu** → **Instanciando prefabs**
 
-## Explanation
-This C# Beginner tutorial covers how to instantiate prefabs.
+## Explicação
+Este tutorial C# Beginner abrange como instanciar prefabs.
 
-A prefab is a "master" version of an object that you can reuse wherever you need. When you change the prefab, every instance of the prefab changes too.
+Um prefab é uma versão "master" de um objeto que você pode reutilizar onde quiser. Quando você muda o prefab, cada instância do prefab também muda.
 
-A prefab that is instantiated by code does not give you a new prefab object, but instead gives you a list of entities. As long as these entities are not added to the scene, they wont be visible and attached scripts will not be executed.
+Um prefab que é instantâneo por código não lhe dá um novo objeto pré-fabricado, mas em vez disso lhe dá uma lista de entidades. Enquanto essas entidades não forem adicionadas à cena, elas não serão visíveis e os scripts anexados não serão executados.
 
-![Instantiating Prefabs](media/instantiating-prefabs.webp)
+<x1\/>Instanciando Prefabs<x2\/>
 
-> [!Video https://www.youtube.com/embed/19u2QACzdAk]
+> <x1\/>!Vídeo https:\/\/www.youtube.com\/embed\/19u2QACzdAk<x2\/>
 
-## Code
+## Código
 [!code-csharp[Instantiating Prefabs](../../../../stride/samples/Tutorials/CSharpBeginner/CSharpBeginner/CSharpBeginner.Game/Code/InstantiatingPrefabsDemo.cs)]

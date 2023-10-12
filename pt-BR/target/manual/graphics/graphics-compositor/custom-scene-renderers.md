@@ -1,47 +1,47 @@
-# Custom scene renderers
+# Renderizadores de cena personalizados
 
-To create a custom renderer, directly implement the @'Stride.Rendering.Compositing.ISceneRenderer' or use a delegate through the @'Stride.Rendering.Compositing.DelegateSceneRenderer'.
+Para criar um renderizador personalizado, implemente diretamente o @'Stride.Rendering.Compositing.ISceneRenderer' ou use um delegado através do @'Stride.Rendering.Compositing.DelegateSceneRenderer'.
 
-## Implement an ISceneRenderer
+## Implementar um ISceneRenderer
 
-The @'Stride.Rendering.Compositing.SceneRendererBase' provides a default implementation of @'Stride.Rendering.Compositing.ISceneRenderer'. It automatically binds the output defines on the renderer to the GraphicsDevice before calling the `DrawCore` method.
+O @'Stride.Rendering.Compositing.SceneRendererBase' fornece uma implementação padrão de @'Stride.Rendering.Compositing.ISceneRenderer'. Ele automaticamente liga a saída define no renderizador para o GraphicsDevice antes de chamar o método `DrawCore`.
 
 ```cs
 [DataContract("MyCustomRenderer")]
 [Display("My Custom Renderer")]
-public sealed class MyCustomRenderer : SceneRendererBase
-{
-    // Implements the DrawCore method
-    protected override void DrawCore(RenderContext context, RenderDrawContext drawContext)
-    {
-        // Access to the graphics device
+classe pública selada MyCustomRenderer: Base de Dados
+(
+    \/\/ Implementa o método DrawCore
+    protegido override void DrawCore (contexto RenderContext, RenderDrawContext drawContext)
+    (
+        \/\/ Acesso ao dispositivo gráfico
         var graphicsDevice = drawContext.GraphicsDevice;
         var commandList = drawContext.CommandList;
-        // Clears the current render target
-        commandList.Clear(commandList.RenderTargets[0], Color.CornflowerBlue);
-        // [...] 
+        \/\/ Limpa o alvo de renderização atual
+        comandoList.Clear(commandList.RenderTargets[0], Color.CornflowerBlue);
+        \/\/ [...] 
     }
 }
 ```
 
-## Use a delegate
+## Use um delegado
 
-To develop a renderer and attach it to a method directly, use @'Stride.Rendering.Compositing.DelegateSceneRenderer':
+Para desenvolver um renderizador e anexá-lo a um método diretamente, use @'Stride.Rendering.Compositing.DelegateSceneRenderer':
 
 ```cs
-var sceneRenderer = new DelegateSceneRenderer(
+var cenaRenderer = novo DelegadoSceneRenderer(
     (drawContext) =>
-    {
-        // Access to the graphics device
+    (
+        \/\/ Acesso ao dispositivo gráfico
         var graphicsDevice = drawContext.GraphicsDevice;
         var commandList = drawContext.CommandList;
-        // Clears the current render target
-        commandList.Clear(commandList.RenderTargets[0], Color.CornflowerBlue);
-        // [...] 
+        \/\/ Limpa o alvo de renderização atual
+        comandoList.Clear(commandList.RenderTargets[0], Color.CornflowerBlue);
+        \/\/ [...] 
    });
 ```
 
-## See also
+## Ver também
 
-* [Scene renderers](scene-renderers.md)
-* [Debug renderers](debug-renderers.md)
+* [Renderizadores de cenas](scene-renderers.md)
+* [Renderizadores de depuração](debug-renderers.md)

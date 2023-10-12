@@ -1,75 +1,75 @@
-# Keyboards
+# Teclados
 
-<span class="badge text-bg-primary">Beginner</span>
-<span class="badge text-bg-success">Programmer</span>
+<x1\/>Introdução<x2\/>
+<x3\/> Programador <x4\/>
 
-The **keyboard** is the most common input device for desktop games. There are two ways to handle keyboard input in Stride:
+O **keyboard** é o dispositivo de entrada mais comum para jogos de desktop. Existem duas maneiras de lidar com a entrada do teclado em Stride:
 
 * query **key states**
-* use [KeyEvent](xref:Stride.Input.KeyEvent) lists
+* use [KeyEvent](xref:Stride.Input.KeyEvent) listas
 
-You can access both from the [input](xref:Stride.Input.InputManager) base class. For more information about these options, see the [input index](index.md)
+Você pode acessar ambos da classe base [input](xref:Stride.Input.InputManager). Para obter mais informações sobre essas opções, consulte o índice de entrada [](index.md)
 
-## Check keyboard availability
+## Verifique a disponibilidade do teclado
 
-Before handling keyboard input, check whether a keyboard is connected using [Input.HasKeyboard](xref:Stride.Input.InputManager.HasKeyboard).
+Antes de lidar com a entrada do teclado, verifique se um teclado está conectado usando [Input.HasKeyboard](xref:Stride.Input.InputManager.HasKeyboard).
 
-## Get key states
+## Obter estados-chave
 
-You can query **key states** and **state changes** with the following methods:
+Você pode consultar **key states** e **state changes** com os seguintes métodos:
 
-| Method | Description |
+| Método | Descrição |
 | --- | --- |
-| [IsKeyDown(Keys)](xref:Stride.Input.InputManager.IsKeyDown\(Stride.Input.Keys\)) | Checks if a specified key is in the **down** state. |
-| [IsKeyPressed(Keys)](xref:Stride.Input.InputManager.IsKeyPressed\(Stride.Input.Keys\)) | Checks if a specified key has been **pressed** since the last update. |
-| [IsKeyReleased(Keys)](xref:Stride.Input.InputManager.IsKeyReleased\(Stride.Input.Keys\)) | Checks if a specified key has been **released** since the last update. |
+| [IsKeyDown (Keys)](xref:Stride.Input.InputManager.IsKeyDown\(Stride.Input.Keys\)) | Verifica se uma chave especificada está no estado **down**. |
+| [IsKeyPressed (Keys)](xref:Stride.Input.InputManager.IsKeyPressed\(Stride.Input.Keys\)) | Verifica se uma chave especificada foi **pressed** desde a última atualização. |
+| [IsKeyReleased (Keys)](xref:Stride.Input.InputManager.IsKeyReleased\(Stride.Input.Keys\)) | Verifica se uma chave especificada foi **released** desde a última atualização. |
 
-> [!Note]
-> Stride doesn't support retrieving interpreted keys, such as special characters and capital letters.
+> <x1\/>!Note<x2\/>
+> Stride não suporta recuperar chaves interpretadas, como caracteres especiais e letras maiúsculas.
 
-## Get key events
+## Obter eventos chave
 
-In some cases, you want to know all the keys that are currently _Down_, or all the keys that have been _Pressed_ since the last update. The key state API isn't good for this situation, as you have to query each available key separately.
+Em alguns casos, você quer saber todas as chaves que estão atualmente _ Down_, ou todas as chaves que foram _Pressed_ desde a última atualização. A API estadual chave não é boa para esta situação, pois você tem que consultar cada chave disponível separadamente.
 
-Instead, use the **key events** collections available in the [Input](xref:Stride.Input.InputManager) base class.
+Em vez disso, use as coleções **key events** disponíveis na classe base [Input](xref:Stride.Input.InputManager).
 
-| Public List | Description l |
+| Lista pública | Descrição l |
 | ----------- | --- 
-| [InputManager.DownKeys](xref:Stride.Input.InputManager.DownKeys) | Gets a list of the keys that were down in the last update. |
-| [InputManager.PressedKeys](xref:Stride.Input.InputManager.PressedKeys) | Gets a list of the keys pressed in the last update. |
-| [InputManager.ReleasedKeys](xref:Stride.Input.InputManager.ReleasedKeys) | Gets a list of the keys released in the last update. |
-| [InputManager.KeyEvents](xref:Stride.Input.InputManager.KeyEvents) | Gets a list of the key events in the last update (keys pressed or released). |
+| [InputManager.DownKeys](xref:Stride.Input.InputManager.DownKeys) | Recebe uma lista das chaves que estavam na última actualização. |
+| [InputManager.PressedKeys](xref:Stride.Input.InputManager.PressedKeys) | Obtém uma lista das chaves pressionadas na última atualização. |
+| [InputManager.ReleasedKeys](xref:Stride.Input.InputManager.ReleasedKeys) | Recebe uma lista das chaves lançadas na última atualização. |
+| [InputManager.KeyEvents](xref:Stride.Input.InputManager.KeyEvents) | Obtém uma lista dos principais eventos na última atualização (chaves pressionadas ou liberadas). |
 
-Every @'Stride.Input.KeyEvent' has two properties: @'Stride.Input.KeyEvent.Key' (the affected key) and @'Stride.Input.ButtonEvent.IsDown' (the new state of the key).
+Cada @'Stride.Input.KeyEvent' tem duas propriedades: @'Stride.Input.KeyEvent. Key' (a chave afetada) e @'Stride.Input.ButtonEvent. IsDown' (o novo estado da chave).
 
-## Example code
+## Exemplo de código
 
 ```cs
-public class KeyboardEventsScript : SyncScript
-{
-	//Declared public member variables and properties show in Game Studio.
+classe pública Teclado EventosScript : Sincronização
+(
+	\/\/As variáveis e propriedades declaradas do membro público mostram no Game Studio.
 
-	public override void Update()
-	{
-		//Perform an action in every update.
-		if (Game.IsRunning)
-		{
-			if (Input.IsKeyDown(Keys.Left))
-			{
+	atualização()
+	(
+		\/\/Perform uma ação em cada atualização.
+		se (Game.IsRunning)
+		(
+			se (Input.IsKeyDown (Keys.Left))
+			(
 				this.Entity.Transform.Position.X -= 0.1f;
 			}
-			if (Input.IsKeyDown(Keys.Right))
-			{
-				this.Entity.Transform.Position.X += 0.1f;
+			se (Input.IsKeyDown (Keys.Right))
+			(
+				this.Entity.Transform.Position.X += 0,1f;
 			}
 		}
 	}
 }
 ```
 
-## See also
+## Ver também
 
 * [Gamepads](gamepads.md)
 * [Mouse](mouse.md)
-* [Virtual buttons](virtual-buttons.md)
-* [Input overview](index.md)
+* [Botões virtuais](virtual-buttons.md)
+* [Visão geral da entrada](index.md)

@@ -1,59 +1,59 @@
-# Render stages
+# Etapas de renderização
 
-**Render stages** define how given objects are rendered (usually with their associated [effect/shader](../effects-and-shaders/index.md)). They also let you control advanced properties such as sorting and filtering objects.
+** Etapas de gênero** definem como os objetos dados são renderizados (geralmente com seu [effect\/shader](../effects-and-shaders/index.md)). Eles também permitem que você controle propriedades avançadas, como classificação e filtragem de objetos.
 
-Objects can subscribe to multiple render stages. For example, a mesh typically subscribes to both the `Opaque` and `ShadowCaster` stages, or the `Transparent` stage.
+Os objetos podem se inscrever em várias etapas de renderização. Por exemplo, uma malha geralmente se inscreve tanto nos estágios `Opaque` e `ShadowCaster`, ou no estágio `Transparent`.
 
-> [!Note]
-> Render stages don't define the rendering order. The rendering order is controlled by the [graphics compositor](../graphics-compositor/index.md).
+> <x1\/>!Note<x2\/>
+> Os estágios de renderização não definem a ordem de renderização. A ordem de renderização é controlada pelo compositor [graphics](../graphics-compositor/index.md).
 
-## Effect slots
+## Slots de efeito
 
-**Effect slots** determine which [effect/shader](../effects-and-shaders/index.md) a render stage uses. You choose the effect slot with @'Stride.Rendering.RenderStage.EffectSlotName'.
+**Effect slots** determinam qual [effect\/shader](../effects-and-shaders/index.md) um estágio de renderização usa. Você escolhe o slot de efeito com @'Stride.Rendering.RenderStage.EffectSlotName'.
 
-If multiple render stages exclusively render different objects, the stages can share the same effect slot. For example, as the opaque stage only renders opaque objects and the transparent stage only renders transparent objects, both stages can use the main effect slot.
+Se várias etapas de renderização exclusivamente renderizar objetos diferentes, as etapas podem compartilhar o mesmo slot de efeito. Por exemplo, como a fase opaca só torna objetos opacos e a fase transparente apenas torna objetos transparentes, ambas as etapas podem usar o slot de efeito principal.
 
-If they render any of the same objects, they can't share effect slots. This is why, for example, we typically render opaque meshes with the main effect slot, then render opaque meshes again with the shadow caster effect slot to create shadows.
+Se eles renderizarem qualquer um dos mesmos objetos, eles não podem compartilhar slots de efeito. É por isso que, por exemplo, nós tipicamente renderizamos malhas opacas com o slot de efeito principal, em seguida, renderiza malhas opacas novamente com o slot de efeito de rodízio sombra para criar sombras.
 
-A typical setup of render stages:
+Uma configuração típica de etapas de renderização:
 
-| Render stage | Effect slot |
+| Fase de renderização | Fenda de efeito |
 | ---------------- | ------------ 
-| Opaque | Main |
-| Transparent | Main |
-| UI | Main |
-| Shadow caster | Shadow caster |
+| Opaco | Principal |
+| Transparente | Principal |
+| UI | Principal |
+| Lançador de sombra | Lançador de sombra |
 
-## Sort objects in a render stage
+## Classifique objetos em um estágio de renderização
 
-@'Stride.Rendering.RenderStage.SortMode' defines how Stride sorts objects in that render stage. Stride comes with several @'Stride.Rendering.SortMode' implementations, such as:
+@'Stride.Rendering.RenderStage.SortMode' define como Stride classifica objetos nessa fase de renderização. Stride vem com vários @'Stride. Renderização. Implementações da SortMode, como:
 
-- @'Stride.Rendering.FrontToBackSortMode', which renders objects from front to back with limited precision, and tries to avoid state changes in the same depth range of objects (useful for opaque objects and shadows)
-- @'Stride.Rendering.BackToFrontSortMode', which renders objects strictly from back to front (useful for transparent objects)
-- @'Stride.Rendering.StateChangeSortMode', which tries to reduce state changes
+- @'Stride.Rendering.FrontToBackSortMode', que torna objetos de frente para trás com precisão limitada, e tenta evitar mudanças de estado na mesma faixa de profundidade de objetos (útil para objetos e sombras opacas)
+- @'Stride.Rendering.BackToFrontSortMode', que torna os objetos estritamente de volta para a frente (útil para objetos transparentes)
+- @'Stride.Rendering.StateChangeSortMode', que tenta reduzir as mudanças do estado
 
-Of course, you're free to implement your own, too.
+Claro que também podes implementar o teu.
 
-## Filter objects in a render stage
+## Filtrar objetos em uma etapa de renderização
 
-To create your own filter for objects in a render stage, inherit from @'Stride.Rendering.RenderStageFilter'.
+Para criar seu próprio filtro para objetos em uma etapa de renderização, herda de @'Stride. Renderização. RenderStageFilter'.
 
-### Render stage selectors
+### Render seletores de palco
 
-**Render stage selectors** define which objects in your scene are sent to which render stage, and choose which [effect](../effects-and-shaders/effect-language.md) to use when rendering a given object.
+**Render fase selectors** definir quais objetos em sua cena são enviados para que fase de renderização, e escolher qual [effect](../effects-and-shaders/effect-language.md)effect> usar ao renderizar um determinado objeto.
 
-For example, this is the typical setup for meshes:
+Por exemplo, esta é a configuração típica para malhas:
 
-- @'Stride.Rendering.MeshTransparentRenderStageSelector' chooses either the `Main` or `Transparent` render stage, depending on the material properties. The default effect is `StrideForwardShadingEffect` defined by Stride (you can create your own if you want).
-- @'Stride.Rendering.Shadows.ShadowMapRenderStageSelector' selects opaque meshes that cast shadows and adds them to the `ShadowMapCaster` render stage. The default effect is `StrideForwardShadingEffect.ShadowMapCaster`, defined by Stride.
+- @'Stride.Rendering.MeshTransparentRenderStageSelector' escolhe a etapa de renderização `Main` ou `Transparent`, dependendo das propriedades materiais. O efeito padrão é `StrideForwardShadingEffect` definido por Stride (você pode criar seu próprio se quiser).
+- @'Stride.Rendering.Shadows.ShadowMapRenderStageSelector' seleciona malhas opacas que lançam sombras e os adiciona à fase de renderização `ShadowMapCaster`. O efeito padrão é `StrideForwardShadingEffect.ShadowMapCaster`, definido por Stride.
 
-Either can filter by [render group](../graphics-compositor/render-groups-and-masks.md).
+Ou pode filtrar por [render group](../graphics-compositor/render-groups-and-masks.md).
 
-You can customize everything, so you can add other predefined render stage selectors (eg to add UI to a later full-screen pass), or create your own selector specific to your game.
+Você pode personalizar tudo, para que você possa adicionar outros seletores de fase de renderização predefinidos (por exemplo, adicionar interface de usuário a um passe de tela cheia posterior), ou criar seu próprio seletor específico para o seu jogo.
 
-## See also
+## Ver também
 
-* [Rendering pipeline](index.md)
-* [Render features](render-features.md)
-* [Effects and shaders](../effects-and-shaders/index.md)
-* [Graphics compositor](../graphics-compositor/index.md)
+* [Oleoduto de renderização](index.md)
+* [Render características](render-features.md)
+* [Efeitos e shaders](../effects-and-shaders/index.md)
+* [Compositor gráfico](../graphics-compositor/index.md)

@@ -1,9 +1,9 @@
-# Video
+# Vídeo
 
-<span class="badge text-bg-primary">Beginner</span>
-<span class="badge text-bg-success">Designer</span>
+<x1\/>Introdução<x2\/>
+<x3\/>Designer<x4\/>
 
-You can import **video files** and use them in your scenes.
+Você pode importar ** arquivos de vídeo** e usá-los em suas cenas.
 
 <p>
 <video autoplay loop class="responsive-video" poster="media/video-thumbnail.jpg">
@@ -11,11 +11,11 @@ You can import **video files** and use them in your scenes.
 </video>
 </p>
 
-> [!Note]
-> Currently, Stride doesn't support video on iOS platforms.
+> <x1\/>!Note<x2\/>
+> Atualmente, Stride não suporta vídeo em plataformas iOS.
 
-## In this section
+## Nesta secção
 
-* [Set up a video](set-up-a-video.md)
-* [Video properties](video-properties.md)
-* [Use a video as a skybox](use-a-video-as-a-skybox.md)
+* [Configurar um vídeo](set-up-a-video.md)
+* [Propriedades do vídeo](video-properties.md)
+* [Use um vídeo como uma caixa de céu](use-a-video-as-a-skybox.md)

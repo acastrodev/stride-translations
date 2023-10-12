@@ -3,17 +3,17 @@
 <body>
 <trans-unit id="tu1" xml:space="preserve">
 <source xml:lang="en">Keyboards</source>
-<target xml:lang="pt">Keyboards</target>
+<target xml:lang="pt">Teclados</target>
 </trans-unit>
 <trans-unit id="tu2" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Beginner<x id="2"/>
 <x id="3"/>Programmer<x id="4"/></source>
-<target xml:lang="pt"><x id="1"/>Beginner<x id="2"/>
-<x id="3"/>Programmer<x id="4"/></target>
+<target xml:lang="pt">&lt;x1\/&gt;Introdução&lt;x2\/&gt;
+&lt;x3\/&gt; Programador &lt;x4\/&gt;</target>
 </trans-unit>
 <trans-unit id="tu3" xml:space="preserve">
 <source xml:lang="en">The <g id="1">keyboard</g> is the most common input device for desktop games. There are two ways to handle keyboard input in Stride:</source>
-<target xml:lang="pt">The <g id="1">keyboard</g> is the most common input device for desktop games. There are two ways to handle keyboard input in Stride:</target>
+<target xml:lang="pt">O <g id="1">keyboard</g> é o dispositivo de entrada mais comum para jogos de desktop. Existem duas maneiras de lidar com a entrada do teclado em Stride:</target>
 </trans-unit>
 <trans-unit id="tu4" xml:space="preserve">
 <source xml:lang="en">query <g id="1">key states</g></source>
@@ -21,85 +21,85 @@
 </trans-unit>
 <trans-unit id="tu5" xml:space="preserve">
 <source xml:lang="en">use <g id="1">KeyEvent</g> lists</source>
-<target xml:lang="pt">use <g id="1">KeyEvent</g> lists</target>
+<target xml:lang="pt">use <g id="1">KeyEvent</g> listas</target>
 </trans-unit>
 <trans-unit id="tu6" xml:space="preserve">
 <source xml:lang="en">You can access both from the <g id="1">input</g> base class. For more information about these options, see the <g id="2">input index</g></source>
-<target xml:lang="pt">You can access both from the <g id="1">input</g> base class. For more information about these options, see the <g id="2">input index</g></target>
+<target xml:lang="pt">Você pode acessar ambos da classe base <g id="1">input</g>. Para obter mais informações sobre essas opções, consulte o índice de entrada <g id="2"/></target>
 </trans-unit>
 <trans-unit id="tu7" xml:space="preserve">
 <source xml:lang="en">Check keyboard availability</source>
-<target xml:lang="pt">Check keyboard availability</target>
+<target xml:lang="pt">Verifique a disponibilidade do teclado</target>
 </trans-unit>
 <trans-unit id="tu8" xml:space="preserve">
 <source xml:lang="en">Before handling keyboard input, check whether a keyboard is connected using <g id="1">Input.HasKeyboard</g>.</source>
-<target xml:lang="pt">Before handling keyboard input, check whether a keyboard is connected using <g id="1">Input.HasKeyboard</g>.</target>
+<target xml:lang="pt">Antes de lidar com a entrada do teclado, verifique se um teclado está conectado usando <g id="1">Input.HasKeyboard</g>.</target>
 </trans-unit>
 <trans-unit id="tu9" xml:space="preserve">
 <source xml:lang="en">Get key states</source>
-<target xml:lang="pt">Get key states</target>
+<target xml:lang="pt">Obter estados-chave</target>
 </trans-unit>
 <trans-unit id="tu10" xml:space="preserve">
 <source xml:lang="en">You can query <g id="1">key states</g> and <g id="2">state changes</g> with the following methods:</source>
-<target xml:lang="pt">You can query <g id="1">key states</g> and <g id="2">state changes</g> with the following methods:</target>
+<target xml:lang="pt">Você pode consultar <g id="1">key states</g> e <g id="2">state changes</g> com os seguintes métodos:</target>
 </trans-unit>
 <trans-unit id="tu11" xml:space="preserve">
 <source xml:lang="en">Method</source>
-<target xml:lang="pt">Method</target>
+<target xml:lang="pt">Método</target>
 </trans-unit>
 <trans-unit id="tu12" xml:space="preserve">
 <source xml:lang="en">Description</source>
-<target xml:lang="pt">Description</target>
+<target xml:lang="pt">Descrição</target>
 </trans-unit>
 <trans-unit id="tu13" xml:space="preserve">
 <source xml:lang="en"><g id="1">IsKeyDown(Keys)</g></source>
-<target xml:lang="pt"><g id="1">IsKeyDown(Keys)</g></target>
+<target xml:lang="pt"><g id="1">IsKeyDown (Keys)</g></target>
 </trans-unit>
 <trans-unit id="tu14" xml:space="preserve">
 <source xml:lang="en">Checks if a specified key is in the <g id="1">down</g> state.</source>
-<target xml:lang="pt">Checks if a specified key is in the <g id="1">down</g> state.</target>
+<target xml:lang="pt">Verifica se uma chave especificada está no estado <g id="1">down</g>.</target>
 </trans-unit>
 <trans-unit id="tu15" xml:space="preserve">
 <source xml:lang="en"><g id="1">IsKeyPressed(Keys)</g></source>
-<target xml:lang="pt"><g id="1">IsKeyPressed(Keys)</g></target>
+<target xml:lang="pt"><g id="1">IsKeyPressed (Keys)</g></target>
 </trans-unit>
 <trans-unit id="tu16" xml:space="preserve">
 <source xml:lang="en">Checks if a specified key has been <g id="1">pressed</g> since the last update.</source>
-<target xml:lang="pt">Checks if a specified key has been <g id="1">pressed</g> since the last update.</target>
+<target xml:lang="pt">Verifica se uma chave especificada foi <g id="1">pressed</g> desde a última atualização.</target>
 </trans-unit>
 <trans-unit id="tu17" xml:space="preserve">
 <source xml:lang="en"><g id="1">IsKeyReleased(Keys)</g></source>
-<target xml:lang="pt"><g id="1">IsKeyReleased(Keys)</g></target>
+<target xml:lang="pt"><g id="1">IsKeyReleased (Keys)</g></target>
 </trans-unit>
 <trans-unit id="tu18" xml:space="preserve">
 <source xml:lang="en">Checks if a specified key has been <g id="1">released</g> since the last update.</source>
-<target xml:lang="pt">Checks if a specified key has been <g id="1">released</g> since the last update.</target>
+<target xml:lang="pt">Verifica se uma chave especificada foi <g id="1">released</g> desde a última atualização.</target>
 </trans-unit>
 <trans-unit id="tu19" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>!Note<x id="2"/>
 Stride doesn't support retrieving interpreted keys, such as special characters and capital letters.</source>
-<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
-Stride doesn't support retrieving interpreted keys, such as special characters and capital letters.</target>
+<target xml:lang="pt">&lt;x1\/&gt;!Note&lt;x2\/&gt;
+Stride não suporta recuperar chaves interpretadas, como caracteres especiais e letras maiúsculas.</target>
 </trans-unit>
 <trans-unit id="tu20" xml:space="preserve">
 <source xml:lang="en">Get key events</source>
-<target xml:lang="pt">Get key events</target>
+<target xml:lang="pt">Obter eventos chave</target>
 </trans-unit>
 <trans-unit id="tu21" xml:space="preserve">
 <source xml:lang="en">In some cases, you want to know all the keys that are currently <g id="1">Down</g>, or all the keys that have been <g id="2">Pressed</g> since the last update. The key state API isn't good for this situation, as you have to query each available key separately.</source>
-<target xml:lang="pt">In some cases, you want to know all the keys that are currently <g id="1">Down</g>, or all the keys that have been <g id="2">Pressed</g> since the last update. The key state API isn't good for this situation, as you have to query each available key separately.</target>
+<target xml:lang="pt">Em alguns casos, você quer saber todas as chaves que estão atualmente <g id="1"> Down</g>, ou todas as chaves que foram <g id="2">Pressed</g> desde a última atualização. A API estadual chave não é boa para esta situação, pois você tem que consultar cada chave disponível separadamente.</target>
 </trans-unit>
 <trans-unit id="tu22" xml:space="preserve">
 <source xml:lang="en">Instead, use the <g id="1">key events</g> collections available in the <g id="2">Input</g> base class.</source>
-<target xml:lang="pt">Instead, use the <g id="1">key events</g> collections available in the <g id="2">Input</g> base class.</target>
+<target xml:lang="pt">Em vez disso, use as coleções <g id="1">key events</g> disponíveis na classe base <g id="2">Input</g>.</target>
 </trans-unit>
 <trans-unit id="tu23" xml:space="preserve">
 <source xml:lang="en">Public List</source>
-<target xml:lang="pt">Public List</target>
+<target xml:lang="pt">Lista pública</target>
 </trans-unit>
 <trans-unit id="tu24" xml:space="preserve">
 <source xml:lang="en">Description l</source>
-<target xml:lang="pt">Description l</target>
+<target xml:lang="pt">Descrição l</target>
 </trans-unit>
 <trans-unit id="tu25" xml:space="preserve">
 <source xml:lang="en"><g id="1">InputManager.DownKeys</g></source>
@@ -107,7 +107,7 @@ Stride doesn't support retrieving interpreted keys, such as special characters a
 </trans-unit>
 <trans-unit id="tu26" xml:space="preserve">
 <source xml:lang="en">Gets a list of the keys that were down in the last update.</source>
-<target xml:lang="pt">Gets a list of the keys that were down in the last update.</target>
+<target xml:lang="pt">Recebe uma lista das chaves que estavam na última actualização.</target>
 </trans-unit>
 <trans-unit id="tu27" xml:space="preserve">
 <source xml:lang="en"><g id="1">InputManager.PressedKeys</g></source>
@@ -115,7 +115,7 @@ Stride doesn't support retrieving interpreted keys, such as special characters a
 </trans-unit>
 <trans-unit id="tu28" xml:space="preserve">
 <source xml:lang="en">Gets a list of the keys pressed in the last update.</source>
-<target xml:lang="pt">Gets a list of the keys pressed in the last update.</target>
+<target xml:lang="pt">Obtém uma lista das chaves pressionadas na última atualização.</target>
 </trans-unit>
 <trans-unit id="tu29" xml:space="preserve">
 <source xml:lang="en"><g id="1">InputManager.ReleasedKeys</g></source>
@@ -123,7 +123,7 @@ Stride doesn't support retrieving interpreted keys, such as special characters a
 </trans-unit>
 <trans-unit id="tu30" xml:space="preserve">
 <source xml:lang="en">Gets a list of the keys released in the last update.</source>
-<target xml:lang="pt">Gets a list of the keys released in the last update.</target>
+<target xml:lang="pt">Recebe uma lista das chaves lançadas na última atualização.</target>
 </trans-unit>
 <trans-unit id="tu31" xml:space="preserve">
 <source xml:lang="en"><g id="1">InputManager.KeyEvents</g></source>
@@ -131,15 +131,15 @@ Stride doesn't support retrieving interpreted keys, such as special characters a
 </trans-unit>
 <trans-unit id="tu32" xml:space="preserve">
 <source xml:lang="en">Gets a list of the key events in the last update (keys pressed or released).</source>
-<target xml:lang="pt">Gets a list of the key events in the last update (keys pressed or released).</target>
+<target xml:lang="pt">Obtém uma lista dos principais eventos na última atualização (chaves pressionadas ou liberadas).</target>
 </trans-unit>
 <trans-unit id="tu33" xml:space="preserve">
 <source xml:lang="en">Every @'Stride.Input.KeyEvent' has two properties: @'Stride.Input.KeyEvent.Key' (the affected key) and @'Stride.Input.ButtonEvent.IsDown' (the new state of the key).</source>
-<target xml:lang="pt">Every @'Stride.Input.KeyEvent' has two properties: @'Stride.Input.KeyEvent.Key' (the affected key) and @'Stride.Input.ButtonEvent.IsDown' (the new state of the key).</target>
+<target xml:lang="pt">Cada @'Stride.Input.KeyEvent' tem duas propriedades: @'Stride.Input.KeyEvent. Key' (a chave afetada) e @'Stride.Input.ButtonEvent. IsDown' (o novo estado da chave).</target>
 </trans-unit>
 <trans-unit id="tu34" xml:space="preserve">
 <source xml:lang="en">Example code</source>
-<target xml:lang="pt">Example code</target>
+<target xml:lang="pt">Exemplo de código</target>
 </trans-unit>
 <trans-unit id="tu35" xml:space="preserve">
 <source xml:lang="en">public class KeyboardEventsScript : SyncScript
@@ -163,22 +163,22 @@ Stride doesn't support retrieving interpreted keys, such as special characters a
 	}
 }
 </source>
-<target xml:lang="pt">public class KeyboardEventsScript : SyncScript
-{
-	//Declared public member variables and properties show in Game Studio.
+<target xml:lang="pt">classe pública Teclado EventosScript : Sincronização
+(
+	\/\/As variáveis e propriedades declaradas do membro público mostram no Game Studio.
 
-	public override void Update()
-	{
-		//Perform an action in every update.
-		if (Game.IsRunning)
-		{
-			if (Input.IsKeyDown(Keys.Left))
-			{
+	atualização()
+	(
+		\/\/Perform uma ação em cada atualização.
+		se (Game.IsRunning)
+		(
+			se (Input.IsKeyDown (Keys.Left))
+			(
 				this.Entity.Transform.Position.X -= 0.1f;
 			}
-			if (Input.IsKeyDown(Keys.Right))
-			{
-				this.Entity.Transform.Position.X += 0.1f;
+			se (Input.IsKeyDown (Keys.Right))
+			(
+				this.Entity.Transform.Position.X += 0,1f;
 			}
 		}
 	}
@@ -187,7 +187,7 @@ Stride doesn't support retrieving interpreted keys, such as special characters a
 </trans-unit>
 <trans-unit id="tu36" xml:space="preserve">
 <source xml:lang="en">See also</source>
-<target xml:lang="pt">See also</target>
+<target xml:lang="pt">Ver também</target>
 </trans-unit>
 <trans-unit id="tu37" xml:space="preserve">
 <source xml:lang="en"><g id="1">Gamepads</g></source>
@@ -199,11 +199,11 @@ Stride doesn't support retrieving interpreted keys, such as special characters a
 </trans-unit>
 <trans-unit id="tu39" xml:space="preserve">
 <source xml:lang="en"><g id="1">Virtual buttons</g></source>
-<target xml:lang="pt"><g id="1">Virtual buttons</g></target>
+<target xml:lang="pt"><g id="1">Botões virtuais</g></target>
 </trans-unit>
 <trans-unit id="tu40" xml:space="preserve">
 <source xml:lang="en"><g id="1">Input overview</g></source>
-<target xml:lang="pt"><g id="1">Input overview</g></target>
+<target xml:lang="pt"><g id="1">Visão geral da entrada</g></target>
 </trans-unit>
 </body>
 </file>

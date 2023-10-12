@@ -1,38 +1,38 @@
-# Entity-Component Model
+# Modelo de Entidade-Componente
 
-[!INCLUDE [stride-studio-note](../../../includes/under-construction-note.md)]
+[! INCLUÍDO [stride-studio-note](../../../includes/under-construction-note.md)]
 
-# Overview
+# Visão geral
 
-@'Stride.Engine.Entity' is the base class for objects that are managed by the high-level engine.
+@'Stride.Engine.Entity' é a classe base para objetos que são gerenciados pelo motor de alto nível.
 
-To improve flexibility, entity are component-based: they can contains as many components as required, containing data and/or logic.
-
-
-
-
-![media/7438980.png](media/7438980.png)
+Para melhorar a flexibilidade, a entidade é baseada em componentes: pode conter tantos componentes conforme necessário, contendo dados e\/ou lógica.
 
 
 
 
-A @'Stride.Engine.Entitycomponent' is tied to its entity (that is, one component can't be added to two entities at the same time).
+<x1\/>media\/7438980.png<x2\/>
 
-# How to create an entity and some components
+
+
+
+A @'Stride.Engine.Entitycomponent' está ligada à sua entidade (ou seja, um componente não pode ser adicionado a duas entidades ao mesmo tempo).
+
+# Como criar uma entidade e alguns componentes
 
 ```cs
-// Create entity
-var myEntity = new Entity();
+\/\/ Criar entidade
+var myEntity = novo Entity();
  
-// Create a model component (so that model is rendered)
-var modelComponent = new ModelComponent { Model = model };
-myEntity.Set(ModelComponent.Key, modelComponent);
+\/\/ Criar um componente modelo (para que o modelo seja renderizado)
+modelo de var Componente = novo ModelComponent { Model = model };
+myEntity. Set(ModelComponent. Key, modelComponent);
 
-// Set entity position
-myEntity.Transformation.Translation = new Vector3(100.0f, 100.0f, 0.0f);
+\/\/ Definir posição da entidade
+myEntity.Transformation.Translation = new Vector3(100.0f, 100.0f, 0,0f);
  
-// Add entity to scene; from now on its model will be rendered
-Entities.Add(myEntity);
+\/\/ Adicionar entidade à cena; a partir de agora em seu modelo será renderizado
+Entities.Add (myEntity);
 ```
 
 

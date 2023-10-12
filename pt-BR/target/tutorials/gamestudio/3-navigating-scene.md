@@ -1,7 +1,7 @@
-# Navigating in the scene editor
+# Navegando no editor de cena
 
-In this tutorial we learn how to navigate around the scene editor. We also take a look at the various camera options.
+Neste tutorial aprendemos como navegar pelo editor de cena. Também analisamos as várias opções de câmera.
 
-[!INCLUDE [stride-studio-note](../../includes/game-studio-xenko-note.md)]
+[! INCLUÍDO [stride-studio-note](../../includes/game-studio-xenko-note.md)]
 
-> [!Video https://www.youtube.com/embed/lGQ607bT6gk]
+> [!Vídeo https://www.youtube.com/embed/lGQ607bT6gk]

@@ -1,7 +1,7 @@
-# Main interface
+# Interface principal
 
-This tutorial explains the main interface of Game studio.
+Este tutorial explica a interface principal do estúdio Game.
 
-[!INCLUDE [stride-studio-note](../../includes/game-studio-xenko-note.md)]
+[! INCLUÍDO [stride-studio-note](../../includes/game-studio-xenko-note.md)]
 
-> [!Video https://www.youtube.com/embed/lG08Z-dhhCo]
+> [!Vídeo https://www.youtube.com/embed/lG08Z-dhhCo]

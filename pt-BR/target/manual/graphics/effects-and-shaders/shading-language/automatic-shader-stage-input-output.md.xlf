@@ -3,21 +3,21 @@
 <body>
 <trans-unit id="tu1" xml:space="preserve">
 <source xml:lang="en">Automatic shader stage input/output</source>
-<target xml:lang="pt">Automatic shader stage input/output</target>
+<target xml:lang="pt">Entrada\/saída automática do palco do shader</target>
 </trans-unit>
 <trans-unit id="tu2" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Advanced<x id="2"/>
 <x id="3"/>Programmer<x id="4"/></source>
-<target xml:lang="pt"><x id="1"/>Advanced<x id="2"/>
-<x id="3"/>Programmer<x id="4"/></target>
+<target xml:lang="pt">&lt;x1\/&gt; Avançado &lt;x2\/&gt;
+&lt;x3\/&gt; Programador &lt;x4\/&gt;</target>
 </trans-unit>
 <trans-unit id="tu3" xml:space="preserve">
 <source xml:lang="en">When you write a HLSL shader, you have to precisely define your vertex attributes and carefully pass them across the stage of your final shader.</source>
-<target xml:lang="pt">When you write a HLSL shader, you have to precisely define your vertex attributes and carefully pass them across the stage of your final shader.</target>
+<target xml:lang="pt">Quando você escreve um shader HLSL, você tem que definir precisamente seus atributos de vértice e passá-los cuidadosamente através do estágio do seu shader final.</target>
 </trans-unit>
 <trans-unit id="tu4" xml:space="preserve">
 <source xml:lang="en">Here's an example of a simple HLSL shader that uses the color from the vertex.</source>
-<target xml:lang="pt">Here's an example of a simple HLSL shader that uses the color from the vertex.</target>
+<target xml:lang="pt">Aqui está um exemplo de um shader HLSL simples que usa a cor do vértice.</target>
 </trans-unit>
 <trans-unit id="tu5" xml:space="preserve">
 <source xml:lang="en">struct VS_IN
@@ -57,37 +57,37 @@ technique10 Render
 	}
 }
 </source>
-<target xml:lang="pt">struct VS_IN
-{
-	float4 pos : POSITION;
-	float4 col : COLOR;
+<target xml:lang="pt">estranho VS_IN
+(
+	: POSIÇÃO;
+	flutuante4 col : COR;
 };
 
-struct PS_IN
-{
-	float4 pos : SV_POSITION;
-	float4 col : COLOR;
+pS_IN
+(
+	: SV_POSITION;
+	flutuante4 col : COR;
 };
 
-PS_IN VS( VS_IN input )
-{
-	PS_IN output = (PS_IN)0;
+PS_IN VS( Entrada VS_IN )
+(
+	Saída PS_IN = (PS_IN)0;
 
 	output.pos = input.pos;
 	output.col = input.col;
 
-	return output;
+	saída de retorno;
 }
 
-float4 PS( PS_IN input ) : SV_Target
-{
-	return input.col;
+float4 PS( PS_IN input) : SV_Target
+(
+	retornar input.col;
 }
 
-technique10 Render
-{
-	pass P0
-	{
+técnica10 Renderização
+(
+	passe P0
+	(
 		SetGeometryShader( 0 );
 		SetVertexShader( CompileShader( vs_4_0, VS() ) );
 		SetPixelShader( CompileShader( ps_4_0, PS() ) );
@@ -97,11 +97,11 @@ technique10 Render
 </trans-unit>
 <trans-unit id="tu6" xml:space="preserve">
 <source xml:lang="en">Imagine you want to add a normal to your model and modify the resulting color accordingly. You have to modify the code that computes the color and adjust the intermediate structures to pass the attribute from the vertex to the pixel shader. You also have to be careful of the semantics you use.</source>
-<target xml:lang="pt">Imagine you want to add a normal to your model and modify the resulting color accordingly. You have to modify the code that computes the color and adjust the intermediate structures to pass the attribute from the vertex to the pixel shader. You also have to be careful of the semantics you use.</target>
+<target xml:lang="pt">Imagine que você deseja adicionar um normal ao seu modelo e modificar a cor resultante de acordo. Você tem que modificar o código que computa a cor e ajustar as estruturas intermediárias para passar o atributo do vértice ao shader do pixel. Você também tem que ter cuidado com a semântica que você usa.</target>
 </trans-unit>
 <trans-unit id="tu7" xml:space="preserve">
 <source xml:lang="en"><g id="1">Code:</g> Modified HLSL shader</source>
-<target xml:lang="pt"><g id="1">Code:</g> Modified HLSL shader</target>
+<target xml:lang="pt"><g id="1"> Código:</g> Modificado HLSL shader</target>
 </trans-unit>
 <trans-unit id="tu8" xml:space="preserve">
 <source xml:lang="en">struct VS_IN
@@ -144,40 +144,40 @@ technique10 Render
 	}
 }
 </source>
-<target xml:lang="pt">struct VS_IN
-{
-	float4 pos : POSITION;
-	float4 col : COLOR;
+<target xml:lang="pt">estranho VS_IN
+(
+	: POSIÇÃO;
+	flutuante4 col : COR;
 	float3 normal : NORMAL;
 };
 
-struct PS_IN
-{
-	float4 pos : SV_POSITION;
-	float4 col : COLOR;
+pS_IN
+(
+	: SV_POSITION;
+	flutuante4 col : COR;
 	float3 normal : TEXCOORD0;
 };
 
-PS_IN VS( VS_IN input )
-{
-	PS_IN output = (PS_IN)0;
+PS_IN VS( Entrada VS_IN )
+(
+	Saída PS_IN = (PS_IN)0;
 
 	output.pos = input.pos;
 	output.col = input.col;
 	output.normal = input.normal;
 
-	return output;
+	saída de retorno;
 }
 
-float4 PS( PS_IN input ) : SV_Target
-{
-	return input.col * max(input.normal.z, 0.0);
+float4 PS( PS_IN input) : SV_Target
+(
+	retorno input.col * max (input.normal.z, 0,0);
 }
 
-technique10 Render
-{
-	pass P0
-	{
+técnica10 Renderização
+(
+	passe P0
+	(
 		SetGeometryShader( 0 );
 		SetVertexShader( CompileShader( vs_4_0, VS() ) );
 		SetPixelShader( CompileShader( ps_4_0, PS() ) );
@@ -187,15 +187,15 @@ technique10 Render
 </trans-unit>
 <trans-unit id="tu9" xml:space="preserve">
 <source xml:lang="en">This example is simple. Real projects have many more shaders, so a single change might mean rewriting lots of shaders, structures, and so on.</source>
-<target xml:lang="pt">This example is simple. Real projects have many more shaders, so a single change might mean rewriting lots of shaders, structures, and so on.</target>
+<target xml:lang="pt">Este exemplo é simples. Projetos reais têm muitos mais shaders, então uma única mudança pode significar reescrever muitos shaders, estruturas, e assim por diante.</target>
 </trans-unit>
 <trans-unit id="tu10" xml:space="preserve">
 <source xml:lang="en">Schematically, adding a new attribute requires you to update all the stages and intermediate structures from the vertex input to the last stage you want to use the attribute in.</source>
-<target xml:lang="pt">Schematically, adding a new attribute requires you to update all the stages and intermediate structures from the vertex input to the last stage you want to use the attribute in.</target>
+<target xml:lang="pt">Esquematicamente, adicionar um novo atributo requer que você atualize todas as etapas e estruturas intermediárias da entrada do vértice para a última etapa em que você deseja usar o atributo.</target>
 </trans-unit>
 <trans-unit id="tu11" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>media/hlsl_add_normal.png<x id="2"/></source>
-<target xml:lang="pt"><x id="1"/>media/hlsl_add_normal.png<x id="2"/></target>
+<target xml:lang="pt">&lt;x1\/&gt;media\/hlsl_add_normal.png&lt;x2\/&gt;</target>
 </trans-unit>
 <trans-unit id="tu12" xml:space="preserve">
 <source xml:lang="en">SDSL</source>
@@ -203,53 +203,53 @@ technique10 Render
 </trans-unit>
 <trans-unit id="tu13" xml:space="preserve">
 <source xml:lang="en">SDSL has a convenient way to pass parameters across the different stages of your shader. The stream variables are:</source>
-<target xml:lang="pt">SDSL has a convenient way to pass parameters across the different stages of your shader. The stream variables are:</target>
+<target xml:lang="pt">SDSL tem uma maneira conveniente de passar parâmetros através das diferentes etapas do seu shader. As variáveis de fluxo são:</target>
 </trans-unit>
 <trans-unit id="tu14" xml:space="preserve">
 <source xml:lang="en">variables</source>
-<target xml:lang="pt">variables</target>
+<target xml:lang="pt">variáveis</target>
 </trans-unit>
 <trans-unit id="tu15" xml:space="preserve">
 <source xml:lang="en">defined like any shader member, with the stream keyword</source>
-<target xml:lang="pt">defined like any shader member, with the stream keyword</target>
+<target xml:lang="pt">definido como qualquer membro shader, com a palavra-chave stream</target>
 </trans-unit>
 <trans-unit id="tu16" xml:space="preserve">
 <source xml:lang="en">used with the stream prefix (omitting it results in a compilation error). When the stream is ambiguous (same name), you should provide the shader name in front of the variable (ie <g id="1">streams.&lt;my_shader&gt;.&lt;my_variable&gt;</g>)</source>
-<target xml:lang="pt">used with the stream prefix (omitting it results in a compilation error). When the stream is ambiguous (same name), you should provide the shader name in front of the variable (ie <g id="1">streams.&lt;my_shader&gt;.&lt;my_variable&gt;</g>)</target>
+<target xml:lang="pt">usado com o prefixo de fluxo (omitindo-o resulta em um erro de compilação). Quando o fluxo é ambíguo (mesmo nome), você deve fornecer o nome do shader na frente da variável (ou seja, <g id="1">stream.&lt;my_shader&gt;.&lt;my_variable&gt;</g>)</target>
 </trans-unit>
 <trans-unit id="tu17" xml:space="preserve">
 <source xml:lang="en">Streams regroup the concepts of attributes, varyings and outputs in a single concept.</source>
-<target xml:lang="pt">Streams regroup the concepts of attributes, varyings and outputs in a single concept.</target>
+<target xml:lang="pt">Os fluxos reagrupam os conceitos de atributos, variações e saídas em um único conceito.</target>
 </trans-unit>
 <trans-unit id="tu18" xml:space="preserve">
 <source xml:lang="en">An attribute is a stream read in a vertex shader before being written to.</source>
-<target xml:lang="pt">An attribute is a stream read in a vertex shader before being written to.</target>
+<target xml:lang="pt">Um atributo é um fluxo lido em um shader vértice antes de ser escrito.</target>
 </trans-unit>
 <trans-unit id="tu19" xml:space="preserve">
 <source xml:lang="en">A varying is a stream present across shader stages.</source>
-<target xml:lang="pt">A varying is a stream present across shader stages.</target>
+<target xml:lang="pt">Uma variação é um fluxo presente através de fases de shader.</target>
 </trans-unit>
 <trans-unit id="tu20" xml:space="preserve">
 <source xml:lang="en">An output is a stream assigned before being read.</source>
-<target xml:lang="pt">An output is a stream assigned before being read.</target>
+<target xml:lang="pt">Uma saída é um fluxo atribuído antes de ser lido.</target>
 </trans-unit>
 <trans-unit id="tu21" xml:space="preserve">
 <source xml:lang="en">Think of streams as global objects that you can access everywhere without specifying as a parameter of your functions.</source>
-<target xml:lang="pt">Think of streams as global objects that you can access everywhere without specifying as a parameter of your functions.</target>
+<target xml:lang="pt">Pense em fluxos como objetos globais que você pode acessar em todos os lugares sem especificar como um parâmetro de suas funções.</target>
 </trans-unit>
 <trans-unit id="tu22" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>!Note<x id="2"/>
 You don't have to create a semantic for these variables; the compiler creates them automatically. However, keep in mind that <g id="3">the variables sharing the same semantic will be merged in the final shader</g>. This behavior can be useful when you want to use a stream variable locally without inheriting from the shader where it was declared.</source>
-<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
-You don't have to create a semantic for these variables; the compiler creates them automatically. However, keep in mind that <g id="3">the variables sharing the same semantic will be merged in the final shader</g>. This behavior can be useful when you want to use a stream variable locally without inheriting from the shader where it was declared.</target>
+<target xml:lang="pt">&lt;x1\/&gt;!Note&lt;x2\/&gt;
+Você não precisa criar um semântico para essas variáveis; o compilador os cria automaticamente. No entanto, tenha em mente que <g id="3"> as variáveis que compartilham a mesma semântica serão fundidas no shader final</g>. Este comportamento pode ser útil quando você deseja usar uma variável de fluxo localmente sem herdar do shader onde foi declarado.</target>
 </trans-unit>
 <trans-unit id="tu23" xml:space="preserve">
 <source xml:lang="en">After you declare a stream, you can access it at any stage of your shader. The shader compiler takes care of everything. The variables just have to be visible from the calling code (ie in the inheritance hierarchy) like any other variable.</source>
-<target xml:lang="pt">After you declare a stream, you can access it at any stage of your shader. The shader compiler takes care of everything. The variables just have to be visible from the calling code (ie in the inheritance hierarchy) like any other variable.</target>
+<target xml:lang="pt">Depois de declarar um fluxo, você pode acessá-lo em qualquer estágio do seu shader. O compilador de shader cuida de tudo. As variáveis precisam ser visíveis do código de chamada (ou seja, na hierarquia de herança) como qualquer outra variável.</target>
 </trans-unit>
 <trans-unit id="tu24" xml:space="preserve">
 <source xml:lang="en"><g id="1">Code:</g> Stream definition and use:</source>
-<target xml:lang="pt"><g id="1">Code:</g> Stream definition and use:</target>
+<target xml:lang="pt"><g id="1"> Código:</g> Definição e uso do fluxo:</target>
 </trans-unit>
 <trans-unit id="tu25" xml:space="preserve">
 <source xml:lang="en">shader BaseShader
@@ -262,20 +262,20 @@ You don't have to create a semantic for these variables; the compiler creates th
 	}
 };
 </source>
-<target xml:lang="pt">shader BaseShader
-{
+<target xml:lang="pt">sombreador BaseShader
+(
 	stream float3 myVar;
  
-	float3 Compute()
-	{
-		return streams.myVar;
+	flutuante3 Compute()
+	(
+		retorno de fluxos. myVar;
 	}
 };
 </target>
 </trans-unit>
 <trans-unit id="tu26" xml:space="preserve">
 <source xml:lang="en"><g id="1">Code:</g> Stream specification</source>
-<target xml:lang="pt"><g id="1">Code:</g> Stream specification</target>
+<target xml:lang="pt"><g id="1"> Código:</g> Especificação de fluxo</target>
 </trans-unit>
 <trans-unit id="tu27" xml:space="preserve">
 <source xml:lang="en">shader StreamShader
@@ -291,31 +291,31 @@ shader ShaderA : BaseShader, StreamShader
 	}
 }
 </source>
-<target xml:lang="pt">shader StreamShader
-{
+<target xml:lang="pt">córrego StreamShader
+(
 	stream float3 myVar;
 };
 
-shader ShaderA : BaseShader, StreamShader
-{
-	float3 Test()
-	{
-		return streams.BaseShader.myVar + streams.StreamShader.myVar;
+shaderA: BaseShader, StreamShader
+(
+	teste de flutuação3()
+	(
+		retorno streams.BaseShader.myVar + streams.StreamShader.myVar;
 	}
 }
 </target>
 </trans-unit>
 <trans-unit id="tu28" xml:space="preserve">
 <source xml:lang="en">Example of SDSL shader</source>
-<target xml:lang="pt">Example of SDSL shader</target>
+<target xml:lang="pt">Exemplo de shader SDSL</target>
 </trans-unit>
 <trans-unit id="tu29" xml:space="preserve">
 <source xml:lang="en">Let's look at the same HLSL shader as the first example but in SDSL.</source>
-<target xml:lang="pt">Let's look at the same HLSL shader as the first example but in SDSL.</target>
+<target xml:lang="pt">Vamos olhar para o mesmo shader HLSL como o primeiro exemplo, mas no SDSL.</target>
 </trans-unit>
 <trans-unit id="tu30" xml:space="preserve">
 <source xml:lang="en"><g id="1">Code:</g> Same shader in SDSL</source>
-<target xml:lang="pt"><g id="1">Code:</g> Same shader in SDSL</target>
+<target xml:lang="pt"><g id="1"> Código:</g> O mesmo shader em SDSL</target>
 </trans-unit>
 <trans-unit id="tu31" xml:space="preserve">
 <source xml:lang="en">shader MyShader : ShaderBase
@@ -334,30 +334,30 @@ shader ShaderA : BaseShader, StreamShader
 	}
 };
 </source>
-<target xml:lang="pt">shader MyShader : ShaderBase
-{
-	stream float4 pos : POSITION;
-	stream float4 col : COLOR;
+<target xml:lang="pt">shader MyShader: ShaderBase
+(
+	stream float4 pos : POSIÇÃO;
+	fluxo float4 col: COR;
 
-	override void VSMain()
-	{
+	anular VSMain()
+	(
 		streams.ShadingPosition = streams.pos;
 	}
 
-	override void PSMain()
-	{
-		streams.ColorTarget = streams.col;
+	anular PSMain()
+	(
+		fluxos. ColorTarget = streams.col;
 	}
 };
 </target>
 </trans-unit>
 <trans-unit id="tu32" xml:space="preserve">
 <source xml:lang="en">Now let's add the normal computation.</source>
-<target xml:lang="pt">Now let's add the normal computation.</target>
+<target xml:lang="pt">Agora vamos adicionar a computação normal.</target>
 </trans-unit>
 <trans-unit id="tu33" xml:space="preserve">
 <source xml:lang="en"><g id="1">Code:</g> Modified shader in SDSL</source>
-<target xml:lang="pt"><g id="1">Code:</g> Modified shader in SDSL</target>
+<target xml:lang="pt"><g id="1"> Código:</g> Modificado shader em SDSL</target>
 </trans-unit>
 <trans-unit id="tu34" xml:space="preserve">
 <source xml:lang="en">shader MyShader : ShaderBase
@@ -377,59 +377,59 @@ shader ShaderA : BaseShader, StreamShader
 	}
 };
 </source>
-<target xml:lang="pt">shader MyShader : ShaderBase
-{
-	stream float4 pos : POSITION;
-	stream float4 col : COLOR;
-	stream float3 normal : NORMAL;
+<target xml:lang="pt">shader MyShader: ShaderBase
+(
+	stream float4 pos : POSIÇÃO;
+	fluxo float4 col: COR;
+	fluxo float3 normal : NORMAL;
 
-	override void VSMain()
-	{
+	anular VSMain()
+	(
 		streams.ShadingPosition = streams.pos;
 	}
 
-	override void PSMain()
-	{
-		streams.ColorTarget = streams.col * max(streams.normal.z, 0.0);
+	anular PSMain()
+	(
+		streams.ColorTarget = streams.col * max(streams.normal.z, 0,0);
 	}
 };
 </target>
 </trans-unit>
 <trans-unit id="tu35" xml:space="preserve">
 <source xml:lang="en">In SDSL, adding a new attribute is as simple as adding it to the pool of streams and using it where you want.</source>
-<target xml:lang="pt">In SDSL, adding a new attribute is as simple as adding it to the pool of streams and using it where you want.</target>
+<target xml:lang="pt">No SDSL, adicionar um novo atributo é tão simples como adicioná-lo ao conjunto de fluxos e usá-lo onde quiser.</target>
 </trans-unit>
 <trans-unit id="tu36" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>media/sdsl_add_normal.png<x id="2"/></source>
-<target xml:lang="pt"><x id="1"/>media/sdsl_add_normal.png<x id="2"/></target>
+<target xml:lang="pt">&lt;x1\/&gt;media\/sdsl_add_normal.png&lt;x2\/&gt;</target>
 </trans-unit>
 <trans-unit id="tu37" xml:space="preserve">
 <source xml:lang="en">See also</source>
-<target xml:lang="pt">See also</target>
+<target xml:lang="pt">Ver também</target>
 </trans-unit>
 <trans-unit id="tu38" xml:space="preserve">
 <source xml:lang="en"><g id="1">Effect language</g></source>
-<target xml:lang="pt"><g id="1">Effect language</g></target>
+<target xml:lang="pt"><g id="1">Efeito da linguagem</g></target>
 </trans-unit>
 <trans-unit id="tu39" xml:space="preserve">
 <source xml:lang="en"><g id="1">Shading language index</g></source>
-<target xml:lang="pt"><g id="1">Shading language index</g></target>
+<target xml:lang="pt"><g id="1">Índice de linguagem de sombra</g></target>
 </trans-unit>
 <trans-unit id="tu40" xml:space="preserve">
 <source xml:lang="en"><g id="1">Shader classes, mixins and inheritance</g></source>
-<target xml:lang="pt"><g id="1">Shader classes, mixins and inheritance</g></target>
+<target xml:lang="pt"><g id="1">Shader classes, misturas e herança</g></target>
 </trans-unit>
 <trans-unit id="tu41" xml:space="preserve">
 <source xml:lang="en"><g id="1">Composition</g></source>
-<target xml:lang="pt"><g id="1">Composition</g></target>
+<target xml:lang="pt"><g id="1">Composição</g></target>
 </trans-unit>
 <trans-unit id="tu42" xml:space="preserve">
 <source xml:lang="en"><g id="1">Templates</g></source>
-<target xml:lang="pt"><g id="1">Templates</g></target>
+<target xml:lang="pt"><g id="1">Modelos</g></target>
 </trans-unit>
 <trans-unit id="tu43" xml:space="preserve">
 <source xml:lang="en"><g id="1">Shader stages</g></source>
-<target xml:lang="pt"><g id="1">Shader stages</g></target>
+<target xml:lang="pt"><g id="1">Etapas de Shader</g></target>
 </trans-unit>
 </body>
 </file>

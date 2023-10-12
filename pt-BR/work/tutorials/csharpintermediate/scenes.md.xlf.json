@@ -1,172 +1,172 @@
 {
-    "filename": "tutorials\\csharpintermediate\\scenes.md.xlf",
-    "files": [
-        {
-            "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpintermediate\/scenes.md": [
-                [
-                    "Scenes",
-                    "",
-                    "Scenes",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpintermediate\/scenes.md",
-                    {
-                        "id": "tu1"
-                    }
-                ],
-                [
-                    "This C# Intermediate tutorial covers the concept of Scenes in Stride.",
-                    "",
-                    "This C# Intermediate tutorial covers the concept of Scenes in Stride.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpintermediate\/scenes.md",
-                    {
-                        "id": "tu2"
-                    }
-                ],
-                [
-                    "Explanation",
-                    "",
-                    "Explanation",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpintermediate\/scenes.md",
-                    {
-                        "id": "tu3"
-                    }
-                ],
-                [
-                    "Stride allows Scenes to have an infinite amount of child scenes which on their terms also can load an infinite amount of child scenes.",
-                    "",
-                    "Stride allows Scenes to have an infinite amount of child scenes which on their terms also can load an infinite amount of child scenes.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpintermediate\/scenes.md",
-                    {
-                        "id": "tu4"
-                    }
-                ],
-                [
-                    "However, every scene loaded is unique.",
-                    "",
-                    " However, every scene loaded is unique.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpintermediate\/scenes.md",
-                    {
-                        "id": "tu4"
-                    }
-                ],
-                [
-                    "A scene can not be loaded twice at the same time.",
-                    "",
-                    " A scene can not be loaded twice at the same time.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpintermediate\/scenes.md",
-                    {
-                        "id": "tu4"
-                    }
-                ],
-                [
-                    "Both the editor and when loading scenes through code, will prevent a scene from being loaded twice at the same time.",
-                    "",
-                    " Both the editor and when loading scenes through code, will prevent a scene from being loaded twice at the same time.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpintermediate\/scenes.md",
-                    {
-                        "id": "tu4"
-                    }
-                ],
-                [
-                    "<x1\/>!Video https:\/\/www.youtube.com\/embed\/G7OvA-9erpE<x2\/>",
-                    "",
-                    "<x1\/>!Video https:\/\/www.youtube.com\/embed\/G7OvA-9erpE<x2\/>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpintermediate\/scenes.md",
-                    {
-                        "id": "tu5"
-                    }
-                ],
-                [
-                    "Loading a child scene",
-                    "",
-                    "Loading a child scene",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpintermediate\/scenes.md",
-                    {
-                        "id": "tu6"
-                    }
-                ],
-                [
-                    "This script loads in a child scene by pressing a defined key.",
-                    "",
-                    "This script loads in a child scene by pressing a defined key.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpintermediate\/scenes.md",
-                    {
-                        "id": "tu7"
-                    }
-                ],
-                [
-                    "Pressing that same key again, will unload the loaded child scene.",
-                    "",
-                    " Pressing that same key again, will unload the loaded child scene.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpintermediate\/scenes.md",
-                    {
-                        "id": "tu7"
-                    }
-                ],
-                [
-                    "Every time we load the child scene again, we offset it a little in the Y direction to demonstrate the offsetting option for child scenes.",
-                    "",
-                    " Every time we load the child scene again, we offset it a little in the Y direction to demonstrate the offsetting option for child scenes.\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpintermediate\/scenes.md",
-                    {
-                        "id": "tu7"
-                    }
-                ],
-                [
-                    "[!code-csharp<g1>editorpages<\/g1>]",
-                    "",
-                    "[!code-csharp<g1>editorpages<\/g1>]",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpintermediate\/scenes.md",
-                    {
-                        "id": "tu7"
-                    }
-                ],
-                [
-                    "(Re)loading a scene",
-                    "",
-                    "(Re)loading a scene",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpintermediate\/scenes.md",
-                    {
-                        "id": "tu8"
-                    }
-                ],
-                [
-                    "We can get the top most scene in our world which is called the RootScene.",
-                    "",
-                    "We can get the top most scene in our world which is called the RootScene.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpintermediate\/scenes.md",
-                    {
-                        "id": "tu9"
-                    }
-                ],
-                [
-                    "If we unload that scene, we can then load in a completely new scene in order to swap or switch to a new scene.",
-                    "",
-                    " If we unload that scene, we can then load in a completely new scene in order to swap or switch to a new scene.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpintermediate\/scenes.md",
-                    {
-                        "id": "tu9"
-                    }
-                ],
-                [
-                    "That same script can also be used to reload the same scene in case you want to restart your scene,",
-                    "",
-                    " That same script can also be used to reload the same scene in case you want to restart your scene,\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpintermediate\/scenes.md",
-                    {
-                        "id": "tu9"
-                    }
-                ],
-                [
-                    "[!code-csharp<g1>editorpages<\/g1>]",
-                    "",
-                    "[!code-csharp<g1>editorpages<\/g1>]",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpintermediate\/scenes.md",
-                    {
-                        "id": "tu9"
-                    }
-                ]
-            ]
-        }
-    ],
-    "seg_enabled": false
+  "filename": "tutorials\\csharpintermediate\\scenes.md.xlf",
+  "files": [
+    {
+      "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpintermediate\/scenes.md": [
+        [
+          "Scenes",
+          "Cenas",
+          "Scenes",
+          "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpintermediate\/scenes.md",
+          {
+            "id": "tu1"
+          }
+        ],
+        [
+          "This C# Intermediate tutorial covers the concept of Scenes in Stride.",
+          "Este tutorial intermediário C# cobre o conceito de cenas em Stride.",
+          "This C# Intermediate tutorial covers the concept of Scenes in Stride.",
+          "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpintermediate\/scenes.md",
+          {
+            "id": "tu2"
+          }
+        ],
+        [
+          "Explanation",
+          "Explicação",
+          "Explanation",
+          "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpintermediate\/scenes.md",
+          {
+            "id": "tu3"
+          }
+        ],
+        [
+          "Stride allows Scenes to have an infinite amount of child scenes which on their terms also can load an infinite amount of child scenes.",
+          "Stride permite Cenas para ter uma quantidade infinita de cenas de criança que em seus termos também pode carregar uma quantidade infinita de cenas de criança.",
+          "Stride allows Scenes to have an infinite amount of child scenes which on their terms also can load an infinite amount of child scenes.",
+          "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpintermediate\/scenes.md",
+          {
+            "id": "tu4"
+          }
+        ],
+        [
+          "However, every scene loaded is unique.",
+          "No entanto, cada cena carregada é única.",
+          " However, every scene loaded is unique.",
+          "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpintermediate\/scenes.md",
+          {
+            "id": "tu4"
+          }
+        ],
+        [
+          "A scene can not be loaded twice at the same time.",
+          "Uma cena não pode ser carregada duas vezes ao mesmo tempo.",
+          " A scene can not be loaded twice at the same time.",
+          "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpintermediate\/scenes.md",
+          {
+            "id": "tu4"
+          }
+        ],
+        [
+          "Both the editor and when loading scenes through code, will prevent a scene from being loaded twice at the same time.",
+          "Tanto o editor quanto ao carregar cenas através do código, impedirão que uma cena seja carregada duas vezes ao mesmo tempo.",
+          " Both the editor and when loading scenes through code, will prevent a scene from being loaded twice at the same time.",
+          "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpintermediate\/scenes.md",
+          {
+            "id": "tu4"
+          }
+        ],
+        [
+          "<x1\/>!Video https:\/\/www.youtube.com\/embed\/G7OvA-9erpE<x2\/>",
+          "<x1\/>!Vídeo https:\/\/www.youtube.com\/embed\/G7OvA-9erpE<x2\/>",
+          "<x1\/>!Video https:\/\/www.youtube.com\/embed\/G7OvA-9erpE<x2\/>",
+          "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpintermediate\/scenes.md",
+          {
+            "id": "tu5"
+          }
+        ],
+        [
+          "Loading a child scene",
+          "Carregando uma cena infantil",
+          "Loading a child scene",
+          "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpintermediate\/scenes.md",
+          {
+            "id": "tu6"
+          }
+        ],
+        [
+          "This script loads in a child scene by pressing a defined key.",
+          "Este script carrega em uma cena de criança pressionando uma chave definida.",
+          "This script loads in a child scene by pressing a defined key.",
+          "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpintermediate\/scenes.md",
+          {
+            "id": "tu7"
+          }
+        ],
+        [
+          "Pressing that same key again, will unload the loaded child scene.",
+          "Pressionando essa mesma chave novamente, irá descarregar a cena da criança carregada.",
+          " Pressing that same key again, will unload the loaded child scene.",
+          "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpintermediate\/scenes.md",
+          {
+            "id": "tu7"
+          }
+        ],
+        [
+          "Every time we load the child scene again, we offset it a little in the Y direction to demonstrate the offsetting option for child scenes.",
+          "Cada vez que carregamos a cena da criança novamente, compensamos um pouco na direção Y para demonstrar a opção de compensação para cenas de crianças.",
+          " Every time we load the child scene again, we offset it a little in the Y direction to demonstrate the offsetting option for child scenes.\r\n",
+          "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpintermediate\/scenes.md",
+          {
+            "id": "tu7"
+          }
+        ],
+        [
+          "[!code-csharp<g1>editorpages<\/g1>]",
+          "[!code-csharp<g1>editorpages<\/g1>]",
+          "[!code-csharp<g1>editorpages<\/g1>]",
+          "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpintermediate\/scenes.md",
+          {
+            "id": "tu7"
+          }
+        ],
+        [
+          "(Re)loading a scene",
+          "(Re) carregar uma cena",
+          "(Re)loading a scene",
+          "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpintermediate\/scenes.md",
+          {
+            "id": "tu8"
+          }
+        ],
+        [
+          "We can get the top most scene in our world which is called the RootScene.",
+          "Nós podemos obter o topo mais cena em nosso mundo que é chamado de RootScene.",
+          "We can get the top most scene in our world which is called the RootScene.",
+          "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpintermediate\/scenes.md",
+          {
+            "id": "tu9"
+          }
+        ],
+        [
+          "If we unload that scene, we can then load in a completely new scene in order to swap or switch to a new scene.",
+          "Se descarregarmos essa cena, podemos então carregar em uma cena completamente nova para trocar ou mudar para uma nova cena.",
+          " If we unload that scene, we can then load in a completely new scene in order to swap or switch to a new scene.",
+          "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpintermediate\/scenes.md",
+          {
+            "id": "tu9"
+          }
+        ],
+        [
+          "That same script can also be used to reload the same scene in case you want to restart your scene,",
+          "Esse mesmo script também pode ser usado para recarregar a mesma cena no caso de você querer reiniciar sua cena,",
+          " That same script can also be used to reload the same scene in case you want to restart your scene,\r\n",
+          "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpintermediate\/scenes.md",
+          {
+            "id": "tu9"
+          }
+        ],
+        [
+          "[!code-csharp<g1>editorpages<\/g1>]",
+          "[!code-csharp<g1>editorpages<\/g1>]",
+          "[!code-csharp<g1>editorpages<\/g1>]",
+          "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpintermediate\/scenes.md",
+          {
+            "id": "tu9"
+          }
+        ]
+      ]
+    }
+  ],
+  "seg_enabled": false
 }

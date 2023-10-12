@@ -3,19 +3,19 @@
 <body>
 <trans-unit id="tu1" xml:space="preserve">
 <source xml:lang="en">Light probes</source>
-<target xml:lang="pt">Light probes</target>
+<target xml:lang="pt">Sondas de luz</target>
 </trans-unit>
 <trans-unit id="tu2" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Beginner<x id="2"/>
 <x id="3"/>Designer<x id="4"/>
 <x id="5"/>Artist<x id="6"/></source>
-<target xml:lang="pt"><x id="1"/>Beginner<x id="2"/>
-<x id="3"/>Designer<x id="4"/>
-<x id="5"/>Artist<x id="6"/></target>
+<target xml:lang="pt">&lt;x1\/&gt;Introdução&lt;x2\/&gt;
+&lt;x3\/&gt;Designer&lt;x4\/&gt;
+&lt;x5\/&gt;Artista &lt;x6\/&gt;</target>
 </trans-unit>
 <trans-unit id="tu3" xml:space="preserve">
 <source xml:lang="en"><g id="1">Light probes</g> capture the lighting at the position you place them. They simulate <g id="2">indirect light</g>, the effect of light bouncing off surfaces and illuminating other surfaces. They can make a dramatic difference to the mood and appearance of your scene.</source>
-<target xml:lang="pt"><g id="1">Light probes</g> capture the lighting at the position you place them. They simulate <g id="2">indirect light</g>, the effect of light bouncing off surfaces and illuminating other surfaces. They can make a dramatic difference to the mood and appearance of your scene.</target>
+<target xml:lang="pt"><g id="1"> sondas de luz </g> capturam a iluminação na posição que os colocam. Eles simulam <g id="2">indirect light</g>, o efeito da luz saltando de superfícies e iluminando outras superfícies. Eles podem fazer uma diferença dramática ao humor e aparência de sua cena.</target>
 </trans-unit>
 <group id="sd1_ssf7" resname="sub-filter:sd1">
 <trans-unit id="sd1_sf7_tu1" resname="sd1_1" restype="x-paragraph" xml:space="preserve">
@@ -27,241 +27,241 @@
 </group>
 <trans-unit id="tu4" xml:space="preserve">
 <source xml:lang="en">The screenshot below shows a <g id="1">point light</g> surrounded by light probes in the Scene Editor. The probes form 3D areas (shown in the Scene Editor by the yellow wireframe connecting the probes).</source>
-<target xml:lang="pt">The screenshot below shows a <g id="1">point light</g> surrounded by light probes in the Scene Editor. The probes form 3D areas (shown in the Scene Editor by the yellow wireframe connecting the probes).</target>
+<target xml:lang="pt">A captura de tela abaixo mostra uma luz <g id="1">point</g> rodeada por sondas de luz no Editor de cena. As sondas formam áreas 3D (mostradas no Editor de Cena pelo wireframe amarelo conectando as sondas).</target>
 </trans-unit>
 <trans-unit id="tu5" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Cornell box<x id="2"/></source>
-<target xml:lang="pt"><x id="1"/>Cornell box<x id="2"/></target>
+<target xml:lang="pt">&lt;x1\/&gt;Cornell box&lt;x2\/&gt;</target>
 </trans-unit>
 <trans-unit id="tu6" xml:space="preserve">
 <source xml:lang="en">Stride colors pixels within a light probe area to simulate the effect of light bouncing from nearby surfaces. To find a color for a given pixel, Stride interpolates from the lighting captured by the four surrounding light probes.</source>
-<target xml:lang="pt">Stride colors pixels within a light probe area to simulate the effect of light bouncing from nearby surfaces. To find a color for a given pixel, Stride interpolates from the lighting captured by the four surrounding light probes.</target>
+<target xml:lang="pt">Passe pixels de cores dentro de uma área de sonda de luz para simular o efeito de luz saltando de superfícies próximas. Para encontrar uma cor para um determinado pixel, Stride interpola da iluminação capturada pelas quatro sondas de luz circundantes.</target>
 </trans-unit>
 <trans-unit id="tu7" xml:space="preserve">
 <source xml:lang="en">For example, in the screenshot below, notice how the red of the wall is reflected on the other objects. In the Scene Editor, this is also visible on the surface of the light probes themselves.</source>
-<target xml:lang="pt">For example, in the screenshot below, notice how the red of the wall is reflected on the other objects. In the Scene Editor, this is also visible on the surface of the light probes themselves.</target>
+<target xml:lang="pt">Por exemplo, na captura de tela abaixo, observe como o vermelho da parede se reflete nos outros objetos. No Editor de Cena, isso também é visível na superfície das sondas de luz.</target>
 </trans-unit>
 <trans-unit id="tu8" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Light probes — more reflection<x id="2"/></source>
-<target xml:lang="pt"><x id="1"/>Light probes — more reflection<x id="2"/></target>
+<target xml:lang="pt">&lt;x1\/&gt; sondas leves — mais reflexão&lt;x2\/&gt;</target>
 </trans-unit>
 <trans-unit id="tu9" xml:space="preserve">
 <source xml:lang="en">Light probes affect all objects in the area they cover, including static and dynamic objects. You don't need to enable any extra options on the entities that light probes affect.</source>
-<target xml:lang="pt">Light probes affect all objects in the area they cover, including static and dynamic objects. You don't need to enable any extra options on the entities that light probes affect.</target>
+<target xml:lang="pt">Sondas de luz afetam todos os objetos na área que cobrem, incluindo objetos estáticos e dinâmicos. Você não precisa ativar nenhuma opção extra nas entidades que as sondas leves afetam.</target>
 </trans-unit>
 <trans-unit id="tu10" xml:space="preserve">
 <source xml:lang="en">1. Enable light probes in the graphics compositor</source>
-<target xml:lang="pt">1. Enable light probes in the graphics compositor</target>
+<target xml:lang="pt">1. Ativar sondas de luz no compositor gráfico</target>
 </trans-unit>
 <trans-unit id="tu11" xml:space="preserve">
 <source xml:lang="en">Stride enables light probes by default in new projects. To make sure light probes are enabled:</source>
-<target xml:lang="pt">Stride enables light probes by default in new projects. To make sure light probes are enabled:</target>
+<target xml:lang="pt">O Stride permite sondas de luz por padrão em novos projetos. Para garantir que as sondas de luz estejam habilitadas:</target>
 </trans-unit>
 <trans-unit id="tu12" xml:space="preserve">
 <source xml:lang="en">In the <g id="1">Asset View</g> (in the bottom pane by default), double-click the <g id="2">Graphics Compositor</g> asset.</source>
-<target xml:lang="pt">In the <g id="1">Asset View</g> (in the bottom pane by default), double-click the <g id="2">Graphics Compositor</g> asset.</target>
+<target xml:lang="pt">No <g id="1">Asset View</g> (no painel inferior por padrão), clique duas vezes no <g id="2">Graphics Compositor</g> ativo.</target>
 </trans-unit>
 <trans-unit id="tu13" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Graphics Compositor asset<x id="2"/></source>
-<target xml:lang="pt"><x id="1"/>Graphics Compositor asset<x id="2"/></target>
+<target xml:lang="pt">&lt;x1\/&gt;Gráficos Compositor asset&lt;x2\/&gt;</target>
 </trans-unit>
 <trans-unit id="tu14" xml:space="preserve">
 <source xml:lang="en">The graphics compositor editor opens.</source>
-<target xml:lang="pt">The graphics compositor editor opens.</target>
+<target xml:lang="pt">O editor de compositores gráficos abre.</target>
 </trans-unit>
 <trans-unit id="tu15" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Graphics Compositor editor<x id="2"/></source>
-<target xml:lang="pt"><x id="1"/>Graphics Compositor editor<x id="2"/></target>
+<target xml:lang="pt">&lt;x1\/&gt;Gráfico Compositor editor&lt;x2\/&gt;</target>
 </trans-unit>
 <trans-unit id="tu16" xml:space="preserve">
 <source xml:lang="en">Select the <g id="1">forward renderer</g> node.</source>
-<target xml:lang="pt">Select the <g id="1">forward renderer</g> node.</target>
+<target xml:lang="pt">Selecione o nó <g id="1">forward renderer</g>.</target>
 </trans-unit>
 <trans-unit id="tu17" xml:space="preserve">
 <source xml:lang="en">In the <g id="1">Property Grid</g> (on the right by default), make sure the <g id="2">Light probes</g> checkbox is selected.</source>
-<target xml:lang="pt">In the <g id="1">Property Grid</g> (on the right by default), make sure the <g id="2">Light probes</g> checkbox is selected.</target>
+<target xml:lang="pt">No <g id="1">Property Grid</g> (à direita por padrão), certifique-se de que a caixa de seleção <g id="2">Light é selecionada.</g></target>
 </trans-unit>
 <trans-unit id="tu18" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Enable light probes<x id="2"/></source>
-<target xml:lang="pt"><x id="1"/>Enable light probes<x id="2"/></target>
+<target xml:lang="pt">&lt;x1\/&gt; Habilitar sondas de luz &lt;x2\/&gt;</target>
 </trans-unit>
 <trans-unit id="tu19" xml:space="preserve">
 <source xml:lang="en">For more information about the graphics compositor, see the <g id="1">Graphics compositor</g> page.</source>
-<target xml:lang="pt">For more information about the graphics compositor, see the <g id="1">Graphics compositor</g> page.</target>
+<target xml:lang="pt">Para obter mais informações sobre o compositor gráfico, consulte a página <g id="1">Graphics compositor</g>.</target>
 </trans-unit>
 <trans-unit id="tu20" xml:space="preserve">
 <source xml:lang="en">2. Create a light probe</source>
-<target xml:lang="pt">2. Create a light probe</target>
+<target xml:lang="pt">2. Criar uma sonda de luz</target>
 </trans-unit>
 <trans-unit id="tu21" xml:space="preserve">
 <source xml:lang="en">Right-click the scene or Entity Tree and select <g id="1">Light &gt; Light probe</g>.</source>
-<target xml:lang="pt">Right-click the scene or Entity Tree and select <g id="1">Light &gt; Light probe</g>.</target>
+<target xml:lang="pt">Clique com o botão direito do mouse na cena ou Entity Tree e selecione <g id="1">Light &gt; Sonda de luz </g>.</target>
 </trans-unit>
 <trans-unit id="tu22" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Add light probe<x id="2"/></source>
-<target xml:lang="pt"><x id="1"/>Add light probe<x id="2"/></target>
+<target xml:lang="pt">&lt;x1\/&gt; Adicionar sonda de luz &lt;x2\/&gt;</target>
 </trans-unit>
 <trans-unit id="tu23" xml:space="preserve">
 <source xml:lang="en">Alternatively, create an empty entity and add a <g id="1">Light probe component</g> in the Property Grid.</source>
-<target xml:lang="pt">Alternatively, create an empty entity and add a <g id="1">Light probe component</g> in the Property Grid.</target>
+<target xml:lang="pt">Alternativamente, crie uma entidade vazia e adicione um componente de sonda <g id="1">Light</g> na Grade de Propriedade.</target>
 </trans-unit>
 <trans-unit id="tu24" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Add light probe component<x id="2"/></source>
-<target xml:lang="pt"><x id="1"/>Add light probe component<x id="2"/></target>
+<target xml:lang="pt">&lt;x1\/&gt; Adicionar componente de sonda de luz&lt;x2\/&gt;</target>
 </trans-unit>
 <trans-unit id="tu25" xml:space="preserve">
 <source xml:lang="en">Light probes appear as spheres in the Scene Editor. Before you capture a light bounce for the first time, they have a completely black surface.</source>
-<target xml:lang="pt">Light probes appear as spheres in the Scene Editor. Before you capture a light bounce for the first time, they have a completely black surface.</target>
+<target xml:lang="pt">Sondas de luz aparecem como esferas no Editor de cena. Antes de capturar um salto de luz pela primeira vez, eles têm uma superfície completamente preta.</target>
 </trans-unit>
 <trans-unit id="tu26" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Light<x id="2"/></source>
-<target xml:lang="pt"><x id="1"/>Light<x id="2"/></target>
+<target xml:lang="pt">&lt;x1\/&gt;Light&lt;x2\/&gt;</target>
 </trans-unit>
 <trans-unit id="tu27" xml:space="preserve">
 <source xml:lang="en">3. Place light probes</source>
-<target xml:lang="pt">3. Place light probes</target>
+<target xml:lang="pt">3. Colocar sondas de luz</target>
 </trans-unit>
 <trans-unit id="tu28" xml:space="preserve">
 <source xml:lang="en">Light probes must be placed in a way that creates a <g id="1">3D volume</g>. This means:</source>
-<target xml:lang="pt">Light probes must be placed in a way that creates a <g id="1">3D volume</g>. This means:</target>
+<target xml:lang="pt">Sondas de luz devem ser colocadas de uma forma que cria um volume <g id="1">3D</g>. Isto significa:</target>
 </trans-unit>
 <trans-unit id="tu29" xml:space="preserve">
 <source xml:lang="en">You need <g id="1">at least four light probes</g> in the scene — enough to create the four points of a tetrahedron, as below:</source>
-<target xml:lang="pt">You need <g id="1">at least four light probes</g> in the scene — enough to create the four points of a tetrahedron, as below:</target>
+<target xml:lang="pt">Você precisa <g id="1">pelo menos quatro sondas de luz</g> na cena — o suficiente para criar os quatro pontos de um tetraedro, como abaixo:</target>
 </trans-unit>
 <trans-unit id="tu30" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Tetrahedron<x id="2"/></source>
-<target xml:lang="pt"><x id="1"/>Tetrahedron<x id="2"/></target>
+<target xml:lang="pt">&lt;x1\/&gt;Tetrahedron&lt;x2\/&gt;</target>
 </trans-unit>
 <trans-unit id="tu31" xml:space="preserve">
 <source xml:lang="en">At least one light probe must be on a different plane from the rest. For example, the probes in the screenshot below won't work, as they are on a flat plane and create no volume:</source>
-<target xml:lang="pt">At least one light probe must be on a different plane from the rest. For example, the probes in the screenshot below won't work, as they are on a flat plane and create no volume:</target>
+<target xml:lang="pt">Pelo menos uma sonda leve deve estar num avião diferente do resto. Por exemplo, as sondas na captura de tela abaixo não funcionarão, pois estão em um plano plano plano e não criam volume:</target>
 </trans-unit>
 <trans-unit id="tu32" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Flat probes<x id="2"/></source>
-<target xml:lang="pt"><x id="1"/>Flat probes<x id="2"/></target>
+<target xml:lang="pt">&lt;x1\/&gt;Flat sondas&lt;x2\/&gt;</target>
 </trans-unit>
 <trans-unit id="tu33" xml:space="preserve">
 <source xml:lang="en">A typical method is to place light probes in a grid across your scene covering a general area, as in the screenshots below:</source>
-<target xml:lang="pt">A typical method is to place light probes in a grid across your scene covering a general area, as in the screenshots below:</target>
+<target xml:lang="pt">Um método típico é colocar sondas de luz em uma grade em sua cena cobrindo uma área geral, como nas capturas de tela abaixo:</target>
 </trans-unit>
 <trans-unit id="tu34" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Grid layout<x id="2"/></source>
-<target xml:lang="pt"><x id="1"/>Grid layout<x id="2"/></target>
+<target xml:lang="pt">&lt;x1\/&gt;Grid layout&lt;x2\/&gt;</target>
 </trans-unit>
 <trans-unit id="tu35" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Light probes in the editor<x id="2"/></source>
-<target xml:lang="pt"><x id="1"/>Light probes in the editor<x id="2"/></target>
+<target xml:lang="pt">&lt;x1\/&gt; Sondas de luz no editor&lt;x2\/&gt;</target>
 </trans-unit>
 <trans-unit id="tu36" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>!Tip<x id="2"/>
 You can quickly duplicate light probes just like other entities. To do this, select a light probe, hold <g id="3">Ctrl</g>, and move it with the mouse.</source>
-<target xml:lang="pt"><x id="1"/>!Tip<x id="2"/>
-You can quickly duplicate light probes just like other entities. To do this, select a light probe, hold <g id="3">Ctrl</g>, and move it with the mouse.</target>
+<target xml:lang="pt">&lt;x1\/&gt;!Tip&lt;x2\/&gt;
+Você pode duplicar rapidamente sondas de luz como outras entidades. Para fazer isso, selecione uma sonda de luz, segure <g id="3">Ctrl</g> e mova-a com o mouse.</target>
 </trans-unit>
 <trans-unit id="tu37" xml:space="preserve">
 <source xml:lang="en">4. Capture lighting</source>
-<target xml:lang="pt">4. Capture lighting</target>
+<target xml:lang="pt">4. Iluminação de captura</target>
 </trans-unit>
 <trans-unit id="tu38" xml:space="preserve">
 <source xml:lang="en">In the Scene Editor toolbar, click the <g id="1">lighting options</g> button to open the lighting options menu.</source>
-<target xml:lang="pt">In the Scene Editor toolbar, click the <g id="1">lighting options</g> button to open the lighting options menu.</target>
+<target xml:lang="pt">Na barra de ferramentas do Editor de cena, clique no botão <g id="1">lighting options</g> para abrir o menu de opções de iluminação.</target>
 </trans-unit>
 <trans-unit id="tu39" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Lighting options<x id="2"/></source>
-<target xml:lang="pt"><x id="1"/>Lighting options<x id="2"/></target>
+<target xml:lang="pt">&lt;x1\/&gt;Opções de iluminação&lt;x2\/&gt;</target>
 </trans-unit>
 <trans-unit id="tu40" xml:space="preserve">
 <source xml:lang="en">Next to <g id="1">Bounces</g>, set the number of light bounces you want to capture.</source>
-<target xml:lang="pt">Next to <g id="1">Bounces</g>, set the number of light bounces you want to capture.</target>
+<target xml:lang="pt">Ao lado de <g id="1">Bounces</g>, defina o número de saltos de luz que você deseja capturar.</target>
 </trans-unit>
 <trans-unit id="tu41" xml:space="preserve">
 <source xml:lang="en">Multiple bounces simulate the effect of light bouncing between surfaces multiple times. This generally has the effect of brightening the lighting. Three or four bounces should be enough; beyond this, changes are almost unnoticeable. The number of bounces has no impact on runtime performance.</source>
-<target xml:lang="pt">Multiple bounces simulate the effect of light bouncing between surfaces multiple times. This generally has the effect of brightening the lighting. Three or four bounces should be enough; beyond this, changes are almost unnoticeable. The number of bounces has no impact on runtime performance.</target>
+<target xml:lang="pt">Vários saltos simulam o efeito da luz saltando entre superfícies várias vezes. Isso geralmente tem o efeito de iluminar a iluminação. Três ou quatro saltos devem ser suficientes; além disso, as mudanças são quase inaceitáveis. O número de saltos não tem impacto no desempenho do tempo de execução.</target>
 </trans-unit>
 <trans-unit id="tu42" xml:space="preserve">
 <source xml:lang="en">To capture the lighting, click <g id="1">Compute</g>.</source>
-<target xml:lang="pt">To capture the lighting, click <g id="1">Compute</g>.</target>
+<target xml:lang="pt">Para capturar a iluminação, clique em <g id="1">Compute</g>.</target>
 </trans-unit>
 <trans-unit id="tu43" xml:space="preserve">
 <source xml:lang="en">You can see the lighting on the surface of the light probes in the Scene Editor.</source>
-<target xml:lang="pt">You can see the lighting on the surface of the light probes in the Scene Editor.</target>
+<target xml:lang="pt">Você pode ver a iluminação na superfície das sondas de luz no Editor de cena.</target>
 </trans-unit>
 <trans-unit id="tu44" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Light probe surface<x id="2"/></source>
-<target xml:lang="pt"><x id="1"/>Light probe surface<x id="2"/></target>
+<target xml:lang="pt">&lt;x1\/&gt; Superfície da sonda de luz &lt;x2\/&gt;</target>
 </trans-unit>
 <trans-unit id="tu45" xml:space="preserve">
 <source xml:lang="en">Reset light probes</source>
-<target xml:lang="pt">Reset light probes</target>
+<target xml:lang="pt">Redefinir sondas de luz</target>
 </trans-unit>
 <trans-unit id="tu46" xml:space="preserve">
 <source xml:lang="en">To reset the light probes, in the <g id="1">lighting options</g> menu, click <g id="2">Reset</g>. This is useful after you change the lights in your scene and need to capture the lighting from scratch.</source>
-<target xml:lang="pt">To reset the light probes, in the <g id="1">lighting options</g> menu, click <g id="2">Reset</g>. This is useful after you change the lights in your scene and need to capture the lighting from scratch.</target>
+<target xml:lang="pt">Para redefinir as sondas de luz, no menu <g id="1">lighting options</g>, clique em <g id="2">Reset</g>. Isso é útil depois de alterar as luzes em sua cena e precisa capturar a iluminação do zero.</target>
 </trans-unit>
 <trans-unit id="tu47" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Reset light probes<x id="2"/></source>
-<target xml:lang="pt"><x id="1"/>Reset light probes<x id="2"/></target>
+<target xml:lang="pt">&lt;x1\/&gt; Redefinir sondas de luz &lt;x2\/&gt;</target>
 </trans-unit>
 <trans-unit id="tu48" xml:space="preserve">
 <source xml:lang="en">Show and hide light probes in the Scene Editor</source>
-<target xml:lang="pt">Show and hide light probes in the Scene Editor</target>
+<target xml:lang="pt">Mostrar e ocultar sondas de luz no Editor de cenas</target>
 </trans-unit>
 <trans-unit id="tu49" xml:space="preserve">
 <source xml:lang="en">Under the <g id="1">gizmo options</g> in the Scene Editor toolbar, use the <g id="2">Light probes</g> checkbox.</source>
-<target xml:lang="pt">Under the <g id="1">gizmo options</g> in the Scene Editor toolbar, use the <g id="2">Light probes</g> checkbox.</target>
+<target xml:lang="pt">Sob as opções <g id="1">gizmo</g> na barra de ferramentas do Editor de Cena, use a caixa de seleção <g id="2">Light probes</g>.</target>
 </trans-unit>
 <trans-unit id="tu50" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Hide light probes<x id="2"/></source>
-<target xml:lang="pt"><x id="1"/>Hide light probes<x id="2"/></target>
+<target xml:lang="pt">&lt;x1\/&gt; sondas de luz Hide&lt;x2\/&gt;</target>
 </trans-unit>
 <trans-unit id="tu51" xml:space="preserve">
 <source xml:lang="en">Show and hide light probe volumes in the Scene Editor</source>
-<target xml:lang="pt">Show and hide light probe volumes in the Scene Editor</target>
+<target xml:lang="pt">Mostrar e ocultar volumes de sonda de luz no Editor de cenas</target>
 </trans-unit>
 <trans-unit id="tu52" xml:space="preserve">
 <source xml:lang="en">Under the <g id="1">gizmo options</g> in the Scene Editor toolbar, use the <g id="2">Light probe volumes</g> checkbox.</source>
-<target xml:lang="pt">Under the <g id="1">gizmo options</g> in the Scene Editor toolbar, use the <g id="2">Light probe volumes</g> checkbox.</target>
+<target xml:lang="pt">Sob as opções <g id="1">gizmo</g> na barra de ferramentas do Editor de Cena, use a caixa de seleção <g id="2">Light probe volumes</g>.</target>
 </trans-unit>
 <trans-unit id="tu53" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Hide light probe volumes<x id="2"/></source>
-<target xml:lang="pt"><x id="1"/>Hide light probe volumes<x id="2"/></target>
+<target xml:lang="pt">&lt;x1\/&gt; volumes de sonda de luz Hide&lt;x2\/&gt;</target>
 </trans-unit>
 <trans-unit id="tu54" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Light probe volumes on and off<x id="2"/></source>
-<target xml:lang="pt"><x id="1"/>Light probe volumes on and off<x id="2"/></target>
+<target xml:lang="pt">&lt;x1\/&gt; volumes de sonda de luz em e off&lt;x2\/&gt;</target>
 </trans-unit>
 <trans-unit id="tu55" xml:space="preserve">
 <source xml:lang="en">See also</source>
-<target xml:lang="pt">See also</target>
+<target xml:lang="pt">Ver também</target>
 </trans-unit>
 <trans-unit id="tu56" xml:space="preserve">
 <source xml:lang="en"><g id="1">Add a light</g></source>
-<target xml:lang="pt"><g id="1">Add a light</g></target>
+<target xml:lang="pt"><g id="1">Adicionar uma luz</g></target>
 </trans-unit>
 <trans-unit id="tu57" xml:space="preserve">
 <source xml:lang="en"><g id="1">Point lights</g></source>
-<target xml:lang="pt"><g id="1">Point lights</g></target>
+<target xml:lang="pt"><g id="1">Luzes de ponto</g></target>
 </trans-unit>
 <trans-unit id="tu58" xml:space="preserve">
 <source xml:lang="en"><g id="1">Ambient lights</g></source>
-<target xml:lang="pt"><g id="1">Ambient lights</g></target>
+<target xml:lang="pt"><g id="1">Luzes ambientais</g></target>
 </trans-unit>
 <trans-unit id="tu59" xml:space="preserve">
 <source xml:lang="en"><g id="1">Directional lights</g></source>
-<target xml:lang="pt"><g id="1">Directional lights</g></target>
+<target xml:lang="pt"><g id="1">Luzes direcionais</g></target>
 </trans-unit>
 <trans-unit id="tu60" xml:space="preserve">
 <source xml:lang="en"><g id="1">Skybox lights</g></source>
-<target xml:lang="pt"><g id="1">Skybox lights</g></target>
+<target xml:lang="pt"><g id="1">Luzes Skybox</g></target>
 </trans-unit>
 <trans-unit id="tu61" xml:space="preserve">
 <source xml:lang="en"><g id="1">Spot lights</g></source>
-<target xml:lang="pt"><g id="1">Spot lights</g></target>
+<target xml:lang="pt"><g id="1">Luzes do ponto</g></target>
 </trans-unit>
 <trans-unit id="tu62" xml:space="preserve">
 <source xml:lang="en"><g id="1">Shadows</g></source>
-<target xml:lang="pt"><g id="1">Shadows</g></target>
+<target xml:lang="pt"><g id="1">Sombras</g></target>
 </trans-unit>
 </body>
 </file>

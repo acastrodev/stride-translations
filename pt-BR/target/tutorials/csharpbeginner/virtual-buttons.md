@@ -1,17 +1,17 @@
-# Virtual buttons
-You can find this sample in the tutorial project: **Menu** &rarr; **Virtual buttons**
+# Botões virtuais
+Você pode encontrar esta amostra no projeto tutorial: **Menu** → ** Botões virtuais**
 
-## Explanation
-This C# Beginner tutorial covers how to create virtual buttons.
+## Explicação
+Este tutorial C# Beginner abrange como criar botões virtuais.
 
-Lets say that you want a player to jump when a key is pressed. The space bar is a common option, but what if a gamer wants to have a different key bind to this 'Jump' action?
+Digamos que você quer que um jogador pule quando uma chave é pressionada. A barra de espaço é uma opção comum, mas e se um jogador quiser ter uma chave diferente ligada a esta ação 'Jump'?
 
-The answer here is the 'Virtual button'. Virtual buttons allow the mapping of one or more keyboard keys, mouse buttons or joystick buttons to a single 'Virtual button'. We can check for the name of that virtual button to see if any of the virtual buttons are triggered.
+A resposta aqui é o 'botão virtual'. Botões virtuais permitem o mapeamento de uma ou mais teclas de teclado, botões de mouse ou botões de joystick para um único "botão virtual". Podemos verificar o nome desse botão virtual para ver se alguns dos botões virtuais são acionados.
 
-![Virtual buttons](media/virtual-buttons.webp)
+![ Botões virtuais](media/virtual-buttons.webp)
 
 
-> [!Video https://www.youtube.com/embed/uWgson2IIhs]
+> [!Vídeo https://www.youtube.com/embed/uWgson2IIhs]
 
-## Code
+## Código
 [!code-csharp[VirtualButtons](../../../../stride/samples/Tutorials/CSharpBeginner/CSharpBeginner/CSharpBeginner.Game/Code/VirtualButtonsDemo.cs)]

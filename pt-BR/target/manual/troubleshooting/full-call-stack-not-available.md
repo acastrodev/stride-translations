@@ -1,18 +1,18 @@
-# Full call stack not available
+# Full call stack não disponível
 
-Depending on your Visual Studio settings, when an exception is thrown in Stride, Visual Studio might only show the call stack from the Stride runtime .DLL files or .NET framework assemblies, not user code.
+Dependendo de suas configurações do Visual Studio, quando uma exceção é jogada em Stride, o Visual Studio pode mostrar apenas a pilha de chamadas do tempo de execução Stride . arquivos DLL ou . NET conjuntos de estruturas, não código de usuário.
 
-To break as soon as an exception is thrown, add additional conditions to the Visual Studio **Exception Settings**.
+Para quebrar assim que uma exceção for lançada, adicione condições adicionais ao Visual Studio **Exception Settings**.
 
-1. In the Visual Studio toolbar, under the **Debug** menu, select **Windows > Exception Settings**.
+1. Na barra de ferramentas do Visual Studio, sob o menu **Debug**, selecione **Windows > Configurações de exceção**.
 
-   ![Exception settings](media/exception-settings.png)
+   <x1\/> Configurações de percepção <x2\/>
 
-2. Expand **Common Language Runtime Exceptions** and select **All Common Language Runtime Exceptions not in this list**. You might need to select other conditions too.
+2. Expandir ** Common Language Runtime Exceções** e selecione ** Todas as Exceções de tempo de execução de linguagem comum não nesta lista**. Você pode precisar selecionar outras condições também.
 
-   ![All common language runtime exceptions not in this list](media/all-common-language-runtime-exceptions.png)
+   <x1\/> Todas as exceções de tempo de execução de linguagem comum não nesta lista<x2\/>
 
-> [!Tip]
-> To restore the default list of exceptions, right-click and select **Restore Defaults**.
+> <x1\/>!Tip<x2\/>
+> Para restaurar a lista padrão de exceções, clique com o botão direito do mouse e selecione **Restore Defaults**.
 
-For more information about managing exceptions in Visual Studio, see [Manage exceptions with the debugger in Visual Studio](https://docs.microsoft.com/en-us/visualstudio/debugger/managing-exceptions-with-the-debugger) in the Microsoft Visual Studio documentation.
+Para obter mais informações sobre como gerenciar exceções no Visual Studio, consulte exceções [Manage com o depurador no Visual Studio](https://docs.microsoft.com/en-us/visualstudio/debugger/managing-exceptions-with-the-debugger) na documentação do Microsoft Visual Studio.

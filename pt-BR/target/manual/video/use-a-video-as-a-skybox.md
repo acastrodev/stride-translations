@@ -1,20 +1,20 @@
-# Use a video as a 3D skybox
+# Use um vídeo como uma caixa 3D
 
-1. Create a panorama movie.
+1. Criar um filme panorama.
 
-2. Add a background component.
+2. Adicione um componente de fundo.
 
-3. Add a video component to the scene and use the panorama as the video source and the background component as a texture target.
+3. Adicione um componente de vídeo à cena e use o panorama como fonte de vídeo e o componente de fundo como um alvo de textura.
 
-## Skybox lights with videos
+## Luzes Skybox com vídeos
 
-Currently, you can't use videos for [skybox lights](../graphics/lights-and-shadows/skybox-lights.md).
+Atualmente, você não pode usar vídeos para [skybox lights](../graphics/lights-and-shadows/skybox-lights.md).
 
-To create matching lighting for a video background, use a screenshot from the video, or blend between several screenshots.
+Para criar a iluminação correspondente para um fundo de vídeo, use uma captura de tela do vídeo ou misture entre várias capturas de tela.
 
-## See also
+## Ver também
 
-* [Skyboxes and backgrounds](../graphics/textures/skyboxes-and-backgrounds.md)
+* [Skyboxes e fundos](../graphics/textures/skyboxes-and-backgrounds.md)
 * [Skybox lights](../graphics/lights-and-shadows/skybox-lights.md).
-* [Set up a video](set-up-a-video.md)
-* [Video properties](video-properties.md)
+* [Configurar um vídeo](set-up-a-video.md)
+* [Propriedades do vídeo](video-properties.md)

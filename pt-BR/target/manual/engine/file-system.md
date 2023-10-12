@@ -1,29 +1,29 @@
-# File system
+# Sistema de arquivos
 
-[!INCLUDE [stride-studio-note](../../includes/under-construction-note.md)]
+[! INCLUÍDO [stride-studio-note](../../includes/under-construction-note.md)]
 
-We recommend you use the static class @'Stride.Core.IO.VirtualFileSystem' to access files across platforms. It offers all basic operations such as reading, writing, copying, checking existence and deleting files.
+Recomendamos que você use a classe estática @'Stride. Core.IO.VirtualFileSystem' para acessar arquivos em plataformas. Ele oferece todas as operações básicas, como ler, escrever, copiar, verificar a existência e excluir arquivos.
 
-> [!Note]
-> The path separator is / (Unix/Linux convention).
+> <x1\/>!Note<x2\/>
+> O separador de caminho é \/ (Convenção Unix\/Linux).
 
-## Code example
+## Exemplo de código
 
 ```cs
-// Open a file through VirtualFileSystem
-var gamesave1 = VirtualFileSystem.OpenStream("/roaming/gamesave001.dat", VirtualFileMode.Open, VirtualFileAccess.Read);
+\/\/ Abra um arquivo através do VirtualFileSystem
+var gamesave1 = VirtualFileSystem.OpenStream("\/roaming\/gamesave001.dat", VirtualFileMode. Abrir, VirtualFileAccess.Read);
  
-// Alternatively, directly access the same file through its file system provider (mount point)
-var gamesave2 = VirtualFileSystem.ApplicationRoaming.OpenStream("gamesave001.dat", VirtualFileMode.Open, VirtualFileAccess.Read);
+\/\/ Alternativamente, acesse diretamente o mesmo arquivo através de seu provedor de sistema de arquivos (ponto de montagem)
+var gamesave2 = VirtualFileSystem.ApplicationRoaming.OpenStream("gamesave001.dat", VirtualFileMode. Abrir, VirtualFileAccess.Read);
 ```
 
-## Default mount points
+## Pontos de montagem padrão
 
-| Mount point | Description  | Writable | Cloud | Notes  | PC   | Android  | iOS   | Windows Phone 8.1   
-| ----------- | -------------| -------- | ----- | -------| ---- | -------- | ------- | --
-| data        | Application data, deployed by package    | ✗    | ✗     |           | Output directory/data    | APK itself  | Deployed package directory | InstalledLocation.Path
-| binary   | Application binaries, deployed by package | ✗  | ✗   | Usually the same as *app_data* (except on Android)  | Assembly directory | Assembly directory  | Assembly directory  | Assembly directory
-| roaming   | User specific data (roaming) | ✓    |  ✓    | Backup   | Output directory/roaming, *%APPDATA%* | *$(Context.getFilesDir)/roaming* | Library/roaming  | Roaming
-| local  | User application data | ✓     |  ✓    | Backup   | Output directory/local | $(Context.getFilesDir)local    | Library/local  | Local
-| cache   | Application cache   | ✓   | ✗    | DLC, etc. Might be deleted manually by user (restore, clear data, etc...)   | Output directory/cache, with do-not-back-up flags   | *$(Context.getFilesDir)/cache*   | Library/caches  | LocalCache  
-| tmp    | Application temporary data    | ✓        | ✗     | Might be deleted without notice by OS   | Output directory/temp, *%TEMP%/%APPNAME%*   | *$(Context.getCacheDir)*  | tmp | Temporary
+| Mount point | Descrição | Writable | Cloud | Notes | PC | Android | iOS | Windows Phone 8.1<x1\/>
+| ------------- | -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| data | Application data, deployed by package | | | | | diretório de saída\/data | APK em si | Deployed package diretório | InstalledLocation. Caminho
+| binário | Application binaries, implantado pelo pacote | | | | | Normalmente o mesmo que *app_data* (exceto no Android) | Assembly diretório | Assembly diretório | Assembly diretório | Assembly diretório
+| roaming | User specific data (roaming) | ✓ ✓ | Backup | Output diretório\/roaming, *%APPDATA%* | *$(Context.getFilesDir)\/roaming* | Library\/roaming | Roaming
+| local | User application data | ✓ | ✓ | Backup | Diretório de saída\/local | $(Context.getFilesDir)local | Library\/local | Local
+| cache | Application cache | ✓ | | | DLC, etc. Pode ser excluído manualmente pelo usuário (restaurar, dados claros, etc...)   | Diretório\/cache de saída, com bandeiras não-back-up | *$(Context.getFilesDir)\/cache* | Library\/caches | LocalCache<x2\/>
+| tmp | Aplicação dados temporários | ✓ | | | Pode ser excluído sem aviso prévio por OS | Diretório de saída\/temp, *%TEMP%\/%APPNAME%* | *$(Context.getCacheDir)* | tmp | Temporary

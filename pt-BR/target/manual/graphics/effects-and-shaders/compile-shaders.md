@@ -1,82 +1,82 @@
-# Compile shaders
+# Sombreadores computacionais
 
-<span class="badge text-bg-primary">Beginner</span>
-<span class="badge text-bg-success">Programmer</span>
+<x1\/>Introdução<x2\/>
+<x3\/> Programador <x4\/>
 
-Stride converts Stride shaders (`sdsl` and `.sdfx` files) into the shader language used by the [graphics platform](../../platforms/set-the-graphics-platform.md).
+Conversões de Stride Stride shaders (`sdsl` e `.sdfx` files) para a linguagem shader usada pela plataforma [graphics](../../platforms/set-the-graphics-platform.md).
 
-| Platform | Shader language |
+| Plataforma | Língua de Shader |
 | -------------- | ---- 
 | Direct3D | HLSL |
 | OpenGL | GLSL |
-| Vulkan | SPIR-V |
+| Vulc | SPIR-V |
 | iOS | OpenGL ES |
 
-Stride can convert the shaders at runtime (when the game is running) or at build time (when the editor builds the game assets). When Stride generates shaders at runtime, rendering stops until the shader is compiled. This is usually something you want to avoid in your release build — especially on mobile platforms, which have less CPU, so the pause can be more noticable.
+Stride pode converter os shaders em tempo de execução (quando o jogo está em execução) ou no tempo de compilação (quando o editor constrói os ativos do jogo). Quando Stride gera shaders em tempo de execução, renderização pára até que o shader seja compilado. Isso geralmente é algo que você quer evitar em sua compilação de lançamento — especialmente em plataformas móveis, que têm menos CPU, então a pausa pode ser mais notável.
 
-## How Stride converts shaders at runtime
+## Como Stride converte shaders no tempo de execução
 
-Stride can't know in advance which shaders will be used at runtime. This is because users might generate new shader permutations by, for example, changing material parameters or modifying post-effect parameters from scripts. Additionally, the final shaders depend on the graphics features on the execution platform.
+Stride não pode saber com antecedência quais shaders serão usados no tempo de execução. Isso ocorre porque os usuários podem gerar novas permutações de shader, por exemplo, alterando parâmetros de material ou modificando parâmetros de pós-efeito de scripts. Além disso, os shaders finais dependem dos recursos gráficos na plataforma de execução.
 
-1. When Stride needs a new shader at runtime, it checks its database to see if the shader has already been converted. If the shader is in the database, Stride uses it.
+1. Quando Stride precisa de um novo shader em tempo de execução, ele verifica seu banco de dados para ver se o shader já foi convertido. Se o shader estiver no banco de dados, Stride o usa.
 
-2. If the shader hasn't already been converted, Stride compiles it — either locally (on the device) or remotely (in Game Studio), depending on the package **User Settings** (see below).
+2. Se o shader ainda não tiver sido convertido, o Stride o compila — seja localmente (no dispositivo) ou remotamente (no Game Studio), dependendo do pacote **User Settings** (veja abaixo).
 
-3. If **Record used effects** is enabled in the package **User Settings** (see below), Stride notifies Game Studio that it needs a new shader.
+3. Se **Record usado efeitos** é ativado no pacote **User Settings** (veja abaixo), Stride notifica Game Studio que ele precisa de um novo shader.
 
-4. Game Studio notifies you that there are new shaders to import.
+4. Game Studio notifica que há novos shaders para importar.
 
-   ![New effects](media/new-effects-to-import.png)
+   <x1\/> Novos efeitos<x2\/>
 
-   In the **Asset View**, the **Import effects** button becomes available.
+   No **Asset View**, o botão **Import effects** torna-se disponível.
 
-   ![Import effects](media/import-effects-button.png)
+   <x1\/> Efeitos de importação <x2\/>
 
-5. If you click **Import effects**, Game Studio updates the **Effect Log** (or creates it if it doesn't exist) and adds them to the game database to be used the next time you build (see step 1).
+5. Se você clicar em **Import effects**, Game Studio atualiza o **Effect Log** (ou cria se não existe) e os adiciona ao banco de dados do jogo para ser usado da próxima vez que você construir (veja o passo 1).
 
-   ![Effect log](media/effect-log.png)
+   <x1\/> Efeito log<x2\/>
 
-## Change how Stride compiles shaders
+## Mudar como Stride compila shaders
 
-1. In Game Studio, in the **Solution Explorer**, select the package and click **Package properties**.
+1. No Game Studio, no **Solution Explorer**, selecione o pacote e clique em **Package properties**.
 
-   ![Package properties](media/package-properties-button.png)
+   <x1\/> Propriedades de embalagem <x2\/>
 
-2. In the **Property Grid**, set the properties.
+2. No **Property Grid**, defina as propriedades.
 
-   ![Package properties](media/package-properties.png)
+   <x1\/> Propriedades de embalagem <x2\/>
 
-The **Effect compiler** property specifies how to compile the shader.
+A propriedade **Effect compiler** especifica como compilar o shader.
 
-* **Local**: Convert the shader on the device. This is recommended for release versions of your game.
+* **Local**: Converta o shader no dispositivo. Isto é recomendado para versões de lançamento do seu jogo.
 
-* **Remote**: Convert the shader on the developer machine. There's no reason to use this for release versions of your game, as it won't be able to connect to the developer machine.
+* **Remote**: Converta o shader na máquina desenvolvedora. Não há nenhuma razão para usar isso para versões de lançamento do seu jogo, pois não será capaz de se conectar à máquina desenvolvedora.
 
-* **LocalOrRemote**: Convert the shader on the developer machine; if this fails, try to convert it on the device. Like the **Remote** setting, this has no use for release versions of your game.
+* **LocalOrRemote**: Converta o shader na máquina do desenvolvedor; se isso falhar, tente convertê-lo no dispositivo. Como a configuração **Remote**, isso não tem uso para versões de lançamento do seu jogo.
 
-* **None**: Don't convert shaders. Note that the application will crash if it requires a shader that isn't in the database. Currently, using this feature doesn't save any space your application, so there's no advantage in using it. However, it might be useful for making sure you have every shader in the database; if the game crashes, you know the database is missing at least one shader.
+* **Nenhum **: Não convertas shaders. Note que o aplicativo vai falhar se precisar de um shader que não está no banco de dados. Atualmente, usar este recurso não salva nenhum espaço seu aplicativo, então não há nenhuma vantagem em usá-lo. No entanto, pode ser útil para ter certeza de que você tem cada shader no banco de dados; se o jogo falhar, você sabe que o banco de dados está faltando pelo menos um shader.
 
-If you enable **Record used effects**, Game Studio adds new shaders to the Effect Log as soon as they're needed. We recommend you disable this for release versions of your game, as it can't connect to the developer machine.
+Se você ativar os efeitos usados **Record**, Game Studio adiciona novos shaders ao Registro de Efeito assim que forem necessários. Recomendamos que você desative isso para versões de lançamento do seu jogo, pois não pode se conectar à máquina desenvolvedora.
 
-## Compile shaders remotely when developing for iOS
+## Compilar shaders remotamente ao desenvolver para iOS
 
-As iOS devices can't connect directly to PC, to convert Stride shaders remotely when developing for iOS, you need to use a Python script as a relay between the device, a Mac, and the developer PC.
+Como os dispositivos iOS não podem se conectar diretamente ao PC, para converter shaders Stride remotamente ao desenvolver para iOS, você precisa usar um script Python como um relé entre o dispositivo, um Mac e o PC desenvolvedor.
 
-1. Make sure your PC and Mac are connected to the same network.
+1. Certifique-se de que seu PC e Mac estão conectados à mesma rede.
 
-2. On your Mac, install Python. You can download Python from the [Python site](https://www.python.org/downloads/).
+2. No Mac, instale Python. Você pode baixar Python do site [Python](https://www.python.org/downloads/).
 
-3. Download and unzip [ios-tcreplay.zip](media/ios-tcprelay.zip).
+3. Download e unzip [ios-tcreplay.zip](media/ios-tcprelay.zip).
 
-4. Open **Terminal**, navigate to the folder where you unzipped the file, and execute **stride-ios-relay.py MyPcName**, where **MyPcName** is the name of your developer PC.
+4. Abra **Terminal**, navegue para a pasta onde você descompactou o arquivo e execute **stride-ios-relay.py MyPcName**, onde **MyPcName** é o nome do seu desenvolvedor PC.
 
-   > [!Tip]
-   > To find the name of your developer PC, on the PC, press the Windows key, type **About**, and press **Enter**. The PC name is listed under **PC name**.
+   > <x1\/>!Tip<x2\/>
+   > Para encontrar o nome do seu desenvolvedor PC, no PC, pressione a chave do Windows, digite **About** e pressione **Enter**. O nome do PC está listado em **PC nome**.
 
-The iOS device should now be able to communicate with the PC via your Mac to build shaders remotely.
+O dispositivo iOS agora deve ser capaz de se comunicar com o PC através do seu Mac para construir shaders remotamente.
 
-## Error messages
+## Mensagens de erro
 
-If your application tries to connect to Game Studio to compile a shader or to notify Game Studio that it needs new shaders, but can't connect, the Visual Studio output displays this error:
+Se o seu aplicativo tentar se conectar ao Game Studio para compilar um shader ou notificar Game Studio que ele precisa de novos shaders, mas não pode se conectar, a saída Visual Studio exibe este erro:
 
-"[RouterClient]: Error: Could not connect to connection router using mode Connect. System.AggregateException: One or more errors occurred. ---> System.Net.Sockets.SocketException: No connection could be made because the target machine actively refused it 127.0.0.1:31254"
+"<x1\/>RouterClient<x2\/>: Erro: Não foi possível conectar ao roteador de conexão usando o modo Connect. System.AggregateExcepção: Um ou mais erros ocorreram. ---- System.Net.Sockets.SocketException: Nenhuma conexão pode ser feita porque a máquina de destino recusou ativamente 127.0.0.1:31254"

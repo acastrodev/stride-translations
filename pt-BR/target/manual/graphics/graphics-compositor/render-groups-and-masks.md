@@ -1,44 +1,44 @@
-# Render groups and masks
+# Render grupos e máscaras
 
-<span class="badge text-bg-primary">Intermediate</span>
-<span class="badge text-bg-success">Designer</span>
+<x1\/> Intermediário <x2\/>
+<x3\/>Designer<x4\/>
 
-With **render groups** and **render masks**, you can choose which parts of your scene are rendered by different [cameras](../cameras/index.md). For example, you can have a model be visible to Camera A but invisible to Camera B.
+Com **render groups** e **render masks**, você pode escolher quais partes da sua cena são renderizadas por diferentes [cameras](../cameras/index.md). Por exemplo, você pode ter um modelo ser visível para a câmera A, mas invisível para a câmera B.
 
-## Set a render group
+## Definir um grupo de renderização
 
-1. In the scene, select the entity with the component (such as a model or [UI component](../../ui/add-a-ui-to-a-scene.md)) you want to add to a render group.
+1. Na cena, selecione a entidade com o componente (como um modelo ou componente [UI](../../ui/add-a-ui-to-a-scene.md)) que deseja adicionar a um grupo de renderização.
 
-2. In the **Property Grid**, next to **Render group**, select the group you want the entity to belong to.
+2. No **Property Grid**, ao lado de **Render group**, selecione o grupo ao qual deseja que a entidade pertença.
 
-   ![Select render group](media/select-render-group.png)
+   <x1\/>Select render group<x2\/>
 
-## Set a render mask
+## Definir uma máscara de renderização
 
-The **render mask** filters which groups are rendered.
+Os filtros **render mask** que os grupos são renderizados.
 
-1. In the **Asset View** (in the bottom pane by default), double-click the **Graphics Compositor** asset.
+1. No **Asset View** (no painel inferior por padrão), clique duas vezes no **Graphics Compositor** ativo.
 
-   ![Graphics Compositor asset](media/graphics-compositor-asset.png)
+   <x1\/>Gráficos Compositor asset<x2\/>
 
-   The Graphics Compositor Editor opens.
+   O Editor de Compositores Gráficos abre.
 
-   ![Graphics Compositor editor](media/graphics-compositor-editor.png)
+   <x1\/>Gráfico Compositor editor<x2\/>
 
-2. Select the **Entry points** node.
+2. Selecione o nó ** Pontos de entrada**.
 
-   ![Entry points node](media/entry-points-node.png)
+   <x1\/> Pontos de entrada node<x2\/>
 
-3. In the **Property Grid**, expand the renderer you want to render the model.
+3. No **Property Grid**, expanda o renderizador que deseja renderizar o modelo.
 
-4. Next to **Render mask**, click **Change values** and select the render groups you want the camera to render.
+4. Ao lado de **Render mask**, clique em **Alterar valores** e selecione os grupos de renderização que você deseja que a câmera renderize.
 
-   ![Render mask](media/change-render-mask.png)
+   <x1\/>Render mask<x2\/>
 
-## See also
+## Ver também
 
-* [Cameras](../cameras/index.md)
-* [Camera slots](../cameras/camera-slots.md)
-* [Graphics compositor](index.md)
-* [Scene renderers](scene-renderers.md)
-* [Render textures](render-textures.md)
+* [Câmeras](../cameras/index.md)
+* [Slots de câmera](../cameras/camera-slots.md)
+* [Compositor gráfico](index.md)
+* [Renderizadores de cenas](scene-renderers.md)
+* [Render texturas](render-textures.md)

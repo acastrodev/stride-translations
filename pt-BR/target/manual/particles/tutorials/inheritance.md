@@ -1,83 +1,83 @@
-# Tutorial: Inheritance
+# Tutorial: Herança
 
-<span class="badge text-bg-primary">Intermediate</span>
-<span class="badge text-bg-success">Artist</span>
-<span class="badge text-bg-success">Programmer</span>
+<x1\/> Intermediário <x2\/>
+<x3\/>Artista <x4\/>
+<x5\/> Programador <x6\/>
 
-This tutorial explains how to create particles which inherit one or more attributes, such as position or color, from other particles.
+Este tutorial explica como criar partículas que herdam um ou mais atributos, como posição ou cor, de outras partículas.
 
-## Sample
+## Amostra
 
-To see some of the techniques described on this page implemented in a project, create a new **Sample: Particles** project and open the **ChildParticles** scene.
+Para ver algumas das técnicas descritas nesta página implementadas em um projeto, crie um novo **Sample: Partículas** projeto e abrir a cena **ChildParticles**.
 
-![Particles sample project](media/select-particles-sample-project.png)
+<x1\/>Particles sample project<x2\/>
 
-## Inheriting position
+## Posição de entrada
 
-It helps if you think about inheritance in terms of parent and child particles.
+Ajuda se você pensar em herança em termos de partículas pai e criança.
 
-For example, in the **ChildParticles** scene in the **Sample: Particles** project, check out the **Fireworks** entity.
+Por exemplo, na cena **ChildParticles** na cena **Sample: Particles** projeto, confira a entidade **Fireworks**.
 
-It contains two emitters. Particles reference parent emitters by name, so in the first emitter you can see we've set the **Emitter Name** property. It's an optional name, but it's required if you want other emitters to be able to reference this emitter's particles.
+Contém dois emissores. Partículas referências pai emissoras por nome, então na primeira emissora você pode ver que estabelecemos a propriedade **Emitter Name**. É um nome opcional, mas é necessário se você quiser que outros emissores possam fazer referência às partículas deste emissor.
 
-In the second emitter we create a new initializer, **Position from parent**. This lets us reference the first emitter's particles and use their position to initialize the child particles. In the **Parent emitter** attribute we put the first emitter's name (*Parent*). This randomly assigns a parent particle for each child particle spawned and copy its position to the child particle.
+No segundo emissor criamos um novo inicializador, **Position de parent**. Isso nos permite referenciar as partículas do primeiro emissor e usar sua posição para inicializar as partículas da criança. No atributo **Parent emitter** colocamos o nome do primeiro emissor (*Parent*). Isso atribui aleatoriamente uma partícula pai para cada partícula da criança gerada e copiar sua posição para a partícula da criança.
 
-The **Parent Offset** seed matches fields when more than one attributes are inherited. For example, if you want to inherit both **Position** and **Color** from the same parent particle (chosen at random) you should make the *Parent Offset* seed the same. Alternatively, you can make the *Parent Offset* seed for both initializers different, in which case particles spawning from one parent's position can inherit their color from a different random particle. Usually, you want to keep them the same, but in some cases you might want to mix them.
+A semente **Parent Offset** corresponde a campos quando mais de um atributos são herdados. Por exemplo, se você quiser herdar tanto **Position** e **Color** da mesma partícula pai (escolhida ao acaso) você deve fazer a semente *Parent Offset* da mesma forma. Alternativamente, você pode fazer a semente *Parent Offset* para ambos os inicializadores diferentes, em que as partículas de um pai podem herdar sua cor de uma partícula aleatória diferente. Normalmente, você quer mantê-los o mesmo, mas em alguns casos você pode querer misturá-los.
 
-![media/particles-tutorials-inheritance-1.png](media/particles-tutorials-inheritance-1.png)
+<x1\/>media\/particles-tutorials-heritance-1.png<x2\/>
 
-As you can see, this kind of inheritance doesn't control spawn count, maximum particles, or any other parameters, and is very random. For most effects it's sufficient, but sometimes you want more direct control over the particles.
+Como você pode ver, este tipo de herança não controla a contagem desova, partículas máximas, ou quaisquer outros parâmetros, e é muito aleatório. Para a maioria dos efeitos é suficiente, mas às vezes você quer mais controle direto sobre as partículas.
 
-## Controlled inheritance
+## Herança controlada
 
-On occasion you will want to spawn a certain number of particles from a specific parent and have those particles only inherit attributes from the parent particle that spawned them.
+Na ocasião você vai querer gerar um certo número de partículas de um pai específico e ter essas partículas apenas herdam atributos da partícula pai que as gerou.
 
-To do this, choose a spawner for the child emitter from type **From parent**. Fill in the parent emitter's name in the **Parent emitter** field.
+Para fazer isso, escolha um spawner para a criança emitter do tipo **Do pai**. Preencha o nome do emissor pai no campo **Parent emitter**.
 
-The **Spawn Control Group** determines how the particles save their control information. You need to assign the same control group on all initializers later in order to retrieve the spawning information.
+O **Spawn Control Group** determina como as partículas salvam suas informações de controle. Você precisa atribuir o mesmo grupo de controle em todos os inicializadores mais tarde, a fim de recuperar as informações de desova.
 
-There can be up to 4 control groups. If you spawn particles based on different conditions, or spawn more than two different child particles from the same parent, assign them different control groups so they don't get mixed up.
+Pode haver até 4 grupos de controle. Se você gerou partículas com base em condições diferentes, ou gerou mais de duas partículas de crianças diferentes do mesmo pai, atribuindo-lhes diferentes grupos de controle para que eles não se misturem.
 
-The **Particle Spawn Trigger** is the triggering condition on the parent side, which determines if particles should be spawned. If you leave it as **None**, no particles are spawned, so set it to **On Hit** or **Lifetime**.
+O **Particle Spawn Trigger** é a condição de gatilho no lado pai, que determina se as partículas devem ser geradas. Se você deixá-lo como **None**, nenhuma partícula é gerada, então defina-a para **On Hit** ou **Lifetime**.
 
-**On hit** works for parent particles with a [collider](../../physics/colliders.md) assigned, and triggers every time they hit the surface.
+**On hit** funciona para partículas-mãe com um [collider](../../physics/colliders.md) atribuído, e dispara cada vez que atingem a superfície.
 
-**Lifetime** is based on the parent particle's relative lifetime, and triggers every frame the lifetime is within the limits. There are two sliders to control from which point to which point particles should be spawned. Alternatively, you can reverse them to reverse the spawning condition. For example, a particle with lifetime condition (0.9 - 1.0) only spawns child particles in the last 10% of its lifetime.
+** O tempo de vida** é baseado na vida relativa da partícula-mãe, e desencadeia cada quadro que a vida está dentro dos limites. Há dois controles deslizantes para controlar de que ponto para que ponto as partículas devem ser desova. Alternativamente, você pode revertê-los para reverter a condição de desova. Por exemplo, uma partícula com condição de vida (0,9 - 1.0) apenas gera partículas de crianças nos últimos 10% de sua vida.
 
-Finally, the **Particles/trigger** determines how many particles are spawned each time the condition is met.
+Finalmente, o **Particles\/trigger** determina quantas partículas são geradas cada vez que a condição é satisfeita.
 
-For child emitters, it's good practice to control the maximum number of particles the emitter can have, especially for non-deterministic cases, such as the collision hit.
+Para emissoras de crianças, é uma boa prática controlar o número máximo de partículas que a emissora pode ter, especialmente para casos não determinísticos, como o golpe de colisão.
 
-### Determinism
+### Determinação
 
-On the initializers, choose a **Spawn Control Group** corresponding to the spawner's control group. This forces the initializers to only work for particles spawned with the triggering condition, skipping the rest (if more than one spawner is assigned).
+Nos inicializadores, escolha um **Spawn Control Group** correspondente ao grupo de controle do proprietário. Isso força os inicializadores a apenas trabalhar para partículas geradas com a condição de detonação, pulando o resto (se mais de um spawner é atribuído).
 
-## Ribbons and trails
+## Fitas e trilhas
 
-[Ribbon and trail renderers](../ribbons-and-trails.md) are a little more difficult to set up in the beginning, as they are dependent on spawn order. In case of parents, they also become dependent on the parent's spawn order.
+[ Os renderizadores de rasto e ribbon ](../ribbons-and-trails.md) são um pouco mais difíceis de configurar no início, pois são dependentes da ordem desova. Em caso de pais, eles também se tornam dependentes da ordem do pai.
 
-1. Add a **Spawn Order** initializer to the parent. It will be used in the children particles.
+1. Adicione um inicializador **Spawn Order** ao pai. Ele será usado nas partículas de crianças.
 
-2. On the child emitter, remove all spawners and add only one, **From parent**. You want to control the spawning of the children particles so all particles can be properly grouped in a ribbon behind the parent particle. If you add another spawner that adds random behavior to the system, the ribbons will connect in the wrong way. Set the triggering condition to **Lifetime**.
+2. Na criança emitter, remover todos os spawners e adicionar apenas um, ** Do pai**. Você quer controlar o desova das partículas de crianças para que todas as partículas possam ser adequadamente agrupadas em uma fita atrás da partícula pai. Se você adicionar outro spawner que adiciona comportamento aleatório ao sistema, as fitas se conectarão da maneira errada. Defina a condição de gatilho para **Lifetime**.
 
-3. On the **child emitter** side again, add an **Order from parent** initializer. This assigns a spawning order to the particles, but also groups them by parent. If you set the **Sort** to use this order and assign a ribbon shape builder, you'll see how each trail is properly grouped behind the parent particle that spawned it.
+3. No lado **child emitter** novamente, adicione um **Order do inicializador parent**. Isso atribui uma ordem de desova às partículas, mas também as agrupa pelos pais. Se você definir o **Sort** para usar esta ordem e atribuir um construtor de forma de fita, você verá como cada trilha é adequadamente agrupada por trás da partícula pai que a gerou.
 
-## Circular behavior
+## Comportamento circular
 
-Particle emitters can inherit attributes circularly from each other, or even inherit attributes from particles in the same emitter. This can produce random or "swingy" effects, but can be interesting.
+Os emissores de partículas podem herdar atributos circularmente um do outro, ou até herdar atributos de partículas no mesmo emissor. Isso pode produzir efeitos aleatórios ou "swingy", mas pode ser interessante.
 
-In the **Colliding Particles** particle entity (in the **MainScene** of the **Sample: Particles** project), you can see that particles are spawned on hit, but the parent emitter is the same. This means that each time a particle hits the surface, it produces more of the same kind. There are two important elements which allow this to happen.
+Na entidade de partícula **Colliding Particles** (no **MainScene** do **Sample: Partículas** projeto), você pode ver que as partículas são geradas no hit, mas o emissor pai é o mesmo. Isso significa que cada vez que uma partícula atinge a superfície, ela produz mais do mesmo tipo. Há dois elementos importantes que permitem que isso aconteça.
 
-First, we have two spawners. One spawns a small number of particles per second, which give us the initial elements to populate the system. The other spawner spawns more particles on hit and uses a control group.
+Primeiro, temos dois filhos. Um gera um pequeno número de partículas por segundo, o que nos dá os elementos iniciais para preencher o sistema. O outro spawner gera mais partículas no hit e usa um grupo de controle.
 
-Second, we have two **Position** initializers. The first assigns a position where we want the particles to appear. It works over all particles (even those spawned from parents), so if you leave it like this, it will fire more particles from the initial position every time they hit the surface.
+Segundo, temos dois inicializadores **Position**. O primeiro atribui uma posição onde queremos que as partículas apareçam. Ele funciona sobre todas as partículas (mesmo aqueles desova dos pais), então se você deixá-lo assim, ele vai disparar mais partículas da posição inicial cada vez que eles atingem a superfície.
 
-The second initializer is **Position from parent** and initializes the particle positions using the same control group as the **On hit** spawner. The **Position from parent** overwrites the positions for the particles with control group, leaving the particles spawned from the **Per second** spawner untouched. This creates a small number of particles constantly coming from a single entry point and multiplying like an avalanche every time they hit the surface.
+O segundo inicializador é **Posição de pai** e inicializa as posições de partícula usando o mesmo grupo de controle que o **On hit** spawner. O **Position de parent** substitui as posições para as partículas com grupo de controle, deixando as partículas geradas a partir do **Per segundo** spawner intocado. Isso cria um pequeno número de partículas constantemente vindo de um único ponto de entrada e multiplicando-se como uma avalanche cada vez que atingem a superfície.
 
-## See also
+## Ver também
 
-* [Tutorial: Create a trail](create-a-trail.md)
-* [Tutorial: Custom particles](custom-particles.md)
-* [Tutorial: Lasers and lightning](lasers-and-lightning.md)
-* [Particles](../index.md)
-* [Create particles](../create-particles.md)
+* [Tutorial: Criar uma trilha](create-a-trail.md)
+* [Tutorial: Partículas personalizadas](custom-particles.md)
+* [Tutorial: Lasers e raios](lasers-and-lightning.md)
+* [Partes](../index.md)
+* [Criar partículas](../create-particles.md)

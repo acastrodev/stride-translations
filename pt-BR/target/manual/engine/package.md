@@ -1,15 +1,15 @@
-# Package
+# Pacote
 
-[!INCLUDE [stride-studio-note](../../includes/under-construction-note.md)]
+[! INCLUÍDO [stride-studio-note](../../includes/under-construction-note.md)]
 
-Stride uses a package system, wherein each game is contained in a package; a game can also use content from other packages. Thus, sharing resources across multiple games becomes possible.
+Stride usa um sistema de pacotes, em que cada jogo está contido em um pacote; um jogo também pode usar conteúdo de outros pacotes. Assim, compartilhar recursos em vários jogos torna-se possível.
 
-A package is a container for:
+Um pacote é um recipiente para:
 
-* Game assets
-* Code libraries
-* Dependencies
+* Activos de jogo
+* Bibliotecas de código
+* Dependências
 
-A dependency is a reference from one package to another package, which allows another package to use the contents from this package. When a package is a game, it also contains code executables (one per platform) along with game assets, code libraries, and dependencies.
+Uma dependência é uma referência de um pacote para outro pacote, o que permite que outro pacote use o conteúdo deste pacote. Quando um pacote é um jogo, ele também contém executáveis de código (uma por plataforma) juntamente com ativos de jogo, bibliotecas de código e dependências.
 
-Packages are saved on your hard-disk with the ```.sdpkg``` extension.
+Os pacotes são salvos em seu disco rígido com a extensão ```.sdpkg```.

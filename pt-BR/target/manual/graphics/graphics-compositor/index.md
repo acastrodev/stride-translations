@@ -1,112 +1,112 @@
-# Graphics compositor
+# Compositor gráfico
 
-<span class="badge text-bg-primary">Advanced</span>
-<span class="badge text-bg-success">Programmer</span>
+<x1\/> Avançado <x2\/>
+<x3\/> Programador <x4\/>
 
-> [!Note]
-> This page requires a basic understanding of graphics pipelines.
+> <x1\/>!Note<x2\/>
+> Esta página requer uma compreensão básica dos pipelines gráficos.
 
-The **graphics compositor** organizes how [scenes](../../game-studio/scenes.md) are rendered. You can use it to customize almost every part of the rendering pipeline. For example, you can:
+O compositor **graphics** organiza como [scenes](../../game-studio/scenes.md) são renderizados. Você pode usá-lo para personalizar quase todas as partes do pipeline de renderização. Por exemplo, você pode:
 
-- use one or multiple [cameras](../cameras/index.md)
-- filter entities
-- render to one or more [render textures](render-textures.md), with different viewports
-- set HDR or LDR rendering
-- apply [post effects](../post-effects/index.md) to a render target, selected before or after rendering a camera
-- clear a render target or clear only the depth buffer (eg to always render on top of a render target in a FPS game, or render the UI)
-- modify the compositor from scripts (or any animation system), for example to modify post effects
+- use um ou vários [cameras](../cameras/index.md)
+- entidades de filtro
+- renderizar para uma ou mais texturas [render](render-textures.md), com diferentes viewports
+- definição de renderização HDR ou LDR
+- aplicar efeitos [post](../post-effects/index.md) a um alvo de renderização, selecionado antes ou depois de renderizar uma câmera
+- limpar um alvo de renderização ou limpar apenas o buffer de profundidade (por exemplo, para sempre renderizar em cima de um alvo de renderização em um jogo FPS, ou renderizar a UI)
+- modificar o compositor de scripts (ou qualquer sistema de animação), por exemplo, modificar efeitos postais
 
-## Create a graphics compositor
+## Criar um compositor gráfico
 
-Stride includes a graphics compositor when you create a project.
+Stride inclui um compositor gráfico quando você cria um projeto.
 
-If you need to create another graphics compositor, in the **Asset View**, click **Add asset** and select **Misc > Graphics compositor**.
+Se você precisar criar outro compositor gráfico, no **Asset View**, clique em **Adicionar asset** e selecione **Misc > Graphics compositor**.
 
-![Add graphics compositor](media/add-graphics-compositor.png)
+<x1\/> Adicionar compositor gráfico<x2\/>
 
-You can choose one of two presets:
+Você pode escolher uma das duas predefinições:
 
-* Level 10 (HDR with [post effects](../post-effects/index.md))
-* Level 9 (LDR with no post effects)
+* Nível 10 (HDR com efeitos [post](../post-effects/index.md))
+* Nível 9 (LDR sem efeitos pós)
 
-## Set the graphics compositor
+## Defina o compositor gráfico
 
-You can have multiple graphics compositors in your project, but you can only use one compositor at a time. At runtime, Stride uses the graphics compositor you specify in [Game Settings](../../game-studio/game-settings.md).
+Você pode ter vários compositores gráficos em seu projeto, mas você só pode usar um compositor de cada vez. No tempo de execução, o Stride usa o compositor de gráficos que você especifica em [Configurações de Jogo](../../game-studio/game-settings.md).
 
-![Set default scene](../../game-studio/media/game-settings-graphics-compositor.png)
+<x1\/> Definir a cena padrão<x2\/>
 
-You can also change the graphics compositor at runtime in a script.
+Você também pode alterar o compositor gráfico em tempo de execução em um script.
 
-## Open the graphics compositor editor
+## Abra o editor de compositor gráfico
 
-You customize the graphics compositor in the **graphics compositor editor**.
+Você personaliza o compositor gráfico no editor de compositores **graphics**.
 
-> [!Note]
-> The graphics compositor editor is an experimental feature.
+> <x1\/>!Note<x2\/>
+> O editor de compositores gráficos é um recurso experimental.
 
-In the **Asset View** (in the bottom pane by default), double-click the **Graphics Compositor** asset.
+No **Asset View** (no painel inferior por padrão), clique duas vezes no **Graphics Compositor** ativo.
 
-![Graphics Compositor asset](media/graphics-compositor-asset.png)
+<x1\/>Gráficos Compositor asset<x2\/>
 
-The **graphics compositor editor** opens.
+O editor de compositores **graphics** abre.
 
-![Graphics Compositor editor](media/graphics-compositor-editor.png)
+<x1\/>Gráfico Compositor editor<x2\/>
 
-## Nodes
+## Nós
 
-The graphics compositor editor is divided into **nodes**. You can set the properties of each node in the **Property Grid** on the right.
+O editor de compositor gráfico é dividido em **nodes**. Você pode definir as propriedades de cada nó no **Property Grid** à direita.
 
-### Entry points
+### Pontos de entrada
 
-In the **Entry Points** node, you configure the pipeline for each entry point.
+No nó **Entry Points**, você configura o pipeline para cada ponto de entrada.
 
-![Entry points node](media/entry-points-node.png)
+<x1\/> Pontos de entrada node<x2\/>
 
-There are three entry points:
+Existem três pontos de entrada:
 
-* **Game**, to render your game
-* **Editor**, to render the Game Studio editor
-* **Single view** (referred to as **Utility** in the Property Grid), to render other things, such as [light probes](../lights-and-shadows/light-probes.md) and [cubemaps](../textures/skyboxes-and-backgrounds.md)
+* **Game**, para renderizar seu jogo
+* **Editor**, para renderizar o editor do Game Studio
+* **Single view** (referido como **Utilidade** na Grade de Propriedade), para renderizar outras coisas, como [light probes](../lights-and-shadows/light-probes.md) e [cubemaps](../textures/skyboxes-and-backgrounds.md)
 
-Each entry point can use a separate rendering pipeline. For example, the game and editor might share the same forward renderer and [post-processing effects](../post-effects/index.md) while your single view uses a separate forward renderer.
+Cada ponto de entrada pode usar um pipeline de renderização separado. Por exemplo, o jogo e o editor podem compartilhar o mesmo renderizador para a frente e [ efeitos de pós-processamento](../post-effects/index.md) enquanto sua única visão usa um renderizador para a frente separado.
 
-#### Connect an entry point to a renderer
+#### Conecte um ponto de entrada a um renderizador
 
-1. Select the **Entry point** node.
+1. Selecione o nó **Ponto de entrada**.
 
-2. In the **Property Grid**, next to the entry point you want to connect (**Editor**, **Game** or **Utility**), select the renderer you want to connect to.
+2. No **Property Grid**, ao lado do ponto de entrada que você deseja conectar (**Editor**, **Game** ou **Utilidade**), selecione o renderizador que você deseja conectar.
 
-   ![Select renderer](media/connect-entry-point.png)
+   <x1\/>Select renderer<x2\/>
 
-For information about the different renderers, see [Scene renderers](scene-renderers.md).
+Para obter informações sobre os diferentes renderizadores, consulte [Scene renderers](scene-renderers.md).
 
-### Forward renderer
+### Renderizador dianteiro
 
-In a typical setup, the **forward renderer** renders almost everything in your scene. It renders, in order:
+Em uma configuração típica, o **forward renderer** renderiza quase tudo em sua cena. Torna, em ordem:
 
-1. opaque objects
-2. transparent objects
-3. [post effects](../post-effects/index.md)
+1. objetos opacos
+2. objetos transparentes
+3. [efeitos secundários](../post-effects/index.md)
 
-The forward renderer is also where you set [virtual reality](../../virtual-reality/index.md) options. You configure the forward renderer properties in the **forward entry node**.
+O renderizador para a frente também é onde você define as opções [ realidade virtual](../../virtual-reality/index.md). Você configura as propriedades do renderizador para a frente no nó de entrada **forward**.
 
-### Debug renderer
+### Renderizador de depuração
 
-The **debug renderer** is used by scripts to print debug information. For more information, see [Debug renderers](debug-renderers.md).
+O renderizador **debug** é usado por scripts para imprimir informações de depuração. Para obter mais informações, consulte [Debug renderers](debug-renderers.md).
 
-### Post-processing effects
+### Efeitos pós-processamento
 
-The **post-processing effects** node comes after the forward renderer and controls the post effects in your game. For more information, see [post-processing effects](../post-effects/index.md).
+O nó ** efeitos de pós-processamento** vem após o renderizador para a frente e controla os efeitos de post em seu jogo. Para obter mais informações, consulte os efeitos de pós-processamento [post](../post-effects/index.md).
 
-## Create a node
+## Criar um nó
 
-To create a node, right-click the graphics compositor editor and select the type of node you want to create:
+Para criar um nó, clique com o botão direito do mouse no editor de compositores gráficos e selecione o tipo de nó que você deseja criar:
 
-![Create node](../../virtual-reality/media/create-node.png)
+<x1\/>Criar nó<x2\/>
 
-## See also
+## Ver também
 
-* [Camera slots](../cameras/camera-slots.md)
-* [Scene renderers](scene-renderers.md)
-   * [Custom scene renders](custom-scene-renderers.md)
-* [Debug renderers](debug-renderers.md)
+* [Slots de câmera](../cameras/camera-slots.md)
+* [Renderizadores de cenas](scene-renderers.md)
+   * [Renderizações de cena personalizadas](custom-scene-renderers.md)
+* [Renderizadores de depuração](debug-renderers.md)

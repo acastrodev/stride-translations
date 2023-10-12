@@ -1,24 +1,24 @@
-# Navigation
+# Navegação
 
-<span class="badge text-bg-primary">Beginner</span>
-<span class="badge text-bg-success">Level designer</span>
-<span class="badge text-bg-success">Programmer</span>
+<x1\/>Introdução<x2\/>
+<x3\/> Designer de nível <x4\/>
+<x5\/> Programador <x6\/>
 
-You can use the **navigation** system to control how characters and other objects navigate scenes.
+Você pode usar o sistema **navigation** para controlar como personagens e outros objetos navegam cenas.
 
-## Set up navigation
+## Configurar a navegação
 
-1. [Create a navigation group](navigation-groups.md)
+1. [Criar um grupo de navegação](navigation-groups.md)
 
-2. [Add a navigation mesh](navigation-meshes.md)
+2. [Adicionar uma malha de navegação](navigation-meshes.md)
 
-3. [Add a navigation bounding box](navigation-bounding-boxes.md)
+3. [Adicionar uma caixa de ligação de navegação](navigation-bounding-boxes.md)
 
-4. [Add a navigation component](navigation-components.md)
+4. [Adicionar um componente de navegação](navigation-components.md)
 
-## Sample project
+## Projeto de amostra
 
-For an example of how to implement navigation, including enabling and disabling [dynamic navigation](dynamic-navigation.md) at runtime, see the **top-down RPG** sample project included with Stride.
+Por exemplo, como implementar a navegação, incluindo habilitar e desabilitar [ navegação dinâmica](dynamic-navigation.md) no tempo de execução, veja o projeto de amostra **top-down RPG** incluído no Stride.
 
 <p>
 <video autoplay loop class="responsive-video" poster="media/NoOutlineAE.jpg">
@@ -26,6 +26,6 @@ For an example of how to implement navigation, including enabling and disabling 
 </video>
 </p>
 
-## See also
+## Ver também
 
-* [Dynamic navigation](dynamic-navigation.md)
+* [Navegação dinâmica](dynamic-navigation.md)

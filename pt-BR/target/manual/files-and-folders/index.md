@@ -1,10 +1,10 @@
-# Files and folders
+# Arquivos e pastas
 
-This section explains Stride's files and folders and the best way to organize them in development.
+Esta seção explica os arquivos e pastas da Stride e a melhor maneira de organizá-los no desenvolvimento.
 
-## In this section
+## Nesta secção
 
-* [Project structure](project-structure.md)
-* [Cached files](cached-files.md)
-* [Version control](version-control.md)
-* [Distribute a game](distribute-a-game.md)
+* [Estrutura do projecto](project-structure.md)
+* [Arquivos de Cached](cached-files.md)
+* [Controle de versão](version-control.md)
+* [Distribuir um jogo](distribute-a-game.md)

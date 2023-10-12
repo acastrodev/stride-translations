@@ -1,98 +1,98 @@
-# Draw vertices
+# Desenho vértices
 
-<span class="badge text-bg-primary">Advanced</span>
-<span class="badge text-bg-success">Programmer</span>
+<x1\/> Avançado <x2\/>
+<x3\/> Programador <x4\/>
 
-When loading a scene, Stride automatically handles the draw calls to display the scene throughout the entity system. This page introduces manual drawing.
+Ao carregar uma cena, o Stride lida automaticamente com as chamadas do sorteio para exibir a cena em todo o sistema de entidade. Esta página apresenta desenho manual.
 
-## Primitives
+## Primitivos
 
-Stride provides the following set of built-in primitives:
+Stride fornece o seguinte conjunto de primitivas embutidas:
 
-- Plane
-- Cube
-- Sphere
-- Geosphere
-- Cylinder
+- Avião
+- Cubo
+- Esfera
+- Geosfera
+- Cilindro
 - Torus
 - Teapot
 
-They aren't automatically created along with the @'Stride.Graphics.GraphicsDevice', so you have to instantiate them. You can do this through the @'Stride.Graphics.GeometricPrimitives.GeometricPrimitive' class.
+Eles não são criados automaticamente junto com o @'Stride.Graphics.GraphicsDevice', então você tem que instanciá-los. Você pode fazer isso através da classe @'Stride.Graphics.GeometricPrimitives.GeometricPrimitive'.
 
-**Code:** Creating and using a primitive
+** Código:** Criando e usando um primitivo
 
 ```cs
-// creation
-var myCube = GeometricPrimitive.Cube.New(GraphicsDevice);
-var myTorus = GeometricPrimitive.Torus.New(GraphicsDevice);
+\/\/ criação
+var myCube = GeometricPrimitive.Cube.New (GraphicsDevice);
+var myTorus = GeometricPrimitive.Torus.New (GraphicsDevice);
  
-// ...
+\/\/...
  
-// draw one on screen
-myCube.Draw(CommandList, EffectInstance);
+\/\/ desenhar um na tela
+myCube.Draw (CommandList, EffectInstance);
 ```
 
-They have no effect associated with them, so the user has to provide an @'Stride.Rendering.EffectInstance' when drawing. For information on loading effects, please see [Effects and shaders](../effects-and-shaders/index.md).
+Eles não têm nenhum efeito associado com eles, então o usuário tem que fornecer um @'Stride. Renderização. EfeitoInstância' ao desenhar. Para obter informações sobre efeitos de carregamento, consulte [Efeitos e shaders](../effects-and-shaders/index.md).
 
-## Custom drawing
+## Desenho personalizado
 
-Outside of built-in primitives, any geometry can be drawn by creating custom vertex buffers. To create a vertex buffer, first a @'Stride.Graphics.VertexDeclaration' has to be defined. A vertex declaration describes the elements of each vertex and their layout.
-For details, see the @'Stride.Graphics.VertexElement' reference page.
+Fora de primitivas embutidas, qualquer geometria pode ser desenhada criando buffers de vértice personalizados. Para criar um buffer de vértice, primeiro um @'Stride.Graphics.VertexDeclaration' tem de ser definido. Uma declaração de vértice descreve os elementos de cada vértice e seu layout.
+Para obter detalhes, consulte a página de referência @'Stride.Graphics.VertexElement'.
 
-Next, a vertex buffer can be created from an array of vertices. The vertex data type has to match the @'Stride.Graphics.VertexDeclaration'.
+Em seguida, um buffer de vértice pode ser criado a partir de uma variedade de vértices. O tipo de dados do vértice tem de corresponder ao @'Stride.Graphics.VertexDeclaration'.
 
-Given vertex buffer and declaration, a @'Stride.Graphics.VertexBufferBinding' can be created.
+Dado tampão de vértice e declaração, um @'Stride.Graphics.VertexBufferBinding' pode ser criado.
 
-**Code:** Creating a vertex buffer
+** Código:** Criando um amortecedor de vértice
 
 ```cs
-// Create a vertex layout with position and texture coordinate
-var layout = new VertexDeclaration(VertexElement.Position<Vector3>(), VertexElement.TextureCoordinate<Vector2>()); 
+\/\/ Criar um layout de vértice com coordenada de posição e textura
+var layout = novo VertexDeclaration (VertexElement.Position<Vector3>(), VertexElement.TextureCoordinate<Vector2>()); 
  
-// Create the vertex buffer from an array of vertices
-var vertices = new VertexPositionTexture[vertexCount];
-var vertexBuffer = Buffer.Vertex.New(GraphicsDevice, vertices);
+\/\/ Criar o tampão de vértice de uma variedade de vértices
+vértices var = novo VertexPositionTexture[vertexCount];
+var vertexBuffer = Buffer.Vertex.New (GraphicsDevice, vértices);
  
-// Create a vertex buffer binding
-var vertexBufferBinding = new VertexBufferBinding(vertexBuffer, layout, vertexCount);
+\/\/ Criar uma ligação de amortecedor de vértice
+var vertexBufferBinding = novo VertexBufferBinding (vertexBuffer, layout, vérticeCount);
 ```
 
-To draw the newly created vertex buffer, it has to be bound to the pipeline. The vertex layout and the @'Stride.Graphics.PrimitiveType' to draw have to be included in the [pipeline state](pipeline-state.md) object. The buffer itself can be set dynamically.
+Para desenhar o tampão de vértice recém-criado, tem de ser ligado ao pipeline. O layout do vértice e o @'Stride.Graphics.PrimitiveType' para desenhar têm de ser incluídos no objeto [pipeline state](pipeline-state.md). O próprio buffer pode ser definido dinamicamente.
 
-Afterwards, the vertices are ready to be rendered using @'Stride.Graphics.CommandList.Draw(System.Int32,System.Int32)'.
+Depois, os vértices estão prontos para serem renderizados usando @'Stride.Graphics.CommandList.Draw(System.Int32,System.Int32)'.
 
-**Code:** Binding and drawing vertex buffers
+** Código:** Encerramento e desenho de amortecedores de vértice
 
 ```cs
-// Set the pipeline state
-pipelineStateDescription.InputElements = vertexBufferBinding.Layout.CreateInputElements();
-pipelineStateDescription.PrimitiveType = PrimitiveType.TriangleStrip;
+\/\/ Definir o estado do pipeline
+pipelineStateDescription.InputElements = vérticeBufferBinding.Layout.CreateInputElements();
+pipeStateDescription.PrimitiveType = PrimitiveType.TriangleStrip;
  
-// Create and set a PipelineState object
-// ...
+\/\/ Criar e definir um objeto PipelineState
+\/\/...
 
-// Bind the vertex buffer to the pipeline
-commandList.SetVertexBuffers(0, vertexBuffer, 0, vertexBufferBinding.Stride);
+\/\/ Ligar o tampão de vértice para o pipeline
+commandList.SetVertexBuffers(0, vérticeBuffer, 0, vérticeBufferBinding.Stride);
  
-// Draw the vertices
-commandList.Draw(vertexCount);
+\/\/ Desenhe os vértices
+commandList.Draw (vertexCount);
 ```
 
-It is also possible to draw indexed geometry. To use an index buffer, first create it similarly to the vertex buffer and bind it to the pipeline.
-It can then be used for drawing using @'Stride.Graphics.CommandList.DrawIndexed(System.Int32,System.Int32,System.Int32)'.
+Também é possível desenhar geometria indexada. Para usar um buffer de índice, primeiro criá-lo de forma semelhante ao buffer de vértice e liga-lo ao pipeline.
+Ele pode então ser usado para desenhar usando @'Stride.Graphics.CommandList.DrawIndexed(System.Int32,System.Int32,System.Int32)'.
 
-**Code:** Drawing indexed vertices
+**Código:** Desenho de vértices indexados
 
 ```cs
-// Create the index buffer
+\/\/ Criar o buffer de índice
 var indices = new short[indexCount];
 var is32Bits = false;
-var indexBuffer = Buffer.Index.New(GraphicsDevice, indices);
+var indexBuffer = Buffer.Index.New (GraphicsDevice, índices);
  
-// set the VAO
+\/\/ definir o VAO
 commandList.SetIndexBuffer(indexBuffer, 0, is32Bits);
 
-// Draw indexed vertices
+\/\/ Desenho de vértices indexados
 commandList.DrawIndexed(indexBuffer.ElementCount);
 ```
 

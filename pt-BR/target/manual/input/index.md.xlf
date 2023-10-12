@@ -3,137 +3,137 @@
 <body>
 <trans-unit id="tu1" xml:space="preserve">
 <source xml:lang="en">Input</source>
-<target xml:lang="pt">Input</target>
+<target xml:lang="pt">Entrada</target>
 </trans-unit>
 <trans-unit id="tu2" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Beginner<x id="2"/>
 <x id="3"/>Programmer<x id="4"/></source>
-<target xml:lang="pt"><x id="1"/>Beginner<x id="2"/>
-<x id="3"/>Programmer<x id="4"/></target>
+<target xml:lang="pt">&lt;x1\/&gt;Introdução&lt;x2\/&gt;
+&lt;x3\/&gt; Programador &lt;x4\/&gt;</target>
 </trans-unit>
 <trans-unit id="tu3" xml:space="preserve">
 <source xml:lang="en">Users interact with games and applications using <g id="1">input devices</g> such as gamepads, mice, and keyboards. Every interactive application must support at least one input device.</source>
-<target xml:lang="pt">Users interact with games and applications using <g id="1">input devices</g> such as gamepads, mice, and keyboards. Every interactive application must support at least one input device.</target>
+<target xml:lang="pt">Os usuários interagem com jogos e aplicativos usando dispositivos de entrada <g id="1"/> como gamepads, mice e teclados. Cada aplicativo interativo deve suportar pelo menos um dispositivo de entrada.</target>
 </trans-unit>
 <trans-unit id="tu4" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Input devices<x id="2"/></source>
-<target xml:lang="pt"><x id="1"/>Input devices<x id="2"/></target>
+<target xml:lang="pt">&lt;x1\/&gt; Dispositivos de entrada&lt;x2\/&gt;</target>
 </trans-unit>
 <trans-unit id="tu5" xml:space="preserve">
 <source xml:lang="en">Stride handles input entirely via scripts. There are low-level and high-level APIs to handle different input types:</source>
-<target xml:lang="pt">Stride handles input entirely via scripts. There are low-level and high-level APIs to handle different input types:</target>
+<target xml:lang="pt">Stride lida com a entrada inteiramente através de scripts. Existem APIs de baixo nível e alto nível para lidar com diferentes tipos de entrada:</target>
 </trans-unit>
 <trans-unit id="tu6" xml:space="preserve">
 <source xml:lang="en"><g id="1">Low-level</g> APIs are close to hardware, so they have lower latency. These allow fast processing of the input from <g id="2">pointers</g>, <g id="3">keyboards</g>, <g id="4">mouse</g>, <g id="5">gamepads</g>, and some <g id="6">sensors</g>.</source>
-<target xml:lang="pt"><g id="1">Low-level</g> APIs are close to hardware, so they have lower latency. These allow fast processing of the input from <g id="2">pointers</g>, <g id="3">keyboards</g>, <g id="4">mouse</g>, <g id="5">gamepads</g>, and some <g id="6">sensors</g>.</target>
+<target xml:lang="pt"><g id="1"> Nível inferior </g> APIs estão perto de hardware, então eles têm menor latência. Estes permitem o processamento rápido da entrada de <g id="2">pointers</g>, <g id="3">keyboards</g>, <g id="4">mouse</g>, <g id="5">gamepads</g>, e alguns <g id="6">sensors</g>.</target>
 </trans-unit>
 <trans-unit id="tu7" xml:space="preserve">
 <source xml:lang="en"><g id="1">High-level</g> APIs interpret input for you, so they have higher latency. These APIs are used for <g id="2">gestures</g> and some <g id="3">sensors</g>.</source>
-<target xml:lang="pt"><g id="1">High-level</g> APIs interpret input for you, so they have higher latency. These APIs are used for <g id="2">gestures</g> and some <g id="3">sensors</g>.</target>
+<target xml:lang="pt"><g id="1"> Alto nível</g> APIs interpretam entrada para você, então eles têm maior latência. Essas APIs são usadas para <g id="2">gestures</g> e alguns <g id="3">sensors</g>.</target>
 </trans-unit>
 <trans-unit id="tu8" xml:space="preserve">
 <source xml:lang="en">There are also <g id="1">special APIs</g> for some <g id="2">sensors</g> and <g id="3">virtual buttons</g>.</source>
-<target xml:lang="pt">There are also <g id="1">special APIs</g> for some <g id="2">sensors</g> and <g id="3">virtual buttons</g>.</target>
+<target xml:lang="pt">Há também <g id="1"> APIs especiais</g> para alguns <g id="2">sensors</g> e <g id="3">virtual botões</g>.</target>
 </trans-unit>
 <trans-unit id="tu9" xml:space="preserve">
 <source xml:lang="en">Handle input</source>
-<target xml:lang="pt">Handle input</target>
+<target xml:lang="pt">Punho de entrada</target>
 </trans-unit>
 <trans-unit id="tu10" xml:space="preserve">
 <source xml:lang="en">Handle input with the <g id="1">InputManager</g> class. You can access this class from a script with its properties and methods.</source>
-<target xml:lang="pt">Handle input with the <g id="1">InputManager</g> class. You can access this class from a script with its properties and methods.</target>
+<target xml:lang="pt">Lidar com a entrada com a classe <g id="1">InputManager</g>. Você pode acessar esta classe de um script com suas propriedades e métodos.</target>
 </trans-unit>
 <trans-unit id="tu11" xml:space="preserve">
 <source xml:lang="en">To check whether a particular input device is available, use the corresponding @'Stride.Input.InputManager' property. For example, to check if a mouse is connected, use <g id="1">Input.HasMouse</g>.</source>
-<target xml:lang="pt">To check whether a particular input device is available, use the corresponding @'Stride.Input.InputManager' property. For example, to check if a mouse is connected, use <g id="1">Input.HasMouse</g>.</target>
+<target xml:lang="pt">Para verificar se um dispositivo de entrada em particular está disponível, use o @'Stride correspondente. Input.InputManager' propriedade. Por exemplo, para verificar se um mouse está conectado, use <g id="1">Input.HasMouse</g>.</target>
 </trans-unit>
 <trans-unit id="tu12" xml:space="preserve">
 <source xml:lang="en">After you check the device availability, there are four ways to handle input in Stride.</source>
-<target xml:lang="pt">After you check the device availability, there are four ways to handle input in Stride.</target>
+<target xml:lang="pt">Depois de verificar a disponibilidade do dispositivo, existem quatro maneiras de lidar com a entrada em Stride.</target>
 </trans-unit>
 <trans-unit id="tu13" xml:space="preserve">
 <source xml:lang="en">Query state</source>
-<target xml:lang="pt">Query state</target>
+<target xml:lang="pt">Estado de consulta</target>
 </trans-unit>
 <trans-unit id="tu14" xml:space="preserve">
 <source xml:lang="en">You can query the state of digital keys and buttons (ie <g id="1">Up</g> or <g id="2">Down</g>) and the numeric values of analog buttons and sensors. For example, @'Stride.Input.InputManager.DownKeys' gets a list of the keys that were in the state <g id="3">Down</g> in the last update.</source>
-<target xml:lang="pt">You can query the state of digital keys and buttons (ie <g id="1">Up</g> or <g id="2">Down</g>) and the numeric values of analog buttons and sensors. For example, @'Stride.Input.InputManager.DownKeys' gets a list of the keys that were in the state <g id="3">Down</g> in the last update.</target>
+<target xml:lang="pt">Você pode consultar o estado de chaves e botões digitais (ou seja, <g id="1">Up</g> ou <g id="2">Down</g>) e os valores numéricos de botões e sensores analógicos. Por exemplo, @'Stride.Input.InputManager. DownKeys' recebe uma lista das chaves que estavam no estado <g id="3">Down</g> na última atualização.</target>
 </trans-unit>
 <trans-unit id="tu15" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Query key and button states<x id="2"/></source>
-<target xml:lang="pt"><x id="1"/>Query key and button states<x id="2"/></target>
+<target xml:lang="pt">&lt;x1\/&gt;Query chave e botão estados&lt;x2\/&gt;</target>
 </trans-unit>
 <trans-unit id="tu16" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Analog stick positions<x id="2"/></source>
-<target xml:lang="pt"><x id="1"/>Analog stick positions<x id="2"/></target>
+<target xml:lang="pt">&lt;x1\/&gt;Analog stick positions&lt;x2\/&gt;</target>
 </trans-unit>
 <trans-unit id="tu17" xml:space="preserve">
 <source xml:lang="en">Sometimes a user performs more than one action between updates. If there's no state change between the updates (the end result is the same), Stride registers no action:</source>
-<target xml:lang="pt">Sometimes a user performs more than one action between updates. If there's no state change between the updates (the end result is the same), Stride registers no action:</target>
+<target xml:lang="pt">Às vezes, um usuário executa mais de uma ação entre atualizações. Se não houver mudança de estado entre as atualizações (o resultado final é o mesmo), Stride registra nenhuma ação:</target>
 </trans-unit>
 <trans-unit id="tu18" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Several actions between updates<x id="2"/></source>
-<target xml:lang="pt"><x id="1"/>Several actions between updates<x id="2"/></target>
+<target xml:lang="pt">&lt;x1\/&gt; Várias ações entre atualizações&lt;x2\/&gt;</target>
 </trans-unit>
 <trans-unit id="tu19" xml:space="preserve">
 <source xml:lang="en">Query a state change</source>
-<target xml:lang="pt">Query a state change</target>
+<target xml:lang="pt">Consultar uma mudança de estado</target>
 </trans-unit>
 <trans-unit id="tu20" xml:space="preserve">
 <source xml:lang="en">You can query the change of state of buttons and keys since the previous update.
 In this case, you don't get the list of all buttons and keys, but have to query each button and key separately.</source>
-<target xml:lang="pt">You can query the change of state of buttons and keys since the previous update.
-In this case, you don't get the list of all buttons and keys, but have to query each button and key separately.</target>
+<target xml:lang="pt">Você pode consultar a mudança de estado de botões e chaves desde a atualização anterior.
+Neste caso, você não tem a lista de todos os botões e chaves, mas tem que consultar cada botão e chave separadamente.</target>
 </trans-unit>
 <trans-unit id="tu21" xml:space="preserve">
 <source xml:lang="en">For digital buttons and keys, query if the button or key was <g id="1">Pressed</g>, <g id="2">Down</g> or <g id="3">Released</g> in the last update.</source>
-<target xml:lang="pt">For digital buttons and keys, query if the button or key was <g id="1">Pressed</g>, <g id="2">Down</g> or <g id="3">Released</g> in the last update.</target>
+<target xml:lang="pt">Para botões e chaves digitais, consulta se o botão ou chave foi <g id="1">Pressed</g>, <g id="2">Down</g> ou <g id="3">Released</g> na última atualização.</target>
 </trans-unit>
 <trans-unit id="tu22" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Query key state change<x id="2"/></source>
-<target xml:lang="pt"><x id="1"/>Query key state change<x id="2"/></target>
+<target xml:lang="pt">&lt;x1\/&gt; Alteração do estado da chave de consulta &lt;x2\/&gt;</target>
 </trans-unit>
 <trans-unit id="tu23" xml:space="preserve">
 <source xml:lang="en">For mouse positions and mouse wheel scrolling, query <g id="1">Delta Values</g> since the previous update:</source>
-<target xml:lang="pt">For mouse positions and mouse wheel scrolling, query <g id="1">Delta Values</g> since the previous update:</target>
+<target xml:lang="pt">Para posições do mouse e rolagem da roda do mouse, consulta <g id="1">Delta Valores</g> desde a atualização anterior:</target>
 </trans-unit>
 <trans-unit id="tu24" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Mouse wheel delta<x id="2"/></source>
-<target xml:lang="pt"><x id="1"/>Mouse wheel delta<x id="2"/></target>
+<target xml:lang="pt">&lt;x1\/&gt;Mouse wheel delta&lt;x2\/&gt;</target>
 </trans-unit>
 <trans-unit id="tu25" xml:space="preserve">
 <source xml:lang="en">Sometimes a user performs several actions between two updates. If there's no state change between two updates (the end result is the same), Stride registers no action.</source>
-<target xml:lang="pt">Sometimes a user performs several actions between two updates. If there's no state change between two updates (the end result is the same), Stride registers no action.</target>
+<target xml:lang="pt">Às vezes, um usuário executa várias ações entre duas atualizações. Se não houver mudança de estado entre duas atualizações (o resultado final é o mesmo), Stride registra nenhuma ação.</target>
 </trans-unit>
 <trans-unit id="tu26" xml:space="preserve">
 <source xml:lang="en">Query the list of events</source>
-<target xml:lang="pt">Query the list of events</target>
+<target xml:lang="pt">Consultar a lista de eventos</target>
 </trans-unit>
 <trans-unit id="tu27" xml:space="preserve">
 <source xml:lang="en">For pointers, gestures, and keyboards, you can query all the events that happened in the last update.</source>
-<target xml:lang="pt">For pointers, gestures, and keyboards, you can query all the events that happened in the last update.</target>
+<target xml:lang="pt">Para ponteiros, gestos e teclados, você pode consultar todos os eventos que aconteceram na última atualização.</target>
 </trans-unit>
 <trans-unit id="tu28" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Several actions between updates<x id="2"/></source>
-<target xml:lang="pt"><x id="1"/>Several actions between updates<x id="2"/></target>
+<target xml:lang="pt">&lt;x1\/&gt; Várias ações entre atualizações&lt;x2\/&gt;</target>
 </trans-unit>
 <trans-unit id="tu29" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>!Note<x id="2"/>
 Even if a user performs several actions between two updates, Stride registers all these events.</source>
-<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
-Even if a user performs several actions between two updates, Stride registers all these events.</target>
+<target xml:lang="pt">&lt;x1\/&gt;!Note&lt;x2\/&gt;
+Mesmo que um usuário realize várias ações entre duas atualizações, a Stride registra todos esses eventos.</target>
 </trans-unit>
 <trans-unit id="tu30" xml:space="preserve">
 <source xml:lang="en">Use virtual buttons</source>
-<target xml:lang="pt">Use virtual buttons</target>
+<target xml:lang="pt">Use botões virtuais</target>
 </trans-unit>
 <trans-unit id="tu31" xml:space="preserve">
 <source xml:lang="en">You can use <g id="1">virtual buttons</g> to associate input to actions rather than physical keys, then let the user define their own keys. For more information, see <g id="2">virtual buttons</g>.</source>
-<target xml:lang="pt">You can use <g id="1">virtual buttons</g> to associate input to actions rather than physical keys, then let the user define their own keys. For more information, see <g id="2">virtual buttons</g>.</target>
+<target xml:lang="pt">Você pode usar botões <g id="1">virtual</g> para associar a entrada a ações em vez de chaves físicas, então deixe o usuário definir suas próprias chaves. Para obter mais informações, consulte os botões <g id="2">virtual</g>.</target>
 </trans-unit>
 <trans-unit id="tu32" xml:space="preserve">
 <source xml:lang="en">In this section</source>
-<target xml:lang="pt">In this section</target>
+<target xml:lang="pt">Nesta secção</target>
 </trans-unit>
 <trans-unit id="tu33" xml:space="preserve">
 <source xml:lang="en"><g id="1">Gamepads</g></source>
@@ -141,11 +141,11 @@ Even if a user performs several actions between two updates, Stride registers al
 </trans-unit>
 <trans-unit id="tu34" xml:space="preserve">
 <source xml:lang="en"><g id="1">Gestures</g></source>
-<target xml:lang="pt"><g id="1">Gestures</g></target>
+<target xml:lang="pt"><g id="1">Gestos</g></target>
 </trans-unit>
 <trans-unit id="tu35" xml:space="preserve">
 <source xml:lang="en"><g id="1">Keyboards</g></source>
-<target xml:lang="pt"><g id="1">Keyboards</g></target>
+<target xml:lang="pt"><g id="1">Teclados</g></target>
 </trans-unit>
 <trans-unit id="tu36" xml:space="preserve">
 <source xml:lang="en"><g id="1">Mouse</g></source>
@@ -153,15 +153,15 @@ Even if a user performs several actions between two updates, Stride registers al
 </trans-unit>
 <trans-unit id="tu37" xml:space="preserve">
 <source xml:lang="en"><g id="1">Pointers</g></source>
-<target xml:lang="pt"><g id="1">Pointers</g></target>
+<target xml:lang="pt"><g id="1">Pontos</g></target>
 </trans-unit>
 <trans-unit id="tu38" xml:space="preserve">
 <source xml:lang="en"><g id="1">Sensors</g></source>
-<target xml:lang="pt"><g id="1">Sensors</g></target>
+<target xml:lang="pt"><g id="1">Sensores</g></target>
 </trans-unit>
 <trans-unit id="tu39" xml:space="preserve">
 <source xml:lang="en"><g id="1">Virtual buttons</g></source>
-<target xml:lang="pt"><g id="1">Virtual buttons</g></target>
+<target xml:lang="pt"><g id="1">Botões virtuais</g></target>
 </trans-unit>
 </body>
 </file>

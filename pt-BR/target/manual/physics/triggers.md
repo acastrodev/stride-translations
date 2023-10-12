@@ -1,72 +1,72 @@
 # Triggers
 
-<span class="badge text-bg-primary">Beginner</span>
-<span class="badge text-bg-success">Designer</span>
+<x1\/>Introdução<x2\/>
+<x3\/>Designer<x4\/>
 
-If you set a collider to be a **trigger**, other colliders no longer bump into it. Instead, they pass through.
+Se você definir um colisor para ser um **trigger**, outros colisões não se encaixam mais nele. Em vez disso, eles passam.
 
-The trigger detects when colliders enter it, which you can use to script events. For example, you can detect when a player character enters a room, and use this in your script to trigger an event. For more information, see [Events](../scripts/events.md).
+O gatilho detecta quando os colisões entram nele, que você pode usar para eventos de script. Por exemplo, você pode detectar quando um personagem do jogador entra em uma sala e usá-la em seu script para ativar um evento. Para mais informações, consulte [Events](../scripts/events.md).
 
-> [!Note]
-> [Character colliders](characters.md) can't be used as triggers.
+> <x1\/>!Note<x2\/>
+> [ Os colistores de caracteres ](characters.md) não podem ser usados como gatilhos.
 
-## Create a trigger
+## Criar um gatilho
 
-1. Create a [collider](colliders.md).
+1. Criar um [collider](colliders.md).
 
-2. In the **Property Grid**, under the collider component properties, select **Is Trigger**.
+2. No **Property Grid**, sob as propriedades do componente do colisor, selecione **Is Trigger**.
 
-![Select 'Is trigger'](media/triggers-select-is-trigger-checkbox.png)
+<x1\/>Selecionar 'é gatilho'<x2\/>
 
-## Detect trigger collisions
+## Detectar colisões de gatilho
 
-You can see when something enters the trigger using the following code:
+Você pode ver quando algo entra no gatilho usando o seguinte código:
 
 ```cs
-// Wait for an entity to collide with the trigger
-var firstCollision = await trigger.NewCollision();
+\/\/ Aguarde que uma entidade colide com o gatilho
+var firstCollision = await trigger. NewCollision();
 
-var otherCollider = trigger == firstCollision.ColliderA
-    ? firstCollision.ColliderB
-    : firstCollision.ColliderA;
+var otherCollider = trigger == firstCollision. ColliderA
+    ? Primeira Colisão. ColliderB
+    : primeira Colisão. ColliderA;
 ```
 
-Alternatively, directly access the `TrackingHashSet`:
+Alternativamente, acesse diretamente o `TrackingHashSet`:
 
 ```cs
 var trigger = Entity.Get<PhysicsComponent>();
-foreach (var collision in trigger.Collisions)
-{
-    //do something with the collision
+foreach (var colisão no gatilho. Colisões)
+(
+    \/\/fazer algo com a colisão
 }
 ```
 
-Or use the `TrackingHashSet` events:
+Ou use os eventos `TrackingHashSet`:
 
 ```cs
 var trigger = Entity.Get<PhysicsComponent>();
-trigger.Collisions.CollectionChanged += (sender, args) =>
-{
-    if (args.Action == NotifyCollectionChangedAction.Add)
-    {
-        //new collision
-        var collision = (Collision) args.Item;
-        //do something
+gatilho. Colisões. Changed += (sender, args) =>
+(
+    se (args.Action == Notificar a Colecção Pendurada. Adicionar)
+    (
+        \/\/nova colisão
+        var colisão = (Collision) args. Item;
+        \/\/fazer algo
     }
-    else if (args.Action == NotifyCollectionChangedAction.Remove)
-    {
-        //old collision
-        var collision = (Collision)args.Item;
-        //do something
+    se (args.Action == NotifyCollectionChangedAction. Remover)
+    (
+        \/\/ colisão antiga
+        var colisão = (Collision)args. Item;
+        \/\/fazer algo
     }
 };
 ```
 
-For an example of how to use triggers, see the [Script a trigger](script-a-trigger.md) tutorial.
+Para um exemplo de como usar gatilhos, veja o tutorial [Script a trigger](script-a-trigger.md).
 
-## See also
+## Ver também
 
-* [Tutorial: Script a trigger](script-a-trigger.md)
-* [Colliders](colliders.md)
-* [Collider shapes](collider-shapes.md)
-* [Events](../scripts/events.md)
+* [Tutorial: Script um gatilho](script-a-trigger.md)
+* [Coleiras](colliders.md)
+* [Formas de colarinho](collider-shapes.md)
+* [Eventos](../scripts/events.md)

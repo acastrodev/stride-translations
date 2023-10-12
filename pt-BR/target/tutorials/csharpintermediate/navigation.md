@@ -1,14 +1,14 @@
-# Navigation
+# Navegação
 
-This C# Intermediate tutorial covers the basics of the navigation system in Stride.
+Este tutorial intermediário C# cobre os conceitos básicos do sistema de navegação em Stride.
 
-## Explanation
+## Explicação
 
-In our world we can have so called 'navigation meshes'. These are meshes that are generated around your level geometry. The navigation mesh is used to calculate the quickest path to a destination.
+No nosso mundo podemos chamar-nos de "rede de navegação". Estas são malhas que são geradas em torno de sua geometria de nível. A malha de navegação é usada para calcular o caminho mais rápido para um destino.
 
-We learn about the editors Navigation mesh settings, navigation bounding boxes and in code we learn how to move an object to a destination using the Navigation component that comes with the Stride engine.
+Nós aprendemos sobre os editores Configurações de malha de navegação, caixas de ligação de navegação e no código aprendemos como mover um objeto para um destino usando o componente de navegação que vem com o motor Stride.
 
-> [!Video https://www.youtube.com/embed/_r7RAM-3neY]
+> [!Vídeo https://www.youtube.com/embed/_r7RAM-3neY]
 
-## Code
+## Código
 [!code-csharp[NavigateCharacter](../../../../stride/samples/Tutorials/CSharpIntermediate/CSharpIntermediate/CSharpIntermediate.Game/11_Navigation/NavigateCharacter.cs)]

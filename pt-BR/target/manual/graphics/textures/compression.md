@@ -1,27 +1,27 @@
-# Texture compression
+# Compressão de textura
 
-<span class="badge text-bg-primary">Beginner</span>
-<span class="badge text-bg-success">Artist</span>
-<span class="badge text-bg-success">Programmer</span>
+<x1\/>Introdução<x2\/>
+<x3\/>Artista <x4\/>
+<x5\/> Programador <x6\/>
 
-**Compressed textures** use up to 50% less space and are faster to load. Compression produces results similar to JPEG compression. The animation below was recorded with the camera positioned extremely close to the texture; at normal distances, the difference isn't noticable.
+** Texturas compactas** usam até 50% menos espaço e são mais rápidos para carregar. A compressão produz resultados semelhantes à compressão JPEG. A animação abaixo foi gravada com a câmera posicionada extremamente perto da textura; a distâncias normais, a diferença não é notável.
 
-![Texture compression](media/texture-compression.gif)
+<x1\/> Compressão de tensão<x2\/>
 
-For color textures, compression is best used for visually busy images, where the effects are less noticeable. You probably don't want to compress textures with fine edges, such as logos used in [splash screens](../../game-studio/splash-screen.md).
+Para texturas coloridas, a compressão é melhor usada para imagens visualmente ocupadas, onde os efeitos são menos perceptíveis. Você provavelmente não quer comprimir texturas com bordas finas, como logotipos usados em telas [splash](../../game-studio/splash-screen.md).
 
-Compression converts the texture to a multiple of 4. If the texture isn't already a multiple of 4, Stride expands it.
+A compressão converte a textura em um múltiplo de 4. Se a textura já não é um múltiplo de 4, Stride expande-a.
 
-Compression removes data from the image based on the texture type:
+A compressão remove dados da imagem com base no tipo de textura:
 
-| Texture type | Compression |
+| Tipo de textura | Compressão |
 |--------------|----------
-| Color | Compresses all RGBA channels. If the `Alpha` property is set to `None` in the texture properties, the alpha channel is removed |
-| Grayscale | Removes all RGBA channels except red |
-| Normal map | Removes the blue and alpha channels (alpha isn't used in normal maps anyway). The blue channel is reconstructed from the red and green channels (assuming a pixel has a vector length of 1) |
+| Cor | Abrange todos os canais RGBA. Se a propriedade `Alpha` é definida para `None` nas propriedades da textura, o canal alfa é removido |
+| Escala de cinza | Remove todos os canais RGBA exceto vermelho |
+| Mapa normal | Remove os canais azul e alfa (alfa não é usado em mapas normais de qualquer maneira). O canal azul é reconstruído a partir dos canais vermelho e verde (assumindo um pixel tem um comprimento vetorial de 1) |
 
-* [Textures index](index.md)
-* [Normal maps](normal-maps.md)
-* [Materials](../materials/index.md)
+* [Índice de texturas](index.md)
+* [Mapas normais](normal-maps.md)
+* [Materiais](../materials/index.md)
 * [Sprites](../../sprites/index.md)
-* [Render textures](../graphics-compositor/render-textures.md)
+* [Render texturas](../graphics-compositor/render-textures.md)

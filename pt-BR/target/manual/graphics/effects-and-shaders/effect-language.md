@@ -1,136 +1,136 @@
-# Effect language
+# Efeito da linguagem
 
-## Create shaders in C&#35;
+## Criar shaders em C#
 
-You can create a shader at runtime with @'Stride.Shaders.ShaderSource' objects. Shaders come in three types:
+Você pode criar um shader em tempo de execução com objetos @'Stride.Shaders.ShaderSource'. Shaders vêm em três tipos:
 
-- @'Stride.Shaders.ShaderClassSource' correspond to a unique shader class
-- @'Stride.Shaders.ShaderMixinSource' mix several @'Stride.Shaders.ShaderSource', set preprocessor values, define compositions
-- @'Stride.Shaders.ShaderArraySource' are used for arrays of compositions
+- @'Stride.Shaders.ShaderClassSource' corresponde a uma classe de shader único
+- @'Stride.Shaders.ShaderMixinSource' mistura vários @'Stride.Shaders.ShaderSource', definir valores de pré-processador, definir composições
+- @'Stride.Shaders.ShaderArraySource' são usados para matrizes de composições
 
-This method produces shaders at runtime. However, many platforms don't support HLSL and have no ability to compile shaders at runtime. Additionally, the approach doesn't benefit from the reusability of mixins.
+Este método produz shaders em tempo de execução. No entanto, muitas plataformas não suportam HLSL e não têm capacidade de compilar shaders em tempo de execução. Além disso, a abordagem não se beneficia da reutilização de mixinas.
 
-## Stride Effects (SDFX)
+## Efeitos Stride (SDFX)
 
-Many shaders are variations or combinations of pre-existing shaders. For example, some meshes cast shadows, others receive them, and others need skinning. To reuse code, it's a good idea to select which parts to use through conditions (eg "Skinning required"). This is often solved by "uber shaders": monolithic shaders configured by a set of preprocessor parameters.
+Muitos shaders são variações ou combinações de shaders pré-existentes. Por exemplo, algumas malhas moldam sombras, outras as recebem, e outras precisam de esfolar. Para reutilizar o código, é uma boa ideia selecionar quais partes usar através de condições (por exemplo, "Pequeno necessário"). Isso é frequentemente resolvido por " shaders": shaders monolíticos configurados por um conjunto de parâmetros pré-processadores.
 
-Stride offers the same kind of control, keeping extensibility and reusability in mind. The simple code blocks defined by shader classes can be mixed together by a shader mixer. This process can use more complex logic, described in Stride Effect (*.sdfx) files.
+A Stride oferece o mesmo tipo de controle, mantendo a extensibilidade e a reutilização em mente. Os blocos de código simples definidos por classes de shader podem ser misturados juntos por um mixer shader. Este processo pode usar lógica mais complexa, descrita em arquivos Stride Effect (*.sdfx).
 
-### General syntax
+### Sintaxe geral
 
-An .sdfx file is a small program used to generate shader permutations. It takes a set of parameters (key and value in a collection) and produces a `ShaderMixinSource` ready to be compiled.
+Um arquivo .sdfx é um pequeno programa usado para gerar permutações de shader. Ele leva um conjunto de parâmetros (chave e valor em uma coleção) e produz um `ShaderMixinSource` pronto para ser compilado.
 
-An example .sdfx file:
+Um arquivo .sdfx exemplo:
 
 ```cs
-using Stride.Effects.Data;
+usando Stride. Efeitos. Dados;
 
 namespace StrideEffects
-{
+(
 	params MyParameters
-	{
+	(
 		bool EnableSpecular = true;
 	};
 	
-	effect BasicEffect
-	{
-		using params MaterialParameters;
-		using params MyParameters;
+	efeito básico
+	(
+		usando params Material Parâmetros;
+		usando params MyParameters;
 
 		mixin ShaderBase;
-		mixin TransformationWAndVP;
+		transformação da misturaWAndVP;
 		mixin NormalVSStream;
 		mixin PositionVSStream;
-		mixin BRDFDiffuseBase;
+		mixagem BRDFDiffuse Base;
 		mixin BRDFSpecularBase;
-		mixin LightMultiDirectionalShadingPerPixel<2>;
-		mixin TransparentShading;
+		mistura LightMultiDirectionalShadingPerPixel<2>;
+		mistura transparente Shading;
 		mixin DiscardTransparent;
 
-		if (MaterialParameters.AlbedoDiffuse != null)
-		{
+		se (Parameters de Material.AlbedoDiffuse!= null)
+		(
 			mixin compose DiffuseColor = ComputeBRDFDiffuseLambert;
-			mixin compose albedoDiffuse = MaterialParameters.AlbedoDiffuse;
+			mistura de compor albedo Diffuse = MaterialParameters.AlbedoDiffuse;
 		}
 
-		if (MaterialParameters.AlbedoSpecular != null)
-		{
+		se (Parameters de Material.AlbedoSpecular != null)
+		(
 			mixin compose SpecularColor = ComputeBRDFColorSpecularBlinnPhong;
-			mixin compose albedoSpecular = MaterialParameters.AlbedoSpecular;
+			mistura de compor albedo Specular = MaterialParameters.AlbedoSpecular;
 		}
 	};
 }
 ```
 
-### Add a mixin
+### Adicionar um mixin
 
-To add a mixin, use `mixin <mixin_name>`.
+Para adicionar uma mistura, use `mixin <mixin_name>`.
 
-### Use parameters
+### Usar parâmetros
 
-The syntax is similar to C#. The following rules are added:
+A sintaxe é semelhante ao C#. As seguintes regras são adicionadas:
 
-- When you use parameter keys, add them using `params <shader_name>`. If you don't, keys are treated as variables.
+- Quando você usa chaves de parâmetro, adicione-as usando `params <shader_name>`. Se não o fizer, as chaves são tratadas como variáveis.
 
-- You don't need to tell the program where to check the values behind the keys. Just use the key.
+- Você não precisa dizer ao programa onde verificar os valores por trás das chaves. Usa a chave.
 
 ```cs
-using params MaterialParameters;
+usando params Material Parâmetros;
  
-if (MaterialParameters.AlbedoDiffuse != null)
-{
+se (Parameters de Material.AlbedoDiffuse!= null)
+(
 	mixin MaterialParameters.AlbedoDiffuse;
 }
 ```
 
-The parameters behave like any variable. You can read and write their value, compare their values, and set template parameters. Since some parameters store mixins, they can be used for composition and inheritance, too.
+Os parâmetros comportam-se como qualquer variável. Você pode ler e escrever seu valor, comparar seus valores e definir parâmetros de modelo. Uma vez que alguns parâmetros armazenam misturas, eles podem ser usados para composição e herança, também.
 
-### Custom parameters
+### Parâmetros personalizados
 
-You can create your own set of parameters using a structure definition syntax.
+Você pode criar seu próprio conjunto de parâmetros usando uma sintaxe de definição de estrutura.
 
-> [!Note]
-> Even if they're defined in the XKFX file, don't forget the `using` statement when you want to use them.
+> <x1\/>!Note<x2\/>
+> Mesmo que eles sejam definidos no arquivo XKFX, não se esqueça da declaração `using` quando você deseja usá-los.
 
 ```cs
 params MyParameters
-{
-	bool EnableSpecular = true; // true is the default value
+(
+	bool EnableSpecular = true; \/\/ true é o valor padrão
 }
 ```
 
-### Compositions
+### Composições
 
-To add a composition, assign the composition variable to your mixin with the syntax below.
+Para adicionar uma composição, atribuir a variável de composição à mistura com a sintaxe abaixo.
 
 ```cs
-// albedoSpecular is the name of the composition variable in the mixin
-mixin compose albedoSpecular = ComputeColorTexture;
+\/\/ albedoSpecular é o nome da variável composição no mixin
+mistura de compor albedo Specular = ComputeColorTexture;
  
-or
+ou
  
-mixin compose albedoSpecular = MaterialParameters.AlbedoSpecular;
+mistura de compor albedo Specular = MaterialParameters.AlbedoSpecular;
 ```
 
-### Partial effects
+### Efeitos parciais
 
-You can also break the code into sub-mixins to reuse elsewhere with the syntax below.
+Você também pode quebrar o código em sub-mixinas para reutilizar em outro lugar com a sintaxe abaixo.
 
 ```cs
-partial effect MyPartialEffect
-{
+efeito parcial MyPartialEffect
+(
 	mixin ComputeColorMultiply;
 	mixin compose color1 = ComputeColorStream;
 	mixin compose color2 = ComputeColorFixed;
 }
  
-// to use it
+\/\/ para usá-lo
 mixin MyPartialEffect;
-mixin compose myComposition = MyPartialEffect;
+mixin compor myComposition = MyPartialEffect;
 ```
 
-You can use the `MyPartialEffect` mixin like any other mixin in the code.
+Você pode usar a mistura `MyPartialEffect` como qualquer outra mistura no código.
 
-## See also
+## Ver também
 
-* [Shading language](shading-language/index.md)
+* [Língua de Shading](shading-language/index.md)

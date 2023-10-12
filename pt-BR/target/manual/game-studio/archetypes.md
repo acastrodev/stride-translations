@@ -1,71 +1,71 @@
-# Archetypes
+# Arquétipos
 
-<span class="badge text-bg-primary">Intermediate</span>
-<span class="badge text-bg-success">Designer</span>
+<x1\/> Intermediário <x2\/>
+<x3\/>Designer<x4\/>
 
-An **archetype** is a master asset that controls the properties of assets you **derive** from it. Derived assets are useful when you want to create a "remixed" version of an asset.
+Um **archetype** é um ativo mestre que controla as propriedades de ativos que você **derive** a partir dele. Os ativos derivados são úteis quando você quer criar uma versão "remixada" de um ativo.
 
-For example, imagine we have three sphere entities that share a material asset named *Metal*. The Metal asset has properties including color, gloss, and so on.
+Por exemplo, imagine que temos três entidades de esferas que compartilham um ativo material chamado *Metal*. O ativo de metal tem propriedades, incluindo cor, brilho e assim por diante.
 
-![Three metal spheres](media/archetypes-three-spheres-metal.webp)
+<x1\/> Três esferas metálicas<x2\/>
 
-If we change a property in the **Metal** asset, it applies to all three spheres. So, for example, if we change the color property, all three spheres change color.
+Se mudarmos uma propriedade no ativo **Metal**, ela se aplica a todas as três esferas. Então, por exemplo, se mudarmos a propriedade da cor, todas as três esferas mudam de cor.
 
-![Three gold spheres](media/archetypes-three-spheres-gold.webp)
+<x1\/> Três esferas de ouro<x2\/>
 
-Now imagine we want to change the color of only *one* sphere, but keep its other properties the same. We could duplicate the material asset, change its color, and then apply the new asset to only one sphere. But if we later want to change a different property across *all* the spheres, we have to modify both assets. This is time-consuming and leaves room for mistakes.
+Agora imagine que queremos mudar a cor de apenas *one* esfera, mas mantenha suas outras propriedades iguais. Podemos duplicar o ativo material, mudar sua cor e, em seguida, aplicar o novo ativo a apenas uma esfera. Mas se mais tarde queremos mudar uma propriedade diferente em *all* as esferas, temos que modificar ambos os ativos. Isso é demorado e deixa espaço para erros.
 
-The better approach is to derive a new asset from the archetype. The derived asset inherits properties from the archetype and lets you override individual properties where you need them. For example, we can derive the sphere's material asset and override its color. Then, if we change the gloss of the archetype, the gloss of all three spheres changes.
+A melhor abordagem é derivar um novo ativo do arquétipo. O ativo derivado herda propriedades do arquétipo e permite que você substitua propriedades individuais onde você precisa delas. Por exemplo, podemos derivar o ativo material da esfera e substituir sua cor. Então, se mudarmos o brilho do arquétipo, o brilho de todas as três esferas muda.
 
-![Create derived asset](media/archetypes-three-spheres.png)
+<x1\/>Create derivado asset<x2\/>
 
-You can derive an asset from an archetype, then in turn derive another asset from that derived asset. This way you can create different layers of assets to keep your project organized:
+Você pode derivar um ativo de um arquétipo, então, por sua vez, deriva outro ativo daquele ativo derivado. Desta forma, você pode criar diferentes camadas de ativos para manter seu projeto organizado:
 
 ```cs
-Archetype
-    Derived asset
-        Derived asset
+Arquétipo
+    Activo derivado
+        Activo derivado
 ```
 
-## Derive an asset from an archetype
+## Derive um ativo de um arquétipo
 
-In the **Asset View**, right-click the asset you want to derive an asset from and select **Create derived asset**:
+No **Asset View**, clique com o botão direito do mouse no ativo que você deseja obter um ativo de e selecione **Create derivado asset**:
 
-![Create derived asset](media/archetypes-create-derived-asset.png)
+<x1\/>Create derivado asset<x2\/>
 
-Game Studio adds a new **derived asset** to the project. This asset derives its properties from the **archetype** asset.
+Game Studio adiciona um novo **derived asset** ao projeto. Este ativo deriva suas propriedades do ativo **archetype**.
 
-The derived asset properties display the archetype asset under **Archetype**:
+As propriedades de ativos derivadas exibem o ativo do arquétipo sob **Arquétipo**:
 
-![Derived asset in Property Grid](media/archetypes-archetype-in-property-grid.png)
+<x1\/>Ativos derivados na propriedade Grid<x2\/>
 
-You can right-click the archetype asset in the Property Grid and select **Select the referenced asset** to quickly select the archetype asset:
+Você pode clicar com o botão direito do mouse no atributo arquétipo na Grade de Propriedades e selecionar **Selecione o aset referenciado** para selecionar rapidamente o ativo arquétipo:
 
-![Select referenced asset](media/archetypes-select-the-referenced-asset.png)
+<x1\/>Select referenciado asset<x2\/>
 
-### Overridden properties
+### Propriedades de Overridden
 
-The **Property Grid** shows which properties of the derived asset differ from the archetype. **Overridden** and **unique** properties are **white**, and **inherited** (identical) properties are **gray**.
+O **Property Grid** mostra quais propriedades do ativo derivado diferem do arquétipo. **Overridden** e **unique** propriedades são **white**, e **inherited** (identical) propriedades são **gray**.
 
-In this screenshot, the **Diffuse Map** property is overridden. The other properties are inherited:
+Nesta captura de tela, a propriedade **Diffuse Map** é substituída. As outras propriedades são herdadas:
 
-![Overridden properties are white](media/archetypes-overriden-properties-appear-white.png)
+<x1\/> Propriedades anteriores são brancas<x2\/>
 
-### Reset a property to archetype value
+### Repor uma propriedade ao valor arquétipo
 
-You can reset overridden or unique properties of a derived asset to the values in the archetype. To do this, right-click the overridden property and select **Reset to base value**.
+Você pode redefinir propriedades sobrepostas ou únicas de um ativo derivado para os valores no arquétipo. Para fazer isso, clique com o botão direito do mouse na propriedade overridden e selecione **Reset to base value**.
 
-![Reset to base value](media/archetypes-reset-property-to-base-value.png)
+<x1\/> Repor ao valor de base<x2\/>
 
-### Clear an archetype
+### Limpar um arquétipo
 
-You can remove the link between the archetype and the derived asset. This means the derived asset no longer inherits changes to the archetype; it becomes a completely independent.
+Você pode remover a ligação entre o arquétipo e o ativo derivado. Isso significa que o ativo derivado não herda mais mudanças no arquétipo; torna-se completamente independente.
 
-To do this, in the **Asset View**, right-click the derived asset and select **Clear archetype**.
+Para fazer isso, no **Asset View**, clique com o botão direito do mouse no ativo derivado e selecione **Clear arquétype**.
 
-![Clear archetype](media/archetypes-clear-archetypes.png)
+<x1\/>Clear arquétipo<x2\/>
 
-## See also
+## Ver também
 
-* [Assets](../game-studio/assets.md)
-* [Prefabs](prefabs/index.md)
+* [Activos](../game-studio/assets.md)
+* [Pré-fabricados](prefabs/index.md)

@@ -1,35 +1,35 @@
-# Assets
+# Activos
 
-<span class="badge text-bg-primary">Beginner</span>
+<x1\/>Introdução<x2\/>
 
-An **asset** is a representation of an element of your game inside Game Studio, such as a texture, animation, or model.
+Um **asset** é uma representação de um elemento do seu jogo dentro do Game Studio, como uma textura, animação ou modelo.
 
-Some assets require **resource files**. For example, texture assets need image files and audio assets need audio files. Other types of assets (such as scenes, physics colliders, and game settings) don't use resource files, and can be created entirely in Game Studio.
+Alguns ativos requerem **recurso de arquivos**. Por exemplo, os ativos de textura precisam de arquivos de imagem e ativos de áudio precisam de arquivos de áudio. Outros tipos de ativos (como cenas, colisões de física e configurações de jogo) não usam arquivos de recursos e podem ser criados inteiramente no Game Studio.
 
-You can compile and optimize assets with a special compiler provided by Stride. Compiled assets are packed together as reusable bundles.
+Você pode compilar e otimizar ativos com um compilador especial fornecido pela Stride. Os ativos compilados são embalados juntos como pacotes reutilizáveis.
 
-![Assets displayed in the Asset View](../get-started/media/asset-creation-asset-view-tab-knight.png)
+<x1\/>Ativos exibidos no Asset View<x2\/>
 
-You can:
+Você pode:
 
-* create and browse assets in the **Asset View**
+* criar e navegar ativos no **Asset View**
 
-   ![media/Editor2_assetview_thumb.jpg](media/Editor2_assetview_thumb.jpg)
+   <x1\/>media\/Editor2_assetview_thumb.jpg<x2\/>
 
-* import existing assets, such as FBX files
+* importar ativos existentes, como arquivos FBX
 
-   ![media/EditorImportAssets_explorer_thumb.jpg](media/EditorImportAssets_explorer_thumb.jpg)
+   <x1\/>media\/EditorImportAssets_explorer_thumb.jpg<x2\/>
 
-* edit assets in the **property editor**
+* editar ativos no editor de propriedade ****
 
-   ![media/EditorProperties_props_thumb.jpg](media/EditorProperties_props_thumb.jpg)
+   <x1\/>media\/EditorProperties_props_thumb.jpg<x2\/>
 
-* see a live preview in the **Asset Preview**
+* veja uma visualização ao vivo no **Asset Preview**
 
-   ![media/EditorProperties_preview_thumb.jpg](media/EditorProperties_preview_thumb.jpg)
+   <x1\/>media\/EditorProperties_preview_thumb.jpg<x2\/>
 
-## In this section
+## Nesta secção
 
-* [Create assets](create-assets.md)
-* [Manage assets](manage-assets.md)
-* [Use assets](use-assets.md)
+* [Criar ativos](create-assets.md)
+* [Gerenciar ativos](manage-assets.md)
+* [Utilizar activos](use-assets.md)

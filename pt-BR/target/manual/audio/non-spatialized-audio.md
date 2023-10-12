@@ -1,137 +1,137 @@
-# Non-spatialized audio
+# Áudio não espacializado
 
-<span class="badge text-bg-primary">Beginner</span>
-<span class="badge text-bg-success">Programmer</span>
+<x1\/>Introdução<x2\/>
+<x3\/> Programador <x4\/>
 
-**Non-spatialized audio** sounds the same throughout the scene, regardless of the position of entities (such as the player camera). It's stereo and moves along a single axis (usually the X-axis). Unlike [spatialized audio](spatialized-audio.md), the _volume_, _pitch_ (_frequency_), and other parameters of spatialized audio don't change. This is useful, for example, for background music and menu sound effects.
+** Áudio não espacializado ** soa o mesmo ao longo da cena, independentemente da posição de entidades (como a câmera do jogador). É estéreo e se move ao longo de um único eixo (geralmente o eixo X). Ao contrário de [spatialized audio](spatialized-audio.md), o _volume_, _pitch_ (_frequência_), e outros parâmetros de áudio espacializado não mudam. Isso é útil, por exemplo, para efeitos de som de música de fundo e menu.
 
-![Non-spatialized audio](media/audio-index-non-spatialized-audio.png)
+<x1\/> Não-espacializado áudio<x2\/>
 
-Non-spatialized audio requires no [audio emitters](audio-emitters.md) or [audio listeners](audio-listeners.md).
+O áudio não espacializado não requer [audio emitters](audio-emitters.md) ou [audio listeners](audio-listeners.md).
 
-## 1. Import audio and include it in the build
+## 1. Importar áudio e incluí-lo na compilação
 
-1. [Import the audio as a audio asset](import-audio.md).
+1. [Importar o áudio como um ativo de áudio](import-audio.md).
 
-2. Make sure the audio asset is a **root asset**. Root assets are assets that Stride includes in the build so they can be used at runtime.
+2. Certifique-se de que o ativo de áudio é um **root asset**. Os ativos de raiz são ativos que a Stride inclui na compilação para que possam ser usados no tempo de execução.
 
-   In the **Asset View**, right-click the asset and select **Include in build as root asset**:
+   No **Asset View**, clique com o botão direito do mouse no ativo e selecione **Incluir na compilação como ativo root**:
 
-   ![Include in build as root asset](media/audio-include-in-build-as-root-asset.png)
+   <x1\/>Incluir em compilação como root asset<x2\/>
 
-   If the menu option reads **Do not include in build as root asset**, the option is already selected and you don't need to change it.
+   Se a opção de menu ler **Não inclua na compilação como root asset**, a opção já está selecionada e você não precisa alterá-la.
 
-## 2. Create a script to play audio
+## 2. Criar um script para reproduzir áudio
 
-To play non-spatialized audio at runtime, create an instance of it and define its behavior in the code.
+Para reproduzir áudio não espacializado no tempo de execução, crie uma instância e defina seu comportamento no código.
 
-The [SoundInstance](xref:Stride.Audio.SoundInstance) controls audio at runtime with the following properties:
+O [SoundInstance](xref:Stride.Audio.SoundInstance) controla áudio em tempo de execução com as seguintes propriedades:
 
-| Property | Function |
+| Propriedade | Função |
 |-------    |-------|
-| [IsLooping](xref:Stride.Audio.SoundInstance.IsLooping) | Gets or sets looping of the audio. |
-| [Pan](xref:Stride.Audio.SoundInstance.Pan) | Sets the balance between left and right speakers. By default, each speaker a value of 0.5. |
-| [Pitch](xref:Stride.Audio.SoundInstance.Pitch) | Gets or sets the audio pitch (frequency). |
-| [PlayState](xref:Stride.Audio.SoundInstance.PlayState) | Gets the state of the [SoundInstance](xref:Stride.Audio.SoundInstance). |
-| [Position](xref:Stride.Audio.SoundInstance.Position) | Gets the current play position of the audio. |
-| [Volume](xref:Stride.Audio.SoundInstance.Volume) | Sets the audio volume. |
+| [IsLooping](xref:Stride.Audio.SoundInstance.IsLooping) | Obtém ou define looping do áudio. |
+| [Pan](xref:Stride.Audio.SoundInstance.Pan) | Define o equilíbrio entre colunas esquerda e direita. Por padrão, cada coluna um valor de 0.5. |
+| [Pitch](xref:Stride.Audio.SoundInstance.Pitch) | Obtém ou define o pitch de áudio (frequência). |
+| [PlayState](xref:Stride.Audio.SoundInstance.PlayState) | Obtém o estado do [SoundInstance](xref:Stride.Audio.SoundInstance). |
+| [Posição](xref:Stride.Audio.SoundInstance.Position) | Obtém a posição de reprodução atual do áudio. |
+| [Volume](xref:Stride.Audio.SoundInstance.Volume) | Define o volume de áudio. |
 
-For more details, see the [SoundInstance API documentation](xref:Stride.Audio.SoundInstance).
+Para mais detalhes, consulte a documentação [SoundInstance API](xref:Stride.Audio.SoundInstance).
 
-> [!Note]
-> If the sound is already playing, Stride ignores all additional calls to [SoundInstance.Play](xref:Stride.Audio.SoundInstance.Play).
-> The same goes for [SoundInstance.Pause](xref:Stride.Audio.SoundInstance.Pause) (when a sound is already paused) and [SoundInstance.Stop](xref:Stride.Audio.SoundInstance.Stop) (when a sound is already stopped).
+> <x1\/>!Note<x2\/>
+> Se o som já estiver tocando, Stride ignora todas as chamadas adicionais para [SoundInstance. Play](xref:Stride.Audio.SoundInstance.Play).
+> O mesmo vale para [SoundInstance. Pause](xref:Stride.Audio.SoundInstance.Pause) (quando um som já é pausado) e [SoundInstance. Pare](xref:Stride.Audio.SoundInstance.Stop) (quando um som já está parado).
 
-For example, the following code:
+Por exemplo, o seguinte código:
 
-* instantiates non-spatialized audio
-* sets the audio to loop
-* sets the volume
-* plays the audio
+* instantiates áudio não espacializado
+* define o áudio para loop
+* define o volume
+* toca o áudio
 
 ```cs
-public override async Task Execute()
-{
-    // Load the sound
+override público async Task Execute()
+(
+    \/\/ Carregar o som
     Sound musicSound = Content.Load<Sound>("MySound");
             
-    // Create a sound instance
+    \/\/ Criar uma instância de som
     SoundInstance music = musicSound.CreateInstance();
             
-    // Loop
-    music.IsLooping = true;
+    \/\/ Loop
+    música. IsLooping = true;
 
-    // Set the volume
-    music.Volume = 0.25f;
+    \/\/ Defina o volume
+    música. Volume = 0,25f;
 
-    // Play the music
+    \/\/ Jogue a música
     music.Play();
 }
 ```
 
-### Alternative: create a script with public variables
+### Alternativa: crie um script com variáveis públicas
 
-Create a public variable for each audio asset you want to use. You can use the same properties listed above.
+Crie uma variável pública para cada ativo de áudio que você deseja usar. Você pode usar as mesmas propriedades listadas acima.
 
-For example:
+Por exemplo:
 
 ```cs
-public class MySoundScript : SyncScript
-{
-    public Sound MyMusic;
+classe pública MySoundScript : Sincronização
+(
+    público Sound MyMusic;
 
-    private SoundInstance musicInstance;
-    public bool PlayMusic;
+    música privada SoundInstance Instance;
+    público bool PlayMusic;
 
-    public override void Start()
-    {
+    anula de sobreposição pública Start()
+    (
         musicInstance = MyMusic.CreateInstance();
     }
 
-    public override void Update()
-    {
-        // If music isn't playing but should be, play the music.
-        if (PlayMusic & musicInstance.PlayState != PlayState.Playing)
-        {
+    atualização()
+    (
+        \/\/ Se a música não estiver tocando, mas deve ser, tocar a música.
+        if (PlayMusic & musicInstance. PlayState! PlayState.Playing)
+        (
             musicInstance.Play();
         }
 
-        // If music is playing but shouldn't be, stop the music.
-        else if (!PlayMusic)
-        {
+        \/\/ Se a música está tocando, mas não deve ser, pare a música.
+        mais se (!PlayMusic)
+        (
             musicInstance.Stop();
         }
     }
 }
 ```
-## Add the script to the entity
+## Adicionar o script à entidade
 
-1. In the **Scene view**, select the entity you want to add the script to:
+1. No **Scene view**, selecione a entidade que deseja adicionar o script para:
 
-   ![Select an entity](media/audio-add-audiolistener-component-select-entity.png)
+   <x1\/>Selecione uma entidade<x2\/>
 
-2. In the **Property Grid**, click **Add component** and select your script:
+2. No **Property Grid**, clique em **Adicionar componente** e selecione seu script:
 
-   ![Click Add component](media/audio-emitters-add-script-component.png)
+   <x1\/>Clique Adicionar componente<x2\/>
 
-   The script is added to the entity.
+   O script é adicionado à entidade.
 
-3. If you added **public variables** to the script, you need to tie them to audio assets.
+3. Se você adicionou variáveis **public** ao script, você precisa amarrá-las para ativos de áudio.
 
-   Drag and drop an asset from the **Asset View** to each variable:
+   Arraste e solte um ativo do **Asset View** para cada variável:
 
-   ![Drag and drop an audio asset](media/entity-audio-drag-and-drop-audio-asset-to-script-component.gif)
+   <x1\/>Drag e soltar um ativo de áudio<x2\/>
 
-   Alternatively, click ![Hand icon](~/manual/game-studio/media/hand-icon.png) (**Select an asset**):
+   Alternativamente, clique em <x1\/>Hand icon<x2\/> (**Select an asset**):
 
-   ![Pick up an asset](media/audio-play-script-component-pick-an-asset.png)
+   <x1\/> Enfiar um ativo<x2\/>
 
-   Then choose the audio asset you want to use:
+   Em seguida, escolha o ativo de áudio que você deseja usar:
 
-   ![Select an audio asset](media/audio-play-audioemitter-component-add-select-audio-asset.png)
+   <x1\/>Selecione um ativo de áudio<x2\/>
 
-## See also
+## Ver também
 
-* [Import audio](import-audio.md)
-* [Global audio settings](global-audio-settings.md)
-* [Spatialized audio](spatialized-audio.md)
+* [Importação de áudio](import-audio.md)
+* [Configurações de áudio globais](global-audio-settings.md)
+* [Áudio espacial](spatialized-audio.md)

@@ -1,13 +1,13 @@
-# Engine
+# Motor
 
-> [!Warning]
-> This section is out of date. For now, you should only use it for reference.
+> <x1\/>!Warning<x2\/>
+> Esta seção está fora de data. Por enquanto, você só deve usá-lo para referência.
 
-- [Asset](assets/index.md)
-- [Entity-component model](entity-component-model/index.md)
-- [File system](file-system.md)
+- [Activo](assets/index.md)
+- [Modelo de Entidade-componente](entity-component-model/index.md)
+- [Sistema de arquivos](file-system.md)
 
-# See also
+# Ver também
 
-- [Introduction to assets](../game-studio/assets.md)
+- [Introdução aos ativos](../game-studio/assets.md)
 - [Scripts](../scripts/index.md)

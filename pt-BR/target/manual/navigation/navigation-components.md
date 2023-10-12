@@ -1,62 +1,62 @@
-# Navigation components
+# Componentes de navegação
 
-<span class="badge text-bg-primary">Beginner</span>
-<span class="badge text-bg-success">Level designer</span>
-<span class="badge text-bg-success">Programmer</span>
+<x1\/>Introdução<x2\/>
+<x3\/> Designer de nível <x4\/>
+<x5\/> Programador <x6\/>
 
-**Navigation components** allow entities to use [navigation meshes](navigation-meshes.md) to find paths through the scene. Alternatively, if you enable [dynamic navigation](dynamic-navigation.md) in Game Settings, entities can generate their own navigation meshes.
+** Componentes de navegação** permitem que as entidades usem [navigation meshes](navigation-meshes.md) para encontrar caminhos através da cena. Alternativamente, se você ativar a navegação [dinâmica](dynamic-navigation.md) nas configurações do jogo, as entidades podem gerar suas próprias malhas de navegação.
 
-# Add a navigation component
+# Adicionar um componente de navegação
 
-1. Select an entity you want to use navigation.
+1. Selecione uma entidade que deseja usar a navegação.
 
-2. In the **Property Grid**, click **Add component** and select **Navigation**.
+2. No **Property Grid**, clique em **Add component** e selecione **Navigation**.
 
-   ![Add navigation component](media/add-navigation-component.png)
+   <x1\/> Adicionar componente de navegação<x2\/>
 
-   Game Studio adds a navigation component to the entity.
+   Game Studio adiciona um componente de navegação à entidade.
 
-3. Under the **Navigation** component properties, next to **Navigation mesh**, click ![Hand icon](~/manual/game-studio/media/hand-icon.png) (**Select an asset**):
+3. Sob as propriedades do componente **Navigation**, ao lado de **Navigation mesh**, clique em <x1\/>Hand icon<x2\/> (**Select an asset**):
 
-   ![Select an asset](media/open-asset-picker.png)
+   <x1\/> Selecione um ativo<x2\/>
 
-   The **Select an asset** window opens.
+   A janela **Selecione um ativo** abre.
 
-4. Select the [navigation mesh](navigation-meshes.md) you want the entity to use and click **OK**.
+4. Selecione o [navigation mesh](navigation-meshes.md) você quer que a entidade use e clique em **OK**.
 
-   ![Choose navigation mesh](media/choose-navigation-mesh.png)
+   <x1\/>Escolha malha de navegação<x2\/>
 
-   Alternatively, if you want this entity to navigate dynamically by generating its own navigation mesh, leave the **Navigation mesh** field empty. For more information, see [Dynamic navigation](dynamic-navigation.md).
+   Alternativamente, se você quiser que essa entidade navegue dinamicamente gerando sua própria malha de navegação, deixe o campo **Navigation mesh** vazio. Para obter mais informações, consulte [ Navegação dinâmica](dynamic-navigation.md).
 
-5. Under **Group**, select the navigation group the entity should belong to. The entity uses the navigation properties you set in this group.
+5. Em **Group**, selecione o grupo de navegação a qual a entidade deve pertencer. A entidade utiliza as propriedades de navegação definidas neste grupo.
 
-   ![Choose navigation group](media/choose-navigation-group.png)
+   <x1\/> Grupo de navegação <x2\/>
 
-## Use navigation components in scripts
+## Use componentes de navegação em scripts
 
-For example:
+Por exemplo:
 
 ```cs
-void Move(Vector3 from, Vector3 to)
-{
-	var navigationComponent = Entity.Get<NavigationComponent>();
+void Move(Vector3 de, Vector3 para)
+(
+	var navegação Componente = Entity.Get<NavigationComponent>();
 	List<Vector3> path = new List<Vector3>();
-	if(navigationComponent.TryFindPath(from, to, path))
-	{
-		// Follow the points in path
+	if(navigationComponent. TryFindPath (de, para, caminho)
+	(
+		\/\/ Siga os pontos no caminho
 	}
-	else
-	{
-		// A path couldn't be found using this navigation mesh
+	mais
+	(
+		\/\/ Um caminho não pôde ser encontrado usando esta malha de navegação
 	}
 }
 ```
 
-For more information, see the [NavigationComponent API documentation](xref:Stride.Navigation.NavigationComponent).
+Para obter mais informações, consulte a documentação [NavigationComponent API](xref:Stride.Navigation.NavigationComponent).
 
-## See also
+## Ver também
 
-* [Navigation groups](navigation-groups.md)
-* [Navigation meshes](navigation-meshes.md)
-* [Navigation bounding boxes](navigation-bounding-boxes.md)
-* [Dynamic navigation](dynamic-navigation.md)
+* [Grupos de navegação](navigation-groups.md)
+* [Malhas de navegação](navigation-meshes.md)
+* [Caixas de ligação de navegação](navigation-bounding-boxes.md)
+* [Navegação dinâmica](dynamic-navigation.md)

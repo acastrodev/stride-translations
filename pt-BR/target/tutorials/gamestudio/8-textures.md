@@ -1,7 +1,7 @@
-# Textures
+# Texturas
 
-In this tutorial we learn about the different textures types, the options for every texture type and global texture settings.
+Neste tutorial aprendemos sobre os diferentes tipos de texturas, as opções para cada tipo de textura e configurações globais de textura.
 
-[!INCLUDE [stride-studio-note](../../includes/game-studio-xenko-note.md)]
+[! INCLUÍDO [stride-studio-note](../../includes/game-studio-xenko-note.md)]
 
-> [!Video https://www.youtube.com/embed/cl5VHcGrf9k]
+> [!Vídeo https://www.youtube.com/embed/cl5VHcGrf9k]

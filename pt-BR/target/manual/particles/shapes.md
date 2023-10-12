@@ -1,46 +1,46 @@
-# Particle shapes
+# Formas de partículas
 
-<span class="badge text-bg-primary">Beginner</span>
-<span class="badge text-bg-success">Artist</span>
-<span class="badge text-bg-success">Programmer</span>
+<x1\/>Introdução<x2\/>
+<x3\/>Artista <x4\/>
+<x5\/> Programador <x6\/>
 
-Because particles are essentially only points in space, they have no defined shape. Instead, Stride draws shapes **between** the points.
+Como as partículas são essencialmente apenas pontos no espaço, elas não têm forma definida. Em vez disso, Stride desenha formas ** entre** os pontos.
 
-The major difference between particle shapes is whether they always face the camera, or if they can rotate freely in 3D space.
+A maior diferença entre as formas de partículas é se eles sempre enfrentam a câmera, ou se eles podem girar livremente no espaço 3D.
 
-Currently, emitters can only emit one type of shape at a time.
+Atualmente, os emissores só podem emitir um tipo de forma de cada vez.
 
 ## Billboards
 
-**Billboards** always face the camera. They appear **fixed in 3D space**, so they don't change with the camera position.
+**Billboards** sempre enfrentam a câmera. Eles aparecem **fixados no espaço 3D**, então eles não mudam com a posição da câmera.
 
-Because they always face the camera, billboards support angular rotation only. This means they only rotate clockwise or counter-clockwise.
+Porque eles sempre enfrentam a câmera, outdoors suportam rotação angular apenas. Isso significa que eles apenas giram no sentido horário ou no sentido anti-horário.
 
-## Hexagon
+## Hexagonal
 
-**Hexagons** are identical to billboards, but are hexagonal in shape. Like billboards, they always face the camera and support angular rotation only.
+**Hexagons** são idênticos aos outdoors, mas são hexagonais em forma. Como outdoors, eles sempre enfrentam a câmera e suportam rotação angular apenas.
 
 ## Quads
 
-Quads are identical to billboards, but don't rotate to face the camera, and so support 3D orientation and rotation.
+Quads são idênticos a outdoors, mas não girar para enfrentar a câmera, e assim apoiar a orientação e rotação 3D.
 
-Stride draws billboard particles to the **Size** value in the particle effect properties. If you don't specify a size, Stride expands the quads to 1m x 1m.
+Stride atrai partículas de outdoor para o valor **Size** nas propriedades de efeito de partícula. Se você não especificar um tamanho, Stride expande os quads para 1m x 1m.
 
-![media/particles-reference-shapebuilders-1.png](media/particles-reference-shapebuilders-1.png)
+<x1\/>media\/particles-reference-shapebuilders-1.png<x2\/>
 
-## Direction-aligned sprite
+## Espirito alinhado à direção
 
-This sprite is billboard-aligned and stretched in the direction of the particle. You can set an initial direction for the particles with an initializer, or add an updater which writes particle speed as direction.
+Este sprite é nivelado e esticado na direção da partícula. Você pode definir uma direção inicial para as partículas com um inicializador, ou adicionar um atualizador que escreve velocidade de partícula como direção.
 
-## Ribbons and trails
+## Fitas e trilhas
 
-See [Ribbons and trails](ribbons-and-trails.md).
+Veja [ Ribbons e trilhas](ribbons-and-trails.md).
 
-## See also
+## Ver também
 
-* [Create particles](create-particles.md)
+* [Criar partículas](create-particles.md)
 * [Emitters](emitters.md)
-* [Materials](materials.md)
+* [Materiais](materials.md)
 * [Spawners](spawners.md)
-* [Initializers](initializers.md)
-* [Updaters](updaters.md)
+* [Iniciantes](initializers.md)
+* [Atualizações](updaters.md)

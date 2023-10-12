@@ -1,33 +1,33 @@
-# Resource binding
+# Ligação de recursos
 
-<span class="badge text-bg-primary">Advanced</span>
-<span class="badge text-bg-success">Programmer</span>
+<x1\/> Avançado <x2\/>
+<x3\/> Programador <x4\/>
 
-When [drawing vertices](draw-vertices.md) using an [effect](../effects-and-shaders/index.md), the shaders expect certain resources to be available, including:
+Quando vértices [drawing](draw-vertices.md) usando um efeito [](../effects-and-shaders/index.md), os shaders esperam que certos recursos estejam disponíveis, incluindo:
 
-- textures and buffers
-- samplers
-- constant buffers
+- texturas e buffers
+- amostradores
+- buffers constantes
 
-## Automatic resource binding
+## Ligação automática de recursos
 
-The @'Stride.Rendering.EffectInstance' class handles the details of enumerating these resources from a loaded effect as well as binding them.
+A classe @'Stride.Rendering.EffectInstance lida com os detalhes de enumerar esses recursos de um efeito carregado, bem como encadeá-los.
 
-It exposes the @'Stride.Graphics.RootSignature', which has to be set as [pipeline state](pipeline-state.md),
-and allows to fill constant buffers and bind resources based on a @'Stride.Rendering.ParameterCollection'.
+Expõe o @'Stride.Graphics.RootSignature', que tem de ser definido como [pipeline state](pipeline-state.md),
+e permite preencher buffers constantes e ligar recursos com base em um @'Stride.Rendering.ParameterCollection'.
 
-**Code:** Using an EffectInstance
+**Código:** Usando um efeitoInstância
 
 ```cs
-// Create a EffectInstance and use it to set up the pipeline
-var effectInstance = new EffectInstance(EffectSystem.LoadEffect("MyEffect").WaitForResult());
-pipelineStateDescription.EffectBytecode = effectInstance.Effect.Bytecode;
-pipelineStateDescription.RootSignature = effectInstance.RootSignature;
+\/\/ Criar um EffectInstance e usá-lo para configurar o pipeline
+var effectInstance = new EffectInstance (EffectSystem.LoadEffect("MyEffect").WaitForResult());
+pipelineStateDescription.EffectBytecode = efeitoInstance.Effect.Bytecode;
+pipelineStateDescription.RootSignature = efeitoInstance.RootSignature;
 
-// Update constant buffers and bind resources
-effectInstance.Apply(context.GraphicsContext);
+\/\/ Atualizar buffers constantes e vincular recursos
+efeitoInstance.Apply (context.GraphicsContext);
 ```
 
-## Manual resource binding
+## Ligação de recursos manual
 
-When more optimized code is required (eg in the [rendering pipeline](../rendering-pipeline/index.md)), constant buffer updates and resource binding can be done manually.
+Quando o código mais otimizado é necessário (por exemplo, no pipeline de renderização [), atualizações de buffer constantes e vinculação de recursos podem ser feitas manualmente.](../rendering-pipeline/index.md)

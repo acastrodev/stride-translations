@@ -1,21 +1,21 @@
-# Materials for developers
+# Materiais para desenvolvedores
 
-<span class="badge text-bg-primary">Advanced</span>
-<span class="badge text-bg-success">Programmer</span>
+<x1\/> Avançado <x2\/>
+<x3\/> Programador <x4\/>
 
-This diagram shows the Material interfaces and implementation classes:
+Este diagrama mostra as interfaces Material e classes de implementação:
 
-![media/materials-for-developers-1.png](media/materials-for-developers-1.png)
+<x1\/>media\/materials-for-developers-1.png<x2\/>
 
-- The interface @'Stride.Rendering.Materials.IMaterialDescriptor' is the root interface for a material description.
-- The @'Stride.Rendering.Materials.IMaterialShaderGenerator' is the main interface used to generate a material shader of the material.
-- Each attribute and layer implements this interface to modify the final material shader.
-- The @'Stride.Rendering.Materials.MaterialDescriptor' is the editor-time description of the material before being compiled into a material shader.
-- The @'Stride.Rendering.Material' class is the runtime material shader generated from the @'Stride.Rendering.Materials.MaterialDescriptor'
+- A interface @'Stride.Rendering.Materials.IMaterialDescriptor' é a interface raiz para uma descrição do material.
+- O @'Stride.Rendering.Materials.IMaterialShaderGenerator' é a interface principal usada para gerar um shader material do material.
+- Cada atributo e camada implementa esta interface para modificar o shader de material final.
+- O @'Stride.Rendering.Materials.MaterialDescriptor' é a descrição do editor-tempo do material antes de ser compilado em um shader material.
+- O @'Stride.Rendering. A classe material é o shader de material de tempo de execução gerado a partir do @'Stride.Rendering.Materials.MaterialDescriptor '
 
-## See also
+## Ver também
 
-- [Material maps](material-maps.md)
-- [Material attributes](material-attributes.md)
-- [Material layers](material-layers.md)
-* [Material slots](material-slots.md)
+- [Mapas de material](material-maps.md)
+- [Atributos de material](material-attributes.md)
+- [Camadas de material](material-layers.md)
+* [Slots de material](material-slots.md)

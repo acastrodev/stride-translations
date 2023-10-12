@@ -1,83 +1,83 @@
-# Xenko 1.4 release notes
+# Notas de lançamento do Xenko 1.4
 
-## Highlights
+## Destaques
 
 ### Renaming
 
-The engine has been renamed Xenko. Here is our new logo, be sure to remember it!
+O motor foi renomeado Xenko. Aqui está o nosso novo logotipo, não se esqueça disso!
 
 <img src="media/ReleaseNotes-1.4/xenko-logo.png" align="center" />
 
-The following changes have been introduced during the renaming and will be automatically applied to your project when opening it in the Game Studio.
+As seguintes mudanças foram introduzidas durante o renaming e serão automaticamente aplicadas ao seu projeto ao abri-lo no Game Studio.
 
-- All occurrences of ‘Paradox’ in code, shaders and configuration files are replaced with ‘Xenko’
-- Package and asset files, previously having a .pdx* file extension, now have a .xk* extension
-- Xenko SDK is now located using the SiliconStudioXenkoDir environment variable instead of SiliconStudioParadoxDir
+- Todas as ocorrências de ‘Paradox’ em código, shaders e arquivos de configuração são substituídas por ‘Xenko’
+- Pacote e arquivos de ativos, anteriormente tendo uma extensão de arquivo .pdx*, agora tem uma extensão .xk*
+- Xenko SDK está agora localizado usando o SiliconStudioXenko Dir variável ambiente em vez de SiliconStudioParadoxDir
 
-In addition, the new Visual Studio integration will not recognize old installations or projects that were not upgraded, and vice versa.
+Além disso, a nova integração do Visual Studio não reconhecerá antigas instalações ou projetos que não foram atualizados e vice-versa.
 
-### New documentation system
+### Novo sistema de documentação
 
-We are aware our documentation isn't where we need it to be yet, so we've decided to take some steps to move things faster. In order to do this, we have migrated our documentation to DocFX.
+Estamos cientes de que nossa documentação não é onde precisamos ainda, então decidimos tomar alguns passos para mover as coisas mais rápido. Para fazer isso, migramos nossa documentação para o DocFX.
 
-The new system should provide better readability and more consistent formatting. It also allows us to more easily edit and upload separate documentation for each version of Xenko.
+O novo sistema deve fornecer melhor legibilidade e formatação mais consistente. Ele também nos permite editar e fazer upload de documentação separada para cada versão do Xenko.
 
-The documentation has its own repository on GitHub: https://github.com/SiliconStudio/xenko-docs
+A documentação tem seu próprio repositório no GitHub: https:\/\/github.com\/SiliconStudio\/xenko-docs
 
-Everybody in the community can now share information by adding edits which will help us to continually improve the documentation. To edit documentation, just click the “Improve this Doc” button available on every page of the documentation, and submit us pull requests.
+Todos na comunidade agora podem compartilhar informações adicionando edições que nos ajudarão a melhorar continuamente a documentação. Para editar a documentação, basta clicar no botão “Melhor este Doc” disponível em cada página da documentação e nos enviar pull requests.
 
 <img src="media/ReleaseNotes-1.4/newdoc-docfx.png" align="center" />
 
-With your help, we hope to improve the community's experience with Xenko since this will allow people to share information at a faster pace.
+Com sua ajuda, esperamos melhorar a experiência da comunidade com Xenko, pois isso permitirá que as pessoas compartilhem informações em um ritmo mais rápido.
 
-Of course, the Xenko dev. team will also be adding more to the documentation as well. More info on that coming soon!
+Claro, a equipe de Xenko dev. também vai adicionar mais à documentação também. Mais informações sobre isso em breve!
 
-### PDB debugging
+### Depuração de PDB
 
-You can now step into Xenko's engine source code. The code will automatically be fetched from GitHub.
+Agora você pode entrar no código fonte do motor de Xenko. O código será automaticamente retirado do GitHub.
 
-The process is simple. All you need to do is open Visual Studio options, go to Debugging > General, and check “Enable Source Server Support”:
+O processo é simples. Tudo o que você precisa fazer é abrir o Visual Studio opções, ir para Debugging > Geral, e verificar “Ativar Suporte ao Servidor de Fonte”:
 
 <img src="media/ReleaseNotes-1.4/pdb_vs_sourceserver.png" align="center" />
 
-### Sprite Studio (breaking change)
+### Sprite Studio (mudança quebrando)
 
-The XML format used to import models and animation has been updated to use the latest version of Sprite Studio, instead of the legacy exporter format used previously.
-With this new format, we recommend that you copy your whole Sprite Studio project (all files are needed) into the RawAssets folder of your Xenko project. Please refer to the sample game for details.
+O formato XML usado para importar modelos e animação foi atualizado para usar a versão mais recente do Sprite Studio, em vez do formato do exportador legado usado anteriormente.
+Com este novo formato, recomendamos que você copie todo o seu projeto Sprite Studio (todos os arquivos são necessários) na pasta RawAssets do seu projeto Xenko. Consulte o jogo de amostra para obter detalhes.
 
-## Version 1.4.0-beta
+## Versão 1.4.0-beta
 
-Release date: 2015/12/01
+Data de lançamento: 2015\/12\/01
 
-### Enhancements
-
-#### Editor
-
-- Main color is now blue instead of purple.
-- Better management of recent project list, especially when working with multiple versions of Xenko.
-
-#### Assets
-
-- Assets were previously versioned individually, but from now on they will more closely match Xenko versions. This will allow package-wide asset upgrades, easier plugin support, and copy-paste support between different Xenko versions.
-- We've switched the compiler from a per-app domain model to a per-process model (similar to MSBuild.exe), to avoid any issues related to environment variables, current working directory and unaware C++ code with static that might be used.
-
-### Issues fixed
+### Melhorias
 
 #### Editor
 
-- Fixed an issue when inserting an asset into the scene hierarchy
-- Fixed an issue when renaming a folder in the solution explorer
-- Properly set the value of the ‘SolutionDir’ variable when building a game from the studio
+- A cor principal agora é azul em vez de roxo.
+- Melhor gestão da lista de projetos recentes, especialmente quando se trabalha com várias versões do Xenko.
 
-#### Engine
+#### Activos
 
-- Fixed an issue with shadows for spot lights that were using orthographic projection instead of perspective.
+- Os ativos foram previamente versionados individualmente, mas a partir de agora eles vão combinar mais de perto as versões Xenko. Isso permitirá atualizações de ativos em todo o pacote, suporte ao plugin mais fácil e suporte ao copy-paste entre diferentes versões Xenko.
+- Mudamos o compilador de um modelo de domínio por aplicativo para um modelo por processo (semelhante a MSBuild.exe), para evitar quaisquer problemas relacionados a variáveis de ambiente, diretório de trabalho atual e código C++ sem conhecimento com estática que pode ser usada.
 
-#### Assets
+### Questões corrigidas
 
-- Fixed the asset compilation crash when Xenko installation path contains the ‘##’ character.
-- Allow asset names to contains the ‘.’ period character
+#### Editor
 
-### Known Issues
+- Corrigido um problema ao inserir um ativo na hierarquia de cena
+- Corrigido um problema ao renomear uma pasta no explorador de soluções
+- Definir adequadamente o valor da variável ‘SolutionDir’ ao construir um jogo do estúdio
 
-- iOS has an outstanding crash issue after a few second, especially on recent devices (iPhone 6s). This is currently under investigation.
+#### Motor
+
+- Corrigido um problema com sombras para luzes exatas que estavam usando projeção ortográfica em vez de perspectiva.
+
+#### Activos
+
+- Corrigido o acidente de compilação de ativos quando o caminho de instalação Xenko contém o caractere ‘##’.
+- Permitir nomes de ativos para conter o caractere de período ‘.’
+
+### Questões conhecidas
+
+- o iOS tem um problema de acidente excelente após alguns segundos, especialmente nos dispositivos recentes (iPhone 6s). Isto está sob investigação.

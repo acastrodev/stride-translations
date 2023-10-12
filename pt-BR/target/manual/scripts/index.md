@@ -1,42 +1,42 @@
 # Scripts
 
-**Scripts** are units of code that handle game events, respond to user input, and control entities. In short, scripts make games interactive by adding gameplay.
+**Scripts** são unidades de código que lidam com eventos de jogo, respondem à entrada do usuário e entidades de controle. Em resumo, scripts fazem jogos interativos adicionando jogabilidade.
 
-You use scripts by adding them to entities in the scene as components. Stride loads a script when the entity it is added to is loaded in the scene.
+Você usa scripts adicionando-os a entidades na cena como componentes. Stride carrega um script quando a entidade a que é adicionada é carregada na cena.
 
-Stride scripts are written in **C#**. You can edit scripts in Game Studio or another IDE (such as Visual Studio). Scripts are debugged in Visual Studio.
+Os scripts Stride são escritos em **C#**. Você pode editar scripts no Game Studio ou outro IDE (como Visual Studio). Os scripts são depurados no Visual Studio.
 
-![Scripts](media/scripting_intro.png)
+<x1\/>Scripts<x2\/>
 
-> [!NOTE]
-> Explaining C# is out of the scope of this documentation.
+> <x1\/>!NOTE<x2\/>
+> Explicação C# está fora do âmbito desta documentação.
 
-Scripts have access to the main modules of the Stride engine:
+Os scripts têm acesso aos principais módulos do motor Stride:
 
-* [Audio](xref:Stride.Engine.ScriptComponent.Audio): the audio system
-* [Content](xref:Stride.Engine.ScriptComponent.Content): loads and saves content from assets
+* [Audio](xref:Stride.Engine.ScriptComponent.Audio): o sistema de áudio
+* [Content](xref:Stride.Engine.ScriptComponent.Content): carrega e salva conteúdo de ativos
 * [DebugText](xref:Stride.Engine.ScriptComponent.DebugText): prints debug text
-* [EffectSystem](xref:Stride.Engine.ScriptComponent.EffectSystem): loads and compiles effects and shaders
-* [Game](xref:Stride.Engine.ScriptComponent.Game): accesses all information related to your game
-* [GraphicsDevice](xref:Stride.Engine.ScriptComponent.GraphicsDevice): low-level graphics device to create GPU resources
-* [Input](xref:Stride.Engine.ScriptComponent.Input): keyboard, mouse and gamepad states and events
-* [Log](xref:Stride.Engine.ScriptComponent.Log): logs messages and errors from scripts
-* [SceneSystem](xref:Stride.Engine.ScriptComponent.SceneSystem): the currently displayed scene
-* [Script](xref:Stride.Engine.ScriptComponent.Script): accesses the script manager to schedule or wait for the termination of scripts
-* [Services](xref:Stride.Engine.ScriptComponent.Services): a registry of services you can use to register your own services
-* [SpriteAnimation](xref:Stride.Engine.ScriptComponent.SpriteAnimation): animates sprites
+* [EffectSystem](xref:Stride.Engine.ScriptComponent.EffectSystem): cargas e compila efeitos e shaders
+* [Game](xref:Stride.Engine.ScriptComponent.Game): acessa todas as informações relacionadas ao seu jogo
+* [GraphicsDevice](xref:Stride.Engine.ScriptComponent.GraphicsDevice): dispositivo gráfico de baixo nível para criar recursos de GPU
+* [Input](xref:Stride.Engine.ScriptComponent.Input): estados e eventos de teclado, mouse e gamepad
+* [Log](xref:Stride.Engine.ScriptComponent.Log): registra mensagens e erros de scripts
+* [SceneSystem](xref:Stride.Engine.ScriptComponent.SceneSystem): a cena exibida atualmente
+* [Script](xref:Stride.Engine.ScriptComponent.Script): acessa o gerenciador de scripts para agendar ou esperar pela terminação de scripts
+* [Services](xref:Stride.Engine.ScriptComponent.Services): um registro de serviços que você pode usar para registrar seus próprios serviços
+* [SpriteAnimation](xref:Stride.Engine.ScriptComponent.SpriteAnimation): anima sprites
 * [Streaming](xref:Stride.Engine.ScriptComponent.Streaming): streams content
 
-You can still use standard C# classes in Stride, but these aren't called scripts and you can't attach them to entities in Game Studio.
+Você ainda pode usar classes C# padrão no Stride, mas estas não são chamadas de scripts e você não pode anexá-las a entidades no Game Studio.
 
-## In this section
+## Nesta secção
 
-* [Types of script](types-of-script.md)
-* [Create a script](create-a-script.md)
-* [Use a script](use-a-script.md)
-* [Public properties and fields](public-properties-and-fields.md)
-* [Scheduling and priorities](scheduling-and-priorities.md)
-* [Events](events.md)
-* [Debugging](debugging.md)
-* [Preprocessor variables](preprocessor-variables.md)
-* [Create a model from code](create-a-model-from-code.md)
+* [Tipos de script](types-of-script.md)
+* [Criar um script](create-a-script.md)
+* [Use um script](use-a-script.md)
+* [Propriedades e campos públicos](public-properties-and-fields.md)
+* [Programação e prioridades](scheduling-and-priorities.md)
+* [Eventos](events.md)
+* [Depuração](debugging.md)
+* [Variáveis de pré-processamento](preprocessor-variables.md)
+* [Criar um modelo de código](create-a-model-from-code.md)

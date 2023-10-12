@@ -1,42 +1,42 @@
-# Effects and shaders
+# Efeitos e shaders
 
-Stride uses a programmable shading pipeline. You can write [custom shaders](custom-shaders.md), create @'Stride.Graphics.Effect's from them, and use them for drawing. The @'Stride.Rendering.EffectSystem' class provides an easy way to load an effect.
+Stride usa um pipeline de sombreamento programável. Você pode escrever [ shaders](custom-shaders.md), criar @'Stride. Gráficos. Efeito é deles, e usá-los para desenhar. A classe @'Stride.Rendering.EffectSystem' fornece uma maneira fácil de carregar um efeito.
 
-## Load an effect
+## Carregar um efeito
 
-Use:
+Uso:
 
 ```cs
 var myEffect = EffectSystem.LoadEffect("MyEffect").WaitForResult();
 ```
 
-You can then bind the effect as [pipeline state](../low-level-api/pipeline-state.md).
+Você pode então ligar o efeito como [pipeline state](../low-level-api/pipeline-state.md).
 
-An effect also often defines a set of parameters. To set these, you need to [bind resources](../low-level-api/resources.md) before drawing.
+Um efeito também muitas vezes define um conjunto de parâmetros. Para definir estes, você precisa [ recursos combinados](../low-level-api/resources.md) antes de desenhar.
 
 ## Shaders
 
-Shaders are authored in the [Stride's shading language](shading-language/index.md), which is an extension of `HLSL`. They provide true composition of modular shaders via [inheritance](shading-language/shader-classes-mixins-and-inheritance.md), shader [mixins](shading-language/composition.md) and [automatic weaving of shader in-out attributes](shading-language/automatic-shader-stage-input-output.md).
+Os Shaders são escritos na linguagem de sombreamento [Stride](shading-language/index.md), que é uma extensão de `HLSL`. Eles fornecem a verdadeira composição de shaders modulares através de [heritance](shading-language/shader-classes-mixins-and-inheritance.md), shader [mixins](shading-language/composition.md) e [ tecelagem automática de atributos in-out shader](shading-language/automatic-shader-stage-input-output.md).
 
-## Effects
+## Efeitos
 
-[Effects](effect-language.md) in Stride use C#-like syntax to further combine shaders. They provide conditional composition of shaders to generate effect permutations.
+[ Efeitos](effect-language.md) em Stride usar sintaxe tipo C# para combinar ainda mais shaders. Eles fornecem composição condicional de shaders para gerar permutações de efeito.
 
-As some platforms can't compile shaders at runtime (eg iOS, Android, etc), effect permutation files (`.sdeffectlog`) are used to enumerate all permutations ahead of time.
+Como algumas plataformas não podem compilar shaders em tempo de execução (por exemplo, iOS, Android, etc), arquivos de permutação de efeitos (`.sdeffectlog`) são usados para enumerar todas as permutações antes do tempo.
 
-## Target everything
+## Alvo tudo
 
-Stride shaders are converted automatically to the target graphics platform — either plain HLSL for Direct3D, `GLSL` for OpenGL, or `SPIR-V` for Vulkan platforms.
+Os shaders Stride são convertidos automaticamente para a plataforma gráfica de destino — ou HLSL simples para Direct3D, `GLSL` para OpenGL, ou `SPIR-V` para plataformas Vulkan.
 
-For mobile platforms, shaders are optimized by a GLSL optimizer to improve performance.
+Para plataformas móveis, os shaders são otimizados por um otimizador GLSL para melhorar o desempenho.
 
-## In this section
+## Nesta secção
 
-* [Effect language](effect-language.md)
-* [Shading language](shading-language/index.md)
-   - [Shader classes, mixins and inheritance](shading-language/shader-classes-mixins-and-inheritance.md)
-   - [Composition](shading-language/composition.md)
-   - [Compile shaders](compile-shaders.md)
-   - [Templates](shading-language/templates.md)
-   - [Shader stage input/output automatic management](shading-language/automatic-shader-stage-input-output.md)
-* [Custom shaders](custom-shaders.md)
+* [Efeito da linguagem](effect-language.md)
+* [Língua de Shading](shading-language/index.md)
+   - [Shader classes, misturas e herança](shading-language/shader-classes-mixins-and-inheritance.md)
+   - [Composição](shading-language/composition.md)
+   - [Sombreadores computacionais](compile-shaders.md)
+   - [Modelos](shading-language/templates.md)
+   - [Shader fase de entrada \/ saída gestão automática](shading-language/automatic-shader-stage-input-output.md)
+* [Sombreadores personalizados](custom-shaders.md)

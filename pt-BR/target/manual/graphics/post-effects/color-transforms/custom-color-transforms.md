@@ -1,157 +1,157 @@
-# Custom color transforms
+# Transformações de cor personalizadas
 
-<span class="badge text-bg-primary">Advanced</span>
-<span class="badge text-bg-success">Programmer</span>
+<x1\/> Avançado <x2\/>
+<x3\/> Programador <x4\/>
 
-You can write your own **custom color transform** effects. For example, you can create:
+Você pode escrever seus próprios efeitos ** custom color transform**. Por exemplo, você pode criar:
 
-* water droplets on the camera
-* screen transitions (such as fade-ins and fade-outs)
-* effects simulating pain or intoxication (eg by applying tints or other effects)
-* object outlines
+* gotículas de água na câmera
+* transições de tela (como fade-ins e fade-outs)
+* efeitos simulando dor ou intoxicação (por exemplo, aplicando tints ou outros efeitos)
+* contornos de objetos
 
-To create a custom color transform, you need to write two files: an effect shader (containing the effect itself), and a C# class (to make the effect accessible in Game Studio).
+Para criar uma transformação de cor personalizada, você precisa escrever dois arquivos: um shader de efeito (contendo o próprio efeito), e uma classe C# (para tornar o efeito acessível no Game Studio).
 
-## 1. Create a shader
+## 1. Criar um shader
 
-1. Make sure you have the [Stride Visual Studio extension](../../../get-started/visual-studio-extension.md) installed. This is necessary to convert the shader files from SDSL ([Stride shading language](../../effects-and-shaders/shading-language/index.md)) to `.cs` files.
+1. Certifique-se de ter a extensão [Stride Visual Studio](../../../get-started/visual-studio-extension.md) instalada. Isso é necessário para converter os arquivos shader de SDSL ([Stride shading language](../../effects-and-shaders/shading-language/index.md)) para `.cs` arquivos.
 
-2. In Game Studio, in the toolbar, click ![Open in IDE](../../../get-started/media/launch-your-game-ide-icon.png) (**Open in IDE**) to open your project in Visual Studio.
+2. No Game Studio, na barra de ferramentas, clique em <x1\/>Open in IDE<x2\/> (**Open in IDE**) para abrir seu projeto no Visual Studio.
 
-3. In the Visual Studio **Solution Explorer**, right-click the project (eg *MyGame.Game*) and select **New item**.
+3. No Visual Studio **Solution Explorer**, clique com o botão direito do mouse no projeto (por exemplo *MyGame.Game*) e selecione ** Novo item**.
 
-   ![New item](../../effects-and-shaders/media/new-item.png)
+   <x1\/> Novo item<x2\/>
 
-4. Select **Class**.
+4. Selecione **Class**.
 
-   ![Select class](../../effects-and-shaders/media/select-class.png)
+   <x1\/>Selecionar classe<x2\/>
 
-5. In the **Name** field, specify a name with the extension **.sdsl** (eg *MyColorTransformShader.sdsl*), and click **Add**.
+5. No campo **Name**, especifique um nome com a extensão **.sdsl** (por exemplo *MyColorTransformShader.sdsl*), e clique em **Add**.
 
-   ![Create post effect](media/create-post-effect.png)
+   <x1\/>Criar o efeito pós<x2\/>
 
-   The Stride Visual Studio extension automatically generates a `.cs` file from the `.sdsl` file. The Solution Explorer lists it as a child of the `.sdsl` file.
+   A extensão do Stride Visual Studio gera automaticamente um arquivo `.cs` do arquivo `.sdsl`. O Solution Explorer lista-o como uma criança do arquivo `.sdsl`.
 
-   ![My post effect](media/my-post-effect.png)
+   <x1\/> Meu efeito pós <x2\/>
 
-6. Open the `.sdsl` file, remove the existing lines, and write your shader.
+6. Abra o arquivo `.sdsl`, remova as linhas existentes e escreva o seu shader.
 
-   Shaders are written in Stride Shading Language (SDSL), which is based on HLSL. For more information, see [Shading language](../../effects-and-shaders/shading-language/index.md).
+   Shaders são escritos em Stride Shading Language (SDSL), que é baseado em HLSL. Para mais informações, consulte [Shading language](../../effects-and-shaders/shading-language/index.md).
 
-   For example, the shader below multiplies the image color by the `MyColor` parameter:
+   Por exemplo, o shader abaixo multiplica a cor da imagem pelo parâmetro `MyColor`:
 
    ```cs
-   shader MyColorTransformShader : ColorTransformShader
-   {
-       [Color]
+   máquina de montagem automática Shader.. Máquina de montagem automática
+   (
+       [Cor]
        float4 MyColor;
    
-       override float4 Compute(float4 color)
-       {
-           return color * MyColor;
+       override float4 Compute (cor de float4)
+       (
+           cor de retorno * MyColor;
        }
    };
    ```
-   > [!Note]
-   > Make sure the shader name in the file (eg `MyColorTransformShader` in the code above) is the same as the filename (eg *MyColorTransformShader.sdsl*).
+   > <x1\/>!Note<x2\/>
+   > Certifique-se de que o nome do shader no arquivo (por exemplo `MyColorTransformShader` no código acima) é o mesmo que o nome do arquivo (por exemplo *MyColorTransformShader.sdsl*).
 
-## 2. Create a C# class
+## 2. Criar uma classe C#
 
-1. In the Visual Studio **Solution Explorer**, right-click the project (eg *MyGame.Game*) and select **Add > New item**.
+1. No Visual Studio **Solution Explorer**, clique com o botão direito do mouse no projeto (por exemplo *MyGame.Game*) e selecione **Add > Novo item**.
 
-   ![New item](../../effects-and-shaders/media/new-item.png)
+   <x1\/> Novo item<x2\/>
 
-2. Select **Class**, specify a **name** (eg *MyColorTransform.cs*), and click **Add**.
+2. Selecione **Class**, especifique um **name** (por exemplo *MyColorTransform.cs*), e clique em **Add**.
 
-   ![Add script](media/add-script.png)
+   <x1\/> Adicionar script<x2\/>
 
-   Open the file and write the class.
+   Abra o arquivo e escreva a classe.
 
-   For example, the code below creates the class `MyColorTransform`, which uses the shader and supplies a value for the color `MyColor` (defined in the shader).
+   Por exemplo, o código abaixo cria a classe `MyColorTransform`, que usa o shader e fornece um valor para a cor `MyColor` (definido no shader).
 
    ```cs
-   using Stride.Core;
-   using Stride.Core.Mathematics;
-   using Stride.Rendering;
-   using Stride.Rendering.Images;
+   usando Stride. Núcleo;
+   usando Stride. Core.Matemática;
+   usando Stride. Renderização;
+   usando Stride. Renderização. Imagens;
    
    namespace MyGame
-   {
+   (
        [DataContract("MyColorTransform")]
-       public class MyColorTransform : ColorTransform
-       {
-           /// <inheritdoc />
-           public MyColorTransform() 
+       classe pública MyColorTransform : Transferência de cores
+       (
+           \/\/\/ <inheritdoc \/>
+           público MyColorTransform() 
                : base("MyColorTransformShader")
-           {
+           (
            }
    
            public Color4 MyColor { get; set; }
    
-           public override void UpdateParameters(ColorTransformContext context)
-           {
-               Parameters.Set(MyColorTransformShaderKeys.MyColor, MyColor);
+           override público void UpdateParameters(ColorTransformContext)
+           (
+               Parâmetros.Set (MyColorTransformShaderKeys.MyColor, MyColor);
    
-               // Copy parameters to parent
-               base.UpdateParameters(context);
+               \/\/ Copiar parâmetros para o pai
+               base.UpdateParameters(contexto);
            }
        }
    }
    ```
-   > [!Note]
-   > Make sure the class name in the file (eg `MyColorTransform` in the class above) is the same as the filename (eg *MyColorTransform.cs*).
+   > <x1\/>!Note<x2\/>
+   > Certifique-se de que o nome da classe no arquivo (por exemplo `MyColorTransform` na classe acima) é o mesmo que o nome do arquivo (por exemplo *MyColorTransform.cs*).
 
-3. Save all the files in the solution (**File > Save All**).
+3. Salve todos os arquivos na solução (**File > Save All**).
 
-4. In Game Studio, reload the assemblies.
+4. No Game Studio, recarregue os conjuntos.
 
-   ![Reload assemblies](../../../particles/tutorials/media/reload-assemblies.png)
+   <x1\/>Reload assemblies<x2\/>
 
-   The **Asset View** lists the class and effect shader in the same directory as your scripts (eg **MyGame.Game**).
+   O **Asset View** lista o shader de classe e efeito no mesmo diretório que seus scripts (por exemplo **MyGame.Game**).
 
-   ![Shader in Asset View](media/post-effect-shader.png)
+   <x1\/>Shader em Asset View<x2\/>
 
-   > [!Note]
-   > In some situations, Game Studio incorrectly detects the shader as a script, as in the screenshot below:
+   > <x1\/>!Note<x2\/>
+   > Em algumas situações, Game Studio detecta incorretamente o shader como um script, como na captura de tela abaixo:
 
-   > ![Shader as script](media/broken-script-icon.png)
+   > <x1\/>Shader como script<x2\/>
 
-   > If this happens, restart Game Studio (**File > Reload project**).
+   > Se isso acontecer, reinicie o Game Studio (**File > Recarregar projeto**).
 
-## 3. Use a custom color transform
+## 3. Use uma transformação de cor personalizada
 
-1. In the **Asset View** (in the bottom pane by default), double-click the **Graphics Compositor** asset.
+1. No **Asset View** (no painel inferior por padrão), clique duas vezes no **Graphics Compositor** ativo.
 
-   ![Graphics Compositor asset](../../graphics-compositor/media/graphics-compositor-asset.png)
+   <x1\/>Gráficos Compositor asset<x2\/>
 
-   The **graphics compositor editor** opens.
+   O editor de compositores **graphics** abre.
 
-   ![Graphics Compositor editor](../../graphics-compositor/media/graphics-compositor-editor.png)
+   <x1\/>Gráfico Compositor editor<x2\/>
 
-2. Select the **Post-processing effects** node.
+2. Selecione o **Efeitos de processamento de pó**Nodo>.
 
-3. In the **Property Grid**, under **Color transforms**, click ![Green plus button](~/manual/game-studio/media/green-plus-icon.png) (**Change**) and select your color transform (eg **MyColorTransform**).
+3. No **Property Grid**, sob **Color transforma**, clique em <x1\/>Green plus button<x2\/> (**Change**) e selecione a sua transformação de cor (por exemplo **MyColorTransform**).
 
-   ![Add script](media/add-script-in-properties.png)
+   <x1\/> Adicionar script<x2\/>
 
-* To enable and disable the effect, use the check box next to the item.
+* Para ativar e desativar o efeito, use a caixa de seleção ao lado do item.
 
-   ![Enable and disable custom post effect](media/enable-disable-custom-post-effect.png)
+   <x1\/> Habilitar e desativar o efeito pós personalizado<x2\/>
 
-* To edit the public properties you specified in the class, expand the item.
+* Para editar as propriedades públicas especificadas na classe, expanda o item.
 
-   ![Expand item](media/view-custom-post-fx-properties.png)
+   <x1\/>Expand item<x2\/>
 
-   When you adjust the properties, Game Studio updates the effect automatically.
+   Quando você ajusta as propriedades, Game Studio atualiza o efeito automaticamente.
 
-> [!Warning]
-> Unfortunately, this part of Game Studio has a memory leak problem. Every time you change a value in the graphics compositor, it uses 60MB of memory. To prevent Game Studio using too much memory, we recommend you restart it after you change a property a few times. This is a known issue.
+> <x1\/>!Warning<x2\/>
+> Infelizmente, esta parte do Game Studio tem um problema de vazamento de memória. Cada vez que você muda um valor no compositor gráfico, ele usa 60MB de memória. Para evitar o Game Studio usando muita memória, recomendamos reiniciá-lo depois de alterar uma propriedade algumas vezes. Este é um problema conhecido.
 
-## See also
+## Ver também
 
-* [Shading language](../../effects-and-shaders/shading-language/index.md)
-* [Custom shaders](../../effects-and-shaders/custom-shaders.md)
-* [Graphics compositor](../../graphics-compositor/index.md)
-* [Post effects](../index.md)
-* [Color transforms](index.md)
-* [Stride Visual Studio extension](../../../get-started/visual-studio-extension.md)
+* [Língua de Shading](../../effects-and-shaders/shading-language/index.md)
+* [Sombreadores personalizados](../../effects-and-shaders/custom-shaders.md)
+* [Compositor gráfico](../../graphics-compositor/index.md)
+* [Efeitos postais](../index.md)
+* [Transformações de cor](index.md)
+* [Extensão do Stride Visual Studio](../../../get-started/visual-studio-extension.md)

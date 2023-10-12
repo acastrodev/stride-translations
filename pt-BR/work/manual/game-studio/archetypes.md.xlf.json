@@ -1,478 +1,478 @@
 {
-    "filename": "manual\\game-studio\\archetypes.md.xlf",
-    "files": [
-        {
-            "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/game-studio\/archetypes.md": [
-                [
-                    "Archetypes",
-                    "",
-                    "Archetypes",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/game-studio\/archetypes.md",
-                    {
-                        "id": "tu1"
-                    }
-                ],
-                [
-                    "<x1\/>Intermediate<x2\/>",
-                    "",
-                    "<x1\/>Intermediate<x2\/>\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/game-studio\/archetypes.md",
-                    {
-                        "id": "tu2"
-                    }
-                ],
-                [
-                    "<x3\/>Designer<x4\/>",
-                    "",
-                    "<x3\/>Designer<x4\/>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/game-studio\/archetypes.md",
-                    {
-                        "id": "tu2"
-                    }
-                ],
-                [
-                    "An <g1>archetype<\/g1> is a master asset that controls the properties of assets you <g2>derive<\/g2> from it.",
-                    "",
-                    "An <g1>archetype<\/g1> is a master asset that controls the properties of assets you <g2>derive<\/g2> from it.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/game-studio\/archetypes.md",
-                    {
-                        "id": "tu3"
-                    }
-                ],
-                [
-                    "Derived assets are useful when you want to create a \"remixed\" version of an asset.",
-                    "",
-                    " Derived assets are useful when you want to create a \"remixed\" version of an asset.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/game-studio\/archetypes.md",
-                    {
-                        "id": "tu3"
-                    }
-                ],
-                [
-                    "For example, imagine we have three sphere entities that share a material asset named <g1>Metal<\/g1>.",
-                    "",
-                    "For example, imagine we have three sphere entities that share a material asset named <g1>Metal<\/g1>.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/game-studio\/archetypes.md",
-                    {
-                        "id": "tu4"
-                    }
-                ],
-                [
-                    "The Metal asset has properties including color, gloss, and so on.",
-                    "",
-                    " The Metal asset has properties including color, gloss, and so on.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/game-studio\/archetypes.md",
-                    {
-                        "id": "tu4"
-                    }
-                ],
-                [
-                    "<x1\/>Three metal spheres<x2\/>",
-                    "",
-                    "<x1\/>Three metal spheres<x2\/>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/game-studio\/archetypes.md",
-                    {
-                        "id": "tu5"
-                    }
-                ],
-                [
-                    "If we change a property in the <g1>Metal<\/g1> asset, it applies to all three spheres.",
-                    "",
-                    "If we change a property in the <g1>Metal<\/g1> asset, it applies to all three spheres.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/game-studio\/archetypes.md",
-                    {
-                        "id": "tu6"
-                    }
-                ],
-                [
-                    "So, for example, if we change the color property, all three spheres change color.",
-                    "",
-                    " So, for example, if we change the color property, all three spheres change color.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/game-studio\/archetypes.md",
-                    {
-                        "id": "tu6"
-                    }
-                ],
-                [
-                    "<x1\/>Three gold spheres<x2\/>",
-                    "",
-                    "<x1\/>Three gold spheres<x2\/>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/game-studio\/archetypes.md",
-                    {
-                        "id": "tu7"
-                    }
-                ],
-                [
-                    "Now imagine we want to change the color of only <g1>one<\/g1> sphere, but keep its other properties the same.",
-                    "",
-                    "Now imagine we want to change the color of only <g1>one<\/g1> sphere, but keep its other properties the same.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/game-studio\/archetypes.md",
-                    {
-                        "id": "tu8"
-                    }
-                ],
-                [
-                    "We could duplicate the material asset, change its color, and then apply the new asset to only one sphere.",
-                    "",
-                    " We could duplicate the material asset, change its color, and then apply the new asset to only one sphere.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/game-studio\/archetypes.md",
-                    {
-                        "id": "tu8"
-                    }
-                ],
-                [
-                    "But if we later want to change a different property across <g2>all<\/g2> the spheres, we have to modify both assets.",
-                    "",
-                    " But if we later want to change a different property across <g2>all<\/g2> the spheres, we have to modify both assets.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/game-studio\/archetypes.md",
-                    {
-                        "id": "tu8"
-                    }
-                ],
-                [
-                    "This is time-consuming and leaves room for mistakes.",
-                    "",
-                    " This is time-consuming and leaves room for mistakes.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/game-studio\/archetypes.md",
-                    {
-                        "id": "tu8"
-                    }
-                ],
-                [
-                    "The better approach is to derive a new asset from the archetype.",
-                    "",
-                    "The better approach is to derive a new asset from the archetype.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/game-studio\/archetypes.md",
-                    {
-                        "id": "tu9"
-                    }
-                ],
-                [
-                    "The derived asset inherits properties from the archetype and lets you override individual properties where you need them.",
-                    "",
-                    " The derived asset inherits properties from the archetype and lets you override individual properties where you need them.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/game-studio\/archetypes.md",
-                    {
-                        "id": "tu9"
-                    }
-                ],
-                [
-                    "For example, we can derive the sphere's material asset and override its color.",
-                    "",
-                    " For example, we can derive the sphere's material asset and override its color.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/game-studio\/archetypes.md",
-                    {
-                        "id": "tu9"
-                    }
-                ],
-                [
-                    "Then, if we change the gloss of the archetype, the gloss of all three spheres changes.",
-                    "",
-                    " Then, if we change the gloss of the archetype, the gloss of all three spheres changes.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/game-studio\/archetypes.md",
-                    {
-                        "id": "tu9"
-                    }
-                ],
-                [
-                    "<x1\/>Create derived asset<x2\/>",
-                    "",
-                    "<x1\/>Create derived asset<x2\/>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/game-studio\/archetypes.md",
-                    {
-                        "id": "tu10"
-                    }
-                ],
-                [
-                    "You can derive an asset from an archetype, then in turn derive another asset from that derived asset.",
-                    "",
-                    "You can derive an asset from an archetype, then in turn derive another asset from that derived asset.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/game-studio\/archetypes.md",
-                    {
-                        "id": "tu11"
-                    }
-                ],
-                [
-                    "This way you can create different layers of assets to keep your project organized:",
-                    "",
-                    " This way you can create different layers of assets to keep your project organized:",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/game-studio\/archetypes.md",
-                    {
-                        "id": "tu11"
-                    }
-                ],
-                [
-                    "Archetype",
-                    "",
-                    "Archetype\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/game-studio\/archetypes.md",
-                    {
-                        "id": "tu12"
-                    }
-                ],
-                [
-                    "Derived asset",
-                    "",
-                    "    Derived asset\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/game-studio\/archetypes.md",
-                    {
-                        "id": "tu12"
-                    }
-                ],
-                [
-                    "Derived asset",
-                    "",
-                    "        Derived asset\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/game-studio\/archetypes.md",
-                    {
-                        "id": "tu12"
-                    }
-                ],
-                [
-                    "Derive an asset from an archetype",
-                    "",
-                    "Derive an asset from an archetype",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/game-studio\/archetypes.md",
-                    {
-                        "id": "tu13"
-                    }
-                ],
-                [
-                    "In the <g1>Asset View<\/g1>, right-click the asset you want to derive an asset from and select <g2>Create derived asset<\/g2>:",
-                    "",
-                    "In the <g1>Asset View<\/g1>, right-click the asset you want to derive an asset from and select <g2>Create derived asset<\/g2>:",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/game-studio\/archetypes.md",
-                    {
-                        "id": "tu14"
-                    }
-                ],
-                [
-                    "<x1\/>Create derived asset<x2\/>",
-                    "",
-                    "<x1\/>Create derived asset<x2\/>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/game-studio\/archetypes.md",
-                    {
-                        "id": "tu15"
-                    }
-                ],
-                [
-                    "Game Studio adds a new <g1>derived asset<\/g1> to the project.",
-                    "",
-                    "Game Studio adds a new <g1>derived asset<\/g1> to the project.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/game-studio\/archetypes.md",
-                    {
-                        "id": "tu16"
-                    }
-                ],
-                [
-                    "This asset derives its properties from the <g2>archetype<\/g2> asset.",
-                    "",
-                    " This asset derives its properties from the <g2>archetype<\/g2> asset.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/game-studio\/archetypes.md",
-                    {
-                        "id": "tu16"
-                    }
-                ],
-                [
-                    "The derived asset properties display the archetype asset under <g1>Archetype<\/g1>:",
-                    "",
-                    "The derived asset properties display the archetype asset under <g1>Archetype<\/g1>:",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/game-studio\/archetypes.md",
-                    {
-                        "id": "tu17"
-                    }
-                ],
-                [
-                    "<x1\/>Derived asset in Property Grid<x2\/>",
-                    "",
-                    "<x1\/>Derived asset in Property Grid<x2\/>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/game-studio\/archetypes.md",
-                    {
-                        "id": "tu18"
-                    }
-                ],
-                [
-                    "You can right-click the archetype asset in the Property Grid and select <g1>Select the referenced asset<\/g1> to quickly select the archetype asset:",
-                    "",
-                    "You can right-click the archetype asset in the Property Grid and select <g1>Select the referenced asset<\/g1> to quickly select the archetype asset:",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/game-studio\/archetypes.md",
-                    {
-                        "id": "tu19"
-                    }
-                ],
-                [
-                    "<x1\/>Select referenced asset<x2\/>",
-                    "",
-                    "<x1\/>Select referenced asset<x2\/>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/game-studio\/archetypes.md",
-                    {
-                        "id": "tu20"
-                    }
-                ],
-                [
-                    "Overridden properties",
-                    "",
-                    "Overridden properties",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/game-studio\/archetypes.md",
-                    {
-                        "id": "tu21"
-                    }
-                ],
-                [
-                    "The <g1>Property Grid<\/g1> shows which properties of the derived asset differ from the archetype.",
-                    "",
-                    "The <g1>Property Grid<\/g1> shows which properties of the derived asset differ from the archetype.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/game-studio\/archetypes.md",
-                    {
-                        "id": "tu22"
-                    }
-                ],
-                [
-                    "<g2>Overridden<\/g2> and <g3>unique<\/g3> properties are <g4>white<\/g4>, and <g5>inherited<\/g5> (identical) properties are <g6>gray<\/g6>.",
-                    "",
-                    " <g2>Overridden<\/g2> and <g3>unique<\/g3> properties are <g4>white<\/g4>, and <g5>inherited<\/g5> (identical) properties are <g6>gray<\/g6>.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/game-studio\/archetypes.md",
-                    {
-                        "id": "tu22"
-                    }
-                ],
-                [
-                    "In this screenshot, the <g1>Diffuse Map<\/g1> property is overridden.",
-                    "",
-                    "In this screenshot, the <g1>Diffuse Map<\/g1> property is overridden.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/game-studio\/archetypes.md",
-                    {
-                        "id": "tu23"
-                    }
-                ],
-                [
-                    "The other properties are inherited:",
-                    "",
-                    " The other properties are inherited:",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/game-studio\/archetypes.md",
-                    {
-                        "id": "tu23"
-                    }
-                ],
-                [
-                    "<x1\/>Overridden properties are white<x2\/>",
-                    "",
-                    "<x1\/>Overridden properties are white<x2\/>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/game-studio\/archetypes.md",
-                    {
-                        "id": "tu24"
-                    }
-                ],
-                [
-                    "Reset a property to archetype value",
-                    "",
-                    "Reset a property to archetype value",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/game-studio\/archetypes.md",
-                    {
-                        "id": "tu25"
-                    }
-                ],
-                [
-                    "You can reset overridden or unique properties of a derived asset to the values in the archetype.",
-                    "",
-                    "You can reset overridden or unique properties of a derived asset to the values in the archetype.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/game-studio\/archetypes.md",
-                    {
-                        "id": "tu26"
-                    }
-                ],
-                [
-                    "To do this, right-click the overridden property and select <g1>Reset to base value<\/g1>.",
-                    "",
-                    " To do this, right-click the overridden property and select <g1>Reset to base value<\/g1>.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/game-studio\/archetypes.md",
-                    {
-                        "id": "tu26"
-                    }
-                ],
-                [
-                    "<x1\/>Reset to base value<x2\/>",
-                    "",
-                    "<x1\/>Reset to base value<x2\/>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/game-studio\/archetypes.md",
-                    {
-                        "id": "tu27"
-                    }
-                ],
-                [
-                    "Clear an archetype",
-                    "",
-                    "Clear an archetype",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/game-studio\/archetypes.md",
-                    {
-                        "id": "tu28"
-                    }
-                ],
-                [
-                    "You can remove the link between the archetype and the derived asset.",
-                    "",
-                    "You can remove the link between the archetype and the derived asset.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/game-studio\/archetypes.md",
-                    {
-                        "id": "tu29"
-                    }
-                ],
-                [
-                    "This means the derived asset no longer inherits changes to the archetype; it becomes a completely independent.",
-                    "",
-                    " This means the derived asset no longer inherits changes to the archetype; it becomes a completely independent.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/game-studio\/archetypes.md",
-                    {
-                        "id": "tu29"
-                    }
-                ],
-                [
-                    "To do this, in the <g1>Asset View<\/g1>, right-click the derived asset and select <g2>Clear archetype<\/g2>.",
-                    "",
-                    "To do this, in the <g1>Asset View<\/g1>, right-click the derived asset and select <g2>Clear archetype<\/g2>.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/game-studio\/archetypes.md",
-                    {
-                        "id": "tu30"
-                    }
-                ],
-                [
-                    "<x1\/>Clear archetype<x2\/>",
-                    "",
-                    "<x1\/>Clear archetype<x2\/>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/game-studio\/archetypes.md",
-                    {
-                        "id": "tu31"
-                    }
-                ],
-                [
-                    "See also",
-                    "",
-                    "See also",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/game-studio\/archetypes.md",
-                    {
-                        "id": "tu32"
-                    }
-                ],
-                [
-                    "Assets",
-                    "",
-                    "<g1>Assets<\/g1>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/game-studio\/archetypes.md",
-                    {
-                        "id": "tu33"
-                    }
-                ],
-                [
-                    "Prefabs",
-                    "",
-                    "<g1>Prefabs<\/g1>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/game-studio\/archetypes.md",
-                    {
-                        "id": "tu34"
-                    }
-                ]
-            ]
-        }
-    ],
-    "seg_enabled": false
+  "filename": "manual\\game-studio\\archetypes.md.xlf",
+  "files": [
+    {
+      "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/game-studio\\/archetypes.md": [
+        [
+          "Archetypes",
+          "Arquétipos",
+          "Archetypes",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/game-studio\\/archetypes.md",
+          {
+            "id": "tu1"
+          }
+        ],
+        [
+          "<x1\\/>Intermediate<x2\\/>",
+          "<x1\\/> Intermediário <x2\\/>",
+          "<x1\\/>Intermediate<x2\\/>\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/game-studio\\/archetypes.md",
+          {
+            "id": "tu2"
+          }
+        ],
+        [
+          "<x3\\/>Designer<x4\\/>",
+          "<x3\\/>Designer<x4\\/>",
+          "<x3\\/>Designer<x4\\/>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/game-studio\\/archetypes.md",
+          {
+            "id": "tu2"
+          }
+        ],
+        [
+          "An <g1>archetype<\\/g1> is a master asset that controls the properties of assets you <g2>derive<\\/g2> from it.",
+          "Um <g1>archetype<\\/g1> é um ativo mestre que controla as propriedades de ativos que você <g2>derive<\\/g2> a partir dele.",
+          "An <g1>archetype<\\/g1> is a master asset that controls the properties of assets you <g2>derive<\\/g2> from it.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/game-studio\\/archetypes.md",
+          {
+            "id": "tu3"
+          }
+        ],
+        [
+          "Derived assets are useful when you want to create a \"remixed\" version of an asset.",
+          "Os ativos derivados são úteis quando você quer criar uma versão \"remixada\" de um ativo.",
+          " Derived assets are useful when you want to create a \"remixed\" version of an asset.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/game-studio\\/archetypes.md",
+          {
+            "id": "tu3"
+          }
+        ],
+        [
+          "For example, imagine we have three sphere entities that share a material asset named <g1>Metal<\\/g1>.",
+          "Por exemplo, imagine que temos três entidades de esferas que compartilham um ativo material chamado <g1>Metal<\\/g1>.",
+          "For example, imagine we have three sphere entities that share a material asset named <g1>Metal<\\/g1>.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/game-studio\\/archetypes.md",
+          {
+            "id": "tu4"
+          }
+        ],
+        [
+          "The Metal asset has properties including color, gloss, and so on.",
+          "O ativo de metal tem propriedades, incluindo cor, brilho e assim por diante.",
+          " The Metal asset has properties including color, gloss, and so on.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/game-studio\\/archetypes.md",
+          {
+            "id": "tu4"
+          }
+        ],
+        [
+          "<x1\\/>Three metal spheres<x2\\/>",
+          "<x1\\/> Três esferas metálicas<x2\\/>",
+          "<x1\\/>Three metal spheres<x2\\/>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/game-studio\\/archetypes.md",
+          {
+            "id": "tu5"
+          }
+        ],
+        [
+          "If we change a property in the <g1>Metal<\\/g1> asset, it applies to all three spheres.",
+          "Se mudarmos uma propriedade no ativo <g1>Metal<\\/g1>, ela se aplica a todas as três esferas.",
+          "If we change a property in the <g1>Metal<\\/g1> asset, it applies to all three spheres.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/game-studio\\/archetypes.md",
+          {
+            "id": "tu6"
+          }
+        ],
+        [
+          "So, for example, if we change the color property, all three spheres change color.",
+          "Então, por exemplo, se mudarmos a propriedade da cor, todas as três esferas mudam de cor.",
+          " So, for example, if we change the color property, all three spheres change color.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/game-studio\\/archetypes.md",
+          {
+            "id": "tu6"
+          }
+        ],
+        [
+          "<x1\\/>Three gold spheres<x2\\/>",
+          "<x1\\/> Três esferas de ouro<x2\\/>",
+          "<x1\\/>Three gold spheres<x2\\/>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/game-studio\\/archetypes.md",
+          {
+            "id": "tu7"
+          }
+        ],
+        [
+          "Now imagine we want to change the color of only <g1>one<\\/g1> sphere, but keep its other properties the same.",
+          "Agora imagine que queremos mudar a cor de apenas <g1>one<\\/g1> esfera, mas mantenha suas outras propriedades iguais.",
+          "Now imagine we want to change the color of only <g1>one<\\/g1> sphere, but keep its other properties the same.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/game-studio\\/archetypes.md",
+          {
+            "id": "tu8"
+          }
+        ],
+        [
+          "We could duplicate the material asset, change its color, and then apply the new asset to only one sphere.",
+          "Podemos duplicar o ativo material, mudar sua cor e, em seguida, aplicar o novo ativo a apenas uma esfera.",
+          " We could duplicate the material asset, change its color, and then apply the new asset to only one sphere.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/game-studio\\/archetypes.md",
+          {
+            "id": "tu8"
+          }
+        ],
+        [
+          "But if we later want to change a different property across <g2>all<\\/g2> the spheres, we have to modify both assets.",
+          "Mas se mais tarde queremos mudar uma propriedade diferente em <g2>all<\\/g2> as esferas, temos que modificar ambos os ativos.",
+          " But if we later want to change a different property across <g2>all<\\/g2> the spheres, we have to modify both assets.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/game-studio\\/archetypes.md",
+          {
+            "id": "tu8"
+          }
+        ],
+        [
+          "This is time-consuming and leaves room for mistakes.",
+          "Isso é demorado e deixa espaço para erros.",
+          " This is time-consuming and leaves room for mistakes.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/game-studio\\/archetypes.md",
+          {
+            "id": "tu8"
+          }
+        ],
+        [
+          "The better approach is to derive a new asset from the archetype.",
+          "A melhor abordagem é derivar um novo ativo do arquétipo.",
+          "The better approach is to derive a new asset from the archetype.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/game-studio\\/archetypes.md",
+          {
+            "id": "tu9"
+          }
+        ],
+        [
+          "The derived asset inherits properties from the archetype and lets you override individual properties where you need them.",
+          "O ativo derivado herda propriedades do arquétipo e permite que você substitua propriedades individuais onde você precisa delas.",
+          " The derived asset inherits properties from the archetype and lets you override individual properties where you need them.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/game-studio\\/archetypes.md",
+          {
+            "id": "tu9"
+          }
+        ],
+        [
+          "For example, we can derive the sphere's material asset and override its color.",
+          "Por exemplo, podemos derivar o ativo material da esfera e substituir sua cor.",
+          " For example, we can derive the sphere's material asset and override its color.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/game-studio\\/archetypes.md",
+          {
+            "id": "tu9"
+          }
+        ],
+        [
+          "Then, if we change the gloss of the archetype, the gloss of all three spheres changes.",
+          "Então, se mudarmos o brilho do arquétipo, o brilho de todas as três esferas muda.",
+          " Then, if we change the gloss of the archetype, the gloss of all three spheres changes.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/game-studio\\/archetypes.md",
+          {
+            "id": "tu9"
+          }
+        ],
+        [
+          "<x1\\/>Create derived asset<x2\\/>",
+          "<x1\\/>Create derivado asset<x2\\/>",
+          "<x1\\/>Create derived asset<x2\\/>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/game-studio\\/archetypes.md",
+          {
+            "id": "tu10"
+          }
+        ],
+        [
+          "You can derive an asset from an archetype, then in turn derive another asset from that derived asset.",
+          "Você pode derivar um ativo de um arquétipo, então, por sua vez, deriva outro ativo daquele ativo derivado.",
+          "You can derive an asset from an archetype, then in turn derive another asset from that derived asset.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/game-studio\\/archetypes.md",
+          {
+            "id": "tu11"
+          }
+        ],
+        [
+          "This way you can create different layers of assets to keep your project organized:",
+          "Desta forma, você pode criar diferentes camadas de ativos para manter seu projeto organizado:",
+          " This way you can create different layers of assets to keep your project organized:",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/game-studio\\/archetypes.md",
+          {
+            "id": "tu11"
+          }
+        ],
+        [
+          "Archetype",
+          "Arquétipo",
+          "Archetype\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/game-studio\\/archetypes.md",
+          {
+            "id": "tu12"
+          }
+        ],
+        [
+          "Derived asset",
+          "Activo derivado",
+          "    Derived asset\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/game-studio\\/archetypes.md",
+          {
+            "id": "tu12"
+          }
+        ],
+        [
+          "Derived asset",
+          "Activo derivado",
+          "        Derived asset\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/game-studio\\/archetypes.md",
+          {
+            "id": "tu12"
+          }
+        ],
+        [
+          "Derive an asset from an archetype",
+          "Derive um ativo de um arquétipo",
+          "Derive an asset from an archetype",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/game-studio\\/archetypes.md",
+          {
+            "id": "tu13"
+          }
+        ],
+        [
+          "In the <g1>Asset View<\\/g1>, right-click the asset you want to derive an asset from and select <g2>Create derived asset<\\/g2>:",
+          "No <g1>Asset View<\\/g1>, clique com o botão direito do mouse no ativo que você deseja obter um ativo de e selecione <g2>Create derivado asset<\\/g2>:",
+          "In the <g1>Asset View<\\/g1>, right-click the asset you want to derive an asset from and select <g2>Create derived asset<\\/g2>:",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/game-studio\\/archetypes.md",
+          {
+            "id": "tu14"
+          }
+        ],
+        [
+          "<x1\\/>Create derived asset<x2\\/>",
+          "<x1\\/>Create derivado asset<x2\\/>",
+          "<x1\\/>Create derived asset<x2\\/>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/game-studio\\/archetypes.md",
+          {
+            "id": "tu15"
+          }
+        ],
+        [
+          "Game Studio adds a new <g1>derived asset<\\/g1> to the project.",
+          "Game Studio adiciona um novo <g1>derived asset<\\/g1> ao projeto.",
+          "Game Studio adds a new <g1>derived asset<\\/g1> to the project.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/game-studio\\/archetypes.md",
+          {
+            "id": "tu16"
+          }
+        ],
+        [
+          "This asset derives its properties from the <g2>archetype<\\/g2> asset.",
+          "Este ativo deriva suas propriedades do ativo <g2>archetype<\\/g2>.",
+          " This asset derives its properties from the <g2>archetype<\\/g2> asset.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/game-studio\\/archetypes.md",
+          {
+            "id": "tu16"
+          }
+        ],
+        [
+          "The derived asset properties display the archetype asset under <g1>Archetype<\\/g1>:",
+          "As propriedades de ativos derivadas exibem o ativo do arquétipo sob <g1>Arquétipo<\\/g1>:",
+          "The derived asset properties display the archetype asset under <g1>Archetype<\\/g1>:",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/game-studio\\/archetypes.md",
+          {
+            "id": "tu17"
+          }
+        ],
+        [
+          "<x1\\/>Derived asset in Property Grid<x2\\/>",
+          "<x1\\/>Ativos derivados na propriedade Grid<x2\\/>",
+          "<x1\\/>Derived asset in Property Grid<x2\\/>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/game-studio\\/archetypes.md",
+          {
+            "id": "tu18"
+          }
+        ],
+        [
+          "You can right-click the archetype asset in the Property Grid and select <g1>Select the referenced asset<\\/g1> to quickly select the archetype asset:",
+          "Você pode clicar com o botão direito do mouse no atributo arquétipo na Grade de Propriedades e selecionar <g1>Selecione o aset referenciado<\\/g1> para selecionar rapidamente o ativo arquétipo:",
+          "You can right-click the archetype asset in the Property Grid and select <g1>Select the referenced asset<\\/g1> to quickly select the archetype asset:",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/game-studio\\/archetypes.md",
+          {
+            "id": "tu19"
+          }
+        ],
+        [
+          "<x1\\/>Select referenced asset<x2\\/>",
+          "<x1\\/>Select referenciado asset<x2\\/>",
+          "<x1\\/>Select referenced asset<x2\\/>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/game-studio\\/archetypes.md",
+          {
+            "id": "tu20"
+          }
+        ],
+        [
+          "Overridden properties",
+          "Propriedades de Overridden",
+          "Overridden properties",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/game-studio\\/archetypes.md",
+          {
+            "id": "tu21"
+          }
+        ],
+        [
+          "The <g1>Property Grid<\\/g1> shows which properties of the derived asset differ from the archetype.",
+          "O <g1>Property Grid<\\/g1> mostra quais propriedades do ativo derivado diferem do arquétipo.",
+          "The <g1>Property Grid<\\/g1> shows which properties of the derived asset differ from the archetype.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/game-studio\\/archetypes.md",
+          {
+            "id": "tu22"
+          }
+        ],
+        [
+          "<g2>Overridden<\\/g2> and <g3>unique<\\/g3> properties are <g4>white<\\/g4>, and <g5>inherited<\\/g5> (identical) properties are <g6>gray<\\/g6>.",
+          "<g2>Overridden<\\/g2> e <g3>unique<\\/g3> propriedades são <g4>white<\\/g4>, e <g5>inherited<\\/g5> (identical) propriedades são <g6>gray<\\/g6>.",
+          " <g2>Overridden<\\/g2> and <g3>unique<\\/g3> properties are <g4>white<\\/g4>, and <g5>inherited<\\/g5> (identical) properties are <g6>gray<\\/g6>.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/game-studio\\/archetypes.md",
+          {
+            "id": "tu22"
+          }
+        ],
+        [
+          "In this screenshot, the <g1>Diffuse Map<\\/g1> property is overridden.",
+          "Nesta captura de tela, a propriedade <g1>Diffuse Map<\\/g1> é substituída.",
+          "In this screenshot, the <g1>Diffuse Map<\\/g1> property is overridden.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/game-studio\\/archetypes.md",
+          {
+            "id": "tu23"
+          }
+        ],
+        [
+          "The other properties are inherited:",
+          "As outras propriedades são herdadas:",
+          " The other properties are inherited:",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/game-studio\\/archetypes.md",
+          {
+            "id": "tu23"
+          }
+        ],
+        [
+          "<x1\\/>Overridden properties are white<x2\\/>",
+          "<x1\\/> Propriedades anteriores são brancas<x2\\/>",
+          "<x1\\/>Overridden properties are white<x2\\/>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/game-studio\\/archetypes.md",
+          {
+            "id": "tu24"
+          }
+        ],
+        [
+          "Reset a property to archetype value",
+          "Repor uma propriedade ao valor arquétipo",
+          "Reset a property to archetype value",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/game-studio\\/archetypes.md",
+          {
+            "id": "tu25"
+          }
+        ],
+        [
+          "You can reset overridden or unique properties of a derived asset to the values in the archetype.",
+          "Você pode redefinir propriedades sobrepostas ou únicas de um ativo derivado para os valores no arquétipo.",
+          "You can reset overridden or unique properties of a derived asset to the values in the archetype.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/game-studio\\/archetypes.md",
+          {
+            "id": "tu26"
+          }
+        ],
+        [
+          "To do this, right-click the overridden property and select <g1>Reset to base value<\\/g1>.",
+          "Para fazer isso, clique com o botão direito do mouse na propriedade overridden e selecione <g1>Reset to base value<\\/g1>.",
+          " To do this, right-click the overridden property and select <g1>Reset to base value<\\/g1>.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/game-studio\\/archetypes.md",
+          {
+            "id": "tu26"
+          }
+        ],
+        [
+          "<x1\\/>Reset to base value<x2\\/>",
+          "<x1\\/> Repor ao valor de base<x2\\/>",
+          "<x1\\/>Reset to base value<x2\\/>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/game-studio\\/archetypes.md",
+          {
+            "id": "tu27"
+          }
+        ],
+        [
+          "Clear an archetype",
+          "Limpar um arquétipo",
+          "Clear an archetype",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/game-studio\\/archetypes.md",
+          {
+            "id": "tu28"
+          }
+        ],
+        [
+          "You can remove the link between the archetype and the derived asset.",
+          "Você pode remover a ligação entre o arquétipo e o ativo derivado.",
+          "You can remove the link between the archetype and the derived asset.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/game-studio\\/archetypes.md",
+          {
+            "id": "tu29"
+          }
+        ],
+        [
+          "This means the derived asset no longer inherits changes to the archetype; it becomes a completely independent.",
+          "Isso significa que o ativo derivado não herda mais mudanças no arquétipo; torna-se completamente independente.",
+          " This means the derived asset no longer inherits changes to the archetype; it becomes a completely independent.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/game-studio\\/archetypes.md",
+          {
+            "id": "tu29"
+          }
+        ],
+        [
+          "To do this, in the <g1>Asset View<\\/g1>, right-click the derived asset and select <g2>Clear archetype<\\/g2>.",
+          "Para fazer isso, no <g1>Asset View<\\/g1>, clique com o botão direito do mouse no ativo derivado e selecione <g2>Clear arquétype<\\/g2>.",
+          "To do this, in the <g1>Asset View<\\/g1>, right-click the derived asset and select <g2>Clear archetype<\\/g2>.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/game-studio\\/archetypes.md",
+          {
+            "id": "tu30"
+          }
+        ],
+        [
+          "<x1\\/>Clear archetype<x2\\/>",
+          "<x1\\/>Clear arquétipo<x2\\/>",
+          "<x1\\/>Clear archetype<x2\\/>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/game-studio\\/archetypes.md",
+          {
+            "id": "tu31"
+          }
+        ],
+        [
+          "See also",
+          "Ver também",
+          "See also",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/game-studio\\/archetypes.md",
+          {
+            "id": "tu32"
+          }
+        ],
+        [
+          "Assets",
+          "Activos",
+          "<g1>Assets<\\/g1>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/game-studio\\/archetypes.md",
+          {
+            "id": "tu33"
+          }
+        ],
+        [
+          "Prefabs",
+          "Pré-fabricados",
+          "<g1>Prefabs<\\/g1>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/game-studio\\/archetypes.md",
+          {
+            "id": "tu34"
+          }
+        ]
+      ]
+    }
+  ],
+  "seg_enabled": false
 }

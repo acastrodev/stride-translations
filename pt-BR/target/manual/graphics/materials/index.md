@@ -1,23 +1,23 @@
-# Materials
+# Materiais
 
-**Materials** define the appearance of 3D model surfaces and how they react to light. Without materials, models are simply shapes, blank canvases.
+**materiais** definem a aparência das superfícies do modelo 3D e como reagem à luz. Sem materiais, os modelos são simplesmente formas, telas em branco.
 
-![media/material-layers-2.png](media/material-layers-2.png)
+<x1\/>media\/material-layers-2.png<x2\/>
 
-Materials can affect both the geometry of a model (vertex shading) and its colors (pixel shading).
+Os materiais podem afetar tanto a geometria de um modelo (soldagem de vértice) quanto suas cores (soldagem de pixel).
 
-You can use [multiple material layers](material-layers.md) to build more complex materials.
+Você pode usar camadas de material [multiple](material-layers.md) para construir materiais mais complexos.
 
-In practice, materials generate partial definitions of shaders integrated as part of the shading of models ([lights and shadows](../lights-and-shadows/index.md)).
+Na prática, os materiais geram definições parciais de shaders integrados como parte da sombreamento de modelos ([lights e sombras](../lights-and-shadows/index.md)).
 
-## In this section
+## Nesta secção
 
-* [Material maps](material-maps.md)
-* [Material attributes](material-attributes.md)
-   * [Geometry attributes](geometry-attributes.md)
-   * [Shading attributes](shading-attributes.md)
-   * [Misc attributes](misc-attributes.md)
-      * [Clear-coating shading](clear-coat-shading.md)
-* [Material layers](material-layers.md)
-* [Material slots](material-slots.md)
-* [Materials for developers](materials-for-developers.md)
+* [Mapas de material](material-maps.md)
+* [Atributos de material](material-attributes.md)
+   * [Atributos de geometria](geometry-attributes.md)
+   * [Atributos de Shading](shading-attributes.md)
+   * [Atributos diversos](misc-attributes.md)
+      * [Shading de cobertura clara](clear-coat-shading.md)
+* [Camadas de material](material-layers.md)
+* [Slots de material](material-slots.md)
+* [Materiais para desenvolvedores](materials-for-developers.md)

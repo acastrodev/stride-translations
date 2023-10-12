@@ -1,55 +1,55 @@
-# Virtual reality sickness
+# Doença da realidade virtual
 
-Some players experience nausea and discomfort when playing VR games. Though the causes aren't completely understood, it seems to be mainly caused by the player moving around a virtual environment while their real-world body remains still.
+Alguns jogadores experimentam náuseas e desconforto ao jogar jogos VR. Embora as causas não sejam completamente compreendidas, parece ser causada principalmente pelo jogador se movendo em torno de um ambiente virtual, enquanto seu corpo do mundo real permanece ainda.
 
-There may be no way to completely prevent VR sickness in every player. However, there are a few things to keep in mind to minimize it in your game. We recommend you test your game with as wide a range of players as possible.
+Pode não haver nenhuma maneira de evitar completamente a doença de VR em cada jogador. No entanto, existem algumas coisas para ter em mente para minimizar isso em seu jogo. Recomendamos que você teste seu jogo com o maior número possível de jogadores.
 
-## Camera movement
+## Movimento da câmera
 
-In general, players should control the camera by moving their head. Moving the camera by other methods, such as gamepads or keyboards, seems to be the biggest cause of VR sickness, especially with horizontal (yaw) movement.
+Em geral, os jogadores devem controlar a câmera movendo sua cabeça. Mover a câmera por outros métodos, como gamepads ou teclados, parece ser a maior causa de doença VR, especialmente com movimento horizontal (yaw).
 
-### Disable camera movement
+### Disable câmera movimento
 
-To disable camera movement from inputs other than VR devices:
+Para desativar o movimento da câmera de entradas diferentes de dispositivos VR:
 
-1. In the **Asset View** (in the bottom pane by default), double-click the **Graphics Compositor** asset.
+1. No **Asset View** (no painel inferior por padrão), clique duas vezes no **Graphics Compositor** ativo.
 
-   ![Graphics compositor asset](../graphics/graphics-compositor/media/graphics-compositor-asset.png)
+   <x1\/>Graphics compositor asset<x2\/>
 
-   The graphics compositor editor opens.
+   O editor de compositores gráficos abre.
 
-2. Select the **ForwardRenderer**.
+2. Selecione o **ForwardRenderer**.
 
-   ![Select forward renderer](media/select-forward-renderer.png)
+   <x1\/>Selecionar renderizador <x2\/>
 
-3. In the **Property Grid** (on the right by default), expand **VR Settings**.
+3. No **Property Grid** (à direita por padrão), expanda **VR Settings**.
 
-   ![VR settings](media/vr-settings.png)
+   <x1\/>VR configurações<x2\/>
 
-4. Select **Ignore camera rotation**.
+4. Selecione **Ignore rotação da câmera**.
 
-   ![Ignore camera rotation](media/ignore-camera-rotation.png)
+   <x1\/>Ignore a rotação da câmera<x2\/>
 
-For more information about the graphics compositor, see the [Graphics compositor](../graphics/graphics-compositor/index.md) page.
+Para obter mais informações sobre o compositor gráfico, consulte a página [Graphics compositor](../graphics/graphics-compositor/index.md).
 
-## Framerate
+## Taxa de quadros
 
-In general, the higher the framerate, the less likely players are to become sick. Framerates below 60fps seem especially likely to cause sickness.
+Em geral, quanto maior o framerate, menos provável os jogadores devem ficar doentes. As taxas de quadros abaixo de 60fps parecem especialmente susceptíveis de causar doença.
 
-## Vection
+## Vecção
 
-Vection is the sensation of movement caused by the environment changing. You might have experienced this in the real world; for example, if you've been on a stationary train and a nearby train moves, creating the sensation that your own train is moving in the opposite direction. This can cause sickness in VR.
+A vecção é a sensação de movimento causada pela mudança do ambiente. Você pode ter experimentado isso no mundo real; por exemplo, se você esteve em um trem estacionário e em um trem próximo, criando a sensação de que seu próprio trem está se movendo na direção oposta. Isso pode causar doença em VR.
 
-To reduce vection in your game, use simple textures and reduce the player movement speed.
+Para reduzir a vecção em seu jogo, use texturas simples e reduza a velocidade de movimento do jogador.
 
-## Acceleration
+## Aceleração
 
-Acceleration can cause VR sickness. For example, if the player moves on a train that speeds up and slows down, this causes more sickness than if the train moves at a constant speed.
+Aceleração pode causar doença VR. Por exemplo, se o jogador se move em um trem que acelera e diminui, isso causa mais doença do que se o trem se move em uma velocidade constante.
 
-## Static point of reference
+## Ponto de referência estático
 
-Adding a static point of reference to the player view, such as a HUD or virtual "helmet", may help reduce sickness.
+Adicionar um ponto estático de referência à vista do jogador, como um HUD ou "helmet" virtual, pode ajudar a reduzir a doença.
 
-## See also
+## Ver também
 
-* [Virtual reality sickness (Wikipedia)](https://en.wikipedia.org/wiki/Virtual_reality_sickness)
+* [Doença da realidade virtual (Wikipedia)](https://en.wikipedia.org/wiki/Virtual_reality_sickness)

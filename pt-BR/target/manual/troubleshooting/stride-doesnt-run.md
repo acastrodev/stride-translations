@@ -1,57 +1,57 @@
-# Stride doesn't run
+# O Stride não funciona
 
-## Prerequisites
+## Pré-requisitos
 
-If you're having trouble running Stride, make sure you've installed all the prerequisites:
+Se você está tendo problemas em executar Stride, certifique-se de ter instalado todos os pré-requisitos:
 
 * .NET Framework 4.7.2
-* Visual C++ Redistributable 2019
-* Build Tools for Visual Studio
+* Visual C++ Redistributável 2019
+* Ferramentas de construção para Visual Studio
 
-Alternatively, uninstall Stride, restart the Stride installer, and install the prerequisites when prompted.
+Alternativamente, desinstale Stride, reinicie o instalador Stride e instale os pré-requisitos quando solicitado.
 
 ### .NET Framework 4.7.2
 
-To check if this is installed, see **Control Panel > Programs > Programs and Features** and look for an entry containing **.NET 4.7.2**.
+Para verificar se isso é instalado, consulte **Control Panel > Programas > Programas e Recursos** e procure uma entrada contendo **. NET 4.7.2**.
 
-![Programs and features](media/programs-and-features.png)
+<x1\/>Programas e características<x2\/>
 
-If it's not installed, you can download it from the [Microsoft Download Center](https://dotnet.microsoft.com/download/dotnet-framework/thank-you/net472-web-installer).
+Se não estiver instalado, você pode baixá-lo do [Microsoft Download Center](https://dotnet.microsoft.com/download/dotnet-framework/thank-you/net472-web-installer).
 
-> [!Note]
-> If you install Visual Studio, make sure you also install the .Net Framework support. Just the Visual Studio base installation isn't enough.
+> <x1\/>!Note<x2\/>
+> Se você instalar o Visual Studio, certifique-se de instalar também o suporte .Net Framework. Apenas a instalação da base do Visual Studio não é suficiente.
 
-### Visual C++ Redistributable 2019
+### Visual C++ Redistributável 2019
 
-To check if this is installed, see **Control Panel > Programs > Programs and Features** and look for **2015-2019 Redistributable**.
+Para verificar se isso é instalado, consulte **Control Panel > Programas > Programas e Recursos** e procure **2015-2019 Redistributável**.
 
-![Programs and features](media/programs-and-features-redistributable.png)
+<x1\/>Programas e características<x2\/>
 
-If it's not installed, you can download the 2019 Redistributable from [Visual Studio Downloads](https://www.visualstudio.com/downloads/) (under **Other Tools and Frameworks**).
+Se não estiver instalado, você pode baixar o Redistributable 2019 de [Visual Studio Downloads](https://www.visualstudio.com/downloads/) (em **Outras ferramentas e quadros**).
 
 
-### Visual Studio (only for .NET Framework version)
+### Visual Studio (apenas para versão .NET Framework)
 
-If you have Visual Studio 2019 installed, you need to have the following workloads and/or components installed:
-* **.NET desktop development**
-* **.NET core cross-platform development**, with **.NET Core 2.1 Runtime (LTS)** optional component enabled.
+Se você tiver o Visual Studio 2019 instalado, você precisa ter as seguintes cargas de trabalho e \/ ou componentes instalados:
+* **. Desenvolvimento de desktop NET**
+* **.NET core cross-platform development**, com **.NET Core 2.1 Runtime (LTS)** componente opcional habilitado.
 
-On top of that, if you still have Visual Studio 2017 installed, it should be version 15.9+.
+Além disso, se ainda tiver o Visual Studio 2017 instalado, deve ser a versão 15.9+.
 
-### Build Tools for Visual Studio (only for .NET Framework version)
+### Ferramentas de compilação para Visual Studio (apenas para versão .NET Framework)
 
-If you **don't** have Visual Studio installed and don't want to install it, you need to install **Build Tools for Visual Studio**. You can download this from [Visual Studio Downloads](https://www.visualstudio.com/downloads/) (under **Other Tools and Frameworks**).
+Se você **don't** tiver Visual Studio instalado e não quiser instalá-lo, você precisa instalar **Build Tools for Visual Studio**. Você pode baixar isso de [Visual Studio Downloads](https://www.visualstudio.com/downloads/) (em **Outras ferramentas e quadros**).
 
-> [!Note]
-> Windows uses the Visual Studio installer to install the Visual C++ Redistributable and Build Tools for Visual Studio prerequisites. If you don't need Visual Studio, don't worry – it doesn't install it.
-> ![Installing VS build tools](../get-started/media/installing-vs-build-tools.png)
+> <x1\/>!Note<x2\/>
+> O Windows usa o instalador do Visual Studio para instalar o Visual C++ Redistributable e Ferramentas de Construção para pré-requisitos do Visual Studio. Se você não precisa do Visual Studio, não se preocupe – ele não o instala.
+> <x3\/>Instalando ferramentas de construção VS<x4\/>
 
-### .NET SDK 5.0 (only for .NET version)
+### .NET SDK 5.0 (apenas para versão .NET)
 
-.NET SDK 5.0 should have been installed by Stride prerequisite installer, if Visual Studio 2019 didn't do it previously.
+.NET SDK 5.0 deve ter sido instalado pelo instalador pré-requisito Stride, se o Visual Studio 2019 não o fez anteriormente.
 
-If for some reason you need to install it manually, you can use [this link](https://dotnet.microsoft.com/download/dotnet-core/thank-you/sdk-5.0.101-windows-x64-installer).
+Se por alguma razão você precisa instalá-lo manualmente, você pode usar [this link](https://dotnet.microsoft.com/download/dotnet-core/thank-you/sdk-5.0.101-windows-x64-installer).
 
-## See also
+## Ver também
 
-* [Install Stride](../get-started/install-stride.md)
+* [Instalar o Stride](../get-started/install-stride.md)

@@ -1,66 +1,66 @@
-# Create assets
+# Criar ativos
 
-<span class="badge text-bg-primary">Beginner</span>
+<x1\/>Introdução<x2\/>
 
-There are two ways to create assets:
+Existem duas formas de criar ativos:
 
-* Use the **Add asset** button in the **Asset View**
-* Drag and drop **resource files** (such as image or audio files) to the **Asset View** tab
+* Use o botão **Adicionar asset** no botão **Asset View**
+* Arraste e solte **recurso arquivos** (como imagem ou arquivos de áudio) para a aba **Asset View**
 
-## Use the **Add asset** button
+## Use o botão **Add asset**
 
-1. In the *Asset View*, click ![](media/create-and-add-assets-add-new-asset-button.png)
+1. No *Asset View*, clique em <x1\/><x2\/>
 
-2. Select the type of asset you want to create.
+2. Selecione o tipo de ativo que deseja criar.
 
-   ![Select asset type](../get-started/media/asset-creation-create-new-asset-asset-view-tab.png)
+   <x1\/>Select asset type<x2\/>
 
-   Game Studio displays a list of asset templates. These are assets configured for a specific use.
+   Game Studio exibe uma lista de modelos de ativos. Estes são ativos configurados para um uso específico.
 
-3. Select the right template for your asset.
+3. Selecione o modelo certo para o seu ativo.
 
-   Game Studio adds the asset to the Asset View:
+   Game Studio adiciona o ativo para o Asset View:
 
-   ![Asset added to Asset View' tab](../get-started/media/asset-creation-asset-view-tab-procedural-model.png)
+   <x1\/> Ajustar adicionado ao Asset View' tab<x2\/>
 
-> [!Note]
-> Some assets, such as textures, require a resource file. When you add these assets, Game Studio prompts you for a resource file.
+> <x1\/>!Note<x2\/>
+> Alguns ativos, como texturas, exigem um arquivo de recursos. Quando você adiciona esses ativos, o Game Studio solicita um arquivo de recursos.
 
-## Drag and drop resource files
+## Arraste e solte arquivos de recursos
 
-You can drag compatible resource files directly into Game Studio to create assets from them. Game Studio is compatible with common file formats.
+Você pode arrastar arquivos de recursos compatíveis diretamente no Game Studio para criar ativos deles. Game Studio é compatível com formatos de arquivo comuns.
 
-> [!NOTE]
-> * You can't use this method to create assets that don't use resource files (eg prefabs, materials, or scenes).
+> <x1\/>!NOTE<x2\/>
+> * Você não pode usar este método para criar ativos que não usam arquivos de recursos (por exemplo, pré-fabricados, materiais ou cenas).
 
-| Asset type | Compatible resource file formats |
+| Tipo de recurso | Formatos de arquivo de recursos compatíveis |
 |-------------------------------|----------------------------------
-| Models, animations, skeletons | .dae, .3ds, obj, .blend, .x, .md2, .md3, .dxf, .fbx |
-| Sprites, textures, skyboxes | .dds, .jpg, .jpeg, .png, .gif, .bmp, .tga, .psd, .tif, .tiff |
-| Audio | .wav, .mp3, .ogg, .aac, .aiff, .flac, .m4a, .wma, .mpc |
+| Modelos, animações, esqueletos | .dae, .3ds, obj, .blend, .x, .md2, .md3, .dxf, .fbx |
+| Sprites, texturas, caixas de céu | .dds, .jpg, .jpeg, .png, .gif, .bmp, .tga, .psd, .tif, .tiff |
+| Áudio | .wav, .mp3, .ogg, .aac, .aiff, .flac, .m4a, .wma, .mpc |
 
-To create an asset by dragging and dropping a resource file:
+Para criar um ativo arrastando e soltando um arquivo de recursos:
 
-1. (Optional) If it isn't there already, move the resource file you want to use in the **Resources** folder of your project. You don't have to do this, but it's good practice to keep resource files organized and makes projects easier to share. For more information, see [Project structure](../files-and-folders/project-structure.md).
+1. (Opcional) Se já não estiver lá, mova o arquivo de recursos que você deseja usar na pasta **Resources** do seu projeto. Você não precisa fazer isso, mas é uma boa prática manter os arquivos de recursos organizados e tornar os projetos mais fáceis de compartilhar. Para mais informações, consulte [Projeto estrutura](../files-and-folders/project-structure.md).
 
-2. Drag the resource file from Explorer to the Asset View:
+2. Arraste o arquivo de recursos do Explorer para o Asset View:
 
-   ![Drap and drop a resource file to the Asset View](media/create-assets-drop-resource.png)
+   <x1\/>Drap e solte um arquivo de recursos para o Asset View<x2\/>
 
-3. Select the kind of asset you want to create:
+3. Selecione o tipo de ativo que deseja criar:
 
-   ![List of asset templates](media/create-assets-drag-drop-select-asset-template.png)
+   <x1\/>Lista de modelos de ativos<x2\/>
 
-   Game Studio adds the asset to the Asset View:
+   Game Studio adiciona o ativo para o Asset View:
 
-   ![Texture asset created](media/create-assets-drag-drop-asset-created.png)
+   <x1\/> Ativo de extensão criado <x2\/>
 
-Game Studio automatically imports all dependencies in the resource files and creates corresponding assets. For example, you can add a model or animation resource file and Game Studio handles everything else.
+Game Studio importa automaticamente todas as dependências nos arquivos de recursos e cria ativos correspondentes. Por exemplo, você pode adicionar um arquivo de recurso de modelo ou animação e Game Studio lida com tudo o resto.
 
-> [!TIP]
-> You can drag multiple files simultaneously. If you drop multiple files of different types at the same time, Game Studio only adds only files that match your template selection. For example, if you add an image file and a sound file, then select the audio asset template, only the sound file is added.
+> <x1\/>!TIP<x2\/>
+> Você pode arrastar vários arquivos simultaneamente. Se você soltar vários arquivos de diferentes tipos ao mesmo tempo, Game Studio só adiciona arquivos que correspondem à sua seleção de modelos. Por exemplo, se você adicionar um arquivo de imagem e um arquivo de som, selecione o modelo de ativo de áudio, apenas o arquivo de som é adicionado.
 
-## See also
+## Ver também
 
-* [Manage assets](manage-assets.md)
-* [Use assets](use-assets.md)
+* [Gerenciar ativos](manage-assets.md)
+* [Utilizar activos](use-assets.md)

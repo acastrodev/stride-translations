@@ -1,12 +1,12 @@
-# Navigation meshes
+# Malhas de navegação
 
-<span class="badge text-bg-primary">Beginner</span>
-<span class="badge text-bg-success">Level designer</span>
-<span class="badge text-bg-success">Programmer</span>
+<x1\/>Introdução<x2\/>
+<x3\/> Designer de nível <x4\/>
+<x5\/> Programador <x6\/>
 
-**Navigation meshes** form the area that entities with navigation components can navigate. Stride creates a layer in the navigation mesh for each [navigation group](navigation-groups.md) you create.
+** malhas de navegação** formam a área que as entidades com componentes de navegação podem navegar. Stride cria uma camada na malha de navegação para cada grupo de navegação [navigação](navigation-groups.md) que você cria.
 
-Game Studio displays navigation meshes as colored overlays in your scene. The overlay shows where entities in the navigation group for that layer can move. The mesh updates in real time as you edit your scene.
+Game Studio exibe malhas de navegação como sobreposições coloridas em sua cena. A sobreposição mostra onde as entidades no grupo de navegação para essa camada podem se mover. As atualizações de malha em tempo real enquanto você edita sua cena.
 
 <p>
 <video autoplay loop class="responsive-video" poster="media/withOutlineAE.jpg">
@@ -14,66 +14,66 @@ Game Studio displays navigation meshes as colored overlays in your scene. The ov
 </video>
 </p>
 
-## Create a navigation mesh
+## Criar uma malha de navegação
 
-1. In the **Asset View** (bottom by default), click **Add asset > Scenes > Navigation mesh**.
+1. No **Asset View** (bottom by default), clique em **Add asset > Scenes > Navigation mesh**.
 
-   ![Select Game Settings asset](media/add-navigation-mesh.png)
+   <x1\/>Selecionar configurações de jogo asset<x2\/>
 
-   Game Studio adds a **navigation mesh asset** to your project.
+   Game Studio adiciona um **navigation mesh asset** ao seu projeto.
 
-   ![Navigation mesh asset](media/navigation-mesh-in-asset-view.png)
+   <x1\/> Rede de navegação <x2\/>
 
-2. With the navigation mesh selected in the **Asset View**, in the **Property Grid**, set the **scene** the navigation meshes in this asset apply to.
+2. Com a malha de navegação selecionada no **Asset View**, no **Property Grid**, defina o **scene** as malhas de navegação neste ativo se aplicam.
 
-   ![Set navigation mesh properties](media/navigation-mesh-properties.png)
+   <x1\/>Configurar propriedades de malha de navegação<x2\/>
 
-   For more information about scenes, see [Scenes](../game-studio/scenes.md).
+   Para mais informações sobre cenas, veja [Scenes](../game-studio/scenes.md).
 
-3. Under **Selected groups**, click ![Green plus button](~/manual/game-studio/media/green-plus-icon.png) (**Add**).
+3. Sob **Selecionados grupos**, clique em <x1\/>Verde mais botão<x2\/> (**Add**).
 
-   Game Studio adds a new item to the list of groups.
+   Game Studio adiciona um novo item à lista de grupos.
 
-   ![Add navigation group to navigation mesh](media/add-navigation-group-to-navigation-mesh.png)
+   <x1\/> Adicionar grupo de navegação para navegação mesh<x2\/>
 
-4. Click ![Blue arrow button](~/manual/game-studio/media/blue-arrow-icon.png) (**Replace**) and choose a group from the drop-down menu.
+4. Clique em <x1\/> Botão de seta azul<x2\/> (** Substituir**) e escolha um grupo no menu suspenso.
 
-   ![Choose navigation group](media/choose-navigation-group-in-navigation-mesh.png)
+   <x1\/> Grupo de navegação <x2\/>
 
-   Stride builds a layer in the navigation mesh for this group. For more information about groups, including how to create them, see [Navigation groups](navigation-groups.md).
+   Stride constrói uma camada na malha de navegação para este grupo. Para mais informações sobre grupos, incluindo como criá-los, veja [Grupos de navegação](navigation-groups.md).
 
-5. Repeat steps 3 and 4 for as many groups as you want to use the navigation mesh.
+5. Repita os passos 3 e 4 para quantos grupos quiser usar a malha de navegação.
 
-   > [!Note]
-   > If you want to create a navigation mesh for a different scene, create another navigation mesh asset and select the scene in the asset properties.
+   > <x1\/>!Note<x2\/>
+   > Se você quiser criar uma malha de navegação para uma cena diferente, crie outra malha de navegação e selecione a cena nas propriedades dos ativos.
 
-## Navigation mesh properties
+## Propriedades de malha de navegação
 
-| Property | Description |
+| Propriedade | Descrição |
 |---------------------------|--------------
-| Scene | The scene this navigation mesh applies to |
-| Included collision groups | Set which collision groups the navigation mesh uses. By default, meshes use all collision groups |
-| Build settings | Advanced settings for the navigation mesh |
-| Groups | The groups that use this navigation mesh |
+| Cena | A cena que esta malha de navegação se aplica a |
+| Grupos de colisão incluídos | Defina quais grupos de colisão a malha de navegação usa. Por padrão, as malhas usam todos os grupos de colisão |
+| Configurar configurações | Configurações avançadas para a malha de navegação |
+| Grupos | Os grupos que utilizam esta malha de navegação |
 
-## Show or hide a navigation mesh in the Scene Editor
+## Mostrar ou ocultar uma malha de navegação no Editor de cenas
 
-Use the **navigation visibility** menu in the Scene Editor toolbar.
+Use o menu **navigation visibilidade** na barra de ferramentas do Editor de cenas.
 
-![Navigation group visibility](media/navigation-group-visibility.png)
+<x1\/>Visibilidade do grupo de navegação <x2\/>
 
-To show or hide layers belonging to different groups, use the checkboxes. The colored boxes indicate the color of the groups displayed in the Scene Editor.
+Para mostrar ou ocultar camadas pertencentes a diferentes grupos, use as caixas de seleção. As caixas coloridas indicam a cor dos grupos exibidos no Editor de cena.
 
-| Navigation mesh hidden | Navigation mesh shown |
+| Malha de navegação escondida | Malha de navegação mostrada |
 |--------------------------| ------------
-| ![Bounding box shown](media/navigation-mesh-invisible.jpg) | ![Bounding box hidden](media/navigation-mesh-visible.jpg) |
+| <x1\/>Caixa de captura mostrada <x2\/> | <x1\/>Bounding box oculto<x2\/> |
 
-These options have no effect on runtime behavior.
+Essas opções não têm efeito no comportamento do tempo de execução.
 
-## See also
+## Ver também
 
-* [Navigation groups](navigation-groups.md)
-* [Navigation bounding boxes](navigation-bounding-boxes.md)
-* [Navigation components](navigation-components.md)
-* [Dynamic navigation](dynamic-navigation.md)
-* [Scenes](../game-studio/scenes.md)
+* [Grupos de navegação](navigation-groups.md)
+* [Caixas de ligação de navegação](navigation-bounding-boxes.md)
+* [Componentes de navegação](navigation-components.md)
+* [Navegação dinâmica](dynamic-navigation.md)
+* [Cenas](../game-studio/scenes.md)

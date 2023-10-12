@@ -1,8 +1,8 @@
-# Set up a video
+# Configurar um vídeo
 
-<span class="badge text-bg-primary">Beginner</span>
-<span class="badge text-bg-success">Programmer</span>
-<span class="badge text-bg-success">Designer</span>
+<x1\/>Introdução<x2\/>
+<x3\/> Programador <x4\/>
+<x5\/>Designer<x6\/>
 
 <p>
 <video autoplay loop class="responsive-video" poster="media/video-thumbnail.jpg">
@@ -10,116 +10,116 @@
 </video>
 </p>
 
-> [!Note]
-> Stride supports most major video formats, but converts them to `.mp4`. To reduce compilation time, we recommend you use `.mp4` files so Stride doesn't have to convert them.
+> <x1\/>!Note<x2\/>
+> Stride suporta a maioria dos principais formatos de vídeo, mas os converte em `.mp4`. Para reduzir o tempo de compilação, recomendamos que você use arquivos `.mp4` para que Stride não precise convertê-los.
 
-> [!Note]
-> Currently, Stride doesn't support video on iOS platforms.
+> <x1\/>!Note<x2\/>
+> Atualmente, Stride não suporta vídeo em plataformas iOS.
 
-## 1. Add a video asset
+## 1. Adicionar um ativo de vídeo
 
-Before you can use a video in your game, you need to import it as an [asset](../game-studio/assets.md).
+Antes que você possa usar um vídeo em seu jogo, você precisa importá-lo como um [asset](../game-studio/assets.md).
 
-1. Drag the video file from **Explorer** into the **Asset View**.
+1. Arraste o arquivo de vídeo de **Explorer** no **Asset View**.
 
-   Alternatively, in the **Asset View**, click **Add asset** and select **Media > Video**, then browse to the video you want to add and click **Open**.
+   Alternativamente, no **Asset View**, clique em **Adicionar asset** e selecione **Media > Vídeo**, então procure o vídeo que deseja adicionar e clique em **Open**.
 
-   ![Add video asset](media/add-video-asset.png)
+   <x1\/> Adicionar vídeo asset<x2\/>
 
-2. If the video has audio tracks, you can import these at the same time, or import just the audio from the video.
+2. Se o vídeo tem faixas de áudio, você pode importá-las ao mesmo tempo, ou importar apenas o áudio do vídeo.
 
-   ![Import video](media/import-from-video.png)
+   <x1\/>Import vídeo<x2\/>
 
-3. Click **OK**.
+3. Clique em **OK**.
 
-   Stride adds the video as an asset in the **Asset View**. If you imported audio tracks from the video file, Stride adds them as separate [audio assets](../audio/index.md).
+   Stride adiciona o vídeo como um ativo no **Asset View**. Se você importou faixas de áudio do arquivo de vídeo, Stride os adiciona como ativos separados [audio](../audio/index.md).
 
-   ![Video and audio assets](media/video-and-audio-assets.png)
+   <x1\/> Activos de vídeo e áudio<x2\/>
 
-   > [!Note]
-   > Currently, you can't preview videos in the Asset Preview.
+   > <x1\/>!Note<x2\/>
+   > Atualmente, você não pode visualizar vídeos no Asset Preview.
 
-   For information about video asset properties, see [Video properties](video-properties.md).
+   Para obter informações sobre propriedades de ativos de vídeo, consulte [ Propriedades de vídeo](video-properties.md).
 
-## 2. Add a video component
+## 2. Adicionar um componente de vídeo
 
-1. In the **Scene Editor**, select or create an entity to add a video component to.
+1. No **Scene Editor**, selecione ou crie uma entidade para adicionar um componente de vídeo.
 
-   > [!Tip]
-   > It's usually simplest to add the component to the same entity that has the texture plays the video. This just makes it easier to organize your scene.
+   > <x1\/>!Tip<x2\/>
+   > É geralmente mais simples adicionar o componente à mesma entidade que tem a textura reproduz o vídeo. Isso torna mais fácil organizar sua cena.
 
-2. In the **Property Grid**, click **Add component** and select **Video**.
+2. No **Property Grid**, clique em **Add component** e selecione **Video**.
 
-   ![Add video component](media/add-component.png)
+   <x1\/> Adicionar componente de vídeo<x2\/>
 
-   Stride adds a **video component** to the entity.
+   Stride adiciona um componente **video** à entidade.
 
-   ![Video component](media/video-component.png)
+   <x1\/> Componente de vídeo<x2\/>
 
-3. In the **Video** properties, under **Source**, select the video asset.
+3. Nas propriedades **Video**, abaixo de **Fonte**, selecione o ativo de vídeo.
 
-   ![Video source](media/video-source.png)
+   <x1\/> Fonte de vídeo <x2\/>
 
-4. Under **Target**, select the texture you want to display the video from.
+4. Em **Target**, selecione a textura que deseja exibir o vídeo.
 
-   ![Video target](media/video-target.png)
+   <x1\/>Vídeo <x2\/>
 
-   Models that use this texture will display the video.
+   Os modelos que usam esta textura exibirão o vídeo.
 
-   When the video isn't playing in your scene, Stride displays the texture instead.
+   Quando o vídeo não está tocando em sua cena, Stride exibe a textura em vez.
 
-## 3. Create a script to play the video
+## 3. Criar um script para reproduzir o vídeo
 
-After you set up the video component, play it from a [script](../scripts/index.md) using:
+Depois de configurar o componente de vídeo, jogue-o a partir de um [script](../scripts/index.md) usando:
 
 ```cs
 myVideoComponent.Instance.Play();
 ```
 
-### Other functions
+### Outras funções
 
-* `LoopRange`: The looping range (must be an area in the video in `PlayRange`)
-* `IsLooping`: Loop the video loop infinitely
-* `SpeedFactor`: Set the video play speed. `1` is normal speed.
-* `PlayState`: The current video play state (`playing`, `paused` or `stopped`)
-* `Duration`: The duration of the video
-* `CurrentTime`: The current play time in the video
-* `Volume`: The audio volume
-* `PlayRange`: The video start and end time
-* `Play/Pause/Stop`: Play, pause, or stop the video
-* `Seek`: Seek to a given time
+* `LoopRange`: O intervalo de loop (deve ser uma área no vídeo em `PlayRange`)
+* `IsLooping`: Loop o loop de vídeo infinitamente
+* `Factor `: Defina a velocidade de reprodução de vídeo. `1` é velocidade normal.
+* `PlayState`: O estado atual de reprodução de vídeo (`playing`, `paused` ou `stopped`)
+* `Duração`: A duração do vídeo
+* `CurrentTime`: O tempo de jogo atual no vídeo
+* `Volume`: O volume de áudio
+* `PlayRange`: O início e o fim do vídeo
+* `Play\/Pause\/Stop`: Jogar, pausar ou parar o vídeo
+* `Seek`: Buscar um determinado tempo
 
-### Example script
+### Exemplo de script
 
 ```cs
-{
-    public class VideoScript : StartupScript
-    {
-        // Game Studio displays the public member fields and properties you declare in this script
+(
+    vídeoescrito : StartupScript
+    (
+        \/\/ Game Studio exibe os campos e propriedades que você declara neste script
 
-        public override void Start()
-        {
-            // Initialization of the script.
+        anula de sobreposição pública Start()
+        (
+            \/\/ Inicialização do script.
             Entity.Get<VideoComponent>().Instance.Play();
         }
     }
 }
 ```
 
-## 4. Add the script to the entity
+## 4. Adicionar o script à entidade
 
-1. In the **Scene Editor**, select the entity that has the video component.
+1. No **Scene Editor**, selecione a entidade que tem o componente de vídeo.
 
-2. In the **Property Grid**, click **Add component** and select the video script.
+2. No **Property Grid**, clique em **Add component** e selecione o script de vídeo.
 
-   ![My video script](media/add-video-script.png)
+   <x1\/> Meu script de vídeo<x2\/>
 
-   Stride adds the script as a component.
+   Stride adiciona o script como um componente.
 
-   You can adjust [public variables you define in the script](../scripts/public-properties-and-fields.md) in the **Property Grid** under the script component properties.
+   Você pode ajustar as variáveis [public que você define no script](../scripts/public-properties-and-fields.md) no **Property Grid** sob as propriedades do componente script.
 
-   ![Properties](media/video-script-properties.png)
+   <x1\/>Propriedades <x2\/>
 
-## See also
+## Ver também
 
-* [Video properties](video-properties.md)
+* [Propriedades do vídeo](video-properties.md)

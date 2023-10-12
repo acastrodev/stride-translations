@@ -1,123 +1,123 @@
 # Gamepads
 
-<span class="badge text-bg-primary">Beginner</span>
-<span class="badge text-bg-success">Programmer</span>
+<x1\/>Introdução<x2\/>
+<x3\/> Programador <x4\/>
 
-**Gamepads**, such as the Xbox Elite Wireless Controller and the PS4 DualShock, are popular input devices for consoles and desktop.
+**Gamepads**, como o Xbox Elite Wireless Controller e o PS4 DualShock, são dispositivos de entrada populares para consoles e desktop.
 
-> [!Note]
-> Stride is currently optimized for the Xbox Elite gamepad. Other controllers work, but might have unexpected button mappings. Gamepad-specific features like the PS4 DualShock touchpad aren't supported.
+> <x1\/>!Note<x2\/>
+> O Stride está atualmente otimizado para o gamepad Xbox Elite. Outros controladores funcionam, mas podem ter mapeamentos inesperados de botões. Características específicas do Gamepad como o touchpad PS4 DualShock não são suportadas.
 
-## Digital and analog buttons
+## Botões digitais e analógicos
 
-* **Digital** buttons have two states: **up** and **down**. The D-pad, Start, Back, Thumbstick (press), A, B, X and Y buttons are digital buttons.
+* **Digital** botões têm dois estados: **up** e **down**. Os botões D-pad, Start, Back, Thumbstick (press), A, B, X e Y são botões digitais.
 
-* **Analog** buttons return a value depending on how hard the user presses. The triggers are analog buttons, and return a value between 0 and 1. The thumbsticks are also analog, and return values between -1 and 1 on the X and Y axes.
+* **Analog** botões retornam um valor dependendo de quão duro o usuário pressiona. Os gatilhos são botões analógicos e retornam um valor entre 0 e 1. Os polegares também são analógicos e retornam valores entre -1 e 1 nos eixos X e Y.
 
-The Xbox Elite controller buttons have the following names in Stride:
+Os botões do controlador Xbox Elite têm os seguintes nomes em Stride:
 
-![Xbox gamepad](media/input-gamepad-standard-gamepad.png)
+<x1\/>Xbox gamepad<x2\/>
 
-## Handle gamepad input
+## Lidar com a entrada do gamepad
 
-### Check that gamepads are connected
+### Verifique se os gamepads estão conectados
 
-Before handling gamepad input:
+Antes de manusear a entrada do gamepad:
 
-* To check if any gamepads are connected, use [InputManager.HasGamePad](xref:Stride.Input.InputManager.HasGamePad).
+* Para verificar se algum gamepads está conectado, use [InputManager. HasGamePad](xref:Stride.Input.InputManager.HasGamePad).
 
-* To check how many gamepads are connected, use [InputManager.GamePadCount](xref:Stride.Input.InputManager.GamePadCount).
+* Para verificar quantos gamepads estão conectados, use [InputManager.GamePadCount](xref:Stride.Input.InputManager.GamePadCount).
 
-* To check if the current device has been disconnected, use the [InputManager.DeviceRemoved](xref:Stride.Input.InputManager.DeviceRemoved) event.
+* Para verificar se o dispositivo atual foi desligado, use o evento [InputManager.DeviceRemoved](xref:Stride.Input.InputManager.DeviceRemoved).
 
-* To check if a device has been connected, use the [InputManager.DeviceAdded](xref:Stride.Input.InputManager.DeviceAdded) event.
+* Para verificar se um dispositivo foi conectado, use o [InputManager. Evento DeviceAdded](xref:Stride.Input.InputManager.DeviceAdded).
 
-### Digital buttons
+### Botões digitais
 
-To query the states and state changes of digital gamepad buttons, on the `GamePad` object, call:
+Para consultar os estados e as mudanças de estado dos botões de gamepad digital, no `GamePad` objeto, chamada:
 
-| Method | Functionality |
+| Método | Funcionalidade |
 |--------|--------------
-| [IsButtonDown(IGamePadDevice, GamePadButton)](xref:Stride.Input.GamePadDeviceExtensions.IsButtonDown\(Stride.Input.IGamePadDevice,Stride.Input.GamePadButton\)) | Checks whether the button is in the _down_ state. |
-| [IsButtonPressed(IGamePadDevice, GamePadButton)](xref:Stride.Input.GamePadDeviceExtensions.IsButtonPressed\(Stride.Input.IGamePadDevice,Stride.Input.GamePadButton\)) | Checks whether the user has _pressed_ the button since the previous update. |
-| [IsButtonReleased(IGamePadDevice, GamePadButton)](xref:Stride.Input.GamePadDeviceExtensions.IsButtonReleased\(Stride.Input.IGamePadDevice,Stride.Input.GamePadButton\)) | Checks whether the user has _released_ the button since the previous update. |
+| [IsButtonDown (IGamePadDevice, GamePadButton)](xref:Stride.Input.GamePadDeviceExtensions.IsButtonDown\(Stride.Input.IGamePadDevice,Stride.Input.GamePadButton\)) | Verifica se o botão está no estado _down_. |
+| [IsButtonPressed (IGamePadDevice, GamePadButton)](xref:Stride.Input.GamePadDeviceExtensions.IsButtonPressed\(Stride.Input.IGamePadDevice,Stride.Input.GamePadButton\)) | Verifica se o usuário tem _pressed_ o botão desde a atualização anterior. |
+| [IsButtonReleased (IGamePadDevice, GamePadButton)](xref:Stride.Input.GamePadDeviceExtensions.IsButtonReleased\(Stride.Input.IGamePadDevice,Stride.Input.GamePadButton\)) | Verifica se o usuário tem _released_ o botão desde a atualização anterior. |
 
-**Button (GamePadButton)** is the gamepad button you want to check.
+**Button (GamePadButton)** é o botão gamepad que você deseja verificar.
 
-You can also get the state of digital buttons using [GamePadState.Buttons](xref:Stride.Input.GamePadState.Buttons).
+Você também pode obter o estado de botões digitais usando [GamePadState.Buttons](xref:Stride.Input.GamePadState.Buttons).
 
-> [!Note]
-> The [GamePadState.Buttons](xref:Stride.Input.GamePadState.Buttons) field is a bitmask that uses binary system. Depending on the bitmask value, you can determine which buttons are *up* or *down*.
+> <x1\/>!Note<x2\/>
+> O campo [GamePadState.Buttons](xref:Stride.Input.GamePadState.Buttons) é um bitmask que usa sistema binário. Dependendo do valor bitmask, você pode determinar quais botões são *up* ou *down*.
 
-To get the gamepad state, use [IGamePadDevice.State](xref:Stride.Input.IGamePadDevice.State).
+Para obter o estado do gamepad, use [IGamePadDevice.State](xref:Stride.Input.IGamePadDevice.State).
 
-### Analog buttons
+### Botões analógicos
 
-To query values of analog buttons, first get the current state of gamepad using
-[GetGamePadByIndex(index)](xref:Stride.Input.InputManager.GetGamePadByIndex\(System.Int32\)), where _index (Integer)_ is the index of the gamepad you want to check.
+Para consultar valores de botões analógicos, primeiro obter o estado atual do gamepad usando
+[GetGamePadByIndex(index)](xref:Stride.Input.InputManager.GetGamePadByIndex\(System.Int32\)), onde _index (Integer)_ é o índice do gamepad que você deseja verificar.
 
-> [!WARNING]
-> The value returned by [IGamePadDevice.State](xref:Stride.Input.IGamePadDevice.State) is the state of the gamepad at the **current** update. You can't reuse this value for the next updates. You have to query it again in every update.
+> <x1\/><x2\/>
+> O valor retornado por [IGamePadDevice.State](xref:Stride.Input.IGamePadDevice.State) é o estado do gamepad na atualização **current**. Você não pode reutilizar esse valor para as próximas atualizações. Tens de o consultar novamente em todas as actualizações.
 
-To get trigger and thumbstick positions, use these
-[GamePadState](xref:Stride.Input.GamePadState) fields:
+Para obter posições do gatilho e do polegar, use estes
+[GamePadState](xref:Stride.Input.GamePadState) campos:
 
-| Field | Description |
+| Campo | Descrição |
 |-------|------------
-| [GamePadState.LeftThumb](xref:Stride.Input.GamePadState.LeftThumb) | Left thumbstick X-axis/Y-axis value in the range [-1.0f, 1.0f] for both axes. |
-| [GamePadState.RightThumb](xref:Stride.Input.GamePadState.RightThumb) | Right thumbstick X-axis/Y-axis value in the range [-1.0f, 1.0f] for both axes. |
-| [GamePadState.LeftTrigger](xref:Stride.Input.GamePadState.LeftTrigger) | Left trigger analog control value in the range [0, 1.0f] for a single axes. |
-| [GamePadState.RightTrigger](xref:Stride.Input.GamePadState.RightTrigger) | Right trigger analog control value in the range [0, 1.0f] for a single axis. |
+| [GamePadState.LeftThumb](xref:Stride.Input.GamePadState.LeftThumb) | Valor do polegar esquerdo X-axis\/Y-axis no intervalo <x1\/>-1.0f, 1.0f<x2\/> para ambos os eixos. |
+| [GamePadState](xref:Stride.Input.GamePadState.RightThumb) | Valor do polegar direito X-axis\/Y-axis no intervalo <x1\/>-1.0f, 1.0f<x2\/> para ambos os eixos. |
+| [GamePadState.LeftTrigger](xref:Stride.Input.GamePadState.LeftTrigger) | Valor de controle analógico do gatilho esquerdo no intervalo <x1\/>0, 1.0f<x2\/> para um único eixo. |
+| [GamePadState.RightTrigger](xref:Stride.Input.GamePadState.RightTrigger) | Valor de controle analógico do gatilho direito no intervalo <x1\/>0, 1.0f<x2\/> para um único eixo. |
 
-Thumbsticks move along the X and Y axes. Their positions read as follows:
+Thumbsticks movem-se ao longo dos eixos X e Y. Suas posições são lidas da seguinte forma:
 
-![Query thumb position](media/index-gamepad-stick-position-1.png)
-![Query thumb position](media/index-gamepad-stick-position-2.png)
+<x1\/> Posição do polegar de pergunta <x2\/>
+<x3\/> Posição do polegar de pergunta <x4\/>
 
-Triggers move along the X axis. Their positions read as follows:
+Os gatilhos movem-se ao longo do eixo X. Suas posições são lidas da seguinte forma:
 
-![Query trigger position](media/index-gamepad-trigger-position.png)
+<x1\/> Posição do gatilho de pergunta <x2\/>
 
-### Vibration
+### Vibração
 
-To set the gamepad vibration level, use [IGamePadDevice.SetVibration](xref:Stride.Input.IGamePadDevice.SetVibration\(System.Single,System.Single,System.Single,System.Single\)).
+Para definir o nível de vibração do gamepad, use [IGamePadDevice.SetVibration](xref:Stride.Input.IGamePadDevice.SetVibration\(System.Single,System.Single,System.Single,System.Single\)).
 
-> [!Note]
-> Stride currently only supports vibration for Xbox gamepads.
+> <x1\/>!Note<x2\/>
+> O Stride suporta atualmente apenas vibração para os gamepads Xbox.
 
-## Example code
+## Exemplo de código
 
 ```cs
-using Stride.Core.Mathematics;
-using Stride.Engine;
+usando Stride. Core.Matemática;
+usando Stride. Motor;
 
-public class TestScript : SyncScript
-{
-    public override void Update()
-    {
-        //Check if a gamepad is connected
-        if (Input.HasGamePad)
-        {
-            //Get the number of connected gamepads
-            int gamepadCount = Input.GamePadCount;
+classe pública TestScript: Sincronização
+(
+    atualização()
+    (
+        \/\/ Verifique se um gamepad está conectado
+        se (Input.HasGamePad)
+        (
+            \/\/ Obter o número de gamepads conectados
+            capa de jogo Contagem = Entrada.GamePadCount;
 
-            // Check each gamepad's status
-            foreach(var gamepad in Input.GamePads)
-            {
-                // Get the analog thumbstick positions
-                Vector2 speed = gamepad.State.LeftThumb;
-                Vector2 direction = gamepad.State.RightThumb;
+            \/\/ Verifique o status de cada gamepad
+            foreach(var gamepad in Entrada.GamePads)
+            (
+                \/\/ Obter as posições do polegar analógico
+                Velocidade Vector2 = gamepad.State.LeftThumb;
+                Direção Vector2 = gamepad.State.RightThumb;
 
-                // Get the digital buttons' status
-                if (gamepad.IsButtonDown(GamePadButton.X))
-                {
-                    // The action repeats for as long as the user holds the button down.
-                    // This is useful for continuous actions such as firing a machine gun.
+                \/\/ Obter o status dos botões digitais
+                se (gamepad.IsButtonDown (GamePadButton.X))
+                (
+                    \/\/ A ação repete por enquanto o usuário segura o botão para baixo.
+                    \/\/ Isso é útil para ações contínuas, como disparar uma metralhadora.
                 }
-                if (gamepad.IsButtonPressed(GamePadButton.A))
-                {
-                    // The action is triggered only once, even if the user holds the button down.
-                    // This is useful for one-time actions such as jumping.
+                se (gamepad.IsButtonPresed (GamePadButton.A)
+                (
+                    \/\/ A ação é acionada apenas uma vez, mesmo que o usuário mantenha pressionado o botão.
+                    \/\/ Isso é útil para ações únicas, como pular.
                 }
             }
         }
@@ -125,7 +125,7 @@ public class TestScript : SyncScript
 }
 ```
 
-## See also
-* [Keyboards](keyboards.md)
-* [Virtual buttons](virtual-buttons.md)
-* [Input overview](index.md)
+## Ver também
+* [Teclados](keyboards.md)
+* [Botões virtuais](virtual-buttons.md)
+* [Visão geral da entrada](index.md)

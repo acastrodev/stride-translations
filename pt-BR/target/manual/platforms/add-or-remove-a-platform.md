@@ -1,25 +1,25 @@
-# Add or remove a platform
+# Adicionar ou remover uma plataforma
 
-<span class="badge text-bg-primary">Beginner</span>
+<x1\/>Introdução<x2\/>
 
-You can add and remove platforms to and from projects.
+Você pode adicionar e remover plataformas de e para projetos.
 
-1. In the **Solution Explorer** (default bottom left), right-click the project and select **Update package > Update platforms**.
+1. No **Solution Explorer** (baixo padrão esquerdo), clique com o botão direito do mouse no projeto e selecione **Update package > Plataformas de atualização**.
 
-   ![Update platforms](media/update-platforms.png)
+   <x1\/>Update plataformas<x2\/>
 
-   The **Select Platforms** dialog opens.
+   A caixa de diálogo **Select Platforms** é aberta.
 
-   ![Select platforms](media/select-platforms.png)
+   <x1\/>Selecione plataformas<x2\/>
 
-2. Select the platforms you want to support and click **OK**.
+2. Selecione as plataformas que deseja suportar e clique em **OK**.
 
-3. Reload the assemblies by clicking the **Reload game assembles** button in the toolbar.
+3. Recarregue as assembléias clicando no jogo **Reload monta o botão** na barra de ferramentas.
 
-   ![Reload assemblies](media/reload-assemblies.png)
+   <x1\/>Reload assemblies<x2\/>
 
-The supported platforms are updated. To refresh the platforms list in the toolbar, restart Game Studio.
+As plataformas suportadas são atualizadas. Para atualizar a lista de plataformas na barra de ferramentas, reinicie o Game Studio.
 
-## See also
+## Ver também
 
-* [Platforms](index.md)
+* [Plataformas](index.md)

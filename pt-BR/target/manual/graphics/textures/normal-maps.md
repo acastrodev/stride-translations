@@ -1,70 +1,70 @@
-# Normal maps
+# Mapas normais
 
-<span class="badge text-bg-primary">Intermediate</span>
-<span class="badge text-bg-success">Artist</span>
-<span class="badge text-bg-success">Programmer</span>
+<x1\/> Intermediário <x2\/>
+<x3\/>Artista <x4\/>
+<x5\/> Programador <x6\/>
 
-**Normal maps** are textures that add the appearance of surface detail, such as cracks and bumps, without changing the actual geometry of a model. They contain information about how meshes should reflect light, creating the illusion of much more complex geometry. This saves lots of processing power.
+**Normal maps** são texturas que adicionam a aparência do detalhe da superfície, como rachaduras e colisões, sem alterar a geometria real de um modelo. Eles contêm informações sobre como as malhas devem refletir a luz, criando a ilusão de geometria muito mais complexa. Isso economiza muito poder de processamento.
 
-| No normal map | With a normal map |
+| Nenhum mapa normal | Com um mapa normal |
 | --------------| ----------- 
-| ![media/material-attributes-15.png](../materials/media/material-attributes-15.png) | ![media/material-attributes-16.png](../materials/media/material-attributes-16.png) |
+| <x1\/>media\/material-attributes-15.png<x2\/> | <x1\/>media\/material-attributes-16.png<x2\/> |
 
-| Original mesh | Simplified mesh | Simplified mesh and normal map |
+| Malha original | Malha simplificada | Malha simplificada e mapa normal |
 |---------------|-----------------|---------
-| ![Example 1](media/normal_map_example1.jpg) | ![Example 2](media/normal_map_example2.jpg) | ![Example 3](media/normal_map_example3.jpg) |
-| 4m triangles | 500 triangles | 500 triangles |
+| <x1\/>Exemplo 1<x2\/> | <x1\/>Example 2<x2\/> | <x1\/>Example 3<x2\/> |
+| 4m triângulos | 500 triângulos | 500 triângulos |
 
-*(Images courtesy of Paolo Cignoni, shared under [Attribution-ShareAlike 1.0 Generic (CC BY-SA 1.0)](https://creativecommons.org/licenses/by-sa/1.0/)*
+*(Imagens cortesia de Paolo Cignoni, compartilhadas sob [Attribution-ShareAlike 1.0 Genérico (CC BY-SA 1.0)](https://creativecommons.org/licenses/by-sa/1.0/)*
 
-Normal maps usually represent small changes of the normal vector (the vector which points away from the surface). Stride uses the most common convention: the X and Y components follow the tangent and the bitangent of the surface, and the Z component follows the normal vector of the surface. This means that a value of `(0, 0, 1)` coincides with the normal vector and represents no change, while a value of `(-1, 0, 0)` tilts to the "left" (ie negative X value in the tangent (local) space).
+Os mapas normais geralmente representam pequenas mudanças do vetor normal (o vetor que aponta para longe da superfície). O Stride usa a convenção mais comum: os componentes X e Y seguem o tangente e o benfeitor da superfície, e o componente Z segue o vetor normal da superfície. Isso significa que um valor de `(0, 0, 1)` coincide com o vetor normal e não representa nenhuma mudança, enquanto um valor de `(-1, 0, 0)` inclina para a "esquerda" (ou seja, valor X negativo no espaço tangente (local).
 
-![media/material-attributes-13.png](../materials/media/material-attributes-13.png)
+<x1\/>media\/material-attributes-13.png<x2\/>
 
-## Use a normal map
+## Use um mapa normal
 
-1. In the **Asset View**, select the texture you want to use as a normal map.
+1. No **Asset View**, selecione a textura que deseja usar como um mapa normal.
 
-   ![Select normal map texture](media/select-normal-map-texture.png)
+   <x1\/>Selecione a textura normal do mapa<x2\/>
 
-2. In the **Property Grid**, make sure the **type** is set to **normal map**.
+2. No **Property Grid**, certifique-se de que o **type** está definido como **normal map**.
 
-   ![Normal map](media/normal-map-expanded-properties.png)
+   <x1\/>Normal map<x2\/>
 
-   This means Stride assumes the texture is in linear color space and converts it to a format suited for normal maps.
+   Isso significa que Stride assume que a textura está em espaço de cor linear e converte-a em um formato adequado para mapas normais.
 
-3. In the **Asset View**, select the material you want to use the normal map.
+3. No **Asset View**, selecione o material que deseja usar o mapa normal.
 
-   ![Select material](media/select-material.png)
+   <x1\/>Select material<x2\/>
 
-4. In the **Property Grid**, under the material **Geometry** properties, expand **Surface**.
+4. No **Property Grid**, sob o material **Geometry** propriedades, expanda **Surface**.
 
-   ![Use normal maps](media/use-normal-map.png)
+   <x1\/>Use mapas normais<x2\/>
 
-5. Next to **Normal map**, click ![Blue arrow button](~/manual/game-studio/media/blue-arrow-icon.png) (**Replace**) and make sure **Texture** is selected.
+5. Próximo a **Normal map**, clique em <x1\/> Botão de seta azul<x2\/> (** Substituir**) e certifique-se de **Textura** é selecionado.
 
-6. Next to **Normal map**, click ![Hand icon](~/manual/game-studio/media/hand-icon.png) (**Select an asset**).
+6. Ao lado de **Normal map**, clique em <x1\/>Hand icon<x2\/> (**Select an asset**).
 
-   ![Select asset](media/select-asset-texture.png)
+   <x1\/> Selecione asset<x2\/>
 
-7. Select the normal map texture and click **OK**.
+7. Selecione a textura normal do mapa e clique em **OK**.
 
-For more information about materials, see [Materials](../materials/index.md).
+Para obter mais informações sobre materiais, consulte [Materials](../materials/index.md).
 
-## Normal map properties
+## Propriedades do mapa normal
 
-Normal map textures have two properties in addition to the [common texture properties](index.md).
+Texturas de mapas normais têm duas propriedades além das propriedades de textura [common](index.md).
 
-![Normal map textures](media/normal-map-texture-properties.png)
+<x1\/>Normal map textures<x2\/>
 
-| Property | Description |
+| Propriedade | Descrição |
 |----------|---------
-| Invert Y | Have positive Y components (green pixels) face up in tangent space. This option depends on the tools you use to create normal maps. |
+| Inversão Y | Tenha componentes Y positivos (pixéis verdes) enfrentam-se no espaço tangente. Esta opção depende das ferramentas que você usa para criar mapas normais. |
 
-For information about normal map properties in materials, see [Materials — Geometry attributes](../materials/geometry-attributes.md).
+Para obter informações sobre propriedades normais de mapas em materiais, consulte [Materials — Geometria atributos](../materials/geometry-attributes.md).
 
-## See also
+## Ver também
 
-* [Textures](index.md)
-* [Materials](../materials/index.md)
-* [Normal mapping on Wikipedia](http://en.wikipedia.org/wiki/Normal_mapping)
+* [Texturas](index.md)
+* [Materiais](../materials/index.md)
+* [Mapeamento normal na Wikipedia](http://en.wikipedia.org/wiki/Normal_mapping)

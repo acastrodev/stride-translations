@@ -1,41 +1,41 @@
-# Prefab models
+# Modelos pré-fabricadas
 
-<span class="badge text-bg-primary">Beginner</span>
-<span class="badge text-bg-success">Designer</span>
+<x1\/>Introdução<x2\/>
+<x3\/>Designer<x4\/>
 
-**Prefab models** convert prefabs to single drawcalls. This is useful for optimization, as Stride only renders the final model instead of the separate entities in the prefab. When you make changes to the prefab, Game Studio regenerates the prefab model.
+** Modelos pré-fabricados** convertem pré-fabricas em apenas drawcalls. Isso é útil para otimização, pois a Stride apenas torna o modelo final em vez das entidades separadas no pré-fabricado. Quando você faz alterações na pré-fabricada, Game Studio regenera o modelo pré-fabricado.
 
-## Drawbacks
+## Retornos
 
-Prefab models don't inherit elements such as lights, colliders, or other components — they're only models, and have to be used just like other models. For example, if you have a prefab comprising two models with physics components, the prefab model creates a single model from the two models and ignores the physics components. If you need to add components to a prefab model, add them to the prefab model itself.
+Os modelos pré-fabricados não herdam elementos como luzes, colisões ou outros componentes — são apenas modelos e têm de ser usados como outros modelos. Por exemplo, se você tem um pré-fabricado composto por dois modelos com componentes de física, o modelo pré-fabricado cria um único modelo dos dois modelos e ignora os componentes da física. Se você precisar adicionar componentes a um modelo pré-fabricado, adicione-os ao próprio modelo pré-fabricado.
 
-Prefab models don't expose materials. This means you can't view or edit them in the prefab model asset, or in model components that use the prefab model.
+Os modelos pré-fabricadas não expõem materiais. Isso significa que você não pode visualizá-los ou editá-los no ativo do modelo pré-fabricado, ou em componentes do modelo que usam o modelo pré-fabricado.
 
-## Create a prefab model
+## Criar um modelo pré-fabricada
 
-1. In the **Asset View**, select **Add asset > Model > Prefab model**.
+1. No **Asset View**, selecione **Add asset > Model > Prefab model**.
 
-   ![Add prefab model](media/add-prefab-model.png)
+   <x1\/> Adicionar modelo pré-fabricado<x2\/>
 
-2. In the Property Grid (on the right by default), next to **Prefab**, click ![Hand icon](~/manual/game-studio/media/hand-icon.png) (**Select asset**).
+2. Na Grade de Propriedade (à direita por padrão), ao lado de **Prefab**, clique em <x1\/>Hand icon<x2\/> (**Select asset**).
 
-   ![Prefab properties](media/prefab-model-properties.png)
+   <x1\/> Propriedades pré-fabricadas<x2\/>
 
-   The **Select an asset** window opens.
+   A janela **Selecione um ativo** abre.
 
-   ![Select prefab for model](media/select-prefab-for-model.png)
+   <x1\/>Selecionar pré-fabricada para modelo<x2\/>
 
-3. Select the prefab you want to create a model from and click **OK**.
+3. Selecione a pré-fabricada que deseja criar um modelo de e clique em **OK**.
 
-   Game Studio adds the prefab model to the Asset View.
+   Game Studio adiciona o modelo pré-fabricada para o Asset View.
 
-   ![Prefab model added](media/prefab-model-added.png)
+   <x1\/>Prefab modelo adicionado <x2\/>
 
-## See also
+## Ver também
 
-* [Create a prefab](create-a-prefab.md)
+* [Criar uma pré-fabricada](create-a-prefab.md)
 * [Use prefabs](use-prefabs.md)
-* [Edit prefabs](edit-prefabs.md)
-* [Nested prefabs](nested-prefabs.md)
-* [Override prefab properties](override-prefab-properties.md)
-* [Archetypes](../archetypes.md)
+* [Editar pré-fabricados](edit-prefabs.md)
+* [Pré-fabricadas aninhadas](nested-prefabs.md)
+* [Sobrepor propriedades pré-fabricadas](override-prefab-properties.md)
+* [Arquétipos](../archetypes.md)

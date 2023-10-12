@@ -1,58 +1,58 @@
-# Rigidbodies
+# Rígidos
 
-<span class="badge text-bg-primary">Beginner</span>
-<span class="badge text-bg-success">Designer</span>
+<x1\/>Introdução<x2\/>
+<x3\/>Designer<x4\/>
 
-**Rigidbodies** move based on physical forces applied to them, such as gravity and collisions. Typical rigidbodies are boxes, balls, furniture, and so on — objects that are pushed, pulled, and knocked around, and also have effects on other rigidbodies they collide with.
+**Rigidbodies** movem-se com base em forças físicas aplicadas a eles, como gravidade e colisões. Os rígidos típicos são caixas, bolas, móveis e assim por diante — objetos que são empurrados, puxados e derrubados ao redor, e também têm efeitos em outros corpos rígidos que colidem com.
 
-![Static and rigidbody colliders](media/rigid-bodies-static-and-rigid-body-colliders.png)
+<x1\/> Coletores de corpos estáticos e rígidos<x2\/>
 
 
-## Add a rigidbody collider
+## Adicionar um coletor de corpo rígido
 
-1. Select the entity you want to be a rigidbody collider.
+1. Selecione a entidade que deseja ser um colisor de corpo rígido.
 
-2. In the **Property Grid**, click **Add component** and select **Rigidbody**.
+2. No **Property Grid**, clique em **Add component** e selecione **Rigidbody**.
 
-   ![Add Static collider component](media/physics-tutorials-create-a-bouncing-ball-add-rigitbody-component.png)
+   <x1\/> Adicionar componente de colisor estático<x2\/>
 
-3. Set the [collider shape](collider-shapes.md) to match the entity. To do this, in the **Property Grid**, expand the **Rigidbody component** to view its properties.
+3. Defina a forma [collider](collider-shapes.md) para corresponder à entidade. Para fazer isso, no **Property Grid**, expanda o componente **Rigidbody** para ver suas propriedades.
 
-4. Next to **Collider Shapes**, click ![Green plus button](~/manual/game-studio/media/green-plus-icon.png) (**Add**) and select the shape you want.
+4. Ao lado de **Collider Shapes**, clique em <x1\/>Green plus button<x2\/> (**Add**) e selecione a forma que deseja.
 
-   ![Add Static collider component](media/physics-tutorials-create-a-bouncing-ball-rigitbody-shape.png)
+   <x1\/> Adicionar componente de colisor estático<x2\/>
 
-## Component properties
+## Propriedades de componentes
 
-You can adjust the rigidbody properties in the **Property Grid**.
+Você pode ajustar as propriedades do corpo rígido no **Property Grid**.
 
-![Rigidbody properties](media/rigid-body-properties.png)
+<x1\/> Propriedades do corpo digital<x2\/>
 
-| Property | Description |
+| Propriedade | Descrição |
 ----------------------|-----------------------
-| Collision Group | Sets which collision group the object belongs to. |
-| Can Collide With | Sets which groups the object collides with. |
-| Collision Events | If this is enabled, the object reports collision events, which you can use in scripts. It has no effect on physics. If you have no scripts using collision events for the object, disable this option to save CPU. |
-| Can Sleep | If this is enabled, the physics engine doesn't process physics objects when they're not moving. This saves CPU. |
-| Restitution | Sets the amount of kinetic energy lost or gained after a collision. A typical value is between 0 and 1. If the restitution property of colliding entities is 0, the entities lose all energy and stop moving immediately on impact. If the restitution is 1, they lose no energy and rebound with the same velocity they collided at. Use this to change the "bounciness" of rigidbodies. |
-| Friction | Sets the surface friction. |
-| Rolling Friction | Sets the rolling friction. |
-| CCD Motion Threshold | Sets the velocity at which continuous collision detection (CCD) takes over. CCD prevents fast-moving entities (such as bullets) erroneously passing through other entities. |
-| CCD Swept Sphere Radius | Sets the radius of the bounding sphere containing the position between two physics frames during continuous collision detection. |
-| Is Trigger | Toggles whether the rigidbody is a [trigger](triggers.md). |
-| Is Kinematic | Toggles whether the rigidbody is [kinematic](kinematic-rigid-bodies.md) and therefore moved only by its Transform property. |
-| Mass | Sets the collider mass. For large differences, use a point value; for example, write *0.1* or *10*, not *1* or *100000*. |
-| Linear damping | The amount of damping for directional forces. |
-| Angular damping | The amount of damping for rotational forces. |
-| Override Gravity | Overrides gravity with the vector specified in Gravity. |
-| Gravity | Sets a custom gravity vector applied if Override Gravity is selected. |
-| Node Name | If the collider entity contains a bone structure, the node name can refer to a bones node name to be linked to that specific bone. |
-| Collider Shapes | Adds a [collider shape](collider-shapes.md). |
+| Grupo de Collision | Define a qual grupo de colisão o objeto pertence. |
+| Pode colar com | Define quais grupos o objeto colide com. |
+| Eventos de colisão | Se isso estiver ativado, o objeto relata eventos de colisão, que você pode usar em scripts. Não tem efeito na física. Se você não tiver scripts usando eventos de colisão para o objeto, desative esta opção para salvar a CPU. |
+| Pode dormir | Se isso estiver ativado, o motor de física não processa objetos de física quando eles não estão se movendo. Isso economiza CPU. |
+| Restituição | Define a quantidade de energia cinética perdida ou adquirida após uma colisão. Um valor típico é entre 0 e 1. Se a propriedade de restituição de entidades colidindo for 0, as entidades perdem toda a energia e param de se mover imediatamente sobre o impacto. Se a restituição é 1, eles não perdem energia e se recuperam com a mesma velocidade em que colidiram. Use isso para mudar o "bounciness" de corpos rígidos. |
+| Fricção | Define o atrito de superfície. |
+| Fricção de rolamento | Define o atrito de rolamento. |
+| CCD Motion Threshold | Define a velocidade em que a detecção contínua de colisão (CCD) assume o controle. O CCD evita que entidades em movimento rápido (como balas) passem erroneamente por outras entidades. |
+| CCD Sphere Radius Swept | Define o raio da esfera de ligação que contém a posição entre dois quadros de física durante a detecção contínua de colisão. |
+| É o Trigger | Alterna se o corpo rígido é um [trigger](triggers.md). |
+| É o Kinematic | Alterna se o corpo rígido é [kinematic](kinematic-rigid-bodies.md) e, portanto, movido apenas por sua propriedade Transform. |
+| Missa | Define a massa de colisão. Para grandes diferenças, use um valor de ponto; por exemplo, escreva *0.1* ou *10*, não *1* ou *100000*. |
+| Ampliação linear | A quantidade de amortecimento para forças direcionais. |
+| Ampliação angular | A quantidade de amortecimento para forças rotacionais. |
+| Substituir a gravidade | Substitui a gravidade com o vetor especificado na gravidade. |
+| Gravidade | Define um vetor de gravidade personalizado aplicado se Override Gravity for selecionado. |
+| Nome do nó | Se a entidade do colisor contém uma estrutura óssea, o nome do nó pode referir-se a um nome de nó de ossos a ser ligado a esse osso específico. |
+| Formas de colarinho | Adiciona uma forma [collider](collider-shapes.md). |
 
-## See also
+## Ver também
 
-* [Kinematic rigidbodies](kinematic-rigid-bodies.md)
-* [Static colliders](static-colliders.md)
-* [Characters](characters.md)
-* [Collider shapes](collider-shapes.md)
+* [Rígidos caninemáticos](kinematic-rigid-bodies.md)
+* [Colliders estáticos](static-colliders.md)
+* [Personagens](characters.md)
+* [Formas de colarinho](collider-shapes.md)
 * [Triggers](triggers.md)

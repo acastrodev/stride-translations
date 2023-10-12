@@ -1,130 +1,130 @@
-# Geometry attributes
+# Atributos de geometria
 
-<span class="badge text-bg-primary">Intermediate</span>
-<span class="badge text-bg-success">Artist</span>
-<span class="badge text-bg-success">Programmer</span>
+<x1\/> Intermediário <x2\/>
+<x3\/>Artista <x4\/>
+<x5\/> Programador <x6\/>
 
-The material **geometry** attributes define the shape of a material.
+Os atributos **geometry** definem a forma de um material.
 
-![Geometry properties](media/geometry-properties.png)
+<x1\/> Propriedades geométricas<x2\/>
 
 ## Tessellation
 
-Real-time tessellation uses a HW feature of the GPU to massively subdivide triangles. This increases the realism and potential of deformations of the surface geometry.
+A tessellation em tempo real usa uma característica HW da GPU para subdividir triângulos massivamente. Isso aumenta o realismo e o potencial de deformações da geometria superficial.
 
-You can choose **none**, **flat tessellation**, or **point normal tessellation**.
+Você pode escolher **none**, **flat tessellation**, ou **point normal tessellation**.
 
-| No tessellation | Flat tessellation | Point normal tessellation |
+| Sem melancia | Tesselação plana | Ponto normal de melancia |
 | --------------  | -------------- | -------------------- 
-| ![media/material-attributes-2.png](media/material-attributes-2.png) | ![media/material-attributes-3.png](media/material-attributes-3.png) | ![media/material-attributes-4.png](media/material-attributes-4.png) |
+| <x1\/>media\/material-attributes-2.png<x2\/> | <x1\/>media\/material-attributes-3.png<x2\/> | <x1\/>media\/material-attributes-4.png<x2\/> |
 
-### Flat tessellation
+### Tesselação plana
 
-This option tessellates the mesh uniformly.
+Esta opção tessellates a malha uniformemente.
 
-![media/material-attributes-5.png](media/material-attributes-5.png)
+<x1\/>media\/material-attributes-5.png<x2\/>
 
-In the images below, notice how the flat tessellation adds extra triangles, but doesn't take the curve into account:
+Nas imagens abaixo, observe como a tesselação plana adiciona triângulos extras, mas não leva em conta a curva:
 
-| No tessellation | Flat tessellation |
+| Sem melancia | Tesselação plana |
 | ---------------- | ----------------- 
-| ![media/material-attributes-6.png](media/material-attributes-6.png) | ![media/material-attributes-7.png](media/material-attributes-7.png) |
+| <x1\/>media\/material-attributes-6.png<x2\/> | <x1\/>media\/material-attributes-7.png<x2\/> |
 
-| Property | Description |
+| Propriedade | Descrição |
 | ---------------------- | ------------
-| Triangle size | The size of a tessellated triangle in screen-space units |
-| Adjacent edges average | Adjust the triangle size values from the average of adjacent edges values |
+| Tamanho do triângulo | O tamanho de um triângulo tesselado em unidades de espaço de tela |
+| Média de bordas adjacentes | Ajuste os valores do tamanho do triângulo da média dos valores das bordas adjacentes |
 
-### Point normal tessellation
+### Ponto normal de melancia
 
-This option tessellates the mesh using the curvature provided by the mesh normals.
+Esta opção tessella a malha usando a curvatura fornecida pela malha normal.
 
-![media/material-attributes-8.png](media/material-attributes-8.png)
+<x1\/>media\/material-attributes-8.png<x2\/>
 
-The images below show how point normal tessellation adds extra triangles while taking the curvature of the mesh into account:
+As imagens abaixo mostram como ponto normal tessellation adiciona triângulos extras enquanto leva em conta a curvatura da malha:
 
-| No tessellation | Point normal tessellation |
+| Sem melancia | Ponto normal de melancia |
 | ---------------|  ---------------------- |
-| ![media/material-attributes-6.png](media/material-attributes-6.png) | ![media/material-attributes-9.png](media/material-attributes-9.png) |
+| <x1\/>media\/material-attributes-6.png<x2\/> | <x1\/>media\/material-attributes-9.png<x2\/> |
 
-| Property | Description |
+| Propriedade | Descrição |
 | ---------------------- | ------------
-| Triangle size | The size of a tessellated triangle in screen-space units |
-| Adjacent edge average | Adjust the **triangle size** and **normal curvature** values from the average of adjacent edge values |
+| Tamanho do triângulo | O tamanho de um triângulo tesselado em unidades de espaço de tela |
+| Média de borda adjacente | Ajuste os valores **triangle size** e **normal curvature** da média dos valores de borda adjacente |
 
-## Displacement
+## Deslocamento
 
-Under the **Displacement** properties, you can specify **displacement map**. This displaces the geometry of the mesh.
+Sob as propriedades **Displacement**, você pode especificar **displacement map**. Isso desloca a geometria da malha.
 
-![media/material-attributes-10.png](media/material-attributes-10.png)
+<x1\/>media\/material-attributes-10.png<x2\/>
 
-Depending on the stage at which the displacement is applied, the results can be very different:
+Dependendo da fase em que o deslocamento é aplicado, os resultados podem ser muito diferentes:
 
-| Displacement with vertex shader | Tessellation with displacement |
+| Deslocamento com tom de vértice | Tessellation com deslocamento |
 | ------| ----------------- |
-| ![media/material-attributes-11.png](media/material-attributes-11.png) | ![media/material-attributes-12.png](media/material-attributes-12.png) |
+| <x1\/>media\/material-attributes-11.png<x2\/> | <x1\/>media\/material-attributes-12.png<x2\/> |
 
-| Property | Description |
+| Propriedade | Descrição |
 | ---------------- | ------------ 
-| Displacement Map | The displacement texture as a [material color provider](material-maps.md) |
-| Intensity | The amount of displacement |
-| Scale & Bias | When enabled, the value coming from the texture is considered a positive value ranging from `0.0` to `1.0` and the shader applies a scale to get the range -1.0 to `1.0` |
-| Shader Stage | Specify which shader stage the displacement map should be applied to: vertex shader or domain shader (used with tessellation) |
+| Mapa de deslocamento | A textura de deslocamento como um provedor de cores material [](material-maps.md) |
+| Intensidade | A quantidade de deslocamento |
+| Escala e Bias | Quando ativado, o valor que vem da textura é considerado um valor positivo que varia de `0.0` a `1.0` e o shader aplica uma escala para obter o intervalo -1.0 a `1.0` |
+| Fase de Shader | Especifique qual estágio shader o mapa de deslocamento deve ser aplicado a: shader vértice ou shader de domínio (usado com tessellation) |
 
-## Surface
+## Superfície
 
-![media/material-attributes-14.png](media/material-attributes-14.png)
+<x1\/>media\/material-attributes-14.png<x2\/>
 
-Under the **Surface** properties, you can define a [Normal maps](../textures/normal-maps.md) to define **macro** surface normals. The **normal map** provides per-pixel normal perturbation of the normal of the mesh. Normal maps create the appearance of bumps and indents in the mesh:
+Sob as propriedades **Surface**, você pode definir um [Normal maps](../textures/normal-maps.md) para definir **macro** superfície normal. O mapa **normal** fornece perturbação per-pixel normal do normal da malha. Os mapas normais criam a aparência de colisões e recuos na malha:
 
-| Flat | Using a normal map |
+| Plano | Usando um mapa normal |
 | -----| ----------- 
-| ![media/material-attributes-15.png](media/material-attributes-15.png) | ![media/material-attributes-16.png](media/material-attributes-16.png) |
+| <x1\/>media\/material-attributes-15.png<x2\/> | <x1\/>media\/material-attributes-16.png<x2\/> |
 
-| Property | Description |
+| Propriedade | Descrição |
 | ------------ | ---------------
-| Normal map | The normal map color provider |
-| Scale and offset | Interpret values from the texture as positive values ranging from `0.0` to `1.0`. The shader applies a scale to get the range `-1.0` to `1.0`. |
-| Reconstruct Z | If there's no Z component in the texture, reconstruct it from the X and Y components. This assumes that X<sup>2</sup> + Y<sup>2</sup> + Z<sup>2</sup> = 1 and that Z is always positive, so no normal vector can point to the back side of the surface. We recommend you enable this option, as Stride might remove the Z component when you compress normal maps. |
+| Mapa normal | O provedor de cores do mapa normal |
+| Escala e deslocamento | Valores de interpretação da textura como valores positivos variando de `0.0` a `1.0`. O shader aplica uma escala para obter o intervalo `-1.0` a `1.0`. |
+| Reconstruir Z | Se não houver nenhum componente Z na textura, reconstrua-o dos componentes X e Y. Isso assume que X<x1\/>2<x2\/> + Y<x3\/>2<x4\/> + Z<x5\/>2<x6\/> = 1 e que Z é sempre positivo, então nenhum vetor normal pode apontar para o lado traseiro da superfície. Recomendamos que você habilitar esta opção, como Stride pode remover o componente Z quando você comprimir mapas normais. |
 
-For more information about normal maps, see the [normal maps](../textures/normal-maps.md) page.
+Para obter mais informações sobre mapas normais, consulte a página [normal maps](../textures/normal-maps.md).
 
-## Micro surface
+## Micro superfície
 
-Under the **Micro surface** setting, you can provide a **gloss map** to provide per-pixel information for gloss.
+Sob a configuração **Micro superfície**, você pode fornecer um mapa **gloss** para fornecer informações per-pixel para gloss.
 
-![media/material-attributes-17.png](media/material-attributes-17.png)
+<x1\/>media\/material-attributes-17.png<x2\/>
 
-If you select **Float**:
+Se você selecionar **Float**:
 
-- a value of `1.0` means the surface is highly glossy (the coarse normal isn't perturbed)
-- a value of `0.0` means the surface is very rough (the coarse normal is highly perturbed in several directions)
+- um valor de `1.0` significa que a superfície é altamente brilhante (o normal grosseiro não é perturbado)
+- um valor de `0.0` significa que a superfície é muito áspera (o normal grosseiro é altamente perturbado em várias direções)
 
-The screenshots below show different levels of gloss on a material:
+As capturas de tela abaixo mostram diferentes níveis de brilho em um material:
 
-- Diffuse = #848484, Lambert
-- Specular Metalness = 1.0, GGX
+- Diffuse = #84848484, Lambert
+- Metalização especular = 1.0, GGX
 
-| Gloss = 0.0 | 0.25 | 0.5 | 0.8 | 1.0 |
+| Gloss = 0,0 | 0,25 | 0,5 | 0 | 1.0 |
 | ---------------- | ---- | ---- |----- | ---
-| ![media/material-attributes-18.png](media/material-attributes-18.png) | ![media/material-attributes-19.png](media/material-attributes-19.png) | ![media/material-attributes-20.png](media/material-attributes-20.png) | ![media/material-attributes-21.png](media/material-attributes-21.png) | ![media/material-attributes-22.png](media/material-attributes-22.png) |
+| <x1\/>media\/material-attributes-18.png<x2\/> | <x1\/>media\/material-attributes-19.png<x2\/> | <x1\/>media\/material-attributes-20.png<x2\/> | <x1\/>media\/material-attributes-21.png<x2\/> | <x1\/>media\/material-attributes-22.png<x2\/> |
 
-| Property       | Description
-| -------------- | -- |
+| Property | Descrição
+| ---------------- | -- |
 | Gloss map | The gloss map color provider
-| Invert         | Inverts the gloss value (eg a value of `1.0` produces zero gloss instead of maximum). This effectively turns the gloss value into a **roughness** value, as used in other game engines
+| Invert | Inverts the gloss value (por exemplo, um valor de `1.0` produz zero gloss em vez de máximo). Isso efetivamente transforma o valor do gloss em um valor **roughness**, como usado em outros motores de jogo
 
-If you have local reflections enabled, the scene is reflected in materials with a gloss map value higher than the threshold you specify in the local reflections properties. For more information, see [Local reflections](../post-effects/local-reflections.md).
+Se você tiver reflexos locais ativados, a cena se reflete em materiais com um valor de mapa de brilho superior ao limiar especificado nas propriedades de reflexos locais. Para mais informações, consulte [Reflexões locais](../post-effects/local-reflections.md).
 
-## See also
+## Ver também
 
-* [Material maps](material-maps.md)
-* [Material attributes](material-attributes.md)
-   * [Shading attributes](shading-attributes.md)
-   * [Misc attributes](misc-attributes.md)
-   * [Clear-coat shading](clear-coat-shading.md)
-* [Clear-coating shading](clear-coat-shading.md)
-* [Material layers](material-layers.md)
-* [Material slots](material-slots.md)
-* [Materials for developers](materials-for-developers.md)
-* [Custom shaders](../effects-and-shaders/custom-shaders.md)
+* [Mapas de material](material-maps.md)
+* [Atributos de material](material-attributes.md)
+   * [Atributos de Shading](shading-attributes.md)
+   * [Atributos diversos](misc-attributes.md)
+   * [Sombreamento de capa clara](clear-coat-shading.md)
+* [Shading de cobertura clara](clear-coat-shading.md)
+* [Camadas de material](material-layers.md)
+* [Slots de material](material-slots.md)
+* [Materiais para desenvolvedores](materials-for-developers.md)
+* [Sombreadores personalizados](../effects-and-shaders/custom-shaders.md)

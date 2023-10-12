@@ -1,81 +1,81 @@
-# Subsurface scattering
+# Espalhamento de subsuperfície
 
-<span class="badge text-bg-primary">Intermediate</span>
-<span class="badge text-bg-success">Artist</span>
+<x1\/> Intermediário <x2\/>
+<x3\/>Artista <x4\/>
 
-When you enable **subsurface scattering** on a material, light is reflected at irregular angles inside the model. You can use this to realistically render translucent materials such as skin, wax, leaves, marble, and porcelain.
+Quando você **subsuperfície dispersão** em um material, a luz é refletida em ângulos irregulares dentro do modelo. Você pode usar isso para renderizar realisticamente materiais translúcidos, como pele, cera, folhas, mármore e porcelana.
 
-The photo below demonstrates a real-life example of the effect:
+A foto abaixo mostra um exemplo da vida real do efeito:
 
-![Photo](media/skin-subsurface-scattering-photo.jpg)
+<x1\/>Photo<x2\/>
 
-*(Image courtesy of Davepoo2014, shared under [Creative Commons Attribution-Share Alike 4.0 International license](https://creativecommons.org/licenses/by-sa/4.0/deed.en))*
+*(Imagem cortesia de Davepoo2014, compartilhada sob [ Criativa Atribuição-Share Alike 4.0 Licença internacional](https://creativecommons.org/licenses/by-sa/4.0/deed.en))*
 
-The screenshots below demonstrate the use of subsurface scattering in Stride to render wax:
+As capturas de tela abaixo demonstram o uso de dispersão subsuperfície em Stride para renderizar cera:
 
-| Subsurface scattering off | Subsurface scattering on |
+| Espalhamento de subsuperfície | Espalhamento de subsuperfície em |
 |---------------------------------|------------------------
-| ![On](media/candles-ss-off.jpg) | ![Off](media/candles-ss-on.jpg) |
+| <x1\/> On<x2\/> | <x1\/>Off<x2\/> |
 
-The shadows are much softer in the second image, as more light passes through the candles.
+As sombras são muito mais suaves na segunda imagem, pois mais luz passa pelas velas.
 
-## Enable subsurface scattering
+## Habilitar dispersão de subsuperfície
 
-1. Select the material you want to use subsurface shading.
+1. Selecione o material que deseja usar sombreamento subsuperfície.
 
-2. In the Property Grid, under **Shading**, next to **Subsurface scattering**, click ![Blue arrow button](~/manual/game-studio/media/blue-arrow-icon.png) (**Replace**) and choose **Subsurface scattering**.
+2. Na Grade de Propriedade, sob **Shading**, ao lado de ** Subsuperfície scattering**, clique em <x1\/> Botão de seta azul<x2\/> (** Substituir**) e escolha ** Subsuperfície dispersão**.
 
-   ![Enable subsurface scattering](media/enable-subsurface-scattering.png)
+   <x1\/> Habilitar dispersão subsuperfície <x2\/>
 
-## Properties
+## Propriedades
 
-![Properties](media/subsurface-scattering-properties.png)
+<x1\/>Propriedades <x2\/>
 
-| Property | Function |
+| Propriedade | Função |
 |--------------------|--------------------
-| Scattering width | How far the light scatters in [world units](../../game-studio/world-units.md) |
-| Translucency | How much light pentrates the material. `0.0` is no translucency; `1.0` is max. |
-| Translucency map | Specify a [grayscale map](material-maps.md) to control how translucent different regions of the material are. Brighter values produce more scattering. For example, ears should scatter more light than the top of the head, because they're thinner and therefore light passes through them more easily. The texture is multiplied by the **Translucency** parameter. |
-| Scattering profile | The scattering profile to use during the forward render pass. <p><br>**Skin:** A preconfigured shader for rendering skin <p><br>**Custom (skin-based):** A profile based on the Skin profile you can customize yourself |
-| Scattering kernel | The scattering kernel to use in the subsurface scattering post process. <p><br>**Falloff:** Scattered light is masked to this color. For example, in the screenshot of the candles, the light fades to an orange-yellow. <p><br>**Strength:** Fades to this color |
+| Largura de dispersão | Até onde a luz se espalha em unidades do mundo [](../../game-studio/world-units.md) |
+| Translutância | Quanto a luz pentrata o material. `0.0` não é translucência; `1.0` é máx. |
+| Mapa de Translucência | Especifique um mapa [grayscale](material-maps.md) para controlar como as diferentes regiões translúcidas do material são. Os valores mais brilhantes produzem mais dispersão. Por exemplo, as orelhas devem espalhar mais luz do que a parte superior da cabeça, porque são mais finas e, portanto, a luz passa por elas mais facilmente. A textura é multiplicada pelo parâmetro **Translucency**. |
+| Perfil de dispersão | O perfil de dispersão para usar durante o passe de renderização para a frente. <p><x1\/>**Skin:** Um shader pré-configurado para renderizar a pele <p><x1\/>**Custom (baseado em pele):** Um perfil baseado no perfil de pele que você pode personalizar a si mesmo |
+| Kernel de dispersão | O kernel de dispersão para usar no processo de postagem de dispersão de subsuperfície. <p><x1\/>**Falloff:** A luz dispersa é mascarada para esta cor. Por exemplo, na captura de tela das velas, a luz se desvanece para um amarelo-laranja. <p><x1\/>**Strength:** Fades to this color |
 
-| Transluency: `0.2` | Transluency: `0.98` |
+| Transluência: `0,2` | Transluência: `0,98` |
 |-------------------------------------------|--------------------
-| ![On](media/candles-translucency-02.jpg) | ![Off](media/candles-translucency-98.jpg) |
+| <x1\/> On<x2\/> | <x1\/>Off<x2\/> |
 
-## Graphics compositor options
+## Opções de compositor gráfico
 
-There are additional subsurface scattering options in the **[graphics compositor editor](../graphics-compositor/index.md)**. These options apply globally to **all** materials that use subsurface scattering.
+Existem opções adicionais de dispersão de subsuperfície no editor de compositores **[graphics](../graphics-compositor/index.md)**. Essas opções se aplicam globalmente a materiais **all** que usam dispersão subsuperfície.
 
-1. In the **Asset View** (in the bottom pane by default), double-click the **Graphics Compositor** asset.
+1. No **Asset View** (no painel inferior por padrão), clique duas vezes no **Graphics Compositor** ativo.
 
-   ![Graphics compositor asset](../graphics-compositor/media/graphics-compositor-asset.png)
+   <x1\/>Graphics compositor asset<x2\/>
 
-   The graphics compositor editor opens.
+   O editor de compositores gráficos abre.
 
-2. Select the **Subsurface scattering** node.
+2. Selecione o nó **superfície scattering**.
 
-   ![Select node](media/select-subsurface-scattering-node.png)
+   <x1\/>Select node<x2\/>
 
-3. In the **Property Grid** (on the right by default), edit the properties.
+3. No **Property Grid** (à direita por padrão), edite as propriedades.
 
-   ![Subsurface scattering blur](media/subsurface-scattering-blur-properties.png)
+   <x1\/> Subsuperfície espalhando blur<x2\/>
 
-### Properties
+### Propriedades
 
-| Property | Function |
+| Propriedade | Função |
 |----------------|-----------
-| Follow surface | Prevent light scattering across large depth differences. Affects GPU performance. |
-| Passes | The number of times the blur is executed. More passes produce smoother results (less noise and banding). |
-| Jitter kernel size | Use noise to reduce banding artifacts caused by undersampling. Creates a smoother effect, but is technically less accurate (sometimes noticeable at close distances). |
-| Render mode | Change the render mode for debugging purposes |
+| Siga a superfície | Impedir a dispersão de luz através de grandes diferenças de profundidade. Afeta o desempenho da GPU. |
+| Passes | O número de vezes que o blur é executado. Mais passes produzem resultados mais suaves (menos ruído e bandagem). |
+| Tamanho do kernel do Jitter | Use o ruído para reduzir os artefatos de agrupamento causados por undersampling. Cria um efeito mais suave, mas é tecnicamente menos preciso (às vezes perceptível a distâncias próximas). |
+| Modo de renderização | Alterar o modo de renderização para fins de depuração |
 
-## See also
+## Ver também
 
-* [Material maps](material-maps.md)
-* [Material attributes](material-attributes.md)
-   * [Geometry attributes](geometry-attributes.md)
-   * [Shading attributes](shading-attributes.md)
-   * [Misc attributes](misc-attributes.md)
-* [Material layers](material-layers.md)
-* [Materials for developers](materials-for-developers.md)
+* [Mapas de material](material-maps.md)
+* [Atributos de material](material-attributes.md)
+   * [Atributos de geometria](geometry-attributes.md)
+   * [Atributos de Shading](shading-attributes.md)
+   * [Atributos diversos](misc-attributes.md)
+* [Camadas de material](material-layers.md)
+* [Materiais para desenvolvedores](materials-for-developers.md)

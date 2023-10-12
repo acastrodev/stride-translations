@@ -3,39 +3,39 @@
 <body>
 <trans-unit id="tu1" xml:space="preserve">
 <source xml:lang="en">Templates</source>
-<target xml:lang="pt">Templates</target>
+<target xml:lang="pt">Modelos</target>
 </trans-unit>
 <trans-unit id="tu2" xml:space="preserve">
 <source xml:lang="en">Shader templating is available in SDSL. Unlike many templating systems, sdsl requires strong typed templates. The available types are:</source>
-<target xml:lang="pt">Shader templating is available in SDSL. Unlike many templating systems, sdsl requires strong typed templates. The available types are:</target>
+<target xml:lang="pt">Shader templating está disponível no SDSL. Ao contrário de muitos sistemas templating, sdsl requer modelos digitados fortes. Os tipos disponíveis são:</target>
 </trans-unit>
 <trans-unit id="tu3" xml:space="preserve">
 <source xml:lang="en">value types from HLSL (float, int, float2, float3, float4)</source>
-<target xml:lang="pt">value types from HLSL (float, int, float2, float3, float4)</target>
+<target xml:lang="pt">tipos de valor de HLSL (float, int, float2, float3, float4)</target>
 </trans-unit>
 <trans-unit id="tu4" xml:space="preserve">
 <source xml:lang="en">2D textures</source>
-<target xml:lang="pt">2D textures</target>
+<target xml:lang="pt">Texturas 2D</target>
 </trans-unit>
 <trans-unit id="tu5" xml:space="preserve">
 <source xml:lang="en">sampler states</source>
-<target xml:lang="pt">sampler states</target>
+<target xml:lang="pt">estados amostrais</target>
 </trans-unit>
 <trans-unit id="tu6" xml:space="preserve">
 <source xml:lang="en">semantics (used to replace semantics on variables)</source>
-<target xml:lang="pt">semantics (used to replace semantics on variables)</target>
+<target xml:lang="pt">semântica (usado para substituir a semântica em variáveis)</target>
 </trans-unit>
 <trans-unit id="tu7" xml:space="preserve">
 <source xml:lang="en">link types (used to replace link annotations)</source>
-<target xml:lang="pt">link types (used to replace link annotations)</target>
+<target xml:lang="pt">tipos de link (usado para substituir anotações de link)</target>
 </trans-unit>
 <trans-unit id="tu8" xml:space="preserve">
 <source xml:lang="en">An instantiated shader behaves the same way as any other shader. The value, texture and sampler template parameters are accessible like any other variable. However, it's impossible to modify their value; attempting to do so results in a compilation error. If a template variable is incorrectly used (eg using a sampler as a semantic), it should result in a compilation error. However, the behavior is officially unknown.</source>
-<target xml:lang="pt">An instantiated shader behaves the same way as any other shader. The value, texture and sampler template parameters are accessible like any other variable. However, it's impossible to modify their value; attempting to do so results in a compilation error. If a template variable is incorrectly used (eg using a sampler as a semantic), it should result in a compilation error. However, the behavior is officially unknown.</target>
+<target xml:lang="pt">Um shader instantâneo comporta-se da mesma maneira que qualquer outro shader. Os parâmetros do modelo de valor, textura e sampler são acessíveis como qualquer outra variável. No entanto, é impossível modificar seu valor; tentar fazê-lo resulta em um erro de compilação. Se uma variável de modelo é incorretamente utilizada (por exemplo, usando um sampler como um semântico), ele deve resultar em um erro de compilação. No entanto, o comportamento é oficialmente desconhecido.</target>
 </trans-unit>
 <trans-unit id="tu9" xml:space="preserve">
 <source xml:lang="en"><g id="1">Code:</g> Templating</source>
-<target xml:lang="pt"><g id="1">Code:</g> Templating</target>
+<target xml:lang="pt"><g id="1"> Código:</g> Templating</target>
 </trans-unit>
 <trans-unit id="tu10" xml:space="preserve">
 <source xml:lang="en">shader TemplateShader&lt;float speed, Texture2D myTexture, SamplerState mySampler, Semantic mySemantic, LinkType myLink&gt;
@@ -56,46 +56,46 @@
 TemplateShader&lt;1.0f, Texturing.Texture0, Texturing.Sampler0, TEXCOORD0, MyColorLink&gt;
 </source>
 <target xml:lang="pt">shader TemplateShader&lt;float speed, Texture2D myTexture, SamplerState mySampler, Semantic mySemantic, LinkType myLink&gt;
-{
-	[Color]
+(
+	[Cor]
 	[Link("myLink")]
 	float4 myColor;
  
-	stream float2 texcoord : mySemantic;
+	fluxo float2 texcoord : mySemantic;
  
-	float4 GetValue()
-	{
-		return speed * myColor * myTexture.Sample(mySampler, streams.texcoord);
+	flutuante4 GetValue()
+	(
+		velocidade de retorno * myColor * myTexture.Sample (mySampler, streams.texcoord);
 	}
 };
  
-// To instantiate the shader, use:
+\/\/ Para instanciar o shader, use:
 TemplateShader&lt;1.0f, Texturing.Texture0, Texturing.Sampler0, TEXCOORD0, MyColorLink&gt;
 </target>
 </trans-unit>
 <trans-unit id="tu11" xml:space="preserve">
 <source xml:lang="en">See also</source>
-<target xml:lang="pt">See also</target>
+<target xml:lang="pt">Ver também</target>
 </trans-unit>
 <trans-unit id="tu12" xml:space="preserve">
 <source xml:lang="en"><g id="1">Effect language</g></source>
-<target xml:lang="pt"><g id="1">Effect language</g></target>
+<target xml:lang="pt"><g id="1">Efeito da linguagem</g></target>
 </trans-unit>
 <trans-unit id="tu13" xml:space="preserve">
 <source xml:lang="en"><g id="1">Shading language index</g></source>
-<target xml:lang="pt"><g id="1">Shading language index</g></target>
+<target xml:lang="pt"><g id="1">Índice de linguagem de sombra</g></target>
 </trans-unit>
 <trans-unit id="tu14" xml:space="preserve">
 <source xml:lang="en"><g id="1">Shader classes, mixins, and inheritance</g></source>
-<target xml:lang="pt"><g id="1">Shader classes, mixins, and inheritance</g></target>
+<target xml:lang="pt"><g id="1">Shader classes, misturas e herança</g></target>
 </trans-unit>
 <trans-unit id="tu15" xml:space="preserve">
 <source xml:lang="en"><g id="1">Composition</g></source>
-<target xml:lang="pt"><g id="1">Composition</g></target>
+<target xml:lang="pt"><g id="1">Composição</g></target>
 </trans-unit>
 <trans-unit id="tu16" xml:space="preserve">
 <source xml:lang="en"><g id="1">Shader stage input/output automatic management</g></source>
-<target xml:lang="pt"><g id="1">Shader stage input/output automatic management</g></target>
+<target xml:lang="pt"><g id="1">Shader fase de entrada \/ saída gestão automática</g></target>
 </trans-unit>
 </body>
 </file>

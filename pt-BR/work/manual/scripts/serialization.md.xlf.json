@@ -1,946 +1,946 @@
 {
-    "filename": "manual\\scripts\\serialization.md.xlf",
-    "files": [
-        {
-            "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/serialization.md": [
-                [
-                    "Serialization",
-                    "",
-                    "Serialization",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/serialization.md",
-                    {
-                        "id": "tu1"
-                    }
-                ],
-                [
-                    "<x1\/>Beginner<x2\/>",
-                    "",
-                    "<x1\/>Beginner<x2\/>\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/serialization.md",
-                    {
-                        "id": "tu2"
-                    }
-                ],
-                [
-                    "<x3\/>Programmer<x4\/>",
-                    "",
-                    "<x3\/>Programmer<x4\/>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/serialization.md",
-                    {
-                        "id": "tu2"
-                    }
-                ],
-                [
-                    "The editor and serialization system uses four attributes to determine what is serialized and visible in the editor.",
-                    "",
-                    "The editor and serialization system uses four attributes to determine what is serialized and visible in the editor.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/serialization.md",
-                    {
-                        "id": "tu3"
-                    }
-                ],
-                [
-                    "DataContractAttribute",
-                    "",
-                    "<g1>DataContractAttribute<\/g1>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/serialization.md",
-                    {
-                        "id": "tu4"
-                    }
-                ],
-                [
-                    "Adding this attribute to your <g1>class<\/g1> or <g2>struct<\/g2> notifies the serializer and the editor that it should",
-                    "",
-                    "Adding this attribute to your <g1>class<\/g1> or <g2>struct<\/g2> notifies the serializer and the editor that it should\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/serialization.md",
-                    {
-                        "id": "tu5"
-                    }
-                ],
-                [
-                    "show fields and properties of that type, and serialize the data it contains with the scenes or assets that might include it.",
-                    "",
-                    "show fields and properties of that type, and serialize the data it contains with the scenes or assets that might include it.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/serialization.md",
-                    {
-                        "id": "tu5"
-                    }
-                ],
-                [
-                    "[Stride.Core.DataContract(Inherited = true)]",
-                    "",
-                    "[Stride.Core.DataContract(Inherited = true)]\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/serialization.md",
-                    {
-                        "id": "tu6"
-                    }
-                ],
-                [
-                    "public class MySerializedClass",
-                    "",
-                    "public class MySerializedClass\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/serialization.md",
-                    {
-                        "id": "tu6"
-                    }
-                ],
-                [
-                    "{",
-                    "",
-                    "{\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/serialization.md",
-                    {
-                        "id": "tu6"
-                    }
-                ],
-                [
-                    "public float MyValue;",
-                    "",
-                    "    public float MyValue;\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/serialization.md",
-                    {
-                        "id": "tu6"
-                    }
-                ],
-                [
-                    "}",
-                    "",
-                    "}\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/serialization.md",
-                    {
-                        "id": "tu6"
-                    }
-                ],
-                [
-                    "\/\/ 'DataContract' is inherited above.",
-                    "",
-                    "\r\n\/\/ 'DataContract' is inherited above.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/serialization.md",
-                    {
-                        "id": "tu6"
-                    }
-                ],
-                [
-                    "You don't need to specify it for a derived class.",
-                    "",
-                    " You don't need to specify it for a derived class.\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/serialization.md",
-                    {
-                        "id": "tu6"
-                    }
-                ],
-                [
-                    "public class MyDerivedSerializedClass :",
-                    "",
-                    "public class MyDerivedSerializedClass :",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/serialization.md",
-                    {
-                        "id": "tu6"
-                    }
-                ],
-                [
-                    "MySerializedClass",
-                    "",
-                    " MySerializedClass\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/serialization.md",
-                    {
-                        "id": "tu6"
-                    }
-                ],
-                [
-                    "{",
-                    "",
-                    "{\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/serialization.md",
-                    {
-                        "id": "tu6"
-                    }
-                ],
-                [
-                    "public string MyName;",
-                    "",
-                    "    public string MyName;\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/serialization.md",
-                    {
-                        "id": "tu6"
-                    }
-                ],
-                [
-                    "}",
-                    "",
-                    "}\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/serialization.md",
-                    {
-                        "id": "tu6"
-                    }
-                ],
-                [
-                    "<x1\/>!Note<x2\/>",
-                    "",
-                    "<x1\/>!Note<x2\/>\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/serialization.md",
-                    {
-                        "id": "tu7"
-                    }
-                ],
-                [
-                    "Your IDE may wrongfully add <g1>System.Runtime.Serialization<\/g1> to your list of <g2>using<\/g2> when adding <g3>DataContract<\/g3>.",
-                    "",
-                    "Your IDE may wrongfully add <g1>System.Runtime.Serialization<\/g1> to your list of <g2>using<\/g2> when adding <g3>DataContract<\/g3>.\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/serialization.md",
-                    {
-                        "id": "tu7"
-                    }
-                ],
-                [
-                    "They are not interchangeable.",
-                    "",
-                    "They are not interchangeable.\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/serialization.md",
-                    {
-                        "id": "tu7"
-                    }
-                ],
-                [
-                    "Make sure that your <g4>DataContract<\/g4> comes from <g5>Stride.Core<\/g5>, specifying the namespace explicitly like shown above if necessary.",
-                    "",
-                    "Make sure that your <g4>DataContract<\/g4> comes from <g5>Stride.Core<\/g5>, specifying the namespace explicitly like shown above if necessary.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/serialization.md",
-                    {
-                        "id": "tu7"
-                    }
-                ],
-                [
-                    "DataMemberAttribute",
-                    "",
-                    "<g1>DataMemberAttribute<\/g1>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/serialization.md",
-                    {
-                        "id": "tu8"
-                    }
-                ],
-                [
-                    "This notifies the editor and serializer that the property or field on this <g1>DataContract<\/g1>'ed",
-                    "",
-                    "This notifies the editor and serializer that the property or field on this <g1>DataContract<\/g1>'ed\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/serialization.md",
-                    {
-                        "id": "tu9"
-                    }
-                ],
-                [
-                    "<g2>class<\/g2> or <g3>struct<\/g3> should be serialized.",
-                    "",
-                    "<g2>class<\/g2> or <g3>struct<\/g3> should be serialized.\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/serialization.md",
-                    {
-                        "id": "tu9"
-                    }
-                ],
-                [
-                    "Note that you can omit this attribute for most public fields and properties, they will be included by default,",
-                    "",
-                    "Note that you can omit this attribute for most public fields and properties, they will be included by default,\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/serialization.md",
-                    {
-                        "id": "tu9"
-                    }
-                ],
-                [
-                    "see <g4>Fields<\/g4> and <g5>Properties<\/g5> for specifics.",
-                    "",
-                    "see <g4>Fields<\/g4> and <g5>Properties<\/g5> for specifics.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/serialization.md",
-                    {
-                        "id": "tu9"
-                    }
-                ],
-                [
-                    "[Stride.Core.DataContract]",
-                    "",
-                    "[Stride.Core.DataContract]\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/serialization.md",
-                    {
-                        "id": "tu10"
-                    }
-                ],
-                [
-                    "public class MySerializedClass",
-                    "",
-                    "public class MySerializedClass\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/serialization.md",
-                    {
-                        "id": "tu10"
-                    }
-                ],
-                [
-                    "{",
-                    "",
-                    "{\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/serialization.md",
-                    {
-                        "id": "tu10"
-                    }
-                ],
-                [
-                    "[Stride.Core.DataMember]",
-                    "",
-                    "    [Stride.Core.DataMember]\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/serialization.md",
-                    {
-                        "id": "tu10"
-                    }
-                ],
-                [
-                    "internal float MyValue;",
-                    "",
-                    "    internal float MyValue;\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/serialization.md",
-                    {
-                        "id": "tu10"
-                    }
-                ],
-                [
-                    "}",
-                    "",
-                    "}\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/serialization.md",
-                    {
-                        "id": "tu10"
-                    }
-                ],
-                [
-                    "DataAliasAttribute",
-                    "",
-                    "<g1>DataAliasAttribute<\/g1>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/serialization.md",
-                    {
-                        "id": "tu11"
-                    }
-                ],
-                [
-                    "Can be used to ensure you do not break previously serialized data whenever you have to change how that member is named in your source.",
-                    "",
-                    "Can be used to ensure you do not break previously serialized data whenever you have to change how that member is named in your source.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/serialization.md",
-                    {
-                        "id": "tu12"
-                    }
-                ],
-                [
-                    "[Stride.Core.DataAlias(\"PreviousNameOfProp\")]",
-                    "",
-                    "[Stride.Core.DataAlias(\"PreviousNameOfProp\")]\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/serialization.md",
-                    {
-                        "id": "tu13"
-                    }
-                ],
-                [
-                    "public string MyRenamedProp { get; set; }",
-                    "",
-                    "public string MyRenamedProp { get; set; }\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/serialization.md",
-                    {
-                        "id": "tu13"
-                    }
-                ],
-                [
-                    "<x1\/>!Note<x2\/>",
-                    "",
-                    "<x1\/>!Note<x2\/>\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/serialization.md",
-                    {
-                        "id": "tu14"
-                    }
-                ],
-                [
-                    "Alias remaps values only while in the editor; this feature is specific to the YAML serialization system.",
-                    "",
-                    "Alias remaps values only while in the editor; this feature is specific to the YAML serialization system.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/serialization.md",
-                    {
-                        "id": "tu14"
-                    }
-                ],
-                [
-                    "Alias will be ignored during builds and at runtime.",
-                    "",
-                    " Alias will be ignored during builds and at runtime.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/serialization.md",
-                    {
-                        "id": "tu14"
-                    }
-                ],
-                [
-                    "DataMemberIgnoreAttribute",
-                    "",
-                    "<g1>DataMemberIgnoreAttribute<\/g1>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/serialization.md",
-                    {
-                        "id": "tu15"
-                    }
-                ],
-                [
-                    "This notifies the editor and serializer that the property or field on this <g1>DataContract<\/g1>'ed",
-                    "",
-                    "This notifies the editor and serializer that the property or field on this <g1>DataContract<\/g1>'ed\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/serialization.md",
-                    {
-                        "id": "tu16"
-                    }
-                ],
-                [
-                    "<g2>class<\/g2> or <g3>struct<\/g3> should <g4><g5>NOT<\/g5><\/g4> be serialized.",
-                    "",
-                    "<g2>class<\/g2> or <g3>struct<\/g3> should <g4><g5>NOT<\/g5><\/g4> be serialized.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/serialization.md",
-                    {
-                        "id": "tu16"
-                    }
-                ],
-                [
-                    "[Stride.Core.DataContract]",
-                    "",
-                    "[Stride.Core.DataContract]\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/serialization.md",
-                    {
-                        "id": "tu17"
-                    }
-                ],
-                [
-                    "public class MySerializedClass",
-                    "",
-                    "public class MySerializedClass\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/serialization.md",
-                    {
-                        "id": "tu17"
-                    }
-                ],
-                [
-                    "{",
-                    "",
-                    "{\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/serialization.md",
-                    {
-                        "id": "tu17"
-                    }
-                ],
-                [
-                    "[Stride.Core.DataMemberIgnore]",
-                    "",
-                    "    [Stride.Core.DataMemberIgnore]\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/serialization.md",
-                    {
-                        "id": "tu17"
-                    }
-                ],
-                [
-                    "public float MyValue { get; set; } \/\/ This public property will NOT show up in the editor",
-                    "",
-                    "    public float MyValue { get; set; } \/\/ This public property will NOT show up in the editor\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/serialization.md",
-                    {
-                        "id": "tu17"
-                    }
-                ],
-                [
-                    "}",
-                    "",
-                    "}\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/serialization.md",
-                    {
-                        "id": "tu17"
-                    }
-                ],
-                [
-                    "TODO",
-                    "",
-                    "TODO",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/serialization.md",
-                    {
-                        "id": "tu18"
-                    }
-                ],
-                [
-                    "DataMemberCustomSerializerAttribute",
-                    "",
-                    "<g1>DataMemberCustomSerializerAttribute<\/g1>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/serialization.md",
-                    {
-                        "id": "tu19"
-                    }
-                ],
-                [
-                    "DataMemberUpdatableAttribute",
-                    "",
-                    "<g1>DataMemberUpdatableAttribute<\/g1>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/serialization.md",
-                    {
-                        "id": "tu20"
-                    }
-                ],
-                [
-                    "Rule of Thumb",
-                    "",
-                    "Rule of Thumb",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/serialization.md",
-                    {
-                        "id": "tu21"
-                    }
-                ],
-                [
-                    "Serialization and the editor's access and view of your properties mirrors how access modifiers work in C#;",
-                    "",
-                    "Serialization and the editor's access and view of your properties mirrors how access modifiers work in C#;",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/serialization.md",
-                    {
-                        "id": "tu22"
-                    }
-                ],
-                [
-                    "Think of the serializer\/editor as being a class external to your codebase, if you want the serializer to",
-                    "",
-                    "Think of the serializer\/editor as being a class external to your codebase, if you want the serializer to\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/serialization.md",
-                    {
-                        "id": "tu23"
-                    }
-                ],
-                [
-                    "read and write your properties you have to ensure that the access modifiers for its getter and setter",
-                    "",
-                    "read and write your properties you have to ensure that the access modifiers for its getter and setter\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/serialization.md",
-                    {
-                        "id": "tu23"
-                    }
-                ],
-                [
-                    "allows the serializer to access them.",
-                    "",
-                    "allows the serializer to access them.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/serialization.md",
-                    {
-                        "id": "tu23"
-                    }
-                ],
-                [
-                    "If you're hiding that property behind an <g1>internal<\/g1> access modifier, you have to annotate it with",
-                    "",
-                    "If you're hiding that property behind an <g1>internal<\/g1> access modifier, you have to annotate it with\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/serialization.md",
-                    {
-                        "id": "tu24"
-                    }
-                ],
-                [
-                    "the attribute to ensure it is visible to the serializer.",
-                    "",
-                    "the attribute to ensure it is visible to the serializer.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/serialization.md",
-                    {
-                        "id": "tu24"
-                    }
-                ],
-                [
-                    "Fields",
-                    "",
-                    "Fields",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/serialization.md",
-                    {
-                        "id": "tu25"
-                    }
-                ],
-                [
-                    "\/\/ Read and set in the editor by default",
-                    "",
-                    "\/\/ Read and set in the editor by default\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/serialization.md",
-                    {
-                        "id": "tu26"
-                    }
-                ],
-                [
-                    "public object obj;",
-                    "",
-                    "public object obj;\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/serialization.md",
-                    {
-                        "id": "tu26"
-                    }
-                ],
-                [
-                    "\/\/ Read and set in editor with attribute",
-                    "",
-                    "\r\n\/\/ Read and set in editor with attribute\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/serialization.md",
-                    {
-                        "id": "tu26"
-                    }
-                ],
-                [
-                    "[DataMember] public internal object obj;",
-                    "",
-                    "[DataMember] public internal object obj;\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/serialization.md",
-                    {
-                        "id": "tu26"
-                    }
-                ],
-                [
-                    "\/\/ Read only fields cannot be modified to point at another object, but the currently set object may be modified",
-                    "",
-                    "\r\n\/\/ Read only fields cannot be modified to point at another object, but the currently set object may be modified\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/serialization.md",
-                    {
-                        "id": "tu26"
-                    }
-                ],
-                [
-                    "public readonly object obj;",
-                    "",
-                    "public readonly object obj;\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/serialization.md",
-                    {
-                        "id": "tu26"
-                    }
-                ],
-                [
-                    "[DataMember] internal readonly object obj;",
-                    "",
-                    "[DataMember] internal readonly object obj;\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/serialization.md",
-                    {
-                        "id": "tu26"
-                    }
-                ],
-                [
-                    "\/\/ Never",
-                    "",
-                    "\r\n\/\/ Never\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/serialization.md",
-                    {
-                        "id": "tu26"
-                    }
-                ],
-                [
-                    "private protected\/private\/protected object obj;",
-                    "",
-                    "private protected\/private\/protected object obj;\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/serialization.md",
-                    {
-                        "id": "tu26"
-                    }
-                ],
-                [
-                    "Properties",
-                    "",
-                    "Properties",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/serialization.md",
-                    {
-                        "id": "tu27"
-                    }
-                ],
-                [
-                    "\/\/ Read and set in the editor ...",
-                    "",
-                    "\/\/ Read and set in the editor ...\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/serialization.md",
-                    {
-                        "id": "tu28"
-                    }
-                ],
-                [
-                    "\/\/ By default",
-                    "",
-                    "\r\n\/\/ By default\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/serialization.md",
-                    {
-                        "id": "tu28"
-                    }
-                ],
-                [
-                    "public object obj { get; set; }",
-                    "",
-                    "public object obj { get; set; }\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/serialization.md",
-                    {
-                        "id": "tu28"
-                    }
-                ],
-                [
-                    "public object obj { get => x; set => x = value; }",
-                    "",
-                    "public object obj { get => x; set => x = value; }\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/serialization.md",
-                    {
-                        "id": "tu28"
-                    }
-                ],
-                [
-                    "\/\/ Forced with the attribute for 'internal' modifiers",
-                    "",
-                    "\r\n\/\/ Forced with the attribute for 'internal' modifiers\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/serialization.md",
-                    {
-                        "id": "tu28"
-                    }
-                ],
-                [
-                    "[DataMember] public object obj { internal get; public\/internal set; }",
-                    "",
-                    "[DataMember] public object obj { internal get; public\/internal set; }\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/serialization.md",
-                    {
-                        "id": "tu28"
-                    }
-                ],
-                [
-                    "[DataMember] public object obj { internal get => x; public\/internal set => x; }",
-                    "",
-                    "[DataMember] public object obj { internal get => x; public\/internal set => x; }\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/serialization.md",
-                    {
-                        "id": "tu28"
-                    }
-                ],
-                [
-                    "\/\/ Read only",
-                    "",
-                    "\r\n\/\/ Read only\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/serialization.md",
-                    {
-                        "id": "tu28"
-                    }
-                ],
-                [
-                    "public object obj { get; }",
-                    "",
-                    "public object obj { get; }\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/serialization.md",
-                    {
-                        "id": "tu28"
-                    }
-                ],
-                [
-                    "\/\/ Read only for any non-public access modifier",
-                    "",
-                    "\r\n\/\/ Read only for any non-public access modifier\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/serialization.md",
-                    {
-                        "id": "tu28"
-                    }
-                ],
-                [
-                    "public object obj { get; internal\/private protected\/private\/protected set; }",
-                    "",
-                    "public object obj { get; internal\/private protected\/private\/protected set; }\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/serialization.md",
-                    {
-                        "id": "tu28"
-                    }
-                ],
-                [
-                    "public object obj { get => x; internal\/private protected\/private\/protected set => x = value; }",
-                    "",
-                    "public object obj { get => x; internal\/private protected\/private\/protected set => x = value; }\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/serialization.md",
-                    {
-                        "id": "tu28"
-                    }
-                ],
-                [
-                    "\/\/ Read only for internal properties must be enforced through the attribute",
-                    "",
-                    "\r\n\/\/ Read only for internal properties must be enforced through the attribute\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/serialization.md",
-                    {
-                        "id": "tu28"
-                    }
-                ],
-                [
-                    "[DataMember] internal object obj { get; }",
-                    "",
-                    "[DataMember] internal object obj { get; }\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/serialization.md",
-                    {
-                        "id": "tu28"
-                    }
-                ],
-                [
-                    "[DataMember] internal object obj { get => x; }",
-                    "",
-                    "[DataMember] internal object obj { get => x; }\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/serialization.md",
-                    {
-                        "id": "tu28"
-                    }
-                ],
-                [
-                    "\/\/ Read only, special case for get-only public properties without backing field,",
-                    "",
-                    "\r\n\/\/ Read only, special case for get-only public properties without backing field, \r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/serialization.md",
-                    {
-                        "id": "tu28"
-                    }
-                ],
-                [
-                    "\/\/They must use the attribute to be deserialized, see the comment below",
-                    "",
-                    "\/\/They must use the attribute to be deserialized, see the comment below\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/serialization.md",
-                    {
-                        "id": "tu28"
-                    }
-                ],
-                [
-                    "[DataMember] public object obj { get => x; }",
-                    "",
-                    "[DataMember] public object obj { get => x; }\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/serialization.md",
-                    {
-                        "id": "tu28"
-                    }
-                ],
-                [
-                    "\/\/ Read only for access modifiers more restrictive than internal, even with the attribute",
-                    "",
-                    "\r\n\/\/ Read only for access modifiers more restrictive than internal, even with the attribute\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/serialization.md",
-                    {
-                        "id": "tu28"
-                    }
-                ],
-                [
-                    "[DataMember] public object obj { internal get; private protected\/private\/protected set; }",
-                    "",
-                    "[DataMember] public object obj { internal get; private protected\/private\/protected set; }\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/serialization.md",
-                    {
-                        "id": "tu28"
-                    }
-                ],
-                [
-                    "[DataMember] public object obj { internal get => x; private protected\/private\/protected set => x; }",
-                    "",
-                    "[DataMember] public object obj { internal get => x; private protected\/private\/protected set => x; }\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/serialization.md",
-                    {
-                        "id": "tu28"
-                    }
-                ],
-                [
-                    "\/\/ Never",
-                    "",
-                    "\r\n\/\/ Never\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/serialization.md",
-                    {
-                        "id": "tu28"
-                    }
-                ],
-                [
-                    "private protected\/private\/protected object obj { get; set; }",
-                    "",
-                    "private protected\/private\/protected object obj { get; set; }\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/serialization.md",
-                    {
-                        "id": "tu28"
-                    }
-                ],
-                [
-                    "private protected\/private\/protected object obj { get => x; set => x; }",
-                    "",
-                    "private protected\/private\/protected object obj { get => x; set => x; }\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/serialization.md",
-                    {
-                        "id": "tu28"
-                    }
-                ],
-                [
-                    "<x1\/>!Note<x2\/>",
-                    "",
-                    "<x1\/>!Note<x2\/>\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/serialization.md",
-                    {
-                        "id": "tu29"
-                    }
-                ],
-                [
-                    "Get-only public properties without backing field (<g1>public object obj { get => x; }<\/g1>) are not serialized by default as",
-                    "",
-                    "Get-only public properties without backing field (<g1>public object obj { get => x; }<\/g1>) are not serialized by default as\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/serialization.md",
-                    {
-                        "id": "tu29"
-                    }
-                ],
-                [
-                    "they are, more often than not, shortcuts to values of another object or used purely as a function.",
-                    "",
-                    "they are, more often than not, shortcuts to values of another object or used purely as a function.\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/serialization.md",
-                    {
-                        "id": "tu29"
-                    }
-                ],
-                [
-                    "It might make more sense to change it to <g2>{ get; } = new MyObject();<\/g2> or <g3>{ get; init; }<\/g3> if you want to serialize it,",
-                    "",
-                    "It might make more sense to change it to <g2>{ get; } = new MyObject();<\/g2> or <g3>{ get; init; }<\/g3> if you want to serialize it,\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/serialization.md",
-                    {
-                        "id": "tu29"
-                    }
-                ],
-                [
-                    "and if that doesn't work for you, feel free to add the attribute to enforce serialization.",
-                    "",
-                    "and if that doesn't work for you, feel free to add the attribute to enforce serialization.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/serialization.md",
-                    {
-                        "id": "tu29"
-                    }
-                ],
-                [
-                    "What about <g1>init<\/g1> ?",
-                    "",
-                    "What about <g1>init<\/g1> ?",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/serialization.md",
-                    {
-                        "id": "tu30"
-                    }
-                ],
-                [
-                    "The <g1>init<\/g1> access modifier is seen as a <g2>public set<\/g2> by the editor and serialization, it will be settable in the editor.",
-                    "",
-                    "The <g1>init<\/g1> access modifier is seen as a <g2>public set<\/g2> by the editor and serialization, it will be settable in the editor.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/serialization.md",
-                    {
-                        "id": "tu31"
-                    }
-                ],
-                [
-                    "See also",
-                    "",
-                    "See also",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/serialization.md",
-                    {
-                        "id": "tu32"
-                    }
-                ],
-                [
-                    "Public properties and fields",
-                    "",
-                    "<g1>Public properties and fields<\/g1>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/serialization.md",
-                    {
-                        "id": "tu33"
-                    }
-                ]
-            ]
-        }
-    ],
-    "seg_enabled": false
+  "filename": "manual\\scripts\\serialization.md.xlf",
+  "files": [
+    {
+      "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/serialization.md": [
+        [
+          "Serialization",
+          "Serialização",
+          "Serialization",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/serialization.md",
+          {
+            "id": "tu1"
+          }
+        ],
+        [
+          "<x1\\/>Beginner<x2\\/>",
+          "<x1\\/>Introdução<x2\\/>",
+          "<x1\\/>Beginner<x2\\/>\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/serialization.md",
+          {
+            "id": "tu2"
+          }
+        ],
+        [
+          "<x3\\/>Programmer<x4\\/>",
+          "<x3\\/> Programador <x4\\/>",
+          "<x3\\/>Programmer<x4\\/>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/serialization.md",
+          {
+            "id": "tu2"
+          }
+        ],
+        [
+          "The editor and serialization system uses four attributes to determine what is serialized and visible in the editor.",
+          "O sistema de editor e serialização usa quatro atributos para determinar o que é serializado e visível no editor.",
+          "The editor and serialization system uses four attributes to determine what is serialized and visible in the editor.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/serialization.md",
+          {
+            "id": "tu3"
+          }
+        ],
+        [
+          "DataContractAttribute",
+          "Contrato de Dados",
+          "<g1>DataContractAttribute<\\/g1>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/serialization.md",
+          {
+            "id": "tu4"
+          }
+        ],
+        [
+          "Adding this attribute to your <g1>class<\\/g1> or <g2>struct<\\/g2> notifies the serializer and the editor that it should",
+          "Adicionando esse atributo ao seu <g1>class<\\/g1> ou <g2>struct<\\/g2> notifica o serializador e o editor que ele deve",
+          "Adding this attribute to your <g1>class<\\/g1> or <g2>struct<\\/g2> notifies the serializer and the editor that it should\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/serialization.md",
+          {
+            "id": "tu5"
+          }
+        ],
+        [
+          "show fields and properties of that type, and serialize the data it contains with the scenes or assets that might include it.",
+          "mostrar campos e propriedades desse tipo, e serializar os dados que contém com as cenas ou ativos que podem incluí-lo.",
+          "show fields and properties of that type, and serialize the data it contains with the scenes or assets that might include it.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/serialization.md",
+          {
+            "id": "tu5"
+          }
+        ],
+        [
+          "[Stride.Core.DataContract(Inherited = true)]",
+          "[Stride.Core.DataContract(Inherited = true)]",
+          "[Stride.Core.DataContract(Inherited = true)]\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/serialization.md",
+          {
+            "id": "tu6"
+          }
+        ],
+        [
+          "public class MySerializedClass",
+          "classe pública MySerializedClass",
+          "public class MySerializedClass\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/serialization.md",
+          {
+            "id": "tu6"
+          }
+        ],
+        [
+          "{",
+          "(",
+          "{\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/serialization.md",
+          {
+            "id": "tu6"
+          }
+        ],
+        [
+          "public float MyValue;",
+          "público flutuar MyValue;",
+          "    public float MyValue;\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/serialization.md",
+          {
+            "id": "tu6"
+          }
+        ],
+        [
+          "}",
+          "",
+          "}\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/serialization.md",
+          {
+            "id": "tu6"
+          }
+        ],
+        [
+          "\\/\\/ 'DataContract' is inherited above.",
+          "\\/\\/ 'DataContract' é herdado acima.",
+          "\r\n\\/\\/ 'DataContract' is inherited above.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/serialization.md",
+          {
+            "id": "tu6"
+          }
+        ],
+        [
+          "You don't need to specify it for a derived class.",
+          "Você não precisa especificá-lo para uma classe derivada.",
+          " You don't need to specify it for a derived class.\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/serialization.md",
+          {
+            "id": "tu6"
+          }
+        ],
+        [
+          "public class MyDerivedSerializedClass :",
+          "classe pública MyDerivedSerialized Classe :",
+          "public class MyDerivedSerializedClass :",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/serialization.md",
+          {
+            "id": "tu6"
+          }
+        ],
+        [
+          "MySerializedClass",
+          "Medida de Medição",
+          " MySerializedClass\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/serialization.md",
+          {
+            "id": "tu6"
+          }
+        ],
+        [
+          "{",
+          "(",
+          "{\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/serialization.md",
+          {
+            "id": "tu6"
+          }
+        ],
+        [
+          "public string MyName;",
+          "public string MyName;",
+          "    public string MyName;\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/serialization.md",
+          {
+            "id": "tu6"
+          }
+        ],
+        [
+          "}",
+          "",
+          "}\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/serialization.md",
+          {
+            "id": "tu6"
+          }
+        ],
+        [
+          "<x1\\/>!Note<x2\\/>",
+          "<x1\\/>!Note<x2\\/>",
+          "<x1\\/>!Note<x2\\/>\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/serialization.md",
+          {
+            "id": "tu7"
+          }
+        ],
+        [
+          "Your IDE may wrongfully add <g1>System.Runtime.Serialization<\\/g1> to your list of <g2>using<\\/g2> when adding <g3>DataContract<\\/g3>.",
+          "Seu IDE pode incorretamente adicionar <g1>System.Runtime.Serialization<\\/g1> à sua lista de <g2>usando<\\/g2> ao adicionar <g3>DataContract<\\/g3>.",
+          "Your IDE may wrongfully add <g1>System.Runtime.Serialization<\\/g1> to your list of <g2>using<\\/g2> when adding <g3>DataContract<\\/g3>.\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/serialization.md",
+          {
+            "id": "tu7"
+          }
+        ],
+        [
+          "They are not interchangeable.",
+          "Não são intercambiáveis.",
+          "They are not interchangeable.\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/serialization.md",
+          {
+            "id": "tu7"
+          }
+        ],
+        [
+          "Make sure that your <g4>DataContract<\\/g4> comes from <g5>Stride.Core<\\/g5>, specifying the namespace explicitly like shown above if necessary.",
+          "Certifique-se de que seu <g4>DataContract<\\/g4> vem de <g5>Stride.Core<\\/g5>, especificando o namespace explicitamente como mostrado acima se necessário.",
+          "Make sure that your <g4>DataContract<\\/g4> comes from <g5>Stride.Core<\\/g5>, specifying the namespace explicitly like shown above if necessary.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/serialization.md",
+          {
+            "id": "tu7"
+          }
+        ],
+        [
+          "DataMemberAttribute",
+          "DataMemberAttribu",
+          "<g1>DataMemberAttribute<\\/g1>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/serialization.md",
+          {
+            "id": "tu8"
+          }
+        ],
+        [
+          "This notifies the editor and serializer that the property or field on this <g1>DataContract<\\/g1>'ed",
+          "Isso notifica o editor e serializador que a propriedade ou campo neste <g1>DataContract<\\/g1>'ed",
+          "This notifies the editor and serializer that the property or field on this <g1>DataContract<\\/g1>'ed\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/serialization.md",
+          {
+            "id": "tu9"
+          }
+        ],
+        [
+          "<g2>class<\\/g2> or <g3>struct<\\/g3> should be serialized.",
+          "<g2>class<\\/g2> ou <g3>struct<\\/g3> devem ser serializados.",
+          "<g2>class<\\/g2> or <g3>struct<\\/g3> should be serialized.\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/serialization.md",
+          {
+            "id": "tu9"
+          }
+        ],
+        [
+          "Note that you can omit this attribute for most public fields and properties, they will be included by default,",
+          "Note que você pode omitir este atributo para a maioria dos campos públicos e propriedades, eles serão incluídos por padrão,",
+          "Note that you can omit this attribute for most public fields and properties, they will be included by default,\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/serialization.md",
+          {
+            "id": "tu9"
+          }
+        ],
+        [
+          "see <g4>Fields<\\/g4> and <g5>Properties<\\/g5> for specifics.",
+          "veja <g4>Fields<\\/g4> e <g5>Properties<\\/g5> para específicos.",
+          "see <g4>Fields<\\/g4> and <g5>Properties<\\/g5> for specifics.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/serialization.md",
+          {
+            "id": "tu9"
+          }
+        ],
+        [
+          "[Stride.Core.DataContract]",
+          "[Stride.Core.DataContract]",
+          "[Stride.Core.DataContract]\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/serialization.md",
+          {
+            "id": "tu10"
+          }
+        ],
+        [
+          "public class MySerializedClass",
+          "classe pública MySerializedClass",
+          "public class MySerializedClass\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/serialization.md",
+          {
+            "id": "tu10"
+          }
+        ],
+        [
+          "{",
+          "(",
+          "{\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/serialization.md",
+          {
+            "id": "tu10"
+          }
+        ],
+        [
+          "[Stride.Core.DataMember]",
+          "[Stride.Core.DataMember]",
+          "    [Stride.Core.DataMember]\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/serialization.md",
+          {
+            "id": "tu10"
+          }
+        ],
+        [
+          "internal float MyValue;",
+          "flutuador interno MyValue;",
+          "    internal float MyValue;\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/serialization.md",
+          {
+            "id": "tu10"
+          }
+        ],
+        [
+          "}",
+          "",
+          "}\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/serialization.md",
+          {
+            "id": "tu10"
+          }
+        ],
+        [
+          "DataAliasAttribute",
+          "Data de publicação",
+          "<g1>DataAliasAttribute<\\/g1>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/serialization.md",
+          {
+            "id": "tu11"
+          }
+        ],
+        [
+          "Can be used to ensure you do not break previously serialized data whenever you have to change how that member is named in your source.",
+          "Pode ser usado para garantir que você não quebrar dados serializados anteriormente sempre que você tiver que mudar como esse membro é nomeado em sua fonte.",
+          "Can be used to ensure you do not break previously serialized data whenever you have to change how that member is named in your source.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/serialization.md",
+          {
+            "id": "tu12"
+          }
+        ],
+        [
+          "[Stride.Core.DataAlias(\"PreviousNameOfProp\")]",
+          "[Stride. Core.DataAlias(\"PreviousNameOfProp\")]",
+          "[Stride.Core.DataAlias(\"PreviousNameOfProp\")]\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/serialization.md",
+          {
+            "id": "tu13"
+          }
+        ],
+        [
+          "public string MyRenamedProp { get; set; }",
+          "public string MyRenamedProp { get; set; }",
+          "public string MyRenamedProp { get; set; }\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/serialization.md",
+          {
+            "id": "tu13"
+          }
+        ],
+        [
+          "<x1\\/>!Note<x2\\/>",
+          "<x1\\/>!Note<x2\\/>",
+          "<x1\\/>!Note<x2\\/>\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/serialization.md",
+          {
+            "id": "tu14"
+          }
+        ],
+        [
+          "Alias remaps values only while in the editor; this feature is specific to the YAML serialization system.",
+          "Alias remaps valores apenas enquanto no editor; este recurso é específico para o sistema de serialização YAML.",
+          "Alias remaps values only while in the editor; this feature is specific to the YAML serialization system.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/serialization.md",
+          {
+            "id": "tu14"
+          }
+        ],
+        [
+          "Alias will be ignored during builds and at runtime.",
+          "Alias será ignorado durante construções e em tempo de execução.",
+          " Alias will be ignored during builds and at runtime.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/serialization.md",
+          {
+            "id": "tu14"
+          }
+        ],
+        [
+          "DataMemberIgnoreAttribute",
+          "Data de publicação",
+          "<g1>DataMemberIgnoreAttribute<\\/g1>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/serialization.md",
+          {
+            "id": "tu15"
+          }
+        ],
+        [
+          "This notifies the editor and serializer that the property or field on this <g1>DataContract<\\/g1>'ed",
+          "Isso notifica o editor e serializador que a propriedade ou campo neste <g1>DataContract<\\/g1>'ed",
+          "This notifies the editor and serializer that the property or field on this <g1>DataContract<\\/g1>'ed\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/serialization.md",
+          {
+            "id": "tu16"
+          }
+        ],
+        [
+          "<g2>class<\\/g2> or <g3>struct<\\/g3> should <g4><g5>NOT<\\/g5><\\/g4> be serialized.",
+          "<g2>class<\\/g2> ou <g3>struct<\\/g3> deve <g4><g5>NOT<\\/g5><\\/g4> ser serializado.",
+          "<g2>class<\\/g2> or <g3>struct<\\/g3> should <g4><g5>NOT<\\/g5><\\/g4> be serialized.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/serialization.md",
+          {
+            "id": "tu16"
+          }
+        ],
+        [
+          "[Stride.Core.DataContract]",
+          "[Stride.Core.DataContract]",
+          "[Stride.Core.DataContract]\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/serialization.md",
+          {
+            "id": "tu17"
+          }
+        ],
+        [
+          "public class MySerializedClass",
+          "classe pública MySerializedClass",
+          "public class MySerializedClass\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/serialization.md",
+          {
+            "id": "tu17"
+          }
+        ],
+        [
+          "{",
+          "(",
+          "{\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/serialization.md",
+          {
+            "id": "tu17"
+          }
+        ],
+        [
+          "[Stride.Core.DataMemberIgnore]",
+          "[Stride.Core.DataMemberIgnore]",
+          "    [Stride.Core.DataMemberIgnore]\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/serialization.md",
+          {
+            "id": "tu17"
+          }
+        ],
+        [
+          "public float MyValue { get; set; } \\/\\/ This public property will NOT show up in the editor",
+          "public float MyValue { get; set; } \\/\\/ Esta propriedade pública não aparecerá no editor",
+          "    public float MyValue { get; set; } \\/\\/ This public property will NOT show up in the editor\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/serialization.md",
+          {
+            "id": "tu17"
+          }
+        ],
+        [
+          "}",
+          "",
+          "}\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/serialization.md",
+          {
+            "id": "tu17"
+          }
+        ],
+        [
+          "TODO",
+          "TODO",
+          "TODO",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/serialization.md",
+          {
+            "id": "tu18"
+          }
+        ],
+        [
+          "DataMemberCustomSerializerAttribute",
+          "DataMemberCustomSerializerAtribuído",
+          "<g1>DataMemberCustomSerializerAttribute<\\/g1>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/serialization.md",
+          {
+            "id": "tu19"
+          }
+        ],
+        [
+          "DataMemberUpdatableAttribute",
+          "Data de inscrição",
+          "<g1>DataMemberUpdatableAttribute<\\/g1>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/serialization.md",
+          {
+            "id": "tu20"
+          }
+        ],
+        [
+          "Rule of Thumb",
+          "Regra de Tumb",
+          "Rule of Thumb",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/serialization.md",
+          {
+            "id": "tu21"
+          }
+        ],
+        [
+          "Serialization and the editor's access and view of your properties mirrors how access modifiers work in C#;",
+          "Serialização e acesso e visão do editor de suas propriedades refletem como os modificadores de acesso funcionam em C#;",
+          "Serialization and the editor's access and view of your properties mirrors how access modifiers work in C#;",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/serialization.md",
+          {
+            "id": "tu22"
+          }
+        ],
+        [
+          "Think of the serializer\\/editor as being a class external to your codebase, if you want the serializer to",
+          "Pense no serializador\\/editor como sendo uma classe externa para sua base de código, se você quiser que o serializador",
+          "Think of the serializer\\/editor as being a class external to your codebase, if you want the serializer to\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/serialization.md",
+          {
+            "id": "tu23"
+          }
+        ],
+        [
+          "read and write your properties you have to ensure that the access modifiers for its getter and setter",
+          "ler e escrever suas propriedades que você tem para garantir que os modificadores de acesso para seu getter e setter",
+          "read and write your properties you have to ensure that the access modifiers for its getter and setter\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/serialization.md",
+          {
+            "id": "tu23"
+          }
+        ],
+        [
+          "allows the serializer to access them.",
+          "permite ao serializador acessá-los.",
+          "allows the serializer to access them.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/serialization.md",
+          {
+            "id": "tu23"
+          }
+        ],
+        [
+          "If you're hiding that property behind an <g1>internal<\\/g1> access modifier, you have to annotate it with",
+          "Se você está escondendo essa propriedade por trás de um modificador de acesso <g1>internal<\\/g1>, você tem que anotá-la com",
+          "If you're hiding that property behind an <g1>internal<\\/g1> access modifier, you have to annotate it with\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/serialization.md",
+          {
+            "id": "tu24"
+          }
+        ],
+        [
+          "the attribute to ensure it is visible to the serializer.",
+          "o atributo para garantir que é visível para o serializador.",
+          "the attribute to ensure it is visible to the serializer.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/serialization.md",
+          {
+            "id": "tu24"
+          }
+        ],
+        [
+          "Fields",
+          "Campos",
+          "Fields",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/serialization.md",
+          {
+            "id": "tu25"
+          }
+        ],
+        [
+          "\\/\\/ Read and set in the editor by default",
+          "\\/\\/ Ler e definir no editor por padrão",
+          "\\/\\/ Read and set in the editor by default\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/serialization.md",
+          {
+            "id": "tu26"
+          }
+        ],
+        [
+          "public object obj;",
+          "objeto público obj;",
+          "public object obj;\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/serialization.md",
+          {
+            "id": "tu26"
+          }
+        ],
+        [
+          "\\/\\/ Read and set in editor with attribute",
+          "\\/\\/ Ler e definir no editor com atributo",
+          "\r\n\\/\\/ Read and set in editor with attribute\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/serialization.md",
+          {
+            "id": "tu26"
+          }
+        ],
+        [
+          "[DataMember] public internal object obj;",
+          "[DataMember] objeto interno público obj;",
+          "[DataMember] public internal object obj;\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/serialization.md",
+          {
+            "id": "tu26"
+          }
+        ],
+        [
+          "\\/\\/ Read only fields cannot be modified to point at another object, but the currently set object may be modified",
+          "\\/\\/ Leia apenas campos não podem ser modificados para apontar para outro objeto, mas o objeto definido atualmente pode ser modificado",
+          "\r\n\\/\\/ Read only fields cannot be modified to point at another object, but the currently set object may be modified\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/serialization.md",
+          {
+            "id": "tu26"
+          }
+        ],
+        [
+          "public readonly object obj;",
+          "público somente objeto obj;",
+          "public readonly object obj;\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/serialization.md",
+          {
+            "id": "tu26"
+          }
+        ],
+        [
+          "[DataMember] internal readonly object obj;",
+          "[DataMember] objeto somente leitura interno obj;",
+          "[DataMember] internal readonly object obj;\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/serialization.md",
+          {
+            "id": "tu26"
+          }
+        ],
+        [
+          "\\/\\/ Never",
+          "\\/\\/ Nunca",
+          "\r\n\\/\\/ Never\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/serialization.md",
+          {
+            "id": "tu26"
+          }
+        ],
+        [
+          "private protected\\/private\\/protected object obj;",
+          "objeto protegido\\/privado\\/protegido obj;",
+          "private protected\\/private\\/protected object obj;\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/serialization.md",
+          {
+            "id": "tu26"
+          }
+        ],
+        [
+          "Properties",
+          "Propriedades",
+          "Properties",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/serialization.md",
+          {
+            "id": "tu27"
+          }
+        ],
+        [
+          "\\/\\/ Read and set in the editor ...",
+          "\\/\\/ Ler e definir no editor ...",
+          "\\/\\/ Read and set in the editor ...\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/serialization.md",
+          {
+            "id": "tu28"
+          }
+        ],
+        [
+          "\\/\\/ By default",
+          "\\/\\/ Por padrão",
+          "\r\n\\/\\/ By default\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/serialization.md",
+          {
+            "id": "tu28"
+          }
+        ],
+        [
+          "public object obj { get; set; }",
+          "objeto público obj { get; set; }",
+          "public object obj { get; set; }\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/serialization.md",
+          {
+            "id": "tu28"
+          }
+        ],
+        [
+          "public object obj { get => x; set => x = value; }",
+          "objeto público obj { get => x; set => x = valor; }",
+          "public object obj { get => x; set => x = value; }\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/serialization.md",
+          {
+            "id": "tu28"
+          }
+        ],
+        [
+          "\\/\\/ Forced with the attribute for 'internal' modifiers",
+          "\\/\\/ Forçado com o atributo para modificadores internos",
+          "\r\n\\/\\/ Forced with the attribute for 'internal' modifiers\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/serialization.md",
+          {
+            "id": "tu28"
+          }
+        ],
+        [
+          "[DataMember] public object obj { internal get; public\\/internal set; }",
+          "[DataMember] objeto público obj { interno get; público\\/internal set; }",
+          "[DataMember] public object obj { internal get; public\\/internal set; }\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/serialization.md",
+          {
+            "id": "tu28"
+          }
+        ],
+        [
+          "[DataMember] public object obj { internal get => x; public\\/internal set => x; }",
+          "[DataMember] objeto público obj { interno get => x; conjunto público \\/ interno => x; }",
+          "[DataMember] public object obj { internal get => x; public\\/internal set => x; }\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/serialization.md",
+          {
+            "id": "tu28"
+          }
+        ],
+        [
+          "\\/\\/ Read only",
+          "\\/\\/ Ler apenas",
+          "\r\n\\/\\/ Read only\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/serialization.md",
+          {
+            "id": "tu28"
+          }
+        ],
+        [
+          "public object obj { get; }",
+          "objeto público obj { get; }",
+          "public object obj { get; }\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/serialization.md",
+          {
+            "id": "tu28"
+          }
+        ],
+        [
+          "\\/\\/ Read only for any non-public access modifier",
+          "\\/\\/ Leia apenas para qualquer modificador de acesso não público",
+          "\r\n\\/\\/ Read only for any non-public access modifier\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/serialization.md",
+          {
+            "id": "tu28"
+          }
+        ],
+        [
+          "public object obj { get; internal\\/private protected\\/private\\/protected set; }",
+          "objeto público obj { get; internal\\/private protected\\/private\\/protected set; }",
+          "public object obj { get; internal\\/private protected\\/private\\/protected set; }\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/serialization.md",
+          {
+            "id": "tu28"
+          }
+        ],
+        [
+          "public object obj { get => x; internal\\/private protected\\/private\\/protected set => x = value; }",
+          "objeto público obj { get => x; internal\\/private protected\\/private\\/protected set => x = valor; }",
+          "public object obj { get => x; internal\\/private protected\\/private\\/protected set => x = value; }\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/serialization.md",
+          {
+            "id": "tu28"
+          }
+        ],
+        [
+          "\\/\\/ Read only for internal properties must be enforced through the attribute",
+          "\\/\\/ Leia apenas para propriedades internas devem ser aplicadas através do atributo",
+          "\r\n\\/\\/ Read only for internal properties must be enforced through the attribute\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/serialization.md",
+          {
+            "id": "tu28"
+          }
+        ],
+        [
+          "[DataMember] internal object obj { get; }",
+          "[DataMember] objeto interno obj { get; }",
+          "[DataMember] internal object obj { get; }\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/serialization.md",
+          {
+            "id": "tu28"
+          }
+        ],
+        [
+          "[DataMember] internal object obj { get => x; }",
+          "[DataMember] objeto interno obj { get => x; }",
+          "[DataMember] internal object obj { get => x; }\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/serialization.md",
+          {
+            "id": "tu28"
+          }
+        ],
+        [
+          "\\/\\/ Read only, special case for get-only public properties without backing field,",
+          "\\/\\/ Leia apenas, caso especial para obter apenas propriedades públicas sem campo de apoio,",
+          "\r\n\\/\\/ Read only, special case for get-only public properties without backing field, \r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/serialization.md",
+          {
+            "id": "tu28"
+          }
+        ],
+        [
+          "\\/\\/They must use the attribute to be deserialized, see the comment below",
+          "\\/\\/Eles devem usar o atributo para ser deserializado, veja o comentário abaixo",
+          "\\/\\/They must use the attribute to be deserialized, see the comment below\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/serialization.md",
+          {
+            "id": "tu28"
+          }
+        ],
+        [
+          "[DataMember] public object obj { get => x; }",
+          "[DataMember] objeto público obj { get => x; }",
+          "[DataMember] public object obj { get => x; }\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/serialization.md",
+          {
+            "id": "tu28"
+          }
+        ],
+        [
+          "\\/\\/ Read only for access modifiers more restrictive than internal, even with the attribute",
+          "\\/\\/ Leia apenas para modificadores de acesso mais restritiva do que interna, mesmo com o atributo",
+          "\r\n\\/\\/ Read only for access modifiers more restrictive than internal, even with the attribute\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/serialization.md",
+          {
+            "id": "tu28"
+          }
+        ],
+        [
+          "[DataMember] public object obj { internal get; private protected\\/private\\/protected set; }",
+          "[DataMember] objeto público obj { interno get; privado protected\\/private\\/protected set; }",
+          "[DataMember] public object obj { internal get; private protected\\/private\\/protected set; }\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/serialization.md",
+          {
+            "id": "tu28"
+          }
+        ],
+        [
+          "[DataMember] public object obj { internal get => x; private protected\\/private\\/protected set => x; }",
+          "[DataMember] objeto público obj { interno get => x; conjunto protegido \\/ privado \\/ protegido => x; }",
+          "[DataMember] public object obj { internal get => x; private protected\\/private\\/protected set => x; }\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/serialization.md",
+          {
+            "id": "tu28"
+          }
+        ],
+        [
+          "\\/\\/ Never",
+          "\\/\\/ Nunca",
+          "\r\n\\/\\/ Never\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/serialization.md",
+          {
+            "id": "tu28"
+          }
+        ],
+        [
+          "private protected\\/private\\/protected object obj { get; set; }",
+          "objeto protegido\\/privado\\/protegido obj { get; set; }",
+          "private protected\\/private\\/protected object obj { get; set; }\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/serialization.md",
+          {
+            "id": "tu28"
+          }
+        ],
+        [
+          "private protected\\/private\\/protected object obj { get => x; set => x; }",
+          "objeto protegido\\/privado\\/protegido obj { get => x; set => x; }",
+          "private protected\\/private\\/protected object obj { get => x; set => x; }\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/serialization.md",
+          {
+            "id": "tu28"
+          }
+        ],
+        [
+          "<x1\\/>!Note<x2\\/>",
+          "<x1\\/>!Note<x2\\/>",
+          "<x1\\/>!Note<x2\\/>\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/serialization.md",
+          {
+            "id": "tu29"
+          }
+        ],
+        [
+          "Get-only public properties without backing field (<g1>public object obj { get => x; }<\\/g1>) are not serialized by default as",
+          "Propriedades apenas públicas sem campo de apoio (<g1>public object obj { get => x; }<\\/g1>) não são serializadas por padrão como",
+          "Get-only public properties without backing field (<g1>public object obj { get => x; }<\\/g1>) are not serialized by default as\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/serialization.md",
+          {
+            "id": "tu29"
+          }
+        ],
+        [
+          "they are, more often than not, shortcuts to values of another object or used purely as a function.",
+          "são, mais frequentemente do que não, atalhos para valores de outro objeto ou usados puramente como uma função.",
+          "they are, more often than not, shortcuts to values of another object or used purely as a function.\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/serialization.md",
+          {
+            "id": "tu29"
+          }
+        ],
+        [
+          "It might make more sense to change it to <g2>{ get; } = new MyObject();<\\/g2> or <g3>{ get; init; }<\\/g3> if you want to serialize it,",
+          "Pode fazer mais sentido mudá-lo para <g2>{ get; } = new MyObject();<\\/g2> or <g3>{ get; init; }<\\/g3> se você quiser serializá-lo,",
+          "It might make more sense to change it to <g2>{ get; } = new MyObject();<\\/g2> or <g3>{ get; init; }<\\/g3> if you want to serialize it,\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/serialization.md",
+          {
+            "id": "tu29"
+          }
+        ],
+        [
+          "and if that doesn't work for you, feel free to add the attribute to enforce serialization.",
+          "e se isso não funcionar para você, sinta-se livre para adicionar o atributo para impor a serialização.",
+          "and if that doesn't work for you, feel free to add the attribute to enforce serialization.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/serialization.md",
+          {
+            "id": "tu29"
+          }
+        ],
+        [
+          "What about <g1>init<\\/g1> ?",
+          "E <g1>init<\\/g1>?",
+          "What about <g1>init<\\/g1> ?",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/serialization.md",
+          {
+            "id": "tu30"
+          }
+        ],
+        [
+          "The <g1>init<\\/g1> access modifier is seen as a <g2>public set<\\/g2> by the editor and serialization, it will be settable in the editor.",
+          "O modificador de acesso <g1>init<\\/g1> é visto como um <g2>public set<\\/g2> pelo editor e serialização, ele será definido no editor.",
+          "The <g1>init<\\/g1> access modifier is seen as a <g2>public set<\\/g2> by the editor and serialization, it will be settable in the editor.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/serialization.md",
+          {
+            "id": "tu31"
+          }
+        ],
+        [
+          "See also",
+          "Ver também",
+          "See also",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/serialization.md",
+          {
+            "id": "tu32"
+          }
+        ],
+        [
+          "Public properties and fields",
+          "Propriedades e campos públicos",
+          "<g1>Public properties and fields<\\/g1>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/serialization.md",
+          {
+            "id": "tu33"
+          }
+        ]
+      ]
+    }
+  ],
+  "seg_enabled": false
 }

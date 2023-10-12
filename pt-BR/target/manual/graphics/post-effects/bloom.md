@@ -1,37 +1,37 @@
-# Bloom
+# Floresce
 
-<span class="badge text-bg-primary">Intermediate</span>
-<span class="badge text-bg-success">Artist</span>
+<x1\/> Intermediário <x2\/>
+<x3\/>Artista <x4\/>
 
-The **bloom** effect takes the brightest areas of an image, extends them, and bleeds them into the surrounding areas to simulate bright light overwhelming the camera.
+O efeito **bloom** leva as áreas mais brilhantes de uma imagem, estende-as e sangra-as nas áreas circundantes para simular luz brilhante esmagando a câmera.
 
-![media/bloom-1.png](media/bloom-1.png)
+<x1\/>media\/bloom-1.png<x2\/>
 
-It uses the result of the [bright filter](bright-filter.md) effect as input.
+Ele usa o resultado do efeito [bright filter](bright-filter.md) como entrada.
 
-## Properties
+## Propriedades
 
-![media/bloom-2.png](media/bloom-2.png)
+<x1\/>media\/bloom-2.png<x2\/>
 
-| Property | Description |
+| Propriedade | Descrição |
 | -------------- | ---- 
-| Radius | Radius of the bloom. Note that high values can affect performance. |
-| Amount | Amount/strength of bloom. |
-| Sigma Ratio | This affects the fall-off of the bloom. It's the [standard deviation](http://en.wikipedia.org/wiki/Standard_deviation) (sigma) used in the [Gaussian blur](http://en.wikipedia.org/wiki/Gaussian_blur) formula when calculating the kernel of the bloom. |
-| Distortion | Stretches the image horizontally or vertically. |
-| Afterimage | Simulates [afterimage (Wikipedia)](http://en.wikipedia.org/wiki/Afterimage) — the effect of bright spots "burning" into the  retina the longer you look at them, before fading away.  <p><br>![media/bloom-3.png](media/bloom-3.png) |
-| Fade Out Speed | The factor by which the afterimage (if enabled) decreases at each frame (1 means infinite persistence, while 0 means no persistence at all) |
-| Sensitivity | How sensitive the afterimage (if enabled) is to light. The higher this value is, the faster the effect is created when the camera focuses on a light. |
-| Expanded filtering | Reverses FXAA and bloom, and uses a richer convolution kernel during blurring. This helps reduce temporal shimmering. |
+| Radius | Raio da flor. Note que valores elevados podem afetar o desempenho. |
+| Montante | Montante\/força da flor. |
+| Rato de Sigma | Isso afeta a queda da flor. É o desvio padrão [](http://en.wikipedia.org/wiki/Standard_deviation) (sigma) usado na fórmula [Gaussian blur](http://en.wikipedia.org/wiki/Gaussian_blur) ao calcular o kernel da flor. |
+| Distorção | Estica a imagem horizontal ou verticalmente. |
+| Depois da imagem | Simula [afterimage (Wikipedia)](http://en.wikipedia.org/wiki/Afterimage) — o efeito de manchas brilhantes "queimando" na retina quanto mais você olha para eles, antes de desaparecer.  <p><x1\/><x2\/>media\/bloom-3.png<x3\/> |
+| Fade Out Speed | O fator pelo qual o afterimage (se habilitado) diminui em cada quadro (1 significa persistência infinita, enquanto 0 significa nenhuma persistência em tudo) |
+| Sensibilidade | O quão sensível é a imagem de depois (se ativada) à luz. Quanto maior esse valor é, mais rápido o efeito é criado quando a câmera se concentra em uma luz. |
+| Filtragem expandida | Inverte FXAAA e floresce, e usa um núcleo de convolução mais rico durante a borrada. Isso ajuda a reduzir o brilho temporal. |
 
-## See also
+## Ver também
 
 * [Anti-aliasing](anti-aliasing.md)
-* [Fog](fog.md)
-* [Outline](outline.md)
-* [Ambient occlusion](ambient-occlusion.md)
-* [Bright filter](bright-filter.md)
-* [Color transforms](color-transforms/index.md)
-* [Depth of field](depth-of-field.md)
-* [Lens flare](lens-flare.md)
-* [Light streaks](light-streaks.md)
+* [Fogão](fog.md)
+* [Linha de produção](outline.md)
+* [Oclusão ambiente](ambient-occlusion.md)
+* [Filtro brilhante](bright-filter.md)
+* [Transformações de cor](color-transforms/index.md)
+* [Profundidade de campo](depth-of-field.md)
+* [Flare de lente](lens-flare.md)
+* [Estrefas de luz](light-streaks.md)

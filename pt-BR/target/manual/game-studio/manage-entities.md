@@ -1,104 +1,104 @@
-# Manage entities
+# Gerenciar entidades
 
-<span class="badge text-bg-primary">Beginner</span>
-<span class="badge text-bg-success">Level designer</span>
+<x1\/>Introdução<x2\/>
+<x3\/> Designer de nível <x4\/>
 
-To build the levels of your game, you need to translate (move), rotate, and resize entities in your scene. These are known as **transformations**.
+Para construir os níveis de seu jogo, você precisa traduzir (mover), girar e redimensionar entidades em sua cena. Estes são conhecidos como **transformations**.
 
-## Transformation gizmos
+## Gizmos de transformação
 
-You can select the transformation gizmos from **Scene Editor toolbar**.
+Você pode selecionar os gizmos de transformação de **Scene Editor toolbar**.
 
-![Transformation gizmo toolbox](media/manage-entities-in-scene-gizmos.png)
+<x1\/>Transformação gizmo toolbox<x2\/>
 
-Alternatively, press **Space** to switch between gizmos.
+Alternativamente, pressione **Space** para alternar entre gizmos.
 
-There are three types of transformation gizmo:
+Existem três tipos de transformação gizmo:
 
-- ![Translation gizmo icon](media/manage-entities-in-scene-translation-gizmo.png) The **translation gizmo** moves entities
-- ![Rotation gizmo icon](media/manage-entities-in-scene-rotation-gizmo.png) The **rotation gizmo** rotates entities
-- ![Scale gizmo icon](media/manage-entities-in-scene-scale-gizmo.png) The **scale gizmo** resizes entities
+- <x1\/>Translation gizmo icon<x2\/> O **translation gizmo** move entidades
+- <x1\/>Rotation gizmo icon<x2\/> O **rotation gizmo** gira entidades
+- <x1\/>Scale gizmo icon<x2\/> O **scale gizmo** redimensiona entidades
 
-Game Studio displays the selected transformation gizmo at the origin of the entity.
+Game Studio exibe o gizmo de transformação selecionado na origem da entidade.
 
-![Transformation gizmos in the scene](media/manage-entities-transformation-gizmo.png)
+<x1\/>Gizmos de transformação na cena<x2\/>
 
-### Translation gizmo
+### Tradução
 
-To select the translation gizmo, click the ![Translation gizmo icon](media/manage-entities-in-scene-translation-gizmo.png) icon in the Scene Editor toolbar or press **W**.
+Para selecionar o gizmo de tradução, clique no ícone <x1\/>Gizmo de tradução<x2\/> ícone na barra de ferramentas do Editor de cena ou pressione **W**.
 
-The translation gizmo moves (**translates**) entities in the scene along the axis you select.
+A tradução gizmo move (**translates**) entidades na cena ao longo do eixo que você seleciona.
 
-* To move an entity along the X axis, drag it by the **red** arrow.
-* To move an entity along the Y axis (up and down), drag it by the **green** arrow.
-* To move the entity along the Z axis, drag it by the **blue** arrow.
-* To move the entity in free 3D, drag it by the central sphere.
+* Para mover uma entidade ao longo do eixo X, arraste-a pela seta **red**.
+* Para mover uma entidade ao longo do eixo Y (para cima e para baixo), arraste-a pela seta **green**.
+* Para mover a entidade ao longo do eixo Z, arraste-a pela seta **blue**.
+* Para mover a entidade em 3D livre, arraste-a pela esfera central.
 
 <video controls autoplay loop height="360" width="480">
                 <source src="media/manage-entities-in-scene-translation-gizmo.mp4" type="video/mp4">
 </video>
 
-### Rotation gizmo
+### Gizmo rotativo
 
-To select the rotation gizmo, click the ![Rotation gizmo icon](media/manage-entities-in-scene-rotation-gizmo.png) icon in the Scene Editor toolbar or press **E**.
+Para selecionar o gizmo de rotação, clique no ícone <x1\/>Rotation gizmo<x2\/> ícone na barra de ferramentas do Editor de cena ou pressione **E**.
 
-The rotation gizmo rotates entities in the scene along the axis you select.
+O gizmo de rotação gira entidades na cena ao longo do eixo que você seleciona.
 
-* To rotate an entity along the X axis (pitch), drag it by the **red** ring.
-* To rotate an entity along the Y axis (yaw), drag it by the **green** ring.
-* To rotate the entity along the Z axis (roll), drag it by the **blue** ring.
+* Para girar uma entidade ao longo do eixo X (pitch), arraste-a pelo anel **red**.
+* Para girar uma entidade ao longo do eixo Y (yaw), arraste-a pelo anel **green**.
+* Para girar a entidade ao longo do eixo Z (roll), arraste-a pelo anel **blue**.
 
 <video controls autoplay loop height="360" width="480">
                 <source src="media/manage-entities-in-scene-rotation-gizmo.mp4" type="video/mp4">
 </video>
 
-### Scale gizmo
+### Gizmo de escala
 
-To select the scale gizmo, click the ![Scale gizmo icon](media/manage-entities-in-scene-scale-gizmo.png) icon in the Scene Editor toolbar or press **R**.
+Para selecionar o gizmo de escala, clique no ícone <x1\/>Scale gizmo<x2\/> ícone na barra de ferramentas do Editor de cena ou pressione **R**.
 
-The scale gizmo resizes entities along a single axis ("stretching" or "squashing" them) or all axes (making them larger or smaller without changing their proportions).
+O gizmo de escala redimensiona entidades ao longo de um único eixo ("stretching" ou "squashing" eles) ou todos os eixos (fazendo-os maiores ou menores sem alterar suas proporções).
 
-* To resize an entity along the X axis, drag it by the **red** ring.
-* To resize an entity along the Y axis, drag it by the **green** ring.
-* To resize the entity along the Z axis, drag it by the **blue** ring.
-* To resize the entity in all axes, drag it by the central sphere.
+* Para redimensionar uma entidade ao longo do eixo X, arraste-a pelo anel **red**.
+* Para redimensionar uma entidade ao longo do eixo Y, arraste-a pelo anel **green**.
+* Para redimensionar a entidade ao longo do eixo Z, arraste-a pelo anel **blue**.
+* Para redimensionar a entidade em todos os eixos, arraste-a pela esfera central.
 
 <video controls autoplay loop height="360" width="480">
                 <source src="media/manage-entities-in-scene-scale-gizmo.mp4" type="video/mp4">
 </video>
 
-> [!Note]
-> The scale gizmo only works with the **local** coordinate system (see below). When you select the scale gizmo, Game Studio switches to local coordinates.
+> <x1\/>!Note<x2\/>
+> A escala gizmo só funciona com o sistema de coordenadas **local** (ver abaixo). Quando você seleciona a escala gizmo, Game Studio muda para coordenadas locais.
 
-## Change gizmo coordinate system
+## Alterar sistema de coordenadas gizmo
 
-You can change how the gizmo coordinates work.
+Você pode mudar como as coordenadas gizmo funcionam.
 
-1. Select the entity whose gizmo coordinates you want to change.
-2. In the Scene Editor toolbar, select the coordinate system you want.
+1. Selecione a entidade cujas coordenadas gizmo você deseja mudar.
+2. Na barra de ferramentas do Editor de cena, selecione o sistema de coordenadas que deseja.
 
-| Coordinate system | Function |
+| Sistema de coordenação | Função |
 | ------  |  ------  |
-| ![World coordinates](media/manage-entities-in-scene-wsc.png) <br><p><p>World coordinates | Uses world coordinates for transformations. The X, Y, and Z axes are the same for every entity. |
-| ![Local coordinates](media/manage-entities-in-scene-osc.png) <br><p><p>Local coordinates | Uses local coordinates for transformations. The axes are oriented in the same direction as the selected entity. |
-| ![Camera coordinates](media/manage-entities-in-scene-csc.png) <br><p><p>Camera coordinates | Uses the current camera coordinates for transformations. The axes are oriented in the same direction as the editor camera. |
+| <x1\/>Coordenadas do mundo<x2\/> <x3\/><p><p>Coordenadas mundiais | Usa coordenadas mundiais para transformações. Os eixos X, Y e Z são os mesmos para cada entidade. |
+| <x1\/>Coordenadas locais<x2\/> <x3\/><p><p>Coordenadas locais | Usa coordenadas locais para transformações. Os eixos são orientados na mesma direção que a entidade selecionada. |
+| <x1\/>Coordenadas da câmara<x2\/> <x3\/><p><p>Coordenadas de câmera | Usa as coordenadas atuais da câmera para transformações. Os eixos são orientados na mesma direção que a câmera do editor. |
 
-## Snap transformations to grid
+## Transformações de pressão para grade
 
-You can "snap" transformations to the grid. This means that the degree of transformation you apply to entities is rounded to the closest multiple of the number you specify. For example, if you set the rotation snap value to 10, entities rotate in multiples of 10 (0, 10, 20, 30, etc).
+Você pode "snap" transformações para a grade. Isso significa que o grau de transformação que você se aplica a entidades é arredondado para o múltiplo mais próximo do número que você especificar. Por exemplo, se você definir o valor de pressão de rotação para 10, as entidades giram em múltiplos de 10 (0, 10, 20, 30, etc).
 
-You can change the snap values for each gizmo in the scene view toolbar. Snap values apply to all entities in the scene. For example:
+Você pode alterar os valores de snap para cada gizmo na barra de ferramentas de visualização de cena. Os valores de pressão aplicam-se a todas as entidades do local. Por exemplo:
 
-| Icon | Function |
+| Ícone | Função |
 | --- | ---- |
-| ![](media/manage-entities-in-scene-snap-translation.png) | Snap translation to multiple of 1 |
-| ![](media/manage-entities-in-scene-snap-rotation.png) | Snap rotation to multiple of 22.5 |
-| ![](media/manage-entities-in-scene-snap-scale.png) | Snap scale to multiple of 1.1 |
+| ![](media/manage-entities-in-scene-snap-translation.png) | Tradução instantânea para vários 1 |
+| ![](media/manage-entities-in-scene-snap-rotation.png) | Rotação de pressão para múltiplos de 22.5 |
+| ![](media/manage-entities-in-scene-snap-scale.png) | Escala de pressão para vários 1.1 |
 
-## See also
+## Ver também
 
-* [Create and open a scene](create-a-scene.md)
-* [Navigate in the Scene Editor](navigate-in-the-scene-editor.md)
-* [Load scenes](load-scenes.md)
-* [Add entities](add-entities.md)
-* [Manage entities](manage-entities.md)
+* [Criar e abrir uma cena](create-a-scene.md)
+* [Navegue no Editor de Cena](navigate-in-the-scene-editor.md)
+* [Cenas de carga](load-scenes.md)
+* [Adicionar entidades](add-entities.md)
+* [Gerenciar entidades](manage-entities.md)

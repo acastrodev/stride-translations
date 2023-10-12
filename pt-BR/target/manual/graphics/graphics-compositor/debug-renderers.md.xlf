@@ -3,51 +3,51 @@
 <body>
 <trans-unit id="tu1" xml:space="preserve">
 <source xml:lang="en">Debug renderer</source>
-<target xml:lang="pt">Debug renderer</target>
+<target xml:lang="pt">Renderizador de depuração</target>
 </trans-unit>
 <trans-unit id="tu2" xml:space="preserve">
 <source xml:lang="en">The <g id="1">debug renderer</g> is a placeholder renderer you can use with scripts to print debug information. By default, the debug renderer is included in the graphics compositor as a child of the game entry point.</source>
-<target xml:lang="pt">The <g id="1">debug renderer</g> is a placeholder renderer you can use with scripts to print debug information. By default, the debug renderer is included in the graphics compositor as a child of the game entry point.</target>
+<target xml:lang="pt">O renderizador <g id="1">debug</g> é um renderizador de placeholder que você pode usar com scripts para imprimir informações de depuração. Por padrão, o renderizador de depuração é incluído no compositor gráfico como uma criança do ponto de entrada do jogo.</target>
 </trans-unit>
 <trans-unit id="tu3" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Debug renderer<x id="2"/></source>
-<target xml:lang="pt"><x id="1"/>Debug renderer<x id="2"/></target>
+<target xml:lang="pt">&lt;x1\/&gt;Debug renderer&lt;x2\/&gt;</target>
 </trans-unit>
 <trans-unit id="tu4" xml:space="preserve">
 <source xml:lang="en">Create a debug renderer</source>
-<target xml:lang="pt">Create a debug renderer</target>
+<target xml:lang="pt">Criar um renderizador de depuração</target>
 </trans-unit>
 <trans-unit id="tu5" xml:space="preserve">
 <source xml:lang="en">To create a debug renderer, right-click the graphics compositor editor and select <g id="1">Debug renderer</g>.</source>
-<target xml:lang="pt">To create a debug renderer, right-click the graphics compositor editor and select <g id="1">Debug renderer</g>.</target>
+<target xml:lang="pt">Para criar um renderizador de depuração, clique com o botão direito do mouse no editor de compositores gráficos e selecione <g id="1">Debug renderer</g>.</target>
 </trans-unit>
 <trans-unit id="tu6" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Create debug renderer<x id="2"/></source>
-<target xml:lang="pt"><x id="1"/>Create debug renderer<x id="2"/></target>
+<target xml:lang="pt">&lt;x1\/&gt;Criar renderizador de depuração&lt;x2\/&gt;</target>
 </trans-unit>
 <trans-unit id="tu7" xml:space="preserve">
 <source xml:lang="en">Connect a debug renderer to an entry point</source>
-<target xml:lang="pt">Connect a debug renderer to an entry point</target>
+<target xml:lang="pt">Conecte um renderizador de depuração a um ponto de entrada</target>
 </trans-unit>
 <trans-unit id="tu8" xml:space="preserve">
 <source xml:lang="en">In most cases, you want the debug renderer to share an entry point with one or more forward renderers. To do this, use a <g id="1">scene renderer collection</g> and select the debug renderer and forward renderer(s) as children, as in the screenshot below:</source>
-<target xml:lang="pt">In most cases, you want the debug renderer to share an entry point with one or more forward renderers. To do this, use a <g id="1">scene renderer collection</g> and select the debug renderer and forward renderer(s) as children, as in the screenshot below:</target>
+<target xml:lang="pt">Na maioria dos casos, você deseja que o renderizador de depuração compartilhe um ponto de entrada com um ou mais renderizadores avançados. Para fazer isso, use uma coleção de renderizador <g id="1">scene</g> e selecione o renderizador de depuração e renderizador(s) para a frente como crianças, como na captura de tela abaixo:</target>
 </trans-unit>
 <trans-unit id="tu9" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Debug renderer Property Grid<x id="2"/></source>
-<target xml:lang="pt"><x id="1"/>Debug renderer Property Grid<x id="2"/></target>
+<target xml:lang="pt">&lt;x1\/&gt;Debug renderer Property Grid&lt;x2\/&gt;</target>
 </trans-unit>
 <trans-unit id="tu10" xml:space="preserve">
 <source xml:lang="en">Use a debug renderer</source>
-<target xml:lang="pt">Use a debug renderer</target>
+<target xml:lang="pt">Use um renderizador de depuração</target>
 </trans-unit>
 <trans-unit id="tu11" xml:space="preserve">
 <source xml:lang="en">To use the debug renderer, reference it in your script and add debug render stages.</source>
-<target xml:lang="pt">To use the debug renderer, reference it in your script and add debug render stages.</target>
+<target xml:lang="pt">Para usar o renderizador de depuração, faça referência no seu script e adicione etapas de renderização de depuração.</target>
 </trans-unit>
 <trans-unit id="tu12" xml:space="preserve">
 <source xml:lang="en">For example, the <g id="1">Debug physics shapes</g> script included in Stride uses the debug renderer to display collider shapes at runtime.</source>
-<target xml:lang="pt">For example, the <g id="1">Debug physics shapes</g> script included in Stride uses the debug renderer to display collider shapes at runtime.</target>
+<target xml:lang="pt">Por exemplo, o script <g id="1">Debug Physics shapes</g> incluído no Stride usa o renderizador de depuração para exibir formas de colisão no tempo de execução.</target>
 </trans-unit>
 <trans-unit id="tu13" xml:space="preserve">
 <source xml:lang="en">using System.Linq;
@@ -116,62 +116,62 @@ namespace MyGame
     }
 }
 </source>
-<target xml:lang="pt">using System.Linq;
-using System.Threading.Tasks;
-using Stride.Input;
-using Stride.Engine;
-using Stride.Physics;
-using Stride.Rendering;
-using Stride.Rendering.Compositing;
+<target xml:lang="pt">usando o Sistema. Linq;
+usando o Sistema. Threading. Tarefas;
+usando Stride. Entrada;
+usando Stride. Motor;
+usando Stride. Física;
+usando Stride. Renderização;
+usando Stride. Renderização. Composição;
 
 namespace MyGame
-{
-    public class DebugPhysicsShapes : AsyncScript
-    {
-        public RenderGroup RenderGroup = RenderGroup.Group7;
+(
+    classe pública DebugPhysics Formas: AsyncScript
+    (
+        renderGroup RenderGroup público = RenderGroup.Group7;
 
-        public override async Task Execute()
-        {
-        //set up rendering in the debug entry point if we have it
-        var compositor = SceneSystem.GraphicsCompositor;
+        override público async Task Execute()
+        (
+        \/\/set up rendering in the debug entry point if we have it
+        compositor var = SceneSystem.GraphicsCompositor;
         var debugRenderer =
-            ((compositor.Game as SceneCameraRenderer)?.Child as SceneRendererCollection)?.Children.Where(
-                x =&gt; x is DebugRenderer).Cast&lt;DebugRenderer&gt;().FirstOrDefault();
-        if (debugRenderer == null)
-            return;
+            (compositor. Jogo como SceneCameraRenderer)?. Criança como SceneRendererCollection)?. Crianças. Onde..
+                x =&gt; x é DebugRenderer). Cast&lt;DebugRenderer&gt;(). FirstOrDefault();
+        se (debugRenderer == null)
+            voltar;
 
-        var shapesRenderState = new RenderStage("PhysicsDebugShapes", "Main");
-            compositor.RenderStages.Add(shapesRenderState);
+        var shapesRenderState = novo RenderStage("PhysicsDebugShapes", "Main");
+            compositor.RenderStages.Add (shapesRenderState);
             var meshRenderFeature = compositor.RenderFeatures.OfType&lt;MeshRenderFeature&gt;().First();
-            meshRenderFeature.RenderStageSelectors.Add(new SimpleGroupToRenderStageSelector
-            {
-                EffectName = "StrideForwardShadingEffect",
-                RenderGroup = (RenderGroupMask)(1 &lt;&lt; (int)RenderGroup),
+            meshRenderFeature.RenderStageSelectors.Add (novo SimplesGroupToRenderStageSelector
+            (
+                Efeito Nome = "StrideForwardShadingEffect",
+                RenderGroup = (RenderGroupMask)(1 &lt; (int)RenderGroup),
                 RenderStage = shapesRenderState,
             });
             meshRenderFeature.PipelineProcessors.Add(new WireframePipelineProcessor { RenderStage = shapesRenderState });
-            debugRenderer.DebugRenderStages.Add(shapesRenderState);
+            debugRenderer.DebugRenderStages.Add (shapesRenderState);
 
-            var simulation = this.GetSimulation();
-            if (simulation != null)
-                simulation.ColliderShapesRenderGroup = RenderGroup;
+            var simulação = this.GetSimulation();
+            se (simulação)
+                simulação. ColliderShapesRenderGroup = RenderGroup;
 
-            var enabled = false;
-            while (Game.IsRunning)
-            {
-                if (Input.IsKeyDown(Keys.LeftShift) &amp;&amp; Input.IsKeyDown(Keys.LeftCtrl) &amp;&amp; Input.IsKeyReleased(Keys.P))
-                {
-                    if (simulation != null)
-                    {
-                        if (enabled)
-                        {
-                            simulation.ColliderShapesRendering = false;
-                            enabled = false;
+            var habilitado = falso;
+            enquanto (Game.IsRunning)
+            (
+                if (Input.IsKeyDown(Keys.LeftShift) &amp;&amp; Input.IsKeyDown(Keys.LeftCtrl) &amp;&amp; Input.IsKeyReleased(Keys.P)))))
+                (
+                    se (simulação)
+                    (
+                        se (habilitado)
+                        (
+                            simulação. ColliderShapesRendering = false;
+                            habilitado = falso;
                         }
-                        else
-                        {
-                            simulation.ColliderShapesRendering = true;
-                            enabled = true;
+                        mais
+                        (
+                            simulação. ColliderShapesRendering = verdadeiro;
+                            habilitado = verdadeiro;
                         }
                     }
                 }
@@ -185,23 +185,23 @@ namespace MyGame
 </trans-unit>
 <trans-unit id="tu14" xml:space="preserve">
 <source xml:lang="en">For information about how to use this script, see <g id="1">Colliders</g>.</source>
-<target xml:lang="pt">For information about how to use this script, see <g id="1">Colliders</g>.</target>
+<target xml:lang="pt">Para obter informações sobre como usar este script, consulte <g id="1">Colliders</g>.</target>
 </trans-unit>
 <trans-unit id="tu15" xml:space="preserve">
 <source xml:lang="en">See also</source>
-<target xml:lang="pt">See also</target>
+<target xml:lang="pt">Ver também</target>
 </trans-unit>
 <trans-unit id="tu16" xml:space="preserve">
 <source xml:lang="en"><g id="1">Scene renderers</g></source>
-<target xml:lang="pt"><g id="1">Scene renderers</g></target>
+<target xml:lang="pt"><g id="1">Renderizadores de cenas</g></target>
 </trans-unit>
 <trans-unit id="tu17" xml:space="preserve">
 <source xml:lang="en"><g id="1">Custom scene renders</g></source>
-<target xml:lang="pt"><g id="1">Custom scene renders</g></target>
+<target xml:lang="pt"><g id="1">Renderizações de cena personalizadas</g></target>
 </trans-unit>
 <trans-unit id="tu18" xml:space="preserve">
 <source xml:lang="en"><g id="1">Physics — Colliders</g></source>
-<target xml:lang="pt"><g id="1">Physics — Colliders</g></target>
+<target xml:lang="pt"><g id="1">Física — Colliders</g></target>
 </trans-unit>
 </body>
 </file>

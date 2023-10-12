@@ -1,103 +1,103 @@
-# Add a UI to a scene
+# Adicionar uma interface de usuário a uma cena
 
-<span class="badge text-bg-primary">Beginner</span>
-<span class="badge text-bg-success">Artist</span>
-<span class="badge text-bg-success">Designer</span>
+<x1\/>Introdução<x2\/>
+<x3\/>Artista <x4\/>
+<x5\/>Designer<x6\/>
 
-After you create a [UI page](ui-pages.md), add it to the scene as a component on an entity.
+Depois de criar uma página [UI](ui-pages.md), adicione-a à cena como um componente em uma entidade.
 
-1. In the **Scene Editor**, create an empty entity. To do this, right-click the scene and select **Empty entity**.
+1. No **Scene Editor**, crie uma entidade vazia. Para fazer isso, clique com o botão direito do mouse na cena e selecione **Empty entity**.
 
-   ![Create empty entity](media/create-empty-entity.png)
+   <x1\/>Criar entidade vazia<x2\/>
 
-2. In the Property Grid (on the right by default), click **Add component** and select **UI**.
+2. Na Grade de Propriedade (à direita por padrão), clique em **Adicionar componente** e selecione **UI**.
 
-   ![Add UI component](media/add-UI-component.png)
+   <x1\/> Adicionar componente UI<x2\/>
 
-   Game Studio adds a **UI component** to the entity.
+   Game Studio adiciona um componente **UI** à entidade.
 
-   ![UI component](media/UI-component.png)
+   <x1\/>UI componente<x2\/>
 
-3. Next to **Page**, click ![Hand icon](~/manual/game-studio/media/hand-icon.png) (**Select an asset**).
+3. Ao lado de <g id="1">Page</g>, clique em <x1\/>Hand icon<x2\/>Select an asset</g>).<g id="4">
 
-   The **Select an asset** window opens.
+   A janela **Selecione um ativo** abre.
 
-   ![Select UI page](media/select-UI-page.png)
+   <x1\/>Selecione a página UI<x2\/>
 
-4. Select the UI page you want to add and click **OK**.
+4. Selecione a página UI que deseja adicionar e clique em **OK**.
 
-   For information about how to create and edit UI pages, see the [UI editor](ui-editor.md) page.
+   Para obter informações sobre como criar e editar páginas de interface do usuário, consulte a página [UI editor](ui-editor.md).
 
-> [!Tip]
-> To stop the UI obscuring the rest of the scene in the editor, disable the **UI component** in the Property Grid.
+> <x1\/>!Tip<x2\/>
+> Para parar a interface do usuário obscurecendo o resto da cena no editor, desative o componente **UI** na Grade de Propriedade.
 
-> ![Disable UI component](media/disable-UI-component.png)
+> <x1\/>Disable UI component<x2\/>
 
-> Remember to enable the component again before you run the game. If you don't, Stride doesn't display the UI.
+> Lembre-se de ativar o componente novamente antes de executar o jogo. Se não o fizeres, o Stride não mostra a UI.
 
-### Assign a UI page to a UI page component in code
+### Atribuir uma página UI a um componente de página UI no código
 
-You can assign a UI page to the `Page` property of a UI component.
+Você pode atribuir uma página UI para a propriedade `Page` de um componente UI.
 
 ```cs
-// This property can be assigned from a UI page asset in Game Studio
+\/\/ Esta propriedade pode ser atribuída a partir de um ativo de página UI no Game Studio
 public UIPage MyPage { get; set; }
 
-protected override void LoadScene()
-{
-    InitializeUI();
+anulada de substituição protegida LoadScene()
+(
+    InicializeUI();
 }
 
-public void InitializeUI()
-{
-    var rootElement = MyPage.RootElement;
-    // to look for a specific element in the UI page, extension methods can be used
-    var button = rootElement.FindVisualChildOfType<Button>("buttonOk");
+anula pública InicializeUI()
+(
+    raiz de var Elemento = MyPage.RootElement;
+    \/\/ procurar um elemento específico na página UI, métodos de extensão podem ser usados
+    botão var = rootElement.FindVisualChildOfType<Button>("buttonOk");
 
-    // if there's no element named "buttonOk" in the UI tree or the type doesn't match,
-    // the previous method returns null
-    if (button != null)
-    {
-        // attach a delegate to the Click event
-        button.Click += delegate
-        {
-            // do something here...
+    \/\/ se não houver nenhum elemento chamado "buttonOk" na árvore UI ou o tipo não coincide,
+    \/\/ o método anterior retorna null
+    se (botão)
+    (
+        \/\/ anexar um delegado ao evento Click
+        botão. Clique em += delegate
+        (
+            \/\/ fazer algo aqui...
         };
     }
 
-    // assign the page to the UI component
+    \/\/ atribuir a página ao componente UI
     var uiComponent = Entity.Get<UIComponent>();
-    uiComponent.Page = MyPage;
+    uiComponent. Página = MyPage;
 }
 ```
 
-## UI component properties
+## Propriedades do componente UI
 
-| Property | Description |
+| Propriedade | Descrição |
 |--------------------|----------------
-| Page | The UI page displayed by the component |
-| Sampler | Texture sampling method: Point (Nearest), Linear (**Default option** ), or Anisotropic |
-| Full screen | **Note:** We recommend you use this as other stuff is broken |
-| Resolution | The UI resolution in pixels |
-| Size | Gets or sets the actual size of the UI component in world units |
-| Resolution stretch | How the virtual resolution value should be used (`FixedWithFixedHeight`, `FixedWithAdaptableHeight`, or `FixedHeightAdaptableWidth`) |
-| Billboard | If selected, the UI always faces the camera. **Note:** Disabling billboard mode causes UI text errors in the current version of Stride |
-| Snap text | If selected, the UI text is snapped to the closest pixel |
-| Fixed size | Gets or sets the value indicating whether the UI should always be a fixed size on screen (eg a component with a height of 1 will use 0.1 of the screen). **Note:** This feature doesn't work in the current version of Stride |
-| Render group | The [render group](../graphics/graphics-compositor/render-groups-and-masks.md) the UI uses |
+| Página | A página UI exibida pelo componente |
+| Sampler | Método de amostragem de textura: Ponto (Nearest), Linear (**Opção padrão** ), ou Anisotropic |
+| Tela completa | **Nota:** Recomendamos que você use isso como outras coisas estão quebradas |
+| Resolução | A resolução UI em pixels |
+| Tamanho | Obtém ou define o tamanho real do componente UI em unidades mundiais |
+| Esticação da resolução | Como o valor de resolução virtual deve ser usado (`FixedWithFixedHeight`, `FixedWithAdaptableHeight`, ou `FixedHeightAdaptableWidth`) |
+| Billboard | Se selecionado, a interface do usuário sempre enfrenta a câmera. **Nota:** Desativar o modo de outdoor causa erros de texto UI na versão atual de Stride |
+| Texto instantâneo | Se selecionado, o texto da interface do usuário é snapped para o pixel mais próximo |
+| Tamanho fixo | Obtém ou define o valor indicando se a interface do usuário deve sempre ser um tamanho fixo na tela (por exemplo, um componente com uma altura de 1 usará 0.1 da tela). **Nota:** Esse recurso não funciona na versão atual do Stride |
+| Grupo de renderização | O grupo [render](../graphics/graphics-compositor/render-groups-and-masks.md) o UI usa |
 
-## UI scripts
+## Scripts UI
 
-To make UIs interactive, you need to add a script. Without scripts, UIs are simply non-interactive images.
+Para fazer UIs interativo, você precisa adicionar um script. Sem scripts, UIs são simplesmente imagens não interativas.
 
-For an example of a UI implemented in Stride, see the **game menu UI** sample included with Stride.
+Para um exemplo de uma interface de usuário implementada no Stride, veja a amostra do menu UI</g>game incluída no Stride.<g id="1">
 
-![Sample UI project](media/ui-sample-project.png)
+<x1\/>Projeto de interface de usuário amplo<x2\/>
 
-## See also
+## Ver também
 
-* [UI pages](ui-pages.md)
-* [UI libraries](ui-libraries.md)
-* [UI editor](ui-editor.md)
-* [Layout system](layout-system.md)
-* [VR — Display a UI in an overlay](../virtual-reality/display-a-ui-in-an-overlay.md)
+* [Páginas de interface](ui-pages.md)
+* [Bibliotecas de interface](ui-libraries.md)
+* [Editor de UI](ui-editor.md)
+* [Sistema de Layout](layout-system.md)
+* [VR — Exibir uma interface de usuário em uma sobreposição](../virtual-reality/display-a-ui-in-an-overlay.md)

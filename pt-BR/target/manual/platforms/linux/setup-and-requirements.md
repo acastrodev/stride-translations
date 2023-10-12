@@ -1,58 +1,58 @@
-# Setup and requirements
+# Configuração e requisitos
 
-To develop for Linux using Stride, you need a Linux PC with a graphics card that supports at least OpenGL 4.2 or Vulkan 1.0. The preferred Linux distribution for Stride is Ubuntu 16.04 or later, as this was the setup we used to develop the Linux version of Stride.
+Para desenvolver para Linux usando Stride, você precisa de um PC Linux com uma placa gráfica que suporta pelo menos OpenGL 4.2 ou Vulkan 1.0. A distribuição Linux preferida para Stride é Ubuntu 16.04 ou posterior, pois essa foi a configuração que usamos para desenvolver a versão Linux do Stride.
 
-The instructions below assume you have Ubuntu 16.04 installed. You might need to adapt them according to your Linux distribution.
+As instruções abaixo assumem que você tem Ubuntu 16.04 instalado. Você pode precisar adaptá-los de acordo com sua distribuição Linux.
 
-You will also need a Windows PC to build your projects for Linux using Game Studio.
+Você também precisará de um PC com Windows para construir seus projetos para Linux usando o Game Studio.
 
-## Setup
+## Configuração
 
-You need the following packages:
+Você precisa dos seguintes pacotes:
 
 * [FreeType](#freetype)
 
-* [OpenAL](#openal)
+* [Abertura](#openal)
 
 * [SDL2](#sdl2)
 
-* either Mono or .NET Core (it's OK to install both)
+* ou Mono ou .NET Core (é OK para instalar ambos)
 
 ## FreeType
 
-To render fonts, we use the [FreeType](https://www.freetype.org/) library. The minimum required version is 2.6 and can be installed via:
+Para renderizar fontes, usamos a biblioteca [FreeType](https://www.freetype.org/). A versão mínima necessária é 2.6 e pode ser instalada através de:
 
 ```
-sudo apt-get install libfreetype6-dev
+sudo apt-get instalar libfreetype6-dev
 ```
 
-## OpenAL
+## Abertura
 
-To play sounds and music, we use the [OpenAL](https://www.openal.org/) library. It can be installed via:
+Para tocar sons e música, usamos a biblioteca [OpenAL](https://www.openal.org/). Pode ser instalado através de:
 
 ```
-sudo apt-get install libopenal-dev
+sudo apt-get instalar libopenal-dev
 ```
 
 ## SDL2
 
-To run games on Linux, we use the [SDL2](https://www.libsdl.org/) library which provides the ability to create windows, handle mouse, keyboard and joystick events. The minimum required version is 2.0.4 and can be installed via:
+Para executar jogos no Linux, usamos a biblioteca [SDL2](https://www.libsdl.org/) que fornece a capacidade de criar janelas, lidar com eventos de mouse, teclado e joystick. A versão mínima exigida é 2.0.4 e pode ser instalada via:
 
 ```
 sudo apt-get install libsdl2-dev
 ```
 
-### .NET Core
+### . Núcleo de NET
 
-For information about how to install .NET Core, see the [.NET Core instructions for Debian/Ubuntu](https://docs.microsoft.com/en-us/dotnet/core/linux-prerequisites?tabs=netcore2x).
+Para obter informações sobre como instalar . NET Core, veja o [. NET Instruções principais para Debian\/Ubuntu](https://docs.microsoft.com/en-us/dotnet/core/linux-prerequisites?tabs=netcore2x).
 
-Make sure version 2.1.300+ and runtime 2.1+ is installed. To check which version you have installed, type:
+Certifique-se de que a versão 2.1.300+ e o tempo de execução 2.1+ estejam instalados. Para verificar qual versão você instalou, digite:
 
 ```
 dotnet --info
 ```
 
-## See also
+## Ver também
 
 * 
-   * [Create a Linux game](create-a-linux-game.md)
+   * [Criar um jogo Linux](create-a-linux-game.md)

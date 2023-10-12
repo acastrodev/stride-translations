@@ -1,113 +1,113 @@
-# Skybox lights
+# Luzes Skybox
 
-<span class="badge text-bg-primary">Beginner</span>
-<span class="badge text-bg-success">Designer</span>
-<span class="badge text-bg-success">Programmer</span>
+<x1\/>Introdução<x2\/>
+<x3\/>Designer<x4\/>
+<x5\/> Programador <x6\/>
 
-A **skybox light** is an [ambient light](ambient-lights.md) emitted by a [skybox](../textures/skyboxes-and-backgrounds.md). Stride analyzes the skybox texture and generates lighting using [image-based lighting (Wikipedia)](https://en.wikipedia.org/wiki/Image-based_lighting).
+A **skybox light** é uma luz [ambient](ambient-lights.md) emitida por um [skybox](../textures/skyboxes-and-backgrounds.md). Stride analisa a textura da caixa do céu e gera iluminação usando iluminação baseada em imagem [ (Wikipedia)](https://en.wikipedia.org/wiki/Image-based_lighting).
 
-![media/SkyboxLightOverview.png](media/SkyboxLightOverview.png)
+<x1\/>media\/SkyboxLightOverview.png<x2\/>
 
-Skybox lights are good for exterior scenes, where the skybox is visible. They're less useful for interior scenes, such as in rooms where the skybox is only visible through windows; as the skybox light nonetheless lights the entire room, this creates an unnatural effect.
+As luzes Skybox são boas para cenas externas, onde a caixa de céu é visível. Eles são menos úteis para cenas interiores, como em salas onde a caixa do céu é apenas visível através das janelas; como a luz da caixa do céu, no entanto, ilumina toda a sala, isso cria um efeito não natural.
 
-## How skyboxes light the scene
+## Como as caixas de céu iluminam a cena
 
-These images show the difference between ambient and skybox lighting on two pure diffuse [materials](../materials/index.md):
+Estas imagens mostram a diferença entre iluminação ambiente e Skybox em dois materiais difusos puros [](../materials/index.md):
 
-| Ambient lighting | Skybox lighting |
+| Iluminação ambiente | Iluminação Skybox |
 | ----------------- | ----
-| ![Ambient lighting](media/AmbientLight.png) | ![Skybox lighting.png](media/SkyboxLight-MaterialPureDiffuse.png) |
+| <x1\/> Iluminação abrangente <x2\/> | <x1\/>Skybox lighting.png<x2\/> |
 
-These images show the effect of skybox lighting on a material with different metal and gloss properties:
+Estas imagens mostram o efeito da iluminação skybox em um material com diferentes propriedades de metal e brilho:
 
-| Material Plastic | Metal 100% Gloss 50% | Metal 100% Gloss 100% |
+| Material plástico | Metal 100% Gloss 50% | 100% de brilho 100% |
 --------- | -------- | --- | -------- |
-| ![Material plastic](media/SkyboxLight-MaterialPlastic.png) | ![Material 100% Gloss 100%](media/SkyboxLight-MaterialMetal100Gloss50.png) | ![Metal 100% Gloss 100%](media/SkyboxLight-MaterialMetal100Gloss100.png) |
+| <x1\/>Material plastic<x2\/> | <x1\/>Material 100% Gloss 100%<x2\/> | <x1\/>Metal 100% Gloss 100%<x2\/> |
 
-Notice how the skybox texture colors are reflected.
+Observe como as cores de textura de Skybox são refletidas.
 
-## Set up a skybox light
+## Configurar uma luz skybox
 
-To use a skybox as a light, you need to add a skybox asset, then select it in a [Light component](xref:Stride.Engine.LightComponent).
+Para usar uma caixa de céu como uma luz, você precisa adicionar um ativo Skybox, em seguida, selecione-o em um componente [Light](xref:Stride.Engine.LightComponent).
 
-1. In the **Asset View**, click ![Add asset](media/engine-skybox-add-new-asset-button.png)
+1. No **Asset View**, clique em <x1\/>Add asset<x2\/>
 
-2. Select **Miscellaneous** > **Skybox**.
+2. Selecione **Miscelânea** > **Skybox**.
 
-   ![Choose asset type](media/engine-skybox-choose-asset-type.png)
+   <x1\/>Escolha tipo de ativo<x2\/>
 
-   The **Select an asset** window opens.
+   A janela **Selecione um ativo** abre.
 
-3. Choose a skybox texture from the project assets and click **OK**.
+3. Escolha uma textura skybox dos ativos do projeto e clique em **OK**.
 
-   ![Choose texture](media/engine-skybox-select-skybox-texture.png)
+   <x1\/>Escolha textura<x2\/>
 
-   Game Studio adds the skybox asset with the texture you specified.
+   Game Studio adiciona o ativo skybox com a textura que você especificou.
 
-4. Select the entity you want to be the skybox light.
+4. Selecione a entidade que você deseja ser a luz do skybox.
 
-5. In the **Property Grid** (on the right by default), click **Add component** and select [Light](xref:Stride.Engine.LightComponent).
+5. No **Property Grid** (à direita por padrão), clique em **Add component** e selecione [Light](xref:Stride.Engine.LightComponent).
 
-   ![Background component properties](media/skybox-add-light-component.png)
+   <x1\/> Propriedades do componente de fundo<x2\/>
 
-6. In the **Light** component properties, under **Light**, select **Skybox**.
+6. Nas propriedades do componente **Light**, abaixo de **Light**, selecione **Skybox**.
 
-   ![Light component property](media/light-component-property.png)
+   <x1\/> Propriedade de componente leve<x2\/>
 
-7. Click ![Hand icon](~/manual/game-studio/media/hand-icon.png) (**Select an asset**):
+7. Clique em <x1\/>Hand icon<x2\/> (**Select an asset**):
 
-   ![No skybox asset selected](media/no-skybox-asset-selected.png)
+   <x1\/> Nenhum ativo de caixa de céu selecionado<x2\/>
 
-8. Select the skybox asset you want to use as a light source and click **OK**.
+8. Selecione o ativo Skybox que deseja usar como fonte de luz e clique em **OK**.
 
-   ![Select an asset](media/select-skybox-asset.png)
+   <x1\/> Selecione um ativo<x2\/>
 
-The [Light component](xref:Stride.Engine.LightComponent) uses the skybox asset to light the scene.
+O componente [Light](xref:Stride.Engine.LightComponent) usa o asset skybox para iluminar a cena.
 
-## Skybox asset properties
+## Propriedades de ativos Skybox
 
-When you use a skybox as a light, Stride uses it both in compressed form ([spherical harmonics (Wikipedia)](https://en.wikipedia.org/wiki/Spherical_harmonics)) and as a texture to light different kinds of material. You can control the detail of both in the skybox asset properties.
+Quando você usa uma caixa de céu como uma luz, Stride o usa tanto em forma compactada ([spherical harmônicos (Wikipedia)](https://en.wikipedia.org/wiki/Spherical_harmonics)) e como uma textura para iluminar diferentes tipos de material. Você pode controlar os detalhes de ambas as propriedades de ativos da Skybox.
 
-![Skybox lighting properties](media/skybox-asset-properties.png)
+<x1\/>Skybox propriedades de iluminação<x2\/>
 
-| Property | Description |
+| Propriedade | Descrição |
 | ------------ | ---------- 
-| Texture | The texture to use as skybox (eg a cubemap or panoramic texture) |
-| Specular Only | Use the skybox only for specular lighting |
-| Diffuse SH order | The level of detail of the compressed skybox, used for diffuse lighting (dull materials). `Order5` is more detailed than `Order3`. |
-| Specular Cubemap Size | The texture size used for specular lighting. Larger textures have more detail. |
+| Textura | A textura para usar como caixa de céu (por exemplo, um cubemap ou textura panorâmica) |
+| Apenas especular | Use a caixa do céu apenas para iluminação especular |
+| Diffuse SH order | O nível de detalhe da caixa de céu comprimido, usado para iluminação difusa (materiais). `Order5` é mais detalhado do que `Order3`. |
+| Tamanho do Cubemap especular | O tamanho da textura usado para iluminação especular. Texturas maiores têm mais detalhes. |
 
-## Skybox light properties
+## Propriedades de luz Skybox
 
-![media/SkyboxLightProperties.png](media/SkyboxLightProperties.png)
+<x1\/>media\/SkyboxLightProperties.png<x2\/>
 
-| Property | Description |
+| Propriedade | Descrição |
 | ------------ | ----------
-| Intensity | The light intensity |
-| Culling Mask | Which entity groups are affected by the light. By default, all groups are affected |
+| Intensidade | A intensidade da luz |
+| Máscara de Culing | Quais grupos de entidades são afetados pela luz. Por padrão, todos os grupos são afetados |
 
-## Example code
+## Exemplo de código
 
-The following code changes the skybox light and its intensity:
+O código seguinte muda a luz da caixa de céu e sua intensidade:
 
 ```cs
-public Skybox skybox;
-public void ChangeSkyboxParameters()
-{
-    // Get the light component from an entity
+skybox Skybox público;
+void público ChangeSkyboxParameters()
+(
+    \/\/ Obter o componente de luz de uma entidade
 	var light = Entity.Get<LightComponent>();
 
-	// Get the Skybox Light settings from the light component
-	var skyboxLight = light.Type as LightSkybox;
+	\/\/ Obter as configurações de luz Skybox do componente de luz
+	var skyboxLight = luz. Tipo como LightSkybox;
 
-	// Replace the existing skybox
+	\/\/ Substituir a caixa de céu existente
 	skyboxLight.Skybox = skybox;
 
-	// Change the skybox light intensity
-	light.Intensity = 1.5f;
+	\/\/ Alterar a intensidade de luz da caixa de céu
+	luz. Intensidade = 1,5f;
 }
 ```
 
-## See also
+## Ver também
 
-* [Skyboxes and backgrounds](../textures/skyboxes-and-backgrounds.md)
+* [Skyboxes e fundos](../textures/skyboxes-and-backgrounds.md)

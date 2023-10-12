@@ -1,80 +1,80 @@
-# Stride Launcher
+# Lançador de Stride
 
-<span class="badge text-bg-primary">Beginner</span>
+<x1\/>Introdução<x2\/>
 
-With the **Stride launcher**, you can install, manage and run different versions of Stride.
+Com o **Stride launcher**, você pode instalar, gerenciar e executar diferentes versões do Stride.
 
-![Stride launcher](media/stride-launcher-interface.png)
+<x1\/>Stride launcher<x2\/>
 
-## Install the latest Stride version
+## Instale a versão Stride mais recente
 
-If you don't have Stride installed, the Stride Launcher prompts you to install the latest version.
+Se você não tiver o Stride instalado, o Stride Launcher solicita que você instale a versão mais recente.
 
-![No version installed](../get-started/media/stride-launcher-install-last-version.png)
+<x1\/> Nenhuma versão instalada <x2\/>
 
-You can install other versions of Stride in the **Switch/update version** section (**B**). To do this, click the **install** icon next to the version in the list.
+Você pode instalar outras versões do Stride na seção **Switch\/update version** (**B**). Para fazer isso, clique no **install** ícone ao lado da versão na lista.
 
-## Install the Stride Visual Studio extension
+## Instale a extensão Stride Visual Studio
 
-If you choose to install the latest version of Stride, the Stride Launcher asks if you want to install the Visual Studio extension.
+Se você optar por instalar a versão mais recente do Stride, o Stride Launcher pergunta se você deseja instalar a extensão Visual Studio.
 
-![Install Visual Studio integration](../get-started/media/install-VS-plug-in-prompt.png)
+<x1\/>Install Visual Studio integration<x2\/>
 
-The Visual Studio extension lets you edit shaders directly from Visual Studio, and provides syntax highlighting, live code analysis with validation, error checking, and navigation (jump to definition). Installing the extension isn't mandatory, but we recommend it.
+A extensão do Visual Studio permite editar shaders diretamente do Visual Studio, e fornece destaque sintaxe, análise de código ao vivo com validação, verificação de erros e navegação (salvo para definição). Instalar a extensão não é obrigatório, mas recomendamos.
 
-To install or reinstall the Visual Studio extension at any time, click the **Reinstall** button in the Stride Launcher.
+Para instalar ou reinstalar a extensão do Visual Studio a qualquer momento, clique no botão **Reinstall** no Stride Launcher.
 
-![Visual Studio extension](media/stride-launcher-visual-studio-plugin.png)
+<x1\/> Extensão visual do estúdio<x2\/>
 
-## Switch the Stride version
+## Alternar a versão Stride
 
-To choose which version of Stride runs, select it in the list under **Switch/update version**.
+Para escolher qual versão do Stride é executada, selecione-a na lista abaixo de **Switch\/update version**.
 
-## Manage different versions of Stride
+## Gerenciar diferentes versões de Stride
 
-You can install and uninstall multiple versions of Stride from the **Switch/update version** section.
+Você pode instalar e desinstalar várias versões do Stride da seção **Switch\/update version**.
 
-![Manage versions of Stride](../get-started/media/stride-launcher-various-versions.png)
+<x1\/> Gerenciar versões de Stride<x2\/>
 
-You might need to use an older version of Stride to work with old projects. Newer versions of Stride might contain changes that require old projects to be upgraded.
+Você pode precisar usar uma versão mais antiga do Stride para trabalhar com projetos antigos. As versões mais recentes do Stride podem conter alterações que exigem que projetos antigos sejam atualizados.
 
-The version number consists of two numbers. The first number refers to the **major** version, and the second number refers to the **minor** version.
+O número da versão consiste em dois números. O primeiro número refere-se à versão **major**, e o segundo número refere-se à versão **minor**.
 
-Major updates add significant changes, and you might need to update your projects to use them. Minor updates don't contain breaking changes, so they're safe use with your existing projects.
+As principais atualizações adicionam mudanças significativas, e você pode precisar atualizar seus projetos para usá-los. Atualizações menores não contêm alterações de ruptura, então elas são seguras com seus projetos existentes.
 
-* To see the release notes for a particular version, click the **note icon** next to the version name (**A**).
+* Para ver as notas de lançamento para uma versão em particular, clique no ícone **note** ao lado do nome da versão (**A**).
 
-* To install a particular version, click the **Download and install** icon next to the
-   version name (**D**).
+* Para instalar uma versão em particular, clique no **Baixe e instale** ícone ao lado do
+   nome da versão (**D**).
 
-> [!Note]
-> You can't revert to earlier minor versions. For example, you can install both Stride 1.9 and 1.8 side by side, but you can't revert from Stride 1.9.2 to Stride 1.9.1.
+> <x1\/>!Note<x2\/>
+> Você não pode reverter para versões menores anteriores. Por exemplo, você pode instalar ambos Stride 1.9 e 1.8 lado a lado, mas você não pode reverter de Stride 1.9.2 para Stride 1.9.1.
 
 ## Start Game Studio
 
-1. Under **Switch/update version**, select the version of Stride you want to use.
+1. Em **Switch\/update version**, selecione a versão do Stride que você deseja usar.
 
-   The version number is updated on the **Start** button.
+   O número da versão é atualizado no botão **Start**.
 
-   ![Start button](media/stride-launcher-start-button.png)
+   <x1\/> Iniciar botão<x2\/>
 
-2. Click **Start** to launch Game Studio.
+2. Clique em **Start** para lançar Game Studio.
 
-## Recent projects
+## Projectos recentes
 
-![Projects section](media/stride-launcher-projects-section.png)
+<x1\/>Projetos seção<x2\/>
 
-The **Projects** section displays your recent projects. To open a project, click it.
+A seção **Projetos** exibe seus projetos recentes. Para abrir um projeto, clique nele.
 
-### Open a project with a newer version of Stride
+### Abra um projeto com uma versão mais recente do Stride
 
-The top right of each project button (**B**) shows which version of Stride the project was made with.
+A direita superior de cada botão de projeto (**B**) mostra com qual versão do projeto foi feita.
 
-To open a project with a more recent version of Stride:
+Para abrir um projeto com uma versão mais recente do Stride:
 
-1. On the project button, click the **upgrade** icon in the bottom right (**D**).
+1. No botão do projeto, clique no ícone **upgrade** no canto inferior direito (**D**).
 
-2. Select the Stride version you want to open the project with. Game Studio prompts you to upgrade the project when it opens.
+2. Selecione a versão Stride com a qual você deseja abrir o projeto. O Game Studio solicita que você atualize o projeto quando abrir.
 
-> [!Note]
-> After you update a project to use a newer version of Stride, you might need to make manual changes to get it to work. **Make sure you back up the project and all its related files before you upgrade it.**
+> <x1\/>!Note<x2\/>
+> Depois de atualizar um projeto para usar uma versão mais recente do Stride, você pode precisar fazer alterações manuais para fazê-lo funcionar. **Certifique-se de fazer backup do projeto e de todos os seus arquivos relacionados antes de atualizá-lo.**

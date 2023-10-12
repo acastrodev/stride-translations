@@ -1,514 +1,514 @@
 {
-    "filename": "manual\\physics\\constraints.md.xlf",
-    "files": [
-        {
-            "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/constraints.md": [
-                [
-                    "Constraints",
-                    "",
-                    "Constraints",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/constraints.md",
-                    {
-                        "id": "tu1"
-                    }
-                ],
-                [
-                    "[!INCLUDE <g1>stride-studio-note<\/g1>]",
-                    "",
-                    "[!INCLUDE <g1>stride-studio-note<\/g1>]",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/constraints.md",
-                    {
-                        "id": "tu2"
-                    }
-                ],
-                [
-                    "<x1\/>Advanced<x2\/>",
-                    "",
-                    "<x1\/>Advanced<x2\/>\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/constraints.md",
-                    {
-                        "id": "tu3"
-                    }
-                ],
-                [
-                    "<x3\/>Programmer<x4\/>",
-                    "",
-                    "<x3\/>Programmer<x4\/>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/constraints.md",
-                    {
-                        "id": "tu3"
-                    }
-                ],
-                [
-                    "<g1>Constraints<\/g1> restrict rigidbodies to certain movement patterns.",
-                    "",
-                    "<g1>Constraints<\/g1> restrict rigidbodies to certain movement patterns.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/constraints.md",
-                    {
-                        "id": "tu4"
-                    }
-                ],
-                [
-                    "For example, a realistic knee joint can only move along one axis and can't bend forwards.",
-                    "",
-                    " For example, a realistic knee joint can only move along one axis and can't bend forwards.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/constraints.md",
-                    {
-                        "id": "tu4"
-                    }
-                ],
-                [
-                    "Constraints can either link two rigidbodies together, or link a single rigidbody to a point in the world.",
-                    "",
-                    "Constraints can either link two rigidbodies together, or link a single rigidbody to a point in the world.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/constraints.md",
-                    {
-                        "id": "tu5"
-                    }
-                ],
-                [
-                    "They allow for interaction and dependency among rigidbodies.",
-                    "",
-                    " They allow for interaction and dependency among rigidbodies.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/constraints.md",
-                    {
-                        "id": "tu5"
-                    }
-                ],
-                [
-                    "There are six <g1>types of constraints<\/g1>:",
-                    "",
-                    "There are six <g1>types of constraints<\/g1>:",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/constraints.md",
-                    {
-                        "id": "tu6"
-                    }
-                ],
-                [
-                    "hinges",
-                    "",
-                    "hinges",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/constraints.md",
-                    {
-                        "id": "tu7"
-                    }
-                ],
-                [
-                    "gears",
-                    "",
-                    "gears",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/constraints.md",
-                    {
-                        "id": "tu8"
-                    }
-                ],
-                [
-                    "sliders",
-                    "",
-                    "sliders",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/constraints.md",
-                    {
-                        "id": "tu9"
-                    }
-                ],
-                [
-                    "cones (twist and turn)",
-                    "",
-                    "cones (twist and turn)",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/constraints.md",
-                    {
-                        "id": "tu10"
-                    }
-                ],
-                [
-                    "point to point (fixed distance between two colliders)",
-                    "",
-                    "point to point (fixed distance between two colliders)",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/constraints.md",
-                    {
-                        "id": "tu11"
-                    }
-                ],
-                [
-                    "six degrees of freedom",
-                    "",
-                    "six degrees of freedom",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/constraints.md",
-                    {
-                        "id": "tu12"
-                    }
-                ],
-                [
-                    "For a demonstration of the different constraints, load the <g1>PhysicsSample<\/g1> sample project.",
-                    "",
-                    "For a demonstration of the different constraints, load the <g1>PhysicsSample<\/g1> sample project.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/constraints.md",
-                    {
-                        "id": "tu13"
-                    }
-                ],
-                [
-                    "Create a constraint",
-                    "",
-                    "Create a constraint",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/constraints.md",
-                    {
-                        "id": "tu14"
-                    }
-                ],
-                [
-                    "<x1\/>!Note<x2\/>",
-                    "",
-                    "<x1\/>!Note<x2\/>\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/constraints.md",
-                    {
-                        "id": "tu15"
-                    }
-                ],
-                [
-                    "Currently, you can only use constraints from scripts.",
-                    "",
-                    "Currently, you can only use constraints from scripts.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/constraints.md",
-                    {
-                        "id": "tu15"
-                    }
-                ],
-                [
-                    "To create a constraint, use the <g1>Simulation<\/g1> static method <g2>CreateConstraint<\/g2>:",
-                    "",
-                    "To create a constraint, use the <g1>Simulation<\/g1> static method <g2>CreateConstraint<\/g2>:",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/constraints.md",
-                    {
-                        "id": "tu16"
-                    }
-                ],
-                [
-                    "CreateConstraint(ConstraintTypes type, RigidbodyComponent rigidBodyA, Matrix frameA, bool useReferenceFrameA);",
-                    "",
-                    "CreateConstraint(ConstraintTypes type, RigidbodyComponent rigidBodyA, Matrix frameA, bool useReferenceFrameA);\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/constraints.md",
-                    {
-                        "id": "tu17"
-                    }
-                ],
-                [
-                    "This links <g1>RigidBodyA<\/g1> to the world at its current location.",
-                    "",
-                    "This links <g1>RigidBodyA<\/g1> to the world at its current location.\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/constraints.md",
-                    {
-                        "id": "tu18"
-                    }
-                ],
-                [
-                    "The boolean <g2>useReferenceFrameA<\/g2> specifies which coordinate system the limit is applied to (either <g3>RigidBodyA<\/g3> or the world).",
-                    "",
-                    "The boolean <g2>useReferenceFrameA<\/g2> specifies which coordinate system the limit is applied to (either <g3>RigidBodyA<\/g3> or the world).",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/constraints.md",
-                    {
-                        "id": "tu18"
-                    }
-                ],
-                [
-                    "<x1\/>!Note<x2\/>",
-                    "",
-                    "<x1\/>!Note<x2\/>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/constraints.md",
-                    {
-                        "id": "tu19"
-                    }
-                ],
-                [
-                    "In the case of <g1>ConstraintTypes.Point2Point<\/g1>, the frame represents a pivot in A.",
-                    "",
-                    "In the case of <g1>ConstraintTypes.Point2Point<\/g1>, the frame represents a pivot in A.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/constraints.md",
-                    {
-                        "id": "tu20"
-                    }
-                ],
-                [
-                    "Only the translation vector is considered.",
-                    "",
-                    " Only the translation vector is considered.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/constraints.md",
-                    {
-                        "id": "tu20"
-                    }
-                ],
-                [
-                    "<g2>useReferenceFrameA<\/g2> is ignored.",
-                    "",
-                    " <g2>useReferenceFrameA<\/g2> is ignored.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/constraints.md",
-                    {
-                        "id": "tu20"
-                    }
-                ],
-                [
-                    "In the case of <g1>ConstraintTypes.Hinge<\/g1>, the frame represents a pivot in A and Axis in A.",
-                    "",
-                    "In the case of <g1>ConstraintTypes.Hinge<\/g1>, the frame represents a pivot in A and Axis in A.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/constraints.md",
-                    {
-                        "id": "tu21"
-                    }
-                ],
-                [
-                    "This is because the hinge allows only a limited angle of rotation between the rigidbody and the world.",
-                    "",
-                    " This is because the hinge allows only a limited angle of rotation between the rigidbody and the world.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/constraints.md",
-                    {
-                        "id": "tu21"
-                    }
-                ],
-                [
-                    "In the case of <g1>ConstraintTypes.ConeTwist<\/g1>, <g2>useReferenceFrameA<\/g2> is ignored.",
-                    "",
-                    "In the case of <g1>ConstraintTypes.ConeTwist<\/g1>, <g2>useReferenceFrameA<\/g2> is ignored.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/constraints.md",
-                    {
-                        "id": "tu22"
-                    }
-                ],
-                [
-                    "<g1>ConstraintTypes.Gear<\/g1> needs two rigidbodies to be created.",
-                    "",
-                    "<g1>ConstraintTypes.Gear<\/g1> needs two rigidbodies to be created.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/constraints.md",
-                    {
-                        "id": "tu23"
-                    }
-                ],
-                [
-                    "This function will throw an exception.",
-                    "",
-                    " This function will throw an exception.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/constraints.md",
-                    {
-                        "id": "tu23"
-                    }
-                ],
-                [
-                    "CreateConstraint(ConstraintTypes type, RigidbodyComponent rigidBodyA, RigidbodyComponent rigidBodyB, Matrix frameA, Matrix frameB, bool useReferenceFrameA)",
-                    "",
-                    "CreateConstraint(ConstraintTypes type, RigidbodyComponent rigidBodyA, RigidbodyComponent rigidBodyB, Matrix frameA, Matrix frameB, bool useReferenceFrameA)\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/constraints.md",
-                    {
-                        "id": "tu24"
-                    }
-                ],
-                [
-                    "This method links <g1>RigidBodyA<\/g1> to  <g2>RigidBodyB<\/g2>.",
-                    "",
-                    "This method links <g1>RigidBodyA<\/g1> to  <g2>RigidBodyB<\/g2>.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/constraints.md",
-                    {
-                        "id": "tu25"
-                    }
-                ],
-                [
-                    "<x1\/>!Note<x2\/>",
-                    "",
-                    "<x1\/>!Note<x2\/>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/constraints.md",
-                    {
-                        "id": "tu26"
-                    }
-                ],
-                [
-                    "In the case of <g1>ConstraintTypes.Point2Point<\/g1>, the frame represents a pivot in A or B.",
-                    "",
-                    "In the case of <g1>ConstraintTypes.Point2Point<\/g1>, the frame represents a pivot in A or B.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/constraints.md",
-                    {
-                        "id": "tu27"
-                    }
-                ],
-                [
-                    "Only the translation vector is considered.",
-                    "",
-                    " Only the translation vector is considered.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/constraints.md",
-                    {
-                        "id": "tu27"
-                    }
-                ],
-                [
-                    "<g2>useReferenceFrameA<\/g2> is ignored.",
-                    "",
-                    " <g2>useReferenceFrameA<\/g2> is ignored.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/constraints.md",
-                    {
-                        "id": "tu27"
-                    }
-                ],
-                [
-                    "In the case of <g1>ConstraintTypes.Hinge<\/g1> the frame represents pivot in A\/B and Axis in A\/B.",
-                    "",
-                    "In the case of <g1>ConstraintTypes.Hinge<\/g1> the frame represents pivot in A\/B and Axis in A\/B.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/constraints.md",
-                    {
-                        "id": "tu28"
-                    }
-                ],
-                [
-                    "This is because the hinge allows only a limited angle of rotation between the rigidbody and the world in this case.",
-                    "",
-                    " This is because the hinge allows only a limited angle of rotation between the rigidbody and the world in this case.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/constraints.md",
-                    {
-                        "id": "tu28"
-                    }
-                ],
-                [
-                    "In the case of <g1>ConstraintTypes.ConeTwist<\/g1>, <g2>useReferenceFrameA<\/g2> is ignored.",
-                    "",
-                    "In the case of <g1>ConstraintTypes.ConeTwist<\/g1>, <g2>useReferenceFrameA<\/g2> is ignored.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/constraints.md",
-                    {
-                        "id": "tu29"
-                    }
-                ],
-                [
-                    "In the case of <g1>ConstraintTypes.Gear<\/g1>, <g2>useReferenceFrameA<\/g2> is ignored.",
-                    "",
-                    "In the case of <g1>ConstraintTypes.Gear<\/g1>, <g2>useReferenceFrameA<\/g2> is ignored.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/constraints.md",
-                    {
-                        "id": "tu30"
-                    }
-                ],
-                [
-                    "The frame just represents the axis either in A or B; only the translation vector (which should contain the axis) is used.",
-                    "",
-                    " The frame just represents the axis either in A or B; only the translation vector (which should contain the axis) is used.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/constraints.md",
-                    {
-                        "id": "tu30"
-                    }
-                ],
-                [
-                    "The boolean <g1>useReferenceFrameA<\/g1> determines which coordinate system (<g2>RigidBodyA<\/g2> or <g3>RigidBodyB<\/g3>) the limits are applied to.",
-                    "",
-                    "The boolean <g1>useReferenceFrameA<\/g1> determines which coordinate system (<g2>RigidBodyA<\/g2> or <g3>RigidBodyB<\/g3>) the limits are applied to.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/constraints.md",
-                    {
-                        "id": "tu31"
-                    }
-                ],
-                [
-                    "Add constraints to the simulation",
-                    "",
-                    "Add constraints to the simulation",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/constraints.md",
-                    {
-                        "id": "tu32"
-                    }
-                ],
-                [
-                    "After you create a constraint, add it to the simulation from a script by calling:",
-                    "",
-                    "After you create a constraint, add it to the simulation from a script by calling:",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/constraints.md",
-                    {
-                        "id": "tu33"
-                    }
-                ],
-                [
-                    "this.GetSimulation().AddConstraint(constraint);",
-                    "",
-                    "this.GetSimulation().AddConstraint(constraint);\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/constraints.md",
-                    {
-                        "id": "tu34"
-                    }
-                ],
-                [
-                    "or:",
-                    "",
-                    "or:",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/constraints.md",
-                    {
-                        "id": "tu35"
-                    }
-                ],
-                [
-                    "var disableCollisionsBetweenLinkedBodies = true;",
-                    "",
-                    "var disableCollisionsBetweenLinkedBodies = true;\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/constraints.md",
-                    {
-                        "id": "tu36"
-                    }
-                ],
-                [
-                    "this.GetSimulation().AddConstraint(constraint, disableCollisionsBetweenLinkedBodies);",
-                    "",
-                    "this.GetSimulation().AddConstraint(constraint, disableCollisionsBetweenLinkedBodies);\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/constraints.md",
-                    {
-                        "id": "tu36"
-                    }
-                ],
-                [
-                    "The parameter <g1>disableCollisionsBetweenLinkedBodies<\/g1>",
-                    "",
-                    "The parameter <g1>disableCollisionsBetweenLinkedBodies<\/g1>\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/constraints.md",
-                    {
-                        "id": "tu37"
-                    }
-                ],
-                [
-                    "stops linked bodies colliding with each other.",
-                    "",
-                    "stops linked bodies colliding with each other.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/constraints.md",
-                    {
-                        "id": "tu37"
-                    }
-                ],
-                [
-                    "Likewise, to remove a constraint from the simulation, use:",
-                    "",
-                    "Likewise, to remove a constraint from the simulation, use:",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/constraints.md",
-                    {
-                        "id": "tu38"
-                    }
-                ],
-                [
-                    "this.GetSimulation().RemoveConstraint(constraint);",
-                    "",
-                    "this.GetSimulation().RemoveConstraint(constraint);\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/constraints.md",
-                    {
-                        "id": "tu39"
-                    }
-                ],
-                [
-                    "See also",
-                    "",
-                    "See also",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/constraints.md",
-                    {
-                        "id": "tu40"
-                    }
-                ],
-                [
-                    "Colliders",
-                    "",
-                    "<g1>Colliders<\/g1>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/constraints.md",
-                    {
-                        "id": "tu41"
-                    }
-                ]
-            ]
-        }
-    ],
-    "seg_enabled": false
+  "filename": "manual\\physics\\constraints.md.xlf",
+  "files": [
+    {
+      "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/constraints.md": [
+        [
+          "Constraints",
+          "Restrições",
+          "Constraints",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/constraints.md",
+          {
+            "id": "tu1"
+          }
+        ],
+        [
+          "[!INCLUDE <g1>stride-studio-note<\\/g1>]",
+          "[! INCLUÍDO <g1>stride-studio-note<\\/g1>]",
+          "[!INCLUDE <g1>stride-studio-note<\\/g1>]",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/constraints.md",
+          {
+            "id": "tu2"
+          }
+        ],
+        [
+          "<x1\\/>Advanced<x2\\/>",
+          "<x1\\/> Avançado <x2\\/>",
+          "<x1\\/>Advanced<x2\\/>\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/constraints.md",
+          {
+            "id": "tu3"
+          }
+        ],
+        [
+          "<x3\\/>Programmer<x4\\/>",
+          "<x3\\/> Programador <x4\\/>",
+          "<x3\\/>Programmer<x4\\/>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/constraints.md",
+          {
+            "id": "tu3"
+          }
+        ],
+        [
+          "<g1>Constraints<\\/g1> restrict rigidbodies to certain movement patterns.",
+          "<g1>Constraints<\\/g1> restringem os corpos rígidos a certos padrões de movimento.",
+          "<g1>Constraints<\\/g1> restrict rigidbodies to certain movement patterns.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/constraints.md",
+          {
+            "id": "tu4"
+          }
+        ],
+        [
+          "For example, a realistic knee joint can only move along one axis and can't bend forwards.",
+          "Por exemplo, uma articulação de joelho realista só pode se mover ao longo de um eixo e não pode dobrar para a frente.",
+          " For example, a realistic knee joint can only move along one axis and can't bend forwards.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/constraints.md",
+          {
+            "id": "tu4"
+          }
+        ],
+        [
+          "Constraints can either link two rigidbodies together, or link a single rigidbody to a point in the world.",
+          "As restrições podem ligar dois corpos rígidos juntos, ou ligar um único corpo rígido a um ponto no mundo.",
+          "Constraints can either link two rigidbodies together, or link a single rigidbody to a point in the world.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/constraints.md",
+          {
+            "id": "tu5"
+          }
+        ],
+        [
+          "They allow for interaction and dependency among rigidbodies.",
+          "Eles permitem a interação e dependência entre os corpos rígidos.",
+          " They allow for interaction and dependency among rigidbodies.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/constraints.md",
+          {
+            "id": "tu5"
+          }
+        ],
+        [
+          "There are six <g1>types of constraints<\\/g1>:",
+          "Existem seis <g1>tipos de restrições<\\/g1>:",
+          "There are six <g1>types of constraints<\\/g1>:",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/constraints.md",
+          {
+            "id": "tu6"
+          }
+        ],
+        [
+          "hinges",
+          "dobradiças",
+          "hinges",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/constraints.md",
+          {
+            "id": "tu7"
+          }
+        ],
+        [
+          "gears",
+          "engrenagem",
+          "gears",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/constraints.md",
+          {
+            "id": "tu8"
+          }
+        ],
+        [
+          "sliders",
+          "controles deslizantes",
+          "sliders",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/constraints.md",
+          {
+            "id": "tu9"
+          }
+        ],
+        [
+          "cones (twist and turn)",
+          "cones (twist e turn)",
+          "cones (twist and turn)",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/constraints.md",
+          {
+            "id": "tu10"
+          }
+        ],
+        [
+          "point to point (fixed distance between two colliders)",
+          "ponto a ponto (a distância fixa entre dois colisões)",
+          "point to point (fixed distance between two colliders)",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/constraints.md",
+          {
+            "id": "tu11"
+          }
+        ],
+        [
+          "six degrees of freedom",
+          "seis graus de liberdade",
+          "six degrees of freedom",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/constraints.md",
+          {
+            "id": "tu12"
+          }
+        ],
+        [
+          "For a demonstration of the different constraints, load the <g1>PhysicsSample<\\/g1> sample project.",
+          "Para uma demonstração das diferentes restrições, carregue o projeto de amostra <g1>PhysicsSample<\\/g1>.",
+          "For a demonstration of the different constraints, load the <g1>PhysicsSample<\\/g1> sample project.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/constraints.md",
+          {
+            "id": "tu13"
+          }
+        ],
+        [
+          "Create a constraint",
+          "Criar uma restrição",
+          "Create a constraint",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/constraints.md",
+          {
+            "id": "tu14"
+          }
+        ],
+        [
+          "<x1\\/>!Note<x2\\/>",
+          "<x1\\/>!Note<x2\\/>",
+          "<x1\\/>!Note<x2\\/>\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/constraints.md",
+          {
+            "id": "tu15"
+          }
+        ],
+        [
+          "Currently, you can only use constraints from scripts.",
+          "Atualmente, você só pode usar restrições de scripts.",
+          "Currently, you can only use constraints from scripts.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/constraints.md",
+          {
+            "id": "tu15"
+          }
+        ],
+        [
+          "To create a constraint, use the <g1>Simulation<\\/g1> static method <g2>CreateConstraint<\\/g2>:",
+          "Para criar uma restrição, use o método estático <g1>Simulation<\\/g1> <g2>CreateConstraint<\\/g2>:",
+          "To create a constraint, use the <g1>Simulation<\\/g1> static method <g2>CreateConstraint<\\/g2>:",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/constraints.md",
+          {
+            "id": "tu16"
+          }
+        ],
+        [
+          "CreateConstraint(ConstraintTypes type, RigidbodyComponent rigidBodyA, Matrix frameA, bool useReferenceFrameA);",
+          "CriarConstraint(Constraint) Tipos tipo, RigidbodyComponente rígido BodyA, Matrix frameA, uso de boolReferenceFrameA);",
+          "CreateConstraint(ConstraintTypes type, RigidbodyComponent rigidBodyA, Matrix frameA, bool useReferenceFrameA);\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/constraints.md",
+          {
+            "id": "tu17"
+          }
+        ],
+        [
+          "This links <g1>RigidBodyA<\\/g1> to the world at its current location.",
+          "Isso liga <g1>RigidBodyA<\\/g1> ao mundo em sua localização atual.",
+          "This links <g1>RigidBodyA<\\/g1> to the world at its current location.\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/constraints.md",
+          {
+            "id": "tu18"
+          }
+        ],
+        [
+          "The boolean <g2>useReferenceFrameA<\\/g2> specifies which coordinate system the limit is applied to (either <g3>RigidBodyA<\\/g3> or the world).",
+          "O booleano <g2>useReferenceFrameA<\\/g2> especifica qual sistema de coordenadas o limite é aplicado (quer <g3>RigidBodyA<\\/g3> ou o mundo).",
+          "The boolean <g2>useReferenceFrameA<\\/g2> specifies which coordinate system the limit is applied to (either <g3>RigidBodyA<\\/g3> or the world).",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/constraints.md",
+          {
+            "id": "tu18"
+          }
+        ],
+        [
+          "<x1\\/>!Note<x2\\/>",
+          "<x1\\/>!Note<x2\\/>",
+          "<x1\\/>!Note<x2\\/>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/constraints.md",
+          {
+            "id": "tu19"
+          }
+        ],
+        [
+          "In the case of <g1>ConstraintTypes.Point2Point<\\/g1>, the frame represents a pivot in A.",
+          "No caso de <g1>ConstraintTypes.Point2Point<\\/g1>, o quadro representa um pivô em A.",
+          "In the case of <g1>ConstraintTypes.Point2Point<\\/g1>, the frame represents a pivot in A.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/constraints.md",
+          {
+            "id": "tu20"
+          }
+        ],
+        [
+          "Only the translation vector is considered.",
+          "Apenas o vetor de tradução é considerado.",
+          " Only the translation vector is considered.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/constraints.md",
+          {
+            "id": "tu20"
+          }
+        ],
+        [
+          "<g2>useReferenceFrameA<\\/g2> is ignored.",
+          "<g2>useReferenceFrameA<\\/g2> é ignorado.",
+          " <g2>useReferenceFrameA<\\/g2> is ignored.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/constraints.md",
+          {
+            "id": "tu20"
+          }
+        ],
+        [
+          "In the case of <g1>ConstraintTypes.Hinge<\\/g1>, the frame represents a pivot in A and Axis in A.",
+          "No caso de <g1>ConstraintTypes.Hinge<\\/g1>, o quadro representa um pivô em A e Eixo em A.",
+          "In the case of <g1>ConstraintTypes.Hinge<\\/g1>, the frame represents a pivot in A and Axis in A.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/constraints.md",
+          {
+            "id": "tu21"
+          }
+        ],
+        [
+          "This is because the hinge allows only a limited angle of rotation between the rigidbody and the world.",
+          "Isso porque a dobradiça permite apenas um ângulo limitado de rotação entre o corpo rígido e o mundo.",
+          " This is because the hinge allows only a limited angle of rotation between the rigidbody and the world.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/constraints.md",
+          {
+            "id": "tu21"
+          }
+        ],
+        [
+          "In the case of <g1>ConstraintTypes.ConeTwist<\\/g1>, <g2>useReferenceFrameA<\\/g2> is ignored.",
+          "No caso de <g1>ConstraintTypes.ConeTwist<\\/g1>, <g2>useReferenceFrameA<\\/g2> é ignorado.",
+          "In the case of <g1>ConstraintTypes.ConeTwist<\\/g1>, <g2>useReferenceFrameA<\\/g2> is ignored.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/constraints.md",
+          {
+            "id": "tu22"
+          }
+        ],
+        [
+          "<g1>ConstraintTypes.Gear<\\/g1> needs two rigidbodies to be created.",
+          "<g1>ConstraintTypes.Gear<\\/g1> precisa de dois corpos rígidos a serem criados.",
+          "<g1>ConstraintTypes.Gear<\\/g1> needs two rigidbodies to be created.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/constraints.md",
+          {
+            "id": "tu23"
+          }
+        ],
+        [
+          "This function will throw an exception.",
+          "Esta função irá lançar uma exceção.",
+          " This function will throw an exception.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/constraints.md",
+          {
+            "id": "tu23"
+          }
+        ],
+        [
+          "CreateConstraint(ConstraintTypes type, RigidbodyComponent rigidBodyA, RigidbodyComponent rigidBodyB, Matrix frameA, Matrix frameB, bool useReferenceFrameA)",
+          "CriarConstraint(Constraint) Tipos tipo, RigidbodyComponent rigidBodyA, RigidbodyComponent rigidBodyB, Matrix frameA, Matrix frameB, uso de boolReferenceFrameA)",
+          "CreateConstraint(ConstraintTypes type, RigidbodyComponent rigidBodyA, RigidbodyComponent rigidBodyB, Matrix frameA, Matrix frameB, bool useReferenceFrameA)\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/constraints.md",
+          {
+            "id": "tu24"
+          }
+        ],
+        [
+          "This method links <g1>RigidBodyA<\\/g1> to  <g2>RigidBodyB<\\/g2>.",
+          "Este método liga <g1>RigidBodyA<\\/g1> a <g2>RigidBodyB<\\/g2>.",
+          "This method links <g1>RigidBodyA<\\/g1> to  <g2>RigidBodyB<\\/g2>.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/constraints.md",
+          {
+            "id": "tu25"
+          }
+        ],
+        [
+          "<x1\\/>!Note<x2\\/>",
+          "<x1\\/>!Note<x2\\/>",
+          "<x1\\/>!Note<x2\\/>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/constraints.md",
+          {
+            "id": "tu26"
+          }
+        ],
+        [
+          "In the case of <g1>ConstraintTypes.Point2Point<\\/g1>, the frame represents a pivot in A or B.",
+          "No caso de <g1>ConstraintTypes.Point2Point<\\/g1>, o quadro representa um pivô em A ou B.",
+          "In the case of <g1>ConstraintTypes.Point2Point<\\/g1>, the frame represents a pivot in A or B.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/constraints.md",
+          {
+            "id": "tu27"
+          }
+        ],
+        [
+          "Only the translation vector is considered.",
+          "Apenas o vetor de tradução é considerado.",
+          " Only the translation vector is considered.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/constraints.md",
+          {
+            "id": "tu27"
+          }
+        ],
+        [
+          "<g2>useReferenceFrameA<\\/g2> is ignored.",
+          "<g2>useReferenceFrameA<\\/g2> é ignorado.",
+          " <g2>useReferenceFrameA<\\/g2> is ignored.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/constraints.md",
+          {
+            "id": "tu27"
+          }
+        ],
+        [
+          "In the case of <g1>ConstraintTypes.Hinge<\\/g1> the frame represents pivot in A\\/B and Axis in A\\/B.",
+          "No caso de <g1>ConstraintTypes.Hinge<\\/g1> o quadro representa pivô em A\\/B e Eixo em A\\/B.",
+          "In the case of <g1>ConstraintTypes.Hinge<\\/g1> the frame represents pivot in A\\/B and Axis in A\\/B.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/constraints.md",
+          {
+            "id": "tu28"
+          }
+        ],
+        [
+          "This is because the hinge allows only a limited angle of rotation between the rigidbody and the world in this case.",
+          "Isto porque a dobradiça permite apenas um ângulo limitado de rotação entre o corpo rígido e o mundo neste caso.",
+          " This is because the hinge allows only a limited angle of rotation between the rigidbody and the world in this case.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/constraints.md",
+          {
+            "id": "tu28"
+          }
+        ],
+        [
+          "In the case of <g1>ConstraintTypes.ConeTwist<\\/g1>, <g2>useReferenceFrameA<\\/g2> is ignored.",
+          "No caso de <g1>ConstraintTypes.ConeTwist<\\/g1>, <g2>useReferenceFrameA<\\/g2> é ignorado.",
+          "In the case of <g1>ConstraintTypes.ConeTwist<\\/g1>, <g2>useReferenceFrameA<\\/g2> is ignored.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/constraints.md",
+          {
+            "id": "tu29"
+          }
+        ],
+        [
+          "In the case of <g1>ConstraintTypes.Gear<\\/g1>, <g2>useReferenceFrameA<\\/g2> is ignored.",
+          "No caso de <g1>ConstraintTypes.Gear<\\/g1>, <g2>useReferenceFrameA<\\/g2> é ignorado.",
+          "In the case of <g1>ConstraintTypes.Gear<\\/g1>, <g2>useReferenceFrameA<\\/g2> is ignored.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/constraints.md",
+          {
+            "id": "tu30"
+          }
+        ],
+        [
+          "The frame just represents the axis either in A or B; only the translation vector (which should contain the axis) is used.",
+          "O quadro representa apenas o eixo em A ou B; somente o vetor de tradução (que deve conter o eixo) é usado.",
+          " The frame just represents the axis either in A or B; only the translation vector (which should contain the axis) is used.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/constraints.md",
+          {
+            "id": "tu30"
+          }
+        ],
+        [
+          "The boolean <g1>useReferenceFrameA<\\/g1> determines which coordinate system (<g2>RigidBodyA<\\/g2> or <g3>RigidBodyB<\\/g3>) the limits are applied to.",
+          "O booleano <g1>useReferenceFrameA<\\/g1> determina qual sistema de coordenadas (<g2>RigidBodyA<\\/g2> ou <g3>RigidBodyB<\\/g3>) os limites são aplicados.",
+          "The boolean <g1>useReferenceFrameA<\\/g1> determines which coordinate system (<g2>RigidBodyA<\\/g2> or <g3>RigidBodyB<\\/g3>) the limits are applied to.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/constraints.md",
+          {
+            "id": "tu31"
+          }
+        ],
+        [
+          "Add constraints to the simulation",
+          "Adicionar restrições à simulação",
+          "Add constraints to the simulation",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/constraints.md",
+          {
+            "id": "tu32"
+          }
+        ],
+        [
+          "After you create a constraint, add it to the simulation from a script by calling:",
+          "Depois de criar uma restrição, adicione-a à simulação de um script chamando:",
+          "After you create a constraint, add it to the simulation from a script by calling:",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/constraints.md",
+          {
+            "id": "tu33"
+          }
+        ],
+        [
+          "this.GetSimulation().AddConstraint(constraint);",
+          "this.GetSimulation(). AddConstraint (constraint);",
+          "this.GetSimulation().AddConstraint(constraint);\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/constraints.md",
+          {
+            "id": "tu34"
+          }
+        ],
+        [
+          "or:",
+          "ou:",
+          "or:",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/constraints.md",
+          {
+            "id": "tu35"
+          }
+        ],
+        [
+          "var disableCollisionsBetweenLinkedBodies = true;",
+          "var desativar cores Entre os corpos conectados = verdadeiro;",
+          "var disableCollisionsBetweenLinkedBodies = true;\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/constraints.md",
+          {
+            "id": "tu36"
+          }
+        ],
+        [
+          "this.GetSimulation().AddConstraint(constraint, disableCollisionsBetweenLinkedBodies);",
+          "this.GetSimulation(). AddConstraint (constrang, desabilitar CoresBetweenLinkedBodies);",
+          "this.GetSimulation().AddConstraint(constraint, disableCollisionsBetweenLinkedBodies);\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/constraints.md",
+          {
+            "id": "tu36"
+          }
+        ],
+        [
+          "The parameter <g1>disableCollisionsBetweenLinkedBodies<\\/g1>",
+          "O parâmetro <g1>disableCollisionsBetweenLinkedBodies<\\/g1>",
+          "The parameter <g1>disableCollisionsBetweenLinkedBodies<\\/g1>\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/constraints.md",
+          {
+            "id": "tu37"
+          }
+        ],
+        [
+          "stops linked bodies colliding with each other.",
+          "para corpos ligados colidindo uns com os outros.",
+          "stops linked bodies colliding with each other.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/constraints.md",
+          {
+            "id": "tu37"
+          }
+        ],
+        [
+          "Likewise, to remove a constraint from the simulation, use:",
+          "Da mesma forma, para remover uma restrição da simulação, use:",
+          "Likewise, to remove a constraint from the simulation, use:",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/constraints.md",
+          {
+            "id": "tu38"
+          }
+        ],
+        [
+          "this.GetSimulation().RemoveConstraint(constraint);",
+          "this.GetSimulation(). RemoverConstraint (constrangimento);",
+          "this.GetSimulation().RemoveConstraint(constraint);\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/constraints.md",
+          {
+            "id": "tu39"
+          }
+        ],
+        [
+          "See also",
+          "Ver também",
+          "See also",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/constraints.md",
+          {
+            "id": "tu40"
+          }
+        ],
+        [
+          "Colliders",
+          "Coleiras",
+          "<g1>Colliders<\\/g1>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/constraints.md",
+          {
+            "id": "tu41"
+          }
+        ]
+      ]
+    }
+  ],
+  "seg_enabled": false
 }

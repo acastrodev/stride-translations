@@ -1,7 +1,7 @@
-# Resources
+# Recursos
 
-[!INCLUDE [stride-studio-note](../../includes/under-construction-note.md)]
+[! INCLUÍDO [stride-studio-note](../../includes/under-construction-note.md)]
 
-Resources are images, texture ([```.dds```](https://en.wikipedia.org/wiki/DirectDraw_Surface) files and entity images used in your game. Resources are stored in the **Resources** folder of a game application.
+Os recursos são imagens, textura ([```.dds```](https://en.wikipedia.org/wiki/DirectDraw_Surface) e imagens de entidades usadas em seu jogo. Os recursos são armazenados na pasta **Resources** de uma aplicação de jogo.
 
-> **Note:** As a best practice, all data resources should be placed inside the **Resources** folder to enable easy movement of your project. If resources are placed outside the project, moving the project breaks the links and compiler issues can occur.
+> **Nota:** Como uma melhor prática, todos os recursos de dados devem ser colocados dentro da pasta **Recursos** para permitir o movimento fácil do seu projeto. Se os recursos forem colocados fora do projeto, a movimentação do projeto quebra os links e problemas do compilador pode ocorrer.

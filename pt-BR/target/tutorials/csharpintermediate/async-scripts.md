@@ -1,21 +1,21 @@
 # Async scripts
 
-This C# Intermediate tutorial covers the usage of asynchronous scripts or `async` scripts.
+Este tutorial intermediário C# cobre o uso de scripts assíncronos ou scripts `async`.
 
-## Explanation
+## Explicação
 
-Up until this point every tutorial has been using `sync` scripts. That means that those scripts are executed right after each other. If one particular sync script would take 1 second to complete, our game would freeze that 1 second, until the update loop is complete. All of the previously made Sync scripts can be made into an Async script.
+Até este ponto, cada tutorial tem usado scripts `sync`. Isso significa que esses scripts são executados logo após o outro. Se um script de sincronização em particular levaria 1 segundo para completar, nosso jogo congelaria esse 1 segundo, até que o loop de atualização esteja completo. Todos os scripts de Sincronização anteriores podem ser feitos em um script Async.
 
-With Async scripts we can perform heavy duty operations or reach out to an api without it freezing our application. A game can be made entirely with either Sync or Async scripts, or a combination of them both.
+Com scripts Async podemos executar operações de serviço pesado ou chegar a um api sem ele congelar nossa aplicação. Um jogo pode ser feito inteiramente com scripts Sync ou Async, ou uma combinação deles ambos.
 
-> [!Video https://www.youtube.com/embed/xWozou1AJGM]
+> [!Vídeo https://www.youtube.com/embed/xWozou1AJGM]
 
-## Retrieving data from a web api
-A common use case for async scripts is retrieving data from a web API. Depending on the speed of the API and the amount of data to be retrieved, this can take up to somewhere between 20 milliseconds and 2 seconds.
+## Recuperar dados de um web api
+Um caso de uso comum para scripts async está recuperando dados de uma API web. Dependendo da velocidade da API e da quantidade de dados a serem recuperados, isso pode levar até algum lugar entre 20 milissegundos e 2 segundos.
 [!code-csharp[AsyncWebApi](../../../../stride/samples/Tutorials/CSharpIntermediate/CSharpIntermediate/CSharpIntermediate.Game/05_Async/AsyncWebApi.cs)]
 
-## Async Collision trigger
-In a previous tutorial we made a collision trigger script that would notify the user once an object is passing through it. We can make a similar script using Async script.
+## Async Collision gatilho
+Em um tutorial anterior fizemos um script de gatilho de colisão que notificaria o usuário uma vez que um objeto está passando por ele. Podemos fazer um script semelhante usando o script Async.
 [!code-csharp[AsyncCollisionTrigger](../../../../stride/samples/Tutorials/CSharpIntermediate/CSharpIntermediate/CSharpIntermediate.Game/05_Async/AsyncCollisionTriggerDemo.cs)]
 
 

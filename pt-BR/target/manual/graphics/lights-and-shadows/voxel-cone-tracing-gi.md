@@ -1,59 +1,59 @@
 # Voxel Cone Tracing Global Illumination
 
-## Howto: setup existing project with Voxel Cone Tracing GI
+## Howto: configuração projeto existente com a Voxel Cone Tracing GI
 
-### Reference Stride.Voxels
+### Referência Stride. Voxels
 
-Since Stride is modular based, we need to add a reference to `Stride.Voxels` plugin:
+Como o Stride é baseado em modular, precisamos adicionar uma referência ao plugin `Stride.Voxels`:
 
-1. In the **Solution Explorer**, right-click on the user project
+1. No **Solution Explorer**, clique com o botão direito do mouse no projeto do usuário
 
-2. Select `Add Dependency`
+2. Selecione ` Adicionar dependência`
 
-   ![Add dependency](media/voxelgi-add-dependency.png)
+   <x1\/> Adicionar dependência<x2\/>
 
-3. Select `Stride.Voxels` in the list and press `OK`
+3. Selecione `Stride.Voxels` na lista e pressione `OK`
 
-4. You might be asked if you want to reload project, choose whichever option, both are OK.
+4. Você pode ser perguntado se você deseja recarregar o projeto, escolha qualquer opção, ambos estão OK.
 
-### Graphics Compositor
+### Compositor de gráficos
 
-Voxel Cone Tracing requires several changes to the graphics compositor.
+Voxel Cone O rastreamento requer várias mudanças no compositor gráfico.
 
-To make this easier, we prepared a graphics compositor ready to use with Voxel GI in the asset templates:
+Para facilitar isso, preparamos um compositor gráfico pronto para usar com Voxel GI nos modelos de ativos:
 
-1. In the **Asset View**, click ![](../../game-studio/media/create-and-add-assets-add-new-asset-button.png)
+1. No **Asset View**, clique em <x1\/><x2\/>
 
-2. Start to type `Voxel` in the search bar
+2. Comece a digitar `Voxel` na barra de pesquisa
 
-3. Select `Graphics Compositor (Voxel Cone Tracing)`
+3. Selecione `Graphics Compositor (Voxel Cone Tracing)`
 
-   ![Create Graphics Compositor](media/voxelgi-create-graphics-compositor.png)
+   <x1\/>Criar gráficos Compositor<x2\/>
 
-4. In your `Game Settings` asset, change the graphics compositor to the newly created one:
+4. Em seu ativo `Game Settings`, altere o compositor gráfico para o recém-criado:
 
-   ![Set Graphics Compositor](media/voxelgi-set-graphics-compositor.png)
+   <x1\/>Set Graphics Compositor<x2\/>
 
-### Setup scene: Volume and Light
+### Cena de configuração: Volume e luz
 
-1. In the scene explorer, above the **Entity Tree**, click the ![Plus](../../game-studio/media/add-entities-to-a-scene-plus-icon.png) icon and select `Lights` then `Voxel volume`
+1. No explorador de cena, acima do **Entity Tree**, clique no ícone <x1\/>Plus<x2\/> e selecione `Lights` então `Voxel volume`
 
-2. Click the ![Plus](../../game-studio/media/add-entities-to-a-scene-plus-icon.png) icon again and select `Lights` then `Voxel light`
+2. Clique no ícone <x1\/>Plus<x2\/> novamente e selecione `Lights` então `Voxel light`
 
-   At that point, the scene rendering will likely crash due to the light not being setup correctly (with error `No Voxel Volume Component selected for voxel light.`), but that's expected.
+   Nesse ponto, a renderização da cena provavelmente falhará devido à luz não ser configurada corretamente (com erro `No Voxel Volume Component selecionado para voxel light.`), mas isso é esperado.
 
-3. In the property grid, change the Light Volume to the previously created entity:
+3. Na grade da propriedade, altere o volume de luz para a entidade criada anteriormente:
 
-   ![Setup light volume](media/voxelgi-setup-light-volume.png)
+   <x1\/>Configurar volume de luz <x2\/>
 
-4. At that point, you can click the `Resume` button in scene renderer, and everything should be setup!
+4. Nesse ponto, você pode clicar no botão `Resume` no renderizador de cena, e tudo deve ser configurado!
 
-### Play with it
+### Jogue com ele
 
-To do a quick test, you can disable Skybox light (keep only directional light), go in shadow area and see if some ambient light spread there. You can also play with [emissive materials](../materials/shading-attributes.md#emissive).
+Para fazer um teste rápido, você pode desativar a luz Skybox (manter apenas luz direcional), ir na área sombra e ver se alguma luz ambiente se espalhou lá. Você também pode jogar com [ materiais emissivos](../materials/shading-attributes.md#emissive).
 
-### Video tutorial
+### Tutorial de vídeo
 
-Here's a youtube alternative tutorial made by David Jeske on how to set it up:
+Aqui está um tutorial alternativo do youtube feito por David Jeske sobre como configurá-lo:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/NEMZ_HJzJ7w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

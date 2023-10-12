@@ -1,27 +1,27 @@
-# Video properties
+# Propriedades do vídeo
 
-<span class="badge text-bg-primary">Beginner</span>
-<span class="badge text-bg-success">Designer</span>
+<x1\/>Introdução<x2\/>
+<x3\/>Designer<x4\/>
 
-To view the properties of a video asset, select it in the **Asset View** and use the **Property Grid**.
+Para visualizar as propriedades de um ativo de vídeo, selecione-o no **Asset View** e use o **Property Grid**.
 
-![Video asset properties](media/video-asset-properties.png)
+<x1\/> Propriedades de ativos de vídeo<x2\/>
 
-| Property | Description |
+| Propriedade | Descrição |
 |-----------| -----------
-| Width | Resize the video width. The value is in a percentage or actual pixel size depending on whether you select **Use percentages**. |
-| Height | Resize the video height. The value is in a percentage or actual pixel size depending on whether you select **Use percentages**. |
-| Use percentages | Use percentages for the video height and width. If enabled, and the height is set to 100%, Stride displays 100% of the video's actual width. If disabled, the height and width values use pixels, so you can stretch them beyond the video's actual size. |
-| Trimming | Display only the part of the video you define using the **Start** and **End** times |
-| Start time | The time to start playing the video from (in seconds, eg `100.500`) |
-| End time | The time to stop playing the video (in seconds, eg `100.500`) |
-| Force mono channel | Convert video audio to mono. This is useful when you want the video to use [spatialized audio](../audio/spatialized-audio.md). |
+| Largura | Redimensionar a largura do vídeo. O valor está em uma porcentagem ou tamanho real do pixel dependendo se você selecionar **Use percentuais**. |
+| Altura | Redimensionar a altura do vídeo. O valor está em uma porcentagem ou tamanho real do pixel dependendo se você selecionar **Use percentuais**. |
+| Percentagens de uso | Use percentagens para a altura e largura do vídeo. Se ativado, e a altura é definida para 100%, Stride exibe 100% da largura real do vídeo. Se desativado, os valores de altura e largura usam pixels, então você pode esticá-los além do tamanho real do vídeo. |
+| Trimming | Exibir apenas a parte do vídeo que você define usando o **Start** e **End** vezes |
+| Tempo de início | A hora de começar a reproduzir o vídeo de (em segundos, por exemplo `100.500`) |
+| Tempo final | O tempo para parar de reproduzir o vídeo (em segundos, por exemplo `100.500`) |
+| Força mono canal | Converta áudio de vídeo para mono. Isso é útil quando você quer que o vídeo use [spatialized audio](../audio/spatialized-audio.md). |
 
 
-> [!Note]
-> Currently, you can't preview videos in the Asset Preview.
+> <x1\/>!Note<x2\/>
+> Atualmente, você não pode visualizar vídeos no Asset Preview.
 
-## See also
+## Ver também
 
-* [Set up a video](set-up-a-video.md)
-* [Use a video as a skybox](use-a-video-as-a-skybox.md)
+* [Configurar um vídeo](set-up-a-video.md)
+* [Use um vídeo como uma caixa de céu](use-a-video-as-a-skybox.md)

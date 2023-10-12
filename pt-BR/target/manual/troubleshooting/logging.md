@@ -1,136 +1,136 @@
 # Logging
 
-<span class="badge text-bg-primary">Intermediate</span>
-<span class="badge text-bg-success">Programmer</span>
+<x1\/> Intermediário <x2\/>
+<x3\/> Programador <x4\/>
 
-You can **log** information about your game while it runs using [Log](xref:Stride.Engine.ScriptComponent.Log).
+Você pode **log** informações sobre o seu jogo enquanto ele é executado usando [Log](xref:Stride.Engine.ScriptComponent.Log).
 
-Unlike [profiling](profiling.md), which retrieves information automatically, it's up to you to create your own log messages and define when they're triggered. For example, you can create a log message that triggers when a character performs a certain action. This is useful to investigate how your game is performing.
+Ao contrário de [profiling](profiling.md), que recupera informações automaticamente, cabe a você criar suas próprias mensagens de log e definir quando elas são acionadas. Por exemplo, você pode criar uma mensagem de log que dispara quando um personagem executa uma determinada ação. Isso é útil para investigar como seu jogo está executando.
 
-> [!Note]
-> Logging is disabled when you build the game in release mode.
+> <x1\/>!Note<x2\/>
+> Logging é desativado quando você construir o jogo no modo de lançamento.
 
-When you use logging and run your game in debug mode, Stride opens a console in a second window to display logging information. The messages are color-coded by level.
-The name of the module (such as the script containing the log message) is displayed in brackets. This is followed by the log level (eg **Warning**, **Error**, etc), then the log message.
+Quando você usa o registro e executa seu jogo no modo de depuração, o Stride abre um console em uma segunda janela para exibir informações de registro. As mensagens são codificadas por nível.
+O nome do módulo (como o script contendo a mensagem de log) é exibido em suportes. Isso é seguido pelo nível de log (por exemplo **Warning**, **Error**, etc), então a mensagem de log.
 
-![Logging in console](media/logging-in-console.png)
+<x1\/>Logging em console<x2\/>
 
-The console displays log messages from all modules, not just your own scripts. For example, it also displays messages from the @'Stride.Core.Serialization.Contents.ContentManager'.
+O console exibe mensagens de log de todos os módulos, não apenas seus próprios scripts. Por exemplo, também exibe mensagens do @'Stride.Core.Serialization.Contents.ContentManager'.
 
-If you run your game from Visual Studio, log messages are shown in the Visual Studio **Output** window instead.
+Se você executar seu jogo do Visual Studio, as mensagens de log são mostradas na janela Visual Studio **Output** em vez disso.
 
-![Log output window](media/log-output-in-visual-studio.png)
+<x1\/>Log janela de saída<x2\/>
 
-## Log levels
+## Níveis de registo
 
-There are six levels of log message, used for different levels of severity.
+Existem seis níveis de mensagem de log, usados para diferentes níveis de gravidade.
 
-| Log level | Color | Description |
+| Nível de log | Cor | Descrição |
 |-----------|-------|-----
-| Debug | Gray | Step-by-step information for advanced debugging purposes |
-| Verbose | White | Detailed information |
-| Info | Green | General information |
-| Warning | Yellow | Minor errors that might cause problems |
-| Error | Red | Errors |
-| Fatal | Red | Serious errors that crash the game |
+| Depuração | Cinza | InformaÃ§Ãμes passo a passo para fins avançados de depuração |
+| Verbo | Branco | InformaÃ§Ãμes detalhadas |
+| Info | Verde | InformaÃ§Ãμes gerais |
+| Aviso | Amarelo | Erros menores que podem causar problemas |
+| Erro | Vermelho | Erros |
+| Fatal | Vermelho | Erros graves que travam o jogo |
 
-By default, the log displays messages for the level **Info** and higher. This means it doesn't display **Debug** or **Verbose** messages. To change this, see **Set the minimum level** below.
+Por padrão, o log exibe mensagens para o nível **Info** e superior. Isso significa que não exibe **Debug** ou **Verbose** mensagens. Para mudar isso, veja **Defina o nível mínimo** abaixo.
 
-## Write a log message
+## Escrever uma mensagem de log
 
-In the script containing code you want to log, write:
-
-```cs
-Log.Debug("My log message");
-```
-
-You can replace `Debug` with the level you want to use for the log message (see **Log levels** above).
-
-You can combine this with `if` statements to log this message under certain conditions (see **Example script** below).
-
-## Set the log level
-
-You can set a minimum log level to display. For example, if you only want to see messages as severe as **Warning** or higher, use:
+No script contendo o código que você deseja registrar, escreva:
 
 ```cs
-Log.ActivateLog(LogMessageType.Warning);
+Log.Debug("Minha mensagem de log");
 ```
 
-> [!Note]
-> This isn't a global setting. The log level you set only applies to the script you set it in.
+Você pode substituir `Debug` com o nível que deseja usar para a mensagem de log (ver **Log level** acima).
 
-### Change the log level at runtime
+Você pode combinar isso com as afirmações `if` para registrar esta mensagem em determinadas condições (ver **Example script** abaixo).
+
+## Definir o nível de log
+
+Você pode definir um nível mínimo de log para exibir. Por exemplo, se você quiser ver mensagens tão severas como **Warning** ou superiores, use:
+
+```cs
+Log.ActivateLog (LogMessageType.Warning);
+```
+
+> <x1\/>!Note<x2\/>
+> Isto não é um cenário global. O nível de log que você definiu só se aplica ao script que você configurou.
+
+### Alterar o nível de log no tempo de execução
 
 ```cs
 ((Game)Game).ConsoleLogLevel = LogMessageType.myLogLevel;
 ```
 
-### Disable a specific log
+### Desativar um log específico
 
 ```cs
-GlobalLogger.GetLogger("RouterClient").ActivateLog(LogMessageType.Debug, LogMessageType.Fatal, false); 
-// Disables logging of the RouterClient module
+GlobalLogger.GetLogger("RouterClient"). ActivateLog (LogMessageType.Debug, LogMessageType.Fatal, false); 
+\/\/ Desativa o registro do módulo RouterClient
 ```
 
-### Disable logging in the console
+### Desativar o registro no console
 
 ```cs
 ((Game)Game).ConsoleLogMode = ConsoleLogMode.None;
 ```
 
-### Create a log file
+### Criar um arquivo de log
 
-To save the log output to a text file, add this code to the `Start` method:
+Para salvar a saída de log em um arquivo de texto, adicione esse código ao método `Start`:
 
 ```cs
-var fileWriter = new TextWriterLogListener(new FileStream("myLogFile.txt", FileMode.Create));
+var fileWriter = novo TextWriterLogListener(new FileStream("myLogFile.txt", FileMode.Create));
 GlobalLogger.GlobalMessageLogged += fileWriter;
 ```
 
-This creates a file in the Debug folder of your project (eg *MyGame\MyGame\Bin\Windows\Debug\myLogFile.txt*).
+Isso cria um arquivo na pasta Debug do seu projeto (por exemplo *MyGame\MyGame\Bin\Windows\Debug\myLogFile.txt*).
 
-## Example script
+## Exemplo de script
 
-The following script checks that the texture `MyTexture` is loaded. When the texture loads, the log displays a debug message (`Log.Error`). If it doesn't load, the log records an error message (`Log.Debug`).
+O seguinte script verifica que a textura `MyTexture` está carregada. Quando a textura carrega, o log exibe uma mensagem de depuração (`Log.Error`). Se não carregar, o log registra uma mensagem de erro (`Log.Debug`).
 
 ```cs
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Stride.Core.Diagnostics;
-using Stride.Core.Mathematics;
-using Stride.Input;
-using Stride.Engine;
-using Stride.Graphics;
+usando o Sistema. Linq;
+usando o Sistema. Texto;
+usando o Sistema. Threading. Tarefas;
+usando Stride.Core.Diagnostics;
+usando Stride. Core.Matemática;
+usando Stride. Entrada;
+usando Stride. Motor;
+usando Stride. Gráficos;
 
 namespace MyGame
-{
-    public class Script : SyncScript
-    {
+(
+    classe pública Script : Sincronização
+    (
 		public Texture myTexture;
 
-        public override void Start()
-        {
-            // Initialization of the script.
-            Log.ActivateLog(LogMessageType.Debug);
+        anula de sobreposição pública Start()
+        (
+            \/\/ Inicialização do script.
+            Log.ActivateLog (LogMessageType.Debug);
             Log.Debug("Start loading MyTexture");
 
             myTexture = Content.Load<Texture>("MyTexture");
-            if (myTexture == null)
-            {
-                Log.Error("MyTexture not loaded");
+            se (myTexture == null)
+            (
+                Log.Error("MyTexture não carregado");
             }
-            else
-            {
-                Log.Debug("MyTexture loaded successfully");
+            mais
+            (
+                Log.Debug("MyTexture carregado com sucesso");
             }
         }
     }
 }
 ```
 
-## See also
+## Ver também
 
-* [Debug text](debug-text.md)
-* [Profiling](profiling.md)
+* [Texto de depuração](debug-text.md)
+* [Perfil](profiling.md)
 * [Scripts](../scripts/index.md)

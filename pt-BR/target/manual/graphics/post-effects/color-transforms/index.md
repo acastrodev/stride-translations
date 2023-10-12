@@ -1,15 +1,15 @@
-# Color transforms
+# Transformações de cor
 
-<span class="badge text-bg-primary">Intermediate</span>
-<span class="badge text-bg-success">Artist</span>
-<span class="badge text-bg-success">Programmer</span>
+<x1\/> Intermediário <x2\/>
+<x3\/>Artista <x4\/>
+<x5\/> Programador <x6\/>
 
-**Color transforms** are special effects designed to be combined in a chain at runtime. You can define a series of color transforms to apply to an image. Each transform uses the previous transform's output as its own input. At runtime, the series of transforms is squashed into one shader and rendered in a single draw call for maximum performance.
+** Transformações de cor** são efeitos especiais projetados para ser combinado em uma cadeia no tempo de execução. Você pode definir uma série de transformações de cores para aplicar a uma imagem. Cada transformação usa a saída da transformação anterior como sua própria entrada. No tempo de execução, a série de transformações é esmagada em um shader e renderizada em uma única chamada para o máximo desempenho.
 
-You can also write your own [custom color transforms](custom-color-transforms.md) to create unique effects.
+Você também pode escrever seu próprio [ cor personalizada transforma](custom-color-transforms.md) para criar efeitos únicos.
 
-## In this section
+## Nesta secção
 
-* [Film grain](film-grain.md)
-* [Gamma correction](gamma-correction.md)
+* [Grão de filme](film-grain.md)
+* [Correção de gama](gamma-correction.md)
 * [ToneMap](tonemap.md)

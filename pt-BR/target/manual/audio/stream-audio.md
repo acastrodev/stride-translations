@@ -1,38 +1,38 @@
-# Stream audio
+# Transmissão de áudio
 
-<span class="badge text-bg-primary">Beginner</span>
-<span class="badge text-bg-success">Designer</span>
-<span class="badge text-bg-success">Programmer</span>
+<x1\/>Introdução<x2\/>
+<x3\/>Designer<x4\/>
+<x5\/> Programador <x6\/>
 
-By default, Stride plays audio directly from memory. This is useful for short sound effects such as gunshots or footsteps.
+Por padrão, Stride reproduz áudio diretamente da memória. Isso é útil para efeitos sonoros curtos, como tiros ou passos.
 
-![Non-streamed audio](media/audio-index-non-streamed-audio.png)
+<x1\/> Áudio não <x2\/>
 
-Alternatively, Stride can buffer audio and stream it in sequences. As soon as the first sequence is buffered, Stride plays it while buffering the following sequences in parallel. This saves a lot of memory when used for larger audio files such as background music and character dialogue.
+Alternativamente, Stride pode buffer áudio e transmiti-lo em sequências. Assim que a primeira seqüência é buffer, Stride o joga enquanto buffer as seguintes seqüências em paralelo. Isso economiza muita memória quando usado para arquivos de áudio maiores, como música de fundo e diálogo de personagens.
 
-> [!Note]
-> Streaming audio increases latency unless you preload it with the ReadyToPlay task (see below).
+> <x1\/>!Note<x2\/>
+> Streaming de áudio aumenta a latência a menos que você preload com a tarefa ReadyToPlay (veja abaixo).
 
-![Streamed audio](media/audio-index-streamed-audio.png)
+<x1\/>Streamed audio<x2\/>
 
-To stream an audio asset:
+Para transmitir um ativo de áudio:
 
-1. In the **Asset View**, select the audio asset.
+1. No **Asset View**, selecione o ativo de áudio.
 
-2. In the **Property Grid**, select **Stream From Disk**:
+2. No **Property Grid**, selecione **Stream From Disk**:
 
-   ![Audio asset properties](media/audio-asset-properties-property-grid.png)
+   <x1\/>Audio asset properties<x2\/>
 
-In the script for the asset, you can configure an audio file to play once the audio engine buffers enough audio samples. To do this, use this task:
+No script para o ativo, você pode configurar um arquivo de áudio para reproduzir uma vez que o motor de áudio buffers amostras de áudio suficientes. Para fazer isso, use esta tarefa:
 
 ```cs
 SoundInstance music = musicSound.CreateInstance();
-await music.ReadyToPlay();
+esperar music.ReadyToPlay();
 music.Play();
 ```
 
-## See also
-* [Global audio settings](global-audio-settings.md)
-* [Audio asset properties](audio-asset-properties.md)
-* [Spatialized audio](spatialized-audio.md)
-* [Non-spatialized audio](non-spatialized-audio.md)
+## Ver também
+* [Configurações de áudio globais](global-audio-settings.md)
+* [Propriedades de ativos de áudio](audio-asset-properties.md)
+* [Áudio espacial](spatialized-audio.md)
+* [Áudio não espacializado](non-spatialized-audio.md)

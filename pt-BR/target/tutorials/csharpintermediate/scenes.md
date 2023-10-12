@@ -1,17 +1,17 @@
-# Scenes
+# Cenas
 
-This C# Intermediate tutorial covers the concept of Scenes in Stride.
+Este tutorial intermediário C# cobre o conceito de cenas em Stride.
 
-## Explanation
+## Explicação
 
-Stride allows Scenes to have an infinite amount of child scenes which on their terms also can load an infinite amount of child scenes. However, every scene loaded is unique. A scene can not be loaded twice at the same time. Both the editor and when loading scenes through code, will prevent a scene from being loaded twice at the same time.
+Stride permite Cenas para ter uma quantidade infinita de cenas de criança que em seus termos também pode carregar uma quantidade infinita de cenas de criança. No entanto, cada cena carregada é única. Uma cena não pode ser carregada duas vezes ao mesmo tempo. Tanto o editor quanto ao carregar cenas através do código, impedirão que uma cena seja carregada duas vezes ao mesmo tempo.
 
-> [!Video https://www.youtube.com/embed/G7OvA-9erpE]
+> [!Vídeo https://www.youtube.com/embed/G7OvA-9erpE]
 
-## Loading a child scene
-This script loads in a child scene by pressing a defined key. Pressing that same key again, will unload the loaded child scene. Every time we load the child scene again, we offset it a little in the Y direction to demonstrate the offsetting option for child scenes.
+## Carregando uma cena infantil
+Este script carrega em uma cena de criança pressionando uma chave definida. Pressionando essa mesma chave novamente, irá descarregar a cena da criança carregada. Cada vez que carregamos a cena da criança novamente, compensamos um pouco na direção Y para demonstrar a opção de compensação para cenas de crianças.
 [!code-csharp[editorpages](../../../../stride/samples/Tutorials/CSharpIntermediate/CSharpIntermediate/CSharpIntermediate.Game/06_Scenes/LoadChildScene.cs)]
 
-## (Re)loading a scene
-We can get the top most scene in our world which is called the RootScene. If we unload that scene, we can then load in a completely new scene in order to swap or switch to a new scene. That same script can also be used to reload the same scene in case you want to restart your scene,
+## (Re) carregar uma cena
+Nós podemos obter o topo mais cena em nosso mundo que é chamado de RootScene. Se descarregarmos essa cena, podemos então carregar em uma cena completamente nova para trocar ou mudar para uma nova cena. Esse mesmo script também pode ser usado para recarregar a mesma cena no caso de você querer reiniciar sua cena,
 [!code-csharp[editorpages](../../../../stride/samples/Tutorials/CSharpIntermediate/CSharpIntermediate/CSharpIntermediate.Game/06_Scenes/LoadScene.cs)]

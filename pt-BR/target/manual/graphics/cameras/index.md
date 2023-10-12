@@ -1,116 +1,116 @@
-# Cameras
+# Câmeras
 
-<span class="badge text-bg-primary">Beginner</span>
-<span class="badge text-bg-success">Designer</span>
+<x1\/>Introdução<x2\/>
+<x3\/>Designer<x4\/>
 
-**Cameras** capture your scene and display it to the player. Without cameras, you can't see anything in your game.
+**Cameras** capturar sua cena e exibi-la ao jogador. Sem câmaras, não consegues ver nada no teu jogo.
 
-You can have an unlimited number of cameras in your scene.
+Você pode ter um número ilimitado de câmeras em sua cena.
 
-## Create a camera in Game Studio
+## Criar uma câmera no Game Studio
 
-In the Scene Editor, right-click and select **Camera**, then choose the kind of camera you want to create (**perspective** or **orthographic**).
+No Editor de Cena, clique com o botão direito do mouse e selecione **Camera**, em seguida, escolha o tipo de câmera que você deseja criar (**perspective** ou **orthographic**).
 
-![Add camera](media/add-camera.png)
+<x1\/> Adicionar câmera<x2\/>
 
-Game Studio creates an entity with a camera component attached.
+Game Studio cria uma entidade com um componente de câmera anexado.
 
-Alternatively, select the entity you want to be a camera, and in the **Property Grid**, click **Add component** and select **Camera**.
+Alternativamente, selecione a entidade que deseja ser uma câmera e no **Property Grid**, clique em **Adicionar componente** e selecione **Camera**.
 
-![Add a camera component](media/add-camera-component.png)
+<x1\/> Adicionar um componente de câmera<x2\/>
 
-## Camera properties
+## Propriedades da câmera
 
-![Camera properties](media/camera-properties.png)
+<x1\/> Propriedades da câmara<x2\/>
 
-| Property | Description |
+| Propriedade | Descrição |
 |---------------------|--------------------------------------------------
-| Projection | The type of projection used by the camera (perspective or orthographic) |
-| Field of view (degrees) | The vertical field of view used for perspective projection |
-| Orthographic size | The height of the orthographic projection (the orthographic width is automatically calculated based on the target ratio). This has the effect of zooming in and out |
-| Near clip plane | The nearest point the camera can see |
-| Far clip plane | The furthest point the camera can see |
-| Custom aspect ratio | Use a custom aspect ratio you specify.  Otherwise, automatically adjust the aspect ratio to the render target ratio |
-| Custom aspect ratio | The aspect ratio for the camera (when the **Custom aspect ratio** option is selected) |
-| Slot | The camera slot used in the graphics compositor. For more information, see [Camera slots](camera-slots.md) |
+| Projecção | O tipo de projeção usado pela câmera (perspectiva ou ortográfica) |
+| Campo de visão (graus) | O campo vertical de visão usado para projeção de perspectiva |
+| Tamanho ortográfico | A altura da projeção ortográfica (a largura ortográfica é calculada automaticamente com base na relação alvo). Isso tem o efeito de ampliar dentro e fora |
+| Próximo clip avião | O ponto mais próximo da câmera pode ver |
+| Avião de clipe farto | O ponto mais distante da câmera pode ver |
+| Relação de aspecto personalizado | Use uma relação de aspecto personalizado que você especificar.  Caso contrário, ajuste automaticamente a relação de aspecto à relação de destino de renderização |
+| Relação de aspecto personalizado | A relação de aspecto para a câmera (quando a relação de aspecto **Custom** é selecionada) |
+| Fenda de fenda | O slot de câmera usado no compositor gráfico. Para mais informações, consulte [Camera slots](camera-slots.md) |
 
-## Perspective and orthographic cameras
+## Câmeras visuais e ortográficos
 
-**Perspective cameras** provide a "real-world" perspective of the objects in your scene. In this view, objects close to the camera appear larger, and lines of identical lengths appear different due to foreshortening, as in reality. Perspective cameras are most used for games that require a realistic perspective, such as third-person and first-person games.
+** Câmeras perspectivas** fornecem uma perspectiva "mundo real" dos objetos em sua cena. Nesta visão, os objetos próximos à câmera aparecem maiores, e as linhas de comprimentos idênticos aparecem diferentes devido ao foreshortening, como na realidade. As câmeras de perspectiva são mais usadas para jogos que exigem uma perspectiva realista, como jogos de terceira pessoa e primeira pessoa.
 
-With **orthographic cameras**, objects are always the same size, no matter their distance from the camera. Parallel lines never touch, and there's no vanishing point. Orthographic cameras are most used for games with isometric perspectives, such as some strategy, 4X, or role-playing games.
+Com câmeras **ortográficos**, os objetos são sempre do mesmo tamanho, não importa sua distância da câmera. Linhas paralelas nunca tocam, e não há ponto de fuga. As câmeras ortográficos são mais usadas para jogos com perspectivas isométricas, como alguma estratégia, 4X ou jogos de RPG.
 
-![Perspective and orthographic diagram](../../game-studio/media/perspective-orthographic-diagram.png)
+<x1\/> Diagrama perspectivo e ortográfico<x2\/>
 
-| Perspective | Orthographic |
+| Perspectiva | Ortodoxo |
 |--------------|------------
-| ![Perspective view](media/perspective-screenshot.png) | ![Orthographic view](media/orthographic-screenshot.png) |
+| <x1\/> Visão prospectiva <x2\/> | <x1\/> Visão ortográfico<x2\/> |
 
-### Field of view (perspective mode only)
+### Campo de visão (somente modoperspectivo)
 
-When the camera is set to **perspective** mode, the **field of view** changes the camera frustum, and has the effect of zooming in and out of the scene. At high settings (90 and above), the field of view creates stretched "fish-eye lens" views. The default setting is 45.
+Quando a câmera é definida para o modo **perspective**, o campo de visão ** muda a câmera frustum, e tem o efeito de zoom dentro e fora da cena.** Em altas configurações (90 e acima), o campo de visão cria vistas "olho-peixe" esticadas. A configuração padrão é 45.
 
-| Field of view: 45 (default) | Field of view: 90 |
+| Campo de visão: 45 (padrão) | Campo de visão: 90 |
 |-----------------------------|------------------
-| ![Default FOV](media/perspective-screenshot.png) | ![High FOV](media/90-degree-fov.png) |
+| <x1\/> Padrão FOV<x2\/> | <x1\/> Alto FOV<x2\/> |
 
-### Orthographic size (orthographic mode only)
+### Tamanho ortográfico (somente modo ortográfico)
 
-When the camera is set to **orthographic** mode, the **orthographic size** has the effect of zooming in and out.
+Quando a câmera é definida para o modo **orthographic**, o tamanho **orthographic** tem o efeito de zoom in e out.
 
-| Orthographic size: 10 (default) | Orthographic size: 50 |
+| Tamanho ortográfico: 10 (padrão) | Tamanho ortográfico: 50 |
 |-----------------------------|------------------
-| ![Default FOV](media/orthographic-size-10.png) | ![High FOV](media/orthographic-size-50.png) |
+| <x1\/> Padrão FOV<x2\/> | <x1\/> Alto FOV<x2\/> |
 
-## Near and far planes
+## Aviões próximos e distantes
 
-The near and far planes determine where the camera's view begins and ends.
+Os planos próximos e distantes determinam onde a visão da câmera começa e termina.
 
-* The **near plane** is the closest point the camera can see. The default setting is 0.1. Objects before this point aren't drawn.
+* O **near plan** é o ponto mais próximo que a câmera pode ver. A configuração padrão é 0.1. Os objetos antes deste ponto não são desenhados.
 
-* The **far plane**, also known as the draw distance, is the furthest point the camera can see. Objects beyond this point aren't drawn. The default setting is 1000.
+* O plano **far**, também conhecido como distância de empate, é o ponto mais distante que a câmera pode ver. Os objetos além deste ponto não são desenhados. A configuração padrão é 1000.
 
-Stride renders the area between the near and far planes.
+Stride torna a área entre os planos próximos e distantes.
 
-![Camera position](../../get-started/media/camera-position.png)
+<x1\/> Camera position<x2\/>
 
-| Near plane 0.1 (default); far plane: 50 | Near plane: 7; far plane 1000 (default) |
+| Perto do avião 0.1 (padrão); plano distante: 50 | Próximo do avião: 7; plano distante 1000 (padrão) |
 |--------------------|------------------
-| ![Far plane: 50](media/far-clip-50.png) | ![Near plane: 7](media/near-clip-7.png) |
-| With a low **far plane** value, objects in the near distance aren't drawn. | With a high **near plane** value, objects close to the camera aren't drawn. |
+| <x1\/>Avião distante: 50<x2\/> | <x1\/>Próximo do avião: 7<x2\/> |
+| Com um valor baixo **far plan**, os objetos na distância próxima não são desenhados. | Com um alto valor **near plan**, os objetos próximos à câmera não são desenhados. |
 
-## Camera scripts
+## Scripts de câmera
 
-You can control cameras using **camera scripts**. Stride includes three camera script templates: an FPS camera script, a side-scrolling camera script, and a basic camera controller script.
+Você pode controlar câmeras usando scripts **camera**. O Stride inclui três modelos de script de câmera: um script de câmera FPS, um script de câmera side-scrolling e um script de controlador de câmera básica.
 
-### Add a camera script in Game Studio
+### Adicionar um script de câmera no Game Studio
 
-1. In the **Asset View** (in the bottom by default), click **Add asset > Scripts** and choose the camera script you want to add.
+1. No **Asset View** (na parte inferior por padrão), clique em **Add asset > Scripts** e escolha o script de câmera que deseja adicionar.
 
-   ![Add a camera script](media/add-camera-script.png)
+   <x1\/> Adicionar um script de câmera<x2\/>
 
-2. In the **Scene Editor**, select the entity with the camera you want to control.
+2. No **Scene Editor**, selecione a entidade com a câmera que deseja controlar.
 
-3. In the **Property Grid** (on the right by default), click **Add component** and select the camera script you want to use.
+3. No **Property Grid** (à direita por padrão), clique em ** Adicionar componente** e selecione o script de câmera que você deseja usar.
 
-   ![Add script component](media/add-camera-script-component.png)
+   <x1\/> Adicionar componente de script<x2\/>
 
-   Game Studio adds the camera script to the entity.
+   Game Studio adiciona o script da câmera à entidade.
 
-For more information about how to create and use scripts, see [Scripts](../../scripts/index.md).
+Para obter mais informações sobre como criar e usar scripts, consulte [Scripts](../../scripts/index.md).
 
-## Camera slots
+## Slots de câmera
 
-**Camera slots** link the [graphics compositor](index.md) to the cameras in your scene. You bind each camera to a slot, then define which slot the compositor uses. This means you can change the [root scene](../../game-studio/manage-scenes.md) or graphics compositor without having to assign new cameras each time.
+**Camera slots** vinculam o compositor [graphics](index.md) às câmeras em sua cena. Você liga cada câmera a um slot, então define qual slot o compositor usa. Isso significa que você pode mudar a cena [root](../../game-studio/manage-scenes.md) ou compositor gráfico sem ter que atribuir novas câmeras cada vez.
 
-For more information, see [Camera slots](camera-slots.md).
+Para obter mais informações, consulte os slots [Camera](camera-slots.md).
 
-## Render a camera to a texture
+## Render uma câmera a uma textura
 
-You can send a camera's view to a texture and use the texture on objects in your scene. For example, you can use this to display part of your scene on a TV screen in the same scene, such as security camera footage. For more information, see [Render textures](../graphics-compositor/render-textures.md).
+Você pode enviar uma visão da câmera para uma textura e usar a textura em objetos em sua cena. Por exemplo, você pode usar isso para exibir parte de sua cena em uma tela de TV na mesma cena, como imagens de câmera de segurança. Para mais informações, consulte as texturas [Render](../graphics-compositor/render-textures.md).
 
-## See also
+## Ver também
 
-* [Camera slots](camera-slots.md)
-* [Animate a camera](animate-a-camera-with-a-model-file.md)
-* [Graphics compositor](../graphics-compositor/index.md)
+* [Slots de câmera](camera-slots.md)
+* [Animar uma câmera](animate-a-camera-with-a-model-file.md)
+* [Compositor gráfico](../graphics-compositor/index.md)

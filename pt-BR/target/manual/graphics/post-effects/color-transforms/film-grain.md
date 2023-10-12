@@ -1,32 +1,32 @@
-# Film grain
+# Grão de filme
 
-<span class="badge text-bg-primary">Beginner</span>
-<span class="badge text-bg-success">Artist</span>
-<span class="badge text-bg-success">Programmer</span>
+<x1\/>Introdução<x2\/>
+<x3\/>Artista <x4\/>
+<x5\/> Programador <x6\/>
 
-The **film grain** adds noise at each frame to simulate the grain of films used in real cameras.
+O **film granul** adiciona ruído em cada quadro para simular o grão de filmes usados em câmeras reais.
 
-![media/film-grain-1.png](media/film-grain-1.png)
+<x1\/>media\/film-grain-1.png<x2\/>
 
-The pattern is procedurally generated and changes at each frame.
+O padrão é gerado processualmente e muda em cada quadro.
 
-To simulate real film grain, the noise should be more visible in areas of medium light intensity, and less visible in bright or dark areas.
+Para simular o grão de filme real, o ruído deve ser mais visível em áreas de intensidade de luz média, e menos visível em áreas brilhantes ou escuras.
 
-The pattern locally modifies the luminance of the pixels affected.
+O padrão modifica localmente a luminância dos pixels afetados.
 
-![media/film-grain-2.png](media/film-grain-2.png)
+<x1\/>media\/film-grain-2.png<x2\/>
 
-## Properties
+## Propriedades
 
-| Property | Description |
+| Propriedade | Descrição |
 | ---------------- | --------------------------------------------------------------------------- |
-| Amount | Amount/strength of the effect |
-| Grain Size | Size of the grain |
-| Animate | When enabled, the procedural pattern changes at each frame |
-| Luminance Factor | How strongly the original pixel luminance is affected by the grain pattern |
+| Montante | Montante\/força do efeito |
+| Tamanho do grão | Tamanho do grão |
+| Animate | Quando ativado, o padrão processual muda em cada quadro |
+| Fator de Luminância | Quão fortemente a luminância de pixel original é afetada pelo padrão de grão |
 
-## See also
+## Ver também
 
-* [Gamma correction](gamma-correction.md)
+* [Correção de gama](gamma-correction.md)
 * [ToneMap](tonemap.md)
-* [Vignetting](vignetting.md)
+* [Vignetação](vignetting.md)

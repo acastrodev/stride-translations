@@ -1,56 +1,56 @@
-# Create a script
+# Criar um script
 
-<span class="badge text-bg-primary">Beginner</span>
-<span class="badge text-bg-success">Programmer</span>
+<x1\/>Introdução<x2\/>
+<x3\/> Programador <x4\/>
 
-You can create scripts using Game Studio or an IDE such as Visual Studio.
+Você pode criar scripts usando Game Studio ou um IDE, como Visual Studio.
 
-## Create a script in Game Studio
+## Criar um script no Game Studio
 
-1. In the **Asset View**, click **Add asset > Scripts** and select a script type.
+1. No **Asset View**, clique em **Add asset > Scripts** e selecione um tipo de script.
 
-   ![Select script type window](media/create-a-script-script-asset-selection.png)
+   <x1\/>Select script type window<x2\/>
 
-   > [!Note]
-   > For information about different types of script, see [Types of script](types-of-script.md).
+   > <x1\/>!Note<x2\/>
+   > Para obter informações sobre diferentes tipos de script, consulte [Típes de script](types-of-script.md).
 
-   The **New script** dialog opens.
+   A caixa de diálogo **New script** abre.
 
-   ![New script](media/script-wizard.png)
+   <x1\/> Novo script<x2\/>
 
-2. Specify a class and namespace for the script and click **Create script**.
+2. Especifique uma classe e namespace para o script e clique em **Create script**.
 
-3. To use the script, you need to save it. By default, Game Studio prompts you to save the script now.
+3. Para usar o script, você precisa salvá-lo. Por padrão, Game Studio solicita que você salve o script agora.
 
-After you save the script, you can see it in the **Asset View**.
+Depois de salvar o script, você pode vê-lo no **Asset View**.
 
-> [!Note]
-> Although scripts are a kind of asset, they're not saved in the Assets folder. Instead, they're saved in the relevant assembly folder. For more information, see [Project structure](../files-and-folders/project-structure.md).
+> <x1\/>!Note<x2\/>
+> Embora os scripts sejam um tipo de ativo, eles não são salvos na pasta Ativos. Em vez disso, eles são salvos na pasta de montagem relevante. Para mais informações, consulte [Projeto estrutura](../files-and-folders/project-structure.md).
 
-You can also see the new script in Visual Studio.
+Você também pode ver o novo script no Visual Studio.
 
-![New script on Asset View tab](media/create-a-script-new-script-asset-view.png)
+<x1\/> Novo script no Asset View tab<x2\/>
 
-> [!Tip]
-> To open your solution in Visual Studio from Game Studio, click the ![Open in IDE](media/create-a-script-ide-icon.png) (**Open in IDE**) icon in the Game Studio toolbar.
+> <x1\/>!Tip<x2\/>
+> Para abrir sua solução no Visual Studio do Game Studio, clique no ícone <x3\/>Open in IDE<x4\/> (**Open in IDE**) na barra de ferramentas Game Studio.
 
 ```cs
-using System;
-using System.Text;
-using System.Threading.Tasks;
-using Stride.Core.Mathematics;
-using Stride.Input;
-using Stride.Engine;
+usando o sistema;
+usando o Sistema. Texto;
+usando o Sistema. Threading. Tarefas;
+usando Stride. Core.Matemática;
+usando Stride. Entrada;
+usando Stride. Motor;
 
 namespace MyGame
-{
-	public class BasicAsyncScript : AsyncScript
-	{	
-		public override async Task Execute()
-		{
-			while(Game.IsRunning)
-			{
-				// Do some stuff every frame
+(
+	classe pública BasicAsyncScript : AsyncScript
+	(	
+		override público async Task Execute()
+		(
+			enquanto (Game.IsRunning)
+			(
+				\/\/ Faça algumas coisas cada quadro
 				await Script.NextFrame();
 			}
 		}
@@ -58,79 +58,79 @@ namespace MyGame
 }
 ```
 
-## Create a script in Visual Studio
+## Criar um script no Visual Studio
 
 1. Open Visual Studio.
 
-   > [!Tip]
-   > To open your solution in Visual Studio from Game Studio, click the ![Open in IDE](media/create-a-script-ide-icon.png) (**Open in IDE**) icon in the Game Studio toolbar.
+   > <x1\/>!Tip<x2\/>
+   > Para abrir sua solução no Visual Studio do Game Studio, clique no ícone <x3\/>Open in IDE<x4\/> (**Open in IDE**) na barra de ferramentas Game Studio.
 
-   The game solution is composed of several projects:
+   A solução do jogo é composta por vários projetos:
 
-   * The project ending *.Game* is the main project, and should contain all your game logic and scripts.
+   * O projeto que termina *.Game* é o projeto principal, e deve conter toda a lógica do jogo e scripts.
 
-   * Other projects (eg *MyGame.Windows*, *MyGame.Android* etc) contain platform-specific code.
+   * Outros projetos (por exemplo *MyGame.Windows*, *MyGame.Android* etc) contêm código específico da plataforma.
 
-   For more information, see [Project structure](../files-and-folders/project-structure.md).
+   Para mais informações, consulte [Projeto estrutura](../files-and-folders/project-structure.md).
 
-2. Add a new class file to the `.Game` project. To do this, right-click the project and select **Add > New Item**.
+2. Adicione um novo arquivo de classe ao projeto `.Game`. Para fazer isso, clique com o botão direito do mouse no projeto e selecione **Add > New Item**.
 
-   The **Add New Item** dialog opens.
+   A caixa de diálogo **Add New Item** abre.
 
-3. Select **Class**, type a name for your script, and click **Add**.
+3. Selecione **Class**, digite um nome para seu script e clique em **Add**.
 
-   Visual Studio adds a new class to your project.
+   Visual Studio adiciona uma nova classe ao seu projeto.
 
-4. In the file you created, make sure the script is public and derives from either **AsyncScript** or **SyncScript**.
+4. No arquivo que você criou, certifique-se de que o script é público e deriva de **AsyncScript** ou **SyncScript**.
 
-5. Implement the necessary abstract methods.
+5. Implementar os métodos abstratos necessários.
 
-   For example:
+   Por exemplo:
 
    ```cs
-   	using System;
-   	using System.Text;
-   	using System.Threading.Tasks;
-   	using Stride.Core.Mathematics;
-   	using Stride.Input;
-   	using Stride.Engine;
+   	usando o sistema;
+   	usando o Sistema. Texto;
+   	usando o Sistema. Threading. Tarefas;
+   	usando Stride. Core.Matemática;
+   	usando Stride. Entrada;
+   	usando Stride. Motor;
    
    	namespace MyGame
-   	{
-   		public class SampleSyncScript : SyncScript
-   		{			
-   			public override void Update()
-   			{
-   				if (Game.IsRunning)
-   				{
-   					// Do something every frame
+   	(
+   		classe pública SampleSyncScript : Sincronização
+   		(			
+   			atualização()
+   			(
+   				se (Game.IsRunning)
+   				(
+   					\/\/ Faça algo cada quadro
    				}
    			}
    		}
    	}
    ```
 
-6. Save the project and script files.
+6. Salve os arquivos de projeto e script.
 
-7. Because you modified the script, Game Studio needs to reload the assembly to show the changes.
+7. Porque você modificou o script, Game Studio precisa recarregar o conjunto para mostrar as mudanças.
 
-   ![Confirmation message](media/create-a-script-confirmation-message.png)
+   <x1\/> Confirmação mensagem <x2\/>
 
-   Click **Yes**.
+   Clique em ** Sim**.
 
-You can see the script in the **Asset View**.
+Você pode ver o script no **Asset View**.
 
-![New script on Asset View tab](media/create-a-script-new-script-asset-view.png)
+<x1\/> Novo script no Asset View tab<x2\/>
 
-> [!Note]
-> Although scripts are a kind of asset, they're not saved in the Assets folder. Instead, they're saved in the relevant assembly folder. For more information, see [Project structure](../files-and-folders/project-structure.md).
+> <x1\/>!Note<x2\/>
+> Embora os scripts sejam um tipo de ativo, eles não são salvos na pasta Ativos. Em vez disso, eles são salvos na pasta de montagem relevante. Para mais informações, consulte [Projeto estrutura](../files-and-folders/project-structure.md).
 
-## See also
+## Ver também
 
-* [Types of script](types-of-script.md)
-* [Use a script](use-a-script.md)
-* [Public properties and fields](public-properties-and-fields.md)
-* [Scheduling and priorities](scheduling-and-priorities.md)
-* [Events](events.md)
-* [Debugging](debugging.md)
-* [Preprocessor variables](preprocessor-variables.md)
+* [Tipos de script](types-of-script.md)
+* [Use um script](use-a-script.md)
+* [Propriedades e campos públicos](public-properties-and-fields.md)
+* [Programação e prioridades](scheduling-and-priorities.md)
+* [Eventos](events.md)
+* [Depuração](debugging.md)
+* [Variáveis de pré-processamento](preprocessor-variables.md)

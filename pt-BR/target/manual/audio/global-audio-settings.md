@@ -1,21 +1,21 @@
-# Global audio settings
+# Configurações de áudio globais
 
-<span class="badge text-bg-primary">Beginner</span>
-<span class="badge text-bg-success">Programmer</span>
+<x1\/>Introdução<x2\/>
+<x3\/> Programador <x4\/>
 
-Global audio settings apply to all the audio in your project.
+As configurações globais de áudio aplicam-se a todo o áudio em seu projeto.
 
-You can control the global audio settings by accessing the [AudioEngine](xref:Stride.Audio.AudioEngine) **properties** class:
+Você pode controlar as configurações de áudio globais acessando a classe [AudioEngine](xref:Stride.Audio.AudioEngine) **properties**:
 
-| Property | Function |
+| Propriedade | Função |
 |--- | --- |
-| [MasterVolume](xref:Stride.Audio.AudioEngine.MasterVolume) | Sets the master volume. |
-| [PauseAudio](xref:Stride.Audio.AudioEngine.PauseAudio) | Pauses all audio. |
-| [ResumeAudio](xref:Stride.Audio.AudioEngine.ResumeAudio) | Resumes all audio. |
+| [MasterVolume](xref:Stride.Audio.AudioEngine.MasterVolume) | Define o volume mestre. |
+| [Paisagens](xref:Stride.Audio.AudioEngine.PauseAudio) | Pausa todo o áudio. |
+| [Resumindo](xref:Stride.Audio.AudioEngine.ResumeAudio) | Reúna todo o áudio. |
 
-You can also control sounds individually using the [SoundInstance API](xref:Stride.Audio.SoundInstance).
+Você também pode controlar sons individualmente usando o [SoundInstance API](xref:Stride.Audio.SoundInstance).
 
-## See also
-* [Spatialized audio](spatialized-audio.md)
-* [Non-spatialized audio](non-spatialized-audio.md)
-* [SoundInstance API documentation](xref:Stride.Audio.SoundInstance)
+## Ver também
+* [Áudio espacial](spatialized-audio.md)
+* [Áudio não espacializado](non-spatialized-audio.md)
+* [Documentação da API SoundInstance](xref:Stride.Audio.SoundInstance)

@@ -1,40 +1,40 @@
-# Asset control
+# Controle de ativos
 
-> [!Warning]
-> This section is out of date. For now, you should only use it for reference.
+> <x1\/>!Warning<x2\/>
+> Esta seção está fora de data. Por enquanto, você só deve usá-lo para referência.
 
-Until now, all assets of a game package, and its dependencies, were compiled as part of your game.
+Até agora, todos os ativos de um pacote de jogo, e suas dependências, foram compilados como parte de seu jogo.
 
-Starting with 1.3, we compile only the assets required by your game.
+Começando com 1.3, compilamos apenas os ativos exigidos pelo seu jogo.
 
-Don’t worry, most of it is done automatically for you! We do that by starting to collect dependencies from the new Game Setting asset: it references the Default Scene, and we can easily detect all the required asset references (Models, Materials, Asset referenced by your scripts and so on).
+Não se preocupe, a maioria é feito automaticamente para você! Fazemos isso ao começar a coletar dependências do novo ativo Game Setting: ele faz referência ao Default Scene, e podemos facilmente detectar todas as referências de ativos necessárias (Models, Materials, Asset referenciado por seus scripts e assim por diante).
 
-In case you were loading anything in your script using Content.Load, you can still tag those assets specifically with “Mark as Root” in the editor.
+No caso de você estar carregando qualquer coisa em seu script usando o Conteúdo. Carregar, você ainda pode marcar esses ativos especificamente com “Mark as Root” no editor.
 
-However, we now recommend to instead create a field in your script and fill it directly in the editor. All the samples have been updated to this new practice, so please check them out.
+No entanto, agora recomendamos criar um campo no seu script e preenchê-lo diretamente no editor. Todas as amostras foram atualizadas para esta nova prática, então verifique-as.
 
-## Which assets are compiled?
+## Quais ativos são compilados?
 
-Assets that will be compiled and packaged in your project are:
+Os ativos que serão compilados e embalados em seu projeto são:
 
-- **Root assets (blue)**
-   - **Automatic** for a few asset types (i.e. Game Settings, Shaders)
-   - Explicit (using "**Mark as Root**" on the asset)
-- **Dependencies of root assets (green)**
-   - Since Game Settings is collected, that means that Default Scene and all its dependencies will be compiled as well (includes Model, Script field members pointing to other assets, etc...)
-   - Also, we encourage our users to switch your script from Content.Load (which require "Mark as Root") to a field member that you can set within the editor using drag and drop. That will create an implicit dependency that will force that asset to be compiled as well.
-- **Everything else (white)** (objects not marked as root and not referenced directly or indirectly by a root) **won't be packaged**
+- **Activos de raiz (azul)**
+   - **Automatic** para alguns tipos de ativos (i.e. Configurações do jogo, Shaders)
+   - Explicit (usando "**Mark como Root**" no ativo)
+- **Dependências de ativos raiz (verde)**
+   - Uma vez que as configurações do jogo são coletadas, isso significa que a cena padrão e todas as suas dependências serão compiladas também (inclui Modelo, membros do campo de script apontando para outros ativos, etc...)
+   - Além disso, encorajamos nossos usuários a mudar seu script do Content. Carregar (que requer "Mark as Root") para um membro de campo que você pode definir dentro do editor usando arrastar e soltar. Isso criará uma dependência implícita que forçará esse ativo a ser compilado também.
+- **Tudo mais (branco)** (objetos não marcados como raiz e não referenciados direta ou indiretamente por uma raiz) **won't be packaged**
 
-![media/26968245.png](media/26968245.png)
+<x1\/>media\/26968245.png<x2\/>
 
-## "Mark as root"
+## "Marcar como raiz"
 
-One important thing to understand is that "Mark as root" is not part of the asset, it is stored in the "current" package (the one that is in bold in the Solution Explorer).
+Uma coisa importante a entender é que "Mark as root" não faz parte do ativo, ele é armazenado no pacote "current" (o que está em negrito no Solution Explorer).
 
-It means that if "MyGame" is current package, if you check "Mark as Root" on Silver Material (part of SharedPackage), this information will be stored in MyGame.sdpkg as part of the reference to SharedPackage.
+Significa que se "MyGame" é o pacote atual, se você verificar "Mark as Root" no Silver Material (parte de SharedPackage), esta informação será armazenada em MyGame. sdpkg como parte da referência ao SharedPackage.
 
-As a result, you can use a shared package from multiple games even if you have different explicit roots.
+Como resultado, você pode usar um pacote compartilhado de vários jogos, mesmo que você tenha diferentes raízes explícitas.
 
-## See also
+## Ver também
 
-For additional information about asset management, see [Manage Assets](../../game-studio/manage-assets.md)
+Para obter informações adicionais sobre gerenciamento de ativos, consulte [Manage Assets](../../game-studio/manage-assets.md)

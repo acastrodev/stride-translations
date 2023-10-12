@@ -1,84 +1,84 @@
-# Organize your files in version control
+# Organize seus arquivos no controle de versão
 
-We recommend you use a version control system such as Git, SVN, or Perforce Helix to save a history of changes to your project.
+Recomendamos que você use um sistema de controle de versão como Git, SVN ou Perforce Helix para salvar um histórico de mudanças em seu projeto.
 
-How you organize and share your files is up to you, but there are some things to keep in mind.
+Como você organiza e compartilha seus arquivos é até você, mas há algumas coisas para ter em mente.
 
-## Files you shouldn't add to version control
+## Arquivos que você não deve adicionar ao controle de versão
 
-### **Bin** and **obj** folders
+### **Bin** e **obj** pastas
 
-We don't recommend you add the **Bin** or **obj** folders to version control. This is because:
+Não recomendamos que você adicione as pastas **Bin** ou **obj** ao controle de versão. Isso é porque:
 
-* Game Studio builds these folders every time you run the game, so you don't need to keep a history of them.
-* You can't see if they match the source files they were generated from in a given commit.
-* They take up space and slow down version control synchronization.
+* Game Studio constrói essas pastas cada vez que você executa o jogo, então você não precisa manter um histórico deles.
+* Você não pode ver se eles correspondem aos arquivos de origem que eles foram gerados em um determinado commit.
+* Eles ocupam espaço e retardam a sincronização de controle de versão.
 
-Visual Studio also puts **.obj** folders inside each code folder. For the same reasons, we don't recommend you add these to version control.
+O Visual Studio também coloca pastas **.obj** dentro de cada pasta de código. Pelas mesmas razões, não recomendamos que você adicione estes ao controle de versão.
 
-### Resource files
+### Arquivos de recurso
 
-**Resource files** are files imported into Game Studio and used by assets. They include image files (eg `.png`, `.jpg`), audio files (eg `.mp3`, `.wav`), and models (eg `.fbx`). We recommend you save these files in the **Resources** folder in your project folder.
+**Resource files** são arquivos importados para Game Studio e usados por ativos. Eles incluem arquivos de imagem (por exemplo `.png`, `.jpg`), arquivos de áudio (por exemplo `.mp3`, `.wav`), e modelos (por exemplo `.fbx`). Recomendamos que você salve esses arquivos na pasta **Resources** em sua pasta de projeto.
 
-We don't recommend you save resource files in the Assets folder. You might be used to organizing files this way if you use Unity®, as Unity® requires resource files and asset files to be in the same folder. Stride doesn't require this, and doing so has downsides.
+Não recomendamos que você salve arquivos de recursos na pasta Ativos. Você pode ser usado para organizar arquivos desta forma se você usar Unity®, pois Unity® requer arquivos de recursos e arquivos de ativos para estar na mesma pasta. O Stride não precisa disto, e fazê-lo tem desvantagens.
 
-For example, imagine an artist has edited 10GB of textures and committed them to source control. At the same time, a designer needs to edit an asset quickly. To do this, the designer gets the latest version of the asset from source control. However, because the assets and resource files are in the same folder, the designer is forced to get the 10gb of files at the same time. If the files are in a separate folder, however, the designer only has to get the folder they need. Additionally, as asset files are much smaller than resource files, it's much faster to navigate the asset history in a dedicated asset folder.
+Por exemplo, imagine que um artista tenha editado 10GB de texturas e comprometido com o controle de fonte. Ao mesmo tempo, um designer precisa editar um ativo rapidamente. Para fazer isso, o designer recebe a versão mais recente do ativo do controle de origem. No entanto, porque os ativos e arquivos de recursos estão na mesma pasta, o designer é forçado a obter o 10gb de arquivos ao mesmo tempo. Se os arquivos estão em uma pasta separada, no entanto, o designer só tem que obter a pasta que eles precisam. Além disso, como arquivos de ativos são muito menores do que arquivos de recursos, é muito mais rápido navegar no histórico de ativos em uma pasta de ativos dedicada.
 
-### Content creation files
+### Arquivos de criação de conteúdo
 
-**Content creation files** are created with external content creation tools, such as `.psd` files (Photoshop) or `.max` files (3D Studio Max).
+** Os arquivos de criação de conteúdo ** são criados com ferramentas de criação de conteúdo externos, como arquivos `.psd` (Photoshop) ou `.max`.> (3D Studio Max).
 
-We don't recommend you save content creation files in your project folder. This is because the files are often large and aren't used in the project directly. Instead, we recommend you save the files in a different version control repository - or, if your version control system supports partial checkouts (such as SVN or Perforce), a different root folder. This means team members only get the files they need.
+Não recomendamos que você salve arquivos de criação de conteúdo em sua pasta de projeto. Isso porque os arquivos são muitas vezes grandes e não são usados no projeto diretamente. Em vez disso, recomendamos que você salve os arquivos em um repositório de controle de versão diferente - ou, se o sistema de controle de versão suporta checkouts parciais (como SVN ou Perforce), uma pasta raiz diferente. Isso significa que os membros da equipe só obtêm os arquivos de que precisam.
 
-## Suggested directory structure
+## Estrutura de diretório sugerida
 
-Following these suggestions, an example folder structure might look like this:
+Seguindo essas sugestões, uma estrutura de pasta de exemplo pode parecer assim:
 
 ```cs
 - MyGame
-    - Assets
-        - texture.sdtex
+    - Activos
+        - textura
     - Bin
-    - MyGame.Game
-    - MyGame.Platform
+    - MyGame. Jogo
+    - MyGame
     - obj
-    - Resources
-        - texture.png
-- ContentCreationFiles
-    - texture.psd
+    - Recursos
+        - textura. png
+- Ficheiros de Criação de Conteúdo
+    - textura.psd
 ```
 
-You could even create separate folders for different kinds of content creation file:
+Você pode até criar pastas separadas para diferentes tipos de arquivo de criação de conteúdo:
 
 ```cs
 - MyGame
-    - Assets
-        - texture.sdtex
-        - model.sdtex
+    - Activos
+        - textura
+        - modelo
     - Bin
-    - MyGame.Game
-    - MyGame.Platform
+    - MyGame. Jogo
+    - MyGame
     - obj
-    - Resources
-        - texture.png
-        - model.fbx
-- PhotoshopProjects
-    - texture.psd
+    - Recursos
+        - textura. png
+        - modelo.fbx
+- Projetos do Photoshop
+    - textura.psd
 - MayaProjects
-     - model.mb
+     - modelo.mb
 ```
 
-## Example
+## Exemplo
 
-Imagine a team with two programmers, two 2D artists, and two 3D artists.
+Imagine uma equipe com dois programadores, dois artistas 2D e dois artistas 3D.
 
-* The programmers check out the *MyGame* project folder containing code, assets, and resources.
-* The 2D artists check out the game project and the *PhotoshopProjects* folder containing `.psd` files.
-* The 3D artists check out the game project and the *MayaProjects* folder containing `.mb` (Maya project) files.
+* Os programadores verificam a pasta de projeto *MyGame* contendo código, ativos e recursos.
+* Os artistas 2D verificam o projeto do jogo e a pasta *PhotoshopProjects* contendo arquivos `.psd`.
+* Os artistas 3D verificam o projeto do jogo e a pasta *MayaProjects* contendo arquivos `.mb` (projeto de maio).
 
-Now imagine one of the 2D artists changes several `.psd` files and commits 2GB of changes to version control. Because only the 2D artists have the *PhotoshopProjects* folder checked out, only the other 2D artist gets this change. The other team members don't need it. This is an efficient way to share files across projects.
+Agora imagine um dos artistas 2D muda vários arquivos `.psd` e comete 2GB de mudanças no controle de versão. Porque apenas os artistas 2D têm a pasta *PhotoshopProjects* verificada, apenas o outro artista 2D recebe esta mudança. Os outros membros da equipa não precisam dele. Esta é uma maneira eficiente de compartilhar arquivos em projetos.
 
-## See also
+## Ver também
 
-* [Project structure](project-structure.md)
-* [Distribute a game](distribute-a-game.md)
+* [Estrutura do projecto](project-structure.md)
+* [Distribuir um jogo](distribute-a-game.md)

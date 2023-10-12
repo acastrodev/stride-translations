@@ -1,24 +1,24 @@
-# Getting a component
-You can find this sample in the tutorial project: **Menu** &rarr;  **Getting a component**
+# Obtendo um componente
+Você pode encontrar esta amostra no projeto tutorial: **Menu** → ** Obtendo um componente**
 
-## Explanation
-This C# beginner tutorial covers how to get and remove components.
+## Explicação
+Este tutorial iniciante C# cobre como obter e remover componentes.
 
-Components are one of the most important concepts in Stride. Every entity in the scene has a list of components. The transform for instance is also a component.
+Os componentes são um dos conceitos mais importantes em Stride. Cada entidade na cena tem uma lista de componentes. A transformação por exemplo também é um componente.
 
-When we make custom scripts that inherit from `SyncScript` or `AsyncScript`, they turn into Components that we can attach to entities. We can attach these components to entities by using the editor or we can attach them by code.
+Quando fazemos scripts personalizados que herdam de `SyncScript` ou `AsyncScript`, eles se transformam em Componentes que podemos anexar a entidades. Podemos anexar esses componentes a entidades usando o editor ou podemos anexá-los por código.
 
-![Get a component](media/getting-a-component.webp)
+<x1\/> Obter um componente<x2\/>
 
-> [!Video https://www.youtube.com/embed/qRZG8qXkvDQ]
+> <x1\/>!Vídeo https:\/\/www.youtube.com\/embed\/qRZG8qXkvDQ<x2\/>
 
-## Code
+## Código
 ### AmmoComponent
-This is the first component that we attach to an entity. In the second script, we will try to get this AmmoComponent.
+Este é o primeiro componente que anexamos a uma entidade. No segundo script, vamos tentar obter este AmmoComponent.
 
 [!code-csharp[AmmoComponent](../../../../stride/samples/Tutorials/CSharpBeginner/CSharpBeginner/CSharpBeginner.Game/Code/AmmoComponent.cs)]
 
-### Getting A Component
-This component script, will retrieve the AmmoComponent script above and use its public method.
+### Obtendo um componente
+Este script componente, irá recuperar o script AmmoComponent acima e usar seu método público.
 
 [!code-csharp[GettingAComponent](../../../../stride/samples/Tutorials/CSharpBeginner/CSharpBeginner/CSharpBeginner.Game/Code/GettingAComponentDemo.cs)]

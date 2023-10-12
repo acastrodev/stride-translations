@@ -3,111 +3,111 @@
 <body>
 <trans-unit id="tu1" xml:space="preserve">
 <source xml:lang="en">Create particles</source>
-<target xml:lang="pt">Create particles</target>
+<target xml:lang="pt">Criar partículas</target>
 </trans-unit>
 <trans-unit id="tu2" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Beginner<x id="2"/>
 <x id="3"/>Artist<x id="4"/>
 <x id="5"/>Programmer<x id="6"/></source>
-<target xml:lang="pt"><x id="1"/>Beginner<x id="2"/>
-<x id="3"/>Artist<x id="4"/>
-<x id="5"/>Programmer<x id="6"/></target>
+<target xml:lang="pt">&lt;x1\/&gt;Introdução&lt;x2\/&gt;
+&lt;x3\/&gt;Artista &lt;x4\/&gt;
+&lt;x5\/&gt; Programador &lt;x6\/&gt;</target>
 </trans-unit>
 <trans-unit id="tu3" xml:space="preserve">
 <source xml:lang="en">To create a particle system, right-click the scene or Entity Tree, select <g id="1">Particle System</g>, and choose a preset (<g id="2">Empty</g>, <g id="3">Simple</g>, <g id="4">Fountain</g>, or <g id="5">Ribbon</g>).</source>
-<target xml:lang="pt">To create a particle system, right-click the scene or Entity Tree, select <g id="1">Particle System</g>, and choose a preset (<g id="2">Empty</g>, <g id="3">Simple</g>, <g id="4">Fountain</g>, or <g id="5">Ribbon</g>).</target>
+<target xml:lang="pt">Para criar um sistema de partículas, clique com o botão direito do mouse na cena ou Entity Tree, selecione <g id="1">Particle System</g> e escolha uma predefinição (<g id="2">Empty</g>, <g id="3">Simple</g>, <g id="4">Fountain</g> ou <g id="5">Ribbon</g>).</target>
 </trans-unit>
 <trans-unit id="tu4" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>media/particles-reference-editor-1.png<x id="2"/></source>
-<target xml:lang="pt"><x id="1"/>media/particles-reference-editor-1.png<x id="2"/></target>
+<target xml:lang="pt">&lt;x1\/&gt;media\/particles-reference-editor-1.png&lt;x2\/&gt;</target>
 </trans-unit>
 <trans-unit id="tu5" xml:space="preserve">
 <source xml:lang="en">Game Studio creates an entity with a <g id="1">Transform</g> component and a <g id="2">Particle System</g> component with your chosen preset. Particle entities are represented with a flame icon.</source>
-<target xml:lang="pt">Game Studio creates an entity with a <g id="1">Transform</g> component and a <g id="2">Particle System</g> component with your chosen preset. Particle entities are represented with a flame icon.</target>
+<target xml:lang="pt">Game Studio cria uma entidade com um componente <g id="1">Transform</g> e um componente <g id="2">Particle System</g> com sua predefinição escolhida. As entidades de partículas são representadas com um ícone de chama.</target>
 </trans-unit>
 <trans-unit id="tu6" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>media/particles-reference-editor-2.png<x id="2"/></source>
-<target xml:lang="pt"><x id="1"/>media/particles-reference-editor-2.png<x id="2"/></target>
+<target xml:lang="pt">&lt;x1\/&gt;media\/particles-reference-editor-2.png&lt;x2\/&gt;</target>
 </trans-unit>
 <trans-unit id="tu7" xml:space="preserve">
 <source xml:lang="en">Alternatively, you can add a particle component to an existing entity. With the entity selected, in the <g id="1">Property Grid</g>, click <g id="2">Add component</g> and select <g id="3">Particle System</g>.</source>
-<target xml:lang="pt">Alternatively, you can add a particle component to an existing entity. With the entity selected, in the <g id="1">Property Grid</g>, click <g id="2">Add component</g> and select <g id="3">Particle System</g>.</target>
+<target xml:lang="pt">Alternativamente, você pode adicionar um componente de partícula a uma entidade existente. Com a entidade selecionada, no <g id="1">Property Grid</g>, clique em <g id="2">Add component</g> e selecione <g id="3">Particle System</g>.</target>
 </trans-unit>
 <trans-unit id="tu8" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Add Particle System<x id="2"/></source>
-<target xml:lang="pt"><x id="1"/>Add Particle System<x id="2"/></target>
+<target xml:lang="pt">&lt;x1\/&gt; Adicionar sistema de partículas &lt;x2\/&gt;</target>
 </trans-unit>
 <trans-unit id="tu9" xml:space="preserve">
 <source xml:lang="en">Game Studio adds an empty particle system to the entity.</source>
-<target xml:lang="pt">Game Studio adds an empty particle system to the entity.</target>
+<target xml:lang="pt">Game Studio adiciona um sistema de partículas vazio para a entidade.</target>
 </trans-unit>
 <trans-unit id="tu10" xml:space="preserve">
 <source xml:lang="en">Transform component</source>
-<target xml:lang="pt">Transform component</target>
+<target xml:lang="pt">Componente de transformação</target>
 </trans-unit>
 <trans-unit id="tu11" xml:space="preserve">
 <source xml:lang="en">All entities have a transform component. Some particle elements ignore some elements of the transform component, such as rotation or scaling. For example, the gravity force shouldn't depend on the rotation of the particle system, and always ignores rotation; however, fountain particle systems inherit the location for the purposes of initial particle velocity.</source>
-<target xml:lang="pt">All entities have a transform component. Some particle elements ignore some elements of the transform component, such as rotation or scaling. For example, the gravity force shouldn't depend on the rotation of the particle system, and always ignores rotation; however, fountain particle systems inherit the location for the purposes of initial particle velocity.</target>
+<target xml:lang="pt">Todas as entidades têm um componente de transformação. Alguns elementos de partículas ignoram alguns elementos do componente de transformação, como rotação ou escalação. Por exemplo, a força de gravidade não deve depender da rotação do sistema de partículas, e sempre ignora a rotação; no entanto, os sistemas de partículas de fonte herdam a localização para os propósitos da velocidade de partículas inicial.</target>
 </trans-unit>
 <trans-unit id="tu12" xml:space="preserve">
 <source xml:lang="en">Only uniform scaling is supported. If you have a non-uniform scale on the transform component, only the X axis is used.</source>
-<target xml:lang="pt">Only uniform scaling is supported. If you have a non-uniform scale on the transform component, only the X axis is used.</target>
+<target xml:lang="pt">Apenas o dimensionamento uniforme é suportado. Se você tem uma escala não uniforme no componente de transformação, apenas o eixo X é usado.</target>
 </trans-unit>
 <trans-unit id="tu13" xml:space="preserve">
 <source xml:lang="en">If you want two particle systems to share a transform component, create two particle system entities and make one a child of the other.</source>
-<target xml:lang="pt">If you want two particle systems to share a transform component, create two particle system entities and make one a child of the other.</target>
+<target xml:lang="pt">Se você quiser que dois sistemas de partículas compartilhem um componente de transformação, crie duas entidades do sistema de partículas e faça uma criança da outra.</target>
 </trans-unit>
 <trans-unit id="tu14" xml:space="preserve">
 <source xml:lang="en">Particle component properties</source>
-<target xml:lang="pt">Particle component properties</target>
+<target xml:lang="pt">Propriedades de componentes de partículas</target>
 </trans-unit>
 <trans-unit id="tu15" xml:space="preserve">
 <source xml:lang="en">With a particle system entity selected, you can edit its properties in the <g id="1">Property Grid</g>, just like any other entity.</source>
-<target xml:lang="pt">With a particle system entity selected, you can edit its properties in the <g id="1">Property Grid</g>, just like any other entity.</target>
+<target xml:lang="pt">Com uma entidade de sistema de partículas selecionada, você pode editar suas propriedades no <g id="1">Property Grid</g>, assim como qualquer outra entidade.</target>
 </trans-unit>
 <trans-unit id="tu16" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>media/particles-reference-editor-3.png<x id="2"/></source>
-<target xml:lang="pt"><x id="1"/>media/particles-reference-editor-3.png<x id="2"/></target>
+<target xml:lang="pt">&lt;x1\/&gt;media\/particles-reference-editor-3.png&lt;x2\/&gt;</target>
 </trans-unit>
 <trans-unit id="tu17" xml:space="preserve">
 <source xml:lang="en">Property</source>
-<target xml:lang="pt">Property</target>
+<target xml:lang="pt">Propriedade</target>
 </trans-unit>
 <trans-unit id="tu18" xml:space="preserve">
 <source xml:lang="en">Description</source>
-<target xml:lang="pt">Description</target>
+<target xml:lang="pt">Descrição</target>
 </trans-unit>
 <trans-unit id="tu19" xml:space="preserve">
 <source xml:lang="en">Editor control</source>
-<target xml:lang="pt">Editor control</target>
+<target xml:lang="pt">Controle do editor</target>
 </trans-unit>
 <trans-unit id="tu20" xml:space="preserve">
 <source xml:lang="en">This changes how Game Studio displays particles while you work on the scene. You can play, pause, and stop the particle system. You can also reset the particle effect at set intervals, which is useful for previewing one-shot effects. The editor controls don't affect how particles are displayed at runtime.</source>
-<target xml:lang="pt">This changes how Game Studio displays particles while you work on the scene. You can play, pause, and stop the particle system. You can also reset the particle effect at set intervals, which is useful for previewing one-shot effects. The editor controls don't affect how particles are displayed at runtime.</target>
+<target xml:lang="pt">Isso muda como o Game Studio exibe partículas enquanto você trabalha na cena. Você pode jogar, pausar e parar o sistema de partículas. Você também pode redefinir o efeito de partícula em intervalos definidos, o que é útil para visualizar os efeitos de um tiro. Os controles do editor não afetam como as partículas são exibidas no tempo de execução.</target>
 </trans-unit>
 <trans-unit id="tu21" xml:space="preserve">
 <source xml:lang="en">Warm-up time</source>
-<target xml:lang="pt">Warm-up time</target>
+<target xml:lang="pt">Tempo de aquecimento</target>
 </trans-unit>
 <trans-unit id="tu22" xml:space="preserve">
 <source xml:lang="en">If you set the warm-up time to a value greater than 0, the particle appears as if it's already active when it appears. This value is in seconds. For example, if you set the warm-up time to 1, the particle effect appears as if it has already been active for 1 second when it appears. This is useful, for example, if you set a fire effect warm-up time to 0, the fire appears to ignite as soon as it's rendered. If you want the fire to appear as if it's already ignited when it's rendered, increase the warm-up time.</source>
-<target xml:lang="pt">If you set the warm-up time to a value greater than 0, the particle appears as if it's already active when it appears. This value is in seconds. For example, if you set the warm-up time to 1, the particle effect appears as if it has already been active for 1 second when it appears. This is useful, for example, if you set a fire effect warm-up time to 0, the fire appears to ignite as soon as it's rendered. If you want the fire to appear as if it's already ignited when it's rendered, increase the warm-up time.</target>
+<target xml:lang="pt">Se você definir o tempo de aquecimento para um valor maior que 0, a partícula aparece como se já estivesse ativa quando ela aparece. Este valor é em segundos. Por exemplo, se você definir o tempo de aquecimento para 1, o efeito de partícula aparece como se já estivesse ativo por 1 segundo quando ele aparece. Isto é útil, por exemplo, se você definir um efeito de fogo tempo de aquecimento para 0, o fogo parece inflamar assim que for renderizado. Se você quiser que o fogo apareça como se já estivesse ignido quando estiver renderizado, aumente o tempo de aquecimento.</target>
 </trans-unit>
 <trans-unit id="tu23" xml:space="preserve">
 <source xml:lang="en">Speed scale</source>
-<target xml:lang="pt">Speed scale</target>
+<target xml:lang="pt">Escala de velocidade</target>
 </trans-unit>
 <trans-unit id="tu24" xml:space="preserve">
 <source xml:lang="en">Controls the speed of the particle effect.</source>
-<target xml:lang="pt">Controls the speed of the particle effect.</target>
+<target xml:lang="pt">Controla a velocidade do efeito de partícula.</target>
 </trans-unit>
 <trans-unit id="tu25" xml:space="preserve">
 <source xml:lang="en">Culling AABB</source>
-<target xml:lang="pt">Culling AABB</target>
+<target xml:lang="pt">Culing AABB</target>
 </trans-unit>
 <trans-unit id="tu26" xml:space="preserve">
 <source xml:lang="en">This creates an axis-aligned bounding box (AABB) around the particle effect. If the bounding box isn't in the camera view, Stride doesn't render the particle effect. This is useful for culling and optimization. <g id="1">Rotated AABB</g> sets box shape in XYZ co-ordinates. <g id="2">Uniform AABB</g> creates a cube of the scale you specify (in <g id="3">world units</g>). To view the AABB in the Scene Editor, select <g id="4">Debug Draw</g>.</source>
-<target xml:lang="pt">This creates an axis-aligned bounding box (AABB) around the particle effect. If the bounding box isn't in the camera view, Stride doesn't render the particle effect. This is useful for culling and optimization. <g id="1">Rotated AABB</g> sets box shape in XYZ co-ordinates. <g id="2">Uniform AABB</g> creates a cube of the scale you specify (in <g id="3">world units</g>). To view the AABB in the Scene Editor, select <g id="4">Debug Draw</g>.</target>
+<target xml:lang="pt">Isso cria uma caixa de ligação alinhada ao eixo (AABB) em torno do efeito de partícula. Se a caixa de ligação não estiver na visualização da câmara, o Stride não produz o efeito de partícula. Isso é útil para a manipulação e otimização. <g id="1">Rotated AABB</g> define forma de caixa em coordenadas XYZ. <g id="2">Uniform AABB</g> cria um cubo da escala especificada (em unidades <g id="3">world</g>). Para visualizar o AABB no Editor de Cena, selecione <g id="4">Debug Draw</g>.</target>
 </trans-unit>
 <trans-unit id="tu27" xml:space="preserve">
 <source xml:lang="en">Emitters</source>
@@ -115,11 +115,11 @@
 </trans-unit>
 <trans-unit id="tu28" xml:space="preserve">
 <source xml:lang="en">The emitters the particle system contains. The emitters are updated and drawn in the order they appear in the list, and can be re-ordered. For more information, see <g id="1">Emitters</g>.</source>
-<target xml:lang="pt">The emitters the particle system contains. The emitters are updated and drawn in the order they appear in the list, and can be re-ordered. For more information, see <g id="1">Emitters</g>.</target>
+<target xml:lang="pt">Os emissores contém o sistema de partículas. Os emissores são atualizados e desenhados na ordem que aparecem na lista, e podem ser re-ordenados. Para mais informações, consulte <g id="1">Emitters</g>.</target>
 </trans-unit>
 <trans-unit id="tu29" xml:space="preserve">
 <source xml:lang="en">See also</source>
-<target xml:lang="pt">See also</target>
+<target xml:lang="pt">Ver também</target>
 </trans-unit>
 <trans-unit id="tu30" xml:space="preserve">
 <source xml:lang="en"><g id="1">Emitters</g></source>
@@ -127,11 +127,11 @@
 </trans-unit>
 <trans-unit id="tu31" xml:space="preserve">
 <source xml:lang="en"><g id="1">Shapes</g></source>
-<target xml:lang="pt"><g id="1">Shapes</g></target>
+<target xml:lang="pt"><g id="1">Formas</g></target>
 </trans-unit>
 <trans-unit id="tu32" xml:space="preserve">
 <source xml:lang="en"><g id="1">Materials</g></source>
-<target xml:lang="pt"><g id="1">Materials</g></target>
+<target xml:lang="pt"><g id="1">Materiais</g></target>
 </trans-unit>
 <trans-unit id="tu33" xml:space="preserve">
 <source xml:lang="en"><g id="1">Spawners</g></source>
@@ -139,11 +139,11 @@
 </trans-unit>
 <trans-unit id="tu34" xml:space="preserve">
 <source xml:lang="en"><g id="1">Initializers</g></source>
-<target xml:lang="pt"><g id="1">Initializers</g></target>
+<target xml:lang="pt"><g id="1">Iniciantes</g></target>
 </trans-unit>
 <trans-unit id="tu35" xml:space="preserve">
 <source xml:lang="en"><g id="1">Updaters</g></source>
-<target xml:lang="pt"><g id="1">Updaters</g></target>
+<target xml:lang="pt"><g id="1">Atualizações</g></target>
 </trans-unit>
 </body>
 </file>

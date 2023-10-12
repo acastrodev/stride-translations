@@ -1,21 +1,21 @@
 # UI Basics
 
-This first C# intermediate tutorial covers the basics of creating UI with Stride.
+Este é o primeiro O tutorial intermediário C# cobre os conceitos básicos de criação de interface do usuário com Stride.
 
-## Explanation
+## Explicação
 
-We will learn about the UI editor, accessing UI page elements and even how to setup UI entirely by code. The Stride editor comes with a UI editor which we can utilize to create UI pages. We can then add UI elements to these pages, like buttons and textfields.
+Vamos aprender sobre o editor de interface do usuário, acessando elementos de página de interface do usuário e até como configurar a interface do usuário inteiramente por código. O editor Stride vem com um editor de interface do usuário que podemos utilizar para criar páginas de interface do usuário. Podemos então adicionar elementos de interface do usuário a essas páginas, como botões e campos de texto.
 
-Those UI elements can be referenced in code, so that can set up events like `button-clicked` or `text-changed`.
+Esses elementos de IU podem ser referenciados em código, para que possam configurar eventos como `button-clicked` ou `text-changed`.
 
-> [!Video https://www.youtube.com/embed/rB5duwfs1mU]
+> [!Vídeo https://www.youtube.com/embed/rB5duwfs1mU]
 
-> [!Video https://www.youtube.com/embed/NnnbHn9LQUU]
+> [!Vídeo https://www.youtube.com/embed/NnnbHn9LQU]
 
-## Stride editor UI pages
-The code below will look for a Page component that has been added to the current entity. On that page we search for UI elements like buttons and textfields. We than tell those UI elements what happens when we click on them, or that something needs to be done when a text value changes.
+## Stride editor UI páginas
+O código abaixo procurará um componente Page que foi adicionado à entidade atual. Nessa página buscamos elementos de interface do usuário como botões e campos de texto. Nós do que dizer a esses elementos de interface do usuário o que acontece quando clicamos neles, ou que algo precisa ser feito quando um valor de texto muda.
 [!code-csharp[editorpages](../../../../stride/samples/Tutorials/CSharpIntermediate/CSharpIntermediate/CSharpIntermediate.Game/01_UI-Basics/UIByEditor.cs)]
 
-## UI pages made entirely by code
-This script will create everything from scratch: a UI page, a stackpanel, a button, a textfield and the interactive logic behind it.
+## Páginas UI feitas inteiramente por código
+Este script irá criar tudo a partir do zero: uma página UI, um stackpanel, um botão, um campo de texto e a lógica interativa por trás dele.
 [!code-csharp[uibycode](../../../../stride/samples/Tutorials/CSharpIntermediate/CSharpIntermediate/CSharpIntermediate.Game/01_UI-Basics/UIByCode.cs)]

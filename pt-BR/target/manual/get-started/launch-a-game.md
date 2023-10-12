@@ -1,78 +1,78 @@
-# Launch a game
+# Lançar um jogo
 
-<span class="badge text-bg-primary">Beginner</span>
+<x1\/>Introdução<x2\/>
 
-This page explains how to launch your game using Game Studio or Visual Studio.
+Esta página explica como lançar seu jogo usando Game Studio ou Visual Studio.
 
-## Launch a game from Game Studio
+## Lançar um jogo de Game Studio
 
-> [!Note]
-> Game Studio can't launch games for the Windows Store or UWP (Universal Windows Platform) platforms. To launch a game for those platforms, use Visual Studio (see below).
+> <x1\/>!Note<x2\/>
+> Game Studio não pode lançar jogos para as plataformas Windows Store ou UWP (Universal Windows Platform). Para lançar um jogo para essas plataformas, use Visual Studio (veja abaixo).
 
-1. In the **toolbar**, select your target platform.
+1. No **toolbar**, selecione sua plataforma de destino.
 
-   ![Platform selection](media/launch-your-game-game-studio-profiles.png)
+   <x1\/> Seleção de formulários <x2\/>
 
-   > [!Note]
-   > You can only select platforms you selected in the **Create a new game** dialog when you created the project. To add additional platforms to the project, see [Add or remove a platform](../platforms/add-or-remove-a-platform.md).
+   > <x1\/>!Note<x2\/>
+   > Você só pode selecionar plataformas selecionadas no **Criar um novo jogo ** diálogo quando você criou o projeto. Para adicionar plataformas adicionais ao projeto, consulte [Adicionar ou remover uma plataforma](../platforms/add-or-remove-a-platform.md).
 
-2. To run the game, click ![Play icon](media/launch-your-game-play-icon.png) in the toolbar or press **F5**.
+2. Para executar o jogo, clique em <x1\/>Play icon<x2\/> na barra de ferramentas ou pressione **F5**.
 
-   ![Game Studio play button](media/game-studio-toolbar-build-button.png)
+   <x1\/>Game Studio jogar botão<x2\/>
 
-The **Output window** shows the build progress.
+O ** janela de saída** mostra o progresso de compilação.
 
-![Output window](media/output-window.png)
+<x1\/> Janela de saída <x2\/>
 
-When the build is complete, your game starts on the selected platform.
+Quando a compilação estiver concluída, seu jogo começa na plataforma selecionada.
 
-## Launch a game from Visual Studio
+## Lançar um jogo de Visual Studio
 
-1. In Game Studio, in the toolbar, click ![Open in IDE](media/launch-your-game-ide-icon.png) (**Open in IDE**) to launch Visual Studio.
+1. No Game Studio, na barra de ferramentas, clique em <x1\/>Open in IDE<x2\/> (**Open in IDE**) para lançar Visual Studio.
 
-2. In the Visual Studio toolbar, set the appropriate project as the startup project.
+2. Na barra de ferramentas do Visual Studio, defina o projeto apropriado como o projeto de inicialização.
 
-   ![Select build profile in Visual Studio](media/launch-your-game-visual-studio-profiles.png)
+   <x1\/>Selecione o perfil de compilação no Visual Studio<x2\/>
 
-   The startup project configuration is updated automatically.
+   A configuração do projeto de inicialização é atualizada automaticamente.
 
-   > [!TIP]
-   > You can see your projects in the Solution Explorer on the right. The project filename extensions identify the platform (eg *.Android*, *.iOS*, etc).
+   > <x1\/>!TIP<x2\/>
+   > Você pode ver seus projetos no Solution Explorer à direita. As extensões de nome de arquivo do projeto identificam a plataforma (por exemplo *.Android*, *.iOS*, etc).
 
-3. Check that the configuration and platform properly matches what you are expected.
+3. Verifique se a configuração e a plataforma correspondem corretamente ao que você espera.
 
 4. 
-   * To start the game without debugging, press **Ctrl + F5**.
+   * Para iniciar o jogo sem depuração, pressione **Ctrl + F5**.
 
-   * To start the game with debugging, click **Start** or press **F5**.
+   * Para iniciar o jogo com depuração, clique em **Start** ou pressione **F5**.
 
-      ![Visual Studio Start button](media/visual-studio-start-button.png)
+      <x1\/>Visual Studio Iniciar botão<x2\/>
 
-## Remove borders
+## Remover fronteiras
 
-By default, the game runs with window borders.
+Por padrão, o jogo é executado com bordas de janela.
 
-| With borders | Without borders |
+| Com fronteiras | Sem fronteiras |
 |---------------------------|-----------------
-| ![With borders](media/with-borders.jpg) | ![Without borders](media/without-borders.jpg) |
+| <x1\/> Com fronteiras<x2\/> | <x1\/> Sem fronteiras<x2\/> |
 
-To run the game without borders, use:
+Para executar o jogo sem fronteiras, use:
 
 ```cs
 Game.Window.IsBorderLess = true;
 ```
 
-For example:
+Por exemplo:
 
 ```cs
-using Stride.Engine;
+usando Stride. Motor;
 
 namespace MyGame
-{
-    public class MyScript : StartupScript
-    {
-        public override void Start()
-        {
+(
+    classe pública MyScript : StartupScript
+    (
+        anula de sobreposição pública Start()
+        (
             base.Start();
             Game.Window.IsBorderLess = true;
         }

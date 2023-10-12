@@ -1,181 +1,181 @@
 {
-    "filename": "tutorials\\csharpbeginner\\linear-interpolation.md.xlf",
-    "files": [
-        {
-            "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpbeginner\/linear-interpolation.md": [
-                [
-                    "Linear Interpolation",
-                    "",
-                    "Linear Interpolation",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpbeginner\/linear-interpolation.md",
-                    {
-                        "id": "tu1"
-                    }
-                ],
-                [
-                    "You can find this sample in the tutorial project:",
-                    "",
-                    "You can find this sample in the tutorial project:",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpbeginner\/linear-interpolation.md",
-                    {
-                        "id": "tu2"
-                    }
-                ],
-                [
-                    "<g1>Menu<\/g1> &rarr; <g2>Linear Iterpolation<\/g2>",
-                    "",
-                    " <g1>Menu<\/g1> &rarr; <g2>Linear Iterpolation<\/g2>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpbeginner\/linear-interpolation.md",
-                    {
-                        "id": "tu2"
-                    }
-                ],
-                [
-                    "Explanation",
-                    "",
-                    "Explanation",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpbeginner\/linear-interpolation.md",
-                    {
-                        "id": "tu3"
-                    }
-                ],
-                [
-                    "This C# Beginner tutorial covers linear interpolation which is often shortened to 'Lerp'.",
-                    "",
-                    "This C# Beginner tutorial covers linear interpolation which is often shortened to 'Lerp'.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpbeginner\/linear-interpolation.md",
-                    {
-                        "id": "tu4"
-                    }
-                ],
-                [
-                    "Sometimes you want to gradually change a value from a start value to a target value.",
-                    "",
-                    "Sometimes you want to gradually change a value from a start value to a target value.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpbeginner\/linear-interpolation.md",
-                    {
-                        "id": "tu5"
-                    }
-                ],
-                [
-                    "This process is called linear interpolation.",
-                    "",
-                    " This process is called linear interpolation.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpbeginner\/linear-interpolation.md",
-                    {
-                        "id": "tu5"
-                    }
-                ],
-                [
-                    "Stride exposes several Lerp functions for various types.",
-                    "",
-                    "Stride exposes several Lerp functions for various types.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpbeginner\/linear-interpolation.md",
-                    {
-                        "id": "tu6"
-                    }
-                ],
-                [
-                    "Among them are <g1>Vector2<\/g1>, <g2>Vector3<\/g2> and <g3>Vector4<\/g3>.",
-                    "",
-                    " Among them are <g1>Vector2<\/g1>, <g2>Vector3<\/g2> and <g3>Vector4<\/g3>.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpbeginner\/linear-interpolation.md",
-                    {
-                        "id": "tu6"
-                    }
-                ],
-                [
-                    "<x1\/>Linear interpolation<x2\/>",
-                    "",
-                    "<x1\/>Linear interpolation<x2\/>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpbeginner\/linear-interpolation.md",
-                    {
-                        "id": "tu7"
-                    }
-                ],
-                [
-                    "<x1\/>!Video https:\/\/www.youtube.com\/embed\/jBXGvLBwXqI<x2\/>",
-                    "",
-                    "<x1\/>!Video https:\/\/www.youtube.com\/embed\/jBXGvLBwXqI<x2\/>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpbeginner\/linear-interpolation.md",
-                    {
-                        "id": "tu8"
-                    }
-                ],
-                [
-                    "Code",
-                    "",
-                    "Code",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpbeginner\/linear-interpolation.md",
-                    {
-                        "id": "tu9"
-                    }
-                ],
-                [
-                    "The example consists of a simple timer that resets after a couple seconds.",
-                    "",
-                    "The example consists of a simple timer that resets after a couple seconds.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpbeginner\/linear-interpolation.md",
-                    {
-                        "id": "tu10"
-                    }
-                ],
-                [
-                    "When the timer starts, a start position and a randomly generated target position are stored.",
-                    "",
-                    " When the timer starts, a start position and a randomly generated target position are stored.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpbeginner\/linear-interpolation.md",
-                    {
-                        "id": "tu10"
-                    }
-                ],
-                [
-                    "A box will move between these two positions.",
-                    "",
-                    " A box will move between these two positions.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpbeginner\/linear-interpolation.md",
-                    {
-                        "id": "tu10"
-                    }
-                ],
-                [
-                    "Every frame a 'Lerp value' is calculated.",
-                    "",
-                    "Every frame a 'Lerp value' is calculated.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpbeginner\/linear-interpolation.md",
-                    {
-                        "id": "tu11"
-                    }
-                ],
-                [
-                    "The lerp value is used to determined what the current position of a moving box should be.",
-                    "",
-                    " The lerp value is used to determined what the current position of a moving box should be.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpbeginner\/linear-interpolation.md",
-                    {
-                        "id": "tu11"
-                    }
-                ],
-                [
-                    "Once the timer is done, the current position will become the start position and a new target position is again randomly generated.",
-                    "",
-                    " Once the timer is done, the current position will become the start position and a new target position is again randomly generated.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpbeginner\/linear-interpolation.md",
-                    {
-                        "id": "tu11"
-                    }
-                ],
-                [
-                    "[!code-csharp<g1>Lerp<\/g1>]",
-                    "",
-                    "[!code-csharp<g1>Lerp<\/g1>]",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpbeginner\/linear-interpolation.md",
-                    {
-                        "id": "tu12"
-                    }
-                ]
-            ]
-        }
-    ],
-    "seg_enabled": false
+  "filename": "tutorials\\csharpbeginner\\linear-interpolation.md.xlf",
+  "files": [
+    {
+      "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpbeginner\/linear-interpolation.md": [
+        [
+          "Linear Interpolation",
+          "Interpolação linear",
+          "Linear Interpolation",
+          "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpbeginner\/linear-interpolation.md",
+          {
+            "id": "tu1"
+          }
+        ],
+        [
+          "You can find this sample in the tutorial project:",
+          "Você pode encontrar esta amostra no projeto tutorial:",
+          "You can find this sample in the tutorial project:",
+          "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpbeginner\/linear-interpolation.md",
+          {
+            "id": "tu2"
+          }
+        ],
+        [
+          "<g1>Menu<\/g1> &rarr; <g2>Linear Iterpolation<\/g2>",
+          "<g1>Menu<\/g1> → <g2>Integração linear<\/g2>",
+          " <g1>Menu<\/g1> &rarr; <g2>Linear Iterpolation<\/g2>",
+          "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpbeginner\/linear-interpolation.md",
+          {
+            "id": "tu2"
+          }
+        ],
+        [
+          "Explanation",
+          "Explicação",
+          "Explanation",
+          "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpbeginner\/linear-interpolation.md",
+          {
+            "id": "tu3"
+          }
+        ],
+        [
+          "This C# Beginner tutorial covers linear interpolation which is often shortened to 'Lerp'.",
+          "Este tutorial C# Beginner cobre a interpolação linear que é frequentemente encurtada para \"Lerp\".",
+          "This C# Beginner tutorial covers linear interpolation which is often shortened to 'Lerp'.",
+          "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpbeginner\/linear-interpolation.md",
+          {
+            "id": "tu4"
+          }
+        ],
+        [
+          "Sometimes you want to gradually change a value from a start value to a target value.",
+          "Às vezes você quer mudar gradualmente um valor de início para um valor de destino.",
+          "Sometimes you want to gradually change a value from a start value to a target value.",
+          "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpbeginner\/linear-interpolation.md",
+          {
+            "id": "tu5"
+          }
+        ],
+        [
+          "This process is called linear interpolation.",
+          "Este processo é chamado de interpolação linear.",
+          " This process is called linear interpolation.",
+          "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpbeginner\/linear-interpolation.md",
+          {
+            "id": "tu5"
+          }
+        ],
+        [
+          "Stride exposes several Lerp functions for various types.",
+          "Stride expõe vários Lerp funciona para vários tipos.",
+          "Stride exposes several Lerp functions for various types.",
+          "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpbeginner\/linear-interpolation.md",
+          {
+            "id": "tu6"
+          }
+        ],
+        [
+          "Among them are <g1>Vector2<\/g1>, <g2>Vector3<\/g2> and <g3>Vector4<\/g3>.",
+          "Entre eles estão <g1>Vector2<\/g1>, <g2>Vector3<\/g2> e <g3>Vector4<\/g3>.",
+          " Among them are <g1>Vector2<\/g1>, <g2>Vector3<\/g2> and <g3>Vector4<\/g3>.",
+          "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpbeginner\/linear-interpolation.md",
+          {
+            "id": "tu6"
+          }
+        ],
+        [
+          "<x1\/>Linear interpolation<x2\/>",
+          "<x1\/> Interpolação linear <x2\/>",
+          "<x1\/>Linear interpolation<x2\/>",
+          "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpbeginner\/linear-interpolation.md",
+          {
+            "id": "tu7"
+          }
+        ],
+        [
+          "<x1\/>!Video https:\/\/www.youtube.com\/embed\/jBXGvLBwXqI<x2\/>",
+          "<x1\/>!Vídeo https:\/\/www.youtube.com\/embed\/jBXGvLBwXqI<x2\/>",
+          "<x1\/>!Video https:\/\/www.youtube.com\/embed\/jBXGvLBwXqI<x2\/>",
+          "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpbeginner\/linear-interpolation.md",
+          {
+            "id": "tu8"
+          }
+        ],
+        [
+          "Code",
+          "Código",
+          "Code",
+          "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpbeginner\/linear-interpolation.md",
+          {
+            "id": "tu9"
+          }
+        ],
+        [
+          "The example consists of a simple timer that resets after a couple seconds.",
+          "O exemplo consiste em um temporizador simples que reinicia depois de alguns segundos.",
+          "The example consists of a simple timer that resets after a couple seconds.",
+          "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpbeginner\/linear-interpolation.md",
+          {
+            "id": "tu10"
+          }
+        ],
+        [
+          "When the timer starts, a start position and a randomly generated target position are stored.",
+          "Quando o temporizador começa, uma posição de início e uma posição de destino gerada aleatoriamente são armazenados.",
+          " When the timer starts, a start position and a randomly generated target position are stored.",
+          "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpbeginner\/linear-interpolation.md",
+          {
+            "id": "tu10"
+          }
+        ],
+        [
+          "A box will move between these two positions.",
+          "Uma caixa vai se mover entre estas duas posições.",
+          " A box will move between these two positions.",
+          "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpbeginner\/linear-interpolation.md",
+          {
+            "id": "tu10"
+          }
+        ],
+        [
+          "Every frame a 'Lerp value' is calculated.",
+          "Cada quadro um \"valor de Lerp\" é calculado.",
+          "Every frame a 'Lerp value' is calculated.",
+          "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpbeginner\/linear-interpolation.md",
+          {
+            "id": "tu11"
+          }
+        ],
+        [
+          "The lerp value is used to determined what the current position of a moving box should be.",
+          "O valor de leiturap é usado para determinar qual deve ser a posição atual de uma caixa móvel.",
+          " The lerp value is used to determined what the current position of a moving box should be.",
+          "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpbeginner\/linear-interpolation.md",
+          {
+            "id": "tu11"
+          }
+        ],
+        [
+          "Once the timer is done, the current position will become the start position and a new target position is again randomly generated.",
+          "Uma vez que o temporizador é feito, a posição atual vai se tornar a posição de início e uma nova posição de destino é novamente gerada aleatoriamente.",
+          " Once the timer is done, the current position will become the start position and a new target position is again randomly generated.",
+          "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpbeginner\/linear-interpolation.md",
+          {
+            "id": "tu11"
+          }
+        ],
+        [
+          "[!code-csharp<g1>Lerp<\/g1>]",
+          "[!code-csharp<g1>Lerp<\/g1>]",
+          "[!code-csharp<g1>Lerp<\/g1>]",
+          "\/D:\/repos\/stride-translations\/pt-BR\/source\/tutorials\/csharpbeginner\/linear-interpolation.md",
+          {
+            "id": "tu12"
+          }
+        ]
+      ]
+    }
+  ],
+  "seg_enabled": false
 }

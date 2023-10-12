@@ -1,33 +1,33 @@
-# Outline
+# Linha de produção
 
-<span class="badge text-bg-primary">Intermediate</span>
-<span class="badge text-bg-success">Artist</span>
+<x1\/> Intermediário <x2\/>
+<x3\/>Artista <x4\/>
 
-The **outline** effect applies a cartoon-like outline around 3d models rendered in the scene.
+O efeito **outline** aplica um esboço semelhante a desenhos animados em torno de modelos 3d renderizados na cena.
 
-![media/outline-effect-1.png](media/outline-effect-1.png)
+<x1\/>media\/outline-effect-1.png<x2\/>
 
-Outline is applied before anti-aliasing.
+O contorno é aplicado antes de anti-aliasing.
 
-## Properties
+## Propriedades
 
-![media/outline-effect-2.png](media/outline-effect-2.png)
+<x1\/>media\/outline-effect-2.png<x2\/>
 
-| Property | Description |
+| Propriedade | Descrição |
 | --------------------- | ---- 
-| Normal Weight | Weight applied to the normal buffer. |
-| Depth Weight | Weight applied to the depth buffer. |
-| Normal Near Cutoff | Distance from the camera in which outlines are no longer rendered. |
+| Peso normal | Peso aplicado ao buffer normal. |
+| Peso de profundidade | Peso aplicado ao amortecedor de profundidade. |
+| Normal Near Cutoff | Distância da câmera em que os esboços não são mais renderizados. |
 
-## See also
+## Ver também
 
 * [Anti-aliasing](anti-aliasing.md)
-* [Fog](fog.md)
-* [Outline](outline.md)
-* [Bloom](bloom.md)
-* [Bright filter](bright-filter.md)
-* [Color transforms](color-transforms/index.md)
-* [Depth of field](depth-of-field.md)
-* [Lens flare](lens-flare.md)
-* [Light streaks](light-streaks.md)
-* [Local reflections](local-reflections.md)
+* [Fogão](fog.md)
+* [Linha de produção](outline.md)
+* [Floresce](bloom.md)
+* [Filtro brilhante](bright-filter.md)
+* [Transformações de cor](color-transforms/index.md)
+* [Profundidade de campo](depth-of-field.md)
+* [Flare de lente](lens-flare.md)
+* [Estrefas de luz](light-streaks.md)
+* [Reflexões locais](local-reflections.md)

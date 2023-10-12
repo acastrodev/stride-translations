@@ -1,312 +1,312 @@
-# Xenko 2.1 release notes
+# Notas de lançamento do Xenko 2.1
 
-12 September 2017
+12 de setembro de 2017
 
-## Highlights
+## Destaques
 
-### Local reflections
+### Reflexões locais
 
-Xenko 2.1 introduces **local reflections**. When you enable this post effect, the scene is reflected in glossy materials.
+Xenko 2.1 introduz reflexões **local**. Quando você ativa este efeito pós, a cena se reflete em materiais brilhantes.
 
-![Local reflections](media/ReleaseNotes-2.1/local-reflections.jpg)
+![ Reflexões locais](media/ReleaseNotes-2.1/local-reflections.jpg)
 
-You can enable and customize local reflections in the graphics compositor on the **post effects** properties.
+Você pode ativar e personalizar reflexões locais no compositor gráfico sobre as propriedades **post effects**.
 
-![Enable local reflections](media/ReleaseNotes-2.1/enable-local-reflections.png)
+![ Habilitar reflexões locais](media/ReleaseNotes-2.1/enable-local-reflections.png)
 
-For details, see [Local reflections](../manual/graphics/post-effects/local-reflections.md).
+Para detalhes, veja [Reflexões locais](../manual/graphics/post-effects/local-reflections.md).
 
-### Clear coat shading
+### Sombreamento de casaco claro
 
-Xenko 2.1 includes a **clear-coat material** template that uses physically-based rendering to simulate vehicle paint.
+Xenko 2.1 inclui um modelo **clear-coat material** que usa renderização física para simular a pintura do veículo.
 
-![Clear coat](media/ReleaseNotes-2.1/clear-coat-2.jpg)
+![ Revestimento da orelha](media/ReleaseNotes-2.1/clear-coat-2.jpg)
 
-Clear-coat shading has several advantages over creating the effect manually with material layers:
+Sombreamento de capa clara tem várias vantagens sobre a criação do efeito manualmente com camadas de material:
 
-* layers are blended based on distance
-* increased performance
-* improved visualization
+* camadas são misturadas com base na distância
+* aumento do desempenho
+* visualização melhorada
 
-You can add a predefined **clear coat** material from the **Asset view** under **Add asset > Material**.
+Você pode adicionar um material **clear coat** do **Asset view** sob **Add asset > Material**.
 
-![Add clear coat](media/ReleaseNotes-2.1/add-clear-coat.png)
+![ Adicionar casaco claro](media/ReleaseNotes-2.1/add-clear-coat.png)
 
-For details, see [Clear coat shading](../manual/graphics/materials/clear-coat-shading.md).
+Para detalhes, veja [Clear coat shading](../manual/graphics/materials/clear-coat-shading.md).
 
-### Thin glass materials
+### Materiais de vidro finos
 
-You can now render thin glass materials such as windshields. The diffuse color controls the tint of the glass and how much light is blocked (darker colors block more light).
+Agora você pode renderizar materiais de vidro finos, como pára-brisas. A cor difusa controla a tonalidade do vidro e quanto a luz é bloqueada (cor escura bloqueia mais luz).
 
 ![Glass materials](media/ReleaseNotes-2.1/glass-materials.webp)
 
-You can add a predefined **Glass** material from the **Asset view** under **Add asset > Material**.
+Você pode adicionar um material **Glass** do **Asset view** sob **Add asset > Material**.
 
-![Select thin glass material](media/ReleaseNotes-2.1/select-thin-glass-material.png)
+![Selecione material de vidro fino](media/ReleaseNotes-2.1/select-thin-glass-material.png)
 
-### Improved light shafts
+### Eixos de luz melhorados
 
-You can now use **light shafts** with any kind of light that casts shadows (ie point lights, directional lights, or spot lights). You can also use them with multiple shadow cascades.
+Agora você pode usar eixos **light** com qualquer tipo de luz que lança sombras (ou seja, luzes de ponto, luzes direcionais ou luzes de ponto). Você também pode usá-los com várias cascatas de sombra.
 
-Additionally, Game Studio now displays light shaft bounding volumes in the scene editor, so you can easily see the areas where light shafts are created. To show or hide navigation light shaft bounding volumes, in the **scene editor toolbar**, open the **gizmo options** menu and use the **Light shaft bounding volumes** checkbox.
+Além disso, Game Studio agora exibe volumes de ligação de eixo de luz no editor de cena, para que você possa facilmente ver as áreas onde os eixos de luz são criados. Para mostrar ou ocultar volumes de ligação do eixo de luz de navegação, na barra de ferramentas do editor **scene**, abra o menu **gizmo opções** e use a caixa de seleção **Light shaft limiting volumes**.
 
-![Show light shaft bounding volumes](media/ReleaseNotes-2.1/show-or-hide-light-shaft-bounding-volume.png)
+![Mostrar volumes limitados de eixo de luz](media/ReleaseNotes-2.1/show-or-hide-light-shaft-bounding-volume.png)
 
-The `LightShaftComponent` settings have been simplified and now have settings to control quality and performance.
+As configurações `LightShaftComponent` foram simplificadas e agora têm configurações para controlar a qualidade e o desempenho.
 
-For details, see [Light shafts](../manual/graphics/lights-and-shadows/light-shafts.md).
+Para obter detalhes, consulte [ eixos de luz](../manual/graphics/lights-and-shadows/light-shafts.md).
 
-### Texture streaming
+### Transmissão de texto
 
-Xenko now supports streaming for textures. This significantly decreases the time it takes to load a game or scene, uses less memory, and makes your game easier to scale.
+Xenko agora suporta streaming para texturas. Isso diminui significativamente o tempo necessário para carregar um jogo ou cena, usa menos memória e torna o seu jogo mais fácil de escalar.
 
-Streaming is enabled for textures by default. You can find the option in the texture properties under **Format**.
+Streaming é ativado para texturas por padrão. Você pode encontrar a opção nas propriedades de textura em **Format**.
 
-![Enable streaming](media/ReleaseNotes-2.1/enable-streaming.png)
+![ Ativar streaming](media/ReleaseNotes-2.1/enable-streaming.png)
 
-You can also set the global **Streaming** settings in **Game settings**.
+Você também pode definir as configurações globais **Streaming** em configurações **Game**.
 
 ![Streaming settings](media/ReleaseNotes-2.1/streaming-settings.png)
 
-For details, see [Streaming](../manual/graphics/textures/streaming.md).
+Para detalhes, veja [Streaming](../manual/graphics/textures/streaming.md).
 
-### Render masks
+### Render máscaras
 
-You can now set which render groups a camera renders under **Graphics Compositor > Entry points > Render masks**. For example, you can have a model be visible to Camera A but invisible to Camera B.
+Agora você pode definir quais grupos renderizam uma câmera renderiza sob **Graphics Compositor > Pontos de entrada > Render máscaras**. Por exemplo, você pode ter um modelo ser visível para a câmera A, mas invisível para a câmera B.
 
 ![Render mask](media/ReleaseNotes-2.1/change-render-mask.png)
 
-For details, see [Render groups and masks](../manual/graphics/graphics-compositor/render-groups-and-masks.md).
+Para detalhes, veja [Render grupos e máscaras](../manual/graphics/graphics-compositor/render-groups-and-masks.md).
 
-### Improved profiler
+### Perfil melhorado
 
-The **Game Profiler** script now displays more information and is easier to use.
+O script **Game Profiler** agora exibe mais informações e é mais fácil de usar.
 
-![Profiler at runtime](media/ReleaseNotes-2.1/profiling-profiler-at-runtime.jpg)
+![ Perfil em tempo de execução](media/ReleaseNotes-2.1/profiling-profiler-at-runtime.jpg)
 
-You can now:
+Agora você pode:
 
-* profile GPU information
-* switch between CPU, GPU, and FPS-only results with **F1**
-* sort the result pages by **Name** or **Time** with **F2**
-* change how frequently the profiler gets and displays new results with **- / +**
-* jump to a results page with the **number keys**, or move forward and backwards with **F3** and **F4**
-* set parameters in Game Studio:
+* perfil GPU informação
+* alternar entre CPU, GPU e FPS apenas resulta com **F1**
+* classificar as páginas de resultados por **Nome** ou **Time** com **F2**
+* mudar com que frequência o profiler recebe e exibe novos resultados com **- / +**
+* saltar para uma página de resultados com as teclas **number**, ou mover para a frente e para trás com **F3** e **F4**
+* definir parâmetros no Game Studio:
 
    ![Profiler properties](media/ReleaseNotes-2.1/profiler-properties.png)
 
-For details, see [Profiling](../manual/troubleshooting/profiling.md).
+Para detalhes, veja [Profiling](../manual/troubleshooting/profiling.md).
 
-### Debug text
+### Texto de depuração
 
-You can now display debug text at runtime. For more information, see [Debug text](../manual/troubleshooting/debug-text.md).
+Agora você pode exibir o texto de depuração no tempo de execução. Para obter mais informações, consulte [Debug text](../manual/troubleshooting/debug-text.md).
 
 ![Debug text](media/ReleaseNotes-2.1/my-debug-text.jpg)
 
-### Rewritten input system
+### Sistema de entrada reescrito
 
-The input system has been rewritten to track different input devices and allow for better extensibility.
+O sistema de entrada foi reescrito para rastrear diferentes dispositivos de entrada e permitir uma melhor extensibilidade.
 
-* Allows detection of added/removed devices through events on the InputManager
-* New device interfaces such as `IMouseDevice`, `IKeyboardDevice`, `IGameController`
-* High-level `IGamePadDevice` replaces the gamepad functionality, with support for XInput
-* Lower-level `IGameControllerDevice` allows access to numbered buttons/axes
-* Automatic detection of plugged-in/removed controllers
-* Support for different keyboard layouts and IME for text input
-* Access to resolution and absolute coordinates for mouse/pointer devices
-* `KeyEvent` now has a `RepeatCount` member, indicating how many times the key has been repeated while being held down
+* Permite a detecção de dispositivos adicionados/removed através de eventos no InputManager
+* Novas interfaces de dispositivo, como `IMouseDevice`, `IKeyboardDevice`, `IGameController`
+* Alto nível `IGamePadDevice` substitui a funcionalidade do gamepad, com suporte para XInput
+* Nível inferior `IGameControllerDevice` permite o acesso a botões / eixos numerados
+* Detecção automática de controladores plugados/removed
+* Suporte para diferentes layouts de teclado e IME para entrada de texto
+* Acesso à resolução e coordenadas absolutas para dispositivos de mouse/pointer
+* `KeyEvent` agora tem um membro `RepeatCount`, indicando quantas vezes a chave foi repetida ao ser mantida
 
-For details, see [Input](../manual/input/index.md).
+Para obter detalhes, consulte [Input](../manual/input/index.md).
 
-### Improved Direct3D 12 support
+### Melhor suporte Direct3D 12
 
-To support graphics functionalities on every platform, we've implemented missing features for the DirectX 12 rendering backend:
+Para apoiar funcionalidades gráficas em cada plataforma, implementamos recursos ausentes para o backend de renderização DirectX 12:
 
-* compute and tessellation shaders
-* unordered access views for textures and buffers
-* structured buffers
+* computa e tessellation shaders
+* vistas de acesso não ordenada para texturas e buffers
+* buffers estruturados
 
-For more details, see the **Changelog** below.
+Para mais detalhes, consulte o **Changelog** abaixo.
 
-### Improved environment fresnel
+### Melhoria do ambiente fresnel
 
-Fresnel describes how light is reflected depending on the angle the material is viewed from. Typically, high angles are more reflective.
+Fresnel descreve como a luz é refletida dependendo do ângulo do material é visto. Tipicamente, ângulos altos são mais reflexivos.
 
-Previously, Xenko used an imprecise polynomial approximation to compute the fresnel for environment lighting (such as cubemaps), resulting in a bigger-than-expected white outline. Xenko now defaults to a precomputed BRDF environment lookup texture that matches our default lighting equations (GGX Schlick). This produces much more accurate rendering.
+Anteriormente, Xenko usou uma aproximação polinomial imprecisa para computar o fresnel para iluminação ambiente (como cubemaps), resultando em um contorno branco maior do que esperado. Xenko agora padrão para uma textura de pesquisa ambiente BRDF pré-computada que combina com nossas equações de iluminação padrão (GGX Schlick). Isso produz renderização muito mais precisa.
 
-### Japanese documentation
+### Documentação japonesa
 
-The documentation is now available in Japanese. To switch languages, use the **Language** button in the top-right of the documentation site.
+A documentação está agora disponível em japonês. Para alternar idiomas, use o botão **Language** no canto superior direito do site de documentação.
 
 ![Switch language](media/ReleaseNotes-2.1/switch-language.png)
 
-## Breaking changes
+## Alterações de ruptura
 
-### Input system
+### Sistema de entrada
 
-* Renamed `PointerState` to `PointerEventType`
-* Changed the members of `PointerEventType`:
-   * `Down` has been renamed to `Pressed`
-   * `Move` has been renamed to `Moved`
-   * `Up` has been renamed to `Released`
-   * `Cancel` has been renamed to `Canceled`
-   * `Out` has been removed; use `Canceled` instead
+* Renamed `PointerState` para `PointerEventType`
+* Alterou os membros de `PointerEventType`:
+   * `Down` foi renomeado para `Pressed`
+   * `Move` foi renomeado para `Moved`
+   * `Up` foi renomeado para `Released`
+   * `Cancel` foi renomeado para `Cancelado`
+   * `Out` foi removido; use `Cancelado` em vez disso
 * Renamed `InputManager.ActivatedGestures` to `InputManager.Gestures`
-* Changed checking support for sensors using `Sensor.IsSupported` to `InputManager.Sensor != null` (where `Sensor` is the name of the sensor you're checking)
-* The `HasDown/Pressed/ReleasedMouseButtons()` functions on the `InputManager` are now properties
-* Removed `GetGamePad()`; use `IGamePadDevice.State` to acquire a gamepad state
-   > To obtain a gamepad, use `InputManager.GamePads`, `InputManager.GetGamePadByIndex(index)` or use the `InputManager.DeviceAdded/Removed` events
-* Removed `GamePadState.IsConnected`; use the `InputManager.DeviceAdded/Removed` events or check the value returned by `InputManager.GetGamePadByIndex(index) != null`
-* Moved `IsPadButtonDown/Pressed/Released()` to the `IGamePadDevice` as `IGamePadDevice.IsButtonDown/Pressed/Released()`
-* Moved the `SetGamePadVibration()` function to the `IGamePadDevice`
-* Locking the mouse with `InputManager.LockMousePosition()` no longer automatically hides the cursor; use `IGame.IsMouseVisible` for this
-* Removed `PointerEvent.PointerType`; use `PointerEvent.Device is IMouseDevice` to check if the event came from a mouse
-* Removed `PointerEvent.IsPrimary`
-* Renamed `PointerId` on `PointerEvent` to `Id`
-* Renamed `State` on `PointerEvent` to `EventType` and its type to `PointerEventType`
-* Removed `KeyEvent.Type`; to check if this was a pressed or released event, use the boolean `KeyEvent.IsDown`
-* `MouseWheelDelta` is now `-1` or `1` per scroll unit instead of `-120` or `120`
-* Removed `MultiTouchEnabled` on the `InputManager`; multi-touch is always enabled
+* Suporte de verificação alterado para sensores usando `Sensor.IsSupported` para `InputManager.Sensor != null` (onde `Sensor` é o nome do sensor que você está verificando)
+* As funções `HasDown/Pressed/ReleasedMouseButtons()` nas funções `InputManager` são agora propriedades
+* Remover `GetGamePad()`; use `IGamePadDevice.State` para adquirir um estado de gamepad
+   > Para obter um gamepad, use `InputManager.GamePads`, `InputManager.GetGamePadByIndex(index)` ou use o `InputManager. Eventos do DeviceAdd/Removed`
+* Removedo `GamePadState.IsConnected`; use o `InputManager. DeviceAdded/Removed` eventos ou verificar o valor retornado por `InputManager.GetGamePadByIndex(index) != null`
+* Movedo `IsPadButtonDown/Pressed/Released()` para o `IGamePadDevice` como `IGamePadDevice.IsButtonDown/Pressed/Released()`
+* Moveu a função `SetGamePadVibration()` para a função `IGamePadDevice`
+* Bloquear o mouse com `InputManager.LockMousePosition()` não esconde mais automaticamente o cursor; use `IGame.IsMouseVisible` para este
+* Removedo `PointerEvent.PointerType`; use `Pointer Event.Device é IMouseDevice` para verificar se o evento veio de um mouse
+* Remover `PointerEvent.IsPrimary`
+* Renomeado `PointerId` em `PointerEvent` para `Id`
+* Renamed `State` em `PointerEvent` para `EventType` e seu tipo para `PointerEventType`
+* Removedo `KeyEvent.Type`; para verificar se este foi um evento pressionado ou lançado, use o booleano `KeyEvent. IsDown`
+* `MouseWheelDelta` é agora `-1` ou `1` por unidade de rolagem em vez de `-120` ou ``
+* Removedo `MultiTouch Activado` no `InputManager`; multi-toque é sempre activado
 
-### Light shafts
+### Eixos de luz
 
-* Removed `ExtinctionFactor` and `ExtinctionRatio` to simplify the light shaft component
+* Removedo `ExtinctionFactor` e `ExtinctionRatio` para simplificar o componente do eixo de luz
 
-### Engine
+### Motor
 
-* Renamed `DebugConsoleSystem` to `DebugTextSystem`
-* Now default `RenderStageSelector` select all entity groups
+* Renomeado `DebugConsoleSystem` para `DebugTextSystem`
+* Agora default `RenderStageSelector` selecione todos os grupos de entidades
 
-## Known issues
+## Questões conhecidas
 
-* On Linux, when switching the underlying graphics platform, rendering doesn't occur or fail. To fix the problem, delete the cache, local, and roaming folders on the Linux host and restart the game
+* No Linux, ao alternar a plataforma gráfica subjacente, a renderização não ocorre ou falha. Para corrigir o problema, excluir o cache, local e roaming pastas no host Linux e reiniciar o jogo
 * 
-   * On iOS, if `Enable device-specific builds` is on (set in the project properties), it's not possible to debug game code. To speed up development, manually select the architecture of your device from the Advanced tab
-* Performance issues on mobile (being worked on)
-* Live scripting has been temporarily disabled
+   * No iOS, se ` Habilitar compilações específicas do dispositivo` está ativado (ajustado nas propriedades do projeto), não é possível depurar o código do jogo. Para acelerar o desenvolvimento, selecione manualmente a arquitetura do seu dispositivo no separador Avançado
+* Problemas de desempenho em dispositivos móveis (ser trabalhado)
+* O scripting ao vivo foi temporariamente desativado
 
-## Changelog
+## Mudança
 
-### Version 2.1.0.3 - 12 September 2017
+### Versão 2.1.0.3 - 12 de setembro de 2017
 
-#### Enhancements
+#### Melhorias
 
-##### General
+##### Geral
 
-* Updated the [list of third-party libraries](https://git.xenko.com/xenko/Xenko-Runtime/blob/master/THIRD%20PARTY.md) and sorted by editor and runtime dependencies
+* Actualizado o [list de bibliotecas de terceiros](https://git.xenko.com/xenko/Xenko-Runtime/blob/master/THIRD%20PARTY.md) e classificado por dependências de editor e tempo de execução
 
 ##### Game Studio
 
-* Reviewed and rewritten editor text (menus, button labels, tooltips and so on)
-* Removed redundant dialog boxes
-* Improved directional light gizmo visuals
-* Improved translation gizmo design. Translation planes now always face the camera
-* Reduced graphical glitches and optimized navigation mesh overlay rendering
-* Removed special character restriction on string keys for dictionaries
-* Changed the default color of the clear frame for better prefab editing
-* Added a mark for the origin in the scene and prefab editor
-* Added wireframe bounding volume for light shafts
-* Added a context menu entry in the asset view to copy an asset's URL
-* Allowed *mixed* document orientation in the dock panel
+* Revisado e reescrito texto editor (menus, rótulos de botão, dicas de ferramentas e assim por diante)
+* Caixas de diálogo redundantes removidas
+* Melhoria direcional luz gizmo visuais
+* Melhoria do projeto do gizmo da tradução. Os planos de tradução agora sempre enfrentam a câmera
+* Deslizes gráficos reduzidos e renderização otimizada de sobreposição de malha de navegação
+* Limitação de caracteres especial removido em chaves de cadeia de caracteres para dicionários
+* Alterou a cor padrão do quadro claro para melhor edição pré-fabricada
+* Adicionado uma marca para a origem na cena e prefab editor
+* Volume de amarração de wireframe adicionado para eixos de luz
+* Adicionado uma entrada de menu de contexto na vista de ativos para copiar a URL de um ativo
+* Permitido *mixed* orientação do documento no painel da doca
 
-##### Assets
+##### Activos
 
-* Updated to latest version of DirectXTex
-* Improved the computation of dependencies between assets leading to faster build and thumbnails generation
-* Changed how root parts of hierarchical assets (prefab, scene, UI) are referenced and serialized (direct references instead of Guids)
+* Atualizado para a versão mais recente do DirectXTex
+* Melhorou a computação de dependências entre ativos que levam a uma compilação mais rápida e geração de miniaturas
+* Alterado como as partes raiz de ativos hierárquicos (prefab, cena, UI) são referenciadas e serializadas (referências diretas em vez de Guids)
 
-##### Engine
+##### Motor
 
-* Added render group mask on the `SceneCameraRenderer` to cull entities per camera
-* Improved the game profiler (reduced performance impact, improved UX & visual, etc)
-* Added a profiling key to the script component for user script profiling
-* Added streaming support for textures.
-* Added support for GPU queries.
+* Adicionada máscara de grupo de renderização no `SceneCameraRenderer` para entidades de sinalização por câmera
+* Melhorou o perfil do jogo (impacto de desempenho reduzido, melhorou UX & visual, etc)
+* Adicionado uma chave de perfilamento para o componente de script para o perfil de script de usuário
+* Adicionado suporte de streaming para texturas.
+* Adicionado suporte para consultas GPU.
 
-##### Graphics
+##### Gráficos
 
-* FXAA Quality was crashing in many cases, because the value doesn't work with all numbers between 10 and 39. It's now exposed as two controls: a `Dithering` combobox and a `Quality` slider
-* Improved MSAA depth buffer resolving
-* Minor shader fixes
-* Added option for random texture sampling to texture maps
-* Enabled shadow casting for transparent materials
-* Added `IsAlphaCutoff` option in sprite component
-* Added swap function to `Texture` to swap the content of two textures
+* FXAA A qualidade caiu em muitos casos, porque o valor não funciona com todos os números entre 10 e 39. Agora está exposto como dois controles: a `Dithering` combobox e a `Quality` slider
+* Resolução melhorada do amortecedor de profundidade MSAA
+* Pequenas correções de shader
+* Opção adicionada para amostragem de textura aleatória a mapas de textura
+* Fundição de sombra habilitado para materiais transparentes
+* Adicionado `IsAlphaCutoff` opção em sprite componente
+* Adicionada função de troca para `Textura` para trocar o conteúdo de duas texturas
 
 ##### Direct3D 12
 
-* Command List implementations for Dispatch, ClearReadWrite, Copy, CopyMultisample, CopyCount
-* Resource state transitions fixes
-* Resource barriers batching
-* Added proper ClearValue setup for render targets and depth stencil buffers
-* Added DX12 Debug Layer filter for irrelevant warnings
-* Added support for:
-   * compute pipeline support
-   * tessellation
-   * compute, hull, domain and geometry shaders
-   * unordered access views for textures and buffers
-   * structured buffers
-   * staging textures and buffers
+* Implementações da Lista de Comandos para Despacho, ClearReadWrite, Copiar, CopyMultisample, CopyCount
+* Correções de transição de estado de recurso
+* Recurso barreiras loteamento
+* Adicionado configuração de ClearValue adequada para render alvos e profundidade buffers stencil
+* Adicionado DX12 Filtro Debug Layer para avisos irrelevantes
+* Adicionado suporte para:
+   * suporte de pipeline de computação
+   * infra-estruturas
+   * shaders de computação, casco, domínio e geometria
+   * vistas de acesso não ordenada para texturas e buffers
+   * buffers estruturados
+   * texturas de estadiamento e buffers
 
-##### Input
+##### Entrada
 
-* Added `AbsoluteMousePosition` information to the `InputManger`.
-* Improved gamepad support (new devices supported, improved API, runtime detection, etc.)
-* Add interpreted key and IME input support
+* Adicionado `AbsoluteMousePosition` informação para o `InputManger`.
+* Melhor suporte ao gamepad (novos dispositivos suportados, API melhorada, detecção de tempo de execução, etc.)
+* Adicionar chave interpretada e suporte de entrada IME
 
-##### Navigation
+##### Navegação
 
-* Changed the default size of new navigation mesh bounding volumes to `(1,1,1)`
+* Alterou o tamanho padrão de novos volumes de amarração de malha de navegação para `(1,1)`
 
 ##### Android
 
-* Modify application context creation to allow use of external display
+* Modifique a criação de contexto de aplicação para permitir o uso de exibição externa
 
 ##### UWP
 
-* Implemented support for CoreWindow. Disabled for the moment
+* Suporte implementado para CoreWindow. Desabilitado para o momento
 
-#### Bugs fixed
+#### Bugs corrigidos
 
 ##### Game Studio
 
-* Live update of the directional, point and spot light gizmo color wasn't working
-* Enabling/disabling light shaft bounding volume components now works as intended
-* Added "Fix references" dialog when removing directories with assets
-* Corrected lots of English mistakes
-* Fixed lots of issues with copy and paste (and replace). Notably it is now possible to copy entities from a scene and child scene at the same time.
-* Fixed issues with "Create library from selection" in the UI editor
-* Made the GameStudio crash in some rare cases where exceptions could leave a project in a corrupted state
-* Fixed various isues in the UI editor when moving elements in the hierarchy
-* Fixed issues with thumbnails generation
-* Fixed issues with the anchor of a child scene
+* A atualização ao vivo da cor gizmo direcional, ponto e ponto luz não estava funcionando
+* Habilitar/desativar componentes de volume de ligação do eixo de luz agora funciona como pretendido
+* Adicionado diálogo "Referências de arquivo" ao remover diretórios com ativos
+* Muitos erros em inglês
+* Corrigido muitos problemas com cópia e pasta (e substituir). Notavelmente agora é possível copiar entidades de uma cena e cena infantil ao mesmo tempo.
+* Corrigido problemas com "Criar biblioteca da seleção" no editor da UI
+* Fez o acidente GameStudio em alguns casos raros onde exceções poderiam deixar um projeto em um estado corrompido
+* Corrigido várias isues no editor de interface do usuário ao mover elementos na hierarquia
+* Problemas corrigidos com a geração de miniaturas
+* Problemas fixos com a âncora de uma cena infantil
 
-##### Assets
+##### Activos
 
-* Asset compilation of huge FBX was sometimes ending in timeout
-* Fixed normals, tangents and bitangents NaN values happening during model import
+* Compilação de ativos de FBX enorme às vezes estava terminando no timeout
+* Valores fixos normais, tangentes e bitangentes NaN acontecendo durante a importação de modelos
 
-##### Engine
+##### Motor
 
-* Fixed various memory leaks, especially when destroying a game
-* Clustered lighting code was buggy when rendering to multiple views
-* Fixed sprite bounding box and frustum culling calculation
-* Fixed texture and buffer memory calculations accessible from `GraphicsDevice`
+* Corrigido vários vazamentos de memória, especialmente quando destruir um jogo
+* O código de iluminação foi buggy ao renderizar várias visualizações
+* Caixa de amarração de sprite fixa e cálculo de culling frustum
+* Cálculos de memória de textura e buffer fixos acessíveis a partir de `GraphicsDevice`
 * Removed obsolete `ChildSceneComponent` class
 
-##### Graphics
+##### Gráficos
 
-* Fixed bug with grid ignoring depth with MSAA enabled
-* Added support for nointerpolation/noperspective in Xenko shaders
-* Fixed various problems with black artifacts in the shaders (NaNs and invalid normals)
-* Light shafts now work as expected when using self-overlapping bounding volumes
-* Fixed light probes applying previous environment light twice when there are no light probes
-* Material specular map `IsEnergyConservative` now properly taken into account
-* Fixed transparent materials shadows
-* Fixed transparent and alpha cut off materials shadows
-* Fixed two-sided and flipped material shading
-* Fixed mipmap counting
+* Corrigido o erro com a grade ignorando a profundidade com MSAA habilitado
+* Adicionado suporte para nointerpolation/noperspective em Xenko shaders
+* Corrigido vários problemas com artefatos pretos nos shaders (NaNs e normais inválidos)
+* Os eixos de luz agora funcionam como esperado ao usar volumes de amarração auto-superposição
+* Sondas de luz fixas aplicando luz ambiente anterior duas vezes quando não há sondas de luz
+* Material mapa especular `IsEnergyConservative` agora devidamente tomado em consideração
+* Sombras de materiais transparentes fixas
+* Corrigido transparente e alfa corte sombras materiais
+* Fixo de dois lados e fliped material shading
+* Contagem de mipmap fixa
 
-##### Physics
+##### Física
 
-* Fixed capsule shape orientation
+* Orientação fixa da forma da cápsula

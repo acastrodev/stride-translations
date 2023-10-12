@@ -1,146 +1,146 @@
-# Light shafts
+# Eixos de luz
 
-<span class="badge text-bg-primary">Beginner</span>
-<span class="badge text-bg-success">Designer</span>
-<span class="badge text-bg-success">Artist</span>
+<x1\/>Introdução<x2\/>
+<x3\/>Designer<x4\/>
+<x5\/>Artista <x6\/>
 
-**Light shafts**, also called **god rays**, are visible rays of light.
+** Eixos de luz **, também chamados ** raios **, são raios visíveis de luz.
 
 <video autoplay loop class="responsive-video" poster="media/lightshaft_CoS_640.jpg">
    <source src="media/lightshaft_CoS_640.mp4" type="video/mp4">
 </video>
 
-Stride light shafts are based on [shadow maps](shadows.md) and use raymarching rather than post effects, so they're visible even when the light source isn't. Any light source that casts shadows (ie [point lights](point-lights.md), [directional lights](directional-lights.md) and [spot lights](spot-lights.md)) can cast light shafts.
+Os eixos de luz Stride são baseados em mapas de sombra [](shadows.md) e usam raymarching em vez de efeitos postais, então eles são visíveis mesmo quando a fonte de luz não é. Qualquer fonte de luz que lança sombras (ou seja, [ponto luzes](point-lights.md), [ luzes direcionais](directional-lights.md) e [spot luzes](spot-lights.md)) pode lançar eixos de luz.
 
-To create light shafts, use three components together: **lights**, **light shafts**, and **light shaft bounding volumes**.
+Para criar eixos de luz, use três componentes juntos: **lights**, ** eixos de luz**, e ** volumes de ligação do eixo de luz **.
 
-## 1. Enable light shafts in the graphics compositor
+## 1. Habilite eixos de luz no compositor gráfico
 
-By default, Stride disables light shafts in new projects. To enable them:
+Por padrão, o Stride desativa eixos de luz em novos projetos. Para lhes permitir:
 
-1. In the **Asset View** (in the bottom pane by default), double-click the **Graphics Compositor** asset.
+1. No **Asset View** (no painel inferior por padrão), clique duas vezes no **Graphics Compositor** ativo.
 
-   ![Graphics Compositor asset](../graphics-compositor/media/graphics-compositor-asset.png)
+   <x1\/>Gráficos Compositor asset<x2\/>
 
-   The graphics compositor editor opens.
+   O editor de compositores gráficos abre.
 
-2. Select the **forward renderer** node.
+2. Selecione o nó **forward renderer**.
 
-   ![Select forward renderer](../../virtual-reality/media/select-forward-renderer.png)
+   <x1\/>Selecionar renderizador <x2\/>
 
-3. In the **Property Grid** (on the right by default), next to **Light shafts**, click ![Blue arrow button](~/manual/game-studio/media/blue-arrow-icon.png) (**Replace**) and select **LightShafts**.
+3. No **Property Grid** (à direita por padrão), ao lado de **Light shafts**, clique em <x1\/> Botão de seta azul<x2\/> (** Substituir**) e selecione **LightShafts**.
 
-   ![Select light shafts](media/select-light-shafts.png)
+   <x1\/>Selecione eixos de luz<x2\/>
 
-4. Make sure the **light shafts** checkbox is selected.
+4. Certifique-se de que a caixa de seleção **light eixos** é selecionada.
 
-   ![Enable light shafts](media/enable-light-shafts.png)
+   <x1\/> Habilitar eixos de luz<x2\/>
 
-   For more information about the graphics compositor, see the [Graphics compositor](../graphics-compositor/index.md) page.
+   Para obter mais informações sobre o compositor gráfico, consulte a página [Graphics compositor](../graphics-compositor/index.md).
 
-## 2. Add a light shaft component
+## 2. Adicionar um componente de eixo de luz
 
-1. In your scene, select the entity with the **light** you want to create light shafts. This must be a light that casts shadows (ie a [point light](point-lights.md), [directional light](directional-lights.md), or [spot light](spot-lights.md)).
+1. Em sua cena, selecione a entidade com o <g id="1">light</g> que deseja criar eixos de luz. Esta deve ser uma luz que lança sombras (ou seja, uma luz <g id="2">point</g>, <g id="3"> luz direcional</g>, ou <g id="4">spot light</g>spot light</g>).
 
-2. In the **Property Grid**, in the **Light** component properties, make sure the **Shadow** checkbox is selected.
+2. No **Property Grid**, nas propriedades do componente **Light**, certifique-se de que a caixa de seleção **Shadow** é selecionada.
 
-   ![Enable light shafts](media/light-shafts-enable-shadows.png)
+   <x1\/> Habilitar eixos de luz<x2\/>
 
-3. Click **Add component** and select **Light shaft**.
+3. Clique em **Adicionar componente** e selecione **Light shaft**.
 
-   ![Add light shaft component](media/add-light-shaft-component.png)
+   <x1\/> Adicionar componente de eixo de luz<x2\/>
 
-   Game Studio adds a light shaft component to the entity.
+   Game Studio adiciona um componente de eixo de luz para a entidade.
 
-## 3. Add a bounding volume
+## 3. Adicionar um volume de ligação
 
-The **light shaft bounding volume** defines the area in which light shafts are created. You can add the bounding volume to the same entity that has the directional light, but it's usually simpler to add it to a separate entity.
+O ** eixo de luz que liga o volume** define a área em que os eixos de luz são criados. Você pode adicionar o volume de ligação à mesma entidade que tem a luz direcional, mas geralmente é mais simples adicioná-lo a uma entidade separada.
 
-1. In the **Asset View**, click **Add asset**.
+1. No **Asset View**, clique em **Add asset**.
 
-2. Under **Models**, select a model in the shape you want the volume to be. For example, if you use a cube, light shafts will be created in a cube-shaped area.
+2. Em **Models**, selecione um modelo na forma que deseja que o volume seja. Por exemplo, se você usar um cubo, os eixos de luz serão criados em uma área em forma de cubo.
 
-   ![Cube model](media/add-cube-model.png)
+   <x1\/>Cube model<x2\/>
 
-   The **Select an asset** window opens.
+   A janela **Selecione um ativo** abre.
 
-   ![Select an asset](media/asset-picker.png)
+   <x1\/> Selecione um ativo<x2\/>
 
-3. You don't need a material for the model, so click **Cancel** to create a model without a material.
+3. Você não precisa de um material para o modelo, então clique em **Cancel** para criar um modelo sem um material.
 
-4. In the scene, create an empty **entity**. For now, it doesn't matter where you put it; you can reposition it later.
+4. Na cena, crie um vazio **entidade**. Por enquanto, não importa onde você colocá-lo; você pode reposiciona-lo mais tarde.
 
-5. With the entity selected, in the **Property Grid**, click **Add component** and select **light shaft bounding volume**.
+5. Com a entidade selecionada, no **Property Grid**, clique em **Adicionar componente** e selecione **light eixo de ligação volume**.
 
-   ![Add light shaft bounding volume component](media/add-light-shaft-bounding-volume.png)
+   <x1\/> Adicionar componente de volume de ligação de eixo de luz<x2\/>
 
-6. In the **light shaft bounding volume** component properties, next to **light shaft**, click ![Hand icon](~/manual/game-studio/media/hand-icon.png) (**Select an asset**).
+6. No ** eixo de luz que liga o volume** propriedades do componente, ao lado de ** eixo de luz **, clique em <x1\/>Hand icon<x2\/> (**Select an asset**).
 
-7. In the **entity picker**, select the entity with the directional light you want to create light shafts and click **OK**.
+7. No **entity picker**, selecione a entidade com a luz direcional que deseja criar eixos de luz e clique em **OK**.
 
-8. In the **light shaft bounding volume** component properties, next to **Model**, click ![Hand icon](~/manual/game-studio/media/hand-icon.png) (**Select an asset**).
+8. No ** eixo de luz que liga o volume** propriedades do componente, ao lado de **Model**, clique em <x1\/>Hand icon<x2\/> (**Select an asset**).
 
-9. In the **Select an asset** window, select the model you created and click **OK**.
+9. Na janela **Selecione um ativo**, selecione o modelo que você criou e clique em **OK**.
 
-   ![Select model](media/select-procedural-model.png)
+   <x1\/>Selecionar modelo<x2\/>
 
-   This model defines the shape of the light shaft bounding volume.
+   Este modelo define a forma do volume de ligação do eixo de luz.
 
-10. Using the **transform** component, position and scale the entity to cover the area where you want to create light shafts.
+10. Usando o componente **transform**, posicionar e dimensionar a entidade para cobrir a área onde você deseja criar eixos de luz.
 
-   > [!Tip]
-   > To show or hide navigation light shaft bounding volumes in the Scene Editor, in the **Scene Editor toolbar**, open the **gizmo options** menu and use the **Light shaft bounding volumes** checkbox.
+   > <x1\/>!Tip<x2\/>
+   > Para mostrar ou ocultar volumes de vinculação de eixo de navegação no Editor de cena, na barra de ferramentas **Scene Editor**, abra o menu **gizmo e use a caixa de seleção **Light shaft limiting volumes**.**
 
-   ![Show light shaft bounding volumes](media/show-or-hide-light-shaft-bounding-volume.png)
+   <x1\/>Mostrar volumes limitados de eixo de luz<x2\/>
 
-## Light shaft properties
+## Propriedades do eixo de luz
 
-![Light shaft properties](media/light-shaft-properties.png)
+<x1\/> Propriedades do eixo leve<x2\/>
 
-| Property | Description |
+| Propriedade | Descrição |
 |---------------------------|----------
-| Density | Higher values produce brighter light shafts |
-| Sample count | Higher values produce better light shafts but use more GPU |
-| Process bounding volumes separately | Preserves light shaft quality when seen through separate bounding boxes, but uses more GPU |
+| Densidade | Valores mais elevados produzem eixos de luz mais brilhantes |
+| Contagem de amostras | Valores mais elevados produzem melhores eixos de luz, mas usam mais GPU |
+| Volumes de amarração de processos separadamente | Preserva a qualidade do eixo de luz quando visto através de caixas de ligação separadas, mas usa mais GPU |
 
-### Light shaft graphics compositor properties
+### Propriedades do compositor de gráficos de eixo claro
 
-To access these properties, in the **graphics compositor editor**, select the **forward renderer** node and expand **Light Shafts**.
+Para acessar essas propriedades, no editor de compositores **graphics**, selecione o nó **forward renderer** e expanda **Light Shafts**.
 
-These properties apply globally to all the light shafts in the scene.
+Estas propriedades aplicam-se globalmente a todos os eixos de luz na cena.
 
-![Light shaft graphics compositor properties](media/light-shaft-graphics-compositor-properties.png)
+<x1\/> Propriedades do compositor de gráficos de eixo leve<x2\/>
 
-| Property | Description |
+| Propriedade | Descrição |
 |-----------------------------------------|--------------
-| Bounding volume buffer downsample level | Lower values produce more precise volume buffer areas, but use more GPU |
-| Light buffer downsample level | Lower values produce sharper light shafts, but use more GPU |
+| Bounding volume buffer downsample nível | Valores mais baixos produzem áreas de buffer de volume mais precisas, mas usam mais GPU |
+| Nível de downsample de amortecedor de luz | Valores mais baixos produzem eixos de luz mais nítidos, mas usam mais GPU |
 
-## Optimize light shafts
+## Otimizar eixos de luz
 
-Light shafts work best in dark environments. You can adjust the light and light shaft component properties to achieve different results — for example, by changing the light color (in the **light component properties**) or the light shaft density (in the **light shaft component properties**).
+Os eixos de luz funcionam melhor em ambientes escuros. Você pode ajustar as propriedades do componente do eixo de luz e luz para alcançar resultados diferentes — por exemplo, alterando a cor da luz (nas propriedades do componente **light**) ou a densidade do eixo de luz (nas propriedades do componente do eixo de luz **)**).
 
-Multiple light shafts viewed through one another can become visually noisy, as in the screenshot below:
+Vários eixos de luz visualizados entre si podem tornar-se visualmente ruidosos, como na captura de tela abaixo:
 
-![Noisy light shafts](media/noisy-light-shafts.jpg)
+<x1\/> Eixos de luz ruidosos<x2\/>
 
-To reduce this effect, in the **light shaft component properties**, reduce the **density** and increase the **sample count**.
+Para reduzir esse efeito, nas propriedades do componente do eixo **light**, reduza o **density** e aumente o **sample count**.
 
-![Density factor](media/density-factor.png)
+<x1\/> Fator de densidade<x2\/>
 
-Alternatively, add additional bounding volumes and process them separately. To do this:
+Alternativamente, adicione volumes adicionais e processá-los separadamente. Para fazer isso:
 
-1. Create additional bounding volumes and position them to cover the areas where you want to create light shafts. Make sure the bounding volumes don't overlap, as this makes light shafts extra-bright.
+1. Crie volumes de ligação adicionais e posicione-os para cobrir as áreas onde você deseja criar eixos de luz. Certifique-se de que os volumes de amarração não se sobrepõem, pois isso faz eixos de luz extra-brilhante.
 
-2. In the **light shaft component properties**, make sure **Process bounding volumes separately** is selected.
+2. No ** Propriedades do componente do eixo de luz **, certifique-se de ** Os volumes de ligação do processo separadamente** são selecionados.
 
-![Separate bounding volume](media/separate-bounding-volumes.png)
+<x1\/> Separar o volume de ligação<x2\/>
 
-> [!Note]
-> Processing bounding volumes separately uses more GPU.
+> <x1\/>!Note<x2\/>
+> O processamento de volumes delimitação usa separadamente mais GPU.
 
-## See also
+## Ver também
 
-* [Directional lights](directional-lights.md)
-* [Shadows](shadows.md)
-* [Graphics compositor](../graphics-compositor/index.md)
+* [Luzes direcionais](directional-lights.md)
+* [Sombras](shadows.md)
+* [Compositor gráfico](../graphics-compositor/index.md)

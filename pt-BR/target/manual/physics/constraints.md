@@ -1,83 +1,83 @@
-# Constraints
+# Restrições
 
-[!INCLUDE [stride-studio-note](../../includes/under-construction-note.md)]
+[! INCLUÍDO [stride-studio-note](../../includes/under-construction-note.md)]
 
-<span class="badge text-bg-primary">Advanced</span>
-<span class="badge text-bg-success">Programmer</span>
+<x1\/> Avançado <x2\/>
+<x3\/> Programador <x4\/>
 
-**Constraints** restrict rigidbodies to certain movement patterns. For example, a realistic knee joint can only move along one axis and can't bend forwards.
+**Constraints** restringem os corpos rígidos a certos padrões de movimento. Por exemplo, uma articulação de joelho realista só pode se mover ao longo de um eixo e não pode dobrar para a frente.
 
-Constraints can either link two rigidbodies together, or link a single rigidbody to a point in the world. They allow for interaction and dependency among rigidbodies.
+As restrições podem ligar dois corpos rígidos juntos, ou ligar um único corpo rígido a um ponto no mundo. Eles permitem a interação e dependência entre os corpos rígidos.
 
-There are six [types of constraints](xref:Stride.Physics.ConstraintTypes):
+Existem seis [tipos de restrições](xref:Stride.Physics.ConstraintTypes):
 
-* hinges
-* gears
-* sliders
-* cones (twist and turn)
-* point to point (fixed distance between two colliders)
-* six degrees of freedom
+* dobradiças
+* engrenagem
+* controles deslizantes
+* cones (twist e turn)
+* ponto a ponto (a distância fixa entre dois colisões)
+* seis graus de liberdade
 
-For a demonstration of the different constraints, load the **PhysicsSample** sample project.
+Para uma demonstração das diferentes restrições, carregue o projeto de amostra **PhysicsSample**.
 
-## Create a constraint
+## Criar uma restrição
 
-> [!Note]
-> Currently, you can only use constraints from scripts.
+> <x1\/>!Note<x2\/>
+> Atualmente, você só pode usar restrições de scripts.
 
-To create a constraint, use the [Simulation](xref:Stride.Physics.Simulation) static method [CreateConstraint](xref:Stride.Physics.Simulation.CreateConstraint\(Stride.Physics.ConstraintTypes,Stride.Physics.RigidbodyComponent,Stride.Core.Mathematics.Matrix,System.Boolean\)):
-
-```cs
-CreateConstraint(ConstraintTypes type, RigidbodyComponent rigidBodyA, Matrix frameA, bool useReferenceFrameA);
-```
-
-This links [RigidBodyA](xref:Stride.Physics.Constraint.RigidBodyA) to the world at its current location.
-The boolean [useReferenceFrameA](xref:Stride.Physics.Simulation.CreateConstraint\(Stride.Physics.ConstraintTypes,Stride.Physics.RigidbodyComponent,Stride.Core.Mathematics.Matrix,System.Boolean\)) specifies which coordinate system the limit is applied to (either [RigidBodyA](xref:Stride.Physics.Constraint.RigidBodyA) or the world).
-
-> [!Note]
-> * In the case of [ConstraintTypes.Point2Point](xref:Stride.Physics.ConstraintTypes), the frame represents a pivot in A. Only the translation vector is considered. [useReferenceFrameA](xref:Stride.Physics.Simulation.CreateConstraint\(Stride.Physics.ConstraintTypes,Stride.Physics.RigidbodyComponent,Stride.Core.Mathematics.Matrix,System.Boolean\)) is ignored.
-> * In the case of [ConstraintTypes.Hinge](xref:Stride.Physics.ConstraintTypes), the frame represents a pivot in A and Axis in A. This is because the hinge allows only a limited angle of rotation between the rigidbody and the world.
-> * In the case of [ConstraintTypes.ConeTwist](xref:Stride.Physics.ConstraintTypes), [useReferenceFrameA](xref:Stride.Physics.Simulation.CreateConstraint\(Stride.Physics.ConstraintTypes,Stride.Physics.RigidbodyComponent,Stride.Core.Mathematics.Matrix,System.Boolean\)) is ignored.
-> * [ConstraintTypes.Gear](xref:Stride.Physics.ConstraintTypes) needs two rigidbodies to be created. This function will throw an exception.
+Para criar uma restrição, use o método estático [Simulation](xref:Stride.Physics.Simulation) [CreateConstraint](xref:Stride.Physics.Simulation.CreateConstraint\(Stride.Physics.ConstraintTypes,Stride.Physics.RigidbodyComponent,Stride.Core.Mathematics.Matrix,System.Boolean\)):
 
 ```cs
-CreateConstraint(ConstraintTypes type, RigidbodyComponent rigidBodyA, RigidbodyComponent rigidBodyB, Matrix frameA, Matrix frameB, bool useReferenceFrameA)
+CriarConstraint(Constraint) Tipos tipo, RigidbodyComponente rígido BodyA, Matrix frameA, uso de boolReferenceFrameA);
 ```
 
-This method links [RigidBodyA](xref:Stride.Physics.Constraint.RigidBodyA) to  [RigidBodyB](xref:Stride.Physics.Constraint.RigidBodyB).
+Isso liga [RigidBodyA](xref:Stride.Physics.Constraint.RigidBodyA) ao mundo em sua localização atual.
+O booleano [useReferenceFrameA](xref:Stride.Physics.Simulation.CreateConstraint\(Stride.Physics.ConstraintTypes,Stride.Physics.RigidbodyComponent,Stride.Core.Mathematics.Matrix,System.Boolean\)) especifica qual sistema de coordenadas o limite é aplicado (quer [RigidBodyA](xref:Stride.Physics.Constraint.RigidBodyA) ou o mundo).
 
-> [!Note]
-> * In the case of [ConstraintTypes.Point2Point](xref:Stride.Physics.ConstraintTypes), the frame represents a pivot in A or B. Only the translation vector is considered. [useReferenceFrameA](xref:Stride.Physics.Simulation.CreateConstraint\(Stride.Physics.ConstraintTypes,Stride.Physics.RigidbodyComponent,Stride.Core.Mathematics.Matrix,System.Boolean\)) is ignored.
-> * In the case of [ConstraintTypes.Hinge](xref:Stride.Physics.ConstraintTypes) the frame represents pivot in A/B and Axis in A/B. This is because the hinge allows only a limited angle of rotation between the rigidbody and the world in this case.
-> * In the case of [ConstraintTypes.ConeTwist](xref:Stride.Physics.ConstraintTypes), [useReferenceFrameA](xref:Stride.Physics.Simulation.CreateConstraint\(Stride.Physics.ConstraintTypes,Stride.Physics.RigidbodyComponent,Stride.Core.Mathematics.Matrix,System.Boolean\)) is ignored.
-> * In the case of [ConstraintTypes.Gear](xref:Stride.Physics.ConstraintTypes), [useReferenceFrameA](xref:Stride.Physics.Simulation.CreateConstraint\(Stride.Physics.ConstraintTypes,Stride.Physics.RigidbodyComponent,Stride.Core.Mathematics.Matrix,System.Boolean\)) is ignored. The frame just represents the axis either in A or B; only the translation vector (which should contain the axis) is used.
-
-The boolean [useReferenceFrameA](xref:Stride.Physics.Simulation.CreateConstraint\(Stride.Physics.ConstraintTypes,Stride.Physics.RigidbodyComponent,Stride.Core.Mathematics.Matrix,System.Boolean\)) determines which coordinate system ([RigidBodyA](xref:Stride.Physics.Constraint.RigidBodyA) or [RigidBodyB](xref:Stride.Physics.Constraint.RigidBodyB)) the limits are applied to.
-
-## Add constraints to the simulation
-
-After you create a constraint, add it to the simulation from a script by calling:
+> <x1\/>!Note<x2\/>
+> * No caso de [ConstraintTypes.Point2Point](xref:Stride.Physics.ConstraintTypes), o quadro representa um pivô em A. Apenas o vetor de tradução é considerado. [useReferenceFrameA](xref:Stride.Physics.Simulation.CreateConstraint\(Stride.Physics.ConstraintTypes,Stride.Physics.RigidbodyComponent,Stride.Core.Mathematics.Matrix,System.Boolean\)) é ignorado.
+> * No caso de [ConstraintTypes.Hinge](xref:Stride.Physics.ConstraintTypes), o quadro representa um pivô em A e Eixo em A. Isso porque a dobradiça permite apenas um ângulo limitado de rotação entre o corpo rígido e o mundo.
+> * No caso de [ConstraintTypes.ConeTwist](xref:Stride.Physics.ConstraintTypes), [useReferenceFrameA](xref:Stride.Physics.Simulation.CreateConstraint\(Stride.Physics.ConstraintTypes,Stride.Physics.RigidbodyComponent,Stride.Core.Mathematics.Matrix,System.Boolean\)) é ignorado.
+> * [ConstraintTypes.Gear](xref:Stride.Physics.ConstraintTypes) precisa de dois corpos rígidos a serem criados. Esta função irá lançar uma exceção.
 
 ```cs
-this.GetSimulation().AddConstraint(constraint);
+CriarConstraint(Constraint) Tipos tipo, RigidbodyComponent rigidBodyA, RigidbodyComponent rigidBodyB, Matrix frameA, Matrix frameB, uso de boolReferenceFrameA)
 ```
 
-or:
+Este método liga [RigidBodyA](xref:Stride.Physics.Constraint.RigidBodyA) a [RigidBodyB](xref:Stride.Physics.Constraint.RigidBodyB).
+
+> <x1\/>!Note<x2\/>
+> * No caso de [ConstraintTypes.Point2Point](xref:Stride.Physics.ConstraintTypes), o quadro representa um pivô em A ou B. Apenas o vetor de tradução é considerado. [useReferenceFrameA](xref:Stride.Physics.Simulation.CreateConstraint\(Stride.Physics.ConstraintTypes,Stride.Physics.RigidbodyComponent,Stride.Core.Mathematics.Matrix,System.Boolean\)) é ignorado.
+> * No caso de [ConstraintTypes.Hinge](xref:Stride.Physics.ConstraintTypes) o quadro representa pivô em A\/B e Eixo em A\/B. Isto porque a dobradiça permite apenas um ângulo limitado de rotação entre o corpo rígido e o mundo neste caso.
+> * No caso de [ConstraintTypes.ConeTwist](xref:Stride.Physics.ConstraintTypes), [useReferenceFrameA](xref:Stride.Physics.Simulation.CreateConstraint\(Stride.Physics.ConstraintTypes,Stride.Physics.RigidbodyComponent,Stride.Core.Mathematics.Matrix,System.Boolean\)) é ignorado.
+> * No caso de [ConstraintTypes.Gear](xref:Stride.Physics.ConstraintTypes), [useReferenceFrameA](xref:Stride.Physics.Simulation.CreateConstraint\(Stride.Physics.ConstraintTypes,Stride.Physics.RigidbodyComponent,Stride.Core.Mathematics.Matrix,System.Boolean\)) é ignorado. O quadro representa apenas o eixo em A ou B; somente o vetor de tradução (que deve conter o eixo) é usado.
+
+O booleano [useReferenceFrameA](xref:Stride.Physics.Simulation.CreateConstraint\(Stride.Physics.ConstraintTypes,Stride.Physics.RigidbodyComponent,Stride.Core.Mathematics.Matrix,System.Boolean\)) determina qual sistema de coordenadas ([RigidBodyA](xref:Stride.Physics.Constraint.RigidBodyA) ou [RigidBodyB](xref:Stride.Physics.Constraint.RigidBodyB)) os limites são aplicados.
+
+## Adicionar restrições à simulação
+
+Depois de criar uma restrição, adicione-a à simulação de um script chamando:
 
 ```cs
-var disableCollisionsBetweenLinkedBodies = true;
-this.GetSimulation().AddConstraint(constraint, disableCollisionsBetweenLinkedBodies);
+this.GetSimulation(). AddConstraint (constraint);
 ```
 
-The parameter [disableCollisionsBetweenLinkedBodies](xref:Stride.Physics.Simulation.AddConstraint\(Stride.Physics.Constraint,System.Boolean\))
-stops linked bodies colliding with each other.
-
-Likewise, to remove a constraint from the simulation, use:
+ou:
 
 ```cs
-this.GetSimulation().RemoveConstraint(constraint);
+var desativar cores Entre os corpos conectados = verdadeiro;
+this.GetSimulation(). AddConstraint (constrang, desabilitar CoresBetweenLinkedBodies);
 ```
 
-## See also
+O parâmetro [disableCollisionsBetweenLinkedBodies](xref:Stride.Physics.Simulation.AddConstraint\(Stride.Physics.Constraint,System.Boolean\))
+para corpos ligados colidindo uns com os outros.
 
-* [Colliders](colliders.md)
+Da mesma forma, para remover uma restrição da simulação, use:
+
+```cs
+this.GetSimulation(). RemoverConstraint (constrangimento);
+```
+
+## Ver também
+
+* [Coleiras](colliders.md)

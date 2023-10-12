@@ -1,17 +1,17 @@
-# Collision triggers
+# Gatilhos de colisão
 
-This C# intermediate tutorial covers the use of collision triggers. It teaches about rigid bodies and how to set those up in the editor.
+Este tutorial intermediário C# cobre o uso de gatilhos de colisão. Ele ensina sobre corpos rígidos e como configurar aqueles no editor.
 
-## Explanation
+## Explicação
 
-Rigid bodies determine how entities in our scene behave on gravity, whether they collide with other objects or in the case of this tutorial": trigger collision events in our code. We do this by setting up a collider box in our scene and letting a sphere roll through this object. The events that are triggered are then processed by the script that we will make for it.
+Corpos rígidos determinam como as entidades em nossa cena se comportam em gravidade, se elas colidem com outros objetos ou no caso deste tutorial": desencadear eventos de colisão em nosso código. Fazemos isso configurando uma caixa de colisão em nossa cena e deixando uma esfera rolar através deste objeto. Os eventos que são acionados são então processados pelo script que faremos para ele.
 
-> [!Video https://www.youtube.com/embed/SIy3pfoXfoQ]
+> [!Vídeo https://www.youtube.com/embed/SIy3pfoXfoQ]
 
-## Rigidbodies and collisions
-The code below looks for the rigidbody component that is attached to our entity. The rigidbody component contains all information we need for setting up triggers. The `IsTrigger` property determines that our collider doesn't stop other physics objects, but that it does trigger events in code (if they are set up at least).
+## Rígidos e colisões
+O código abaixo procura o componente rigidbody que está ligado à nossa entidade. O componente de corpo rígido contém todas as informações que precisamos para configurar gatilhos. A propriedade `IsTrigger` determina que nosso colisor não impede outros objetos de física, mas que ele desencadeia eventos em código (se eles forem configurados pelo menos).
 
-We spawn a sphere which also has a rigidbody. This sphere has a mass and is affected by gravity. The sphere will fall down and eventually roll through our collider box. In our update loop we check if there are collisions happening. If there are collisions, we get the colliding object and print out some text on screen. Once the sphere leaves the trigger box, our update loop sees that we no longer have collisions.
+Nós geramos uma esfera que também tem um corpo rígido. Esta esfera tem uma massa e é afetada pela gravidade. A esfera vai cair e eventualmente rolar através da nossa caixa de colisões. Em nosso loop de atualização verificamos se há colisões acontecendo. Se houver colisões, obtemos o objeto colidindo e imprimimos algum texto na tela. Uma vez que a esfera deixa a caixa de gatilho, nosso loop de atualização vê que não temos mais colisões.
 
-Instead of using our update loop, we can also use collision events.
+Em vez de usar nosso loop de atualização, também podemos usar eventos de colisão.
 [!code-csharp[collisiontriggerdemo](../../../../stride/samples/Tutorials/CSharpIntermediate/CSharpIntermediate/CSharpIntermediate.Game/02_Collision-Triggers/CollisionTriggerDemo.cs)]

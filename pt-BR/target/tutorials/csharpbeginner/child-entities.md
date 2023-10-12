@@ -1,15 +1,15 @@
-# Children of entities
-You can find this sample in the tutorial project: **Menu** &rarr; **Child entities**
+# Crianças de entidades
+Você pode encontrar esta amostra no projeto tutorial: **Menu** → ** Entidades de crianças**
 
-## Explanation
-This C# basics tutorial covers how to get an entities children.
+## Explicação
+Este tutorial básico de C# cobre como obter umas entidades crianças.
 
-Since those children are also entities, we can retrieve their children too.
+Como essas crianças também são entidades, podemos recuperar seus filhos também.
 
-![Child entities](media/child-entities.webp)
+<x1\/> Entidades de crianças <x2\/>
 
-> [!Video https://www.youtube.com/embed/jf9x__cbiqI]
+> <x1\/>!Vídeo https:\/\/www.youtube.com\/embed\/jf9x_cbiqI<x2\/>
 
-## Code
+## Código
 
-[!code-csharp[ChildEntities](../../../../stride/samples/Tutorials/CSharpBeginner/CSharpBeginner/CSharpBeginner.Game/Code/ChildEntitiesDemo.cs)]
+[!code-csharp[Entidades de crianças](../../../../stride/samples/Tutorials/CSharpBeginner/CSharpBeginner/CSharpBeginner.Game/Code/ChildEntitiesDemo.cs)]

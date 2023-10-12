@@ -1,19 +1,19 @@
-# Load and unload scenes at runtime
+# Carregar e descarregar cenas no tempo de execução
 
-## Loading scenes
+## Cenas de carregamento
 
-You can use `UrlReference<Scene>` properties on your scripts to assign **Scene** assets then load the via code:
+Você pode usar `UrlReference<Scene>` propriedades em seus scripts para atribuir **Scene** os ativos então carregam o código via:
 
 ```cs
-public UrlReference<Scene> ChildSceneUrl { get; set; }
+público UrlReference<Scene> ChildScene Url { get; set; }
 
-//...
-var childScene = Content.Load(ChildSceneUrl);
+\/\/...
+var childScene = Content.Load (ChildSceneUrl);
 
-parentScene.Children.Add(childScene);
+parentScene.Children.Add (childScene);
 ```
 
-Alternatively you can load scenes by name. The following code loads three scenes and adds them as children:
+Alternativamente, você pode carregar cenas por nome. O código a seguir carrega três cenas e os adiciona como crianças:
 
 ```cs
 var myChildScene0 = Content.Load<Scene>(url0);
@@ -25,89 +25,89 @@ myParentScene.Children.Add(myChildScene1);
 myChildScene1.Add(myChildScene2);
 ```
 
-> [!Note]
-> If you are not using `UrlReference` make sure all the scenes you want to load are included in the build as **root assets** (indicated with blue icons in the **Asset View**).
+> <x1\/>!Note<x2\/>
+> Se você não estiver usando `UrlReference` certifique-se de que todas as cenas que você deseja carregar estão incluídas na compilação como **root assets** (indicado com ícones azuis no **Asset View**).
 
-> ![Scenes included in root](media/scenes-included-in-root.png)
+> <x1\/> Cenas incluídas no root<x2\/>
 
-> To include a scene in the build, in the **Asset View**, right-click the scene asset and select **Include in build as root asset**.
+> Para incluir uma cena na compilação, no **Asset View**, clique com o botão direito do mouse no ativo da cena e selecione **Incluir na compilação como root asset**.
 
-> For more information about including assets in the build, see [Manage assets](manage-assets.md).
+> Para obter mais informações sobre incluir ativos na compilação, consulte [Gerenciar ativos](manage-assets.md).
 
-For more information about scene hierarchies, see [Manage scenes](manage-scenes.md).
+Para obter mais informações sobre hierarquias de cena, consulte [Gerenciar cenas](manage-scenes.md).
 
-## Unloading scenes
+## Descarregar cenas
 
-Before a scene is unloaded remove it from the scene hierarchy:
+Antes que uma cena seja descarregada, remova-a da hierarquia da cena:
 
 ```cs
 parentScene.Children.Remove(childScene);
 
-//Alternatively
-childScene.Parent = null;
+\/\/ Alternativamente
+criança Ceno. Pai = nulo;
 ```
 
-Once the scene asset is no longer required make sure to unload it:
+Uma vez que o ativo da cena não é mais necessário certifique-se de descarregá-lo:
 
 ```cs
-Content.Unload(childScene);
+Content.Unload (childScene);
 ```
 
-## Scene streaming script
+## Script de streaming de cenas
 
-Stride also includes a scene streaming script that uses a [trigger](../physics/triggers.md) to load scenes.
+Stride também inclui um script de streaming de cena que usa um [trigger](../physics/triggers.md) para carregar cenas.
 
-> [!Note]
-> The scene streaming script is included as an example. It isn't always the most appropriate way to load scenes. Feel free to modify it as much as you need.
+> <x1\/>!Note<x2\/>
+> O script de streaming de cena é incluído como um exemplo. Nem sempre é a maneira mais apropriada de carregar cenas. Sinta-se livre para modificá-lo tanto quanto você precisa.
 
-### Add a scene streaming script
+### Adicionar um script de streaming de cena
 
-To add a scene streaming script, in the **Asset View** (bottom pane by default), click **Add asset** and select **Scripts > Scene streaming**.
+Para adicionar um script de streaming de cena, no **Asset View** (pane inferior por padrão), clique em ** Adicionar asset** e selecione **Scripts > Cena streaming**.
 
-![Scene streaming script](media/scene-streaming-script.png)
+<x1\/>Scene streaming script<x2\/>
 
-Game Studio adds a scene streaming script to your project assets.
+Game Studio adiciona um script de streaming de cena para seus ativos de projeto.
 
-### Use the scene streaming script
+### Use o script de streaming de cena
 
-1. Create a trigger entity. When this is triggered at runtime, Stride loads the scene. For more information about creating triggers, see [Triggers](../physics/triggers.md).
+1. Criar uma entidade gatilho. Quando isso é disparado no tempo de execução, Stride carrega a cena. Para obter mais informações sobre a criação de gatilhos, consulte [Triggers](../physics/triggers.md).
 
-   How the entity is triggered is defined in the collider properties. For more information, see [Colliders](../physics/colliders.md).
+   Como a entidade é ativada é definida nas propriedades do colisor. Para mais informações, consulte [Colliders](../physics/colliders.md).
 
-2. Create an entity and position it where you want the scene to load.
+2. Crie uma entidade e posicione-a onde você deseja que a cena carregue.
 
-3. With the entity selected, in the **Property Grid** (on the righy by default), click **Add component** and select the **scene streaming** script.
+3. Com a entidade selecionada, no **Property Grid** (no righy por padrão), clique em **Adicionar componente** e selecione o script **scene streaming**.
 
-   ![Add script](media/add-scene-streaming-script.png)
+   <x1\/> Adicionar script<x2\/>
 
-   > [!Note]
-   > If the scene streaming script doesn't appear in the list of components, reload the assemblies.
+   > <x1\/>!Note<x2\/>
+   > Se o script de streaming de cena não aparecer na lista de componentes, recarregue os conjuntos.
 
-   Game Studio adds the script to the entity as a component.
+   Game Studio adiciona o script à entidade como um componente.
 
-   ![Scene streaming properties](media/scene-streaming-script-properties.png)
+   <x1\/> Propriedades de streaming de faixa<x2\/>
 
-4. Under **Url**, specify the scene asset you want to load.
+4. Sob **Url**, especifique o ativo de cena que deseja carregar.
 
-5. Under **Trigger**, specify the entity you created in step 1.
+5. Sob **Trigger**, especifique a entidade criada na etapa 1.
 
-At runtime, when the trigger you created in step 1 is triggered, Stride loads the scene you specified in step 4.
+No tempo de execução, quando o gatilho que você criou na etapa 1 é acionado, Stride carrega a cena que você especificou na etapa 4.
 
-### Scene streaming script properties
+### Propriedades do script de streaming de cenas
 
-![Scene streaming properties](media/scene-streaming-script-properties.png)
+<x1\/> Propriedades de streaming de faixa<x2\/>
 
-| Property | Description |
+| Propriedade | Descrição |
 |----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Pre Load Depth | The point (in [world units](world-units.md)) at which the scene begins to load. For example, if *2.5*, the scene begins to load when the player is 2.5 units into the trigger area |
-| Load Depth | The point (in [world units](world-units.md)) at which the game freezes to finish loading the scene if it hasn't loaded already. For example, if *5*, the game freezes when the player is 5 units into the trigger area |
-| Priority | The script priority. For more information, see [Scheduling and priorities](../scripts/scheduling-and-priorities.md) |
-## See also
+| Profundidade de carga | O ponto (em unidades [world](world-units.md)) em que a cena começa a carregar. Por exemplo, se *2.5*, a cena começa a carregar quando o jogador é 2,5 unidades na área de gatilho |
+| Profundidade de carga | O ponto (em unidades [world](world-units.md)) no qual o jogo congela para terminar de carregar a cena se ainda não tiver carregado. Por exemplo, se *5*, o jogo congela quando o jogador é 5 unidades na área de gatilho |
+| Prioridade | A prioridade do guião. Para mais informações, consulte [Scheduling e prioridades](../scripts/scheduling-and-priorities.md) |
+## Ver também
 
-* [Colliders](../physics/colliders.md)
+* [Coleiras](../physics/colliders.md)
 * [Triggers](../physics/triggers.md)
-* [Create and open a scene](create-a-scene.md)
-* [Navigate in the Scene Editor](navigate-in-the-scene-editor.md)
-* [Manage scenes](manage-scenes.md)
-* [Add entities](add-entities.md)
-* [Manage entities](manage-entities.md)
+* [Criar e abrir uma cena](create-a-scene.md)
+* [Navegue no Editor de Cena](navigate-in-the-scene-editor.md)
+* [Gerenciar cenas](manage-scenes.md)
+* [Adicionar entidades](add-entities.md)
+* [Gerenciar entidades](manage-entities.md)

@@ -1,1072 +1,1072 @@
 {
-    "filename": "manual\\scripts\\create-a-model-from-code.md.xlf",
-    "files": [
-        {
-            "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/create-a-model-from-code.md": [
-                [
-                    "Create a model from code",
-                    "",
-                    "Create a model from code",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/create-a-model-from-code.md",
-                    {
-                        "id": "tu1"
-                    }
-                ],
-                [
-                    "<x1\/>Beginner<x2\/>",
-                    "",
-                    "<x1\/>Beginner<x2\/>\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/create-a-model-from-code.md",
-                    {
-                        "id": "tu2"
-                    }
-                ],
-                [
-                    "<x3\/>Programmer<x4\/>",
-                    "",
-                    "<x3\/>Programmer<x4\/>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/create-a-model-from-code.md",
-                    {
-                        "id": "tu2"
-                    }
-                ],
-                [
-                    "You can create models in scripts at runtime.",
-                    "",
-                    "You can create models in scripts at runtime.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/create-a-model-from-code.md",
-                    {
-                        "id": "tu3"
-                    }
-                ],
-                [
-                    "You can do this in several different ways, including:",
-                    "",
-                    " You can do this in several different ways, including:",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/create-a-model-from-code.md",
-                    {
-                        "id": "tu3"
-                    }
-                ],
-                [
-                    "creating a model from an asset",
-                    "",
-                    "creating a model from an asset",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/create-a-model-from-code.md",
-                    {
-                        "id": "tu4"
-                    }
-                ],
-                [
-                    "creating a procedural model using built-in geometric primitives (eg a sphere or cube)",
-                    "",
-                    "creating a procedural model using built-in geometric primitives (eg a sphere or cube)",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/create-a-model-from-code.md",
-                    {
-                        "id": "tu5"
-                    }
-                ],
-                [
-                    "instantiating a prefab that contains a model (see <g1>Use prefabs<\/g1>)",
-                    "",
-                    "instantiating a prefab that contains a model (see <g1>Use prefabs<\/g1>)",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/create-a-model-from-code.md",
-                    {
-                        "id": "tu6"
-                    }
-                ],
-                [
-                    "Create a model from an asset",
-                    "",
-                    "Create a model from an asset",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/create-a-model-from-code.md",
-                    {
-                        "id": "tu7"
-                    }
-                ],
-                [
-                    "Create a new, empty synchronous script.",
-                    "",
-                    "Create a new, empty synchronous script.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/create-a-model-from-code.md",
-                    {
-                        "id": "tu8"
-                    }
-                ],
-                [
-                    "For full instructions, see <g1>Create a script<\/g1>.",
-                    "",
-                    " For full instructions, see <g1>Create a script<\/g1>.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/create-a-model-from-code.md",
-                    {
-                        "id": "tu8"
-                    }
-                ],
-                [
-                    "<x1\/>Create a script<x2\/>",
-                    "",
-                    "<x1\/>Create a script<x2\/>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/create-a-model-from-code.md",
-                    {
-                        "id": "tu9"
-                    }
-                ],
-                [
-                    "In the script, load the model using its asset URL.",
-                    "",
-                    "In the script, load the model using its asset URL.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/create-a-model-from-code.md",
-                    {
-                        "id": "tu10"
-                    }
-                ],
-                [
-                    "For example:",
-                    "",
-                    " For example:",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/create-a-model-from-code.md",
-                    {
-                        "id": "tu10"
-                    }
-                ],
-                [
-                    "\/\/ Create a new entity and add it to the scene.",
-                    "",
-                    "\/\/ Create a new entity and add it to the scene.\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/create-a-model-from-code.md",
-                    {
-                        "id": "tu11"
-                    }
-                ],
-                [
-                    "var entity = new Entity();",
-                    "",
-                    "\tvar entity = new Entity();\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/create-a-model-from-code.md",
-                    {
-                        "id": "tu11"
-                    }
-                ],
-                [
-                    "SceneSystem.SceneInstance.RootScene.Entities.Add(entity);",
-                    "",
-                    "\tSceneSystem.SceneInstance.RootScene.Entities.Add(entity);\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/create-a-model-from-code.md",
-                    {
-                        "id": "tu11"
-                    }
-                ],
-                [
-                    "\/\/ Add a model included in the game files.",
-                    "",
-                    "\r\n\/\/ Add a model included in the game files.\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/create-a-model-from-code.md",
-                    {
-                        "id": "tu11"
-                    }
-                ],
-                [
-                    "var modelComponent = entity.GetOrCreate<ModelComponent>();",
-                    "",
-                    "\tvar modelComponent = entity.GetOrCreate<ModelComponent>();\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/create-a-model-from-code.md",
-                    {
-                        "id": "tu11"
-                    }
-                ],
-                [
-                    "modelComponent.Model = Content.Load<Model>(\"MyFolder\/MyModel\");",
-                    "",
-                    "\tmodelComponent.Model = Content.Load<Model>(\"MyFolder\/MyModel\");\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/create-a-model-from-code.md",
-                    {
-                        "id": "tu11"
-                    }
-                ],
-                [
-                    "<x1\/>!Tip<x2\/>",
-                    "",
-                    "<x1\/>!Tip<x2\/>\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/create-a-model-from-code.md",
-                    {
-                        "id": "tu12"
-                    }
-                ],
-                [
-                    "To find the model's asset URL, in the <g1>Asset View<\/g1>, move the mouse over the model.",
-                    "",
-                    "To find the model's asset URL, in the <g1>Asset View<\/g1>, move the mouse over the model.\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/create-a-model-from-code.md",
-                    {
-                        "id": "tu12"
-                    }
-                ],
-                [
-                    "<x3\/>(Get asset URL<x4\/>",
-                    "",
-                    "<x3\/>(Get asset URL<x4\/>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/create-a-model-from-code.md",
-                    {
-                        "id": "tu12"
-                    }
-                ],
-                [
-                    "Add the script as a <g1>script component<\/g1> to any entity in the scene.",
-                    "",
-                    "Add the script as a <g1>script component<\/g1> to any entity in the scene.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/create-a-model-from-code.md",
-                    {
-                        "id": "tu13"
-                    }
-                ],
-                [
-                    "It doesn't matter which entity you use.",
-                    "",
-                    " It doesn't matter which entity you use.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/create-a-model-from-code.md",
-                    {
-                        "id": "tu13"
-                    }
-                ],
-                [
-                    "For instructions, see <g2>Use a script<\/g2>.",
-                    "",
-                    " For instructions, see <g2>Use a script<\/g2>.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/create-a-model-from-code.md",
-                    {
-                        "id": "tu13"
-                    }
-                ],
-                [
-                    "<x1\/>Add script component to entity<x2\/>",
-                    "",
-                    "<x1\/>Add script component to entity<x2\/>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/create-a-model-from-code.md",
-                    {
-                        "id": "tu14"
-                    }
-                ],
-                [
-                    "In the <g1>Asset View<\/g1>, right-click the model you want to create at runtime and select <g2>Include in build as root asset<\/g2>.",
-                    "",
-                    "In the <g1>Asset View<\/g1>, right-click the model you want to create at runtime and select <g2>Include in build as root asset<\/g2>.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/create-a-model-from-code.md",
-                    {
-                        "id": "tu15"
-                    }
-                ],
-                [
-                    "<x1\/>Include in build as root asset<x2\/>",
-                    "",
-                    "<x1\/>Include in build as root asset<x2\/>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/create-a-model-from-code.md",
-                    {
-                        "id": "tu16"
-                    }
-                ],
-                [
-                    "This makes sure the asset is available for the script to use at runtime.",
-                    "",
-                    "This makes sure the asset is available for the script to use at runtime.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/create-a-model-from-code.md",
-                    {
-                        "id": "tu17"
-                    }
-                ],
-                [
-                    "For more information, see <g1>Manage assets<\/g1>.",
-                    "",
-                    " For more information, see <g1>Manage assets<\/g1>.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/create-a-model-from-code.md",
-                    {
-                        "id": "tu17"
-                    }
-                ],
-                [
-                    "Create a procedural model",
-                    "",
-                    "Create a procedural model",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/create-a-model-from-code.md",
-                    {
-                        "id": "tu18"
-                    }
-                ],
-                [
-                    "Create a new, empty synchronous script.",
-                    "",
-                    "Create a new, empty synchronous script.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/create-a-model-from-code.md",
-                    {
-                        "id": "tu19"
-                    }
-                ],
-                [
-                    "For full instructions, see <g1>Create a script<\/g1>.",
-                    "",
-                    " For full instructions, see <g1>Create a script<\/g1>.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/create-a-model-from-code.md",
-                    {
-                        "id": "tu19"
-                    }
-                ],
-                [
-                    "<x1\/>Add new script<x2\/>",
-                    "",
-                    "<x1\/>Add new script<x2\/>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/create-a-model-from-code.md",
-                    {
-                        "id": "tu20"
-                    }
-                ],
-                [
-                    "Add the script as a <g1>script component<\/g1> to any entity in the scene.",
-                    "",
-                    "Add the script as a <g1>script component<\/g1> to any entity in the scene.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/create-a-model-from-code.md",
-                    {
-                        "id": "tu21"
-                    }
-                ],
-                [
-                    "It doesn't matter which entity you use.",
-                    "",
-                    " It doesn't matter which entity you use.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/create-a-model-from-code.md",
-                    {
-                        "id": "tu21"
-                    }
-                ],
-                [
-                    "For instructions, see <g2>Use a script<\/g2>.",
-                    "",
-                    " For instructions, see <g2>Use a script<\/g2>.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/create-a-model-from-code.md",
-                    {
-                        "id": "tu21"
-                    }
-                ],
-                [
-                    "<x1\/>Add script component to entity<x2\/>",
-                    "",
-                    "<x1\/>Add script component to entity<x2\/>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/create-a-model-from-code.md",
-                    {
-                        "id": "tu22"
-                    }
-                ],
-                [
-                    "In your script, instantiate an empty entity and an empty model.",
-                    "",
-                    "In your script, instantiate an empty entity and an empty model.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/create-a-model-from-code.md",
-                    {
-                        "id": "tu23"
-                    }
-                ],
-                [
-                    "For example:",
-                    "",
-                    " For example:",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/create-a-model-from-code.md",
-                    {
-                        "id": "tu23"
-                    }
-                ],
-                [
-                    "\/\/ Create an entity and add it to the scene.",
-                    "",
-                    "\/\/ Create an entity and add it to the scene.\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/create-a-model-from-code.md",
-                    {
-                        "id": "tu24"
-                    }
-                ],
-                [
-                    "var entity = new Entity();",
-                    "",
-                    "var entity = new Entity();\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/create-a-model-from-code.md",
-                    {
-                        "id": "tu24"
-                    }
-                ],
-                [
-                    "SceneSystem.SceneInstance.RootScene.Entities.Add(entity);",
-                    "",
-                    "SceneSystem.SceneInstance.RootScene.Entities.Add(entity);\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/create-a-model-from-code.md",
-                    {
-                        "id": "tu24"
-                    }
-                ],
-                [
-                    "\/\/ Create a model and assign it to the model component.",
-                    "",
-                    "\r\n\/\/ Create a model and assign it to the model component.\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/create-a-model-from-code.md",
-                    {
-                        "id": "tu24"
-                    }
-                ],
-                [
-                    "var model = new Model();",
-                    "",
-                    "var model = new Model();\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/create-a-model-from-code.md",
-                    {
-                        "id": "tu24"
-                    }
-                ],
-                [
-                    "entity.GetOrCreate<ModelComponent>().Model = model;",
-                    "",
-                    "entity.GetOrCreate<ModelComponent>().Model = model;  \r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/create-a-model-from-code.md",
-                    {
-                        "id": "tu24"
-                    }
-                ],
-                [
-                    "In your script, create a procedural model using built-in geometric primitives (eg a sphere or cube).",
-                    "",
-                    "In your script, create a procedural model using built-in geometric primitives (eg a sphere or cube).",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/create-a-model-from-code.md",
-                    {
-                        "id": "tu25"
-                    }
-                ],
-                [
-                    "For example:",
-                    "",
-                    " For example:",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/create-a-model-from-code.md",
-                    {
-                        "id": "tu25"
-                    }
-                ],
-                [
-                    "\/\/ Add one or more meshes using geometric primitives (eg spheres or cubes).",
-                    "",
-                    "\/\/ Add one or more meshes using geometric primitives (eg spheres or cubes).\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/create-a-model-from-code.md",
-                    {
-                        "id": "tu26"
-                    }
-                ],
-                [
-                    "var meshDraw = GeometricPrimitive.Sphere.New(GraphicsDevice).ToMeshDraw();",
-                    "",
-                    "var meshDraw = GeometricPrimitive.Sphere.New(GraphicsDevice).ToMeshDraw();\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/create-a-model-from-code.md",
-                    {
-                        "id": "tu26"
-                    }
-                ],
-                [
-                    "var mesh = new Mesh { Draw = meshDraw };",
-                    "",
-                    "\r\nvar mesh = new Mesh { Draw = meshDraw }; \r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/create-a-model-from-code.md",
-                    {
-                        "id": "tu26"
-                    }
-                ],
-                [
-                    "model.Meshes.Add(mesh);",
-                    "",
-                    "model.Meshes.Add(mesh);\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/create-a-model-from-code.md",
-                    {
-                        "id": "tu26"
-                    }
-                ],
-                [
-                    "<x1\/>!Note<x2\/>",
-                    "",
-                    "<x1\/>!Note<x2\/>\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/create-a-model-from-code.md",
-                    {
-                        "id": "tu27"
-                    }
-                ],
-                [
-                    "To use the code above, make sure you add <g1>using Stride.Extensions<\/g1> to the top of your script.",
-                    "",
-                    "To use the code above, make sure you add <g1>using Stride.Extensions<\/g1> to the top of your script.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/create-a-model-from-code.md",
-                    {
-                        "id": "tu27"
-                    }
-                ],
-                [
-                    "Alternatively, create a mesh using your own vertex and index buffers.",
-                    "",
-                    "Alternatively, create a mesh using your own vertex and index buffers.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/create-a-model-from-code.md",
-                    {
-                        "id": "tu28"
-                    }
-                ],
-                [
-                    "For example:",
-                    "",
-                    " For example:",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/create-a-model-from-code.md",
-                    {
-                        "id": "tu28"
-                    }
-                ],
-                [
-                    "\/\/ Create a mesh using your own vertex and index buffers.",
-                    "",
-                    "\/\/ Create a mesh using your own vertex and index buffers.\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/create-a-model-from-code.md",
-                    {
-                        "id": "tu29"
-                    }
-                ],
-                [
-                    "mesh = new Mesh { Draw = new MeshDraw { \/* Vertex buffer and index buffer setup *\/ } };",
-                    "",
-                    "\r\nmesh = new Mesh { Draw = new MeshDraw { \/* Vertex buffer and index buffer setup *\/ } };\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/create-a-model-from-code.md",
-                    {
-                        "id": "tu29"
-                    }
-                ],
-                [
-                    "model.Meshes.Add(mesh);",
-                    "",
-                    "model.Meshes.Add(mesh);\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/create-a-model-from-code.md",
-                    {
-                        "id": "tu29"
-                    }
-                ],
-                [
-                    "Here is a more complete example that draws a custom triangle..",
-                    "",
-                    "Here is a more complete example that draws a custom triangle..",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/create-a-model-from-code.md",
-                    {
-                        "id": "tu30"
-                    }
-                ],
-                [
-                    "var vertices = new VertexPositionTexture[3];",
-                    "",
-                    "var vertices = new VertexPositionTexture[3];\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/create-a-model-from-code.md",
-                    {
-                        "id": "tu31"
-                    }
-                ],
-                [
-                    "vertices[0].Position = new Vector3(0f,0f,1f);",
-                    "",
-                    "vertices[0].Position = new Vector3(0f,0f,1f);            \r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/create-a-model-from-code.md",
-                    {
-                        "id": "tu31"
-                    }
-                ],
-                [
-                    "vertices[1].Position = new Vector3(0f,1f,0f);",
-                    "",
-                    "vertices[1].Position = new Vector3(0f,1f,0f);\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/create-a-model-from-code.md",
-                    {
-                        "id": "tu31"
-                    }
-                ],
-                [
-                    "vertices[2].Position = new Vector3(0f,1f,1f);",
-                    "",
-                    "vertices[2].Position = new Vector3(0f,1f,1f);\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/create-a-model-from-code.md",
-                    {
-                        "id": "tu31"
-                    }
-                ],
-                [
-                    "var vertexBuffer = Stride.Graphics.Buffer.Vertex.New(GraphicsDevice, vertices,",
-                    "",
-                    "var vertexBuffer = Stride.Graphics.Buffer.Vertex.New(GraphicsDevice, vertices,\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/create-a-model-from-code.md",
-                    {
-                        "id": "tu31"
-                    }
-                ],
-                [
-                    "GraphicsResourceUsage.Dynamic);",
-                    "",
-                    "                                                     GraphicsResourceUsage.Dynamic);\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/create-a-model-from-code.md",
-                    {
-                        "id": "tu31"
-                    }
-                ],
-                [
-                    "int[] indices = { 0, 2, 1 };",
-                    "",
-                    "int[] indices = { 0, 2, 1 };\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/create-a-model-from-code.md",
-                    {
-                        "id": "tu31"
-                    }
-                ],
-                [
-                    "var indexBuffer = Stride.Graphics.Buffer.Index.New(GraphicsDevice, indices);",
-                    "",
-                    "var indexBuffer = Stride.Graphics.Buffer.Index.New(GraphicsDevice, indices);\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/create-a-model-from-code.md",
-                    {
-                        "id": "tu31"
-                    }
-                ],
-                [
-                    "var customMesh = new Stride.Rendering.Mesh",
-                    "",
-                    "\r\nvar customMesh = new Stride.Rendering.Mesh\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/create-a-model-from-code.md",
-                    {
-                        "id": "tu31"
-                    }
-                ],
-                [
-                    "{",
-                    "",
-                    "{ \r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/create-a-model-from-code.md",
-                    {
-                        "id": "tu31"
-                    }
-                ],
-                [
-                    "Draw = new Stride.Rendering.MeshDraw",
-                    "",
-                    "    Draw = new Stride.Rendering.MeshDraw\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/create-a-model-from-code.md",
-                    {
-                        "id": "tu31"
-                    }
-                ],
-                [
-                    "{",
-                    "",
-                    "    { \r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/create-a-model-from-code.md",
-                    {
-                        "id": "tu31"
-                    }
-                ],
-                [
-                    "\/* Vertex buffer and index buffer setup *\/",
-                    "",
-                    "        \/* Vertex buffer and index buffer setup *\/ \r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/create-a-model-from-code.md",
-                    {
-                        "id": "tu31"
-                    }
-                ],
-                [
-                    "PrimitiveType = Stride.Graphics.PrimitiveType.TriangleList,",
-                    "",
-                    "        PrimitiveType = Stride.Graphics.PrimitiveType.TriangleList,\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/create-a-model-from-code.md",
-                    {
-                        "id": "tu31"
-                    }
-                ],
-                [
-                    "DrawCount = indicies.Length,",
-                    "",
-                    "        DrawCount = indicies.Length,\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/create-a-model-from-code.md",
-                    {
-                        "id": "tu31"
-                    }
-                ],
-                [
-                    "IndexBuffer = new IndexBufferBinding(indexBuffer, true, indices.Length),",
-                    "",
-                    "        IndexBuffer = new IndexBufferBinding(indexBuffer, true, indices.Length),\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/create-a-model-from-code.md",
-                    {
-                        "id": "tu31"
-                    }
-                ],
-                [
-                    "VertexBuffers = new[] { new VertexBufferBinding(vertexBuffer,",
-                    "",
-                    "        VertexBuffers = new[] { new VertexBufferBinding(vertexBuffer, \r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/create-a-model-from-code.md",
-                    {
-                        "id": "tu31"
-                    }
-                ],
-                [
-                    "VertexPositionTexture.Layout, vertexBuffer.ElementCount) },",
-                    "",
-                    "                                  VertexPositionTexture.Layout, vertexBuffer.ElementCount) },\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/create-a-model-from-code.md",
-                    {
-                        "id": "tu31"
-                    }
-                ],
-                [
-                    "}",
-                    "",
-                    "    }\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/create-a-model-from-code.md",
-                    {
-                        "id": "tu31"
-                    }
-                ],
-                [
-                    "};",
-                    "",
-                    "};            \r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/create-a-model-from-code.md",
-                    {
-                        "id": "tu31"
-                    }
-                ],
-                [
-                    "\/\/ add the mesh to the model",
-                    "",
-                    "\/\/ add the mesh to the model\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/create-a-model-from-code.md",
-                    {
-                        "id": "tu31"
-                    }
-                ],
-                [
-                    "model.Meshes.Add(customMesh);",
-                    "",
-                    "model.Meshes.Add(customMesh);\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/create-a-model-from-code.md",
-                    {
-                        "id": "tu31"
-                    }
-                ],
-                [
-                    "<x1\/>!Note<x2\/>",
-                    "",
-                    "<x1\/>!Note<x2\/>\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/create-a-model-from-code.md",
-                    {
-                        "id": "tu32"
-                    }
-                ],
-                [
-                    "For more information about how to set up vertex and index buffers, see <g1>Drawing vertices<\/g1>.",
-                    "",
-                    "For more information about how to set up vertex and index buffers, see <g1>Drawing vertices<\/g1>.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/create-a-model-from-code.md",
-                    {
-                        "id": "tu32"
-                    }
-                ],
-                [
-                    "Finally, you need to give the model one or more materials.",
-                    "",
-                    "Finally, you need to give the model one or more materials.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/create-a-model-from-code.md",
-                    {
-                        "id": "tu33"
-                    }
-                ],
-                [
-                    "There are two ways to do this.",
-                    "",
-                    " There are two ways to do this.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/create-a-model-from-code.md",
-                    {
-                        "id": "tu33"
-                    }
-                ],
-                [
-                    "Option 1: load a material in code",
-                    "",
-                    "Option 1: load a material in code",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/create-a-model-from-code.md",
-                    {
-                        "id": "tu34"
-                    }
-                ],
-                [
-                    "In your code, load one or more materials and add them to the model.",
-                    "",
-                    "In your code, load one or more materials and add them to the model.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/create-a-model-from-code.md",
-                    {
-                        "id": "tu35"
-                    }
-                ],
-                [
-                    "Because models can use multiple materials (one for each mesh in the model), use <g1>Mesh.MaterialIndex<\/g1> to specify which materials in the list are used for which mesh.",
-                    "",
-                    " Because models can use multiple materials (one for each mesh in the model), use <g1>Mesh.MaterialIndex<\/g1> to specify which materials in the list are used for which mesh.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/create-a-model-from-code.md",
-                    {
-                        "id": "tu35"
-                    }
-                ],
-                [
-                    "For example:",
-                    "",
-                    "For example:",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/create-a-model-from-code.md",
-                    {
-                        "id": "tu36"
-                    }
-                ],
-                [
-                    "\/\/ Add one or more materials.",
-                    "",
-                    "\/\/ Add one or more materials.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/create-a-model-from-code.md",
-                    {
-                        "id": "tu37"
-                    }
-                ],
-                [
-                    "Because models might expect multiple materials (one per mesh), Mesh.MaterialIndex specifies which material in the list is used for which mesh.",
-                    "",
-                    " Because models might expect multiple materials (one per mesh), Mesh.MaterialIndex specifies which material in the list is used for which mesh.\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/create-a-model-from-code.md",
-                    {
-                        "id": "tu37"
-                    }
-                ],
-                [
-                    "Material material = Content.Load<Material>(\"MyFolder\/MyMaterial\");",
-                    "",
-                    "\r\nMaterial material = Content.Load<Material>(\"MyFolder\/MyMaterial\");\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/create-a-model-from-code.md",
-                    {
-                        "id": "tu37"
-                    }
-                ],
-                [
-                    "model.Materials.Add(material);",
-                    "",
-                    "model.Materials.Add(material);\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/create-a-model-from-code.md",
-                    {
-                        "id": "tu37"
-                    }
-                ],
-                [
-                    "In the <g1>Asset View<\/g1>, right-click every material asset your script uses and select <g2>Include in build as root asset<\/g2>.",
-                    "",
-                    "In the <g1>Asset View<\/g1>, right-click every material asset your script uses and select <g2>Include in build as root asset<\/g2>.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/create-a-model-from-code.md",
-                    {
-                        "id": "tu38"
-                    }
-                ],
-                [
-                    "<x1\/>Include in build as root asset<x2\/>",
-                    "",
-                    "<x1\/>Include in build as root asset<x2\/>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/create-a-model-from-code.md",
-                    {
-                        "id": "tu39"
-                    }
-                ],
-                [
-                    "This makes sure the asset is available for the script to use at runtime.",
-                    "",
-                    "This makes sure the asset is available for the script to use at runtime.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/create-a-model-from-code.md",
-                    {
-                        "id": "tu40"
-                    }
-                ],
-                [
-                    "For more information, see <g1>Manage assets<\/g1>.",
-                    "",
-                    " For more information, see <g1>Manage assets<\/g1>.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/create-a-model-from-code.md",
-                    {
-                        "id": "tu40"
-                    }
-                ],
-                [
-                    "Option 2:",
-                    "",
-                    "Option 2:",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/create-a-model-from-code.md",
-                    {
-                        "id": "tu41"
-                    }
-                ],
-                [
-                    "Create new materials in code",
-                    "",
-                    " Create new materials in code",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/create-a-model-from-code.md",
-                    {
-                        "id": "tu41"
-                    }
-                ],
-                [
-                    "For example:",
-                    "",
-                    "For example:",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/create-a-model-from-code.md",
-                    {
-                        "id": "tu42"
-                    }
-                ],
-                [
-                    "\/\/ Create a material (eg with red diffuse color).",
-                    "",
-                    "    \/\/ Create a material (eg with red diffuse color).\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/create-a-model-from-code.md",
-                    {
-                        "id": "tu43"
-                    }
-                ],
-                [
-                    "var materialDescription = new MaterialDescriptor",
-                    "",
-                    "    var materialDescription = new MaterialDescriptor\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/create-a-model-from-code.md",
-                    {
-                        "id": "tu43"
-                    }
-                ],
-                [
-                    "{",
-                    "",
-                    "    {\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/create-a-model-from-code.md",
-                    {
-                        "id": "tu43"
-                    }
-                ],
-                [
-                    "Attributes =",
-                    "",
-                    "        Attributes =\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/create-a-model-from-code.md",
-                    {
-                        "id": "tu43"
-                    }
-                ],
-                [
-                    "{",
-                    "",
-                    "\t    {\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/create-a-model-from-code.md",
-                    {
-                        "id": "tu43"
-                    }
-                ],
-                [
-                    "DiffuseModel = new MaterialDiffuseLambertModelFeature(),",
-                    "",
-                    "\t        DiffuseModel = new MaterialDiffuseLambertModelFeature(),\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/create-a-model-from-code.md",
-                    {
-                        "id": "tu43"
-                    }
-                ],
-                [
-                    "Diffuse = new MaterialDiffuseMapFeature(new ComputeColor { Key = MaterialKeys.DiffuseValue })",
-                    "",
-                    "\t        Diffuse = new MaterialDiffuseMapFeature(new ComputeColor { Key = MaterialKeys.DiffuseValue })\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/create-a-model-from-code.md",
-                    {
-                        "id": "tu43"
-                    }
-                ],
-                [
-                    "}",
-                    "",
-                    "\t    }\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/create-a-model-from-code.md",
-                    {
-                        "id": "tu43"
-                    }
-                ],
-                [
-                    "};",
-                    "",
-                    "    };\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/create-a-model-from-code.md",
-                    {
-                        "id": "tu43"
-                    }
-                ],
-                [
-                    "var material = Material.New(GraphicsDevice, materialDescription);",
-                    "",
-                    "    var material = Material.New(GraphicsDevice, materialDescription);\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/create-a-model-from-code.md",
-                    {
-                        "id": "tu43"
-                    }
-                ],
-                [
-                    "material.Parameters[0].Set(MaterialKeys.DiffuseValue, Color.Red);",
-                    "",
-                    "    material.Parameters[0].Set(MaterialKeys.DiffuseValue, Color.Red);\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/create-a-model-from-code.md",
-                    {
-                        "id": "tu43"
-                    }
-                ],
-                [
-                    "model.Materials.Add(0, material);",
-                    "",
-                    "    model.Materials.Add(0, material);\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/create-a-model-from-code.md",
-                    {
-                        "id": "tu43"
-                    }
-                ],
-                [
-                    "See also",
-                    "",
-                    "See also",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/create-a-model-from-code.md",
-                    {
-                        "id": "tu44"
-                    }
-                ],
-                [
-                    "Create a script",
-                    "",
-                    "<g1>Create a script<\/g1>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/create-a-model-from-code.md",
-                    {
-                        "id": "tu45"
-                    }
-                ],
-                [
-                    "Use a script",
-                    "",
-                    "<g1>Use a script<\/g1>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/create-a-model-from-code.md",
-                    {
-                        "id": "tu46"
-                    }
-                ],
-                [
-                    "Use prefabs",
-                    "",
-                    "<g1>Use prefabs<\/g1>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/create-a-model-from-code.md",
-                    {
-                        "id": "tu47"
-                    }
-                ]
-            ]
-        }
-    ],
-    "seg_enabled": false
+  "filename": "manual\\scripts\\create-a-model-from-code.md.xlf",
+  "files": [
+    {
+      "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/create-a-model-from-code.md": [
+        [
+          "Create a model from code",
+          "Criar um modelo de código",
+          "Create a model from code",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/create-a-model-from-code.md",
+          {
+            "id": "tu1"
+          }
+        ],
+        [
+          "<x1\\/>Beginner<x2\\/>",
+          "<x1\\/>Introdução<x2\\/>",
+          "<x1\\/>Beginner<x2\\/>\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/create-a-model-from-code.md",
+          {
+            "id": "tu2"
+          }
+        ],
+        [
+          "<x3\\/>Programmer<x4\\/>",
+          "<x3\\/> Programador <x4\\/>",
+          "<x3\\/>Programmer<x4\\/>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/create-a-model-from-code.md",
+          {
+            "id": "tu2"
+          }
+        ],
+        [
+          "You can create models in scripts at runtime.",
+          "Você pode criar modelos em scripts no runtime.",
+          "You can create models in scripts at runtime.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/create-a-model-from-code.md",
+          {
+            "id": "tu3"
+          }
+        ],
+        [
+          "You can do this in several different ways, including:",
+          "Você pode fazer isso de várias maneiras diferentes, incluindo:",
+          " You can do this in several different ways, including:",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/create-a-model-from-code.md",
+          {
+            "id": "tu3"
+          }
+        ],
+        [
+          "creating a model from an asset",
+          "criar um modelo de um ativo",
+          "creating a model from an asset",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/create-a-model-from-code.md",
+          {
+            "id": "tu4"
+          }
+        ],
+        [
+          "creating a procedural model using built-in geometric primitives (eg a sphere or cube)",
+          "criando um modelo processual usando primitivas geométricas incorporadas (por exemplo, uma esfera ou cubo)",
+          "creating a procedural model using built-in geometric primitives (eg a sphere or cube)",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/create-a-model-from-code.md",
+          {
+            "id": "tu5"
+          }
+        ],
+        [
+          "instantiating a prefab that contains a model (see <g1>Use prefabs<\\/g1>)",
+          "instanciando um prefab que contenha um modelo (veja <g1>Use prefabs<\\/g1>)",
+          "instantiating a prefab that contains a model (see <g1>Use prefabs<\\/g1>)",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/create-a-model-from-code.md",
+          {
+            "id": "tu6"
+          }
+        ],
+        [
+          "Create a model from an asset",
+          "Criar um modelo de um ativo",
+          "Create a model from an asset",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/create-a-model-from-code.md",
+          {
+            "id": "tu7"
+          }
+        ],
+        [
+          "Create a new, empty synchronous script.",
+          "Crie um novo e vazio script síncrono.",
+          "Create a new, empty synchronous script.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/create-a-model-from-code.md",
+          {
+            "id": "tu8"
+          }
+        ],
+        [
+          "For full instructions, see <g1>Create a script<\\/g1>.",
+          "Para instruções completas, consulte <g1>Criar um script<\\/g1>.",
+          " For full instructions, see <g1>Create a script<\\/g1>.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/create-a-model-from-code.md",
+          {
+            "id": "tu8"
+          }
+        ],
+        [
+          "<x1\\/>Create a script<x2\\/>",
+          "<x1\\/>Criar um script<x2\\/>",
+          "<x1\\/>Create a script<x2\\/>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/create-a-model-from-code.md",
+          {
+            "id": "tu9"
+          }
+        ],
+        [
+          "In the script, load the model using its asset URL.",
+          "No script, carregar o modelo usando sua URL de ativos.",
+          "In the script, load the model using its asset URL.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/create-a-model-from-code.md",
+          {
+            "id": "tu10"
+          }
+        ],
+        [
+          "For example:",
+          "Por exemplo:",
+          " For example:",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/create-a-model-from-code.md",
+          {
+            "id": "tu10"
+          }
+        ],
+        [
+          "\\/\\/ Create a new entity and add it to the scene.",
+          "\\/\\/ Criar uma nova entidade e adicioná-la à cena.",
+          "\\/\\/ Create a new entity and add it to the scene.\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/create-a-model-from-code.md",
+          {
+            "id": "tu11"
+          }
+        ],
+        [
+          "var entity = new Entity();",
+          "var entity = new Entity();",
+          "\tvar entity = new Entity();\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/create-a-model-from-code.md",
+          {
+            "id": "tu11"
+          }
+        ],
+        [
+          "SceneSystem.SceneInstance.RootScene.Entities.Add(entity);",
+          "SceneSystem.SceneInstance.RootScene.Entities.Add (entidade);",
+          "\tSceneSystem.SceneInstance.RootScene.Entities.Add(entity);\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/create-a-model-from-code.md",
+          {
+            "id": "tu11"
+          }
+        ],
+        [
+          "\\/\\/ Add a model included in the game files.",
+          "\\/\\/ Adicione um modelo incluído nos arquivos do jogo.",
+          "\r\n\\/\\/ Add a model included in the game files.\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/create-a-model-from-code.md",
+          {
+            "id": "tu11"
+          }
+        ],
+        [
+          "var modelComponent = entity.GetOrCreate<ModelComponent>();",
+          "var modelComponent = entity.GetOrCreate<ModelComponent>();",
+          "\tvar modelComponent = entity.GetOrCreate<ModelComponent>();\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/create-a-model-from-code.md",
+          {
+            "id": "tu11"
+          }
+        ],
+        [
+          "modelComponent.Model = Content.Load<Model>(\"MyFolder\\/MyModel\");",
+          "modelComponent. Modelo = Content.Load<Model>(\"MyFolder\\/MyModel\");",
+          "\tmodelComponent.Model = Content.Load<Model>(\"MyFolder\\/MyModel\");\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/create-a-model-from-code.md",
+          {
+            "id": "tu11"
+          }
+        ],
+        [
+          "<x1\\/>!Tip<x2\\/>",
+          "<x1\\/>!Tip<x2\\/>",
+          "<x1\\/>!Tip<x2\\/>\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/create-a-model-from-code.md",
+          {
+            "id": "tu12"
+          }
+        ],
+        [
+          "To find the model's asset URL, in the <g1>Asset View<\\/g1>, move the mouse over the model.",
+          "Para encontrar a URL de ativos do modelo, no <g1>Asset View<\\/g1>, mova o mouse sobre o modelo.",
+          "To find the model's asset URL, in the <g1>Asset View<\\/g1>, move the mouse over the model.\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/create-a-model-from-code.md",
+          {
+            "id": "tu12"
+          }
+        ],
+        [
+          "<x3\\/>(Get asset URL<x4\\/>",
+          "<x3\\/> (Get asset URL<x4\\/>",
+          "<x3\\/>(Get asset URL<x4\\/>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/create-a-model-from-code.md",
+          {
+            "id": "tu12"
+          }
+        ],
+        [
+          "Add the script as a <g1>script component<\\/g1> to any entity in the scene.",
+          "Adicione o script como um componente <g1>script<\\/g1> a qualquer entidade na cena.",
+          "Add the script as a <g1>script component<\\/g1> to any entity in the scene.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/create-a-model-from-code.md",
+          {
+            "id": "tu13"
+          }
+        ],
+        [
+          "It doesn't matter which entity you use.",
+          "Não importa qual entidade você usa.",
+          " It doesn't matter which entity you use.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/create-a-model-from-code.md",
+          {
+            "id": "tu13"
+          }
+        ],
+        [
+          "For instructions, see <g2>Use a script<\\/g2>.",
+          "Para instruções, veja <g2>Use um script<\\/g2>.",
+          " For instructions, see <g2>Use a script<\\/g2>.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/create-a-model-from-code.md",
+          {
+            "id": "tu13"
+          }
+        ],
+        [
+          "<x1\\/>Add script component to entity<x2\\/>",
+          "<x1\\/> Adicionar componente de script para entidade<x2\\/>",
+          "<x1\\/>Add script component to entity<x2\\/>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/create-a-model-from-code.md",
+          {
+            "id": "tu14"
+          }
+        ],
+        [
+          "In the <g1>Asset View<\\/g1>, right-click the model you want to create at runtime and select <g2>Include in build as root asset<\\/g2>.",
+          "No <g1>Asset View<\\/g1>, clique com o botão direito do mouse no modelo que você deseja criar no tempo de execução e selecione <g2>Incluir na compilação como root asset<\\/g2>.",
+          "In the <g1>Asset View<\\/g1>, right-click the model you want to create at runtime and select <g2>Include in build as root asset<\\/g2>.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/create-a-model-from-code.md",
+          {
+            "id": "tu15"
+          }
+        ],
+        [
+          "<x1\\/>Include in build as root asset<x2\\/>",
+          "<x1\\/>Incluir em compilação como root asset<x2\\/>",
+          "<x1\\/>Include in build as root asset<x2\\/>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/create-a-model-from-code.md",
+          {
+            "id": "tu16"
+          }
+        ],
+        [
+          "This makes sure the asset is available for the script to use at runtime.",
+          "Isso garante que o ativo esteja disponível para o script usar em tempo de execução.",
+          "This makes sure the asset is available for the script to use at runtime.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/create-a-model-from-code.md",
+          {
+            "id": "tu17"
+          }
+        ],
+        [
+          "For more information, see <g1>Manage assets<\\/g1>.",
+          "Para obter mais informações, consulte <g1>Gerenciar ativos<\\/g1>.",
+          " For more information, see <g1>Manage assets<\\/g1>.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/create-a-model-from-code.md",
+          {
+            "id": "tu17"
+          }
+        ],
+        [
+          "Create a procedural model",
+          "Criar um modelo processual",
+          "Create a procedural model",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/create-a-model-from-code.md",
+          {
+            "id": "tu18"
+          }
+        ],
+        [
+          "Create a new, empty synchronous script.",
+          "Crie um novo e vazio script síncrono.",
+          "Create a new, empty synchronous script.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/create-a-model-from-code.md",
+          {
+            "id": "tu19"
+          }
+        ],
+        [
+          "For full instructions, see <g1>Create a script<\\/g1>.",
+          "Para instruções completas, consulte <g1>Criar um script<\\/g1>.",
+          " For full instructions, see <g1>Create a script<\\/g1>.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/create-a-model-from-code.md",
+          {
+            "id": "tu19"
+          }
+        ],
+        [
+          "<x1\\/>Add new script<x2\\/>",
+          "<x1\\/> Adicionar novo script<x2\\/>",
+          "<x1\\/>Add new script<x2\\/>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/create-a-model-from-code.md",
+          {
+            "id": "tu20"
+          }
+        ],
+        [
+          "Add the script as a <g1>script component<\\/g1> to any entity in the scene.",
+          "Adicione o script como um componente <g1>script<\\/g1> a qualquer entidade na cena.",
+          "Add the script as a <g1>script component<\\/g1> to any entity in the scene.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/create-a-model-from-code.md",
+          {
+            "id": "tu21"
+          }
+        ],
+        [
+          "It doesn't matter which entity you use.",
+          "Não importa qual entidade você usa.",
+          " It doesn't matter which entity you use.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/create-a-model-from-code.md",
+          {
+            "id": "tu21"
+          }
+        ],
+        [
+          "For instructions, see <g2>Use a script<\\/g2>.",
+          "Para instruções, veja <g2>Use um script<\\/g2>.",
+          " For instructions, see <g2>Use a script<\\/g2>.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/create-a-model-from-code.md",
+          {
+            "id": "tu21"
+          }
+        ],
+        [
+          "<x1\\/>Add script component to entity<x2\\/>",
+          "<x1\\/> Adicionar componente de script para entidade<x2\\/>",
+          "<x1\\/>Add script component to entity<x2\\/>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/create-a-model-from-code.md",
+          {
+            "id": "tu22"
+          }
+        ],
+        [
+          "In your script, instantiate an empty entity and an empty model.",
+          "No seu script, posicione uma entidade vazia e um modelo vazio.",
+          "In your script, instantiate an empty entity and an empty model.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/create-a-model-from-code.md",
+          {
+            "id": "tu23"
+          }
+        ],
+        [
+          "For example:",
+          "Por exemplo:",
+          " For example:",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/create-a-model-from-code.md",
+          {
+            "id": "tu23"
+          }
+        ],
+        [
+          "\\/\\/ Create an entity and add it to the scene.",
+          "\\/\\/ Criar uma entidade e adicioná-la à cena.",
+          "\\/\\/ Create an entity and add it to the scene.\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/create-a-model-from-code.md",
+          {
+            "id": "tu24"
+          }
+        ],
+        [
+          "var entity = new Entity();",
+          "var entity = new Entity();",
+          "var entity = new Entity();\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/create-a-model-from-code.md",
+          {
+            "id": "tu24"
+          }
+        ],
+        [
+          "SceneSystem.SceneInstance.RootScene.Entities.Add(entity);",
+          "SceneSystem.SceneInstance.RootScene.Entities.Add (entidade);",
+          "SceneSystem.SceneInstance.RootScene.Entities.Add(entity);\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/create-a-model-from-code.md",
+          {
+            "id": "tu24"
+          }
+        ],
+        [
+          "\\/\\/ Create a model and assign it to the model component.",
+          "\\/\\/ Criar um modelo e atribuí-lo ao componente do modelo.",
+          "\r\n\\/\\/ Create a model and assign it to the model component.\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/create-a-model-from-code.md",
+          {
+            "id": "tu24"
+          }
+        ],
+        [
+          "var model = new Model();",
+          "modelo var = novo Modelo();",
+          "var model = new Model();\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/create-a-model-from-code.md",
+          {
+            "id": "tu24"
+          }
+        ],
+        [
+          "entity.GetOrCreate<ModelComponent>().Model = model;",
+          "entity.GetOrCreate<ModelComponent>(). Modelo = modelo;",
+          "entity.GetOrCreate<ModelComponent>().Model = model;  \r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/create-a-model-from-code.md",
+          {
+            "id": "tu24"
+          }
+        ],
+        [
+          "In your script, create a procedural model using built-in geometric primitives (eg a sphere or cube).",
+          "Em seu script, crie um modelo processual usando primitivas geométricas incorporadas (por exemplo, uma esfera ou cubo).",
+          "In your script, create a procedural model using built-in geometric primitives (eg a sphere or cube).",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/create-a-model-from-code.md",
+          {
+            "id": "tu25"
+          }
+        ],
+        [
+          "For example:",
+          "Por exemplo:",
+          " For example:",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/create-a-model-from-code.md",
+          {
+            "id": "tu25"
+          }
+        ],
+        [
+          "\\/\\/ Add one or more meshes using geometric primitives (eg spheres or cubes).",
+          "\\/\\/ Adicione uma ou mais malhas usando primitivas geométricas (por exemplo, esferas ou cubos).",
+          "\\/\\/ Add one or more meshes using geometric primitives (eg spheres or cubes).\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/create-a-model-from-code.md",
+          {
+            "id": "tu26"
+          }
+        ],
+        [
+          "var meshDraw = GeometricPrimitive.Sphere.New(GraphicsDevice).ToMeshDraw();",
+          "var meshDraw = GeometricPrimitive.Sphere.New (GraphicsDevice).ToMeshDraw();",
+          "var meshDraw = GeometricPrimitive.Sphere.New(GraphicsDevice).ToMeshDraw();\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/create-a-model-from-code.md",
+          {
+            "id": "tu26"
+          }
+        ],
+        [
+          "var mesh = new Mesh { Draw = meshDraw };",
+          "var mesh = new Mesh { Draw = meshDraw };",
+          "\r\nvar mesh = new Mesh { Draw = meshDraw }; \r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/create-a-model-from-code.md",
+          {
+            "id": "tu26"
+          }
+        ],
+        [
+          "model.Meshes.Add(mesh);",
+          "modelo. Meshes.Add(mesh);",
+          "model.Meshes.Add(mesh);\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/create-a-model-from-code.md",
+          {
+            "id": "tu26"
+          }
+        ],
+        [
+          "<x1\\/>!Note<x2\\/>",
+          "<x1\\/>!Note<x2\\/>",
+          "<x1\\/>!Note<x2\\/>\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/create-a-model-from-code.md",
+          {
+            "id": "tu27"
+          }
+        ],
+        [
+          "To use the code above, make sure you add <g1>using Stride.Extensions<\\/g1> to the top of your script.",
+          "Para usar o código acima, certifique-se de adicionar <g1>usando Stride. Extensões<\\/g1> para o topo do seu script.",
+          "To use the code above, make sure you add <g1>using Stride.Extensions<\\/g1> to the top of your script.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/create-a-model-from-code.md",
+          {
+            "id": "tu27"
+          }
+        ],
+        [
+          "Alternatively, create a mesh using your own vertex and index buffers.",
+          "Alternativamente, crie uma malha usando seu próprio vértice e buffers de índice.",
+          "Alternatively, create a mesh using your own vertex and index buffers.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/create-a-model-from-code.md",
+          {
+            "id": "tu28"
+          }
+        ],
+        [
+          "For example:",
+          "Por exemplo:",
+          " For example:",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/create-a-model-from-code.md",
+          {
+            "id": "tu28"
+          }
+        ],
+        [
+          "\\/\\/ Create a mesh using your own vertex and index buffers.",
+          "\\/\\/ Criar uma malha usando seu próprio vértice e buffers de índice.",
+          "\\/\\/ Create a mesh using your own vertex and index buffers.\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/create-a-model-from-code.md",
+          {
+            "id": "tu29"
+          }
+        ],
+        [
+          "mesh = new Mesh { Draw = new MeshDraw { \\/* Vertex buffer and index buffer setup *\\/ } };",
+          "mesh = novo Mesh { Draw = novo MeshDraw { \\/* Tampão de vértice e configuração de tampão de índice *\\/ } };",
+          "\r\nmesh = new Mesh { Draw = new MeshDraw { \\/* Vertex buffer and index buffer setup *\\/ } };\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/create-a-model-from-code.md",
+          {
+            "id": "tu29"
+          }
+        ],
+        [
+          "model.Meshes.Add(mesh);",
+          "modelo. Meshes.Add(mesh);",
+          "model.Meshes.Add(mesh);\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/create-a-model-from-code.md",
+          {
+            "id": "tu29"
+          }
+        ],
+        [
+          "Here is a more complete example that draws a custom triangle..",
+          "Aqui está um exemplo mais completo que desenha um triângulo personalizado..",
+          "Here is a more complete example that draws a custom triangle..",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/create-a-model-from-code.md",
+          {
+            "id": "tu30"
+          }
+        ],
+        [
+          "var vertices = new VertexPositionTexture[3];",
+          "vértices var = novo VertexPositionTexture[3];",
+          "var vertices = new VertexPositionTexture[3];\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/create-a-model-from-code.md",
+          {
+            "id": "tu31"
+          }
+        ],
+        [
+          "vertices[0].Position = new Vector3(0f,0f,1f);",
+          "vértices[0].Posição = novo Vector3(0f,0f,1f);",
+          "vertices[0].Position = new Vector3(0f,0f,1f);            \r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/create-a-model-from-code.md",
+          {
+            "id": "tu31"
+          }
+        ],
+        [
+          "vertices[1].Position = new Vector3(0f,1f,0f);",
+          "vértices[1].Posição = novo Vector3(0f,1f,0f);",
+          "vertices[1].Position = new Vector3(0f,1f,0f);\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/create-a-model-from-code.md",
+          {
+            "id": "tu31"
+          }
+        ],
+        [
+          "vertices[2].Position = new Vector3(0f,1f,1f);",
+          "vértices[2].Posição = novo Vector3(0f,1f,1f);",
+          "vertices[2].Position = new Vector3(0f,1f,1f);\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/create-a-model-from-code.md",
+          {
+            "id": "tu31"
+          }
+        ],
+        [
+          "var vertexBuffer = Stride.Graphics.Buffer.Vertex.New(GraphicsDevice, vertices,",
+          "var vertexBuffer = Stride.Graphics.Buffer.Vertex.New (GraphicsDevice, vértices,",
+          "var vertexBuffer = Stride.Graphics.Buffer.Vertex.New(GraphicsDevice, vertices,\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/create-a-model-from-code.md",
+          {
+            "id": "tu31"
+          }
+        ],
+        [
+          "GraphicsResourceUsage.Dynamic);",
+          "GraphicsResourceUsage.Dynamic);",
+          "                                                     GraphicsResourceUsage.Dynamic);\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/create-a-model-from-code.md",
+          {
+            "id": "tu31"
+          }
+        ],
+        [
+          "int[] indices = { 0, 2, 1 };",
+          "índices = { 0, 2, 1 };",
+          "int[] indices = { 0, 2, 1 };\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/create-a-model-from-code.md",
+          {
+            "id": "tu31"
+          }
+        ],
+        [
+          "var indexBuffer = Stride.Graphics.Buffer.Index.New(GraphicsDevice, indices);",
+          "var indexBuffer = Stride.Graphics.Buffer.Index.New (GraphicsDevice, índices);",
+          "var indexBuffer = Stride.Graphics.Buffer.Index.New(GraphicsDevice, indices);\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/create-a-model-from-code.md",
+          {
+            "id": "tu31"
+          }
+        ],
+        [
+          "var customMesh = new Stride.Rendering.Mesh",
+          "vara personalizada Malha = novo Stride. Renderização. Malha de malha",
+          "\r\nvar customMesh = new Stride.Rendering.Mesh\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/create-a-model-from-code.md",
+          {
+            "id": "tu31"
+          }
+        ],
+        [
+          "{",
+          "(",
+          "{ \r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/create-a-model-from-code.md",
+          {
+            "id": "tu31"
+          }
+        ],
+        [
+          "Draw = new Stride.Rendering.MeshDraw",
+          "Desenho = novo Stride.Rendering.MeshDraw",
+          "    Draw = new Stride.Rendering.MeshDraw\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/create-a-model-from-code.md",
+          {
+            "id": "tu31"
+          }
+        ],
+        [
+          "{",
+          "(",
+          "    { \r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/create-a-model-from-code.md",
+          {
+            "id": "tu31"
+          }
+        ],
+        [
+          "\\/* Vertex buffer and index buffer setup *\\/",
+          "\\/* Tampão de vértice e configuração de tampão de índice *\\/",
+          "        \\/* Vertex buffer and index buffer setup *\\/ \r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/create-a-model-from-code.md",
+          {
+            "id": "tu31"
+          }
+        ],
+        [
+          "PrimitiveType = Stride.Graphics.PrimitiveType.TriangleList,",
+          "PrimitiveType = Stride.Graphics.PrimitiveType.TriangleList,",
+          "        PrimitiveType = Stride.Graphics.PrimitiveType.TriangleList,\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/create-a-model-from-code.md",
+          {
+            "id": "tu31"
+          }
+        ],
+        [
+          "DrawCount = indicies.Length,",
+          "DrawCount = indícios. Comprimento,",
+          "        DrawCount = indicies.Length,\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/create-a-model-from-code.md",
+          {
+            "id": "tu31"
+          }
+        ],
+        [
+          "IndexBuffer = new IndexBufferBinding(indexBuffer, true, indices.Length),",
+          "IndexBuffer = novo IndexBufferBinding(indexBuffer, true, indices.Length),",
+          "        IndexBuffer = new IndexBufferBinding(indexBuffer, true, indices.Length),\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/create-a-model-from-code.md",
+          {
+            "id": "tu31"
+          }
+        ],
+        [
+          "VertexBuffers = new[] { new VertexBufferBinding(vertexBuffer,",
+          "VertexBuffers = novo[] { novo VertexBufferBinding (vertexBuffer,",
+          "        VertexBuffers = new[] { new VertexBufferBinding(vertexBuffer, \r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/create-a-model-from-code.md",
+          {
+            "id": "tu31"
+          }
+        ],
+        [
+          "VertexPositionTexture.Layout, vertexBuffer.ElementCount) },",
+          "VertexPositionTexture.Layout, vertexBuffer.ElementCount) },",
+          "                                  VertexPositionTexture.Layout, vertexBuffer.ElementCount) },\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/create-a-model-from-code.md",
+          {
+            "id": "tu31"
+          }
+        ],
+        [
+          "}",
+          "",
+          "    }\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/create-a-model-from-code.md",
+          {
+            "id": "tu31"
+          }
+        ],
+        [
+          "};",
+          "};",
+          "};            \r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/create-a-model-from-code.md",
+          {
+            "id": "tu31"
+          }
+        ],
+        [
+          "\\/\\/ add the mesh to the model",
+          "\\/\\/ adicionar a malha ao modelo",
+          "\\/\\/ add the mesh to the model\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/create-a-model-from-code.md",
+          {
+            "id": "tu31"
+          }
+        ],
+        [
+          "model.Meshes.Add(customMesh);",
+          "model.Meshes.Add (personalizado Malha);",
+          "model.Meshes.Add(customMesh);\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/create-a-model-from-code.md",
+          {
+            "id": "tu31"
+          }
+        ],
+        [
+          "<x1\\/>!Note<x2\\/>",
+          "<x1\\/>!Note<x2\\/>",
+          "<x1\\/>!Note<x2\\/>\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/create-a-model-from-code.md",
+          {
+            "id": "tu32"
+          }
+        ],
+        [
+          "For more information about how to set up vertex and index buffers, see <g1>Drawing vertices<\\/g1>.",
+          "Para obter mais informações sobre como configurar os amortecedores de vértice e índice, consulte os vértices <g1>Drawing<\\/g1>.",
+          "For more information about how to set up vertex and index buffers, see <g1>Drawing vertices<\\/g1>.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/create-a-model-from-code.md",
+          {
+            "id": "tu32"
+          }
+        ],
+        [
+          "Finally, you need to give the model one or more materials.",
+          "Finalmente, você precisa dar o modelo um ou mais materiais.",
+          "Finally, you need to give the model one or more materials.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/create-a-model-from-code.md",
+          {
+            "id": "tu33"
+          }
+        ],
+        [
+          "There are two ways to do this.",
+          "Há duas formas de fazer isto.",
+          " There are two ways to do this.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/create-a-model-from-code.md",
+          {
+            "id": "tu33"
+          }
+        ],
+        [
+          "Option 1: load a material in code",
+          "Opção 1: carregar um material no código",
+          "Option 1: load a material in code",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/create-a-model-from-code.md",
+          {
+            "id": "tu34"
+          }
+        ],
+        [
+          "In your code, load one or more materials and add them to the model.",
+          "No seu código, carregar um ou mais materiais e adicioná-los ao modelo.",
+          "In your code, load one or more materials and add them to the model.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/create-a-model-from-code.md",
+          {
+            "id": "tu35"
+          }
+        ],
+        [
+          "Because models can use multiple materials (one for each mesh in the model), use <g1>Mesh.MaterialIndex<\\/g1> to specify which materials in the list are used for which mesh.",
+          "Como os modelos podem usar vários materiais (um para cada malha no modelo), use <g1>Mesh.MaterialIndex<\\/g1> para especificar quais materiais na lista são usados para que malha.",
+          " Because models can use multiple materials (one for each mesh in the model), use <g1>Mesh.MaterialIndex<\\/g1> to specify which materials in the list are used for which mesh.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/create-a-model-from-code.md",
+          {
+            "id": "tu35"
+          }
+        ],
+        [
+          "For example:",
+          "Por exemplo:",
+          "For example:",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/create-a-model-from-code.md",
+          {
+            "id": "tu36"
+          }
+        ],
+        [
+          "\\/\\/ Add one or more materials.",
+          "\\/\\/ Adicione um ou mais materiais.",
+          "\\/\\/ Add one or more materials.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/create-a-model-from-code.md",
+          {
+            "id": "tu37"
+          }
+        ],
+        [
+          "Because models might expect multiple materials (one per mesh), Mesh.MaterialIndex specifies which material in the list is used for which mesh.",
+          "Como os modelos podem esperar vários materiais (um por malha), Mesh.MaterialIndex especifica qual material na lista é usado para que malha.",
+          " Because models might expect multiple materials (one per mesh), Mesh.MaterialIndex specifies which material in the list is used for which mesh.\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/create-a-model-from-code.md",
+          {
+            "id": "tu37"
+          }
+        ],
+        [
+          "Material material = Content.Load<Material>(\"MyFolder\\/MyMaterial\");",
+          "Material material = Conteúdo.Load<Material>(\"MyFolder\\/MyMaterial\");",
+          "\r\nMaterial material = Content.Load<Material>(\"MyFolder\\/MyMaterial\");\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/create-a-model-from-code.md",
+          {
+            "id": "tu37"
+          }
+        ],
+        [
+          "model.Materials.Add(material);",
+          "modelo. Material.Adicionar (material);",
+          "model.Materials.Add(material);\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/create-a-model-from-code.md",
+          {
+            "id": "tu37"
+          }
+        ],
+        [
+          "In the <g1>Asset View<\\/g1>, right-click every material asset your script uses and select <g2>Include in build as root asset<\\/g2>.",
+          "No <g1>Asset View<\\/g1>, clique com o botão direito de cada ativo de material que o seu script usa e selecione <g2>Incluir na compilação como root asset<\\/g2>.",
+          "In the <g1>Asset View<\\/g1>, right-click every material asset your script uses and select <g2>Include in build as root asset<\\/g2>.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/create-a-model-from-code.md",
+          {
+            "id": "tu38"
+          }
+        ],
+        [
+          "<x1\\/>Include in build as root asset<x2\\/>",
+          "<x1\\/>Incluir em compilação como root asset<x2\\/>",
+          "<x1\\/>Include in build as root asset<x2\\/>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/create-a-model-from-code.md",
+          {
+            "id": "tu39"
+          }
+        ],
+        [
+          "This makes sure the asset is available for the script to use at runtime.",
+          "Isso garante que o ativo esteja disponível para o script usar em tempo de execução.",
+          "This makes sure the asset is available for the script to use at runtime.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/create-a-model-from-code.md",
+          {
+            "id": "tu40"
+          }
+        ],
+        [
+          "For more information, see <g1>Manage assets<\\/g1>.",
+          "Para obter mais informações, consulte <g1>Gerenciar ativos<\\/g1>.",
+          " For more information, see <g1>Manage assets<\\/g1>.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/create-a-model-from-code.md",
+          {
+            "id": "tu40"
+          }
+        ],
+        [
+          "Option 2:",
+          "Opção 2:",
+          "Option 2:",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/create-a-model-from-code.md",
+          {
+            "id": "tu41"
+          }
+        ],
+        [
+          "Create new materials in code",
+          "Criar novos materiais em código",
+          " Create new materials in code",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/create-a-model-from-code.md",
+          {
+            "id": "tu41"
+          }
+        ],
+        [
+          "For example:",
+          "Por exemplo:",
+          "For example:",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/create-a-model-from-code.md",
+          {
+            "id": "tu42"
+          }
+        ],
+        [
+          "\\/\\/ Create a material (eg with red diffuse color).",
+          "\\/\\/ Criar um material (por exemplo, com cor difusa vermelha).",
+          "    \\/\\/ Create a material (eg with red diffuse color).\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/create-a-model-from-code.md",
+          {
+            "id": "tu43"
+          }
+        ],
+        [
+          "var materialDescription = new MaterialDescriptor",
+          "material de vareta Descrição: new MaterialDescriptor",
+          "    var materialDescription = new MaterialDescriptor\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/create-a-model-from-code.md",
+          {
+            "id": "tu43"
+          }
+        ],
+        [
+          "{",
+          "(",
+          "    {\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/create-a-model-from-code.md",
+          {
+            "id": "tu43"
+          }
+        ],
+        [
+          "Attributes =",
+          "Atributos =",
+          "        Attributes =\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/create-a-model-from-code.md",
+          {
+            "id": "tu43"
+          }
+        ],
+        [
+          "{",
+          "(",
+          "\t    {\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/create-a-model-from-code.md",
+          {
+            "id": "tu43"
+          }
+        ],
+        [
+          "DiffuseModel = new MaterialDiffuseLambertModelFeature(),",
+          "DiffuseModel = novo MaterialDiffuseLambertModelFeature(),",
+          "\t        DiffuseModel = new MaterialDiffuseLambertModelFeature(),\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/create-a-model-from-code.md",
+          {
+            "id": "tu43"
+          }
+        ],
+        [
+          "Diffuse = new MaterialDiffuseMapFeature(new ComputeColor { Key = MaterialKeys.DiffuseValue })",
+          "Diffuse = novo MaterialDiffuseMapFeature (novo ComputeColor { Chave = MaterialKeys.DiffuseValue })",
+          "\t        Diffuse = new MaterialDiffuseMapFeature(new ComputeColor { Key = MaterialKeys.DiffuseValue })\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/create-a-model-from-code.md",
+          {
+            "id": "tu43"
+          }
+        ],
+        [
+          "}",
+          "",
+          "\t    }\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/create-a-model-from-code.md",
+          {
+            "id": "tu43"
+          }
+        ],
+        [
+          "};",
+          "};",
+          "    };\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/create-a-model-from-code.md",
+          {
+            "id": "tu43"
+          }
+        ],
+        [
+          "var material = Material.New(GraphicsDevice, materialDescription);",
+          "var material = Material.Novo (GráficoDispositivo, materialDescrição);",
+          "    var material = Material.New(GraphicsDevice, materialDescription);\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/create-a-model-from-code.md",
+          {
+            "id": "tu43"
+          }
+        ],
+        [
+          "material.Parameters[0].Set(MaterialKeys.DiffuseValue, Color.Red);",
+          "material. Parâmetros[0]. Conjunto (MaterialKeys.DiffuseValue, Color.Red);",
+          "    material.Parameters[0].Set(MaterialKeys.DiffuseValue, Color.Red);\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/create-a-model-from-code.md",
+          {
+            "id": "tu43"
+          }
+        ],
+        [
+          "model.Materials.Add(0, material);",
+          "modelo. Material.Add(0, material);",
+          "    model.Materials.Add(0, material);\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/create-a-model-from-code.md",
+          {
+            "id": "tu43"
+          }
+        ],
+        [
+          "See also",
+          "Ver também",
+          "See also",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/create-a-model-from-code.md",
+          {
+            "id": "tu44"
+          }
+        ],
+        [
+          "Create a script",
+          "Criar um script",
+          "<g1>Create a script<\\/g1>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/create-a-model-from-code.md",
+          {
+            "id": "tu45"
+          }
+        ],
+        [
+          "Use a script",
+          "Use um script",
+          "<g1>Use a script<\\/g1>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/create-a-model-from-code.md",
+          {
+            "id": "tu46"
+          }
+        ],
+        [
+          "Use prefabs",
+          "Use prefabs",
+          "<g1>Use prefabs<\\/g1>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/create-a-model-from-code.md",
+          {
+            "id": "tu47"
+          }
+        ]
+      ]
+    }
+  ],
+  "seg_enabled": false
 }

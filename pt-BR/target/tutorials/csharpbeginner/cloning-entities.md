@@ -1,14 +1,14 @@
-# Cloning an entity
-You can find this sample in the tutorial project: **Menu** &rarr; **Cloning entities**
+# Clonagem de uma entidade
+Você pode encontrar esta amostra no projeto tutorial: **Menu** → ** Entidades de clonagem**
 
-## Explanation
-This C# Beginner tutorial covers how to clone an existing entity and how to add that clone to the scene.
+## Explicação
+Este tutorial C# Beginner abrange como clonar uma entidade existente e como adicionar esse clone à cena.
 
-A cloned entity is an exact copy of an entity, which means that the Transform and all other components with their set values are copied too.
+Uma entidade clonada é uma cópia exata de uma entidade, o que significa que o Transform e todos os outros componentes com seus valores definidos também são copiados.
 
-![Cloning entities](media/cloning-entities.webp)
+<x1\/> Entidades de clonagem<x2\/>
 
-> [!Video https://www.youtube.com/embed/klcTyUDI1yg]
+> <x1\/>!Vídeo https:\/\/www.youtube.com\/embed\/klcTyUDI1yg<x2\/>
 
-## Code
-[!code-csharp[Entity](../../../../stride/samples/Tutorials/CSharpBeginner/CSharpBeginner/CSharpBeginner.Game/Code/CloneEntityDemo.cs)]
+## Código
+[!code-csharp[Entidade](../../../../stride/samples/Tutorials/CSharpBeginner/CSharpBeginner/CSharpBeginner.Game/Code/CloneEntityDemo.cs)]

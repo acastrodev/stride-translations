@@ -1,184 +1,184 @@
-# Custom shaders
+# Sombreadores personalizados
 
-<span class="badge text-bg-primary">Intermediate</span>
-<span class="badge text-bg-success">Programmer</span>
+<x1\/> Intermediário <x2\/>
+<x3\/> Programador <x4\/>
 
-You can write your own shaders in Visual Studio and use them in [material attributes](../materials/material-attributes.md). For example, you can write a shader to add textures to materials based on the objects' world positions, or generate noise and use it to randomize material properties.
+Você pode escrever seus próprios shaders no Visual Studio e usá-los em atributos [material](../materials/material-attributes.md). Por exemplo, você pode escrever um shader para adicionar texturas a materiais baseados nas posições mundiais dos objetos, ou gerar ruído e usá-lo para aleatorizar propriedades materiais.
 
-As shaders are text files, you can add comments, enable and disable lines of code, and edit them like any other code file. This makes them easy to maintain and iterate.
+Como shaders são arquivos de texto, você pode adicionar comentários, ativar e desativar linhas de código e editá-los como qualquer outro arquivo de código. Isso os torna fáceis de manter e iterar.
 
-You can also use custom shaders to create custom post effects. For more information, see [Custom color transforms](../post-effects/color-transforms/custom-color-transforms.md).
+Você também pode usar shaders personalizados para criar efeitos pós personalizados. Para mais informações, consulte [Custom color transforms](../post-effects/color-transforms/custom-color-transforms.md).
 
-## Create a shader
+## Criar um shader
 
-1. Make sure you have the [Stride Visual Studio extension](../../get-started/visual-studio-extension.md) installed. This is necessary to convert the shader files from SDSL ([Stride shading language](index.md)) to `.cs` files.
+1. Certifique-se de ter a extensão [Stride Visual Studio](../../get-started/visual-studio-extension.md) instalada. Isso é necessário para converter os arquivos shader de SDSL ([Stride shading language](index.md)) para `.cs` arquivos.
 
-2. In Game Studio, in the toolbar, click ![Open in IDE](../../get-started/media/launch-your-game-ide-icon.png) (**Open in IDE**) to open your project in Visual Studio.
+2. No Game Studio, na barra de ferramentas, clique em <x1\/>Open in IDE<x2\/> (**Open in IDE**) para abrir seu projeto no Visual Studio.
 
-3. In the Visual Studio **Solution Explorer**, right-click the project (eg *MyGame.Game*) and select **Add > New item**.
+3. No Visual Studio **Solution Explorer**, clique com o botão direito do mouse no projeto (por exemplo *MyGame.Game*) e selecione **Add > Novo item**.
 
-   ![New item](media/new-item.png)
+   <x1\/> Novo item<x2\/>
 
-4. Select **Class**.
+4. Selecione **Class**.
 
-   ![Select class](media/select-class.png)
+   <x1\/>Selecionar classe<x2\/>
 
-5. In the **Name** field, specify a name with the extension **.sdsl** (eg *MyShader.sdsl*), and click **Add**.
+5. No campo **Name**, especifique um nome com a extensão **.sdsl** (por exemplo *MyShader.sdsl*), e clique em **Add**.
 
-   ![Select class](media/rename-file.png)
+   <x1\/>Selecionar classe<x2\/>
 
-   The Stride Visual Studio extension automatically generates a `.cs` file from the `.sdsl` file. The Solution Explorer lists it as a child of the `.sdsl` file.
+   A extensão do Stride Visual Studio gera automaticamente um arquivo `.cs` do arquivo `.sdsl`. O Solution Explorer lista-o como uma criança do arquivo `.sdsl`.
 
-   ![My shader](media/my-shader.png)
+   <x1\/> Meu shader<x2\/>
 
-6. Open the `.sdsl` file, remove the existing lines, and write your shader.
+6. Abra o arquivo `.sdsl`, remova as linhas existentes e escreva o seu shader.
 
-   Shaders are written in Stride Shading Language (SDSL), which is based on HLSL. For more information, see [Shading language](index.md).
+   Shaders são escritos em Stride Shading Language (SDSL), que é baseado em HLSL. Para mais informações, consulte [Shading language](index.md).
 
-   For example, this shader creates a green color (`RGBA 0;1;0;1`):
+   Por exemplo, este shader cria uma cor verde (`RGBA 0;1;0;1`):
 
    ```cs
    namespace MyGame
-   {
-       shader MyShader : ComputeColor
-       {
+   (
+       shader MyShader: Cor da composição
+       (
            override float4 Compute()
-           {
-               return float4(0, 1, 0, 1);
+           (
+               retorno float4(0, 1, 0, 1);
            }
        };
    }
    ```
 
-   > [!Note]
-   > Make sure the shader name in the file (eg `MyShader` above) is the same as the filename.
+   > <x1\/>!Note<x2\/>
+   > Certifique-se de que o nome do shader no arquivo (por exemplo `MyShader` acima) é o mesmo que o nome do arquivo.
 
-   > [!Note]
-   > To be accessible from the Game Studio Property Grid, the shader must inherit from `ComputeColor`.
-   > As '`ComputeColor` always returns a float4 value, properties that take float values (eg metalness and gloss maps) use the first component (the red component) of the value returned by `ComputeColor`.
+   > <x1\/>!Note<x2\/>
+   > Para ser acessível a partir da Game Studio Property Grid, o shader deve herdar de `ComputeColor`.
+   > Como '`ComputeColor` sempre retorna um valor float4, propriedades que tomam valores de flutuador (por exemplo, metalness e mapas de brilho) usam o primeiro componente (o componente vermelho) do valor retornado por `ComputeColor`.
 
-7. Save all the files in the solution (**File > Save All**).
+7. Salve todos os arquivos na solução (**File > Save All**).
 
-8. In Game Studio, reload the assemblies.
+8. No Game Studio, recarregue os conjuntos.
 
-   ![Reload assemblies](../../particles/tutorials/media/reload-assemblies.png)
+   <x1\/>Reload assemblies<x2\/>
 
-   The **Asset View** lists the shader in the same directory as your scripts (eg **MyGame.Game**).
+   O **Asset View** lista o shader no mesmo diretório que seus scripts (por exemplo **MyGame.Game**).
 
-   ![Shader in Asset View](media/shader-in-asset-view.png)
+   <x1\/>Shader em Asset View<x2\/>
 
-   > [!Note]
-   > In some situations, Game Studio incorrectly identifies the shader as a script, as in the screenshot below:
+   > <x1\/>!Note<x2\/>
+   > Em algumas situações, Game Studio identifica incorretamente o shader como um script, como na captura de tela abaixo:
 
-   > ![Shader as script](media/shader-as-script-in-asset-view.png)
+   > <x1\/>Shader como script<x2\/>
 
-   > If this happens, restart Game Studio (**File > Reload project**).
+   > Se isso acontecer, reinicie o Game Studio (**File > Recarregar projeto**).
 
-## Use a custom shader
+## Use um shader personalizado
 
-You can use custom shaders in any [material attribute](../materials/material-attributes.md).
+Você pode usar shaders personalizados em qualquer atributo [material](../materials/material-attributes.md).
 
-1. In the **Asset View**, select the material you want to use the shader in.
+1. No **Asset View**, selecione o material que você deseja usar no shader.
 
-2. In the **Property Grid**, next to the property you want to control with the shader, click ![Blue arrow button](~/manual/game-studio/media/blue-arrow-icon.png) (**Change**) and select **Shader**.
+2. No **Property Grid**, ao lado da propriedade que você deseja controlar com o shader, clique em <x1\/>Blue arrow button<x2\/> (**Change**) e selecione **.**
 
-   ![Select Shader](media/select-shader.png)
+   <x1\/>Select Shader<x2\/>
 
-3. In the field, type the name of your shader (eg *MyShader*).
+3. No campo, digite o nome do seu shader (por exemplo *MyShader*).
 
-   ![Type shader](media/type-shader.png)
+   <x1\/>Tope shader<x2\/>
 
-   The property uses the shader you specify.
+   A propriedade usa o shader que você especificar.
 
-> [!Tip]
-> When you make a change to the `.sdsl` file in Visual Studio and save it, Game Studio automatically updates the project with your changes. If this doesn't happen, restart Game Studio (**File > Reload project**).
+> <x1\/>!Tip<x2\/>
+> Quando você faz uma mudança no arquivo `.sdsl` no Visual Studio e salvá-lo, o Game Studio atualiza automaticamente o projeto com suas mudanças. Se isso não acontecer, reinicie o Game Studio (**File > Recarregar projeto**).
 
-> [!Note]
-> If you delete a shader from the project assets, to prevent errors, make sure you also remove it from the properties of materials that use it.
+> <x1\/>!Note<x2\/>
+> Se você excluir um shader dos ativos do projeto, para evitar erros, certifique-se que você também removê-lo das propriedades dos materiais que usá-lo.
 
-## Arguments and parameters
+## Argumentos e parâmetros
 
-### Template arguments
+### Argumentos de modelo
 
-[Template arguments](shading-language/templates.md) (generics) don't change at runtime. However, different materials can use different instances of the shader with different values.
+[ Os argumentos do tempo](shading-language/templates.md) (generics) não mudam em tempo de execução. No entanto, diferentes materiais podem usar diferentes instâncias do shader com diferentes valores.
 
-When the shaders are compiled, Stride substitutes template arguments with the value you set in the Property Grid.
+Quando os shaders são compilados, Stride substitui argumentos de template com o valor que você definiu na Grade de Propriedade.
 
-For example, the code below defines and uses the template argument `Frequency`:
+Por exemplo, o código abaixo define e usa o argumento template `Frequency`:
 
 ```cs
-shader ComputeColorWave<float Frequency> : ComputeColor, Texturing
-{
+shader ComputeColorWave<float Frequência> :<float Frequency> ComputeColor, Texturing
+(
     override float4 Compute()
-   {           
-        return sin((Global.Time) * 2 * 3.14 * Frequency);
+   (           
+        retornar sin((Global.Time) * 2 * 3.14 * Frequência);
     }
 };
 ```
 
-![Template argument](media/template-argument.png)
+<x1\/>Aplicar argumento<x2\/>
 
-### Parameters
+### Parâmetros
 
-Parameters can be changed at runtime.
+Os parâmetros podem ser alterados em tempo de execução.
 
-For example, the code below defines and uses the dynamic parameter `Frequency`:
+Por exemplo, o código abaixo define e usa o parâmetro dinâmico `Frequency`:
 
 ```cs
-shader ComputeColorWave: ComputeColor, Texturing
-{
+cor de cor computacional Onda: ComputeColor, Texturing
+(
 	cbuffer PerMaterial
-	{
-		stage float Frequency = 1.0f;
+	(
+		flutuador de palco Frequência = 1.0f;
 	}
 	
     override float4 Compute()
-    {
-        return sin(( Global.Time ) * 2 * 3.14 * Frequency);
+    (
+        retornar sin(( Global.Time ) * 2 * 3.14 * Frequência);
     }
 };
 ```
 
-To modify the value at runtime, access and set it in the material parameter collection. For example, to change the `Frequency`, use:
+Para modificar o valor no tempo de execução, acesse e configure-o na coleção de parâmetros de material. Por exemplo, para mudar o `Frequency`, use:
 
 ```cs
 myMaterial.Passes[myPassIndex].Parameters.Set(ComputeColorWaveKeys.Frequency, MyFrequency);
 ```
 
-> [!Note]
-> `ComputeColorWaveKeys.Frequency` is generated by the Stride Visual Studio extension from the shader file.
+> <x1\/>!Note<x2\/>
+> `ComputeColorWaveKeys.Frequency` é gerado pela extensão Stride Visual Studio do arquivo shader.
 
-### Compositions
+### Composições
 
-This [composition](shading-language/composition.md) lets you set the `Frequency` in the Game Studio Property Grid:
+Este [composition](shading-language/composition.md) permite definir o `Frequency` no Game Studio Property Grid:
 
 ```cs
-shader ComputeColorWave : ComputeColor, Texturing
-{
-    compose ComputeColor Frequency;
+cor de cor computacional Onda: ComputeColor, Texturing
+(
+    composição de cores Frequência;
 
     override float4 Compute()
-    {
+    (
         return sin(( Global.Time ) * 2 * 3.14 * Frequency.Compute().r);
     }
 };
 ```
 
-Then you can set the value in the material properties:
+Então você pode definir o valor nas propriedades do material:
 
-![Select shader](media/use-computecolorwave-shader.png)
+<x1\/>Selecionar shader<x2\/>
 
-## Custom shader sample
+## Amostra personalizada do shader
 
-For an example of a custom shader, see the **custom material shader** sample project included with Stride.
+Para um exemplo de um shader personalizado, veja o projeto de amostra **custom material shader** incluído no Stride.
 
-![Sample project](media/custom-shader-sample-project.png)
+<x1\/> Projeto de amostra <x2\/>
 
-In the project, the **ComputeColorWaveNormal** shader is used in the **displacement map** and **surface** material properties.
+No projeto, o shader **ComputeColorWaveNormal** é usado no mapa de deslocamento **** e **superfície** propriedades materiais.
 
-## See also
+## Ver também
 
-* [Shading language](shading-language/index.md)
-* [Custom color transforms](../post-effects/color-transforms/custom-color-transforms.md)
-* [Material attributes](../materials/material-attributes.md)
-* [Stride Visual Studio extension](../../get-started/visual-studio-extension.md)
+* [Língua de Shading](shading-language/index.md)
+* [Transformações de cor personalizadas](../post-effects/color-transforms/custom-color-transforms.md)
+* [Atributos de material](../materials/material-attributes.md)
+* [Extensão do Stride Visual Studio](../../get-started/visual-studio-extension.md)

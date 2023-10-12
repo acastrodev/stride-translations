@@ -1,14 +1,14 @@
 # Sprites
 
-2D applications are made of **sprites**.
+As aplicações 2D são feitas de **sprites**.
 
-![Sprite sheet](media/SpriteEntity.png)
+<x1\/> Folha de preços <x2\/>
 
-The most efficient way to render sprites is to add them all to a **sprite sheet**, a single image. You can then define regions of the sprite sheet as different sprites in Game Studio's Sprite Editor. After you define sprites, you can add them to entities using sprite components and render them with scripts.
+A maneira mais eficiente de renderizar sprites é adicioná-los todos a uma folha **sprite**, uma única imagem. Você pode então definir regiões da folha de sprite como diferentes sprites no Editor Sprite do Game Studio. Depois de definir sprites, você pode adicioná-los a entidades usando componentes sprite e renderizá-los com scripts.
 
-## In this section
+## Nesta secção
 
-* [Import sprite sheets](import-sprite-sheets.md)
-* [Edit sprites](edit-sprites.md)
-   * [Set sprite borders](set-sprite-borders.md)
+* [Folhas de sprite de importação](import-sprite-sheets.md)
+* [Editar sprites](edit-sprites.md)
+   * [Definir bordas de sprite](set-sprite-borders.md)
 * [Use sprites](use-sprites.md)

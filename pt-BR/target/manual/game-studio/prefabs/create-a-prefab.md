@@ -1,42 +1,42 @@
-# Create a prefab
+# Criar uma pré-fabricada
 
-<span class="badge text-bg-primary">Beginner</span>
-<span class="badge text-bg-success">Designer</span>
+<x1\/>Introdução<x2\/>
+<x3\/>Designer<x4\/>
 
-In the **Asset View**, click **Add asset** and select **Prefabs** > **Prefab**.
+No **Asset View**, clique em **Add asset** e selecione **Prefabs** > **Prefab**.
 
-![Create a prefab from the Asset View](media/create-prefab-from-asset-view.png)
+<x1\/>Criar uma prefab do Asset View<x2\/>
 
-Game Studio creates an empty prefab asset with the default name *Prefab*. Double-click the asset to open the **Prefab Editor** and add entities.
+Game Studio cria um ativo pré-fabricado vazio com o nome padrão *Prefab*. Clique duas vezes no ativo para abrir o **Prefab Editor** e adicionar entidades.
 
-## Create a prefab from an entity
+## Criar uma pré-fabricada de uma entidade
 
-You can also create a prefab from an existing entity or entities.
+Você também pode criar uma pré-fabricada de uma entidade ou entidades existentes.
 
-1. In the **Scene Editor**, select the entity or entities you want to create a prefab from.
-> [!Tip]
-> Hold Ctrl to select multiple items.
+1. No **Scene Editor**, selecione a entidade ou entidades de que deseja criar uma pré-fabricada.
+> <x1\/>!Tip<x2\/>
+> Segure Ctrl para selecionar vários itens.
 
-2. Right-click the selection and select **Create prefab from selection**:
+2. Clique com o botão direito do mouse na seleção e selecione **Create prefab da seleção**:
 
-![Create a prefab from selection](media/create-prefab-from-selection.gif)
+<x1\/>Criar uma pré-fabricada da seleção<x2\/>
 
-Game Studio creates a prefab asset from the entity or entities you selected. You can access the new prefab from the **Asset View**.
+Game Studio cria um ativo pré-fabricado da entidade ou entidades selecionadas. Você pode acessar a nova pré-fabricada do **Asset View**.
 
-![Prefab in Asset View](media/prefab-asset.png)
+<x1\/>Prefab em Visualização de ativos<x2\/>
 
-> [!Note]
-> After you create a prefab from a selection, the original selection itself **becomes a prefab**.
+> <x1\/>!Note<x2\/>
+> Depois de criar um pré-fabricado de uma seleção, a seleção original em si **comes a prefab**.
 
-### Create a prefab from an existing modified prefab
+### Criar uma pré-fabricada de uma pré-fabricada modificada existente
 
-You can create new prefabs from modified prefabs. For example, you can instantiate a prefab, [override one of its properties](override-prefab-properties.md), then use this modified prefab instance to create a new prefab.
+Você pode criar novas pré-fabricadas de pré-fabricadas modificadas. Por exemplo, você pode instanciar um pré-fabricado, [ substituir uma de suas propriedades](override-prefab-properties.md), em seguida, usar esta instância pré-fabricada modificada para criar uma nova pré-fabricada.
 
-## See also
+## Ver também
 
-* [Prefab index](index.md)
+* [Índice de pré-fabricada](index.md)
 * [Use prefabs](use-prefabs.md)
-* [Edit prefabs](edit-prefabs.md)
-* [Nested prefabs](nested-prefabs.md)
-* [Override prefab properties](override-prefab-properties.md)
-* [Prefab models](prefab-models.md)
+* [Editar pré-fabricados](edit-prefabs.md)
+* [Pré-fabricadas aninhadas](nested-prefabs.md)
+* [Sobrepor propriedades pré-fabricadas](override-prefab-properties.md)
+* [Modelos pré-fabricadas](prefab-models.md)

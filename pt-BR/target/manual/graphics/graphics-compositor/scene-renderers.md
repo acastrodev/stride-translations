@@ -1,107 +1,107 @@
-# Scene renderers
+# Renderizadores de cenas
 
-<span class="badge text-bg-primary">Intermediate</span>
-<span class="badge text-bg-success">Designer</span>
+<x1\/> Intermediário <x2\/>
+<x3\/>Designer<x4\/>
 
-**Scene renderers** let you customize the **collect** and **draw** phases of the rendering. For more information about these stages, see [Render features](../rendering-pipeline/render-features.md).
+**Scene renderers** permitem que você personalize o **collect** e **draw** fases da renderização. Para obter mais informações sobre estas etapas, consulte [Render features](../rendering-pipeline/render-features.md).
 
-You select scene renderers in the **entry points** node properties.
+Você seleciona renderizadores de cena nas propriedades do nó **entry points**.
 
-![Select renderer](media/connect-entry-point.png)
+<x1\/>Select renderer<x2\/>
 
-For more information about selecting renderers, see the [Graphics compositor](index.md) page.
+Para obter mais informações sobre a seleção de renderizadores, consulte a página [Graphics compositor](index.md).
 
-> [!Note]
-> Currently, **all** renderers must have a camera, or be a child of a renderer that has a camera. This applies even to renderers that don't necessarily use cameras, such as the single stage renderer (eg to render a UI).
+> <x1\/>!Note<x2\/>
+> Atualmente, **all** renderizadores devem ter uma câmera, ou ser uma criança de um renderizador que tem uma câmera. Isso se aplica mesmo aos renderizadores que não usam necessariamente câmeras, como o renderizador de estágio único (por exemplo, renderizar uma interface de usuário).
 
-## Clear
+## Livre
 
-Clears a frame, with a solid color.
+Limpa um quadro, com uma cor sólida.
 
-![Clear properties](media/clear-renderframe-1.png)
+<x1\/> Propriedades do cliente<x2\/>
 
-### Properties
+### Propriedades
 
-| Property | Description |
+| Propriedade | Descrição |
 | ------------- | ----------
-| Clear flags | <br><p>What to clear in the render frame (**Color only**, **Depth only**, or **Color and depth**) |
-| Color | The color used to clear the color texture of the render frame. Only valid when **Clear Flags** is set to **Color** or **Color and depth** |
-| Depth value | The depth value used to clear the depth texture of the render frame |
-| Stencil value | The stencil value used to clear the stencil texture of the render frame |
+| Bandeiras claras | <br><p>O que limpar no frame de renderização (**Color only**, **Depth only**, ou **Color e profundidade**) |
+| Cor | A cor usada para limpar a textura de cor do quadro de renderização. Somente válido quando **Clear Flags** é definido para **Color** ou **Cor e profundidade** |
+| Valor de profundidade | O valor de profundidade usado para limpar a textura de profundidade do quadro de renderização |
+| Valor estêncil | O valor estêncil usado para limpar a textura estêncil do quadro de renderização |
 
-## Camera renderer
+## Renderizador de câmera
 
-Uses @'Stride.Rendering.Compositing.SceneCameraRenderer.Child' to render a view from a [camera slot](../cameras/camera-slots.md). The **render camera** renderer takes the input from a [camera](../cameras/index.md) in the scene so it can be displayed somewhere.
+Usa @'Stride.Rendering.Compositing.SceneCameraRenderer.Child' para renderizar uma visão de um slot [camera](../cameras/camera-slots.md). O renderizador **render câmera** leva a entrada de um [camera](../cameras/index.md) na cena para que ele possa ser exibido em algum lugar.
 
-![Camera renderer properties](media/render-camera-1.png)
+<x1\/> Propriedades do renderizador de câmara<x2\/>
 
-### Properties
+### Propriedades
 
-| Property | Description |
+| Propriedade | Descrição |
 | ------------- | ----------
-| Camera | Specify a [camera slot](../cameras/camera-slots.md) to render from |
-| Child | Specify a renderer for the camera (eg a forward renderer or a custom renderer) |
+| Câmara | Especifique um slot [camera](../cameras/camera-slots.md) para renderizar |
+| Criança | Especifique um renderizador para a câmera (por exemplo, um renderizador para a frente ou um renderizador personalizado) |
 
-## Scene renderer collection
+## Coleção de renderizador de cenas
 
-The **scene renderer collection** executes multiple renderers (eg camera renderer, render texture, etc) in sequence. This lets you set multiple renderers for an entry point. You can add as many renderers to the collection as you need.
+A coleção de renderizador **scene** executa vários renderizadores (por exemplo, renderizador de câmera, textura de renderização, etc) em sequência. Isso permite definir vários renderizadores para um ponto de entrada. Você pode adicionar tantos renderizadores à coleção como você precisa.
 
-> [!Note]
-> Stride executes the renderers in list order.
+> <x1\/>!Note<x2\/>
+> Stride executa os renderizadores em ordem de lista.
 
-To add a renderer to the collection, next to **Children**, click ![Green plus button](~/manual/game-studio/media/green-plus-icon.png) (**Add**) and select the renderer you want to add.
+Para adicionar um renderizador à coleção, ao lado de **Children**, clique em <x1\/>Green plus button<x2\/> (**Add**) e selecione o renderizador que deseja adicionar.
 
-![Add to scene collection](media/add-renderer-to-scene-renderer-collection.png)
+<x1\/> Adicionar à coleção de cena<x2\/>
 
-## Forward renderer
+## Renderizador dianteiro
 
-In a typical setup, the **forward renderer** renders almost everything in your scene. It renders, in order:
+Em uma configuração típica, o **forward renderer** renderiza quase tudo em sua cena. Torna, em ordem:
 
-1. opaque objects
-2. transparent objects
-3. [post effects](../post-effects/index.md)
+1. objetos opacos
+2. objetos transparentes
+3. [efeitos secundários](../post-effects/index.md)
 
-The forward renderer is also where you set VR options. For more information, see [Virtual reality](../../virtual-reality/index.md).
+O renderizador para a frente também é onde você define opções de RV. Para mais informações, consulte [ realidade virtual](../../virtual-reality/index.md).
 
-You configure the forward renderer properties in the **forward entry node**.
+Você configura as propriedades do renderizador para a frente no nó de entrada **forward**.
 
-## Single stage renderer
+## Renderização de estágio único
 
-![Single stage renderer](media/single-stage-renderer.png)
+<x1\/>Single stage renderer<x2\/>
 
-## Force aspect ratio scene renderer
+## Renderização de cena de proporção de força
 
-Uses @'Stride.Rendering.Compositing.ForceAspectRatioSceneRenderer' to force an aspect ratio and applies a letterbox if the ratio is different from the screen. Use this before the **render camera**.
+Usa @'Stride.Rendering.Compositing.ForceAspectRatioSceneRenderer' para forçar uma relação de aspecto e aplica uma caixa de letras se a relação for diferente da tela. Use isso antes da câmera **render**.
 
-![Force aspect ratio](media/force-aspect-ratio-properties.png)
+<x1\/> Relação de aspecto de força<x2\/>
 
-| Property | Description |
+| Propriedade | Descrição |
 | ------------- | ----------
-| Child | Specify a renderer for the camera (eg a forward renderer or a custom renderer) |
-| Fixed aspect ratio | The aspect ratio to force the view to |
-| Force aspect ratio | Enable forced aspect ratio |
+| Criança | Especifique um renderizador para a câmera (por exemplo, um renderizador para a frente ou um renderizador personalizado) |
+| Relação de aspecto fixo | A razão de aspecto para forçar a visão |
+| Razão de aspecto da força | Habilitar a relação de aspecto forçado |
 
-## Render texture
+## Textura do remetente
 
-Renders to a render texture, which you can display in your scene (eg to display security camera footage on a screen). For more information, see [Render textures](render-textures.md).
+Renders a uma textura de renderização, que você pode exibir em sua cena (por exemplo, para exibir imagens de câmera de segurança em uma tela). Para mais informações, consulte as texturas [Render](render-textures.md).
 
-![Render texture properties](media/render-texture-scene-renderer-properties.png)
+<x1\/> Propriedades de textura de gênero<x2\/>
 
-| Property | Description |
+| Propriedade | Descrição |
 | ------------- | ----------
-| Child | Specify a renderer for the camera (eg a forward renderer or a custom renderer) |
-| Render texture | Specify a texture to render to |
+| Criança | Especifique um renderizador para a câmera (por exemplo, um renderizador para a frente ou um renderizador personalizado) |
+| Textura do remetente | Especificar uma textura para renderizar |
 
-## Render mask
+## Máscara do remetente
 
-![Render mask](media/change-render-mask.png)
+<x1\/>Render mask<x2\/>
 
-The **render mask** filters which groups are rendered. You can use it to only render particular models. For more information, see [Render groups and render masks](render-groups-and-masks.md)
+Os filtros **render mask** que os grupos são renderizados. Você pode usá-lo apenas para renderizar modelos particulares. Para obter mais informações, consulte grupos [Render e torne máscaras](render-groups-and-masks.md)
 
-## See also
+## Ver também
 
-* [Graphics compositor](index.md)
-* [Camera slots](../cameras/camera-slots.md)
-* [Custom scene renders](custom-scene-renderers.md)
-* [Debug renderers](debug-renderers.md)
-* [Render groups and render masks](render-groups-and-masks.md)
+* [Compositor gráfico](index.md)
+* [Slots de câmera](../cameras/camera-slots.md)
+* [Renderizações de cena personalizadas](custom-scene-renderers.md)
+* [Renderizadores de depuração](debug-renderers.md)
+* [Render grupos e renderizar máscaras](render-groups-and-masks.md)

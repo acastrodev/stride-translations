@@ -1,199 +1,199 @@
 {
-    "filename": "manual\\physics\\simulation.md.xlf",
-    "files": [
-        {
-            "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/simulation.md": [
-                [
-                    "Physics simulation",
-                    "",
-                    "Physics simulation",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/simulation.md",
-                    {
-                        "id": "tu1"
-                    }
-                ],
-                [
-                    "<x1\/>Intermediate<x2\/>",
-                    "",
-                    "<x1\/>Intermediate<x2\/>\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/simulation.md",
-                    {
-                        "id": "tu2"
-                    }
-                ],
-                [
-                    "<x3\/>Programmer<x4\/>",
-                    "",
-                    "<x3\/>Programmer<x4\/>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/simulation.md",
-                    {
-                        "id": "tu2"
-                    }
-                ],
-                [
-                    "Stride's physics are controlled by the <g1>Simulation<\/g1> class.",
-                    "",
-                    "Stride's physics are controlled by the <g1>Simulation<\/g1> class.\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/simulation.md",
-                    {
-                        "id": "tu3"
-                    }
-                ],
-                [
-                    "You can change how Stride initializes the <g2>simulation<\/g2> by modifying flags in <g3>PhysicsSettings<\/g3>, accessed in the <g4>GameSettings<\/g4> asset properties.",
-                    "",
-                    "You can change how Stride initializes the <g2>simulation<\/g2> by modifying flags in <g3>PhysicsSettings<\/g3>, accessed in the <g4>GameSettings<\/g4> asset properties.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/simulation.md",
-                    {
-                        "id": "tu3"
-                    }
-                ],
-                [
-                    "<x1\/>!Note<x2\/>",
-                    "",
-                    "<x1\/>!Note<x2\/>\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/simulation.md",
-                    {
-                        "id": "tu4"
-                    }
-                ],
-                [
-                    "Your scene must have at least one <g1>Collider<\/g1> in order for Stride to initialize the <g2>Simulation<\/g2> instance.",
-                    "",
-                    "Your scene must have at least one <g1>Collider<\/g1> in order for Stride to initialize the <g2>Simulation<\/g2> instance.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/simulation.md",
-                    {
-                        "id": "tu4"
-                    }
-                ],
-                [
-                    "<x1\/>Physics Settings<x2\/>",
-                    "",
-                    "<x1\/>Physics Settings<x2\/>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/simulation.md",
-                    {
-                        "id": "tu5"
-                    }
-                ],
-                [
-                    "<g1>CollisionsOnly<\/g1> initializes the <g2>Simulation<\/g2> with collision detection turned on, but no other physics.",
-                    "",
-                    "<g1>CollisionsOnly<\/g1> initializes the <g2>Simulation<\/g2> with collision detection turned on, but no other physics.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/simulation.md",
-                    {
-                        "id": "tu6"
-                    }
-                ],
-                [
-                    "Objects won't react to physical forces.",
-                    "",
-                    " Objects won't react to physical forces.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/simulation.md",
-                    {
-                        "id": "tu6"
-                    }
-                ],
-                [
-                    "<g1>ContinuousCollisionDetection<\/g1> initializes the <g2>Simulation<\/g2> with continuous collision detection (CCD).",
-                    "",
-                    "<g1>ContinuousCollisionDetection<\/g1> initializes the <g2>Simulation<\/g2> with continuous collision detection (CCD).",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/simulation.md",
-                    {
-                        "id": "tu7"
-                    }
-                ],
-                [
-                    "CCD prevents fast-moving entities (such as bullets) erroneously passing through other entities.",
-                    "",
-                    " CCD prevents fast-moving entities (such as bullets) erroneously passing through other entities.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/simulation.md",
-                    {
-                        "id": "tu7"
-                    }
-                ],
-                [
-                    "<x1\/>!Note<x2\/>",
-                    "",
-                    "<x1\/>!Note<x2\/>\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/simulation.md",
-                    {
-                        "id": "tu8"
-                    }
-                ],
-                [
-                    "The <g1>SoftBodySupport<\/g1>, <g2>MultiThreaded<\/g2>, and <g3>UseHardwareWhenPossible<\/g3> flags are currently disabled.",
-                    "",
-                    "The <g1>SoftBodySupport<\/g1>, <g2>MultiThreaded<\/g2>, and <g3>UseHardwareWhenPossible<\/g3> flags are currently disabled.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/simulation.md",
-                    {
-                        "id": "tu8"
-                    }
-                ],
-                [
-                    "At runtime, you can change some <g1>Simulation<\/g1> parameters:",
-                    "",
-                    "At runtime, you can change some <g1>Simulation<\/g1> parameters:",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/simulation.md",
-                    {
-                        "id": "tu9"
-                    }
-                ],
-                [
-                    "<g1>Gravity<\/g1> — the global gravity, in <g2>world units<\/g2> per second squared",
-                    "",
-                    "<g1>Gravity<\/g1> — the global gravity, in <g2>world units<\/g2> per second squared",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/simulation.md",
-                    {
-                        "id": "tu10"
-                    }
-                ],
-                [
-                    "<g1>FixedTimeStep<\/g1> — the length of a simulation timestep, in seconds",
-                    "",
-                    "<g1>FixedTimeStep<\/g1> — the length of a simulation timestep, in seconds",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/simulation.md",
-                    {
-                        "id": "tu11"
-                    }
-                ],
-                [
-                    "<g1>MaxSubSteps<\/g1> — the maximum number of fixed timesteps the engine takes per update",
-                    "",
-                    "<g1>MaxSubSteps<\/g1> — the maximum number of fixed timesteps the engine takes per update",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/simulation.md",
-                    {
-                        "id": "tu12"
-                    }
-                ],
-                [
-                    "See also",
-                    "",
-                    "See also",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/simulation.md",
-                    {
-                        "id": "tu13"
-                    }
-                ],
-                [
-                    "Colliders",
-                    "",
-                    "<g1>Colliders<\/g1>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/simulation.md",
-                    {
-                        "id": "tu14"
-                    }
-                ],
-                [
-                    "Collider shapes",
-                    "",
-                    "<g1>Collider shapes<\/g1>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/simulation.md",
-                    {
-                        "id": "tu15"
-                    }
-                ]
-            ]
-        }
-    ],
-    "seg_enabled": false
+  "filename": "manual\\physics\\simulation.md.xlf",
+  "files": [
+    {
+      "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/simulation.md": [
+        [
+          "Physics simulation",
+          "Simulação de física",
+          "Physics simulation",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/simulation.md",
+          {
+            "id": "tu1"
+          }
+        ],
+        [
+          "<x1\\/>Intermediate<x2\\/>",
+          "<x1\\/> Intermediário <x2\\/>",
+          "<x1\\/>Intermediate<x2\\/>\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/simulation.md",
+          {
+            "id": "tu2"
+          }
+        ],
+        [
+          "<x3\\/>Programmer<x4\\/>",
+          "<x3\\/> Programador <x4\\/>",
+          "<x3\\/>Programmer<x4\\/>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/simulation.md",
+          {
+            "id": "tu2"
+          }
+        ],
+        [
+          "Stride's physics are controlled by the <g1>Simulation<\\/g1> class.",
+          "A física de Stride é controlada pela classe <g1>Simulation<\\/g1>.",
+          "Stride's physics are controlled by the <g1>Simulation<\\/g1> class.\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/simulation.md",
+          {
+            "id": "tu3"
+          }
+        ],
+        [
+          "You can change how Stride initializes the <g2>simulation<\\/g2> by modifying flags in <g3>PhysicsSettings<\\/g3>, accessed in the <g4>GameSettings<\\/g4> asset properties.",
+          "Você pode mudar como Stride inicializa o <g2>simulation<\\/g2> modificando bandeiras em <g3>PhysicsDefinições<\\/g3>, acessado nas propriedades de ativos <g4>GameSettings<\\/g4>.",
+          "You can change how Stride initializes the <g2>simulation<\\/g2> by modifying flags in <g3>PhysicsSettings<\\/g3>, accessed in the <g4>GameSettings<\\/g4> asset properties.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/simulation.md",
+          {
+            "id": "tu3"
+          }
+        ],
+        [
+          "<x1\\/>!Note<x2\\/>",
+          "<x1\\/>!Note<x2\\/>",
+          "<x1\\/>!Note<x2\\/>\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/simulation.md",
+          {
+            "id": "tu4"
+          }
+        ],
+        [
+          "Your scene must have at least one <g1>Collider<\\/g1> in order for Stride to initialize the <g2>Simulation<\\/g2> instance.",
+          "Sua cena deve ter pelo menos um <g1>Collider<\\/g1> para que Stride inicialize a instância <g2>Simulation<\\/g2>.",
+          "Your scene must have at least one <g1>Collider<\\/g1> in order for Stride to initialize the <g2>Simulation<\\/g2> instance.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/simulation.md",
+          {
+            "id": "tu4"
+          }
+        ],
+        [
+          "<x1\\/>Physics Settings<x2\\/>",
+          "<x1\\/>Physics Configurações<x2\\/>",
+          "<x1\\/>Physics Settings<x2\\/>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/simulation.md",
+          {
+            "id": "tu5"
+          }
+        ],
+        [
+          "<g1>CollisionsOnly<\\/g1> initializes the <g2>Simulation<\\/g2> with collision detection turned on, but no other physics.",
+          "<g1>CollisionsOnly<\\/g1> inicializa o <g2>Simulation<\\/g2> com detecção de colisão ligada, mas nenhuma outra física.",
+          "<g1>CollisionsOnly<\\/g1> initializes the <g2>Simulation<\\/g2> with collision detection turned on, but no other physics.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/simulation.md",
+          {
+            "id": "tu6"
+          }
+        ],
+        [
+          "Objects won't react to physical forces.",
+          "Os objectos não reagem às forças físicas.",
+          " Objects won't react to physical forces.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/simulation.md",
+          {
+            "id": "tu6"
+          }
+        ],
+        [
+          "<g1>ContinuousCollisionDetection<\\/g1> initializes the <g2>Simulation<\\/g2> with continuous collision detection (CCD).",
+          "<g1>ContinuousCollisionDetection<\\/g1> inicializa o <g2>Simulation<\\/g2> com detecção contínua (CCD).",
+          "<g1>ContinuousCollisionDetection<\\/g1> initializes the <g2>Simulation<\\/g2> with continuous collision detection (CCD).",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/simulation.md",
+          {
+            "id": "tu7"
+          }
+        ],
+        [
+          "CCD prevents fast-moving entities (such as bullets) erroneously passing through other entities.",
+          "O CCD evita que entidades em movimento rápido (como balas) passem erroneamente por outras entidades.",
+          " CCD prevents fast-moving entities (such as bullets) erroneously passing through other entities.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/simulation.md",
+          {
+            "id": "tu7"
+          }
+        ],
+        [
+          "<x1\\/>!Note<x2\\/>",
+          "<x1\\/>!Note<x2\\/>",
+          "<x1\\/>!Note<x2\\/>\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/simulation.md",
+          {
+            "id": "tu8"
+          }
+        ],
+        [
+          "The <g1>SoftBodySupport<\\/g1>, <g2>MultiThreaded<\\/g2>, and <g3>UseHardwareWhenPossible<\\/g3> flags are currently disabled.",
+          "O <g1>SoftBodySupport<\\/g1>, <g2>MultiThreaded<\\/g2> e <g3>UseHardwareWhenPossible<\\/g3> flags estão atualmente desativados.",
+          "The <g1>SoftBodySupport<\\/g1>, <g2>MultiThreaded<\\/g2>, and <g3>UseHardwareWhenPossible<\\/g3> flags are currently disabled.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/simulation.md",
+          {
+            "id": "tu8"
+          }
+        ],
+        [
+          "At runtime, you can change some <g1>Simulation<\\/g1> parameters:",
+          "No tempo de execução, você pode alterar alguns parâmetros <g1>Simulation<\\/g1>:",
+          "At runtime, you can change some <g1>Simulation<\\/g1> parameters:",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/simulation.md",
+          {
+            "id": "tu9"
+          }
+        ],
+        [
+          "<g1>Gravity<\\/g1> — the global gravity, in <g2>world units<\\/g2> per second squared",
+          "<g1>Gravidade<\\/g1> — a gravidade global, em unidades do mundo <g2> por segundo quadrado",
+          "<g1>Gravity<\\/g1> — the global gravity, in <g2>world units<\\/g2> per second squared",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/simulation.md",
+          {
+            "id": "tu10"
+          }
+        ],
+        [
+          "<g1>FixedTimeStep<\\/g1> — the length of a simulation timestep, in seconds",
+          "<g1>FixedTimeStep<\\/g1> — o comprimento de um tempo de simulação, em segundos",
+          "<g1>FixedTimeStep<\\/g1> — the length of a simulation timestep, in seconds",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/simulation.md",
+          {
+            "id": "tu11"
+          }
+        ],
+        [
+          "<g1>MaxSubSteps<\\/g1> — the maximum number of fixed timesteps the engine takes per update",
+          "<g1>MaxSubSteps<\\/g1> — o número máximo de tempo fixo que o motor leva por atualização",
+          "<g1>MaxSubSteps<\\/g1> — the maximum number of fixed timesteps the engine takes per update",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/simulation.md",
+          {
+            "id": "tu12"
+          }
+        ],
+        [
+          "See also",
+          "Ver também",
+          "See also",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/simulation.md",
+          {
+            "id": "tu13"
+          }
+        ],
+        [
+          "Colliders",
+          "Coleiras",
+          "<g1>Colliders<\\/g1>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/simulation.md",
+          {
+            "id": "tu14"
+          }
+        ],
+        [
+          "Collider shapes",
+          "Formas de colarinho",
+          "<g1>Collider shapes<\\/g1>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/simulation.md",
+          {
+            "id": "tu15"
+          }
+        ]
+      ]
+    }
+  ],
+  "seg_enabled": false
 }

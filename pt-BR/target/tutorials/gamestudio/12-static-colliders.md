@@ -1,7 +1,7 @@
-# Static colliders
+# Colliders estáticos
 
-In this tutorial we learn about a specific collider type group in Stride: the static colliders. We take a quick tour of its common properties and we learn how to define different collider shapes for an entity. In particular we learn about generated collider hull which can be either convex or concave.
+Neste tutorial aprendemos sobre um grupo de tipo de colisão específico em Stride: os colisões estáticos. Fazemos um tour rápido de suas propriedades comuns e aprendemos como definir diferentes formas de colisão para uma entidade. Em particular, aprendemos sobre o casco de colisão gerado que pode ser convexo ou côncavo.
 
-[!INCLUDE [stride-studio-note](../../includes/game-studio-xenko-note.md)]
+[! INCLUÍDO [stride-studio-note](../../includes/game-studio-xenko-note.md)]
 
-> [!Video https://www.youtube.com/embed/IemIKqbR5o8]
+> [!Vídeo https://www.youtube.com/embed/IemIKqbR5o8]

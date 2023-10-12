@@ -1,149 +1,149 @@
-# Manage assets
+# Gerenciar ativos
 
-<span class="badge text-bg-primary">Beginner</span>
+<x1\/>Introdução<x2\/>
 
-This page explains how to edit and manage your assets.
+Esta página explica como editar e gerenciar seus ativos.
 
-## Edit assets in the Property Grid
+## Editar ativos na Grade de Propriedade
 
-You can edit most assets using the **Property Grid**. By default, this is in the top-right of Game Studio.
+Você pode editar a maioria dos ativos usando o **Property Grid**. Por padrão, isso está no topo direito do Game Studio.
 
-For example, to change the color of a material asset::
+Por exemplo, para mudar a cor de um ativo material::
 
-1. In the **Asset View** (in the bottom by default), select the material.
+1. No **Asset View** (na parte inferior por padrão), selecione o material.
 
-   ![Select material in the Asset View](../get-started/media/edit-asset-sphere-material-asset-view-tab.png)
+   <x1\/>Selecionar material no Asset View<x2\/>
 
-2. In the Property Grid, under **Shading > Diffuse**, next to **Diffuse Map**, click the **colored box**, which displays the asset color (yellow in this example).
+2. Na Grade de Propriedade, sob **Shading > Diffuse**, ao lado de **Diffuse Map**, clique no **colored box**, que exibe a cor do ativo (amarelo neste exemplo).
 
-   The color picker opens.
+   O picador de cores abre.
 
-   ![Color picker and Palette](../get-started/media/edit-asset-color-picker-palette-diffuse.png)
+   <x1\/>capador de cores e paleta<x2\/>
 
-4. Select a new color for the asset.
+4. Selecione uma nova cor para o ativo.
 
-   ![Asset is now red](../get-started/media/edit-asset-color-change-selected-asset.png)
+   <x1\/> Asset é agora vermelho<x2\/>
 
-The **Asset Preview** (bottom right by default) displays asset changes in real time.
+O ** Asset Preview** (bottom right by default) exibe mudanças de ativos em tempo real.
 
-The **Asset View** indicates assets with unsaved changes with asterisks (*).
+O **Asset View** indica ativos com mudanças não salvas com asteriscos (*).
 
-![Unsaved changes](../get-started/media/asset-unsaved-changes.png)
+<x1\/> Alterações não salvas <x2\/>
 
-## Edit assets using dedicated editors
+## Editar ativos usando editores dedicados
 
-Game Studio has dedicated editors for the following asset types:
+Game Studio tem editores dedicados para os seguintes tipos de ativos:
 
-* prefabs
-* scenes
-* sprite sheets
-* UI pages
-* UI libraries
+* pré-fabricados
+* cenas
+* folhas de sprite
+* Páginas de interface
+* Bibliotecas de interface
 * scripts
 
-For example, you edit scenes in the **Scene Editor**.
+Por exemplo, você edita cenas no **Scene Editor**.
 
-![Scene Editor](media/manage-assets-scene-editor.png)
+<x1\/>Scene Editor<x2\/>
 
-To open the dedicated editor for these types of asset:
+Para abrir o editor dedicado para esses tipos de ativos:
 
-* double-click the asset, or
-* right-click the asset and select **Edit asset**, or
-* select the asset and type **Ctrl + Enter**
+* clique duas vezes no ativo, ou
+* clique com o botão direito do mouse no ativo e selecione **Editar asset**, ou
+* selecione o ativo e digite **Ctrl + Enter**
 
-## Organize assets
+## Organizar ativos
 
-We recommend you organize your assets into subfolders by type. This makes projects much easier to manage, especially as they become large.
+Recomendamos que você organize seus ativos em subpastas por tipo. Isso torna os projetos muito mais fáceis de gerenciar, especialmente quando eles se tornam grandes.
 
-![Organized project](media/manage-assets-organized-project.png)
+<x1\/> Projeto organizado<x2\/>
 
-Assets are contained in the **Assets** folder of your project package. You can see the project in the **Solution Explorer** (by default shown in the bottom left).
+Os ativos estão contidos na pasta **Assets** do seu pacote de projeto. Você pode ver o projeto no **Solution Explorer** (por padrão mostrado na parte inferior esquerda).
 
-* To create a subfolder, right-click the parent folder and select **Create subfolder**.
-* To move an asset, select one or more assets in the **Asset View** and drag and drop them to the folder.
+* Para criar uma subpasta, clique com o botão direito do mouse na pasta pai e selecione **Create subfolder**.
+* Para mover um ativo, selecione um ou mais ativos no **Asset View** e arraste e solte-os para a pasta.
 
-> [!NOTE]
-> When you move an asset, Game Studio updates all references to other assets inside the asset.
+> <x1\/>!NOTE<x2\/>
+> Quando você move um ativo, Game Studio atualiza todas as referências a outros ativos dentro do ativo.
 
-> [!TIP]
-> To see the URL and type of an asset, move the mouse over the asset thumbnail.
-> ![Details of new asset in Asset View tab](../get-started/media/asset-creation-solution-explorer.png)
+> <x1\/>!TIP<x2\/>
+> Para ver a URL e o tipo de um ativo, mova o mouse sobre a miniatura de ativos.
+> <x3\/>Detalhes de novo ativo na guia Asset View<x4\/>
 
-## Include assets in the build
+## Inclua ativos na compilação
 
-By default, Stride doesn't include every asset when you build the game. This is because you might not need every asset at runtime — for example, if the asset is incomplete.
+Por padrão, Stride não inclui todos os ativos quando você construir o jogo. Isso porque você pode não precisar de todos os ativos no tempo de execução — por exemplo, se o ativo estiver incompleto.
 
-Stride only includes assets which:
+O Stride inclui apenas ativos que:
 
-* you've specifically marked for inclusion (**root assets**), or
-* are **referenced** by a root asset
+* você marcou especificamente para inclusão (**root assets**), ou
+* são **referenciados** por um ativo raiz
 
-Game Studio indicates whether an asset is included with a colored icon in the top-left of the asset thumbnail.
+Game Studio indica se um ativo está incluído com um ícone colorido na parte superior esquerda da miniatura de ativos.
 
-| Color | Status |
+| Cor | Estado |
 ------|--------
-| Blue <p><br>![Blue](media/manage-assets-reference-asset.png)</p></br> | The asset is a root asset and included in the build. |
-| Green <p><br>![Green](media/manage-assets-include-asset.png)</p></br> | The asset is referenced by a root asset and included in the build. |
-| Gray <p><br>![Gray](media/manage-assets-exclude-asset.png)</p></br> | The asset isn't included in the build. |
+| Azul <p><x1\/><x2\/>Blue<x3\/></p></br> | O ativo é um ativo raiz e incluído na compilação. |
+| Verde <p><x1\/><x2\/>Verde<x3\/></p></br> | O ativo é referenciado por um ativo raiz e incluído na compilação. |
+| Cinza <p><x1\/><x2\/>Gray<x3\/></p></br> | O ativo não está incluído na compilação. |
 
-If you plan to load an asset at runtime using scripts, make it a root asset. To do this:
+Se você planeja carregar um ativo em tempo de execução usando scripts, faça dele um ativo raiz. Para fazer isso:
 
-* click the **gray dot** in the top-left of the thumbnail, or
+* clique no ponto **gray dot** na parte superior esquerda da miniatura, ou
 
-* right-click the asset and select **Include in build as root asset**
+* clique com o botão direito do mouse no ativo e selecione **Incluir na compilação como ativo root**
 
-   ![Include in build as root asset](media/right-click-include-in-build-as-root-asset.png)
+   <x1\/>Incluir em compilação como root asset<x2\/>
 
-## Asset View options
+## Opções de exibição de ativos
 
-To change the Asset View options, click the eye icon in the Asset View toolbar.
+Para alterar as opções de visualização de ativos, clique no ícone do olho na barra de ferramentas de visualização de ativos.
 
-![Asset View options](../get-started/media/asset-view-options.png)
+<x1\/> Opções de visualização <x2\/>
 
-You can:
+Você pode:
 
-* display assets in the selected folder only, the selected folder and subfolder
-* sort assets by name, type, unsaved changes, and modification date
-* switch between tile view (default) and grid view
+* exibir ativos apenas na pasta selecionada, a pasta selecionada e subpastas
+* classificar ativos por nome, tipo, alterações não salvas e data de modificação
+* alternar entre a vista da telha (padrão) e a vista da grade
 
-## Filter assets
+## Filtrar ativos
 
-When browsing assets in the **Asset View** (in the bottom by default), you can filter by name, tag, type, or a combination of all three.
+Quando navegando ativos no **Asset View** (na parte inferior por padrão), você pode filtrar por nome, tag, tipo ou uma combinação de todos os três.
 
-The tag and name filters are "and" filters. For example, if you filter by *tag:level* and *name:knight*, the Asset View only displays assets with the tag "level" **and** the name "knight".
+Os filtros de etiquetas e nomes são filtros "e". Por exemplo, se você filtrar por *tag:level* e *name:knight*, o Asset View só exibe ativos com a tag "level" ** e** o nome "knight".
 
-Type filters are "or" filters. For example, if you filter by *type:animation* and *type:texture*, the Asset View only displays assets that are animations **or** textures.
+Os filtros de tipo são filtros "ou". Por exemplo, se você filtrar por *type:animation* e *type:texture*, o Asset View só exibe ativos que são animações **or** texturas.
 
-### Add a filter
+### Adicionar um filtro
 
-1. In the Asset View, type in the filter bar.
+1. Na visualização de ativos, digite na barra de filtro.
 
-   Game Studio displays a list of matching filters (name, type, or tag).
+   Game Studio exibe uma lista de filtros correspondentes (nome, tipo ou tag).
 
-   ![add-filter.png](media/add-filter.png)
+   <x1\/>add-filter.png<x2\/>
 
-2. To filter by name, press **Enter**.
+2. Para filtrar por nome, pressione **Enter**.
 
-   To filter by a tag or type, select **tag** or **type** filters in the drop-down list.
+   Para filtrar por uma tag ou tipo, selecione **tag** ou **type** filtros na lista suspensa.
 
-   Game Studio applies the filter and shows matching assets in the Asset View.
+   Game Studio aplica o filtro e mostra ativos correspondentes no Asset View.
 
-You can add multiple filters. Name filters are green, tag filters are blue, and type filters are orange.
+Você pode adicionar vários filtros. Os filtros de nome são verdes, os filtros de etiqueta são azuis e os filtros de tipo são laranja.
 
-![filter-tags](media/filter-tags.png)
+<x1\/>filter-tags<x2\/>
 
-### Toggle filters on and off
+### Alternar filtros em e fora
 
-To toggle a filter on and off without removing it, click it. Disabled filters have darker colors.
+Para alternar um filtro dentro e fora sem removê-lo, clique nele. Os filtros desabilitados têm cores mais escuras.
 
-![filter-tags](../get-started/media/disabled-filter-tags.png)
+<x1\/>filter-tags<x2\/>
 
-### Remove a filter
+### Remover um filtro
 
-To remove a filter, click the X icon in the filter tag.
+Para remover um filtro, clique no ícone X na etiqueta de filtro.
 
-## See also
+## Ver também
 
-* [Create assets](create-assets.md)
-* [Manage assets](manage-assets.md)
-* [Use assets](use-assets.md)
+* [Criar ativos](create-assets.md)
+* [Gerenciar ativos](manage-assets.md)
+* [Utilizar activos](use-assets.md)

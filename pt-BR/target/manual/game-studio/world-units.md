@@ -1,11 +1,11 @@
-# World units
+# Unidades do mundo
 
-In Stride, one unit is one meter. This is used by the physics and rendering engines.
+Em Stride, uma unidade é de um metro. Isso é usado pelos motores de física e renderização.
 
-Game Studio displays units as a grid.
+Game Studio exibe unidades como uma grade.
 
-![Grid in Scene Editor](../get-started/media/scene-creation-basic-scene-in-stride.png)
+<x1\/>Grid no Editor de Cenas<x2\/>
 
-## See also
+## Ver também
 
-* [Physics](../physics/index.md)
+* [Física](../physics/index.md)

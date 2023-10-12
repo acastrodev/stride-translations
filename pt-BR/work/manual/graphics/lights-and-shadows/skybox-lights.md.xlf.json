@@ -1,757 +1,757 @@
 {
-    "filename": "manual\\graphics\\lights-and-shadows\\skybox-lights.md.xlf",
-    "files": [
-        {
-            "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/lights-and-shadows\/skybox-lights.md": [
-                [
-                    "Skybox lights",
-                    "",
-                    "Skybox lights",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/lights-and-shadows\/skybox-lights.md",
-                    {
-                        "id": "tu1"
-                    }
-                ],
-                [
-                    "<x1\/>Beginner<x2\/>",
-                    "",
-                    "<x1\/>Beginner<x2\/>\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/lights-and-shadows\/skybox-lights.md",
-                    {
-                        "id": "tu2"
-                    }
-                ],
-                [
-                    "<x3\/>Designer<x4\/>",
-                    "",
-                    "<x3\/>Designer<x4\/>\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/lights-and-shadows\/skybox-lights.md",
-                    {
-                        "id": "tu2"
-                    }
-                ],
-                [
-                    "<x5\/>Programmer<x6\/>",
-                    "",
-                    "<x5\/>Programmer<x6\/>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/lights-and-shadows\/skybox-lights.md",
-                    {
-                        "id": "tu2"
-                    }
-                ],
-                [
-                    "A <g1>skybox light<\/g1> is an <g2>ambient light<\/g2> emitted by a <g3>skybox<\/g3>.",
-                    "",
-                    "A <g1>skybox light<\/g1> is an <g2>ambient light<\/g2> emitted by a <g3>skybox<\/g3>.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/lights-and-shadows\/skybox-lights.md",
-                    {
-                        "id": "tu3"
-                    }
-                ],
-                [
-                    "Stride analyzes the skybox texture and generates lighting using <g4>image-based lighting (Wikipedia)<\/g4>.",
-                    "",
-                    " Stride analyzes the skybox texture and generates lighting using <g4>image-based lighting (Wikipedia)<\/g4>.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/lights-and-shadows\/skybox-lights.md",
-                    {
-                        "id": "tu3"
-                    }
-                ],
-                [
-                    "<x1\/>media\/SkyboxLightOverview.png<x2\/>",
-                    "",
-                    "<x1\/>media\/SkyboxLightOverview.png<x2\/>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/lights-and-shadows\/skybox-lights.md",
-                    {
-                        "id": "tu4"
-                    }
-                ],
-                [
-                    "Skybox lights are good for exterior scenes, where the skybox is visible.",
-                    "",
-                    "Skybox lights are good for exterior scenes, where the skybox is visible.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/lights-and-shadows\/skybox-lights.md",
-                    {
-                        "id": "tu5"
-                    }
-                ],
-                [
-                    "They're less useful for interior scenes, such as in rooms where the skybox is only visible through windows; as the skybox light nonetheless lights the entire room, this creates an unnatural effect.",
-                    "",
-                    " They're less useful for interior scenes, such as in rooms where the skybox is only visible through windows; as the skybox light nonetheless lights the entire room, this creates an unnatural effect.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/lights-and-shadows\/skybox-lights.md",
-                    {
-                        "id": "tu5"
-                    }
-                ],
-                [
-                    "How skyboxes light the scene",
-                    "",
-                    "How skyboxes light the scene",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/lights-and-shadows\/skybox-lights.md",
-                    {
-                        "id": "tu6"
-                    }
-                ],
-                [
-                    "These images show the difference between ambient and skybox lighting on two pure diffuse <g1>materials<\/g1>:",
-                    "",
-                    "These images show the difference between ambient and skybox lighting on two pure diffuse <g1>materials<\/g1>:",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/lights-and-shadows\/skybox-lights.md",
-                    {
-                        "id": "tu7"
-                    }
-                ],
-                [
-                    "Ambient lighting",
-                    "",
-                    "Ambient lighting",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/lights-and-shadows\/skybox-lights.md",
-                    {
-                        "id": "tu8"
-                    }
-                ],
-                [
-                    "Skybox lighting",
-                    "",
-                    "Skybox lighting",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/lights-and-shadows\/skybox-lights.md",
-                    {
-                        "id": "tu9"
-                    }
-                ],
-                [
-                    "<x1\/>Ambient lighting<x2\/>",
-                    "",
-                    "<x1\/>Ambient lighting<x2\/>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/lights-and-shadows\/skybox-lights.md",
-                    {
-                        "id": "tu10"
-                    }
-                ],
-                [
-                    "<x1\/>Skybox lighting.png<x2\/>",
-                    "",
-                    "<x1\/>Skybox lighting.png<x2\/>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/lights-and-shadows\/skybox-lights.md",
-                    {
-                        "id": "tu11"
-                    }
-                ],
-                [
-                    "These images show the effect of skybox lighting on a material with different metal and gloss properties:",
-                    "",
-                    "These images show the effect of skybox lighting on a material with different metal and gloss properties:",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/lights-and-shadows\/skybox-lights.md",
-                    {
-                        "id": "tu12"
-                    }
-                ],
-                [
-                    "Material Plastic",
-                    "",
-                    "Material Plastic",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/lights-and-shadows\/skybox-lights.md",
-                    {
-                        "id": "tu13"
-                    }
-                ],
-                [
-                    "Metal 100% Gloss 50%",
-                    "",
-                    "Metal 100% Gloss 50%",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/lights-and-shadows\/skybox-lights.md",
-                    {
-                        "id": "tu14"
-                    }
-                ],
-                [
-                    "Metal 100% Gloss 100%",
-                    "",
-                    "Metal 100% Gloss 100%",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/lights-and-shadows\/skybox-lights.md",
-                    {
-                        "id": "tu15"
-                    }
-                ],
-                [
-                    "<x1\/>Material plastic<x2\/>",
-                    "",
-                    "<x1\/>Material plastic<x2\/>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/lights-and-shadows\/skybox-lights.md",
-                    {
-                        "id": "tu16"
-                    }
-                ],
-                [
-                    "<x1\/>Material 100% Gloss 100%<x2\/>",
-                    "",
-                    "<x1\/>Material 100% Gloss 100%<x2\/>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/lights-and-shadows\/skybox-lights.md",
-                    {
-                        "id": "tu17"
-                    }
-                ],
-                [
-                    "<x1\/>Metal 100% Gloss 100%<x2\/>",
-                    "",
-                    "<x1\/>Metal 100% Gloss 100%<x2\/>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/lights-and-shadows\/skybox-lights.md",
-                    {
-                        "id": "tu18"
-                    }
-                ],
-                [
-                    "Notice how the skybox texture colors are reflected.",
-                    "",
-                    "Notice how the skybox texture colors are reflected.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/lights-and-shadows\/skybox-lights.md",
-                    {
-                        "id": "tu19"
-                    }
-                ],
-                [
-                    "Set up a skybox light",
-                    "",
-                    "Set up a skybox light",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/lights-and-shadows\/skybox-lights.md",
-                    {
-                        "id": "tu20"
-                    }
-                ],
-                [
-                    "To use a skybox as a light, you need to add a skybox asset, then select it in a <g1>Light component<\/g1>.",
-                    "",
-                    "To use a skybox as a light, you need to add a skybox asset, then select it in a <g1>Light component<\/g1>.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/lights-and-shadows\/skybox-lights.md",
-                    {
-                        "id": "tu21"
-                    }
-                ],
-                [
-                    "In the <g1>Asset View<\/g1>, click <x1\/>Add asset<x2\/>",
-                    "",
-                    "In the <g1>Asset View<\/g1>, click <x1\/>Add asset<x2\/>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/lights-and-shadows\/skybox-lights.md",
-                    {
-                        "id": "tu22"
-                    }
-                ],
-                [
-                    "Select <g1>Miscellaneous<\/g1> > <g2>Skybox<\/g2>.",
-                    "",
-                    "Select <g1>Miscellaneous<\/g1> > <g2>Skybox<\/g2>.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/lights-and-shadows\/skybox-lights.md",
-                    {
-                        "id": "tu23"
-                    }
-                ],
-                [
-                    "<x1\/>Choose asset type<x2\/>",
-                    "",
-                    "<x1\/>Choose asset type<x2\/>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/lights-and-shadows\/skybox-lights.md",
-                    {
-                        "id": "tu24"
-                    }
-                ],
-                [
-                    "The <g1>Select an asset<\/g1> window opens.",
-                    "",
-                    "The <g1>Select an asset<\/g1> window opens.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/lights-and-shadows\/skybox-lights.md",
-                    {
-                        "id": "tu25"
-                    }
-                ],
-                [
-                    "Choose a skybox texture from the project assets and click <g1>OK<\/g1>.",
-                    "",
-                    "Choose a skybox texture from the project assets and click <g1>OK<\/g1>.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/lights-and-shadows\/skybox-lights.md",
-                    {
-                        "id": "tu26"
-                    }
-                ],
-                [
-                    "<x1\/>Choose texture<x2\/>",
-                    "",
-                    "<x1\/>Choose texture<x2\/>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/lights-and-shadows\/skybox-lights.md",
-                    {
-                        "id": "tu27"
-                    }
-                ],
-                [
-                    "Game Studio adds the skybox asset with the texture you specified.",
-                    "",
-                    "Game Studio adds the skybox asset with the texture you specified.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/lights-and-shadows\/skybox-lights.md",
-                    {
-                        "id": "tu28"
-                    }
-                ],
-                [
-                    "Select the entity you want to be the skybox light.",
-                    "",
-                    "Select the entity you want to be the skybox light.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/lights-and-shadows\/skybox-lights.md",
-                    {
-                        "id": "tu29"
-                    }
-                ],
-                [
-                    "In the <g1>Property Grid<\/g1> (on the right by default), click <g2>Add component<\/g2> and select <g3>Light<\/g3>.",
-                    "",
-                    "In the <g1>Property Grid<\/g1> (on the right by default), click <g2>Add component<\/g2> and select <g3>Light<\/g3>.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/lights-and-shadows\/skybox-lights.md",
-                    {
-                        "id": "tu30"
-                    }
-                ],
-                [
-                    "<x1\/>Background component properties<x2\/>",
-                    "",
-                    "<x1\/>Background component properties<x2\/>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/lights-and-shadows\/skybox-lights.md",
-                    {
-                        "id": "tu31"
-                    }
-                ],
-                [
-                    "In the <g1>Light<\/g1> component properties, under <g2>Light<\/g2>, select <g3>Skybox<\/g3>.",
-                    "",
-                    "In the <g1>Light<\/g1> component properties, under <g2>Light<\/g2>, select <g3>Skybox<\/g3>.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/lights-and-shadows\/skybox-lights.md",
-                    {
-                        "id": "tu32"
-                    }
-                ],
-                [
-                    "<x1\/>Light component property<x2\/>",
-                    "",
-                    "<x1\/>Light component property<x2\/>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/lights-and-shadows\/skybox-lights.md",
-                    {
-                        "id": "tu33"
-                    }
-                ],
-                [
-                    "Click <x1\/>Hand icon<x2\/> (<g1>Select an asset<\/g1>):",
-                    "",
-                    "Click <x1\/>Hand icon<x2\/> (<g1>Select an asset<\/g1>):",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/lights-and-shadows\/skybox-lights.md",
-                    {
-                        "id": "tu34"
-                    }
-                ],
-                [
-                    "<x1\/>No skybox asset selected<x2\/>",
-                    "",
-                    "<x1\/>No skybox asset selected<x2\/>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/lights-and-shadows\/skybox-lights.md",
-                    {
-                        "id": "tu35"
-                    }
-                ],
-                [
-                    "Select the skybox asset you want to use as a light source and click <g1>OK<\/g1>.",
-                    "",
-                    "Select the skybox asset you want to use as a light source and click <g1>OK<\/g1>.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/lights-and-shadows\/skybox-lights.md",
-                    {
-                        "id": "tu36"
-                    }
-                ],
-                [
-                    "<x1\/>Select an asset<x2\/>",
-                    "",
-                    "<x1\/>Select an asset<x2\/>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/lights-and-shadows\/skybox-lights.md",
-                    {
-                        "id": "tu37"
-                    }
-                ],
-                [
-                    "The <g1>Light component<\/g1> uses the skybox asset to light the scene.",
-                    "",
-                    "The <g1>Light component<\/g1> uses the skybox asset to light the scene.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/lights-and-shadows\/skybox-lights.md",
-                    {
-                        "id": "tu38"
-                    }
-                ],
-                [
-                    "Skybox asset properties",
-                    "",
-                    "Skybox asset properties",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/lights-and-shadows\/skybox-lights.md",
-                    {
-                        "id": "tu39"
-                    }
-                ],
-                [
-                    "When you use a skybox as a light, Stride uses it both in compressed form (<g1>spherical harmonics (Wikipedia)<\/g1>) and as a texture to light different kinds of material.",
-                    "",
-                    "When you use a skybox as a light, Stride uses it both in compressed form (<g1>spherical harmonics (Wikipedia)<\/g1>) and as a texture to light different kinds of material.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/lights-and-shadows\/skybox-lights.md",
-                    {
-                        "id": "tu40"
-                    }
-                ],
-                [
-                    "You can control the detail of both in the skybox asset properties.",
-                    "",
-                    " You can control the detail of both in the skybox asset properties.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/lights-and-shadows\/skybox-lights.md",
-                    {
-                        "id": "tu40"
-                    }
-                ],
-                [
-                    "<x1\/>Skybox lighting properties<x2\/>",
-                    "",
-                    "<x1\/>Skybox lighting properties<x2\/>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/lights-and-shadows\/skybox-lights.md",
-                    {
-                        "id": "tu41"
-                    }
-                ],
-                [
-                    "Property",
-                    "",
-                    "Property",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/lights-and-shadows\/skybox-lights.md",
-                    {
-                        "id": "tu42"
-                    }
-                ],
-                [
-                    "Description",
-                    "",
-                    "Description",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/lights-and-shadows\/skybox-lights.md",
-                    {
-                        "id": "tu43"
-                    }
-                ],
-                [
-                    "Texture",
-                    "",
-                    "Texture",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/lights-and-shadows\/skybox-lights.md",
-                    {
-                        "id": "tu44"
-                    }
-                ],
-                [
-                    "The texture to use as skybox (eg a cubemap or panoramic texture)",
-                    "",
-                    "The texture to use as skybox (eg a cubemap or panoramic texture)",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/lights-and-shadows\/skybox-lights.md",
-                    {
-                        "id": "tu45"
-                    }
-                ],
-                [
-                    "Specular Only",
-                    "",
-                    "Specular Only",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/lights-and-shadows\/skybox-lights.md",
-                    {
-                        "id": "tu46"
-                    }
-                ],
-                [
-                    "Use the skybox only for specular lighting",
-                    "",
-                    "Use the skybox only for specular lighting",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/lights-and-shadows\/skybox-lights.md",
-                    {
-                        "id": "tu47"
-                    }
-                ],
-                [
-                    "Diffuse SH order",
-                    "",
-                    "Diffuse SH order",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/lights-and-shadows\/skybox-lights.md",
-                    {
-                        "id": "tu48"
-                    }
-                ],
-                [
-                    "The level of detail of the compressed skybox, used for diffuse lighting (dull materials).",
-                    "",
-                    "The level of detail of the compressed skybox, used for diffuse lighting (dull materials).",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/lights-and-shadows\/skybox-lights.md",
-                    {
-                        "id": "tu49"
-                    }
-                ],
-                [
-                    "<g1>Order5<\/g1> is more detailed than <g2>Order3<\/g2>.",
-                    "",
-                    " <g1>Order5<\/g1> is more detailed than <g2>Order3<\/g2>.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/lights-and-shadows\/skybox-lights.md",
-                    {
-                        "id": "tu49"
-                    }
-                ],
-                [
-                    "Specular Cubemap Size",
-                    "",
-                    "Specular Cubemap Size",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/lights-and-shadows\/skybox-lights.md",
-                    {
-                        "id": "tu50"
-                    }
-                ],
-                [
-                    "The texture size used for specular lighting.",
-                    "",
-                    "The texture size used for specular lighting.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/lights-and-shadows\/skybox-lights.md",
-                    {
-                        "id": "tu51"
-                    }
-                ],
-                [
-                    "Larger textures have more detail.",
-                    "",
-                    " Larger textures have more detail.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/lights-and-shadows\/skybox-lights.md",
-                    {
-                        "id": "tu51"
-                    }
-                ],
-                [
-                    "Skybox light properties",
-                    "",
-                    "Skybox light properties",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/lights-and-shadows\/skybox-lights.md",
-                    {
-                        "id": "tu52"
-                    }
-                ],
-                [
-                    "<x1\/>media\/SkyboxLightProperties.png<x2\/>",
-                    "",
-                    "<x1\/>media\/SkyboxLightProperties.png<x2\/>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/lights-and-shadows\/skybox-lights.md",
-                    {
-                        "id": "tu53"
-                    }
-                ],
-                [
-                    "Property",
-                    "",
-                    "Property",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/lights-and-shadows\/skybox-lights.md",
-                    {
-                        "id": "tu54"
-                    }
-                ],
-                [
-                    "Description",
-                    "",
-                    "Description",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/lights-and-shadows\/skybox-lights.md",
-                    {
-                        "id": "tu55"
-                    }
-                ],
-                [
-                    "Intensity",
-                    "",
-                    "Intensity",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/lights-and-shadows\/skybox-lights.md",
-                    {
-                        "id": "tu56"
-                    }
-                ],
-                [
-                    "The light intensity",
-                    "",
-                    "The light intensity",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/lights-and-shadows\/skybox-lights.md",
-                    {
-                        "id": "tu57"
-                    }
-                ],
-                [
-                    "Culling Mask",
-                    "",
-                    "Culling Mask",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/lights-and-shadows\/skybox-lights.md",
-                    {
-                        "id": "tu58"
-                    }
-                ],
-                [
-                    "Which entity groups are affected by the light.",
-                    "",
-                    "Which entity groups are affected by the light.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/lights-and-shadows\/skybox-lights.md",
-                    {
-                        "id": "tu59"
-                    }
-                ],
-                [
-                    "By default, all groups are affected",
-                    "",
-                    " By default, all groups are affected",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/lights-and-shadows\/skybox-lights.md",
-                    {
-                        "id": "tu59"
-                    }
-                ],
-                [
-                    "Example code",
-                    "",
-                    "Example code",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/lights-and-shadows\/skybox-lights.md",
-                    {
-                        "id": "tu60"
-                    }
-                ],
-                [
-                    "The following code changes the skybox light and its intensity:",
-                    "",
-                    "The following code changes the skybox light and its intensity:",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/lights-and-shadows\/skybox-lights.md",
-                    {
-                        "id": "tu61"
-                    }
-                ],
-                [
-                    "public Skybox skybox;",
-                    "",
-                    "public Skybox skybox;\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/lights-and-shadows\/skybox-lights.md",
-                    {
-                        "id": "tu62"
-                    }
-                ],
-                [
-                    "public void ChangeSkyboxParameters()",
-                    "",
-                    "public void ChangeSkyboxParameters()\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/lights-and-shadows\/skybox-lights.md",
-                    {
-                        "id": "tu62"
-                    }
-                ],
-                [
-                    "{",
-                    "",
-                    "{\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/lights-and-shadows\/skybox-lights.md",
-                    {
-                        "id": "tu62"
-                    }
-                ],
-                [
-                    "\/\/ Get the light component from an entity",
-                    "",
-                    "    \/\/ Get the light component from an entity\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/lights-and-shadows\/skybox-lights.md",
-                    {
-                        "id": "tu62"
-                    }
-                ],
-                [
-                    "var light = Entity.Get<LightComponent>();",
-                    "",
-                    "\tvar light = Entity.Get<LightComponent>();\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/lights-and-shadows\/skybox-lights.md",
-                    {
-                        "id": "tu62"
-                    }
-                ],
-                [
-                    "\/\/ Get the Skybox Light settings from the light component",
-                    "",
-                    "\r\n\t\/\/ Get the Skybox Light settings from the light component\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/lights-and-shadows\/skybox-lights.md",
-                    {
-                        "id": "tu62"
-                    }
-                ],
-                [
-                    "var skyboxLight = light.Type as LightSkybox;",
-                    "",
-                    "\tvar skyboxLight = light.Type as LightSkybox;\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/lights-and-shadows\/skybox-lights.md",
-                    {
-                        "id": "tu62"
-                    }
-                ],
-                [
-                    "\/\/ Replace the existing skybox",
-                    "",
-                    "\r\n\t\/\/ Replace the existing skybox\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/lights-and-shadows\/skybox-lights.md",
-                    {
-                        "id": "tu62"
-                    }
-                ],
-                [
-                    "skyboxLight.Skybox = skybox;",
-                    "",
-                    "\tskyboxLight.Skybox = skybox;\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/lights-and-shadows\/skybox-lights.md",
-                    {
-                        "id": "tu62"
-                    }
-                ],
-                [
-                    "\/\/ Change the skybox light intensity",
-                    "",
-                    "\r\n\t\/\/ Change the skybox light intensity\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/lights-and-shadows\/skybox-lights.md",
-                    {
-                        "id": "tu62"
-                    }
-                ],
-                [
-                    "light.Intensity = 1.5f;",
-                    "",
-                    "\tlight.Intensity = 1.5f;\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/lights-and-shadows\/skybox-lights.md",
-                    {
-                        "id": "tu62"
-                    }
-                ],
-                [
-                    "}",
-                    "",
-                    "}\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/lights-and-shadows\/skybox-lights.md",
-                    {
-                        "id": "tu62"
-                    }
-                ],
-                [
-                    "See also",
-                    "",
-                    "See also",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/lights-and-shadows\/skybox-lights.md",
-                    {
-                        "id": "tu63"
-                    }
-                ],
-                [
-                    "Skyboxes and backgrounds",
-                    "",
-                    "<g1>Skyboxes and backgrounds<\/g1>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/lights-and-shadows\/skybox-lights.md",
-                    {
-                        "id": "tu64"
-                    }
-                ]
-            ]
-        }
-    ],
-    "seg_enabled": false
+  "filename": "manual\\graphics\\lights-and-shadows\\skybox-lights.md.xlf",
+  "files": [
+    {
+      "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/lights-and-shadows\\/skybox-lights.md": [
+        [
+          "Skybox lights",
+          "Luzes Skybox",
+          "Skybox lights",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/lights-and-shadows\\/skybox-lights.md",
+          {
+            "id": "tu1"
+          }
+        ],
+        [
+          "<x1\\/>Beginner<x2\\/>",
+          "<x1\\/>Introdução<x2\\/>",
+          "<x1\\/>Beginner<x2\\/>\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/lights-and-shadows\\/skybox-lights.md",
+          {
+            "id": "tu2"
+          }
+        ],
+        [
+          "<x3\\/>Designer<x4\\/>",
+          "<x3\\/>Designer<x4\\/>",
+          "<x3\\/>Designer<x4\\/>\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/lights-and-shadows\\/skybox-lights.md",
+          {
+            "id": "tu2"
+          }
+        ],
+        [
+          "<x5\\/>Programmer<x6\\/>",
+          "<x5\\/> Programador <x6\\/>",
+          "<x5\\/>Programmer<x6\\/>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/lights-and-shadows\\/skybox-lights.md",
+          {
+            "id": "tu2"
+          }
+        ],
+        [
+          "A <g1>skybox light<\\/g1> is an <g2>ambient light<\\/g2> emitted by a <g3>skybox<\\/g3>.",
+          "A <g1>skybox light<\\/g1> é uma luz <g2>ambient<\\/g2> emitida por um <g3>skybox<\\/g3>.",
+          "A <g1>skybox light<\\/g1> is an <g2>ambient light<\\/g2> emitted by a <g3>skybox<\\/g3>.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/lights-and-shadows\\/skybox-lights.md",
+          {
+            "id": "tu3"
+          }
+        ],
+        [
+          "Stride analyzes the skybox texture and generates lighting using <g4>image-based lighting (Wikipedia)<\\/g4>.",
+          "Stride analisa a textura da caixa do céu e gera iluminação usando iluminação baseada em imagem <g4> (Wikipedia)<\\/g4>.",
+          " Stride analyzes the skybox texture and generates lighting using <g4>image-based lighting (Wikipedia)<\\/g4>.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/lights-and-shadows\\/skybox-lights.md",
+          {
+            "id": "tu3"
+          }
+        ],
+        [
+          "<x1\\/>media\\/SkyboxLightOverview.png<x2\\/>",
+          "<x1\\/>media\\/SkyboxLightOverview.png<x2\\/>",
+          "<x1\\/>media\\/SkyboxLightOverview.png<x2\\/>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/lights-and-shadows\\/skybox-lights.md",
+          {
+            "id": "tu4"
+          }
+        ],
+        [
+          "Skybox lights are good for exterior scenes, where the skybox is visible.",
+          "As luzes Skybox são boas para cenas externas, onde a caixa de céu é visível.",
+          "Skybox lights are good for exterior scenes, where the skybox is visible.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/lights-and-shadows\\/skybox-lights.md",
+          {
+            "id": "tu5"
+          }
+        ],
+        [
+          "They're less useful for interior scenes, such as in rooms where the skybox is only visible through windows; as the skybox light nonetheless lights the entire room, this creates an unnatural effect.",
+          "Eles são menos úteis para cenas interiores, como em salas onde a caixa do céu é apenas visível através das janelas; como a luz da caixa do céu, no entanto, ilumina toda a sala, isso cria um efeito não natural.",
+          " They're less useful for interior scenes, such as in rooms where the skybox is only visible through windows; as the skybox light nonetheless lights the entire room, this creates an unnatural effect.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/lights-and-shadows\\/skybox-lights.md",
+          {
+            "id": "tu5"
+          }
+        ],
+        [
+          "How skyboxes light the scene",
+          "Como as caixas de céu iluminam a cena",
+          "How skyboxes light the scene",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/lights-and-shadows\\/skybox-lights.md",
+          {
+            "id": "tu6"
+          }
+        ],
+        [
+          "These images show the difference between ambient and skybox lighting on two pure diffuse <g1>materials<\\/g1>:",
+          "Estas imagens mostram a diferença entre iluminação ambiente e Skybox em dois materiais difusos puros <g1><\\/g1>:",
+          "These images show the difference between ambient and skybox lighting on two pure diffuse <g1>materials<\\/g1>:",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/lights-and-shadows\\/skybox-lights.md",
+          {
+            "id": "tu7"
+          }
+        ],
+        [
+          "Ambient lighting",
+          "Iluminação ambiente",
+          "Ambient lighting",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/lights-and-shadows\\/skybox-lights.md",
+          {
+            "id": "tu8"
+          }
+        ],
+        [
+          "Skybox lighting",
+          "Iluminação Skybox",
+          "Skybox lighting",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/lights-and-shadows\\/skybox-lights.md",
+          {
+            "id": "tu9"
+          }
+        ],
+        [
+          "<x1\\/>Ambient lighting<x2\\/>",
+          "<x1\\/> Iluminação abrangente <x2\\/>",
+          "<x1\\/>Ambient lighting<x2\\/>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/lights-and-shadows\\/skybox-lights.md",
+          {
+            "id": "tu10"
+          }
+        ],
+        [
+          "<x1\\/>Skybox lighting.png<x2\\/>",
+          "<x1\\/>Skybox lighting.png<x2\\/>",
+          "<x1\\/>Skybox lighting.png<x2\\/>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/lights-and-shadows\\/skybox-lights.md",
+          {
+            "id": "tu11"
+          }
+        ],
+        [
+          "These images show the effect of skybox lighting on a material with different metal and gloss properties:",
+          "Estas imagens mostram o efeito da iluminação skybox em um material com diferentes propriedades de metal e brilho:",
+          "These images show the effect of skybox lighting on a material with different metal and gloss properties:",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/lights-and-shadows\\/skybox-lights.md",
+          {
+            "id": "tu12"
+          }
+        ],
+        [
+          "Material Plastic",
+          "Material plástico",
+          "Material Plastic",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/lights-and-shadows\\/skybox-lights.md",
+          {
+            "id": "tu13"
+          }
+        ],
+        [
+          "Metal 100% Gloss 50%",
+          "Metal 100% Gloss 50%",
+          "Metal 100% Gloss 50%",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/lights-and-shadows\\/skybox-lights.md",
+          {
+            "id": "tu14"
+          }
+        ],
+        [
+          "Metal 100% Gloss 100%",
+          "100% de brilho 100%",
+          "Metal 100% Gloss 100%",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/lights-and-shadows\\/skybox-lights.md",
+          {
+            "id": "tu15"
+          }
+        ],
+        [
+          "<x1\\/>Material plastic<x2\\/>",
+          "<x1\\/>Material plastic<x2\\/>",
+          "<x1\\/>Material plastic<x2\\/>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/lights-and-shadows\\/skybox-lights.md",
+          {
+            "id": "tu16"
+          }
+        ],
+        [
+          "<x1\\/>Material 100% Gloss 100%<x2\\/>",
+          "<x1\\/>Material 100% Gloss 100%<x2\\/>",
+          "<x1\\/>Material 100% Gloss 100%<x2\\/>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/lights-and-shadows\\/skybox-lights.md",
+          {
+            "id": "tu17"
+          }
+        ],
+        [
+          "<x1\\/>Metal 100% Gloss 100%<x2\\/>",
+          "<x1\\/>Metal 100% Gloss 100%<x2\\/>",
+          "<x1\\/>Metal 100% Gloss 100%<x2\\/>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/lights-and-shadows\\/skybox-lights.md",
+          {
+            "id": "tu18"
+          }
+        ],
+        [
+          "Notice how the skybox texture colors are reflected.",
+          "Observe como as cores de textura de Skybox são refletidas.",
+          "Notice how the skybox texture colors are reflected.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/lights-and-shadows\\/skybox-lights.md",
+          {
+            "id": "tu19"
+          }
+        ],
+        [
+          "Set up a skybox light",
+          "Configurar uma luz skybox",
+          "Set up a skybox light",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/lights-and-shadows\\/skybox-lights.md",
+          {
+            "id": "tu20"
+          }
+        ],
+        [
+          "To use a skybox as a light, you need to add a skybox asset, then select it in a <g1>Light component<\\/g1>.",
+          "Para usar uma caixa de céu como uma luz, você precisa adicionar um ativo Skybox, em seguida, selecione-o em um componente <g1>Light<\\/g1>.",
+          "To use a skybox as a light, you need to add a skybox asset, then select it in a <g1>Light component<\\/g1>.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/lights-and-shadows\\/skybox-lights.md",
+          {
+            "id": "tu21"
+          }
+        ],
+        [
+          "In the <g1>Asset View<\\/g1>, click <x1\\/>Add asset<x2\\/>",
+          "No <g1>Asset View<\\/g1>, clique em <x1\\/>Add asset<x2\\/>",
+          "In the <g1>Asset View<\\/g1>, click <x1\\/>Add asset<x2\\/>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/lights-and-shadows\\/skybox-lights.md",
+          {
+            "id": "tu22"
+          }
+        ],
+        [
+          "Select <g1>Miscellaneous<\\/g1> > <g2>Skybox<\\/g2>.",
+          "Selecione <g1>Miscelânea<\\/g1> > <g2>Skybox<\\/g2>.",
+          "Select <g1>Miscellaneous<\\/g1> > <g2>Skybox<\\/g2>.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/lights-and-shadows\\/skybox-lights.md",
+          {
+            "id": "tu23"
+          }
+        ],
+        [
+          "<x1\\/>Choose asset type<x2\\/>",
+          "<x1\\/>Escolha tipo de ativo<x2\\/>",
+          "<x1\\/>Choose asset type<x2\\/>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/lights-and-shadows\\/skybox-lights.md",
+          {
+            "id": "tu24"
+          }
+        ],
+        [
+          "The <g1>Select an asset<\\/g1> window opens.",
+          "A janela <g1>Selecione um ativo<\\/g1> abre.",
+          "The <g1>Select an asset<\\/g1> window opens.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/lights-and-shadows\\/skybox-lights.md",
+          {
+            "id": "tu25"
+          }
+        ],
+        [
+          "Choose a skybox texture from the project assets and click <g1>OK<\\/g1>.",
+          "Escolha uma textura skybox dos ativos do projeto e clique em <g1>OK<\\/g1>.",
+          "Choose a skybox texture from the project assets and click <g1>OK<\\/g1>.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/lights-and-shadows\\/skybox-lights.md",
+          {
+            "id": "tu26"
+          }
+        ],
+        [
+          "<x1\\/>Choose texture<x2\\/>",
+          "<x1\\/>Escolha textura<x2\\/>",
+          "<x1\\/>Choose texture<x2\\/>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/lights-and-shadows\\/skybox-lights.md",
+          {
+            "id": "tu27"
+          }
+        ],
+        [
+          "Game Studio adds the skybox asset with the texture you specified.",
+          "Game Studio adiciona o ativo skybox com a textura que você especificou.",
+          "Game Studio adds the skybox asset with the texture you specified.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/lights-and-shadows\\/skybox-lights.md",
+          {
+            "id": "tu28"
+          }
+        ],
+        [
+          "Select the entity you want to be the skybox light.",
+          "Selecione a entidade que você deseja ser a luz do skybox.",
+          "Select the entity you want to be the skybox light.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/lights-and-shadows\\/skybox-lights.md",
+          {
+            "id": "tu29"
+          }
+        ],
+        [
+          "In the <g1>Property Grid<\\/g1> (on the right by default), click <g2>Add component<\\/g2> and select <g3>Light<\\/g3>.",
+          "No <g1>Property Grid<\\/g1> (à direita por padrão), clique em <g2>Add component<\\/g2> e selecione <g3>Light<\\/g3>.",
+          "In the <g1>Property Grid<\\/g1> (on the right by default), click <g2>Add component<\\/g2> and select <g3>Light<\\/g3>.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/lights-and-shadows\\/skybox-lights.md",
+          {
+            "id": "tu30"
+          }
+        ],
+        [
+          "<x1\\/>Background component properties<x2\\/>",
+          "<x1\\/> Propriedades do componente de fundo<x2\\/>",
+          "<x1\\/>Background component properties<x2\\/>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/lights-and-shadows\\/skybox-lights.md",
+          {
+            "id": "tu31"
+          }
+        ],
+        [
+          "In the <g1>Light<\\/g1> component properties, under <g2>Light<\\/g2>, select <g3>Skybox<\\/g3>.",
+          "Nas propriedades do componente <g1>Light<\\/g1>, abaixo de <g2>Light<\\/g2>, selecione <g3>Skybox<\\/g3>.",
+          "In the <g1>Light<\\/g1> component properties, under <g2>Light<\\/g2>, select <g3>Skybox<\\/g3>.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/lights-and-shadows\\/skybox-lights.md",
+          {
+            "id": "tu32"
+          }
+        ],
+        [
+          "<x1\\/>Light component property<x2\\/>",
+          "<x1\\/> Propriedade de componente leve<x2\\/>",
+          "<x1\\/>Light component property<x2\\/>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/lights-and-shadows\\/skybox-lights.md",
+          {
+            "id": "tu33"
+          }
+        ],
+        [
+          "Click <x1\\/>Hand icon<x2\\/> (<g1>Select an asset<\\/g1>):",
+          "Clique em <x1\\/>Hand icon<x2\\/> (<g1>Select an asset<\\/g1>):",
+          "Click <x1\\/>Hand icon<x2\\/> (<g1>Select an asset<\\/g1>):",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/lights-and-shadows\\/skybox-lights.md",
+          {
+            "id": "tu34"
+          }
+        ],
+        [
+          "<x1\\/>No skybox asset selected<x2\\/>",
+          "<x1\\/> Nenhum ativo de caixa de céu selecionado<x2\\/>",
+          "<x1\\/>No skybox asset selected<x2\\/>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/lights-and-shadows\\/skybox-lights.md",
+          {
+            "id": "tu35"
+          }
+        ],
+        [
+          "Select the skybox asset you want to use as a light source and click <g1>OK<\\/g1>.",
+          "Selecione o ativo Skybox que deseja usar como fonte de luz e clique em <g1>OK<\\/g1>.",
+          "Select the skybox asset you want to use as a light source and click <g1>OK<\\/g1>.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/lights-and-shadows\\/skybox-lights.md",
+          {
+            "id": "tu36"
+          }
+        ],
+        [
+          "<x1\\/>Select an asset<x2\\/>",
+          "<x1\\/> Selecione um ativo<x2\\/>",
+          "<x1\\/>Select an asset<x2\\/>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/lights-and-shadows\\/skybox-lights.md",
+          {
+            "id": "tu37"
+          }
+        ],
+        [
+          "The <g1>Light component<\\/g1> uses the skybox asset to light the scene.",
+          "O componente <g1>Light<\\/g1> usa o asset skybox para iluminar a cena.",
+          "The <g1>Light component<\\/g1> uses the skybox asset to light the scene.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/lights-and-shadows\\/skybox-lights.md",
+          {
+            "id": "tu38"
+          }
+        ],
+        [
+          "Skybox asset properties",
+          "Propriedades de ativos Skybox",
+          "Skybox asset properties",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/lights-and-shadows\\/skybox-lights.md",
+          {
+            "id": "tu39"
+          }
+        ],
+        [
+          "When you use a skybox as a light, Stride uses it both in compressed form (<g1>spherical harmonics (Wikipedia)<\\/g1>) and as a texture to light different kinds of material.",
+          "Quando você usa uma caixa de céu como uma luz, Stride o usa tanto em forma compactada (<g1>spherical harmônicos (Wikipedia)<\\/g1>) e como uma textura para iluminar diferentes tipos de material.",
+          "When you use a skybox as a light, Stride uses it both in compressed form (<g1>spherical harmonics (Wikipedia)<\\/g1>) and as a texture to light different kinds of material.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/lights-and-shadows\\/skybox-lights.md",
+          {
+            "id": "tu40"
+          }
+        ],
+        [
+          "You can control the detail of both in the skybox asset properties.",
+          "Você pode controlar os detalhes de ambas as propriedades de ativos da Skybox.",
+          " You can control the detail of both in the skybox asset properties.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/lights-and-shadows\\/skybox-lights.md",
+          {
+            "id": "tu40"
+          }
+        ],
+        [
+          "<x1\\/>Skybox lighting properties<x2\\/>",
+          "<x1\\/>Skybox propriedades de iluminação<x2\\/>",
+          "<x1\\/>Skybox lighting properties<x2\\/>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/lights-and-shadows\\/skybox-lights.md",
+          {
+            "id": "tu41"
+          }
+        ],
+        [
+          "Property",
+          "Propriedade",
+          "Property",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/lights-and-shadows\\/skybox-lights.md",
+          {
+            "id": "tu42"
+          }
+        ],
+        [
+          "Description",
+          "Descrição",
+          "Description",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/lights-and-shadows\\/skybox-lights.md",
+          {
+            "id": "tu43"
+          }
+        ],
+        [
+          "Texture",
+          "Textura",
+          "Texture",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/lights-and-shadows\\/skybox-lights.md",
+          {
+            "id": "tu44"
+          }
+        ],
+        [
+          "The texture to use as skybox (eg a cubemap or panoramic texture)",
+          "A textura para usar como caixa de céu (por exemplo, um cubemap ou textura panorâmica)",
+          "The texture to use as skybox (eg a cubemap or panoramic texture)",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/lights-and-shadows\\/skybox-lights.md",
+          {
+            "id": "tu45"
+          }
+        ],
+        [
+          "Specular Only",
+          "Apenas especular",
+          "Specular Only",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/lights-and-shadows\\/skybox-lights.md",
+          {
+            "id": "tu46"
+          }
+        ],
+        [
+          "Use the skybox only for specular lighting",
+          "Use a caixa do céu apenas para iluminação especular",
+          "Use the skybox only for specular lighting",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/lights-and-shadows\\/skybox-lights.md",
+          {
+            "id": "tu47"
+          }
+        ],
+        [
+          "Diffuse SH order",
+          "Diffuse SH order",
+          "Diffuse SH order",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/lights-and-shadows\\/skybox-lights.md",
+          {
+            "id": "tu48"
+          }
+        ],
+        [
+          "The level of detail of the compressed skybox, used for diffuse lighting (dull materials).",
+          "O nível de detalhe da caixa de céu comprimido, usado para iluminação difusa (materiais).",
+          "The level of detail of the compressed skybox, used for diffuse lighting (dull materials).",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/lights-and-shadows\\/skybox-lights.md",
+          {
+            "id": "tu49"
+          }
+        ],
+        [
+          "<g1>Order5<\\/g1> is more detailed than <g2>Order3<\\/g2>.",
+          "<g1>Order5<\\/g1> é mais detalhado do que <g2>Order3<\\/g2>.",
+          " <g1>Order5<\\/g1> is more detailed than <g2>Order3<\\/g2>.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/lights-and-shadows\\/skybox-lights.md",
+          {
+            "id": "tu49"
+          }
+        ],
+        [
+          "Specular Cubemap Size",
+          "Tamanho do Cubemap especular",
+          "Specular Cubemap Size",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/lights-and-shadows\\/skybox-lights.md",
+          {
+            "id": "tu50"
+          }
+        ],
+        [
+          "The texture size used for specular lighting.",
+          "O tamanho da textura usado para iluminação especular.",
+          "The texture size used for specular lighting.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/lights-and-shadows\\/skybox-lights.md",
+          {
+            "id": "tu51"
+          }
+        ],
+        [
+          "Larger textures have more detail.",
+          "Texturas maiores têm mais detalhes.",
+          " Larger textures have more detail.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/lights-and-shadows\\/skybox-lights.md",
+          {
+            "id": "tu51"
+          }
+        ],
+        [
+          "Skybox light properties",
+          "Propriedades de luz Skybox",
+          "Skybox light properties",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/lights-and-shadows\\/skybox-lights.md",
+          {
+            "id": "tu52"
+          }
+        ],
+        [
+          "<x1\\/>media\\/SkyboxLightProperties.png<x2\\/>",
+          "<x1\\/>media\\/SkyboxLightProperties.png<x2\\/>",
+          "<x1\\/>media\\/SkyboxLightProperties.png<x2\\/>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/lights-and-shadows\\/skybox-lights.md",
+          {
+            "id": "tu53"
+          }
+        ],
+        [
+          "Property",
+          "Propriedade",
+          "Property",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/lights-and-shadows\\/skybox-lights.md",
+          {
+            "id": "tu54"
+          }
+        ],
+        [
+          "Description",
+          "Descrição",
+          "Description",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/lights-and-shadows\\/skybox-lights.md",
+          {
+            "id": "tu55"
+          }
+        ],
+        [
+          "Intensity",
+          "Intensidade",
+          "Intensity",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/lights-and-shadows\\/skybox-lights.md",
+          {
+            "id": "tu56"
+          }
+        ],
+        [
+          "The light intensity",
+          "A intensidade da luz",
+          "The light intensity",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/lights-and-shadows\\/skybox-lights.md",
+          {
+            "id": "tu57"
+          }
+        ],
+        [
+          "Culling Mask",
+          "Máscara de Culing",
+          "Culling Mask",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/lights-and-shadows\\/skybox-lights.md",
+          {
+            "id": "tu58"
+          }
+        ],
+        [
+          "Which entity groups are affected by the light.",
+          "Quais grupos de entidades são afetados pela luz.",
+          "Which entity groups are affected by the light.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/lights-and-shadows\\/skybox-lights.md",
+          {
+            "id": "tu59"
+          }
+        ],
+        [
+          "By default, all groups are affected",
+          "Por padrão, todos os grupos são afetados",
+          " By default, all groups are affected",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/lights-and-shadows\\/skybox-lights.md",
+          {
+            "id": "tu59"
+          }
+        ],
+        [
+          "Example code",
+          "Exemplo de código",
+          "Example code",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/lights-and-shadows\\/skybox-lights.md",
+          {
+            "id": "tu60"
+          }
+        ],
+        [
+          "The following code changes the skybox light and its intensity:",
+          "O código seguinte muda a luz da caixa de céu e sua intensidade:",
+          "The following code changes the skybox light and its intensity:",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/lights-and-shadows\\/skybox-lights.md",
+          {
+            "id": "tu61"
+          }
+        ],
+        [
+          "public Skybox skybox;",
+          "skybox Skybox público;",
+          "public Skybox skybox;\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/lights-and-shadows\\/skybox-lights.md",
+          {
+            "id": "tu62"
+          }
+        ],
+        [
+          "public void ChangeSkyboxParameters()",
+          "void público ChangeSkyboxParameters()",
+          "public void ChangeSkyboxParameters()\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/lights-and-shadows\\/skybox-lights.md",
+          {
+            "id": "tu62"
+          }
+        ],
+        [
+          "{",
+          "(",
+          "{\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/lights-and-shadows\\/skybox-lights.md",
+          {
+            "id": "tu62"
+          }
+        ],
+        [
+          "\\/\\/ Get the light component from an entity",
+          "\\/\\/ Obter o componente de luz de uma entidade",
+          "    \\/\\/ Get the light component from an entity\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/lights-and-shadows\\/skybox-lights.md",
+          {
+            "id": "tu62"
+          }
+        ],
+        [
+          "var light = Entity.Get<LightComponent>();",
+          "var light = Entity.Get<LightComponent>();",
+          "\tvar light = Entity.Get<LightComponent>();\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/lights-and-shadows\\/skybox-lights.md",
+          {
+            "id": "tu62"
+          }
+        ],
+        [
+          "\\/\\/ Get the Skybox Light settings from the light component",
+          "\\/\\/ Obter as configurações de luz Skybox do componente de luz",
+          "\r\n\t\\/\\/ Get the Skybox Light settings from the light component\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/lights-and-shadows\\/skybox-lights.md",
+          {
+            "id": "tu62"
+          }
+        ],
+        [
+          "var skyboxLight = light.Type as LightSkybox;",
+          "var skyboxLight = luz. Tipo como LightSkybox;",
+          "\tvar skyboxLight = light.Type as LightSkybox;\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/lights-and-shadows\\/skybox-lights.md",
+          {
+            "id": "tu62"
+          }
+        ],
+        [
+          "\\/\\/ Replace the existing skybox",
+          "\\/\\/ Substituir a caixa de céu existente",
+          "\r\n\t\\/\\/ Replace the existing skybox\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/lights-and-shadows\\/skybox-lights.md",
+          {
+            "id": "tu62"
+          }
+        ],
+        [
+          "skyboxLight.Skybox = skybox;",
+          "skyboxLight.Skybox = skybox;",
+          "\tskyboxLight.Skybox = skybox;\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/lights-and-shadows\\/skybox-lights.md",
+          {
+            "id": "tu62"
+          }
+        ],
+        [
+          "\\/\\/ Change the skybox light intensity",
+          "\\/\\/ Alterar a intensidade de luz da caixa de céu",
+          "\r\n\t\\/\\/ Change the skybox light intensity\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/lights-and-shadows\\/skybox-lights.md",
+          {
+            "id": "tu62"
+          }
+        ],
+        [
+          "light.Intensity = 1.5f;",
+          "luz. Intensidade = 1,5f;",
+          "\tlight.Intensity = 1.5f;\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/lights-and-shadows\\/skybox-lights.md",
+          {
+            "id": "tu62"
+          }
+        ],
+        [
+          "}",
+          "",
+          "}\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/lights-and-shadows\\/skybox-lights.md",
+          {
+            "id": "tu62"
+          }
+        ],
+        [
+          "See also",
+          "Ver também",
+          "See also",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/lights-and-shadows\\/skybox-lights.md",
+          {
+            "id": "tu63"
+          }
+        ],
+        [
+          "Skyboxes and backgrounds",
+          "Skyboxes e fundos",
+          "<g1>Skyboxes and backgrounds<\\/g1>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/lights-and-shadows\\/skybox-lights.md",
+          {
+            "id": "tu64"
+          }
+        ]
+      ]
+    }
+  ],
+  "seg_enabled": false
 }

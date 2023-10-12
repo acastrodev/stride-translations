@@ -1,119 +1,119 @@
-# Material maps
+# Mapas de material
 
-<span class="badge text-bg-primary">Intermediate</span>
-<span class="badge text-bg-success">Artist</span>
-<span class="badge text-bg-success">Programmer</span>
+<x1\/> Intermediário <x2\/>
+<x3\/>Artista <x4\/>
+<x5\/> Programador <x6\/>
 
-**Material maps** calculate how materials are rendered. They can use two kinds of values: color (RGB) values or scalar (single float) values.
+**Mapas importantes** calculam como os materiais são renderizados. Eles podem usar dois tipos de valores: valores de cor (RGB) ou valores escalares (single float).
 
-You can use material maps for several purposes, including gloss maps, diffuse maps, or  blend maps (for combining [material layers](material-layers.md))
+Você pode usar mapas materiais para várias finalidades, incluindo mapas de brilho, mapas difusos ou mapas de mistura (para combinar camadas de material [](material-layers.md))
 
-Material maps can fetch values using one of several providers:
+Os mapas materiais podem buscar valores usando um dos vários provedores:
 
-* **Vertex stream**: a value taken from mesh attributes
-* **Binary operator**: a combination of any other two providers
-* **Float4 / Float**: a constant value
-* **Color**: a hex color value
-* **Shader**: a value provided by a ComputeColor shader. This lets you use procedural values
-* **Texture**: a value sampled from a [texture](../textures/index.md)
+* **Vertex stream**: um valor retirado de atributos de malha
+* **Binário operador**: uma combinação de qualquer outro dois provedores
+* **Float4 \/ Float**: um valor constante
+* **Cor**: um valor de cor do hex
+* **Shader**: um valor fornecido por um shader ComputeColor. Isso permite que você use valores processuais
+* **Textura**: um valor amostrado de um [texture](../textures/index.md)
 
-To choose the provider, click ![Blue arrow button](~/manual/game-studio/media/blue-arrow-icon.png) (**Replace**) and select it from the drop-down menu:
+Para escolher o provedor, clique em <x1\/> botão de seta azul<x2\/> (** Substituir**) e selecione-o no menu suspenso:
 
-![media/material-colors-1.png](media/material-colors-1.png)
+<x1\/>media\/material-colors-1.png<x2\/>
 
-## Vertex stream
+## Fluxo de vértice
 
-This provider takes a value from an attribute of the mesh of the model you apply the material to.
+Este provedor tem um valor a partir de um atributo da malha do modelo a que você aplica o material.
 
-It has two modes: **Color Vertex Stream** and **Custom Vertex Stream**. To switch between them, with **Vertex Stream** selected as the provider, click ![Blue arrow button](~/manual/game-studio/media/blue-arrow-icon.png) (**Replace**) and choose the mode you want to use.
+Tem dois modos: **Cor Vertex Stream** e ** Vertex Personalizado Stream**. Para alternar entre eles, com **Vertex Stream** selecionado como o provedor, clique em <x1\/> botão de seta azul<x2\/> (** substituir**) e escolha o modo que você deseja usar.
 
-![Vertex stream mode](media/vertex-stream-mode.png)
+<x1\/> Modo de fluxo de texto<x2\/>
 
-### Color vertex stream
+### Fluxo de vértice de cor
 
-Takes a color value from the mesh.
+Toma um valor de cor da malha.
 
-| Property | Description |
+| Propriedade | Descrição |
 | -------- | -----------
-| Index | The index in the named stream |
-| Channel | The channel (RGBA) to sample from the stream |
+| Índice | O índice no fluxo nomeado |
+| Canal | O canal (RGBA) para amostra do fluxo |
 
-### Custom vertex stream
+### Fluxo de vértice personalizado
 
-Takes a value from the mesh channel you specify.
+Toma um valor do canal de malha que você especificar.
 
-| Property | Description |
+| Propriedade | Descrição |
 | -------- | -----------
-| Name | Semantic name of the channel to read data from |
-| Channel | The channel (RGBA) to sample from the stream |
+| Nome | Nome semântico do canal para ler dados de |
+| Canal | O canal (RGBA) para amostra do fluxo |
 
-## Binary operator
+## Operador binário
 
-Perform a binary operation from two color/scalar value providers. You can nest as many material maps inside binary operators as you need (including further binary operators).
+Execute uma operação binária de dois provedores de valor de cor \/ escalar. Você pode aninhar como muitos mapas materiais dentro de operadores binários como você precisa (incluindo outros operadores binários).
 
-To choose how the operation works, click ![Blue arrow button](~/manual/game-studio/media/blue-arrow-icon.png) (**Replace**) and select from the drop-down menu. The operations are similar to options when blending layers in Photoshop.
+Para escolher como a operação funciona, clique em <x1\/> botão de seta azul<x2\/> (** Substituir**) e selecione no menu suspenso. As operações são semelhantes às opções ao misturar camadas no Photoshop.
 
-![Operation mode](media/operation-mode.png)
+<x1\/> Modo de operação<x2\/>
 
-`Result = LeftColor  <operator> RightColor`
+`Resultado = LeftColor <operator> Cor da direita`
 
-![media/material-colors-4.png](media/material-colors-4.png)
+<x1\/>media\/material-colors-4.png<x2\/>
 
-| Property | Description |
+| Propriedade | Descrição |
 | -------- | -----------
-| Operator | A binary operator (eg add, multiply, etc) |
-| Left | The left color/scalar used in the operation |
-| Right | The right color/scalar used in the operation |
+| Operador | Um operador binário (por exemplo, adicionar, multiplicar, etc) |
+| Esquerda | A cor esquerda\/escalar utilizada na operação |
+| Certo | A cor\/escalar direita usada na operação |
 
-## Float4 / Float
+## Float4 \/ Float
 
-Provided directly as a constant value over the whole material.
+Fornecido diretamente como um valor constante sobre todo o material.
 
-In the case of RGB values, you control the RGBA value with the X, Y, Z and W values (*Float4*).
+No caso de valores RGB, você controla o valor RGBA com os valores X, Y, Z e W (*Float4*).
 
-![xyzw](media/material-colors-xyzw.png)
+<x1\/>xyzw<x2\/>
 
-In the case of scalar values, you control the value with a slider (*Float*).
+No caso de valores escalares, você controla o valor com um controle deslizante (*Float*).
 
-![Blend map slider](media/blend-map-slider.png)
+<x1\/>Blend mapa slider<x2\/>
 
-## Color
+## Cor
 
-A value provided from a color hex value. This is only available for material maps that use RGB values.
+Um valor fornecido a partir de um valor hex colorido. Isso só está disponível para mapas materiais que usam valores RGB.
 
-![media/material-colors-3.png](media/material-colors-3.png)
+<x1\/>media\/material-colors-3.png<x2\/>
 
 ## Shader
 
-A value provided by a ComputeColor shader. This lets you use procedural values.
+Um valor fornecido por um shader ComputeColor. Isso permite que você use valores processuais.
 
-For an example of a ComputeColor shader, see the [Particle materials tutorial](../../particles/tutorials/particle-materials.md).
+Para um exemplo de um shader ComputeColor, veja o tutorial [materiais de peças](../../particles/tutorials/particle-materials.md).
 
-## Texture
+## Textura
 
-Sample the color/scalar from a [texture](../textures/index.md).
+Amostra a cor\/escalar de um [texture](../textures/index.md).
 
-For example, the images below demonstrate how the texture changes the way Stride blends materials.
+Por exemplo, as imagens abaixo demonstram como a textura muda a forma como o Stride mistura materiais.
 
-![Blend map diagram](media/blend-map-diagram.png)
+<x1\/> Diagrama de mapas ampliados<x2\/>
 
-![Blend map diagram](media/blend-map-diagram2.png)
+<x1\/> Diagrama de mapas ampliados<x2\/>
 
-![media/material-colors-2.png](media/material-colors-2.png)
+<x1\/>media\/material-colors-2.png<x2\/>
 
-| Property | Description |
+| Propriedade | Descrição |
 | ------------------ | --------------- 
-| Texture | A reference to a texture |
-| Channel | The channel (R, G, B, A) used to extract the scalar value. Only valid for scalar textures |
-| Texcoord Index | The texture coordinates (u,v) to use from the mesh with this texture |
-| Filtering | The sampling method (eg Linear, Point, Anisotropic, etc) |
-| Address Mode U / V | <p><br>Defines how (u,v) coordinates are addressed</p></br> <p><br> **Wrap**: Tiles (u,v) at integer junctions. For example, if u ranges from 0.0 to 3.0, the texture repeats three times on the U axis</p></br> <p><br>**Mirror**: Flips (u,v) at integer junctions. For example, if u ranges from 0.0 to 1.0, the texture is displayed as expected; but from 1.0 to 2.0, the texture is mirrored </p></br> <p><br> **Clamp**: Clamps (u,v) to the range (0.0, 1.0)</p></br> |
-| Scale | A scale applied to (u,v) |
-| Offset | An offset applied to (u,v) |
+| Textura | Uma referência a uma textura |
+| Canal | O canal (R, G, B, A) usado para extrair o valor escalar. Apenas válido para texturas escalares |
+| Índice de Texcoord | As coordenadas de textura (u,v) para usar da malha com esta textura |
+| Filtrar | O método de amostragem (ex. Linear, Point, Anisotropic, etc.) |
+| Modo de endereço U \/ V | <p><x1\/>Define como (u,v) as coordenadas são abordadas</p></br> <p><br> **Wrap**: Azulejos (u,v) em junções inteiras. Por exemplo, se u varia de 0,0 a 3,0, a textura repete três vezes no eixo U</p></br> <p><x1\/>**Mirror**: Vira (u,v) em junções inteiras. Por exemplo, se u varia de 0,0 a 1.0, a textura é exibida como esperado; mas de 1.0 a 2.0, a textura é espelhada </p></br> <p><br> **Clamp**: Braçadeiras (u,v) para o intervalo (0,0, 1.0)</p></br> |
+| Escala | Uma escala aplicada a (u,v) |
+| Abertura | Um deslocamento aplicado a (u,v) |
 
-## See also
+## Ver também
 
-- [Material attributes](material-attributes.md)
-- [Material layers](material-layers.md)
-* [Material slots](material-slots.md)
-* [Materials for developers](materials-for-developers.md)
+- [Atributos de material](material-attributes.md)
+- [Camadas de material](material-layers.md)
+* [Slots de material](material-slots.md)
+* [Materiais para desenvolvedores](materials-for-developers.md)

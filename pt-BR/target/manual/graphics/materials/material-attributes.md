@@ -1,33 +1,33 @@
-# Material attributes
+# Atributos de material
 
-<span class="badge text-bg-primary">Intermediate</span>
-<span class="badge text-bg-success">Artist</span>
-<span class="badge text-bg-success">Programmer</span>
+<x1\/> Intermediário <x2\/>
+<x3\/>Artista <x4\/>
+<x5\/> Programador <x6\/>
 
-**Material attributes** define the core characteristics of a material, such as its diffuse color, diffuse shading model, and so on. Attributes are organized into **geometry**, **shading**, and **misc**.
+**Atributos materiais** definem as características principais de um material, como sua cor difusa, modelo de sombreamento difuso, e assim por diante. Os atributos são organizados em **geometry**, **shading** e **misc**.
 
-![media/material-attributes-1.png](media/material-attributes-1.png)
+<x1\/>media\/material-attributes-1.png<x2\/>
 
-There are two types of attribute:
+Existem dois tipos de atributo:
 
-- attributes used as input values for a shading model (for example, the **Diffuse** attribute provides only color used by the diffuse shading model)
-- attributes that can change the shading model (for example, diffuse shading models, such as the lambert model, interprets the diffuse attribute color)
+- atributos usados como valores de entrada para um modelo de sombreamento (por exemplo, o atributo **Diffuse** fornece apenas cor utilizada pelo modelo de sombreamento difuso)
+- atributos que podem mudar o modelo de sombreamento (por exemplo, modelos de sombreamento difusos, como o modelo lambert, interpreta a cor do atributo difuso)
 
-Attributes contribute to a layer of a material. If a material is directly used as a model material, all its root attributes are considered part of the first layer.
+Os atributos contribuem para uma camada de um material. Se um material é usado diretamente como um material de modelo, todos os seus atributos de raiz são considerados parte da primeira camada.
 
-You can also write [custom shaders](../effects-and-shaders/custom-shaders.md) to use in material attributes.
+Você também pode escrever [ shaders custom](../effects-and-shaders/custom-shaders.md) para usar em atributos materiais.
 
-## In this section
+## Nesta secção
 
-* [Geometry attributes](geometry-attributes.md)
-* [Shading attributes](shading-attributes.md)
-* [Misc attributes](misc-attributes.md)
-   * [Clear coat shading](clear-coat-shading.md)
+* [Atributos de geometria](geometry-attributes.md)
+* [Atributos de Shading](shading-attributes.md)
+* [Atributos diversos](misc-attributes.md)
+   * [Sombreamento de casaco claro](clear-coat-shading.md)
 
-## See also
+## Ver também
 
-* [Material maps](material-maps.md)
-* [Material layers](material-layers.md)
-* [Material slots](material-slots.md)
-* [Materials for developers](materials-for-developers.md)
-* [Custom shaders](../effects-and-shaders/custom-shaders.md)
+* [Mapas de material](material-maps.md)
+* [Camadas de material](material-layers.md)
+* [Slots de material](material-slots.md)
+* [Materiais para desenvolvedores](materials-for-developers.md)
+* [Sombreadores personalizados](../effects-and-shaders/custom-shaders.md)

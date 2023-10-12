@@ -1,44 +1,44 @@
-# Characters
+# Personagens
 
-<span class="badge text-bg-primary">Beginner</span>
-<span class="badge text-bg-success">Designer</span>
+<x1\/>Introdução<x2\/>
+<x3\/>Designer<x4\/>
 
-**Character** colliders are used for player and script-controlled characters such as NPCs. Entities with [character components](xref:Stride.Physics.CharacterComponent) can only be moved with [SetVelocity](xref:Stride.Physics.CharacterComponent.SetVelocity\(Stride.Core.Mathematics.Vector3\)), [Jump](xref:Stride.Physics.CharacterComponent.Jump), and [Teleport](xref:Stride.Physics.CharacterComponent.Teleport\(Stride.Core.Mathematics.Vector3\)).
+**Character** são usados para personagens controlados por scripts como NPCs. Entidades com componentes de caracteres [](xref:Stride.Physics.CharacterComponent) só podem ser movidas com [SetVelocity](xref:Stride.Physics.CharacterComponent.SetVelocity\(Stride.Core.Mathematics.Vector3\)), [Jump](xref:Stride.Physics.CharacterComponent.Jump) e [Teleport](xref:Stride.Physics.CharacterComponent.Teleport\(Stride.Core.Mathematics.Vector3\)).
 
-## Add a character component to an entity
+## Adicionar um componente de caracteres a uma entidade
 
-1. In the **Scene Editor**, select the entity you want to add the component to.
+1. No **Scene Editor**, selecione a entidade a que deseja adicionar o componente.
 
-2. In the **Property Grid**, click **Add component** and select **Character**.
+2. No **Property Grid**, clique em **Add component** e selecione **Character**.
 
-   ![Add character component](media/add-character-component.png)
+   <x1\/> Adicionar componente de caracteres<x2\/>
 
-> [!Note]
-> For the character collider to interact with other physics objects, you also need to set a  collider shape in the collider component properties. The capsule shape is appropriate for most character colliders. For more information, see [collider shapes](collider-shapes.md).
+> <x1\/>!Note<x2\/>
+> Para o colisor de caracteres interagir com outros objetos de física, você também precisa definir uma forma de colisão nas propriedades do componente de colisão. A forma da cápsula é apropriada para a maioria dos colisões de caracteres. Para obter mais informações, consulte as formas [collider](collider-shapes.md).
 
-## Component properties
+## Propriedades de componentes
 
-You can adjust the character component properties in the **Property Grid**.
+Você pode ajustar as propriedades do componente de caracteres no **Property Grid**.
 
-| Property | Description |
+| Propriedade | Descrição |
 ----------------------|-----------------------
-| Collision Group | Sets which collision group the object belongs to. |
-| Can Collide With | Sets which groups the object collides with. |
-| Collision Events | If this is enabled, the object reports collision events, which you can use in scripts. It has no effect on physics. If you have no scripts using collision events for the object, disable this option to save CPU. |
-| Can Sleep | If this is enabled, the physics engine doesn't process physics objects when they're not moving. This saves CPU. |
-| Restitution | Sets the amount of kinetic energy lost or gained after a collision. A typical value is between 0 and 1. If the restitution property of colliding entities is 0, the entities lose all energy and stop moving immediately on impact. If the restitution is 1, they lose no energy and rebound with the same velocity they collided at. Use this to change the "bounciness" of rigidbodies. |
-| Friction | Sets the surface friction. |
-| Rolling Friction | Sets the rolling friction. |
-| CCD Motion Threshold | Sets the velocity at which continuous collision detection (CCD) takes over. CCD prevents fast-moving entities (such as bullets) erroneously passing through other entities. |
-| CCD Swept Sphere Radius | Sets the radius of the bounding sphere containing the position between two physics frames during continuous collision detection. |
-| Gravity | For rigidbodies, sets a custom gravity vector applied if Override Gravity is selected. For characters, specifies how much gravity affects the character. |
-| Step Height | The maximum height the character can step onto. |
-| Fall Speed | The maximum fall speed. |
-| Max Slope | The maximum slope the character can climb, in degrees. |
-| Jump Speed | The amount of jump force. |
+| Grupo de Collision | Define a qual grupo de colisão o objeto pertence. |
+| Pode colar com | Define quais grupos o objeto colide com. |
+| Eventos de colisão | Se isso estiver ativado, o objeto relata eventos de colisão, que você pode usar em scripts. Não tem efeito na física. Se você não tiver scripts usando eventos de colisão para o objeto, desative esta opção para salvar a CPU. |
+| Pode dormir | Se isso estiver ativado, o motor de física não processa objetos de física quando eles não estão se movendo. Isso economiza CPU. |
+| Restituição | Define a quantidade de energia cinética perdida ou adquirida após uma colisão. Um valor típico é entre 0 e 1. Se a propriedade de restituição de entidades colidindo for 0, as entidades perdem toda a energia e param de se mover imediatamente sobre o impacto. Se a restituição é 1, eles não perdem energia e se recuperam com a mesma velocidade em que colidiram. Use isso para mudar o "bounciness" de corpos rígidos. |
+| Fricção | Define o atrito de superfície. |
+| Fricção de rolamento | Define o atrito de rolamento. |
+| CCD Motion Threshold | Define a velocidade em que a detecção contínua de colisão (CCD) assume o controle. O CCD evita que entidades em movimento rápido (como balas) passem erroneamente por outras entidades. |
+| CCD Sphere Radius Swept | Define o raio da esfera de ligação que contém a posição entre dois quadros de física durante a detecção contínua de colisão. |
+| Gravidade | Para corpos rígidos, define um vetor de gravidade personalizado aplicado se a gravidade de substituição for selecionada. Para personagens, especifica quanto a gravidade afeta o personagem. |
+| Passo | A altura máxima que o personagem pode pisar. |
+| Velocidade de queda | A velocidade máxima de queda. |
+| Max Slope | A inclinação máxima do personagem pode subir, em graus. |
+| Velocidade de salto | A quantidade de força de salto. |
 
-## See also
+## Ver também
 
-* [Static colliders](static-colliders.md)
-* [Rigidbodies](rigid-bodies.md)
-* [Collider shapes](collider-shapes.md)
+* [Colliders estáticos](static-colliders.md)
+* [Rígidos](rigid-bodies.md)
+* [Formas de colarinho](collider-shapes.md)

@@ -3,127 +3,127 @@
 <body>
 <trans-unit id="tu1" xml:space="preserve">
 <source xml:lang="en">Shader classes, mixins and inheritance</source>
-<target xml:lang="pt">Shader classes, mixins and inheritance</target>
+<target xml:lang="pt">Shader classes, misturas e herança</target>
 </trans-unit>
 <trans-unit id="tu2" xml:space="preserve">
 <source xml:lang="en">Stride Shading Language (SDSL) is an extension of HLSL, which makes it closer to C# syntax and concepts. The language is object-oriented:</source>
-<target xml:lang="pt">Stride Shading Language (SDSL) is an extension of HLSL, which makes it closer to C# syntax and concepts. The language is object-oriented:</target>
+<target xml:lang="pt">Stride Shading Language (SDSL) é uma extensão de HLSL, o que torna mais perto da sintaxe C# e conceitos. A linguagem é orientada para o objeto:</target>
 </trans-unit>
 <trans-unit id="tu3" xml:space="preserve">
 <source xml:lang="en">shader classes are the foundation of the code</source>
-<target xml:lang="pt">shader classes are the foundation of the code</target>
+<target xml:lang="pt">classes shader são a base do código</target>
 </trans-unit>
 <trans-unit id="tu4" xml:space="preserve">
 <source xml:lang="en">shader classes contain methods and members</source>
-<target xml:lang="pt">shader classes contain methods and members</target>
+<target xml:lang="pt">classes shader contêm métodos e membros</target>
 </trans-unit>
 <trans-unit id="tu5" xml:space="preserve">
 <source xml:lang="en">shader classes can be inherited, methods can be overridden</source>
-<target xml:lang="pt">shader classes can be inherited, methods can be overridden</target>
+<target xml:lang="pt">classes de shader podem ser herdadas, métodos podem ser substituídos</target>
 </trans-unit>
 <trans-unit id="tu6" xml:space="preserve">
 <source xml:lang="en">member types can be shader classes</source>
-<target xml:lang="pt">member types can be shader classes</target>
+<target xml:lang="pt">tipos de membros podem ser classes de shader</target>
 </trans-unit>
 <trans-unit id="tu7" xml:space="preserve">
 <source xml:lang="en">SDSL uses an original way to handle multiple inheritance. Inheritance is performed through mixins, so the order of inheritance is crucial:</source>
-<target xml:lang="pt">SDSL uses an original way to handle multiple inheritance. Inheritance is performed through mixins, so the order of inheritance is crucial:</target>
+<target xml:lang="pt">SDSL usa uma maneira original de lidar com múltiplas heranças. A herança é realizada através de misturas, de modo que a ordem da herança é crucial:</target>
 </trans-unit>
 <trans-unit id="tu8" xml:space="preserve">
 <source xml:lang="en">the order of inheritance defines the actual implementation of a method (the last override)</source>
-<target xml:lang="pt">the order of inheritance defines the actual implementation of a method (the last override)</target>
+<target xml:lang="pt">a ordem de herança define a implementação real de um método (a última substituição)</target>
 </trans-unit>
 <trans-unit id="tu9" xml:space="preserve">
 <source xml:lang="en">if a mixin appears several times in the inheritance, only the first occurrence is taken into account (as well as its members and methods)</source>
-<target xml:lang="pt">if a mixin appears several times in the inheritance, only the first occurrence is taken into account (as well as its members and methods)</target>
+<target xml:lang="pt">se uma mistura aparece várias vezes na herança, apenas a primeira ocorrência é levada em conta (assim como seus membros e métodos)</target>
 </trans-unit>
 <trans-unit id="tu10" xml:space="preserve">
 <source xml:lang="en">to can call the previous implementation of a method, use <g id="1">base.&lt;method name&gt;(&lt;arguments&gt;)</g></source>
-<target xml:lang="pt">to can call the previous implementation of a method, use <g id="1">base.&lt;method name&gt;(&lt;arguments&gt;)</g></target>
+<target xml:lang="pt">para pode chamar a implementação anterior de um método, use <g id="1">base.&lt;method name&gt;(&lt;arguments&gt;)</g></target>
 </trans-unit>
 <trans-unit id="tu11" xml:space="preserve">
 <source xml:lang="en">Keywords</source>
-<target xml:lang="pt">Keywords</target>
+<target xml:lang="pt">Palavras-chave</target>
 </trans-unit>
 <trans-unit id="tu12" xml:space="preserve">
 <source xml:lang="en">SDSL uses the keywords as HLSL, and adds new ones:</source>
-<target xml:lang="pt">SDSL uses the keywords as HLSL, and adds new ones:</target>
+<target xml:lang="pt">O SDSL usa as palavras-chave como HLSL e adiciona novas:</target>
 </trans-unit>
 <trans-unit id="tu13" xml:space="preserve">
 <source xml:lang="en"><g id="1">stage</g>: method and member keyword. This keyword makes sure the method or member is only defined once and is the same in the compositions.</source>
-<target xml:lang="pt"><g id="1">stage</g>: method and member keyword. This keyword makes sure the method or member is only defined once and is the same in the compositions.</target>
+<target xml:lang="pt"><g id="1">stage</g>: método e palavra-chave de membro. Esta palavra-chave garante que o método ou membro só é definido uma vez e é o mesmo nas composições.</target>
 </trans-unit>
 <trans-unit id="tu14" xml:space="preserve">
 <source xml:lang="en"><g id="1">stream</g>: member keyword. The member is accessible at every stage of the shader. For more information, see <g id="2">Automatic shader stage input/out</g>.</source>
-<target xml:lang="pt"><g id="1">stream</g>: member keyword. The member is accessible at every stage of the shader. For more information, see <g id="2">Automatic shader stage input/out</g>.</target>
+<target xml:lang="pt"><g id="1">stream</g>: palavra-chave de membro. O membro é acessível em cada fase do shader. Para mais informações, veja <g id="2">Automatic shader stage input\/out</g>.</target>
 </trans-unit>
 <trans-unit id="tu15" xml:space="preserve">
 <source xml:lang="en"><g id="1">streams</g>: sort of global structure storing variables needed across several stages of the shader. For more information, see <g id="2">Automatic shader stage input/out</g>.</source>
-<target xml:lang="pt"><g id="1">streams</g>: sort of global structure storing variables needed across several stages of the shader. For more information, see <g id="2">Automatic shader stage input/out</g>.</target>
+<target xml:lang="pt"><g id="1">streams</g>: tipo de estrutura global que armazena variáveis necessárias em várias etapas do shader. Para mais informações, veja <g id="2">Automatic shader stage input\/out</g>.</target>
 </trans-unit>
 <trans-unit id="tu16" xml:space="preserve">
 <source xml:lang="en"><g id="1">override</g>: method keyword. If this keyword is missing, the compilation returns an error.</source>
-<target xml:lang="pt"><g id="1">override</g>: method keyword. If this keyword is missing, the compilation returns an error.</target>
+<target xml:lang="pt"><g id="1">override</g>: palavra-chave do método. Se esta palavra-chave está faltando, a compilação retorna um erro.</target>
 </trans-unit>
 <trans-unit id="tu17" xml:space="preserve">
 <source xml:lang="en"><g id="1">abstract</g>: used in front of a method declaration (without a body).</source>
-<target xml:lang="pt"><g id="1">abstract</g>: used in front of a method declaration (without a body).</target>
+<target xml:lang="pt"><g id="1">abstract</g>: usado na frente de uma declaração de método (sem um corpo).</target>
 </trans-unit>
 <trans-unit id="tu18" xml:space="preserve">
 <source xml:lang="en"><g id="1">clone</g>: method keyword. When a method appears several times in the inheritance tree of a shader class, this keyword forces the creation of multiple instances of the method at each level of the inheritance instead of one. For more information, see <g id="2">Composition</g>.</source>
-<target xml:lang="pt"><g id="1">clone</g>: method keyword. When a method appears several times in the inheritance tree of a shader class, this keyword forces the creation of multiple instances of the method at each level of the inheritance instead of one. For more information, see <g id="2">Composition</g>.</target>
+<target xml:lang="pt"><g id="1">clone</g>: palavra-chave do método. Quando um método aparece várias vezes na árvore de herança de uma classe shader, esta palavra-chave força a criação de múltiplas instâncias do método em cada nível da herança em vez de uma. Para mais informações, consulte <g id="2">Composition</g>.</target>
 </trans-unit>
 <trans-unit id="tu19" xml:space="preserve">
 <source xml:lang="en"><g id="1">Input</g>: for geometry and tessellation shaders. For more information, see <g id="2">Shader stages</g>.</source>
-<target xml:lang="pt"><g id="1">Input</g>: for geometry and tessellation shaders. For more information, see <g id="2">Shader stages</g>.</target>
+<target xml:lang="pt"><g id="1">Input</g>: para geometria e tessellation shaders. Para obter mais informações, consulte as etapas <g id="2">Shader</g>.</target>
 </trans-unit>
 <trans-unit id="tu20" xml:space="preserve">
 <source xml:lang="en"><g id="1">Output</g>: for geometry and tessellation shaders. For more information, see <g id="2">Shader stages</g>.</source>
-<target xml:lang="pt"><g id="1">Output</g>: for geometry and tessellation shaders. For more information, see <g id="2">Shader stages</g>.</target>
+<target xml:lang="pt"><g id="1"> Saída</g>: para geometria e tessellation shaders. Para obter mais informações, consulte as etapas <g id="2">Shader</g>.</target>
 </trans-unit>
 <trans-unit id="tu21" xml:space="preserve">
 <source xml:lang="en"><g id="1">Input2</g>: for tessellation shaders. For more information, see <g id="2">Shader stages</g>.</source>
-<target xml:lang="pt"><g id="1">Input2</g>: for tessellation shaders. For more information, see <g id="2">Shader stages</g>.</target>
+<target xml:lang="pt"><g id="1">Input2</g>: para shaders de tessellation. Para obter mais informações, consulte as etapas <g id="2">Shader</g>.</target>
 </trans-unit>
 <trans-unit id="tu22" xml:space="preserve">
 <source xml:lang="en"><g id="1">Constants</g>: for tessellation shaders. For more information, see <g id="2">Shader stages</g>.</source>
-<target xml:lang="pt"><g id="1">Constants</g>: for tessellation shaders. For more information, see <g id="2">Shader stages</g>.</target>
+<target xml:lang="pt"><g id="1">Constants</g>: para shaders de tessellation. Para obter mais informações, consulte as etapas <g id="2">Shader</g>.</target>
 </trans-unit>
 <trans-unit id="tu23" xml:space="preserve">
 <source xml:lang="en">Abstract methods</source>
-<target xml:lang="pt">Abstract methods</target>
+<target xml:lang="pt">Métodos abstratos</target>
 </trans-unit>
 <trans-unit id="tu24" xml:space="preserve">
 <source xml:lang="en">Abstract methods are available in SDSL. They should be prefixed with the <g id="1">abstract</g> keyword. You can inherit from a shader class with abstract methods without having to implement them; the compiler will simply produce a harmless warning. However, you should implement it in your final shader to prevent a compilation error.</source>
-<target xml:lang="pt">Abstract methods are available in SDSL. They should be prefixed with the <g id="1">abstract</g> keyword. You can inherit from a shader class with abstract methods without having to implement them; the compiler will simply produce a harmless warning. However, you should implement it in your final shader to prevent a compilation error.</target>
+<target xml:lang="pt">Métodos abstratos estão disponíveis no SDSL. Eles devem ser prefixados com a palavra-chave <g id="1">abstract</g>. Você pode herdar de uma classe shader com métodos abstratos sem ter que implementá-los; o compilador simplesmente produzirá um aviso inofensivo. No entanto, você deve implementá-lo em seu shader final para evitar um erro de compilação.</target>
 </trans-unit>
 <trans-unit id="tu25" xml:space="preserve">
 <source xml:lang="en">Annotations</source>
-<target xml:lang="pt">Annotations</target>
+<target xml:lang="pt">Notas</target>
 </trans-unit>
 <trans-unit id="tu26" xml:space="preserve">
 <source xml:lang="en">Like HLSL, annotations are available in SDSL. Some of the most useful ones are:</source>
-<target xml:lang="pt">Like HLSL, annotations are available in SDSL. Some of the most useful ones are:</target>
+<target xml:lang="pt">Como HLSL, as anotações estão disponíveis no SDSL. Alguns dos mais úteis são:</target>
 </trans-unit>
 <trans-unit id="tu27" xml:space="preserve">
 <source xml:lang="en"><g id="1">[Color]</g> for float4 variables. The ParameterKey will have the type <g id="2">Color4</g> instead of <g id="3">Vector4</g>. It also specifies to Game Studio that this variable should be treated as a color, so you can edit it in Game Studio.</source>
-<target xml:lang="pt"><g id="1">[Color]</g> for float4 variables. The ParameterKey will have the type <g id="2">Color4</g> instead of <g id="3">Vector4</g>. It also specifies to Game Studio that this variable should be treated as a color, so you can edit it in Game Studio.</target>
+<target xml:lang="pt"><g id="1">[Color]</g> para variáveis float4. O parâmetro A chave terá o tipo <g id="2">Color4</g> em vez de <g id="3">Vector4</g>. Ele também especifica para Game Studio que esta variável deve ser tratada como uma cor, para que você possa editá-la no Game Studio.</target>
 </trans-unit>
 <trans-unit id="tu28" xml:space="preserve">
 <source xml:lang="en"><g id="1">[Link(...)]</g> specifies which ParameterKey to use to set this value. However, an independent default key is still created.</source>
-<target xml:lang="pt"><g id="1">[Link(...)]</g> specifies which ParameterKey to use to set this value. However, an independent default key is still created.</target>
+<target xml:lang="pt"><g id="1">[Link(...)]</g> especifica qual Parâmetro Chave para usar para definir esse valor. No entanto, uma chave padrão independente ainda é criada.</target>
 </trans-unit>
 <trans-unit id="tu29" xml:space="preserve">
 <source xml:lang="en"><g id="1">[Map(...)]</g> specifies which ParameterKey to use to set this value. No new ParameterKey is created.</source>
-<target xml:lang="pt"><g id="1">[Map(...)]</g> specifies which ParameterKey to use to set this value. No new ParameterKey is created.</target>
+<target xml:lang="pt"><g id="1">[Map(...)]</g> especifica qual Parâmetro Chave para usar para definir esse valor. Nenhum novo parâmetro A chave é criada.</target>
 </trans-unit>
 <trans-unit id="tu30" xml:space="preserve">
 <source xml:lang="en"><g id="1">[RenameLink]</g> prevents the creation of a ParameterKey. It should be used with <g id="2">[Link()]</g>.</source>
-<target xml:lang="pt"><g id="1">[RenameLink]</g> prevents the creation of a ParameterKey. It should be used with <g id="2">[Link()]</g>.</target>
+<target xml:lang="pt"><g id="1">[RenameLink]</g> impede a criação de um ParâmetroKey. Deve ser usado com <g id="2">[Link()]</g>.</target>
 </trans-unit>
 <trans-unit id="tu31" xml:space="preserve">
 <source xml:lang="en">Example code: annotations</source>
-<target xml:lang="pt">Example code: annotations</target>
+<target xml:lang="pt">Exemplo de código: anotações</target>
 </trans-unit>
 <trans-unit id="tu32" xml:space="preserve">
 <source xml:lang="en">shader BaseShader
@@ -137,21 +137,21 @@
 	[Map("Texturing.Texture0")] Texture2D defaultTexture;
 };
 </source>
-<target xml:lang="pt">shader BaseShader
-{
-	[Color] float4 myColor;
+<target xml:lang="pt">sombreador BaseShader
+(
+	[Cor] flutuar4 myColor;
  
 	[Link("ProjectKeys.MyTextureKey")]
 	[RenameLink]
-	Texture2D texture;
+	Texture2D textura;
  
-	[Map("Texturing.Texture0")] Texture2D defaultTexture;
+	[Mapa("Texturing. Texture0") Texture2D defaultTexture;
 };
 </target>
 </trans-unit>
 <trans-unit id="tu33" xml:space="preserve">
 <source xml:lang="en">Example code: inheritance</source>
-<target xml:lang="pt">Example code: inheritance</target>
+<target xml:lang="pt">Exemplo de código: herança</target>
 </trans-unit>
 <trans-unit id="tu34" xml:space="preserve">
 <source xml:lang="en">shader BaseInterface
@@ -185,43 +185,43 @@ shader ShaderB : BaseShader
 };
 </source>
 <target xml:lang="pt">shader BaseInterface
-{
-	abstract float Compute();
+(
+	abstrato flutuador Compute();
 };
  
-shader BaseShader : BaseInterface
-{
-	float Compute()
-	{
-		return 1.0f;
+shader BaseShader : Base Interface
+(
+	flutuador Compute()
+	(
+		retorno 1.0f;
 	}
 };
  
-shader ShaderA : BaseShader
-{
-	override void Compute()
-	{
-		return 2.0f;
+shaderA: Base de dados
+(
+	anulado ()
+	(
+		retorno 2.0f;
 	}
 };
  
-shader ShaderB : BaseShader
-{
-	override void Compute()
-	{
+shaderB: Base de dados
+(
+	anulado ()
+	(
 		float prevValue = base.Compute();
-		return (5.0f + prevValue);
+		retorno (5.0f + prevValue);
 	}
 };
 </target>
 </trans-unit>
 <trans-unit id="tu35" xml:space="preserve">
 <source xml:lang="en">Example code: the importance of inheritance order</source>
-<target xml:lang="pt">Example code: the importance of inheritance order</target>
+<target xml:lang="pt">Exemplo de código: a importância da ordem de herança</target>
 </trans-unit>
 <trans-unit id="tu36" xml:space="preserve">
 <source xml:lang="en">Notice what happens when we change the inheritance order between <g id="1">ShaderA</g> and <g id="2">ShaderB</g>.</source>
-<target xml:lang="pt">Notice what happens when we change the inheritance order between <g id="1">ShaderA</g> and <g id="2">ShaderB</g>.</target>
+<target xml:lang="pt">Observe o que acontece quando mudamos a ordem de herança entre <g id="1">ShaderA</g> e <g id="2">ShaderB</g>.</target>
 </trans-unit>
 <trans-unit id="tu37" xml:space="preserve">
 <source xml:lang="en">shader MixAB : ShaderA, ShaderB
@@ -271,67 +271,67 @@ shader MixBA : BaseInterface, BaseShader, ShaderA, ShaderB
 };
 </source>
 <target xml:lang="pt">shader MixAB : ShaderA, ShaderB
-{
+(
 };
  
 shader MixBA : ShaderB, ShaderA
-{
+(
 };
  
-// Resulting code (representation)
+\/\/ Código resultante (representação)
 
 shader MixAB : BaseInterface, BaseShader, ShaderA, ShaderB
-{
-	float Compute()
-	{
-		// code from BaseShader
-		float v0 = 1.0f;
+(
+	flutuador Compute()
+	(
+		\/\/ código de BaseShader
+		flutuar v0 = 1.0f;
  
-		// code from ShaderA
-		float v1 = 2.0f;
+		\/\/ código de ShaderA
+		flutuar v1 = 2.0f;
  
-		// code from ShaderB
-		float prevValue = v1;
+		\/\/ código de Shader B
+		flutuar prevValue = v1;
 		float v2 = 5.0f + prevValue;
  
-		return v2; // = 7.0f
+		retornar v2; \/\/ = 7.0f
 	}
 };
 
 shader MixBA : BaseInterface, BaseShader, ShaderA, ShaderB
-{
-	float Compute()
-	{
-		// code from BaseShader
-		float v0 = 1.0f;
+(
+	flutuador Compute()
+	(
+		\/\/ código de BaseShader
+		flutuar v0 = 1.0f;
 
-		// code from ShaderB
+		\/\/ código de Shader B
 		float prevValue = v0;
 		float v1 = 5.0f + prevValue;
 		
-		// code from ShaderA
-		float v2 = 2.0f;
+		\/\/ código de ShaderA
+		flutuar v2 = 2.0f;
 
-		return v2; // = 2.0f
+		retornar v2; \/\/ = 2.0f
 	}
 };
 </target>
 </trans-unit>
 <trans-unit id="tu38" xml:space="preserve">
 <source xml:lang="en">Static calls</source>
-<target xml:lang="pt">Static calls</target>
+<target xml:lang="pt">Chamadas estáticas</target>
 </trans-unit>
 <trans-unit id="tu39" xml:space="preserve">
 <source xml:lang="en">You can also use a variable or call a method from a shader without having to inherit from it. To do this, use <g id="1">&lt;shader_name&gt;.&lt;variable or method_name&gt;</g>. It behaves the same way as a static call.</source>
-<target xml:lang="pt">You can also use a variable or call a method from a shader without having to inherit from it. To do this, use <g id="1">&lt;shader_name&gt;.&lt;variable or method_name&gt;</g>. It behaves the same way as a static call.</target>
+<target xml:lang="pt">Você também pode usar uma variável ou chamar um método de um shader sem ter que herdar dele. Para fazer isso, use <g id="1">&lt;shader_name&gt;.&lt;variable or method_name&gt;</g>. Ele se comporta da mesma maneira que uma chamada estática.</target>
 </trans-unit>
 <trans-unit id="tu40" xml:space="preserve">
 <source xml:lang="en">Note that if you statically call a method that uses shader class variables, the shader won't compile. This is a convenient way to only use a part of a shader, but this isn't an optimization. The shader compiler already automatically removes any unnecessary variables.</source>
-<target xml:lang="pt">Note that if you statically call a method that uses shader class variables, the shader won't compile. This is a convenient way to only use a part of a shader, but this isn't an optimization. The shader compiler already automatically removes any unnecessary variables.</target>
+<target xml:lang="pt">Note que se você chamar estaticamente um método que usa variáveis de classe shader, o shader não compilará. Esta é uma maneira conveniente de usar apenas uma parte de um shader, mas isso não é uma otimização. O compilador de shader já remove automaticamente quaisquer variáveis desnecessárias.</target>
 </trans-unit>
 <trans-unit id="tu41" xml:space="preserve">
 <source xml:lang="en">Code example: static calls</source>
-<target xml:lang="pt">Code example: static calls</target>
+<target xml:lang="pt">Exemplo de código: chamadas estáticas</target>
 </trans-unit>
 <trans-unit id="tu42" xml:space="preserve">
 <source xml:lang="en">shader StaticClass
@@ -376,76 +376,76 @@ shader IncorrectStaticCallClassFixed : StaticClass
 	}
 };
 </source>
-<target xml:lang="pt">shader StaticClass
-{
-	float StaticValue;
-	float StaticMethod(float a)
-	{
-		return 2.0f * a;
+<target xml:lang="pt">acessório de corte
+(
+	flutuar StaticValue;
+	flutuar StaticMethod (float a)
+	(
+		retorno 2.0f * a;
 	}
  
-	// this method uses a
+	\/\/ este método usa
 	float NonStaticMethod()
-	{
-		return 2.0f * StaticValue;
+	(
+		retorno 2.0f * Valor estático;
 	}
 };
  
-// this shader class is fine
-shader CorrectStaticCallClass
-{
-	float Compute()
-	{
-		return StaticClass.StaticValue * StaticMethod(5.0f);
+\/\/ esta classe de shader está bem
+correctStaticCallClass
+(
+	flutuador Compute()
+	(
+		retornar StaticClass.StaticValue * StaticMethod(5.0f);
 	}
 };
  
-// this shader class won't compile since the call is not static
+\/\/ esta classe de shader não compila desde que a chamada não é estática
 shader IncorrectStaticCallClass 
-{
-	float Compute()
-	{
-		return StaticClass.NonStaticMethod();
+(
+	flutuador Compute()
+	(
+		retornar StaticClass.NonStaticMethod();
 	}
 };
  
-// one way to fix this
-shader IncorrectStaticCallClassFixed : StaticClass
-{
-	float Compute()
-	{
-		return NonStaticMethod();
+\/\/ uma maneira de corrigir isso
+shader IncorrectStaticCallClassFixed : Códigos estáticos
+(
+	flutuador Compute()
+	(
+		retornar NonStaticMethod();
 	}
 };
 </target>
 </trans-unit>
 <trans-unit id="tu43" xml:space="preserve">
 <source xml:lang="en">See also</source>
-<target xml:lang="pt">See also</target>
+<target xml:lang="pt">Ver também</target>
 </trans-unit>
 <trans-unit id="tu44" xml:space="preserve">
 <source xml:lang="en"><g id="1">Effect language</g></source>
-<target xml:lang="pt"><g id="1">Effect language</g></target>
+<target xml:lang="pt"><g id="1">Efeito da linguagem</g></target>
 </trans-unit>
 <trans-unit id="tu45" xml:space="preserve">
 <source xml:lang="en"><g id="1">Shading language index</g></source>
-<target xml:lang="pt"><g id="1">Shading language index</g></target>
+<target xml:lang="pt"><g id="1">Índice de linguagem de sombra</g></target>
 </trans-unit>
 <trans-unit id="tu46" xml:space="preserve">
 <source xml:lang="en"><g id="1">Composition</g></source>
-<target xml:lang="pt"><g id="1">Composition</g></target>
+<target xml:lang="pt"><g id="1">Composição</g></target>
 </trans-unit>
 <trans-unit id="tu47" xml:space="preserve">
 <source xml:lang="en"><g id="1">Templates</g></source>
-<target xml:lang="pt"><g id="1">Templates</g></target>
+<target xml:lang="pt"><g id="1">Modelos</g></target>
 </trans-unit>
 <trans-unit id="tu48" xml:space="preserve">
 <source xml:lang="en"><g id="1">Shader stage input/output automatic management</g></source>
-<target xml:lang="pt"><g id="1">Shader stage input/output automatic management</g></target>
+<target xml:lang="pt"><g id="1">Shader fase de entrada \/ saída gestão automática</g></target>
 </trans-unit>
 <trans-unit id="tu49" xml:space="preserve">
 <source xml:lang="en"><g id="1">Shader stages</g></source>
-<target xml:lang="pt"><g id="1">Shader stages</g></target>
+<target xml:lang="pt"><g id="1">Etapas de Shader</g></target>
 </trans-unit>
 </body>
 </file>

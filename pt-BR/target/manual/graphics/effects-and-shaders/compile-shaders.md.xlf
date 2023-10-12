@@ -3,25 +3,25 @@
 <body>
 <trans-unit id="tu1" xml:space="preserve">
 <source xml:lang="en">Compile shaders</source>
-<target xml:lang="pt">Compile shaders</target>
+<target xml:lang="pt">Sombreadores computacionais</target>
 </trans-unit>
 <trans-unit id="tu2" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Beginner<x id="2"/>
 <x id="3"/>Programmer<x id="4"/></source>
-<target xml:lang="pt"><x id="1"/>Beginner<x id="2"/>
-<x id="3"/>Programmer<x id="4"/></target>
+<target xml:lang="pt">&lt;x1\/&gt;Introdução&lt;x2\/&gt;
+&lt;x3\/&gt; Programador &lt;x4\/&gt;</target>
 </trans-unit>
 <trans-unit id="tu3" xml:space="preserve">
 <source xml:lang="en">Stride converts Stride shaders (<g id="1">sdsl</g> and <g id="2">.sdfx</g> files) into the shader language used by the <g id="3">graphics platform</g>.</source>
-<target xml:lang="pt">Stride converts Stride shaders (<g id="1">sdsl</g> and <g id="2">.sdfx</g> files) into the shader language used by the <g id="3">graphics platform</g>.</target>
+<target xml:lang="pt">Conversões de Stride Stride shaders (<g id="1">sdsl</g> e <g id="2">.sdfx</g> files) para a linguagem shader usada pela plataforma <g id="3">graphics</g>.</target>
 </trans-unit>
 <trans-unit id="tu4" xml:space="preserve">
 <source xml:lang="en">Platform</source>
-<target xml:lang="pt">Platform</target>
+<target xml:lang="pt">Plataforma</target>
 </trans-unit>
 <trans-unit id="tu5" xml:space="preserve">
 <source xml:lang="en">Shader language</source>
-<target xml:lang="pt">Shader language</target>
+<target xml:lang="pt">Língua de Shader</target>
 </trans-unit>
 <trans-unit id="tu6" xml:space="preserve">
 <source xml:lang="en">Direct3D</source>
@@ -41,7 +41,7 @@
 </trans-unit>
 <trans-unit id="tu10" xml:space="preserve">
 <source xml:lang="en">Vulkan</source>
-<target xml:lang="pt">Vulkan</target>
+<target xml:lang="pt">Vulc</target>
 </trans-unit>
 <trans-unit id="tu11" xml:space="preserve">
 <source xml:lang="en">SPIR-V</source>
@@ -57,141 +57,141 @@
 </trans-unit>
 <trans-unit id="tu14" xml:space="preserve">
 <source xml:lang="en">Stride can convert the shaders at runtime (when the game is running) or at build time (when the editor builds the game assets). When Stride generates shaders at runtime, rendering stops until the shader is compiled. This is usually something you want to avoid in your release build — especially on mobile platforms, which have less CPU, so the pause can be more noticable.</source>
-<target xml:lang="pt">Stride can convert the shaders at runtime (when the game is running) or at build time (when the editor builds the game assets). When Stride generates shaders at runtime, rendering stops until the shader is compiled. This is usually something you want to avoid in your release build — especially on mobile platforms, which have less CPU, so the pause can be more noticable.</target>
+<target xml:lang="pt">Stride pode converter os shaders em tempo de execução (quando o jogo está em execução) ou no tempo de compilação (quando o editor constrói os ativos do jogo). Quando Stride gera shaders em tempo de execução, renderização pára até que o shader seja compilado. Isso geralmente é algo que você quer evitar em sua compilação de lançamento — especialmente em plataformas móveis, que têm menos CPU, então a pausa pode ser mais notável.</target>
 </trans-unit>
 <trans-unit id="tu15" xml:space="preserve">
 <source xml:lang="en">How Stride converts shaders at runtime</source>
-<target xml:lang="pt">How Stride converts shaders at runtime</target>
+<target xml:lang="pt">Como Stride converte shaders no tempo de execução</target>
 </trans-unit>
 <trans-unit id="tu16" xml:space="preserve">
 <source xml:lang="en">Stride can't know in advance which shaders will be used at runtime. This is because users might generate new shader permutations by, for example, changing material parameters or modifying post-effect parameters from scripts. Additionally, the final shaders depend on the graphics features on the execution platform.</source>
-<target xml:lang="pt">Stride can't know in advance which shaders will be used at runtime. This is because users might generate new shader permutations by, for example, changing material parameters or modifying post-effect parameters from scripts. Additionally, the final shaders depend on the graphics features on the execution platform.</target>
+<target xml:lang="pt">Stride não pode saber com antecedência quais shaders serão usados no tempo de execução. Isso ocorre porque os usuários podem gerar novas permutações de shader, por exemplo, alterando parâmetros de material ou modificando parâmetros de pós-efeito de scripts. Além disso, os shaders finais dependem dos recursos gráficos na plataforma de execução.</target>
 </trans-unit>
 <trans-unit id="tu17" xml:space="preserve">
 <source xml:lang="en">When Stride needs a new shader at runtime, it checks its database to see if the shader has already been converted. If the shader is in the database, Stride uses it.</source>
-<target xml:lang="pt">When Stride needs a new shader at runtime, it checks its database to see if the shader has already been converted. If the shader is in the database, Stride uses it.</target>
+<target xml:lang="pt">Quando Stride precisa de um novo shader em tempo de execução, ele verifica seu banco de dados para ver se o shader já foi convertido. Se o shader estiver no banco de dados, Stride o usa.</target>
 </trans-unit>
 <trans-unit id="tu18" xml:space="preserve">
 <source xml:lang="en">If the shader hasn't already been converted, Stride compiles it — either locally (on the device) or remotely (in Game Studio), depending on the package <g id="1">User Settings</g> (see below).</source>
-<target xml:lang="pt">If the shader hasn't already been converted, Stride compiles it — either locally (on the device) or remotely (in Game Studio), depending on the package <g id="1">User Settings</g> (see below).</target>
+<target xml:lang="pt">Se o shader ainda não tiver sido convertido, o Stride o compila — seja localmente (no dispositivo) ou remotamente (no Game Studio), dependendo do pacote <g id="1">User Settings</g> (veja abaixo).</target>
 </trans-unit>
 <trans-unit id="tu19" xml:space="preserve">
 <source xml:lang="en">If <g id="1">Record used effects</g> is enabled in the package <g id="2">User Settings</g> (see below), Stride notifies Game Studio that it needs a new shader.</source>
-<target xml:lang="pt">If <g id="1">Record used effects</g> is enabled in the package <g id="2">User Settings</g> (see below), Stride notifies Game Studio that it needs a new shader.</target>
+<target xml:lang="pt">Se <g id="1">Record usado efeitos</g> é ativado no pacote <g id="2">User Settings</g> (veja abaixo), Stride notifica Game Studio que ele precisa de um novo shader.</target>
 </trans-unit>
 <trans-unit id="tu20" xml:space="preserve">
 <source xml:lang="en">Game Studio notifies you that there are new shaders to import.</source>
-<target xml:lang="pt">Game Studio notifies you that there are new shaders to import.</target>
+<target xml:lang="pt">Game Studio notifica que há novos shaders para importar.</target>
 </trans-unit>
 <trans-unit id="tu21" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>New effects<x id="2"/></source>
-<target xml:lang="pt"><x id="1"/>New effects<x id="2"/></target>
+<target xml:lang="pt">&lt;x1\/&gt; Novos efeitos&lt;x2\/&gt;</target>
 </trans-unit>
 <trans-unit id="tu22" xml:space="preserve">
 <source xml:lang="en">In the <g id="1">Asset View</g>, the <g id="2">Import effects</g> button becomes available.</source>
-<target xml:lang="pt">In the <g id="1">Asset View</g>, the <g id="2">Import effects</g> button becomes available.</target>
+<target xml:lang="pt">No <g id="1">Asset View</g>, o botão <g id="2">Import effects</g> torna-se disponível.</target>
 </trans-unit>
 <trans-unit id="tu23" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Import effects<x id="2"/></source>
-<target xml:lang="pt"><x id="1"/>Import effects<x id="2"/></target>
+<target xml:lang="pt">&lt;x1\/&gt; Efeitos de importação &lt;x2\/&gt;</target>
 </trans-unit>
 <trans-unit id="tu24" xml:space="preserve">
 <source xml:lang="en">If you click <g id="1">Import effects</g>, Game Studio updates the <g id="2">Effect Log</g> (or creates it if it doesn't exist) and adds them to the game database to be used the next time you build (see step 1).</source>
-<target xml:lang="pt">If you click <g id="1">Import effects</g>, Game Studio updates the <g id="2">Effect Log</g> (or creates it if it doesn't exist) and adds them to the game database to be used the next time you build (see step 1).</target>
+<target xml:lang="pt">Se você clicar em <g id="1">Import effects</g>, Game Studio atualiza o <g id="2">Effect Log</g> (ou cria se não existe) e os adiciona ao banco de dados do jogo para ser usado da próxima vez que você construir (veja o passo 1).</target>
 </trans-unit>
 <trans-unit id="tu25" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Effect log<x id="2"/></source>
-<target xml:lang="pt"><x id="1"/>Effect log<x id="2"/></target>
+<target xml:lang="pt">&lt;x1\/&gt; Efeito log&lt;x2\/&gt;</target>
 </trans-unit>
 <trans-unit id="tu26" xml:space="preserve">
 <source xml:lang="en">Change how Stride compiles shaders</source>
-<target xml:lang="pt">Change how Stride compiles shaders</target>
+<target xml:lang="pt">Mudar como Stride compila shaders</target>
 </trans-unit>
 <trans-unit id="tu27" xml:space="preserve">
 <source xml:lang="en">In Game Studio, in the <g id="1">Solution Explorer</g>, select the package and click <g id="2">Package properties</g>.</source>
-<target xml:lang="pt">In Game Studio, in the <g id="1">Solution Explorer</g>, select the package and click <g id="2">Package properties</g>.</target>
+<target xml:lang="pt">No Game Studio, no <g id="1">Solution Explorer</g>, selecione o pacote e clique em <g id="2">Package properties</g>.</target>
 </trans-unit>
 <trans-unit id="tu28" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Package properties<x id="2"/></source>
-<target xml:lang="pt"><x id="1"/>Package properties<x id="2"/></target>
+<target xml:lang="pt">&lt;x1\/&gt; Propriedades de embalagem &lt;x2\/&gt;</target>
 </trans-unit>
 <trans-unit id="tu29" xml:space="preserve">
 <source xml:lang="en">In the <g id="1">Property Grid</g>, set the properties.</source>
-<target xml:lang="pt">In the <g id="1">Property Grid</g>, set the properties.</target>
+<target xml:lang="pt">No <g id="1">Property Grid</g>, defina as propriedades.</target>
 </trans-unit>
 <trans-unit id="tu30" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Package properties<x id="2"/></source>
-<target xml:lang="pt"><x id="1"/>Package properties<x id="2"/></target>
+<target xml:lang="pt">&lt;x1\/&gt; Propriedades de embalagem &lt;x2\/&gt;</target>
 </trans-unit>
 <trans-unit id="tu31" xml:space="preserve">
 <source xml:lang="en">The <g id="1">Effect compiler</g> property specifies how to compile the shader.</source>
-<target xml:lang="pt">The <g id="1">Effect compiler</g> property specifies how to compile the shader.</target>
+<target xml:lang="pt">A propriedade <g id="1">Effect compiler</g> especifica como compilar o shader.</target>
 </trans-unit>
 <trans-unit id="tu32" xml:space="preserve">
 <source xml:lang="en"><g id="1">Local</g>: Convert the shader on the device. This is recommended for release versions of your game.</source>
-<target xml:lang="pt"><g id="1">Local</g>: Convert the shader on the device. This is recommended for release versions of your game.</target>
+<target xml:lang="pt"><g id="1">Local</g>: Converta o shader no dispositivo. Isto é recomendado para versões de lançamento do seu jogo.</target>
 </trans-unit>
 <trans-unit id="tu33" xml:space="preserve">
 <source xml:lang="en"><g id="1">Remote</g>: Convert the shader on the developer machine. There's no reason to use this for release versions of your game, as it won't be able to connect to the developer machine.</source>
-<target xml:lang="pt"><g id="1">Remote</g>: Convert the shader on the developer machine. There's no reason to use this for release versions of your game, as it won't be able to connect to the developer machine.</target>
+<target xml:lang="pt"><g id="1">Remote</g>: Converta o shader na máquina desenvolvedora. Não há nenhuma razão para usar isso para versões de lançamento do seu jogo, pois não será capaz de se conectar à máquina desenvolvedora.</target>
 </trans-unit>
 <trans-unit id="tu34" xml:space="preserve">
 <source xml:lang="en"><g id="1">LocalOrRemote</g>: Convert the shader on the developer machine; if this fails, try to convert it on the device. Like the <g id="2">Remote</g> setting, this has no use for release versions of your game.</source>
-<target xml:lang="pt"><g id="1">LocalOrRemote</g>: Convert the shader on the developer machine; if this fails, try to convert it on the device. Like the <g id="2">Remote</g> setting, this has no use for release versions of your game.</target>
+<target xml:lang="pt"><g id="1">LocalOrRemote</g>: Converta o shader na máquina do desenvolvedor; se isso falhar, tente convertê-lo no dispositivo. Como a configuração <g id="2">Remote</g>, isso não tem uso para versões de lançamento do seu jogo.</target>
 </trans-unit>
 <trans-unit id="tu35" xml:space="preserve">
 <source xml:lang="en"><g id="1">None</g>: Don't convert shaders. Note that the application will crash if it requires a shader that isn't in the database. Currently, using this feature doesn't save any space your application, so there's no advantage in using it. However, it might be useful for making sure you have every shader in the database; if the game crashes, you know the database is missing at least one shader.</source>
-<target xml:lang="pt"><g id="1">None</g>: Don't convert shaders. Note that the application will crash if it requires a shader that isn't in the database. Currently, using this feature doesn't save any space your application, so there's no advantage in using it. However, it might be useful for making sure you have every shader in the database; if the game crashes, you know the database is missing at least one shader.</target>
+<target xml:lang="pt"><g id="1">Nenhum </g>: Não convertas shaders. Note que o aplicativo vai falhar se precisar de um shader que não está no banco de dados. Atualmente, usar este recurso não salva nenhum espaço seu aplicativo, então não há nenhuma vantagem em usá-lo. No entanto, pode ser útil para ter certeza de que você tem cada shader no banco de dados; se o jogo falhar, você sabe que o banco de dados está faltando pelo menos um shader.</target>
 </trans-unit>
 <trans-unit id="tu36" xml:space="preserve">
 <source xml:lang="en">If you enable <g id="1">Record used effects</g>, Game Studio adds new shaders to the Effect Log as soon as they're needed. We recommend you disable this for release versions of your game, as it can't connect to the developer machine.</source>
-<target xml:lang="pt">If you enable <g id="1">Record used effects</g>, Game Studio adds new shaders to the Effect Log as soon as they're needed. We recommend you disable this for release versions of your game, as it can't connect to the developer machine.</target>
+<target xml:lang="pt">Se você ativar os efeitos usados <g id="1">Record</g>, Game Studio adiciona novos shaders ao Registro de Efeito assim que forem necessários. Recomendamos que você desative isso para versões de lançamento do seu jogo, pois não pode se conectar à máquina desenvolvedora.</target>
 </trans-unit>
 <trans-unit id="tu37" xml:space="preserve">
 <source xml:lang="en">Compile shaders remotely when developing for iOS</source>
-<target xml:lang="pt">Compile shaders remotely when developing for iOS</target>
+<target xml:lang="pt">Compilar shaders remotamente ao desenvolver para iOS</target>
 </trans-unit>
 <trans-unit id="tu38" xml:space="preserve">
 <source xml:lang="en">As iOS devices can't connect directly to PC, to convert Stride shaders remotely when developing for iOS, you need to use a Python script as a relay between the device, a Mac, and the developer PC.</source>
-<target xml:lang="pt">As iOS devices can't connect directly to PC, to convert Stride shaders remotely when developing for iOS, you need to use a Python script as a relay between the device, a Mac, and the developer PC.</target>
+<target xml:lang="pt">Como os dispositivos iOS não podem se conectar diretamente ao PC, para converter shaders Stride remotamente ao desenvolver para iOS, você precisa usar um script Python como um relé entre o dispositivo, um Mac e o PC desenvolvedor.</target>
 </trans-unit>
 <trans-unit id="tu39" xml:space="preserve">
 <source xml:lang="en">Make sure your PC and Mac are connected to the same network.</source>
-<target xml:lang="pt">Make sure your PC and Mac are connected to the same network.</target>
+<target xml:lang="pt">Certifique-se de que seu PC e Mac estão conectados à mesma rede.</target>
 </trans-unit>
 <trans-unit id="tu40" xml:space="preserve">
 <source xml:lang="en">On your Mac, install Python. You can download Python from the <g id="1">Python site</g>.</source>
-<target xml:lang="pt">On your Mac, install Python. You can download Python from the <g id="1">Python site</g>.</target>
+<target xml:lang="pt">No Mac, instale Python. Você pode baixar Python do site <g id="1">Python</g>.</target>
 </trans-unit>
 <trans-unit id="tu41" xml:space="preserve">
 <source xml:lang="en">Download and unzip <g id="1">ios-tcreplay.zip</g>.</source>
-<target xml:lang="pt">Download and unzip <g id="1">ios-tcreplay.zip</g>.</target>
+<target xml:lang="pt">Download e unzip <g id="1">ios-tcreplay.zip</g>.</target>
 </trans-unit>
 <trans-unit id="tu42" xml:space="preserve">
 <source xml:lang="en">Open <g id="1">Terminal</g>, navigate to the folder where you unzipped the file, and execute <g id="2">stride-ios-relay.py MyPcName</g>, where <g id="3">MyPcName</g> is the name of your developer PC.</source>
-<target xml:lang="pt">Open <g id="1">Terminal</g>, navigate to the folder where you unzipped the file, and execute <g id="2">stride-ios-relay.py MyPcName</g>, where <g id="3">MyPcName</g> is the name of your developer PC.</target>
+<target xml:lang="pt">Abra <g id="1">Terminal</g>, navegue para a pasta onde você descompactou o arquivo e execute <g id="2">stride-ios-relay.py MyPcName</g>, onde <g id="3">MyPcName</g> é o nome do seu desenvolvedor PC.</target>
 </trans-unit>
 <trans-unit id="tu43" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>!Tip<x id="2"/>
 To find the name of your developer PC, on the PC, press the Windows key, type <g id="3">About</g>, and press <g id="4">Enter</g>. The PC name is listed under <g id="5">PC name</g>.</source>
-<target xml:lang="pt"><x id="1"/>!Tip<x id="2"/>
-To find the name of your developer PC, on the PC, press the Windows key, type <g id="3">About</g>, and press <g id="4">Enter</g>. The PC name is listed under <g id="5">PC name</g>.</target>
+<target xml:lang="pt">&lt;x1\/&gt;!Tip&lt;x2\/&gt;
+Para encontrar o nome do seu desenvolvedor PC, no PC, pressione a chave do Windows, digite <g id="3">About</g> e pressione <g id="4">Enter</g>. O nome do PC está listado em <g id="5">PC nome</g>.</target>
 </trans-unit>
 <trans-unit id="tu44" xml:space="preserve">
 <source xml:lang="en">The iOS device should now be able to communicate with the PC via your Mac to build shaders remotely.</source>
-<target xml:lang="pt">The iOS device should now be able to communicate with the PC via your Mac to build shaders remotely.</target>
+<target xml:lang="pt">O dispositivo iOS agora deve ser capaz de se comunicar com o PC através do seu Mac para construir shaders remotamente.</target>
 </trans-unit>
 <trans-unit id="tu45" xml:space="preserve">
 <source xml:lang="en">Error messages</source>
-<target xml:lang="pt">Error messages</target>
+<target xml:lang="pt">Mensagens de erro</target>
 </trans-unit>
 <trans-unit id="tu46" xml:space="preserve">
 <source xml:lang="en">If your application tries to connect to Game Studio to compile a shader or to notify Game Studio that it needs new shaders, but can't connect, the Visual Studio output displays this error:</source>
-<target xml:lang="pt">If your application tries to connect to Game Studio to compile a shader or to notify Game Studio that it needs new shaders, but can't connect, the Visual Studio output displays this error:</target>
+<target xml:lang="pt">Se o seu aplicativo tentar se conectar ao Game Studio para compilar um shader ou notificar Game Studio que ele precisa de novos shaders, mas não pode se conectar, a saída Visual Studio exibe este erro:</target>
 </trans-unit>
 <trans-unit id="tu47" xml:space="preserve">
 <source xml:lang="en">"<x id="1"/>RouterClient<x id="2"/>: Error: Could not connect to connection router using mode Connect. System.AggregateException: One or more errors occurred. ---&gt; System.Net.Sockets.SocketException: No connection could be made because the target machine actively refused it 127.0.0.1:31254"</source>
-<target xml:lang="pt">"<x id="1"/>RouterClient<x id="2"/>: Error: Could not connect to connection router using mode Connect. System.AggregateException: One or more errors occurred. ---&gt; System.Net.Sockets.SocketException: No connection could be made because the target machine actively refused it 127.0.0.1:31254"</target>
+<target xml:lang="pt">"&lt;x1\/&gt;RouterClient&lt;x2\/&gt;: Erro: Não foi possível conectar ao roteador de conexão usando o modo Connect. System.AggregateExcepção: Um ou mais erros ocorreram. ---- System.Net.Sockets.SocketException: Nenhuma conexão pode ser feita porque a máquina de destino recusou ativamente 127.0.0.1:31254"</target>
 </trans-unit>
 </body>
 </file>

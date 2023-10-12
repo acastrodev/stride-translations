@@ -1,29 +1,29 @@
-# Physics simulation
+# Simulação de física
 
-<span class="badge text-bg-primary">Intermediate</span>
-<span class="badge text-bg-success">Programmer</span>
+<x1\/> Intermediário <x2\/>
+<x3\/> Programador <x4\/>
 
-Stride's physics are controlled by the [Simulation](xref:Stride.Physics.Simulation) class.
-You can change how Stride initializes the [simulation](xref:Stride.Physics.Simulation) by modifying flags in [PhysicsSettings](xref:Stride.Physics.PhysicsSettings), accessed in the **GameSettings** asset properties.
+A física de Stride é controlada pela classe [Simulation](xref:Stride.Physics.Simulation).
+Você pode mudar como Stride inicializa o [simulation](xref:Stride.Physics.Simulation) modificando bandeiras em [PhysicsDefinições](xref:Stride.Physics.PhysicsSettings), acessado nas propriedades de ativos **GameSettings**.
 
-> [!Note]
-> Your scene must have at least one [Collider](colliders.md) in order for Stride to initialize the [Simulation](xref:Stride.Physics.Simulation) instance.
+> <x1\/>!Note<x2\/>
+> Sua cena deve ter pelo menos um [Collider](colliders.md) para que Stride inicialize a instância [Simulation](xref:Stride.Physics.Simulation).
 
-![Physics Settings](media/simulation-physics-settings.png)
+<x1\/>Physics Configurações<x2\/>
 
-* `CollisionsOnly` initializes the [Simulation](xref:Stride.Physics.Simulation) with collision detection turned on, but no other physics. Objects won't react to physical forces.
+* `CollisionsOnly` inicializa o [Simulation](xref:Stride.Physics.Simulation) com detecção de colisão ligada, mas nenhuma outra física. Os objectos não reagem às forças físicas.
 
-* `ContinuousCollisionDetection` initializes the [Simulation](xref:Stride.Physics.Simulation) with continuous collision detection (CCD). CCD prevents fast-moving entities (such as bullets) erroneously passing through other entities.
+* `ContinuousCollisionDetection` inicializa o [Simulation](xref:Stride.Physics.Simulation) com detecção contínua (CCD). O CCD evita que entidades em movimento rápido (como balas) passem erroneamente por outras entidades.
 
-> [!Note]
-> The ``SoftBodySupport``, ``MultiThreaded``, and ``UseHardwareWhenPossible`` flags are currently disabled.
+> <x1\/>!Note<x2\/>
+> O ``SoftBodySupport``, ``MultiThreaded`` e ``UseHardwareWhenPossible`` flags estão atualmente desativados.
 
-At runtime, you can change some [Simulation](xref:Stride.Physics.Simulation) parameters:
+No tempo de execução, você pode alterar alguns parâmetros [Simulation](xref:Stride.Physics.Simulation):
 
-* `Gravity` — the global gravity, in [world units](../game-studio/world-units.md) per second squared
-* `FixedTimeStep` — the length of a simulation timestep, in seconds
-* `MaxSubSteps` — the maximum number of fixed timesteps the engine takes per update
+* `Gravidade` — a gravidade global, em unidades do mundo [ por segundo quadrado](../game-studio/world-units.md)
+* `FixedTimeStep` — o comprimento de um tempo de simulação, em segundos
+* `MaxSubSteps` — o número máximo de tempo fixo que o motor leva por atualização
 
-## See also
-* [Colliders](colliders.md)
-* [Collider shapes](collider-shapes.md)
+## Ver também
+* [Coleiras](colliders.md)
+* [Formas de colarinho](collider-shapes.md)

@@ -1,41 +1,41 @@
-# Layout system
+# Sistema de Layout
 
-<span class="badge text-bg-primary">Intermediate</span>
-<span class="badge text-bg-success">Programmer</span>
-<span class="badge text-bg-success">Designer</span>
+<x1\/> Intermediário <x2\/>
+<x3\/> Programador <x4\/>
+<x5\/>Designer<x6\/>
 
-The Stride UI layout system is similar to Windows Presentation Foundation (WPF). For more information about the WPF layout system, see the [MSDN documentation](https://docs.microsoft.com/en-us/dotnet/framework/wpf/advanced/layout). Much of the WPF documentation also applies to the Stride layout system.
+O sistema de layout de IU Stride é semelhante ao Windows Presentation Foundation (WPF). Para obter mais informações sobre o sistema de layout WPF, consulte a documentação [MSDN](https://docs.microsoft.com/en-us/dotnet/framework/wpf/advanced/layout). Grande parte da documentação WPF também se aplica ao sistema de layout Stride.
 
-Every @'Stride.UI.UIElement' in the Stride UI system has a surrounding rectangle used in layouts. Stride computes layouts according to the @'Stride.UI.UIElement' requirement, available screen space, constraints, margins, padding, and the special behavior of @'Stride.UI.Panels.Panel' elements (which arrange children in specific ways).
+Cada @'Stride.UI.UIElement' no sistema de IU Stride tem um retângulo circundante usado em layouts. Stride computa layouts de acordo com o @'Stride. UI.UIElement' exigência, espaço de tela disponível, restrições, margens, padding, e o comportamento especial de @'Stride. UI.Panels. Elementos do painel (que organizam crianças de maneiras específicas).
 
-Processing this data recursively, the layout system computes a position and size for every @'Stride.UI.UIElement' in the UI system.
+Processamento de dados recursivamente, o sistema de layout computa uma posição e tamanho para cada @'Stride. UI.UIElement' no sistema UI.
 
-## Measure and arrange
+## Medir e organizar
 
-Stride performs the layout process recursively in two passes: [Measure](xref:Stride.UI.UIElement.Measure(Stride.Core.Mathematics.Vector3)) and [Arrange](xref:Stride.UI.UIElement.Arrange(Stride.Core.Mathematics.Vector3,System.Boolean)).
+Stride executa o processo de layout recursivamente em dois passes: [Medidatura](xref:Stride.UI.UIElement.Measure(Stride.Core.Mathematics.Vector3)) e [Arranque](xref:Stride.UI.UIElement.Arrange(Stride.Core.Mathematics.Vector3,System.Boolean)).
 
-### Measure
+### Medidas
 
-In the [Measure](xref:Stride.UI.UIElement.Measure(Stride.Core.Mathematics.Vector3)) pass, each element recursively computes its [DesiredSize](xref:Stride.UI.UIElement#Stride_UI_UIElement_DesiredSize) according to the properties you set, such as @'Stride.UI.UIElement.Width', @'Stride.UI.UIElement.Height', and @'Stride.UI.UIElement.Margin'.
+No [ Medida ](xref:Stride.UI.UIElement.Measure(Stride.Core.Mathematics.Vector3)) pass, cada elemento computa recursivamente seu [DesiredSize](xref:Stride.UI.UIElement#Stride_UI_UIElement_DesiredSize) de acordo com as propriedades que você definiu, como @'Stride. UI.UIElement.Width', @'Stride.UI.UIElement.Height', e @'Stride.UI.UIElement. Margin's.
 
-Some @'Stride.UI.Panels.Panel' elements call [Measure](xref:Stride.UI.UIElement.Measure(Stride.Core.Mathematics.Vector3)) recursively to determine the  [DesiredSize](xref:Stride.UI.UIElement#Stride_UI_UIElement_DesiredSize) of their children, and act accordingly.
+Alguns elementos @'Stride.UI.Panels.Panel chamam [Measure](xref:Stride.UI.UIElement.Measure(Stride.Core.Mathematics.Vector3)) recursivamente para determinar o [DesiredSize](xref:Stride.UI.UIElement#Stride_UI_UIElement_DesiredSize) de seus filhos, e agir de acordo.
 
-### Arrange
+### Arranjo
 
-The [Arrange](xref:Stride.UI.UIElement.Arrange(Stride.Core.Mathematics.Vector3,System.Boolean)) pass arranges the elements, taking into account:
+O passe [Arrange](xref:Stride.UI.UIElement.Arrange(Stride.Core.Mathematics.Vector3,System.Boolean)) organiza os elementos, tendo em conta:
 
-* @'Stride.UI.UIElement.Margin'
-* @'Stride.UI.UIElement.Width'
-* @'Stride.UI.UIElement.Height'
-* @'Stride.UI.UIElement.HorizontalAlignment'
-* @'Stride.UI.UIElement.VerticalAlignment'
-* @'Stride.UI.Panels.Panel'
-* specific [Arrange](xref:Stride.UI.UIElement.Arrange(Stride.Core.Mathematics.Vector3,System.Boolean)) rules
+* @'Stride.UI.UIElement. Margem '
+* @'Stride.UI.UIElement. Largura '
+* @'Stride.UI.UIElement. Altura '
+* @'Stride.UI.UIElement.Horizontal Alinhamento '
+* @'Stride.UI.UIElement.Alinhamento vertical '
+* @'Stride.UI. Painéis. Painel '
+* específico [ Organizar regras](xref:Stride.UI.UIElement.Arrange(Stride.Core.Mathematics.Vector3,System.Boolean))
 
-## See also
+## Ver também
 
-* [MSDN WPF layout documentation](https://docs.microsoft.com/en-us/dotnet/framework/wpf/advanced/layout)
-* [UI pages](ui-pages.md)
-* [UI libraries](ui-libraries.md)
-* [UI editor](ui-editor.md)
-* [Add a UI to a scene](add-a-ui-to-a-scene.md)
+* [Documentação de layout MSDN WPF](https://docs.microsoft.com/en-us/dotnet/framework/wpf/advanced/layout)
+* [Páginas de interface](ui-pages.md)
+* [Bibliotecas de interface](ui-libraries.md)
+* [Editor de UI](ui-editor.md)
+* [Adicionar uma interface de usuário a uma cena](add-a-ui-to-a-scene.md)

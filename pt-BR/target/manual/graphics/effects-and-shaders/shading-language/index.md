@@ -1,16 +1,16 @@
-# Shading language
+# Língua de Shading
 
-Stride provides a superset of the [HLSL Shading language](http://msdn.microsoft.com/en-us/library/windows/desktop/bb509561%28v=vs.85%29.aspx), bringing advanced and higher level language constructions, with:
+Stride fornece um superset do [HLSL Shading language](http://msdn.microsoft.com/en-us/library/windows/desktop/bb509561%28v=vs.85%29.aspx), trazendo construções de linguagem avançadas e de nível superior, com:
 
-- **extensibility** to allow shaders to be extended easily using object-oriented programming concepts such as classes, inheritance, and composition
-- **modularity** to provide a set modular shaders each focusing on a single rendering technique, more easily manageable
-- **reusability** to maximize code reuse between shaders
+- **extensibilidade** para permitir que os shaders sejam estendidos facilmente usando conceitos de programação orientados a objetos, como classes, herança e composição
+- **modularity** para fornecer um conjunto de shaders modulares cada um com foco em uma única técnica de renderização, mais facilmente gerenciável
+- **reusability** para maximizar a reutilização de código entre shaders
 
-Stride Shading Language (SDSL) is automatically transformed to an existing shading language (HLSL, GLSL, GLSL ES).
+Stride Shading Language (SDSL) é automaticamente transformado em uma linguagem de sombreamento existente (HLSL, GLSL, GLSL ES).
 
-## In this section
+## Nesta secção
 
-- [Shader classes, mixins, and inheritance](shader-classes-mixins-and-inheritance.md)
-- [Composition](composition.md)
-- [Templates](templates.md)
-- [Shader stage input/output automatic management](automatic-shader-stage-input-output.md)
+- [Shader classes, misturas e herança](shader-classes-mixins-and-inheritance.md)
+- [Composição](composition.md)
+- [Modelos](templates.md)
+- [Shader fase de entrada \/ saída gestão automática](automatic-shader-stage-input-output.md)

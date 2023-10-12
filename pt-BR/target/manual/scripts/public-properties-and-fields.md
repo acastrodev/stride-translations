@@ -1,127 +1,127 @@
-# Public properties and fields
+# Propriedades e campos públicos
 
-<span class="badge text-bg-primary">Beginner</span>
-<span class="badge text-bg-success">Programmer</span>
+<x1\/>Introdução<x2\/>
+<x3\/> Programador <x4\/>
 
-When you declare a public property or field in a script, the property becomes accessible in Game Studio from the script component properties.
+Quando você declara uma propriedade pública ou campo em um script, a propriedade fica acessível no Game Studio a partir das propriedades do componente de script.
 
-![Property in Game Studio](media/property-shown-in-game-studio.png)
+<x1\/>Propriedade no Game Studio<x2\/>
 
-You can attach the same script to multiple entities and set different property values on each entity.
+Você pode anexar o mesmo script a várias entidades e definir diferentes valores de propriedade em cada entidade.
 
-> [!Note]
-> Properties and fields must be [serializable](serialization.md) to be used in Game Studio.
+> <x1\/>!Note<x2\/>
+> Propriedades e campos devem ser [serializable](serialization.md) para ser usado no Game Studio.
 
-## Add a public property or field
+## Adicionar uma propriedade pública ou campo
 
-This script has a public property (`DelayTimeOut`):
+Este script tem uma propriedade pública (`DelayTimeOut`):
 
 ```cs
-public class SampleSyncScript : StartupScript
-{
-	// This public member will appear in Game Studio
-	public float DelayTimeOut { get; set; }
+classe pública SampleSyncScript : StartupScript
+(
+	\/\/ Este membro público aparecerá no Game Studio
+	flutuador público DelayTime Fora
 }
 ```
 
-Game Studio shows the `DelayTimeOut` property in the script component properties:
+Game Studio mostra a propriedade `DelayTimeOut` nas propriedades do componente de script:
 
-![Public property appears in the Property Grid](media/scripts-in-stride-change-value-public-property.png)
+<x1\/> Propriedade pública aparece na propriedade Grid<x2\/>
 
-> [!Note]
-> As a general rule, if you want to display the property or field in Game Studio, getters and setters should do as little as possible. For example, they shouldn't try to call methods or access Stride runtime API.
+> <x1\/>!Note<x2\/>
+> Como regra geral, se você quiser exibir a propriedade ou campo no Game Studio, os getters e os setters devem fazer o mínimo possível. Por exemplo, eles não devem tentar chamar métodos ou acessar a API de tempo de execução Stride.
 
-> For example, the following code will create problems, as it tries to access `Entity.Components`, which is only available at runtime:
+> Por exemplo, o seguinte código criará problemas, uma vez que tenta acessar `Entity.Components`, que só está disponível em tempo de execução:
 
 > ```cs
-> public class SampleSyncScript : StartupScript
-> {
-> 	private float delayTimeOut;
-> 	// This public member will appear in Game Studio
-> 	public float DelayTimeOut
-> 	{
-> 		get { return delayTimeOut; }
-> 		set
-> 		{ 
-> 			delayTimeOut = value;
+> classe pública SampleSyncScript : StartupScript
+> (
+> 	atraso de flutuação privado Tempo Fora;
+> 	\/\/ Este membro público aparecerá no Game Studio
+> 	flutuador público DelayTime Fora
+> 	(
+> 		get { delay retorno Tempo Fora
+> 		conjunto
+> 		( 
+> 			tempo de atraso Fora = valor;
 > 			Entity.Components.Add(new SkyboxComponent());
 > 		}
 > 	}
 > }
 > ```
-> If you want to include code like this in a property or field, hide it so Game Studio doesn't display it (see below).
+> Se você quiser incluir código como este em uma propriedade ou campo, escondê-lo para Game Studio não exibi-lo (veja abaixo).
 
-## Hide properties or fields in the Property Grid
+## Ocultar propriedades ou campos na Grade de Propriedades
 
-If you don't want Game Studio to show a property in the Property Grid, you can:
+Se você não quiser que o Game Studio mostre uma propriedade na Property Grid, você pode:
 
-* declare your member internal or private, or
-* use the [DataMemberIgnore](xref:Stride.Core.DataMemberIgnoreAttribute) attribute like this:
+* declarar seu membro interno ou privado, ou
+* use o atributo [DataMemberIgnore](xref:Stride.Core.DataMemberIgnoreAttribute) como este:
 
 ```cs
 
-	// This public property isn't available in Game Studio
+	\/\/ Esta propriedade pública não está disponível no Game Studio
 	[DataMemberIgnore]
-	public float DelayTimeOut { get; set; }
+	flutuador público DelayTime Fora
 	
 ```
 
-Game Studio no longer shows the property:
+Game Studio não mostra mais a propriedade:
 
-![Public property been hidden with ```[DataMemberIgnore]```](media/scripts-in-stride-public-property-with-datamemberignore.png)
+<x1\/> Propriedade pública foi escondida com ```[DataMemberIgnore]```<x2\/>
 
-## Adding property descriptions
+## Adicionando descrições de propriedades
 
-When you add a `<userdoc>` comment block above your public property in code, Game Studio will display it in the description field.
+Quando você adicionar um bloco de comentários `<userdoc>` acima de sua propriedade pública em código, Game Studio irá exibi-lo no campo de descrição.
 
 ```cs
-	///<summary>
-	/// This summary won't show in Game Studio
-	///</summary>
-	///<userdoc>
-	/// This description will show in Game Studio
-	///</userdoc>
-	public float DelayTimeOut { get; set; }
+	\/\/\/<summary>
+	\/\/\/ Este resumo não aparecerá no Game Studio
+	\/\/\/<\/summary>
+	\/\/\/<userdoc>
+	\/\/\/ Esta descrição irá aparecer no Game Studio
+	\/\/\/<\/userdoc>
+	flutuador público DelayTime Fora
 
 ```
 
-Enable documentation file generation:
+Habilite a geração de arquivos de documentação:
 ```xml
   <PropertyGroup>
-    <TargetFrameworks>net6.0</TargetFrameworks>
-    <DocumentationFile>bin\$(Configuration)\$(TargetFramework)\$(AssemblyName).xml</DocumentationFile>
-  </PropertyGroup>
+    <TargetFrameworks>net6.0<\/TargetFrameworks>
+    <DocumentationFile>bin\$(Configuration)\$(TargetFramework)\$(AssemblyName).xml<\/DocumentationFile>
+  <\/PropertyGroup>
 ```
 
-> [!NOTE]
-> Game Studio will only look in your build output directory for each assembly. Using the above path is recommended.
+> <x1\/>!NOTE<x2\/>
+> Game Studio só vai olhar em seu diretório de saída de compilação para cada conjunto. Recomenda-se usar o caminho acima.
 
-On next reload, the Game Studio should display the documentation:
+Na próxima recarga, o Game Studio deve exibir a documentação:
 
-![The description now shows in the Property Grid](media/userdoc-example.png)
+<x1\/>A descrição agora mostra no Property Grid<x2\/>
 
-## [MemberRequiredAttribute](xref:Stride.Core.Annotations.MemberRequiredAttribute)
-This attribute is used to specify if a field or property should not be left null in editor.
-If no values are set for this member, a warning or error will be logged when building your game.
+## [MembroRequiredAttribute](xref:Stride.Core.Annotations.MemberRequiredAttribute)
+Este atributo é usado para especificar se um campo ou propriedade não deve ser deixado nulo no editor.
+Se nenhum valor for definido para este membro, um aviso ou erro será registrado ao construir seu jogo.
 ```cs
-[Stride.Core.Annotations.MemberRequired(MemberRequiredReportType.Error)] public CharacterComponent MyCharacter;
+[Stride.Core.Annotations.MemberRequired(MemberRequiredReportType.Error)] Característica pública Componente MyCharacter;
 ```
 
-#### [DataMemberRangeAttribute](xref:Stride.Core.Annotations.DataMemberRangeAttribute)
+#### [Processamento de Dados](xref:Stride.Core.Annotations.DataMemberRangeAttribute)
 #### [InlinePropertyAttribute](xref:Stride.Core.Annotations.InlinePropertyAttribute)
-#### [ItemCanBeNullAttribute](xref:Stride.Core.Annotations.ItemCanBeNullAttribute)
-#### [ItemNotNullAttribute](xref:Stride.Core.Annotations.ItemNotNullAttribute)
-#### [MemberCollectionAttribute](xref:Stride.Core.Annotations.MemberCollectionAttribute)
-#### [DataStyleAttribute](xref:Stride.Core.DataStyleAttribute)
-#### [DisplayAttribute](xref:Stride.Core.DisplayAttribute)
+#### [ItemCanBeNullAtributo](xref:Stride.Core.Annotations.ItemCanBeNullAttribute)
+#### [ItemNotNullAttribuído](xref:Stride.Core.Annotations.ItemNotNullAttribute)
+#### [Colecção de Membros](xref:Stride.Core.Annotations.MemberCollectionAttribute)
+#### [DataStyleAttribuí](xref:Stride.Core.DataStyleAttribute)
+#### [Exibir atributo](xref:Stride.Core.DisplayAttribute)
 
-## See also
+## Ver também
 
-* [Serialization](serialization.md)
-* [Types of script](types-of-script.md)
-* [Create a script](create-a-script.md)
-* [Use a script](use-a-script.md)
-* [Scheduling and priorities](scheduling-and-priorities.md)
-* [Events](events.md)
-* [Debugging](debugging.md)
-* [Preprocessor variables](preprocessor-variables.md)
+* [Serialização](serialization.md)
+* [Tipos de script](types-of-script.md)
+* [Criar um script](create-a-script.md)
+* [Use um script](use-a-script.md)
+* [Programação e prioridades](scheduling-and-priorities.md)
+* [Eventos](events.md)
+* [Depuração](debugging.md)
+* [Variáveis de pré-processamento](preprocessor-variables.md)

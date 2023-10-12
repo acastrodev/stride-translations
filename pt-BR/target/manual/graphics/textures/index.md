@@ -1,20 +1,20 @@
-# Textures
+# Texturas
 
-<span class="badge text-bg-primary">Beginner</span>
-<span class="badge text-bg-success">Artist</span>
-<span class="badge text-bg-success">Programmer</span>
+<x1\/>Introdução<x2\/>
+<x3\/>Artista <x4\/>
+<x5\/> Programador <x6\/>
 
-**Textures** are images mainly used in [materials](../materials/index.md). Stride maps textures to the surfaces the material covers.
+**Texturas** são imagens usadas principalmente em [materiais](../materials/index.md). Stride mapeia texturas para as superfícies que o material cobre.
 
-Textures can add color information to a material — for example, to add a brick pattern to a wall or a wood pattern to a table. The values of the pixels in a texture (**texels**) can also be used for other calculations, such as in specular maps, metalness maps, or [normal maps](normal-maps.md).
+Texturas podem adicionar informações de cor a um material — por exemplo, para adicionar um padrão de tijolo a uma parede ou um padrão de madeira a uma mesa. Os valores dos pixels em uma textura (**texels**) também podem ser usados para outros cálculos, tais como em mapas especulares, mapas de metalidade, ou [ mapas normais](normal-maps.md).
 
-Materials typically contain multiple textures; for example, a material might contain a color texture, a normal map texture, and a roughness texture.
+Os materiais normalmente contêm texturas múltiplas; por exemplo, um material pode conter uma textura de cor, uma textura de mapa normal e uma textura de rugosidade.
 
-Textures can also be used outside materials; for example, you can draw them directly to the UI, or use them in [sprites](../../sprites/index.md).
+As texturas também podem ser usadas fora de materiais; por exemplo, você pode atraí-las diretamente para a interface do usuário, ou usá-las em [sprites](../../sprites/index.md).
 
-## Supported file types
+## Tipos de arquivo suportados
 
-You can use the following file types as textures:
+Você pode usar os seguintes tipos de arquivo como texturas:
 
 * `.dds`
 * `.jpg`
@@ -27,110 +27,110 @@ You can use the following file types as textures:
 * `.tif`
 * `.tiff`
 
-> [!Note]
-> * Stride only imports the first frame of animated image files, such as animated gifs or PNGs. They don't animate in Stride; they appear as static images.
-> * Stride currently doesn't support movie files.
+> <x1\/>!Note<x2\/>
+> * Stride só importa o primeiro quadro de arquivos de imagem animados, como gifs animados ou PNGs. Eles não animam em Stride; eles aparecem como imagens estáticas.
+> * Stride atualmente não suporta arquivos de filme.
 
-## Add a texture
+## Adicionar uma textura
 
-In the **Asset View**, click **Add asset** > **Texture**, then select a template for the texture (**color**, **grayscale** or **normal map**):
+No **Asset View**, clique em **Add asset** > **Texture**, em seguida, selecione um modelo para a textura (**color**, **grayscale** ou **normal map**):
 
-![Add texture](media/add-texture.png)
+<x1\/> Adicionar textura<x2\/>
 
-> [!Note]
-> Render targets are a different kind of texture, and don't use images. Instead, they render the output from a [camera](../cameras/index.md). For more information, see [Render targets](../graphics-compositor/render-textures.md).
+> <x1\/>!Note<x2\/>
+> Os alvos do remetente são um tipo diferente de textura, e não usam imagens. Em vez disso, eles renderizam a saída de um [camera](../cameras/index.md). Para mais informações, consulte [Render target](../graphics-compositor/render-textures.md).
 
-Alternatively, drag the texture file from Explorer to the Asset View:
+Alternativamente, arraste o arquivo de textura do Explorer para o Asset View:
 
-![Drap and drop a resource file to the Asset View](../../get-started/media/create-assets-drop-resource.png)
+<x1\/>Drap e solte um arquivo de recursos para o Asset View<x2\/>
 
-Then select a texture template (**color**, **grayscale** or **normal map**):
+Em seguida, selecione um modelo de textura (**color**, **grayscale** ou **normal map**):
 
-![List of asset templates](media/create-assets-drag-drop-select-asset-template.png)
+<x1\/>Lista de modelos de ativos<x2\/>
 
-Game Studio adds the texture to the Asset View:
+Game Studio adiciona a textura para o Asset View:
 
-![Texture asset created](../../get-started/media/create-assets-drag-drop-asset-created.png)
+<x1\/> Ativo de extensão criado <x2\/>
 
-## Texture properties
+## Propriedades de textura
 
-The following properties are common to all textures.
+As seguintes propriedades são comuns a todas as texturas.
 
-![Texture properties](media/texture-properties.png)
+<x1\/> Propriedades de exposição<x2\/>
 
-| Property | Description |
+| Propriedade | Descrição |
 |------------------|---------
-| Width | The width of the texture in-game |
-| Height | The height of the texture in-game |
-| Use percentages | Use percentages for width and height instead of actual pixel size |
-| Width | The width of the texture in-game |
-| Height | The height of the texture in-game |
-| Type | Use **Color** for textures you want to display as images, **Normal map** for normal maps, and **Grayscale** to provide values for other things (eg specular maps, metalness maps, roughness maps). Color textures and normal maps have additional properties (see below). |
-| Generate mipmaps | Generate different versions of the texture at different resolutions to be displayed at different distances. Improves performance, removes visual artifacts, and reduces pop-in when using **streaming**, but uses more memory. Unnecessary for textures always at the same distance from the camera (such as UIs). |
-| Compress | Compress the final texture to a format based on the target platform and usage. The final texture is a multiple of 4. For more information, see [Texture compression](compression.md). |
-| Stream | Stream the texture dynamically at runtime. This improves performance and scene loading times. Not recommended for important textures you always want to be loaded, such as splash screens. For more information, see [Streaming](streaming.md). |
+| Largura | A largura da textura no jogo |
+| Altura | A altura da textura no jogo |
+| Percentagens de uso | Use percentagens de largura e altura em vez do tamanho real do pixel |
+| Largura | A largura da textura no jogo |
+| Altura | A altura da textura no jogo |
+| Tipo | Use **Color** para texturas que você deseja exibir como imagens, **Normal map** para mapas normais, e **Grayscale** para fornecer valores para outras coisas (eg especular maps, mapas de metalness, mapas de rugosidade). Texturas de cor e mapas normais têm propriedades adicionais (veja abaixo). |
+| Gerar mipmaps | Gerar diferentes versões da textura em diferentes resoluções a serem exibidas a diferentes distâncias. Melhora o desempenho, remove artefatos visuais e reduz o pop-in ao usar **streaming**, mas usa mais memória. Desnecessário para texturas sempre à mesma distância da câmera (como UIs). |
+| Compressa | Comprimir a textura final para um formato baseado na plataforma de destino e uso. A textura final é um múltiplo de 4. Para obter mais informações, consulte a compressão [Textura](compression.md). |
+| Fluxo de corrente | Transfira a textura dinamicamente no tempo de execução. Isso melhora o desempenho e o tempo de carregamento da cena. Não recomendado para texturas importantes que você sempre quer ser carregado, como telas de respingo. Para mais informações, consulte [Streaming](streaming.md). |
 
-### Color texture properties
+### Propriedades de textura de cor
 
-The following properties apply if you set the texture **type** to **color**.
+As seguintes propriedades se aplicam se você definir a textura **type** para **color**.
 
-![Color texture properties](media/color-texture-properties.png)
+<x1\/> Propriedades de textura de cor<x2\/>
 
-| Property | Description |
+| Propriedade | Descrição |
 |----------|---------
-| sRGB sampling | Store the texture in sRGB format and convert to linear space when sampled. Recommended for all color textures, unless they're explicitly in linear space. |
-| Color key enabled | Use the color set in the **Color key color** property for transparency at runtime. If disabled, the project uses transparent areas of the texture instead |
-| Color key color | The color used for transparency at runtime. Only applied if **Color key enabled** is selected. |
-| Alpha | The texture alpha format (**None**, **Mask**, **Explicit**, **Interpolated**, or **Auto**) |
-| Premultiply alpha | Premultiply all color components of the images by their alpha component |
+| amostragem sRGB | Armazene a textura no formato sRGB e converta-se em espaço linear quando amostrado. Recomendado para todas as texturas coloridas, a menos que estejam explicitamente no espaço linear. |
+| Chave de cor habilitada | Use o conjunto de cores na propriedade **Color key color** para transparência no tempo de execução. Se desativado, o projeto usa áreas transparentes da textura em vez |
+| Cor da cor da cor | A cor utilizada para transparência no tempo de execução. Apenas aplicado se a chave **Color habilitada** for selecionada. |
+| Alfa | O formato alfa textura (**None**, **Mask**, **Explicit**, **Interpolated**, ou **Auto**) |
+| Premultiplicação alfa | Premultiplicar todos os componentes de cor das imagens por seu componente alfa |
 
-### Normal map properties
+### Propriedades do mapa normal
 
-The following property applies if you set the texture **type** to **normal map**.
+A seguinte propriedade aplica-se se você definir a textura **type** para **rmágrafo normal**.
 
-![Normal map textures](media/normal-map-texture-properties.png)
+<x1\/>Normal map textures<x2\/>
 
-| Property | Description |
+| Propriedade | Descrição |
 |----------|---------
-| Invert Y | Have positive Y-component (green) face up in tangent space. This depends on the tools you use to create normal maps. |
+| Inversão Y | Tenha positivo Y-componente (verde) enfrentar no espaço tangente. Isso depende das ferramentas que você usa para criar mapas normais. |
 
-For more information about normal maps, see the [Normal maps](normal-maps.md) page.
+Para obter mais informações sobre mapas normais, consulte a página [Normal maps](normal-maps.md).
 
-## Grayscale textures
+## Texturas em tons de cinza
 
-Grayscale texture use only the R channel of the image (finalRGBA = originalRRRR).
+A textura em tons de cinza usa apenas o canal R da imagem (finalRGBA = originalRRRR).
 
-> [!Note]
-> If you add a texture to a scene (as a sprite component), and set the texture type to grayscale, it appears red, not monochrome. This is because the image uses the R (red) channel.
+> <x1\/>!Note<x2\/>
+> Se você adicionar uma textura a uma cena (como um componente sprite), e definir o tipo de textura a tons de cinza, parece vermelho, não monocromático. Isso porque a imagem usa o canal R (vermelho).
 
-> To make the channel monochrome, in the **Sprite** component properties, set the **Type** as **Grayscale**. For more information about the sprite component properties, see [Use sprites](../../sprites/use-sprites.md).
+> Para fazer o canal monocromático, nas propriedades componentes **Sprite**, defina o **Type** como **Grayscale**. Para obter mais informações sobre as propriedades do componente sprite, consulte [Use sprites](../../sprites/use-sprites.md).
 
-You can use grayscale textures to provide values in [material maps](../materials/material-maps.md). For example, you can use a texture as a **blend map** to blend two material layers:
+Você pode usar texturas em tons de cinza para fornecer valores em mapas materiais [](../materials/material-maps.md). Por exemplo, você pode usar uma textura como um **blend map** para misturar duas camadas de material:
 
-![Blend map diagram](../materials/media/blend-map-diagram.png)
+<x1\/> Diagrama de mapas ampliados<x2\/>
 
-![Blend map diagram](../materials/media/blend-map-diagram2.png)
+<x1\/> Diagrama de mapas ampliados<x2\/>
 
-Note how the blend map texture corresponds to the patterning on the result.
+Note como a textura do mapa de mistura corresponde à modelagem no resultado.
 
-For more information, see [Material maps](../materials/material-maps.md).
+Para obter mais informações, consulte [Mapas importantes](../materials/material-maps.md).
 
-### Global texture settings
+### Configurações de textura global
 
-For instructions about how to access the global texture settings, see the [Game Settings](../../game-studio/game-settings.md) page.
+Para obter instruções sobre como acessar as configurações de textura global, consulte a página [Game Settings](../../game-studio/game-settings.md).
 
-![Texture settings](../../game-studio/media/texture-settings.png)
+<x1\/> Configurações de exposição<x2\/>
 
-| Property | Description |
+| Propriedade | Descrição |
 |-----------------|--------------
-| Texture quality | The texture quality when encoding textures. **Fast** uses the least CPU, but has the lowest quality. Higher settings might result in slower builds, depending on the target platform. |
+| Qualidade da textura | A qualidade da textura ao codificar texturas. **Fast** usa o menor CPU, mas tem a menor qualidade. As configurações mais altas podem resultar em compilações mais lentas, dependendo da plataforma de destino. |
 
-## See also
+## Ver também
 
-* [Normal maps](normal-maps.md)
-* [Texture compression](compression.md)
-* [Texture streaming](streaming.md)
-* [Materials](../materials/index.md)
+* [Mapas normais](normal-maps.md)
+* [Compressão de textura](compression.md)
+* [Transmissão de texto](streaming.md)
+* [Materiais](../materials/index.md)
 * [Sprites](../../sprites/index.md)
-* [Render textures](../graphics-compositor/render-textures.md)
-* [Skyboxes and backgrounds](skyboxes-and-backgrounds.md)
+* [Render texturas](../graphics-compositor/render-textures.md)
+* [Skyboxes e fundos](skyboxes-and-backgrounds.md)

@@ -1,57 +1,57 @@
 # Raycasting
 
-<span class="badge text-bg-primary">Intermediate</span>
-<span class="badge text-bg-success">Programmer</span>
+<x1\/> Intermediário <x2\/>
+<x3\/> Programador <x4\/>
 
-**Raycasting** traces an invisible line through the scene to find intersecting [colliders](colliders.md). This is useful, for example, to check which objects are in a gun's line of fire, or are under the mouse cursor when the user clicks.
+**Raycasting** traça uma linha invisível através da cena para encontrar intersectando [colliders](colliders.md). Isso é útil, por exemplo, para verificar quais objetos estão na linha de fogo de uma arma, ou estão sob o cursor do mouse quando o usuário clica.
 
-> [!Note]
-> Raycasting uses **colliders** to calculate intersections. It ignores entities that have no collider component. For more information, see [Colliders](colliders.md).
+> <x1\/>!Note<x2\/>
+> Raycasting usa **colliders** para calcular interseções. Ele ignora entidades que não têm componente de colisão. Para mais informações, consulte [Colliders](colliders.md).
 
-To use a raycast, in the current [Simulation](xref:Stride.Physics.Simulation), use [Simulation.Raycast](xref:Stride.Physics.Simulation.Raycast(Vector3, Vector3, CollisionFilterGroups, CollisionFilterGroupFlags, bool)).
+Para usar um raycast, na corrente [Simulation](xref:Stride.Physics.Simulation), use <x1\/>Simulation.Raycast<x2\/>(xref:Stride.Physics.Simulation.Raycast(Vector3, Vector3, CollisionFilter Grupos, CollisionFilterGroupFlags, bool)).
 
-For an example of raycasting, see the **Physics Sample** project included with Stride.
+Por exemplo, veja o projeto **Physics Sample** incluído no Stride.
 
-## Example code
+## Exemplo de código
 
-This code sends a raycast from the mouse's screen position:
+Este código envia um raycast da posição da tela do mouse:
 
 ```cs
-public static bool ScreenPositionToWorldPositionRaycast(Vector2 screenPos, CameraComponent camera, Simulation simulation)
-{
-    Matrix invViewProj = Matrix.Invert(camera.ViewProjectionMatrix);
+bool estático público ScreenPositionToWorldPositionRaycast(Vector2 screenPos, CameraComponent câmera, Simulação)
+(
+    Matrix invViewProj = Matrix.Invert (camera.ViewProjectionMatrix);
 
-    // Reconstruct the projection-space position in the (-1, +1) range.
-    //    Don't forget that Y is down in screen coordinates, but up in projection space
+    \/\/ Reconstrua a posição do espaço de projeção no intervalo (-1, +1).
+    \/\/ Não se esqueça que Y está em coordenadas de tela, mas em espaço de projeção
     Vector3 sPos;
     sPos.X = screenPos.X * 2f - 1f;
     sPos.Y = 1f - screenPos.Y * 2f;
 
-    // Compute the near (start) point for the raycast
-    // It's assumed to have the same projection space (x,y) coordinates and z = 0 (lying on the near plane)
-    // We need to unproject it to world space
+    \/\/ Compute o ponto próximo (start) para o raycast
+    \/\/ Assume-se que tenha as mesmas coordenadas de espaço de projeção (x,y) e z = 0 (de pé no plano próximo)
+    \/\/ Precisamos de desprojetá-lo para o espaço mundial
     sPos.Z = 0f;
     var vectorNear = Vector3.Transform(sPos, invViewProj);
-    vectorNear /= vectorNear.W;
+    vectorNear \/= vectorNear.W;
 
-    // Compute the far (end) point for the raycast
-    // It's assumed to have the same projection space (x,y) coordinates and z = 1 (lying on the far plane)
-    // We need to unproject it to world space
+    \/\/ Compute o ponto distante (fim) para o raycast
+    \/\/ Assume-se que tenha as mesmas coordenadas de espaço de projeção (x,y) e z = 1 (de pé no plano distante)
+    \/\/ Precisamos de desprojetá-lo para o espaço mundial
     sPos.Z = 1f;
-    var vectorFar = Vector3.Transform(sPos, invViewProj);
-    vectorFar /= vectorFar.W;
+    variação Far = Vector3.Transform(sPos, invViewProj);
+    vectorFar \/= vectorFar.W;
 
-    // Raycast from the point on the near plane to the point on the far plane and get the collision result
-    var result = simulation.Raycast(vectorNear.XYZ(), vectorFar.XYZ());
-    return result.Succeeded;
+    \/\/ Raycast do ponto no avião próximo ao ponto no avião distante e obter o resultado da colisão
+    var result = simulação. Raycast(vectorNear.XYZ(), vectorFar.XYZ());
+    resultado de retorno. Sucedida;
 }
 ```
 
-> [!Note]
-> There are multiple ways to retrieve a reference to this `Simulation` from inside one of your `ScriptComponent`:
-> - The recommended way is through a reference to a physics component, something like `myRigidBody.Simulation` or `myCollision.Simulation` as it is the fastest.
-> - Then through `SceneSystem` by calling `SceneSystem.SceneInstance.GetProcessor<PhysicsProcessor>()?.Simulation`.
-> - Or through `this.GetSimulation()`, note that the `this` is required as it is an extension method.
+> <x1\/>!Note<x2\/>
+> Existem várias maneiras de recuperar uma referência a este `Simulation` de dentro de um de seu `ScriptComponent`:
+> - A maneira recomendada é através de uma referência a um componente de física, algo como `myRigidBody.Simulation` ou `myCollision. Simulação` como é o mais rápido.
+> - Então através de `SceneSystem` chamando `SceneSystem.SceneInstance.GetProcessor<PhysicsProcessor>()?Simulação`.
+> - Ou através de `this.GetSimulation()`, note que o `this` é necessário como é um método de extensão.
 
-## See also
-* [Colliders](colliders.md)
+## Ver também
+* [Coleiras](colliders.md)

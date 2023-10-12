@@ -1,28 +1,28 @@
-# Shader stages
+# Etapas de Shader
 
-The function for each stage has a predefined name, so we recommend you don't change it.
+A função para cada etapa tem um nome predefinido, por isso recomendamos que você não altere.
 
-- `HSMain` for hull shader
-- `HSConstantMain` for patch constant function
-- `DSMain` for domain shader
-- `VSMain` for vertex shader (takes no arguments)
-- `GSMain` for geometry shader
-- `PSMain` for pixel shader (takes no arguments)
-- `CSMain` for compute shader (takes no arguments)
+- `HSMain` para shader de casco
+- `HSConstantMain` para função constante de patch
+- `DSMain` para shader de domínio
+- `VSMain` para o shader de vértice (não tem argumentos)
+- `GSMain` para o shader de geometria
+- `PSMain` para pixel shader (não tem argumentos)
+- `CSMain` para o shader de computação (não tem argumentos)
 
-These are all void methods.
+Estes são todos métodos vazios.
 
-The geometry and tessellation shaders need some kind of predefined structure as input and output. However, since Stride shaders are generic, it's impossible to know beforehand what the structure will be. As a result, these shaders use `Input` and `Output` structures that are automatically generated to fit the final shader.
+Os shaders de geometria e tessellation precisam de algum tipo de estrutura predefinida como entrada e saída. No entanto, uma vez que os shaders Stride são genéricos, é impossível saber de antemão qual será a estrutura. Como resultado, esses shaders usam `Input` e `Output` estruturas que são geradas automaticamente para caber o shader final.
 
 ## Vertex shader
 
-A vertex shader has to set the variable with the semantic `SV_Position`. In `ShaderBase`, it's `ShadingPosition`.
+Um shader de vértice tem de definir a variável com a semântica `SV_Position`. Em `ShaderBase`, é `ShadingPosition`.
 
-For example:
+Por exemplo:
 
 ```cs
-override stage void VSMain()
-{
+anular fase VSMain()
+(
 	...
 	streams.ShadingPosition = ...;
 	...
@@ -31,99 +31,99 @@ override stage void VSMain()
 
 ## Pixel shader
 
-A pixel shader has to set the variable with the semantic `SV_Target`. In `ShaderBase`, it is `ColorTarget`.
+Um shader de pixel tem de definir a variável com o semântico `SV_Target`. Em `ShaderBase`, é `ColorTarget`.
 
-For example:
+Por exemplo:
 
 ```cs
-override stage void PSMain()
-{
+anular fase PSMain()
+(
 	...
-	streams.ColorTarget = ...;
+	fluxos. ColorTarget = ...;
 	...
 }
 ```
 
-## Geometry shader
+## Sombreador de geometria
 
-An example of geometry shader:
+Um exemplo de geometria shader:
 
 ```cs
-[maxvertexcount(1)]
-void GSMain(triangle Input input[3], inout PointStream<Output> pointStream)
-{
+[conta máxima(1)]
+void GSMain (entrada de entrada de triângulo[3], inout PointStream<Output> pointStream)
+(
 	...
-	// fill the streams object
-	streams = input[0];
+	\/\/ preencher o objeto streams
+	fluxos = entrada[0];
  	...
  
-	// always append streams
-	pointStream.Append(streams);
+	\/\/ sempre apêndice fluxos
+	pointStream.Anexar(streams);
 	...
 }
 ```
 
-`Input` can be used in the method body. It behaves like the streams object and contains the same members.
+`Input` pode ser usado no corpo do método. Ele se comporta como o objeto de fluxos e contém os mesmos membros.
 
-`Output` is only used in the declaration of the method. You should append the streams object to your geometry shader output stream.
+`Output` só é usado na declaração do método. Você deve anexar os fluxos objeto ao fluxo de saída do shader geometria.
 
-## Tessellation shader
+## Sombra de Tessellation
 
-An example of a tessellation shader:
+Um exemplo de um shader de tessellation:
 
 ```cs
 [domain("tri")]
-[partitioning("fractional_odd")]
+[partitioning("fractional_odd]]
 [outputtopology("triangle_cw")]
 [outputcontrolpoints(3)]
 [patchconstantfunc("HSConstantMain")]
 [maxtessfactor(48.0)]
-void HSMain(InputPatch<Input, 3> input, out Output output, uint uCPID : SV_OutputControlPointID)
-{
+void HSMain (InputPatch<Input, 3> input, out Output, uint uCPID : SV_OutputControlPointID)
+(
 	...
-	output = streams;
+	saída = fluxos;
 }
  
-void HSConstantMain(InputPatch<Input, 3> input, const OutputPatch<Input2, 3> output, out Constants constants)
-{
+vazio HSConstant Principal (InputPatch<Input, entrada 3>, const OutputPatch<Input2, saída 3>, fora constantes Constantes)<Input, 3><Input2, 3>
+(
 	...
-	output = streams;
+	saída = fluxos;
 	...
 }
  
 [domain("tri")]
-void DSMain(const OutputPatch<Input, 3> input, out Output output, in Constants constants, float3 f3BarycentricCoords : SV_DomainLocation)
-{
+void DSMain(const OutputPatch<Input, 3> input, out Output, in Constantes constantes, float3 f3BarycentricCoords : SV_DomainLocation)
+(
 	...
-	output = streams;
+	saída = fluxos;
 	...
 }
 ```
 
-`Input` and `Input2` both behave like streams.
+`Input` e `Input2` ambos se comportam como fluxos.
 
-> [!Note]
-> Don't forget to assign `output` to `streams` at the end of your stage.
+> <x1\/>!Note<x2\/>
+> Não se esqueça de atribuir `output` a `streams` no final do seu estágio.
 
-## Compute shader
+## Shader computado
 
-An example of a compute shader:
+Um exemplo de um shader de computação:
 
 ```cs
-[numthreads(2, 3, 5)]
-void CSMain()
-{
+[numeração(2, 3, 5)]
+anular CSMain()
+(
 	...
 }
 ```
 
-You can inherit from `ComputeShaderBase` and override the `Compute` method.
+Você pode herdar de `ComputeShaderBase` e substituir o método `Compute`.
 
-## See also
+## Ver também
 
-* [Effect language](../effect-language.md)
-* [Shading language index](index.md)
-   - [Shader classes, mixins, and inheritance](shader-classes-mixins-and-inheritance.md)
-   - [Composition](composition.md)
-   - [Templates](templates.md)
-   - [Shader stage input/output automatic management](automatic-shader-stage-input-output.md)
+* [Efeito da linguagem](../effect-language.md)
+* [Índice de linguagem de sombra](index.md)
+   - [Shader classes, misturas e herança](shader-classes-mixins-and-inheritance.md)
+   - [Composição](composition.md)
+   - [Modelos](templates.md)
+   - [Shader fase de entrada \/ saída gestão automática](automatic-shader-stage-input-output.md)

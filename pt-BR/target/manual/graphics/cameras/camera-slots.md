@@ -1,73 +1,73 @@
-# Camera slots
+# Slots de câmera
 
-**Camera slots** link the [graphics compositor](../graphics-compositor/index.md) to the cameras in your scene. You bind each camera to a slot, then define which slot the compositor uses. This means you can change the [root scene](../../game-studio/manage-scenes.md) or graphics compositor without having to assign new cameras each time.
+**Camera slots** vinculam o compositor [graphics](../graphics-compositor/index.md) às câmeras em sua cena. Você liga cada câmera a um slot, então define qual slot o compositor usa. Isso significa que você pode mudar a cena [root](../../game-studio/manage-scenes.md) ou compositor gráfico sem ter que atribuir novas câmeras cada vez.
 
-You don't have to create a different camera slot for each camera. Instead, you can just change which cameras use each slot. The best practice is to disable the camera components on cameras you don't need.
+Você não precisa criar um slot de câmera diferente para cada câmera. Em vez disso, você pode simplesmente mudar quais câmeras usam cada slot. A melhor prática é desativar os componentes da câmera em câmeras que você não precisa.
 
-> [!Note]
-> Each camera slot must have a camera assigned to it. If you have an unused camera slot, delete it.
+> <x1\/>!Note<x2\/>
+> Cada slot de câmera deve ter uma câmera atribuída a ela. Se você tiver um slot de câmera não usado, exclua-o.
 >
-> You can't assign a single camera to more than one slot. If you need to do this, duplicate the camera entity and assign it to a different slot.
+> Você não pode atribuir uma única câmera a mais de um slot. Se você precisar fazer isso, duplique a entidade da câmera e atribua-a a um slot diferente.
 
-> If multiple enabled cameras in your scene use the same camera slot, the result is undefined.
+> Se várias câmeras habilitadas em sua cena usar o mesmo slot da câmera, o resultado é indefinido.
 
-## Create a camera slot
+## Criar um slot para câmera
 
-1. In the **Asset View** (in the bottom pane by default), double-click the **Graphics Compositor** asset.
+1. No **Asset View** (no painel inferior por padrão), clique duas vezes no **Graphics Compositor** ativo.
 
-   ![Graphics Compositor asset](../graphics-compositor/media/graphics-compositor-asset.png)
+   <x1\/>Gráficos Compositor asset<x2\/>
 
-   The graphics compositor editor opens.
+   O editor de compositores gráficos abre.
 
-   ![Graphics Compositor editor](../graphics-compositor/media/graphics-compositor-editor.png)
+   <x1\/>Gráfico Compositor editor<x2\/>
 
-   For more information about the graphics compositor, see the [Graphics compositor](../graphics-compositor/index.md) page.
+   Para obter mais informações sobre o compositor gráfico, consulte a página [Graphics compositor](../graphics-compositor/index.md).
 
-2. In the graphics compositor editor, on the left, under **Camera slots**, click ![Green plus button](~/manual/game-studio/media/green-plus-icon.png) (**Add**).
+2. No editor de compositores gráficos, à esquerda, sob **Camera slots**, clique em <x1\/>Green plus button<x2\/> (**Add**).
 
-   ![Camera slots](../graphics-compositor/media/graphics-compositor-camera-slots.png)
+   <x1\/>Camera slots<x2\/>
 
-   Game Studio adds a new camera slot to the list:
+   Game Studio adiciona um novo slot de câmera à lista:
 
-   ![Camera slot added](../graphics-compositor/media/camera-slot-added.png)
+   <x1\/>Camera slot adicionado <x2\/>
 
-   > [!Tip]
-   > To name a camera slot, double-click it in the list and type a new name.
+   > <x1\/>!Tip<x2\/>
+   > Para nomear um slot de câmera, clique duas vezes na lista e digite um novo nome.
 
-## Bind a camera to a camera slot
+## Ligar uma câmera para um slot de câmera
 
-1. In your scene, select the **entity** with the camera component you want to bind.
+1. Em sua cena, selecione o **entity** com o componente da câmera que você deseja ligar.
 
-2. In the **Property Grid** (on the right by default), in the **Camera** component properties, under **Slot**, select the slot you want to bind the camera to.
+2. No **Property Grid** (à direita por padrão), nas propriedades do componente **Camera**G2>, abaixo de **Slot**, selecione a ranhura que deseja ligar a câmara.
 
-   > [!Note]
-   > The drop-down menu lists camera slots from the graphics compositor selected in the [game settings](../../game-studio/game-settings.md).
+   > <x1\/>!Note<x2\/>
+   > O menu drop-down lista slots de câmera do compositor gráfico selecionado nas configurações [game](../../game-studio/game-settings.md).
 
-   ![media/graphics-compositor-overview-2.png](../graphics-compositor/media/graphics-compositor-overview-2.png)
+   <x1\/>media\/graphics-compositor-overview-2.png<x2\/>
 
-The graphics compositor matches enabled cameras to their appropriate slots each frame.
+Os jogos de compositor gráfico permitiram câmeras para seus slots apropriados cada quadro.
 
-## Create a camera and assign a camera slot from a script
+## Criar uma câmera e atribuir um slot de câmera de um script
 
-Use:
+Uso:
 
 ```cs
-var camera = new CameraComponent();
- camera.Slot = SceneSystem.GraphicsCompositor.Cameras[0].ToSlotId();
+var câmera = nova CameraComponent();
+ câmera. Slot = System Scene.GraphicsCompositor.Cameras[0].ToSlotId();
 ```
 
-To change the camera at runtime, toggle the ``Enabled`` property.
+Para alterar a câmera no tempo de execução, alterne a propriedade ``Ativado``.
 
-> [!Note]
-> Make sure you:
+> <x1\/>!Note<x2\/>
+> Certifique-se de que:
 >
-> * always have at least one enabled camera
+> * sempre tem pelo menos uma câmera habilitada
 >
-> * don't have multiple cameras enabled and assigned to the same slot at the same time
+> * não tem várias câmeras habilitadas e atribuídas ao mesmo slot ao mesmo tempo
 
-## See also
+## Ver também
 
-* [Cameras](index.md)
-* [Graphics compositor](../graphics-compositor/index.md)
-* [Game Studio — Game settings](../../game-studio/game-settings.md)
-* [Game Studio — Manage scenes](../../game-studio/manage-scenes.md)
+* [Câmeras](index.md)
+* [Compositor gráfico](../graphics-compositor/index.md)
+* [Game Studio — Configurações do jogo](../../game-studio/game-settings.md)
+* [Game Studio — Gerir cenas](../../game-studio/manage-scenes.md)

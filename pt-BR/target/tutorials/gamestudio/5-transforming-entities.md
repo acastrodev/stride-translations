@@ -1,7 +1,7 @@
-# Transforming entities
+# Entidades transformadoras
 
-In this tutorial we learn how to transform entities. There is translating, rotation and scaling. We also learn about the right handed coordinate system and how we can use snapping.
+Neste tutorial aprendemos a transformar entidades. Há tradução, rotação e escalação. Também aprendemos sobre o sistema de coordenadas à mão direita e como podemos usar o snapping.
 
-[!INCLUDE [stride-studio-note](../../includes/game-studio-xenko-note.md)]
+[! INCLUÍDO [stride-studio-note](../../includes/game-studio-xenko-note.md)]
 
-> [!Video https://www.youtube.com/embed/QNGDsnBn7ec]
+> [!Vídeo https://www.youtube.com/embed/QNGDsnBn7ec]

@@ -1,31 +1,31 @@
-# Gamma correction
+# Correção de gama
 
-<span class="badge text-bg-primary">Beginner</span>
-<span class="badge text-bg-success">Artist</span>
-<span class="badge text-bg-success">Programmer</span>
+<x1\/>Introdução<x2\/>
+<x3\/>Artista <x4\/>
+<x5\/> Programador <x6\/>
 
-All post effect calculations are made in a linear space (ie RGB space). This means doubling the color value of a pixel doubles the light it emits. This guarantees correct lighting calculations.
+Todos os cálculos de efeito pós são feitos em um espaço linear (ou seja, espaço RGB). Isso significa duplicar o valor de cor de um pixel duplica a luz que emite. Isso garante cálculos de iluminação corretos.
 
-However, real-world computer monitors don't behave this way: for dark color values they tend to emit much less light than they should. For this reason, after our other post effects have been applied, we apply **gamma correction** to transform our image from a linear space to a sRGB space (or gamma space).
+No entanto, os monitores de computador do mundo real não se comportam desta forma: para valores de cor escura eles tendem a emitir menos luz do que deveriam. Por esta razão, após nossos outros efeitos postais terem sido aplicados, aplicamos a correção **gamma** para transformar nossa imagem de um espaço linear para um espaço sRGB (ou espaço gama).
 
-A buffer in the sRGB space displays correctly on a monitor or a TV screen.
+Um buffer no espaço sRGB exibe corretamente em um monitor ou uma tela de TV.
 
-![media/gamma-correction-1.png](media/gamma-correction-1.png)
+<x1\/>media\/gamma-correction-1.png<x2\/>
 
-Non-gamma-corrected images have dark areas appear darker than they're supposed to.
+As imagens não corrigidas de gases têm áreas escuras mais escuras do que deveriam.
 
-![media/gamma-correction-2.png](media/gamma-correction-2.png)
+<x1\/>media\/gamma-correction-2.png<x2\/>
 
-## Properties
+## Propriedades
 
-| Property | Description |
+| Propriedade | Descrição |
 | -------- | ----------------------------------------------- |
-| Value | Gamma value. A typical value is around 2.2. |
+| Valor | Valor gama. Um valor típico é de cerca de 2.2. |
 
-## See also
+## Ver também
 
-* [Gamma correction (Wikipedia)](http://en.wikipedia.org/wiki/Gamma_correction)
-* [Film grain](film-grain.md)
+* [Correção de gama (Wikipedia)](http://en.wikipedia.org/wiki/Gamma_correction)
+* [Grão de filme](film-grain.md)
 * [ToneMap](tonemap.md)
-* [Vignetting](vignetting.md)
-* [Custom color transforms](custom-color-transforms.md)
+* [Vignetação](vignetting.md)
+* [Transformações de cor personalizadas](custom-color-transforms.md)

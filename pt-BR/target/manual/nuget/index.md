@@ -1,14 +1,14 @@
-# Packaging
+# Embalagem de embalagem
 
-## Introduction
+## Introdução
 
-Since 3.1, Stride is using NuGet format to pack and reference not only the code libraries, but also Stride assets.
+Desde 3.1, Stride está usando o formato NuGet para embalar e referenciar não só as bibliotecas de código, mas também os ativos Stride.
 
-As a result, you can:
-- [Create a NuGet package](create-packages.md) out of your project to share your Stride assets.
-- [Consume a NuGet package](consume-packages.md) by simply referencing it. You can then use its Stride assets.
+Como resultado, você pode:
+- [Criar um pacote NuGet](create-packages.md) fora do seu projeto para compartilhar seus ativos Stride.
+- [Consume a NuGet package](consume-packages.md) simplesmente referenciando-o. Você pode então usar seus ativos Stride.
 
-## Topics
+## Assuntos
 
-- [Consume packages](consume-packages.md)
-- [Create packages](create-packages.md)
+- [Pacotes de consumo](consume-packages.md)
+- [Criar pacotes](create-packages.md)

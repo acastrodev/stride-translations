@@ -1,30 +1,30 @@
-# Navigate in the Scene Editor
+# Navegue no Editor de Cena
 
-<span class="badge text-bg-primary">Beginner</span>
-<span class="badge text-bg-success">Level designer</span>
+<x1\/>Introdução<x2\/>
+<x3\/> Designer de nível <x4\/>
 
-You can move around the scene and change the perspective of the editor camera. The XYZ axes in the bottom left show your orientation in 3D space.
+Você pode se mover ao redor da cena e mudar a perspectiva da câmera do editor. Os eixos XYZ na parte inferior esquerda mostram sua orientação no espaço 3D.
 
-![Scene orientation gizmo](media/navigate-in-a-scene-scene-orientation-gizmo.png)
+<x1\/> Orientação da faixa<x2\/>
 
-## Move around in the scene
+## Mover-se em torno da cena
 
-There are several ways to move the editor camera around the Scene Editor.
+Existem várias maneiras de mover a câmera do editor ao redor do Editor de cena.
 
-> [!TIP]
-> Holding the **Shift** key speeds up movement.
+> <x1\/>!TIP<x2\/>
+> Segurando a tecla **Shift** acelera o movimento.
 
-### Fly
+### Voo
 
 <video controls autoplay loop height="240" width="320">
                 <source src="media/navigate-in-scene-fly-in-the-scene.mp4" type="video/mp4">
 </video>
 
-Hold the **right mouse button** and **move the mouse** to change the camera direction. Hold the **right mouse button** and use the **WASD keys** to move. This is similar to the controls of many action games.
+Segure o botão do mouse **right** e **move o mouse** para mudar a direção da câmera. Segure o botão do mouse **right** e use as teclas **WASD** para mover. Isto é semelhante aos controles de muitos jogos de ação.
 
 ### Pan
 
-Hold the **right mouse button** and the **center mouse button** and move the mouse.
+Segure o botão do mouse **right** e o botão do mouse **center** e mova o mouse.
 
 
 ### Dolly
@@ -33,121 +33,121 @@ Hold the **right mouse button** and the **center mouse button** and move the mou
                 <source src="media/dolly-camera.mp4" type="video/mp4">
 </video>
 
-To dolly (move the camera forward and backward), use the **mouse wheel**.
+Para dolly (mover a câmera para a frente e para trás), use a roda **mouse**.
 
 
-### Orbit
+### Orbitação
 
-Hold **Alt** and the **left mouse button** and move the **mouse**.
+Segure **Alt** e o botão do mouse **left** e mova o **mouse**.
 
-The point of rotation is always the center of the screen. To adjust the distance to the center, use the **mouse wheel**.
+O ponto de rotação é sempre o centro da tela. Para ajustar a distância ao centro, use a roda **mouse**.
 
-![Rotation](media/navigate-in-scene-orbital-rotation-schema.png)
+<x1\/>Rotation<x2\/>
 
 <video controls autoplay loop height="240" width="320">
                 <source src="media/navigate-in-scene-orbital-rotation.mp4" type="video/mp4">
 </video>
 
-### Focus on an entity
+### Foco em uma entidade
 
 <video controls autoplay loop height="240" width="320">
                 <source src="media/navigate-in-scene-focus-on-entity-using-f-key.mp4" type="video/mp4">
 </video>
 
-After you select an entity, press the **F** key. This zooms in on the entity and centers it in the camera editor.
+Depois de selecionar uma entidade, pressione a tecla **F**. Isso faz zoom na entidade e centra-a no editor da câmera.
 
-You can also focus by clicking the **magnifying glass icon** next to the entity in the Entity Tree.
+Você também pode se concentrar clicando no ícone de vidro **magnificante** ao lado da entidade na Árvore da Entidade.
 
-![Focus icon](media/focus-icon.png)
+<x1\/> Ícone <x2\/>
 
 
-> [!TIP]
-> Focusing and then orbiting with **Alt + left mouse button** is useful for inspecting entities.
+> <x1\/>!TIP<x2\/>
+> Focando e então orbitando com **Alt + botão esquerdo do mouse** é útil para inspecionar entidades.
 
-### Controls
+### Controles
 
-| Action | Control |
+| Acção | Controlo |
 -----------------------|--------------
-| Move | Arrow keys + right mouse button <p><br>WASDQE keys + right mouse button </p></br><p> |
-| Look around | Hold right mouse button + move mouse |
-| Dolly | Middle mouse button + right mouse button + move mouse |
-| Orbit | Alt key + left mouse button |
-| Zoom | Mouse wheel <p><br>Alt + Right mouse button + move mouse</p></br> |
-| Pan | Middle mouse button + move mouse |
-| Focus | F (with entity selected) |
+| Mexam-se | Setas + botão direito do mouse <p><x1\/>WASDQE chaves + botão direito do mouse </p></br><p> |
+| Olhe ao seu redor | Segure o botão direito do mouse + mover o mouse |
+| Dolly | Botão do mouse médio + botão direito do mouse + mover o mouse |
+| Orbitação | Alt key + botão esquerdo do mouse |
+| Zoom | Roda de rato <p><x1\/>Alt + botão direito do mouse + mover mouse</p></br> |
+| Pan | Botão do mouse médio + mover o mouse |
+| Foco | F (com entidade selecionada) |
 
-> [!TIP]
-> You can change the scene navigator controls in **Edit > Settings** under **Scene Editor > Key bindings**.
-> ![Key bindings](media/settings-key-bindings.png)
+> <x1\/>!TIP<x2\/>
+> Você pode alterar os controles do navegador de cena em **Edit > Configurações** em ** Editor de faixa > Chaves de ligação **.
+> <x3\/>Key encadernações<x4\/>
 
-## Change camera editor perspective
+## Alterar a perspectiva do editor da câmera
 
-You can change the camera editor perspective using the **view camera gizmo** in the top-right of the Scene Editor.
+Você pode alterar a perspectiva do editor de câmera usando o **view câmera gizmo** no canto superior direito do Editor de cena.
 
-![View camera gizmo](media/navigate-in-a-scene-view-camera-gizmo.png)
+<x1\/>Ver câmera gizmo<x2\/>
 
-### Snap camera to position
+### Câmera Snap para posição
 
-To change the angle of the editor camera, click the corresponding face, edge, or corner of the **view camera gizmo**.
+Para alterar o ângulo da câmera do editor, clique no rosto, borda ou canto correspondente da câmera **view gizmo**.
 
-| Click | Camera position |
+| Clique em | Posição da câmara |
 ---------|--------------
-| Face | Faces the selected face |
-| Edge | Faces the two adjacent faces at a 45° angle |
-| Corner | Faces the three adjacent faces at a 45° angle |
+| Cara | Enfrenta a cara selecionada |
+| Borda | Enfrenta as duas faces adjacentes a um ângulo de 45° |
+| Corner | Enfrenta as três faces adjacentes a um ângulo de 45° |
 
 <video controls autoplay loop height="240" width="320">
                 <source src="media/navigate-in-scene-change-view-angle.mp4" type="video/mp4">
 </video>
 
-## Camera options
+## Opções de câmera
 
-> [!Note]
-> This page explains how to use the Scene Editor camera. For information about how to use cameras in your game, see [Graphics — Cameras](../graphics/cameras/index.md).
+> <x1\/>!Note<x2\/>
+> Esta página explica como usar a câmera Scene Editor. Para obter informações sobre como usar câmeras em seu jogo, veja [Graphics — Cameras](../graphics/cameras/index.md).
 
-To display the Scene Editor camera options, click the **camera icon** in the top-right of the Scene Editor.
+Para exibir as opções de câmera do Editor de cena, clique no ícone **camera** no canto superior direito do Editor de cena.
 
-![Switch to orthographic](../get-started/media/switch-to-orthographic.png)
+<x1\/>Switch para ortográfico<x2\/>
 
-### Perspective and orthographic views
+### Visão visual e ortográfico
 
-**Perspective view** is a "real-world" perspective of the objects in your scene. In this view, objects close to the camera appear larger, and lines of identical lengths appear different due to foreshortening, as in reality.
+** A visão perspectiva** é uma perspectiva do "mundo real" dos objetos em sua cena. Nesta visão, os objetos próximos à câmera aparecem maiores, e as linhas de comprimentos idênticos aparecem diferentes devido ao foreshortening, como na realidade.
 
-In **orthographic view**, objects are always the same size, no matter how far their distance from the camera. Parallel lines never touch, and there's no vanishing point. It's easy to tell if objects are lined up exactly in orthographic view.
+Em **ortográfico view**, os objetos são sempre do mesmo tamanho, não importa quão longe sua distância da câmera. Linhas paralelas nunca tocam, e não há ponto de fuga. É fácil dizer se os objetos estão alinhados exatamente na vista ortográfica.
 
-![Perspective and orthographic diagram](media/perspective-orthographic-diagram.png)
+<x1\/> Diagrama perspectivo e ortográfico<x2\/>
 
-![Perspective and orthographic views](media/perspective-and-orthographic-views.png)
+<x1\/> Pontos de vista perspectivos e ortográficos<x2\/>
 
-You can also switch between perspective and orthographic views by clicking the **view camera gizmo** as it faces you.
+Você também pode alternar entre a perspectiva e as vistas ortográficas clicando no **view câmera gizmo** como ele enfrenta você.
 
 <video controls autoplay loop height="240" width="320">
               <source src="media/navigate-in-scene-switch-projection-mode.mp4" type="video/mp4">
 </video>
 
-#### Field of view
+#### Campo de visão
 
-You can change the camera field of view. This changes the camera frustum, and has the effect of zooming in and out of the scene. At high settings (90 and above), the field of view creates stretched "fish-eye lens" views. The default setting is 45.
+Você pode alterar o campo de visão da câmera. Isso muda a câmera frustum, e tem o efeito de zoom dentro e fora da cena. Em altas configurações (90 e acima), o campo de visão cria vistas "olho-peixe" esticadas. A configuração padrão é 45.
 
-#### Near and far planes
+#### Aviões próximos e distantes
 
-The near and far planes determine where the camera's view begins and ends.
+Os planos próximos e distantes determinam onde a visão da câmera começa e termina.
 
-* The **near plane** is the closest point the camera can see. The default setting is 0.1. Objects before this point aren't drawn.
+* O **near plan** é o ponto mais próximo que a câmera pode ver. A configuração padrão é 0.1. Os objetos antes deste ponto não são desenhados.
 
-* The **far plane**, also known as the draw distance, is the furthest point the camera can see. Objects beyond this point aren't drawn. The default setting is 1000.
+* O plano **far**, também conhecido como distância de empate, é o ponto mais distante que a câmera pode ver. Os objetos além deste ponto não são desenhados. A configuração padrão é 1000.
 
-Game Studio renders the area between the near and far planes.
+Game Studio torna a área entre os planos próximos e distantes.
 
-![Camera position](../get-started/media/camera-position.png)
+<x1\/> Camera position<x2\/>
 
-#### Camera speed
+#### Velocidade da câmera
 
-The **camera speed** setting changes how quickly the camera moves in the editor.
+A configuração **camera speed** muda a velocidade da câmera no editor.
 
-## See also
+## Ver também
 
-* [Create and open a scene](create-a-scene.md)
-* [Load scenes](load-scenes.md)
-* [Add entities](add-entities.md)
-* [Manage entities](manage-entities.md)
+* [Criar e abrir uma cena](create-a-scene.md)
+* [Cenas de carga](load-scenes.md)
+* [Adicionar entidades](add-entities.md)
+* [Gerenciar entidades](manage-entities.md)

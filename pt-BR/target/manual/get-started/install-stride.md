@@ -1,99 +1,99 @@
-# Install Stride
+# Instalar o Stride
 
-<span class="badge text-bg-primary">Beginner</span>
+<x1\/>Introdução<x2\/>
 
-1. Download the Stride installer (**StrideSetup.exe**) from the [Stride website](http://stride3d.net/download/).
+1. Baixe o instalador Stride (**StrideSetup.exe**) do [Stride website](http://stride3d.net/download/).
 
-2. Double-click the **StrideSetup.exe** file.
+2. Clique duas vezes no arquivo **StrideSetup.exe**.
 
-   The **Stride Setup Wizard** opens.
+   O **Stride Setup Wizard** abre.
 
-3. Stride depends on the .NET Runtime. If you don't have the particular version it needs, Stride prompts you to install it.
+3. Stride depende do tempo de execução .NET. Se você não tem a versão em particular que precisa, Stride solicita que você a instale.
 
-   ![Prerequisites installer](media/prerequisites-installer.png)
+   <x1\/> Pré-requisitos instalador<x2\/>
 
-   Click **Next** and follow the prompts.
+   Clique em **Next** e siga as instruções.
 
-   > [!Note]
-   > Alternatively, you can [download the .NET Framework from the Microsoft Download Center](https://dotnet.microsoft.com/download/dotnet-framework/thank-you/net472-web-installer) and restart the Stride installer.
+   > <x1\/>!Note<x2\/>
+   > Alternativamente, você pode [ baixar o .NET Framework do Microsoft Download Center](https://dotnet.microsoft.com/download/dotnet-framework/thank-you/net472-web-installer) e reiniciar o instalador Stride.
 
-4. The **Stride Setup Wizard** opens.
+4. O **Stride Setup Wizard** abre.
 
-   ![Stride Setup Wizard](media/install-stride-setup-wizard.png)
+   <x1\/>Stride Setup Wizard<x2\/>
 
-   Click **Next**.
+   Clique em **Next**.
 
-   The **Stride License Agreement** window opens.
+   A janela **Stride License Agreement** é aberta.
 
-   ![Stride license agreement window](media/install-stride-license-agreement.png)
+   <x1\/>Stride licença concordância janela<x2\/>
 
-   Click **Accept**.
+   Clique em **Accept**.
 
-5. The **Stride installation type** window opens.
+5. A janela **Stride installation type** é aberta.
 
-   ![Stride installation type window](media/install-stride-installation-type.png)
+   <x1\/>Stride tipo de instalação janela<x2\/>
 
-   Select an installation type and click **Next**.
+   Selecione um tipo de instalação e clique em **Next**.
 
-6. The **Select installation folder** window opens.
+6. A pasta de instalação **Select** abre a janela.
 
-   ![Select installation folder window](media/install-stride-select-installation-folder.png)
+   <x1\/>Select installation folder window<x2\/>
 
-   Select a folder to install Stride to and click **Next**.
+   Selecione uma pasta para instalar o Stride e clique em **Next**.
 
-7. The **Create application shortcuts** window opens.
+7. A janela **Criar atalhos de aplicação** abre.
 
-   ![Create application shortcuts window](media/install-stride-create-application-shortcuts.png)
+   <x1\/>Criar atalhos de aplicação janela<x2\/>
 
-   Choose which shortcuts you want Stride to create, and click **Next**.
+   Escolha quais atalhos você deseja que o Stride crie e clique em **Next**.
 
-8. The **Ready to Install** window opens.
+8. A janela **Ready to Install** abre.
 
-   ![Ready to install window](media/install-stride-ready-to-install.png)
+   <x1\/> Pronto para instalar janela<x2\/>
 
-   Click **Install**.
+   Clique em **Install**.
 
-9. Installation begins.
+9. A instalação começa.
 
-   ![Installation status](media/install-stride-installation-status.png)
+   <x1\/> estado de integração<x2\/>
 
-   After the installer closes, Stride creates shortcuts in locations you selected and the **Stride Launcher** opens.
+   Depois que o instalador fecha, Stride cria atalhos em locais selecionados e o **Stride Launcher** abre.
 
-   ![Stride Launcher](media/stride-launcher.png)
+   <x1\/>Stride Launcher<x2\/>
 
-   The Stride Launcher prompts you to install the latest version of Stride.
+   O Stride Launcher solicita que você instale a versão mais recente do Stride.
 
-   ![No version installed](media/stride-launcher-install-last-version.png)
+   <x1\/> Nenhuma versão instalada <x2\/>
 
-   Click **Yes**.
+   Clique em ** Sim**.
 
-10. The Stride Launcher asks if you want to install the Visual Studio integration. This lets you edit shaders directly from Visual Studio and provides syntax highlighting, live code analysis with validation, error-checking, and navigation. Installing the integration isn't mandatory, but we recommend it.
+10. O Stride Launcher pergunta se você quer instalar a integração Visual Studio. Isso permite editar shaders diretamente do Visual Studio e fornece destaque sintaxe, análise de código ao vivo com validação, verificação de erros e navegação. Instalar a integração não é obrigatório, mas recomendamos.
 
-   ![Install Visual Studio integration](media/install-VS-plug-in-prompt.png)
+   <x1\/>Install Visual Studio integration<x2\/>
 
-11. Windows confirms that Stride can make changes to your computer.
+11. O Windows confirma que o Stride pode fazer alterações no seu computador.
 
-   ![Prerequisites installer](media/prerequsites-installer2.png)
+   <x1\/> Pré-requisitos instalador<x2\/>
 
-   Click **Yes**.
+   Clique em ** Sim**.
 
-12. The Stride Launcher checks if the prerequisite **Visual C++ Redistributable** is installed. If it's not installed, follow the prompts to install it.
+12. O Stride Launcher verifica se o pré-requisito **Visual C++ Redistributable** está instalado. Se não estiver instalado, siga as instruções para instalá-lo.
 
-13. The Stride Launcher checks if the prerequisite **Build Tools for Visual Studio** is installed. If you have Visual Studio, then this is already installed. If it's not installed, follow the prompts to install it.
+13. O Stride Launcher verifica se o pré-requisito **Build Tools for Visual Studio** está instalado. Se você tem Visual Studio, então isso já está instalado. Se não estiver instalado, siga as instruções para instalá-lo.
 
-   ![Installing VS build tools](media/installing-vs-build-tools.png)
+   <x1\/>Instalando ferramentas de compilação VS<x2\/>
 
-   > [!Note]
-   > Windows uses the Visual Studio installer to install **Build Tools for Visual Studio**, but it doesn't install Visual Studio.
+   > <x1\/>!Note<x2\/>
+   > O Windows usa o instalador do Visual Studio para instalar **Build Tools for Visual Studio**, mas não instala o Visual Studio.
 
-Stride is now installed and ready to use.
+Stride agora está instalado e pronto para usar.
 
-> [!Note]
+> <x1\/>!Note<x2\/>
 
-> If you don't install the prerequisites, Stride won't run. In this case, you can download and install the prerequisites separately. For instructions, see [Troubleshooting — Stride doesn't run](../troubleshooting/stride-doesnt-run.md).
+> Se você não instalar os pré-requisitos, Stride não funcionará. Neste caso, você pode baixar e instalar os pré-requisitos separadamente. Para obter instruções, veja [Troubleshooting — Stride não executa](../troubleshooting/stride-doesnt-run.md).
 
-> Alternatively, uninstall Stride, restart the Stride installer, and install the prerequisites when prompted.
+> Alternativamente, desinstale Stride, reinicie o instalador Stride e instale os pré-requisitos quando solicitado.
 
-## What's next?
+## O que se segue?
 
-* [Launch Stride](launch-stride.md)
+* [Stride de lançamento](launch-stride.md)

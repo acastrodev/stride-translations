@@ -1,18 +1,18 @@
-# Editor properties
-You can find this sample in the tutorial project: **Menu** &rarr; **Editor properties**
+# Propriedades do editor
+Você pode encontrar esta amostra no projeto tutorial: **Menu** → ** Propriedades do editor**
 
-## Explanation
-This C# Beginner tutorial covers how to expose editor properties for Stride Game Studio.
+## Explicação
+Este tutorial C# Beginner abrange como expor propriedades do editor para Stride Game Studio.
 
-By creating a public variable at the top of our script, we can create editor properties. Some of the most common properties are demonstrated. We can also create public variables that are not shown in the editor.
+Ao criar uma variável pública no topo do nosso script, podemos criar propriedades do editor. Algumas das propriedades mais comuns são demonstradas. Também podemos criar variáveis públicas que não são mostradas no editor.
 
-![Editor properties](media/editor-properties2.webp)
+<x1\/> Propriedades do editor<x2\/>
 
-> [!Video https://www.youtube.com/embed/GPiWbfsG5F0]
+> <x1\/>!Vídeo https:\/\/www.youtube.com\/embed\/GPiWbfsG5F0<x2\/>
 
-## Code
-[!code-csharp[Entity](../../../../stride/samples/Tutorials/CSharpBeginner/CSharpBeginner/CSharpBeginner.Game/Code/PropertiesDemo.cs)]
+## Código
+[!code-csharp[Entidade](../../../../stride/samples/Tutorials/CSharpBeginner/CSharpBeginner/CSharpBeginner.Game/Code/PropertiesDemo.cs)]
 
-The code above will result in the following properties inside Stride game studio.
+O código acima resultará nas seguintes propriedades dentro do estúdio de jogo Stride.
 
-![Editor properties](media/editor-properties.webp)
+<x1\/> Propriedades do editor<x2\/>

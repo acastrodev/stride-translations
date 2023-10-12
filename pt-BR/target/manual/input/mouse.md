@@ -1,119 +1,119 @@
 # Mouse
 
-<span class="badge text-bg-primary">Beginner</span>
-<span class="badge text-bg-success">Programmer</span>
+<x1\/>Introdução<x2\/>
+<x3\/> Programador <x4\/>
 
-The **mouse** is a common input device for desktop games.
+O **mouse** é um dispositivo de entrada comum para jogos de desktop.
 
-There are two ways to handle mouse input in Stride:
+Existem duas maneiras de lidar com a entrada do mouse em Stride:
 
-* Query **mouse button states**.
-* For cross-platform games that target mobile devices, you can use [PointerEvent](xref:Stride.Input.PointerEvent) lists.
-   For more information, see [Pointers](pointers.md).
+* Consulta **Mouse botão estados**.
+* Para jogos de plataforma cruzada que segmentam dispositivos móveis, você pode usar listas [PointerEvent](xref:Stride.Input.PointerEvent).
+   Para mais informações, consulte [Pointers](pointers.md).
 
-You can access **mouse button states** and **pointer events list** from the [Input manager](xref:Stride.Input.InputManager).
+Você pode acessar os estados do botão **mouse** e **pointer lista de eventos** a partir do [ Gerenciador de entrada](xref:Stride.Input.InputManager).
 
-| Class | Project type | When to use |
+| Classe | Tipo de projeto | Quando usar |
 | --- | --- | --- |
-| [InputManager](xref:Stride.Input.InputManager) | Desktop only | For desktop games, you usually handle input with multiple mouse buttons. This means you should use **mouse button states**. |
-| [PointerEvent](xref:Stride.Input.PointerEvent) | Cross-platform | For mobile games, you usually simulate pointers with just the left mouse button. This means you can treat the mouse input like pointers. There's no need to create separate mouse-specific controls. For more information, see [Pointers](pointers.md). |
+| [InputManager](xref:Stride.Input.InputManager) | Apenas Desktop | Para jogos de desktop, você geralmente lida com entrada com vários botões do mouse. Isso significa que você deve usar **mouse estados do botão**. |
+| [Evitação de pontos](xref:Stride.Input.PointerEvent) | Plataforma transversal | Para jogos móveis, você geralmente simula ponteiros com apenas o botão esquerdo do mouse. Isso significa que você pode tratar a entrada do mouse como ponteiros. Não há necessidade de criar controles específicos do mouse separados. Para mais informações, consulte [Pointers](pointers.md). |
 
-For more information about these options, see the [Input index](index.md).
+Para obter mais informações sobre essas opções, consulte o [Input index](index.md).
 
-## Check mouse availability
+## Verificar disponibilidade do mouse
 
-Before handling mouse input, use [Input.HasMouse](xref:Stride.Input.InputManager.HasMouse) to check if a mouse is connected.
+Antes de manusear a entrada do mouse, use [Input.HasMouse](xref:Stride.Input.InputManager.HasMouse) para verificar se um mouse está conectado.
 
-## Get the mouse position
+## Obter a posição do mouse
 
-You can get the mouse position in normalized or absolute coordinates.
+Você pode obter a posição do mouse em coordenadas normalizadas ou absolutas.
 
-### Normalized coordinates
+### Coordenadas normalizadas
 
-@'Stride.Input.InputManager.MousePosition' returns the mouse pointer position in **normalized** X, Y coordinates instead of actual screen sizes in pixels. This means the pointer position adjusts to any resolution and you don't have to write separate code for different resolutions.
+@'Stride.Input.InputManager.MousePosition' retorna a posição do ponteiro do mouse em **normalized** X, Y coordena em vez de tamanhos de tela reais em pixels. Isso significa que a posição do ponteiro se ajusta a qualquer resolução e você não precisa escrever código separado para diferentes resoluções.
 
-* (0,0): the pointer is in the top-left corner of the screen
-* (1,1): the pointer is in the bottom-right corner of the screen
+* (0,0): o ponteiro está no canto superior esquerdo da tela
+* (1,1): o ponteiro está no canto inferior direito da tela
 
-### Absolute coordinates
+### Coordenadas absolutas
 
-[InputManager.AbsoluteMousePosition](xref:Stride.Input.InputManager.AbsoluteMousePosition) returns the mouse pointer position in absolute X and Y coordinates (the actual screen size in pixels). For example, if the pointer is in the top-left corner of the screen, the values are (0,0). If the pointer is in the bottom-right corner, the values depends on the screen resolution (eg 1280, 720).
+[InputManager.AbsoluteMousePosition](xref:Stride.Input.InputManager.AbsoluteMousePosition) retorna a posição do ponteiro do mouse em coordenadas X e Y absolutas (o tamanho real da tela em pixels). Por exemplo, se o ponteiro estiver no canto superior esquerdo da tela, os valores são (0,0). Se o ponteiro estiver no canto inferior direito, os valores dependem da resolução da tela (por exemplo 1280, 720).
 
-> [!Tip]
-> To get the actual size of the screen, access [IPointerDevice.SurfaceSize](xref:Stride.Input.IPointerDevice.SurfaceSize). For example:
+> <x1\/>!Tip<x2\/>
+> Para obter o tamanho real da tela, acesse [IPointerDevice. SurfaceSize](xref:Stride.Input.IPointerDevice.SurfaceSize). Por exemplo:
 > ```cs
-> var surfaceSize = Input.Mouse.SurfaceSize;
+> superfície da vareta Tamanho = Entrada.Mouse.SurfaceSize;
 > ```
 
-## Query mouse button state changes
+## Consultar alterações de estado do botão do mouse
 
-You can use the mouse buttons to trigger actions in a project. For example, in first-person shooter games, the left mouse button is commonly used to shoot.
+Você pode usar os botões do mouse para ativar ações em um projeto. Por exemplo, em jogos de tiro em primeira pessoa, o botão esquerdo do mouse é comumente usado para atirar.
 
-The [Input manager](xref:Stride.Input.InputManager) has several methods that check mouse button states (_Pressed_, _Down_, or _Released_):
+O [Input manager](xref:Stride.Input.InputManager) tem vários métodos que verificam os estados do botão do mouse (_Pressed_, _Down_, ou _Released_):
 
-| Method | Description |
+| Método | Descrição |
 | ------ | --- 
-| [HasDownMouseButtons](xref:Stride.Input.InputManager.HasDownMouseButtons) | Checks if one or more mouse buttons are currently pressed down. |
-| [HasPressedMouseButtons](xref:Stride.Input.InputManager.HasPressedMouseButtons) | Checks if one or more mouse buttons were pressed in the last update. |
-| [HasReleasedMouseButtons](xref:Stride.Input.InputManager.HasReleasedMouseButtons) | Checks if one or more mouse buttons were released in the last update. |
-| [IsMouseButtonDown (MouseButton)](xref:Stride.Input.InputManager.IsMouseButtonDown\(Stride.Input.MouseButton\)) | Checks if a specified mouse button is currently pressed down. |
-| [IsMouseButtonPressed (MouseButton)](xref:Stride.Input.InputManager.IsMouseButtonPressed\(Stride.Input.MouseButton\)) | Checks if a specified mouse button was pressed in the last update. |
-| [IsMouseButtonReleased (MouseButton)](xref:Stride.Input.InputManager.IsMouseButtonReleased\(Stride.Input.MouseButton\)) | Checks if a specified mouse button was released in the last update. |
+| [Botões de uso HasDownMouse](xref:Stride.Input.InputManager.HasDownMouseButtons) | Verifica se um ou mais botões do mouse estão pressionados atualmente. |
+| [Botões de uso rápido](xref:Stride.Input.InputManager.HasPressedMouseButtons) | Verifica se um ou mais botões do mouse foram pressionados na última atualização. |
+| [HasReleasedMouseButtons](xref:Stride.Input.InputManager.HasReleasedMouseButtons) | Verifica se um ou mais botões do mouse foram liberados na última atualização. |
+| [IsMouseButtonDown (MouseButton)](xref:Stride.Input.InputManager.IsMouseButtonDown\(Stride.Input.MouseButton\)) | Verifica se um botão do mouse especificado é pressionado atualmente. |
+| [IsMouse Button Pressionado (MouseButton)](xref:Stride.Input.InputManager.IsMouseButtonPressed\(Stride.Input.MouseButton\)) | Verifica se um botão do mouse especificado foi pressionado na última atualização. |
+| [IsMouseButtonReleased (MouseButton)](xref:Stride.Input.InputManager.IsMouseButtonReleased\(Stride.Input.MouseButton\)) | Verifica se um botão do mouse especificado foi liberado na última atualização. |
 
-### Mouse delta
+### Rato delta
 
-Use [InputManager.MouseDelta](xref:Stride.Input.InputManager.MouseDelta) to get the change in mouse position in normalized coordinates since the last update. You can use this to analyze mouse movement speed and direction.
+Use [InputManager.MouseDelta](xref:Stride.Input.InputManager.MouseDelta) para obter a mudança na posição do mouse em coordenadas normalizadas desde a última atualização. Você pode usar isso para analisar a velocidade e direção do movimento do mouse.
 
 ### Mouse wheel delta
 
-You can use the mouse wheel to trigger actions in a project. For example, in a first-person shooter game, moving the mouse wheel might switch weapons or zoom a camera.
+Você pode usar a roda do mouse para ativar ações em um projeto. Por exemplo, em um jogo de tiro em primeira pessoa, mover a roda do mouse pode mudar armas ou ampliar uma câmera.
 
-The [InputManager.MouseWheelDelta](xref:Stride.Input.InputManager.MouseWheelDelta) returns a positive value when the user scrolls forwards and a negative value when the user scrolls backwards. A value of `0` indicates no movement.
+O [InputManager.MouseWheelDelta](xref:Stride.Input.InputManager.MouseWheelDelta) retorna um valor positivo quando o usuário rola para a frente e um valor negativo quando o usuário rola para trás. Um valor de `0` indica nenhum movimento.
 
-## Lock the mouse position
+## Bloquear a posição do mouse
 
-For some projects, the user needs to move the mouse cursor beyond the borders of the screen. For example, first-person shooter games usually need 360-degree camera rotation. In these cases, you also probably want the mouse cursor to be hidden.
+Para alguns projetos, o usuário precisa mover o cursor do mouse além das fronteiras da tela. Por exemplo, jogos de tiro em primeira pessoa geralmente precisam de rotação de câmera de 360 graus. Nestes casos, você também provavelmente quer que o cursor do mouse seja oculto.
 
-You can lock the mouse position and hide the cursor with the following properties and methods:
+Você pode bloquear a posição do mouse e ocultar o cursor com as seguintes propriedades e métodos:
 
-| Method or property | Description |
+| Método ou propriedade | Descrição |
 | --- | --- |
-| [LockMousePosition(Boolean)](xref:Stride.Input.InputManager.LockMousePosition\(System.Boolean\)) | Locks the mouse position until the next call to the [UnlockMousePosition()](xref:Stride.Input.InputManager.UnlockMousePosition) event. |
-| [UnlockMousePosition()](xref:Stride.Input.InputManager.UnlockMousePosition) | Unlocks the mouse position locked by the [LockMousePosition(Boolean)](xref:Stride.Input.InputManager.LockMousePosition\(System.Boolean\)) event. |
-| [IsMousePositionLocked](xref:Stride.Input.InputManager.IsMousePositionLocked) | Checks if the mouse position is locked. |
+| [LockMousePosition (Boolean)](xref:Stride.Input.InputManager.LockMousePosition\(System.Boolean\)) | Bloqueia a posição do mouse até a próxima chamada para o evento [UnlockMousePosition()](xref:Stride.Input.InputManager.UnlockMousePosition). |
+| [UnlockMousePosition()](xref:Stride.Input.InputManager.UnlockMousePosition) | Desbloqueia a posição do mouse bloqueada pelo evento [LockMousePosition(Boolean)](xref:Stride.Input.InputManager.LockMousePosition\(System.Boolean\)). |
+| [IsMousePositionLocked](xref:Stride.Input.InputManager.IsMousePositionLocked) | Verifica se a posição do mouse está bloqueada. |
 
-> [!Tip]
-> You can get or set mouse visibility with [GameWindow.IsMouseVisible](xref:Stride.Games.GameWindow.IsMouseVisible).
+> <x1\/>!Tip<x2\/>
+> Você pode obter ou definir a visibilidade do mouse com [GameWindow.IsMouseVisible](xref:Stride.Games.GameWindow.IsMouseVisible).
 
-## Example code
+## Exemplo de código
 
 ```cs
-public class MouseInputScript : SyncScript
-{
-	public override void Update()
-	{
-		//If the left mouse button is pressed in this update, do something.
-		if (Input.IsMouseButtonDown(MouseButton.Left))
-		{   
+classe pública MouseInputScript : Sincronização
+(
+	atualização()
+	(
+		\/\/Se o botão esquerdo do mouse for pressionado nesta atualização, faça alguma coisa.
+		se (Input.IsMouseButtonDown (MouseButton.Left))
+		(   
 		}
-		//If the middle mouse button has been pressed since the last update, do something.
-		if (Input.IsMouseButtonPressed(MouseButton.Middle))
-		{  
+		\/\/Se o botão do meio do mouse foi pressionado desde a última atualização, faça alguma coisa.
+		se (Input.IsMouseButtonPressed (MouseButton.Middle))
+		(  
 		}
 
-		//If the mouse moved more than 0.2 units of the screen size in X direction, do something.
-		if (Input.MouseDelta.X > 0.2f)
-		{
+		\/\/Se o mouse moveu mais de 0,2 unidades do tamanho da tela na direção X, faça algo.
+		se (Input.MouseDelta.X > 0,2f)
+		(
 		}
 		
 	}
 }
 ```
 
-## See also
+## Ver também
 
-* [Pointers](pointers.md)
-* [Virtual buttons](virtual-buttons.md)
-* [Keyboard](keyboards.md)
+* [Pontos](pointers.md)
+* [Botões virtuais](virtual-buttons.md)
+* [Teclado](keyboards.md)
 * [Gamepads](gamepads.md)
-* [Input overview](index.md)
+* [Visão geral da entrada](index.md)

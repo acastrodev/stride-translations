@@ -1,43 +1,43 @@
-# Development Requirements
+# Requisitos de Desenvolvimento
 
-## General requirements
+## Requisitos gerais
 
-To develop projects with Stride, you need:
+Para desenvolver projetos com a Stride, você precisa:
 
-| Requirement | Specifications |
+| Exigência | Especificações |
 |-----------------|----------------
-| Hard drive space | 5GB |
-| Operating system | Windows 10, 11 <small class="text-secondary">[see (1)]</small> |
+| Espaço de disco rígido | 5 GB |
+| Sistema operacional | Windows 10, 11 <x1\/><x2\/>see (1)<x3\/><x4\/> |
 | CPU | x64 |
-| GPU | Direct3D 10+ compatible GPU |
-| RAM | 4GB (minimum), 8GB (recommended) <small class="text-secondary">[see (2)]</small> |
+| GPU | GPU compatível Direct3D 10+ |
+| RAM | 4GB (mínimo), 8GB (recomendado) <x1\/><x2\/>see (2)<x3\/><x4\/> |
 
-(1) Earlier versions of Windows _may_ work but are untested.
+(1) As versões anteriores do Windows _may_ funcionam mas não são testadas.
 
-(2) RAM requirements vary depending on your project:
-* Developing simple 2D applications doesn't require much RAM.
-* Developing 3D games with lots of assets requires larger amounts of RAM.
+(2) Os requisitos de RAM variam dependendo do seu projeto:
+* Desenvolver aplicações 2D simples não requer muita RAM.
+* Desenvolver jogos 3D com muitos ativos requer grandes quantidades de RAM.
 
 
-## Mobile development requirements
+## Requisitos de desenvolvimento móvel
 
-To develop for mobile platforms, you also need:
+Para desenvolver para plataformas móveis, você também precisa:
 
-| Platform | Requirements |
+| Plataforma | Requisitos |
 |----------|-------
-| Android | Xamarin <small class="text-secondary">[see (3)]</small> |
-| iOS | Mac computer, Xamarin <small class="text-secondary">[see (3)]</small> |
+| Android | Xamarin <x1\/><x2\/>see (3)<x3\/><x4\/> |
+| iOS | Computador Mac, Xamarin <x1\/><x2\/>see (3)<x3\/><x4\/> |
 
-(3) Xamarin is included with Visual Studio installations. For instructions about how to install Xamarin with Visual Studio, see [this MSDN page](https://docs.microsoft.com/en-us/visualstudio/cross-platform/setup-and-install).
+(3) Xamarin está incluído nas instalações do Visual Studio. Para obter instruções sobre como instalar Xamarin com Visual Studio, consulte [esta página MSDN](https://docs.microsoft.com/en-us/visualstudio/cross-platform/setup-and-install).
 
-## Running Stride Games
+## Jogos de corrida
 
-To run games made with Stride, you need:
+Para executar jogos feitos com Stride, você precisa:
 
-- .NET 6 if your application is not [self-contained](https://learn.microsoft.com/en-us/dotnet/core/deploying/#publish-self-contained)
-- DirectX11 (included with Windows 10 and later), OpenGL, or Vulkan depending on the platform, and the graphics API override set in your `.csproj`
-- Visual C++ 2015 runtimes (x86 and/or x64, depending on what you set in your project properties in Visual Studio)
+- . NET 6 se a sua aplicação não for [auto-suficiente](https://learn.microsoft.com/en-us/dotnet/core/deploying/#publish-self-contained)
+- DirectX11 (incluído com Windows 10 e posterior), OpenGL, ou Vulkan dependendo da plataforma, e a substituição da API gráfica definida em seu `.csproj`
+- Tempos de execução Visual C++ 2015 (x86 e\/ou x64, dependendo do que você estabeleceu em suas propriedades do projeto no Visual Studio)
 
-## Supported Platforms
+## Plataformas suportadas
 
-For information about platforms Stride supports, see [Platforms](../platforms/index.md).
+Para obter informações sobre plataformas Stride suporta, veja [Platforms](../platforms/index.md).

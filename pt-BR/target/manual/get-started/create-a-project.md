@@ -1,90 +1,90 @@
-# Create a project
+# Criar um projeto
 
-<span class="badge text-bg-primary">Beginner</span>
+<x1\/>Introdução<x2\/>
 
-This page explains how to:
+Esta página explica como:
 
-* create a new empty project
-* create a project based on a template or sample
+* criar um novo projeto vazio
+* criar um projeto baseado em um modelo ou amostra
 
-**Templates** are projects that contain just the necessary elements to start working on a game.
+**Templates** são projetos que contêm apenas os elementos necessários para começar a trabalhar em um jogo.
 
-**Samples** are complete games, which you can learn from or base a new game on.
+**Samples** são jogos completos, que você pode aprender ou basear um novo jogo em.
 
-## Create an empty project
+## Criar um projeto vazio
 
-An **empty project** is project that contains only the bare minimum to make a game: a simple scene with a light, camera, and script to move the camera, plus a preconfigured rendering pipeline. This is good when you want to start your game from scratch without elements you don't need.
+Um projeto **empty** é projeto que contém apenas o mínimo nu para fazer um jogo: uma cena simples com uma luz, câmera e script para mover a câmera, além de um pipeline de renderização pré-configurado. Isso é bom quando você quer começar o seu jogo do zero sem elementos que você não precisa.
 
-To create an empty project:
+Para criar um projeto vazio:
 
-1. In the **Stride Launcher**, click **Start** to start Game Studio.
+1. No **Stride Launcher**, clique em **Start** para iniciar o Game Studio.
 
-   The **New/open project** dialog opens.
+   A caixa de diálogo **New\/open project** é aberta.
 
-   ![New Project dialog](media/create-project-new-open-project-window.png)
+   <x1\/> Novo Projeto diálogo<x2\/>
 
-   You can also open a new project in Game Studio from **File > New**.
+   Você também pode abrir um novo projeto no Game Studio de **File > New**.
 
-2. Select **New Game**.
+2. Selecione ** Novo Jogo **.
 
-3. In the **Name** and **Location** fields, specify a name for the project and the folder to save it in.
+3. Nos campos **Name** e **Location**, especifique um nome para o projeto e a pasta para salvá-lo.
 
-4. Click **Select**.
+4. Clique em **Select**.
 
-   The **Create a new game** dialog opens.
+   O **Criar um novo jogo ** diálogo abre.
 
-   ![Create a new game dialog](media/create-project-create-new-game.png)
+   <x1\/>Criar um novo jogo diálogo<x2\/>
 
-5. In the **Namespace** field, specify the namespace you want to use. If you don't know what your namespace should be, leave it as default.
+5. No campo **Namespace**, especifique o namespace que você deseja usar. Se você não sabe qual deve ser o seu namespace, deixe-o como padrão.
 
-6. Under **Platforms**, select the platforms you want your game to support.
+6. Em **Platforms**, selecione as plataformas que você deseja que seu jogo suporte.
 
-   > [!Note]
-   >    >  To support iOS and Android, you need to install <a href="https://www.xamarin.com/studio" target="_blank">Xamarin</a> (free if you have Visual Studio).
+   > <x1\/>!Note<x2\/>
+   > > Para suportar iOS e Android, você precisa instalar <x1\/>Xamarin<x2\/> (livre se você tem Visual Studio).
 
-   If your development system is missing prerequisites for any of the platforms you select, Stride displays a warning.
+   Se o seu sistema de desenvolvimento está faltando pré-requisitos para qualquer uma das plataformas que você selecionar, Stride exibe um aviso.
 
-7. Under **Asset Packs**, you can select additional assets to include in your project. These include assets such as animations and materials. The asset packs are fun to play with when you're learning how to use Stride, but they're not necessary.
+7. Em **Asset Packs**, você pode selecionar ativos adicionais para incluir em seu projeto. Estes incluem ativos como animações e materiais. Os pacotes de ativos são divertidos para brincar quando você está aprendendo a usar Stride, mas eles não são necessários.
 
-8. Under **Rendering**, select the options you want.
+8. Em **Rendering**, selecione as opções que deseja.
 
-   **Graphics API:** The graphics features you can use in your project depend on the API you select. For advanced graphics features, select the latest version of the graphics APIs.
+   **Gráficos API:** Os recursos gráficos que você pode usar em seu projeto dependem da API selecionada. Para recursos gráficos avançados, selecione a versão mais recente das APIs gráficas.
 
-   > [!Warning]
-   > Some graphics cards don't support the latest APIs. For some mobile devices, only Direct3D 9.3 / OpenGL ES 2.0 and Direct3D 10.0 / OpenGL ES 3.0 are available.
+   > <x1\/>!Warning<x2\/>
+   > Algumas placas gráficas não suportam as últimas APIs. Para alguns dispositivos móveis, apenas Direct3D 9.3 \/ OpenGL ES 2.0 e Direct3D 10.0 \/ OpenGL ES 3.0 estão disponíveis.
 
-   **High or Low Dynamic Range (HDR / LDR):** This defines how color is computed in your project. In LDR mode, colors range from 0 to 1. In HDR mode colors can take any float value. HDR provides more advanced and realistic rendering but requires more processing power and profile Direct3D 10.0 / OpenGL ES 3.0 or later.
+   **High ou Low Dynamic Range (HDR \/ LDR):** Isso define como a cor é computada em seu projeto. No modo LDR, as cores variam de 0 a 1. Em cores de modo HDR pode tomar qualquer valor flutuante. HDR fornece renderização mais avançada e realista, mas requer mais poder de processamento e perfil Direct3D 10.0 \/ OpenGL ES 3.0 ou posterior.
 
-9. Under **Orientation**, choose the orientation for your project. For PC games, use landscape. Portrait should usually only be used for mobile games.
+9. Sob **Orientação**, escolha a orientação para o seu projeto. Para jogos de PC, use paisagem. O retrato geralmente deve ser usado apenas para jogos móveis.
 
-10. Click **OK**.
+10. Clique em **OK**.
 
-Stride creates the project and opens it in Game Studio. For more information, see [Game Studio](../game-studio/index.md).
+Stride cria o projeto e o abre no Game Studio. Para mais informações, consulte [Game Studio](../game-studio/index.md).
 
-## Create a project from a sample or template
+## Criar um projeto de uma amostra ou modelo
 
-Stride includes several sample projects demonstrating each part of the engine (2D, 3D, sprites, fonts, UI, audio, input, etc). It also includes template games to help you make your own game.
+Stride inclui vários projetos de amostra demonstrando cada parte do motor (2D, 3D, sprites, fontes, UI, áudio, entrada, etc). Ele também inclui jogos de modelo para ajudá-lo a fazer o seu próprio jogo.
 
-To create a project from a sample or template:
+Para criar um projeto de uma amostra ou modelo:
 
-1. Open the **New Project** dialog.
+1. Abra a caixa de diálogo **New Project**.
 
-2. On the left, navigate to **New project > Samples**.
+2. À esquerda, navegue até **Novo projeto > Amostras**.
 
-3. **Select the sample** you want to create a project from.
+3. **Selecione a amostra** que deseja criar um projeto.
 
-![New Project window — samples](media/create-project-new-open-project-samples.png)
+<x1\/>Nova janela do projeto — amostras<x2\/>
 
-4. Click **Select**.
+4. Clique em **Select**.
 
-   The **Select Platforms** window opens.
+   A janela **Select Platforms** abre.
 
-   ![Select Platforms window](media/create-project-select-platform.png)
+   <x1\/>Selecionar Plataformas janela<x2\/>
 
-5. Select the platforms you want your game to support and click **OK**.
+5. Selecione as plataformas que você deseja que seu jogo suporte e clique em **OK**.
 
-Stride creates the project and opens it in Game Studio.
+Stride cria o projeto e o abre no Game Studio.
 
-## What's next?
+## O que se segue?
 
-* [Get familiar with Game Studio](../game-studio/index.md)
+* [Familiarize-se com Game Studio](../game-studio/index.md)

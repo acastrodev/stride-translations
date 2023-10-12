@@ -1,26 +1,26 @@
-# Custom audio data
+# Dados de áudio personalizados
 
-<span class="badge text-bg-primary">Advanced</span>
-<span class="badge text-bg-success">Programmer</span>
+<x1\/> Avançado <x2\/>
+<x3\/> Programador <x4\/>
 
-You can generate audio using your own mechanism. To do this, create a subclass of [DynamicSoundSource](xref:Stride.Audio.DynamicSoundSource).
-For an example of how to implement this, see the [CompressedSoundSource` source code](https://github.com/SiliconStudio/stride/blob/master-1.8/sources/engine/Stride.Audio/CompressedSoundSource.cs).
+Você pode gerar áudio usando seu próprio mecanismo. Para fazer isso, crie uma subclasse de [DynamicSoundSource](xref:Stride.Audio.DynamicSoundSource).
+Para um exemplo de como implementar isso, veja o código fonte [CompressedSoundSource`](https://github.com/SiliconStudio/stride/blob/master-1.8/sources/engine/Stride.Audio/CompressedSoundSource.cs).
 
-## Example code
+## Exemplo de código
 
-To play a custom [DynamicSoundSource](xref:Stride.Audio.DynamicSoundSource) at runtime, use:
+Para jogar um personalizado [DynamicSoundSource](xref:Stride.Audio.DynamicSoundSource) no tempo de execução, use:
 
 ```
-int sampleRate = 48000;
-bool mono = false;
-bool spatialized = false;
-DynamicSoundSource myCustomSource = new MyCustomSource(...);
-AudioListener listener = Audio.AudioEngine.DefaultListener;
+amostra int Taxa = 48000;
+bool mono = falso;
+bool espacializado = falso;
+DynamicSoundsource myCustomSource = new MyCustomSource(...);
+Auditor AudioListener = Áudio.AudioEngine.DefaultListener;
 AudioEngine audioEngine = Audio.AudioEngine;
-SoundInstance myCustomInstance = new SoundInstance(audioEngine, listener, myCustomSource, sampleRate, mono, spatialized);
-await myCustomInstance.ReadyToPlay();
+Instância de som myCustomInstance = new SoundInstance (audioEngine, listener, myCustomSource, sampleRate, mono, espacialized);
+esperar myCustomInstance.ReadyToPlay();
 myCustomInstance.Play();
 ```
 
-## See also
-* [Global audio settings](global-audio-settings.md)
+## Ver também
+* [Configurações de áudio globais](global-audio-settings.md)

@@ -1,6 +1,6 @@
 # Emissores de áudio
 
-<span class="badge text-bg-primary">Iniciante</span>
+<span class="badge text-bg-primary">Introdução</span>
 <span class="badge text-bg-success">Programação</span>
 <x id="1"/>Design<x id="2"/><span class="badge text-bg-success"></span>
 

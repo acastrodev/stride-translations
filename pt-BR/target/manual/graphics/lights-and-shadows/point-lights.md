@@ -1,41 +1,41 @@
-# Point lights
+# Luzes de ponto
 
-<span class="badge text-bg-primary">Beginner</span>
-<span class="badge text-bg-success">Designer</span>
-<span class="badge text-bg-success">Artist</span>
+<x1\/>Introdução<x2\/>
+<x3\/>Designer<x4\/>
+<x5\/>Artista <x6\/>
 
-**Point lights** emit light in all directions within a sphere. They're useful for simulating sources of local light, such as lamps and lightbulbs. They cast shadows.
+** As luzes do ponto** emitem luz em todas as direções dentro de uma esfera. São úteis para simular fontes de luz local, como lâmpadas e lâmpadas. Eles lançam sombras.
 
-![media/PointLightOverview.png](media/PointLightOverview.png)
+<x1\/>media\/PointLightOverview.png<x2\/>
 
-The Scene Editor shows the position of point lights with the following icon:
+O Editor de cena mostra a posição das luzes de ponto com o seguinte ícone:
 
-![media/PointLight.png](media/PointLight.png)
+<x1\/>media\/PointLight.png<x2\/>
 
-Once selected, the point light gizmo displays the sphere in which it projects light:
+Uma vez selecionado, o ponto luz gizmo exibe a esfera em que projeta luz:
 
-![media/PointLightSelected.png](media/PointLightSelected.png)
+<x1\/>media\/PointLightSelected.png<x2\/>
 
-## Properties
+## Propriedades
 
-![media/PointLightProperties.png](media/PointLightProperties.png)
+<x1\/>media\/PointLightProperties.png<x2\/>
 
-| Property | Description |
+| Propriedade | Descrição |
 | ------------------- | ------------------ 
-| Color | The color of the light (RGB) |
-| Radius | The sphere influence radius in [world units](../../game-studio/world-units.md). Beyond this range, the light doesn't affect models |
-| Shadow | <p><br>If shadows are enabled, the light casts shadows.</p></br><p><br> **Filter:** Produces soft shadows instead of hard shadows via PCF (Percentage Closer Filtering) </p></br> <p><br>**Size:** The size of texture to use for shadowing mapping. Larger textures produce better shadows edges, but are much more costly. For more information, see [Shadows](shadows.md)</p></br> |
-| Bias Parameters | <p><br>These parameters are used to avoid some artifacts of the shadow map technique.</p></br> <p><br>**Depth Bias:** The amount of depth to add to the sampling depth to avoid shadow acne</p></br> <p><br>**Normal Offset Scale**: A factor multiplied by the depth bias toward the normal </p></br> |
-| Intensity | The intensity of the light. The color is multiplied by this value before being sent to the shader. Note: negative values produce darkness and have unpredictable effects |
-| Culling Mask | Which entity groups are affected by this light. By default, all groups are affected |
+| Cor | A cor da luz (RGB) |
+| Radius | O raio de influência da esfera em unidades do mundo [](../../game-studio/world-units.md). Além desta gama, a luz não afeta modelos |
+| Sombra | <p><x1\/>Se as sombras estiverem activadas, a luz lança sombras.</p></br><p><br> **Filter:** Produz sombras suaves em vez de sombras duras via PCF (Percentage Closer Filtering) </p></br> <p><x1\/>**Tamanho:** O tamanho da textura a usar para mapeamento de sombra. Texturas maiores produzem melhores bordas sombras, mas são muito mais caros. Para mais informações, consulte [Shadows](shadows.md)</p></br> |
+| Parâmetros de Bias | <p><x1\/>Estes parâmetros são usados para evitar alguns artefatos da técnica de mapa sombra.</p></br> <p><x1\/>**Depth Bias:** A quantidade de profundidade para adicionar à profundidade de amostragem para evitar acne sombra</p></br> <p><x1\/>**Normal Offset Scale**: Um fator multiplicado pelo viés de profundidade para o normal </p></br> |
+| Intensidade | A intensidade da luz. A cor é multiplicada por este valor antes de ser enviado para o shader. Nota: valores negativos produzem escuridão e têm efeitos imprevisíveis |
+| Máscara de Culing | Quais grupos de entidades são afetados por esta luz. Por padrão, todos os grupos são afetados |
 
-## See also
+## Ver também
 
-* [Add a light](add-a-light.md)
-* [Point lights](point-lights.md)
-* [Ambient lights](ambient-lights.md)
-* [Skybox lights](skybox-lights.md)
-* [Spot lights](spot-lights.md)
-* [Light shafts](light-shafts.md)
-* [Light probes](light-probes.md)
-* [Shadows](shadows.md)
+* [Adicionar uma luz](add-a-light.md)
+* [Luzes de ponto](point-lights.md)
+* [Luzes ambientais](ambient-lights.md)
+* [Luzes Skybox](skybox-lights.md)
+* [Luzes do ponto](spot-lights.md)
+* [Eixos de luz](light-shafts.md)
+* [Sondas de luz](light-probes.md)
+* [Sombras](shadows.md)

@@ -1,112 +1,112 @@
-# Stride 4.0 Release Notes
+# Notas de versão do Stride 4.0
 
-February 1st, 2021
+1 de Fevereiro, 2021
 
-## Xenko is now Stride!
+## Xenko é agora Stride!
 
-The Xenko game engine has been renamed to Stride. From now on, all source code, blogs, and tutorials will use the name ‘Stride’ instead of ‘Xenko’.
+O motor de jogo Xenko foi renomeado para Stride. A partir de agora, todo o código fonte, blogs e tutoriais usarão o nome ‘Stride’ em vez de ‘Xenko’.
 
-Here is the new logo:
+Aqui está o novo logotipo:
 
 ![Stride Logo](media/ReleaseNotes-4.0/stride-logo.png)
 
-More details available on the [dedicated blog post](https://stride3d.net/blog/xenko-has-been-renamed-to-stride/)
+Mais detalhes disponíveis no blog [dedicado post](https://stride3d.net/blog/xenko-has-been-renamed-to-stride/)
 
-## Voxel Cone Tracing GI
+## Travessia de cone de Voxel GI
 
-Thanks to a substantial contribution from Sean Boettger and sponsored by David Jeske, Stride now supports Voxel Cone Tracing GI!
+Graças a uma contribuição substancial de Sean Boettger e patrocinado por David Jeske, Stride agora suporta Voxel Cone Tracing GI!
 
-Here it is in action:
+Aqui está em ação:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/AZytf15FRks" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-As you can see, there are many customizations and settings available in the editor:
+Como você pode ver, existem muitas personalizações e configurações disponíveis no editor:
 
 ![Voxel Cone Tracing GI](media/ReleaseNotes-4.0/voxelgi.jpg)
 
-There's a documentation page explaining [how to set up the project with Voxel Cone Tracing GI](../manual/graphics/lights-and-shadows/voxel-cone-tracing-gi.md).
+Há uma página de documentação explicando [ como configurar o projeto com a Voxel Cone Tracing GI](../manual/graphics/lights-and-shadows/voxel-cone-tracing-gi.md).
 
-Here's the original [forum post](https://forums.stride3d.net/t/voxel-gi-implementation/1947) and [pull request](https://github.com/stride3d/stride/pull/583). Thanks again for this great contribution!
+Aqui está o original [forum post](https://forums.stride3d.net/t/voxel-gi-implementation/1947) e [pull request](https://github.com/stride3d/stride/pull/583). Obrigado novamente por esta grande contribuição!
 
 ## .NET 5
 
-Stride editor and toolchain is now running with .NET 5! Runtime has been working with .NET Core for a few versions already.
+Stride editor e toolchain está agora em execução com .NET 5! Runtime tem trabalhado com . NET Core para algumas versões já.
 
-This allows us to have scripts and custom assets in a project targetting `.NET Standard 2.1` or `.NET 5`.
+Isso nos permite ter scripts e ativos personalizados em um projeto segmentando `. NET Standard 2.1` ou `.NET 5`.
 
-If you have scripts or custom assets in a .NET Framework project rather than a .NET Standard project, you can still choose between `.NET 5` and `.NET Framework` within the launcher:
+Se você tiver scripts ou ativos personalizados em um projeto .NET Framework em vez de um projeto .NET Standard, você ainda pode escolher entre `.NET 5` e `.NET Framework` dentro do lançador:
 
-![Framework selection in launcher](media/ReleaseNotes-4.0/launcher-net5.png)
+![Framework seleção no lançador](media/ReleaseNotes-4.0/launcher-net5.png)
 
-The framework will also be displayed in the Game Studio toolbar for easier identification while both coexist.
+O framework também será exibido na barra de ferramentas Game Studio para facilitar a identificação enquanto ambos coexistem.
 
-.NET Framework version can be considered deprecated and will likely be removed in a future release (likely 4.1) to allow us to take full advantage of [C# 8.0](https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-8) and soon-to-come [C# 9.0](https://devblogs.microsoft.com/dotnet/welcome-to-c-9-0/).
+. A versão NET Framework pode ser considerada desprecaída e provavelmente será removida em uma versão futura (como 4.1) para nos permitir aproveitar plenamente de [C# 8.0](https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-8) e em breve-to-come [C# 9.0](https://devblogs.microsoft.com/dotnet/welcome-to-c-9-0/).
 
-We also expect dropping .NET Framework and supporting only .NET 5 will greatly simplify our installation process since we won't depend on specific workloads or packages of Visual Studio being installed anymore. This was a recurring issue with our users.
+Também esperamos cair . NET Framework e suportando apenas . O NET 5 simplificará muito nosso processo de instalação, já que não dependeremos de cargas de trabalho ou pacotes específicos do Visual Studio sendo instalado. Este foi um problema recorrente com nossos usuários.
 
-## Flexible GPU Instancing
+## GPU flexível Instância
 
-Aka geometry instancing. Thanks to another big community contribution sponsored by [vvvv](https://visualprogramming.net/), Stride now supports GPU instancing per model.
+Geometria Aka instancing. Graças a outra grande contribuição comunitária patrocinada por [vvvv](https://visualprogramming.net/), Stride agora suporta GPU instancing por modelo.
 
-![Instancing Header](media/ReleaseNotes-4.0/instancing-header.jpg)
+![Instanciando cabeçalho](media/ReleaseNotes-4.0/instancing-header.jpg)
 
-The nice thing about it is, that it plays together with the entity-component system: Simply add an Instancing component to an entity with a model. Then you can choose between 3 ways of how you generate the instances:
+A coisa boa sobre ele é, que ele joga junto com o sistema de entidade-componente: Basta adicionar um componente Instancing a uma entidade com um modelo. Então você pode escolher entre 3 maneiras de gerar as instâncias:
 
-* _EntityTransform_, uses the transformation of other entities with an Instance component. This allows you to add components like physics, audio, etc. to each instance.
-* _UserArray_, for providing an array of matrices via script
-* _UserBuffer_, for providing a structured buffer (GPU resource) of matrices via script
+* _EntityTransform_, usa a transformação de outras entidades com um componente de instância. Isso permite que você adicione componentes como física, áudio, etc para cada instância.
+* _UserArray_, para fornecer um array de matrizes via script
+* _UserBuffer_, para fornecer um buffer estruturado (recurso GPU) de matrizes via script
 
-![Instancing Types](media/ReleaseNotes-4.0/instancing-types.png)
+![Instanciando tipos](media/ReleaseNotes-4.0/instancing-types.png)
 
-_UserArray_ and _UserBuffer_ even allow you to specify how the matrix is multiplied with the parent transformation.
+_UserArray_ e _UserBuffer_ mesmo permitem que você especifique como a matriz é multiplicada com a transformação pai.
 
-It even works with skinning:
+Até funciona com esfolar:
 
-![Instancing Skinning](media/ReleaseNotes-4.0/instancing-skinning.jpg)
+![Instanciando Skinning](media/ReleaseNotes-4.0/instancing-skinning.jpg)
 
-Picking individual instances in Game Studio works as well and selects the entity with the respective Instance component.
+Escolher instâncias individuais no Game Studio também funciona e seleciona a entidade com o respectivo componente de instância.
 
-There are also two new entity templates for easy setup:
+Há também dois novos modelos de entidade para fácil configuração:
 
 ![Instancing Templates](media/ReleaseNotes-4.0/instancing-templates.png)
 
-An example project that shows the new features can be found here: [StrideTransformationInstancing](https://github.com/tebjan/StrideTransformationInstancing)
+Um projeto de exemplo que mostra os novos recursos pode ser encontrado aqui: [Insistência de Transferência](https://github.com/tebjan/StrideTransformationInstancing)
 
 
-## Graphics API: different selection mechanism + Vulkan improvements
+## API gráfica: mecanismo de seleção diferente + melhorias Vulkan
 
-There's been a big overhaul on Stride build system to make Graphics API selection work in a more future-proof way.
+Houve uma grande revisão no sistema de compilação Stride para fazer a seleção de APIs gráfica funcionar de uma forma mais à prova de futuro.
 
-It was previously relying on the custom `RuntimeIdentifier` being set in the solution. This didn't work very well because it was completely orthogonal to the existing `RuntimeIdentifier`, and sometimes not having good fallbacks.
+Ele estava anteriormente confiando no personalizado `RuntimeIdentifier` sendo definido na solução. Isso não funcionou muito bem porque era completamente ortogonal para o existente `RuntimeIdentifier`, e às vezes não ter boas desvantagens.
 
-From now on, the user project will use `StrideGraphicsApi` in the `.csproj` project file to specify the graphics API. We hope to expose this in the editor later.
+A partir de agora, o projeto de usuário usará `StrideGraphicsApi` no arquivo de projeto `.csproj` para especificar a API gráfica. Esperamos expor isso no editor mais tarde.
 
-We also took the opportunity to improve the state of Vulkan renderer (thanks to a switch to [Vortice.Vulkan bindings](https://github.com/amerkoleci/Vortice.Vulkan) from [Amer Koleci](https://github.com/amerkoleci)) and automatize graphics unit tests, currently running for D3D11 and Vulkan.
+Também aproveitamos a oportunidade para melhorar o estado do renderizador Vulkan (graças a um interruptor para [Vortice.Vulkan vinculações](https://github.com/amerkoleci/Vortice.Vulkan) de [Amer Koleci](https://github.com/amerkoleci)) e automatizar testes de unidade gráfica, atualmente em execução para D3D11 e Vulkan.
 
-It's still a work in progress so expect more in future releases.
+Ainda é um trabalho em andamento, então espere mais em versões futuras.
 
-## Documentation & Tutorials
+## Documentação e Tutoriais
 
-The first 10 C# beginner tutorials are recorded and uploaded to the official Stride Youtube channel. You check out [the playlist here](https://www.youtube.com/playlist?list=PLRZx2y7uC8mNySUMfOQf-TLNVnnHkLfPi).
+Os primeiros 10 tutoriais iniciantes C# são gravados e enviados para o canal oficial Stride Youtube. Você verifica [ a lista de reprodução aqui](https://www.youtube.com/playlist?list=PLRZx2y7uC8mNySUMfOQf-TLNVnnHkLfPi).
 
 ![Youtube Playlist](media/ReleaseNotes-4.0/doc-playlist.jpg)
 
-These videos are the video equivalent of the existing [online documentation](../tutorials/csharpbeginner/index.md) for the C# beginner template tutorials and the 'new project' template when creating a new project from the Stride launcher.
+Estes vídeos são o vídeo equivalente ao existente [documentação online](../tutorials/csharpbeginner/index.md) para os tutoriais do modelo de iniciante C# e o modelo de "novo projeto" ao criar um novo projeto do lançador Stride.
 
-The C# beginner series should be fully recorded by the end of July 2020.
-After those videos are done, Jorn will put his focus on the C# Intermediate project template. Here a is work in progress screenshot on the raycasting tutorial:
+A série de iniciantes C# deve ser totalmente gravada até o final de julho de 2020.
+Depois que esses vídeos são feitos, Jorn vai colocar seu foco no modelo de projeto intermediário C#. Aqui está um trabalho na captura de tela de progresso no tutorial de transmissão de raios:
 
 ![Raycast tutorial](media/ReleaseNotes-4.0/doc-raycast-tutorial.jpg)
 
-## New Developers are Welcome!
-The Stride GitHub repository has more closed pull requests than open issues. This is a good sign! But in order to move faster and adapt to new technologies, we would be very happy to see more new talents in our friendly and professional developer community.
+## Novos desenvolvedores são bem-vindos!
+O repositório Stride GitHub tem solicitações de pull mais fechadas do que problemas abertos. Este é um bom sinal! Mas para se mover mais rápido e se adaptar às novas tecnologias, ficaríamos muito felizes em ver mais novos talentos em nossa comunidade de desenvolvedores amigável e profissional.
 
-There are several good reasons to join us:
+Há várias boas razões para se juntar a nós:
 
-* Writing engine code in C# is fun and quite productive
-* Stride users will work with what you create
-* We are happy to help, should you get stuck
-* You can learn a lot, the Stride code base is very professional and has high-quality standards
-* An open-source contribution is a great addition to your portfolio
+* Escrever código do motor em C# é divertido e bastante produtivo
+* Usuários Stride irão trabalhar com o que você criar
+* Estamos felizes em ajudar, se você ficar preso
+* Você pode aprender muito, a base de código Stride é muito profissional e tem padrões de alta qualidade
+* Uma contribuição de código aberto é uma grande adição ao seu portfólio
 
-No matter whether you (or someone you know) can contribute documentation updates, UI improvements, bug fixes, or new rendering technologies, we welcome everyone!
+Não importa se você (ou alguém que você conhece) pode contribuir com atualizações de documentação, melhorias de interface do usuário, correções de bugs ou novas tecnologias de renderização, acolhemos todos!

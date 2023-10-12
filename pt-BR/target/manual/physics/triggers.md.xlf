@@ -8,46 +8,46 @@
 <trans-unit id="tu2" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Beginner<x id="2"/>
 <x id="3"/>Designer<x id="4"/></source>
-<target xml:lang="pt"><x id="1"/>Beginner<x id="2"/>
-<x id="3"/>Designer<x id="4"/></target>
+<target xml:lang="pt">&lt;x1\/&gt;Introdução&lt;x2\/&gt;
+&lt;x3\/&gt;Designer&lt;x4\/&gt;</target>
 </trans-unit>
 <trans-unit id="tu3" xml:space="preserve">
 <source xml:lang="en">If you set a collider to be a <g id="1">trigger</g>, other colliders no longer bump into it. Instead, they pass through.</source>
-<target xml:lang="pt">If you set a collider to be a <g id="1">trigger</g>, other colliders no longer bump into it. Instead, they pass through.</target>
+<target xml:lang="pt">Se você definir um colisor para ser um <g id="1">trigger</g>, outros colisões não se encaixam mais nele. Em vez disso, eles passam.</target>
 </trans-unit>
 <trans-unit id="tu4" xml:space="preserve">
 <source xml:lang="en">The trigger detects when colliders enter it, which you can use to script events. For example, you can detect when a player character enters a room, and use this in your script to trigger an event. For more information, see <g id="1">Events</g>.</source>
-<target xml:lang="pt">The trigger detects when colliders enter it, which you can use to script events. For example, you can detect when a player character enters a room, and use this in your script to trigger an event. For more information, see <g id="1">Events</g>.</target>
+<target xml:lang="pt">O gatilho detecta quando os colisões entram nele, que você pode usar para eventos de script. Por exemplo, você pode detectar quando um personagem do jogador entra em uma sala e usá-la em seu script para ativar um evento. Para mais informações, consulte <g id="1">Events</g>.</target>
 </trans-unit>
 <trans-unit id="tu5" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>!Note<x id="2"/>
 <g id="3">Character colliders</g> can't be used as triggers.</source>
-<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
-<g id="3">Character colliders</g> can't be used as triggers.</target>
+<target xml:lang="pt">&lt;x1\/&gt;!Note&lt;x2\/&gt;
+<g id="3"> Os colistores de caracteres </g> não podem ser usados como gatilhos.</target>
 </trans-unit>
 <trans-unit id="tu6" xml:space="preserve">
 <source xml:lang="en">Create a trigger</source>
-<target xml:lang="pt">Create a trigger</target>
+<target xml:lang="pt">Criar um gatilho</target>
 </trans-unit>
 <trans-unit id="tu7" xml:space="preserve">
 <source xml:lang="en">Create a <g id="1">collider</g>.</source>
-<target xml:lang="pt">Create a <g id="1">collider</g>.</target>
+<target xml:lang="pt">Criar um <g id="1">collider</g>.</target>
 </trans-unit>
 <trans-unit id="tu8" xml:space="preserve">
 <source xml:lang="en">In the <g id="1">Property Grid</g>, under the collider component properties, select <g id="2">Is Trigger</g>.</source>
-<target xml:lang="pt">In the <g id="1">Property Grid</g>, under the collider component properties, select <g id="2">Is Trigger</g>.</target>
+<target xml:lang="pt">No <g id="1">Property Grid</g>, sob as propriedades do componente do colisor, selecione <g id="2">Is Trigger</g>.</target>
 </trans-unit>
 <trans-unit id="tu9" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Select 'Is trigger'<x id="2"/></source>
-<target xml:lang="pt"><x id="1"/>Select 'Is trigger'<x id="2"/></target>
+<target xml:lang="pt">&lt;x1\/&gt;Selecionar 'é gatilho'&lt;x2\/&gt;</target>
 </trans-unit>
 <trans-unit id="tu10" xml:space="preserve">
 <source xml:lang="en">Detect trigger collisions</source>
-<target xml:lang="pt">Detect trigger collisions</target>
+<target xml:lang="pt">Detectar colisões de gatilho</target>
 </trans-unit>
 <trans-unit id="tu11" xml:space="preserve">
 <source xml:lang="en">You can see when something enters the trigger using the following code:</source>
-<target xml:lang="pt">You can see when something enters the trigger using the following code:</target>
+<target xml:lang="pt">Você pode ver quando algo entra no gatilho usando o seguinte código:</target>
 </trans-unit>
 <trans-unit id="tu12" xml:space="preserve">
 <source xml:lang="en">// Wait for an entity to collide with the trigger
@@ -57,17 +57,17 @@ var otherCollider = trigger == firstCollision.ColliderA
     ? firstCollision.ColliderB
     : firstCollision.ColliderA;
 </source>
-<target xml:lang="pt">// Wait for an entity to collide with the trigger
-var firstCollision = await trigger.NewCollision();
+<target xml:lang="pt">\/\/ Aguarde que uma entidade colide com o gatilho
+var firstCollision = await trigger. NewCollision();
 
-var otherCollider = trigger == firstCollision.ColliderA
-    ? firstCollision.ColliderB
-    : firstCollision.ColliderA;
+var otherCollider = trigger == firstCollision. ColliderA
+    ? Primeira Colisão. ColliderB
+    : primeira Colisão. ColliderA;
 </target>
 </trans-unit>
 <trans-unit id="tu13" xml:space="preserve">
 <source xml:lang="en">Alternatively, directly access the <g id="1">TrackingHashSet</g>:</source>
-<target xml:lang="pt">Alternatively, directly access the <g id="1">TrackingHashSet</g>:</target>
+<target xml:lang="pt">Alternativamente, acesse diretamente o <g id="1">TrackingHashSet</g>:</target>
 </trans-unit>
 <trans-unit id="tu14" xml:space="preserve">
 <source xml:lang="en">var trigger = Entity.Get&lt;PhysicsComponent&gt;();
@@ -77,15 +77,15 @@ foreach (var collision in trigger.Collisions)
 }
 </source>
 <target xml:lang="pt">var trigger = Entity.Get&lt;PhysicsComponent&gt;();
-foreach (var collision in trigger.Collisions)
-{
-    //do something with the collision
+foreach (var colisão no gatilho. Colisões)
+(
+    \/\/fazer algo com a colisão
 }
 </target>
 </trans-unit>
 <trans-unit id="tu15" xml:space="preserve">
 <source xml:lang="en">Or use the <g id="1">TrackingHashSet</g> events:</source>
-<target xml:lang="pt">Or use the <g id="1">TrackingHashSet</g> events:</target>
+<target xml:lang="pt">Ou use os eventos <g id="1">TrackingHashSet</g>:</target>
 </trans-unit>
 <trans-unit id="tu16" xml:space="preserve">
 <source xml:lang="en">var trigger = Entity.Get&lt;PhysicsComponent&gt;();
@@ -106,46 +106,46 @@ trigger.Collisions.CollectionChanged += (sender, args) =&gt;
 };
 </source>
 <target xml:lang="pt">var trigger = Entity.Get&lt;PhysicsComponent&gt;();
-trigger.Collisions.CollectionChanged += (sender, args) =&gt;
-{
-    if (args.Action == NotifyCollectionChangedAction.Add)
-    {
-        //new collision
-        var collision = (Collision) args.Item;
-        //do something
+gatilho. Colisões. Changed += (sender, args) =&gt;
+(
+    se (args.Action == Notificar a Colecção Pendurada. Adicionar)
+    (
+        \/\/nova colisão
+        var colisão = (Collision) args. Item;
+        \/\/fazer algo
     }
-    else if (args.Action == NotifyCollectionChangedAction.Remove)
-    {
-        //old collision
-        var collision = (Collision)args.Item;
-        //do something
+    se (args.Action == NotifyCollectionChangedAction. Remover)
+    (
+        \/\/ colisão antiga
+        var colisão = (Collision)args. Item;
+        \/\/fazer algo
     }
 };
 </target>
 </trans-unit>
 <trans-unit id="tu17" xml:space="preserve">
 <source xml:lang="en">For an example of how to use triggers, see the <g id="1">Script a trigger</g> tutorial.</source>
-<target xml:lang="pt">For an example of how to use triggers, see the <g id="1">Script a trigger</g> tutorial.</target>
+<target xml:lang="pt">Para um exemplo de como usar gatilhos, veja o tutorial <g id="1">Script a trigger</g>.</target>
 </trans-unit>
 <trans-unit id="tu18" xml:space="preserve">
 <source xml:lang="en">See also</source>
-<target xml:lang="pt">See also</target>
+<target xml:lang="pt">Ver também</target>
 </trans-unit>
 <trans-unit id="tu19" xml:space="preserve">
 <source xml:lang="en"><g id="1">Tutorial: Script a trigger</g></source>
-<target xml:lang="pt"><g id="1">Tutorial: Script a trigger</g></target>
+<target xml:lang="pt"><g id="1">Tutorial: Script um gatilho</g></target>
 </trans-unit>
 <trans-unit id="tu20" xml:space="preserve">
 <source xml:lang="en"><g id="1">Colliders</g></source>
-<target xml:lang="pt"><g id="1">Colliders</g></target>
+<target xml:lang="pt"><g id="1">Coleiras</g></target>
 </trans-unit>
 <trans-unit id="tu21" xml:space="preserve">
 <source xml:lang="en"><g id="1">Collider shapes</g></source>
-<target xml:lang="pt"><g id="1">Collider shapes</g></target>
+<target xml:lang="pt"><g id="1">Formas de colarinho</g></target>
 </trans-unit>
 <trans-unit id="tu22" xml:space="preserve">
 <source xml:lang="en"><g id="1">Events</g></source>
-<target xml:lang="pt"><g id="1">Events</g></target>
+<target xml:lang="pt"><g id="1">Eventos</g></target>
 </trans-unit>
 </body>
 </file>

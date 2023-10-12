@@ -1,45 +1,45 @@
-# Splash screen
+# Tela de Splash
 
-<span class="badge text-bg-primary">Beginner</span>
+<x1\/>Introdução<x2\/>
 
-The **splash screen** is the image (usually a logo) displayed when your game starts. It fades in over the color you specify, then fades out.
+A tela **splash** é a imagem (geralmente um logotipo) exibida quando seu jogo começa. Desvanece-se sobre a cor que você especificar, então desaparece.
 
-> [!Note]
-> The splash screen is only displayed when the game is built in release mode.
+> <x1\/>!Note<x2\/>
+> A tela de respingo só é exibida quando o jogo é construído no modo de lançamento.
 
-The default splash screen is the Stride logo.
+A tela de respingo padrão é o logotipo Stride.
 
-![Default splash screen](media/StrideDefaultSplashScreen.png)
+<x1\/> tela de respingo padrão<x2\/>
 
-You can only specify one splash screen in Game Settings. If you want to add more, you need to implement them manually.
+Você só pode especificar uma tela de respingo em Configurações do jogo. Se você quiser adicionar mais, você precisa implementá-los manualmente.
 
-## Edit the splash screen
+## Editar a tela de respingo
 
-The splash screen settings are part of the **Game settings** asset.
+As configurações de tela de respingo fazem parte do ativo **Game**.
 
-1. In the **solution explorer** (the bottom-left pane by default), select the **Assets folder**.
+1. No **solution explorer** (o painel inferior esquerdo por padrão), selecione a pasta **Ativos**.
 
-   ![Select Assets folder asset](media/select-asset-folder.png)
+   <x1\/>Select Assets pasta asset<x2\/>
 
-2. In the **asset view** (the bottom pane by default), select the **GameSettings** asset.
+2. No **asset view** (o painel inferior por padrão), selecione o **GameSettings** asset.
 
-   ![Select Game Settings asset](media/select-game-settings-asset.png)
+   <x1\/>Selecionar configurações de jogo asset<x2\/>
 
-3. In the **property grid** (the right-hand pane by default), expand **Splash screen**.
+3. Na grade **property** (o painel direito por padrão), expanda **Splash screen**.
 
-   ![Settings](media/splash-screen.png)
+   <x1\/>Configurações <x2\/>
 
-### Splash screen properties
+### Propriedades da tela de Splash
 
-| Property | Description |
+| Propriedade | Descrição |
 |----------|------------
-| Texture | The image (eg company logo) displayed as the splash screen. By default, this is *StrideDefaultSplashScreen*. |
-| Color | The color the splash screen fades in on top of. By default, this is black (*#FF000000*). |
+| Textura | A imagem (por exemplo, logotipo da empresa) exibida como a tela de respingo. Por padrão, isso é *StrideDefaultSplashScreen*. |
+| Cor | A cor da tela de respingo desaparece em cima de. Por padrão, isso é preto (*#FF000000*). |
 
-> [!Tip]
-> Additionally, you might want to **disable streaming** on the properties of the splash screen texture itself. This makes sure the texture is always loaded and displayed at the highest quality. For more information, see [Textures > Streaming](../graphics/textures/streaming.md).
+> <x1\/>!Tip<x2\/>
+> Além disso, você pode querer **disable streaming** nas propriedades da própria textura de tela de respingo. Isso garante que a textura é sempre carregada e exibida na mais alta qualidade. Para obter mais informações, consulte [Textures > Streaming](../graphics/textures/streaming.md).
 
-## See also
+## Ver também
 
-* [Assets](../game-studio/game-settings.md)
-* [Textures](../graphics/textures/index.md)
+* [Activos](../game-studio/game-settings.md)
+* [Texturas](../graphics/textures/index.md)

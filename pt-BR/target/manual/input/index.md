@@ -1,74 +1,74 @@
-# Input
+# Entrada
 
-<span class="badge text-bg-primary">Beginner</span>
-<span class="badge text-bg-success">Programmer</span>
+<x1\/>Introdução<x2\/>
+<x3\/> Programador <x4\/>
 
-Users interact with games and applications using **input devices** such as gamepads, mice, and keyboards. Every interactive application must support at least one input device.
+Os usuários interagem com jogos e aplicativos usando dispositivos de entrada **** como gamepads, mice e teclados. Cada aplicativo interativo deve suportar pelo menos um dispositivo de entrada.
 
-![Input devices](media/input_intro.png)
+<x1\/> Dispositivos de entrada<x2\/>
 
-Stride handles input entirely via scripts. There are low-level and high-level APIs to handle different input types:
+Stride lida com a entrada inteiramente através de scripts. Existem APIs de baixo nível e alto nível para lidar com diferentes tipos de entrada:
 
-* **Low-level** APIs are close to hardware, so they have lower latency. These allow fast processing of the input from [pointers](pointers.md), [keyboards](keyboards.md), [mouse](mouse.md), [gamepads](gamepads.md), and some [sensors](sensors.md).
+* ** Nível inferior ** APIs estão perto de hardware, então eles têm menor latência. Estes permitem o processamento rápido da entrada de [pointers](pointers.md), [keyboards](keyboards.md), [mouse](mouse.md), [gamepads](gamepads.md), e alguns [sensors](sensors.md).
 
-* **High-level** APIs interpret input for you, so they have higher latency. These APIs are used for [gestures](gestures.md) and some [sensors](sensors.md).
+* ** Alto nível** APIs interpretam entrada para você, então eles têm maior latência. Essas APIs são usadas para [gestures](gestures.md) e alguns [sensors](sensors.md).
 
-* There are also **special APIs** for some [sensors](sensors.md) and [virtual buttons](virtual-buttons.md).
+* Há também ** APIs especiais** para alguns [sensors](sensors.md) e [virtual botões](virtual-buttons.md).
 
-## Handle input
+## Punho de entrada
 
-Handle input with the [InputManager](xref:Stride.Input.InputManager) class. You can access this class from a script with its properties and methods.
+Lidar com a entrada com a classe [InputManager](xref:Stride.Input.InputManager). Você pode acessar esta classe de um script com suas propriedades e métodos.
 
-To check whether a particular input device is available, use the corresponding @'Stride.Input.InputManager' property. For example, to check if a mouse is connected, use [Input.HasMouse](xref:Stride.Input.InputManager.HasMouse).
+Para verificar se um dispositivo de entrada em particular está disponível, use o @'Stride correspondente. Input.InputManager' propriedade. Por exemplo, para verificar se um mouse está conectado, use [Input.HasMouse](xref:Stride.Input.InputManager.HasMouse).
 
-After you check the device availability, there are four ways to handle input in Stride.
+Depois de verificar a disponibilidade do dispositivo, existem quatro maneiras de lidar com a entrada em Stride.
 
-### Query state
+### Estado de consulta
 
-You can query the state of digital keys and buttons (ie _Up_ or _Down_) and the numeric values of analog buttons and sensors. For example, @'Stride.Input.InputManager.DownKeys' gets a list of the keys that were in the state _Down_ in the last update.
+Você pode consultar o estado de chaves e botões digitais (ou seja, _Up_ ou _Down_) e os valores numéricos de botões e sensores analógicos. Por exemplo, @'Stride.Input.InputManager. DownKeys' recebe uma lista das chaves que estavam no estado _Down_ na última atualização.
 
-![Query key and button states](media/index-state-one-action-between-updates.png)
+<x1\/>Query chave e botão estados<x2\/>
 
-![Analog stick positions](media/index-state-analog-stick-position.png)
+<x1\/>Analog stick positions<x2\/>
 
-Sometimes a user performs more than one action between updates. If there's no state change between the updates (the end result is the same), Stride registers no action:
+Às vezes, um usuário executa mais de uma ação entre atualizações. Se não houver mudança de estado entre as atualizações (o resultado final é o mesmo), Stride registra nenhuma ação:
 
-![Several actions between updates](media/index-state-several-actions-between-updates.png)
+<x1\/> Várias ações entre atualizações<x2\/>
 
-### Query a state change
+### Consultar uma mudança de estado
 
-You can query the change of state of buttons and keys since the previous update.
-In this case, you don't get the list of all buttons and keys, but have to query each button and key separately.
+Você pode consultar a mudança de estado de botões e chaves desde a atualização anterior.
+Neste caso, você não tem a lista de todos os botões e chaves, mas tem que consultar cada botão e chave separadamente.
 
-* For digital buttons and keys, query if the button or key was _Pressed_, _Down_ or _Released_ in the last update.
+* Para botões e chaves digitais, consulta se o botão ou chave foi _Pressed_, _Down_ ou _Released_ na última atualização.
 
-   ![Query key state change](media/index-state-change-one-action-between-updates.png)
+   <x1\/> Alteração do estado da chave de consulta <x2\/>
 
-* For mouse positions and mouse wheel scrolling, query _Delta Values_ since the previous update:
+* Para posições do mouse e rolagem da roda do mouse, consulta _Delta Valores_ desde a atualização anterior:
 
-   ![Mouse wheel delta](media/index-state-change-mouse-wheel-scroll.png)
+   <x1\/>Mouse wheel delta<x2\/>
 
-Sometimes a user performs several actions between two updates. If there's no state change between two updates (the end result is the same), Stride registers no action.
+Às vezes, um usuário executa várias ações entre duas atualizações. Se não houver mudança de estado entre duas atualizações (o resultado final é o mesmo), Stride registra nenhuma ação.
 
-### Query the list of events
+### Consultar a lista de eventos
 
-For pointers, gestures, and keyboards, you can query all the events that happened in the last update.
+Para ponteiros, gestos e teclados, você pode consultar todos os eventos que aconteceram na última atualização.
 
-![Several actions between updates](media/index-events-list-several-actions-between-updates.png)
+<x1\/> Várias ações entre atualizações<x2\/>
 
-> [!Note]
-> Even if a user performs several actions between two updates, Stride registers all these events.
+> <x1\/>!Note<x2\/>
+> Mesmo que um usuário realize várias ações entre duas atualizações, a Stride registra todos esses eventos.
 
-### Use virtual buttons
+### Use botões virtuais
 
-You can use **virtual buttons** to associate input to actions rather than physical keys, then let the user define their own keys. For more information, see [virtual buttons](virtual-buttons.md).
+Você pode usar botões **virtual** para associar a entrada a ações em vez de chaves físicas, então deixe o usuário definir suas próprias chaves. Para obter mais informações, consulte os botões [virtual](virtual-buttons.md).
 
-## In this section
+## Nesta secção
 
 * [Gamepads](gamepads.md)
-* [Gestures](gestures.md)
-* [Keyboards](keyboards.md)
+* [Gestos](gestures.md)
+* [Teclados](keyboards.md)
 * [Mouse](mouse.md)
-* [Pointers](pointers.md)
-* [Sensors](sensors.md)
-* [Virtual buttons](virtual-buttons.md)
+* [Pontos](pointers.md)
+* [Sensores](sensors.md)
+* [Botões virtuais](virtual-buttons.md)

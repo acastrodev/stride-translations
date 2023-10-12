@@ -1,12 +1,12 @@
-# Ambient occlusion
+# Oclusão ambiente
 
-<span class="badge text-bg-primary">Intermediate</span>
-<span class="badge text-bg-success">Artist</span>
+<x1\/> Intermediário <x2\/>
+<x3\/>Artista <x4\/>
 
-> [!Note]
-> As with other depth-aware post effects, enabling ambient occlusion nullifies MSAA (multisample anti-aliasing).
+> <x1\/>!Note<x2\/>
+> Tal como acontece com outros efeitos pós de consciência profunda, permitindo a oclusão ambiente anula MSAA (multisample anti-aliasing).
 
-**Ambient occlusion** darkens areas where light is occluded by opaque objects, such as corners and crevices. You can use it to add subtle realism to scenes.
+**Ambient occlusão** escurece áreas onde a luz é oclusiva por objetos opacos, como cantos e fendas. Você pode usá-lo para adicionar realismo sutil às cenas.
 
 <p>
 <video autoplay loop class="responsive-video" poster="media/occlusion-on.jpg">
@@ -14,31 +14,31 @@
 </video>
 </p>
 
-## Properties
+## Propriedades
 
-![Properties](media/ambient-occlusion-properties.png)
+<x1\/>Propriedades <x2\/>
 
-| Property | Function |
+| Propriedade | Função |
 |----------|---------
-| Samples | The number of pixels sampled to determine how occluded a point is. Higher values reduce noise, but affect performance. Use with **Blur count** to find a balance between results and performance. |
-| Projection scale | Scales the sample radius. In most cases, `1` (no scaling) produces the most accurate result. |
-| Intensity | The strength of the darkening effect in occluded areas |
-| Sample bias | The angle at which Stride considers an area of geometry an occluder. At high values, only narrow joins and crevices are considered occluders. |
-| Sample radius | Use with **projection scale** to control the radius of the occlusion effect |
-| Blur count | The number of times the ambient occlusion image is blurred. Higher numbers reduce noise, but can produce artifacts. |
-| Blur scale | The blur radius in pixels |
-| Edge sharpness | How much the blur respects the depth differences of occluded areas. Lower numbers create more blur, but might blur unwanted areas (ie beyond occluded areas). |
-| Buffer size | The resolution the ambient occlusion is calculated at. The result is upscaled to the game resolution. Larger sizes produce better results but use more memory and affect performance. |
+| Amostras | O número de pixels amostrados para determinar como é ocluído um ponto. Valores mais elevados reduzem o ruído, mas afetam o desempenho. Use com ** Contagem de blur** para encontrar um equilíbrio entre resultados e desempenho. |
+| Escala de projeção | Escala o raio da amostra. Na maioria dos casos, `1` (sem escala) produz o resultado mais preciso. |
+| Intensidade | A força do efeito de escurecimento em áreas oclusas |
+| Bias de amostra | O ângulo em que Stride considera uma área de geometria um occluder. Em valores elevados, apenas uniões estreitas e fendas são considerados occluders. |
+| Raio de amostra | Use com escala de projeto **** para controlar o raio do efeito de oclusão |
+| Contagem de Blur | O número de vezes a imagem de oclusão ambiente é borrada. Números mais elevados reduzem o ruído, mas podem produzir artefatos. |
+| Escala de Blur | O raio desfocado em pixels |
+| Agulha de borda | Quanto o desfoque respeita as diferenças de profundidade das áreas oclusas. Os números mais baixos criam mais borrados, mas podem borrar áreas indesejáveis (ou seja, além das áreas oclusas). |
+| Tamanho do amortecedor | A resolução a oclusão ambiente é calculada. O resultado é atualizado para a resolução do jogo. Tamanhos maiores produzem melhores resultados, mas usam mais memória e afetam o desempenho. |
 
-## See also
+## Ver também
 
 * [Anti-aliasing](anti-aliasing.md)
-* [Fog](fog.md)
-* [Outline](outline.md)
-* [Bloom](bloom.md)
-* [Bright filter](bright-filter.md)
-* [Color transforms](color-transforms/index.md)
-* [Depth of field](depth-of-field.md)
-* [Lens flare](lens-flare.md)
-* [Light streaks](light-streaks.md)
-* [Local reflections](local-reflections.md)
+* [Fogão](fog.md)
+* [Linha de produção](outline.md)
+* [Floresce](bloom.md)
+* [Filtro brilhante](bright-filter.md)
+* [Transformações de cor](color-transforms/index.md)
+* [Profundidade de campo](depth-of-field.md)
+* [Flare de lente](lens-flare.md)
+* [Estrefas de luz](light-streaks.md)
+* [Reflexões locais](local-reflections.md)

@@ -1,15 +1,15 @@
-# Removing entities
-You can find this sample in the tutorial project: **Menu** &rarr; **Removing entities**
+# Remoção de entidades
+Você pode encontrar esta amostra no projeto tutorial: **Menu** → **Removendo entidades**
 
-## Explanation
-This C# Beginner tutorial covers how to remove existing entities from the scene and how to remove an entity that is a child of another entity.
+## Explicação
+Este tutorial C# Beginner abrange como remover entidades existentes da cena e como remover uma entidade que é uma criança de outra entidade.
 
-When we add entities to the Scene root we can remove that entity again by accessing the scene.Entities property. Entities that are added as children of other entities can be removed by accessing the children of an entity.
+Quando adicionamos entidades à raiz da cena, podemos remover essa entidade novamente acessando a cena. Imóveis. As entidades que são adicionadas como crianças de outras entidades podem ser removidas acessando as crianças de uma entidade.
 
-![Cloning entities](media/removing-entity.webp)
+![ Entidades de clonagem](media/removing-entity.webp)
 
 
-> [!Video https://www.youtube.com/embed/TzwGe4RzAb4]
+> [!Vídeo https://www.youtube.com/embed/TzwGe4RzAb4]
 
-## Code
-[!code-csharp[Entity](../../../../stride/samples/Tutorials/CSharpBeginner/CSharpBeginner/CSharpBeginner.Game/Code/RemoveEntitiesDemo.cs)]
+## Código
+[!code-csharp[Entidade](../../../../stride/samples/Tutorials/CSharpBeginner/CSharpBeginner/CSharpBeginner.Game/Code/RemoveEntitiesDemo.cs)]

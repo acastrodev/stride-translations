@@ -1,18 +1,18 @@
-# Mouse input
-You can find this sample in the tutorial project: **Menu** &rarr; **Mouse input**
+# Entrada do mouse
+Você pode encontrar esta amostra no projeto tutorial: **Menu** → **Mouse input**
 
-## Explanation
-This C# Beginner tutorial covers how to handle mouse input.
+## Explicação
+Este tutorial C# Beginner cobre como lidar com a entrada do mouse.
 
-We can check for the existence of a mouse and then we can use various methods to check if a mouse buttons are clicked, held down or released.
+Podemos verificar a existência de um mouse e, em seguida, podemos usar vários métodos para verificar se os botões do mouse são clicados, mantidos para baixo ou liberados.
 
-We can also check for the mouse wheel (middle mouse) being clicked. We can use the mouse wheel delta to determine if the mouse wheel has been scrolled in a frame.
+Também podemos verificar se a roda do mouse (o mouse médio) está sendo clicada. Podemos usar o delta da roda do mouse para determinar se a roda do mouse foi rolada em um quadro.
 
-And finally we learn how to use the absolute mouse position to draw text at the position of the mouse on the screen.
+E finalmente aprendemos como usar a posição absoluta do mouse para desenhar o texto na posição do mouse na tela.
 
-![Mouse input](media/mouse-input.webp)
+![ Entrada de uso ](media/mouse-input.webp)
 
-> [!Video https://www.youtube.com/embed/HuA80JIZ8hA]
+> [!Vídeo https://www.youtube.com/embed/HuA80JIZ8hA]
 
-## Code
-[!code-csharp[Entity](../../../../stride/samples/Tutorials/CSharpBeginner/CSharpBeginner/CSharpBeginner.Game/Code/MouseInputDemo.cs)]
+## Código
+[!code-csharp[Entidade](../../../../stride/samples/Tutorials/CSharpBeginner/CSharpBeginner/CSharpBeginner.Game/Code/MouseInputDemo.cs)]

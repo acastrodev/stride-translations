@@ -1,29 +1,29 @@
-# Lights don't cast shadows
+# As luzes não lançam sombras
 
-If you've enabled shadows on a light in your scene, but it isn't casting shadows, make sure you have enough space in the shadow atlas. You might need to reduce the size of the shadows in the properties of your light components to create room.
+Se você tiver ativado sombras em uma luz em sua cena, mas não está lançando sombras, certifique-se de ter espaço suficiente no atlas sombra. Você pode precisar reduzir o tamanho das sombras nas propriedades de seus componentes de luz para criar espaço.
 
-For more information about shadows and the shadow atlas, see [Graphics - Shadows](../graphics/lights-and-shadows/shadows.md).
+Para mais informações sobre sombras e o atlas sombra, veja [Graphics - Shadows](../graphics/lights-and-shadows/shadows.md).
 
-## Shadow atlas comparison
+## Comparação de atlas sombra
 
-| Size: 2x | Size: 1x |
+| Tamanho: 2x | Tamanho: 1x |
 | ---------------------------------------------------------------- | -------------------------------------------------------------
-| ![FPS scene shadow map](../graphics/lights-and-shadows/media/shadow-atlas-2x.png) | ![FPS scene shadow map](../graphics/lights-and-shadows/media/shadow-atlas-1x.png) |
-| This light source uses the entirety of the shadow atlas. This means other lights won't cast shadows, as there's no room left in the atlas. | This light source uses one quarter of the shadow atlas. The rest can be allocated to other light sources. |
+| <x1\/>FPS cena sombra map<x2\/> | <x1\/>FPS cena sombra map<x2\/> |
+| Esta fonte de luz usa a totalidade do atlas sombra. Isso significa que outras luzes não vão lançar sombras, pois não há espaço no atlas. | Esta fonte de luz usa um quarto do atlas sombra. O resto pode ser atribuído a outras fontes de luz. |
 
-## Reduce the shadow size
+## Reduza o tamanho da sombra
 
-1. In the Scene Editor, select an entity with a light that casts a shadow.
+1. No Editor de cena, selecione uma entidade com uma luz que lança uma sombra.
 
-2. In the **Light** component properties, under **Shadow > Size**, reduce the size of the shadow using the drop-down menu.
+2. Nas propriedades do componente **Light**, abaixo de **Shadow > Size**, reduza o tamanho da sombra usando o menu suspenso.
 
-   ![media/DirectionalLightProperties.png](../graphics/lights-and-shadows/media/DirectionalLightProperties-size.png)
+   <x1\/>media\/DirectionalLightProperties.png<x2\/>
 
-   Alternatively, disable shadows on the light entirely by clearing the **Shadows** checkbox.
+   Alternativamente, desabilite as sombras na luz inteiramente limpando a caixa de seleção **Shadows**.
 
-Repeat these steps for as many light entities as you need to create space in the shadow atlas.
+Repita estes passos para tantas entidades leves como você precisa criar espaço no atlas sombra.
 
-## See also
+## Ver também
 
-* [Graphics — Shadows](../graphics/lights-and-shadows/shadows.md)
-* [Graphics — Directional lights](../graphics/lights-and-shadows/directional-lights.md)
+* [Gráficos — Sombras](../graphics/lights-and-shadows/shadows.md)
+* [Gráficos — Luzes direcionais](../graphics/lights-and-shadows/directional-lights.md)

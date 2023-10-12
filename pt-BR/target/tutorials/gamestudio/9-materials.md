@@ -1,7 +1,7 @@
-# Materials
+# Materiais
 
-In this tutorial we learn the basics of creating material assets in Stride game studio. We create a diffuse material and a material that used both diffuse and a normal texture. Since there are so many options for materials we learn about the different properties in a general sense rather than displaying all the possibilities.
+Neste tutorial aprendemos o básico de criar ativos materiais no estúdio de jogos Stride. Criamos um material difuso e um material que usou tanto difusa como uma textura normal. Uma vez que há tantas opções de materiais que aprendemos sobre as diferentes propriedades em um sentido geral em vez de exibir todas as possibilidades.
 
-[!INCLUDE [stride-studio-note](../../includes/game-studio-xenko-note.md)]
+[! INCLUÍDO [stride-studio-note](../../includes/game-studio-xenko-note.md)]
 
-> [!Video https://www.youtube.com/embed/wBNN_uSIJ-E]
+> [!Vídeo https://www.youtube.com/embed/wBNN_uSIJ-E]

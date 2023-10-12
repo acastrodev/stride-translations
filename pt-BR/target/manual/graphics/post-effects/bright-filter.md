@@ -1,28 +1,28 @@
-# Bright filter
+# Filtro brilhante
 
-<span class="badge text-bg-primary">Intermediate</span>
-<span class="badge text-bg-success">Artist</span>
+<x1\/> Intermediário <x2\/>
+<x3\/>Artista <x4\/>
 
-The **bright filter** extracts the brightest areas of an image. The bright filter itself isn't a post effect, but its result is used later by other effects such as [bloom](bloom.md), [light streaks](light-streaks.md), and [lens flare](lens-flare.md).
+O filtro **bright** extrai as áreas mais brilhantes de uma imagem. O filtro brilhante em si não é um efeito pós, mas seu resultado é usado mais tarde por outros efeitos, como [bloom](bloom.md), [light streaks](light-streaks.md), e [lens flare](lens-flare.md).
 
-## Properties
+## Propriedades
 
-![media/bright-filter-1.png](media/bright-filter-1.png)
+<x1\/>media\/bright-filter-1.png<x2\/>
 
-| Property | Description |
+| Propriedade | Descrição |
 | --------- | --------- 
-| Threshold | The threshold used to determine if a color passes or fails the bright filter. |
-| Steepness | Increasing the steepness has a similar effect to increasing the threshold, but causes less aliasing risk. However, the effect is more washed out. For better temporal stability, if your scene has HDR spreads, setting the steepness to a value somewhere in the middle of the expected maximum allows for smooth filtering of bright spots. For sharpness, we recommend you keep a threshold. |
-| Color | The result of the bright filter is modulated by this color value, then affects the color of other post effects. If set to white, the color isn't modified. |
+| Limitação | O limiar usado para determinar se uma cor passa ou falha no filtro brilhante. |
+| Steepness | Aumentar a íngreme tem um efeito semelhante para aumentar o limiar, mas causa menos risco aliado. No entanto, o efeito é mais lavado para fora. Para uma melhor estabilidade temporal, se sua cena tem spreads HDR, definir a inclinação para um valor em algum lugar no meio do máximo esperado permite a filtragem suave de pontos brilhantes. Para nitidez, recomendamos que mantenha um limiar. |
+| Cor | O resultado do filtro brilhante é modulado por este valor de cor, em seguida, afeta a cor de outros efeitos pós. Se definido como branco, a cor não é modificada. |
 
-## In this section
+## Nesta secção
 
 * [Anti-aliasing](anti-aliasing.md)
-* [Fog](fog.md)
-* [Outline](outline.md)
-* [Ambient occlusion](ambient-occlusion.md)
-* [Bloom](bloom.md)
-* [Color transforms](color-transforms/index.md)
-* [Depth of field](depth-of-field.md)
-* [Lens flare](lens-flare.md)
-* [Light streaks](light-streaks.md)
+* [Fogão](fog.md)
+* [Linha de produção](outline.md)
+* [Oclusão ambiente](ambient-occlusion.md)
+* [Floresce](bloom.md)
+* [Transformações de cor](color-transforms/index.md)
+* [Profundidade de campo](depth-of-field.md)
+* [Flare de lente](lens-flare.md)
+* [Estrefas de luz](light-streaks.md)

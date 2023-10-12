@@ -1,31 +1,31 @@
-# Prefabs
+# Pré-fabricados
 
-<span class="badge text-bg-primary">Beginner</span>
-<span class="badge text-bg-success">Programmer</span>
-<span class="badge text-bg-success">Designer</span>
+<x1\/>Introdução<x2\/>
+<x3\/> Programador <x4\/>
+<x5\/>Designer<x6\/>
 
-A **prefab** is a "master" version of an object that you can reuse wherever you need. When you change the prefab, every instance of the prefab changes too.
+A **prefab** é uma versão "master" de um objeto que você pode reutilizar onde quiser. Quando você muda o prefab, cada instância do prefab também muda.
 
-For example, imagine we make a simple tree object by assembling several entities. The entities contain components such as models, materials, physics colliders, and so on, which in turn reference assets.
+Por exemplo, imagine que façamos um objeto de árvore simples reunindo várias entidades. As entidades contêm componentes como modelos, materiais, colisões de física, e assim por diante, que por sua vez os ativos de referência.
 
-Now imagine we want to place several trees around the scene. We could simply duplicate the tree, but if we want to modify it later, we have to edit each one individually. This is time-consuming and leaves room for mistakes.
+Agora imagine que queremos colocar várias árvores ao redor da cena. Podemos simplesmente duplicar a árvore, mas se quisermos modificá-la mais tarde, temos que editar cada uma individualmente. Isso é demorado e deixa espaço para erros.
 
-The better approach is to make the a tree prefab. Then we can place as many trees as we like, and when we modify the prefab, every tree is instantly updated to match. This saves lots of time.
+A melhor abordagem é fazer a árvore pré-fabricada. Então podemos colocar tantas árvores como nós gostamos, e quando modificamos o prefab, cada árvore é instantaneamente atualizada para combinar. Isso economiza muito tempo.
 
-![Creating trees with prefabs](media/create-prefab-trees.gif)
+<x1\/>Criando árvores com prefabs<x2\/>
 
-The most common use for prefabs is to create a small piece of your scene — like a car, NPC, or item of furniture — and duplicate it as many times as you need. When you need to modify it — for example, if you want to change its model — you can change it in one place and apply the change everywhere at once.
+O uso mais comum para prefabs é criar uma pequena parte de sua cena — como um carro, NPC, ou item de mobiliário — e duplica-lo quantas vezes você precisar. Quando você precisa modificá-lo — por exemplo, se você quiser mudar seu modelo — você pode alterá-lo em um lugar e aplicar a mudança em todos os lugares ao mesmo tempo.
 
-You can make any entity or combination of entities of a prefab; they can be as simple or as complex as you need. Prefabs can even contain other prefabs (known as [nested prefabs](nested-prefabs.md)).
+Você pode fazer qualquer entidade ou combinação de entidades de um pré-fabricado; eles podem ser tão simples ou tão complexos quanto você precisa. As pré-fabricadas podem até conter outras pré-fabricadas (conhecidas como [nested prefabs](nested-prefabs.md)).
 
-You can [override specific properties](override-prefab-properties.md) in each prefab instance.
+Você pode [ substituir propriedades específicas](override-prefab-properties.md) em cada instância pré-fabricada.
 
-## See also
+## Ver também
 
-* [Create a prefab](create-a-prefab.md)
+* [Criar uma pré-fabricada](create-a-prefab.md)
 * [Use prefabs](use-prefabs.md)
-* [Edit prefabs](edit-prefabs.md)
-* [Nested prefabs](nested-prefabs.md)
-* [Override prefab properties](override-prefab-properties.md)
-* [Prefab models](prefab-models.md)
-* [Archetypes](../archetypes.md)
+* [Editar pré-fabricados](edit-prefabs.md)
+* [Pré-fabricadas aninhadas](nested-prefabs.md)
+* [Sobrepor propriedades pré-fabricadas](override-prefab-properties.md)
+* [Modelos pré-fabricadas](prefab-models.md)
+* [Arquétipos](../archetypes.md)

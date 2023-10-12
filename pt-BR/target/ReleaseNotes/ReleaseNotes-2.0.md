@@ -1,358 +1,358 @@
-# Xenko 2.0 release notes
+# Notas de versão do Xenko 2.0
 
-## Highlights
+## Destaques
 
-### Scene hierarchy and scene streaming
+### Hierarquia de cena e streaming de cena
 
-Working with scenes has become more flexible. Instead of a single scene, your game can now use a hierarchy of scenes to organize entities into levels, areas or layers, and let teams collaborate on them more efficiently.
+Trabalhar com cenas tornou-se mais flexível. Em vez de uma única cena, seu jogo agora pode usar uma hierarquia de cenas para organizar entidades em níveis, áreas ou camadas, e deixar as equipes colaborar sobre eles de forma mais eficiente.
 
-Game Studio displays child scenes together with their parent. Individual scenes can be loaded, unload, locked and moved around.
+Game Studio exibe cenas de crianças junto com seus pais. As cenas individuais podem ser carregadas, descarregadas, bloqueadas e movimentadas.
 
 <video autoplay loop class="responsive-video" poster="media/ReleaseNotes-2.0/scene_editor_640.jpg">
    <source src="media/ReleaseNotes-2.0/scene_editor_640.mp4" type="video/mp4">
 </video>
 
-When running your game, the **default scene** set in your **game settings** is loaded as the **root scene** and can be used to store persistent entities. More scenes can be dynamically loaded and unloaded from scripts and added as **child scenes**.
+Ao executar seu jogo, a cena **default** definida em suas configurações **game** é carregada como a cena **root** e pode ser usada para armazenar entidades persistentes. Mais cenas podem ser carregadas dinamicamente e descarregadas de scripts e adicionadas como cenas **child**.
 
 ```cs
 var childScene = Content.Load<Scene>("myChildScene");
-SceneSystem.SceneInstance.RootScene.Children.Add(childScene);
+SceneSystem.SceneInstance.RootScene.Children.Add (childScene);
 ```
 
 <video autoplay loop class="responsive-video" poster="media/ReleaseNotes-2.0/scene_streaming_640.jpg">
    <source src="media/ReleaseNotes-2.0/scene_streaming_640.mp4" type="video/mp4">
 </video>
 
-To get started, take a look at the new built-in `SceneStreamingScript`. It demonstrates background scene loading when passing through trigger volumes.
+Para começar, dê uma olhada no novo built-in `SceneStreamingScript`. Ele demonstra o carregamento de cena de fundo ao passar por volumes de gatilho.
 
-You can now use a scene's `Offset` to move its entities both at design time and runtime.
+Agora você pode usar o `Offset` de uma cena para mover suas entidades tanto no tempo de design quanto no tempo de execução.
 
-The `ChildSceneComponent` has been removed. We encourage all entities to be managed by a single **entity manager** and rendered by a single **graphics compositor**.
+O `ChildSceneComponent` foi removido. Encorajamos todas as entidades a serem geridas por um único gerenciador **entity** e renderizadas por um único compositor **graphics**.
 
-### Virtual reality
+### Realidade virtual
 
-Enabling VR is now as simple as a single click!
+Ganhar VR agora é tão simples como um único clique!
 
-Xenko's clustered forward rendering, with its multisample anti-aliasing, makes it ideal for VR. Xenko uses a single API for every device, with native support for Oculus and HTV Vive (more devices coming very soon).
+A renderização em cluster do Xenko, com seu multisample anti-aliasing, o torna ideal para VR. Xenko usa uma única API para cada dispositivo, com suporte nativo para Oculus e HTV Vive (mais dispositivos vêm muito em breve).
 
-Xenko comes with a VR game sample that shows you how to implement VR gameplay, including environment interaction and teleportation:
+Xenko vem com uma amostra de jogo VR que mostra como implementar a jogabilidade VR, incluindo interação ambiente e teletransporte:
 
 <video autoplay loop class="responsive-video" poster="media/ReleaseNotes-2.0/vr_template_640.jpg">
    <source src="media/ReleaseNotes-2.0/vr_template_640.mp4" type="video/mp4">
 </video>
 
-Save valuable time by visualizing and testing VR directly from the scene editor:
+Economize tempo valioso visualizando e testando VR diretamente do editor de cena:
 
 <video autoplay loop class="responsive-video" poster="media/ReleaseNotes-2.0/vr_editor_640.jpg">
    <source src="media/ReleaseNotes-2.0/vr_editor_640.mp4" type="video/mp4">
 </video>
 
-### Global illumination with light probes
+### Iluminação global com sondas de luz
 
-Light probes capture the lighting at the position you place them. They simulate indirect light, the effect of light bouncing off surfaces and illuminating other surfaces.
+Sondas de luz capturam a iluminação na posição que você coloca-los. Eles simulam a luz indireta, o efeito da luz saltando de superfícies e iluminando outras superfícies.
 
-They can make a dramatic difference to the mood and appearance of your scene.
+Eles podem fazer uma diferença dramática ao humor e aparência de sua cena.
 
 <video autoplay loop class="responsive-video" poster="media/ReleaseNotes-2.0/light_probes_640.jpg">
    <source src="media/ReleaseNotes-2.0/light_probes_640.mp4" type="video/mp4">
 </video>
 
-Light probes can be **placed freely** and are processed **per pixel**. This means you can use them not only on small dynamic objects, but also large or static objects (until we have light maps for those!).
+Sondas de luz podem ser ** colocadas livremente** e são processadas ** por pixel**. Isso significa que você pode usá-los não apenas em pequenos objetos dinâmicos, mas também objetos grandes ou estáticos (até que tenhamos mapas de luz para aqueles!).
 
-Last but not least, you can now very easily capture a DDS cubemap from current camera position in editor, for use as a diffuse or specular skybox light.
+Por último, mas não menos importante, agora você pode facilmente capturar um cubemap DDS da posição atual da câmera no editor, para uso como uma luz de caixa de céu difusa ou especular.
 
-### Light shafts
+### Eixos de luz
 
-Xenko now supports shadow map-based light shafts for directional lights.
+Xenko agora suporta eixos de luz baseados em mapas de sombra para luzes direcionais.
 
 <video autoplay loop class="responsive-video" poster="media/ReleaseNotes-2.0/lightshaft_CoS_640.jpg">
    <source src="media/ReleaseNotes-2.0/lightshaft_CoS_640.mp4" type="video/mp4">
 </video>
 
-Our implementation uses ray-marching rather than post effects, making the shaft visible and cool-looking even if the light source isn't visible.
+Nossa implementação usa raios-marching em vez de efeitos postais, tornando o eixo visível e arrefecer, mesmo que a fonte de luz não seja visível.
 
 <video autoplay loop class="responsive-video" poster="media/ReleaseNotes-2.0/lightshaft_640.jpg">
    <source src="media/ReleaseNotes-2.0/lightshaft_640.mp4" type="video/mp4">
 </video>
 
-### Graphics compositor
+### Compositor gráfico
 
-The graphics compositor is now a separate asset.
+O compositor gráfico é agora um ativo separado.
 
-Rendering parameters (such as VR) and post effect parameters can be tweaked in just a few clicks.
+Parâmetros de renderização (como VR) e parâmetros de efeito pós podem ser ajustados em apenas alguns cliques.
 
-![Graphics compositor](media/ReleaseNotes-2.0/graphics_compositor.jpg)
+<x1\/>Graphics compositor<x2\/>
 
-This is just the first step towards making the graphics compositor easy to customize and extend. Stay tuned for more changes in future releases!
+Este é apenas o primeiro passo para tornar o compositor gráfico fácil de personalizar e estender. Fique atento para mais mudanças em versões futuras!
 
-### Improved Visual Studio experience
+### Melhor experiência Visual Studio
 
-We now have full support for **Visual Studio 2017**!
+Agora temos suporte completo para **Visual Studio 2017**!
 
-* Xenko Visual Studio extension now supports Visual Studio 2017
-* Game Studio recognizes Visual Studio 2017
-* Games can use C# 7.0, and our script editor can recognize C# 7.0 and offer C# 7.0 refactoring thanks to Roslyn (you need to make your solution VS2017+ for it to work)
-* Our internal `AssemblyProcessor` which perform various operations on generated assemblies can now work with portable PDB (as generated by .NET Standard projects)
+* A extensão do Xenko Visual Studio agora suporta Visual Studio 2017
+* Game Studio reconhece Estúdio Visual 2017
+* Jogos podem usar C# 7.0, e nosso editor de scripts pode reconhecer C# 7.0 e oferecer C# 7.0 refactoring graças a Roslyn (você precisa fazer sua solução VS2017+ para que funcione)
+* Nosso interno `AssemblyProcessor` que executa várias operações em conjuntos gerados agora pode trabalhar com PDB portátil (como gerado por projetos padrão .NET)
 
-Programmers working with Xenko often go back and forth between Game Studio and Visual Studio. To make their lives easier, we made a few key improvements to the Xenko Visual Studio extension:
+Os programadores que trabalham com Xenko muitas vezes vão para trás e para a frente entre Game Studio e Visual Studio. Para facilitar suas vidas, fizemos algumas melhorias importantes para a extensão do Xenko Visual Studio:
 
-* You can now open the current solution in Game Studio directly from Visual Studio.
-* Syntax highlighting didn't behave well when switching theme.
-* Previously, when assets are compiling, MSBuild didn't report any progress until finished. It now displays information, warnings and errors while it compiles.
+* Agora você pode abrir a solução atual no Game Studio diretamente do Visual Studio.
+* O destaque da sintaxe não se comportou bem ao mudar de tema.
+* Anteriormente, quando os ativos estão compilando, a MSBuild não relatou nenhum progresso até terminar. Agora exibe informações, avisos e erros enquanto compila.
 
-Also, our whole build infrastructure and script editor is now based on the latest version of MSBuild 2017 and Roslyn. Supporting the new VS2017 Project System with .NET Standard is just a few steps away!
+Além disso, toda a nossa infraestrutura de compilação e editor de scripts agora é baseada na versão mais recente do MSBuild 2017 e Roslyn. Apoiando o novo sistema de projeto VS2017 com .NET O padrão está a poucos passos de distância!
 
-### Faster and lighter
+### Mais rápido e mais leve
 
-In order to provide a better experience for users, we've been working hard on various fronts to make the editor smoother and more responsive. This is still a work in progress and expect regular improvements.
+Para proporcionar uma melhor experiência para os usuários, temos trabalhado duro em várias frentes para tornar o editor mais suave e mais responsivo. Este ainda é um trabalho em andamento e espera melhorias regulares.
 
-Also, the package size is almost three times smaller, resulting in much faster download and install time.
+Além disso, o tamanho do pacote é quase três vezes menor, resultando em muito mais rápido download e tempo de instalação.
 
-## Breaking changes
+## Alterações de ruptura
 
-### Backward compatibility
+### Compatibilidade de retrocesso
 
-Xenko 2.0 supports project upgrades only for projects created with Xenko 1.10 Beta. If you want to upgrade a project made with an older version, update it to Xenko 1.10 first.
+Xenko 2.0 suporta atualizações de projeto apenas para projetos criados com Xenko 1.10 Beta. Se você quiser atualizar um projeto feito com uma versão mais antiga, atualize-o para Xenko 1.10 primeiro.
 
-### Visual Studio support
+### Suporte Visual Studio
 
-Xenko 2.0 supports Visual Studio 2015 and Visual Studio 2017 as IDEs. Visual Studio 2013 and earlier versions are no longer supported.
+Xenko 2.0 suporta Visual Studio 2015 e Visual Studio 2017 como IDEs. Visual Studio 2013 e versões anteriores não são mais suportadas.
 
-When upgrading a project from earlier version, in its `.csproj` file, set `ToolsVersion="14.0"` as the minimum required version.
+Ao atualizar um projeto da versão anterior, em seu arquivo `.csproj`, configure `ToolsVersion="14.0"` como a versão mínima exigida.
 
-### Navigation
+### Navegação
 
-All compontents related to navigation have been moved to their own `SiliconStudio.Xenko.Navigation` assembly and namespace.
+Todos os componentes relacionados à navegação foram movidos para o seu próprio `SiliconStudio.Xenko.Navigation` montagem e namespace.
 
-### Graphics Compositor
+### Compositor de gráficos
 
-Previously, rendering pipeline was customized by magic `IPipelinePlugin` at runtime. This was very hard to control. Now, most of the pipeline configuration happens  at design time in the new Graphics Compositor asset.
+Anteriormente, o pipeline de renderização foi personalizado por magia `IPipelinePlugin` no tempo de execução. Isto foi muito difícil de controlar. Agora, a maioria da configuração do pipeline acontece no momento do projeto no novo ativo do Compositor Gráfico.
 
-`RenderFrame` is gone. Renderer are typically declaring and allocating render targets.
+`RenderFrame` desapareceu. Renderador são tipicamente declarando e alocando alvos de renderização.
 
-## Known issues
+## Questões conhecidas
 
-* On Linux, when switching the underlying Graphics Platform, rendering doesn't occur or fail. To fix the problem, delete the cache, local, and roaming folders on the Linux host and restart the game.
-* Performance issues on mobile (being worked on)
-* On iOS, if `Enable device-specific builds` is toggled on (from the project properties), it's not possible to debug game code. To speed up your development manually select the architecture of your device from the Advanced tab.
-* Live scripting has been temporarily disabled
+* No Linux, ao alternar a plataforma gráfica subjacente, a renderização não ocorre ou falha. Para corrigir o problema, excluir o cache, local e roaming pastas no host Linux e reiniciar o jogo.
+* Problemas de desempenho em dispositivos móveis (ser trabalhado)
+* No iOS, se `Ativar compilações específicas do dispositivo` é alternada (a partir das propriedades do projeto), não é possível depurar o código do jogo. Para acelerar o seu desenvolvimento selecione manualmente a arquitetura do seu dispositivo a partir da aba Avançada.
+* O scripting ao vivo foi temporariamente desativado
 
-## Changelog
+## Mudança
 
-### Version 2.0.0.2 — 25 April 2017
+### Versão 2.0.0.2 — 25 Abril 2017
 
-#### Improvements
+#### Melhorias
 
-##### General
+##### Geral
 
-* Added VR game template
-* Game Studio and actual runtime game now share the same build cache. This should speed up build times.
-* Build dependencies are managed by a new system that greatly simplify copying and deployment. This should later benefit plugins and user projects when exposed to the user
-
-##### Game Studio
-
-* Improved how internal objects of an asset can be referenced
-* Improved keyboard navigation in tree views (eg entity hierarchy in scene and prefab editors)
-* Improved scrolling in tree views
-* Improved drag and drop performance
-* Entities can now be dragged and dropped from one scene to another
-* Exceptions in the embedded game of a scene editor no longer crash Game Studio and can be recoverable
-* Components of vectors can now be edited independently when using multi-selection
-* Camera navigation now uses a different key set:
-   * Alt + left mouse button - orbit
-   * Mouse wheel - zoom
-   * Right mouse button - spin camera
-   * Middle mouse button - pan
-   * Right + middle mouse buttons - camera hover
-* Added camera speed slider
-* The "New game" template has been touched up
-* "Save" and "Save all" have been merged into just "Save"
-* Navigation mesh overlay visibility can now be toggled per group
-* Scripts can now be closed without saving and opened again later
-* Script undo history now persists after closing a script
-* Added ability to capture a DDS cubemap from current editor camera position.
-* When viewing vertex streams, normals are now in 0..1 range instead of -1..1. Also, it is now possible to view normals in both world and tangent space
-
-##### Assets
-
-* Texture assets are now split into color, normal and grayscale subtypes
-* Replaced `SkyboxUsage` enum on `SkyboxAsset` with a boolean `IsSpecularOnly`
-* Improved robustness and error reporting on invalid Yaml when opening assets
-
-##### Engine
-
-* Added support for splash screens (they show only in release builds)
-
-##### Audio
-
-* Added HRTF binaural audio support for Windows (10+)
-
-##### Graphics
-
-* Added MSAA support
-* Added custom MSAA resolving filters
-* Shadow cascade calculation is now more stable
-* Multiple render targets now have better support
-* Point lights can now cast shadows
-* `SkyboxComponent` has been removed and the functionality moved into the `LightComponent` and `BackgroundComponent`
-* `BackgroundComponent` now accepts cubemap textures as an input
-* D3D11: Shaders that are compatible shares the same bytecode, avoiding extra state changes.
-* OpenGL: Implemented UpdateSubresource for 3D textures
-
-##### Particles
-
-* Additive rotation no longer has a default value of 1 radian; it's now 0
-* Initializers and updaters no longer add particle fields when disabled
-
-#### Physics
-
-* Reworked collisions filtering to improve performance
-
-##### Navigation
-
-* Bounding boxes can now be placed in the scene
-* Navigation meshes can now be generated/updated at runtime
-* `TryFindPath` now returns false instead of crashing if no navigation mesh is loaded
-* Navigation mesh layer indexes have been replaced with groups
-
-##### VR
-
-* Unique device-agnostic API
-* Oculus Rift support (HMD and controllers)
-* Vive support (HMD and controllers)
-
-#### Bug fixes
+* Adicionado modelo de jogo VR
+* Game Studio e jogo de tempo de execução real agora compartilhar o mesmo cache de compilação. Isto deve acelerar os tempos de construção.
+* As dependências de construção são gerenciadas por um novo sistema que simplifica muito a cópia e implementação. Isso deve mais tarde beneficiar plugins e projetos de usuário quando exposto ao usuário
 
 ##### Game Studio
 
-* Naming project libraries now avoids collisions
-* Invalid characters in the project name are now filtered out correctly and don't prevent the project compiling
-* Changing gizmo sizes no longer causes the slider to jump
-* Switching between gizmos no longer crashes the scene editor
-* Asset copy/paste now works better
-* Thumbnail behavior is now more stable
-* Fixed leaking of deleted assets or entities when navigating through the selection history
-* Fixed renaming assets undo/redo
-* Renaming an asset no longer closes its editor
-* Fixed reparenting assets with Alt key (maintains world position)
-* Fixed many problems related to manipulation of entities from prefabs
-* Fixed many problems related to moving entities in the scene hierarchy
-* The property grid now properly handles multi-selection
-* Fixed many problems related to properties overridden from Prefabs or from Archetypes
-* Fixed many problems related to copy/paste in the property grid
-* Fixed some cases where *Create prefab from selection* wasn't properly linking the selected entities to the newly created prefab
-* Fixed several problems when manipulating the model or materials in a `ModelComponent`, especially when the entity is inherited from a prefab
-* The material highlighting button now works properly
-* Assets that failed to save now prevent Game Studio from closing and losing your changes
-* Sprites can be selected again in the scene editor
-* Undoing/redoing creation or removal of script assets now works correctly
-* Setting a translation snap of 0 now works as expected
-* Light gizmos correctly update when changing the light type
-* Typing the URL to a reference in an asset picked now works as expected
-* Keys were often stuck (especially annoying when moving around), this is fixed
+* Melhorado como objetos internos de um ativo podem ser referenciados
+* Navegação de teclado aprimorada em vistas de árvores (por exemplo, hierarquia de entidades em cena e editores pré-fabricados)
+* Rolagem melhorada em vistas de árvores
+* Melhor desempenho de arrastar e soltar
+* As entidades podem agora ser arrastadas e retiradas de uma cena para outra
+* Exceções no jogo incorporado de um editor de cena já não travar Game Studio e pode ser recuperável
+* Componentes de vetores podem agora ser editados de forma independente ao usar multi-seleção
+* A navegação da câmera agora usa um conjunto de chaves diferente:
+   * Alt + botão esquerdo do mouse - órbita
+   * Roda do mouse - zoom
+   * Botão direito do mouse - câmera giratória
+   * Botão do mouse médio - pan
+   * Direita + botões do mouse do meio - hover da câmera
+* Adicionado controle deslizante de velocidade da câmera
+* O modelo "Novo Jogo" foi tocado
+* "Save" e "Save all" foram fundidos em apenas "Save"
+* A visibilidade de sobreposição de malha de navegação agora pode ser alternada por grupo
+* Os scripts agora podem ser fechados sem salvar e abrir novamente mais tarde
+* O histórico de desfazer de script agora persiste após fechar um script
+* Adicionado capacidade de capturar um cubemap DDS da posição atual da câmera do editor.
+* Ao visualizar fluxos de vértices, os normais estão agora na faixa 0..1 em vez de -1..1. Além disso, agora é possível ver os normais no mundo e no espaço tangente
 
-##### Assets
+##### Activos
 
-* Fixed an issue when asset compilation was failing due to WCF message size between slave asset builder being too big
+* Os ativos de textura são agora divididos em subtipos de cor, normal e de tons de cinza
+* Substituido `SkyboxUsage` enum em `SkyboxAsset` com um booleano `IsSpecularOnly`
+* Aumento da robustez e notificação de erros no Yaml inválido ao abrir ativos
 
-##### Engine
+##### Motor
 
-* Fixed right Shift key detection in WinForms
-* The `Start` method of scripts is now always called before the `Update` method of any `SyncScript` in the same frame
-* `SyncScripts` no longer cause crashes when scheduled from a different thread
-* Scripts are no longer started or updated if another script removes them from the scene in the same frame
-* `ImageElements` are now properly displayed when using a `SpriteFromTexture`
+* Adicionado suporte para telas de respingo (eles mostram apenas em release builds)
 
-##### Graphics
+##### Áudio
 
-* Orthographic views no longer display broken shadows
-* Shadows no longer disappear when viewed exactly vertically
-* Cascade blending no longer causes holes in shadows
-* Tesselated objects now cast shadows
-* Normal-mapped object lighting is now correct when non-uniform scaling is applied
-* Using unbound vertex streams in shaders no longer causes crashes
-* Bright post effects are now more stable
-* VR now shares shadows and culling for each eye
-* Clustered lighting now works with multiple render views
-* Fixed RGB/HSV color conversions
-* Fixed engine exit when using RenderDoc profiling
-* Fixed Multisample Quality Level for MSAA textures
-* Tesselation and displacement mapping no longer cause rendering errors in the editor
-* Renamed MSAALevel into MultisampleCount
+* Adicionado suporte de áudio binaural HRTF para Windows (10+)
 
-##### Physics
+##### Gráficos
 
-* Removing and re-adding entities no longer causes crashes in certain situations
+* Adicionado suporte MSAA
+* Adicionados filtros personalizados de resolução MSAA
+* Cálculo de cascata sombra é agora mais estável
+* Vários alvos de renderização agora têm melhor suporte
+* Luzes de ponto agora podem lançar sombras
+* `SkyboxComponent` foi removido e a funcionalidade mudou-se para o `LightComponent` e `BackgroundComponent`
+* `BackgroundComponent` agora aceita texturas cubemap como uma entrada
+* D3D11: Shaders compatíveis compartilha o mesmo bytecode, evitando mudanças de estado extra.
+* OpenGL: Implementado UpdateSubresource para texturas 3D
 
-### Version 2.0.1.1 — 28 April 2017
+##### Partes
 
-#### Bug fixes
+* A rotação aditiva não tem mais um valor padrão de 1 radiano; agora é 0
+* Inicializadores e atualizadores já não adicionam campos de partículas quando desativados
 
-##### Game Studio
+#### Física
 
-* Fixed a potential crash when enabling VR in the editor and opening multiple scenes/prefabs
-* Prevents to drag and drop an entity that depends on a prefab into it (or an ancestor prefab) that would have created a cyclic reference and crashed the editor
-* Fixed an issue with automatic assembly reload
+* Colisões retrabalhadas filtrando para melhorar o desempenho
 
-##### Engine
+##### Navegação
 
-* Fixed a crash when computing light probes
+* As caixas de som agora podem ser colocadas na cena
+* As malhas de navegação podem agora ser geradas \/ atualizadas no tempo de execução
+* `TryFindPath` agora retorna falso em vez de falhar se nenhuma malha de navegação é carregada
+* Índices de camada de malha de navegação foram substituídos por grupos
 
-##### Build
+##### RV
 
-* Fixed a possible issue when compiling a game that targets iOS and the right Xamarin version cannot be found
+* Dispositivo único-agnóstico API
+* Oculus Rift suporte (HMD e controladores)
+* Suporte Vive (HMD e controladores)
 
-### Version 2.0.2.1 — 8 June 2017
-
-#### Improvements
+#### Correções de bugs
 
 ##### Game Studio
 
-* Visual Studio version picker now shows the installation nickname to easily differentiate when multiple instances are installed side by side
-* Add the concept of _active scene_ in the scene editor. Dropping an asset to the scene view will an entity add to the currently active scene instead of the root scene
+* Nomear bibliotecas de projeto agora evita colisões
+* Personagens inválidos no nome do projeto agora são filtrados corretamente e não impedem a compilação do projeto
+* Mudar tamanhos de gizmo já não faz com que o controle deslizante pular
+* Mudar entre gizmos já não trava o editor de cena
+* Asset copy\/paste agora funciona melhor
+* O comportamento de Thumbnail é agora mais estável
+* Vazamento fixo de ativos ou entidades excluídos ao navegar pelo histórico de seleção
+* Renomear ativos fixos undo\/redo
+* Renaming an asset longer closes its editor
+* Activos reparentados fixos com Alt key (mantém a posição mundial)
+* Corrigido muitos problemas relacionados à manipulação de entidades de prefabs
+* Corrigido muitos problemas relacionados a entidades em movimento na hierarquia de cena
+* A grade de propriedade agora lida corretamente com multi-seleção
+* Corrigido muitos problemas relacionados a propriedades sobrepostas de Prefabs ou de Arquétipos
+* Corrigido muitos problemas relacionados com copiar \/ colar na grade da propriedade
+* Corrigido alguns casos em que *Create prefab da seleção* não foi corretamente vinculando as entidades selecionadas para o pré-fab recém-criado
+* Corrigido vários problemas ao manipular o modelo ou materiais em um `ModelComponent`, especialmente quando a entidade é herdada de um prefab
+* O botão de destaque do material agora funciona corretamente
+* Os ativos que não conseguiram salvar agora impedem Game Studio de fechar e perder suas mudanças
+* Sprites podem ser selecionados novamente no editor de cena
+* Desfazer\/refazer criação ou remoção de ativos de script agora funciona corretamente
+* Definir um snap de tradução de 0 agora funciona como esperado
+* Gizmos de luz atualizar corretamente ao alterar o tipo de luz
+* Digitar a URL para uma referência em um ativo escolhido agora funciona como esperado
+* As chaves eram muitas vezes presas (especialmente irritantes quando se deslocam), isto é fixo
 
-##### Graphics
+##### Activos
 
-* VR: Added a CopyMirror option to control if VR rendering is copied back to current render target
-* Shaders: StructuredBuffer were being declared before their struct type; ordering should now be correct
+* Corrigido um problema quando a compilação de ativos estava falhando devido ao tamanho da mensagem WCF entre o construtor de ativos escravos ser muito grande
 
-#### Bug fixes
+##### Motor
+
+* Direito fixo Detecção de teclas Shift em WinForms
+* O método `Start` dos scripts é agora sempre chamado antes do método `Update`G2> de qualquer `Script` no mesmo quadro
+* `SyncScripts` não causa mais falhas quando programado de uma linha diferente
+* Os scripts não são mais iniciados ou atualizados se outro script os remover da cena no mesmo quadro
+* <g1Image> Elements</g> agora são exibidos corretamente ao usar um <g id="2">SpriteFromTexture</g><g id="1">
+
+##### Gráficos
+
+* As vistas ortográficos já não exibem sombras quebradas
+* As sombras não desaparecem mais quando vistas exatamente verticalmente
+* A mistura de cascata não causa mais buracos nas sombras
+* Objetos Tesselated agora lançam sombras
+* Iluminação de objeto normal é agora correta quando o dimensionamento não uniforme é aplicado
+* Usando fluxos de vértices inbound em shaders não causa mais acidentes
+* Efeitos de post brilhantes agora são mais estáveis
+* VR agora compartilha sombras e inclinações para cada olho
+* Iluminação embutida agora funciona com várias visualizações de renderização
+* Conversões de cores RGB \/ HSV fixas
+* Saída do motor fixo ao usar o perfil RenderDoc
+* Multisample fixo Nível de qualidade para texturas MSAA
+* Tesselation e mapeamento de deslocamento não causam mais erros de renderização no editor
+* Renamed MSAA Nível em MultisampleCount
+
+##### Física
+
+* Remover e re-adicionar entidades não causa mais acidentes em determinadas situações
+
+### Versão 2.0.1.1 — 28 de abril de 2017
+
+#### Correções de bugs
 
 ##### Game Studio
 
-* Color Picker was behaving strangely due to some RGB to HSV conversion issues
-* Global store.config was preventing Game Studio to find Xenko installation [#576](https://github.com/SiliconStudio/xenko/issues/576)
-* Fix a crash that occurs when replacing a sprite in the property grid of a spritesheet
-* Fix some string comparison that were using the current locale of the system, causing issues with some language such as Turkish
-* Prevent modal windows from being minimized
-* Restore some missing sliders in the property grid (that were replaced by a plain text box), review ranges and step values for most of them
-* Fix a potential crash at serialization when a script had a null reference to another `Entity` or `EntityComponent` (and some other similar scenarios)
-* Partial fix of the property grid template for entity component references
-* Fix an issue with the property grid template used to edit `char` properties
+* Corrigido um potencial acidente ao ativar o VR no editor e abrir várias cenas\/prefabs
+* Impede arrastar e soltar uma entidade que depende de um prefab nele (ou um antepassado prefab) que teria criado uma referência cíclica e caiu o editor
+* Corrigido um problema com recarga de montagem automática
 
-##### VR
+##### Motor
 
-* Fix runtime crash when adding twice the same VR device API in the required API list
-* OpenVR: camera was rotating around world center instead of camera center when a rotation was applied on entity
+* Corrigido um acidente quando a computação sondas de luz
 
-##### Graphics
+##### Construa
 
-* Fixed point lights not casting shadows from objects that have tessellation enabled
-* Fixed a bug where some lights would not render [#586](https://github.com/SiliconStudio/xenko/issues/586)
+* Corrigido um problema possível ao compilar um jogo que visa iOS e a versão Xamarin direita não pode ser encontrada
+
+### Versão 2.0.2.1 — 8 Junho 2017
+
+#### Melhorias
+
+##### Game Studio
+
+* Visual Studio versão picker agora mostra o apelido de instalação para facilmente diferenciar quando várias instâncias são instaladas lado a lado
+* Adicione o conceito de cena _active_ no editor de cena. Deixar um ativo para a visão de cena uma entidade adicionará à cena atualmente ativa em vez da cena raiz
+
+##### Gráficos
+
+* RV: Adicionado uma opção CopyMirror para controlar se a renderização VR é copiada de volta para o destino de renderização atual
+* Shaders: EstruturadoBuffer estavam sendo declarados antes de seu tipo de struct; ordem agora deve ser correta
+
+#### Correções de bugs
+
+##### Game Studio
+
+* Color Picker estava se comportando estranhamente devido a alguns problemas de conversão RGB para HSV
+* Loja global. config estava impedindo Game Studio para encontrar a instalação Xenko [#576](https://github.com/SiliconStudio/xenko/issues/576)
+* Corrigir um acidente que ocorre ao substituir um sprite na grade de propriedade de uma spritesheet
+* Corrigir alguma comparação de cadeia de caracteres que estavam usando o local atual do sistema, causando problemas com algum idioma, como o turco
+* Impedir que as janelas modais sejam minimizadas
+* Restaurar alguns controles deslizantes em falta na grade da propriedade (que foram substituídos por uma caixa de texto simples), intervalos de revisão e valores de passo para a maioria deles
+* Corrigir uma falha potencial na serialização quando um script tinha uma referência nula a outro `Entidade` ou `EntidadeComponente` (e alguns outros cenários semelhantes)
+* Correção parcial do modelo de grade de propriedade para referências de componentes da entidade
+* Corrigir um problema com o modelo de rede de propriedade usado para editar propriedades `char`
+
+##### RV
+
+* Corrigir falhas de tempo de execução ao adicionar duas vezes a mesma API de dispositivo VR na lista de APIs exigida
+* OpenVR: câmera estava girando em torno do centro mundial em vez do centro da câmera quando uma rotação foi aplicada na entidade
+
+##### Gráficos
+
+* Luzes de ponto fixo não lançando sombras de objetos que têm tessellation habilitado
+* Corrigido um bug onde algumas luzes não renderiam [#586](https://github.com/SiliconStudio/xenko/issues/586)
 
 ##### Android
 
-* Fix a memory allocation that could make a game crash at startup on certain devices.
+* Corrigir uma alocação de memória que poderia fazer um acidente de jogo na inicialização em certos dispositivos.
 
-##### Others
+##### Outros
 
-* Connection Router was not running properly if the Game Studio of that Xenko version didn't run first
-* Add `*.lock.json` pattern to generated `.gitignore` file (when creating a project)
+* Connection Router não estava funcionando corretamente se o Game Studio dessa versão Xenko não foi executado primeiro
+* Adicionar `*.lock.json` padrão para gerar `.gitignore` arquivo (quando criar um projeto)
 
-### Version 2.0.3.1 — 24 July 2017
+### Versão 2.0.3.1 — 24 Julho 2017
 
-* Extend closure time of the promotion to 11:30am, January 1st, 2018 (UTC+09:00).
+* Estenda o tempo de fechamento da promoção para as 11:30h, 1 de janeiro de 2018 (UTC+09:00).
 
-### Version 2.0.4.1 — 23 August 2017
+### Versão 2.0.4.1 — 23 de agosto de 2017
 
-* Fix an issue with latest Visual Studio and MSBuild (15.3) [#617](https://github.com/SiliconStudio/xenko/issues/617) related to [msbuild #2369](https://github.com/Microsoft/msbuild/issues/2369).
+* Corrigir um problema com o mais recente Visual Studio e MSBuild (15.3) [#617](https://github.com/SiliconStudio/xenko/issues/617) relacionado a [msbuild #2369](https://github.com/Microsoft/msbuild/issues/2369).

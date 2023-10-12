@@ -1,7 +1,7 @@
-# Asset pipeline
+# Pipeline de ativos
 
-This more theoretical tutorial covers the general terminology of the Stride asset pipeline. We learn the differences between them and in what stage of the game making process they come up.
+Este tutorial mais teórico abrange a terminologia geral do pipeline de ativos Stride. Aprendemos as diferenças entre eles e em que fase do processo de criação de jogos eles surgem.
 
-[!INCLUDE [stride-studio-note](../../includes/game-studio-xenko-note.md)]
+[! INCLUÍDO [stride-studio-note](../../includes/game-studio-xenko-note.md)]
 
-> [!Video https://www.youtube.com/embed/cGLg-ocJ9hA]
+> [!Vídeo https://www.youtube.com/embed/cGLg-ocJ9hA]

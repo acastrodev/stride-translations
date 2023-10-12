@@ -1,7 +1,7 @@
-# Physics intro
+# Introdução à física
 
-In this tutorial we learn about the basics of physics with Stride game studio. We learn that there are 3 different types of collider components and how to debug those in game studio as well as in game.
+Neste tutorial aprendemos sobre o básico da física com o estúdio de jogo Stride. Nós aprendemos que existem 3 tipos diferentes de componentes de colisão e como depurar aqueles em estúdio de jogo, bem como no jogo.
 
-[!INCLUDE [stride-studio-note](../../includes/game-studio-xenko-note.md)]
+[! INCLUÍDO [stride-studio-note](../../includes/game-studio-xenko-note.md)]
 
-> [!Video https://www.youtube.com/embed/mgetdOlGiHc]
+> [!Vídeo https://www.youtube.com/embed/mgetdOlGiHc]

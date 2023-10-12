@@ -1,72 +1,72 @@
-# Cached files
+# Arquivos de Cached
 
-When you build your project, Stride caches the assets and code in folders inside the project.
+Quando você constrói seu projeto, o Stride armazena os ativos e o código em pastas dentro do projeto.
 
-You might want to clean the cache if:
+Você pode querer limpar o cache se:
 
-* the cache is taking up too much space on disk
+* o cache está ocupando muito espaço no disco
 
-* assets don't update in-game after you edit or delete them
+* ativos não atualizam no jogo depois de editá-los ou excluí-los
 
-## Clean the cache from Visual Studio
+## Limpe o cache do Visual Studio
 
-1. To clean the code cache, under **Build**, select **Clean Solution**.
+1. Para limpar o cache de código, em **Build**, selecione **Clean Solution**.
 
-   ![Clean solution](media/clean-solution.png)
+   <x1\/>Solução limpa <x2\/>
 
-2. If you have the [Stride Visual Studio extension](../get-started/visual-studio-extension.md) installed, you can also clean the asset cache. To do this, under **Stride**, select **Clean intermediate assets for Solution**.
+2. Se você tiver a extensão [Stride Visual Studio](../get-started/visual-studio-extension.md) instalada, você também pode limpar o cache de ativos. Para fazer isso, abaixo de **Stride**, selecione ** Activos intermediários limpos para Solution**.
 
-   ![Clean solution](media/clean-assets.png)
+   <x1\/>Solução limpa <x2\/>
 
-3. Rebuild the project to rebuild the cache from scratch.
+3. Reconstrua o projeto para reconstruir o cache do zero.
 
-## Clean the cache manually
+## Limpe manualmente o cache
 
-If cleaning the cache from Visual Studio doesn't work, try deleting the files manually.
+Se limpar o cache do Visual Studio não funciona, tente apagar os arquivos manualmente.
 
-1. Delete the following folders:
+1. Excluir as seguintes pastas:
 
-   * the binary cache: *~/MyGame/MyGame/Bin*
+   * o cache binário: *~\/MyGame\/MyGame\/Bin*
 
-   * the asset cache: *~/MyGame/MyGame/Cache*
+   * o cache de ativos: *~\/MyGame\/MyGame\/Cache*
 
-   * the **obj** folders in the platform folders for your game (eg *~/MyGame.iOS/obj*)
+   * as pastas **obj** nas pastas da plataforma para o seu jogo (por exemplo *~\/MyGame.iOS\/obj*)
 
-2. If you're developing for iOS, on your Mac, also delete: *~/Library/Caches/Xamarin/mtbs/builds/MyGame*
+2. Se você estiver desenvolvendo para iOS, no Mac, também exclua: *~\/Library\/Caches\/Xamarin\/mtbs\/builds\/MyGame*
 
-3. Rebuild the project to rebuild the cache from scratch.
+3. Reconstrua o projeto para reconstruir o cache do zero.
 
-## Clear the Game Studio caches
+## Limpar os caches do Game Studio
 
-In addition to the caches Stride creates for your project, Game Studio keeps caches for the editor.
+Além dos caches que Stride cria para o seu projeto, Game Studio mantém caches para o editor.
 
-### Asset cache
+### Cache de ativos
 
-To speed up asset loading in the editor, Game Studio saves a cache of asset references. It contains data about every asset ever loaded in every project. This means it can grow very large over time.
+Para acelerar o carregamento de ativos no editor, Game Studio salva um cache de referências de ativos. Ele contém dados sobre cada ativo já carregado em cada projeto. Isso significa que pode crescer muito grande ao longo do tempo.
 
-By default, the folder is in: *%temp%/Stride*
+Por padrão, a pasta está em: *%temp%\/Stride*
 
-> [!Tip]
-> To check or change where Game Studio saves the cache, see **Edit > Settings > Environment > Build cache directory.**
-> ![Settings](media/settings-window.png)
+> <x1\/>!Tip<x2\/>
+> Para verificar ou alterar onde o Game Studio salva o cache, consulte **Edit > Settings > Environment > Criar diretório de cache.**
+> <x3\/>Configurações <x4\/>
 
-To clean the cache, delete the folder and run Game Studio again.
+Para limpar o cache, exclua a pasta e execute Game Studio novamente.
 
-### Settings cache
+### Configurações de cache
 
-Game Studio saves editor information (such as window positions and recently-opened projects) in: *%AppData%/Stride*
+Game Studio salva informações do editor (como posições de janela e projetos recentemente abertos) em: *%Dados de App%\/Stride*
 
-Game Studio also saves information about open tabs and the editor camera position in the `.sdpkg.user` file in the project folder (eg *~/MyGame/MyGame/MyGame.sdpkg.user*).
+O Game Studio também salva informações sobre abas abertas e a posição da câmera do editor no arquivo `.sdpkg.user` na pasta do projeto (por exemplo *~\/MyGame\/MyGame\/MyGame\/MyGame.sdpkg.user*).
 
-These files are small, but you might want to delete them if you get Game Studio into a bad state. Deleting them doesn't affect anything in your project.
+Estes arquivos são pequenos, mas você pode querer excluí-los se você obter Game Studio em um estado ruim. Excluí-los não afeta nada no seu projeto.
 
-After you delete cache files, when you start Game Studio, it builds a new cache using the default settings.
+Depois de excluir arquivos de cache, quando você iniciar o Game Studio, ele constrói um novo cache usando as configurações padrão.
 
-> [!Tip]
-> You can also reset the Game Studio layout without clearing the cache in **Edit > Settings > Interface > Reset Game Studio layout**.
-> ![Reset Game Studio layout](media/game-studio-layout-reset-button.png)
+> <x1\/>!Tip<x2\/>
+> Você também pode redefinir o layout do Game Studio sem limpar o cache em **Edit > Configurações > Interface > Reset Game Studio layout**.
+> <x3\/>Reset Game Studio layout<x4\/>
 
-## See also
+## Ver também
 
-* [Project structure](project-structure.md)
-* [Version control](version-control.md)
+* [Estrutura do projecto](project-structure.md)
+* [Controle de versão](version-control.md)

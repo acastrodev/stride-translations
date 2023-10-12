@@ -1,14 +1,14 @@
-# Audio
+# Áudio
 
-This C# Intermediate tutorial covers the basics of audio in your game.
+Este tutorial intermediário C# cobre o básico de áudio em seu jogo.
 
-## Explanation
-We learn about the various types of audio formats and settings. We cover how to use 3d spatialized audio and we also look at streaming audio.
+## Explicação
+Nós aprendemos sobre os vários tipos de formatos de áudio e configurações. Cobrimos como usar áudio 3d espacializado e também olhamos para streaming de áudio.
 
-> [!Video https://www.youtube.com/embed/Guf7PESCwnc]
+> [!Vídeo https://www.youtube.com/embed/Guf7PESCwnc]
 
-## Audio sounds and spatial sounds
+## Sons de áudio e sons espaciais
 [!code-csharp[audio](../../../../stride/samples/Tutorials/CSharpIntermediate/CSharpIntermediate/CSharpIntermediate.Game/08_Audio/AudioDemo.cs)]
 
-## Streaming sounds
+## Streaming de sons
 [!code-csharp[streamingaudio](../../../../stride/samples/Tutorials/CSharpIntermediate/CSharpIntermediate/CSharpIntermediate.Game/08_Audio/LoadMusic.cs)]

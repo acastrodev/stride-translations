@@ -1,55 +1,55 @@
-# Virtual buttons
+# Botões virtuais
 
-<span class="badge text-bg-primary">Intermediate</span>
-<span class="badge text-bg-success">Programmer</span>
+<x1\/> Intermediário <x2\/>
+<x3\/> Programador <x4\/>
 
-Rather than bind controls to physical keys and buttons, you can bind them to **virtual buttons**. Players can then assign physical buttons to the virtual buttons, allowing them to create their own control schemes.
+Em vez de ligar controles para chaves físicas e botões, você pode ag1>virtual botões</g>.<g id="1"> Os jogadores podem então atribuir botões físicos aos botões virtuais, permitindo-lhes criar seus próprios esquemas de controle.
 
-For example, imagine you develop a first-person shooter game and need to assign a key for the _UseMedkit_ function. Rather than bind the function to a particular key, you can create a **virtual button** called _UseMedkit_, then bind the virtual button to, say, the **F** key. If they want to, the player can then bind the virtual key to a different key at runtime.
+Por exemplo, imagine que você desenvolva um jogo de tiro em primeira pessoa e precise atribuir uma chave para a função _UseMedkit_. Em vez de ligar a função a uma chave particular, você pode criar um botão **virtual** chamado _UseMedkit_, em seguida, ligar o botão virtual para, digamos, a tecla **F**. Se quiser, o jogador pode ligar a chave virtual a uma chave diferente no tempo de execução.
 
-![Virtual buttons](media/index-how-virtual-buttons-work.png)
+<x1\/> Botões virtuais<x2\/>
 
-## Use virtual buttons
+## Use botões virtuais
 
-1. Bind a key, button, or pointer to a virtual button (eg _MyButton_).
-2. Create a list of virtual buttons.
-3. Add _MyButton_ to the list of virtual buttons.
-4. Assign a function to _MyButton_.
-5. Create additional virtual buttons.
-6. Add the additional buttons to the same list, or create additional lists.
+1. Ligar uma chave, botão ou ponteiro para um botão virtual (por exemplo _MyButton_).
+2. Crie uma lista de botões virtuais.
+3. Adicione _MyButton_ à lista de botões virtuais.
+4. Atribuir uma função a _MyButton_.
+5. Criar botões virtuais adicionais.
+6. Adicione os botões adicionais à mesma lista ou crie listas adicionais.
 
-## Example code
+## Exemplo de código
 
 ```cs
-public override void Start()
-{
+anula de sobreposição pública Start()
+(
     base.Start();
 
-    // Create a new VirtualButtonConfigSet if none exists. 
-    Input.VirtualButtonConfigSet = Input.VirtualButtonConfigSet ?? new VirtualButtonConfigSet();
+    \/\/ Criar um novo VirtualButtonConfig Definir se nenhuma existe. 
+    Entrada.VirtualButtonConfigSet = Entrada.VirtualButtonConfigSet??? novo VirtualButtonConfigSet();
     
-    //Bind "M" key, GamePad "Start" button and left mouse button to a virtual button "MyButton".
-    VirtualButtonBinding b1 = new VirtualButtonBinding("MyButton", VirtualButton.Keyboard.M);
-    VirtualButtonBinding b2 = new VirtualButtonBinding("MyButton", VirtualButton.GamePad.Start);
-    VirtualButtonBinding b3 = new VirtualButtonBinding("MyButton", VirtualButton.Mouse.Left);
+    \/\/Bind "M" chave, GamePad "Start" botão e botão esquerdo do mouse para um botão virtual "MyButton".
+    VirtualButtonBinding b1 = novo VirtualButtonBinding("MyButton", VirtualButton.Keyboard.M);
+    VirtualButtonBinding b2 = novo VirtualButtonBinding("MyButton", VirtualButton.GamePad.Start);
+    VirtualButtonBinding b3 = novo VirtualButtonBinding("MyButton", VirtualButton.Mouse.Left);
 
-    VirtualButtonConfig c = new VirtualButtonConfig();
+    VirtualButtonConfig c = novo VirtualButtonConfig();
 
-    c.Add(b1);
-    c.Add(b2);
-    c.Add(b3);
+    c. Adicionar(b1);
+    c. Adicionar(b2);
+    c. Adicionar(b3);
 
-    Input.VirtualButtonConfigSet.Add(c);
+    Entrada.VirtualButtonConfigSet.Add(c);
 }
 
-public override void Update() {
-    float button = Input.GetVirtualButton(0, "MyButton");
+atualização() {
+    botão float = Entrada.GetVirtualButton(0, "MyButton");
 }
 ```
 
-## See also
+## Ver também
 * [Gamepads](gamepads.md)
-* [Keyboard](keyboards.md)
+* [Teclado](keyboards.md)
 * [Mouse](mouse.md)
-* [Pointers](pointers.md)
-* [Input overview](index.md)
+* [Pontos](pointers.md)
+* [Visão geral da entrada](index.md)

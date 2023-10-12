@@ -1,5 +1,5 @@
-# Introduction
+# Introdução
 
-This is a brief introduction to the C# intermediate tutorials for the Stride game engine. We will cover how to set up the C# tutorials project, as well as the layout of the project and how it works.
+Esta é uma breve introdução aos tutoriais intermediários C# para o motor de jogo Stride. Vamos cobrir como configurar o projeto de tutoriais C#, bem como o layout do projeto e como ele funciona.
 
-> [!Video https://www.youtube.com/embed/-IXw64hZAqg]
+> [!Vídeo https://www.youtube.com/embed/-IXw64hZAqg]

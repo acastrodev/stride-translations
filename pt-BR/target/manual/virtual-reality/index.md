@@ -1,19 +1,19 @@
-# Virtual reality (VR)
+# Realidade virtual (VR)
 
-Stride currently supports the Oculus Rift and Vive virtual reality (VR) devices.
+O Stride atualmente suporta os dispositivos Oculus Rift e Vive realidade virtual (VR).
 
-![Virtual reality](media/virtual-reality.png)
+<x1\/> Realidade virtual <x2\/>
 
-## VR template
+## Modelo de RV
 
-Stride includes a VR template you can use to check out VR implementation.
+O Stride inclui um modelo VR que você pode usar para verificar a implementação VR.
 
-![VR template](media/template-virtual-reality.png)
+<x1\/>VR template<x2\/>
 
-## In this section
+## Nesta secção
 
-* [Enable VR](enable-vr.md)
-* [Preview a scene in VR](preview-a-scene-in-vr.md)
-* [Overlays](overlays.md)
-   * [Display a UI in an overlay](display-a-UI-in-an-overlay.md)
-* [VR sickness](vr-sickness.md)
+* [Habilitar VR](enable-vr.md)
+* [Visualizar uma cena em VR](preview-a-scene-in-vr.md)
+* [Sobreposições](overlays.md)
+   * [Exibir uma interface de usuário em uma sobreposição](display-a-UI-in-an-overlay.md)
+* [Doença de RV](vr-sickness.md)

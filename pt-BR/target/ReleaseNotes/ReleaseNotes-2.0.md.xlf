@@ -3,281 +3,281 @@
 <body>
 <trans-unit id="tu1" xml:space="preserve">
 <source xml:lang="en">Xenko 2.0 release notes</source>
-<target xml:lang="pt">Xenko 2.0 release notes</target>
+<target xml:lang="pt">Notas de versão do Xenko 2.0</target>
 </trans-unit>
 <trans-unit id="tu2" xml:space="preserve">
 <source xml:lang="en">Highlights</source>
-<target xml:lang="pt">Highlights</target>
+<target xml:lang="pt">Destaques</target>
 </trans-unit>
 <trans-unit id="tu3" xml:space="preserve">
 <source xml:lang="en">Scene hierarchy and scene streaming</source>
-<target xml:lang="pt">Scene hierarchy and scene streaming</target>
+<target xml:lang="pt">Hierarquia de cena e streaming de cena</target>
 </trans-unit>
 <trans-unit id="tu4" xml:space="preserve">
 <source xml:lang="en">Working with scenes has become more flexible. Instead of a single scene, your game can now use a hierarchy of scenes to organize entities into levels, areas or layers, and let teams collaborate on them more efficiently.</source>
-<target xml:lang="pt">Working with scenes has become more flexible. Instead of a single scene, your game can now use a hierarchy of scenes to organize entities into levels, areas or layers, and let teams collaborate on them more efficiently.</target>
+<target xml:lang="pt">Trabalhar com cenas tornou-se mais flexível. Em vez de uma única cena, seu jogo agora pode usar uma hierarquia de cenas para organizar entidades em níveis, áreas ou camadas, e deixar as equipes colaborar sobre eles de forma mais eficiente.</target>
 </trans-unit>
 <trans-unit id="tu5" xml:space="preserve">
 <source xml:lang="en">Game Studio displays child scenes together with their parent. Individual scenes can be loaded, unload, locked and moved around.</source>
-<target xml:lang="pt">Game Studio displays child scenes together with their parent. Individual scenes can be loaded, unload, locked and moved around.</target>
+<target xml:lang="pt">Game Studio exibe cenas de crianças junto com seus pais. As cenas individuais podem ser carregadas, descarregadas, bloqueadas e movimentadas.</target>
 </trans-unit>
 <group id="sd1_ssf1" resname="sub-filter:sd1">
 </group>
 <trans-unit id="tu6" xml:space="preserve">
 <source xml:lang="en">When running your game, the <g id="1">default scene</g> set in your <g id="2">game settings</g> is loaded as the <g id="3">root scene</g> and can be used to store persistent entities. More scenes can be dynamically loaded and unloaded from scripts and added as <g id="4">child scenes</g>.</source>
-<target xml:lang="pt">When running your game, the <g id="1">default scene</g> set in your <g id="2">game settings</g> is loaded as the <g id="3">root scene</g> and can be used to store persistent entities. More scenes can be dynamically loaded and unloaded from scripts and added as <g id="4">child scenes</g>.</target>
+<target xml:lang="pt">Ao executar seu jogo, a cena <g id="1">default</g> definida em suas configurações <g id="2">game</g> é carregada como a cena <g id="3">root</g> e pode ser usada para armazenar entidades persistentes. Mais cenas podem ser carregadas dinamicamente e descarregadas de scripts e adicionadas como cenas <g id="4">child</g>.</target>
 </trans-unit>
 <trans-unit id="tu7" xml:space="preserve">
 <source xml:lang="en">var childScene = Content.Load&lt;Scene&gt;("myChildScene");
 SceneSystem.SceneInstance.RootScene.Children.Add(childScene);
 </source>
 <target xml:lang="pt">var childScene = Content.Load&lt;Scene&gt;("myChildScene");
-SceneSystem.SceneInstance.RootScene.Children.Add(childScene);
+SceneSystem.SceneInstance.RootScene.Children.Add (childScene);
 </target>
 </trans-unit>
 <group id="sd1_ssf2" resname="sub-filter:sd1">
 </group>
 <trans-unit id="tu8" xml:space="preserve">
 <source xml:lang="en">To get started, take a look at the new built-in <g id="1">SceneStreamingScript</g>. It demonstrates background scene loading when passing through trigger volumes.</source>
-<target xml:lang="pt">To get started, take a look at the new built-in <g id="1">SceneStreamingScript</g>. It demonstrates background scene loading when passing through trigger volumes.</target>
+<target xml:lang="pt">Para começar, dê uma olhada no novo built-in <g id="1">SceneStreamingScript</g>. Ele demonstra o carregamento de cena de fundo ao passar por volumes de gatilho.</target>
 </trans-unit>
 <trans-unit id="tu9" xml:space="preserve">
 <source xml:lang="en">You can now use a scene's <g id="1">Offset</g> to move its entities both at design time and runtime.</source>
-<target xml:lang="pt">You can now use a scene's <g id="1">Offset</g> to move its entities both at design time and runtime.</target>
+<target xml:lang="pt">Agora você pode usar o <g id="1">Offset</g> de uma cena para mover suas entidades tanto no tempo de design quanto no tempo de execução.</target>
 </trans-unit>
 <trans-unit id="tu10" xml:space="preserve">
 <source xml:lang="en">The <g id="1">ChildSceneComponent</g> has been removed. We encourage all entities to be managed by a single <g id="2">entity manager</g> and rendered by a single <g id="3">graphics compositor</g>.</source>
-<target xml:lang="pt">The <g id="1">ChildSceneComponent</g> has been removed. We encourage all entities to be managed by a single <g id="2">entity manager</g> and rendered by a single <g id="3">graphics compositor</g>.</target>
+<target xml:lang="pt">O <g id="1">ChildSceneComponent</g> foi removido. Encorajamos todas as entidades a serem geridas por um único gerenciador <g id="2">entity</g> e renderizadas por um único compositor <g id="3">graphics</g>.</target>
 </trans-unit>
 <trans-unit id="tu11" xml:space="preserve">
 <source xml:lang="en">Virtual reality</source>
-<target xml:lang="pt">Virtual reality</target>
+<target xml:lang="pt">Realidade virtual</target>
 </trans-unit>
 <trans-unit id="tu12" xml:space="preserve">
 <source xml:lang="en">Enabling VR is now as simple as a single click!</source>
-<target xml:lang="pt">Enabling VR is now as simple as a single click!</target>
+<target xml:lang="pt">Ganhar VR agora é tão simples como um único clique!</target>
 </trans-unit>
 <trans-unit id="tu13" xml:space="preserve">
 <source xml:lang="en">Xenko's clustered forward rendering, with its multisample anti-aliasing, makes it ideal for VR. Xenko uses a single API for every device, with native support for Oculus and HTV Vive (more devices coming very soon).</source>
-<target xml:lang="pt">Xenko's clustered forward rendering, with its multisample anti-aliasing, makes it ideal for VR. Xenko uses a single API for every device, with native support for Oculus and HTV Vive (more devices coming very soon).</target>
+<target xml:lang="pt">A renderização em cluster do Xenko, com seu multisample anti-aliasing, o torna ideal para VR. Xenko usa uma única API para cada dispositivo, com suporte nativo para Oculus e HTV Vive (mais dispositivos vêm muito em breve).</target>
 </trans-unit>
 <trans-unit id="tu14" xml:space="preserve">
 <source xml:lang="en">Xenko comes with a VR game sample that shows you how to implement VR gameplay, including environment interaction and teleportation:</source>
-<target xml:lang="pt">Xenko comes with a VR game sample that shows you how to implement VR gameplay, including environment interaction and teleportation:</target>
+<target xml:lang="pt">Xenko vem com uma amostra de jogo VR que mostra como implementar a jogabilidade VR, incluindo interação ambiente e teletransporte:</target>
 </trans-unit>
 <group id="sd1_ssf3" resname="sub-filter:sd1">
 </group>
 <trans-unit id="tu15" xml:space="preserve">
 <source xml:lang="en">Save valuable time by visualizing and testing VR directly from the scene editor:</source>
-<target xml:lang="pt">Save valuable time by visualizing and testing VR directly from the scene editor:</target>
+<target xml:lang="pt">Economize tempo valioso visualizando e testando VR diretamente do editor de cena:</target>
 </trans-unit>
 <group id="sd1_ssf4" resname="sub-filter:sd1">
 </group>
 <trans-unit id="tu16" xml:space="preserve">
 <source xml:lang="en">Global illumination with light probes</source>
-<target xml:lang="pt">Global illumination with light probes</target>
+<target xml:lang="pt">Iluminação global com sondas de luz</target>
 </trans-unit>
 <trans-unit id="tu17" xml:space="preserve">
 <source xml:lang="en">Light probes capture the lighting at the position you place them. They simulate indirect light, the effect of light bouncing off surfaces and illuminating other surfaces.</source>
-<target xml:lang="pt">Light probes capture the lighting at the position you place them. They simulate indirect light, the effect of light bouncing off surfaces and illuminating other surfaces.</target>
+<target xml:lang="pt">Sondas de luz capturam a iluminação na posição que você coloca-los. Eles simulam a luz indireta, o efeito da luz saltando de superfícies e iluminando outras superfícies.</target>
 </trans-unit>
 <trans-unit id="tu18" xml:space="preserve">
 <source xml:lang="en">They can make a dramatic difference to the mood and appearance of your scene.</source>
-<target xml:lang="pt">They can make a dramatic difference to the mood and appearance of your scene.</target>
+<target xml:lang="pt">Eles podem fazer uma diferença dramática ao humor e aparência de sua cena.</target>
 </trans-unit>
 <group id="sd1_ssf5" resname="sub-filter:sd1">
 </group>
 <trans-unit id="tu19" xml:space="preserve">
 <source xml:lang="en">Light probes can be <g id="1">placed freely</g> and are processed <g id="2">per pixel</g>. This means you can use them not only on small dynamic objects, but also large or static objects (until we have light maps for those!).</source>
-<target xml:lang="pt">Light probes can be <g id="1">placed freely</g> and are processed <g id="2">per pixel</g>. This means you can use them not only on small dynamic objects, but also large or static objects (until we have light maps for those!).</target>
+<target xml:lang="pt">Sondas de luz podem ser <g id="1"> colocadas livremente</g> e são processadas <g id="2"> por pixel</g>. Isso significa que você pode usá-los não apenas em pequenos objetos dinâmicos, mas também objetos grandes ou estáticos (até que tenhamos mapas de luz para aqueles!).</target>
 </trans-unit>
 <trans-unit id="tu20" xml:space="preserve">
 <source xml:lang="en">Last but not least, you can now very easily capture a DDS cubemap from current camera position in editor, for use as a diffuse or specular skybox light.</source>
-<target xml:lang="pt">Last but not least, you can now very easily capture a DDS cubemap from current camera position in editor, for use as a diffuse or specular skybox light.</target>
+<target xml:lang="pt">Por último, mas não menos importante, agora você pode facilmente capturar um cubemap DDS da posição atual da câmera no editor, para uso como uma luz de caixa de céu difusa ou especular.</target>
 </trans-unit>
 <trans-unit id="tu21" xml:space="preserve">
 <source xml:lang="en">Light shafts</source>
-<target xml:lang="pt">Light shafts</target>
+<target xml:lang="pt">Eixos de luz</target>
 </trans-unit>
 <trans-unit id="tu22" xml:space="preserve">
 <source xml:lang="en">Xenko now supports shadow map-based light shafts for directional lights.</source>
-<target xml:lang="pt">Xenko now supports shadow map-based light shafts for directional lights.</target>
+<target xml:lang="pt">Xenko agora suporta eixos de luz baseados em mapas de sombra para luzes direcionais.</target>
 </trans-unit>
 <group id="sd1_ssf6" resname="sub-filter:sd1">
 </group>
 <trans-unit id="tu23" xml:space="preserve">
 <source xml:lang="en">Our implementation uses ray-marching rather than post effects, making the shaft visible and cool-looking even if the light source isn't visible.</source>
-<target xml:lang="pt">Our implementation uses ray-marching rather than post effects, making the shaft visible and cool-looking even if the light source isn't visible.</target>
+<target xml:lang="pt">Nossa implementação usa raios-marching em vez de efeitos postais, tornando o eixo visível e arrefecer, mesmo que a fonte de luz não seja visível.</target>
 </trans-unit>
 <group id="sd1_ssf7" resname="sub-filter:sd1">
 </group>
 <trans-unit id="tu24" xml:space="preserve">
 <source xml:lang="en">Graphics compositor</source>
-<target xml:lang="pt">Graphics compositor</target>
+<target xml:lang="pt">Compositor gráfico</target>
 </trans-unit>
 <trans-unit id="tu25" xml:space="preserve">
 <source xml:lang="en">The graphics compositor is now a separate asset.</source>
-<target xml:lang="pt">The graphics compositor is now a separate asset.</target>
+<target xml:lang="pt">O compositor gráfico é agora um ativo separado.</target>
 </trans-unit>
 <trans-unit id="tu26" xml:space="preserve">
 <source xml:lang="en">Rendering parameters (such as VR) and post effect parameters can be tweaked in just a few clicks.</source>
-<target xml:lang="pt">Rendering parameters (such as VR) and post effect parameters can be tweaked in just a few clicks.</target>
+<target xml:lang="pt">Parâmetros de renderização (como VR) e parâmetros de efeito pós podem ser ajustados em apenas alguns cliques.</target>
 </trans-unit>
 <trans-unit id="tu27" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Graphics compositor<x id="2"/></source>
-<target xml:lang="pt"><x id="1"/>Graphics compositor<x id="2"/></target>
+<target xml:lang="pt">&lt;x1\/&gt;Graphics compositor&lt;x2\/&gt;</target>
 </trans-unit>
 <trans-unit id="tu28" xml:space="preserve">
 <source xml:lang="en">This is just the first step towards making the graphics compositor easy to customize and extend. Stay tuned for more changes in future releases!</source>
-<target xml:lang="pt">This is just the first step towards making the graphics compositor easy to customize and extend. Stay tuned for more changes in future releases!</target>
+<target xml:lang="pt">Este é apenas o primeiro passo para tornar o compositor gráfico fácil de personalizar e estender. Fique atento para mais mudanças em versões futuras!</target>
 </trans-unit>
 <trans-unit id="tu29" xml:space="preserve">
 <source xml:lang="en">Improved Visual Studio experience</source>
-<target xml:lang="pt">Improved Visual Studio experience</target>
+<target xml:lang="pt">Melhor experiência Visual Studio</target>
 </trans-unit>
 <trans-unit id="tu30" xml:space="preserve">
 <source xml:lang="en">We now have full support for <g id="1">Visual Studio 2017</g>!</source>
-<target xml:lang="pt">We now have full support for <g id="1">Visual Studio 2017</g>!</target>
+<target xml:lang="pt">Agora temos suporte completo para <g id="1">Visual Studio 2017</g>!</target>
 </trans-unit>
 <trans-unit id="tu31" xml:space="preserve">
 <source xml:lang="en">Xenko Visual Studio extension now supports Visual Studio 2017</source>
-<target xml:lang="pt">Xenko Visual Studio extension now supports Visual Studio 2017</target>
+<target xml:lang="pt">A extensão do Xenko Visual Studio agora suporta Visual Studio 2017</target>
 </trans-unit>
 <trans-unit id="tu32" xml:space="preserve">
 <source xml:lang="en">Game Studio recognizes Visual Studio 2017</source>
-<target xml:lang="pt">Game Studio recognizes Visual Studio 2017</target>
+<target xml:lang="pt">Game Studio reconhece Estúdio Visual 2017</target>
 </trans-unit>
 <trans-unit id="tu33" xml:space="preserve">
 <source xml:lang="en">Games can use C# 7.0, and our script editor can recognize C# 7.0 and offer C# 7.0 refactoring thanks to Roslyn (you need to make your solution VS2017+ for it to work)</source>
-<target xml:lang="pt">Games can use C# 7.0, and our script editor can recognize C# 7.0 and offer C# 7.0 refactoring thanks to Roslyn (you need to make your solution VS2017+ for it to work)</target>
+<target xml:lang="pt">Jogos podem usar C# 7.0, e nosso editor de scripts pode reconhecer C# 7.0 e oferecer C# 7.0 refactoring graças a Roslyn (você precisa fazer sua solução VS2017+ para que funcione)</target>
 </trans-unit>
 <trans-unit id="tu34" xml:space="preserve">
 <source xml:lang="en">Our internal <g id="1">AssemblyProcessor</g> which perform various operations on generated assemblies can now work with portable PDB (as generated by .NET Standard projects)</source>
-<target xml:lang="pt">Our internal <g id="1">AssemblyProcessor</g> which perform various operations on generated assemblies can now work with portable PDB (as generated by .NET Standard projects)</target>
+<target xml:lang="pt">Nosso interno <g id="1">AssemblyProcessor</g> que executa várias operações em conjuntos gerados agora pode trabalhar com PDB portátil (como gerado por projetos padrão .NET)</target>
 </trans-unit>
 <trans-unit id="tu35" xml:space="preserve">
 <source xml:lang="en">Programmers working with Xenko often go back and forth between Game Studio and Visual Studio. To make their lives easier, we made a few key improvements to the Xenko Visual Studio extension:</source>
-<target xml:lang="pt">Programmers working with Xenko often go back and forth between Game Studio and Visual Studio. To make their lives easier, we made a few key improvements to the Xenko Visual Studio extension:</target>
+<target xml:lang="pt">Os programadores que trabalham com Xenko muitas vezes vão para trás e para a frente entre Game Studio e Visual Studio. Para facilitar suas vidas, fizemos algumas melhorias importantes para a extensão do Xenko Visual Studio:</target>
 </trans-unit>
 <trans-unit id="tu36" xml:space="preserve">
 <source xml:lang="en">You can now open the current solution in Game Studio directly from Visual Studio.</source>
-<target xml:lang="pt">You can now open the current solution in Game Studio directly from Visual Studio.</target>
+<target xml:lang="pt">Agora você pode abrir a solução atual no Game Studio diretamente do Visual Studio.</target>
 </trans-unit>
 <trans-unit id="tu37" xml:space="preserve">
 <source xml:lang="en">Syntax highlighting didn't behave well when switching theme.</source>
-<target xml:lang="pt">Syntax highlighting didn't behave well when switching theme.</target>
+<target xml:lang="pt">O destaque da sintaxe não se comportou bem ao mudar de tema.</target>
 </trans-unit>
 <trans-unit id="tu38" xml:space="preserve">
 <source xml:lang="en">Previously, when assets are compiling, MSBuild didn't report any progress until finished. It now displays information, warnings and errors while it compiles.</source>
-<target xml:lang="pt">Previously, when assets are compiling, MSBuild didn't report any progress until finished. It now displays information, warnings and errors while it compiles.</target>
+<target xml:lang="pt">Anteriormente, quando os ativos estão compilando, a MSBuild não relatou nenhum progresso até terminar. Agora exibe informações, avisos e erros enquanto compila.</target>
 </trans-unit>
 <trans-unit id="tu39" xml:space="preserve">
 <source xml:lang="en">Also, our whole build infrastructure and script editor is now based on the latest version of MSBuild 2017 and Roslyn. Supporting the new VS2017 Project System with .NET Standard is just a few steps away!</source>
-<target xml:lang="pt">Also, our whole build infrastructure and script editor is now based on the latest version of MSBuild 2017 and Roslyn. Supporting the new VS2017 Project System with .NET Standard is just a few steps away!</target>
+<target xml:lang="pt">Além disso, toda a nossa infraestrutura de compilação e editor de scripts agora é baseada na versão mais recente do MSBuild 2017 e Roslyn. Apoiando o novo sistema de projeto VS2017 com .NET O padrão está a poucos passos de distância!</target>
 </trans-unit>
 <trans-unit id="tu40" xml:space="preserve">
 <source xml:lang="en">Faster and lighter</source>
-<target xml:lang="pt">Faster and lighter</target>
+<target xml:lang="pt">Mais rápido e mais leve</target>
 </trans-unit>
 <trans-unit id="tu41" xml:space="preserve">
 <source xml:lang="en">In order to provide a better experience for users, we've been working hard on various fronts to make the editor smoother and more responsive. This is still a work in progress and expect regular improvements.</source>
-<target xml:lang="pt">In order to provide a better experience for users, we've been working hard on various fronts to make the editor smoother and more responsive. This is still a work in progress and expect regular improvements.</target>
+<target xml:lang="pt">Para proporcionar uma melhor experiência para os usuários, temos trabalhado duro em várias frentes para tornar o editor mais suave e mais responsivo. Este ainda é um trabalho em andamento e espera melhorias regulares.</target>
 </trans-unit>
 <trans-unit id="tu42" xml:space="preserve">
 <source xml:lang="en">Also, the package size is almost three times smaller, resulting in much faster download and install time.</source>
-<target xml:lang="pt">Also, the package size is almost three times smaller, resulting in much faster download and install time.</target>
+<target xml:lang="pt">Além disso, o tamanho do pacote é quase três vezes menor, resultando em muito mais rápido download e tempo de instalação.</target>
 </trans-unit>
 <trans-unit id="tu43" xml:space="preserve">
 <source xml:lang="en">Breaking changes</source>
-<target xml:lang="pt">Breaking changes</target>
+<target xml:lang="pt">Alterações de ruptura</target>
 </trans-unit>
 <trans-unit id="tu44" xml:space="preserve">
 <source xml:lang="en">Backward compatibility</source>
-<target xml:lang="pt">Backward compatibility</target>
+<target xml:lang="pt">Compatibilidade de retrocesso</target>
 </trans-unit>
 <trans-unit id="tu45" xml:space="preserve">
 <source xml:lang="en">Xenko 2.0 supports project upgrades only for projects created with Xenko 1.10 Beta. If you want to upgrade a project made with an older version, update it to Xenko 1.10 first.</source>
-<target xml:lang="pt">Xenko 2.0 supports project upgrades only for projects created with Xenko 1.10 Beta. If you want to upgrade a project made with an older version, update it to Xenko 1.10 first.</target>
+<target xml:lang="pt">Xenko 2.0 suporta atualizações de projeto apenas para projetos criados com Xenko 1.10 Beta. Se você quiser atualizar um projeto feito com uma versão mais antiga, atualize-o para Xenko 1.10 primeiro.</target>
 </trans-unit>
 <trans-unit id="tu46" xml:space="preserve">
 <source xml:lang="en">Visual Studio support</source>
-<target xml:lang="pt">Visual Studio support</target>
+<target xml:lang="pt">Suporte Visual Studio</target>
 </trans-unit>
 <trans-unit id="tu47" xml:space="preserve">
 <source xml:lang="en">Xenko 2.0 supports Visual Studio 2015 and Visual Studio 2017 as IDEs. Visual Studio 2013 and earlier versions are no longer supported.</source>
-<target xml:lang="pt">Xenko 2.0 supports Visual Studio 2015 and Visual Studio 2017 as IDEs. Visual Studio 2013 and earlier versions are no longer supported.</target>
+<target xml:lang="pt">Xenko 2.0 suporta Visual Studio 2015 e Visual Studio 2017 como IDEs. Visual Studio 2013 e versões anteriores não são mais suportadas.</target>
 </trans-unit>
 <trans-unit id="tu48" xml:space="preserve">
 <source xml:lang="en">When upgrading a project from earlier version, in its <g id="1">.csproj</g> file, set <g id="2">ToolsVersion="14.0"</g> as the minimum required version.</source>
-<target xml:lang="pt">When upgrading a project from earlier version, in its <g id="1">.csproj</g> file, set <g id="2">ToolsVersion="14.0"</g> as the minimum required version.</target>
+<target xml:lang="pt">Ao atualizar um projeto da versão anterior, em seu arquivo <g id="1">.csproj</g>, configure <g id="2">ToolsVersion="14.0"</g> como a versão mínima exigida.</target>
 </trans-unit>
 <trans-unit id="tu49" xml:space="preserve">
 <source xml:lang="en">Navigation</source>
-<target xml:lang="pt">Navigation</target>
+<target xml:lang="pt">Navegação</target>
 </trans-unit>
 <trans-unit id="tu50" xml:space="preserve">
 <source xml:lang="en">All compontents related to navigation have been moved to their own <g id="1">SiliconStudio.Xenko.Navigation</g> assembly and namespace.</source>
-<target xml:lang="pt">All compontents related to navigation have been moved to their own <g id="1">SiliconStudio.Xenko.Navigation</g> assembly and namespace.</target>
+<target xml:lang="pt">Todos os componentes relacionados à navegação foram movidos para o seu próprio <g id="1">SiliconStudio.Xenko.Navigation</g> montagem e namespace.</target>
 </trans-unit>
 <trans-unit id="tu51" xml:space="preserve">
 <source xml:lang="en">Graphics Compositor</source>
-<target xml:lang="pt">Graphics Compositor</target>
+<target xml:lang="pt">Compositor de gráficos</target>
 </trans-unit>
 <trans-unit id="tu52" xml:space="preserve">
 <source xml:lang="en">Previously, rendering pipeline was customized by magic <g id="1">IPipelinePlugin</g> at runtime. This was very hard to control. Now, most of the pipeline configuration happens  at design time in the new Graphics Compositor asset.</source>
-<target xml:lang="pt">Previously, rendering pipeline was customized by magic <g id="1">IPipelinePlugin</g> at runtime. This was very hard to control. Now, most of the pipeline configuration happens  at design time in the new Graphics Compositor asset.</target>
+<target xml:lang="pt">Anteriormente, o pipeline de renderização foi personalizado por magia <g id="1">IPipelinePlugin</g> no tempo de execução. Isto foi muito difícil de controlar. Agora, a maioria da configuração do pipeline acontece no momento do projeto no novo ativo do Compositor Gráfico.</target>
 </trans-unit>
 <trans-unit id="tu53" xml:space="preserve">
 <source xml:lang="en"><g id="1">RenderFrame</g> is gone. Renderer are typically declaring and allocating render targets.</source>
-<target xml:lang="pt"><g id="1">RenderFrame</g> is gone. Renderer are typically declaring and allocating render targets.</target>
+<target xml:lang="pt"><g id="1">RenderFrame</g> desapareceu. Renderador são tipicamente declarando e alocando alvos de renderização.</target>
 </trans-unit>
 <trans-unit id="tu54" xml:space="preserve">
 <source xml:lang="en">Known issues</source>
-<target xml:lang="pt">Known issues</target>
+<target xml:lang="pt">Questões conhecidas</target>
 </trans-unit>
 <trans-unit id="tu55" xml:space="preserve">
 <source xml:lang="en">On Linux, when switching the underlying Graphics Platform, rendering doesn't occur or fail. To fix the problem, delete the cache, local, and roaming folders on the Linux host and restart the game.</source>
-<target xml:lang="pt">On Linux, when switching the underlying Graphics Platform, rendering doesn't occur or fail. To fix the problem, delete the cache, local, and roaming folders on the Linux host and restart the game.</target>
+<target xml:lang="pt">No Linux, ao alternar a plataforma gráfica subjacente, a renderização não ocorre ou falha. Para corrigir o problema, excluir o cache, local e roaming pastas no host Linux e reiniciar o jogo.</target>
 </trans-unit>
 <trans-unit id="tu56" xml:space="preserve">
 <source xml:lang="en">Performance issues on mobile (being worked on)</source>
-<target xml:lang="pt">Performance issues on mobile (being worked on)</target>
+<target xml:lang="pt">Problemas de desempenho em dispositivos móveis (ser trabalhado)</target>
 </trans-unit>
 <trans-unit id="tu57" xml:space="preserve">
 <source xml:lang="en">On iOS, if <g id="1">Enable device-specific builds</g> is toggled on (from the project properties), it's not possible to debug game code. To speed up your development manually select the architecture of your device from the Advanced tab.</source>
-<target xml:lang="pt">On iOS, if <g id="1">Enable device-specific builds</g> is toggled on (from the project properties), it's not possible to debug game code. To speed up your development manually select the architecture of your device from the Advanced tab.</target>
+<target xml:lang="pt">No iOS, se <g id="1">Ativar compilações específicas do dispositivo</g> é alternada (a partir das propriedades do projeto), não é possível depurar o código do jogo. Para acelerar o seu desenvolvimento selecione manualmente a arquitetura do seu dispositivo a partir da aba Avançada.</target>
 </trans-unit>
 <trans-unit id="tu58" xml:space="preserve">
 <source xml:lang="en">Live scripting has been temporarily disabled</source>
-<target xml:lang="pt">Live scripting has been temporarily disabled</target>
+<target xml:lang="pt">O scripting ao vivo foi temporariamente desativado</target>
 </trans-unit>
 <trans-unit id="tu59" xml:space="preserve">
 <source xml:lang="en">Changelog</source>
-<target xml:lang="pt">Changelog</target>
+<target xml:lang="pt">Mudança</target>
 </trans-unit>
 <trans-unit id="tu60" xml:space="preserve">
 <source xml:lang="en">Version 2.0.0.2 — 25 April 2017</source>
-<target xml:lang="pt">Version 2.0.0.2 — 25 April 2017</target>
+<target xml:lang="pt">Versão 2.0.0.2 — 25 Abril 2017</target>
 </trans-unit>
 <trans-unit id="tu61" xml:space="preserve">
 <source xml:lang="en">Improvements</source>
-<target xml:lang="pt">Improvements</target>
+<target xml:lang="pt">Melhorias</target>
 </trans-unit>
 <trans-unit id="tu62" xml:space="preserve">
 <source xml:lang="en">General</source>
-<target xml:lang="pt">General</target>
+<target xml:lang="pt">Geral</target>
 </trans-unit>
 <trans-unit id="tu63" xml:space="preserve">
 <source xml:lang="en">Added VR game template</source>
-<target xml:lang="pt">Added VR game template</target>
+<target xml:lang="pt">Adicionado modelo de jogo VR</target>
 </trans-unit>
 <trans-unit id="tu64" xml:space="preserve">
 <source xml:lang="en">Game Studio and actual runtime game now share the same build cache. This should speed up build times.</source>
-<target xml:lang="pt">Game Studio and actual runtime game now share the same build cache. This should speed up build times.</target>
+<target xml:lang="pt">Game Studio e jogo de tempo de execução real agora compartilhar o mesmo cache de compilação. Isto deve acelerar os tempos de construção.</target>
 </trans-unit>
 <trans-unit id="tu65" xml:space="preserve">
 <source xml:lang="en">Build dependencies are managed by a new system that greatly simplify copying and deployment. This should later benefit plugins and user projects when exposed to the user</source>
-<target xml:lang="pt">Build dependencies are managed by a new system that greatly simplify copying and deployment. This should later benefit plugins and user projects when exposed to the user</target>
+<target xml:lang="pt">As dependências de construção são gerenciadas por um novo sistema que simplifica muito a cópia e implementação. Isso deve mais tarde beneficiar plugins e projetos de usuário quando exposto ao usuário</target>
 </trans-unit>
 <trans-unit id="tu66" xml:space="preserve">
 <source xml:lang="en">Game Studio</source>
@@ -285,219 +285,219 @@ SceneSystem.SceneInstance.RootScene.Children.Add(childScene);
 </trans-unit>
 <trans-unit id="tu67" xml:space="preserve">
 <source xml:lang="en">Improved how internal objects of an asset can be referenced</source>
-<target xml:lang="pt">Improved how internal objects of an asset can be referenced</target>
+<target xml:lang="pt">Melhorado como objetos internos de um ativo podem ser referenciados</target>
 </trans-unit>
 <trans-unit id="tu68" xml:space="preserve">
 <source xml:lang="en">Improved keyboard navigation in tree views (eg entity hierarchy in scene and prefab editors)</source>
-<target xml:lang="pt">Improved keyboard navigation in tree views (eg entity hierarchy in scene and prefab editors)</target>
+<target xml:lang="pt">Navegação de teclado aprimorada em vistas de árvores (por exemplo, hierarquia de entidades em cena e editores pré-fabricados)</target>
 </trans-unit>
 <trans-unit id="tu69" xml:space="preserve">
 <source xml:lang="en">Improved scrolling in tree views</source>
-<target xml:lang="pt">Improved scrolling in tree views</target>
+<target xml:lang="pt">Rolagem melhorada em vistas de árvores</target>
 </trans-unit>
 <trans-unit id="tu70" xml:space="preserve">
 <source xml:lang="en">Improved drag and drop performance</source>
-<target xml:lang="pt">Improved drag and drop performance</target>
+<target xml:lang="pt">Melhor desempenho de arrastar e soltar</target>
 </trans-unit>
 <trans-unit id="tu71" xml:space="preserve">
 <source xml:lang="en">Entities can now be dragged and dropped from one scene to another</source>
-<target xml:lang="pt">Entities can now be dragged and dropped from one scene to another</target>
+<target xml:lang="pt">As entidades podem agora ser arrastadas e retiradas de uma cena para outra</target>
 </trans-unit>
 <trans-unit id="tu72" xml:space="preserve">
 <source xml:lang="en">Exceptions in the embedded game of a scene editor no longer crash Game Studio and can be recoverable</source>
-<target xml:lang="pt">Exceptions in the embedded game of a scene editor no longer crash Game Studio and can be recoverable</target>
+<target xml:lang="pt">Exceções no jogo incorporado de um editor de cena já não travar Game Studio e pode ser recuperável</target>
 </trans-unit>
 <trans-unit id="tu73" xml:space="preserve">
 <source xml:lang="en">Components of vectors can now be edited independently when using multi-selection</source>
-<target xml:lang="pt">Components of vectors can now be edited independently when using multi-selection</target>
+<target xml:lang="pt">Componentes de vetores podem agora ser editados de forma independente ao usar multi-seleção</target>
 </trans-unit>
 <trans-unit id="tu74" xml:space="preserve">
 <source xml:lang="en">Camera navigation now uses a different key set:</source>
-<target xml:lang="pt">Camera navigation now uses a different key set:</target>
+<target xml:lang="pt">A navegação da câmera agora usa um conjunto de chaves diferente:</target>
 </trans-unit>
 <trans-unit id="tu75" xml:space="preserve">
 <source xml:lang="en">Alt + left mouse button - orbit</source>
-<target xml:lang="pt">Alt + left mouse button - orbit</target>
+<target xml:lang="pt">Alt + botão esquerdo do mouse - órbita</target>
 </trans-unit>
 <trans-unit id="tu76" xml:space="preserve">
 <source xml:lang="en">Mouse wheel - zoom</source>
-<target xml:lang="pt">Mouse wheel - zoom</target>
+<target xml:lang="pt">Roda do mouse - zoom</target>
 </trans-unit>
 <trans-unit id="tu77" xml:space="preserve">
 <source xml:lang="en">Right mouse button - spin camera</source>
-<target xml:lang="pt">Right mouse button - spin camera</target>
+<target xml:lang="pt">Botão direito do mouse - câmera giratória</target>
 </trans-unit>
 <trans-unit id="tu78" xml:space="preserve">
 <source xml:lang="en">Middle mouse button - pan</source>
-<target xml:lang="pt">Middle mouse button - pan</target>
+<target xml:lang="pt">Botão do mouse médio - pan</target>
 </trans-unit>
 <trans-unit id="tu79" xml:space="preserve">
 <source xml:lang="en">Right + middle mouse buttons - camera hover</source>
-<target xml:lang="pt">Right + middle mouse buttons - camera hover</target>
+<target xml:lang="pt">Direita + botões do mouse do meio - hover da câmera</target>
 </trans-unit>
 <trans-unit id="tu80" xml:space="preserve">
 <source xml:lang="en">Added camera speed slider</source>
-<target xml:lang="pt">Added camera speed slider</target>
+<target xml:lang="pt">Adicionado controle deslizante de velocidade da câmera</target>
 </trans-unit>
 <trans-unit id="tu81" xml:space="preserve">
 <source xml:lang="en">The "New game" template has been touched up</source>
-<target xml:lang="pt">The "New game" template has been touched up</target>
+<target xml:lang="pt">O modelo "Novo Jogo" foi tocado</target>
 </trans-unit>
 <trans-unit id="tu82" xml:space="preserve">
 <source xml:lang="en">"Save" and "Save all" have been merged into just "Save"</source>
-<target xml:lang="pt">"Save" and "Save all" have been merged into just "Save"</target>
+<target xml:lang="pt">"Save" e "Save all" foram fundidos em apenas "Save"</target>
 </trans-unit>
 <trans-unit id="tu83" xml:space="preserve">
 <source xml:lang="en">Navigation mesh overlay visibility can now be toggled per group</source>
-<target xml:lang="pt">Navigation mesh overlay visibility can now be toggled per group</target>
+<target xml:lang="pt">A visibilidade de sobreposição de malha de navegação agora pode ser alternada por grupo</target>
 </trans-unit>
 <trans-unit id="tu84" xml:space="preserve">
 <source xml:lang="en">Scripts can now be closed without saving and opened again later</source>
-<target xml:lang="pt">Scripts can now be closed without saving and opened again later</target>
+<target xml:lang="pt">Os scripts agora podem ser fechados sem salvar e abrir novamente mais tarde</target>
 </trans-unit>
 <trans-unit id="tu85" xml:space="preserve">
 <source xml:lang="en">Script undo history now persists after closing a script</source>
-<target xml:lang="pt">Script undo history now persists after closing a script</target>
+<target xml:lang="pt">O histórico de desfazer de script agora persiste após fechar um script</target>
 </trans-unit>
 <trans-unit id="tu86" xml:space="preserve">
 <source xml:lang="en">Added ability to capture a DDS cubemap from current editor camera position.</source>
-<target xml:lang="pt">Added ability to capture a DDS cubemap from current editor camera position.</target>
+<target xml:lang="pt">Adicionado capacidade de capturar um cubemap DDS da posição atual da câmera do editor.</target>
 </trans-unit>
 <trans-unit id="tu87" xml:space="preserve">
 <source xml:lang="en">When viewing vertex streams, normals are now in 0..1 range instead of -1..1. Also, it is now possible to view normals in both world and tangent space</source>
-<target xml:lang="pt">When viewing vertex streams, normals are now in 0..1 range instead of -1..1. Also, it is now possible to view normals in both world and tangent space</target>
+<target xml:lang="pt">Ao visualizar fluxos de vértices, os normais estão agora na faixa 0..1 em vez de -1..1. Além disso, agora é possível ver os normais no mundo e no espaço tangente</target>
 </trans-unit>
 <trans-unit id="tu88" xml:space="preserve">
 <source xml:lang="en">Assets</source>
-<target xml:lang="pt">Assets</target>
+<target xml:lang="pt">Activos</target>
 </trans-unit>
 <trans-unit id="tu89" xml:space="preserve">
 <source xml:lang="en">Texture assets are now split into color, normal and grayscale subtypes</source>
-<target xml:lang="pt">Texture assets are now split into color, normal and grayscale subtypes</target>
+<target xml:lang="pt">Os ativos de textura são agora divididos em subtipos de cor, normal e de tons de cinza</target>
 </trans-unit>
 <trans-unit id="tu90" xml:space="preserve">
 <source xml:lang="en">Replaced <g id="1">SkyboxUsage</g> enum on <g id="2">SkyboxAsset</g> with a boolean <g id="3">IsSpecularOnly</g></source>
-<target xml:lang="pt">Replaced <g id="1">SkyboxUsage</g> enum on <g id="2">SkyboxAsset</g> with a boolean <g id="3">IsSpecularOnly</g></target>
+<target xml:lang="pt">Substituido <g id="1">SkyboxUsage</g> enum em <g id="2">SkyboxAsset</g> com um booleano <g id="3">IsSpecularOnly</g></target>
 </trans-unit>
 <trans-unit id="tu91" xml:space="preserve">
 <source xml:lang="en">Improved robustness and error reporting on invalid Yaml when opening assets</source>
-<target xml:lang="pt">Improved robustness and error reporting on invalid Yaml when opening assets</target>
+<target xml:lang="pt">Aumento da robustez e notificação de erros no Yaml inválido ao abrir ativos</target>
 </trans-unit>
 <trans-unit id="tu92" xml:space="preserve">
 <source xml:lang="en">Engine</source>
-<target xml:lang="pt">Engine</target>
+<target xml:lang="pt">Motor</target>
 </trans-unit>
 <trans-unit id="tu93" xml:space="preserve">
 <source xml:lang="en">Added support for splash screens (they show only in release builds)</source>
-<target xml:lang="pt">Added support for splash screens (they show only in release builds)</target>
+<target xml:lang="pt">Adicionado suporte para telas de respingo (eles mostram apenas em release builds)</target>
 </trans-unit>
 <trans-unit id="tu94" xml:space="preserve">
 <source xml:lang="en">Audio</source>
-<target xml:lang="pt">Audio</target>
+<target xml:lang="pt">Áudio</target>
 </trans-unit>
 <trans-unit id="tu95" xml:space="preserve">
 <source xml:lang="en">Added HRTF binaural audio support for Windows (10+)</source>
-<target xml:lang="pt">Added HRTF binaural audio support for Windows (10+)</target>
+<target xml:lang="pt">Adicionado suporte de áudio binaural HRTF para Windows (10+)</target>
 </trans-unit>
 <trans-unit id="tu96" xml:space="preserve">
 <source xml:lang="en">Graphics</source>
-<target xml:lang="pt">Graphics</target>
+<target xml:lang="pt">Gráficos</target>
 </trans-unit>
 <trans-unit id="tu97" xml:space="preserve">
 <source xml:lang="en">Added MSAA support</source>
-<target xml:lang="pt">Added MSAA support</target>
+<target xml:lang="pt">Adicionado suporte MSAA</target>
 </trans-unit>
 <trans-unit id="tu98" xml:space="preserve">
 <source xml:lang="en">Added custom MSAA resolving filters</source>
-<target xml:lang="pt">Added custom MSAA resolving filters</target>
+<target xml:lang="pt">Adicionados filtros personalizados de resolução MSAA</target>
 </trans-unit>
 <trans-unit id="tu99" xml:space="preserve">
 <source xml:lang="en">Shadow cascade calculation is now more stable</source>
-<target xml:lang="pt">Shadow cascade calculation is now more stable</target>
+<target xml:lang="pt">Cálculo de cascata sombra é agora mais estável</target>
 </trans-unit>
 <trans-unit id="tu100" xml:space="preserve">
 <source xml:lang="en">Multiple render targets now have better support</source>
-<target xml:lang="pt">Multiple render targets now have better support</target>
+<target xml:lang="pt">Vários alvos de renderização agora têm melhor suporte</target>
 </trans-unit>
 <trans-unit id="tu101" xml:space="preserve">
 <source xml:lang="en">Point lights can now cast shadows</source>
-<target xml:lang="pt">Point lights can now cast shadows</target>
+<target xml:lang="pt">Luzes de ponto agora podem lançar sombras</target>
 </trans-unit>
 <trans-unit id="tu102" xml:space="preserve">
 <source xml:lang="en"><g id="1">SkyboxComponent</g> has been removed and the functionality moved into the <g id="2">LightComponent</g> and <g id="3">BackgroundComponent</g></source>
-<target xml:lang="pt"><g id="1">SkyboxComponent</g> has been removed and the functionality moved into the <g id="2">LightComponent</g> and <g id="3">BackgroundComponent</g></target>
+<target xml:lang="pt"><g id="1">SkyboxComponent</g> foi removido e a funcionalidade mudou-se para o <g id="2">LightComponent</g> e <g id="3">BackgroundComponent</g></target>
 </trans-unit>
 <trans-unit id="tu103" xml:space="preserve">
 <source xml:lang="en"><g id="1">BackgroundComponent</g> now accepts cubemap textures as an input</source>
-<target xml:lang="pt"><g id="1">BackgroundComponent</g> now accepts cubemap textures as an input</target>
+<target xml:lang="pt"><g id="1">BackgroundComponent</g> agora aceita texturas cubemap como uma entrada</target>
 </trans-unit>
 <trans-unit id="tu104" xml:space="preserve">
 <source xml:lang="en">D3D11: Shaders that are compatible shares the same bytecode, avoiding extra state changes.</source>
-<target xml:lang="pt">D3D11: Shaders that are compatible shares the same bytecode, avoiding extra state changes.</target>
+<target xml:lang="pt">D3D11: Shaders compatíveis compartilha o mesmo bytecode, evitando mudanças de estado extra.</target>
 </trans-unit>
 <trans-unit id="tu105" xml:space="preserve">
 <source xml:lang="en">OpenGL: Implemented UpdateSubresource for 3D textures</source>
-<target xml:lang="pt">OpenGL: Implemented UpdateSubresource for 3D textures</target>
+<target xml:lang="pt">OpenGL: Implementado UpdateSubresource para texturas 3D</target>
 </trans-unit>
 <trans-unit id="tu106" xml:space="preserve">
 <source xml:lang="en">Particles</source>
-<target xml:lang="pt">Particles</target>
+<target xml:lang="pt">Partes</target>
 </trans-unit>
 <trans-unit id="tu107" xml:space="preserve">
 <source xml:lang="en">Additive rotation no longer has a default value of 1 radian; it's now 0</source>
-<target xml:lang="pt">Additive rotation no longer has a default value of 1 radian; it's now 0</target>
+<target xml:lang="pt">A rotação aditiva não tem mais um valor padrão de 1 radiano; agora é 0</target>
 </trans-unit>
 <trans-unit id="tu108" xml:space="preserve">
 <source xml:lang="en">Initializers and updaters no longer add particle fields when disabled</source>
-<target xml:lang="pt">Initializers and updaters no longer add particle fields when disabled</target>
+<target xml:lang="pt">Inicializadores e atualizadores já não adicionam campos de partículas quando desativados</target>
 </trans-unit>
 <trans-unit id="tu109" xml:space="preserve">
 <source xml:lang="en">Physics</source>
-<target xml:lang="pt">Physics</target>
+<target xml:lang="pt">Física</target>
 </trans-unit>
 <trans-unit id="tu110" xml:space="preserve">
 <source xml:lang="en">Reworked collisions filtering to improve performance</source>
-<target xml:lang="pt">Reworked collisions filtering to improve performance</target>
+<target xml:lang="pt">Colisões retrabalhadas filtrando para melhorar o desempenho</target>
 </trans-unit>
 <trans-unit id="tu111" xml:space="preserve">
 <source xml:lang="en">Navigation</source>
-<target xml:lang="pt">Navigation</target>
+<target xml:lang="pt">Navegação</target>
 </trans-unit>
 <trans-unit id="tu112" xml:space="preserve">
 <source xml:lang="en">Bounding boxes can now be placed in the scene</source>
-<target xml:lang="pt">Bounding boxes can now be placed in the scene</target>
+<target xml:lang="pt">As caixas de som agora podem ser colocadas na cena</target>
 </trans-unit>
 <trans-unit id="tu113" xml:space="preserve">
 <source xml:lang="en">Navigation meshes can now be generated/updated at runtime</source>
-<target xml:lang="pt">Navigation meshes can now be generated/updated at runtime</target>
+<target xml:lang="pt">As malhas de navegação podem agora ser geradas \/ atualizadas no tempo de execução</target>
 </trans-unit>
 <trans-unit id="tu114" xml:space="preserve">
 <source xml:lang="en"><g id="1">TryFindPath</g> now returns false instead of crashing if no navigation mesh is loaded</source>
-<target xml:lang="pt"><g id="1">TryFindPath</g> now returns false instead of crashing if no navigation mesh is loaded</target>
+<target xml:lang="pt"><g id="1">TryFindPath</g> agora retorna falso em vez de falhar se nenhuma malha de navegação é carregada</target>
 </trans-unit>
 <trans-unit id="tu115" xml:space="preserve">
 <source xml:lang="en">Navigation mesh layer indexes have been replaced with groups</source>
-<target xml:lang="pt">Navigation mesh layer indexes have been replaced with groups</target>
+<target xml:lang="pt">Índices de camada de malha de navegação foram substituídos por grupos</target>
 </trans-unit>
 <trans-unit id="tu116" xml:space="preserve">
 <source xml:lang="en">VR</source>
-<target xml:lang="pt">VR</target>
+<target xml:lang="pt">RV</target>
 </trans-unit>
 <trans-unit id="tu117" xml:space="preserve">
 <source xml:lang="en">Unique device-agnostic API</source>
-<target xml:lang="pt">Unique device-agnostic API</target>
+<target xml:lang="pt">Dispositivo único-agnóstico API</target>
 </trans-unit>
 <trans-unit id="tu118" xml:space="preserve">
 <source xml:lang="en">Oculus Rift support (HMD and controllers)</source>
-<target xml:lang="pt">Oculus Rift support (HMD and controllers)</target>
+<target xml:lang="pt">Oculus Rift suporte (HMD e controladores)</target>
 </trans-unit>
 <trans-unit id="tu119" xml:space="preserve">
 <source xml:lang="en">Vive support (HMD and controllers)</source>
-<target xml:lang="pt">Vive support (HMD and controllers)</target>
+<target xml:lang="pt">Suporte Vive (HMD e controladores)</target>
 </trans-unit>
 <trans-unit id="tu120" xml:space="preserve">
 <source xml:lang="en">Bug fixes</source>
-<target xml:lang="pt">Bug fixes</target>
+<target xml:lang="pt">Correções de bugs</target>
 </trans-unit>
 <trans-unit id="tu121" xml:space="preserve">
 <source xml:lang="en">Game Studio</source>
@@ -505,211 +505,211 @@ SceneSystem.SceneInstance.RootScene.Children.Add(childScene);
 </trans-unit>
 <trans-unit id="tu122" xml:space="preserve">
 <source xml:lang="en">Naming project libraries now avoids collisions</source>
-<target xml:lang="pt">Naming project libraries now avoids collisions</target>
+<target xml:lang="pt">Nomear bibliotecas de projeto agora evita colisões</target>
 </trans-unit>
 <trans-unit id="tu123" xml:space="preserve">
 <source xml:lang="en">Invalid characters in the project name are now filtered out correctly and don't prevent the project compiling</source>
-<target xml:lang="pt">Invalid characters in the project name are now filtered out correctly and don't prevent the project compiling</target>
+<target xml:lang="pt">Personagens inválidos no nome do projeto agora são filtrados corretamente e não impedem a compilação do projeto</target>
 </trans-unit>
 <trans-unit id="tu124" xml:space="preserve">
 <source xml:lang="en">Changing gizmo sizes no longer causes the slider to jump</source>
-<target xml:lang="pt">Changing gizmo sizes no longer causes the slider to jump</target>
+<target xml:lang="pt">Mudar tamanhos de gizmo já não faz com que o controle deslizante pular</target>
 </trans-unit>
 <trans-unit id="tu125" xml:space="preserve">
 <source xml:lang="en">Switching between gizmos no longer crashes the scene editor</source>
-<target xml:lang="pt">Switching between gizmos no longer crashes the scene editor</target>
+<target xml:lang="pt">Mudar entre gizmos já não trava o editor de cena</target>
 </trans-unit>
 <trans-unit id="tu126" xml:space="preserve">
 <source xml:lang="en">Asset copy/paste now works better</source>
-<target xml:lang="pt">Asset copy/paste now works better</target>
+<target xml:lang="pt">Asset copy\/paste agora funciona melhor</target>
 </trans-unit>
 <trans-unit id="tu127" xml:space="preserve">
 <source xml:lang="en">Thumbnail behavior is now more stable</source>
-<target xml:lang="pt">Thumbnail behavior is now more stable</target>
+<target xml:lang="pt">O comportamento de Thumbnail é agora mais estável</target>
 </trans-unit>
 <trans-unit id="tu128" xml:space="preserve">
 <source xml:lang="en">Fixed leaking of deleted assets or entities when navigating through the selection history</source>
-<target xml:lang="pt">Fixed leaking of deleted assets or entities when navigating through the selection history</target>
+<target xml:lang="pt">Vazamento fixo de ativos ou entidades excluídos ao navegar pelo histórico de seleção</target>
 </trans-unit>
 <trans-unit id="tu129" xml:space="preserve">
 <source xml:lang="en">Fixed renaming assets undo/redo</source>
-<target xml:lang="pt">Fixed renaming assets undo/redo</target>
+<target xml:lang="pt">Renomear ativos fixos undo\/redo</target>
 </trans-unit>
 <trans-unit id="tu130" xml:space="preserve">
 <source xml:lang="en">Renaming an asset no longer closes its editor</source>
-<target xml:lang="pt">Renaming an asset no longer closes its editor</target>
+<target xml:lang="pt">Renaming an asset longer closes its editor</target>
 </trans-unit>
 <trans-unit id="tu131" xml:space="preserve">
 <source xml:lang="en">Fixed reparenting assets with Alt key (maintains world position)</source>
-<target xml:lang="pt">Fixed reparenting assets with Alt key (maintains world position)</target>
+<target xml:lang="pt">Activos reparentados fixos com Alt key (mantém a posição mundial)</target>
 </trans-unit>
 <trans-unit id="tu132" xml:space="preserve">
 <source xml:lang="en">Fixed many problems related to manipulation of entities from prefabs</source>
-<target xml:lang="pt">Fixed many problems related to manipulation of entities from prefabs</target>
+<target xml:lang="pt">Corrigido muitos problemas relacionados à manipulação de entidades de prefabs</target>
 </trans-unit>
 <trans-unit id="tu133" xml:space="preserve">
 <source xml:lang="en">Fixed many problems related to moving entities in the scene hierarchy</source>
-<target xml:lang="pt">Fixed many problems related to moving entities in the scene hierarchy</target>
+<target xml:lang="pt">Corrigido muitos problemas relacionados a entidades em movimento na hierarquia de cena</target>
 </trans-unit>
 <trans-unit id="tu134" xml:space="preserve">
 <source xml:lang="en">The property grid now properly handles multi-selection</source>
-<target xml:lang="pt">The property grid now properly handles multi-selection</target>
+<target xml:lang="pt">A grade de propriedade agora lida corretamente com multi-seleção</target>
 </trans-unit>
 <trans-unit id="tu135" xml:space="preserve">
 <source xml:lang="en">Fixed many problems related to properties overridden from Prefabs or from Archetypes</source>
-<target xml:lang="pt">Fixed many problems related to properties overridden from Prefabs or from Archetypes</target>
+<target xml:lang="pt">Corrigido muitos problemas relacionados a propriedades sobrepostas de Prefabs ou de Arquétipos</target>
 </trans-unit>
 <trans-unit id="tu136" xml:space="preserve">
 <source xml:lang="en">Fixed many problems related to copy/paste in the property grid</source>
-<target xml:lang="pt">Fixed many problems related to copy/paste in the property grid</target>
+<target xml:lang="pt">Corrigido muitos problemas relacionados com copiar \/ colar na grade da propriedade</target>
 </trans-unit>
 <trans-unit id="tu137" xml:space="preserve">
 <source xml:lang="en">Fixed some cases where <g id="1">Create prefab from selection</g> wasn't properly linking the selected entities to the newly created prefab</source>
-<target xml:lang="pt">Fixed some cases where <g id="1">Create prefab from selection</g> wasn't properly linking the selected entities to the newly created prefab</target>
+<target xml:lang="pt">Corrigido alguns casos em que <g id="1">Create prefab da seleção</g> não foi corretamente vinculando as entidades selecionadas para o pré-fab recém-criado</target>
 </trans-unit>
 <trans-unit id="tu138" xml:space="preserve">
 <source xml:lang="en">Fixed several problems when manipulating the model or materials in a <g id="1">ModelComponent</g>, especially when the entity is inherited from a prefab</source>
-<target xml:lang="pt">Fixed several problems when manipulating the model or materials in a <g id="1">ModelComponent</g>, especially when the entity is inherited from a prefab</target>
+<target xml:lang="pt">Corrigido vários problemas ao manipular o modelo ou materiais em um <g id="1">ModelComponent</g>, especialmente quando a entidade é herdada de um prefab</target>
 </trans-unit>
 <trans-unit id="tu139" xml:space="preserve">
 <source xml:lang="en">The material highlighting button now works properly</source>
-<target xml:lang="pt">The material highlighting button now works properly</target>
+<target xml:lang="pt">O botão de destaque do material agora funciona corretamente</target>
 </trans-unit>
 <trans-unit id="tu140" xml:space="preserve">
 <source xml:lang="en">Assets that failed to save now prevent Game Studio from closing and losing your changes</source>
-<target xml:lang="pt">Assets that failed to save now prevent Game Studio from closing and losing your changes</target>
+<target xml:lang="pt">Os ativos que não conseguiram salvar agora impedem Game Studio de fechar e perder suas mudanças</target>
 </trans-unit>
 <trans-unit id="tu141" xml:space="preserve">
 <source xml:lang="en">Sprites can be selected again in the scene editor</source>
-<target xml:lang="pt">Sprites can be selected again in the scene editor</target>
+<target xml:lang="pt">Sprites podem ser selecionados novamente no editor de cena</target>
 </trans-unit>
 <trans-unit id="tu142" xml:space="preserve">
 <source xml:lang="en">Undoing/redoing creation or removal of script assets now works correctly</source>
-<target xml:lang="pt">Undoing/redoing creation or removal of script assets now works correctly</target>
+<target xml:lang="pt">Desfazer\/refazer criação ou remoção de ativos de script agora funciona corretamente</target>
 </trans-unit>
 <trans-unit id="tu143" xml:space="preserve">
 <source xml:lang="en">Setting a translation snap of 0 now works as expected</source>
-<target xml:lang="pt">Setting a translation snap of 0 now works as expected</target>
+<target xml:lang="pt">Definir um snap de tradução de 0 agora funciona como esperado</target>
 </trans-unit>
 <trans-unit id="tu144" xml:space="preserve">
 <source xml:lang="en">Light gizmos correctly update when changing the light type</source>
-<target xml:lang="pt">Light gizmos correctly update when changing the light type</target>
+<target xml:lang="pt">Gizmos de luz atualizar corretamente ao alterar o tipo de luz</target>
 </trans-unit>
 <trans-unit id="tu145" xml:space="preserve">
 <source xml:lang="en">Typing the URL to a reference in an asset picked now works as expected</source>
-<target xml:lang="pt">Typing the URL to a reference in an asset picked now works as expected</target>
+<target xml:lang="pt">Digitar a URL para uma referência em um ativo escolhido agora funciona como esperado</target>
 </trans-unit>
 <trans-unit id="tu146" xml:space="preserve">
 <source xml:lang="en">Keys were often stuck (especially annoying when moving around), this is fixed</source>
-<target xml:lang="pt">Keys were often stuck (especially annoying when moving around), this is fixed</target>
+<target xml:lang="pt">As chaves eram muitas vezes presas (especialmente irritantes quando se deslocam), isto é fixo</target>
 </trans-unit>
 <trans-unit id="tu147" xml:space="preserve">
 <source xml:lang="en">Assets</source>
-<target xml:lang="pt">Assets</target>
+<target xml:lang="pt">Activos</target>
 </trans-unit>
 <trans-unit id="tu148" xml:space="preserve">
 <source xml:lang="en">Fixed an issue when asset compilation was failing due to WCF message size between slave asset builder being too big</source>
-<target xml:lang="pt">Fixed an issue when asset compilation was failing due to WCF message size between slave asset builder being too big</target>
+<target xml:lang="pt">Corrigido um problema quando a compilação de ativos estava falhando devido ao tamanho da mensagem WCF entre o construtor de ativos escravos ser muito grande</target>
 </trans-unit>
 <trans-unit id="tu149" xml:space="preserve">
 <source xml:lang="en">Engine</source>
-<target xml:lang="pt">Engine</target>
+<target xml:lang="pt">Motor</target>
 </trans-unit>
 <trans-unit id="tu150" xml:space="preserve">
 <source xml:lang="en">Fixed right Shift key detection in WinForms</source>
-<target xml:lang="pt">Fixed right Shift key detection in WinForms</target>
+<target xml:lang="pt">Direito fixo Detecção de teclas Shift em WinForms</target>
 </trans-unit>
 <trans-unit id="tu151" xml:space="preserve">
 <source xml:lang="en">The <g id="1">Start</g> method of scripts is now always called before the <g id="2">Update</g> method of any <g id="3">SyncScript</g> in the same frame</source>
-<target xml:lang="pt">The <g id="1">Start</g> method of scripts is now always called before the <g id="2">Update</g> method of any <g id="3">SyncScript</g> in the same frame</target>
+<target xml:lang="pt">O método <g id="1">Start</g> dos scripts é agora sempre chamado antes do método <g id="2">Update</g>G2&gt; de qualquer <g id="3">Script</g> no mesmo quadro</target>
 </trans-unit>
 <trans-unit id="tu152" xml:space="preserve">
 <source xml:lang="en"><g id="1">SyncScripts</g> no longer cause crashes when scheduled from a different thread</source>
-<target xml:lang="pt"><g id="1">SyncScripts</g> no longer cause crashes when scheduled from a different thread</target>
+<target xml:lang="pt"><g id="1">SyncScripts</g> não causa mais falhas quando programado de uma linha diferente</target>
 </trans-unit>
 <trans-unit id="tu153" xml:space="preserve">
 <source xml:lang="en">Scripts are no longer started or updated if another script removes them from the scene in the same frame</source>
-<target xml:lang="pt">Scripts are no longer started or updated if another script removes them from the scene in the same frame</target>
+<target xml:lang="pt">Os scripts não são mais iniciados ou atualizados se outro script os remover da cena no mesmo quadro</target>
 </trans-unit>
 <trans-unit id="tu154" xml:space="preserve">
 <source xml:lang="en"><g id="1">ImageElements</g> are now properly displayed when using a <g id="2">SpriteFromTexture</g></source>
-<target xml:lang="pt"><g id="1">ImageElements</g> are now properly displayed when using a <g id="2">SpriteFromTexture</g></target>
+<target xml:lang="pt">&lt;g1Image&gt; Elements&lt;/g&gt; agora são exibidos corretamente ao usar um &lt;g id="2"&gt;SpriteFromTexture&lt;/g&gt;&lt;g id="1"&gt;</target>
 </trans-unit>
 <trans-unit id="tu155" xml:space="preserve">
 <source xml:lang="en">Graphics</source>
-<target xml:lang="pt">Graphics</target>
+<target xml:lang="pt">Gráficos</target>
 </trans-unit>
 <trans-unit id="tu156" xml:space="preserve">
 <source xml:lang="en">Orthographic views no longer display broken shadows</source>
-<target xml:lang="pt">Orthographic views no longer display broken shadows</target>
+<target xml:lang="pt">As vistas ortográficos já não exibem sombras quebradas</target>
 </trans-unit>
 <trans-unit id="tu157" xml:space="preserve">
 <source xml:lang="en">Shadows no longer disappear when viewed exactly vertically</source>
-<target xml:lang="pt">Shadows no longer disappear when viewed exactly vertically</target>
+<target xml:lang="pt">As sombras não desaparecem mais quando vistas exatamente verticalmente</target>
 </trans-unit>
 <trans-unit id="tu158" xml:space="preserve">
 <source xml:lang="en">Cascade blending no longer causes holes in shadows</source>
-<target xml:lang="pt">Cascade blending no longer causes holes in shadows</target>
+<target xml:lang="pt">A mistura de cascata não causa mais buracos nas sombras</target>
 </trans-unit>
 <trans-unit id="tu159" xml:space="preserve">
 <source xml:lang="en">Tesselated objects now cast shadows</source>
-<target xml:lang="pt">Tesselated objects now cast shadows</target>
+<target xml:lang="pt">Objetos Tesselated agora lançam sombras</target>
 </trans-unit>
 <trans-unit id="tu160" xml:space="preserve">
 <source xml:lang="en">Normal-mapped object lighting is now correct when non-uniform scaling is applied</source>
-<target xml:lang="pt">Normal-mapped object lighting is now correct when non-uniform scaling is applied</target>
+<target xml:lang="pt">Iluminação de objeto normal é agora correta quando o dimensionamento não uniforme é aplicado</target>
 </trans-unit>
 <trans-unit id="tu161" xml:space="preserve">
 <source xml:lang="en">Using unbound vertex streams in shaders no longer causes crashes</source>
-<target xml:lang="pt">Using unbound vertex streams in shaders no longer causes crashes</target>
+<target xml:lang="pt">Usando fluxos de vértices inbound em shaders não causa mais acidentes</target>
 </trans-unit>
 <trans-unit id="tu162" xml:space="preserve">
 <source xml:lang="en">Bright post effects are now more stable</source>
-<target xml:lang="pt">Bright post effects are now more stable</target>
+<target xml:lang="pt">Efeitos de post brilhantes agora são mais estáveis</target>
 </trans-unit>
 <trans-unit id="tu163" xml:space="preserve">
 <source xml:lang="en">VR now shares shadows and culling for each eye</source>
-<target xml:lang="pt">VR now shares shadows and culling for each eye</target>
+<target xml:lang="pt">VR agora compartilha sombras e inclinações para cada olho</target>
 </trans-unit>
 <trans-unit id="tu164" xml:space="preserve">
 <source xml:lang="en">Clustered lighting now works with multiple render views</source>
-<target xml:lang="pt">Clustered lighting now works with multiple render views</target>
+<target xml:lang="pt">Iluminação embutida agora funciona com várias visualizações de renderização</target>
 </trans-unit>
 <trans-unit id="tu165" xml:space="preserve">
 <source xml:lang="en">Fixed RGB/HSV color conversions</source>
-<target xml:lang="pt">Fixed RGB/HSV color conversions</target>
+<target xml:lang="pt">Conversões de cores RGB \/ HSV fixas</target>
 </trans-unit>
 <trans-unit id="tu166" xml:space="preserve">
 <source xml:lang="en">Fixed engine exit when using RenderDoc profiling</source>
-<target xml:lang="pt">Fixed engine exit when using RenderDoc profiling</target>
+<target xml:lang="pt">Saída do motor fixo ao usar o perfil RenderDoc</target>
 </trans-unit>
 <trans-unit id="tu167" xml:space="preserve">
 <source xml:lang="en">Fixed Multisample Quality Level for MSAA textures</source>
-<target xml:lang="pt">Fixed Multisample Quality Level for MSAA textures</target>
+<target xml:lang="pt">Multisample fixo Nível de qualidade para texturas MSAA</target>
 </trans-unit>
 <trans-unit id="tu168" xml:space="preserve">
 <source xml:lang="en">Tesselation and displacement mapping no longer cause rendering errors in the editor</source>
-<target xml:lang="pt">Tesselation and displacement mapping no longer cause rendering errors in the editor</target>
+<target xml:lang="pt">Tesselation e mapeamento de deslocamento não causam mais erros de renderização no editor</target>
 </trans-unit>
 <trans-unit id="tu169" xml:space="preserve">
 <source xml:lang="en">Renamed MSAALevel into MultisampleCount</source>
-<target xml:lang="pt">Renamed MSAALevel into MultisampleCount</target>
+<target xml:lang="pt">Renamed MSAA Nível em MultisampleCount</target>
 </trans-unit>
 <trans-unit id="tu170" xml:space="preserve">
 <source xml:lang="en">Physics</source>
-<target xml:lang="pt">Physics</target>
+<target xml:lang="pt">Física</target>
 </trans-unit>
 <trans-unit id="tu171" xml:space="preserve">
 <source xml:lang="en">Removing and re-adding entities no longer causes crashes in certain situations</source>
-<target xml:lang="pt">Removing and re-adding entities no longer causes crashes in certain situations</target>
+<target xml:lang="pt">Remover e re-adicionar entidades não causa mais acidentes em determinadas situações</target>
 </trans-unit>
 <trans-unit id="tu172" xml:space="preserve">
 <source xml:lang="en">Version 2.0.1.1 — 28 April 2017</source>
-<target xml:lang="pt">Version 2.0.1.1 — 28 April 2017</target>
+<target xml:lang="pt">Versão 2.0.1.1 — 28 de abril de 2017</target>
 </trans-unit>
 <trans-unit id="tu173" xml:space="preserve">
 <source xml:lang="en">Bug fixes</source>
-<target xml:lang="pt">Bug fixes</target>
+<target xml:lang="pt">Correções de bugs</target>
 </trans-unit>
 <trans-unit id="tu174" xml:space="preserve">
 <source xml:lang="en">Game Studio</source>
@@ -717,39 +717,39 @@ SceneSystem.SceneInstance.RootScene.Children.Add(childScene);
 </trans-unit>
 <trans-unit id="tu175" xml:space="preserve">
 <source xml:lang="en">Fixed a potential crash when enabling VR in the editor and opening multiple scenes/prefabs</source>
-<target xml:lang="pt">Fixed a potential crash when enabling VR in the editor and opening multiple scenes/prefabs</target>
+<target xml:lang="pt">Corrigido um potencial acidente ao ativar o VR no editor e abrir várias cenas\/prefabs</target>
 </trans-unit>
 <trans-unit id="tu176" xml:space="preserve">
 <source xml:lang="en">Prevents to drag and drop an entity that depends on a prefab into it (or an ancestor prefab) that would have created a cyclic reference and crashed the editor</source>
-<target xml:lang="pt">Prevents to drag and drop an entity that depends on a prefab into it (or an ancestor prefab) that would have created a cyclic reference and crashed the editor</target>
+<target xml:lang="pt">Impede arrastar e soltar uma entidade que depende de um prefab nele (ou um antepassado prefab) que teria criado uma referência cíclica e caiu o editor</target>
 </trans-unit>
 <trans-unit id="tu177" xml:space="preserve">
 <source xml:lang="en">Fixed an issue with automatic assembly reload</source>
-<target xml:lang="pt">Fixed an issue with automatic assembly reload</target>
+<target xml:lang="pt">Corrigido um problema com recarga de montagem automática</target>
 </trans-unit>
 <trans-unit id="tu178" xml:space="preserve">
 <source xml:lang="en">Engine</source>
-<target xml:lang="pt">Engine</target>
+<target xml:lang="pt">Motor</target>
 </trans-unit>
 <trans-unit id="tu179" xml:space="preserve">
 <source xml:lang="en">Fixed a crash when computing light probes</source>
-<target xml:lang="pt">Fixed a crash when computing light probes</target>
+<target xml:lang="pt">Corrigido um acidente quando a computação sondas de luz</target>
 </trans-unit>
 <trans-unit id="tu180" xml:space="preserve">
 <source xml:lang="en">Build</source>
-<target xml:lang="pt">Build</target>
+<target xml:lang="pt">Construa</target>
 </trans-unit>
 <trans-unit id="tu181" xml:space="preserve">
 <source xml:lang="en">Fixed a possible issue when compiling a game that targets iOS and the right Xamarin version cannot be found</source>
-<target xml:lang="pt">Fixed a possible issue when compiling a game that targets iOS and the right Xamarin version cannot be found</target>
+<target xml:lang="pt">Corrigido um problema possível ao compilar um jogo que visa iOS e a versão Xamarin direita não pode ser encontrada</target>
 </trans-unit>
 <trans-unit id="tu182" xml:space="preserve">
 <source xml:lang="en">Version 2.0.2.1 — 8 June 2017</source>
-<target xml:lang="pt">Version 2.0.2.1 — 8 June 2017</target>
+<target xml:lang="pt">Versão 2.0.2.1 — 8 Junho 2017</target>
 </trans-unit>
 <trans-unit id="tu183" xml:space="preserve">
 <source xml:lang="en">Improvements</source>
-<target xml:lang="pt">Improvements</target>
+<target xml:lang="pt">Melhorias</target>
 </trans-unit>
 <trans-unit id="tu184" xml:space="preserve">
 <source xml:lang="en">Game Studio</source>
@@ -757,27 +757,27 @@ SceneSystem.SceneInstance.RootScene.Children.Add(childScene);
 </trans-unit>
 <trans-unit id="tu185" xml:space="preserve">
 <source xml:lang="en">Visual Studio version picker now shows the installation nickname to easily differentiate when multiple instances are installed side by side</source>
-<target xml:lang="pt">Visual Studio version picker now shows the installation nickname to easily differentiate when multiple instances are installed side by side</target>
+<target xml:lang="pt">Visual Studio versão picker agora mostra o apelido de instalação para facilmente diferenciar quando várias instâncias são instaladas lado a lado</target>
 </trans-unit>
 <trans-unit id="tu186" xml:space="preserve">
 <source xml:lang="en">Add the concept of <g id="1">active scene</g> in the scene editor. Dropping an asset to the scene view will an entity add to the currently active scene instead of the root scene</source>
-<target xml:lang="pt">Add the concept of <g id="1">active scene</g> in the scene editor. Dropping an asset to the scene view will an entity add to the currently active scene instead of the root scene</target>
+<target xml:lang="pt">Adicione o conceito de cena <g id="1">active</g> no editor de cena. Deixar um ativo para a visão de cena uma entidade adicionará à cena atualmente ativa em vez da cena raiz</target>
 </trans-unit>
 <trans-unit id="tu187" xml:space="preserve">
 <source xml:lang="en">Graphics</source>
-<target xml:lang="pt">Graphics</target>
+<target xml:lang="pt">Gráficos</target>
 </trans-unit>
 <trans-unit id="tu188" xml:space="preserve">
 <source xml:lang="en">VR: Added a CopyMirror option to control if VR rendering is copied back to current render target</source>
-<target xml:lang="pt">VR: Added a CopyMirror option to control if VR rendering is copied back to current render target</target>
+<target xml:lang="pt">RV: Adicionado uma opção CopyMirror para controlar se a renderização VR é copiada de volta para o destino de renderização atual</target>
 </trans-unit>
 <trans-unit id="tu189" xml:space="preserve">
 <source xml:lang="en">Shaders: StructuredBuffer were being declared before their struct type; ordering should now be correct</source>
-<target xml:lang="pt">Shaders: StructuredBuffer were being declared before their struct type; ordering should now be correct</target>
+<target xml:lang="pt">Shaders: EstruturadoBuffer estavam sendo declarados antes de seu tipo de struct; ordem agora deve ser correta</target>
 </trans-unit>
 <trans-unit id="tu190" xml:space="preserve">
 <source xml:lang="en">Bug fixes</source>
-<target xml:lang="pt">Bug fixes</target>
+<target xml:lang="pt">Correções de bugs</target>
 </trans-unit>
 <trans-unit id="tu191" xml:space="preserve">
 <source xml:lang="en">Game Studio</source>
@@ -785,63 +785,63 @@ SceneSystem.SceneInstance.RootScene.Children.Add(childScene);
 </trans-unit>
 <trans-unit id="tu192" xml:space="preserve">
 <source xml:lang="en">Color Picker was behaving strangely due to some RGB to HSV conversion issues</source>
-<target xml:lang="pt">Color Picker was behaving strangely due to some RGB to HSV conversion issues</target>
+<target xml:lang="pt">Color Picker estava se comportando estranhamente devido a alguns problemas de conversão RGB para HSV</target>
 </trans-unit>
 <trans-unit id="tu193" xml:space="preserve">
 <source xml:lang="en">Global store.config was preventing Game Studio to find Xenko installation <g id="1">#576</g></source>
-<target xml:lang="pt">Global store.config was preventing Game Studio to find Xenko installation <g id="1">#576</g></target>
+<target xml:lang="pt">Loja global. config estava impedindo Game Studio para encontrar a instalação Xenko <g id="1">#576</g></target>
 </trans-unit>
 <trans-unit id="tu194" xml:space="preserve">
 <source xml:lang="en">Fix a crash that occurs when replacing a sprite in the property grid of a spritesheet</source>
-<target xml:lang="pt">Fix a crash that occurs when replacing a sprite in the property grid of a spritesheet</target>
+<target xml:lang="pt">Corrigir um acidente que ocorre ao substituir um sprite na grade de propriedade de uma spritesheet</target>
 </trans-unit>
 <trans-unit id="tu195" xml:space="preserve">
 <source xml:lang="en">Fix some string comparison that were using the current locale of the system, causing issues with some language such as Turkish</source>
-<target xml:lang="pt">Fix some string comparison that were using the current locale of the system, causing issues with some language such as Turkish</target>
+<target xml:lang="pt">Corrigir alguma comparação de cadeia de caracteres que estavam usando o local atual do sistema, causando problemas com algum idioma, como o turco</target>
 </trans-unit>
 <trans-unit id="tu196" xml:space="preserve">
 <source xml:lang="en">Prevent modal windows from being minimized</source>
-<target xml:lang="pt">Prevent modal windows from being minimized</target>
+<target xml:lang="pt">Impedir que as janelas modais sejam minimizadas</target>
 </trans-unit>
 <trans-unit id="tu197" xml:space="preserve">
 <source xml:lang="en">Restore some missing sliders in the property grid (that were replaced by a plain text box), review ranges and step values for most of them</source>
-<target xml:lang="pt">Restore some missing sliders in the property grid (that were replaced by a plain text box), review ranges and step values for most of them</target>
+<target xml:lang="pt">Restaurar alguns controles deslizantes em falta na grade da propriedade (que foram substituídos por uma caixa de texto simples), intervalos de revisão e valores de passo para a maioria deles</target>
 </trans-unit>
 <trans-unit id="tu198" xml:space="preserve">
 <source xml:lang="en">Fix a potential crash at serialization when a script had a null reference to another <g id="1">Entity</g> or <g id="2">EntityComponent</g> (and some other similar scenarios)</source>
-<target xml:lang="pt">Fix a potential crash at serialization when a script had a null reference to another <g id="1">Entity</g> or <g id="2">EntityComponent</g> (and some other similar scenarios)</target>
+<target xml:lang="pt">Corrigir uma falha potencial na serialização quando um script tinha uma referência nula a outro <g id="1">Entidade</g> ou <g id="2">EntidadeComponente</g> (e alguns outros cenários semelhantes)</target>
 </trans-unit>
 <trans-unit id="tu199" xml:space="preserve">
 <source xml:lang="en">Partial fix of the property grid template for entity component references</source>
-<target xml:lang="pt">Partial fix of the property grid template for entity component references</target>
+<target xml:lang="pt">Correção parcial do modelo de grade de propriedade para referências de componentes da entidade</target>
 </trans-unit>
 <trans-unit id="tu200" xml:space="preserve">
 <source xml:lang="en">Fix an issue with the property grid template used to edit <g id="1">char</g> properties</source>
-<target xml:lang="pt">Fix an issue with the property grid template used to edit <g id="1">char</g> properties</target>
+<target xml:lang="pt">Corrigir um problema com o modelo de rede de propriedade usado para editar propriedades <g id="1">char</g></target>
 </trans-unit>
 <trans-unit id="tu201" xml:space="preserve">
 <source xml:lang="en">VR</source>
-<target xml:lang="pt">VR</target>
+<target xml:lang="pt">RV</target>
 </trans-unit>
 <trans-unit id="tu202" xml:space="preserve">
 <source xml:lang="en">Fix runtime crash when adding twice the same VR device API in the required API list</source>
-<target xml:lang="pt">Fix runtime crash when adding twice the same VR device API in the required API list</target>
+<target xml:lang="pt">Corrigir falhas de tempo de execução ao adicionar duas vezes a mesma API de dispositivo VR na lista de APIs exigida</target>
 </trans-unit>
 <trans-unit id="tu203" xml:space="preserve">
 <source xml:lang="en">OpenVR: camera was rotating around world center instead of camera center when a rotation was applied on entity</source>
-<target xml:lang="pt">OpenVR: camera was rotating around world center instead of camera center when a rotation was applied on entity</target>
+<target xml:lang="pt">OpenVR: câmera estava girando em torno do centro mundial em vez do centro da câmera quando uma rotação foi aplicada na entidade</target>
 </trans-unit>
 <trans-unit id="tu204" xml:space="preserve">
 <source xml:lang="en">Graphics</source>
-<target xml:lang="pt">Graphics</target>
+<target xml:lang="pt">Gráficos</target>
 </trans-unit>
 <trans-unit id="tu205" xml:space="preserve">
 <source xml:lang="en">Fixed point lights not casting shadows from objects that have tessellation enabled</source>
-<target xml:lang="pt">Fixed point lights not casting shadows from objects that have tessellation enabled</target>
+<target xml:lang="pt">Luzes de ponto fixo não lançando sombras de objetos que têm tessellation habilitado</target>
 </trans-unit>
 <trans-unit id="tu206" xml:space="preserve">
 <source xml:lang="en">Fixed a bug where some lights would not render <g id="1">#586</g></source>
-<target xml:lang="pt">Fixed a bug where some lights would not render <g id="1">#586</g></target>
+<target xml:lang="pt">Corrigido um bug onde algumas luzes não renderiam <g id="1">#586</g></target>
 </trans-unit>
 <trans-unit id="tu207" xml:space="preserve">
 <source xml:lang="en">Android</source>
@@ -849,35 +849,35 @@ SceneSystem.SceneInstance.RootScene.Children.Add(childScene);
 </trans-unit>
 <trans-unit id="tu208" xml:space="preserve">
 <source xml:lang="en">Fix a memory allocation that could make a game crash at startup on certain devices.</source>
-<target xml:lang="pt">Fix a memory allocation that could make a game crash at startup on certain devices.</target>
+<target xml:lang="pt">Corrigir uma alocação de memória que poderia fazer um acidente de jogo na inicialização em certos dispositivos.</target>
 </trans-unit>
 <trans-unit id="tu209" xml:space="preserve">
 <source xml:lang="en">Others</source>
-<target xml:lang="pt">Others</target>
+<target xml:lang="pt">Outros</target>
 </trans-unit>
 <trans-unit id="tu210" xml:space="preserve">
 <source xml:lang="en">Connection Router was not running properly if the Game Studio of that Xenko version didn't run first</source>
-<target xml:lang="pt">Connection Router was not running properly if the Game Studio of that Xenko version didn't run first</target>
+<target xml:lang="pt">Connection Router não estava funcionando corretamente se o Game Studio dessa versão Xenko não foi executado primeiro</target>
 </trans-unit>
 <trans-unit id="tu211" xml:space="preserve">
 <source xml:lang="en">Add <g id="1">*.lock.json</g> pattern to generated <g id="2">.gitignore</g> file (when creating a project)</source>
-<target xml:lang="pt">Add <g id="1">*.lock.json</g> pattern to generated <g id="2">.gitignore</g> file (when creating a project)</target>
+<target xml:lang="pt">Adicionar <g id="1">*.lock.json</g> padrão para gerar <g id="2">.gitignore</g> arquivo (quando criar um projeto)</target>
 </trans-unit>
 <trans-unit id="tu212" xml:space="preserve">
 <source xml:lang="en">Version 2.0.3.1 — 24 July 2017</source>
-<target xml:lang="pt">Version 2.0.3.1 — 24 July 2017</target>
+<target xml:lang="pt">Versão 2.0.3.1 — 24 Julho 2017</target>
 </trans-unit>
 <trans-unit id="tu213" xml:space="preserve">
 <source xml:lang="en">Extend closure time of the promotion to 11:30am, January 1st, 2018 (UTC+09:00).</source>
-<target xml:lang="pt">Extend closure time of the promotion to 11:30am, January 1st, 2018 (UTC+09:00).</target>
+<target xml:lang="pt">Estenda o tempo de fechamento da promoção para as 11:30h, 1 de janeiro de 2018 (UTC+09:00).</target>
 </trans-unit>
 <trans-unit id="tu214" xml:space="preserve">
 <source xml:lang="en">Version 2.0.4.1 — 23 August 2017</source>
-<target xml:lang="pt">Version 2.0.4.1 — 23 August 2017</target>
+<target xml:lang="pt">Versão 2.0.4.1 — 23 de agosto de 2017</target>
 </trans-unit>
 <trans-unit id="tu215" xml:space="preserve">
 <source xml:lang="en">Fix an issue with latest Visual Studio and MSBuild (15.3) <g id="1">#617</g> related to <g id="2">msbuild #2369</g>.</source>
-<target xml:lang="pt">Fix an issue with latest Visual Studio and MSBuild (15.3) <g id="1">#617</g> related to <g id="2">msbuild #2369</g>.</target>
+<target xml:lang="pt">Corrigir um problema com o mais recente Visual Studio e MSBuild (15.3) <g id="1">#617</g> relacionado a <g id="2">msbuild #2369</g>.</target>
 </trans-unit>
 </body>
 </file>

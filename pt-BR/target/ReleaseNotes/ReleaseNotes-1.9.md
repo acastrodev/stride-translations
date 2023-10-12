@@ -1,409 +1,409 @@
-# Xenko 1.9 beta release notes
+# Notas de versão beta do Xenko 1.9
 
-## Highlights
+## Destaques
 
-Xenko 1.9 Beta introduces several major new features along with several relevant enhancements to existing features.
+Xenko 1.9 A Beta apresenta vários novos recursos importantes, juntamente com vários aprimoramentos relevantes para recursos existentes.
 
-We are excited to offer three new game templates to speed up your game design time, a brand new script editor as well as expanded copy-paste functionality.
+Estamos animados para oferecer três novos modelos de jogo para acelerar o seu tempo de design de jogo, um novo editor de script, bem como funcionalidade de cópia-paste expandida.
 
-The last major new feature is our new Navigation Mesh system.
+O último grande novo recurso é o nosso novo sistema de malha de navegação.
 
-### Game Templates
+### Modelos de jogo
 
-We have added several templates packed with a lot of functionality to help you kickstart your games. Choose from:
+Nós adicionamos vários modelos embalados com muita funcionalidade para ajudá-lo a iniciar seus jogos. Escolha entre:
 
-* First Person Shooter
-* Third Person Platformer
-* Top-View RPG
+* Primeira pessoa Shooter
+* Plataforma de terceira pessoa
+* RPG de topo
 
 <video autoplay loop class="responsive-video" poster="media/ReleaseNotes-1.9/game_templates.jpg">
    <source src="media/ReleaseNotes-1.9/game_templates.mp4" type="video/mp4">
 </video>
 
-All of them come with basic camera and player functionality found in most games of their respective genres. They also have many production-quality assets so you can easily try different features on your own.
+Todos eles vêm com câmera básica e funcionalidade de jogador encontrados na maioria dos jogos de seus respectivos gêneros. Eles também têm muitos ativos de qualidade de produção para que você possa facilmente experimentar diferentes recursos por conta própria.
 
-In addition to the game templates, the **New Game** project now includes optional packages with all the assets we used to build the samples. Unlike the game templates which are trimmed down, the optional packages include ALL assets, including some which are not used by any Xenko sample.
+Além dos modelos de jogo, o projeto **New Game** agora inclui pacotes opcionais com todos os ativos que usamos para construir as amostras. Ao contrário dos modelos de jogo que são aparados, os pacotes opcionais incluem TODOS os ativos, incluindo alguns que não são usados por qualquer amostra Xenko.
 
-### Script Editor
+### Editor de texto
 
-To ease friction from switching back and forth between the Game Studio and your IDE, we’ve built a new Script Editor.  Relying fully on Visual Studio is no longer necessary because you can now edit your code directly within the Game Studio itself. You’ll get full syntax highlighting, auto-completion, live diagnostics and even the ability to auto-reload C# files and projects that changed on your hard drive due to changes in your external editor (e.g., Visual Studio).
+Para facilitar o atrito de mudar para trás e para a frente entre o Game Studio e seu IDE, construímos um novo Editor de Script.  Baseando-se totalmente no Visual Studio não é mais necessário porque agora você pode editar seu código diretamente dentro do próprio Game Studio. Você terá destaque de sintaxe completa, auto-compleção, diagnósticos ao vivo e até mesmo a capacidade de recarregar automaticamente arquivos C# e projetos que mudaram em seu disco rígido devido a alterações em seu editor externo (por exemplo, Visual Studio).
 
-In fact, expect:
-* Highlight, auto-completion and live diagnostics is available in the Xenko API, your own game code and libraries that you use
-* Auto-reload C# scripts and C# project changes that happened in the background
-* A Visual Studio like experience for all your code editing!
+Na verdade, espere:
+* Destaque, auto-compleção e diagnósticos ao vivo está disponível na API Xenko, seu próprio código de jogo e bibliotecas que você usa
+* Recarregar automaticamente scripts C# e alterações de projeto C# que aconteceram em segundo plano
+* Um Visual Studio como experiência para toda a sua edição de código!
 
 <video autoplay loop class="responsive-video" poster="media/ReleaseNotes-1.9/script_editor/code_completion.jpg">
    <source src="media/ReleaseNotes-1.9/script_editor/code_completion.mp4" type="video/mp4">
 </video>
 
-We had some help from Microsoft’s .NET compiler, [Roslyn](https://github.com/dotnet/roslyn), so Xenko users will also receive the full benefit of all the latest features of .NET. Adding a Rosyln-based Script Editor makes it easier to keep up with the latest C# updates.
+Tivemos alguma ajuda do compilador .NET da Microsoft, [Roslyn](https://github.com/dotnet/roslyn), então os usuários do Xenko também receberão o benefício completo de todas as funcionalidades mais recentes do .NET. Adicionar um Editor de Script baseado em Rosyln torna mais fácil manter-se com as atualizações C# mais recentes.
 
-Using the Xenko Script Editor is fairly straightforward. Just follow these steps:
+Usar o Xenko Script Editor é bastante simples. Basta seguir estes passos:
 
-* Create a new project/game in Game Studio
-* Add a script in Game Studio
-* Edit the script in Game Studio
+* Criar um novo projeto\/jogo no Game Studio
+* Adicionar um script no Game Studio
+* Editar o script no Game Studio
 
 <video autoplay loop class="responsive-video" poster="media/ReleaseNotes-1.9/script_editor/create_script_gamestudio.jpg">
    <source src="media/ReleaseNotes-1.9/script_editor/create_script_gamestudio.mp4" type="video/mp4">
 </video>
 
-C# scripts saved on Visual Studio side (or any text editor, for that matter) will automatically be updated in Game Studio without reloading. Same goes for project changes (.csproj): new scripts will appear automatically upon saving. GameStudio will automatically listen for file changes on the hard drive and update them live, or ask you what to do in case of conflicts.
+Scripts C# salvos no lado do Visual Studio (ou qualquer editor de texto, para esse assunto) será automaticamente atualizado no Game Studio sem recarregar. O mesmo vale para as mudanças do projeto (.csproj): novos scripts aparecerão automaticamente ao salvar. GameStudio irá automaticamente ouvir alterações de arquivo no disco rígido e atualizá-los ao vivo, ou perguntar-lhe o que fazer em caso de conflitos.
 
 <video autoplay loop class="responsive-video" poster="media/ReleaseNotes-1.9/script_editor/external_changes.jpg">
    <source src="media/ReleaseNotes-1.9/script_editor/external_changes.mp4" type="video/mp4">
 </video>
 
-Under the hood, [Rosyln](https://github.com/dotnet/roslyn) is the underlying technology that can process your Xenko source code. But we didn’t stop there! We were fortunate to find [AvalonEdit](http://avalonedit.net/), which provided us what we wanted for the visual appearance of the UI aspect of the Xenko script editor. We also integrated [RoslynPad](https://roslynpad.net/), which connects Roslyn and AvalonEdit together.
+Sob o capô, [Rosyln](https://github.com/dotnet/roslyn) é a tecnologia subjacente que pode processar seu código fonte Xenko. Mas nós não paramos lá! Tivemos sorte em encontrar [AvalonEdit](http://avalonedit.net/), o que nos forneceu o que que queríamos para a aparência visual do aspecto UI do editor de script Xenko. Também [RoslynPad](https://roslynpad.net/), que conecta Roslyn e AvalonEdit juntos.
 
-### Navigation Meshes
+### Malhas de navegação
 
-In Xenko 1.9β, you can create a **navigation mesh** powered by [Recast and Detour](https://github.com/recastnavigation/recastnavigation) with **real-time feedback** directly in the **Xenko GameStudio!** The navigation mesh is especially useful for RPGs or top-down strategy games, as you can use it to **guide characters through complex scenes**. The real-time feedback makes it easy to adjust and conveniently customize AI movement and the dimensions of the navigation mesh itself. The green outline of Xenko’s Navigation Mesh shows where the AI comes into play and where the colliders are set.
+Em Xenko 1.9β, você pode criar um **navigation mesh** alimentado por [Recast e Detour](https://github.com/recastnavigation/recastnavigation) com ** real-time feedback** diretamente no **Xenko GameStudio!** A malha de navegação é especialmente útil para RPGs ou jogos de estratégia de cima para baixo, pois você pode usá-lo para caracteres de guia ** através de cenas complexas**. O feedback em tempo real torna mais fácil ajustar e convenientemente personalizar o movimento AI e as dimensões da própria malha de navegação. O contorno verde da malha de navegação de Xenko mostra onde a IA entra em jogo e onde os colisões são definidos.
 
 
 <video autoplay loop class="responsive-video" poster="media/ReleaseNotes-1.9/navmeshes/withOutlineAE.jpg">
    <source src="media/ReleaseNotes-1.9/navmeshes/withOutlineAE.mp4" type="video/mp4">
 </video>
 
-In the videos, you can see how the AI navigates the level using the logic within the navigation mesh, and how the colliders will automatically be set in real-time. Of course, you can script AI movement manually, too.
+Nos vídeos, você pode ver como a AI navega no nível usando a lógica dentro da malha de navegação e como os colisões serão automaticamente definidos em tempo real. Claro, você pode script AI movimento manualmente, também.
 
 
 <video autoplay loop class="responsive-video" poster="media/ReleaseNotes-1.9/navmeshes/NoOutlineAE.jpg">
    <source src="media/ReleaseNotes-1.9/navmeshes/NoOutlineAE.mp4" type="video/mp4">
 </video>
 
-### Copy & Paste Functionality Expanded
+### Função de cópia e pasta Expansão
 
-In the past we only supported copy and pasting of assets, but now you can **copy-paste pretty much anything** in the Game Studio.
+No passado só suportamos cópia e colar de ativos, mas agora você pode **copy-paste praticamente qualquer coisa** no Game Studio.
 
-Any entities in a scene are now copyable, as well as any sprites of a sprite sheet, UI elements, or even a single property in the property grid! For instance, you can copy a list and perform any of the following operations.
+Quaisquer entidades em uma cena agora são copiáveis, bem como quaisquer sprites de uma folha de sprite, elementos de interface do usuário, ou até mesmo uma única propriedade na grade da propriedade! Por exemplo, você pode copiar uma lista e executar qualquer uma das seguintes operações.
 
-* Insert it into another list at various positions, for example:
+* Insira-o em outra lista em várias posições, por exemplo:
 
 <video autoplay loop class="responsive-video" poster="media/ReleaseNotes-1.9/copy_paste/Copy_InsertIntoList.jpg">
    <source src="media/ReleaseNotes-1.9/copy_paste/Copy_InsertIntoList.mp4" type="video/mp4">
 </video>
 
-* Copy and insert into the list (by pasting at a list item level).*
+* Copie e insira na lista (passando em um nível de item de lista). *
 
 
 <video autoplay loop class="responsive-video" poster="media/ReleaseNotes-1.9/copy_paste/Copy_AppendToList.jpg">
    <source src="media/ReleaseNotes-1.9/copy_paste/Copy_AppendToList.mp4" type="video/mp4">
 </video>
 
-* Copy and append to a list, for example, append it to the end of the list.
+* Copie e acrescente a uma lista, por exemplo, anexá-la ao final da lista.
 
 <video autoplay loop class="responsive-video" poster="media/ReleaseNotes-1.9/copy_paste/Copy_ReplaceList.jpg">
    <source src="media/ReleaseNotes-1.9/copy_paste/Copy_ReplaceList.mp4" type="video/mp4">
 </video>
 
-* Copy and replace the whole list.
+* Copie e substitua toda a lista.
 
-A bit more difficult to explain, but perhaps easier to show than write about is **copy and replace at an item level**. This action (shown in the video below) will remove the item (at its position in the list) and insert the copied ones starting at the same position of the item in the list. In our example below, the copy replace starts from Item 2 in List 2:
+Um pouco mais difícil de explicar, mas talvez mais fácil de mostrar do que escrever sobre é **copy e substituir em um nível de item**. Esta ação (mostrada no vídeo abaixo) irá remover o item (na sua posição na lista) e inserir os copiados começando na mesma posição do item na lista. Em nosso exemplo abaixo, a cópia substituir começa a partir do item 2 na Lista 2:
 
 <video autoplay loop class="responsive-video" poster="media/ReleaseNotes-1.9/copy_paste/Copy_ReplaceIntoList.jpg">
    <source src="media/ReleaseNotes-1.9/copy_paste/Copy_ReplaceIntoList.mp4" type="video/mp4">
 </video>
 
 
-Some information about copying entities and prefabs:
+Algumas informações sobre copiar entidades e pré-fabricados:
 
-**An entire hierarchy of entities can be copied from one scene or prefab to another scene or prefab**. Prefab instance will keep their reference to the source prefab as illustrated in the following example:
+** Uma hierarquia inteira de entidades pode ser copiada de uma cena ou prefab para outra cena ou pré-fab**. A instância prefab manterá sua referência ao prefab de origem como ilustrado no seguinte exemplo:
 
 
 <video autoplay loop class="responsive-video" poster="media/ReleaseNotes-1.9/copy_paste/CopyPaste_BetweenScenes2.jpg">
    <source src="media/ReleaseNotes-1.9/copy_paste/CopyPaste_BetweenScenes2.mp4" type="video/mp4">
 </video>
 
-*The prefab “MyHero” is copied into the scene. Links to the prefab are maintained.*
+*O pré-fabricado “MyHero” é copiado para a cena. Links para a pré-fabricada são mantidos.*
 
 
-It is also possible to **copy a component from an entity and paste it into another entity**.
+Também é possível **copiar um componente de uma entidade e colá-lo em outra entidade**.
 
 
-**Any absolutely any property that can be serialized can be copied**. You can copy something from one scene to another scene, from a sub-element in one scene to another scene and even from a scene to a text file, back and forth as needed. You can also copy simple values in the property grid (e.g., primitives such as int, vector3, string…) between separate Game Studio instances if that is something you find practical and useful.
+** Qualquer propriedade que possa ser serializada pode ser copiada**. Você pode copiar algo de uma cena para outra cena, de um subelemento em uma cena para outra cena e até mesmo de uma cena para um arquivo de texto, para trás e para a frente, conforme necessário. Você também pode copiar valores simples na grade de propriedade (por exemplo, primitivos como int, vector3, string..) entre instâncias separadas Game Studio se isso é algo que você encontra prático e útil.
 
 
-Here’s an example of copying between scripts and transform entities in the GameStudio Property Grid:
+Aqui está um exemplo de copiar entre scripts e transformar entidades no GameStudio Property Grid:
 
 <video autoplay loop class="responsive-video" poster="media/ReleaseNotes-1.9/copy_paste/CopyPaste_PropertyGrid.jpg">
    <source src="media/ReleaseNotes-1.9/copy_paste/CopyPaste_PropertyGrid.mp4" type="video/mp4">
 </video>
 
-### .NET Standard
+### . Padrão de NET
 
-Starting with Xenko 1.9, shared Game assemblies will be created using [.NET Standard](https://docs.microsoft.com/en-us/dotnet/articles/standard/library) rather than PCL.
+Começando com Xenko 1.9, conjuntos de jogos compartilhados serão criados usando [.NET Standard](https://docs.microsoft.com/en-us/dotnet/articles/standard/library) em vez de PCL.
 
-It offers [many advantages](https://blogs.msdn.microsoft.com/dotnet/2016/09/26/introducing-net-standard/): much better API surface for the developer, improved forward and backward compatibility, reduced fragmentation, finer-grained modularity of the framework, easier to write cross-platform apps, more frequent updates, etc.
+Ele oferece [ muitas vantagens](https://blogs.msdn.microsoft.com/dotnet/2016/09/26/introducing-net-standard/): superfície API muito melhor para o desenvolvedor, melhor compatibilidade para a frente e para trás, fragmentação reduzida, modularidade mais fina do framework, mais fácil de escrever aplicativos multi-plataforma, atualizações mais frequentes, etc.
 
-Newly created applications will target .NET Standard 1.4, but users are of course free to target a different version. Also, your existing PCL projects will still work as is, but we recommend you to update your projects to .NET Standard!
+As aplicações recém-criadas visam o .NET Standard 1.4, mas os usuários são naturalmente livres para segmentar uma versão diferente. Além disso, seus projetos PCL existentes ainda funcionarão como é, mas recomendamos que você atualize seus projetos para . NET Standard!
 
-### Assembly Reloading
+### Recarga de montagem
 
-Iterating on code is very important. So far, Xenko was supporting changes in scripts: as soon as you saved any C# file, Game Studio was offering to recompile and reload the assembly with the updated scripts. If there is an error loading the type, you can still edit other part of the asset, save it back while preserving the parts that could not be loaded.
+Iterar no código é muito importante. Até agora, Xenko estava apoiando mudanças nos scripts: assim que você salvou qualquer arquivo C#, Game Studio estava oferecendo para recarregar o conjunto com os scripts atualizados. Se houver um erro carregando o tipo, você ainda pode editar outra parte do ativo, salvá-lo de volta, preservando as partes que não poderiam ser carregadas.
 
-In this version, we generalized the approach so that any type embedded in your assets can be reloaded! As a result, you can now implement your own classes for anything you want directly in your game or plugin assemblies, and keep editing them without restarting the Game Studio.
+Nesta versão, generalizamos a abordagem para que qualquer tipo incorporado em seus ativos possa ser recarregado! Como resultado, você agora pode implementar suas próprias aulas para qualquer coisa que você quer diretamente em seu jogo ou plugin assemblies, e continuar editando-os sem reiniciar o Game Studio.
 
-This includes renderers, material features, and will soon be extensively used in new assets.
+Isso inclui renderizadores, características materiais e em breve será amplamente utilizado em novos ativos.
 
-## Breaking changes
+## Alterações de ruptura
 
-### Windows Phone and Windows Store Removed
+### Windows Phone e Windows Store Remover
 
-Windows Phone and Windows Store platforms are both removed.
-Please use the newer `Universal Windows Apps (UWP)` instead. This platform was previously known as `Windows 10`.
-Projects will be automatically upgraded to reflect this change.
+As plataformas Windows Phone e Windows Store são removidas.
+Por favor, use o mais recente `Universal Windows Apps (UWP)` em vez disso. Esta plataforma foi anteriormente conhecida como `Windows 10`.
+Os projetos serão atualizados automaticamente para refletir essa mudança.
 
-Also, we renamed preprocessor definition `SILICONSTUDIO_PLATFORM_WINDOWS_RUNTIME` into `SILICONSTUDIO_PLATFORM_UWP`.
+Além disso, renomeamos a definição de pré-processador `SILICONSTUDIO_PLATFORM_WINDOWS_RUNTIME` em `SILICONSTUDIO_PLATFORM_UWP`.
 
-### .NET Standard
+### . Padrão de NET
 
-The switch to .NET Standard for newly created projects implies that:
+O interruptor para . NET Standard para projetos recém-criados implica que:
 
-* Runtime .NET framework requirement when distributing your projects is bumped from .NET 4.5 to .NET 4.6.1.
-* You need Visual Studio 2015 to open and compile newly created projects
-* You can upgrade older projects to use .NET Standard using Visual Studio 2015 Update 3 (in project properties)
-* From version 1.9, we don't install prerequisites to compile PCL projects anymore. If you have somebody in your team still working on a project created with a previous version of Xenko on a fresh PC, please make them install Xenko 1.8 so that it installs the proper prerequisites (even if the project has been updated to a newer version of Xenko).
+* O requisito de framework Runtime .NET ao distribuir seus projetos é colhido de .NET 4.5 para .NET 4.6.1.
+* Você precisa do Visual Studio 2015 para abrir e compilar projetos recém-criados
+* Você pode atualizar projetos mais antigos para usar . NET Standard usando Visual Studio 2015 Update 3 (em propriedades do projeto)
+* A partir da versão 1.9, já não instalamos pré-requisitos para compilar projetos PCL. Se você tem alguém em sua equipe ainda trabalhando em um projeto criado com uma versão anterior de Xenko em um PC fresco, faça com que eles instalem Xenko 1.8 para que ele instale os pré-requisitos adequados (mesmo que o projeto tenha sido atualizado para uma versão mais recente do Xenko).
 
 
-### Asset Serialization
+### Serialização de ativos
 
-We changed how we serialize asset in YAML. We introduced new concepts that improve how we can track overrides between an archetype or a prefab and assets/entities inheriting from it. Although everything happens "under the hood", this is a actually a heavy change that might impact the upgrading of your project.
+Nós mudamos como serializamos o ativo em YAML. Introduzimos novos conceitos que melhoram a forma como podemos rastrear sobreposições entre um arquétipo ou uma prefab e ativos\/entidades herdadas dele. Embora tudo aconteça "sob o capô", esta é uma mudança realmente pesada que pode afetar a atualização do seu projeto.
 
-We removed asset upgrading for projects made with version 1.3 and below (released more than a year ago). It is possible that you experience some issues when upgrading a project made with versions 1.4 to 1.7, but you should properly be able to upgrade any project that uses version 1.8. However a few cases are not supported:
-* Dependency Properties of UI elements that are overridden from an UI library will be reset during upgrade. Therefore, properties such as Grid Column and Row will have to be manually restored.
-* Some case of overriden materials in the material list of ModelComponent might be improperly upgraded.
+Removemos a atualização de ativos para projetos feitos com a versão 1.3 e abaixo (lançado há mais de um ano). É possível que você experimente alguns problemas ao atualizar um projeto feito com versões 1.4 a 1.7, mas você deve ser capaz de atualizar qualquer projeto que use a versão 1.8. No entanto, alguns casos não são suportados:
+* Propriedades de dependência de elementos de interface do usuário que são substituídos de uma biblioteca de interface do usuário será redefinido durante a atualização. Portanto, propriedades como a coluna de grade e a linha terão de ser restauradas manualmente.
+* Algum caso de materiais sobrepostos na lista de materiais do ModelComponent pode ser incorretamente atualizado.
 
-### Dropping Support for Windows Store 8.1 and Windows Phone 8.1
+### Suporte de Dropping para Windows Store 8.1 e Windows Phone 8.1
 
-To properly support the .NET Standard 1.4 and offer our developers a more up-to-date and robust API, we decided to drop support for Windows Store 8.1 and Windows Phone 8.1 platforms.
+Para apoiar corretamente o .NET Standard 1.4 e oferecer aos nossos desenvolvedores uma API mais atualizada e robusta, decidimos deixar o suporte para as plataformas Windows Store 8.1 e Windows Phone 8.1.
 
-As Microsoft seems to be focusing on Universal Windows Platform (UWP), we’ve also decided it was best to refocus on more pertinent and relevant platforms for Xenko users. UWP was introduced with Windows 10, and a whole range of devices already support it.
+Como a Microsoft parece estar focando na Plataforma Universal do Windows (UWP), também decidimos que era melhor focar em plataformas mais pertinentes e relevantes para os usuários do Xenko. UWP foi introduzido com o Windows 10, e toda uma gama de dispositivos já o suportam.
 
-Of course, you are free to stick with Xenko 1.8 in case you have a project targeting one of those two platforms -- we know this is a big change, and we will make every effort to help our developers with this transition. We apologize for the inconvenience, and aim to bring you a top-notch .NET user experience!
+Claro, você está livre para ficar com Xenko 1.8 no caso de você ter um projeto que visa uma dessas duas plataformas - sabemos que esta é uma grande mudança, e vamos fazer todo esforço para ajudar nossos desenvolvedores com esta transição. Pedimos desculpas pelo inconveniente, e visamos trazer-lhe uma experiência de usuário .NET de alto nível!
 
-Just as a reminder, we already support Universal Windows Platform (UWP) on x86, x64 and ARM as of Xenko 1.8, which means games and apps developed with Xenko can be deployed on a whole range of Microsoft devices, including [Xbox One](https://msdn.microsoft.com/en-us/windows/uwp/xbox-apps/index). Until 1.9, this platform was named Windows10 in Xenko, but we took the liberty to rename it UWP to better match the official naming.
+Assim como um lembrete, já apoiamos a Plataforma Universal do Windows (UWP) em x86, x64 e ARM como de Xenko 1.8, o que significa que jogos e aplicativos desenvolvidos com Xenko podem ser implantados em toda uma gama de dispositivos da Microsoft, incluindo [Xbox One](https://msdn.microsoft.com/en-us/windows/uwp/xbox-apps/index). Até 1.9, esta plataforma foi nomeada Windows10 em Xenko, mas tomamos a liberdade de renomeá-la UWP para melhor corresponder ao nome oficial.
 
-## Changelog
+## Mudança
 
-### Version 1.9.0-beta
+### Versão 1.9.0-beta
 
-Release date 2016/11/24
+Data de lançamento 2016\/11\/24
 
-#### Enhancements
+#### Melhorias
 
-##### General
+##### Geral
 
-* From now on, new projects are created as .NET Standard projects rather than PCL projects.
-* `NuGet restore` is automatically run on projects having a `project.json` file
-* Bumped FBX SDK to 2017.0.1
-* Mesh importing now supports *ByEdge* smoothing which was previously ignored. If you notice any difference with vertex normals for your models please check your FBX export settings.
-* Prerequisites installer will ask for UAC once instead of many times, and perform a silent installation for all of the prerequisites.
-
-##### Game Studio
-
-* Previously, when an `EntityComponent` (i.e. script) couldn't be loaded because game or plugin assembly didn't compile properly, we kept a Yaml representation of it so that it could be saved or reloaded after a code fix. Now we allow it to happen anywhere, so that you can use and/or implement custom classes for any type of the engine in your game/plugin.
-* Improve asset logs and errors to properly display failure/warning icon on all assets, including the one with icon-style thumbnails.
-* Improve loading/refreshing of assets in the scene editor.
-* Asset editors will display a * in the tab name when an asset is dirty.
-* Add editor for C# source code.
-* C# files and .csproj files are automatically reloaded as they are modified on hard drive (using a Yes, Yes to All, No, No to All dialog).
-* C# files have their own undo/redo stack
-* Add a Save All button that saves both assets and source code files.
-* The Game Studio now uses _AvalonDock_ as docking system
-* Improve DPI support ([#454](https://github.com/SiliconStudio/xenko/issues/454) and [#470](https://github.com/SiliconStudio/xenko/issues/470))
-
-##### Assets
-
-* Asset YAML serialization has been changed to handle overrides in collection in a better way. More scenario of overrides are now supported.
-* `SharpYaml` has been integrated into our codebase as `SiliconStudio.Core.Yaml`. Most of the duplicated types have been merged back in the `SiliconStudio.Core.Reflection`.
-* Assets don't use a ~Base section nor a ~BasePart.
-* Change `Asset.Id` to be of an `AssetId` type rather than `Guid`, to avoid invalid comparisons with other kind of ids.
-* Remove the `Properties` member of Package.
-* Introduce a new assembly Assets.Quantum
-* Overrides of properties is now handled using _Quantum_ instead of `ShadowObject`.
-* Remove the asset diff/merge classes.
-
-##### Engine
-
-* DataSerializers are now generated in a file with .pdb information, so that the user can debug them.
-* Add Local offsets to procedural models.
-* `EntityComponent` now implements `IIdentifiable` and has an `Id` property.
-
-##### Audio
-
-* Add `SetRange` support to `AudioEmitterSoundController`
-* Improve compilation speed of audio files
-
-##### Materials
-
-* Normal maps now have the option to `Invert Y`, supporting both textures where the green component is facing up or down
-
-##### Particles
-
-* Minor optimizations around vertex buffer building
-* Add StopEmitters() method to the particle system, which prevents new particles from spawning without pausing the entire system
-
-##### Physics
-
-* Add Cone collider shape.
-* Replace float with `AngleSingle` for `MaxSlope` of character controllers.
-
-#### Issues Fixed
-
-##### General
-
-* UWP platform now uses UniversalWindowsPlatform 5.2.2 (was previously 5.0.0).
+* A partir de agora, novos projetos são criados como . NET Projetos padrão em vez de projetos PCL.
+* `NuGet restore` é executado automaticamente em projetos com um arquivo `project.json`
+* Bumped FBX SDK para 2017.0.1
+* A importação de malha agora suporta o alisamento *ByEdge* que foi anteriormente ignorado. Se você notar qualquer diferença com o vértice normal para seus modelos, verifique suas configurações de exportação FBX.
+* O instalador pré-requisitos solicitará UAC uma vez em vez de muitas vezes, e realizará uma instalação silenciosa para todos os pré-requisitos.
 
 ##### Game Studio
 
-* Fix many issues with property overrides.
-* Fix many issues when setting/overriding materials in ModelComponent.
-* Asset logs were not properly sent forward to editor, resulting in an empty log for all assets.
-* Sometimes there was a deadlock when compiling effects due to the way we were using the thread pool and task continuations.
-* Fix performance issue that could occur when duplicating entities with the same name many times.
-* Fix 'Rename' menu entry when right-clicking a folder of the scene editor.
-* Fix crashes in the UI editor that could occur when deleting or moving an element.
-* Fix crashes in sprite sheet editor that could occur when deleting, duplicating or moving sprites.
-* Fix sort order of assets in the asset view.
+* Anteriormente, quando um `EntityComponent` (ou seja, script) não poderia ser carregado porque o jogo ou o conjunto do plugin não compilaram corretamente, mantivemos uma representação Yaml dele para que ele pudesse ser salvo ou recarregado após uma correção de código. Agora permitimos que isso aconteça em qualquer lugar, para que você possa usar e\/ou implementar classes personalizadas para qualquer tipo do motor em seu jogo\/plugin.
+* Melhore os logs de ativos e erros para exibir corretamente o ícone de falha \/ aviso em todos os ativos, incluindo aquele com miniaturas de estilo de ícone.
+* Melhore o carregamento\/refresamento de ativos no editor de cena.
+* Os editores de ativos exibirão um * no nome da guia quando um ativo estiver sujo.
+* Adicionar editor para código fonte C#.
+* Arquivos C# e arquivos .csproj são automaticamente recarregados como eles são modificados no disco rígido (usando um Sim, Sim para Todos, Não, Não para Todos diálogo).
+* Arquivos C# têm sua própria pilha de desfazer\/refazer
+* Adicionar um Salvar Todo o botão que salva ambos os ativos e arquivos de código fonte.
+* O Game Studio agora usa _AvalonDock_ como sistema de ancoragem
+* Melhorar o suporte DPI ([#454](https://github.com/SiliconStudio/xenko/issues/454) e [#470](https://github.com/SiliconStudio/xenko/issues/470))
 
-##### Assets
+##### Activos
 
-* Fix tangents of imported meshes, when transforms are negative along some axes
+* A serialização do ativo YAML foi alterada para lidar com sobreposições na coleção de uma forma melhor. Mais cenário de sobreposições agora são suportados.
+* `SharpYaml` foi integrado em nossa base de código como `SiliconStudio.Core.Yaml`. A maioria dos tipos duplicados foram fundidos no `SiliconStudio.Core.Reflection`.
+* Os ativos não usam uma seção ~Base nem um ~BasePart.
+* Alterar `Aset.Id` para ser de um tipo `AssetId` em vez de `Guid`, para evitar comparações inválidas com outro tipo de ids.
+* Remova o membro `Properties` do Pacote.
+* Introduza um novo conjunto de ativos. Quantum
+* As sobreposições de propriedades agora são tratadas usando _Quantum_ em vez de `ShadowObject`.
+* Remova as classes diff\/merge de ativos.
 
-##### Engine
+##### Motor
 
-* Several issues with spot lights were fixed, including shadow maps
-* Fix flickering of some materials when no ambient light is present
-* Fix an issue on OpenGL that caused low frame rates when using post effects, due to blocking GPU-readback
+* Os DataSerializers agora são gerados em um arquivo com informações .pdb, para que o usuário possa depurá-los.
+* Adicionar deslocamentos locais a modelos processuais.
+* `EntityComponent` agora implementa `IIdentifiable` e possui uma propriedade `Id`.
 
-##### Animation
+##### Áudio
 
-* Fix a bug where an empty animation clip caused a crash
+* Adicionar `SetRange` suporte a `AudioEmitterSoundController`
+* Melhorar a velocidade de compilação de arquivos de áudio
+
+##### Materiais
+
+* Mapas normais agora têm a opção de `Invert Y`, suportando ambas as texturas onde o componente verde está virado para cima ou para baixo
+
+##### Partes
+
+* Otimizações menores em torno do edifício do amortecedor de vértice
+* Adicionar método StopEmitters() ao sistema de partículas, o que impede que novas partículas desova sem pausar todo o sistema
+
+##### Física
+
+* Adicione Cone collider forma.
+* Substituir flutuador com `AngleSingle` para `MaxSlope` de controladores de caracteres.
+
+#### Questões corrigidas
+
+##### Geral
+
+* A plataforma UWP agora usa o UniversalWindowsPlatform 5.2.2 (era anteriormente 5.0.0).
+
+##### Game Studio
+
+* Corrigir muitos problemas com substituições de propriedade.
+* Corrigir muitos problemas ao definir \/ substituir materiais no ModelComponent.
+* Os registros de ativos não foram enviados corretamente para o editor, resultando em um log vazio para todos os ativos.
+* Às vezes houve um deadlock ao compilar efeitos devido à forma como estávamos usando o pool de threads e continuações de tarefa.
+* Corrigir problema de desempenho que pode ocorrer quando duplicar entidades com o mesmo nome muitas vezes.
+* Corrigir a entrada do menu "Renomear" ao clicar com o botão direito em uma pasta do editor de cena.
+* Corrigir falhas no editor de interface do usuário que podem ocorrer ao excluir ou mover um elemento.
+* Corrigir falhas no editor de folhas de sprite que podem ocorrer ao excluir, duplicar ou mover sprites.
+* Corrigir a ordem de tipo de ativos na vista de ativos.
+
+##### Activos
+
+* Corrigir tangentes de malhas importadas, quando as transformações são negativas ao longo de alguns eixos
+
+##### Motor
+
+* Várias questões com luzes exatas foram corrigidas, incluindo mapas de sombra
+* Corrigir cintilação de alguns materiais quando nenhuma luz ambiente está presente
+* Corrigir um problema no OpenGL que causou baixas taxas de quadros ao usar efeitos postais, devido ao bloqueio de GPU-readback
+
+##### Animação
+
+* Corrigir um bug onde um clipe de animação vazio causou um acidente
 
 
-### Version 1.9.1-beta
+### Versão 1.9.1-beta
 
-Release date 2016/11/29
+Data de lançamento 2016\/11\/29
 
-#### Issues fixed
+#### Questões corrigidas
 
 #### Game Studio
 
-* Moving or renaming an asset that has overridden properties (eg. a scene using prefabs) was loosing override information once saved.
+* Mover ou renomear um ativo que tenha propriedades sobrepostas (por exemplo, uma cena usando prefabs) estava saqueando informações sobrepostas uma vez salvas.
 
-##### Engine
+##### Motor
 
-* Normal maps issue fixed where z-component was wrongly assumed to be 1 (it's now equal to sqrt(1 - x^2 - y^2))
-* Depth of Field halo around foreground objects issue resolved
+* Número normal de mapas fixos onde z-componente foi presumido erradamente para ser 1 (é agora igual a sqrt(1 - x^2 - y^2))
+* Profundidade de halo de campo em torno de objetos de primeiro plano questão resolvido
 
-##### Samples
+##### Amostras
 
-* Missing normal maps on some samples have been restored
+* Mapas normais perdidos em algumas amostras foram restaurados
 
 
-### Version 1.9.2-beta
+### Versão 1.9.2-beta
 
-Release date 2016/12/13
+Data de lançamento 2016\/12\/13
 
-#### Enhancements
-
-##### Game Studio
-
-* Maintaining ALT key down when dropping a prefab into a scene won't create a container entity for the prefab instance.
-* Creation of prefabs from entities that are already instances of other prefabs and contains overridden properties will maintain prefab links and overrides in the newly created prefab.
-
-#### Issues fixed
+#### Melhorias
 
 ##### Game Studio
 
-* Duplicating an entity that was linked to a prefab was not maintaining the prefab link to the copy in some scenarios.
-* Adding a new or existing package to a solution was causing a crash.
-* Fix hashing of source files to detect if an source file has changed.
-* Adding a component that requires unicity to a prefab when one of the instance already had an instance of this prefab was crashing.
-* Fix a crash that could occurs when removing an animation or a sound from an Animation Component or an Audio Emitter Component while the Game Studio was still compiling the asset.
-* Render stages are now properly re-evaluated when a property affecting rendering is modified (eg. casting shadows, adding transparency to a material...)
-* Fix insert position when dropping multiple assets into a scene at the same time
-* Fix opening a scene from a package project that is not a game was crashing.
-* Fix a crash that was occurring when adding a new Override in the GameSettings asset
-* Fix an issue when copy/pasting a component that requires unicity to an entity that already has one. Now the user will be correctly prompted whether this component should be replaced by the copy.
-* Fix incorrect filter list of asset types in the asset view.
+* Manter a chave ALT para baixo quando deixar um pré-fabricado em uma cena não criará uma entidade recipiente para a instância pré-fabricada.
+* A criação de prefabs de entidades que já são instâncias de outras pré-fabricas e contém propriedades sobrepostas manterá links pré-fabricados e substituições no pré-fabricado recém-criado.
 
-##### Engine
+#### Questões corrigidas
 
-* Fix an issue in the code detecting when a second component of the same type is added to an entity that should accept only one component of that type.
-* Spotlights with shadows bug fix where multiple spotlights would reference the wrong shadowmap.
-* Normal maps property names changed and some shader crashes fixed.
-* Fix compressed normal maps having different signedness on different platforms; they are now always unsigned
-* Fix Z component of normal maps when Scale & Offset is enabled
-* Fix NaN values in normal mapping which caused glitches in post effects
-* Fix shadow map range computation that caused parts of the scene not to be lit
-* Reenable shadow cascade blending when automatic depth range computation is enabled and reduce the region of blending
-* Fix invalid IL that prevented building UWP apps in release mode
+##### Game Studio
+
+* Duplicar uma entidade ligada a um pré-fabricado não foi manter o link pré-fabricado para a cópia em alguns cenários.
+* Adicionar um pacote novo ou existente a uma solução estava causando um acidente.
+* Corrigir hashing de arquivos de origem para detectar se um arquivo de origem mudou.
+* Adicionar um componente que requer unicidade a um pré-fabricado quando uma das instâncias já teve uma instância desta pré-fabricada estava quebrando.
+* Corrigir um acidente que poderia ocorrer ao remover uma animação ou um som de um Componente de Animação ou um Componente de emissor de áudio enquanto o Game Studio ainda estava compilando o ativo.
+* As fases do render agora são devidamente reavaliadas quando uma propriedade que afeta a renderização é modificada (por exemplo, sombras de fundição, adicionando transparência a um material...)
+* Corrigir a posição de inserção ao soltar vários ativos em uma cena ao mesmo tempo
+* Corrigir abrir uma cena de um projeto de pacote que não é um jogo estava caindo.
+* Corrigir um acidente que estava ocorrendo ao adicionar um novo Override no ativo GameSettings
+* Corrigir um problema ao copiar \/ colar um componente que requer unicidade a uma entidade que já tem um. Agora o usuário será solicitado corretamente se este componente deve ser substituído pela cópia.
+* Corrigir lista de filtros incorreta de tipos de ativos na visualização de ativos.
+
+##### Motor
+
+* Corrigir um problema no código detectando quando um segundo componente do mesmo tipo é adicionado a uma entidade que deve aceitar apenas um componente desse tipo.
+* Holofotes com sombras correção de bugs onde vários holofotes referenciaria o sabonete errado.
+* Mapas normais nomes de propriedade alterados e alguns sombreador trava fixo.
+* Corrigir mapas normais comprimidos com diferentes significâncias em diferentes plataformas; eles agora são sempre não assinados
+* Fixação Z componente de mapas normais quando Scale & Offset está habilitado
+* Corrigir valores de NaN no mapeamento normal que causou falhas nos efeitos pós
+* Corrigir computação da faixa de mapas sombra que fez com que partes da cena não fossem iluminadas
+* Combinação em cascata de sombra reativa quando a computação automática da faixa de profundidade é ativada e reduz a região da mistura
+* Corrigir IL inválido que impediu a construção de aplicativos UWP no modo de lançamento
 
 
-### Version 1.9.3-beta
+### Versão 1.9.3-beta
 
-Release date 2017/1/11
+Data de lançamento 2017\/1\/11
 
-#### Enhancement
+#### Melhoria
 
 #### Game Studio
 
-* Maintaining ALT key down while moving an entity to a different parent will now keep its absolute position/orientation/scale
-* Display the current version of Xenko in the Project Selection window
-* Add more logging messages when creating a new project
-* Improve tab header presentation, allow to see all open editors at once
+* Manter a chave ALT para baixo ao mover uma entidade para um pai diferente agora manterá sua posição absoluta \/ orientação \/ escala
+* Exibir a versão atual do Xenko na janela Seleção de Projetos
+* Adicionar mais mensagens de registro ao criar um novo projeto
+* Melhore a apresentação do cabeçalho da guia, permita ver todos os editores abertos ao mesmo tempo
 
-##### Engine
+##### Motor
 
-* Animation: UpdateEngine (used by animation system to update values) will skip updating values if target is an array or list (i.e. list of bones) whose size is not big enough. This was previously leading to memory corruption.
+* Animação: O UpdateEngine (usado pelo sistema de animação para atualizar valores) irá pular os valores de atualização se o alvo for um array ou lista (ou seja, lista de ossos) cujo tamanho não é grande o suficiente. Isso estava anteriormente levando à corrupção da memória.
 
-#### Issues fixed
-
-##### Game Studio
-
-* Fix issues with collection properties in the property grid.
-* Fix an issue where thumbnail backgrounds get dark when in Gamma rendering pipeline.
-* Fix some broken cases when clearing the archetype of an asset
-* Fix a crash when dropping an object into the viewport
-* Fix many crashes and issues occurring when moving or duplicating entities and folders in the entity tree of a scene or a prefab
-* Fix some issues with selection of entities
-* Fix issues with some pane of the editor not being visible while they were checked as visible in the View menu
-* Prevent TreeViews to change scroll position when selecting an item if they were scrolled to another position while they didn't have the focus
-* Fix properties that were all grayed when selecting multiple objects.
-* Fix a case where Script assets would not open in the external text editor.
-
-##### Particles
-
-* Fix a bug where Edge and Center definitions for trail shape renderer were swapped
-* Fix a bug where None for particle material still displays color
-
-##### Physics
-
-* Fix 2D boxes shapes collisions.
-* Fix drawing of Characters debug shapes at run-time.
-* Throwing if mass is negative.
-* Fixed an issue with scaling and single collider shapes
-
-##### Audio
-
-* Fix XAudio audio clipping when sounds were not looped.
-* Fix OpenSLES multiple play of non looped sound.
-
-#### Improvements
+#### Questões corrigidas
 
 ##### Game Studio
 
-* Normal maps and Grayscale textures will now appear as 3-channel textures in the thumbnails and the preview.
+* Corrigir problemas com propriedades de coleta na grade da propriedade.
+* Corrigir um problema em que os fundos da miniatura ficam escuros quando em Gamma rendering pipeline.
+* Corrigir alguns casos quebrados ao limpar o arquétipo de um ativo
+* Corrigir um acidente ao soltar um objeto no viewport
+* Corrigir muitas falhas e problemas que ocorrem ao mover ou duplicar entidades e pastas na árvore de entidade de uma cena ou uma pré-fabricada
+* Corrigir alguns problemas com a seleção de entidades
+* Corrigir problemas com algum painel do editor não sendo visível enquanto eles foram verificados como visíveis no menu Ver
+* Impedir TreeViews para alterar a posição de rolagem ao selecionar um item se eles foram rolados para outra posição enquanto eles não tinham o foco
+* Corrigir propriedades que foram todas acinzentadas ao selecionar vários objetos.
+* Corrigir um caso em que os ativos de script não abririam no editor de texto externo.
 
-##### Connection Router
+##### Partes
 
-* Due to the way adb was spawning a daemon process, connection router port was locked due to socket handle inheritability. This is now properly disabled.
+* Corrigir um bug onde as definições de Edge e Center para renderizador de forma de trilha foram trocadas
+* Corrigir um bug onde nenhum material de partícula ainda exibe cor
 
-## Known Issues
+##### Física
 
-* On Linux, when switching the underlying Graphics Platform, rendering will not occur or fail. Delete the cache, local and roaming folder on the Linux host and restarting the game should fix the issue.
-* Performance issues on mobile (being worked on)
-* On iOS if `Enable device-specific builds` is toggled on (from the project properties) it won't be possible to debug game code. Please manually select the architecture of your device from the Advanced tab to speed up your development.
+* Corrigir caixas 2D formas colisões.
+* Corrigir o desenho das formas de depuração de caracteres no tempo de execução.
+* Atirando se a massa é negativa.
+* Corrigido um problema com escalas e formas únicas de colisão
+
+##### Áudio
+
+* Fix XAudio áudio clipping quando os sons não foram looped.
+* Corrigir OpenSLES jogo múltiplo de som não looped.
+
+#### Melhorias
+
+##### Game Studio
+
+* Mapas normais e texturas Grayscale agora aparecerão como texturas de 3 canais nas miniaturas e na visualização.
+
+##### Roteador de conexão
+
+* Devido à forma como o adb estava gerando um processo de daemon, a porta do roteador de conexão foi bloqueada devido à herabilidade do identificador de soquete. Isto agora está devidamente desactivado.
+
+## Questões conhecidas
+
+* No Linux, ao alternar a plataforma gráfica subjacente, a renderização não ocorrerá ou falhará. Excluir o cache, local e roaming pasta no host Linux e reiniciar o jogo deve corrigir o problema.
+* Problemas de desempenho em dispositivos móveis (ser trabalhado)
+* No iOS se ` Habilitar compilações específicas do dispositivo` é alternado (a partir das propriedades do projeto) não será possível depurar o código do jogo. Selecione manualmente a arquitetura do seu dispositivo a partir da guia Avançada para acelerar o seu desenvolvimento.

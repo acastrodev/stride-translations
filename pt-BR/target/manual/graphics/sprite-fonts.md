@@ -1,155 +1,155 @@
-# Sprite fonts
+# Fontes Sprite
 
-<span class="badge text-bg-primary">Intermediate</span>
+<x1\/> Intermediário <x2\/>
 
-**Sprite fonts** take a TrueType font as an input (either a system font or a file you assign) and then create all the images (sprites) of characters (glyphs) for your game.
+**Sprite fontes** tomar uma fonte TrueType como uma entrada (quer uma fonte do sistema ou um arquivo que você atribui) e, em seguida, criar todas as imagens (prites) de caracteres (glifos) para o seu jogo.
 
-It's often inefficient to render fonts directly. We usually want to create (rasterize) them just once, then only render the image of a letter character (eg A, a, B, C etc) every time we need it. This involves creating a sprite (billboarded rectangular image) of the character, which is displayed on the screen as a regular image. A text block would be a collection of sprites rendered as quads so all the characters are aligned and spaced properly.
+Muitas vezes é ineficiente renderizar fontes diretamente. Nós geralmente queremos criar (rasterizar) eles apenas uma vez, então apenas renderizar a imagem de um caractere de letra (por exemplo A, a, B, C etc) cada vez que precisamos dele. Isso envolve a criação de um sprite (imagem retangular biculada) do personagem, que é exibido na tela como uma imagem regular. Um bloco de texto seria uma coleção de sprites renderizados como quads para que todos os personagens estejam alinhados e espaçados corretamente.
 
-## Offline-rasterized sprite fonts
+## Fontes sprite off-line-rasterizadas
 
-**Offline-rasterized** sprite fonts create (rasterize) a fixed number of characters (glyphs) of a certain size, and bake them into an atlas texture when building the assets for your game.
+**Offline-rasterized** fontes sprite criar (rasterizar) um número fixo de caracteres (glifos) de um determinado tamanho, e assá-los em uma textura atlas ao construir os ativos para o seu jogo.
 
-In the game, they can only be drawn with this size. Only the characters you specify can be displayed.
+No jogo, eles só podem ser desenhados com este tamanho. Somente os caracteres que você especificar podem ser exibidos.
 
-### When to use offline-rasterized fonts
+### Quando usar fontes off-rasterizadas
 
-Use offline-rasterized fonts when:
+Use fontes off-rasterizadas quando:
 
-- you use a font of known size with a known character set in your game
+- você usa uma fonte de tamanho conhecido com um personagem conhecido definido em seu jogo
 
-- you need anti-aliasing on your fonts
+- você precisa anti-aliasing em suas fontes
 
-- your UI is only used in fullscreen mode
+- sua interface de usuário é usada apenas no modo de tela cheia
 
-Do **not** use offline-rasterized fonts when:
+Faça **not** use fontes offline-rasterizadas quando:
 
-- your UI is rendered as part of the 3D world scene
+- sua interface de usuário é renderizada como parte da cena mundial 3D
 
-- you have a varied or unknown number of font sizes and character sets
+- você tem um número variado ou desconhecido de tamanhos de fontes e conjuntos de caracteres
 
-### Offline-rasterized sprite font properties
+### Propriedades de fonte sprite off-line-rasterizada
 
-![media/fonts-1.png](media/fonts-1.png)
+<x1\/>media\/fonts-1.png<x2\/>
 
-| Property | Description |
+| Propriedade | Descrição |
 |-----------------------------|-------------------
-| Font Source | System (installed on this machine) or from file. The system fonts can also take **Bold** and *Italic* options. |
-| Font Type | Offline Rasterized |
-| Size (in pixels) | The font is baked with this size. No other font size can be displayed. |
-| Character set | (Optional) A text file containing all characters which need to be baked. |
-| Character regions | Code for regions of characters which need to be baked. For example, (32 - 127) is a region sufficient for ASCII character sets. |
-| Anti alias | None, Grayscale or [ClearType](http://alienryderflex.com/sub_pixel/) |
-| Premultiply | If the alpha should be premultiplied. Default is yes to match the rest of the engine pipeline. |
-| Default character | Missing characters default to this when rendered. The default code is 32 which is space. |
+| Fonte | Sistema (instalado nesta máquina) ou de arquivo. As fontes do sistema também podem tomar **Bold** e *Italic* opções. |
+| Tipo de fonte | Rasterizado offline |
+| Tamanho (em pixels) | A fonte é assada com este tamanho. Nenhum outro tamanho da fonte pode ser exibido. |
+| Conjunto de caracteres | (Opcional) Um arquivo de texto contendo todos os caracteres que precisam ser assados. |
+| Regiões de carácter | Código para regiões de caracteres que precisam ser assados. Por exemplo, (32 - 127) é uma região suficiente para conjuntos de caracteres ASCII. |
+| Anti alias | Nenhum, escala de cinza ou [ClearType](http://alienryderflex.com/sub_pixel/) |
+| Premultiplicar | Se o alfa deve ser pré-multiplicado. O padrão é sim para corresponder ao resto do pipeline do motor. |
+| Personagem padrão | Personagens perdidos padrão para isso quando renderizado. O código padrão é 32 que é espaço. |
 
-## Runtime-rasterized sprite fonts
+## Runtime-rasterized sprite fontes
 
-**Runtime-rasterized** sprite fonts create (rasterize) a varied number of characters (glyphs) of any size and bake them into an atlas texture **on demand**.
+**Runtime-rasterized** fontes sprite criar (rasterizar) um número variado de caracteres (glifos) de qualquer tamanho e assá-los em uma textura atlas **on demand**.
 
-This function is invoked at runtime when you change the font size or request characters that haven't been drawn before.
+Esta função é invocada no tempo de execução quando você altera o tamanho da fonte ou solicita caracteres que não foram desenhados antes.
 
-Under the hood, the runtime-rasterized fonts use similar atlas textures to the offline-rasterized fonts. This means that if you have three different font sizes, they take about three times more memory than a single font size. The font sizes are also taken into account.
+Sob o capô, as fontes de runtime-rasterized usam texturas de atlas semelhantes às fontes off-line-rasterized. Isso significa que se você tiver três tamanhos diferentes de fontes, eles levam cerca de três vezes mais memória do que um único tamanho de fonte. Os tamanhos de fonte também são levados em conta.
 
-### When to use runtime-rasterized fonts
+### Quando usar fontes de runtime-rasterized
 
-Use runtime-rasterized fonts when:
+Use fontes de runtime-rasterized quando:
 
-- you need multiple sizes for your font or don't know which characters you need
+- você precisa de vários tamanhos para sua fonte ou não sabe quais caracteres você precisa
 
-- the number of possible characters in the font greatly outnumbers the number of characters you need to display at runtime (eg Japanese or Chinese, which use thousands of characters)
+- o número de caracteres possíveis na fonte supera muito o número de caracteres que você precisa para exibir no tempo de execução (por exemplo, japonês ou chinês, que usam milhares de caracteres)
 
-- you need anti-aliasing on your fonts
+- você precisa anti-aliasing em suas fontes
 
-- your UI is only used in fullscreen mode
+- sua interface de usuário é usada apenas no modo de tela cheia
 
-Do **not** use runtime-rasterized fonts when:
+Faça **not** use fontes de runtime-rasterized quando:
 
-- your UI is rendered as part of the 3D world scene
+- sua interface de usuário é renderizada como parte da cena mundial 3D
 
-- you only need one or two known sizes for a small character set
+- você só precisa de um ou dois tamanhos conhecidos para um pequeno conjunto de caracteres
 
-- you have a scaling text (as runtime-rasterized fonts will recreate every single font size)
+- você tem um texto escalonado (como fontes de runtime-rasterized irá recriar cada tamanho de fonte única)
 
-### Runtime-rasterized sprite font properties
+### Runtime-rasterized sprite propriedades de fonte
 
-![media/fonts-2.png](media/fonts-2.png)
+<x1\/>media\/fonts-2.png<x2\/>
 
-| Property | Description |
+| Propriedade | Descrição |
 |-----------------------------|-------------
-| Font Source | System (installed on this machine) or from file. The system fonts can also take **Bold** and *Italic* options. |
-| Font Type | Runtime Rasterized |
-| Default Size (in pixels) | If size isn't specified the text is rendered with this one. |
-| Anti alias | None, Grayscale or [ClearType](http://alienryderflex.com/sub_pixel/) |
-| Default character | Missing characters will default to this one when rendered. The default code is 32, which is space. |
+| Fonte | Sistema (instalado nesta máquina) ou de arquivo. As fontes do sistema também podem tomar **Bold** e *Italic* opções. |
+| Tipo de fonte | Runtime Rasterized |
+| Tamanho padrão (em pixels) | Se o tamanho não for especificado, o texto é renderizado com este. |
+| Anti alias | Nenhum, escala de cinza ou [ClearType](http://alienryderflex.com/sub_pixel/) |
+| Personagem padrão | Os caracteres perdidos serão padrão para este quando renderizado. O código padrão é 32, que é espaço. |
 
-## Signed distance field sprite fonts
+## Signed distance field sprite fontes
 
-**Signed distance field** (SDF) fonts use an entirely different technique to render fonts. Rather than rasterize the color of the character on the sprite, they output the distance of the current pixel to the closest edge of the glyph.
+**Signed distance field** (SDF) fontes usam uma técnica totalmente diferente para renderizar fontes. Em vez de rasterizar a cor do personagem no sprite, eles produzem a distância do pixel atual para a borda mais próxima do glifo.
 
-The distance is positive if the pixel is **inside** the glyph boundaries, and negative if the pixel is **outside** the glyph (hence the name signed).
+A distância é positiva se o pixel é **inside** os limites do glifo e negativo se o pixel é **outside** o glifo (daí o nome assinado).
 
-When rendering, check the distance and output a white pixel if it's positive or `0`, and a black pixel if it's negative. This allows very sharp and clean edges to be rendered even under magnification (which otherwise makes traditional sprites look pixelated).
+Ao renderizar, verifique a distância e saída de um pixel branco se for positivo ou `0` e um pixel preto se for negativo. Isso permite que bordas muito nítidas e limpas sejam renderizadas mesmo sob ampliação (que de outra forma faz com que os sprites tradicionais pareçam pixelados).
 
-The image below compares SDF fonts and the offline-rasterized fonts under magnification:
+A imagem abaixo compara fontes SDF e as fontes off-line-rasterizadas sob ampliação:
 
-![media/fonts-5.png](media/fonts-5.png)
+<x1\/>media\/fonts-5.png<x2\/>
 
-### When to use SDF fonts
+### Quando usar fontes SDF
 
-Use SDF fonts when:
+Use fontes SDF quando:
 
-- your UI is rendered as part of the 3D world scene or fullscreen (SDF works well for both cases)
+- sua IU é renderizada como parte da cena mundial 3D ou tela cheia (SDF funciona bem para ambos os casos)
 
-- you have a scaling text or expect the user to be able to zoom in
+- você tem um texto escalonado ou esperar que o usuário seja capaz de ampliar
 
-- you require multiple sizes for your font
+- você precisa de vários tamanhos para sua fonte
 
-- you have very large font sizes (SDF consumes less memory than runtime-rasterized fonts)
+- você tem tamanhos de fonte muito grandes (SDF consome menos memória do que fontes de runtime-rasterized)
 
-Do **not** use SDF fonts when:
+Faça **not** use fontes SDF quando:
 
-- you need anti-aliasing on your fonts (SDF fonts currently don't support it)
+- você precisa anti-aliasing em suas fontes (fontes SDF atualmente não suportam)
 
-- you only require one or two known sizes for a small character set (better use offline-rasterized font)
+- você só precisa de um ou dois tamanhos conhecidos para um pequeno conjunto de caracteres (melhor usar fonte off-rasterizada)
 
-- the number of possible characters in the font greatly outnumbers the number of characters you need to display at runtime (eg Japanese or Chinese, which use thousands of characters). If a runtime-rasterized font is not an option (eg because of scaling), make sure you bake every character you might need, or they won't be displayed.
+- o número de caracteres possíveis na fonte supera muito o número de caracteres que você precisa para exibir no tempo de execução (por exemplo, japonês ou chinês, que usam milhares de caracteres). Se uma fonte de runtime-rasterized não é uma opção (por exemplo, por causa do escalonamento), certifique-se de assar cada personagem que você precisa, ou eles não serão exibidos.
 
-### SDF properties
+### Propriedades do SDF
 
-![media/fonts-3.png](media/fonts-3.png)
+<x1\/>media\/fonts-3.png<x2\/>
 
-| Property | Description |
+| Propriedade | Descrição |
 |-----------------------------|--------------
-| Font Source | System (installed on this machine) or from file. The system fonts can also choose **Bold** and *Italic* options. |
-| Font Type | Offline Rasterized |
-| Size (in pixels) | The font will be baked with this size. All font sizes can still be displayed. Bigger size usually results in better quality, and generally you want to keep this at 20 or more to avoid visual glitches. |
-| Character set | (Optional) A text file containing all characters which need to be baked. |
-| Character regions | Code for regions of characters which need to be baked. For example (32 - 127) is a region sufficient for ASCII character sets. |
-| Default character | Missing characters will default to this one when rendered. The default code is 32 which is space. |
+| Fonte | Sistema (instalado nesta máquina) ou de arquivo. As fontes do sistema também podem escolher opções **Bold** e *Italic*. |
+| Tipo de fonte | Rasterizado offline |
+| Tamanho (em pixels) | A fonte será assada com este tamanho. Todos os tamanhos de fonte ainda podem ser exibidos. Tamanho maior geralmente resulta em melhor qualidade, e geralmente você quer manter isso em 20 ou mais para evitar falhas visuais. |
+| Conjunto de caracteres | (Opcional) Um arquivo de texto contendo todos os caracteres que precisam ser assados. |
+| Regiões de carácter | Código para regiões de caracteres que precisam ser assados. Por exemplo (32 - 127) é uma região suficiente para conjuntos de caracteres ASCII. |
+| Personagem padrão | Os caracteres perdidos serão padrão para este quando renderizado. O código padrão é 32 que é espaço. |
 
-## Texture atlases for different sprite fonts
+## Atlas de textura para diferentes fontes sprite
 
-### Offline rasterized
+### Rasterizada offline
 
-![media/fonts-6.png](media/fonts-6.png)
+<x1\/>media\/fonts-6.png<x2\/>
 
-The offline-rasterized sprite font bakes all requested characters once in a grayscale texture. If you zoom in, you'll see that they are pixelated. The font has a fixed size and doesn't work well for scaling text.
+A fonte de sprite offline-rasterizada asse todos os caracteres solicitados uma vez em uma textura de tons de cinza. Se você fizer zoom, verá que eles são pixelados. A fonte tem um tamanho fixo e não funciona bem para escalonar texto.
 
-### Runtime rasterized
+### Corrida rasterizada
 
-![media/fonts-8.png](media/fonts-8.png)
+<x1\/>media\/fonts-8.png<x2\/>
 
-The runtime-rasterized sprite font only bakes (rasterizes) the characters that are drawn in the game. The initial atlas texture is intentionally bigger so it can hold more characters of potentially different sizes before it needs resizing.
+A fonte de sprite de tempo de execução apenas asse (rasteriza) os caracteres que são desenhados no jogo. A textura inicial do atlas é intencionalmente maior para que possa ter mais caracteres de tamanhos potencialmente diferentes antes de precisar de redimensionamento.
 
-### Signed distance field
+### Campo de distância assinado
 
-![media/fonts-7.png](media/fonts-7.png)
+<x1\/>media\/fonts-7.png<x2\/>
 
-Like the offline-rasterized sprite font, the signed distance field sprite font bakes all requested characters once. The major difference is that it encodes distances from the character lines rather than actual color, and it uses all three channels' RGB. You can still recognize each character, but a special shader is needed to render them properly. The upside is that the edges remain sharp, even under magnification.
+Como a fonte sprite off-line-rasterizada, a fonte sprite de campo de distância assinado asse todos os caracteres solicitados uma vez. A principal diferença é que codifica distâncias das linhas de caracteres em vez de cor real, e usa RGB de todos os três canais. Você ainda pode reconhecer cada personagem, mas um shader especial é necessário para torná-los corretamente. A parte de cima é que as bordas permanecem afiadas, mesmo sob ampliação.
 
-## Further reading
+## Leitura adicional
 
-* [Paper on how distance fields and multi-channel distance fields in particular work](https://dspace.cvut.cz/bitstream/handle/10467/62770/F8-DP-2015-Chlumsky-Viktor-thesis.pdf)
+* [Documento sobre como campos de distância e campos de distância multicanal em particular trabalho](https://dspace.cvut.cz/bitstream/handle/10467/62770/F8-DP-2015-Chlumsky-Viktor-thesis.pdf)
 
-* [Stack Exchange thread outlining the differences between single-channel SDF and multi-channel SDF fonts](https://computergraphics.stackexchange.com/questions/306/sharp-corners-with-signed-distance-fields-fonts)
+* [Stack Exchange thread delineando as diferenças entre fontes SDF monocanal e SDF multicanal](https://computergraphics.stackexchange.com/questions/306/sharp-corners-with-signed-distance-fields-fonts)

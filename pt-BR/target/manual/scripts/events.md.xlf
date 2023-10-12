@@ -3,39 +3,39 @@
 <body>
 <trans-unit id="tu1" xml:space="preserve">
 <source xml:lang="en">Events</source>
-<target xml:lang="pt">Events</target>
+<target xml:lang="pt">Eventos</target>
 </trans-unit>
 <trans-unit id="tu2" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Intermediate<x id="2"/>
 <x id="3"/>Programmer<x id="4"/></source>
-<target xml:lang="pt"><x id="1"/>Intermediate<x id="2"/>
-<x id="3"/>Programmer<x id="4"/></target>
+<target xml:lang="pt">&lt;x1\/&gt; Intermediário &lt;x2\/&gt;
+&lt;x3\/&gt; Programador &lt;x4\/&gt;</target>
 </trans-unit>
 <trans-unit id="tu3" xml:space="preserve">
 <source xml:lang="en"><g id="1">Events</g> facilitate communication between scripts. They work one-way, broadcast from <g id="2">broadcasters</g> to <g id="3">receivers</g>. Events come in two flavors, a non-generic version for basic event broadcasting, and a generic version for when data needs to be passed to receivers.</source>
-<target xml:lang="pt"><g id="1">Events</g> facilitate communication between scripts. They work one-way, broadcast from <g id="2">broadcasters</g> to <g id="3">receivers</g>. Events come in two flavors, a non-generic version for basic event broadcasting, and a generic version for when data needs to be passed to receivers.</target>
+<target xml:lang="pt"><g id="1">Eventos</g> facilitam a comunicação entre scripts. Eles trabalham de uma forma, transmitido de <g id="2">casters</g> para <g id="3">receivers</g>. Eventos vêm em dois sabores, uma versão não-genérica para a transmissão de eventos básicos, e uma versão genérica para quando os dados precisam ser passados para receptores.</target>
 </trans-unit>
 <trans-unit id="tu4" xml:space="preserve">
 <source xml:lang="en">For example, imagine your game has a "Game Over" state that occurs when the player dies. To handle this, you can create a "Game Over" event, which is broadcast to all scripts with receivers listening for the event. When the event is broadcast, the receivers run appropriate scripts to handle the Game Over event (eg reset enemies, replace level objects, start a new timer, etc). You can also send information related to the "Game Over" state (eg game stats, who won, etc).</source>
-<target xml:lang="pt">For example, imagine your game has a "Game Over" state that occurs when the player dies. To handle this, you can create a "Game Over" event, which is broadcast to all scripts with receivers listening for the event. When the event is broadcast, the receivers run appropriate scripts to handle the Game Over event (eg reset enemies, replace level objects, start a new timer, etc). You can also send information related to the "Game Over" state (eg game stats, who won, etc).</target>
+<target xml:lang="pt">Por exemplo, imagine seu jogo tem um estado "Game Over" que ocorre quando o jogador morre. Para lidar com isso, você pode criar um evento "Game Over", que é transmitido a todos os scripts com receptores ouvindo para o evento. Quando o evento é transmitido, os receptores executam scripts apropriados para lidar com o evento Game Over (por exemplo, redefinir inimigos, substituir objetos de nível, iniciar um novo temporizador, etc). Você também pode enviar informações relacionadas ao estado "Game Over" (por exemplo, estatísticas de jogo, que ganhou, etc).</target>
 </trans-unit>
 <trans-unit id="tu5" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>!Note<x id="2"/>
 Events are handled entirely in scripts. You can't configure them in Game Studio.</source>
-<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
-Events are handled entirely in scripts. You can't configure them in Game Studio.</target>
+<target xml:lang="pt">&lt;x1\/&gt;!Note&lt;x2\/&gt;
+Os eventos são tratados inteiramente em scripts. Você não pode configurá-los no Game Studio.</target>
 </trans-unit>
 <trans-unit id="tu6" xml:space="preserve">
 <source xml:lang="en">Create and broadcast an event</source>
-<target xml:lang="pt">Create and broadcast an event</target>
+<target xml:lang="pt">Criar e transmitir um evento</target>
 </trans-unit>
 <trans-unit id="tu7" xml:space="preserve">
 <source xml:lang="en">Broadcasters in the Stride API are of type <g id="1">EventKey</g> or <g id="2">EventKey&amp;lt;T&gt;</g>. They use the method <g id="3">Broadcast</g> or <g id="4">Broadcast(T)</g> to broadcast events to receivers.</source>
-<target xml:lang="pt">Broadcasters in the Stride API are of type <g id="1">EventKey</g> or <g id="2">EventKey&amp;lt;T&gt;</g>. They use the method <g id="3">Broadcast</g> or <g id="4">Broadcast(T)</g> to broadcast events to receivers.</target>
+<target xml:lang="pt">Os transmissores na API Stride são do tipo <g id="1">EventKey</g> ou <g id="2">EventKey&lt;T&gt;</g>. Eles usam o método <g id="3">Broadcast</g> ou <g id="4">Broadcast(T)</g> para transmitir eventos aos receptores.</target>
 </trans-unit>
 <trans-unit id="tu8" xml:space="preserve">
 <source xml:lang="en">For example, this code creates two "Game Over" events. One with a non-generic and the other with a generic version of EventKey:</source>
-<target xml:lang="pt">For example, this code creates two "Game Over" events. One with a non-generic and the other with a generic version of EventKey:</target>
+<target xml:lang="pt">Por exemplo, este código cria dois eventos "Game Over". Um com um não-genérico e outro com uma versão genérica do EventKey:</target>
 </trans-unit>
 <trans-unit id="tu9" xml:space="preserve">
 <source xml:lang="en">public static class GlobalEvents
@@ -50,13 +50,13 @@ Events are handled entirely in scripts. You can't configure them in Game Studio.
     }
 }
 </source>
-<target xml:lang="pt">public static class GlobalEvents
-{
-    public static EventKey GameOverEventKey = new EventKey("Global", "Game Over");
-    public static EventKey&lt;string&gt; GameOverWithDataEventKey = new EventKey&lt;string&gt;("Global", "Game Over With Data");
+<target xml:lang="pt">classe estática pública Global Eventos
+(
+    estática pública Evento Key GameOverEventKey = novo EventKey("Global", "Game Over");
+    estática pública EventKey&lt;string&gt; GameOverWithDataEventKey = novo EventKey&lt;string&gt;("Global", "Game Over With Data");
 
-    public static void SendGameOverEvent()
-    {
+    vazio estático público SendGameOverEvent()
+    (
         GameOverEventKey.Broadcast();
         GameOverWithDataEventKey.Broadcast("Player 1");
     }
@@ -65,15 +65,15 @@ Events are handled entirely in scripts. You can't configure them in Game Studio.
 </trans-unit>
 <trans-unit id="tu10" xml:space="preserve">
 <source xml:lang="en">Create a receiver</source>
-<target xml:lang="pt">Create a receiver</target>
+<target xml:lang="pt">Criar um receptor</target>
 </trans-unit>
 <trans-unit id="tu11" xml:space="preserve">
 <source xml:lang="en">Receivers in the Stride API are of type <g id="1">EventReceiver</g> or <g id="2">EventReceiver&amp;lt;T&gt;</g>.</source>
-<target xml:lang="pt">Receivers in the Stride API are of type <g id="1">EventReceiver</g> or <g id="2">EventReceiver&amp;lt;T&gt;</g>.</target>
+<target xml:lang="pt">Os receptores na API Stride são do tipo <g id="1">EventReceiver</g> ou <g id="2">EventReceiver&lt;T&gt;</g>.</target>
 </trans-unit>
 <trans-unit id="tu12" xml:space="preserve">
 <source xml:lang="en">To receive the "Game Over" events described above, use:</source>
-<target xml:lang="pt">To receive the "Game Over" events described above, use:</target>
+<target xml:lang="pt">Para receber os eventos "Game Over" descritos acima, use:</target>
 </trans-unit>
 <trans-unit id="tu13" xml:space="preserve">
 <source xml:lang="en">var gameOverListener = new EventReceiver(GlobalEvents.GameOverEventKey);
@@ -90,52 +90,52 @@ await gameOverListener.ReceiveAsync();
 string asyncData = await gameOverListenerWithData.ReceiveAsync();
 //asyncData == "Player 1"
 </source>
-<target xml:lang="pt">var gameOverListener = new EventReceiver(GlobalEvents.GameOverEventKey);
+<target xml:lang="pt">jogo de var OverListener = novo EventReceiver (GlobalEvents.GameOverEventKey);
 var gameIsOver = gameOverListener.TryReceive();
 
-var gameOverListenerWithData = new EventReceiver&lt;string&gt;(GlobalEvents.GameOverWithDataEventKey);
-if(gameOverListenerWithData.TryReceive(out string data))
-{
-	//data == "Player 1"
+jogo de var OverListenerWithData = novo EventReceiver&lt;string&gt; (GlobalEvents.GameOverWithDataEventKey);
+if(gameOverListenerWithData.TryReceive (out string data)))
+(
+	- Sim. "Player 1"
 }
 
-//Or in Async
+\/\/Or em Async
 await gameOverListener.ReceiveAsync();
 string asyncData = await gameOverListenerWithData.ReceiveAsync();
-//asyncData == "Player 1"
+\/\/asyncData == "Player 1"
 </target>
 </trans-unit>
 <trans-unit id="tu14" xml:space="preserve">
 <source xml:lang="en">See also</source>
-<target xml:lang="pt">See also</target>
+<target xml:lang="pt">Ver também</target>
 </trans-unit>
 <trans-unit id="tu15" xml:space="preserve">
 <source xml:lang="en"><g id="1">Types of script</g></source>
-<target xml:lang="pt"><g id="1">Types of script</g></target>
+<target xml:lang="pt"><g id="1">Tipos de script</g></target>
 </trans-unit>
 <trans-unit id="tu16" xml:space="preserve">
 <source xml:lang="en"><g id="1">Create a script</g></source>
-<target xml:lang="pt"><g id="1">Create a script</g></target>
+<target xml:lang="pt"><g id="1">Criar um script</g></target>
 </trans-unit>
 <trans-unit id="tu17" xml:space="preserve">
 <source xml:lang="en"><g id="1">Use a script</g></source>
-<target xml:lang="pt"><g id="1">Use a script</g></target>
+<target xml:lang="pt"><g id="1">Use um script</g></target>
 </trans-unit>
 <trans-unit id="tu18" xml:space="preserve">
 <source xml:lang="en"><g id="1">Public properties and fields</g></source>
-<target xml:lang="pt"><g id="1">Public properties and fields</g></target>
+<target xml:lang="pt"><g id="1">Propriedades e campos públicos</g></target>
 </trans-unit>
 <trans-unit id="tu19" xml:space="preserve">
 <source xml:lang="en"><g id="1">Scheduling and priorities</g></source>
-<target xml:lang="pt"><g id="1">Scheduling and priorities</g></target>
+<target xml:lang="pt"><g id="1">Programação e prioridades</g></target>
 </trans-unit>
 <trans-unit id="tu20" xml:space="preserve">
 <source xml:lang="en"><g id="1">Debugging</g></source>
-<target xml:lang="pt"><g id="1">Debugging</g></target>
+<target xml:lang="pt"><g id="1">Depuração</g></target>
 </trans-unit>
 <trans-unit id="tu21" xml:space="preserve">
 <source xml:lang="en"><g id="1">Preprocessor variables</g></source>
-<target xml:lang="pt"><g id="1">Preprocessor variables</g></target>
+<target xml:lang="pt"><g id="1">Variáveis de pré-processamento</g></target>
 </trans-unit>
 </body>
 </file>

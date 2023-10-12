@@ -1,204 +1,204 @@
-# Shader classes, mixins and inheritance
+# Shader classes, misturas e herança
 
-Stride Shading Language (SDSL) is an extension of HLSL, which makes it closer to C# syntax and concepts. The language is object-oriented:
+Stride Shading Language (SDSL) é uma extensão de HLSL, o que torna mais perto da sintaxe C# e conceitos. A linguagem é orientada para o objeto:
 
-- shader classes are the foundation of the code
-- shader classes contain methods and members
-- shader classes can be inherited, methods can be overridden
-- member types can be shader classes
+- classes shader são a base do código
+- classes shader contêm métodos e membros
+- classes de shader podem ser herdadas, métodos podem ser substituídos
+- tipos de membros podem ser classes de shader
 
-SDSL uses an original way to handle multiple inheritance. Inheritance is performed through mixins, so the order of inheritance is crucial:
+SDSL usa uma maneira original de lidar com múltiplas heranças. A herança é realizada através de misturas, de modo que a ordem da herança é crucial:
 
-- the order of inheritance defines the actual implementation of a method (the last override)
-- if a mixin appears several times in the inheritance, only the first occurrence is taken into account (as well as its members and methods)
-- to can call the previous implementation of a method, use `base.<method name>(<arguments>)`
+- a ordem de herança define a implementação real de um método (a última substituição)
+- se uma mistura aparece várias vezes na herança, apenas a primeira ocorrência é levada em conta (assim como seus membros e métodos)
+- para pode chamar a implementação anterior de um método, use `base.<method name>(<arguments>)`
 
-## Keywords
+## Palavras-chave
 
-SDSL uses the keywords as HLSL, and adds new ones:
+O SDSL usa as palavras-chave como HLSL e adiciona novas:
 
-- `stage`: method and member keyword. This keyword makes sure the method or member is only defined once and is the same in the compositions.
-- `stream`: member keyword. The member is accessible at every stage of the shader. For more information, see [Automatic shader stage input/out](automatic-shader-stage-input-output.md).
-- `streams`: sort of global structure storing variables needed across several stages of the shader. For more information, see [Automatic shader stage input/out](automatic-shader-stage-input-output.md).
-- `override`: method keyword. If this keyword is missing, the compilation returns an error.
-- `abstract`: used in front of a method declaration (without a body).
-- `clone`: method keyword. When a method appears several times in the inheritance tree of a shader class, this keyword forces the creation of multiple instances of the method at each level of the inheritance instead of one. For more information, see [Composition](composition.md).
-- `Input`: for geometry and tessellation shaders. For more information, see [Shader stages](shader-stages.md).
-- `Output`: for geometry and tessellation shaders. For more information, see [Shader stages](shader-stages.md).
-- `Input2`: for tessellation shaders. For more information, see [Shader stages](shader-stages.md).
-- `Constants`: for tessellation shaders. For more information, see [Shader stages](shader-stages.md).
+- `stage`: método e palavra-chave de membro. Esta palavra-chave garante que o método ou membro só é definido uma vez e é o mesmo nas composições.
+- `stream`: palavra-chave de membro. O membro é acessível em cada fase do shader. Para mais informações, veja [Automatic shader stage input\/out](automatic-shader-stage-input-output.md).
+- `streams`: tipo de estrutura global que armazena variáveis necessárias em várias etapas do shader. Para mais informações, veja [Automatic shader stage input\/out](automatic-shader-stage-input-output.md).
+- `override`: palavra-chave do método. Se esta palavra-chave está faltando, a compilação retorna um erro.
+- `abstract`: usado na frente de uma declaração de método (sem um corpo).
+- `clone`: palavra-chave do método. Quando um método aparece várias vezes na árvore de herança de uma classe shader, esta palavra-chave força a criação de múltiplas instâncias do método em cada nível da herança em vez de uma. Para mais informações, consulte [Composition](composition.md).
+- `Input`: para geometria e tessellation shaders. Para obter mais informações, consulte as etapas [Shader](shader-stages.md).
+- ` Saída`: para geometria e tessellation shaders. Para obter mais informações, consulte as etapas [Shader](shader-stages.md).
+- `Input2`: para shaders de tessellation. Para obter mais informações, consulte as etapas [Shader](shader-stages.md).
+- `Constants`: para shaders de tessellation. Para obter mais informações, consulte as etapas [Shader](shader-stages.md).
 
-## Abstract methods
+## Métodos abstratos
 
-Abstract methods are available in SDSL. They should be prefixed with the `abstract` keyword. You can inherit from a shader class with abstract methods without having to implement them; the compiler will simply produce a harmless warning. However, you should implement it in your final shader to prevent a compilation error.
+Métodos abstratos estão disponíveis no SDSL. Eles devem ser prefixados com a palavra-chave `abstract`. Você pode herdar de uma classe shader com métodos abstratos sem ter que implementá-los; o compilador simplesmente produzirá um aviso inofensivo. No entanto, você deve implementá-lo em seu shader final para evitar um erro de compilação.
 
-## Annotations
+## Notas
 
-Like HLSL, annotations are available in SDSL. Some of the most useful ones are:
+Como HLSL, as anotações estão disponíveis no SDSL. Alguns dos mais úteis são:
 
-- `[Color]` for float4 variables. The ParameterKey will have the type `Color4` instead of `Vector4`. It also specifies to Game Studio that this variable should be treated as a color, so you can edit it in Game Studio.
-- `[Link(...)]` specifies which ParameterKey to use to set this value. However, an independent default key is still created.
-- `[Map(...)]` specifies which ParameterKey to use to set this value. No new ParameterKey is created.
-- `[RenameLink]` prevents the creation of a ParameterKey. It should be used with `[Link()]`.
+- `[Color]` para variáveis float4. O parâmetro A chave terá o tipo `Color4` em vez de `Vector4`. Ele também especifica para Game Studio que esta variável deve ser tratada como uma cor, para que você possa editá-la no Game Studio.
+- `[Link(...)]` especifica qual Parâmetro Chave para usar para definir esse valor. No entanto, uma chave padrão independente ainda é criada.
+- `[Map(...)]` especifica qual Parâmetro Chave para usar para definir esse valor. Nenhum novo parâmetro A chave é criada.
+- `[RenameLink]` impede a criação de um ParâmetroKey. Deve ser usado com `[Link()]`.
 
-### Example code: annotations
+### Exemplo de código: anotações
 
 ```cs
-shader BaseShader
-{
-	[Color] float4 myColor;
+sombreador BaseShader
+(
+	[Cor] flutuar4 myColor;
  
 	[Link("ProjectKeys.MyTextureKey")]
 	[RenameLink]
-	Texture2D texture;
+	Texture2D textura;
  
-	[Map("Texturing.Texture0")] Texture2D defaultTexture;
+	[Mapa("Texturing. Texture0") Texture2D defaultTexture;
 };
 ```
 
-## Example code: inheritance
+## Exemplo de código: herança
 
 ```cs
 shader BaseInterface
-{
-	abstract float Compute();
+(
+	abstrato flutuador Compute();
 };
  
-shader BaseShader : BaseInterface
-{
-	float Compute()
-	{
-		return 1.0f;
+shader BaseShader : Base Interface
+(
+	flutuador Compute()
+	(
+		retorno 1.0f;
 	}
 };
  
-shader ShaderA : BaseShader
-{
-	override void Compute()
-	{
-		return 2.0f;
+shaderA: Base de dados
+(
+	anulado ()
+	(
+		retorno 2.0f;
 	}
 };
  
-shader ShaderB : BaseShader
-{
-	override void Compute()
-	{
+shaderB: Base de dados
+(
+	anulado ()
+	(
 		float prevValue = base.Compute();
-		return (5.0f + prevValue);
+		retorno (5.0f + prevValue);
 	}
 };
 ```
 
-### Example code: the importance of inheritance order
+### Exemplo de código: a importância da ordem de herança
 
-Notice what happens when we change the inheritance order between `ShaderA` and `ShaderB`.
+Observe o que acontece quando mudamos a ordem de herança entre `ShaderA` e `ShaderB`.
 
 ```cs
 shader MixAB : ShaderA, ShaderB
-{
+(
 };
  
 shader MixBA : ShaderB, ShaderA
-{
+(
 };
  
-// Resulting code (representation)
+\/\/ Código resultante (representação)
 
 shader MixAB : BaseInterface, BaseShader, ShaderA, ShaderB
-{
-	float Compute()
-	{
-		// code from BaseShader
-		float v0 = 1.0f;
+(
+	flutuador Compute()
+	(
+		\/\/ código de BaseShader
+		flutuar v0 = 1.0f;
  
-		// code from ShaderA
-		float v1 = 2.0f;
+		\/\/ código de ShaderA
+		flutuar v1 = 2.0f;
  
-		// code from ShaderB
-		float prevValue = v1;
+		\/\/ código de Shader B
+		flutuar prevValue = v1;
 		float v2 = 5.0f + prevValue;
  
-		return v2; // = 7.0f
+		retornar v2; \/\/ = 7.0f
 	}
 };
 
 shader MixBA : BaseInterface, BaseShader, ShaderA, ShaderB
-{
-	float Compute()
-	{
-		// code from BaseShader
-		float v0 = 1.0f;
+(
+	flutuador Compute()
+	(
+		\/\/ código de BaseShader
+		flutuar v0 = 1.0f;
 
-		// code from ShaderB
+		\/\/ código de Shader B
 		float prevValue = v0;
 		float v1 = 5.0f + prevValue;
 		
-		// code from ShaderA
-		float v2 = 2.0f;
+		\/\/ código de ShaderA
+		flutuar v2 = 2.0f;
 
-		return v2; // = 2.0f
+		retornar v2; \/\/ = 2.0f
 	}
 };
 ```
 
-## Static calls
+## Chamadas estáticas
 
-You can also use a variable or call a method from a shader without having to inherit from it. To do this, use `<shader_name>.<variable or method_name>`. It behaves the same way as a static call.
+Você também pode usar uma variável ou chamar um método de um shader sem ter que herdar dele. Para fazer isso, use `<shader_name>.<variable or method_name>`. Ele se comporta da mesma maneira que uma chamada estática.
 
-Note that if you statically call a method that uses shader class variables, the shader won't compile. This is a convenient way to only use a part of a shader, but this isn't an optimization. The shader compiler already automatically removes any unnecessary variables.
+Note que se você chamar estaticamente um método que usa variáveis de classe shader, o shader não compilará. Esta é uma maneira conveniente de usar apenas uma parte de um shader, mas isso não é uma otimização. O compilador de shader já remove automaticamente quaisquer variáveis desnecessárias.
 
-### Code example: static calls
+### Exemplo de código: chamadas estáticas
 
 ```cs
-shader StaticClass
-{
-	float StaticValue;
-	float StaticMethod(float a)
-	{
-		return 2.0f * a;
+acessório de corte
+(
+	flutuar StaticValue;
+	flutuar StaticMethod (float a)
+	(
+		retorno 2.0f * a;
 	}
  
-	// this method uses a
+	\/\/ este método usa
 	float NonStaticMethod()
-	{
-		return 2.0f * StaticValue;
+	(
+		retorno 2.0f * Valor estático;
 	}
 };
  
-// this shader class is fine
-shader CorrectStaticCallClass
-{
-	float Compute()
-	{
-		return StaticClass.StaticValue * StaticMethod(5.0f);
+\/\/ esta classe de shader está bem
+correctStaticCallClass
+(
+	flutuador Compute()
+	(
+		retornar StaticClass.StaticValue * StaticMethod(5.0f);
 	}
 };
  
-// this shader class won't compile since the call is not static
+\/\/ esta classe de shader não compila desde que a chamada não é estática
 shader IncorrectStaticCallClass 
-{
-	float Compute()
-	{
-		return StaticClass.NonStaticMethod();
+(
+	flutuador Compute()
+	(
+		retornar StaticClass.NonStaticMethod();
 	}
 };
  
-// one way to fix this
-shader IncorrectStaticCallClassFixed : StaticClass
-{
-	float Compute()
-	{
-		return NonStaticMethod();
+\/\/ uma maneira de corrigir isso
+shader IncorrectStaticCallClassFixed : Códigos estáticos
+(
+	flutuador Compute()
+	(
+		retornar NonStaticMethod();
 	}
 };
 ```
 
-## See also
+## Ver também
 
-* [Effect language](../effect-language.md)
-* [Shading language index](index.md)
-   - [Composition](composition.md)
-   - [Templates](templates.md)
-   - [Shader stage input/output automatic management](automatic-shader-stage-input-output.md)
-   - [Shader stages](shader-stages.md)
+* [Efeito da linguagem](../effect-language.md)
+* [Índice de linguagem de sombra](index.md)
+   - [Composição](composition.md)
+   - [Modelos](templates.md)
+   - [Shader fase de entrada \/ saída gestão automática](automatic-shader-stage-input-output.md)
+   - [Etapas de Shader](shader-stages.md)

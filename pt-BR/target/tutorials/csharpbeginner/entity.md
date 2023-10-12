@@ -1,14 +1,14 @@
-# Getting the entity
-You can find this sample in the tutorial project: **Menu** -> **Getting an entity**
+# Obtendo a entidade
+Você pode encontrar esta amostra no projeto tutorial: **Menu** -> ** Obtendo uma entidade**
 
-## Explanation
-This C# Beginner tutorial covers how to get the entity object.
+## Explicação
+Este tutorial C# Beginner abrange como obter o objeto de entidade.
 
-When a script is attached to an entity in the scene, we can access all properties of that Entity by using the `Entity` property. We can for instance get the entity's name or we can check if the entity has a parent in the scene.
+Quando um script é anexado a uma entidade na cena, podemos acessar todas as propriedades dessa Entidade usando a propriedade `Entidade`. Podemos, por exemplo, obter o nome da entidade ou podemos verificar se a entidade tem um pai no local.
 
-![Getting the entity example](media/getting-the-entity.webp)
+<x1\/> Obtendo o exemplo de entidade<x2\/>
 
-> [!Video https://www.youtube.com/embed/DUmZujopcY8]
+> <x1\/>!Vídeo https:\/\/www.youtube.com\/embed\/DUmZujopcY8<x2\/>
 
-## Code
-[!code-csharp[Entity](../../../../stride/samples/Tutorials/CSharpBeginner/CSharpBeginner/CSharpBeginner.Game/Code/GettingTheEntityDemo.cs)]
+## Código
+[!code-csharp[Entidade](../../../../stride/samples/Tutorials/CSharpBeginner/CSharpBeginner/CSharpBeginner.Game/Code/GettingTheEntityDemo.cs)]

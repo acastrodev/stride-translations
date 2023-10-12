@@ -1,1810 +1,1810 @@
 {
-    "filename": "manual\\graphics\\effects-and-shaders\\shading-language\\composition.md.xlf",
-    "files": [
-        {
-            "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md": [
-                [
-                    "Composition",
-                    "",
-                    "Composition",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu1"
-                    }
-                ],
-                [
-                    "<x1\/>Beginner<x2\/>",
-                    "",
-                    "<x1\/>Beginner<x2\/>\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu2"
-                    }
-                ],
-                [
-                    "<x3\/>Programmer<x4\/>",
-                    "",
-                    "<x3\/>Programmer<x4\/>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu2"
-                    }
-                ],
-                [
-                    "In addition to the inheritance system, SDSL introduces the concept of <g1>composition<\/g1>.",
-                    "",
-                    "In addition to the inheritance system, SDSL introduces the concept of <g1>composition<\/g1>.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu3"
-                    }
-                ],
-                [
-                    "A composition is a member whose type is another shader class.",
-                    "",
-                    " A composition is a member whose type is another shader class.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu3"
-                    }
-                ],
-                [
-                    "It's defined the same way as variables.",
-                    "",
-                    " It's defined the same way as variables.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu3"
-                    }
-                ],
-                [
-                    "You can compose with an instance of the desired shader class or an instance of a shader class that inherits from the desired one.",
-                    "",
-                    "You can compose with an instance of the desired shader class or an instance of a shader class that inherits from the desired one.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu4"
-                    }
-                ],
-                [
-                    "Example code",
-                    "",
-                    "Example code",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu5"
-                    }
-                ],
-                [
-                    "shader CompositionBase",
-                    "",
-                    "shader CompositionBase\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu6"
-                    }
-                ],
-                [
-                    "{",
-                    "",
-                    "{\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu6"
-                    }
-                ],
-                [
-                    "float4 Compute()",
-                    "",
-                    "\tfloat4 Compute()\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu6"
-                    }
-                ],
-                [
-                    "{",
-                    "",
-                    "\t{\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu6"
-                    }
-                ],
-                [
-                    "return float4(0.0);",
-                    "",
-                    "\t\treturn float4(0.0);\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu6"
-                    }
-                ],
-                [
-                    "}",
-                    "",
-                    "\t}\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu6"
-                    }
-                ],
-                [
-                    "};",
-                    "",
-                    "};\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu6"
-                    }
-                ],
-                [
-                    "shader CompositionShaderA :",
-                    "",
-                    " \r\nshader CompositionShaderA :",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu6"
-                    }
-                ],
-                [
-                    "CompositionBase",
-                    "",
-                    " CompositionBase\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu6"
-                    }
-                ],
-                [
-                    "{",
-                    "",
-                    "{\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu6"
-                    }
-                ],
-                [
-                    "float4 myColor;",
-                    "",
-                    "\tfloat4 myColor;\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu6"
-                    }
-                ],
-                [
-                    "override float4 Compute()",
-                    "",
-                    " \r\n\toverride float4 Compute()\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu6"
-                    }
-                ],
-                [
-                    "{",
-                    "",
-                    "\t{\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu6"
-                    }
-                ],
-                [
-                    "return myColor;",
-                    "",
-                    "\t\treturn myColor;\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu6"
-                    }
-                ],
-                [
-                    "}",
-                    "",
-                    "\t}\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu6"
-                    }
-                ],
-                [
-                    "};",
-                    "",
-                    "};\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu6"
-                    }
-                ],
-                [
-                    "shader CompositionShaderB :",
-                    "",
-                    " \r\nshader CompositionShaderB :",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu6"
-                    }
-                ],
-                [
-                    "CompositionBase",
-                    "",
-                    " CompositionBase\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu6"
-                    }
-                ],
-                [
-                    "{",
-                    "",
-                    "{\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu6"
-                    }
-                ],
-                [
-                    "float4 myColor;",
-                    "",
-                    "\tfloat4 myColor;\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu6"
-                    }
-                ],
-                [
-                    "override float4 Compute()",
-                    "",
-                    "\r\n\toverride float4 Compute()\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu6"
-                    }
-                ],
-                [
-                    "{",
-                    "",
-                    "\t{\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu6"
-                    }
-                ],
-                [
-                    "return 0.5 * myColor;",
-                    "",
-                    "\t\treturn 0.5 * myColor;\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu6"
-                    }
-                ],
-                [
-                    "}",
-                    "",
-                    "\t}\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu6"
-                    }
-                ],
-                [
-                    "};",
-                    "",
-                    "};\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu6"
-                    }
-                ],
-                [
-                    "shader BaseShader",
-                    "",
-                    " \r\nshader BaseShader\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu6"
-                    }
-                ],
-                [
-                    "{",
-                    "",
-                    "{\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu6"
-                    }
-                ],
-                [
-                    "CompositionBase Comp0;",
-                    "",
-                    "\tCompositionBase Comp0;\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu6"
-                    }
-                ],
-                [
-                    "CompositionBase Comp1;",
-                    "",
-                    "\tCompositionBase Comp1;\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu6"
-                    }
-                ],
-                [
-                    "float4 GetColor()",
-                    "",
-                    " \r\n\tfloat4 GetColor()\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu6"
-                    }
-                ],
-                [
-                    "{",
-                    "",
-                    "\t{\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu6"
-                    }
-                ],
-                [
-                    "return Comp0.Compute() + Comp1.Compute();",
-                    "",
-                    "\t\treturn Comp0.Compute() + Comp1.Compute();\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu6"
-                    }
-                ],
-                [
-                    "}",
-                    "",
-                    "\t}\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu6"
-                    }
-                ],
-                [
-                    "};",
-                    "",
-                    "};\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu6"
-                    }
-                ],
-                [
-                    "The compositions are compiled in their own context, meaning that the non-stage variables are only accessible within the composition.",
-                    "",
-                    "The compositions are compiled in their own context, meaning that the non-stage variables are only accessible within the composition.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu7"
-                    }
-                ],
-                [
-                    "It's also possible to have compositions inside compositions.",
-                    "",
-                    " It's also possible to have compositions inside compositions.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu7"
-                    }
-                ],
-                [
-                    "Example code: access root context",
-                    "",
-                    "Example code: access root context",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu8"
-                    }
-                ],
-                [
-                    "If you want to access the root compilation context, you can use the following format:",
-                    "",
-                    "If you want to access the root compilation context, you can use the following format:",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu9"
-                    }
-                ],
-                [
-                    "shader CompositionShaderC :",
-                    "",
-                    "shader CompositionShaderC :",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu10"
-                    }
-                ],
-                [
-                    "CompositionBase",
-                    "",
-                    " CompositionBase\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu10"
-                    }
-                ],
-                [
-                    "{",
-                    "",
-                    "{\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu10"
-                    }
-                ],
-                [
-                    "BaseShader rootShader = stage;",
-                    "",
-                    "\tBaseShader rootShader = stage;\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu10"
-                    }
-                ],
-                [
-                    "float4 GetColor()",
-                    "",
-                    " \r\n\tfloat4 GetColor()\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu10"
-                    }
-                ],
-                [
-                    "{",
-                    "",
-                    "\t{\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu10"
-                    }
-                ],
-                [
-                    "return rootShader.GetColor();",
-                    "",
-                    "\t\treturn rootShader.GetColor();\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu10"
-                    }
-                ],
-                [
-                    "}",
-                    "",
-                    "\t}\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu10"
-                    }
-                ],
-                [
-                    "};",
-                    "",
-                    "};\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu10"
-                    }
-                ],
-                [
-                    "This is error-prone, since <g1>CompositionShaderC<\/g1> expects <g2>BaseShader<\/g2> to be available in the root context.",
-                    "",
-                    "This is error-prone, since <g1>CompositionShaderC<\/g1> expects <g2>BaseShader<\/g2> to be available in the root context.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu11"
-                    }
-                ],
-                [
-                    "Example code: array of compositions",
-                    "",
-                    "Example code: array of compositions",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu12"
-                    }
-                ],
-                [
-                    "You can also create an array of compositions the same way you use an array of values.",
-                    "",
-                    "You can also create an array of compositions the same way you use an array of values.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu13"
-                    }
-                ],
-                [
-                    "Since there's no way to know beforehand how many compositions there are, you should iterate using a <g1>foreach<\/g1> statement.",
-                    "",
-                    " Since there's no way to know beforehand how many compositions there are, you should iterate using a <g1>foreach<\/g1> statement.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu13"
-                    }
-                ],
-                [
-                    "shader BaseShaderArray",
-                    "",
-                    "shader BaseShaderArray\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu14"
-                    }
-                ],
-                [
-                    "{",
-                    "",
-                    "{\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu14"
-                    }
-                ],
-                [
-                    "CompositionBase Comps[];",
-                    "",
-                    "\tCompositionBase Comps[];\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu14"
-                    }
-                ],
-                [
-                    "float4 GetColor()",
-                    "",
-                    "\t\r\n\tfloat4 GetColor()\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu14"
-                    }
-                ],
-                [
-                    "{",
-                    "",
-                    "\t{\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu14"
-                    }
-                ],
-                [
-                    "float4 resultColor = float4(0.0);",
-                    "",
-                    "\t\tfloat4 resultColor = float4(0.0);\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu14"
-                    }
-                ],
-                [
-                    "foreach (var comp in Comps)",
-                    "",
-                    " \r\n\t\tforeach (var comp in Comps)\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu14"
-                    }
-                ],
-                [
-                    "{",
-                    "",
-                    "\t\t{\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu14"
-                    }
-                ],
-                [
-                    "resultColor += comp.Compute();",
-                    "",
-                    "\t\t\tresultColor += comp.Compute();\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu14"
-                    }
-                ],
-                [
-                    "}",
-                    "",
-                    "\t\t}\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu14"
-                    }
-                ],
-                [
-                    "return resultColor;",
-                    "",
-                    " \r\n\t\treturn resultColor;\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu14"
-                    }
-                ],
-                [
-                    "}",
-                    "",
-                    "\t}\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu14"
-                    }
-                ],
-                [
-                    "};",
-                    "",
-                    "};\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu14"
-                    }
-                ],
-                [
-                    "Example code: stage behavior",
-                    "",
-                    "Example code: stage behavior",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu15"
-                    }
-                ],
-                [
-                    "The behavior of the <g1>stage<\/g1> keyword is straightforward: only one instance of the variable or method is produced.",
-                    "",
-                    "The behavior of the <g1>stage<\/g1> keyword is straightforward: only one instance of the variable or method is produced.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu16"
-                    }
-                ],
-                [
-                    "shader BaseShader",
-                    "",
-                    "shader BaseShader\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu17"
-                    }
-                ],
-                [
-                    "{",
-                    "",
-                    "{\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu17"
-                    }
-                ],
-                [
-                    "stage float BaseStageValue;",
-                    "",
-                    "\tstage float BaseStageValue;\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu17"
-                    }
-                ],
-                [
-                    "float NonStageValue;",
-                    "",
-                    "\tfloat NonStageValue;\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu17"
-                    }
-                ],
-                [
-                    "};",
-                    "",
-                    "};\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu17"
-                    }
-                ],
-                [
-                    "shader TestShader :",
-                    "",
-                    " \r\nshader TestShader :",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu17"
-                    }
-                ],
-                [
-                    "BaseShader",
-                    "",
-                    " BaseShader\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu17"
-                    }
-                ],
-                [
-                    "{",
-                    "",
-                    "{\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu17"
-                    }
-                ],
-                [
-                    "BaseShader comp0;",
-                    "",
-                    "\tBaseShader comp0;\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu17"
-                    }
-                ],
-                [
-                    "BaseShader comp1;",
-                    "",
-                    "\tBaseShader comp1;\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu17"
-                    }
-                ],
-                [
-                    "};",
-                    "",
-                    "};\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu17"
-                    }
-                ],
-                [
-                    "\/\/ resulting shader (representation)",
-                    "",
-                    " \r\n\/\/ resulting shader (representation)\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu17"
-                    }
-                ],
-                [
-                    "shader TestShader",
-                    "",
-                    "shader TestShader\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu17"
-                    }
-                ],
-                [
-                    "{",
-                    "",
-                    "{\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu17"
-                    }
-                ],
-                [
-                    "float BaseStageValue;",
-                    "",
-                    "\tfloat BaseStageValue;\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu17"
-                    }
-                ],
-                [
-                    "float NonStageValue;",
-                    "",
-                    "\tfloat NonStageValue;\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu17"
-                    }
-                ],
-                [
-                    "float comp0_NonStageValue;",
-                    "",
-                    "\tfloat comp0_NonStageValue;\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu17"
-                    }
-                ],
-                [
-                    "float comp1_NonStageValue;",
-                    "",
-                    "\tfloat comp1_NonStageValue;\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu17"
-                    }
-                ],
-                [
-                    "};",
-                    "",
-                    "};\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu17"
-                    }
-                ],
-                [
-                    "Example code: stage member behavior",
-                    "",
-                    "Example code: stage member behavior",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu18"
-                    }
-                ],
-                [
-                    "shader BaseShader",
-                    "",
-                    "shader BaseShader\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu19"
-                    }
-                ],
-                [
-                    "{",
-                    "",
-                    "{\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu19"
-                    }
-                ],
-                [
-                    "stage float BaseStageMethod()",
-                    "",
-                    "\tstage float BaseStageMethod()\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu19"
-                    }
-                ],
-                [
-                    "{",
-                    "",
-                    "\t{\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu19"
-                    }
-                ],
-                [
-                    "return 1.0;",
-                    "",
-                    "\t\treturn 1.0;\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu19"
-                    }
-                ],
-                [
-                    "}",
-                    "",
-                    "\t}\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu19"
-                    }
-                ],
-                [
-                    "float NonStageMethod()",
-                    "",
-                    "\r\n\tfloat NonStageMethod()\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu19"
-                    }
-                ],
-                [
-                    "{",
-                    "",
-                    "\t{\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu19"
-                    }
-                ],
-                [
-                    "return 2.0;",
-                    "",
-                    "\t\treturn 2.0;\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu19"
-                    }
-                ],
-                [
-                    "}",
-                    "",
-                    "\t}\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu19"
-                    }
-                ],
-                [
-                    "};",
-                    "",
-                    "};\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu19"
-                    }
-                ],
-                [
-                    "shader TestShader :",
-                    "",
-                    " \r\nshader TestShader :",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu19"
-                    }
-                ],
-                [
-                    "BaseShader",
-                    "",
-                    " BaseShader\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu19"
-                    }
-                ],
-                [
-                    "{",
-                    "",
-                    "{\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu19"
-                    }
-                ],
-                [
-                    "BaseShader comp0;",
-                    "",
-                    "\tBaseShader comp0;\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu19"
-                    }
-                ],
-                [
-                    "BaseShader comp1;",
-                    "",
-                    "\tBaseShader comp1;\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu19"
-                    }
-                ],
-                [
-                    "};",
-                    "",
-                    "};\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu19"
-                    }
-                ],
-                [
-                    "\/\/ resulting shader (representation)",
-                    "",
-                    " \r\n\/\/ resulting shader (representation)\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu19"
-                    }
-                ],
-                [
-                    "shader TestClass",
-                    "",
-                    "shader TestClass\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu19"
-                    }
-                ],
-                [
-                    "{",
-                    "",
-                    "{\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu19"
-                    }
-                ],
-                [
-                    "float BaseStageMethod()",
-                    "",
-                    "\tfloat BaseStageMethod()\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu19"
-                    }
-                ],
-                [
-                    "{",
-                    "",
-                    "\t{\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu19"
-                    }
-                ],
-                [
-                    "return 1.0;",
-                    "",
-                    "\t\treturn 1.0;\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu19"
-                    }
-                ],
-                [
-                    "}",
-                    "",
-                    "\t}\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu19"
-                    }
-                ],
-                [
-                    "float NonStageMethod()",
-                    "",
-                    "\r\n\tfloat NonStageMethod()\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu19"
-                    }
-                ],
-                [
-                    "{",
-                    "",
-                    "\t{\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu19"
-                    }
-                ],
-                [
-                    "return 2.0;",
-                    "",
-                    "\t\treturn 2.0;\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu19"
-                    }
-                ],
-                [
-                    "}",
-                    "",
-                    "\t}\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu19"
-                    }
-                ],
-                [
-                    "float comp0_NonStageMethod()",
-                    "",
-                    "\tfloat comp0_NonStageMethod()\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu19"
-                    }
-                ],
-                [
-                    "{",
-                    "",
-                    "\t{\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu19"
-                    }
-                ],
-                [
-                    "return 2.0;",
-                    "",
-                    "\t\treturn 2.0;\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu19"
-                    }
-                ],
-                [
-                    "}",
-                    "",
-                    "\t}\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu19"
-                    }
-                ],
-                [
-                    "float comp1_NonStageMethod()",
-                    "",
-                    "\tfloat comp1_NonStageMethod()\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu19"
-                    }
-                ],
-                [
-                    "{",
-                    "",
-                    "\t{\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu19"
-                    }
-                ],
-                [
-                    "return 2.0;",
-                    "",
-                    "\t\treturn 2.0;\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu19"
-                    }
-                ],
-                [
-                    "}",
-                    "",
-                    "\t}\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu19"
-                    }
-                ],
-                [
-                    "};",
-                    "",
-                    "};\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu19"
-                    }
-                ],
-                [
-                    "Keep in mind that even in composition, you can call for base methods, override them, and so on.",
-                    "",
-                    "Keep in mind that even in composition, you can call for base methods, override them, and so on.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu20"
-                    }
-                ],
-                [
-                    "Overriding happens in the same order as the compositions.",
-                    "",
-                    " Overriding happens in the same order as the compositions.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu20"
-                    }
-                ],
-                [
-                    "This behavior is useful when you need a value in multiple composition but you only need to compute it once (eg the normal in view space).",
-                    "",
-                    "This behavior is useful when you need a value in multiple composition but you only need to compute it once (eg the normal in view space).",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu21"
-                    }
-                ],
-                [
-                    "Clone behavior",
-                    "",
-                    "Clone behavior",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu22"
-                    }
-                ],
-                [
-                    "The <g1>clone<\/g1> keyword has a less trivial behavior.",
-                    "",
-                    "The <g1>clone<\/g1> keyword has a less trivial behavior.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu23"
-                    }
-                ],
-                [
-                    "It prevents the <g2>stage<\/g2> keyword to produce a unique method.",
-                    "",
-                    " It prevents the <g2>stage<\/g2> keyword to produce a unique method.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu23"
-                    }
-                ],
-                [
-                    "shader BaseShader",
-                    "",
-                    "shader BaseShader\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu24"
-                    }
-                ],
-                [
-                    "{",
-                    "",
-                    "{\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu24"
-                    }
-                ],
-                [
-                    "stage float BaseStageMethod()",
-                    "",
-                    "\tstage float BaseStageMethod()\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu24"
-                    }
-                ],
-                [
-                    "{",
-                    "",
-                    "\t{\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu24"
-                    }
-                ],
-                [
-                    "return 1.0;",
-                    "",
-                    "\t\treturn 1.0;\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu24"
-                    }
-                ],
-                [
-                    "}",
-                    "",
-                    "\t}\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu24"
-                    }
-                ],
-                [
-                    "stage float BaseStageMethodNotCloned()",
-                    "",
-                    " \r\n\tstage float BaseStageMethodNotCloned()\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu24"
-                    }
-                ],
-                [
-                    "{",
-                    "",
-                    "\t{\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu24"
-                    }
-                ],
-                [
-                    "return 1.0;",
-                    "",
-                    "\t\treturn 1.0;\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu24"
-                    }
-                ],
-                [
-                    "}",
-                    "",
-                    "\t}\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu24"
-                    }
-                ],
-                [
-                    "};",
-                    "",
-                    "};\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu24"
-                    }
-                ],
-                [
-                    "shader CompShader :",
-                    "",
-                    " \r\nshader CompShader :",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu24"
-                    }
-                ],
-                [
-                    "BaseShader",
-                    "",
-                    " BaseShader\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu24"
-                    }
-                ],
-                [
-                    "{",
-                    "",
-                    "{\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu24"
-                    }
-                ],
-                [
-                    "override clone float BaseStageMethod()",
-                    "",
-                    "\toverride clone float BaseStageMethod()\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu24"
-                    }
-                ],
-                [
-                    "{",
-                    "",
-                    "\t{\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu24"
-                    }
-                ],
-                [
-                    "return 1.0 + base.BaseStageMethod();",
-                    "",
-                    "\t\treturn 1.0 + base.BaseStageMethod();\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu24"
-                    }
-                ],
-                [
-                    "}",
-                    "",
-                    "\t}\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu24"
-                    }
-                ],
-                [
-                    "override float BaseStageMethodNotCloned()",
-                    "",
-                    " \r\n\toverride float BaseStageMethodNotCloned()\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu24"
-                    }
-                ],
-                [
-                    "{",
-                    "",
-                    "\t{\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu24"
-                    }
-                ],
-                [
-                    "return 1.0f + base.BaseStageMethodNotCloned();",
-                    "",
-                    "\t\treturn 1.0f + base.BaseStageMethodNotCloned();\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu24"
-                    }
-                ],
-                [
-                    "}",
-                    "",
-                    "\t}\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu24"
-                    }
-                ],
-                [
-                    "};",
-                    "",
-                    "};\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu24"
-                    }
-                ],
-                [
-                    "shader TestShader :",
-                    "",
-                    " \r\nshader TestShader :",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu24"
-                    }
-                ],
-                [
-                    "BaseShader",
-                    "",
-                    " BaseShader\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu24"
-                    }
-                ],
-                [
-                    "{",
-                    "",
-                    "{\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu24"
-                    }
-                ],
-                [
-                    "CompShader comp0;",
-                    "",
-                    "\tCompShader comp0;\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu24"
-                    }
-                ],
-                [
-                    "CompShadercomp1;",
-                    "",
-                    "\tCompShadercomp1;\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu24"
-                    }
-                ],
-                [
-                    "};",
-                    "",
-                    "};\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu24"
-                    }
-                ],
-                [
-                    "\/\/ resulting shader (representation)",
-                    "",
-                    " \r\n\/\/ resulting shader (representation)\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu24"
-                    }
-                ],
-                [
-                    "shader TestShader",
-                    "",
-                    "shader TestShader\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu24"
-                    }
-                ],
-                [
-                    "{",
-                    "",
-                    "{\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu24"
-                    }
-                ],
-                [
-                    "\/\/ cloned method",
-                    "",
-                    "\t\/\/ cloned method\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu24"
-                    }
-                ],
-                [
-                    "float base_BaseStageMethod()",
-                    "",
-                    "\tfloat base_BaseStageMethod()\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu24"
-                    }
-                ],
-                [
-                    "{",
-                    "",
-                    "\t{\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu24"
-                    }
-                ],
-                [
-                    "return 1.0;",
-                    "",
-                    "\t\treturn 1.0;\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu24"
-                    }
-                ],
-                [
-                    "}",
-                    "",
-                    "\t}\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu24"
-                    }
-                ],
-                [
-                    "float comp0_BaseStageMethod()",
-                    "",
-                    " \r\n\tfloat comp0_BaseStageMethod()\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu24"
-                    }
-                ],
-                [
-                    "{",
-                    "",
-                    "\t{\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu24"
-                    }
-                ],
-                [
-                    "return 1.0 + base_BaseStageMethod();",
-                    "",
-                    "\t\treturn 1.0 + base_BaseStageMethod();\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu24"
-                    }
-                ],
-                [
-                    "}",
-                    "",
-                    "\t}\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu24"
-                    }
-                ],
-                [
-                    "float BaseStageMethod() \/\/ in fact comp1_BaseStageMethod",
-                    "",
-                    " \r\n\tfloat BaseStageMethod() \/\/ in fact comp1_BaseStageMethod\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu24"
-                    }
-                ],
-                [
-                    "{",
-                    "",
-                    "\t{\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu24"
-                    }
-                ],
-                [
-                    "return 1.0 + comp0_BaseStageMethod; \/\/ 3.0f",
-                    "",
-                    "\t\treturn 1.0 + comp0_BaseStageMethod; \/\/ 3.0f\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu24"
-                    }
-                ],
-                [
-                    "}",
-                    "",
-                    "\t}\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu24"
-                    }
-                ],
-                [
-                    "\/\/ not cloned method",
-                    "",
-                    " \r\n\t\/\/ not cloned method\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu24"
-                    }
-                ],
-                [
-                    "float base_BaseStageMethodNotCloned()",
-                    "",
-                    "\tfloat base_BaseStageMethodNotCloned()\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu24"
-                    }
-                ],
-                [
-                    "{",
-                    "",
-                    "\t{\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu24"
-                    }
-                ],
-                [
-                    "return 1.0f;",
-                    "",
-                    "\t\treturn 1.0f;\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu24"
-                    }
-                ],
-                [
-                    "}",
-                    "",
-                    "\t}\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu24"
-                    }
-                ],
-                [
-                    "float BaseStageMethodNotCloned()",
-                    "",
-                    " \r\n\tfloat BaseStageMethodNotCloned()\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu24"
-                    }
-                ],
-                [
-                    "{",
-                    "",
-                    "\t{\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu24"
-                    }
-                ],
-                [
-                    "return 1.0f + base_BaseStageMethodNotCloned(); \/\/ 2.0f",
-                    "",
-                    "\t\treturn 1.0f + base_BaseStageMethodNotCloned(); \/\/ 2.0f\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu24"
-                    }
-                ],
-                [
-                    "}",
-                    "",
-                    "\t}\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu24"
-                    }
-                ],
-                [
-                    "};",
-                    "",
-                    "};\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu24"
-                    }
-                ],
-                [
-                    "This behavior is useful when you want to repeat a simple function but with different parameters (eg adding color on top of another).",
-                    "",
-                    "This behavior is useful when you want to repeat a simple function but with different parameters (eg adding color on top of another).",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu25"
-                    }
-                ],
-                [
-                    "See also",
-                    "",
-                    "See also",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu26"
-                    }
-                ],
-                [
-                    "Effect language",
-                    "",
-                    "<g1>Effect language<\/g1>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu27"
-                    }
-                ],
-                [
-                    "Shading language index",
-                    "",
-                    "<g1>Shading language index<\/g1>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu28"
-                    }
-                ],
-                [
-                    "Shader classes, mixins, and inheritance",
-                    "",
-                    "<g1>Shader classes, mixins, and inheritance<\/g1>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu29"
-                    }
-                ],
-                [
-                    "Templates",
-                    "",
-                    "<g1>Templates<\/g1>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu30"
-                    }
-                ],
-                [
-                    "Shader stage input\/output automatic management",
-                    "",
-                    "<g1>Shader stage input\/output automatic management<\/g1>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu31"
-                    }
-                ],
-                [
-                    "Shader stages",
-                    "",
-                    "<g1>Shader stages<\/g1>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/effects-and-shaders\/shading-language\/composition.md",
-                    {
-                        "id": "tu32"
-                    }
-                ]
-            ]
-        }
-    ],
-    "seg_enabled": false
+  "filename": "manual\\graphics\\effects-and-shaders\\shading-language\\composition.md.xlf",
+  "files": [
+    {
+      "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md": [
+        [
+          "Composition",
+          "Composição",
+          "Composition",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu1"
+          }
+        ],
+        [
+          "<x1\\/>Beginner<x2\\/>",
+          "<x1\\/>Introdução<x2\\/>",
+          "<x1\\/>Beginner<x2\\/>\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu2"
+          }
+        ],
+        [
+          "<x3\\/>Programmer<x4\\/>",
+          "<x3\\/> Programador <x4\\/>",
+          "<x3\\/>Programmer<x4\\/>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu2"
+          }
+        ],
+        [
+          "In addition to the inheritance system, SDSL introduces the concept of <g1>composition<\\/g1>.",
+          "Além do sistema de herança, o SDSL introduz o conceito de <g1>composition<\\/g1>.",
+          "In addition to the inheritance system, SDSL introduces the concept of <g1>composition<\\/g1>.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu3"
+          }
+        ],
+        [
+          "A composition is a member whose type is another shader class.",
+          "Uma composição é um membro cujo tipo é outra classe shader.",
+          " A composition is a member whose type is another shader class.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu3"
+          }
+        ],
+        [
+          "It's defined the same way as variables.",
+          "É definido da mesma forma que as variáveis.",
+          " It's defined the same way as variables.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu3"
+          }
+        ],
+        [
+          "You can compose with an instance of the desired shader class or an instance of a shader class that inherits from the desired one.",
+          "Você pode compor com uma instância da classe shader desejada ou uma instância de uma classe shader que herda do desejado.",
+          "You can compose with an instance of the desired shader class or an instance of a shader class that inherits from the desired one.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu4"
+          }
+        ],
+        [
+          "Example code",
+          "Exemplo de código",
+          "Example code",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu5"
+          }
+        ],
+        [
+          "shader CompositionBase",
+          "composição do shader Base",
+          "shader CompositionBase\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu6"
+          }
+        ],
+        [
+          "{",
+          "(",
+          "{\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu6"
+          }
+        ],
+        [
+          "float4 Compute()",
+          "flutuante4 Compute()",
+          "\tfloat4 Compute()\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu6"
+          }
+        ],
+        [
+          "{",
+          "(",
+          "\t{\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu6"
+          }
+        ],
+        [
+          "return float4(0.0);",
+          "retornar float4(0.0);",
+          "\t\treturn float4(0.0);\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu6"
+          }
+        ],
+        [
+          "}",
+          "",
+          "\t}\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu6"
+          }
+        ],
+        [
+          "};",
+          "};",
+          "};\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu6"
+          }
+        ],
+        [
+          "shader CompositionShaderA :",
+          "shader CompositionShaderA :",
+          " \r\nshader CompositionShaderA :",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu6"
+          }
+        ],
+        [
+          "CompositionBase",
+          "Composição Base",
+          " CompositionBase\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu6"
+          }
+        ],
+        [
+          "{",
+          "(",
+          "{\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu6"
+          }
+        ],
+        [
+          "float4 myColor;",
+          "float4 myColor;",
+          "\tfloat4 myColor;\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu6"
+          }
+        ],
+        [
+          "override float4 Compute()",
+          "override float4 Compute()",
+          " \r\n\toverride float4 Compute()\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu6"
+          }
+        ],
+        [
+          "{",
+          "(",
+          "\t{\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu6"
+          }
+        ],
+        [
+          "return myColor;",
+          "voltar myColor;",
+          "\t\treturn myColor;\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu6"
+          }
+        ],
+        [
+          "}",
+          "",
+          "\t}\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu6"
+          }
+        ],
+        [
+          "};",
+          "};",
+          "};\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu6"
+          }
+        ],
+        [
+          "shader CompositionShaderB :",
+          "shader CompositionShaderB :",
+          " \r\nshader CompositionShaderB :",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu6"
+          }
+        ],
+        [
+          "CompositionBase",
+          "Composição Base",
+          " CompositionBase\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu6"
+          }
+        ],
+        [
+          "{",
+          "(",
+          "{\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu6"
+          }
+        ],
+        [
+          "float4 myColor;",
+          "float4 myColor;",
+          "\tfloat4 myColor;\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu6"
+          }
+        ],
+        [
+          "override float4 Compute()",
+          "override float4 Compute()",
+          "\r\n\toverride float4 Compute()\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu6"
+          }
+        ],
+        [
+          "{",
+          "(",
+          "\t{\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu6"
+          }
+        ],
+        [
+          "return 0.5 * myColor;",
+          "retorno 0,5 * myColor;",
+          "\t\treturn 0.5 * myColor;\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu6"
+          }
+        ],
+        [
+          "}",
+          "",
+          "\t}\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu6"
+          }
+        ],
+        [
+          "};",
+          "};",
+          "};\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu6"
+          }
+        ],
+        [
+          "shader BaseShader",
+          "sombreador BaseShader",
+          " \r\nshader BaseShader\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu6"
+          }
+        ],
+        [
+          "{",
+          "(",
+          "{\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu6"
+          }
+        ],
+        [
+          "CompositionBase Comp0;",
+          "ComposiçãoBase Comp0;",
+          "\tCompositionBase Comp0;\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu6"
+          }
+        ],
+        [
+          "CompositionBase Comp1;",
+          "ComposiçãoBase Comp1;",
+          "\tCompositionBase Comp1;\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu6"
+          }
+        ],
+        [
+          "float4 GetColor()",
+          "flutuante4 GetColor()",
+          " \r\n\tfloat4 GetColor()\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu6"
+          }
+        ],
+        [
+          "{",
+          "(",
+          "\t{\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu6"
+          }
+        ],
+        [
+          "return Comp0.Compute() + Comp1.Compute();",
+          "return Comp0.Compute() + Comp1.Compute();",
+          "\t\treturn Comp0.Compute() + Comp1.Compute();\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu6"
+          }
+        ],
+        [
+          "}",
+          "",
+          "\t}\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu6"
+          }
+        ],
+        [
+          "};",
+          "};",
+          "};\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu6"
+          }
+        ],
+        [
+          "The compositions are compiled in their own context, meaning that the non-stage variables are only accessible within the composition.",
+          "As composições são compiladas em seu próprio contexto, o que significa que as variáveis não-estágio só são acessíveis dentro da composição.",
+          "The compositions are compiled in their own context, meaning that the non-stage variables are only accessible within the composition.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu7"
+          }
+        ],
+        [
+          "It's also possible to have compositions inside compositions.",
+          "Também é possível ter composições dentro de composições.",
+          " It's also possible to have compositions inside compositions.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu7"
+          }
+        ],
+        [
+          "Example code: access root context",
+          "Exemplo de código: access root context",
+          "Example code: access root context",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu8"
+          }
+        ],
+        [
+          "If you want to access the root compilation context, you can use the following format:",
+          "Se você quiser acessar o contexto de compilação de raiz, você pode usar o seguinte formato:",
+          "If you want to access the root compilation context, you can use the following format:",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu9"
+          }
+        ],
+        [
+          "shader CompositionShaderC :",
+          "shader CompositionShaderC :",
+          "shader CompositionShaderC :",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu10"
+          }
+        ],
+        [
+          "CompositionBase",
+          "Composição Base",
+          " CompositionBase\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu10"
+          }
+        ],
+        [
+          "{",
+          "(",
+          "{\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu10"
+          }
+        ],
+        [
+          "BaseShader rootShader = stage;",
+          "Raiz de BaseShader Shader = estágio;",
+          "\tBaseShader rootShader = stage;\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu10"
+          }
+        ],
+        [
+          "float4 GetColor()",
+          "flutuante4 GetColor()",
+          " \r\n\tfloat4 GetColor()\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu10"
+          }
+        ],
+        [
+          "{",
+          "(",
+          "\t{\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu10"
+          }
+        ],
+        [
+          "return rootShader.GetColor();",
+          "retornar rootShader.GetColor();",
+          "\t\treturn rootShader.GetColor();\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu10"
+          }
+        ],
+        [
+          "}",
+          "",
+          "\t}\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu10"
+          }
+        ],
+        [
+          "};",
+          "};",
+          "};\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu10"
+          }
+        ],
+        [
+          "This is error-prone, since <g1>CompositionShaderC<\\/g1> expects <g2>BaseShader<\\/g2> to be available in the root context.",
+          "Isso é propenso a erros, já que <g1>CompositionShaderC<\\/g1> espera que <g2>BaseShader<\\/g2> esteja disponível no contexto raiz.",
+          "This is error-prone, since <g1>CompositionShaderC<\\/g1> expects <g2>BaseShader<\\/g2> to be available in the root context.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu11"
+          }
+        ],
+        [
+          "Example code: array of compositions",
+          "Exemplo de código: array de composições",
+          "Example code: array of compositions",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu12"
+          }
+        ],
+        [
+          "You can also create an array of compositions the same way you use an array of values.",
+          "Você também pode criar uma matriz de composições da mesma maneira que você usa um array de valores.",
+          "You can also create an array of compositions the same way you use an array of values.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu13"
+          }
+        ],
+        [
+          "Since there's no way to know beforehand how many compositions there are, you should iterate using a <g1>foreach<\\/g1> statement.",
+          "Como não há nenhuma maneira de saber antecipadamente quantas composições existem, você deve iterar usando uma instrução <g1>foreach<\\/g1>.",
+          " Since there's no way to know beforehand how many compositions there are, you should iterate using a <g1>foreach<\\/g1> statement.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu13"
+          }
+        ],
+        [
+          "shader BaseShaderArray",
+          "sombreador BaseShader Array",
+          "shader BaseShaderArray\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu14"
+          }
+        ],
+        [
+          "{",
+          "(",
+          "{\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu14"
+          }
+        ],
+        [
+          "CompositionBase Comps[];",
+          "CompositionBase Comps[];",
+          "\tCompositionBase Comps[];\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu14"
+          }
+        ],
+        [
+          "float4 GetColor()",
+          "flutuante4 GetColor()",
+          "\t\r\n\tfloat4 GetColor()\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu14"
+          }
+        ],
+        [
+          "{",
+          "(",
+          "\t{\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu14"
+          }
+        ],
+        [
+          "float4 resultColor = float4(0.0);",
+          "float4 resultColor = float4(0.0);",
+          "\t\tfloat4 resultColor = float4(0.0);\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu14"
+          }
+        ],
+        [
+          "foreach (var comp in Comps)",
+          "foreach (var comp em Comps)",
+          " \r\n\t\tforeach (var comp in Comps)\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu14"
+          }
+        ],
+        [
+          "{",
+          "(",
+          "\t\t{\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu14"
+          }
+        ],
+        [
+          "resultColor += comp.Compute();",
+          "resultColor += comp.Compute();",
+          "\t\t\tresultColor += comp.Compute();\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu14"
+          }
+        ],
+        [
+          "}",
+          "",
+          "\t\t}\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu14"
+          }
+        ],
+        [
+          "return resultColor;",
+          "resultado de retorno Cor;",
+          " \r\n\t\treturn resultColor;\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu14"
+          }
+        ],
+        [
+          "}",
+          "",
+          "\t}\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu14"
+          }
+        ],
+        [
+          "};",
+          "};",
+          "};\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu14"
+          }
+        ],
+        [
+          "Example code: stage behavior",
+          "Exemplo de código: behavior",
+          "Example code: stage behavior",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu15"
+          }
+        ],
+        [
+          "The behavior of the <g1>stage<\\/g1> keyword is straightforward: only one instance of the variable or method is produced.",
+          "O comportamento da palavra-chave <g1>stage<\\/g1> é simples: apenas uma instância da variável ou método é produzida.",
+          "The behavior of the <g1>stage<\\/g1> keyword is straightforward: only one instance of the variable or method is produced.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu16"
+          }
+        ],
+        [
+          "shader BaseShader",
+          "sombreador BaseShader",
+          "shader BaseShader\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu17"
+          }
+        ],
+        [
+          "{",
+          "(",
+          "{\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu17"
+          }
+        ],
+        [
+          "stage float BaseStageValue;",
+          "fase float BaseStageValue;",
+          "\tstage float BaseStageValue;\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu17"
+          }
+        ],
+        [
+          "float NonStageValue;",
+          "não Padrão de flutuação Valor;",
+          "\tfloat NonStageValue;\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu17"
+          }
+        ],
+        [
+          "};",
+          "};",
+          "};\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu17"
+          }
+        ],
+        [
+          "shader TestShader :",
+          "testShader :",
+          " \r\nshader TestShader :",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu17"
+          }
+        ],
+        [
+          "BaseShader",
+          "Base de dados",
+          " BaseShader\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu17"
+          }
+        ],
+        [
+          "{",
+          "(",
+          "{\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu17"
+          }
+        ],
+        [
+          "BaseShader comp0;",
+          "BaseShader comp0;",
+          "\tBaseShader comp0;\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu17"
+          }
+        ],
+        [
+          "BaseShader comp1;",
+          "BaseShader comp1;",
+          "\tBaseShader comp1;\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu17"
+          }
+        ],
+        [
+          "};",
+          "};",
+          "};\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu17"
+          }
+        ],
+        [
+          "\\/\\/ resulting shader (representation)",
+          "\\/\\/ shader resultante (representação)",
+          " \r\n\\/\\/ resulting shader (representation)\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu17"
+          }
+        ],
+        [
+          "shader TestShader",
+          "teste de sombreador",
+          "shader TestShader\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu17"
+          }
+        ],
+        [
+          "{",
+          "(",
+          "{\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu17"
+          }
+        ],
+        [
+          "float BaseStageValue;",
+          "baseStage flutuante Valor;",
+          "\tfloat BaseStageValue;\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu17"
+          }
+        ],
+        [
+          "float NonStageValue;",
+          "não Padrão de flutuação Valor;",
+          "\tfloat NonStageValue;\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu17"
+          }
+        ],
+        [
+          "float comp0_NonStageValue;",
+          "flutuar comp0_NonStage Valor;",
+          "\tfloat comp0_NonStageValue;\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu17"
+          }
+        ],
+        [
+          "float comp1_NonStageValue;",
+          "flutuar comp1_NonStage Valor;",
+          "\tfloat comp1_NonStageValue;\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu17"
+          }
+        ],
+        [
+          "};",
+          "};",
+          "};\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu17"
+          }
+        ],
+        [
+          "Example code: stage member behavior",
+          "Código de exemplo: stage member behavior",
+          "Example code: stage member behavior",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu18"
+          }
+        ],
+        [
+          "shader BaseShader",
+          "sombreador BaseShader",
+          "shader BaseShader\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu19"
+          }
+        ],
+        [
+          "{",
+          "(",
+          "{\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu19"
+          }
+        ],
+        [
+          "stage float BaseStageMethod()",
+          "fase float BaseStageMethod()",
+          "\tstage float BaseStageMethod()\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu19"
+          }
+        ],
+        [
+          "{",
+          "(",
+          "\t{\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu19"
+          }
+        ],
+        [
+          "return 1.0;",
+          "retorno 1.0;",
+          "\t\treturn 1.0;\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu19"
+          }
+        ],
+        [
+          "}",
+          "",
+          "\t}\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu19"
+          }
+        ],
+        [
+          "float NonStageMethod()",
+          "flutuar NonStageMethod()",
+          "\r\n\tfloat NonStageMethod()\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu19"
+          }
+        ],
+        [
+          "{",
+          "(",
+          "\t{\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu19"
+          }
+        ],
+        [
+          "return 2.0;",
+          "retorno 2.0;",
+          "\t\treturn 2.0;\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu19"
+          }
+        ],
+        [
+          "}",
+          "",
+          "\t}\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu19"
+          }
+        ],
+        [
+          "};",
+          "};",
+          "};\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu19"
+          }
+        ],
+        [
+          "shader TestShader :",
+          "testShader :",
+          " \r\nshader TestShader :",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu19"
+          }
+        ],
+        [
+          "BaseShader",
+          "Base de dados",
+          " BaseShader\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu19"
+          }
+        ],
+        [
+          "{",
+          "(",
+          "{\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu19"
+          }
+        ],
+        [
+          "BaseShader comp0;",
+          "BaseShader comp0;",
+          "\tBaseShader comp0;\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu19"
+          }
+        ],
+        [
+          "BaseShader comp1;",
+          "BaseShader comp1;",
+          "\tBaseShader comp1;\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu19"
+          }
+        ],
+        [
+          "};",
+          "};",
+          "};\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu19"
+          }
+        ],
+        [
+          "\\/\\/ resulting shader (representation)",
+          "\\/\\/ shader resultante (representação)",
+          " \r\n\\/\\/ resulting shader (representation)\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu19"
+          }
+        ],
+        [
+          "shader TestClass",
+          "teste de sombreador",
+          "shader TestClass\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu19"
+          }
+        ],
+        [
+          "{",
+          "(",
+          "{\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu19"
+          }
+        ],
+        [
+          "float BaseStageMethod()",
+          "flutuar BaseStageMethod()",
+          "\tfloat BaseStageMethod()\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu19"
+          }
+        ],
+        [
+          "{",
+          "(",
+          "\t{\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu19"
+          }
+        ],
+        [
+          "return 1.0;",
+          "retorno 1.0;",
+          "\t\treturn 1.0;\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu19"
+          }
+        ],
+        [
+          "}",
+          "",
+          "\t}\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu19"
+          }
+        ],
+        [
+          "float NonStageMethod()",
+          "flutuar NonStageMethod()",
+          "\r\n\tfloat NonStageMethod()\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu19"
+          }
+        ],
+        [
+          "{",
+          "(",
+          "\t{\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu19"
+          }
+        ],
+        [
+          "return 2.0;",
+          "retorno 2.0;",
+          "\t\treturn 2.0;\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu19"
+          }
+        ],
+        [
+          "}",
+          "",
+          "\t}\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu19"
+          }
+        ],
+        [
+          "float comp0_NonStageMethod()",
+          "flutuar comp0_NonStageMethod()",
+          "\tfloat comp0_NonStageMethod()\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu19"
+          }
+        ],
+        [
+          "{",
+          "(",
+          "\t{\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu19"
+          }
+        ],
+        [
+          "return 2.0;",
+          "retorno 2.0;",
+          "\t\treturn 2.0;\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu19"
+          }
+        ],
+        [
+          "}",
+          "",
+          "\t}\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu19"
+          }
+        ],
+        [
+          "float comp1_NonStageMethod()",
+          "flutuar comp1_NonStageMethod()",
+          "\tfloat comp1_NonStageMethod()\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu19"
+          }
+        ],
+        [
+          "{",
+          "(",
+          "\t{\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu19"
+          }
+        ],
+        [
+          "return 2.0;",
+          "retorno 2.0;",
+          "\t\treturn 2.0;\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu19"
+          }
+        ],
+        [
+          "}",
+          "",
+          "\t}\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu19"
+          }
+        ],
+        [
+          "};",
+          "};",
+          "};\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu19"
+          }
+        ],
+        [
+          "Keep in mind that even in composition, you can call for base methods, override them, and so on.",
+          "Tenha em mente que mesmo na composição, você pode chamar para métodos de base, substituí-los, e assim por diante.",
+          "Keep in mind that even in composition, you can call for base methods, override them, and so on.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu20"
+          }
+        ],
+        [
+          "Overriding happens in the same order as the compositions.",
+          "Overriding acontece na mesma ordem que as composições.",
+          " Overriding happens in the same order as the compositions.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu20"
+          }
+        ],
+        [
+          "This behavior is useful when you need a value in multiple composition but you only need to compute it once (eg the normal in view space).",
+          "Este comportamento é útil quando você precisa de um valor em composição múltipla, mas você só precisa computá-lo uma vez (por exemplo, o espaço normal em vista).",
+          "This behavior is useful when you need a value in multiple composition but you only need to compute it once (eg the normal in view space).",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu21"
+          }
+        ],
+        [
+          "Clone behavior",
+          "Comportamento de clones",
+          "Clone behavior",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu22"
+          }
+        ],
+        [
+          "The <g1>clone<\\/g1> keyword has a less trivial behavior.",
+          "A palavra-chave <g1>clone<\\/g1> tem um comportamento menos trivial.",
+          "The <g1>clone<\\/g1> keyword has a less trivial behavior.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu23"
+          }
+        ],
+        [
+          "It prevents the <g2>stage<\\/g2> keyword to produce a unique method.",
+          "Impede a palavra-chave <g2>stage<\\/g2> para produzir um método único.",
+          " It prevents the <g2>stage<\\/g2> keyword to produce a unique method.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu23"
+          }
+        ],
+        [
+          "shader BaseShader",
+          "sombreador BaseShader",
+          "shader BaseShader\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu24"
+          }
+        ],
+        [
+          "{",
+          "(",
+          "{\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu24"
+          }
+        ],
+        [
+          "stage float BaseStageMethod()",
+          "fase float BaseStageMethod()",
+          "\tstage float BaseStageMethod()\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu24"
+          }
+        ],
+        [
+          "{",
+          "(",
+          "\t{\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu24"
+          }
+        ],
+        [
+          "return 1.0;",
+          "retorno 1.0;",
+          "\t\treturn 1.0;\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu24"
+          }
+        ],
+        [
+          "}",
+          "",
+          "\t}\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu24"
+          }
+        ],
+        [
+          "stage float BaseStageMethodNotCloned()",
+          "fase float BaseStageMethodNotCloned()",
+          " \r\n\tstage float BaseStageMethodNotCloned()\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu24"
+          }
+        ],
+        [
+          "{",
+          "(",
+          "\t{\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu24"
+          }
+        ],
+        [
+          "return 1.0;",
+          "retorno 1.0;",
+          "\t\treturn 1.0;\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu24"
+          }
+        ],
+        [
+          "}",
+          "",
+          "\t}\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu24"
+          }
+        ],
+        [
+          "};",
+          "};",
+          "};\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu24"
+          }
+        ],
+        [
+          "shader CompShader :",
+          "shader CompShader :",
+          " \r\nshader CompShader :",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu24"
+          }
+        ],
+        [
+          "BaseShader",
+          "Base de dados",
+          " BaseShader\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu24"
+          }
+        ],
+        [
+          "{",
+          "(",
+          "{\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu24"
+          }
+        ],
+        [
+          "override clone float BaseStageMethod()",
+          "override clone float BaseStageMethod()",
+          "\toverride clone float BaseStageMethod()\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu24"
+          }
+        ],
+        [
+          "{",
+          "(",
+          "\t{\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu24"
+          }
+        ],
+        [
+          "return 1.0 + base.BaseStageMethod();",
+          "retorno 1.0 + base.BaseStageMethod();",
+          "\t\treturn 1.0 + base.BaseStageMethod();\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu24"
+          }
+        ],
+        [
+          "}",
+          "",
+          "\t}\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu24"
+          }
+        ],
+        [
+          "override float BaseStageMethodNotCloned()",
+          "override float BaseStageMethodNotCloned()",
+          " \r\n\toverride float BaseStageMethodNotCloned()\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu24"
+          }
+        ],
+        [
+          "{",
+          "(",
+          "\t{\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu24"
+          }
+        ],
+        [
+          "return 1.0f + base.BaseStageMethodNotCloned();",
+          "retorno 1.0f + base.BaseStageMethodNotCloned();",
+          "\t\treturn 1.0f + base.BaseStageMethodNotCloned();\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu24"
+          }
+        ],
+        [
+          "}",
+          "",
+          "\t}\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu24"
+          }
+        ],
+        [
+          "};",
+          "};",
+          "};\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu24"
+          }
+        ],
+        [
+          "shader TestShader :",
+          "testShader :",
+          " \r\nshader TestShader :",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu24"
+          }
+        ],
+        [
+          "BaseShader",
+          "Base de dados",
+          " BaseShader\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu24"
+          }
+        ],
+        [
+          "{",
+          "(",
+          "{\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu24"
+          }
+        ],
+        [
+          "CompShader comp0;",
+          "CompShader comp0;",
+          "\tCompShader comp0;\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu24"
+          }
+        ],
+        [
+          "CompShadercomp1;",
+          "CompShadercomp1;",
+          "\tCompShadercomp1;\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu24"
+          }
+        ],
+        [
+          "};",
+          "};",
+          "};\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu24"
+          }
+        ],
+        [
+          "\\/\\/ resulting shader (representation)",
+          "\\/\\/ shader resultante (representação)",
+          " \r\n\\/\\/ resulting shader (representation)\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu24"
+          }
+        ],
+        [
+          "shader TestShader",
+          "teste de sombreador",
+          "shader TestShader\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu24"
+          }
+        ],
+        [
+          "{",
+          "(",
+          "{\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu24"
+          }
+        ],
+        [
+          "\\/\\/ cloned method",
+          "\\/\\/ método clonado",
+          "\t\\/\\/ cloned method\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu24"
+          }
+        ],
+        [
+          "float base_BaseStageMethod()",
+          "flutuar base_BaseStageMethod()",
+          "\tfloat base_BaseStageMethod()\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu24"
+          }
+        ],
+        [
+          "{",
+          "(",
+          "\t{\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu24"
+          }
+        ],
+        [
+          "return 1.0;",
+          "retorno 1.0;",
+          "\t\treturn 1.0;\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu24"
+          }
+        ],
+        [
+          "}",
+          "",
+          "\t}\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu24"
+          }
+        ],
+        [
+          "float comp0_BaseStageMethod()",
+          "flutuar comp0_BaseStageMethod()",
+          " \r\n\tfloat comp0_BaseStageMethod()\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu24"
+          }
+        ],
+        [
+          "{",
+          "(",
+          "\t{\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu24"
+          }
+        ],
+        [
+          "return 1.0 + base_BaseStageMethod();",
+          "retorno 1.0 + base_BaseStageMethod();",
+          "\t\treturn 1.0 + base_BaseStageMethod();\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu24"
+          }
+        ],
+        [
+          "}",
+          "",
+          "\t}\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu24"
+          }
+        ],
+        [
+          "float BaseStageMethod() \\/\\/ in fact comp1_BaseStageMethod",
+          "float BaseStageMethod() \\/\\/ in fact comp1_BaseStageMethod",
+          " \r\n\tfloat BaseStageMethod() \\/\\/ in fact comp1_BaseStageMethod\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu24"
+          }
+        ],
+        [
+          "{",
+          "(",
+          "\t{\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu24"
+          }
+        ],
+        [
+          "return 1.0 + comp0_BaseStageMethod; \\/\\/ 3.0f",
+          "return 1.0 + comp0_BaseStageMethod; \\/\\/ 3.0f",
+          "\t\treturn 1.0 + comp0_BaseStageMethod; \\/\\/ 3.0f\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu24"
+          }
+        ],
+        [
+          "}",
+          "",
+          "\t}\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu24"
+          }
+        ],
+        [
+          "\\/\\/ not cloned method",
+          "\\/\\/ não método clonado",
+          " \r\n\t\\/\\/ not cloned method\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu24"
+          }
+        ],
+        [
+          "float base_BaseStageMethodNotCloned()",
+          "flutuar base_BaseStageMethodNotCloned()",
+          "\tfloat base_BaseStageMethodNotCloned()\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu24"
+          }
+        ],
+        [
+          "{",
+          "(",
+          "\t{\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu24"
+          }
+        ],
+        [
+          "return 1.0f;",
+          "retorno 1.0f;",
+          "\t\treturn 1.0f;\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu24"
+          }
+        ],
+        [
+          "}",
+          "",
+          "\t}\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu24"
+          }
+        ],
+        [
+          "float BaseStageMethodNotCloned()",
+          "flutuar BaseStageMethodNotCloned()",
+          " \r\n\tfloat BaseStageMethodNotCloned()\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu24"
+          }
+        ],
+        [
+          "{",
+          "(",
+          "\t{\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu24"
+          }
+        ],
+        [
+          "return 1.0f + base_BaseStageMethodNotCloned(); \\/\\/ 2.0f",
+          "retorno 1.0f + base_BaseStageMethodNotCloned(); \\/\\/ 2.0f",
+          "\t\treturn 1.0f + base_BaseStageMethodNotCloned(); \\/\\/ 2.0f\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu24"
+          }
+        ],
+        [
+          "}",
+          "",
+          "\t}\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu24"
+          }
+        ],
+        [
+          "};",
+          "};",
+          "};\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu24"
+          }
+        ],
+        [
+          "This behavior is useful when you want to repeat a simple function but with different parameters (eg adding color on top of another).",
+          "Este comportamento é útil quando você quer repetir uma função simples, mas com diferentes parâmetros (por exemplo, adicionar cor em cima de outro).",
+          "This behavior is useful when you want to repeat a simple function but with different parameters (eg adding color on top of another).",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu25"
+          }
+        ],
+        [
+          "See also",
+          "Ver também",
+          "See also",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu26"
+          }
+        ],
+        [
+          "Effect language",
+          "Efeito da linguagem",
+          "<g1>Effect language<\\/g1>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu27"
+          }
+        ],
+        [
+          "Shading language index",
+          "Índice de linguagem de sombra",
+          "<g1>Shading language index<\\/g1>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu28"
+          }
+        ],
+        [
+          "Shader classes, mixins, and inheritance",
+          "Shader classes, misturas e herança",
+          "<g1>Shader classes, mixins, and inheritance<\\/g1>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu29"
+          }
+        ],
+        [
+          "Templates",
+          "Modelos",
+          "<g1>Templates<\\/g1>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu30"
+          }
+        ],
+        [
+          "Shader stage input\\/output automatic management",
+          "Shader fase de entrada \\/ saída gestão automática",
+          "<g1>Shader stage input\\/output automatic management<\\/g1>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu31"
+          }
+        ],
+        [
+          "Shader stages",
+          "Etapas de Shader",
+          "<g1>Shader stages<\\/g1>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/effects-and-shaders\\/shading-language\\/composition.md",
+          {
+            "id": "tu32"
+          }
+        ]
+      ]
+    }
+  ],
+  "seg_enabled": false
 }

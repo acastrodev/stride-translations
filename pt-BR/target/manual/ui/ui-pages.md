@@ -1,58 +1,58 @@
-# UI pages
+# Páginas de interface
 
-<span class="badge text-bg-primary">Beginner</span>
-<span class="badge text-bg-success">Artist</span>
-<span class="badge text-bg-success">Designer</span>
+<x1\/>Introdução<x2\/>
+<x3\/>Artista <x4\/>
+<x5\/>Designer<x6\/>
 
-A **UI page** is a collection of UI elements, such as buttons and grids, that form a piece of UI in your game, such as a menu or title screen.
+A **UI page** é uma coleção de elementos de interface do usuário, como botões e grades, que formam uma parte de interface do usuário em seu jogo, como um menu ou tela de título.
 
-![UI page](media/ui-page.png)
+<x1\/>UI page<x2\/>
 
-In terms of organization, a UI page is equivalent to a scene in the Scene Editor, and UI elements are equivalent to entities in a scene. Just like entities, elements can have parents and children.
+Em termos de organização, uma página de interface do usuário é equivalente a uma cena no Editor de cenas, e elementos de interface do usuário são equivalentes a entidades em uma cena. Assim como entidades, os elementos podem ter pais e filhos.
 
-Each UI scene opens in its own tab in the UI editor. For information about how to edit UI pages, see the [UI editor](ui-editor.md) page.
+Cada cena de interface do usuário abre em sua própria aba no editor de interface do usuário. Para obter informações sobre como editar páginas de interface do usuário, consulte a página [UI editor](ui-editor.md).
 
-## Create a UI page
+## Criar uma página de interface do usuário
 
-In the **Asset View**, click **Add asset > UI > UI page**.
+No **Asset View**, clique em **Add asset > UI > UI page**.
 
-![Add UI page](media/add-ui-page.png)
+<x1\/> Adicionar página do UI<x2\/>
 
-Game Studio adds the UI page to the Asset View.
+Game Studio adiciona a página de interface do usuário ao Asset View.
 
-![Added UI page](media/added-ui-page.png)
+<x1\/> Adicionado UI página<x2\/>
 
-### Create a UI page from a UI element
+### Criar uma página UI de um elemento UI
 
-1. In the UI editor, select the element or elements you want to create a page from.
+1. No editor UI, selecione o elemento ou elementos que você deseja criar uma página a partir.
 
-2. Right-click and select **Create page from selection**.
+2. Clique com o botão direito e selecione **Criar página da seleção**.
 
-![Create page from selection](media/create-page-from-selection.png)
+<x1\/>Criar página da seleção<x2\/>
 
-Game Studio creates a page with a copy of the elements you selected.
+Game Studio cria uma página com uma cópia dos elementos que você selecionou.
 
-## Open a UI page
+## Abra uma página UI
 
-In the **Asset View**, double-click the **UI page**.
+No **Asset View**, clique duas vezes na página **UI**.
 
-![Added UI page](media/added-ui-page.png)
+<x1\/> Adicionado UI página<x2\/>
 
-The UI page opens in the [UI editor](ui-editor.md).
+A página UI abre no editor [UI](ui-editor.md).
 
-![UI editor overview](media/ui-editor.png)
+<x1\/>UI editor Overview<x2\/>
 
-## Add a UI element to a UI page
+## Adicionar um elemento de interface do usuário a uma página de interface do usuário
 
-To add an element, such as a grid or button, drag it from the **UI library** to the UI page or the **visual tree**.
+Para adicionar um elemento, como uma grade ou botão, arraste-o da biblioteca **UI** para a página UI ou a árvore **visual**.
 
-![Add UI element](media/add-ui-element.gif)
+<x1\/> Adicionar elemento UI<x2\/>
 
-For more information about how to use the UI editor, see the [UI editor](ui-editor.md) page.
+Para obter mais informações sobre como usar o editor UI, consulte a página [UI editor](ui-editor.md).
 
-## See also
+## Ver também
 
-* [UI libraries](ui-libraries.md)
-* [UI editor](ui-editor.md)
-* [Add a UI to a scene](add-a-ui-to-a-scene.md)
-* [Layout system](layout-system.md)
+* [Bibliotecas de interface](ui-libraries.md)
+* [Editor de UI](ui-editor.md)
+* [Adicionar uma interface de usuário a uma cena](add-a-ui-to-a-scene.md)
+* [Sistema de Layout](layout-system.md)

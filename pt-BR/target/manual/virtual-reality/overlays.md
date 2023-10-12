@@ -1,73 +1,73 @@
-# Overlays
+# Sobreposições
 
-In VR games, you can display [textures](../graphics/textures/index.md) (including [render textures](../graphics/graphics-compositor/render-textures.md)) as overlays that appear to float in front of the player. This is especially useful for UIs.
+Em jogos VR, você pode exibir [textures](../graphics/textures/index.md) (incluindo [render textures](../graphics/graphics-compositor/render-textures.md)) como sobreposições que parecem flutuar na frente do jogador. Isso é especialmente útil para UIs.
 
-> [!Note]
-> You can't see overlays when you don't run your game in your VR device. This is because the VR device itself creates the overlay.
+> <x1\/>!Note<x2\/>
+> Você não pode ver sobreposições quando você não executar seu jogo em seu dispositivo VR. Isso porque o próprio dispositivo VR cria a sobreposição.
 
-This page explains how to add an overlay. To display a **UI** in an overlay, you need to render the UI to a render texture, and display the render texture in the overlay. For instructions, see [Display a UI in an overlay](display-a-UI-in-an-overlay.md).
+Esta página explica como adicionar uma sobreposição. Para exibir um **UI** em uma sobreposição, você precisa renderizar a interface de usuário para uma textura de renderização e exibir a textura de renderização na sobreposição. Para instruções, veja [Exibe uma interface de usuário em uma sobreposição](display-a-UI-in-an-overlay.md).
 
-## Add an overlay
+## Adicionar uma sobreposição
 
-1. In the **Asset View** (in the bottom pane by default), double-click the **Graphics Compositor** asset.
+1. No **Asset View** (no painel inferior por padrão), clique duas vezes no **Graphics Compositor** ativo.
 
-   ![Graphics compositor asset](../graphics/graphics-compositor/media/graphics-compositor-asset.png)
+   <x1\/>Graphics compositor asset<x2\/>
 
-   The graphics compositor editor opens.
+   O editor de compositores gráficos abre.
 
-   For more information about the graphics compositor, see the [Graphics compositor](../graphics/graphics-compositor/index.md) page.
+   Para obter mais informações sobre o compositor gráfico, consulte a página [Graphics compositor](../graphics/graphics-compositor/index.md).
 
-2. In the graphics compositor editor, select the **forward renderer** node.
+2. No editor de compositores gráficos, selecione o nó **forward renderer**.
 
-   ![Select forward renderer](media/select-forward-renderer.png)
+   <x1\/>Selecionar renderizador <x2\/>
 
-3. In the **Property Grid** (on the right by default), expand **VR Settings**.
+3. No **Property Grid** (à direita por padrão), expanda **VR Settings**.
 
-   ![VR settings](media/vr-settings.png)
+   <x1\/>VR configurações<x2\/>
 
-4. Next to **Overlays**, click ![Green plus button](~/manual/game-studio/media/green-plus-icon.png) (**Add**).
+4. Ao lado de **Overlays**, clique em <x1\/>Green plus button<x2\/> (**Add**).
 
-   Game Studio adds a new overlay to the list.
+   Game Studio adiciona uma nova sobreposição à lista.
 
-   ![Add VR item](media/add-overlay.png)
+   <x1\/> Adicionar item VR<x2\/>
 
-5. Next to **Texture**, click ![Hand icon](~/manual/game-studio/media/hand-icon.png) (**Select an asset**).
+5. Ao lado de <g id="1">Texture</g>, clique em <x1\/>Hand icon<x2\/>Select an asset</g>).<g id="4">
 
-   The **Select an asset** window opens.
+   A janela **Selecione um ativo** abre.
 
-   ![Select render texture](../graphics/graphics-compositor/media/select-render-frame.png)
+   <x1\/>Select render texture<x2\/>
 
-6. Select the texture you want to display in the overlay and click **OK**.
+6. Selecione a textura que deseja exibir na sobreposição e clique em **OK**.
 
-Your game is now ready to render the UI to an overlay in your VR device.
+Seu jogo agora está pronto para renderizar a interface do usuário para uma sobreposição em seu dispositivo VR.
 
-## Multiple overlays
+## Várias sobreposições
 
-You can add as many overlays as you need. To add another overlay, click **Add to overlays** ![Green plus button](~/manual/game-studio/media/green-plus-icon.png) and follow the instructions above from step 4.
+Você pode adicionar tantas sobreposições como você precisa. Para adicionar outra sobreposição, clique em ** Add to overlays** <x1\/>Green plus button<x2\/> e siga as instruções acima da etapa 4.
 
-> [!Note]
-> If overlays overlap in the user view, overlays first in the list appear on top.
+> <x1\/>!Note<x2\/>
+> Se sobreposições se sobrepõem na visualização do usuário, sobreposições primeiro na lista aparecem no topo.
 
-## Overlay properties
+## Propriedades de sobreposição
 
-![Overlay properties](media/overlay-properties.png)
+<x1\/> Propriedades de sobreposição<x2\/>
 
-| Property | Description |
+| Propriedade | Descrição |
 |----------------|------------------
-| Texture | The texture displayed in the overlay |
-| Local position | The position of the overlay relative to the user |
-| Local rotation | The rotation of the overlay relative to the user |
-| Surface size | The size of the overlay in [world units](../game-studio/world-units.md) |
-| Follows head | Follow the user's head so the overlay is always in front of their view |
+| Textura | A textura exibida na sobreposição |
+| Posição local | A posição da sobreposição relativa ao usuário |
+| Rotação local | A rotação da sobreposição relativa ao usuário |
+| Tamanho da superfície | O tamanho da sobreposição em unidades do mundo [](../game-studio/world-units.md) |
+| Segue a cabeça | Siga a cabeça do usuário para que a sobreposição esteja sempre na frente de sua visão |
 
-## VR template
+## Modelo de RV
 
-For an example of a UI overlay implemented in a VR game, see the VR template included with Stride.
+Por exemplo, uma sobreposição de interface do usuário implementada em um jogo VR, veja o modelo VR incluído no Stride.
 
-![VR template](media/template-virtual-reality.png)
+<x1\/>VR template<x2\/>
 
-## See also
+## Ver também
 
-* [Display a UI in an overlay](display-a-UI-in-an-overlay.md)
-* [Render textures](../graphics/graphics-compositor/render-textures.md)
-* [Graphics compositor](../graphics/graphics-compositor/index.md)
+* [Exibir uma interface de usuário em uma sobreposição](display-a-UI-in-an-overlay.md)
+* [Render texturas](../graphics/graphics-compositor/render-textures.md)
+* [Compositor gráfico](../graphics/graphics-compositor/index.md)

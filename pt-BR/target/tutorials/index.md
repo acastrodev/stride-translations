@@ -1,12 +1,12 @@
-# Stride Game Engine Tutorials
+# Tutoriais do motor de jogo Stride
 
-These pages contain tutorials to learn more about the Stride game engine &#127918;.
+Estas páginas contêm tutoriais para saber mais sobre o motor de jogo Stride 🎮.
 
-New to Stride? Start with these tutorials to get familiar with the basics of the engine and the Game Studio.
+Nova para Stride? Comece com esses tutoriais para se familiarizar com o básico do motor e do Game Studio.
 
-1. &#128736;️ [Game Studio](gamestudio/index.md) - The Stride engine comes with an editor called Game Studio, which is the central tool for game and application production in Stride.
-1. &#127793; [C# Beginner](csharpbeginner/index.md) - Covering the beginner principles of using C# when working with the Stride game engine.
-1. &#128200; [C# Intermediate](csharpintermediate/index.md) - Diving into intermediate principles of C# programming in Stride, including UI, collisions, and more.
+1. 🛠 Studio [Game Studio](gamestudio/index.md) - O motor Stride vem com um editor chamado Game Studio, que é a ferramenta central para a produção de jogos e aplicações em Stride.
+1. 🌱 [C# Beginner](csharpbeginner/index.md) - Cobrindo os princípios iniciantes de usar C# ao trabalhar com o motor de jogo Stride.
+1. 📈 [C# Intermediate](csharpintermediate/index.md) - Mergulho em princípios intermediários da programação C# em Stride, incluindo IU, colisões e muito mais.
 <!---
 1. 🔥 C# Advanced - Explore advanced C# techniques and features in Stride, such as optimization, networking, and custom shaders.
 1. 🧙‍♂️ Visual Scripting - Learn how to create game logic using Stride's visual scripting system, without writing a single line of code.
@@ -19,36 +19,36 @@ New to Stride? Start with these tutorials to get familiar with the basics of the
 <div class="row g-4 my-4">
     <div class="col-xxl-4 col-md-6">
         <div class="card h-100">
-            <img src="media/gamestudio.jpg" class="card-img-top" alt="Game studio tutorials">
+            <img src="media/gamestudio.jpg" class="card-img-top" alt="Tutoriais de estúdio de jogo">
             <div class="card-body">
-                <h5 class="card-title">&amp;#128736;️ Game Studio</h5>
-                <p class="card-text">The Stride engine comes with an editor called Game Studio, which is the central tool for game &amp;#128377;️ and application production in Stride.</p>
-                <p class="card-text">Learn about Stride launcher, main interface, scene management, transforming entities, asset pipelines and more.</p>
+                <h5 class="card-title">🛠 ️ Game Studio</h5>
+                <p class="card-text">O motor Stride vem com um editor chamado Game Studio, que é a ferramenta central para o jogo 🕹 production e produção de aplicações em Stride.</p>
+                <p class="card-text">Aprenda sobre o lançador Stride, interface principal, gerenciamento de cena, entidades transformadoras, pipelines de ativos e muito mais.</p>
             </div>
-            <p class="px-3 mb-4">&amp;#128640; Jump to the <a class="stretched-link" href="gamestudio/index.md">Game Studio tutorials</a></p>
+            <p class="px-3 mb-4">🚀 Saltar para os tutoriais do <a class="stretched-link" href="gamestudio/index.md">Game Studio</a></p>
         </div>
     </div>
     <div class="col-xxl-4 col-md-6">
         <div class="card h-100">
-            <img src="media/csharp-beginner.png" class="card-img-top" alt="C# beginner tutorials">
+            <img src="media/csharp-beginner.png" class="card-img-top" alt="C# tutoriais iniciantes">
             <div class="card-body">
-                <h5 class="card-title">&amp;#127793; C# Beginner</h5>
-                <p class="card-text">These tutorials cover the beginner principles of using C# when working with the Stride game engine &amp;#127918;.</p>
-                <p class="card-text">Learn about entities, transform positions, editor properties, components, delta time, cloning, keyboard and mouse input and more.</p>
+                <h5 class="card-title">🌱 Iniciante C#</h5>
+                <p class="card-text">Estes tutoriais cobrem os princípios principiantes de usar C# ao trabalhar com o motor de jogo Stride 🎮.</p>
+                <p class="card-text">Aprenda sobre entidades, posições de transformação, propriedades do editor, componentes, tempo delta, clonagem, teclado e entrada do mouse e muito mais.</p>
             </div>
-            <p class="px-3 mb-4">&amp;#128640; Jump to the <a class="stretched-link" href="csharpbeginner/index.md">C# beginner tutorials</a></p>
+            <p class="px-3 mb-4">🚀 Ir para os tutoriais iniciantes <a class="stretched-link" href="csharpbeginner/index.md">C#</a></p>
         </div>
     </div>
     <div class="col-xxl-4 col-md-6">
         <div class="card h-100">
-            <img src="media/csharp-intermediate.png" class="card-img-top" alt="C# intermediate tutorials">
+            <img src="media/csharp-intermediate.png" class="card-img-top" alt="Tutoriais intermediários C#">
             <div class="card-body">
-                <h5 class="card-title">&amp;#128200; C# Intermediate</h5>
-                <p class="card-text">These tutorials cover various intermediate principles of using C# when working with the Stride game engine &amp;#127918;.</p>
-                <p class="card-text">Learn more about UI basics, collision triggers, ray-casting, async scripts, scenes, animations, audio, camera and navigation.</p>
-                <p><span class="badge text-bg-success">New</span></p>
+                <h5 class="card-title">📈 Intermediário C#</h5>
+                <p class="card-text">Estes tutoriais cobrem vários princípios intermediários de usar C# ao trabalhar com o motor de jogo Stride 🎮.</p>
+                <p class="card-text">Saiba mais sobre UI básico, gatilhos de colisão, transmissão de raios, scripts async, cenas, animações, áudio, câmera e navegação.</p>
+                <p><span class="badge text-bg-success">Novo</span></p>
             </div>
-            <p class="px-3 mb-4">&amp;#128640; Jump to the <a class="stretched-link" href="csharpintermediate/index.md">C# intermediate tutorials</a></p>
+            <p class="px-3 mb-4">🚀 Ir para os tutoriais intermediários <a class="stretched-link" href="csharpintermediate/index.md">C#</a></p>
         </div>
     </div>
 </div>

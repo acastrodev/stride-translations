@@ -3,57 +3,57 @@
 <body>
 <trans-unit id="tu1" xml:space="preserve">
 <source xml:lang="en">Virtual buttons</source>
-<target xml:lang="pt">Virtual buttons</target>
+<target xml:lang="pt">Botões virtuais</target>
 </trans-unit>
 <trans-unit id="tu2" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Intermediate<x id="2"/>
 <x id="3"/>Programmer<x id="4"/></source>
-<target xml:lang="pt"><x id="1"/>Intermediate<x id="2"/>
-<x id="3"/>Programmer<x id="4"/></target>
+<target xml:lang="pt">&lt;x1\/&gt; Intermediário &lt;x2\/&gt;
+&lt;x3\/&gt; Programador &lt;x4\/&gt;</target>
 </trans-unit>
 <trans-unit id="tu3" xml:space="preserve">
 <source xml:lang="en">Rather than bind controls to physical keys and buttons, you can bind them to <g id="1">virtual buttons</g>. Players can then assign physical buttons to the virtual buttons, allowing them to create their own control schemes.</source>
-<target xml:lang="pt">Rather than bind controls to physical keys and buttons, you can bind them to <g id="1">virtual buttons</g>. Players can then assign physical buttons to the virtual buttons, allowing them to create their own control schemes.</target>
+<target xml:lang="pt">Em vez de ligar controles para chaves físicas e botões, você pode ag1&gt;virtual botões&lt;/g&gt;.&lt;g id="1"&gt; Os jogadores podem então atribuir botões físicos aos botões virtuais, permitindo-lhes criar seus próprios esquemas de controle.</target>
 </trans-unit>
 <trans-unit id="tu4" xml:space="preserve">
 <source xml:lang="en">For example, imagine you develop a first-person shooter game and need to assign a key for the <g id="1">UseMedkit</g> function. Rather than bind the function to a particular key, you can create a <g id="2">virtual button</g> called <g id="3">UseMedkit</g>, then bind the virtual button to, say, the <g id="4">F</g> key. If they want to, the player can then bind the virtual key to a different key at runtime.</source>
-<target xml:lang="pt">For example, imagine you develop a first-person shooter game and need to assign a key for the <g id="1">UseMedkit</g> function. Rather than bind the function to a particular key, you can create a <g id="2">virtual button</g> called <g id="3">UseMedkit</g>, then bind the virtual button to, say, the <g id="4">F</g> key. If they want to, the player can then bind the virtual key to a different key at runtime.</target>
+<target xml:lang="pt">Por exemplo, imagine que você desenvolva um jogo de tiro em primeira pessoa e precise atribuir uma chave para a função <g id="1">UseMedkit</g>. Em vez de ligar a função a uma chave particular, você pode criar um botão <g id="2">virtual</g> chamado <g id="3">UseMedkit</g>, em seguida, ligar o botão virtual para, digamos, a tecla <g id="4">F</g>. Se quiser, o jogador pode ligar a chave virtual a uma chave diferente no tempo de execução.</target>
 </trans-unit>
 <trans-unit id="tu5" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Virtual buttons<x id="2"/></source>
-<target xml:lang="pt"><x id="1"/>Virtual buttons<x id="2"/></target>
+<target xml:lang="pt">&lt;x1\/&gt; Botões virtuais&lt;x2\/&gt;</target>
 </trans-unit>
 <trans-unit id="tu6" xml:space="preserve">
 <source xml:lang="en">Use virtual buttons</source>
-<target xml:lang="pt">Use virtual buttons</target>
+<target xml:lang="pt">Use botões virtuais</target>
 </trans-unit>
 <trans-unit id="tu7" xml:space="preserve">
 <source xml:lang="en">Bind a key, button, or pointer to a virtual button (eg <g id="1">MyButton</g>).</source>
-<target xml:lang="pt">Bind a key, button, or pointer to a virtual button (eg <g id="1">MyButton</g>).</target>
+<target xml:lang="pt">Ligar uma chave, botão ou ponteiro para um botão virtual (por exemplo <g id="1">MyButton</g>).</target>
 </trans-unit>
 <trans-unit id="tu8" xml:space="preserve">
 <source xml:lang="en">Create a list of virtual buttons.</source>
-<target xml:lang="pt">Create a list of virtual buttons.</target>
+<target xml:lang="pt">Crie uma lista de botões virtuais.</target>
 </trans-unit>
 <trans-unit id="tu9" xml:space="preserve">
 <source xml:lang="en">Add <g id="1">MyButton</g> to the list of virtual buttons.</source>
-<target xml:lang="pt">Add <g id="1">MyButton</g> to the list of virtual buttons.</target>
+<target xml:lang="pt">Adicione <g id="1">MyButton</g> à lista de botões virtuais.</target>
 </trans-unit>
 <trans-unit id="tu10" xml:space="preserve">
 <source xml:lang="en">Assign a function to <g id="1">MyButton</g>.</source>
-<target xml:lang="pt">Assign a function to <g id="1">MyButton</g>.</target>
+<target xml:lang="pt">Atribuir uma função a <g id="1">MyButton</g>.</target>
 </trans-unit>
 <trans-unit id="tu11" xml:space="preserve">
 <source xml:lang="en">Create additional virtual buttons.</source>
-<target xml:lang="pt">Create additional virtual buttons.</target>
+<target xml:lang="pt">Criar botões virtuais adicionais.</target>
 </trans-unit>
 <trans-unit id="tu12" xml:space="preserve">
 <source xml:lang="en">Add the additional buttons to the same list, or create additional lists.</source>
-<target xml:lang="pt">Add the additional buttons to the same list, or create additional lists.</target>
+<target xml:lang="pt">Adicione os botões adicionais à mesma lista ou crie listas adicionais.</target>
 </trans-unit>
 <trans-unit id="tu13" xml:space="preserve">
 <source xml:lang="en">Example code</source>
-<target xml:lang="pt">Example code</target>
+<target xml:lang="pt">Exemplo de código</target>
 </trans-unit>
 <trans-unit id="tu14" xml:space="preserve">
 <source xml:lang="en">public override void Start()
@@ -81,35 +81,35 @@ public override void Update() {
     float button = Input.GetVirtualButton(0, "MyButton");
 }
 </source>
-<target xml:lang="pt">public override void Start()
-{
+<target xml:lang="pt">anula de sobreposição pública Start()
+(
     base.Start();
 
-    // Create a new VirtualButtonConfigSet if none exists. 
-    Input.VirtualButtonConfigSet = Input.VirtualButtonConfigSet ?? new VirtualButtonConfigSet();
+    \/\/ Criar um novo VirtualButtonConfig Definir se nenhuma existe. 
+    Entrada.VirtualButtonConfigSet = Entrada.VirtualButtonConfigSet??? novo VirtualButtonConfigSet();
     
-    //Bind "M" key, GamePad "Start" button and left mouse button to a virtual button "MyButton".
-    VirtualButtonBinding b1 = new VirtualButtonBinding("MyButton", VirtualButton.Keyboard.M);
-    VirtualButtonBinding b2 = new VirtualButtonBinding("MyButton", VirtualButton.GamePad.Start);
-    VirtualButtonBinding b3 = new VirtualButtonBinding("MyButton", VirtualButton.Mouse.Left);
+    \/\/Bind "M" chave, GamePad "Start" botão e botão esquerdo do mouse para um botão virtual "MyButton".
+    VirtualButtonBinding b1 = novo VirtualButtonBinding("MyButton", VirtualButton.Keyboard.M);
+    VirtualButtonBinding b2 = novo VirtualButtonBinding("MyButton", VirtualButton.GamePad.Start);
+    VirtualButtonBinding b3 = novo VirtualButtonBinding("MyButton", VirtualButton.Mouse.Left);
 
-    VirtualButtonConfig c = new VirtualButtonConfig();
+    VirtualButtonConfig c = novo VirtualButtonConfig();
 
-    c.Add(b1);
-    c.Add(b2);
-    c.Add(b3);
+    c. Adicionar(b1);
+    c. Adicionar(b2);
+    c. Adicionar(b3);
 
-    Input.VirtualButtonConfigSet.Add(c);
+    Entrada.VirtualButtonConfigSet.Add(c);
 }
 
-public override void Update() {
-    float button = Input.GetVirtualButton(0, "MyButton");
+atualização() {
+    botão float = Entrada.GetVirtualButton(0, "MyButton");
 }
 </target>
 </trans-unit>
 <trans-unit id="tu15" xml:space="preserve">
 <source xml:lang="en">See also</source>
-<target xml:lang="pt">See also</target>
+<target xml:lang="pt">Ver também</target>
 </trans-unit>
 <trans-unit id="tu16" xml:space="preserve">
 <source xml:lang="en"><g id="1">Gamepads</g></source>
@@ -117,7 +117,7 @@ public override void Update() {
 </trans-unit>
 <trans-unit id="tu17" xml:space="preserve">
 <source xml:lang="en"><g id="1">Keyboard</g></source>
-<target xml:lang="pt"><g id="1">Keyboard</g></target>
+<target xml:lang="pt"><g id="1">Teclado</g></target>
 </trans-unit>
 <trans-unit id="tu18" xml:space="preserve">
 <source xml:lang="en"><g id="1">Mouse</g></source>
@@ -125,11 +125,11 @@ public override void Update() {
 </trans-unit>
 <trans-unit id="tu19" xml:space="preserve">
 <source xml:lang="en"><g id="1">Pointers</g></source>
-<target xml:lang="pt"><g id="1">Pointers</g></target>
+<target xml:lang="pt"><g id="1">Pontos</g></target>
 </trans-unit>
 <trans-unit id="tu20" xml:space="preserve">
 <source xml:lang="en"><g id="1">Input overview</g></source>
-<target xml:lang="pt"><g id="1">Input overview</g></target>
+<target xml:lang="pt"><g id="1">Visão geral da entrada</g></target>
 </trans-unit>
 </body>
 </file>

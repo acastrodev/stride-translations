@@ -1,6 +1,6 @@
 # Propriedades de animação
 
-<span class="badge text-bg-primary">Iniciante</span>
+<span class="badge text-bg-primary">Introdução</span>
 <span class="badge text-bg-success">Design</span>
 
 Após [importar uma animação](import-animations.md), você pode selecioná-la no **Visualizador de Recursos** (na parte inferior, por padrão) e visualizar e editar suas propriedades no **Editor de Propriedades** (à direita, por padrão).

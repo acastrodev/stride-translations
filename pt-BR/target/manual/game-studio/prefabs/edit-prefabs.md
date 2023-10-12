@@ -1,46 +1,46 @@
-# Edit prefabs
+# Editar pré-fabricados
 
-<span class="badge text-bg-primary">Beginner</span>
-<span class="badge text-bg-success">Designer</span>
+<x1\/>Introdução<x2\/>
+<x3\/>Designer<x4\/>
 
-You can edit prefabs in the **Prefab Editor**.
+Você pode editar prefabs no ** Editor de pré-fabricação**.
 
-## Open the Prefab Editor
+## Abra o Editor Prefab
 ##
 
-To open the Prefab Editor from the **Asset View**:
+Para abrir o Editor Prefab do **Asset View**:
 
-* Right-click the prefab you want to edit and select **Edit asset**:
+* Clique com o botão direito do mouse na prefab que você deseja editar e selecione **Editar asset**:
 
-   ![Right-click prefab](media/edit-prefab-with-edit-asset-button.png)
+   <x1\/>Right-click prefab<x2\/>
 
-* Alternatively, double-click the prefab you want to edit:
+* Alternativamente, clique duas vezes no pré-fabricado que deseja editar:
 
-   ![Double-click prefab](media/open-prefab-editor.gif)
+   <x1\/>Double-click prefab<x2\/>
 
-To open the Prefab Editor from the **Scene Editor**, right-click any child of a prefab instance and select **Open prefab in editor**.
+Para abrir o Editor Prefab do **Scene Editor**, clique com o botão direito do mouse em qualquer criança de uma instância prefab e selecione **Open prefab no editor**.
 
-![Open prefab in editor](media/use-prefabs-prefab-open-prefab-from-prefab-instance.png)
+<x1\/> Abra prefab no editor<x2\/>
 
-## Use the Prefab Editor
+## Use o Editor Pré-fabricado
 ##
 
-![Edit prefabs](media/prefab-editor.png)
+<x1\/>Editar prefabs<x2\/>
 
-The Prefab Editor works similarly to the Scene Editor. For example, you can:
+O Editor Prefab funciona de forma semelhante ao Editor de Cena. Por exemplo, você pode:
 
-* add and delete entities
-* use transformation gizmos to translate, rotate and scale entities
-* create parent-child relations between entities
-* add and modify entity components (scripts, materials, models, animations, etc)
+* adicionar e excluir entidades
+* usar gizmos de transformação para traduzir, girar e dimensionar entidades
+* criar relações entre pais e filhos entre entidades
+* adicionar e modificar componentes da entidade (escritos, materiais, modelos, animações, etc.)
 
-For more information about managing entities, see [Populate a scene](../add-entities.md).
+Para obter mais informações sobre a gestão de entidades, consulte [Popular uma cena](../add-entities.md).
 
-![Prefab Editor](media/prefab-editor.png)
+<x1\/> Editor de imagem <x2\/>
 
-When you edit a prefab in the Prefab Editor, the changes are applied to the instances of the prefab in the scene in **real time**.
+Quando você edita uma pré-fabricada no Editor Prefab, as alterações são aplicadas às instâncias do pré-fabricado na cena em **real time**.
 
-This video demonstrates what happens when we make changes to the prefab. The Scene Editor is on the left, and the Prefab Editor on the right:
+Este vídeo demonstra o que acontece quando fazemos alterações no pré-fabricado. O Editor de Cena está à esquerda, e o Editor Prefab à direita:
 
 <p>
 <video autoplay loop class="responsive-video" poster="media/edit-prefab-and-update-instances.jpg">
@@ -48,11 +48,11 @@ This video demonstrates what happens when we make changes to the prefab. The Sce
 </video>
 </p>
 
-## See also
+## Ver também
 
-* [Prefab index](index.md)
-* [Create a prefab](create-a-prefab.md)
+* [Índice de pré-fabricada](index.md)
+* [Criar uma pré-fabricada](create-a-prefab.md)
 * [Use prefabs](use-prefabs.md)
-* [Nested prefabs](nested-prefabs.md)
-* [Override prefab properties](override-prefab-properties.md)
-* [Prefab models](prefab-models.md)
+* [Pré-fabricadas aninhadas](nested-prefabs.md)
+* [Sobrepor propriedades pré-fabricadas](override-prefab-properties.md)
+* [Modelos pré-fabricadas](prefab-models.md)

@@ -1,14 +1,14 @@
-# Keyboard input
-You can find this sample in the tutorial project: **Menu** &rarr; **Keyboard input**
+# Entrada de teclado
+Você pode encontrar esta amostra no projeto tutorial: **Menu** → **Keyboard input**
 
-## Explanation
-This C# Beginner tutorial covers how to handle keyboard input.
+## Explicação
+Este tutorial C# Beginner abrange como lidar com a entrada do teclado.
 
-We can check for the existence of a keyboard and then we can use various methods to check if a key is pressed, held down or released.
+Podemos verificar a existência de um teclado e então podemos usar vários métodos para verificar se uma chave é pressionada, mantida ou liberada.
 
-![Keyboard input](media/keyboard-input.webp)
+<x1\/>Keyboard input<x2\/>
 
-> [!Video https://www.youtube.com/embed/UvKizPFAego]
+> <x1\/>!Vídeo https:\/\/www.youtube.com\/embed\/UvKizPFAego<x2\/>
 
-## Code
-[!code-csharp[Entity](../../../../stride/samples/Tutorials/CSharpBeginner/CSharpBeginner/CSharpBeginner.Game/Code/KeyboardInputDemo.cs)]
+## Código
+[!code-csharp[Entidade](../../../../stride/samples/Tutorials/CSharpBeginner/CSharpBeginner/CSharpBeginner.Game/Code/KeyboardInputDemo.cs)]

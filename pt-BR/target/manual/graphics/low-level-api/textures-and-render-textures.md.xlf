@@ -3,75 +3,75 @@
 <body>
 <trans-unit id="tu1" xml:space="preserve">
 <source xml:lang="en">Textures and render textures</source>
-<target xml:lang="pt">Textures and render textures</target>
+<target xml:lang="pt">Texturas e texturas de renderização</target>
 </trans-unit>
 <trans-unit id="tu2" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Advanced<x id="2"/>
 <x id="3"/>Programmer<x id="4"/></source>
-<target xml:lang="pt"><x id="1"/>Advanced<x id="2"/>
-<x id="3"/>Programmer<x id="4"/></target>
+<target xml:lang="pt">&lt;x1\/&gt; Avançado &lt;x2\/&gt;
+&lt;x3\/&gt; Programador &lt;x4\/&gt;</target>
 </trans-unit>
 <trans-unit id="tu3" xml:space="preserve">
 <source xml:lang="en">Stride uses the @'Stride.Graphics.Texture' class to interact with texture objects in code.</source>
-<target xml:lang="pt">Stride uses the @'Stride.Graphics.Texture' class to interact with texture objects in code.</target>
+<target xml:lang="pt">Stride usa o @'Stride.Graphics. Classe Texture para interagir com objetos de textura em código.</target>
 </trans-unit>
 <trans-unit id="tu4" xml:space="preserve">
 <source xml:lang="en">For more information about rendering to a texture, see <g id="1">Render textures</g>.</source>
-<target xml:lang="pt">For more information about rendering to a texture, see <g id="1">Render textures</g>.</target>
+<target xml:lang="pt">Para obter mais informações sobre renderização a uma textura, consulte as texturas <g id="1">Render</g>.</target>
 </trans-unit>
 <trans-unit id="tu5" xml:space="preserve">
 <source xml:lang="en">Load a texture</source>
-<target xml:lang="pt">Load a texture</target>
+<target xml:lang="pt">Carregar uma textura</target>
 </trans-unit>
 <trans-unit id="tu6" xml:space="preserve">
 <source xml:lang="en">To load a texture from an asset in Stride, call this function:</source>
-<target xml:lang="pt">To load a texture from an asset in Stride, call this function:</target>
+<target xml:lang="pt">Para carregar uma textura de um ativo em Stride, chame esta função:</target>
 </trans-unit>
 <trans-unit id="tu7" xml:space="preserve">
 <source xml:lang="en">// loads the texture called duck.dds (or .png etc.)
 var myTexture = Content.Load&lt;Texture&gt;("duck");
 </source>
-<target xml:lang="pt">// loads the texture called duck.dds (or .png etc.)
+<target xml:lang="pt">\/\/ carrega a textura chamada pato.dds (ou .png etc.)
 var myTexture = Content.Load&lt;Texture&gt;("duck");
 </target>
 </trans-unit>
 <trans-unit id="tu8" xml:space="preserve">
 <source xml:lang="en">This automatically generates a texture object with all its fields correctly filled.</source>
-<target xml:lang="pt">This automatically generates a texture object with all its fields correctly filled.</target>
+<target xml:lang="pt">Isso gera automaticamente um objeto de textura com todos os seus campos corretamente preenchidos.</target>
 </trans-unit>
 <trans-unit id="tu9" xml:space="preserve">
 <source xml:lang="en">Create a texture</source>
-<target xml:lang="pt">Create a texture</target>
+<target xml:lang="pt">Criar uma textura</target>
 </trans-unit>
 <trans-unit id="tu10" xml:space="preserve">
 <source xml:lang="en">You can also create textures without any assets (eg to be used as render target). To do this, call the constructor of the @'Stride.Graphics.Texture' class. See the @'Stride.Graphics.Texture' class reference to get the full list of available options and parameters. Some texture formats might not be available on all platforms.</source>
-<target xml:lang="pt">You can also create textures without any assets (eg to be used as render target). To do this, call the constructor of the @'Stride.Graphics.Texture' class. See the @'Stride.Graphics.Texture' class reference to get the full list of available options and parameters. Some texture formats might not be available on all platforms.</target>
+<target xml:lang="pt">Você também pode criar texturas sem quaisquer ativos (por exemplo, para ser usado como destino de renderização). Para fazer isso, chame o construtor do @'Stride. Graphics.Texture' class. Veja o @'Stride.Graphics. Referência de classe Texture para obter a lista completa de opções e parâmetros disponíveis. Alguns formatos de textura podem não estar disponíveis em todas as plataformas.</target>
 </trans-unit>
 <trans-unit id="tu11" xml:space="preserve">
 <source xml:lang="en">Code: Create a texture</source>
-<target xml:lang="pt">Code: Create a texture</target>
+<target xml:lang="pt">Código: Criar uma textura</target>
 </trans-unit>
 <trans-unit id="tu12" xml:space="preserve">
 <source xml:lang="en">var myTexture = Texture.New2D(GraphicsDevice, 512, 512, false, PixelFormat.R8G8B8A8_UNorm, TextureFlags.ShaderResource);
 </source>
-<target xml:lang="pt">var myTexture = Texture.New2D(GraphicsDevice, 512, 512, false, PixelFormat.R8G8B8A8_UNorm, TextureFlags.ShaderResource);
+<target xml:lang="pt">var myTexture = Texture.New2D (GraphicsDevice, 512, 512, false, PixelFormat. R8G8B8A8_UNorm, TextureFlags.ShaderResource);
 </target>
 </trans-unit>
 <trans-unit id="tu13" xml:space="preserve">
 <source xml:lang="en">Render textures</source>
-<target xml:lang="pt">Render textures</target>
+<target xml:lang="pt">Render texturas</target>
 </trans-unit>
 <trans-unit id="tu14" xml:space="preserve">
 <source xml:lang="en">Create a render target</source>
-<target xml:lang="pt">Create a render target</target>
+<target xml:lang="pt">Criar um alvo de renderização</target>
 </trans-unit>
 <trans-unit id="tu15" xml:space="preserve">
 <source xml:lang="en">The @'Stride.Graphics.GraphicsPresenter' class always provides a default render target and a depth buffer. They are accessible through the @'Stride.Graphics.GraphicsPresenter.BackBuffer' and @'Stride.Graphics.GraphicsPresenter.DepthStencilBuffer' properties. The presenter is exposed by the @'Stride.Graphics.GraphicsDevice.Presenter' property of the @'Stride.Graphics.GraphicsDevice'. However, you might want to use your own buffer to perform off-screen rendering or post-processes. As a result, Stride offers a simple way to create textures that can act as render textures and a depth buffers.</source>
-<target xml:lang="pt">The @'Stride.Graphics.GraphicsPresenter' class always provides a default render target and a depth buffer. They are accessible through the @'Stride.Graphics.GraphicsPresenter.BackBuffer' and @'Stride.Graphics.GraphicsPresenter.DepthStencilBuffer' properties. The presenter is exposed by the @'Stride.Graphics.GraphicsDevice.Presenter' property of the @'Stride.Graphics.GraphicsDevice'. However, you might want to use your own buffer to perform off-screen rendering or post-processes. As a result, Stride offers a simple way to create textures that can act as render textures and a depth buffers.</target>
+<target xml:lang="pt">A classe @'Stride.Graphics.GraphicsPresenter' sempre fornece um alvo de renderização padrão e um buffer de profundidade. Eles são acessíveis através do @'Stride.Graphics.GraphicsPresenter.BackBuffer' e @'Stride.Graphics.GraphicsPresenter.DepthStencilBuffer' propriedades. O apresentador é exposto pelo @'Stride.Graphics.GraphicsDevice.Presenter' propriedade do @'Stride.Graphics.GraphicsDevice'. No entanto, você pode querer usar seu próprio buffer para executar renderização off-screen ou pós-processos. Como resultado, Stride oferece uma maneira simples de criar texturas que podem atuar como render texturas e um buffer de profundidade.</target>
 </trans-unit>
 <trans-unit id="tu16" xml:space="preserve">
 <source xml:lang="en">Code: Create a custom render target and depth buffer</source>
-<target xml:lang="pt">Code: Create a custom render target and depth buffer</target>
+<target xml:lang="pt">Código: Criar um buffer de destino de renderização personalizado e profundidade</target>
 </trans-unit>
 <trans-unit id="tu17" xml:space="preserve">
 <source xml:lang="en">// render target
@@ -80,34 +80,34 @@ var myRenderTarget = Texture.New2D(GraphicsDevice, 512, 512, false, PixelFormat.
 // writable depth buffer
 var myDepthBuffer = Texture.New2D(GraphicsDevice, 512, 512, false, PixelFormat.D16_UNorm, TextureFlags.DepthStencil);
 </source>
-<target xml:lang="pt">// render target
-var myRenderTarget = Texture.New2D(GraphicsDevice, 512, 512, false, PixelFormat.R8G8B8A8_UNorm, TextureFlags.ShaderResource | TextureFlags.RenderTarget);
+<target xml:lang="pt">\/\/ renderizar alvo
+var myRenderTarget = Texture.New2D (GraphicsDevice, 512, 512, false, PixelFormat. R8G8B8A8_UNorm, TextureFlags.ShaderResource | TextureFlags.RenderTarget);
  
-// writable depth buffer
-var myDepthBuffer = Texture.New2D(GraphicsDevice, 512, 512, false, PixelFormat.D16_UNorm, TextureFlags.DepthStencil);
+\/\/ buffer de profundidade estável
+var myDepthBuffer = Texture.New2D (GraphicsDevice, 512, 512, false, PixelFormat.D16_UNorm, TextureFlags.DepthStencil);
 </target>
 </trans-unit>
 <trans-unit id="tu18" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>!Note<x id="2"/>
 Don't forget the flag @'Stride.Graphics.TextureFlags.RenderTarget' to enable the render target behavior.</source>
-<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
-Don't forget the flag @'Stride.Graphics.TextureFlags.RenderTarget' to enable the render target behavior.</target>
+<target xml:lang="pt">&lt;x1\/&gt;!Note&lt;x2\/&gt;
+Não se esqueça da bandeira @'Stride.Graphics.TextureFlags.RenderTarget' para ativar o comportamento do alvo de renderização.</target>
 </trans-unit>
 <trans-unit id="tu19" xml:space="preserve">
 <source xml:lang="en">Make sure the PixelFormat is correct, especially for the depth buffer. Be careful of the available formats on the target platform.</source>
-<target xml:lang="pt">Make sure the PixelFormat is correct, especially for the depth buffer. Be careful of the available formats on the target platform.</target>
+<target xml:lang="pt">Certifique-se de que o PixelFormat está correto, especialmente para o buffer de profundidade. Tenha cuidado com os formatos disponíveis na plataforma de destino.</target>
 </trans-unit>
 <trans-unit id="tu20" xml:space="preserve">
 <source xml:lang="en">Use a render target</source>
-<target xml:lang="pt">Use a render target</target>
+<target xml:lang="pt">Use um alvo de renderização</target>
 </trans-unit>
 <trans-unit id="tu21" xml:space="preserve">
 <source xml:lang="en">Once these buffers are created, you can can easily set them as current render textures.</source>
-<target xml:lang="pt">Once these buffers are created, you can can easily set them as current render textures.</target>
+<target xml:lang="pt">Uma vez que esses buffers são criados, você pode facilmente configurá-los como texturas de renderização atuais.</target>
 </trans-unit>
 <trans-unit id="tu22" xml:space="preserve">
 <source xml:lang="en">Code: Use a render target</source>
-<target xml:lang="pt">Code: Use a render target</target>
+<target xml:lang="pt">Código: Use um alvo de renderização</target>
 </trans-unit>
 <trans-unit id="tu23" xml:space="preserve">
 <source xml:lang="en">// settings the render textures
@@ -116,54 +116,54 @@ CommandList.SetRenderTargetAndViewport(myDepthBuffer, myRenderTarget);
 // setting the default render target
 CommandList.SetRenderTargetAndViewport(GraphicsDevice.Presenter.DepthStencilBuffer, GraphicsDevice.Presenter.BackBuffer);
 </source>
-<target xml:lang="pt">// settings the render textures
-CommandList.SetRenderTargetAndViewport(myDepthBuffer, myRenderTarget);
+<target xml:lang="pt">\/\/ configura as texturas de renderização
+CommandList.SetRenderTargetAndViewport (myDepthBuffer, myRenderTarget);
  
-// setting the default render target
-CommandList.SetRenderTargetAndViewport(GraphicsDevice.Presenter.DepthStencilBuffer, GraphicsDevice.Presenter.BackBuffer);
+\/\/ definir o destino de renderização padrão
+CommandList.SetRenderTargetAndViewport (GraphicsDevice.Presenter.DepthStencilBuffer, GraphicsDevice.Presenter.BackBuffer);
 </target>
 </trans-unit>
 <trans-unit id="tu24" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>!Note<x id="2"/>
 Make sure both the render target and the depth buffer have the same size. Otherwise, the depth buffer isn't used.</source>
-<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
-Make sure both the render target and the depth buffer have the same size. Otherwise, the depth buffer isn't used.</target>
+<target xml:lang="pt">&lt;x1\/&gt;!Note&lt;x2\/&gt;
+Certifique-se de que o alvo de renderização e o buffer de profundidade têm o mesmo tamanho. Caso contrário, o buffer de profundidade não é usado.</target>
 </trans-unit>
 <trans-unit id="tu25" xml:space="preserve">
 <source xml:lang="en">You can set multiple render textures at the same time. See the overloads of @'Stride.Graphics.CommandList.SetRenderTargets(Stride.Graphics.Texture,Stride.Graphics.Texture<x id="1"/><x id="2"/>)' and @'Stride.Graphics.CommandList.SetRenderTargetsAndViewport(Stride.Graphics.Texture,Stride.Graphics.Texture<x id="3"/><x id="4"/>)' method.</source>
-<target xml:lang="pt">You can set multiple render textures at the same time. See the overloads of @'Stride.Graphics.CommandList.SetRenderTargets(Stride.Graphics.Texture,Stride.Graphics.Texture<x id="1"/><x id="2"/>)' and @'Stride.Graphics.CommandList.SetRenderTargetsAndViewport(Stride.Graphics.Texture,Stride.Graphics.Texture<x id="3"/><x id="4"/>)' method.</target>
+<target xml:lang="pt">Você pode definir várias texturas de renderização ao mesmo tempo. Veja as sobrecargas de @'Stride.Graphics.CommandList.SetRenderTargets(Stride.Graphics.Texture,Stride.Graphics.Texture&lt;x1\/&gt;x2\/&gt;)' e @'Stride.Graphics.CommandList.SetRenderTargetsAndViewrature(Stride.&lt;x2\/&gt;&lt;x3\/&gt;&lt;x4\/&gt;</target>
 </trans-unit>
 <trans-unit id="tu26" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>!Note<x id="2"/>
 Only the @'Stride.Graphics.GraphicsPresenter.BackBuffer' is displayed on screen, so you need to render it to display something.</source>
-<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
-Only the @'Stride.Graphics.GraphicsPresenter.BackBuffer' is displayed on screen, so you need to render it to display something.</target>
+<target xml:lang="pt">&lt;x1\/&gt;!Note&lt;x2\/&gt;
+Apenas o @'Stride.Graphics.GraphicsPresenter.BackBuffer' é exibido na tela, então você precisa renderizá-lo para exibir algo.</target>
 </trans-unit>
 <trans-unit id="tu27" xml:space="preserve">
 <source xml:lang="en">Clear a render target</source>
-<target xml:lang="pt">Clear a render target</target>
+<target xml:lang="pt">Limpar um alvo de renderização</target>
 </trans-unit>
 <trans-unit id="tu28" xml:space="preserve">
 <source xml:lang="en">To clear render textures, call the @'Stride.Graphics.CommandList.Clear(Stride.Graphics.Texture,Stride.Core.Mathematics.Color4)' and @'Stride.Graphics.CommandList.Clear(Stride.Graphics.Texture,Stride.Graphics.DepthStencilClearOptions,System.Single,System.Byte)' methods.</source>
-<target xml:lang="pt">To clear render textures, call the @'Stride.Graphics.CommandList.Clear(Stride.Graphics.Texture,Stride.Core.Mathematics.Color4)' and @'Stride.Graphics.CommandList.Clear(Stride.Graphics.Texture,Stride.Graphics.DepthStencilClearOptions,System.Single,System.Byte)' methods.</target>
+<target xml:lang="pt">Para limpar texturas de renderização, ligue para o @'Stride.Graphics.CommandList.Clear (Stride.Graphics.Texture,Stride.Core.Mathematics.Color4)' e @'Stride.Graphics.CommandList.Clear(Stride.Graphics.Texture,Stride.Graphleics.</target>
 </trans-unit>
 <trans-unit id="tu29" xml:space="preserve">
 <source xml:lang="en">Code: Clear the targets</source>
-<target xml:lang="pt">Code: Clear the targets</target>
+<target xml:lang="pt">Código: Limpar os alvos</target>
 </trans-unit>
 <trans-unit id="tu30" xml:space="preserve">
 <source xml:lang="en">CommandList.Clear(GraphicsDevice.Presenter.BackBuffer, Color.Black);
 CommandList.Clear(GraphicsDevice.Presenter.DepthStencilBuffer, DepthStencilClearOptions.DepthBuffer); // only clear the depth buffer
 </source>
-<target xml:lang="pt">CommandList.Clear(GraphicsDevice.Presenter.BackBuffer, Color.Black);
-CommandList.Clear(GraphicsDevice.Presenter.DepthStencilBuffer, DepthStencilClearOptions.DepthBuffer); // only clear the depth buffer
+<target xml:lang="pt">CommandList.Clear (GraphicsDevice.Presenter.BackBuffer, Color.Black);
+CommandList.Clear(GraphicsDevice.Presenter.DepthStencilBuffer, DepthStencilClearOptions.DepthBuffer); \/\/ apenas limpar o buffer de profundidade
 </target>
 </trans-unit>
 <trans-unit id="tu31" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>!Note<x id="2"/>
 Don't forget to clear the @'Stride.Graphics.GraphicsPresenter.BackBuffer' and the @'Stride.Graphics.GraphicsPresenter.DepthStencilBuffer' each frame. If you don't, you might get unexpected behavior depending on the device. If you want to keep the contents of a frame, use an intermediate render target.</source>
-<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
-Don't forget to clear the @'Stride.Graphics.GraphicsPresenter.BackBuffer' and the @'Stride.Graphics.GraphicsPresenter.DepthStencilBuffer' each frame. If you don't, you might get unexpected behavior depending on the device. If you want to keep the contents of a frame, use an intermediate render target.</target>
+<target xml:lang="pt">&lt;x1\/&gt;!Note&lt;x2\/&gt;
+Não se esqueça de limpar o @'Stride.Graphics.GraphicsPresenter.BackBuffer' e o @'Stride.Graphics.GraphicsPresenter.DepthStencilBuffer' cada quadro. Se você não o fizer, você pode ter comportamento inesperado dependendo do dispositivo. Se você quiser manter o conteúdo de um quadro, use um destino de renderização intermediário.</target>
 </trans-unit>
 <trans-unit id="tu32" xml:space="preserve">
 <source xml:lang="en">Viewport</source>
@@ -171,19 +171,19 @@ Don't forget to clear the @'Stride.Graphics.GraphicsPresenter.BackBuffer' and th
 </trans-unit>
 <trans-unit id="tu33" xml:space="preserve">
 <source xml:lang="en">@'Stride.Graphics.CommandList.SetRenderTargetAndViewport(Stride.Graphics.Texture,Stride.Graphics.Texture)' adjusts the current @'Stride.Graphics.Viewport' to the full size of the render target.</source>
-<target xml:lang="pt">@'Stride.Graphics.CommandList.SetRenderTargetAndViewport(Stride.Graphics.Texture,Stride.Graphics.Texture)' adjusts the current @'Stride.Graphics.Viewport' to the full size of the render target.</target>
+<target xml:lang="pt">@'Stride.Graphics.CommandList.SetRenderTargetAndViewport (Stride.Graphics.Texture,Stride.Graphics.Texture)' ajusta a atual @'Stride. Gráficos. Viewport' para o tamanho completo do alvo de renderização.</target>
 </trans-unit>
 <trans-unit id="tu34" xml:space="preserve">
 <source xml:lang="en">If you only want to render to a subset of the texture, set the render target and viewport separately using @'Stride.Graphics.CommandList.SetRenderTarget(Stride.Graphics.Texture,Stride.Graphics.Texture)' and @'Stride.Graphics.CommandList.SetViewport(Stride.Graphics.Viewport)'.</source>
-<target xml:lang="pt">If you only want to render to a subset of the texture, set the render target and viewport separately using @'Stride.Graphics.CommandList.SetRenderTarget(Stride.Graphics.Texture,Stride.Graphics.Texture)' and @'Stride.Graphics.CommandList.SetViewport(Stride.Graphics.Viewport)'.</target>
+<target xml:lang="pt">Se você quiser apenas renderizar para um subconjunto da textura, defina o alvo de renderização e o viewport separadamente usando @'Stride.Graphics.CommandList.SetRenderTarget (Stride.Graphics.Texture,Stride.Graphics.Texture)' e @'Stride.Graphics.CommandList.SetView(Stport.Graport.</target>
 </trans-unit>
 <trans-unit id="tu35" xml:space="preserve">
 <source xml:lang="en">You can bind multiple viewports using @'Stride.Graphics.CommandList.SetViewports(Stride.Graphics.Viewport<x id="1"/><x id="2"/>)' and @'Stride.Graphics.CommandList.SetViewports(System.Int32,Stride.Graphics.Viewport<x id="3"/><x id="4"/>)' overloads for use with a geometry shader.</source>
-<target xml:lang="pt">You can bind multiple viewports using @'Stride.Graphics.CommandList.SetViewports(Stride.Graphics.Viewport<x id="1"/><x id="2"/>)' and @'Stride.Graphics.CommandList.SetViewports(System.Int32,Stride.Graphics.Viewport<x id="3"/><x id="4"/>)' overloads for use with a geometry shader.</target>
+<target xml:lang="pt">Você pode ligar vários viewports usando @'Stride.Graphics.CommandList.SetViewports (Stride.Graphics.Viewport&lt;x1\/&gt;&lt;x2\/&gt;)' e @'Stride.Graphics.CommandList.SetViewports(System.Int32,Stride.Graphics.Viewport&lt;x3\/&gt;r.&lt;x4\/&gt;</target>
 </trans-unit>
 <trans-unit id="tu36" xml:space="preserve">
 <source xml:lang="en">Code: Set the viewports</source>
-<target xml:lang="pt">Code: Set the viewports</target>
+<target xml:lang="pt">Código: Defina os viewports</target>
 </trans-unit>
 <trans-unit id="tu37" xml:space="preserve">
 <source xml:lang="en">// example of a full HD buffer
@@ -193,25 +193,25 @@ CommandList.SetRenderTarget(GraphicsDevice.Presenter.DepthStencilBuffer, Graphic
 var viewport = new Viewport(10, 10, 1900, 1060);
 CommandList.SetViewport(viewport);
 </source>
-<target xml:lang="pt">// example of a full HD buffer
-CommandList.SetRenderTarget(GraphicsDevice.Presenter.DepthStencilBuffer, GraphicsDevice.Presenter.BackBuffer); // no viewport set
+<target xml:lang="pt">\/\/ exemplo de um buffer HD completo
+CommandList.SetRenderTarget (GraphicsDevice.Presenter.DepthStencilBuffer, GraphicsDevice.Presenter.BackBuffer); \/\/ nenhum conjunto de viewport
  
-// example of setting the viewport to have a 10-pixel border around the image in a full HD buffer (1920x1080)
-var viewport = new Viewport(10, 10, 1900, 1060);
+\/\/ exemplo de definir o viewport para ter uma borda de 10 pixels em torno da imagem em um buffer HD completo (1920x1080)
+var viewport = novo Viewport(10, 10, 1900, 1060);
 CommandList.SetViewport(viewport);
 </target>
 </trans-unit>
 <trans-unit id="tu38" xml:space="preserve">
 <source xml:lang="en">Scissor</source>
-<target xml:lang="pt">Scissor</target>
+<target xml:lang="pt">Tesoura</target>
 </trans-unit>
 <trans-unit id="tu39" xml:space="preserve">
 <source xml:lang="en">The @'Stride.Graphics.CommandList.SetScissorRectangle(Stride.Core.Mathematics.Rectangle)' and @'Stride.Graphics.CommandList.SetScissorRectangles(Stride.Core.Mathematics.Rectangle<x id="1"/><x id="2"/>)' methods set the scissors. Unlike the viewport, you need to provide the coordinates of the location of the vertices defining the scissor instead of its size.</source>
-<target xml:lang="pt">The @'Stride.Graphics.CommandList.SetScissorRectangle(Stride.Core.Mathematics.Rectangle)' and @'Stride.Graphics.CommandList.SetScissorRectangles(Stride.Core.Mathematics.Rectangle<x id="1"/><x id="2"/>)' methods set the scissors. Unlike the viewport, you need to provide the coordinates of the location of the vertices defining the scissor instead of its size.</target>
+<target xml:lang="pt">O @'Stride.Graphics.CommandList.SetScissorRectangle (Stride.Core.Mathematics.Rectangle)' e @'Stride.Graphics.CommandList.SetScisorRectangles(Stride.Core.Mathematics.Rectangle&lt;x1\/&gt;&lt;x2\/&gt;) define os métodos do sc. Ao contrário do viewport, você precisa fornecer as coordenadas da localização dos vértices que definem a tesoura em vez de seu tamanho.</target>
 </trans-unit>
 <trans-unit id="tu40" xml:space="preserve">
 <source xml:lang="en">Code: Set the scissor</source>
-<target xml:lang="pt">Code: Set the scissor</target>
+<target xml:lang="pt">Código: Defina a tesoura</target>
 </trans-unit>
 <trans-unit id="tu41" xml:space="preserve">
 <source xml:lang="en">// example of setting the scissor to crop the image by 10 pixel around it in a full hd buffer (1920x1080)
@@ -221,21 +221,21 @@ CommandList.SetScissorRectangles(rectangle);
 var rectangles = new[] { new Rectangle(10, 10, 1900, 1060), new Rectangle(0, 0, 256, 256) };
 CommandList.SetScissorRectangles(rectangles);
 </source>
-<target xml:lang="pt">// example of setting the scissor to crop the image by 10 pixel around it in a full hd buffer (1920x1080)
-var rectangle = new Rectangle(10, 10, 1910, 1070);
-CommandList.SetScissorRectangles(rectangle);
+<target xml:lang="pt">\/\/ exemplo de definir a tesoura para cortar a imagem por 10 pixels ao seu redor em um buffer de hd completo (1920x1080)
+var retângulo = novo retângulo (10, 10, 1910, 1070);
+CommandList.SetScissorRectangles (retângulo);
  
 var rectangles = new[] { new Rectangle(10, 10, 1900, 1060), new Rectangle(0, 0, 256, 256) };
-CommandList.SetScissorRectangles(rectangles);
+CommandList.SetScissorRectangles (retângulos);
 </target>
 </trans-unit>
 <trans-unit id="tu42" xml:space="preserve">
 <source xml:lang="en">See also</source>
-<target xml:lang="pt">See also</target>
+<target xml:lang="pt">Ver também</target>
 </trans-unit>
 <trans-unit id="tu43" xml:space="preserve">
 <source xml:lang="en"><g id="1">Render textures</g></source>
-<target xml:lang="pt"><g id="1">Render textures</g></target>
+<target xml:lang="pt"><g id="1">Render texturas</g></target>
 </trans-unit>
 </body>
 </file>

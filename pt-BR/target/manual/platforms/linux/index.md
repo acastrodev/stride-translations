@@ -1,4 +1,4 @@
 # Linux
 
-* [Setup and requirements](setup-and-requirements.md)
-* [Create a Linux game](create-a-linux-game.md)
+* [Configuração e requisitos](setup-and-requirements.md)
+* [Criar um jogo Linux](create-a-linux-game.md)

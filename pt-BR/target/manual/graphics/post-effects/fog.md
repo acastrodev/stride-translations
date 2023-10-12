@@ -1,32 +1,32 @@
-# Fog
+# Fogão
 
-<span class="badge text-bg-primary">Beginner</span>
-<span class="badge text-bg-success">Artist</span>
+<x1\/>Introdução<x2\/>
+<x3\/>Artista <x4\/>
 
-The **fog** effect applies an exponential layer of colored fog throughout the scene based on depth.
+O efeito **fog** aplica uma camada exponencial de nevoeiro colorido em toda a cena com base na profundidade.
 
-![media/fog-effect-1.png](media/fog-effect-1.png)
+<x1\/>media\/fog-effect-1.png<x2\/>
 
-Fog is applied after anti-aliasing.
+Fog é aplicado após anti-aliasing.
 
-## Properties
+## Propriedades
 
-![media/fog-effect-2.png](media/fog-effect-2.png)
+<x1\/>media\/fog-effect-2.png<x2\/>
 
-| Property | Description |
+| Propriedade | Descrição |
 | -------------- | ---- 
-| Density | Density of the fog. This affects the opacity as it relates to fog depth. |
-| Color | The color of the fog. |
-| Fog Start | Distance (scene depth) from the camera, where the fog should start. |
-| Skip Background | Whether the fog should take into consideration the background image. |
+| Densidade | Densidade do nevoeiro. Isso afeta a opacidade como se relaciona com a profundidade de nevoeiro. |
+| Cor | A cor do nevoeiro. |
+| Fog Start | Distância (profundidade de faixa) da câmera, onde a névoa deve começar. |
+| Pular fundo | Se a névoa deve levar em consideração a imagem de fundo. |
 
-## See also
+## Ver também
 
 * [Anti-aliasing](anti-aliasing.md)
-* [Fog](fog.md)
-* [Ambient occlusion](ambient-occlusion.md)
-* [Bright filter](bright-filter.md)
-* [Color transforms](color-transforms/index.md)
-* [Depth of field](depth-of-field.md)
-* [Lens flare](lens-flare.md)
-* [Light streaks](light-streaks.md)
+* [Fogão](fog.md)
+* [Oclusão ambiente](ambient-occlusion.md)
+* [Filtro brilhante](bright-filter.md)
+* [Transformações de cor](color-transforms/index.md)
+* [Profundidade de campo](depth-of-field.md)
+* [Flare de lente](lens-flare.md)
+* [Estrefas de luz](light-streaks.md)

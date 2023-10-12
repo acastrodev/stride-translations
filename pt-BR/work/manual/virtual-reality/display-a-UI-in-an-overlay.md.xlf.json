@@ -1,793 +1,793 @@
 {
-    "filename": "manual\\virtual-reality\\display-a-UI-in-an-overlay.md.xlf",
-    "files": [
-        {
-            "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/virtual-reality\/display-a-UI-in-an-overlay.md": [
-                [
-                    "Display a UI in an overlay",
-                    "",
-                    "Display a UI in an overlay",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/virtual-reality\/display-a-UI-in-an-overlay.md",
-                    {
-                        "id": "tu1"
-                    }
-                ],
-                [
-                    "This page explains how to render a UI to a texture, then display it as an overlay.",
-                    "",
-                    "This page explains how to render a UI to a texture, then display it as an overlay.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/virtual-reality\/display-a-UI-in-an-overlay.md",
-                    {
-                        "id": "tu2"
-                    }
-                ],
-                [
-                    "These instructions assume you already have a UI that you want to display in the overlay.",
-                    "",
-                    "These instructions assume you already have a UI that you want to display in the overlay.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/virtual-reality\/display-a-UI-in-an-overlay.md",
-                    {
-                        "id": "tu3"
-                    }
-                ],
-                [
-                    "For information about creating UIs, see the <g1>UI<\/g1> section.",
-                    "",
-                    " For information about creating UIs, see the <g1>UI<\/g1> section.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/virtual-reality\/display-a-UI-in-an-overlay.md",
-                    {
-                        "id": "tu3"
-                    }
-                ],
-                [
-                    "<x1\/>!Note<x2\/>",
-                    "",
-                    "<x1\/>!Note<x2\/>\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/virtual-reality\/display-a-UI-in-an-overlay.md",
-                    {
-                        "id": "tu4"
-                    }
-                ],
-                [
-                    "You can't see overlays when you don't run your game in your VR device.",
-                    "",
-                    "You can't see overlays when you don't run your game in your VR device.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/virtual-reality\/display-a-UI-in-an-overlay.md",
-                    {
-                        "id": "tu4"
-                    }
-                ],
-                [
-                    "This is because the VR device itself creates the overlay, not other hardware.",
-                    "",
-                    " This is because the VR device itself creates the overlay, not other hardware.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/virtual-reality\/display-a-UI-in-an-overlay.md",
-                    {
-                        "id": "tu4"
-                    }
-                ],
-                [
-                    "1.",
-                    "",
-                    "1.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/virtual-reality\/display-a-UI-in-an-overlay.md",
-                    {
-                        "id": "tu5"
-                    }
-                ],
-                [
-                    "Create a render target texture",
-                    "",
-                    " Create a render target texture",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/virtual-reality\/display-a-UI-in-an-overlay.md",
-                    {
-                        "id": "tu5"
-                    }
-                ],
-                [
-                    "In the <g1>Asset View<\/g1>, click <g2>Add asset<\/g2> and select <g3>Texture<\/g3> > <g4>Render target<\/g4>.",
-                    "",
-                    "In the <g1>Asset View<\/g1>, click <g2>Add asset<\/g2> and select <g3>Texture<\/g3> > <g4>Render target<\/g4>.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/virtual-reality\/display-a-UI-in-an-overlay.md",
-                    {
-                        "id": "tu6"
-                    }
-                ],
-                [
-                    "<x1\/>Add render target<x2\/>",
-                    "",
-                    "<x1\/>Add render target<x2\/>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/virtual-reality\/display-a-UI-in-an-overlay.md",
-                    {
-                        "id": "tu7"
-                    }
-                ],
-                [
-                    "Game Studio adds a <g1>render target<\/g1> texture to your project assets.",
-                    "",
-                    "Game Studio adds a <g1>render target<\/g1> texture to your project assets.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/virtual-reality\/display-a-UI-in-an-overlay.md",
-                    {
-                        "id": "tu8"
-                    }
-                ],
-                [
-                    "<x1\/>Render texture<x2\/>",
-                    "",
-                    "<x1\/>Render texture<x2\/>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/virtual-reality\/display-a-UI-in-an-overlay.md",
-                    {
-                        "id": "tu9"
-                    }
-                ],
-                [
-                    "In the following steps, we'll render the UI to this texture, then display it in the overlay.",
-                    "",
-                    "In the following steps, we'll render the UI to this texture, then display it in the overlay.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/virtual-reality\/display-a-UI-in-an-overlay.md",
-                    {
-                        "id": "tu10"
-                    }
-                ],
-                [
-                    "2.",
-                    "",
-                    "2.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/virtual-reality\/display-a-UI-in-an-overlay.md",
-                    {
-                        "id": "tu11"
-                    }
-                ],
-                [
-                    "Add a VR overlay",
-                    "",
-                    " Add a VR overlay",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/virtual-reality\/display-a-UI-in-an-overlay.md",
-                    {
-                        "id": "tu11"
-                    }
-                ],
-                [
-                    "In the <g1>Asset View<\/g1> (in the bottom pane by default), double-click the <g2>Graphics Compositor<\/g2> asset.",
-                    "",
-                    "In the <g1>Asset View<\/g1> (in the bottom pane by default), double-click the <g2>Graphics Compositor<\/g2> asset.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/virtual-reality\/display-a-UI-in-an-overlay.md",
-                    {
-                        "id": "tu12"
-                    }
-                ],
-                [
-                    "<x1\/>Graphics compositor asset<x2\/>",
-                    "",
-                    "<x1\/>Graphics compositor asset<x2\/>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/virtual-reality\/display-a-UI-in-an-overlay.md",
-                    {
-                        "id": "tu13"
-                    }
-                ],
-                [
-                    "The graphics compositor editor opens.",
-                    "",
-                    "The graphics compositor editor opens.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/virtual-reality\/display-a-UI-in-an-overlay.md",
-                    {
-                        "id": "tu14"
-                    }
-                ],
-                [
-                    "For more information about the graphics compositor, see the <g1>Graphics compositor<\/g1> page.",
-                    "",
-                    " For more information about the graphics compositor, see the <g1>Graphics compositor<\/g1> page.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/virtual-reality\/display-a-UI-in-an-overlay.md",
-                    {
-                        "id": "tu14"
-                    }
-                ],
-                [
-                    "In the graphics compositor editor, select the <g1>forward renderer<\/g1> node.",
-                    "",
-                    "In the graphics compositor editor, select the <g1>forward renderer<\/g1> node.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/virtual-reality\/display-a-UI-in-an-overlay.md",
-                    {
-                        "id": "tu15"
-                    }
-                ],
-                [
-                    "<x1\/>Select forward renderer<x2\/>",
-                    "",
-                    "<x1\/>Select forward renderer<x2\/>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/virtual-reality\/display-a-UI-in-an-overlay.md",
-                    {
-                        "id": "tu16"
-                    }
-                ],
-                [
-                    "In the <g1>Property Grid<\/g1> (on the right by default), expand <g2>VR Settings<\/g2>.",
-                    "",
-                    "In the <g1>Property Grid<\/g1> (on the right by default), expand <g2>VR Settings<\/g2>.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/virtual-reality\/display-a-UI-in-an-overlay.md",
-                    {
-                        "id": "tu17"
-                    }
-                ],
-                [
-                    "<x1\/>VR settings<x2\/>",
-                    "",
-                    "<x1\/>VR settings<x2\/>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/virtual-reality\/display-a-UI-in-an-overlay.md",
-                    {
-                        "id": "tu18"
-                    }
-                ],
-                [
-                    "Next to <g1>Overlays<\/g1>, click <x1\/>Green plus button<x2\/> (<g2>Add<\/g2>).",
-                    "",
-                    "Next to <g1>Overlays<\/g1>, click <x1\/>Green plus button<x2\/> (<g2>Add<\/g2>).",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/virtual-reality\/display-a-UI-in-an-overlay.md",
-                    {
-                        "id": "tu19"
-                    }
-                ],
-                [
-                    "Game Studio adds a new overlay to the list.",
-                    "",
-                    "Game Studio adds a new overlay to the list.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/virtual-reality\/display-a-UI-in-an-overlay.md",
-                    {
-                        "id": "tu20"
-                    }
-                ],
-                [
-                    "<x1\/>Add VR item<x2\/>",
-                    "",
-                    "<x1\/>Add VR item<x2\/>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/virtual-reality\/display-a-UI-in-an-overlay.md",
-                    {
-                        "id": "tu21"
-                    }
-                ],
-                [
-                    "Next to <g1>Texture<\/g1>, click <x1\/>Hand icon<x2\/> (<g2>Select an asset<\/g2>).",
-                    "",
-                    "Next to <g1>Texture<\/g1>, click <x1\/>Hand icon<x2\/> (<g2>Select an asset<\/g2>).",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/virtual-reality\/display-a-UI-in-an-overlay.md",
-                    {
-                        "id": "tu22"
-                    }
-                ],
-                [
-                    "The <g1>Select an asset<\/g1> window opens.",
-                    "",
-                    "The <g1>Select an asset<\/g1> window opens.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/virtual-reality\/display-a-UI-in-an-overlay.md",
-                    {
-                        "id": "tu23"
-                    }
-                ],
-                [
-                    "<x1\/>Select render texture<x2\/>",
-                    "",
-                    "<x1\/>Select render texture<x2\/>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/virtual-reality\/display-a-UI-in-an-overlay.md",
-                    {
-                        "id": "tu24"
-                    }
-                ],
-                [
-                    "Select the <g1>render texture<\/g1> you created and click <g2>OK<\/g2>.",
-                    "",
-                    "Select the <g1>render texture<\/g1> you created and click <g2>OK<\/g2>.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/virtual-reality\/display-a-UI-in-an-overlay.md",
-                    {
-                        "id": "tu25"
-                    }
-                ],
-                [
-                    "3.",
-                    "",
-                    "3.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/virtual-reality\/display-a-UI-in-an-overlay.md",
-                    {
-                        "id": "tu26"
-                    }
-                ],
-                [
-                    "Set up the UI render feature",
-                    "",
-                    " Set up the UI render feature",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/virtual-reality\/display-a-UI-in-an-overlay.md",
-                    {
-                        "id": "tu26"
-                    }
-                ],
-                [
-                    "In the graphics compositor editor, on the left, under <g1>Render Features<\/g1>, select the <g2>UIRenderFeature<\/g2>.",
-                    "",
-                    "In the graphics compositor editor, on the left, under <g1>Render Features<\/g1>, select the <g2>UIRenderFeature<\/g2>.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/virtual-reality\/display-a-UI-in-an-overlay.md",
-                    {
-                        "id": "tu27"
-                    }
-                ],
-                [
-                    "<x1\/>Select UI render feature<x2\/>",
-                    "",
-                    "<x1\/>Select UI render feature<x2\/>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/virtual-reality\/display-a-UI-in-an-overlay.md",
-                    {
-                        "id": "tu28"
-                    }
-                ],
-                [
-                    "In the Property Grid, make sure <g1>SimpleGroupToRenderStageSelector<\/g1> is selected.",
-                    "",
-                    "In the Property Grid, make sure <g1>SimpleGroupToRenderStageSelector<\/g1> is selected.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/virtual-reality\/display-a-UI-in-an-overlay.md",
-                    {
-                        "id": "tu29"
-                    }
-                ],
-                [
-                    "<x1\/>Select SimpleGroupToRenderStageSelector.png<x2\/>",
-                    "",
-                    "<x1\/>Select SimpleGroupToRenderStageSelector.png<x2\/>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/virtual-reality\/display-a-UI-in-an-overlay.md",
-                    {
-                        "id": "tu30"
-                    }
-                ],
-                [
-                    "Under <g1>Render Stage<\/g1>, make sure <g2>UIRenderStage<\/g2> is selected.",
-                    "",
-                    "Under <g1>Render Stage<\/g1>, make sure <g2>UIRenderStage<\/g2> is selected.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/virtual-reality\/display-a-UI-in-an-overlay.md",
-                    {
-                        "id": "tu31"
-                    }
-                ],
-                [
-                    "<x1\/>Select UIRenderStage.png<x2\/>",
-                    "",
-                    "<x1\/>Select UIRenderStage.png<x2\/>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/virtual-reality\/display-a-UI-in-an-overlay.md",
-                    {
-                        "id": "tu32"
-                    }
-                ],
-                [
-                    "This makes sure the UI is rendered in the UI render stage, which we'll use in the next step.",
-                    "",
-                    "This makes sure the UI is rendered in the UI render stage, which we'll use in the next step.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/virtual-reality\/display-a-UI-in-an-overlay.md",
-                    {
-                        "id": "tu33"
-                    }
-                ],
-                [
-                    "4.",
-                    "",
-                    "4.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/virtual-reality\/display-a-UI-in-an-overlay.md",
-                    {
-                        "id": "tu34"
-                    }
-                ],
-                [
-                    "Set up the renderers",
-                    "",
-                    " Set up the renderers",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/virtual-reality\/display-a-UI-in-an-overlay.md",
-                    {
-                        "id": "tu34"
-                    }
-                ],
-                [
-                    "To display an overlay, you need at least two renderers:",
-                    "",
-                    "To display an overlay, you need at least two renderers:",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/virtual-reality\/display-a-UI-in-an-overlay.md",
-                    {
-                        "id": "tu35"
-                    }
-                ],
-                [
-                    "one to render your main camera",
-                    "",
-                    "one to render your main camera",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/virtual-reality\/display-a-UI-in-an-overlay.md",
-                    {
-                        "id": "tu36"
-                    }
-                ],
-                [
-                    "one to render the UI to the overlay",
-                    "",
-                    "one to render the UI to the overlay",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/virtual-reality\/display-a-UI-in-an-overlay.md",
-                    {
-                        "id": "tu37"
-                    }
-                ],
-                [
-                    "This page describes the simplest way to do this from scratch, using two cameras and two renderers.",
-                    "",
-                    "This page describes the simplest way to do this from scratch, using two cameras and two renderers.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/virtual-reality\/display-a-UI-in-an-overlay.md",
-                    {
-                        "id": "tu38"
-                    }
-                ],
-                [
-                    "Depending on your pipeline, you might need to create a different setup.",
-                    "",
-                    " Depending on your pipeline, you might need to create a different setup.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/virtual-reality\/display-a-UI-in-an-overlay.md",
-                    {
-                        "id": "tu38"
-                    }
-                ],
-                [
-                    "<x1\/>!Warning<x2\/>",
-                    "",
-                    "<x1\/>!Warning<x2\/>\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/virtual-reality\/display-a-UI-in-an-overlay.md",
-                    {
-                        "id": "tu39"
-                    }
-                ],
-                [
-                    "These instructions involve deleting your existing renderers for the game entry point.",
-                    "",
-                    "These instructions involve deleting your existing renderers for the game entry point.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/virtual-reality\/display-a-UI-in-an-overlay.md",
-                    {
-                        "id": "tu39"
-                    }
-                ],
-                [
-                    "You might want to make a backup of your project in case you want to restore your pipeline afterwards.",
-                    "",
-                    " You might want to make a backup of your project in case you want to restore your pipeline afterwards.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/virtual-reality\/display-a-UI-in-an-overlay.md",
-                    {
-                        "id": "tu39"
-                    }
-                ],
-                [
-                    "In the graphics compositor editor, select the <g1>Entry points<\/g1> node.",
-                    "",
-                    "In the graphics compositor editor, select the <g1>Entry points<\/g1> node.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/virtual-reality\/display-a-UI-in-an-overlay.md",
-                    {
-                        "id": "tu40"
-                    }
-                ],
-                [
-                    "<x1\/>Entry points node<x2\/>",
-                    "",
-                    "<x1\/>Entry points node<x2\/>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/virtual-reality\/display-a-UI-in-an-overlay.md",
-                    {
-                        "id": "tu41"
-                    }
-                ],
-                [
-                    "In the <g1>Property Grid<\/g1> on the right, next to <g2>Game renderer<\/g2>, click <x1\/>Blue arrow button<x2\/> (<g3>Replace<\/g3>) and select <g4>None<\/g4> to delete your existing renderers.",
-                    "",
-                    "In the <g1>Property Grid<\/g1> on the right, next to <g2>Game renderer<\/g2>, click <x1\/>Blue arrow button<x2\/> (<g3>Replace<\/g3>) and select <g4>None<\/g4> to delete your existing renderers.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/virtual-reality\/display-a-UI-in-an-overlay.md",
-                    {
-                        "id": "tu42"
-                    }
-                ],
-                [
-                    "<x1\/>Cleared game renderers<x2\/>",
-                    "",
-                    "<x1\/>Cleared game renderers<x2\/>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/virtual-reality\/display-a-UI-in-an-overlay.md",
-                    {
-                        "id": "tu43"
-                    }
-                ],
-                [
-                    "Next to <g1>Game rendererer<\/g1>, click <x1\/>Blue arrow button<x2\/> (<g2>Replace<\/g2>) and select <g3>Camera Renderer<\/g3>.",
-                    "",
-                    "Next to <g1>Game rendererer<\/g1>, click <x1\/>Blue arrow button<x2\/> (<g2>Replace<\/g2>) and select <g3>Camera Renderer<\/g3>.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/virtual-reality\/display-a-UI-in-an-overlay.md",
-                    {
-                        "id": "tu44"
-                    }
-                ],
-                [
-                    "<x1\/>Select camera renderer.png<x2\/>",
-                    "",
-                    "<x1\/>Select camera renderer.png<x2\/>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/virtual-reality\/display-a-UI-in-an-overlay.md",
-                    {
-                        "id": "tu45"
-                    }
-                ],
-                [
-                    "Currently, <g1>all<\/g1> renderers must have a camera, or be a child of a renderer that has a camera.",
-                    "",
-                    "Currently, <g1>all<\/g1> renderers must have a camera, or be a child of a renderer that has a camera.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/virtual-reality\/display-a-UI-in-an-overlay.md",
-                    {
-                        "id": "tu46"
-                    }
-                ],
-                [
-                    "This applies even to renderers that don't necessarily use cameras, such as the single stage renderer, which renders the UI.",
-                    "",
-                    " This applies even to renderers that don't necessarily use cameras, such as the single stage renderer, which renders the UI.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/virtual-reality\/display-a-UI-in-an-overlay.md",
-                    {
-                        "id": "tu46"
-                    }
-                ],
-                [
-                    "For this reason, in these instructions, we'll add a game renderer with a camera, then make the two renderers children of that renderer.",
-                    "",
-                    "For this reason, in these instructions, we'll add a game renderer with a camera, then make the two renderers children of that renderer.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/virtual-reality\/display-a-UI-in-an-overlay.md",
-                    {
-                        "id": "tu47"
-                    }
-                ],
-                [
-                    "This makes sure both renderers have a parent with a camera.",
-                    "",
-                    " This makes sure both renderers have a parent with a camera.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/virtual-reality\/display-a-UI-in-an-overlay.md",
-                    {
-                        "id": "tu47"
-                    }
-                ],
-                [
-                    "Next to <g1>Camera<\/g1>, click <x1\/>Blue arrow button<x2\/> (<g2>Replace<\/g2>) and select your main game camera.",
-                    "",
-                    "Next to <g1>Camera<\/g1>, click <x1\/>Blue arrow button<x2\/> (<g2>Replace<\/g2>) and select your main game camera.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/virtual-reality\/display-a-UI-in-an-overlay.md",
-                    {
-                        "id": "tu48"
-                    }
-                ],
-                [
-                    "<x1\/>Select main camera<x2\/>",
-                    "",
-                    "<x1\/>Select main camera<x2\/>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/virtual-reality\/display-a-UI-in-an-overlay.md",
-                    {
-                        "id": "tu49"
-                    }
-                ],
-                [
-                    "Next to <g1>Child<\/g1>, click <x1\/>Blue arrow button<x2\/> (<g2>Replace<\/g2>) and select <g3>SceneRendererCollection<\/g3>.",
-                    "",
-                    "Next to <g1>Child<\/g1>, click <x1\/>Blue arrow button<x2\/> (<g2>Replace<\/g2>) and select <g3>SceneRendererCollection<\/g3>.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/virtual-reality\/display-a-UI-in-an-overlay.md",
-                    {
-                        "id": "tu50"
-                    }
-                ],
-                [
-                    "<x1\/>Select scene renderer collection<x2\/>",
-                    "",
-                    "<x1\/>Select scene renderer collection<x2\/>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/virtual-reality\/display-a-UI-in-an-overlay.md",
-                    {
-                        "id": "tu51"
-                    }
-                ],
-                [
-                    "Next to <g1>Children<\/g1>, Click <x1\/>Green plus button<x2\/> (<g2>Add<\/g2>) and select <g3>RenderTextureSceneRenderer<\/g3>.",
-                    "",
-                    "Next to <g1>Children<\/g1>, Click <x1\/>Green plus button<x2\/> (<g2>Add<\/g2>) and select <g3>RenderTextureSceneRenderer<\/g3>.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/virtual-reality\/display-a-UI-in-an-overlay.md",
-                    {
-                        "id": "tu52"
-                    }
-                ],
-                [
-                    "<x1\/>Select RenderTextureSceneRenderer<x2\/>",
-                    "",
-                    "<x1\/>Select RenderTextureSceneRenderer<x2\/>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/virtual-reality\/display-a-UI-in-an-overlay.md",
-                    {
-                        "id": "tu53"
-                    }
-                ],
-                [
-                    "Next to <g1>Child<\/g1>, click <x1\/>Blue arrow button<x2\/> (<g2>Replace<\/g2>) and select <g3>SingleStageRenderer<\/g3>.",
-                    "",
-                    "Next to <g1>Child<\/g1>, click <x1\/>Blue arrow button<x2\/> (<g2>Replace<\/g2>) and select <g3>SingleStageRenderer<\/g3>.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/virtual-reality\/display-a-UI-in-an-overlay.md",
-                    {
-                        "id": "tu54"
-                    }
-                ],
-                [
-                    "<x1\/>Select single stage renderer<x2\/>",
-                    "",
-                    "<x1\/>Select single stage renderer<x2\/>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/virtual-reality\/display-a-UI-in-an-overlay.md",
-                    {
-                        "id": "tu55"
-                    }
-                ],
-                [
-                    "Next to <g1>Render Stage<\/g1>, click <x1\/>Blue arrow button<x2\/> (<g2>Replace<\/g2>) and select <g3>UIRenderStage<\/g3>.",
-                    "",
-                    "Next to <g1>Render Stage<\/g1>, click <x1\/>Blue arrow button<x2\/> (<g2>Replace<\/g2>) and select <g3>UIRenderStage<\/g3>.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/virtual-reality\/display-a-UI-in-an-overlay.md",
-                    {
-                        "id": "tu56"
-                    }
-                ],
-                [
-                    "This is the renderer that renders the UI.",
-                    "",
-                    " This is the renderer that renders the UI.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/virtual-reality\/display-a-UI-in-an-overlay.md",
-                    {
-                        "id": "tu56"
-                    }
-                ],
-                [
-                    "<x1\/>Select UI render stage<x2\/>",
-                    "",
-                    "<x1\/>Select UI render stage<x2\/>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/virtual-reality\/display-a-UI-in-an-overlay.md",
-                    {
-                        "id": "tu57"
-                    }
-                ],
-                [
-                    "Next to <g1>Render Texture<\/g1>, click <x1\/>Hand icon<x2\/> (<g2>Select an asset<\/g2>).",
-                    "",
-                    "Next to <g1>Render Texture<\/g1>, click <x1\/>Hand icon<x2\/> (<g2>Select an asset<\/g2>).",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/virtual-reality\/display-a-UI-in-an-overlay.md",
-                    {
-                        "id": "tu58"
-                    }
-                ],
-                [
-                    "The <g1>Select an asset<\/g1> window opens.",
-                    "",
-                    "The <g1>Select an asset<\/g1> window opens.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/virtual-reality\/display-a-UI-in-an-overlay.md",
-                    {
-                        "id": "tu59"
-                    }
-                ],
-                [
-                    "Select the <g1>render texture<\/g1> and click <g2>OK<\/g2>.",
-                    "",
-                    "Select the <g1>render texture<\/g1> and click <g2>OK<\/g2>.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/virtual-reality\/display-a-UI-in-an-overlay.md",
-                    {
-                        "id": "tu60"
-                    }
-                ],
-                [
-                    "<x1\/>Select render texture<x2\/>",
-                    "",
-                    "<x1\/>Select render texture<x2\/>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/virtual-reality\/display-a-UI-in-an-overlay.md",
-                    {
-                        "id": "tu61"
-                    }
-                ],
-                [
-                    "Game Studio adds the render texture to the renderer.",
-                    "",
-                    "Game Studio adds the render texture to the renderer.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/virtual-reality\/display-a-UI-in-an-overlay.md",
-                    {
-                        "id": "tu62"
-                    }
-                ],
-                [
-                    "Under <g1>Game renderer<\/g1>, next to <g2>Children<\/g2>, click <x1\/>Green plus button<x2\/> (<g3>Add<\/g3>) and select <g4>Forward renderer<\/g4>.",
-                    "",
-                    "Under <g1>Game renderer<\/g1>, next to <g2>Children<\/g2>, click <x1\/>Green plus button<x2\/> (<g3>Add<\/g3>) and select <g4>Forward renderer<\/g4>.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/virtual-reality\/display-a-UI-in-an-overlay.md",
-                    {
-                        "id": "tu63"
-                    }
-                ],
-                [
-                    "<x1\/>Select forward renderer<x2\/>",
-                    "",
-                    "<x1\/>Select forward renderer<x2\/>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/virtual-reality\/display-a-UI-in-an-overlay.md",
-                    {
-                        "id": "tu64"
-                    }
-                ],
-                [
-                    "Your game is now ready to render the UI to an overlay in your VR device.",
-                    "",
-                    "Your game is now ready to render the UI to an overlay in your VR device.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/virtual-reality\/display-a-UI-in-an-overlay.md",
-                    {
-                        "id": "tu65"
-                    }
-                ],
-                [
-                    "VR template",
-                    "",
-                    "VR template",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/virtual-reality\/display-a-UI-in-an-overlay.md",
-                    {
-                        "id": "tu66"
-                    }
-                ],
-                [
-                    "For an example of a UI overlay implemented in a VR game, see the VR template included with Stride.",
-                    "",
-                    "For an example of a UI overlay implemented in a VR game, see the VR template included with Stride.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/virtual-reality\/display-a-UI-in-an-overlay.md",
-                    {
-                        "id": "tu67"
-                    }
-                ],
-                [
-                    "<x1\/>VR template<x2\/>",
-                    "",
-                    "<x1\/>VR template<x2\/>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/virtual-reality\/display-a-UI-in-an-overlay.md",
-                    {
-                        "id": "tu68"
-                    }
-                ],
-                [
-                    "See also",
-                    "",
-                    "See also",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/virtual-reality\/display-a-UI-in-an-overlay.md",
-                    {
-                        "id": "tu69"
-                    }
-                ],
-                [
-                    "Overlays",
-                    "",
-                    "<g1>Overlays<\/g1>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/virtual-reality\/display-a-UI-in-an-overlay.md",
-                    {
-                        "id": "tu70"
-                    }
-                ],
-                [
-                    "UI",
-                    "",
-                    "<g1>UI<\/g1>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/virtual-reality\/display-a-UI-in-an-overlay.md",
-                    {
-                        "id": "tu71"
-                    }
-                ],
-                [
-                    "Render textures",
-                    "",
-                    "<g1>Render textures<\/g1>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/virtual-reality\/display-a-UI-in-an-overlay.md",
-                    {
-                        "id": "tu72"
-                    }
-                ],
-                [
-                    "Graphics compositor",
-                    "",
-                    "<g1>Graphics compositor<\/g1>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/virtual-reality\/display-a-UI-in-an-overlay.md",
-                    {
-                        "id": "tu73"
-                    }
-                ]
-            ]
-        }
-    ],
-    "seg_enabled": false
+  "filename": "manual\\virtual-reality\\display-a-UI-in-an-overlay.md.xlf",
+  "files": [
+    {
+      "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/virtual-reality\\/display-a-UI-in-an-overlay.md": [
+        [
+          "Display a UI in an overlay",
+          "Exibir uma interface de usuário em uma sobreposição",
+          "Display a UI in an overlay",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/virtual-reality\\/display-a-UI-in-an-overlay.md",
+          {
+            "id": "tu1"
+          }
+        ],
+        [
+          "This page explains how to render a UI to a texture, then display it as an overlay.",
+          "Esta página explica como renderizar uma interface de usuário para uma textura, em seguida, exibi-la como uma sobreposição.",
+          "This page explains how to render a UI to a texture, then display it as an overlay.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/virtual-reality\\/display-a-UI-in-an-overlay.md",
+          {
+            "id": "tu2"
+          }
+        ],
+        [
+          "These instructions assume you already have a UI that you want to display in the overlay.",
+          "Estas instruções assumem que você já tem uma interface de usuário que você deseja exibir na sobreposição.",
+          "These instructions assume you already have a UI that you want to display in the overlay.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/virtual-reality\\/display-a-UI-in-an-overlay.md",
+          {
+            "id": "tu3"
+          }
+        ],
+        [
+          "For information about creating UIs, see the <g1>UI<\\/g1> section.",
+          "Para obter informações sobre a criação de UIs, consulte a seção <g1>UI<\\/g1>.",
+          " For information about creating UIs, see the <g1>UI<\\/g1> section.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/virtual-reality\\/display-a-UI-in-an-overlay.md",
+          {
+            "id": "tu3"
+          }
+        ],
+        [
+          "<x1\\/>!Note<x2\\/>",
+          "<x1\\/>!Note<x2\\/>",
+          "<x1\\/>!Note<x2\\/>\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/virtual-reality\\/display-a-UI-in-an-overlay.md",
+          {
+            "id": "tu4"
+          }
+        ],
+        [
+          "You can't see overlays when you don't run your game in your VR device.",
+          "Você não pode ver sobreposições quando você não executar seu jogo em seu dispositivo VR.",
+          "You can't see overlays when you don't run your game in your VR device.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/virtual-reality\\/display-a-UI-in-an-overlay.md",
+          {
+            "id": "tu4"
+          }
+        ],
+        [
+          "This is because the VR device itself creates the overlay, not other hardware.",
+          "Isso porque o próprio dispositivo VR cria a sobreposição, não outro hardware.",
+          " This is because the VR device itself creates the overlay, not other hardware.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/virtual-reality\\/display-a-UI-in-an-overlay.md",
+          {
+            "id": "tu4"
+          }
+        ],
+        [
+          "1.",
+          "1.",
+          "1.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/virtual-reality\\/display-a-UI-in-an-overlay.md",
+          {
+            "id": "tu5"
+          }
+        ],
+        [
+          "Create a render target texture",
+          "Criar uma textura de destino de renderização",
+          " Create a render target texture",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/virtual-reality\\/display-a-UI-in-an-overlay.md",
+          {
+            "id": "tu5"
+          }
+        ],
+        [
+          "In the <g1>Asset View<\\/g1>, click <g2>Add asset<\\/g2> and select <g3>Texture<\\/g3> > <g4>Render target<\\/g4>.",
+          "No <g1>Asset View<\\/g1>, clique em <g2>Add asset<\\/g2> e selecione <g3>Texture<\\/g3> > <g4>Render target<\\/g4>.",
+          "In the <g1>Asset View<\\/g1>, click <g2>Add asset<\\/g2> and select <g3>Texture<\\/g3> > <g4>Render target<\\/g4>.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/virtual-reality\\/display-a-UI-in-an-overlay.md",
+          {
+            "id": "tu6"
+          }
+        ],
+        [
+          "<x1\\/>Add render target<x2\\/>",
+          "<x1\\/> Add render target<x2\\/>",
+          "<x1\\/>Add render target<x2\\/>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/virtual-reality\\/display-a-UI-in-an-overlay.md",
+          {
+            "id": "tu7"
+          }
+        ],
+        [
+          "Game Studio adds a <g1>render target<\\/g1> texture to your project assets.",
+          "Game Studio adiciona uma textura <g1>render target<\\/g1> para seus ativos de projeto.",
+          "Game Studio adds a <g1>render target<\\/g1> texture to your project assets.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/virtual-reality\\/display-a-UI-in-an-overlay.md",
+          {
+            "id": "tu8"
+          }
+        ],
+        [
+          "<x1\\/>Render texture<x2\\/>",
+          "<x1\\/>Render texture<x2\\/>",
+          "<x1\\/>Render texture<x2\\/>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/virtual-reality\\/display-a-UI-in-an-overlay.md",
+          {
+            "id": "tu9"
+          }
+        ],
+        [
+          "In the following steps, we'll render the UI to this texture, then display it in the overlay.",
+          "Nas etapas seguintes, vamos renderizar a interface do usuário para esta textura, em seguida, exibi-la na sobreposição.",
+          "In the following steps, we'll render the UI to this texture, then display it in the overlay.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/virtual-reality\\/display-a-UI-in-an-overlay.md",
+          {
+            "id": "tu10"
+          }
+        ],
+        [
+          "2.",
+          "2.",
+          "2.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/virtual-reality\\/display-a-UI-in-an-overlay.md",
+          {
+            "id": "tu11"
+          }
+        ],
+        [
+          "Add a VR overlay",
+          "Adicionar uma sobreposição de RV",
+          " Add a VR overlay",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/virtual-reality\\/display-a-UI-in-an-overlay.md",
+          {
+            "id": "tu11"
+          }
+        ],
+        [
+          "In the <g1>Asset View<\\/g1> (in the bottom pane by default), double-click the <g2>Graphics Compositor<\\/g2> asset.",
+          "No <g1>Asset View<\\/g1> (no painel inferior por padrão), clique duas vezes no <g2>Graphics Compositor<\\/g2> ativo.",
+          "In the <g1>Asset View<\\/g1> (in the bottom pane by default), double-click the <g2>Graphics Compositor<\\/g2> asset.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/virtual-reality\\/display-a-UI-in-an-overlay.md",
+          {
+            "id": "tu12"
+          }
+        ],
+        [
+          "<x1\\/>Graphics compositor asset<x2\\/>",
+          "<x1\\/>Graphics compositor asset<x2\\/>",
+          "<x1\\/>Graphics compositor asset<x2\\/>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/virtual-reality\\/display-a-UI-in-an-overlay.md",
+          {
+            "id": "tu13"
+          }
+        ],
+        [
+          "The graphics compositor editor opens.",
+          "O editor de compositores gráficos abre.",
+          "The graphics compositor editor opens.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/virtual-reality\\/display-a-UI-in-an-overlay.md",
+          {
+            "id": "tu14"
+          }
+        ],
+        [
+          "For more information about the graphics compositor, see the <g1>Graphics compositor<\\/g1> page.",
+          "Para obter mais informações sobre o compositor gráfico, consulte a página <g1>Graphics compositor<\\/g1>.",
+          " For more information about the graphics compositor, see the <g1>Graphics compositor<\\/g1> page.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/virtual-reality\\/display-a-UI-in-an-overlay.md",
+          {
+            "id": "tu14"
+          }
+        ],
+        [
+          "In the graphics compositor editor, select the <g1>forward renderer<\\/g1> node.",
+          "No editor de compositores gráficos, selecione o nó <g1>forward renderer<\\/g1>.",
+          "In the graphics compositor editor, select the <g1>forward renderer<\\/g1> node.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/virtual-reality\\/display-a-UI-in-an-overlay.md",
+          {
+            "id": "tu15"
+          }
+        ],
+        [
+          "<x1\\/>Select forward renderer<x2\\/>",
+          "<x1\\/>Selecionar renderizador <x2\\/>",
+          "<x1\\/>Select forward renderer<x2\\/>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/virtual-reality\\/display-a-UI-in-an-overlay.md",
+          {
+            "id": "tu16"
+          }
+        ],
+        [
+          "In the <g1>Property Grid<\\/g1> (on the right by default), expand <g2>VR Settings<\\/g2>.",
+          "No <g1>Property Grid<\\/g1> (à direita por padrão), expanda <g2>VR Settings<\\/g2>.",
+          "In the <g1>Property Grid<\\/g1> (on the right by default), expand <g2>VR Settings<\\/g2>.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/virtual-reality\\/display-a-UI-in-an-overlay.md",
+          {
+            "id": "tu17"
+          }
+        ],
+        [
+          "<x1\\/>VR settings<x2\\/>",
+          "<x1\\/>VR configurações<x2\\/>",
+          "<x1\\/>VR settings<x2\\/>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/virtual-reality\\/display-a-UI-in-an-overlay.md",
+          {
+            "id": "tu18"
+          }
+        ],
+        [
+          "Next to <g1>Overlays<\\/g1>, click <x1\\/>Green plus button<x2\\/> (<g2>Add<\\/g2>).",
+          "Ao lado de <g1>Overlays<\\/g1>, clique em <x1\\/>Green plus button<x2\\/> (<g2>Add<\\/g2>).",
+          "Next to <g1>Overlays<\\/g1>, click <x1\\/>Green plus button<x2\\/> (<g2>Add<\\/g2>).",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/virtual-reality\\/display-a-UI-in-an-overlay.md",
+          {
+            "id": "tu19"
+          }
+        ],
+        [
+          "Game Studio adds a new overlay to the list.",
+          "Game Studio adiciona uma nova sobreposição à lista.",
+          "Game Studio adds a new overlay to the list.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/virtual-reality\\/display-a-UI-in-an-overlay.md",
+          {
+            "id": "tu20"
+          }
+        ],
+        [
+          "<x1\\/>Add VR item<x2\\/>",
+          "<x1\\/> Adicionar item VR<x2\\/>",
+          "<x1\\/>Add VR item<x2\\/>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/virtual-reality\\/display-a-UI-in-an-overlay.md",
+          {
+            "id": "tu21"
+          }
+        ],
+        [
+          "Next to <g1>Texture<\\/g1>, click <x1\\/>Hand icon<x2\\/> (<g2>Select an asset<\\/g2>).",
+          "Ao lado de <g1>Texture<\\/g1>, clique em <x1\\/>Hand icon<x2\\/>Select an asset<\\/g2>).",
+          "Next to <g1>Texture<\\/g1>, click <x1\\/>Hand icon<x2\\/> (<g2>Select an asset<\\/g2>).",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/virtual-reality\\/display-a-UI-in-an-overlay.md",
+          {
+            "id": "tu22"
+          }
+        ],
+        [
+          "The <g1>Select an asset<\\/g1> window opens.",
+          "A janela <g1>Selecione um ativo<\\/g1> abre.",
+          "The <g1>Select an asset<\\/g1> window opens.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/virtual-reality\\/display-a-UI-in-an-overlay.md",
+          {
+            "id": "tu23"
+          }
+        ],
+        [
+          "<x1\\/>Select render texture<x2\\/>",
+          "<x1\\/>Select render texture<x2\\/>",
+          "<x1\\/>Select render texture<x2\\/>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/virtual-reality\\/display-a-UI-in-an-overlay.md",
+          {
+            "id": "tu24"
+          }
+        ],
+        [
+          "Select the <g1>render texture<\\/g1> you created and click <g2>OK<\\/g2>.",
+          "Selecione a textura <g1>render<\\/g1> você criou e clique em <g2>OK<\\/g2>.",
+          "Select the <g1>render texture<\\/g1> you created and click <g2>OK<\\/g2>.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/virtual-reality\\/display-a-UI-in-an-overlay.md",
+          {
+            "id": "tu25"
+          }
+        ],
+        [
+          "3.",
+          "3.",
+          "3.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/virtual-reality\\/display-a-UI-in-an-overlay.md",
+          {
+            "id": "tu26"
+          }
+        ],
+        [
+          "Set up the UI render feature",
+          "Configurar o recurso de renderização UI",
+          " Set up the UI render feature",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/virtual-reality\\/display-a-UI-in-an-overlay.md",
+          {
+            "id": "tu26"
+          }
+        ],
+        [
+          "In the graphics compositor editor, on the left, under <g1>Render Features<\\/g1>, select the <g2>UIRenderFeature<\\/g2>.",
+          "No editor de compositores gráficos, à esquerda, sob <g1>Render Features<\\/g1>, selecione o <g2>UIRenderFeature<\\/g2>.",
+          "In the graphics compositor editor, on the left, under <g1>Render Features<\\/g1>, select the <g2>UIRenderFeature<\\/g2>.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/virtual-reality\\/display-a-UI-in-an-overlay.md",
+          {
+            "id": "tu27"
+          }
+        ],
+        [
+          "<x1\\/>Select UI render feature<x2\\/>",
+          "<x1\\/>Select UI renderizar recurso<x2\\/>",
+          "<x1\\/>Select UI render feature<x2\\/>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/virtual-reality\\/display-a-UI-in-an-overlay.md",
+          {
+            "id": "tu28"
+          }
+        ],
+        [
+          "In the Property Grid, make sure <g1>SimpleGroupToRenderStageSelector<\\/g1> is selected.",
+          "Na Grade de Propriedade, certifique-se de <g1>SimpleGroupToRenderStageSelector<\\/g1> é selecionado.",
+          "In the Property Grid, make sure <g1>SimpleGroupToRenderStageSelector<\\/g1> is selected.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/virtual-reality\\/display-a-UI-in-an-overlay.md",
+          {
+            "id": "tu29"
+          }
+        ],
+        [
+          "<x1\\/>Select SimpleGroupToRenderStageSelector.png<x2\\/>",
+          "<x1\\/>Select SimpleGroupToRenderStageSelector.png<x2\\/>",
+          "<x1\\/>Select SimpleGroupToRenderStageSelector.png<x2\\/>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/virtual-reality\\/display-a-UI-in-an-overlay.md",
+          {
+            "id": "tu30"
+          }
+        ],
+        [
+          "Under <g1>Render Stage<\\/g1>, make sure <g2>UIRenderStage<\\/g2> is selected.",
+          "Sob <g1>Render Stage<\\/g1>, certifique-se de <g2>UIRenderStage<\\/g2> é selecionado.",
+          "Under <g1>Render Stage<\\/g1>, make sure <g2>UIRenderStage<\\/g2> is selected.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/virtual-reality\\/display-a-UI-in-an-overlay.md",
+          {
+            "id": "tu31"
+          }
+        ],
+        [
+          "<x1\\/>Select UIRenderStage.png<x2\\/>",
+          "<x1\\/>Selecionar UIRenderStage.png<x2\\/>",
+          "<x1\\/>Select UIRenderStage.png<x2\\/>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/virtual-reality\\/display-a-UI-in-an-overlay.md",
+          {
+            "id": "tu32"
+          }
+        ],
+        [
+          "This makes sure the UI is rendered in the UI render stage, which we'll use in the next step.",
+          "Isso garante que a interface do usuário é renderizada na etapa de renderização da interface do usuário, que usaremos no próximo passo.",
+          "This makes sure the UI is rendered in the UI render stage, which we'll use in the next step.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/virtual-reality\\/display-a-UI-in-an-overlay.md",
+          {
+            "id": "tu33"
+          }
+        ],
+        [
+          "4.",
+          "4.",
+          "4.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/virtual-reality\\/display-a-UI-in-an-overlay.md",
+          {
+            "id": "tu34"
+          }
+        ],
+        [
+          "Set up the renderers",
+          "Configurar os renderizadores",
+          " Set up the renderers",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/virtual-reality\\/display-a-UI-in-an-overlay.md",
+          {
+            "id": "tu34"
+          }
+        ],
+        [
+          "To display an overlay, you need at least two renderers:",
+          "Para exibir uma sobreposição, você precisa de pelo menos dois renderizadores:",
+          "To display an overlay, you need at least two renderers:",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/virtual-reality\\/display-a-UI-in-an-overlay.md",
+          {
+            "id": "tu35"
+          }
+        ],
+        [
+          "one to render your main camera",
+          "um para renderizar sua câmera principal",
+          "one to render your main camera",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/virtual-reality\\/display-a-UI-in-an-overlay.md",
+          {
+            "id": "tu36"
+          }
+        ],
+        [
+          "one to render the UI to the overlay",
+          "um para renderizar a UI para a sobreposição",
+          "one to render the UI to the overlay",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/virtual-reality\\/display-a-UI-in-an-overlay.md",
+          {
+            "id": "tu37"
+          }
+        ],
+        [
+          "This page describes the simplest way to do this from scratch, using two cameras and two renderers.",
+          "Esta página descreve a maneira mais simples de fazer isso do zero, usando duas câmeras e dois renderizadores.",
+          "This page describes the simplest way to do this from scratch, using two cameras and two renderers.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/virtual-reality\\/display-a-UI-in-an-overlay.md",
+          {
+            "id": "tu38"
+          }
+        ],
+        [
+          "Depending on your pipeline, you might need to create a different setup.",
+          "Dependendo do seu pipeline, você pode precisar criar uma configuração diferente.",
+          " Depending on your pipeline, you might need to create a different setup.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/virtual-reality\\/display-a-UI-in-an-overlay.md",
+          {
+            "id": "tu38"
+          }
+        ],
+        [
+          "<x1\\/>!Warning<x2\\/>",
+          "<x1\\/>!Warning<x2\\/>",
+          "<x1\\/>!Warning<x2\\/>\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/virtual-reality\\/display-a-UI-in-an-overlay.md",
+          {
+            "id": "tu39"
+          }
+        ],
+        [
+          "These instructions involve deleting your existing renderers for the game entry point.",
+          "Essas instruções envolvem excluir seus renderizadores existentes para o ponto de entrada do jogo.",
+          "These instructions involve deleting your existing renderers for the game entry point.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/virtual-reality\\/display-a-UI-in-an-overlay.md",
+          {
+            "id": "tu39"
+          }
+        ],
+        [
+          "You might want to make a backup of your project in case you want to restore your pipeline afterwards.",
+          "Você pode querer fazer um backup do seu projeto no caso de você querer restaurar o seu pipeline depois.",
+          " You might want to make a backup of your project in case you want to restore your pipeline afterwards.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/virtual-reality\\/display-a-UI-in-an-overlay.md",
+          {
+            "id": "tu39"
+          }
+        ],
+        [
+          "In the graphics compositor editor, select the <g1>Entry points<\\/g1> node.",
+          "No editor de compositores gráficos, selecione o nó <g1>Pontos de entrada<\\/g1>.",
+          "In the graphics compositor editor, select the <g1>Entry points<\\/g1> node.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/virtual-reality\\/display-a-UI-in-an-overlay.md",
+          {
+            "id": "tu40"
+          }
+        ],
+        [
+          "<x1\\/>Entry points node<x2\\/>",
+          "<x1\\/> Pontos de entrada node<x2\\/>",
+          "<x1\\/>Entry points node<x2\\/>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/virtual-reality\\/display-a-UI-in-an-overlay.md",
+          {
+            "id": "tu41"
+          }
+        ],
+        [
+          "In the <g1>Property Grid<\\/g1> on the right, next to <g2>Game renderer<\\/g2>, click <x1\\/>Blue arrow button<x2\\/> (<g3>Replace<\\/g3>) and select <g4>None<\\/g4> to delete your existing renderers.",
+          "No <g1>Property Grid<\\/g1> à direita, ao lado de <g2>Game renderer<\\/g2>, clique em <x1\\/> Botão de seta azul<x2\\/> (<g3> Substituir<\\/g3>) e selecione <g4>None<\\/g4> para excluir seus renderizadores existentes.",
+          "In the <g1>Property Grid<\\/g1> on the right, next to <g2>Game renderer<\\/g2>, click <x1\\/>Blue arrow button<x2\\/> (<g3>Replace<\\/g3>) and select <g4>None<\\/g4> to delete your existing renderers.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/virtual-reality\\/display-a-UI-in-an-overlay.md",
+          {
+            "id": "tu42"
+          }
+        ],
+        [
+          "<x1\\/>Cleared game renderers<x2\\/>",
+          "<x1\\/>Cleared game renderers<x2\\/>",
+          "<x1\\/>Cleared game renderers<x2\\/>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/virtual-reality\\/display-a-UI-in-an-overlay.md",
+          {
+            "id": "tu43"
+          }
+        ],
+        [
+          "Next to <g1>Game rendererer<\\/g1>, click <x1\\/>Blue arrow button<x2\\/> (<g2>Replace<\\/g2>) and select <g3>Camera Renderer<\\/g3>.",
+          "Ao lado de <g1>Game renderer<\\/g1>, clique em <x1\\/> Botão de seta azul<x2\\/> (<g2> Substituir<\\/g2>) e selecione <g3>Camera Renderer<\\/g3>.",
+          "Next to <g1>Game rendererer<\\/g1>, click <x1\\/>Blue arrow button<x2\\/> (<g2>Replace<\\/g2>) and select <g3>Camera Renderer<\\/g3>.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/virtual-reality\\/display-a-UI-in-an-overlay.md",
+          {
+            "id": "tu44"
+          }
+        ],
+        [
+          "<x1\\/>Select camera renderer.png<x2\\/>",
+          "<x1\\/>Select câmera renderer.png<x2\\/>",
+          "<x1\\/>Select camera renderer.png<x2\\/>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/virtual-reality\\/display-a-UI-in-an-overlay.md",
+          {
+            "id": "tu45"
+          }
+        ],
+        [
+          "Currently, <g1>all<\\/g1> renderers must have a camera, or be a child of a renderer that has a camera.",
+          "Atualmente, <g1>all<\\/g1> renderizadores devem ter uma câmera, ou ser uma criança de um renderizador que tem uma câmera.",
+          "Currently, <g1>all<\\/g1> renderers must have a camera, or be a child of a renderer that has a camera.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/virtual-reality\\/display-a-UI-in-an-overlay.md",
+          {
+            "id": "tu46"
+          }
+        ],
+        [
+          "This applies even to renderers that don't necessarily use cameras, such as the single stage renderer, which renders the UI.",
+          "Isso se aplica mesmo aos renderizadores que não usam necessariamente câmeras, como o renderizador de estágio único, o que torna a interface do usuário.",
+          " This applies even to renderers that don't necessarily use cameras, such as the single stage renderer, which renders the UI.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/virtual-reality\\/display-a-UI-in-an-overlay.md",
+          {
+            "id": "tu46"
+          }
+        ],
+        [
+          "For this reason, in these instructions, we'll add a game renderer with a camera, then make the two renderers children of that renderer.",
+          "Por esta razão, nestas instruções, vamos adicionar um renderizador de jogo com uma câmera, em seguida, fazer os dois renderizadores filhos daquele renderizador.",
+          "For this reason, in these instructions, we'll add a game renderer with a camera, then make the two renderers children of that renderer.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/virtual-reality\\/display-a-UI-in-an-overlay.md",
+          {
+            "id": "tu47"
+          }
+        ],
+        [
+          "This makes sure both renderers have a parent with a camera.",
+          "Isso garante que ambos os renderizadores têm um pai com uma câmera.",
+          " This makes sure both renderers have a parent with a camera.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/virtual-reality\\/display-a-UI-in-an-overlay.md",
+          {
+            "id": "tu47"
+          }
+        ],
+        [
+          "Next to <g1>Camera<\\/g1>, click <x1\\/>Blue arrow button<x2\\/> (<g2>Replace<\\/g2>) and select your main game camera.",
+          "Próximo a <g1>Camera<\\/g1>, clique em <x1\\/> Botão de seta azul<x2\\/> (<g2> Substituir<\\/g2>) e selecione sua câmera principal do jogo.",
+          "Next to <g1>Camera<\\/g1>, click <x1\\/>Blue arrow button<x2\\/> (<g2>Replace<\\/g2>) and select your main game camera.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/virtual-reality\\/display-a-UI-in-an-overlay.md",
+          {
+            "id": "tu48"
+          }
+        ],
+        [
+          "<x1\\/>Select main camera<x2\\/>",
+          "<x1\\/>Selecione a câmera principal<x2\\/>",
+          "<x1\\/>Select main camera<x2\\/>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/virtual-reality\\/display-a-UI-in-an-overlay.md",
+          {
+            "id": "tu49"
+          }
+        ],
+        [
+          "Next to <g1>Child<\\/g1>, click <x1\\/>Blue arrow button<x2\\/> (<g2>Replace<\\/g2>) and select <g3>SceneRendererCollection<\\/g3>.",
+          "Ao lado de <g1>Child<\\/g1>, clique em <x1\\/> Botão de seta azul<x2\\/> (<g2> Substituir<\\/g2>) e selecione <g3>SceneRendererCollection<\\/g3>.",
+          "Next to <g1>Child<\\/g1>, click <x1\\/>Blue arrow button<x2\\/> (<g2>Replace<\\/g2>) and select <g3>SceneRendererCollection<\\/g3>.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/virtual-reality\\/display-a-UI-in-an-overlay.md",
+          {
+            "id": "tu50"
+          }
+        ],
+        [
+          "<x1\\/>Select scene renderer collection<x2\\/>",
+          "<x1\\/>Selecione a coleção de renderizador de cena<x2\\/>",
+          "<x1\\/>Select scene renderer collection<x2\\/>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/virtual-reality\\/display-a-UI-in-an-overlay.md",
+          {
+            "id": "tu51"
+          }
+        ],
+        [
+          "Next to <g1>Children<\\/g1>, Click <x1\\/>Green plus button<x2\\/> (<g2>Add<\\/g2>) and select <g3>RenderTextureSceneRenderer<\\/g3>.",
+          "Ao lado de <g1>Crianças<\\/g1>, Clique <x1\\/>Verde mais botão<x2\\/> (<g2>Add<\\/g2>) e selecione <g3>RenderTextureSceneRenderer<\\/g3>.",
+          "Next to <g1>Children<\\/g1>, Click <x1\\/>Green plus button<x2\\/> (<g2>Add<\\/g2>) and select <g3>RenderTextureSceneRenderer<\\/g3>.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/virtual-reality\\/display-a-UI-in-an-overlay.md",
+          {
+            "id": "tu52"
+          }
+        ],
+        [
+          "<x1\\/>Select RenderTextureSceneRenderer<x2\\/>",
+          "<x1\\/>Selecionar RenderTextureSceneRenderer<x2\\/>",
+          "<x1\\/>Select RenderTextureSceneRenderer<x2\\/>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/virtual-reality\\/display-a-UI-in-an-overlay.md",
+          {
+            "id": "tu53"
+          }
+        ],
+        [
+          "Next to <g1>Child<\\/g1>, click <x1\\/>Blue arrow button<x2\\/> (<g2>Replace<\\/g2>) and select <g3>SingleStageRenderer<\\/g3>.",
+          "Ao lado de <g1>Child<\\/g1>, clique em <x1\\/> Botão de seta azul<x2\\/> (<g2> Substituir<\\/g2>) e selecione <g3>SingleStageRenderer<\\/g3>.",
+          "Next to <g1>Child<\\/g1>, click <x1\\/>Blue arrow button<x2\\/> (<g2>Replace<\\/g2>) and select <g3>SingleStageRenderer<\\/g3>.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/virtual-reality\\/display-a-UI-in-an-overlay.md",
+          {
+            "id": "tu54"
+          }
+        ],
+        [
+          "<x1\\/>Select single stage renderer<x2\\/>",
+          "<x1\\/>Select single stage renderer<x2\\/>",
+          "<x1\\/>Select single stage renderer<x2\\/>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/virtual-reality\\/display-a-UI-in-an-overlay.md",
+          {
+            "id": "tu55"
+          }
+        ],
+        [
+          "Next to <g1>Render Stage<\\/g1>, click <x1\\/>Blue arrow button<x2\\/> (<g2>Replace<\\/g2>) and select <g3>UIRenderStage<\\/g3>.",
+          "Ao lado de <g1>Render Stage<\\/g1>, clique em <x1\\/> botão de seta azul<x2\\/> (<g2> Substituir<\\/g2>) e selecione <g3>UIRenderStage<\\/g3>.",
+          "Next to <g1>Render Stage<\\/g1>, click <x1\\/>Blue arrow button<x2\\/> (<g2>Replace<\\/g2>) and select <g3>UIRenderStage<\\/g3>.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/virtual-reality\\/display-a-UI-in-an-overlay.md",
+          {
+            "id": "tu56"
+          }
+        ],
+        [
+          "This is the renderer that renders the UI.",
+          "Este é o renderizador que torna a interface do usuário.",
+          " This is the renderer that renders the UI.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/virtual-reality\\/display-a-UI-in-an-overlay.md",
+          {
+            "id": "tu56"
+          }
+        ],
+        [
+          "<x1\\/>Select UI render stage<x2\\/>",
+          "<x1\\/>Select UI render stage<x2\\/>",
+          "<x1\\/>Select UI render stage<x2\\/>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/virtual-reality\\/display-a-UI-in-an-overlay.md",
+          {
+            "id": "tu57"
+          }
+        ],
+        [
+          "Next to <g1>Render Texture<\\/g1>, click <x1\\/>Hand icon<x2\\/> (<g2>Select an asset<\\/g2>).",
+          "Ao lado de <g1>Render Texture<\\/g1>, clique em <x1\\/>Hand icon<x2\\/> (<g2>Select an asset<\\/g2>).",
+          "Next to <g1>Render Texture<\\/g1>, click <x1\\/>Hand icon<x2\\/> (<g2>Select an asset<\\/g2>).",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/virtual-reality\\/display-a-UI-in-an-overlay.md",
+          {
+            "id": "tu58"
+          }
+        ],
+        [
+          "The <g1>Select an asset<\\/g1> window opens.",
+          "A janela <g1>Selecione um ativo<\\/g1> abre.",
+          "The <g1>Select an asset<\\/g1> window opens.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/virtual-reality\\/display-a-UI-in-an-overlay.md",
+          {
+            "id": "tu59"
+          }
+        ],
+        [
+          "Select the <g1>render texture<\\/g1> and click <g2>OK<\\/g2>.",
+          "Selecione a textura <g1>render<\\/g1> e clique em <g2>OK<\\/g2>.",
+          "Select the <g1>render texture<\\/g1> and click <g2>OK<\\/g2>.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/virtual-reality\\/display-a-UI-in-an-overlay.md",
+          {
+            "id": "tu60"
+          }
+        ],
+        [
+          "<x1\\/>Select render texture<x2\\/>",
+          "<x1\\/>Select render texture<x2\\/>",
+          "<x1\\/>Select render texture<x2\\/>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/virtual-reality\\/display-a-UI-in-an-overlay.md",
+          {
+            "id": "tu61"
+          }
+        ],
+        [
+          "Game Studio adds the render texture to the renderer.",
+          "Game Studio adiciona a textura de renderização ao renderizador.",
+          "Game Studio adds the render texture to the renderer.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/virtual-reality\\/display-a-UI-in-an-overlay.md",
+          {
+            "id": "tu62"
+          }
+        ],
+        [
+          "Under <g1>Game renderer<\\/g1>, next to <g2>Children<\\/g2>, click <x1\\/>Green plus button<x2\\/> (<g3>Add<\\/g3>) and select <g4>Forward renderer<\\/g4>.",
+          "Sob <g1> renderizador de Game<\\/g1>, ao lado de <g2> Crianças<\\/g2>, clique em <x1\\/>Verde mais botão<x2\\/> (<g3>Add<\\/g3>) e selecione <g4>Forward renderer<\\/g4>.",
+          "Under <g1>Game renderer<\\/g1>, next to <g2>Children<\\/g2>, click <x1\\/>Green plus button<x2\\/> (<g3>Add<\\/g3>) and select <g4>Forward renderer<\\/g4>.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/virtual-reality\\/display-a-UI-in-an-overlay.md",
+          {
+            "id": "tu63"
+          }
+        ],
+        [
+          "<x1\\/>Select forward renderer<x2\\/>",
+          "<x1\\/>Selecionar renderizador <x2\\/>",
+          "<x1\\/>Select forward renderer<x2\\/>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/virtual-reality\\/display-a-UI-in-an-overlay.md",
+          {
+            "id": "tu64"
+          }
+        ],
+        [
+          "Your game is now ready to render the UI to an overlay in your VR device.",
+          "Seu jogo agora está pronto para renderizar a interface do usuário para uma sobreposição em seu dispositivo VR.",
+          "Your game is now ready to render the UI to an overlay in your VR device.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/virtual-reality\\/display-a-UI-in-an-overlay.md",
+          {
+            "id": "tu65"
+          }
+        ],
+        [
+          "VR template",
+          "Modelo de RV",
+          "VR template",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/virtual-reality\\/display-a-UI-in-an-overlay.md",
+          {
+            "id": "tu66"
+          }
+        ],
+        [
+          "For an example of a UI overlay implemented in a VR game, see the VR template included with Stride.",
+          "Por exemplo, uma sobreposição de interface do usuário implementada em um jogo VR, veja o modelo VR incluído no Stride.",
+          "For an example of a UI overlay implemented in a VR game, see the VR template included with Stride.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/virtual-reality\\/display-a-UI-in-an-overlay.md",
+          {
+            "id": "tu67"
+          }
+        ],
+        [
+          "<x1\\/>VR template<x2\\/>",
+          "<x1\\/>VR template<x2\\/>",
+          "<x1\\/>VR template<x2\\/>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/virtual-reality\\/display-a-UI-in-an-overlay.md",
+          {
+            "id": "tu68"
+          }
+        ],
+        [
+          "See also",
+          "Ver também",
+          "See also",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/virtual-reality\\/display-a-UI-in-an-overlay.md",
+          {
+            "id": "tu69"
+          }
+        ],
+        [
+          "Overlays",
+          "Sobreposições",
+          "<g1>Overlays<\\/g1>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/virtual-reality\\/display-a-UI-in-an-overlay.md",
+          {
+            "id": "tu70"
+          }
+        ],
+        [
+          "UI",
+          "UI",
+          "<g1>UI<\\/g1>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/virtual-reality\\/display-a-UI-in-an-overlay.md",
+          {
+            "id": "tu71"
+          }
+        ],
+        [
+          "Render textures",
+          "Render texturas",
+          "<g1>Render textures<\\/g1>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/virtual-reality\\/display-a-UI-in-an-overlay.md",
+          {
+            "id": "tu72"
+          }
+        ],
+        [
+          "Graphics compositor",
+          "Compositor gráfico",
+          "<g1>Graphics compositor<\\/g1>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/virtual-reality\\/display-a-UI-in-an-overlay.md",
+          {
+            "id": "tu73"
+          }
+        ]
+      ]
+    }
+  ],
+  "seg_enabled": false
 }

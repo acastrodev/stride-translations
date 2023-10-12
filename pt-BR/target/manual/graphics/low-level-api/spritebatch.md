@@ -1,106 +1,106 @@
 # SpriteBatch
 
-<span class="badge text-bg-primary">Advanced</span>
-<span class="badge text-bg-success">Programmer</span>
+<x1\/> Avançado <x2\/>
+<x3\/> Programador <x4\/>
 
-A sprite batch is a collection of sprites (2D textured planes).
+Um lote de sprite é uma coleção de sprites (2D planos texturizados).
 
-> [!Note]
-> Remember that you need to put all custom code in a [custom scene renderer](../graphics-compositor/custom-scene-renderers.md) to include it in the composition.
+> <x1\/>!Note<x2\/>
+> Lembre-se que você precisa colocar todo o código personalizado em um renderizador de cena [custom](../graphics-compositor/custom-scene-renderers.md) para incluí-lo na composição.
 
-## Create a sprite batch
+## Criar um lote de sprite
 
-Stride offers a easy way to deal will batches of sprites through the @'Stride.Graphics.SpriteBatch' class. You can use this class to regroup, update, and display sprites efficiently.
+Stride oferece uma maneira fácil de lidar com lotes de sprites através do @'Stride. Graphics.SpriteBatch' class. Você pode usar esta classe para reagrupar, atualizar e exibir sprites de forma eficiente.
 
-**Code:** Creating a sprite batch
+** Código:** Criando um lote sprite
 
 ```cs
-var spriteBatch = new SpriteBatch(GraphicsDevice);
+var spriteBatch = novo SpriteBatch (GraphicsDevice);
 ```
 
-You can specify the size of your batch size. This isn't the maximum number of sprites the SpriteBatch is able to display, but the maximum number of sprites it can store before drawing.
+Você pode especificar o tamanho do seu tamanho de lote. Este não é o número máximo de sprites que o SpriteBatch é capaz de exibir, mas o número máximo de sprites que pode armazenar antes do desenho.
 
-**Code:** Setting the batch size
+** Código:** Definindo o tamanho do lote
 
 ```cs
-var spriteBatch = new SpriteBatch(GraphicsDevice, 2000);
+var spriteBatch = novo SpriteBatch (GraphicsDevice, 2000);
 ```
 
-You can also set states like the ones discussed on the [Pipeline state](pipeline-state.md) page.
+Você também pode definir estados como os discutidos na página [Pipeline state](pipeline-state.md).
 
-## Draw a sprite batch
+## Desenhe um lote de sprite
 
-The @'Stride.Graphics.SpriteBatch' class has multiple draw methods to set various parameters. For a list of features, see the @'Stride.Graphics.SpriteBatch' API documentation.
+A classe @'Stride.Graphics.SpriteBatch' tem vários métodos de sorteio para definir vários parâmetros. Para obter uma lista de recursos, consulte a documentação da API @'Stride.Graphics.SpriteBatch'.
 
-**Code:** Drawing a sprite batch
+** Código:** Desenho de um lote de sprite
 
 ```cs
-// begin the sprite batch operations
-spriteBatch.Begin(GraphicsContext, SpriteSortMode.Immediate);
+\/\/ iniciar as operações de lote de sprite
+spriteBatch.Begin (GraphicsContext, SpriteSortMode.Immediate);
  
-// draw the sprite immediately
+\/\/ desenhar o sprite imediatamente
 spriteBatch.Draw(myTexture, new Vector2(10, 20));
  
-// end the sprite batch operations
+\/\/ terminar as operações de lote sprite
 spriteBatch.End();
 ```
 
-There are five modes to draw a sprite batch. They are enumerated in the @'Stride.Graphics.SpriteSortMode' enum:
+Há cinco modos para desenhar um lote de sprite. Eles são enumerados no @'Stride.Graphics.SpriteSortMode' enum:
 
-- Deferred (default mode): the sprites are drawn at the same time at the end to reduce the drawcall overhead
-- Immediate: the sprites are draw after each each @'Stride.Graphics.SpriteBatch.Draw' call
-- Texture: Deferred mode but sprites are sorted based on their texture to reduce effect parameters update
-- BackToFront: Deferred mode with a sort based on the z-order of the sprites
-- FrontToBack: Deferred mode with a sort based on the z-order of the sprites
+- Deferido (modo padrão): os sprites são desenhados ao mesmo tempo no final para reduzir a sobrecarga de drawcall
+- Imediato: os sprites são sorteados após cada @'Stride.Graphics.SpriteBatch.Draw' chamada
+- Textura: Modo diferido, mas os sprites são classificados com base em sua textura para reduzir a atualização dos parâmetros de efeito
+- BackToFront: Modo diferido com um tipo baseado na ordem z dos sprites
+- FrontToBack: Modo diferido com um tipo baseado na ordem z dos sprites
 
-To set the mode, specify it in the @'Stride.Graphics.SpriteBatch.Begin' method.
+Para definir o modo, especifique-o no método @'Stride.Graphics.SpriteBatch.Begin'.
 
-**Code:** Deferred drawing of the sprite batch
+** Código:** Desenho diferido do lote sprite
 
 ```cs
-// begin the sprite batch operations
-spriteBatch.Begin(GraphicsContext); // same as spriteBatch.Begin(GraphicsContext, SpriteSortMode.Deferred);
+\/\/ iniciar as operações de lote de sprite
+spriteBatch.Begin(GraphicsContext); \/\/ mesmo que sprite Batch. Comece (GraphicsContext, SpriteSortMode.Deferido);
 
-// store the modification of the sprite
+\/\/ armazenar a modificação do sprite
 spriteBatch.Draw(myTexture, new Vector2(10, 20));
 
-// end the sprite batch operations, draw all the sprites
+\/\/ terminar as operações de lote sprite, desenhar todos os sprites
 spriteBatch.End();
 ```
 
-You can set several parameters on the sprite. For example:
+Você pode definir vários parâmetros no sprite. Por exemplo:
 
-- position
-- rotation
-- scale
-- depth
-- center offset
-- color tint
+- posição
+- rotação
+- escala
+- profundidade
+- centro de deslocamento
+- tintura de cor
 
-For a full list, see the @'Stride.Graphics.SpriteBatch' API documentation, especially the **Draw** methods.
+Para uma lista completa, consulte a documentação API @'Stride.Graphics.SpriteBatch', especialmente os métodos **Draw**.
 
-**Code:** More complex sprite batch drawing
+** Código:** Mais complexo sprite lote desenho
 
 ```cs
-// begin the sprite batch operations
-spriteBatch.Begin(GraphicsContext);
-const int gridCount = 10;
-var textureOffset = new Vector2((float)graphicsDevice.BackBuffer.Width/gridCount, (float)graphicsDevice.BackBuffer.Height/gridCount);
-var textureOrigin = new Vector2(myTexture.Width/2.0f, myTexture.Height/2.0f);
+\/\/ iniciar as operações de lote de sprite
+spriteBatch.Begin (GraphicsContext);
+rede de segurança Contagem = 10;
+var textureOffset = novo Vector2(float)graphicsDevice.BackBuffer.Width\/gridCount, (float)graphicsDevice.BackBuffer.Height\/gridCount);
+var textureOrigin = novo Vector2 (myTexture). Largura\/2.0f, myTexture.Height\/2.0f);
 
-// draw 100 sprites on a 10x10 grid with a rotation of 1.2 rad and a scale of 0.5 for each of them
-for (int y = 0; y < gridCount; y++)
-{
-    for (int x = 0; x < gridCount; x++)
-    {
-        spriteBatch.Draw(UVTexture, new Vector2(x * textureOffset.X + textureOffset.X / 2.0f, y * textureOffset.Y + textureOffset.Y / 2.0f), Color.White, 1.2f, textureOrigin, 0.5f);
+\/\/ desenhar 100 sprites em uma grade 10x10 com uma rotação de 1,2 rad e uma escala de 0,5 para cada um deles
+para (int y = 0; y < gridCount; y++)
+(
+    para (int x = 0; x < gridCount; x++)
+    (
+        spriteBatch.Draw (UVTexture, novo Vector2(x * textureOffset.X + textureOffset.X \/ 2.0f, y * textureOffset. Y + textureOffset.Y \/ 2.0f), Color.White, 1.2f, textureOrigin, 0.5f);
     }
 }
  
-// end the sprite batch operations, draw all the sprites
+\/\/ terminar as operações de lote sprite, desenhar todos os sprites
 spriteBatch.End();
 ```
 
-## See also
+## Ver também
 
-* [SpriteFont](spritefont.md)
+* [SpriteFonte](spritefont.md)

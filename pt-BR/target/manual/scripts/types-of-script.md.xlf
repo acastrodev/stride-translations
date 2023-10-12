@@ -3,33 +3,33 @@
 <body>
 <trans-unit id="tu1" xml:space="preserve">
 <source xml:lang="en">Types of script</source>
-<target xml:lang="pt">Types of script</target>
+<target xml:lang="pt">Tipos de script</target>
 </trans-unit>
 <trans-unit id="tu2" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Beginner<x id="2"/>
 <x id="3"/>Programmer<x id="4"/></source>
-<target xml:lang="pt"><x id="1"/>Beginner<x id="2"/>
-<x id="3"/>Programmer<x id="4"/></target>
+<target xml:lang="pt">&lt;x1\/&gt;Introdução&lt;x2\/&gt;
+&lt;x3\/&gt; Programador &lt;x4\/&gt;</target>
 </trans-unit>
 <trans-unit id="tu3" xml:space="preserve">
 <source xml:lang="en">There are three main types of script in Stride: <g id="1">startup scripts</g>, <g id="2">synchronous scripts</g>, and <g id="3">asynchronous scripts</g>.</source>
-<target xml:lang="pt">There are three main types of script in Stride: <g id="1">startup scripts</g>, <g id="2">synchronous scripts</g>, and <g id="3">asynchronous scripts</g>.</target>
+<target xml:lang="pt">Existem três tipos principais de script em Stride: <g id="1">startup scripts</g>, <g id="2">synchronous scripts</g>, e <g id="3">asynchronous scripts</g>.</target>
 </trans-unit>
 <trans-unit id="tu4" xml:space="preserve">
 <source xml:lang="en">When you write your script, inherit from the type of script with the behavior that best fits your needs.</source>
-<target xml:lang="pt">When you write your script, inherit from the type of script with the behavior that best fits your needs.</target>
+<target xml:lang="pt">Quando você escreve seu script, herda do tipo de script com o comportamento que melhor se adapta às suas necessidades.</target>
 </trans-unit>
 <trans-unit id="tu5" xml:space="preserve">
 <source xml:lang="en">Startup scripts</source>
-<target xml:lang="pt">Startup scripts</target>
+<target xml:lang="pt">Scripts de inicialização</target>
 </trans-unit>
 <trans-unit id="tu6" xml:space="preserve">
 <source xml:lang="en">Startup scripts only run when they are added or removed at runtime. They're mostly used to initialize game elements (eg spawning characters) and destroy them when the scene is unloaded. They have a <g id="1">Start</g> method for initialization and a <g id="2">Cancel</g> method. You can override either method if you need to.</source>
-<target xml:lang="pt">Startup scripts only run when they are added or removed at runtime. They're mostly used to initialize game elements (eg spawning characters) and destroy them when the scene is unloaded. They have a <g id="1">Start</g> method for initialization and a <g id="2">Cancel</g> method. You can override either method if you need to.</target>
+<target xml:lang="pt">Os scripts de inicialização só rodam quando são adicionados ou removidos no tempo de execução. Eles são usados principalmente para inicializar elementos do jogo (por exemplo, personagens de desova) e destruí-los quando a cena é descarregada. Eles têm um método <g id="1">Start</g> para inicialização e um método <g id="2">Cancel</g>. Você pode substituir qualquer método se precisar.</target>
 </trans-unit>
 <trans-unit id="tu7" xml:space="preserve">
 <source xml:lang="en">Example:</source>
-<target xml:lang="pt">Example:</target>
+<target xml:lang="pt">Exemplo:</target>
 </trans-unit>
 <trans-unit id="tu8" xml:space="preserve">
 <source xml:lang="en">public class StartUpScriptExample : StartupScript
@@ -40,38 +40,38 @@
 	}
 }
 </source>
-<target xml:lang="pt">public class StartUpScriptExample : StartupScript
-{
-	public override void Start()
-	{
-		// Do some stuff during initialization
+<target xml:lang="pt">classe pública StartUpScriptExample : StartupScript
+(
+	anula de sobreposição pública Start()
+	(
+		\/\/ Faça algumas coisas durante a inicialização
 	}
 }
 </target>
 </trans-unit>
 <trans-unit id="tu9" xml:space="preserve">
 <source xml:lang="en">Synchronous scripts</source>
-<target xml:lang="pt">Synchronous scripts</target>
+<target xml:lang="pt">Scripts síncronos</target>
 </trans-unit>
 <trans-unit id="tu10" xml:space="preserve">
 <source xml:lang="en">Synchronous scripts are initialized, then updated every frame, and finally canceled (when the script is removed).</source>
-<target xml:lang="pt">Synchronous scripts are initialized, then updated every frame, and finally canceled (when the script is removed).</target>
+<target xml:lang="pt">Os scripts síncronos são inicializados e, em seguida, atualizados cada frame, e finalmente cancelados (quando o script é removido).</target>
 </trans-unit>
 <trans-unit id="tu11" xml:space="preserve">
 <source xml:lang="en">The initialization code, if any, goes in the <g id="1">Start</g> method.</source>
-<target xml:lang="pt">The initialization code, if any, goes in the <g id="1">Start</g> method.</target>
+<target xml:lang="pt">O código de inicialização, se houver, vai no método <g id="1">Start</g>.</target>
 </trans-unit>
 <trans-unit id="tu12" xml:space="preserve">
 <source xml:lang="en">The code performing the update goes in the <g id="1">Update</g> method.</source>
-<target xml:lang="pt">The code performing the update goes in the <g id="1">Update</g> method.</target>
+<target xml:lang="pt">O código que executa a atualização vai no método <g id="1">Update</g>.</target>
 </trans-unit>
 <trans-unit id="tu13" xml:space="preserve">
 <source xml:lang="en">The code performing the cancellation goes in the <g id="1">Cancel</g> method.</source>
-<target xml:lang="pt">The code performing the cancellation goes in the <g id="1">Cancel</g> method.</target>
+<target xml:lang="pt">O código que executa o cancelamento vai no método <g id="1">Cancel</g>.</target>
 </trans-unit>
 <trans-unit id="tu14" xml:space="preserve">
 <source xml:lang="en">The following script performs updates every frame, no matter what:</source>
-<target xml:lang="pt">The following script performs updates every frame, no matter what:</target>
+<target xml:lang="pt">O seguinte script executa atualizações cada frame, não importa o que:</target>
 </trans-unit>
 <trans-unit id="tu15" xml:space="preserve">
 <source xml:lang="en">public class SampleSyncScript : SyncScript
@@ -82,34 +82,34 @@
 	}
 }
 </source>
-<target xml:lang="pt">public class SampleSyncScript : SyncScript
-{        
-	public override void Update()
-	{
-		// Performs the update on the entity — this code is executed every frame
+<target xml:lang="pt">classe pública SampleSyncScript : Sincronização
+(        
+	atualização()
+	(
+		\/\/ Executa a atualização na entidade — este código é executado cada quadro
 	}
 }
 </target>
 </trans-unit>
 <trans-unit id="tu16" xml:space="preserve">
 <source xml:lang="en">Asynchronous scripts</source>
-<target xml:lang="pt">Asynchronous scripts</target>
+<target xml:lang="pt">Scripts assíncronos</target>
 </trans-unit>
 <trans-unit id="tu17" xml:space="preserve">
 <source xml:lang="en">Asynchronous scripts are initialized only once, then canceled when removed from the scene.</source>
-<target xml:lang="pt">Asynchronous scripts are initialized only once, then canceled when removed from the scene.</target>
+<target xml:lang="pt">Os scripts assíncronos são inicializados apenas uma vez, depois cancelados quando removidos da cena.</target>
 </trans-unit>
 <trans-unit id="tu18" xml:space="preserve">
 <source xml:lang="en">Asynchronous code goes in the <g id="1">Execute</g> function.</source>
-<target xml:lang="pt">Asynchronous code goes in the <g id="1">Execute</g> function.</target>
+<target xml:lang="pt">O código assíncrono entra na função <g id="1">Execute</g>.</target>
 </trans-unit>
 <trans-unit id="tu19" xml:space="preserve">
 <source xml:lang="en">Code performing the cancellation goes in the <g id="1">Cancel</g> method.</source>
-<target xml:lang="pt">Code performing the cancellation goes in the <g id="1">Cancel</g> method.</target>
+<target xml:lang="pt">Código que executa o cancelamento vai no método <g id="1">Cancel</g>.</target>
 </trans-unit>
 <trans-unit id="tu20" xml:space="preserve">
 <source xml:lang="en">The following script performs actions that depend on events and triggers:</source>
-<target xml:lang="pt">The following script performs actions that depend on events and triggers:</target>
+<target xml:lang="pt">O seguinte script executa ações que dependem de eventos e gatilhos:</target>
 </trans-unit>
 <trans-unit id="tu21" xml:space="preserve">
 <source xml:lang="en">public class SampleAsyncScript : AsyncScript
@@ -129,19 +129,19 @@
 	}
 }
 </source>
-<target xml:lang="pt">public class SampleAsyncScript : AsyncScript
-{        
-	public override async Task Execute() 
-	{
-		// The initialization code should come here, if necessary
+<target xml:lang="pt">classe pública SampleAsyncScript : AsyncScript
+(        
+	override público async Task Execute() 
+	(
+		\/\/ O código de inicialização deve vir aqui, se necessário
 		
-		while (Game.IsRunning) // loop until the game ends (optional depending on the script)
-		{
-			await MyEvent;
+		enquanto (Game.IsRunning) \/\/ loop até que o jogo termina (opcional dependendo do script)
+		(
+			aguarde MyEvent;
 
-			// Do some stuff
+			\/\/ Faz alguma coisa
 			
-			await Script.NextFrame(); // wait for the next frame (optional depending on the script)
+			await Script.NextFrame(); \/\/ esperar pelo próximo frame (opcional dependendo do script)
 		}
 	}
 }
@@ -149,35 +149,35 @@
 </trans-unit>
 <trans-unit id="tu22" xml:space="preserve">
 <source xml:lang="en">See also</source>
-<target xml:lang="pt">See also</target>
+<target xml:lang="pt">Ver também</target>
 </trans-unit>
 <trans-unit id="tu23" xml:space="preserve">
 <source xml:lang="en"><g id="1">Create a script</g></source>
-<target xml:lang="pt"><g id="1">Create a script</g></target>
+<target xml:lang="pt"><g id="1">Criar um script</g></target>
 </trans-unit>
 <trans-unit id="tu24" xml:space="preserve">
 <source xml:lang="en"><g id="1">Use a script</g></source>
-<target xml:lang="pt"><g id="1">Use a script</g></target>
+<target xml:lang="pt"><g id="1">Use um script</g></target>
 </trans-unit>
 <trans-unit id="tu25" xml:space="preserve">
 <source xml:lang="en"><g id="1">Public properties and fields</g></source>
-<target xml:lang="pt"><g id="1">Public properties and fields</g></target>
+<target xml:lang="pt"><g id="1">Propriedades e campos públicos</g></target>
 </trans-unit>
 <trans-unit id="tu26" xml:space="preserve">
 <source xml:lang="en"><g id="1">Scheduling and priorities</g></source>
-<target xml:lang="pt"><g id="1">Scheduling and priorities</g></target>
+<target xml:lang="pt"><g id="1">Programação e prioridades</g></target>
 </trans-unit>
 <trans-unit id="tu27" xml:space="preserve">
 <source xml:lang="en"><g id="1">Events</g></source>
-<target xml:lang="pt"><g id="1">Events</g></target>
+<target xml:lang="pt"><g id="1">Eventos</g></target>
 </trans-unit>
 <trans-unit id="tu28" xml:space="preserve">
 <source xml:lang="en"><g id="1">Debugging</g></source>
-<target xml:lang="pt"><g id="1">Debugging</g></target>
+<target xml:lang="pt"><g id="1">Depuração</g></target>
 </trans-unit>
 <trans-unit id="tu29" xml:space="preserve">
 <source xml:lang="en"><g id="1">Preprocessor variables</g></source>
-<target xml:lang="pt"><g id="1">Preprocessor variables</g></target>
+<target xml:lang="pt"><g id="1">Variáveis de pré-processamento</g></target>
 </trans-unit>
 </body>
 </file>

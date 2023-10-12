@@ -1,7 +1,7 @@
-# Scene management
+# Gestão de cenas
 
-In this tutorial we learn about scenes, child scenes, hiding and locking scenes and various other concepts that come with scene management in Stride game studio.
+Neste tutorial aprendemos sobre cenas, cenas de crianças, esconderijos e cenas de bloqueio e vários outros conceitos que vêm com gerenciamento de cena no estúdio de jogos Stride.
 
-[!INCLUDE [stride-studio-note](../../includes/game-studio-xenko-note.md)]
+[! INCLUÍDO [stride-studio-note](../../includes/game-studio-xenko-note.md)]
 
-> [!Video https://www.youtube.com/embed/hgtg3rxiOug]
+> [!Vídeo https://www.youtube.com/embed/hgtg3rxiOug]

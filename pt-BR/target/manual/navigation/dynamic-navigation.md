@@ -1,82 +1,82 @@
-# Dynamic navigation
+# Navegação dinâmica
 
-<span class="badge text-bg-primary">Beginner</span>
-<span class="badge text-bg-success">Level designer</span>
-<span class="badge text-bg-success">Programmer</span>
+<x1\/>Introdução<x2\/>
+<x3\/> Designer de nível <x4\/>
+<x5\/> Programador <x6\/>
 
-If you enable **dynamic navigation**, entities with navigation components don't need a [navigation mesh](navigation-meshes.md) asset. Instead, the entities generate navigation meshes dynamically.
+Se você ativar a navegação **dinâmica**, as entidades com componentes de navegação não precisam de um ativo [navigation mesh](navigation-meshes.md). Em vez disso, as entidades geram malhas de navegação dinamicamente.
 
-> [!Note]
-> Make sure that the scenes you want the entities to navigate dynamically have [navigation bounding boxes](navigation-bounding-boxes.md).
+> <x1\/>!Note<x2\/>
+> Certifique-se de que as cenas que você deseja que as entidades naveguem dinamicamente têm [navigação delimitando caixas](navigation-bounding-boxes.md).
 
-## Enable dynamic navigation
+## Habilitar navegação dinâmica
 
-You can enable and disable dynamic navigation in the global [game settings](../game-studio/game-settings.md) asset.
+Você pode ativar e desativar a navegação dinâmica no ativo global [game settings](../game-studio/game-settings.md).
 
-1. On the entities you want to navigate dynamically, under the navigation component properties, next to **Navigation mesh**, make sure no navigation mesh is selected.
+1. Nas entidades que você deseja navegar dinamicamente, sob as propriedades do componente de navegação, ao lado de **Navigation mesh**, certifique-se de que nenhuma malha de navegação é selecionada.
 
-   ![No navigation mesh selected](media/no-navigation-mesh-selected.png)
+   <x1\/> Nenhuma malha de navegação selecionada<x2\/>
 
-   For more information about the navigation component, see [Navigation components](navigation-components.md).
+   Para mais informações sobre o componente de navegação, consulte os componentes de navegação [Navigation](navigation-components.md).
 
-2. In the **Solution Explorer** (the bottom-left pane by default), select the **Assets folder**.
+2. No **Solution Explorer** (o painel inferior esquerdo por padrão), selecione a pasta **Assets**.
 
-   ![Select Assets folder asset](media/select-asset-folder.png)
+   <x1\/>Select Assets pasta asset<x2\/>
 
-3. In the **Asset View** (the bottom pane by default), select the **Game Settings** asset.
+3. No **Asset View** (o painel inferior por padrão), selecione o ativo **Game Settings**.
 
-   ![Select Game Settings asset](media/select-game-settings-asset.png)
+   <x1\/>Selecionar configurações de jogo asset<x2\/>
 
-4. In the **Property Grid** (the right-hand pane by default), under **Navigation Settings**, expand **Dynamic navigation mesh**.
+4. No **Property Grid** (o painel direito por padrão), sob **Configurações de navegação**, expanda ** malha de navegação dinâmica**.
 
-   ![Game settings](media/expand-dynamic-navigation-mesh.png)
+   <x1\/> Configurações do jogo <x2\/>
 
-5. Select the **Enable dynamic navigation** checkbox.
+5. Selecione a caixa de seleção **Ativar navegação dinâmica**.
 
-   ![Enable dynamic navigation checkbox](media/enable-dynamic-navigation.png)
+   <x1\/> Habilitar caixa de verificação de navegação dinâmica<x2\/>
 
-## Dynamic navigation mesh properties
+## Propriedades de malha de navegação dinâmica
 
-| Property | Description |
+| Propriedade | Descrição |
 |---------------------------|--------------
-| Enabled | Enable dynamic navigation on navigation components that have no assigned navigation mesh |
-| Included collision groups | The collision groups dynamically-generated navigation meshes use. By default, meshes use all collision groups |
-| Build settings | Advanced settings for dynamically-generated navigation meshes |
+| Activado | Habilitar navegação dinâmica em componentes de navegação que não tenham rede de navegação atribuída |
+| Grupos de colisão incluídos | Os grupos de colisão usam malhas de navegação geradas dinamicamente. Por padrão, as malhas usam todos os grupos de colisão |
+| Configurar configurações | Configurações avançadas para malhas de navegação geradas dinamicamente |
 
-## Enable and disable dynamic navigation from a script
+## Habilitar e desativar a navegação dinâmica de um script
 
-Example code:
+Exemplo de código:
 
 ```cs
-// Find and enable the dynamic navigation mesh system
+\/\/ Encontrar e ativar o sistema de malha de navegação dinâmica
 dynamicNavigationMeshSystem = Game.GameSystems.OfType<DynamicNavigationMeshSystem>().FirstOrDefault();
-dynamicNavigationMeshSystem.Enabled = true;
+dynamicNavigationMeshSystem. Activado = verdadeiro;
 
-// This stops the dynamic navigation mesh system from automatically rebuilding in the folowing cases:
-//  - loading/Unloading scenes
-//  - adding/removing static collider components
-//  - adding/removing navigation mesh bounding boxes
+\/\/ Isso impede o sistema de malha de navegação dinâmica de reconstruir automaticamente nos casos de folowing:
+\/\/ - cenas de carregamento\/descarregamento
+\/\/ - adicionando\/removendo componentes de colisão estática
+\/\/ - adicionando\/removendo caixas de amarração de malha de navegação
 dynamicNavigationMeshSystem.AutomaticRebuild = false;
 
-// ...
+\/\/...
 
-if (/* any condition that should cause the navigation mesh to update (eg open/close door) */)
-{
-	// Start an asynchronous rebuild of the navigation mesh
-	var rebuildTask = dynamicNavigationMeshSystem.Rebuild();
-	rebuildTask.ContinueWith((x) =>
-	{
-		if (x.Result.Success)
-		{
-			// The navigation mesh is successfully rebuilt
+se (\/* qualquer condição que deve fazer com que a malha de navegação atualize (por exemplo, porta aberta\/fecha) *\/)
+(
+	\/\/ Comece uma reconstrução assíncrona da malha de navegação
+	var reconstruirTask = dinâmicoNavigationMeshSystem.Rebuild();
+	reconstruirTask.ContinueWith(x) =>
+	(
+		se (x.Result. Sucesso)
+		(
+			\/\/ A malha de navegação é reconstruída com sucesso
 		}
 	});
 }
 ```
 
-## See also
+## Ver também
 
-* [Navigation groups](navigation-groups.md)
-* [Navigation meshes](navigation-meshes.md)
-* [Navigation bounding boxes](navigation-bounding-boxes.md)
-* [Navigation components](navigation-components.md)
+* [Grupos de navegação](navigation-groups.md)
+* [Malhas de navegação](navigation-meshes.md)
+* [Caixas de ligação de navegação](navigation-bounding-boxes.md)
+* [Componentes de navegação](navigation-components.md)

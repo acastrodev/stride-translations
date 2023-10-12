@@ -1,70 +1,70 @@
-# Set the graphics platform
+# Defina a plataforma gráfica
 
-<span class="badge text-bg-primary">Beginner</span>
+<x1\/>Introdução<x2\/>
 
-The **graphics platform** controls the graphics hardware in the device you run your project on. Different devices support different graphics platforms; for example, iOS supports the OpenGL ES graphics platform. You can select which graphics platform your game uses, and add overrides for different platforms (eg Windows, Android, etc).
+A plataforma **graphics** controla o hardware gráfico no dispositivo em que você roda seu projeto. Diferentes dispositivos suportam diferentes plataformas gráficas; por exemplo, o iOS suporta a plataforma gráfica OpenGL ES. Você pode selecionar qual plataforma gráfica seu jogo usa e adicionar substituições para diferentes plataformas (por exemplo, Windows, Android, etc).
 
-> [!Warning]
-> Moving from Direct3D to an earlier Direct3D version can create problems. For example, if your game contains HDR textures, it will crash, as Direct3D 9 doesn't support them.
+> <x1\/>!Warning<x2\/>
+> Mudar de Direct3D para uma versão anterior do Direct3D pode criar problemas. Por exemplo, se o seu jogo contém texturas HDR, ele vai falhar, como Direct3D 9 não os suporta.
 
-You set the graphics platform in the [game settings](../game-studio/game-settings.md) asset.
+Você define a plataforma gráfica no ativo [game settings](../game-studio/game-settings.md).
 
-> [!Note]
-> Make sure you have the latest drivers for the graphics platforms you want to use.
+> <x1\/>!Note<x2\/>
+> Certifique-se de ter os drivers mais recentes para as plataformas gráficas que você deseja usar.
 
-1. In the **Asset View**, select the **Game Settings** asset.
+1. No **Asset View**, selecione o ativo **Game Settings**.
 
-   ![Game settings asset](media/games-settings-asset.png)
+   <x1\/> Configurações do jogo asset<x2\/>
 
-2. In the Property Grid, under **Rendering Settings > Target graphics platform**, select the graphics platform you want to use.
+2. Na Grade de Propriedade, em **Configurações de Correção > Plataforma gráfica de destino**, selecione a plataforma gráfica que você deseja usar.
 
-   ![Select graphics platform](media/change-graphics-platform.png)
+   <x1\/> Selecione a plataforma gráfica<x2\/>
 
-   If you select **Default**, Stride uses the graphics platform appropriate for your platform (eg Windows, Android) when you build.
+   Se você selecionar **Default**, Stride usa a plataforma gráfica apropriada para sua plataforma (por exemplo, Windows, Android) quando você construir.
 
-| Platform | Default graphics platform |
+| Plataforma | Plataforma gráfica padrão |
 |---------------|-------------
 | Windows, UWP | Direct3D11 |
 | Linux, Mac OS | OpenGL |
-| Other | OpenGL ES |
+| Outros | OpenGL ES |
 
-## Override the graphics platform
+## Substituir a plataforma gráfica
 
-You can override the graphics platform Stride uses for specific platforms. For example, you can have Linux use Vulkan while other platforms use the default.
+Você pode substituir a plataforma gráfica que a Stride usa para plataformas específicas. Por exemplo, você pode usar o Linux Vulkan enquanto outras plataformas usam o padrão.
 
-1. With the **GameSettings** asset selected, in the Property Grid, under **Overrides**, click ![Green plus button](~/manual/game-studio/media/green-plus-icon.png) (**Add**).
+1. Com o ativo **GameSettings** selecionado, na Grade de Propriedade, abaixo de **Overrides**, clique em <x1\/>Green plus button<x2\/> (**Add**).
 
-   ![Select graphics platform](media/add-override.png)
+   <x1\/> Selecione a plataforma gráfica<x2\/>
 
-   Game Studio adds an override.
+   Game Studio adiciona uma substituição.
 
-2. In the new override, next to **Platforms**, select the platforms you want this override to apply to.
+2. Na nova substituição, ao lado de **Platforms**, selecione as plataformas às quais você deseja que essa substituição seja aplicada.
 
-   ![Select graphics platform override](media/select-override-platform.png)
+   <x1\/>Selecione a plataforma de gráficos sobrescrevendo<x2\/>
 
-3. In the **Configuration** drop-down menu, select **Rendering Settings**.
+3. No menu suspenso **Configuration**, selecione **Rendering Settings**.
 
-   ![Select graphics platform override](media/select-override-configuration.png)
+   <x1\/>Selecione a plataforma de gráficos sobrescrevendo<x2\/>
 
-4. Under **Rendering Settings**, in the **Preferred Graphics Platform** drop-down menu, select the graphics platform you want to use.
+4. Em **Rendering Settings**, no menu suspenso **Preferred Graphics Platform**, selecione a plataforma gráfica que deseja usar.
 
-   ![Select graphics platform override](media/select-override-graphics-platform.png)
+   <x1\/>Selecione a plataforma de gráficos sobrescrevendo<x2\/>
 
-Stride overrides the graphics platform for the platforms you selected.
+Stride substitui a plataforma gráfica para as plataformas selecionadas.
 
-## Check which graphics platform your project uses
+## Verifique qual plataforma gráfica seu projeto usa
 
-1. Add a break point to your game code (eg in a script).
+1. Adicione um ponto de interrupção ao seu código de jogo (por exemplo, em um script).
 
-2. Run the project.
+2. Execute o projeto.
 
-3. Check the value of the [GraphicsDevice.Platform](xref:Stride.Graphics.GraphicsDevice.Platform) variable.
+3. Verifique o valor da variável [GraphicsDevice.Platform](xref:Stride.Graphics.GraphicsDevice.Platform).
 
-   For example, this project is using Vulkan:
+   Por exemplo, este projeto está usando Vulkan:
 
-   ![Select graphics platform](media/check-platform-at-runtime.png)
+   <x1\/> Selecione a plataforma gráfica<x2\/>
 
-## See also
+## Ver também
 
-* [Platforms index](index.md)
-* [Game settings](../game-studio/game-settings.md)
+* [Índice de plataformas](index.md)
+* [Definições do jogo](../game-studio/game-settings.md)

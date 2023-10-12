@@ -1,84 +1,84 @@
-# Debug renderer
+# Renderizador de depuração
 
-The **debug renderer** is a placeholder renderer you can use with scripts to print debug information. By default, the debug renderer is included in the graphics compositor as a child of the game entry point.
+O renderizador **debug** é um renderizador de placeholder que você pode usar com scripts para imprimir informações de depuração. Por padrão, o renderizador de depuração é incluído no compositor gráfico como uma criança do ponto de entrada do jogo.
 
-![Debug renderer](media/debug-renderer.png)
+<x1\/>Debug renderer<x2\/>
 
-## Create a debug renderer
+## Criar um renderizador de depuração
 
-To create a debug renderer, right-click the graphics compositor editor and select **Debug renderer**.
+Para criar um renderizador de depuração, clique com o botão direito do mouse no editor de compositores gráficos e selecione **Debug renderer**.
 
-![Create debug renderer](media/create-debug-renderer.png)
+<x1\/>Criar renderizador de depuração<x2\/>
 
-## Connect a debug renderer to an entry point
+## Conecte um renderizador de depuração a um ponto de entrada
 
-In most cases, you want the debug renderer to share an entry point with one or more forward renderers. To do this, use a **scene renderer collection** and select the debug renderer and forward renderer(s) as children, as in the screenshot below:
+Na maioria dos casos, você deseja que o renderizador de depuração compartilhe um ponto de entrada com um ou mais renderizadores avançados. Para fazer isso, use uma coleção de renderizador **scene** e selecione o renderizador de depuração e renderizador(s) para a frente como crianças, como na captura de tela abaixo:
 
-![Debug renderer Property Grid](media/debug-renderer-property-setup.png)
+<x1\/>Debug renderer Property Grid<x2\/>
 
-## Use a debug renderer
+## Use um renderizador de depuração
 
-To use the debug renderer, reference it in your script and add debug render stages.
+Para usar o renderizador de depuração, faça referência no seu script e adicione etapas de renderização de depuração.
 
-For example, the **Debug physics shapes** script included in Stride uses the debug renderer to display collider shapes at runtime.
+Por exemplo, o script **Debug Physics shapes** incluído no Stride usa o renderizador de depuração para exibir formas de colisão no tempo de execução.
 
 ```cs
-using System.Linq;
-using System.Threading.Tasks;
-using Stride.Input;
-using Stride.Engine;
-using Stride.Physics;
-using Stride.Rendering;
-using Stride.Rendering.Compositing;
+usando o Sistema. Linq;
+usando o Sistema. Threading. Tarefas;
+usando Stride. Entrada;
+usando Stride. Motor;
+usando Stride. Física;
+usando Stride. Renderização;
+usando Stride. Renderização. Composição;
 
 namespace MyGame
-{
-    public class DebugPhysicsShapes : AsyncScript
-    {
-        public RenderGroup RenderGroup = RenderGroup.Group7;
+(
+    classe pública DebugPhysics Formas: AsyncScript
+    (
+        renderGroup RenderGroup público = RenderGroup.Group7;
 
-        public override async Task Execute()
-        {
-        //set up rendering in the debug entry point if we have it
-        var compositor = SceneSystem.GraphicsCompositor;
+        override público async Task Execute()
+        (
+        \/\/set up rendering in the debug entry point if we have it
+        compositor var = SceneSystem.GraphicsCompositor;
         var debugRenderer =
-            ((compositor.Game as SceneCameraRenderer)?.Child as SceneRendererCollection)?.Children.Where(
-                x => x is DebugRenderer).Cast<DebugRenderer>().FirstOrDefault();
-        if (debugRenderer == null)
-            return;
+            (compositor. Jogo como SceneCameraRenderer)?. Criança como SceneRendererCollection)?. Crianças. Onde..
+                x => x é DebugRenderer). Cast<DebugRenderer>(). FirstOrDefault();
+        se (debugRenderer == null)
+            voltar;
 
-        var shapesRenderState = new RenderStage("PhysicsDebugShapes", "Main");
-            compositor.RenderStages.Add(shapesRenderState);
+        var shapesRenderState = novo RenderStage("PhysicsDebugShapes", "Main");
+            compositor.RenderStages.Add (shapesRenderState);
             var meshRenderFeature = compositor.RenderFeatures.OfType<MeshRenderFeature>().First();
-            meshRenderFeature.RenderStageSelectors.Add(new SimpleGroupToRenderStageSelector
-            {
-                EffectName = "StrideForwardShadingEffect",
-                RenderGroup = (RenderGroupMask)(1 << (int)RenderGroup),
+            meshRenderFeature.RenderStageSelectors.Add (novo SimplesGroupToRenderStageSelector
+            (
+                Efeito Nome = "StrideForwardShadingEffect",
+                RenderGroup = (RenderGroupMask)(1 < (int)RenderGroup),
                 RenderStage = shapesRenderState,
             });
             meshRenderFeature.PipelineProcessors.Add(new WireframePipelineProcessor { RenderStage = shapesRenderState });
-            debugRenderer.DebugRenderStages.Add(shapesRenderState);
+            debugRenderer.DebugRenderStages.Add (shapesRenderState);
 
-            var simulation = this.GetSimulation();
-            if (simulation != null)
-                simulation.ColliderShapesRenderGroup = RenderGroup;
+            var simulação = this.GetSimulation();
+            se (simulação)
+                simulação. ColliderShapesRenderGroup = RenderGroup;
 
-            var enabled = false;
-            while (Game.IsRunning)
-            {
-                if (Input.IsKeyDown(Keys.LeftShift) && Input.IsKeyDown(Keys.LeftCtrl) && Input.IsKeyReleased(Keys.P))
-                {
-                    if (simulation != null)
-                    {
-                        if (enabled)
-                        {
-                            simulation.ColliderShapesRendering = false;
-                            enabled = false;
+            var habilitado = falso;
+            enquanto (Game.IsRunning)
+            (
+                if (Input.IsKeyDown(Keys.LeftShift) && Input.IsKeyDown(Keys.LeftCtrl) && Input.IsKeyReleased(Keys.P)))))
+                (
+                    se (simulação)
+                    (
+                        se (habilitado)
+                        (
+                            simulação. ColliderShapesRendering = false;
+                            habilitado = falso;
                         }
-                        else
-                        {
-                            simulation.ColliderShapesRendering = true;
-                            enabled = true;
+                        mais
+                        (
+                            simulação. ColliderShapesRendering = verdadeiro;
+                            habilitado = verdadeiro;
                         }
                     }
                 }
@@ -90,10 +90,10 @@ namespace MyGame
 }
 ```
 
-For information about how to use this script, see [Colliders](../../physics/colliders.md).
+Para obter informações sobre como usar este script, consulte [Colliders](../../physics/colliders.md).
 
-## See also
+## Ver também
 
-* [Scene renderers](scene-renderers.md)
-   * [Custom scene renders](custom-scene-renderers.md)
-* [Physics — Colliders](../../physics/colliders.md)
+* [Renderizadores de cenas](scene-renderers.md)
+   * [Renderizações de cena personalizadas](custom-scene-renderers.md)
+* [Física — Colliders](../../physics/colliders.md)

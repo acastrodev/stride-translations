@@ -1,20 +1,20 @@
-# Solution
+# Solução
 
-[!INCLUDE [stride-studio-note](../../includes/under-construction-note.md)]
+[! INCLUÍDO [stride-studio-note](../../includes/under-construction-note.md)]
 
-In Stride Studio, the **Solution Explorer** displays the hierarchy of your game.
+No Stride Studio, o **Solution Explorer** exibe a hierarquia do seu jogo.
 
-The content of each package is grouped into two categories: Local packages and External packages. Local packages are the ones that you have created. External packages are the one that you have downloaded from the Internet; for example, the default Stride package. If you open a package file (```.sdpkg```), a single package of the local package category is visible. If you open a solution file (```.sln```) and the solution contains more that one package, you can see several packages.
+O conteúdo de cada pacote é agrupado em duas categorias: Pacotes locais e pacotes externos. Os pacotes locais são os que você criou. Pacotes externos são aqueles que você baixou da Internet; por exemplo, o pacote padrão Stride. Se você abrir um arquivo de pacote (```.sdpkg```), um único pacote da categoria de pacote local é visível. Se você abrir um arquivo de solução (```.sln```) e a solução contém mais que um pacote, você pode ver vários pacotes.
 
-Each package contains the following three base elements:
+Cada pacote contém os seguintes três elementos base:
 
-* Assets: The assets element comprises all the assets contained in a package. You can expand the Assets element to see the same hierarchy among the assets that is on the file system. When you select the **Assets** folder, the **Asset View** displays the assets contained in this folder.
+* Ativos: O elemento de ativos compreende todos os ativos contidos em um pacote. Você pode expandir o elemento Ativos para ver a mesma hierarquia entre os ativos que está no sistema de arquivos. Quando você seleciona a pasta **Assets**, a **Asset View** exibe os ativos contidos nesta pasta.
 
-* Code: The code element contains the code libraries and executables in the package. Each of them corresponds to a single ```.csproj``` file. By right-clicking an executable, you can set it as the current project. This action enables you to compile the assets for the related platform and launch the game.
+* Código: O elemento de código contém as bibliotecas de código e executáveis no pacote. Cada um deles corresponde a um único arquivo ```.csproj```. Ao clicar com o botão direito do mouse em um executável, você pode configurá-lo como o projeto atual. Esta ação permite compilar os ativos para a plataforma relacionada e lançar o jogo.
 
-* Dependencies: The dependencies element lists all the other packages that are referenced by a package. The packages in the **Dependencies** list have their assets accessible to this package.
+* Dependências: O elemento de dependências lista todos os outros pacotes que são referenciados por um pacote. Os pacotes na lista **Dependencies** possuem seus ativos acessíveis a este pacote.
 
-> [!Note]
-> You can change the hierarchy in the **Solution Explorer** by creating folders and renaming or deleting objects.
+> <x1\/>!Note<x2\/>
+> Você pode alterar a hierarquia no **Solution Explorer** criando pastas e renomeando ou apagando objetos.
 
-Stride uses Visual Studio solution files to list all the packages and code project related to a game. Thus, you can easily integrate Stride Studio and Visual Studio for your project because they use the same root file. By default, Stride Studio creates a new solution file when you create a new project, and manages references to both C# projects and packages.
+Stride usa arquivos de solução Visual Studio para listar todos os pacotes e projeto de código relacionados a um jogo. Assim, você pode facilmente integrar Stride Studio e Visual Studio para o seu projeto porque eles usam o mesmo arquivo raiz. Por padrão, o Stride Studio cria um novo arquivo de solução quando você cria um novo projeto e gerencia referências a projetos e pacotes C#.

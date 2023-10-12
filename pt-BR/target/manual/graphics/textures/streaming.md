@@ -1,117 +1,117 @@
 # Streaming
 
-<span class="badge text-bg-primary">Beginner</span>
-<span class="badge text-bg-success">Artist</span>
-<span class="badge text-bg-success">Programmer</span>
+<x1\/>Introdução<x2\/>
+<x3\/>Artista <x4\/>
+<x5\/> Programador <x6\/>
 
-When you **stream** textures, Stride only loads them when they're needed. This significantly decreases the time it takes to load a game or scene, uses less memory, and makes your game easier to scale.
+Quando você **stream** texturas, O Stride só os carrega quando são necessários. Isso diminui significativamente o tempo necessário para carregar um jogo ou cena, usa menos memória e torna o seu jogo mais fácil de escalar.
 
-> [!Note]
-> Currently, only textures can be streamed.
+> <x1\/>!Note<x2\/>
+> Atualmente, apenas texturas podem ser transmitidas.
 
-## How Stride streams textures
+## Como Stride transmite texturas
 
-Instead of loading a texture when Stride loads the scene (with all its mipmaps), Stride only loads it when it's used (eg a model using the texture is onscreen).
+Em vez de carregar uma textura quando Stride carrega a cena (com todos os seus mipmaps), Stride apenas carrega quando é usado (por exemplo, um modelo usando a textura está na tela).
 
-When the texture is no longer needed (ie no objects that use the texture are onscreen), Stride unloads it.
+Quando a textura não é mais necessária (ou seja, nenhum objeto que use a textura está na tela), Stride descarrega-a.
 
-Currently, there's no loading priority for textures. For example, Stride doesn't load textures based on distance; instead, Stride loads them all in sequence.
+Atualmente, não há prioridade de carregamento para texturas. Por exemplo, o Stride não carrega texturas baseadas na distância; em vez disso, o Stride carrega todos em sequência.
 
-### Using streaming with mipmaps
+### Usando streaming com mipmaps
 
-If mipmaps (different-resolution versions of textures displayed at different distances) are enabled in the [texture properties](index.md), the lower-resolution mipmaps load first, as they're smaller in size. The gif below shows this process happening in slow motion.
+Se os mipmaps (versões de resolução diferente de texturas exibidas a diferentes distâncias) são habilitados nas propriedades [texture](index.md), os mipmaps de baixa resolução carregam primeiro, pois são menores em tamanho. O gif abaixo mostra este processo acontecendo em câmera lenta.
 
-![Texture loading](media/loading-texture.gif)
+<x1\/>Textura de carga<x2\/>
 
-In most situations, the process is very quick. We recommend you enable mipmaps for streaming as it means lower-resolution versions of textures act as placeholders until the higher-quality versions can load, reducing pop-in.
+Na maioria das situações, o processo é muito rápido. Recomendamos que você habilitar mipmaps para streaming, pois significa que versões de baixa resolução de texturas atuam como placeholders até que as versões de maior qualidade possam carregar, reduzindo o pop-in.
 
-## When **not** to use streaming
+## Quando **not** usar streaming
 
-Streaming is enabled by default for all textures. You might want to disable streaming on important textures you always want to display immediately and in high quality, such as:
+Streaming é ativado por padrão para todas as texturas. Você pode querer desativar a transmissão em texturas importantes que você sempre deseja exibir imediatamente e em alta qualidade, como:
 
-* [splash screens](../../game-studio/splash-screen.md)
+* [telas de respingo](../../game-studio/splash-screen.md)
 
-* textures on player models
+* texturas em modelos de jogadores
 
-* textures used in [particles](../../particles/index.md) (particles often have a short lifespan, so might disappear before the texture loads)
+* texturas usadas em [partcles](../../particles/index.md) (as partículas muitas vezes têm uma vida útil curta, então pode desaparecer antes das cargas de textura)
 
-## Enable or disable streaming on a texture
+## Ativar ou desativar a transmissão em uma textura
 
-1. In the **Asset View**, select the texture.
+1. No **Asset View**, selecione a textura.
 
-   ![Select normal map texture](media/select-texture.png)
+   <x1\/>Selecione a textura normal do mapa<x2\/>
 
-2. In the **Property Grid**, under **Format**, use the **Stream** check box.
+2. No **Property Grid**, sob **Format**, use o **Stream** caixa de verificação.
 
-   ![Enable streaming](media/enable-streaming.png)
+   <x1\/> Ativar streaming<x2\/>
 
-## Global streaming settings
+## Configurações de streaming globais
 
-You can access the global streaming settings in the Game Settings asset. These settings apply to all textures that have streaming enabled.
+Você pode acessar as configurações de streaming globais no ativo Configurações do jogo. Essas configurações se aplicam a todas as texturas que possuem streaming ativado.
 
-For instructions about how to access the global streaming settings, see the [Game Settings](../../game-studio/game-settings.md) page.
+Para obter instruções sobre como acessar as configurações de streaming globais, consulte a página [Game Settings](../../game-studio/game-settings.md).
 
-### Properties
+### Propriedades
 
-![Streaming settings](../../game-studio/media/streaming-settings.png)
+<x1\/>Streaming settings<x2\/>
 
-| Property | Description |
+| Propriedade | Descrição |
 |----------------------|------------
-| Streaming | Enable streaming |
-| Update interval | How frequently Stride updates the streaming. Smaller intervals mean the streaming system reacts faster, but use more CPU and cause more memory fluctuations. |
-| Max resources per update | The maximum number of textures loaded or unloaded per streaming update. Higher numbers reduce pop-in but might slow down the framerate. |
-| Resource timeout (ms) | How long resources stay loaded after they're no longer used (when the **memory budget** is exceeded) |
-| Memory budget (in MB) | When the memory used by streaming exceeds this budget, Stride unloads unused textures. You can increase this to keep more textures loaded when you have memory to spare, and vice versa. |
+| Streaming | Activar streaming |
+| Intervalo de atualização | Com que frequência Stride atualiza o streaming. Intervalos menores significam que o sistema de streaming reage mais rápido, mas use mais CPU e cause mais flutuações de memória. |
+| Recursos máximos por atualização | O número máximo de texturas carregadas ou descarregadas por atualização de streaming. Números mais elevados reduzem o pop-in, mas podem retardar o framerate. |
+| Tempo de recurso (ms) | Quanto tempo os recursos permanecem carregados após não serem mais utilizados (quando o orçamento de memória **** é excedido) |
+| Orçamento de memória (em MB) | Quando a memória usada por streaming excede este orçamento, Stride descarrega texturas não utilizadas. Você pode aumentar isso para manter mais texturas carregadas quando você tem memória para poupar, e vice-versa. |
 
-## Access the streaming manager in code
+## Acesse o gerenciador de streaming em código
 
 Use [Streaming](xref:Stride.Streaming).
 
-For example, to disable streaming globally, use:
+Por exemplo, para desativar o streaming globalmente, use:
 
 ```cs
-Streaming.EnableStreaming = false;
+A transmitir. EnableStreaming = false;
 ```
 
-To start streaming a texture:
+Para começar a transmitir uma textura:
 
 ```cs
 Streaming.StreamResources(myTexture);
 ```
 
-To disable streaming at load time:
+Para desativar a transmissão no tempo de carga:
 
 ```cs
 var texture = Content.Load<Texture>("myTexture", ContentManagerLoaderSettings.StreamingDisabled);
 ```
 
-### Options
+### Opções
 
-There are three [StreamingOptions](xref:Stride.Streaming.StreamingOptions):
+Existem três [StreamingOptions](xref:Stride.Streaming.StreamingOptions):
 
-* The `KeepLoaded` option keeps the texture in memory even when the memory budget is exceeded.
+* A opção `KeepLoaded` mantém a textura em memória mesmo quando o orçamento de memória é excedido.
 
-* If mipmaps are enabled, the `ForceHighestQuality` option loads only the highest-quality version of the texture.
+* Se os mipmaps estiverem habilitados, a opção `ForceHighestQuality` carrega apenas a versão de alta qualidade da textura.
 
-* The `KeepLoaded` option keeps the texture in memory even when it's not used.
+* A opção `KeepLoaded` mantém a textura em memória mesmo quando não é usada.
 
-For example:
+Por exemplo:
 
 ```cs
 var myOptions = new StreamingOptions() { KeepLoaded = true };
 Streaming.StreamResources(myTexture, myOptions);
 ```
 
-To change the `StreamingOptions` at runtime, use `SetResourceStreamingOptions`. For example:
+Para alterar o `StreamingOptions` no tempo de execução, use `SetResourceStreamingOptions`. Por exemplo:
 
 ```cs
 var myNewOptions = new StreamingOptions() { KeepLoaded = false };
-Streaming.SetResourceStreamingOptions(myTexture, myNewOptions);
+Streaming.SetResourceStreamingOptions (myTexture, myNewOptions);
 ```
 
-## See also
+## Ver também
 
 * [StreamingManager API](xref:Stride.Streaming.StreamingManager)
-* [Textures index](index.md)
-* [Texture compression](compression.md)
-* [Game Settings](../../game-studio/game-settings.md)
+* [Índice de texturas](index.md)
+* [Compressão de textura](compression.md)
+* [Configurações do jogo](../../game-studio/game-settings.md)

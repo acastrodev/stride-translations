@@ -1,136 +1,136 @@
-# Tutorial: Script a trigger
+# Tutorial: Script um gatilho
 
-<span class="badge text-bg-primary">Beginner</span>
-<span class="badge text-bg-success">Designer</span>
+<x1\/>Introdução<x2\/>
+<x3\/>Designer<x4\/>
 
-In this tutorial, we'll create a [trigger](../physics/triggers.md) that doubles the size of a ball when the ball passes through it.
+Neste tutorial, criaremos um [trigger](../physics/triggers.md) que duplica o tamanho de uma bola quando a bola passar por ela.
 
-> [!Note]
-> The screenshots and videos in this tutorial were made using an earlier version of Stride, so some parts of the UI, and the default skybox and sphere, might look different from your version.
+> <x1\/>!Note<x2\/>
+> As capturas de tela e vídeos neste tutorial foram feitos usando uma versão anterior do Stride, então algumas partes da interface do usuário, e a caixa de céu padrão e esfera, podem parecer diferentes de sua versão.
 
-## 1. Create a bouncing ball
+## 1. Criar uma bola saltando
 
-Follow the instructions in the [Create a bouncing ball](create-a-bouncing-ball.md) tutorial. This creates a simple scene in which a ball falls from mid-air, hits the ground, and bounces.
+Siga as instruções no tutorial [Create a bouncing ball](create-a-bouncing-ball.md). Isso cria uma cena simples em que uma bola cai do meio do ar, atinge o chão e salta.
 
-## 2. Set the restitution
+## 2. Definir a restituição
 
-For this tutorial, we'll set the restitution of both the ground and the sphere to 0.9, which makes the ball very bouncy. This makes it easier to see the effect of the trigger later, as the ball will bounce in and out of the trigger area repeatedly.
+Para este tutorial, vamos definir a restituição do solo e da esfera para 0.9, o que torna a bola muito bouncy. Isso torna mais fácil ver o efeito do gatilho mais tarde, pois a bola vai entrar e sair da área do gatilho repetidamente.
 
-1. Select the **Sphere** entity.
+1. Selecione a entidade **Sphere**.
 
-2. In the **Property Grid**, under **Rigidbody**, set the **Restitution** to *0.9*.
+2. No **Property Grid**, sob **Rigidbody**, defina o **Restitution** para *0.9*.
 
-   ![Set restitution for a sphere](media/physics-tutorials-rigidbody-restitution.png)
+   <x1\/> Restituição de segundo para uma esfera<x2\/>
 
-3. Select the **Ground** entity.
+3. Selecione a entidade **Ground**.
 
-4. In the **Property Grid**, under **Static Collider**, set the **Restitution** to *0.9*.
+4. No **Property Grid**, sob **Static Collider**, defina o **Restitution** para *0.9*.
 
-   ![Set restitution for the ground](media/physics-tutorials-static-collider-restitution.png)
+   <x1\/> Restituição de reserva para terra<x2\/>
 
-## 3. Add a trigger
+## 3. Adicionar um gatilho
 
-Now we'll add a trigger between the ball and the ground, so the ball passes through it.
+Agora vamos adicionar um gatilho entre a bola e o chão, então a bola passa por ela.
 
-1. In the **Scene Editor**, click the white plus button (**Create new entity**) and select **Empty entity**.
+1. No **Scene Editor**, clique no botão plus branco (**Criar nova entidade**) e selecione **Empty entity**.
 
-   ![Create new entity](media/physics-tutorials-create-a-trigger-add-new-entity.png)
+   <x1\/>Criar nova entidade<x2\/>
 
-   Game Studio adds an entity to the scene with the default name **Entity**.
+   Game Studio adiciona uma entidade à cena com o nome padrão **Entidade**.
 
-2. This entity will be our trigger, so rename it *Trigger* to make it easy to identify.
+2. Esta entidade será o nosso gatilho, então renomeá-lo *Trigger* para facilitar a identificação.
 
-3. Since we don't need the trigger to move, we'll make it a static collider. In the **Property Grid**, click **Add component** and select **Static Collider**.
+3. Como não precisamos que o gatilho se mova, vamos torná-lo um colisor estático. No **Property Grid**, clique em **Add component** e selecione **Static Collider**.
 
-   ![Add Static collider component](media/physics-tutorials-create-a-bouncing-ball-add-collider-component.png)
+   <x1\/> Adicionar componente de colisor estático<x2\/>
 
-4. In the **Property Grid**, expand the **Static Collider component** to view its properties.
+4. No **Property Grid**, expanda o componente **Static Collider** para visualizar suas propriedades.
 
-5. Select the **Is Trigger** checkbox.
+5. Selecione a caixa de seleção **Is Trigger**.
 
-   ![Check 'Is trigger'](media/physics-tutorials-create-a-trigger-is-trigger-checkbox.png)
+   <x1\/>Check 'Is trigger'<x2\/>
 
-   This makes the collider a trigger. This means objects can pass through it, but are still detected in the code.
+   Isso faz com que o colisor seja um gatilho. Isso significa que os objetos podem passar por ele, mas ainda são detectados no código.
 
-6. We need to give the trigger a shape. Next to **Collider Shapes**, click ![Green plus button](~/manual/game-studio/media/green-plus-icon.png) (**Add**) and select **Box**.
+6. Precisamos dar ao gatilho uma forma. Ao lado de **Collider Shapes**, clique em <x1\/>Green plus button<x2\/> (**Add**) e selecione **Box**.
 
-   ![Add collider shape](media/physics-tutorials-create-a-trigger-add-box-shape-to-a-trigger.png)
+   <x1\/> Adicionar forma de colisor<x2\/>
 
-   This gives the trigger a box shape.
+   Isso dá ao gatilho uma forma de caixa.
 
-   ![Added trigger](media/physics-tutorials-added-trigger-area.png)
+   <x1\/> Adicionado gatilho<x2\/>
 
-7. Let's make the trigger a larger area. In the **Property Grid**, under the **Transform** component properties, set the **scale** to: *X:2, Y:2, Z:2*
+7. Vamos fazer o gatilho uma área maior. No **Property Grid**, sob as propriedades componentes **Transform**, defina o **scale** para: *X:2, Y:2, Z:2*
 
-   ![Scale a trigger](media/physics-tutorials-create-a-trigger-scale-trigger.png)
+   <x1\/> Escalar um gatilho<x2\/>
 
-   This doubles the size of the trigger.
+   Isto duplica o tamanho do gatilho.
 
-   ![Added trigger](media/physics-tutorials-added-trigger-doubled-area.png)
+   <x1\/> Adicionado gatilho<x2\/>
 
-## 4. Give the trigger a model
+## 4. Dê ao gatilho um modelo
 
-Right now, the trigger is invisible at runtime. To better show how the trigger works, we'll make it a transparent box. This has no effect on how the trigger works; it just means we can easily see where it is at runtime.
+Neste momento, o gatilho é invisível no tempo de execução. Para melhor mostrar como funciona o gatilho, vamos torná-lo uma caixa transparente. Isso não tem efeito sobre como o gatilho funciona; isso significa que podemos facilmente ver onde ele está no tempo de execução.
 
-1. Create a new procedural model asset. To do this, in the **Asset View**, click **Add asset**, and select **Models > Cube**.
+1. Criar um novo modelo processual ativo. Para fazer isso, no **Asset View**, clique em **Add asset** e selecione **Models > Cube**.
 
-   ![Add a model asset](media/physics-tutorials-create-a-trigger-add-a-model.png)
+   <x1\/> Adicionar um modelo asset<x2\/>
 
-2. Create a new empty material asset. To do this, in the **Asset View**, click **Add asset**, and select **Materials > Material**.
+2. Crie um novo ativo de material vazio. Para fazer isso, no **Asset View**, clique em **Add asset** e selecione **Materials > Material**.
 
-   ![Add a material asset](media/physics-tutorials-create-a-trigger-add-a-material-asset.png)
+   <x1\/> Adicionar um ativo material<x2\/>
 
-3. Let's rename the material to make it easy to identify. To do this, right-click, select **Rename**, and type a new name (eg *Transparent*).
+3. Vamos renomear o material para facilitar a identificação. Para fazer isso, clique com o botão direito do mouse, selecione **Rename** e digite um novo nome (por exemplo *Transparent*).
 
-4. Select the **Trigger** entity. In the **Property Grid**, click **Add component** and select **Model**.
+4. Selecione a entidade **Trigger**. No **Property Grid**, clique em **Add component** e selecione **Model**.
 
-   ![Add a model component](media/physics-tutorials-create-a-trigger-add-a-model-component.png)
+   <x1\/> Adicionar um componente de modelo<x2\/>
 
-   Game Studio adds a model component to the entity.
+   Game Studio adiciona um componente modelo à entidade.
 
-5. Under **Model**, click ![Hand icon](~/manual/game-studio/media/hand-icon.png) (**Select an asset**).
+5. Sob **Model**, clique em <x1\/>Hand icon<x2\/> (**Selecione um ativo**).
 
-   ![Pick an asset up](media/physics-tutorials-pick-an-asset-up.png)
+   <x1\/> Enfiar um asset up<x2\/>
 
-6. Select the **Cube** model we created in step 1 and click **OK**.
+6. Selecione o modelo **Cube** que criamos na etapa 1 e clique em **OK**.
 
-   ![Select Cube model](media/physics-tutorials-select-cube-model.png)
+   <x1\/>Select Cube model<x2\/>
 
-7. In the **Property Grid**, under **Model > Materials**, click ![Hand icon](~/manual/game-studio/media/hand-icon.png) (**Select an asset**).
+7. No **Property Grid**, sob **Model > Materials**, clique em <x1\/>Hand icon<x2\/> (**Select an asset**).
 
-   ![Select material](media/physics-tutorials-material-asset-picker.png)
+   <x1\/>Select material<x2\/>
 
-8. Select the **Transparent** material we created in step 2 and click **OK**.
+8. Selecione o material **Transparent** que criamos na etapa 2 e clique em **OK**.
 
-   ![Select material](media/physics-tutorials-select-transparent-material.png)
+   <x1\/>Select material<x2\/>
 
-9. In the **Asset View**, select the **Transparent** material asset.
+9. No **Asset View**, selecione o ativo material **Transparent**.
 
-   ![Select material in Asset View](media/physics-tutorials-select-material-asset.png)
+   <x1\/>Selecionar material em Asset View<x2\/>
 
-10. In the **Property Grid**, under **Misc > Transparency**, select **Blend**.
+10. No **Property Grid**, sob **Misc > Transparency**, selecione **Blend**.
 
-   ![Select Blend](media/physics-tutorials-set-blend.png)
+   <x1\/>Select Blend<x2\/>
 
-11. By default, the Alpha is set to 1. This makes the material completely opaque. To set it to 50% opacity, set the **Alpha** to 0.5.
+11. Por padrão, o Alpha está definido para 1. Isso torna o material completamente opaco. Para definir a opacidade de 50%, defina o **Alpha** a 0.5.
 
-   ![Select Blend](media/physics-tutorials-set-blend-alpha.png)
+   <x1\/>Select Blend<x2\/>
 
-   Now the trigger area will be visible at runtime.
+   Agora a área do gatilho será visível no tempo de execução.
 
-## 5. Position the trigger
+## 5. Posicione o gatilho
 
-We need to position the trigger between the ground and the sphere, so the ball falls through it.
+Precisamos posicionar o gatilho entre o chão e a esfera, de modo que a bola cai através dele.
 
-In the **Property Grid**, under **Transform**, set the **Position** to: *X:0, Y:3, Z:0*
+No **Property Grid**, sob **Transform**, defina o **Position** para: *X:0, Y:3, Z:0*
 
-Now the trigger entity is between the ground and the sphere:
+Agora a entidade gatilho está entre o chão e a esfera:
 
-![Trigger between ground and sphere](media/physics-tutorials-create-a-trigger-trigger-between-ground-and-sphere.png)
+<x1\/> Trigger entre terra e esfera<x2\/>
 
-## 6. Change the sphere size with script
+## 6. Alterar o tamanho da esfera com o script
 
-If we run the project now (**F5**), the ball falls through the trigger, but nothing happens.
+Se executarmos o projeto agora (**F5**), a bola cai através do gatilho, mas nada acontece.
 
 <p>
 <video autoplay loop class="responsive-video" poster="media/bouncing-ball-with-trigger-no-effect.png">
@@ -138,79 +138,79 @@ If we run the project now (**F5**), the ball falls through the trigger, but noth
 </video>
 </p>
 
-Let's write a script to change the size of the ball when it enters the trigger.
+Vamos escrever um script para alterar o tamanho da bola quando ela entrar no gatilho.
 
-> [!Note]
-> For more information about scripts, see [Scripts](../scripts/index.md).
+> <x1\/>!Note<x2\/>
+> Para obter mais informações sobre scripts, consulte [Scripts](../scripts/index.md).
 
-1. In the **Asset View**, click **Add asset** and select **Scripts** > **Async Script**.
+1. No **Asset View**, clique em **Add asset** e selecione **Scripts** > **Async Script**.
 
-   ![Use a script](media/physics-tutorials-create-a-trigger-add-async-script.png)
+   <x1\/>Use um script<x2\/>
 
-2. In the **Create a script** dialog, name your script *Trigger* and click **Create script**.
+2. No **Criar um script** diálogo, nomeie seu script *Trigger* e clique em **Criar script**.
 
-   2a. If Game Studio asks if you want to save your script, click **Save**.
+   2a. Se o Game Studio perguntar se deseja salvar seu script, clique em **Save**.
 
-   2b. If Game Studio asks if you want to reload the assemblies, click **Reload**.
+   2b. Se o Game Studio perguntar se deseja recarregar os conjuntos, clique em **Reload**.
 
-3. Open the script, replace its content with the following code, and save the file:
+3. Abra o script, substitua seu conteúdo com o seguinte código e salve o arquivo:
 
    ```cs
-   using Stride.Engine;
-   using Stride.Physics;
-   using System.Threading.Tasks;
-   using Stride.Core.Mathematics;
+   usando Stride. Motor;
+   usando Stride. Física;
+   usando o Sistema. Threading. Tarefas;
+   usando Stride. Core.Matemática;
    
    namespace TransformTrigger
-   // You can use any namespace you like for this script.
-   {
-       public class Trigger : AsyncScript
-       {
-           public override async Task Execute()
-           {
+   \/\/ Você pode usar qualquer namespace que você gosta para este script.
+   (
+       classe pública AsyncScript
+       (
+           override público async Task Execute()
+           (
                var trigger = Entity.Get<PhysicsComponent>();
-               trigger.ProcessCollisions = true;
+               gatilho. Cores de processo = verdadeira;
    
-               // Start state machine
-               while (Game.IsRunning)
-               {
-                   // 1. Wait for an entity to collide with the trigger
-                   var firstCollision = await trigger.NewCollision();
+               \/\/ Iniciar máquina do estado
+               enquanto (Game.IsRunning)
+               (
+                   \/\/ 1. Aguarde que uma entidade colide com o gatilho
+                   var firstCollision = await trigger. NewCollision();
    
-                   var otherCollider = trigger == firstCollision.ColliderA
-                       ? firstCollision.ColliderB
-                       : firstCollision.ColliderA;
-                   otherCollider.Entity.Transform.Scale = new Vector3(2.0f, 2.0f, 2.0f);
+                   var otherCollider = trigger == firstCollision. ColliderA
+                       ? Primeira Colisão. ColliderB
+                       : primeira Colisão. ColliderA;
+                   otherCollider.Entity.Transform.Scale = novo Vector3(2.0f, 2.0f, 2.0f);
    
-                   // 2. Wait for the entity to exit the trigger
-                   await firstCollision.Ended();
+                   \/\/ 2. Aguarde que a entidade saia do gatilho
+                   aguarde a primeira Colisão. Terminado();
    
-                   otherCollider.Entity.Transform.Scale= new Vector3(1.0f, 1.0f, 1.0f);
+                   otherCollider.Entity.Transform.Scale= novo Vector3(1.0f, 1.0f, 1.0f);
                }
            }
        }
    }
    ```
 
-   This code doubles the size (scale) of any entity that enters the trigger. When the entity exits the trigger, it returns to its original size.
+   Este código duplica o tamanho (escala) de qualquer entidade que entra no gatilho. Quando a entidade sai do gatilho, ela retorna ao seu tamanho original.
 
-4. Reload the assemblies.
+4. Recarregue os conjuntos.
 
-## 7. Add the script
+## 7. Adicionar o script
 
-Finally, let's add this script to the trigger entity as a component.
+Finalmente, vamos adicionar este script à entidade gatilho como um componente.
 
-1. In **Game Studio**, select the **Trigger** entity.
+1. Em **Game Studio**, selecione a entidade **Trigger**.
 
-2. In the **Property Grid**, click **Add component** and select the **Trigger** script.
+2. No **Property Grid**, clique em **Add component** e selecione o script **Trigger**.
 
-   ![Add script component to entity](media/physics-tutorials-create-a-trigger-add-script-component-to-entity.png)
+   <x1\/> Adicionar componente de script para entidade<x2\/>
 
-## 8. Run the project
+## 8. Executar o projeto
 
-Run the project (**F5**) to see the trigger in action.
+Execute o projeto (**F5**) para ver o gatilho em ação.
 
-The ball falls through the trigger, doubles in size, exits the trigger, and returns to its normal size.
+A bola cai através do gatilho, dobra em tamanho, sai do gatilho, e retorna ao seu tamanho normal.
 
 <p>
 <video autoplay loop class="responsive-video" poster="media/bouncing-ball-with-trigger-scaled_first_frame.png">
@@ -218,59 +218,59 @@ The ball falls through the trigger, doubles in size, exits the trigger, and retu
 </video>
 </p>
 
-## More ideas
+## Mais ideias
 
-You can alter the script to make other changes when the sphere enters the trigger.
+Você pode alterar o script para fazer outras alterações quando a esfera entrar no gatilho.
 
-For example, you can switch the material on the sphere entity. This script switches the material on the Sphere entity from the **Sphere Material** to the **Ground Material** and back again:
+Por exemplo, você pode alternar o material na entidade da esfera. Este script alterna o material na entidade Esfera do **Esfera Material** para o **Ground Material** e volta novamente:
 
 ```cs
-using Stride.Engine;
-using Stride.Physics;
-using System.Threading.Tasks;
-using Stride.Core.Mathematics;
-using Stride.Rendering;
+usando Stride. Motor;
+usando Stride. Física;
+usando o Sistema. Threading. Tarefas;
+usando Stride. Core.Matemática;
+usando Stride. Renderização;
 
 namespace TransformTrigger
-// You can use any namespace you like for this script.
-{
-    public class Trigger : AsyncScript
-    {
-        private Material material1;
-        private Material material2;
+\/\/ Você pode usar qualquer namespace que você gosta para este script.
+(
+    classe pública AsyncScript
+    (
+        material particular1;
+        material de material privado2;
     
-        public override async Task Execute()
-        {
+        override público async Task Execute()
+        (
             var trigger = Entity.Get<PhysicsComponent>();
-            trigger.ProcessCollisions = true;
+            gatilho. Cores de processo = verdadeira;
             
-            // Make sure the materials are loaded 
+            \/\/ Certifique-se de que os materiais são carregados 
             material1 = Content.Load<Material>("Sphere Material");
             material2 = Content.Load<Material>("Ground Material");
 
-            // Start state machine
-            while (Game.IsRunning)
-            {
-                // 1. Wait for an entity to collide with the trigger
-                var firstCollision = await trigger.NewCollision();
+            \/\/ Iniciar máquina do estado
+            enquanto (Game.IsRunning)
+            (
+                \/\/ 1. Aguarde que uma entidade colide com o gatilho
+                var firstCollision = await trigger. NewCollision();
 
-                var otherCollider = trigger == firstCollision.ColliderA
-                    ? firstCollision.ColliderB
-                    : firstCollision.ColliderA;
+                var otherCollider = trigger == firstCollision. ColliderA
+                    ? Primeira Colisão. ColliderB
+                    : primeira Colisão. ColliderA;
                     
-                // 2. Change the material on the entity
+                \/\/ 2. Alterar o material na entidade
                 otherCollider.Entity.Get<ModelComponent>().Materials[0] = material2;
                 
-                // 3. Wait for the entity to exit the trigger
-                await firstCollision.Ended();
+                \/\/ 3. Aguarde que a entidade saia do gatilho
+                aguarde a primeira Colisão. Terminado();
 
-                // 4. Change the material back to the original one
+                \/\/ 4. Mudar o material de volta para o original
                 otherCollider.Entity.Get<ModelComponent>().Materials[0] = material1;
             }
         }
         
-        public override void Cancel()
-        {
+        sobreposição pública cancel()
+        (
             Content.Unload(material1);
             Content.Unload(material2);
         }
@@ -284,9 +284,9 @@ namespace TransformTrigger
 </video>
 </p>
 
-## See also
+## Ver também
 
-* [Tutorial: Create a bouncing ball](create-a-bouncing-ball.md)
-* [Colliders](colliders.md)
-* [Collider shapes](collider-shapes.md)
+* [Tutorial: Criar uma bola saltando](create-a-bouncing-ball.md)
+* [Coleiras](colliders.md)
+* [Formas de colarinho](collider-shapes.md)
 * [Scripts](../scripts/index.md)

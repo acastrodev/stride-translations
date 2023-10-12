@@ -1,20 +1,20 @@
 # Raycasting
 
-This C# Intermediate tutorial covers raycasting.
+Este tutorial C# Intermediate cobre a transmissão de raios.
 
-## Explanation
-Raycasting is an essential subject in 3D games. With raycasts we can detect if and what kinds of objects are in our line of sight. This can be used for detecting enemies or how far an object really is.
+## Explicação
+Raycasting é um assunto essencial em jogos 3D. Com raycasts podemos detectar se e que tipos de objetos estão em nossa linha de visão. Isso pode ser usado para detectar inimigos ou quão longe um objeto realmente é.
 
-> [!Video https://www.youtube.com/embed/uIM6jxM7OyE]
+> [!Vídeo https://www.youtube.com/embed/uIM6jxM7OyE]
 
 
 ## Raycast
-This script sends out a raycast from the weapons barrel and sends it to an endpoint a little further. We check if we hit something along the way. If we do, we calculate the distance between the weapon barrel and the hit point. We then scale a laser to that distance to visualize the actual raycast. Depending on the collision group and filters, some objects are ignored.
+Este script envia um raycast do barril de armas e o envia para um ponto final um pouco mais. Verificamos se atingimos algo ao longo do caminho. Se o fizermos, calculamos a distância entre o barril de arma e o ponto de acerto. Então escalamos um laser para essa distância para visualizar o raio real. Dependendo do grupo de colisão e dos filtros, alguns objetos são ignorados.
 
 [!code-csharp[editorpages](../../../../stride/samples/Tutorials/CSharpIntermediate/CSharpIntermediate/CSharpIntermediate.Game/03_Raycasting/RaycastDemo.cs)]
 
 
-## Penetrative raycast
-In our first script, the raycast returns to us as soon as it hits the first object along its path. We can also send out a raycast to an endpoint, and let it return to us when it has reached its endpoint. It gives us back a list of objects that it has hit along the way. This list can be empty but also exists out of various objects. Depending on the collision group and filters, some objects are ignored.
+## Radiografia penetrativa
+Em nosso primeiro script, o raycast retorna para nós assim que atinge o primeiro objeto ao longo de seu caminho. Também podemos enviar um raio para um ponto final, e deixá-lo voltar para nós quando ele chegou ao seu ponto final. Ele nos devolve uma lista de objetos que ele atingiu ao longo do caminho. Esta lista pode ser vazia, mas também existe de vários objetos. Dependendo do grupo de colisão e dos filtros, alguns objetos são ignorados.
 
 [!code-csharp[editorpages](../../../../stride/samples/Tutorials/CSharpIntermediate/CSharpIntermediate/CSharpIntermediate.Game/03_Raycasting/RaycastPenetratingDemo.cs)]

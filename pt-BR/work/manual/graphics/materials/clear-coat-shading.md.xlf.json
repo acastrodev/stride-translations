@@ -1,829 +1,829 @@
 {
-    "filename": "manual\\graphics\\materials\\clear-coat-shading.md.xlf",
-    "files": [
-        {
-            "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/materials\/clear-coat-shading.md": [
-                [
-                    "Clear-coat shading",
-                    "",
-                    "Clear-coat shading",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/materials\/clear-coat-shading.md",
-                    {
-                        "id": "tu1"
-                    }
-                ],
-                [
-                    "<x1\/>Intermediate<x2\/>",
-                    "",
-                    "<x1\/>Intermediate<x2\/>\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/materials\/clear-coat-shading.md",
-                    {
-                        "id": "tu2"
-                    }
-                ],
-                [
-                    "<x3\/>Artist<x4\/>",
-                    "",
-                    "<x3\/>Artist<x4\/>\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/materials\/clear-coat-shading.md",
-                    {
-                        "id": "tu2"
-                    }
-                ],
-                [
-                    "<x5\/>Programmer<x6\/>",
-                    "",
-                    "<x5\/>Programmer<x6\/>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/materials\/clear-coat-shading.md",
-                    {
-                        "id": "tu2"
-                    }
-                ],
-                [
-                    "<g1>Clear-coat shading<\/g1> uses physically-based rendering to simulate vehicle paint.",
-                    "",
-                    "<g1>Clear-coat shading<\/g1> uses physically-based rendering to simulate vehicle paint.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/materials\/clear-coat-shading.md",
-                    {
-                        "id": "tu3"
-                    }
-                ],
-                [
-                    "<x1\/>Clear coat<x2\/>",
-                    "",
-                    "<x1\/>Clear coat<x2\/>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/materials\/clear-coat-shading.md",
-                    {
-                        "id": "tu4"
-                    }
-                ],
-                [
-                    "Real vehicles typically have three layers of paint applied to the body, as in the diagram below:",
-                    "",
-                    "Real vehicles typically have three layers of paint applied to the body, as in the diagram below:",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/materials\/clear-coat-shading.md",
-                    {
-                        "id": "tu5"
-                    }
-                ],
-                [
-                    "<x1\/>Diagram<x2\/>",
-                    "",
-                    "<x1\/>Diagram<x2\/>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/materials\/clear-coat-shading.md",
-                    {
-                        "id": "tu6"
-                    }
-                ],
-                [
-                    "To keep the shading simple, Stride only simulates the <g1>base coat<\/g1> (including optional metal flakes) and <g2>clear coat<\/g2> layers.",
-                    "",
-                    "To keep the shading simple, Stride only simulates the <g1>base coat<\/g1> (including optional metal flakes) and <g2>clear coat<\/g2> layers.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/materials\/clear-coat-shading.md",
-                    {
-                        "id": "tu7"
-                    }
-                ],
-                [
-                    "Stride blends the layers depending on how far the camera is from the material.",
-                    "",
-                    " Stride blends the layers depending on how far the camera is from the material.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/materials\/clear-coat-shading.md",
-                    {
-                        "id": "tu7"
-                    }
-                ],
-                [
-                    "This reduces visual artifacts caused by the metal flake normal map (which becomes more visible as the camera moves away from the material).",
-                    "",
-                    " This reduces visual artifacts caused by the metal flake normal map (which becomes more visible as the camera moves away from the material).",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/materials\/clear-coat-shading.md",
-                    {
-                        "id": "tu7"
-                    }
-                ],
-                [
-                    "Clear-coat shading has several advantages over creating the effect manually with <g1>material layers<\/g1>:",
-                    "",
-                    "Clear-coat shading has several advantages over creating the effect manually with <g1>material layers<\/g1>:",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/materials\/clear-coat-shading.md",
-                    {
-                        "id": "tu8"
-                    }
-                ],
-                [
-                    "layers are blended based on distance",
-                    "",
-                    "layers are blended based on distance",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/materials\/clear-coat-shading.md",
-                    {
-                        "id": "tu9"
-                    }
-                ],
-                [
-                    "increased performance",
-                    "",
-                    "increased performance",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/materials\/clear-coat-shading.md",
-                    {
-                        "id": "tu10"
-                    }
-                ],
-                [
-                    "improved visualization",
-                    "",
-                    "improved visualization",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/materials\/clear-coat-shading.md",
-                    {
-                        "id": "tu11"
-                    }
-                ],
-                [
-                    "Add a clear-coat material",
-                    "",
-                    "Add a clear-coat material",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/materials\/clear-coat-shading.md",
-                    {
-                        "id": "tu12"
-                    }
-                ],
-                [
-                    "Stride includes a clear-coat material template.",
-                    "",
-                    "Stride includes a clear-coat material template.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/materials\/clear-coat-shading.md",
-                    {
-                        "id": "tu13"
-                    }
-                ],
-                [
-                    "To add it, in the <g1>Asset View<\/g1>, click <g2>Add asset<\/g2> and select <g3>Material > PBR material: clear coat<\/g3>.",
-                    "",
-                    " To add it, in the <g1>Asset View<\/g1>, click <g2>Add asset<\/g2> and select <g3>Material > PBR material: clear coat<\/g3>.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/materials\/clear-coat-shading.md",
-                    {
-                        "id": "tu13"
-                    }
-                ],
-                [
-                    "<x1\/>Add clear coat<x2\/>",
-                    "",
-                    "<x1\/>Add clear coat<x2\/>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/materials\/clear-coat-shading.md",
-                    {
-                        "id": "tu14"
-                    }
-                ],
-                [
-                    "Alternatively, to set clear-coat properties yourself:",
-                    "",
-                    "Alternatively, to set clear-coat properties yourself:",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/materials\/clear-coat-shading.md",
-                    {
-                        "id": "tu15"
-                    }
-                ],
-                [
-                    "Select the material you want to use clear-coat shading.",
-                    "",
-                    "Select the material you want to use clear-coat shading.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/materials\/clear-coat-shading.md",
-                    {
-                        "id": "tu16"
-                    }
-                ],
-                [
-                    "In the Property Grid, under the <g1>Misc<\/g1> properties, next to <g2>Clear coat<\/g2>, click <x1\/>Blue arrow button<x2\/> (<g3>Replace<\/g3>) and choose <g4>Clear coat<\/g4>.",
-                    "",
-                    "In the Property Grid, under the <g1>Misc<\/g1> properties, next to <g2>Clear coat<\/g2>, click <x1\/>Blue arrow button<x2\/> (<g3>Replace<\/g3>) and choose <g4>Clear coat<\/g4>.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/materials\/clear-coat-shading.md",
-                    {
-                        "id": "tu17"
-                    }
-                ],
-                [
-                    "<x1\/>Select clear coat<x2\/>",
-                    "",
-                    "<x1\/>Select clear coat<x2\/>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/materials\/clear-coat-shading.md",
-                    {
-                        "id": "tu18"
-                    }
-                ],
-                [
-                    "<x1\/>!Note<x2\/>",
-                    "",
-                    "<x1\/>!Note<x2\/>\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/materials\/clear-coat-shading.md",
-                    {
-                        "id": "tu19"
-                    }
-                ],
-                [
-                    "For clear-coat shading to work correctly, make sure you enable <g1>Diffuse<\/g1>, <g2>Specular<\/g2> and <g3>Specular model<\/g3> under the material <g4>Shading<\/g4> properties.",
-                    "",
-                    "For clear-coat shading to work correctly, make sure you enable <g1>Diffuse<\/g1>, <g2>Specular<\/g2> and <g3>Specular model<\/g3> under the material <g4>Shading<\/g4> properties.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/materials\/clear-coat-shading.md",
-                    {
-                        "id": "tu19"
-                    }
-                ],
-                [
-                    "<x1\/>Shading options<x2\/>",
-                    "",
-                    "<x1\/>Shading options<x2\/>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/materials\/clear-coat-shading.md",
-                    {
-                        "id": "tu20"
-                    }
-                ],
-                [
-                    "Properties",
-                    "",
-                    "Properties",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/materials\/clear-coat-shading.md",
-                    {
-                        "id": "tu21"
-                    }
-                ],
-                [
-                    "You can access the clear-coat shader properties under <g1>Misc > Clear coat<\/g1>.",
-                    "",
-                    "You can access the clear-coat shader properties under <g1>Misc > Clear coat<\/g1>.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/materials\/clear-coat-shading.md",
-                    {
-                        "id": "tu22"
-                    }
-                ],
-                [
-                    "They're split into three parts: the <g2>base paint<\/g2> and optional <g3>metal flake<\/g3> properties simulate the base coat, and the <g4>clear coat<\/g4> properties simulate the clear coat.",
-                    "",
-                    " They're split into three parts: the <g2>base paint<\/g2> and optional <g3>metal flake<\/g3> properties simulate the base coat, and the <g4>clear coat<\/g4> properties simulate the clear coat.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/materials\/clear-coat-shading.md",
-                    {
-                        "id": "tu22"
-                    }
-                ],
-                [
-                    "The metal flake properties simulate a metallic paint effect.",
-                    "",
-                    "The metal flake properties simulate a metallic paint effect.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/materials\/clear-coat-shading.md",
-                    {
-                        "id": "tu23"
-                    }
-                ],
-                [
-                    "To disable the effect, remove the metal flake normal map.",
-                    "",
-                    " To disable the effect, remove the metal flake normal map.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/materials\/clear-coat-shading.md",
-                    {
-                        "id": "tu23"
-                    }
-                ],
-                [
-                    "<x1\/>Add clear coat<x2\/>",
-                    "",
-                    "<x1\/>Add clear coat<x2\/>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/materials\/clear-coat-shading.md",
-                    {
-                        "id": "tu24"
-                    }
-                ],
-                [
-                    "Property",
-                    "",
-                    "Property",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/materials\/clear-coat-shading.md",
-                    {
-                        "id": "tu25"
-                    }
-                ],
-                [
-                    "Description",
-                    "",
-                    "Description",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/materials\/clear-coat-shading.md",
-                    {
-                        "id": "tu26"
-                    }
-                ],
-                [
-                    "Base paint diffuse map",
-                    "",
-                    "Base paint diffuse map",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/materials\/clear-coat-shading.md",
-                    {
-                        "id": "tu27"
-                    }
-                ],
-                [
-                    "The <g1>diffuse map<\/g1> used by the base paint layer (the lowest  layer).",
-                    "",
-                    "The <g1>diffuse map<\/g1> used by the base paint layer (the lowest  layer).",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/materials\/clear-coat-shading.md",
-                    {
-                        "id": "tu28"
-                    }
-                ],
-                [
-                    "This determines the color of the layer.",
-                    "",
-                    " This determines the color of the layer.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/materials\/clear-coat-shading.md",
-                    {
-                        "id": "tu28"
-                    }
-                ],
-                [
-                    "Base paint gloss map",
-                    "",
-                    "Base paint gloss map",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/materials\/clear-coat-shading.md",
-                    {
-                        "id": "tu29"
-                    }
-                ],
-                [
-                    "The <g1>gloss map<\/g1> used by the base paint layer.",
-                    "",
-                    "The <g1>gloss map<\/g1> used by the base paint layer.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/materials\/clear-coat-shading.md",
-                    {
-                        "id": "tu30"
-                    }
-                ],
-                [
-                    "For a coherent result, use the <g2>metal flake normal map<\/g2> as a mask.",
-                    "",
-                    " For a coherent result, use the <g2>metal flake normal map<\/g2> as a mask.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/materials\/clear-coat-shading.md",
-                    {
-                        "id": "tu30"
-                    }
-                ],
-                [
-                    "Metal flakes diffuse map",
-                    "",
-                    "Metal flakes diffuse map",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/materials\/clear-coat-shading.md",
-                    {
-                        "id": "tu31"
-                    }
-                ],
-                [
-                    "The <g1>diffuse map<\/g1> used by the metal flake layer (the layer above the base paint).",
-                    "",
-                    "The <g1>diffuse map<\/g1> used by the metal flake layer (the layer above the base paint).",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/materials\/clear-coat-shading.md",
-                    {
-                        "id": "tu32"
-                    }
-                ],
-                [
-                    "For a coherent result, use a value close to the base paint value.",
-                    "",
-                    " For a coherent result, use a value close to the base paint value.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/materials\/clear-coat-shading.md",
-                    {
-                        "id": "tu32"
-                    }
-                ],
-                [
-                    "Metal flakes gloss map",
-                    "",
-                    "Metal flakes gloss map",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/materials\/clear-coat-shading.md",
-                    {
-                        "id": "tu33"
-                    }
-                ],
-                [
-                    "The <g1>gloss map<\/g1> used by the metal flake layer.",
-                    "",
-                    "The <g1>gloss map<\/g1> used by the metal flake layer.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/materials\/clear-coat-shading.md",
-                    {
-                        "id": "tu34"
-                    }
-                ],
-                [
-                    "For a coherent result, use the <g2>metal flake normal map<\/g2> as a mask.",
-                    "",
-                    " For a coherent result, use the <g2>metal flake normal map<\/g2> as a mask.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/materials\/clear-coat-shading.md",
-                    {
-                        "id": "tu34"
-                    }
-                ],
-                [
-                    "Metal flakes metalness map",
-                    "",
-                    "Metal flakes metalness map",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/materials\/clear-coat-shading.md",
-                    {
-                        "id": "tu35"
-                    }
-                ],
-                [
-                    "The <g1>metalness map<\/g1> used by the metal flake layer.",
-                    "",
-                    "The <g1>metalness map<\/g1> used by the metal flake layer.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/materials\/clear-coat-shading.md",
-                    {
-                        "id": "tu36"
-                    }
-                ],
-                [
-                    "For best results, use high values.",
-                    "",
-                    " For best results, use high values.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/materials\/clear-coat-shading.md",
-                    {
-                        "id": "tu36"
-                    }
-                ],
-                [
-                    "Metal flake normal map",
-                    "",
-                    "Metal flake normal map",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/materials\/clear-coat-shading.md",
-                    {
-                        "id": "tu37"
-                    }
-                ],
-                [
-                    "The <g1>normal map<\/g1> used by the metal flake layer.",
-                    "",
-                    "The <g1>normal map<\/g1> used by the metal flake layer.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/materials\/clear-coat-shading.md",
-                    {
-                        "id": "tu38"
-                    }
-                ],
-                [
-                    "This shapes the flake geometry.",
-                    "",
-                    " This shapes the flake geometry.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/materials\/clear-coat-shading.md",
-                    {
-                        "id": "tu38"
-                    }
-                ],
-                [
-                    "A metal flake normal map  (<g2>StrideClearCoatMetalFlakesNM<\/g2>) is included in the Stride assets package.",
-                    "",
-                    " A metal flake normal map  (<g2>StrideClearCoatMetalFlakesNM<\/g2>) is included in the Stride assets package.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/materials\/clear-coat-shading.md",
-                    {
-                        "id": "tu38"
-                    }
-                ],
-                [
-                    "If the texture has a high UV scale, enable <g3>Use random texture coordinates<\/g3> below to reduce tiling effects.",
-                    "",
-                    " If the texture has a high UV scale, enable <g3>Use random texture coordinates<\/g3> below to reduce tiling effects.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/materials\/clear-coat-shading.md",
-                    {
-                        "id": "tu38"
-                    }
-                ],
-                [
-                    "To disable the metal flakes effect, remove the normal map.",
-                    "",
-                    " To disable the metal flakes effect, remove the normal map.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/materials\/clear-coat-shading.md",
-                    {
-                        "id": "tu38"
-                    }
-                ],
-                [
-                    "Coat gloss map",
-                    "",
-                    "Coat gloss map",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/materials\/clear-coat-shading.md",
-                    {
-                        "id": "tu39"
-                    }
-                ],
-                [
-                    "The <g1>gloss map<\/g1> used by the clear coat layer.",
-                    "",
-                    "The <g1>gloss map<\/g1> used by the clear coat layer.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/materials\/clear-coat-shading.md",
-                    {
-                        "id": "tu40"
-                    }
-                ],
-                [
-                    "Change this value to simulate different kinds of paint (eg matte).",
-                    "",
-                    " Change this value to simulate different kinds of paint (eg matte).",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/materials\/clear-coat-shading.md",
-                    {
-                        "id": "tu40"
-                    }
-                ],
-                [
-                    "Clear coat metalness map",
-                    "",
-                    "Clear coat metalness map",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/materials\/clear-coat-shading.md",
-                    {
-                        "id": "tu41"
-                    }
-                ],
-                [
-                    "The <g1>metalness map<\/g1> used by the clear coat layer",
-                    "",
-                    "The <g1>metalness map<\/g1> used by the clear coat layer",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/materials\/clear-coat-shading.md",
-                    {
-                        "id": "tu42"
-                    }
-                ],
-                [
-                    "Orange peel normal map",
-                    "",
-                    "Orange peel normal map",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/materials\/clear-coat-shading.md",
-                    {
-                        "id": "tu43"
-                    }
-                ],
-                [
-                    "The <g1>normal map<\/g1> used by the clear coat layer to create an \"orange peel\" effect.",
-                    "",
-                    "The <g1>normal map<\/g1> used by the clear coat layer to create an \"orange peel\" effect.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/materials\/clear-coat-shading.md",
-                    {
-                        "id": "tu44"
-                    }
-                ],
-                [
-                    "This reflects light in different angles, simulating paint imperfections whereby the texture appears bumpy, like the skin of an orange.",
-                    "",
-                    " This reflects light in different angles, simulating paint imperfections whereby the texture appears bumpy, like the skin of an orange.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/materials\/clear-coat-shading.md",
-                    {
-                        "id": "tu44"
-                    }
-                ],
-                [
-                    "An orange peel normal map (<g2>StrideClearCoatOrangePeelNM<\/g2>) is included in the Stride assets package.",
-                    "",
-                    " An orange peel normal map (<g2>StrideClearCoatOrangePeelNM<\/g2>) is included in the Stride assets package.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/materials\/clear-coat-shading.md",
-                    {
-                        "id": "tu44"
-                    }
-                ],
-                [
-                    "Layer transition distance",
-                    "",
-                    "Layer transition distance",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/materials\/clear-coat-shading.md",
-                    {
-                        "id": "tu45"
-                    }
-                ],
-                [
-                    "The distance (in meters) at which the base paint layer transitions to the metal flake layer.",
-                    "",
-                    "The distance (in meters) at which the base paint layer transitions to the metal flake layer.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/materials\/clear-coat-shading.md",
-                    {
-                        "id": "tu46"
-                    }
-                ],
-                [
-                    "This helps fight visual artifacts caused by the metal flake normal map (which becomes more visible as the camera moves away from the material).",
-                    "",
-                    " This helps fight visual artifacts caused by the metal flake normal map (which becomes more visible as the camera moves away from the material).",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/materials\/clear-coat-shading.md",
-                    {
-                        "id": "tu46"
-                    }
-                ],
-                [
-                    "Reduce tiling and artifacts",
-                    "",
-                    "Reduce tiling and artifacts",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/materials\/clear-coat-shading.md",
-                    {
-                        "id": "tu47"
-                    }
-                ],
-                [
-                    "Properties that use binary operators should use <g1>normalized values<\/g1> (ie between <g2>0.0<\/g2> and <g3>1.0<\/g3>).",
-                    "",
-                    "Properties that use binary operators should use <g1>normalized values<\/g1> (ie between <g2>0.0<\/g2> and <g3>1.0<\/g3>).",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/materials\/clear-coat-shading.md",
-                    {
-                        "id": "tu48"
-                    }
-                ],
-                [
-                    "For example, in the screenshot below, the <g4>left<\/g4> operator uses a value of <g5>0.5<\/g5>.",
-                    "",
-                    " For example, in the screenshot below, the <g4>left<\/g4> operator uses a value of <g5>0.5<\/g5>.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/materials\/clear-coat-shading.md",
-                    {
-                        "id": "tu48"
-                    }
-                ],
-                [
-                    "<x1\/>Binary operator<x2\/>",
-                    "",
-                    "<x1\/>Binary operator<x2\/>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/materials\/clear-coat-shading.md",
-                    {
-                        "id": "tu49"
-                    }
-                ],
-                [
-                    "Values over <g1>1.0<\/g1> might produce tiling artifacts, as in the image below (note the grid pattern):",
-                    "",
-                    "Values over <g1>1.0<\/g1> might produce tiling artifacts, as in the image below (note the grid pattern):",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/materials\/clear-coat-shading.md",
-                    {
-                        "id": "tu50"
-                    }
-                ],
-                [
-                    "<x1\/>Artifact<x2\/>",
-                    "",
-                    "<x1\/>Artifact<x2\/>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/materials\/clear-coat-shading.md",
-                    {
-                        "id": "tu51"
-                    }
-                ],
-                [
-                    "StrideClearCoatMetalFlakesNM",
-                    "",
-                    "StrideClearCoatMetalFlakesNM",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/materials\/clear-coat-shading.md",
-                    {
-                        "id": "tu52"
-                    }
-                ],
-                [
-                    "The metal flakes in the metal flake normal map included in the Stride assets package (<g1>StrideClearCoatMetalFlakesNM<\/g1>) are quite large.",
-                    "",
-                    "The metal flakes in the metal flake normal map included in the Stride assets package (<g1>StrideClearCoatMetalFlakesNM<\/g1>) are quite large.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/materials\/clear-coat-shading.md",
-                    {
-                        "id": "tu53"
-                    }
-                ],
-                [
-                    "For this reason, we recommend you:",
-                    "",
-                    " For this reason, we recommend you:",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/materials\/clear-coat-shading.md",
-                    {
-                        "id": "tu53"
-                    }
-                ],
-                [
-                    "use a high <g1>UV scale factor<\/g1> which tiles the texture (thereby shrinking the flakes)",
-                    "",
-                    "use a high <g1>UV scale factor<\/g1> which tiles the texture (thereby shrinking the flakes)",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/materials\/clear-coat-shading.md",
-                    {
-                        "id": "tu54"
-                    }
-                ],
-                [
-                    "enable <g1>Use random texture coordinates<\/g1>, preventing an obvious tiling effect",
-                    "",
-                    "enable <g1>Use random texture coordinates<\/g1>, preventing an obvious tiling effect",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/materials\/clear-coat-shading.md",
-                    {
-                        "id": "tu55"
-                    }
-                ],
-                [
-                    "<x1\/>Use random texture coordinates<x2\/>",
-                    "",
-                    "<x1\/>Use random texture coordinates<x2\/>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/materials\/clear-coat-shading.md",
-                    {
-                        "id": "tu56"
-                    }
-                ],
-                [
-                    "<x1\/>!Note<x2\/>",
-                    "",
-                    "<x1\/>!Note<x2\/>\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/materials\/clear-coat-shading.md",
-                    {
-                        "id": "tu57"
-                    }
-                ],
-                [
-                    "The <g1>Use random texture coordinates<\/g1> option is costly, so we don't recommend you use it for mobile platforms.",
-                    "",
-                    "The <g1>Use random texture coordinates<\/g1> option is costly, so we don't recommend you use it for mobile platforms.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/materials\/clear-coat-shading.md",
-                    {
-                        "id": "tu57"
-                    }
-                ],
-                [
-                    "Alternatively, use a normal map with a higher density of smaller metal flakes.",
-                    "",
-                    "Alternatively, use a normal map with a higher density of smaller metal flakes.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/materials\/clear-coat-shading.md",
-                    {
-                        "id": "tu58"
-                    }
-                ],
-                [
-                    "See also",
-                    "",
-                    "See also",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/materials\/clear-coat-shading.md",
-                    {
-                        "id": "tu59"
-                    }
-                ],
-                [
-                    "Material maps",
-                    "",
-                    "<g1>Material maps<\/g1>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/materials\/clear-coat-shading.md",
-                    {
-                        "id": "tu60"
-                    }
-                ],
-                [
-                    "Material attributes",
-                    "",
-                    "<g1>Material attributes<\/g1>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/materials\/clear-coat-shading.md",
-                    {
-                        "id": "tu61"
-                    }
-                ],
-                [
-                    "Geometry attributes",
-                    "",
-                    "<g1>Geometry attributes<\/g1>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/materials\/clear-coat-shading.md",
-                    {
-                        "id": "tu62"
-                    }
-                ],
-                [
-                    "Shading attributes",
-                    "",
-                    "<g1>Shading attributes<\/g1>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/materials\/clear-coat-shading.md",
-                    {
-                        "id": "tu63"
-                    }
-                ],
-                [
-                    "Misc attributes",
-                    "",
-                    "<g1>Misc attributes<\/g1>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/materials\/clear-coat-shading.md",
-                    {
-                        "id": "tu64"
-                    }
-                ],
-                [
-                    "Material layers",
-                    "",
-                    "<g1>Material layers<\/g1>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/materials\/clear-coat-shading.md",
-                    {
-                        "id": "tu65"
-                    }
-                ],
-                [
-                    "Material slots",
-                    "",
-                    "<g1>Material slots<\/g1>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/materials\/clear-coat-shading.md",
-                    {
-                        "id": "tu66"
-                    }
-                ],
-                [
-                    "Materials for developers",
-                    "",
-                    "<g1>Materials for developers<\/g1>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/materials\/clear-coat-shading.md",
-                    {
-                        "id": "tu67"
-                    }
-                ]
-            ]
-        }
-    ],
-    "seg_enabled": false
+  "filename": "manual\\graphics\\materials\\clear-coat-shading.md.xlf",
+  "files": [
+    {
+      "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/materials\\/clear-coat-shading.md": [
+        [
+          "Clear-coat shading",
+          "Sombreamento de capa clara",
+          "Clear-coat shading",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/materials\\/clear-coat-shading.md",
+          {
+            "id": "tu1"
+          }
+        ],
+        [
+          "<x1\\/>Intermediate<x2\\/>",
+          "<x1\\/> Intermediário <x2\\/>",
+          "<x1\\/>Intermediate<x2\\/>\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/materials\\/clear-coat-shading.md",
+          {
+            "id": "tu2"
+          }
+        ],
+        [
+          "<x3\\/>Artist<x4\\/>",
+          "<x3\\/>Artista <x4\\/>",
+          "<x3\\/>Artist<x4\\/>\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/materials\\/clear-coat-shading.md",
+          {
+            "id": "tu2"
+          }
+        ],
+        [
+          "<x5\\/>Programmer<x6\\/>",
+          "<x5\\/> Programador <x6\\/>",
+          "<x5\\/>Programmer<x6\\/>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/materials\\/clear-coat-shading.md",
+          {
+            "id": "tu2"
+          }
+        ],
+        [
+          "<g1>Clear-coat shading<\\/g1> uses physically-based rendering to simulate vehicle paint.",
+          "<g1>Clear-coat shading<\\/g1> usa renderização física para simular a pintura do veículo.",
+          "<g1>Clear-coat shading<\\/g1> uses physically-based rendering to simulate vehicle paint.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/materials\\/clear-coat-shading.md",
+          {
+            "id": "tu3"
+          }
+        ],
+        [
+          "<x1\\/>Clear coat<x2\\/>",
+          "<x1\\/> Revestimento da orelha<x2\\/>",
+          "<x1\\/>Clear coat<x2\\/>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/materials\\/clear-coat-shading.md",
+          {
+            "id": "tu4"
+          }
+        ],
+        [
+          "Real vehicles typically have three layers of paint applied to the body, as in the diagram below:",
+          "Veículos reais normalmente têm três camadas de tinta aplicada ao corpo, como no diagrama abaixo:",
+          "Real vehicles typically have three layers of paint applied to the body, as in the diagram below:",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/materials\\/clear-coat-shading.md",
+          {
+            "id": "tu5"
+          }
+        ],
+        [
+          "<x1\\/>Diagram<x2\\/>",
+          "<x1\\/>Diagrama <x2\\/>",
+          "<x1\\/>Diagram<x2\\/>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/materials\\/clear-coat-shading.md",
+          {
+            "id": "tu6"
+          }
+        ],
+        [
+          "To keep the shading simple, Stride only simulates the <g1>base coat<\\/g1> (including optional metal flakes) and <g2>clear coat<\\/g2> layers.",
+          "Para manter a sombreamento simples, Stride apenas simula as camadas <g1>base coat<\\/g1> (incluindo flocos de metal opcionais) e <g2>clear coat<\\/g2>.",
+          "To keep the shading simple, Stride only simulates the <g1>base coat<\\/g1> (including optional metal flakes) and <g2>clear coat<\\/g2> layers.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/materials\\/clear-coat-shading.md",
+          {
+            "id": "tu7"
+          }
+        ],
+        [
+          "Stride blends the layers depending on how far the camera is from the material.",
+          "Stride combina as camadas dependendo de quão longe a câmera é do material.",
+          " Stride blends the layers depending on how far the camera is from the material.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/materials\\/clear-coat-shading.md",
+          {
+            "id": "tu7"
+          }
+        ],
+        [
+          "This reduces visual artifacts caused by the metal flake normal map (which becomes more visible as the camera moves away from the material).",
+          "Isso reduz os artefatos visuais causados pelo mapa normal do floco de metal (que se torna mais visível à medida que a câmera se afasta do material).",
+          " This reduces visual artifacts caused by the metal flake normal map (which becomes more visible as the camera moves away from the material).",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/materials\\/clear-coat-shading.md",
+          {
+            "id": "tu7"
+          }
+        ],
+        [
+          "Clear-coat shading has several advantages over creating the effect manually with <g1>material layers<\\/g1>:",
+          "A sombreamento de capa clara tem várias vantagens sobre a criação do efeito manualmente com camadas de material <g1><\\/g1>:",
+          "Clear-coat shading has several advantages over creating the effect manually with <g1>material layers<\\/g1>:",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/materials\\/clear-coat-shading.md",
+          {
+            "id": "tu8"
+          }
+        ],
+        [
+          "layers are blended based on distance",
+          "camadas são misturadas com base na distância",
+          "layers are blended based on distance",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/materials\\/clear-coat-shading.md",
+          {
+            "id": "tu9"
+          }
+        ],
+        [
+          "increased performance",
+          "aumento do desempenho",
+          "increased performance",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/materials\\/clear-coat-shading.md",
+          {
+            "id": "tu10"
+          }
+        ],
+        [
+          "improved visualization",
+          "visualização melhorada",
+          "improved visualization",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/materials\\/clear-coat-shading.md",
+          {
+            "id": "tu11"
+          }
+        ],
+        [
+          "Add a clear-coat material",
+          "Adicionar um material de capa clara",
+          "Add a clear-coat material",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/materials\\/clear-coat-shading.md",
+          {
+            "id": "tu12"
+          }
+        ],
+        [
+          "Stride includes a clear-coat material template.",
+          "O Stride inclui um modelo de material de capa clara.",
+          "Stride includes a clear-coat material template.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/materials\\/clear-coat-shading.md",
+          {
+            "id": "tu13"
+          }
+        ],
+        [
+          "To add it, in the <g1>Asset View<\\/g1>, click <g2>Add asset<\\/g2> and select <g3>Material > PBR material: clear coat<\\/g3>.",
+          "Para adicioná-lo, no <g1>Asset View<\\/g1>, clique em <g2>Add asset<\\/g2> e selecione <g3>Material > PBR material: clear coat<\\/g3>.",
+          " To add it, in the <g1>Asset View<\\/g1>, click <g2>Add asset<\\/g2> and select <g3>Material > PBR material: clear coat<\\/g3>.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/materials\\/clear-coat-shading.md",
+          {
+            "id": "tu13"
+          }
+        ],
+        [
+          "<x1\\/>Add clear coat<x2\\/>",
+          "<x1\\/> Adicionar casaco claro<x2\\/>",
+          "<x1\\/>Add clear coat<x2\\/>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/materials\\/clear-coat-shading.md",
+          {
+            "id": "tu14"
+          }
+        ],
+        [
+          "Alternatively, to set clear-coat properties yourself:",
+          "Alternativamente, para definir propriedades de capa clara:",
+          "Alternatively, to set clear-coat properties yourself:",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/materials\\/clear-coat-shading.md",
+          {
+            "id": "tu15"
+          }
+        ],
+        [
+          "Select the material you want to use clear-coat shading.",
+          "Selecione o material que você deseja usar shading de capa clara.",
+          "Select the material you want to use clear-coat shading.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/materials\\/clear-coat-shading.md",
+          {
+            "id": "tu16"
+          }
+        ],
+        [
+          "In the Property Grid, under the <g1>Misc<\\/g1> properties, next to <g2>Clear coat<\\/g2>, click <x1\\/>Blue arrow button<x2\\/> (<g3>Replace<\\/g3>) and choose <g4>Clear coat<\\/g4>.",
+          "Na Grade de Propriedade, sob as propriedades <g1>Misc<\\/g1>, ao lado de <g2>Clear coat<\\/g2>, clique em <x1\\/> Botão de seta azul <x2\\/> (<g3> Substituir<\\/g3>) e escolha <g4>Glear coat<\\/g4>.",
+          "In the Property Grid, under the <g1>Misc<\\/g1> properties, next to <g2>Clear coat<\\/g2>, click <x1\\/>Blue arrow button<x2\\/> (<g3>Replace<\\/g3>) and choose <g4>Clear coat<\\/g4>.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/materials\\/clear-coat-shading.md",
+          {
+            "id": "tu17"
+          }
+        ],
+        [
+          "<x1\\/>Select clear coat<x2\\/>",
+          "<x1\\/>Select clear coat<x2\\/>",
+          "<x1\\/>Select clear coat<x2\\/>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/materials\\/clear-coat-shading.md",
+          {
+            "id": "tu18"
+          }
+        ],
+        [
+          "<x1\\/>!Note<x2\\/>",
+          "<x1\\/>!Note<x2\\/>",
+          "<x1\\/>!Note<x2\\/>\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/materials\\/clear-coat-shading.md",
+          {
+            "id": "tu19"
+          }
+        ],
+        [
+          "For clear-coat shading to work correctly, make sure you enable <g1>Diffuse<\\/g1>, <g2>Specular<\\/g2> and <g3>Specular model<\\/g3> under the material <g4>Shading<\\/g4> properties.",
+          "Para a formação de capa clara para funcionar corretamente, certifique-se de <g1>Diffuse<\\/g1>, <g2>Specular<\\/g2> e <g3>Specular model<\\/g3> sob o material <g4>Shading<\\/g4> Propriedades.",
+          "For clear-coat shading to work correctly, make sure you enable <g1>Diffuse<\\/g1>, <g2>Specular<\\/g2> and <g3>Specular model<\\/g3> under the material <g4>Shading<\\/g4> properties.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/materials\\/clear-coat-shading.md",
+          {
+            "id": "tu19"
+          }
+        ],
+        [
+          "<x1\\/>Shading options<x2\\/>",
+          "<x1\\/>Shading options<x2\\/>",
+          "<x1\\/>Shading options<x2\\/>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/materials\\/clear-coat-shading.md",
+          {
+            "id": "tu20"
+          }
+        ],
+        [
+          "Properties",
+          "Propriedades",
+          "Properties",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/materials\\/clear-coat-shading.md",
+          {
+            "id": "tu21"
+          }
+        ],
+        [
+          "You can access the clear-coat shader properties under <g1>Misc > Clear coat<\\/g1>.",
+          "Você pode acessar as propriedades do shader de capa clara sob <g1>Misc > Casaco claro <\\/g1>.",
+          "You can access the clear-coat shader properties under <g1>Misc > Clear coat<\\/g1>.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/materials\\/clear-coat-shading.md",
+          {
+            "id": "tu22"
+          }
+        ],
+        [
+          "They're split into three parts: the <g2>base paint<\\/g2> and optional <g3>metal flake<\\/g3> properties simulate the base coat, and the <g4>clear coat<\\/g4> properties simulate the clear coat.",
+          "Eles são divididos em três partes: as propriedades <g2>base paint<\\/g2> e opcional <g3>metal flake<\\/g3> simulam o revestimento básico, e as propriedades <g4>clear coat<\\/g4>G4> simulam o revestimento claro.",
+          " They're split into three parts: the <g2>base paint<\\/g2> and optional <g3>metal flake<\\/g3> properties simulate the base coat, and the <g4>clear coat<\\/g4> properties simulate the clear coat.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/materials\\/clear-coat-shading.md",
+          {
+            "id": "tu22"
+          }
+        ],
+        [
+          "The metal flake properties simulate a metallic paint effect.",
+          "As propriedades de floco de metal simulam um efeito de pintura metálico.",
+          "The metal flake properties simulate a metallic paint effect.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/materials\\/clear-coat-shading.md",
+          {
+            "id": "tu23"
+          }
+        ],
+        [
+          "To disable the effect, remove the metal flake normal map.",
+          "Para desativar o efeito, remova o mapa normal do floco de metal.",
+          " To disable the effect, remove the metal flake normal map.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/materials\\/clear-coat-shading.md",
+          {
+            "id": "tu23"
+          }
+        ],
+        [
+          "<x1\\/>Add clear coat<x2\\/>",
+          "<x1\\/> Adicionar casaco claro<x2\\/>",
+          "<x1\\/>Add clear coat<x2\\/>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/materials\\/clear-coat-shading.md",
+          {
+            "id": "tu24"
+          }
+        ],
+        [
+          "Property",
+          "Propriedade",
+          "Property",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/materials\\/clear-coat-shading.md",
+          {
+            "id": "tu25"
+          }
+        ],
+        [
+          "Description",
+          "Descrição",
+          "Description",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/materials\\/clear-coat-shading.md",
+          {
+            "id": "tu26"
+          }
+        ],
+        [
+          "Base paint diffuse map",
+          "Pintura base mapa difuso",
+          "Base paint diffuse map",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/materials\\/clear-coat-shading.md",
+          {
+            "id": "tu27"
+          }
+        ],
+        [
+          "The <g1>diffuse map<\\/g1> used by the base paint layer (the lowest  layer).",
+          "O <g1>diffuse map<\\/g1> usado pela camada de tinta base (a camada mais baixa).",
+          "The <g1>diffuse map<\\/g1> used by the base paint layer (the lowest  layer).",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/materials\\/clear-coat-shading.md",
+          {
+            "id": "tu28"
+          }
+        ],
+        [
+          "This determines the color of the layer.",
+          "Isso determina a cor da camada.",
+          " This determines the color of the layer.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/materials\\/clear-coat-shading.md",
+          {
+            "id": "tu28"
+          }
+        ],
+        [
+          "Base paint gloss map",
+          "Mapa de brilho de tinta base",
+          "Base paint gloss map",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/materials\\/clear-coat-shading.md",
+          {
+            "id": "tu29"
+          }
+        ],
+        [
+          "The <g1>gloss map<\\/g1> used by the base paint layer.",
+          "O <g1>gloss map<\\/g1> usado pela camada de tinta base.",
+          "The <g1>gloss map<\\/g1> used by the base paint layer.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/materials\\/clear-coat-shading.md",
+          {
+            "id": "tu30"
+          }
+        ],
+        [
+          "For a coherent result, use the <g2>metal flake normal map<\\/g2> as a mask.",
+          "Para um resultado coerente, use o <g2>metal flake normal map<\\/g2> como uma máscara.",
+          " For a coherent result, use the <g2>metal flake normal map<\\/g2> as a mask.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/materials\\/clear-coat-shading.md",
+          {
+            "id": "tu30"
+          }
+        ],
+        [
+          "Metal flakes diffuse map",
+          "Mapa difuso de flocos de metal",
+          "Metal flakes diffuse map",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/materials\\/clear-coat-shading.md",
+          {
+            "id": "tu31"
+          }
+        ],
+        [
+          "The <g1>diffuse map<\\/g1> used by the metal flake layer (the layer above the base paint).",
+          "O <g1>diffuse map<\\/g1> usado pela camada de floco de metal (a camada acima da tinta de base).",
+          "The <g1>diffuse map<\\/g1> used by the metal flake layer (the layer above the base paint).",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/materials\\/clear-coat-shading.md",
+          {
+            "id": "tu32"
+          }
+        ],
+        [
+          "For a coherent result, use a value close to the base paint value.",
+          "Para um resultado coerente, use um valor próximo ao valor de tinta base.",
+          " For a coherent result, use a value close to the base paint value.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/materials\\/clear-coat-shading.md",
+          {
+            "id": "tu32"
+          }
+        ],
+        [
+          "Metal flakes gloss map",
+          "Mapa de brilho de flocos de metal",
+          "Metal flakes gloss map",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/materials\\/clear-coat-shading.md",
+          {
+            "id": "tu33"
+          }
+        ],
+        [
+          "The <g1>gloss map<\\/g1> used by the metal flake layer.",
+          "O mapa <g1>gloss<\\/g1> usado pela camada de floco de metal.",
+          "The <g1>gloss map<\\/g1> used by the metal flake layer.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/materials\\/clear-coat-shading.md",
+          {
+            "id": "tu34"
+          }
+        ],
+        [
+          "For a coherent result, use the <g2>metal flake normal map<\\/g2> as a mask.",
+          "Para um resultado coerente, use o <g2>metal flake normal map<\\/g2> como uma máscara.",
+          " For a coherent result, use the <g2>metal flake normal map<\\/g2> as a mask.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/materials\\/clear-coat-shading.md",
+          {
+            "id": "tu34"
+          }
+        ],
+        [
+          "Metal flakes metalness map",
+          "Mapa de metalização de flocos de metal",
+          "Metal flakes metalness map",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/materials\\/clear-coat-shading.md",
+          {
+            "id": "tu35"
+          }
+        ],
+        [
+          "The <g1>metalness map<\\/g1> used by the metal flake layer.",
+          "O mapa <g1>metalness<\\/g1> usado pela camada de floco de metal.",
+          "The <g1>metalness map<\\/g1> used by the metal flake layer.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/materials\\/clear-coat-shading.md",
+          {
+            "id": "tu36"
+          }
+        ],
+        [
+          "For best results, use high values.",
+          "Para melhores resultados, use valores elevados.",
+          " For best results, use high values.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/materials\\/clear-coat-shading.md",
+          {
+            "id": "tu36"
+          }
+        ],
+        [
+          "Metal flake normal map",
+          "Mapa normal do floco de metal",
+          "Metal flake normal map",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/materials\\/clear-coat-shading.md",
+          {
+            "id": "tu37"
+          }
+        ],
+        [
+          "The <g1>normal map<\\/g1> used by the metal flake layer.",
+          "O mapa <g1>normal<\\/g1> usado pela camada de floco de metal.",
+          "The <g1>normal map<\\/g1> used by the metal flake layer.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/materials\\/clear-coat-shading.md",
+          {
+            "id": "tu38"
+          }
+        ],
+        [
+          "This shapes the flake geometry.",
+          "Isso molda a geometria do floco.",
+          " This shapes the flake geometry.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/materials\\/clear-coat-shading.md",
+          {
+            "id": "tu38"
+          }
+        ],
+        [
+          "A metal flake normal map  (<g2>StrideClearCoatMetalFlakesNM<\\/g2>) is included in the Stride assets package.",
+          "Um mapa normal do floco de metal (<g2>StrideClearCoatMetalFlakesNM<\\/g2>) está incluído no pacote de ativos Stride.",
+          " A metal flake normal map  (<g2>StrideClearCoatMetalFlakesNM<\\/g2>) is included in the Stride assets package.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/materials\\/clear-coat-shading.md",
+          {
+            "id": "tu38"
+          }
+        ],
+        [
+          "If the texture has a high UV scale, enable <g3>Use random texture coordinates<\\/g3> below to reduce tiling effects.",
+          "Se a textura tem uma escala UV alta, habilite <g3>Use coordenadas de textura aleatórias<\\/g3> abaixo para reduzir os efeitos de nivelamento.",
+          " If the texture has a high UV scale, enable <g3>Use random texture coordinates<\\/g3> below to reduce tiling effects.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/materials\\/clear-coat-shading.md",
+          {
+            "id": "tu38"
+          }
+        ],
+        [
+          "To disable the metal flakes effect, remove the normal map.",
+          "Para desativar o efeito de flocos de metal, remova o mapa normal.",
+          " To disable the metal flakes effect, remove the normal map.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/materials\\/clear-coat-shading.md",
+          {
+            "id": "tu38"
+          }
+        ],
+        [
+          "Coat gloss map",
+          "Mapa do brilho do revestimento",
+          "Coat gloss map",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/materials\\/clear-coat-shading.md",
+          {
+            "id": "tu39"
+          }
+        ],
+        [
+          "The <g1>gloss map<\\/g1> used by the clear coat layer.",
+          "O <g1>gloss map<\\/g1> usado pela camada de revestimento clara.",
+          "The <g1>gloss map<\\/g1> used by the clear coat layer.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/materials\\/clear-coat-shading.md",
+          {
+            "id": "tu40"
+          }
+        ],
+        [
+          "Change this value to simulate different kinds of paint (eg matte).",
+          "Alterar esse valor para simular diferentes tipos de tinta (por exemplo, mate).",
+          " Change this value to simulate different kinds of paint (eg matte).",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/materials\\/clear-coat-shading.md",
+          {
+            "id": "tu40"
+          }
+        ],
+        [
+          "Clear coat metalness map",
+          "Mapa de metalização de revestimento claro",
+          "Clear coat metalness map",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/materials\\/clear-coat-shading.md",
+          {
+            "id": "tu41"
+          }
+        ],
+        [
+          "The <g1>metalness map<\\/g1> used by the clear coat layer",
+          "O <g1>metalness map<\\/g1> usado pela camada de revestimento clara",
+          "The <g1>metalness map<\\/g1> used by the clear coat layer",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/materials\\/clear-coat-shading.md",
+          {
+            "id": "tu42"
+          }
+        ],
+        [
+          "Orange peel normal map",
+          "Laranja casca mapa normal",
+          "Orange peel normal map",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/materials\\/clear-coat-shading.md",
+          {
+            "id": "tu43"
+          }
+        ],
+        [
+          "The <g1>normal map<\\/g1> used by the clear coat layer to create an \"orange peel\" effect.",
+          "O mapa <g1>normal<\\/g1> usado pela camada de revestimento clara para criar um efeito de casca de laranja.",
+          "The <g1>normal map<\\/g1> used by the clear coat layer to create an \"orange peel\" effect.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/materials\\/clear-coat-shading.md",
+          {
+            "id": "tu44"
+          }
+        ],
+        [
+          "This reflects light in different angles, simulating paint imperfections whereby the texture appears bumpy, like the skin of an orange.",
+          "Isso reflete a luz em ângulos diferentes, simulando imperfeições de tinta em que a textura parece chocante, como a pele de uma laranja.",
+          " This reflects light in different angles, simulating paint imperfections whereby the texture appears bumpy, like the skin of an orange.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/materials\\/clear-coat-shading.md",
+          {
+            "id": "tu44"
+          }
+        ],
+        [
+          "An orange peel normal map (<g2>StrideClearCoatOrangePeelNM<\\/g2>) is included in the Stride assets package.",
+          "Um mapa normal de casca de laranja (<g2>StrideClearCoatOrangePeelNM<\\/g2>) está incluído no pacote de ativos Stride.",
+          " An orange peel normal map (<g2>StrideClearCoatOrangePeelNM<\\/g2>) is included in the Stride assets package.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/materials\\/clear-coat-shading.md",
+          {
+            "id": "tu44"
+          }
+        ],
+        [
+          "Layer transition distance",
+          "Distância de transição de camada",
+          "Layer transition distance",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/materials\\/clear-coat-shading.md",
+          {
+            "id": "tu45"
+          }
+        ],
+        [
+          "The distance (in meters) at which the base paint layer transitions to the metal flake layer.",
+          "A distância (em metros) em que a camada de tinta base transiciona para a camada de floco de metal.",
+          "The distance (in meters) at which the base paint layer transitions to the metal flake layer.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/materials\\/clear-coat-shading.md",
+          {
+            "id": "tu46"
+          }
+        ],
+        [
+          "This helps fight visual artifacts caused by the metal flake normal map (which becomes more visible as the camera moves away from the material).",
+          "Isso ajuda a combater artefatos visuais causados pelo mapa normal do floco de metal (que se torna mais visível à medida que a câmera se afasta do material).",
+          " This helps fight visual artifacts caused by the metal flake normal map (which becomes more visible as the camera moves away from the material).",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/materials\\/clear-coat-shading.md",
+          {
+            "id": "tu46"
+          }
+        ],
+        [
+          "Reduce tiling and artifacts",
+          "Reduzir o tiling e os artefatos",
+          "Reduce tiling and artifacts",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/materials\\/clear-coat-shading.md",
+          {
+            "id": "tu47"
+          }
+        ],
+        [
+          "Properties that use binary operators should use <g1>normalized values<\\/g1> (ie between <g2>0.0<\\/g2> and <g3>1.0<\\/g3>).",
+          "Propriedades que usam operadores binários devem usar valores <g1>normalizados<\\/g1> (ou seja, entre <g2>0.0<\\/g2> e <g3>1.0<\\/g3>).",
+          "Properties that use binary operators should use <g1>normalized values<\\/g1> (ie between <g2>0.0<\\/g2> and <g3>1.0<\\/g3>).",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/materials\\/clear-coat-shading.md",
+          {
+            "id": "tu48"
+          }
+        ],
+        [
+          "For example, in the screenshot below, the <g4>left<\\/g4> operator uses a value of <g5>0.5<\\/g5>.",
+          "Por exemplo, na captura de tela abaixo, o operador <g4>left<\\/g4> usa um valor de <g5>0.5<\\/g5>.",
+          " For example, in the screenshot below, the <g4>left<\\/g4> operator uses a value of <g5>0.5<\\/g5>.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/materials\\/clear-coat-shading.md",
+          {
+            "id": "tu48"
+          }
+        ],
+        [
+          "<x1\\/>Binary operator<x2\\/>",
+          "<x1\\/> Operador secundário <x2\\/>",
+          "<x1\\/>Binary operator<x2\\/>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/materials\\/clear-coat-shading.md",
+          {
+            "id": "tu49"
+          }
+        ],
+        [
+          "Values over <g1>1.0<\\/g1> might produce tiling artifacts, as in the image below (note the grid pattern):",
+          "Valores sobre <g1>1.0<\\/g1> podem produzir artefatos de tiling, como na imagem abaixo (note o padrão da grade):",
+          "Values over <g1>1.0<\\/g1> might produce tiling artifacts, as in the image below (note the grid pattern):",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/materials\\/clear-coat-shading.md",
+          {
+            "id": "tu50"
+          }
+        ],
+        [
+          "<x1\\/>Artifact<x2\\/>",
+          "<x1\\/>Artifact<x2\\/>",
+          "<x1\\/>Artifact<x2\\/>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/materials\\/clear-coat-shading.md",
+          {
+            "id": "tu51"
+          }
+        ],
+        [
+          "StrideClearCoatMetalFlakesNM",
+          "Peças de reposição para máquinas",
+          "StrideClearCoatMetalFlakesNM",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/materials\\/clear-coat-shading.md",
+          {
+            "id": "tu52"
+          }
+        ],
+        [
+          "The metal flakes in the metal flake normal map included in the Stride assets package (<g1>StrideClearCoatMetalFlakesNM<\\/g1>) are quite large.",
+          "Os flocos de metal no mapa normal do floco de metal incluídos no pacote de ativos Stride (<g1>StrideClearCoatMetalFlakesNM<\\/g1>) são bastante grandes.",
+          "The metal flakes in the metal flake normal map included in the Stride assets package (<g1>StrideClearCoatMetalFlakesNM<\\/g1>) are quite large.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/materials\\/clear-coat-shading.md",
+          {
+            "id": "tu53"
+          }
+        ],
+        [
+          "For this reason, we recommend you:",
+          "Por esta razão, recomendamos:",
+          " For this reason, we recommend you:",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/materials\\/clear-coat-shading.md",
+          {
+            "id": "tu53"
+          }
+        ],
+        [
+          "use a high <g1>UV scale factor<\\/g1> which tiles the texture (thereby shrinking the flakes)",
+          "usar um fator de escala <g1>UV de alta <\\/g1> que telhas a textura (reduzindo assim os flocos)",
+          "use a high <g1>UV scale factor<\\/g1> which tiles the texture (thereby shrinking the flakes)",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/materials\\/clear-coat-shading.md",
+          {
+            "id": "tu54"
+          }
+        ],
+        [
+          "enable <g1>Use random texture coordinates<\\/g1>, preventing an obvious tiling effect",
+          "<g1> Use coordenadas de textura aleatórias<\\/g1>, impedindo um efeito de tiling óbvio",
+          "enable <g1>Use random texture coordinates<\\/g1>, preventing an obvious tiling effect",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/materials\\/clear-coat-shading.md",
+          {
+            "id": "tu55"
+          }
+        ],
+        [
+          "<x1\\/>Use random texture coordinates<x2\\/>",
+          "<x1\\/>Usar coordenadas de textura aleatória<x2\\/>",
+          "<x1\\/>Use random texture coordinates<x2\\/>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/materials\\/clear-coat-shading.md",
+          {
+            "id": "tu56"
+          }
+        ],
+        [
+          "<x1\\/>!Note<x2\\/>",
+          "<x1\\/>!Note<x2\\/>",
+          "<x1\\/>!Note<x2\\/>\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/materials\\/clear-coat-shading.md",
+          {
+            "id": "tu57"
+          }
+        ],
+        [
+          "The <g1>Use random texture coordinates<\\/g1> option is costly, so we don't recommend you use it for mobile platforms.",
+          "A opção <g1>Usar coordenadas de textura aleatórias<\\/g1> é cara, então não recomendamos que você use para plataformas móveis.",
+          "The <g1>Use random texture coordinates<\\/g1> option is costly, so we don't recommend you use it for mobile platforms.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/materials\\/clear-coat-shading.md",
+          {
+            "id": "tu57"
+          }
+        ],
+        [
+          "Alternatively, use a normal map with a higher density of smaller metal flakes.",
+          "Alternativamente, use um mapa normal com uma densidade maior de flocos de metal menores.",
+          "Alternatively, use a normal map with a higher density of smaller metal flakes.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/materials\\/clear-coat-shading.md",
+          {
+            "id": "tu58"
+          }
+        ],
+        [
+          "See also",
+          "Ver também",
+          "See also",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/materials\\/clear-coat-shading.md",
+          {
+            "id": "tu59"
+          }
+        ],
+        [
+          "Material maps",
+          "Mapas de material",
+          "<g1>Material maps<\\/g1>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/materials\\/clear-coat-shading.md",
+          {
+            "id": "tu60"
+          }
+        ],
+        [
+          "Material attributes",
+          "Atributos de material",
+          "<g1>Material attributes<\\/g1>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/materials\\/clear-coat-shading.md",
+          {
+            "id": "tu61"
+          }
+        ],
+        [
+          "Geometry attributes",
+          "Atributos de geometria",
+          "<g1>Geometry attributes<\\/g1>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/materials\\/clear-coat-shading.md",
+          {
+            "id": "tu62"
+          }
+        ],
+        [
+          "Shading attributes",
+          "Atributos de Shading",
+          "<g1>Shading attributes<\\/g1>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/materials\\/clear-coat-shading.md",
+          {
+            "id": "tu63"
+          }
+        ],
+        [
+          "Misc attributes",
+          "Atributos diversos",
+          "<g1>Misc attributes<\\/g1>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/materials\\/clear-coat-shading.md",
+          {
+            "id": "tu64"
+          }
+        ],
+        [
+          "Material layers",
+          "Camadas de material",
+          "<g1>Material layers<\\/g1>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/materials\\/clear-coat-shading.md",
+          {
+            "id": "tu65"
+          }
+        ],
+        [
+          "Material slots",
+          "Slots de material",
+          "<g1>Material slots<\\/g1>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/materials\\/clear-coat-shading.md",
+          {
+            "id": "tu66"
+          }
+        ],
+        [
+          "Materials for developers",
+          "Materiais para desenvolvedores",
+          "<g1>Materials for developers<\\/g1>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/materials\\/clear-coat-shading.md",
+          {
+            "id": "tu67"
+          }
+        ]
+      ]
+    }
+  ],
+  "seg_enabled": false
 }

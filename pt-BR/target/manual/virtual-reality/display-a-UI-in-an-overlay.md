@@ -1,143 +1,143 @@
-# Display a UI in an overlay
+# Exibir uma interface de usuário em uma sobreposição
 
-This page explains how to render a UI to a texture, then display it as an overlay.
+Esta página explica como renderizar uma interface de usuário para uma textura, em seguida, exibi-la como uma sobreposição.
 
-These instructions assume you already have a UI that you want to display in the overlay. For information about creating UIs, see the [UI](../ui/index.md) section.
+Estas instruções assumem que você já tem uma interface de usuário que você deseja exibir na sobreposição. Para obter informações sobre a criação de UIs, consulte a seção [UI](../ui/index.md).
 
-> [!Note]
-> You can't see overlays when you don't run your game in your VR device. This is because the VR device itself creates the overlay, not other hardware.
+> <x1\/>!Note<x2\/>
+> Você não pode ver sobreposições quando você não executar seu jogo em seu dispositivo VR. Isso porque o próprio dispositivo VR cria a sobreposição, não outro hardware.
 
-## 1. Create a render target texture
+## 1. Criar uma textura de destino de renderização
 
-In the **Asset View**, click **Add asset** and select **Texture** > **Render target**.
+No **Asset View**, clique em **Add asset** e selecione **Texture** > **Render target**.
 
-![Add render target](../graphics/graphics-compositor/media/add-render-target.png)
+<x1\/> Add render target<x2\/>
 
-Game Studio adds a **render target** texture to your project assets.
+Game Studio adiciona uma textura **render target** para seus ativos de projeto.
 
-![Render texture](../graphics/graphics-compositor/media/render-target-texture-in-asset-view.png)
+<x1\/>Render texture<x2\/>
 
-In the following steps, we'll render the UI to this texture, then display it in the overlay.
+Nas etapas seguintes, vamos renderizar a interface do usuário para esta textura, em seguida, exibi-la na sobreposição.
 
-## 2. Add a VR overlay
+## 2. Adicionar uma sobreposição de RV
 
-1. In the **Asset View** (in the bottom pane by default), double-click the **Graphics Compositor** asset.
+1. No **Asset View** (no painel inferior por padrão), clique duas vezes no **Graphics Compositor** ativo.
 
-   ![Graphics compositor asset](../graphics/graphics-compositor/media/graphics-compositor-asset.png)
+   <x1\/>Graphics compositor asset<x2\/>
 
-   The graphics compositor editor opens. For more information about the graphics compositor, see the [Graphics compositor](../graphics/graphics-compositor/index.md) page.
+   O editor de compositores gráficos abre. Para obter mais informações sobre o compositor gráfico, consulte a página [Graphics compositor](../graphics/graphics-compositor/index.md).
 
-2. In the graphics compositor editor, select the **forward renderer** node.
+2. No editor de compositores gráficos, selecione o nó **forward renderer**.
 
-   ![Select forward renderer](media/select-forward-renderer.png)
+   <x1\/>Selecionar renderizador <x2\/>
 
-3. In the **Property Grid** (on the right by default), expand **VR Settings**.
+3. No **Property Grid** (à direita por padrão), expanda **VR Settings**.
 
-   ![VR settings](media/vr-settings.png)
+   <x1\/>VR configurações<x2\/>
 
-4. Next to **Overlays**, click ![Green plus button](~/manual/game-studio/media/green-plus-icon.png) (**Add**).
+4. Ao lado de **Overlays**, clique em <x1\/>Green plus button<x2\/> (**Add**).
 
-   Game Studio adds a new overlay to the list.
+   Game Studio adiciona uma nova sobreposição à lista.
 
-   ![Add VR item](media/add-overlay.png)
+   <x1\/> Adicionar item VR<x2\/>
 
-5. Next to **Texture**, click ![Hand icon](~/manual/game-studio/media/hand-icon.png) (**Select an asset**).
+5. Ao lado de <g id="1">Texture</g>, clique em <x1\/>Hand icon<x2\/>Select an asset</g>).<g id="4">
 
-   The **Select an asset** window opens.
+   A janela **Selecione um ativo** abre.
 
-   ![Select render texture](../graphics/graphics-compositor/media/select-render-frame.png)
+   <x1\/>Select render texture<x2\/>
 
-6. Select the **render texture** you created and click **OK**.
+6. Selecione a textura **render** você criou e clique em **OK**.
 
-## 3. Set up the UI render feature
+## 3. Configurar o recurso de renderização UI
 
-1. In the graphics compositor editor, on the left, under **Render Features**, select the **UIRenderFeature**.
+1. No editor de compositores gráficos, à esquerda, sob **Render Features**, selecione o **UIRenderFeature**.
 
-   ![Select UI render feature](media/select-UI-render-feature.png)
+   <x1\/>Select UI renderizar recurso<x2\/>
 
-2. In the Property Grid, make sure **SimpleGroupToRenderStageSelector** is selected.
+2. Na Grade de Propriedade, certifique-se de **SimpleGroupToRenderStageSelector** é selecionado.
 
-   ![Select SimpleGroupToRenderStageSelector.png](media/select-SimpleGroupToRenderStageSelector.png)
+   <x1\/>Select SimpleGroupToRenderStageSelector.png<x2\/>
 
-3. Under **Render Stage**, make sure **UIRenderStage** is selected.
+3. Sob **Render Stage**, certifique-se de **UIRenderStage** é selecionado.
 
-   ![Select UIRenderStage.png](media/select-UIRenderStage.png)
+   <x1\/>Selecionar UIRenderStage.png<x2\/>
 
-   This makes sure the UI is rendered in the UI render stage, which we'll use in the next step.
+   Isso garante que a interface do usuário é renderizada na etapa de renderização da interface do usuário, que usaremos no próximo passo.
 
-## 4. Set up the renderers
+## 4. Configurar os renderizadores
 
-To display an overlay, you need at least two renderers:
+Para exibir uma sobreposição, você precisa de pelo menos dois renderizadores:
 
-* one to render your main camera
-* one to render the UI to the overlay
+* um para renderizar sua câmera principal
+* um para renderizar a UI para a sobreposição
 
-This page describes the simplest way to do this from scratch, using two cameras and two renderers. Depending on your pipeline, you might need to create a different setup.
+Esta página descreve a maneira mais simples de fazer isso do zero, usando duas câmeras e dois renderizadores. Dependendo do seu pipeline, você pode precisar criar uma configuração diferente.
 
-> [!Warning]
-> These instructions involve deleting your existing renderers for the game entry point. You might want to make a backup of your project in case you want to restore your pipeline afterwards.
+> <x1\/>!Warning<x2\/>
+> Essas instruções envolvem excluir seus renderizadores existentes para o ponto de entrada do jogo. Você pode querer fazer um backup do seu projeto no caso de você querer restaurar o seu pipeline depois.
 
-1. In the graphics compositor editor, select the **Entry points** node.
+1. No editor de compositores gráficos, selecione o nó **Pontos de entrada**.
 
-   ![Entry points node](../graphics/graphics-compositor/media/entry-points-node.png)
+   <x1\/> Pontos de entrada node<x2\/>
 
-2. In the **Property Grid** on the right, next to **Game renderer**, click ![Blue arrow button](~/manual/game-studio/media/blue-arrow-icon.png) (**Replace**) and select **None** to delete your existing renderers.
+2. No **Property Grid** à direita, ao lado de **Game renderer**, clique em <x1\/> Botão de seta azul<x2\/> (** Substituir**) e selecione **None** para excluir seus renderizadores existentes.
 
-   ![Cleared game renderers](../graphics/graphics-compositor/media/game-renderers-cleared.png)
+   <x1\/>Cleared game renderers<x2\/>
 
-3. Next to **Game rendererer**, click ![Blue arrow button](~/manual/game-studio/media/blue-arrow-icon.png) (**Replace**) and select **Camera Renderer**.
+3. Ao lado de **Game renderer**, clique em <x1\/> Botão de seta azul<x2\/> (** Substituir**) e selecione **Camera Renderer**.
 
-   ![Select camera renderer.png](media/select-camera-renderer.png)
+   <x1\/>Select câmera renderer.png<x2\/>
 
-   Currently, **all** renderers must have a camera, or be a child of a renderer that has a camera. This applies even to renderers that don't necessarily use cameras, such as the single stage renderer, which renders the UI.
+   Atualmente, **all** renderizadores devem ter uma câmera, ou ser uma criança de um renderizador que tem uma câmera. Isso se aplica mesmo aos renderizadores que não usam necessariamente câmeras, como o renderizador de estágio único, o que torna a interface do usuário.
 
-   For this reason, in these instructions, we'll add a game renderer with a camera, then make the two renderers children of that renderer. This makes sure both renderers have a parent with a camera.
+   Por esta razão, nestas instruções, vamos adicionar um renderizador de jogo com uma câmera, em seguida, fazer os dois renderizadores filhos daquele renderizador. Isso garante que ambos os renderizadores têm um pai com uma câmera.
 
-4. Next to **Camera**, click ![Blue arrow button](~/manual/game-studio/media/blue-arrow-icon.png) (**Replace**) and select your main game camera.
+4. Próximo a **Camera**, clique em <x1\/> Botão de seta azul<x2\/> (** Substituir**) e selecione sua câmera principal do jogo.
 
-   ![Select main camera](media/select-main-camera.png)
+   <x1\/>Selecione a câmera principal<x2\/>
 
-5. Next to **Child**, click ![Blue arrow button](~/manual/game-studio/media/blue-arrow-icon.png) (**Replace**) and select **SceneRendererCollection**.
+5. Ao lado de **Child**, clique em <x1\/> Botão de seta azul<x2\/> (** Substituir**) e selecione **SceneRendererCollection**.
 
-   ![Select scene renderer collection](media/select-scene-renderer-collection.png)
+   <x1\/>Selecione a coleção de renderizador de cena<x2\/>
 
-6. Next to **Children**, Click ![Green plus button](~/manual/game-studio/media/green-plus-icon.png) (**Add**) and select **RenderTextureSceneRenderer**.
+6. Ao lado de **Crianças**, Clique <x1\/>Verde mais botão<x2\/> (**Add**) e selecione **RenderTextureSceneRenderer**.
 
-   ![Select RenderTextureSceneRenderer](media/select-RenderTextureSceneRenderer.png)
+   <x1\/>Selecionar RenderTextureSceneRenderer<x2\/>
 
-7. Next to **Child**, click ![Blue arrow button](~/manual/game-studio/media/blue-arrow-icon.png) (**Replace**) and select **SingleStageRenderer**.
+7. Ao lado de **Child**, clique em <x1\/> Botão de seta azul<x2\/> (** Substituir**) e selecione **SingleStageRenderer**.
 
-   ![Select single stage renderer](media/select-single-stage-renderer.png)
+   <x1\/>Select single stage renderer<x2\/>
 
-8. Next to **Render Stage**, click ![Blue arrow button](~/manual/game-studio/media/blue-arrow-icon.png) (**Replace**) and select **UIRenderStage**. This is the renderer that renders the UI.
+8. Ao lado de **Render Stage**, clique em <x1\/> botão de seta azul<x2\/> (** Substituir**) e selecione **UIRenderStage**. Este é o renderizador que torna a interface do usuário.
 
-   ![Select UI render stage](media/select-UI-render-stage.png)
+   <x1\/>Select UI render stage<x2\/>
 
-9. Next to **Render Texture**, click ![Hand icon](~/manual/game-studio/media/hand-icon.png) (**Select an asset**).
+9. Ao lado de **Render Texture**, clique em <x1\/>Hand icon<x2\/> (**Select an asset**).
 
-   The **Select an asset** window opens.
+   A janela **Selecione um ativo** abre.
 
-10. Select the **render texture** and click **OK**.
+10. Selecione a textura **render** e clique em **OK**.
 
-   ![Select render texture](../graphics/graphics-compositor/media/select-render-frame.png)
+   <x1\/>Select render texture<x2\/>
 
-   Game Studio adds the render texture to the renderer.
+   Game Studio adiciona a textura de renderização ao renderizador.
 
-11. Under **Game renderer**, next to **Children**, click ![Green plus button](~/manual/game-studio/media/green-plus-icon.png) (**Add**) and select **Forward renderer**.
+11. Sob ** renderizador de Game**, ao lado de ** Crianças**, clique em <x1\/>Verde mais botão<x2\/> (**Add**) e selecione **Forward renderer**.
 
-   ![Select forward renderer](media/overlay-select-forward-renderer.png)
+   <x1\/>Selecionar renderizador <x2\/>
 
-Your game is now ready to render the UI to an overlay in your VR device.
+Seu jogo agora está pronto para renderizar a interface do usuário para uma sobreposição em seu dispositivo VR.
 
-## VR template
+## Modelo de RV
 
-For an example of a UI overlay implemented in a VR game, see the VR template included with Stride.
+Por exemplo, uma sobreposição de interface do usuário implementada em um jogo VR, veja o modelo VR incluído no Stride.
 
-![VR template](media/template-virtual-reality.png)
+<x1\/>VR template<x2\/>
 
-## See also
+## Ver também
 
-* [Overlays](overlays.md)
+* [Sobreposições](overlays.md)
 * [UI](../ui/index.md)
-* [Render textures](../graphics/graphics-compositor/render-textures.md)
-* [Graphics compositor](../graphics/graphics-compositor/index.md)
+* [Render texturas](../graphics/graphics-compositor/render-textures.md)
+* [Compositor gráfico](../graphics/graphics-compositor/index.md)

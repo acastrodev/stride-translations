@@ -1,250 +1,250 @@
-# Composition
+# Composição
 
-<span class="badge text-bg-primary">Beginner</span>
-<span class="badge text-bg-success">Programmer</span>
+<x1\/>Introdução<x2\/>
+<x3\/> Programador <x4\/>
 
-In addition to the inheritance system, SDSL introduces the concept of **composition**. A composition is a member whose type is another shader class. It's defined the same way as variables.
+Além do sistema de herança, o SDSL introduz o conceito de **composition**. Uma composição é um membro cujo tipo é outra classe shader. É definido da mesma forma que as variáveis.
 
-You can compose with an instance of the desired shader class or an instance of a shader class that inherits from the desired one.
+Você pode compor com uma instância da classe shader desejada ou uma instância de uma classe shader que herda do desejado.
 
-## Example code
+## Exemplo de código
 
 ```cs
-shader CompositionBase
-{
-	float4 Compute()
-	{
-		return float4(0.0);
+composição do shader Base
+(
+	flutuante4 Compute()
+	(
+		retornar float4(0.0);
 	}
 };
  
-shader CompositionShaderA : CompositionBase
-{
+shader CompositionShaderA : Composição Base
+(
 	float4 myColor;
  
 	override float4 Compute()
-	{
-		return myColor;
+	(
+		voltar myColor;
 	}
 };
  
-shader CompositionShaderB : CompositionBase
-{
+shader CompositionShaderB : Composição Base
+(
 	float4 myColor;
 
 	override float4 Compute()
-	{
-		return 0.5 * myColor;
+	(
+		retorno 0,5 * myColor;
 	}
 };
  
-shader BaseShader
-{
-	CompositionBase Comp0;
-	CompositionBase Comp1;
+sombreador BaseShader
+(
+	ComposiçãoBase Comp0;
+	ComposiçãoBase Comp1;
  
-	float4 GetColor()
-	{
+	flutuante4 GetColor()
+	(
 		return Comp0.Compute() + Comp1.Compute();
 	}
 };
 ```
 
-The compositions are compiled in their own context, meaning that the non-stage variables are only accessible within the composition. It's also possible to have compositions inside compositions.
+As composições são compiladas em seu próprio contexto, o que significa que as variáveis não-estágio só são acessíveis dentro da composição. Também é possível ter composições dentro de composições.
 
-## Example code: access root context
+## Exemplo de código: access root context
 
-If you want to access the root compilation context, you can use the following format:
+Se você quiser acessar o contexto de compilação de raiz, você pode usar o seguinte formato:
 
 ```cs
-shader CompositionShaderC : CompositionBase
-{
-	BaseShader rootShader = stage;
+shader CompositionShaderC : Composição Base
+(
+	Raiz de BaseShader Shader = estágio;
  
-	float4 GetColor()
-	{
-		return rootShader.GetColor();
+	flutuante4 GetColor()
+	(
+		retornar rootShader.GetColor();
 	}
 };
 ```
 
-This is error-prone, since `CompositionShaderC` expects `BaseShader` to be available in the root context.
+Isso é propenso a erros, já que `CompositionShaderC` espera que `BaseShader` esteja disponível no contexto raiz.
 
-## Example code: array of compositions
+## Exemplo de código: array de composições
 
-You can also create an array of compositions the same way you use an array of values. Since there's no way to know beforehand how many compositions there are, you should iterate using a `foreach` statement.
+Você também pode criar uma matriz de composições da mesma maneira que você usa um array de valores. Como não há nenhuma maneira de saber antecipadamente quantas composições existem, você deve iterar usando uma instrução `foreach`.
 
 ```cs
-shader BaseShaderArray
-{
+sombreador BaseShader Array
+(
 	CompositionBase Comps[];
 	
-	float4 GetColor()
-	{
+	flutuante4 GetColor()
+	(
 		float4 resultColor = float4(0.0);
  
-		foreach (var comp in Comps)
-		{
+		foreach (var comp em Comps)
+		(
 			resultColor += comp.Compute();
 		}
  
-		return resultColor;
+		resultado de retorno Cor;
 	}
 };
 ```
 
-## Example code: stage behavior
+## Exemplo de código: behavior
 
-The behavior of the `stage` keyword is straightforward: only one instance of the variable or method is produced.
+O comportamento da palavra-chave `stage` é simples: apenas uma instância da variável ou método é produzida.
 
 ```cs
-shader BaseShader
-{
-	stage float BaseStageValue;
-	float NonStageValue;
+sombreador BaseShader
+(
+	fase float BaseStageValue;
+	não Padrão de flutuação Valor;
 };
  
-shader TestShader : BaseShader
-{
+testShader : Base de dados
+(
 	BaseShader comp0;
 	BaseShader comp1;
 };
  
-// resulting shader (representation)
-shader TestShader
-{
-	float BaseStageValue;
-	float NonStageValue;
-	float comp0_NonStageValue;
-	float comp1_NonStageValue;
+\/\/ shader resultante (representação)
+teste de sombreador
+(
+	baseStage flutuante Valor;
+	não Padrão de flutuação Valor;
+	flutuar comp0_NonStage Valor;
+	flutuar comp1_NonStage Valor;
 };
 ```
 
-### Example code: stage member behavior
+### Código de exemplo: stage member behavior
 
 ```cs
-shader BaseShader
-{
-	stage float BaseStageMethod()
-	{
-		return 1.0;
+sombreador BaseShader
+(
+	fase float BaseStageMethod()
+	(
+		retorno 1.0;
 	}
 
-	float NonStageMethod()
-	{
-		return 2.0;
+	flutuar NonStageMethod()
+	(
+		retorno 2.0;
 	}
 };
  
-shader TestShader : BaseShader
-{
+testShader : Base de dados
+(
 	BaseShader comp0;
 	BaseShader comp1;
 };
  
-// resulting shader (representation)
-shader TestClass
-{
-	float BaseStageMethod()
-	{
-		return 1.0;
+\/\/ shader resultante (representação)
+teste de sombreador
+(
+	flutuar BaseStageMethod()
+	(
+		retorno 1.0;
 	}
 
-	float NonStageMethod()
-	{
-		return 2.0;
+	flutuar NonStageMethod()
+	(
+		retorno 2.0;
 	}
-	float comp0_NonStageMethod()
-	{
-		return 2.0;
+	flutuar comp0_NonStageMethod()
+	(
+		retorno 2.0;
 	}
-	float comp1_NonStageMethod()
-	{
-		return 2.0;
+	flutuar comp1_NonStageMethod()
+	(
+		retorno 2.0;
 	}
 };
 ```
 
-Keep in mind that even in composition, you can call for base methods, override them, and so on. Overriding happens in the same order as the compositions.
+Tenha em mente que mesmo na composição, você pode chamar para métodos de base, substituí-los, e assim por diante. Overriding acontece na mesma ordem que as composições.
 
-This behavior is useful when you need a value in multiple composition but you only need to compute it once (eg the normal in view space).
+Este comportamento é útil quando você precisa de um valor em composição múltipla, mas você só precisa computá-lo uma vez (por exemplo, o espaço normal em vista).
 
-## Clone behavior
+## Comportamento de clones
 
-The `clone` keyword has a less trivial behavior. It prevents the `stage` keyword to produce a unique method.
+A palavra-chave `clone` tem um comportamento menos trivial. Impede a palavra-chave `stage` para produzir um método único.
 
 ```cs
-shader BaseShader
-{
-	stage float BaseStageMethod()
-	{
-		return 1.0;
+sombreador BaseShader
+(
+	fase float BaseStageMethod()
+	(
+		retorno 1.0;
 	}
  
-	stage float BaseStageMethodNotCloned()
-	{
-		return 1.0;
+	fase float BaseStageMethodNotCloned()
+	(
+		retorno 1.0;
 	}
 };
  
-shader CompShader : BaseShader
-{
+shader CompShader : Base de dados
+(
 	override clone float BaseStageMethod()
-	{
-		return 1.0 + base.BaseStageMethod();
+	(
+		retorno 1.0 + base.BaseStageMethod();
 	}
  
 	override float BaseStageMethodNotCloned()
-	{
-		return 1.0f + base.BaseStageMethodNotCloned();
+	(
+		retorno 1.0f + base.BaseStageMethodNotCloned();
 	}
 };
  
-shader TestShader : BaseShader
-{
+testShader : Base de dados
+(
 	CompShader comp0;
 	CompShadercomp1;
 };
  
-// resulting shader (representation)
-shader TestShader
-{
-	// cloned method
-	float base_BaseStageMethod()
-	{
-		return 1.0;
+\/\/ shader resultante (representação)
+teste de sombreador
+(
+	\/\/ método clonado
+	flutuar base_BaseStageMethod()
+	(
+		retorno 1.0;
 	}
  
-	float comp0_BaseStageMethod()
-	{
-		return 1.0 + base_BaseStageMethod();
+	flutuar comp0_BaseStageMethod()
+	(
+		retorno 1.0 + base_BaseStageMethod();
 	}
  
-	float BaseStageMethod() // in fact comp1_BaseStageMethod
-	{
-		return 1.0 + comp0_BaseStageMethod; // 3.0f
+	float BaseStageMethod() \/\/ in fact comp1_BaseStageMethod
+	(
+		return 1.0 + comp0_BaseStageMethod; \/\/ 3.0f
 	}
  
-	// not cloned method
-	float base_BaseStageMethodNotCloned()
-	{
-		return 1.0f;
+	\/\/ não método clonado
+	flutuar base_BaseStageMethodNotCloned()
+	(
+		retorno 1.0f;
 	}
  
-	float BaseStageMethodNotCloned()
-	{
-		return 1.0f + base_BaseStageMethodNotCloned(); // 2.0f
+	flutuar BaseStageMethodNotCloned()
+	(
+		retorno 1.0f + base_BaseStageMethodNotCloned(); \/\/ 2.0f
 	}
 };
 ```
 
-This behavior is useful when you want to repeat a simple function but with different parameters (eg adding color on top of another).
+Este comportamento é útil quando você quer repetir uma função simples, mas com diferentes parâmetros (por exemplo, adicionar cor em cima de outro).
 
-## See also
+## Ver também
 
-* [Effect language](../effect-language.md)
-* [Shading language index](index.md)
-   - [Shader classes, mixins, and inheritance](shader-classes-mixins-and-inheritance.md)
-   - [Templates](templates.md)
-   - [Shader stage input/output automatic management](automatic-shader-stage-input-output.md)
-   - [Shader stages](shader-stages.md)
+* [Efeito da linguagem](../effect-language.md)
+* [Índice de linguagem de sombra](index.md)
+   - [Shader classes, misturas e herança](shader-classes-mixins-and-inheritance.md)
+   - [Modelos](templates.md)
+   - [Shader fase de entrada \/ saída gestão automática](automatic-shader-stage-input-output.md)
+   - [Etapas de Shader](shader-stages.md)

@@ -1,1189 +1,1189 @@
 {
-    "filename": "manual\\input\\pointers.md.xlf",
-    "files": [
-        {
-            "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/pointers.md": [
-                [
-                    "Pointers",
-                    "",
-                    "Pointers",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/pointers.md",
-                    {
-                        "id": "tu1"
-                    }
-                ],
-                [
-                    "<x1\/>Beginner<x2\/>",
-                    "",
-                    "<x1\/>Beginner<x2\/>\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/pointers.md",
-                    {
-                        "id": "tu2"
-                    }
-                ],
-                [
-                    "<x3\/>Programmer<x4\/>",
-                    "",
-                    "<x3\/>Programmer<x4\/>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/pointers.md",
-                    {
-                        "id": "tu2"
-                    }
-                ],
-                [
-                    "<g1>Pointers<\/g1> are points on the device screen corresponding to <g2>finger touches<\/g2>.",
-                    "",
-                    "<g1>Pointers<\/g1> are points on the device screen corresponding to <g2>finger touches<\/g2>.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/pointers.md",
-                    {
-                        "id": "tu3"
-                    }
-                ],
-                [
-                    "Devices with multi-touch functionality support multiple simultaneous pointers.",
-                    "",
-                    " Devices with multi-touch functionality support multiple simultaneous pointers.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/pointers.md",
-                    {
-                        "id": "tu3"
-                    }
-                ],
-                [
-                    "On desktop platforms, the left mouse button can be used to simulate pointers.",
-                    "",
-                    "On desktop platforms, the left mouse button can be used to simulate pointers.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/pointers.md",
-                    {
-                        "id": "tu4"
-                    }
-                ],
-                [
-                    "For more information about mouse input, see <g1>Mouse<\/g1>.",
-                    "",
-                    " For more information about mouse input, see <g1>Mouse<\/g1>.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/pointers.md",
-                    {
-                        "id": "tu4"
-                    }
-                ],
-                [
-                    "How Stride processes pointer input",
-                    "",
-                    "How Stride processes pointer input",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/pointers.md",
-                    {
-                        "id": "tu5"
-                    }
-                ],
-                [
-                    "The user touches the screen or clicks the left mouse button.",
-                    "",
-                    "The user touches the screen or clicks the left mouse button.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/pointers.md",
-                    {
-                        "id": "tu6"
-                    }
-                ],
-                [
-                    "Stride creates a pointer.",
-                    "",
-                    "Stride creates a pointer.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/pointers.md",
-                    {
-                        "id": "tu7"
-                    }
-                ],
-                [
-                    "Stride assigns <g1>pointer ID<\/g1> to that pointer corresponding to a given finger.",
-                    "",
-                    "Stride assigns <g1>pointer ID<\/g1> to that pointer corresponding to a given finger.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/pointers.md",
-                    {
-                        "id": "tu8"
-                    }
-                ],
-                [
-                    "Every time the pointer is modified, Stride creates a new <g1>pointer event<\/g1> with that pointer.",
-                    "",
-                    "Every time the pointer is modified, Stride creates a new <g1>pointer event<\/g1> with that pointer.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/pointers.md",
-                    {
-                        "id": "tu9"
-                    }
-                ],
-                [
-                    "For each new finger, Stride creates a new pointer with a new pointer ID.",
-                    "",
-                    "For each new finger, Stride creates a new pointer with a new pointer ID.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/pointers.md",
-                    {
-                        "id": "tu10"
-                    }
-                ],
-                [
-                    "<x1\/>!Note<x2\/>",
-                    "",
-                    "<x1\/>!Note<x2\/>\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/pointers.md",
-                    {
-                        "id": "tu11"
-                    }
-                ],
-                [
-                    "Each pointer event contains information about only one pointer.",
-                    "",
-                    "Each pointer event contains information about only one pointer.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/pointers.md",
-                    {
-                        "id": "tu11"
-                    }
-                ],
-                [
-                    "If several pointers are modified simultaneously in the same update, Stride creates a separate event for each pointer.",
-                    "",
-                    " If several pointers are modified simultaneously in the same update, Stride creates a separate event for each pointer.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/pointers.md",
-                    {
-                        "id": "tu11"
-                    }
-                ],
-                [
-                    "<x1\/>!Warning<x2\/>",
-                    "",
-                    "<x1\/>!Warning<x2\/>\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/pointers.md",
-                    {
-                        "id": "tu12"
-                    }
-                ],
-                [
-                    "Each OS handles pointer modifications differently.",
-                    "",
-                    "Each OS handles pointer modifications differently.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/pointers.md",
-                    {
-                        "id": "tu12"
-                    }
-                ],
-                [
-                    "This means the same finger gesture can generate slightly different pointer event sequences across different platforms.",
-                    "",
-                    " This means the same finger gesture can generate slightly different pointer event sequences across different platforms.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/pointers.md",
-                    {
-                        "id": "tu12"
-                    }
-                ],
-                [
-                    "For example, Android doesn't create a new pointer event when a finger touches the screen but doesn't move.",
-                    "",
-                    " For example, Android doesn't create a new pointer event when a finger touches the screen but doesn't move.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/pointers.md",
-                    {
-                        "id": "tu12"
-                    }
-                ],
-                [
-                    "For more information, check your OS documentation.",
-                    "",
-                    " For more information, check your OS documentation.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/pointers.md",
-                    {
-                        "id": "tu12"
-                    }
-                ],
-                [
-                    "You can enable gesture recognition to detect gestures such as long presses and taps.",
-                    "",
-                    "You can enable gesture recognition to detect gestures such as long presses and taps.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/pointers.md",
-                    {
-                        "id": "tu13"
-                    }
-                ],
-                [
-                    "For more information, see <g1>Gestures<\/g1>.",
-                    "",
-                    " For more information, see <g1>Gestures<\/g1>.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/pointers.md",
-                    {
-                        "id": "tu13"
-                    }
-                ],
-                [
-                    "The PointerEvent class",
-                    "",
-                    "The PointerEvent class",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/pointers.md",
-                    {
-                        "id": "tu14"
-                    }
-                ],
-                [
-                    "<g1>PointerEvent<\/g1> reports pointer events.",
-                    "",
-                    "<g1>PointerEvent<\/g1> reports pointer events.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/pointers.md",
-                    {
-                        "id": "tu15"
-                    }
-                ],
-                [
-                    "It contains the current <g2>pointer status<\/g2> and time information.",
-                    "",
-                    " It contains the current <g2>pointer status<\/g2> and time information.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/pointers.md",
-                    {
-                        "id": "tu15"
-                    }
-                ],
-                [
-                    "It is thrown every time the <g3>pointer<\/g3> is modified.",
-                    "",
-                    " It is thrown every time the <g3>pointer<\/g3> is modified.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/pointers.md",
-                    {
-                        "id": "tu15"
-                    }
-                ],
-                [
-                    "You can access the list of <g1>pointer events<\/g1> since the last update using <g2>InputManager.PointerEvents<\/g2>.",
-                    "",
-                    "You can access the list of <g1>pointer events<\/g1> since the last update using <g2>InputManager.PointerEvents<\/g2>.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/pointers.md",
-                    {
-                        "id": "tu16"
-                    }
-                ],
-                [
-                    "Stride lists pointer events in chronological order.",
-                    "",
-                    " Stride lists pointer events in chronological order.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/pointers.md",
-                    {
-                        "id": "tu16"
-                    }
-                ],
-                [
-                    "The list is cleared at every update, so you don't need to clear it manually.",
-                    "",
-                    " The list is cleared at every update, so you don't need to clear it manually.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/pointers.md",
-                    {
-                        "id": "tu16"
-                    }
-                ],
-                [
-                    "Get pointer information",
-                    "",
-                    "Get pointer information",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/pointers.md",
-                    {
-                        "id": "tu17"
-                    }
-                ],
-                [
-                    "You can use the following properties to get information about the pointer that triggered the event:",
-                    "",
-                    "You can use the following properties to get information about the pointer that triggered the event:",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/pointers.md",
-                    {
-                        "id": "tu18"
-                    }
-                ],
-                [
-                    "Property",
-                    "",
-                    "Property",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/pointers.md",
-                    {
-                        "id": "tu19"
-                    }
-                ],
-                [
-                    "Description",
-                    "",
-                    "Description",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/pointers.md",
-                    {
-                        "id": "tu20"
-                    }
-                ],
-                [
-                    "PointerEvent.PointerId",
-                    "",
-                    "<g1>PointerEvent.PointerId<\/g1>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/pointers.md",
-                    {
-                        "id": "tu21"
-                    }
-                ],
-                [
-                    "Indicates the ID of the pointer which triggered the event.",
-                    "",
-                    "Indicates the ID of the pointer which triggered the event.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/pointers.md",
-                    {
-                        "id": "tu22"
-                    }
-                ],
-                [
-                    "<x1\/>!Warning<x2\/>",
-                    "",
-                    "<x1\/>!Warning<x2\/>\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/pointers.md",
-                    {
-                        "id": "tu23"
-                    }
-                ],
-                [
-                    "The ID of a pointer is valid only during a single <g1>Pressed->Moved->Released<\/g1> sequence of pointer events.",
-                    "",
-                    "The ID of a pointer is valid only during a single <g1>Pressed->Moved->Released<\/g1> sequence of pointer events.\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/pointers.md",
-                    {
-                        "id": "tu23"
-                    }
-                ],
-                [
-                    "A finger can have different IDs each time it touches the screen (even if this happens very quickly).",
-                    "",
-                    "A finger can have different IDs each time it touches the screen (even if this happens very quickly).",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/pointers.md",
-                    {
-                        "id": "tu23"
-                    }
-                ],
-                [
-                    "<x1\/>!Warning<x2\/>",
-                    "",
-                    "<x1\/>!Warning<x2\/>\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/pointers.md",
-                    {
-                        "id": "tu24"
-                    }
-                ],
-                [
-                    "Each OS has its own way of assigning IDs to pointers.",
-                    "",
-                    "Each OS has its own way of assigning IDs to pointers.\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/pointers.md",
-                    {
-                        "id": "tu24"
-                    }
-                ],
-                [
-                    "There's no relation between the pointer ID values and corresponding fingers.",
-                    "",
-                    "There's no relation between the pointer ID values and corresponding fingers.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/pointers.md",
-                    {
-                        "id": "tu24"
-                    }
-                ],
-                [
-                    "To check if a pointer event was triggered by a mouse or touch, use:",
-                    "",
-                    "To check if a pointer event was triggered by a mouse or touch, use:",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/pointers.md",
-                    {
-                        "id": "tu25"
-                    }
-                ],
-                [
-                    "bool isTriggeredByMouse = event.Pointer is IMouseDevice",
-                    "",
-                    "bool isTriggeredByMouse = event.Pointer is IMouseDevice\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/pointers.md",
-                    {
-                        "id": "tu26"
-                    }
-                ],
-                [
-                    "Get the pointer position",
-                    "",
-                    "Get the pointer position",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/pointers.md",
-                    {
-                        "id": "tu27"
-                    }
-                ],
-                [
-                    "You can get the pointer position in normalized or absolute coordinates.",
-                    "",
-                    "You can get the pointer position in normalized or absolute coordinates.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/pointers.md",
-                    {
-                        "id": "tu28"
-                    }
-                ],
-                [
-                    "Normalized coordinates",
-                    "",
-                    "Normalized coordinates",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/pointers.md",
-                    {
-                        "id": "tu29"
-                    }
-                ],
-                [
-                    "@'Stride.Input.PointerEvent.Position' returns the pointer position in <g1>normalized<\/g1> X and Y coordinates instead of actual screen sizes in pixels.",
-                    "",
-                    "@'Stride.Input.PointerEvent.Position' returns the pointer position in <g1>normalized<\/g1> X and Y coordinates instead of actual screen sizes in pixels.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/pointers.md",
-                    {
-                        "id": "tu30"
-                    }
-                ],
-                [
-                    "This means the pointer position adjusts to any resolution and you don't have to write separate code for different resolutions.",
-                    "",
-                    " This means the pointer position adjusts to any resolution and you don't have to write separate code for different resolutions.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/pointers.md",
-                    {
-                        "id": "tu30"
-                    }
-                ],
-                [
-                    "(0,0): the pointer is in the top-left corner of the screen",
-                    "",
-                    "(0,0): the pointer is in the top-left corner of the screen",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/pointers.md",
-                    {
-                        "id": "tu31"
-                    }
-                ],
-                [
-                    "(1,1): the pointer is in the bottom-right corner of the screen",
-                    "",
-                    "(1,1): the pointer is in the bottom-right corner of the screen",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/pointers.md",
-                    {
-                        "id": "tu32"
-                    }
-                ],
-                [
-                    "Absolute coordinates",
-                    "",
-                    "Absolute coordinates",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/pointers.md",
-                    {
-                        "id": "tu33"
-                    }
-                ],
-                [
-                    "<g1>PointerEvent.AbsolutePosition<\/g1> returns the pointer position in absolute X and Y coordinates (the actual screen size in pixels).",
-                    "",
-                    "<g1>PointerEvent.AbsolutePosition<\/g1> returns the pointer position in absolute X and Y coordinates (the actual screen size in pixels).",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/pointers.md",
-                    {
-                        "id": "tu34"
-                    }
-                ],
-                [
-                    "For example, if the pointer is in the top-left corner of the screen, the values are (0,0).",
-                    "",
-                    " For example, if the pointer is in the top-left corner of the screen, the values are (0,0).",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/pointers.md",
-                    {
-                        "id": "tu34"
-                    }
-                ],
-                [
-                    "If the pointer is in the bottom-right corner, the values depends on the screen resolution (eg 1280, 720).",
-                    "",
-                    " If the pointer is in the bottom-right corner, the values depends on the screen resolution (eg 1280, 720).",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/pointers.md",
-                    {
-                        "id": "tu34"
-                    }
-                ],
-                [
-                    "<x1\/>!Tip<x2\/>",
-                    "",
-                    "<x1\/>!Tip<x2\/>\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/pointers.md",
-                    {
-                        "id": "tu35"
-                    }
-                ],
-                [
-                    "To get the actual size of the screen, access <g1>IPointerDevice.SurfaceSize<\/g1>.",
-                    "",
-                    "To get the actual size of the screen, access <g1>IPointerDevice.SurfaceSize<\/g1>.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/pointers.md",
-                    {
-                        "id": "tu35"
-                    }
-                ],
-                [
-                    "For example:",
-                    "",
-                    " For example:",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/pointers.md",
-                    {
-                        "id": "tu35"
-                    }
-                ],
-                [
-                    "var surfaceSize = Input.Pointer.SurfaceSize;",
-                    "",
-                    "var surfaceSize = Input.Pointer.SurfaceSize;\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/pointers.md",
-                    {
-                        "id": "tu36"
-                    }
-                ],
-                [
-                    "Get pointer events",
-                    "",
-                    "Get pointer events",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/pointers.md",
-                    {
-                        "id": "tu37"
-                    }
-                ],
-                [
-                    "Use the <g1>PointerEvent.EventType<\/g1> to check the pointer events.",
-                    "",
-                    "Use the <g1>PointerEvent.EventType<\/g1> to check the pointer events.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/pointers.md",
-                    {
-                        "id": "tu38"
-                    }
-                ],
-                [
-                    "There are five types of pointer event:",
-                    "",
-                    "There are five types of pointer event:",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/pointers.md",
-                    {
-                        "id": "tu39"
-                    }
-                ],
-                [
-                    "<g1>Pressed<\/g1>:",
-                    "",
-                    "<g1>Pressed<\/g1>:",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/pointers.md",
-                    {
-                        "id": "tu40"
-                    }
-                ],
-                [
-                    "The finger touched the screen.",
-                    "",
-                    " The finger touched the screen.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/pointers.md",
-                    {
-                        "id": "tu40"
-                    }
-                ],
-                [
-                    "<g1>Moved<\/g1>:",
-                    "",
-                    "<g1>Moved<\/g1>:",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/pointers.md",
-                    {
-                        "id": "tu41"
-                    }
-                ],
-                [
-                    "The finger moved along the screen.",
-                    "",
-                    " The finger moved along the screen.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/pointers.md",
-                    {
-                        "id": "tu41"
-                    }
-                ],
-                [
-                    "<g1>Released<\/g1>:",
-                    "",
-                    "<g1>Released<\/g1>:",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/pointers.md",
-                    {
-                        "id": "tu42"
-                    }
-                ],
-                [
-                    "The finger left the screen.",
-                    "",
-                    " The finger left the screen.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/pointers.md",
-                    {
-                        "id": "tu42"
-                    }
-                ],
-                [
-                    "<g1>Canceled<\/g1>:",
-                    "",
-                    "<g1>Canceled<\/g1>:",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/pointers.md",
-                    {
-                        "id": "tu43"
-                    }
-                ],
-                [
-                    "The pointer sequence was canceled.",
-                    "",
-                    " The pointer sequence was canceled.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/pointers.md",
-                    {
-                        "id": "tu43"
-                    }
-                ],
-                [
-                    "This can happen when the application is interrupted; for example, a phone app might be interrupted by an incoming phone call.",
-                    "",
-                    " This can happen when the application is interrupted; for example, a phone app might be interrupted by an incoming phone call.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/pointers.md",
-                    {
-                        "id": "tu43"
-                    }
-                ],
-                [
-                    "<x1\/>!Note<x2\/>",
-                    "",
-                    "<x1\/>!Note<x2\/>\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/pointers.md",
-                    {
-                        "id": "tu44"
-                    }
-                ],
-                [
-                    "A sequence of pointer events for one pointer always starts with a <g1>Pressed<\/g1> event.",
-                    "",
-                    "A sequence of pointer events for one pointer always starts with a <g1>Pressed<\/g1> event.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/pointers.md",
-                    {
-                        "id": "tu44"
-                    }
-                ],
-                [
-                    "This might be followed by one or more <g2>Moved<\/g2> events, and always ends with a <g3>Released<\/g3> or <g4>Canceled<\/g4> event.",
-                    "",
-                    " This might be followed by one or more <g2>Moved<\/g2> events, and always ends with a <g3>Released<\/g3> or <g4>Canceled<\/g4> event.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/pointers.md",
-                    {
-                        "id": "tu44"
-                    }
-                ],
-                [
-                    "Get delta values",
-                    "",
-                    "Get delta values",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/pointers.md",
-                    {
-                        "id": "tu45"
-                    }
-                ],
-                [
-                    "<g1>PointerEvent.DeltaTime<\/g1> gets the time elapsed from the previous @'Stride.Input.PointerEvent'.",
-                    "",
-                    "<g1>PointerEvent.DeltaTime<\/g1> gets the time elapsed from the previous @'Stride.Input.PointerEvent'.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/pointers.md",
-                    {
-                        "id": "tu46"
-                    }
-                ],
-                [
-                    "You can get the delta position in normalized or absolute coordinates.",
-                    "",
-                    "You can get the delta position in normalized or absolute coordinates.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/pointers.md",
-                    {
-                        "id": "tu47"
-                    }
-                ],
-                [
-                    "Normalized delta values",
-                    "",
-                    "Normalized delta values",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/pointers.md",
-                    {
-                        "id": "tu48"
-                    }
-                ],
-                [
-                    "<g1>PointerEvent.DeltaPosition<\/g1> gets the change in position since the previous @'Stride.Input.PointerEvent' in <g2>normalized<\/g2> X,Y coordinates.",
-                    "",
-                    "<g1>PointerEvent.DeltaPosition<\/g1> gets the change in position since the previous @'Stride.Input.PointerEvent' in <g2>normalized<\/g2> X,Y coordinates.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/pointers.md",
-                    {
-                        "id": "tu49"
-                    }
-                ],
-                [
-                    "<x1\/>!Note<x2\/>",
-                    "",
-                    "<x1\/>!Note<x2\/>\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/pointers.md",
-                    {
-                        "id": "tu50"
-                    }
-                ],
-                [
-                    "Delta values are always nulls at the beginning of the sequence of pointer events (ie when the <g1>pointer state<\/g1> is <g2>down<\/g2>).",
-                    "",
-                    "Delta values are always nulls at the beginning of the sequence of pointer events (ie when the <g1>pointer state<\/g1> is <g2>down<\/g2>).",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/pointers.md",
-                    {
-                        "id": "tu50"
-                    }
-                ],
-                [
-                    "Absolute delta values",
-                    "",
-                    "Absolute delta values",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/pointers.md",
-                    {
-                        "id": "tu51"
-                    }
-                ],
-                [
-                    "<g1>PointerEvent.DeltaPosition<\/g1> gets the change in position since the previous @'Stride.Input.PointerEvent' in <g2>absolute<\/g2> (X,Y) coordinates.",
-                    "",
-                    "<g1>PointerEvent.DeltaPosition<\/g1> gets the change in position since the previous @'Stride.Input.PointerEvent' in <g2>absolute<\/g2> (X,Y) coordinates.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/pointers.md",
-                    {
-                        "id": "tu52"
-                    }
-                ],
-                [
-                    "Example code",
-                    "",
-                    "Example code",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/pointers.md",
-                    {
-                        "id": "tu53"
-                    }
-                ],
-                [
-                    "This script tracks the pointer movement and prints its positions:",
-                    "",
-                    "This script tracks the pointer movement and prints its positions:",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/pointers.md",
-                    {
-                        "id": "tu54"
-                    }
-                ],
-                [
-                    "using System;",
-                    "",
-                    "using System;\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/pointers.md",
-                    {
-                        "id": "tu55"
-                    }
-                ],
-                [
-                    "using System.Collections.Generic;",
-                    "",
-                    "using System.Collections.Generic;\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/pointers.md",
-                    {
-                        "id": "tu55"
-                    }
-                ],
-                [
-                    "using System.Linq;",
-                    "",
-                    "using System.Linq;\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/pointers.md",
-                    {
-                        "id": "tu55"
-                    }
-                ],
-                [
-                    "using System.Threading.Tasks;",
-                    "",
-                    "using System.Threading.Tasks;\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/pointers.md",
-                    {
-                        "id": "tu55"
-                    }
-                ],
-                [
-                    "using Stride.Core.Mathematics;",
-                    "",
-                    "using Stride.Core.Mathematics;\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/pointers.md",
-                    {
-                        "id": "tu55"
-                    }
-                ],
-                [
-                    "using Stride.Engine;",
-                    "",
-                    "using Stride.Engine;\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/pointers.md",
-                    {
-                        "id": "tu55"
-                    }
-                ],
-                [
-                    "namespace Stride.Input.Tests",
-                    "",
-                    "\r\nnamespace Stride.Input.Tests\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/pointers.md",
-                    {
-                        "id": "tu55"
-                    }
-                ],
-                [
-                    "{",
-                    "",
-                    "{\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/pointers.md",
-                    {
-                        "id": "tu55"
-                    }
-                ],
-                [
-                    "public class PointerTestScript :",
-                    "",
-                    "    public class PointerTestScript :",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/pointers.md",
-                    {
-                        "id": "tu55"
-                    }
-                ],
-                [
-                    "AsyncScript",
-                    "",
-                    " AsyncScript\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/pointers.md",
-                    {
-                        "id": "tu55"
-                    }
-                ],
-                [
-                    "{",
-                    "",
-                    "    {\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/pointers.md",
-                    {
-                        "id": "tu55"
-                    }
-                ],
-                [
-                    "public override async Task Execute()",
-                    "",
-                    "        public override async Task Execute()\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/pointers.md",
-                    {
-                        "id": "tu55"
-                    }
-                ],
-                [
-                    "{",
-                    "",
-                    "        {\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/pointers.md",
-                    {
-                        "id": "tu55"
-                    }
-                ],
-                [
-                    "var pointerPositions = new Dictionary<int, Vector2>();",
-                    "",
-                    "            var pointerPositions = new Dictionary<int, Vector2>();\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/pointers.md",
-                    {
-                        "id": "tu55"
-                    }
-                ],
-                [
-                    "while (true)",
-                    "",
-                    "            while (true)\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/pointers.md",
-                    {
-                        "id": "tu55"
-                    }
-                ],
-                [
-                    "{",
-                    "",
-                    "            {\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/pointers.md",
-                    {
-                        "id": "tu55"
-                    }
-                ],
-                [
-                    "await Script.NextFrame();",
-                    "",
-                    "                await Script.NextFrame();\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/pointers.md",
-                    {
-                        "id": "tu55"
-                    }
-                ],
-                [
-                    "foreach (var pointerEvent in Input.PointerEvents)",
-                    "",
-                    "                foreach (var pointerEvent in Input.PointerEvents)\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/pointers.md",
-                    {
-                        "id": "tu55"
-                    }
-                ],
-                [
-                    "{",
-                    "",
-                    "                {\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/pointers.md",
-                    {
-                        "id": "tu55"
-                    }
-                ],
-                [
-                    "switch (pointerEvent.EventType)",
-                    "",
-                    "                    switch (pointerEvent.EventType)\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/pointers.md",
-                    {
-                        "id": "tu55"
-                    }
-                ],
-                [
-                    "{",
-                    "",
-                    "                    {\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/pointers.md",
-                    {
-                        "id": "tu55"
-                    }
-                ],
-                [
-                    "case PointerEventType.Pressed:",
-                    "",
-                    "                    case PointerEventType.Pressed:\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/pointers.md",
-                    {
-                        "id": "tu55"
-                    }
-                ],
-                [
-                    "pointerPositions[pointerEvent.PointerId] = pointerEvent.Position;",
-                    "",
-                    "                        pointerPositions[pointerEvent.PointerId] = pointerEvent.Position;\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/pointers.md",
-                    {
-                        "id": "tu55"
-                    }
-                ],
-                [
-                    "break;",
-                    "",
-                    "                        break;\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/pointers.md",
-                    {
-                        "id": "tu55"
-                    }
-                ],
-                [
-                    "case PointerEventType.Moved:",
-                    "",
-                    "                    case PointerEventType.Moved:\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/pointers.md",
-                    {
-                        "id": "tu55"
-                    }
-                ],
-                [
-                    "pointerPositions[pointerEvent.PointerId] = pointerEvent.Position;",
-                    "",
-                    "                        pointerPositions[pointerEvent.PointerId] = pointerEvent.Position;\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/pointers.md",
-                    {
-                        "id": "tu55"
-                    }
-                ],
-                [
-                    "break;",
-                    "",
-                    "                        break;\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/pointers.md",
-                    {
-                        "id": "tu55"
-                    }
-                ],
-                [
-                    "case PointerEventType.Released:",
-                    "",
-                    "                    case PointerEventType.Released:\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/pointers.md",
-                    {
-                        "id": "tu55"
-                    }
-                ],
-                [
-                    "case PointerEventType.Canceled:",
-                    "",
-                    "                    case PointerEventType.Canceled:\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/pointers.md",
-                    {
-                        "id": "tu55"
-                    }
-                ],
-                [
-                    "pointerPositions.Remove(pointerEvent.PointerId);",
-                    "",
-                    "                        pointerPositions.Remove(pointerEvent.PointerId);\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/pointers.md",
-                    {
-                        "id": "tu55"
-                    }
-                ],
-                [
-                    "break;",
-                    "",
-                    "                        break;\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/pointers.md",
-                    {
-                        "id": "tu55"
-                    }
-                ],
-                [
-                    "default:",
-                    "",
-                    "                    default:\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/pointers.md",
-                    {
-                        "id": "tu55"
-                    }
-                ],
-                [
-                    "throw new ArgumentOutOfRangeException();",
-                    "",
-                    "                        throw new ArgumentOutOfRangeException();\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/pointers.md",
-                    {
-                        "id": "tu55"
-                    }
-                ],
-                [
-                    "}",
-                    "",
-                    "                    }\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/pointers.md",
-                    {
-                        "id": "tu55"
-                    }
-                ],
-                [
-                    "}",
-                    "",
-                    "                }\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/pointers.md",
-                    {
-                        "id": "tu55"
-                    }
-                ],
-                [
-                    "var positionsStr = pointerPositions.Values.Aggregate(\"\", (current, pointer) => current + (pointer.ToString() + \", \"));",
-                    "",
-                    "                var positionsStr = pointerPositions.Values.Aggregate(\"\", (current, pointer) => current + (pointer.ToString() + \", \"));\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/pointers.md",
-                    {
-                        "id": "tu55"
-                    }
-                ],
-                [
-                    "Log.Info(\"There are currently {0} pointers on the screen located at {1}\", pointerPositions.Count, positionsStr);",
-                    "",
-                    "                Log.Info(\"There are currently {0} pointers on the screen located at {1}\", pointerPositions.Count, positionsStr);\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/pointers.md",
-                    {
-                        "id": "tu55"
-                    }
-                ],
-                [
-                    "}",
-                    "",
-                    "            }\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/pointers.md",
-                    {
-                        "id": "tu55"
-                    }
-                ],
-                [
-                    "}",
-                    "",
-                    "        }\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/pointers.md",
-                    {
-                        "id": "tu55"
-                    }
-                ],
-                [
-                    "}",
-                    "",
-                    "    }\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/pointers.md",
-                    {
-                        "id": "tu55"
-                    }
-                ],
-                [
-                    "}",
-                    "",
-                    "}\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/pointers.md",
-                    {
-                        "id": "tu55"
-                    }
-                ],
-                [
-                    "See also",
-                    "",
-                    "See also",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/pointers.md",
-                    {
-                        "id": "tu56"
-                    }
-                ],
-                [
-                    "Gestures",
-                    "",
-                    "<g1>Gestures<\/g1>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/pointers.md",
-                    {
-                        "id": "tu57"
-                    }
-                ],
-                [
-                    "Mouse",
-                    "",
-                    "<g1>Mouse<\/g1>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/pointers.md",
-                    {
-                        "id": "tu58"
-                    }
-                ],
-                [
-                    "Virtual buttons",
-                    "",
-                    "<g1>Virtual buttons<\/g1>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/pointers.md",
-                    {
-                        "id": "tu59"
-                    }
-                ],
-                [
-                    "Input overview",
-                    "",
-                    "<g1>Input overview<\/g1>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/pointers.md",
-                    {
-                        "id": "tu60"
-                    }
-                ]
-            ]
-        }
-    ],
-    "seg_enabled": false
+  "filename": "manual\\input\\pointers.md.xlf",
+  "files": [
+    {
+      "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/pointers.md": [
+        [
+          "Pointers",
+          "Pontos",
+          "Pointers",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/pointers.md",
+          {
+            "id": "tu1"
+          }
+        ],
+        [
+          "<x1\\/>Beginner<x2\\/>",
+          "<x1\\/>Introdução<x2\\/>",
+          "<x1\\/>Beginner<x2\\/>\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/pointers.md",
+          {
+            "id": "tu2"
+          }
+        ],
+        [
+          "<x3\\/>Programmer<x4\\/>",
+          "<x3\\/> Programador <x4\\/>",
+          "<x3\\/>Programmer<x4\\/>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/pointers.md",
+          {
+            "id": "tu2"
+          }
+        ],
+        [
+          "<g1>Pointers<\\/g1> are points on the device screen corresponding to <g2>finger touches<\\/g2>.",
+          "<g1>Pointers<\\/g1> são pontos na tela do dispositivo correspondente a <g2>finger touches<\\/g2>.",
+          "<g1>Pointers<\\/g1> are points on the device screen corresponding to <g2>finger touches<\\/g2>.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/pointers.md",
+          {
+            "id": "tu3"
+          }
+        ],
+        [
+          "Devices with multi-touch functionality support multiple simultaneous pointers.",
+          "Dispositivos com funcionalidade multi-toque suportam vários ponteiros simultâneos.",
+          " Devices with multi-touch functionality support multiple simultaneous pointers.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/pointers.md",
+          {
+            "id": "tu3"
+          }
+        ],
+        [
+          "On desktop platforms, the left mouse button can be used to simulate pointers.",
+          "Em plataformas de desktop, o botão esquerdo do mouse pode ser usado para simular ponteiros.",
+          "On desktop platforms, the left mouse button can be used to simulate pointers.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/pointers.md",
+          {
+            "id": "tu4"
+          }
+        ],
+        [
+          "For more information about mouse input, see <g1>Mouse<\\/g1>.",
+          "Para obter mais informações sobre a entrada do mouse, consulte <g1>Mouse<\\/g1>.",
+          " For more information about mouse input, see <g1>Mouse<\\/g1>.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/pointers.md",
+          {
+            "id": "tu4"
+          }
+        ],
+        [
+          "How Stride processes pointer input",
+          "Como Stride processa entrada de ponteiro",
+          "How Stride processes pointer input",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/pointers.md",
+          {
+            "id": "tu5"
+          }
+        ],
+        [
+          "The user touches the screen or clicks the left mouse button.",
+          "O usuário toca na tela ou clica no botão esquerdo do mouse.",
+          "The user touches the screen or clicks the left mouse button.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/pointers.md",
+          {
+            "id": "tu6"
+          }
+        ],
+        [
+          "Stride creates a pointer.",
+          "Stride cria um ponteiro.",
+          "Stride creates a pointer.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/pointers.md",
+          {
+            "id": "tu7"
+          }
+        ],
+        [
+          "Stride assigns <g1>pointer ID<\\/g1> to that pointer corresponding to a given finger.",
+          "Stride atribui <g1>pointer ID<\\/g1> a esse ponteiro correspondente a um determinado dedo.",
+          "Stride assigns <g1>pointer ID<\\/g1> to that pointer corresponding to a given finger.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/pointers.md",
+          {
+            "id": "tu8"
+          }
+        ],
+        [
+          "Every time the pointer is modified, Stride creates a new <g1>pointer event<\\/g1> with that pointer.",
+          "Cada vez que o ponteiro é modificado, Stride cria um novo evento <g1>pointer<\\/g1> com esse ponteiro.",
+          "Every time the pointer is modified, Stride creates a new <g1>pointer event<\\/g1> with that pointer.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/pointers.md",
+          {
+            "id": "tu9"
+          }
+        ],
+        [
+          "For each new finger, Stride creates a new pointer with a new pointer ID.",
+          "Para cada novo dedo, Stride cria um novo ponteiro com um novo ID de ponteiro.",
+          "For each new finger, Stride creates a new pointer with a new pointer ID.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/pointers.md",
+          {
+            "id": "tu10"
+          }
+        ],
+        [
+          "<x1\\/>!Note<x2\\/>",
+          "<x1\\/>!Note<x2\\/>",
+          "<x1\\/>!Note<x2\\/>\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/pointers.md",
+          {
+            "id": "tu11"
+          }
+        ],
+        [
+          "Each pointer event contains information about only one pointer.",
+          "Cada evento de ponteiro contém informações sobre apenas um ponteiro.",
+          "Each pointer event contains information about only one pointer.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/pointers.md",
+          {
+            "id": "tu11"
+          }
+        ],
+        [
+          "If several pointers are modified simultaneously in the same update, Stride creates a separate event for each pointer.",
+          "Se vários ponteiros forem modificados simultaneamente na mesma atualização, a Stride cria um evento separado para cada ponteiro.",
+          " If several pointers are modified simultaneously in the same update, Stride creates a separate event for each pointer.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/pointers.md",
+          {
+            "id": "tu11"
+          }
+        ],
+        [
+          "<x1\\/>!Warning<x2\\/>",
+          "<x1\\/>!Warning<x2\\/>",
+          "<x1\\/>!Warning<x2\\/>\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/pointers.md",
+          {
+            "id": "tu12"
+          }
+        ],
+        [
+          "Each OS handles pointer modifications differently.",
+          "Cada sistema operacional lida com modificações de ponteiro de forma diferente.",
+          "Each OS handles pointer modifications differently.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/pointers.md",
+          {
+            "id": "tu12"
+          }
+        ],
+        [
+          "This means the same finger gesture can generate slightly different pointer event sequences across different platforms.",
+          "Isso significa que o mesmo gesto de dedo pode gerar sequências de eventos de ponteiro ligeiramente diferentes em diferentes plataformas.",
+          " This means the same finger gesture can generate slightly different pointer event sequences across different platforms.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/pointers.md",
+          {
+            "id": "tu12"
+          }
+        ],
+        [
+          "For example, Android doesn't create a new pointer event when a finger touches the screen but doesn't move.",
+          "Por exemplo, o Android não cria um novo evento de ponteiro quando um dedo toca na tela, mas não se move.",
+          " For example, Android doesn't create a new pointer event when a finger touches the screen but doesn't move.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/pointers.md",
+          {
+            "id": "tu12"
+          }
+        ],
+        [
+          "For more information, check your OS documentation.",
+          "Para obter mais informações, verifique sua documentação do sistema operacional.",
+          " For more information, check your OS documentation.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/pointers.md",
+          {
+            "id": "tu12"
+          }
+        ],
+        [
+          "You can enable gesture recognition to detect gestures such as long presses and taps.",
+          "Você pode permitir o reconhecimento de gestos para detectar gestos como prensas longas e torneiras.",
+          "You can enable gesture recognition to detect gestures such as long presses and taps.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/pointers.md",
+          {
+            "id": "tu13"
+          }
+        ],
+        [
+          "For more information, see <g1>Gestures<\\/g1>.",
+          "Para mais informações, consulte <g1>Gestures<\\/g1>.",
+          " For more information, see <g1>Gestures<\\/g1>.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/pointers.md",
+          {
+            "id": "tu13"
+          }
+        ],
+        [
+          "The PointerEvent class",
+          "A classe PointerEvent",
+          "The PointerEvent class",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/pointers.md",
+          {
+            "id": "tu14"
+          }
+        ],
+        [
+          "<g1>PointerEvent<\\/g1> reports pointer events.",
+          "<g1>PointerEvent<\\/g1> relata eventos de ponteiro.",
+          "<g1>PointerEvent<\\/g1> reports pointer events.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/pointers.md",
+          {
+            "id": "tu15"
+          }
+        ],
+        [
+          "It contains the current <g2>pointer status<\\/g2> and time information.",
+          "Ele contém o status atual <g2>pointer<\\/g2> e informações de tempo.",
+          " It contains the current <g2>pointer status<\\/g2> and time information.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/pointers.md",
+          {
+            "id": "tu15"
+          }
+        ],
+        [
+          "It is thrown every time the <g3>pointer<\\/g3> is modified.",
+          "É jogado cada vez que o <g3>pointer<\\/g3> é modificado.",
+          " It is thrown every time the <g3>pointer<\\/g3> is modified.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/pointers.md",
+          {
+            "id": "tu15"
+          }
+        ],
+        [
+          "You can access the list of <g1>pointer events<\\/g1> since the last update using <g2>InputManager.PointerEvents<\\/g2>.",
+          "Você pode acessar a lista de eventos <g1>pointer<\\/g1> desde a última atualização usando <g2>InputManager.PointerEvents<\\/g2>.",
+          "You can access the list of <g1>pointer events<\\/g1> since the last update using <g2>InputManager.PointerEvents<\\/g2>.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/pointers.md",
+          {
+            "id": "tu16"
+          }
+        ],
+        [
+          "Stride lists pointer events in chronological order.",
+          "Stride lista eventos de ponteiro em ordem cronológica.",
+          " Stride lists pointer events in chronological order.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/pointers.md",
+          {
+            "id": "tu16"
+          }
+        ],
+        [
+          "The list is cleared at every update, so you don't need to clear it manually.",
+          "A lista é limpa em cada atualização, então você não precisa limpá-la manualmente.",
+          " The list is cleared at every update, so you don't need to clear it manually.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/pointers.md",
+          {
+            "id": "tu16"
+          }
+        ],
+        [
+          "Get pointer information",
+          "Obtenha informações do ponteiro",
+          "Get pointer information",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/pointers.md",
+          {
+            "id": "tu17"
+          }
+        ],
+        [
+          "You can use the following properties to get information about the pointer that triggered the event:",
+          "Você pode usar as seguintes propriedades para obter informações sobre o ponteiro que acionou o evento:",
+          "You can use the following properties to get information about the pointer that triggered the event:",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/pointers.md",
+          {
+            "id": "tu18"
+          }
+        ],
+        [
+          "Property",
+          "Propriedade",
+          "Property",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/pointers.md",
+          {
+            "id": "tu19"
+          }
+        ],
+        [
+          "Description",
+          "Descrição",
+          "Description",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/pointers.md",
+          {
+            "id": "tu20"
+          }
+        ],
+        [
+          "PointerEvent.PointerId",
+          "PointerEvent.PointerId",
+          "<g1>PointerEvent.PointerId<\\/g1>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/pointers.md",
+          {
+            "id": "tu21"
+          }
+        ],
+        [
+          "Indicates the ID of the pointer which triggered the event.",
+          "Indica o ID do ponteiro que desencadeou o evento.",
+          "Indicates the ID of the pointer which triggered the event.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/pointers.md",
+          {
+            "id": "tu22"
+          }
+        ],
+        [
+          "<x1\\/>!Warning<x2\\/>",
+          "<x1\\/>!Warning<x2\\/>",
+          "<x1\\/>!Warning<x2\\/>\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/pointers.md",
+          {
+            "id": "tu23"
+          }
+        ],
+        [
+          "The ID of a pointer is valid only during a single <g1>Pressed->Moved->Released<\\/g1> sequence of pointer events.",
+          "O ID de um ponteiro é válido apenas durante um único <g1>Pressed->Moved->Released<\\/g1> sequência de eventos de ponteiro.",
+          "The ID of a pointer is valid only during a single <g1>Pressed->Moved->Released<\\/g1> sequence of pointer events.\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/pointers.md",
+          {
+            "id": "tu23"
+          }
+        ],
+        [
+          "A finger can have different IDs each time it touches the screen (even if this happens very quickly).",
+          "Um dedo pode ter diferentes IDs cada vez que toca a tela (mesmo que isso aconteça muito rapidamente).",
+          "A finger can have different IDs each time it touches the screen (even if this happens very quickly).",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/pointers.md",
+          {
+            "id": "tu23"
+          }
+        ],
+        [
+          "<x1\\/>!Warning<x2\\/>",
+          "<x1\\/>!Warning<x2\\/>",
+          "<x1\\/>!Warning<x2\\/>\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/pointers.md",
+          {
+            "id": "tu24"
+          }
+        ],
+        [
+          "Each OS has its own way of assigning IDs to pointers.",
+          "Cada sistema operacional tem sua própria maneira de atribuir IDs aos ponteiros.",
+          "Each OS has its own way of assigning IDs to pointers.\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/pointers.md",
+          {
+            "id": "tu24"
+          }
+        ],
+        [
+          "There's no relation between the pointer ID values and corresponding fingers.",
+          "Não há relação entre os valores de ID do ponteiro e os dedos correspondentes.",
+          "There's no relation between the pointer ID values and corresponding fingers.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/pointers.md",
+          {
+            "id": "tu24"
+          }
+        ],
+        [
+          "To check if a pointer event was triggered by a mouse or touch, use:",
+          "Para verificar se um evento de ponteiro foi acionado por um mouse ou toque, use:",
+          "To check if a pointer event was triggered by a mouse or touch, use:",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/pointers.md",
+          {
+            "id": "tu25"
+          }
+        ],
+        [
+          "bool isTriggeredByMouse = event.Pointer is IMouseDevice",
+          "bool é triggered ByMouse = evento. O ponteiro é IMouseDevice",
+          "bool isTriggeredByMouse = event.Pointer is IMouseDevice\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/pointers.md",
+          {
+            "id": "tu26"
+          }
+        ],
+        [
+          "Get the pointer position",
+          "Obter a posição do ponteiro",
+          "Get the pointer position",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/pointers.md",
+          {
+            "id": "tu27"
+          }
+        ],
+        [
+          "You can get the pointer position in normalized or absolute coordinates.",
+          "Você pode obter a posição do ponteiro em coordenadas normalizadas ou absolutas.",
+          "You can get the pointer position in normalized or absolute coordinates.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/pointers.md",
+          {
+            "id": "tu28"
+          }
+        ],
+        [
+          "Normalized coordinates",
+          "Coordenadas normalizadas",
+          "Normalized coordinates",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/pointers.md",
+          {
+            "id": "tu29"
+          }
+        ],
+        [
+          "@'Stride.Input.PointerEvent.Position' returns the pointer position in <g1>normalized<\\/g1> X and Y coordinates instead of actual screen sizes in pixels.",
+          "@'Stride.Input.PointerEvent.Position' retorna a posição do ponteiro em <g1>normalizado<\\/g1> X e Y coordena em vez de tamanhos de tela reais em pixels.",
+          "@'Stride.Input.PointerEvent.Position' returns the pointer position in <g1>normalized<\\/g1> X and Y coordinates instead of actual screen sizes in pixels.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/pointers.md",
+          {
+            "id": "tu30"
+          }
+        ],
+        [
+          "This means the pointer position adjusts to any resolution and you don't have to write separate code for different resolutions.",
+          "Isso significa que a posição do ponteiro se ajusta a qualquer resolução e você não precisa escrever código separado para diferentes resoluções.",
+          " This means the pointer position adjusts to any resolution and you don't have to write separate code for different resolutions.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/pointers.md",
+          {
+            "id": "tu30"
+          }
+        ],
+        [
+          "(0,0): the pointer is in the top-left corner of the screen",
+          "(0,0): o ponteiro está no canto superior esquerdo da tela",
+          "(0,0): the pointer is in the top-left corner of the screen",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/pointers.md",
+          {
+            "id": "tu31"
+          }
+        ],
+        [
+          "(1,1): the pointer is in the bottom-right corner of the screen",
+          "(1,1): o ponteiro está no canto inferior direito da tela",
+          "(1,1): the pointer is in the bottom-right corner of the screen",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/pointers.md",
+          {
+            "id": "tu32"
+          }
+        ],
+        [
+          "Absolute coordinates",
+          "Coordenadas absolutas",
+          "Absolute coordinates",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/pointers.md",
+          {
+            "id": "tu33"
+          }
+        ],
+        [
+          "<g1>PointerEvent.AbsolutePosition<\\/g1> returns the pointer position in absolute X and Y coordinates (the actual screen size in pixels).",
+          "<g1>PointerEvent.AbsolutePosition<\\/g1> retorna a posição do ponteiro em coordenadas X e Y absolutas (o tamanho real da tela em pixels).",
+          "<g1>PointerEvent.AbsolutePosition<\\/g1> returns the pointer position in absolute X and Y coordinates (the actual screen size in pixels).",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/pointers.md",
+          {
+            "id": "tu34"
+          }
+        ],
+        [
+          "For example, if the pointer is in the top-left corner of the screen, the values are (0,0).",
+          "Por exemplo, se o ponteiro estiver no canto superior esquerdo da tela, os valores são (0,0).",
+          " For example, if the pointer is in the top-left corner of the screen, the values are (0,0).",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/pointers.md",
+          {
+            "id": "tu34"
+          }
+        ],
+        [
+          "If the pointer is in the bottom-right corner, the values depends on the screen resolution (eg 1280, 720).",
+          "Se o ponteiro estiver no canto inferior direito, os valores dependem da resolução da tela (por exemplo 1280, 720).",
+          " If the pointer is in the bottom-right corner, the values depends on the screen resolution (eg 1280, 720).",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/pointers.md",
+          {
+            "id": "tu34"
+          }
+        ],
+        [
+          "<x1\\/>!Tip<x2\\/>",
+          "<x1\\/>!Tip<x2\\/>",
+          "<x1\\/>!Tip<x2\\/>\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/pointers.md",
+          {
+            "id": "tu35"
+          }
+        ],
+        [
+          "To get the actual size of the screen, access <g1>IPointerDevice.SurfaceSize<\\/g1>.",
+          "Para obter o tamanho real da tela, acesse <g1>IPointerDevice. SurfaceSize<\\/g1>.",
+          "To get the actual size of the screen, access <g1>IPointerDevice.SurfaceSize<\\/g1>.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/pointers.md",
+          {
+            "id": "tu35"
+          }
+        ],
+        [
+          "For example:",
+          "Por exemplo:",
+          " For example:",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/pointers.md",
+          {
+            "id": "tu35"
+          }
+        ],
+        [
+          "var surfaceSize = Input.Pointer.SurfaceSize;",
+          "superfície da vareta Tamanho = Input.Pointer.SurfaceSize;",
+          "var surfaceSize = Input.Pointer.SurfaceSize;\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/pointers.md",
+          {
+            "id": "tu36"
+          }
+        ],
+        [
+          "Get pointer events",
+          "Obter eventos de ponteiro",
+          "Get pointer events",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/pointers.md",
+          {
+            "id": "tu37"
+          }
+        ],
+        [
+          "Use the <g1>PointerEvent.EventType<\\/g1> to check the pointer events.",
+          "Use o <g1>PointerEvent.EventType<\\/g1> para verificar os eventos do ponteiro.",
+          "Use the <g1>PointerEvent.EventType<\\/g1> to check the pointer events.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/pointers.md",
+          {
+            "id": "tu38"
+          }
+        ],
+        [
+          "There are five types of pointer event:",
+          "Existem cinco tipos de evento de ponteiro:",
+          "There are five types of pointer event:",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/pointers.md",
+          {
+            "id": "tu39"
+          }
+        ],
+        [
+          "<g1>Pressed<\\/g1>:",
+          "<g1>Pressed<\\/g1>:",
+          "<g1>Pressed<\\/g1>:",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/pointers.md",
+          {
+            "id": "tu40"
+          }
+        ],
+        [
+          "The finger touched the screen.",
+          "O dedo tocou na tela.",
+          " The finger touched the screen.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/pointers.md",
+          {
+            "id": "tu40"
+          }
+        ],
+        [
+          "<g1>Moved<\\/g1>:",
+          "<g1> Modificado <\\/g1>:",
+          "<g1>Moved<\\/g1>:",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/pointers.md",
+          {
+            "id": "tu41"
+          }
+        ],
+        [
+          "The finger moved along the screen.",
+          "O dedo moveu-se ao longo da tela.",
+          " The finger moved along the screen.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/pointers.md",
+          {
+            "id": "tu41"
+          }
+        ],
+        [
+          "<g1>Released<\\/g1>:",
+          "<g1>Released<\\/g1>:",
+          "<g1>Released<\\/g1>:",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/pointers.md",
+          {
+            "id": "tu42"
+          }
+        ],
+        [
+          "The finger left the screen.",
+          "O dedo deixou a tela.",
+          " The finger left the screen.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/pointers.md",
+          {
+            "id": "tu42"
+          }
+        ],
+        [
+          "<g1>Canceled<\\/g1>:",
+          "<g1>Cancelado<\\/g1>:",
+          "<g1>Canceled<\\/g1>:",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/pointers.md",
+          {
+            "id": "tu43"
+          }
+        ],
+        [
+          "The pointer sequence was canceled.",
+          "A sequência de ponteiro foi cancelada.",
+          " The pointer sequence was canceled.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/pointers.md",
+          {
+            "id": "tu43"
+          }
+        ],
+        [
+          "This can happen when the application is interrupted; for example, a phone app might be interrupted by an incoming phone call.",
+          "Isso pode acontecer quando o aplicativo é interrompido; por exemplo, um aplicativo de telefone pode ser interrompido por uma chamada de telefone recebida.",
+          " This can happen when the application is interrupted; for example, a phone app might be interrupted by an incoming phone call.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/pointers.md",
+          {
+            "id": "tu43"
+          }
+        ],
+        [
+          "<x1\\/>!Note<x2\\/>",
+          "<x1\\/>!Note<x2\\/>",
+          "<x1\\/>!Note<x2\\/>\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/pointers.md",
+          {
+            "id": "tu44"
+          }
+        ],
+        [
+          "A sequence of pointer events for one pointer always starts with a <g1>Pressed<\\/g1> event.",
+          "Uma sequência de eventos de ponteiro para um ponteiro sempre começa com um evento <g1>Pressed<\\/g1>.",
+          "A sequence of pointer events for one pointer always starts with a <g1>Pressed<\\/g1> event.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/pointers.md",
+          {
+            "id": "tu44"
+          }
+        ],
+        [
+          "This might be followed by one or more <g2>Moved<\\/g2> events, and always ends with a <g3>Released<\\/g3> or <g4>Canceled<\\/g4> event.",
+          "Isso pode ser seguido por um ou mais eventos <g2>Moved<\\/g2> e sempre termina com um evento <g3>Released<\\/g3> ou <g4>Canceled<\\/g4>.>.",
+          " This might be followed by one or more <g2>Moved<\\/g2> events, and always ends with a <g3>Released<\\/g3> or <g4>Canceled<\\/g4> event.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/pointers.md",
+          {
+            "id": "tu44"
+          }
+        ],
+        [
+          "Get delta values",
+          "Obter valores delta",
+          "Get delta values",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/pointers.md",
+          {
+            "id": "tu45"
+          }
+        ],
+        [
+          "<g1>PointerEvent.DeltaTime<\\/g1> gets the time elapsed from the previous @'Stride.Input.PointerEvent'.",
+          "<g1>Pointer Event.DeltaTime<\\/g1> recebe o tempo decorrido do anterior @'Stride.Input.Pointer Evento.",
+          "<g1>PointerEvent.DeltaTime<\\/g1> gets the time elapsed from the previous @'Stride.Input.PointerEvent'.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/pointers.md",
+          {
+            "id": "tu46"
+          }
+        ],
+        [
+          "You can get the delta position in normalized or absolute coordinates.",
+          "Você pode obter a posição delta em coordenadas normalizadas ou absolutas.",
+          "You can get the delta position in normalized or absolute coordinates.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/pointers.md",
+          {
+            "id": "tu47"
+          }
+        ],
+        [
+          "Normalized delta values",
+          "Valores delta normalizados",
+          "Normalized delta values",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/pointers.md",
+          {
+            "id": "tu48"
+          }
+        ],
+        [
+          "<g1>PointerEvent.DeltaPosition<\\/g1> gets the change in position since the previous @'Stride.Input.PointerEvent' in <g2>normalized<\\/g2> X,Y coordinates.",
+          "<g1>PointerEvent.DeltaPosition<\\/g1> recebe a mudança na posição desde o anterior @'Stride.Input.PointerEvent' em <g2>normalized<\\/g2> X,Y coordena.",
+          "<g1>PointerEvent.DeltaPosition<\\/g1> gets the change in position since the previous @'Stride.Input.PointerEvent' in <g2>normalized<\\/g2> X,Y coordinates.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/pointers.md",
+          {
+            "id": "tu49"
+          }
+        ],
+        [
+          "<x1\\/>!Note<x2\\/>",
+          "<x1\\/>!Note<x2\\/>",
+          "<x1\\/>!Note<x2\\/>\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/pointers.md",
+          {
+            "id": "tu50"
+          }
+        ],
+        [
+          "Delta values are always nulls at the beginning of the sequence of pointer events (ie when the <g1>pointer state<\\/g1> is <g2>down<\\/g2>).",
+          "Os valores Delta são sempre nulos no início da sequência de eventos de ponteiro (ou seja, quando o <g1>pointer estado<\\/g1> é <g2>down<\\/g2>).",
+          "Delta values are always nulls at the beginning of the sequence of pointer events (ie when the <g1>pointer state<\\/g1> is <g2>down<\\/g2>).",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/pointers.md",
+          {
+            "id": "tu50"
+          }
+        ],
+        [
+          "Absolute delta values",
+          "Valores absolutos delta",
+          "Absolute delta values",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/pointers.md",
+          {
+            "id": "tu51"
+          }
+        ],
+        [
+          "<g1>PointerEvent.DeltaPosition<\\/g1> gets the change in position since the previous @'Stride.Input.PointerEvent' in <g2>absolute<\\/g2> (X,Y) coordinates.",
+          "<g1>PointerEvent.DeltaPosition<\\/g1> obtém a mudança na posição desde as coordenadas anteriores @'Stride.Input.PointerEvent' em <g2>absolute<\\/g2> (X,Y).",
+          "<g1>PointerEvent.DeltaPosition<\\/g1> gets the change in position since the previous @'Stride.Input.PointerEvent' in <g2>absolute<\\/g2> (X,Y) coordinates.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/pointers.md",
+          {
+            "id": "tu52"
+          }
+        ],
+        [
+          "Example code",
+          "Exemplo de código",
+          "Example code",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/pointers.md",
+          {
+            "id": "tu53"
+          }
+        ],
+        [
+          "This script tracks the pointer movement and prints its positions:",
+          "Este script rastreia o movimento de ponteiro e imprime suas posições:",
+          "This script tracks the pointer movement and prints its positions:",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/pointers.md",
+          {
+            "id": "tu54"
+          }
+        ],
+        [
+          "using System;",
+          "usando o sistema;",
+          "using System;\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/pointers.md",
+          {
+            "id": "tu55"
+          }
+        ],
+        [
+          "using System.Collections.Generic;",
+          "usando o Sistema. Colecções. Genéricos;",
+          "using System.Collections.Generic;\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/pointers.md",
+          {
+            "id": "tu55"
+          }
+        ],
+        [
+          "using System.Linq;",
+          "usando o Sistema. Linq;",
+          "using System.Linq;\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/pointers.md",
+          {
+            "id": "tu55"
+          }
+        ],
+        [
+          "using System.Threading.Tasks;",
+          "usando o Sistema. Threading. Tarefas;",
+          "using System.Threading.Tasks;\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/pointers.md",
+          {
+            "id": "tu55"
+          }
+        ],
+        [
+          "using Stride.Core.Mathematics;",
+          "usando Stride. Core.Matemática;",
+          "using Stride.Core.Mathematics;\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/pointers.md",
+          {
+            "id": "tu55"
+          }
+        ],
+        [
+          "using Stride.Engine;",
+          "usando Stride. Motor;",
+          "using Stride.Engine;\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/pointers.md",
+          {
+            "id": "tu55"
+          }
+        ],
+        [
+          "namespace Stride.Input.Tests",
+          "namespace Stride. Input.Tests",
+          "\r\nnamespace Stride.Input.Tests\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/pointers.md",
+          {
+            "id": "tu55"
+          }
+        ],
+        [
+          "{",
+          "(",
+          "{\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/pointers.md",
+          {
+            "id": "tu55"
+          }
+        ],
+        [
+          "public class PointerTestScript :",
+          "classe pública Pointer TestScript:",
+          "    public class PointerTestScript :",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/pointers.md",
+          {
+            "id": "tu55"
+          }
+        ],
+        [
+          "AsyncScript",
+          "AsyncScript",
+          " AsyncScript\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/pointers.md",
+          {
+            "id": "tu55"
+          }
+        ],
+        [
+          "{",
+          "(",
+          "    {\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/pointers.md",
+          {
+            "id": "tu55"
+          }
+        ],
+        [
+          "public override async Task Execute()",
+          "override público async Task Execute()",
+          "        public override async Task Execute()\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/pointers.md",
+          {
+            "id": "tu55"
+          }
+        ],
+        [
+          "{",
+          "(",
+          "        {\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/pointers.md",
+          {
+            "id": "tu55"
+          }
+        ],
+        [
+          "var pointerPositions = new Dictionary<int, Vector2>();",
+          "var pointerPositions = new Dictionary<int, Vector2>();",
+          "            var pointerPositions = new Dictionary<int, Vector2>();\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/pointers.md",
+          {
+            "id": "tu55"
+          }
+        ],
+        [
+          "while (true)",
+          "(verdade)",
+          "            while (true)\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/pointers.md",
+          {
+            "id": "tu55"
+          }
+        ],
+        [
+          "{",
+          "(",
+          "            {\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/pointers.md",
+          {
+            "id": "tu55"
+          }
+        ],
+        [
+          "await Script.NextFrame();",
+          "await Script.NextFrame();",
+          "                await Script.NextFrame();\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/pointers.md",
+          {
+            "id": "tu55"
+          }
+        ],
+        [
+          "foreach (var pointerEvent in Input.PointerEvents)",
+          "foreach (ponto de venda) Evento em Input.PointerEvents)",
+          "                foreach (var pointerEvent in Input.PointerEvents)\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/pointers.md",
+          {
+            "id": "tu55"
+          }
+        ],
+        [
+          "{",
+          "(",
+          "                {\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/pointers.md",
+          {
+            "id": "tu55"
+          }
+        ],
+        [
+          "switch (pointerEvent.EventType)",
+          "switch (pointerEvent.EventType)",
+          "                    switch (pointerEvent.EventType)\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/pointers.md",
+          {
+            "id": "tu55"
+          }
+        ],
+        [
+          "{",
+          "(",
+          "                    {\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/pointers.md",
+          {
+            "id": "tu55"
+          }
+        ],
+        [
+          "case PointerEventType.Pressed:",
+          "caso Pointer EventType. Pressionado:",
+          "                    case PointerEventType.Pressed:\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/pointers.md",
+          {
+            "id": "tu55"
+          }
+        ],
+        [
+          "pointerPositions[pointerEvent.PointerId] = pointerEvent.Position;",
+          "pointerPositions[pointerEvent.Pointer Id] = pointerEvent.Position;",
+          "                        pointerPositions[pointerEvent.PointerId] = pointerEvent.Position;\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/pointers.md",
+          {
+            "id": "tu55"
+          }
+        ],
+        [
+          "break;",
+          "quebrar;",
+          "                        break;\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/pointers.md",
+          {
+            "id": "tu55"
+          }
+        ],
+        [
+          "case PointerEventType.Moved:",
+          "caso Pointer EventType.Moved:",
+          "                    case PointerEventType.Moved:\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/pointers.md",
+          {
+            "id": "tu55"
+          }
+        ],
+        [
+          "pointerPositions[pointerEvent.PointerId] = pointerEvent.Position;",
+          "pointerPositions[pointerEvent.Pointer Id] = pointerEvent.Position;",
+          "                        pointerPositions[pointerEvent.PointerId] = pointerEvent.Position;\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/pointers.md",
+          {
+            "id": "tu55"
+          }
+        ],
+        [
+          "break;",
+          "quebrar;",
+          "                        break;\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/pointers.md",
+          {
+            "id": "tu55"
+          }
+        ],
+        [
+          "case PointerEventType.Released:",
+          "caso Pointer EventType.Released:",
+          "                    case PointerEventType.Released:\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/pointers.md",
+          {
+            "id": "tu55"
+          }
+        ],
+        [
+          "case PointerEventType.Canceled:",
+          "caso Pointer EventType.Canceled:",
+          "                    case PointerEventType.Canceled:\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/pointers.md",
+          {
+            "id": "tu55"
+          }
+        ],
+        [
+          "pointerPositions.Remove(pointerEvent.PointerId);",
+          "pointerPositions.Remover(pointerEvent.Pointer Id);",
+          "                        pointerPositions.Remove(pointerEvent.PointerId);\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/pointers.md",
+          {
+            "id": "tu55"
+          }
+        ],
+        [
+          "break;",
+          "quebrar;",
+          "                        break;\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/pointers.md",
+          {
+            "id": "tu55"
+          }
+        ],
+        [
+          "default:",
+          "padrão:",
+          "                    default:\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/pointers.md",
+          {
+            "id": "tu55"
+          }
+        ],
+        [
+          "throw new ArgumentOutOfRangeException();",
+          "jogar novo ArgumentOutOfRangeException();",
+          "                        throw new ArgumentOutOfRangeException();\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/pointers.md",
+          {
+            "id": "tu55"
+          }
+        ],
+        [
+          "}",
+          "",
+          "                    }\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/pointers.md",
+          {
+            "id": "tu55"
+          }
+        ],
+        [
+          "}",
+          "",
+          "                }\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/pointers.md",
+          {
+            "id": "tu55"
+          }
+        ],
+        [
+          "var positionsStr = pointerPositions.Values.Aggregate(\"\", (current, pointer) => current + (pointer.ToString() + \", \"));",
+          "posições de var Str = pointerPositions.Values.Aggregate(\"\", (current, pointer) => atual + (pointer. ToString() + \", \"));",
+          "                var positionsStr = pointerPositions.Values.Aggregate(\"\", (current, pointer) => current + (pointer.ToString() + \", \"));\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/pointers.md",
+          {
+            "id": "tu55"
+          }
+        ],
+        [
+          "Log.Info(\"There are currently {0} pointers on the screen located at {1}\", pointerPositions.Count, positionsStr);",
+          "Log.Info(\"Há ponteiros {0} atualmente na tela localizada em {1}\", pointerPositions. Contagem, posiçõesStr);",
+          "                Log.Info(\"There are currently {0} pointers on the screen located at {1}\", pointerPositions.Count, positionsStr);\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/pointers.md",
+          {
+            "id": "tu55"
+          }
+        ],
+        [
+          "}",
+          "",
+          "            }\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/pointers.md",
+          {
+            "id": "tu55"
+          }
+        ],
+        [
+          "}",
+          "",
+          "        }\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/pointers.md",
+          {
+            "id": "tu55"
+          }
+        ],
+        [
+          "}",
+          "",
+          "    }\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/pointers.md",
+          {
+            "id": "tu55"
+          }
+        ],
+        [
+          "}",
+          "",
+          "}\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/pointers.md",
+          {
+            "id": "tu55"
+          }
+        ],
+        [
+          "See also",
+          "Ver também",
+          "See also",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/pointers.md",
+          {
+            "id": "tu56"
+          }
+        ],
+        [
+          "Gestures",
+          "Gestos",
+          "<g1>Gestures<\\/g1>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/pointers.md",
+          {
+            "id": "tu57"
+          }
+        ],
+        [
+          "Mouse",
+          "Mouse",
+          "<g1>Mouse<\\/g1>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/pointers.md",
+          {
+            "id": "tu58"
+          }
+        ],
+        [
+          "Virtual buttons",
+          "Botões virtuais",
+          "<g1>Virtual buttons<\\/g1>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/pointers.md",
+          {
+            "id": "tu59"
+          }
+        ],
+        [
+          "Input overview",
+          "Visão geral da entrada",
+          "<g1>Input overview<\\/g1>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/pointers.md",
+          {
+            "id": "tu60"
+          }
+        ]
+      ]
+    }
+  ],
+  "seg_enabled": false
 }

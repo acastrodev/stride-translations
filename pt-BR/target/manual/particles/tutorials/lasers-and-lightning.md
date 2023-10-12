@@ -1,110 +1,110 @@
-# Tutorial: Lasers and lightning
+# Tutorial: Lasers e raios
 
-<span class="badge text-bg-primary">Intermediate</span>
-<span class="badge text-bg-success">Artist</span>
-<span class="badge text-bg-success">Programmer</span>
+<x1\/> Intermediário <x2\/>
+<x3\/>Artista <x4\/>
+<x5\/> Programador <x6\/>
 
-This tutorial explains how to create lasers and lightnings using particles and custom materials.
+Este tutorial explica como criar lasers e relâmpagos usando partículas e materiais personalizados.
 
-Imagine we want to create a lightning arc like this one:
+Imagine que queremos criar um arco relâmpago como este:
 
-![media/particles-tutorials-lasers-1.gif](media/particles-tutorials-lasers-1.gif)
+<x1\/>media\/particles-tutorials-lasers-1.gif<x2\/>
 
-This effect is a strip which:
+Este efeito é uma tira que:
 
-* connects two fixed points
+* conecta dois pontos fixos
 
-* changes positions very quickly
+* muda posições muito rapidamente
 
-* can be rendered as a single strip
+* pode ser renderizado como uma única tira
 
-Because the lightning is a single-line strip, we can render it using the ribbon shape builder, but with a few major differences. The particles:
+Como o relâmpago é uma faixa de linha única, podemos renderizá-lo usando o construtor de forma de fita, mas com algumas grandes diferenças. As partículas:
 
-* spawn at the same time, rather than in sequence
+* spawn ao mesmo tempo, em vez de em sequência
 
-* appear on a single line or arc, but with semi-randomized positions to give the illusion of lightning
+* aparecem em uma única linha ou arco, mas com posições semi-aleaudiadas para dar a ilusão de relâmpago
 
-* should reappear very quickly
+* deve reaparecer muito rapidamente
 
-## Simultaneous spawning
+## Desova simultânea
 
-We can create a looping Spawner by frame which spawns a certain number of particles (lets say 50) **every** frame.
+Nós podemos criar um Spawner looping por quadro que gera um certo número de partículas (deixe dizer 50) ** cada quadro**.
 
-Because we only need one set visible at a time we limit the Maxmimum Particles on the emitter to 50 and give them the same lifespan (for example 0.2 seconds).
+Porque só precisamos de um conjunto visível de cada vez que limitamos as Partículas Maxmimum na emissora a 50 e lhes damos a mesma vida (por exemplo, 0,2 segundos).
 
-This means the Spawner will try to emit 50 particles every frame, but because we have limited them it will only spawn 50 particles the first frame.
+Isso significa que o Spawner vai tentar emitir 50 partículas cada quadro, mas porque nós os limitamos ele só terá 50 partículas o primeiro quadro.
 
-They all have the same lifespan, so when they die at the same time a new batch of 50 particles will be spawned.
+Todos eles têm a mesma vida, então quando eles morrem ao mesmo tempo um novo lote de 50 partículas será gerado.
 
-#### Connect two points
+#### Conecte dois pontos
 
-We are going to use the **Position (Arc)** initializer. It picks a second point from another Entity and sets the particles' positions to lie on an arc between the Emitter and the target Entity.
+Vamos usar o inicializador **Position (Arc)**. Ele escolhe um segundo ponto de outra Entidade e define as posições das partículas em um arco entre o Emitter e o Entity alvo.
 
-By clicking the Ordered checkbox we can force the particles to be placed at equal distances starting from the emitter and moving towards the target Entity.
-This is important when we render them using a Ribbon shape builder because if they appear at random (unordered) positions along the arc it will be a mess.
-We also have to add Spawn Order initializer and sort the particles by Order (this is true for all ribbons, not just lightning.)
+Ao clicar na caixa de seleção ordenada, podemos forçar as partículas a serem colocadas em distâncias iguais a partir do emissor e movendo-se para a Entidade alvo.
+Isso é importante quando os tornamos usando um construtor de forma de fita porque se eles aparecem em posições aleatórias (não ordenadas) ao longo do arco será uma bagunça.
+Nós também temos que adicionar inicializador de ordem de espawn e classificar as partículas por ordem (isso é verdade para todas as fitas, não apenas relâmpago.)
 
-The arc position initialzier also allows for a random offset which we set to some small number.
+A posição de arco inicialzier também permite um deslocamento aleatório que nós definir para algum pequeno número.
 
-#### Change positions fast
+#### Mudança de posições rápidas
 
-We can set the particles' lifespan to a small number (eg 0.2 seconds). With the Time scale parameter, we can additionally control the speed of the entire particle system.
+Podemos definir a vida útil das partículas para um pequeno número (por exemplo, 0,2 segundos). Com o parâmetro Escala do Tempo, podemos adicionalmente controlar a velocidade de todo o sistema de partículas.
 
-To illustrate better what's going on here is the same effect with Billboard shape builder instead of Ribbon, and slowed down 30 times:
+Para ilustrar melhor o que está acontecendo aqui é o mesmo efeito com o construtor de forma Billboard em vez de Ribbon, e diminuiu 30 vezes:
 
-![media/particles-tutorials-lasers-2.gif](media/particles-tutorials-lasers-2.gif)
+<x1\/>media\/particles-tutorials-lasers-2.gif<x2\/>
 
-#### Moving lightning
+#### Relâmpago em movimento
 
-There is a way to make the lightning arc move from point A to point B instead of being static.
+Há uma maneira de fazer o arco relâmpago se mover do ponto A ao ponto B em vez de ser estático.
 
-![media/particles-tutorials-lasers-3.gif](media/particles-tutorials-lasers-3.gif)
+<x1\/>media\/particles-tutorials-lasers-3.gif<x2\/>
 
-There are a few adjustments we need to make:
+Há alguns ajustes que precisamos fazer:
 
-* Change the spawn rate to a lower one. The example above uses 600/second and is played at 0.1 time scale, which means around 1 particle per frame.
+* Mude a taxa de desova para uma mais baixa. O exemplo acima usa 600\/segundo e é jogado a 0,1 escala de tempo, o que significa em torno de 1 partícula por quadro.
 
-* Set a fixed count on the arc positioner (50). Because it interpolates the distances based on the number of particles spawned *each* frame, if we spawn them sequentially they'll all stay in the beginning of the arc. By setting the count to 50 we tell the arc positioner to expect 50 particles in total.
+* Defina uma contagem fixa com o posicionador de arco (50). Porque ele interpola as distâncias com base no número de partículas desova *each* frame, se nós os desovamos sequencialmente eles ficarão todos no início do arco. Ao definir a contagem para 50, dizemos ao posicionador de arco para esperar 50 partículas no total.
 
-* Set a delay to the spawner to allow the old arc to completely disappear before starting again. Otherwise the Ribbon will wrongly connect the old and the new particles, as it can't know how to split them.
+* Defina um atraso para o proprietário para permitir que o arco velho desapareça completamente antes de começar de novo. Caso contrário, a fita ligará erradamente as partículas antigas e novas, pois não pode saber como dividi-las.
 
-## Lasers using particles
+## Lasers usando partículas
 
-Creating lasers with particles is very similar to making lightning. We actually need less particles, because the lasers are straight and do not deviate.
-By setting the arc positioner's arc height to 0 and random offset to (0, 0, 0) we can spawn the particles in a straight line. If you want you can give them slightly different sizes to make the laser beam appear shimmering.
+Criar lasers com partículas é muito semelhante a fazer raios. Na verdade, precisamos de menos partículas, porque os lasers são retos e não se desviam.
+Ao definir a altura do arco do posicionador para 0 e deslocamento aleatório para (0, 0, 0) podemos gerar as partículas em uma linha reta. Se você quiser, você pode dar-lhes tamanhos ligeiramente diferentes para fazer o feixe de laser parecer brilhante.
 
-One thing to be mindful about lasers is that usually when the target moves you want the laser to move with it. Because the arc positioner is an initializer and not an updater, it has no effect on particles already spawned, which and stay behind. There are three ways to counter this.
+Uma coisa para ser consciente sobre lasers é que geralmente quando o alvo se move você quer que o laser se mova com ele. Como o posicionador de arco é um inicializador e não um atualizador, ele não tem efeito sobre as partículas já geradas, que e ficar para trás. Há três maneiras de combater isto.
 
-* Spawn the particles very fast. If they only live for 1-2 frames the laser will be recreated too fast for the user to notice any visual differences.
+* Espalhar as partículas muito rápido. Se eles apenas vivem por 1-2 quadros o laser será recriado muito rápido para o usuário notar quaisquer diferenças visuais.
 
-* Spawn particles in Local space. This means they will move together with the emitter, but then you will have to rotate and scale the emitter to always point to the target Entity.
+* Partículas em espaço local. Isso significa que eles vão se mover junto com o emissor, mas então você terá que girar e escalar o emissor para sempre apontar para o Entity alvo.
 
-* Create a custom Updater. If you create a custom post-updater similar (or simpler) to the arc positioner you can force it to update the particle positions every frame, correctly placing them between the two points even if they move.
+* Criar um atualizador personalizado. Se você criar um post-updater personalizado semelhante (ou mais simples) para o posicionador de arco, você pode forçá-lo a atualizar as posições de partículas cada quadro, colocando-os corretamente entre os dois pontos, mesmo se eles se moverem.
 
-Depending on the type of game you want to make each of these options can have benefits or drawbacks. Spawning the particles every frame is the easiest and simplest way to do it and will be sufficient for most needs.
+Dependendo do tipo de jogo que você deseja fazer cada uma dessas opções pode ter benefícios ou desvantagens. Spawning as partículas cada quadro é a maneira mais fácil e mais simples de fazê-lo e será suficiente para a maioria das necessidades.
 
-## Lasers using custom materials
+## Lasers usando materiais personalizados
 
-Creating lasers using custom materials is similar to using particles in Local space. We need to manually rotate the scale the emitter to always face a target entity.
+Criar lasers usando materiais personalizados é semelhante ao uso de partículas no espaço local. Precisamos girar manualmente a escala do emissor para sempre enfrentar uma entidade alvo.
 
-We can designate one axis which points towards the target to be our length, leaving the other two axes for width of the laser.
+Podemos designar um eixo que aponta para o alvo para ser o nosso comprimento, deixando os outros dois eixos para a largura do laser.
 
-Rendering a cylinder with height of 1 which is placed under the rotated entity will cause it to stretch and reach the target point.
+Renderização de um cilindro com altura de 1 que é colocado sob a entidade rotativa fará com que ele estique e alcance o ponto de destino.
 
-The custom material is required to place a scrolling texture on the cylinder. Or you can use a regular Emissive map with no scrolling in which case you won't need a custom material.
+O material personalizado é necessário para colocar uma textura de rolagem no cilindro. Ou você pode usar um mapa Emissivo regular sem rolagem em que caso você não vai precisar de um material personalizado.
 
-The particles sample already contains an example of how to create lasers this way. The LaserOrientationScript rotates and scales the entity towards a target point and the ComputeColorTextureScroll shader samples a scrolling texture.
+A amostra de partículas já contém um exemplo de como criar lasers dessa forma. A orientação a laser O script gira e dimensiona a entidade para um ponto de destino e o shader ComputeColorTextureScroll amostras uma textura de rolagem.
 
-## Sample project
+## Projeto de amostra
 
-To see some of the techniques described on this page implemented in a project, create a new **Sample: Particles** project and open the **Lasers** scene.
+Para ver algumas das técnicas descritas nesta página implementadas em um projeto, crie um novo **Sample: Partículas** projeto e abrir a cena **Lasers**.
 
-![Particles sample project](media/select-particles-sample-project.png)
+<x1\/>Particles sample project<x2\/>
 
-## See also
+## Ver também
 
-* [Tutorial: Create a trail](create-a-trail.md)
-* [Tutorial: Custom particles](custom-particles.md)
-* [Tutorial: Inheritance](inheritance.md)
-* [Particles](../index.md)
-* [Create particles](../create-particles.md)
+* [Tutorial: Criar uma trilha](create-a-trail.md)
+* [Tutorial: Partículas personalizadas](custom-particles.md)
+* [Tutorial: Herança](inheritance.md)
+* [Partes](../index.md)
+* [Criar partículas](../create-particles.md)

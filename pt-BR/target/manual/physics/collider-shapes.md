@@ -1,143 +1,143 @@
-# Collider shapes
+# Formas de colarinho
 
-<span class="badge text-bg-primary">Beginner</span>
-<span class="badge text-bg-success">Designer</span>
+<x1\/>Introdução<x2\/>
+<x3\/>Designer<x4\/>
 
-For [colliders](colliders.md) to interact, you need to set their shape in the **Property Grid**. You can specify a geometric shape, or use a collider shape asset.
+Para [colliders](colliders.md) interagir, você precisa definir sua forma no **Property Grid**. Você pode especificar uma forma geométrica ou usar um recurso de forma de colisão.
 
-![Select a collider shape](media/select-collider-shape.png)
+<x1\/>Selecione uma forma de colisão<x2\/>
 
-Components can have multiple intersecting shapes, and don't have to match the entity model, if it has one. Each shape has additional properties including size, orientation, offset, and so on.
+Componentes podem ter múltiplas formas de interseção, e não tem que corresponder ao modelo de entidade, se tiver um. Cada forma tem propriedades adicionais, incluindo tamanho, orientação, deslocamento e assim por diante.
 
-## Types of collider shape
+## Tipos de forma de colisão
 
-### Box
+### Caixa
 
-![Box](media/box.png)
+<x1\/>Box<x2\/>
 
-| Property | Description |
+| Propriedade | Descrição |
 | -------------- |-------------| 
-| Is 2D | Makes the box infinitely flat in one dimension. |
-| Size | The box size in XYZ values. |
-| Local offset | The box position relative its entity. |
-| Local rotation | The box rotation in XYZ values. |
+| É 2D | Faz a caixa infinitamente plana em uma dimensão. |
+| Tamanho | O tamanho da caixa em valores XYZ. |
+| Deslocamento local | A posição da caixa relativa à sua entidade. |
+| Rotação local | A rotação da caixa em valores XYZ. |
 
-### Capsule
+### Cápsula
 
-![Capsule](media/capsule.png)
+<x1\/>Capítulo <x2\/>
 
-The capsule shape is especially useful for character components, as its curved base lets the entity move to higher planes (eg when climbing staircases).
+A forma da cápsula é especialmente útil para componentes de caracteres, pois sua base curva permite que a entidade se mova para planos mais altos (por exemplo, ao escalar escadas).
 
-| Property | Description |
+| Propriedade | Descrição |
 | -------------- |-------------| 
-| Is 2D | Makes the capsule infinitely flat in one dimension. |
-| Length | The length of the capsule. |
-| Radius | The radius of the capsule. |
-| Orientation | The axis along which the shape is stretched (X, Y, or Z). |
-| Local offset | The capsule position relative to its entity. |
-| Local rotation | The capsule rotation in XYZ values. |
+| É 2D | Faz a cápsula infinitamente plana em uma dimensão. |
+| Comprimento | O comprimento da cápsula. |
+| Radius | O raio da cápsula. |
+| Orientação | O eixo ao longo do qual a forma é esticada (X, Y ou Z). |
+| Deslocamento local | A posição da cápsula em relação à sua entidade. |
+| Rotação local | A rotação da cápsula em valores XYZ. |
 
 ### Cone
 
-![Cone](media/cone.png)
+<x1\/>Cone<x2\/>
 
-| Property | Description |
+| Propriedade | Descrição |
 | -------------- |-------------| 
-| Height | The height of the cone. |
-| Radius | The radius of the cone at the bottom end. |
-| Orientation | The axis along which the shape is stretched (X, Y, or Z). |
-| Local offset | The cone position relative to its entity. |
-| Local rotation | The cone rotation in XYZ values. |
+| Altura | A altura do cone. |
+| Radius | O raio do cone na extremidade inferior. |
+| Orientação | O eixo ao longo do qual a forma é esticada (X, Y ou Z). |
+| Deslocamento local | A posição cone relativa à sua entidade. |
+| Rotação local | A rotação do cone em valores XYZ. |
 
-### Cylinder
+### Cilindro
 
-![Cylinder](media/cylinder.png)
+<x1\/>Cylinder<x2\/>
 
-| Property | Description |
+| Propriedade | Descrição |
 | -------------- |-------------| 
-| Height | The length of the cylinder. |
-| Radius | The radius of the cylinder. |
-| Orientation | Sets the axis along which the shape is stretched (X, Y, or Z). |
-| Local offset | The cylinder position relative to its entity. |
-| Local rotation | The cylinder  rotation in XYZ values. |
+| Altura | O comprimento do cilindro. |
+| Radius | O raio do cilindro. |
+| Orientação | Define o eixo ao longo do qual a forma é esticada (X, Y, ou Z). |
+| Deslocamento local | A posição do cilindro em relação à sua entidade. |
+| Rotação local | A rotação do cilindro em valores XYZ. |
 
-### Sphere
+### Esfera
 
-![Sphere](media/sphere.png)
+<x1\/> Esfera <x2\/>
 
-| Property | Description |
+| Propriedade | Descrição |
 | -------------- |-------------| 
-| Is 2D | Makes the sphere infinitely flat in one dimension. |
-| Radius | The radius of the sphere. |
-| Local offset | The sphere position relative to its entity. |
+| É 2D | Faz a esfera infinitamente plana em uma dimensão. |
+| Radius | O raio da esfera. |
+| Deslocamento local | A posição da esfera em relação à sua entidade. |
 
-### Infinite plane
+### Avião infinito
 
-![Infinite plane](media/infinite-plane.png)
+<x1\/> Plano infinito <x2\/>
 
-The infinite plane covers an infinite distance across one dimension.
-Think of it like a wall or floor stretching into the distance for ever.
-You can use several infinite planes together to box users in and stop them "tunneling" outside the level.
+O plano infinito cobre uma distância infinita através de uma dimensão.
+Pense nisso como uma parede ou piso que se estende para a distância para sempre.
+Você pode usar vários planos infinitos juntos para colocar usuários e impedi-los de "afinar" fora do nível.
 
-| Property | Description |
+| Propriedade | Descrição |
 | -------------- |-------------| 
-| Normal | Which vector (X, Y, or Z) is perpendicular to the plane. For example, to make an infinite floor, set the normal property to: _X:0, Y:1, Z:0_. |
-| Offset | The plane position relative to its entity. |
+| Normal | Que vetor (X, Y, ou Z) é perpendicular ao avião. Por exemplo, para fazer um piso infinito, definir a propriedade normal para: _X:0, Y:1, Z:0_. |
+| Abertura | A posição do avião em relação à sua entidade. |
 
-### Asset
+### Activo
 
-Assigns a collider shape from a collider shape asset (see **Collider shape assets** below).
+Atribui uma forma de colisão de um ativo de forma de colisão (veja ** Activos de forma de colisão** abaixo).
 
-| Property | Description |
+| Propriedade | Descrição |
 | -------------- |-------------| 
-| Shape | The collider shape asset used to generate the collider shape. |
+| Forma | O asset de forma de colisão usado para gerar a forma de colisão. |
 
-## Collider shape assets
+## Activos de forma de colarinho
 
-You can also create **collider shape assets** and use them as your collider shape. This means you can edit the collider shape asset and automatically update it in every entity that uses it.
+Você também pode criar ativos de forma **collider** e usá-los como sua forma de colisão. Isso significa que você pode editar o recurso de forma de colisão e atualizá-lo automaticamente em cada entidade que o usa.
 
-## Create a collider shape asset
+## Criar um recurso de forma de colide
 
-1. In the **Asset View** (bottom by default), click **Add asset**.
+1. No **Asset View** (bottom by default), clique em **Add asset**.
 
-2. Select **Physics**, then select the shape you want to create.
+2. Selecione **Physics**, em seguida, selecione a forma que deseja criar.
 
-   ![Create collider shape asset](media/create-collider-shape-asset.png)
+   <x1\/>Criar a forma de colisor <x2\/>
 
-Game Studio creates the new collider shape asset in the **CollisionMeshes** folder.
+Game Studio cria o novo recurso de forma de colisão na pasta **CollisionMeshes**.
 
-![Collider shape asset in Asset View](media/collider-shape-in-asset-view.png)
+<x1\/> Ajuste de forma de filtro no Asset View<x2\/>
 
-### Create a collider shape asset from a model
+### Criar um recurso de forma de colide de um modelo
 
-This is useful to quickly create a collider shape that matches a model.
+Isso é útil para criar rapidamente uma forma de colisão que combina com um modelo.
 
-1. In the **Asset View** (bottom by default), click **Add asset**.
+1. No **Asset View** (bottom by default), clique em **Add asset**.
 
-2. Select **Physics** > **Convex hull**.
+2. Selecione **Physics** > **Convex hull**.
 
-   The **Select an asset** window opens.
+   A janela **Selecione um ativo** abre.
 
-   ![Select model](media/select-model.png)
+   <x1\/>Selecionar modelo<x2\/>
 
-3. Browse to the model asset you want to create a collider shape asset from and click **OK**.
+3. Navegue para o ativo do modelo que você deseja criar um ativo de forma de colide e clique em **OK**.
 
-Game Studio creates a collider shape asset from the model.
+Game Studio cria um recurso de forma de colisão do modelo.
 
-## Use a collider shape asset
+## Use um recurso de forma de colide
 
-1. Under the **static collider** or **rigidbody** properties, under **Collider Shapes**, select **Asset**.
+1. Sob as propriedades **static collider** ou **rigidbody**, sob **Collider Shapes**, selecione **Asset**.
 
-   ![Select collider shape asset](media/select-asset-collider-shape.png)
+   <x1\/>Select collider shape asset<x2\/>
 
-2. Next to **Shape**, specify the collider shape asset you want to use.
+2. Ao lado de **Shape**, especifique o ativo de forma de colisão que você deseja usar.
 
-   ![Select collider shape asset](media/select-collider-shape-asset.png)
+   <x1\/>Select collider shape asset<x2\/>
 
-   To do this, drag the asset from the **Asset View** to the **Shape** field in the Property Grid. Alternatively, click ![Hand icon](~/manual/game-studio/media/hand-icon.png) (**Select an asset**) and browse to the asset.
+   Para fazer isso, arraste o ativo do campo **Asset View** para o campo **Shape** na Grade de Propriedade. Alternativamente, clique em <x1\/>Hand icon<x2\/> (**Select an asset**) e navegue para o ativo.
 
-## See also
+## Ver também
 
-* [Colliders](colliders.md)
-* [Tutorial: Create a bouncing ball](create-a-bouncing-ball.md)
-* [Tutorial: Script a trigger](script-a-trigger.md)
+* [Coleiras](colliders.md)
+* [Tutorial: Criar uma bola saltando](create-a-bouncing-ball.md)
+* [Tutorial: Script um gatilho](script-a-trigger.md)

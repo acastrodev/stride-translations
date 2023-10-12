@@ -3,45 +3,45 @@
 <body>
 <trans-unit id="tu1" xml:space="preserve">
 <source xml:lang="en">Draw vertices</source>
-<target xml:lang="pt">Draw vertices</target>
+<target xml:lang="pt">Desenho vértices</target>
 </trans-unit>
 <trans-unit id="tu2" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Advanced<x id="2"/>
 <x id="3"/>Programmer<x id="4"/></source>
-<target xml:lang="pt"><x id="1"/>Advanced<x id="2"/>
-<x id="3"/>Programmer<x id="4"/></target>
+<target xml:lang="pt">&lt;x1\/&gt; Avançado &lt;x2\/&gt;
+&lt;x3\/&gt; Programador &lt;x4\/&gt;</target>
 </trans-unit>
 <trans-unit id="tu3" xml:space="preserve">
 <source xml:lang="en">When loading a scene, Stride automatically handles the draw calls to display the scene throughout the entity system. This page introduces manual drawing.</source>
-<target xml:lang="pt">When loading a scene, Stride automatically handles the draw calls to display the scene throughout the entity system. This page introduces manual drawing.</target>
+<target xml:lang="pt">Ao carregar uma cena, o Stride lida automaticamente com as chamadas do sorteio para exibir a cena em todo o sistema de entidade. Esta página apresenta desenho manual.</target>
 </trans-unit>
 <trans-unit id="tu4" xml:space="preserve">
 <source xml:lang="en">Primitives</source>
-<target xml:lang="pt">Primitives</target>
+<target xml:lang="pt">Primitivos</target>
 </trans-unit>
 <trans-unit id="tu5" xml:space="preserve">
 <source xml:lang="en">Stride provides the following set of built-in primitives:</source>
-<target xml:lang="pt">Stride provides the following set of built-in primitives:</target>
+<target xml:lang="pt">Stride fornece o seguinte conjunto de primitivas embutidas:</target>
 </trans-unit>
 <trans-unit id="tu6" xml:space="preserve">
 <source xml:lang="en">Plane</source>
-<target xml:lang="pt">Plane</target>
+<target xml:lang="pt">Avião</target>
 </trans-unit>
 <trans-unit id="tu7" xml:space="preserve">
 <source xml:lang="en">Cube</source>
-<target xml:lang="pt">Cube</target>
+<target xml:lang="pt">Cubo</target>
 </trans-unit>
 <trans-unit id="tu8" xml:space="preserve">
 <source xml:lang="en">Sphere</source>
-<target xml:lang="pt">Sphere</target>
+<target xml:lang="pt">Esfera</target>
 </trans-unit>
 <trans-unit id="tu9" xml:space="preserve">
 <source xml:lang="en">Geosphere</source>
-<target xml:lang="pt">Geosphere</target>
+<target xml:lang="pt">Geosfera</target>
 </trans-unit>
 <trans-unit id="tu10" xml:space="preserve">
 <source xml:lang="en">Cylinder</source>
-<target xml:lang="pt">Cylinder</target>
+<target xml:lang="pt">Cilindro</target>
 </trans-unit>
 <trans-unit id="tu11" xml:space="preserve">
 <source xml:lang="en">Torus</source>
@@ -53,11 +53,11 @@
 </trans-unit>
 <trans-unit id="tu13" xml:space="preserve">
 <source xml:lang="en">They aren't automatically created along with the @'Stride.Graphics.GraphicsDevice', so you have to instantiate them. You can do this through the @'Stride.Graphics.GeometricPrimitives.GeometricPrimitive' class.</source>
-<target xml:lang="pt">They aren't automatically created along with the @'Stride.Graphics.GraphicsDevice', so you have to instantiate them. You can do this through the @'Stride.Graphics.GeometricPrimitives.GeometricPrimitive' class.</target>
+<target xml:lang="pt">Eles não são criados automaticamente junto com o @'Stride.Graphics.GraphicsDevice', então você tem que instanciá-los. Você pode fazer isso através da classe @'Stride.Graphics.GeometricPrimitives.GeometricPrimitive'.</target>
 </trans-unit>
 <trans-unit id="tu14" xml:space="preserve">
 <source xml:lang="en"><g id="1">Code:</g> Creating and using a primitive</source>
-<target xml:lang="pt"><g id="1">Code:</g> Creating and using a primitive</target>
+<target xml:lang="pt"><g id="1"> Código:</g> Criando e usando um primitivo</target>
 </trans-unit>
 <trans-unit id="tu15" xml:space="preserve">
 <source xml:lang="en">// creation
@@ -69,41 +69,41 @@ var myTorus = GeometricPrimitive.Torus.New(GraphicsDevice);
 // draw one on screen
 myCube.Draw(CommandList, EffectInstance);
 </source>
-<target xml:lang="pt">// creation
-var myCube = GeometricPrimitive.Cube.New(GraphicsDevice);
-var myTorus = GeometricPrimitive.Torus.New(GraphicsDevice);
+<target xml:lang="pt">\/\/ criação
+var myCube = GeometricPrimitive.Cube.New (GraphicsDevice);
+var myTorus = GeometricPrimitive.Torus.New (GraphicsDevice);
  
-// ...
+\/\/...
  
-// draw one on screen
-myCube.Draw(CommandList, EffectInstance);
+\/\/ desenhar um na tela
+myCube.Draw (CommandList, EffectInstance);
 </target>
 </trans-unit>
 <trans-unit id="tu16" xml:space="preserve">
 <source xml:lang="en">They have no effect associated with them, so the user has to provide an @'Stride.Rendering.EffectInstance' when drawing. For information on loading effects, please see <g id="1">Effects and shaders</g>.</source>
-<target xml:lang="pt">They have no effect associated with them, so the user has to provide an @'Stride.Rendering.EffectInstance' when drawing. For information on loading effects, please see <g id="1">Effects and shaders</g>.</target>
+<target xml:lang="pt">Eles não têm nenhum efeito associado com eles, então o usuário tem que fornecer um @'Stride. Renderização. EfeitoInstância' ao desenhar. Para obter informações sobre efeitos de carregamento, consulte <g id="1">Efeitos e shaders</g>.</target>
 </trans-unit>
 <trans-unit id="tu17" xml:space="preserve">
 <source xml:lang="en">Custom drawing</source>
-<target xml:lang="pt">Custom drawing</target>
+<target xml:lang="pt">Desenho personalizado</target>
 </trans-unit>
 <trans-unit id="tu18" xml:space="preserve">
 <source xml:lang="en">Outside of built-in primitives, any geometry can be drawn by creating custom vertex buffers. To create a vertex buffer, first a @'Stride.Graphics.VertexDeclaration' has to be defined. A vertex declaration describes the elements of each vertex and their layout.
 For details, see the @'Stride.Graphics.VertexElement' reference page.</source>
-<target xml:lang="pt">Outside of built-in primitives, any geometry can be drawn by creating custom vertex buffers. To create a vertex buffer, first a @'Stride.Graphics.VertexDeclaration' has to be defined. A vertex declaration describes the elements of each vertex and their layout.
-For details, see the @'Stride.Graphics.VertexElement' reference page.</target>
+<target xml:lang="pt">Fora de primitivas embutidas, qualquer geometria pode ser desenhada criando buffers de vértice personalizados. Para criar um buffer de vértice, primeiro um @'Stride.Graphics.VertexDeclaration' tem de ser definido. Uma declaração de vértice descreve os elementos de cada vértice e seu layout.
+Para obter detalhes, consulte a página de referência @'Stride.Graphics.VertexElement'.</target>
 </trans-unit>
 <trans-unit id="tu19" xml:space="preserve">
 <source xml:lang="en">Next, a vertex buffer can be created from an array of vertices. The vertex data type has to match the @'Stride.Graphics.VertexDeclaration'.</source>
-<target xml:lang="pt">Next, a vertex buffer can be created from an array of vertices. The vertex data type has to match the @'Stride.Graphics.VertexDeclaration'.</target>
+<target xml:lang="pt">Em seguida, um buffer de vértice pode ser criado a partir de uma variedade de vértices. O tipo de dados do vértice tem de corresponder ao @'Stride.Graphics.VertexDeclaration'.</target>
 </trans-unit>
 <trans-unit id="tu20" xml:space="preserve">
 <source xml:lang="en">Given vertex buffer and declaration, a @'Stride.Graphics.VertexBufferBinding' can be created.</source>
-<target xml:lang="pt">Given vertex buffer and declaration, a @'Stride.Graphics.VertexBufferBinding' can be created.</target>
+<target xml:lang="pt">Dado tampão de vértice e declaração, um @'Stride.Graphics.VertexBufferBinding' pode ser criado.</target>
 </trans-unit>
 <trans-unit id="tu21" xml:space="preserve">
 <source xml:lang="en"><g id="1">Code:</g> Creating a vertex buffer</source>
-<target xml:lang="pt"><g id="1">Code:</g> Creating a vertex buffer</target>
+<target xml:lang="pt"><g id="1"> Código:</g> Criando um amortecedor de vértice</target>
 </trans-unit>
 <trans-unit id="tu22" xml:space="preserve">
 <source xml:lang="en">// Create a vertex layout with position and texture coordinate
@@ -116,28 +116,28 @@ var vertexBuffer = Buffer.Vertex.New(GraphicsDevice, vertices);
 // Create a vertex buffer binding
 var vertexBufferBinding = new VertexBufferBinding(vertexBuffer, layout, vertexCount);
 </source>
-<target xml:lang="pt">// Create a vertex layout with position and texture coordinate
-var layout = new VertexDeclaration(VertexElement.Position&lt;Vector3&gt;(), VertexElement.TextureCoordinate&lt;Vector2&gt;()); 
+<target xml:lang="pt">\/\/ Criar um layout de vértice com coordenada de posição e textura
+var layout = novo VertexDeclaration (VertexElement.Position&lt;Vector3&gt;(), VertexElement.TextureCoordinate&lt;Vector2&gt;()); 
  
-// Create the vertex buffer from an array of vertices
-var vertices = new VertexPositionTexture[vertexCount];
-var vertexBuffer = Buffer.Vertex.New(GraphicsDevice, vertices);
+\/\/ Criar o tampão de vértice de uma variedade de vértices
+vértices var = novo VertexPositionTexture[vertexCount];
+var vertexBuffer = Buffer.Vertex.New (GraphicsDevice, vértices);
  
-// Create a vertex buffer binding
-var vertexBufferBinding = new VertexBufferBinding(vertexBuffer, layout, vertexCount);
+\/\/ Criar uma ligação de amortecedor de vértice
+var vertexBufferBinding = novo VertexBufferBinding (vertexBuffer, layout, vérticeCount);
 </target>
 </trans-unit>
 <trans-unit id="tu23" xml:space="preserve">
 <source xml:lang="en">To draw the newly created vertex buffer, it has to be bound to the pipeline. The vertex layout and the @'Stride.Graphics.PrimitiveType' to draw have to be included in the <g id="1">pipeline state</g> object. The buffer itself can be set dynamically.</source>
-<target xml:lang="pt">To draw the newly created vertex buffer, it has to be bound to the pipeline. The vertex layout and the @'Stride.Graphics.PrimitiveType' to draw have to be included in the <g id="1">pipeline state</g> object. The buffer itself can be set dynamically.</target>
+<target xml:lang="pt">Para desenhar o tampão de vértice recém-criado, tem de ser ligado ao pipeline. O layout do vértice e o @'Stride.Graphics.PrimitiveType' para desenhar têm de ser incluídos no objeto <g id="1">pipeline state</g>. O próprio buffer pode ser definido dinamicamente.</target>
 </trans-unit>
 <trans-unit id="tu24" xml:space="preserve">
 <source xml:lang="en">Afterwards, the vertices are ready to be rendered using @'Stride.Graphics.CommandList.Draw(System.Int32,System.Int32)'.</source>
-<target xml:lang="pt">Afterwards, the vertices are ready to be rendered using @'Stride.Graphics.CommandList.Draw(System.Int32,System.Int32)'.</target>
+<target xml:lang="pt">Depois, os vértices estão prontos para serem renderizados usando @'Stride.Graphics.CommandList.Draw(System.Int32,System.Int32)'.</target>
 </trans-unit>
 <trans-unit id="tu25" xml:space="preserve">
 <source xml:lang="en"><g id="1">Code:</g> Binding and drawing vertex buffers</source>
-<target xml:lang="pt"><g id="1">Code:</g> Binding and drawing vertex buffers</target>
+<target xml:lang="pt"><g id="1"> Código:</g> Encerramento e desenho de amortecedores de vértice</target>
 </trans-unit>
 <trans-unit id="tu26" xml:space="preserve">
 <source xml:lang="en">// Set the pipeline state
@@ -153,29 +153,29 @@ commandList.SetVertexBuffers(0, vertexBuffer, 0, vertexBufferBinding.Stride);
 // Draw the vertices
 commandList.Draw(vertexCount);
 </source>
-<target xml:lang="pt">// Set the pipeline state
-pipelineStateDescription.InputElements = vertexBufferBinding.Layout.CreateInputElements();
-pipelineStateDescription.PrimitiveType = PrimitiveType.TriangleStrip;
+<target xml:lang="pt">\/\/ Definir o estado do pipeline
+pipelineStateDescription.InputElements = vérticeBufferBinding.Layout.CreateInputElements();
+pipeStateDescription.PrimitiveType = PrimitiveType.TriangleStrip;
  
-// Create and set a PipelineState object
-// ...
+\/\/ Criar e definir um objeto PipelineState
+\/\/...
 
-// Bind the vertex buffer to the pipeline
-commandList.SetVertexBuffers(0, vertexBuffer, 0, vertexBufferBinding.Stride);
+\/\/ Ligar o tampão de vértice para o pipeline
+commandList.SetVertexBuffers(0, vérticeBuffer, 0, vérticeBufferBinding.Stride);
  
-// Draw the vertices
-commandList.Draw(vertexCount);
+\/\/ Desenhe os vértices
+commandList.Draw (vertexCount);
 </target>
 </trans-unit>
 <trans-unit id="tu27" xml:space="preserve">
 <source xml:lang="en">It is also possible to draw indexed geometry. To use an index buffer, first create it similarly to the vertex buffer and bind it to the pipeline.
 It can then be used for drawing using @'Stride.Graphics.CommandList.DrawIndexed(System.Int32,System.Int32,System.Int32)'.</source>
-<target xml:lang="pt">It is also possible to draw indexed geometry. To use an index buffer, first create it similarly to the vertex buffer and bind it to the pipeline.
-It can then be used for drawing using @'Stride.Graphics.CommandList.DrawIndexed(System.Int32,System.Int32,System.Int32)'.</target>
+<target xml:lang="pt">Também é possível desenhar geometria indexada. Para usar um buffer de índice, primeiro criá-lo de forma semelhante ao buffer de vértice e liga-lo ao pipeline.
+Ele pode então ser usado para desenhar usando @'Stride.Graphics.CommandList.DrawIndexed(System.Int32,System.Int32,System.Int32)'.</target>
 </trans-unit>
 <trans-unit id="tu28" xml:space="preserve">
 <source xml:lang="en"><g id="1">Code:</g> Drawing indexed vertices</source>
-<target xml:lang="pt"><g id="1">Code:</g> Drawing indexed vertices</target>
+<target xml:lang="pt"><g id="1">Código:</g> Desenho de vértices indexados</target>
 </trans-unit>
 <trans-unit id="tu29" xml:space="preserve">
 <source xml:lang="en">// Create the index buffer
@@ -189,15 +189,15 @@ commandList.SetIndexBuffer(indexBuffer, 0, is32Bits);
 // Draw indexed vertices
 commandList.DrawIndexed(indexBuffer.ElementCount);
 </source>
-<target xml:lang="pt">// Create the index buffer
+<target xml:lang="pt">\/\/ Criar o buffer de índice
 var indices = new short[indexCount];
 var is32Bits = false;
-var indexBuffer = Buffer.Index.New(GraphicsDevice, indices);
+var indexBuffer = Buffer.Index.New (GraphicsDevice, índices);
  
-// set the VAO
+\/\/ definir o VAO
 commandList.SetIndexBuffer(indexBuffer, 0, is32Bits);
 
-// Draw indexed vertices
+\/\/ Desenho de vértices indexados
 commandList.DrawIndexed(indexBuffer.ElementCount);
 </target>
 </trans-unit>

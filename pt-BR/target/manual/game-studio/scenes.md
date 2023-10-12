@@ -1,21 +1,21 @@
-# Scenes
+# Cenas
 
-<span class="badge text-bg-primary">Beginner</span>
-<span class="badge text-bg-success">Level designer</span>
+<x1\/>Introdução<x2\/>
+<x3\/> Designer de nível <x4\/>
 
-**Scenes** are the levels in your game. A scene is composed of **entities**, the objects in your project.
+** Ascenes** são os níveis em seu jogo. Uma cena é composta por **entidades**, os objetos em seu projeto.
 
-The screenshot below shows a scene with a knight, a light, a background, and a camera entity:
+A captura de tela abaixo mostra uma cena com um cavaleiro, uma luz, um fundo e uma entidade da câmera:
 
-![Basic scene in Stride](../get-started/media/scene-creation-basic-scene-in-stride.png)
+<x1\/> Cena básica em Stride<x2\/>
 
-Scenes are a type of [asset](/assets.md). As they are complex assets, they have a dedicated editor, the **Scene Editor**.
+As cenas são um tipo de [asset](/assets.md). Como eles são ativos complexos, eles têm um editor dedicado, o **Scene Editor**.
 
-## In this section
+## Nesta secção
 
-* [Create and open a scene](create-a-scene.md)
-* [Navigate in the Scene Editor](navigate-in-the-scene-editor.md)
-* [Manage scenes](manage-scenes.md)
-* [Load scenes](load-scenes.md)
-* [Add entities](add-entities.md)
-* [Manage entities](manage-entities.md)
+* [Criar e abrir uma cena](create-a-scene.md)
+* [Navegue no Editor de Cena](navigate-in-the-scene-editor.md)
+* [Gerenciar cenas](manage-scenes.md)
+* [Cenas de carga](load-scenes.md)
+* [Adicionar entidades](add-entities.md)
+* [Gerenciar entidades](manage-entities.md)

@@ -1,32 +1,32 @@
-# Lens flare
+# Flare de lente
 
-<span class="badge text-bg-primary">Intermediate</span>
-<span class="badge text-bg-success">Artist</span>
+<x1\/> Intermediário <x2\/>
+<x3\/>Artista <x4\/>
 
-The **lens flare** effect simulates the artifacts produced by the internal reflection or scattering of the light within a real-world lens.
+O efeito **lens flare** simula os artefatos produzidos pela reflexão interna ou dispersão da luz dentro de uma lente do mundo real.
 
-![media/lens-flare-1.png](media/lens-flare-1.png)
+<x1\/>media\/lens-flare-1.png<x2\/>
 
-The artifacts are generally aligned along the line defined by the original bright spot and the center of the screen. The most noticeable artifact is often exactly symmetrical to the real spot light with respect to the center of the screen.
+Os artefatos são geralmente alinhados ao longo da linha definida pelo ponto brilhante original e o centro da tela. O artefato mais notável é muitas vezes exatamente simétrico à luz real com respeito ao centro da tela.
 
-## Properties
+## Propriedades
 
-![media/lens-flare-2.png](media/lens-flare-2.png)
+<x1\/>media\/lens-flare-2.png<x2\/>
 
-| Property | Description |
+| Propriedade | Descrição |
 | ------------------------- | ------ 
-| Amount | Strength of the light streak |
-| Color Aberration Strength | Strength of the color aberration artifacts |
-| Halo Factor | Strength of the main artifact |
+| Montante | Força da mancha de luz |
+| Cor Aberração Força | Força dos artefatos de aberração da cor |
+| Fator de Halo | Força do artefato principal |
 
-## See also
+## Ver também
 
 * [Anti-aliasing](anti-aliasing.md)
-* [Fog](fog.md)
-* [Outline](outline.md)
-* [Ambient occlusion](ambient-occlusion.md)
-* [Bloom](bloom.md)
-* [Bright filter](bright-filter.md)
-* [Color transforms](color-transforms/index.md)
-* [Depth of field](depth-of-field.md)
-* [Light streaks](light-streaks.md)
+* [Fogão](fog.md)
+* [Linha de produção](outline.md)
+* [Oclusão ambiente](ambient-occlusion.md)
+* [Floresce](bloom.md)
+* [Filtro brilhante](bright-filter.md)
+* [Transformações de cor](color-transforms/index.md)
+* [Profundidade de campo](depth-of-field.md)
+* [Estrefas de luz](light-streaks.md)

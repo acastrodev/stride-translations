@@ -1,36 +1,36 @@
-# Set sprite borders
+# Definir bordas de sprite
 
-<span class="badge text-bg-primary">Beginner</span>
-<span class="badge text-bg-success">Designer</span>
+<x1\/>Introdução<x2\/>
+<x3\/>Designer<x4\/>
 
-**Sprite borders** are areas that don't deform when you scale the sprite. These are often useful for sprites used for [UI elements](../ui/ui-libraries.md) such as menu buttons. You can only set sprite borders for sprites set to the **UI** sheet type.
+** As bordas privadas ** são áreas que não deformam quando escalam o sprite. Estes são frequentemente úteis para sprites usados para elementos [UI](../ui/ui-libraries.md) como botões de menu. Você só pode definir bordas de sprite para sprites definidos para o tipo de folha **UI**.
 
-| Original sprite | Scaled without borders | Scaled with borders |
+| Original sprite | Escalada sem fronteiras | Escalada com fronteiras |
 |----------|---|---|
-| ![Original sprite](media/original-sprite.png) | ![With border](media/sprite-stretched-no-border.png) | ![With border](media/sprite-stretched-with-border.png) |
-|  | Edges are deformed | Edges not deformed |
+| <x1\/>Escritura original<x2\/> | <x1\/> Com fronteira<x2\/> | <x1\/> Com fronteira<x2\/> |
+|  | As bordas são deformadas | Bordas não deformadas |
 
 
-### Set sprite borders
+### Definir bordas de sprite
 
-1. In the Sprite Editor, make sure the **sheet type** is set to **UI**.
+1. No Editor Sprite, certifique-se de que o tipo **sheet** está definido como **UI**.
 
-   ![Choose UI](media/select-type-UI.png)
+   <x1\/> Escolha UI<x2\/>
 
-   > [!Note]
-   > This has no effect on how the sprite is rendered at runtime, but lets you set slightly different properties, including sprite borders.
+   > <x1\/>!Note<x2\/>
+   > Isso não tem efeito sobre como o sprite é renderizado em tempo de execução, mas permite definir propriedades ligeiramente diferentes, incluindo bordas de sprite.
 
-2. From the **Sprites** list, select the sprite you want to add sprite borders to.
+2. A partir da lista **Sprites**, selecione o sprite que deseja adicionar bordas de sprite.
 
-3. Make sure the texture region for the sprite is correct. For information about how to do this, see [Edit sprites](edit-sprites.md).
+3. Certifique-se de que a região de textura para o sprite está correta. Para obter informações sobre como fazer isso, veja [Edit sprites](edit-sprites.md).
 
-   ![Select texture region](media/select-starbox.png)
+   <x1\/>Selecione a região de textura <x2\/>
 
-4. In the Sprite Editor toolbar, select **Sprite border resize** tool.
+4. Na barra de ferramentas do Editor Sprite, selecione a ferramenta **Sprite border resize**.
 
-   ![Border resize tool](media/border-resize-tool-icon.png)
+   <x1\/>Border redimensionar ferramenta<x2\/>
 
-5. Drag the sprite borders into position.
+5. Arraste as bordas de sprite em posição.
 
 <p>
     <video autoplay loop class="responsive-video" poster="media\adjust-sprite-border.png">
@@ -38,30 +38,30 @@
     </video>
 </p>
 
-> [!Note]
-> By default, the sprite borders match the sprite texture region.
+> <x1\/>!Note<x2\/>
+> Por padrão, as bordas de sprite coincidem com a região de textura sprite.
 
-> [!TIP]
-> You can zoom in and out using **Ctrl + mousewheel** to make precise selections.
+> <x1\/>!TIP<x2\/>
+> Você pode fazer zoom dentro e fora usando **Ctrl + mousewheel** para fazer seleções precisas.
 
-> [!TIP]
+> <x1\/>!TIP<x2\/>
 >
-> For fine-tune control over the sprite borders, adjusting one-by-one in the **Property Grid**
+> Para controle de ajuste fino sobre as bordas de sprite, ajustando one-by-one no **Property Grid**
 >
-> ![Adjust sprite borders from Property grid](media/adjust-sprite-border-from-property-grid.png)
+> <x1\/>Ajustar bordas sprite da grade de propriedade<x2\/>
 
-## Lock the sprite borders
+## Bloquear as bordas de sprite
 
-By default, sprite borders move as you resize the texture region. To stop this from happening, click **Lock the sprite borders** in the toolbar.
+Por padrão, as bordas de sprite se movem enquanto você redimensiona a região de textura. Para evitar que isso aconteça, clique em ** Lock as bordas sprite** na barra de ferramentas.
 
-![Lock icon](media/lock-icon.png)
+<x1\/>Lock icon<x2\/>
 
-> [!Note]
-> Sprite borders always stay inside the texture region.
+> <x1\/>!Note<x2\/>
+> As bordas Sprite sempre ficam dentro da região da textura.
 
-## See also
+## Ver também
 
-* [Import sprite sheets](import-sprite-sheets.md)
-* [Edit sprites](edit-sprites.md)
+* [Folhas de sprite de importação](import-sprite-sheets.md)
+* [Editar sprites](edit-sprites.md)
 * [Use sprites](use-sprites.md)
 * [UI](../ui/index.md)

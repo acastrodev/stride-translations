@@ -1,48 +1,48 @@
-# Static colliders
+# Colliders estáticos
 
-<span class="badge text-bg-primary">Beginner</span>
-<span class="badge text-bg-success">Designer</span>
+<x1\/>Introdução<x2\/>
+<x3\/>Designer<x4\/>
 
-**Static colliders** aren't moved by forces such as gravity and collisions, but other physics objects can bump into them. Typical static colliders are strong immovable objects like walls, floors, large rocks, and so on.
+** Os colistores estatísticos** não são movidos por forças como gravidade e colisões, mas outros objetos de física podem colidir com eles. Os colisões estáticos típicos são objetos imovíveis fortes como paredes, pisos, grandes rochas e assim por diante.
 
-![Static and rigidbody colliders](media/rigid-bodies-static-and-rigid-body-colliders.png)
+<x1\/> Coletores de corpos estáticos e rígidos<x2\/>
 
-## Add a static collider
+## Adicionar um colisor estático
 
-1. Select the entity you want to make a static collider.
+1. Selecione a entidade que deseja fazer um colisor estático.
 
-2. In the **Property Grid**, click **Add component** and select **Static Collider**.
+2. No **Property Grid**, clique em **Add component** e selecione **Static Collider**.
 
-   ![Add Static collider component](media/physics-tutorials-create-a-bouncing-ball-add-collider-component.png)
+   <x1\/> Adicionar componente de colisor estático<x2\/>
 
-3. Set the [collider shape](collider-shapes.md) to match the shape of the entity. To do this, in the **Property Grid**, expand the **Static Collider component** to view its properties.
+3. Defina a forma [collider](collider-shapes.md) para corresponder à forma da entidade. Para fazer isso, no **Property Grid**, expanda o componente **Static Collider** para ver suas propriedades.
 
-4. Next to **Collider Shapes**, click ![Green plus button](~/manual/game-studio/media/green-plus-icon.png) (**Add**) and select the shape you want.
+4. Ao lado de **Collider Shapes**, clique em <x1\/>Green plus button<x2\/> (**Add**) e selecione a forma que deseja.
 
-   ![Add Static collider component](media/physics-tutorials-create-a-bouncing-ball-collider-shape.png)
+   <x1\/> Adicionar componente de colisor estático<x2\/>
 
-## Static collider properties
+## Propriedades do colider estático
 
-You can adjust the static collider properties in the **Property Grid**.
+Você pode ajustar as propriedades de colisão estáticas no **Property Grid**.
 
-![Static collider properties](media/static-collider-properties.png)
+<x1\/> Propriedades do colisor estatístico<x2\/>
 
-| Property | Description |
+| Propriedade | Descrição |
 ----------------------|-----------------------
-| Collision Group | Sets which collision group the object belongs to. |
-| Can Collide With | Sets which groups the object collides with. |
-| Collision Events | If this is enabled, the object reports collision events, which you can use in scripts. It has no effect on physics. If you have no scripts using collision events for the object, disable this option to save CPU. |
-| Can Sleep | If this is enabled, the physics engine doesn't process physics objects when they're not moving. This saves CPU. |
-| Restitution | Sets the amount of kinetic energy lost or gained after a collision. A typical value is between 0 and 1. If the restitution property of colliding entities is 0, the entities lose all energy and stop moving immediately on impact. If the restitution is 1, they lose no energy and rebound with the same velocity they collided at. Use this to change the "bounciness" of rigidbodies. |
-| Friction | Sets the surface friction. |
-| Rolling Friction | Sets the rolling friction. |
-| CCD Motion Threshold | Sets the velocity at which continuous collision detection (CCD) takes over. CCD prevents fast-moving entities (such as bullets) erroneously passing through other entities. |
-| CCD Swept Sphere Radius | Sets the radius of the bounding sphere containing the position between two physics frames during continuous collision detection. |
-| Is Trigger | Toggles whether the static collider is a [trigger](triggers.md). |
+| Grupo de Collision | Define a qual grupo de colisão o objeto pertence. |
+| Pode colar com | Define quais grupos o objeto colide com. |
+| Eventos de colisão | Se isso estiver ativado, o objeto relata eventos de colisão, que você pode usar em scripts. Não tem efeito na física. Se você não tiver scripts usando eventos de colisão para o objeto, desative esta opção para salvar a CPU. |
+| Pode dormir | Se isso estiver ativado, o motor de física não processa objetos de física quando eles não estão se movendo. Isso economiza CPU. |
+| Restituição | Define a quantidade de energia cinética perdida ou adquirida após uma colisão. Um valor típico é entre 0 e 1. Se a propriedade de restituição de entidades colidindo for 0, as entidades perdem toda a energia e param de se mover imediatamente sobre o impacto. Se a restituição é 1, eles não perdem energia e se recuperam com a mesma velocidade em que colidiram. Use isso para mudar o "bounciness" de corpos rígidos. |
+| Fricção | Define o atrito de superfície. |
+| Fricção de rolamento | Define o atrito de rolamento. |
+| CCD Motion Threshold | Define a velocidade em que a detecção contínua de colisão (CCD) assume o controle. O CCD evita que entidades em movimento rápido (como balas) passem erroneamente por outras entidades. |
+| CCD Sphere Radius Swept | Define o raio da esfera de ligação que contém a posição entre dois quadros de física durante a detecção contínua de colisão. |
+| É o Trigger | Alterna se o colisor estático é um [trigger](triggers.md). |
 
-## Move a static collider at runtime
+## Mova um colisor estático no tempo de execução
 
-If you need to move a static collider at runtime, you can do it with a script:
+Se você precisar mover um colisor estático no tempo de execução, você pode fazê-lo com um script:
 
 ```cs
 PhysicsComponent.Entity.Transform.Position += PhysicsComponent.Entity.Transform.Position + Vector3.UnitX;
@@ -50,9 +50,9 @@ PhysicsComponent.Entity.Transform.UpdateWorldMatrix();
 PhysicsComponent.UpdatePhysicsTransformation();
 ```
 
-## See also
+## Ver também
 
-* [Rigidbodies](rigid-bodies.md)
-* [Characters](characters.md)
-* [Collider shapes](collider-shapes.md)
+* [Rígidos](rigid-bodies.md)
+* [Personagens](characters.md)
+* [Formas de colarinho](collider-shapes.md)
 * [Triggers](triggers.md)

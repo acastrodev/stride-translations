@@ -1,21 +1,21 @@
-# Visual Studio extension
+# Extensão do Visual Studio
 
-<span class="badge text-bg-primary">Beginner</span>
+<x1\/>Introdução<x2\/>
 
-The **Stride Visual Studio extension** adds syntax highlighting, live code validation, error checking, and navigation. It also lets you you [edit shaders directly from Visual Studio](../graphics/effects-and-shaders/custom-shaders.md).
+A extensão **Stride Visual Studio** adiciona destaque sintaxe, validação de código ao vivo, verificação de erros e navegação. Ele também permite que você [edit shaders diretamente do Visual Studio](../graphics/effects-and-shaders/custom-shaders.md).
 
-You don't need to install the extension to use Stride, but we recommend it, especially for programmers.
+Você não precisa instalar a extensão para usar Stride, mas recomendamos, especialmente para programadores.
 
-## Install the Stride Visual Studio Extension
+## Instale o Stride Visual Studio Extension
 
-When you [install Stride](install-stride.md), Stride asks if you want to install the Visual Studio extension.
+Quando você [instalar Stride](install-stride.md), Stride pergunta se você deseja instalar a extensão Visual Studio.
 
-![Install extension](media/install-VS-plug-in-prompt.png)
+<x1\/> Extensão de instalação<x2\/>
 
-Alternatively, you can install or reinstall the extension at any time in the Stride Launcher under **Plug-in**.
+Alternativamente, você pode instalar ou reinstalar a extensão a qualquer momento no Stride Launcher sob **Plug-in**.
 
-![Reinstall extension](media/reinstall-extension.png)
+<x1\/>Reinstalar extensão<x2\/>
 
-## See also
+## Ver também
 
-* [Custom shaders](../graphics/effects-and-shaders/custom-shaders.md)
+* [Sombreadores personalizados](../graphics/effects-and-shaders/custom-shaders.md)

@@ -1,33 +1,33 @@
-# Graphics
+# Gráficos
 
-This section explains how to use Game Studio and the Stride API for graphics and rendering.
+Esta seção explica como usar o Game Studio e a API Stride para gráficos e renderização.
 
 ## Shaders
 
-Shaders are authored in the [Stride's shading language](effects-and-shaders/shading-language/index.md), an extension of `HLSL`. They provide true composition of modular shaders through the use of [inheritance](effects-and-shaders/shading-language/shader-classes-mixins-and-inheritance.md), shader [mixins](effects-and-shaders/shading-language/composition.md), and [automatic weaving of shader in-out attributes](effects-and-shaders/shading-language/automatic-shader-stage-input-output.md).
+Os Shaders são escritos na linguagem de sombreamento [Stride](effects-and-shaders/shading-language/index.md), uma extensão de `HLSL`. Eles fornecem a verdadeira composição de shaders modulares através do uso de [heritance](effects-and-shaders/shading-language/shader-classes-mixins-and-inheritance.md), shader [mixins](effects-and-shaders/shading-language/composition.md), e [ tecelagem automática de atributos shader in-out](effects-and-shaders/shading-language/automatic-shader-stage-input-output.md).
 
-## Effects
+## Efeitos
 
-[Effects](effects-and-shaders/effect-language.md) in Stride use C#-like syntax to combine shaders. They provide conditional composition of shaders to generate effect permutations.
+[ Efeitos](effects-and-shaders/effect-language.md) em Stride usar sintaxe tipo C# para combinar shaders. Eles fornecem composição condicional de shaders para gerar permutações de efeito.
 
-## Target everything
+## Alvo tudo
 
-Stride shaders are converted automatically to the target graphics platform, either plain HLSL for Direct3D, `GLSL` for OpenGL, or `SPIR-V` for Vulkan platforms.
+Os shaders Stride são convertidos automaticamente para a plataforma gráfica de destino, ou HLSL simples para Direct3D, `GLSL` para OpenGL, ou `SPIR-V` para plataformas Vulkan.
 
-## Advanced graphics
+## Gráficos avançados
 
-The graphics module provides a set of methods to display the game. Although Stride is available on multiple platforms, the whole system behaves like Direct3D 11 from the user perspective. You need a basic knowledge of the rendering pipeline to use it.
+O módulo gráfico fornece um conjunto de métodos para exibir o jogo. Embora Stride esteja disponível em várias plataformas, todo o sistema se comporta como Direct3D 11 na perspectiva do usuário. Você precisa de um conhecimento básico do pipeline de renderização para usá-lo.
 
-## In this section
+## Nesta secção
 
-* [Cameras](cameras/index.md)
-* [Materials](materials/index.md)
-* [Textures](textures/index.md)
-* [Lights and shadows](lights-and-shadows/index.md)
-* [Post effects](post-effects/index.md)
-* [Graphics compositor](graphics-compositor/index.md)
-* [Effects and shaders](effects-and-shaders/index.md)
-* [Low-level API](low-level-api/index.md)
-* [Rendering pipeline](rendering-pipeline/index.md)
-* [Sprite fonts](sprite-fonts.md)
-* [Voxel Cone Tracing GI](lights-and-shadows/voxel-cone-tracing-gi.md)
+* [Câmeras](cameras/index.md)
+* [Materiais](materials/index.md)
+* [Texturas](textures/index.md)
+* [Luzes e sombras](lights-and-shadows/index.md)
+* [Efeitos postais](post-effects/index.md)
+* [Compositor gráfico](graphics-compositor/index.md)
+* [Efeitos e shaders](effects-and-shaders/index.md)
+* [API de baixo nível](low-level-api/index.md)
+* [Oleoduto de renderização](rendering-pipeline/index.md)
+* [Fontes Sprite](sprite-fonts.md)
+* [Travessia de cone de Voxel GI](lights-and-shadows/voxel-cone-tracing-gi.md)

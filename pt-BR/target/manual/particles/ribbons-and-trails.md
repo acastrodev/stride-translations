@@ -1,36 +1,36 @@
-# Ribbons and trails
+# Fitas e trilhas
 
-<span class="badge text-bg-primary">Intermediate</span>
-<span class="badge text-bg-success">Artist</span>
-<span class="badge text-bg-success">Programmer</span>
+<x1\/> Intermediário <x2\/>
+<x3\/>Artista <x4\/>
+<x5\/> Programador <x6\/>
 
-To create **ribbons** and **trails**, Stride builds the mesh data as a strip connecting the particles, rather than individual quads. Ribbons and trails are often used to create visual effects such as sword slashes.
+Para criar **ribbons** e **trails**, Stride constrói os dados de malha como uma faixa que liga as partículas, em vez de quads individuais. As fitas e as trilhas são frequentemente usadas para criar efeitos visuais, como escórias de espada.
 
-![media/particles-tutorials-ribbons-0.jpg](media/ribbons-and-trails.jpg)
+<x1\/>media\/particles-tutorials-ribbons-0.jpg<x2\/>
 
-In the diagram below, several particles (represented as red dots) are rendered as individual quads (blue squares):
+No diagrama abaixo, várias partículas (representadas como pontos vermelhos) são renderizadas como quads individuais (quadrados azuis):
 
-![Diagram: individual quads](media/particles-diagram-quads.png)
+<x1\/>Diagrama: quads individuais<x2\/>
 
-In the diagram below, a strip is created by connecting the particles and rendering quads between the adjacent particles:
+No diagrama abaixo, uma tira é criada conectando as partículas e tornando quads entre as partículas adjacentes:
 
-![Diagram: ribbon of particles](media/particles-diagram-strip.png)
+<x1\/>Diagrama: fita de partículas<x2\/>
 
-## Ribbons vs trails
+## Ribbons vs trilhas
 
-Both ribbons and trails generate a flat surface which follows an axis connecting adjacent particles in a line. This line defines one of the axes of the surface. The difference is that ribbons always face the camera, and trails don't.
+Ambas as fitas e trilhas geram uma superfície plana que segue um eixo conectando partículas adjacentes em uma linha. Esta linha define um dos eixos da superfície. A diferença é que as fitas sempre enfrentam a câmera, e as trilhas não.
 
-The gif below shows the different behavior of ribbons (red) and trails (yellow) when viewed from different camera angles. Note how the ribbon doesn't change as the camera moves; it's fixed in space.
+O gif abaixo mostra o comportamento diferente de fitas (vermelho) e trilhas (amarelo) quando visto de diferentes ângulos de câmera. Observe como a fita não muda à medida que a câmera se move; ela é fixa no espaço.
 
-![Ribbons vs trails](media/ribbons-vs-trails.gif)
+<x1\/> Ribbons vs trails<x2\/>
 
-## Sort particles
+## Ordenar partículas
 
-To create ribbons and trails, you usually need to sort the particles into an order. If you don't sort the particles, they connect erratically, as in this diagram:
+Para criar fitas e trilhas, você geralmente precisa classificar as partículas em uma ordem. Se você não classificar as partículas, elas se conectam erraticamente, como neste diagrama:
 
-![Diagram: unordered particles/particles-tutorials-ribbons-2.png](media/particles-diagram-unordered.png)
+<x1\/>Diagrama: partículas não ordenadas\/particles-tutoriais-ribbons-2.png<x2\/>
 
-Here's an example of how unsorted particles look at runtime:
+Aqui está um exemplo de como as partículas não ousadas olham para o tempo de execução:
 
 <p>
 <video autoplay loop class="responsive-video" poster="tutorials/media/sword-slash-2.jpg">
@@ -38,67 +38,67 @@ Here's an example of how unsorted particles look at runtime:
 </video>
 </p>
 
-Rather than the particles connecting in order, the strip erratically jumps between particles. (This is the same problem alpha-blended quads have when they're not properly sorted.)
+Em vez das partículas que se conectam em ordem, a tira erraticamente salta entre partículas. (Este é o mesmo problema que os quads alfa-blended têm quando eles não são classificados corretamente.)
 
-To sort the particles, under **Particle System > Source > Emitters**, change the **Sorting** property.
+Para classificar as partículas, sob **Particle System > Source > Emitters**, altere a propriedade **Sorting**.
 
-![Sort particles](tutorials/media/sort-by-order.png)
+<x1\/>Partículas de fragmento<x2\/>
 
-If your particles have the same **lifespan** property, and are emitted no more than once per frame (usually the case at 30 particles per second or fewer), you can sort them by age.
+Se suas partículas têm a mesma propriedade **lifespan**, e são emitidas não mais do que uma vez por quadro (geralmente o caso em 30 partículas por segundo ou menos), você pode classificá-las por idade.
 
-However, if you spawn several particles per second or your particles vary in lifespan, sorting by age doesn't provide a consistent order, as the sorting parameter changes between frames. In this case, you should sort the particles by order. To do this, you need to add a **spawn order initializer**. To do this, in the entity properties, under **Particle System > Source > Emitters**, next to **Initializers**, click ![Green plus button](~/manual/game-studio/media/green-plus-icon.png) (**Add**) and select **Spawn Order**.
+No entanto, se você gerou várias partículas por segundo ou suas partículas variam em vida útil, a classificação por idade não fornece uma ordem consistente, pois o parâmetro de classificação muda entre quadros. Neste caso, você deve classificar as partículas por ordem. Para fazer isso, você precisa adicionar um inicializador de ordem <g id="1">spawn</g>. Para fazer isso, nas propriedades da entidade, sob <g id="2">Particle System > Source > Emitters</g>, ao lado de <g id="3">Initializers</g>, clique em <x1\/>Green plus button<x2\/> (<g id="6">Add</g>Spawn Order</g>.<g id="7">
 
-![Add spawn-order initializer](tutorials/media/add-spawn-order-initializer.png)
+<x1\/>Adicionar inicializador de ordem desova<x2\/>
 
-This adds a spawn order initializer to the emitter. It doesn't have any properties, but it gives the particles a SpawnID we can sort them by.
+Isso adiciona um inicializador de ordem espawn ao emissor. Não tem propriedades, mas dá às partículas um SpawnID que podemos classificá-las.
 
-> [!Note]
-> Sorting by depth might work in niche cases, but this doesn't preserve the order between different frames. We don't recommend it for most situations.
+> <x1\/>!Note<x2\/>
+> A classificação por profundidade pode funcionar em casos de nicho, mas isso não preserva a ordem entre diferentes quadros. Não o recomendamos para a maioria das situações.
 
-## Texture coordinates
+## Coordenadas de textura
 
-Unlike billboards, which are individual quads, ribbons and trails have a single surface across all particles. To define how textures are mapped across the surface, under **Particle System > Source > Emitters > Shape**, change the **UV Coords** property.
+Ao contrário de outdoors, que são quads individuais, fitas e trilhas têm uma única superfície em todas as partículas. Para definir como as texturas são mapeadas através da superfície, abaixo de **Particle System > Source > Emitters > Shape**, altere a propriedade **UV Coords**.
 
-![UV coords property](media/uv-coords.png)
+<x1\/>UV coordena propriedade<x2\/>
 
-* **AsIs**: The texture is mapped per segment, copying the same quad stretched between every two particles. This is sometimes useful with flipbook animations (in the [Material](materials.md) settings).
+* **AsIs**: A textura é mapeada por segmento, copiando o mesmo quad esticado entre cada duas partículas. Isso às vezes é útil com animações flipbook (nas configurações [Material](materials.md)).
 
-   ![As-is texture mapping](media/particles-diagram-asis.png)
+   <x1\/>As-is texture mapping<x2\/>
 
-* **Stretched**: The texture is stretched between the first and last particle of the trail or ribbon. The **UV Factor** defines how many times the texture appears across the entire trail or ribbon (1 = once).
+* **Stretched**: A textura é esticada entre a primeira e última partícula da trilha ou fita. O **UV Factor** define quantas vezes a textura aparece em toda a trilha ou fita (1 = uma vez).
 
-   ![Stretched texture mapping](media/particles-diagram-stretched.png)
+   <x1\/> Mapeamento de textura padrão<x2\/>
 
-* **DistanceBased**: The texture is repeated based on the actual world length of the ribbon or trail rather than the number of particles. The **UV Factor** defines the distance in [world units](../game-studio/world-units.md) after which the texture repeats
+* **DistanceBased**: A textura é repetida com base no comprimento do mundo real da fita ou da trilha em vez do número de partículas. O **UV Factor** define a distância em unidades [world](../game-studio/world-units.md) após o qual a textura repete
 
-   ![Distance-based texture mapping](media/particles-diagram-distancebased.png)
+   <x1\/> Mapeamento de textura baseado em resistência<x2\/>
 
-## Smooth ribbons and trails
+## Fitas e trilhas suaves
 
-You can add extra segments between adjacent particles to smooth the lines between particles. To do this, under **Particle System > Source > Emitters > Shape**, change the **Smoothing** property.
+Você pode adicionar segmentos extras entre partículas adjacentes para alisar as linhas entre partículas. Para fazer isso, sob **Particle System > Source > Emitters > Shape**, altere a propriedade **Smoothing**.
 
-* **None** — No smoothing creates only one segment joining two particles. This creates trails and ribbons with sharp angles.
+* **None** — Nenhum alisamento cria apenas um segmento juntando duas partículas. Isso cria trilhas e fitas com ângulos afiados.
 
-   ![Diagram: particle smoothing](media/diagram-smoothing-none.png)
+   <x1\/>Diagrama: alisamento de partículas<x2\/>
 
-* **Fast** — This uses [Catmull-Rom interpolation (Wikipedia)](https://en.wikipedia.org/wiki/Centripetal_Catmull%E2%80%93Rom_spline) to add extra segments between particles, creating a smoother effect. You can set the number of segments with the **Segments** property.
+* **Fast** — Isso usa a interpolação [Catmull-Rom (Wikipedia)](https://en.wikipedia.org/wiki/Centripetal_Catmull%E2%80%93Rom_spline) para adicionar segmentos extras entre partículas, criando um efeito mais suave. Você pode definir o número de segmentos com a propriedade **Segmentos**.
 
-   ![Diagram: particle smoothing](media/diagram-smoothing-fast.png)
+   <x1\/>Diagrama: alisamento de partículas<x2\/>
 
-* **Best** — This generally creates the smoothest effect, but requires more CPU. It calculates a circumcircle around every three sequential particles along the control axis, then adds extra control points on the circle, keeping the segments in an arc. For the first and the last segment, there is only one arc to be followed, but for mid-sections, two different arcs from two different circles overlap; Stride interpolates the control points from the first arc and the second as the point approaches the second particle. You can set the number of segments between every two particles with the **Segments** property.
+* **Best** — Isso geralmente cria o efeito mais suave, mas requer mais CPU. Ele calcula um círculo em torno de cada três partículas sequenciais ao longo do eixo de controle, em seguida, adiciona pontos de controle extras no círculo, mantendo os segmentos em um arco. Para o primeiro e último segmento, há apenas um arco a ser seguido, mas para as secções médias, dois arcos diferentes de dois círculos diferentes se sobrepõem; Stride interpola os pontos de controle do primeiro arco e o segundo como o ponto aproxima a segunda partícula. Você pode definir o número de segmentos entre cada duas partículas com a propriedade **Segmentos**.
 
-   ![Diagram: particle smoothing](media/diagram-smoothing-best.png)
+   <x1\/>Diagrama: alisamento de partículas<x2\/>
 
-This video shows the difference between the three smoothing methods. Note that the rightmost trail (using the **Best** method) is slightly more circular, closer to the actual path of the sword swing.
+Este vídeo mostra a diferença entre os três métodos de alisamento. Note que a trilha mais correta (usando o método **Best**) é ligeiramente mais circular, mais próxima do caminho real do balanço da espada.
 
-![media/particles-tutorials-ribbons-6.gif](media/smoothing-comparison.gif)
+<x1\/>media\/particles-tutorials-ribbons-6.gif<x2\/>
 
-## Sample project
+## Projeto de amostra
 
-For an example of a project that uses ribbons and trails, try the **Ribbon Particles Sample** included with Stride.
+Para um exemplo de um projeto que usa fitas e trilhas, experimente o **Ribbon Particles Sample** incluído com Stride.
 
-## See also
+## Ver também
 
-* [Shapes](shapes.md)
-* [Tutorial: Create a trail](tutorials/create-a-trail.md)
-* [Tutorial: Lasers and lightning](tutorials/lasers-and-lightning.md)
+* [Formas](shapes.md)
+* [Tutorial: Criar uma trilha](tutorials/create-a-trail.md)
+* [Tutorial: Lasers e raios](tutorials/lasers-and-lightning.md)

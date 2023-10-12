@@ -1,41 +1,41 @@
-# Add a light
+# Adicionar uma luz
 
-<span class="badge text-bg-primary">Beginner</span>
-<span class="badge text-bg-success">Designer</span>
-<span class="badge text-bg-success">Artist</span>
+<x1\/>Introdução<x2\/>
+<x3\/>Designer<x4\/>
+<x5\/>Artista <x6\/>
 
-To add a light to a scene, add a [light component](xref:Stride.Engine.LightComponent) to an entity.
+Para adicionar uma luz a uma cena, adicione um componente [light](xref:Stride.Engine.LightComponent) a uma entidade.
 
-1. Select the entity you want to be a light.
+1. Selecione a entidade que deseja ser uma luz.
 
-2. In the Property Grid (on the right by default), click **Add component** and select **Light**.
+2. Na Grade de Propriedade (à direita por padrão), clique em **Adicionar componente** e selecione **Light**.
 
-   ![Add light component](media/add-light-component.png)
+   <x1\/> Adicionar componente de luz <x2\/>
 
-   Game Studio adds a light component to the entity.
+   Game Studio adiciona um componente leve à entidade.
 
-   ![Light component added](media/light-component-added.png)
+   <x1\/>Light component adicionado<x2\/>
 
-3. Under the **Light** component properties, next to **Light**, from the drop-down menu, select the kind of light you want this entity to use.
+3. Sob as propriedades do componente **Light**, ao lado de **Light**, no menu drop-down, selecione o tipo de luz que você deseja que essa entidade use.
 
-   ![Light type](media/light-type.png)
+   <x1\/> Tipo de luz <x2\/>
 
-   You can choose:
+   Você pode escolher:
 
-   * [Point light](point-lights.md)
-   * [Ambient light](ambient-lights.md)
-   * [Directional light](directional-lights.md)
-   * [Skybox light](skybox-lights.md)
-   * [Spot light](spot-lights.md)
+   * [Luz de ponto](point-lights.md)
+   * [Luz ambiente](ambient-lights.md)
+   * [Luz direcional](directional-lights.md)
+   * [Luz de caixa de luz](skybox-lights.md)
+   * [Luz do ponto](spot-lights.md)
 
-   For information about each type of light, see its respective page.
+   Para obter informações sobre cada tipo de luz, consulte sua respectiva página.
 
-## See also
+## Ver também
 
-* [Point lights](point-lights.md)
-* [Ambient lights](ambient-lights.md)
-* [Directional lights](directional-lights.md)
-* [Skybox lights](skybox-lights.md)
-* [Spot lights](spot-lights.md)
-* [Light probes](light-probes.md)
-* [Shadows](shadows.md)
+* [Luzes de ponto](point-lights.md)
+* [Luzes ambientais](ambient-lights.md)
+* [Luzes direcionais](directional-lights.md)
+* [Luzes Skybox](skybox-lights.md)
+* [Luzes do ponto](spot-lights.md)
+* [Sondas de luz](light-probes.md)
+* [Sombras](shadows.md)

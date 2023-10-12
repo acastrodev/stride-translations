@@ -1,266 +1,266 @@
-# Gestures
+# Gestos
 
-<span class="badge text-bg-primary">Intermediate</span>
-<span class="badge text-bg-success">Programmer</span>
+<x1\/> Intermediário <x2\/>
+<x3\/> Programador <x4\/>
 
-Gestures are predefined [pointer](pointers.md) patterns. Stride can recognize gestures and trigger corresponding events. For example, in a strategy game, the player can drag and drop a unit to the battlefield with a **drag** gesture. Gestures can use one or several fingers.
+Gestos são padrões predefinidos [pointer](pointers.md). Stride pode reconhecer gestos e desencadear eventos correspondentes. Por exemplo, em um jogo de estratégia, o jogador pode arrastar e soltar uma unidade para o campo de batalha com um gesto **drag**. Gestos podem usar um ou vários dedos.
 
-> [!Note]
-> All lengths, speeds and error margins of configuration files must use normalized values.
+> <x1\/>!Note<x2\/>
+> Todos os comprimentos, velocidades e margens de erro dos arquivos de configuração devem usar valores normalizados.
 
-## Turn on gesture recognition
+## Vire o reconhecimento de gestos
 
-By default, the input system doesn't recognize gestures, as this requires CPU time.
+Por padrão, o sistema de entrada não reconhece gestos, pois isso requer tempo de CPU.
 
-To turn on gesture recognition:
+Para ativar o reconhecimento de gestos:
 
-1. Create an instance of the configuration class for the gesture you want to recognize. For example, for the drag gesture, create an instance of @'Stride.Input.GestureConfigDrag'.
-2. Configure the class parameters.
-3. Add the gesture configuration to the @'Stride.Input.InputManager.Gestures' collection.
+1. Crie uma instância da classe de configuração para o gesto que deseja reconhecer. Por exemplo, para o gesto de arrastar, crie uma instância de @'Stride.Input.GestureConfigDrag'.
+2. Configurar os parâmetros de classe.
+3. Adicione a configuração de gesto à coleção @'Stride.Input.InputManager.Gestures.
 
-> [!Warning]
-> After you activate recognition for a gesture, you can't modify the gesture's parameters. If you need to do this, delete the gesture from the @'Stride.Input.InputManager.Gestures' collection and create a new entry with new parameters.
+> <x1\/>!Warning<x2\/>
+> Depois de ativar o reconhecimento por um gesto, você não pode modificar os parâmetros do gesto. Se você precisar fazer isso, exclua o gesto do @'Stride. Input.InputManager.Gestures' coleção e criar uma nova entrada com novos parâmetros.
 
-### Turn off gesture recognition
+### Desligue o reconhecimento do gesto
 
-Delete the gesture from the [InputManager.Gestures](xref:Stride.Input.InputManager.Gestures) collection.
+Exclua o gesto do [InputManager. Gestures](xref:Stride.Input.InputManager.Gestures) coleção.
 
-## Gesture recognition
+## Reconhecimento de natureza
 
-When the input system detects a gesture, it adds a @'Stride.Input.GestureEvent' to the list of [InputManager.GestureEvents](xref:Stride.Input.InputManager.GestureEvents). The event contains information about the gesture and its state, such as its location and the number of fingers used.
+Quando o sistema de entrada detecta um gesto, ele adiciona um @'Stride. Input.GestureEvent' para a lista de [InputManager.GestureEvents](xref:Stride.Input.InputManager.GestureEvents). O evento contém informações sobre o gesto e seu estado, como sua localização e o número de dedos usados.
 
-> [!Note]
-> Each gesture has its own associated gesture event class (see below).
+> <x1\/>!Note<x2\/>
+> Cada gesto tem sua própria classe de evento de gesto (veja abaixo).
 
-The [GestureEvent.Type](xref:Stride.Input.GestureEvent.Type) field indicates which gesture has been recognized. You can then cast the base gesture event into the gesture-specific event type to have gesture-type-specific information about the event.
+O campo [GestureEvent.Type](xref:Stride.Input.GestureEvent.Type) indica qual gesto foi reconhecido. Você pode então lançar o evento de gesto de base no tipo de evento específico de gestos para ter informações específicas sobre o evento.
 
-Stride can detect several gestures simultaneously, so the event list can contain more than one item in an update.
+Stride pode detectar vários gestos simultaneamente, de modo que a lista de eventos pode conter mais de um item em uma atualização.
 
-The list is cleared with every update, so you don't need to clear it manually.
+A lista é limpa com cada atualização, então você não precisa limpá-la manualmente.
 
-## Configure gestures
+## Configurar gestos
 
-In the @'Stride.Input.GestureConfig' classes, you can configure parameters including:
+Nas classes @'Stride.Input.GestureConfig', você pode configurar parâmetros incluindo:
 
-* the number of fingers the gesture uses
+* o número de dedos que o gesto usa
 
-* the number and duration of taps the gesture uses
+* o número e duração de torneiras que o gesto usa
 
-* the gesture direction
+* a direção do gesto
 
-> [!Note]
-> Each gesture has its own configuration class with specific configuration parameters (see below).
+> <x1\/>!Note<x2\/>
+> Cada gesto tem sua própria classe de configuração com parâmetros de configuração específicos (veja abaixo).
 
-## Types of gesture
+## Tipos de gesto
 
-Stride supports two main types of gesture:
+Stride suporta dois tipos principais de gesto:
 
-* **Discrete** gestures (tap, flick, long press) trigger a single event.
+* **Discrete** gestos (tap, flick, long press) desencadear um único evento.
 
-   * [Tap](#Tap)
+   * [Toca a tocar](#Tap)
 
    * [Flick](#Flick)
 
-   * [Long press](#Long-press)
+   * [Imprensa longa](#Long-press)
 
-* **Continuous** gestures (drag and composite) trigger a series of events when the user changes the direction of the gesture.
+* ** Os gestos contínuos** (drag e compósito) desencadeiam uma série de eventos quando o usuário muda a direção do gesto.
 
-   * [Drag](#Drag)
+   * [Arraste](#Drag)
 
-   * [Composite](#Composite)
+   * [Composto](#Composite)
 
-### Discrete gestures
+### Gestos discretos
 
-#### <a name="Tap"> Tap </a>
+#### <x1\/> Toque <x2\/>
 
-![Tap gesture](media/gestures_tap_gesture.png)
+<x1\/>Tap gesto<x2\/>
 
-The user touches the screen and quickly removes their finger.
+O usuário toca a tela e remove rapidamente o dedo.
 
-**Configuration class**: @'Stride.Input.GestureConfigTap'
+**Configuration class**: @'Stride.Input.GestureConfigTap '
 
-**Event class**: @'Stride.Input.GestureEventTap'
+**Event class**: @'Stride.Input.GestureEventTap '
 
-The number of fingers on the screen can't vary during the gesture. To set the number of fingers required for a tap, modify @'Stride.Input.GestureConfig.RequiredNumberOfFingers'.
+O número de dedos na tela não pode variar durante o gesto. Para definir o número de dedos necessários para uma torneira, modifique @'Stride.Input.GestureConfig.RequiredNumberOfFingers'.
 
-> [!TIP]
-> To distinguish single taps from multi-taps, the system uses latency in tap events. To disable this, set the [GestureConfigTap.MaximumTimeBetweenTaps](xref:Stride.Input.GestureConfigTap.MaximumTimeBetweenTaps) field to **0**.
+> <x1\/>!TIP<x2\/>
+> Para distinguir torneiras únicas de multi-taps, o sistema usa latência em eventos de torneira. Para desativar isso, defina o campo [GestureConfigTap.MaximumTimeBetweenTaps](xref:Stride.Input.GestureConfigTap.MaximumTimeBetweenTaps) para **0**.
 
-#### <a name="Flick"> Flick</a>
+#### <x1\/> Flick<x2\/>
 
-![Flick gesture](media/gestures_flick_gesture.png)
+<x1\/>Flick gesto<x2\/>
 
-The user touches the screen, performs a quick straight translation, and withdraws their finger(s).
+O usuário toca a tela, executa uma tradução direta rápida e retira seu dedo (s).
 
-**Configuration class**: @'Stride.Input.GestureConfigFlick'
+**Configuration class**: @'Stride.Input.GestureConfigFlick '
 
-**Event class**: @'Stride.Input.GestureEventFlick'
+**Event class**: @'Stride.Input.GestureEventFlick '
 
-The number of fingers on the screen can't during the gesture.
+O número de dedos na tela não pode durante o gesto.
 
-To set a minimum length for the flick gesture, use [GestureConfigFlick.MinimumFlickLength](xref:Stride.Input.GestureConfigFlick.MinimumFlickLength).
+Para definir um comprimento mínimo para o gesto flick, use [GestureConfigFlick.MinimumFlickLength](xref:Stride.Input.GestureConfigFlick.MinimumFlickLength).
 
-To restrict the direction of the flick to **vertical** or **horizontal**, use
+Para restringir a direção do flick a **vertical** ou **horizontal**, use
 [GestureConfigFlick.FlickShape](xref:Stride.Input.GestureConfigFlick.FlickShape).
 
-#### <a name="Long-press"> Long press</a>
+#### <x1\/> Imprensa longa <x2\/>
 
-![Long press gesture](media/gestures_long_pres_gesture.png)
+<x1\/>Long press gesto<x2\/>
 
-The user touches the screen and maintains pressure without removing their finger for a certain period of time (the default time is one second).
+O usuário toca a tela e mantém a pressão sem remover seu dedo por um determinado período de tempo (o tempo padrão é um segundo).
 
 **Configuration class**: [GestureConfigLongPress](xref:Stride.Input.GestureConfigLongPress)
 
-**Event class**: [GestureEventLongPress](xref:Stride.Input.GestureEventLongPress)
+**Event class**: [GestureEventLong Imprensa](xref:Stride.Input.GestureEventLongPress)
 
-The number of fingers on the screen can't vary during the gesture.
+O número de dedos na tela não pode variar durante o gesto.
 
-To change the minimum press length for the long press gesture, modify  [GestureConfigLongPress.RequiredPressTime](xref:Stride.Input.GestureConfigLongPress.RequiredPressTime).
+Para alterar o comprimento da prensa mínima para o gesto de prensa longa, modifique [GestureConfigLongPress.RequiredPressTime](xref:Stride.Input.GestureConfigLongPress.RequiredPressTime).
 
-### Continuous gestures
+### Gestos contínuos
 
-#### <a name="Drag"> Drag</a>
+#### <x1\/> Drag<x2\/>
 
-![Drag gesture](media/gestures_drag_gesture.png)
+<x1\/>Drag gesto<x2\/>
 
-The user touches the screen, performs a translation, and withdraws their finger(s).
+O usuário toca a tela, executa uma tradução e retira seus dedos.
 
 **Configuration class**: [GestureConfigDrag](xref:Stride.Input.GestureConfigDrag)
 
 **Event class**: [GestureEventDrag](xref:Stride.Input.GestureEventDrag)
 
-The number of fingers on the screen can't vary during the gesture.
+O número de dedos na tela não pode variar durante o gesto.
 
-To detect smaller drags, decrease [GestureConfigDrag.MinimumDragDistance](xref:Stride.Input.GestureConfigDrag.MinimumDragDistance).
+Para detectar arrastos menores, diminua [GestureConfigDrag.MinimumDragDistance](xref:Stride.Input.GestureConfigDrag.MinimumDragDistance).
 
-To restrict the direction of the drag to **vertical** or **horizontal**, use [GestureConfigDrag.DragShape](xref:Stride.Input.GestureConfigDrag.DragShape).
+Para restringir a direção do arrasto para **vertical** ou **horizontal**, use [GestureConfigDrag.DragShape](xref:Stride.Input.GestureConfigDrag.DragShape).
 
-#### <a name="Composite"> Composite</a>
+#### <x1\/> Composite<x2\/>
 
-![Translation gesture](media/gestures_translation_gesture.png) ![Scale gesture](media/gestures_scale_gesture.png) ![Rotation gesture](media/gestures_rotation_gesture.png)
+<x1\/>Gestão de tradução<x2\/> <x3\/>Gestão de cálculo <x4\/>Gestão de rotação<x6\/><x5\/>
 
-The user touches the screen with two fingers and moves them independently.
+O usuário toca a tela com dois dedos e os move de forma independente.
 
-**Configuration class**: @'Stride.Input.GestureConfigComposite'
+**Configuration class**: @'Stride.Input.GestureConfigComposite '
 
-**Event class**: @'Stride.Input.GestureEventComposite'
+**Event class**: @'Stride.Input.GestureEventComposite '
 
-The composite gesture requires exactly two fingers on the screen. It's triggered when the system detects one of the three basic actions:
-* _Translation_: the user translates two fingers together in the same direction.
-* _Scale_: the user moves two fingers closer together or further apart.
-* _Rotation_: the user rotates two fingers around a center point.
+O gesto composto requer exatamente dois dedos na tela. É acionado quando o sistema detecta uma das três ações básicas:
+* _Translation_: o usuário traduz dois dedos juntos na mesma direção.
+* _Scale_: o usuário move dois dedos mais próximos ou mais distantes.
+* _Rotação_: o usuário gira dois dedos em torno de um ponto central.
 
-## Gesture states
+## Estado de Gesture
 
-A gesture always has one of four states:
+Um gesto sempre tem um dos quatro estados:
 
 * Began
 
-* Changed
+* Mudança
 
-* Ended
+* Fim
 
-* Occurred
+* Ocorrência
 
-**Discrete** gestures (tap, flick, long press) always have the state _occurred_. **Continuous** gestures (drag and composite) always begin with the state _began_, followed by any  _changed_ states, and end with the _ended_ state.
+**Discrete** gestos (tap, flick, long press) sempre têm o estado _occurred_. ** Os gestos (drag e compósito) sempre começam com o estado _began_, seguidos por quaisquer estados _changed_ e terminam com o estado _ended_.**
 
-To query the current state of a gesture, use the [GestureEvent.State](xref:Stride.Input.GestureEvent.State) field of the triggered gesture event.
+Para consultar o estado atual de um gesto, use o campo [GestureEvent.State](xref:Stride.Input.GestureEvent.State) do evento de gesto acionado.
 
-## Example code
+## Exemplo de código
 
-### Activate or deactivate gesture recognition
+### Ativar ou desativar o reconhecimento de gestos
 
-To create the configuration of a gesture you want to recognize:
+Para criar a configuração de um gesto que você deseja reconhecer:
 
 ```cs
-// Create the configuration of a gesture you want to recognize.
-var singleTapConfig = new GestureConfigTap();
+\/\/ Crie a configuração de um gesto que deseja reconhecer.
+var single TapConfig = novo GestureConfigTap();
 
-// Start tap gesture recognition.
-Input.Gestures.Add(singleTapConfig);
+\/\/ Iniciar reconhecimento de gestos.
+Entrada.Gestures.Add (singleTapConfig);
 
-// Create the configuration of the gesture you want to recognize.
-var doubleTapConfig = new GestureConfigTap(2, 1);
+\/\/ Crie a configuração do gesto que deseja reconhecer.
+var duplo TapConfig = novo GestureConfigTap(2, 1);
 
-// Start double tap gesture recognition.
-Input.Gestures.Add(doubleTapConfig);
+\/\/ Iniciar reconhecimento de gesto de torneira dupla.
+Entrada.Gestures.Add (doubleTapConfig);
 
-// Stop tap gesture recognition.
-Input.Gestures.Remove(singleTapConfig);
+\/\/ Pare de reconhecer gestos.
+Input.Gestures.Remover(singleTapConfig);
 
-// Stop all gesture recognitions.
-Input.Gestures.Clear();
+\/\/ Parem todos os reconhecimentos de gestos.
+Entrada.Gesturas.Clear();
 ```
 
-### Configure the gesture
+### Configurar o gesto
 
-Each configuration class has a parameterless constructor that corresponds to the default gesture configuration. You can use special constructors for frequently-modified parameters.
+Cada classe de configuração tem um construtor sem parâmetro que corresponde à configuração de gesto padrão. Você pode usar construtores especiais para parâmetros frequentemente modificados.
 
-> [!warning]
-> We don't recommend you modify other fields as this might break the input system. But if you need to, you can modify them using the corresponding properties.
+> <x1\/>!warning<x2\/>
+> Não recomendamos que você modifique outros campos, pois isso pode quebrar o sistema de entrada. Mas se você precisar, você pode modificá-los usando as propriedades correspondentes.
 
 ```cs
-// Default gesture config.
-var singleTapConfig = new GestureConfigTap();
+\/\/ Default gesto config.
+var single TapConfig = novo GestureConfigTap();
 
-// Personalize gesture config using the dedicated constructor.
-var doubleTapConfig = new GestureConfigTap(2, 2);
+\/\/ Personalizar a configuração do gesto usando o construtor dedicado.
+var duplo TapConfig = novo GestureConfigTap(2, 2);
 
-// Personalize gesture config by directly accessing the desired property.
-// Make sure you know what you're doing! Modifying this might break the input system.
-var noLatencyTap = new GestureConfigTap() { MaximumTimeBetweenTaps= TimeSpan.Zero };
+\/\/ Personalizar a configuração do gesto acessando diretamente a propriedade desejada.
+\/\/ Certifica-te que sabes o que estás a fazer! Modificar isso pode quebrar o sistema de entrada.
+var noLatencyTap = novo GestureConfigTap() { MaximumTimeBetweenTaps= TimeSpan.Zero };
 ```
 
-### Access gesture events
+### Eventos de gesto de acesso
 
-You can access the list of events triggered by recognized gestures using the [InputManager.GestureEvents](xref:Stride.Input.InputManager.GestureEvents) collection. The collection is automatically cleared at every update.
+Você pode acessar a lista de eventos desencadeados por gestos reconhecidos usando a coleção [InputManager.GestureEvents](xref:Stride.Input.InputManager.GestureEvents). A coleção é automaticamente limpa em cada atualização.
 
 ```cs
-var currentFrameGestureEvents = Input.GestureEvents;
+linha de produção Eventos = Entrada.Gestura Eventos;
 ```
 
-### Identify the gesture type
+### Identificar o tipo de gesto
 
-Use the [GestureEvent.Type](xref:Stride.Input.GestureEvent.Type) field to identity the gesture type, then cast it to the appropriate event type to get extra information about the event.
+Use o campo [GestureEvent.Type](xref:Stride.Input.GestureEvent.Type) para identificar o tipo de gesto, então lançá-lo para o tipo de evento apropriado para obter informações adicionais sobre o evento.
 
 ```cs
-foreach( var gestureEvent in Input.GestureEvents)
-{
-   	// Determine if the event is from a tap gesture
-	if (gestureEvent.Type != GestureType.Tap)
-		continue;
+foreach( var gesto Evento em Input.GestureEvents)
+(
+   	\/\/ Determinar se o evento é de um gesto de toque
+	if (gestureEvent. Tipo! GestureType.Tap)
+		continuar;
    
-	// Cast a specific tap event class.
-	GestureEventTap  tapEvent = (GestureEventTap) gestureEvent;
+	\/\/ Elenco uma classe específica de eventos de torneira.
+	GestureEvent Toque em tapEvent = (GestureEventTap) gesto Evento;
 	
-    // Access tap-event-specific field.
-    log.Info("Tap position: {0}.", tapEvent.TapPosition);
+    \/\/ Acesso campo específico de tap-event.
+    log.Info("Tap position: (0}.", tapEvent.TapPosition);
 }
 ```
 
-### Identify the gesture state
+### Identificar o estado de gesto
 
-Use the [GestureEvent.State](xref:Stride.Input.GestureEvent.State) field to get gesture event state.
+Use o campo [GestureEvent.State](xref:Stride.Input.GestureEvent.State) para obter estado de evento de gesto.
 
 ```cs
-switch(compositeGestureEvent.State)
-{
-case GestureState.Began:
+switch (compositeGestureEvent.State)
+(
+caso GestureState. Começou
 	image.ComputePreview();
-	break;
-case GestureState.Changed:
-	image.TransformPreview(compositeGestureEvent.TotalScale, compositionGestureEvent.TotalRotation);
-	break;
-case GestureState.Ended:
-	image.TransformRealImage(compositeGestureEvent.TotalScale, compositionGestureEvent.TotalRotation);
-	break;
-default:
-	break;
+	quebrar;
+caso GestureState. Alterado:
+	image.TransformPreview (compositeGestureEvent.TotalScale, composiçãoGestureEvent.TotalRotation);
+	quebrar;
+caso GestureState. Fim:
+	image.TransformReal (Imagem compostaGestureEvent.TotalScale, composiçãoGestureEvent.TotalRotation);
+	quebrar;
+padrão:
+	quebrar;
 }
 ```
 
-## See also
+## Ver também
 
-* [Pointers](pointers.md)
-* [Virtual buttons](virtual-buttons.md)
-* [Input overview](index.md)
+* [Pontos](pointers.md)
+* [Botões virtuais](virtual-buttons.md)
+* [Visão geral da entrada](index.md)

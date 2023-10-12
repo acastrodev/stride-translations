@@ -1,124 +1,124 @@
-# Textures and render textures
+# Texturas e texturas de renderização
 
-<span class="badge text-bg-primary">Advanced</span>
-<span class="badge text-bg-success">Programmer</span>
+<x1\/> Avançado <x2\/>
+<x3\/> Programador <x4\/>
 
-Stride uses the @'Stride.Graphics.Texture' class to interact with texture objects in code.
+Stride usa o @'Stride.Graphics. Classe Texture para interagir com objetos de textura em código.
 
-For more information about rendering to a texture, see [Render textures](../graphics-compositor/render-textures.md).
+Para obter mais informações sobre renderização a uma textura, consulte as texturas [Render](../graphics-compositor/render-textures.md).
 
-## Load a texture
+## Carregar uma textura
 
-To load a texture from an asset in Stride, call this function:
+Para carregar uma textura de um ativo em Stride, chame esta função:
 
 ```cs
-// loads the texture called duck.dds (or .png etc.)
+\/\/ carrega a textura chamada pato.dds (ou .png etc.)
 var myTexture = Content.Load<Texture>("duck");
 ```
 
-This automatically generates a texture object with all its fields correctly filled.
+Isso gera automaticamente um objeto de textura com todos os seus campos corretamente preenchidos.
 
-## Create a texture
+## Criar uma textura
 
-You can also create textures without any assets (eg to be used as render target). To do this, call the constructor of the @'Stride.Graphics.Texture' class. See the @'Stride.Graphics.Texture' class reference to get the full list of available options and parameters. Some texture formats might not be available on all platforms.
+Você também pode criar texturas sem quaisquer ativos (por exemplo, para ser usado como destino de renderização). Para fazer isso, chame o construtor do @'Stride. Graphics.Texture' class. Veja o @'Stride.Graphics. Referência de classe Texture para obter a lista completa de opções e parâmetros disponíveis. Alguns formatos de textura podem não estar disponíveis em todas as plataformas.
 
-### Code: Create a texture
+### Código: Criar uma textura
 
 ```cs
-var myTexture = Texture.New2D(GraphicsDevice, 512, 512, false, PixelFormat.R8G8B8A8_UNorm, TextureFlags.ShaderResource);
+var myTexture = Texture.New2D (GraphicsDevice, 512, 512, false, PixelFormat. R8G8B8A8_UNorm, TextureFlags.ShaderResource);
 ```
 
-## Render textures
+## Render texturas
 
-### Create a render target
+### Criar um alvo de renderização
 
-The @'Stride.Graphics.GraphicsPresenter' class always provides a default render target and a depth buffer. They are accessible through the @'Stride.Graphics.GraphicsPresenter.BackBuffer' and @'Stride.Graphics.GraphicsPresenter.DepthStencilBuffer' properties. The presenter is exposed by the @'Stride.Graphics.GraphicsDevice.Presenter' property of the @'Stride.Graphics.GraphicsDevice'. However, you might want to use your own buffer to perform off-screen rendering or post-processes. As a result, Stride offers a simple way to create textures that can act as render textures and a depth buffers.
+A classe @'Stride.Graphics.GraphicsPresenter' sempre fornece um alvo de renderização padrão e um buffer de profundidade. Eles são acessíveis através do @'Stride.Graphics.GraphicsPresenter.BackBuffer' e @'Stride.Graphics.GraphicsPresenter.DepthStencilBuffer' propriedades. O apresentador é exposto pelo @'Stride.Graphics.GraphicsDevice.Presenter' propriedade do @'Stride.Graphics.GraphicsDevice'. No entanto, você pode querer usar seu próprio buffer para executar renderização off-screen ou pós-processos. Como resultado, Stride oferece uma maneira simples de criar texturas que podem atuar como render texturas e um buffer de profundidade.
 
-### Code: Create a custom render target and depth buffer
+### Código: Criar um buffer de destino de renderização personalizado e profundidade
 
 ```cs
-// render target
-var myRenderTarget = Texture.New2D(GraphicsDevice, 512, 512, false, PixelFormat.R8G8B8A8_UNorm, TextureFlags.ShaderResource | TextureFlags.RenderTarget);
+\/\/ renderizar alvo
+var myRenderTarget = Texture.New2D (GraphicsDevice, 512, 512, false, PixelFormat. R8G8B8A8_UNorm, TextureFlags.ShaderResource | TextureFlags.RenderTarget);
  
-// writable depth buffer
-var myDepthBuffer = Texture.New2D(GraphicsDevice, 512, 512, false, PixelFormat.D16_UNorm, TextureFlags.DepthStencil);
+\/\/ buffer de profundidade estável
+var myDepthBuffer = Texture.New2D (GraphicsDevice, 512, 512, false, PixelFormat.D16_UNorm, TextureFlags.DepthStencil);
 ```
 
-> [!Note]
-> Don't forget the flag @'Stride.Graphics.TextureFlags.RenderTarget' to enable the render target behavior.
+> <x1\/>!Note<x2\/>
+> Não se esqueça da bandeira @'Stride.Graphics.TextureFlags.RenderTarget' para ativar o comportamento do alvo de renderização.
 >
-> Make sure the PixelFormat is correct, especially for the depth buffer. Be careful of the available formats on the target platform.
+> Certifique-se de que o PixelFormat está correto, especialmente para o buffer de profundidade. Tenha cuidado com os formatos disponíveis na plataforma de destino.
 
-### Use a render target
+### Use um alvo de renderização
 
-Once these buffers are created, you can can easily set them as current render textures.
+Uma vez que esses buffers são criados, você pode facilmente configurá-los como texturas de renderização atuais.
 
-### Code: Use a render target
+### Código: Use um alvo de renderização
 
 ```cs
-// settings the render textures
-CommandList.SetRenderTargetAndViewport(myDepthBuffer, myRenderTarget);
+\/\/ configura as texturas de renderização
+CommandList.SetRenderTargetAndViewport (myDepthBuffer, myRenderTarget);
  
-// setting the default render target
-CommandList.SetRenderTargetAndViewport(GraphicsDevice.Presenter.DepthStencilBuffer, GraphicsDevice.Presenter.BackBuffer);
+\/\/ definir o destino de renderização padrão
+CommandList.SetRenderTargetAndViewport (GraphicsDevice.Presenter.DepthStencilBuffer, GraphicsDevice.Presenter.BackBuffer);
 ```
 
-> [!Note]
-> Make sure both the render target and the depth buffer have the same size. Otherwise, the depth buffer isn't used.
+> <x1\/>!Note<x2\/>
+> Certifique-se de que o alvo de renderização e o buffer de profundidade têm o mesmo tamanho. Caso contrário, o buffer de profundidade não é usado.
 
-You can set multiple render textures at the same time. See the overloads of @'Stride.Graphics.CommandList.SetRenderTargets(Stride.Graphics.Texture,Stride.Graphics.Texture[])' and @'Stride.Graphics.CommandList.SetRenderTargetsAndViewport(Stride.Graphics.Texture,Stride.Graphics.Texture[])' method.
+Você pode definir várias texturas de renderização ao mesmo tempo. Veja as sobrecargas de @'Stride.Graphics.CommandList.SetRenderTargets(Stride.Graphics.Texture,Stride.Graphics.Texture<x1\/>x2\/>)' e @'Stride.Graphics.CommandList.SetRenderTargetsAndViewrature(Stride.<x2\/><x3\/><x4\/>
 
-> [!Note]
-> Only the @'Stride.Graphics.GraphicsPresenter.BackBuffer' is displayed on screen, so you need to render it to display something.
+> <x1\/>!Note<x2\/>
+> Apenas o @'Stride.Graphics.GraphicsPresenter.BackBuffer' é exibido na tela, então você precisa renderizá-lo para exibir algo.
 
-### Clear a render target
+### Limpar um alvo de renderização
 
-To clear render textures, call the @'Stride.Graphics.CommandList.Clear(Stride.Graphics.Texture,Stride.Core.Mathematics.Color4)' and @'Stride.Graphics.CommandList.Clear(Stride.Graphics.Texture,Stride.Graphics.DepthStencilClearOptions,System.Single,System.Byte)' methods.
+Para limpar texturas de renderização, ligue para o @'Stride.Graphics.CommandList.Clear (Stride.Graphics.Texture,Stride.Core.Mathematics.Color4)' e @'Stride.Graphics.CommandList.Clear(Stride.Graphics.Texture,Stride.Graphleics.
 
-### Code: Clear the targets
+### Código: Limpar os alvos
 
 ```cs
-CommandList.Clear(GraphicsDevice.Presenter.BackBuffer, Color.Black);
-CommandList.Clear(GraphicsDevice.Presenter.DepthStencilBuffer, DepthStencilClearOptions.DepthBuffer); // only clear the depth buffer
+CommandList.Clear (GraphicsDevice.Presenter.BackBuffer, Color.Black);
+CommandList.Clear(GraphicsDevice.Presenter.DepthStencilBuffer, DepthStencilClearOptions.DepthBuffer); \/\/ apenas limpar o buffer de profundidade
 ```
 
-> [!Note]
-> Don't forget to clear the @'Stride.Graphics.GraphicsPresenter.BackBuffer' and the @'Stride.Graphics.GraphicsPresenter.DepthStencilBuffer' each frame. If you don't, you might get unexpected behavior depending on the device. If you want to keep the contents of a frame, use an intermediate render target.
+> <x1\/>!Note<x2\/>
+> Não se esqueça de limpar o @'Stride.Graphics.GraphicsPresenter.BackBuffer' e o @'Stride.Graphics.GraphicsPresenter.DepthStencilBuffer' cada quadro. Se você não o fizer, você pode ter comportamento inesperado dependendo do dispositivo. Se você quiser manter o conteúdo de um quadro, use um destino de renderização intermediário.
 
 ## Viewport
 
-@'Stride.Graphics.CommandList.SetRenderTargetAndViewport(Stride.Graphics.Texture,Stride.Graphics.Texture)' adjusts the current @'Stride.Graphics.Viewport' to the full size of the render target.
+@'Stride.Graphics.CommandList.SetRenderTargetAndViewport (Stride.Graphics.Texture,Stride.Graphics.Texture)' ajusta a atual @'Stride. Gráficos. Viewport' para o tamanho completo do alvo de renderização.
 
-If you only want to render to a subset of the texture, set the render target and viewport separately using @'Stride.Graphics.CommandList.SetRenderTarget(Stride.Graphics.Texture,Stride.Graphics.Texture)' and @'Stride.Graphics.CommandList.SetViewport(Stride.Graphics.Viewport)'.
+Se você quiser apenas renderizar para um subconjunto da textura, defina o alvo de renderização e o viewport separadamente usando @'Stride.Graphics.CommandList.SetRenderTarget (Stride.Graphics.Texture,Stride.Graphics.Texture)' e @'Stride.Graphics.CommandList.SetView(Stport.Graport.
 
-You can bind multiple viewports using @'Stride.Graphics.CommandList.SetViewports(Stride.Graphics.Viewport[])' and @'Stride.Graphics.CommandList.SetViewports(System.Int32,Stride.Graphics.Viewport[])' overloads for use with a geometry shader.
+Você pode ligar vários viewports usando @'Stride.Graphics.CommandList.SetViewports (Stride.Graphics.Viewport<x1\/><x2\/>)' e @'Stride.Graphics.CommandList.SetViewports(System.Int32,Stride.Graphics.Viewport<x3\/>r.<x4\/>
 
-### Code: Set the viewports
+### Código: Defina os viewports
 
 ```cs
-// example of a full HD buffer
-CommandList.SetRenderTarget(GraphicsDevice.Presenter.DepthStencilBuffer, GraphicsDevice.Presenter.BackBuffer); // no viewport set
+\/\/ exemplo de um buffer HD completo
+CommandList.SetRenderTarget (GraphicsDevice.Presenter.DepthStencilBuffer, GraphicsDevice.Presenter.BackBuffer); \/\/ nenhum conjunto de viewport
  
-// example of setting the viewport to have a 10-pixel border around the image in a full HD buffer (1920x1080)
-var viewport = new Viewport(10, 10, 1900, 1060);
+\/\/ exemplo de definir o viewport para ter uma borda de 10 pixels em torno da imagem em um buffer HD completo (1920x1080)
+var viewport = novo Viewport(10, 10, 1900, 1060);
 CommandList.SetViewport(viewport);
 ```
 
-## Scissor
+## Tesoura
 
-The @'Stride.Graphics.CommandList.SetScissorRectangle(Stride.Core.Mathematics.Rectangle)' and @'Stride.Graphics.CommandList.SetScissorRectangles(Stride.Core.Mathematics.Rectangle[])' methods set the scissors. Unlike the viewport, you need to provide the coordinates of the location of the vertices defining the scissor instead of its size.
+O @'Stride.Graphics.CommandList.SetScissorRectangle (Stride.Core.Mathematics.Rectangle)' e @'Stride.Graphics.CommandList.SetScisorRectangles(Stride.Core.Mathematics.Rectangle<x1\/><x2\/>) define os métodos do sc. Ao contrário do viewport, você precisa fornecer as coordenadas da localização dos vértices que definem a tesoura em vez de seu tamanho.
 
-### Code: Set the scissor
+### Código: Defina a tesoura
 
 ```cs
-// example of setting the scissor to crop the image by 10 pixel around it in a full hd buffer (1920x1080)
-var rectangle = new Rectangle(10, 10, 1910, 1070);
-CommandList.SetScissorRectangles(rectangle);
+\/\/ exemplo de definir a tesoura para cortar a imagem por 10 pixels ao seu redor em um buffer de hd completo (1920x1080)
+var retângulo = novo retângulo (10, 10, 1910, 1070);
+CommandList.SetScissorRectangles (retângulo);
  
 var rectangles = new[] { new Rectangle(10, 10, 1900, 1060), new Rectangle(0, 0, 256, 256) };
-CommandList.SetScissorRectangles(rectangles);
+CommandList.SetScissorRectangles (retângulos);
 ```
 
-## See also
+## Ver também
 
-* [Render textures](../graphics-compositor/render-textures.md)
+* [Render texturas](../graphics-compositor/render-textures.md)

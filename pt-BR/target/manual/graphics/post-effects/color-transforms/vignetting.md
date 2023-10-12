@@ -1,28 +1,28 @@
-# Vignetting
+# Vignetação
 
-<span class="badge text-bg-primary">Beginner</span>
-<span class="badge text-bg-success">Artist</span>
-<span class="badge text-bg-success">Programmer</span>
+<x1\/>Introdução<x2\/>
+<x3\/>Artista <x4\/>
+<x5\/> Programador <x6\/>
 
-The **vignetting** effect darkens the angles or the borders of an image.
+O efeito **vignetting** escurece os ângulos ou as bordas de uma imagem.
 
-![media/8327874146_c17f7e2c94_m.jpg](media/8327874146_c17f7e2c94_m.jpg)
+<x1\/>media\/8327874146_c17f7e2c94_m.jpg<x2\/>
 
-This is an artifact appears with real-world cameras. You can use it in your game to change the mood of the scene or focus on the center of the image.
+Este é um artefato aparece com câmeras do mundo real. Você pode usá-lo em seu jogo para mudar o humor da cena ou focar no centro da imagem.
 
-![media/vignetting-2.png](media/vignetting-2.png)
+<x1\/>media\/vignetting-2.png<x2\/>
 
-## Properties
+## Propriedades
 
-| Property | Description |
+| Propriedade | Descrição |
 | -------- | ------------------
-| Amount | Amount/strength of the effect |
-| Radius | Radius of the vignette from the center of the screen. A low value thickens the makes border and narrows the central space |
-| Color | The vignette color |
+| Montante | Montante\/força do efeito |
+| Radius | Radius do vignette do centro da tela. Um baixo valor engrossa a fronteira e estreita o espaço central |
+| Cor | A cor vignette |
 
-## See also
+## Ver também
 
-* [Film grain](film-grain.md)
-* [Gamma correction](gamma-correction.md)
+* [Grão de filme](film-grain.md)
+* [Correção de gama](gamma-correction.md)
 * [ToneMap](tonemap.md)
-* [Custom color transforms](custom-color-transforms.md)
+* [Transformações de cor personalizadas](custom-color-transforms.md)

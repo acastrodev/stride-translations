@@ -1,97 +1,97 @@
-# Clear-coat shading
+# Sombreamento de capa clara
 
-<span class="badge text-bg-primary">Intermediate</span>
-<span class="badge text-bg-success">Artist</span>
-<span class="badge text-bg-success">Programmer</span>
+<x1\/> Intermediário <x2\/>
+<x3\/>Artista <x4\/>
+<x5\/> Programador <x6\/>
 
-**Clear-coat shading** uses physically-based rendering to simulate vehicle paint.
+**Clear-coat shading** usa renderização física para simular a pintura do veículo.
 
-![Clear coat](media/clear-coat-2.jpg)
+<x1\/> Revestimento da orelha<x2\/>
 
-Real vehicles typically have three layers of paint applied to the body, as in the diagram below:
+Veículos reais normalmente têm três camadas de tinta aplicada ao corpo, como no diagrama abaixo:
 
-![Diagram](media/paint-layers.png)
+<x1\/>Diagrama <x2\/>
 
-To keep the shading simple, Stride only simulates the **base coat** (including optional metal flakes) and **clear coat** layers. Stride blends the layers depending on how far the camera is from the material. This reduces visual artifacts caused by the metal flake normal map (which becomes more visible as the camera moves away from the material).
+Para manter a sombreamento simples, Stride apenas simula as camadas **base coat** (incluindo flocos de metal opcionais) e **clear coat**. Stride combina as camadas dependendo de quão longe a câmera é do material. Isso reduz os artefatos visuais causados pelo mapa normal do floco de metal (que se torna mais visível à medida que a câmera se afasta do material).
 
-Clear-coat shading has several advantages over creating the effect manually with [material layers](material-layers.md):
+A sombreamento de capa clara tem várias vantagens sobre a criação do efeito manualmente com camadas de material [](material-layers.md):
 
-* layers are blended based on distance
-* increased performance
-* improved visualization
+* camadas são misturadas com base na distância
+* aumento do desempenho
+* visualização melhorada
 
-## Add a clear-coat material
+## Adicionar um material de capa clara
 
-Stride includes a clear-coat material template. To add it, in the **Asset View**, click **Add asset** and select **Material > PBR material: clear coat**.
+O Stride inclui um modelo de material de capa clara. Para adicioná-lo, no **Asset View**, clique em **Add asset** e selecione **Material > PBR material: clear coat**.
 
-![Add clear coat](media/add-clear-coat.png)
+<x1\/> Adicionar casaco claro<x2\/>
 
-Alternatively, to set clear-coat properties yourself:
+Alternativamente, para definir propriedades de capa clara:
 
-1. Select the material you want to use clear-coat shading.
+1. Selecione o material que você deseja usar shading de capa clara.
 
-2. In the Property Grid, under the **Misc** properties, next to **Clear coat**, click ![Blue arrow button](~/manual/game-studio/media/blue-arrow-icon.png) (**Replace**) and choose **Clear coat**.
+2. Na Grade de Propriedade, sob as propriedades **Misc**, ao lado de **Clear coat**, clique em <x1\/> Botão de seta azul <x2\/> (** Substituir**) e escolha **Glear coat**.
 
-   ![Select clear coat](media/select-clear-coat.png)
+   <x1\/>Select clear coat<x2\/>
 
-   > [!Note]
-   > For clear-coat shading to work correctly, make sure you enable **Diffuse**, **Specular** and **Specular model** under the material **Shading** properties.
+   > <x1\/>!Note<x2\/>
+   > Para a formação de capa clara para funcionar corretamente, certifique-se de **Diffuse**, **Specular** e **Specular model** sob o material **Shading** Propriedades.
 
-   > ![Shading options](media/enable-shading-options.png)
+   > <x1\/>Shading options<x2\/>
 
-## Properties
+## Propriedades
 
-You can access the clear-coat shader properties under **Misc > Clear coat**. They're split into three parts: the **base paint** and optional **metal flake** properties simulate the base coat, and the **clear coat** properties simulate the clear coat.
+Você pode acessar as propriedades do shader de capa clara sob **Misc > Casaco claro **. Eles são divididos em três partes: as propriedades **base paint** e opcional **metal flake** simulam o revestimento básico, e as propriedades **clear coat**G4> simulam o revestimento claro.
 
-The metal flake properties simulate a metallic paint effect. To disable the effect, remove the metal flake normal map.
+As propriedades de floco de metal simulam um efeito de pintura metálico. Para desativar o efeito, remova o mapa normal do floco de metal.
 
-![Add clear coat](media/clear-coat-properties.png)
+<x1\/> Adicionar casaco claro<x2\/>
 
-| Property | Description |
+| Propriedade | Descrição |
 |------------------------------|----------
-| Base paint diffuse map | The [diffuse map](shading-attributes.md) used by the base paint layer (the lowest  layer). This determines the color of the layer. |
-| Base paint gloss map | The [gloss map](geometry-attributes.md) used by the base paint layer. For a coherent result, use the **metal flake normal map** as a mask. |
-| Metal flakes diffuse map | The [diffuse map](shading-attributes.md) used by the metal flake layer (the layer above the base paint). For a coherent result, use a value close to the base paint value. |
-| Metal flakes gloss map | The [gloss map](geometry-attributes.md) used by the metal flake layer. For a coherent result, use the **metal flake normal map** as a mask. |
-| Metal flakes metalness map | The [metalness map](shading-attributes.md) used by the metal flake layer. For best results, use high values. |
-| Metal flake normal map | The [normal map](../textures/normal-maps.md) used by the metal flake layer. This shapes the flake geometry. A metal flake normal map  (**StrideClearCoatMetalFlakesNM**) is included in the Stride assets package. If the texture has a high UV scale, enable **Use random texture coordinates** below to reduce tiling effects. To disable the metal flakes effect, remove the normal map. |
-| Coat gloss map | The [gloss map](geometry-attributes.md) used by the clear coat layer. Change this value to simulate different kinds of paint (eg matte). |
-| Clear coat metalness map | The [metalness map](shading-attributes.md) used by the clear coat layer |
-| Orange peel normal map | The [normal map](../textures/normal-maps.md) used by the clear coat layer to create an "orange peel" effect. This reflects light in different angles, simulating paint imperfections whereby the texture appears bumpy, like the skin of an orange. An orange peel normal map (**StrideClearCoatOrangePeelNM**) is included in the Stride assets package. |
-| Layer transition distance | The distance (in meters) at which the base paint layer transitions to the metal flake layer. This helps fight visual artifacts caused by the metal flake normal map (which becomes more visible as the camera moves away from the material). |
+| Pintura base mapa difuso | O [diffuse map](shading-attributes.md) usado pela camada de tinta base (a camada mais baixa). Isso determina a cor da camada. |
+| Mapa de brilho de tinta base | O [gloss map](geometry-attributes.md) usado pela camada de tinta base. Para um resultado coerente, use o **metal flake normal map** como uma máscara. |
+| Mapa difuso de flocos de metal | O [diffuse map](shading-attributes.md) usado pela camada de floco de metal (a camada acima da tinta de base). Para um resultado coerente, use um valor próximo ao valor de tinta base. |
+| Mapa de brilho de flocos de metal | O mapa [gloss](geometry-attributes.md) usado pela camada de floco de metal. Para um resultado coerente, use o **metal flake normal map** como uma máscara. |
+| Mapa de metalização de flocos de metal | O mapa [metalness](shading-attributes.md) usado pela camada de floco de metal. Para melhores resultados, use valores elevados. |
+| Mapa normal do floco de metal | O mapa [normal](../textures/normal-maps.md) usado pela camada de floco de metal. Isso molda a geometria do floco. Um mapa normal do floco de metal (**StrideClearCoatMetalFlakesNM**) está incluído no pacote de ativos Stride. Se a textura tem uma escala UV alta, habilite **Use coordenadas de textura aleatórias** abaixo para reduzir os efeitos de nivelamento. Para desativar o efeito de flocos de metal, remova o mapa normal. |
+| Mapa do brilho do revestimento | O [gloss map](geometry-attributes.md) usado pela camada de revestimento clara. Alterar esse valor para simular diferentes tipos de tinta (por exemplo, mate). |
+| Mapa de metalização de revestimento claro | O [metalness map](shading-attributes.md) usado pela camada de revestimento clara |
+| Laranja casca mapa normal | O mapa [normal](../textures/normal-maps.md) usado pela camada de revestimento clara para criar um efeito de casca de laranja. Isso reflete a luz em ângulos diferentes, simulando imperfeições de tinta em que a textura parece chocante, como a pele de uma laranja. Um mapa normal de casca de laranja (**StrideClearCoatOrangePeelNM**) está incluído no pacote de ativos Stride. |
+| Distância de transição de camada | A distância (em metros) em que a camada de tinta base transiciona para a camada de floco de metal. Isso ajuda a combater artefatos visuais causados pelo mapa normal do floco de metal (que se torna mais visível à medida que a câmera se afasta do material). |
 
-## Reduce tiling and artifacts
+## Reduzir o tiling e os artefatos
 
-Properties that use binary operators should use **normalized values** (ie between `0.0` and `1.0`). For example, in the screenshot below, the **left** operator uses a value of `0.5`.
+Propriedades que usam operadores binários devem usar valores **normalizados** (ou seja, entre `0.0` e `1.0`). Por exemplo, na captura de tela abaixo, o operador **left** usa um valor de `0.5`.
 
-![Binary operator](media/clear-coat-binary-operator.png)
+<x1\/> Operador secundário <x2\/>
 
-Values over `1.0` might produce tiling artifacts, as in the image below (note the grid pattern):
+Valores sobre `1.0` podem produzir artefatos de tiling, como na imagem abaixo (note o padrão da grade):
 
-![Artifact](media/clear-coat-artifact1.jpg)
+<x1\/>Artifact<x2\/>
 
-### StrideClearCoatMetalFlakesNM
+### Peças de reposição para máquinas
 
-The metal flakes in the metal flake normal map included in the Stride assets package (**StrideClearCoatMetalFlakesNM**) are quite large. For this reason, we recommend you:
+Os flocos de metal no mapa normal do floco de metal incluídos no pacote de ativos Stride (**StrideClearCoatMetalFlakesNM**) são bastante grandes. Por esta razão, recomendamos:
 
-* use a high **UV scale factor** which tiles the texture (thereby shrinking the flakes)
+* usar um fator de escala **UV de alta ** que telhas a textura (reduzindo assim os flocos)
 
-* enable **Use random texture coordinates**, preventing an obvious tiling effect
+* ** Use coordenadas de textura aleatórias**, impedindo um efeito de tiling óbvio
 
-   ![Use random texture coordinates](media/use-random-texture-coordinates.png)
+   <x1\/>Usar coordenadas de textura aleatória<x2\/>
 
-> [!Note]
-> The **Use random texture coordinates** option is costly, so we don't recommend you use it for mobile platforms.
+> <x1\/>!Note<x2\/>
+> A opção **Usar coordenadas de textura aleatórias** é cara, então não recomendamos que você use para plataformas móveis.
 
-Alternatively, use a normal map with a higher density of smaller metal flakes.
+Alternativamente, use um mapa normal com uma densidade maior de flocos de metal menores.
 
-## See also
+## Ver também
 
-* [Material maps](material-maps.md)
-* [Material attributes](material-attributes.md)
-   * [Geometry attributes](geometry-attributes.md)
-   * [Shading attributes](shading-attributes.md)
-   * [Misc attributes](misc-attributes.md)
-* [Material layers](material-layers.md)
-* [Material slots](material-slots.md)
-* [Materials for developers](materials-for-developers.md)
+* [Mapas de material](material-maps.md)
+* [Atributos de material](material-attributes.md)
+   * [Atributos de geometria](geometry-attributes.md)
+   * [Atributos de Shading](shading-attributes.md)
+   * [Atributos diversos](misc-attributes.md)
+* [Camadas de material](material-layers.md)
+* [Slots de material](material-slots.md)
+* [Materiais para desenvolvedores](materials-for-developers.md)

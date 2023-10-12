@@ -3,97 +3,97 @@
 <body>
 <trans-unit id="tu1" xml:space="preserve">
 <source xml:lang="en">Post effects</source>
-<target xml:lang="pt">Post effects</target>
+<target xml:lang="pt">Efeitos postais</target>
 </trans-unit>
 <trans-unit id="tu2" xml:space="preserve">
 <source xml:lang="en"><g id="1">Post effects</g> are usually applied after your game has completed the rendering of a frame, but before the UI is drawn. You can use post effects to tune or embellish an image — for example, by producing a more natural, realistic look, or creating stylized cinematic effects.</source>
-<target xml:lang="pt"><g id="1">Post effects</g> are usually applied after your game has completed the rendering of a frame, but before the UI is drawn. You can use post effects to tune or embellish an image — for example, by producing a more natural, realistic look, or creating stylized cinematic effects.</target>
+<target xml:lang="pt"><g id="1"> Os efeitos pós</g> são geralmente aplicados após o seu jogo ter completado a renderização de um quadro, mas antes que a interface do usuário seja desenhada. Você pode usar efeitos postais para sintonizar ou embelezar uma imagem — por exemplo, produzindo um olhar mais natural, realista, ou criando efeitos cinematológicos estilizados.</target>
 </trans-unit>
 <trans-unit id="tu3" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>media/post-effects-reference-1.png<x id="2"/></source>
-<target xml:lang="pt"><x id="1"/>media/post-effects-reference-1.png<x id="2"/></target>
+<target xml:lang="pt">&lt;x1\/&gt;media\/post-effects-reference-1.png&lt;x2\/&gt;</target>
 </trans-unit>
 <trans-unit id="tu4" xml:space="preserve">
 <source xml:lang="en">Post effects are usually applied to an image. This means they have no connection with vertices or meshes. They only work with the color values of each pixel (and sometimes their depth).</source>
-<target xml:lang="pt">Post effects are usually applied to an image. This means they have no connection with vertices or meshes. They only work with the color values of each pixel (and sometimes their depth).</target>
+<target xml:lang="pt">Os efeitos postais são geralmente aplicados a uma imagem. Isso significa que eles não têm conexão com vértices ou malhas. Eles só funcionam com os valores de cor de cada pixel (e às vezes sua profundidade).</target>
 </trans-unit>
 <trans-unit id="tu5" xml:space="preserve">
 <source xml:lang="en">Typically, you set up a post effect by specifying:</source>
-<target xml:lang="pt">Typically, you set up a post effect by specifying:</target>
+<target xml:lang="pt">Tipicamente, você configura um efeito de post especificando:</target>
 </trans-unit>
 <trans-unit id="tu6" xml:space="preserve">
 <source xml:lang="en">input buffers (eg color, depth)</source>
-<target xml:lang="pt">input buffers (eg color, depth)</target>
+<target xml:lang="pt">buffers de entrada (por exemplo, cor, profundidade)</target>
 </trans-unit>
 <trans-unit id="tu7" xml:space="preserve">
 <source xml:lang="en">one or several output buffers</source>
-<target xml:lang="pt">one or several output buffers</target>
+<target xml:lang="pt">um ou vários tampões de saída</target>
 </trans-unit>
 <trans-unit id="tu8" xml:space="preserve">
 <source xml:lang="en">parameters to customize the behavior of the post effect during its rendering pass</source>
-<target xml:lang="pt">parameters to customize the behavior of the post effect during its rendering pass</target>
+<target xml:lang="pt">parâmetros para personalizar o comportamento do efeito pós durante o seu passe de renderização</target>
 </trans-unit>
 <trans-unit id="tu9" xml:space="preserve">
 <source xml:lang="en">Stride provides several predefined post effects. You can also <g id="1">extend the system to create your own color transform effects</g>.</source>
-<target xml:lang="pt">Stride provides several predefined post effects. You can also <g id="1">extend the system to create your own color transform effects</g>.</target>
+<target xml:lang="pt">Stride fornece vários efeitos pós predefinidos. Você também pode <g id="1">extender o sistema para criar seus próprios efeitos de transformação de cor</g>.</target>
 </trans-unit>
 <trans-unit id="tu10" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>!Note<x id="2"/>
 Depth-aware post effects ̶  ie <g id="3">depth of field</g>, ambient occlusion, and <g id="4">local reflections</g> ̶  nullify MSAA (multisample anti-aliasing).</source>
-<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
-Depth-aware post effects ̶  ie <g id="3">depth of field</g>, ambient occlusion, and <g id="4">local reflections</g> ̶  nullify MSAA (multisample anti-aliasing).</target>
+<target xml:lang="pt">&lt;x1\/&gt;!Note&lt;x2\/&gt;
+Depth-aware pós efeitos – ie <g id="3">profundidade de campo</g>, oclusão ambiente e <g id="4">reflexões locais</g> – anular MSAA (multisample anti-aliasing).</target>
 </trans-unit>
 <trans-unit id="tu11" xml:space="preserve">
 <source xml:lang="en">Add or edit a post effect</source>
-<target xml:lang="pt">Add or edit a post effect</target>
+<target xml:lang="pt">Adicionar ou editar um efeito pós</target>
 </trans-unit>
 <trans-unit id="tu12" xml:space="preserve">
 <source xml:lang="en">You add and edit post effects in the <g id="1">graphics compositor</g>.</source>
-<target xml:lang="pt">You add and edit post effects in the <g id="1">graphics compositor</g>.</target>
+<target xml:lang="pt">Você adiciona e edita efeitos postais no compositor <g id="1">graphics</g>.</target>
 </trans-unit>
 <trans-unit id="tu13" xml:space="preserve">
 <source xml:lang="en">In the <g id="1">Asset View</g> (in the bottom pane by default), double-click the <g id="2">Graphics Compositor</g> asset.</source>
-<target xml:lang="pt">In the <g id="1">Asset View</g> (in the bottom pane by default), double-click the <g id="2">Graphics Compositor</g> asset.</target>
+<target xml:lang="pt">No <g id="1">Asset View</g> (no painel inferior por padrão), clique duas vezes no <g id="2">Graphics Compositor</g> ativo.</target>
 </trans-unit>
 <trans-unit id="tu14" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Graphics Compositor asset<x id="2"/></source>
-<target xml:lang="pt"><x id="1"/>Graphics Compositor asset<x id="2"/></target>
+<target xml:lang="pt">&lt;x1\/&gt;Gráficos Compositor asset&lt;x2\/&gt;</target>
 </trans-unit>
 <trans-unit id="tu15" xml:space="preserve">
 <source xml:lang="en">The graphics compositor editor opens.</source>
-<target xml:lang="pt">The graphics compositor editor opens.</target>
+<target xml:lang="pt">O editor de compositores gráficos abre.</target>
 </trans-unit>
 <trans-unit id="tu16" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Graphics Compositor editor<x id="2"/></source>
-<target xml:lang="pt"><x id="1"/>Graphics Compositor editor<x id="2"/></target>
+<target xml:lang="pt">&lt;x1\/&gt;Gráfico Compositor editor&lt;x2\/&gt;</target>
 </trans-unit>
 <trans-unit id="tu17" xml:space="preserve">
 <source xml:lang="en">Select the <g id="1">Post-processing effects</g> node.</source>
-<target xml:lang="pt">Select the <g id="1">Post-processing effects</g> node.</target>
+<target xml:lang="pt">Selecione o <g id="1">Efeitos de processamento de pó</g>Nodo&gt;.</target>
 </trans-unit>
 <trans-unit id="tu18" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>!Tip<x id="2"/>
 If there's no post-process effects node, right-click and select <g id="3">Create &gt; post-processing effects</g> to create one. On the new <g id="4">forward renderer</g> node, on the <g id="5">PostEffects</g> slot, click and drag a link to the <g id="6">post-processing effects</g> node.
 <x id="7"/>Connect nodes<x id="8"/></source>
-<target xml:lang="pt"><x id="1"/>!Tip<x id="2"/>
-If there's no post-process effects node, right-click and select <g id="3">Create &gt; post-processing effects</g> to create one. On the new <g id="4">forward renderer</g> node, on the <g id="5">PostEffects</g> slot, click and drag a link to the <g id="6">post-processing effects</g> node.
-<x id="7"/>Connect nodes<x id="8"/></target>
+<target xml:lang="pt">&lt;x1\/&gt;!Tip&lt;x2\/&gt;
+Se não houver nenhum nó de efeitos pós-processo, clique com o botão direito e selecione <g id="3">Create &gt; efeitos pós-processamento</g> para criar um. No novo <g id="4">forward renderer</g> node, no <g id="5">PostEffects</g> slot, clique e arraste um link para o <g id="6"> pós-processamento efeitos</g> node.
+&lt;x3\/&gt;Connect nós&lt;x4\/&gt;</target>
 </trans-unit>
 <trans-unit id="tu19" xml:space="preserve">
 <source xml:lang="en">In the <g id="1">Property Grid</g> (on the right by default), enable the post effects you want to use and configure their properties.</source>
-<target xml:lang="pt">In the <g id="1">Property Grid</g> (on the right by default), enable the post effects you want to use and configure their properties.</target>
+<target xml:lang="pt">No <g id="1">Property Grid</g> (à direita por padrão), ative os efeitos postais que você deseja usar e configurar suas propriedades.</target>
 </trans-unit>
 <trans-unit id="tu20" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Post effect properties<x id="2"/></source>
-<target xml:lang="pt"><x id="1"/>Post effect properties<x id="2"/></target>
+<target xml:lang="pt">&lt;x1\/&gt; Propriedades do efeito pós&lt;x2\/&gt;</target>
 </trans-unit>
 <trans-unit id="tu21" xml:space="preserve">
 <source xml:lang="en">For details about each post effect and its properties, see the pages below.</source>
-<target xml:lang="pt">For details about each post effect and its properties, see the pages below.</target>
+<target xml:lang="pt">Para obter detalhes sobre cada efeito post e suas propriedades, consulte as páginas abaixo.</target>
 </trans-unit>
 <trans-unit id="tu22" xml:space="preserve">
 <source xml:lang="en">In this section</source>
-<target xml:lang="pt">In this section</target>
+<target xml:lang="pt">Nesta secção</target>
 </trans-unit>
 <trans-unit id="tu23" xml:space="preserve">
 <source xml:lang="en"><g id="1">Anti-aliasing</g></source>
@@ -101,35 +101,35 @@ If there's no post-process effects node, right-click and select <g id="3">Create
 </trans-unit>
 <trans-unit id="tu24" xml:space="preserve">
 <source xml:lang="en"><g id="1">Fog</g></source>
-<target xml:lang="pt"><g id="1">Fog</g></target>
+<target xml:lang="pt"><g id="1">Fogão</g></target>
 </trans-unit>
 <trans-unit id="tu25" xml:space="preserve">
 <source xml:lang="en"><g id="1">Outline</g></source>
-<target xml:lang="pt"><g id="1">Outline</g></target>
+<target xml:lang="pt"><g id="1">Linha de produção</g></target>
 </trans-unit>
 <trans-unit id="tu26" xml:space="preserve">
 <source xml:lang="en"><g id="1">Ambient occlusion</g></source>
-<target xml:lang="pt"><g id="1">Ambient occlusion</g></target>
+<target xml:lang="pt"><g id="1">Oclusão ambiente</g></target>
 </trans-unit>
 <trans-unit id="tu27" xml:space="preserve">
 <source xml:lang="en"><g id="1">Bloom</g></source>
-<target xml:lang="pt"><g id="1">Bloom</g></target>
+<target xml:lang="pt"><g id="1">Floresce</g></target>
 </trans-unit>
 <trans-unit id="tu28" xml:space="preserve">
 <source xml:lang="en"><g id="1">Bright filter</g></source>
-<target xml:lang="pt"><g id="1">Bright filter</g></target>
+<target xml:lang="pt"><g id="1">Filtro brilhante</g></target>
 </trans-unit>
 <trans-unit id="tu29" xml:space="preserve">
 <source xml:lang="en"><g id="1">Color transforms</g></source>
-<target xml:lang="pt"><g id="1">Color transforms</g></target>
+<target xml:lang="pt"><g id="1">Transformações de cor</g></target>
 </trans-unit>
 <trans-unit id="tu30" xml:space="preserve">
 <source xml:lang="en"><g id="1">Film grain</g></source>
-<target xml:lang="pt"><g id="1">Film grain</g></target>
+<target xml:lang="pt"><g id="1">Grão de filme</g></target>
 </trans-unit>
 <trans-unit id="tu31" xml:space="preserve">
 <source xml:lang="en"><g id="1">Gamma correction</g></source>
-<target xml:lang="pt"><g id="1">Gamma correction</g></target>
+<target xml:lang="pt"><g id="1">Correção de gama</g></target>
 </trans-unit>
 <trans-unit id="tu32" xml:space="preserve">
 <source xml:lang="en"><g id="1">ToneMap</g></source>
@@ -137,35 +137,35 @@ If there's no post-process effects node, right-click and select <g id="3">Create
 </trans-unit>
 <trans-unit id="tu33" xml:space="preserve">
 <source xml:lang="en"><g id="1">Vignetting</g></source>
-<target xml:lang="pt"><g id="1">Vignetting</g></target>
+<target xml:lang="pt"><g id="1">Vignetação</g></target>
 </trans-unit>
 <trans-unit id="tu34" xml:space="preserve">
 <source xml:lang="en"><g id="1">Custom color transforms</g></source>
-<target xml:lang="pt"><g id="1">Custom color transforms</g></target>
+<target xml:lang="pt"><g id="1">Transformações de cor personalizadas</g></target>
 </trans-unit>
 <trans-unit id="tu35" xml:space="preserve">
 <source xml:lang="en"><g id="1">Depth of field</g></source>
-<target xml:lang="pt"><g id="1">Depth of field</g></target>
+<target xml:lang="pt"><g id="1">Profundidade de campo</g></target>
 </trans-unit>
 <trans-unit id="tu36" xml:space="preserve">
 <source xml:lang="en"><g id="1">Lens flare</g></source>
-<target xml:lang="pt"><g id="1">Lens flare</g></target>
+<target xml:lang="pt"><g id="1">Flare de lente</g></target>
 </trans-unit>
 <trans-unit id="tu37" xml:space="preserve">
 <source xml:lang="en"><g id="1">Light streaks</g></source>
-<target xml:lang="pt"><g id="1">Light streaks</g></target>
+<target xml:lang="pt"><g id="1">Estrefas de luz</g></target>
 </trans-unit>
 <trans-unit id="tu38" xml:space="preserve">
 <source xml:lang="en"><g id="1">Local reflections</g></source>
-<target xml:lang="pt"><g id="1">Local reflections</g></target>
+<target xml:lang="pt"><g id="1">Reflexões locais</g></target>
 </trans-unit>
 <trans-unit id="tu39" xml:space="preserve">
 <source xml:lang="en">See also</source>
-<target xml:lang="pt">See also</target>
+<target xml:lang="pt">Ver também</target>
 </trans-unit>
 <trans-unit id="tu40" xml:space="preserve">
 <source xml:lang="en"><g id="1">Graphics compositor</g></source>
-<target xml:lang="pt"><g id="1">Graphics compositor</g></target>
+<target xml:lang="pt"><g id="1">Compositor gráfico</g></target>
 </trans-unit>
 </body>
 </file>

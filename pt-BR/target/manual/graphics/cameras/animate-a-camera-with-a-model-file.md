@@ -1,147 +1,147 @@
-# Animate a camera with a model file
+# Animar uma câmera com um arquivo modelo
 
-<span class="badge text-bg-primary">Beginner</span>
-<span class="badge text-bg-success">Artist</span>
+<x1\/>Introdução<x2\/>
+<x3\/>Artista <x4\/>
 
-Like other entities, you can [animate](../../animation/index.md) cameras using animations imported from 3D model files such as `.3ds`, `.fbx`, and `.obj`.
+Como outras entidades, você pode [animate](../../animation/index.md) câmeras usando animações importadas de arquivos de modelos 3D como `.3ds`, `.fbx`, e `.obj`.
 
-> [!Note]
-> To animate a camera using a model file, you first need to bake the animation using your modeling tool (eg Maya, 3ds Max or Blender).
-> Stride doesn't support cameras animated using target cameras.
+> <x1\/>!Note<x2\/>
+> Para animar uma câmera usando um arquivo de modelo, você primeiro precisa assar a animação usando sua ferramenta de modelagem (por exemplo, Maya, 3ds Max ou Blender).
+> Stride não suporta câmeras animadas usando câmeras de destino.
 
-If the camera moves independently, the simplest method is to export the camera animation as a separate file, enable the **root motion** option on the animation, then add the camera, animation, and animation script to the same entity. If the animations include FOV or near or far plane animations, the Stride camera updates accordingly. With this method, you don't need a model or a skeleton.
+Se a câmera se mover de forma independente, o método mais simples é exportar a animação da câmera como um arquivo separado, ativar a opção **root motion** na animação, em seguida, adicionar a câmera, animação e script de animação para a mesma entidade. Se as animações incluir FOV ou animações de plano próximo ou distante, a câmera Stride atualiza de acordo. Com este método, você não precisa de um modelo ou um esqueleto.
 
-If you want the camera to move in tandem with another animation — for example, if the camera is held by a cameraman character with its own model, skeleton and animation — use a [model node link](../../animation/model-node-links.md) component to link the camera entity to the cameraman's movements.
+Se você quiser que a câmera se mova em conjunto com outra animação — por exemplo, se a câmera é mantida por um personagem do cameraman com seu próprio modelo, esqueleto e animação — use um componente [model node link](../../animation/model-node-links.md) para ligar a entidade da câmera aos movimentos do cameraman.
 
-## Animate a camera independently
+## Animar uma câmera de forma independente
 
-To do this, you need the following assets in your project:
+Para fazer isso, você precisa dos seguintes ativos em seu projeto:
 
-* a [camera entity](../index.md), the camera to be animated
-* an [animation](../../animation/import-animations.md), to animate the camera (exported separately in your modeling tool)
-* an [animation script](../../animation/animation-scripts.md), to play the animation
+* a [camera entidade](../index.md), a câmera a ser animada
+* um [animation](../../animation/import-animations.md), para animar a câmera (exportada separadamente em sua ferramenta de modelagem)
+* um script [animation](../../animation/animation-scripts.md), para reproduzir a animação
 
-1. In the **Asset View**, select the animation asset you want to use to animate the camera.
+1. No **Asset View**, selecione o ativo de animação que deseja usar para animar a câmera.
 
-   ![Select animation asset](media/select-animation1.png)
+   <x1\/>Selecione a animação comoset<x2\/>
 
-   > [!Note]
-   > For instructions about how import animations, see [Import animations](../../animation/import-animations.md).
+   > <x1\/>!Note<x2\/>
+   > Para obter instruções sobre como animações de importação, consulte [Import animações](../../animation/import-animations.md).
 
-2. In the **Property Grid**, enable **Root motion**.
+2. No **Property Grid**, enable **Root motion**.
 
-   ![Enable root motion](media/enable-root-motion.png)
+   <x1\/> Habilitar movimento root<x2\/>
 
-   When root motion is enabled, Stride applies the **root node animation** to the [TransformComponent](xref:Stride.Engine.TransformComponent) of the entity you add the animation to, instead of applying it to the skeleton.
+   Quando o movimento raiz é ativado, Stride aplica a animação do nó **root** para o [TransformComponent](xref:Stride.Engine.TransformComponent) da entidade que você adiciona a animação, em vez de aplicá-la ao esqueleto.
 
-   > [!Note]
-   > If there is no skeleton specified in **Skeleton**, Stride always applies the animation to [TransformComponent](xref:Stride.Engine.TransformComponent), even if **root motion** is disabled.
+   > <x1\/>!Note<x2\/>
+   > Se não houver nenhum esqueleto especificado em **Skeleton**, Stride sempre aplica a animação a [TransformComponent](xref:Stride.Engine.TransformComponent), mesmo se **root motion** é desativado.
 
-3. In the **Scene Editor**, select the entity that contains the camera you want to animate.
+3. No **Scene Editor**, selecione a entidade que contém a câmera que deseja animar.
 
-   > [!Note]
-   > For instructions about how add cameras, see [Cameras](index.md).
+   > <x1\/>!Note<x2\/>
+   > Para obter instruções sobre como adicionar câmeras, consulte [Cameras](index.md).
 
-4. In the **Property Grid**, click **Add component** and select **Animations**.
+4. No **Property Grid**, clique em **Add component** e selecione **Animações**.
 
-   ![Select an entity](media/add-animations-component-to-camera.png)
+   <x1\/>Selecione uma entidade<x2\/>
 
-   Game Studio adds an animation component to the entity.
+   Game Studio adiciona um componente de animação à entidade.
 
-   ![Animation component](media/animation-component-added-to-camera.png)
+   <x1\/>Animação componente<x2\/>
 
-5. Next to **Animations**, click ![Green plus button](~/manual/game-studio/media/green-plus-icon.png) (**Add**) and type a name.
+5. Ao lado de **Animações**, clique em <x1\/>Verde mais botão<x2\/> (**Add**) e digite um nome.
 
-   ![Add animation](media/animation-name.png)
+   <x1\/> Adicionar animação<x2\/>
 
-   Game Studio adds an animation to the list.
+   Game Studio adiciona uma animação à lista.
 
-   ![Animation added](media/animation-added.png)
+   <x1\/>Animação adicionada <x2\/>
 
-6. Next to the animation you added, click ![Hand icon](~/manual/game-studio/media/hand-icon.png) (**Select an asset**).
+6. Ao lado da animação que você adicionou, clique em <x1\/>Hand icon<x2\/> (**Select an asset**).
 
-   The **Select an asset** window opens.
+   A janela **Selecione um ativo** abre.
 
-   ![Select an asset](media/select-mycamera-animation.png)
+   <x1\/> Selecione um ativo<x2\/>
 
-7. Select the animation you want to use to animate the camera and click **OK**.
+7. Selecione a animação que deseja usar para animar a câmera e clique em **OK**.
 
-8. Click **Add component** and select the animation script you want to use to animate the camera.
+8. Clique em ** Adicionar componente** e selecione o script de animação que você deseja usar para animar a câmera.
 
-   ![Add animation script](media/add-animation-script.png)
+   <x1\/> Adicionar script de animação<x2\/>
 
-   Game Studio adds the script to the entity as a component.
+   Game Studio adiciona o script à entidade como um componente.
 
-   > [!Note]
-   > For instructions about how to add animation scripts, see [Animation scripts](../../animation/animation-scripts.md).
+   > <x1\/>!Note<x2\/>
+   > Para obter instruções sobre como adicionar scripts de animação, consulte scripts [Animation](../../animation/animation-scripts.md).
 
-9. Under the script component, next to **Animations**, click ![Green plus button](~/manual/game-studio/media/green-plus-icon.png) (**Add**).
+9. Sob o componente de script, ao lado de **Animations**, clique em <x1\/>Green plus button<x2\/> (**Add**).
 
-   ![Add animation to the list](../../animation/media/add-animation-to-list.png)
+   <x1\/> Adicionar animação à lista<x2\/>
 
-10. Next to **Clip**, click ![Hand icon](~/manual/game-studio/media/hand-icon.png) (**Select an asset**).
+10. Ao lado de <g id="1">Clip</g>, clique em <x1\/>Hand icon<x2\/>Select an asset</g>).<g id="4">
 
-   The **Select an asset** window opens.
+   A janela **Selecione um ativo** abre.
 
-   ![Select an asset](media/select-mycamera-animation.png)
+   <x1\/> Selecione um ativo<x2\/>
 
-11. Select the animation asset you want to use to animate the camera and click **OK**.
+11. Selecione o ativo de animação que deseja usar para animar a câmera e clique em **OK**.
 
-At runtime, the camera uses the animation. If the animation includes FOV or near or far plane animations, the Stride camera updates accordingly.
+No tempo de execução, a câmera usa a animação. Se a animação incluir FOV ou animações de plano próximo ou distante, a câmera Stride atualiza de acordo.
 
-## Attach the camera to a node on another model
+## Anexar a câmera para um nó em outro modelo
 
-To move a camera in tandem with another model, create a separate entity for the camera, then use a **model node link** component to link the entity to the correct node.
+Para mover uma câmera em conjunto com outro modelo, crie uma entidade separada para a câmera, em seguida, use um componente **model node link** para vincular a entidade ao nó correto.
 
-To do this, you need the following assets in your project:
+Para fazer isso, você precisa dos seguintes ativos em seu projeto:
 
-* a [camera entity](../index.md), the camera you want to animate
-* a [model](../../animation/index.md), to attach the camera to
-* a [skeleton](../../animation/index.md) that matches the model
-* an [animation](../../animation/index.md), to animate the model
-* an [animation script](../../animation/animation-scripts.md), to play the animation
+* a [camera entidade](../index.md), a câmera que você deseja animar
+* a [model](../../animation/index.md), para anexar a câmera
+* a [skeleton](../../animation/index.md) que corresponde ao modelo
+* um [animation](../../animation/index.md), para animar o modelo
+* um script [animation](../../animation/animation-scripts.md), para reproduzir a animação
 
-> [!Note]
-> FOV and near or far plane animations are ignored if you use this method.
+> <x1\/>!Note<x2\/>
+> FOV e animações planas próximas ou distantes são ignoradas se você usar este método.
 
-1. In the **Asset View**, select the model you want to link the camera to. Next to **Skeleton**, make sure a skeleton is specified that matches the model.
+1. No **Asset View**, selecione o modelo ao qual deseja vincular a câmera. Ao lado de **Skeleton**, certifique-se de que um esqueleto é especificado que corresponde ao modelo.
 
-2. Make sure the entity you want to attach the camera to has the model, animation clip, and animation script components needed to animate it.
+2. Certifique-se de que a entidade que você deseja anexar a câmera tem o modelo, clipe de animação e componentes de script de animação necessários para animá-lo.
 
-   > [!Note]
-   > For instructions about how to add these, see [Animation](../../animation/index.md).
+   > <x1\/>!Note<x2\/>
+   > Para obter instruções sobre como adicionar estes, consulte [Animation](../../animation/index.md).
 
-3. With the camera entity selected, in the **Property Grid**, click **Add component** and select **Model node link**.
+3. Com a entidade da câmera selecionada, no **Property Grid**, clique em **Add component** e selecione **Model node link**.
 
-   ![Add component](../../particles/tutorials/media/add-model-node-link.png)
+   <x1\/> Adicionar componente<x2\/>
 
-   > [!Note]
-   > The [TransformComponent](xref:Stride.Engine.TransformComponent) applies an offset to the model node position. If you don't want to add an offset, make sure the [TransformComponent](xref:Stride.Engine.TransformComponent) is set to `0,0,0`.
+   > <x1\/>!Note<x2\/>
+   > O [TransformComponent](xref:Stride.Engine.TransformComponent) aplica um deslocamento para a posição do nó do modelo. Se você não quiser adicionar um deslocamento, certifique-se de que o [TransformComponent](xref:Stride.Engine.TransformComponent) está definido para `0,0,0`.
 
-   Game Studio adds a model link component to the entity.
+   Game Studio adiciona um componente de link modelo para a entidade.
 
-   ![Model node link component](../../animation/media/model-node-component.png)
+   <x1\/>Model nó link componente<x2\/>
 
-4. Next to **Target**, click ![Hand icon](~/manual/game-studio/media/hand-icon.png) and select the entity that has the model you want to link the camera to.
+4. Ao lado de **Target**, clique em <x1\/>Hand icon<x2\/> e selecione a entidade que tem o modelo ao qual você deseja vincular a câmera.
 
-   ![Select an entity](../../animation/media/select-an-entity-window.png)
+   <x1\/>Selecione uma entidade<x2\/>
 
-   Alternatively, leave the **Target** field blank. In the **Entity Tree**, drag the **camera entity** you want to animate to the entity that contains the model. Stride links the entity to the model on the parent entity.
+   Alternativamente, deixe o campo **Target** em branco. No **Entity Tree**, arraste a entidade **camera** que deseja animar para a entidade que contém o modelo. Stride liga a entidade ao modelo na entidade pai.
 
-   ![Parent and child](media/parent-and-child.png)
+   <x1\/>Parent e child<x2\/>
 
-5. In **Node name**, select the node you want to link the camera to.
+5. Em **Node name**, selecione o nó que deseja vincular a câmera.
 
-   ![Node link](media/select-node.png)
+   <x1\/>Node link<x2\/>
 
-   > [!Note]
-   > The entity you link to must have a model with a skeleton, even if the model isn't visible at runtime.
+   > <x1\/>!Note<x2\/>
+   > A entidade que você liga deve ter um modelo com um esqueleto, mesmo que o modelo não seja visível no tempo de execução.
 
-At runtime, the camera uses the animation.
+No tempo de execução, a câmera usa a animação.
 
-## See also
+## Ver também
 
-* [Cameras](index.md)
-* [Model node links](../../animation/model-node-links.md)
-* [Animation](../../animation/index.md)
-* [Animation scripts](../../animation/animation-scripts.md)
+* [Câmeras](index.md)
+* [Modelo de links de nó](../../animation/model-node-links.md)
+* [Animação](../../animation/index.md)
+* [Scripts de animação](../../animation/animation-scripts.md)

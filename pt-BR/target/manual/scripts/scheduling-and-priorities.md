@@ -1,35 +1,35 @@
-# Scheduling and priorities
+# Programação e prioridades
 
-<span class="badge text-bg-primary">Beginner</span>
-<span class="badge text-bg-success">Programmer</span>
+<x1\/>Introdução<x2\/>
+<x3\/> Programador <x4\/>
 
-Stride doesn't run scripts simultaneously; they run one at a time. Where scripts depend on each other, you should make sure they run in the correct order by giving them priorities.
+Stride não executa scripts simultaneamente; eles executam um de cada vez. Onde os scripts dependem uns dos outros, você deve ter certeza de que eles funcionam na ordem correta, dando-lhes prioridades.
 
-Priorities apply to all kinds of scripts. This means that, for example, [synchronous and asynchronous scripts](types-of-script.md) don't have separate priority lists. They both join the same queue.
+Prioridades aplicam-se a todos os tipos de scripts. Isso significa que, por exemplo, [synchronous e assíncronos scripts](types-of-script.md) não têm listas de prioridade separadas. Ambos se juntam à mesma fila.
 
-Scripts with lower priority numbers have higher priorities. For example, a script with priority 1 runs before a script with priority 2, and a script with priority -1 runs before a script with priority 1. By default, scripts have a priority of 0.
+Os scripts com números de prioridade mais baixos têm prioridades mais altas. Por exemplo, um script com prioridade 1 é executado antes de um script com prioridade 2, e um script com prioridade -1 é executado antes de um script com prioridade 1. Por padrão, os scripts têm uma prioridade de 0.
 
-If scripts have the same priority, the order in which Stride runs them isn't deterministic. You might give scripts the same priority if you don't care which order they run in.
+Se os scripts têm a mesma prioridade, a ordem em que Stride os executa não é determinística. Você pode dar scripts a mesma prioridade se você não se importa em qual ordem eles funcionam.
 
-> [!Note]
-> Currently, there's no way to see a list of priorities in one place. You have to set each priority of each script individually in the script component properties.
+> <x1\/>!Note<x2\/>
+> Atualmente, não há como ver uma lista de prioridades em um só lugar. Você tem que definir cada prioridade de cada script individualmente nas propriedades do componente de script.
 
-## Set a script priority
+## Definir uma prioridade de script
 
-Priorities aren't set in the scripts themselves. Instead, they're set in the script component properties on the entity the script is attached to.
+As prioridades não são definidas nos próprios scripts. Em vez disso, eles são definidos nas propriedades do componente de script na entidade a que o script é anexado.
 
-1. Attach the script to an entity. For information about how to do this, see [Use a script](use-a-script.md).
+1. Anexar o script a uma entidade. Para obter informações sobre como fazer isso, veja [Use um script](use-a-script.md).
 
-2. With the entity selected, in the **Property Grid**, under the **script component properties**, set the **Priority** you want the script to have.
+2. Com a entidade selecionada, no **Property Grid**, sob as propriedades do componente **script**, defina o **Priority** você quer que o script tenha.
 
-   ![Set script priority](media/set-script-priority.png)
+   <x1\/>Set script prioridade<x2\/>
 
-## See also
+## Ver também
 
-* [Types of script](types-of-script.md)
-* [Create a script](create-a-script.md)
-* [Use a script](use-a-script.md)
-* [Public properties and fields](public-properties-and-fields.md)
-* [Events](events.md)
-* [Debugging](debugging.md)
-* [Preprocessor variables](preprocessor-variables.md)
+* [Tipos de script](types-of-script.md)
+* [Criar um script](create-a-script.md)
+* [Use um script](use-a-script.md)
+* [Propriedades e campos públicos](public-properties-and-fields.md)
+* [Eventos](events.md)
+* [Depuração](debugging.md)
+* [Variáveis de pré-processamento](preprocessor-variables.md)

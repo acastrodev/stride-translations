@@ -1,144 +1,144 @@
-# Skyboxes and backgrounds
+# Skyboxes e fundos
 
-<span class="badge text-bg-primary">Beginner</span>
-<span class="badge text-bg-success">Designer</span>
-<span class="badge text-bg-success">Programmer</span>
+<x1\/>Introdução<x2\/>
+<x3\/>Designer<x4\/>
+<x5\/> Programador <x6\/>
 
-**Skyboxes** are backgrounds that create the illusion of space and distance. Typical skybox backgrounds include skies, clouds, mountains, and other scenery. As skyboxes are prerendered, they require little GPU and CPU.
+**Skyboxes** são fundos que criam a ilusão de espaço e distância. Os cenários típicos incluem céus, nuvens, montanhas e outras paisagens. Como as caixas de céu são pré-renderizadas, eles exigem pouca GPU e CPU.
 
-You can use **cubemaps** or **360° panoramic textures** as skyboxes. You can also [use them to light the scene](../lights-and-shadows/skybox-lights.md).
+Você pode usar **cubemaps** ou **360° texturas panorâmicas** como skyboxes. Você também pode [usá-los para iluminar a cena](../lights-and-shadows/skybox-lights.md).
 
-> [!Note]
-> Currently, Stride doesn't support skydomes or local skyboxes.
+> <x1\/>!Note<x2\/>
+> Atualmente, Stride não suporta skydomes ou skyboxes locais.
 
-Alternatively, you can display a **2D background**, which is often useful for 2D games.
+Alternativamente, você pode exibir um fundo **2D**, que é frequentemente útil para jogos 2D.
 
-## Cubemaps
+## Produtos de plástico
 
-A **cubemap** is a six-sided texture. When these textures are assembled in a cube around the scene, the cubemap simulates spacious 3D surroundings.
+A **cubemap** é uma textura de seis lados. Quando estas texturas são montadas em um cubo ao redor da cena, o cubemap simula espaçoso ambiente 3D.
 
-![Distant planet skybox](media/cubemap-cross.jpg)
+<x1\/> Desatual planeta skybox<x2\/>
 
-![Merged skybox](media/skybox-assembled.jpg)
+<x1\/>Merged skybox<x2\/>
 
-Currently, Game Studio can't convert image files to cubemaps (`.dds` files). Use another application to create a cubemap from separate image files, such as:
+Atualmente, Game Studio não pode converter arquivos de imagem para cubemaps (`.dds` arquivos). Use outra aplicação para criar um cubemap de arquivos de imagem separados, como:
 
-* [Nvidia conversion tool](https://developer.nvidia.com/nvidia-texture-tools-adobe-photoshop)
-* [ATI conversion tool](http://developer.amd.com/tools-and-sdks/archive/games-cgi/cubemapgen)
+* [Ferramenta de conversão de Nvidia](https://developer.nvidia.com/nvidia-texture-tools-adobe-photoshop)
+* [Ferramenta de conversão ATI](http://developer.amd.com/tools-and-sdks/archive/games-cgi/cubemapgen)
 
-### Create a cubemap in Game Studio
+### Criar um cubemap no Game Studio
 
-You can capture a cubemap from a position in your scene.
+Você pode capturar um cubemap de uma posição em sua cena.
 
-1. In the **scene editor**, position the camera at the point where you want to capture the cubemap. The direction the camera faces doesn't matter, only the position.
+1. No editor **scene**, posicione a câmera no ponto onde você deseja capturar o cubemap. A direção que a câmera enfrenta não importa, apenas a posição.
 
-   Typically, you should capture cubemaps at the center of your scene to create the best all-round view.
+   Tipicamente, você deve capturar cubemaps no centro de sua cena para criar a melhor visão completa.
 
-2. In the scene editor toolbar, open the **Lighting options** menu.
+2. Na barra de ferramentas do editor de cena, abra o menu **Lighting**.
 
-   ![Lighting options](../lights-and-shadows/media/lighting-options-menu.png)
+   <x1\/>Opções de iluminação<x2\/>
 
-3. Under **Cubemap**, click **Generate**.
+3. Sob **Cubemap**, clique em **Generate**.
 
-4. Browse to the location on disk you want to save the cubemap, specify a name, and click **Save**.
+4. Navegue para o local no disco que deseja salvar o cubemap, especifique um nome e clique em **Salve**.
 
-> [!Tip]
-> We recommend you save the cubemap in your project **Resources** folder. For more information, see [Organize your files in version control](../../files-and-folders/version-control.md).
+> <x1\/>!Tip<x2\/>
+> Recomendamos que você salve o cubemap em seu projeto **Resources** pasta. Para obter mais informações, consulte [Organize seus arquivos no controle de versão](../../files-and-folders/version-control.md).
 
-Game Studio creates a cubemap `.dds` file in the location you specified.
+Game Studio cria um arquivo cubemap `.dds` no local especificado.
 
-## 360° panoramic textures
+## 360° texturas panorâmicas
 
-Instead of using a cubemap, you can use a **360° panoramic texture** as a 3D background.
+Em vez de usar um cubemap, você pode usar uma textura panorâmica **360°** como um fundo 3D.
 
-| 360° panorama | Appearance in game |
+| panorama 360° | Aparência no jogo |
 |----------------|-------------
-| ![Panorama texture](media/MyPanorama.jpg) | ![Panorama in game](media/panorama-in-game.jpg) |
-*Image courtesy of [Texturify](http://texturify.com)*
+| <x1\/>Panorama texture<x2\/> | <x1\/>Panorama no jogo<x2\/> |
+*Imagem cortesia de [Texturify](http://texturify.com)*
 
-> [!Note]
-> Remember that [post effects](../post-effects/index.md) affect the appearance of your skybox. If it doesn't look how you expect, try changing your post effect settings.
+> <x1\/>!Note<x2\/>
+> Lembre-se de que os efeitos postais [](../post-effects/index.md) afetam a aparência de sua caixa de céu. Se não olhar como você espera, tente alterar suas configurações de efeito pós.
 
-## Add a cubemap or 360° panoramic texture to the project
+## Adicione um cubemap ou textura panorâmica de 360° ao projeto
 
-You add these like other color textures.
+Você adiciona estes como outras texturas de cor.
 
-* In the **Asset View**, click ![Add asset](../lights-and-shadows/media/engine-skybox-add-new-asset-button.png), select **Textures** > **Color texture**, and browse to the file.
+* No **Asset View**, clique em <x1\/>Add asset<x2\/>, selecione **Textures** > ** Textura de cor** e navegue para o arquivo.
 
-   ![Select texture as asset type](media/engine-skybox-select-asset-type.png)
+   <x1\/>Selecione textura como tipo de ativo<x2\/>
 
-* Alternatively, drag and drop the file from **Windows Explorer** to the **Asset View**, then select **Color texture**.
+* Alternativamente, arraste e solte o arquivo de ** Windows Explorer** para o **Asset View**, em seguida, selecione **Cor textura**.
 
-   ![Drag and drop background texture](media/drag-texture.gif)
+   <x1\/>Drag e drop background texture<x2\/>
 
-### Create a skybox
+### Criar uma caixa de céu
 
-To create a skybox, add a cubemap or 360° panoramic texture to a **background component**.
+Para criar uma caixa de céu, adicione um cubemap ou 360° textura panorâmica a um componente **background**.
 
-Stride includes an entity with a background component in the project by default. Only one background can be active in a scene at a time. If there are multiple backgrounds, Stride only loads the first.
+O Stride inclui uma entidade com um componente de fundo no projeto por padrão. Apenas um fundo pode ser ativo em uma cena de cada vez. Se houver vários fundos, Stride carrega apenas o primeiro.
 
-You can add background components to as many entities as you need. You might want to include more than one background, for example, if you want to switch skyboxes at runtime.
+Você pode adicionar componentes de fundo para quantas entidades precisar. Você pode querer incluir mais de um fundo, por exemplo, se você quiser mudar caixas de céu no tempo de execução.
 
-#### Add a background entity
+#### Adicionar uma entidade de fundo
 
-1. In the **Scene view**, select the entity you want to add the component to.
+1. Na view **Scene**, selecione a entidade a que deseja adicionar o componente.
 
-   This can be an empty entity. Its position in the scene doesn't matter.
+   Isto pode ser uma entidade vazia. Sua posição na cena não importa.
 
-2. In the **Property Grid** (on the right by default), click **Add component** and select **Background**.
+2. No **Property Grid** (à direita por padrão), clique em **Add component** e selecione **Background**.
 
-   ![Add background component](media/engine-skybox-add-background-component.png)
+   <x1\/> Adicionar componente de fundo<x2\/>
 
-3. Under **Texture**, select the cubemap or 360° panoramic texture you want to use in the skybox.
+3. Sob **Textura**, selecione o cubemap ou 360° textura panorâmica que você deseja usar na caixa do céu.
 
-   ![Background component properties](media/engine-skybox-background-component-properties.png)
+   <x1\/> Propriedades do componente de fundo<x2\/>
 
-## Use a skybox as a light source
+## Use uma caixa de céu como uma fonte de luz
 
-You can use a skybox to light the scene. Stride analyzes the skybox texture and generates lighting using [image-based lighting (Wikipedia)](https://en.wikipedia.org/wiki/Image-based_lighting). For more information, see [Skybox lights](../lights-and-shadows/skybox-lights.md).
+Você pode usar uma caixa de céu para iluminar a cena. Stride analisa a textura da caixa do céu e gera iluminação usando iluminação baseada em imagem [ (Wikipedia)](https://en.wikipedia.org/wiki/Image-based_lighting). Para mais informações, consulte [Skybox lights](../lights-and-shadows/skybox-lights.md).
 
-## Change the skybox at runtime
+## Mude a caixa do céu no tempo de execução
 
-The following code changes the cubemap in a background:
+O seguinte código muda o cubemap em um fundo:
 
 ```cs
-public Texture cubemapTexture;
-public void ChangeBackgroundParameters()
-{
-    // Get the background component from an entity
-	var background = directionalLight.Get<BackgroundComponent>();
+public Texture cubemapTextura;
+void público ChangeBackgroundParameters()
+(
+    \/\/ Obter o componente de fundo de uma entidade
+	var background = direcionalLight.Get<BackgroundComponent>();
 
-	// Replace the existing background
-	background.Texture = cubemapTexture;
+	\/\/ Substituir o fundo existente
+	fundo. Textura = cubemapTextura;
 
-	// Change the background intensity
-	background.Intensity = 1.5f;
+	\/\/ Alterar a intensidade de fundo
+	fundo. Intensidade = 1,5f;
 }
 ```
 
-### Convert cubemaps to panoramas and vice versa
+### Converter cubemaps para panoramas e vice-versa
 
-Various tools exist to convert a panoramas to cubemaps and vice versa, including:
+Existem várias ferramentas para converter um panorama para cubemaps e vice-versa, incluindo:
 
-- [Panorama Converter](http://gonchar.me/blog/goncharposts/2150)
-- [Panorama to Cubemap](https://jaxry.github.io/panorama-to-cubemap/)
-- [Convert Cubemap to Equirectangular](https://www.360toolkit.co/convert-cubemap-to-spherical-equirectangular.html)
+- [Conversor de imagens](http://gonchar.me/blog/goncharposts/2150)
+- [Panorama para Cubemap](https://jaxry.github.io/panorama-to-cubemap/)
+- [Converter Cubemap para Equirectangular](https://www.360toolkit.co/convert-cubemap-to-spherical-equirectangular.html)
 
-## Set a 2D background
+## Definir um fundo 2D
 
-Instead of using a 3D skybox, you can display the texture as a static background. This displays the texture as a flat image that stays static no matter how you move the camera. This is often useful for 2D games.
+Em vez de usar uma Skybox 3D, você pode exibir a textura como um fundo estático. Isso exibe a textura como uma imagem plana que permanece estática, não importa como você move a câmera. Isso é muitas vezes útil para jogos 2D.
 
-To do this, in the **Background** component properties, select **2D background**.
+Para fazer isso, no **Background** propriedades do componente, selecione **2D background**.
 
-![Background component properties](media/is-2d.png)
+<x1\/> Propriedades do componente de fundo<x2\/>
 
-If you enable this with a cubemap, Stride uses the first face of the cubemap as the background.
+Se você habilitar isso com um cubemap, Stride usa a primeira face do cubemap como fundo.
 
-## Use a video as a skybox
+## Use um vídeo como uma caixa de céu
 
-For details, see [Videos - Use a video as a skybox](../../video/use-a-video-as-a-skybox.md).
+Para detalhes, veja [Vídeos - Use um vídeo como um skybox](../../video/use-a-video-as-a-skybox.md).
 
-## See also
+## Ver também
 
-* [Skybox lights](../lights-and-shadows/skybox-lights.md)
-* [Lights and shadows](../lights-and-shadows/index.md)
+* [Luzes Skybox](../lights-and-shadows/skybox-lights.md)
+* [Luzes e sombras](../lights-and-shadows/index.md)

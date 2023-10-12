@@ -1,11 +1,11 @@
-# Import sprite sheets
+# Folhas de sprite de importação
 
-<span class="badge text-bg-primary">Beginner</span>
-<span class="badge text-bg-success">Designer</span>
+<x1\/>Introdução<x2\/>
+<x3\/>Designer<x4\/>
 
-You can import sprite sheets (image files containing sprites) just like any other kind of asset.
+Você pode importar folhas de sprite (arquivos de imagem contendo sprites) como qualquer outro tipo de ativo.
 
-1. Drag the sprite sheet file from Explorer to the Game Studio **Asset View**.
+1. Arraste o arquivo de folha sprite do Explorer para o Game Studio **Asset View**.
 
 <p>
     <video autoplay loop class="responsive-video" poster="media/drag-and-drop-sprite-sheet.jpg">
@@ -13,21 +13,21 @@ You can import sprite sheets (image files containing sprites) just like any othe
     </video>
     </p>
 
-   Alternatively, in the **Asset View**, click **Add asset**.
+   Alternativamente, no **Asset View**, clique em **Add asset**.
 
-2. Choose a preset for the sprite sheet.
+2. Escolha uma predefinição para a folha de sprite.
 
-   If you want to use the sprite sheet for UI elements such as menu buttons, select **Sprite sheet - UI sprites**. This lets you set borders for the sprite (see [Set sprite borders](set-sprite-borders.md)). Otherwise, select **Sprite sheet - 2D sprites**.
+   Se você quiser usar a folha de sprite para elementos de interface do usuário, como botões de menu, selecione **Falha privada - UI sprites**. Isso permite definir fronteiras para o sprite (ver [Set sprite border](set-sprite-borders.md)). Caso contrário, selecione **Fabricação prita - 2D sprites**.
 
-   > [!Note]
-   > You can change this any time. For more information, see [Edit sprites](edit-sprites.md).
+   > <x1\/>!Note<x2\/>
+   > Você pode mudar isso a qualquer momento. Para mais informações, consulte [Edit sprites](edit-sprites.md).
 
-   ![Create from file](media/create-and-add-assets-import-directly-from-file.png)
+   <x1\/>Criar do arquivo<x2\/>
 
-   Game Studio adds a sprite sheet asset.
+   Game Studio adiciona um ativo sprite folha.
 
-## See also
+## Ver também
 
-* [Edit sprites](edit-sprites.md)
+* [Editar sprites](edit-sprites.md)
 * [Use sprites](use-sprites.md)
-* [Assets](../game-studio/assets.md)
+* [Activos](../game-studio/assets.md)

@@ -1,532 +1,532 @@
 {
-    "filename": "manual\\graphics\\lights-and-shadows\\shadows.md.xlf",
-    "files": [
-        {
-            "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/lights-and-shadows\/shadows.md": [
-                [
-                    "Shadows",
-                    "",
-                    "Shadows",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/lights-and-shadows\/shadows.md",
-                    {
-                        "id": "tu1"
-                    }
-                ],
-                [
-                    "<x1\/>Beginner<x2\/>",
-                    "",
-                    "<x1\/>Beginner<x2\/>\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/lights-and-shadows\/shadows.md",
-                    {
-                        "id": "tu2"
-                    }
-                ],
-                [
-                    "<x3\/>Designer<x4\/>",
-                    "",
-                    "<x3\/>Designer<x4\/>\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/lights-and-shadows\/shadows.md",
-                    {
-                        "id": "tu2"
-                    }
-                ],
-                [
-                    "<x5\/>Artist<x6\/>",
-                    "",
-                    "<x5\/>Artist<x6\/>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/lights-and-shadows\/shadows.md",
-                    {
-                        "id": "tu2"
-                    }
-                ],
-                [
-                    "Shadows bring significant information and realism to a scene.",
-                    "",
-                    "Shadows bring significant information and realism to a scene.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/lights-and-shadows\/shadows.md",
-                    {
-                        "id": "tu3"
-                    }
-                ],
-                [
-                    "Shadows <g1>off<\/g1>",
-                    "",
-                    "Shadows <g1>off<\/g1>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/lights-and-shadows\/shadows.md",
-                    {
-                        "id": "tu4"
-                    }
-                ],
-                [
-                    "Shadows <g1>on<\/g1>",
-                    "",
-                    "Shadows <g1>on<\/g1>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/lights-and-shadows\/shadows.md",
-                    {
-                        "id": "tu5"
-                    }
-                ],
-                [
-                    "<x1\/>media\/SceneNoShadows.png<x2\/>",
-                    "",
-                    "<x1\/>media\/SceneNoShadows.png<x2\/>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/lights-and-shadows\/shadows.md",
-                    {
-                        "id": "tu6"
-                    }
-                ],
-                [
-                    "<x1\/>media\/SceneWithShadows.png<x2\/>",
-                    "",
-                    "<x1\/>media\/SceneWithShadows.png<x2\/>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/lights-and-shadows\/shadows.md",
-                    {
-                        "id": "tu7"
-                    }
-                ],
-                [
-                    "Only <g1>directional lights<\/g1>, <g2>point lights<\/g2>, and <g3>spot lights<\/g3> can cast shadows.",
-                    "",
-                    "Only <g1>directional lights<\/g1>, <g2>point lights<\/g2>, and <g3>spot lights<\/g3> can cast shadows.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/lights-and-shadows\/shadows.md",
-                    {
-                        "id": "tu8"
-                    }
-                ],
-                [
-                    "Shadow maps",
-                    "",
-                    "Shadow maps",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/lights-and-shadows\/shadows.md",
-                    {
-                        "id": "tu9"
-                    }
-                ],
-                [
-                    "Stride uses <g1>shadow mapping<\/g1> to render shadows.",
-                    "",
-                    "Stride uses <g1>shadow mapping<\/g1> to render shadows.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/lights-and-shadows\/shadows.md",
-                    {
-                        "id": "tu10"
-                    }
-                ],
-                [
-                    "To understand shadow maps, imagine a camera in the center of the sun, so you're looking down from the sun's perspective.",
-                    "",
-                    " To understand shadow maps, imagine a camera in the center of the sun, so you're looking down from the sun's perspective.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/lights-and-shadows\/shadows.md",
-                    {
-                        "id": "tu10"
-                    }
-                ],
-                [
-                    "<x1\/>Light and shadow<x2\/>",
-                    "",
-                    "<x1\/>Light and shadow<x2\/>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/lights-and-shadows\/shadows.md",
-                    {
-                        "id": "tu11"
-                    }
-                ],
-                [
-                    "Everything the sun sees is in light.",
-                    "",
-                    "Everything the sun sees is in light.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/lights-and-shadows\/shadows.md",
-                    {
-                        "id": "tu12"
-                    }
-                ],
-                [
-                    "Everything hidden from the sun (ie behind <g1>occluders<\/g1>) is in shadow.",
-                    "",
-                    " Everything hidden from the sun (ie behind <g1>occluders<\/g1>) is in shadow.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/lights-and-shadows\/shadows.md",
-                    {
-                        "id": "tu12"
-                    }
-                ],
-                [
-                    "From this perspective, Stride creates a <g1>shadow map<\/g1> for each light that casts shadows.",
-                    "",
-                    "From this perspective, Stride creates a <g1>shadow map<\/g1> for each light that casts shadows.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/lights-and-shadows\/shadows.md",
-                    {
-                        "id": "tu13"
-                    }
-                ],
-                [
-                    "This tells us how far each visible pixel is from the light.",
-                    "",
-                    " This tells us how far each visible pixel is from the light.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/lights-and-shadows\/shadows.md",
-                    {
-                        "id": "tu13"
-                    }
-                ],
-                [
-                    "When Stride renders the scene, it checks the position of each pixel in the shadow map to learn if it can be \"seen\" by the light.",
-                    "",
-                    " When Stride renders the scene, it checks the position of each pixel in the shadow map to learn if it can be \"seen\" by the light.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/lights-and-shadows\/shadows.md",
-                    {
-                        "id": "tu13"
-                    }
-                ],
-                [
-                    "If the light can see the pixel, the light is illuminated.",
-                    "",
-                    " If the light can see the pixel, the light is illuminated.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/lights-and-shadows\/shadows.md",
-                    {
-                        "id": "tu13"
-                    }
-                ],
-                [
-                    "If it can't, the pixel is in shadow.",
-                    "",
-                    " If it can't, the pixel is in shadow.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/lights-and-shadows\/shadows.md",
-                    {
-                        "id": "tu13"
-                    }
-                ],
-                [
-                    "For example, these are shadow maps from the first-person shooter sample included in Stride, generated by a <g1>directional light<\/g1>.",
-                    "",
-                    "For example, these are shadow maps from the first-person shooter sample included in Stride, generated by a <g1>directional light<\/g1>.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/lights-and-shadows\/shadows.md",
-                    {
-                        "id": "tu14"
-                    }
-                ],
-                [
-                    "<x1\/>FPS scene<x2\/>",
-                    "",
-                    "<x1\/>FPS scene<x2\/>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/lights-and-shadows\/shadows.md",
-                    {
-                        "id": "tu15"
-                    }
-                ],
-                [
-                    "<x1\/>FPS scene shadow map<x2\/>",
-                    "",
-                    "<x1\/>FPS scene shadow map<x2\/>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/lights-and-shadows\/shadows.md",
-                    {
-                        "id": "tu16"
-                    }
-                ],
-                [
-                    "<x1\/>!Note<x2\/>",
-                    "",
-                    "<x1\/>!Note<x2\/>\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/lights-and-shadows\/shadows.md",
-                    {
-                        "id": "tu17"
-                    }
-                ],
-                [
-                    "Note that the directional light in the example above creates four shadow maps, one for each cascade.",
-                    "",
-                    "Note that the directional light in the example above creates four shadow maps, one for each cascade.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/lights-and-shadows\/shadows.md",
-                    {
-                        "id": "tu17"
-                    }
-                ],
-                [
-                    "For more information, see the <g1>Directional lights<\/g1> page.",
-                    "",
-                    " For more information, see the <g1>Directional lights<\/g1> page.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/lights-and-shadows\/shadows.md",
-                    {
-                        "id": "tu17"
-                    }
-                ],
-                [
-                    "The shadow atlas",
-                    "",
-                    "The shadow atlas",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/lights-and-shadows\/shadows.md",
-                    {
-                        "id": "tu18"
-                    }
-                ],
-                [
-                    "Shadow maps for each light that casts a shadow are saved in a region of the <g1>shadow atlas<\/g1> texture.",
-                    "",
-                    "Shadow maps for each light that casts a shadow are saved in a region of the <g1>shadow atlas<\/g1> texture.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/lights-and-shadows\/shadows.md",
-                    {
-                        "id": "tu19"
-                    }
-                ],
-                [
-                    "You can choose how much of the shadow atlas each light uses.",
-                    "",
-                    " You can choose how much of the shadow atlas each light uses.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/lights-and-shadows\/shadows.md",
-                    {
-                        "id": "tu19"
-                    }
-                ],
-                [
-                    "The larger the shadow map, the better the shadow quality, but the less space you have for shadow maps from other light sources.",
-                    "",
-                    " The larger the shadow map, the better the shadow quality, but the less space you have for shadow maps from other light sources.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/lights-and-shadows\/shadows.md",
-                    {
-                        "id": "tu19"
-                    }
-                ],
-                [
-                    "Higher-quality shadow (uses a large area of the shadow atlas)",
-                    "",
-                    "Higher-quality shadow (uses a large area of the shadow atlas)",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/lights-and-shadows\/shadows.md",
-                    {
-                        "id": "tu20"
-                    }
-                ],
-                [
-                    "Lower-quality shadow (uses a smaller area of the shadow atlas)",
-                    "",
-                    "Lower-quality shadow (uses a smaller area of the shadow atlas)",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/lights-and-shadows\/shadows.md",
-                    {
-                        "id": "tu21"
-                    }
-                ],
-                [
-                    "<x1\/>High-resolution shadow<x2\/>",
-                    "",
-                    "<x1\/>High-resolution shadow<x2\/>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/lights-and-shadows\/shadows.md",
-                    {
-                        "id": "tu22"
-                    }
-                ],
-                [
-                    "<x1\/>Low-resolution shadow<x2\/>",
-                    "",
-                    "<x1\/>Low-resolution shadow<x2\/>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/lights-and-shadows\/shadows.md",
-                    {
-                        "id": "tu23"
-                    }
-                ],
-                [
-                    "<x1\/>FPS scene shadow map<x2\/>",
-                    "",
-                    "<x1\/>FPS scene shadow map<x2\/>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/lights-and-shadows\/shadows.md",
-                    {
-                        "id": "tu24"
-                    }
-                ],
-                [
-                    "<x1\/>FPS scene shadow map<x2\/>",
-                    "",
-                    "<x1\/>FPS scene shadow map<x2\/>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/lights-and-shadows\/shadows.md",
-                    {
-                        "id": "tu25"
-                    }
-                ],
-                [
-                    "Generally, you should give more space to light sources that cast the most visible shadows.",
-                    "",
-                    "Generally, you should give more space to light sources that cast the most visible shadows.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/lights-and-shadows\/shadows.md",
-                    {
-                        "id": "tu26"
-                    }
-                ],
-                [
-                    "The size of each area in the shadow map depends on several factors:",
-                    "",
-                    "The size of each area in the shadow map depends on several factors:",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/lights-and-shadows\/shadows.md",
-                    {
-                        "id": "tu27"
-                    }
-                ],
-                [
-                    "the <g1>shadowMapSizeFactor<\/g1> based on the <g2>LightShadowMap.Size<\/g2> property (\/8, \/4, \/2, x1, or x2)",
-                    "",
-                    "the <g1>shadowMapSizeFactor<\/g1> based on the <g2>LightShadowMap.Size<\/g2> property (\/8, \/4, \/2, x1, or x2)",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/lights-and-shadows\/shadows.md",
-                    {
-                        "id": "tu28"
-                    }
-                ],
-                [
-                    "the projected size of the light in screenspace (<g1>lightSize<\/g1>)",
-                    "",
-                    "the projected size of the light in screenspace (<g1>lightSize<\/g1>)",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/lights-and-shadows\/shadows.md",
-                    {
-                        "id": "tu29"
-                    }
-                ],
-                [
-                    "for directional lights, the lightSize is equal to the max (screenWidth, screenHeight)",
-                    "",
-                    "for directional lights, the lightSize is equal to the max (screenWidth, screenHeight)",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/lights-and-shadows\/shadows.md",
-                    {
-                        "id": "tu30"
-                    }
-                ],
-                [
-                    "for spot lights, the lightSize is equal to the projection of the projected sphere at the target spot light cone",
-                    "",
-                    "for spot lights, the lightSize is equal to the projection of the projected sphere at the target spot light cone",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/lights-and-shadows\/shadows.md",
-                    {
-                        "id": "tu31"
-                    }
-                ],
-                [
-                    "the <g1>ShadowMapBaseSize<\/g1> equals <g2>1024<\/g2>",
-                    "",
-                    "the <g1>ShadowMapBaseSize<\/g1> equals <g2>1024<\/g2>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/lights-and-shadows\/shadows.md",
-                    {
-                        "id": "tu32"
-                    }
-                ],
-                [
-                    "The final size of the shadow map is calculated like this:",
-                    "",
-                    "The final size of the shadow map is calculated like this:",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/lights-and-shadows\/shadows.md",
-                    {
-                        "id": "tu33"
-                    }
-                ],
-                [
-                    "\/\/ Calculate the size factor",
-                    "",
-                    "\/\/ Calculate the size factor\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/lights-and-shadows\/shadows.md",
-                    {
-                        "id": "tu34"
-                    }
-                ],
-                [
-                    "var shadowMapSizeFinalFactor = shadowImportanceFactor * shadowMapSizeFactor;",
-                    "",
-                    "var shadowMapSizeFinalFactor = shadowImportanceFactor * shadowMapSizeFactor;\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/lights-and-shadows\/shadows.md",
-                    {
-                        "id": "tu34"
-                    }
-                ],
-                [
-                    "\/\/ Multiply the light projected size by the size factor",
-                    "",
-                    "\/\/ Multiply the light projected size by the size factor\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/lights-and-shadows\/shadows.md",
-                    {
-                        "id": "tu34"
-                    }
-                ],
-                [
-                    "var shadowMapSize = NextPowerOfTwo(lightSize * shadowSizeFinalFactor);",
-                    "",
-                    "var shadowMapSize = NextPowerOfTwo(lightSize * shadowSizeFinalFactor);\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/lights-and-shadows\/shadows.md",
-                    {
-                        "id": "tu34"
-                    }
-                ],
-                [
-                    "\/\/ Clamp to a maximum size",
-                    "",
-                    "\/\/ Clamp to a maximum size\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/lights-and-shadows\/shadows.md",
-                    {
-                        "id": "tu34"
-                    }
-                ],
-                [
-                    "shadowMapSize = min(shadowMapSize, ShadowMapBaseSize  * shadowSizeFinalFactor);",
-                    "",
-                    "shadowMapSize = min(shadowMapSize, ShadowMapBaseSize  * shadowSizeFinalFactor);\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/lights-and-shadows\/shadows.md",
-                    {
-                        "id": "tu34"
-                    }
-                ],
-                [
-                    "If you've enabled shadows on a light in your scene, but it isn't casting shadows, make sure there's enough space in the shadow atlas to create a shadow map for the light.",
-                    "",
-                    "If you've enabled shadows on a light in your scene, but it isn't casting shadows, make sure there's enough space in the shadow atlas to create a shadow map for the light.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/lights-and-shadows\/shadows.md",
-                    {
-                        "id": "tu35"
-                    }
-                ],
-                [
-                    "For more information, see <g1>Troubleshooting — Lights don't cast shadows<\/g1>.",
-                    "",
-                    " For more information, see <g1>Troubleshooting — Lights don't cast shadows<\/g1>.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/lights-and-shadows\/shadows.md",
-                    {
-                        "id": "tu35"
-                    }
-                ],
-                [
-                    "See also",
-                    "",
-                    "See also",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/lights-and-shadows\/shadows.md",
-                    {
-                        "id": "tu36"
-                    }
-                ],
-                [
-                    "Point lights",
-                    "",
-                    "<g1>Point lights<\/g1>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/lights-and-shadows\/shadows.md",
-                    {
-                        "id": "tu37"
-                    }
-                ],
-                [
-                    "Directional lights",
-                    "",
-                    "<g1>Directional lights<\/g1>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/lights-and-shadows\/shadows.md",
-                    {
-                        "id": "tu38"
-                    }
-                ],
-                [
-                    "Spot lights",
-                    "",
-                    "<g1>Spot lights<\/g1>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/lights-and-shadows\/shadows.md",
-                    {
-                        "id": "tu39"
-                    }
-                ],
-                [
-                    "Troubleshooting — Lights don't cast shadows",
-                    "",
-                    "<g1>Troubleshooting — Lights don't cast shadows<\/g1>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/lights-and-shadows\/shadows.md",
-                    {
-                        "id": "tu40"
-                    }
-                ]
-            ]
-        }
-    ],
-    "seg_enabled": false
+  "filename": "manual\\graphics\\lights-and-shadows\\shadows.md.xlf",
+  "files": [
+    {
+      "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/lights-and-shadows\\/shadows.md": [
+        [
+          "Shadows",
+          "Sombras",
+          "Shadows",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/lights-and-shadows\\/shadows.md",
+          {
+            "id": "tu1"
+          }
+        ],
+        [
+          "<x1\\/>Beginner<x2\\/>",
+          "<x1\\/>Introdução<x2\\/>",
+          "<x1\\/>Beginner<x2\\/>\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/lights-and-shadows\\/shadows.md",
+          {
+            "id": "tu2"
+          }
+        ],
+        [
+          "<x3\\/>Designer<x4\\/>",
+          "<x3\\/>Designer<x4\\/>",
+          "<x3\\/>Designer<x4\\/>\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/lights-and-shadows\\/shadows.md",
+          {
+            "id": "tu2"
+          }
+        ],
+        [
+          "<x5\\/>Artist<x6\\/>",
+          "<x5\\/>Artista <x6\\/>",
+          "<x5\\/>Artist<x6\\/>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/lights-and-shadows\\/shadows.md",
+          {
+            "id": "tu2"
+          }
+        ],
+        [
+          "Shadows bring significant information and realism to a scene.",
+          "As sombras trazem informações e realismo significativos para uma cena.",
+          "Shadows bring significant information and realism to a scene.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/lights-and-shadows\\/shadows.md",
+          {
+            "id": "tu3"
+          }
+        ],
+        [
+          "Shadows <g1>off<\\/g1>",
+          "Sombras <g1>off<\\/g1>",
+          "Shadows <g1>off<\\/g1>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/lights-and-shadows\\/shadows.md",
+          {
+            "id": "tu4"
+          }
+        ],
+        [
+          "Shadows <g1>on<\\/g1>",
+          "Sombras <g1>on<\\/g1>",
+          "Shadows <g1>on<\\/g1>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/lights-and-shadows\\/shadows.md",
+          {
+            "id": "tu5"
+          }
+        ],
+        [
+          "<x1\\/>media\\/SceneNoShadows.png<x2\\/>",
+          "<x1\\/>media\\/SceneNoShadows.png<x2\\/>",
+          "<x1\\/>media\\/SceneNoShadows.png<x2\\/>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/lights-and-shadows\\/shadows.md",
+          {
+            "id": "tu6"
+          }
+        ],
+        [
+          "<x1\\/>media\\/SceneWithShadows.png<x2\\/>",
+          "<x1\\/>media\\/SceneWithShadows.png<x2\\/>",
+          "<x1\\/>media\\/SceneWithShadows.png<x2\\/>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/lights-and-shadows\\/shadows.md",
+          {
+            "id": "tu7"
+          }
+        ],
+        [
+          "Only <g1>directional lights<\\/g1>, <g2>point lights<\\/g2>, and <g3>spot lights<\\/g3> can cast shadows.",
+          "Somente <g1> luzes direcionais<\\/g1>, <g2>ponto luzes<\\/g2>, e <g3>spot luzes<\\/g3> podem lançar sombras.",
+          "Only <g1>directional lights<\\/g1>, <g2>point lights<\\/g2>, and <g3>spot lights<\\/g3> can cast shadows.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/lights-and-shadows\\/shadows.md",
+          {
+            "id": "tu8"
+          }
+        ],
+        [
+          "Shadow maps",
+          "Mapas de sombra",
+          "Shadow maps",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/lights-and-shadows\\/shadows.md",
+          {
+            "id": "tu9"
+          }
+        ],
+        [
+          "Stride uses <g1>shadow mapping<\\/g1> to render shadows.",
+          "Stride usa <g1>shadow mapping<\\/g1> para renderizar sombras.",
+          "Stride uses <g1>shadow mapping<\\/g1> to render shadows.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/lights-and-shadows\\/shadows.md",
+          {
+            "id": "tu10"
+          }
+        ],
+        [
+          "To understand shadow maps, imagine a camera in the center of the sun, so you're looking down from the sun's perspective.",
+          "Para entender mapas de sombra, imagine uma câmera no centro do sol, então você está olhando para baixo da perspectiva do sol.",
+          " To understand shadow maps, imagine a camera in the center of the sun, so you're looking down from the sun's perspective.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/lights-and-shadows\\/shadows.md",
+          {
+            "id": "tu10"
+          }
+        ],
+        [
+          "<x1\\/>Light and shadow<x2\\/>",
+          "<x1\\/>Luz e sombra<x2\\/>",
+          "<x1\\/>Light and shadow<x2\\/>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/lights-and-shadows\\/shadows.md",
+          {
+            "id": "tu11"
+          }
+        ],
+        [
+          "Everything the sun sees is in light.",
+          "Tudo o que o sol vê está à luz.",
+          "Everything the sun sees is in light.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/lights-and-shadows\\/shadows.md",
+          {
+            "id": "tu12"
+          }
+        ],
+        [
+          "Everything hidden from the sun (ie behind <g1>occluders<\\/g1>) is in shadow.",
+          "Tudo escondido do sol (ou seja, atrás de <g1>occluders<\\/g1>) está na sombra.",
+          " Everything hidden from the sun (ie behind <g1>occluders<\\/g1>) is in shadow.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/lights-and-shadows\\/shadows.md",
+          {
+            "id": "tu12"
+          }
+        ],
+        [
+          "From this perspective, Stride creates a <g1>shadow map<\\/g1> for each light that casts shadows.",
+          "A partir desta perspectiva, Stride cria um <g1>shadow map<\\/g1> para cada luz que lança sombras.",
+          "From this perspective, Stride creates a <g1>shadow map<\\/g1> for each light that casts shadows.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/lights-and-shadows\\/shadows.md",
+          {
+            "id": "tu13"
+          }
+        ],
+        [
+          "This tells us how far each visible pixel is from the light.",
+          "Isso nos diz o quão longe cada pixel visível é da luz.",
+          " This tells us how far each visible pixel is from the light.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/lights-and-shadows\\/shadows.md",
+          {
+            "id": "tu13"
+          }
+        ],
+        [
+          "When Stride renders the scene, it checks the position of each pixel in the shadow map to learn if it can be \"seen\" by the light.",
+          "Quando Stride torna a cena, verifica a posição de cada pixel no mapa da sombra para aprender se pode ser \"visto\" pela luz.",
+          " When Stride renders the scene, it checks the position of each pixel in the shadow map to learn if it can be \"seen\" by the light.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/lights-and-shadows\\/shadows.md",
+          {
+            "id": "tu13"
+          }
+        ],
+        [
+          "If the light can see the pixel, the light is illuminated.",
+          "Se a luz pode ver o pixel, a luz é iluminada.",
+          " If the light can see the pixel, the light is illuminated.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/lights-and-shadows\\/shadows.md",
+          {
+            "id": "tu13"
+          }
+        ],
+        [
+          "If it can't, the pixel is in shadow.",
+          "Se não puder, o pixel está na sombra.",
+          " If it can't, the pixel is in shadow.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/lights-and-shadows\\/shadows.md",
+          {
+            "id": "tu13"
+          }
+        ],
+        [
+          "For example, these are shadow maps from the first-person shooter sample included in Stride, generated by a <g1>directional light<\\/g1>.",
+          "Por exemplo, estes são mapas de sombra da amostra de tiro em primeira pessoa incluída em Stride, gerada por uma luz <g1>direcional<\\/g1>.",
+          "For example, these are shadow maps from the first-person shooter sample included in Stride, generated by a <g1>directional light<\\/g1>.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/lights-and-shadows\\/shadows.md",
+          {
+            "id": "tu14"
+          }
+        ],
+        [
+          "<x1\\/>FPS scene<x2\\/>",
+          "<x1\\/>FPS cena<x2\\/>",
+          "<x1\\/>FPS scene<x2\\/>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/lights-and-shadows\\/shadows.md",
+          {
+            "id": "tu15"
+          }
+        ],
+        [
+          "<x1\\/>FPS scene shadow map<x2\\/>",
+          "<x1\\/>FPS cena sombra map<x2\\/>",
+          "<x1\\/>FPS scene shadow map<x2\\/>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/lights-and-shadows\\/shadows.md",
+          {
+            "id": "tu16"
+          }
+        ],
+        [
+          "<x1\\/>!Note<x2\\/>",
+          "<x1\\/>!Note<x2\\/>",
+          "<x1\\/>!Note<x2\\/>\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/lights-and-shadows\\/shadows.md",
+          {
+            "id": "tu17"
+          }
+        ],
+        [
+          "Note that the directional light in the example above creates four shadow maps, one for each cascade.",
+          "Note que a luz direcional no exemplo acima cria quatro mapas de sombra, um para cada cascata.",
+          "Note that the directional light in the example above creates four shadow maps, one for each cascade.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/lights-and-shadows\\/shadows.md",
+          {
+            "id": "tu17"
+          }
+        ],
+        [
+          "For more information, see the <g1>Directional lights<\\/g1> page.",
+          "Para obter mais informações, consulte a página <g1> Luzes direcionais<\\/g1>.",
+          " For more information, see the <g1>Directional lights<\\/g1> page.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/lights-and-shadows\\/shadows.md",
+          {
+            "id": "tu17"
+          }
+        ],
+        [
+          "The shadow atlas",
+          "A sombra atlas",
+          "The shadow atlas",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/lights-and-shadows\\/shadows.md",
+          {
+            "id": "tu18"
+          }
+        ],
+        [
+          "Shadow maps for each light that casts a shadow are saved in a region of the <g1>shadow atlas<\\/g1> texture.",
+          "Mapas de sombra para cada luz que lança uma sombra são salvos em uma região da textura <g1>shadow atlas<\\/g1>.",
+          "Shadow maps for each light that casts a shadow are saved in a region of the <g1>shadow atlas<\\/g1> texture.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/lights-and-shadows\\/shadows.md",
+          {
+            "id": "tu19"
+          }
+        ],
+        [
+          "You can choose how much of the shadow atlas each light uses.",
+          "Você pode escolher quanto da sombra atlas cada luz usa.",
+          " You can choose how much of the shadow atlas each light uses.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/lights-and-shadows\\/shadows.md",
+          {
+            "id": "tu19"
+          }
+        ],
+        [
+          "The larger the shadow map, the better the shadow quality, but the less space you have for shadow maps from other light sources.",
+          "Quanto maior o mapa da sombra, melhor a qualidade da sombra, mas menos espaço você tem para mapas de sombra de outras fontes de luz.",
+          " The larger the shadow map, the better the shadow quality, but the less space you have for shadow maps from other light sources.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/lights-and-shadows\\/shadows.md",
+          {
+            "id": "tu19"
+          }
+        ],
+        [
+          "Higher-quality shadow (uses a large area of the shadow atlas)",
+          "Sombra de maior qualidade (utiliza uma grande área do atlas sombra)",
+          "Higher-quality shadow (uses a large area of the shadow atlas)",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/lights-and-shadows\\/shadows.md",
+          {
+            "id": "tu20"
+          }
+        ],
+        [
+          "Lower-quality shadow (uses a smaller area of the shadow atlas)",
+          "Sombra de baixa qualidade (utiliza uma área menor do atlas sombra)",
+          "Lower-quality shadow (uses a smaller area of the shadow atlas)",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/lights-and-shadows\\/shadows.md",
+          {
+            "id": "tu21"
+          }
+        ],
+        [
+          "<x1\\/>High-resolution shadow<x2\\/>",
+          "<x1\\/> Sombra de alta resolução<x2\\/>",
+          "<x1\\/>High-resolution shadow<x2\\/>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/lights-and-shadows\\/shadows.md",
+          {
+            "id": "tu22"
+          }
+        ],
+        [
+          "<x1\\/>Low-resolution shadow<x2\\/>",
+          "<x1\\/> Sombra de baixa resolução <x2\\/>",
+          "<x1\\/>Low-resolution shadow<x2\\/>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/lights-and-shadows\\/shadows.md",
+          {
+            "id": "tu23"
+          }
+        ],
+        [
+          "<x1\\/>FPS scene shadow map<x2\\/>",
+          "<x1\\/>FPS cena sombra map<x2\\/>",
+          "<x1\\/>FPS scene shadow map<x2\\/>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/lights-and-shadows\\/shadows.md",
+          {
+            "id": "tu24"
+          }
+        ],
+        [
+          "<x1\\/>FPS scene shadow map<x2\\/>",
+          "<x1\\/>FPS cena sombra map<x2\\/>",
+          "<x1\\/>FPS scene shadow map<x2\\/>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/lights-and-shadows\\/shadows.md",
+          {
+            "id": "tu25"
+          }
+        ],
+        [
+          "Generally, you should give more space to light sources that cast the most visible shadows.",
+          "Geralmente, você deve dar mais espaço a fontes de luz que lançam as sombras mais visíveis.",
+          "Generally, you should give more space to light sources that cast the most visible shadows.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/lights-and-shadows\\/shadows.md",
+          {
+            "id": "tu26"
+          }
+        ],
+        [
+          "The size of each area in the shadow map depends on several factors:",
+          "O tamanho de cada área no mapa da sombra depende de vários fatores:",
+          "The size of each area in the shadow map depends on several factors:",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/lights-and-shadows\\/shadows.md",
+          {
+            "id": "tu27"
+          }
+        ],
+        [
+          "the <g1>shadowMapSizeFactor<\\/g1> based on the <g2>LightShadowMap.Size<\\/g2> property (\\/8, \\/4, \\/2, x1, or x2)",
+          "o <g1>shadowMapSizeFactor<\\/g1> baseado no <g2>LightShadowMap.Size<\\/g2> propriedade (\\/8, \\/4, \\/2, x1, ou x2)",
+          "the <g1>shadowMapSizeFactor<\\/g1> based on the <g2>LightShadowMap.Size<\\/g2> property (\\/8, \\/4, \\/2, x1, or x2)",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/lights-and-shadows\\/shadows.md",
+          {
+            "id": "tu28"
+          }
+        ],
+        [
+          "the projected size of the light in screenspace (<g1>lightSize<\\/g1>)",
+          "o tamanho projetado da luz no espaço de tela (<g1>lightSize<\\/g1>)",
+          "the projected size of the light in screenspace (<g1>lightSize<\\/g1>)",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/lights-and-shadows\\/shadows.md",
+          {
+            "id": "tu29"
+          }
+        ],
+        [
+          "for directional lights, the lightSize is equal to the max (screenWidth, screenHeight)",
+          "para luzes direcionais, a luz O tamanho é igual ao máximo (screenWidth, telaHeight)",
+          "for directional lights, the lightSize is equal to the max (screenWidth, screenHeight)",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/lights-and-shadows\\/shadows.md",
+          {
+            "id": "tu30"
+          }
+        ],
+        [
+          "for spot lights, the lightSize is equal to the projection of the projected sphere at the target spot light cone",
+          "para luzes de ponto, a luz O tamanho é igual à projeção da esfera projetada no ponto alvo luz cone",
+          "for spot lights, the lightSize is equal to the projection of the projected sphere at the target spot light cone",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/lights-and-shadows\\/shadows.md",
+          {
+            "id": "tu31"
+          }
+        ],
+        [
+          "the <g1>ShadowMapBaseSize<\\/g1> equals <g2>1024<\\/g2>",
+          "o <g1>ShadowMapBaseSize<\\/g1> é igual a <g2>1024<\\/g2>",
+          "the <g1>ShadowMapBaseSize<\\/g1> equals <g2>1024<\\/g2>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/lights-and-shadows\\/shadows.md",
+          {
+            "id": "tu32"
+          }
+        ],
+        [
+          "The final size of the shadow map is calculated like this:",
+          "O tamanho final do mapa da sombra é calculado assim:",
+          "The final size of the shadow map is calculated like this:",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/lights-and-shadows\\/shadows.md",
+          {
+            "id": "tu33"
+          }
+        ],
+        [
+          "\\/\\/ Calculate the size factor",
+          "\\/\\/ Calcular o fator de tamanho",
+          "\\/\\/ Calculate the size factor\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/lights-and-shadows\\/shadows.md",
+          {
+            "id": "tu34"
+          }
+        ],
+        [
+          "var shadowMapSizeFinalFactor = shadowImportanceFactor * shadowMapSizeFactor;",
+          "var shadowMapSizeFinalFactor = shadowImportanceFactor * shadowMapSizeFactor;",
+          "var shadowMapSizeFinalFactor = shadowImportanceFactor * shadowMapSizeFactor;\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/lights-and-shadows\\/shadows.md",
+          {
+            "id": "tu34"
+          }
+        ],
+        [
+          "\\/\\/ Multiply the light projected size by the size factor",
+          "\\/\\/ Multiplique o tamanho da luz projetada pelo fator de tamanho",
+          "\\/\\/ Multiply the light projected size by the size factor\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/lights-and-shadows\\/shadows.md",
+          {
+            "id": "tu34"
+          }
+        ],
+        [
+          "var shadowMapSize = NextPowerOfTwo(lightSize * shadowSizeFinalFactor);",
+          "var sombra MapSize = NextPowerOfTwo(lightSize * shadowSizeFinalFactor);",
+          "var shadowMapSize = NextPowerOfTwo(lightSize * shadowSizeFinalFactor);\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/lights-and-shadows\\/shadows.md",
+          {
+            "id": "tu34"
+          }
+        ],
+        [
+          "\\/\\/ Clamp to a maximum size",
+          "\\/\\/ Braçadeira para um tamanho máximo",
+          "\\/\\/ Clamp to a maximum size\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/lights-and-shadows\\/shadows.md",
+          {
+            "id": "tu34"
+          }
+        ],
+        [
+          "shadowMapSize = min(shadowMapSize, ShadowMapBaseSize  * shadowSizeFinalFactor);",
+          "shadowMapSize = min (shadowMapSize, ShadowMapBaseSize * shadowSizeFinalFactor);",
+          "shadowMapSize = min(shadowMapSize, ShadowMapBaseSize  * shadowSizeFinalFactor);\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/lights-and-shadows\\/shadows.md",
+          {
+            "id": "tu34"
+          }
+        ],
+        [
+          "If you've enabled shadows on a light in your scene, but it isn't casting shadows, make sure there's enough space in the shadow atlas to create a shadow map for the light.",
+          "Se você tiver ativado sombras em uma luz em sua cena, mas não está lançando sombras, certifique-se de que há espaço suficiente no atlas sombra para criar um mapa sombra para a luz.",
+          "If you've enabled shadows on a light in your scene, but it isn't casting shadows, make sure there's enough space in the shadow atlas to create a shadow map for the light.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/lights-and-shadows\\/shadows.md",
+          {
+            "id": "tu35"
+          }
+        ],
+        [
+          "For more information, see <g1>Troubleshooting — Lights don't cast shadows<\\/g1>.",
+          "Para mais informações, veja <g1>Troubleshooting — As luzes não lançam sombras<\\/g1>.",
+          " For more information, see <g1>Troubleshooting — Lights don't cast shadows<\\/g1>.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/lights-and-shadows\\/shadows.md",
+          {
+            "id": "tu35"
+          }
+        ],
+        [
+          "See also",
+          "Ver também",
+          "See also",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/lights-and-shadows\\/shadows.md",
+          {
+            "id": "tu36"
+          }
+        ],
+        [
+          "Point lights",
+          "Luzes de ponto",
+          "<g1>Point lights<\\/g1>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/lights-and-shadows\\/shadows.md",
+          {
+            "id": "tu37"
+          }
+        ],
+        [
+          "Directional lights",
+          "Luzes direcionais",
+          "<g1>Directional lights<\\/g1>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/lights-and-shadows\\/shadows.md",
+          {
+            "id": "tu38"
+          }
+        ],
+        [
+          "Spot lights",
+          "Luzes do ponto",
+          "<g1>Spot lights<\\/g1>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/lights-and-shadows\\/shadows.md",
+          {
+            "id": "tu39"
+          }
+        ],
+        [
+          "Troubleshooting — Lights don't cast shadows",
+          "Resolução de problemas — As luzes não lançam sombras",
+          "<g1>Troubleshooting — Lights don't cast shadows<\\/g1>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/lights-and-shadows\\/shadows.md",
+          {
+            "id": "tu40"
+          }
+        ]
+      ]
+    }
+  ],
+  "seg_enabled": false
 }

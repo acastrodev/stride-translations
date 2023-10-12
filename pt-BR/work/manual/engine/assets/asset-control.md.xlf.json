@@ -1,271 +1,271 @@
 {
-    "filename": "manual\\engine\\assets\\asset-control.md.xlf",
-    "files": [
-        {
-            "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-control.md": [
-                [
-                    "Asset control",
-                    "",
-                    "Asset control",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-control.md",
-                    {
-                        "id": "tu1"
-                    }
-                ],
-                [
-                    "<x1\/>!Warning<x2\/>",
-                    "",
-                    "<x1\/>!Warning<x2\/>\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-control.md",
-                    {
-                        "id": "tu2"
-                    }
-                ],
-                [
-                    "This section is out of date.",
-                    "",
-                    "This section is out of date.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-control.md",
-                    {
-                        "id": "tu2"
-                    }
-                ],
-                [
-                    "For now, you should only use it for reference.",
-                    "",
-                    " For now, you should only use it for reference.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-control.md",
-                    {
-                        "id": "tu2"
-                    }
-                ],
-                [
-                    "Until now, all assets of a game package, and its dependencies, were compiled as part of your game.",
-                    "",
-                    "Until now, all assets of a game package, and its dependencies, were compiled as part of your game.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-control.md",
-                    {
-                        "id": "tu3"
-                    }
-                ],
-                [
-                    "Starting with 1.3, we compile only the assets required by your game.",
-                    "",
-                    "Starting with 1.3, we compile only the assets required by your game.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-control.md",
-                    {
-                        "id": "tu4"
-                    }
-                ],
-                [
-                    "Don’t worry, most of it is done automatically for you!",
-                    "",
-                    "Don’t worry, most of it is done automatically for you!",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-control.md",
-                    {
-                        "id": "tu5"
-                    }
-                ],
-                [
-                    "We do that by starting to collect dependencies from the new Game Setting asset: it references the Default Scene, and we can easily detect all the required asset references (Models, Materials, Asset referenced by your scripts and so on).",
-                    "",
-                    " We do that by starting to collect dependencies from the new Game Setting asset: it references the Default Scene, and we can easily detect all the required asset references (Models, Materials, Asset referenced by your scripts and so on).",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-control.md",
-                    {
-                        "id": "tu5"
-                    }
-                ],
-                [
-                    "In case you were loading anything in your script using Content.Load, you can still tag those assets specifically with “Mark as Root” in the editor.",
-                    "",
-                    "In case you were loading anything in your script using Content.Load, you can still tag those assets specifically with “Mark as Root” in the editor.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-control.md",
-                    {
-                        "id": "tu6"
-                    }
-                ],
-                [
-                    "However, we now recommend to instead create a field in your script and fill it directly in the editor.",
-                    "",
-                    "However, we now recommend to instead create a field in your script and fill it directly in the editor.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-control.md",
-                    {
-                        "id": "tu7"
-                    }
-                ],
-                [
-                    "All the samples have been updated to this new practice, so please check them out.",
-                    "",
-                    " All the samples have been updated to this new practice, so please check them out.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-control.md",
-                    {
-                        "id": "tu7"
-                    }
-                ],
-                [
-                    "Which assets are compiled?",
-                    "",
-                    "Which assets are compiled?",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-control.md",
-                    {
-                        "id": "tu8"
-                    }
-                ],
-                [
-                    "Assets that will be compiled and packaged in your project are:",
-                    "",
-                    "Assets that will be compiled and packaged in your project are:",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-control.md",
-                    {
-                        "id": "tu9"
-                    }
-                ],
-                [
-                    "Root assets (blue)",
-                    "",
-                    "<g1>Root assets (blue)<\/g1>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-control.md",
-                    {
-                        "id": "tu10"
-                    }
-                ],
-                [
-                    "<g1>Automatic<\/g1> for a few asset types (i.e.",
-                    "",
-                    "<g1>Automatic<\/g1> for a few asset types (i.e.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-control.md",
-                    {
-                        "id": "tu11"
-                    }
-                ],
-                [
-                    "Game Settings, Shaders)",
-                    "",
-                    " Game Settings, Shaders)",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-control.md",
-                    {
-                        "id": "tu11"
-                    }
-                ],
-                [
-                    "Explicit (using \"<g1>Mark as Root<\/g1>\" on the asset)",
-                    "",
-                    "Explicit (using \"<g1>Mark as Root<\/g1>\" on the asset)",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-control.md",
-                    {
-                        "id": "tu12"
-                    }
-                ],
-                [
-                    "Dependencies of root assets (green)",
-                    "",
-                    "<g1>Dependencies of root assets (green)<\/g1>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-control.md",
-                    {
-                        "id": "tu13"
-                    }
-                ],
-                [
-                    "Since Game Settings is collected, that means that Default Scene and all its dependencies will be compiled as well (includes Model, Script field members pointing to other assets, etc...)",
-                    "",
-                    "Since Game Settings is collected, that means that Default Scene and all its dependencies will be compiled as well (includes Model, Script field members pointing to other assets, etc...)",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-control.md",
-                    {
-                        "id": "tu14"
-                    }
-                ],
-                [
-                    "Also, we encourage our users to switch your script from Content.Load (which require \"Mark as Root\") to a field member that you can set within the editor using drag and drop.",
-                    "",
-                    "Also, we encourage our users to switch your script from Content.Load (which require \"Mark as Root\") to a field member that you can set within the editor using drag and drop.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-control.md",
-                    {
-                        "id": "tu15"
-                    }
-                ],
-                [
-                    "That will create an implicit dependency that will force that asset to be compiled as well.",
-                    "",
-                    " That will create an implicit dependency that will force that asset to be compiled as well.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-control.md",
-                    {
-                        "id": "tu15"
-                    }
-                ],
-                [
-                    "<g1>Everything else (white)<\/g1> (objects not marked as root and not referenced directly or indirectly by a root) <g2>won't be packaged<\/g2>",
-                    "",
-                    "<g1>Everything else (white)<\/g1> (objects not marked as root and not referenced directly or indirectly by a root) <g2>won't be packaged<\/g2>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-control.md",
-                    {
-                        "id": "tu16"
-                    }
-                ],
-                [
-                    "<x1\/>media\/26968245.png<x2\/>",
-                    "",
-                    "<x1\/>media\/26968245.png<x2\/>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-control.md",
-                    {
-                        "id": "tu17"
-                    }
-                ],
-                [
-                    "\"Mark as root\"",
-                    "",
-                    "\"Mark as root\"",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-control.md",
-                    {
-                        "id": "tu18"
-                    }
-                ],
-                [
-                    "One important thing to understand is that \"Mark as root\" is not part of the asset, it is stored in the \"current\" package (the one that is in bold in the Solution Explorer).",
-                    "",
-                    "One important thing to understand is that \"Mark as root\" is not part of the asset, it is stored in the \"current\" package (the one that is in bold in the Solution Explorer).",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-control.md",
-                    {
-                        "id": "tu19"
-                    }
-                ],
-                [
-                    "It means that if \"MyGame\" is current package, if you check \"Mark as Root\" on Silver Material (part of SharedPackage), this information will be stored in MyGame.sdpkg as part of the reference to SharedPackage.",
-                    "",
-                    "It means that if \"MyGame\" is current package, if you check \"Mark as Root\" on Silver Material (part of SharedPackage), this information will be stored in MyGame.sdpkg as part of the reference to SharedPackage.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-control.md",
-                    {
-                        "id": "tu20"
-                    }
-                ],
-                [
-                    "As a result, you can use a shared package from multiple games even if you have different explicit roots.",
-                    "",
-                    "As a result, you can use a shared package from multiple games even if you have different explicit roots.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-control.md",
-                    {
-                        "id": "tu21"
-                    }
-                ],
-                [
-                    "See also",
-                    "",
-                    "See also",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-control.md",
-                    {
-                        "id": "tu22"
-                    }
-                ],
-                [
-                    "For additional information about asset management, see <g1>Manage Assets<\/g1>",
-                    "",
-                    "For additional information about asset management, see <g1>Manage Assets<\/g1>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-control.md",
-                    {
-                        "id": "tu23"
-                    }
-                ]
-            ]
-        }
-    ],
-    "seg_enabled": false
+  "filename": "manual\\engine\\assets\\asset-control.md.xlf",
+  "files": [
+    {
+      "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/engine\\/assets\\/asset-control.md": [
+        [
+          "Asset control",
+          "Controle de ativos",
+          "Asset control",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/engine\\/assets\\/asset-control.md",
+          {
+            "id": "tu1"
+          }
+        ],
+        [
+          "<x1\\/>!Warning<x2\\/>",
+          "<x1\\/>!Warning<x2\\/>",
+          "<x1\\/>!Warning<x2\\/>\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/engine\\/assets\\/asset-control.md",
+          {
+            "id": "tu2"
+          }
+        ],
+        [
+          "This section is out of date.",
+          "Esta seção está fora de data.",
+          "This section is out of date.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/engine\\/assets\\/asset-control.md",
+          {
+            "id": "tu2"
+          }
+        ],
+        [
+          "For now, you should only use it for reference.",
+          "Por enquanto, você só deve usá-lo para referência.",
+          " For now, you should only use it for reference.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/engine\\/assets\\/asset-control.md",
+          {
+            "id": "tu2"
+          }
+        ],
+        [
+          "Until now, all assets of a game package, and its dependencies, were compiled as part of your game.",
+          "Até agora, todos os ativos de um pacote de jogo, e suas dependências, foram compilados como parte de seu jogo.",
+          "Until now, all assets of a game package, and its dependencies, were compiled as part of your game.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/engine\\/assets\\/asset-control.md",
+          {
+            "id": "tu3"
+          }
+        ],
+        [
+          "Starting with 1.3, we compile only the assets required by your game.",
+          "Começando com 1.3, compilamos apenas os ativos exigidos pelo seu jogo.",
+          "Starting with 1.3, we compile only the assets required by your game.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/engine\\/assets\\/asset-control.md",
+          {
+            "id": "tu4"
+          }
+        ],
+        [
+          "Don’t worry, most of it is done automatically for you!",
+          "Não se preocupe, a maioria é feito automaticamente para você!",
+          "Don’t worry, most of it is done automatically for you!",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/engine\\/assets\\/asset-control.md",
+          {
+            "id": "tu5"
+          }
+        ],
+        [
+          "We do that by starting to collect dependencies from the new Game Setting asset: it references the Default Scene, and we can easily detect all the required asset references (Models, Materials, Asset referenced by your scripts and so on).",
+          "Fazemos isso ao começar a coletar dependências do novo ativo Game Setting: ele faz referência ao Default Scene, e podemos facilmente detectar todas as referências de ativos necessárias (Models, Materials, Asset referenciado por seus scripts e assim por diante).",
+          " We do that by starting to collect dependencies from the new Game Setting asset: it references the Default Scene, and we can easily detect all the required asset references (Models, Materials, Asset referenced by your scripts and so on).",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/engine\\/assets\\/asset-control.md",
+          {
+            "id": "tu5"
+          }
+        ],
+        [
+          "In case you were loading anything in your script using Content.Load, you can still tag those assets specifically with “Mark as Root” in the editor.",
+          "No caso de você estar carregando qualquer coisa em seu script usando o Conteúdo. Carregar, você ainda pode marcar esses ativos especificamente com “Mark as Root” no editor.",
+          "In case you were loading anything in your script using Content.Load, you can still tag those assets specifically with “Mark as Root” in the editor.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/engine\\/assets\\/asset-control.md",
+          {
+            "id": "tu6"
+          }
+        ],
+        [
+          "However, we now recommend to instead create a field in your script and fill it directly in the editor.",
+          "No entanto, agora recomendamos criar um campo no seu script e preenchê-lo diretamente no editor.",
+          "However, we now recommend to instead create a field in your script and fill it directly in the editor.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/engine\\/assets\\/asset-control.md",
+          {
+            "id": "tu7"
+          }
+        ],
+        [
+          "All the samples have been updated to this new practice, so please check them out.",
+          "Todas as amostras foram atualizadas para esta nova prática, então verifique-as.",
+          " All the samples have been updated to this new practice, so please check them out.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/engine\\/assets\\/asset-control.md",
+          {
+            "id": "tu7"
+          }
+        ],
+        [
+          "Which assets are compiled?",
+          "Quais ativos são compilados?",
+          "Which assets are compiled?",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/engine\\/assets\\/asset-control.md",
+          {
+            "id": "tu8"
+          }
+        ],
+        [
+          "Assets that will be compiled and packaged in your project are:",
+          "Os ativos que serão compilados e embalados em seu projeto são:",
+          "Assets that will be compiled and packaged in your project are:",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/engine\\/assets\\/asset-control.md",
+          {
+            "id": "tu9"
+          }
+        ],
+        [
+          "Root assets (blue)",
+          "Activos de raiz (azul)",
+          "<g1>Root assets (blue)<\\/g1>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/engine\\/assets\\/asset-control.md",
+          {
+            "id": "tu10"
+          }
+        ],
+        [
+          "<g1>Automatic<\\/g1> for a few asset types (i.e.",
+          "<g1>Automatic<\\/g1> para alguns tipos de ativos (i.e.",
+          "<g1>Automatic<\\/g1> for a few asset types (i.e.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/engine\\/assets\\/asset-control.md",
+          {
+            "id": "tu11"
+          }
+        ],
+        [
+          "Game Settings, Shaders)",
+          "Configurações do jogo, Shaders)",
+          " Game Settings, Shaders)",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/engine\\/assets\\/asset-control.md",
+          {
+            "id": "tu11"
+          }
+        ],
+        [
+          "Explicit (using \"<g1>Mark as Root<\\/g1>\" on the asset)",
+          "Explicit (usando \"<g1>Mark como Root<\\/g1>\" no ativo)",
+          "Explicit (using \"<g1>Mark as Root<\\/g1>\" on the asset)",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/engine\\/assets\\/asset-control.md",
+          {
+            "id": "tu12"
+          }
+        ],
+        [
+          "Dependencies of root assets (green)",
+          "Dependências de ativos raiz (verde)",
+          "<g1>Dependencies of root assets (green)<\\/g1>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/engine\\/assets\\/asset-control.md",
+          {
+            "id": "tu13"
+          }
+        ],
+        [
+          "Since Game Settings is collected, that means that Default Scene and all its dependencies will be compiled as well (includes Model, Script field members pointing to other assets, etc...)",
+          "Uma vez que as configurações do jogo são coletadas, isso significa que a cena padrão e todas as suas dependências serão compiladas também (inclui Modelo, membros do campo de script apontando para outros ativos, etc...)",
+          "Since Game Settings is collected, that means that Default Scene and all its dependencies will be compiled as well (includes Model, Script field members pointing to other assets, etc...)",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/engine\\/assets\\/asset-control.md",
+          {
+            "id": "tu14"
+          }
+        ],
+        [
+          "Also, we encourage our users to switch your script from Content.Load (which require \"Mark as Root\") to a field member that you can set within the editor using drag and drop.",
+          "Além disso, encorajamos nossos usuários a mudar seu script do Content. Carregar (que requer \"Mark as Root\") para um membro de campo que você pode definir dentro do editor usando arrastar e soltar.",
+          "Also, we encourage our users to switch your script from Content.Load (which require \"Mark as Root\") to a field member that you can set within the editor using drag and drop.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/engine\\/assets\\/asset-control.md",
+          {
+            "id": "tu15"
+          }
+        ],
+        [
+          "That will create an implicit dependency that will force that asset to be compiled as well.",
+          "Isso criará uma dependência implícita que forçará esse ativo a ser compilado também.",
+          " That will create an implicit dependency that will force that asset to be compiled as well.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/engine\\/assets\\/asset-control.md",
+          {
+            "id": "tu15"
+          }
+        ],
+        [
+          "<g1>Everything else (white)<\\/g1> (objects not marked as root and not referenced directly or indirectly by a root) <g2>won't be packaged<\\/g2>",
+          "<g1>Tudo mais (branco)<\\/g1> (objetos não marcados como raiz e não referenciados direta ou indiretamente por uma raiz) <g2>won't be packaged<\\/g2>",
+          "<g1>Everything else (white)<\\/g1> (objects not marked as root and not referenced directly or indirectly by a root) <g2>won't be packaged<\\/g2>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/engine\\/assets\\/asset-control.md",
+          {
+            "id": "tu16"
+          }
+        ],
+        [
+          "<x1\\/>media\\/26968245.png<x2\\/>",
+          "<x1\\/>media\\/26968245.png<x2\\/>",
+          "<x1\\/>media\\/26968245.png<x2\\/>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/engine\\/assets\\/asset-control.md",
+          {
+            "id": "tu17"
+          }
+        ],
+        [
+          "\"Mark as root\"",
+          "\"Marcar como raiz\"",
+          "\"Mark as root\"",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/engine\\/assets\\/asset-control.md",
+          {
+            "id": "tu18"
+          }
+        ],
+        [
+          "One important thing to understand is that \"Mark as root\" is not part of the asset, it is stored in the \"current\" package (the one that is in bold in the Solution Explorer).",
+          "Uma coisa importante a entender é que \"Mark as root\" não faz parte do ativo, ele é armazenado no pacote \"current\" (o que está em negrito no Solution Explorer).",
+          "One important thing to understand is that \"Mark as root\" is not part of the asset, it is stored in the \"current\" package (the one that is in bold in the Solution Explorer).",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/engine\\/assets\\/asset-control.md",
+          {
+            "id": "tu19"
+          }
+        ],
+        [
+          "It means that if \"MyGame\" is current package, if you check \"Mark as Root\" on Silver Material (part of SharedPackage), this information will be stored in MyGame.sdpkg as part of the reference to SharedPackage.",
+          "Significa que se \"MyGame\" é o pacote atual, se você verificar \"Mark as Root\" no Silver Material (parte de SharedPackage), esta informação será armazenada em MyGame. sdpkg como parte da referência ao SharedPackage.",
+          "It means that if \"MyGame\" is current package, if you check \"Mark as Root\" on Silver Material (part of SharedPackage), this information will be stored in MyGame.sdpkg as part of the reference to SharedPackage.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/engine\\/assets\\/asset-control.md",
+          {
+            "id": "tu20"
+          }
+        ],
+        [
+          "As a result, you can use a shared package from multiple games even if you have different explicit roots.",
+          "Como resultado, você pode usar um pacote compartilhado de vários jogos, mesmo que você tenha diferentes raízes explícitas.",
+          "As a result, you can use a shared package from multiple games even if you have different explicit roots.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/engine\\/assets\\/asset-control.md",
+          {
+            "id": "tu21"
+          }
+        ],
+        [
+          "See also",
+          "Ver também",
+          "See also",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/engine\\/assets\\/asset-control.md",
+          {
+            "id": "tu22"
+          }
+        ],
+        [
+          "For additional information about asset management, see <g1>Manage Assets<\\/g1>",
+          "Para obter informações adicionais sobre gerenciamento de ativos, consulte <g1>Manage Assets<\\/g1>",
+          "For additional information about asset management, see <g1>Manage Assets<\\/g1>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/engine\\/assets\\/asset-control.md",
+          {
+            "id": "tu23"
+          }
+        ]
+      ]
+    }
+  ],
+  "seg_enabled": false
 }

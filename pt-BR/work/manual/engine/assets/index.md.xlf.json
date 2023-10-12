@@ -1,388 +1,388 @@
 {
-    "filename": "manual\\engine\\assets\\index.md.xlf",
-    "files": [
-        {
-            "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/index.md": [
-                [
-                    "Asset manager",
-                    "",
-                    "Asset manager",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/index.md",
-                    {
-                        "id": "tu1"
-                    }
-                ],
-                [
-                    "<x1\/>!Warning<x2\/>",
-                    "",
-                    "<x1\/>!Warning<x2\/>\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/index.md",
-                    {
-                        "id": "tu2"
-                    }
-                ],
-                [
-                    "This section is out of date.",
-                    "",
-                    "This section is out of date.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/index.md",
-                    {
-                        "id": "tu2"
-                    }
-                ],
-                [
-                    "For now, you should only use it for reference.",
-                    "",
-                    " For now, you should only use it for reference.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/index.md",
-                    {
-                        "id": "tu2"
-                    }
-                ],
-                [
-                    "Assets",
-                    "",
-                    "Assets",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/index.md",
-                    {
-                        "id": "tu3"
-                    }
-                ],
-                [
-                    "After creating your assets in Game Studio, @'Stride.Core.Serialization.Assets.AssetManager' is the class responsible for loading, unloading and saving assets.",
-                    "",
-                    "After creating your assets in Game Studio, @'Stride.Core.Serialization.Assets.AssetManager' is the class responsible for loading, unloading and saving assets.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/index.md",
-                    {
-                        "id": "tu4"
-                    }
-                ],
-                [
-                    "Creating",
-                    "",
-                    "Creating",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/index.md",
-                    {
-                        "id": "tu5"
-                    }
-                ],
-                [
-                    "You usually create assets directly in Game Studio.",
-                    "",
-                    "You usually create assets directly in Game Studio.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/index.md",
-                    {
-                        "id": "tu6"
-                    }
-                ],
-                [
-                    "Their URL will match the name (including folder) in Game Studio.",
-                    "",
-                    "Their URL will match the name (including folder) in Game Studio.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/index.md",
-                    {
-                        "id": "tu7"
-                    }
-                ],
-                [
-                    "Examples of URLs:",
-                    "",
-                    "Examples of URLs:",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/index.md",
-                    {
-                        "id": "tu8"
-                    }
-                ],
-                [
-                    "knight (user imports knight.fbx directly in main asset folder)",
-                    "",
-                    "knight (user imports knight.fbx directly in main asset folder)",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/index.md",
-                    {
-                        "id": "tu9"
-                    }
-                ],
-                [
-                    "level1\/room1 (user creates level1 and import room1.fbx inside)",
-                    "",
-                    "level1\/room1 (user creates level1 and import room1.fbx inside)",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/index.md",
-                    {
-                        "id": "tu10"
-                    }
-                ],
-                [
-                    "For more information, see <g1>Assets<\/g1> for more details.",
-                    "",
-                    "For more information, see <g1>Assets<\/g1> for more details.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/index.md",
-                    {
-                        "id": "tu11"
-                    }
-                ],
-                [
-                    "Loading",
-                    "",
-                    "Loading",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/index.md",
-                    {
-                        "id": "tu12"
-                    }
-                ],
-                [
-                    "Loading an asset should be done with the help of @'Stride.Core.Serialization.Assets.AssetManager' class:",
-                    "",
-                    "Loading an asset should be done with the help of @'Stride.Core.Serialization.Assets.AssetManager' class:",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/index.md",
-                    {
-                        "id": "tu13"
-                    }
-                ],
-                [
-                    "\/\/ Load an asset directly from a file:",
-                    "",
-                    "\/\/ Load an asset directly from a file:\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/index.md",
-                    {
-                        "id": "tu14"
-                    }
-                ],
-                [
-                    "var texture = Content.Load<Texture>(\"texture1\");",
-                    "",
-                    "var texture = Content.Load<Texture>(\"texture1\");\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/index.md",
-                    {
-                        "id": "tu14"
-                    }
-                ],
-                [
-                    "\/\/ Load a Scene asset",
-                    "",
-                    "\r\n\/\/ Load a Scene asset\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/index.md",
-                    {
-                        "id": "tu14"
-                    }
-                ],
-                [
-                    "var scene = Content.Load<Scene>(\"scenes\/scene1\");",
-                    "",
-                    "var scene = Content.Load<Scene>(\"scenes\/scene1\");\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/index.md",
-                    {
-                        "id": "tu14"
-                    }
-                ],
-                [
-                    "\/\/ Load an Entity asset",
-                    "",
-                    " \r\n\/\/ Load an Entity asset\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/index.md",
-                    {
-                        "id": "tu14"
-                    }
-                ],
-                [
-                    "var entity = Content.Load<Entity>(\"entity1\");",
-                    "",
-                    "var entity = Content.Load<Entity>(\"entity1\");\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/index.md",
-                    {
-                        "id": "tu14"
-                    }
-                ],
-                [
-                    "Note that loading an asset that has already been loaded only increment the reference counter and do not reload the asset.",
-                    "",
-                    "Note that loading an asset that has already been loaded only increment the reference counter and do not reload the asset.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/index.md",
-                    {
-                        "id": "tu15"
-                    }
-                ],
-                [
-                    "Unloading",
-                    "",
-                    "Unloading",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/index.md",
-                    {
-                        "id": "tu16"
-                    }
-                ],
-                [
-                    "Unloading is also done using the AssetManager class:",
-                    "",
-                    "Unloading is also done using the AssetManager class:",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/index.md",
-                    {
-                        "id": "tu17"
-                    }
-                ],
-                [
-                    "Asset.Unload(asset);",
-                    "",
-                    " Asset.Unload(asset);\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/index.md",
-                    {
-                        "id": "tu18"
-                    }
-                ],
-                [
-                    "Asset life time",
-                    "",
-                    "Asset life time",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/index.md",
-                    {
-                        "id": "tu19"
-                    }
-                ],
-                [
-                    "Asset load and unload are working in pairs.",
-                    "",
-                    "Asset load and unload are working in pairs.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/index.md",
-                    {
-                        "id": "tu20"
-                    }
-                ],
-                [
-                    "For each call to 'load', a corresponding call to 'unload' is expected.",
-                    "",
-                    " For each call to 'load', a corresponding call to 'unload' is expected.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/index.md",
-                    {
-                        "id": "tu20"
-                    }
-                ],
-                [
-                    "An asset is actually loaded only during the first call to 'load'.",
-                    "",
-                    "An asset is actually loaded only during the first call to 'load'.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/index.md",
-                    {
-                        "id": "tu21"
-                    }
-                ],
-                [
-                    "All subsequent calls only result to an asset reference increment.",
-                    "",
-                    " All subsequent calls only result to an asset reference increment.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/index.md",
-                    {
-                        "id": "tu21"
-                    }
-                ],
-                [
-                    "An asset is actually unload only when the number of call to unload match the number of call the load.",
-                    "",
-                    "An asset is actually unload only when the number of call to unload match the number of call the load.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/index.md",
-                    {
-                        "id": "tu22"
-                    }
-                ],
-                [
-                    "The @'Stride.Core.Serialization.Assets.AssetManager.Get' method returns the reference to a loaded asset but does not increment the asset reference counter.",
-                    "",
-                    "The @'Stride.Core.Serialization.Assets.AssetManager.Get' method returns the reference to a loaded asset but does not increment the asset reference counter.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/index.md",
-                    {
-                        "id": "tu23"
-                    }
-                ],
-                [
-                    "var firstReference = Content.Load<Texture>(\"MyTexture\"); \/\/ load the asset and increase the reference counter (ref count = 1)",
-                    "",
-                    " var firstReference = Content.Load<Texture>(\"MyTexture\"); \/\/ load the asset and increase the reference counter (ref count = 1)\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/index.md",
-                    {
-                        "id": "tu24"
-                    }
-                ],
-                [
-                    "\/\/ the texture can be used here",
-                    "",
-                    " \r\n\/\/ the texture can be used here\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/index.md",
-                    {
-                        "id": "tu24"
-                    }
-                ],
-                [
-                    "var secondReference = Content.Load<Texture>(\"MyTexture\"); \/\/ only increase the reference counter (ref count = 2)",
-                    "",
-                    " \r\nvar secondReference = Content.Load<Texture>(\"MyTexture\"); \/\/ only increase the reference counter (ref count = 2)\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/index.md",
-                    {
-                        "id": "tu24"
-                    }
-                ],
-                [
-                    "\/\/ the texture can still be used here",
-                    "",
-                    " \r\n\/\/ the texture can still be used here\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/index.md",
-                    {
-                        "id": "tu24"
-                    }
-                ],
-                [
-                    "Asset.Unload(firstReference); \/\/ decrease the reference counter (ref count = 1)",
-                    "",
-                    " \r\nAsset.Unload(firstReference); \/\/ decrease the reference counter (ref count = 1)\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/index.md",
-                    {
-                        "id": "tu24"
-                    }
-                ],
-                [
-                    "\/\/ the texture can still be used here",
-                    "",
-                    " \r\n\/\/ the texture can still be used here\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/index.md",
-                    {
-                        "id": "tu24"
-                    }
-                ],
-                [
-                    "Asset.Get<Texture>(\"MyTexture\"); \/\/ return the loaded asset without increasing the reference counter (ref count = 1)",
-                    "",
-                    " \r\nAsset.Get<Texture>(\"MyTexture\"); \/\/ return the loaded asset without increasing the reference counter (ref count = 1)\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/index.md",
-                    {
-                        "id": "tu24"
-                    }
-                ],
-                [
-                    "\/\/ the texture can still be used here",
-                    "",
-                    " \r\n\/\/ the texture can still be used here\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/index.md",
-                    {
-                        "id": "tu24"
-                    }
-                ],
-                [
-                    "Asset.Unload(secondReference); \/\/ decrease the reference counter and unload the asset (ref count = 0)",
-                    "",
-                    "Asset.Unload(secondReference); \/\/ decrease the reference counter and unload the asset (ref count = 0)\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/index.md",
-                    {
-                        "id": "tu24"
-                    }
-                ],
-                [
-                    "\/\/ The texture has been unloaded, it cannot be used here any more.",
-                    "",
-                    " \r\n\/\/ The texture has been unloaded, it cannot be used here any more.\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/index.md",
-                    {
-                        "id": "tu24"
-                    }
-                ]
-            ]
-        }
-    ],
-    "seg_enabled": false
+  "filename": "manual\\engine\\assets\\index.md.xlf",
+  "files": [
+    {
+      "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/engine\\/assets\\/index.md": [
+        [
+          "Asset manager",
+          "Gerenciador de ativos",
+          "Asset manager",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/engine\\/assets\\/index.md",
+          {
+            "id": "tu1"
+          }
+        ],
+        [
+          "<x1\\/>!Warning<x2\\/>",
+          "<x1\\/>!Warning<x2\\/>",
+          "<x1\\/>!Warning<x2\\/>\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/engine\\/assets\\/index.md",
+          {
+            "id": "tu2"
+          }
+        ],
+        [
+          "This section is out of date.",
+          "Esta seção está fora de data.",
+          "This section is out of date.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/engine\\/assets\\/index.md",
+          {
+            "id": "tu2"
+          }
+        ],
+        [
+          "For now, you should only use it for reference.",
+          "Por enquanto, você só deve usá-lo para referência.",
+          " For now, you should only use it for reference.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/engine\\/assets\\/index.md",
+          {
+            "id": "tu2"
+          }
+        ],
+        [
+          "Assets",
+          "Activos",
+          "Assets",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/engine\\/assets\\/index.md",
+          {
+            "id": "tu3"
+          }
+        ],
+        [
+          "After creating your assets in Game Studio, @'Stride.Core.Serialization.Assets.AssetManager' is the class responsible for loading, unloading and saving assets.",
+          "Depois de criar seus ativos no Game Studio, @'Stride.Core.Serialization.Assets.AssetManager' é a classe responsável por carregar, descarregar e salvar ativos.",
+          "After creating your assets in Game Studio, @'Stride.Core.Serialization.Assets.AssetManager' is the class responsible for loading, unloading and saving assets.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/engine\\/assets\\/index.md",
+          {
+            "id": "tu4"
+          }
+        ],
+        [
+          "Creating",
+          "Criando",
+          "Creating",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/engine\\/assets\\/index.md",
+          {
+            "id": "tu5"
+          }
+        ],
+        [
+          "You usually create assets directly in Game Studio.",
+          "Você geralmente cria ativos diretamente no Game Studio.",
+          "You usually create assets directly in Game Studio.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/engine\\/assets\\/index.md",
+          {
+            "id": "tu6"
+          }
+        ],
+        [
+          "Their URL will match the name (including folder) in Game Studio.",
+          "Sua URL corresponderá ao nome (incluindo pasta) no Game Studio.",
+          "Their URL will match the name (including folder) in Game Studio.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/engine\\/assets\\/index.md",
+          {
+            "id": "tu7"
+          }
+        ],
+        [
+          "Examples of URLs:",
+          "Exemplos de URLs:",
+          "Examples of URLs:",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/engine\\/assets\\/index.md",
+          {
+            "id": "tu8"
+          }
+        ],
+        [
+          "knight (user imports knight.fbx directly in main asset folder)",
+          "cavaleiro (usuário importa cavaleiro. fbx diretamente na pasta de ativos principal)",
+          "knight (user imports knight.fbx directly in main asset folder)",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/engine\\/assets\\/index.md",
+          {
+            "id": "tu9"
+          }
+        ],
+        [
+          "level1\\/room1 (user creates level1 and import room1.fbx inside)",
+          "level1\\/room1 (o usuário cria nível1 e sala de importação1.fbx dentro)",
+          "level1\\/room1 (user creates level1 and import room1.fbx inside)",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/engine\\/assets\\/index.md",
+          {
+            "id": "tu10"
+          }
+        ],
+        [
+          "For more information, see <g1>Assets<\\/g1> for more details.",
+          "Para mais informações, consulte <g1>Ativos<\\/g1> para mais detalhes.",
+          "For more information, see <g1>Assets<\\/g1> for more details.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/engine\\/assets\\/index.md",
+          {
+            "id": "tu11"
+          }
+        ],
+        [
+          "Loading",
+          "A carregar",
+          "Loading",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/engine\\/assets\\/index.md",
+          {
+            "id": "tu12"
+          }
+        ],
+        [
+          "Loading an asset should be done with the help of @'Stride.Core.Serialization.Assets.AssetManager' class:",
+          "Carregar um ativo deve ser feito com a ajuda de @'Stride. Core.Serialization.Assets.AssetManager' classe:",
+          "Loading an asset should be done with the help of @'Stride.Core.Serialization.Assets.AssetManager' class:",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/engine\\/assets\\/index.md",
+          {
+            "id": "tu13"
+          }
+        ],
+        [
+          "\\/\\/ Load an asset directly from a file:",
+          "\\/\\/ Carregar um ativo diretamente de um arquivo:",
+          "\\/\\/ Load an asset directly from a file:\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/engine\\/assets\\/index.md",
+          {
+            "id": "tu14"
+          }
+        ],
+        [
+          "var texture = Content.Load<Texture>(\"texture1\");",
+          "var texture = Content.Load<Texture>(\"texture1\");",
+          "var texture = Content.Load<Texture>(\"texture1\");\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/engine\\/assets\\/index.md",
+          {
+            "id": "tu14"
+          }
+        ],
+        [
+          "\\/\\/ Load a Scene asset",
+          "\\/\\/ Carregar um recurso de cena",
+          "\r\n\\/\\/ Load a Scene asset\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/engine\\/assets\\/index.md",
+          {
+            "id": "tu14"
+          }
+        ],
+        [
+          "var scene = Content.Load<Scene>(\"scenes\\/scene1\");",
+          "var scene = Content.Load<Scene>(\"scenes\\/scene1\");",
+          "var scene = Content.Load<Scene>(\"scenes\\/scene1\");\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/engine\\/assets\\/index.md",
+          {
+            "id": "tu14"
+          }
+        ],
+        [
+          "\\/\\/ Load an Entity asset",
+          "\\/\\/ Carregar um ativo de Entidade",
+          " \r\n\\/\\/ Load an Entity asset\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/engine\\/assets\\/index.md",
+          {
+            "id": "tu14"
+          }
+        ],
+        [
+          "var entity = Content.Load<Entity>(\"entity1\");",
+          "var entity = Content.Load<Entity>(\"entity1\");",
+          "var entity = Content.Load<Entity>(\"entity1\");\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/engine\\/assets\\/index.md",
+          {
+            "id": "tu14"
+          }
+        ],
+        [
+          "Note that loading an asset that has already been loaded only increment the reference counter and do not reload the asset.",
+          "Note que carregar um ativo que já foi carregado apenas incrementar o contador de referência e não recarregar o ativo.",
+          "Note that loading an asset that has already been loaded only increment the reference counter and do not reload the asset.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/engine\\/assets\\/index.md",
+          {
+            "id": "tu15"
+          }
+        ],
+        [
+          "Unloading",
+          "Descarregamento",
+          "Unloading",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/engine\\/assets\\/index.md",
+          {
+            "id": "tu16"
+          }
+        ],
+        [
+          "Unloading is also done using the AssetManager class:",
+          "Descarregamento também é feito usando a classe AssetManager:",
+          "Unloading is also done using the AssetManager class:",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/engine\\/assets\\/index.md",
+          {
+            "id": "tu17"
+          }
+        ],
+        [
+          "Asset.Unload(asset);",
+          "Asset.Unload (asset);",
+          " Asset.Unload(asset);\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/engine\\/assets\\/index.md",
+          {
+            "id": "tu18"
+          }
+        ],
+        [
+          "Asset life time",
+          "Tempo de vida dos ativos",
+          "Asset life time",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/engine\\/assets\\/index.md",
+          {
+            "id": "tu19"
+          }
+        ],
+        [
+          "Asset load and unload are working in pairs.",
+          "Carga de ativos e descarga estão trabalhando em pares.",
+          "Asset load and unload are working in pairs.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/engine\\/assets\\/index.md",
+          {
+            "id": "tu20"
+          }
+        ],
+        [
+          "For each call to 'load', a corresponding call to 'unload' is expected.",
+          "Para cada chamada para \"carga\", espera-se uma chamada correspondente para \"descarga\".",
+          " For each call to 'load', a corresponding call to 'unload' is expected.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/engine\\/assets\\/index.md",
+          {
+            "id": "tu20"
+          }
+        ],
+        [
+          "An asset is actually loaded only during the first call to 'load'.",
+          "Um ativo é realmente carregado apenas durante a primeira chamada para \"carga\".",
+          "An asset is actually loaded only during the first call to 'load'.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/engine\\/assets\\/index.md",
+          {
+            "id": "tu21"
+          }
+        ],
+        [
+          "All subsequent calls only result to an asset reference increment.",
+          "Todas as chamadas subsequentes só resultam em um incremento de referência de ativos.",
+          " All subsequent calls only result to an asset reference increment.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/engine\\/assets\\/index.md",
+          {
+            "id": "tu21"
+          }
+        ],
+        [
+          "An asset is actually unload only when the number of call to unload match the number of call the load.",
+          "Um ativo é realmente descarregar somente quando o número de chamada para descarregar corresponde ao número de chamada da carga.",
+          "An asset is actually unload only when the number of call to unload match the number of call the load.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/engine\\/assets\\/index.md",
+          {
+            "id": "tu22"
+          }
+        ],
+        [
+          "The @'Stride.Core.Serialization.Assets.AssetManager.Get' method returns the reference to a loaded asset but does not increment the asset reference counter.",
+          "O @'Stride.Core.Serialization.Assets.AssetManager. O método Get' retorna a referência a um ativo carregado, mas não incrementa o contador de referência de ativos.",
+          "The @'Stride.Core.Serialization.Assets.AssetManager.Get' method returns the reference to a loaded asset but does not increment the asset reference counter.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/engine\\/assets\\/index.md",
+          {
+            "id": "tu23"
+          }
+        ],
+        [
+          "var firstReference = Content.Load<Texture>(\"MyTexture\"); \\/\\/ load the asset and increase the reference counter (ref count = 1)",
+          "var firstReference = Content.Load<Texture>(\"MyTexture\"); \\/\\/ carregar o ativo e aumentar o contador de referência (contagem de ref = 1)",
+          " var firstReference = Content.Load<Texture>(\"MyTexture\"); \\/\\/ load the asset and increase the reference counter (ref count = 1)\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/engine\\/assets\\/index.md",
+          {
+            "id": "tu24"
+          }
+        ],
+        [
+          "\\/\\/ the texture can be used here",
+          "\\/\\/ a textura pode ser usada aqui",
+          " \r\n\\/\\/ the texture can be used here\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/engine\\/assets\\/index.md",
+          {
+            "id": "tu24"
+          }
+        ],
+        [
+          "var secondReference = Content.Load<Texture>(\"MyTexture\"); \\/\\/ only increase the reference counter (ref count = 2)",
+          "var secondReference = Content.Load<Texture>(\"MyTexture\"); \\/\\/ só aumentar o contador de referência (contagem de ref = 2)",
+          " \r\nvar secondReference = Content.Load<Texture>(\"MyTexture\"); \\/\\/ only increase the reference counter (ref count = 2)\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/engine\\/assets\\/index.md",
+          {
+            "id": "tu24"
+          }
+        ],
+        [
+          "\\/\\/ the texture can still be used here",
+          "\\/\\/ a textura ainda pode ser usada aqui",
+          " \r\n\\/\\/ the texture can still be used here\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/engine\\/assets\\/index.md",
+          {
+            "id": "tu24"
+          }
+        ],
+        [
+          "Asset.Unload(firstReference); \\/\\/ decrease the reference counter (ref count = 1)",
+          "Asset.Unload(firstReference); \\/\\/ diminuem o contador de referência (ref count = 1)",
+          " \r\nAsset.Unload(firstReference); \\/\\/ decrease the reference counter (ref count = 1)\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/engine\\/assets\\/index.md",
+          {
+            "id": "tu24"
+          }
+        ],
+        [
+          "\\/\\/ the texture can still be used here",
+          "\\/\\/ a textura ainda pode ser usada aqui",
+          " \r\n\\/\\/ the texture can still be used here\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/engine\\/assets\\/index.md",
+          {
+            "id": "tu24"
+          }
+        ],
+        [
+          "Asset.Get<Texture>(\"MyTexture\"); \\/\\/ return the loaded asset without increasing the reference counter (ref count = 1)",
+          "Asset.Get<Texture>(\"MyTexture\"); \\/\\/ retornar o ativo carregado sem aumentar o contador de referência (contagem de ref = 1)",
+          " \r\nAsset.Get<Texture>(\"MyTexture\"); \\/\\/ return the loaded asset without increasing the reference counter (ref count = 1)\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/engine\\/assets\\/index.md",
+          {
+            "id": "tu24"
+          }
+        ],
+        [
+          "\\/\\/ the texture can still be used here",
+          "\\/\\/ a textura ainda pode ser usada aqui",
+          " \r\n\\/\\/ the texture can still be used here\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/engine\\/assets\\/index.md",
+          {
+            "id": "tu24"
+          }
+        ],
+        [
+          "Asset.Unload(secondReference); \\/\\/ decrease the reference counter and unload the asset (ref count = 0)",
+          "Asset.Unload(secondReference); \\/\\/ diminuem o contador de referência e descarreguem o ativo (contagem de retorno = 0)",
+          "Asset.Unload(secondReference); \\/\\/ decrease the reference counter and unload the asset (ref count = 0)\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/engine\\/assets\\/index.md",
+          {
+            "id": "tu24"
+          }
+        ],
+        [
+          "\\/\\/ The texture has been unloaded, it cannot be used here any more.",
+          "\\/\\/ A textura foi descarregada, não pode ser usada aqui mais.",
+          " \r\n\\/\\/ The texture has been unloaded, it cannot be used here any more.\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/engine\\/assets\\/index.md",
+          {
+            "id": "tu24"
+          }
+        ]
+      ]
+    }
+  ],
+  "seg_enabled": false
 }

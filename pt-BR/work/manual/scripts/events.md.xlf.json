@@ -1,460 +1,460 @@
 {
-    "filename": "manual\\scripts\\events.md.xlf",
-    "files": [
-        {
-            "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/events.md": [
-                [
-                    "Events",
-                    "",
-                    "Events",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/events.md",
-                    {
-                        "id": "tu1"
-                    }
-                ],
-                [
-                    "<x1\/>Intermediate<x2\/>",
-                    "",
-                    "<x1\/>Intermediate<x2\/>\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/events.md",
-                    {
-                        "id": "tu2"
-                    }
-                ],
-                [
-                    "<x3\/>Programmer<x4\/>",
-                    "",
-                    "<x3\/>Programmer<x4\/>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/events.md",
-                    {
-                        "id": "tu2"
-                    }
-                ],
-                [
-                    "<g1>Events<\/g1> facilitate communication between scripts.",
-                    "",
-                    "<g1>Events<\/g1> facilitate communication between scripts.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/events.md",
-                    {
-                        "id": "tu3"
-                    }
-                ],
-                [
-                    "They work one-way, broadcast from <g2>broadcasters<\/g2> to <g3>receivers<\/g3>.",
-                    "",
-                    " They work one-way, broadcast from <g2>broadcasters<\/g2> to <g3>receivers<\/g3>.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/events.md",
-                    {
-                        "id": "tu3"
-                    }
-                ],
-                [
-                    "Events come in two flavors, a non-generic version for basic event broadcasting, and a generic version for when data needs to be passed to receivers.",
-                    "",
-                    " Events come in two flavors, a non-generic version for basic event broadcasting, and a generic version for when data needs to be passed to receivers.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/events.md",
-                    {
-                        "id": "tu3"
-                    }
-                ],
-                [
-                    "For example, imagine your game has a \"Game Over\" state that occurs when the player dies.",
-                    "",
-                    "For example, imagine your game has a \"Game Over\" state that occurs when the player dies.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/events.md",
-                    {
-                        "id": "tu4"
-                    }
-                ],
-                [
-                    "To handle this, you can create a \"Game Over\" event, which is broadcast to all scripts with receivers listening for the event.",
-                    "",
-                    " To handle this, you can create a \"Game Over\" event, which is broadcast to all scripts with receivers listening for the event.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/events.md",
-                    {
-                        "id": "tu4"
-                    }
-                ],
-                [
-                    "When the event is broadcast, the receivers run appropriate scripts to handle the Game Over event (eg reset enemies, replace level objects, start a new timer, etc).",
-                    "",
-                    " When the event is broadcast, the receivers run appropriate scripts to handle the Game Over event (eg reset enemies, replace level objects, start a new timer, etc).",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/events.md",
-                    {
-                        "id": "tu4"
-                    }
-                ],
-                [
-                    "You can also send information related to the \"Game Over\" state (eg game stats, who won, etc).",
-                    "",
-                    " You can also send information related to the \"Game Over\" state (eg game stats, who won, etc).",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/events.md",
-                    {
-                        "id": "tu4"
-                    }
-                ],
-                [
-                    "<x1\/>!Note<x2\/>",
-                    "",
-                    "<x1\/>!Note<x2\/>\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/events.md",
-                    {
-                        "id": "tu5"
-                    }
-                ],
-                [
-                    "Events are handled entirely in scripts.",
-                    "",
-                    "Events are handled entirely in scripts.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/events.md",
-                    {
-                        "id": "tu5"
-                    }
-                ],
-                [
-                    "You can't configure them in Game Studio.",
-                    "",
-                    " You can't configure them in Game Studio.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/events.md",
-                    {
-                        "id": "tu5"
-                    }
-                ],
-                [
-                    "Create and broadcast an event",
-                    "",
-                    "Create and broadcast an event",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/events.md",
-                    {
-                        "id": "tu6"
-                    }
-                ],
-                [
-                    "Broadcasters in the Stride API are of type <g1>EventKey<\/g1> or <g2>EventKey&lt;T><\/g2>.",
-                    "",
-                    "Broadcasters in the Stride API are of type <g1>EventKey<\/g1> or <g2>EventKey&lt;T><\/g2>.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/events.md",
-                    {
-                        "id": "tu7"
-                    }
-                ],
-                [
-                    "They use the method <g3>Broadcast<\/g3> or <g4>Broadcast(T)<\/g4> to broadcast events to receivers.",
-                    "",
-                    " They use the method <g3>Broadcast<\/g3> or <g4>Broadcast(T)<\/g4> to broadcast events to receivers.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/events.md",
-                    {
-                        "id": "tu7"
-                    }
-                ],
-                [
-                    "For example, this code creates two \"Game Over\" events.",
-                    "",
-                    "For example, this code creates two \"Game Over\" events.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/events.md",
-                    {
-                        "id": "tu8"
-                    }
-                ],
-                [
-                    "One with a non-generic and the other with a generic version of EventKey:",
-                    "",
-                    " One with a non-generic and the other with a generic version of EventKey:",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/events.md",
-                    {
-                        "id": "tu8"
-                    }
-                ],
-                [
-                    "public static class GlobalEvents",
-                    "",
-                    "public static class GlobalEvents\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/events.md",
-                    {
-                        "id": "tu9"
-                    }
-                ],
-                [
-                    "{",
-                    "",
-                    "{\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/events.md",
-                    {
-                        "id": "tu9"
-                    }
-                ],
-                [
-                    "public static EventKey GameOverEventKey = new EventKey(\"Global\", \"Game Over\");",
-                    "",
-                    "    public static EventKey GameOverEventKey = new EventKey(\"Global\", \"Game Over\");\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/events.md",
-                    {
-                        "id": "tu9"
-                    }
-                ],
-                [
-                    "public static EventKey<string> GameOverWithDataEventKey = new EventKey<string>(\"Global\", \"Game Over With Data\");",
-                    "",
-                    "    public static EventKey<string> GameOverWithDataEventKey = new EventKey<string>(\"Global\", \"Game Over With Data\");\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/events.md",
-                    {
-                        "id": "tu9"
-                    }
-                ],
-                [
-                    "public static void SendGameOverEvent()",
-                    "",
-                    "\r\n    public static void SendGameOverEvent()\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/events.md",
-                    {
-                        "id": "tu9"
-                    }
-                ],
-                [
-                    "{",
-                    "",
-                    "    {\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/events.md",
-                    {
-                        "id": "tu9"
-                    }
-                ],
-                [
-                    "GameOverEventKey.Broadcast();",
-                    "",
-                    "        GameOverEventKey.Broadcast();\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/events.md",
-                    {
-                        "id": "tu9"
-                    }
-                ],
-                [
-                    "GameOverWithDataEventKey.Broadcast(\"Player 1\");",
-                    "",
-                    "        GameOverWithDataEventKey.Broadcast(\"Player 1\");\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/events.md",
-                    {
-                        "id": "tu9"
-                    }
-                ],
-                [
-                    "}",
-                    "",
-                    "    }\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/events.md",
-                    {
-                        "id": "tu9"
-                    }
-                ],
-                [
-                    "}",
-                    "",
-                    "}\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/events.md",
-                    {
-                        "id": "tu9"
-                    }
-                ],
-                [
-                    "Create a receiver",
-                    "",
-                    "Create a receiver",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/events.md",
-                    {
-                        "id": "tu10"
-                    }
-                ],
-                [
-                    "Receivers in the Stride API are of type <g1>EventReceiver<\/g1> or <g2>EventReceiver&lt;T><\/g2>.",
-                    "",
-                    "Receivers in the Stride API are of type <g1>EventReceiver<\/g1> or <g2>EventReceiver&lt;T><\/g2>.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/events.md",
-                    {
-                        "id": "tu11"
-                    }
-                ],
-                [
-                    "To receive the \"Game Over\" events described above, use:",
-                    "",
-                    "To receive the \"Game Over\" events described above, use:",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/events.md",
-                    {
-                        "id": "tu12"
-                    }
-                ],
-                [
-                    "var gameOverListener = new EventReceiver(GlobalEvents.GameOverEventKey);",
-                    "",
-                    "var gameOverListener = new EventReceiver(GlobalEvents.GameOverEventKey);\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/events.md",
-                    {
-                        "id": "tu13"
-                    }
-                ],
-                [
-                    "var gameIsOver = gameOverListener.TryReceive();",
-                    "",
-                    "var gameIsOver = gameOverListener.TryReceive();\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/events.md",
-                    {
-                        "id": "tu13"
-                    }
-                ],
-                [
-                    "var gameOverListenerWithData = new EventReceiver<string>(GlobalEvents.GameOverWithDataEventKey);",
-                    "",
-                    "\r\nvar gameOverListenerWithData = new EventReceiver<string>(GlobalEvents.GameOverWithDataEventKey);\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/events.md",
-                    {
-                        "id": "tu13"
-                    }
-                ],
-                [
-                    "if(gameOverListenerWithData.TryReceive(out string data))",
-                    "",
-                    "if(gameOverListenerWithData.TryReceive(out string data))\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/events.md",
-                    {
-                        "id": "tu13"
-                    }
-                ],
-                [
-                    "{",
-                    "",
-                    "{\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/events.md",
-                    {
-                        "id": "tu13"
-                    }
-                ],
-                [
-                    "\/\/data == \"Player 1\"",
-                    "",
-                    "\t\/\/data == \"Player 1\"\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/events.md",
-                    {
-                        "id": "tu13"
-                    }
-                ],
-                [
-                    "}",
-                    "",
-                    "}\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/events.md",
-                    {
-                        "id": "tu13"
-                    }
-                ],
-                [
-                    "\/\/Or in Async",
-                    "",
-                    "\r\n\/\/Or in Async\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/events.md",
-                    {
-                        "id": "tu13"
-                    }
-                ],
-                [
-                    "await gameOverListener.ReceiveAsync();",
-                    "",
-                    "await gameOverListener.ReceiveAsync();\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/events.md",
-                    {
-                        "id": "tu13"
-                    }
-                ],
-                [
-                    "string asyncData = await gameOverListenerWithData.ReceiveAsync();",
-                    "",
-                    "string asyncData = await gameOverListenerWithData.ReceiveAsync();\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/events.md",
-                    {
-                        "id": "tu13"
-                    }
-                ],
-                [
-                    "\/\/asyncData == \"Player 1\"",
-                    "",
-                    "\/\/asyncData == \"Player 1\"\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/events.md",
-                    {
-                        "id": "tu13"
-                    }
-                ],
-                [
-                    "See also",
-                    "",
-                    "See also",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/events.md",
-                    {
-                        "id": "tu14"
-                    }
-                ],
-                [
-                    "Types of script",
-                    "",
-                    "<g1>Types of script<\/g1>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/events.md",
-                    {
-                        "id": "tu15"
-                    }
-                ],
-                [
-                    "Create a script",
-                    "",
-                    "<g1>Create a script<\/g1>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/events.md",
-                    {
-                        "id": "tu16"
-                    }
-                ],
-                [
-                    "Use a script",
-                    "",
-                    "<g1>Use a script<\/g1>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/events.md",
-                    {
-                        "id": "tu17"
-                    }
-                ],
-                [
-                    "Public properties and fields",
-                    "",
-                    "<g1>Public properties and fields<\/g1>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/events.md",
-                    {
-                        "id": "tu18"
-                    }
-                ],
-                [
-                    "Scheduling and priorities",
-                    "",
-                    "<g1>Scheduling and priorities<\/g1>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/events.md",
-                    {
-                        "id": "tu19"
-                    }
-                ],
-                [
-                    "Debugging",
-                    "",
-                    "<g1>Debugging<\/g1>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/events.md",
-                    {
-                        "id": "tu20"
-                    }
-                ],
-                [
-                    "Preprocessor variables",
-                    "",
-                    "<g1>Preprocessor variables<\/g1>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/events.md",
-                    {
-                        "id": "tu21"
-                    }
-                ]
-            ]
-        }
-    ],
-    "seg_enabled": false
+  "filename": "manual\\scripts\\events.md.xlf",
+  "files": [
+    {
+      "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/events.md": [
+        [
+          "Events",
+          "Eventos",
+          "Events",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/events.md",
+          {
+            "id": "tu1"
+          }
+        ],
+        [
+          "<x1\\/>Intermediate<x2\\/>",
+          "<x1\\/> Intermediário <x2\\/>",
+          "<x1\\/>Intermediate<x2\\/>\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/events.md",
+          {
+            "id": "tu2"
+          }
+        ],
+        [
+          "<x3\\/>Programmer<x4\\/>",
+          "<x3\\/> Programador <x4\\/>",
+          "<x3\\/>Programmer<x4\\/>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/events.md",
+          {
+            "id": "tu2"
+          }
+        ],
+        [
+          "<g1>Events<\\/g1> facilitate communication between scripts.",
+          "<g1>Eventos<\\/g1> facilitam a comunicação entre scripts.",
+          "<g1>Events<\\/g1> facilitate communication between scripts.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/events.md",
+          {
+            "id": "tu3"
+          }
+        ],
+        [
+          "They work one-way, broadcast from <g2>broadcasters<\\/g2> to <g3>receivers<\\/g3>.",
+          "Eles trabalham de uma forma, transmitido de <g2>casters<\\/g2> para <g3>receivers<\\/g3>.",
+          " They work one-way, broadcast from <g2>broadcasters<\\/g2> to <g3>receivers<\\/g3>.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/events.md",
+          {
+            "id": "tu3"
+          }
+        ],
+        [
+          "Events come in two flavors, a non-generic version for basic event broadcasting, and a generic version for when data needs to be passed to receivers.",
+          "Eventos vêm em dois sabores, uma versão não-genérica para a transmissão de eventos básicos, e uma versão genérica para quando os dados precisam ser passados para receptores.",
+          " Events come in two flavors, a non-generic version for basic event broadcasting, and a generic version for when data needs to be passed to receivers.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/events.md",
+          {
+            "id": "tu3"
+          }
+        ],
+        [
+          "For example, imagine your game has a \"Game Over\" state that occurs when the player dies.",
+          "Por exemplo, imagine seu jogo tem um estado \"Game Over\" que ocorre quando o jogador morre.",
+          "For example, imagine your game has a \"Game Over\" state that occurs when the player dies.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/events.md",
+          {
+            "id": "tu4"
+          }
+        ],
+        [
+          "To handle this, you can create a \"Game Over\" event, which is broadcast to all scripts with receivers listening for the event.",
+          "Para lidar com isso, você pode criar um evento \"Game Over\", que é transmitido a todos os scripts com receptores ouvindo para o evento.",
+          " To handle this, you can create a \"Game Over\" event, which is broadcast to all scripts with receivers listening for the event.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/events.md",
+          {
+            "id": "tu4"
+          }
+        ],
+        [
+          "When the event is broadcast, the receivers run appropriate scripts to handle the Game Over event (eg reset enemies, replace level objects, start a new timer, etc).",
+          "Quando o evento é transmitido, os receptores executam scripts apropriados para lidar com o evento Game Over (por exemplo, redefinir inimigos, substituir objetos de nível, iniciar um novo temporizador, etc).",
+          " When the event is broadcast, the receivers run appropriate scripts to handle the Game Over event (eg reset enemies, replace level objects, start a new timer, etc).",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/events.md",
+          {
+            "id": "tu4"
+          }
+        ],
+        [
+          "You can also send information related to the \"Game Over\" state (eg game stats, who won, etc).",
+          "Você também pode enviar informações relacionadas ao estado \"Game Over\" (por exemplo, estatísticas de jogo, que ganhou, etc).",
+          " You can also send information related to the \"Game Over\" state (eg game stats, who won, etc).",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/events.md",
+          {
+            "id": "tu4"
+          }
+        ],
+        [
+          "<x1\\/>!Note<x2\\/>",
+          "<x1\\/>!Note<x2\\/>",
+          "<x1\\/>!Note<x2\\/>\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/events.md",
+          {
+            "id": "tu5"
+          }
+        ],
+        [
+          "Events are handled entirely in scripts.",
+          "Os eventos são tratados inteiramente em scripts.",
+          "Events are handled entirely in scripts.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/events.md",
+          {
+            "id": "tu5"
+          }
+        ],
+        [
+          "You can't configure them in Game Studio.",
+          "Você não pode configurá-los no Game Studio.",
+          " You can't configure them in Game Studio.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/events.md",
+          {
+            "id": "tu5"
+          }
+        ],
+        [
+          "Create and broadcast an event",
+          "Criar e transmitir um evento",
+          "Create and broadcast an event",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/events.md",
+          {
+            "id": "tu6"
+          }
+        ],
+        [
+          "Broadcasters in the Stride API are of type <g1>EventKey<\\/g1> or <g2>EventKey&lt;T><\\/g2>.",
+          "Os transmissores na API Stride são do tipo <g1>EventKey<\\/g1> ou <g2>EventKey<T><\\/g2>.",
+          "Broadcasters in the Stride API are of type <g1>EventKey<\\/g1> or <g2>EventKey&lt;T><\\/g2>.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/events.md",
+          {
+            "id": "tu7"
+          }
+        ],
+        [
+          "They use the method <g3>Broadcast<\\/g3> or <g4>Broadcast(T)<\\/g4> to broadcast events to receivers.",
+          "Eles usam o método <g3>Broadcast<\\/g3> ou <g4>Broadcast(T)<\\/g4> para transmitir eventos aos receptores.",
+          " They use the method <g3>Broadcast<\\/g3> or <g4>Broadcast(T)<\\/g4> to broadcast events to receivers.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/events.md",
+          {
+            "id": "tu7"
+          }
+        ],
+        [
+          "For example, this code creates two \"Game Over\" events.",
+          "Por exemplo, este código cria dois eventos \"Game Over\".",
+          "For example, this code creates two \"Game Over\" events.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/events.md",
+          {
+            "id": "tu8"
+          }
+        ],
+        [
+          "One with a non-generic and the other with a generic version of EventKey:",
+          "Um com um não-genérico e outro com uma versão genérica do EventKey:",
+          " One with a non-generic and the other with a generic version of EventKey:",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/events.md",
+          {
+            "id": "tu8"
+          }
+        ],
+        [
+          "public static class GlobalEvents",
+          "classe estática pública Global Eventos",
+          "public static class GlobalEvents\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/events.md",
+          {
+            "id": "tu9"
+          }
+        ],
+        [
+          "{",
+          "(",
+          "{\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/events.md",
+          {
+            "id": "tu9"
+          }
+        ],
+        [
+          "public static EventKey GameOverEventKey = new EventKey(\"Global\", \"Game Over\");",
+          "estática pública Evento Key GameOverEventKey = novo EventKey(\"Global\", \"Game Over\");",
+          "    public static EventKey GameOverEventKey = new EventKey(\"Global\", \"Game Over\");\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/events.md",
+          {
+            "id": "tu9"
+          }
+        ],
+        [
+          "public static EventKey<string> GameOverWithDataEventKey = new EventKey<string>(\"Global\", \"Game Over With Data\");",
+          "estática pública EventKey<string> GameOverWithDataEventKey = novo EventKey<string>(\"Global\", \"Game Over With Data\");",
+          "    public static EventKey<string> GameOverWithDataEventKey = new EventKey<string>(\"Global\", \"Game Over With Data\");\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/events.md",
+          {
+            "id": "tu9"
+          }
+        ],
+        [
+          "public static void SendGameOverEvent()",
+          "vazio estático público SendGameOverEvent()",
+          "\r\n    public static void SendGameOverEvent()\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/events.md",
+          {
+            "id": "tu9"
+          }
+        ],
+        [
+          "{",
+          "(",
+          "    {\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/events.md",
+          {
+            "id": "tu9"
+          }
+        ],
+        [
+          "GameOverEventKey.Broadcast();",
+          "GameOverEventKey.Broadcast();",
+          "        GameOverEventKey.Broadcast();\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/events.md",
+          {
+            "id": "tu9"
+          }
+        ],
+        [
+          "GameOverWithDataEventKey.Broadcast(\"Player 1\");",
+          "GameOverWithDataEventKey.Broadcast(\"Player 1\");",
+          "        GameOverWithDataEventKey.Broadcast(\"Player 1\");\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/events.md",
+          {
+            "id": "tu9"
+          }
+        ],
+        [
+          "}",
+          "",
+          "    }\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/events.md",
+          {
+            "id": "tu9"
+          }
+        ],
+        [
+          "}",
+          "",
+          "}\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/events.md",
+          {
+            "id": "tu9"
+          }
+        ],
+        [
+          "Create a receiver",
+          "Criar um receptor",
+          "Create a receiver",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/events.md",
+          {
+            "id": "tu10"
+          }
+        ],
+        [
+          "Receivers in the Stride API are of type <g1>EventReceiver<\\/g1> or <g2>EventReceiver&lt;T><\\/g2>.",
+          "Os receptores na API Stride são do tipo <g1>EventReceiver<\\/g1> ou <g2>EventReceiver<T><\\/g2>.",
+          "Receivers in the Stride API are of type <g1>EventReceiver<\\/g1> or <g2>EventReceiver&lt;T><\\/g2>.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/events.md",
+          {
+            "id": "tu11"
+          }
+        ],
+        [
+          "To receive the \"Game Over\" events described above, use:",
+          "Para receber os eventos \"Game Over\" descritos acima, use:",
+          "To receive the \"Game Over\" events described above, use:",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/events.md",
+          {
+            "id": "tu12"
+          }
+        ],
+        [
+          "var gameOverListener = new EventReceiver(GlobalEvents.GameOverEventKey);",
+          "jogo de var OverListener = novo EventReceiver (GlobalEvents.GameOverEventKey);",
+          "var gameOverListener = new EventReceiver(GlobalEvents.GameOverEventKey);\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/events.md",
+          {
+            "id": "tu13"
+          }
+        ],
+        [
+          "var gameIsOver = gameOverListener.TryReceive();",
+          "var gameIsOver = gameOverListener.TryReceive();",
+          "var gameIsOver = gameOverListener.TryReceive();\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/events.md",
+          {
+            "id": "tu13"
+          }
+        ],
+        [
+          "var gameOverListenerWithData = new EventReceiver<string>(GlobalEvents.GameOverWithDataEventKey);",
+          "jogo de var OverListenerWithData = novo EventReceiver<string> (GlobalEvents.GameOverWithDataEventKey);",
+          "\r\nvar gameOverListenerWithData = new EventReceiver<string>(GlobalEvents.GameOverWithDataEventKey);\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/events.md",
+          {
+            "id": "tu13"
+          }
+        ],
+        [
+          "if(gameOverListenerWithData.TryReceive(out string data))",
+          "if(gameOverListenerWithData.TryReceive (out string data)))",
+          "if(gameOverListenerWithData.TryReceive(out string data))\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/events.md",
+          {
+            "id": "tu13"
+          }
+        ],
+        [
+          "{",
+          "(",
+          "{\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/events.md",
+          {
+            "id": "tu13"
+          }
+        ],
+        [
+          "\\/\\/data == \"Player 1\"",
+          "- Sim. \"Player 1\"",
+          "\t\\/\\/data == \"Player 1\"\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/events.md",
+          {
+            "id": "tu13"
+          }
+        ],
+        [
+          "}",
+          "",
+          "}\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/events.md",
+          {
+            "id": "tu13"
+          }
+        ],
+        [
+          "\\/\\/Or in Async",
+          "\\/\\/Or em Async",
+          "\r\n\\/\\/Or in Async\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/events.md",
+          {
+            "id": "tu13"
+          }
+        ],
+        [
+          "await gameOverListener.ReceiveAsync();",
+          "await gameOverListener.ReceiveAsync();",
+          "await gameOverListener.ReceiveAsync();\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/events.md",
+          {
+            "id": "tu13"
+          }
+        ],
+        [
+          "string asyncData = await gameOverListenerWithData.ReceiveAsync();",
+          "string asyncData = await gameOverListenerWithData.ReceiveAsync();",
+          "string asyncData = await gameOverListenerWithData.ReceiveAsync();\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/events.md",
+          {
+            "id": "tu13"
+          }
+        ],
+        [
+          "\\/\\/asyncData == \"Player 1\"",
+          "\\/\\/asyncData == \"Player 1\"",
+          "\\/\\/asyncData == \"Player 1\"\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/events.md",
+          {
+            "id": "tu13"
+          }
+        ],
+        [
+          "See also",
+          "Ver também",
+          "See also",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/events.md",
+          {
+            "id": "tu14"
+          }
+        ],
+        [
+          "Types of script",
+          "Tipos de script",
+          "<g1>Types of script<\\/g1>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/events.md",
+          {
+            "id": "tu15"
+          }
+        ],
+        [
+          "Create a script",
+          "Criar um script",
+          "<g1>Create a script<\\/g1>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/events.md",
+          {
+            "id": "tu16"
+          }
+        ],
+        [
+          "Use a script",
+          "Use um script",
+          "<g1>Use a script<\\/g1>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/events.md",
+          {
+            "id": "tu17"
+          }
+        ],
+        [
+          "Public properties and fields",
+          "Propriedades e campos públicos",
+          "<g1>Public properties and fields<\\/g1>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/events.md",
+          {
+            "id": "tu18"
+          }
+        ],
+        [
+          "Scheduling and priorities",
+          "Programação e prioridades",
+          "<g1>Scheduling and priorities<\\/g1>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/events.md",
+          {
+            "id": "tu19"
+          }
+        ],
+        [
+          "Debugging",
+          "Depuração",
+          "<g1>Debugging<\\/g1>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/events.md",
+          {
+            "id": "tu20"
+          }
+        ],
+        [
+          "Preprocessor variables",
+          "Variáveis de pré-processamento",
+          "<g1>Preprocessor variables<\\/g1>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/scripts\\/events.md",
+          {
+            "id": "tu21"
+          }
+        ]
+      ]
+    }
+  ],
+  "seg_enabled": false
 }

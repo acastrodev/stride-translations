@@ -1,27 +1,27 @@
-# Adding a component
-You can find this sample in the tutorial project: **Menu** &rarr; **Adding a component**
+# Adicionando um componente
+Você pode encontrar esta amostra no projeto tutorial: **Menu** → **Adicionando um componente**
 
-## Explanation
-This C# Beginner tutorial covers how to add and remove components.
+## Explicação
+Este tutorial C# Beginner abrange como adicionar e remover componentes.
 
-In the previous tutorial we learned how we can retrieve components that are already attached to an entity through the editor. This tutorial shows that we can accomplish the same thing by code.
+No tutorial anterior aprendemos como podemos recuperar componentes que já estão ligados a uma entidade através do editor. Este tutorial mostra que podemos realizar a mesma coisa por código.
 
-We can add the same component several times to the same entity. We also learn how to remove all of components of the same type again.
+Podemos adicionar o mesmo componente várias vezes à mesma entidade. Também aprendemos como remover todos os componentes do mesmo tipo novamente.
 
-![Add a component](media/adding-a-component.webp)
+<x1\/> Adicionar um componente<x2\/>
 
 
-> [!Video https://www.youtube.com/embed/KGuBSRyRmVo]
+> <x1\/>!Vídeo https:\/\/www.youtube.com\/embed\/KGuBSRyRmVo<x2\/>
 
-## Code
+## Código
 ### AmmoComponent
-This is the AmmoComponent. We will not attach it to the entity in the editor. Instead we will add it ourselves in the AddingAComponent script.
+Este é o AmmoComponent. Não vamos anexá-lo à entidade no editor. Em vez disso vamos adicioná-lo no script AddingAComponent.
 
 [!code-csharp[AmmoComponent](../../../../stride/samples/Tutorials/CSharpBeginner/CSharpBeginner/CSharpBeginner.Game/Code/AmmoComponent.cs)]
 
-### Adding A Component
-This component script, will add the AmmoComponent script to the entity. We then add another component (of the same type) before we remove all components of that type.
+### Adicionando um componente
+Este script de componente, irá adicionar o script AmmoComponent à entidade. Em seguida, adicionamos outro componente (do mesmo tipo) antes de remover todos os componentes desse tipo.
 
-Finally we learn how to automatically create a component, attach it to the entity and get a reference all in 1 line of code. This only works if the entity doesn't have any components of the given attached yet.
+Finalmente aprendemos como criar automaticamente um componente, anexá-lo à entidade e obter uma referência tudo em 1 linha de código. Isso só funciona se a entidade não tiver quaisquer componentes do dado anexado ainda.
 
 [!code-csharp[AddingAComponent](../../../../stride/samples/Tutorials/CSharpBeginner/CSharpBeginner/CSharpBeginner.Game/Code/AddingAComponentDemo.cs)]

@@ -1,829 +1,829 @@
 {
-    "filename": "manual\\graphics\\cameras\\animate-a-camera-with-a-model-file.md.xlf",
-    "files": [
-        {
-            "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/cameras\/animate-a-camera-with-a-model-file.md": [
-                [
-                    "Animate a camera with a model file",
-                    "",
-                    "Animate a camera with a model file",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/cameras\/animate-a-camera-with-a-model-file.md",
-                    {
-                        "id": "tu1"
-                    }
-                ],
-                [
-                    "<x1\/>Beginner<x2\/>",
-                    "",
-                    "<x1\/>Beginner<x2\/>\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/cameras\/animate-a-camera-with-a-model-file.md",
-                    {
-                        "id": "tu2"
-                    }
-                ],
-                [
-                    "<x3\/>Artist<x4\/>",
-                    "",
-                    "<x3\/>Artist<x4\/>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/cameras\/animate-a-camera-with-a-model-file.md",
-                    {
-                        "id": "tu2"
-                    }
-                ],
-                [
-                    "Like other entities, you can <g1>animate<\/g1> cameras using animations imported from 3D model files such as <g2>.3ds<\/g2>, <g3>.fbx<\/g3>, and <g4>.obj<\/g4>.",
-                    "",
-                    "Like other entities, you can <g1>animate<\/g1> cameras using animations imported from 3D model files such as <g2>.3ds<\/g2>, <g3>.fbx<\/g3>, and <g4>.obj<\/g4>.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/cameras\/animate-a-camera-with-a-model-file.md",
-                    {
-                        "id": "tu3"
-                    }
-                ],
-                [
-                    "<x1\/>!Note<x2\/>",
-                    "",
-                    "<x1\/>!Note<x2\/>\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/cameras\/animate-a-camera-with-a-model-file.md",
-                    {
-                        "id": "tu4"
-                    }
-                ],
-                [
-                    "To animate a camera using a model file, you first need to bake the animation using your modeling tool (eg Maya, 3ds Max or Blender).",
-                    "",
-                    "To animate a camera using a model file, you first need to bake the animation using your modeling tool (eg Maya, 3ds Max or Blender).\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/cameras\/animate-a-camera-with-a-model-file.md",
-                    {
-                        "id": "tu4"
-                    }
-                ],
-                [
-                    "Stride doesn't support cameras animated using target cameras.",
-                    "",
-                    "Stride doesn't support cameras animated using target cameras.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/cameras\/animate-a-camera-with-a-model-file.md",
-                    {
-                        "id": "tu4"
-                    }
-                ],
-                [
-                    "If the camera moves independently, the simplest method is to export the camera animation as a separate file, enable the <g1>root motion<\/g1> option on the animation, then add the camera, animation, and animation script to the same entity.",
-                    "",
-                    "If the camera moves independently, the simplest method is to export the camera animation as a separate file, enable the <g1>root motion<\/g1> option on the animation, then add the camera, animation, and animation script to the same entity.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/cameras\/animate-a-camera-with-a-model-file.md",
-                    {
-                        "id": "tu5"
-                    }
-                ],
-                [
-                    "If the animations include FOV or near or far plane animations, the Stride camera updates accordingly.",
-                    "",
-                    " If the animations include FOV or near or far plane animations, the Stride camera updates accordingly.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/cameras\/animate-a-camera-with-a-model-file.md",
-                    {
-                        "id": "tu5"
-                    }
-                ],
-                [
-                    "With this method, you don't need a model or a skeleton.",
-                    "",
-                    " With this method, you don't need a model or a skeleton.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/cameras\/animate-a-camera-with-a-model-file.md",
-                    {
-                        "id": "tu5"
-                    }
-                ],
-                [
-                    "If you want the camera to move in tandem with another animation — for example, if the camera is held by a cameraman character with its own model, skeleton and animation — use a <g1>model node link<\/g1> component to link the camera entity to the cameraman's movements.",
-                    "",
-                    "If you want the camera to move in tandem with another animation — for example, if the camera is held by a cameraman character with its own model, skeleton and animation — use a <g1>model node link<\/g1> component to link the camera entity to the cameraman's movements.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/cameras\/animate-a-camera-with-a-model-file.md",
-                    {
-                        "id": "tu6"
-                    }
-                ],
-                [
-                    "Animate a camera independently",
-                    "",
-                    "Animate a camera independently",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/cameras\/animate-a-camera-with-a-model-file.md",
-                    {
-                        "id": "tu7"
-                    }
-                ],
-                [
-                    "To do this, you need the following assets in your project:",
-                    "",
-                    "To do this, you need the following assets in your project:",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/cameras\/animate-a-camera-with-a-model-file.md",
-                    {
-                        "id": "tu8"
-                    }
-                ],
-                [
-                    "a <g1>camera entity<\/g1>, the camera to be animated",
-                    "",
-                    "a <g1>camera entity<\/g1>, the camera to be animated",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/cameras\/animate-a-camera-with-a-model-file.md",
-                    {
-                        "id": "tu9"
-                    }
-                ],
-                [
-                    "an <g1>animation<\/g1>, to animate the camera (exported separately in your modeling tool)",
-                    "",
-                    "an <g1>animation<\/g1>, to animate the camera (exported separately in your modeling tool)",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/cameras\/animate-a-camera-with-a-model-file.md",
-                    {
-                        "id": "tu10"
-                    }
-                ],
-                [
-                    "an <g1>animation script<\/g1>, to play the animation",
-                    "",
-                    "an <g1>animation script<\/g1>, to play the animation",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/cameras\/animate-a-camera-with-a-model-file.md",
-                    {
-                        "id": "tu11"
-                    }
-                ],
-                [
-                    "In the <g1>Asset View<\/g1>, select the animation asset you want to use to animate the camera.",
-                    "",
-                    "In the <g1>Asset View<\/g1>, select the animation asset you want to use to animate the camera.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/cameras\/animate-a-camera-with-a-model-file.md",
-                    {
-                        "id": "tu12"
-                    }
-                ],
-                [
-                    "<x1\/>Select animation asset<x2\/>",
-                    "",
-                    "<x1\/>Select animation asset<x2\/>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/cameras\/animate-a-camera-with-a-model-file.md",
-                    {
-                        "id": "tu13"
-                    }
-                ],
-                [
-                    "<x1\/>!Note<x2\/>",
-                    "",
-                    "<x1\/>!Note<x2\/>\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/cameras\/animate-a-camera-with-a-model-file.md",
-                    {
-                        "id": "tu14"
-                    }
-                ],
-                [
-                    "For instructions about how import animations, see <g1>Import animations<\/g1>.",
-                    "",
-                    "For instructions about how import animations, see <g1>Import animations<\/g1>.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/cameras\/animate-a-camera-with-a-model-file.md",
-                    {
-                        "id": "tu14"
-                    }
-                ],
-                [
-                    "In the <g1>Property Grid<\/g1>, enable <g2>Root motion<\/g2>.",
-                    "",
-                    "In the <g1>Property Grid<\/g1>, enable <g2>Root motion<\/g2>.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/cameras\/animate-a-camera-with-a-model-file.md",
-                    {
-                        "id": "tu15"
-                    }
-                ],
-                [
-                    "<x1\/>Enable root motion<x2\/>",
-                    "",
-                    "<x1\/>Enable root motion<x2\/>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/cameras\/animate-a-camera-with-a-model-file.md",
-                    {
-                        "id": "tu16"
-                    }
-                ],
-                [
-                    "When root motion is enabled, Stride applies the <g1>root node animation<\/g1> to the <g2>TransformComponent<\/g2> of the entity you add the animation to, instead of applying it to the skeleton.",
-                    "",
-                    "When root motion is enabled, Stride applies the <g1>root node animation<\/g1> to the <g2>TransformComponent<\/g2> of the entity you add the animation to, instead of applying it to the skeleton.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/cameras\/animate-a-camera-with-a-model-file.md",
-                    {
-                        "id": "tu17"
-                    }
-                ],
-                [
-                    "<x1\/>!Note<x2\/>",
-                    "",
-                    "<x1\/>!Note<x2\/>\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/cameras\/animate-a-camera-with-a-model-file.md",
-                    {
-                        "id": "tu18"
-                    }
-                ],
-                [
-                    "If there is no skeleton specified in <g1>Skeleton<\/g1>, Stride always applies the animation to <g2>TransformComponent<\/g2>, even if <g3>root motion<\/g3> is disabled.",
-                    "",
-                    "If there is no skeleton specified in <g1>Skeleton<\/g1>, Stride always applies the animation to <g2>TransformComponent<\/g2>, even if <g3>root motion<\/g3> is disabled.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/cameras\/animate-a-camera-with-a-model-file.md",
-                    {
-                        "id": "tu18"
-                    }
-                ],
-                [
-                    "In the <g1>Scene Editor<\/g1>, select the entity that contains the camera you want to animate.",
-                    "",
-                    "In the <g1>Scene Editor<\/g1>, select the entity that contains the camera you want to animate.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/cameras\/animate-a-camera-with-a-model-file.md",
-                    {
-                        "id": "tu19"
-                    }
-                ],
-                [
-                    "<x1\/>!Note<x2\/>",
-                    "",
-                    "<x1\/>!Note<x2\/>\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/cameras\/animate-a-camera-with-a-model-file.md",
-                    {
-                        "id": "tu20"
-                    }
-                ],
-                [
-                    "For instructions about how add cameras, see <g1>Cameras<\/g1>.",
-                    "",
-                    "For instructions about how add cameras, see <g1>Cameras<\/g1>.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/cameras\/animate-a-camera-with-a-model-file.md",
-                    {
-                        "id": "tu20"
-                    }
-                ],
-                [
-                    "In the <g1>Property Grid<\/g1>, click <g2>Add component<\/g2> and select <g3>Animations<\/g3>.",
-                    "",
-                    "In the <g1>Property Grid<\/g1>, click <g2>Add component<\/g2> and select <g3>Animations<\/g3>.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/cameras\/animate-a-camera-with-a-model-file.md",
-                    {
-                        "id": "tu21"
-                    }
-                ],
-                [
-                    "<x1\/>Select an entity<x2\/>",
-                    "",
-                    "<x1\/>Select an entity<x2\/>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/cameras\/animate-a-camera-with-a-model-file.md",
-                    {
-                        "id": "tu22"
-                    }
-                ],
-                [
-                    "Game Studio adds an animation component to the entity.",
-                    "",
-                    "Game Studio adds an animation component to the entity.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/cameras\/animate-a-camera-with-a-model-file.md",
-                    {
-                        "id": "tu23"
-                    }
-                ],
-                [
-                    "<x1\/>Animation component<x2\/>",
-                    "",
-                    "<x1\/>Animation component<x2\/>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/cameras\/animate-a-camera-with-a-model-file.md",
-                    {
-                        "id": "tu24"
-                    }
-                ],
-                [
-                    "Next to <g1>Animations<\/g1>, click <x1\/>Green plus button<x2\/> (<g2>Add<\/g2>) and type a name.",
-                    "",
-                    "Next to <g1>Animations<\/g1>, click <x1\/>Green plus button<x2\/> (<g2>Add<\/g2>) and type a name.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/cameras\/animate-a-camera-with-a-model-file.md",
-                    {
-                        "id": "tu25"
-                    }
-                ],
-                [
-                    "<x1\/>Add animation<x2\/>",
-                    "",
-                    "<x1\/>Add animation<x2\/>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/cameras\/animate-a-camera-with-a-model-file.md",
-                    {
-                        "id": "tu26"
-                    }
-                ],
-                [
-                    "Game Studio adds an animation to the list.",
-                    "",
-                    "Game Studio adds an animation to the list.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/cameras\/animate-a-camera-with-a-model-file.md",
-                    {
-                        "id": "tu27"
-                    }
-                ],
-                [
-                    "<x1\/>Animation added<x2\/>",
-                    "",
-                    "<x1\/>Animation added<x2\/>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/cameras\/animate-a-camera-with-a-model-file.md",
-                    {
-                        "id": "tu28"
-                    }
-                ],
-                [
-                    "Next to the animation you added, click <x1\/>Hand icon<x2\/> (<g1>Select an asset<\/g1>).",
-                    "",
-                    "Next to the animation you added, click <x1\/>Hand icon<x2\/> (<g1>Select an asset<\/g1>).",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/cameras\/animate-a-camera-with-a-model-file.md",
-                    {
-                        "id": "tu29"
-                    }
-                ],
-                [
-                    "The <g1>Select an asset<\/g1> window opens.",
-                    "",
-                    "The <g1>Select an asset<\/g1> window opens.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/cameras\/animate-a-camera-with-a-model-file.md",
-                    {
-                        "id": "tu30"
-                    }
-                ],
-                [
-                    "<x1\/>Select an asset<x2\/>",
-                    "",
-                    "<x1\/>Select an asset<x2\/>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/cameras\/animate-a-camera-with-a-model-file.md",
-                    {
-                        "id": "tu31"
-                    }
-                ],
-                [
-                    "Select the animation you want to use to animate the camera and click <g1>OK<\/g1>.",
-                    "",
-                    "Select the animation you want to use to animate the camera and click <g1>OK<\/g1>.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/cameras\/animate-a-camera-with-a-model-file.md",
-                    {
-                        "id": "tu32"
-                    }
-                ],
-                [
-                    "Click <g1>Add component<\/g1> and select the animation script you want to use to animate the camera.",
-                    "",
-                    "Click <g1>Add component<\/g1> and select the animation script you want to use to animate the camera.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/cameras\/animate-a-camera-with-a-model-file.md",
-                    {
-                        "id": "tu33"
-                    }
-                ],
-                [
-                    "<x1\/>Add animation script<x2\/>",
-                    "",
-                    "<x1\/>Add animation script<x2\/>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/cameras\/animate-a-camera-with-a-model-file.md",
-                    {
-                        "id": "tu34"
-                    }
-                ],
-                [
-                    "Game Studio adds the script to the entity as a component.",
-                    "",
-                    "Game Studio adds the script to the entity as a component.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/cameras\/animate-a-camera-with-a-model-file.md",
-                    {
-                        "id": "tu35"
-                    }
-                ],
-                [
-                    "<x1\/>!Note<x2\/>",
-                    "",
-                    "<x1\/>!Note<x2\/>\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/cameras\/animate-a-camera-with-a-model-file.md",
-                    {
-                        "id": "tu36"
-                    }
-                ],
-                [
-                    "For instructions about how to add animation scripts, see <g1>Animation scripts<\/g1>.",
-                    "",
-                    "For instructions about how to add animation scripts, see <g1>Animation scripts<\/g1>.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/cameras\/animate-a-camera-with-a-model-file.md",
-                    {
-                        "id": "tu36"
-                    }
-                ],
-                [
-                    "Under the script component, next to <g1>Animations<\/g1>, click <x1\/>Green plus button<x2\/> (<g2>Add<\/g2>).",
-                    "",
-                    "Under the script component, next to <g1>Animations<\/g1>, click <x1\/>Green plus button<x2\/> (<g2>Add<\/g2>).",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/cameras\/animate-a-camera-with-a-model-file.md",
-                    {
-                        "id": "tu37"
-                    }
-                ],
-                [
-                    "<x1\/>Add animation to the list<x2\/>",
-                    "",
-                    "<x1\/>Add animation to the list<x2\/>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/cameras\/animate-a-camera-with-a-model-file.md",
-                    {
-                        "id": "tu38"
-                    }
-                ],
-                [
-                    "Next to <g1>Clip<\/g1>, click <x1\/>Hand icon<x2\/> (<g2>Select an asset<\/g2>).",
-                    "",
-                    "Next to <g1>Clip<\/g1>, click <x1\/>Hand icon<x2\/> (<g2>Select an asset<\/g2>).",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/cameras\/animate-a-camera-with-a-model-file.md",
-                    {
-                        "id": "tu39"
-                    }
-                ],
-                [
-                    "The <g1>Select an asset<\/g1> window opens.",
-                    "",
-                    "The <g1>Select an asset<\/g1> window opens.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/cameras\/animate-a-camera-with-a-model-file.md",
-                    {
-                        "id": "tu40"
-                    }
-                ],
-                [
-                    "<x1\/>Select an asset<x2\/>",
-                    "",
-                    "<x1\/>Select an asset<x2\/>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/cameras\/animate-a-camera-with-a-model-file.md",
-                    {
-                        "id": "tu41"
-                    }
-                ],
-                [
-                    "Select the animation asset you want to use to animate the camera and click <g1>OK<\/g1>.",
-                    "",
-                    "Select the animation asset you want to use to animate the camera and click <g1>OK<\/g1>.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/cameras\/animate-a-camera-with-a-model-file.md",
-                    {
-                        "id": "tu42"
-                    }
-                ],
-                [
-                    "At runtime, the camera uses the animation.",
-                    "",
-                    "At runtime, the camera uses the animation.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/cameras\/animate-a-camera-with-a-model-file.md",
-                    {
-                        "id": "tu43"
-                    }
-                ],
-                [
-                    "If the animation includes FOV or near or far plane animations, the Stride camera updates accordingly.",
-                    "",
-                    " If the animation includes FOV or near or far plane animations, the Stride camera updates accordingly.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/cameras\/animate-a-camera-with-a-model-file.md",
-                    {
-                        "id": "tu43"
-                    }
-                ],
-                [
-                    "Attach the camera to a node on another model",
-                    "",
-                    "Attach the camera to a node on another model",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/cameras\/animate-a-camera-with-a-model-file.md",
-                    {
-                        "id": "tu44"
-                    }
-                ],
-                [
-                    "To move a camera in tandem with another model, create a separate entity for the camera, then use a <g1>model node link<\/g1> component to link the entity to the correct node.",
-                    "",
-                    "To move a camera in tandem with another model, create a separate entity for the camera, then use a <g1>model node link<\/g1> component to link the entity to the correct node.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/cameras\/animate-a-camera-with-a-model-file.md",
-                    {
-                        "id": "tu45"
-                    }
-                ],
-                [
-                    "To do this, you need the following assets in your project:",
-                    "",
-                    "To do this, you need the following assets in your project:",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/cameras\/animate-a-camera-with-a-model-file.md",
-                    {
-                        "id": "tu46"
-                    }
-                ],
-                [
-                    "a <g1>camera entity<\/g1>, the camera you want to animate",
-                    "",
-                    "a <g1>camera entity<\/g1>, the camera you want to animate",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/cameras\/animate-a-camera-with-a-model-file.md",
-                    {
-                        "id": "tu47"
-                    }
-                ],
-                [
-                    "a <g1>model<\/g1>, to attach the camera to",
-                    "",
-                    "a <g1>model<\/g1>, to attach the camera to",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/cameras\/animate-a-camera-with-a-model-file.md",
-                    {
-                        "id": "tu48"
-                    }
-                ],
-                [
-                    "a <g1>skeleton<\/g1> that matches the model",
-                    "",
-                    "a <g1>skeleton<\/g1> that matches the model",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/cameras\/animate-a-camera-with-a-model-file.md",
-                    {
-                        "id": "tu49"
-                    }
-                ],
-                [
-                    "an <g1>animation<\/g1>, to animate the model",
-                    "",
-                    "an <g1>animation<\/g1>, to animate the model",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/cameras\/animate-a-camera-with-a-model-file.md",
-                    {
-                        "id": "tu50"
-                    }
-                ],
-                [
-                    "an <g1>animation script<\/g1>, to play the animation",
-                    "",
-                    "an <g1>animation script<\/g1>, to play the animation",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/cameras\/animate-a-camera-with-a-model-file.md",
-                    {
-                        "id": "tu51"
-                    }
-                ],
-                [
-                    "<x1\/>!Note<x2\/>",
-                    "",
-                    "<x1\/>!Note<x2\/>\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/cameras\/animate-a-camera-with-a-model-file.md",
-                    {
-                        "id": "tu52"
-                    }
-                ],
-                [
-                    "FOV and near or far plane animations are ignored if you use this method.",
-                    "",
-                    "FOV and near or far plane animations are ignored if you use this method.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/cameras\/animate-a-camera-with-a-model-file.md",
-                    {
-                        "id": "tu52"
-                    }
-                ],
-                [
-                    "In the <g1>Asset View<\/g1>, select the model you want to link the camera to.",
-                    "",
-                    "In the <g1>Asset View<\/g1>, select the model you want to link the camera to.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/cameras\/animate-a-camera-with-a-model-file.md",
-                    {
-                        "id": "tu53"
-                    }
-                ],
-                [
-                    "Next to <g2>Skeleton<\/g2>, make sure a skeleton is specified that matches the model.",
-                    "",
-                    " Next to <g2>Skeleton<\/g2>, make sure a skeleton is specified that matches the model.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/cameras\/animate-a-camera-with-a-model-file.md",
-                    {
-                        "id": "tu53"
-                    }
-                ],
-                [
-                    "Make sure the entity you want to attach the camera to has the model, animation clip, and animation script components needed to animate it.",
-                    "",
-                    "Make sure the entity you want to attach the camera to has the model, animation clip, and animation script components needed to animate it.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/cameras\/animate-a-camera-with-a-model-file.md",
-                    {
-                        "id": "tu54"
-                    }
-                ],
-                [
-                    "<x1\/>!Note<x2\/>",
-                    "",
-                    "<x1\/>!Note<x2\/>\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/cameras\/animate-a-camera-with-a-model-file.md",
-                    {
-                        "id": "tu55"
-                    }
-                ],
-                [
-                    "For instructions about how to add these, see <g1>Animation<\/g1>.",
-                    "",
-                    "For instructions about how to add these, see <g1>Animation<\/g1>.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/cameras\/animate-a-camera-with-a-model-file.md",
-                    {
-                        "id": "tu55"
-                    }
-                ],
-                [
-                    "With the camera entity selected, in the <g1>Property Grid<\/g1>, click <g2>Add component<\/g2> and select <g3>Model node link<\/g3>.",
-                    "",
-                    "With the camera entity selected, in the <g1>Property Grid<\/g1>, click <g2>Add component<\/g2> and select <g3>Model node link<\/g3>.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/cameras\/animate-a-camera-with-a-model-file.md",
-                    {
-                        "id": "tu56"
-                    }
-                ],
-                [
-                    "<x1\/>Add component<x2\/>",
-                    "",
-                    "<x1\/>Add component<x2\/>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/cameras\/animate-a-camera-with-a-model-file.md",
-                    {
-                        "id": "tu57"
-                    }
-                ],
-                [
-                    "<x1\/>!Note<x2\/>",
-                    "",
-                    "<x1\/>!Note<x2\/>\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/cameras\/animate-a-camera-with-a-model-file.md",
-                    {
-                        "id": "tu58"
-                    }
-                ],
-                [
-                    "The <g1>TransformComponent<\/g1> applies an offset to the model node position.",
-                    "",
-                    "The <g1>TransformComponent<\/g1> applies an offset to the model node position.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/cameras\/animate-a-camera-with-a-model-file.md",
-                    {
-                        "id": "tu58"
-                    }
-                ],
-                [
-                    "If you don't want to add an offset, make sure the <g2>TransformComponent<\/g2> is set to <g3>0,0,0<\/g3>.",
-                    "",
-                    " If you don't want to add an offset, make sure the <g2>TransformComponent<\/g2> is set to <g3>0,0,0<\/g3>.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/cameras\/animate-a-camera-with-a-model-file.md",
-                    {
-                        "id": "tu58"
-                    }
-                ],
-                [
-                    "Game Studio adds a model link component to the entity.",
-                    "",
-                    "Game Studio adds a model link component to the entity.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/cameras\/animate-a-camera-with-a-model-file.md",
-                    {
-                        "id": "tu59"
-                    }
-                ],
-                [
-                    "<x1\/>Model node link component<x2\/>",
-                    "",
-                    "<x1\/>Model node link component<x2\/>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/cameras\/animate-a-camera-with-a-model-file.md",
-                    {
-                        "id": "tu60"
-                    }
-                ],
-                [
-                    "Next to <g1>Target<\/g1>, click <x1\/>Hand icon<x2\/> and select the entity that has the model you want to link the camera to.",
-                    "",
-                    "Next to <g1>Target<\/g1>, click <x1\/>Hand icon<x2\/> and select the entity that has the model you want to link the camera to.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/cameras\/animate-a-camera-with-a-model-file.md",
-                    {
-                        "id": "tu61"
-                    }
-                ],
-                [
-                    "<x1\/>Select an entity<x2\/>",
-                    "",
-                    "<x1\/>Select an entity<x2\/>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/cameras\/animate-a-camera-with-a-model-file.md",
-                    {
-                        "id": "tu62"
-                    }
-                ],
-                [
-                    "Alternatively, leave the <g1>Target<\/g1> field blank.",
-                    "",
-                    "Alternatively, leave the <g1>Target<\/g1> field blank.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/cameras\/animate-a-camera-with-a-model-file.md",
-                    {
-                        "id": "tu63"
-                    }
-                ],
-                [
-                    "In the <g2>Entity Tree<\/g2>, drag the <g3>camera entity<\/g3> you want to animate to the entity that contains the model.",
-                    "",
-                    " In the <g2>Entity Tree<\/g2>, drag the <g3>camera entity<\/g3> you want to animate to the entity that contains the model.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/cameras\/animate-a-camera-with-a-model-file.md",
-                    {
-                        "id": "tu63"
-                    }
-                ],
-                [
-                    "Stride links the entity to the model on the parent entity.",
-                    "",
-                    " Stride links the entity to the model on the parent entity.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/cameras\/animate-a-camera-with-a-model-file.md",
-                    {
-                        "id": "tu63"
-                    }
-                ],
-                [
-                    "<x1\/>Parent and child<x2\/>",
-                    "",
-                    "<x1\/>Parent and child<x2\/>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/cameras\/animate-a-camera-with-a-model-file.md",
-                    {
-                        "id": "tu64"
-                    }
-                ],
-                [
-                    "In <g1>Node name<\/g1>, select the node you want to link the camera to.",
-                    "",
-                    "In <g1>Node name<\/g1>, select the node you want to link the camera to.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/cameras\/animate-a-camera-with-a-model-file.md",
-                    {
-                        "id": "tu65"
-                    }
-                ],
-                [
-                    "<x1\/>Node link<x2\/>",
-                    "",
-                    "<x1\/>Node link<x2\/>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/cameras\/animate-a-camera-with-a-model-file.md",
-                    {
-                        "id": "tu66"
-                    }
-                ],
-                [
-                    "<x1\/>!Note<x2\/>",
-                    "",
-                    "<x1\/>!Note<x2\/>\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/cameras\/animate-a-camera-with-a-model-file.md",
-                    {
-                        "id": "tu67"
-                    }
-                ],
-                [
-                    "The entity you link to must have a model with a skeleton, even if the model isn't visible at runtime.",
-                    "",
-                    "The entity you link to must have a model with a skeleton, even if the model isn't visible at runtime.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/cameras\/animate-a-camera-with-a-model-file.md",
-                    {
-                        "id": "tu67"
-                    }
-                ],
-                [
-                    "At runtime, the camera uses the animation.",
-                    "",
-                    "At runtime, the camera uses the animation.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/cameras\/animate-a-camera-with-a-model-file.md",
-                    {
-                        "id": "tu68"
-                    }
-                ],
-                [
-                    "See also",
-                    "",
-                    "See also",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/cameras\/animate-a-camera-with-a-model-file.md",
-                    {
-                        "id": "tu69"
-                    }
-                ],
-                [
-                    "Cameras",
-                    "",
-                    "<g1>Cameras<\/g1>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/cameras\/animate-a-camera-with-a-model-file.md",
-                    {
-                        "id": "tu70"
-                    }
-                ],
-                [
-                    "Model node links",
-                    "",
-                    "<g1>Model node links<\/g1>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/cameras\/animate-a-camera-with-a-model-file.md",
-                    {
-                        "id": "tu71"
-                    }
-                ],
-                [
-                    "Animation",
-                    "",
-                    "<g1>Animation<\/g1>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/cameras\/animate-a-camera-with-a-model-file.md",
-                    {
-                        "id": "tu72"
-                    }
-                ],
-                [
-                    "Animation scripts",
-                    "",
-                    "<g1>Animation scripts<\/g1>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/cameras\/animate-a-camera-with-a-model-file.md",
-                    {
-                        "id": "tu73"
-                    }
-                ]
-            ]
-        }
-    ],
-    "seg_enabled": false
+  "filename": "manual\\graphics\\cameras\\animate-a-camera-with-a-model-file.md.xlf",
+  "files": [
+    {
+      "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/cameras\\/animate-a-camera-with-a-model-file.md": [
+        [
+          "Animate a camera with a model file",
+          "Animar uma câmera com um arquivo modelo",
+          "Animate a camera with a model file",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/cameras\\/animate-a-camera-with-a-model-file.md",
+          {
+            "id": "tu1"
+          }
+        ],
+        [
+          "<x1\\/>Beginner<x2\\/>",
+          "<x1\\/>Introdução<x2\\/>",
+          "<x1\\/>Beginner<x2\\/>\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/cameras\\/animate-a-camera-with-a-model-file.md",
+          {
+            "id": "tu2"
+          }
+        ],
+        [
+          "<x3\\/>Artist<x4\\/>",
+          "<x3\\/>Artista <x4\\/>",
+          "<x3\\/>Artist<x4\\/>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/cameras\\/animate-a-camera-with-a-model-file.md",
+          {
+            "id": "tu2"
+          }
+        ],
+        [
+          "Like other entities, you can <g1>animate<\\/g1> cameras using animations imported from 3D model files such as <g2>.3ds<\\/g2>, <g3>.fbx<\\/g3>, and <g4>.obj<\\/g4>.",
+          "Como outras entidades, você pode <g1>animate<\\/g1> câmeras usando animações importadas de arquivos de modelos 3D como <g2>.3ds<\\/g2>, <g3>.fbx<\\/g3>, e <g4>.obj<\\/g4>.",
+          "Like other entities, you can <g1>animate<\\/g1> cameras using animations imported from 3D model files such as <g2>.3ds<\\/g2>, <g3>.fbx<\\/g3>, and <g4>.obj<\\/g4>.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/cameras\\/animate-a-camera-with-a-model-file.md",
+          {
+            "id": "tu3"
+          }
+        ],
+        [
+          "<x1\\/>!Note<x2\\/>",
+          "<x1\\/>!Note<x2\\/>",
+          "<x1\\/>!Note<x2\\/>\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/cameras\\/animate-a-camera-with-a-model-file.md",
+          {
+            "id": "tu4"
+          }
+        ],
+        [
+          "To animate a camera using a model file, you first need to bake the animation using your modeling tool (eg Maya, 3ds Max or Blender).",
+          "Para animar uma câmera usando um arquivo de modelo, você primeiro precisa assar a animação usando sua ferramenta de modelagem (por exemplo, Maya, 3ds Max ou Blender).",
+          "To animate a camera using a model file, you first need to bake the animation using your modeling tool (eg Maya, 3ds Max or Blender).\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/cameras\\/animate-a-camera-with-a-model-file.md",
+          {
+            "id": "tu4"
+          }
+        ],
+        [
+          "Stride doesn't support cameras animated using target cameras.",
+          "Stride não suporta câmeras animadas usando câmeras de destino.",
+          "Stride doesn't support cameras animated using target cameras.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/cameras\\/animate-a-camera-with-a-model-file.md",
+          {
+            "id": "tu4"
+          }
+        ],
+        [
+          "If the camera moves independently, the simplest method is to export the camera animation as a separate file, enable the <g1>root motion<\\/g1> option on the animation, then add the camera, animation, and animation script to the same entity.",
+          "Se a câmera se mover de forma independente, o método mais simples é exportar a animação da câmera como um arquivo separado, ativar a opção <g1>root motion<\\/g1> na animação, em seguida, adicionar a câmera, animação e script de animação para a mesma entidade.",
+          "If the camera moves independently, the simplest method is to export the camera animation as a separate file, enable the <g1>root motion<\\/g1> option on the animation, then add the camera, animation, and animation script to the same entity.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/cameras\\/animate-a-camera-with-a-model-file.md",
+          {
+            "id": "tu5"
+          }
+        ],
+        [
+          "If the animations include FOV or near or far plane animations, the Stride camera updates accordingly.",
+          "Se as animações incluir FOV ou animações de plano próximo ou distante, a câmera Stride atualiza de acordo.",
+          " If the animations include FOV or near or far plane animations, the Stride camera updates accordingly.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/cameras\\/animate-a-camera-with-a-model-file.md",
+          {
+            "id": "tu5"
+          }
+        ],
+        [
+          "With this method, you don't need a model or a skeleton.",
+          "Com este método, você não precisa de um modelo ou um esqueleto.",
+          " With this method, you don't need a model or a skeleton.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/cameras\\/animate-a-camera-with-a-model-file.md",
+          {
+            "id": "tu5"
+          }
+        ],
+        [
+          "If you want the camera to move in tandem with another animation — for example, if the camera is held by a cameraman character with its own model, skeleton and animation — use a <g1>model node link<\\/g1> component to link the camera entity to the cameraman's movements.",
+          "Se você quiser que a câmera se mova em conjunto com outra animação — por exemplo, se a câmera é mantida por um personagem do cameraman com seu próprio modelo, esqueleto e animação — use um componente <g1>model node link<\\/g1> para ligar a entidade da câmera aos movimentos do cameraman.",
+          "If you want the camera to move in tandem with another animation — for example, if the camera is held by a cameraman character with its own model, skeleton and animation — use a <g1>model node link<\\/g1> component to link the camera entity to the cameraman's movements.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/cameras\\/animate-a-camera-with-a-model-file.md",
+          {
+            "id": "tu6"
+          }
+        ],
+        [
+          "Animate a camera independently",
+          "Animar uma câmera de forma independente",
+          "Animate a camera independently",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/cameras\\/animate-a-camera-with-a-model-file.md",
+          {
+            "id": "tu7"
+          }
+        ],
+        [
+          "To do this, you need the following assets in your project:",
+          "Para fazer isso, você precisa dos seguintes ativos em seu projeto:",
+          "To do this, you need the following assets in your project:",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/cameras\\/animate-a-camera-with-a-model-file.md",
+          {
+            "id": "tu8"
+          }
+        ],
+        [
+          "a <g1>camera entity<\\/g1>, the camera to be animated",
+          "a <g1>camera entidade<\\/g1>, a câmera a ser animada",
+          "a <g1>camera entity<\\/g1>, the camera to be animated",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/cameras\\/animate-a-camera-with-a-model-file.md",
+          {
+            "id": "tu9"
+          }
+        ],
+        [
+          "an <g1>animation<\\/g1>, to animate the camera (exported separately in your modeling tool)",
+          "um <g1>animation<\\/g1>, para animar a câmera (exportada separadamente em sua ferramenta de modelagem)",
+          "an <g1>animation<\\/g1>, to animate the camera (exported separately in your modeling tool)",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/cameras\\/animate-a-camera-with-a-model-file.md",
+          {
+            "id": "tu10"
+          }
+        ],
+        [
+          "an <g1>animation script<\\/g1>, to play the animation",
+          "um script <g1>animation<\\/g1>, para reproduzir a animação",
+          "an <g1>animation script<\\/g1>, to play the animation",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/cameras\\/animate-a-camera-with-a-model-file.md",
+          {
+            "id": "tu11"
+          }
+        ],
+        [
+          "In the <g1>Asset View<\\/g1>, select the animation asset you want to use to animate the camera.",
+          "No <g1>Asset View<\\/g1>, selecione o ativo de animação que deseja usar para animar a câmera.",
+          "In the <g1>Asset View<\\/g1>, select the animation asset you want to use to animate the camera.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/cameras\\/animate-a-camera-with-a-model-file.md",
+          {
+            "id": "tu12"
+          }
+        ],
+        [
+          "<x1\\/>Select animation asset<x2\\/>",
+          "<x1\\/>Selecione a animação comoset<x2\\/>",
+          "<x1\\/>Select animation asset<x2\\/>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/cameras\\/animate-a-camera-with-a-model-file.md",
+          {
+            "id": "tu13"
+          }
+        ],
+        [
+          "<x1\\/>!Note<x2\\/>",
+          "<x1\\/>!Note<x2\\/>",
+          "<x1\\/>!Note<x2\\/>\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/cameras\\/animate-a-camera-with-a-model-file.md",
+          {
+            "id": "tu14"
+          }
+        ],
+        [
+          "For instructions about how import animations, see <g1>Import animations<\\/g1>.",
+          "Para obter instruções sobre como animações de importação, consulte <g1>Import animações<\\/g1>.",
+          "For instructions about how import animations, see <g1>Import animations<\\/g1>.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/cameras\\/animate-a-camera-with-a-model-file.md",
+          {
+            "id": "tu14"
+          }
+        ],
+        [
+          "In the <g1>Property Grid<\\/g1>, enable <g2>Root motion<\\/g2>.",
+          "No <g1>Property Grid<\\/g1>, enable <g2>Root motion<\\/g2>.",
+          "In the <g1>Property Grid<\\/g1>, enable <g2>Root motion<\\/g2>.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/cameras\\/animate-a-camera-with-a-model-file.md",
+          {
+            "id": "tu15"
+          }
+        ],
+        [
+          "<x1\\/>Enable root motion<x2\\/>",
+          "<x1\\/> Habilitar movimento root<x2\\/>",
+          "<x1\\/>Enable root motion<x2\\/>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/cameras\\/animate-a-camera-with-a-model-file.md",
+          {
+            "id": "tu16"
+          }
+        ],
+        [
+          "When root motion is enabled, Stride applies the <g1>root node animation<\\/g1> to the <g2>TransformComponent<\\/g2> of the entity you add the animation to, instead of applying it to the skeleton.",
+          "Quando o movimento raiz é ativado, Stride aplica a animação do nó <g1>root<\\/g1> para o <g2>TransformComponent<\\/g2> da entidade que você adiciona a animação, em vez de aplicá-la ao esqueleto.",
+          "When root motion is enabled, Stride applies the <g1>root node animation<\\/g1> to the <g2>TransformComponent<\\/g2> of the entity you add the animation to, instead of applying it to the skeleton.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/cameras\\/animate-a-camera-with-a-model-file.md",
+          {
+            "id": "tu17"
+          }
+        ],
+        [
+          "<x1\\/>!Note<x2\\/>",
+          "<x1\\/>!Note<x2\\/>",
+          "<x1\\/>!Note<x2\\/>\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/cameras\\/animate-a-camera-with-a-model-file.md",
+          {
+            "id": "tu18"
+          }
+        ],
+        [
+          "If there is no skeleton specified in <g1>Skeleton<\\/g1>, Stride always applies the animation to <g2>TransformComponent<\\/g2>, even if <g3>root motion<\\/g3> is disabled.",
+          "Se não houver nenhum esqueleto especificado em <g1>Skeleton<\\/g1>, Stride sempre aplica a animação a <g2>TransformComponent<\\/g2>, mesmo se <g3>root motion<\\/g3> é desativado.",
+          "If there is no skeleton specified in <g1>Skeleton<\\/g1>, Stride always applies the animation to <g2>TransformComponent<\\/g2>, even if <g3>root motion<\\/g3> is disabled.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/cameras\\/animate-a-camera-with-a-model-file.md",
+          {
+            "id": "tu18"
+          }
+        ],
+        [
+          "In the <g1>Scene Editor<\\/g1>, select the entity that contains the camera you want to animate.",
+          "No <g1>Scene Editor<\\/g1>, selecione a entidade que contém a câmera que deseja animar.",
+          "In the <g1>Scene Editor<\\/g1>, select the entity that contains the camera you want to animate.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/cameras\\/animate-a-camera-with-a-model-file.md",
+          {
+            "id": "tu19"
+          }
+        ],
+        [
+          "<x1\\/>!Note<x2\\/>",
+          "<x1\\/>!Note<x2\\/>",
+          "<x1\\/>!Note<x2\\/>\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/cameras\\/animate-a-camera-with-a-model-file.md",
+          {
+            "id": "tu20"
+          }
+        ],
+        [
+          "For instructions about how add cameras, see <g1>Cameras<\\/g1>.",
+          "Para obter instruções sobre como adicionar câmeras, consulte <g1>Cameras<\\/g1>.",
+          "For instructions about how add cameras, see <g1>Cameras<\\/g1>.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/cameras\\/animate-a-camera-with-a-model-file.md",
+          {
+            "id": "tu20"
+          }
+        ],
+        [
+          "In the <g1>Property Grid<\\/g1>, click <g2>Add component<\\/g2> and select <g3>Animations<\\/g3>.",
+          "No <g1>Property Grid<\\/g1>, clique em <g2>Add component<\\/g2> e selecione <g3>Animações<\\/g3>.",
+          "In the <g1>Property Grid<\\/g1>, click <g2>Add component<\\/g2> and select <g3>Animations<\\/g3>.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/cameras\\/animate-a-camera-with-a-model-file.md",
+          {
+            "id": "tu21"
+          }
+        ],
+        [
+          "<x1\\/>Select an entity<x2\\/>",
+          "<x1\\/>Selecione uma entidade<x2\\/>",
+          "<x1\\/>Select an entity<x2\\/>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/cameras\\/animate-a-camera-with-a-model-file.md",
+          {
+            "id": "tu22"
+          }
+        ],
+        [
+          "Game Studio adds an animation component to the entity.",
+          "Game Studio adiciona um componente de animação à entidade.",
+          "Game Studio adds an animation component to the entity.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/cameras\\/animate-a-camera-with-a-model-file.md",
+          {
+            "id": "tu23"
+          }
+        ],
+        [
+          "<x1\\/>Animation component<x2\\/>",
+          "<x1\\/>Animação componente<x2\\/>",
+          "<x1\\/>Animation component<x2\\/>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/cameras\\/animate-a-camera-with-a-model-file.md",
+          {
+            "id": "tu24"
+          }
+        ],
+        [
+          "Next to <g1>Animations<\\/g1>, click <x1\\/>Green plus button<x2\\/> (<g2>Add<\\/g2>) and type a name.",
+          "Ao lado de <g1>Animações<\\/g1>, clique em <x1\\/>Verde mais botão<x2\\/> (<g2>Add<\\/g2>) e digite um nome.",
+          "Next to <g1>Animations<\\/g1>, click <x1\\/>Green plus button<x2\\/> (<g2>Add<\\/g2>) and type a name.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/cameras\\/animate-a-camera-with-a-model-file.md",
+          {
+            "id": "tu25"
+          }
+        ],
+        [
+          "<x1\\/>Add animation<x2\\/>",
+          "<x1\\/> Adicionar animação<x2\\/>",
+          "<x1\\/>Add animation<x2\\/>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/cameras\\/animate-a-camera-with-a-model-file.md",
+          {
+            "id": "tu26"
+          }
+        ],
+        [
+          "Game Studio adds an animation to the list.",
+          "Game Studio adiciona uma animação à lista.",
+          "Game Studio adds an animation to the list.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/cameras\\/animate-a-camera-with-a-model-file.md",
+          {
+            "id": "tu27"
+          }
+        ],
+        [
+          "<x1\\/>Animation added<x2\\/>",
+          "<x1\\/>Animação adicionada <x2\\/>",
+          "<x1\\/>Animation added<x2\\/>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/cameras\\/animate-a-camera-with-a-model-file.md",
+          {
+            "id": "tu28"
+          }
+        ],
+        [
+          "Next to the animation you added, click <x1\\/>Hand icon<x2\\/> (<g1>Select an asset<\\/g1>).",
+          "Ao lado da animação que você adicionou, clique em <x1\\/>Hand icon<x2\\/> (<g1>Select an asset<\\/g1>).",
+          "Next to the animation you added, click <x1\\/>Hand icon<x2\\/> (<g1>Select an asset<\\/g1>).",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/cameras\\/animate-a-camera-with-a-model-file.md",
+          {
+            "id": "tu29"
+          }
+        ],
+        [
+          "The <g1>Select an asset<\\/g1> window opens.",
+          "A janela <g1>Selecione um ativo<\\/g1> abre.",
+          "The <g1>Select an asset<\\/g1> window opens.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/cameras\\/animate-a-camera-with-a-model-file.md",
+          {
+            "id": "tu30"
+          }
+        ],
+        [
+          "<x1\\/>Select an asset<x2\\/>",
+          "<x1\\/> Selecione um ativo<x2\\/>",
+          "<x1\\/>Select an asset<x2\\/>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/cameras\\/animate-a-camera-with-a-model-file.md",
+          {
+            "id": "tu31"
+          }
+        ],
+        [
+          "Select the animation you want to use to animate the camera and click <g1>OK<\\/g1>.",
+          "Selecione a animação que deseja usar para animar a câmera e clique em <g1>OK<\\/g1>.",
+          "Select the animation you want to use to animate the camera and click <g1>OK<\\/g1>.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/cameras\\/animate-a-camera-with-a-model-file.md",
+          {
+            "id": "tu32"
+          }
+        ],
+        [
+          "Click <g1>Add component<\\/g1> and select the animation script you want to use to animate the camera.",
+          "Clique em <g1> Adicionar componente<\\/g1> e selecione o script de animação que você deseja usar para animar a câmera.",
+          "Click <g1>Add component<\\/g1> and select the animation script you want to use to animate the camera.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/cameras\\/animate-a-camera-with-a-model-file.md",
+          {
+            "id": "tu33"
+          }
+        ],
+        [
+          "<x1\\/>Add animation script<x2\\/>",
+          "<x1\\/> Adicionar script de animação<x2\\/>",
+          "<x1\\/>Add animation script<x2\\/>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/cameras\\/animate-a-camera-with-a-model-file.md",
+          {
+            "id": "tu34"
+          }
+        ],
+        [
+          "Game Studio adds the script to the entity as a component.",
+          "Game Studio adiciona o script à entidade como um componente.",
+          "Game Studio adds the script to the entity as a component.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/cameras\\/animate-a-camera-with-a-model-file.md",
+          {
+            "id": "tu35"
+          }
+        ],
+        [
+          "<x1\\/>!Note<x2\\/>",
+          "<x1\\/>!Note<x2\\/>",
+          "<x1\\/>!Note<x2\\/>\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/cameras\\/animate-a-camera-with-a-model-file.md",
+          {
+            "id": "tu36"
+          }
+        ],
+        [
+          "For instructions about how to add animation scripts, see <g1>Animation scripts<\\/g1>.",
+          "Para obter instruções sobre como adicionar scripts de animação, consulte scripts <g1>Animation<\\/g1>.",
+          "For instructions about how to add animation scripts, see <g1>Animation scripts<\\/g1>.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/cameras\\/animate-a-camera-with-a-model-file.md",
+          {
+            "id": "tu36"
+          }
+        ],
+        [
+          "Under the script component, next to <g1>Animations<\\/g1>, click <x1\\/>Green plus button<x2\\/> (<g2>Add<\\/g2>).",
+          "Sob o componente de script, ao lado de <g1>Animations<\\/g1>, clique em <x1\\/>Green plus button<x2\\/> (<g2>Add<\\/g2>).",
+          "Under the script component, next to <g1>Animations<\\/g1>, click <x1\\/>Green plus button<x2\\/> (<g2>Add<\\/g2>).",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/cameras\\/animate-a-camera-with-a-model-file.md",
+          {
+            "id": "tu37"
+          }
+        ],
+        [
+          "<x1\\/>Add animation to the list<x2\\/>",
+          "<x1\\/> Adicionar animação à lista<x2\\/>",
+          "<x1\\/>Add animation to the list<x2\\/>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/cameras\\/animate-a-camera-with-a-model-file.md",
+          {
+            "id": "tu38"
+          }
+        ],
+        [
+          "Next to <g1>Clip<\\/g1>, click <x1\\/>Hand icon<x2\\/> (<g2>Select an asset<\\/g2>).",
+          "Ao lado de <g1>Clip<\\/g1>, clique em <x1\\/>Hand icon<x2\\/>Select an asset<\\/g2>).",
+          "Next to <g1>Clip<\\/g1>, click <x1\\/>Hand icon<x2\\/> (<g2>Select an asset<\\/g2>).",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/cameras\\/animate-a-camera-with-a-model-file.md",
+          {
+            "id": "tu39"
+          }
+        ],
+        [
+          "The <g1>Select an asset<\\/g1> window opens.",
+          "A janela <g1>Selecione um ativo<\\/g1> abre.",
+          "The <g1>Select an asset<\\/g1> window opens.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/cameras\\/animate-a-camera-with-a-model-file.md",
+          {
+            "id": "tu40"
+          }
+        ],
+        [
+          "<x1\\/>Select an asset<x2\\/>",
+          "<x1\\/> Selecione um ativo<x2\\/>",
+          "<x1\\/>Select an asset<x2\\/>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/cameras\\/animate-a-camera-with-a-model-file.md",
+          {
+            "id": "tu41"
+          }
+        ],
+        [
+          "Select the animation asset you want to use to animate the camera and click <g1>OK<\\/g1>.",
+          "Selecione o ativo de animação que deseja usar para animar a câmera e clique em <g1>OK<\\/g1>.",
+          "Select the animation asset you want to use to animate the camera and click <g1>OK<\\/g1>.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/cameras\\/animate-a-camera-with-a-model-file.md",
+          {
+            "id": "tu42"
+          }
+        ],
+        [
+          "At runtime, the camera uses the animation.",
+          "No tempo de execução, a câmera usa a animação.",
+          "At runtime, the camera uses the animation.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/cameras\\/animate-a-camera-with-a-model-file.md",
+          {
+            "id": "tu43"
+          }
+        ],
+        [
+          "If the animation includes FOV or near or far plane animations, the Stride camera updates accordingly.",
+          "Se a animação incluir FOV ou animações de plano próximo ou distante, a câmera Stride atualiza de acordo.",
+          " If the animation includes FOV or near or far plane animations, the Stride camera updates accordingly.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/cameras\\/animate-a-camera-with-a-model-file.md",
+          {
+            "id": "tu43"
+          }
+        ],
+        [
+          "Attach the camera to a node on another model",
+          "Anexar a câmera para um nó em outro modelo",
+          "Attach the camera to a node on another model",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/cameras\\/animate-a-camera-with-a-model-file.md",
+          {
+            "id": "tu44"
+          }
+        ],
+        [
+          "To move a camera in tandem with another model, create a separate entity for the camera, then use a <g1>model node link<\\/g1> component to link the entity to the correct node.",
+          "Para mover uma câmera em conjunto com outro modelo, crie uma entidade separada para a câmera, em seguida, use um componente <g1>model node link<\\/g1> para vincular a entidade ao nó correto.",
+          "To move a camera in tandem with another model, create a separate entity for the camera, then use a <g1>model node link<\\/g1> component to link the entity to the correct node.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/cameras\\/animate-a-camera-with-a-model-file.md",
+          {
+            "id": "tu45"
+          }
+        ],
+        [
+          "To do this, you need the following assets in your project:",
+          "Para fazer isso, você precisa dos seguintes ativos em seu projeto:",
+          "To do this, you need the following assets in your project:",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/cameras\\/animate-a-camera-with-a-model-file.md",
+          {
+            "id": "tu46"
+          }
+        ],
+        [
+          "a <g1>camera entity<\\/g1>, the camera you want to animate",
+          "a <g1>camera entidade<\\/g1>, a câmera que você deseja animar",
+          "a <g1>camera entity<\\/g1>, the camera you want to animate",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/cameras\\/animate-a-camera-with-a-model-file.md",
+          {
+            "id": "tu47"
+          }
+        ],
+        [
+          "a <g1>model<\\/g1>, to attach the camera to",
+          "a <g1>model<\\/g1>, para anexar a câmera",
+          "a <g1>model<\\/g1>, to attach the camera to",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/cameras\\/animate-a-camera-with-a-model-file.md",
+          {
+            "id": "tu48"
+          }
+        ],
+        [
+          "a <g1>skeleton<\\/g1> that matches the model",
+          "a <g1>skeleton<\\/g1> que corresponde ao modelo",
+          "a <g1>skeleton<\\/g1> that matches the model",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/cameras\\/animate-a-camera-with-a-model-file.md",
+          {
+            "id": "tu49"
+          }
+        ],
+        [
+          "an <g1>animation<\\/g1>, to animate the model",
+          "um <g1>animation<\\/g1>, para animar o modelo",
+          "an <g1>animation<\\/g1>, to animate the model",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/cameras\\/animate-a-camera-with-a-model-file.md",
+          {
+            "id": "tu50"
+          }
+        ],
+        [
+          "an <g1>animation script<\\/g1>, to play the animation",
+          "um script <g1>animation<\\/g1>, para reproduzir a animação",
+          "an <g1>animation script<\\/g1>, to play the animation",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/cameras\\/animate-a-camera-with-a-model-file.md",
+          {
+            "id": "tu51"
+          }
+        ],
+        [
+          "<x1\\/>!Note<x2\\/>",
+          "<x1\\/>!Note<x2\\/>",
+          "<x1\\/>!Note<x2\\/>\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/cameras\\/animate-a-camera-with-a-model-file.md",
+          {
+            "id": "tu52"
+          }
+        ],
+        [
+          "FOV and near or far plane animations are ignored if you use this method.",
+          "FOV e animações planas próximas ou distantes são ignoradas se você usar este método.",
+          "FOV and near or far plane animations are ignored if you use this method.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/cameras\\/animate-a-camera-with-a-model-file.md",
+          {
+            "id": "tu52"
+          }
+        ],
+        [
+          "In the <g1>Asset View<\\/g1>, select the model you want to link the camera to.",
+          "No <g1>Asset View<\\/g1>, selecione o modelo ao qual deseja vincular a câmera.",
+          "In the <g1>Asset View<\\/g1>, select the model you want to link the camera to.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/cameras\\/animate-a-camera-with-a-model-file.md",
+          {
+            "id": "tu53"
+          }
+        ],
+        [
+          "Next to <g2>Skeleton<\\/g2>, make sure a skeleton is specified that matches the model.",
+          "Ao lado de <g2>Skeleton<\\/g2>, certifique-se de que um esqueleto é especificado que corresponde ao modelo.",
+          " Next to <g2>Skeleton<\\/g2>, make sure a skeleton is specified that matches the model.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/cameras\\/animate-a-camera-with-a-model-file.md",
+          {
+            "id": "tu53"
+          }
+        ],
+        [
+          "Make sure the entity you want to attach the camera to has the model, animation clip, and animation script components needed to animate it.",
+          "Certifique-se de que a entidade que você deseja anexar a câmera tem o modelo, clipe de animação e componentes de script de animação necessários para animá-lo.",
+          "Make sure the entity you want to attach the camera to has the model, animation clip, and animation script components needed to animate it.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/cameras\\/animate-a-camera-with-a-model-file.md",
+          {
+            "id": "tu54"
+          }
+        ],
+        [
+          "<x1\\/>!Note<x2\\/>",
+          "<x1\\/>!Note<x2\\/>",
+          "<x1\\/>!Note<x2\\/>\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/cameras\\/animate-a-camera-with-a-model-file.md",
+          {
+            "id": "tu55"
+          }
+        ],
+        [
+          "For instructions about how to add these, see <g1>Animation<\\/g1>.",
+          "Para obter instruções sobre como adicionar estes, consulte <g1>Animation<\\/g1>.",
+          "For instructions about how to add these, see <g1>Animation<\\/g1>.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/cameras\\/animate-a-camera-with-a-model-file.md",
+          {
+            "id": "tu55"
+          }
+        ],
+        [
+          "With the camera entity selected, in the <g1>Property Grid<\\/g1>, click <g2>Add component<\\/g2> and select <g3>Model node link<\\/g3>.",
+          "Com a entidade da câmera selecionada, no <g1>Property Grid<\\/g1>, clique em <g2>Add component<\\/g2> e selecione <g3>Model node link<\\/g3>.",
+          "With the camera entity selected, in the <g1>Property Grid<\\/g1>, click <g2>Add component<\\/g2> and select <g3>Model node link<\\/g3>.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/cameras\\/animate-a-camera-with-a-model-file.md",
+          {
+            "id": "tu56"
+          }
+        ],
+        [
+          "<x1\\/>Add component<x2\\/>",
+          "<x1\\/> Adicionar componente<x2\\/>",
+          "<x1\\/>Add component<x2\\/>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/cameras\\/animate-a-camera-with-a-model-file.md",
+          {
+            "id": "tu57"
+          }
+        ],
+        [
+          "<x1\\/>!Note<x2\\/>",
+          "<x1\\/>!Note<x2\\/>",
+          "<x1\\/>!Note<x2\\/>\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/cameras\\/animate-a-camera-with-a-model-file.md",
+          {
+            "id": "tu58"
+          }
+        ],
+        [
+          "The <g1>TransformComponent<\\/g1> applies an offset to the model node position.",
+          "O <g1>TransformComponent<\\/g1> aplica um deslocamento para a posição do nó do modelo.",
+          "The <g1>TransformComponent<\\/g1> applies an offset to the model node position.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/cameras\\/animate-a-camera-with-a-model-file.md",
+          {
+            "id": "tu58"
+          }
+        ],
+        [
+          "If you don't want to add an offset, make sure the <g2>TransformComponent<\\/g2> is set to <g3>0,0,0<\\/g3>.",
+          "Se você não quiser adicionar um deslocamento, certifique-se de que o <g2>TransformComponent<\\/g2> está definido para <g3>0,0,0<\\/g3>.",
+          " If you don't want to add an offset, make sure the <g2>TransformComponent<\\/g2> is set to <g3>0,0,0<\\/g3>.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/cameras\\/animate-a-camera-with-a-model-file.md",
+          {
+            "id": "tu58"
+          }
+        ],
+        [
+          "Game Studio adds a model link component to the entity.",
+          "Game Studio adiciona um componente de link modelo para a entidade.",
+          "Game Studio adds a model link component to the entity.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/cameras\\/animate-a-camera-with-a-model-file.md",
+          {
+            "id": "tu59"
+          }
+        ],
+        [
+          "<x1\\/>Model node link component<x2\\/>",
+          "<x1\\/>Model nó link componente<x2\\/>",
+          "<x1\\/>Model node link component<x2\\/>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/cameras\\/animate-a-camera-with-a-model-file.md",
+          {
+            "id": "tu60"
+          }
+        ],
+        [
+          "Next to <g1>Target<\\/g1>, click <x1\\/>Hand icon<x2\\/> and select the entity that has the model you want to link the camera to.",
+          "Ao lado de <g1>Target<\\/g1>, clique em <x1\\/>Hand icon<x2\\/> e selecione a entidade que tem o modelo ao qual você deseja vincular a câmera.",
+          "Next to <g1>Target<\\/g1>, click <x1\\/>Hand icon<x2\\/> and select the entity that has the model you want to link the camera to.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/cameras\\/animate-a-camera-with-a-model-file.md",
+          {
+            "id": "tu61"
+          }
+        ],
+        [
+          "<x1\\/>Select an entity<x2\\/>",
+          "<x1\\/>Selecione uma entidade<x2\\/>",
+          "<x1\\/>Select an entity<x2\\/>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/cameras\\/animate-a-camera-with-a-model-file.md",
+          {
+            "id": "tu62"
+          }
+        ],
+        [
+          "Alternatively, leave the <g1>Target<\\/g1> field blank.",
+          "Alternativamente, deixe o campo <g1>Target<\\/g1> em branco.",
+          "Alternatively, leave the <g1>Target<\\/g1> field blank.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/cameras\\/animate-a-camera-with-a-model-file.md",
+          {
+            "id": "tu63"
+          }
+        ],
+        [
+          "In the <g2>Entity Tree<\\/g2>, drag the <g3>camera entity<\\/g3> you want to animate to the entity that contains the model.",
+          "No <g2>Entity Tree<\\/g2>, arraste a entidade <g3>camera<\\/g3> que deseja animar para a entidade que contém o modelo.",
+          " In the <g2>Entity Tree<\\/g2>, drag the <g3>camera entity<\\/g3> you want to animate to the entity that contains the model.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/cameras\\/animate-a-camera-with-a-model-file.md",
+          {
+            "id": "tu63"
+          }
+        ],
+        [
+          "Stride links the entity to the model on the parent entity.",
+          "Stride liga a entidade ao modelo na entidade pai.",
+          " Stride links the entity to the model on the parent entity.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/cameras\\/animate-a-camera-with-a-model-file.md",
+          {
+            "id": "tu63"
+          }
+        ],
+        [
+          "<x1\\/>Parent and child<x2\\/>",
+          "<x1\\/>Parent e child<x2\\/>",
+          "<x1\\/>Parent and child<x2\\/>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/cameras\\/animate-a-camera-with-a-model-file.md",
+          {
+            "id": "tu64"
+          }
+        ],
+        [
+          "In <g1>Node name<\\/g1>, select the node you want to link the camera to.",
+          "Em <g1>Node name<\\/g1>, selecione o nó que deseja vincular a câmera.",
+          "In <g1>Node name<\\/g1>, select the node you want to link the camera to.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/cameras\\/animate-a-camera-with-a-model-file.md",
+          {
+            "id": "tu65"
+          }
+        ],
+        [
+          "<x1\\/>Node link<x2\\/>",
+          "<x1\\/>Node link<x2\\/>",
+          "<x1\\/>Node link<x2\\/>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/cameras\\/animate-a-camera-with-a-model-file.md",
+          {
+            "id": "tu66"
+          }
+        ],
+        [
+          "<x1\\/>!Note<x2\\/>",
+          "<x1\\/>!Note<x2\\/>",
+          "<x1\\/>!Note<x2\\/>\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/cameras\\/animate-a-camera-with-a-model-file.md",
+          {
+            "id": "tu67"
+          }
+        ],
+        [
+          "The entity you link to must have a model with a skeleton, even if the model isn't visible at runtime.",
+          "A entidade que você liga deve ter um modelo com um esqueleto, mesmo que o modelo não seja visível no tempo de execução.",
+          "The entity you link to must have a model with a skeleton, even if the model isn't visible at runtime.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/cameras\\/animate-a-camera-with-a-model-file.md",
+          {
+            "id": "tu67"
+          }
+        ],
+        [
+          "At runtime, the camera uses the animation.",
+          "No tempo de execução, a câmera usa a animação.",
+          "At runtime, the camera uses the animation.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/cameras\\/animate-a-camera-with-a-model-file.md",
+          {
+            "id": "tu68"
+          }
+        ],
+        [
+          "See also",
+          "Ver também",
+          "See also",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/cameras\\/animate-a-camera-with-a-model-file.md",
+          {
+            "id": "tu69"
+          }
+        ],
+        [
+          "Cameras",
+          "Câmeras",
+          "<g1>Cameras<\\/g1>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/cameras\\/animate-a-camera-with-a-model-file.md",
+          {
+            "id": "tu70"
+          }
+        ],
+        [
+          "Model node links",
+          "Modelo de links de nó",
+          "<g1>Model node links<\\/g1>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/cameras\\/animate-a-camera-with-a-model-file.md",
+          {
+            "id": "tu71"
+          }
+        ],
+        [
+          "Animation",
+          "Animação",
+          "<g1>Animation<\\/g1>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/cameras\\/animate-a-camera-with-a-model-file.md",
+          {
+            "id": "tu72"
+          }
+        ],
+        [
+          "Animation scripts",
+          "Scripts de animação",
+          "<g1>Animation scripts<\\/g1>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/cameras\\/animate-a-camera-with-a-model-file.md",
+          {
+            "id": "tu73"
+          }
+        ]
+      ]
+    }
+  ],
+  "seg_enabled": false
 }

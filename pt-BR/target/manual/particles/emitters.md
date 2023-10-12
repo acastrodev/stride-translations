@@ -1,40 +1,40 @@
 # Emitters
 
-<span class="badge text-bg-primary">Beginner</span>
-<span class="badge text-bg-success">Artist</span>
-<span class="badge text-bg-success">Programmer</span>
+<x1\/>Introdução<x2\/>
+<x3\/>Artista <x4\/>
+<x5\/> Programador <x6\/>
 
-**Particle emitters** manage how many particles are in an effect, how they appear, move, and disappear, and how they are drawn. For example, a fire effect might be composed of three separate particle effects: flames, embers, and smoke. Each of these effects is managed by a separate particle emitter.
+**Particle emitters** gerenciar quantas partículas estão em um efeito, como elas aparecem, se movem e desaparecem, e como elas são desenhadas. Por exemplo, um efeito de fogo pode ser composto por três efeitos de partículas separados: chamas, embres e fumaça. Cada um desses efeitos é gerido por um emissor de partículas separadas.
 
-Emitters contain further controls such as [spawners](spawners.md), [initializers](initializers.md), and [updaters](updaters.md).
+Os emissores contêm mais controles como [spawners](spawners.md), [initializers](initializers.md) e [updaters](updaters.md).
 
-![media/particles-reference-emitters-1.png](media/particles-reference-emitters-1.png)
+<x1\/>media\/particles-reference-emitters-1.png<x2\/>
 
-| Property | Description |
+| Propriedade | Descrição |
 | ---------------- | -----------
-| Emitter name | A unique identifier for the particle emitter |
-| Max particles | The maximum number of active particles the emitter can manage at a given time, based on the particles' spawn rate and lifespan. If you leave this at 0, Stride uses its own estimate. |
-| Lifespan | New particles have a lifespan between these two values |
-| Space | Particles in **world** space remain in the world space when the emitter moves away from them. Particles in **local** space always exist in the emitter's local coordinate system; if the emitter moves, rotates, or scales, the particles move with it. |
-| Randomize | Particles use pseudo-random values for everything which requires randomness. If you set this to **Time**, different emitters generate different random numbers. If you set it to **Fixed**, different instances of the same effect behave identically. **Position** acts as Fixed but is different for different positions. |
-| Draw priority | This controls the order in which particles are drawn. Higher numbers have higher priority. For example, if this particle effect has a draw priority of 2, it will be drawn after a particle effect with a draw priority of 1. |
-| Sorting | Choose if the articles should be drawn by **depth** (away from the camera), **age** (particles spawned first are drawn on top), **order**, or in no order **none** (good for additive particles, which need no sorting). |
-| Shape | Specifies the [shape](shapes.md) used to draw the particles |
-| Material | Specifies the [material](materials.md) used to render the particles |
-| Spawners | [Spawners](spawners.md) control how quickly new particles are emitted. To emit particles, emitters must have at least one spawner. |
-| Initializers | [Initializers](initializers.md) set the initial values of new particles |
-| Updaters | [Updaters](updaters.md) update living particles every frame, changing their attributes. Updaters execute in the order in which they appear on the list. |
+| Nome do emissor | Um identificador único para o emissor de partículas |
+| Max partículas | O número máximo de partículas ativas que o emissor pode gerenciar em um determinado momento, com base na taxa de desova das partículas e na vida útil. Se você deixar isso em 0, Stride usa sua própria estimativa. |
+| Tempo de vida | Novas partículas têm uma vida útil entre estes dois valores |
+| Espaço | Partículas no espaço **world** permanecem no espaço mundial quando a emissora se afasta deles. Partículas no espaço **local** sempre existem no sistema de coordenadas local do emissor; se o emissor se move, gira ou escala, as partículas se movem com ele. |
+| Randomize | As partículas usam valores pseudo-aleatórios para tudo o que requer aleatoriedade. Se você definir isso para **Time**, diferentes emissores geram diferentes números aleatórios. Se você configurá-lo para **Fixed**, diferentes instâncias do mesmo efeito comportam-se de forma idêntica. **Position** age como Fixed mas é diferente para posições diferentes. |
+| Prioridade do desenho | Isso controla a ordem em que as partículas são desenhadas. Números mais elevados têm maior prioridade. Por exemplo, se este efeito de partícula tiver uma prioridade de empate de 2, será desenhado após um efeito de partícula com uma prioridade de empate de 1. |
+| Classificação | Escolha se os artigos devem ser desenhados por **profundidade** (fora da câmera), **age** (as partículas geradas primeiro são desenhadas em cima), **order**, ou em nenhuma ordem **none** (bom para partículas aditivas, que não necessitam de classificação). |
+| Forma | Especifica o [shape](shapes.md) usado para desenhar as partículas |
+| Material | Especifica o [material](materials.md) usado para renderizar as partículas |
+| Spawners | [Spawners](spawners.md) control quão rapidamente novas partículas são emitidas. Para emitir partículas, os emissores devem ter pelo menos um spawner. |
+| Iniciantes | [Iniciantes](initializers.md) definem os valores iniciais de novas partículas |
+| Atualizações | [Updaters](updaters.md) atualize partículas vivas cada quadro, alterando seus atributos. Os atualizadores executam na ordem em que aparecem na lista. |
 
-## See also
+## Ver também
 
-* [Create particles](create-particles.md)
+* [Criar partículas](create-particles.md)
 
-* [Shapes](shapes.md)
+* [Formas](shapes.md)
 
-* [Materials](materials.md)
+* [Materiais](materials.md)
 
 * [Spawners](spawners.md)
 
-* [Initializers](initializers.md)
+* [Iniciantes](initializers.md)
 
-* [Updaters](updaters.md)
+* [Atualizações](updaters.md)

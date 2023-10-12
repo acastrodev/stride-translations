@@ -1,14 +1,14 @@
 # ToneMap
 
-**Tone-mapping** takes an HDR buffer as input, and remaps its color to a [0, 255] range so we can display it on a screen.
+**Tone-mapping** leva um buffer HDR como entrada, e refaz sua cor para um <x1\/>0, 255<x2\/> intervalo para que possamos exibi-lo em uma tela.
 
-There are many ways to remap colors from an HDR space to an LDR, depending on the formula you choose.
+Há muitas maneiras de colher cores de um espaço HDR para um LDR, dependendo da fórmula que você escolher.
 
-![media/tonemap-1.png](media/tonemap-1.png)
+<x1\/>media\/tonemap-1.png<x2\/>
 
-Stride supports several tone-mapping operators out of the box:
+Stride suporta vários operadores de Tom-mapping fora da caixa:
 
-- Reinhard (the classic operator)
+- Reinhard (o operador clássico)
 - Exponential
 - Logarithmic
 - Drago
@@ -16,8 +16,8 @@ Stride supports several tone-mapping operators out of the box:
 - Mike-Day
 - U2-Filmic
 
-## See also
+## Ver também
 
-* [Film grain](film-grain.md)
-* [Gamma correction](gamma-correction.md)
-* [Vignetting](vignetting.md)
+* [Grão de filme](film-grain.md)
+* [Correção de gama](gamma-correction.md)
+* [Vignetação](vignetting.md)

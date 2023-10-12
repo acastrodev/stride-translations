@@ -3,329 +3,329 @@
 <body>
 <trans-unit id="tu1" xml:space="preserve">
 <source xml:lang="en">Light shafts</source>
-<target xml:lang="pt">Light shafts</target>
+<target xml:lang="pt">Eixos de luz</target>
 </trans-unit>
 <trans-unit id="tu2" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Beginner<x id="2"/>
 <x id="3"/>Designer<x id="4"/>
 <x id="5"/>Artist<x id="6"/></source>
-<target xml:lang="pt"><x id="1"/>Beginner<x id="2"/>
-<x id="3"/>Designer<x id="4"/>
-<x id="5"/>Artist<x id="6"/></target>
+<target xml:lang="pt">&lt;x1\/&gt;Introdução&lt;x2\/&gt;
+&lt;x3\/&gt;Designer&lt;x4\/&gt;
+&lt;x5\/&gt;Artista &lt;x6\/&gt;</target>
 </trans-unit>
 <trans-unit id="tu3" xml:space="preserve">
 <source xml:lang="en"><g id="1">Light shafts</g>, also called <g id="2">god rays</g>, are visible rays of light.</source>
-<target xml:lang="pt"><g id="1">Light shafts</g>, also called <g id="2">god rays</g>, are visible rays of light.</target>
+<target xml:lang="pt"><g id="1"> Eixos de luz </g>, também chamados <g id="2"> raios </g>, são raios visíveis de luz.</target>
 </trans-unit>
 <group id="sd1_ssf7" resname="sub-filter:sd1">
 </group>
 <trans-unit id="tu4" xml:space="preserve">
 <source xml:lang="en">Stride light shafts are based on <g id="1">shadow maps</g> and use raymarching rather than post effects, so they're visible even when the light source isn't. Any light source that casts shadows (ie <g id="2">point lights</g>, <g id="3">directional lights</g> and <g id="4">spot lights</g>) can cast light shafts.</source>
-<target xml:lang="pt">Stride light shafts are based on <g id="1">shadow maps</g> and use raymarching rather than post effects, so they're visible even when the light source isn't. Any light source that casts shadows (ie <g id="2">point lights</g>, <g id="3">directional lights</g> and <g id="4">spot lights</g>) can cast light shafts.</target>
+<target xml:lang="pt">Os eixos de luz Stride são baseados em mapas de sombra <g id="1"/> e usam raymarching em vez de efeitos postais, então eles são visíveis mesmo quando a fonte de luz não é. Qualquer fonte de luz que lança sombras (ou seja, <g id="2">ponto luzes</g>, <g id="3"> luzes direcionais</g> e <g id="4">spot luzes</g>) pode lançar eixos de luz.</target>
 </trans-unit>
 <trans-unit id="tu5" xml:space="preserve">
 <source xml:lang="en">To create light shafts, use three components together: <g id="1">lights</g>, <g id="2">light shafts</g>, and <g id="3">light shaft bounding volumes</g>.</source>
-<target xml:lang="pt">To create light shafts, use three components together: <g id="1">lights</g>, <g id="2">light shafts</g>, and <g id="3">light shaft bounding volumes</g>.</target>
+<target xml:lang="pt">Para criar eixos de luz, use três componentes juntos: <g id="1">lights</g>, <g id="2"> eixos de luz</g>, e <g id="3"> volumes de ligação do eixo de luz </g>.</target>
 </trans-unit>
 <trans-unit id="tu6" xml:space="preserve">
 <source xml:lang="en">1. Enable light shafts in the graphics compositor</source>
-<target xml:lang="pt">1. Enable light shafts in the graphics compositor</target>
+<target xml:lang="pt">1. Habilite eixos de luz no compositor gráfico</target>
 </trans-unit>
 <trans-unit id="tu7" xml:space="preserve">
 <source xml:lang="en">By default, Stride disables light shafts in new projects. To enable them:</source>
-<target xml:lang="pt">By default, Stride disables light shafts in new projects. To enable them:</target>
+<target xml:lang="pt">Por padrão, o Stride desativa eixos de luz em novos projetos. Para lhes permitir:</target>
 </trans-unit>
 <trans-unit id="tu8" xml:space="preserve">
 <source xml:lang="en">In the <g id="1">Asset View</g> (in the bottom pane by default), double-click the <g id="2">Graphics Compositor</g> asset.</source>
-<target xml:lang="pt">In the <g id="1">Asset View</g> (in the bottom pane by default), double-click the <g id="2">Graphics Compositor</g> asset.</target>
+<target xml:lang="pt">No <g id="1">Asset View</g> (no painel inferior por padrão), clique duas vezes no <g id="2">Graphics Compositor</g> ativo.</target>
 </trans-unit>
 <trans-unit id="tu9" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Graphics Compositor asset<x id="2"/></source>
-<target xml:lang="pt"><x id="1"/>Graphics Compositor asset<x id="2"/></target>
+<target xml:lang="pt">&lt;x1\/&gt;Gráficos Compositor asset&lt;x2\/&gt;</target>
 </trans-unit>
 <trans-unit id="tu10" xml:space="preserve">
 <source xml:lang="en">The graphics compositor editor opens.</source>
-<target xml:lang="pt">The graphics compositor editor opens.</target>
+<target xml:lang="pt">O editor de compositores gráficos abre.</target>
 </trans-unit>
 <trans-unit id="tu11" xml:space="preserve">
 <source xml:lang="en">Select the <g id="1">forward renderer</g> node.</source>
-<target xml:lang="pt">Select the <g id="1">forward renderer</g> node.</target>
+<target xml:lang="pt">Selecione o nó <g id="1">forward renderer</g>.</target>
 </trans-unit>
 <trans-unit id="tu12" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Select forward renderer<x id="2"/></source>
-<target xml:lang="pt"><x id="1"/>Select forward renderer<x id="2"/></target>
+<target xml:lang="pt">&lt;x1\/&gt;Selecionar renderizador &lt;x2\/&gt;</target>
 </trans-unit>
 <trans-unit id="tu13" xml:space="preserve">
 <source xml:lang="en">In the <g id="1">Property Grid</g> (on the right by default), next to <g id="2">Light shafts</g>, click <x id="3"/>Blue arrow button<x id="4"/> (<g id="5">Replace</g>) and select <g id="6">LightShafts</g>.</source>
-<target xml:lang="pt">In the <g id="1">Property Grid</g> (on the right by default), next to <g id="2">Light shafts</g>, click <x id="3"/>Blue arrow button<x id="4"/> (<g id="5">Replace</g>) and select <g id="6">LightShafts</g>.</target>
+<target xml:lang="pt">No <g id="1">Property Grid</g> (à direita por padrão), ao lado de <g id="2">Light shafts</g>, clique em &lt;x1\/&gt; Botão de seta azul&lt;x2\/&gt; (<g id="5"> Substituir</g>) e selecione <g id="6">LightShafts</g>.</target>
 </trans-unit>
 <trans-unit id="tu14" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Select light shafts<x id="2"/></source>
-<target xml:lang="pt"><x id="1"/>Select light shafts<x id="2"/></target>
+<target xml:lang="pt">&lt;x1\/&gt;Selecione eixos de luz&lt;x2\/&gt;</target>
 </trans-unit>
 <trans-unit id="tu15" xml:space="preserve">
 <source xml:lang="en">Make sure the <g id="1">light shafts</g> checkbox is selected.</source>
-<target xml:lang="pt">Make sure the <g id="1">light shafts</g> checkbox is selected.</target>
+<target xml:lang="pt">Certifique-se de que a caixa de seleção <g id="1">light eixos</g> é selecionada.</target>
 </trans-unit>
 <trans-unit id="tu16" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Enable light shafts<x id="2"/></source>
-<target xml:lang="pt"><x id="1"/>Enable light shafts<x id="2"/></target>
+<target xml:lang="pt">&lt;x1\/&gt; Habilitar eixos de luz&lt;x2\/&gt;</target>
 </trans-unit>
 <trans-unit id="tu17" xml:space="preserve">
 <source xml:lang="en">For more information about the graphics compositor, see the <g id="1">Graphics compositor</g> page.</source>
-<target xml:lang="pt">For more information about the graphics compositor, see the <g id="1">Graphics compositor</g> page.</target>
+<target xml:lang="pt">Para obter mais informações sobre o compositor gráfico, consulte a página <g id="1">Graphics compositor</g>.</target>
 </trans-unit>
 <trans-unit id="tu18" xml:space="preserve">
 <source xml:lang="en">2. Add a light shaft component</source>
-<target xml:lang="pt">2. Add a light shaft component</target>
+<target xml:lang="pt">2. Adicionar um componente de eixo de luz</target>
 </trans-unit>
 <trans-unit id="tu19" xml:space="preserve">
 <source xml:lang="en">In your scene, select the entity with the <g id="1">light</g> you want to create light shafts. This must be a light that casts shadows (ie a <g id="2">point light</g>, <g id="3">directional light</g>, or <g id="4">spot light</g>).</source>
-<target xml:lang="pt">In your scene, select the entity with the <g id="1">light</g> you want to create light shafts. This must be a light that casts shadows (ie a <g id="2">point light</g>, <g id="3">directional light</g>, or <g id="4">spot light</g>).</target>
+<target xml:lang="pt">Em sua cena, selecione a entidade com o &lt;g id="1"&gt;light&lt;/g&gt; que deseja criar eixos de luz. Esta deve ser uma luz que lança sombras (ou seja, uma luz &lt;g id="2"&gt;point&lt;/g&gt;, &lt;g id="3"&gt; luz direcional&lt;/g&gt;, ou &lt;g id="4"&gt;spot light&lt;/g&gt;spot light&lt;/g&gt;).</target>
 </trans-unit>
 <trans-unit id="tu20" xml:space="preserve">
 <source xml:lang="en">In the <g id="1">Property Grid</g>, in the <g id="2">Light</g> component properties, make sure the <g id="3">Shadow</g> checkbox is selected.</source>
-<target xml:lang="pt">In the <g id="1">Property Grid</g>, in the <g id="2">Light</g> component properties, make sure the <g id="3">Shadow</g> checkbox is selected.</target>
+<target xml:lang="pt">No <g id="1">Property Grid</g>, nas propriedades do componente <g id="2">Light</g>, certifique-se de que a caixa de seleção <g id="3">Shadow</g> é selecionada.</target>
 </trans-unit>
 <trans-unit id="tu21" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Enable light shafts<x id="2"/></source>
-<target xml:lang="pt"><x id="1"/>Enable light shafts<x id="2"/></target>
+<target xml:lang="pt">&lt;x1\/&gt; Habilitar eixos de luz&lt;x2\/&gt;</target>
 </trans-unit>
 <trans-unit id="tu22" xml:space="preserve">
 <source xml:lang="en">Click <g id="1">Add component</g> and select <g id="2">Light shaft</g>.</source>
-<target xml:lang="pt">Click <g id="1">Add component</g> and select <g id="2">Light shaft</g>.</target>
+<target xml:lang="pt">Clique em <g id="1">Adicionar componente</g> e selecione <g id="2">Light shaft</g>.</target>
 </trans-unit>
 <trans-unit id="tu23" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Add light shaft component<x id="2"/></source>
-<target xml:lang="pt"><x id="1"/>Add light shaft component<x id="2"/></target>
+<target xml:lang="pt">&lt;x1\/&gt; Adicionar componente de eixo de luz&lt;x2\/&gt;</target>
 </trans-unit>
 <trans-unit id="tu24" xml:space="preserve">
 <source xml:lang="en">Game Studio adds a light shaft component to the entity.</source>
-<target xml:lang="pt">Game Studio adds a light shaft component to the entity.</target>
+<target xml:lang="pt">Game Studio adiciona um componente de eixo de luz para a entidade.</target>
 </trans-unit>
 <trans-unit id="tu25" xml:space="preserve">
 <source xml:lang="en">3. Add a bounding volume</source>
-<target xml:lang="pt">3. Add a bounding volume</target>
+<target xml:lang="pt">3. Adicionar um volume de ligação</target>
 </trans-unit>
 <trans-unit id="tu26" xml:space="preserve">
 <source xml:lang="en">The <g id="1">light shaft bounding volume</g> defines the area in which light shafts are created. You can add the bounding volume to the same entity that has the directional light, but it's usually simpler to add it to a separate entity.</source>
-<target xml:lang="pt">The <g id="1">light shaft bounding volume</g> defines the area in which light shafts are created. You can add the bounding volume to the same entity that has the directional light, but it's usually simpler to add it to a separate entity.</target>
+<target xml:lang="pt">O <g id="1"> eixo de luz que liga o volume</g> define a área em que os eixos de luz são criados. Você pode adicionar o volume de ligação à mesma entidade que tem a luz direcional, mas geralmente é mais simples adicioná-lo a uma entidade separada.</target>
 </trans-unit>
 <trans-unit id="tu27" xml:space="preserve">
 <source xml:lang="en">In the <g id="1">Asset View</g>, click <g id="2">Add asset</g>.</source>
-<target xml:lang="pt">In the <g id="1">Asset View</g>, click <g id="2">Add asset</g>.</target>
+<target xml:lang="pt">No <g id="1">Asset View</g>, clique em <g id="2">Add asset</g>.</target>
 </trans-unit>
 <trans-unit id="tu28" xml:space="preserve">
 <source xml:lang="en">Under <g id="1">Models</g>, select a model in the shape you want the volume to be. For example, if you use a cube, light shafts will be created in a cube-shaped area.</source>
-<target xml:lang="pt">Under <g id="1">Models</g>, select a model in the shape you want the volume to be. For example, if you use a cube, light shafts will be created in a cube-shaped area.</target>
+<target xml:lang="pt">Em <g id="1">Models</g>, selecione um modelo na forma que deseja que o volume seja. Por exemplo, se você usar um cubo, os eixos de luz serão criados em uma área em forma de cubo.</target>
 </trans-unit>
 <trans-unit id="tu29" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Cube model<x id="2"/></source>
-<target xml:lang="pt"><x id="1"/>Cube model<x id="2"/></target>
+<target xml:lang="pt">&lt;x1\/&gt;Cube model&lt;x2\/&gt;</target>
 </trans-unit>
 <trans-unit id="tu30" xml:space="preserve">
 <source xml:lang="en">The <g id="1">Select an asset</g> window opens.</source>
-<target xml:lang="pt">The <g id="1">Select an asset</g> window opens.</target>
+<target xml:lang="pt">A janela <g id="1">Selecione um ativo</g> abre.</target>
 </trans-unit>
 <trans-unit id="tu31" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Select an asset<x id="2"/></source>
-<target xml:lang="pt"><x id="1"/>Select an asset<x id="2"/></target>
+<target xml:lang="pt">&lt;x1\/&gt; Selecione um ativo&lt;x2\/&gt;</target>
 </trans-unit>
 <trans-unit id="tu32" xml:space="preserve">
 <source xml:lang="en">You don't need a material for the model, so click <g id="1">Cancel</g> to create a model without a material.</source>
-<target xml:lang="pt">You don't need a material for the model, so click <g id="1">Cancel</g> to create a model without a material.</target>
+<target xml:lang="pt">Você não precisa de um material para o modelo, então clique em <g id="1">Cancel</g> para criar um modelo sem um material.</target>
 </trans-unit>
 <trans-unit id="tu33" xml:space="preserve">
 <source xml:lang="en">In the scene, create an empty <g id="1">entity</g>. For now, it doesn't matter where you put it; you can reposition it later.</source>
-<target xml:lang="pt">In the scene, create an empty <g id="1">entity</g>. For now, it doesn't matter where you put it; you can reposition it later.</target>
+<target xml:lang="pt">Na cena, crie um vazio <g id="1">entidade</g>. Por enquanto, não importa onde você colocá-lo; você pode reposiciona-lo mais tarde.</target>
 </trans-unit>
 <trans-unit id="tu34" xml:space="preserve">
 <source xml:lang="en">With the entity selected, in the <g id="1">Property Grid</g>, click <g id="2">Add component</g> and select <g id="3">light shaft bounding volume</g>.</source>
-<target xml:lang="pt">With the entity selected, in the <g id="1">Property Grid</g>, click <g id="2">Add component</g> and select <g id="3">light shaft bounding volume</g>.</target>
+<target xml:lang="pt">Com a entidade selecionada, no <g id="1">Property Grid</g>, clique em <g id="2">Adicionar componente</g> e selecione <g id="3">light eixo de ligação volume</g>.</target>
 </trans-unit>
 <trans-unit id="tu35" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Add light shaft bounding volume component<x id="2"/></source>
-<target xml:lang="pt"><x id="1"/>Add light shaft bounding volume component<x id="2"/></target>
+<target xml:lang="pt">&lt;x1\/&gt; Adicionar componente de volume de ligação de eixo de luz&lt;x2\/&gt;</target>
 </trans-unit>
 <trans-unit id="tu36" xml:space="preserve">
 <source xml:lang="en">In the <g id="1">light shaft bounding volume</g> component properties, next to <g id="2">light shaft</g>, click <x id="3"/>Hand icon<x id="4"/> (<g id="5">Select an asset</g>).</source>
-<target xml:lang="pt">In the <g id="1">light shaft bounding volume</g> component properties, next to <g id="2">light shaft</g>, click <x id="3"/>Hand icon<x id="4"/> (<g id="5">Select an asset</g>).</target>
+<target xml:lang="pt">No <g id="1"> eixo de luz que liga o volume</g> propriedades do componente, ao lado de <g id="2"> eixo de luz </g>, clique em &lt;x1\/&gt;Hand icon&lt;x2\/&gt; (<g id="5">Select an asset</g>).</target>
 </trans-unit>
 <trans-unit id="tu37" xml:space="preserve">
 <source xml:lang="en">In the <g id="1">entity picker</g>, select the entity with the directional light you want to create light shafts and click <g id="2">OK</g>.</source>
-<target xml:lang="pt">In the <g id="1">entity picker</g>, select the entity with the directional light you want to create light shafts and click <g id="2">OK</g>.</target>
+<target xml:lang="pt">No <g id="1">entity picker</g>, selecione a entidade com a luz direcional que deseja criar eixos de luz e clique em <g id="2">OK</g>.</target>
 </trans-unit>
 <trans-unit id="tu38" xml:space="preserve">
 <source xml:lang="en">In the <g id="1">light shaft bounding volume</g> component properties, next to <g id="2">Model</g>, click <x id="3"/>Hand icon<x id="4"/> (<g id="5">Select an asset</g>).</source>
-<target xml:lang="pt">In the <g id="1">light shaft bounding volume</g> component properties, next to <g id="2">Model</g>, click <x id="3"/>Hand icon<x id="4"/> (<g id="5">Select an asset</g>).</target>
+<target xml:lang="pt">No <g id="1"> eixo de luz que liga o volume</g> propriedades do componente, ao lado de <g id="2">Model</g>, clique em &lt;x1\/&gt;Hand icon&lt;x2\/&gt; (<g id="5">Select an asset</g>).</target>
 </trans-unit>
 <trans-unit id="tu39" xml:space="preserve">
 <source xml:lang="en">In the <g id="1">Select an asset</g> window, select the model you created and click <g id="2">OK</g>.</source>
-<target xml:lang="pt">In the <g id="1">Select an asset</g> window, select the model you created and click <g id="2">OK</g>.</target>
+<target xml:lang="pt">Na janela <g id="1">Selecione um ativo</g>, selecione o modelo que você criou e clique em <g id="2">OK</g>.</target>
 </trans-unit>
 <trans-unit id="tu40" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Select model<x id="2"/></source>
-<target xml:lang="pt"><x id="1"/>Select model<x id="2"/></target>
+<target xml:lang="pt">&lt;x1\/&gt;Selecionar modelo&lt;x2\/&gt;</target>
 </trans-unit>
 <trans-unit id="tu41" xml:space="preserve">
 <source xml:lang="en">This model defines the shape of the light shaft bounding volume.</source>
-<target xml:lang="pt">This model defines the shape of the light shaft bounding volume.</target>
+<target xml:lang="pt">Este modelo define a forma do volume de ligação do eixo de luz.</target>
 </trans-unit>
 <trans-unit id="tu42" xml:space="preserve">
 <source xml:lang="en">Using the <g id="1">transform</g> component, position and scale the entity to cover the area where you want to create light shafts.</source>
-<target xml:lang="pt">Using the <g id="1">transform</g> component, position and scale the entity to cover the area where you want to create light shafts.</target>
+<target xml:lang="pt">Usando o componente <g id="1">transform</g>, posicionar e dimensionar a entidade para cobrir a área onde você deseja criar eixos de luz.</target>
 </trans-unit>
 <trans-unit id="tu43" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>!Tip<x id="2"/>
 To show or hide navigation light shaft bounding volumes in the Scene Editor, in the <g id="3">Scene Editor toolbar</g>, open the <g id="4">gizmo options</g> menu and use the <g id="5">Light shaft bounding volumes</g> checkbox.</source>
-<target xml:lang="pt"><x id="1"/>!Tip<x id="2"/>
-To show or hide navigation light shaft bounding volumes in the Scene Editor, in the <g id="3">Scene Editor toolbar</g>, open the <g id="4">gizmo options</g> menu and use the <g id="5">Light shaft bounding volumes</g> checkbox.</target>
+<target xml:lang="pt">&lt;x1\/&gt;!Tip&lt;x2\/&gt;
+Para mostrar ou ocultar volumes de vinculação de eixo de navegação no Editor de cena, na barra de ferramentas <g id="3">Scene Editor</g>, abra o menu <g id="4">gizmo e use a caixa de seleção <g id="5">Light shaft limiting volumes</g>.</g></target>
 </trans-unit>
 <trans-unit id="tu44" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Show light shaft bounding volumes<x id="2"/></source>
-<target xml:lang="pt"><x id="1"/>Show light shaft bounding volumes<x id="2"/></target>
+<target xml:lang="pt">&lt;x1\/&gt;Mostrar volumes limitados de eixo de luz&lt;x2\/&gt;</target>
 </trans-unit>
 <trans-unit id="tu45" xml:space="preserve">
 <source xml:lang="en">Light shaft properties</source>
-<target xml:lang="pt">Light shaft properties</target>
+<target xml:lang="pt">Propriedades do eixo de luz</target>
 </trans-unit>
 <trans-unit id="tu46" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Light shaft properties<x id="2"/></source>
-<target xml:lang="pt"><x id="1"/>Light shaft properties<x id="2"/></target>
+<target xml:lang="pt">&lt;x1\/&gt; Propriedades do eixo leve&lt;x2\/&gt;</target>
 </trans-unit>
 <trans-unit id="tu47" xml:space="preserve">
 <source xml:lang="en">Property</source>
-<target xml:lang="pt">Property</target>
+<target xml:lang="pt">Propriedade</target>
 </trans-unit>
 <trans-unit id="tu48" xml:space="preserve">
 <source xml:lang="en">Description</source>
-<target xml:lang="pt">Description</target>
+<target xml:lang="pt">Descrição</target>
 </trans-unit>
 <trans-unit id="tu49" xml:space="preserve">
 <source xml:lang="en">Density</source>
-<target xml:lang="pt">Density</target>
+<target xml:lang="pt">Densidade</target>
 </trans-unit>
 <trans-unit id="tu50" xml:space="preserve">
 <source xml:lang="en">Higher values produce brighter light shafts</source>
-<target xml:lang="pt">Higher values produce brighter light shafts</target>
+<target xml:lang="pt">Valores mais elevados produzem eixos de luz mais brilhantes</target>
 </trans-unit>
 <trans-unit id="tu51" xml:space="preserve">
 <source xml:lang="en">Sample count</source>
-<target xml:lang="pt">Sample count</target>
+<target xml:lang="pt">Contagem de amostras</target>
 </trans-unit>
 <trans-unit id="tu52" xml:space="preserve">
 <source xml:lang="en">Higher values produce better light shafts but use more GPU</source>
-<target xml:lang="pt">Higher values produce better light shafts but use more GPU</target>
+<target xml:lang="pt">Valores mais elevados produzem melhores eixos de luz, mas usam mais GPU</target>
 </trans-unit>
 <trans-unit id="tu53" xml:space="preserve">
 <source xml:lang="en">Process bounding volumes separately</source>
-<target xml:lang="pt">Process bounding volumes separately</target>
+<target xml:lang="pt">Volumes de amarração de processos separadamente</target>
 </trans-unit>
 <trans-unit id="tu54" xml:space="preserve">
 <source xml:lang="en">Preserves light shaft quality when seen through separate bounding boxes, but uses more GPU</source>
-<target xml:lang="pt">Preserves light shaft quality when seen through separate bounding boxes, but uses more GPU</target>
+<target xml:lang="pt">Preserva a qualidade do eixo de luz quando visto através de caixas de ligação separadas, mas usa mais GPU</target>
 </trans-unit>
 <trans-unit id="tu55" xml:space="preserve">
 <source xml:lang="en">Light shaft graphics compositor properties</source>
-<target xml:lang="pt">Light shaft graphics compositor properties</target>
+<target xml:lang="pt">Propriedades do compositor de gráficos de eixo claro</target>
 </trans-unit>
 <trans-unit id="tu56" xml:space="preserve">
 <source xml:lang="en">To access these properties, in the <g id="1">graphics compositor editor</g>, select the <g id="2">forward renderer</g> node and expand <g id="3">Light Shafts</g>.</source>
-<target xml:lang="pt">To access these properties, in the <g id="1">graphics compositor editor</g>, select the <g id="2">forward renderer</g> node and expand <g id="3">Light Shafts</g>.</target>
+<target xml:lang="pt">Para acessar essas propriedades, no editor de compositores <g id="1">graphics</g>, selecione o nó <g id="2">forward renderer</g> e expanda <g id="3">Light Shafts</g>.</target>
 </trans-unit>
 <trans-unit id="tu57" xml:space="preserve">
 <source xml:lang="en">These properties apply globally to all the light shafts in the scene.</source>
-<target xml:lang="pt">These properties apply globally to all the light shafts in the scene.</target>
+<target xml:lang="pt">Estas propriedades aplicam-se globalmente a todos os eixos de luz na cena.</target>
 </trans-unit>
 <trans-unit id="tu58" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Light shaft graphics compositor properties<x id="2"/></source>
-<target xml:lang="pt"><x id="1"/>Light shaft graphics compositor properties<x id="2"/></target>
+<target xml:lang="pt">&lt;x1\/&gt; Propriedades do compositor de gráficos de eixo leve&lt;x2\/&gt;</target>
 </trans-unit>
 <trans-unit id="tu59" xml:space="preserve">
 <source xml:lang="en">Property</source>
-<target xml:lang="pt">Property</target>
+<target xml:lang="pt">Propriedade</target>
 </trans-unit>
 <trans-unit id="tu60" xml:space="preserve">
 <source xml:lang="en">Description</source>
-<target xml:lang="pt">Description</target>
+<target xml:lang="pt">Descrição</target>
 </trans-unit>
 <trans-unit id="tu61" xml:space="preserve">
 <source xml:lang="en">Bounding volume buffer downsample level</source>
-<target xml:lang="pt">Bounding volume buffer downsample level</target>
+<target xml:lang="pt">Bounding volume buffer downsample nível</target>
 </trans-unit>
 <trans-unit id="tu62" xml:space="preserve">
 <source xml:lang="en">Lower values produce more precise volume buffer areas, but use more GPU</source>
-<target xml:lang="pt">Lower values produce more precise volume buffer areas, but use more GPU</target>
+<target xml:lang="pt">Valores mais baixos produzem áreas de buffer de volume mais precisas, mas usam mais GPU</target>
 </trans-unit>
 <trans-unit id="tu63" xml:space="preserve">
 <source xml:lang="en">Light buffer downsample level</source>
-<target xml:lang="pt">Light buffer downsample level</target>
+<target xml:lang="pt">Nível de downsample de amortecedor de luz</target>
 </trans-unit>
 <trans-unit id="tu64" xml:space="preserve">
 <source xml:lang="en">Lower values produce sharper light shafts, but use more GPU</source>
-<target xml:lang="pt">Lower values produce sharper light shafts, but use more GPU</target>
+<target xml:lang="pt">Valores mais baixos produzem eixos de luz mais nítidos, mas usam mais GPU</target>
 </trans-unit>
 <trans-unit id="tu65" xml:space="preserve">
 <source xml:lang="en">Optimize light shafts</source>
-<target xml:lang="pt">Optimize light shafts</target>
+<target xml:lang="pt">Otimizar eixos de luz</target>
 </trans-unit>
 <trans-unit id="tu66" xml:space="preserve">
 <source xml:lang="en">Light shafts work best in dark environments. You can adjust the light and light shaft component properties to achieve different results — for example, by changing the light color (in the <g id="1">light component properties</g>) or the light shaft density (in the <g id="2">light shaft component properties</g>).</source>
-<target xml:lang="pt">Light shafts work best in dark environments. You can adjust the light and light shaft component properties to achieve different results — for example, by changing the light color (in the <g id="1">light component properties</g>) or the light shaft density (in the <g id="2">light shaft component properties</g>).</target>
+<target xml:lang="pt">Os eixos de luz funcionam melhor em ambientes escuros. Você pode ajustar as propriedades do componente do eixo de luz e luz para alcançar resultados diferentes — por exemplo, alterando a cor da luz (nas propriedades do componente <g id="1">light</g>) ou a densidade do eixo de luz (nas propriedades do componente do eixo de luz <g id="2">)</g>).</target>
 </trans-unit>
 <trans-unit id="tu67" xml:space="preserve">
 <source xml:lang="en">Multiple light shafts viewed through one another can become visually noisy, as in the screenshot below:</source>
-<target xml:lang="pt">Multiple light shafts viewed through one another can become visually noisy, as in the screenshot below:</target>
+<target xml:lang="pt">Vários eixos de luz visualizados entre si podem tornar-se visualmente ruidosos, como na captura de tela abaixo:</target>
 </trans-unit>
 <trans-unit id="tu68" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Noisy light shafts<x id="2"/></source>
-<target xml:lang="pt"><x id="1"/>Noisy light shafts<x id="2"/></target>
+<target xml:lang="pt">&lt;x1\/&gt; Eixos de luz ruidosos&lt;x2\/&gt;</target>
 </trans-unit>
 <trans-unit id="tu69" xml:space="preserve">
 <source xml:lang="en">To reduce this effect, in the <g id="1">light shaft component properties</g>, reduce the <g id="2">density</g> and increase the <g id="3">sample count</g>.</source>
-<target xml:lang="pt">To reduce this effect, in the <g id="1">light shaft component properties</g>, reduce the <g id="2">density</g> and increase the <g id="3">sample count</g>.</target>
+<target xml:lang="pt">Para reduzir esse efeito, nas propriedades do componente do eixo <g id="1">light</g>, reduza o <g id="2">density</g> e aumente o <g id="3">sample count</g>.</target>
 </trans-unit>
 <trans-unit id="tu70" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Density factor<x id="2"/></source>
-<target xml:lang="pt"><x id="1"/>Density factor<x id="2"/></target>
+<target xml:lang="pt">&lt;x1\/&gt; Fator de densidade&lt;x2\/&gt;</target>
 </trans-unit>
 <trans-unit id="tu71" xml:space="preserve">
 <source xml:lang="en">Alternatively, add additional bounding volumes and process them separately. To do this:</source>
-<target xml:lang="pt">Alternatively, add additional bounding volumes and process them separately. To do this:</target>
+<target xml:lang="pt">Alternativamente, adicione volumes adicionais e processá-los separadamente. Para fazer isso:</target>
 </trans-unit>
 <trans-unit id="tu72" xml:space="preserve">
 <source xml:lang="en">Create additional bounding volumes and position them to cover the areas where you want to create light shafts. Make sure the bounding volumes don't overlap, as this makes light shafts extra-bright.</source>
-<target xml:lang="pt">Create additional bounding volumes and position them to cover the areas where you want to create light shafts. Make sure the bounding volumes don't overlap, as this makes light shafts extra-bright.</target>
+<target xml:lang="pt">Crie volumes de ligação adicionais e posicione-os para cobrir as áreas onde você deseja criar eixos de luz. Certifique-se de que os volumes de amarração não se sobrepõem, pois isso faz eixos de luz extra-brilhante.</target>
 </trans-unit>
 <trans-unit id="tu73" xml:space="preserve">
 <source xml:lang="en">In the <g id="1">light shaft component properties</g>, make sure <g id="2">Process bounding volumes separately</g> is selected.</source>
-<target xml:lang="pt">In the <g id="1">light shaft component properties</g>, make sure <g id="2">Process bounding volumes separately</g> is selected.</target>
+<target xml:lang="pt">No <g id="1"> Propriedades do componente do eixo de luz </g>, certifique-se de <g id="2"> Os volumes de ligação do processo separadamente</g> são selecionados.</target>
 </trans-unit>
 <trans-unit id="tu74" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Separate bounding volume<x id="2"/></source>
-<target xml:lang="pt"><x id="1"/>Separate bounding volume<x id="2"/></target>
+<target xml:lang="pt">&lt;x1\/&gt; Separar o volume de ligação&lt;x2\/&gt;</target>
 </trans-unit>
 <trans-unit id="tu75" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>!Note<x id="2"/>
 Processing bounding volumes separately uses more GPU.</source>
-<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
-Processing bounding volumes separately uses more GPU.</target>
+<target xml:lang="pt">&lt;x1\/&gt;!Note&lt;x2\/&gt;
+O processamento de volumes delimitação usa separadamente mais GPU.</target>
 </trans-unit>
 <trans-unit id="tu76" xml:space="preserve">
 <source xml:lang="en">See also</source>
-<target xml:lang="pt">See also</target>
+<target xml:lang="pt">Ver também</target>
 </trans-unit>
 <trans-unit id="tu77" xml:space="preserve">
 <source xml:lang="en"><g id="1">Directional lights</g></source>
-<target xml:lang="pt"><g id="1">Directional lights</g></target>
+<target xml:lang="pt"><g id="1">Luzes direcionais</g></target>
 </trans-unit>
 <trans-unit id="tu78" xml:space="preserve">
 <source xml:lang="en"><g id="1">Shadows</g></source>
-<target xml:lang="pt"><g id="1">Shadows</g></target>
+<target xml:lang="pt"><g id="1">Sombras</g></target>
 </trans-unit>
 <trans-unit id="tu79" xml:space="preserve">
 <source xml:lang="en"><g id="1">Graphics compositor</g></source>
-<target xml:lang="pt"><g id="1">Graphics compositor</g></target>
+<target xml:lang="pt"><g id="1">Compositor gráfico</g></target>
 </trans-unit>
 </body>
 </file>

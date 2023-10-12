@@ -1,1603 +1,1603 @@
 {
-    "filename": "manual\\input\\gestures.md.xlf",
-    "files": [
-        {
-            "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md": [
-                [
-                    "Gestures",
-                    "",
-                    "Gestures",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu1"
-                    }
-                ],
-                [
-                    "<x1\/>Intermediate<x2\/>",
-                    "",
-                    "<x1\/>Intermediate<x2\/>\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu2"
-                    }
-                ],
-                [
-                    "<x3\/>Programmer<x4\/>",
-                    "",
-                    "<x3\/>Programmer<x4\/>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu2"
-                    }
-                ],
-                [
-                    "Gestures are predefined <g1>pointer<\/g1> patterns.",
-                    "",
-                    "Gestures are predefined <g1>pointer<\/g1> patterns.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu3"
-                    }
-                ],
-                [
-                    "Stride can recognize gestures and trigger corresponding events.",
-                    "",
-                    " Stride can recognize gestures and trigger corresponding events.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu3"
-                    }
-                ],
-                [
-                    "For example, in a strategy game, the player can drag and drop a unit to the battlefield with a <g2>drag<\/g2> gesture.",
-                    "",
-                    " For example, in a strategy game, the player can drag and drop a unit to the battlefield with a <g2>drag<\/g2> gesture.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu3"
-                    }
-                ],
-                [
-                    "Gestures can use one or several fingers.",
-                    "",
-                    " Gestures can use one or several fingers.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu3"
-                    }
-                ],
-                [
-                    "<x1\/>!Note<x2\/>",
-                    "",
-                    "<x1\/>!Note<x2\/>\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu4"
-                    }
-                ],
-                [
-                    "All lengths, speeds and error margins of configuration files must use normalized values.",
-                    "",
-                    "All lengths, speeds and error margins of configuration files must use normalized values.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu4"
-                    }
-                ],
-                [
-                    "Turn on gesture recognition",
-                    "",
-                    "Turn on gesture recognition",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu5"
-                    }
-                ],
-                [
-                    "By default, the input system doesn't recognize gestures, as this requires CPU time.",
-                    "",
-                    "By default, the input system doesn't recognize gestures, as this requires CPU time.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu6"
-                    }
-                ],
-                [
-                    "To turn on gesture recognition:",
-                    "",
-                    "To turn on gesture recognition:",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu7"
-                    }
-                ],
-                [
-                    "Create an instance of the configuration class for the gesture you want to recognize.",
-                    "",
-                    "Create an instance of the configuration class for the gesture you want to recognize.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu8"
-                    }
-                ],
-                [
-                    "For example, for the drag gesture, create an instance of @'Stride.Input.GestureConfigDrag'.",
-                    "",
-                    " For example, for the drag gesture, create an instance of @'Stride.Input.GestureConfigDrag'.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu8"
-                    }
-                ],
-                [
-                    "Configure the class parameters.",
-                    "",
-                    "Configure the class parameters.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu9"
-                    }
-                ],
-                [
-                    "Add the gesture configuration to the @'Stride.Input.InputManager.Gestures' collection.",
-                    "",
-                    "Add the gesture configuration to the @'Stride.Input.InputManager.Gestures' collection.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu10"
-                    }
-                ],
-                [
-                    "<x1\/>!Warning<x2\/>",
-                    "",
-                    "<x1\/>!Warning<x2\/>\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu11"
-                    }
-                ],
-                [
-                    "After you activate recognition for a gesture, you can't modify the gesture's parameters.",
-                    "",
-                    "After you activate recognition for a gesture, you can't modify the gesture's parameters.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu11"
-                    }
-                ],
-                [
-                    "If you need to do this, delete the gesture from the @'Stride.Input.InputManager.Gestures' collection and create a new entry with new parameters.",
-                    "",
-                    " If you need to do this, delete the gesture from the @'Stride.Input.InputManager.Gestures' collection and create a new entry with new parameters.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu11"
-                    }
-                ],
-                [
-                    "Turn off gesture recognition",
-                    "",
-                    "Turn off gesture recognition",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu12"
-                    }
-                ],
-                [
-                    "Delete the gesture from the <g1>InputManager.Gestures<\/g1> collection.",
-                    "",
-                    "Delete the gesture from the <g1>InputManager.Gestures<\/g1> collection.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu13"
-                    }
-                ],
-                [
-                    "Gesture recognition",
-                    "",
-                    "Gesture recognition",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu14"
-                    }
-                ],
-                [
-                    "When the input system detects a gesture, it adds a @'Stride.Input.GestureEvent' to the list of <g1>InputManager.GestureEvents<\/g1>.",
-                    "",
-                    "When the input system detects a gesture, it adds a @'Stride.Input.GestureEvent' to the list of <g1>InputManager.GestureEvents<\/g1>.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu15"
-                    }
-                ],
-                [
-                    "The event contains information about the gesture and its state, such as its location and the number of fingers used.",
-                    "",
-                    " The event contains information about the gesture and its state, such as its location and the number of fingers used.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu15"
-                    }
-                ],
-                [
-                    "<x1\/>!Note<x2\/>",
-                    "",
-                    "<x1\/>!Note<x2\/>\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu16"
-                    }
-                ],
-                [
-                    "Each gesture has its own associated gesture event class (see below).",
-                    "",
-                    "Each gesture has its own associated gesture event class (see below).",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu16"
-                    }
-                ],
-                [
-                    "The <g1>GestureEvent.Type<\/g1> field indicates which gesture has been recognized.",
-                    "",
-                    "The <g1>GestureEvent.Type<\/g1> field indicates which gesture has been recognized.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu17"
-                    }
-                ],
-                [
-                    "You can then cast the base gesture event into the gesture-specific event type to have gesture-type-specific information about the event.",
-                    "",
-                    " You can then cast the base gesture event into the gesture-specific event type to have gesture-type-specific information about the event.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu17"
-                    }
-                ],
-                [
-                    "Stride can detect several gestures simultaneously, so the event list can contain more than one item in an update.",
-                    "",
-                    "Stride can detect several gestures simultaneously, so the event list can contain more than one item in an update.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu18"
-                    }
-                ],
-                [
-                    "The list is cleared with every update, so you don't need to clear it manually.",
-                    "",
-                    "The list is cleared with every update, so you don't need to clear it manually.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu19"
-                    }
-                ],
-                [
-                    "Configure gestures",
-                    "",
-                    "Configure gestures",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu20"
-                    }
-                ],
-                [
-                    "In the @'Stride.Input.GestureConfig' classes, you can configure parameters including:",
-                    "",
-                    "In the @'Stride.Input.GestureConfig' classes, you can configure parameters including:",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu21"
-                    }
-                ],
-                [
-                    "the number of fingers the gesture uses",
-                    "",
-                    "the number of fingers the gesture uses",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu22"
-                    }
-                ],
-                [
-                    "the number and duration of taps the gesture uses",
-                    "",
-                    "the number and duration of taps the gesture uses",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu23"
-                    }
-                ],
-                [
-                    "the gesture direction",
-                    "",
-                    "the gesture direction",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu24"
-                    }
-                ],
-                [
-                    "<x1\/>!Note<x2\/>",
-                    "",
-                    "<x1\/>!Note<x2\/>\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu25"
-                    }
-                ],
-                [
-                    "Each gesture has its own configuration class with specific configuration parameters (see below).",
-                    "",
-                    "Each gesture has its own configuration class with specific configuration parameters (see below).",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu25"
-                    }
-                ],
-                [
-                    "Types of gesture",
-                    "",
-                    "Types of gesture",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu26"
-                    }
-                ],
-                [
-                    "Stride supports two main types of gesture:",
-                    "",
-                    "Stride supports two main types of gesture:",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu27"
-                    }
-                ],
-                [
-                    "<g1>Discrete<\/g1> gestures (tap, flick, long press) trigger a single event.",
-                    "",
-                    "<g1>Discrete<\/g1> gestures (tap, flick, long press) trigger a single event.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu28"
-                    }
-                ],
-                [
-                    "Tap",
-                    "",
-                    "<g1>Tap<\/g1>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu29"
-                    }
-                ],
-                [
-                    "Flick",
-                    "",
-                    "<g1>Flick<\/g1>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu30"
-                    }
-                ],
-                [
-                    "Long press",
-                    "",
-                    "<g1>Long press<\/g1>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu31"
-                    }
-                ],
-                [
-                    "<g1>Continuous<\/g1> gestures (drag and composite) trigger a series of events when the user changes the direction of the gesture.",
-                    "",
-                    "<g1>Continuous<\/g1> gestures (drag and composite) trigger a series of events when the user changes the direction of the gesture.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu32"
-                    }
-                ],
-                [
-                    "Drag",
-                    "",
-                    "<g1>Drag<\/g1>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu33"
-                    }
-                ],
-                [
-                    "Composite",
-                    "",
-                    "<g1>Composite<\/g1>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu34"
-                    }
-                ],
-                [
-                    "Discrete gestures",
-                    "",
-                    "Discrete gestures",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu35"
-                    }
-                ],
-                [
-                    "<x1\/> Tap <x2\/>",
-                    "",
-                    "<x1\/> Tap <x2\/>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu36"
-                    }
-                ],
-                [
-                    "<x1\/>Tap gesture<x2\/>",
-                    "",
-                    "<x1\/>Tap gesture<x2\/>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu37"
-                    }
-                ],
-                [
-                    "The user touches the screen and quickly removes their finger.",
-                    "",
-                    "The user touches the screen and quickly removes their finger.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu38"
-                    }
-                ],
-                [
-                    "<g1>Configuration class<\/g1>:",
-                    "",
-                    "<g1>Configuration class<\/g1>:",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu39"
-                    }
-                ],
-                [
-                    "@'Stride.Input.GestureConfigTap'",
-                    "",
-                    " @'Stride.Input.GestureConfigTap'",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu39"
-                    }
-                ],
-                [
-                    "<g1>Event class<\/g1>:",
-                    "",
-                    "<g1>Event class<\/g1>:",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu40"
-                    }
-                ],
-                [
-                    "@'Stride.Input.GestureEventTap'",
-                    "",
-                    " @'Stride.Input.GestureEventTap'",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu40"
-                    }
-                ],
-                [
-                    "The number of fingers on the screen can't vary during the gesture.",
-                    "",
-                    "The number of fingers on the screen can't vary during the gesture.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu41"
-                    }
-                ],
-                [
-                    "To set the number of fingers required for a tap, modify @'Stride.Input.GestureConfig.RequiredNumberOfFingers'.",
-                    "",
-                    " To set the number of fingers required for a tap, modify @'Stride.Input.GestureConfig.RequiredNumberOfFingers'.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu41"
-                    }
-                ],
-                [
-                    "<x1\/>!TIP<x2\/>",
-                    "",
-                    "<x1\/>!TIP<x2\/>\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu42"
-                    }
-                ],
-                [
-                    "To distinguish single taps from multi-taps, the system uses latency in tap events.",
-                    "",
-                    "To distinguish single taps from multi-taps, the system uses latency in tap events.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu42"
-                    }
-                ],
-                [
-                    "To disable this, set the <g1>GestureConfigTap.MaximumTimeBetweenTaps<\/g1> field to <g2>0<\/g2>.",
-                    "",
-                    " To disable this, set the <g1>GestureConfigTap.MaximumTimeBetweenTaps<\/g1> field to <g2>0<\/g2>.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu42"
-                    }
-                ],
-                [
-                    "<x1\/> Flick<x2\/>",
-                    "",
-                    "<x1\/> Flick<x2\/>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu43"
-                    }
-                ],
-                [
-                    "<x1\/>Flick gesture<x2\/>",
-                    "",
-                    "<x1\/>Flick gesture<x2\/>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu44"
-                    }
-                ],
-                [
-                    "The user touches the screen, performs a quick straight translation, and withdraws their finger(s).",
-                    "",
-                    "The user touches the screen, performs a quick straight translation, and withdraws their finger(s).",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu45"
-                    }
-                ],
-                [
-                    "<g1>Configuration class<\/g1>:",
-                    "",
-                    "<g1>Configuration class<\/g1>:",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu46"
-                    }
-                ],
-                [
-                    "@'Stride.Input.GestureConfigFlick'",
-                    "",
-                    " @'Stride.Input.GestureConfigFlick'",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu46"
-                    }
-                ],
-                [
-                    "<g1>Event class<\/g1>:",
-                    "",
-                    "<g1>Event class<\/g1>:",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu47"
-                    }
-                ],
-                [
-                    "@'Stride.Input.GestureEventFlick'",
-                    "",
-                    " @'Stride.Input.GestureEventFlick'",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu47"
-                    }
-                ],
-                [
-                    "The number of fingers on the screen can't during the gesture.",
-                    "",
-                    "The number of fingers on the screen can't during the gesture.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu48"
-                    }
-                ],
-                [
-                    "To set a minimum length for the flick gesture, use <g1>GestureConfigFlick.MinimumFlickLength<\/g1>.",
-                    "",
-                    "To set a minimum length for the flick gesture, use <g1>GestureConfigFlick.MinimumFlickLength<\/g1>.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu49"
-                    }
-                ],
-                [
-                    "To restrict the direction of the flick to <g1>vertical<\/g1> or <g2>horizontal<\/g2>, use",
-                    "",
-                    "To restrict the direction of the flick to <g1>vertical<\/g1> or <g2>horizontal<\/g2>, use\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu50"
-                    }
-                ],
-                [
-                    "<g3>GestureConfigFlick.FlickShape<\/g3>.",
-                    "",
-                    "<g3>GestureConfigFlick.FlickShape<\/g3>.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu50"
-                    }
-                ],
-                [
-                    "<x1\/> Long press<x2\/>",
-                    "",
-                    "<x1\/> Long press<x2\/>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu51"
-                    }
-                ],
-                [
-                    "<x1\/>Long press gesture<x2\/>",
-                    "",
-                    "<x1\/>Long press gesture<x2\/>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu52"
-                    }
-                ],
-                [
-                    "The user touches the screen and maintains pressure without removing their finger for a certain period of time (the default time is one second).",
-                    "",
-                    "The user touches the screen and maintains pressure without removing their finger for a certain period of time (the default time is one second).",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu53"
-                    }
-                ],
-                [
-                    "<g1>Configuration class<\/g1>:",
-                    "",
-                    "<g1>Configuration class<\/g1>:",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu54"
-                    }
-                ],
-                [
-                    "GestureConfigLongPress",
-                    "",
-                    " <g2>GestureConfigLongPress<\/g2>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu54"
-                    }
-                ],
-                [
-                    "<g1>Event class<\/g1>:",
-                    "",
-                    "<g1>Event class<\/g1>:",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu55"
-                    }
-                ],
-                [
-                    "GestureEventLongPress",
-                    "",
-                    " <g2>GestureEventLongPress<\/g2>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu55"
-                    }
-                ],
-                [
-                    "The number of fingers on the screen can't vary during the gesture.",
-                    "",
-                    "The number of fingers on the screen can't vary during the gesture.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu56"
-                    }
-                ],
-                [
-                    "To change the minimum press length for the long press gesture, modify  <g1>GestureConfigLongPress.RequiredPressTime<\/g1>.",
-                    "",
-                    "To change the minimum press length for the long press gesture, modify  <g1>GestureConfigLongPress.RequiredPressTime<\/g1>.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu57"
-                    }
-                ],
-                [
-                    "Continuous gestures",
-                    "",
-                    "Continuous gestures",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu58"
-                    }
-                ],
-                [
-                    "<x1\/> Drag<x2\/>",
-                    "",
-                    "<x1\/> Drag<x2\/>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu59"
-                    }
-                ],
-                [
-                    "<x1\/>Drag gesture<x2\/>",
-                    "",
-                    "<x1\/>Drag gesture<x2\/>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu60"
-                    }
-                ],
-                [
-                    "The user touches the screen, performs a translation, and withdraws their finger(s).",
-                    "",
-                    "The user touches the screen, performs a translation, and withdraws their finger(s).",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu61"
-                    }
-                ],
-                [
-                    "<g1>Configuration class<\/g1>:",
-                    "",
-                    "<g1>Configuration class<\/g1>:",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu62"
-                    }
-                ],
-                [
-                    "GestureConfigDrag",
-                    "",
-                    " <g2>GestureConfigDrag<\/g2>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu62"
-                    }
-                ],
-                [
-                    "<g1>Event class<\/g1>:",
-                    "",
-                    "<g1>Event class<\/g1>:",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu63"
-                    }
-                ],
-                [
-                    "GestureEventDrag",
-                    "",
-                    " <g2>GestureEventDrag<\/g2>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu63"
-                    }
-                ],
-                [
-                    "The number of fingers on the screen can't vary during the gesture.",
-                    "",
-                    "The number of fingers on the screen can't vary during the gesture.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu64"
-                    }
-                ],
-                [
-                    "To detect smaller drags, decrease <g1>GestureConfigDrag.MinimumDragDistance<\/g1>.",
-                    "",
-                    "To detect smaller drags, decrease <g1>GestureConfigDrag.MinimumDragDistance<\/g1>.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu65"
-                    }
-                ],
-                [
-                    "To restrict the direction of the drag to <g1>vertical<\/g1> or <g2>horizontal<\/g2>, use <g3>GestureConfigDrag.DragShape<\/g3>.",
-                    "",
-                    "To restrict the direction of the drag to <g1>vertical<\/g1> or <g2>horizontal<\/g2>, use <g3>GestureConfigDrag.DragShape<\/g3>.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu66"
-                    }
-                ],
-                [
-                    "<x1\/> Composite<x2\/>",
-                    "",
-                    "<x1\/> Composite<x2\/>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu67"
-                    }
-                ],
-                [
-                    "<x1\/>Translation gesture<x2\/> <x3\/>Scale gesture<x4\/> <x5\/>Rotation gesture<x6\/>",
-                    "",
-                    "<x1\/>Translation gesture<x2\/> <x3\/>Scale gesture<x4\/> <x5\/>Rotation gesture<x6\/>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu68"
-                    }
-                ],
-                [
-                    "The user touches the screen with two fingers and moves them independently.",
-                    "",
-                    "The user touches the screen with two fingers and moves them independently.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu69"
-                    }
-                ],
-                [
-                    "<g1>Configuration class<\/g1>:",
-                    "",
-                    "<g1>Configuration class<\/g1>:",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu70"
-                    }
-                ],
-                [
-                    "@'Stride.Input.GestureConfigComposite'",
-                    "",
-                    " @'Stride.Input.GestureConfigComposite'",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu70"
-                    }
-                ],
-                [
-                    "<g1>Event class<\/g1>:",
-                    "",
-                    "<g1>Event class<\/g1>:",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu71"
-                    }
-                ],
-                [
-                    "@'Stride.Input.GestureEventComposite'",
-                    "",
-                    " @'Stride.Input.GestureEventComposite'",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu71"
-                    }
-                ],
-                [
-                    "The composite gesture requires exactly two fingers on the screen.",
-                    "",
-                    "The composite gesture requires exactly two fingers on the screen.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu72"
-                    }
-                ],
-                [
-                    "It's triggered when the system detects one of the three basic actions:",
-                    "",
-                    " It's triggered when the system detects one of the three basic actions:",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu72"
-                    }
-                ],
-                [
-                    "<g1>Translation<\/g1>: the user translates two fingers together in the same direction.",
-                    "",
-                    "<g1>Translation<\/g1>: the user translates two fingers together in the same direction.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu73"
-                    }
-                ],
-                [
-                    "<g1>Scale<\/g1>: the user moves two fingers closer together or further apart.",
-                    "",
-                    "<g1>Scale<\/g1>: the user moves two fingers closer together or further apart.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu74"
-                    }
-                ],
-                [
-                    "<g1>Rotation<\/g1>: the user rotates two fingers around a center point.",
-                    "",
-                    "<g1>Rotation<\/g1>: the user rotates two fingers around a center point.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu75"
-                    }
-                ],
-                [
-                    "Gesture states",
-                    "",
-                    "Gesture states",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu76"
-                    }
-                ],
-                [
-                    "A gesture always has one of four states:",
-                    "",
-                    "A gesture always has one of four states:",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu77"
-                    }
-                ],
-                [
-                    "Began",
-                    "",
-                    "Began",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu78"
-                    }
-                ],
-                [
-                    "Changed",
-                    "",
-                    "Changed",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu79"
-                    }
-                ],
-                [
-                    "Ended",
-                    "",
-                    "Ended",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu80"
-                    }
-                ],
-                [
-                    "Occurred",
-                    "",
-                    "Occurred",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu81"
-                    }
-                ],
-                [
-                    "<g1>Discrete<\/g1> gestures (tap, flick, long press) always have the state <g2>occurred<\/g2>.",
-                    "",
-                    "<g1>Discrete<\/g1> gestures (tap, flick, long press) always have the state <g2>occurred<\/g2>.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu82"
-                    }
-                ],
-                [
-                    "<g3>Continuous<\/g3> gestures (drag and composite) always begin with the state <g4>began<\/g4>, followed by any  <g5>changed<\/g5> states, and end with the <g6>ended<\/g6> state.",
-                    "",
-                    " <g3>Continuous<\/g3> gestures (drag and composite) always begin with the state <g4>began<\/g4>, followed by any  <g5>changed<\/g5> states, and end with the <g6>ended<\/g6> state.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu82"
-                    }
-                ],
-                [
-                    "To query the current state of a gesture, use the <g1>GestureEvent.State<\/g1> field of the triggered gesture event.",
-                    "",
-                    "To query the current state of a gesture, use the <g1>GestureEvent.State<\/g1> field of the triggered gesture event.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu83"
-                    }
-                ],
-                [
-                    "Example code",
-                    "",
-                    "Example code",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu84"
-                    }
-                ],
-                [
-                    "Activate or deactivate gesture recognition",
-                    "",
-                    "Activate or deactivate gesture recognition",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu85"
-                    }
-                ],
-                [
-                    "To create the configuration of a gesture you want to recognize:",
-                    "",
-                    "To create the configuration of a gesture you want to recognize:",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu86"
-                    }
-                ],
-                [
-                    "\/\/ Create the configuration of a gesture you want to recognize.",
-                    "",
-                    "\/\/ Create the configuration of a gesture you want to recognize.\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu87"
-                    }
-                ],
-                [
-                    "var singleTapConfig = new GestureConfigTap();",
-                    "",
-                    "var singleTapConfig = new GestureConfigTap();\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu87"
-                    }
-                ],
-                [
-                    "\/\/ Start tap gesture recognition.",
-                    "",
-                    "\r\n\/\/ Start tap gesture recognition.\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu87"
-                    }
-                ],
-                [
-                    "Input.Gestures.Add(singleTapConfig);",
-                    "",
-                    "Input.Gestures.Add(singleTapConfig);\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu87"
-                    }
-                ],
-                [
-                    "\/\/ Create the configuration of the gesture you want to recognize.",
-                    "",
-                    "\r\n\/\/ Create the configuration of the gesture you want to recognize.\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu87"
-                    }
-                ],
-                [
-                    "var doubleTapConfig = new GestureConfigTap(2, 1);",
-                    "",
-                    "var doubleTapConfig = new GestureConfigTap(2, 1);\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu87"
-                    }
-                ],
-                [
-                    "\/\/ Start double tap gesture recognition.",
-                    "",
-                    "\r\n\/\/ Start double tap gesture recognition.\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu87"
-                    }
-                ],
-                [
-                    "Input.Gestures.Add(doubleTapConfig);",
-                    "",
-                    "Input.Gestures.Add(doubleTapConfig);\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu87"
-                    }
-                ],
-                [
-                    "\/\/ Stop tap gesture recognition.",
-                    "",
-                    "\r\n\/\/ Stop tap gesture recognition.\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu87"
-                    }
-                ],
-                [
-                    "Input.Gestures.Remove(singleTapConfig);",
-                    "",
-                    "Input.Gestures.Remove(singleTapConfig);\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu87"
-                    }
-                ],
-                [
-                    "\/\/ Stop all gesture recognitions.",
-                    "",
-                    "\r\n\/\/ Stop all gesture recognitions.\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu87"
-                    }
-                ],
-                [
-                    "Input.Gestures.Clear();",
-                    "",
-                    "Input.Gestures.Clear();\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu87"
-                    }
-                ],
-                [
-                    "Configure the gesture",
-                    "",
-                    "Configure the gesture",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu88"
-                    }
-                ],
-                [
-                    "Each configuration class has a parameterless constructor that corresponds to the default gesture configuration.",
-                    "",
-                    "Each configuration class has a parameterless constructor that corresponds to the default gesture configuration.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu89"
-                    }
-                ],
-                [
-                    "You can use special constructors for frequently-modified parameters.",
-                    "",
-                    " You can use special constructors for frequently-modified parameters.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu89"
-                    }
-                ],
-                [
-                    "<x1\/>!warning<x2\/>",
-                    "",
-                    "<x1\/>!warning<x2\/>\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu90"
-                    }
-                ],
-                [
-                    "We don't recommend you modify other fields as this might break the input system.",
-                    "",
-                    "We don't recommend you modify other fields as this might break the input system.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu90"
-                    }
-                ],
-                [
-                    "But if you need to, you can modify them using the corresponding properties.",
-                    "",
-                    " But if you need to, you can modify them using the corresponding properties.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu90"
-                    }
-                ],
-                [
-                    "\/\/ Default gesture config.",
-                    "",
-                    "\/\/ Default gesture config.\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu91"
-                    }
-                ],
-                [
-                    "var singleTapConfig = new GestureConfigTap();",
-                    "",
-                    "var singleTapConfig = new GestureConfigTap();\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu91"
-                    }
-                ],
-                [
-                    "\/\/ Personalize gesture config using the dedicated constructor.",
-                    "",
-                    "\r\n\/\/ Personalize gesture config using the dedicated constructor.\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu91"
-                    }
-                ],
-                [
-                    "var doubleTapConfig = new GestureConfigTap(2, 2);",
-                    "",
-                    "var doubleTapConfig = new GestureConfigTap(2, 2);\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu91"
-                    }
-                ],
-                [
-                    "\/\/ Personalize gesture config by directly accessing the desired property.",
-                    "",
-                    "\r\n\/\/ Personalize gesture config by directly accessing the desired property.\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu91"
-                    }
-                ],
-                [
-                    "\/\/ Make sure you know what you're doing!",
-                    "",
-                    "\/\/ Make sure you know what you're doing!",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu91"
-                    }
-                ],
-                [
-                    "Modifying this might break the input system.",
-                    "",
-                    " Modifying this might break the input system.\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu91"
-                    }
-                ],
-                [
-                    "var noLatencyTap = new GestureConfigTap() { MaximumTimeBetweenTaps= TimeSpan.Zero };",
-                    "",
-                    "var noLatencyTap = new GestureConfigTap() { MaximumTimeBetweenTaps= TimeSpan.Zero };\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu91"
-                    }
-                ],
-                [
-                    "Access gesture events",
-                    "",
-                    "Access gesture events",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu92"
-                    }
-                ],
-                [
-                    "You can access the list of events triggered by recognized gestures using the <g1>InputManager.GestureEvents<\/g1> collection.",
-                    "",
-                    "You can access the list of events triggered by recognized gestures using the <g1>InputManager.GestureEvents<\/g1> collection.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu93"
-                    }
-                ],
-                [
-                    "The collection is automatically cleared at every update.",
-                    "",
-                    " The collection is automatically cleared at every update.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu93"
-                    }
-                ],
-                [
-                    "var currentFrameGestureEvents = Input.GestureEvents;",
-                    "",
-                    "var currentFrameGestureEvents = Input.GestureEvents;\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu94"
-                    }
-                ],
-                [
-                    "Identify the gesture type",
-                    "",
-                    "Identify the gesture type",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu95"
-                    }
-                ],
-                [
-                    "Use the <g1>GestureEvent.Type<\/g1> field to identity the gesture type, then cast it to the appropriate event type to get extra information about the event.",
-                    "",
-                    "Use the <g1>GestureEvent.Type<\/g1> field to identity the gesture type, then cast it to the appropriate event type to get extra information about the event.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu96"
-                    }
-                ],
-                [
-                    "foreach( var gestureEvent in Input.GestureEvents)",
-                    "",
-                    "foreach( var gestureEvent in Input.GestureEvents)\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu97"
-                    }
-                ],
-                [
-                    "{",
-                    "",
-                    "{\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu97"
-                    }
-                ],
-                [
-                    "\/\/ Determine if the event is from a tap gesture",
-                    "",
-                    "   \t\/\/ Determine if the event is from a tap gesture\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu97"
-                    }
-                ],
-                [
-                    "if (gestureEvent.Type != GestureType.Tap)",
-                    "",
-                    "\tif (gestureEvent.Type != GestureType.Tap)\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu97"
-                    }
-                ],
-                [
-                    "continue;",
-                    "",
-                    "\t\tcontinue;\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu97"
-                    }
-                ],
-                [
-                    "\/\/ Cast a specific tap event class.",
-                    "",
-                    "   \r\n\t\/\/ Cast a specific tap event class.\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu97"
-                    }
-                ],
-                [
-                    "GestureEventTap  tapEvent = (GestureEventTap) gestureEvent;",
-                    "",
-                    "\tGestureEventTap  tapEvent = (GestureEventTap) gestureEvent;\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu97"
-                    }
-                ],
-                [
-                    "\/\/ Access tap-event-specific field.",
-                    "",
-                    "\t\r\n    \/\/ Access tap-event-specific field.\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu97"
-                    }
-                ],
-                [
-                    "log.Info(\"Tap position:",
-                    "",
-                    "    log.Info(\"Tap position:",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu97"
-                    }
-                ],
-                [
-                    "{0}.\", tapEvent.TapPosition);",
-                    "",
-                    " {0}.\", tapEvent.TapPosition);\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu97"
-                    }
-                ],
-                [
-                    "}",
-                    "",
-                    "}\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu97"
-                    }
-                ],
-                [
-                    "Identify the gesture state",
-                    "",
-                    "Identify the gesture state",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu98"
-                    }
-                ],
-                [
-                    "Use the <g1>GestureEvent.State<\/g1> field to get gesture event state.",
-                    "",
-                    "Use the <g1>GestureEvent.State<\/g1> field to get gesture event state.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu99"
-                    }
-                ],
-                [
-                    "switch(compositeGestureEvent.State)",
-                    "",
-                    "switch(compositeGestureEvent.State)\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu100"
-                    }
-                ],
-                [
-                    "{",
-                    "",
-                    "{\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu100"
-                    }
-                ],
-                [
-                    "case GestureState.Began:",
-                    "",
-                    "case GestureState.Began:\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu100"
-                    }
-                ],
-                [
-                    "image.ComputePreview();",
-                    "",
-                    "\timage.ComputePreview();\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu100"
-                    }
-                ],
-                [
-                    "break;",
-                    "",
-                    "\tbreak;\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu100"
-                    }
-                ],
-                [
-                    "case GestureState.Changed:",
-                    "",
-                    "case GestureState.Changed:\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu100"
-                    }
-                ],
-                [
-                    "image.TransformPreview(compositeGestureEvent.TotalScale, compositionGestureEvent.TotalRotation);",
-                    "",
-                    "\timage.TransformPreview(compositeGestureEvent.TotalScale, compositionGestureEvent.TotalRotation);\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu100"
-                    }
-                ],
-                [
-                    "break;",
-                    "",
-                    "\tbreak;\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu100"
-                    }
-                ],
-                [
-                    "case GestureState.Ended:",
-                    "",
-                    "case GestureState.Ended:\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu100"
-                    }
-                ],
-                [
-                    "image.TransformRealImage(compositeGestureEvent.TotalScale, compositionGestureEvent.TotalRotation);",
-                    "",
-                    "\timage.TransformRealImage(compositeGestureEvent.TotalScale, compositionGestureEvent.TotalRotation);\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu100"
-                    }
-                ],
-                [
-                    "break;",
-                    "",
-                    "\tbreak;\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu100"
-                    }
-                ],
-                [
-                    "default:",
-                    "",
-                    "default:\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu100"
-                    }
-                ],
-                [
-                    "break;",
-                    "",
-                    "\tbreak;\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu100"
-                    }
-                ],
-                [
-                    "}",
-                    "",
-                    "}\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu100"
-                    }
-                ],
-                [
-                    "See also",
-                    "",
-                    "See also",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu101"
-                    }
-                ],
-                [
-                    "Pointers",
-                    "",
-                    "<g1>Pointers<\/g1>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu102"
-                    }
-                ],
-                [
-                    "Virtual buttons",
-                    "",
-                    "<g1>Virtual buttons<\/g1>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu103"
-                    }
-                ],
-                [
-                    "Input overview",
-                    "",
-                    "<g1>Input overview<\/g1>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/gestures.md",
-                    {
-                        "id": "tu104"
-                    }
-                ]
-            ]
-        }
-    ],
-    "seg_enabled": false
+  "filename": "manual\\input\\gestures.md.xlf",
+  "files": [
+    {
+      "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md": [
+        [
+          "Gestures",
+          "Gestos",
+          "Gestures",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu1"
+          }
+        ],
+        [
+          "<x1\\/>Intermediate<x2\\/>",
+          "<x1\\/> Intermediário <x2\\/>",
+          "<x1\\/>Intermediate<x2\\/>\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu2"
+          }
+        ],
+        [
+          "<x3\\/>Programmer<x4\\/>",
+          "<x3\\/> Programador <x4\\/>",
+          "<x3\\/>Programmer<x4\\/>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu2"
+          }
+        ],
+        [
+          "Gestures are predefined <g1>pointer<\\/g1> patterns.",
+          "Gestos são padrões predefinidos <g1>pointer<\\/g1>.",
+          "Gestures are predefined <g1>pointer<\\/g1> patterns.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu3"
+          }
+        ],
+        [
+          "Stride can recognize gestures and trigger corresponding events.",
+          "Stride pode reconhecer gestos e desencadear eventos correspondentes.",
+          " Stride can recognize gestures and trigger corresponding events.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu3"
+          }
+        ],
+        [
+          "For example, in a strategy game, the player can drag and drop a unit to the battlefield with a <g2>drag<\\/g2> gesture.",
+          "Por exemplo, em um jogo de estratégia, o jogador pode arrastar e soltar uma unidade para o campo de batalha com um gesto <g2>drag<\\/g2>.",
+          " For example, in a strategy game, the player can drag and drop a unit to the battlefield with a <g2>drag<\\/g2> gesture.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu3"
+          }
+        ],
+        [
+          "Gestures can use one or several fingers.",
+          "Gestos podem usar um ou vários dedos.",
+          " Gestures can use one or several fingers.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu3"
+          }
+        ],
+        [
+          "<x1\\/>!Note<x2\\/>",
+          "<x1\\/>!Note<x2\\/>",
+          "<x1\\/>!Note<x2\\/>\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu4"
+          }
+        ],
+        [
+          "All lengths, speeds and error margins of configuration files must use normalized values.",
+          "Todos os comprimentos, velocidades e margens de erro dos arquivos de configuração devem usar valores normalizados.",
+          "All lengths, speeds and error margins of configuration files must use normalized values.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu4"
+          }
+        ],
+        [
+          "Turn on gesture recognition",
+          "Vire o reconhecimento de gestos",
+          "Turn on gesture recognition",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu5"
+          }
+        ],
+        [
+          "By default, the input system doesn't recognize gestures, as this requires CPU time.",
+          "Por padrão, o sistema de entrada não reconhece gestos, pois isso requer tempo de CPU.",
+          "By default, the input system doesn't recognize gestures, as this requires CPU time.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu6"
+          }
+        ],
+        [
+          "To turn on gesture recognition:",
+          "Para ativar o reconhecimento de gestos:",
+          "To turn on gesture recognition:",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu7"
+          }
+        ],
+        [
+          "Create an instance of the configuration class for the gesture you want to recognize.",
+          "Crie uma instância da classe de configuração para o gesto que deseja reconhecer.",
+          "Create an instance of the configuration class for the gesture you want to recognize.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu8"
+          }
+        ],
+        [
+          "For example, for the drag gesture, create an instance of @'Stride.Input.GestureConfigDrag'.",
+          "Por exemplo, para o gesto de arrastar, crie uma instância de @'Stride.Input.GestureConfigDrag'.",
+          " For example, for the drag gesture, create an instance of @'Stride.Input.GestureConfigDrag'.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu8"
+          }
+        ],
+        [
+          "Configure the class parameters.",
+          "Configurar os parâmetros de classe.",
+          "Configure the class parameters.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu9"
+          }
+        ],
+        [
+          "Add the gesture configuration to the @'Stride.Input.InputManager.Gestures' collection.",
+          "Adicione a configuração de gesto à coleção @'Stride.Input.InputManager.Gestures.",
+          "Add the gesture configuration to the @'Stride.Input.InputManager.Gestures' collection.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu10"
+          }
+        ],
+        [
+          "<x1\\/>!Warning<x2\\/>",
+          "<x1\\/>!Warning<x2\\/>",
+          "<x1\\/>!Warning<x2\\/>\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu11"
+          }
+        ],
+        [
+          "After you activate recognition for a gesture, you can't modify the gesture's parameters.",
+          "Depois de ativar o reconhecimento por um gesto, você não pode modificar os parâmetros do gesto.",
+          "After you activate recognition for a gesture, you can't modify the gesture's parameters.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu11"
+          }
+        ],
+        [
+          "If you need to do this, delete the gesture from the @'Stride.Input.InputManager.Gestures' collection and create a new entry with new parameters.",
+          "Se você precisar fazer isso, exclua o gesto do @'Stride. Input.InputManager.Gestures' coleção e criar uma nova entrada com novos parâmetros.",
+          " If you need to do this, delete the gesture from the @'Stride.Input.InputManager.Gestures' collection and create a new entry with new parameters.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu11"
+          }
+        ],
+        [
+          "Turn off gesture recognition",
+          "Desligue o reconhecimento do gesto",
+          "Turn off gesture recognition",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu12"
+          }
+        ],
+        [
+          "Delete the gesture from the <g1>InputManager.Gestures<\\/g1> collection.",
+          "Exclua o gesto do <g1>InputManager. Gestures<\\/g1> coleção.",
+          "Delete the gesture from the <g1>InputManager.Gestures<\\/g1> collection.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu13"
+          }
+        ],
+        [
+          "Gesture recognition",
+          "Reconhecimento de natureza",
+          "Gesture recognition",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu14"
+          }
+        ],
+        [
+          "When the input system detects a gesture, it adds a @'Stride.Input.GestureEvent' to the list of <g1>InputManager.GestureEvents<\\/g1>.",
+          "Quando o sistema de entrada detecta um gesto, ele adiciona um @'Stride. Input.GestureEvent' para a lista de <g1>InputManager.GestureEvents<\\/g1>.",
+          "When the input system detects a gesture, it adds a @'Stride.Input.GestureEvent' to the list of <g1>InputManager.GestureEvents<\\/g1>.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu15"
+          }
+        ],
+        [
+          "The event contains information about the gesture and its state, such as its location and the number of fingers used.",
+          "O evento contém informações sobre o gesto e seu estado, como sua localização e o número de dedos usados.",
+          " The event contains information about the gesture and its state, such as its location and the number of fingers used.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu15"
+          }
+        ],
+        [
+          "<x1\\/>!Note<x2\\/>",
+          "<x1\\/>!Note<x2\\/>",
+          "<x1\\/>!Note<x2\\/>\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu16"
+          }
+        ],
+        [
+          "Each gesture has its own associated gesture event class (see below).",
+          "Cada gesto tem sua própria classe de evento de gesto (veja abaixo).",
+          "Each gesture has its own associated gesture event class (see below).",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu16"
+          }
+        ],
+        [
+          "The <g1>GestureEvent.Type<\\/g1> field indicates which gesture has been recognized.",
+          "O campo <g1>GestureEvent.Type<\\/g1> indica qual gesto foi reconhecido.",
+          "The <g1>GestureEvent.Type<\\/g1> field indicates which gesture has been recognized.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu17"
+          }
+        ],
+        [
+          "You can then cast the base gesture event into the gesture-specific event type to have gesture-type-specific information about the event.",
+          "Você pode então lançar o evento de gesto de base no tipo de evento específico de gestos para ter informações específicas sobre o evento.",
+          " You can then cast the base gesture event into the gesture-specific event type to have gesture-type-specific information about the event.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu17"
+          }
+        ],
+        [
+          "Stride can detect several gestures simultaneously, so the event list can contain more than one item in an update.",
+          "Stride pode detectar vários gestos simultaneamente, de modo que a lista de eventos pode conter mais de um item em uma atualização.",
+          "Stride can detect several gestures simultaneously, so the event list can contain more than one item in an update.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu18"
+          }
+        ],
+        [
+          "The list is cleared with every update, so you don't need to clear it manually.",
+          "A lista é limpa com cada atualização, então você não precisa limpá-la manualmente.",
+          "The list is cleared with every update, so you don't need to clear it manually.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu19"
+          }
+        ],
+        [
+          "Configure gestures",
+          "Configurar gestos",
+          "Configure gestures",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu20"
+          }
+        ],
+        [
+          "In the @'Stride.Input.GestureConfig' classes, you can configure parameters including:",
+          "Nas classes @'Stride.Input.GestureConfig', você pode configurar parâmetros incluindo:",
+          "In the @'Stride.Input.GestureConfig' classes, you can configure parameters including:",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu21"
+          }
+        ],
+        [
+          "the number of fingers the gesture uses",
+          "o número de dedos que o gesto usa",
+          "the number of fingers the gesture uses",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu22"
+          }
+        ],
+        [
+          "the number and duration of taps the gesture uses",
+          "o número e duração de torneiras que o gesto usa",
+          "the number and duration of taps the gesture uses",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu23"
+          }
+        ],
+        [
+          "the gesture direction",
+          "a direção do gesto",
+          "the gesture direction",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu24"
+          }
+        ],
+        [
+          "<x1\\/>!Note<x2\\/>",
+          "<x1\\/>!Note<x2\\/>",
+          "<x1\\/>!Note<x2\\/>\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu25"
+          }
+        ],
+        [
+          "Each gesture has its own configuration class with specific configuration parameters (see below).",
+          "Cada gesto tem sua própria classe de configuração com parâmetros de configuração específicos (veja abaixo).",
+          "Each gesture has its own configuration class with specific configuration parameters (see below).",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu25"
+          }
+        ],
+        [
+          "Types of gesture",
+          "Tipos de gesto",
+          "Types of gesture",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu26"
+          }
+        ],
+        [
+          "Stride supports two main types of gesture:",
+          "Stride suporta dois tipos principais de gesto:",
+          "Stride supports two main types of gesture:",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu27"
+          }
+        ],
+        [
+          "<g1>Discrete<\\/g1> gestures (tap, flick, long press) trigger a single event.",
+          "<g1>Discrete<\\/g1> gestos (tap, flick, long press) desencadear um único evento.",
+          "<g1>Discrete<\\/g1> gestures (tap, flick, long press) trigger a single event.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu28"
+          }
+        ],
+        [
+          "Tap",
+          "Toca a tocar",
+          "<g1>Tap<\\/g1>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu29"
+          }
+        ],
+        [
+          "Flick",
+          "Flick",
+          "<g1>Flick<\\/g1>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu30"
+          }
+        ],
+        [
+          "Long press",
+          "Imprensa longa",
+          "<g1>Long press<\\/g1>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu31"
+          }
+        ],
+        [
+          "<g1>Continuous<\\/g1> gestures (drag and composite) trigger a series of events when the user changes the direction of the gesture.",
+          "<g1> Os gestos contínuos<\\/g1> (drag e compósito) desencadeiam uma série de eventos quando o usuário muda a direção do gesto.",
+          "<g1>Continuous<\\/g1> gestures (drag and composite) trigger a series of events when the user changes the direction of the gesture.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu32"
+          }
+        ],
+        [
+          "Drag",
+          "Arraste",
+          "<g1>Drag<\\/g1>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu33"
+          }
+        ],
+        [
+          "Composite",
+          "Composto",
+          "<g1>Composite<\\/g1>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu34"
+          }
+        ],
+        [
+          "Discrete gestures",
+          "Gestos discretos",
+          "Discrete gestures",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu35"
+          }
+        ],
+        [
+          "<x1\\/> Tap <x2\\/>",
+          "<x1\\/> Toque <x2\\/>",
+          "<x1\\/> Tap <x2\\/>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu36"
+          }
+        ],
+        [
+          "<x1\\/>Tap gesture<x2\\/>",
+          "<x1\\/>Tap gesto<x2\\/>",
+          "<x1\\/>Tap gesture<x2\\/>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu37"
+          }
+        ],
+        [
+          "The user touches the screen and quickly removes their finger.",
+          "O usuário toca a tela e remove rapidamente o dedo.",
+          "The user touches the screen and quickly removes their finger.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu38"
+          }
+        ],
+        [
+          "<g1>Configuration class<\\/g1>:",
+          "<g1>Configuration class<\\/g1>:",
+          "<g1>Configuration class<\\/g1>:",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu39"
+          }
+        ],
+        [
+          "@'Stride.Input.GestureConfigTap'",
+          "@'Stride.Input.GestureConfigTap '",
+          " @'Stride.Input.GestureConfigTap'",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu39"
+          }
+        ],
+        [
+          "<g1>Event class<\\/g1>:",
+          "<g1>Event class<\\/g1>:",
+          "<g1>Event class<\\/g1>:",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu40"
+          }
+        ],
+        [
+          "@'Stride.Input.GestureEventTap'",
+          "@'Stride.Input.GestureEventTap '",
+          " @'Stride.Input.GestureEventTap'",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu40"
+          }
+        ],
+        [
+          "The number of fingers on the screen can't vary during the gesture.",
+          "O número de dedos na tela não pode variar durante o gesto.",
+          "The number of fingers on the screen can't vary during the gesture.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu41"
+          }
+        ],
+        [
+          "To set the number of fingers required for a tap, modify @'Stride.Input.GestureConfig.RequiredNumberOfFingers'.",
+          "Para definir o número de dedos necessários para uma torneira, modifique @'Stride.Input.GestureConfig.RequiredNumberOfFingers'.",
+          " To set the number of fingers required for a tap, modify @'Stride.Input.GestureConfig.RequiredNumberOfFingers'.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu41"
+          }
+        ],
+        [
+          "<x1\\/>!TIP<x2\\/>",
+          "<x1\\/>!TIP<x2\\/>",
+          "<x1\\/>!TIP<x2\\/>\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu42"
+          }
+        ],
+        [
+          "To distinguish single taps from multi-taps, the system uses latency in tap events.",
+          "Para distinguir torneiras únicas de multi-taps, o sistema usa latência em eventos de torneira.",
+          "To distinguish single taps from multi-taps, the system uses latency in tap events.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu42"
+          }
+        ],
+        [
+          "To disable this, set the <g1>GestureConfigTap.MaximumTimeBetweenTaps<\\/g1> field to <g2>0<\\/g2>.",
+          "Para desativar isso, defina o campo <g1>GestureConfigTap.MaximumTimeBetweenTaps<\\/g1> para <g2>0<\\/g2>.",
+          " To disable this, set the <g1>GestureConfigTap.MaximumTimeBetweenTaps<\\/g1> field to <g2>0<\\/g2>.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu42"
+          }
+        ],
+        [
+          "<x1\\/> Flick<x2\\/>",
+          "<x1\\/> Flick<x2\\/>",
+          "<x1\\/> Flick<x2\\/>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu43"
+          }
+        ],
+        [
+          "<x1\\/>Flick gesture<x2\\/>",
+          "<x1\\/>Flick gesto<x2\\/>",
+          "<x1\\/>Flick gesture<x2\\/>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu44"
+          }
+        ],
+        [
+          "The user touches the screen, performs a quick straight translation, and withdraws their finger(s).",
+          "O usuário toca a tela, executa uma tradução direta rápida e retira seu dedo (s).",
+          "The user touches the screen, performs a quick straight translation, and withdraws their finger(s).",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu45"
+          }
+        ],
+        [
+          "<g1>Configuration class<\\/g1>:",
+          "<g1>Configuration class<\\/g1>:",
+          "<g1>Configuration class<\\/g1>:",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu46"
+          }
+        ],
+        [
+          "@'Stride.Input.GestureConfigFlick'",
+          "@'Stride.Input.GestureConfigFlick '",
+          " @'Stride.Input.GestureConfigFlick'",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu46"
+          }
+        ],
+        [
+          "<g1>Event class<\\/g1>:",
+          "<g1>Event class<\\/g1>:",
+          "<g1>Event class<\\/g1>:",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu47"
+          }
+        ],
+        [
+          "@'Stride.Input.GestureEventFlick'",
+          "@'Stride.Input.GestureEventFlick '",
+          " @'Stride.Input.GestureEventFlick'",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu47"
+          }
+        ],
+        [
+          "The number of fingers on the screen can't during the gesture.",
+          "O número de dedos na tela não pode durante o gesto.",
+          "The number of fingers on the screen can't during the gesture.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu48"
+          }
+        ],
+        [
+          "To set a minimum length for the flick gesture, use <g1>GestureConfigFlick.MinimumFlickLength<\\/g1>.",
+          "Para definir um comprimento mínimo para o gesto flick, use <g1>GestureConfigFlick.MinimumFlickLength<\\/g1>.",
+          "To set a minimum length for the flick gesture, use <g1>GestureConfigFlick.MinimumFlickLength<\\/g1>.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu49"
+          }
+        ],
+        [
+          "To restrict the direction of the flick to <g1>vertical<\\/g1> or <g2>horizontal<\\/g2>, use",
+          "Para restringir a direção do flick a <g1>vertical<\\/g1> ou <g2>horizontal<\\/g2>, use",
+          "To restrict the direction of the flick to <g1>vertical<\\/g1> or <g2>horizontal<\\/g2>, use\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu50"
+          }
+        ],
+        [
+          "<g3>GestureConfigFlick.FlickShape<\\/g3>.",
+          "<g3>GestureConfigFlick.FlickShape<\\/g3>.",
+          "<g3>GestureConfigFlick.FlickShape<\\/g3>.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu50"
+          }
+        ],
+        [
+          "<x1\\/> Long press<x2\\/>",
+          "<x1\\/> Imprensa longa <x2\\/>",
+          "<x1\\/> Long press<x2\\/>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu51"
+          }
+        ],
+        [
+          "<x1\\/>Long press gesture<x2\\/>",
+          "<x1\\/>Long press gesto<x2\\/>",
+          "<x1\\/>Long press gesture<x2\\/>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu52"
+          }
+        ],
+        [
+          "The user touches the screen and maintains pressure without removing their finger for a certain period of time (the default time is one second).",
+          "O usuário toca a tela e mantém a pressão sem remover seu dedo por um determinado período de tempo (o tempo padrão é um segundo).",
+          "The user touches the screen and maintains pressure without removing their finger for a certain period of time (the default time is one second).",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu53"
+          }
+        ],
+        [
+          "<g1>Configuration class<\\/g1>:",
+          "<g1>Configuration class<\\/g1>:",
+          "<g1>Configuration class<\\/g1>:",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu54"
+          }
+        ],
+        [
+          "GestureConfigLongPress",
+          "GestureConfigLongPress",
+          " <g2>GestureConfigLongPress<\\/g2>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu54"
+          }
+        ],
+        [
+          "<g1>Event class<\\/g1>:",
+          "<g1>Event class<\\/g1>:",
+          "<g1>Event class<\\/g1>:",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu55"
+          }
+        ],
+        [
+          "GestureEventLongPress",
+          "GestureEventLong Imprensa",
+          " <g2>GestureEventLongPress<\\/g2>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu55"
+          }
+        ],
+        [
+          "The number of fingers on the screen can't vary during the gesture.",
+          "O número de dedos na tela não pode variar durante o gesto.",
+          "The number of fingers on the screen can't vary during the gesture.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu56"
+          }
+        ],
+        [
+          "To change the minimum press length for the long press gesture, modify  <g1>GestureConfigLongPress.RequiredPressTime<\\/g1>.",
+          "Para alterar o comprimento da prensa mínima para o gesto de prensa longa, modifique <g1>GestureConfigLongPress.RequiredPressTime<\\/g1>.",
+          "To change the minimum press length for the long press gesture, modify  <g1>GestureConfigLongPress.RequiredPressTime<\\/g1>.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu57"
+          }
+        ],
+        [
+          "Continuous gestures",
+          "Gestos contínuos",
+          "Continuous gestures",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu58"
+          }
+        ],
+        [
+          "<x1\\/> Drag<x2\\/>",
+          "<x1\\/> Drag<x2\\/>",
+          "<x1\\/> Drag<x2\\/>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu59"
+          }
+        ],
+        [
+          "<x1\\/>Drag gesture<x2\\/>",
+          "<x1\\/>Drag gesto<x2\\/>",
+          "<x1\\/>Drag gesture<x2\\/>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu60"
+          }
+        ],
+        [
+          "The user touches the screen, performs a translation, and withdraws their finger(s).",
+          "O usuário toca a tela, executa uma tradução e retira seus dedos.",
+          "The user touches the screen, performs a translation, and withdraws their finger(s).",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu61"
+          }
+        ],
+        [
+          "<g1>Configuration class<\\/g1>:",
+          "<g1>Configuration class<\\/g1>:",
+          "<g1>Configuration class<\\/g1>:",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu62"
+          }
+        ],
+        [
+          "GestureConfigDrag",
+          "GestureConfigDrag",
+          " <g2>GestureConfigDrag<\\/g2>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu62"
+          }
+        ],
+        [
+          "<g1>Event class<\\/g1>:",
+          "<g1>Event class<\\/g1>:",
+          "<g1>Event class<\\/g1>:",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu63"
+          }
+        ],
+        [
+          "GestureEventDrag",
+          "GestureEventDrag",
+          " <g2>GestureEventDrag<\\/g2>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu63"
+          }
+        ],
+        [
+          "The number of fingers on the screen can't vary during the gesture.",
+          "O número de dedos na tela não pode variar durante o gesto.",
+          "The number of fingers on the screen can't vary during the gesture.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu64"
+          }
+        ],
+        [
+          "To detect smaller drags, decrease <g1>GestureConfigDrag.MinimumDragDistance<\\/g1>.",
+          "Para detectar arrastos menores, diminua <g1>GestureConfigDrag.MinimumDragDistance<\\/g1>.",
+          "To detect smaller drags, decrease <g1>GestureConfigDrag.MinimumDragDistance<\\/g1>.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu65"
+          }
+        ],
+        [
+          "To restrict the direction of the drag to <g1>vertical<\\/g1> or <g2>horizontal<\\/g2>, use <g3>GestureConfigDrag.DragShape<\\/g3>.",
+          "Para restringir a direção do arrasto para <g1>vertical<\\/g1> ou <g2>horizontal<\\/g2>, use <g3>GestureConfigDrag.DragShape<\\/g3>.",
+          "To restrict the direction of the drag to <g1>vertical<\\/g1> or <g2>horizontal<\\/g2>, use <g3>GestureConfigDrag.DragShape<\\/g3>.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu66"
+          }
+        ],
+        [
+          "<x1\\/> Composite<x2\\/>",
+          "<x1\\/> Composite<x2\\/>",
+          "<x1\\/> Composite<x2\\/>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu67"
+          }
+        ],
+        [
+          "<x1\\/>Translation gesture<x2\\/> <x3\\/>Scale gesture<x4\\/> <x5\\/>Rotation gesture<x6\\/>",
+          "<x1\\/>Gestão de tradução<x2\\/> <x3\\/>Gestão de cálculo <x4\\/>Gestão de rotação<x6\\/>",
+          "<x1\\/>Translation gesture<x2\\/> <x3\\/>Scale gesture<x4\\/> <x5\\/>Rotation gesture<x6\\/>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu68"
+          }
+        ],
+        [
+          "The user touches the screen with two fingers and moves them independently.",
+          "O usuário toca a tela com dois dedos e os move de forma independente.",
+          "The user touches the screen with two fingers and moves them independently.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu69"
+          }
+        ],
+        [
+          "<g1>Configuration class<\\/g1>:",
+          "<g1>Configuration class<\\/g1>:",
+          "<g1>Configuration class<\\/g1>:",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu70"
+          }
+        ],
+        [
+          "@'Stride.Input.GestureConfigComposite'",
+          "@'Stride.Input.GestureConfigComposite '",
+          " @'Stride.Input.GestureConfigComposite'",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu70"
+          }
+        ],
+        [
+          "<g1>Event class<\\/g1>:",
+          "<g1>Event class<\\/g1>:",
+          "<g1>Event class<\\/g1>:",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu71"
+          }
+        ],
+        [
+          "@'Stride.Input.GestureEventComposite'",
+          "@'Stride.Input.GestureEventComposite '",
+          " @'Stride.Input.GestureEventComposite'",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu71"
+          }
+        ],
+        [
+          "The composite gesture requires exactly two fingers on the screen.",
+          "O gesto composto requer exatamente dois dedos na tela.",
+          "The composite gesture requires exactly two fingers on the screen.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu72"
+          }
+        ],
+        [
+          "It's triggered when the system detects one of the three basic actions:",
+          "É acionado quando o sistema detecta uma das três ações básicas:",
+          " It's triggered when the system detects one of the three basic actions:",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu72"
+          }
+        ],
+        [
+          "<g1>Translation<\\/g1>: the user translates two fingers together in the same direction.",
+          "<g1>Translation<\\/g1>: o usuário traduz dois dedos juntos na mesma direção.",
+          "<g1>Translation<\\/g1>: the user translates two fingers together in the same direction.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu73"
+          }
+        ],
+        [
+          "<g1>Scale<\\/g1>: the user moves two fingers closer together or further apart.",
+          "<g1>Scale<\\/g1>: o usuário move dois dedos mais próximos ou mais distantes.",
+          "<g1>Scale<\\/g1>: the user moves two fingers closer together or further apart.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu74"
+          }
+        ],
+        [
+          "<g1>Rotation<\\/g1>: the user rotates two fingers around a center point.",
+          "<g1>Rotação<\\/g1>: o usuário gira dois dedos em torno de um ponto central.",
+          "<g1>Rotation<\\/g1>: the user rotates two fingers around a center point.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu75"
+          }
+        ],
+        [
+          "Gesture states",
+          "Estado de Gesture",
+          "Gesture states",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu76"
+          }
+        ],
+        [
+          "A gesture always has one of four states:",
+          "Um gesto sempre tem um dos quatro estados:",
+          "A gesture always has one of four states:",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu77"
+          }
+        ],
+        [
+          "Began",
+          "Began",
+          "Began",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu78"
+          }
+        ],
+        [
+          "Changed",
+          "Mudança",
+          "Changed",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu79"
+          }
+        ],
+        [
+          "Ended",
+          "Fim",
+          "Ended",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu80"
+          }
+        ],
+        [
+          "Occurred",
+          "Ocorrência",
+          "Occurred",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu81"
+          }
+        ],
+        [
+          "<g1>Discrete<\\/g1> gestures (tap, flick, long press) always have the state <g2>occurred<\\/g2>.",
+          "<g1>Discrete<\\/g1> gestos (tap, flick, long press) sempre têm o estado <g2>occurred<\\/g2>.",
+          "<g1>Discrete<\\/g1> gestures (tap, flick, long press) always have the state <g2>occurred<\\/g2>.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu82"
+          }
+        ],
+        [
+          "<g3>Continuous<\\/g3> gestures (drag and composite) always begin with the state <g4>began<\\/g4>, followed by any  <g5>changed<\\/g5> states, and end with the <g6>ended<\\/g6> state.",
+          "<g3> Os gestos (drag e compósito) sempre começam com o estado <g4>began<\\/g4>, seguidos por quaisquer estados <g5>changed<\\/g5> e terminam com o estado <g6>ended<\\/g6>.",
+          " <g3>Continuous<\\/g3> gestures (drag and composite) always begin with the state <g4>began<\\/g4>, followed by any  <g5>changed<\\/g5> states, and end with the <g6>ended<\\/g6> state.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu82"
+          }
+        ],
+        [
+          "To query the current state of a gesture, use the <g1>GestureEvent.State<\\/g1> field of the triggered gesture event.",
+          "Para consultar o estado atual de um gesto, use o campo <g1>GestureEvent.State<\\/g1> do evento de gesto acionado.",
+          "To query the current state of a gesture, use the <g1>GestureEvent.State<\\/g1> field of the triggered gesture event.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu83"
+          }
+        ],
+        [
+          "Example code",
+          "Exemplo de código",
+          "Example code",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu84"
+          }
+        ],
+        [
+          "Activate or deactivate gesture recognition",
+          "Ativar ou desativar o reconhecimento de gestos",
+          "Activate or deactivate gesture recognition",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu85"
+          }
+        ],
+        [
+          "To create the configuration of a gesture you want to recognize:",
+          "Para criar a configuração de um gesto que você deseja reconhecer:",
+          "To create the configuration of a gesture you want to recognize:",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu86"
+          }
+        ],
+        [
+          "\\/\\/ Create the configuration of a gesture you want to recognize.",
+          "\\/\\/ Crie a configuração de um gesto que deseja reconhecer.",
+          "\\/\\/ Create the configuration of a gesture you want to recognize.\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu87"
+          }
+        ],
+        [
+          "var singleTapConfig = new GestureConfigTap();",
+          "var single TapConfig = novo GestureConfigTap();",
+          "var singleTapConfig = new GestureConfigTap();\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu87"
+          }
+        ],
+        [
+          "\\/\\/ Start tap gesture recognition.",
+          "\\/\\/ Iniciar reconhecimento de gestos.",
+          "\r\n\\/\\/ Start tap gesture recognition.\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu87"
+          }
+        ],
+        [
+          "Input.Gestures.Add(singleTapConfig);",
+          "Entrada.Gestures.Add (singleTapConfig);",
+          "Input.Gestures.Add(singleTapConfig);\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu87"
+          }
+        ],
+        [
+          "\\/\\/ Create the configuration of the gesture you want to recognize.",
+          "\\/\\/ Crie a configuração do gesto que deseja reconhecer.",
+          "\r\n\\/\\/ Create the configuration of the gesture you want to recognize.\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu87"
+          }
+        ],
+        [
+          "var doubleTapConfig = new GestureConfigTap(2, 1);",
+          "var duplo TapConfig = novo GestureConfigTap(2, 1);",
+          "var doubleTapConfig = new GestureConfigTap(2, 1);\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu87"
+          }
+        ],
+        [
+          "\\/\\/ Start double tap gesture recognition.",
+          "\\/\\/ Iniciar reconhecimento de gesto de torneira dupla.",
+          "\r\n\\/\\/ Start double tap gesture recognition.\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu87"
+          }
+        ],
+        [
+          "Input.Gestures.Add(doubleTapConfig);",
+          "Entrada.Gestures.Add (doubleTapConfig);",
+          "Input.Gestures.Add(doubleTapConfig);\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu87"
+          }
+        ],
+        [
+          "\\/\\/ Stop tap gesture recognition.",
+          "\\/\\/ Pare de reconhecer gestos.",
+          "\r\n\\/\\/ Stop tap gesture recognition.\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu87"
+          }
+        ],
+        [
+          "Input.Gestures.Remove(singleTapConfig);",
+          "Input.Gestures.Remover(singleTapConfig);",
+          "Input.Gestures.Remove(singleTapConfig);\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu87"
+          }
+        ],
+        [
+          "\\/\\/ Stop all gesture recognitions.",
+          "\\/\\/ Parem todos os reconhecimentos de gestos.",
+          "\r\n\\/\\/ Stop all gesture recognitions.\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu87"
+          }
+        ],
+        [
+          "Input.Gestures.Clear();",
+          "Entrada.Gesturas.Clear();",
+          "Input.Gestures.Clear();\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu87"
+          }
+        ],
+        [
+          "Configure the gesture",
+          "Configurar o gesto",
+          "Configure the gesture",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu88"
+          }
+        ],
+        [
+          "Each configuration class has a parameterless constructor that corresponds to the default gesture configuration.",
+          "Cada classe de configuração tem um construtor sem parâmetro que corresponde à configuração de gesto padrão.",
+          "Each configuration class has a parameterless constructor that corresponds to the default gesture configuration.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu89"
+          }
+        ],
+        [
+          "You can use special constructors for frequently-modified parameters.",
+          "Você pode usar construtores especiais para parâmetros frequentemente modificados.",
+          " You can use special constructors for frequently-modified parameters.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu89"
+          }
+        ],
+        [
+          "<x1\\/>!warning<x2\\/>",
+          "<x1\\/>!warning<x2\\/>",
+          "<x1\\/>!warning<x2\\/>\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu90"
+          }
+        ],
+        [
+          "We don't recommend you modify other fields as this might break the input system.",
+          "Não recomendamos que você modifique outros campos, pois isso pode quebrar o sistema de entrada.",
+          "We don't recommend you modify other fields as this might break the input system.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu90"
+          }
+        ],
+        [
+          "But if you need to, you can modify them using the corresponding properties.",
+          "Mas se você precisar, você pode modificá-los usando as propriedades correspondentes.",
+          " But if you need to, you can modify them using the corresponding properties.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu90"
+          }
+        ],
+        [
+          "\\/\\/ Default gesture config.",
+          "\\/\\/ Default gesto config.",
+          "\\/\\/ Default gesture config.\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu91"
+          }
+        ],
+        [
+          "var singleTapConfig = new GestureConfigTap();",
+          "var single TapConfig = novo GestureConfigTap();",
+          "var singleTapConfig = new GestureConfigTap();\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu91"
+          }
+        ],
+        [
+          "\\/\\/ Personalize gesture config using the dedicated constructor.",
+          "\\/\\/ Personalizar a configuração do gesto usando o construtor dedicado.",
+          "\r\n\\/\\/ Personalize gesture config using the dedicated constructor.\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu91"
+          }
+        ],
+        [
+          "var doubleTapConfig = new GestureConfigTap(2, 2);",
+          "var duplo TapConfig = novo GestureConfigTap(2, 2);",
+          "var doubleTapConfig = new GestureConfigTap(2, 2);\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu91"
+          }
+        ],
+        [
+          "\\/\\/ Personalize gesture config by directly accessing the desired property.",
+          "\\/\\/ Personalizar a configuração do gesto acessando diretamente a propriedade desejada.",
+          "\r\n\\/\\/ Personalize gesture config by directly accessing the desired property.\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu91"
+          }
+        ],
+        [
+          "\\/\\/ Make sure you know what you're doing!",
+          "\\/\\/ Certifica-te que sabes o que estás a fazer!",
+          "\\/\\/ Make sure you know what you're doing!",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu91"
+          }
+        ],
+        [
+          "Modifying this might break the input system.",
+          "Modificar isso pode quebrar o sistema de entrada.",
+          " Modifying this might break the input system.\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu91"
+          }
+        ],
+        [
+          "var noLatencyTap = new GestureConfigTap() { MaximumTimeBetweenTaps= TimeSpan.Zero };",
+          "var noLatencyTap = novo GestureConfigTap() { MaximumTimeBetweenTaps= TimeSpan.Zero };",
+          "var noLatencyTap = new GestureConfigTap() { MaximumTimeBetweenTaps= TimeSpan.Zero };\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu91"
+          }
+        ],
+        [
+          "Access gesture events",
+          "Eventos de gesto de acesso",
+          "Access gesture events",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu92"
+          }
+        ],
+        [
+          "You can access the list of events triggered by recognized gestures using the <g1>InputManager.GestureEvents<\\/g1> collection.",
+          "Você pode acessar a lista de eventos desencadeados por gestos reconhecidos usando a coleção <g1>InputManager.GestureEvents<\\/g1>.",
+          "You can access the list of events triggered by recognized gestures using the <g1>InputManager.GestureEvents<\\/g1> collection.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu93"
+          }
+        ],
+        [
+          "The collection is automatically cleared at every update.",
+          "A coleção é automaticamente limpa em cada atualização.",
+          " The collection is automatically cleared at every update.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu93"
+          }
+        ],
+        [
+          "var currentFrameGestureEvents = Input.GestureEvents;",
+          "linha de produção Eventos = Entrada.Gestura Eventos;",
+          "var currentFrameGestureEvents = Input.GestureEvents;\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu94"
+          }
+        ],
+        [
+          "Identify the gesture type",
+          "Identificar o tipo de gesto",
+          "Identify the gesture type",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu95"
+          }
+        ],
+        [
+          "Use the <g1>GestureEvent.Type<\\/g1> field to identity the gesture type, then cast it to the appropriate event type to get extra information about the event.",
+          "Use o campo <g1>GestureEvent.Type<\\/g1> para identificar o tipo de gesto, então lançá-lo para o tipo de evento apropriado para obter informações adicionais sobre o evento.",
+          "Use the <g1>GestureEvent.Type<\\/g1> field to identity the gesture type, then cast it to the appropriate event type to get extra information about the event.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu96"
+          }
+        ],
+        [
+          "foreach( var gestureEvent in Input.GestureEvents)",
+          "foreach( var gesto Evento em Input.GestureEvents)",
+          "foreach( var gestureEvent in Input.GestureEvents)\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu97"
+          }
+        ],
+        [
+          "{",
+          "(",
+          "{\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu97"
+          }
+        ],
+        [
+          "\\/\\/ Determine if the event is from a tap gesture",
+          "\\/\\/ Determinar se o evento é de um gesto de toque",
+          "   \t\\/\\/ Determine if the event is from a tap gesture\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu97"
+          }
+        ],
+        [
+          "if (gestureEvent.Type != GestureType.Tap)",
+          "if (gestureEvent. Tipo! GestureType.Tap)",
+          "\tif (gestureEvent.Type != GestureType.Tap)\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu97"
+          }
+        ],
+        [
+          "continue;",
+          "continuar;",
+          "\t\tcontinue;\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu97"
+          }
+        ],
+        [
+          "\\/\\/ Cast a specific tap event class.",
+          "\\/\\/ Elenco uma classe específica de eventos de torneira.",
+          "   \r\n\t\\/\\/ Cast a specific tap event class.\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu97"
+          }
+        ],
+        [
+          "GestureEventTap  tapEvent = (GestureEventTap) gestureEvent;",
+          "GestureEvent Toque em tapEvent = (GestureEventTap) gesto Evento;",
+          "\tGestureEventTap  tapEvent = (GestureEventTap) gestureEvent;\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu97"
+          }
+        ],
+        [
+          "\\/\\/ Access tap-event-specific field.",
+          "\\/\\/ Acesso campo específico de tap-event.",
+          "\t\r\n    \\/\\/ Access tap-event-specific field.\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu97"
+          }
+        ],
+        [
+          "log.Info(\"Tap position:",
+          "log.Info(\"Tap position:",
+          "    log.Info(\"Tap position:",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu97"
+          }
+        ],
+        [
+          "{0}.\", tapEvent.TapPosition);",
+          "(0}.\", tapEvent.TapPosition);",
+          " {0}.\", tapEvent.TapPosition);\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu97"
+          }
+        ],
+        [
+          "}",
+          "",
+          "}\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu97"
+          }
+        ],
+        [
+          "Identify the gesture state",
+          "Identificar o estado de gesto",
+          "Identify the gesture state",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu98"
+          }
+        ],
+        [
+          "Use the <g1>GestureEvent.State<\\/g1> field to get gesture event state.",
+          "Use o campo <g1>GestureEvent.State<\\/g1> para obter estado de evento de gesto.",
+          "Use the <g1>GestureEvent.State<\\/g1> field to get gesture event state.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu99"
+          }
+        ],
+        [
+          "switch(compositeGestureEvent.State)",
+          "switch (compositeGestureEvent.State)",
+          "switch(compositeGestureEvent.State)\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu100"
+          }
+        ],
+        [
+          "{",
+          "(",
+          "{\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu100"
+          }
+        ],
+        [
+          "case GestureState.Began:",
+          "caso GestureState. Começou",
+          "case GestureState.Began:\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu100"
+          }
+        ],
+        [
+          "image.ComputePreview();",
+          "image.ComputePreview();",
+          "\timage.ComputePreview();\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu100"
+          }
+        ],
+        [
+          "break;",
+          "quebrar;",
+          "\tbreak;\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu100"
+          }
+        ],
+        [
+          "case GestureState.Changed:",
+          "caso GestureState. Alterado:",
+          "case GestureState.Changed:\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu100"
+          }
+        ],
+        [
+          "image.TransformPreview(compositeGestureEvent.TotalScale, compositionGestureEvent.TotalRotation);",
+          "image.TransformPreview (compositeGestureEvent.TotalScale, composiçãoGestureEvent.TotalRotation);",
+          "\timage.TransformPreview(compositeGestureEvent.TotalScale, compositionGestureEvent.TotalRotation);\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu100"
+          }
+        ],
+        [
+          "break;",
+          "quebrar;",
+          "\tbreak;\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu100"
+          }
+        ],
+        [
+          "case GestureState.Ended:",
+          "caso GestureState. Fim:",
+          "case GestureState.Ended:\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu100"
+          }
+        ],
+        [
+          "image.TransformRealImage(compositeGestureEvent.TotalScale, compositionGestureEvent.TotalRotation);",
+          "image.TransformReal (Imagem compostaGestureEvent.TotalScale, composiçãoGestureEvent.TotalRotation);",
+          "\timage.TransformRealImage(compositeGestureEvent.TotalScale, compositionGestureEvent.TotalRotation);\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu100"
+          }
+        ],
+        [
+          "break;",
+          "quebrar;",
+          "\tbreak;\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu100"
+          }
+        ],
+        [
+          "default:",
+          "padrão:",
+          "default:\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu100"
+          }
+        ],
+        [
+          "break;",
+          "quebrar;",
+          "\tbreak;\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu100"
+          }
+        ],
+        [
+          "}",
+          "",
+          "}\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu100"
+          }
+        ],
+        [
+          "See also",
+          "Ver também",
+          "See also",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu101"
+          }
+        ],
+        [
+          "Pointers",
+          "Pontos",
+          "<g1>Pointers<\\/g1>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu102"
+          }
+        ],
+        [
+          "Virtual buttons",
+          "Botões virtuais",
+          "<g1>Virtual buttons<\\/g1>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu103"
+          }
+        ],
+        [
+          "Input overview",
+          "Visão geral da entrada",
+          "<g1>Input overview<\\/g1>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/gestures.md",
+          {
+            "id": "tu104"
+          }
+        ]
+      ]
+    }
+  ],
+  "seg_enabled": false
 }

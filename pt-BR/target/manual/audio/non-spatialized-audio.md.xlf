@@ -3,69 +3,69 @@
 <body>
 <trans-unit id="tu1" xml:space="preserve">
 <source xml:lang="en">Non-spatialized audio</source>
-<target xml:lang="pt">Non-spatialized audio</target>
+<target xml:lang="pt">Áudio não espacializado</target>
 </trans-unit>
 <trans-unit id="tu2" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Beginner<x id="2"/>
 <x id="3"/>Programmer<x id="4"/></source>
-<target xml:lang="pt"><x id="1"/>Beginner<x id="2"/>
-<x id="3"/>Programmer<x id="4"/></target>
+<target xml:lang="pt">&lt;x1\/&gt;Introdução&lt;x2\/&gt;
+&lt;x3\/&gt; Programador &lt;x4\/&gt;</target>
 </trans-unit>
 <trans-unit id="tu3" xml:space="preserve">
 <source xml:lang="en"><g id="1">Non-spatialized audio</g> sounds the same throughout the scene, regardless of the position of entities (such as the player camera). It's stereo and moves along a single axis (usually the X-axis). Unlike <g id="2">spatialized audio</g>, the <g id="3">volume</g>, <g id="4">pitch</g> (<g id="5">frequency</g>), and other parameters of spatialized audio don't change. This is useful, for example, for background music and menu sound effects.</source>
-<target xml:lang="pt"><g id="1">Non-spatialized audio</g> sounds the same throughout the scene, regardless of the position of entities (such as the player camera). It's stereo and moves along a single axis (usually the X-axis). Unlike <g id="2">spatialized audio</g>, the <g id="3">volume</g>, <g id="4">pitch</g> (<g id="5">frequency</g>), and other parameters of spatialized audio don't change. This is useful, for example, for background music and menu sound effects.</target>
+<target xml:lang="pt"><g id="1"> Áudio não espacializado </g> soa o mesmo ao longo da cena, independentemente da posição de entidades (como a câmera do jogador). É estéreo e se move ao longo de um único eixo (geralmente o eixo X). Ao contrário de <g id="2">spatialized audio</g>, o <g id="3">volume</g>, <g id="4">pitch</g> (<g id="5">frequência</g>), e outros parâmetros de áudio espacializado não mudam. Isso é útil, por exemplo, para efeitos de som de música de fundo e menu.</target>
 </trans-unit>
 <trans-unit id="tu4" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Non-spatialized audio<x id="2"/></source>
-<target xml:lang="pt"><x id="1"/>Non-spatialized audio<x id="2"/></target>
+<target xml:lang="pt">&lt;x1\/&gt; Não-espacializado áudio&lt;x2\/&gt;</target>
 </trans-unit>
 <trans-unit id="tu5" xml:space="preserve">
 <source xml:lang="en">Non-spatialized audio requires no <g id="1">audio emitters</g> or <g id="2">audio listeners</g>.</source>
-<target xml:lang="pt">Non-spatialized audio requires no <g id="1">audio emitters</g> or <g id="2">audio listeners</g>.</target>
+<target xml:lang="pt">O áudio não espacializado não requer <g id="1">audio emitters</g> ou <g id="2">audio listeners</g>.</target>
 </trans-unit>
 <trans-unit id="tu6" xml:space="preserve">
 <source xml:lang="en">1. Import audio and include it in the build</source>
-<target xml:lang="pt">1. Import audio and include it in the build</target>
+<target xml:lang="pt">1. Importar áudio e incluí-lo na compilação</target>
 </trans-unit>
 <trans-unit id="tu7" xml:space="preserve">
 <source xml:lang="en"><g id="1">Import the audio as a audio asset</g>.</source>
-<target xml:lang="pt"><g id="1">Import the audio as a audio asset</g>.</target>
+<target xml:lang="pt"><g id="1">Importar o áudio como um ativo de áudio</g>.</target>
 </trans-unit>
 <trans-unit id="tu8" xml:space="preserve">
 <source xml:lang="en">Make sure the audio asset is a <g id="1">root asset</g>. Root assets are assets that Stride includes in the build so they can be used at runtime.</source>
-<target xml:lang="pt">Make sure the audio asset is a <g id="1">root asset</g>. Root assets are assets that Stride includes in the build so they can be used at runtime.</target>
+<target xml:lang="pt">Certifique-se de que o ativo de áudio é um <g id="1">root asset</g>. Os ativos de raiz são ativos que a Stride inclui na compilação para que possam ser usados no tempo de execução.</target>
 </trans-unit>
 <trans-unit id="tu9" xml:space="preserve">
 <source xml:lang="en">In the <g id="1">Asset View</g>, right-click the asset and select <g id="2">Include in build as root asset</g>:</source>
-<target xml:lang="pt">In the <g id="1">Asset View</g>, right-click the asset and select <g id="2">Include in build as root asset</g>:</target>
+<target xml:lang="pt">No <g id="1">Asset View</g>, clique com o botão direito do mouse no ativo e selecione <g id="2">Incluir na compilação como ativo root</g>:</target>
 </trans-unit>
 <trans-unit id="tu10" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Include in build as root asset<x id="2"/></source>
-<target xml:lang="pt"><x id="1"/>Include in build as root asset<x id="2"/></target>
+<target xml:lang="pt">&lt;x1\/&gt;Incluir em compilação como root asset&lt;x2\/&gt;</target>
 </trans-unit>
 <trans-unit id="tu11" xml:space="preserve">
 <source xml:lang="en">If the menu option reads <g id="1">Do not include in build as root asset</g>, the option is already selected and you don't need to change it.</source>
-<target xml:lang="pt">If the menu option reads <g id="1">Do not include in build as root asset</g>, the option is already selected and you don't need to change it.</target>
+<target xml:lang="pt">Se a opção de menu ler <g id="1">Não inclua na compilação como root asset</g>, a opção já está selecionada e você não precisa alterá-la.</target>
 </trans-unit>
 <trans-unit id="tu12" xml:space="preserve">
 <source xml:lang="en">2. Create a script to play audio</source>
-<target xml:lang="pt">2. Create a script to play audio</target>
+<target xml:lang="pt">2. Criar um script para reproduzir áudio</target>
 </trans-unit>
 <trans-unit id="tu13" xml:space="preserve">
 <source xml:lang="en">To play non-spatialized audio at runtime, create an instance of it and define its behavior in the code.</source>
-<target xml:lang="pt">To play non-spatialized audio at runtime, create an instance of it and define its behavior in the code.</target>
+<target xml:lang="pt">Para reproduzir áudio não espacializado no tempo de execução, crie uma instância e defina seu comportamento no código.</target>
 </trans-unit>
 <trans-unit id="tu14" xml:space="preserve">
 <source xml:lang="en">The <g id="1">SoundInstance</g> controls audio at runtime with the following properties:</source>
-<target xml:lang="pt">The <g id="1">SoundInstance</g> controls audio at runtime with the following properties:</target>
+<target xml:lang="pt">O <g id="1">SoundInstance</g> controla áudio em tempo de execução com as seguintes propriedades:</target>
 </trans-unit>
 <trans-unit id="tu15" xml:space="preserve">
 <source xml:lang="en">Property</source>
-<target xml:lang="pt">Property</target>
+<target xml:lang="pt">Propriedade</target>
 </trans-unit>
 <trans-unit id="tu16" xml:space="preserve">
 <source xml:lang="en">Function</source>
-<target xml:lang="pt">Function</target>
+<target xml:lang="pt">Função</target>
 </trans-unit>
 <trans-unit id="tu17" xml:space="preserve">
 <source xml:lang="en"><g id="1">IsLooping</g></source>
@@ -73,7 +73,7 @@
 </trans-unit>
 <trans-unit id="tu18" xml:space="preserve">
 <source xml:lang="en">Gets or sets looping of the audio.</source>
-<target xml:lang="pt">Gets or sets looping of the audio.</target>
+<target xml:lang="pt">Obtém ou define looping do áudio.</target>
 </trans-unit>
 <trans-unit id="tu19" xml:space="preserve">
 <source xml:lang="en"><g id="1">Pan</g></source>
@@ -81,7 +81,7 @@
 </trans-unit>
 <trans-unit id="tu20" xml:space="preserve">
 <source xml:lang="en">Sets the balance between left and right speakers. By default, each speaker a value of 0.5.</source>
-<target xml:lang="pt">Sets the balance between left and right speakers. By default, each speaker a value of 0.5.</target>
+<target xml:lang="pt">Define o equilíbrio entre colunas esquerda e direita. Por padrão, cada coluna um valor de 0.5.</target>
 </trans-unit>
 <trans-unit id="tu21" xml:space="preserve">
 <source xml:lang="en"><g id="1">Pitch</g></source>
@@ -89,7 +89,7 @@
 </trans-unit>
 <trans-unit id="tu22" xml:space="preserve">
 <source xml:lang="en">Gets or sets the audio pitch (frequency).</source>
-<target xml:lang="pt">Gets or sets the audio pitch (frequency).</target>
+<target xml:lang="pt">Obtém ou define o pitch de áudio (frequência).</target>
 </trans-unit>
 <trans-unit id="tu23" xml:space="preserve">
 <source xml:lang="en"><g id="1">PlayState</g></source>
@@ -97,15 +97,15 @@
 </trans-unit>
 <trans-unit id="tu24" xml:space="preserve">
 <source xml:lang="en">Gets the state of the <g id="1">SoundInstance</g>.</source>
-<target xml:lang="pt">Gets the state of the <g id="1">SoundInstance</g>.</target>
+<target xml:lang="pt">Obtém o estado do <g id="1">SoundInstance</g>.</target>
 </trans-unit>
 <trans-unit id="tu25" xml:space="preserve">
 <source xml:lang="en"><g id="1">Position</g></source>
-<target xml:lang="pt"><g id="1">Position</g></target>
+<target xml:lang="pt"><g id="1">Posição</g></target>
 </trans-unit>
 <trans-unit id="tu26" xml:space="preserve">
 <source xml:lang="en">Gets the current play position of the audio.</source>
-<target xml:lang="pt">Gets the current play position of the audio.</target>
+<target xml:lang="pt">Obtém a posição de reprodução atual do áudio.</target>
 </trans-unit>
 <trans-unit id="tu27" xml:space="preserve">
 <source xml:lang="en"><g id="1">Volume</g></source>
@@ -113,39 +113,39 @@
 </trans-unit>
 <trans-unit id="tu28" xml:space="preserve">
 <source xml:lang="en">Sets the audio volume.</source>
-<target xml:lang="pt">Sets the audio volume.</target>
+<target xml:lang="pt">Define o volume de áudio.</target>
 </trans-unit>
 <trans-unit id="tu29" xml:space="preserve">
 <source xml:lang="en">For more details, see the <g id="1">SoundInstance API documentation</g>.</source>
-<target xml:lang="pt">For more details, see the <g id="1">SoundInstance API documentation</g>.</target>
+<target xml:lang="pt">Para mais detalhes, consulte a documentação <g id="1">SoundInstance API</g>.</target>
 </trans-unit>
 <trans-unit id="tu30" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>!Note<x id="2"/>
 If the sound is already playing, Stride ignores all additional calls to <g id="3">SoundInstance.Play</g>.
 The same goes for <g id="4">SoundInstance.Pause</g> (when a sound is already paused) and <g id="5">SoundInstance.Stop</g> (when a sound is already stopped).</source>
-<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
-If the sound is already playing, Stride ignores all additional calls to <g id="3">SoundInstance.Play</g>.
-The same goes for <g id="4">SoundInstance.Pause</g> (when a sound is already paused) and <g id="5">SoundInstance.Stop</g> (when a sound is already stopped).</target>
+<target xml:lang="pt">&lt;x1\/&gt;!Note&lt;x2\/&gt;
+Se o som já estiver tocando, Stride ignora todas as chamadas adicionais para <g id="3">SoundInstance. Play</g>.
+O mesmo vale para <g id="4">SoundInstance. Pause</g> (quando um som já é pausado) e <g id="5">SoundInstance. Pare</g> (quando um som já está parado).</target>
 </trans-unit>
 <trans-unit id="tu31" xml:space="preserve">
 <source xml:lang="en">For example, the following code:</source>
-<target xml:lang="pt">For example, the following code:</target>
+<target xml:lang="pt">Por exemplo, o seguinte código:</target>
 </trans-unit>
 <trans-unit id="tu32" xml:space="preserve">
 <source xml:lang="en">instantiates non-spatialized audio</source>
-<target xml:lang="pt">instantiates non-spatialized audio</target>
+<target xml:lang="pt">instantiates áudio não espacializado</target>
 </trans-unit>
 <trans-unit id="tu33" xml:space="preserve">
 <source xml:lang="en">sets the audio to loop</source>
-<target xml:lang="pt">sets the audio to loop</target>
+<target xml:lang="pt">define o áudio para loop</target>
 </trans-unit>
 <trans-unit id="tu34" xml:space="preserve">
 <source xml:lang="en">sets the volume</source>
-<target xml:lang="pt">sets the volume</target>
+<target xml:lang="pt">define o volume</target>
 </trans-unit>
 <trans-unit id="tu35" xml:space="preserve">
 <source xml:lang="en">plays the audio</source>
-<target xml:lang="pt">plays the audio</target>
+<target xml:lang="pt">toca o áudio</target>
 </trans-unit>
 <trans-unit id="tu36" xml:space="preserve">
 <source xml:lang="en">public override async Task Execute()
@@ -166,36 +166,36 @@ The same goes for <g id="4">SoundInstance.Pause</g> (when a sound is already pau
     music.Play();
 }
 </source>
-<target xml:lang="pt">public override async Task Execute()
-{
-    // Load the sound
+<target xml:lang="pt">override público async Task Execute()
+(
+    \/\/ Carregar o som
     Sound musicSound = Content.Load&lt;Sound&gt;("MySound");
             
-    // Create a sound instance
+    \/\/ Criar uma instância de som
     SoundInstance music = musicSound.CreateInstance();
             
-    // Loop
-    music.IsLooping = true;
+    \/\/ Loop
+    música. IsLooping = true;
 
-    // Set the volume
-    music.Volume = 0.25f;
+    \/\/ Defina o volume
+    música. Volume = 0,25f;
 
-    // Play the music
+    \/\/ Jogue a música
     music.Play();
 }
 </target>
 </trans-unit>
 <trans-unit id="tu37" xml:space="preserve">
 <source xml:lang="en">Alternative: create a script with public variables</source>
-<target xml:lang="pt">Alternative: create a script with public variables</target>
+<target xml:lang="pt">Alternativa: crie um script com variáveis públicas</target>
 </trans-unit>
 <trans-unit id="tu38" xml:space="preserve">
 <source xml:lang="en">Create a public variable for each audio asset you want to use. You can use the same properties listed above.</source>
-<target xml:lang="pt">Create a public variable for each audio asset you want to use. You can use the same properties listed above.</target>
+<target xml:lang="pt">Crie uma variável pública para cada ativo de áudio que você deseja usar. Você pode usar as mesmas propriedades listadas acima.</target>
 </trans-unit>
 <trans-unit id="tu39" xml:space="preserve">
 <source xml:lang="en">For example:</source>
-<target xml:lang="pt">For example:</target>
+<target xml:lang="pt">Por exemplo:</target>
 </trans-unit>
 <trans-unit id="tu40" xml:space="preserve">
 <source xml:lang="en">public class MySoundScript : SyncScript
@@ -226,29 +226,29 @@ The same goes for <g id="4">SoundInstance.Pause</g> (when a sound is already pau
     }
 }
 </source>
-<target xml:lang="pt">public class MySoundScript : SyncScript
-{
-    public Sound MyMusic;
+<target xml:lang="pt">classe pública MySoundScript : Sincronização
+(
+    público Sound MyMusic;
 
-    private SoundInstance musicInstance;
-    public bool PlayMusic;
+    música privada SoundInstance Instance;
+    público bool PlayMusic;
 
-    public override void Start()
-    {
+    anula de sobreposição pública Start()
+    (
         musicInstance = MyMusic.CreateInstance();
     }
 
-    public override void Update()
-    {
-        // If music isn't playing but should be, play the music.
-        if (PlayMusic &amp; musicInstance.PlayState != PlayState.Playing)
-        {
+    atualização()
+    (
+        \/\/ Se a música não estiver tocando, mas deve ser, tocar a música.
+        if (PlayMusic &amp; musicInstance. PlayState! PlayState.Playing)
+        (
             musicInstance.Play();
         }
 
-        // If music is playing but shouldn't be, stop the music.
-        else if (!PlayMusic)
-        {
+        \/\/ Se a música está tocando, mas não deve ser, pare a música.
+        mais se (!PlayMusic)
+        (
             musicInstance.Stop();
         }
     }
@@ -257,71 +257,71 @@ The same goes for <g id="4">SoundInstance.Pause</g> (when a sound is already pau
 </trans-unit>
 <trans-unit id="tu41" xml:space="preserve">
 <source xml:lang="en">Add the script to the entity</source>
-<target xml:lang="pt">Add the script to the entity</target>
+<target xml:lang="pt">Adicionar o script à entidade</target>
 </trans-unit>
 <trans-unit id="tu42" xml:space="preserve">
 <source xml:lang="en">In the <g id="1">Scene view</g>, select the entity you want to add the script to:</source>
-<target xml:lang="pt">In the <g id="1">Scene view</g>, select the entity you want to add the script to:</target>
+<target xml:lang="pt">No <g id="1">Scene view</g>, selecione a entidade que deseja adicionar o script para:</target>
 </trans-unit>
 <trans-unit id="tu43" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Select an entity<x id="2"/></source>
-<target xml:lang="pt"><x id="1"/>Select an entity<x id="2"/></target>
+<target xml:lang="pt">&lt;x1\/&gt;Selecione uma entidade&lt;x2\/&gt;</target>
 </trans-unit>
 <trans-unit id="tu44" xml:space="preserve">
 <source xml:lang="en">In the <g id="1">Property Grid</g>, click <g id="2">Add component</g> and select your script:</source>
-<target xml:lang="pt">In the <g id="1">Property Grid</g>, click <g id="2">Add component</g> and select your script:</target>
+<target xml:lang="pt">No <g id="1">Property Grid</g>, clique em <g id="2">Adicionar componente</g> e selecione seu script:</target>
 </trans-unit>
 <trans-unit id="tu45" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Click Add component<x id="2"/></source>
-<target xml:lang="pt"><x id="1"/>Click Add component<x id="2"/></target>
+<target xml:lang="pt">&lt;x1\/&gt;Clique Adicionar componente&lt;x2\/&gt;</target>
 </trans-unit>
 <trans-unit id="tu46" xml:space="preserve">
 <source xml:lang="en">The script is added to the entity.</source>
-<target xml:lang="pt">The script is added to the entity.</target>
+<target xml:lang="pt">O script é adicionado à entidade.</target>
 </trans-unit>
 <trans-unit id="tu47" xml:space="preserve">
 <source xml:lang="en">If you added <g id="1">public variables</g> to the script, you need to tie them to audio assets.</source>
-<target xml:lang="pt">If you added <g id="1">public variables</g> to the script, you need to tie them to audio assets.</target>
+<target xml:lang="pt">Se você adicionou variáveis <g id="1">public</g> ao script, você precisa amarrá-las para ativos de áudio.</target>
 </trans-unit>
 <trans-unit id="tu48" xml:space="preserve">
 <source xml:lang="en">Drag and drop an asset from the <g id="1">Asset View</g> to each variable:</source>
-<target xml:lang="pt">Drag and drop an asset from the <g id="1">Asset View</g> to each variable:</target>
+<target xml:lang="pt">Arraste e solte um ativo do <g id="1">Asset View</g> para cada variável:</target>
 </trans-unit>
 <trans-unit id="tu49" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Drag and drop an audio asset<x id="2"/></source>
-<target xml:lang="pt"><x id="1"/>Drag and drop an audio asset<x id="2"/></target>
+<target xml:lang="pt">&lt;x1\/&gt;Drag e soltar um ativo de áudio&lt;x2\/&gt;</target>
 </trans-unit>
 <trans-unit id="tu50" xml:space="preserve">
 <source xml:lang="en">Alternatively, click <x id="1"/>Hand icon<x id="2"/> (<g id="3">Select an asset</g>):</source>
-<target xml:lang="pt">Alternatively, click <x id="1"/>Hand icon<x id="2"/> (<g id="3">Select an asset</g>):</target>
+<target xml:lang="pt">Alternativamente, clique em &lt;x1\/&gt;Hand icon&lt;x2\/&gt; (<g id="3">Select an asset</g>):</target>
 </trans-unit>
 <trans-unit id="tu51" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Pick up an asset<x id="2"/></source>
-<target xml:lang="pt"><x id="1"/>Pick up an asset<x id="2"/></target>
+<target xml:lang="pt">&lt;x1\/&gt; Enfiar um ativo&lt;x2\/&gt;</target>
 </trans-unit>
 <trans-unit id="tu52" xml:space="preserve">
 <source xml:lang="en">Then choose the audio asset you want to use:</source>
-<target xml:lang="pt">Then choose the audio asset you want to use:</target>
+<target xml:lang="pt">Em seguida, escolha o ativo de áudio que você deseja usar:</target>
 </trans-unit>
 <trans-unit id="tu53" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Select an audio asset<x id="2"/></source>
-<target xml:lang="pt"><x id="1"/>Select an audio asset<x id="2"/></target>
+<target xml:lang="pt">&lt;x1\/&gt;Selecione um ativo de áudio&lt;x2\/&gt;</target>
 </trans-unit>
 <trans-unit id="tu54" xml:space="preserve">
 <source xml:lang="en">See also</source>
-<target xml:lang="pt">See also</target>
+<target xml:lang="pt">Ver também</target>
 </trans-unit>
 <trans-unit id="tu55" xml:space="preserve">
 <source xml:lang="en"><g id="1">Import audio</g></source>
-<target xml:lang="pt"><g id="1">Import audio</g></target>
+<target xml:lang="pt"><g id="1">Importação de áudio</g></target>
 </trans-unit>
 <trans-unit id="tu56" xml:space="preserve">
 <source xml:lang="en"><g id="1">Global audio settings</g></source>
-<target xml:lang="pt"><g id="1">Global audio settings</g></target>
+<target xml:lang="pt"><g id="1">Configurações de áudio globais</g></target>
 </trans-unit>
 <trans-unit id="tu57" xml:space="preserve">
 <source xml:lang="en"><g id="1">Spatialized audio</g></source>
-<target xml:lang="pt"><g id="1">Spatialized audio</g></target>
+<target xml:lang="pt"><g id="1">Áudio espacial</g></target>
 </trans-unit>
 </body>
 </file>

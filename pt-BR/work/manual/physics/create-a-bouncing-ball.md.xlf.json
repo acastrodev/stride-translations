@@ -1,919 +1,919 @@
 {
-    "filename": "manual\\physics\\create-a-bouncing-ball.md.xlf",
-    "files": [
-        {
-            "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/create-a-bouncing-ball.md": [
-                [
-                    "Create a bouncing ball",
-                    "",
-                    "Create a bouncing ball",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/create-a-bouncing-ball.md",
-                    {
-                        "id": "tu1"
-                    }
-                ],
-                [
-                    "<x1\/>Beginner<x2\/>",
-                    "",
-                    "<x1\/>Beginner<x2\/>\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/create-a-bouncing-ball.md",
-                    {
-                        "id": "tu2"
-                    }
-                ],
-                [
-                    "<x3\/>Designer<x4\/>",
-                    "",
-                    "<x3\/>Designer<x4\/>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/create-a-bouncing-ball.md",
-                    {
-                        "id": "tu2"
-                    }
-                ],
-                [
-                    "In this tutorial, we'll use the <g1>static collider and rigidbody components<\/g1> to create a ball bouncing on a floor.",
-                    "",
-                    "In this tutorial, we'll use the <g1>static collider and rigidbody components<\/g1> to create a ball bouncing on a floor.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/create-a-bouncing-ball.md",
-                    {
-                        "id": "tu3"
-                    }
-                ],
-                [
-                    "<x1\/>!Note<x2\/>",
-                    "",
-                    "<x1\/>!Note<x2\/>\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/create-a-bouncing-ball.md",
-                    {
-                        "id": "tu4"
-                    }
-                ],
-                [
-                    "The screenshots and videos in this tutorial were made using an earlier version of Stride, so some parts of the UI, and the default skybox and sphere, might look different from your version.",
-                    "",
-                    "The screenshots and videos in this tutorial were made using an earlier version of Stride, so some parts of the UI, and the default skybox and sphere, might look different from your version.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/create-a-bouncing-ball.md",
-                    {
-                        "id": "tu4"
-                    }
-                ],
-                [
-                    "1.",
-                    "",
-                    "1.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/create-a-bouncing-ball.md",
-                    {
-                        "id": "tu5"
-                    }
-                ],
-                [
-                    "Create a new project",
-                    "",
-                    " Create a new project",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/create-a-bouncing-ball.md",
-                    {
-                        "id": "tu5"
-                    }
-                ],
-                [
-                    "Start a <g1>New Game<\/g1> project.",
-                    "",
-                    "Start a <g1>New Game<\/g1> project.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/create-a-bouncing-ball.md",
-                    {
-                        "id": "tu6"
-                    }
-                ],
-                [
-                    "The default scene comes pre-loaded with five entities:",
-                    "",
-                    "The default scene comes pre-loaded with five entities:",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/create-a-bouncing-ball.md",
-                    {
-                        "id": "tu7"
-                    }
-                ],
-                [
-                    "Camera, Directional light, Skybox, Ground, and Sphere.",
-                    "",
-                    " Camera, Directional light, Skybox, Ground, and Sphere.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/create-a-bouncing-ball.md",
-                    {
-                        "id": "tu7"
-                    }
-                ],
-                [
-                    "We're going to add physics components to the <g1>Ground<\/g1> and <g2>Sphere<\/g2> entities.",
-                    "",
-                    " We're going to add physics components to the <g1>Ground<\/g1> and <g2>Sphere<\/g2> entities.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/create-a-bouncing-ball.md",
-                    {
-                        "id": "tu7"
-                    }
-                ],
-                [
-                    "2.",
-                    "",
-                    "2.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/create-a-bouncing-ball.md",
-                    {
-                        "id": "tu8"
-                    }
-                ],
-                [
-                    "Add a static collider",
-                    "",
-                    " Add a static collider",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/create-a-bouncing-ball.md",
-                    {
-                        "id": "tu8"
-                    }
-                ],
-                [
-                    "Let's begin by adding a <g1>static collider<\/g1> component to the Ground entity.",
-                    "",
-                    "Let's begin by adding a <g1>static collider<\/g1> component to the Ground entity.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/create-a-bouncing-ball.md",
-                    {
-                        "id": "tu9"
-                    }
-                ],
-                [
-                    "A static collider is a physics object that doesn't move.",
-                    "",
-                    " A static collider is a physics object that doesn't move.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/create-a-bouncing-ball.md",
-                    {
-                        "id": "tu9"
-                    }
-                ],
-                [
-                    "Typical static colliders are walls, floors, large rocks, and so on.",
-                    "",
-                    " Typical static colliders are walls, floors, large rocks, and so on.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/create-a-bouncing-ball.md",
-                    {
-                        "id": "tu9"
-                    }
-                ],
-                [
-                    "In this case, the static collider will give the ball something to bounce on.",
-                    "",
-                    " In this case, the static collider will give the ball something to bounce on.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/create-a-bouncing-ball.md",
-                    {
-                        "id": "tu9"
-                    }
-                ],
-                [
-                    "Select the <g1>Ground<\/g1> entity.",
-                    "",
-                    "Select the <g1>Ground<\/g1> entity.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/create-a-bouncing-ball.md",
-                    {
-                        "id": "tu10"
-                    }
-                ],
-                [
-                    "In the <g1>Property Grid<\/g1>, click <g2>Add component<\/g2> and select <g3>Static Collider<\/g3>.",
-                    "",
-                    "In the <g1>Property Grid<\/g1>, click <g2>Add component<\/g2> and select <g3>Static Collider<\/g3>.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/create-a-bouncing-ball.md",
-                    {
-                        "id": "tu11"
-                    }
-                ],
-                [
-                    "<x1\/>Add Static collider component<x2\/>",
-                    "",
-                    "<x1\/>Add Static collider component<x2\/>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/create-a-bouncing-ball.md",
-                    {
-                        "id": "tu12"
-                    }
-                ],
-                [
-                    "Set the <g1>collider shape<\/g1> to match the shape of the entity.",
-                    "",
-                    "Set the <g1>collider shape<\/g1> to match the shape of the entity.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/create-a-bouncing-ball.md",
-                    {
-                        "id": "tu13"
-                    }
-                ],
-                [
-                    "To do this, in the <g2>Property Grid<\/g2>, expand the <g3>Static Collider component<\/g3> to view its properties.",
-                    "",
-                    " To do this, in the <g2>Property Grid<\/g2>, expand the <g3>Static Collider component<\/g3> to view its properties.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/create-a-bouncing-ball.md",
-                    {
-                        "id": "tu13"
-                    }
-                ],
-                [
-                    "Next to <g1>Collider Shapes<\/g1>, click <x1\/>Green plus button<x2\/> (<g2>Add<\/g2>) and select <g3>Infinite Plane<\/g3>.",
-                    "",
-                    "Next to <g1>Collider Shapes<\/g1>, click <x1\/>Green plus button<x2\/> (<g2>Add<\/g2>) and select <g3>Infinite Plane<\/g3>.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/create-a-bouncing-ball.md",
-                    {
-                        "id": "tu14"
-                    }
-                ],
-                [
-                    "<x1\/>Add Static collider component<x2\/>",
-                    "",
-                    "<x1\/>Add Static collider component<x2\/>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/create-a-bouncing-ball.md",
-                    {
-                        "id": "tu15"
-                    }
-                ],
-                [
-                    "This adds a static collider to the ground, so the ball has something to bounce off.",
-                    "",
-                    "This adds a static collider to the ground, so the ball has something to bounce off.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/create-a-bouncing-ball.md",
-                    {
-                        "id": "tu16"
-                    }
-                ],
-                [
-                    "3.",
-                    "",
-                    "3.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/create-a-bouncing-ball.md",
-                    {
-                        "id": "tu17"
-                    }
-                ],
-                [
-                    "Add a rigidbody collider",
-                    "",
-                    " Add a rigidbody collider",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/create-a-bouncing-ball.md",
-                    {
-                        "id": "tu17"
-                    }
-                ],
-                [
-                    "Next, we'll add a <g1>rigidbody<\/g1> component to the sphere.",
-                    "",
-                    "Next, we'll add a <g1>rigidbody<\/g1> component to the sphere.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/create-a-bouncing-ball.md",
-                    {
-                        "id": "tu18"
-                    }
-                ],
-                [
-                    "A rigidbody is a physics object that moves — perfect for our bouncing ball.",
-                    "",
-                    " A rigidbody is a physics object that moves — perfect for our bouncing ball.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/create-a-bouncing-ball.md",
-                    {
-                        "id": "tu18"
-                    }
-                ],
-                [
-                    "In the <g1>Scene Editor<\/g1>, select the <g2>Sphere<\/g2> entity.",
-                    "",
-                    "In the <g1>Scene Editor<\/g1>, select the <g2>Sphere<\/g2> entity.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/create-a-bouncing-ball.md",
-                    {
-                        "id": "tu19"
-                    }
-                ],
-                [
-                    "In the <g1>Property Grid<\/g1>, click <g2>Add component<\/g2> and select <g3>Rigidbody<\/g3>.",
-                    "",
-                    "In the <g1>Property Grid<\/g1>, click <g2>Add component<\/g2> and select <g3>Rigidbody<\/g3>.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/create-a-bouncing-ball.md",
-                    {
-                        "id": "tu20"
-                    }
-                ],
-                [
-                    "<x1\/>Add Static collider component<x2\/>",
-                    "",
-                    "<x1\/>Add Static collider component<x2\/>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/create-a-bouncing-ball.md",
-                    {
-                        "id": "tu21"
-                    }
-                ],
-                [
-                    "Just like we did for the Ground entity, set the <g1>collider shape<\/g1> to match the entity.",
-                    "",
-                    "Just like we did for the Ground entity, set the <g1>collider shape<\/g1> to match the entity.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/create-a-bouncing-ball.md",
-                    {
-                        "id": "tu22"
-                    }
-                ],
-                [
-                    "To do this, in the <g2>Property Grid<\/g2>, expand the <g3>Rigidbody component<\/g3> to view its properties.",
-                    "",
-                    " To do this, in the <g2>Property Grid<\/g2>, expand the <g3>Rigidbody component<\/g3> to view its properties.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/create-a-bouncing-ball.md",
-                    {
-                        "id": "tu22"
-                    }
-                ],
-                [
-                    "Next to <g1>Collider Shapes<\/g1>, click <x1\/>Green plus button<x2\/> (<g2>Add<\/g2>) and select <g3>Sphere<\/g3>.",
-                    "",
-                    "Next to <g1>Collider Shapes<\/g1>, click <x1\/>Green plus button<x2\/> (<g2>Add<\/g2>) and select <g3>Sphere<\/g3>.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/create-a-bouncing-ball.md",
-                    {
-                        "id": "tu23"
-                    }
-                ],
-                [
-                    "<x1\/>Add Static collider component<x2\/>",
-                    "",
-                    "<x1\/>Add Static collider component<x2\/>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/create-a-bouncing-ball.md",
-                    {
-                        "id": "tu24"
-                    }
-                ],
-                [
-                    "4.",
-                    "",
-                    "4.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/create-a-bouncing-ball.md",
-                    {
-                        "id": "tu25"
-                    }
-                ],
-                [
-                    "Position the ball",
-                    "",
-                    " Position the ball",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/create-a-bouncing-ball.md",
-                    {
-                        "id": "tu25"
-                    }
-                ],
-                [
-                    "Let's position the sphere so it starts in mid-air and falls to the ground.",
-                    "",
-                    "Let's position the sphere so it starts in mid-air and falls to the ground.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/create-a-bouncing-ball.md",
-                    {
-                        "id": "tu26"
-                    }
-                ],
-                [
-                    "Select the <g1>Sphere<\/g1> entity.",
-                    "",
-                    "Select the <g1>Sphere<\/g1> entity.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/create-a-bouncing-ball.md",
-                    {
-                        "id": "tu27"
-                    }
-                ],
-                [
-                    "In the <g1>Property Grid<\/g1>, under <g2>Transform<\/g2>, set the <g3>Position<\/g3> to:",
-                    "",
-                    "In the <g1>Property Grid<\/g1>, under <g2>Transform<\/g2>, set the <g3>Position<\/g3> to:",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/create-a-bouncing-ball.md",
-                    {
-                        "id": "tu28"
-                    }
-                ],
-                [
-                    "X:",
-                    "",
-                    " <g4>X:",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/create-a-bouncing-ball.md",
-                    {
-                        "id": "tu28"
-                    }
-                ],
-                [
-                    "0, Y:",
-                    "",
-                    " 0, Y:",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/create-a-bouncing-ball.md",
-                    {
-                        "id": "tu28"
-                    }
-                ],
-                [
-                    "6, Z:",
-                    "",
-                    " 6, Z:",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/create-a-bouncing-ball.md",
-                    {
-                        "id": "tu28"
-                    }
-                ],
-                [
-                    "0",
-                    "",
-                    " 0<\/g4>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/create-a-bouncing-ball.md",
-                    {
-                        "id": "tu28"
-                    }
-                ],
-                [
-                    "<x1\/>Change Sphere position<x2\/>",
-                    "",
-                    "<x1\/>Change Sphere position<x2\/>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/create-a-bouncing-ball.md",
-                    {
-                        "id": "tu29"
-                    }
-                ],
-                [
-                    "This places the ball in mid-air above the ground.",
-                    "",
-                    "This places the ball in mid-air above the ground.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/create-a-bouncing-ball.md",
-                    {
-                        "id": "tu30"
-                    }
-                ],
-                [
-                    "5.",
-                    "",
-                    "5.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/create-a-bouncing-ball.md",
-                    {
-                        "id": "tu31"
-                    }
-                ],
-                [
-                    "Position the camera",
-                    "",
-                    " Position the camera",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/create-a-bouncing-ball.md",
-                    {
-                        "id": "tu31"
-                    }
-                ],
-                [
-                    "Now we'll move the camera to give us a good view of the scene.",
-                    "",
-                    "Now we'll move the camera to give us a good view of the scene.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/create-a-bouncing-ball.md",
-                    {
-                        "id": "tu32"
-                    }
-                ],
-                [
-                    "Select the <g1>Camera<\/g1> entity.",
-                    "",
-                    "Select the <g1>Camera<\/g1> entity.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/create-a-bouncing-ball.md",
-                    {
-                        "id": "tu33"
-                    }
-                ],
-                [
-                    "In the <g1>Property Grid<\/g1>, under <g2>Transform<\/g2>, set the <g3>Position<\/g3> to:",
-                    "",
-                    "In the <g1>Property Grid<\/g1>, under <g2>Transform<\/g2>, set the <g3>Position<\/g3> to:",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/create-a-bouncing-ball.md",
-                    {
-                        "id": "tu34"
-                    }
-                ],
-                [
-                    "X:",
-                    "",
-                    " <g4>X:",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/create-a-bouncing-ball.md",
-                    {
-                        "id": "tu34"
-                    }
-                ],
-                [
-                    "-12, Y:",
-                    "",
-                    " -12, Y:",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/create-a-bouncing-ball.md",
-                    {
-                        "id": "tu34"
-                    }
-                ],
-                [
-                    "7, Z:",
-                    "",
-                    " 7, Z:",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/create-a-bouncing-ball.md",
-                    {
-                        "id": "tu34"
-                    }
-                ],
-                [
-                    "9",
-                    "",
-                    " 9<\/g4>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/create-a-bouncing-ball.md",
-                    {
-                        "id": "tu34"
-                    }
-                ],
-                [
-                    "Set the <g1>Rotation<\/g1> to:",
-                    "",
-                    "Set the <g1>Rotation<\/g1> to:",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/create-a-bouncing-ball.md",
-                    {
-                        "id": "tu35"
-                    }
-                ],
-                [
-                    "X:",
-                    "",
-                    " <g2>X:",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/create-a-bouncing-ball.md",
-                    {
-                        "id": "tu35"
-                    }
-                ],
-                [
-                    "-20, Y:",
-                    "",
-                    " -20, Y:",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/create-a-bouncing-ball.md",
-                    {
-                        "id": "tu35"
-                    }
-                ],
-                [
-                    "-50, Z:",
-                    "",
-                    " -50, Z:",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/create-a-bouncing-ball.md",
-                    {
-                        "id": "tu35"
-                    }
-                ],
-                [
-                    "0",
-                    "",
-                    " 0<\/g2>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/create-a-bouncing-ball.md",
-                    {
-                        "id": "tu35"
-                    }
-                ],
-                [
-                    "<x1\/>Change camera position<x2\/>",
-                    "",
-                    "<x1\/>Change camera position<x2\/>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/create-a-bouncing-ball.md",
-                    {
-                        "id": "tu36"
-                    }
-                ],
-                [
-                    "You can see preview the camera view in the <g1>Camera preview<\/g1> in the bottom-right of the Scene Editor.",
-                    "",
-                    "You can see preview the camera view in the <g1>Camera preview<\/g1> in the bottom-right of the Scene Editor.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/create-a-bouncing-ball.md",
-                    {
-                        "id": "tu37"
-                    }
-                ],
-                [
-                    "<x1\/>Camera preview<x2\/>",
-                    "",
-                    "<x1\/>Camera preview<x2\/>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/create-a-bouncing-ball.md",
-                    {
-                        "id": "tu38"
-                    }
-                ],
-                [
-                    "6.",
-                    "",
-                    "6.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/create-a-bouncing-ball.md",
-                    {
-                        "id": "tu39"
-                    }
-                ],
-                [
-                    "Set the restitution",
-                    "",
-                    " Set the restitution",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/create-a-bouncing-ball.md",
-                    {
-                        "id": "tu39"
-                    }
-                ],
-                [
-                    "Let's see what the scene looks like so far.",
-                    "",
-                    "Let's see what the scene looks like so far.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/create-a-bouncing-ball.md",
-                    {
-                        "id": "tu40"
-                    }
-                ],
-                [
-                    "To run the project, press <g1>F5<\/g1>.",
-                    "",
-                    " To run the project, press <g1>F5<\/g1>.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/create-a-bouncing-ball.md",
-                    {
-                        "id": "tu40"
-                    }
-                ],
-                [
-                    "<x1\/>Falling ball<x2\/>",
-                    "",
-                    "<x1\/>Falling ball<x2\/>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/create-a-bouncing-ball.md",
-                    {
-                        "id": "tu41"
-                    }
-                ],
-                [
-                    "The Sphere (rigidbody) responds to gravity and falls.",
-                    "",
-                    "The Sphere (rigidbody) responds to gravity and falls.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/create-a-bouncing-ball.md",
-                    {
-                        "id": "tu42"
-                    }
-                ],
-                [
-                    "The Ground (static collider) breaks its fall.",
-                    "",
-                    " The Ground (static collider) breaks its fall.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/create-a-bouncing-ball.md",
-                    {
-                        "id": "tu42"
-                    }
-                ],
-                [
-                    "But there's no bounce effect yet.",
-                    "",
-                    " But there's no bounce effect yet.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/create-a-bouncing-ball.md",
-                    {
-                        "id": "tu42"
-                    }
-                ],
-                [
-                    "To create a bounce effect, we need to change the <g1>restitution<\/g1> of the Sphere and the Ground.",
-                    "",
-                    "To create a bounce effect, we need to change the <g1>restitution<\/g1> of the Sphere and the Ground.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/create-a-bouncing-ball.md",
-                    {
-                        "id": "tu43"
-                    }
-                ],
-                [
-                    "This simulates the <g2>coefficient of restitution (Wikipedia)<\/g2> of real-world collisions.",
-                    "",
-                    " This simulates the <g2>coefficient of restitution (Wikipedia)<\/g2> of real-world collisions.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/create-a-bouncing-ball.md",
-                    {
-                        "id": "tu43"
-                    }
-                ],
-                [
-                    "If the restitution property of colliding entities is 0, the entities lose all energy and stop moving immediately on impact.",
-                    "",
-                    "If the restitution property of colliding entities is 0, the entities lose all energy and stop moving immediately on impact.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/create-a-bouncing-ball.md",
-                    {
-                        "id": "tu44"
-                    }
-                ],
-                [
-                    "If the restitution is 1, they lose no energy and rebound with the same velocity at which they collided.",
-                    "",
-                    "If the restitution is 1, they lose no energy and rebound with the same velocity at which they collided.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/create-a-bouncing-ball.md",
-                    {
-                        "id": "tu45"
-                    }
-                ],
-                [
-                    "If the restitution is higher than 1, they gain energy and rebound with <g1>more<\/g1> velocity.",
-                    "",
-                    "If the restitution is higher than 1, they gain energy and rebound with <g1>more<\/g1> velocity.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/create-a-bouncing-ball.md",
-                    {
-                        "id": "tu46"
-                    }
-                ],
-                [
-                    "As a rule, to create realistic collisions, set the restitution between 0 and 1.",
-                    "",
-                    "As a rule, to create realistic collisions, set the restitution between 0 and 1.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/create-a-bouncing-ball.md",
-                    {
-                        "id": "tu47"
-                    }
-                ],
-                [
-                    "Let's set the restitution of our Sphere and Ground entities.",
-                    "",
-                    "Let's set the restitution of our Sphere and Ground entities.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/create-a-bouncing-ball.md",
-                    {
-                        "id": "tu48"
-                    }
-                ],
-                [
-                    "Select the <g1>Sphere<\/g1> entity.",
-                    "",
-                    "Select the <g1>Sphere<\/g1> entity.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/create-a-bouncing-ball.md",
-                    {
-                        "id": "tu49"
-                    }
-                ],
-                [
-                    "In the <g1>Property Grid<\/g1>, under <g2>Rigidbody<\/g2>, set the <g3>Restitution<\/g3> to 0.8.",
-                    "",
-                    "In the <g1>Property Grid<\/g1>, under <g2>Rigidbody<\/g2>, set the <g3>Restitution<\/g3> to 0.8.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/create-a-bouncing-ball.md",
-                    {
-                        "id": "tu50"
-                    }
-                ],
-                [
-                    "<x1\/>Set restitution for a sphere<x2\/>",
-                    "",
-                    "<x1\/>Set restitution for a sphere<x2\/>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/create-a-bouncing-ball.md",
-                    {
-                        "id": "tu51"
-                    }
-                ],
-                [
-                    "Select the <g1>Ground<\/g1> entity.",
-                    "",
-                    "Select the <g1>Ground<\/g1> entity.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/create-a-bouncing-ball.md",
-                    {
-                        "id": "tu52"
-                    }
-                ],
-                [
-                    "In the <g1>Property Grid<\/g1>, under <g2>Static Collider<\/g2>, set the <g3>Restitution<\/g3> to 0.5.",
-                    "",
-                    "In the <g1>Property Grid<\/g1>, under <g2>Static Collider<\/g2>, set the <g3>Restitution<\/g3> to 0.5.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/create-a-bouncing-ball.md",
-                    {
-                        "id": "tu53"
-                    }
-                ],
-                [
-                    "<x1\/>Set restitution for the ground<x2\/>",
-                    "",
-                    "<x1\/>Set restitution for the ground<x2\/>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/create-a-bouncing-ball.md",
-                    {
-                        "id": "tu54"
-                    }
-                ],
-                [
-                    "To see how this changes the physics, run the project again (<g1>F5<\/g1>).",
-                    "",
-                    "To see how this changes the physics, run the project again (<g1>F5<\/g1>).",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/create-a-bouncing-ball.md",
-                    {
-                        "id": "tu55"
-                    }
-                ],
-                [
-                    "This time, the ball bounces on the ground before coming to a stop:",
-                    "",
-                    " This time, the ball bounces on the ground before coming to a stop:",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/create-a-bouncing-ball.md",
-                    {
-                        "id": "tu55"
-                    }
-                ],
-                [
-                    "<x1\/>Bouncing effect<x2\/>",
-                    "",
-                    "<x1\/>Bouncing effect<x2\/>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/create-a-bouncing-ball.md",
-                    {
-                        "id": "tu56"
-                    }
-                ],
-                [
-                    "Try changing the restitution of both entities to 1.",
-                    "",
-                    "Try changing the restitution of both entities to 1.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/create-a-bouncing-ball.md",
-                    {
-                        "id": "tu57"
-                    }
-                ],
-                [
-                    "This creates a ball that bounces indefinitely, losing no energy:",
-                    "",
-                    " This creates a ball that bounces indefinitely, losing no energy:",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/create-a-bouncing-ball.md",
-                    {
-                        "id": "tu57"
-                    }
-                ],
-                [
-                    "<x1\/>Infinite bounce<x2\/>",
-                    "",
-                    "<x1\/>Infinite bounce<x2\/>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/create-a-bouncing-ball.md",
-                    {
-                        "id": "tu58"
-                    }
-                ],
-                [
-                    "Set the restitution to 1.1 and the ball bounces a little higher each time:",
-                    "",
-                    "Set the restitution to 1.1 and the ball bounces a little higher each time:",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/create-a-bouncing-ball.md",
-                    {
-                        "id": "tu59"
-                    }
-                ],
-                [
-                    "<x1\/>Ball bouncing higher<x2\/>",
-                    "",
-                    "<x1\/>Ball bouncing higher<x2\/>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/create-a-bouncing-ball.md",
-                    {
-                        "id": "tu60"
-                    }
-                ],
-                [
-                    "Now we've created a bouncing ball, we can use it to learn about triggers.",
-                    "",
-                    "Now we've created a bouncing ball, we can use it to learn about triggers.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/create-a-bouncing-ball.md",
-                    {
-                        "id": "tu61"
-                    }
-                ],
-                [
-                    "For more information, see the <g1>Script a trigger<\/g1> tutorial.",
-                    "",
-                    " For more information, see the <g1>Script a trigger<\/g1> tutorial.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/create-a-bouncing-ball.md",
-                    {
-                        "id": "tu61"
-                    }
-                ],
-                [
-                    "See also",
-                    "",
-                    "See also",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/create-a-bouncing-ball.md",
-                    {
-                        "id": "tu62"
-                    }
-                ],
-                [
-                    "Colliders",
-                    "",
-                    "<g1>Colliders<\/g1>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/create-a-bouncing-ball.md",
-                    {
-                        "id": "tu63"
-                    }
-                ],
-                [
-                    "Collider shape",
-                    "",
-                    "<g1>Collider shape<\/g1>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/create-a-bouncing-ball.md",
-                    {
-                        "id": "tu64"
-                    }
-                ],
-                [
-                    "Tutorial:",
-                    "",
-                    "<g1>Tutorial:",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/create-a-bouncing-ball.md",
-                    {
-                        "id": "tu65"
-                    }
-                ],
-                [
-                    "Script a trigger",
-                    "",
-                    " Script a trigger<\/g1>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/physics\/create-a-bouncing-ball.md",
-                    {
-                        "id": "tu65"
-                    }
-                ]
-            ]
-        }
-    ],
-    "seg_enabled": false
+  "filename": "manual\\physics\\create-a-bouncing-ball.md.xlf",
+  "files": [
+    {
+      "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/create-a-bouncing-ball.md": [
+        [
+          "Create a bouncing ball",
+          "Criar uma bola saltando",
+          "Create a bouncing ball",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/create-a-bouncing-ball.md",
+          {
+            "id": "tu1"
+          }
+        ],
+        [
+          "<x1\\/>Beginner<x2\\/>",
+          "<x1\\/>Introdução<x2\\/>",
+          "<x1\\/>Beginner<x2\\/>\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/create-a-bouncing-ball.md",
+          {
+            "id": "tu2"
+          }
+        ],
+        [
+          "<x3\\/>Designer<x4\\/>",
+          "<x3\\/>Designer<x4\\/>",
+          "<x3\\/>Designer<x4\\/>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/create-a-bouncing-ball.md",
+          {
+            "id": "tu2"
+          }
+        ],
+        [
+          "In this tutorial, we'll use the <g1>static collider and rigidbody components<\\/g1> to create a ball bouncing on a floor.",
+          "Neste tutorial, usaremos os componentes <g1>static collider e rigidbody<\\/g1> para criar uma bola saltando em um chão.",
+          "In this tutorial, we'll use the <g1>static collider and rigidbody components<\\/g1> to create a ball bouncing on a floor.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/create-a-bouncing-ball.md",
+          {
+            "id": "tu3"
+          }
+        ],
+        [
+          "<x1\\/>!Note<x2\\/>",
+          "<x1\\/>!Note<x2\\/>",
+          "<x1\\/>!Note<x2\\/>\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/create-a-bouncing-ball.md",
+          {
+            "id": "tu4"
+          }
+        ],
+        [
+          "The screenshots and videos in this tutorial were made using an earlier version of Stride, so some parts of the UI, and the default skybox and sphere, might look different from your version.",
+          "As capturas de tela e vídeos neste tutorial foram feitos usando uma versão anterior do Stride, então algumas partes da interface do usuário, e a caixa de céu padrão e esfera, podem parecer diferentes de sua versão.",
+          "The screenshots and videos in this tutorial were made using an earlier version of Stride, so some parts of the UI, and the default skybox and sphere, might look different from your version.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/create-a-bouncing-ball.md",
+          {
+            "id": "tu4"
+          }
+        ],
+        [
+          "1.",
+          "1.",
+          "1.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/create-a-bouncing-ball.md",
+          {
+            "id": "tu5"
+          }
+        ],
+        [
+          "Create a new project",
+          "Criar um novo projeto",
+          " Create a new project",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/create-a-bouncing-ball.md",
+          {
+            "id": "tu5"
+          }
+        ],
+        [
+          "Start a <g1>New Game<\\/g1> project.",
+          "Comece um projeto <g1>New Game<\\/g1>.",
+          "Start a <g1>New Game<\\/g1> project.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/create-a-bouncing-ball.md",
+          {
+            "id": "tu6"
+          }
+        ],
+        [
+          "The default scene comes pre-loaded with five entities:",
+          "A cena padrão vem pré-carregada com cinco entidades:",
+          "The default scene comes pre-loaded with five entities:",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/create-a-bouncing-ball.md",
+          {
+            "id": "tu7"
+          }
+        ],
+        [
+          "Camera, Directional light, Skybox, Ground, and Sphere.",
+          "Câmera, luz direcional, Skybox, Terreno e Esfera.",
+          " Camera, Directional light, Skybox, Ground, and Sphere.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/create-a-bouncing-ball.md",
+          {
+            "id": "tu7"
+          }
+        ],
+        [
+          "We're going to add physics components to the <g1>Ground<\\/g1> and <g2>Sphere<\\/g2> entities.",
+          "Vamos adicionar componentes de física às entidades <g1>Ground<\\/g1> e <g2>Sphere<\\/g2>.",
+          " We're going to add physics components to the <g1>Ground<\\/g1> and <g2>Sphere<\\/g2> entities.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/create-a-bouncing-ball.md",
+          {
+            "id": "tu7"
+          }
+        ],
+        [
+          "2.",
+          "2.",
+          "2.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/create-a-bouncing-ball.md",
+          {
+            "id": "tu8"
+          }
+        ],
+        [
+          "Add a static collider",
+          "Adicionar um colisor estático",
+          " Add a static collider",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/create-a-bouncing-ball.md",
+          {
+            "id": "tu8"
+          }
+        ],
+        [
+          "Let's begin by adding a <g1>static collider<\\/g1> component to the Ground entity.",
+          "Vamos começar adicionando um componente <g1>static collider<\\/g1> à entidade Ground.",
+          "Let's begin by adding a <g1>static collider<\\/g1> component to the Ground entity.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/create-a-bouncing-ball.md",
+          {
+            "id": "tu9"
+          }
+        ],
+        [
+          "A static collider is a physics object that doesn't move.",
+          "Um colisão estático é um objeto de física que não se move.",
+          " A static collider is a physics object that doesn't move.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/create-a-bouncing-ball.md",
+          {
+            "id": "tu9"
+          }
+        ],
+        [
+          "Typical static colliders are walls, floors, large rocks, and so on.",
+          "Os colisões estáticos típicos são paredes, pisos, grandes rochas, e assim por diante.",
+          " Typical static colliders are walls, floors, large rocks, and so on.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/create-a-bouncing-ball.md",
+          {
+            "id": "tu9"
+          }
+        ],
+        [
+          "In this case, the static collider will give the ball something to bounce on.",
+          "Neste caso, o colisor estático dará à bola algo para saltar sobre.",
+          " In this case, the static collider will give the ball something to bounce on.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/create-a-bouncing-ball.md",
+          {
+            "id": "tu9"
+          }
+        ],
+        [
+          "Select the <g1>Ground<\\/g1> entity.",
+          "Selecione a entidade <g1>Ground<\\/g1>.",
+          "Select the <g1>Ground<\\/g1> entity.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/create-a-bouncing-ball.md",
+          {
+            "id": "tu10"
+          }
+        ],
+        [
+          "In the <g1>Property Grid<\\/g1>, click <g2>Add component<\\/g2> and select <g3>Static Collider<\\/g3>.",
+          "No <g1>Property Grid<\\/g1>, clique em <g2>Add component<\\/g2> e selecione <g3>Static Collider<\\/g3>.",
+          "In the <g1>Property Grid<\\/g1>, click <g2>Add component<\\/g2> and select <g3>Static Collider<\\/g3>.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/create-a-bouncing-ball.md",
+          {
+            "id": "tu11"
+          }
+        ],
+        [
+          "<x1\\/>Add Static collider component<x2\\/>",
+          "<x1\\/> Adicionar componente de colisor estático<x2\\/>",
+          "<x1\\/>Add Static collider component<x2\\/>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/create-a-bouncing-ball.md",
+          {
+            "id": "tu12"
+          }
+        ],
+        [
+          "Set the <g1>collider shape<\\/g1> to match the shape of the entity.",
+          "Defina a forma <g1>collider<\\/g1> para corresponder à forma da entidade.",
+          "Set the <g1>collider shape<\\/g1> to match the shape of the entity.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/create-a-bouncing-ball.md",
+          {
+            "id": "tu13"
+          }
+        ],
+        [
+          "To do this, in the <g2>Property Grid<\\/g2>, expand the <g3>Static Collider component<\\/g3> to view its properties.",
+          "Para fazer isso, no <g2>Property Grid<\\/g2>, expanda o componente <g3>Static Collider<\\/g3> para ver suas propriedades.",
+          " To do this, in the <g2>Property Grid<\\/g2>, expand the <g3>Static Collider component<\\/g3> to view its properties.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/create-a-bouncing-ball.md",
+          {
+            "id": "tu13"
+          }
+        ],
+        [
+          "Next to <g1>Collider Shapes<\\/g1>, click <x1\\/>Green plus button<x2\\/> (<g2>Add<\\/g2>) and select <g3>Infinite Plane<\\/g3>.",
+          "Ao lado de <g1>Collider Shapes<\\/g1>, clique em <x1\\/>Green plus button<x2\\/> (<g2>Add<\\/g2>) e selecione <g3>Infinite Plane<\\/g3>.",
+          "Next to <g1>Collider Shapes<\\/g1>, click <x1\\/>Green plus button<x2\\/> (<g2>Add<\\/g2>) and select <g3>Infinite Plane<\\/g3>.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/create-a-bouncing-ball.md",
+          {
+            "id": "tu14"
+          }
+        ],
+        [
+          "<x1\\/>Add Static collider component<x2\\/>",
+          "<x1\\/> Adicionar componente de colisor estático<x2\\/>",
+          "<x1\\/>Add Static collider component<x2\\/>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/create-a-bouncing-ball.md",
+          {
+            "id": "tu15"
+          }
+        ],
+        [
+          "This adds a static collider to the ground, so the ball has something to bounce off.",
+          "Isso adiciona um colisão estático ao chão, então a bola tem algo para saltar.",
+          "This adds a static collider to the ground, so the ball has something to bounce off.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/create-a-bouncing-ball.md",
+          {
+            "id": "tu16"
+          }
+        ],
+        [
+          "3.",
+          "3.",
+          "3.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/create-a-bouncing-ball.md",
+          {
+            "id": "tu17"
+          }
+        ],
+        [
+          "Add a rigidbody collider",
+          "Adicionar um coletor de corpo rígido",
+          " Add a rigidbody collider",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/create-a-bouncing-ball.md",
+          {
+            "id": "tu17"
+          }
+        ],
+        [
+          "Next, we'll add a <g1>rigidbody<\\/g1> component to the sphere.",
+          "Em seguida, vamos adicionar um componente <g1>rigidbody<\\/g1> à esfera.",
+          "Next, we'll add a <g1>rigidbody<\\/g1> component to the sphere.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/create-a-bouncing-ball.md",
+          {
+            "id": "tu18"
+          }
+        ],
+        [
+          "A rigidbody is a physics object that moves — perfect for our bouncing ball.",
+          "Um corpo rígido é um objeto de física que se move — perfeito para a nossa bola saltando.",
+          " A rigidbody is a physics object that moves — perfect for our bouncing ball.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/create-a-bouncing-ball.md",
+          {
+            "id": "tu18"
+          }
+        ],
+        [
+          "In the <g1>Scene Editor<\\/g1>, select the <g2>Sphere<\\/g2> entity.",
+          "No <g1>Scene Editor<\\/g1>, selecione a entidade <g2>Sphere<\\/g2>.",
+          "In the <g1>Scene Editor<\\/g1>, select the <g2>Sphere<\\/g2> entity.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/create-a-bouncing-ball.md",
+          {
+            "id": "tu19"
+          }
+        ],
+        [
+          "In the <g1>Property Grid<\\/g1>, click <g2>Add component<\\/g2> and select <g3>Rigidbody<\\/g3>.",
+          "No <g1>Property Grid<\\/g1>, clique em <g2>Add component<\\/g2> e selecione <g3>Rigidbody<\\/g3>.",
+          "In the <g1>Property Grid<\\/g1>, click <g2>Add component<\\/g2> and select <g3>Rigidbody<\\/g3>.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/create-a-bouncing-ball.md",
+          {
+            "id": "tu20"
+          }
+        ],
+        [
+          "<x1\\/>Add Static collider component<x2\\/>",
+          "<x1\\/> Adicionar componente de colisor estático<x2\\/>",
+          "<x1\\/>Add Static collider component<x2\\/>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/create-a-bouncing-ball.md",
+          {
+            "id": "tu21"
+          }
+        ],
+        [
+          "Just like we did for the Ground entity, set the <g1>collider shape<\\/g1> to match the entity.",
+          "Assim como fizemos para a entidade Ground, defina a forma <g1>collider<\\/g1> para corresponder à entidade.",
+          "Just like we did for the Ground entity, set the <g1>collider shape<\\/g1> to match the entity.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/create-a-bouncing-ball.md",
+          {
+            "id": "tu22"
+          }
+        ],
+        [
+          "To do this, in the <g2>Property Grid<\\/g2>, expand the <g3>Rigidbody component<\\/g3> to view its properties.",
+          "Para fazer isso, no <g2>Property Grid<\\/g2>, expanda o componente <g3>Rigidbody<\\/g3> para ver suas propriedades.",
+          " To do this, in the <g2>Property Grid<\\/g2>, expand the <g3>Rigidbody component<\\/g3> to view its properties.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/create-a-bouncing-ball.md",
+          {
+            "id": "tu22"
+          }
+        ],
+        [
+          "Next to <g1>Collider Shapes<\\/g1>, click <x1\\/>Green plus button<x2\\/> (<g2>Add<\\/g2>) and select <g3>Sphere<\\/g3>.",
+          "Ao lado de <g1>Collider Shapes<\\/g1>, clique em <x1\\/>Green plus button<x2\\/> (<g2>Add<\\/g2>) e selecione <g3>Sphere<\\/g3>.",
+          "Next to <g1>Collider Shapes<\\/g1>, click <x1\\/>Green plus button<x2\\/> (<g2>Add<\\/g2>) and select <g3>Sphere<\\/g3>.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/create-a-bouncing-ball.md",
+          {
+            "id": "tu23"
+          }
+        ],
+        [
+          "<x1\\/>Add Static collider component<x2\\/>",
+          "<x1\\/> Adicionar componente de colisor estático<x2\\/>",
+          "<x1\\/>Add Static collider component<x2\\/>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/create-a-bouncing-ball.md",
+          {
+            "id": "tu24"
+          }
+        ],
+        [
+          "4.",
+          "4.",
+          "4.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/create-a-bouncing-ball.md",
+          {
+            "id": "tu25"
+          }
+        ],
+        [
+          "Position the ball",
+          "Posicione a bola",
+          " Position the ball",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/create-a-bouncing-ball.md",
+          {
+            "id": "tu25"
+          }
+        ],
+        [
+          "Let's position the sphere so it starts in mid-air and falls to the ground.",
+          "Vamos posicionar a esfera assim que começa no ar médio e cai no chão.",
+          "Let's position the sphere so it starts in mid-air and falls to the ground.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/create-a-bouncing-ball.md",
+          {
+            "id": "tu26"
+          }
+        ],
+        [
+          "Select the <g1>Sphere<\\/g1> entity.",
+          "Selecione a entidade <g1>Sphere<\\/g1>.",
+          "Select the <g1>Sphere<\\/g1> entity.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/create-a-bouncing-ball.md",
+          {
+            "id": "tu27"
+          }
+        ],
+        [
+          "In the <g1>Property Grid<\\/g1>, under <g2>Transform<\\/g2>, set the <g3>Position<\\/g3> to:",
+          "No <g1>Property Grid<\\/g1>, sob <g2>Transform<\\/g2>, defina o <g3>Position<\\/g3> para:",
+          "In the <g1>Property Grid<\\/g1>, under <g2>Transform<\\/g2>, set the <g3>Position<\\/g3> to:",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/create-a-bouncing-ball.md",
+          {
+            "id": "tu28"
+          }
+        ],
+        [
+          "X:",
+          "X:",
+          " <g4>X:",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/create-a-bouncing-ball.md",
+          {
+            "id": "tu28"
+          }
+        ],
+        [
+          "0, Y:",
+          "0, Y:",
+          " 0, Y:",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/create-a-bouncing-ball.md",
+          {
+            "id": "tu28"
+          }
+        ],
+        [
+          "6, Z:",
+          "6, Z:",
+          " 6, Z:",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/create-a-bouncing-ball.md",
+          {
+            "id": "tu28"
+          }
+        ],
+        [
+          "0",
+          "0",
+          " 0<\\/g4>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/create-a-bouncing-ball.md",
+          {
+            "id": "tu28"
+          }
+        ],
+        [
+          "<x1\\/>Change Sphere position<x2\\/>",
+          "<x1\\/> Posição da Esfera <x2\\/>",
+          "<x1\\/>Change Sphere position<x2\\/>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/create-a-bouncing-ball.md",
+          {
+            "id": "tu29"
+          }
+        ],
+        [
+          "This places the ball in mid-air above the ground.",
+          "Isso coloca a bola no ar médio acima do chão.",
+          "This places the ball in mid-air above the ground.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/create-a-bouncing-ball.md",
+          {
+            "id": "tu30"
+          }
+        ],
+        [
+          "5.",
+          "5.",
+          "5.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/create-a-bouncing-ball.md",
+          {
+            "id": "tu31"
+          }
+        ],
+        [
+          "Position the camera",
+          "Posicione a câmera",
+          " Position the camera",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/create-a-bouncing-ball.md",
+          {
+            "id": "tu31"
+          }
+        ],
+        [
+          "Now we'll move the camera to give us a good view of the scene.",
+          "Agora vamos mover a câmera para nos dar uma boa visão da cena.",
+          "Now we'll move the camera to give us a good view of the scene.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/create-a-bouncing-ball.md",
+          {
+            "id": "tu32"
+          }
+        ],
+        [
+          "Select the <g1>Camera<\\/g1> entity.",
+          "Selecione a entidade <g1>Camera<\\/g1>.",
+          "Select the <g1>Camera<\\/g1> entity.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/create-a-bouncing-ball.md",
+          {
+            "id": "tu33"
+          }
+        ],
+        [
+          "In the <g1>Property Grid<\\/g1>, under <g2>Transform<\\/g2>, set the <g3>Position<\\/g3> to:",
+          "No <g1>Property Grid<\\/g1>, sob <g2>Transform<\\/g2>, defina o <g3>Position<\\/g3> para:",
+          "In the <g1>Property Grid<\\/g1>, under <g2>Transform<\\/g2>, set the <g3>Position<\\/g3> to:",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/create-a-bouncing-ball.md",
+          {
+            "id": "tu34"
+          }
+        ],
+        [
+          "X:",
+          "X:",
+          " <g4>X:",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/create-a-bouncing-ball.md",
+          {
+            "id": "tu34"
+          }
+        ],
+        [
+          "-12, Y:",
+          "-12, Y:",
+          " -12, Y:",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/create-a-bouncing-ball.md",
+          {
+            "id": "tu34"
+          }
+        ],
+        [
+          "7, Z:",
+          "7, Z:",
+          " 7, Z:",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/create-a-bouncing-ball.md",
+          {
+            "id": "tu34"
+          }
+        ],
+        [
+          "9",
+          "9",
+          " 9<\\/g4>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/create-a-bouncing-ball.md",
+          {
+            "id": "tu34"
+          }
+        ],
+        [
+          "Set the <g1>Rotation<\\/g1> to:",
+          "Definir o <g1>Rotação<\\/g1> para:",
+          "Set the <g1>Rotation<\\/g1> to:",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/create-a-bouncing-ball.md",
+          {
+            "id": "tu35"
+          }
+        ],
+        [
+          "X:",
+          "X:",
+          " <g2>X:",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/create-a-bouncing-ball.md",
+          {
+            "id": "tu35"
+          }
+        ],
+        [
+          "-20, Y:",
+          "-20, Y:",
+          " -20, Y:",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/create-a-bouncing-ball.md",
+          {
+            "id": "tu35"
+          }
+        ],
+        [
+          "-50, Z:",
+          "-50, Z:",
+          " -50, Z:",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/create-a-bouncing-ball.md",
+          {
+            "id": "tu35"
+          }
+        ],
+        [
+          "0",
+          "0",
+          " 0<\\/g2>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/create-a-bouncing-ball.md",
+          {
+            "id": "tu35"
+          }
+        ],
+        [
+          "<x1\\/>Change camera position<x2\\/>",
+          "<x1\\/> Alterar posição da câmera<x2\\/>",
+          "<x1\\/>Change camera position<x2\\/>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/create-a-bouncing-ball.md",
+          {
+            "id": "tu36"
+          }
+        ],
+        [
+          "You can see preview the camera view in the <g1>Camera preview<\\/g1> in the bottom-right of the Scene Editor.",
+          "Você pode ver a visualização da câmera no <g1>Camera preview<\\/g1> na parte inferior direita do Editor de cena.",
+          "You can see preview the camera view in the <g1>Camera preview<\\/g1> in the bottom-right of the Scene Editor.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/create-a-bouncing-ball.md",
+          {
+            "id": "tu37"
+          }
+        ],
+        [
+          "<x1\\/>Camera preview<x2\\/>",
+          "<x1\\/> Visualização da câmara <x2\\/>",
+          "<x1\\/>Camera preview<x2\\/>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/create-a-bouncing-ball.md",
+          {
+            "id": "tu38"
+          }
+        ],
+        [
+          "6.",
+          "6.",
+          "6.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/create-a-bouncing-ball.md",
+          {
+            "id": "tu39"
+          }
+        ],
+        [
+          "Set the restitution",
+          "Definir a restituição",
+          " Set the restitution",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/create-a-bouncing-ball.md",
+          {
+            "id": "tu39"
+          }
+        ],
+        [
+          "Let's see what the scene looks like so far.",
+          "Vamos ver como é a cena até agora.",
+          "Let's see what the scene looks like so far.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/create-a-bouncing-ball.md",
+          {
+            "id": "tu40"
+          }
+        ],
+        [
+          "To run the project, press <g1>F5<\\/g1>.",
+          "Para executar o projeto, pressione <g1>F5<\\/g1>.",
+          " To run the project, press <g1>F5<\\/g1>.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/create-a-bouncing-ball.md",
+          {
+            "id": "tu40"
+          }
+        ],
+        [
+          "<x1\\/>Falling ball<x2\\/>",
+          "<x1\\/>Falling ball<x2\\/>",
+          "<x1\\/>Falling ball<x2\\/>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/create-a-bouncing-ball.md",
+          {
+            "id": "tu41"
+          }
+        ],
+        [
+          "The Sphere (rigidbody) responds to gravity and falls.",
+          "A Esfera (rigidbody) responde à gravidade e cai.",
+          "The Sphere (rigidbody) responds to gravity and falls.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/create-a-bouncing-ball.md",
+          {
+            "id": "tu42"
+          }
+        ],
+        [
+          "The Ground (static collider) breaks its fall.",
+          "O Terreno (collider estático) quebra sua queda.",
+          " The Ground (static collider) breaks its fall.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/create-a-bouncing-ball.md",
+          {
+            "id": "tu42"
+          }
+        ],
+        [
+          "But there's no bounce effect yet.",
+          "Mas ainda não há efeito de rejeição.",
+          " But there's no bounce effect yet.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/create-a-bouncing-ball.md",
+          {
+            "id": "tu42"
+          }
+        ],
+        [
+          "To create a bounce effect, we need to change the <g1>restitution<\\/g1> of the Sphere and the Ground.",
+          "Para criar um efeito de rejeição, precisamos mudar a <g1>restituição<\\/g1> da Esfera e do Terreno.",
+          "To create a bounce effect, we need to change the <g1>restitution<\\/g1> of the Sphere and the Ground.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/create-a-bouncing-ball.md",
+          {
+            "id": "tu43"
+          }
+        ],
+        [
+          "This simulates the <g2>coefficient of restitution (Wikipedia)<\\/g2> of real-world collisions.",
+          "Isso simula o <g2>coeficiente de restituição (Wikipedia)<\\/g2> de colisões do mundo real.",
+          " This simulates the <g2>coefficient of restitution (Wikipedia)<\\/g2> of real-world collisions.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/create-a-bouncing-ball.md",
+          {
+            "id": "tu43"
+          }
+        ],
+        [
+          "If the restitution property of colliding entities is 0, the entities lose all energy and stop moving immediately on impact.",
+          "Se a propriedade de restituição de entidades colidindo for 0, as entidades perdem toda a energia e param de se mover imediatamente sobre o impacto.",
+          "If the restitution property of colliding entities is 0, the entities lose all energy and stop moving immediately on impact.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/create-a-bouncing-ball.md",
+          {
+            "id": "tu44"
+          }
+        ],
+        [
+          "If the restitution is 1, they lose no energy and rebound with the same velocity at which they collided.",
+          "Se a restituição é 1, eles não perdem energia e recuperam com a mesma velocidade em que colidiram.",
+          "If the restitution is 1, they lose no energy and rebound with the same velocity at which they collided.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/create-a-bouncing-ball.md",
+          {
+            "id": "tu45"
+          }
+        ],
+        [
+          "If the restitution is higher than 1, they gain energy and rebound with <g1>more<\\/g1> velocity.",
+          "Se a restituição for superior a 1, eles ganham energia e recuperam com a velocidade <g1>more<\\/g1>.",
+          "If the restitution is higher than 1, they gain energy and rebound with <g1>more<\\/g1> velocity.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/create-a-bouncing-ball.md",
+          {
+            "id": "tu46"
+          }
+        ],
+        [
+          "As a rule, to create realistic collisions, set the restitution between 0 and 1.",
+          "Por via de regra, para criar colisões realistas, defina a restituição entre 0 e 1.",
+          "As a rule, to create realistic collisions, set the restitution between 0 and 1.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/create-a-bouncing-ball.md",
+          {
+            "id": "tu47"
+          }
+        ],
+        [
+          "Let's set the restitution of our Sphere and Ground entities.",
+          "Vamos estabelecer a restituição de nossas Esferas e Terras.",
+          "Let's set the restitution of our Sphere and Ground entities.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/create-a-bouncing-ball.md",
+          {
+            "id": "tu48"
+          }
+        ],
+        [
+          "Select the <g1>Sphere<\\/g1> entity.",
+          "Selecione a entidade <g1>Sphere<\\/g1>.",
+          "Select the <g1>Sphere<\\/g1> entity.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/create-a-bouncing-ball.md",
+          {
+            "id": "tu49"
+          }
+        ],
+        [
+          "In the <g1>Property Grid<\\/g1>, under <g2>Rigidbody<\\/g2>, set the <g3>Restitution<\\/g3> to 0.8.",
+          "No <g1>Property Grid<\\/g1>, sob <g2>Rigidbody<\\/g2>, defina o <g3>Restitution<\\/g3> a 0.8.",
+          "In the <g1>Property Grid<\\/g1>, under <g2>Rigidbody<\\/g2>, set the <g3>Restitution<\\/g3> to 0.8.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/create-a-bouncing-ball.md",
+          {
+            "id": "tu50"
+          }
+        ],
+        [
+          "<x1\\/>Set restitution for a sphere<x2\\/>",
+          "<x1\\/> Restituição de segundo para uma esfera<x2\\/>",
+          "<x1\\/>Set restitution for a sphere<x2\\/>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/create-a-bouncing-ball.md",
+          {
+            "id": "tu51"
+          }
+        ],
+        [
+          "Select the <g1>Ground<\\/g1> entity.",
+          "Selecione a entidade <g1>Ground<\\/g1>.",
+          "Select the <g1>Ground<\\/g1> entity.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/create-a-bouncing-ball.md",
+          {
+            "id": "tu52"
+          }
+        ],
+        [
+          "In the <g1>Property Grid<\\/g1>, under <g2>Static Collider<\\/g2>, set the <g3>Restitution<\\/g3> to 0.5.",
+          "No <g1>Property Grid<\\/g1>, sob <g2>Static Collider<\\/g2>, defina o <g3>Restitution<\\/g3> para 0,5.",
+          "In the <g1>Property Grid<\\/g1>, under <g2>Static Collider<\\/g2>, set the <g3>Restitution<\\/g3> to 0.5.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/create-a-bouncing-ball.md",
+          {
+            "id": "tu53"
+          }
+        ],
+        [
+          "<x1\\/>Set restitution for the ground<x2\\/>",
+          "<x1\\/> Restituição de reserva para terra<x2\\/>",
+          "<x1\\/>Set restitution for the ground<x2\\/>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/create-a-bouncing-ball.md",
+          {
+            "id": "tu54"
+          }
+        ],
+        [
+          "To see how this changes the physics, run the project again (<g1>F5<\\/g1>).",
+          "Para ver como isso muda a física, execute o projeto novamente (<g1>F5<\\/g1>).",
+          "To see how this changes the physics, run the project again (<g1>F5<\\/g1>).",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/create-a-bouncing-ball.md",
+          {
+            "id": "tu55"
+          }
+        ],
+        [
+          "This time, the ball bounces on the ground before coming to a stop:",
+          "Desta vez, a bola salta no chão antes de chegar a uma parada:",
+          " This time, the ball bounces on the ground before coming to a stop:",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/create-a-bouncing-ball.md",
+          {
+            "id": "tu55"
+          }
+        ],
+        [
+          "<x1\\/>Bouncing effect<x2\\/>",
+          "<x1\\/>Efeito de pontuação<x2\\/>",
+          "<x1\\/>Bouncing effect<x2\\/>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/create-a-bouncing-ball.md",
+          {
+            "id": "tu56"
+          }
+        ],
+        [
+          "Try changing the restitution of both entities to 1.",
+          "Tente mudar a restituição de ambas as entidades para 1.",
+          "Try changing the restitution of both entities to 1.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/create-a-bouncing-ball.md",
+          {
+            "id": "tu57"
+          }
+        ],
+        [
+          "This creates a ball that bounces indefinitely, losing no energy:",
+          "Isso cria uma bola que salta indefinidamente, sem perder energia:",
+          " This creates a ball that bounces indefinitely, losing no energy:",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/create-a-bouncing-ball.md",
+          {
+            "id": "tu57"
+          }
+        ],
+        [
+          "<x1\\/>Infinite bounce<x2\\/>",
+          "<x1\\/> Resalto infinito <x2\\/>",
+          "<x1\\/>Infinite bounce<x2\\/>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/create-a-bouncing-ball.md",
+          {
+            "id": "tu58"
+          }
+        ],
+        [
+          "Set the restitution to 1.1 and the ball bounces a little higher each time:",
+          "Defina a restituição para 1.1 e a bola salta um pouco mais alto cada vez:",
+          "Set the restitution to 1.1 and the ball bounces a little higher each time:",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/create-a-bouncing-ball.md",
+          {
+            "id": "tu59"
+          }
+        ],
+        [
+          "<x1\\/>Ball bouncing higher<x2\\/>",
+          "<x1\\/> Ball bouncing superior<x2\\/>",
+          "<x1\\/>Ball bouncing higher<x2\\/>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/create-a-bouncing-ball.md",
+          {
+            "id": "tu60"
+          }
+        ],
+        [
+          "Now we've created a bouncing ball, we can use it to learn about triggers.",
+          "Agora criamos uma bola saltando, podemos usá-la para aprender sobre gatilhos.",
+          "Now we've created a bouncing ball, we can use it to learn about triggers.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/create-a-bouncing-ball.md",
+          {
+            "id": "tu61"
+          }
+        ],
+        [
+          "For more information, see the <g1>Script a trigger<\\/g1> tutorial.",
+          "Para obter mais informações, consulte o tutorial <g1>Script a trigger<\\/g1>.",
+          " For more information, see the <g1>Script a trigger<\\/g1> tutorial.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/create-a-bouncing-ball.md",
+          {
+            "id": "tu61"
+          }
+        ],
+        [
+          "See also",
+          "Ver também",
+          "See also",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/create-a-bouncing-ball.md",
+          {
+            "id": "tu62"
+          }
+        ],
+        [
+          "Colliders",
+          "Coleiras",
+          "<g1>Colliders<\\/g1>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/create-a-bouncing-ball.md",
+          {
+            "id": "tu63"
+          }
+        ],
+        [
+          "Collider shape",
+          "Forma de colarinho",
+          "<g1>Collider shape<\\/g1>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/create-a-bouncing-ball.md",
+          {
+            "id": "tu64"
+          }
+        ],
+        [
+          "Tutorial:",
+          "Tutorial:",
+          "<g1>Tutorial:",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/create-a-bouncing-ball.md",
+          {
+            "id": "tu65"
+          }
+        ],
+        [
+          "Script a trigger",
+          "Script um gatilho",
+          " Script a trigger<\\/g1>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/physics\\/create-a-bouncing-ball.md",
+          {
+            "id": "tu65"
+          }
+        ]
+      ]
+    }
+  ],
+  "seg_enabled": false
 }

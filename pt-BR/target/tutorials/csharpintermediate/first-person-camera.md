@@ -1,15 +1,15 @@
-# First person camera
+# Câmera de primeira pessoa
 
-This C# Intermediate tutorial covers the implementation of first person camera.
+Este tutorial intermediário C# cobre a implementação da câmera de primeira pessoa.
 
-## Explanation
+## Explicação
 
-You learn about mouse movement and how to convert that into a 3d rotation. We set up camera angle limits and finally we apply movement to a first person character controller.
+Você aprende sobre o movimento do mouse e como converter isso em uma rotação 3d. Configuramos limites de ângulo de câmera e, finalmente, aplicamos movimento a um controlador de caráter de primeira pessoa.
 
-> [!Video https://www.youtube.com/embed/MSFXydzbtuE]
+> [!Vídeo https://www.youtube.com/embed/MSFXydzbtuE]
 
-## Camera controller
+## Controlador de câmera
 [!code-csharp[firstpersoncamera](../../../../stride/samples/Tutorials/CSharpIntermediate/CSharpIntermediate/CSharpIntermediate.Game/09_FirstPersonCamera/FirstPersonCamera.cs)]
 
-## Character movement
+## Movimento dos personagens
 [!code-csharp[charactermovement](../../../../stride/samples/Tutorials/CSharpIntermediate/CSharpIntermediate/CSharpIntermediate.Game/10_ThirdPersonCamera/CharacterMovement.cs)]

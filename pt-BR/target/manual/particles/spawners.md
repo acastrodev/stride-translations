@@ -1,92 +1,92 @@
-# Particle spawners
+# Espawners de partículas
 
-<span class="badge text-bg-primary">Beginner</span>
-<span class="badge text-bg-success">Artist</span>
-<span class="badge text-bg-success">Programmer</span>
+<x1\/>Introdução<x2\/>
+<x3\/>Artista <x4\/>
+<x5\/> Programador <x6\/>
 
-**Particle spawners** control when, how many, and how quickly particles are emitted. Emitters need at least one spawner, but can contain multiple spawners with different settings.
+** Espalhadores de partículas** control quando, quantos, e quão rapidamente as partículas são emitidas. Os emissores precisam de pelo menos um spawner, mas podem conter vários spawners com configurações diferentes.
 
-## Per second
+## Por segundo
 
-Emits a fixed number of particles per second. It balances and interpolates them and is stable even if the framerate changes or drops. For example, at a rate of 20 particles per second, the spawner spawns one particle every three frames for 60fps games and two particles for every three frames (skipping every third frame) for 30fps games.
+Emite um número fixo de partículas por segundo. Ele equilibra e interpola-los e é estável, mesmo se o framerate muda ou cai. Por exemplo, a uma taxa de 20 partículas por segundo, o spawner gera uma partícula a cada três quadros para 60fps jogos e duas partículas para cada três frames (skipping cada terceiro frame) para 30fps jogos.
 
-![media/particles-reference-spawners-1.png](media/particles-reference-spawners-1.png)
+<x1\/>media\/particles-reference-spawners-1.png<x2\/>
 
-| Property | Description |
+| Propriedade | Descrição |
 |-------------------------|--------------------------------------------------------------------------------------------------------|
-| Loop | To have the spawner loop when it reaches the end of its duration, select **Looping** (default). To have the spawner loop with no wait between each loop, select **Looping, no delay**. To have the spawner spawn once and then stop, select **One shot**. |
-| Delay | How long (in seconds) the spawner waits before spawning. This is a random value between the X (minimum) and Y (maximum) values. |
-| Duration | How long (in seconds) the spawner spawns particles for. At the end of the duration, the spawner either starts again or stops, depending on the Loop property. |
-| Particles | The number of particles the spawned per second. This can be a floating value (eg 36.875). |
+| Loop | Para ter o loop de spawner quando atingir o final de sua duração, selecione **Looping** (padrão). Para ter o loop de spawner sem espera entre cada loop, selecione **Looping, sem delay**. Para ter o spawner gerado uma vez e depois parar, selecione **One shot**. |
+| Delay | Quanto tempo (em segundos) o proprietário espera antes de desova. Este é um valor aleatório entre os valores X (mínimo) e Y (máximo). |
+| Duração | Quanto tempo (em segundos) o spawner gera partículas para. No final da duração, o spawner começa novamente ou pára, dependendo da propriedade Loop. |
+| Partes | O número de partículas desovadas por segundo. Este pode ser um valor flutuante (por exemplo 36.875). |
 
-## Per frame
+## Por quadro
 
-Emits a fixed number of particles per frame, regardless of framerate. This can be useful if you require a fixed number of particles - for example, exactly one every frame, which is useful for trails and ribbons.
+Emite um número fixo de partículas por quadro, independentemente de framerate. Isso pode ser útil se você precisar de um número fixo de partículas - por exemplo, exatamente um cada quadro, que é útil para trilhas e fitas.
 
-![media/particles-reference-spawners-2.png](media/particles-reference-spawners-2.png)
+<x1\/>media\/particles-reference-spawners-2.png<x2\/>
 
-| Property | Description |
+| Propriedade | Descrição |
 |-------------------------|--------------------------------------------------------------------------------------------------------|
-| Loop | To have the spawner loop when it reaches the end of its duration, select **Looping** (default). To have the spawner loop with no wait between each loop, select **Looping, no delay**. To have the spawner spawn once and then stop, select **One shot**. |
-| Delay | How long (in seconds) the spawner waits before spawning. This is a random value between the X (minimum) and Y (maximum) values. |
-| Duration | How long (in seconds) the spawner spawns particles for. |
-| Particles | The number of particles spawned per frame. The value can be a floating value, including values less than 1, in which case a new particle is spawned every few frames. |
-| Framerate | This is for estimation purposes only when the engine calculates the maximum number of particles. |
+| Loop | Para ter o loop de spawner quando atingir o final de sua duração, selecione **Looping** (padrão). Para ter o loop de spawner sem espera entre cada loop, selecione **Looping, sem delay**. Para ter o spawner gerado uma vez e depois parar, selecione **One shot**. |
+| Delay | Quanto tempo (em segundos) o proprietário espera antes de desova. Este é um valor aleatório entre os valores X (mínimo) e Y (máximo). |
+| Duração | Quanto tempo (em segundos) o spawner gera partículas para. |
+| Partes | O número de partículas geradas por quadro. O valor pode ser um valor flutuante, incluindo valores inferiores a 1, caso em que uma nova partícula é gerada a cada poucos quadros. |
+| Taxa de quadros | Isto é para fins de estimativa somente quando o motor calcula o número máximo de partículas. |
 
 ## Burst
 
-Emits all particles in one burst.
+Emite todas as partículas em uma explosão.
 
-![media/particles-reference-spawners-2.png](media/particles-reference-spawners-3.png)
+<x1\/>media\/particles-reference-spawners-2.png<x2\/>
 
-| Property | Description |
+| Propriedade | Descrição |
 |-------------------------|--------------------------------------------------------------------------------------------------------|
-| Loop | To have the spawner loop when it reaches the end of its duration, select **Looping** (default). To have the spawner loop with no wait between each loop, select **Looping, no delay**. To have the spawner spawn once and then stop, select **One shot**. |
-| Delay | How long (in seconds) the spawner waits before spawning. This is a random value between the X (minimum) and Y (maximum) values. |
-| Duration | How long (in seconds) the spawner spawns particles for. |
-| Particles/burst | The number of particles spawned in each burst. |
+| Loop | Para ter o loop de spawner quando atingir o final de sua duração, selecione **Looping** (padrão). Para ter o loop de spawner sem espera entre cada loop, selecione **Looping, sem delay**. Para ter o spawner gerado uma vez e depois parar, selecione **One shot**. |
+| Delay | Quanto tempo (em segundos) o proprietário espera antes de desova. Este é um valor aleatório entre os valores X (mínimo) e Y (máximo). |
+| Duração | Quanto tempo (em segundos) o spawner gera partículas para. |
+| Partículas\/burst | O número de partículas geradas em cada explosão. |
 
-## Distance
+## Distância
 
-Emits particles based on the distance traveled by the emitter. If the emitter doesn't move, it spawns no particles.
+Emite partículas com base na distância percorrida pelo emissor. Se a emissora não se mexer, não gera partículas.
 
-![media/particles-reference-spawners-2.png](media/particles-reference-spawners-4.png)
+<x1\/>media\/particles-reference-spawners-2.png<x2\/>
 
-| Property | Description |
+| Propriedade | Descrição |
 |-------------------------|--------------------------------------------------------------------------------------------------------|
-| Loop | To have the spawner loop when it reaches the end of its duration, select **Looping** (default). To have the spawner loop with no wait between each loop, select **Looping, no delay**. To have the spawner spawn once and then stop, select **One shot**. |
-| Delay | How long (in seconds) the spawner waits before spawning. This is a random value between the X (minimum) and Y (maximum) values. |
-| Duration | How long (in seconds) the spawner spawns particles for. |
-| Particles/unit | The number of particles spawned for every distance unit the spawner moves. You can use fractions if you need fewer than one particle per distance unit. The rate adjusts with scaling. |
+| Loop | Para ter o loop de spawner quando atingir o final de sua duração, selecione **Looping** (padrão). Para ter o loop de spawner sem espera entre cada loop, selecione **Looping, sem delay**. Para ter o spawner gerado uma vez e depois parar, selecione **One shot**. |
+| Delay | Quanto tempo (em segundos) o proprietário espera antes de desova. Este é um valor aleatório entre os valores X (mínimo) e Y (máximo). |
+| Duração | Quanto tempo (em segundos) o spawner gera partículas para. |
+| Partículas\/unidade | O número de partículas geradas para cada unidade de distância que o proprietário se move. Você pode usar frações se precisar de menos de uma partícula por unidade de distância. A taxa ajusta-se com escalonamento. |
 
-## From parent
+## Do pai
 
-Emits particles based on other particles (parents). When certain conditions in a parent particle are met, the spawner spawns particles.
+Emite partículas baseadas em outras partículas (pais). Quando certas condições em uma partícula pai são atendidas, o spawner gera partículas.
 
-![media/particles-reference-spawners-2.png](media/particles-reference-spawners-5.png)
+<x1\/>media\/particles-reference-spawners-2.png<x2\/>
 
-| Property | Description |
+| Propriedade | Descrição |
 |-------------------------|--------------------------------------------------------------------------------------------------------|
-| Loop | To have the spawner loop when it reaches the end of its duration, select **Looping** (default). To have the spawner loop with no wait between each loop, select **Looping, no delay**. To have the spawner spawn once and then stop, select **One shot**. |
-| Delay | How long (in seconds) the spawner waits before spawning. This is a random value between the X (minimum) and Y (maximum) values. |
-| Duration | How long (in seconds) the spawner spawns particles for. |
-| Parent emitter | The parent emitter, which should match the emitter's name set on that emitter. |
-| Spawn Control Group | This field will be added to the parent particles for more precise control over which parent particle spawns how many children. There are 4 groups you can choose from and they should match the initializers' groups, if initializers require control. |
-| Particles/trigger | How many particles (min and max) are spawned from a parent each time the triggering condition is met. |
-| Particle Spawn Trigger | What condition triggers child particles spawning (detailed below) |
+| Loop | Para ter o loop de spawner quando atingir o final de sua duração, selecione **Looping** (padrão). Para ter o loop de spawner sem espera entre cada loop, selecione **Looping, sem delay**. Para ter o spawner gerado uma vez e depois parar, selecione **One shot**. |
+| Delay | Quanto tempo (em segundos) o proprietário espera antes de desova. Este é um valor aleatório entre os valores X (mínimo) e Y (máximo). |
+| Duração | Quanto tempo (em segundos) o spawner gera partículas para. |
+| Emitter dos pais | O emissor-mãe, que deve corresponder ao nome do emissor definido nessa emissora. |
+| Grupo de controle de spam | Este campo será adicionado às partículas-mãe para um controle mais preciso sobre o qual a partícula pai gera quantas crianças. Existem 4 grupos que você pode escolher e eles devem combinar os grupos de inicializadores, se os inicializadores exigem controle. |
+| Partículas \/ gatilho | Quantas partículas (min e max) são geradas a partir de um pai cada vez que a condição de gatilho é satisfeita. |
+| Particle Spawn Trigger | Que condição desencadeia desova de partículas de crianças (detalhado abaixo) |
 
 ### Particle Spawn Trigger
-- On Birth - Child particles are spawned once when a parent particle is born (once per parent)
-- On Death - Child particles are spawned once when a parent particle dies (once per parent)
-- Distance - Child particles are spawned per distance traveled as the parent particle moves
-- On Hit - Parent particles need to implement *Collision Updater*. Child particles are spawned when a parent particle hits the surface.
-- Lifetime - Child particles are spawned when the parent particle's lifetime is between two limits, A and B, expressed as normalized values (0 to 1) over the particle's lifetime. If A < B, the period is 0..(A..B)..1, if B > A the period is reversed to (0..B)..(A..1). This method is less precise than the On Birth/On Death conditions.
+- Sobre o nascimento - Partículas infantis são geradas uma vez quando uma partícula pai nasce (uma vez por pai)
+- Na Morte - As partículas de criança são geradas uma vez quando uma partícula pai morre (uma vez por pai)
+- Distância - Partículas de crianças são geradas por distância percorrida como a partícula pai se move
+- Em Hit - As partículas pai precisam implementar *Collision Updater*. As partículas de crianças são geradas quando uma partícula pai atinge a superfície.
+- Vida - Partículas de crianças são geradas quando a vida da partícula pai está entre dois limites, A e B, expressos como valores normalizados (0 a 1) ao longo da vida da partícula. Se A < B, o período é 0..(A..B)..1, se B > O período é revertido para (0..B).( A..1).< B, the period is 0..(A..B)..1, if B > Este método é menos preciso do que as condições Sobre o Nascimento \/ Sobre a Morte.
 
-## See also
+## Ver também
 
-* [Create particles](create-particles.md)
+* [Criar partículas](create-particles.md)
 * [Emitters](emitters.md)
-* [Shapes](shapes.md)
-* [Materials](materials.md)
-* [Initializers](initializers.md)
-* [Updaters](updaters.md)
+* [Formas](shapes.md)
+* [Materiais](materials.md)
+* [Iniciantes](initializers.md)
+* [Atualizações](updaters.md)

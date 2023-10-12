@@ -1,63 +1,63 @@
-# Events
+# Eventos
 
-<span class="badge text-bg-primary">Intermediate</span>
-<span class="badge text-bg-success">Programmer</span>
+<x1\/> Intermediário <x2\/>
+<x3\/> Programador <x4\/>
 
-**Events** facilitate communication between scripts. They work one-way, broadcast from **broadcasters** to **receivers**. Events come in two flavors, a non-generic version for basic event broadcasting, and a generic version for when data needs to be passed to receivers.
+**Eventos** facilitam a comunicação entre scripts. Eles trabalham de uma forma, transmitido de **casters** para **receivers**. Eventos vêm em dois sabores, uma versão não-genérica para a transmissão de eventos básicos, e uma versão genérica para quando os dados precisam ser passados para receptores.
 
-For example, imagine your game has a "Game Over" state that occurs when the player dies. To handle this, you can create a "Game Over" event, which is broadcast to all scripts with receivers listening for the event. When the event is broadcast, the receivers run appropriate scripts to handle the Game Over event (eg reset enemies, replace level objects, start a new timer, etc). You can also send information related to the "Game Over" state (eg game stats, who won, etc).
+Por exemplo, imagine seu jogo tem um estado "Game Over" que ocorre quando o jogador morre. Para lidar com isso, você pode criar um evento "Game Over", que é transmitido a todos os scripts com receptores ouvindo para o evento. Quando o evento é transmitido, os receptores executam scripts apropriados para lidar com o evento Game Over (por exemplo, redefinir inimigos, substituir objetos de nível, iniciar um novo temporizador, etc). Você também pode enviar informações relacionadas ao estado "Game Over" (por exemplo, estatísticas de jogo, que ganhou, etc).
 
-> [!Note]
-> Events are handled entirely in scripts. You can't configure them in Game Studio.
+> <x1\/>!Note<x2\/>
+> Os eventos são tratados inteiramente em scripts. Você não pode configurá-los no Game Studio.
 
-## Create and broadcast an event
+## Criar e transmitir um evento
 
-Broadcasters in the Stride API are of type [EventKey](xref:Stride.Engine.Events.EventKey) or [EventKey&lt;T>](xref:Stride.Engine.Events.EventKey`1). They use the method [Broadcast](xref:Stride.Engine.Events.EventKey#Stride_Engine_Events_EventKey_Broadcast) or [Broadcast(T)](xref:Stride.Engine.Events.EventKey`1#Stride_Engine_Events_EventKey_1_Broadcast__0_) to broadcast events to receivers.
+Os transmissores na API Stride são do tipo [EventKey](xref:Stride.Engine.Events.EventKey) ou [EventKey<T>](xref:Stride.Engine.Events.EventKey`1). Eles usam o método [Broadcast](xref:Stride.Engine.Events.EventKey#Stride_Engine_Events_EventKey_Broadcast) ou [Broadcast(T)](xref:Stride.Engine.Events.EventKey`1#Stride_Engine_Events_EventKey_1_Broadcast__0_) para transmitir eventos aos receptores.
 
-For example, this code creates two "Game Over" events. One with a non-generic and the other with a generic version of EventKey:
+Por exemplo, este código cria dois eventos "Game Over". Um com um não-genérico e outro com uma versão genérica do EventKey:
 
 ```cs
-public static class GlobalEvents
-{
-    public static EventKey GameOverEventKey = new EventKey("Global", "Game Over");
-    public static EventKey<string> GameOverWithDataEventKey = new EventKey<string>("Global", "Game Over With Data");
+classe estática pública Global Eventos
+(
+    estática pública Evento Key GameOverEventKey = novo EventKey("Global", "Game Over");
+    estática pública EventKey<string> GameOverWithDataEventKey = novo EventKey<string>("Global", "Game Over With Data");
 
-    public static void SendGameOverEvent()
-    {
+    vazio estático público SendGameOverEvent()
+    (
         GameOverEventKey.Broadcast();
         GameOverWithDataEventKey.Broadcast("Player 1");
     }
 }
 ```
 
-## Create a receiver
+## Criar um receptor
 
-Receivers in the Stride API are of type [EventReceiver](xref:Stride.Engine.Events.EventReceiver) or [EventReceiver&lt;T>](xref:Stride.Engine.Events.EventReceiver`1).
+Os receptores na API Stride são do tipo [EventReceiver](xref:Stride.Engine.Events.EventReceiver) ou [EventReceiver<T>](xref:Stride.Engine.Events.EventReceiver`1).
 
-To receive the "Game Over" events described above, use:
+Para receber os eventos "Game Over" descritos acima, use:
 
 ```cs
-var gameOverListener = new EventReceiver(GlobalEvents.GameOverEventKey);
+jogo de var OverListener = novo EventReceiver (GlobalEvents.GameOverEventKey);
 var gameIsOver = gameOverListener.TryReceive();
 
-var gameOverListenerWithData = new EventReceiver<string>(GlobalEvents.GameOverWithDataEventKey);
-if(gameOverListenerWithData.TryReceive(out string data))
-{
-	//data == "Player 1"
+jogo de var OverListenerWithData = novo EventReceiver<string> (GlobalEvents.GameOverWithDataEventKey);
+if(gameOverListenerWithData.TryReceive (out string data)))
+(
+	- Sim. "Player 1"
 }
 
-//Or in Async
+\/\/Or em Async
 await gameOverListener.ReceiveAsync();
 string asyncData = await gameOverListenerWithData.ReceiveAsync();
-//asyncData == "Player 1"
+\/\/asyncData == "Player 1"
 ```
 
-## See also
+## Ver também
 
-* [Types of script](types-of-script.md)
-* [Create a script](create-a-script.md)
-* [Use a script](use-a-script.md)
-* [Public properties and fields](public-properties-and-fields.md)
-* [Scheduling and priorities](scheduling-and-priorities.md)
-* [Debugging](debugging.md)
-* [Preprocessor variables](preprocessor-variables.md)
+* [Tipos de script](types-of-script.md)
+* [Criar um script](create-a-script.md)
+* [Use um script](use-a-script.md)
+* [Propriedades e campos públicos](public-properties-and-fields.md)
+* [Programação e prioridades](scheduling-and-priorities.md)
+* [Depuração](debugging.md)
+* [Variáveis de pré-processamento](preprocessor-variables.md)

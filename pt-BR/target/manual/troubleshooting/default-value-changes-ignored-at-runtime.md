@@ -1,27 +1,27 @@
-# Default value changes ignored at runtime
+# Mudanças de valor padrão ignoradas no tempo de execução
 
-When you add a script to your project as a component, Game Studio lists its public variables in the Property Grid. These are the values used at runtime.
+Quando você adiciona um script ao seu projeto como componente, o Game Studio lista suas variáveis públicas na Grade de Propriedade. Estes são os valores usados no tempo de execução.
 
-However, if you then change the default value in the script, Game Studio doesn't update the component with the new value.
+No entanto, se você alterar o valor padrão no script, o Game Studio não atualiza o componente com o novo valor.
 
-For example, imagine you have a script with the variable `SpeedFactor` with a default value of `5.0f`. You add the script to the project as a component. Now, in the script, you change the default value of the `SpeedFactor` variable to `6.0f`, save the script, and run the project. Game Studio doesn't update the component with the script changes, so the speed `SpeedFactor` value is still `5.0f`.
+Por exemplo, imagine que você tenha um script com a variável `SpeedFactor` com um valor padrão de `5.0f`. Você adiciona o script ao projeto como um componente. Agora, no script, você muda o valor padrão da variável `SpeedFactor` para `6.0f`, salve o script e execute o projeto. Game Studio não atualiza o componente com as alterações do script, então a velocidade `SpeedFactor` valor ainda é `5.0f`.
 
-## Fix
+## Fixação
 
-In your project, delete and re-add the script component.
+No seu projeto, exclua e re-adicione o componente de script.
 
-Alternatively, if you want Game Studio to update the values in the component properties after you change them in the script, you can do this with additional code. You need to add a new line of code for every property you want this to apply to.
+Alternativamente, se você quiser que o Game Studio atualize os valores nas propriedades do componente depois de alterá-los no script, você pode fazer isso com código adicional. Você precisa adicionar uma nova linha de código para cada propriedade que você deseja que isso se aplique.
 
-1. Add `using System.ComponentModel` at the top of the script.
+1. Adicionar `usando System.ComponentModel` na parte superior do script.
 
-2. Above the variable you want to update, add ``[DefaultValue()]``. For example, if the variable is `SpeedFactor`, use:
+2. Acima da variável que você deseja atualizar, adicione ``[DefaultValue()]``. Por exemplo, se a variável for `SpeedFactor`, use:
 
 ```cs
-[DefaultValue(6.0f)]
-public float SpeedFactor { get; set; } = 6.0f;
+[Valor padrão (6,0f)]
+float público SpeedFactor { get; set; } = 6.0f;
 ```
 
-When you change the value, update both the `SpeedFactor` and the `DefaultValue` to the same value.
+Quando você alterar o valor, atualize tanto o `SpeedFactor` e o `DefaultValue` para o mesmo valor.
 
-> [!Note]
-> This doesn't work in both directions. If you set a value other than the `DefaultValue` in the Property Grid, Game Studio saves the value in the asset and overrides the default value at runtime.
+> <x1\/>!Note<x2\/>
+> Isto não funciona em ambas as direções. Se você definir um valor diferente do `DefaultValue` no Property Grid, Game Studio salva o valor no ativo e substitui o valor padrão no tempo de execução.

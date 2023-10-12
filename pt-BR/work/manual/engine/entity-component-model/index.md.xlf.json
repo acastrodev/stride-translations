@@ -1,163 +1,163 @@
 {
-    "filename": "manual\\engine\\entity-component-model\\index.md.xlf",
-    "files": [
-        {
-            "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/index.md": [
-                [
-                    "Entity-Component Model",
-                    "",
-                    "Entity-Component Model",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/index.md",
-                    {
-                        "id": "tu1"
-                    }
-                ],
-                [
-                    "[!INCLUDE <g1>stride-studio-note<\/g1>]",
-                    "",
-                    "[!INCLUDE <g1>stride-studio-note<\/g1>]",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/index.md",
-                    {
-                        "id": "tu2"
-                    }
-                ],
-                [
-                    "Overview",
-                    "",
-                    "Overview",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/index.md",
-                    {
-                        "id": "tu3"
-                    }
-                ],
-                [
-                    "@'Stride.Engine.Entity' is the base class for objects that are managed by the high-level engine.",
-                    "",
-                    "@'Stride.Engine.Entity' is the base class for objects that are managed by the high-level engine.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/index.md",
-                    {
-                        "id": "tu4"
-                    }
-                ],
-                [
-                    "To improve flexibility, entity are component-based: they can contains as many components as required, containing data and\/or logic.",
-                    "",
-                    "To improve flexibility, entity are component-based: they can contains as many components as required, containing data and\/or logic.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/index.md",
-                    {
-                        "id": "tu5"
-                    }
-                ],
-                [
-                    "<x1\/>media\/7438980.png<x2\/>",
-                    "",
-                    "<x1\/>media\/7438980.png<x2\/>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/index.md",
-                    {
-                        "id": "tu6"
-                    }
-                ],
-                [
-                    "A @'Stride.Engine.Entitycomponent' is tied to its entity (that is, one component can't be added to two entities at the same time).",
-                    "",
-                    "A @'Stride.Engine.Entitycomponent' is tied to its entity (that is, one component can't be added to two entities at the same time).",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/index.md",
-                    {
-                        "id": "tu7"
-                    }
-                ],
-                [
-                    "How to create an entity and some components",
-                    "",
-                    "How to create an entity and some components",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/index.md",
-                    {
-                        "id": "tu8"
-                    }
-                ],
-                [
-                    "\/\/ Create entity",
-                    "",
-                    "\/\/ Create entity\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/index.md",
-                    {
-                        "id": "tu9"
-                    }
-                ],
-                [
-                    "var myEntity = new Entity();",
-                    "",
-                    "var myEntity = new Entity();\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/index.md",
-                    {
-                        "id": "tu9"
-                    }
-                ],
-                [
-                    "\/\/ Create a model component (so that model is rendered)",
-                    "",
-                    " \r\n\/\/ Create a model component (so that model is rendered)\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/index.md",
-                    {
-                        "id": "tu9"
-                    }
-                ],
-                [
-                    "var modelComponent = new ModelComponent { Model = model };",
-                    "",
-                    "var modelComponent = new ModelComponent { Model = model };\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/index.md",
-                    {
-                        "id": "tu9"
-                    }
-                ],
-                [
-                    "myEntity.Set(ModelComponent.Key, modelComponent);",
-                    "",
-                    "myEntity.Set(ModelComponent.Key, modelComponent);\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/index.md",
-                    {
-                        "id": "tu9"
-                    }
-                ],
-                [
-                    "\/\/ Set entity position",
-                    "",
-                    "\r\n\/\/ Set entity position\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/index.md",
-                    {
-                        "id": "tu9"
-                    }
-                ],
-                [
-                    "myEntity.Transformation.Translation = new Vector3(100.0f, 100.0f, 0.0f);",
-                    "",
-                    "myEntity.Transformation.Translation = new Vector3(100.0f, 100.0f, 0.0f);\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/index.md",
-                    {
-                        "id": "tu9"
-                    }
-                ],
-                [
-                    "\/\/ Add entity to scene; from now on its model will be rendered",
-                    "",
-                    " \r\n\/\/ Add entity to scene; from now on its model will be rendered\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/index.md",
-                    {
-                        "id": "tu9"
-                    }
-                ],
-                [
-                    "Entities.Add(myEntity);",
-                    "",
-                    "Entities.Add(myEntity);\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/index.md",
-                    {
-                        "id": "tu9"
-                    }
-                ]
-            ]
-        }
-    ],
-    "seg_enabled": false
+  "filename": "manual\\engine\\entity-component-model\\index.md.xlf",
+  "files": [
+    {
+      "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/engine\\/entity-component-model\\/index.md": [
+        [
+          "Entity-Component Model",
+          "Modelo de Entidade-Componente",
+          "Entity-Component Model",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/engine\\/entity-component-model\\/index.md",
+          {
+            "id": "tu1"
+          }
+        ],
+        [
+          "[!INCLUDE <g1>stride-studio-note<\\/g1>]",
+          "[! INCLUÍDO <g1>stride-studio-note<\\/g1>]",
+          "[!INCLUDE <g1>stride-studio-note<\\/g1>]",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/engine\\/entity-component-model\\/index.md",
+          {
+            "id": "tu2"
+          }
+        ],
+        [
+          "Overview",
+          "Visão geral",
+          "Overview",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/engine\\/entity-component-model\\/index.md",
+          {
+            "id": "tu3"
+          }
+        ],
+        [
+          "@'Stride.Engine.Entity' is the base class for objects that are managed by the high-level engine.",
+          "@'Stride.Engine.Entity' é a classe base para objetos que são gerenciados pelo motor de alto nível.",
+          "@'Stride.Engine.Entity' is the base class for objects that are managed by the high-level engine.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/engine\\/entity-component-model\\/index.md",
+          {
+            "id": "tu4"
+          }
+        ],
+        [
+          "To improve flexibility, entity are component-based: they can contains as many components as required, containing data and\\/or logic.",
+          "Para melhorar a flexibilidade, a entidade é baseada em componentes: pode conter tantos componentes conforme necessário, contendo dados e\\/ou lógica.",
+          "To improve flexibility, entity are component-based: they can contains as many components as required, containing data and\\/or logic.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/engine\\/entity-component-model\\/index.md",
+          {
+            "id": "tu5"
+          }
+        ],
+        [
+          "<x1\\/>media\\/7438980.png<x2\\/>",
+          "<x1\\/>media\\/7438980.png<x2\\/>",
+          "<x1\\/>media\\/7438980.png<x2\\/>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/engine\\/entity-component-model\\/index.md",
+          {
+            "id": "tu6"
+          }
+        ],
+        [
+          "A @'Stride.Engine.Entitycomponent' is tied to its entity (that is, one component can't be added to two entities at the same time).",
+          "A @'Stride.Engine.Entitycomponent' está ligada à sua entidade (ou seja, um componente não pode ser adicionado a duas entidades ao mesmo tempo).",
+          "A @'Stride.Engine.Entitycomponent' is tied to its entity (that is, one component can't be added to two entities at the same time).",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/engine\\/entity-component-model\\/index.md",
+          {
+            "id": "tu7"
+          }
+        ],
+        [
+          "How to create an entity and some components",
+          "Como criar uma entidade e alguns componentes",
+          "How to create an entity and some components",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/engine\\/entity-component-model\\/index.md",
+          {
+            "id": "tu8"
+          }
+        ],
+        [
+          "\\/\\/ Create entity",
+          "\\/\\/ Criar entidade",
+          "\\/\\/ Create entity\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/engine\\/entity-component-model\\/index.md",
+          {
+            "id": "tu9"
+          }
+        ],
+        [
+          "var myEntity = new Entity();",
+          "var myEntity = novo Entity();",
+          "var myEntity = new Entity();\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/engine\\/entity-component-model\\/index.md",
+          {
+            "id": "tu9"
+          }
+        ],
+        [
+          "\\/\\/ Create a model component (so that model is rendered)",
+          "\\/\\/ Criar um componente modelo (para que o modelo seja renderizado)",
+          " \r\n\\/\\/ Create a model component (so that model is rendered)\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/engine\\/entity-component-model\\/index.md",
+          {
+            "id": "tu9"
+          }
+        ],
+        [
+          "var modelComponent = new ModelComponent { Model = model };",
+          "modelo de var Componente = novo ModelComponent { Model = model };",
+          "var modelComponent = new ModelComponent { Model = model };\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/engine\\/entity-component-model\\/index.md",
+          {
+            "id": "tu9"
+          }
+        ],
+        [
+          "myEntity.Set(ModelComponent.Key, modelComponent);",
+          "myEntity. Set(ModelComponent. Key, modelComponent);",
+          "myEntity.Set(ModelComponent.Key, modelComponent);\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/engine\\/entity-component-model\\/index.md",
+          {
+            "id": "tu9"
+          }
+        ],
+        [
+          "\\/\\/ Set entity position",
+          "\\/\\/ Definir posição da entidade",
+          "\r\n\\/\\/ Set entity position\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/engine\\/entity-component-model\\/index.md",
+          {
+            "id": "tu9"
+          }
+        ],
+        [
+          "myEntity.Transformation.Translation = new Vector3(100.0f, 100.0f, 0.0f);",
+          "myEntity.Transformation.Translation = new Vector3(100.0f, 100.0f, 0,0f);",
+          "myEntity.Transformation.Translation = new Vector3(100.0f, 100.0f, 0.0f);\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/engine\\/entity-component-model\\/index.md",
+          {
+            "id": "tu9"
+          }
+        ],
+        [
+          "\\/\\/ Add entity to scene; from now on its model will be rendered",
+          "\\/\\/ Adicionar entidade à cena; a partir de agora em seu modelo será renderizado",
+          " \r\n\\/\\/ Add entity to scene; from now on its model will be rendered\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/engine\\/entity-component-model\\/index.md",
+          {
+            "id": "tu9"
+          }
+        ],
+        [
+          "Entities.Add(myEntity);",
+          "Entities.Add (myEntity);",
+          "Entities.Add(myEntity);\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/engine\\/entity-component-model\\/index.md",
+          {
+            "id": "tu9"
+          }
+        ]
+      ]
+    }
+  ],
+  "seg_enabled": false
 }

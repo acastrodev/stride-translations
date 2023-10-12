@@ -3,65 +3,65 @@
 <body>
 <trans-unit id="tu1" xml:space="preserve">
 <source xml:lang="en">Low-level API</source>
-<target xml:lang="pt">Low-level API</target>
+<target xml:lang="pt">API de baixo nível</target>
 </trans-unit>
 <trans-unit id="tu2" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Advanced<x id="2"/>
 <x id="3"/>Programmer<x id="4"/></source>
-<target xml:lang="pt"><x id="1"/>Advanced<x id="2"/>
-<x id="3"/>Programmer<x id="4"/></target>
+<target xml:lang="pt">&lt;x1\/&gt; Avançado &lt;x2\/&gt;
+&lt;x3\/&gt; Programador &lt;x4\/&gt;</target>
 </trans-unit>
 <trans-unit id="tu3" xml:space="preserve">
 <source xml:lang="en">The @'Stride.Graphics.GraphicsDevice' class is the central class for displaying your game. It's used to create resources and present images on the screen. You can access it as a member of the @'Stride.Engine.Game' and @'Stride.Engine.ScriptComponent' classes.</source>
-<target xml:lang="pt">The @'Stride.Graphics.GraphicsDevice' class is the central class for displaying your game. It's used to create resources and present images on the screen. You can access it as a member of the @'Stride.Engine.Game' and @'Stride.Engine.ScriptComponent' classes.</target>
+<target xml:lang="pt">A classe @'Stride.Graphics.GraphicsDevice é a classe central para exibir seu jogo. É usado para criar recursos e apresentar imagens na tela. Você pode acessá-lo como um membro do @'Stride. Engine.Game' e @'Stride.Engine.ScriptComponent' classes.</target>
 </trans-unit>
 <trans-unit id="tu4" xml:space="preserve">
 <source xml:lang="en">Actions such as drawing, setting graphics states and using resources are recorded using @'Stride.Graphics.CommandList' objects for later execution by the device.</source>
-<target xml:lang="pt">Actions such as drawing, setting graphics states and using resources are recorded using @'Stride.Graphics.CommandList' objects for later execution by the device.</target>
+<target xml:lang="pt">Ações como desenho, definição de estados gráficos e utilização de recursos são gravadas usando objetos @'Stride.Graphics.CommandList para posterior execução pelo dispositivo.</target>
 </trans-unit>
 <trans-unit id="tu5" xml:space="preserve">
 <source xml:lang="en">Many command lists can be filled at the same time (eg one per thread). A default command list is available as member of the @'Stride.Games.GameBase.GraphicsContext' of your @'Stride.Engine.Game'.</source>
-<target xml:lang="pt">Many command lists can be filled at the same time (eg one per thread). A default command list is available as member of the @'Stride.Games.GameBase.GraphicsContext' of your @'Stride.Engine.Game'.</target>
+<target xml:lang="pt">Muitas listas de comando podem ser preenchidas ao mesmo tempo (por exemplo, uma por linha). Uma lista de comandos padrão está disponível como membro do @'Stride.Games.GameBase.GraphicsContext' do seu @'Stride. Motor. Jogo.</target>
 </trans-unit>
 <trans-unit id="tu6" xml:space="preserve">
 <source xml:lang="en">In methods, these objects are typically provided through contexts such as @'Stride.Rendering.RenderContext' and @'Stride.Rendering.RenderDrawContext'.</source>
-<target xml:lang="pt">In methods, these objects are typically provided through contexts such as @'Stride.Rendering.RenderContext' and @'Stride.Rendering.RenderDrawContext'.</target>
+<target xml:lang="pt">Em métodos, esses objetos são normalmente fornecidos através de contextos como @'Stride. Renderização. RenderContext' e @'Stride.Rendering.RenderDrawContext'.</target>
 </trans-unit>
 <trans-unit id="tu7" xml:space="preserve">
 <source xml:lang="en">Performing any drawing requires multiple steps, including:</source>
-<target xml:lang="pt">Performing any drawing requires multiple steps, including:</target>
+<target xml:lang="pt">Executar qualquer desenho requer vários passos, incluindo:</target>
 </trans-unit>
 <trans-unit id="tu8" xml:space="preserve">
 <source xml:lang="en">setting textures as <g id="1">render textures</g>, clearing them, and setting viewports and scissors</source>
-<target xml:lang="pt">setting textures as <g id="1">render textures</g>, clearing them, and setting viewports and scissors</target>
+<target xml:lang="pt">definindo texturas como <g id="1">render texturas</g>, clarificá-las e definir viewports e tesouras</target>
 </trans-unit>
 <trans-unit id="tu9" xml:space="preserve">
 <source xml:lang="en">setting up the graphics <g id="1">pipeline state</g>, including input description, shaders, depth-stencil, blending, rasterizer, etc</source>
-<target xml:lang="pt">setting up the graphics <g id="1">pipeline state</g>, including input description, shaders, depth-stencil, blending, rasterizer, etc</target>
+<target xml:lang="pt">configurando os gráficos <g id="1">pipeline state</g>, incluindo descrição de entrada, shaders, profundidade-stencil, mistura, rasterizer, etc</target>
 </trans-unit>
 <trans-unit id="tu10" xml:space="preserve">
 <source xml:lang="en">binding <g id="1">resources</g>, such as constant buffers and textures</source>
-<target xml:lang="pt">binding <g id="1">resources</g>, such as constant buffers and textures</target>
+<target xml:lang="pt">vinculação <g id="1">recursos</g>, como amortecedores e texturas constantes</target>
 </trans-unit>
 <trans-unit id="tu11" xml:space="preserve">
 <source xml:lang="en"><g id="1">drawing vertices</g> using built-in primitives or custom vertex buffers</source>
-<target xml:lang="pt"><g id="1">drawing vertices</g> using built-in primitives or custom vertex buffers</target>
+<target xml:lang="pt"><g id="1"> desenho vértices</g> usando primitivos incorporados ou tampões de vértice personalizados</target>
 </trans-unit>
 <trans-unit id="tu12" xml:space="preserve">
 <source xml:lang="en">In this section</source>
-<target xml:lang="pt">In this section</target>
+<target xml:lang="pt">Nesta secção</target>
 </trans-unit>
 <trans-unit id="tu13" xml:space="preserve">
 <source xml:lang="en"><g id="1">Draw vertices</g></source>
-<target xml:lang="pt"><g id="1">Draw vertices</g></target>
+<target xml:lang="pt"><g id="1">Desenho vértices</g></target>
 </trans-unit>
 <trans-unit id="tu14" xml:space="preserve">
 <source xml:lang="en"><g id="1">Pipeline state</g></source>
-<target xml:lang="pt"><g id="1">Pipeline state</g></target>
+<target xml:lang="pt"><g id="1">Estado da tubulação</g></target>
 </trans-unit>
 <trans-unit id="tu15" xml:space="preserve">
 <source xml:lang="en"><g id="1">Resources</g></source>
-<target xml:lang="pt"><g id="1">Resources</g></target>
+<target xml:lang="pt"><g id="1">Recursos</g></target>
 </trans-unit>
 <trans-unit id="tu16" xml:space="preserve">
 <source xml:lang="en"><g id="1">SpriteBatch</g></source>
@@ -69,11 +69,11 @@
 </trans-unit>
 <trans-unit id="tu17" xml:space="preserve">
 <source xml:lang="en"><g id="1">SpriteFont</g></source>
-<target xml:lang="pt"><g id="1">SpriteFont</g></target>
+<target xml:lang="pt"><g id="1">SpriteFonte</g></target>
 </trans-unit>
 <trans-unit id="tu18" xml:space="preserve">
 <source xml:lang="en"><g id="1">Textures and render textures</g></source>
-<target xml:lang="pt"><g id="1">Textures and render textures</g></target>
+<target xml:lang="pt"><g id="1">Texturas e texturas de renderização</g></target>
 </trans-unit>
 </body>
 </file>

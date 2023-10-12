@@ -3,15 +3,15 @@
 <body>
 <trans-unit id="tu1" xml:space="preserve">
 <source xml:lang="en">Set up a video</source>
-<target xml:lang="pt">Set up a video</target>
+<target xml:lang="pt">Configurar um vídeo</target>
 </trans-unit>
 <trans-unit id="tu2" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Beginner<x id="2"/>
 <x id="3"/>Programmer<x id="4"/>
 <x id="5"/>Designer<x id="6"/></source>
-<target xml:lang="pt"><x id="1"/>Beginner<x id="2"/>
-<x id="3"/>Programmer<x id="4"/>
-<x id="5"/>Designer<x id="6"/></target>
+<target xml:lang="pt">&lt;x1\/&gt;Introdução&lt;x2\/&gt;
+&lt;x3\/&gt; Programador &lt;x4\/&gt;
+&lt;x5\/&gt;Designer&lt;x6\/&gt;</target>
 </trans-unit>
 <group id="sd1_ssf7" resname="sub-filter:sd1">
 <trans-unit id="sd1_sf7_tu1" resname="sd1_1" restype="x-paragraph" xml:space="preserve">
@@ -24,126 +24,126 @@
 <trans-unit id="tu3" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>!Note<x id="2"/>
 Stride supports most major video formats, but converts them to <g id="3">.mp4</g>. To reduce compilation time, we recommend you use <g id="4">.mp4</g> files so Stride doesn't have to convert them.</source>
-<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
-Stride supports most major video formats, but converts them to <g id="3">.mp4</g>. To reduce compilation time, we recommend you use <g id="4">.mp4</g> files so Stride doesn't have to convert them.</target>
+<target xml:lang="pt">&lt;x1\/&gt;!Note&lt;x2\/&gt;
+Stride suporta a maioria dos principais formatos de vídeo, mas os converte em <g id="3">.mp4</g>. Para reduzir o tempo de compilação, recomendamos que você use arquivos <g id="4">.mp4</g> para que Stride não precise convertê-los.</target>
 </trans-unit>
 <trans-unit id="tu4" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>!Note<x id="2"/>
 Currently, Stride doesn't support video on iOS platforms.</source>
-<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
-Currently, Stride doesn't support video on iOS platforms.</target>
+<target xml:lang="pt">&lt;x1\/&gt;!Note&lt;x2\/&gt;
+Atualmente, Stride não suporta vídeo em plataformas iOS.</target>
 </trans-unit>
 <trans-unit id="tu5" xml:space="preserve">
 <source xml:lang="en">1. Add a video asset</source>
-<target xml:lang="pt">1. Add a video asset</target>
+<target xml:lang="pt">1. Adicionar um ativo de vídeo</target>
 </trans-unit>
 <trans-unit id="tu6" xml:space="preserve">
 <source xml:lang="en">Before you can use a video in your game, you need to import it as an <g id="1">asset</g>.</source>
-<target xml:lang="pt">Before you can use a video in your game, you need to import it as an <g id="1">asset</g>.</target>
+<target xml:lang="pt">Antes que você possa usar um vídeo em seu jogo, você precisa importá-lo como um <g id="1">asset</g>.</target>
 </trans-unit>
 <trans-unit id="tu7" xml:space="preserve">
 <source xml:lang="en">Drag the video file from <g id="1">Explorer</g> into the <g id="2">Asset View</g>.</source>
-<target xml:lang="pt">Drag the video file from <g id="1">Explorer</g> into the <g id="2">Asset View</g>.</target>
+<target xml:lang="pt">Arraste o arquivo de vídeo de <g id="1">Explorer</g> no <g id="2">Asset View</g>.</target>
 </trans-unit>
 <trans-unit id="tu8" xml:space="preserve">
 <source xml:lang="en">Alternatively, in the <g id="1">Asset View</g>, click <g id="2">Add asset</g> and select <g id="3">Media &gt; Video</g>, then browse to the video you want to add and click <g id="4">Open</g>.</source>
-<target xml:lang="pt">Alternatively, in the <g id="1">Asset View</g>, click <g id="2">Add asset</g> and select <g id="3">Media &gt; Video</g>, then browse to the video you want to add and click <g id="4">Open</g>.</target>
+<target xml:lang="pt">Alternativamente, no <g id="1">Asset View</g>, clique em <g id="2">Adicionar asset</g> e selecione <g id="3">Media &gt; Vídeo</g>, então procure o vídeo que deseja adicionar e clique em <g id="4">Open</g>.</target>
 </trans-unit>
 <trans-unit id="tu9" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Add video asset<x id="2"/></source>
-<target xml:lang="pt"><x id="1"/>Add video asset<x id="2"/></target>
+<target xml:lang="pt">&lt;x1\/&gt; Adicionar vídeo asset&lt;x2\/&gt;</target>
 </trans-unit>
 <trans-unit id="tu10" xml:space="preserve">
 <source xml:lang="en">If the video has audio tracks, you can import these at the same time, or import just the audio from the video.</source>
-<target xml:lang="pt">If the video has audio tracks, you can import these at the same time, or import just the audio from the video.</target>
+<target xml:lang="pt">Se o vídeo tem faixas de áudio, você pode importá-las ao mesmo tempo, ou importar apenas o áudio do vídeo.</target>
 </trans-unit>
 <trans-unit id="tu11" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Import video<x id="2"/></source>
-<target xml:lang="pt"><x id="1"/>Import video<x id="2"/></target>
+<target xml:lang="pt">&lt;x1\/&gt;Import vídeo&lt;x2\/&gt;</target>
 </trans-unit>
 <trans-unit id="tu12" xml:space="preserve">
 <source xml:lang="en">Click <g id="1">OK</g>.</source>
-<target xml:lang="pt">Click <g id="1">OK</g>.</target>
+<target xml:lang="pt">Clique em <g id="1">OK</g>.</target>
 </trans-unit>
 <trans-unit id="tu13" xml:space="preserve">
 <source xml:lang="en">Stride adds the video as an asset in the <g id="1">Asset View</g>. If you imported audio tracks from the video file, Stride adds them as separate <g id="2">audio assets</g>.</source>
-<target xml:lang="pt">Stride adds the video as an asset in the <g id="1">Asset View</g>. If you imported audio tracks from the video file, Stride adds them as separate <g id="2">audio assets</g>.</target>
+<target xml:lang="pt">Stride adiciona o vídeo como um ativo no <g id="1">Asset View</g>. Se você importou faixas de áudio do arquivo de vídeo, Stride os adiciona como ativos separados <g id="2">audio</g>.</target>
 </trans-unit>
 <trans-unit id="tu14" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Video and audio assets<x id="2"/></source>
-<target xml:lang="pt"><x id="1"/>Video and audio assets<x id="2"/></target>
+<target xml:lang="pt">&lt;x1\/&gt; Activos de vídeo e áudio&lt;x2\/&gt;</target>
 </trans-unit>
 <trans-unit id="tu15" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>!Note<x id="2"/>
 Currently, you can't preview videos in the Asset Preview.</source>
-<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
-Currently, you can't preview videos in the Asset Preview.</target>
+<target xml:lang="pt">&lt;x1\/&gt;!Note&lt;x2\/&gt;
+Atualmente, você não pode visualizar vídeos no Asset Preview.</target>
 </trans-unit>
 <trans-unit id="tu16" xml:space="preserve">
 <source xml:lang="en">For information about video asset properties, see <g id="1">Video properties</g>.</source>
-<target xml:lang="pt">For information about video asset properties, see <g id="1">Video properties</g>.</target>
+<target xml:lang="pt">Para obter informações sobre propriedades de ativos de vídeo, consulte <g id="1"> Propriedades de vídeo</g>.</target>
 </trans-unit>
 <trans-unit id="tu17" xml:space="preserve">
 <source xml:lang="en">2. Add a video component</source>
-<target xml:lang="pt">2. Add a video component</target>
+<target xml:lang="pt">2. Adicionar um componente de vídeo</target>
 </trans-unit>
 <trans-unit id="tu18" xml:space="preserve">
 <source xml:lang="en">In the <g id="1">Scene Editor</g>, select or create an entity to add a video component to.</source>
-<target xml:lang="pt">In the <g id="1">Scene Editor</g>, select or create an entity to add a video component to.</target>
+<target xml:lang="pt">No <g id="1">Scene Editor</g>, selecione ou crie uma entidade para adicionar um componente de vídeo.</target>
 </trans-unit>
 <trans-unit id="tu19" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>!Tip<x id="2"/>
 It's usually simplest to add the component to the same entity that has the texture plays the video. This just makes it easier to organize your scene.</source>
-<target xml:lang="pt"><x id="1"/>!Tip<x id="2"/>
-It's usually simplest to add the component to the same entity that has the texture plays the video. This just makes it easier to organize your scene.</target>
+<target xml:lang="pt">&lt;x1\/&gt;!Tip&lt;x2\/&gt;
+É geralmente mais simples adicionar o componente à mesma entidade que tem a textura reproduz o vídeo. Isso torna mais fácil organizar sua cena.</target>
 </trans-unit>
 <trans-unit id="tu20" xml:space="preserve">
 <source xml:lang="en">In the <g id="1">Property Grid</g>, click <g id="2">Add component</g> and select <g id="3">Video</g>.</source>
-<target xml:lang="pt">In the <g id="1">Property Grid</g>, click <g id="2">Add component</g> and select <g id="3">Video</g>.</target>
+<target xml:lang="pt">No <g id="1">Property Grid</g>, clique em <g id="2">Add component</g> e selecione <g id="3">Video</g>.</target>
 </trans-unit>
 <trans-unit id="tu21" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Add video component<x id="2"/></source>
-<target xml:lang="pt"><x id="1"/>Add video component<x id="2"/></target>
+<target xml:lang="pt">&lt;x1\/&gt; Adicionar componente de vídeo&lt;x2\/&gt;</target>
 </trans-unit>
 <trans-unit id="tu22" xml:space="preserve">
 <source xml:lang="en">Stride adds a <g id="1">video component</g> to the entity.</source>
-<target xml:lang="pt">Stride adds a <g id="1">video component</g> to the entity.</target>
+<target xml:lang="pt">Stride adiciona um componente <g id="1">video</g> à entidade.</target>
 </trans-unit>
 <trans-unit id="tu23" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Video component<x id="2"/></source>
-<target xml:lang="pt"><x id="1"/>Video component<x id="2"/></target>
+<target xml:lang="pt">&lt;x1\/&gt; Componente de vídeo&lt;x2\/&gt;</target>
 </trans-unit>
 <trans-unit id="tu24" xml:space="preserve">
 <source xml:lang="en">In the <g id="1">Video</g> properties, under <g id="2">Source</g>, select the video asset.</source>
-<target xml:lang="pt">In the <g id="1">Video</g> properties, under <g id="2">Source</g>, select the video asset.</target>
+<target xml:lang="pt">Nas propriedades <g id="1">Video</g>, abaixo de <g id="2">Fonte</g>, selecione o ativo de vídeo.</target>
 </trans-unit>
 <trans-unit id="tu25" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Video source<x id="2"/></source>
-<target xml:lang="pt"><x id="1"/>Video source<x id="2"/></target>
+<target xml:lang="pt">&lt;x1\/&gt; Fonte de vídeo &lt;x2\/&gt;</target>
 </trans-unit>
 <trans-unit id="tu26" xml:space="preserve">
 <source xml:lang="en">Under <g id="1">Target</g>, select the texture you want to display the video from.</source>
-<target xml:lang="pt">Under <g id="1">Target</g>, select the texture you want to display the video from.</target>
+<target xml:lang="pt">Em <g id="1">Target</g>, selecione a textura que deseja exibir o vídeo.</target>
 </trans-unit>
 <trans-unit id="tu27" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Video target<x id="2"/></source>
-<target xml:lang="pt"><x id="1"/>Video target<x id="2"/></target>
+<target xml:lang="pt">&lt;x1\/&gt;Vídeo &lt;x2\/&gt;</target>
 </trans-unit>
 <trans-unit id="tu28" xml:space="preserve">
 <source xml:lang="en">Models that use this texture will display the video.</source>
-<target xml:lang="pt">Models that use this texture will display the video.</target>
+<target xml:lang="pt">Os modelos que usam esta textura exibirão o vídeo.</target>
 </trans-unit>
 <trans-unit id="tu29" xml:space="preserve">
 <source xml:lang="en">When the video isn't playing in your scene, Stride displays the texture instead.</source>
-<target xml:lang="pt">When the video isn't playing in your scene, Stride displays the texture instead.</target>
+<target xml:lang="pt">Quando o vídeo não está tocando em sua cena, Stride exibe a textura em vez.</target>
 </trans-unit>
 <trans-unit id="tu30" xml:space="preserve">
 <source xml:lang="en">3. Create a script to play the video</source>
-<target xml:lang="pt">3. Create a script to play the video</target>
+<target xml:lang="pt">3. Criar um script para reproduzir o vídeo</target>
 </trans-unit>
 <trans-unit id="tu31" xml:space="preserve">
 <source xml:lang="en">After you set up the video component, play it from a <g id="1">script</g> using:</source>
-<target xml:lang="pt">After you set up the video component, play it from a <g id="1">script</g> using:</target>
+<target xml:lang="pt">Depois de configurar o componente de vídeo, jogue-o a partir de um <g id="1">script</g> usando:</target>
 </trans-unit>
 <trans-unit id="tu32" xml:space="preserve">
 <source xml:lang="en">myVideoComponent.Instance.Play();
@@ -153,51 +153,51 @@ It's usually simplest to add the component to the same entity that has the textu
 </trans-unit>
 <trans-unit id="tu33" xml:space="preserve">
 <source xml:lang="en">Other functions</source>
-<target xml:lang="pt">Other functions</target>
+<target xml:lang="pt">Outras funções</target>
 </trans-unit>
 <trans-unit id="tu34" xml:space="preserve">
 <source xml:lang="en"><g id="1">LoopRange</g>: The looping range (must be an area in the video in <g id="2">PlayRange</g>)</source>
-<target xml:lang="pt"><g id="1">LoopRange</g>: The looping range (must be an area in the video in <g id="2">PlayRange</g>)</target>
+<target xml:lang="pt"><g id="1">LoopRange</g>: O intervalo de loop (deve ser uma área no vídeo em <g id="2">PlayRange</g>)</target>
 </trans-unit>
 <trans-unit id="tu35" xml:space="preserve">
 <source xml:lang="en"><g id="1">IsLooping</g>: Loop the video loop infinitely</source>
-<target xml:lang="pt"><g id="1">IsLooping</g>: Loop the video loop infinitely</target>
+<target xml:lang="pt"><g id="1">IsLooping</g>: Loop o loop de vídeo infinitamente</target>
 </trans-unit>
 <trans-unit id="tu36" xml:space="preserve">
 <source xml:lang="en"><g id="1">SpeedFactor</g>: Set the video play speed. <g id="2">1</g> is normal speed.</source>
-<target xml:lang="pt"><g id="1">SpeedFactor</g>: Set the video play speed. <g id="2">1</g> is normal speed.</target>
+<target xml:lang="pt"><g id="1">Factor </g>: Defina a velocidade de reprodução de vídeo. <g id="2">1</g> é velocidade normal.</target>
 </trans-unit>
 <trans-unit id="tu37" xml:space="preserve">
 <source xml:lang="en"><g id="1">PlayState</g>: The current video play state (<g id="2">playing</g>, <g id="3">paused</g> or <g id="4">stopped</g>)</source>
-<target xml:lang="pt"><g id="1">PlayState</g>: The current video play state (<g id="2">playing</g>, <g id="3">paused</g> or <g id="4">stopped</g>)</target>
+<target xml:lang="pt"><g id="1">PlayState</g>: O estado atual de reprodução de vídeo (<g id="2">playing</g>, <g id="3">paused</g> ou <g id="4">stopped</g>)</target>
 </trans-unit>
 <trans-unit id="tu38" xml:space="preserve">
 <source xml:lang="en"><g id="1">Duration</g>: The duration of the video</source>
-<target xml:lang="pt"><g id="1">Duration</g>: The duration of the video</target>
+<target xml:lang="pt"><g id="1">Duração</g>: A duração do vídeo</target>
 </trans-unit>
 <trans-unit id="tu39" xml:space="preserve">
 <source xml:lang="en"><g id="1">CurrentTime</g>: The current play time in the video</source>
-<target xml:lang="pt"><g id="1">CurrentTime</g>: The current play time in the video</target>
+<target xml:lang="pt"><g id="1">CurrentTime</g>: O tempo de jogo atual no vídeo</target>
 </trans-unit>
 <trans-unit id="tu40" xml:space="preserve">
 <source xml:lang="en"><g id="1">Volume</g>: The audio volume</source>
-<target xml:lang="pt"><g id="1">Volume</g>: The audio volume</target>
+<target xml:lang="pt"><g id="1">Volume</g>: O volume de áudio</target>
 </trans-unit>
 <trans-unit id="tu41" xml:space="preserve">
 <source xml:lang="en"><g id="1">PlayRange</g>: The video start and end time</source>
-<target xml:lang="pt"><g id="1">PlayRange</g>: The video start and end time</target>
+<target xml:lang="pt"><g id="1">PlayRange</g>: O início e o fim do vídeo</target>
 </trans-unit>
 <trans-unit id="tu42" xml:space="preserve">
 <source xml:lang="en"><g id="1">Play/Pause/Stop</g>: Play, pause, or stop the video</source>
-<target xml:lang="pt"><g id="1">Play/Pause/Stop</g>: Play, pause, or stop the video</target>
+<target xml:lang="pt"><g id="1">Play\/Pause\/Stop</g>: Jogar, pausar ou parar o vídeo</target>
 </trans-unit>
 <trans-unit id="tu43" xml:space="preserve">
 <source xml:lang="en"><g id="1">Seek</g>: Seek to a given time</source>
-<target xml:lang="pt"><g id="1">Seek</g>: Seek to a given time</target>
+<target xml:lang="pt"><g id="1">Seek</g>: Buscar um determinado tempo</target>
 </trans-unit>
 <trans-unit id="tu44" xml:space="preserve">
 <source xml:lang="en">Example script</source>
-<target xml:lang="pt">Example script</target>
+<target xml:lang="pt">Exemplo de script</target>
 </trans-unit>
 <trans-unit id="tu45" xml:space="preserve">
 <source xml:lang="en">{
@@ -213,14 +213,14 @@ It's usually simplest to add the component to the same entity that has the textu
     }
 }
 </source>
-<target xml:lang="pt">{
-    public class VideoScript : StartupScript
-    {
-        // Game Studio displays the public member fields and properties you declare in this script
+<target xml:lang="pt">(
+    vídeoescrito : StartupScript
+    (
+        \/\/ Game Studio exibe os campos e propriedades que você declara neste script
 
-        public override void Start()
-        {
-            // Initialization of the script.
+        anula de sobreposição pública Start()
+        (
+            \/\/ Inicialização do script.
             Entity.Get&lt;VideoComponent&gt;().Instance.Play();
         }
     }
@@ -229,39 +229,39 @@ It's usually simplest to add the component to the same entity that has the textu
 </trans-unit>
 <trans-unit id="tu46" xml:space="preserve">
 <source xml:lang="en">4. Add the script to the entity</source>
-<target xml:lang="pt">4. Add the script to the entity</target>
+<target xml:lang="pt">4. Adicionar o script à entidade</target>
 </trans-unit>
 <trans-unit id="tu47" xml:space="preserve">
 <source xml:lang="en">In the <g id="1">Scene Editor</g>, select the entity that has the video component.</source>
-<target xml:lang="pt">In the <g id="1">Scene Editor</g>, select the entity that has the video component.</target>
+<target xml:lang="pt">No <g id="1">Scene Editor</g>, selecione a entidade que tem o componente de vídeo.</target>
 </trans-unit>
 <trans-unit id="tu48" xml:space="preserve">
 <source xml:lang="en">In the <g id="1">Property Grid</g>, click <g id="2">Add component</g> and select the video script.</source>
-<target xml:lang="pt">In the <g id="1">Property Grid</g>, click <g id="2">Add component</g> and select the video script.</target>
+<target xml:lang="pt">No <g id="1">Property Grid</g>, clique em <g id="2">Add component</g> e selecione o script de vídeo.</target>
 </trans-unit>
 <trans-unit id="tu49" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>My video script<x id="2"/></source>
-<target xml:lang="pt"><x id="1"/>My video script<x id="2"/></target>
+<target xml:lang="pt">&lt;x1\/&gt; Meu script de vídeo&lt;x2\/&gt;</target>
 </trans-unit>
 <trans-unit id="tu50" xml:space="preserve">
 <source xml:lang="en">Stride adds the script as a component.</source>
-<target xml:lang="pt">Stride adds the script as a component.</target>
+<target xml:lang="pt">Stride adiciona o script como um componente.</target>
 </trans-unit>
 <trans-unit id="tu51" xml:space="preserve">
 <source xml:lang="en">You can adjust <g id="1">public variables you define in the script</g> in the <g id="2">Property Grid</g> under the script component properties.</source>
-<target xml:lang="pt">You can adjust <g id="1">public variables you define in the script</g> in the <g id="2">Property Grid</g> under the script component properties.</target>
+<target xml:lang="pt">Você pode ajustar as variáveis <g id="1">public que você define no script</g> no <g id="2">Property Grid</g> sob as propriedades do componente script.</target>
 </trans-unit>
 <trans-unit id="tu52" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Properties<x id="2"/></source>
-<target xml:lang="pt"><x id="1"/>Properties<x id="2"/></target>
+<target xml:lang="pt">&lt;x1\/&gt;Propriedades &lt;x2\/&gt;</target>
 </trans-unit>
 <trans-unit id="tu53" xml:space="preserve">
 <source xml:lang="en">See also</source>
-<target xml:lang="pt">See also</target>
+<target xml:lang="pt">Ver também</target>
 </trans-unit>
 <trans-unit id="tu54" xml:space="preserve">
 <source xml:lang="en"><g id="1">Video properties</g></source>
-<target xml:lang="pt"><g id="1">Video properties</g></target>
+<target xml:lang="pt"><g id="1">Propriedades do vídeo</g></target>
 </trans-unit>
 </body>
 </file>

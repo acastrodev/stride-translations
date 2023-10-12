@@ -1,78 +1,78 @@
-# Material layers
+# Camadas de material
 
-<span class="badge text-bg-primary">Intermediate</span>
-<span class="badge text-bg-success">Artist</span>
-<span class="badge text-bg-success">Programmer</span>
+<x1\/> Intermediário <x2\/>
+<x3\/>Artista <x4\/>
+<x5\/> Programador <x6\/>
 
-You can combine layers of materials to build more complex materials. For example, this screenshot shows the blending of a rust material (left) with a gold material (right):
+Você pode combinar camadas de materiais para construir materiais mais complexos. Por exemplo, esta captura de tela mostra a mistura de um material de ferrugem (esquerda) com um material de ouro (direita):
 
-![media/material-layers-2.png](media/material-layers-2.png)
+<x1\/>media\/material-layers-2.png<x2\/>
 
-This diagram shows the definition of the materials blended in the screenshot above:
+Este diagrama mostra a definição dos materiais misturados na captura de tela acima:
 
-![media/material-layers-3.png](media/material-layers-3.png)
+<x1\/>media\/material-layers-3.png<x2\/>
 
-## Blend maps
+## Mapas de mistura
 
-**Blend maps** are [material maps](material-maps.md) that determine how Game Studio blends layers. For example, you can use a texture as a blend map:
+**Blend maps** são [material maps](material-maps.md) que determinam como Game Studio mistura camadas. Por exemplo, você pode usar uma textura como um mapa de mistura:
 
-![Blend map diagram](media/blend-map-diagram.png)
+<x1\/> Diagrama de mapas ampliados<x2\/>
 
-![Blend map diagram](media/blend-map-diagram2.png)
+<x1\/> Diagrama de mapas ampliados<x2\/>
 
-Note how the blend map texture corresponds to the patterning on the result.
+Note como a textura do mapa de mistura corresponde à modelagem no resultado.
 
-Blend maps work the same way as any other kind of material map. For more information, see [Material maps](material-maps.md).
+Os mapas de mistura funcionam da mesma forma que qualquer outro tipo de mapa material. Para obter mais informações, consulte [Mapas importantes](material-maps.md).
 
-## Shading models
+## Modelos de sombra
 
-Stride blends materials differently depending on whether their shading models (eg diffuse models, specular models, etc) are different.
+Os materiais de mistura de Stride de forma diferente dependendo se seus modelos de sombreamento (por exemplo, modelos difusos, modelos especulares, etc) são diferentes.
 
-If you blend materials that have **identical** shading models, Stride collects the **attributes** of the materials, then applies the shading models to all of them. This saves GPU.
+Se você misturar materiais que têm modelos de sombreamento **identical**, a Stride recolhe o **attributes** dos materiais, então aplica os modelos de sombreamento a todos eles. Isso salva a GPU.
 
-If the materials have **different** shading models, Stride applies each material's shading models to that material's attributes, then blends the results. This uses more GPU.
+Se os materiais têm modelos de sombreamento **diferente**, a Stride aplica os modelos de sombreamento de cada material aos atributos desse material, então mistura os resultados. Isso usa mais GPU.
 
-## Add a layer
+## Adicionar uma camada
 
-1. Select the material you want to add a layer to.
+1. Selecione o material que deseja adicionar uma camada.
 
-2. In the **Property Grid** (on the right by default), next to **Layers**, click ![Green plus button](~/manual/game-studio/media/green-plus-icon.png) (**Add**).
+2. No **Property Grid** (à direita por padrão), ao lado de **Layers**, clique em <x1\/>Green plus button<x2\/> (**Add**).
 
-   ![Add a layer](media/add-a-layer.png)
+   <x1\/> Adicionar uma camada<x2\/>
 
-   Game Studio adds a layer to the material.
+   Game Studio adiciona uma camada ao material.
 
-   ![Empty layer](media/empty-layer.png)
+   <x1\/>Tipo de umidade <x2\/>
 
-3. Next to the layer, click ![Hand icon](~/manual/game-studio/media/hand-icon.png) (**Select an asset**).
+3. Ao lado da camada, clique em <x1\/>Hand icon<x2\/> (**Select an asset**).
 
-   The **Select an asset** window opens.
+   A janela **Selecione um ativo** abre.
 
-   ![Select an asset](media/material-asset-picker.png)
+   <x1\/> Selecione um ativo<x2\/>
 
-4. Specify a material you want to add as a layer and click **OK**.
+4. Especifique um material que deseja adicionar como uma camada e clique em **OK**.
 
-   Game Studio adds the material as a layer.
+   Game Studio adiciona o material como uma camada.
 
-   ![Added layer](media/added-layer.png)
+   <x1\/> camada adicionada <x2\/>
 
-5. Next to **Blend Map**, click ![Blue arrow button](~/manual/game-studio/media/blue-arrow-icon.png) (**Replace**) and select the type of blend map you want to use to blend the layers. For more information about blend maps, see [Material maps](material-maps.md).
+5. Próximo a **Blend Map**, clique em <x1\/> Botão de seta azul<x2\/> (** Substituir**) e selecione o tipo de mapa de mistura que você deseja usar para misturar as camadas. Para obter mais informações sobre mapas de mistura, consulte [Mapas importantes](material-maps.md).
 
-   ![Select blend map](media/select-blend-map.png)
+   <x1\/>Selecionar mapa de mistura<x2\/>
 
-Game Studio blends the material layers using the blend map you specified. You can add as many layers as you need.
+Game Studio combina as camadas de material usando o mapa de mistura que você especificou. Você pode adicionar tantas camadas como você precisa.
 
-## Layer properties
+## Propriedades da camada
 
-| Property | Description |
+| Propriedade | Descrição |
 | --------------- | --------------- 
-| Material | The material blended in this layer |
-| Blend Map | The [blend map](material-maps.md) used to blend this layer with the layer above |
-| Layer Overrides | **UV Scale**: A UV scale applied to all textures UV of the material of the layer (excluding the occlusion map) |
+| Material | O material misturado nesta camada |
+| Mapa de mistura | O [blend map](material-maps.md) usado para misturar esta camada com a camada acima |
+| Overrides de camada | **UV Escala**: Uma escala UV aplicada a todas as texturas UV do material da camada (excluindo o mapa de oclusão) |
 
-## See also
+## Ver também
 
-* [Material maps](material-maps.md)
-* [Material attributes](material-attributes.md)
-* [Material slots](material-slots.md)
-* [Materials for developers](materials-for-developers.md)
+* [Mapas de material](material-maps.md)
+* [Atributos de material](material-attributes.md)
+* [Slots de material](material-slots.md)
+* [Materiais para desenvolvedores](materials-for-developers.md)

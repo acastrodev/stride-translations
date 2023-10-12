@@ -1,57 +1,57 @@
-# SpriteFont
+# SpriteFonte
 
-<span class="badge text-bg-primary">Advanced</span>
-<span class="badge text-bg-success">Programmer</span>
+<x1\/> Avançado <x2\/>
+<x3\/> Programador <x4\/>
 
-The @'Stride.Graphics.SpriteFont' class is a convenient way to draw text. It works with the @'Stride.Graphics.SpriteBatch' class.
+A classe @'Stride.Graphics.SpriteFont' é uma maneira conveniente de desenhar texto. Ele funciona com a classe @'Stride.Graphics.SpriteBatch'.
 
-> [!Note]
-> You need to put all custom code in a [Custom scene renderer](../graphics-compositor/custom-scene-renderers.md) to include it in the composition.
+> <x1\/>!Note<x2\/>
+> Você precisa colocar todo o código personalizado em um renderizador de cena [Custom](../graphics-compositor/custom-scene-renderers.md) para incluí-lo na composição.
 
-## Load a spriteFont
+## Carregar um sprite Fonte
 
-After a font asset is compiled it can be loaded as a @'Stride.Graphics.SpriteFont' instance using the @'Stride.Core.Serialization.Assets.ContentManager'. It contains all the options to display a text (bitmaps, kerning, line spacing etc).
+Depois que um ativo de fonte é compilado ele pode ser carregado como um @'Stride. Graphics.SpriteFont' instância usando o @'Stride.Core.Serialization.Assets.ContentManager'. Ele contém todas as opções para exibir um texto (bitmaps, kerning, espaçamento de linha etc).
 
-**Code:** Load a SpriteFont
+** Código:** Carregar um SpriteFont
 
 ```cs
 var myFont = Content.Load<SpriteFont>("MyFont");
 ```
 
-## Write text on screen
+## Escrever texto na tela
 
-Once the font is loaded, you can display any text with a @'Stride.Graphics.SpriteBatch'. The @'Stride.Graphics.SpriteBatch.DrawString' method performs the draw. For more information about the SpriteBatch, see the [SpriteBatch](spritebatch.md) page.
+Uma vez que a fonte é carregada, você pode exibir qualquer texto com um @'Stride. Graphics.SpriteBatch. O método @'Stride.Graphics.SpriteBatch.DrawString executa o sorteio. Para obter mais informações sobre o SpriteBatch, consulte a página [SpriteBatch](spritebatch.md).
 
-**Code:** Write text
+** Código:** Escreva texto
 
 ```cs
-// create the SpriteBatch
-var spriteBatch = new SpriteBatch(GraphicsDevice);
+\/\/ criar o SpriteBatch
+var spriteBatch = novo SpriteBatch (GraphicsDevice);
 
-// don't forget the begin
-spriteBatch.Begin(GraphicsContext);
+\/\/ não se esqueça do início
+spriteBatch.Begin (GraphicsContext);
  
-// draw the text "Helloworld!" in red from the center of the screen
-spriteBatch.DrawString(myFont, "Helloworld!", new Vector2(0.5, 0.5), Color.Red);
+\/\/ desenhar o texto "Helloworld!" em vermelho do centro da tela
+spriteBatch.DrawString (myFont, "Helloworld!", novo Vector2(0.5, 0.5), Color.Red);
  
-// don't forget the end
+\/\/ não se esqueça do fim
 spriteBatch.End();
 ```
 
-The various overloads let you specify the text's orientation, scale, depth, origin, etc. You can also apply some @'Stride.Graphics.SpriteEffects' to the text:
+As várias sobrecargas permitem especificar a orientação do texto, escala, profundidade, origem, etc. Você também pode aplicar alguns @'Stride.Graphics.SpriteEffects' ao texto:
 
-- None
-- FlipHorizontally
+- Nenhuma
+- Apertar de volta
 - FlipVertically
 - FlipBoth
 
-**Code:** Advanced text drawing
+** Código:** Desenho de texto avançado
 
 ```cs
-// draw the text "Hello world!" upside-down in red from the center of the screen
-spriteBatch.DrawString(myFont, "Hello world!", new Vector2(0.5, 0.5), Color.Red, 0, new Vector2(0, 0), new Vector2(1,1), SpriteEffects.FlipVertically, 0);
+\/\/ desenhar o texto "Hello world!" upside-down em vermelho do centro da tela
+spriteBatch.DrawString (myFont, "Olá, mundo!", novo Vector2(0.5, 0.5), Color.Red, 0, novo Vector2(0, 0), novo Vector2(1,1), SpriteEffects. FlipVertically, 0);
 ```
 
-## See also
+## Ver também
 
 * [SpriteBatch](spritebatch.md)

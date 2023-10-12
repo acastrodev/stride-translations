@@ -1,93 +1,93 @@
-# Create a Linux game
+# Criar um jogo Linux
 
-> [!Note]
-> Before following these instructions, make sure you've followed the instructions in [Linux - Setup and requirements](setup-and-requirements.md).
+> <x1\/>!Note<x2\/>
+> Antes de seguir essas instruções, certifique-se de ter seguido as instruções em [Linux - Configuração e requisitos](setup-and-requirements.md).
 
-1. In the Stride launcher, create a new game and select Linux as a target platform.
+1. No Stride launcher, crie um novo jogo e selecione Linux como uma plataforma de destino.
 
-   ![New Game](media/platform_choice.png)
+   <x1\/> Novo Jogo <x2\/>
 
-2. In Game Studio, in the platforms menu, select **Linux**.
+2. No Game Studio, no menu de plataformas, selecione **Linux**.
 
-   ![Platform Selector](media/platform_selector.png)
+   <x1\/> Seletor de formulários <x2\/>
 
-3. Press **F5** to build and run the project.
+3. Pressione **F5** para construir e executar o projeto.
 
-4. The first time you run the project, enter information about your Linux host:
+4. A primeira vez que você executar o projeto, insira informações sobre seu host Linux:
 
-   ![Credential Dialog](media/default_credential_dialog.png)
+   <x1\/>Diálogo recuo<x2\/>
 
-   Enter your information as below:
+   Digite suas informações como abaixo:
 
-   ![Filled Credential Dialog](media/filled_credential_dialog.png)
+   <x1\/>Encontrado Diálogo Credencial<x2\/>
 
-5. Click **Test settings** to test the credentials.
+5. Clique em **Test settings** para testar as credenciais.
 
-   If you made an error, Game Studio displays:
+   Se você cometeu um erro, o Game Studio exibe:
 
-   ![Invalid Settings](media/unreachable_host.png)
+   <x1\/>Configurações inválidas<x2\/>
 
-   If the credentials are correct, Game Studio displays:
+   Se as credenciais estiverem corretas, o Game Studio exibe:
 
-   ![Success](media/successful_login.png)
+   <x1\/> Sucesso <x2\/>
 
-   Click the **OK** button to continue.
+   Clique no botão **OK** para continuar.
 
-   Game Studio copies the files over your Linux host in a subdirectory of the location you have provided. The name of the subdirectory is the name of your game.
+   Game Studio copia os arquivos sobre o seu host Linux em um subdiretório do local que você forneceu. O nome do subdiretório é o nome do seu jogo.
 
-   If something goes wrong, check the **Output** pane for details.
+   Se algo correr mal, verifique o painel **Output** para obter detalhes.
 
-## Settings
+## Configurações
 
-Your credentials are saved in the **Settings** dialog:
+Suas credenciais são salvas no **Configurações** diálogo:
 
-![Settings Dialog](media/remote_settings.png)
+<x1\/>Configurações Diálogo<x2\/>
 
-The password is encrypted using the Micrsoft *System.Security.Cryptograph.ProtectedData.Protect* method for the current user, and saved in Base64, displayed in the Settings. You can't change the password from the Settings dialog.
+A senha é criptografada usando o método Micrsoft *System.Security.Cryptograph.ProtectedData.Protect* para o usuário atual, e salvo no Base64, exibido nas Configurações. Você não pode alterar a senha da caixa de diálogo Configurações.
 
-There are two additional settings that control the execution of a game:
+Existem duas configurações adicionais que controlam a execução de um jogo:
 
-* Use CoreCLR: forces execution using .NET Core
+* Use CoreCLR: execução de forças usando . Núcleo de NET
 
-* X Display: forces execution on a specific X display of your Linux host
+* X Display: força a execução em um display X específico do seu host Linux
 
-## Compile outside Game Studio
+## Compile fora Game Studio
 
-Like any Stride project, you can also compile the project directly from Visual Studio or from the command line. In both cases, you need to select a valid configuration:
+Como qualquer projeto Stride, você também pode compilar o projeto diretamente do Visual Studio ou da linha de comando. Em ambos os casos, você precisa selecionar uma configuração válida:
 
-* Debug
-* Release
+* Depuração
+* Lançamento
 * CoreCLR_Debug
-* CoreCLR_Release
+* CoreCLR_Releas
 
-Debug and Release target Mono. The others target .NET Core.
+Debug and Release target Mono. Os outros alvo .NET Core.
 
-### Visual Studio
+### Estúdio Visual
 
-Once your project is loaded in Visual Studio, select the Linux project. In the **Solution Configurations** drop-down menu, you select a valid Linux configuration:
+Uma vez que seu projeto é carregado no Visual Studio, selecione o projeto Linux. No menu suspenso **Solution Configurations**, você seleciona uma configuração Linux válida:
 
-![Configuration selection](media/vs_configuration_selection.png)
+<x1\/> Seleção de configuração<x2\/>
 
 ### MSBuild
 
-To compile for Linux, from a command line, use:
+Para compilar para Linux, a partir de uma linha de comando, use:
 
 ```
-msbuild /p:Platform=Linux /p:Configuration=CONFIG YourGame.sln
+msbuild \/p:Platform=Linux \/p:Configuration=CONFIG O teu jogo
 ```
 
-Where **CONFIG** is a valid Linux configuration.
+Onde **CONFIG** é uma configuração Linux válida.
 
-## Limitations
+## Limitações
 
-* No debugging facility yet
+* Nenhuma instalação de depuração ainda
 
-* Switching the rendering graphics platform might cause the game to hang on startup. As a workaround, on the Linux host, in the directory where the game is deployed, delete the following directories:
+* Mudar a plataforma gráfica de renderização pode fazer com que o jogo pendure na inicialização. Como solução alternativa, no host do Linux, no diretório onde o jogo é implantado, exclua os seguintes diretórios:
 
    * `cache`
-   * `local`
+   * `local local`
    * `roaming`
 
-## See also
+## Ver também
 
-* [Linux — Setup and requirements](setup-and-requirements.md)
+* [Linux — Configuração e requisitos](setup-and-requirements.md)

@@ -1,42 +1,42 @@
-# Debugging
+# Depuração
 
-<span class="badge text-bg-primary">Beginner</span>
-<span class="badge text-bg-success">Programmer</span>
+<x1\/>Introdução<x2\/>
+<x3\/> Programador <x4\/>
 
-If your script isn't producing the expected result at runtime, you can debug it in an IDE such as Visual Studio.
+Se o seu script não estiver produzindo o resultado esperado no tempo de execução, você pode depurá-lo em um IDE, como o Visual Studio.
 
-> [!Note]
-> [There are lots of ways to debug code. This page suggests one method, using Visual Studio.]
+> <x1\/>!Note<x2\/>
+> <x3\/>Há muitas maneiras de depurar o código. Esta página sugere um método, usando o Visual Studio.<x4\/>
 
-1. Open the script in Visual Studio.
+1. Abra o script no Visual Studio.
 
-   > [!Tip]
-   > To open your project in Visual Studio from Game Studio, in the Game Studio toolbar, click ![Open in IDE](media/launch-your-game-ide-icon.png) (**Open in IDE**).
+   > <x1\/>!Tip<x2\/>
+   > Para abrir seu projeto no Visual Studio do Game Studio, na barra de ferramentas Game Studio, clique em <x3\/>Open in IDE<x4\/> (**Open in IDE**).
 
-2. Press **F9** to add a break point at the required places.
+2. Pressione **F9** para adicionar um ponto de interrupção nos lugares necessários.
 
-3. In Visual Studio, press **F5** or click **Start** in the toolbar to run the game in debug mode.
+3. No Visual Studio, pressione **F5** ou clique em **Start** na barra de ferramentas para executar o jogo no modo de depuração.
 
-   ![Visual Studio Start button](media/visual-studio-start-button.png)
+   <x1\/>Visual Studio Iniciar botão<x2\/>
 
-   The game starts in a new window. In Visual Studio, on the script page, the first break point highlights and stops the execution.
+   O jogo começa numa nova janela. No Visual Studio, na página de script, o primeiro ponto de interrupção destaca e pára a execução.
 
-4. Verify the state of your variables.
+4. Verifique o estado de suas variáveis.
 
-5. Press **F10** (step over) if you want to execute the code line by line, or press **F5** to continue code execution.
+5. Pressione **F10** (passo) se você quiser executar a linha de código por linha, ou pressione **F5** para continuar a execução de código.
 
-> [!Note]
-> If Visual Studio doesn't stop at the break point, make sure you attached the script to an entity in the active scene.
+> <x1\/>!Note<x2\/>
+> Se o Visual Studio não parar no ponto de interrupção, certifique-se de anexar o script a uma entidade na cena ativa.
 
-For more information about debugging in Visual Studio, see the [MSDN documentation](https://msdn.microsoft.com/en-us/library/sc65sadd.aspx).
+Para obter mais informações sobre depuração no Visual Studio, consulte a documentação [MSDN](https://msdn.microsoft.com/en-us/library/sc65sadd.aspx).
 
-## See also
+## Ver também
 
-* [Debugging in Visual Studio (MSDN documentation)](https://msdn.microsoft.com/en-us/library/sc65sadd.aspx)
-* [Types of script](types-of-script.md)
-* [Create a script](create-a-script.md)
-* [Use a script](use-a-script.md)
-* [Public properties and fields](public-properties-and-fields.md)
-* [Scheduling and priorities](scheduling-and-priorities.md)
-* [Events](events.md)
-* [Preprocessor variables](preprocessor-variables.md)
+* [Depuração no Visual Studio (documentação MSDN)](https://msdn.microsoft.com/en-us/library/sc65sadd.aspx)
+* [Tipos de script](types-of-script.md)
+* [Criar um script](create-a-script.md)
+* [Use um script](use-a-script.md)
+* [Propriedades e campos públicos](public-properties-and-fields.md)
+* [Programação e prioridades](scheduling-and-priorities.md)
+* [Eventos](events.md)
+* [Variáveis de pré-processamento](preprocessor-variables.md)

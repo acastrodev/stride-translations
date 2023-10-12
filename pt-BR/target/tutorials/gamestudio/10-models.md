@@ -1,7 +1,7 @@
-# Models
+# Modelos
 
-In this tutorial we learn about models in Stride game studio. We learn about 5 different import scenarios. Some models have textures which we can automatically apply by importing the right material and textures files.
+Neste tutorial aprendemos sobre modelos no estúdio de jogos Stride. Aprendemos sobre 5 diferentes cenários de importação. Alguns modelos têm texturas que podemos aplicar automaticamente importando o material certo e os arquivos de texturas.
 
-[!INCLUDE [stride-studio-note](../../includes/game-studio-xenko-note.md)]
+[! INCLUÍDO [stride-studio-note](../../includes/game-studio-xenko-note.md)]
 
-> [!Video https://www.youtube.com/embed/55WSNO3YHos]
+> [!Vídeo https://www.youtube.com/embed/55WSNO3YHos]

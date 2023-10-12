@@ -1,10 +1,10 @@
-# Light probes
+# Sondas de luz
 
-<span class="badge text-bg-primary">Beginner</span>
-<span class="badge text-bg-success">Designer</span>
-<span class="badge text-bg-success">Artist</span>
+<x1\/>Introdução<x2\/>
+<x3\/>Designer<x4\/>
+<x5\/>Artista <x6\/>
 
-**Light probes** capture the lighting at the position you place them. They simulate **indirect light**, the effect of light bouncing off surfaces and illuminating other surfaces. They can make a dramatic difference to the mood and appearance of your scene.
+** sondas de luz ** capturam a iluminação na posição que os colocam. Eles simulam **indirect light**, o efeito da luz saltando de superfícies e iluminando outras superfícies. Eles podem fazer uma diferença dramática ao humor e aparência de sua cena.
 
 <p>
 <video autoplay loop class="responsive-video" poster="media/light_probes_640.jpg">
@@ -12,115 +12,115 @@
 </video>
 </p>
 
-The screenshot below shows a [point light](point-lights.md) surrounded by light probes in the Scene Editor. The probes form 3D areas (shown in the Scene Editor by the yellow wireframe connecting the probes).
+A captura de tela abaixo mostra uma luz [point](point-lights.md) rodeada por sondas de luz no Editor de cena. As sondas formam áreas 3D (mostradas no Editor de Cena pelo wireframe amarelo conectando as sondas).
 
-![Cornell box](media/light-probes-cornell.png)
+<x1\/>Cornell box<x2\/>
 
-Stride colors pixels within a light probe area to simulate the effect of light bouncing from nearby surfaces. To find a color for a given pixel, Stride interpolates from the lighting captured by the four surrounding light probes.
+Passe pixels de cores dentro de uma área de sonda de luz para simular o efeito de luz saltando de superfícies próximas. Para encontrar uma cor para um determinado pixel, Stride interpola da iluminação capturada pelas quatro sondas de luz circundantes.
 
-For example, in the screenshot below, notice how the red of the wall is reflected on the other objects. In the Scene Editor, this is also visible on the surface of the light probes themselves.
+Por exemplo, na captura de tela abaixo, observe como o vermelho da parede se reflete nos outros objetos. No Editor de Cena, isso também é visível na superfície das sondas de luz.
 
-![Light probes — more reflection](media/light-probes-illumination.png)
+<x1\/> sondas leves — mais reflexão<x2\/>
 
-Light probes affect all objects in the area they cover, including static and dynamic objects. You don't need to enable any extra options on the entities that light probes affect.
+Sondas de luz afetam todos os objetos na área que cobrem, incluindo objetos estáticos e dinâmicos. Você não precisa ativar nenhuma opção extra nas entidades que as sondas leves afetam.
 
-## 1. Enable light probes in the graphics compositor
+## 1. Ativar sondas de luz no compositor gráfico
 
-Stride enables light probes by default in new projects. To make sure light probes are enabled:
+O Stride permite sondas de luz por padrão em novos projetos. Para garantir que as sondas de luz estejam habilitadas:
 
-1. In the **Asset View** (in the bottom pane by default), double-click the **Graphics Compositor** asset.
+1. No **Asset View** (no painel inferior por padrão), clique duas vezes no **Graphics Compositor** ativo.
 
-   ![Graphics Compositor asset](../graphics-compositor/media/graphics-compositor-asset.png)
+   <x1\/>Gráficos Compositor asset<x2\/>
 
-   The graphics compositor editor opens.
+   O editor de compositores gráficos abre.
 
-   ![Graphics Compositor editor](../graphics-compositor/media/graphics-compositor-editor.png)
+   <x1\/>Gráfico Compositor editor<x2\/>
 
-2. Select the **forward renderer** node.
+2. Selecione o nó **forward renderer**.
 
-3. In the **Property Grid** (on the right by default), make sure the **Light probes** checkbox is selected.
+3. No **Property Grid** (à direita por padrão), certifique-se de que a caixa de seleção **Light é selecionada.**
 
-   ![Enable light probes](media/enable-light-probes.png)
+   <x1\/> Habilitar sondas de luz <x2\/>
 
-For more information about the graphics compositor, see the [Graphics compositor](../graphics-compositor/index.md) page.
+Para obter mais informações sobre o compositor gráfico, consulte a página [Graphics compositor](../graphics-compositor/index.md).
 
-## 2. Create a light probe
+## 2. Criar uma sonda de luz
 
-Right-click the scene or Entity Tree and select **Light > Light probe**.
+Clique com o botão direito do mouse na cena ou Entity Tree e selecione **Light > Sonda de luz **.
 
-![Add light probe](media/add-light-probe.png)
+<x1\/> Adicionar sonda de luz <x2\/>
 
-Alternatively, create an empty entity and add a **Light probe component** in the Property Grid.
+Alternativamente, crie uma entidade vazia e adicione um componente de sonda **Light** na Grade de Propriedade.
 
-![Add light probe component](media/add-light-probe-component.png)
+<x1\/> Adicionar componente de sonda de luz<x2\/>
 
-Light probes appear as spheres in the Scene Editor. Before you capture a light bounce for the first time, they have a completely black surface.
+Sondas de luz aparecem como esferas no Editor de cena. Antes de capturar um salto de luz pela primeira vez, eles têm uma superfície completamente preta.
 
-![Light](media/light-probes-black.jpg)
+<x1\/>Light<x2\/>
 
-## 3. Place light probes
+## 3. Colocar sondas de luz
 
-Light probes must be placed in a way that creates a **3D volume**. This means:
+Sondas de luz devem ser colocadas de uma forma que cria um volume **3D**. Isto significa:
 
-* You need **at least four light probes** in the scene — enough to create the four points of a tetrahedron, as below:
+* Você precisa **pelo menos quatro sondas de luz** na cena — o suficiente para criar os quatro pontos de um tetraedro, como abaixo:
 
-   ![Tetrahedron](media/light-probes-tetrahedron.png)
+   <x1\/>Tetrahedron<x2\/>
 
-* At least one light probe must be on a different plane from the rest. For example, the probes in the screenshot below won't work, as they are on a flat plane and create no volume:
+* Pelo menos uma sonda leve deve estar num avião diferente do resto. Por exemplo, as sondas na captura de tela abaixo não funcionarão, pois estão em um plano plano plano e não criam volume:
 
-   ![Flat probes](media/bad-light-probe-arrangement.png)
+   <x1\/>Flat sondas<x2\/>
 
-A typical method is to place light probes in a grid across your scene covering a general area, as in the screenshots below:
+Um método típico é colocar sondas de luz em uma grade em sua cena cobrindo uma área geral, como nas capturas de tela abaixo:
 
-![Grid layout](media/light-probes-grid-layout.jpg)
+<x1\/>Grid layout<x2\/>
 
-![Light probes in the editor](media/light-probes-in-editor.jpg)
+<x1\/> Sondas de luz no editor<x2\/>
 
-> [!Tip]
-> You can quickly duplicate light probes just like other entities. To do this, select a light probe, hold **Ctrl**, and move it with the mouse.
+> <x1\/>!Tip<x2\/>
+> Você pode duplicar rapidamente sondas de luz como outras entidades. Para fazer isso, selecione uma sonda de luz, segure **Ctrl** e mova-a com o mouse.
 
-## 4. Capture lighting
+## 4. Iluminação de captura
 
-1. In the Scene Editor toolbar, click the **lighting options** button to open the lighting options menu.
+1. Na barra de ferramentas do Editor de cena, clique no botão **lighting options** para abrir o menu de opções de iluminação.
 
-   ![Lighting options](media/lighting-options-menu.png)
+   <x1\/>Opções de iluminação<x2\/>
 
-2. Next to **Bounces**, set the number of light bounces you want to capture.
+2. Ao lado de **Bounces**, defina o número de saltos de luz que você deseja capturar.
 
-   Multiple bounces simulate the effect of light bouncing between surfaces multiple times. This generally has the effect of brightening the lighting. Three or four bounces should be enough; beyond this, changes are almost unnoticeable. The number of bounces has no impact on runtime performance.
+   Vários saltos simulam o efeito da luz saltando entre superfícies várias vezes. Isso geralmente tem o efeito de iluminar a iluminação. Três ou quatro saltos devem ser suficientes; além disso, as mudanças são quase inaceitáveis. O número de saltos não tem impacto no desempenho do tempo de execução.
 
-3. To capture the lighting, click **Compute**.
+3. Para capturar a iluminação, clique em **Compute**.
 
-   You can see the lighting on the surface of the light probes in the Scene Editor.
+   Você pode ver a iluminação na superfície das sondas de luz no Editor de cena.
 
-   ![Light probe surface](media/light-probes-illumination-on-surface.png)
+   <x1\/> Superfície da sonda de luz <x2\/>
 
-## Reset light probes
+## Redefinir sondas de luz
 
-To reset the light probes, in the **lighting options** menu, click **Reset**. This is useful after you change the lights in your scene and need to capture the lighting from scratch.
+Para redefinir as sondas de luz, no menu **lighting options**, clique em **Reset**. Isso é útil depois de alterar as luzes em sua cena e precisa capturar a iluminação do zero.
 
-![Reset light probes](media/reset-light-probes.png)
+<x1\/> Redefinir sondas de luz <x2\/>
 
-## Show and hide light probes in the Scene Editor
+## Mostrar e ocultar sondas de luz no Editor de cenas
 
-Under the **gizmo options** in the Scene Editor toolbar, use the **Light probes** checkbox.
+Sob as opções **gizmo** na barra de ferramentas do Editor de Cena, use a caixa de seleção **Light probes**.
 
-![Hide light probes](media/light-probes-checkbox.png)
+<x1\/> sondas de luz Hide<x2\/>
 
-## Show and hide light probe volumes in the Scene Editor
+## Mostrar e ocultar volumes de sonda de luz no Editor de cenas
 
-Under the **gizmo options** in the Scene Editor toolbar, use the **Light probe volumes** checkbox.
+Sob as opções **gizmo** na barra de ferramentas do Editor de Cena, use a caixa de seleção **Light probe volumes**.
 
-![Hide light probe volumes](media/light-probe-volumes-checkbox.png)
+<x1\/> volumes de sonda de luz Hide<x2\/>
 
-![Light probe volumes on and off](media/light-probe-wireframe-on.jpg)
+<x1\/> volumes de sonda de luz em e off<x2\/>
 
-## See also
+## Ver também
 
-* [Add a light](add-a-light.md)
-* [Point lights](point-lights.md)
-* [Ambient lights](ambient-lights.md)
-* [Directional lights](directional-lights.md)
-* [Skybox lights](skybox-lights.md)
-* [Spot lights](spot-lights.md)
-* [Shadows](shadows.md)
+* [Adicionar uma luz](add-a-light.md)
+* [Luzes de ponto](point-lights.md)
+* [Luzes ambientais](ambient-lights.md)
+* [Luzes direcionais](directional-lights.md)
+* [Luzes Skybox](skybox-lights.md)
+* [Luzes do ponto](spot-lights.md)
+* [Sombras](shadows.md)

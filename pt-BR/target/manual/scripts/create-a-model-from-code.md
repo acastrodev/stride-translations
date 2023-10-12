@@ -1,166 +1,166 @@
-# Create a model from code
+# Criar um modelo de código
 
-<span class="badge text-bg-primary">Beginner</span>
-<span class="badge text-bg-success">Programmer</span>
+<x1\/>Introdução<x2\/>
+<x3\/> Programador <x4\/>
 
-You can create models in scripts at runtime. You can do this in several different ways, including:
+Você pode criar modelos em scripts no runtime. Você pode fazer isso de várias maneiras diferentes, incluindo:
 
-* creating a model from an asset
+* criar um modelo de um ativo
 
-* creating a procedural model using built-in geometric primitives (eg a sphere or cube)
+* criando um modelo processual usando primitivas geométricas incorporadas (por exemplo, uma esfera ou cubo)
 
-* instantiating a prefab that contains a model (see [Use prefabs](../game-studio/prefabs/use-prefabs.md))
+* instanciando um prefab que contenha um modelo (veja [Use prefabs](../game-studio/prefabs/use-prefabs.md))
 
-## Create a model from an asset
+## Criar um modelo de um ativo
 
-1. Create a new, empty synchronous script. For full instructions, see [Create a script](../scripts/create-a-script.md).
+1. Crie um novo e vazio script síncrono. Para instruções completas, consulte [Criar um script](../scripts/create-a-script.md).
 
-   ![Create a script](media/create-a-script-script-asset-selection.png)
+   <x1\/>Criar um script<x2\/>
 
-2. In the script, load the model using its asset URL. For example:
+2. No script, carregar o modelo usando sua URL de ativos. Por exemplo:
 
    ```cs
-   // Create a new entity and add it to the scene.
+   \/\/ Criar uma nova entidade e adicioná-la à cena.
    	var entity = new Entity();
-   	SceneSystem.SceneInstance.RootScene.Entities.Add(entity);
+   	SceneSystem.SceneInstance.RootScene.Entities.Add (entidade);
    
-   // Add a model included in the game files.
+   \/\/ Adicione um modelo incluído nos arquivos do jogo.
    	var modelComponent = entity.GetOrCreate<ModelComponent>();
-   	modelComponent.Model = Content.Load<Model>("MyFolder/MyModel");
+   	modelComponent. Modelo = Content.Load<Model>("MyFolder\/MyModel");
    ```
 
-   > [!Tip]
-   > To find the model's asset URL, in the **Asset View**, move the mouse over the model.
-   > ![(Get asset URL](media/get-asset-url.png)
+   > <x1\/>!Tip<x2\/>
+   > Para encontrar a URL de ativos do modelo, no **Asset View**, mova o mouse sobre o modelo.
+   > <x3\/> (Get asset URL<x4\/>
 
-3. Add the script as a **script component** to any entity in the scene. It doesn't matter which entity you use. For instructions, see [Use a script](use-a-script.md).
+3. Adicione o script como um componente **script** a qualquer entidade na cena. Não importa qual entidade você usa. Para instruções, veja [Use um script](use-a-script.md).
 
-   ![Add script component to entity](media/create-model-from-code-add-script-component.png)
+   <x1\/> Adicionar componente de script para entidade<x2\/>
 
-4. In the **Asset View**, right-click the model you want to create at runtime and select **Include in build as root asset**.
+4. No **Asset View**, clique com o botão direito do mouse no modelo que você deseja criar no tempo de execução e selecione **Incluir na compilação como root asset**.
 
-   ![Include in build as root asset](media/create-model-from-code-include-in-build-as-root-asset.png)
+   <x1\/>Incluir em compilação como root asset<x2\/>
 
-   This makes sure the asset is available for the script to use at runtime. For more information, see [Manage assets](../game-studio/manage-assets.md).
+   Isso garante que o ativo esteja disponível para o script usar em tempo de execução. Para obter mais informações, consulte [Gerenciar ativos](../game-studio/manage-assets.md).
 
-## Create a procedural model
+## Criar um modelo processual
 
-1. Create a new, empty synchronous script. For full instructions, see [Create a script](create-a-script.md).
+1. Crie um novo e vazio script síncrono. Para instruções completas, consulte [Criar um script](create-a-script.md).
 
-   ![Add new script](media/create-model-from-code-add-new-script.gif)
+   <x1\/> Adicionar novo script<x2\/>
 
-2. Add the script as a **script component** to any entity in the scene. It doesn't matter which entity you use. For instructions, see [Use a script](use-a-script.md).
+2. Adicione o script como um componente **script** a qualquer entidade na cena. Não importa qual entidade você usa. Para instruções, veja [Use um script](use-a-script.md).
 
-   ![Add script component to entity](media/create-model-from-code-add-script-component.png)
+   <x1\/> Adicionar componente de script para entidade<x2\/>
 
-3. In your script, instantiate an empty entity and an empty model. For example:
+3. No seu script, posicione uma entidade vazia e um modelo vazio. Por exemplo:
 
    ```cs
-   // Create an entity and add it to the scene.
+   \/\/ Criar uma entidade e adicioná-la à cena.
    var entity = new Entity();
-   SceneSystem.SceneInstance.RootScene.Entities.Add(entity);
+   SceneSystem.SceneInstance.RootScene.Entities.Add (entidade);
    
-   // Create a model and assign it to the model component.
-   var model = new Model();
-   entity.GetOrCreate<ModelComponent>().Model = model;  
+   \/\/ Criar um modelo e atribuí-lo ao componente do modelo.
+   modelo var = novo Modelo();
+   entity.GetOrCreate<ModelComponent>(). Modelo = modelo;  
    ```
 
-4. In your script, create a procedural model using built-in geometric primitives (eg a sphere or cube). For example:
+4. Em seu script, crie um modelo processual usando primitivas geométricas incorporadas (por exemplo, uma esfera ou cubo). Por exemplo:
 
    ```cs
-   // Add one or more meshes using geometric primitives (eg spheres or cubes).
-   var meshDraw = GeometricPrimitive.Sphere.New(GraphicsDevice).ToMeshDraw();
+   \/\/ Adicione uma ou mais malhas usando primitivas geométricas (por exemplo, esferas ou cubos).
+   var meshDraw = GeometricPrimitive.Sphere.New (GraphicsDevice).ToMeshDraw();
    
    var mesh = new Mesh { Draw = meshDraw }; 
-   model.Meshes.Add(mesh);
+   modelo. Meshes.Add(mesh);
    ```
 
-   > [!Note]
-   > To use the code above, make sure you add `using Stride.Extensions` to the top of your script.
+   > <x1\/>!Note<x2\/>
+   > Para usar o código acima, certifique-se de adicionar `usando Stride. Extensões` para o topo do seu script.
 
-   Alternatively, create a mesh using your own vertex and index buffers. For example:
+   Alternativamente, crie uma malha usando seu próprio vértice e buffers de índice. Por exemplo:
 
    ```cs
-   // Create a mesh using your own vertex and index buffers.
+   \/\/ Criar uma malha usando seu próprio vértice e buffers de índice.
    
-   mesh = new Mesh { Draw = new MeshDraw { /* Vertex buffer and index buffer setup */ } };
-   model.Meshes.Add(mesh);
+   mesh = novo Mesh { Draw = novo MeshDraw { \/* Tampão de vértice e configuração de tampão de índice *\/ } };
+   modelo. Meshes.Add(mesh);
    ```
 
-5. Here is a more complete example that draws a custom triangle..
+5. Aqui está um exemplo mais completo que desenha um triângulo personalizado..
 
    ```cs
-   var vertices = new VertexPositionTexture[3];
-   vertices[0].Position = new Vector3(0f,0f,1f);            
-   vertices[1].Position = new Vector3(0f,1f,0f);
-   vertices[2].Position = new Vector3(0f,1f,1f);
-   var vertexBuffer = Stride.Graphics.Buffer.Vertex.New(GraphicsDevice, vertices,
+   vértices var = novo VertexPositionTexture[3];
+   vértices[0].Posição = novo Vector3(0f,0f,1f);            
+   vértices[1].Posição = novo Vector3(0f,1f,0f);
+   vértices[2].Posição = novo Vector3(0f,1f,1f);
+   var vertexBuffer = Stride.Graphics.Buffer.Vertex.New (GraphicsDevice, vértices,
                                                         GraphicsResourceUsage.Dynamic);
-   int[] indices = { 0, 2, 1 };
-   var indexBuffer = Stride.Graphics.Buffer.Index.New(GraphicsDevice, indices);
+   índices = { 0, 2, 1 };
+   var indexBuffer = Stride.Graphics.Buffer.Index.New (GraphicsDevice, índices);
    
-   var customMesh = new Stride.Rendering.Mesh
-   { 
-       Draw = new Stride.Rendering.MeshDraw
-       { 
-           /* Vertex buffer and index buffer setup */ 
+   vara personalizada Malha = novo Stride. Renderização. Malha de malha
+   ( 
+       Desenho = novo Stride.Rendering.MeshDraw
+       ( 
+           \/* Tampão de vértice e configuração de tampão de índice *\/ 
            PrimitiveType = Stride.Graphics.PrimitiveType.TriangleList,
-           DrawCount = indicies.Length,
-           IndexBuffer = new IndexBufferBinding(indexBuffer, true, indices.Length),
-           VertexBuffers = new[] { new VertexBufferBinding(vertexBuffer, 
+           DrawCount = indícios. Comprimento,
+           IndexBuffer = novo IndexBufferBinding(indexBuffer, true, indices.Length),
+           VertexBuffers = novo[] { novo VertexBufferBinding (vertexBuffer, 
                                      VertexPositionTexture.Layout, vertexBuffer.ElementCount) },
        }
    };            
-   // add the mesh to the model
-   model.Meshes.Add(customMesh);
+   \/\/ adicionar a malha ao modelo
+   model.Meshes.Add (personalizado Malha);
    ```
 
 
-> [!Note]
-> For more information about how to set up vertex and index buffers, see [Drawing vertices](../graphics/low-level-api/draw-vertices.md).
+> <x1\/>!Note<x2\/>
+> Para obter mais informações sobre como configurar os amortecedores de vértice e índice, consulte os vértices [Drawing](../graphics/low-level-api/draw-vertices.md).
 
-Finally, you need to give the model one or more materials. There are two ways to do this.
+Finalmente, você precisa dar o modelo um ou mais materiais. Há duas formas de fazer isto.
 
-### Option 1: load a material in code
+### Opção 1: carregar um material no código
 
-1. In your code, load one or more materials and add them to the model. Because models can use multiple materials (one for each mesh in the model), use [Mesh.MaterialIndex](xref:Stride.Rendering.Mesh.MaterialIndex) to specify which materials in the list are used for which mesh.
+1. No seu código, carregar um ou mais materiais e adicioná-los ao modelo. Como os modelos podem usar vários materiais (um para cada malha no modelo), use [Mesh.MaterialIndex](xref:Stride.Rendering.Mesh.MaterialIndex) para especificar quais materiais na lista são usados para que malha.
 
-   For example:
+   Por exemplo:
 
    ```cs
-   // Add one or more materials. Because models might expect multiple materials (one per mesh), Mesh.MaterialIndex specifies which material in the list is used for which mesh.
+   \/\/ Adicione um ou mais materiais. Como os modelos podem esperar vários materiais (um por malha), Mesh.MaterialIndex especifica qual material na lista é usado para que malha.
    
-   Material material = Content.Load<Material>("MyFolder/MyMaterial");
-   model.Materials.Add(material);
+   Material material = Conteúdo.Load<Material>("MyFolder\/MyMaterial");
+   modelo. Material.Adicionar (material);
    ```
 
-2. In the **Asset View**, right-click every material asset your script uses and select `Include in build as root asset`.
+2. No **Asset View**, clique com o botão direito de cada ativo de material que o seu script usa e selecione `Incluir na compilação como root asset`.
 
-   ![Include in build as root asset](media/create-model-from-code-include-material-in-build-as-root-asset.png)
+   <x1\/>Incluir em compilação como root asset<x2\/>
 
-   This makes sure the asset is available for the script to use at runtime. For more information, see [Manage assets](../game-studio/manage-assets.md).
+   Isso garante que o ativo esteja disponível para o script usar em tempo de execução. Para obter mais informações, consulte [Gerenciar ativos](../game-studio/manage-assets.md).
 
-### Option 2: Create new materials in code
+### Opção 2: Criar novos materiais em código
 
-For example:
+Por exemplo:
 
 ```cs
-    // Create a material (eg with red diffuse color).
-    var materialDescription = new MaterialDescriptor
-    {
-        Attributes =
-	    {
-	        DiffuseModel = new MaterialDiffuseLambertModelFeature(),
-	        Diffuse = new MaterialDiffuseMapFeature(new ComputeColor { Key = MaterialKeys.DiffuseValue })
+    \/\/ Criar um material (por exemplo, com cor difusa vermelha).
+    material de vareta Descrição: new MaterialDescriptor
+    (
+        Atributos =
+	    (
+	        DiffuseModel = novo MaterialDiffuseLambertModelFeature(),
+	        Diffuse = novo MaterialDiffuseMapFeature (novo ComputeColor { Chave = MaterialKeys.DiffuseValue })
 	    }
     };
-    var material = Material.New(GraphicsDevice, materialDescription);
-    material.Parameters[0].Set(MaterialKeys.DiffuseValue, Color.Red);
-    model.Materials.Add(0, material);
+    var material = Material.Novo (GráficoDispositivo, materialDescrição);
+    material. Parâmetros[0]. Conjunto (MaterialKeys.DiffuseValue, Color.Red);
+    modelo. Material.Add(0, material);
 ```
 
-## See also
+## Ver também
 
-* [Create a script](create-a-script.md)
-* [Use a script](use-a-script.md)
+* [Criar um script](create-a-script.md)
+* [Use um script](use-a-script.md)
 * [Use prefabs](../game-studio/prefabs/use-prefabs.md)

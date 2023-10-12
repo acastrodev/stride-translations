@@ -1,16 +1,16 @@
-# Delta Time
-You can find this sample in the tutorial project: **Menu** &rarr; **Delta Time**
+# Hora do Delta
+Você pode encontrar esta amostra no projeto tutorial: **Menu** → **Delta Time**
 
-## Explanation
-This C# Beginner tutorial covers the retrieval and usage of delta time.
+## Explicação
+Este tutorial C# Beginner cobre a recuperação e uso do tempo delta.
 
-A game tries to update itself as often as possible. The amount of times it updates in a single second is called 'Frames Per Second' or shortened to 'FPS'.
+Um jogo tenta atualizar-se o mais frequentemente possível. A quantidade de vezes que ele atualiza em um único segundo é chamado 'Frames Per Second' ou encurtado para 'FPS'.
 
-If we wanted to update a timer value, we would need a value that takes into account what the current amount of frames per second is. That is what delta time is used for. So whether your game runs 30 FPS or 120 FPS: you always want to have the same time scale.
+Se quisermos atualizar um valor de temporizador, precisamos de um valor que leve em conta o que é a quantidade atual de quadros por segundo. É para isso que o tempo delta é usado. Então, se o seu jogo roda 30 FPS ou 120 FPS: você sempre quer ter a mesma escala de tempo.
 
-![Delta Time](media/deltatime.webp)
+<x1\/>Delta Tempo<x2\/>
 
-> [!Video https://www.youtube.com/embed/WMGY8JOqzeE]
+> <x1\/>!Vídeo https:\/\/www.youtube.com\/embed\/WMGY8JOqzeE<x2\/>
 
-## Code
+## Código
 [!code-csharp[DeltaTime](../../../../stride/samples/Tutorials/CSharpBeginner/CSharpBeginner/CSharpBeginner.Game/Code/DeltaTimeDemo.cs)]

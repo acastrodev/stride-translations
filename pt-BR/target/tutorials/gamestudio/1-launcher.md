@@ -1,7 +1,7 @@
-# Stride Launcher &#128640;
+# Lançador de Stride 🚀
 
-This tutorial explains the Stride Launcher.
+Este tutorial explica o Stride Launcher.
 
-[!INCLUDE [stride-studio-note](../../includes/game-studio-xenko-note.md)]
+[! INCLUÍDO [stride-studio-note](../../includes/game-studio-xenko-note.md)]
 
-> [!Video https://www.youtube.com/embed/JO9XusgPi8w]
+> [!Vídeo https://www.youtube.com/embed/JO9XusgPi8w]

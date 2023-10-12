@@ -1,130 +1,130 @@
 # Xbox Live
 
-This page explains how to configure your project to work with Xbox Live.
+Esta página explica como configurar seu projeto para trabalhar com o Xbox Live.
 
-## 1. Before you start
+## 1. Antes de começar
 
-1. Make sure your project uses UWP as a platform. To do this, you can either:
+1. Certifique-se de que seu projeto usa UWP como uma plataforma. Para fazer isso, você pode:
 
-   * [create a project](../../get-started/create-a-project.md) and select **UWP** as a platform, or
-   * [add **UWP** as a platform to an existing project](../add-or-remove-a-platform.md)
+   * [criar um projeto](../../get-started/create-a-project.md) e selecionar **UWP** como uma plataforma, ou
+   * [adicionar **UWP** como uma plataforma para um projeto existente](../add-or-remove-a-platform.md)
 
-   > [!Tip]
-   > For this tutorial, you might find it useful to create a new project to test the process, then apply the knowledge to your existing projects.
+   > <x1\/>!Tip<x2\/>
+   > Para este tutorial, você pode achar útil criar um novo projeto para testar o processo e, em seguida, aplicar o conhecimento aos seus projetos existentes.
 
-2. Make sure you can run the project from UWP. To do this, in Visual Studio, select the platform you want (UWP-64, UWP-32, or UWP-ARM) from the **Solution Platform** drop-down list, and run the project.
+2. Certifique-se de que você pode executar o projeto da UWP. Para fazer isso, no Visual Studio, selecione a plataforma que você deseja (UWP-64, UWP-32 ou UWP-ARM) na lista drop-down **Solution Platform** e execute o projeto.
 
-3. Download the Xbox Live SDK.
+3. Baixe o Xbox Live SDK.
 
-   To write this page, we used XboxLiveSDK-1612-20170114-002. The sample is loosely based on the Achievements sample in the Xbox Live SDK.
+   Para escrever esta página, usamos o XboxLiveSDK-1612-20170114-002. A amostra é vagamente baseada na amostra Achievements no Xbox Live SDK.
 
-4. Change your Xbox Live environment. In the **SDK** folder, under **Tools**, run:
+4. Altere o ambiente Xbox Live. Na pasta **SDK**, abaixo de **Ferramentas**, execute:
 
    ```
-   SwitchSandbox.cmd XDKS.1
+   InterruptorSandbox.cmd XDKS.1
    ```
 
-   XDKS.1 is the sandbox used for the Microsoft samples.
+   XDKS.1 é a caixa de areia usada para as amostras da Microsoft.
 
-   > [!Warning]
-   > This blocks regular Xbox accounts and only permits developer accounts. To switch back, run:
+   > <x1\/>!Warning<x2\/>
+   > Isso bloqueia contas regulares do Xbox e só permite contas de desenvolvedor. Para voltar, execute:
 
    > ```
-   > SwitchSandbox.cmd RETAIL
+   > InterruptorSandbox.cmd RETADOS
    > ```
 
-5. Make sure you can run the Achievements sample with your developer account.
+5. Certifique-se de que você pode executar a amostra Achievements com sua conta de desenvolvedor.
 
-## 2. Add the Xbox Live SDK to your solution
+## 2. Adicione o Xbox Live SDK à sua solução
 
-1. In Visual Studio, open your game solution.
+1. No Visual Studio, abra sua solução de jogo.
 
-2. Open the Package Manager Console (**Tools > NuGet Package Manager > Package Manager Console**).
+2. Abra o Console do Gestor de Pacotes (**Tools > NuGet Package Manager > Package Manager Console**).
 
-3. In the **Default project** field, select your UWP project (eg *MyGame.UWP*).
+3. No campo **Default project**, selecione seu projeto UWP (por exemplo *MyGame.UWP*).
 
-   ![MyGame.UWP](media/xboxlive01.png)
+   <x1\/>MyGame.UWP<x2\/>
 
-4. In the console, type:
-
-   ```
-   PM > Install-Package Microsoft.Xbox.Live.SDK.WinRT.UWP
-   ```
-
-   Visual Studio adds the NuGet package to your project.
-
-5. Make sure the package appears in the **References** list.
-
-   ![Package in list](media/xboxlive02.png)
-
-## 3. Configure the UWP project
-
-1. Delete *MyGame.UWP.TemporaryKey.pfx*.
-
-2. Add *xboxservices.config* to your project.
-
-   You can get this file from any Xbox Live SDK sample (eg the Achievements sample) for test purposes. When you want to publish the game, change the **TitleId** and **Service config Id** with the ones provided for your project. For details, see the Xbox Live documentation.
-
-3. In the *xboxservices.config* properties, under **Build Action**, select **Content**, and under **Copy to Output Directory**, select **Always**.
-
-   ![Properties](media/xboxlive03.png)
-
-4. Edit *Package.appxmanifest* with details relevant to your project.
-
-   Again, you can use the manifest file from any Xbox Live SDK sample (eg the Achievements sample) for test purposes. If you associate your game with a store app, use the generated manifest file. For details, see the Xbox Live documentation.
-
-5. Make sure the capability *InternetClientServer* is enabled.
-
-## 4. Add user account scripts to your game
-
-You need to enable Xbox Live capability in your game project without exposing the Xbox Live SDK. As *MyGame.UWP* already references *MyGame.Game*, we can't reference it. Instead, we can create an interface and implement it from the UWP project side.
-
-> [!Note]
-> There are several ways to do this. This page explains one method.
-
-1. Add two interfaces to your game, `IAccountManager` and `IConnectedAccount`.
-
-2. On your UWP project (eg *MyGame.UWP*), implement the interfaces `public class XboxAccount : IConnectedAccount` and `public class XboxLiveAccountManager : IAccountManager`.
-
-3. Add the account factory to your game so you can access it later from a game script. In the `MyGameMainPage.xaml.cs`, add the following line:
+4. No console, digite:
 
    ```
-   Game.Services.AddService(typeof(IAccountManager), new XboxLiveAccountManager());
+   PM > Instalar-Pacote Microsoft.Xbox.Live.SDK.WinRT.UWP
    ```
 
-   ![References](media/xboxlive04.png)
+   O Visual Studio adiciona o pacote NuGet ao seu projeto.
 
-   The final script should look like this at minimum:
+5. Certifique-se de que o pacote aparece na lista **References**.
+
+   <x1\/>Pacote na lista<x2\/>
+
+## 3. Configurar o projeto UWP
+
+1. Excluir *MyGame.UWP.TemporaryKey.pfx*.
+
+2. Adicione *xboxservices.config* ao seu projeto.
+
+   Você pode obter este arquivo de qualquer amostra do Xbox Live SDK (por exemplo, a amostra de Conquistas) para fins de teste. Quando você quiser publicar o jogo, altere o **TitleId** e **Service config Id** com os fornecidos para o seu projeto. Para obter detalhes, consulte a documentação do Xbox Live.
+
+3. No *xboxservices.config* propriedades, sob **Build Action**, selecione **Content**, e em **Copy to Output Directory** Selecione ** Sempre**.
+
+   <x1\/>Propriedades <x2\/>
+
+4. Editar *Package.appxmanifest* com detalhes relevantes para o seu projeto.
+
+   Novamente, você pode usar o arquivo de manifesto de qualquer amostra do Xbox Live SDK (por exemplo, a amostra de Achievements) para fins de teste. Se você associar seu jogo com um aplicativo de loja, use o arquivo de manifesto gerado. Para obter detalhes, consulte a documentação do Xbox Live.
+
+5. Certifique-se de que a capacidade *InternetClientServer* está ativada.
+
+## 4. Adicione scripts de conta de usuário ao seu jogo
+
+Você precisa ativar a capacidade do Xbox Live em seu projeto de jogo sem expor o Xbox Live SDK. Como *MyGame.UWP* já referências *MyGame.Game*, não podemos referenciar isso. Em vez disso, podemos criar uma interface e implementá-la do lado do projeto UWP.
+
+> <x1\/>!Note<x2\/>
+> Há várias maneiras de fazer isso. Esta página explica um método.
+
+1. Adicione duas interfaces ao seu jogo, `IAccountManager` e `IConnectedAccount`.
+
+2. No seu projeto UWP (por exemplo *MyGame.UWP*), implemente as interfaces ` classe pública XboxAccount : IConnectedAccount` e ` classe pública XboxLiveAccountManager: IAccountManager`.
+
+3. Adicione a fábrica de contas ao seu jogo para que você possa acessá-lo mais tarde a partir de um script de jogo. No `MyGameMainPage.xaml.cs`, adicione a seguinte linha:
 
    ```
-       public class LoginScript : AsyncScript
-       {
-           private IConnectedAccount account;
+   Game.Services.AddService(typeof(IAccountManager), novo XboxLiveAccountManager());
+   ```
+
+   <x1\/>Referências<x2\/>
+
+   O script final deve olhar como este no mínimo:
+
+   ```
+       classe pública LoginScript : AsyncScript
+       (
+           iConnected privado Conta de conta;
    
-           public override async Task Execute()
-           {
-               var accountMgr = Services.GetServiceAs<IAccountManager>();
-               account = accountMgr?.CreateConnectedAccount();
-   			    if (account == null)
-   				    return;
+           override público async Task Execute()
+           (
+               conta var Mgr = Serviços.GetServiceAs<IAccountManager>();
+               conta = contaMgr?.CreateConnectedAccount();
+   			    se (conta == null)
+   				    voltar;
    
-               var result = account.LoginAsync();
+               var result = conta. LoginAsync();
    
-   	    		// TODO Add your code here!
+   	    		\/\/ TODO Adicione seu código aqui!
            }
        }
    ```
 
-Now you can expose the `xbox_live_user` functionality and other classes in your game.
+Agora você pode expor a funcionalidade `xbox_live_user` e outras classes em seu jogo.
 
-![Property Grid](media/xboxlive05.png)
+<x1\/>Property Grid<x2\/>
 
-## Sample project
+## Projeto de amostra
 
-* [Download a sample project](media/XboxLiveSample.zip) with Xbox Live login functionality
+* [Baixe um projeto de amostra](media/XboxLiveSample.zip) com Xbox Funcionalidade de login ao vivo
 
-   ![Sample project](media/xboxlive08.png)
+   <x1\/> Projeto de amostra <x2\/>
 
-## See also
+## Ver também
 
-* [Platforms](../index.md)
+* [Plataformas](../index.md)

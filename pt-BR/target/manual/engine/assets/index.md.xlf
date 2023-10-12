@@ -3,57 +3,57 @@
 <body>
 <trans-unit id="tu1" xml:space="preserve">
 <source xml:lang="en">Asset manager</source>
-<target xml:lang="pt">Asset manager</target>
+<target xml:lang="pt">Gerenciador de ativos</target>
 </trans-unit>
 <trans-unit id="tu2" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>!Warning<x id="2"/>
 This section is out of date. For now, you should only use it for reference.</source>
-<target xml:lang="pt"><x id="1"/>!Warning<x id="2"/>
-This section is out of date. For now, you should only use it for reference.</target>
+<target xml:lang="pt">&lt;x1\/&gt;!Warning&lt;x2\/&gt;
+Esta seção está fora de data. Por enquanto, você só deve usá-lo para referência.</target>
 </trans-unit>
 <trans-unit id="tu3" xml:space="preserve">
 <source xml:lang="en">Assets</source>
-<target xml:lang="pt">Assets</target>
+<target xml:lang="pt">Activos</target>
 </trans-unit>
 <trans-unit id="tu4" xml:space="preserve">
 <source xml:lang="en">After creating your assets in Game Studio, @'Stride.Core.Serialization.Assets.AssetManager' is the class responsible for loading, unloading and saving assets.</source>
-<target xml:lang="pt">After creating your assets in Game Studio, @'Stride.Core.Serialization.Assets.AssetManager' is the class responsible for loading, unloading and saving assets.</target>
+<target xml:lang="pt">Depois de criar seus ativos no Game Studio, @'Stride.Core.Serialization.Assets.AssetManager' é a classe responsável por carregar, descarregar e salvar ativos.</target>
 </trans-unit>
 <trans-unit id="tu5" xml:space="preserve">
 <source xml:lang="en">Creating</source>
-<target xml:lang="pt">Creating</target>
+<target xml:lang="pt">Criando</target>
 </trans-unit>
 <trans-unit id="tu6" xml:space="preserve">
 <source xml:lang="en">You usually create assets directly in Game Studio.</source>
-<target xml:lang="pt">You usually create assets directly in Game Studio.</target>
+<target xml:lang="pt">Você geralmente cria ativos diretamente no Game Studio.</target>
 </trans-unit>
 <trans-unit id="tu7" xml:space="preserve">
 <source xml:lang="en">Their URL will match the name (including folder) in Game Studio.</source>
-<target xml:lang="pt">Their URL will match the name (including folder) in Game Studio.</target>
+<target xml:lang="pt">Sua URL corresponderá ao nome (incluindo pasta) no Game Studio.</target>
 </trans-unit>
 <trans-unit id="tu8" xml:space="preserve">
 <source xml:lang="en">Examples of URLs:</source>
-<target xml:lang="pt">Examples of URLs:</target>
+<target xml:lang="pt">Exemplos de URLs:</target>
 </trans-unit>
 <trans-unit id="tu9" xml:space="preserve">
 <source xml:lang="en">knight (user imports knight.fbx directly in main asset folder)</source>
-<target xml:lang="pt">knight (user imports knight.fbx directly in main asset folder)</target>
+<target xml:lang="pt">cavaleiro (usuário importa cavaleiro. fbx diretamente na pasta de ativos principal)</target>
 </trans-unit>
 <trans-unit id="tu10" xml:space="preserve">
 <source xml:lang="en">level1/room1 (user creates level1 and import room1.fbx inside)</source>
-<target xml:lang="pt">level1/room1 (user creates level1 and import room1.fbx inside)</target>
+<target xml:lang="pt">level1\/room1 (o usuário cria nível1 e sala de importação1.fbx dentro)</target>
 </trans-unit>
 <trans-unit id="tu11" xml:space="preserve">
 <source xml:lang="en">For more information, see <g id="1">Assets</g> for more details.</source>
-<target xml:lang="pt">For more information, see <g id="1">Assets</g> for more details.</target>
+<target xml:lang="pt">Para mais informações, consulte <g id="1">Ativos</g> para mais detalhes.</target>
 </trans-unit>
 <trans-unit id="tu12" xml:space="preserve">
 <source xml:lang="en">Loading</source>
-<target xml:lang="pt">Loading</target>
+<target xml:lang="pt">A carregar</target>
 </trans-unit>
 <trans-unit id="tu13" xml:space="preserve">
 <source xml:lang="en">Loading an asset should be done with the help of @'Stride.Core.Serialization.Assets.AssetManager' class:</source>
-<target xml:lang="pt">Loading an asset should be done with the help of @'Stride.Core.Serialization.Assets.AssetManager' class:</target>
+<target xml:lang="pt">Carregar um ativo deve ser feito com a ajuda de @'Stride. Core.Serialization.Assets.AssetManager' classe:</target>
 </trans-unit>
 <trans-unit id="tu14" xml:space="preserve">
 <source xml:lang="en">// Load an asset directly from a file:
@@ -65,53 +65,53 @@ var scene = Content.Load&lt;Scene&gt;("scenes/scene1");
 // Load an Entity asset
 var entity = Content.Load&lt;Entity&gt;("entity1");
 </source>
-<target xml:lang="pt">// Load an asset directly from a file:
+<target xml:lang="pt">\/\/ Carregar um ativo diretamente de um arquivo:
 var texture = Content.Load&lt;Texture&gt;("texture1");
 
-// Load a Scene asset
-var scene = Content.Load&lt;Scene&gt;("scenes/scene1");
+\/\/ Carregar um recurso de cena
+var scene = Content.Load&lt;Scene&gt;("scenes\/scene1");
  
-// Load an Entity asset
+\/\/ Carregar um ativo de Entidade
 var entity = Content.Load&lt;Entity&gt;("entity1");
 </target>
 </trans-unit>
 <trans-unit id="tu15" xml:space="preserve">
 <source xml:lang="en">Note that loading an asset that has already been loaded only increment the reference counter and do not reload the asset.</source>
-<target xml:lang="pt">Note that loading an asset that has already been loaded only increment the reference counter and do not reload the asset.</target>
+<target xml:lang="pt">Note que carregar um ativo que já foi carregado apenas incrementar o contador de referência e não recarregar o ativo.</target>
 </trans-unit>
 <trans-unit id="tu16" xml:space="preserve">
 <source xml:lang="en">Unloading</source>
-<target xml:lang="pt">Unloading</target>
+<target xml:lang="pt">Descarregamento</target>
 </trans-unit>
 <trans-unit id="tu17" xml:space="preserve">
 <source xml:lang="en">Unloading is also done using the AssetManager class:</source>
-<target xml:lang="pt">Unloading is also done using the AssetManager class:</target>
+<target xml:lang="pt">Descarregamento também é feito usando a classe AssetManager:</target>
 </trans-unit>
 <trans-unit id="tu18" xml:space="preserve">
 <source xml:lang="en"> Asset.Unload(asset);
 </source>
-<target xml:lang="pt"> Asset.Unload(asset);
+<target xml:lang="pt"> Asset.Unload (asset);
 </target>
 </trans-unit>
 <trans-unit id="tu19" xml:space="preserve">
 <source xml:lang="en">Asset life time</source>
-<target xml:lang="pt">Asset life time</target>
+<target xml:lang="pt">Tempo de vida dos ativos</target>
 </trans-unit>
 <trans-unit id="tu20" xml:space="preserve">
 <source xml:lang="en">Asset load and unload are working in pairs. For each call to 'load', a corresponding call to 'unload' is expected.</source>
-<target xml:lang="pt">Asset load and unload are working in pairs. For each call to 'load', a corresponding call to 'unload' is expected.</target>
+<target xml:lang="pt">Carga de ativos e descarga estão trabalhando em pares. Para cada chamada para "carga", espera-se uma chamada correspondente para "descarga".</target>
 </trans-unit>
 <trans-unit id="tu21" xml:space="preserve">
 <source xml:lang="en">An asset is actually loaded only during the first call to 'load'. All subsequent calls only result to an asset reference increment.</source>
-<target xml:lang="pt">An asset is actually loaded only during the first call to 'load'. All subsequent calls only result to an asset reference increment.</target>
+<target xml:lang="pt">Um ativo é realmente carregado apenas durante a primeira chamada para "carga". Todas as chamadas subsequentes só resultam em um incremento de referência de ativos.</target>
 </trans-unit>
 <trans-unit id="tu22" xml:space="preserve">
 <source xml:lang="en">An asset is actually unload only when the number of call to unload match the number of call the load.</source>
-<target xml:lang="pt">An asset is actually unload only when the number of call to unload match the number of call the load.</target>
+<target xml:lang="pt">Um ativo é realmente descarregar somente quando o número de chamada para descarregar corresponde ao número de chamada da carga.</target>
 </trans-unit>
 <trans-unit id="tu23" xml:space="preserve">
 <source xml:lang="en">The @'Stride.Core.Serialization.Assets.AssetManager.Get' method returns the reference to a loaded asset but does not increment the asset reference counter.</source>
-<target xml:lang="pt">The @'Stride.Core.Serialization.Assets.AssetManager.Get' method returns the reference to a loaded asset but does not increment the asset reference counter.</target>
+<target xml:lang="pt">O @'Stride.Core.Serialization.Assets.AssetManager. O método Get' retorna a referência a um ativo carregado, mas não incrementa o contador de referência de ativos.</target>
 </trans-unit>
 <trans-unit id="tu24" xml:space="preserve">
 <source xml:lang="en"> var firstReference = Content.Load&lt;Texture&gt;("MyTexture"); // load the asset and increase the reference counter (ref count = 1)
@@ -133,24 +133,24 @@ Asset.Unload(secondReference); // decrease the reference counter and unload the 
  
 // The texture has been unloaded, it cannot be used here any more.
 </source>
-<target xml:lang="pt"> var firstReference = Content.Load&lt;Texture&gt;("MyTexture"); // load the asset and increase the reference counter (ref count = 1)
+<target xml:lang="pt"> var firstReference = Content.Load&lt;Texture&gt;("MyTexture"); \/\/ carregar o ativo e aumentar o contador de referência (contagem de ref = 1)
  
-// the texture can be used here
+\/\/ a textura pode ser usada aqui
  
-var secondReference = Content.Load&lt;Texture&gt;("MyTexture"); // only increase the reference counter (ref count = 2)
+var secondReference = Content.Load&lt;Texture&gt;("MyTexture"); \/\/ só aumentar o contador de referência (contagem de ref = 2)
  
-// the texture can still be used here
+\/\/ a textura ainda pode ser usada aqui
  
-Asset.Unload(firstReference); // decrease the reference counter (ref count = 1)
+Asset.Unload(firstReference); \/\/ diminuem o contador de referência (ref count = 1)
  
-// the texture can still be used here
+\/\/ a textura ainda pode ser usada aqui
  
-Asset.Get&lt;Texture&gt;("MyTexture"); // return the loaded asset without increasing the reference counter (ref count = 1)
+Asset.Get&lt;Texture&gt;("MyTexture"); \/\/ retornar o ativo carregado sem aumentar o contador de referência (contagem de ref = 1)
  
-// the texture can still be used here
-Asset.Unload(secondReference); // decrease the reference counter and unload the asset (ref count = 0)
+\/\/ a textura ainda pode ser usada aqui
+Asset.Unload(secondReference); \/\/ diminuem o contador de referência e descarreguem o ativo (contagem de retorno = 0)
  
-// The texture has been unloaded, it cannot be used here any more.
+\/\/ A textura foi descarregada, não pode ser usada aqui mais.
 </target>
 </trans-unit>
 </body>

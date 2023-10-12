@@ -1,451 +1,451 @@
 {
-    "filename": "manual\\graphics\\rendering-pipeline\\render-stages.md.xlf",
-    "files": [
-        {
-            "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/rendering-pipeline\/render-stages.md": [
-                [
-                    "Render stages",
-                    "",
-                    "Render stages",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/rendering-pipeline\/render-stages.md",
-                    {
-                        "id": "tu1"
-                    }
-                ],
-                [
-                    "<g1>Render stages<\/g1> define how given objects are rendered (usually with their associated <g2>effect\/shader<\/g2>).",
-                    "",
-                    "<g1>Render stages<\/g1> define how given objects are rendered (usually with their associated <g2>effect\/shader<\/g2>).",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/rendering-pipeline\/render-stages.md",
-                    {
-                        "id": "tu2"
-                    }
-                ],
-                [
-                    "They also let you control advanced properties such as sorting and filtering objects.",
-                    "",
-                    " They also let you control advanced properties such as sorting and filtering objects.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/rendering-pipeline\/render-stages.md",
-                    {
-                        "id": "tu2"
-                    }
-                ],
-                [
-                    "Objects can subscribe to multiple render stages.",
-                    "",
-                    "Objects can subscribe to multiple render stages.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/rendering-pipeline\/render-stages.md",
-                    {
-                        "id": "tu3"
-                    }
-                ],
-                [
-                    "For example, a mesh typically subscribes to both the <g1>Opaque<\/g1> and <g2>ShadowCaster<\/g2> stages, or the <g3>Transparent<\/g3> stage.",
-                    "",
-                    " For example, a mesh typically subscribes to both the <g1>Opaque<\/g1> and <g2>ShadowCaster<\/g2> stages, or the <g3>Transparent<\/g3> stage.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/rendering-pipeline\/render-stages.md",
-                    {
-                        "id": "tu3"
-                    }
-                ],
-                [
-                    "<x1\/>!Note<x2\/>",
-                    "",
-                    "<x1\/>!Note<x2\/>\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/rendering-pipeline\/render-stages.md",
-                    {
-                        "id": "tu4"
-                    }
-                ],
-                [
-                    "Render stages don't define the rendering order.",
-                    "",
-                    "Render stages don't define the rendering order.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/rendering-pipeline\/render-stages.md",
-                    {
-                        "id": "tu4"
-                    }
-                ],
-                [
-                    "The rendering order is controlled by the <g1>graphics compositor<\/g1>.",
-                    "",
-                    " The rendering order is controlled by the <g1>graphics compositor<\/g1>.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/rendering-pipeline\/render-stages.md",
-                    {
-                        "id": "tu4"
-                    }
-                ],
-                [
-                    "Effect slots",
-                    "",
-                    "Effect slots",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/rendering-pipeline\/render-stages.md",
-                    {
-                        "id": "tu5"
-                    }
-                ],
-                [
-                    "<g1>Effect slots<\/g1> determine which <g2>effect\/shader<\/g2> a render stage uses.",
-                    "",
-                    "<g1>Effect slots<\/g1> determine which <g2>effect\/shader<\/g2> a render stage uses.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/rendering-pipeline\/render-stages.md",
-                    {
-                        "id": "tu6"
-                    }
-                ],
-                [
-                    "You choose the effect slot with @'Stride.Rendering.RenderStage.EffectSlotName'.",
-                    "",
-                    " You choose the effect slot with @'Stride.Rendering.RenderStage.EffectSlotName'.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/rendering-pipeline\/render-stages.md",
-                    {
-                        "id": "tu6"
-                    }
-                ],
-                [
-                    "If multiple render stages exclusively render different objects, the stages can share the same effect slot.",
-                    "",
-                    "If multiple render stages exclusively render different objects, the stages can share the same effect slot.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/rendering-pipeline\/render-stages.md",
-                    {
-                        "id": "tu7"
-                    }
-                ],
-                [
-                    "For example, as the opaque stage only renders opaque objects and the transparent stage only renders transparent objects, both stages can use the main effect slot.",
-                    "",
-                    " For example, as the opaque stage only renders opaque objects and the transparent stage only renders transparent objects, both stages can use the main effect slot.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/rendering-pipeline\/render-stages.md",
-                    {
-                        "id": "tu7"
-                    }
-                ],
-                [
-                    "If they render any of the same objects, they can't share effect slots.",
-                    "",
-                    "If they render any of the same objects, they can't share effect slots.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/rendering-pipeline\/render-stages.md",
-                    {
-                        "id": "tu8"
-                    }
-                ],
-                [
-                    "This is why, for example, we typically render opaque meshes with the main effect slot, then render opaque meshes again with the shadow caster effect slot to create shadows.",
-                    "",
-                    " This is why, for example, we typically render opaque meshes with the main effect slot, then render opaque meshes again with the shadow caster effect slot to create shadows.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/rendering-pipeline\/render-stages.md",
-                    {
-                        "id": "tu8"
-                    }
-                ],
-                [
-                    "A typical setup of render stages:",
-                    "",
-                    "A typical setup of render stages:",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/rendering-pipeline\/render-stages.md",
-                    {
-                        "id": "tu9"
-                    }
-                ],
-                [
-                    "Render stage",
-                    "",
-                    "Render stage",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/rendering-pipeline\/render-stages.md",
-                    {
-                        "id": "tu10"
-                    }
-                ],
-                [
-                    "Effect slot",
-                    "",
-                    "Effect slot",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/rendering-pipeline\/render-stages.md",
-                    {
-                        "id": "tu11"
-                    }
-                ],
-                [
-                    "Opaque",
-                    "",
-                    "Opaque",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/rendering-pipeline\/render-stages.md",
-                    {
-                        "id": "tu12"
-                    }
-                ],
-                [
-                    "Main",
-                    "",
-                    "Main",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/rendering-pipeline\/render-stages.md",
-                    {
-                        "id": "tu13"
-                    }
-                ],
-                [
-                    "Transparent",
-                    "",
-                    "Transparent",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/rendering-pipeline\/render-stages.md",
-                    {
-                        "id": "tu14"
-                    }
-                ],
-                [
-                    "Main",
-                    "",
-                    "Main",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/rendering-pipeline\/render-stages.md",
-                    {
-                        "id": "tu15"
-                    }
-                ],
-                [
-                    "UI",
-                    "",
-                    "UI",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/rendering-pipeline\/render-stages.md",
-                    {
-                        "id": "tu16"
-                    }
-                ],
-                [
-                    "Main",
-                    "",
-                    "Main",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/rendering-pipeline\/render-stages.md",
-                    {
-                        "id": "tu17"
-                    }
-                ],
-                [
-                    "Shadow caster",
-                    "",
-                    "Shadow caster",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/rendering-pipeline\/render-stages.md",
-                    {
-                        "id": "tu18"
-                    }
-                ],
-                [
-                    "Shadow caster",
-                    "",
-                    "Shadow caster",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/rendering-pipeline\/render-stages.md",
-                    {
-                        "id": "tu19"
-                    }
-                ],
-                [
-                    "Sort objects in a render stage",
-                    "",
-                    "Sort objects in a render stage",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/rendering-pipeline\/render-stages.md",
-                    {
-                        "id": "tu20"
-                    }
-                ],
-                [
-                    "@'Stride.Rendering.RenderStage.SortMode' defines how Stride sorts objects in that render stage.",
-                    "",
-                    "@'Stride.Rendering.RenderStage.SortMode' defines how Stride sorts objects in that render stage.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/rendering-pipeline\/render-stages.md",
-                    {
-                        "id": "tu21"
-                    }
-                ],
-                [
-                    "Stride comes with several @'Stride.Rendering.SortMode' implementations, such as:",
-                    "",
-                    " Stride comes with several @'Stride.Rendering.SortMode' implementations, such as:",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/rendering-pipeline\/render-stages.md",
-                    {
-                        "id": "tu21"
-                    }
-                ],
-                [
-                    "@'Stride.Rendering.FrontToBackSortMode', which renders objects from front to back with limited precision, and tries to avoid state changes in the same depth range of objects (useful for opaque objects and shadows)",
-                    "",
-                    "@'Stride.Rendering.FrontToBackSortMode', which renders objects from front to back with limited precision, and tries to avoid state changes in the same depth range of objects (useful for opaque objects and shadows)",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/rendering-pipeline\/render-stages.md",
-                    {
-                        "id": "tu22"
-                    }
-                ],
-                [
-                    "@'Stride.Rendering.BackToFrontSortMode', which renders objects strictly from back to front (useful for transparent objects)",
-                    "",
-                    "@'Stride.Rendering.BackToFrontSortMode', which renders objects strictly from back to front (useful for transparent objects)",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/rendering-pipeline\/render-stages.md",
-                    {
-                        "id": "tu23"
-                    }
-                ],
-                [
-                    "@'Stride.Rendering.StateChangeSortMode', which tries to reduce state changes",
-                    "",
-                    "@'Stride.Rendering.StateChangeSortMode', which tries to reduce state changes",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/rendering-pipeline\/render-stages.md",
-                    {
-                        "id": "tu24"
-                    }
-                ],
-                [
-                    "Of course, you're free to implement your own, too.",
-                    "",
-                    "Of course, you're free to implement your own, too.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/rendering-pipeline\/render-stages.md",
-                    {
-                        "id": "tu25"
-                    }
-                ],
-                [
-                    "Filter objects in a render stage",
-                    "",
-                    "Filter objects in a render stage",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/rendering-pipeline\/render-stages.md",
-                    {
-                        "id": "tu26"
-                    }
-                ],
-                [
-                    "To create your own filter for objects in a render stage, inherit from @'Stride.Rendering.RenderStageFilter'.",
-                    "",
-                    "To create your own filter for objects in a render stage, inherit from @'Stride.Rendering.RenderStageFilter'.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/rendering-pipeline\/render-stages.md",
-                    {
-                        "id": "tu27"
-                    }
-                ],
-                [
-                    "Render stage selectors",
-                    "",
-                    "Render stage selectors",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/rendering-pipeline\/render-stages.md",
-                    {
-                        "id": "tu28"
-                    }
-                ],
-                [
-                    "<g1>Render stage selectors<\/g1> define which objects in your scene are sent to which render stage, and choose which <g2>effect<\/g2> to use when rendering a given object.",
-                    "",
-                    "<g1>Render stage selectors<\/g1> define which objects in your scene are sent to which render stage, and choose which <g2>effect<\/g2> to use when rendering a given object.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/rendering-pipeline\/render-stages.md",
-                    {
-                        "id": "tu29"
-                    }
-                ],
-                [
-                    "For example, this is the typical setup for meshes:",
-                    "",
-                    "For example, this is the typical setup for meshes:",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/rendering-pipeline\/render-stages.md",
-                    {
-                        "id": "tu30"
-                    }
-                ],
-                [
-                    "@'Stride.Rendering.MeshTransparentRenderStageSelector' chooses either the <g1>Main<\/g1> or <g2>Transparent<\/g2> render stage, depending on the material properties.",
-                    "",
-                    "@'Stride.Rendering.MeshTransparentRenderStageSelector' chooses either the <g1>Main<\/g1> or <g2>Transparent<\/g2> render stage, depending on the material properties.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/rendering-pipeline\/render-stages.md",
-                    {
-                        "id": "tu31"
-                    }
-                ],
-                [
-                    "The default effect is <g3>StrideForwardShadingEffect<\/g3> defined by Stride (you can create your own if you want).",
-                    "",
-                    " The default effect is <g3>StrideForwardShadingEffect<\/g3> defined by Stride (you can create your own if you want).",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/rendering-pipeline\/render-stages.md",
-                    {
-                        "id": "tu31"
-                    }
-                ],
-                [
-                    "@'Stride.Rendering.Shadows.ShadowMapRenderStageSelector' selects opaque meshes that cast shadows and adds them to the <g1>ShadowMapCaster<\/g1> render stage.",
-                    "",
-                    "@'Stride.Rendering.Shadows.ShadowMapRenderStageSelector' selects opaque meshes that cast shadows and adds them to the <g1>ShadowMapCaster<\/g1> render stage.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/rendering-pipeline\/render-stages.md",
-                    {
-                        "id": "tu32"
-                    }
-                ],
-                [
-                    "The default effect is <g2>StrideForwardShadingEffect.ShadowMapCaster<\/g2>, defined by Stride.",
-                    "",
-                    " The default effect is <g2>StrideForwardShadingEffect.ShadowMapCaster<\/g2>, defined by Stride.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/rendering-pipeline\/render-stages.md",
-                    {
-                        "id": "tu32"
-                    }
-                ],
-                [
-                    "Either can filter by <g1>render group<\/g1>.",
-                    "",
-                    "Either can filter by <g1>render group<\/g1>.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/rendering-pipeline\/render-stages.md",
-                    {
-                        "id": "tu33"
-                    }
-                ],
-                [
-                    "You can customize everything, so you can add other predefined render stage selectors (eg to add UI to a later full-screen pass), or create your own selector specific to your game.",
-                    "",
-                    "You can customize everything, so you can add other predefined render stage selectors (eg to add UI to a later full-screen pass), or create your own selector specific to your game.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/rendering-pipeline\/render-stages.md",
-                    {
-                        "id": "tu34"
-                    }
-                ],
-                [
-                    "See also",
-                    "",
-                    "See also",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/rendering-pipeline\/render-stages.md",
-                    {
-                        "id": "tu35"
-                    }
-                ],
-                [
-                    "Rendering pipeline",
-                    "",
-                    "<g1>Rendering pipeline<\/g1>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/rendering-pipeline\/render-stages.md",
-                    {
-                        "id": "tu36"
-                    }
-                ],
-                [
-                    "Render features",
-                    "",
-                    "<g1>Render features<\/g1>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/rendering-pipeline\/render-stages.md",
-                    {
-                        "id": "tu37"
-                    }
-                ],
-                [
-                    "Effects and shaders",
-                    "",
-                    "<g1>Effects and shaders<\/g1>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/rendering-pipeline\/render-stages.md",
-                    {
-                        "id": "tu38"
-                    }
-                ],
-                [
-                    "Graphics compositor",
-                    "",
-                    "<g1>Graphics compositor<\/g1>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/graphics\/rendering-pipeline\/render-stages.md",
-                    {
-                        "id": "tu39"
-                    }
-                ]
-            ]
-        }
-    ],
-    "seg_enabled": false
+  "filename": "manual\\graphics\\rendering-pipeline\\render-stages.md.xlf",
+  "files": [
+    {
+      "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/rendering-pipeline\\/render-stages.md": [
+        [
+          "Render stages",
+          "Etapas de renderização",
+          "Render stages",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/rendering-pipeline\\/render-stages.md",
+          {
+            "id": "tu1"
+          }
+        ],
+        [
+          "<g1>Render stages<\\/g1> define how given objects are rendered (usually with their associated <g2>effect\\/shader<\\/g2>).",
+          "<g1> Etapas de gênero<\\/g1> definem como os objetos dados são renderizados (geralmente com seu <g2>effect\\/shader<\\/g2>).",
+          "<g1>Render stages<\\/g1> define how given objects are rendered (usually with their associated <g2>effect\\/shader<\\/g2>).",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/rendering-pipeline\\/render-stages.md",
+          {
+            "id": "tu2"
+          }
+        ],
+        [
+          "They also let you control advanced properties such as sorting and filtering objects.",
+          "Eles também permitem que você controle propriedades avançadas, como classificação e filtragem de objetos.",
+          " They also let you control advanced properties such as sorting and filtering objects.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/rendering-pipeline\\/render-stages.md",
+          {
+            "id": "tu2"
+          }
+        ],
+        [
+          "Objects can subscribe to multiple render stages.",
+          "Os objetos podem se inscrever em várias etapas de renderização.",
+          "Objects can subscribe to multiple render stages.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/rendering-pipeline\\/render-stages.md",
+          {
+            "id": "tu3"
+          }
+        ],
+        [
+          "For example, a mesh typically subscribes to both the <g1>Opaque<\\/g1> and <g2>ShadowCaster<\\/g2> stages, or the <g3>Transparent<\\/g3> stage.",
+          "Por exemplo, uma malha geralmente se inscreve tanto nos estágios <g1>Opaque<\\/g1> e <g2>ShadowCaster<\\/g2>, ou no estágio <g3>Transparent<\\/g3>.",
+          " For example, a mesh typically subscribes to both the <g1>Opaque<\\/g1> and <g2>ShadowCaster<\\/g2> stages, or the <g3>Transparent<\\/g3> stage.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/rendering-pipeline\\/render-stages.md",
+          {
+            "id": "tu3"
+          }
+        ],
+        [
+          "<x1\\/>!Note<x2\\/>",
+          "<x1\\/>!Note<x2\\/>",
+          "<x1\\/>!Note<x2\\/>\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/rendering-pipeline\\/render-stages.md",
+          {
+            "id": "tu4"
+          }
+        ],
+        [
+          "Render stages don't define the rendering order.",
+          "Os estágios de renderização não definem a ordem de renderização.",
+          "Render stages don't define the rendering order.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/rendering-pipeline\\/render-stages.md",
+          {
+            "id": "tu4"
+          }
+        ],
+        [
+          "The rendering order is controlled by the <g1>graphics compositor<\\/g1>.",
+          "A ordem de renderização é controlada pelo compositor <g1>graphics<\\/g1>.",
+          " The rendering order is controlled by the <g1>graphics compositor<\\/g1>.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/rendering-pipeline\\/render-stages.md",
+          {
+            "id": "tu4"
+          }
+        ],
+        [
+          "Effect slots",
+          "Slots de efeito",
+          "Effect slots",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/rendering-pipeline\\/render-stages.md",
+          {
+            "id": "tu5"
+          }
+        ],
+        [
+          "<g1>Effect slots<\\/g1> determine which <g2>effect\\/shader<\\/g2> a render stage uses.",
+          "<g1>Effect slots<\\/g1> determinam qual <g2>effect\\/shader<\\/g2> um estágio de renderização usa.",
+          "<g1>Effect slots<\\/g1> determine which <g2>effect\\/shader<\\/g2> a render stage uses.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/rendering-pipeline\\/render-stages.md",
+          {
+            "id": "tu6"
+          }
+        ],
+        [
+          "You choose the effect slot with @'Stride.Rendering.RenderStage.EffectSlotName'.",
+          "Você escolhe o slot de efeito com @'Stride.Rendering.RenderStage.EffectSlotName'.",
+          " You choose the effect slot with @'Stride.Rendering.RenderStage.EffectSlotName'.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/rendering-pipeline\\/render-stages.md",
+          {
+            "id": "tu6"
+          }
+        ],
+        [
+          "If multiple render stages exclusively render different objects, the stages can share the same effect slot.",
+          "Se várias etapas de renderização exclusivamente renderizar objetos diferentes, as etapas podem compartilhar o mesmo slot de efeito.",
+          "If multiple render stages exclusively render different objects, the stages can share the same effect slot.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/rendering-pipeline\\/render-stages.md",
+          {
+            "id": "tu7"
+          }
+        ],
+        [
+          "For example, as the opaque stage only renders opaque objects and the transparent stage only renders transparent objects, both stages can use the main effect slot.",
+          "Por exemplo, como a fase opaca só torna objetos opacos e a fase transparente apenas torna objetos transparentes, ambas as etapas podem usar o slot de efeito principal.",
+          " For example, as the opaque stage only renders opaque objects and the transparent stage only renders transparent objects, both stages can use the main effect slot.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/rendering-pipeline\\/render-stages.md",
+          {
+            "id": "tu7"
+          }
+        ],
+        [
+          "If they render any of the same objects, they can't share effect slots.",
+          "Se eles renderizarem qualquer um dos mesmos objetos, eles não podem compartilhar slots de efeito.",
+          "If they render any of the same objects, they can't share effect slots.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/rendering-pipeline\\/render-stages.md",
+          {
+            "id": "tu8"
+          }
+        ],
+        [
+          "This is why, for example, we typically render opaque meshes with the main effect slot, then render opaque meshes again with the shadow caster effect slot to create shadows.",
+          "É por isso que, por exemplo, nós tipicamente renderizamos malhas opacas com o slot de efeito principal, em seguida, renderiza malhas opacas novamente com o slot de efeito de rodízio sombra para criar sombras.",
+          " This is why, for example, we typically render opaque meshes with the main effect slot, then render opaque meshes again with the shadow caster effect slot to create shadows.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/rendering-pipeline\\/render-stages.md",
+          {
+            "id": "tu8"
+          }
+        ],
+        [
+          "A typical setup of render stages:",
+          "Uma configuração típica de etapas de renderização:",
+          "A typical setup of render stages:",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/rendering-pipeline\\/render-stages.md",
+          {
+            "id": "tu9"
+          }
+        ],
+        [
+          "Render stage",
+          "Fase de renderização",
+          "Render stage",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/rendering-pipeline\\/render-stages.md",
+          {
+            "id": "tu10"
+          }
+        ],
+        [
+          "Effect slot",
+          "Fenda de efeito",
+          "Effect slot",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/rendering-pipeline\\/render-stages.md",
+          {
+            "id": "tu11"
+          }
+        ],
+        [
+          "Opaque",
+          "Opaco",
+          "Opaque",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/rendering-pipeline\\/render-stages.md",
+          {
+            "id": "tu12"
+          }
+        ],
+        [
+          "Main",
+          "Principal",
+          "Main",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/rendering-pipeline\\/render-stages.md",
+          {
+            "id": "tu13"
+          }
+        ],
+        [
+          "Transparent",
+          "Transparente",
+          "Transparent",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/rendering-pipeline\\/render-stages.md",
+          {
+            "id": "tu14"
+          }
+        ],
+        [
+          "Main",
+          "Principal",
+          "Main",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/rendering-pipeline\\/render-stages.md",
+          {
+            "id": "tu15"
+          }
+        ],
+        [
+          "UI",
+          "UI",
+          "UI",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/rendering-pipeline\\/render-stages.md",
+          {
+            "id": "tu16"
+          }
+        ],
+        [
+          "Main",
+          "Principal",
+          "Main",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/rendering-pipeline\\/render-stages.md",
+          {
+            "id": "tu17"
+          }
+        ],
+        [
+          "Shadow caster",
+          "Lançador de sombra",
+          "Shadow caster",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/rendering-pipeline\\/render-stages.md",
+          {
+            "id": "tu18"
+          }
+        ],
+        [
+          "Shadow caster",
+          "Lançador de sombra",
+          "Shadow caster",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/rendering-pipeline\\/render-stages.md",
+          {
+            "id": "tu19"
+          }
+        ],
+        [
+          "Sort objects in a render stage",
+          "Classifique objetos em um estágio de renderização",
+          "Sort objects in a render stage",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/rendering-pipeline\\/render-stages.md",
+          {
+            "id": "tu20"
+          }
+        ],
+        [
+          "@'Stride.Rendering.RenderStage.SortMode' defines how Stride sorts objects in that render stage.",
+          "@'Stride.Rendering.RenderStage.SortMode' define como Stride classifica objetos nessa fase de renderização.",
+          "@'Stride.Rendering.RenderStage.SortMode' defines how Stride sorts objects in that render stage.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/rendering-pipeline\\/render-stages.md",
+          {
+            "id": "tu21"
+          }
+        ],
+        [
+          "Stride comes with several @'Stride.Rendering.SortMode' implementations, such as:",
+          "Stride vem com vários @'Stride. Renderização. Implementações da SortMode, como:",
+          " Stride comes with several @'Stride.Rendering.SortMode' implementations, such as:",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/rendering-pipeline\\/render-stages.md",
+          {
+            "id": "tu21"
+          }
+        ],
+        [
+          "@'Stride.Rendering.FrontToBackSortMode', which renders objects from front to back with limited precision, and tries to avoid state changes in the same depth range of objects (useful for opaque objects and shadows)",
+          "@'Stride.Rendering.FrontToBackSortMode', que torna objetos de frente para trás com precisão limitada, e tenta evitar mudanças de estado na mesma faixa de profundidade de objetos (útil para objetos e sombras opacas)",
+          "@'Stride.Rendering.FrontToBackSortMode', which renders objects from front to back with limited precision, and tries to avoid state changes in the same depth range of objects (useful for opaque objects and shadows)",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/rendering-pipeline\\/render-stages.md",
+          {
+            "id": "tu22"
+          }
+        ],
+        [
+          "@'Stride.Rendering.BackToFrontSortMode', which renders objects strictly from back to front (useful for transparent objects)",
+          "@'Stride.Rendering.BackToFrontSortMode', que torna os objetos estritamente de volta para a frente (útil para objetos transparentes)",
+          "@'Stride.Rendering.BackToFrontSortMode', which renders objects strictly from back to front (useful for transparent objects)",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/rendering-pipeline\\/render-stages.md",
+          {
+            "id": "tu23"
+          }
+        ],
+        [
+          "@'Stride.Rendering.StateChangeSortMode', which tries to reduce state changes",
+          "@'Stride.Rendering.StateChangeSortMode', que tenta reduzir as mudanças do estado",
+          "@'Stride.Rendering.StateChangeSortMode', which tries to reduce state changes",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/rendering-pipeline\\/render-stages.md",
+          {
+            "id": "tu24"
+          }
+        ],
+        [
+          "Of course, you're free to implement your own, too.",
+          "Claro que também podes implementar o teu.",
+          "Of course, you're free to implement your own, too.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/rendering-pipeline\\/render-stages.md",
+          {
+            "id": "tu25"
+          }
+        ],
+        [
+          "Filter objects in a render stage",
+          "Filtrar objetos em uma etapa de renderização",
+          "Filter objects in a render stage",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/rendering-pipeline\\/render-stages.md",
+          {
+            "id": "tu26"
+          }
+        ],
+        [
+          "To create your own filter for objects in a render stage, inherit from @'Stride.Rendering.RenderStageFilter'.",
+          "Para criar seu próprio filtro para objetos em uma etapa de renderização, herda de @'Stride. Renderização. RenderStageFilter'.",
+          "To create your own filter for objects in a render stage, inherit from @'Stride.Rendering.RenderStageFilter'.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/rendering-pipeline\\/render-stages.md",
+          {
+            "id": "tu27"
+          }
+        ],
+        [
+          "Render stage selectors",
+          "Render seletores de palco",
+          "Render stage selectors",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/rendering-pipeline\\/render-stages.md",
+          {
+            "id": "tu28"
+          }
+        ],
+        [
+          "<g1>Render stage selectors<\\/g1> define which objects in your scene are sent to which render stage, and choose which <g2>effect<\\/g2> to use when rendering a given object.",
+          "<g1>Render fase selectors<\\/g1> definir quais objetos em sua cena são enviados para que fase de renderização, e escolher qual <g2>effect<\\/g2>effect> usar ao renderizar um determinado objeto.",
+          "<g1>Render stage selectors<\\/g1> define which objects in your scene are sent to which render stage, and choose which <g2>effect<\\/g2> to use when rendering a given object.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/rendering-pipeline\\/render-stages.md",
+          {
+            "id": "tu29"
+          }
+        ],
+        [
+          "For example, this is the typical setup for meshes:",
+          "Por exemplo, esta é a configuração típica para malhas:",
+          "For example, this is the typical setup for meshes:",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/rendering-pipeline\\/render-stages.md",
+          {
+            "id": "tu30"
+          }
+        ],
+        [
+          "@'Stride.Rendering.MeshTransparentRenderStageSelector' chooses either the <g1>Main<\\/g1> or <g2>Transparent<\\/g2> render stage, depending on the material properties.",
+          "@'Stride.Rendering.MeshTransparentRenderStageSelector' escolhe a etapa de renderização <g1>Main<\\/g1> ou <g2>Transparent<\\/g2>, dependendo das propriedades materiais.",
+          "@'Stride.Rendering.MeshTransparentRenderStageSelector' chooses either the <g1>Main<\\/g1> or <g2>Transparent<\\/g2> render stage, depending on the material properties.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/rendering-pipeline\\/render-stages.md",
+          {
+            "id": "tu31"
+          }
+        ],
+        [
+          "The default effect is <g3>StrideForwardShadingEffect<\\/g3> defined by Stride (you can create your own if you want).",
+          "O efeito padrão é <g3>StrideForwardShadingEffect<\\/g3> definido por Stride (você pode criar seu próprio se quiser).",
+          " The default effect is <g3>StrideForwardShadingEffect<\\/g3> defined by Stride (you can create your own if you want).",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/rendering-pipeline\\/render-stages.md",
+          {
+            "id": "tu31"
+          }
+        ],
+        [
+          "@'Stride.Rendering.Shadows.ShadowMapRenderStageSelector' selects opaque meshes that cast shadows and adds them to the <g1>ShadowMapCaster<\\/g1> render stage.",
+          "@'Stride.Rendering.Shadows.ShadowMapRenderStageSelector' seleciona malhas opacas que lançam sombras e os adiciona à fase de renderização <g1>ShadowMapCaster<\\/g1>.",
+          "@'Stride.Rendering.Shadows.ShadowMapRenderStageSelector' selects opaque meshes that cast shadows and adds them to the <g1>ShadowMapCaster<\\/g1> render stage.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/rendering-pipeline\\/render-stages.md",
+          {
+            "id": "tu32"
+          }
+        ],
+        [
+          "The default effect is <g2>StrideForwardShadingEffect.ShadowMapCaster<\\/g2>, defined by Stride.",
+          "O efeito padrão é <g2>StrideForwardShadingEffect.ShadowMapCaster<\\/g2>, definido por Stride.",
+          " The default effect is <g2>StrideForwardShadingEffect.ShadowMapCaster<\\/g2>, defined by Stride.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/rendering-pipeline\\/render-stages.md",
+          {
+            "id": "tu32"
+          }
+        ],
+        [
+          "Either can filter by <g1>render group<\\/g1>.",
+          "Ou pode filtrar por <g1>render group<\\/g1>.",
+          "Either can filter by <g1>render group<\\/g1>.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/rendering-pipeline\\/render-stages.md",
+          {
+            "id": "tu33"
+          }
+        ],
+        [
+          "You can customize everything, so you can add other predefined render stage selectors (eg to add UI to a later full-screen pass), or create your own selector specific to your game.",
+          "Você pode personalizar tudo, para que você possa adicionar outros seletores de fase de renderização predefinidos (por exemplo, adicionar interface de usuário a um passe de tela cheia posterior), ou criar seu próprio seletor específico para o seu jogo.",
+          "You can customize everything, so you can add other predefined render stage selectors (eg to add UI to a later full-screen pass), or create your own selector specific to your game.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/rendering-pipeline\\/render-stages.md",
+          {
+            "id": "tu34"
+          }
+        ],
+        [
+          "See also",
+          "Ver também",
+          "See also",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/rendering-pipeline\\/render-stages.md",
+          {
+            "id": "tu35"
+          }
+        ],
+        [
+          "Rendering pipeline",
+          "Oleoduto de renderização",
+          "<g1>Rendering pipeline<\\/g1>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/rendering-pipeline\\/render-stages.md",
+          {
+            "id": "tu36"
+          }
+        ],
+        [
+          "Render features",
+          "Render características",
+          "<g1>Render features<\\/g1>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/rendering-pipeline\\/render-stages.md",
+          {
+            "id": "tu37"
+          }
+        ],
+        [
+          "Effects and shaders",
+          "Efeitos e shaders",
+          "<g1>Effects and shaders<\\/g1>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/rendering-pipeline\\/render-stages.md",
+          {
+            "id": "tu38"
+          }
+        ],
+        [
+          "Graphics compositor",
+          "Compositor gráfico",
+          "<g1>Graphics compositor<\\/g1>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/graphics\\/rendering-pipeline\\/render-stages.md",
+          {
+            "id": "tu39"
+          }
+        ]
+      ]
+    }
+  ],
+  "seg_enabled": false
 }

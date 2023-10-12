@@ -1,21 +1,21 @@
-# Loading content
-You can find this sample in the tutorial project: **Menu** &rarr; **Loading content from code**
+# Carregar conteúdo
+Você pode encontrar esta amostra no projeto tutorial: **Menu** → **Loading content from code**
 
-## Explanation
-This C# Beginner tutorial covers how to load content from code.
+## Explicação
+Este tutorial C# Beginner abrange como carregar conteúdo do código.
 
-Assets like models, textures, sound etc can be loaded from during runtime. At that point we no longer speak of assets but of 'content'.
+Ativos como modelos, texturas, som etc podem ser carregados durante o tempo de execução. Neste ponto já não falamos de bens, mas de 'conteúdo'.
 
-This tutorial specifically loads content of the `Model` type. Loaded content that is no longer required in your scene, should be unloaded again so save up memory. For more information on assets see [Manage assets](../../manual/game-studio/manage-assets.md).
+Este tutorial carrega especificamente o conteúdo do tipo `Model`. Conteúdo carregado que não é mais necessário em sua cena, deve ser descarregado novamente para economizar memória. Para obter mais informações sobre ativos veja [Gerenciar ativos](../../manual/game-studio/manage-assets.md).
 
 ![Loading content](media/loading-content.webp)
 
 
-> [!Video https://www.youtube.com/embed/_c4Cv4k3YyI]
+> [!Vídeo https://www.youtube.com/embed/_c4Cv4k3YyI]
 
-## Code
-With the **L** and **U** key you can either Load or Unload the model of a mannequin. If there is a model loaded, you can use the **S** key to spawn a new entity with the loaded mannequin model.
+## Código
+Com a tecla **L** e **U** você pode carregar ou descarregar o modelo de um manequim. Se houver um modelo carregado, você pode usar a chave **S** para gerar uma nova entidade com o modelo de manequim carregado.
 
-The **C** clears all of the spawned entities in the scene. This demo demonstrates that when models are unloaded, any entities that reference the model are still existing in the scene.
+O **C** limpa todas as entidades desovadas na cena. Esta demonstração demonstra que quando os modelos são descarregados, quaisquer entidades que referem o modelo ainda estão existentes na cena.
 
 [!code-csharp[Loading content](../../../../stride/samples/Tutorials/CSharpBeginner/CSharpBeginner/CSharpBeginner.Game/Code/LoadingContentDemo.cs)]

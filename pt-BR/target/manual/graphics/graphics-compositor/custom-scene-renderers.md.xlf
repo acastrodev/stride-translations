@@ -3,19 +3,19 @@
 <body>
 <trans-unit id="tu1" xml:space="preserve">
 <source xml:lang="en">Custom scene renderers</source>
-<target xml:lang="pt">Custom scene renderers</target>
+<target xml:lang="pt">Renderizadores de cena personalizados</target>
 </trans-unit>
 <trans-unit id="tu2" xml:space="preserve">
 <source xml:lang="en">To create a custom renderer, directly implement the @'Stride.Rendering.Compositing.ISceneRenderer' or use a delegate through the @'Stride.Rendering.Compositing.DelegateSceneRenderer'.</source>
-<target xml:lang="pt">To create a custom renderer, directly implement the @'Stride.Rendering.Compositing.ISceneRenderer' or use a delegate through the @'Stride.Rendering.Compositing.DelegateSceneRenderer'.</target>
+<target xml:lang="pt">Para criar um renderizador personalizado, implemente diretamente o @'Stride.Rendering.Compositing.ISceneRenderer' ou use um delegado através do @'Stride.Rendering.Compositing.DelegateSceneRenderer'.</target>
 </trans-unit>
 <trans-unit id="tu3" xml:space="preserve">
 <source xml:lang="en">Implement an ISceneRenderer</source>
-<target xml:lang="pt">Implement an ISceneRenderer</target>
+<target xml:lang="pt">Implementar um ISceneRenderer</target>
 </trans-unit>
 <trans-unit id="tu4" xml:space="preserve">
 <source xml:lang="en">The @'Stride.Rendering.Compositing.SceneRendererBase' provides a default implementation of @'Stride.Rendering.Compositing.ISceneRenderer'. It automatically binds the output defines on the renderer to the GraphicsDevice before calling the <g id="1">DrawCore</g> method.</source>
-<target xml:lang="pt">The @'Stride.Rendering.Compositing.SceneRendererBase' provides a default implementation of @'Stride.Rendering.Compositing.ISceneRenderer'. It automatically binds the output defines on the renderer to the GraphicsDevice before calling the <g id="1">DrawCore</g> method.</target>
+<target xml:lang="pt">O @'Stride.Rendering.Compositing.SceneRendererBase' fornece uma implementação padrão de @'Stride.Rendering.Compositing.ISceneRenderer'. Ele automaticamente liga a saída define no renderizador para o GraphicsDevice antes de chamar o método <g id="1">DrawCore</g>.</target>
 </trans-unit>
 <trans-unit id="tu5" xml:space="preserve">
 <source xml:lang="en">[DataContract("MyCustomRenderer")]
@@ -36,28 +36,28 @@ public sealed class MyCustomRenderer : SceneRendererBase
 </source>
 <target xml:lang="pt">[DataContract("MyCustomRenderer")]
 [Display("My Custom Renderer")]
-public sealed class MyCustomRenderer : SceneRendererBase
-{
-    // Implements the DrawCore method
-    protected override void DrawCore(RenderContext context, RenderDrawContext drawContext)
-    {
-        // Access to the graphics device
+classe pública selada MyCustomRenderer: Base de Dados
+(
+    \/\/ Implementa o método DrawCore
+    protegido override void DrawCore (contexto RenderContext, RenderDrawContext drawContext)
+    (
+        \/\/ Acesso ao dispositivo gráfico
         var graphicsDevice = drawContext.GraphicsDevice;
         var commandList = drawContext.CommandList;
-        // Clears the current render target
-        commandList.Clear(commandList.RenderTargets[0], Color.CornflowerBlue);
-        // [...] 
+        \/\/ Limpa o alvo de renderização atual
+        comandoList.Clear(commandList.RenderTargets[0], Color.CornflowerBlue);
+        \/\/ [...] 
     }
 }
 </target>
 </trans-unit>
 <trans-unit id="tu6" xml:space="preserve">
 <source xml:lang="en">Use a delegate</source>
-<target xml:lang="pt">Use a delegate</target>
+<target xml:lang="pt">Use um delegado</target>
 </trans-unit>
 <trans-unit id="tu7" xml:space="preserve">
 <source xml:lang="en">To develop a renderer and attach it to a method directly, use @'Stride.Rendering.Compositing.DelegateSceneRenderer':</source>
-<target xml:lang="pt">To develop a renderer and attach it to a method directly, use @'Stride.Rendering.Compositing.DelegateSceneRenderer':</target>
+<target xml:lang="pt">Para desenvolver um renderizador e anexá-lo a um método diretamente, use @'Stride.Rendering.Compositing.DelegateSceneRenderer':</target>
 </trans-unit>
 <trans-unit id="tu8" xml:space="preserve">
 <source xml:lang="en">var sceneRenderer = new DelegateSceneRenderer(
@@ -71,29 +71,29 @@ public sealed class MyCustomRenderer : SceneRendererBase
         // [...] 
    });
 </source>
-<target xml:lang="pt">var sceneRenderer = new DelegateSceneRenderer(
+<target xml:lang="pt">var cenaRenderer = novo DelegadoSceneRenderer(
     (drawContext) =&gt;
-    {
-        // Access to the graphics device
+    (
+        \/\/ Acesso ao dispositivo gráfico
         var graphicsDevice = drawContext.GraphicsDevice;
         var commandList = drawContext.CommandList;
-        // Clears the current render target
-        commandList.Clear(commandList.RenderTargets[0], Color.CornflowerBlue);
-        // [...] 
+        \/\/ Limpa o alvo de renderização atual
+        comandoList.Clear(commandList.RenderTargets[0], Color.CornflowerBlue);
+        \/\/ [...] 
    });
 </target>
 </trans-unit>
 <trans-unit id="tu9" xml:space="preserve">
 <source xml:lang="en">See also</source>
-<target xml:lang="pt">See also</target>
+<target xml:lang="pt">Ver também</target>
 </trans-unit>
 <trans-unit id="tu10" xml:space="preserve">
 <source xml:lang="en"><g id="1">Scene renderers</g></source>
-<target xml:lang="pt"><g id="1">Scene renderers</g></target>
+<target xml:lang="pt"><g id="1">Renderizadores de cenas</g></target>
 </trans-unit>
 <trans-unit id="tu11" xml:space="preserve">
 <source xml:lang="en"><g id="1">Debug renderers</g></source>
-<target xml:lang="pt"><g id="1">Debug renderers</g></target>
+<target xml:lang="pt"><g id="1">Renderizadores de depuração</g></target>
 </trans-unit>
 </body>
 </file>

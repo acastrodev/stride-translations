@@ -1,88 +1,88 @@
-# Misc attributes
+# Atributos diversos
 
-<span class="badge text-bg-primary">Intermediate</span>
-<span class="badge text-bg-success">Artist</span>
-<span class="badge text-bg-success">Programmer</span>
+<x1\/> Intermediário <x2\/>
+<x3\/>Artista <x4\/>
+<x5\/> Programador <x6\/>
 
-![Misc properties](media/misc-properties.png)
+<x1\/> Propriedades mínimas<x2\/>
 
-## Occlusion
+## Oclusão
 
-Under the **Occlusion** properties, you can set an **occlusion map**. This is the default occlusion attribute. The occlusion map use geometry occlusion information baked into a texture to modulate the ambient and direct lighting.
+Sob as propriedades **Oclusão**, você pode definir um mapa de oclusão **.** Este é o atributo de oclusão padrão. O mapa de oclusão usa a informação de oclusão da geometria assada em uma textura para modular a iluminação ambiente e direta.
 
-![media/material-attributes-39.png](media/material-attributes-39.png)
+<x1\/>media\/material-attributes-39.png<x2\/>
 
-The screenshots below demonstrate the use of occlusion maps and cavity maps:
+As capturas de tela abaixo demonstram o uso de mapas de oclusão e mapas da cavidade:
 
-| Occlusion Map | Cavity Map | Final Composition |
+| Mapa de Oclusão | Mapa de Cavidade | Composição final |
 | ------- | ------ | ------- 
-| ![media/material-attributes-40.png](media/material-attributes-40.png) | ![media/material-attributes-41.png](media/material-attributes-41.png) | ![media/material-attributes-42.png](media/material-attributes-42.png) |
-| Coarse occlusion of the ambient light | Fine-grained occlusion of direct light | Result |
+| <x1\/>media\/material-attributes-40.png<x2\/> | <x1\/>media\/material-attributes-41.png<x2\/> | <x1\/>media\/material-attributes-42.png<x2\/> |
+| Oclusão grosseira da luz ambiente | Oclusão fina da luz direta | Resultado |
 
-| Property | Description |
+| Propriedade | Descrição |
 | --------- | ---- 
-| Occlusion Map | The occlusion map scalar provider that determines how much ambient light is accessible on the material. A value of 1.0 means that the material is fully lit by ambient lighting. A value of 0.0 means that the material is not lighted by the ambient lighting |
-| Direct Lighting Influence | Applies to Occlusion Map and influences direct lighting |
-| Cavity Map | The cavity map scalar provider is multiplied with direct lighting. It lets you define very fine grained cavity where direct light can't enter. The cavity map is usually defined for thin concave cavity |
-| Diffuse Cavity | A factor for diffuse lighting influence of the cavity map. A value of 1.0 means the cavity map fully influences the diffuse lighting |
-| Specular Cavity | A factor for specular lighting influence of the cavity map. A value of 1.0 means the cavity map fully influences the specular lighting |
+| Mapa de Oclusão | O provedor de escalar de mapa de oclusão que determina o quanto a luz ambiente é acessível no material. Um valor de 1.0 significa que o material é totalmente iluminado pela iluminação ambiente. Um valor de 0,0 significa que o material não é iluminado pela iluminação ambiente |
+| Iluminação direta Influência | Aplica-se ao Mapa de Oclusão e influencia a iluminação direta |
+| Mapa de Cavidade | O provedor de escalar de mapa da cavidade é multiplicado com iluminação direta. Permite definir cavidade granulada muito fina onde a luz direta não pode entrar. O mapa da cavidade é geralmente definido para cavidade côncava fina |
+| Cavidade de Diffuse | Um fator para a influência de iluminação difusa do mapa da cavidade. Um valor de 1.0 significa que o mapa da cavidade influencia totalmente a iluminação difusa |
+| Cavidade especular | Um fator para a influência de iluminação especular do mapa da cavidade. Um valor de 1.0 significa que o mapa da cavidade influencia totalmente a iluminação especular |
 
-## Transparency
+## Transparência
 
-Under the **Transparency** properties, you can specify values that change the transparency of the material. You can coose **Blend**, **Additive**, or **Cutoff**.
+Sob as propriedades **Transparência**, você pode especificar valores que alteram a transparência do material. Você pode coose **Blend**, **Additive**, ou **Cutoff**.
 
-### Additive
+### Aditivo
 
-The additive transparency takes into account the diffuse and diffuse/emissive alpha.
+A transparência aditiva leva em conta o alfa difuso e difuso\/emissivo.
 
-![media/material-attributes-47.png](media/material-attributes-47.png)
+<x1\/>media\/material-attributes-47.png<x2\/>
 
-- If the **Alpha** property is less than 0.5, only the specular highlights are visible. The material itself is completely invisible.
+- Se a propriedade **Alpha** é inferior a 0,5, apenas os destaques especulares são visíveis. O material em si é completamente invisível.
 
-   | Alpha = 0.25 | Alpha = 0.5 |
+   | Alfa = 0,25 | Alfa = 0,5 |
    | -------------- | -----------
-   | ![media/material-attributes-48.png](media/material-attributes-48.png) | ![media/material-attributes-49.png](media/material-attributes-49.png) |
-   | We only see the specular highlight in additive mode | Transparency is fully additive. Specular highlights at maximum |
+   | <x1\/>media\/material-attributes-48.png<x2\/> | <x1\/>media\/material-attributes-49.png<x2\/> |
+   | Só vemos o destaque especular no modo aditivo | A transparência é totalmente aditiva. Destaques especulares no máximo |
 
-- If the **Alpha** <= 1.0, the material is semi-opaque with the diffuse/emissive component. If the diffuse component has an alpha, it's transparent.
+- Se o **Alpha** <= 1.0, o material é semi-opaco com o componente difuso\/emissivo. Se o componente difuso tiver um alfa, é transparente.
 
-   | Alpha = 0.75 | Alpha = 1.0 |
+   | Alfa = 0,75 | Alfa = 1.0 |
    | -------------- | ---------------------- |
-   | ![media/material-attributes-50.png](media/material-attributes-50.png) | ![media/material-attributes-51.png](media/material-attributes-51.png) |
-   | Specular highlights, diffuse with alpha and semi-opaque diffuse | Specular highlights, diffuse with alpha and opaque diffuse |
+   | <x1\/>media\/material-attributes-50.png<x2\/> | <x1\/>media\/material-attributes-51.png<x2\/> |
+   | Destaques especulares, difuso com difuso alfa e semi-opaco | Destaques especulares, difuso com difuso alfa e opaco |
 
-| Property | Description |
+| Propriedade | Descrição |
 | -------- | -----------
-| Alpha | The alpha value is interpreted like this:<p><br> Alpha <= 0.5, the material is rendered in additive mode without the diffuse component (only specular highlights)</p></br> <p><br>Alpha <= 1.0, the material is rendered in semi-opaque mode with the diffuse/emissive component. If the diffuse component has an alpha, it's displayed as transparent</p></br> |
-| Tint | Apply a color tint to the transparency layer |
+| Alfa | O valor alfa é interpretado assim:<p><x1\/> Alfa <= 0,5, o material é renderizado em modo aditivo sem o componente difuso (apenas destaques especulares)</p></br> <p><x1\/>Alpha <= 1.0, o material é renderizado em modo semi-opaco com o componente difuso\/emissivo. Se o componente difuso tem um alfa, é exibido como transparente</p></br> |
+| Tint | Aplicar uma tonalidade de cor na camada de transparência |
 
-### Cuttoff
+### Corte
 
-Renders a material when the current alpha color is above the threshold you specify with the **Alpha** slider.
+Rende um material quando a cor alfa atual está acima do limiar que você especificar com o controle deslizante **Alpha**.
 
-![media/material-attributes-43.png](media/material-attributes-43.png)
+<x1\/>media\/material-attributes-43.png<x2\/>
 
-The following screenshots show the influence of the cutoff Alpha value.
+As capturas de tela a seguir mostram a influência do valor Alpha de corte.
 
-| Alpha = 0.01 | Alpha = 0.5 | Alpha = 1.0 |
+| Alfa = 0,01 | Alfa = 0,5 | Alfa = 1.0 |
 | -------------| --------------- | ------------ 
-| ![media/material-attributes-44.png](media/material-attributes-44.png) | ![media/material-attributes-45.png](media/material-attributes-45.png) | ![media/material-attributes-46.png](media/material-attributes-46.png) |
+| <x1\/>media\/material-attributes-44.png<x2\/> | <x1\/>media\/material-attributes-45.png<x2\/> | <x1\/>media\/material-attributes-46.png<x2\/> |
 
-### Clear coat
+### Brasão clara
 
-**Clear-coat shading** uses physically-based rendering to simulate vehicle paint.
+**Clear-coat shading** usa renderização física para simular a pintura do veículo.
 
-![Clear coat](media/clear-coat-2.jpg)
+<x1\/> Revestimento da orelha<x2\/>
 
-For details, see [clear-coat shading](clear-coat-shading.md).
+Para detalhes, veja [clear-coat shading](clear-coat-shading.md).
 
-## See also
+## Ver também
 
-* [Geometry attributes](geometry-attributes.md)
-* [Shading attributes](shading-attributes.md)
-* [Clear-coat shading](clear-coat-shading.md)
-* [Material maps](material-maps.md)
-* [Material layers](material-layers.md)
-* [Material slots](material-slots.md)
-* [Materials for developers](materials-for-developers.md)
-* [Custom shaders](../effects-and-shaders/custom-shaders.md)
+* [Atributos de geometria](geometry-attributes.md)
+* [Atributos de Shading](shading-attributes.md)
+* [Sombreamento de capa clara](clear-coat-shading.md)
+* [Mapas de material](material-maps.md)
+* [Camadas de material](material-layers.md)
+* [Slots de material](material-slots.md)
+* [Materiais para desenvolvedores](materials-for-developers.md)
+* [Sombreadores personalizados](../effects-and-shaders/custom-shaders.md)

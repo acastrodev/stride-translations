@@ -1,49 +1,49 @@
-# Manage entities
+# Gerenciar entidades
 
-[!INCLUDE [stride-studio-note](../../../includes/under-construction-note.md)]
+[! INCLUÍDO [stride-studio-note](../../../includes/under-construction-note.md)]
 
-## Overview
+## Visão geral
 
-User usually want to manipulate Component contained in a specific entity, while engine wants to access component by types (i.e. all Mesh Component while drawing, all animation components while updating animations, etc...):
+O usuário geralmente quer manipular o Component contido em uma entidade específica, enquanto o motor quer acessar o componente por tipos (ou seja, todo o Componente de malha durante o desenho, todos os componentes de animação ao atualizar animações, etc...):
 
-![media/7438984.png](media/7438984.png)
+<x1\/>media\/7438984.png<x2\/>
 
 
-User will add component-based entities into an entity manager.
+O usuário adicionará entidades baseadas em componentes em um gerenciador de entidades.
 
-Engine or user registers entity processors that can process specific entities and/or components.
+Motor ou usuário registra processadores de entidades que podem processar entidades e\/ou componentes específicos.
 
-## Entity Processor
+## Processador de Entidade
 
-To solve this problem, the concept of Entity Processor has been added. An Entity Processor will access Entities that matches specific requirements (i.e. process all entities with MeshComponent) and process all of them in a single update function. This allows for greater efficiency and cache-friendliness, as there is no need to check every entity/components many times per frame.
+Para resolver este problema, o conceito de Processador de Entidade foi adicionado. Um Processador de Entidade acessará Entidades que correspondem a requisitos específicos (ou seja, processar todas as entidades com o MeshComponent) e processará todas elas em uma única função de atualização. Isso permite maior eficiência e facilidade de cache, pois não há necessidade de verificar cada entidade \/ componentes muitas vezes por quadro.
 
-This approach also solves many update order dependencies issues (just need to order the entity processors updates properly).
+Esta abordagem também resolve muitos problemas de dependência de pedidos de atualização (apenas precisa encomendar as atualizações de processadores de entidade corretamente).
 
-Here is some examples of entity processors:
+Aqui estão alguns exemplos de processadores de entidades:
 
-- @'Stride.Engine.TransformationProcessor': Compute transformation matrices from hierarchy and local transformation stored in @'Stride.Engine.TransformationComponent'.
+- @'Stride.Engine.TransformationProcessor': Matrizes de transformação completas da hierarquia e transformação local armazenadas em @'Stride.Engine.TransformationComponent'.
 
-   As a result, @'Stride.Engine.EntityManager' can be used as a hierarchical scenegraph instead of a simple entity list.
-- @'Stride.Engine.MeshProcessor': Add @'Stride.Engine.ModelComponent.Model' to rendering.
-- @'Stride.Engine.LightProcessor': Collects and update lights, and transfer it to rendering system. It can hides implementation details (deferred or forward rendering, etc...)
+   Como resultado, @'Stride. Motor. EntityManager' pode ser usado como um cenário hierárquico em vez de uma lista de entidades simples.
+- @'Stride.Engine.MeshProcessor': Adicionar @'Stride.Engine.ModelComponent.Model' para renderização.
+- @'Stride.Engine.LightProcessor': Recolhe e atualize luzes e transfira-as para o sistema de renderização. Ele pode ocultar detalhes de implementação (renderização diferida ou encaminhada, etc...)
 
-## Entity System
+## Sistema de Entidade
 
-Entity are grouped together in an @'Stride.Engine.EntityManager'. It will also contains the list of entity processors. When an entity is added or an entity components changes, it will ask entity processors if they should be included.
+A Entidade é agrupada em um @'Stride. Motor.EntityManager'. Ele também contém a lista de processadores de entidade. Quando uma entidade é adicionada ou um componente de entidade muda, ela perguntará aos processadores de entidade se eles devem ser incluídos.
 
 ```cs
-// Add an entity:
-var myEntity = new Entity();
-engine.EntityManager.AddEntity(myEntity);
+\/\/ Adicionar uma entidade:
+var myEntity = novo Entity();
+motor. EntityManager.AddEntity (myEntity);
  
-// Iterate through added entities:
-foreach (var entity in engine.EntityManager.Entities)
-{
-	Console.WriteLine(entity.Name);
+\/\/ Iterar através de entidades adicionadas:
+foreach (entidade naval no motor. EntityManager.Entities)
+(
+	Console.WriteLine (entidade.Nome);
 }
 ```
 
-@'Stride.Engine.EntityManager' can be used to enumerate its `Entities (ref:{Stride.Engine.Entity})`. Note that children of a given entities will also be in this list.
+@'Stride.Engine.EntityManager' pode ser usado para enumerar seus `Entities (ref:{Stride.Engine.Entity})`. Note que as crianças de uma determinada entidade também estarão nesta lista.
 
-To manipulate entities as a scenegraph, refer to @'Stride.Engine.TransformationComponent' class.
+Para manipular entidades como cenário, consulte a classe @'Stride.Engine.TransformationComponent'.
 

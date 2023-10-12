@@ -1,306 +1,306 @@
-# Xenko 1.8 release notes
+# Notas de lançamento do Xenko 1.8
 
-## Highlights
+## Destaques
 
-Xenko release 1.8 introduces three major new features along with several relevant enhancements to existing features.
+O Xenko release 1.8 apresenta três principais novos recursos, juntamente com vários aprimoramentos relevantes para recursos existentes.
 
-We are proud to be able to offer you our new **UI Editor**, enhanced performance via our newly **multithreaded engine** with Vulkan support and our new **Prefab Model**.
+Estamos orgulhosos de poder oferecer-lhe o nosso novo **UI Editor**, desempenho aprimorado através do nosso motor multithreaded recentemente ** com suporte Vulkan e nosso novo **Prefab Model**.**
 
-Also, for your cutting edge rendering needs, we now support **SSAO** and **cel (toon) shading**!
+Além disso, para suas necessidades de renderização de borda de corte, agora apoiamos <g id="1">SSAO</g>cel (toon) shading</g>!<g id="2">
 
-### UI Editor
+### Editor de interface
 
-This release introduces new UI assets along with a brand-new UI editor, so that you can create amazing UI directly from the Game Studio!
+Esta versão apresenta novos ativos de interface do usuário junto com um novo editor de interface do usuário, para que você possa criar incrível interface do usuário diretamente do Game Studio!
 
-[![UI Editor](https://img.youtube.com/vi/YlCViinxviI/0.jpg)](https://www.youtube.com/watch?v=YlCViinxviI "UI Editor")
+[<x1\/>UI Editor<x2\/>](https://www.youtube.com/watch?v=YlCViinxviI "UI Editor<ex1\/>
 
-The UI editor provides a full WYSIWYG experience. You can author the whole visual tree of your UI, edit the properties of each UI element (such as layout, background color, etc.) and preview its rendering.
+O editor UI fornece uma experiência WYSIWYG completa. Você pode autorizar toda a árvore visual de sua interface de usuário, editar as propriedades de cada elemento UI (como layout, cor de fundo, etc) e visualizar sua renderização.
 
-Two new assets are available:
-* **UI Page asset**: represents a typical tree of UI elements that can assigned to the UI Component of an entity in the scene or prefab editor.
-* **UI Library asset**: represents a collection of UI trees (similar to prefabs) that can be reused by other UI Pages.
-* Both have runtime equivalents. UIComponent now expects a UI Page. A UI Library is useful to create or edit UI at runtime.
+Estão disponíveis dois novos activos:
+* **UI Page asset**: representa uma árvore típica de elementos UI que podem ser atribuídos ao Componente UI de uma entidade na cena ou editor prefab.
+* **UI Biblioteca asset**: representa uma coleção de árvores de interface do usuário (semelhante a pré-fabs) que podem ser reutilizadas por outras páginas de interface do usuário.
+* Ambos têm equivalentes de tempo de execução. UIComponent agora espera uma UI Page. Uma Biblioteca UI é útil para criar ou editar UI em tempo de execução.
 
-And since it is built on the same system as archetypes and prefabs, you can easily create shared UI parts, override some properties and have changes propagating automatically.
+E uma vez que ele é construído no mesmo sistema que arquétipos e prefabs, você pode facilmente criar partes de interface do usuário compartilhadas, substituir algumas propriedades e ter alterações propagando automaticamente.
 
-### Performance
+### Desempenho
 
 #### Multithreading
 
-Many computationally intensive systems have been multithreaded. Expect a major increase in performance and better scaling to correspond with the size of your game! We have observed up to 6 times higher frame rates for heavily CPU bound scenes so far (on a typical 4-core CPU).
+Muitos sistemas computacionalmente intensivos foram multithreaded. Espere um grande aumento no desempenho e melhor escala para corresponder com o tamanho do seu jogo! Observamos até 6 vezes maiores taxas de quadros para cenas fortemente vinculadas à CPU até agora (em uma CPU de 4 núcleos típica).
 
-[![Multithreading demo](https://img.youtube.com/vi/sJ2p982cZFc/0.jpg)](https://www.youtube.com/watch?v=sJ2p982cZFc "Multithreading demo")
+[<x1\/>Multithreading demo<x2\/>](https://www.youtube.com/watch?v=sJ2p982cZFc "Moltithread demo<ex1\/>
 
-Parallelized code includes many `EntityProcessors` and almost every part of our recently rewritten **rendering pipeline**. On **Vulkan** and **Direct3D12** this includes also recording of drawing command lists, giving them an edge over the other APIs.
+O código paralelizado inclui muitos `EntityProcessors` e quase todas as partes do nosso recentemente reescrito **rendering pipeline**. Em **Vulkan** e **Direct3D12** isso inclui também a gravação de listas de comando de desenho, dando-lhes uma borda sobre as outras APIs.
 
-![Multithreading](media/ReleaseNotes-1.8/multithreading.jpg)
+<x1\/>Multithread <x2\/>
 
-Developers can find classes and utilities for concurrent programming in the `SiliconStudio.Core.Threading` namespace, e.g. `Dispatcher.For()`, which resemble the Task Parallel Library, but are more lightweight and tailored for work performed every frame in a game's update loop.
+Os desenvolvedores podem encontrar classes e utilitários para programação simultânea no `SiliconStudio.Core.Threading` namespace, por exemplo, `Dispatcher.For()`, que se assemelham à Biblioteca Paralela Tarefa, mas são mais leves e adaptados para o trabalho realizado cada quadro no loop de atualização de um jogo.
 
-Over time, we will look into multithreading more parts of the engine, including independent subsystems, such as different phases of the `RenderSystem` and `Scripts`.
+Com o tempo, vamos olhar para multithreading mais partes do motor, incluindo subsistemas independentes, tais como diferentes fases do `RenderSystem` e `Scripts`.
 
-#### Prefab Model
+#### Modelo de pré-fabricada
 
-The Prefab Model is a new type of Model asset that generates an optimized baked and merged single model from a prefab.
+O Modelo Prefab é um novo tipo de Ativo Modelo que gera um modelo único assado e mesclado otimizado a partir de uma pré-fabricada.
 
-It merges meshes together by material and vertex layout. You can easily go from thousands of draw calls to one or two draw calls.
+Ele mescla malhas juntas por material e layout de vértice. Você pode facilmente ir de milhares de chamadas de empate para uma ou duas chamadas de empate.
 
-To use it, just create a new Prefab Model asset from the Game Studio and assign a prefab to it.
-Make sure that the base prefab is just containing static entities as only `ModelComponent` types are merged.
+Para usá-lo, basta criar um novo recurso Modelo Prefab do Game Studio e atribuir uma pré-fabricada para ele.
+Certifique-se de que o prefab base está apenas contendo entidades estáticas como apenas `ModelComponent` tipos são mesclados.
 
-### Rendering
+### Renderização
 
 #### SSAO
 
-Ambient Occlusion was added to the list of post-processing effects. The current technique implements [Scalable Ambient Obscurance](https://graphics.cs.williams.edu/papers/SAOHPG12/). It exposes a variety of options, including number of tap samples, intensity, tap radius and back buffer size.
+Oclusão ambiente foi adicionado à lista de efeitos pós-processamento. A técnica atual implementa [Scalable Ambient Obscurance](https://graphics.cs.williams.edu/papers/SAOHPG12/). Ele expõe uma variedade de opções, incluindo o número de amostras de torneira, intensidade, raio de torneira e tamanho do amortecedor traseiro.
 
-![SAO comparison shots](media/ReleaseNotes-1.8/SAO.jpg)
+<x1\/>SAO comparação tiros<x2\/>
 
-It is currently part of the post-effect pipeline, but will later move to the lighting pipeline for more realistic rendering.
+Atualmente é parte do pipeline de pós-efeito, mas mais tarde vai se mover para o pipeline de iluminação para renderização mais realista.
 
 #### Cel Shading
 
-Cel shading (or Toon shading) is now available as a rendering model with both Diffuse and Specular rendering options. The default implementation limits the light product to binary or 3-cuts discrete levels. You can also reference a ramp texture for better artistic control.
+Shading Cel (ou Shading Toon) está agora disponível como um modelo de renderização com opções de renderização Diffuse e Specular. A implementação padrão limita o produto leve a níveis binários ou 3 cortes discretos. Você também pode referenciar uma textura de rampa para melhor controle artístico.
 
-[![Cel Shading](https://img.youtube.com/vi/RJDrG1QR3Uo/0.jpg)](https://www.youtube.com/watch?v=RJDrG1QR3Uo "Cel Shading")
+[<x1\/>Cel Shading<x2\/>](https://www.youtube.com/watch?v=RJDrG1QR3Uo "Cel Shading<ex1\/>
 
-## How To Upgrade
+## Como atualizar
 
 ### UI
 
-The UIComponent `RootElement`  property has been replaced with the `Page` property. It now expects an instance of the `UIPage` type. Scripts that were setting the `RootElement` property need to be updated:
+A propriedade UIComponent `RootElement` foi substituída pela propriedade `Page`. Agora espera uma instância do tipo `UIPage`. Os scripts que estavam definindo a propriedade `RootElement` precisam ser atualizados:
 
 ```
-// previous code (will not compile)
-var grid = new Grid();
+\/\/ código anterior (não compilar)
+var grid = novo Grid();
 var component = Entity.Get<UIComponent>();
-component.RootElement = grid;
+componente. RootElement = grade;
 
-// new code
-var grid = new Grid();
+\/\/ novo código
+var grid = novo Grid();
 var component = Entity.Get<UIComponent>();
-component.Page = new UIPage
-{
-    RootElement = grid
+componente. Página = nova UIPage
+(
+    RootElement = grade
 };
 ```
 
-Due to the slight API and behavior changes made to UI system, you might have to adapt some other part of your code. For example:
+Devido às ligeiras alterações de API e comportamento feitas no sistema UI, você pode ter que adaptar outra parte do seu código. Por exemplo:
 
 ```
-var text = new TextBlock();
-var canvas = new Canvas();
-canvas.Children.Add(text);
+var text = novo TextBlock();
+var canvas = novo Canvas();
+lona.Crianças.Adicionar (texto);
 
-var position = new Vector3(0.0f, 1.0f, 0.0f);
-// previously setting this attached property will also set Canvas.UseAbsolutePositionPropertyKey to false automatically
-text.DependencyProperties.Set(Canvas.RelativePositionPropertyKey, position);
-// now you need to set it explicitly
-text.DependencyProperties.Set(Canvas.UseAbsolutePositionPropertyKey, false);
-// note that using extension methods is the recommended way, and does all of that in a more concise way:
+var position = novo Vector3(0.0f, 1.0f, 0,0f);
+\/\/ anteriormente definir esta propriedade anexada também irá definir Canvas. UsoPosições Absolutas Propriedade Chave para false automaticamente
+text.DependencyProperties.Set(Canvas.PositionRelativePropertyKey, position);
+\/\/ agora você precisa configurá-lo explicitamente
+text.DependencyProperties.Set (Canvas.UseAbsolutePosition PropertyKey, false);
+\/\/ note que usar métodos de extensão é a maneira recomendada, e faz tudo isso de uma forma mais concisa:
 text.SetCanvasRelativePosition(position);
 ```
 
-## Changelog
+## Mudança
 
-### Version 1.8.0-Beta
+### Versão 1.8.0-Beta
 
-Release date: 2016/08/31
+Data de lançamento: 2016\/08\/31
 
-#### Enhancements
+#### Melhorias
 
-##### General
+##### Geral
 
-- Added a `DebugConsoleSystem` to be able to print basic debug information in game.
-- Added Utility methods `FindChild` and `FindRoot` to `Entity`.
-- Animation blend trees can now be created in script. The `AnimationBlend` pre-built script shows how to do it easily
-- Updated Roslyn to 1.3.2
+- Adicionado um `DebugConsoleSystem` para ser capaz de imprimir informações básicas de depuração no jogo.
+- Adicionados métodos utilitários `FindChild` e `FindRoot` para `Entity`.
+- As árvores de mistura de animação agora podem ser criadas no script. O script pré-construído `AnimationBlend` mostra como fazê-lo facilmente
+- Roslyn atualizado para 1.3.2
 
-##### Assets
+##### Activos
 
-- Yaml scene files now encode entity and component references in a much more compact way
-- Yaml serialization order is now following class declaration order
+- Arquivos de cena Yaml agora codificar referências de entidades e componentes de uma forma muito mais compacta
+- A ordem de serialização do Yaml está agora seguindo a ordem de declaração de classe
 
-##### Audio
+##### Áudio
 
-- Game studio side: added hard limits in Compression ratio, also now it is using a slider.
-- Added `SetRange` in `SoundInstance` to be able to set play range, it also enables seeking.
-- Added `Position` property in `SoundInstance` to be able to know the position in time of your playing instance.
-- Added `PlayAndForget` to `AudioEmitterSoundController` to play many instances of the same sound rapidly.
-- Added RequestedAudioDevice in AudioSystem to allow game code to select audio devices (Windows only for now).
-- `AudioEmitterComponent` now contains a dictionary of sounds that can be used from the emitter, those can be set from the Game Studio directly!
-- Game Studio sound preview now uses the internal engine, this means that you can directly preview the compression rate!
+- Lado do estúdio do jogo: adicionado limites duros na relação de compressão, também agora está usando um controle deslizante.
+- Adicionado `SetRange` em `SoundInstance` para ser capaz de definir o intervalo de jogo, ele também permite a busca.
+- Adicionado `Position` propriedade em `SoundInstance` para ser capaz de saber a posição em tempo de sua instância de jogo.
+- Adicionado `PlayAndForget` a `AudioEmitterSoundController` para tocar muitas instâncias do mesmo som rapidamente.
+- Adicionado Pedida AudioDevice em AudioSystem para permitir que o código do jogo selecione dispositivos de áudio (Windows apenas por agora).
+- `AudioEmitterComponent` agora contém um dicionário de sons que podem ser usados a partir do emissor, aqueles podem ser definidos a partir do Game Studio diretamente!
+- A visualização de som do Game Studio agora usa o motor interno, isso significa que você pode visualizar diretamente a taxa de compressão!
 
-##### Graphics
+##### Gráficos
 
-- CommandList can now compiled and executed
-- Constant Buffers are now uploaded in a single GPU Buffer and set with offsets on platform/API that support this mode
-- D3D12: reduced number of API calls
-
-##### Game Studio
-
-- About Page accessible from Menu-->Help-->About.
-
-##### Input
-
-- Added preliminary controller vibration support with `Input.SetGamePadVibration`
-
-##### Particles
-
-- Particle rendering now uses the improved multithreaded pipeline, significantly speeding up the vertex buffer building.
-
-##### Samples
-
-- Several samples have been removed. Particles and Physics samples have been greatly reduced and merged into only two, which allows the user to check more features with a single sample.
-
-#### Issues fixed
-
-##### Physics
-
-- Procedural models can now be used as a source to generate convex hull shapes.
-- We are now using the github version of Bullet Physics and actively cooperating with the project.
-- Fixed ColliderShape cached matrices computation.
+- Comando Lista agora pode compilar e executar
+- Os buffers constantes agora são carregados em um único buffer de GPU e definidos com deslocamentos na plataforma\/API que suportam este modo
+- D3D12: número reduzido de chamadas de API
 
 ##### Game Studio
-- Credential dialog will now save the credential settings when closing.
-- Credential dialog will not appear if you checked "Do not ask again".
-- Fix hang when launching a Linux game remotely.
 
-#### Breaking changes
+- Sobre Página acessível a partir de Menu-> Ajuda--->About.
+
+##### Entrada
+
+- Adicionado suporte de vibração de controle preliminar com `Input.SetGamePadVibration`
+
+##### Partes
+
+- A renderização de partículas agora usa o pipeline multithreaded melhorado, acelerando significativamente o edifício do amortecedor de vértice.
+
+##### Amostras
+
+- Várias amostras foram removidas. As amostras de partículas e física foram muito reduzidas e fundidas em apenas dois, o que permite ao usuário verificar mais recursos com uma única amostra.
+
+#### Questões corrigidas
+
+##### Física
+
+- Modelos processuais agora podem ser usados como uma fonte para gerar formas de casco convexo.
+- Agora estamos usando a versão github da Bullet Physics e cooperando ativamente com o projeto.
+- Collider fixo Computação de matrizes em cache.
+
+##### Game Studio
+- A caixa de diálogo Credenciais salvará agora as configurações de credenciais ao fechar.
+- A caixa de diálogo credível não aparecerá se você verificar "Não pergunte novamente".
+- Fix hang ao lançar um jogo Linux remotamente.
+
+#### Alterações de ruptura
 
 ##### UI
 
-- The UIComponent expect a UI Page in place of the previous Root Element property.
-- Most dependency properties were changed into regular C# properties, except the ones that are attached properties (such as the Column and Row attached property of a Grid).
-- In desktop, TouchMove event is also raised when no mouse button are pressed.
-- Default style of the UI has been removed.
+- O UIComponent espera um UI Page no lugar da propriedade anterior Root Element.
+- A maioria das propriedades de dependência foram alteradas para regular Propriedades C#, exceto as que são propriedades anexadas (como a coluna e a linha anexada propriedade de uma grade).
+- Na área de trabalho, o evento TouchMove também é levantado quando nenhum botão do mouse é pressionado.
+- O estilo padrão da interface do usuário foi removido.
 
-##### Audio
+##### Áudio
 
-- Remove Play with boolean argument from `SoundInstance`, instead the same behavior will be achieved by using PlayExtended or Play.
-- Rename `IsLooped` into `IsLooping`.
-- Deprecated: `GetSoundController`, `AttachSound`, `AttachSounds`, `DetachSound`, `DetachSounds`. Please add sounds now from the `AudioEmitterComponent`
+- Remover Jogar com argumento booleano de `SoundInstance`, em vez disso o mesmo comportamento será alcançado usando PlayExtended ou Play.
+- Renomear `IsLooped` em `IsLooping`.
+- Desprezado: `GetSoundController`, `AttachSound`, `AttachSounds`, `DetachSound`, `DetachSounds`. Adicione sons agora do `AudioEmitterComponent`
 
-##### Physics
+##### Física
 
-- `Collision.Contacts` is now an `HashSet` so access by index is not possible anymore, please use `foreach` or iterate them instead.
+- `Collision.Contacts` é agora um `HashSet` assim o acesso por índice não é mais possível, use `foreach` ou iterá-los em vez disso.
 
-##### VR
+##### RV
 
-- Add audio, status and re-center support for Oculus Rift.
-
-##### Linux
-
-- Fix Mono issue with the new effect compiler (introduced in 1.7.5-Beta). No need to enable the "remote compiler" anymore in the "package properties".
-
-
-### Version 1.8.1-Beta
-
-Release date: 2016/09/09
-
-#### Enhancements
-
-##### Game Studio
-
-- Current selection in the UI editor can be changed from the context menu. This is especially useful to select an element that is covered by another.
-- Add snapping when moving or resizing a element in the UI editor.
-
-#### Issues fixed
-
-- Fix a compilation issue with Prefab Models using other Prefab Models to be compiled
-- Fix and improve edition of Generics and Composition Nodes for Shader class nodes in materials
-
-##### Game Studio
-
-- Fix a potential NullReferenceException when validating a range value in the property grid.
-- Creation of derived asset (ArcheType) for UI page or UI library are not supported, but were still allowed.
-- Fix an issue with message box that returned a wrong value when the user chose to close it instead of clicking on one of its button. This could result in data loss when asked to save the project upon closing the Game Studio.
-- Remove incorrect GPL headers in script templates, e.g. BasicCameraController ([#457](https://github.com/SiliconStudio/xenko/issues/457)).
-- Display error message in credential dialog when remote location does not exist instead of reporting invalid credentials.
+- Adicione suporte de áudio, status e recentro para Oculus Rift.
 
 ##### Linux
-- Fix failure when compiling shaders for the Vulkan backend on the remote host.
 
-##### Particles
-
-- Particles materials refactored, significantly improving memory performance.
-
-##### Samples
-
-- Fix samples were depending on the wrong version of Xenko.
+- Corrigir problema Mono com o novo compilador de efeitos (introduzido em 1.7.5-Beta). Não há necessidade de ativar o "compilador remoto" mais nas "propriedades do pacote".
 
 
-### Version 1.8.2-Beta
+### Versão 1.8.1-Beta
 
-Release date: 2016/09/21
+Data de lançamento: 2016\/09\/2009
 
-#### Enhancements
+#### Melhorias
 
 ##### Game Studio
 
-- Improve snapping when moving or resizing an element in the UI editor: moved element will be "attracted" by the parent container bounds or siblings like magnets. This should ease aligning elements with one another.
-- Auto adjust alignment property when moving to left/right (resp. top/bottom) edge of the parent container.
-- The single root of a UI page can be removed and a new one can be added instead.
-- Improve responsiveness of the Game Studio.
+- A seleção atual no editor UI pode ser alterada no menu de contexto. Isso é especialmente útil para selecionar um elemento coberto por outro.
+- Adicione snapping ao mover ou redimensionar um elemento no editor de interface do usuário.
 
-#### Issues fixed
+#### Questões corrigidas
+
+- Corrigir um problema de compilação com modelos pré-fabricados usando outros modelos pré-fabricados para ser compilado
+- Corrigir e melhorar a edição de Genéricos e Nodos de Composição para nós de classe Shader em materiais
 
 ##### Game Studio
 
-- Fix magic wand tool not working inside the sprite region.
-- Fix an issue when removing the single root of a UI page.
-- Fix some user operations that were taking a very long time to be executed.
-- Fix a crash when setting materials in a model component.
+- Corrigir um potencial NullReferenceException ao validar um valor de intervalo na grade de propriedade.
+- A criação de ativos derivados (ArcheType) para a página UI ou biblioteca UI não são suportados, mas ainda eram permitidos.
+- Corrigir um problema com caixa de mensagem que devolveu um valor errado quando o usuário escolheu fechá-lo em vez de clicar em um de seu botão. Isso pode resultar em perda de dados quando solicitado para salvar o projeto ao fechar o Game Studio.
+- Remover incorreta Cabeçalhos GPL em modelos de script, por exemplo. BasicCameraController ([#457](https://github.com/SiliconStudio/xenko/issues/457)).
+- Exibir mensagem de erro na caixa de diálogo credencial quando a localização remota não existe em vez de relatar credenciais inválidas.
 
-##### Physics
+##### Linux
+- Corrigir falha ao compilar shaders para o backend Vulkan no host remoto.
 
-- Fix some memory leaks.
+##### Partes
 
-##### Samples
+- Materiais de partículas refactored, melhorando significativamente o desempenho da memória.
 
-- Fix some scripts that were depending on C# level 6 features.
+##### Amostras
+
+- As amostras fixas estavam dependendo da versão errada de Xenko.
 
 
-### Version 1.8.3-Beta
+### Versão 1.8.2-Beta
 
-Release date: 2016/10/07
+Data de lançamento: 2016\/09\/21
 
-#### Enhancements
+#### Melhorias
+
+##### Game Studio
+
+- Melhore o encaixe ao mover ou redimensionar um elemento no editor de interface do usuário: elemento movido será "atraído" pelos limites do recipiente pai ou irmãos como ímãs. Isso deve facilitar o alinhamento de elementos uns com os outros.
+- Ajuste automaticamente a propriedade de alinhamento ao mover-se para a borda esquerda\/direita (resp. top\/bottom) do recipiente pai.
+- A única raiz de uma página de interface do usuário pode ser removida e uma nova pode ser adicionada.
+- Melhore a capacidade de resposta do Game Studio.
+
+#### Questões corrigidas
+
+##### Game Studio
+
+- Corrigir ferramenta de varinha mágica não trabalhando dentro da região de sprite.
+- Corrigir um problema ao remover a única raiz de uma página de interface do usuário.
+- Corrigir algumas operações de usuário que estavam levando muito tempo para ser executado.
+- Corrigir um acidente ao definir materiais em um componente de modelo.
+
+##### Física
+
+- Corrigir alguns vazamentos de memória.
+
+##### Amostras
+
+- Corrigir alguns scripts que estavam dependendo dos recursos do nível 6 do C#.
+
+
+### Versão 1.8.3-Beta
+
+Data de lançamento: 2016\/10\/07
+
+#### Melhorias
 
 ##### Editor
-- Creating a Prefab from a group of entities will name it after the first entity
-- More relevant messages displayed now when assets are not found
+- Criar um Prefab de um grupo de entidades o nomeará após a primeira entidade
+- Mensagens mais relevantes exibidas agora quando os ativos não são encontrados
 
-##### Physics
+##### Física
 
-- Add a new Jump method which supports an arbitrary jump vector.
-- Add NormalizedDistance to HitResult.
-- Add a version of RaycastPenetrating ( and shape sweep ) that accepts a group and filters accordingly.
-- Add optional offsets to convex hull shapes.
-- Make Move method obsolete, the new method to use from now is SetVelocity which internally applies the simulation fixed time step.
-- Change Character controller's max slope default value to 45 degrees
+- Adicione um novo método de salto que suporta um vetor de salto arbitrário.
+- Adicionar Normalizado Distância para HitResult.
+- Adicione uma versão do RaycastPenetrating ( e shape varre) que aceita um grupo e filtros de acordo.
+- Adicione deslocamentos opcionais para formas de casco convexo.
+- Tornar o método Move obsoleto, o novo método a ser usado a partir de agora é SetVelocity que aplica internamente a etapa de tempo fixo da simulação.
+- Alterar o valor padrão de inclinação máximo do controlador de caracteres para 45 graus
 
-#### Issues fixed
+#### Questões corrigidas
 
-##### Engine
+##### Motor
 
-- Fix calculation of bounding boxes of skinned meshes.
-- Fix culling mode for meshes with negative scale.
-- Disable bloom, light streaks and lens flares when the bright-pass is disabled.
-- Fix an issue with Event system and scheduling.
+- Corrigir o cálculo de caixas de amarração de malhas de pele.
+- Corrigir modo de encolhimento para malhas com escala negativa.
+- Desativar flor, manchas de luz e chamas de lente quando a passagem brilhante é desativada.
+- Corrigir um problema com o sistema de eventos e agendamento.
 
-##### Physics
+##### Física
 
-- Fix debug shape rendering of static colliders when those colliders are forced to move
-- Fix debug shape rendering of enabled/disabled entities.
-- Fix issues with Jumping
-- Fix transformation propagation of dynamic bodies when in a skeleton.
+- Corrigir a renderização da forma de depuração de colisões estáticos quando esses colisões são forçados a se mover
+- Corrigir renderização de forma de depuração de entidades habilitadas\/desativadas.
+- Corrigir problemas com salto
+- Corrigir a propagação de transformação de corpos dinâmicos quando em um esqueleto.
 
-##### Serialization
+##### Serialização
 
-- Fix an issue in SharpYaml preventing generic types to be properly serialized. For instance List<string> can now be used from a script.
+- Corrigir um problema no SharpYaml impedindo que tipos genéricos sejam devidamente serializados. Por exemplo Lista<string> agora pode ser usado a partir de um script.
 
 
-## Known Issues
+## Questões conhecidas
 
-- On Linux, when switching the underlying Graphics Platform, rendering will not occur or fail. Delete the cache, local and roaming folder on the Linux host and restarting the game should fix the issue.
+- No Linux, ao alternar a plataforma gráfica subjacente, a renderização não ocorrerá ou falhará. Excluir o cache, local e roaming pasta no host Linux e reiniciar o jogo deve corrigir o problema.

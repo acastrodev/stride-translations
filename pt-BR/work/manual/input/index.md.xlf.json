@@ -1,478 +1,478 @@
 {
-    "filename": "manual\\input\\index.md.xlf",
-    "files": [
-        {
-            "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/index.md": [
-                [
-                    "Input",
-                    "",
-                    "Input",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/index.md",
-                    {
-                        "id": "tu1"
-                    }
-                ],
-                [
-                    "<x1\/>Beginner<x2\/>",
-                    "",
-                    "<x1\/>Beginner<x2\/>\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/index.md",
-                    {
-                        "id": "tu2"
-                    }
-                ],
-                [
-                    "<x3\/>Programmer<x4\/>",
-                    "",
-                    "<x3\/>Programmer<x4\/>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/index.md",
-                    {
-                        "id": "tu2"
-                    }
-                ],
-                [
-                    "Users interact with games and applications using <g1>input devices<\/g1> such as gamepads, mice, and keyboards.",
-                    "",
-                    "Users interact with games and applications using <g1>input devices<\/g1> such as gamepads, mice, and keyboards.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/index.md",
-                    {
-                        "id": "tu3"
-                    }
-                ],
-                [
-                    "Every interactive application must support at least one input device.",
-                    "",
-                    " Every interactive application must support at least one input device.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/index.md",
-                    {
-                        "id": "tu3"
-                    }
-                ],
-                [
-                    "<x1\/>Input devices<x2\/>",
-                    "",
-                    "<x1\/>Input devices<x2\/>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/index.md",
-                    {
-                        "id": "tu4"
-                    }
-                ],
-                [
-                    "Stride handles input entirely via scripts.",
-                    "",
-                    "Stride handles input entirely via scripts.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/index.md",
-                    {
-                        "id": "tu5"
-                    }
-                ],
-                [
-                    "There are low-level and high-level APIs to handle different input types:",
-                    "",
-                    " There are low-level and high-level APIs to handle different input types:",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/index.md",
-                    {
-                        "id": "tu5"
-                    }
-                ],
-                [
-                    "<g1>Low-level<\/g1> APIs are close to hardware, so they have lower latency.",
-                    "",
-                    "<g1>Low-level<\/g1> APIs are close to hardware, so they have lower latency.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/index.md",
-                    {
-                        "id": "tu6"
-                    }
-                ],
-                [
-                    "These allow fast processing of the input from <g2>pointers<\/g2>, <g3>keyboards<\/g3>, <g4>mouse<\/g4>, <g5>gamepads<\/g5>, and some <g6>sensors<\/g6>.",
-                    "",
-                    " These allow fast processing of the input from <g2>pointers<\/g2>, <g3>keyboards<\/g3>, <g4>mouse<\/g4>, <g5>gamepads<\/g5>, and some <g6>sensors<\/g6>.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/index.md",
-                    {
-                        "id": "tu6"
-                    }
-                ],
-                [
-                    "<g1>High-level<\/g1> APIs interpret input for you, so they have higher latency.",
-                    "",
-                    "<g1>High-level<\/g1> APIs interpret input for you, so they have higher latency.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/index.md",
-                    {
-                        "id": "tu7"
-                    }
-                ],
-                [
-                    "These APIs are used for <g2>gestures<\/g2> and some <g3>sensors<\/g3>.",
-                    "",
-                    " These APIs are used for <g2>gestures<\/g2> and some <g3>sensors<\/g3>.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/index.md",
-                    {
-                        "id": "tu7"
-                    }
-                ],
-                [
-                    "There are also <g1>special APIs<\/g1> for some <g2>sensors<\/g2> and <g3>virtual buttons<\/g3>.",
-                    "",
-                    "There are also <g1>special APIs<\/g1> for some <g2>sensors<\/g2> and <g3>virtual buttons<\/g3>.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/index.md",
-                    {
-                        "id": "tu8"
-                    }
-                ],
-                [
-                    "Handle input",
-                    "",
-                    "Handle input",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/index.md",
-                    {
-                        "id": "tu9"
-                    }
-                ],
-                [
-                    "Handle input with the <g1>InputManager<\/g1> class.",
-                    "",
-                    "Handle input with the <g1>InputManager<\/g1> class.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/index.md",
-                    {
-                        "id": "tu10"
-                    }
-                ],
-                [
-                    "You can access this class from a script with its properties and methods.",
-                    "",
-                    " You can access this class from a script with its properties and methods.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/index.md",
-                    {
-                        "id": "tu10"
-                    }
-                ],
-                [
-                    "To check whether a particular input device is available, use the corresponding @'Stride.Input.InputManager' property.",
-                    "",
-                    "To check whether a particular input device is available, use the corresponding @'Stride.Input.InputManager' property.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/index.md",
-                    {
-                        "id": "tu11"
-                    }
-                ],
-                [
-                    "For example, to check if a mouse is connected, use <g1>Input.HasMouse<\/g1>.",
-                    "",
-                    " For example, to check if a mouse is connected, use <g1>Input.HasMouse<\/g1>.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/index.md",
-                    {
-                        "id": "tu11"
-                    }
-                ],
-                [
-                    "After you check the device availability, there are four ways to handle input in Stride.",
-                    "",
-                    "After you check the device availability, there are four ways to handle input in Stride.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/index.md",
-                    {
-                        "id": "tu12"
-                    }
-                ],
-                [
-                    "Query state",
-                    "",
-                    "Query state",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/index.md",
-                    {
-                        "id": "tu13"
-                    }
-                ],
-                [
-                    "You can query the state of digital keys and buttons (ie <g1>Up<\/g1> or <g2>Down<\/g2>) and the numeric values of analog buttons and sensors.",
-                    "",
-                    "You can query the state of digital keys and buttons (ie <g1>Up<\/g1> or <g2>Down<\/g2>) and the numeric values of analog buttons and sensors.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/index.md",
-                    {
-                        "id": "tu14"
-                    }
-                ],
-                [
-                    "For example, @'Stride.Input.InputManager.DownKeys' gets a list of the keys that were in the state <g3>Down<\/g3> in the last update.",
-                    "",
-                    " For example, @'Stride.Input.InputManager.DownKeys' gets a list of the keys that were in the state <g3>Down<\/g3> in the last update.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/index.md",
-                    {
-                        "id": "tu14"
-                    }
-                ],
-                [
-                    "<x1\/>Query key and button states<x2\/>",
-                    "",
-                    "<x1\/>Query key and button states<x2\/>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/index.md",
-                    {
-                        "id": "tu15"
-                    }
-                ],
-                [
-                    "<x1\/>Analog stick positions<x2\/>",
-                    "",
-                    "<x1\/>Analog stick positions<x2\/>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/index.md",
-                    {
-                        "id": "tu16"
-                    }
-                ],
-                [
-                    "Sometimes a user performs more than one action between updates.",
-                    "",
-                    "Sometimes a user performs more than one action between updates.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/index.md",
-                    {
-                        "id": "tu17"
-                    }
-                ],
-                [
-                    "If there's no state change between the updates (the end result is the same), Stride registers no action:",
-                    "",
-                    " If there's no state change between the updates (the end result is the same), Stride registers no action:",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/index.md",
-                    {
-                        "id": "tu17"
-                    }
-                ],
-                [
-                    "<x1\/>Several actions between updates<x2\/>",
-                    "",
-                    "<x1\/>Several actions between updates<x2\/>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/index.md",
-                    {
-                        "id": "tu18"
-                    }
-                ],
-                [
-                    "Query a state change",
-                    "",
-                    "Query a state change",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/index.md",
-                    {
-                        "id": "tu19"
-                    }
-                ],
-                [
-                    "You can query the change of state of buttons and keys since the previous update.",
-                    "",
-                    "You can query the change of state of buttons and keys since the previous update.\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/index.md",
-                    {
-                        "id": "tu20"
-                    }
-                ],
-                [
-                    "In this case, you don't get the list of all buttons and keys, but have to query each button and key separately.",
-                    "",
-                    "In this case, you don't get the list of all buttons and keys, but have to query each button and key separately.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/index.md",
-                    {
-                        "id": "tu20"
-                    }
-                ],
-                [
-                    "For digital buttons and keys, query if the button or key was <g1>Pressed<\/g1>, <g2>Down<\/g2> or <g3>Released<\/g3> in the last update.",
-                    "",
-                    "For digital buttons and keys, query if the button or key was <g1>Pressed<\/g1>, <g2>Down<\/g2> or <g3>Released<\/g3> in the last update.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/index.md",
-                    {
-                        "id": "tu21"
-                    }
-                ],
-                [
-                    "<x1\/>Query key state change<x2\/>",
-                    "",
-                    "<x1\/>Query key state change<x2\/>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/index.md",
-                    {
-                        "id": "tu22"
-                    }
-                ],
-                [
-                    "For mouse positions and mouse wheel scrolling, query <g1>Delta Values<\/g1> since the previous update:",
-                    "",
-                    "For mouse positions and mouse wheel scrolling, query <g1>Delta Values<\/g1> since the previous update:",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/index.md",
-                    {
-                        "id": "tu23"
-                    }
-                ],
-                [
-                    "<x1\/>Mouse wheel delta<x2\/>",
-                    "",
-                    "<x1\/>Mouse wheel delta<x2\/>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/index.md",
-                    {
-                        "id": "tu24"
-                    }
-                ],
-                [
-                    "Sometimes a user performs several actions between two updates.",
-                    "",
-                    "Sometimes a user performs several actions between two updates.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/index.md",
-                    {
-                        "id": "tu25"
-                    }
-                ],
-                [
-                    "If there's no state change between two updates (the end result is the same), Stride registers no action.",
-                    "",
-                    " If there's no state change between two updates (the end result is the same), Stride registers no action.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/index.md",
-                    {
-                        "id": "tu25"
-                    }
-                ],
-                [
-                    "Query the list of events",
-                    "",
-                    "Query the list of events",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/index.md",
-                    {
-                        "id": "tu26"
-                    }
-                ],
-                [
-                    "For pointers, gestures, and keyboards, you can query all the events that happened in the last update.",
-                    "",
-                    "For pointers, gestures, and keyboards, you can query all the events that happened in the last update.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/index.md",
-                    {
-                        "id": "tu27"
-                    }
-                ],
-                [
-                    "<x1\/>Several actions between updates<x2\/>",
-                    "",
-                    "<x1\/>Several actions between updates<x2\/>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/index.md",
-                    {
-                        "id": "tu28"
-                    }
-                ],
-                [
-                    "<x1\/>!Note<x2\/>",
-                    "",
-                    "<x1\/>!Note<x2\/>\r\n",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/index.md",
-                    {
-                        "id": "tu29"
-                    }
-                ],
-                [
-                    "Even if a user performs several actions between two updates, Stride registers all these events.",
-                    "",
-                    "Even if a user performs several actions between two updates, Stride registers all these events.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/index.md",
-                    {
-                        "id": "tu29"
-                    }
-                ],
-                [
-                    "Use virtual buttons",
-                    "",
-                    "Use virtual buttons",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/index.md",
-                    {
-                        "id": "tu30"
-                    }
-                ],
-                [
-                    "You can use <g1>virtual buttons<\/g1> to associate input to actions rather than physical keys, then let the user define their own keys.",
-                    "",
-                    "You can use <g1>virtual buttons<\/g1> to associate input to actions rather than physical keys, then let the user define their own keys.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/index.md",
-                    {
-                        "id": "tu31"
-                    }
-                ],
-                [
-                    "For more information, see <g2>virtual buttons<\/g2>.",
-                    "",
-                    " For more information, see <g2>virtual buttons<\/g2>.",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/index.md",
-                    {
-                        "id": "tu31"
-                    }
-                ],
-                [
-                    "In this section",
-                    "",
-                    "In this section",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/index.md",
-                    {
-                        "id": "tu32"
-                    }
-                ],
-                [
-                    "Gamepads",
-                    "",
-                    "<g1>Gamepads<\/g1>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/index.md",
-                    {
-                        "id": "tu33"
-                    }
-                ],
-                [
-                    "Gestures",
-                    "",
-                    "<g1>Gestures<\/g1>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/index.md",
-                    {
-                        "id": "tu34"
-                    }
-                ],
-                [
-                    "Keyboards",
-                    "",
-                    "<g1>Keyboards<\/g1>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/index.md",
-                    {
-                        "id": "tu35"
-                    }
-                ],
-                [
-                    "Mouse",
-                    "",
-                    "<g1>Mouse<\/g1>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/index.md",
-                    {
-                        "id": "tu36"
-                    }
-                ],
-                [
-                    "Pointers",
-                    "",
-                    "<g1>Pointers<\/g1>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/index.md",
-                    {
-                        "id": "tu37"
-                    }
-                ],
-                [
-                    "Sensors",
-                    "",
-                    "<g1>Sensors<\/g1>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/index.md",
-                    {
-                        "id": "tu38"
-                    }
-                ],
-                [
-                    "Virtual buttons",
-                    "",
-                    "<g1>Virtual buttons<\/g1>",
-                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/input\/index.md",
-                    {
-                        "id": "tu39"
-                    }
-                ]
-            ]
-        }
-    ],
-    "seg_enabled": false
+  "filename": "manual\\input\\index.md.xlf",
+  "files": [
+    {
+      "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/index.md": [
+        [
+          "Input",
+          "Entrada",
+          "Input",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/index.md",
+          {
+            "id": "tu1"
+          }
+        ],
+        [
+          "<x1\\/>Beginner<x2\\/>",
+          "<x1\\/>Introdução<x2\\/>",
+          "<x1\\/>Beginner<x2\\/>\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/index.md",
+          {
+            "id": "tu2"
+          }
+        ],
+        [
+          "<x3\\/>Programmer<x4\\/>",
+          "<x3\\/> Programador <x4\\/>",
+          "<x3\\/>Programmer<x4\\/>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/index.md",
+          {
+            "id": "tu2"
+          }
+        ],
+        [
+          "Users interact with games and applications using <g1>input devices<\\/g1> such as gamepads, mice, and keyboards.",
+          "Os usuários interagem com jogos e aplicativos usando dispositivos de entrada <g1><\\/g1> como gamepads, mice e teclados.",
+          "Users interact with games and applications using <g1>input devices<\\/g1> such as gamepads, mice, and keyboards.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/index.md",
+          {
+            "id": "tu3"
+          }
+        ],
+        [
+          "Every interactive application must support at least one input device.",
+          "Cada aplicativo interativo deve suportar pelo menos um dispositivo de entrada.",
+          " Every interactive application must support at least one input device.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/index.md",
+          {
+            "id": "tu3"
+          }
+        ],
+        [
+          "<x1\\/>Input devices<x2\\/>",
+          "<x1\\/> Dispositivos de entrada<x2\\/>",
+          "<x1\\/>Input devices<x2\\/>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/index.md",
+          {
+            "id": "tu4"
+          }
+        ],
+        [
+          "Stride handles input entirely via scripts.",
+          "Stride lida com a entrada inteiramente através de scripts.",
+          "Stride handles input entirely via scripts.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/index.md",
+          {
+            "id": "tu5"
+          }
+        ],
+        [
+          "There are low-level and high-level APIs to handle different input types:",
+          "Existem APIs de baixo nível e alto nível para lidar com diferentes tipos de entrada:",
+          " There are low-level and high-level APIs to handle different input types:",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/index.md",
+          {
+            "id": "tu5"
+          }
+        ],
+        [
+          "<g1>Low-level<\\/g1> APIs are close to hardware, so they have lower latency.",
+          "<g1> Nível inferior <\\/g1> APIs estão perto de hardware, então eles têm menor latência.",
+          "<g1>Low-level<\\/g1> APIs are close to hardware, so they have lower latency.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/index.md",
+          {
+            "id": "tu6"
+          }
+        ],
+        [
+          "These allow fast processing of the input from <g2>pointers<\\/g2>, <g3>keyboards<\\/g3>, <g4>mouse<\\/g4>, <g5>gamepads<\\/g5>, and some <g6>sensors<\\/g6>.",
+          "Estes permitem o processamento rápido da entrada de <g2>pointers<\\/g2>, <g3>keyboards<\\/g3>, <g4>mouse<\\/g4>, <g5>gamepads<\\/g5>, e alguns <g6>sensors<\\/g6>.",
+          " These allow fast processing of the input from <g2>pointers<\\/g2>, <g3>keyboards<\\/g3>, <g4>mouse<\\/g4>, <g5>gamepads<\\/g5>, and some <g6>sensors<\\/g6>.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/index.md",
+          {
+            "id": "tu6"
+          }
+        ],
+        [
+          "<g1>High-level<\\/g1> APIs interpret input for you, so they have higher latency.",
+          "<g1> Alto nível<\\/g1> APIs interpretam entrada para você, então eles têm maior latência.",
+          "<g1>High-level<\\/g1> APIs interpret input for you, so they have higher latency.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/index.md",
+          {
+            "id": "tu7"
+          }
+        ],
+        [
+          "These APIs are used for <g2>gestures<\\/g2> and some <g3>sensors<\\/g3>.",
+          "Essas APIs são usadas para <g2>gestures<\\/g2> e alguns <g3>sensors<\\/g3>.",
+          " These APIs are used for <g2>gestures<\\/g2> and some <g3>sensors<\\/g3>.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/index.md",
+          {
+            "id": "tu7"
+          }
+        ],
+        [
+          "There are also <g1>special APIs<\\/g1> for some <g2>sensors<\\/g2> and <g3>virtual buttons<\\/g3>.",
+          "Há também <g1> APIs especiais<\\/g1> para alguns <g2>sensors<\\/g2> e <g3>virtual botões<\\/g3>.",
+          "There are also <g1>special APIs<\\/g1> for some <g2>sensors<\\/g2> and <g3>virtual buttons<\\/g3>.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/index.md",
+          {
+            "id": "tu8"
+          }
+        ],
+        [
+          "Handle input",
+          "Punho de entrada",
+          "Handle input",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/index.md",
+          {
+            "id": "tu9"
+          }
+        ],
+        [
+          "Handle input with the <g1>InputManager<\\/g1> class.",
+          "Lidar com a entrada com a classe <g1>InputManager<\\/g1>.",
+          "Handle input with the <g1>InputManager<\\/g1> class.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/index.md",
+          {
+            "id": "tu10"
+          }
+        ],
+        [
+          "You can access this class from a script with its properties and methods.",
+          "Você pode acessar esta classe de um script com suas propriedades e métodos.",
+          " You can access this class from a script with its properties and methods.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/index.md",
+          {
+            "id": "tu10"
+          }
+        ],
+        [
+          "To check whether a particular input device is available, use the corresponding @'Stride.Input.InputManager' property.",
+          "Para verificar se um dispositivo de entrada em particular está disponível, use o @'Stride correspondente. Input.InputManager' propriedade.",
+          "To check whether a particular input device is available, use the corresponding @'Stride.Input.InputManager' property.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/index.md",
+          {
+            "id": "tu11"
+          }
+        ],
+        [
+          "For example, to check if a mouse is connected, use <g1>Input.HasMouse<\\/g1>.",
+          "Por exemplo, para verificar se um mouse está conectado, use <g1>Input.HasMouse<\\/g1>.",
+          " For example, to check if a mouse is connected, use <g1>Input.HasMouse<\\/g1>.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/index.md",
+          {
+            "id": "tu11"
+          }
+        ],
+        [
+          "After you check the device availability, there are four ways to handle input in Stride.",
+          "Depois de verificar a disponibilidade do dispositivo, existem quatro maneiras de lidar com a entrada em Stride.",
+          "After you check the device availability, there are four ways to handle input in Stride.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/index.md",
+          {
+            "id": "tu12"
+          }
+        ],
+        [
+          "Query state",
+          "Estado de consulta",
+          "Query state",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/index.md",
+          {
+            "id": "tu13"
+          }
+        ],
+        [
+          "You can query the state of digital keys and buttons (ie <g1>Up<\\/g1> or <g2>Down<\\/g2>) and the numeric values of analog buttons and sensors.",
+          "Você pode consultar o estado de chaves e botões digitais (ou seja, <g1>Up<\\/g1> ou <g2>Down<\\/g2>) e os valores numéricos de botões e sensores analógicos.",
+          "You can query the state of digital keys and buttons (ie <g1>Up<\\/g1> or <g2>Down<\\/g2>) and the numeric values of analog buttons and sensors.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/index.md",
+          {
+            "id": "tu14"
+          }
+        ],
+        [
+          "For example, @'Stride.Input.InputManager.DownKeys' gets a list of the keys that were in the state <g3>Down<\\/g3> in the last update.",
+          "Por exemplo, @'Stride.Input.InputManager. DownKeys' recebe uma lista das chaves que estavam no estado <g3>Down<\\/g3> na última atualização.",
+          " For example, @'Stride.Input.InputManager.DownKeys' gets a list of the keys that were in the state <g3>Down<\\/g3> in the last update.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/index.md",
+          {
+            "id": "tu14"
+          }
+        ],
+        [
+          "<x1\\/>Query key and button states<x2\\/>",
+          "<x1\\/>Query chave e botão estados<x2\\/>",
+          "<x1\\/>Query key and button states<x2\\/>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/index.md",
+          {
+            "id": "tu15"
+          }
+        ],
+        [
+          "<x1\\/>Analog stick positions<x2\\/>",
+          "<x1\\/>Analog stick positions<x2\\/>",
+          "<x1\\/>Analog stick positions<x2\\/>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/index.md",
+          {
+            "id": "tu16"
+          }
+        ],
+        [
+          "Sometimes a user performs more than one action between updates.",
+          "Às vezes, um usuário executa mais de uma ação entre atualizações.",
+          "Sometimes a user performs more than one action between updates.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/index.md",
+          {
+            "id": "tu17"
+          }
+        ],
+        [
+          "If there's no state change between the updates (the end result is the same), Stride registers no action:",
+          "Se não houver mudança de estado entre as atualizações (o resultado final é o mesmo), Stride registra nenhuma ação:",
+          " If there's no state change between the updates (the end result is the same), Stride registers no action:",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/index.md",
+          {
+            "id": "tu17"
+          }
+        ],
+        [
+          "<x1\\/>Several actions between updates<x2\\/>",
+          "<x1\\/> Várias ações entre atualizações<x2\\/>",
+          "<x1\\/>Several actions between updates<x2\\/>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/index.md",
+          {
+            "id": "tu18"
+          }
+        ],
+        [
+          "Query a state change",
+          "Consultar uma mudança de estado",
+          "Query a state change",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/index.md",
+          {
+            "id": "tu19"
+          }
+        ],
+        [
+          "You can query the change of state of buttons and keys since the previous update.",
+          "Você pode consultar a mudança de estado de botões e chaves desde a atualização anterior.",
+          "You can query the change of state of buttons and keys since the previous update.\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/index.md",
+          {
+            "id": "tu20"
+          }
+        ],
+        [
+          "In this case, you don't get the list of all buttons and keys, but have to query each button and key separately.",
+          "Neste caso, você não tem a lista de todos os botões e chaves, mas tem que consultar cada botão e chave separadamente.",
+          "In this case, you don't get the list of all buttons and keys, but have to query each button and key separately.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/index.md",
+          {
+            "id": "tu20"
+          }
+        ],
+        [
+          "For digital buttons and keys, query if the button or key was <g1>Pressed<\\/g1>, <g2>Down<\\/g2> or <g3>Released<\\/g3> in the last update.",
+          "Para botões e chaves digitais, consulta se o botão ou chave foi <g1>Pressed<\\/g1>, <g2>Down<\\/g2> ou <g3>Released<\\/g3> na última atualização.",
+          "For digital buttons and keys, query if the button or key was <g1>Pressed<\\/g1>, <g2>Down<\\/g2> or <g3>Released<\\/g3> in the last update.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/index.md",
+          {
+            "id": "tu21"
+          }
+        ],
+        [
+          "<x1\\/>Query key state change<x2\\/>",
+          "<x1\\/> Alteração do estado da chave de consulta <x2\\/>",
+          "<x1\\/>Query key state change<x2\\/>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/index.md",
+          {
+            "id": "tu22"
+          }
+        ],
+        [
+          "For mouse positions and mouse wheel scrolling, query <g1>Delta Values<\\/g1> since the previous update:",
+          "Para posições do mouse e rolagem da roda do mouse, consulta <g1>Delta Valores<\\/g1> desde a atualização anterior:",
+          "For mouse positions and mouse wheel scrolling, query <g1>Delta Values<\\/g1> since the previous update:",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/index.md",
+          {
+            "id": "tu23"
+          }
+        ],
+        [
+          "<x1\\/>Mouse wheel delta<x2\\/>",
+          "<x1\\/>Mouse wheel delta<x2\\/>",
+          "<x1\\/>Mouse wheel delta<x2\\/>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/index.md",
+          {
+            "id": "tu24"
+          }
+        ],
+        [
+          "Sometimes a user performs several actions between two updates.",
+          "Às vezes, um usuário executa várias ações entre duas atualizações.",
+          "Sometimes a user performs several actions between two updates.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/index.md",
+          {
+            "id": "tu25"
+          }
+        ],
+        [
+          "If there's no state change between two updates (the end result is the same), Stride registers no action.",
+          "Se não houver mudança de estado entre duas atualizações (o resultado final é o mesmo), Stride registra nenhuma ação.",
+          " If there's no state change between two updates (the end result is the same), Stride registers no action.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/index.md",
+          {
+            "id": "tu25"
+          }
+        ],
+        [
+          "Query the list of events",
+          "Consultar a lista de eventos",
+          "Query the list of events",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/index.md",
+          {
+            "id": "tu26"
+          }
+        ],
+        [
+          "For pointers, gestures, and keyboards, you can query all the events that happened in the last update.",
+          "Para ponteiros, gestos e teclados, você pode consultar todos os eventos que aconteceram na última atualização.",
+          "For pointers, gestures, and keyboards, you can query all the events that happened in the last update.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/index.md",
+          {
+            "id": "tu27"
+          }
+        ],
+        [
+          "<x1\\/>Several actions between updates<x2\\/>",
+          "<x1\\/> Várias ações entre atualizações<x2\\/>",
+          "<x1\\/>Several actions between updates<x2\\/>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/index.md",
+          {
+            "id": "tu28"
+          }
+        ],
+        [
+          "<x1\\/>!Note<x2\\/>",
+          "<x1\\/>!Note<x2\\/>",
+          "<x1\\/>!Note<x2\\/>\r\n",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/index.md",
+          {
+            "id": "tu29"
+          }
+        ],
+        [
+          "Even if a user performs several actions between two updates, Stride registers all these events.",
+          "Mesmo que um usuário realize várias ações entre duas atualizações, a Stride registra todos esses eventos.",
+          "Even if a user performs several actions between two updates, Stride registers all these events.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/index.md",
+          {
+            "id": "tu29"
+          }
+        ],
+        [
+          "Use virtual buttons",
+          "Use botões virtuais",
+          "Use virtual buttons",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/index.md",
+          {
+            "id": "tu30"
+          }
+        ],
+        [
+          "You can use <g1>virtual buttons<\\/g1> to associate input to actions rather than physical keys, then let the user define their own keys.",
+          "Você pode usar botões <g1>virtual<\\/g1> para associar a entrada a ações em vez de chaves físicas, então deixe o usuário definir suas próprias chaves.",
+          "You can use <g1>virtual buttons<\\/g1> to associate input to actions rather than physical keys, then let the user define their own keys.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/index.md",
+          {
+            "id": "tu31"
+          }
+        ],
+        [
+          "For more information, see <g2>virtual buttons<\\/g2>.",
+          "Para obter mais informações, consulte os botões <g2>virtual<\\/g2>.",
+          " For more information, see <g2>virtual buttons<\\/g2>.",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/index.md",
+          {
+            "id": "tu31"
+          }
+        ],
+        [
+          "In this section",
+          "Nesta secção",
+          "In this section",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/index.md",
+          {
+            "id": "tu32"
+          }
+        ],
+        [
+          "Gamepads",
+          "Gamepads",
+          "<g1>Gamepads<\\/g1>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/index.md",
+          {
+            "id": "tu33"
+          }
+        ],
+        [
+          "Gestures",
+          "Gestos",
+          "<g1>Gestures<\\/g1>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/index.md",
+          {
+            "id": "tu34"
+          }
+        ],
+        [
+          "Keyboards",
+          "Teclados",
+          "<g1>Keyboards<\\/g1>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/index.md",
+          {
+            "id": "tu35"
+          }
+        ],
+        [
+          "Mouse",
+          "Mouse",
+          "<g1>Mouse<\\/g1>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/index.md",
+          {
+            "id": "tu36"
+          }
+        ],
+        [
+          "Pointers",
+          "Pontos",
+          "<g1>Pointers<\\/g1>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/index.md",
+          {
+            "id": "tu37"
+          }
+        ],
+        [
+          "Sensors",
+          "Sensores",
+          "<g1>Sensors<\\/g1>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/index.md",
+          {
+            "id": "tu38"
+          }
+        ],
+        [
+          "Virtual buttons",
+          "Botões virtuais",
+          "<g1>Virtual buttons<\\/g1>",
+          "\\/D:\\/repos\\/stride-translations\\/pt-BR\\/source\\/manual\\/input\\/index.md",
+          {
+            "id": "tu39"
+          }
+        ]
+      ]
+    }
+  ],
+  "seg_enabled": false
 }

@@ -1,52 +1,52 @@
 # UI
 
-Stride features a UI editor and layout system you can use to build sophisticated user interfaces. It supports 2D and 3D independently of resolution.
+O Stride possui um sistema de editor e layout de interface de usuário sofisticado que você pode usar para construir interfaces de usuário sofisticadas. Ele suporta 2D e 3D independentemente da resolução.
 
-![UI editor](media/ui-editor.png)
+<x1\/>UI editor<x2\/>
 
-Stride uses two types of UI asset: `UIPageAsset` and `UILibraryAsset`. Their runtime counterparts are `UIPage` and `UILibrary` respectively.
+Stride usa dois tipos de UI ativo: `UIPageAsset` e `UILibraryAsset`. Suas contrapartes de tempo de execução são `UIPage` e `UILibrary` respectivamente.
 
-To reduce the number of draw calls, Stride draws multiple elements using a sprite batch renderer.
+Para reduzir o número de chamadas de sorteio, Stride desenha vários elementos usando um renderizador de lote de sprite.
 
-## Controls
+## Controles
 
-Stride features many UI control components, including:
+Stride possui muitos componentes de controle de interface do usuário, incluindo:
 
-* @'Stride.UI.Controls.ImageElement'
-* @'Stride.UI.Controls.ContentControl'
-   * @'Stride.UI.Controls.ScrollViewer'
-   * @'Stride.UI.Controls.Button'
-      * @'Stride.UI.Controls.ToggleButton'
-   * @'Stride.UI.Controls.ContentDecorator'
-* @'Stride.UI.Controls.TextBlock'
-   * @'Stride.UI.Controls.ScrollingText'
-* @'Stride.UI.Controls.EditText' (displays soft keyboard on mobile devices)
-* @'Stride.UI.Panels.Panel'
-   * @'Stride.UI.Panels.StackPanel' (supports virtualization)
-   * @'Stride.UI.Panels.Grid'
-   * @'Stride.UI.Panels.UniformGrid'
-   * @'Stride.UI.Panels.Canvas'
-* @'Stride.UI.Controls.ScrollBar'
-* @'Stride.UI.Controls.ModalElement'
+* @'Stride.UI.Controls.ImageElement '
+* @'Stride.UI.Controls.ContentControl '
+   * @'Stride.UI.Controls.ScrollViewer '
+   * @'Stride.UI.Controles.Button '
+      * @'Stride.UI.Controles.ToggleButton '
+   * @'Stride.UI.Controls.ContentDecorator '
+* @'Stride.UI.Controls.TextBlock '
+   * @'Stride.UI.Controles.ScrollingText '
+* @'Stride.UI.Controls.EditText' (exibe teclado macio em dispositivos móveis)
+* @'Stride.UI. Painéis. Painel '
+   * @'Stride.UI.Panels.StackPanel' (suporta virtualização)
+   * @'Stride.UI.Panels.Grid '
+   * @'Stride.UI.Panels.UniformGrid '
+   * @'Stride.UI.Panels.Canvas '
+* @'Stride.UI.Controles.ScrollBar '
+* @'Stride.UI.Controls.Modal Elemento '
 
-You can also create your own.
+Você também pode criar seu próprio.
 
-## Sample project
+## Projeto de amostra
 
-Without scripts, UIs are simply non-interactive images. To make them interactive, add a script.
+Sem scripts, UIs são simplesmente imagens não interativas. Para torná-los interativos, adicione um script.
 
-For an example of a UI implemented in Stride, see the **game menu UI** sample included with Stride.
+Para um exemplo de uma interface de usuário implementada no Stride, veja a amostra do menu UI</g>game incluída no Stride.<g id="1">
 
-![Sample UI project](media/ui-sample-project.png)
+<x1\/>Projeto de interface de usuário amplo<x2\/>
 
-## In this section
+## Nesta secção
 
-* [UI pages](ui-pages.md)
-* [UI libraries](ui-libraries.md)
-* [UI editor](ui-editor.md)
-* [Add a UI to a scene](add-a-ui-to-a-scene.md)
-* [Layout system](layout-system.md)
+* [Páginas de interface](ui-pages.md)
+* [Bibliotecas de interface](ui-libraries.md)
+* [Editor de UI](ui-editor.md)
+* [Adicionar uma interface de usuário a uma cena](add-a-ui-to-a-scene.md)
+* [Sistema de Layout](layout-system.md)
 
-## See also
+## Ver também
 
-* [VR — Display a UI in an overlay](../virtual-reality/display-a-ui-in-an-overlay.md)
+* [VR — Exibir uma interface de usuário em uma sobreposição](../virtual-reality/display-a-ui-in-an-overlay.md)
