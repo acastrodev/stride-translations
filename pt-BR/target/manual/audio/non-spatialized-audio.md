@@ -1,13 +1,13 @@
-# Áudio não espacializado
+# Áudio não espacial
 
 <x1\/>Introdução<x2\/>
 <x3\/>Programação<x4\/>
 
-** Áudio não espacializado ** soa o mesmo ao longo da cena, independentemente da posição de entidades (como a câmera do jogador). É estéreo e se move ao longo de um único eixo (geralmente o eixo X). Ao contrário de [spatialized audio](spatialized-audio.md), o _volume_, _pitch_ (_frequência_), e outros parâmetros de áudio espacializado não mudam. Isso é útil, por exemplo, para efeitos de som de música de fundo e menu.
+** Áudio não espacial ** soa o mesmo ao longo da cena, independentemente da posição de entidades (como a câmera do jogador). É estéreo e se move ao longo de um único eixo (geralmente o eixo X). Ao contrário de [spatialized audio](spatialized-audio.md), o _volume_, _pitch_ (_frequência_), e outros parâmetros de áudio espacial não mudam. Isso é útil, por exemplo, para efeitos de som de música de fundo e menu.
 
 <x1\/> Não-espacializado áudio<x2\/>
 
-O áudio não espacializado não requer [audio emitters](audio-emitters.md) ou [audio listeners](audio-listeners.md).
+O áudio não espacial não requer [audio emitters](audio-emitters.md) ou [audio listeners](audio-listeners.md).
 
 ## 1. Importar áudio e incluí-lo na compilação
 
@@ -23,7 +23,7 @@ O áudio não espacializado não requer [audio emitters](audio-emitters.md) ou [
 
 ## 2. Criar um script para reproduzir áudio
 
-Para reproduzir áudio não espacializado no tempo de execução, crie uma instância e defina seu comportamento no código.
+Para reproduzir áudio não espacial no tempo de execução, crie uma instância e defina seu comportamento no código.
 
 O [SoundInstance](xref:Stride.Audio.SoundInstance) controla áudio em tempo de execução com as seguintes propriedades:
 
@@ -44,7 +44,7 @@ Para mais detalhes, consulte a documentação [SoundInstance API](xref:Stride.Au
 
 Por exemplo, o seguinte código:
 
-* instantiates áudio não espacializado
+* instantiates áudio não espacial
 * define o áudio para loop
 * define o volume
 * toca o áudio
@@ -133,5 +133,5 @@ classe pública MySoundScript : Sincronização
 ## Ver também
 
 * [Importação de áudio](import-audio.md)
-* [Configurações de áudio globais](global-audio-settings.md)
+* [Configurações globais de áudio](global-audio-settings.md)
 * [Áudio espacial](spatialized-audio.md)

@@ -1,7 +1,7 @@
 # Configurações globais de áudio
 
-<x1\/>Introdução<x2\/>
-<x3\/>Programação<x4\/>
+<span class="badge text-bg-primary">Introdução</span>
+<span class="badge text-bg-success">Programação</span>
 
 As configurações globais de áudio aplicam-se a todos os áudios em seu projeto.
 

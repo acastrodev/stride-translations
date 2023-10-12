@@ -2,7 +2,7 @@
 
 Você pode importar arquivos de som e usá-los em seus jogos. O Stride suporta recursos de áudio, incluindo áudio espacial 3D, streaming e reprodução de baixa latência.
 
-<x1\/>Áudio no Stride<x2\/>
+![Áudio no Stride](media/audio-index-intro-picture.png)
 
 ## Nesta seção
 

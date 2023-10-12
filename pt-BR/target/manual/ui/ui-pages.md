@@ -1,12 +1,12 @@
 # Páginas de interface
 
-<x1\/>Introdução<x2\/>
-<x3\/>Artista <x4\/>
-<x5\/>Designer<x6\/>
+<span class="badge text-bg-primary">Introdução</span>
+<span class="badge text-bg-success">Artista </span>
+<span class="badge text-bg-success">Designer</span>
 
 A **UI page** é uma coleção de elementos de interface do usuário, como botões e grades, que formam uma parte de interface do usuário em seu jogo, como um menu ou tela de título.
 
-<x1\/>UI page<x2\/>
+![UI page](media/ui-page.png)
 
 Em termos de organização, uma página de interface do usuário é equivalente a uma cena no Editor de cenas, e elementos de interface do usuário são equivalentes a entidades em uma cena. Assim como entidades, os elementos podem ter pais e filhos.
 
@@ -16,11 +16,11 @@ Cada cena de interface do usuário abre em sua própria aba no editor de interfa
 
 No **Asset View**, clique em **Add asset > UI > UI page**.
 
-<x1\/> Adicionar página do UI<x2\/>
+![ Adicionar página do UI](media/add-ui-page.png)
 
 Game Studio adiciona a página de interface do usuário ao Asset View.
 
-<x1\/> Adicionado UI página<x2\/>
+![ Adicionado UI página](media/added-ui-page.png)
 
 ### Criar uma página UI de um elemento UI
 
@@ -28,7 +28,7 @@ Game Studio adiciona a página de interface do usuário ao Asset View.
 
 2. Clique com o botão direito e selecione **Criar página da seleção**.
 
-<x1\/>Criar página da seleção<x2\/>
+![Criar página da seleção](media/create-page-from-selection.png)
 
 Game Studio cria uma página com uma cópia dos elementos que você selecionou.
 
@@ -36,17 +36,17 @@ Game Studio cria uma página com uma cópia dos elementos que você selecionou.
 
 No **Asset View**, clique duas vezes na página **UI**.
 
-<x1\/> Adicionado UI página<x2\/>
+![ Adicionado UI página](media/added-ui-page.png)
 
 A página UI abre no editor [UI](ui-editor.md).
 
-<x1\/>UI editor Overview<x2\/>
+![UI editor Overview](media/ui-editor.png)
 
 ## Adicionar um elemento de interface do usuário a uma página de interface do usuário
 
 Para adicionar um elemento, como uma grade ou botão, arraste-o da biblioteca **UI** para a página UI ou a árvore **visual**.
 
-<x1\/> Adicionar elemento UI<x2\/>
+![ Adicionar elemento UI](media/add-ui-element.gif)
 
 Para obter mais informações sobre como usar o editor UI, consulte a página [UI editor](ui-editor.md).
 

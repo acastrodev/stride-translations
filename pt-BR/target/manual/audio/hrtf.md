@@ -12,26 +12,26 @@ Este vídeo demonstra o efeito da HRTF:
 </video>
 </p>
 
-> <x1\/>!Note<x2\/>
+> [!Note]
 > Por enquanto, você só pode usar a HRTF no Windows 10.
 
 ## Habilitar a HRTF
 
-Para utilizar a HRTF, primeiro ative-a globalmente no recurso <g id="1">Configurações de Jogo</g>. Em seguida, habilite a HRTF nas entidades com as quais você deseja utilizá-la.</g>
+Para utilizar a HRTF, primeiro ative-a globalmente no recurso **Configurações de Jogo**. Em seguida, habilite a HRTF nas entidades com as quais você deseja utilizá-la.
 
 ### 1. Habilitar a HRTF globalmente
 
 1. No **Gerenciador de Soluções** (o painel inferior esquerdo por padrão), selecione a pasta **Assets**.
 
-   <x1\/>Selecionar Recurso para a pasta asset<x2\/>
+   ![Selecionar Recurso para a pasta asset](../game-studio/media/select-asset-folder.png)
 
 2. No **Visualizador de Recursos** (o painel inferior por padrão), selecione o recurso **GameSettings**.
 
-   <x1\/>Selecionar recurso GameSettings<x2\/>
+   ![Selecionar recurso GameSettings](../game-studio/media/select-game-settings-asset.png)
 
 3. No **Editor de Propriedades** (o painel direito por padrão), abaixo de **Configurações de áudio**, selecione **HRTF**.
 
-   <x1\/> Configurações de áudio <x2\/>
+   ![ Configurações de áudio ](../game-studio/media/audio-settings.png)
 
 Para obter mais informações sobre o ativo Configurações de Jogo, consulte as configurações [Game](../game-studio/game-settings.md).
 
@@ -41,11 +41,11 @@ Para obter mais informações sobre o ativo Configurações de Jogo, consulte as
 
 2. No **Property Grid** (à direita por padrão), sob **Audio emitter**, selecione **Use HRTF**.
 
-   <x1\/>Audio emitter properties<x2\/>
+   ![Audio emitter properties](media/audio-emitter-properties.png)
 
    Os sons emitidos por esta entidade usarão HRTF.
 
-   > <x1\/>!Note<x2\/>
+   > [!Note]
    > A opção HRTF se aplica a cada som emitido a partir deste emissor de áudio.
 
 Para mais informações sobre emissoras de áudio, incluindo as propriedades que você pode mudar, consulte [Audio emitters](audio-emitters.md).

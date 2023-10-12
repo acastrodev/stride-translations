@@ -1,23 +1,23 @@
 # Importar áudio
 
-<x1\/>Introdução<x2\/>
-<x3\/>Design<x4\/>
+<span class="badge text-bg-primary">Introdução</span>
+<span class="badge text-bg-success">Design</span>
 
 Você pode importar arquivos de áudio para usar como  **recursos de audio** em seu projeto,  incluindo formatos como .wav, .mp3, .ogg, .aac, .aiff, .flac, .m4a, .wma e .mpc.
 
 1. Arraste e solte o arquivo de áudio do gerenciador de arquivo para o **Visualizador de Recursos**:
 
-   <x1\/>Arrastar e soltar<x2\/>
+   ![Arrastar e soltar](media/import-setup-drag-and-drop-audio-to-asset-view.gif)
 
    Você também pode, no **Visualizador de Recursos**:
 
-   1. Clicar em <x1\/><x2\/>
+   1. Clicar em ![](media/index-audio-add-new-asset-button.png)
 
-   2. Clicar em <x1\/><x2\/> (**Importar audio diretamente do arquivo**) e selecione o arquivo de áudio.
+   2. Clicar em ![](media/index-audio-import-audio-directly-from-file.png) (**Importar audio diretamente do arquivo**) e selecione o arquivo de áudio.
 
 2. Para atribuir algumas configurações padrão ao recurso de áudio, escolha um preset. (Você pode ajustar depois as propriedades no [Editor de Propriedades](audio-asset-properties.md).)
 
-   <x1\/>Escolher o tipo de recurso<x2\/>
+   ![Escolher o tipo de recurso](media/import-audio-choose-asset-type.png)
 
    * **Efeito sonoro**: Recomendado para arquivos de áudio pequenos que você deseja reproduzir diretamente da memória.
 
@@ -33,7 +33,7 @@ Você também pode importar um arquivo [vídeo](../video/index.md) e optar por i
 
 1. No **Visualizador de Recursos**, clique em **Adicionar recurso** e selecione **Mídia > Vídeo**.
 
-   <x1\/>Adicionar um recurso de vídeo<x2\/>
+   ![Adicionar um recurso de vídeo](../video/media/add-video-asset.png)
 
 2. Navegue até o vídeo que deseja importar o áudio e clique em **Abrir**.
 
@@ -41,7 +41,7 @@ Você também pode importar um arquivo [vídeo](../video/index.md) e optar por i
 
 3. Remova a opção **Importar vídeo** e clique em **OK**.
 
-   <x1\/>Importar vídeo<x2\/>
+   ![Importar vídeo](media/import-audio-only.png)
 
    O Stride adiciona as faixas de áudio do vídeo ao **Visualizador de Recursos**.
 

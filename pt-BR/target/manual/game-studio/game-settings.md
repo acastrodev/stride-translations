@@ -4,7 +4,7 @@
 <x3\/>Programação<x4\/>
 <x5\/>Designer<x6\/>
 
-Você pode configurar as configurações globais do seu jogo no ativo **Game Settings**. Por padrão, o ativo Configurações do Jogo é armazenado na pasta **Assets** do seu projeto.
+Você pode configurar as configurações globais do seu jogo no ativo **Game Settings**. Por padrão, o ativo Configurações de Jogo é armazenado na pasta **Assets** do seu projeto.
 
 ## Editar configurações de jogo
 
@@ -16,7 +16,7 @@ Você pode configurar as configurações globais do seu jogo no ativo **Game Set
 
    <x1\/>Selecionar configurações de jogo asset<x2\/>
 
-3. No **Property Grid** (o painel direito por padrão), edite as propriedades Configurações do Jogo.
+3. No **Property Grid** (o painel direito por padrão), edite as propriedades Configurações de Jogo.
 
    <x1\/> Configurações do jogo <x2\/>
 
