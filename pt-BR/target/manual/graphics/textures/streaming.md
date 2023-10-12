@@ -2,7 +2,7 @@
 
 <x1\/>Introdução<x2\/>
 <x3\/>Artista <x4\/>
-<x5\/> Programador <x6\/>
+<x5\/>Programação<x6\/>
 
 Quando você **stream** texturas, O Stride só os carrega quando são necessários. Isso diminui significativamente o tempo necessário para carregar um jogo ou cena, usa menos memória e torna o seu jogo mais fácil de escalar.
 

@@ -1,7 +1,7 @@
 # Configurações de áudio globais
 
 <x1\/>Introdução<x2\/>
-<x3\/> Programador <x4\/>
+<x3\/>Programação<x4\/>
 
 As configurações globais de áudio aplicam-se a todo o áudio em seu projeto.
 

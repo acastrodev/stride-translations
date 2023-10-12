@@ -1,7 +1,7 @@
 # Sensores
 
 <x1\/> Intermediário <x2\/>
-<x3\/> Programador <x4\/>
+<x3\/>Programação<x4\/>
 
 Você pode usar vários **sensors**, como giroscópios e acelerômetros, como dispositivos de entrada em seu projeto. Os sensores são frequentemente usados em jogos móveis.
 

@@ -1,7 +1,7 @@
 # Mouse
 
 <x1\/>Introdução<x2\/>
-<x3\/> Programador <x4\/>
+<x3\/>Programação<x4\/>
 
 O **mouse** é um dispositivo de entrada comum para jogos de desktop.
 

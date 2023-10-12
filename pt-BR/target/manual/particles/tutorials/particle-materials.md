@@ -2,7 +2,7 @@
 
 <x1\/> Intermediário <x2\/>
 <x3\/>Artista <x4\/>
-<x5\/> Programador <x6\/>
+<x5\/>Programação<x6\/>
 
 Este tutorial demonstra como criar shaders personalizados e materiais para um sistema de partículas, fornecendo funcionalidade não disponível no motor central. Ele se concentra em shaders e renderização. Para a simulação, veja o tutorial [custom partículas](custom-particles.md).
 

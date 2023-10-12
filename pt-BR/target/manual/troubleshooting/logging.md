@@ -1,7 +1,7 @@
 # Logging
 
 <x1\/> Intermediário <x2\/>
-<x3\/> Programador <x4\/>
+<x3\/>Programação<x4\/>
 
 Você pode **log** informações sobre o seu jogo enquanto ele é executado usando [Log](xref:Stride.Engine.ScriptComponent.Log).
 

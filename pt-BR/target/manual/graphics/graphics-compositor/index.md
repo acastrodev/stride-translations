@@ -1,7 +1,7 @@
 # Compositor gráfico
 
-<x1\/> Avançado <x2\/>
-<x3\/> Programador <x4\/>
+<x1\/>Avançado<x2\/>
+<x3\/>Programação<x4\/>
 
 > <x1\/>!Note<x2\/>
 > Esta página requer uma compreensão básica dos pipelines gráficos.

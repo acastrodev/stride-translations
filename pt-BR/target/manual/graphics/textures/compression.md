@@ -2,7 +2,7 @@
 
 <x1\/>Introdução<x2\/>
 <x3\/>Artista <x4\/>
-<x5\/> Programador <x6\/>
+<x5\/>Programação<x6\/>
 
 ** Texturas compactas** usam até 50% menos espaço e são mais rápidos para carregar. A compressão produz resultados semelhantes à compressão JPEG. A animação abaixo foi gravada com a câmera posicionada extremamente perto da textura; a distâncias normais, a diferença não é notável.
 

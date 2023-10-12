@@ -1,7 +1,7 @@
 # Ligação de recursos
 
-<x1\/> Avançado <x2\/>
-<x3\/> Programador <x4\/>
+<x1\/>Avançado<x2\/>
+<x3\/>Programação<x4\/>
 
 Quando vértices [drawing](draw-vertices.md) usando um efeito [](../effects-and-shaders/index.md), os shaders esperam que certos recursos estejam disponíveis, incluindo:
 

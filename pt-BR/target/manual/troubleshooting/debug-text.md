@@ -1,7 +1,7 @@
 # Texto de depuração
 
 <x1\/>Introdução<x2\/>
-<x3\/> Programador <x4\/>
+<x3\/>Programação<x4\/>
 
 Você pode imprimir texto de depuração em tempo de execução com [DebugText](xref:Stride.Engine.ScriptComponent.DebugText). Por exemplo, você pode usar isso para exibir uma mensagem quando ocorre um problema.
 

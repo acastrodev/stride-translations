@@ -2,7 +2,7 @@
 
 <x1\/>Introdução<x2\/>
 <x3\/>Artista <x4\/>
-<x5\/> Programador <x6\/>
+<x5\/>Programação<x6\/>
 
 **Particle emitters** gerenciar quantas partículas estão em um efeito, como elas aparecem, se movem e desaparecem, e como elas são desenhadas. Por exemplo, um efeito de fogo pode ser composto por três efeitos de partículas separados: chamas, embres e fumaça. Cada um desses efeitos é gerido por um emissor de partículas separadas.
 

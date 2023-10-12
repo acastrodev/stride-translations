@@ -2,7 +2,7 @@
 
 <x1\/> Intermediário <x2\/>
 <x3\/>Artista <x4\/>
-<x5\/> Programador <x6\/>
+<x5\/>Programação<x6\/>
 
 **Atributos materiais** definem as características principais de um material, como sua cor difusa, modelo de sombreamento difuso, e assim por diante. Os atributos são organizados em **geometry**, **shading** e **misc**.
 

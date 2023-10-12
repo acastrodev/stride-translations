@@ -1,7 +1,7 @@
 # Simulação de física
 
 <x1\/> Intermediário <x2\/>
-<x3\/> Programador <x4\/>
+<x3\/>Programação<x4\/>
 
 A física de Stride é controlada pela classe [Simulation](xref:Stride.Physics.Simulation).
 Você pode mudar como Stride inicializa o [simulation](xref:Stride.Physics.Simulation) modificando bandeiras em [PhysicsDefinições](xref:Stride.Physics.PhysicsSettings), acessado nas propriedades de ativos **GameSettings**.

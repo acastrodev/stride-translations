@@ -1,7 +1,7 @@
 # Entrada
 
 <x1\/>Introdução<x2\/>
-<x3\/> Programador <x4\/>
+<x3\/>Programação<x4\/>
 
 Os usuários interagem com jogos e aplicativos usando dispositivos de entrada **** como gamepads, mice e teclados. Cada aplicativo interativo deve suportar pelo menos um dispositivo de entrada.
 

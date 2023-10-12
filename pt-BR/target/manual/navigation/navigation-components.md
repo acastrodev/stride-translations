@@ -2,7 +2,7 @@
 
 <x1\/>Introdução<x2\/>
 <x3\/> Designer de nível <x4\/>
-<x5\/> Programador <x6\/>
+<x5\/>Programação<x6\/>
 
 ** Componentes de navegação** permitem que as entidades usem [navigation meshes](navigation-meshes.md) para encontrar caminhos através da cena. Alternativamente, se você ativar a navegação [dinâmica](dynamic-navigation.md) nas configurações do jogo, as entidades podem gerar suas próprias malhas de navegação.
 

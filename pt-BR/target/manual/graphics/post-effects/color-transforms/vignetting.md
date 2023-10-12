@@ -2,7 +2,7 @@
 
 <x1\/>Introdução<x2\/>
 <x3\/>Artista <x4\/>
-<x5\/> Programador <x6\/>
+<x5\/>Programação<x6\/>
 
 O efeito **vignetting** escurece os ângulos ou as bordas de uma imagem.
 

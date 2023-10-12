@@ -1,7 +1,7 @@
 # Desenho vértices
 
-<x1\/> Avançado <x2\/>
-<x3\/> Programador <x4\/>
+<x1\/>Avançado<x2\/>
+<x3\/>Programação<x4\/>
 
 Ao carregar uma cena, o Stride lida automaticamente com as chamadas do sorteio para exibir a cena em todo o sistema de entidade. Esta página apresenta desenho manual.
 

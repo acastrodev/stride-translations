@@ -1,7 +1,7 @@
 # Entrada\/saída automática do palco do shader
 
-<x1\/> Avançado <x2\/>
-<x3\/> Programador <x4\/>
+<x1\/>Avançado<x2\/>
+<x3\/>Programação<x4\/>
 
 Quando você escreve um shader HLSL, você tem que definir precisamente seus atributos de vértice e passá-los cuidadosamente através do estágio do seu shader final.
 

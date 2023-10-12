@@ -1,7 +1,7 @@
 # Definições do jogo
 
 <x1\/>Introdução<x2\/>
-<x3\/> Programador <x4\/>
+<x3\/>Programação<x4\/>
 <x5\/>Designer<x6\/>
 
 Você pode configurar as configurações globais do seu jogo no ativo **Game Settings**. Por padrão, o ativo Configurações do Jogo é armazenado na pasta **Assets** do seu projeto.

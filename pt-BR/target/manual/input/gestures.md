@@ -1,7 +1,7 @@
 # Gestos
 
 <x1\/> Intermediário <x2\/>
-<x3\/> Programador <x4\/>
+<x3\/>Programação<x4\/>
 
 Gestos são padrões predefinidos [pointer](pointers.md). Stride pode reconhecer gestos e desencadear eventos correspondentes. Por exemplo, em um jogo de estratégia, o jogador pode arrastar e soltar uma unidade para o campo de batalha com um gesto **drag**. Gestos podem usar um ou vários dedos.
 

@@ -2,7 +2,7 @@
 
 <x1\/>Introdução<x2\/>
 <x3\/>Artista <x4\/>
-<x5\/> Programador <x6\/>
+<x5\/>Programação<x6\/>
 
 Todos os cálculos de efeito pós são feitos em um espaço linear (ou seja, espaço RGB). Isso significa duplicar o valor de cor de um pixel duplica a luz que emite. Isso garante cálculos de iluminação corretos.
 

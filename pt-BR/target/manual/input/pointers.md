@@ -1,7 +1,7 @@
 # Pontos
 
 <x1\/>Introdução<x2\/>
-<x3\/> Programador <x4\/>
+<x3\/>Programação<x4\/>
 
 **Pointers** são pontos na tela do dispositivo correspondente a **finger touches**. Dispositivos com funcionalidade multi-toque suportam vários ponteiros simultâneos.
 

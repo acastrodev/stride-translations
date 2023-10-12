@@ -2,7 +2,7 @@
 
 <x1\/>Introdução<x2\/>
 <x3\/> Designer de nível <x4\/>
-<x5\/> Programador <x6\/>
+<x5\/>Programação<x6\/>
 
 **Navigação delimitando caixas** define a área que [navigation meshes](navigation-meshes.md) cobrir. Você pode usá-los para criar áreas de navegação menores em sua cena, em vez de ter uma malha cobrir toda a cena.
 

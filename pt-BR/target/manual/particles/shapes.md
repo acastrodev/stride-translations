@@ -2,7 +2,7 @@
 
 <x1\/>Introdução<x2\/>
 <x3\/>Artista <x4\/>
-<x5\/> Programador <x6\/>
+<x5\/>Programação<x6\/>
 
 Como as partículas são essencialmente apenas pontos no espaço, elas não têm forma definida. Em vez disso, Stride desenha formas ** entre** os pontos.
 

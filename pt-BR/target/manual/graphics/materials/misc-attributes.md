@@ -2,7 +2,7 @@
 
 <x1\/> Intermediário <x2\/>
 <x3\/>Artista <x4\/>
-<x5\/> Programador <x6\/>
+<x5\/>Programação<x6\/>
 
 <x1\/> Propriedades mínimas<x2\/>
 

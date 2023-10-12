@@ -1,7 +1,7 @@
 # Transformações de cor personalizadas
 
-<x1\/> Avançado <x2\/>
-<x3\/> Programador <x4\/>
+<x1\/>Avançado<x2\/>
+<x3\/>Programação<x4\/>
 
 Você pode escrever seus próprios efeitos ** custom color transform**. Por exemplo, você pode criar:
 

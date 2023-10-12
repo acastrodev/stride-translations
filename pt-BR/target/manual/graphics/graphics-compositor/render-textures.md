@@ -2,7 +2,7 @@
 
 <x1\/> Intermediário <x2\/>
 <x3\/>Designer<x4\/>
-<x5\/> Programador <x6\/>
+<x5\/>Programação<x6\/>
 
 Com texturas **render**, você pode enviar uma visão da câmera para uma textura e usar a textura em objetos em sua cena. Por exemplo, você pode usar isso para exibir parte de sua cena em uma tela de TV na mesma cena, como imagens de câmera de segurança.
 

@@ -1,7 +1,7 @@
 # Sombreadores personalizados
 
 <x1\/> Intermediário <x2\/>
-<x3\/> Programador <x4\/>
+<x3\/>Programação<x4\/>
 
 Você pode escrever seus próprios shaders no Visual Studio e usá-los em atributos [material](../materials/material-attributes.md). Por exemplo, você pode escrever um shader para adicionar texturas a materiais baseados nas posições mundiais dos objetos, ou gerar ruído e usá-lo para aleatorizar propriedades materiais.
 

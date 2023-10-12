@@ -2,7 +2,7 @@
 
 <x1\/> Intermediário <x2\/>
 <x3\/>Artista <x4\/>
-<x5\/> Programador <x6\/>
+<x5\/>Programação<x6\/>
 
 Para criar **ribbons** e **trails**, Stride constrói os dados de malha como uma faixa que liga as partículas, em vez de quads individuais. As fitas e as trilhas são frequentemente usadas para criar efeitos visuais, como escórias de espada.
 

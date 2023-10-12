@@ -1,7 +1,7 @@
 ﻿# Serialização
 
 <x1\/>Introdução<x2\/>
-<x3\/> Programador <x4\/>
+<x3\/>Programação<x4\/>
 
 O sistema de editor e serialização usa quatro atributos para determinar o que é serializado e visível no editor.
 

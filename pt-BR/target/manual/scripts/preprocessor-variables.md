@@ -1,7 +1,7 @@
 # Variáveis de pré-processamento
 
-<x1\/> Avançado <x2\/>
-<x3\/> Programador <x4\/>
+<x1\/>Avançado<x2\/>
+<x3\/>Programação<x4\/>
 
 Se você está desenvolvendo para várias plataformas, muitas vezes você precisa escrever código personalizado para cada plataforma. Na maioria dos casos, a melhor maneira de fazer isso é usar [Platform.Type](xref:Stride.Core.Platform.Type) e [GraphicsDevice.Platform](xref:Stride.Graphics.GraphicsDevice.Platform). Alternativamente, você pode usar variáveis **preprocessor**.
 

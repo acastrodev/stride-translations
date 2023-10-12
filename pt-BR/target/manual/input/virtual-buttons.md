@@ -1,7 +1,7 @@
 # Botões virtuais
 
 <x1\/> Intermediário <x2\/>
-<x3\/> Programador <x4\/>
+<x3\/>Programação<x4\/>
 
 Em vez de ligar controles para chaves físicas e botões, você pode ag1>virtual botões</g>.<g id="1"> Os jogadores podem então atribuir botões físicos aos botões virtuais, permitindo-lhes criar seus próprios esquemas de controle.
 

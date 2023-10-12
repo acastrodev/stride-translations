@@ -2,7 +2,7 @@
 
 <x1\/> Intermediário <x2\/>
 <x3\/>Artista <x4\/>
-<x5\/> Programador <x6\/>
+<x5\/>Programação<x6\/>
 
 **Normal maps** são texturas que adicionam a aparência do detalhe da superfície, como rachaduras e colisões, sem alterar a geometria real de um modelo. Eles contêm informações sobre como as malhas devem refletir a luz, criando a ilusão de geometria muito mais complexa. Isso economiza muito poder de processamento.
 

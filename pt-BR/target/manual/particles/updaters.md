@@ -2,7 +2,7 @@
 
 <x1\/> Intermediário <x2\/>
 <x3\/>Artista <x4\/>
-<x5\/> Programador <x6\/>
+<x5\/>Programação<x6\/>
 
 Depois que uma partícula aparece, ela pode mudar ao longo do tempo antes de desaparecer. **Updaters** agem em todas as partículas vivas ao longo do tempo, alterando atributos como posição, velocidade, cor e assim por diante. Por exemplo, uma força de gravidade atualiza a velocidade da partícula a uma taxa constante, acelerando-a para o chão.
 

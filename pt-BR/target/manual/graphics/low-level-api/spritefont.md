@@ -1,7 +1,7 @@
 # SpriteFonte
 
-<x1\/> Avançado <x2\/>
-<x3\/> Programador <x4\/>
+<x1\/>Avançado<x2\/>
+<x3\/>Programação<x4\/>
 
 A classe @'Stride.Graphics.SpriteFont' é uma maneira conveniente de desenhar texto. Ele funciona com a classe @'Stride.Graphics.SpriteBatch'.
 

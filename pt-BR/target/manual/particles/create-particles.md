@@ -2,7 +2,7 @@
 
 <x1\/>Introdução<x2\/>
 <x3\/>Artista <x4\/>
-<x5\/> Programador <x6\/>
+<x5\/>Programação<x6\/>
 
 Para criar um sistema de partículas, clique com o botão direito do mouse na cena ou Entity Tree, selecione **Particle System** e escolha uma predefinição (**Empty**, **Simple**, **Fountain** ou **Ribbon**).
 

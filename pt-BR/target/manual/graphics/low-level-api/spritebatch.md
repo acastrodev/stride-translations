@@ -1,7 +1,7 @@
 # SpriteBatch
 
-<x1\/> Avançado <x2\/>
-<x3\/> Programador <x4\/>
+<x1\/>Avançado<x2\/>
+<x3\/>Programação<x4\/>
 
 Um lote de sprite é uma coleção de sprites (2D planos texturizados).
 

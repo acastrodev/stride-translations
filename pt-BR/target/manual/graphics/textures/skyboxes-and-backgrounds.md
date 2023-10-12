@@ -2,7 +2,7 @@
 
 <x1\/>Introdução<x2\/>
 <x3\/>Designer<x4\/>
-<x5\/> Programador <x6\/>
+<x5\/>Programação<x6\/>
 
 **Skyboxes** são fundos que criam a ilusão de espaço e distância. Os cenários típicos incluem céus, nuvens, montanhas e outras paisagens. Como as caixas de céu são pré-renderizadas, eles exigem pouca GPU e CPU.
 

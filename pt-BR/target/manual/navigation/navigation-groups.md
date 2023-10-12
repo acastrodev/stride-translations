@@ -2,7 +2,7 @@
 
 <x1\/>Introdução<x2\/>
 <x3\/> Designer de nível <x4\/>
-<x5\/> Programador <x6\/>
+<x5\/>Programação<x6\/>
 
 ** Grupos de navegação** definem diferentes propriedades de navegação para as entidades que você adiciona a elas. Você define grupos de navegação no projeto **game settings**.
 

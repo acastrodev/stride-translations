@@ -2,7 +2,7 @@
 
 <x1\/>Introdução<x2\/>
 <x3\/>Designer<x4\/>
-<x5\/> Programador <x6\/>
+<x5\/>Programação<x6\/>
 
 A **skybox light** é uma luz [ambient](ambient-lights.md) emitida por um [skybox](../textures/skyboxes-and-backgrounds.md). Stride analisa a textura da caixa do céu e gera iluminação usando iluminação baseada em imagem [ (Wikipedia)](https://en.wikipedia.org/wiki/Image-based_lighting).
 

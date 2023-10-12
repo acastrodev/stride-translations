@@ -2,8 +2,8 @@
 
 [! INCLUÍDO [stride-studio-note](../../includes/under-construction-note.md)]
 
-<x1\/> Avançado <x2\/>
-<x3\/> Programador <x4\/>
+<x1\/>Avançado<x2\/>
+<x3\/>Programação<x4\/>
 
 **Constraints** restringem os corpos rígidos a certos padrões de movimento. Por exemplo, uma articulação de joelho realista só pode se mover ao longo de um eixo e não pode dobrar para a frente.
 

@@ -1,7 +1,7 @@
 # Criar pacotes
 
 <x1\/> Intermediário <x2\/>
-<x3\/> Programador <x4\/>
+<x3\/>Programação<x4\/>
 
 ## Abra seu projeto no Visual Studio
 

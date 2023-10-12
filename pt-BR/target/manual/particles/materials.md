@@ -2,7 +2,7 @@
 
 <x1\/>Introdução<x2\/>
 <x3\/>Artista <x4\/>
-<x5\/> Programador <x6\/>
+<x5\/>Programação<x6\/>
 
 **Materials** define como a forma expandida deve ser renderizada. Eles definem cores, texturas e outros parâmetros.
 

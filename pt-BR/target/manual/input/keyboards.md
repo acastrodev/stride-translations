@@ -1,7 +1,7 @@
 # Teclados
 
 <x1\/>Introdução<x2\/>
-<x3\/> Programador <x4\/>
+<x3\/>Programação<x4\/>
 
 O **keyboard** é o dispositivo de entrada mais comum para jogos de desktop. Existem duas maneiras de lidar com a entrada do teclado em Stride:
 

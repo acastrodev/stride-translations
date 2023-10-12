@@ -1,7 +1,7 @@
 # Sombreadores computacionais
 
 <x1\/>Introdução<x2\/>
-<x3\/> Programador <x4\/>
+<x3\/>Programação<x4\/>
 
 Conversões de Stride Stride shaders (`sdsl` e `.sdfx` files) para a linguagem shader usada pela plataforma [graphics](../../platforms/set-the-graphics-platform.md).
 

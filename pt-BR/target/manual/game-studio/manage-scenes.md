@@ -1,7 +1,7 @@
 # Gerenciar cenas
 
 <x1\/>Introdução<x2\/>
-<x3\/> Programador <x4\/>
+<x3\/>Programação<x4\/>
 <x5\/>Designer<x6\/>
 
 As cenas e entidades são organizadas em uma hierarquia, com a cena **root** no topo. Esta hierarquia é exibida no **Entity Tree** no Editor de cenas à esquerda.

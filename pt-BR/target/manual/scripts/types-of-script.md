@@ -1,7 +1,7 @@
 # Tipos de script
 
 <x1\/>Introdução<x2\/>
-<x3\/> Programador <x4\/>
+<x3\/>Programação<x4\/>
 
 Existem três tipos principais de script em Stride: **startup scripts**, **synchronous scripts**, e **asynchronous scripts**.
 

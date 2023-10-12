@@ -1,7 +1,7 @@
 # Habilitar VR
 
 <x1\/>Introdução<x2\/>
-<x3\/> Programador <x4\/>
+<x3\/>Programação<x4\/>
 
 Esta página explica como adicionar suporte para os dispositivos Oculus Rift e Vive ao seu jogo. O Stride ainda não suporta outros dispositivos VR.
 

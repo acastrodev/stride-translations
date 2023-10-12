@@ -1,7 +1,7 @@
 # Propriedades e campos públicos
 
 <x1\/>Introdução<x2\/>
-<x3\/> Programador <x4\/>
+<x3\/>Programação<x4\/>
 
 Quando você declara uma propriedade pública ou campo em um script, a propriedade fica acessível no Game Studio a partir das propriedades do componente de script.
 

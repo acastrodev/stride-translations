@@ -1,7 +1,7 @@
 # Sobrepor propriedades pré-fabricadas
 
 <x1\/> Intermediário <x2\/>
-<x3\/> Programador <x4\/>
+<x3\/>Programação<x4\/>
 <x5\/>Designer<x6\/>
 
 Se você modificar uma propriedade em uma instância pré-fabricada, a instância não herda mais alterações do pré-fabricado para essa propriedade. Isso é chamado de **override**.

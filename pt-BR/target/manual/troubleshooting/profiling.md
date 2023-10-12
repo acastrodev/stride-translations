@@ -1,7 +1,7 @@
 # Perfil
 
 <x1\/>Introdução<x2\/>
-<x3\/> Programador <x4\/>
+<x3\/>Programação<x4\/>
 
 Você pode **profile** seu projeto para verificar seu desempenho de tempo de execução e encontrar problemas. Use o script Stride **Game Profiler** ou uma ferramenta de perfil externo, como o Performance Profiler no Visual Studio.
 

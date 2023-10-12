@@ -2,7 +2,7 @@
 
 <x1\/> Intermediário <x2\/>
 <x3\/>Artista <x4\/>
-<x5\/> Programador <x6\/>
+<x5\/>Programação<x6\/>
 
 Este tutorial demonstra como usar partículas para criar um efeito [trail](../ribbons-and-trails.md) para um balanço de espada.
 

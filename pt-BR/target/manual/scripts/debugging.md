@@ -1,7 +1,7 @@
 # Depuração
 
 <x1\/>Introdução<x2\/>
-<x3\/> Programador <x4\/>
+<x3\/>Programação<x4\/>
 
 Se o seu script não estiver produzindo o resultado esperado no tempo de execução, você pode depurá-lo em um IDE, como o Visual Studio.
 

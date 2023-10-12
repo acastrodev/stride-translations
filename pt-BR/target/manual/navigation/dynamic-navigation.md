@@ -2,7 +2,7 @@
 
 <x1\/>Introdução<x2\/>
 <x3\/> Designer de nível <x4\/>
-<x5\/> Programador <x6\/>
+<x5\/>Programação<x6\/>
 
 Se você ativar a navegação **dinâmica**, as entidades com componentes de navegação não precisam de um ativo [navigation mesh](navigation-meshes.md). Em vez disso, as entidades geram malhas de navegação dinamicamente.
 

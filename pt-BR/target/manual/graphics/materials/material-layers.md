@@ -2,7 +2,7 @@
 
 <x1\/> Intermediário <x2\/>
 <x3\/>Artista <x4\/>
-<x5\/> Programador <x6\/>
+<x5\/>Programação<x6\/>
 
 Você pode combinar camadas de materiais para construir materiais mais complexos. Por exemplo, esta captura de tela mostra a mistura de um material de ferrugem (esquerda) com um material de ouro (direita):
 

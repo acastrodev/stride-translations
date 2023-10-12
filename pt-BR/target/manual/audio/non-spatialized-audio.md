@@ -1,7 +1,7 @@
 # Áudio não espacializado
 
 <x1\/>Introdução<x2\/>
-<x3\/> Programador <x4\/>
+<x3\/>Programação<x4\/>
 
 ** Áudio não espacializado ** soa o mesmo ao longo da cena, independentemente da posição de entidades (como a câmera do jogador). É estéreo e se move ao longo de um único eixo (geralmente o eixo X). Ao contrário de [spatialized audio](spatialized-audio.md), o _volume_, _pitch_ (_frequência_), e outros parâmetros de áudio espacializado não mudam. Isso é útil, por exemplo, para efeitos de som de música de fundo e menu.
 

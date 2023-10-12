@@ -2,7 +2,7 @@
 
 <x1\/>Introdução<x2\/>
 <x3\/>Designer<x4\/>
-<x5\/> Programador <x6\/>
+<x5\/>Programação<x6\/>
 
 Por padrão, Stride reproduz áudio diretamente da memória. Isso é útil para efeitos sonoros curtos, como tiros ou passos.
 

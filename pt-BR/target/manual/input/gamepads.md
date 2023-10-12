@@ -1,7 +1,7 @@
 # Gamepads
 
 <x1\/>Introdução<x2\/>
-<x3\/> Programador <x4\/>
+<x3\/>Programação<x4\/>
 
 **Gamepads**, como o Xbox Elite Wireless Controller e o PS4 DualShock, são dispositivos de entrada populares para consoles e desktop.
 

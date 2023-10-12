@@ -1,7 +1,7 @@
 # Criar um script
 
 <x1\/>Introdução<x2\/>
-<x3\/> Programador <x4\/>
+<x3\/>Programação<x4\/>
 
 Você pode criar scripts usando Game Studio ou um IDE, como Visual Studio.
 

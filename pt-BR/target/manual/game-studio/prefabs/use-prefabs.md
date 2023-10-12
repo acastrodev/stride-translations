@@ -1,7 +1,7 @@
 # Use prefabs
 
 <x1\/> Intermediário <x2\/>
-<x3\/> Programador <x4\/>
+<x3\/>Programação<x4\/>
 <x5\/>Designer<x6\/>
 
 Para instanciar uma pré-fabricada, arraste e solte-a a partir do **Asset View** para a cena.

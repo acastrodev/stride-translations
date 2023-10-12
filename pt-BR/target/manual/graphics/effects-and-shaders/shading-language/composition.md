@@ -1,7 +1,7 @@
 # Composição
 
 <x1\/>Introdução<x2\/>
-<x3\/> Programador <x4\/>
+<x3\/>Programação<x4\/>
 
 Além do sistema de herança, o SDSL introduz o conceito de **composition**. Uma composição é um membro cujo tipo é outra classe shader. É definido da mesma forma que as variáveis.
 

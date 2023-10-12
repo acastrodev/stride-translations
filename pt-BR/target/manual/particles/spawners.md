@@ -2,7 +2,7 @@
 
 <x1\/>Introdução<x2\/>
 <x3\/>Artista <x4\/>
-<x5\/> Programador <x6\/>
+<x5\/>Programação<x6\/>
 
 ** Espalhadores de partículas** control quando, quantos, e quão rapidamente as partículas são emitidas. Os emissores precisam de pelo menos um spawner, mas podem conter vários spawners com configurações diferentes.
 

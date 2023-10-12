@@ -2,7 +2,7 @@
 
 <x1\/> Intermediário <x2\/>
 <x3\/>Artista <x4\/>
-<x5\/> Programador <x6\/>
+<x5\/>Programação<x6\/>
 
 **Mapas importantes** calculam como os materiais são renderizados. Eles podem usar dois tipos de valores: valores de cor (RGB) ou valores escalares (single float).
 

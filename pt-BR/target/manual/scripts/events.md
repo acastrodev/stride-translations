@@ -1,7 +1,7 @@
 # Eventos
 
 <x1\/> Intermediário <x2\/>
-<x3\/> Programador <x4\/>
+<x3\/>Programação<x4\/>
 
 **Eventos** facilitam a comunicação entre scripts. Eles trabalham de uma forma, transmitido de **casters** para **receivers**. Eventos vêm em dois sabores, uma versão não-genérica para a transmissão de eventos básicos, e uma versão genérica para quando os dados precisam ser passados para receptores.
 

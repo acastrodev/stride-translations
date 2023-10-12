@@ -2,7 +2,7 @@
 
 <x1\/>Introdução<x2\/>
 <x3\/>Designer<x4\/>
-<x5\/> Programador <x6\/>
+<x5\/>Programação<x6\/>
 
 **Spatialized audio**, também chamado **3D audio**, simula o som tridimensional.
 Isso cria áudio mais realista do que [ não-espacializado áudio](non-spatialized-audio.md).

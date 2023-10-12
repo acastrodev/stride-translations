@@ -1,7 +1,7 @@
 # Jogue um intervalo dentro de um ativo de áudio
 
 <x1\/> Intermediário <x2\/>
-<x3\/> Programador <x4\/>
+<x3\/>Programação<x4\/>
 
 Você pode ter Stride tocar apenas algumas partes de um ativo de áudio. Isso significa, por exemplo, que você pode criar várias amostras de um único ativo de áudio especificando diferentes intervalos em diferentes objetos [SoundInstance](xref:Stride.Audio.SoundInstance).
 

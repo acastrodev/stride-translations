@@ -1,7 +1,7 @@
 # Texturas e texturas de renderização
 
-<x1\/> Avançado <x2\/>
-<x3\/> Programador <x4\/>
+<x1\/>Avançado<x2\/>
+<x3\/>Programação<x4\/>
 
 Stride usa o @'Stride.Graphics. Classe Texture para interagir com objetos de textura em código.
 
