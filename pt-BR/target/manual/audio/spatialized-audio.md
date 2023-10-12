@@ -22,12 +22,12 @@ Para simular áudio 3D realista, Stride rastreia as posições de duas entidades
 
 Você deve ter ambos emissores de áudio e receptores de áudio para ouvir som espacializado em uma cena.
 
-Áudio espacializado é amplamente utilizado para efeitos sonoros em jogos de plataforma, desktop e VR. Por exemplo, uma arma pode fazer um som de tiro quando disparado, ou um personagem pode fazer um som de passo quando eles dão um passo.
+Áudio espacial é amplamente utilizado para efeitos sonoros em jogos de plataforma, desktop e VR. Por exemplo, uma arma pode fazer um som de tiro quando disparado, ou um personagem pode fazer um som de passo quando eles dão um passo.
 
 > <x1\/>!Note<x2\/>
-> Áudio espacializado usa mais CPU do que áudio não espacializado.
+> Áudio espacial usa mais CPU do que áudio não espacial.
 
-## Permite áudio espacializado
+## Permite áudio espacial
 
 Quando você [importar seu áudio](import-audio.md), selecione *Spatialized Sound* como o tipo de ativo.
 
@@ -40,11 +40,11 @@ Você também pode definir áudio para espacializado no **Property Grid**:
    <x1\/>Selecionar som espacializado<x2\/>
 
 > <x1\/>!Note<x2\/>
-> Stride processa áudio espacializado como áudio mono (canal único). Não altera o ficheiro fonte.
+> Stride processa áudio espacial como áudio mono (canal único). Não altera o ficheiro fonte.
 
 ## Ver também
 
 * [Emitters de áudio](audio-emitters.md)
 * [Receptores de áudio](audio-listeners.md)
 * [HRTF](hrtf.md)
-* [Configurações de áudio globais](global-audio-settings.md)
+* [Configurações globais de áudio](global-audio-settings.md)

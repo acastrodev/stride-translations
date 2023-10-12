@@ -1,10 +1,10 @@
-# Função de transferência relacionada com a cabeça (HRTF) áudio
+# Função de Transferência Relacionada à Cabeça (áudio HRTF) 
 
-** Função de transferência relacionada ao coração (HRTF)** é uma maneira avançada de renderizar áudio para que os sons pareçam vir de um ponto específico no espaço 3D, sintetizando áudio binaural. Ele fornece áudio mais realista do que o padrão [spatialized audio](spatialized-audio.md). Por exemplo, com HRTF, o jogador pode ouvir se um personagem está acima ou abaixo deles. Isso é particularmente útil para aplicações [VR](../virtual-reality/index.md), pois aumenta a imersão.
+A **função de transferência relacionada à cabeça, do inglês  *Head-related transfer function* (HRTF)** é um método avançado de renderização de áudio que faz com que os sons pareçam vir de um ponto específico no espaço 3D, sintetizando o áudio binaural,  tornando o áudio mais realista do que o [áudio espacial](spatialized-audio.md). Por exemplo, com a HRTF, o jogador pode ouvir se um personagem está acima ou abaixo deles,  sendo particularmente útil em aplicativos de [realidade virtual (VR)](../virtual-reality/index.md), contribuindo para uma experiência mais imersiva.
 
-Os jogadores não precisam de hardware especial para usar HRTF. No entanto, o efeito funciona muito melhor com fones de ouvido do que colunas.
+Os jogadores não precisam de um hardware especial para usar a HRTF. No entanto, o efeito funciona muito melhor com fones de ouvido do que com alto-falantes.
 
-Este vídeo demonstra o efeito do áudio HRTF:
+Este vídeo demonstra o efeito da HRTF:
 
 <p>
 <video class="embed-responsive-item" poster="media/hrtf-first-frame.jpg" controls>
@@ -13,27 +13,27 @@ Este vídeo demonstra o efeito do áudio HRTF:
 </p>
 
 > <x1\/>!Note<x2\/>
-> Por enquanto, você só pode usar HRTF no Windows 10.
+> Por enquanto, você só pode usar a HRTF no Windows 10.
 
-## Habilitar HRTF
+## Habilitar a HRTF
 
-Para usar o HRTF, primeiro ative-o globalmente no ativo **Game Settings**, em seguida, ative o HRTF nas entidades com as quais você deseja usá-lo.
+Para utilizar a HRTF, primeiro ative-a globalmente no recurso <g id="1">Configurações de Jogo</g>. Em seguida, habilite a HRTF nas entidades com as quais você deseja utilizá-la.</g>
 
-### 1. Habilite a HRTF globalmente
+### 1. Habilitar a HRTF globalmente
 
-1. No **Solution Explorer** (o painel inferior esquerdo por padrão), selecione a pasta **Assets**.
+1. No **Gerenciador de Soluções** (o painel inferior esquerdo por padrão), selecione a pasta **Assets**.
 
-   <x1\/>Select Assets pasta asset<x2\/>
+   <x1\/>Selecionar Recurso para a pasta asset<x2\/>
 
-2. No **Asset View** (o painel inferior por padrão), selecione o ativo **GameSettings**.
+2. No **Visualizador de Recursos** (o painel inferior por padrão), selecione o recurso **GameSettings**.
 
-   <x1\/>Selecionar configurações de jogo asset<x2\/>
+   <x1\/>Selecionar recurso GameSettings<x2\/>
 
-3. No **Property Grid** (o painel direito por padrão), sob **Audio settings**, selecione **HRTF support**.
+3. No **Editor de Propriedades** (o painel direito por padrão), abaixo de **Configurações de áudio**, selecione **HRTF**.
 
    <x1\/> Configurações de áudio <x2\/>
 
-Para obter mais informações sobre o ativo Configurações do Jogo, consulte as configurações [Game](../game-studio/game-settings.md).
+Para obter mais informações sobre o ativo Configurações de Jogo, consulte as configurações [Game](../game-studio/game-settings.md).
 
 ### 2. Habilitar HRTF nas entidades
 
@@ -54,6 +54,6 @@ Para mais informações sobre emissoras de áudio, incluindo as propriedades que
 
 * [Função de transferência relacionada com a cabeça (Wikipedia)](https://en.wikipedia.org/wiki/Head-related_transfer_function)
 * [Áudio espacial](spatialized-audio.md)
-* [Emitters de áudio](audio-emitters.md)
+* [Emissores de áudio](audio-emitters.md)
 * [Receptores de áudio](audio-listeners.md)
-* [Definições do jogo](../game-studio/game-settings.md)
+* [Configurações de jogo](../game-studio/game-settings.md)

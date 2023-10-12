@@ -32,28 +32,34 @@
                 ],
                 [
                     "You can generate audio using your own mechanism.",
-                    "Você pode gerar áudio usando seu próprio mecanismo.",
+                    "Você pode gerar seus áudios usando seu próprio mecanismo.",
                     "You can generate audio using your own mechanism.",
                     "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/audio\/custom-audio-data.md",
                     {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697103755891,
                         "id": "tu3"
                     }
                 ],
                 [
                     "To do this, create a subclass of <g1>DynamicSoundSource<\/g1>.",
-                    "Para fazer isso, crie uma subclasse de <g1>DynamicSoundSource<\/g1>.",
+                    "Para isso, crie uma subclasse de <g1>DynamicSoundSource<\/g1>.",
                     " To do this, create a subclass of <g1>DynamicSoundSource<\/g1>.\r\n",
                     "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/audio\/custom-audio-data.md",
                     {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697103770346,
                         "id": "tu3"
                     }
                 ],
                 [
-                    "For an example of how to implement this, see the <g2>CompressedSoundSource` source code<\/g2>.",
-                    "Para um exemplo de como implementar isso, veja o código fonte <g2>CompressedSoundSource`<\/g2>.",
-                    "For an example of how to implement this, see the <g2>CompressedSoundSource` source code<\/g2>.",
+                    "For an example of how to implement this, see the <g2>CompressedSoundSource<\/g2> source code.",
+                    "Para um exemplo de implementação, consulte o código-fonte de <g2>CompressedSoundSource<\/g2>.",
+                    "For an example of how to implement this, see the <g2>CompressedSoundSource<\/g2> source code.",
                     "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/audio\/custom-audio-data.md",
                     {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697103831249,
                         "id": "tu3"
                     }
                 ],
@@ -68,55 +74,67 @@
                 ],
                 [
                     "To play a custom <g1>DynamicSoundSource<\/g1> at runtime, use:",
-                    "Para jogar um personalizado <g1>DynamicSoundSource<\/g1> no tempo de execução, use:",
+                    "Para reproduzir um <g1>DynamicSoundSource<\/g1> personalizado em tempo de execução, utilize:",
                     "To play a custom <g1>DynamicSoundSource<\/g1> at runtime, use:",
                     "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/audio\/custom-audio-data.md",
                     {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697103866145,
                         "id": "tu5"
                     }
                 ],
                 [
                     "int sampleRate = 48000;",
-                    "amostra int Taxa = 48000;",
+                    "int sampleRate = 48000;",
                     "int sampleRate = 48000;\r\n",
                     "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/audio\/custom-audio-data.md",
                     {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697103869785,
                         "id": "tu6"
                     }
                 ],
                 [
                     "bool mono = false;",
-                    "bool mono = falso;",
+                    "bool mono = false;",
                     "bool mono = false;\r\n",
                     "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/audio\/custom-audio-data.md",
                     {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697103871073,
                         "id": "tu6"
                     }
                 ],
                 [
                     "bool spatialized = false;",
-                    "bool espacializado = falso;",
+                    "bool spatialized = false;",
                     "bool spatialized = false;\r\n",
                     "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/audio\/custom-audio-data.md",
                     {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697103872328,
                         "id": "tu6"
                     }
                 ],
                 [
                     "DynamicSoundSource myCustomSource = new MyCustomSource(...);",
-                    "DynamicSoundsource myCustomSource = new MyCustomSource(...);",
+                    "DynamicSoundSource myCustomSource = new MyCustomSource(...);",
                     "DynamicSoundSource myCustomSource = new MyCustomSource(...);\r\n",
                     "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/audio\/custom-audio-data.md",
                     {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697103874857,
                         "id": "tu6"
                     }
                 ],
                 [
                     "AudioListener listener = Audio.AudioEngine.DefaultListener;",
-                    "Auditor AudioListener = Áudio.AudioEngine.DefaultListener;",
+                    "AudioListener listener = Audio.AudioEngine.DefaultListener;",
                     "AudioListener listener = Audio.AudioEngine.DefaultListener;\r\n",
                     "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/audio\/custom-audio-data.md",
                     {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697103876529,
                         "id": "tu6"
                     }
                 ],
@@ -131,19 +149,23 @@
                 ],
                 [
                     "SoundInstance myCustomInstance = new SoundInstance(audioEngine, listener, myCustomSource, sampleRate, mono, spatialized);",
-                    "Instância de som myCustomInstance = new SoundInstance (audioEngine, listener, myCustomSource, sampleRate, mono, espacialized);",
+                    "SoundInstance myCustomInstance = new SoundInstance(audioEngine, listener, myCustomSource, sampleRate, mono, spatialized);",
                     "SoundInstance myCustomInstance = new SoundInstance(audioEngine, listener, myCustomSource, sampleRate, mono, spatialized);\r\n",
                     "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/audio\/custom-audio-data.md",
                     {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697103881568,
                         "id": "tu6"
                     }
                 ],
                 [
                     "await myCustomInstance.ReadyToPlay();",
-                    "esperar myCustomInstance.ReadyToPlay();",
+                    "await myCustomInstance.ReadyToPlay();",
                     "await myCustomInstance.ReadyToPlay();\r\n",
                     "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/audio\/custom-audio-data.md",
                     {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697103882984,
                         "id": "tu6"
                     }
                 ],
@@ -158,16 +180,18 @@
                 ],
                 [
                     "See also",
-                    "Ver também",
+                    "Veja também",
                     "See also",
                     "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/audio\/custom-audio-data.md",
                     {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697103893992,
                         "id": "tu7"
                     }
                 ],
                 [
                     "Global audio settings",
-                    "Configurações de áudio globais",
+                    "Configurações globais de áudio",
                     "<g1>Global audio settings<\/g1>",
                     "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/audio\/custom-audio-data.md",
                     {

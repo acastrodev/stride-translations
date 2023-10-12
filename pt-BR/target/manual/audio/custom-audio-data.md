@@ -3,24 +3,24 @@
 <span class="badge text-bg-primary">Avançado</span>
 <span class="badge text-bg-success">Programação</span>
 
-Você pode gerar áudio usando seu próprio mecanismo. Para fazer isso, crie uma subclasse de [DynamicSoundSource](xref:Stride.Audio.DynamicSoundSource).
-Para um exemplo de como implementar isso, veja o código fonte [CompressedSoundSource`](https://github.com/SiliconStudio/stride/blob/master-1.8/sources/engine/Stride.Audio/CompressedSoundSource.cs).
+Você pode gerar seus áudios usando seu próprio mecanismo. Para isso, crie uma subclasse de [DynamicSoundSource](xref:Stride.Audio.DynamicSoundSource).
+Para um exemplo de implementação, consulte o código-fonte de [CompressedSoundSource](https://github.com/SiliconStudio/stride/blob/master-1.8/sources/engine/Stride.Audio/CompressedSoundSource.cs).
 
 ## Exemplo de código
 
-Para jogar um personalizado [DynamicSoundSource](xref:Stride.Audio.DynamicSoundSource) no tempo de execução, use:
+Para reproduzir um [DynamicSoundSource](xref:Stride.Audio.DynamicSoundSource) personalizado em tempo de execução, utilize:
 
 ```
-amostra int Taxa = 48000;
-bool mono = falso;
-bool espacializado = falso;
-DynamicSoundsource myCustomSource = new MyCustomSource(...);
-Auditor AudioListener = Áudio.AudioEngine.DefaultListener;
+int sampleRate = 48000;
+bool mono = false;
+bool spatialized = false;
+DynamicSoundSource myCustomSource = new MyCustomSource(...);
+AudioListener listener = Audio.AudioEngine.DefaultListener;
 AudioEngine audioEngine = Audio.AudioEngine;
-Instância de som myCustomInstance = new SoundInstance (audioEngine, listener, myCustomSource, sampleRate, mono, espacialized);
-esperar myCustomInstance.ReadyToPlay();
+SoundInstance myCustomInstance = new SoundInstance(audioEngine, listener, myCustomSource, sampleRate, mono, spatialized);
+await myCustomInstance.ReadyToPlay();
 myCustomInstance.Play();
 ```
 
-## Ver também
-* [Configurações de áudio globais](global-audio-settings.md)
+## Veja também
+* [Configurações globais de áudio](global-audio-settings.md)

@@ -14,8 +14,8 @@
 <trans-unit id="tu3" xml:space="preserve">
 <source xml:lang="en">You can generate audio using your own mechanism. To do this, create a subclass of <g id="1">DynamicSoundSource</g>.
 For an example of how to implement this, see the <g id="2">CompressedSoundSource` source code</g>.</source>
-<target xml:lang="pt">Você pode gerar áudio usando seu próprio mecanismo. Para fazer isso, crie uma subclasse de <g id="1">DynamicSoundSource</g>.
-Para um exemplo de como implementar isso, veja o código fonte <g id="2">CompressedSoundSource`</g>.</target>
+<target xml:lang="pt">Você pode gerar seus áudios usando seu próprio mecanismo. Para isso, crie uma subclasse de <g id="1">DynamicSoundSource</g>.
+Para um exemplo de implementação, consulte o código-fonte de <g id="2">CompressedSoundSource</g>.</target>
 </trans-unit>
 <trans-unit id="tu4" xml:space="preserve">
 <source xml:lang="en">Example code</source>
@@ -23,7 +23,7 @@ Para um exemplo de como implementar isso, veja o código fonte <g id="2">Compres
 </trans-unit>
 <trans-unit id="tu5" xml:space="preserve">
 <source xml:lang="en">To play a custom <g id="1">DynamicSoundSource</g> at runtime, use:</source>
-<target xml:lang="pt">Para jogar um personalizado <g id="1">DynamicSoundSource</g> no tempo de execução, use:</target>
+<target xml:lang="pt">Para reproduzir um <g id="1">DynamicSoundSource</g> personalizado em tempo de execução, utilize:</target>
 </trans-unit>
 <trans-unit id="tu6" xml:space="preserve">
 <source xml:lang="en">int sampleRate = 48000;
@@ -36,24 +36,24 @@ SoundInstance myCustomInstance = new SoundInstance(audioEngine, listener, myCust
 await myCustomInstance.ReadyToPlay();
 myCustomInstance.Play();
 </source>
-<target xml:lang="pt">amostra int Taxa = 48000;
-bool mono = falso;
-bool espacializado = falso;
-DynamicSoundsource myCustomSource = new MyCustomSource(...);
-Auditor AudioListener = Áudio.AudioEngine.DefaultListener;
+<target xml:lang="pt">int sampleRate = 48000;
+bool mono = false;
+bool spatialized = false;
+DynamicSoundSource myCustomSource = new MyCustomSource(...);
+AudioListener listener = Audio.AudioEngine.DefaultListener;
 AudioEngine audioEngine = Audio.AudioEngine;
-Instância de som myCustomInstance = new SoundInstance (audioEngine, listener, myCustomSource, sampleRate, mono, espacialized);
-esperar myCustomInstance.ReadyToPlay();
+SoundInstance myCustomInstance = new SoundInstance(audioEngine, listener, myCustomSource, sampleRate, mono, spatialized);
+await myCustomInstance.ReadyToPlay();
 myCustomInstance.Play();
 </target>
 </trans-unit>
 <trans-unit id="tu7" xml:space="preserve">
 <source xml:lang="en">See also</source>
-<target xml:lang="pt">Ver também</target>
+<target xml:lang="pt">Veja também</target>
 </trans-unit>
 <trans-unit id="tu8" xml:space="preserve">
 <source xml:lang="en"><g id="1">Global audio settings</g></source>
-<target xml:lang="pt"><g id="1">Configurações de áudio globais</g></target>
+<target xml:lang="pt"><g id="1">Configurações globais de áudio</g></target>
 </trans-unit>
 </body>
 </file>

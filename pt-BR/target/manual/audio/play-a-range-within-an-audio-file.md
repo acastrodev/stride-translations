@@ -27,6 +27,6 @@ mySoundInstance.SetRange(new PlayRange(início, duração));
 ```
 
 ## Ver também
-* [Configurações de áudio globais](global-audio-settings.md)
+* [Configurações globais de áudio](global-audio-settings.md)
 * [Áudio espacial](spatialized-audio.md)
-* [Áudio não espacializado](non-spatialized-audio.md)
+* [Áudio não espacial](non-spatialized-audio.md)

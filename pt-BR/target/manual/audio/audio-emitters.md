@@ -4,7 +4,7 @@
 <span class="badge text-bg-success">Programação</span>
 <x id="1"/>Design<x id="2"/><span class="badge text-bg-success"></span>
 
-Os componentes de emissão de áudio são responsáveis por criar [áudio espacializado](xref:Stride.Audio.AudioEmitter).[](spatialized-audio.md) Você pode adicioná-los a qualquer entidade.
+Os componentes de emissão de áudio são responsáveis por criar [áudio espacial](xref:Stride.Audio.AudioEmitter).[](spatialized-audio.md) Você pode adicioná-los a qualquer entidade.
 
 O tom e o volume do som mudam à medida que o [receptor de áudio](audio-listeners.md) se aproxima e se afasta do emissor de áudio.
 
@@ -70,7 +70,7 @@ Agora precisamos criar um script para reproduzir e configurar o recurso de áudi
 | Propriedade / método | Descrição |
 |-------    |-------|
 | [IsLooping](xref:Stride.Audio.AudioEmitterSoundController.IsLooping) | Repete o áudio. Não tem efeito se [PlayAndForget()](xref:Stride.Audio.AudioEmitterSoundController.PlayAndForget) estiver definido como verdadeiro. |
-| [Pitch](xref:Stride.Audio.AudioEmitterSoundController.Pitch) | Obtém ou define o tom do som (frequência). Use com cuidado com áudio espacializado. |
+| [Pitch](xref:Stride.Audio.AudioEmitterSoundController.Pitch) | Obtém ou define o tom do som (frequência). Use com cuidado com áudio espacial. |
 | [PlayState](xref:Stride.Audio.AudioEmitterSoundController.PlayState) | Obtém o estado atual do controlador de som do emissor de áudio. |
 | [Volume](xref:Stride.Audio.AudioEmitterSoundController.Volume) | Volume do áudio. |
 | [Pause()](xref:Stride.Audio.AudioEmitterSoundController.Pause) | Pausa o áudio. |
@@ -102,6 +102,6 @@ O Game Studio lista o script como um componente em **Adicionar componente**. Adi
    ![Adicionar script de áudio](media/add-sound-script.png)
 
 ## Veja também
-* [Áudio espacializado](spatialized-audio.md)
+* [Áudio espacial](spatialized-audio.md)
 * [Receptores de áudio](audio-listeners.md)
 * [Configurações globais de áudio](global-audio-settings.md)

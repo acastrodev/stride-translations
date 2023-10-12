@@ -95,7 +95,7 @@ Você pode criar um Evento Chave de seus scripts de remetente e consumir eventos
 
 ### Configurações do jogo substitui
 
-O ativo Configurações do Jogo foi melhorado: Agora você pode ter configurações diferentes dependendo da plataforma ou GPU.
+O ativo Configurações de Jogo foi melhorado: Agora você pode ter configurações diferentes dependendo da plataforma ou GPU.
 
 Por exemplo, você pode querer definir diferentes resoluções off-screen para o seu jogo no Android dependendo do modelo GPU. Ou você pode usar um dos nossos novos renderizadores Direct3D12, OpenGL ou OpenGL ES no Windows.
 

@@ -1,7 +1,7 @@
 # Criar um modelo de código
 
 <x1\/>Introdução<x2\/>
-<x3\/> Programador <x4\/>
+<x3\/>Programação<x4\/>
 
 Você pode criar modelos em scripts no runtime. Você pode fazer isso de várias maneiras diferentes, incluindo:
 

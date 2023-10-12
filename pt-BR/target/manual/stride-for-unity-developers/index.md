@@ -78,7 +78,7 @@ O Stride salva configurações globais em um único ativo, o ativo **Game Settin
 * **Configurações de física**
 * **Substituições**
 
-Para usar o ativo Configurações do Jogo, no **Asset View**, selecione **GameSettings** e veja suas propriedades no **Property Grid**.
+Para usar o ativo Configurações de Jogo, no **Asset View**, selecione **GameSettings** e veja suas propriedades no **Property Grid**.
 
 <x1\/> Configurações do jogo <x2\/>
 

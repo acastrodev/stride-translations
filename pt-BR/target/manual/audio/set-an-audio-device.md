@@ -27,4 +27,4 @@ namespace OculusRenderer
 ```
 
 ## Ver também
-* [Configurações de áudio globais](global-audio-settings.md)
+* [Configurações globais de áudio](global-audio-settings.md)
