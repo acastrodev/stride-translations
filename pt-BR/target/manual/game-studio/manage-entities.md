@@ -1,7 +1,7 @@
 # Gerenciar entidades
 
-<x1\/>Introdução<x2\/>
-<x3\/> Designer de nível <x4\/>
+<span class="badge text-bg-primary">Introdução</span>
+<span class="badge text-bg-success"> Designer de nível </span>
 
 Para construir os níveis de seu jogo, você precisa traduzir (mover), girar e redimensionar entidades em sua cena. Estes são conhecidos como **transformations**.
 
@@ -9,23 +9,23 @@ Para construir os níveis de seu jogo, você precisa traduzir (mover), girar e r
 
 Você pode selecionar os gizmos de transformação de **Scene Editor toolbar**.
 
-<x1\/>Transformação gizmo toolbox<x2\/>
+![Transformação gizmo toolbox](media/manage-entities-in-scene-gizmos.png)
 
 Alternativamente, pressione **Space** para alternar entre gizmos.
 
 Existem três tipos de transformação gizmo:
 
-- <x1\/>Translation gizmo icon<x2\/> O **translation gizmo** move entidades
-- <x1\/>Rotation gizmo icon<x2\/> O **rotation gizmo** gira entidades
-- <x1\/>Scale gizmo icon<x2\/> O **scale gizmo** redimensiona entidades
+- ![Translation gizmo icon](media/manage-entities-in-scene-translation-gizmo.png) O **translation gizmo** move entidades
+- ![Rotation gizmo icon](media/manage-entities-in-scene-rotation-gizmo.png) O **rotation gizmo** gira entidades
+- ![Scale gizmo icon](media/manage-entities-in-scene-scale-gizmo.png) O **scale gizmo** redimensiona entidades
 
 Game Studio exibe o gizmo de transformação selecionado na origem da entidade.
 
-<x1\/>Gizmos de transformação na cena<x2\/>
+![Gizmos de transformação na cena](media/manage-entities-transformation-gizmo.png)
 
 ### Tradução
 
-Para selecionar o gizmo de tradução, clique no ícone <x1\/>Gizmo de tradução<x2\/> ícone na barra de ferramentas do Editor de cena ou pressione **W**.
+Para selecionar o gizmo de tradução, clique no ícone ![Gizmo de tradução](media/manage-entities-in-scene-translation-gizmo.png) ícone na barra de ferramentas do Editor de cena ou pressione **W**.
 
 A tradução gizmo move (**translates**) entidades na cena ao longo do eixo que você seleciona.
 
@@ -40,7 +40,7 @@ A tradução gizmo move (**translates**) entidades na cena ao longo do eixo que 
 
 ### Gizmo rotativo
 
-Para selecionar o gizmo de rotação, clique no ícone <x1\/>Rotation gizmo<x2\/> ícone na barra de ferramentas do Editor de cena ou pressione **E**.
+Para selecionar o gizmo de rotação, clique no ícone ![Rotation gizmo](media/manage-entities-in-scene-rotation-gizmo.png) ícone na barra de ferramentas do Editor de cena ou pressione **E**.
 
 O gizmo de rotação gira entidades na cena ao longo do eixo que você seleciona.
 
@@ -54,7 +54,7 @@ O gizmo de rotação gira entidades na cena ao longo do eixo que você seleciona
 
 ### Gizmo de escala
 
-Para selecionar o gizmo de escala, clique no ícone <x1\/>Scale gizmo<x2\/> ícone na barra de ferramentas do Editor de cena ou pressione **R**.
+Para selecionar o gizmo de escala, clique no ícone ![Scale gizmo](media/manage-entities-in-scene-scale-gizmo.png) ícone na barra de ferramentas do Editor de cena ou pressione **R**.
 
 O gizmo de escala redimensiona entidades ao longo de um único eixo ("stretching" ou "squashing" eles) ou todos os eixos (fazendo-os maiores ou menores sem alterar suas proporções).
 
@@ -67,7 +67,7 @@ O gizmo de escala redimensiona entidades ao longo de um único eixo ("stretching
                 <source src="media/manage-entities-in-scene-scale-gizmo.mp4" type="video/mp4">
 </video>
 
-> <x1\/>!Note<x2\/>
+> [!Note]
 > A escala gizmo só funciona com o sistema de coordenadas **local** (ver abaixo). Quando você seleciona a escala gizmo, Game Studio muda para coordenadas locais.
 
 ## Alterar sistema de coordenadas gizmo
@@ -79,9 +79,9 @@ Você pode mudar como as coordenadas gizmo funcionam.
 
 | Sistema de coordenação | Função |
 | ------  |  ------  |
-| <x1\/>Coordenadas do mundo<x2\/> <x3\/><p><p>Coordenadas mundiais | Usa coordenadas mundiais para transformações. Os eixos X, Y e Z são os mesmos para cada entidade. |
-| <x1\/>Coordenadas locais<x2\/> <x3\/><p><p>Coordenadas locais | Usa coordenadas locais para transformações. Os eixos são orientados na mesma direção que a entidade selecionada. |
-| <x1\/>Coordenadas da câmara<x2\/> <x3\/><p><p>Coordenadas de câmera | Usa as coordenadas atuais da câmera para transformações. Os eixos são orientados na mesma direção que a câmera do editor. |
+| ![Coordenadas do mundo](media/manage-entities-in-scene-wsc.png) <br><p><p>Coordenadas mundiais | Usa coordenadas mundiais para transformações. Os eixos X, Y e Z são os mesmos para cada entidade. |
+| ![Coordenadas locais](media/manage-entities-in-scene-osc.png) <br><p><p>Coordenadas locais | Usa coordenadas locais para transformações. Os eixos são orientados na mesma direção que a entidade selecionada. |
+| ![Coordenadas da câmara](media/manage-entities-in-scene-csc.png) <br><p><p>Coordenadas de câmera | Usa as coordenadas atuais da câmera para transformações. Os eixos são orientados na mesma direção que a câmera do editor. |
 
 ## Transformações de pressão para grade
 

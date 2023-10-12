@@ -1,14 +1,14 @@
 # Sombras
 
-<x1\/>Introdução<x2\/>
-<x3\/>Designer<x4\/>
-<x5\/>Artista <x6\/>
+<span class="badge text-bg-primary">Introdução</span>
+<span class="badge text-bg-success">Designer</span>
+<span class="badge text-bg-success">Artista </span>
 
 As sombras trazem informações e realismo significativos para uma cena.
 
 | Sombras **off** | Sombras **on** |
 | -------------------------------------------------------- | ------------------------------------------------------------ |
-| <x1\/>media\/SceneNoShadows.png<x2\/> | <x1\/>media\/SceneWithShadows.png<x2\/> |
+| ![media/SceneNoShadows.png](media/SceneNoShadows.png) | ![media/SceneWithShadows.png](media/SceneWithShadows.png) |
 
 Somente [ luzes direcionais](directional-lights.md), [ponto luzes](point-lights.md), e [spot luzes](spot-lights.md) podem lançar sombras.
 
@@ -16,7 +16,7 @@ Somente [ luzes direcionais](directional-lights.md), [ponto luzes](point-lights.
 
 Stride usa **shadow mapping** para renderizar sombras. Para entender mapas de sombra, imagine uma câmera no centro do sol, então você está olhando para baixo da perspectiva do sol.
 
-<x1\/>Luz e sombra<x2\/>
+![Luz e sombra](media/light-and-shadow.png)
 
 Tudo o que o sol vê está à luz. Tudo escondido do sol (ou seja, atrás de **occluders**) está na sombra.
 
@@ -24,11 +24,11 @@ A partir desta perspectiva, Stride cria um **shadow map** para cada luz que lan�
 
 Por exemplo, estes são mapas de sombra da amostra de tiro em primeira pessoa incluída em Stride, gerada por uma luz [direcional](directional-lights.md).
 
-<x1\/>FPS cena<x2\/>
+![FPS cena](media/fps-sample-scene.png)
 
-<x1\/>FPS cena sombra map<x2\/>
+![FPS cena sombra map](media/shadow-atlas-2x.png)
 
-> <x1\/>!Note<x2\/>
+> [!Note]
 > Note que a luz direcional no exemplo acima cria quatro mapas de sombra, um para cada cascata. Para obter mais informações, consulte a página [ Luzes direcionais](directional-lights.md).
 
 ### A sombra atlas
@@ -37,14 +37,14 @@ Mapas de sombra para cada luz que lança uma sombra são salvos em uma região d
 
 | Sombra de maior qualidade (utiliza uma grande área do atlas sombra) | Sombra de baixa qualidade (utiliza uma área menor do atlas sombra) |
 | ---------------------------------------------------------------- | ------------------------------------------------------------ 
-| <x1\/> Sombra de alta resolução<x2\/> | <x1\/> Sombra de baixa resolução <x2\/> |
-| <x1\/>FPS cena sombra map<x2\/> | <x1\/>FPS cena sombra map<x2\/> |
+| ![ Sombra de alta resolução](media/shadow-high-resolution.png) | ![ Sombra de baixa resolução ](media/shadow-low-resolution.png) |
+| ![FPS cena sombra map](media/shadow-atlas-2x.png) | ![FPS cena sombra map](media/shadow-atlas-1x.png) |
 
 Geralmente, você deve dar mais espaço a fontes de luz que lançam as sombras mais visíveis.
 
 O tamanho de cada área no mapa da sombra depende de vários fatores:
 
-* o `shadowMapSizeFactor` baseado no `LightShadowMap.Size` propriedade (\/8, \/4, \/2, x1, ou x2)
+* o `shadowMapSizeFactor` baseado no `LightShadowMap.Size` propriedade (/8, /4, /2, x1, ou x2)
 * o tamanho projetado da luz no espaço de tela (`lightSize`)
    * para luzes direcionais, a luz O tamanho é igual ao máximo (screenWidth, telaHeight)
    * para luzes de ponto, a luz O tamanho é igual à projeção da esfera projetada no ponto alvo luz cone
@@ -53,11 +53,11 @@ O tamanho de cada área no mapa da sombra depende de vários fatores:
 O tamanho final do mapa da sombra é calculado assim:
 
 ```cs
-\/\/ Calcular o fator de tamanho
+// Calcular o fator de tamanho
 var shadowMapSizeFinalFactor = shadowImportanceFactor * shadowMapSizeFactor;
-\/\/ Multiplique o tamanho da luz projetada pelo fator de tamanho
+// Multiplique o tamanho da luz projetada pelo fator de tamanho
 var sombra MapSize = NextPowerOfTwo(lightSize * shadowSizeFinalFactor);
-\/\/ Braçadeira para um tamanho máximo
+// Braçadeira para um tamanho máximo
 shadowMapSize = min (shadowMapSize, ShadowMapBaseSize * shadowSizeFinalFactor);
 ```
 

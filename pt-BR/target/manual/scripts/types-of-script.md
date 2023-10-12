@@ -1,7 +1,7 @@
 # Tipos de script
 
-<x1\/>Introdução<x2\/>
-<x3\/>Programação<x4\/>
+<span class="badge text-bg-primary">Introdução</span>
+<span class="badge text-bg-success">Programação</span>
 
 Existem três tipos principais de script em Stride: **startup scripts**, **synchronous scripts**, e **asynchronous scripts**.
 
@@ -18,7 +18,7 @@ classe pública StartUpScriptExample : StartupScript
 (
 	anula de sobreposição pública Start()
 	(
-		\/\/ Faça algumas coisas durante a inicialização
+		// Faça algumas coisas durante a inicialização
 	}
 }
 ```
@@ -38,7 +38,7 @@ classe pública SampleSyncScript : Sincronização
 (        
 	atualização()
 	(
-		\/\/ Executa a atualização na entidade — este código é executado cada quadro
+		// Executa a atualização na entidade — este código é executado cada quadro
 	}
 }
 ```
@@ -58,15 +58,15 @@ classe pública SampleAsyncScript : AsyncScript
 (        
 	override público async Task Execute() 
 	(
-		\/\/ O código de inicialização deve vir aqui, se necessário
+		// O código de inicialização deve vir aqui, se necessário
 		
-		enquanto (Game.IsRunning) \/\/ loop até que o jogo termina (opcional dependendo do script)
+		enquanto (Game.IsRunning) // loop até que o jogo termina (opcional dependendo do script)
 		(
 			aguarde MyEvent;
 
-			\/\/ Faz alguma coisa
+			// Faz alguma coisa
 			
-			await Script.NextFrame(); \/\/ esperar pelo próximo frame (opcional dependendo do script)
+			await Script.NextFrame(); // esperar pelo próximo frame (opcional dependendo do script)
 		}
 	}
 }

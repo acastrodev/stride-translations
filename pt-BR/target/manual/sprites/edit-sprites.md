@@ -1,7 +1,7 @@
 # Editar sprites
 
-<x1\/>Introdução<x2\/>
-<x3\/>Designer<x4\/>
+<span class="badge text-bg-primary">Introdução</span>
+<span class="badge text-bg-success">Designer</span>
 
 Depois de você [importar uma folha sprite](import-sprite-sheets.md), você pode usar o **Sprite Editor** dedicado para selecionar sprites dentro da folha sprite.
 
@@ -13,36 +13,36 @@ Para abrir o Editor Sprite, no **Asset View**, clique duas vezes no ativo da fol
 
 A folha de sprite abre no Editor Sprite.
 
-<x1\/> Editor de preços <x2\/>
+![ Editor de preços ](media/sprite-editor.png)
 
 ### Tipo de folha de sprite
 
 Você pode definir se a folha sprite contém sprites de jogabilidade (**Sprite2D**) ou sprites UI (**UI**). Isso não tem efeito sobre como o sprite é renderizado em tempo de execução, mas permite que você definir propriedades ligeiramente diferentes, descritos em ** Propriedades do princípio** abaixo. Você pode alterar o tipo de folha de sprite a qualquer momento.
 
-<x1\/>Escolha Sprite 2D ou UI<x2\/>
+![Escolha Sprite 2D ou UI](media/sprite2D-UI.png)
 
 ### Adicionar um sprite
 
 1. Clique no botão **Adicionar sprite vazia**.
 
-   <x1\/> Adicionar sprite<x2\/>
+   ![ Adicionar sprite](media/add-sprite-button.png)
 
    Game Studio adiciona um sprite vazio à lista.
 
 2. No campo **Property Grid** à direita, no campo **Source**, especifique a folha sprite que contém o sprite.
 
-> <x1\/>!Tip<x2\/>
+> [!Tip]
 > Se você quiser criar um novo sprite da mesma folha de sprite que outros sprites na lista, é frequentemente mais rápido duplicar um sprite existente. Para duplicar um sprite, selecione-o e clique em **Duplicar sprites selecionados** ou pressione **Ctrl + D**.
 >
-> <x1\/> Duplicado selecionado sprites<x2\/>
+> ![ Duplicado selecionado sprites](media/duplicate-selected-sprites.png)
 
 ### Lista de Sprite
 
-O Editor Sprite lista os sprites em seu projeto à esquerda. Cada sprite tem um número de índice; o primeiro tem o índice *<x1\/>0<x2\/>*, segundo tem índice *<x3\/>1<x4\/>*, e assim por diante. Você pode usar esses índices em seus scripts (ver [Use sprites](use-sprites.md)).
+O Editor Sprite lista os sprites em seu projeto à esquerda. Cada sprite tem um número de índice; o primeiro tem o índice *[0]*, segundo tem índice *[1]*, e assim por diante. Você pode usar esses índices em seus scripts (ver [Use sprites](use-sprites.md)).
 
-<x1\/> Lista de preços <x2\/>
+![ Lista de preços ](media/sprite-list.png)
 
-Para alterar a ordem (e o número de índice) de sprites, use os botões <x1\/>Move selecionado sprite up\/down<x2\/> (**Move selecionado sprite up\/down**) . Por exemplo, se você mover *<x3\/>1<x4\/> Sprite* para baixo, ele se torna *<x5\/>2<x6\/> Sprite*.
+Para alterar a ordem (e o número de índice) de sprites, use os botões ![Move selecionado sprite up/down](media/move-sprite-up-and-down.png) (**Move selecionado sprite up/down**) . Por exemplo, se você mover *[1] Sprite* para baixo, ele se torna *[2] Sprite*.
 
 Para renomear um sprite na lista, clique duas vezes e digite um novo nome.
 
@@ -50,7 +50,7 @@ Para renomear um sprite na lista, clique duas vezes e digite um novo nome.
 
 Você cria sprites definindo regiões retangulares **texture** na folha de sprite.
 
-<x1\/>Selecione uma região sprite<x2\/>
+![Selecione uma região sprite](media/select-sprite.png)
 
 Existem três maneiras de fazer isso: usando a ferramenta Vara Mágica, definindo as bordas da região manualmente, ou especificando as coordenadas de pixel nas propriedades de sprite.
 
@@ -58,15 +58,15 @@ Existem três maneiras de fazer isso: usando a ferramenta Vara Mágica, definind
 
 O **Magic Wand** seleciona a região de textura em torno de um sprite automaticamente. Esta é geralmente a maneira mais rápida de selecionar sprites.
 
-<x1\/> Wand<x2\/>
+![ Wand](media/magic-wand.gif)
 
 Para selecionar ou desmarcar a Vara Mágica, clique no ícone na barra de ferramentas do Editor Sprite ou pressione a tecla **M**.
 
-<x1\/>Select Magic Wand<x2\/>
+![Select Magic Wand](media/select-magic-wand.png)
 
 Para escolher como a varinha mágica identifica regiões de textura, use a lista **drop-down** na barra de ferramentas.
 
-<x1\/>Selecione transparência ou cor chave<x2\/>
+![Selecione transparência ou cor chave](media/magic-wand-select-transparency-or-color-key.png)
 
 * **Transparência**: A varinha mágica trata as bordas das regiões não transparentes como as bordas da região de textura. Por exemplo, se o sprite é cercado por espaço transparente, ele define a região de textura na borda do espaço transparente.
 
@@ -86,29 +86,29 @@ Você pode arrastar as bordas da região de textura e reposicionar a região man
 
 Você pode definir as coordenadas de pixel da região de textura em **Property Grid** abaixo de **Texture Region**. X é a borda esquerda, Y é o topo, Z é o direito, e W é o fundo.
 
-<x1\/>Região de textura em Propriedade Grid<x2\/>
+![Região de textura em Propriedade Grid](media/set-texture-region-in-property-grid.png)
 
 #### Use toda a folha de sprite para o sprite
 
 Se você quiser usar toda a imagem de folha de sprite para o sprite, você pode fazer isso rapidamente clicando ** Use a imagem inteira para este sprite** na barra de ferramentas. Isso é útil quando você tem apenas um sprite em uma folha de sprite.
 
-<x1\/>Use todo sprite sheet<x2\/>
+![Use todo sprite sheet](media/use-entire-sprite-sheet.png)
 
 ### Definir transparência
 
 Por padrão, Stride trata áreas transparentes da folha de sprite como transparente no tempo de execução. Alternativamente, você pode definir uma cor chave como transparente. Para fazer isso, selecione ** Use a tecla de cor** e defina uma cor. Por exemplo, se você definir preto absoluto (#FF000000), as áreas de preto absoluto são transparentes no tempo de execução.
 
-<x1\/> Selecione a chave de cor<x2\/>
+![ Selecione a chave de cor](media/color-key.png)
 
 Você também pode usar a ferramenta **color picker** para selecionar uma cor da folha de sprite.
 
-<x1\/>Color picker<x2\/>
+![Color picker](media/color-picker.png)
 
 ## Propriedades de Sprite
 
 Você pode definir as propriedades de sprites individuais no **Property Grid**.
 
-<x1\/>Ajustar propriedades do quadro<x2\/>
+![Ajustar propriedades do quadro](media/adjust-frame-properties.png)
 
 | Propriedade | Descrição |
 |--------------------|------------------------- |
@@ -128,11 +128,11 @@ Você também pode definir as propriedades para todo o ativo da folha de sprite.
 * selecionar o ativo da folha sprite no **Asset View** e definir as propriedades no **Property Grid**, ou
 * no Editor Sprite, clique em ** Propriedades da folha desprite**.
 
-   <x1\/> Propriedades de folhas privadas botão<x2\/>
+   ![ Propriedades de folhas privadas botão](media/sprite-sheet-properties-button.png)
 
 Muitas das propriedades são as mesmas que propriedades de textura.
 
-<x1\/> Propriedades da folha de preços<x2\/>
+![ Propriedades da folha de preços](media/sprite-sheet-properties.png)
 
 | Propriedade | Descrição |
 |--------------------|---------------|

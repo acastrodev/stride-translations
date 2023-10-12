@@ -89,13 +89,13 @@ Os parâmetros comportam-se como qualquer variável. Você pode ler e escrever s
 
 Você pode criar seu próprio conjunto de parâmetros usando uma sintaxe de definição de estrutura.
 
-> <x1\/>!Note<x2\/>
+> [!Note]
 > Mesmo que eles sejam definidos no arquivo XKFX, não se esqueça da declaração `using` quando você deseja usá-los.
 
 ```cs
 params MyParameters
 (
-	bool EnableSpecular = true; \/\/ true é o valor padrão
+	bool EnableSpecular = true; // true é o valor padrão
 }
 ```
 
@@ -104,7 +104,7 @@ params MyParameters
 Para adicionar uma composição, atribuir a variável de composição à mistura com a sintaxe abaixo.
 
 ```cs
-\/\/ albedoSpecular é o nome da variável composição no mixin
+// albedoSpecular é o nome da variável composição no mixin
 mistura de compor albedo Specular = ComputeColorTexture;
  
 ou
@@ -124,7 +124,7 @@ efeito parcial MyPartialEffect
 	mixin compose color2 = ComputeColorFixed;
 }
  
-\/\/ para usá-lo
+// para usá-lo
 mixin MyPartialEffect;
 mixin compor myComposition = MyPartialEffect;
 ```

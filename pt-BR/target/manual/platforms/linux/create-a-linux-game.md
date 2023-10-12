@@ -1,35 +1,35 @@
 # Criar um jogo Linux
 
-> <x1\/>!Note<x2\/>
+> [!Note]
 > Antes de seguir essas instruções, certifique-se de ter seguido as instruções em [Linux - Configuração e requisitos](setup-and-requirements.md).
 
 1. No Stride launcher, crie um novo jogo e selecione Linux como uma plataforma de destino.
 
-   <x1\/> Novo Jogo <x2\/>
+   ![ Novo Jogo ](media/platform_choice.png)
 
 2. No Game Studio, no menu de plataformas, selecione **Linux**.
 
-   <x1\/> Seletor de formulários <x2\/>
+   ![ Seletor de formulários ](media/platform_selector.png)
 
 3. Pressione **F5** para construir e executar o projeto.
 
 4. A primeira vez que você executar o projeto, insira informações sobre seu host Linux:
 
-   <x1\/>Diálogo recuo<x2\/>
+   ![Diálogo recuo](media/default_credential_dialog.png)
 
    Digite suas informações como abaixo:
 
-   <x1\/>Encontrado Diálogo Credencial<x2\/>
+   ![Encontrado Diálogo Credencial](media/filled_credential_dialog.png)
 
 5. Clique em **Test settings** para testar as credenciais.
 
    Se você cometeu um erro, o Game Studio exibe:
 
-   <x1\/>Configurações inválidas<x2\/>
+   ![Configurações inválidas](media/unreachable_host.png)
 
    Se as credenciais estiverem corretas, o Game Studio exibe:
 
-   <x1\/> Sucesso <x2\/>
+   ![ Sucesso ](media/successful_login.png)
 
    Clique no botão **OK** para continuar.
 
@@ -41,7 +41,7 @@
 
 Suas credenciais são salvas no **Configurações** diálogo:
 
-<x1\/>Configurações Diálogo<x2\/>
+![Configurações Diálogo](media/remote_settings.png)
 
 A senha é criptografada usando o método Micrsoft *System.Security.Cryptograph.ProtectedData.Protect* para o usuário atual, e salvo no Base64, exibido nas Configurações. Você não pode alterar a senha da caixa de diálogo Configurações.
 
@@ -66,14 +66,14 @@ Debug and Release target Mono. Os outros alvo .NET Core.
 
 Uma vez que seu projeto é carregado no Visual Studio, selecione o projeto Linux. No menu suspenso **Solution Configurations**, você seleciona uma configuração Linux válida:
 
-<x1\/> Seleção de configuração<x2\/>
+![ Seleção de configuração](media/vs_configuration_selection.png)
 
 ### MSBuild
 
 Para compilar para Linux, a partir de uma linha de comando, use:
 
 ```
-msbuild \/p:Platform=Linux \/p:Configuration=CONFIG O teu jogo
+msbuild /p:Platform=Linux /p:Configuration=CONFIG O teu jogo
 ```
 
 Onde **CONFIG** é uma configuração Linux válida.

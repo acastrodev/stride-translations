@@ -43,7 +43,7 @@
 </trans-unit>
 <trans-unit id="tu11" xml:space="preserve">
 <source xml:lang="en">Solution/Asset View</source>
-<target xml:lang="pt">Solução \/ Visualização de ativos</target>
+<target xml:lang="pt">Solução / Visualização de ativos</target>
 </trans-unit>
 <trans-unit id="tu12" xml:space="preserve">
 <source xml:lang="en">Scene view</source>
@@ -75,7 +75,7 @@
 </trans-unit>
 <trans-unit id="tu19" xml:space="preserve">
 <source xml:lang="en">Serialize/DataMember</source>
-<target xml:lang="pt">Serialize\/DataMember</target>
+<target xml:lang="pt">Serialize/DataMember</target>
 </trans-unit>
 <trans-unit id="tu20" xml:space="preserve">
 <source xml:lang="en">GlobalClass</source>
@@ -115,7 +115,7 @@
 </trans-unit>
 <trans-unit id="tu29" xml:space="preserve">
 <source xml:lang="en">And any other Subprojects. Stride will scan the Subprojects too like the main Project to get DataContract classes and features into the Editor/Game ( it doesn't matter if its in a subproject or not</source>
-<target xml:lang="pt">E qualquer outro Subprojeto. Stride irá analisar os Subprojetos também como o projeto principal para obter classes e recursos DataContract no Editor\/Game (não importa se o seu em um subprojeto ou não</target>
+<target xml:lang="pt">E qualquer outro Subprojeto. Stride irá analisar os Subprojetos também como o projeto principal para obter classes e recursos DataContract no Editor/Game (não importa se o seu em um subprojeto ou não</target>
 </trans-unit>
 <trans-unit id="tu30" xml:space="preserve">
 <source xml:lang="en"><g id="1">Bin:</g> contains the compiled binaries and data. Stride creates the folder when you build the project, with a subdirectory for each platform.</source>
@@ -139,7 +139,7 @@
 </trans-unit>
 <trans-unit id="tu35" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Open project directory from Game Studio<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt; Abra o diretório do projeto do Game Studio&lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/> Abra o diretório do projeto do Game Studio<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu36" xml:space="preserve">
 <source xml:lang="en">Game settings</source>
@@ -151,7 +151,7 @@
 </trans-unit>
 <trans-unit id="tu38" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>The location is not known to me<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt;A localização não é conhecida por me&lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/>A localização não é conhecida por me<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu39" xml:space="preserve">
 <source xml:lang="en">Stride saves global settings in a single asset, the Game Settings asset. You can configure:</source>
@@ -325,21 +325,21 @@ Você pode ter várias cenas em seu projeto. Stride carrega a cena padrão no te
 </source>
 <target xml:lang="pt">atualização()
 (
-    \/\/ verdadeiro para um quadro em que a barra de espaço foi pressionada
+    // verdadeiro para um quadro em que a barra de espaço foi pressionada
     if(Input.IsKeyDown(Keys.Space))))
     (
-        \/\/ Faz alguma coisa.
+        // Faz alguma coisa.
     }
 
-    \/\/ verdadeiro enquanto este botão de joystick está para baixo
+    // verdadeiro enquanto este botão de joystick está para baixo
     se (Input.GameControllers[0].IsButtonDown(0))
     (
-        \/\/ Faz alguma coisa.
+        // Faz alguma coisa.
     }
 
     flutuar Horiz = (Input.IsKeyDown (Keys.Left) ? - 1f 0) + (Input.IsKeyDown (Keys.Right)? 1f 0);
     float Vert = (Input.IsKeyDown (Keys.Down) ? - 1f 0) + (Input.IsKeyDown (Keys.Up)? 1f 0);
-    \/\/Faz outra coisa.
+    //Faz outra coisa.
 }
 </target>
 </trans-unit>
@@ -466,7 +466,7 @@ public class MyScript : SyncScript
     }
 }
 </source>
-<target xml:lang="pt">\/\/ Exemplo de pesquisa para um CharacterComponent em Stride
+<target xml:lang="pt">// Exemplo de pesquisa para um CharacterComponent em Stride
 classe pública MyScript : Sincronização
 (
     atualização()
@@ -475,7 +475,7 @@ classe pública MyScript : Sincronização
 
         if (characterComponent!= null)
         (
-            \/\/ Executar ações no caracterComponent
+            // Executar ações no caracterComponent
         }
     }
 }
@@ -518,15 +518,15 @@ classe pública MyScript : Sincronização
 </source>
 <target xml:lang="pt">classe pública BasicMethods: StartupScript
 (
-    \/\/ Campos e propriedades de membros públicos que serão visíveis no Game Studio
+    // Campos e propriedades de membros públicos que serão visíveis no Game Studio
     anula de sobreposição pública Start()
     (
-        \/\/ Código de inicialização para o script
+        // Código de inicialização para o script
     }
 
     sobreposição pública cancel()
     (
-        \/\/ Código de limpeza para o script
+        // Código de limpeza para o script
     }     
 }
 </target>
@@ -554,17 +554,17 @@ classe pública MyScript : Sincronização
 </source>
 <target xml:lang="pt">classe pública BasicMethods: Node
 (
-    \/\/ Este método é equivalente a Stride's Start in StartupScript
+    // Este método é equivalente a Stride's Start in StartupScript
     sobreposição pública vazio _Ready()
     (
-        \/\/ Código de inicialização para o script
+        // Código de inicialização para o script
     }
 
-    \/\/ Godot não tem um equivalente direto a Stride's Cancel,
-    \/\/ mas você poderia usar _ExitTree para limpeza
+    // Godot não tem um equivalente direto a Stride's Cancel,
+    // mas você poderia usar _ExitTree para limpeza
     anula de sobreposição pública _ExitTree()
     (
-        \/\/ Código de limpeza para o script
+        // Código de limpeza para o script
     }
 }
 </target>
@@ -613,10 +613,10 @@ classe pública MyScript : Sincronização
     público anulado Cancelar() { }        
     atualização()
     (
-        \/\/ Acesso delta tempo em Stride
+        // Acesso delta tempo em Stride
         double deltaTime = Game.UpdateTime.Elapsed.TotalSeconds;
 
-        \/\/ Realizar ações com base no delta Tempo
+        // Realizar ações com base no delta Tempo
     }
 }
 </target>
@@ -643,7 +643,7 @@ classe pública MyScript : Sincronização
     anulado público _ExitTree() { }        
     anula de sobreposição pública _Process(double delta)
     (
-        \/\/ Realizar ações com base no delta
+        // Realizar ações com base no delta
     }
 }
 
@@ -663,7 +663,7 @@ classe pública MyScript : Sincronização
 </trans-unit>
 <trans-unit id="tu125" xml:space="preserve">
 <source xml:lang="en">Stride offers a specialized <g id="1">AsyncScript</g> class that allows you to execute code asynchronously using C#'s <g id="2">async</g>/<g id="3">await</g> syntax. The <g id="4">Execute()</g> method can be awaited, allowing your code to run without blocking the main game loop.</source>
-<target xml:lang="pt">Stride oferece uma classe especializada <g id="1">AsyncScript</g> que permite executar o código assíncrono usando a sintaxe <g id="2">async</g>\/<g id="3">await</g>. O método <g id="4">Execute()</g> pode ser aguardado, permitindo que seu código seja executado sem bloquear o loop principal do jogo.</target>
+<target xml:lang="pt">Stride oferece uma classe especializada <g id="1">AsyncScript</g> que permite executar o código assíncrono usando a sintaxe <g id="2">async</g>/<g id="3">await</g>. O método <g id="4">Execute()</g> pode ser aguardado, permitindo que seu código seja executado sem bloquear o loop principal do jogo.</target>
 </trans-unit>
 <trans-unit id="tu126" xml:space="preserve">
 <source xml:lang="en">public class BasicMethods : AsyncScript
@@ -694,26 +694,26 @@ classe pública MyScript : Sincronização
 </source>
 <target xml:lang="pt">classe pública BasicMethods: AsyncScript
 (
-    \/\/ Campos e propriedades de membros públicos serão visíveis no Game Studio
+    // Campos e propriedades de membros públicos serão visíveis no Game Studio
     override público async Task Execute()
     (
-        \/\/ O código de inicialização deve vir aqui, se necessário
+        // O código de inicialização deve vir aqui, se necessário
 
-        \/\/ Loop até o fim do jogo (opcional dependendo do script)
+        // Loop até o fim do jogo (opcional dependendo do script)
         enquanto (Game.IsRunning)
         (
             aguarde MyEvent;
 
-            \/\/ Faz alguma coisa
+            // Faz alguma coisa
 
-            \/\/ Aguarde o próximo quadro (opcional dependendo do script)
+            // Aguarde o próximo quadro (opcional dependendo do script)
             await Script.NextFrame();
         }
     }
 
     sobreposição pública cancel()
     (
-        \/\/ Código de limpeza para o script
+        // Código de limpeza para o script
     }     
 }
 
@@ -748,13 +748,13 @@ classe pública MyScript : Sincronização
     público async anulado _Ready()
     (
         esperar ToSignal (GetTree().CreateTimer(1.0f), "timeout");
-        \/\/ Executar código após 1 segundo timer elapses
+        // Executar código após 1 segundo timer elapses
     }
 
-    \/\/ Godot não tem um equivalente direto ao método Stride's Cancel
+    // Godot não tem um equivalente direto ao método Stride's Cancel
     anula de sobreposição pública _ExitTree()
     (
-        \/\/ Código de limpeza para o script
+        // Código de limpeza para o script
     }
 }
 </target>
@@ -785,7 +785,7 @@ classe pública MyScript : Sincronização
 </trans-unit>
 <trans-unit id="tu136" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Create script in Stride<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt;Criar script em Stride&lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/>Criar script em Stride<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu137" xml:space="preserve">
 <source xml:lang="en">Stride has a <g id="1">SyncScript</g> class that comes with methods such as:</source>
@@ -809,7 +809,7 @@ classe pública MyScript : Sincronização
 </trans-unit>
 <trans-unit id="tu142" xml:space="preserve">
 <source xml:lang="en"><g id="1">AsyncScript</g>: an asynchronous script with a single method <g id="2">Execute()</g> and you can use <g id="3">async</g>/<g id="4">await</g> inside that method. Asynchronous scripts aren't loaded one by one like synchronous scripts. Instead, they're all loaded in parallel.</source>
-<target xml:lang="pt"><g id="1">AsyncScript</g>: um script assíncrono com um único método <g id="2">Execute()</g> e você pode usar <g id="3">async</g>\/&gt;\/<g id="4">await</g> dentro desse método. Os scripts assíncronos não são carregados um por um como scripts síncronos. Em vez disso, estão todos carregados em paralelo.</target>
+<target xml:lang="pt"><g id="1">AsyncScript</g>: um script assíncrono com um único método <g id="2">Execute()</g> e você pode usar <g id="3">async</g>/&gt;/<g id="4">await</g> dentro desse método. Os scripts assíncronos não são carregados um por um como scripts síncronos. Em vez disso, estão todos carregados em paralelo.</target>
 </trans-unit>
 <trans-unit id="tu143" xml:space="preserve">
 <source xml:lang="en">Godot</source>
@@ -821,7 +821,7 @@ classe pública MyScript : Sincronização
 </trans-unit>
 <trans-unit id="tu145" xml:space="preserve">
 <source xml:lang="en">In Godot, you use methods like <g id="1">_Ready()</g> for initialization and <g id="2">_Process(delta)</g> for frame-by-frame updates. Godot also supports the <g id="3">async</g>/<g id="4">await</g> syntax in C#.</source>
-<target xml:lang="pt">Em Godot, você usa métodos como <g id="1">_Ready()</g> para inicialização e <g id="2">_Process(delta)</g> para atualizações frame-by-frame. Godot também suporta a sintaxe <g id="3">async</g>\/<g id="4">await</g> em C#.</target>
+<target xml:lang="pt">Em Godot, você usa métodos como <g id="1">_Ready()</g> para inicialização e <g id="2">_Process(delta)</g> para atualizações frame-by-frame. Godot também suporta a sintaxe <g id="3">async</g>/<g id="4">await</g> em C#.</target>
 </trans-unit>
 <trans-unit id="tu146" xml:space="preserve">
 <source xml:lang="en">Reload assemblies</source>
@@ -837,7 +837,7 @@ classe pública MyScript : Sincronização
 </trans-unit>
 <trans-unit id="tu149" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Reload assemblies<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt;Reload assemblies&lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/>Reload assemblies<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu150" xml:space="preserve">
 <source xml:lang="en">Godot</source>
@@ -861,7 +861,7 @@ classe pública MyScript : Sincronização
 </trans-unit>
 <trans-unit id="tu155" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Select an entity<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt;Selecione uma entidade&lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/>Selecione uma entidade<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu156" xml:space="preserve">
 <source xml:lang="en">In the <g id="1">Property Grid</g> (on the right by default), click <g id="2">Add component</g> and select the script you want to add.</source>
@@ -869,7 +869,7 @@ classe pública MyScript : Sincronização
 </trans-unit>
 <trans-unit id="tu157" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Add script component<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt; Adicionar componente de script&lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/> Adicionar componente de script<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu158" xml:space="preserve">
 <source xml:lang="en">Godot</source>
@@ -921,24 +921,24 @@ public override void Start()
     carEntities[0].Name = "MyNewEntity";
 }
 </source>
-<target xml:lang="pt">\/\/ Campos e propriedades de membros públicos exibidos no Game Studio Property Grid
+<target xml:lang="pt">// Campos e propriedades de membros públicos exibidos no Game Studio Property Grid
 público pré-fabricada CarPrefab;
 público Vector3 SpawnPosition;
 público Quaternion SpawnRotation;
 
 anula de sobreposição pública Start()
 (
-    \/\/ Inicialização do script
+    // Inicialização do script
     List&lt;Entity&gt; carEntidades = CarPrefab.Instantiate();
     
-    \/\/ Adicione as entidades instantâneas à cena raiz
+    // Adicione as entidades instantâneas à cena raiz
     SceneSystem.SceneInstance.RootScene.Entities.AddRange(carEntities);
     
-    \/\/ Defina a posição e a rotação da primeira entidade na lista
+    // Defina a posição e a rotação da primeira entidade na lista
     carEntities[0].Transform.Position = SpawnPosition;
     carEntities[0]. Transform.Rotation = SpawnRotation;
     
-    \/\/ Opcionalmente, você pode definir um nome para a entidade
+    // Opcionalmente, você pode definir um nome para a entidade
     carEntities[0]. Nome = "MyNewEntity";
 }
 </target>
@@ -1059,7 +1059,7 @@ classe pública MyClass
 </trans-unit>
 <trans-unit id="tu186" xml:space="preserve">
 <source xml:lang="en">In Godot you can GD.Print your message. //TODO What does it mean?</source>
-<target xml:lang="pt">Em Godot você pode GD. Imprima sua mensagem. \/\/TODO O que significa?</target>
+<target xml:lang="pt">Em Godot você pode GD. Imprima sua mensagem. //TODO O que significa?</target>
 </trans-unit>
 <trans-unit id="tu187" xml:space="preserve">
 <source xml:lang="en">To view the log output, go to the <g id="1">Game Studio</g> toolbar and click on <g id="2">View</g>, then enable the <g id="3">Output</g> option.</source>
@@ -1067,7 +1067,7 @@ classe pública MyClass
 </trans-unit>
 <trans-unit id="tu188" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Enable output<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt; Activar saída&lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/> Activar saída<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu189" xml:space="preserve">
 <source xml:lang="en">Once enabled, the <g id="1">Output</g> tab will appear, typically located at the bottom of the <g id="2">Game Studio</g> interface.</source>
@@ -1075,7 +1075,7 @@ classe pública MyClass
 </trans-unit>
 <trans-unit id="tu190" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Output tab<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt;Output tab&lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/>Output tab<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu191" xml:space="preserve">
 <source xml:lang="en">Print debug messages</source>
@@ -1094,7 +1094,7 @@ classe pública MyClass
 <trans-unit id="tu194" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>!Note<x id="2"/>
 To print debug messages, you have to run the game from Visual Studio, not Game Studio. There's no way to print to the Game Studio output window.</source>
-<target xml:lang="pt">&lt;x1\/&gt;!Note&lt;x2\/&gt;
+<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
 Para imprimir mensagens de depuração, você tem que executar o jogo do Visual Studio, não Game Studio. Não há como imprimir na janela de saída do Game Studio.</target>
 </trans-unit>
 </body>

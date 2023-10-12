@@ -1,8 +1,8 @@
 # Formas de partículas
 
-<x1\/>Introdução<x2\/>
-<x3\/>Artista <x4\/>
-<x5\/>Programação<x6\/>
+<span class="badge text-bg-primary">Introdução</span>
+<span class="badge text-bg-success">Artista </span>
+<span class="badge text-bg-success">Programação</span>
 
 Como as partículas são essencialmente apenas pontos no espaço, elas não têm forma definida. Em vez disso, Stride desenha formas ** entre** os pontos.
 
@@ -26,7 +26,7 @@ Quads são idênticos a outdoors, mas não girar para enfrentar a câmera, e ass
 
 Stride atrai partículas de outdoor para o valor **Size** nas propriedades de efeito de partícula. Se você não especificar um tamanho, Stride expande os quads para 1m x 1m.
 
-<x1\/>media\/particles-reference-shapebuilders-1.png<x2\/>
+![media/particles-reference-shapebuilders-1.png](media/particles-reference-shapebuilders-1.png)
 
 ## Espirito alinhado à direção
 

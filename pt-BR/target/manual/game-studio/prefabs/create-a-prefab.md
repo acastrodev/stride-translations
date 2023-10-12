@@ -1,11 +1,11 @@
 # Criar uma pré-fabricada
 
-<x1\/>Introdução<x2\/>
-<x3\/>Designer<x4\/>
+<span class="badge text-bg-primary">Introdução</span>
+<span class="badge text-bg-success">Designer</span>
 
 No **Asset View**, clique em **Add asset** e selecione **Prefabs** > **Prefab**.
 
-<x1\/>Criar uma prefab do Asset View<x2\/>
+![Criar uma prefab do Asset View](media/create-prefab-from-asset-view.png)
 
 Game Studio cria um ativo pré-fabricado vazio com o nome padrão *Prefab*. Clique duas vezes no ativo para abrir o **Prefab Editor** e adicionar entidades.
 
@@ -14,18 +14,18 @@ Game Studio cria um ativo pré-fabricado vazio com o nome padrão *Prefab*. Cliq
 Você também pode criar uma pré-fabricada de uma entidade ou entidades existentes.
 
 1. No **Scene Editor**, selecione a entidade ou entidades de que deseja criar uma pré-fabricada.
-> <x1\/>!Tip<x2\/>
+> [!Tip]
 > Segure Ctrl para selecionar vários itens.
 
 2. Clique com o botão direito do mouse na seleção e selecione **Create prefab da seleção**:
 
-<x1\/>Criar uma pré-fabricada da seleção<x2\/>
+![Criar uma pré-fabricada da seleção](media/create-prefab-from-selection.gif)
 
 Game Studio cria um ativo pré-fabricado da entidade ou entidades selecionadas. Você pode acessar a nova pré-fabricada do **Asset View**.
 
-<x1\/>Prefab em Visualização de ativos<x2\/>
+![Prefab em Visualização de ativos](media/prefab-asset.png)
 
-> <x1\/>!Note<x2\/>
+> [!Note]
 > Depois de criar um pré-fabricado de uma seleção, a seleção original em si **comes a prefab**.
 
 ### Criar uma pré-fabricada de uma pré-fabricada modificada existente

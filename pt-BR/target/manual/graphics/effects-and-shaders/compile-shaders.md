@@ -1,7 +1,7 @@
 # Sombreadores computacionais
 
-<x1\/>Introdução<x2\/>
-<x3\/>Programação<x4\/>
+<span class="badge text-bg-primary">Introdução</span>
+<span class="badge text-bg-success">Programação</span>
 
 Conversões de Stride Stride shaders (`sdsl` e `.sdfx` files) para a linguagem shader usada pela plataforma [graphics](../../platforms/set-the-graphics-platform.md).
 
@@ -26,25 +26,25 @@ Stride não pode saber com antecedência quais shaders serão usados no tempo de
 
 4. Game Studio notifica que há novos shaders para importar.
 
-   <x1\/> Novos efeitos<x2\/>
+   ![ Novos efeitos](media/new-effects-to-import.png)
 
    No **Asset View**, o botão **Import effects** torna-se disponível.
 
-   <x1\/> Efeitos de importação <x2\/>
+   ![ Efeitos de importação ](media/import-effects-button.png)
 
 5. Se você clicar em **Import effects**, Game Studio atualiza o **Effect Log** (ou cria se não existe) e os adiciona ao banco de dados do jogo para ser usado da próxima vez que você construir (veja o passo 1).
 
-   <x1\/> Efeito log<x2\/>
+   ![ Efeito log](media/effect-log.png)
 
 ## Mudar como Stride compila shaders
 
 1. No Game Studio, no **Solution Explorer**, selecione o pacote e clique em **Package properties**.
 
-   <x1\/> Propriedades de embalagem <x2\/>
+   ![ Propriedades de embalagem ](media/package-properties-button.png)
 
 2. No **Property Grid**, defina as propriedades.
 
-   <x1\/> Propriedades de embalagem <x2\/>
+   ![ Propriedades de embalagem ](media/package-properties.png)
 
 A propriedade **Effect compiler** especifica como compilar o shader.
 
@@ -70,7 +70,7 @@ Como os dispositivos iOS não podem se conectar diretamente ao PC, para converte
 
 4. Abra **Terminal**, navegue para a pasta onde você descompactou o arquivo e execute **stride-ios-relay.py MyPcName**, onde **MyPcName** é o nome do seu desenvolvedor PC.
 
-   > <x1\/>!Tip<x2\/>
+   > [!Tip]
    > Para encontrar o nome do seu desenvolvedor PC, no PC, pressione a chave do Windows, digite **About** e pressione **Enter**. O nome do PC está listado em **PC nome**.
 
 O dispositivo iOS agora deve ser capaz de se comunicar com o PC através do seu Mac para construir shaders remotamente.
@@ -79,4 +79,4 @@ O dispositivo iOS agora deve ser capaz de se comunicar com o PC através do seu 
 
 Se o seu aplicativo tentar se conectar ao Game Studio para compilar um shader ou notificar Game Studio que ele precisa de novos shaders, mas não pode se conectar, a saída Visual Studio exibe este erro:
 
-"<x1\/>RouterClient<x2\/>: Erro: Não foi possível conectar ao roteador de conexão usando o modo Connect. System.AggregateExcepção: Um ou mais erros ocorreram. ---- System.Net.Sockets.SocketException: Nenhuma conexão pode ser feita porque a máquina de destino recusou ativamente 127.0.0.1:31254"
+"[RouterClient]: Erro: Não foi possível conectar ao roteador de conexão usando o modo Connect. System.AggregateExcepção: Um ou mais erros ocorreram. ---- System.Net.Sockets.SocketException: Nenhuma conexão pode ser feita porque a máquina de destino recusou ativamente 127.0.0.1:31254"

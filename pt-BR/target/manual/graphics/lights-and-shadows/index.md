@@ -1,8 +1,8 @@
 # Luzes e sombras
 
-<x1\/>Introdução<x2\/>
-<x3\/>Designer<x4\/>
-<x5\/>Artista <x6\/>
+<span class="badge text-bg-primary">Introdução</span>
+<span class="badge text-bg-success">Designer</span>
+<span class="badge text-bg-success">Artista </span>
 
 As luzes em Stride são fornecidas por componentes [light](xref:Stride.Engine.LightComponent). Existem vários tipos de luz.
 

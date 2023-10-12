@@ -8,8 +8,8 @@
 <trans-unit id="tu2" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Beginner<x id="2"/>
 <x id="3"/>Programmer<x id="4"/></source>
-<target xml:lang="pt">&lt;x1\/&gt;Introdução&lt;x2\/&gt;
-&lt;x3\/&gt;Programação&lt;x4\/&gt;</target>
+<target xml:lang="pt"><x id="1"/>Introdução<x id="2"/>
+<x id="3"/>Programação<x id="4"/></target>
 </trans-unit>
 <trans-unit id="tu3" xml:space="preserve">
 <source xml:lang="en">When you declare a public property or field in a script, the property becomes accessible in Game Studio from the script component properties.</source>
@@ -17,7 +17,7 @@
 </trans-unit>
 <trans-unit id="tu4" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Property in Game Studio<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt;Propriedade no Game Studio&lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/>Propriedade no Game Studio<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu5" xml:space="preserve">
 <source xml:lang="en">You can attach the same script to multiple entities and set different property values on each entity.</source>
@@ -26,7 +26,7 @@
 <trans-unit id="tu6" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>!Note<x id="2"/>
 Properties and fields must be <g id="3">serializable</g> to be used in Game Studio.</source>
-<target xml:lang="pt">&lt;x1\/&gt;!Note&lt;x2\/&gt;
+<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
 Propriedades e campos devem ser <g id="3">serializable</g> para ser usado no Game Studio.</target>
 </trans-unit>
 <trans-unit id="tu7" xml:space="preserve">
@@ -46,7 +46,7 @@ Propriedades e campos devem ser <g id="3">serializable</g> para ser usado no Gam
 </source>
 <target xml:lang="pt">classe pública SampleSyncScript : StartupScript
 (
-	\/\/ Este membro público aparecerá no Game Studio
+	// Este membro público aparecerá no Game Studio
 	flutuador público DelayTime Fora
 }
 </target>
@@ -57,12 +57,12 @@ Propriedades e campos devem ser <g id="3">serializable</g> para ser usado no Gam
 </trans-unit>
 <trans-unit id="tu11" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Public property appears in the Property Grid<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt; Propriedade pública aparece na propriedade Grid&lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/> Propriedade pública aparece na propriedade Grid<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu12" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>!Note<x id="2"/>
 As a general rule, if you want to display the property or field in Game Studio, getters and setters should do as little as possible. For example, they shouldn't try to call methods or access Stride runtime API.</source>
-<target xml:lang="pt">&lt;x1\/&gt;!Note&lt;x2\/&gt;
+<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
 Como regra geral, se você quiser exibir a propriedade ou campo no Game Studio, os getters e os setters devem fazer o mínimo possível. Por exemplo, eles não devem tentar chamar métodos ou acessar a API de tempo de execução Stride.</target>
 </trans-unit>
 <trans-unit id="tu13" xml:space="preserve">
@@ -88,7 +88,7 @@ Como regra geral, se você quiser exibir a propriedade ou campo no Game Studio, 
 <target xml:lang="pt">classe pública SampleSyncScript : StartupScript
 (
 	atraso de flutuação privado Tempo Fora;
-	\/\/ Este membro público aparecerá no Game Studio
+	// Este membro público aparecerá no Game Studio
 	flutuador público DelayTime Fora
 	(
 		get { delay retorno Tempo Fora
@@ -129,7 +129,7 @@ Como regra geral, se você quiser exibir a propriedade ou campo no Game Studio, 
 	
 </source>
 <target xml:lang="pt">
-	\/\/ Esta propriedade pública não está disponível no Game Studio
+	// Esta propriedade pública não está disponível no Game Studio
 	[DataMemberIgnore]
 	flutuador público DelayTime Fora
 	
@@ -141,7 +141,7 @@ Como regra geral, se você quiser exibir a propriedade ou campo no Game Studio, 
 </trans-unit>
 <trans-unit id="tu22" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Public property been hidden with <g id="2">[DataMemberIgnore]</g><x id="3"/></source>
-<target xml:lang="pt">&lt;x1\/&gt; Propriedade pública foi escondida com <g id="2">[DataMemberIgnore]</g>&lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/> Propriedade pública foi escondida com <g id="2">[DataMemberIgnore]</g><x id="3"/></target>
 </trans-unit>
 <trans-unit id="tu23" xml:space="preserve">
 <source xml:lang="en">Adding property descriptions</source>
@@ -161,12 +161,12 @@ Como regra geral, se você quiser exibir a propriedade ou campo no Game Studio, 
 	public float DelayTimeOut { get; set; }
 
 </source>
-<target xml:lang="pt">	\/\/\/&lt;summary&gt;
-	\/\/\/ Este resumo não aparecerá no Game Studio
-	\/\/\/&lt;\/summary&gt;
-	\/\/\/&lt;userdoc&gt;
-	\/\/\/ Esta descrição irá aparecer no Game Studio
-	\/\/\/&lt;\/userdoc&gt;
+<target xml:lang="pt">	///&lt;summary&gt;
+	/// Este resumo não aparecerá no Game Studio
+	///&lt;/summary&gt;
+	///&lt;userdoc&gt;
+	/// Esta descrição irá aparecer no Game Studio
+	///&lt;/userdoc&gt;
 	flutuador público DelayTime Fora
 
 </target>
@@ -182,15 +182,15 @@ Como regra geral, se você quiser exibir a propriedade ou campo no Game Studio, 
   &lt;/PropertyGroup&gt;
 </source>
 <target xml:lang="pt">  &lt;PropertyGroup&gt;
-    &lt;TargetFrameworks&gt;net6.0&lt;\/TargetFrameworks&gt;
-    &lt;DocumentationFile&gt;bin\$(Configuration)\$(TargetFramework)\$(AssemblyName).xml&lt;\/DocumentationFile&gt;
-  &lt;\/PropertyGroup&gt;
+    &lt;TargetFrameworks&gt;net6.0&lt;/TargetFrameworks&gt;
+    &lt;DocumentationFile&gt;bin\$(Configuration)\$(TargetFramework)\$(AssemblyName).xml&lt;/DocumentationFile&gt;
+  &lt;/PropertyGroup&gt;
 </target>
 </trans-unit>
 <trans-unit id="tu28" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>!NOTE<x id="2"/>
 Game Studio will only look in your build output directory for each assembly. Using the above path is recommended.</source>
-<target xml:lang="pt">&lt;x1\/&gt;!NOTE&lt;x2\/&gt;
+<target xml:lang="pt"><x id="1"/>!NOTE<x id="2"/>
 Game Studio só vai olhar em seu diretório de saída de compilação para cada conjunto. Recomenda-se usar o caminho acima.</target>
 </trans-unit>
 <trans-unit id="tu29" xml:space="preserve">
@@ -199,7 +199,7 @@ Game Studio só vai olhar em seu diretório de saída de compilação para cada 
 </trans-unit>
 <trans-unit id="tu30" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>The description now shows in the Property Grid<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt;A descrição agora mostra no Property Grid&lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/>A descrição agora mostra no Property Grid<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu31" xml:space="preserve">
 <source xml:lang="en"><g id="1">MemberRequiredAttribute</g></source>

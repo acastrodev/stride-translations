@@ -1,8 +1,8 @@
 # Tutorial: Materiais de partículas
 
-<x1\/> Intermediário <x2\/>
-<x3\/>Artista <x4\/>
-<x5\/>Programação<x6\/>
+<span class="badge text-bg-primary">Intermediário</span>
+<span class="badge text-bg-success">Artista </span>
+<span class="badge text-bg-success">Programação</span>
 
 Este tutorial demonstra como criar shaders personalizados e materiais para um sistema de partículas, fornecendo funcionalidade não disponível no motor central. Ele se concentra em shaders e renderização. Para a simulação, veja o tutorial [custom partículas](custom-particles.md).
 
@@ -10,7 +10,7 @@ Se você não estiver familiarizado com as partículas de edição, veja as part
 
 Comece criando um novo **Sample: Particles** projeto.
 
-<x1\/>Particles sample project<x2\/>
+![Particles sample project](media/select-particles-sample-project.png)
 
 Este projeto contém quatro cenas, cada uma demonstrando uma maneira diferente de usar partículas: **Partículas Animadas**, **Partículas de Crianças**, **Materiais personalizados**, e **Partículas personalizadas**.
 
@@ -18,7 +18,7 @@ Abra a cena **CustomMaterials**.
 
 Há três entidades de partículas no local: **Rad Particle System**, **Radial Particle System** e **Dois Textures Particle System**.
 
-<x1\/>media\/particles-samples-material-1.png<x2\/>
+![media/particles-samples-material-1.png](media/particles-samples-material-1.png)
 
 Selecione uma das entidades de partículas e navegue até seu sistema de partículas de origem, expandindo a emissora nela e seu material.
 
@@ -42,13 +42,13 @@ A única coisa que este shader faz é retornar a cor vermelha para pixel shading
 
 Salve o arquivo e recarregue os scripts no Game Studio. Você deve ver o novo shader em **Asset View**.
 
-<x1\/>media\/particles-samples-material-2.png<x2\/>
+![media/particles-samples-material-2.png](media/particles-samples-material-2.png)
 
 Se o shader não estiver lá, recarregue o projeto.
 
 Uma vez que o shader é carregado, você pode acessá-lo no **Property Grid** sob o material emissivo dinâmico ** para as partículas.** Escolha um tipo de shader e, no menu suspenso, selecione o shader que você acabou de adicionar à cena.
 
-<x1\/>media\/particles-samples-material-3.png<x2\/>
+![media/particles-samples-material-3.png](media/particles-samples-material-3.png)
 
 As partículas são vermelhas. Com Game Studio executando, edite e salve `ComputeColorRed.sdsl` para torná-los amarelos.
 
@@ -79,10 +79,10 @@ classe ComputeColorRadial<float4 ColorCenter, float4 ColorEdge> : ComputeColor, 
 
       float4 unclamped = lerp(ColorCenter, ColorEdge, radialDistance);
 
-      \/\/ Queremos permitir que a intensidade cresça muito, mas cap o alfa para 1
+      // Queremos permitir que a intensidade cresça muito, mas cap o alfa para 1
       float4 branqueado = braçadeira (inclampado, flutuador4(0, 0, 0, 0), flutuador4(1000, 1000, 1000, 1));
 
-      \/\/ Lembre-se de que usamos um pipeline alfa pré-multiplicado para que todos os valores de cor devem ser pré-multiplicados
+      // Lembre-se de que usamos um pipeline alfa pré-multiplicado para que todos os valores de cor devem ser pré-multiplicados
       braçada.rgb *= braçada.a;
 
       voltar fixado;
@@ -96,7 +96,7 @@ Existem várias diferenças importantes. O shader agora herda do `Texturing` cla
 
 Os valores de entrada `float4 ColorCenter` e `float4 ColorEdge` em nosso shader são permutações. Quando carregamos o shader, o Property Grid os exibe sob o dicionário **Generics**.
 
-<x1\/>media\/particles-samples-material-4.png<x2\/>
+![media/particles-samples-material-4.png](media/particles-samples-material-4.png)
 
 Os valores que estabelecemos aqui serão usados pelo shader `ComputeColorRadial` para as partículas. O resto do shader simplesmente calcula uma cor gradiente com base na distância do pixel sombreado do centro do outdoor.
 
@@ -111,9 +111,9 @@ As chaves do parâmetro são usadas para mapear dados e passá-lo para o shader.
 Se definirmos mais fluxos em nosso shader (`ParticleCustomShader`), eles são exportados para uma classe gerada automaticamente. Tente adicionar o seguinte a `ParticleCustomShader.sdsl`:
 
 ```cs
-  \/\/ -----------------------------------------
-  \/\/ fluxos
-  \/\/ -----------------------------------------
+  // -----------------------------------------
+  // fluxos
+  // -----------------------------------------
   flutuador de palco4 Alguns passos Chave;
 ```
 
@@ -170,26 +170,26 @@ Vamos ver `ParticleCustomShader.sdsl`:
 
 classe ParticleCustom Shader.. Base de partículas
 (
-  \/\/ Este shader pode ser definido pelo usuário, e é uma árvore binária composta de shaders menores
+  // Este shader pode ser definido pelo usuário, e é uma árvore binária composta de shaders menores
   compor base de cores compostasCor;
 
-  \/\/ Este shader pode ser definido pelo usuário, e é uma árvore binária composta de shaders menores
+  // Este shader pode ser definido pelo usuário, e é uma árvore binária composta de shaders menores
   compor ComputeColor baseIntensidade;
 
-  \/\/ Shading of the sprite — nós substituímos o Shading( da classe base), que só retorna ColorScale
+  // Shading of the sprite — nós substituímos o Shading( da classe base), que só retorna ColorScale
   sobreposição de palco float4 Shading()
   (
-      \/\/ -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-      \/\/ Cor da partícula base RGB
-      \/\/ -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+      // -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+      // Cor da partícula base RGB
+      // -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
       float4 finalColor = base.Shading() * baseColor.Compute();
 
-      \/\/ -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-      \/\/ Partícula base alfa
-      \/\/ -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+      // -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+      // Partícula base alfa
+      // -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
       finalColor.a = baseIntensity.Compute();
 
-      \/\/ Não se esqueça de multiplicar o alfa
+      // Não se esqueça de multiplicar o alfa
       finalColor.rgb *= finalColor.aaa;
 
       final de retorno Cor;
@@ -210,25 +210,25 @@ namespace Stride. Renderização
 (
   particleCustomEffect
   (
-      \/\/ Use o ParticleBaseKeys para atributos constantes, definidos no motor de jogo
+      // Use o ParticleBaseKeys para atributos constantes, definidos no motor de jogo
       usando params ParticleBaseKeys;
 
-      \/\/ Use o ParticleCustom Shader Chaves para atributos constantes, definidas neste projeto
+      // Use o ParticleCustom Shader Chaves para atributos constantes, definidas neste projeto
       usando params Teste de partículas Shader Chaves;
 
-      \/\/ Herda do ParticleBaseEffect.sdfx, definido no motor do jogo
+      // Herda do ParticleBaseEffect.sdfx, definido no motor do jogo
       mixin ParticleBaseEffect;
 
-      \/\/ Use o ParticleCustomShader.sdsl, definido neste projeto
+      // Use o ParticleCustomShader.sdsl, definido neste projeto
       misturador de partículas Shader;
 
-      \/\/ Se o shader definido pelo usuário para a baseColor não é nulo usá-lo
+      // Se o shader definido pelo usuário para a baseColor não é nulo usá-lo
       se (ParticleCustomShaderKeys.BaseColor!= null)
       (
           mixin compose baseCor = ParticleCustomShaderKeys.BaseColor;
       }
 
-      \/\/ Se o shader definido pelo usuário para a baseIntensidade (alpha) não é nulo usá-lo
+      // Se o shader definido pelo usuário para a baseIntensidade (alpha) não é nulo usá-lo
       se (ParticleCustomShaderKeys.BaseIntensity!= null)
       (
           base de composição da misturaIntensidade = ParticleCustomShaderKeys.BaseIntensidade;

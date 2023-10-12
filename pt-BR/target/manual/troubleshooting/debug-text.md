@@ -1,11 +1,11 @@
 # Texto de depuração
 
-<x1\/>Introdução<x2\/>
-<x3\/>Programação<x4\/>
+<span class="badge text-bg-primary">Introdução</span>
+<span class="badge text-bg-success">Programação</span>
 
 Você pode imprimir texto de depuração em tempo de execução com [DebugText](xref:Stride.Engine.ScriptComponent.DebugText). Por exemplo, você pode usar isso para exibir uma mensagem quando ocorre um problema.
 
-> <x1\/>!Note<x2\/>
+> [!Note]
 > O texto de depuração é automaticamente desativado quando você constrói o jogo no modo de lançamento.
 
 No método `Update` do seu script, adicione:
@@ -18,7 +18,7 @@ Onde `x` e `y` são as coordenadas de pixel para exibir o texto em.
 
 A mensagem de depuração é exibida quando você executar o jogo.
 
-<x1\/>Debug text<x2\/>
+![Debug text](media/my-debug-text.jpg)
 
 Para ocultar o texto de depuração, use:
 
@@ -43,7 +43,7 @@ namespace MyGame
 
         anula de sobreposição pública Start()
         (
-            \/\/ Inicialização do script.
+            // Inicialização do script.
             myTexture = Content.Load<Texture>("MyTexture");
         }
 

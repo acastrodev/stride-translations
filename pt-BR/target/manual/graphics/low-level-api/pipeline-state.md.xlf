@@ -49,11 +49,11 @@ var pipelineState = PipelineState.New(GraphicsDevice, ref pipelineStateDescripti
 // Applying the state to the pipeline
 CommandList.SetPipelineState(pipelineState);
 </source>
-<target xml:lang="pt">\/\/ Criando objeto de estado de pipeline
+<target xml:lang="pt">// Criando objeto de estado de pipeline
 var pipelineStateDescription = novo PipelineStateDescription();
 var pipelineState = PipelineState.New (GraphicsDevice, ref pipelineStateDescription);
  
-\/\/ Aplicando o estado ao pipeline
+// Aplicando o estado ao pipeline
 CommandList.SetPipelineState (pipelineState);
 </target>
 </trans-unit>
@@ -76,14 +76,14 @@ mutablePipelineState.Update
 // Applying the state to the pipeline
 CommandList.SetPipelineState(mutablePipelineState.CurrentState);
 </source>
-<target xml:lang="pt">\/\/ Criando o objeto estado do pipeline
+<target xml:lang="pt">// Criando o objeto estado do pipeline
 var mutablePipelineState = novo MutablePipelineState();
 
-\/\/ Definir valores e reconstruir
+// Definir valores e reconstruir
 mutablePipelineState.State.BlendState = BlendStates.AlphaBlend
 mutablePipelineState.Atualização
  
-\/\/ Aplicando o estado ao pipeline
+// Aplicando o estado ao pipeline
 CommandList.SetPipelineState (mutablePipelineState.CurrentState);
 </target>
 </trans-unit>
@@ -135,7 +135,7 @@ rasterizerStateDescription.ScissorTestEnable = true; // enables the scissor test
 pipelineStateDescription.RasterizerState = rasterizerStateDescription;
 </source>
 <target xml:lang="pt">var rasterizer Descrição do Estado = nova RasterizerStateDescription(CullMode.Front);
-rasterizerStateDescription.ScissorTestEnable = true; \/\/ permite o teste de tesoura
+rasterizerStateDescription.ScissorTestEnable = true; // permite o teste de tesoura
 pipelineStateDescription.RasterizerState = rasterizerStateDescription;
 </target>
 </trans-unit>
@@ -192,7 +192,7 @@ pipelineStateDescription.DepthStencilState = DepthStencilStates. Nenhum;
 var depthStencilStateDescription = new DepthStencilStateDescription(true, false);
 pipelineStateDescription.DepthStencilState = depthStencilStateDescription;
 </source>
-<target xml:lang="pt">\/\/ teste de profundidade está habilitado, mas não escreve
+<target xml:lang="pt">// teste de profundidade está habilitado, mas não escreve
 var profundidadeStencilStateDescrição = novo DepthStencilStateDescription (verdade, falso);
 pipelineStateDescription.DepthStencilState = profundidadeStencilStateDescription;
 </target>
@@ -249,13 +249,13 @@ pipelineStateDescription.BlendState = BlendStates.Opaque;
 // Set the sample mask
 pipelineStateDescription.SampleMask = 0xFFFFFFFF;
 </source>
-<target xml:lang="pt">\/\/ Definir estados comuns de mistura
+<target xml:lang="pt">// Definir estados comuns de mistura
 pipelineStateDescription. BlendState = BlendStates. Aditivo;
 pipelineStateDescription. BlendState = BlendStates.AlphaBlend;
 pipelineStateDescription. BlendState = BlendStates.NonPremultiplicado;
 pipelineStateDescription. BlendState = BlendStates. Opaco;
 
-\/\/ Defina a máscara de amostra
+// Defina a máscara de amostra
 pipeStateDescription.SampleMask = 0xFFFFFFFF;
 </target>
 </trans-unit>
@@ -280,15 +280,15 @@ blendStateDescription.AlphaToCoverageEnable = true; // enable alpha to coverage
 blendStateDescription.RenderTargets[0] = blendStateRenderTargetDescription;
 pipelineStateDescription.BlendState = blendStateDescription;
 </source>
-<target xml:lang="pt">\/\/ criar o objeto descrevendo o estado da mistura por alvo
+<target xml:lang="pt">// criar o objeto descrevendo o estado da mistura por alvo
 var blendStateRenderTargetDescription = novo BlendStateRenderTargetDescription();
 blendStateRenderTargetDescription. BlendEnable = true;
 blendStateRenderTargetDescription.ColorSourceBlend = Blend.SourceColor;
-\/\/ etc.
+// etc.
 
-\/\/ criar o objeto blendStateDescription
+// criar o objeto blendStateDescription
 var blendStateDescription = new BlendStateDescription(Blend.SourceColor, Blend.InverseSourceColor);
-blendStateDescription.AlphaToCoverageAtivar = verdadeiro; \/\/ permitir a cobertura alfa
+blendStateDescription.AlphaToCoverageAtivar = verdadeiro; // permitir a cobertura alfa
 blendStateDescription.RenderTargets[0] = blendStateRenderTargetDescription;
 pipelineStateDescription.BlendState = blendStateDescription;
 </target>

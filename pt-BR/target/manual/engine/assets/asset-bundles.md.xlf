@@ -8,7 +8,7 @@
 <trans-unit id="tu2" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>!Warning<x id="2"/>
 This section is out of date. For now, you should only use it for reference.</source>
-<target xml:lang="pt">&lt;x1\/&gt;!Warning&lt;x2\/&gt;
+<target xml:lang="pt"><x id="1"/>!Warning<x id="2"/>
 Esta seção está fora de data. Por enquanto, você só deve usá-lo para referência.</target>
 </trans-unit>
 <trans-unit id="tu3" xml:space="preserve">
@@ -54,7 +54,7 @@ Esta seção está fora de data. Por enquanto, você só deve usá-lo para refer
 <trans-unit id="tu13" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>!Note<x id="2"/>
 Creating currently requires some manual steps (i.e. editing <g id="3">sdpkg</g> by hand).</source>
-<target xml:lang="pt">&lt;x1\/&gt;!Note&lt;x2\/&gt;
+<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
 Criar atualmente requer alguns passos manuais (isto é, edição <g id="3">sdpkg</g> à mão).</target>
 </trans-unit>
 <trans-unit id="tu14" xml:space="preserve">
@@ -117,15 +117,15 @@ Criar atualmente requer alguns passos manuais (isto é, edição <g id="3">sdpkg
         - MyTag4
     -PathSelector
       Caminhos:
-        - pasta1\/
-        - \/folder2\/
+        - pasta1/
+        - /folder2/
         - *
-        - pasta3\/*.xml
+        - pasta3/*.xml
 </target>
 </trans-unit>
 <trans-unit id="tu20" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>!Note<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt;!Note&lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/>!Note<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu21" xml:space="preserve">
 <source xml:lang="en">Asset dependencies are automatically placed in the most appropriate bundle.</source>
@@ -178,10 +178,10 @@ Assets.DatabaseFileProvider.ObjectDatabase.LoadBundle("MyBundleName2");
 // Load specified asset
 var texture = Assets.Load&lt;Texture2D&gt;("AssetContainedInMyBundleName2");
 </source>
-<target xml:lang="pt">\/\/ Pacote de carga
+<target xml:lang="pt">// Pacote de carga
 Assets.DatabaseFileProvider.ObjectDatabase.LoadBundle("MyBundleName2");
  
-\/\/ Carga de ativos especificados
+// Carga de ativos especificados
 var texture = Assets.Load&lt;Texture2D&gt;("AssetContainedInMyBundleName2");
 </target>
 </trans-unit>

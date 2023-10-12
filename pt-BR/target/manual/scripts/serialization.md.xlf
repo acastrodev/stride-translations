@@ -8,8 +8,8 @@
 <trans-unit id="tu2" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Beginner<x id="2"/>
 <x id="3"/>Programmer<x id="4"/></source>
-<target xml:lang="pt">&lt;x1\/&gt;Introdução&lt;x2\/&gt;
-&lt;x3\/&gt;Programação&lt;x4\/&gt;</target>
+<target xml:lang="pt"><x id="1"/>Introdução<x id="2"/>
+<x id="3"/>Programação<x id="4"/></target>
 </trans-unit>
 <trans-unit id="tu3" xml:space="preserve">
 <source xml:lang="en">The editor and serialization system uses four attributes to determine what is serialized and visible in the editor.</source>
@@ -44,7 +44,7 @@ classe pública MySerializedClass
     público flutuar MyValue;
 }
 
-\/\/ 'DataContract' é herdado acima. Você não precisa especificá-lo para uma classe derivada.
+// 'DataContract' é herdado acima. Você não precisa especificá-lo para uma classe derivada.
 classe pública MyDerivedSerialized Classe : Medida de Medição
 (
     public string MyName;
@@ -56,7 +56,7 @@ classe pública MyDerivedSerialized Classe : Medida de Medição
 Your IDE may wrongfully add <g id="3">System.Runtime.Serialization</g> to your list of <g id="4">using</g> when adding <g id="5">DataContract</g>.
 They are not interchangeable.
 Make sure that your <g id="6">DataContract</g> comes from <g id="7">Stride.Core</g>, specifying the namespace explicitly like shown above if necessary.</source>
-<target xml:lang="pt">&lt;x1\/&gt;!Note&lt;x2\/&gt;
+<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
 Seu IDE pode incorretamente adicionar <g id="3">System.Runtime.Serialization</g> à sua lista de <g id="4">usando</g> ao adicionar <g id="5">DataContract</g>.
 Não são intercambiáveis.
 Certifique-se de que seu <g id="6">DataContract</g> vem de <g id="7">Stride.Core</g>, especificando o namespace explicitamente como mostrado acima se necessário.</target>
@@ -110,7 +110,7 @@ public string MyRenamedProp { get; set; }
 <trans-unit id="tu14" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>!Note<x id="2"/>
 Alias remaps values only while in the editor; this feature is specific to the YAML serialization system. Alias will be ignored during builds and at runtime.</source>
-<target xml:lang="pt">&lt;x1\/&gt;!Note&lt;x2\/&gt;
+<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
 Alias remaps valores apenas enquanto no editor; este recurso é específico para o sistema de serialização YAML. Alias será ignorado durante construções e em tempo de execução.</target>
 </trans-unit>
 <trans-unit id="tu15" xml:space="preserve">
@@ -135,7 +135,7 @@ public class MySerializedClass
 classe pública MySerializedClass
 (
     [Stride.Core.DataMemberIgnore]
-    public float MyValue { get; set; } \/\/ Esta propriedade pública não aparecerá no editor
+    public float MyValue { get; set; } // Esta propriedade pública não aparecerá no editor
 }
 </target>
 </trans-unit>
@@ -163,7 +163,7 @@ classe pública MySerializedClass
 <source xml:lang="en">Think of the serializer/editor as being a class external to your codebase, if you want the serializer to
 read and write your properties you have to ensure that the access modifiers for its getter and setter
 allows the serializer to access them.</source>
-<target xml:lang="pt">Pense no serializador\/editor como sendo uma classe externa para sua base de código, se você quiser que o serializador
+<target xml:lang="pt">Pense no serializador/editor como sendo uma classe externa para sua base de código, se você quiser que o serializador
 ler e escrever suas propriedades que você tem para garantir que os modificadores de acesso para seu getter e setter
 permite ao serializador acessá-los.</target>
 </trans-unit>
@@ -191,18 +191,18 @@ public readonly object obj;
 // Never
 private protected/private/protected object obj;
 </source>
-<target xml:lang="pt">\/\/ Ler e definir no editor por padrão
+<target xml:lang="pt">// Ler e definir no editor por padrão
 objeto público obj;
 
-\/\/ Ler e definir no editor com atributo
+// Ler e definir no editor com atributo
 [DataMember] objeto interno público obj;
 
-\/\/ Leia apenas campos não podem ser modificados para apontar para outro objeto, mas o objeto definido atualmente pode ser modificado
+// Leia apenas campos não podem ser modificados para apontar para outro objeto, mas o objeto definido atualmente pode ser modificado
 público somente objeto obj;
 [DataMember] objeto somente leitura interno obj;
 
-\/\/ Nunca
-objeto protegido\/privado\/protegido obj;
+// Nunca
+objeto protegido/privado/protegido obj;
 </target>
 </trans-unit>
 <trans-unit id="tu27" xml:space="preserve">
@@ -243,38 +243,38 @@ public object obj { get =&gt; x; internal/private protected/private/protected se
 private protected/private/protected object obj { get; set; }
 private protected/private/protected object obj { get =&gt; x; set =&gt; x; }
 </source>
-<target xml:lang="pt">\/\/ Ler e definir no editor ...
+<target xml:lang="pt">// Ler e definir no editor ...
 
-\/\/ Por padrão
+// Por padrão
 objeto público obj { get; set; }
 objeto público obj { get =&gt; x; set =&gt; x = valor; }
 
-\/\/ Forçado com o atributo para modificadores internos
-[DataMember] objeto público obj { interno get; público\/internal set; }
-[DataMember] objeto público obj { interno get =&gt; x; conjunto público \/ interno =&gt; x; }
+// Forçado com o atributo para modificadores internos
+[DataMember] objeto público obj { interno get; público/internal set; }
+[DataMember] objeto público obj { interno get =&gt; x; conjunto público / interno =&gt; x; }
 
-\/\/ Ler apenas
+// Ler apenas
 objeto público obj { get; }
 
-\/\/ Leia apenas para qualquer modificador de acesso não público
-objeto público obj { get; internal\/private protected\/private\/protected set; }
-objeto público obj { get =&gt; x; internal\/private protected\/private\/protected set =&gt; x = valor; }
+// Leia apenas para qualquer modificador de acesso não público
+objeto público obj { get; internal/private protected/private/protected set; }
+objeto público obj { get =&gt; x; internal/private protected/private/protected set =&gt; x = valor; }
 
-\/\/ Leia apenas para propriedades internas devem ser aplicadas através do atributo
+// Leia apenas para propriedades internas devem ser aplicadas através do atributo
 [DataMember] objeto interno obj { get; }
 [DataMember] objeto interno obj { get =&gt; x; }
 
-\/\/ Leia apenas, caso especial para obter apenas propriedades públicas sem campo de apoio, 
-\/\/Eles devem usar o atributo para ser deserializado, veja o comentário abaixo
+// Leia apenas, caso especial para obter apenas propriedades públicas sem campo de apoio, 
+//Eles devem usar o atributo para ser deserializado, veja o comentário abaixo
 [DataMember] objeto público obj { get =&gt; x; }
 
-\/\/ Leia apenas para modificadores de acesso mais restritiva do que interna, mesmo com o atributo
-[DataMember] objeto público obj { interno get; privado protected\/private\/protected set; }
-[DataMember] objeto público obj { interno get =&gt; x; conjunto protegido \/ privado \/ protegido =&gt; x; }
+// Leia apenas para modificadores de acesso mais restritiva do que interna, mesmo com o atributo
+[DataMember] objeto público obj { interno get; privado protected/private/protected set; }
+[DataMember] objeto público obj { interno get =&gt; x; conjunto protegido / privado / protegido =&gt; x; }
 
-\/\/ Nunca
-objeto protegido\/privado\/protegido obj { get; set; }
-objeto protegido\/privado\/protegido obj { get =&gt; x; set =&gt; x; }
+// Nunca
+objeto protegido/privado/protegido obj { get; set; }
+objeto protegido/privado/protegido obj { get =&gt; x; set =&gt; x; }
 </target>
 </trans-unit>
 <trans-unit id="tu29" xml:space="preserve">
@@ -283,7 +283,7 @@ Get-only public properties without backing field (<g id="3">public object obj { 
 they are, more often than not, shortcuts to values of another object or used purely as a function.
 It might make more sense to change it to <g id="4">{ get; } = new MyObject();</g> or <g id="5">{ get; init; }</g> if you want to serialize it,
 and if that doesn't work for you, feel free to add the attribute to enforce serialization.</source>
-<target xml:lang="pt">&lt;x1\/&gt;!Note&lt;x2\/&gt;
+<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
 Propriedades apenas públicas sem campo de apoio (<g id="3">public object obj { get =&gt; x; }</g>) não são serializadas por padrão como
 são, mais frequentemente do que não, atalhos para valores de outro objeto ou usados puramente como uma função.
 Pode fazer mais sentido mudá-lo para <g id="4">{ get; } = new MyObject();</g> or <g id="5">{ get; init; }</g> se você quiser serializá-lo,

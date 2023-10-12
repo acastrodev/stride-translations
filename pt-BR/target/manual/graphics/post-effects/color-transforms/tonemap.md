@@ -1,10 +1,10 @@
 # ToneMap
 
-**Tone-mapping** leva um buffer HDR como entrada, e refaz sua cor para um <x1\/>0, 255<x2\/> intervalo para que possamos exibi-lo em uma tela.
+**Tone-mapping** leva um buffer HDR como entrada, e refaz sua cor para um [0, 255] intervalo para que possamos exibi-lo em uma tela.
 
 Há muitas maneiras de colher cores de um espaço HDR para um LDR, dependendo da fórmula que você escolher.
 
-<x1\/>media\/tonemap-1.png<x2\/>
+![media/tonemap-1.png](media/tonemap-1.png)
 
 Stride suporta vários operadores de Tom-mapping fora da caixa:
 

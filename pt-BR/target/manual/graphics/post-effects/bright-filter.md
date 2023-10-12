@@ -1,13 +1,13 @@
 # Filtro brilhante
 
-<x1\/> Intermediário <x2\/>
-<x3\/>Artista <x4\/>
+<span class="badge text-bg-primary">Intermediário</span>
+<span class="badge text-bg-success">Artista </span>
 
 O filtro **bright** extrai as áreas mais brilhantes de uma imagem. O filtro brilhante em si não é um efeito pós, mas seu resultado é usado mais tarde por outros efeitos, como [bloom](bloom.md), [light streaks](light-streaks.md), e [lens flare](lens-flare.md).
 
 ## Propriedades
 
-<x1\/>media\/bright-filter-1.png<x2\/>
+![media/bright-filter-1.png](media/bright-filter-1.png)
 
 | Propriedade | Descrição |
 | --------- | --------- 

@@ -44,7 +44,7 @@ sudo apt-get install libsdl2-dev
 
 ### . Núcleo de NET
 
-Para obter informações sobre como instalar . NET Core, veja o [. NET Instruções principais para Debian\/Ubuntu](https://docs.microsoft.com/en-us/dotnet/core/linux-prerequisites?tabs=netcore2x).
+Para obter informações sobre como instalar . NET Core, veja o [. NET Instruções principais para Debian/Ubuntu](https://docs.microsoft.com/en-us/dotnet/core/linux-prerequisites?tabs=netcore2x).
 
 Certifique-se de que a versão 2.1.300+ e o tempo de execução 2.1+ estejam instalados. Para verificar qual versão você instalou, digite:
 

@@ -8,8 +8,8 @@
 <trans-unit id="tu2" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Beginner<x id="2"/>
 <x id="3"/>Designer<x id="4"/></source>
-<target xml:lang="pt">&lt;x1\/&gt;Introdução&lt;x2\/&gt;
-&lt;x3\/&gt;Designer&lt;x4\/&gt;</target>
+<target xml:lang="pt"><x id="1"/>Introdução<x id="2"/>
+<x id="3"/>Designer<x id="4"/></target>
 </trans-unit>
 <trans-unit id="tu3" xml:space="preserve">
 <source xml:lang="en">If you set a collider to be a <g id="1">trigger</g>, other colliders no longer bump into it. Instead, they pass through.</source>
@@ -22,7 +22,7 @@
 <trans-unit id="tu5" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>!Note<x id="2"/>
 <g id="3">Character colliders</g> can't be used as triggers.</source>
-<target xml:lang="pt">&lt;x1\/&gt;!Note&lt;x2\/&gt;
+<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
 <g id="3"> Os colistores de caracteres </g> não podem ser usados como gatilhos.</target>
 </trans-unit>
 <trans-unit id="tu6" xml:space="preserve">
@@ -39,7 +39,7 @@
 </trans-unit>
 <trans-unit id="tu9" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Select 'Is trigger'<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt;Selecionar 'é gatilho'&lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/>Selecionar 'é gatilho'<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu10" xml:space="preserve">
 <source xml:lang="en">Detect trigger collisions</source>
@@ -57,7 +57,7 @@ var otherCollider = trigger == firstCollision.ColliderA
     ? firstCollision.ColliderB
     : firstCollision.ColliderA;
 </source>
-<target xml:lang="pt">\/\/ Aguarde que uma entidade colide com o gatilho
+<target xml:lang="pt">// Aguarde que uma entidade colide com o gatilho
 var firstCollision = await trigger. NewCollision();
 
 var otherCollider = trigger == firstCollision. ColliderA
@@ -79,7 +79,7 @@ foreach (var collision in trigger.Collisions)
 <target xml:lang="pt">var trigger = Entity.Get&lt;PhysicsComponent&gt;();
 foreach (var colisão no gatilho. Colisões)
 (
-    \/\/fazer algo com a colisão
+    //fazer algo com a colisão
 }
 </target>
 </trans-unit>
@@ -110,15 +110,15 @@ gatilho. Colisões. Changed += (sender, args) =&gt;
 (
     se (args.Action == Notificar a Colecção Pendurada. Adicionar)
     (
-        \/\/nova colisão
+        //nova colisão
         var colisão = (Collision) args. Item;
-        \/\/fazer algo
+        //fazer algo
     }
     se (args.Action == NotifyCollectionChangedAction. Remover)
     (
-        \/\/ colisão antiga
+        // colisão antiga
         var colisão = (Collision)args. Item;
-        \/\/fazer algo
+        //fazer algo
     }
 };
 </target>

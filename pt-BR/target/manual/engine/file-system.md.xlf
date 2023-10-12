@@ -16,8 +16,8 @@
 <trans-unit id="tu4" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>!Note<x id="2"/>
 The path separator is / (Unix/Linux convention).</source>
-<target xml:lang="pt">&lt;x1\/&gt;!Note&lt;x2\/&gt;
-O separador de caminho é \/ (Convenção Unix\/Linux).</target>
+<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
+O separador de caminho é / (Convenção Unix/Linux).</target>
 </trans-unit>
 <trans-unit id="tu5" xml:space="preserve">
 <source xml:lang="en">Code example</source>
@@ -30,10 +30,10 @@ var gamesave1 = VirtualFileSystem.OpenStream("/roaming/gamesave001.dat", Virtual
 // Alternatively, directly access the same file through its file system provider (mount point)
 var gamesave2 = VirtualFileSystem.ApplicationRoaming.OpenStream("gamesave001.dat", VirtualFileMode.Open, VirtualFileAccess.Read);
 </source>
-<target xml:lang="pt">\/\/ Abra um arquivo através do VirtualFileSystem
-var gamesave1 = VirtualFileSystem.OpenStream("\/roaming\/gamesave001.dat", VirtualFileMode. Abrir, VirtualFileAccess.Read);
+<target xml:lang="pt">// Abra um arquivo através do VirtualFileSystem
+var gamesave1 = VirtualFileSystem.OpenStream("/roaming/gamesave001.dat", VirtualFileMode. Abrir, VirtualFileAccess.Read);
  
-\/\/ Alternativamente, acesse diretamente o mesmo arquivo através de seu provedor de sistema de arquivos (ponto de montagem)
+// Alternativamente, acesse diretamente o mesmo arquivo através de seu provedor de sistema de arquivos (ponto de montagem)
 var gamesave2 = VirtualFileSystem.ApplicationRoaming.OpenStream("gamesave001.dat", VirtualFileMode. Abrir, VirtualFileAccess.Read);
 </target>
 </trans-unit>
@@ -50,14 +50,14 @@ var gamesave2 = VirtualFileSystem.ApplicationRoaming.OpenStream("gamesave001.dat
 | local  | User application data | ✓     |  ✓    | Backup   | Output directory/local | $(Context.getFilesDir)local    | Library/local  | Local
 | cache   | Application cache   | ✓   | ✗    | DLC, etc. Might be deleted manually by user (restore, clear data, etc...)   | Output directory/cache, with do-not-back-up flags   | <g id="5">$(Context.getFilesDir)/cache</g>   | Library/caches  | LocalCache<x id="6"/>
 | tmp    | Application temporary data    | ✓        | ✗     | Might be deleted without notice by OS   | Output directory/temp, <g id="7">%TEMP%/%APPNAME%</g>   | <g id="8">$(Context.getCacheDir)</g>  | tmp | Temporary</source>
-<target xml:lang="pt">| Mount point | Descrição | Writable | Cloud | Notes | PC | Android | iOS | Windows Phone 8.1&lt;x1\/&gt;
+<target xml:lang="pt">| Mount point | Descrição | Writable | Cloud | Notes | PC | Android | iOS | Windows Phone 8.1<x id="1"/>
 | ------------- | -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-| data | Application data, deployed by package | | | | | diretório de saída\/data | APK em si | Deployed package diretório | InstalledLocation. Caminho
+| data | Application data, deployed by package | | | | | diretório de saída/data | APK em si | Deployed package diretório | InstalledLocation. Caminho
 | binário | Application binaries, implantado pelo pacote | | | | | Normalmente o mesmo que <g id="2">app_data</g> (exceto no Android) | Assembly diretório | Assembly diretório | Assembly diretório | Assembly diretório
-| roaming | User specific data (roaming) | ✓ ✓ | Backup | Output diretório\/roaming, <g id="3">%APPDATA%</g> | <g id="4">$(Context.getFilesDir)\/roaming</g> | Library\/roaming | Roaming
-| local | User application data | ✓ | ✓ | Backup | Diretório de saída\/local | $(Context.getFilesDir)local | Library\/local | Local
-| cache | Application cache | ✓ | | | DLC, etc. Pode ser excluído manualmente pelo usuário (restaurar, dados claros, etc...)   | Diretório\/cache de saída, com bandeiras não-back-up | <g id="5">$(Context.getFilesDir)\/cache</g> | Library\/caches | LocalCache&lt;x2\/&gt;
-| tmp | Aplicação dados temporários | ✓ | | | Pode ser excluído sem aviso prévio por OS | Diretório de saída\/temp, <g id="7">%TEMP%\/%APPNAME%</g> | <g id="8">$(Context.getCacheDir)</g> | tmp | Temporary</target>
+| roaming | User specific data (roaming) | ✓ ✓ | Backup | Output diretório/roaming, <g id="3">%APPDATA%</g> | <g id="4">$(Context.getFilesDir)/roaming</g> | Library/roaming | Roaming
+| local | User application data | ✓ | ✓ | Backup | Diretório de saída/local | $(Context.getFilesDir)local | Library/local | Local
+| cache | Application cache | ✓ | | | DLC, etc. Pode ser excluído manualmente pelo usuário (restaurar, dados claros, etc...)   | Diretório/cache de saída, com bandeiras não-back-up | <g id="5">$(Context.getFilesDir)/cache</g> | Library/caches | LocalCache<x id="6"/>
+| tmp | Aplicação dados temporários | ✓ | | | Pode ser excluído sem aviso prévio por OS | Diretório de saída/temp, <g id="7">%TEMP%/%APPNAME%</g> | <g id="8">$(Context.getCacheDir)</g> | tmp | Temporary</target>
 </trans-unit>
 </body>
 </file>

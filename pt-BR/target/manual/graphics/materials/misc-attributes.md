@@ -1,22 +1,22 @@
 # Atributos diversos
 
-<x1\/> Intermediário <x2\/>
-<x3\/>Artista <x4\/>
-<x5\/>Programação<x6\/>
+<span class="badge text-bg-primary">Intermediário</span>
+<span class="badge text-bg-success">Artista </span>
+<span class="badge text-bg-success">Programação</span>
 
-<x1\/> Propriedades mínimas<x2\/>
+![ Propriedades mínimas](media/misc-properties.png)
 
 ## Oclusão
 
 Sob as propriedades **Oclusão**, você pode definir um mapa de oclusão **.** Este é o atributo de oclusão padrão. O mapa de oclusão usa a informação de oclusão da geometria assada em uma textura para modular a iluminação ambiente e direta.
 
-<x1\/>media\/material-attributes-39.png<x2\/>
+![media/material-attributes-39.png](media/material-attributes-39.png)
 
 As capturas de tela abaixo demonstram o uso de mapas de oclusão e mapas da cavidade:
 
 | Mapa de Oclusão | Mapa de Cavidade | Composição final |
 | ------- | ------ | ------- 
-| <x1\/>media\/material-attributes-40.png<x2\/> | <x1\/>media\/material-attributes-41.png<x2\/> | <x1\/>media\/material-attributes-42.png<x2\/> |
+| ![media/material-attributes-40.png](media/material-attributes-40.png) | ![media/material-attributes-41.png](media/material-attributes-41.png) | ![media/material-attributes-42.png](media/material-attributes-42.png) |
 | Oclusão grosseira da luz ambiente | Oclusão fina da luz direta | Resultado |
 
 | Propriedade | Descrição |
@@ -33,46 +33,46 @@ Sob as propriedades **Transparência**, você pode especificar valores que alter
 
 ### Aditivo
 
-A transparência aditiva leva em conta o alfa difuso e difuso\/emissivo.
+A transparência aditiva leva em conta o alfa difuso e difuso/emissivo.
 
-<x1\/>media\/material-attributes-47.png<x2\/>
+![media/material-attributes-47.png](media/material-attributes-47.png)
 
 - Se a propriedade **Alpha** é inferior a 0,5, apenas os destaques especulares são visíveis. O material em si é completamente invisível.
 
    | Alfa = 0,25 | Alfa = 0,5 |
    | -------------- | -----------
-   | <x1\/>media\/material-attributes-48.png<x2\/> | <x1\/>media\/material-attributes-49.png<x2\/> |
+   | ![media/material-attributes-48.png](media/material-attributes-48.png) | ![media/material-attributes-49.png](media/material-attributes-49.png) |
    | Só vemos o destaque especular no modo aditivo | A transparência é totalmente aditiva. Destaques especulares no máximo |
 
-- Se o **Alpha** <= 1.0, o material é semi-opaco com o componente difuso\/emissivo. Se o componente difuso tiver um alfa, é transparente.
+- Se o **Alpha** <= 1.0, o material é semi-opaco com o componente difuso/emissivo. Se o componente difuso tiver um alfa, é transparente.
 
    | Alfa = 0,75 | Alfa = 1.0 |
    | -------------- | ---------------------- |
-   | <x1\/>media\/material-attributes-50.png<x2\/> | <x1\/>media\/material-attributes-51.png<x2\/> |
+   | ![media/material-attributes-50.png](media/material-attributes-50.png) | ![media/material-attributes-51.png](media/material-attributes-51.png) |
    | Destaques especulares, difuso com difuso alfa e semi-opaco | Destaques especulares, difuso com difuso alfa e opaco |
 
 | Propriedade | Descrição |
 | -------- | -----------
-| Alfa | O valor alfa é interpretado assim:<p><x1\/> Alfa <= 0,5, o material é renderizado em modo aditivo sem o componente difuso (apenas destaques especulares)</p></br> <p><x1\/>Alpha <= 1.0, o material é renderizado em modo semi-opaco com o componente difuso\/emissivo. Se o componente difuso tem um alfa, é exibido como transparente</p></br> |
+| Alfa | O valor alfa é interpretado assim:<p><br> Alfa <= 0,5, o material é renderizado em modo aditivo sem o componente difuso (apenas destaques especulares)</p></br> <p><br>Alpha <= 1.0, o material é renderizado em modo semi-opaco com o componente difuso/emissivo. Se o componente difuso tem um alfa, é exibido como transparente</p></br> |
 | Tint | Aplicar uma tonalidade de cor na camada de transparência |
 
 ### Corte
 
 Rende um material quando a cor alfa atual está acima do limiar que você especificar com o controle deslizante **Alpha**.
 
-<x1\/>media\/material-attributes-43.png<x2\/>
+![media/material-attributes-43.png](media/material-attributes-43.png)
 
 As capturas de tela a seguir mostram a influência do valor Alpha de corte.
 
 | Alfa = 0,01 | Alfa = 0,5 | Alfa = 1.0 |
 | -------------| --------------- | ------------ 
-| <x1\/>media\/material-attributes-44.png<x2\/> | <x1\/>media\/material-attributes-45.png<x2\/> | <x1\/>media\/material-attributes-46.png<x2\/> |
+| ![media/material-attributes-44.png](media/material-attributes-44.png) | ![media/material-attributes-45.png](media/material-attributes-45.png) | ![media/material-attributes-46.png](media/material-attributes-46.png) |
 
 ### Brasão clara
 
 **Clear-coat shading** usa renderização física para simular a pintura do veículo.
 
-<x1\/> Revestimento da orelha<x2\/>
+![ Revestimento da orelha](media/clear-coat-2.jpg)
 
 Para detalhes, veja [clear-coat shading](clear-coat-shading.md).
 

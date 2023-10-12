@@ -1,7 +1,7 @@
 # Câmeras
 
-<x1\/>Introdução<x2\/>
-<x3\/>Designer<x4\/>
+<span class="badge text-bg-primary">Introdução</span>
+<span class="badge text-bg-success">Designer</span>
 
 **Cameras** capturar sua cena e exibi-la ao jogador. Sem câmaras, não consegues ver nada no teu jogo.
 
@@ -11,17 +11,17 @@ Você pode ter um número ilimitado de câmeras em sua cena.
 
 No Editor de Cena, clique com o botão direito do mouse e selecione **Camera**, em seguida, escolha o tipo de câmera que você deseja criar (**perspective** ou **orthographic**).
 
-<x1\/> Adicionar câmera<x2\/>
+![ Adicionar câmera](media/add-camera.png)
 
 Game Studio cria uma entidade com um componente de câmera anexado.
 
 Alternativamente, selecione a entidade que deseja ser uma câmera e no **Property Grid**, clique em **Adicionar componente** e selecione **Camera**.
 
-<x1\/> Adicionar um componente de câmera<x2\/>
+![ Adicionar um componente de câmera](media/add-camera-component.png)
 
 ## Propriedades da câmera
 
-<x1\/> Propriedades da câmara<x2\/>
+![ Propriedades da câmara](media/camera-properties.png)
 
 | Propriedade | Descrição |
 |---------------------|--------------------------------------------------
@@ -40,11 +40,11 @@ Alternativamente, selecione a entidade que deseja ser uma câmera e no **Propert
 
 Com câmeras **ortográficos**, os objetos são sempre do mesmo tamanho, não importa sua distância da câmera. Linhas paralelas nunca tocam, e não há ponto de fuga. As câmeras ortográficos são mais usadas para jogos com perspectivas isométricas, como alguma estratégia, 4X ou jogos de RPG.
 
-<x1\/> Diagrama perspectivo e ortográfico<x2\/>
+![ Diagrama perspectivo e ortográfico](../../game-studio/media/perspective-orthographic-diagram.png)
 
 | Perspectiva | Ortodoxo |
 |--------------|------------
-| <x1\/> Visão prospectiva <x2\/> | <x1\/> Visão ortográfico<x2\/> |
+| ![ Visão prospectiva ](media/perspective-screenshot.png) | ![ Visão ortográfico](media/orthographic-screenshot.png) |
 
 ### Campo de visão (somente modoperspectivo)
 
@@ -52,7 +52,7 @@ Quando a câmera é definida para o modo **perspective**, o campo de visão ** m
 
 | Campo de visão: 45 (padrão) | Campo de visão: 90 |
 |-----------------------------|------------------
-| <x1\/> Padrão FOV<x2\/> | <x1\/> Alto FOV<x2\/> |
+| ![ Padrão FOV](media/perspective-screenshot.png) | ![ Alto FOV](media/90-degree-fov.png) |
 
 ### Tamanho ortográfico (somente modo ortográfico)
 
@@ -60,7 +60,7 @@ Quando a câmera é definida para o modo **orthographic**, o tamanho **orthograp
 
 | Tamanho ortográfico: 10 (padrão) | Tamanho ortográfico: 50 |
 |-----------------------------|------------------
-| <x1\/> Padrão FOV<x2\/> | <x1\/> Alto FOV<x2\/> |
+| ![ Padrão FOV](media/orthographic-size-10.png) | ![ Alto FOV](media/orthographic-size-50.png) |
 
 ## Aviões próximos e distantes
 
@@ -72,11 +72,11 @@ Os planos próximos e distantes determinam onde a visão da câmera começa e te
 
 Stride torna a área entre os planos próximos e distantes.
 
-<x1\/> Camera position<x2\/>
+![ Camera position](../../get-started/media/camera-position.png)
 
 | Perto do avião 0.1 (padrão); plano distante: 50 | Próximo do avião: 7; plano distante 1000 (padrão) |
 |--------------------|------------------
-| <x1\/>Avião distante: 50<x2\/> | <x1\/>Próximo do avião: 7<x2\/> |
+| ![Avião distante: 50](media/far-clip-50.png) | ![Próximo do avião: 7](media/near-clip-7.png) |
 | Com um valor baixo **far plan**, os objetos na distância próxima não são desenhados. | Com um alto valor **near plan**, os objetos próximos à câmera não são desenhados. |
 
 ## Scripts de câmera
@@ -87,13 +87,13 @@ Você pode controlar câmeras usando scripts **camera**. O Stride inclui três m
 
 1. No **Asset View** (na parte inferior por padrão), clique em **Add asset > Scripts** e escolha o script de câmera que deseja adicionar.
 
-   <x1\/> Adicionar um script de câmera<x2\/>
+   ![ Adicionar um script de câmera](media/add-camera-script.png)
 
 2. No **Scene Editor**, selecione a entidade com a câmera que deseja controlar.
 
 3. No **Property Grid** (à direita por padrão), clique em ** Adicionar componente** e selecione o script de câmera que você deseja usar.
 
-   <x1\/> Adicionar componente de script<x2\/>
+   ![ Adicionar componente de script](media/add-camera-script-component.png)
 
    Game Studio adiciona o script da câmera à entidade.
 

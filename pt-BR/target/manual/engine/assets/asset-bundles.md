@@ -1,6 +1,6 @@
 # Pacotes de ativos
 
-> <x1\/>!Warning<x2\/>
+> [!Warning]
 > Esta seção está fora de data. Por enquanto, você só deve usá-lo para referência.
 
 Um pacote de ativos permite empacotar ativos em um único arquivo que pode ser baixado no jogo em um momento específico.
@@ -18,7 +18,7 @@ Regras básicas:
 
 # Criar um pacote
 
-> <x1\/>!Note<x2\/>
+> [!Note]
 > Criar atualmente requer alguns passos manuais (isto é, edição `sdpkg` à mão).
 
 Abra o arquivo `sdprj` do executável do jogo e adicione a seguinte configuração:
@@ -49,14 +49,14 @@ Pacotes:
         - MyTag4
     -PathSelector
       Caminhos:
-        - pasta1\/
-        - \/folder2\/
+        - pasta1/
+        - /folder2/
         - *
-        - pasta3\/*.xml
+        - pasta3/*.xml
 ```
 
 
-> <x1\/>!Note<x2\/>
+> [!Note]
 >
 > As dependências de ativos são automaticamente colocadas no pacote mais apropriado.
 >
@@ -79,10 +79,10 @@ Pacotes:
 O pacote de carga é feito através de `ObjectDatabase.LoadBundle(string bundleName) (ref:{Stride.Core.Storage.ObjectDatabase.LoadBundle})`:
 
 ```cs
-\/\/ Pacote de carga
+// Pacote de carga
 Assets.DatabaseFileProvider.ObjectDatabase.LoadBundle("MyBundleName2");
  
-\/\/ Carga de ativos especificados
+// Carga de ativos especificados
 var texture = Assets.Load<Texture2D>("AssetContainedInMyBundleName2");
 ```
 

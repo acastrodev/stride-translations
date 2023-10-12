@@ -1,7 +1,7 @@
 # Pontos
 
-<x1\/>Introdução<x2\/>
-<x3\/>Programação<x4\/>
+<span class="badge text-bg-primary">Introdução</span>
+<span class="badge text-bg-success">Programação</span>
 
 **Pointers** são pontos na tela do dispositivo correspondente a **finger touches**. Dispositivos com funcionalidade multi-toque suportam vários ponteiros simultâneos.
 
@@ -19,10 +19,10 @@ Em plataformas de desktop, o botão esquerdo do mouse pode ser usado para simula
 
 5. Para cada novo dedo, Stride cria um novo ponteiro com um novo ID de ponteiro.
 
-> <x1\/>!Note<x2\/>
+> [!Note]
 > Cada evento de ponteiro contém informações sobre apenas um ponteiro. Se vários ponteiros forem modificados simultaneamente na mesma atualização, a Stride cria um evento separado para cada ponteiro.
 
-> <x1\/>!Warning<x2\/>
+> [!Warning]
 > Cada sistema operacional lida com modificações de ponteiro de forma diferente. Isso significa que o mesmo gesto de dedo pode gerar sequências de eventos de ponteiro ligeiramente diferentes em diferentes plataformas. Por exemplo, o Android não cria um novo evento de ponteiro quando um dedo toca na tela, mas não se move. Para obter mais informações, verifique sua documentação do sistema operacional.
 
 Você pode permitir o reconhecimento de gestos para detectar gestos como prensas longas e torneiras. Para mais informações, consulte [Gestures](gestures.md).
@@ -41,11 +41,11 @@ Você pode usar as seguintes propriedades para obter informações sobre o ponte
 |--------|-----------
 | [PointerEvent.PointerId](xref:Stride.Input.PointerEvent.PointerId) | Indica o ID do ponteiro que desencadeou o evento. |
 
-> <x1\/>!Warning<x2\/>
+> [!Warning]
 > O ID de um ponteiro é válido apenas durante um único _Pressed->Moved->Released_ sequência de eventos de ponteiro.
 > Um dedo pode ter diferentes IDs cada vez que toca a tela (mesmo que isso aconteça muito rapidamente).
 
-> <x1\/>!Warning<x2\/>
+> [!Warning]
 > Cada sistema operacional tem sua própria maneira de atribuir IDs aos ponteiros.
 > Não há relação entre os valores de ID do ponteiro e os dedos correspondentes.
 
@@ -70,7 +70,7 @@ Você pode obter a posição do ponteiro em coordenadas normalizadas ou absoluta
 
 [PointerEvent.AbsolutePosition](xref:Stride.Input.PointerEvent.AbsolutePosition) retorna a posição do ponteiro em coordenadas X e Y absolutas (o tamanho real da tela em pixels). Por exemplo, se o ponteiro estiver no canto superior esquerdo da tela, os valores são (0,0). Se o ponteiro estiver no canto inferior direito, os valores dependem da resolução da tela (por exemplo 1280, 720).
 
-> <x1\/>!Tip<x2\/>
+> [!Tip]
 > Para obter o tamanho real da tela, acesse [IPointerDevice. SurfaceSize](xref:Stride.Input.IPointerDevice.SurfaceSize). Por exemplo:
 > ```cs
 > superfície da vareta Tamanho = Input.Pointer.SurfaceSize;
@@ -87,7 +87,7 @@ Existem cinco tipos de evento de ponteiro:
 * **Released**: O dedo deixou a tela.
 * **Cancelado**: A sequência de ponteiro foi cancelada. Isso pode acontecer quando o aplicativo é interrompido; por exemplo, um aplicativo de telefone pode ser interrompido por uma chamada de telefone recebida.
 
-> <x1\/>!Note<x2\/>
+> [!Note]
 > Uma sequência de eventos de ponteiro para um ponteiro sempre começa com um evento **Pressed**. Isso pode ser seguido por um ou mais eventos **Moved** e sempre termina com um evento **Released** ou **Canceled**.>.
 
 ### Obter valores delta
@@ -100,7 +100,7 @@ Você pode obter a posição delta em coordenadas normalizadas ou absolutas.
 
 [PointerEvent.DeltaPosition](xref:Stride.Input.PointerEvent.DeltaPosition) recebe a mudança na posição desde o anterior @'Stride.Input.PointerEvent' em **normalized** X,Y coordena.
 
-> <x1\/>!Note<x2\/>
+> [!Note]
 > Os valores Delta são sempre nulos no início da sequência de eventos de ponteiro (ou seja, quando o **pointer estado** é **down**).
 
 ### Valores absolutos delta

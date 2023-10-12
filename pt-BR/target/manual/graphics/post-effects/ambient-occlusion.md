@@ -1,9 +1,9 @@
 # Oclusão ambiente
 
-<x1\/> Intermediário <x2\/>
-<x3\/>Artista <x4\/>
+<span class="badge text-bg-primary">Intermediário</span>
+<span class="badge text-bg-success">Artista </span>
 
-> <x1\/>!Note<x2\/>
+> [!Note]
 > Tal como acontece com outros efeitos pós de consciência profunda, permitindo a oclusão ambiente anula MSAA (multisample anti-aliasing).
 
 **Ambient occlusão** escurece áreas onde a luz é oclusiva por objetos opacos, como cantos e fendas. Você pode usá-lo para adicionar realismo sutil às cenas.
@@ -16,7 +16,7 @@
 
 ## Propriedades
 
-<x1\/>Propriedades <x2\/>
+![Propriedades ](media/ambient-occlusion-properties.png)
 
 | Propriedade | Função |
 |----------|---------

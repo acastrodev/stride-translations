@@ -1,8 +1,8 @@
 # Grupos de navegação
 
-<x1\/>Introdução<x2\/>
-<x3\/> Designer de nível <x4\/>
-<x5\/>Programação<x6\/>
+<span class="badge text-bg-primary">Introdução</span>
+<span class="badge text-bg-success"> Designer de nível </span>
+<span class="badge text-bg-success">Programação</span>
 
 ** Grupos de navegação** definem diferentes propriedades de navegação para as entidades que você adiciona a elas. Você define grupos de navegação no projeto **game settings**.
 
@@ -12,21 +12,21 @@ Você pode criar diferentes grupos de navegação para diferentes tipos de entid
 
 1. No **Solution Explorer** (o painel inferior esquerdo por padrão), selecione a pasta **Assets**.
 
-   <x1\/>Select Assets pasta asset<x2\/>
+   ![Select Assets pasta asset](media/select-asset-folder.png)
 
 2. No **Asset View** (o painel inferior por padrão), selecione o ativo **Game Settings**.
 
-   <x1\/>Selecionar configurações de jogo asset<x2\/>
+   ![Selecionar configurações de jogo asset](media/select-game-settings-asset.png)
 
 3. No **Property Grid** (o painel direito por padrão), expanda **Configurações de navegação**.
 
-   <x1\/> Configurações do jogo <x2\/>
+   ![ Configurações do jogo ](media/navigation-settings.png)
 
-4. Ao lado de **Groups**, clique em <x1\/>Green plus button<x2\/> (**Add**).
+4. Ao lado de **Groups**, clique em ![Green plus button](~/manual/game-studio/media/green-plus-icon.png) (**Add**).
 
    Game Studio adiciona um novo item à lista de grupos de navegação.
 
-   <x1\/> Propriedades do grupo de navegação<x2\/>
+   ![ Propriedades do grupo de navegação](media/navigation-group-properties.png)
 
 5. Defina as propriedades para o grupo de navegação. As entidades que você adicionar a este grupo usam essas propriedades.
 

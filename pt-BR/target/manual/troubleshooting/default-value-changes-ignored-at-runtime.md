@@ -23,5 +23,5 @@ float público SpeedFactor { get; set; } = 6.0f;
 
 Quando você alterar o valor, atualize tanto o `SpeedFactor` e o `DefaultValue` para o mesmo valor.
 
-> <x1\/>!Note<x2\/>
+> [!Note]
 > Isto não funciona em ambas as direções. Se você definir um valor diferente do `DefaultValue` no Property Grid, Game Studio salva o valor no ativo e substitui o valor padrão no tempo de execução.

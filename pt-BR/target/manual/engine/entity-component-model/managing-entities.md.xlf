@@ -19,7 +19,7 @@
 </trans-unit>
 <trans-unit id="tu5" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>media/7438984.png<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt;media\/7438984.png&lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/>media/7438984.png<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu6" xml:space="preserve">
 <source xml:lang="en">User will add component-based entities into an entity manager.</source>
@@ -27,7 +27,7 @@
 </trans-unit>
 <trans-unit id="tu7" xml:space="preserve">
 <source xml:lang="en">Engine or user registers entity processors that can process specific entities and/or components.</source>
-<target xml:lang="pt">Motor ou usuário registra processadores de entidades que podem processar entidades e\/ou componentes específicos.</target>
+<target xml:lang="pt">Motor ou usuário registra processadores de entidades que podem processar entidades e/ou componentes específicos.</target>
 </trans-unit>
 <trans-unit id="tu8" xml:space="preserve">
 <source xml:lang="en">Entity Processor</source>
@@ -35,7 +35,7 @@
 </trans-unit>
 <trans-unit id="tu9" xml:space="preserve">
 <source xml:lang="en">To solve this problem, the concept of Entity Processor has been added. An Entity Processor will access Entities that matches specific requirements (i.e. process all entities with MeshComponent) and process all of them in a single update function. This allows for greater efficiency and cache-friendliness, as there is no need to check every entity/components many times per frame.</source>
-<target xml:lang="pt">Para resolver este problema, o conceito de Processador de Entidade foi adicionado. Um Processador de Entidade acessará Entidades que correspondem a requisitos específicos (ou seja, processar todas as entidades com o MeshComponent) e processará todas elas em uma única função de atualização. Isso permite maior eficiência e facilidade de cache, pois não há necessidade de verificar cada entidade \/ componentes muitas vezes por quadro.</target>
+<target xml:lang="pt">Para resolver este problema, o conceito de Processador de Entidade foi adicionado. Um Processador de Entidade acessará Entidades que correspondem a requisitos específicos (ou seja, processar todas as entidades com o MeshComponent) e processará todas elas em uma única função de atualização. Isso permite maior eficiência e facilidade de cache, pois não há necessidade de verificar cada entidade / componentes muitas vezes por quadro.</target>
 </trans-unit>
 <trans-unit id="tu10" xml:space="preserve">
 <source xml:lang="en">This approach also solves many update order dependencies issues (just need to order the entity processors updates properly).</source>
@@ -80,11 +80,11 @@ foreach (var entity in engine.EntityManager.Entities)
 	Console.WriteLine(entity.Name);
 }
 </source>
-<target xml:lang="pt">\/\/ Adicionar uma entidade:
+<target xml:lang="pt">// Adicionar uma entidade:
 var myEntity = novo Entity();
 motor. EntityManager.AddEntity (myEntity);
  
-\/\/ Iterar através de entidades adicionadas:
+// Iterar através de entidades adicionadas:
 foreach (entidade naval no motor. EntityManager.Entities)
 (
 	Console.WriteLine (entidade.Nome);

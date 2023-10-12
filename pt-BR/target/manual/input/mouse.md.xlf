@@ -8,8 +8,8 @@
 <trans-unit id="tu2" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Beginner<x id="2"/>
 <x id="3"/>Programmer<x id="4"/></source>
-<target xml:lang="pt">&lt;x1\/&gt;Introdução&lt;x2\/&gt;
-&lt;x3\/&gt;Programação&lt;x4\/&gt;</target>
+<target xml:lang="pt"><x id="1"/>Introdução<x id="2"/>
+<x id="3"/>Programação<x id="4"/></target>
 </trans-unit>
 <trans-unit id="tu3" xml:space="preserve">
 <source xml:lang="en">The <g id="1">mouse</g> is a common input device for desktop games.</source>
@@ -116,7 +116,7 @@ Para mais informações, consulte <g id="2">Pointers</g>.</target>
 <trans-unit id="tu28" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>!Tip<x id="2"/>
 To get the actual size of the screen, access <g id="3">IPointerDevice.SurfaceSize</g>. For example:</source>
-<target xml:lang="pt">&lt;x1\/&gt;!Tip&lt;x2\/&gt;
+<target xml:lang="pt"><x id="1"/>!Tip<x id="2"/>
 Para obter o tamanho real da tela, acesse <g id="3">IPointerDevice. SurfaceSize</g>. Por exemplo:</target>
 </trans-unit>
 <trans-unit id="tu29" xml:space="preserve">
@@ -260,7 +260,7 @@ Para obter o tamanho real da tela, acesse <g id="3">IPointerDevice. SurfaceSize<
 <trans-unit id="tu63" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>!Tip<x id="2"/>
 You can get or set mouse visibility with <g id="3">GameWindow.IsMouseVisible</g>.</source>
-<target xml:lang="pt">&lt;x1\/&gt;!Tip&lt;x2\/&gt;
+<target xml:lang="pt"><x id="1"/>!Tip<x id="2"/>
 Você pode obter ou definir a visibilidade do mouse com <g id="3">GameWindow.IsMouseVisible</g>.</target>
 </trans-unit>
 <trans-unit id="tu64" xml:space="preserve">
@@ -293,16 +293,16 @@ Você pode obter ou definir a visibilidade do mouse com <g id="3">GameWindow.IsM
 (
 	atualização()
 	(
-		\/\/Se o botão esquerdo do mouse for pressionado nesta atualização, faça alguma coisa.
+		//Se o botão esquerdo do mouse for pressionado nesta atualização, faça alguma coisa.
 		se (Input.IsMouseButtonDown (MouseButton.Left))
 		(   
 		}
-		\/\/Se o botão do meio do mouse foi pressionado desde a última atualização, faça alguma coisa.
+		//Se o botão do meio do mouse foi pressionado desde a última atualização, faça alguma coisa.
 		se (Input.IsMouseButtonPressed (MouseButton.Middle))
 		(  
 		}
 
-		\/\/Se o mouse moveu mais de 0,2 unidades do tamanho da tela na direção X, faça algo.
+		//Se o mouse moveu mais de 0,2 unidades do tamanho da tela na direção X, faça algo.
 		se (Input.MouseDelta.X &gt; 0,2f)
 		(
 		}

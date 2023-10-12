@@ -8,8 +8,8 @@
 <trans-unit id="tu2" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Advanced<x id="2"/>
 <x id="3"/>Programmer<x id="4"/></source>
-<target xml:lang="pt">&lt;x1\/&gt;Avançado&lt;x2\/&gt;
-&lt;x3\/&gt;Programação&lt;x4\/&gt;</target>
+<target xml:lang="pt"><x id="1"/>Avançado<x id="2"/>
+<x id="3"/>Programação<x id="4"/></target>
 </trans-unit>
 <trans-unit id="tu3" xml:space="preserve">
 <source xml:lang="en">If you're developing for multiple platforms, you often need to write custom code for each platform. In most cases, the best way to do this is to use <g id="1">Platform.Type</g> and <g id="2">GraphicsDevice.Platform</g>. Alternatively, you can use <g id="3">preprocessor variables</g>.</source>
@@ -18,7 +18,7 @@
 <trans-unit id="tu4" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>!Warning<x id="2"/>
 We recommend you avoid using preprocessor variables where possible, and instead use <g id="3">Platform.Type</g> and <g id="4">GraphicsDevice.Platform</g>. This is because you might miss errors in your code, as only code for your target platform is checked at compile time.</source>
-<target xml:lang="pt">&lt;x1\/&gt;!Warning&lt;x2\/&gt;
+<target xml:lang="pt"><x id="1"/>!Warning<x id="2"/>
 Recomendamos que você evite usar variáveis de pré-processador sempre que possível, e em vez disso use <g id="3">Platform.Type</g> e <g id="4">GraphicsDevice.Platform</g>. Isso é porque você pode perder erros em seu código, pois apenas o código para sua plataforma de destino é verificado no tempo de compilação.</target>
 </trans-unit>
 <trans-unit id="tu5" xml:space="preserve">
@@ -160,13 +160,13 @@ Recomendamos que você evite usar variáveis de pré-processador sempre que poss
 </source>
 <target xml:lang="pt">
 #if STRIDE_PLATFORM_WINDOWS
-    \/\/ Código específico do Windows vai aqui...
+    // Código específico do Windows vai aqui...
 
 #elif STRIDE_PLATFORM_MONO_MOBILE
-    \/\/ iOS e Android código específico vai aqui...
+    // iOS e Android código específico vai aqui...
 
 #else
-    \/\/ Outro código de plataforma vai aqui...
+    // Outro código de plataforma vai aqui...
 
 #endif
 </target>

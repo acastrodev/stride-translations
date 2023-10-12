@@ -1,11 +1,11 @@
 # SpriteFonte
 
-<x1\/>Avançado<x2\/>
-<x3\/>Programação<x4\/>
+<span class="badge text-bg-primary">Avançado</span>
+<span class="badge text-bg-success">Programação</span>
 
 A classe @'Stride.Graphics.SpriteFont' é uma maneira conveniente de desenhar texto. Ele funciona com a classe @'Stride.Graphics.SpriteBatch'.
 
-> <x1\/>!Note<x2\/>
+> [!Note]
 > Você precisa colocar todo o código personalizado em um renderizador de cena [Custom](../graphics-compositor/custom-scene-renderers.md) para incluí-lo na composição.
 
 ## Carregar um sprite Fonte
@@ -25,16 +25,16 @@ Uma vez que a fonte é carregada, você pode exibir qualquer texto com um @'Stri
 ** Código:** Escreva texto
 
 ```cs
-\/\/ criar o SpriteBatch
+// criar o SpriteBatch
 var spriteBatch = novo SpriteBatch (GraphicsDevice);
 
-\/\/ não se esqueça do início
+// não se esqueça do início
 spriteBatch.Begin (GraphicsContext);
  
-\/\/ desenhar o texto "Helloworld!" em vermelho do centro da tela
+// desenhar o texto "Helloworld!" em vermelho do centro da tela
 spriteBatch.DrawString (myFont, "Helloworld!", novo Vector2(0.5, 0.5), Color.Red);
  
-\/\/ não se esqueça do fim
+// não se esqueça do fim
 spriteBatch.End();
 ```
 
@@ -48,7 +48,7 @@ As várias sobrecargas permitem especificar a orientação do texto, escala, pro
 ** Código:** Desenho de texto avançado
 
 ```cs
-\/\/ desenhar o texto "Hello world!" upside-down em vermelho do centro da tela
+// desenhar o texto "Hello world!" upside-down em vermelho do centro da tela
 spriteBatch.DrawString (myFont, "Olá, mundo!", novo Vector2(0.5, 0.5), Color.Red, 0, novo Vector2(0, 0), novo Vector2(1,1), SpriteEffects. FlipVertically, 0);
 ```
 

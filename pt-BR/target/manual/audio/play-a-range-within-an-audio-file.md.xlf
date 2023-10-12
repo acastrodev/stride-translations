@@ -8,8 +8,8 @@
 <trans-unit id="tu2" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Intermediate<x id="2"/>
 <x id="3"/>Programmer<x id="4"/></source>
-<target xml:lang="pt">&lt;x1\/&gt; Intermediário &lt;x2\/&gt;
-&lt;x3\/&gt;Programação&lt;x4\/&gt;</target>
+<target xml:lang="pt"><x id="1"/>Intermediário<x id="2"/>
+<x id="3"/>Programação<x id="4"/></target>
 </trans-unit>
 <trans-unit id="tu3" xml:space="preserve">
 <source xml:lang="en">You can have Stride play only certain portions of an audio asset. This means, for example, that you can create multiple samples from a single audio asset by specifying different ranges in different <g id="1">SoundInstance</g> objects.</source>
@@ -17,7 +17,7 @@
 </trans-unit>
 <trans-unit id="tu4" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Loop points<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt;Loop pontos&lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/>Loop pontos<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu5" xml:space="preserve">
 <source xml:lang="en">You can use the following properties, methods, and structures:</source>
@@ -74,7 +74,7 @@ var begin = TimeSpan.FromSeconds(2);
 var duration = TimeSpan.FromSeconds(2);
 mySoundInstance.SetRange(new PlayRange(begin, duration));
 </source>
-<target xml:lang="pt">O comprimento da amostra \/\/Assume é de 5 segundos.
+<target xml:lang="pt">O comprimento da amostra //Assume é de 5 segundos.
 comprimento var = mySound.TotalLength;
 var begin = TimeSpan.FromSeconds(2);
 var Duração = TimeSpan.FromSeconds(2);

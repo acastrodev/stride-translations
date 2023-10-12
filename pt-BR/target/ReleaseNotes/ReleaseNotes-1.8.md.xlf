@@ -31,7 +31,7 @@
 </trans-unit>
 <trans-unit id="tu8" xml:space="preserve">
 <source xml:lang="en"><g id="1"><x id="2"/>UI Editor<x id="3"/></g>UI Editor<ex id="4"/></source>
-<target xml:lang="pt"><g id="1">&lt;x1\/&gt;UI Editor&lt;x2\/&gt;</g>UI Editor&lt;ex1\/&gt;</target>
+<target xml:lang="pt"><g id="1"><x id="2"/>UI Editor<x id="3"/></g>UI Editor<ex id="4"/></target>
 </trans-unit>
 <trans-unit id="tu9" xml:space="preserve">
 <source xml:lang="en">The UI editor provides a full WYSIWYG experience. You can author the whole visual tree of your UI, edit the properties of each UI element (such as layout, background color, etc.) and preview its rendering.</source>
@@ -71,7 +71,7 @@
 </trans-unit>
 <trans-unit id="tu18" xml:space="preserve">
 <source xml:lang="en"><g id="1"><x id="2"/>Multithreading demo<x id="3"/></g>Multithreading demo<ex id="4"/></source>
-<target xml:lang="pt"><g id="1">&lt;x1\/&gt;Multithreading demo&lt;x2\/&gt;</g>Moltithread demo&lt;ex1\/&gt;</target>
+<target xml:lang="pt"><g id="1"><x id="2"/>Multithreading demo<x id="3"/></g>Moltithread demo<ex id="4"/></target>
 </trans-unit>
 <trans-unit id="tu19" xml:space="preserve">
 <source xml:lang="en">Parallelized code includes many <g id="1">EntityProcessors</g> and almost every part of our recently rewritten <g id="2">rendering pipeline</g>. On <g id="3">Vulkan</g> and <g id="4">Direct3D12</g> this includes also recording of drawing command lists, giving them an edge over the other APIs.</source>
@@ -79,7 +79,7 @@
 </trans-unit>
 <trans-unit id="tu20" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Multithreading<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt;Multithread &lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/>Multithread <x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu21" xml:space="preserve">
 <source xml:lang="en">Developers can find classes and utilities for concurrent programming in the <g id="1">SiliconStudio.Core.Threading</g> namespace, e.g. <g id="2">Dispatcher.For()</g>, which resemble the Task Parallel Library, but are more lightweight and tailored for work performed every frame in a game's update loop.</source>
@@ -121,7 +121,7 @@ Certifique-se de que o prefab base está apenas contendo entidades estáticas co
 </trans-unit>
 <trans-unit id="tu30" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>SAO comparison shots<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt;SAO comparação tiros&lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/>SAO comparação tiros<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu31" xml:space="preserve">
 <source xml:lang="en">It is currently part of the post-effect pipeline, but will later move to the lighting pipeline for more realistic rendering.</source>
@@ -137,7 +137,7 @@ Certifique-se de que o prefab base está apenas contendo entidades estáticas co
 </trans-unit>
 <trans-unit id="tu34" xml:space="preserve">
 <source xml:lang="en"><g id="1"><x id="2"/>Cel Shading<x id="3"/></g>Cel Shading<ex id="4"/></source>
-<target xml:lang="pt"><g id="1">&lt;x1\/&gt;Cel Shading&lt;x2\/&gt;</g>Cel Shading&lt;ex1\/&gt;</target>
+<target xml:lang="pt"><g id="1"><x id="2"/>Cel Shading<x id="3"/></g>Cel Shading<ex id="4"/></target>
 </trans-unit>
 <trans-unit id="tu35" xml:space="preserve">
 <source xml:lang="en">How To Upgrade</source>
@@ -165,12 +165,12 @@ component.Page = new UIPage
     RootElement = grid
 };
 </source>
-<target xml:lang="pt">\/\/ código anterior (não compilar)
+<target xml:lang="pt">// código anterior (não compilar)
 var grid = novo Grid();
 var component = Entity.Get&lt;UIComponent&gt;();
 componente. RootElement = grade;
 
-\/\/ novo código
+// novo código
 var grid = novo Grid();
 var component = Entity.Get&lt;UIComponent&gt;();
 componente. Página = nova UIPage
@@ -201,11 +201,11 @@ var canvas = novo Canvas();
 lona.Crianças.Adicionar (texto);
 
 var position = novo Vector3(0.0f, 1.0f, 0,0f);
-\/\/ anteriormente definir esta propriedade anexada também irá definir Canvas. UsoPosições Absolutas Propriedade Chave para false automaticamente
+// anteriormente definir esta propriedade anexada também irá definir Canvas. UsoPosições Absolutas Propriedade Chave para false automaticamente
 text.DependencyProperties.Set(Canvas.PositionRelativePropertyKey, position);
-\/\/ agora você precisa configurá-lo explicitamente
+// agora você precisa configurá-lo explicitamente
 text.DependencyProperties.Set (Canvas.UseAbsolutePosition PropertyKey, false);
-\/\/ note que usar métodos de extensão é a maneira recomendada, e faz tudo isso de uma forma mais concisa:
+// note que usar métodos de extensão é a maneira recomendada, e faz tudo isso de uma forma mais concisa:
 text.SetCanvasRelativePosition(position);
 </target>
 </trans-unit>
@@ -219,7 +219,7 @@ text.SetCanvasRelativePosition(position);
 </trans-unit>
 <trans-unit id="tu43" xml:space="preserve">
 <source xml:lang="en">Release date: 2016/08/31</source>
-<target xml:lang="pt">Data de lançamento: 2016\/08\/31</target>
+<target xml:lang="pt">Data de lançamento: 2016/08/31</target>
 </trans-unit>
 <trans-unit id="tu44" xml:space="preserve">
 <source xml:lang="en">Enhancements</source>
@@ -299,7 +299,7 @@ text.SetCanvasRelativePosition(position);
 </trans-unit>
 <trans-unit id="tu63" xml:space="preserve">
 <source xml:lang="en">Constant Buffers are now uploaded in a single GPU Buffer and set with offsets on platform/API that support this mode</source>
-<target xml:lang="pt">Os buffers constantes agora são carregados em um único buffer de GPU e definidos com deslocamentos na plataforma\/API que suportam este modo</target>
+<target xml:lang="pt">Os buffers constantes agora são carregados em um único buffer de GPU e definidos com deslocamentos na plataforma/API que suportam este modo</target>
 </trans-unit>
 <trans-unit id="tu64" xml:space="preserve">
 <source xml:lang="en">D3D12: reduced number of API calls</source>
@@ -443,7 +443,7 @@ text.SetCanvasRelativePosition(position);
 </trans-unit>
 <trans-unit id="tu99" xml:space="preserve">
 <source xml:lang="en">Release date: 2016/09/09</source>
-<target xml:lang="pt">Data de lançamento: 2016\/09\/2009</target>
+<target xml:lang="pt">Data de lançamento: 2016/09/2009</target>
 </trans-unit>
 <trans-unit id="tu100" xml:space="preserve">
 <source xml:lang="en">Enhancements</source>
@@ -527,7 +527,7 @@ text.SetCanvasRelativePosition(position);
 </trans-unit>
 <trans-unit id="tu120" xml:space="preserve">
 <source xml:lang="en">Release date: 2016/09/21</source>
-<target xml:lang="pt">Data de lançamento: 2016\/09\/21</target>
+<target xml:lang="pt">Data de lançamento: 2016/09/21</target>
 </trans-unit>
 <trans-unit id="tu121" xml:space="preserve">
 <source xml:lang="en">Enhancements</source>
@@ -543,7 +543,7 @@ text.SetCanvasRelativePosition(position);
 </trans-unit>
 <trans-unit id="tu124" xml:space="preserve">
 <source xml:lang="en">Auto adjust alignment property when moving to left/right (resp. top/bottom) edge of the parent container.</source>
-<target xml:lang="pt">Ajuste automaticamente a propriedade de alinhamento ao mover-se para a borda esquerda\/direita (resp. top\/bottom) do recipiente pai.</target>
+<target xml:lang="pt">Ajuste automaticamente a propriedade de alinhamento ao mover-se para a borda esquerda/direita (resp. top/bottom) do recipiente pai.</target>
 </trans-unit>
 <trans-unit id="tu125" xml:space="preserve">
 <source xml:lang="en">The single root of a UI page can be removed and a new one can be added instead.</source>
@@ -599,7 +599,7 @@ text.SetCanvasRelativePosition(position);
 </trans-unit>
 <trans-unit id="tu138" xml:space="preserve">
 <source xml:lang="en">Release date: 2016/10/07</source>
-<target xml:lang="pt">Data de lançamento: 2016\/10\/07</target>
+<target xml:lang="pt">Data de lançamento: 2016/10/07</target>
 </trans-unit>
 <trans-unit id="tu139" xml:space="preserve">
 <source xml:lang="en">Enhancements</source>
@@ -679,7 +679,7 @@ text.SetCanvasRelativePosition(position);
 </trans-unit>
 <trans-unit id="tu158" xml:space="preserve">
 <source xml:lang="en">Fix debug shape rendering of enabled/disabled entities.</source>
-<target xml:lang="pt">Corrigir renderização de forma de depuração de entidades habilitadas\/desativadas.</target>
+<target xml:lang="pt">Corrigir renderização de forma de depuração de entidades habilitadas/desativadas.</target>
 </trans-unit>
 <trans-unit id="tu159" xml:space="preserve">
 <source xml:lang="en">Fix issues with Jumping</source>

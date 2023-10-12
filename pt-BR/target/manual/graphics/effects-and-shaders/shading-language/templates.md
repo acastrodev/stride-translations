@@ -27,7 +27,7 @@ shader TemplateShader<float speed, Texture2D myTexture, SamplerState mySampler, 
 	}
 };
  
-\/\/ Para instanciar o shader, use:
+// Para instanciar o shader, use:
 TemplateShader<1.0f, Texturing.Texture0, Texturing.Sampler0, TEXCOORD0, MyColorLink>
 ```
 
@@ -37,4 +37,4 @@ TemplateShader<1.0f, Texturing.Texture0, Texturing.Sampler0, TEXCOORD0, MyColorL
 * [Índice de linguagem de sombra](index.md)
    - [Shader classes, misturas e herança](shader-classes-mixins-and-inheritance.md)
    - [Composição](composition.md)
-   - [Shader fase de entrada \/ saída gestão automática](automatic-shader-stage-input-output.md)
+   - [Shader fase de entrada / saída gestão automática](automatic-shader-stage-input-output.md)

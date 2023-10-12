@@ -1,11 +1,11 @@
 # Variáveis de pré-processamento
 
-<x1\/>Avançado<x2\/>
-<x3\/>Programação<x4\/>
+<span class="badge text-bg-primary">Avançado</span>
+<span class="badge text-bg-success">Programação</span>
 
 Se você está desenvolvendo para várias plataformas, muitas vezes você precisa escrever código personalizado para cada plataforma. Na maioria dos casos, a melhor maneira de fazer isso é usar [Platform.Type](xref:Stride.Core.Platform.Type) e [GraphicsDevice.Platform](xref:Stride.Graphics.GraphicsDevice.Platform). Alternativamente, você pode usar variáveis **preprocessor**.
 
-> <x1\/>!Warning<x2\/>
+> [!Warning]
 > Recomendamos que você evite usar variáveis de pré-processador sempre que possível, e em vez disso use [Platform.Type](xref:Stride.Core.Platform.Type) e [GraphicsDevice.Platform](xref:Stride.Graphics.GraphicsDevice.Platform). Isso é porque você pode perder erros em seu código, pois apenas o código para sua plataforma de destino é verificado no tempo de compilação.
 
 ## Plataformas
@@ -35,13 +35,13 @@ Se você está desenvolvendo para várias plataformas, muitas vezes você precis
 ```cs
 
 #if STRIDE_PLATFORM_WINDOWS
-    \/\/ Código específico do Windows vai aqui...
+    // Código específico do Windows vai aqui...
 
 #elif STRIDE_PLATFORM_MONO_MOBILE
-    \/\/ iOS e Android código específico vai aqui...
+    // iOS e Android código específico vai aqui...
 
 #else
-    \/\/ Outro código de plataforma vai aqui...
+    // Outro código de plataforma vai aqui...
 
 #endif
 ```

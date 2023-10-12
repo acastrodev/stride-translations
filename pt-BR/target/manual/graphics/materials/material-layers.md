@@ -1,24 +1,24 @@
 # Camadas de material
 
-<x1\/> Intermediário <x2\/>
-<x3\/>Artista <x4\/>
-<x5\/>Programação<x6\/>
+<span class="badge text-bg-primary">Intermediário</span>
+<span class="badge text-bg-success">Artista </span>
+<span class="badge text-bg-success">Programação</span>
 
 Você pode combinar camadas de materiais para construir materiais mais complexos. Por exemplo, esta captura de tela mostra a mistura de um material de ferrugem (esquerda) com um material de ouro (direita):
 
-<x1\/>media\/material-layers-2.png<x2\/>
+![media/material-layers-2.png](media/material-layers-2.png)
 
 Este diagrama mostra a definição dos materiais misturados na captura de tela acima:
 
-<x1\/>media\/material-layers-3.png<x2\/>
+![media/material-layers-3.png](media/material-layers-3.png)
 
 ## Mapas de mistura
 
 **Blend maps** são [material maps](material-maps.md) que determinam como Game Studio mistura camadas. Por exemplo, você pode usar uma textura como um mapa de mistura:
 
-<x1\/> Diagrama de mapas ampliados<x2\/>
+![ Diagrama de mapas ampliados](media/blend-map-diagram.png)
 
-<x1\/> Diagrama de mapas ampliados<x2\/>
+![ Diagrama de mapas ampliados](media/blend-map-diagram2.png)
 
 Note como a textura do mapa de mistura corresponde à modelagem no resultado.
 
@@ -36,29 +36,29 @@ Se os materiais têm modelos de sombreamento **diferente**, a Stride aplica os m
 
 1. Selecione o material que deseja adicionar uma camada.
 
-2. No **Property Grid** (à direita por padrão), ao lado de **Layers**, clique em <x1\/>Green plus button<x2\/> (**Add**).
+2. No **Property Grid** (à direita por padrão), ao lado de **Layers**, clique em ![Green plus button](~/manual/game-studio/media/green-plus-icon.png) (**Add**).
 
-   <x1\/> Adicionar uma camada<x2\/>
+   ![ Adicionar uma camada](media/add-a-layer.png)
 
    Game Studio adiciona uma camada ao material.
 
-   <x1\/>Tipo de umidade <x2\/>
+   ![Tipo de umidade ](media/empty-layer.png)
 
-3. Ao lado da camada, clique em <x1\/>Hand icon<x2\/> (**Select an asset**).
+3. Ao lado da camada, clique em ![Hand icon](~/manual/game-studio/media/hand-icon.png) (**Select an asset**).
 
    A janela **Selecione um ativo** abre.
 
-   <x1\/> Selecione um ativo<x2\/>
+   ![ Selecione um ativo](media/material-asset-picker.png)
 
 4. Especifique um material que deseja adicionar como uma camada e clique em **OK**.
 
    Game Studio adiciona o material como uma camada.
 
-   <x1\/> camada adicionada <x2\/>
+   ![ camada adicionada ](media/added-layer.png)
 
-5. Próximo a **Blend Map**, clique em <x1\/> Botão de seta azul<x2\/> (** Substituir**) e selecione o tipo de mapa de mistura que você deseja usar para misturar as camadas. Para obter mais informações sobre mapas de mistura, consulte [Mapas importantes](material-maps.md).
+5. Próximo a **Blend Map**, clique em ![ Botão de seta azul](~/manual/game-studio/media/blue-arrow-icon.png) (** Substituir**) e selecione o tipo de mapa de mistura que você deseja usar para misturar as camadas. Para obter mais informações sobre mapas de mistura, consulte [Mapas importantes](material-maps.md).
 
-   <x1\/>Selecionar mapa de mistura<x2\/>
+   ![Selecionar mapa de mistura](media/select-blend-map.png)
 
 Game Studio combina as camadas de material usando o mapa de mistura que você especificou. Você pode adicionar tantas camadas como você precisa.
 

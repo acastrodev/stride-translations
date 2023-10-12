@@ -1,40 +1,40 @@
 # Lançador de Stride
 
-<x1\/>Introdução<x2\/>
+<span class="badge text-bg-primary">Introdução</span>
 
 Com o **Stride launcher**, você pode instalar, gerenciar e executar diferentes versões do Stride.
 
-<x1\/>Stride launcher<x2\/>
+![Stride launcher](media/stride-launcher-interface.png)
 
 ## Instale a versão Stride mais recente
 
 Se você não tiver o Stride instalado, o Stride Launcher solicita que você instale a versão mais recente.
 
-<x1\/> Nenhuma versão instalada <x2\/>
+![ Nenhuma versão instalada ](../get-started/media/stride-launcher-install-last-version.png)
 
-Você pode instalar outras versões do Stride na seção **Switch\/update version** (**B**). Para fazer isso, clique no **install** ícone ao lado da versão na lista.
+Você pode instalar outras versões do Stride na seção **Switch/update version** (**B**). Para fazer isso, clique no **install** ícone ao lado da versão na lista.
 
 ## Instale a extensão Stride Visual Studio
 
 Se você optar por instalar a versão mais recente do Stride, o Stride Launcher pergunta se você deseja instalar a extensão Visual Studio.
 
-<x1\/>Install Visual Studio integration<x2\/>
+![Install Visual Studio integration](../get-started/media/install-VS-plug-in-prompt.png)
 
 A extensão do Visual Studio permite editar shaders diretamente do Visual Studio, e fornece destaque sintaxe, análise de código ao vivo com validação, verificação de erros e navegação (salvo para definição). Instalar a extensão não é obrigatório, mas recomendamos.
 
 Para instalar ou reinstalar a extensão do Visual Studio a qualquer momento, clique no botão **Reinstall** no Stride Launcher.
 
-<x1\/> Extensão visual do estúdio<x2\/>
+![ Extensão visual do estúdio](media/stride-launcher-visual-studio-plugin.png)
 
 ## Alternar a versão Stride
 
-Para escolher qual versão do Stride é executada, selecione-a na lista abaixo de **Switch\/update version**.
+Para escolher qual versão do Stride é executada, selecione-a na lista abaixo de **Switch/update version**.
 
 ## Gerenciar diferentes versões de Stride
 
-Você pode instalar e desinstalar várias versões do Stride da seção **Switch\/update version**.
+Você pode instalar e desinstalar várias versões do Stride da seção **Switch/update version**.
 
-<x1\/> Gerenciar versões de Stride<x2\/>
+![ Gerenciar versões de Stride](../get-started/media/stride-launcher-various-versions.png)
 
 Você pode precisar usar uma versão mais antiga do Stride para trabalhar com projetos antigos. As versões mais recentes do Stride podem conter alterações que exigem que projetos antigos sejam atualizados.
 
@@ -47,22 +47,22 @@ As principais atualizações adicionam mudanças significativas, e você pode pr
 * Para instalar uma versão em particular, clique no **Baixe e instale** ícone ao lado do
    nome da versão (**D**).
 
-> <x1\/>!Note<x2\/>
+> [!Note]
 > Você não pode reverter para versões menores anteriores. Por exemplo, você pode instalar ambos Stride 1.9 e 1.8 lado a lado, mas você não pode reverter de Stride 1.9.2 para Stride 1.9.1.
 
 ## Start Game Studio
 
-1. Em **Switch\/update version**, selecione a versão do Stride que você deseja usar.
+1. Em **Switch/update version**, selecione a versão do Stride que você deseja usar.
 
    O número da versão é atualizado no botão **Start**.
 
-   <x1\/> Iniciar botão<x2\/>
+   ![ Iniciar botão](media/stride-launcher-start-button.png)
 
 2. Clique em **Start** para lançar Game Studio.
 
 ## Projectos recentes
 
-<x1\/>Projetos seção<x2\/>
+![Projetos seção](media/stride-launcher-projects-section.png)
 
 A seção **Projetos** exibe seus projetos recentes. Para abrir um projeto, clique nele.
 
@@ -76,5 +76,5 @@ Para abrir um projeto com uma versão mais recente do Stride:
 
 2. Selecione a versão Stride com a qual você deseja abrir o projeto. O Game Studio solicita que você atualize o projeto quando abrir.
 
-> <x1\/>!Note<x2\/>
+> [!Note]
 > Depois de atualizar um projeto para usar uma versão mais recente do Stride, você pode precisar fazer alterações manuais para fazê-lo funcionar. **Certifique-se de fazer backup do projeto e de todos os seus arquivos relacionados antes de atualizá-lo.**

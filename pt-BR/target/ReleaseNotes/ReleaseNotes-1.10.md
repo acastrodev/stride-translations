@@ -25,7 +25,7 @@ Esta restrição torna mais fácil lidar com referências internas dentro de um 
 
 ### Versão 1.10.0-beta
 
-Data de lançamento 2017\/3\/9
+Data de lançamento 2017/3/9
 
 #### Melhorias
 
@@ -51,7 +51,7 @@ Data de lançamento 2017\/3\/9
 * Nos editores Scene e Prefab, o carregamento de ativos é agora async, muito mais rápido e mais amigável à memória
 * Agora você pode clicar com o botão direito do mouse em uma instância pré-fabricada e selecionar "Selecionar pré-fabricada na visualização de ativos"
 * Navegação de teclado melhorada em vistas de árvores (por exemplo, explorador de soluções, hierarquia de cena): a seta esquerda vai para o nó pai, a seta direita vai para a primeira criança (quando em um nó)
-* Os nós da árvore da entidade nos editores cena\/prefab expandem automaticamente quando as crianças são adicionadas
+* Os nós da árvore da entidade nos editores cena/prefab expandem automaticamente quando as crianças são adicionadas
 
 ##### Gráficos
 
@@ -59,7 +59,7 @@ Data de lançamento 2017\/3\/9
 * Adicionado SetScissorRectangle (note: viewport and scissors only work well for first viewport) [#521](https://github.com/SiliconStudio/xenko/issues/521)
 * Vulkan: SwapChain compensação não estava passando camada de validação
 * Em frente + luz culling não estava funcionando bem se a matriz de projeção estava fora do centro (ie VR)
-* O conjunto RenderDocPlugin permite carregar automaticamente o RenderDoc e capturar o editor interno (usando a bandeira \/RenderDoc) ou o jogo
+* O conjunto RenderDocPlugin permite carregar automaticamente o RenderDoc e capturar o editor interno (usando a bandeira /RenderDoc) ou o jogo
 * Iluminação de cluster não estava funcionando em OpenGL e OpenGL ES devido a `UpdateSubresource` para texturas 3D
 
 ##### Navegação
@@ -84,7 +84,7 @@ Data de lançamento 2017\/3\/9
 * Editor de script muitas vezes caiu na economia ou criação. Várias questões relacionadas corrigidas
 * O cursor do mouse poderia desaparecer durante as operações de arrastar e soltar [#385](https://github.com/SiliconStudio/xenko/issues/385) e [#546](https://github.com/SiliconStudio/xenko/issues/546)
 * Alterar o tipo de layout no editor UI poderia fazer Game Studio falhar [#547](https://github.com/SiliconStudio/xenko/issues/547)
-* Corrigir vários problemas relacionados a pastas em Cena e editores Prefab (renaming, copy\/paste, undo\/redo)
+* Corrigir vários problemas relacionados a pastas em Cena e editores Prefab (renaming, copy/paste, undo/redo)
 * Corrigir um acidente raro com a área de transferência quando outra aplicação está usando-a
 * Corrigir um acidente que poderia ocorrer ao remover um item de certos tipos de coleções
 * Corrigir a entrada do nome do dispositivo do Windows (CON, NUL, COM1) como nomes de pasta
@@ -92,7 +92,7 @@ Data de lançamento 2017\/3\/9
 ##### Activos
 
 * Os ativos que contêm múltiplos objetos identificáveis com o mesmo `Id` agora passam por um passe de correção na carga para re-generar ids únicos
-* Certifique-se de que geramos novos Ids para tais objetos após manipulações, tais como cópia \/ colar, duplicação, etc
+* Certifique-se de que geramos novos Ids para tais objetos após manipulações, tais como cópia / colar, duplicação, etc
 * Quando uma propriedade de um ativo foi substituída (do arquétipo ou de um pré-fabricado) a um valor equivalente ao valor padrão da propriedade, a informação de substituição foi perdida após a recarga
 * A deserialização de alguns tipos de um arquivo de ativos pode falhar devido à resolução de tipo e montagem imprópria
 * As animações não importaria quando o esqueleto usado para a animação tinha ossos ausentes ou extras
@@ -114,7 +114,7 @@ Data de lançamento 2017\/3\/9
 
 ### Versão 1.10.1-beta
 
-Data de lançamento 2017\/3\/13
+Data de lançamento 2017/3/13
 
 #### Bugs corrigidos
 
@@ -124,7 +124,7 @@ Data de lançamento 2017\/3\/13
 
 ### Versão 1.10.2-beta
 
-Data de lançamento 2017\/3\/14
+Data de lançamento 2017/3/14
 
 #### Bugs corrigidos
 

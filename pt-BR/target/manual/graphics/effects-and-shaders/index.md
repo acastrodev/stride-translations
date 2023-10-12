@@ -38,5 +38,5 @@ Para plataformas móveis, os shaders são otimizados por um otimizador GLSL para
    - [Composição](shading-language/composition.md)
    - [Sombreadores computacionais](compile-shaders.md)
    - [Modelos](shading-language/templates.md)
-   - [Shader fase de entrada \/ saída gestão automática](shading-language/automatic-shader-stage-input-output.md)
+   - [Shader fase de entrada / saída gestão automática](shading-language/automatic-shader-stage-input-output.md)
 * [Sombreadores personalizados](custom-shaders.md)

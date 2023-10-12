@@ -8,8 +8,8 @@
 <trans-unit id="tu2" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Intermediate<x id="2"/>
 <x id="3"/>Programmer<x id="4"/></source>
-<target xml:lang="pt">&lt;x1\/&gt; Intermediário &lt;x2\/&gt;
-&lt;x3\/&gt;Programação&lt;x4\/&gt;</target>
+<target xml:lang="pt"><x id="1"/>Intermediário<x id="2"/>
+<x id="3"/>Programação<x id="4"/></target>
 </trans-unit>
 <trans-unit id="tu3" xml:space="preserve">
 <source xml:lang="en"><g id="1">Events</g> facilitate communication between scripts. They work one-way, broadcast from <g id="2">broadcasters</g> to <g id="3">receivers</g>. Events come in two flavors, a non-generic version for basic event broadcasting, and a generic version for when data needs to be passed to receivers.</source>
@@ -22,7 +22,7 @@
 <trans-unit id="tu5" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>!Note<x id="2"/>
 Events are handled entirely in scripts. You can't configure them in Game Studio.</source>
-<target xml:lang="pt">&lt;x1\/&gt;!Note&lt;x2\/&gt;
+<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
 Os eventos são tratados inteiramente em scripts. Você não pode configurá-los no Game Studio.</target>
 </trans-unit>
 <trans-unit id="tu6" xml:space="preserve">
@@ -99,10 +99,10 @@ if(gameOverListenerWithData.TryReceive (out string data)))
 	- Sim. "Player 1"
 }
 
-\/\/Or em Async
+//Or em Async
 await gameOverListener.ReceiveAsync();
 string asyncData = await gameOverListenerWithData.ReceiveAsync();
-\/\/asyncData == "Player 1"
+//asyncData == "Player 1"
 </target>
 </trans-unit>
 <trans-unit id="tu14" xml:space="preserve">

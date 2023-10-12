@@ -8,8 +8,8 @@
 <trans-unit id="tu2" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Beginner<x id="2"/>
 <x id="3"/>Programmer<x id="4"/></source>
-<target xml:lang="pt">&lt;x1\/&gt;Introdução&lt;x2\/&gt;
-&lt;x3\/&gt;Programação&lt;x4\/&gt;</target>
+<target xml:lang="pt"><x id="1"/>Introdução<x id="2"/>
+<x id="3"/>Programação<x id="4"/></target>
 </trans-unit>
 <trans-unit id="tu3" xml:space="preserve">
 <source xml:lang="en">There are three main types of script in Stride: <g id="1">startup scripts</g>, <g id="2">synchronous scripts</g>, and <g id="3">asynchronous scripts</g>.</source>
@@ -44,7 +44,7 @@
 (
 	anula de sobreposição pública Start()
 	(
-		\/\/ Faça algumas coisas durante a inicialização
+		// Faça algumas coisas durante a inicialização
 	}
 }
 </target>
@@ -86,7 +86,7 @@
 (        
 	atualização()
 	(
-		\/\/ Executa a atualização na entidade — este código é executado cada quadro
+		// Executa a atualização na entidade — este código é executado cada quadro
 	}
 }
 </target>
@@ -133,15 +133,15 @@
 (        
 	override público async Task Execute() 
 	(
-		\/\/ O código de inicialização deve vir aqui, se necessário
+		// O código de inicialização deve vir aqui, se necessário
 		
-		enquanto (Game.IsRunning) \/\/ loop até que o jogo termina (opcional dependendo do script)
+		enquanto (Game.IsRunning) // loop até que o jogo termina (opcional dependendo do script)
 		(
 			aguarde MyEvent;
 
-			\/\/ Faz alguma coisa
+			// Faz alguma coisa
 			
-			await Script.NextFrame(); \/\/ esperar pelo próximo frame (opcional dependendo do script)
+			await Script.NextFrame(); // esperar pelo próximo frame (opcional dependendo do script)
 		}
 	}
 }

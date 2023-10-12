@@ -1,11 +1,11 @@
 # Rígidos
 
-<x1\/>Introdução<x2\/>
-<x3\/>Designer<x4\/>
+<span class="badge text-bg-primary">Introdução</span>
+<span class="badge text-bg-success">Designer</span>
 
 **Rigidbodies** movem-se com base em forças físicas aplicadas a eles, como gravidade e colisões. Os rígidos típicos são caixas, bolas, móveis e assim por diante — objetos que são empurrados, puxados e derrubados ao redor, e também têm efeitos em outros corpos rígidos que colidem com.
 
-<x1\/> Coletores de corpos estáticos e rígidos<x2\/>
+![ Coletores de corpos estáticos e rígidos](media/rigid-bodies-static-and-rigid-body-colliders.png)
 
 
 ## Adicionar um coletor de corpo rígido
@@ -14,19 +14,19 @@
 
 2. No **Property Grid**, clique em **Add component** e selecione **Rigidbody**.
 
-   <x1\/> Adicionar componente de colisor estático<x2\/>
+   ![ Adicionar componente de colisor estático](media/physics-tutorials-create-a-bouncing-ball-add-rigitbody-component.png)
 
 3. Defina a forma [collider](collider-shapes.md) para corresponder à entidade. Para fazer isso, no **Property Grid**, expanda o componente **Rigidbody** para ver suas propriedades.
 
-4. Ao lado de **Collider Shapes**, clique em <x1\/>Green plus button<x2\/> (**Add**) e selecione a forma que deseja.
+4. Ao lado de **Collider Shapes**, clique em ![Green plus button](~/manual/game-studio/media/green-plus-icon.png) (**Add**) e selecione a forma que deseja.
 
-   <x1\/> Adicionar componente de colisor estático<x2\/>
+   ![ Adicionar componente de colisor estático](media/physics-tutorials-create-a-bouncing-ball-rigitbody-shape.png)
 
 ## Propriedades de componentes
 
 Você pode ajustar as propriedades do corpo rígido no **Property Grid**.
 
-<x1\/> Propriedades do corpo digital<x2\/>
+![ Propriedades do corpo digital](media/rigid-body-properties.png)
 
 | Propriedade | Descrição |
 ----------------------|-----------------------

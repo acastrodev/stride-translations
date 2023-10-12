@@ -8,8 +8,8 @@
 <trans-unit id="tu2" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Intermediate<x id="2"/>
 <x id="3"/>Programmer<x id="4"/></source>
-<target xml:lang="pt">&lt;x1\/&gt; Intermediário &lt;x2\/&gt;
-&lt;x3\/&gt;Programação&lt;x4\/&gt;</target>
+<target xml:lang="pt"><x id="1"/>Intermediário<x id="2"/>
+<x id="3"/>Programação<x id="4"/></target>
 </trans-unit>
 <trans-unit id="tu3" xml:space="preserve">
 <source xml:lang="en">You can use various <g id="1">sensors</g>, such as gyroscopes and accelerometers, as input devices in your project. Sensors are often used in mobile games.</source>
@@ -98,7 +98,7 @@
 <trans-unit id="tu23" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>!Note<x id="2"/>
 If a sensor isn't natively supported by the device, Stride tries to emulate it using the device's other sensors.</source>
-<target xml:lang="pt">&lt;x1\/&gt;!Note&lt;x2\/&gt;
+<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
 Se um sensor não é suportado nativamente pelo dispositivo, a Stride tenta emula-lo usando outros sensores do dispositivo.</target>
 </trans-unit>
 <trans-unit id="tu24" xml:space="preserve">
@@ -123,7 +123,7 @@ Se um sensor não é suportado nativamente pelo dispositivo, a Stride tenta emul
 </trans-unit>
 <trans-unit id="tu29" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Orientation sensor<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt; Sensor de orientação&lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/> Sensor de orientação<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu30" xml:space="preserve">
 <source xml:lang="en">Use <g id="1">Input.Orientation</g> to get the current orientation of the device.</source>
@@ -214,8 +214,8 @@ Se um sensor não é suportado nativamente pelo dispositivo, a Stride tenta emul
 <trans-unit id="tu51" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>!Note<x id="2"/>
 Stride provides the orientation under the pitch/yaw/roll, rotation matrix, or quaternion forms. We recommend the quaternion form as it doesn't suffer from <g id="3">gimbal lock</g>.</source>
-<target xml:lang="pt">&lt;x1\/&gt;!Note&lt;x2\/&gt;
-Stride fornece a orientação sob as formas pitch\/yaw\/roll, rotação, ou quaternion. Recomendamos o formulário quaternion como ele não sofre de <g id="3">gimbal lock</g>.</target>
+<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
+Stride fornece a orientação sob as formas pitch/yaw/roll, rotação, ou quaternion. Recomendamos o formulário quaternion como ele não sofre de <g id="3">gimbal lock</g>.</target>
 </trans-unit>
 <trans-unit id="tu52" xml:space="preserve">
 <source xml:lang="en">Motion sensors</source>
@@ -243,7 +243,7 @@ Stride fornece a orientação sob as formas pitch\/yaw\/roll, rotação, ou quat
 </trans-unit>
 <trans-unit id="tu58" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Motion sensors<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt; Sensores de movimento&lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/> Sensores de movimento<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu59" xml:space="preserve">
 <source xml:lang="en">Motion sensors have a single field that specifies the current <g id="1">acceleration vector</g> on the device. Stride measures the acceleration in <g id="2">meters per second squared</g>.</source>
@@ -255,7 +255,7 @@ Stride fornece a orientação sob as formas pitch\/yaw\/roll, rotação, ou quat
 </trans-unit>
 <trans-unit id="tu61" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Accelerometer<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt;Acelerômetro&lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/>Acelerômetro<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu62" xml:space="preserve">
 <source xml:lang="en">Use the accelerometer</source>
@@ -268,7 +268,7 @@ Stride fornece a orientação sob as formas pitch\/yaw\/roll, rotação, ou quat
 <trans-unit id="tu64" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>!NOTE<x id="2"/>
 When the user isn't applying force, the <g id="3">device acceleration</g> is equal to its <g id="4">gravity</g>.</source>
-<target xml:lang="pt">&lt;x1\/&gt;!NOTE&lt;x2\/&gt;
+<target xml:lang="pt"><x id="1"/>!NOTE<x id="2"/>
 Quando o usuário não está aplicando força, a aceleração <g id="3">device</g> é igual à sua gravidade <g id="4"/>.</target>
 </trans-unit>
 <trans-unit id="tu65" xml:space="preserve">
@@ -327,7 +327,7 @@ Quando o usuário não está aplicando força, a aceleração <g id="3">device</
 </trans-unit>
 <trans-unit id="tu77" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Compass<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt; Compassa&lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/> Compassa<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu78" xml:space="preserve">
 <source xml:lang="en">To get this angle, use <g id="1">CompassSensor.Heading</g>. For example:</source>
@@ -349,7 +349,7 @@ Quando o usuário não está aplicando força, a aceleração <g id="3">device</
 </trans-unit>
 <trans-unit id="tu82" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Gyroscope<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt;Gyroscope&lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/>Gyroscope<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu83" xml:space="preserve">
 <source xml:lang="en">To get the rotation speed, use <g id="1">GyroscopeSensor.RotationRate</g>. For example:</source>
@@ -400,22 +400,22 @@ Quando o usuário não está aplicando força, a aceleração <g id="3">device</
 (
 	override público async Task Execute()
 	(
-		\/\/ Verificar disponibilidade do sensor
+		// Verificar disponibilidade do sensor
 		se(Input.Accelerometer!= null)
 			voltar;
 			
-		\/\/ Ativar o sensor
+		// Ativar o sensor
 		Input.Acelerômetro. É permitido = verdadeiro;
 				
 		enquanto (Game.IsRunning)
 		(
-			\/\/ leitura da aceleração atual
+			// leitura da aceleração atual
 			var accel = Entrada.Acelerômetro.Aceleração;
 			
-			\/\/ executar requerem trabalhos...
+			// executar requerem trabalhos...
 			await Script.NextFrame();
 		}		
-		\/\/ Desativar o sensor após o uso
+		// Desativar o sensor após o uso
 		Input.Acelerômetro. IsEnabled = false;
 	}
 }

@@ -15,7 +15,7 @@
 </trans-unit>
 <trans-unit id="tu4" xml:space="preserve">
 <source xml:lang="en">If you've built your game in Release mode before, in your project folder (eg <g id="1">MyGame/Bin/MyPlatform/Release/</g>), delete the <g id="2">Data</g> folder. This folder might contain unnecessary files, such as old versions of assets, so it's simplest to build it again from scratch.</source>
-<target xml:lang="pt">Se você construiu seu jogo no modo de lançamento antes, em sua pasta de projeto (por exemplo <g id="1">MyGame\/Bin\/MyPlatform\/Release\/</g>), exclua a pasta <g id="2">Data</g>. Esta pasta pode conter arquivos desnecessários, como versões antigas de ativos, então é mais simples construí-lo novamente do zero.</target>
+<target xml:lang="pt">Se você construiu seu jogo no modo de lançamento antes, em sua pasta de projeto (por exemplo <g id="1">MyGame/Bin/MyPlatform/Release/</g>), exclua a pasta <g id="2">Data</g>. Esta pasta pode conter arquivos desnecessários, como versões antigas de ativos, então é mais simples construí-lo novamente do zero.</target>
 </trans-unit>
 <trans-unit id="tu5" xml:space="preserve">
 <source xml:lang="en">Open your project in Game Studio.</source>
@@ -27,7 +27,7 @@
 </trans-unit>
 <trans-unit id="tu7" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Open in VS<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt; Abra em VS&lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/> Abra em VS<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu8" xml:space="preserve">
 <source xml:lang="en">Your project opens in Visual Studio.</source>
@@ -39,7 +39,7 @@
 </trans-unit>
 <trans-unit id="tu10" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Select release<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt;Select release&lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/>Select release<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu11" xml:space="preserve">
 <source xml:lang="en">From the <g id="1">Solution platforms</g> drop-down menu, select the platform you want to create a build for.</source>
@@ -47,11 +47,11 @@
 </trans-unit>
 <trans-unit id="tu12" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Select platform<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt;Selecione a plataforma&lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/>Selecione a plataforma<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu13" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>!Note<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt;!Note&lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/>!Note<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu14" xml:space="preserve">
 <source xml:lang="en">You can only build for platforms you've added to your Stride project. For instructions about how to do this, see <g id="1">Add or remove a platform</g>.</source>
@@ -67,16 +67,16 @@
 </trans-unit>
 <trans-unit id="tu17" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Build solution<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt; Solução de construção&lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/> Solução de construção<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu18" xml:space="preserve">
 <source xml:lang="en">Visual Studio creates a release build in your project bin folder (eg <g id="1">MyGame/Bin/MyPlatform/Release</g>).</source>
-<target xml:lang="pt">Visual Studio cria uma compilação de lançamento em sua pasta bin projeto (por exemplo <g id="1">MyGame\/Bin\/MyPlatform\/Release</g>).</target>
+<target xml:lang="pt">Visual Studio cria uma compilação de lançamento em sua pasta bin projeto (por exemplo <g id="1">MyGame/Bin/MyPlatform/Release</g>).</target>
 </trans-unit>
 <trans-unit id="tu19" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>!Tip<x id="2"/>
 You might want to rename the <g id="3">Release</g> folder to something more descriptive (such as the title of your game).</source>
-<target xml:lang="pt">&lt;x1\/&gt;!Tip&lt;x2\/&gt;
+<target xml:lang="pt"><x id="1"/>!Tip<x id="2"/>
 Você pode querer renomear a pasta <g id="3">Release</g> para algo mais descritivo (como o título do seu jogo).</target>
 </trans-unit>
 <trans-unit id="tu20" xml:space="preserve">
@@ -94,7 +94,7 @@ Você pode querer renomear a pasta <g id="3">Release</g> para algo mais descriti
 <trans-unit id="tu23" xml:space="preserve">
 <source xml:lang="en">C:\User&gt; msbuild PathToSln\NameOfProject.sln /p:Configuration=Release /p:OutputPath=YourPreferredPath
 </source>
-<target xml:lang="pt">C:\User&gt; msbuild PathToSln\NameOfProject.sln \/p:Configuração=Release \/p:OutputPath=YourPreferredPath
+<target xml:lang="pt">C:\User&gt; msbuild PathToSln\NameOfProject.sln /p:Configuração=Release /p:OutputPath=YourPreferredPath
 </target>
 </trans-unit>
 <trans-unit id="tu24" xml:space="preserve">
@@ -103,7 +103,7 @@ Você pode querer renomear a pasta <g id="3">Release</g> para algo mais descriti
 </trans-unit>
 <trans-unit id="tu25" xml:space="preserve">
 <source xml:lang="en">In the release folder in your project bin folder (eg <g id="1">MyGame/Bin/MyPlatform/Release</g>), you can delete the following unnecessary files:</source>
-<target xml:lang="pt">Na pasta de lançamento em sua pasta bin projeto (por exemplo <g id="1">MyGame\/Bin\/MyPlatform\/Release</g>), você pode excluir os seguintes arquivos desnecessários:</target>
+<target xml:lang="pt">Na pasta de lançamento em sua pasta bin projeto (por exemplo <g id="1">MyGame/Bin/MyPlatform/Release</g>), você pode excluir os seguintes arquivos desnecessários:</target>
 </trans-unit>
 <trans-unit id="tu26" xml:space="preserve">
 <source xml:lang="en"><g id="1">.pdb</g> files (debug information)</source>
@@ -147,7 +147,7 @@ Você pode querer renomear a pasta <g id="3">Release</g> para algo mais descriti
 </trans-unit>
 <trans-unit id="tu36" xml:space="preserve">
 <source xml:lang="en">Visual C++ 2015 runtimes (x86 and/or x64, depending on what you set in your project properties in Visual Studio)</source>
-<target xml:lang="pt">Tempos de execução Visual C++ 2015 (x86 e\/ou x64, dependendo do que você estabeleceu em suas propriedades do projeto no Visual Studio)</target>
+<target xml:lang="pt">Tempos de execução Visual C++ 2015 (x86 e/ou x64, dependendo do que você estabeleceu em suas propriedades do projeto no Visual Studio)</target>
 </trans-unit>
 <trans-unit id="tu37" xml:space="preserve">
 <source xml:lang="en">See also</source>

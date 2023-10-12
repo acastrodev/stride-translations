@@ -1,17 +1,17 @@
 # Fogão
 
-<x1\/>Introdução<x2\/>
-<x3\/>Artista <x4\/>
+<span class="badge text-bg-primary">Introdução</span>
+<span class="badge text-bg-success">Artista </span>
 
 O efeito **fog** aplica uma camada exponencial de nevoeiro colorido em toda a cena com base na profundidade.
 
-<x1\/>media\/fog-effect-1.png<x2\/>
+![media/fog-effect-1.png](media/fog-effect-1.png)
 
 Fog é aplicado após anti-aliasing.
 
 ## Propriedades
 
-<x1\/>media\/fog-effect-2.png<x2\/>
+![media/fog-effect-2.png](media/fog-effect-2.png)
 
 | Propriedade | Descrição |
 | -------------- | ---- 

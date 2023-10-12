@@ -1,24 +1,24 @@
 # Luzes direcionais
 
-<x1\/>Introdução<x2\/>
-<x3\/>Designer<x4\/>
-<x5\/>Artista <x6\/>
+<span class="badge text-bg-primary">Introdução</span>
+<span class="badge text-bg-success">Designer</span>
+<span class="badge text-bg-success">Artista </span>
 
 ** Luzes direcionais** vêm uniformemente de uma direção. Eles são frequentemente usados para simular grandes fontes de luz distantes, como o sol, e sombras de elenco. Por padrão, novas cenas que você cria no Stride contêm uma luz direcional.
 
-<x1\/>media\/DirectionalLightOverview.png<x2\/>
+![media/DirectionalLightOverview.png](media/DirectionalLightOverview.png)
 
 O Editor de cena mostra a posição de luzes direcionais com o seguinte ícone:
 
-<x1\/>media\/DirectionalLight.png<x2\/>
+![media/DirectionalLight.png](media/DirectionalLight.png)
 
 Quando você seleciona uma luz direcional, o gizmo exibe a direção principal da luz:
 
-<x1\/>media\/DirectionalLightSelected.png<x2\/>
+![media/DirectionalLightSelected.png](media/DirectionalLightSelected.png)
 
 ## Propriedades
 
-<x1\/>media\/DirectionalLightProperties.png<x2\/>
+![media/DirectionalLightProperties.png](media/DirectionalLightProperties.png)
 
 | Propriedade | Descrição |
 | ------------ | ---------- |
@@ -35,7 +35,7 @@ Luzes direcionais usam uma técnica adicional, **cascaded shadow mapping**. Isso
 
 Este método corta a faixa de profundidade do ponto de vista da câmera em diferentes seções ou "cascadas" de diferentes resoluções. Quanto mais perto cada cascata é para a câmera, maior resolução tem, e maior resolução suas sombras são.
 
-<x1\/>media\/ShadowMappingCascades.png<x2\/>
+![media/ShadowMappingCascades.png](media/ShadowMappingCascades.png)
 
 Coloque simplesmente, as sombras mais próximas são para a câmera, a melhor qualidade que eles são. Isso significa que você pode gastar mais memória em sombras mais próximas da câmera, onde você pode vê-los, e menos em sombras distantes.
 
@@ -43,7 +43,7 @@ Você pode ter uma, duas ou quatro cascatas. Quanto mais cascatas você usa, mai
 
 Este exemplo de um mapa de sombra gerado a partir de uma luz direcional, usando quatro cascatas:
 
-<x1\/>FPS cena sombra map<x2\/>
+![FPS cena sombra map](media/shadow-atlas-2x.png)
 
 ### Veja cascatas de sombra no editor
 
@@ -51,7 +51,7 @@ No **Property Grid**, sob as propriedades **Shadow**, ative a opção **Debug**.
 
 | Cascades debug off | Cascades debug on |
 | ---------------------- | ----------
-| <x1\/>media\/directional-lights-8.png<x2\/> | <x1\/>media\/directional-lights-9.png<x2\/> |
+| ![media/directional-lights-8.png](media/directional-lights-8.png) | ![media/directional-lights-9.png](media/directional-lights-9.png) |
 
 As cores diferentes indicam a cascata para cada faixa de distância (verde: 0, Azul: 1, Roxo: 2, vermelho: 3).
 
@@ -62,10 +62,10 @@ As cores diferentes indicam a cascata para cada faixa de distância (verde: 0, A
 | Filtro | A filtragem produz sombras **soft** em vez de sombras **hard**. Atualmente, a técnica implementada é PCF (Percentage Closer Filtering) |
 | Tamanho | O tamanho da textura do mapa sombra. Para a luz direcional, este valor é **x1** por padrão, como uma luz direcional tem mais impacto visual do que luzes com intervalos mais curtos |
 | Contagem de Cascata | O número de cascatas utilizadas para cortar a gama de profundidade coberta pela luz. Valores são 1, 2 ou 4 cascatas; uma cena típica usa 4 cascatas |
-| Modo de estabilização | <p><x1\/>A técnica utilizada para reduzir a cintilação do mapa de sombra. Flickering é um resultado do potencial aliasing introduzido pelo mapa sombra quando um texel da perspectiva da luz cobre mais espaço do que um texel da perspectiva da câmera.</p></br> <p><br> **Projeção snapping** tenta quebrar a matriz de projeção da luz para um texel dependente da resolução da textura do mapa sombra</p></br> <p><x1\/>**View snapping** tenta tirar o alvo da matriz de visão da luz (centro da visão da câmera cascata frustum)</p></br> <p><x1\/>Tanto a projeção quanto a visão que se encaixam forçam a matriz da sombra para cobrir uma região maior, aumentando o aliasing da textura do mapa da sombra. Note que ao usar a câmera do intervalo de profundidade é definido como automático, o modo de estabilização é ignorado</p></br> |
+| Modo de estabilização | <p><br>A técnica utilizada para reduzir a cintilação do mapa de sombra. Flickering é um resultado do potencial aliasing introduzido pelo mapa sombra quando um texel da perspectiva da luz cobre mais espaço do que um texel da perspectiva da câmera.</p></br> <p><br> **Projeção snapping** tenta quebrar a matriz de projeção da luz para um texel dependente da resolução da textura do mapa sombra</p></br> <p><br>**View snapping** tenta tirar o alvo da matriz de visão da luz (centro da visão da câmera cascata frustum)</p></br> <p><br>Tanto a projeção quanto a visão que se encaixam forçam a matriz da sombra para cobrir uma região maior, aumentando o aliasing da textura do mapa da sombra. Note que ao usar a câmera do intervalo de profundidade é definido como automático, o modo de estabilização é ignorado</p></br> |
 | Faixa de profundidade | Como a profundidade visível varia da perspectiva da câmera é calculada. Isso afeta diretamente o quão perto e quão distantes as cascatas ocorrem |
 | Misturar Cascades | Alivia a transição entre cascatas |
-| Modo de partição | <p><x1\/>Como a distância de divisão em cascata é determinada.</p></br> <p><br> **Manual**: a divisão é definida manualmente para cada cascata, em porcentagem da faixa de profundidade visível. Um valor de 0,1 para uma cascata significa que a cascata é renderizada na distância 0.1 * (VisibleDepthMax - VisibleDepthMin)<p><br> <p><br> **Logaritmic**: a divisão é calculada automaticamente usando uma escala logarítmica <p><x1\/> O fator PSSM permite que você se misture de uma escala logarítmica pura (0.0f) a uma escala uniforme pura (1.0f)<p><br> |
+| Modo de partição | <p><br>Como a distância de divisão em cascata é determinada.</p></br> <p><br> **Manual**: a divisão é definida manualmente para cada cascata, em porcentagem da faixa de profundidade visível. Um valor de 0,1 para uma cascata significa que a cascata é renderizada na distância 0.1 * (VisibleDepthMax - VisibleDepthMin)<p><br> <p><br> **Logaritmic**: a divisão é calculada automaticamente usando uma escala logarítmica <p><br> O fator PSSM permite que você se misture de uma escala logarítmica pura (0.0f) a uma escala uniforme pura (1.0f)<p><br> |
 | Depth Bias | A quantidade de profundidade para adicionar à profundidade de amostragem para evitar o fenômeno da acne sombra |
 | Escala de Offset Normal | Um fator multiplicado pelo viés de profundidade para o normal |
 | Depuração | Exibe as cascatas de mapa sombra no Editor de cena |

@@ -8,8 +8,8 @@
 <trans-unit id="tu2" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Beginner<x id="2"/>
 <x id="3"/>Programmer<x id="4"/></source>
-<target xml:lang="pt">&lt;x1\/&gt;Introdução&lt;x2\/&gt;
-&lt;x3\/&gt;Programação&lt;x4\/&gt;</target>
+<target xml:lang="pt"><x id="1"/>Introdução<x id="2"/>
+<x id="3"/>Programação<x id="4"/></target>
 </trans-unit>
 <trans-unit id="tu3" xml:space="preserve">
 <source xml:lang="en"><g id="1">Pointers</g> are points on the device screen corresponding to <g id="2">finger touches</g>. Devices with multi-touch functionality support multiple simultaneous pointers.</source>
@@ -46,13 +46,13 @@
 <trans-unit id="tu11" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>!Note<x id="2"/>
 Each pointer event contains information about only one pointer. If several pointers are modified simultaneously in the same update, Stride creates a separate event for each pointer.</source>
-<target xml:lang="pt">&lt;x1\/&gt;!Note&lt;x2\/&gt;
+<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
 Cada evento de ponteiro contém informações sobre apenas um ponteiro. Se vários ponteiros forem modificados simultaneamente na mesma atualização, a Stride cria um evento separado para cada ponteiro.</target>
 </trans-unit>
 <trans-unit id="tu12" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>!Warning<x id="2"/>
 Each OS handles pointer modifications differently. This means the same finger gesture can generate slightly different pointer event sequences across different platforms. For example, Android doesn't create a new pointer event when a finger touches the screen but doesn't move. For more information, check your OS documentation.</source>
-<target xml:lang="pt">&lt;x1\/&gt;!Warning&lt;x2\/&gt;
+<target xml:lang="pt"><x id="1"/>!Warning<x id="2"/>
 Cada sistema operacional lida com modificações de ponteiro de forma diferente. Isso significa que o mesmo gesto de dedo pode gerar sequências de eventos de ponteiro ligeiramente diferentes em diferentes plataformas. Por exemplo, o Android não cria um novo evento de ponteiro quando um dedo toca na tela, mas não se move. Para obter mais informações, verifique sua documentação do sistema operacional.</target>
 </trans-unit>
 <trans-unit id="tu13" xml:space="preserve">
@@ -99,7 +99,7 @@ Cada sistema operacional lida com modificações de ponteiro de forma diferente.
 <source xml:lang="en"><x id="1"/>!Warning<x id="2"/>
 The ID of a pointer is valid only during a single <g id="3">Pressed-&gt;Moved-&gt;Released</g> sequence of pointer events.
 A finger can have different IDs each time it touches the screen (even if this happens very quickly).</source>
-<target xml:lang="pt">&lt;x1\/&gt;!Warning&lt;x2\/&gt;
+<target xml:lang="pt"><x id="1"/>!Warning<x id="2"/>
 O ID de um ponteiro é válido apenas durante um único <g id="3">Pressed-&gt;Moved-&gt;Released</g> sequência de eventos de ponteiro.
 Um dedo pode ter diferentes IDs cada vez que toca a tela (mesmo que isso aconteça muito rapidamente).</target>
 </trans-unit>
@@ -107,7 +107,7 @@ Um dedo pode ter diferentes IDs cada vez que toca a tela (mesmo que isso aconte�
 <source xml:lang="en"><x id="1"/>!Warning<x id="2"/>
 Each OS has its own way of assigning IDs to pointers.
 There's no relation between the pointer ID values and corresponding fingers.</source>
-<target xml:lang="pt">&lt;x1\/&gt;!Warning&lt;x2\/&gt;
+<target xml:lang="pt"><x id="1"/>!Warning<x id="2"/>
 Cada sistema operacional tem sua própria maneira de atribuir IDs aos ponteiros.
 Não há relação entre os valores de ID do ponteiro e os dedos correspondentes.</target>
 </trans-unit>
@@ -156,7 +156,7 @@ Não há relação entre os valores de ID do ponteiro e os dedos correspondentes
 <trans-unit id="tu35" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>!Tip<x id="2"/>
 To get the actual size of the screen, access <g id="3">IPointerDevice.SurfaceSize</g>. For example:</source>
-<target xml:lang="pt">&lt;x1\/&gt;!Tip&lt;x2\/&gt;
+<target xml:lang="pt"><x id="1"/>!Tip<x id="2"/>
 Para obter o tamanho real da tela, acesse <g id="3">IPointerDevice. SurfaceSize</g>. Por exemplo:</target>
 </trans-unit>
 <trans-unit id="tu36" xml:space="preserve">
@@ -196,7 +196,7 @@ Para obter o tamanho real da tela, acesse <g id="3">IPointerDevice. SurfaceSize<
 <trans-unit id="tu44" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>!Note<x id="2"/>
 A sequence of pointer events for one pointer always starts with a <g id="3">Pressed</g> event. This might be followed by one or more <g id="4">Moved</g> events, and always ends with a <g id="5">Released</g> or <g id="6">Canceled</g> event.</source>
-<target xml:lang="pt">&lt;x1\/&gt;!Note&lt;x2\/&gt;
+<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
 Uma sequência de eventos de ponteiro para um ponteiro sempre começa com um evento <g id="3">Pressed</g>. Isso pode ser seguido por um ou mais eventos <g id="4">Moved</g> e sempre termina com um evento <g id="5">Released</g> ou <g id="6">Canceled</g>.&gt;.</target>
 </trans-unit>
 <trans-unit id="tu45" xml:space="preserve">
@@ -222,7 +222,7 @@ Uma sequência de eventos de ponteiro para um ponteiro sempre começa com um eve
 <trans-unit id="tu50" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>!Note<x id="2"/>
 Delta values are always nulls at the beginning of the sequence of pointer events (ie when the <g id="3">pointer state</g> is <g id="4">down</g>).</source>
-<target xml:lang="pt">&lt;x1\/&gt;!Note&lt;x2\/&gt;
+<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
 Os valores Delta são sempre nulos no início da sequência de eventos de ponteiro (ou seja, quando o <g id="3">pointer estado</g> é <g id="4">down</g>).</target>
 </trans-unit>
 <trans-unit id="tu51" xml:space="preserve">

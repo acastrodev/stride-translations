@@ -9,9 +9,9 @@
 <source xml:lang="en"><x id="1"/>Beginner<x id="2"/>
 <x id="3"/>Artist<x id="4"/>
 <x id="5"/>Programmer<x id="6"/></source>
-<target xml:lang="pt">&lt;x1\/&gt;Introdução&lt;x2\/&gt;
-&lt;x3\/&gt;Artista &lt;x4\/&gt;
-&lt;x5\/&gt;Programação&lt;x6\/&gt;</target>
+<target xml:lang="pt"><x id="1"/>Introdução<x id="2"/>
+<x id="3"/>Artista <x id="4"/>
+<x id="5"/>Programação<x id="6"/></target>
 </trans-unit>
 <trans-unit id="tu3" xml:space="preserve">
 <source xml:lang="en"><g id="1">Particle spawners</g> control when, how many, and how quickly particles are emitted. Emitters need at least one spawner, but can contain multiple spawners with different settings.</source>
@@ -27,7 +27,7 @@
 </trans-unit>
 <trans-unit id="tu6" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>media/particles-reference-spawners-1.png<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt;media\/particles-reference-spawners-1.png&lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/>media/particles-reference-spawners-1.png<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu7" xml:space="preserve">
 <source xml:lang="en">Property</source>
@@ -79,7 +79,7 @@
 </trans-unit>
 <trans-unit id="tu19" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>media/particles-reference-spawners-2.png<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt;media\/particles-reference-spawners-2.png&lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/>media/particles-reference-spawners-2.png<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu20" xml:space="preserve">
 <source xml:lang="en">Property</source>
@@ -139,7 +139,7 @@
 </trans-unit>
 <trans-unit id="tu34" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>media/particles-reference-spawners-2.png<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt;media\/particles-reference-spawners-2.png&lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/>media/particles-reference-spawners-2.png<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu35" xml:space="preserve">
 <source xml:lang="en">Property</source>
@@ -175,7 +175,7 @@
 </trans-unit>
 <trans-unit id="tu43" xml:space="preserve">
 <source xml:lang="en">Particles/burst</source>
-<target xml:lang="pt">Partículas\/burst</target>
+<target xml:lang="pt">Partículas/burst</target>
 </trans-unit>
 <trans-unit id="tu44" xml:space="preserve">
 <source xml:lang="en">The number of particles spawned in each burst.</source>
@@ -191,7 +191,7 @@
 </trans-unit>
 <trans-unit id="tu47" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>media/particles-reference-spawners-2.png<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt;media\/particles-reference-spawners-2.png&lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/>media/particles-reference-spawners-2.png<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu48" xml:space="preserve">
 <source xml:lang="en">Property</source>
@@ -227,7 +227,7 @@
 </trans-unit>
 <trans-unit id="tu56" xml:space="preserve">
 <source xml:lang="en">Particles/unit</source>
-<target xml:lang="pt">Partículas\/unidade</target>
+<target xml:lang="pt">Partículas/unidade</target>
 </trans-unit>
 <trans-unit id="tu57" xml:space="preserve">
 <source xml:lang="en">The number of particles spawned for every distance unit the spawner moves. You can use fractions if you need fewer than one particle per distance unit. The rate adjusts with scaling.</source>
@@ -243,7 +243,7 @@
 </trans-unit>
 <trans-unit id="tu60" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>media/particles-reference-spawners-2.png<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt;media\/particles-reference-spawners-2.png&lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/>media/particles-reference-spawners-2.png<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu61" xml:space="preserve">
 <source xml:lang="en">Property</source>
@@ -295,7 +295,7 @@
 </trans-unit>
 <trans-unit id="tu73" xml:space="preserve">
 <source xml:lang="en">Particles/trigger</source>
-<target xml:lang="pt">Partículas \/ gatilho</target>
+<target xml:lang="pt">Partículas / gatilho</target>
 </trans-unit>
 <trans-unit id="tu74" xml:space="preserve">
 <source xml:lang="en">How many particles (min and max) are spawned from a parent each time the triggering condition is met.</source>
@@ -331,7 +331,7 @@
 </trans-unit>
 <trans-unit id="tu82" xml:space="preserve">
 <source xml:lang="en">Lifetime - Child particles are spawned when the parent particle's lifetime is between two limits, A and B, expressed as normalized values (0 to 1) over the particle's lifetime. If A &lt; B, the period is 0..(A..B)..1, if B &gt; A the period is reversed to (0..B)..(A..1). This method is less precise than the On Birth/On Death conditions.</source>
-<target xml:lang="pt">Vida - Partículas de crianças são geradas quando a vida da partícula pai está entre dois limites, A e B, expressos como valores normalizados (0 a 1) ao longo da vida da partícula. Se A &lt; B, o período é 0..(A..B)..1, se B &gt; O período é revertido para (0..B).( A..1).&lt; B, the period is 0..(A..B)..1, if B &gt; Este método é menos preciso do que as condições Sobre o Nascimento \/ Sobre a Morte.</target>
+<target xml:lang="pt">Vida - Partículas de crianças são geradas quando a vida da partícula pai está entre dois limites, A e B, expressos como valores normalizados (0 a 1) ao longo da vida da partícula. Se A &lt; B, o período é 0..(A..B)..1, se B &gt; O período é revertido para (0..B).( A..1).&lt; B, the period is 0..(A..B)..1, if B &gt; Este método é menos preciso do que as condições Sobre o Nascimento / Sobre a Morte.</target>
 </trans-unit>
 <trans-unit id="tu83" xml:space="preserve">
 <source xml:lang="en">See also</source>

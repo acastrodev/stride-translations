@@ -1,6 +1,6 @@
 # Sistema de Layout
 
-<span class="badge text-bg-primary"> Intermediário </span>
+<span class="badge text-bg-primary">Intermediário</span>
 <span class="badge text-bg-success">Programação</span>
 <span class="badge text-bg-success">Designer</span>
 

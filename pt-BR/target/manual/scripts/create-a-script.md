@@ -1,7 +1,7 @@
 # Criar um script
 
-<x1\/>Introdução<x2\/>
-<x3\/>Programação<x4\/>
+<span class="badge text-bg-primary">Introdução</span>
+<span class="badge text-bg-success">Programação</span>
 
 Você pode criar scripts usando Game Studio ou um IDE, como Visual Studio.
 
@@ -9,14 +9,14 @@ Você pode criar scripts usando Game Studio ou um IDE, como Visual Studio.
 
 1. No **Asset View**, clique em **Add asset > Scripts** e selecione um tipo de script.
 
-   <x1\/>Select script type window<x2\/>
+   ![Select script type window](media/create-a-script-script-asset-selection.png)
 
-   > <x1\/>!Note<x2\/>
+   > [!Note]
    > Para obter informações sobre diferentes tipos de script, consulte [Típes de script](types-of-script.md).
 
    A caixa de diálogo **New script** abre.
 
-   <x1\/> Novo script<x2\/>
+   ![ Novo script](media/script-wizard.png)
 
 2. Especifique uma classe e namespace para o script e clique em **Create script**.
 
@@ -24,15 +24,15 @@ Você pode criar scripts usando Game Studio ou um IDE, como Visual Studio.
 
 Depois de salvar o script, você pode vê-lo no **Asset View**.
 
-> <x1\/>!Note<x2\/>
+> [!Note]
 > Embora os scripts sejam um tipo de ativo, eles não são salvos na pasta Ativos. Em vez disso, eles são salvos na pasta de montagem relevante. Para mais informações, consulte [Projeto estrutura](../files-and-folders/project-structure.md).
 
 Você também pode ver o novo script no Visual Studio.
 
-<x1\/> Novo script no Asset View tab<x2\/>
+![ Novo script no Asset View tab](media/create-a-script-new-script-asset-view.png)
 
-> <x1\/>!Tip<x2\/>
-> Para abrir sua solução no Visual Studio do Game Studio, clique no ícone <x3\/>Open in IDE<x4\/> (**Open in IDE**) na barra de ferramentas Game Studio.
+> [!Tip]
+> Para abrir sua solução no Visual Studio do Game Studio, clique no ícone ![Open in IDE](media/create-a-script-ide-icon.png) (**Open in IDE**) na barra de ferramentas Game Studio.
 
 ```cs
 usando o sistema;
@@ -50,7 +50,7 @@ namespace MyGame
 		(
 			enquanto (Game.IsRunning)
 			(
-				\/\/ Faça algumas coisas cada quadro
+				// Faça algumas coisas cada quadro
 				await Script.NextFrame();
 			}
 		}
@@ -62,8 +62,8 @@ namespace MyGame
 
 1. Open Visual Studio.
 
-   > <x1\/>!Tip<x2\/>
-   > Para abrir sua solução no Visual Studio do Game Studio, clique no ícone <x3\/>Open in IDE<x4\/> (**Open in IDE**) na barra de ferramentas Game Studio.
+   > [!Tip]
+   > Para abrir sua solução no Visual Studio do Game Studio, clique no ícone ![Open in IDE](media/create-a-script-ide-icon.png) (**Open in IDE**) na barra de ferramentas Game Studio.
 
    A solução do jogo é composta por vários projetos:
 
@@ -103,7 +103,7 @@ namespace MyGame
    			(
    				se (Game.IsRunning)
    				(
-   					\/\/ Faça algo cada quadro
+   					// Faça algo cada quadro
    				}
    			}
    		}
@@ -114,15 +114,15 @@ namespace MyGame
 
 7. Porque você modificou o script, Game Studio precisa recarregar o conjunto para mostrar as mudanças.
 
-   <x1\/> Confirmação mensagem <x2\/>
+   ![ Confirmação mensagem ](media/create-a-script-confirmation-message.png)
 
    Clique em ** Sim**.
 
 Você pode ver o script no **Asset View**.
 
-<x1\/> Novo script no Asset View tab<x2\/>
+![ Novo script no Asset View tab](media/create-a-script-new-script-asset-view.png)
 
-> <x1\/>!Note<x2\/>
+> [!Note]
 > Embora os scripts sejam um tipo de ativo, eles não são salvos na pasta Ativos. Em vez disso, eles são salvos na pasta de montagem relevante. Para mais informações, consulte [Projeto estrutura](../files-and-folders/project-structure.md).
 
 ## Ver também

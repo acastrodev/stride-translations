@@ -1,12 +1,12 @@
 # Atributos de geometria
 
-<x1\/> Intermediário <x2\/>
-<x3\/>Artista <x4\/>
-<x5\/>Programação<x6\/>
+<span class="badge text-bg-primary">Intermediário</span>
+<span class="badge text-bg-success">Artista </span>
+<span class="badge text-bg-success">Programação</span>
 
 Os atributos **geometry** definem a forma de um material.
 
-<x1\/> Propriedades geométricas<x2\/>
+![ Propriedades geométricas](media/geometry-properties.png)
 
 ## Tessellation
 
@@ -16,19 +16,19 @@ Você pode escolher **none**, **flat tessellation**, ou **point normal tessellat
 
 | Sem melancia | Tesselação plana | Ponto normal de melancia |
 | --------------  | -------------- | -------------------- 
-| <x1\/>media\/material-attributes-2.png<x2\/> | <x1\/>media\/material-attributes-3.png<x2\/> | <x1\/>media\/material-attributes-4.png<x2\/> |
+| ![media/material-attributes-2.png](media/material-attributes-2.png) | ![media/material-attributes-3.png](media/material-attributes-3.png) | ![media/material-attributes-4.png](media/material-attributes-4.png) |
 
 ### Tesselação plana
 
 Esta opção tessellates a malha uniformemente.
 
-<x1\/>media\/material-attributes-5.png<x2\/>
+![media/material-attributes-5.png](media/material-attributes-5.png)
 
 Nas imagens abaixo, observe como a tesselação plana adiciona triângulos extras, mas não leva em conta a curva:
 
 | Sem melancia | Tesselação plana |
 | ---------------- | ----------------- 
-| <x1\/>media\/material-attributes-6.png<x2\/> | <x1\/>media\/material-attributes-7.png<x2\/> |
+| ![media/material-attributes-6.png](media/material-attributes-6.png) | ![media/material-attributes-7.png](media/material-attributes-7.png) |
 
 | Propriedade | Descrição |
 | ---------------------- | ------------
@@ -39,13 +39,13 @@ Nas imagens abaixo, observe como a tesselação plana adiciona triângulos extra
 
 Esta opção tessella a malha usando a curvatura fornecida pela malha normal.
 
-<x1\/>media\/material-attributes-8.png<x2\/>
+![media/material-attributes-8.png](media/material-attributes-8.png)
 
 As imagens abaixo mostram como ponto normal tessellation adiciona triângulos extras enquanto leva em conta a curvatura da malha:
 
 | Sem melancia | Ponto normal de melancia |
 | ---------------|  ---------------------- |
-| <x1\/>media\/material-attributes-6.png<x2\/> | <x1\/>media\/material-attributes-9.png<x2\/> |
+| ![media/material-attributes-6.png](media/material-attributes-6.png) | ![media/material-attributes-9.png](media/material-attributes-9.png) |
 
 | Propriedade | Descrição |
 | ---------------------- | ------------
@@ -56,13 +56,13 @@ As imagens abaixo mostram como ponto normal tessellation adiciona triângulos ex
 
 Sob as propriedades **Displacement**, você pode especificar **displacement map**. Isso desloca a geometria da malha.
 
-<x1\/>media\/material-attributes-10.png<x2\/>
+![media/material-attributes-10.png](media/material-attributes-10.png)
 
 Dependendo da fase em que o deslocamento é aplicado, os resultados podem ser muito diferentes:
 
 | Deslocamento com tom de vértice | Tessellation com deslocamento |
 | ------| ----------------- |
-| <x1\/>media\/material-attributes-11.png<x2\/> | <x1\/>media\/material-attributes-12.png<x2\/> |
+| ![media/material-attributes-11.png](media/material-attributes-11.png) | ![media/material-attributes-12.png](media/material-attributes-12.png) |
 
 | Propriedade | Descrição |
 | ---------------- | ------------ 
@@ -73,19 +73,19 @@ Dependendo da fase em que o deslocamento é aplicado, os resultados podem ser mu
 
 ## Superfície
 
-<x1\/>media\/material-attributes-14.png<x2\/>
+![media/material-attributes-14.png](media/material-attributes-14.png)
 
 Sob as propriedades **Surface**, você pode definir um [Normal maps](../textures/normal-maps.md) para definir **macro** superfície normal. O mapa **normal** fornece perturbação per-pixel normal do normal da malha. Os mapas normais criam a aparência de colisões e recuos na malha:
 
 | Plano | Usando um mapa normal |
 | -----| ----------- 
-| <x1\/>media\/material-attributes-15.png<x2\/> | <x1\/>media\/material-attributes-16.png<x2\/> |
+| ![media/material-attributes-15.png](media/material-attributes-15.png) | ![media/material-attributes-16.png](media/material-attributes-16.png) |
 
 | Propriedade | Descrição |
 | ------------ | ---------------
 | Mapa normal | O provedor de cores do mapa normal |
 | Escala e deslocamento | Valores de interpretação da textura como valores positivos variando de `0.0` a `1.0`. O shader aplica uma escala para obter o intervalo `-1.0` a `1.0`. |
-| Reconstruir Z | Se não houver nenhum componente Z na textura, reconstrua-o dos componentes X e Y. Isso assume que X<x1\/>2<x2\/> + Y<x3\/>2<x4\/> + Z<x5\/>2<x6\/> = 1 e que Z é sempre positivo, então nenhum vetor normal pode apontar para o lado traseiro da superfície. Recomendamos que você habilitar esta opção, como Stride pode remover o componente Z quando você comprimir mapas normais. |
+| Reconstruir Z | Se não houver nenhum componente Z na textura, reconstrua-o dos componentes X e Y. Isso assume que X<sup>2</sup> + Y<sup>2</sup> + Z<sup>2</sup> = 1 e que Z é sempre positivo, então nenhum vetor normal pode apontar para o lado traseiro da superfície. Recomendamos que você habilitar esta opção, como Stride pode remover o componente Z quando você comprimir mapas normais. |
 
 Para obter mais informações sobre mapas normais, consulte a página [normal maps](../textures/normal-maps.md).
 
@@ -93,7 +93,7 @@ Para obter mais informações sobre mapas normais, consulte a página [normal ma
 
 Sob a configuração **Micro superfície**, você pode fornecer um mapa **gloss** para fornecer informações per-pixel para gloss.
 
-<x1\/>media\/material-attributes-17.png<x2\/>
+![media/material-attributes-17.png](media/material-attributes-17.png)
 
 Se você selecionar **Float**:
 
@@ -107,7 +107,7 @@ As capturas de tela abaixo mostram diferentes níveis de brilho em um material:
 
 | Gloss = 0,0 | 0,25 | 0,5 | 0 | 1.0 |
 | ---------------- | ---- | ---- |----- | ---
-| <x1\/>media\/material-attributes-18.png<x2\/> | <x1\/>media\/material-attributes-19.png<x2\/> | <x1\/>media\/material-attributes-20.png<x2\/> | <x1\/>media\/material-attributes-21.png<x2\/> | <x1\/>media\/material-attributes-22.png<x2\/> |
+| ![media/material-attributes-18.png](media/material-attributes-18.png) | ![media/material-attributes-19.png](media/material-attributes-19.png) | ![media/material-attributes-20.png](media/material-attributes-20.png) | ![media/material-attributes-21.png](media/material-attributes-21.png) | ![media/material-attributes-22.png](media/material-attributes-22.png) |
 
 | Property | Descrição
 | ---------------- | -- |

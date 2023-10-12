@@ -1,7 +1,7 @@
 # Programação e prioridades
 
-<x1\/>Introdução<x2\/>
-<x3\/>Programação<x4\/>
+<span class="badge text-bg-primary">Introdução</span>
+<span class="badge text-bg-success">Programação</span>
 
 Stride não executa scripts simultaneamente; eles executam um de cada vez. Onde os scripts dependem uns dos outros, você deve ter certeza de que eles funcionam na ordem correta, dando-lhes prioridades.
 
@@ -11,7 +11,7 @@ Os scripts com números de prioridade mais baixos têm prioridades mais altas. P
 
 Se os scripts têm a mesma prioridade, a ordem em que Stride os executa não é determinística. Você pode dar scripts a mesma prioridade se você não se importa em qual ordem eles funcionam.
 
-> <x1\/>!Note<x2\/>
+> [!Note]
 > Atualmente, não há como ver uma lista de prioridades em um só lugar. Você tem que definir cada prioridade de cada script individualmente nas propriedades do componente de script.
 
 ## Definir uma prioridade de script
@@ -22,7 +22,7 @@ As prioridades não são definidas nos próprios scripts. Em vez disso, eles sã
 
 2. Com a entidade selecionada, no **Property Grid**, sob as propriedades do componente **script**, defina o **Priority** você quer que o script tenha.
 
-   <x1\/>Set script prioridade<x2\/>
+   ![Set script prioridade](media/set-script-priority.png)
 
 ## Ver também
 

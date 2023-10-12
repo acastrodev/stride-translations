@@ -9,9 +9,9 @@
 <source xml:lang="en"><x id="1"/>Beginner<x id="2"/>
 <x id="3"/>Designer<x id="4"/>
 <x id="5"/>Artist<x id="6"/></source>
-<target xml:lang="pt">&lt;x1\/&gt;Introdução&lt;x2\/&gt;
-&lt;x3\/&gt;Designer&lt;x4\/&gt;
-&lt;x5\/&gt;Artista &lt;x6\/&gt;</target>
+<target xml:lang="pt"><x id="1"/>Introdução<x id="2"/>
+<x id="3"/>Designer<x id="4"/>
+<x id="5"/>Artista <x id="6"/></target>
 </trans-unit>
 <trans-unit id="tu3" xml:space="preserve">
 <source xml:lang="en">Shadows bring significant information and realism to a scene.</source>
@@ -27,11 +27,11 @@
 </trans-unit>
 <trans-unit id="tu6" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>media/SceneNoShadows.png<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt;media\/SceneNoShadows.png&lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/>media/SceneNoShadows.png<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu7" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>media/SceneWithShadows.png<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt;media\/SceneWithShadows.png&lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/>media/SceneWithShadows.png<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu8" xml:space="preserve">
 <source xml:lang="en">Only <g id="1">directional lights</g>, <g id="2">point lights</g>, and <g id="3">spot lights</g> can cast shadows.</source>
@@ -47,7 +47,7 @@
 </trans-unit>
 <trans-unit id="tu11" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Light and shadow<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt;Luz e sombra&lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/>Luz e sombra<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu12" xml:space="preserve">
 <source xml:lang="en">Everything the sun sees is in light. Everything hidden from the sun (ie behind <g id="1">occluders</g>) is in shadow.</source>
@@ -63,16 +63,16 @@
 </trans-unit>
 <trans-unit id="tu15" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>FPS scene<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt;FPS cena&lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/>FPS cena<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu16" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>FPS scene shadow map<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt;FPS cena sombra map&lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/>FPS cena sombra map<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu17" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>!Note<x id="2"/>
 Note that the directional light in the example above creates four shadow maps, one for each cascade. For more information, see the <g id="3">Directional lights</g> page.</source>
-<target xml:lang="pt">&lt;x1\/&gt;!Note&lt;x2\/&gt;
+<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
 Note que a luz direcional no exemplo acima cria quatro mapas de sombra, um para cada cascata. Para obter mais informações, consulte a página <g id="3"> Luzes direcionais</g>.</target>
 </trans-unit>
 <trans-unit id="tu18" xml:space="preserve">
@@ -93,19 +93,19 @@ Note que a luz direcional no exemplo acima cria quatro mapas de sombra, um para 
 </trans-unit>
 <trans-unit id="tu22" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>High-resolution shadow<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt; Sombra de alta resolução&lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/> Sombra de alta resolução<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu23" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Low-resolution shadow<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt; Sombra de baixa resolução &lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/> Sombra de baixa resolução <x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu24" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>FPS scene shadow map<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt;FPS cena sombra map&lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/>FPS cena sombra map<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu25" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>FPS scene shadow map<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt;FPS cena sombra map&lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/>FPS cena sombra map<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu26" xml:space="preserve">
 <source xml:lang="en">Generally, you should give more space to light sources that cast the most visible shadows.</source>
@@ -117,7 +117,7 @@ Note que a luz direcional no exemplo acima cria quatro mapas de sombra, um para 
 </trans-unit>
 <trans-unit id="tu28" xml:space="preserve">
 <source xml:lang="en">the <g id="1">shadowMapSizeFactor</g> based on the <g id="2">LightShadowMap.Size</g> property (/8, /4, /2, x1, or x2)</source>
-<target xml:lang="pt">o <g id="1">shadowMapSizeFactor</g> baseado no <g id="2">LightShadowMap.Size</g> propriedade (\/8, \/4, \/2, x1, ou x2)</target>
+<target xml:lang="pt">o <g id="1">shadowMapSizeFactor</g> baseado no <g id="2">LightShadowMap.Size</g> propriedade (/8, /4, /2, x1, ou x2)</target>
 </trans-unit>
 <trans-unit id="tu29" xml:space="preserve">
 <source xml:lang="en">the projected size of the light in screenspace (<g id="1">lightSize</g>)</source>
@@ -147,11 +147,11 @@ var shadowMapSize = NextPowerOfTwo(lightSize * shadowSizeFinalFactor);
 // Clamp to a maximum size
 shadowMapSize = min(shadowMapSize, ShadowMapBaseSize  * shadowSizeFinalFactor);
 </source>
-<target xml:lang="pt">\/\/ Calcular o fator de tamanho
+<target xml:lang="pt">// Calcular o fator de tamanho
 var shadowMapSizeFinalFactor = shadowImportanceFactor * shadowMapSizeFactor;
-\/\/ Multiplique o tamanho da luz projetada pelo fator de tamanho
+// Multiplique o tamanho da luz projetada pelo fator de tamanho
 var sombra MapSize = NextPowerOfTwo(lightSize * shadowSizeFinalFactor);
-\/\/ Braçadeira para um tamanho máximo
+// Braçadeira para um tamanho máximo
 shadowMapSize = min (shadowMapSize, ShadowMapBaseSize * shadowSizeFinalFactor);
 </target>
 </trans-unit>

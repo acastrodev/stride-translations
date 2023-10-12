@@ -1,11 +1,11 @@
 # Formas de colarinho
 
-<x1\/>Introdução<x2\/>
-<x3\/>Designer<x4\/>
+<span class="badge text-bg-primary">Introdução</span>
+<span class="badge text-bg-success">Designer</span>
 
 Para [colliders](colliders.md) interagir, você precisa definir sua forma no **Property Grid**. Você pode especificar uma forma geométrica ou usar um recurso de forma de colisão.
 
-<x1\/>Selecione uma forma de colisão<x2\/>
+![Selecione uma forma de colisão](media/select-collider-shape.png)
 
 Componentes podem ter múltiplas formas de interseção, e não tem que corresponder ao modelo de entidade, se tiver um. Cada forma tem propriedades adicionais, incluindo tamanho, orientação, deslocamento e assim por diante.
 
@@ -13,7 +13,7 @@ Componentes podem ter múltiplas formas de interseção, e não tem que correspo
 
 ### Caixa
 
-<x1\/>Box<x2\/>
+![Box](media/box.png)
 
 | Propriedade | Descrição |
 | -------------- |-------------| 
@@ -24,7 +24,7 @@ Componentes podem ter múltiplas formas de interseção, e não tem que correspo
 
 ### Cápsula
 
-<x1\/>Capítulo <x2\/>
+![Capítulo ](media/capsule.png)
 
 A forma da cápsula é especialmente útil para componentes de caracteres, pois sua base curva permite que a entidade se mova para planos mais altos (por exemplo, ao escalar escadas).
 
@@ -39,7 +39,7 @@ A forma da cápsula é especialmente útil para componentes de caracteres, pois 
 
 ### Cone
 
-<x1\/>Cone<x2\/>
+![Cone](media/cone.png)
 
 | Propriedade | Descrição |
 | -------------- |-------------| 
@@ -51,7 +51,7 @@ A forma da cápsula é especialmente útil para componentes de caracteres, pois 
 
 ### Cilindro
 
-<x1\/>Cylinder<x2\/>
+![Cylinder](media/cylinder.png)
 
 | Propriedade | Descrição |
 | -------------- |-------------| 
@@ -63,7 +63,7 @@ A forma da cápsula é especialmente útil para componentes de caracteres, pois 
 
 ### Esfera
 
-<x1\/> Esfera <x2\/>
+![ Esfera ](media/sphere.png)
 
 | Propriedade | Descrição |
 | -------------- |-------------| 
@@ -73,7 +73,7 @@ A forma da cápsula é especialmente útil para componentes de caracteres, pois 
 
 ### Avião infinito
 
-<x1\/> Plano infinito <x2\/>
+![ Plano infinito ](media/infinite-plane.png)
 
 O plano infinito cobre uma distância infinita através de uma dimensão.
 Pense nisso como uma parede ou piso que se estende para a distância para sempre.
@@ -102,11 +102,11 @@ Você também pode criar ativos de forma **collider** e usá-los como sua forma 
 
 2. Selecione **Physics**, em seguida, selecione a forma que deseja criar.
 
-   <x1\/>Criar a forma de colisor <x2\/>
+   ![Criar a forma de colisor ](media/create-collider-shape-asset.png)
 
 Game Studio cria o novo recurso de forma de colisão na pasta **CollisionMeshes**.
 
-<x1\/> Ajuste de forma de filtro no Asset View<x2\/>
+![ Ajuste de forma de filtro no Asset View](media/collider-shape-in-asset-view.png)
 
 ### Criar um recurso de forma de colide de um modelo
 
@@ -118,7 +118,7 @@ Isso é útil para criar rapidamente uma forma de colisão que combina com um mo
 
    A janela **Selecione um ativo** abre.
 
-   <x1\/>Selecionar modelo<x2\/>
+   ![Selecionar modelo](media/select-model.png)
 
 3. Navegue para o ativo do modelo que você deseja criar um ativo de forma de colide e clique em **OK**.
 
@@ -128,13 +128,13 @@ Game Studio cria um recurso de forma de colisão do modelo.
 
 1. Sob as propriedades **static collider** ou **rigidbody**, sob **Collider Shapes**, selecione **Asset**.
 
-   <x1\/>Select collider shape asset<x2\/>
+   ![Select collider shape asset](media/select-asset-collider-shape.png)
 
 2. Ao lado de **Shape**, especifique o ativo de forma de colisão que você deseja usar.
 
-   <x1\/>Select collider shape asset<x2\/>
+   ![Select collider shape asset](media/select-collider-shape-asset.png)
 
-   Para fazer isso, arraste o ativo do campo **Asset View** para o campo **Shape** na Grade de Propriedade. Alternativamente, clique em <x1\/>Hand icon<x2\/> (**Select an asset**) e navegue para o ativo.
+   Para fazer isso, arraste o ativo do campo **Asset View** para o campo **Shape** na Grade de Propriedade. Alternativamente, clique em ![Hand icon](~/manual/game-studio/media/hand-icon.png) (**Select an asset**) e navegue para o ativo.
 
 ## Ver também
 

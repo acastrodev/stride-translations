@@ -8,11 +8,11 @@
 |-------|--------|
 | Cena | Árvore de Entidade |
 | Inspector | Grade de imóveis |
-| Sistema de arquivos | Solução \/ Visualização de ativos |
+| Sistema de arquivos | Solução / Visualização de ativos |
 | Vista da cena | Editor de cenas |
 | Node | Entidade |
 | Script de nó | SyncScript, AsyncScript, StartupScript |
-| Exportação | Serialize\/DataMember |
+| Exportação | Serialize/DataMember |
 | GlobalClass | Contrato de Dados |
 
 ## Pastas e arquivos
@@ -23,7 +23,7 @@
 - Stride e Godot usam a Estrutura de Solução C# padrão. A principal diferença aqui é que a Stride usa a arquitetura multiProjeto que leva aos seguintes Projetos
    - `MyPackage.Game` contém seu código fonte.
    - `MyPackage.Platform` contém código adicional para as plataformas suportadas pelo seu projeto. Game Studio cria pastas para cada plataforma (por exemplo `MyPackage. Windows`, `MyPackage.Linux`, etc.). Essas pastas são geralmente pequenas e contêm apenas o ponto de entrada do programa.
-   - E qualquer outro Subprojeto. Stride irá analisar os Subprojetos também como o projeto principal para obter classes e recursos DataContract no Editor\/Game (não importa se o seu em um subprojeto ou não
+   - E qualquer outro Subprojeto. Stride irá analisar os Subprojetos também como o projeto principal para obter classes e recursos DataContract no Editor/Game (não importa se o seu em um subprojeto ou não
 - **Bin:** contém os binários e dados compilados. Stride cria a pasta quando você constrói o projeto, com um subdiretório para cada plataforma.
 - **obj:** contém arquivos em cache. Game Studio cria esta pasta quando você construir seu projeto. Para forçar um ativo completo e reconstruir código, excluir esta pasta e construir o projeto novamente.
 - **Recursos:** é um local sugerido para arquivos como imagens e arquivos de áudio usados por seus ativos, não confundi-los com recursos Godot, estes não existem no Stride. Stride tem no Scene Folders (estes podem ser usados de qualquer forma) onde você pode colocar classes que normalmente seriam Godot Recursos
@@ -32,12 +32,12 @@
 
 Você pode abrir o diretório do projeto de **Project > Mostrar no explorer** no Game Studio.
 
-<x1\/> Abra o diretório do projeto do Game Studio<x2\/>
+![ Abra o diretório do projeto do Game Studio](../stride-for-unity-developers/media/stride-vs-unity-open-project-in-windows-explorer.png)
 
 ## Definições do jogo
 Godot salva configurações globais no [Project Settings](https://docs.godotengine.org/cs/stable/classes/class_projectsettings.html) .
 
-<x1\/>A localização não é conhecida por me<x2\/>
+~~A localização não é conhecida por me~~
 
 Stride salva configurações globais em um único ativo, o ativo Configurações de Jogo. Você pode configurar:
 
@@ -48,7 +48,7 @@ Stride salva configurações globais em um único ativo, o ativo Configurações
 - Configurações de física
 - Substituições
 - 
-Para usar o ativo Configurações do Jogo, no **Asset View**, selecione **GameSettings** e veja suas propriedades no **Property Grid**.
+Para usar o ativo Configurações de Jogo, no **Asset View**, selecione **GameSettings** e veja suas propriedades no **Property Grid**.
 
 ## Cenas
 
@@ -96,21 +96,21 @@ Em Stride você tem a opção de obter a entrada através de traços chave como 
 ```cs
 atualização()
 (
-    \/\/ verdadeiro para um quadro em que a barra de espaço foi pressionada
+    // verdadeiro para um quadro em que a barra de espaço foi pressionada
     if(Input.IsKeyDown(Keys.Space))))
     (
-        \/\/ Faz alguma coisa.
+        // Faz alguma coisa.
     }
 
-    \/\/ verdadeiro enquanto este botão de joystick está para baixo
+    // verdadeiro enquanto este botão de joystick está para baixo
     se (Input.GameControllers[0].IsButtonDown(0))
     (
-        \/\/ Faz alguma coisa.
+        // Faz alguma coisa.
     }
 
     flutuar Horiz = (Input.IsKeyDown (Keys.Left) ? - 1f 0) + (Input.IsKeyDown (Keys.Right)? 1f 0);
     float Vert = (Input.IsKeyDown (Keys.Down) ? - 1f 0) + (Input.IsKeyDown (Keys.Up)? 1f 0);
-    \/\/Faz outra coisa.
+    //Faz outra coisa.
 }
 ```
 
@@ -165,7 +165,7 @@ Por exemplo, em vez de herdar de `CharacterBody3D` em Godot, em Stride você ane
 #### Exemplo de Stride
 
 ```csharp
-\/\/ Exemplo de pesquisa para um CharacterComponent em Stride
+// Exemplo de pesquisa para um CharacterComponent em Stride
 classe pública MyScript : Sincronização
 (
     atualização()
@@ -174,7 +174,7 @@ classe pública MyScript : Sincronização
 
         if (characterComponent!= null)
         (
-            \/\/ Executar ações no caracterComponent
+            // Executar ações no caracterComponent
         }
     }
 }
@@ -192,15 +192,15 @@ Esta abordagem em Stride incorpora o princípio de "Delegação sobre a Herança
 ```csharp
 classe pública BasicMethods: StartupScript
 (
-    \/\/ Campos e propriedades de membros públicos que serão visíveis no Game Studio
+    // Campos e propriedades de membros públicos que serão visíveis no Game Studio
     anula de sobreposição pública Start()
     (
-        \/\/ Código de inicialização para o script
+        // Código de inicialização para o script
     }
 
     sobreposição pública cancel()
     (
-        \/\/ Código de limpeza para o script
+        // Código de limpeza para o script
     }     
 }
 ```
@@ -210,17 +210,17 @@ classe pública BasicMethods: StartupScript
 ```csharp
 classe pública BasicMethods: Node
 (
-    \/\/ Este método é equivalente a Stride's Start in StartupScript
+    // Este método é equivalente a Stride's Start in StartupScript
     sobreposição pública vazio _Ready()
     (
-        \/\/ Código de inicialização para o script
+        // Código de inicialização para o script
     }
 
-    \/\/ Godot não tem um equivalente direto a Stride's Cancel,
-    \/\/ mas você poderia usar _ExitTree para limpeza
+    // Godot não tem um equivalente direto a Stride's Cancel,
+    // mas você poderia usar _ExitTree para limpeza
     anula de sobreposição pública _ExitTree()
     (
-        \/\/ Código de limpeza para o script
+        // Código de limpeza para o script
     }
 }
 ```
@@ -243,10 +243,10 @@ classe pública BasicMethods: Sincronização
     público anulado Cancelar() { }        
     atualização()
     (
-        \/\/ Acesso delta tempo em Stride
+        // Acesso delta tempo em Stride
         double deltaTime = Game.UpdateTime.Elapsed.TotalSeconds;
 
-        \/\/ Realizar ações com base no delta Tempo
+        // Realizar ações com base no delta Tempo
     }
 }
 ```
@@ -260,7 +260,7 @@ classe pública BasicMethods: Node
     anulado público _ExitTree() { }        
     anula de sobreposição pública _Process(double delta)
     (
-        \/\/ Realizar ações com base no delta
+        // Realizar ações com base no delta
     }
 }
 
@@ -272,32 +272,32 @@ Tanto Stride quanto Godot fornecem maneiras de executar o código assíncrono, m
 
 #### Exemplo de Stride
 
-Stride oferece uma classe especializada `AsyncScript` que permite executar o código assíncrono usando a sintaxe `async`\/`await`. O método `Execute()` pode ser aguardado, permitindo que seu código seja executado sem bloquear o loop principal do jogo.
+Stride oferece uma classe especializada `AsyncScript` que permite executar o código assíncrono usando a sintaxe `async`/`await`. O método `Execute()` pode ser aguardado, permitindo que seu código seja executado sem bloquear o loop principal do jogo.
 
 
 ```csharp
 classe pública BasicMethods: AsyncScript
 (
-    \/\/ Campos e propriedades de membros públicos serão visíveis no Game Studio
+    // Campos e propriedades de membros públicos serão visíveis no Game Studio
     override público async Task Execute()
     (
-        \/\/ O código de inicialização deve vir aqui, se necessário
+        // O código de inicialização deve vir aqui, se necessário
 
-        \/\/ Loop até o fim do jogo (opcional dependendo do script)
+        // Loop até o fim do jogo (opcional dependendo do script)
         enquanto (Game.IsRunning)
         (
             aguarde MyEvent;
 
-            \/\/ Faz alguma coisa
+            // Faz alguma coisa
 
-            \/\/ Aguarde o próximo quadro (opcional dependendo do script)
+            // Aguarde o próximo quadro (opcional dependendo do script)
             await Script.NextFrame();
         }
     }
 
     sobreposição pública cancel()
     (
-        \/\/ Código de limpeza para o script
+        // Código de limpeza para o script
     }     
 }
 
@@ -313,13 +313,13 @@ classe pública BasicMethods: Node
     público async anulado _Ready()
     (
         esperar ToSignal (GetTree().CreateTimer(1.0f), "timeout");
-        \/\/ Executar código após 1 segundo timer elapses
+        // Executar código após 1 segundo timer elapses
     }
 
-    \/\/ Godot não tem um equivalente direto ao método Stride's Cancel
+    // Godot não tem um equivalente direto ao método Stride's Cancel
     anula de sobreposição pública _ExitTree()
     (
-        \/\/ Código de limpeza para o script
+        // Código de limpeza para o script
     }
 }
 ```
@@ -336,7 +336,7 @@ Em Stride e Godot, os scripts são usados para definir comportamento e lógica p
 
 Para criar um script, clique em ** Adicionar asset** e selecione **Scripts**.
 
-<x1\/>Criar script em Stride<x2\/>
+![Criar script em Stride](../stride-for-unity-developers/media/stride-vs-unity-create-script.png)
 
 Stride tem uma classe [SyncScript](xref:Stride.Engine.SyncScript) que vem com métodos como:
 
@@ -347,13 +347,13 @@ Stride tem uma classe [SyncScript](xref:Stride.Engine.SyncScript) que vem com m�
 Se você precisar de lógica assíncrona ou específica de inicialização, você pode usar:
 
 * [StartupScript](xref:Stride.Engine.StartupScript): este script tem um único método [Start()](xref:Stride.Engine.StartupScript.Start). Ele inicializa a cena e seu conteúdo na inicialização.
-* [AsyncScript](xref:Stride.Engine.AsyncScript): um script assíncrono com um único método [Execute()](xref:Stride.Engine.AsyncScript.Execute) e você pode usar `async`\/>\/`await` dentro desse método. Os scripts assíncronos não são carregados um por um como scripts síncronos. Em vez disso, estão todos carregados em paralelo.
+* [AsyncScript](xref:Stride.Engine.AsyncScript): um script assíncrono com um único método [Execute()](xref:Stride.Engine.AsyncScript.Execute) e você pode usar `async`/>/`await` dentro desse método. Os scripts assíncronos não são carregados um por um como scripts síncronos. Em vez disso, estão todos carregados em paralelo.
 
 #### Deus
 
 Em Godot, você pode criar um script do editor ou anexar um script existente a um nó através do Inspector.
 
-Em Godot, você usa métodos como `_Ready()` para inicialização e `_Process(delta)` para atualizações frame-by-frame. Godot também suporta a sintaxe `async`\/`await` em C#.
+Em Godot, você usa métodos como `_Ready()` para inicialização e `_Process(delta)` para atualizações frame-by-frame. Godot também suporta a sintaxe `async`/`await` em C#.
 
 
 ### Conjuntos de recarga
@@ -362,7 +362,7 @@ Em Godot, você usa métodos como `_Ready()` para inicialização e `_Process(de
 
 Depois de criar ou editar um script, você deve recarregar manualmente as assembléias clicando **Reload assemblies** na barra de ferramentas Game Studio.
 
-<x1\/>Reload assemblies<x2\/>
+![Reload assemblies](../platforms/media/reload-assemblies.png)
 
 #### Deus
 
@@ -374,10 +374,10 @@ Godot automaticamente recarrega scripts quando eles são salvos, nenhuma recarga
 
 1. No **Entity Tree** (à esquerda por padrão), ou na cena, selecione a entidade a que deseja adicionar o script.
 
-   <x1\/>Selecione uma entidade<x2\/>
+   ![Selecione uma entidade](../scripts/media/select-entity.png)
 2. No **Property Grid** (à direita por padrão), clique em **Add component** e selecione o script que deseja adicionar.
 
-   <x1\/> Adicionar componente de script<x2\/>
+   ![ Adicionar componente de script](../scripts/media/add-script-component.png)
 
 #### Deus
 
@@ -393,24 +393,24 @@ Para obter mais informações sobre como adicionar scripts no Stride, consulte [
 Em Stride, você pode instanciar entidades usando prefabs como assim:
 
 ```cs
-\/\/ Campos e propriedades de membros públicos exibidos no Game Studio Property Grid
+// Campos e propriedades de membros públicos exibidos no Game Studio Property Grid
 público pré-fabricada CarPrefab;
 público Vector3 SpawnPosition;
 público Quaternion SpawnRotation;
 
 anula de sobreposição pública Start()
 (
-    \/\/ Inicialização do script
+    // Inicialização do script
     List<Entity> carEntidades = CarPrefab.Instantiate();
     
-    \/\/ Adicione as entidades instantâneas à cena raiz
+    // Adicione as entidades instantâneas à cena raiz
     SceneSystem.SceneInstance.RootScene.Entities.AddRange(carEntities);
     
-    \/\/ Defina a posição e a rotação da primeira entidade na lista
+    // Defina a posição e a rotação da primeira entidade na lista
     carEntities[0].Transform.Position = SpawnPosition;
     carEntities[0]. Transform.Rotation = SpawnRotation;
     
-    \/\/ Opcionalmente, você pode definir um nome para a entidade
+    // Opcionalmente, você pode definir um nome para a entidade
     carEntities[0]. Nome = "MyNewEntity";
 }
 ```
@@ -476,15 +476,15 @@ Você pode serializar qualquer classe marcada com `[DataContract]` no editor, in
 
 ## Saída de log
 
-Em Godot você pode GD. Imprima sua mensagem. \/\/TODO O que significa?
+Em Godot você pode GD. Imprima sua mensagem. //TODO O que significa?
 
 Para visualizar a saída de log, vá para a barra de ferramentas **Game Studio** e clique em **View**, então ative a opção **Output**.
 
-<x1\/> Activar saída<x2\/>
+![ Activar saída](../stride-for-unity-developers/media/enable-output.png)
 
 Uma vez habilitado, a aba **Output** aparecerá, tipicamente localizada na parte inferior da interface **Game Studio**.
 
-<x1\/>Output tab<x2\/>
+![Output tab](../stride-for-unity-developers/media/output-tab.png)
 
 
 ### Imprimir mensagens de depuração
@@ -495,5 +495,5 @@ Para imprimir na saída Visual Studio, use:
 System.Diagnostics.Debug.WriteLine("hello");
 ```
 
-> <x1\/>!Note<x2\/>
+> [!Note]
 > Para imprimir mensagens de depuração, você tem que executar o jogo do Visual Studio, não Game Studio. Não há como imprimir na janela de saída do Game Studio.

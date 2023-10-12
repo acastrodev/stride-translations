@@ -4,7 +4,7 @@
 
 Você não precisa criar um slot de câmera diferente para cada câmera. Em vez disso, você pode simplesmente mudar quais câmeras usam cada slot. A melhor prática é desativar os componentes da câmera em câmeras que você não precisa.
 
-> <x1\/>!Note<x2\/>
+> [!Note]
 > Cada slot de câmera deve ter uma câmera atribuída a ela. Se você tiver um slot de câmera não usado, exclua-o.
 >
 > Você não pode atribuir uma única câmera a mais de um slot. Se você precisar fazer isso, duplique a entidade da câmera e atribua-a a um slot diferente.
@@ -15,23 +15,23 @@ Você não precisa criar um slot de câmera diferente para cada câmera. Em vez 
 
 1. No **Asset View** (no painel inferior por padrão), clique duas vezes no **Graphics Compositor** ativo.
 
-   <x1\/>Gráficos Compositor asset<x2\/>
+   ![Gráficos Compositor asset](../graphics-compositor/media/graphics-compositor-asset.png)
 
    O editor de compositores gráficos abre.
 
-   <x1\/>Gráfico Compositor editor<x2\/>
+   ![Gráfico Compositor editor](../graphics-compositor/media/graphics-compositor-editor.png)
 
    Para obter mais informações sobre o compositor gráfico, consulte a página [Graphics compositor](../graphics-compositor/index.md).
 
-2. No editor de compositores gráficos, à esquerda, sob **Camera slots**, clique em <x1\/>Green plus button<x2\/> (**Add**).
+2. No editor de compositores gráficos, à esquerda, sob **Camera slots**, clique em ![Green plus button](~/manual/game-studio/media/green-plus-icon.png) (**Add**).
 
-   <x1\/>Camera slots<x2\/>
+   ![Camera slots](../graphics-compositor/media/graphics-compositor-camera-slots.png)
 
    Game Studio adiciona um novo slot de câmera à lista:
 
-   <x1\/>Camera slot adicionado <x2\/>
+   ![Camera slot adicionado ](../graphics-compositor/media/camera-slot-added.png)
 
-   > <x1\/>!Tip<x2\/>
+   > [!Tip]
    > Para nomear um slot de câmera, clique duas vezes na lista e digite um novo nome.
 
 ## Ligar uma câmera para um slot de câmera
@@ -40,10 +40,10 @@ Você não precisa criar um slot de câmera diferente para cada câmera. Em vez 
 
 2. No **Property Grid** (à direita por padrão), nas propriedades do componente **Camera**G2>, abaixo de **Slot**, selecione a ranhura que deseja ligar a câmara.
 
-   > <x1\/>!Note<x2\/>
+   > [!Note]
    > O menu drop-down lista slots de câmera do compositor gráfico selecionado nas configurações [game](../../game-studio/game-settings.md).
 
-   <x1\/>media\/graphics-compositor-overview-2.png<x2\/>
+   ![media/graphics-compositor-overview-2.png](../graphics-compositor/media/graphics-compositor-overview-2.png)
 
 Os jogos de compositor gráfico permitiram câmeras para seus slots apropriados cada quadro.
 
@@ -58,7 +58,7 @@ var câmera = nova CameraComponent();
 
 Para alterar a câmera no tempo de execução, alterne a propriedade ``Ativado``.
 
-> <x1\/>!Note<x2\/>
+> [!Note]
 > Certifique-se de que:
 >
 > * sempre tem pelo menos uma câmera habilitada

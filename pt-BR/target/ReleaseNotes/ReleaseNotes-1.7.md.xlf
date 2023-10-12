@@ -31,7 +31,7 @@ Ele também funciona com objetos transparentes fora da caixa, assim como renderi
 </trans-unit>
 <trans-unit id="tu7" xml:space="preserve">
 <source xml:lang="en"><g id="1"><x id="2"/>Hundreds of lights<x id="3"/></g>Hundreds of lights<ex id="4"/></source>
-<target xml:lang="pt"><g id="1">&lt;x1\/&gt; Centrais de luzes&lt;x2\/&gt;</g> Centenas de luzes&lt;ex1\/&gt;</target>
+<target xml:lang="pt"><g id="1"><x id="2"/> Centrais de luzes<x id="3"/></g> Centenas de luzes<ex id="4"/></target>
 </trans-unit>
 <trans-unit id="tu8" xml:space="preserve">
 <source xml:lang="en">If your game requires Direct3D10+ (or equivalent OpenGL), this will be the default setting - no changes needed! As a bonus, you'll see a decrease in compilation times and the number of shader permutations.</source>
@@ -53,7 +53,7 @@ O suporte experimental também foi adicionado para Windows e Linux. O Android se
 </trans-unit>
 <trans-unit id="tu12" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Vulkan<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt;Vulkan&lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/>Vulkan<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu13" xml:space="preserve">
 <source xml:lang="en">Together with Direct3D12 and the recent overhaul of our rendering pipeline, this is another step toward preparing Xenko for the next generation of graphics. Stay tuned for performance improvements and hard numbers in the near future.</source>
@@ -77,7 +77,7 @@ O suporte experimental também foi adicionado para Windows e Linux. O Android se
 </trans-unit>
 <trans-unit id="tu18" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>New add asset menu<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt; Novo adicionar menu de ativos&lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/> Novo adicionar menu de ativos<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu19" xml:space="preserve">
 <source xml:lang="en">Camera Preview</source>
@@ -89,7 +89,7 @@ O suporte experimental também foi adicionado para Windows e Linux. O Android se
 </trans-unit>
 <trans-unit id="tu21" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Camera preview<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt; Visualização da câmara &lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/> Visualização da câmara <x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu22" xml:space="preserve">
 <source xml:lang="en">Drag &amp; Drop Assets into the Property Grid</source>
@@ -105,7 +105,7 @@ O suporte experimental também foi adicionado para Windows e Linux. O Android se
 </trans-unit>
 <trans-unit id="tu25" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Drag &amp; Drop into the Property Grid<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt;Drag &amp; Drop in the Property Grid&lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/>Drag &amp; Drop in the Property Grid<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu26" xml:space="preserve">
 <source xml:lang="en">Drag &amp; Drop scripts</source>
@@ -117,7 +117,7 @@ O suporte experimental também foi adicionado para Windows e Linux. O Android se
 </trans-unit>
 <trans-unit id="tu28" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Drag &amp; Drop into the Property Grid<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt;Drag &amp; Drop in the Property Grid&lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/>Drag &amp; Drop in the Property Grid<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu29" xml:space="preserve">
 <source xml:lang="en">Linux</source>
@@ -133,7 +133,7 @@ O suporte experimental também foi adicionado para Windows e Linux. O Android se
 </trans-unit>
 <trans-unit id="tu32" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Select Platforms Dialog<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt;Selecionar Plataformas Diálogo&lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/>Selecionar Plataformas Diálogo<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu33" xml:space="preserve">
 <source xml:lang="en">Deployment to a remote Linux box is done via SSH when running your project from GameStudio.</source>
@@ -141,7 +141,7 @@ O suporte experimental também foi adicionado para Windows e Linux. O Android se
 </trans-unit>
 <trans-unit id="tu34" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Platform Selector<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt; Seletor de formulários &lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/> Seletor de formulários <x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu35" xml:space="preserve">
 <source xml:lang="en">To know more about our Linux support, read the <g id="1">Linux documentation</g></source>
@@ -167,7 +167,7 @@ Embora a maioria das mudanças sejam internas, a API pública melhorou, e ainda 
 </trans-unit>
 <trans-unit id="tu40" xml:space="preserve">
 <source xml:lang="en">Xenko's API now builds on OpenAL for Linux/macOS/iOS, on OpenSLES for Android and on XAudio2 for Windows platforms.</source>
-<target xml:lang="pt">A API do Xenko agora baseia-se no OpenAL para Linux\/macOS\/iOS, no OpenSLES para Android e no XAudio2 para plataformas Windows.</target>
+<target xml:lang="pt">A API do Xenko agora baseia-se no OpenAL para Linux/macOS/iOS, no OpenSLES para Android e no XAudio2 para plataformas Windows.</target>
 </trans-unit>
 <trans-unit id="tu41" xml:space="preserve">
 <source xml:lang="en">How To Upgrade</source>
@@ -315,7 +315,7 @@ mySoundInstance.Play();
 </trans-unit>
 <trans-unit id="tu65" xml:space="preserve">
 <source xml:lang="en">Lastly, you no longer have to register (<g id="1">AddListener</g>/<g id="2">RemoveListener</g>) <g id="3">AudioListenerComponent</g> from your code anymore.</source>
-<target xml:lang="pt">Por último, você já não precisa se registrar (<g id="1">AddListener</g>\/<g id="2">RemoveListener</g>) <g id="3">AudioListenerComponent</g> de seu código mais.</target>
+<target xml:lang="pt">Por último, você já não precisa se registrar (<g id="1">AddListener</g>/<g id="2">RemoveListener</g>) <g id="3">AudioListenerComponent</g> de seu código mais.</target>
 </trans-unit>
 <trans-unit id="tu66" xml:space="preserve">
 <source xml:lang="en">Breaking changes</source>
@@ -367,7 +367,7 @@ mySoundInstance.Play();
 </trans-unit>
 <trans-unit id="tu78" xml:space="preserve">
 <source xml:lang="en">Release date: 2016/07/01</source>
-<target xml:lang="pt">Data de lançamento: 2016\/07\/01</target>
+<target xml:lang="pt">Data de lançamento: 2016/07/01</target>
 </trans-unit>
 <trans-unit id="tu79" xml:space="preserve">
 <source xml:lang="en">Enhancements</source>
@@ -387,7 +387,7 @@ mySoundInstance.Play();
 </trans-unit>
 <trans-unit id="tu83" xml:space="preserve">
 <source xml:lang="en">You can now change the Pitch/Speed of a <g id="1">SoundInstance</g>!</source>
-<target xml:lang="pt">Agora você pode mudar o Pitch\/Speed de um <g id="1">SoundInstance</g>!</target>
+<target xml:lang="pt">Agora você pode mudar o Pitch/Speed de um <g id="1">SoundInstance</g>!</target>
 </trans-unit>
 <trans-unit id="tu84" xml:space="preserve">
 <source xml:lang="en">Added master volume control in <g id="1">AudioEngine</g> (<g id="2">AudioEngine.MasterVolume</g>)</source>
@@ -479,7 +479,7 @@ mySoundInstance.Play();
 </trans-unit>
 <trans-unit id="tu106" xml:space="preserve">
 <source xml:lang="en">Added a way to keep a constrained aspect ratio in Render Camera, and automatically have pillarboxes/letterboxes when there are screens with different ratios</source>
-<target xml:lang="pt">Adicionado uma maneira de manter uma relação de aspecto restrito em Render Camera, e automaticamente ter pilarboxes\/letterboxes quando há telas com diferentes razões</target>
+<target xml:lang="pt">Adicionado uma maneira de manter uma relação de aspecto restrito em Render Camera, e automaticamente ter pilarboxes/letterboxes quando há telas com diferentes razões</target>
 </trans-unit>
 <trans-unit id="tu107" xml:space="preserve">
 <source xml:lang="en">Added the concept of "LogicalGroup" to easily do partial updates of constant buffer and resources</source>
@@ -519,7 +519,7 @@ mySoundInstance.Play();
 </trans-unit>
 <trans-unit id="tu116" xml:space="preserve">
 <source xml:lang="en">Undo/redo has been fixed in a lot of scenarios</source>
-<target xml:lang="pt">Desfazer\/refazer foi corrigido em muitos cenários</target>
+<target xml:lang="pt">Desfazer/refazer foi corrigido em muitos cenários</target>
 </trans-unit>
 <trans-unit id="tu117" xml:space="preserve">
 <source xml:lang="en">GameStudio layout issue when creating a new game with the same name as a previous (but deleted) game</source>
@@ -555,7 +555,7 @@ mySoundInstance.Play();
 </trans-unit>
 <trans-unit id="tu125" xml:space="preserve">
 <source xml:lang="en">Improved name collision handling when creating/importing assets</source>
-<target xml:lang="pt">Manuseio melhorado da colisão do nome ao criar\/importar ativos</target>
+<target xml:lang="pt">Manuseio melhorado da colisão do nome ao criar/importar ativos</target>
 </trans-unit>
 <trans-unit id="tu126" xml:space="preserve">
 <source xml:lang="en">Issues with the selection of entities in the scene editor (some entities remained selected from the property grid point of view even after being unselected from the tree view)</source>
@@ -579,7 +579,7 @@ mySoundInstance.Play();
 </trans-unit>
 <trans-unit id="tu131" xml:space="preserve">
 <source xml:lang="en">Release date: 2016/07/04</source>
-<target xml:lang="pt">Data de lançamento: 2016\/07\/04</target>
+<target xml:lang="pt">Data de lançamento: 2016/07/04</target>
 </trans-unit>
 <trans-unit id="tu132" xml:space="preserve">
 <source xml:lang="en">Enhancements</source>
@@ -619,7 +619,7 @@ mySoundInstance.Play();
 </trans-unit>
 <trans-unit id="tu141" xml:space="preserve">
 <source xml:lang="en">Release date: 2016/07/09</source>
-<target xml:lang="pt">Data de lançamento: 2016\/07\/2009</target>
+<target xml:lang="pt">Data de lançamento: 2016/07/2009</target>
 </trans-unit>
 <trans-unit id="tu142" xml:space="preserve">
 <source xml:lang="en">Enhancements</source>
@@ -675,7 +675,7 @@ mySoundInstance.Play();
 </trans-unit>
 <trans-unit id="tu155" xml:space="preserve">
 <source xml:lang="en">Release date: 2016/07/16</source>
-<target xml:lang="pt">Data de lançamento: 2016\/07\/16</target>
+<target xml:lang="pt">Data de lançamento: 2016/07/16</target>
 </trans-unit>
 <trans-unit id="tu156" xml:space="preserve">
 <source xml:lang="en">Enhancements</source>
@@ -719,7 +719,7 @@ mySoundInstance.Play();
 </trans-unit>
 <trans-unit id="tu166" xml:space="preserve">
 <source xml:lang="en">Release date: 2016/07/21</source>
-<target xml:lang="pt">Data de lançamento: 2016\/07\/21</target>
+<target xml:lang="pt">Data de lançamento: 2016/07/21</target>
 </trans-unit>
 <trans-unit id="tu167" xml:space="preserve">
 <source xml:lang="en">New features</source>
@@ -739,7 +739,7 @@ mySoundInstance.Play();
 </trans-unit>
 <trans-unit id="tu171" xml:space="preserve">
 <source xml:lang="en">Compatible with latest Xamarin iOS Alpha (symbols are static-linked, so unused P/Invoke needs to be removed)</source>
-<target xml:lang="pt">Compatível com o mais recente Xamarin iOS Alpha (símbolos são ligados à estática, então P\/Invoke não utilizado precisa ser removido)</target>
+<target xml:lang="pt">Compatível com o mais recente Xamarin iOS Alpha (símbolos são ligados à estática, então P/Invoke não utilizado precisa ser removido)</target>
 </trans-unit>
 <trans-unit id="tu172" xml:space="preserve">
 <source xml:lang="en">Issues fixed</source>
@@ -759,7 +759,7 @@ mySoundInstance.Play();
 </trans-unit>
 <trans-unit id="tu176" xml:space="preserve">
 <source xml:lang="en">Release date: 2016/07/22</source>
-<target xml:lang="pt">Data de lançamento: 2016\/07\/22</target>
+<target xml:lang="pt">Data de lançamento: 2016/07/22</target>
 </trans-unit>
 <trans-unit id="tu177" xml:space="preserve">
 <source xml:lang="en">New fatures</source>
@@ -799,7 +799,7 @@ mySoundInstance.Play();
 </trans-unit>
 <trans-unit id="tu186" xml:space="preserve">
 <source xml:lang="en">Release date: 2016/07/29</source>
-<target xml:lang="pt">Data de lançamento: 2016\/07\/29</target>
+<target xml:lang="pt">Data de lançamento: 2016/07/29</target>
 </trans-unit>
 <trans-unit id="tu187" xml:space="preserve">
 <source xml:lang="en">New features</source>
@@ -823,7 +823,7 @@ mySoundInstance.Play();
 </trans-unit>
 <trans-unit id="tu192" xml:space="preserve">
 <source xml:lang="en">GameStudio: Some asset change notifications were not sent properly in case of undo/redo</source>
-<target xml:lang="pt">GameStudio: Algumas notificações de alteração de ativos não foram enviadas corretamente em caso de desfazer\/refazer</target>
+<target xml:lang="pt">GameStudio: Algumas notificações de alteração de ativos não foram enviadas corretamente em caso de desfazer/refazer</target>
 </trans-unit>
 <trans-unit id="tu193" xml:space="preserve">
 <source xml:lang="en">GameStudio: Entity focus was not working in some cases</source>
@@ -859,7 +859,7 @@ mySoundInstance.Play();
 </trans-unit>
 <trans-unit id="tu201" xml:space="preserve">
 <source xml:lang="en">Release date: 2016/08/05</source>
-<target xml:lang="pt">Data de lançamento: 2016\/08\/05</target>
+<target xml:lang="pt">Data de lançamento: 2016/08/05</target>
 </trans-unit>
 <trans-unit id="tu202" xml:space="preserve">
 <source xml:lang="en">New features</source>
@@ -915,7 +915,7 @@ mySoundInstance.Play();
 </trans-unit>
 <trans-unit id="tu215" xml:space="preserve">
 <source xml:lang="en">Release date: 2016/08/05</source>
-<target xml:lang="pt">Data de lançamento: 2016\/08\/05</target>
+<target xml:lang="pt">Data de lançamento: 2016/08/05</target>
 </trans-unit>
 <trans-unit id="tu216" xml:space="preserve">
 <source xml:lang="en">Note: emergency bugfix for 1.7.8 release, which was not properly copying native libraries.</source>

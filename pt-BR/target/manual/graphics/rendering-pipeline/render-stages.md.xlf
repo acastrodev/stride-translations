@@ -7,7 +7,7 @@
 </trans-unit>
 <trans-unit id="tu2" xml:space="preserve">
 <source xml:lang="en"><g id="1">Render stages</g> define how given objects are rendered (usually with their associated <g id="2">effect/shader</g>). They also let you control advanced properties such as sorting and filtering objects.</source>
-<target xml:lang="pt"><g id="1"> Etapas de gênero</g> definem como os objetos dados são renderizados (geralmente com seu <g id="2">effect\/shader</g>). Eles também permitem que você controle propriedades avançadas, como classificação e filtragem de objetos.</target>
+<target xml:lang="pt"><g id="1"> Etapas de gênero</g> definem como os objetos dados são renderizados (geralmente com seu <g id="2">effect/shader</g>). Eles também permitem que você controle propriedades avançadas, como classificação e filtragem de objetos.</target>
 </trans-unit>
 <trans-unit id="tu3" xml:space="preserve">
 <source xml:lang="en">Objects can subscribe to multiple render stages. For example, a mesh typically subscribes to both the <g id="1">Opaque</g> and <g id="2">ShadowCaster</g> stages, or the <g id="3">Transparent</g> stage.</source>
@@ -16,7 +16,7 @@
 <trans-unit id="tu4" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>!Note<x id="2"/>
 Render stages don't define the rendering order. The rendering order is controlled by the <g id="3">graphics compositor</g>.</source>
-<target xml:lang="pt">&lt;x1\/&gt;!Note&lt;x2\/&gt;
+<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
 Os estágios de renderização não definem a ordem de renderização. A ordem de renderização é controlada pelo compositor <g id="3">graphics</g>.</target>
 </trans-unit>
 <trans-unit id="tu5" xml:space="preserve">
@@ -25,7 +25,7 @@ Os estágios de renderização não definem a ordem de renderização. A ordem d
 </trans-unit>
 <trans-unit id="tu6" xml:space="preserve">
 <source xml:lang="en"><g id="1">Effect slots</g> determine which <g id="2">effect/shader</g> a render stage uses. You choose the effect slot with @'Stride.Rendering.RenderStage.EffectSlotName'.</source>
-<target xml:lang="pt"><g id="1">Effect slots</g> determinam qual <g id="2">effect\/shader</g> um estágio de renderização usa. Você escolhe o slot de efeito com @'Stride.Rendering.RenderStage.EffectSlotName'.</target>
+<target xml:lang="pt"><g id="1">Effect slots</g> determinam qual <g id="2">effect/shader</g> um estágio de renderização usa. Você escolhe o slot de efeito com @'Stride.Rendering.RenderStage.EffectSlotName'.</target>
 </trans-unit>
 <trans-unit id="tu7" xml:space="preserve">
 <source xml:lang="en">If multiple render stages exclusively render different objects, the stages can share the same effect slot. For example, as the opaque stage only renders opaque objects and the transparent stage only renders transparent objects, both stages can use the main effect slot.</source>

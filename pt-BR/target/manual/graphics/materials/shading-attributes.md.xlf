@@ -9,9 +9,9 @@
 <source xml:lang="en"><x id="1"/>Intermediate<x id="2"/>
 <x id="3"/>Artist<x id="4"/>
 <x id="5"/>Programmer<x id="6"/></source>
-<target xml:lang="pt">&lt;x1\/&gt; Intermediário &lt;x2\/&gt;
-&lt;x3\/&gt;Artista &lt;x4\/&gt;
-&lt;x5\/&gt;Programação&lt;x6\/&gt;</target>
+<target xml:lang="pt"><x id="1"/>Intermediário<x id="2"/>
+<x id="3"/>Artista <x id="4"/>
+<x id="5"/>Programação<x id="6"/></target>
 </trans-unit>
 <trans-unit id="tu3" xml:space="preserve">
 <source xml:lang="en">The material <g id="1">shading attributes</g> define the color characteristics of the material and how it reacts to light.</source>
@@ -19,12 +19,12 @@
 </trans-unit>
 <trans-unit id="tu4" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Shading attributes<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt;Shading atributos&lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/>Shading atributos<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu5" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>!Note<x id="2"/>
 To display a material, you need to select at least one shading model (diffuse, specular or emissive model) in the model attributes.</source>
-<target xml:lang="pt">&lt;x1\/&gt;!Note&lt;x2\/&gt;
+<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
 Para exibir um material, você precisa selecionar pelo menos um modelo de sombreamento (diffuse, modelo especular ou emissivo) nos atributos do modelo.</target>
 </trans-unit>
 <trans-unit id="tu6" xml:space="preserve">
@@ -37,7 +37,7 @@ Para exibir um material, você precisa selecionar pelo menos um modelo de sombre
 </trans-unit>
 <trans-unit id="tu8" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>media/material-attributes-25.png<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt;media\/material-attributes-25.png&lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/>media/material-attributes-25.png<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu9" xml:space="preserve">
 <source xml:lang="en">The final diffuse contribution is calculated like this:</source>
@@ -57,7 +57,7 @@ Para exibir um material, você precisa selecionar pelo menos um modelo de sombre
 </trans-unit>
 <trans-unit id="tu13" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>media/material-attributes-23.png<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt;media\/material-attributes-23.png&lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/>media/material-attributes-23.png<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu14" xml:space="preserve">
 <source xml:lang="en">Diffuse model</source>
@@ -77,12 +77,12 @@ Para exibir um material, você precisa selecionar pelo menos um modelo de sombre
 </trans-unit>
 <trans-unit id="tu18" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>media/material-attributes-24.png<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt;media\/material-attributes-24.png&lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/>media/material-attributes-24.png<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu19" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>!Note<x id="2"/>
 A pure Lambertian material doesn't exist in reality. A material always has a little specular reflection. This effect is more visible at grazing angles (a mostly diffuse surface becomes shiny at grazing angle).</source>
-<target xml:lang="pt">&lt;x1\/&gt;!Note&lt;x2\/&gt;
+<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
 Um material lambertiano puro não existe na realidade. Um material sempre tem uma pequena reflexão especular. Este efeito é mais visível em ângulos de pastagem (uma superfície mais difusa torna-se brilhante em ângulo de pastagem).</target>
 </trans-unit>
 <trans-unit id="tu20" xml:space="preserve">
@@ -119,7 +119,7 @@ Um material lambertiano puro não existe na realidade. Um material sempre tem um
 </trans-unit>
 <trans-unit id="tu28" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Specular highlight<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt; Destaque especial&lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/> Destaque especial<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu29" xml:space="preserve">
 <source xml:lang="en">The specular color can be defined using a metalness map (which uses the diffuse color as a base color), or a specular map (the specular color is defined separately from the diffuse color).</source>
@@ -135,7 +135,7 @@ Um material lambertiano puro não existe na realidade. Um material sempre tem um
 </trans-unit>
 <trans-unit id="tu32" xml:space="preserve">
 <source xml:lang="en">By taking into into account the fact that almost all materials always have some "metalness"/reflectance in them, using the metalness map provides realistic materials with minimal parametrization.</source>
-<target xml:lang="pt">Ao levar em conta o fato de que quase todos os materiais sempre têm alguma "metalidade" \/ reflexão neles, usando o mapa de metalness fornece materiais realistas com parametrização mínima.</target>
+<target xml:lang="pt">Ao levar em conta o fato de que quase todos os materiais sempre têm alguma "metalidade" / reflexão neles, usando o mapa de metalness fornece materiais realistas com parametrização mínima.</target>
 </trans-unit>
 <trans-unit id="tu33" xml:space="preserve">
 <source xml:lang="en">The final specular color is calculated by mixing a fixed low-reflection color and the diffuse color.</source>
@@ -151,7 +151,7 @@ Um material lambertiano puro não existe na realidade. Um material sempre tem um
 </trans-unit>
 <trans-unit id="tu36" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>media/material-attributes-26.png<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt;media\/material-attributes-26.png&lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/>media/material-attributes-26.png<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu37" xml:space="preserve">
 <source xml:lang="en">The screenshots below show the result of the metalness factor on a material with the following attributes:</source>
@@ -183,15 +183,15 @@ Um material lambertiano puro não existe na realidade. Um material sempre tem um
 </trans-unit>
 <trans-unit id="tu44" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>media/material-attributes-27.png<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt;media\/material-attributes-27.png&lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/>media/material-attributes-27.png<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu45" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>media/material-attributes-28.png<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt;media\/material-attributes-28.png&lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/>media/material-attributes-28.png<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu46" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>media/material-attributes-29.png<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt;media\/material-attributes-29.png&lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/>media/material-attributes-29.png<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu47" xml:space="preserve">
 <source xml:lang="en">- The diffuse color is dominant</source>
@@ -232,7 +232,7 @@ Um material lambertiano puro não existe na realidade. Um material sempre tem um
 <trans-unit id="tu56" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>!Note<x id="2"/>
 You can combine metalness and specular workflows in the same material by adding separate <g id="3">layers</g>.</source>
-<target xml:lang="pt">&lt;x1\/&gt;!Note&lt;x2\/&gt;
+<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
 Você pode combinar metais e fluxos de trabalho especulares no mesmo material adicionando <g id="3">layers</g>.</target>
 </trans-unit>
 <trans-unit id="tu57" xml:space="preserve">
@@ -245,7 +245,7 @@ Você pode combinar metais e fluxos de trabalho especulares no mesmo material ad
 </trans-unit>
 <trans-unit id="tu59" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>media/material-attributes-33.png<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt;media\/material-attributes-33.png&lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/>media/material-attributes-33.png<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu60" xml:space="preserve">
 <source xml:lang="en">The microfacet is defined by the following formula, where Rs is the resulting specular reflectance:</source>
@@ -253,7 +253,7 @@ Você pode combinar metais e fluxos de trabalho especulares no mesmo material ad
 </trans-unit>
 <trans-unit id="tu61" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>media/material-attributes-34.png<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt;media\/material-attributes-34.png&lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/>media/material-attributes-34.png<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu62" xml:space="preserve">
 <source xml:lang="en">Property</source>
@@ -269,7 +269,7 @@ Você pode combinar metais e fluxos de trabalho especulares no mesmo material ad
 </trans-unit>
 <trans-unit id="tu65" xml:space="preserve">
 <source xml:lang="en">Defines the amount of light that is reflected and transmitted. The models supported are: <x id="1"/></source>
-<target xml:lang="pt">Define a quantidade de luz que é refletida e transmitida. Os modelos suportados são: &lt;x1\/&gt;</target>
+<target xml:lang="pt">Define a quantidade de luz que é refletida e transmitida. Os modelos suportados são: <x id="1"/></target>
 </trans-unit>
 <trans-unit id="sd1_sf8_tu1" resname="sd1_1" restype="x-paragraph" xml:space="preserve">
 <source xml:lang="en"/>
@@ -277,7 +277,7 @@ Você pode combinar metais e fluxos de trabalho especulares no mesmo material ad
 </trans-unit>
 <trans-unit id="tu66" xml:space="preserve">
 <source xml:lang="en"><g id="1">Schlick</g>: An approximation of the Fresnel effect (default)<x id="2"/></source>
-<target xml:lang="pt"><g id="1">Schlick</g>: Uma aproximação do efeito Fresnel (padrão)&lt;x1\/&gt;</target>
+<target xml:lang="pt"><g id="1">Schlick</g>: Uma aproximação do efeito Fresnel (padrão)<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu67" xml:space="preserve">
 <source xml:lang="en"><x id="1"/></source>
@@ -289,7 +289,7 @@ Você pode combinar metais e fluxos de trabalho especulares no mesmo material ad
 </trans-unit>
 <trans-unit id="tu68" xml:space="preserve">
 <source xml:lang="en"><g id="1">Thin glass</g>: A simulation of light passing through glass<x id="2"/></source>
-<target xml:lang="pt"><g id="1">Thin glass</g>: Uma simulação de luz passando pelo vidro&lt;x1\/&gt;</target>
+<target xml:lang="pt"><g id="1">Thin glass</g>: Uma simulação de luz passando pelo vidro<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu69" xml:space="preserve">
 <source xml:lang="en"><x id="1"/></source>
@@ -301,7 +301,7 @@ Você pode combinar metais e fluxos de trabalho especulares no mesmo material ad
 </trans-unit>
 <trans-unit id="tu70" xml:space="preserve">
 <source xml:lang="en"><g id="1">None</g>: The material as-is with no Fresnel effect<x id="2"/></source>
-<target xml:lang="pt"><g id="1">Nenhum </g>: O material como-é sem efeito de Fresnel&lt;x1\/&gt;</target>
+<target xml:lang="pt"><g id="1">Nenhum </g>: O material como-é sem efeito de Fresnel<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu71" xml:space="preserve">
 <source xml:lang="en">Visibility</source>
@@ -309,7 +309,7 @@ Você pode combinar metais e fluxos de trabalho especulares no mesmo material ad
 </trans-unit>
 <trans-unit id="tu72" xml:space="preserve">
 <source xml:lang="en">Defines the visibility between of the microfacets between (0, 1). Also known as the geometry attenuation - Shadowing and Masking - in the original Cook-Torrance. Stride simplifies the formula to use the visibility term instead: <x id="1"/></source>
-<target xml:lang="pt">Define a visibilidade entre as microfacetas entre (0, 1). Também conhecido como atenuação da geometria - Sombra e Mascar - na original Cook-Torrance. Stride simplifica a fórmula para usar o termo de visibilidade em vez disso: &lt;x1\/&gt;</target>
+<target xml:lang="pt">Define a visibilidade entre as microfacetas entre (0, 1). Também conhecido como atenuação da geometria - Sombra e Mascar - na original Cook-Torrance. Stride simplifica a fórmula para usar o termo de visibilidade em vez disso: <x id="1"/></target>
 </trans-unit>
 <trans-unit id="sd1_sf17_tu1" resname="sd1_1" restype="x-paragraph" xml:space="preserve">
 <source xml:lang="en"/>
@@ -317,7 +317,7 @@ Você pode combinar metais e fluxos de trabalho especulares no mesmo material ad
 </trans-unit>
 <trans-unit id="tu73" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>media/material-attributes-35.png<x id="2"/><x id="3"/></source>
-<target xml:lang="pt">&lt;x1\/&gt;media\/material-attributes-35.png&lt;x2\/&gt;&lt;x3\/&gt;</target>
+<target xml:lang="pt"><x id="1"/>media/material-attributes-35.png<x id="2"/><x id="3"/></target>
 </trans-unit>
 <trans-unit id="tu74" xml:space="preserve">
 <source xml:lang="en"><x id="1"/></source>
@@ -329,7 +329,7 @@ Você pode combinar metais e fluxos de trabalho especulares no mesmo material ad
 </trans-unit>
 <trans-unit id="tu75" xml:space="preserve">
 <source xml:lang="en">and <x id="1"/></source>
-<target xml:lang="pt">e &lt;x1\/&gt;</target>
+<target xml:lang="pt">e <x id="1"/></target>
 </trans-unit>
 <trans-unit id="sd1_sf22_tu1" resname="sd1_1" restype="x-paragraph" xml:space="preserve">
 <source xml:lang="en"/>
@@ -337,7 +337,7 @@ Você pode combinar metais e fluxos de trabalho especulares no mesmo material ad
 </trans-unit>
 <trans-unit id="tu76" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>media/material-attributes-36.png<x id="2"/><x id="3"/></source>
-<target xml:lang="pt">&lt;x1\/&gt;media\/material-attributes-36.png&lt;x2\/&gt;&lt;x3\/&gt;</target>
+<target xml:lang="pt"><x id="1"/>media/material-attributes-36.png<x id="2"/><x id="3"/></target>
 </trans-unit>
 <trans-unit id="tu77" xml:space="preserve">
 <source xml:lang="en"><x id="1"/></source>
@@ -349,7 +349,7 @@ Você pode combinar metais e fluxos de trabalho especulares no mesmo material ad
 </trans-unit>
 <trans-unit id="tu78" xml:space="preserve">
 <source xml:lang="en"><g id="1">Schlick GGX</g> (default)<x id="2"/></source>
-<target xml:lang="pt"><g id="1">Schlick GGX</g> (padrão)&lt;x1\/&gt;</target>
+<target xml:lang="pt"><g id="1">Schlick GGX</g> (padrão)<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu79" xml:space="preserve">
 <source xml:lang="en"><x id="1"/></source>
@@ -361,7 +361,7 @@ Você pode combinar metais e fluxos de trabalho especulares no mesmo material ad
 </trans-unit>
 <trans-unit id="tu80" xml:space="preserve">
 <source xml:lang="en"><g id="1">Implicit</g>: The microsurface is always visible and generates no shadowing or masking<x id="2"/></source>
-<target xml:lang="pt"><g id="1">Implicit</g>: O microsuperfície é sempre visível e não gera sombras ou mascaramento&lt;x1\/&gt;</target>
+<target xml:lang="pt"><g id="1">Implicit</g>: O microsuperfície é sempre visível e não gera sombras ou mascaramento<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu81" xml:space="preserve">
 <source xml:lang="en"><x id="1"/></source>
@@ -373,7 +373,7 @@ Você pode combinar metais e fluxos de trabalho especulares no mesmo material ad
 </trans-unit>
 <trans-unit id="tu82" xml:space="preserve">
 <source xml:lang="en"><g id="1">Cook-Torrance</g><x id="2"/></source>
-<target xml:lang="pt"><g id="1">Cook-Torrance</g>&lt;x1\/&gt;</target>
+<target xml:lang="pt"><g id="1">Cook-Torrance</g><x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu83" xml:space="preserve">
 <source xml:lang="en"><x id="1"/></source>
@@ -385,7 +385,7 @@ Você pode combinar metais e fluxos de trabalho especulares no mesmo material ad
 </trans-unit>
 <trans-unit id="tu84" xml:space="preserve">
 <source xml:lang="en"><g id="1">Kelemen</g><x id="2"/></source>
-<target xml:lang="pt"><g id="1">Kelemen</g>&lt;x1\/&gt;</target>
+<target xml:lang="pt"><g id="1">Kelemen</g><x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu85" xml:space="preserve">
 <source xml:lang="en"><x id="1"/></source>
@@ -397,7 +397,7 @@ Você pode combinar metais e fluxos de trabalho especulares no mesmo material ad
 </trans-unit>
 <trans-unit id="tu86" xml:space="preserve">
 <source xml:lang="en"><g id="1">Neumann</g><x id="2"/></source>
-<target xml:lang="pt"><g id="1">Neumann</g>&lt;x1\/&gt;</target>
+<target xml:lang="pt"><g id="1">Neumann</g><x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu87" xml:space="preserve">
 <source xml:lang="en"><x id="1"/></source>
@@ -409,7 +409,7 @@ Você pode combinar metais e fluxos de trabalho especulares no mesmo material ad
 </trans-unit>
 <trans-unit id="tu88" xml:space="preserve">
 <source xml:lang="en"><g id="1">Smith-Beckmann</g><x id="2"/></source>
-<target xml:lang="pt"><g id="1">Smith-Beckmann</g>&lt;x1\/&gt;</target>
+<target xml:lang="pt"><g id="1">Smith-Beckmann</g><x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu89" xml:space="preserve">
 <source xml:lang="en"><x id="1"/></source>
@@ -421,7 +421,7 @@ Você pode combinar metais e fluxos de trabalho especulares no mesmo material ad
 </trans-unit>
 <trans-unit id="tu90" xml:space="preserve">
 <source xml:lang="en"><g id="1">Smith-GGX correlated</g><x id="2"/></source>
-<target xml:lang="pt"><g id="1">Smith-GGX correlacionado</g>&lt;x1\/&gt;</target>
+<target xml:lang="pt"><g id="1">Smith-GGX correlacionado</g><x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu91" xml:space="preserve">
 <source xml:lang="en"><x id="1"/></source>
@@ -433,7 +433,7 @@ Você pode combinar metais e fluxos de trabalho especulares no mesmo material ad
 </trans-unit>
 <trans-unit id="tu92" xml:space="preserve">
 <source xml:lang="en"><g id="1">Schlick-Beckmann</g><x id="2"/></source>
-<target xml:lang="pt"><g id="1">Schlick-Beckmann</g>&lt;x1\/&gt;</target>
+<target xml:lang="pt"><g id="1">Schlick-Beckmann</g><x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu93" xml:space="preserve">
 <source xml:lang="en">Normal Distribution</source>
@@ -449,7 +449,7 @@ Você pode combinar metais e fluxos de trabalho especulares no mesmo material ad
 </trans-unit>
 <trans-unit id="tu95" xml:space="preserve">
 <source xml:lang="en">Defines how the normal is distributed. The gloss attribute is used by this part of the function to modify the distribution of the normal.<x id="1"/></source>
-<target xml:lang="pt">Define como o normal é distribuído. O atributo gloss é usado por esta parte da função para modificar a distribuição do normal.&lt;x1\/&gt;</target>
+<target xml:lang="pt">Define como o normal é distribuído. O atributo gloss é usado por esta parte da função para modificar a distribuição do normal.<x id="1"/></target>
 </trans-unit>
 <trans-unit id="tu96" xml:space="preserve">
 <source xml:lang="en"><x id="1"/></source>
@@ -461,7 +461,7 @@ Você pode combinar metais e fluxos de trabalho especulares no mesmo material ad
 </trans-unit>
 <trans-unit id="tu97" xml:space="preserve">
 <source xml:lang="en"><g id="1">GGX</g> (default) <x id="2"/></source>
-<target xml:lang="pt"><g id="1">GX</g> (padrão) &lt;x1\/&gt;</target>
+<target xml:lang="pt"><g id="1">GX</g> (padrão) <x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu98" xml:space="preserve">
 <source xml:lang="en"><x id="1"/></source>
@@ -473,7 +473,7 @@ Você pode combinar metais e fluxos de trabalho especulares no mesmo material ad
 </trans-unit>
 <trans-unit id="tu99" xml:space="preserve">
 <source xml:lang="en"><g id="1">Beckmann</g><x id="2"/></source>
-<target xml:lang="pt"><g id="1">Beckmann</g>&lt;x1\/&gt;</target>
+<target xml:lang="pt"><g id="1">Beckmann</g><x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu100" xml:space="preserve">
 <source xml:lang="en"><x id="1"/></source>
@@ -485,7 +485,7 @@ Você pode combinar metais e fluxos de trabalho especulares no mesmo material ad
 </trans-unit>
 <trans-unit id="tu101" xml:space="preserve">
 <source xml:lang="en"><g id="1">Blinn-Phong</g><x id="2"/></source>
-<target xml:lang="pt"><g id="1">Blinn-Phong</g>&lt;x1\/&gt;</target>
+<target xml:lang="pt"><g id="1">Blinn-Phong</g><x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu102" xml:space="preserve">
 <source xml:lang="en">Fresnel</source>
@@ -493,7 +493,7 @@ Você pode combinar metais e fluxos de trabalho especulares no mesmo material ad
 </trans-unit>
 <trans-unit id="tu103" xml:space="preserve">
 <source xml:lang="en">Defines the amount of light that is reflected and transmitted. The models supported are: <x id="1"/></source>
-<target xml:lang="pt">Define a quantidade de luz que é refletida e transmitida. Os modelos suportados são: &lt;x1\/&gt;</target>
+<target xml:lang="pt">Define a quantidade de luz que é refletida e transmitida. Os modelos suportados são: <x id="1"/></target>
 </trans-unit>
 <trans-unit id="sd1_sf61_tu1" resname="sd1_1" restype="x-paragraph" xml:space="preserve">
 <source xml:lang="en"/>
@@ -501,7 +501,7 @@ Você pode combinar metais e fluxos de trabalho especulares no mesmo material ad
 </trans-unit>
 <trans-unit id="tu104" xml:space="preserve">
 <source xml:lang="en"><g id="1">Schlick</g>: An approximation of the Fresnel effect (default)<x id="2"/></source>
-<target xml:lang="pt"><g id="1">Schlick</g>: Uma aproximação do efeito Fresnel (padrão)&lt;x1\/&gt;</target>
+<target xml:lang="pt"><g id="1">Schlick</g>: Uma aproximação do efeito Fresnel (padrão)<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu105" xml:space="preserve">
 <source xml:lang="en"><x id="1"/></source>
@@ -513,7 +513,7 @@ Você pode combinar metais e fluxos de trabalho especulares no mesmo material ad
 </trans-unit>
 <trans-unit id="tu106" xml:space="preserve">
 <source xml:lang="en"><g id="1">Thin glass</g>: A simulation of light passing through glass<x id="2"/></source>
-<target xml:lang="pt"><g id="1">Thin glass</g>: Uma simulação de luz passando pelo vidro&lt;x1\/&gt;</target>
+<target xml:lang="pt"><g id="1">Thin glass</g>: Uma simulação de luz passando pelo vidro<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu107" xml:space="preserve">
 <source xml:lang="en"><x id="1"/></source>
@@ -525,7 +525,7 @@ Você pode combinar metais e fluxos de trabalho especulares no mesmo material ad
 </trans-unit>
 <trans-unit id="tu108" xml:space="preserve">
 <source xml:lang="en"><g id="1">None</g>: The material as-is with no Fresnel effect<x id="2"/></source>
-<target xml:lang="pt"><g id="1">Nenhum </g>: O material como-é sem efeito de Fresnel&lt;x1\/&gt;</target>
+<target xml:lang="pt"><g id="1">Nenhum </g>: O material como-é sem efeito de Fresnel<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu109" xml:space="preserve">
 <source xml:lang="en">Visibility</source>
@@ -533,7 +533,7 @@ Você pode combinar metais e fluxos de trabalho especulares no mesmo material ad
 </trans-unit>
 <trans-unit id="tu110" xml:space="preserve">
 <source xml:lang="en">Defines the visibility between of the microfacets between (0, 1). Also known as the geometry attenuation - Shadowing and Masking - in the original Cook-Torrance. Stride simplifies the formula to use the visibility term instead: <x id="1"/></source>
-<target xml:lang="pt">Define a visibilidade entre as microfacetas entre (0, 1). Também conhecido como atenuação da geometria - Sombra e Mascar - na original Cook-Torrance. Stride simplifica a fórmula para usar o termo de visibilidade em vez disso: &lt;x1\/&gt;</target>
+<target xml:lang="pt">Define a visibilidade entre as microfacetas entre (0, 1). Também conhecido como atenuação da geometria - Sombra e Mascar - na original Cook-Torrance. Stride simplifica a fórmula para usar o termo de visibilidade em vez disso: <x id="1"/></target>
 </trans-unit>
 <trans-unit id="sd1_sf70_tu1" resname="sd1_1" restype="x-paragraph" xml:space="preserve">
 <source xml:lang="en"/>
@@ -541,7 +541,7 @@ Você pode combinar metais e fluxos de trabalho especulares no mesmo material ad
 </trans-unit>
 <trans-unit id="tu111" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>media/material-attributes-35.png<x id="2"/><x id="3"/></source>
-<target xml:lang="pt">&lt;x1\/&gt;media\/material-attributes-35.png&lt;x2\/&gt;&lt;x3\/&gt;</target>
+<target xml:lang="pt"><x id="1"/>media/material-attributes-35.png<x id="2"/><x id="3"/></target>
 </trans-unit>
 <trans-unit id="tu112" xml:space="preserve">
 <source xml:lang="en"><x id="1"/></source>
@@ -553,7 +553,7 @@ Você pode combinar metais e fluxos de trabalho especulares no mesmo material ad
 </trans-unit>
 <trans-unit id="tu113" xml:space="preserve">
 <source xml:lang="en">and <x id="1"/></source>
-<target xml:lang="pt">e &lt;x1\/&gt;</target>
+<target xml:lang="pt">e <x id="1"/></target>
 </trans-unit>
 <trans-unit id="sd1_sf75_tu1" resname="sd1_1" restype="x-paragraph" xml:space="preserve">
 <source xml:lang="en"/>
@@ -561,7 +561,7 @@ Você pode combinar metais e fluxos de trabalho especulares no mesmo material ad
 </trans-unit>
 <trans-unit id="tu114" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>media/material-attributes-36.png<x id="2"/><x id="3"/></source>
-<target xml:lang="pt">&lt;x1\/&gt;media\/material-attributes-36.png&lt;x2\/&gt;&lt;x3\/&gt;</target>
+<target xml:lang="pt"><x id="1"/>media/material-attributes-36.png<x id="2"/><x id="3"/></target>
 </trans-unit>
 <trans-unit id="tu115" xml:space="preserve">
 <source xml:lang="en"><x id="1"/></source>
@@ -573,7 +573,7 @@ Você pode combinar metais e fluxos de trabalho especulares no mesmo material ad
 </trans-unit>
 <trans-unit id="tu116" xml:space="preserve">
 <source xml:lang="en"><g id="1">Schlick GGX</g> (default)<x id="2"/></source>
-<target xml:lang="pt"><g id="1">Schlick GGX</g> (padrão)&lt;x1\/&gt;</target>
+<target xml:lang="pt"><g id="1">Schlick GGX</g> (padrão)<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu117" xml:space="preserve">
 <source xml:lang="en"><x id="1"/></source>
@@ -585,7 +585,7 @@ Você pode combinar metais e fluxos de trabalho especulares no mesmo material ad
 </trans-unit>
 <trans-unit id="tu118" xml:space="preserve">
 <source xml:lang="en"><g id="1">Implicit</g>: The microsurface is always visible and generates no shadowing or masking<x id="2"/></source>
-<target xml:lang="pt"><g id="1">Implicit</g>: O microsuperfície é sempre visível e não gera sombras ou mascaramento&lt;x1\/&gt;</target>
+<target xml:lang="pt"><g id="1">Implicit</g>: O microsuperfície é sempre visível e não gera sombras ou mascaramento<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu119" xml:space="preserve">
 <source xml:lang="en"><x id="1"/></source>
@@ -597,7 +597,7 @@ Você pode combinar metais e fluxos de trabalho especulares no mesmo material ad
 </trans-unit>
 <trans-unit id="tu120" xml:space="preserve">
 <source xml:lang="en"><g id="1">Cook-Torrance</g><x id="2"/></source>
-<target xml:lang="pt"><g id="1">Cook-Torrance</g>&lt;x1\/&gt;</target>
+<target xml:lang="pt"><g id="1">Cook-Torrance</g><x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu121" xml:space="preserve">
 <source xml:lang="en"><x id="1"/></source>
@@ -609,7 +609,7 @@ Você pode combinar metais e fluxos de trabalho especulares no mesmo material ad
 </trans-unit>
 <trans-unit id="tu122" xml:space="preserve">
 <source xml:lang="en"><g id="1">Kelemen</g><x id="2"/></source>
-<target xml:lang="pt"><g id="1">Kelemen</g>&lt;x1\/&gt;</target>
+<target xml:lang="pt"><g id="1">Kelemen</g><x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu123" xml:space="preserve">
 <source xml:lang="en"><x id="1"/></source>
@@ -621,7 +621,7 @@ Você pode combinar metais e fluxos de trabalho especulares no mesmo material ad
 </trans-unit>
 <trans-unit id="tu124" xml:space="preserve">
 <source xml:lang="en"><g id="1">Neumann</g><x id="2"/></source>
-<target xml:lang="pt"><g id="1">Neumann</g>&lt;x1\/&gt;</target>
+<target xml:lang="pt"><g id="1">Neumann</g><x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu125" xml:space="preserve">
 <source xml:lang="en"><x id="1"/></source>
@@ -633,7 +633,7 @@ Você pode combinar metais e fluxos de trabalho especulares no mesmo material ad
 </trans-unit>
 <trans-unit id="tu126" xml:space="preserve">
 <source xml:lang="en"><g id="1">Smith-Beckmann</g><x id="2"/></source>
-<target xml:lang="pt"><g id="1">Smith-Beckmann</g>&lt;x1\/&gt;</target>
+<target xml:lang="pt"><g id="1">Smith-Beckmann</g><x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu127" xml:space="preserve">
 <source xml:lang="en"><x id="1"/></source>
@@ -645,7 +645,7 @@ Você pode combinar metais e fluxos de trabalho especulares no mesmo material ad
 </trans-unit>
 <trans-unit id="tu128" xml:space="preserve">
 <source xml:lang="en"><g id="1">Smith-GGX correlated</g><x id="2"/></source>
-<target xml:lang="pt"><g id="1">Smith-GGX correlacionado</g>&lt;x1\/&gt;</target>
+<target xml:lang="pt"><g id="1">Smith-GGX correlacionado</g><x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu129" xml:space="preserve">
 <source xml:lang="en"><x id="1"/></source>
@@ -657,7 +657,7 @@ Você pode combinar metais e fluxos de trabalho especulares no mesmo material ad
 </trans-unit>
 <trans-unit id="tu130" xml:space="preserve">
 <source xml:lang="en"><g id="1">Schlick-Beckmann</g><x id="2"/></source>
-<target xml:lang="pt"><g id="1">Schlick-Beckmann</g>&lt;x1\/&gt;</target>
+<target xml:lang="pt"><g id="1">Schlick-Beckmann</g><x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu131" xml:space="preserve">
 <source xml:lang="en">Normal Distribution</source>
@@ -673,7 +673,7 @@ Você pode combinar metais e fluxos de trabalho especulares no mesmo material ad
 </trans-unit>
 <trans-unit id="tu133" xml:space="preserve">
 <source xml:lang="en">Defines how the normal is distributed. The gloss attribute is used by this part of the function to modify the distribution of the normal.<x id="1"/></source>
-<target xml:lang="pt">Define como o normal é distribuído. O atributo gloss é usado por esta parte da função para modificar a distribuição do normal.&lt;x1\/&gt;</target>
+<target xml:lang="pt">Define como o normal é distribuído. O atributo gloss é usado por esta parte da função para modificar a distribuição do normal.<x id="1"/></target>
 </trans-unit>
 <trans-unit id="tu134" xml:space="preserve">
 <source xml:lang="en"><x id="1"/></source>
@@ -685,7 +685,7 @@ Você pode combinar metais e fluxos de trabalho especulares no mesmo material ad
 </trans-unit>
 <trans-unit id="tu135" xml:space="preserve">
 <source xml:lang="en"><g id="1">GGX</g> (default) <x id="2"/></source>
-<target xml:lang="pt"><g id="1">GX</g> (padrão) &lt;x1\/&gt;</target>
+<target xml:lang="pt"><g id="1">GX</g> (padrão) <x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu136" xml:space="preserve">
 <source xml:lang="en"><x id="1"/></source>
@@ -697,7 +697,7 @@ Você pode combinar metais e fluxos de trabalho especulares no mesmo material ad
 </trans-unit>
 <trans-unit id="tu137" xml:space="preserve">
 <source xml:lang="en"><g id="1">Beckmann</g><x id="2"/></source>
-<target xml:lang="pt"><g id="1">Beckmann</g>&lt;x1\/&gt;</target>
+<target xml:lang="pt"><g id="1">Beckmann</g><x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu138" xml:space="preserve">
 <source xml:lang="en"><x id="1"/></source>
@@ -709,7 +709,7 @@ Você pode combinar metais e fluxos de trabalho especulares no mesmo material ad
 </trans-unit>
 <trans-unit id="tu139" xml:space="preserve">
 <source xml:lang="en"><g id="1">Blinn-Phong</g><x id="2"/></source>
-<target xml:lang="pt"><g id="1">Blinn-Phong</g>&lt;x1\/&gt;</target>
+<target xml:lang="pt"><g id="1">Blinn-Phong</g><x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu140" xml:space="preserve">
 <source xml:lang="en">Fresnel</source>
@@ -725,7 +725,7 @@ Você pode combinar metais e fluxos de trabalho especulares no mesmo material ad
 </trans-unit>
 <trans-unit id="tu142" xml:space="preserve">
 <source xml:lang="en"><x id="1"/><g id="2">Schlick</g>: An approximation of the Fresnel effect (default)</source>
-<target xml:lang="pt">&lt;x1\/&gt;<g id="2">Schlick</g>: Uma aproximação do efeito Fresnel (padrão)</target>
+<target xml:lang="pt"><x id="1"/><g id="2">Schlick</g>: Uma aproximação do efeito Fresnel (padrão)</target>
 </trans-unit>
 <trans-unit id="tu143" xml:space="preserve">
 <source xml:lang="en"><x id="1"/></source>
@@ -737,7 +737,7 @@ Você pode combinar metais e fluxos de trabalho especulares no mesmo material ad
 </trans-unit>
 <trans-unit id="tu144" xml:space="preserve">
 <source xml:lang="en"><x id="1"/><g id="2">Thin glass</g>: A simulation of light passing through glass</source>
-<target xml:lang="pt">&lt;x1\/&gt;<g id="2">Thin glass</g>: Uma simulação de luz passando pelo vidro</target>
+<target xml:lang="pt"><x id="1"/><g id="2">Thin glass</g>: Uma simulação de luz passando pelo vidro</target>
 </trans-unit>
 <trans-unit id="tu145" xml:space="preserve">
 <source xml:lang="en"><x id="1"/></source>
@@ -749,7 +749,7 @@ Você pode combinar metais e fluxos de trabalho especulares no mesmo material ad
 </trans-unit>
 <trans-unit id="tu146" xml:space="preserve">
 <source xml:lang="en"><x id="1"/><g id="2">None</g>: The material as-is with no Fresnel effect</source>
-<target xml:lang="pt">&lt;x1\/&gt;<g id="2">None</g>: O material como-é sem efeito de Fresnel</target>
+<target xml:lang="pt"><x id="1"/><g id="2">None</g>: O material como-é sem efeito de Fresnel</target>
 </trans-unit>
 <trans-unit id="tu147" xml:space="preserve">
 <source xml:lang="en"><x id="1"/></source>
@@ -769,7 +769,7 @@ Você pode combinar metais e fluxos de trabalho especulares no mesmo material ad
 </trans-unit>
 <trans-unit id="tu150" xml:space="preserve">
 <source xml:lang="en"><x id="1"/><x id="2"/>media/material-attributes-35.png<x id="3"/></source>
-<target xml:lang="pt">&lt;x1\/&gt;&lt;x2\/&gt;media\/material-attributes-35.png&lt;x3\/&gt;</target>
+<target xml:lang="pt"><x id="1"/><x id="2"/>media/material-attributes-35.png<x id="3"/></target>
 </trans-unit>
 <trans-unit id="tu151" xml:space="preserve">
 <source xml:lang="en"><x id="1"/></source>
@@ -781,7 +781,7 @@ Você pode combinar metais e fluxos de trabalho especulares no mesmo material ad
 </trans-unit>
 <trans-unit id="tu152" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>and </source>
-<target xml:lang="pt">&lt;x1\/&gt;e </target>
+<target xml:lang="pt"><x id="1"/>e </target>
 </trans-unit>
 <trans-unit id="sd1_sf131_tu1" resname="sd1_1" restype="x-paragraph" xml:space="preserve">
 <source xml:lang="en"/>
@@ -789,7 +789,7 @@ Você pode combinar metais e fluxos de trabalho especulares no mesmo material ad
 </trans-unit>
 <trans-unit id="tu153" xml:space="preserve">
 <source xml:lang="en"><x id="1"/><x id="2"/>media/material-attributes-36.png<x id="3"/></source>
-<target xml:lang="pt">&lt;x1\/&gt;&lt;x2\/&gt;media\/material-attributes-36.png&lt;x3\/&gt;</target>
+<target xml:lang="pt"><x id="1"/><x id="2"/>media/material-attributes-36.png<x id="3"/></target>
 </trans-unit>
 <trans-unit id="tu154" xml:space="preserve">
 <source xml:lang="en"><x id="1"/></source>
@@ -801,7 +801,7 @@ Você pode combinar metais e fluxos de trabalho especulares no mesmo material ad
 </trans-unit>
 <trans-unit id="tu155" xml:space="preserve">
 <source xml:lang="en"><x id="1"/><g id="2">Schlick GGX</g> (default)</source>
-<target xml:lang="pt">&lt;x1\/&gt;<g id="2">Schlick GGX</g> (padrão)</target>
+<target xml:lang="pt"><x id="1"/><g id="2">Schlick GGX</g> (padrão)</target>
 </trans-unit>
 <trans-unit id="tu156" xml:space="preserve">
 <source xml:lang="en"><x id="1"/></source>
@@ -829,7 +829,7 @@ Você pode combinar metais e fluxos de trabalho especulares no mesmo material ad
 </trans-unit>
 <trans-unit id="tu160" xml:space="preserve">
 <source xml:lang="en"><x id="1"/><g id="2">Cook-Torrance</g></source>
-<target xml:lang="pt">&lt;x1\/&gt;<g id="2">Cook-Torrance</g></target>
+<target xml:lang="pt"><x id="1"/><g id="2">Cook-Torrance</g></target>
 </trans-unit>
 <trans-unit id="tu161" xml:space="preserve">
 <source xml:lang="en"><x id="1"/></source>
@@ -841,7 +841,7 @@ Você pode combinar metais e fluxos de trabalho especulares no mesmo material ad
 </trans-unit>
 <trans-unit id="tu162" xml:space="preserve">
 <source xml:lang="en"><x id="1"/><g id="2">Kelemen</g></source>
-<target xml:lang="pt">&lt;x1\/&gt;<g id="2">Kelemen</g></target>
+<target xml:lang="pt"><x id="1"/><g id="2">Kelemen</g></target>
 </trans-unit>
 <trans-unit id="tu163" xml:space="preserve">
 <source xml:lang="en"><x id="1"/></source>
@@ -853,7 +853,7 @@ Você pode combinar metais e fluxos de trabalho especulares no mesmo material ad
 </trans-unit>
 <trans-unit id="tu164" xml:space="preserve">
 <source xml:lang="en"><x id="1"/><g id="2">Neumann</g></source>
-<target xml:lang="pt">&lt;x1\/&gt;<g id="2">Neumann</g></target>
+<target xml:lang="pt"><x id="1"/><g id="2">Neumann</g></target>
 </trans-unit>
 <trans-unit id="tu165" xml:space="preserve">
 <source xml:lang="en"><x id="1"/></source>
@@ -865,7 +865,7 @@ Você pode combinar metais e fluxos de trabalho especulares no mesmo material ad
 </trans-unit>
 <trans-unit id="tu166" xml:space="preserve">
 <source xml:lang="en"><x id="1"/><g id="2">Smith-Beckmann</g></source>
-<target xml:lang="pt">&lt;x1\/&gt;<g id="2">Smith-Beckmann</g></target>
+<target xml:lang="pt"><x id="1"/><g id="2">Smith-Beckmann</g></target>
 </trans-unit>
 <trans-unit id="tu167" xml:space="preserve">
 <source xml:lang="en"><x id="1"/></source>
@@ -877,7 +877,7 @@ Você pode combinar metais e fluxos de trabalho especulares no mesmo material ad
 </trans-unit>
 <trans-unit id="tu168" xml:space="preserve">
 <source xml:lang="en"><x id="1"/><g id="2">Smith-GGX correlated</g></source>
-<target xml:lang="pt">&lt;x1\/&gt;<g id="2">Smith-GGX correlacionados</g></target>
+<target xml:lang="pt"><x id="1"/><g id="2">Smith-GGX correlacionados</g></target>
 </trans-unit>
 <trans-unit id="tu169" xml:space="preserve">
 <source xml:lang="en"><x id="1"/></source>
@@ -889,7 +889,7 @@ Você pode combinar metais e fluxos de trabalho especulares no mesmo material ad
 </trans-unit>
 <trans-unit id="tu170" xml:space="preserve">
 <source xml:lang="en"><x id="1"/><g id="2">Schlick-Beckmann</g></source>
-<target xml:lang="pt">&lt;x1\/&gt;<g id="2">Schlick-Beckmann</g></target>
+<target xml:lang="pt"><x id="1"/><g id="2">Schlick-Beckmann</g></target>
 </trans-unit>
 <trans-unit id="tu171" xml:space="preserve">
 <source xml:lang="en"><x id="1"/></source>
@@ -905,7 +905,7 @@ Você pode combinar metais e fluxos de trabalho especulares no mesmo material ad
 </trans-unit>
 <trans-unit id="tu173" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Defines how the normal is distributed. The gloss attribute is used by this part of the function to modify the distribution of the normal.</source>
-<target xml:lang="pt">&lt;x1\/&gt;Define como o normal é distribuído. O atributo gloss é usado por esta parte da função para modificar a distribuição do normal.</target>
+<target xml:lang="pt"><x id="1"/>Define como o normal é distribuído. O atributo gloss é usado por esta parte da função para modificar a distribuição do normal.</target>
 </trans-unit>
 <trans-unit id="tu174" xml:space="preserve">
 <source xml:lang="en"><x id="1"/></source>
@@ -917,7 +917,7 @@ Você pode combinar metais e fluxos de trabalho especulares no mesmo material ad
 </trans-unit>
 <trans-unit id="tu175" xml:space="preserve">
 <source xml:lang="en"><x id="1"/><g id="2">GGX</g> (default) </source>
-<target xml:lang="pt">&lt;x1\/&gt;<g id="2">GGX</g> (padrão) </target>
+<target xml:lang="pt"><x id="1"/><g id="2">GGX</g> (padrão) </target>
 </trans-unit>
 <trans-unit id="tu176" xml:space="preserve">
 <source xml:lang="en"><x id="1"/></source>
@@ -929,7 +929,7 @@ Você pode combinar metais e fluxos de trabalho especulares no mesmo material ad
 </trans-unit>
 <trans-unit id="tu177" xml:space="preserve">
 <source xml:lang="en"><x id="1"/><g id="2">Beckmann</g></source>
-<target xml:lang="pt">&lt;x1\/&gt;<g id="2">Beckmann</g></target>
+<target xml:lang="pt"><x id="1"/><g id="2">Beckmann</g></target>
 </trans-unit>
 <trans-unit id="tu178" xml:space="preserve">
 <source xml:lang="en"><x id="1"/></source>
@@ -941,7 +941,7 @@ Você pode combinar metais e fluxos de trabalho especulares no mesmo material ad
 </trans-unit>
 <trans-unit id="tu179" xml:space="preserve">
 <source xml:lang="en"><x id="1"/><g id="2">Blinn-Phong</g></source>
-<target xml:lang="pt">&lt;x1\/&gt;<g id="2">Blinn-Phong</g></target>
+<target xml:lang="pt"><x id="1"/><g id="2">Blinn-Phong</g></target>
 </trans-unit>
 <trans-unit id="tu180" xml:space="preserve">
 <source xml:lang="en"><x id="1"/></source>
@@ -957,7 +957,7 @@ Você pode combinar metais e fluxos de trabalho especulares no mesmo material ad
 </trans-unit>
 <trans-unit id="tu183" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>media/material-attributes-37.png<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt;media\/material-attributes-37.png&lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/>media/material-attributes-37.png<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu184" xml:space="preserve">
 <source xml:lang="en">With HDR, a <g id="1">Bloom</g> and a <g id="2">Bright filter</g> post-processing effects, we can see the influence of an emissive material:</source>
@@ -965,7 +965,7 @@ Você pode combinar metais e fluxos de trabalho especulares no mesmo material ad
 </trans-unit>
 <trans-unit id="tu185" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>media/material-attributes-38.png<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt;media\/material-attributes-38.png&lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/>media/material-attributes-38.png<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu186" xml:space="preserve">
 <source xml:lang="en">Property</source>

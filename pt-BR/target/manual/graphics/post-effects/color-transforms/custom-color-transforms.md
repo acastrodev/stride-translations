@@ -1,7 +1,7 @@
 # Transformações de cor personalizadas
 
-<x1\/>Avançado<x2\/>
-<x3\/>Programação<x4\/>
+<span class="badge text-bg-primary">Avançado</span>
+<span class="badge text-bg-success">Programação</span>
 
 Você pode escrever seus próprios efeitos ** custom color transform**. Por exemplo, você pode criar:
 
@@ -16,23 +16,23 @@ Para criar uma transformação de cor personalizada, você precisa escrever dois
 
 1. Certifique-se de ter a extensão [Stride Visual Studio](../../../get-started/visual-studio-extension.md) instalada. Isso é necessário para converter os arquivos shader de SDSL ([Stride shading language](../../effects-and-shaders/shading-language/index.md)) para `.cs` arquivos.
 
-2. No Game Studio, na barra de ferramentas, clique em <x1\/>Open in IDE<x2\/> (**Open in IDE**) para abrir seu projeto no Visual Studio.
+2. No Game Studio, na barra de ferramentas, clique em ![Open in IDE](../../../get-started/media/launch-your-game-ide-icon.png) (**Open in IDE**) para abrir seu projeto no Visual Studio.
 
 3. No Visual Studio **Solution Explorer**, clique com o botão direito do mouse no projeto (por exemplo *MyGame.Game*) e selecione ** Novo item**.
 
-   <x1\/> Novo item<x2\/>
+   ![ Novo item](../../effects-and-shaders/media/new-item.png)
 
 4. Selecione **Class**.
 
-   <x1\/>Selecionar classe<x2\/>
+   ![Selecionar classe](../../effects-and-shaders/media/select-class.png)
 
 5. No campo **Name**, especifique um nome com a extensão **.sdsl** (por exemplo *MyColorTransformShader.sdsl*), e clique em **Add**.
 
-   <x1\/>Criar o efeito pós<x2\/>
+   ![Criar o efeito pós](media/create-post-effect.png)
 
    A extensão do Stride Visual Studio gera automaticamente um arquivo `.cs` do arquivo `.sdsl`. O Solution Explorer lista-o como uma criança do arquivo `.sdsl`.
 
-   <x1\/> Meu efeito pós <x2\/>
+   ![ Meu efeito pós ](media/my-post-effect.png)
 
 6. Abra o arquivo `.sdsl`, remova as linhas existentes e escreva o seu shader.
 
@@ -52,18 +52,18 @@ Para criar uma transformação de cor personalizada, você precisa escrever dois
        }
    };
    ```
-   > <x1\/>!Note<x2\/>
+   > [!Note]
    > Certifique-se de que o nome do shader no arquivo (por exemplo `MyColorTransformShader` no código acima) é o mesmo que o nome do arquivo (por exemplo *MyColorTransformShader.sdsl*).
 
 ## 2. Criar uma classe C#
 
 1. No Visual Studio **Solution Explorer**, clique com o botão direito do mouse no projeto (por exemplo *MyGame.Game*) e selecione **Add > Novo item**.
 
-   <x1\/> Novo item<x2\/>
+   ![ Novo item](../../effects-and-shaders/media/new-item.png)
 
 2. Selecione **Class**, especifique um **name** (por exemplo *MyColorTransform.cs*), e clique em **Add**.
 
-   <x1\/> Adicionar script<x2\/>
+   ![ Adicionar script](media/add-script.png)
 
    Abra o arquivo e escreva a classe.
 
@@ -80,7 +80,7 @@ Para criar uma transformação de cor personalizada, você precisa escrever dois
        [DataContract("MyColorTransform")]
        classe pública MyColorTransform : Transferência de cores
        (
-           \/\/\/ <inheritdoc \/>
+           /// <inheritdoc />
            público MyColorTransform() 
                : base("MyColorTransformShader")
            (
@@ -92,29 +92,29 @@ Para criar uma transformação de cor personalizada, você precisa escrever dois
            (
                Parâmetros.Set (MyColorTransformShaderKeys.MyColor, MyColor);
    
-               \/\/ Copiar parâmetros para o pai
+               // Copiar parâmetros para o pai
                base.UpdateParameters(contexto);
            }
        }
    }
    ```
-   > <x1\/>!Note<x2\/>
+   > [!Note]
    > Certifique-se de que o nome da classe no arquivo (por exemplo `MyColorTransform` na classe acima) é o mesmo que o nome do arquivo (por exemplo *MyColorTransform.cs*).
 
 3. Salve todos os arquivos na solução (**File > Save All**).
 
 4. No Game Studio, recarregue os conjuntos.
 
-   <x1\/>Reload assemblies<x2\/>
+   ![Reload assemblies](../../../particles/tutorials/media/reload-assemblies.png)
 
    O **Asset View** lista o shader de classe e efeito no mesmo diretório que seus scripts (por exemplo **MyGame.Game**).
 
-   <x1\/>Shader em Asset View<x2\/>
+   ![Shader em Asset View](media/post-effect-shader.png)
 
-   > <x1\/>!Note<x2\/>
+   > [!Note]
    > Em algumas situações, Game Studio detecta incorretamente o shader como um script, como na captura de tela abaixo:
 
-   > <x1\/>Shader como script<x2\/>
+   > ![Shader como script](media/broken-script-icon.png)
 
    > Se isso acontecer, reinicie o Game Studio (**File > Recarregar projeto**).
 
@@ -122,29 +122,29 @@ Para criar uma transformação de cor personalizada, você precisa escrever dois
 
 1. No **Asset View** (no painel inferior por padrão), clique duas vezes no **Graphics Compositor** ativo.
 
-   <x1\/>Gráficos Compositor asset<x2\/>
+   ![Gráficos Compositor asset](../../graphics-compositor/media/graphics-compositor-asset.png)
 
    O editor de compositores **graphics** abre.
 
-   <x1\/>Gráfico Compositor editor<x2\/>
+   ![Gráfico Compositor editor](../../graphics-compositor/media/graphics-compositor-editor.png)
 
 2. Selecione o **Efeitos de processamento de pó**Nodo>.
 
-3. No **Property Grid**, sob **Color transforma**, clique em <x1\/>Green plus button<x2\/> (**Change**) e selecione a sua transformação de cor (por exemplo **MyColorTransform**).
+3. No **Property Grid**, sob **Color transforma**, clique em ![Green plus button](~/manual/game-studio/media/green-plus-icon.png) (**Change**) e selecione a sua transformação de cor (por exemplo **MyColorTransform**).
 
-   <x1\/> Adicionar script<x2\/>
+   ![ Adicionar script](media/add-script-in-properties.png)
 
 * Para ativar e desativar o efeito, use a caixa de seleção ao lado do item.
 
-   <x1\/> Habilitar e desativar o efeito pós personalizado<x2\/>
+   ![ Habilitar e desativar o efeito pós personalizado](media/enable-disable-custom-post-effect.png)
 
 * Para editar as propriedades públicas especificadas na classe, expanda o item.
 
-   <x1\/>Expand item<x2\/>
+   ![Expand item](media/view-custom-post-fx-properties.png)
 
    Quando você ajusta as propriedades, Game Studio atualiza o efeito automaticamente.
 
-> <x1\/>!Warning<x2\/>
+> [!Warning]
 > Infelizmente, esta parte do Game Studio tem um problema de vazamento de memória. Cada vez que você muda um valor no compositor gráfico, ele usa 60MB de memória. Para evitar o Game Studio usando muita memória, recomendamos reiniciá-lo depois de alterar uma propriedade algumas vezes. Este é um problema conhecido.
 
 ## Ver também

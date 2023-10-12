@@ -1,7 +1,7 @@
 # Ligação de recursos
 
-<x1\/>Avançado<x2\/>
-<x3\/>Programação<x4\/>
+<span class="badge text-bg-primary">Avançado</span>
+<span class="badge text-bg-success">Programação</span>
 
 Quando vértices [drawing](draw-vertices.md) usando um efeito [](../effects-and-shaders/index.md), os shaders esperam que certos recursos estejam disponíveis, incluindo:
 
@@ -19,12 +19,12 @@ e permite preencher buffers constantes e ligar recursos com base em um @'Stride.
 **Código:** Usando um efeitoInstância
 
 ```cs
-\/\/ Criar um EffectInstance e usá-lo para configurar o pipeline
+// Criar um EffectInstance e usá-lo para configurar o pipeline
 var effectInstance = new EffectInstance (EffectSystem.LoadEffect("MyEffect").WaitForResult());
 pipelineStateDescription.EffectBytecode = efeitoInstance.Effect.Bytecode;
 pipelineStateDescription.RootSignature = efeitoInstance.RootSignature;
 
-\/\/ Atualizar buffers constantes e vincular recursos
+// Atualizar buffers constantes e vincular recursos
 efeitoInstance.Apply (context.GraphicsContext);
 ```
 

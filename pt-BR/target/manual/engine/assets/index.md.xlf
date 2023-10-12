@@ -8,7 +8,7 @@
 <trans-unit id="tu2" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>!Warning<x id="2"/>
 This section is out of date. For now, you should only use it for reference.</source>
-<target xml:lang="pt">&lt;x1\/&gt;!Warning&lt;x2\/&gt;
+<target xml:lang="pt"><x id="1"/>!Warning<x id="2"/>
 Esta seção está fora de data. Por enquanto, você só deve usá-lo para referência.</target>
 </trans-unit>
 <trans-unit id="tu3" xml:space="preserve">
@@ -41,7 +41,7 @@ Esta seção está fora de data. Por enquanto, você só deve usá-lo para refer
 </trans-unit>
 <trans-unit id="tu10" xml:space="preserve">
 <source xml:lang="en">level1/room1 (user creates level1 and import room1.fbx inside)</source>
-<target xml:lang="pt">level1\/room1 (o usuário cria nível1 e sala de importação1.fbx dentro)</target>
+<target xml:lang="pt">level1/room1 (o usuário cria nível1 e sala de importação1.fbx dentro)</target>
 </trans-unit>
 <trans-unit id="tu11" xml:space="preserve">
 <source xml:lang="en">For more information, see <g id="1">Assets</g> for more details.</source>
@@ -65,13 +65,13 @@ var scene = Content.Load&lt;Scene&gt;("scenes/scene1");
 // Load an Entity asset
 var entity = Content.Load&lt;Entity&gt;("entity1");
 </source>
-<target xml:lang="pt">\/\/ Carregar um ativo diretamente de um arquivo:
+<target xml:lang="pt">// Carregar um ativo diretamente de um arquivo:
 var texture = Content.Load&lt;Texture&gt;("texture1");
 
-\/\/ Carregar um recurso de cena
-var scene = Content.Load&lt;Scene&gt;("scenes\/scene1");
+// Carregar um recurso de cena
+var scene = Content.Load&lt;Scene&gt;("scenes/scene1");
  
-\/\/ Carregar um ativo de Entidade
+// Carregar um ativo de Entidade
 var entity = Content.Load&lt;Entity&gt;("entity1");
 </target>
 </trans-unit>
@@ -133,24 +133,24 @@ Asset.Unload(secondReference); // decrease the reference counter and unload the 
  
 // The texture has been unloaded, it cannot be used here any more.
 </source>
-<target xml:lang="pt"> var firstReference = Content.Load&lt;Texture&gt;("MyTexture"); \/\/ carregar o ativo e aumentar o contador de referência (contagem de ref = 1)
+<target xml:lang="pt"> var firstReference = Content.Load&lt;Texture&gt;("MyTexture"); // carregar o ativo e aumentar o contador de referência (contagem de ref = 1)
  
-\/\/ a textura pode ser usada aqui
+// a textura pode ser usada aqui
  
-var secondReference = Content.Load&lt;Texture&gt;("MyTexture"); \/\/ só aumentar o contador de referência (contagem de ref = 2)
+var secondReference = Content.Load&lt;Texture&gt;("MyTexture"); // só aumentar o contador de referência (contagem de ref = 2)
  
-\/\/ a textura ainda pode ser usada aqui
+// a textura ainda pode ser usada aqui
  
-Asset.Unload(firstReference); \/\/ diminuem o contador de referência (ref count = 1)
+Asset.Unload(firstReference); // diminuem o contador de referência (ref count = 1)
  
-\/\/ a textura ainda pode ser usada aqui
+// a textura ainda pode ser usada aqui
  
-Asset.Get&lt;Texture&gt;("MyTexture"); \/\/ retornar o ativo carregado sem aumentar o contador de referência (contagem de ref = 1)
+Asset.Get&lt;Texture&gt;("MyTexture"); // retornar o ativo carregado sem aumentar o contador de referência (contagem de ref = 1)
  
-\/\/ a textura ainda pode ser usada aqui
-Asset.Unload(secondReference); \/\/ diminuem o contador de referência e descarreguem o ativo (contagem de retorno = 0)
+// a textura ainda pode ser usada aqui
+Asset.Unload(secondReference); // diminuem o contador de referência e descarreguem o ativo (contagem de retorno = 0)
  
-\/\/ A textura foi descarregada, não pode ser usada aqui mais.
+// A textura foi descarregada, não pode ser usada aqui mais.
 </target>
 </trans-unit>
 </body>

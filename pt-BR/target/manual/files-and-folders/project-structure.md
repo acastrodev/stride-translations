@@ -8,7 +8,7 @@ Um projeto pode conter um pacote ou vários. Você pode compartilhar pacotes ent
 
 ## Estrutura da pasta do pacote
 
-<x1\/> Estrutura de base<x2\/>
+![ Estrutura de base](media/folder-structure.png)
 
 * **Ativos** contém os arquivos [asset](../game-studio/assets.md) que representam elementos no seu jogo.
 

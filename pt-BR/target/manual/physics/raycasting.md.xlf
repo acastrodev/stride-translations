@@ -8,8 +8,8 @@
 <trans-unit id="tu2" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Intermediate<x id="2"/>
 <x id="3"/>Programmer<x id="4"/></source>
-<target xml:lang="pt">&lt;x1\/&gt; Intermediário &lt;x2\/&gt;
-&lt;x3\/&gt;Programação&lt;x4\/&gt;</target>
+<target xml:lang="pt"><x id="1"/>Intermediário<x id="2"/>
+<x id="3"/>Programação<x id="4"/></target>
 </trans-unit>
 <trans-unit id="tu3" xml:space="preserve">
 <source xml:lang="en"><g id="1">Raycasting</g> traces an invisible line through the scene to find intersecting <g id="2">colliders</g>. This is useful, for example, to check which objects are in a gun's line of fire, or are under the mouse cursor when the user clicks.</source>
@@ -18,12 +18,12 @@
 <trans-unit id="tu4" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>!Note<x id="2"/>
 Raycasting uses <g id="3">colliders</g> to calculate intersections. It ignores entities that have no collider component. For more information, see <g id="4">Colliders</g>.</source>
-<target xml:lang="pt">&lt;x1\/&gt;!Note&lt;x2\/&gt;
+<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
 Raycasting usa <g id="3">colliders</g> para calcular interseções. Ele ignora entidades que não têm componente de colisão. Para mais informações, consulte <g id="4">Colliders</g>.</target>
 </trans-unit>
 <trans-unit id="tu5" xml:space="preserve">
 <source xml:lang="en">To use a raycast, in the current <g id="1">Simulation</g>, use <x id="2"/>Simulation.Raycast<x id="3"/>(xref:Stride.Physics.Simulation.Raycast(Vector3, Vector3, CollisionFilterGroups, CollisionFilterGroupFlags, bool)).</source>
-<target xml:lang="pt">Para usar um raycast, na corrente <g id="1">Simulation</g>, use &lt;x1\/&gt;Simulation.Raycast&lt;x2\/&gt;(xref:Stride.Physics.Simulation.Raycast(Vector3, Vector3, CollisionFilter Grupos, CollisionFilterGroupFlags, bool)).</target>
+<target xml:lang="pt">Para usar um raycast, na corrente <g id="1">Simulation</g>, use <x id="2"/>Simulation.Raycast<x id="3"/>(xref:Stride.Physics.Simulation.Raycast(Vector3, Vector3, CollisionFilter Grupos, CollisionFilterGroupFlags, bool)).</target>
 </trans-unit>
 <trans-unit id="tu6" xml:space="preserve">
 <source xml:lang="en">For an example of raycasting, see the <g id="1">Physics Sample</g> project included with Stride.</source>
@@ -71,27 +71,27 @@ Raycasting usa <g id="3">colliders</g> para calcular interseções. Ele ignora e
 (
     Matrix invViewProj = Matrix.Invert (camera.ViewProjectionMatrix);
 
-    \/\/ Reconstrua a posição do espaço de projeção no intervalo (-1, +1).
-    \/\/ Não se esqueça que Y está em coordenadas de tela, mas em espaço de projeção
+    // Reconstrua a posição do espaço de projeção no intervalo (-1, +1).
+    // Não se esqueça que Y está em coordenadas de tela, mas em espaço de projeção
     Vector3 sPos;
     sPos.X = screenPos.X * 2f - 1f;
     sPos.Y = 1f - screenPos.Y * 2f;
 
-    \/\/ Compute o ponto próximo (start) para o raycast
-    \/\/ Assume-se que tenha as mesmas coordenadas de espaço de projeção (x,y) e z = 0 (de pé no plano próximo)
-    \/\/ Precisamos de desprojetá-lo para o espaço mundial
+    // Compute o ponto próximo (start) para o raycast
+    // Assume-se que tenha as mesmas coordenadas de espaço de projeção (x,y) e z = 0 (de pé no plano próximo)
+    // Precisamos de desprojetá-lo para o espaço mundial
     sPos.Z = 0f;
     var vectorNear = Vector3.Transform(sPos, invViewProj);
-    vectorNear \/= vectorNear.W;
+    vectorNear /= vectorNear.W;
 
-    \/\/ Compute o ponto distante (fim) para o raycast
-    \/\/ Assume-se que tenha as mesmas coordenadas de espaço de projeção (x,y) e z = 1 (de pé no plano distante)
-    \/\/ Precisamos de desprojetá-lo para o espaço mundial
+    // Compute o ponto distante (fim) para o raycast
+    // Assume-se que tenha as mesmas coordenadas de espaço de projeção (x,y) e z = 1 (de pé no plano distante)
+    // Precisamos de desprojetá-lo para o espaço mundial
     sPos.Z = 1f;
     variação Far = Vector3.Transform(sPos, invViewProj);
-    vectorFar \/= vectorFar.W;
+    vectorFar /= vectorFar.W;
 
-    \/\/ Raycast do ponto no avião próximo ao ponto no avião distante e obter o resultado da colisão
+    // Raycast do ponto no avião próximo ao ponto no avião distante e obter o resultado da colisão
     var result = simulação. Raycast(vectorNear.XYZ(), vectorFar.XYZ());
     resultado de retorno. Sucedida;
 }
@@ -100,7 +100,7 @@ Raycasting usa <g id="3">colliders</g> para calcular interseções. Ele ignora e
 <trans-unit id="tu10" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>!Note<x id="2"/>
 There are multiple ways to retrieve a reference to this <g id="3">Simulation</g> from inside one of your <g id="4">ScriptComponent</g>:</source>
-<target xml:lang="pt">&lt;x1\/&gt;!Note&lt;x2\/&gt;
+<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
 Existem várias maneiras de recuperar uma referência a este <g id="3">Simulation</g> de dentro de um de seu <g id="4">ScriptComponent</g>:</target>
 </trans-unit>
 <trans-unit id="tu11" xml:space="preserve">

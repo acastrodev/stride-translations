@@ -4,25 +4,25 @@ Quando estiver pronto para publicar o seu jogo, crie uma versão do Visual Studi
 
 ## 1. Criar uma compilação de lançamento
 
-1. Se você construiu seu jogo no modo de lançamento antes, em sua pasta de projeto (por exemplo *MyGame\/Bin\/MyPlatform\/Release\/*), exclua a pasta *Data*. Esta pasta pode conter arquivos desnecessários, como versões antigas de ativos, então é mais simples construí-lo novamente do zero.
+1. Se você construiu seu jogo no modo de lançamento antes, em sua pasta de projeto (por exemplo *MyGame/Bin/MyPlatform/Release/*), exclua a pasta *Data*. Esta pasta pode conter arquivos desnecessários, como versões antigas de ativos, então é mais simples construí-lo novamente do zero.
 
 2. Abra seu projeto no Game Studio.
 
 3. Na barra de ferramentas, clique no menu suspenso e selecione **Visual Studio**.
 
-   <x1\/> Abra em VS<x2\/>
+   ![ Abra em VS](media/open-in-visual-studio.png)
 
    Seu projeto abre no Visual Studio.
 
 4. No Visual Studio, no menu suspenso **Solution Configurations**, selecione **Release**.
 
-   <x1\/>Select release<x2\/>
+   ![Select release](media/select-release.png)
 
 5. No menu drop-down **Solution plataformas**, selecione a plataforma para a qual você deseja criar uma compilação.
 
-   <x1\/>Selecione a plataforma<x2\/>
+   ![Selecione a plataforma](media/select-platform.png)
 
-   > <x1\/>!Note<x2\/>
+   > [!Note]
    >
    > Você só pode construir para plataformas que você adicionou ao seu projeto Stride. Para obter instruções sobre como fazer isso, consulte [Adicionar ou remover uma plataforma](../platforms/add-or-remove-a-platform.md).
    >
@@ -30,11 +30,11 @@ Quando estiver pronto para publicar o seu jogo, crie uma versão do Visual Studi
 
 6. Sob **Construir **, selecione **Construir solução**.
 
-   <x1\/> Solução de construção<x2\/>
+   ![ Solução de construção](media/build-solution.png)
 
-   Visual Studio cria uma compilação de lançamento em sua pasta bin projeto (por exemplo *MyGame\/Bin\/MyPlatform\/Release*).
+   Visual Studio cria uma compilação de lançamento em sua pasta bin projeto (por exemplo *MyGame/Bin/MyPlatform/Release*).
 
-> <x1\/>!Tip<x2\/>
+> [!Tip]
 > Você pode querer renomear a pasta **Release** para algo mais descritivo (como o título do seu jogo).
 
 ### Para construir usando terminal em vez de Visual Studio
@@ -43,12 +43,12 @@ Quando estiver pronto para publicar o seu jogo, crie uma versão do Visual Studi
 2. Em Developer Command Prompt for Visual Studio
 3. 
    ```console
-   C:\User> msbuild PathToSln\NameOfProject.sln \/p:Configuração=Release \/p:OutputPath=YourPreferredPath
+   C:\User> msbuild PathToSln\NameOfProject.sln /p:Configuração=Release /p:OutputPath=YourPreferredPath
    ```
 
 ## 2. Excluir arquivos desnecessários
 
-Na pasta de lançamento em sua pasta bin projeto (por exemplo *MyGame\/Bin\/MyPlatform\/Release*), você pode excluir os seguintes arquivos desnecessários:
+Na pasta de lançamento em sua pasta bin projeto (por exemplo *MyGame/Bin/MyPlatform/Release*), você pode excluir os seguintes arquivos desnecessários:
 
 * `.pdb` arquivos (informações de depuração)
 
@@ -70,7 +70,7 @@ Para executar jogos feitos com Stride no Windows, os usuários precisam:
 
 * DirectX11 (incluído com Windows 10 e posterior), OpenGL, ou Vulkan
 
-* Tempos de execução Visual C++ 2015 (x86 e\/ou x64, dependendo do que você estabeleceu em suas propriedades do projeto no Visual Studio)
+* Tempos de execução Visual C++ 2015 (x86 e/ou x64, dependendo do que você estabeleceu em suas propriedades do projeto no Visual Studio)
 
 ## Ver também
 

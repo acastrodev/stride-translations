@@ -1,21 +1,21 @@
 # Simulação de física
 
-<x1\/> Intermediário <x2\/>
-<x3\/>Programação<x4\/>
+<span class="badge text-bg-primary">Intermediário</span>
+<span class="badge text-bg-success">Programação</span>
 
 A física de Stride é controlada pela classe [Simulation](xref:Stride.Physics.Simulation).
 Você pode mudar como Stride inicializa o [simulation](xref:Stride.Physics.Simulation) modificando bandeiras em [PhysicsDefinições](xref:Stride.Physics.PhysicsSettings), acessado nas propriedades de ativos **GameSettings**.
 
-> <x1\/>!Note<x2\/>
+> [!Note]
 > Sua cena deve ter pelo menos um [Collider](colliders.md) para que Stride inicialize a instância [Simulation](xref:Stride.Physics.Simulation).
 
-<x1\/>Physics Configurações<x2\/>
+![Physics Configurações](media/simulation-physics-settings.png)
 
 * `CollisionsOnly` inicializa o [Simulation](xref:Stride.Physics.Simulation) com detecção de colisão ligada, mas nenhuma outra física. Os objectos não reagem às forças físicas.
 
 * `ContinuousCollisionDetection` inicializa o [Simulation](xref:Stride.Physics.Simulation) com detecção contínua (CCD). O CCD evita que entidades em movimento rápido (como balas) passem erroneamente por outras entidades.
 
-> <x1\/>!Note<x2\/>
+> [!Note]
 > O ``SoftBodySupport``, ``MultiThreaded`` e ``UseHardwareWhenPossible`` flags estão atualmente desativados.
 
 No tempo de execução, você pode alterar alguns parâmetros [Simulation](xref:Stride.Physics.Simulation):

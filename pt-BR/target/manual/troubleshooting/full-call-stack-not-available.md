@@ -13,6 +13,6 @@ Para quebrar assim que uma exceção for lançada, adicione condições adiciona
    ![ Todas as exceções de tempo de execução de linguagem comum não nesta lista](media/all-common-language-runtime-exceptions.png)
 
 > [!Tip]
-> To restore the default list of exceptions, right-click and select **Restore Defaults**.
+> Para restaurar a lista padrão de exceções, clique com o botão direito do mouse e selecione **Restore Defaults**.
 
 Para obter mais informações sobre como gerenciar exceções no Visual Studio, consulte exceções [Manage com o depurador no Visual Studio](https://docs.microsoft.com/en-us/visualstudio/debugger/managing-exceptions-with-the-debugger) na documentação do Microsoft Visual Studio.

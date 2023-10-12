@@ -1,6 +1,6 @@
 # Activos
 
-<x1\/>Introdução<x2\/>
+<span class="badge text-bg-primary">Introdução</span>
 
 Um **asset** é uma representação de um elemento do seu jogo dentro do Game Studio, como uma textura, animação ou modelo.
 
@@ -8,25 +8,25 @@ Alguns ativos requerem **recurso de arquivos**. Por exemplo, os ativos de textur
 
 Você pode compilar e otimizar ativos com um compilador especial fornecido pela Stride. Os ativos compilados são embalados juntos como pacotes reutilizáveis.
 
-<x1\/>Ativos exibidos no Asset View<x2\/>
+![Ativos exibidos no Asset View](../get-started/media/asset-creation-asset-view-tab-knight.png)
 
 Você pode:
 
 * criar e navegar ativos no **Asset View**
 
-   <x1\/>media\/Editor2_assetview_thumb.jpg<x2\/>
+   ![media/Editor2_assetview_thumb.jpg](media/Editor2_assetview_thumb.jpg)
 
 * importar ativos existentes, como arquivos FBX
 
-   <x1\/>media\/EditorImportAssets_explorer_thumb.jpg<x2\/>
+   ![media/EditorImportAssets_explorer_thumb.jpg](media/EditorImportAssets_explorer_thumb.jpg)
 
 * editar ativos no editor de propriedade ****
 
-   <x1\/>media\/EditorProperties_props_thumb.jpg<x2\/>
+   ![media/EditorProperties_props_thumb.jpg](media/EditorProperties_props_thumb.jpg)
 
 * veja uma visualização ao vivo no **Asset Preview**
 
-   <x1\/>media\/EditorProperties_preview_thumb.jpg<x2\/>
+   ![media/EditorProperties_preview_thumb.jpg](media/EditorProperties_preview_thumb.jpg)
 
 ## Nesta secção
 

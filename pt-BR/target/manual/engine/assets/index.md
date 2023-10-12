@@ -1,6 +1,6 @@
 # Gerenciador de ativos
 
-> <x1\/>!Warning<x2\/>
+> [!Warning]
 > Esta seção está fora de data. Por enquanto, você só deve usá-lo para referência.
 
 # Activos
@@ -16,7 +16,7 @@ Sua URL corresponderá ao nome (incluindo pasta) no Game Studio.
 Exemplos de URLs:
 
 - cavaleiro (usuário importa cavaleiro. fbx diretamente na pasta de ativos principal)
-- level1\/room1 (o usuário cria nível1 e sala de importação1.fbx dentro)
+- level1/room1 (o usuário cria nível1 e sala de importação1.fbx dentro)
 
 Para mais informações, consulte [Ativos](../../game-studio/assets.md) para mais detalhes.
 
@@ -25,13 +25,13 @@ Para mais informações, consulte [Ativos](../../game-studio/assets.md) para mai
 Carregar um ativo deve ser feito com a ajuda de @'Stride. Core.Serialization.Assets.AssetManager' classe:
 
 ```cs
-\/\/ Carregar um ativo diretamente de um arquivo:
+// Carregar um ativo diretamente de um arquivo:
 var texture = Content.Load<Texture>("texture1");
 
-\/\/ Carregar um recurso de cena
-var scene = Content.Load<Scene>("scenes\/scene1");
+// Carregar um recurso de cena
+var scene = Content.Load<Scene>("scenes/scene1");
  
-\/\/ Carregar um ativo de Entidade
+// Carregar um ativo de Entidade
 var entity = Content.Load<Entity>("entity1");
 ```
 
@@ -57,24 +57,24 @@ Um ativo é realmente descarregar somente quando o número de chamada para desca
 O @'Stride.Core.Serialization.Assets.AssetManager. O método Get' retorna a referência a um ativo carregado, mas não incrementa o contador de referência de ativos.
 
 ```cs
- var firstReference = Content.Load<Texture>("MyTexture"); \/\/ carregar o ativo e aumentar o contador de referência (contagem de ref = 1)
+ var firstReference = Content.Load<Texture>("MyTexture"); // carregar o ativo e aumentar o contador de referência (contagem de ref = 1)
  
-\/\/ a textura pode ser usada aqui
+// a textura pode ser usada aqui
  
-var secondReference = Content.Load<Texture>("MyTexture"); \/\/ só aumentar o contador de referência (contagem de ref = 2)
+var secondReference = Content.Load<Texture>("MyTexture"); // só aumentar o contador de referência (contagem de ref = 2)
  
-\/\/ a textura ainda pode ser usada aqui
+// a textura ainda pode ser usada aqui
  
-Asset.Unload(firstReference); \/\/ diminuem o contador de referência (ref count = 1)
+Asset.Unload(firstReference); // diminuem o contador de referência (ref count = 1)
  
-\/\/ a textura ainda pode ser usada aqui
+// a textura ainda pode ser usada aqui
  
-Asset.Get<Texture>("MyTexture"); \/\/ retornar o ativo carregado sem aumentar o contador de referência (contagem de ref = 1)
+Asset.Get<Texture>("MyTexture"); // retornar o ativo carregado sem aumentar o contador de referência (contagem de ref = 1)
  
-\/\/ a textura ainda pode ser usada aqui
-Asset.Unload(secondReference); \/\/ diminuem o contador de referência e descarreguem o ativo (contagem de retorno = 0)
+// a textura ainda pode ser usada aqui
+Asset.Unload(secondReference); // diminuem o contador de referência e descarreguem o ativo (contagem de retorno = 0)
  
-\/\/ A textura foi descarregada, não pode ser usada aqui mais.
+// A textura foi descarregada, não pode ser usada aqui mais.
 ```
 
 

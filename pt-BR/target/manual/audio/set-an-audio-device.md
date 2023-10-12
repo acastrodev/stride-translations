@@ -1,7 +1,7 @@
 # Definir um dispositivo de áudio
 
-<x1\/>Avançado<x2\/>
-<x3\/>Programação<x4\/>
+<span class="badge text-bg-primary">Avançado</span>
+<span class="badge text-bg-success">Programação</span>
 
 Você pode definir qual dispositivo de áudio Stride usa. Por exemplo, você pode acessar o dispositivo de áudio _Oculus Rift_ do seu construtor de jogo personalizado.
 

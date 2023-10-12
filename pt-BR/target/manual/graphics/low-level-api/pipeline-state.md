@@ -14,11 +14,11 @@ Estado é compilado em objetos @'Stride.Graphics.PipelineState' imutáveis, que 
 ** Código:** Criar objetos de estado
 
 ```cs
-\/\/ Criando objeto de estado de pipeline
+// Criando objeto de estado de pipeline
 var pipelineStateDescription = novo PipelineStateDescription();
 var pipelineState = PipelineState.New (GraphicsDevice, ref pipelineStateDescription);
  
-\/\/ Aplicando o estado ao pipeline
+// Aplicando o estado ao pipeline
 CommandList.SetPipelineState (pipelineState);
 ```
 
@@ -27,14 +27,14 @@ O @'Stride.Graphics.MutablePipelineState' classe deixá-lo definir estados indep
 ** Código:** Estado do pipeline mutável
 
 ```cs
-\/\/ Criando o objeto estado do pipeline
+// Criando o objeto estado do pipeline
 var mutablePipelineState = novo MutablePipelineState();
 
-\/\/ Definir valores e reconstruir
+// Definir valores e reconstruir
 mutablePipelineState.State.BlendState = BlendStates.AlphaBlend
 mutablePipelineState.Atualização
  
-\/\/ Aplicando o estado ao pipeline
+// Aplicando o estado ao pipeline
 CommandList.SetPipelineState (mutablePipelineState.CurrentState);
 ```
 
@@ -60,7 +60,7 @@ Você pode criar seu próprio estado personalizado. Para a lista de opções e v
 
 ```cs
 var rasterizer Descrição do Estado = nova RasterizerStateDescription(CullMode.Front);
-rasterizerStateDescription.ScissorTestEnable = true; \/\/ permite o teste de tesoura
+rasterizerStateDescription.ScissorTestEnable = true; // permite o teste de tesoura
 pipelineStateDescription.RasterizerState = rasterizerStateDescription;
 ```
 
@@ -87,7 +87,7 @@ Você também pode definir a profundidade personalizada e estados estêncil. Par
 ** Código:** Profundidade personalizada e estado estêncil
 
 ```cs
-\/\/ teste de profundidade está habilitado, mas não escreve
+// teste de profundidade está habilitado, mas não escreve
 var profundidadeStencilStateDescrição = novo DepthStencilStateDescription (verdade, falso);
 pipelineStateDescription.DepthStencilState = profundidadeStencilStateDescription;
 ```
@@ -113,13 +113,13 @@ O @'Stride.Graphics.PipelineStateDescription.BlendState' e @'Stride.Graphics.Pip
 ** Código:** Definir o estado da mistura
 
 ```cs
-\/\/ Definir estados comuns de mistura
+// Definir estados comuns de mistura
 pipelineStateDescription. BlendState = BlendStates. Aditivo;
 pipelineStateDescription. BlendState = BlendStates.AlphaBlend;
 pipelineStateDescription. BlendState = BlendStates.NonPremultiplicado;
 pipelineStateDescription. BlendState = BlendStates. Opaco;
 
-\/\/ Defina a máscara de amostra
+// Defina a máscara de amostra
 pipeStateDescription.SampleMask = 0xFFFFFFFF;
 ```
 
@@ -128,15 +128,15 @@ Você pode definir estados de profundidade e mistura personalizados. Para obter 
 ** Código:** Estado de mistura personalizado
 
 ```cs
-\/\/ criar o objeto descrevendo o estado da mistura por alvo
+// criar o objeto descrevendo o estado da mistura por alvo
 var blendStateRenderTargetDescription = novo BlendStateRenderTargetDescription();
 blendStateRenderTargetDescription. BlendEnable = true;
 blendStateRenderTargetDescription.ColorSourceBlend = Blend.SourceColor;
-\/\/ etc.
+// etc.
 
-\/\/ criar o objeto blendStateDescription
+// criar o objeto blendStateDescription
 var blendStateDescription = new BlendStateDescription(Blend.SourceColor, Blend.InverseSourceColor);
-blendStateDescription.AlphaToCoverageAtivar = verdadeiro; \/\/ permitir a cobertura alfa
+blendStateDescription.AlphaToCoverageAtivar = verdadeiro; // permitir a cobertura alfa
 blendStateDescription.RenderTargets[0] = blendStateRenderTargetDescription;
 pipelineStateDescription.BlendState = blendStateDescription;
 ```

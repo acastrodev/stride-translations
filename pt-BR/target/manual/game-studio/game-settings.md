@@ -1,8 +1,8 @@
 # Definições do jogo
 
-<x1\/>Introdução<x2\/>
-<x3\/>Programação<x4\/>
-<x5\/>Designer<x6\/>
+<span class="badge text-bg-primary">Introdução</span>
+<span class="badge text-bg-success">Programação</span>
+<span class="badge text-bg-success">Designer</span>
 
 Você pode configurar as configurações globais do seu jogo no ativo **Game Settings**. Por padrão, o ativo Configurações de Jogo é armazenado na pasta **Assets** do seu projeto.
 
@@ -10,15 +10,15 @@ Você pode configurar as configurações globais do seu jogo no ativo **Game Set
 
 1. No **Solution Explorer** (o painel inferior esquerdo por padrão), selecione a pasta **Assets**.
 
-   <x1\/>Select Assets pasta asset<x2\/>
+   ![Select Assets pasta asset](media/select-asset-folder.png)
 
 2. No **Asset View** (o painel inferior por padrão), selecione o ativo **GameSettings**.
 
-   <x1\/>Selecionar configurações de jogo asset<x2\/>
+   ![Selecionar configurações de jogo asset](media/select-game-settings-asset.png)
 
 3. No **Property Grid** (o painel direito por padrão), edite as propriedades Configurações de Jogo.
 
-   <x1\/> Configurações do jogo <x2\/>
+   ![ Configurações do jogo ](media/game-settings.png)
 
 ## A cena padrão
 
@@ -26,9 +26,9 @@ Você pode ter várias cenas em seu projeto. O **default cena** é a cena Stride
 
 Para definir a cena padrão:
 
-1. Nas propriedades **GameSettings**, ao lado de **Default Scene**, clique em <x1\/>Hand icon<x2\/> (**Select an asset**).
+1. Nas propriedades **GameSettings**, ao lado de **Default Scene**, clique em ![Hand icon](~/manual/game-studio/media/hand-icon.png) (**Select an asset**).
 
-   <x1\/> Definir a cena padrão<x2\/>
+   ![ Definir a cena padrão](media/game-settings-default-scene.png)
 
    A janela **Selecione um ativo** abre.
 
@@ -42,9 +42,9 @@ Você pode ter vários compositores gráficos em seu projeto, mas você só pode
 
 Para definir o compositor gráfico:
 
-1. Nas propriedades **GameSettings**, ao lado de **Graphics compositor**, clique em <x1\/>Hand icon<x2\/> (**Select an asset**).
+1. Nas propriedades **GameSettings**, ao lado de **Graphics compositor**, clique em ![Hand icon](~/manual/game-studio/media/hand-icon.png) (**Select an asset**).
 
-   <x1\/> Definir a cena padrão<x2\/>
+   ![ Definir a cena padrão](media/game-settings-graphics-compositor.png)
 
    A janela **Selecione um ativo** abre.
 
@@ -54,7 +54,7 @@ Para mais informações, consulte o compositor [Graphics](../graphics/graphics-c
 
 ## Áudio
 
-<x1\/> Configurações de áudio <x2\/>
+![ Configurações de áudio ](media/audio-settings.png)
 
 | Propriedade | Descrição |
 |--------------|--------------
@@ -66,10 +66,10 @@ Para mais detalhes sobre áudio, veja [Audio](../audio/index.md).
 
 As configurações **editor** controlam como Game Studio exibe entidades no Editor de cena. Essas configurações não têm efeito no seu jogo.
 
-> <x1\/>!Note<x2\/>
+> [!Note]
 > Como o Game Studio exibe entidades também é afetado pela configuração **Color space** abaixo de **Rendering**.
 
-<x1\/> Configurações do editor<x2\/>
+![ Configurações do editor](media/editor-settings.png)
 
 | Propriedade | Descrição |
 |---------------------|--------------
@@ -78,7 +78,7 @@ As configurações **editor** controlam como Game Studio exibe entidades no Edit
 
 ## Navegação
 
-<x1\/> Configurações de navegação<x2\/>
+![ Configurações de navegação](../navigation/media/navigation-settings.png)
 
 ### Propriedades de malha de navegação dinâmica
 
@@ -104,7 +104,7 @@ Para mais detalhes, veja [Navigation](../navigation/index.md).
 
 ## Física
 
-<x1\/> Configurações de tópico <x2\/>
+![ Configurações de tópico ](media/physics-settings.png)
 
 | Propriedade | Descrição |
 |-----------------|----------------
@@ -114,24 +114,24 @@ Para mais detalhes, veja [Navigation](../navigation/index.md).
 
 ## Renderização
 
-<x1\/> Configurações de reprodução<x2\/>
+![ Configurações de reprodução](media/rendering-settings.png)
 
 | Propriedade | Descrição |
 |-----------------------------|----------------
-| Largura do amortecedor traseiro padrão | Isso pode ser substituído dependendo da relação e\/ou resolução do dispositivo. No Windows, este é o tamanho da janela. No Android\/iOS, esta é a resolução de alvo fora da tela. |
-| Altura do amortecedor traseiro padrão | Isso pode ser substituído dependendo da relação e\/ou resolução do dispositivo. No Windows, este é o tamanho da janela. No Android\/iOS, esta é a resolução de alvo fora da tela. |
+| Largura do amortecedor traseiro padrão | Isso pode ser substituído dependendo da relação e/ou resolução do dispositivo. No Windows, este é o tamanho da janela. No Android/iOS, esta é a resolução de alvo fora da tela. |
+| Altura do amortecedor traseiro padrão | Isso pode ser substituído dependendo da relação e/ou resolução do dispositivo. No Windows, este é o tamanho da janela. No Android/iOS, esta é a resolução de alvo fora da tela. |
 | Adapte o buffer de volta para a tela | Adapte a relação do buffer traseiro para ajustar a relação de tela |
 | Perfil gráfico padrão | O nível de recursos gráficos exigido pelo projeto |
 | Espaço de cor | O espaço de cor (gama ou linear) usado para renderização. Isso afeta o jogo em tempo de execução e como os elementos são exibidos no Game Studio. |
 | Orientação de exibição | A orientação de exibição do jogo (padrão, retrato, paisagem esquerda ou paisagem direita). |
 | Plataforma gráfica de destino | A plataforma de destino Stride constrói o projeto para. Se você definir isso para **Default**, Stride escolhe a plataforma mais apropriada. Para obter mais informações, consulte [Defina a plataforma gráfica](../platforms/set-the-graphics-platform.md). |
 
-> <x1\/>!Tip<x2\/>
+> [!Tip]
 > Para verificar qual plataforma padrão seu projeto usa, adicione um ponto de interrupção ao seu código (por exemplo, em um script), execute o projeto e verifique o valor da variável [GraphicsDevice.Platform](xref:Stride.Graphics.GraphicsDevice.Platform).
 
 ## Streaming
 
-<x1\/>Streaming settings<x2\/>
+![Streaming settings](media/streaming-settings.png)
 
 | Propriedade | Descrição |
 |----------------------|------------
@@ -141,14 +141,14 @@ Para mais detalhes, veja [Navigation](../navigation/index.md).
 | Tempo de recurso (ms) | Quanto tempo os recursos permanecem carregados após não serem mais utilizados (quando o orçamento de memória **** é excedido) |
 | Orçamento de memória (em MB) | Quando a memória usada por streaming excede este orçamento, Stride descarrega texturas não utilizadas. Você pode aumentar isso para manter mais texturas carregadas quando você tem memória para poupar, e vice-versa. |
 
-> <x1\/>!Note<x2\/>
+> [!Note]
 > Atualmente, apenas texturas podem ser transmitidas.
 
 Para mais detalhes, consulte [Streaming](../graphics/textures/streaming.md).
 
 ## Texturas
 
-<x1\/> Configurações de exposição<x2\/>
+![ Configurações de exposição](media/texture-settings.png)
 
 | Propriedade | Descrição |
 |-----------------|--------------
@@ -158,25 +158,25 @@ Para mais detalhes, consulte [Streaming](../graphics/textures/streaming.md).
 
 Você pode substituir configurações para plataformas específicas, APIs gráficas e assim por diante. Por exemplo, você pode definir diferentes qualidades de textura para diferentes plataformas.
 
-1. Com o ativo **GameSettings** selecionado, no **Property Grid**, abaixo de **Overrides**, clique em <x1\/>Green plus button<x2\/> (**Add**).
+1. Com o ativo **GameSettings** selecionado, no **Property Grid**, abaixo de **Overrides**, clique em ![Green plus button](~/manual/game-studio/media/green-plus-icon.png) (**Add**).
 
-   <x1\/> Selecione a plataforma gráfica<x2\/>
+   ![ Selecione a plataforma gráfica](../platforms/media/add-override.png)
 
    Game Studio adiciona uma substituição.
 
 2. Na nova substituição, ao lado de **Platforms**, selecione as plataformas às quais deseja que a substituição se aplique. Você pode selecionar quantos precisar.
 
-   <x1\/>Selecione a plataforma de gráficos sobrescrevendo<x2\/>
+   ![Selecione a plataforma de gráficos sobrescrevendo](../platforms/media/select-override-platform.png)
 
 3. **Opcional**: Se você quiser que essa substituição se aplique apenas a uma plataforma GPU específica, escolha-a na lista suspensa **Specific filter**.
 
-   <x1\/> Filtro específico <x2\/>
+   ![ Filtro específico ](media/specific-filter.png)
 
    Você pode adicionar plataformas GPU a esta lista em filtros **Platform** (veja **Adicione um filtro de plataforma** abaixo).
 
 4. No menu suspenso **Configuration**, selecione o tipo de configuração que deseja substituir (**Editor**, **Texture**, **Rendering** ou **Physics**).
 
-   <x1\/>Selecione a plataforma de gráficos sobrescrevendo<x2\/>
+   ![Selecione a plataforma de gráficos sobrescrevendo](../platforms/media/select-override-configuration.png)
 
 5. Defina as opções que deseja substituir.
 
@@ -184,13 +184,13 @@ Você pode substituir configurações para plataformas específicas, APIs gráfi
 
 Você pode escolher itens na lista **Platform Filters** como um filtro de plataforma específico quando você definir uma substituição (veja acima).
 
-<x1\/> Filtro específico <x2\/>
+![ Filtro específico ](media/specific-filter.png)
 
 1. Com o ativo **GameSettings** selecionado, no **Property Grid**, expanda **Platform Filters**.
 
    A Grade de Propriedade exibe uma lista de filtros de plataforma que você pode usar.
 
-   <x1\/>Lista de filtros de plataforma<x2\/>
+   ![Lista de filtros de plataforma](media/list-of-platform-filters.png)
 
 2. Na parte inferior da lista, clique em **Add to Platform Filters**.
 
@@ -198,23 +198,23 @@ Você pode escolher itens na lista **Platform Filters** como um filtro de plataf
 
 3. No campo do item, digite o filtro GPU que deseja adicionar.
 
-   <x1\/>Tipe filtro de plataforma<x2\/>
+   ![Tipe filtro de plataforma](media/add-platform-filter-name.png)
 
 Depois de adicionar um filtro de plataforma, você pode selecioná-lo em **Override > Filtro específico**.
 
-<x1\/>Override<x2\/>
+![Override](media/new-GPU-in-override-list.png)
 
-> <x1\/>!Note<x2\/>
+> [!Note]
 > Se o novo filtro não estiver listado, remova a substituição e volte a adicioná-lo.
 
 ## Tela de Splash
 
 A tela **splash** é exibida quando seu jogo começa. O padrão é a tela de respingo Stride.
 
-> <x1\/>!Note<x2\/>
+> [!Note]
 > A tela de respingo só é exibida quando o jogo é construído no modo de lançamento.
 
-<x1\/>Configurações <x2\/>
+![Configurações ](media/splash-screen.png)
 
 | Propriedade | Descrição |
 |----------|------------

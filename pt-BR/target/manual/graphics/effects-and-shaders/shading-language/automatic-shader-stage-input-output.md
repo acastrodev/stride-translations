@@ -1,7 +1,7 @@
-# Entrada\/saída automática do palco do shader
+# Entrada/saída automática do palco do shader
 
-<x1\/>Avançado<x2\/>
-<x3\/>Programação<x4\/>
+<span class="badge text-bg-primary">Avançado</span>
+<span class="badge text-bg-success">Programação</span>
 
 Quando você escreve um shader HLSL, você tem que definir precisamente seus atributos de vértice e passá-los cuidadosamente através do estágio do seu shader final.
 
@@ -96,7 +96,7 @@ Este exemplo é simples. Projetos reais têm muitos mais shaders, então uma ún
 
 Esquematicamente, adicionar um novo atributo requer que você atualize todas as etapas e estruturas intermediárias da entrada do vértice para a última etapa em que você deseja usar o atributo.
 
-<x1\/>media\/hlsl_add_normal.png<x2\/>
+![media/hlsl_add_normal.png](media/hlsl_add_normal.png)
 
 ## SDSL
 
@@ -114,7 +114,7 @@ Os fluxos reagrupam os conceitos de atributos, variações e saídas em um únic
 
 Pense em fluxos como objetos globais que você pode acessar em todos os lugares sem especificar como um parâmetro de suas funções.
 
-> <x1\/>!Note<x2\/>
+> [!Note]
 > Você não precisa criar um semântico para essas variáveis; o compilador os cria automaticamente. No entanto, tenha em mente que ** as variáveis que compartilham a mesma semântica serão fundidas no shader final**. Este comportamento pode ser útil quando você deseja usar uma variável de fluxo localmente sem herdar do shader onde foi declarado.
 
 Depois de declarar um fluxo, você pode acessá-lo em qualquer estágio do seu shader. O compilador de shader cuida de tudo. As variáveis precisam ser visíveis do código de chamada (ou seja, na hierarquia de herança) como qualquer outra variável.
@@ -199,7 +199,7 @@ shader MyShader: ShaderBase
 
 No SDSL, adicionar um novo atributo é tão simples como adicioná-lo ao conjunto de fluxos e usá-lo onde quiser.
 
-<x1\/>media\/sdsl_add_normal.png<x2\/>
+![media/sdsl_add_normal.png](media/sdsl_add_normal.png)
 
 ## Ver também
 

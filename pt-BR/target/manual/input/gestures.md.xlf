@@ -8,8 +8,8 @@
 <trans-unit id="tu2" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Intermediate<x id="2"/>
 <x id="3"/>Programmer<x id="4"/></source>
-<target xml:lang="pt">&lt;x1\/&gt; Intermediário &lt;x2\/&gt;
-&lt;x3\/&gt;Programação&lt;x4\/&gt;</target>
+<target xml:lang="pt"><x id="1"/>Intermediário<x id="2"/>
+<x id="3"/>Programação<x id="4"/></target>
 </trans-unit>
 <trans-unit id="tu3" xml:space="preserve">
 <source xml:lang="en">Gestures are predefined <g id="1">pointer</g> patterns. Stride can recognize gestures and trigger corresponding events. For example, in a strategy game, the player can drag and drop a unit to the battlefield with a <g id="2">drag</g> gesture. Gestures can use one or several fingers.</source>
@@ -18,7 +18,7 @@
 <trans-unit id="tu4" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>!Note<x id="2"/>
 All lengths, speeds and error margins of configuration files must use normalized values.</source>
-<target xml:lang="pt">&lt;x1\/&gt;!Note&lt;x2\/&gt;
+<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
 Todos os comprimentos, velocidades e margens de erro dos arquivos de configuração devem usar valores normalizados.</target>
 </trans-unit>
 <trans-unit id="tu5" xml:space="preserve">
@@ -48,7 +48,7 @@ Todos os comprimentos, velocidades e margens de erro dos arquivos de configuraç
 <trans-unit id="tu11" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>!Warning<x id="2"/>
 After you activate recognition for a gesture, you can't modify the gesture's parameters. If you need to do this, delete the gesture from the @'Stride.Input.InputManager.Gestures' collection and create a new entry with new parameters.</source>
-<target xml:lang="pt">&lt;x1\/&gt;!Warning&lt;x2\/&gt;
+<target xml:lang="pt"><x id="1"/>!Warning<x id="2"/>
 Depois de ativar o reconhecimento por um gesto, você não pode modificar os parâmetros do gesto. Se você precisar fazer isso, exclua o gesto do @'Stride. Input.InputManager.Gestures' coleção e criar uma nova entrada com novos parâmetros.</target>
 </trans-unit>
 <trans-unit id="tu12" xml:space="preserve">
@@ -70,7 +70,7 @@ Depois de ativar o reconhecimento por um gesto, você não pode modificar os par
 <trans-unit id="tu16" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>!Note<x id="2"/>
 Each gesture has its own associated gesture event class (see below).</source>
-<target xml:lang="pt">&lt;x1\/&gt;!Note&lt;x2\/&gt;
+<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
 Cada gesto tem sua própria classe de evento de gesto (veja abaixo).</target>
 </trans-unit>
 <trans-unit id="tu17" xml:space="preserve">
@@ -108,7 +108,7 @@ Cada gesto tem sua própria classe de evento de gesto (veja abaixo).</target>
 <trans-unit id="tu25" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>!Note<x id="2"/>
 Each gesture has its own configuration class with specific configuration parameters (see below).</source>
-<target xml:lang="pt">&lt;x1\/&gt;!Note&lt;x2\/&gt;
+<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
 Cada gesto tem sua própria classe de configuração com parâmetros de configuração específicos (veja abaixo).</target>
 </trans-unit>
 <trans-unit id="tu26" xml:space="preserve">
@@ -153,11 +153,11 @@ Cada gesto tem sua própria classe de configuração com parâmetros de configur
 </trans-unit>
 <trans-unit id="tu36" xml:space="preserve">
 <source xml:lang="en"><x id="1"/> Tap <x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt; Toque &lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/> Toque <x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu37" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Tap gesture<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt;Tap gesto&lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/>Tap gesto<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu38" xml:space="preserve">
 <source xml:lang="en">The user touches the screen and quickly removes their finger.</source>
@@ -178,16 +178,16 @@ Cada gesto tem sua própria classe de configuração com parâmetros de configur
 <trans-unit id="tu42" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>!TIP<x id="2"/>
 To distinguish single taps from multi-taps, the system uses latency in tap events. To disable this, set the <g id="3">GestureConfigTap.MaximumTimeBetweenTaps</g> field to <g id="4">0</g>.</source>
-<target xml:lang="pt">&lt;x1\/&gt;!TIP&lt;x2\/&gt;
+<target xml:lang="pt"><x id="1"/>!TIP<x id="2"/>
 Para distinguir torneiras únicas de multi-taps, o sistema usa latência em eventos de torneira. Para desativar isso, defina o campo <g id="3">GestureConfigTap.MaximumTimeBetweenTaps</g> para <g id="4">0</g>.</target>
 </trans-unit>
 <trans-unit id="tu43" xml:space="preserve">
 <source xml:lang="en"><x id="1"/> Flick<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt; Flick&lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/> Flick<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu44" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Flick gesture<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt;Flick gesto&lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/>Flick gesto<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu45" xml:space="preserve">
 <source xml:lang="en">The user touches the screen, performs a quick straight translation, and withdraws their finger(s).</source>
@@ -217,11 +217,11 @@ Para distinguir torneiras únicas de multi-taps, o sistema usa latência em even
 </trans-unit>
 <trans-unit id="tu51" xml:space="preserve">
 <source xml:lang="en"><x id="1"/> Long press<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt; Imprensa longa &lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/> Imprensa longa <x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu52" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Long press gesture<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt;Long press gesto&lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/>Long press gesto<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu53" xml:space="preserve">
 <source xml:lang="en">The user touches the screen and maintains pressure without removing their finger for a certain period of time (the default time is one second).</source>
@@ -249,11 +249,11 @@ Para distinguir torneiras únicas de multi-taps, o sistema usa latência em even
 </trans-unit>
 <trans-unit id="tu59" xml:space="preserve">
 <source xml:lang="en"><x id="1"/> Drag<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt; Drag&lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/> Drag<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu60" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Drag gesture<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt;Drag gesto&lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/>Drag gesto<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu61" xml:space="preserve">
 <source xml:lang="en">The user touches the screen, performs a translation, and withdraws their finger(s).</source>
@@ -281,11 +281,11 @@ Para distinguir torneiras únicas de multi-taps, o sistema usa latência em even
 </trans-unit>
 <trans-unit id="tu67" xml:space="preserve">
 <source xml:lang="en"><x id="1"/> Composite<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt; Composite&lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/> Composite<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu68" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Translation gesture<x id="2"/> <x id="3"/>Scale gesture<x id="4"/> <x id="5"/>Rotation gesture<x id="6"/></source>
-<target xml:lang="pt">&lt;x1\/&gt;Gestão de tradução&lt;x2\/&gt; &lt;x3\/&gt;Gestão de cálculo &lt;x4\/&gt;Gestão de rotação&lt;x6\/&gt;&lt;x5\/&gt;</target>
+<target xml:lang="pt"><x id="1"/>Gestão de tradução<x id="2"/> <x id="3"/>Gestão de cálculo <x id="4"/>Gestão de rotação<x id="6"/><x id="5"/></target>
 </trans-unit>
 <trans-unit id="tu69" xml:space="preserve">
 <source xml:lang="en">The user touches the screen with two fingers and moves them independently.</source>
@@ -378,22 +378,22 @@ Input.Gestures.Remove(singleTapConfig);
 // Stop all gesture recognitions.
 Input.Gestures.Clear();
 </source>
-<target xml:lang="pt">\/\/ Crie a configuração de um gesto que deseja reconhecer.
+<target xml:lang="pt">// Crie a configuração de um gesto que deseja reconhecer.
 var single TapConfig = novo GestureConfigTap();
 
-\/\/ Iniciar reconhecimento de gestos.
+// Iniciar reconhecimento de gestos.
 Entrada.Gestures.Add (singleTapConfig);
 
-\/\/ Crie a configuração do gesto que deseja reconhecer.
+// Crie a configuração do gesto que deseja reconhecer.
 var duplo TapConfig = novo GestureConfigTap(2, 1);
 
-\/\/ Iniciar reconhecimento de gesto de torneira dupla.
+// Iniciar reconhecimento de gesto de torneira dupla.
 Entrada.Gestures.Add (doubleTapConfig);
 
-\/\/ Pare de reconhecer gestos.
+// Pare de reconhecer gestos.
 Input.Gestures.Remover(singleTapConfig);
 
-\/\/ Parem todos os reconhecimentos de gestos.
+// Parem todos os reconhecimentos de gestos.
 Entrada.Gesturas.Clear();
 </target>
 </trans-unit>
@@ -408,7 +408,7 @@ Entrada.Gesturas.Clear();
 <trans-unit id="tu90" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>!warning<x id="2"/>
 We don't recommend you modify other fields as this might break the input system. But if you need to, you can modify them using the corresponding properties.</source>
-<target xml:lang="pt">&lt;x1\/&gt;!warning&lt;x2\/&gt;
+<target xml:lang="pt"><x id="1"/>!warning<x id="2"/>
 Não recomendamos que você modifique outros campos, pois isso pode quebrar o sistema de entrada. Mas se você precisar, você pode modificá-los usando as propriedades correspondentes.</target>
 </trans-unit>
 <trans-unit id="tu91" xml:space="preserve">
@@ -422,14 +422,14 @@ var doubleTapConfig = new GestureConfigTap(2, 2);
 // Make sure you know what you're doing! Modifying this might break the input system.
 var noLatencyTap = new GestureConfigTap() { MaximumTimeBetweenTaps= TimeSpan.Zero };
 </source>
-<target xml:lang="pt">\/\/ Default gesto config.
+<target xml:lang="pt">// Default gesto config.
 var single TapConfig = novo GestureConfigTap();
 
-\/\/ Personalizar a configuração do gesto usando o construtor dedicado.
+// Personalizar a configuração do gesto usando o construtor dedicado.
 var duplo TapConfig = novo GestureConfigTap(2, 2);
 
-\/\/ Personalizar a configuração do gesto acessando diretamente a propriedade desejada.
-\/\/ Certifica-te que sabes o que estás a fazer! Modificar isso pode quebrar o sistema de entrada.
+// Personalizar a configuração do gesto acessando diretamente a propriedade desejada.
+// Certifica-te que sabes o que estás a fazer! Modificar isso pode quebrar o sistema de entrada.
 var noLatencyTap = novo GestureConfigTap() { MaximumTimeBetweenTaps= TimeSpan.Zero };
 </target>
 </trans-unit>
@@ -471,14 +471,14 @@ var noLatencyTap = novo GestureConfigTap() { MaximumTimeBetweenTaps= TimeSpan.Ze
 </source>
 <target xml:lang="pt">foreach( var gesto Evento em Input.GestureEvents)
 (
-   	\/\/ Determinar se o evento é de um gesto de toque
+   	// Determinar se o evento é de um gesto de toque
 	if (gestureEvent. Tipo! GestureType.Tap)
 		continuar;
    
-	\/\/ Elenco uma classe específica de eventos de torneira.
+	// Elenco uma classe específica de eventos de torneira.
 	GestureEvent Toque em tapEvent = (GestureEventTap) gesto Evento;
 	
-    \/\/ Acesso campo específico de tap-event.
+    // Acesso campo específico de tap-event.
     log.Info("Tap position: (0}.", tapEvent.TapPosition);
 }
 </target>

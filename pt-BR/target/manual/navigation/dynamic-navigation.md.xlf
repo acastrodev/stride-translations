@@ -9,9 +9,9 @@
 <source xml:lang="en"><x id="1"/>Beginner<x id="2"/>
 <x id="3"/>Level designer<x id="4"/>
 <x id="5"/>Programmer<x id="6"/></source>
-<target xml:lang="pt">&lt;x1\/&gt;Introdução&lt;x2\/&gt;
-&lt;x3\/&gt; Designer de nível &lt;x4\/&gt;
-&lt;x5\/&gt;Programação&lt;x6\/&gt;</target>
+<target xml:lang="pt"><x id="1"/>Introdução<x id="2"/>
+<x id="3"/> Designer de nível <x id="4"/>
+<x id="5"/>Programação<x id="6"/></target>
 </trans-unit>
 <trans-unit id="tu3" xml:space="preserve">
 <source xml:lang="en">If you enable <g id="1">dynamic navigation</g>, entities with navigation components don't need a <g id="2">navigation mesh</g> asset. Instead, the entities generate navigation meshes dynamically.</source>
@@ -20,7 +20,7 @@
 <trans-unit id="tu4" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>!Note<x id="2"/>
 Make sure that the scenes you want the entities to navigate dynamically have <g id="3">navigation bounding boxes</g>.</source>
-<target xml:lang="pt">&lt;x1\/&gt;!Note&lt;x2\/&gt;
+<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
 Certifique-se de que as cenas que você deseja que as entidades naveguem dinamicamente têm <g id="3">navigação delimitando caixas</g>.</target>
 </trans-unit>
 <trans-unit id="tu5" xml:space="preserve">
@@ -37,7 +37,7 @@ Certifique-se de que as cenas que você deseja que as entidades naveguem dinamic
 </trans-unit>
 <trans-unit id="tu8" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>No navigation mesh selected<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt; Nenhuma malha de navegação selecionada&lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/> Nenhuma malha de navegação selecionada<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu9" xml:space="preserve">
 <source xml:lang="en">For more information about the navigation component, see <g id="1">Navigation components</g>.</source>
@@ -49,7 +49,7 @@ Certifique-se de que as cenas que você deseja que as entidades naveguem dinamic
 </trans-unit>
 <trans-unit id="tu11" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Select Assets folder asset<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt;Select Assets pasta asset&lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/>Select Assets pasta asset<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu12" xml:space="preserve">
 <source xml:lang="en">In the <g id="1">Asset View</g> (the bottom pane by default), select the <g id="2">Game Settings</g> asset.</source>
@@ -57,7 +57,7 @@ Certifique-se de que as cenas que você deseja que as entidades naveguem dinamic
 </trans-unit>
 <trans-unit id="tu13" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Select Game Settings asset<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt;Selecionar configurações de jogo asset&lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/>Selecionar configurações de jogo asset<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu14" xml:space="preserve">
 <source xml:lang="en">In the <g id="1">Property Grid</g> (the right-hand pane by default), under <g id="2">Navigation Settings</g>, expand <g id="3">Dynamic navigation mesh</g>.</source>
@@ -65,7 +65,7 @@ Certifique-se de que as cenas que você deseja que as entidades naveguem dinamic
 </trans-unit>
 <trans-unit id="tu15" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Game settings<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt; Configurações do jogo &lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/> Configurações do jogo <x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu16" xml:space="preserve">
 <source xml:lang="en">Select the <g id="1">Enable dynamic navigation</g> checkbox.</source>
@@ -73,7 +73,7 @@ Certifique-se de que as cenas que você deseja que as entidades naveguem dinamic
 </trans-unit>
 <trans-unit id="tu17" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Enable dynamic navigation checkbox<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt; Habilitar caixa de verificação de navegação dinâmica&lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/> Habilitar caixa de verificação de navegação dinâmica<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu18" xml:space="preserve">
 <source xml:lang="en">Dynamic navigation mesh properties</source>
@@ -145,27 +145,27 @@ if (/* any condition that should cause the navigation mesh to update (eg open/cl
 	});
 }
 </source>
-<target xml:lang="pt">\/\/ Encontrar e ativar o sistema de malha de navegação dinâmica
+<target xml:lang="pt">// Encontrar e ativar o sistema de malha de navegação dinâmica
 dynamicNavigationMeshSystem = Game.GameSystems.OfType&lt;DynamicNavigationMeshSystem&gt;().FirstOrDefault();
 dynamicNavigationMeshSystem. Activado = verdadeiro;
 
-\/\/ Isso impede o sistema de malha de navegação dinâmica de reconstruir automaticamente nos casos de folowing:
-\/\/ - cenas de carregamento\/descarregamento
-\/\/ - adicionando\/removendo componentes de colisão estática
-\/\/ - adicionando\/removendo caixas de amarração de malha de navegação
+// Isso impede o sistema de malha de navegação dinâmica de reconstruir automaticamente nos casos de folowing:
+// - cenas de carregamento/descarregamento
+// - adicionando/removendo componentes de colisão estática
+// - adicionando/removendo caixas de amarração de malha de navegação
 dynamicNavigationMeshSystem.AutomaticRebuild = false;
 
-\/\/...
+//...
 
-se (\/* qualquer condição que deve fazer com que a malha de navegação atualize (por exemplo, porta aberta\/fecha) *\/)
+se (/* qualquer condição que deve fazer com que a malha de navegação atualize (por exemplo, porta aberta/fecha) */)
 (
-	\/\/ Comece uma reconstrução assíncrona da malha de navegação
+	// Comece uma reconstrução assíncrona da malha de navegação
 	var reconstruirTask = dinâmicoNavigationMeshSystem.Rebuild();
 	reconstruirTask.ContinueWith(x) =&gt;
 	(
 		se (x.Result. Sucesso)
 		(
-			\/\/ A malha de navegação é reconstruída com sucesso
+			// A malha de navegação é reconstruída com sucesso
 		}
 	});
 }

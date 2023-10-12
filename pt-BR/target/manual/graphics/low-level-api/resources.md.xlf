@@ -8,8 +8,8 @@
 <trans-unit id="tu2" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Advanced<x id="2"/>
 <x id="3"/>Programmer<x id="4"/></source>
-<target xml:lang="pt">&lt;x1\/&gt;Avançado&lt;x2\/&gt;
-&lt;x3\/&gt;Programação&lt;x4\/&gt;</target>
+<target xml:lang="pt"><x id="1"/>Avançado<x id="2"/>
+<x id="3"/>Programação<x id="4"/></target>
 </trans-unit>
 <trans-unit id="tu3" xml:space="preserve">
 <source xml:lang="en">When <g id="1">drawing vertices</g> using an <g id="2">effect</g>, the shaders expect certain resources to be available, including:</source>
@@ -54,12 +54,12 @@ pipelineStateDescription.RootSignature = effectInstance.RootSignature;
 // Update constant buffers and bind resources
 effectInstance.Apply(context.GraphicsContext);
 </source>
-<target xml:lang="pt">\/\/ Criar um EffectInstance e usá-lo para configurar o pipeline
+<target xml:lang="pt">// Criar um EffectInstance e usá-lo para configurar o pipeline
 var effectInstance = new EffectInstance (EffectSystem.LoadEffect("MyEffect").WaitForResult());
 pipelineStateDescription.EffectBytecode = efeitoInstance.Effect.Bytecode;
 pipelineStateDescription.RootSignature = efeitoInstance.RootSignature;
 
-\/\/ Atualizar buffers constantes e vincular recursos
+// Atualizar buffers constantes e vincular recursos
 efeitoInstance.Apply (context.GraphicsContext);
 </target>
 </trans-unit>

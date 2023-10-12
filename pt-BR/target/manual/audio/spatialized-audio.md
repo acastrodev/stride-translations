@@ -1,19 +1,19 @@
 # Áudio espacial
 
-<x1\/>Introdução<x2\/>
-<x3\/>Designer<x4\/>
-<x5\/>Programação<x6\/>
+<span class="badge text-bg-primary">Introdução</span>
+<span class="badge text-bg-success">Designer</span>
+<span class="badge text-bg-success">Programação</span>
 
 **Spatialized audio**, também chamado **3D audio**, simula o som tridimensional.
 Isso cria áudio mais realista do que [ não-espacializado áudio](non-spatialized-audio.md).
 
 Na vida real, nossa experiência de som é afetada por fatores incluindo seu volume, a área circundante (como uma caverna ou pequena sala), e a posição e movimento da fonte sonora. Normalmente podemos dizer aproximadamente de onde vem um som e se está se movendo.
 
-<x1\/>Spatialized audio<x2\/>
+![Spatialized audio](media/audio-index-spatialized-audio.png)
 
 Por exemplo, a frequência (pitch) do som que vem de um objeto em movimento varia dependendo da posição do observador (o efeito [Doppler](https://en.wikipedia.org/wiki/Doppler_effect)). O som de uma fonte de aproximação tem uma frequência maior do que o som de uma fonte de receding:
 
-<x1\/>Efeito de Doppler<x2\/>
+![Efeito de Doppler](media/audio-index-play-audio-doppler-effect.png)
 
 Para simular áudio 3D realista, Stride rastreia as posições de duas entidades na cena:
 
@@ -24,7 +24,7 @@ Você deve ter ambos emissores de áudio e receptores de áudio para ouvir som e
 
 Áudio espacial é amplamente utilizado para efeitos sonoros em jogos de plataforma, desktop e VR. Por exemplo, uma arma pode fazer um som de tiro quando disparado, ou um personagem pode fazer um som de passo quando eles dão um passo.
 
-> <x1\/>!Note<x2\/>
+> [!Note]
 > Áudio espacial usa mais CPU do que áudio não espacial.
 
 ## Permite áudio espacial
@@ -37,9 +37,9 @@ Você também pode definir áudio para espacializado no **Property Grid**:
 
 2. No **Property Grid**, selecione o **Spatialized** caixa de seleção:
 
-   <x1\/>Selecionar som espacializado<x2\/>
+   ![Selecionar som espacializado](media/audio-asset-properties-property-grid-spatialized-sound.png)
 
-> <x1\/>!Note<x2\/>
+> [!Note]
 > Stride processa áudio espacial como áudio mono (canal único). Não altera o ficheiro fonte.
 
 ## Ver também

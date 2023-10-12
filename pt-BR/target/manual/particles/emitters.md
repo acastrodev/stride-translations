@@ -1,14 +1,14 @@
 # Emitters
 
-<x1\/>Introdução<x2\/>
-<x3\/>Artista <x4\/>
-<x5\/>Programação<x6\/>
+<span class="badge text-bg-primary">Introdução</span>
+<span class="badge text-bg-success">Artista </span>
+<span class="badge text-bg-success">Programação</span>
 
 **Particle emitters** gerenciar quantas partículas estão em um efeito, como elas aparecem, se movem e desaparecem, e como elas são desenhadas. Por exemplo, um efeito de fogo pode ser composto por três efeitos de partículas separados: chamas, embres e fumaça. Cada um desses efeitos é gerido por um emissor de partículas separadas.
 
 Os emissores contêm mais controles como [spawners](spawners.md), [initializers](initializers.md) e [updaters](updaters.md).
 
-<x1\/>media\/particles-reference-emitters-1.png<x2\/>
+![media/particles-reference-emitters-1.png](media/particles-reference-emitters-1.png)
 
 | Propriedade | Descrição |
 | ---------------- | -----------

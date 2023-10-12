@@ -1,13 +1,13 @@
 # Triggers
 
-<x1\/>Introdução<x2\/>
-<x3\/>Designer<x4\/>
+<span class="badge text-bg-primary">Introdução</span>
+<span class="badge text-bg-success">Designer</span>
 
 Se você definir um colisor para ser um **trigger**, outros colisões não se encaixam mais nele. Em vez disso, eles passam.
 
 O gatilho detecta quando os colisões entram nele, que você pode usar para eventos de script. Por exemplo, você pode detectar quando um personagem do jogador entra em uma sala e usá-la em seu script para ativar um evento. Para mais informações, consulte [Events](../scripts/events.md).
 
-> <x1\/>!Note<x2\/>
+> [!Note]
 > [ Os colistores de caracteres ](characters.md) não podem ser usados como gatilhos.
 
 ## Criar um gatilho
@@ -16,14 +16,14 @@ O gatilho detecta quando os colisões entram nele, que você pode usar para even
 
 2. No **Property Grid**, sob as propriedades do componente do colisor, selecione **Is Trigger**.
 
-<x1\/>Selecionar 'é gatilho'<x2\/>
+![Selecionar 'é gatilho'](media/triggers-select-is-trigger-checkbox.png)
 
 ## Detectar colisões de gatilho
 
 Você pode ver quando algo entra no gatilho usando o seguinte código:
 
 ```cs
-\/\/ Aguarde que uma entidade colide com o gatilho
+// Aguarde que uma entidade colide com o gatilho
 var firstCollision = await trigger. NewCollision();
 
 var otherCollider = trigger == firstCollision. ColliderA
@@ -37,7 +37,7 @@ Alternativamente, acesse diretamente o `TrackingHashSet`:
 var trigger = Entity.Get<PhysicsComponent>();
 foreach (var colisão no gatilho. Colisões)
 (
-    \/\/fazer algo com a colisão
+    //fazer algo com a colisão
 }
 ```
 
@@ -49,15 +49,15 @@ gatilho. Colisões. Changed += (sender, args) =>
 (
     se (args.Action == Notificar a Colecção Pendurada. Adicionar)
     (
-        \/\/nova colisão
+        //nova colisão
         var colisão = (Collision) args. Item;
-        \/\/fazer algo
+        //fazer algo
     }
     se (args.Action == NotifyCollectionChangedAction. Remover)
     (
-        \/\/ colisão antiga
+        // colisão antiga
         var colisão = (Collision)args. Item;
-        \/\/fazer algo
+        //fazer algo
     }
 };
 ```

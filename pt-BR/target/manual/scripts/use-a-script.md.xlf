@@ -8,8 +8,8 @@
 <trans-unit id="tu2" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Beginner<x id="2"/>
 <x id="3"/>Programmer<x id="4"/></source>
-<target xml:lang="pt">&lt;x1\/&gt;Introdução&lt;x2\/&gt;
-&lt;x3\/&gt;Programação&lt;x4\/&gt;</target>
+<target xml:lang="pt"><x id="1"/>Introdução<x id="2"/>
+<x id="3"/>Programação<x id="4"/></target>
 </trans-unit>
 <trans-unit id="tu3" xml:space="preserve">
 <source xml:lang="en">To use a script, add it to an entity as a component. You can do this in Game Studio or in code. Stride runs scripts when the entity they are attached to loads.</source>
@@ -53,7 +53,7 @@
 </trans-unit>
 <trans-unit id="tu13" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Script in asset folder<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt;Scrito na pasta de ativos&lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/>Scrito na pasta de ativos<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu14" xml:space="preserve">
 <source xml:lang="en">Drag the script from the asset view to the <g id="1">entity tree</g>.</source>
@@ -65,7 +65,7 @@
 </trans-unit>
 <trans-unit id="tu16" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Entity tree<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt; Árvore de entrada &lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/> Árvore de entrada <x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu17" xml:space="preserve">
 <source xml:lang="en">Drag to the property grid</source>
@@ -81,7 +81,7 @@
 </trans-unit>
 <trans-unit id="tu20" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Script in asset folder<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt;Scrito na pasta de ativos&lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/>Scrito na pasta de ativos<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu21" xml:space="preserve">
 <source xml:lang="en">Drag the script from the <g id="1">asset view</g> to the <g id="2">property grid</g>.</source>
@@ -101,7 +101,7 @@
 </trans-unit>
 <trans-unit id="tu25" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Select an entity<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt;Selecione uma entidade&lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/>Selecione uma entidade<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu26" xml:space="preserve">
 <source xml:lang="en">In the <g id="1">property grid</g> (on the right by default), click <g id="2">Add component</g> and select the script you want to add.</source>
@@ -109,7 +109,7 @@
 </trans-unit>
 <trans-unit id="tu27" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Add script component<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt; Adicionar componente de script&lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/> Adicionar componente de script<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu28" xml:space="preserve">
 <source xml:lang="en">Game Studio adds the script to the entity.</source>
@@ -118,7 +118,7 @@
 <trans-unit id="tu29" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>!Note<x id="2"/>
 You can customize where scripts appear in the dropdown using the <g id="3">ComponentCategoryAttribute</g>:</source>
-<target xml:lang="pt">&lt;x1\/&gt;!Note&lt;x2\/&gt;
+<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
 Você pode personalizar onde os scripts aparecem no dropdown usando o <g id="3">ComponentCategoryAttribute</g>:</target>
 </trans-unit>
 <trans-unit id="tu30" xml:space="preserve">
@@ -136,7 +136,7 @@ classe pública SampleStartupScript : StartupScript
 (
    anula de sobreposição pública Start()
    (
-       \/\/ Faça algumas coisas durante a inicialização
+       // Faça algumas coisas durante a inicialização
    }
 }
 </target>
@@ -153,7 +153,7 @@ classe pública SampleStartupScript : StartupScript
 <source xml:lang="en">// myEntity is an existing entity in the scene; myAsyncScript is the script you want to add to the entity
 myEntity.Add(new myAsyncScript());
 </source>
-<target xml:lang="pt">\/\/ myEntity é uma entidade existente na cena; myAsyncScript é o script que você deseja adicionar à entidade
+<target xml:lang="pt">// myEntity é uma entidade existente na cena; myAsyncScript é o script que você deseja adicionar à entidade
 myEntity.Add(new myAsyncScript());
 </target>
 </trans-unit>

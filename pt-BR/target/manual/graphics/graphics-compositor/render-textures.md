@@ -1,8 +1,8 @@
 # Render texturas
 
-<x1\/> Intermediário <x2\/>
-<x3\/>Designer<x4\/>
-<x5\/>Programação<x6\/>
+<span class="badge text-bg-primary">Intermediário</span>
+<span class="badge text-bg-success">Designer</span>
+<span class="badge text-bg-success">Programação</span>
 
 Com texturas **render**, você pode enviar uma visão da câmera para uma textura e usar a textura em objetos em sua cena. Por exemplo, você pode usar isso para exibir parte de sua cena em uma tela de TV na mesma cena, como imagens de câmera de segurança.
 
@@ -14,47 +14,47 @@ Os slots da câmera ligam o compositor gráfico às câmeras em sua cena. Você 
 
 1. No **Asset View** (no painel inferior por padrão), clique duas vezes no **Graphics Compositor** ativo.
 
-   <x1\/>Gráficos Compositor asset<x2\/>
+   ![Gráficos Compositor asset](media/graphics-compositor-asset.png)
 
    O editor de compositores gráficos abre.
 
-   <x1\/>Gráfico Compositor editor<x2\/>
+   ![Gráfico Compositor editor](media/graphics-compositor-editor.png)
 
-2. À esquerda, abaixo de **Camera slots**, clique em <x1\/>Green plus button<x2\/> (**Add**).
+2. À esquerda, abaixo de **Camera slots**, clique em ![Green plus button](~/manual/game-studio/media/green-plus-icon.png) (**Add**).
 
-   <x1\/>Camera slots<x2\/>
+   ![Camera slots](media/graphics-compositor-camera-slots.png)
 
    Game Studio adiciona um novo slot para câmera.
 
-   > <x1\/>!Tip<x2\/>
+   > [!Tip]
    > Para renomear um slot de câmera, clique duas vezes na lista e digite um novo nome.
-   > <x3\/>Nome um slot de câmera<x4\/>
+   > ![Nome um slot de câmera](media/name-camera-slot.png)
 
 ## 2. Crie uma câmera e ligue-a ao slot
 
 1. Em sua cena, adicione um **camera component** à entidade que você deseja ser sua câmera.
 
-   <x1\/> Adicionar componente da câmera<x2\/>
+   ![ Adicionar componente da câmera](media/add-camera-component.png)
 
 2. Posicione a entidade para que a câmera capture a área da cena que você deseja renderizar para uma textura.
 
 3. Na entidade **Property Grid**, habilitar o componente **Camera** usando a caixa de seleção.
 
-   <x1\/> Habilitar componente da câmera<x2\/>
+   ![ Habilitar componente da câmera](media/enable-camera-component.png)
 
 4. no **Camera** Propriedades do componente, sob **Slot**, selecione o slot que você criou na etapa anterior.
 
-   <x1\/>Select câmera slot<x2\/>
+   ![Select câmera slot](media/graphics-compositor-overview-2.png)
 
 ## 3. Criar uma textura de destino de renderização
 
 No **Asset View**, clique em **Add asset** e selecione **Texture** > **Render target**.
 
-<x1\/> Add render target<x2\/>
+![ Add render target](media/add-render-target.png)
 
 Game Studio adiciona uma textura **render target** para seus ativos de projeto.
 
-<x1\/>Render texture<x2\/>
+![Render texture](media/render-target-texture-in-asset-view.png)
 
 ## 4. Coloque a textura do alvo de renderização na cena
 
@@ -62,15 +62,15 @@ Existem várias maneiras de usar a textura do alvo de renderização.
 
 ### Exemplo 1: Use a textura do alvo de renderização em um material
 
-1. Nas propriedades materiais, sob **Shading**, ao lado de **Diffuse map**, clique em <x1\/> Botão de seta azul<x2\/> (** Substituir**) e selecione **Textura**.
+1. Nas propriedades materiais, sob **Shading**, ao lado de **Diffuse map**, clique em ![ Botão de seta azul](~/manual/game-studio/media/blue-arrow-icon.png) (** Substituir**) e selecione **Textura**.
 
-   <x1\/>Selecione textura<x2\/>
+   ![Selecione textura](media/select-texture.png)
 
-2. Clique em <x1\/>Hand icon<x2\/> (**Select an asset**).
+2. Clique em ![Hand icon](~/manual/game-studio/media/hand-icon.png) (**Select an asset**).
 
 3. Selecione o **Render texture** asset e clique em **OK**.
 
-   <x1\/>Select render frame<x2\/>
+   ![Select render frame](media/select-render-frame.png)
 
 ### Exemplo 2: Use a textura do alvo de renderização em um componente sprite
 
@@ -78,23 +78,23 @@ Existem várias maneiras de usar a textura do alvo de renderização.
 
 2. Com a entidade selecionada, no **Property Grid**, clique em **Add component** e adicione um componente **sprite**.
 
-   <x1\/> Adicionar componente sprite<x2\/>
+   ![ Adicionar componente sprite](media/add-sprite-component.png)
 
-3. Nas propriedades do componente sprite, ao lado de **Source**, clique em <x1\/> Botão de seta azul<x2\/> (** substituir**) e selecione **Textura**.
+3. Nas propriedades do componente sprite, ao lado de **Source**, clique em ![ Botão de seta azul](~/manual/game-studio/media/blue-arrow-icon.png) (** substituir**) e selecione **Textura**.
 
-   <x1\/>Select sprite source<x2\/>
+   ![Select sprite source](media/sprite-source-texture.png)
 
-4. Clique em <x1\/>Hand icon<x2\/> (**Select an asset**).
+4. Clique em ![Hand icon](~/manual/game-studio/media/hand-icon.png) (**Select an asset**).
 
    A janela **Selecione um ativo** abre.
 
 5. Selecione o **Render texture** asset e clique em **OK**.
 
-   <x1\/>Select render frame<x2\/>
+   ![Select render frame](media/select-render-frame.png)
 
 6. Se você não quiser que a textura seja semitransparente, sob as propriedades **Fonte**, limpe a caixa de seleção ** É transparente**.
 
-   <x1\/>Clear-is-transparent<x2\/>
+   ![Clear-is-transparent](media/clear-is-transparent.png)
 
 ## 5. Configurar o compositor gráfico
 
@@ -105,74 +105,74 @@ Para exibir uma textura de renderização em sua cena, você precisa de pelo men
 
 Esta página descreve a maneira mais simples de fazer isso do zero, usando duas câmeras e dois renderizadores. Dependendo do seu pipeline, você pode precisar criar uma configuração diferente.
 
-> <x1\/>!Warning<x2\/>
+> [!Warning]
 > Essas instruções envolvem excluir seus renderizadores existentes para o ponto de entrada do jogo. Você pode querer fazer um backup do seu projeto no caso de você querer restaurar o seu pipeline depois.
 
 1. No editor de compositores gráficos, selecione o nó **Pontos de entrada**.
 
-   <x1\/> Pontos de entrada node<x2\/>
+   ![ Pontos de entrada node](media/entry-points-node.png)
 
-2. No **Property Grid** à direita, ao lado de **Game renderer**, clique em <x1\/> Botão de seta azul<x2\/> (** Substituir**) e selecione **None** para excluir seus renderizadores existentes.
+2. No **Property Grid** à direita, ao lado de **Game renderer**, clique em ![ Botão de seta azul](~/manual/game-studio/media/blue-arrow-icon.png) (** Substituir**) e selecione **None** para excluir seus renderizadores existentes.
 
-   <x1\/>Cleared game renderers<x2\/>
+   ![Cleared game renderers](media/game-renderers-cleared.png)
 
-3. Clique em <x1\/> Botão de seta azul<x2\/> (** Substituir**) e selecione ** Coleta de renderizadores de faixa**.
+3. Clique em ![ Botão de seta azul](~/manual/game-studio/media/blue-arrow-icon.png) (** Substituir**) e selecione ** Coleta de renderizadores de faixa**.
 
-   <x1\/>Selecione a coleção de renderizador de cena<x2\/>
+   ![Selecione a coleção de renderizador de cena](media/select-scene-renderer-collection.png)
 
    Isso permite definir vários renderizadores para o ponto de entrada do jogo.
 
 ### 1. Render a câmera principal
 
-1. Sob ** renderizador de jogos **, ao lado de ** Crianças **, clique em <x1\/>Verde mais botão<x2\/> (**Add**) e selecione ** Renderador de câmara **.
+1. Sob ** renderizador de jogos **, ao lado de ** Crianças **, clique em ![Verde mais botão](~/manual/game-studio/media/green-plus-icon.png) (**Add**) e selecione ** Renderador de câmara **.
 
-   <x1\/>Select câmera renderer<x2\/>
+   ![Select câmera renderer](media/select-render-camera.png)
 
-2. Próximo a **Camera**, clique em <x1\/> Botão de seta azul<x2\/> (** Substituir**) e selecione sua câmera principal do jogo.
+2. Próximo a **Camera**, clique em ![ Botão de seta azul](~/manual/game-studio/media/blue-arrow-icon.png) (** Substituir**) e selecione sua câmera principal do jogo.
 
-   <x1\/>Selecione a câmera principal<x2\/>
+   ![Selecione a câmera principal](media/select-main-camera.png)
 
 4. Ao lado de **Child**, selecione o renderizador para sua câmera principal do jogo (por exemplo, o renderizador **forward**).
 
-   <x1\/> Selecione renderização <x2\/>
+   ![ Selecione renderização ](media/select-main-camera-forward-renderer.png)
 
 ### 2. Render a textura
 
-1. Sob ** renderizador de jogos**, ao lado de ** Adicionar a Crianças**, clique em <x1\/>Verde mais botão<x2\/> (**Add**) e selecione ** renderizador de câmara**.
+1. Sob ** renderizador de jogos**, ao lado de ** Adicionar a Crianças**, clique em ![Verde mais botão](~/manual/game-studio/media/green-plus-icon.png) (**Add**) e selecione ** renderizador de câmara**.
 
-   <x1\/>Select câmera renderer<x2\/>
+   ![Select câmera renderer](media/select-render-camera2.png)
 
    Game Studio adiciona um renderizador de câmera à lista de crianças.
 
-   <x1\/>Second câmera renderer<x2\/>
+   ![Second câmera renderer](media/added-camera-renderer.png)
 
 2. Expanda o segundo renderizador **camera**.
 
-   <x1\/>Expand segundo renderer<x2\/>
+   ![Expand segundo renderer](media/expand-second-camera-renderer.png)
 
-3. Próximo a **Camera**, clique em <x1\/> Botão de seta azul<x2\/> (** Substituir**) e selecione a câmera que deseja renderizar para uma textura.
+3. Próximo a **Camera**, clique em ![ Botão de seta azul](~/manual/game-studio/media/blue-arrow-icon.png) (** Substituir**) e selecione a câmera que deseja renderizar para uma textura.
 
-   <x1\/>Selecione a câmera de textura<x2\/>
+   ![Selecione a câmera de textura](media/select-texture-camera.png)
 
-4. Ao lado de **Child**, clique em <x1\/> botão de seta azul<x2\/> (** Substituir**) e selecione **RenderTextureSceneRenderer**.
+4. Ao lado de **Child**, clique em ![ botão de seta azul](~/manual/game-studio/media/blue-arrow-icon.png) (** Substituir**) e selecione **RenderTextureSceneRenderer**.
 
-   <x1\/>Selecionar renderizador de cena de textura<x2\/>
+   ![Selecionar renderizador de cena de textura](media/render-texture-scene-renderer.png)
 
-5. Sob o **RenderTextureSceneRenderer**, ao lado de **Child**, clique em <x1\/> Botão de seta azul<x2\/> (** Substituir**) e selecione o renderizador para sua câmera principal do jogo (por exemplo, o **forward renderer**).
+5. Sob o **RenderTextureSceneRenderer**, ao lado de **Child**, clique em ![ Botão de seta azul](~/manual/game-studio/media/blue-arrow-icon.png) (** Substituir**) e selecione o renderizador para sua câmera principal do jogo (por exemplo, o **forward renderer**).
 
-   <x1\/>Selecionar renderizador <x2\/>
+   ![Selecionar renderizador ](media/select-forward-renderer2.png)
 
-6. Ao lado de <g id="1">Render texture</g>, clique em <x1\/>Hand icon<x2\/>Select an asset</g>).<g id="4">
+6. Ao lado de <g id="1">Render texture</g>, clique em <x id="2"/>Hand icon<x id="3"/>Select an asset</g>).<g id="4">
 
    A janela **Selecione um ativo** abre.
 
 7. Selecione a textura **render** e clique em **OK**.
 
-   <x1\/>Select render texture<x2\/>
+   ![Select render texture](media/select-render-frame.png)
 
    Game Studio adiciona a textura de renderização ao renderizador.
 
-   <x1\/> Textura de gênero adicionada <x2\/>
+   ![ Textura de gênero adicionada ](media/render-texture-added.png)
 
 Seu jogo agora está pronto para renderizar a câmera para a textura na cena.
 
@@ -182,7 +182,7 @@ Você pode usar a máscara **render** para filtrar quais grupos são renderizado
 
 Ao lado de **Render mask**, clique em **Alterar valores** e selecione os grupos de renderização que você deseja que a câmera renderize.
 
-<x1\/>Render mask<x2\/>
+![Render mask](media/change-render-mask.png)
 
 Para mais informações, consulte [Render groups e masks](render-groups-and-masks.md).
 

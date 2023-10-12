@@ -1,8 +1,8 @@
 # Pré-fabricados
 
-<x1\/>Introdução<x2\/>
-<x3\/>Programação<x4\/>
-<x5\/>Designer<x6\/>
+<span class="badge text-bg-primary">Introdução</span>
+<span class="badge text-bg-success">Programação</span>
+<span class="badge text-bg-success">Designer</span>
 
 A **prefab** é uma versão "master" de um objeto que você pode reutilizar onde quiser. Quando você muda o prefab, cada instância do prefab também muda.
 
@@ -12,7 +12,7 @@ Agora imagine que queremos colocar várias árvores ao redor da cena. Podemos si
 
 A melhor abordagem é fazer a árvore pré-fabricada. Então podemos colocar tantas árvores como nós gostamos, e quando modificamos o prefab, cada árvore é instantaneamente atualizada para combinar. Isso economiza muito tempo.
 
-<x1\/>Criando árvores com prefabs<x2\/>
+![Criando árvores com prefabs](media/create-prefab-trees.gif)
 
 O uso mais comum para prefabs é criar uma pequena parte de sua cena — como um carro, NPC, ou item de mobiliário — e duplica-lo quantas vezes você precisar. Quando você precisa modificá-lo — por exemplo, se você quiser mudar seu modelo — você pode alterá-lo em um lugar e aplicar a mudança em todos os lugares ao mesmo tempo.
 

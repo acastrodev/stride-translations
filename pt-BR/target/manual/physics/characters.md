@@ -1,7 +1,7 @@
 # Personagens
 
-<x1\/>Introdução<x2\/>
-<x3\/>Designer<x4\/>
+<span class="badge text-bg-primary">Introdução</span>
+<span class="badge text-bg-success">Designer</span>
 
 **Character** são usados para personagens controlados por scripts como NPCs. Entidades com componentes de caracteres [](xref:Stride.Physics.CharacterComponent) só podem ser movidas com [SetVelocity](xref:Stride.Physics.CharacterComponent.SetVelocity\(Stride.Core.Mathematics.Vector3\)), [Jump](xref:Stride.Physics.CharacterComponent.Jump) e [Teleport](xref:Stride.Physics.CharacterComponent.Teleport\(Stride.Core.Mathematics.Vector3\)).
 
@@ -11,9 +11,9 @@
 
 2. No **Property Grid**, clique em **Add component** e selecione **Character**.
 
-   <x1\/> Adicionar componente de caracteres<x2\/>
+   ![ Adicionar componente de caracteres](media/add-character-component.png)
 
-> <x1\/>!Note<x2\/>
+> [!Note]
 > Para o colisor de caracteres interagir com outros objetos de física, você também precisa definir uma forma de colisão nas propriedades do componente de colisão. A forma da cápsula é apropriada para a maioria dos colisões de caracteres. Para obter mais informações, consulte as formas [collider](collider-shapes.md).
 
 ## Propriedades de componentes

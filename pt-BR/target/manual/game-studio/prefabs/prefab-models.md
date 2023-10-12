@@ -1,7 +1,7 @@
 # Modelos pré-fabricadas
 
-<x1\/>Introdução<x2\/>
-<x3\/>Designer<x4\/>
+<span class="badge text-bg-primary">Introdução</span>
+<span class="badge text-bg-success">Designer</span>
 
 ** Modelos pré-fabricados** convertem pré-fabricas em apenas drawcalls. Isso é útil para otimização, pois a Stride apenas torna o modelo final em vez das entidades separadas no pré-fabricado. Quando você faz alterações na pré-fabricada, Game Studio regenera o modelo pré-fabricado.
 
@@ -15,21 +15,21 @@ Os modelos pré-fabricadas não expõem materiais. Isso significa que você não
 
 1. No **Asset View**, selecione **Add asset > Model > Prefab model**.
 
-   <x1\/> Adicionar modelo pré-fabricado<x2\/>
+   ![ Adicionar modelo pré-fabricado](media/add-prefab-model.png)
 
-2. Na Grade de Propriedade (à direita por padrão), ao lado de **Prefab**, clique em <x1\/>Hand icon<x2\/> (**Select asset**).
+2. Na Grade de Propriedade (à direita por padrão), ao lado de **Prefab**, clique em ![Hand icon](~/manual/game-studio/media/hand-icon.png) (**Select asset**).
 
-   <x1\/> Propriedades pré-fabricadas<x2\/>
+   ![ Propriedades pré-fabricadas](media/prefab-model-properties.png)
 
    A janela **Selecione um ativo** abre.
 
-   <x1\/>Selecionar pré-fabricada para modelo<x2\/>
+   ![Selecionar pré-fabricada para modelo](media/select-prefab-for-model.png)
 
 3. Selecione a pré-fabricada que deseja criar um modelo de e clique em **OK**.
 
    Game Studio adiciona o modelo pré-fabricada para o Asset View.
 
-   <x1\/>Prefab modelo adicionado <x2\/>
+   ![Prefab modelo adicionado ](media/prefab-model-added.png)
 
 ## Ver também
 

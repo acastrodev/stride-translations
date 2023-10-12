@@ -1,12 +1,12 @@
 # Inicializadores de partículas
 
-<x1\/> Intermediário <x2\/>
-<x3\/>Artista <x4\/>
-<x5\/>Programação<x6\/>
+<span class="badge text-bg-primary">Intermediário</span>
+<span class="badge text-bg-success">Artista </span>
+<span class="badge text-bg-success">Programação</span>
 
 **Initializadores** controlam os estados de partículas como posição, velocidade, tamanho e assim por diante quando as partículas são primeiro desovadas. Eles não têm efeito sobre partículas geradas em quadros anteriores.
 
-> <x1\/>!Note<x2\/>
+> [!Note]
 > Alguns atos [updaters](updaters.md) alteram o valor da partícula no *end* do quadro. Eles efetivamente sobrescrevem quaisquer valores iniciais definidos por um inicializador semelhante. Tal é o caso com todas as animações. Eles operam na vida da partícula e um atualizador de animação de cor substituirá quaisquer valores iniciais de um inicializador de cor.
 
 Da mesma forma, inicializadores que operam no mesmo campo são exclusivos e apenas o inferior terá qualquer efeito, uma vez que são executados em ordem. Por exemplo, se você atribuir dois inicializador de cor, apenas o segundo terá qualquer efeito.]
@@ -15,7 +15,7 @@ Da mesma forma, inicializadores que operam no mesmo campo são exclusivos e apen
 
 Várias propriedades são comuns em muitos inicializadores.
 
-<x1\/>media\/particles-reference-initializers-1.png<x2\/>
+![media/particles-reference-initializers-1.png](media/particles-reference-initializers-1.png)
 
 | Propriedade | Descrição |
 |-----------------------------|-------------
@@ -35,7 +35,7 @@ Por outro lado, os inicializadores de tamanho não mudam com base na rotação d
 
 As partículas são geradas em uma caixa de ligação alinhada ao eixo, definida por seu canto inferior esquerdo e seu canto superior direito.
 
-<x1\/>media\/particles-reference-initializers-2.png<x2\/>
+![media/particles-reference-initializers-2.png](media/particles-reference-initializers-2.png)
 
 | Propriedade | Descrição |
 |-----------------------------|-------------
@@ -45,13 +45,13 @@ As partículas são geradas em uma caixa de ligação alinhada ao eixo, definida
 
 Esta imagem mostra a caixa de ligação onde as partículas aparecem inicialmente para esta emissora. Além dos cantos (-1, 0.8, -1) ~ (1, 1, 1), a caixa é mais girada por 45 graus como visto a partir da rotação de deslocamento.
 
-<x1\/>media\/particles-reference-initializers-3.png<x2\/>
+![media/particles-reference-initializers-3.png](media/particles-reference-initializers-3.png)
 
 ## Velocidade
 
 As partículas surgiram com velocidade inicial que varia entre os valores definidos. A velocidade é independente em todas as três direções entre X, Y e Z.
 
-<x1\/>media\/particles-reference-initializers-4.png<x2\/>
+![media/particles-reference-initializers-4.png](media/particles-reference-initializers-4.png)
 
 | Propriedade | Descrição |
 |-----------------------------|-------------
@@ -63,7 +63,7 @@ As partículas surgiram com velocidade inicial que varia entre os valores defini
 
 O tamanho inicial define o tamanho uniforme da partícula quando é gerado pela primeira vez. Um tamanho de 1 resultará em um 1 metro por 1 metro de outdoor ou quad quando renderizado.
 
-<x1\/>media\/particles-reference-initializers-5.png<x2\/>
+![media/particles-reference-initializers-5.png](media/particles-reference-initializers-5.png)
 
 | Propriedade | Descrição |
 |-----------------------------|--------------
@@ -74,7 +74,7 @@ O tamanho inicial define o tamanho uniforme da partícula quando é gerado pela 
 
 A rotação inicial define a rotação angular da partícula quando enfrenta a câmera. Os valores positivos são rotações no sentido horário. O campo só tem significado para partículas voltadas para câmera, como outdoors. Não tem efeito sobre quads e modelos orientados.
 
-<x1\/>media\/particles-reference-initializers-6.png<x2\/>
+![media/particles-reference-initializers-6.png](media/particles-reference-initializers-6.png)
 
 | Propriedade | Descrição |
 |-----------------------------|------------
@@ -85,7 +85,7 @@ A rotação inicial define a rotação angular da partícula quando enfrenta a c
 
 A cor inicial define a cor inicial da partícula no tempo livre. Ele entra no buffer de vértice ao construir as partículas e pode ser usado pelo material, mas pode não se a opção não estiver definida no próprio material. Se definir a cor não tem efeito, consulte a página [Material](materials.md) para mais discussão.
 
-<x1\/>media\/particles-reference-initializers-7.png<x2\/>
+![media/particles-reference-initializers-7.png](media/particles-reference-initializers-7.png)
 
 | Propriedade | Descrição |
 |-----------------------------|------------
@@ -97,7 +97,7 @@ A cor inicial define a cor inicial da partícula no tempo livre. Ele entra no bu
 
 A orientação 3D inicial define a orientação para partículas 3D-aware quando elas primeiro desovam. Os campos editáveis usam rotação euclidiana que é embalado em uma orientação quaternion pelo motor. O valor interpolado está no caminho mais curto entre as duas orientações, em vez de interpolar cada valor separadamente.
 
-<x1\/>media\/particles-reference-initializers-8.png<x2\/>
+![media/particles-reference-initializers-8.png](media/particles-reference-initializers-8.png)
 
 | Propriedade | Descrição |
 |-----------------------------|------------
@@ -123,7 +123,7 @@ Este inicializador não tem propriedades. Ele simplesmente define um número cre
 
 O inicializador de posição de arco posiciona as partículas em um arco (ou uma linha reta se a altura do arco é 0) entre dois pontos, a posição do emissor e um componente de transformação de alvo. Com deslocamento de posição aleatória, você pode fazer com que as partículas se desviam um pouco de sua localização original no arco.
 
-<x1\/>media\/particles-reference-initializers-5.png<x2\/>
+![media/particles-reference-initializers-5.png](media/particles-reference-initializers-9.png)
 
 | Propriedade | Descrição |
 |-----------------------------|------------

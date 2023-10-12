@@ -18,8 +18,8 @@ SDSL usa uma maneira original de lidar com múltiplas heranças. A herança é r
 O SDSL usa as palavras-chave como HLSL e adiciona novas:
 
 - `stage`: método e palavra-chave de membro. Esta palavra-chave garante que o método ou membro só é definido uma vez e é o mesmo nas composições.
-- `stream`: palavra-chave de membro. O membro é acessível em cada fase do shader. Para mais informações, veja [Automatic shader stage input\/out](automatic-shader-stage-input-output.md).
-- `streams`: tipo de estrutura global que armazena variáveis necessárias em várias etapas do shader. Para mais informações, veja [Automatic shader stage input\/out](automatic-shader-stage-input-output.md).
+- `stream`: palavra-chave de membro. O membro é acessível em cada fase do shader. Para mais informações, veja [Automatic shader stage input/out](automatic-shader-stage-input-output.md).
+- `streams`: tipo de estrutura global que armazena variáveis necessárias em várias etapas do shader. Para mais informações, veja [Automatic shader stage input/out](automatic-shader-stage-input-output.md).
 - `override`: palavra-chave do método. Se esta palavra-chave está faltando, a compilação retorna um erro.
 - `abstract`: usado na frente de uma declaração de método (sem um corpo).
 - `clone`: palavra-chave do método. Quando um método aparece várias vezes na árvore de herança de uma classe shader, esta palavra-chave força a criação de múltiplas instâncias do método em cada nível da herança em vez de uma. Para mais informações, consulte [Composition](composition.md).
@@ -103,23 +103,23 @@ shader MixBA : ShaderB, ShaderA
 (
 };
  
-\/\/ Código resultante (representação)
+// Código resultante (representação)
 
 shader MixAB : BaseInterface, BaseShader, ShaderA, ShaderB
 (
 	flutuador Compute()
 	(
-		\/\/ código de BaseShader
+		// código de BaseShader
 		flutuar v0 = 1.0f;
  
-		\/\/ código de ShaderA
+		// código de ShaderA
 		flutuar v1 = 2.0f;
  
-		\/\/ código de Shader B
+		// código de Shader B
 		flutuar prevValue = v1;
 		float v2 = 5.0f + prevValue;
  
-		retornar v2; \/\/ = 7.0f
+		retornar v2; // = 7.0f
 	}
 };
 
@@ -127,17 +127,17 @@ shader MixBA : BaseInterface, BaseShader, ShaderA, ShaderB
 (
 	flutuador Compute()
 	(
-		\/\/ código de BaseShader
+		// código de BaseShader
 		flutuar v0 = 1.0f;
 
-		\/\/ código de Shader B
+		// código de Shader B
 		float prevValue = v0;
 		float v1 = 5.0f + prevValue;
 		
-		\/\/ código de ShaderA
+		// código de ShaderA
 		flutuar v2 = 2.0f;
 
-		retornar v2; \/\/ = 2.0f
+		retornar v2; // = 2.0f
 	}
 };
 ```
@@ -159,14 +159,14 @@ acessório de corte
 		retorno 2.0f * a;
 	}
  
-	\/\/ este método usa
+	// este método usa
 	float NonStaticMethod()
 	(
 		retorno 2.0f * Valor estático;
 	}
 };
  
-\/\/ esta classe de shader está bem
+// esta classe de shader está bem
 correctStaticCallClass
 (
 	flutuador Compute()
@@ -175,7 +175,7 @@ correctStaticCallClass
 	}
 };
  
-\/\/ esta classe de shader não compila desde que a chamada não é estática
+// esta classe de shader não compila desde que a chamada não é estática
 shader IncorrectStaticCallClass 
 (
 	flutuador Compute()
@@ -184,7 +184,7 @@ shader IncorrectStaticCallClass
 	}
 };
  
-\/\/ uma maneira de corrigir isso
+// uma maneira de corrigir isso
 shader IncorrectStaticCallClassFixed : Códigos estáticos
 (
 	flutuador Compute()
@@ -200,5 +200,5 @@ shader IncorrectStaticCallClassFixed : Códigos estáticos
 * [Índice de linguagem de sombra](index.md)
    - [Composição](composition.md)
    - [Modelos](templates.md)
-   - [Shader fase de entrada \/ saída gestão automática](automatic-shader-stage-input-output.md)
+   - [Shader fase de entrada / saída gestão automática](automatic-shader-stage-input-output.md)
    - [Etapas de Shader](shader-stages.md)

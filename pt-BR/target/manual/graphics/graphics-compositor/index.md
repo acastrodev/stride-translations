@@ -1,9 +1,9 @@
 # Compositor gráfico
 
-<x1\/>Avançado<x2\/>
-<x3\/>Programação<x4\/>
+<span class="badge text-bg-primary">Avançado</span>
+<span class="badge text-bg-success">Programação</span>
 
-> <x1\/>!Note<x2\/>
+> [!Note]
 > Esta página requer uma compreensão básica dos pipelines gráficos.
 
 O compositor **graphics** organiza como [scenes](../../game-studio/scenes.md) são renderizados. Você pode usá-lo para personalizar quase todas as partes do pipeline de renderização. Por exemplo, você pode:
@@ -22,7 +22,7 @@ Stride inclui um compositor gráfico quando você cria um projeto.
 
 Se você precisar criar outro compositor gráfico, no **Asset View**, clique em **Adicionar asset** e selecione **Misc > Graphics compositor**.
 
-<x1\/> Adicionar compositor gráfico<x2\/>
+![ Adicionar compositor gráfico](media/add-graphics-compositor.png)
 
 Você pode escolher uma das duas predefinições:
 
@@ -33,7 +33,7 @@ Você pode escolher uma das duas predefinições:
 
 Você pode ter vários compositores gráficos em seu projeto, mas você só pode usar um compositor de cada vez. No tempo de execução, o Stride usa o compositor de gráficos que você especifica em [Configurações de Jogo](../../game-studio/game-settings.md).
 
-<x1\/> Definir a cena padrão<x2\/>
+![ Definir a cena padrão](../../game-studio/media/game-settings-graphics-compositor.png)
 
 Você também pode alterar o compositor gráfico em tempo de execução em um script.
 
@@ -41,16 +41,16 @@ Você também pode alterar o compositor gráfico em tempo de execução em um sc
 
 Você personaliza o compositor gráfico no editor de compositores **graphics**.
 
-> <x1\/>!Note<x2\/>
+> [!Note]
 > O editor de compositores gráficos é um recurso experimental.
 
 No **Asset View** (no painel inferior por padrão), clique duas vezes no **Graphics Compositor** ativo.
 
-<x1\/>Gráficos Compositor asset<x2\/>
+![Gráficos Compositor asset](media/graphics-compositor-asset.png)
 
 O editor de compositores **graphics** abre.
 
-<x1\/>Gráfico Compositor editor<x2\/>
+![Gráfico Compositor editor](media/graphics-compositor-editor.png)
 
 ## Nós
 
@@ -60,7 +60,7 @@ O editor de compositor gráfico é dividido em **nodes**. Você pode definir as 
 
 No nó **Entry Points**, você configura o pipeline para cada ponto de entrada.
 
-<x1\/> Pontos de entrada node<x2\/>
+![ Pontos de entrada node](media/entry-points-node.png)
 
 Existem três pontos de entrada:
 
@@ -76,7 +76,7 @@ Cada ponto de entrada pode usar um pipeline de renderização separado. Por exem
 
 2. No **Property Grid**, ao lado do ponto de entrada que você deseja conectar (**Editor**, **Game** ou **Utilidade**), selecione o renderizador que você deseja conectar.
 
-   <x1\/>Select renderer<x2\/>
+   ![Select renderer](media/connect-entry-point.png)
 
 Para obter informações sobre os diferentes renderizadores, consulte [Scene renderers](scene-renderers.md).
 
@@ -102,7 +102,7 @@ O nó ** efeitos de pós-processamento** vem após o renderizador para a frente 
 
 Para criar um nó, clique com o botão direito do mouse no editor de compositores gráficos e selecione o tipo de nó que você deseja criar:
 
-<x1\/>Criar nó<x2\/>
+![Criar nó](../../virtual-reality/media/create-node.png)
 
 ## Ver também
 

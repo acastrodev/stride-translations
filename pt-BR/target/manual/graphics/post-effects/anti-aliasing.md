@@ -2,16 +2,16 @@
 
 **Anti-aliasing** alisa bordas irregulares. Para o pós-processamento, a Stride usa anti-aliasing (FXAA), uma técnica de espaço em tela única com baixo impacto de desempenho.
 
-<x1\/>Propriedades <x2\/>
+![Propriedades ](media/anti-aliasing-closeup-comparison.png)
 
-> <x1\/>!Note<x2\/>
+> [!Note]
 > Atualmente, o pós-efeito anti-aliasing não funciona corretamente em dispositivos Android.
 
 Stride também inclui **MSAA** (multisample anti-aliasing), mas este não é um efeito pós. Você pode ativar o MSAA nas propriedades **forward renderer**.
 
 ## Propriedades
 
-<x1\/>Propriedades <x2\/>
+![Propriedades ](media/anti-aliasing.png)
 
 | Propriedade | Descrição |
 | --------------    | ---- 

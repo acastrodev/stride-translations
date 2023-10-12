@@ -186,7 +186,7 @@ se (Parameters de Material.AlbedoDiffuse!= null)
 <trans-unit id="tu25" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>!Note<x id="2"/>
 Even if they're defined in the XKFX file, don't forget the <g id="3">using</g> statement when you want to use them.</source>
-<target xml:lang="pt">&lt;x1\/&gt;!Note&lt;x2\/&gt;
+<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
 Mesmo que eles sejam definidos no arquivo XKFX, não se esqueça da declaração <g id="3">using</g> quando você deseja usá-los.</target>
 </trans-unit>
 <trans-unit id="tu26" xml:space="preserve">
@@ -197,7 +197,7 @@ Mesmo que eles sejam definidos no arquivo XKFX, não se esqueça da declaração
 </source>
 <target xml:lang="pt">params MyParameters
 (
-	bool EnableSpecular = true; \/\/ true é o valor padrão
+	bool EnableSpecular = true; // true é o valor padrão
 }
 </target>
 </trans-unit>
@@ -217,7 +217,7 @@ or
  
 mixin compose albedoSpecular = MaterialParameters.AlbedoSpecular;
 </source>
-<target xml:lang="pt">\/\/ albedoSpecular é o nome da variável composição no mixin
+<target xml:lang="pt">// albedoSpecular é o nome da variável composição no mixin
 mistura de compor albedo Specular = ComputeColorTexture;
  
 ou
@@ -252,7 +252,7 @@ mixin compose myComposition = MyPartialEffect;
 	mixin compose color2 = ComputeColorFixed;
 }
  
-\/\/ para usá-lo
+// para usá-lo
 mixin MyPartialEffect;
 mixin compor myComposition = MyPartialEffect;
 </target>

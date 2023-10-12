@@ -8,8 +8,8 @@
 <trans-unit id="tu2" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Intermediate<x id="2"/>
 <x id="3"/>Programmer<x id="4"/></source>
-<target xml:lang="pt">&lt;x1\/&gt; Intermediário &lt;x2\/&gt;
-&lt;x3\/&gt;Programação&lt;x4\/&gt;</target>
+<target xml:lang="pt"><x id="1"/>Intermediário<x id="2"/>
+<x id="3"/>Programação<x id="4"/></target>
 </trans-unit>
 <trans-unit id="tu3" xml:space="preserve">
 <source xml:lang="en">You can write your own shaders in Visual Studio and use them in <g id="1">material attributes</g>. For example, you can write a shader to add textures to materials based on the objects' world positions, or generate noise and use it to randomize material properties.</source>
@@ -33,7 +33,7 @@
 </trans-unit>
 <trans-unit id="tu8" xml:space="preserve">
 <source xml:lang="en">In Game Studio, in the toolbar, click <x id="1"/>Open in IDE<x id="2"/> (<g id="3">Open in IDE</g>) to open your project in Visual Studio.</source>
-<target xml:lang="pt">No Game Studio, na barra de ferramentas, clique em &lt;x1\/&gt;Open in IDE&lt;x2\/&gt; (<g id="3">Open in IDE</g>) para abrir seu projeto no Visual Studio.</target>
+<target xml:lang="pt">No Game Studio, na barra de ferramentas, clique em <x id="1"/>Open in IDE<x id="2"/> (<g id="3">Open in IDE</g>) para abrir seu projeto no Visual Studio.</target>
 </trans-unit>
 <trans-unit id="tu9" xml:space="preserve">
 <source xml:lang="en">In the Visual Studio <g id="1">Solution Explorer</g>, right-click the project (eg <g id="2">MyGame.Game</g>) and select <g id="3">Add &gt; New item</g>.</source>
@@ -41,7 +41,7 @@
 </trans-unit>
 <trans-unit id="tu10" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>New item<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt; Novo item&lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/> Novo item<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu11" xml:space="preserve">
 <source xml:lang="en">Select <g id="1">Class</g>.</source>
@@ -49,7 +49,7 @@
 </trans-unit>
 <trans-unit id="tu12" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Select class<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt;Selecionar classe&lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/>Selecionar classe<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu13" xml:space="preserve">
 <source xml:lang="en">In the <g id="1">Name</g> field, specify a name with the extension <g id="2">.sdsl</g> (eg <g id="3">MyShader.sdsl</g>), and click <g id="4">Add</g>.</source>
@@ -57,7 +57,7 @@
 </trans-unit>
 <trans-unit id="tu14" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Select class<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt;Selecionar classe&lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/>Selecionar classe<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu15" xml:space="preserve">
 <source xml:lang="en">The Stride Visual Studio extension automatically generates a <g id="1">.cs</g> file from the <g id="2">.sdsl</g> file. The Solution Explorer lists it as a child of the <g id="3">.sdsl</g> file.</source>
@@ -65,7 +65,7 @@
 </trans-unit>
 <trans-unit id="tu16" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>My shader<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt; Meu shader&lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/> Meu shader<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu17" xml:space="preserve">
 <source xml:lang="en">Open the <g id="1">.sdsl</g> file, remove the existing lines, and write your shader.</source>
@@ -106,14 +106,14 @@
 <trans-unit id="tu21" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>!Note<x id="2"/>
 Make sure the shader name in the file (eg <g id="3">MyShader</g> above) is the same as the filename.</source>
-<target xml:lang="pt">&lt;x1\/&gt;!Note&lt;x2\/&gt;
+<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
 Certifique-se de que o nome do shader no arquivo (por exemplo <g id="3">MyShader</g> acima) é o mesmo que o nome do arquivo.</target>
 </trans-unit>
 <trans-unit id="tu22" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>!Note<x id="2"/>
 To be accessible from the Game Studio Property Grid, the shader must inherit from <g id="3">ComputeColor</g>.
 As '<g id="4">ComputeColor</g> always returns a float4 value, properties that take float values (eg metalness and gloss maps) use the first component (the red component) of the value returned by <g id="5">ComputeColor</g>.</source>
-<target xml:lang="pt">&lt;x1\/&gt;!Note&lt;x2\/&gt;
+<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
 Para ser acessível a partir da Game Studio Property Grid, o shader deve herdar de <g id="3">ComputeColor</g>.
 Como '<g id="4">ComputeColor</g> sempre retorna um valor float4, propriedades que tomam valores de flutuador (por exemplo, metalness e mapas de brilho) usam o primeiro componente (o componente vermelho) do valor retornado por <g id="5">ComputeColor</g>.</target>
 </trans-unit>
@@ -127,7 +127,7 @@ Como '<g id="4">ComputeColor</g> sempre retorna um valor float4, propriedades qu
 </trans-unit>
 <trans-unit id="tu25" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Reload assemblies<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt;Reload assemblies&lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/>Reload assemblies<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu26" xml:space="preserve">
 <source xml:lang="en">The <g id="1">Asset View</g> lists the shader in the same directory as your scripts (eg <g id="2">MyGame.Game</g>).</source>
@@ -135,17 +135,17 @@ Como '<g id="4">ComputeColor</g> sempre retorna um valor float4, propriedades qu
 </trans-unit>
 <trans-unit id="tu27" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Shader in Asset View<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt;Shader em Asset View&lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/>Shader em Asset View<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu28" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>!Note<x id="2"/>
 In some situations, Game Studio incorrectly identifies the shader as a script, as in the screenshot below:</source>
-<target xml:lang="pt">&lt;x1\/&gt;!Note&lt;x2\/&gt;
+<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
 Em algumas situações, Game Studio identifica incorretamente o shader como um script, como na captura de tela abaixo:</target>
 </trans-unit>
 <trans-unit id="tu29" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Shader as script<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt;Shader como script&lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/>Shader como script<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu30" xml:space="preserve">
 <source xml:lang="en">If this happens, restart Game Studio (<g id="1">File &gt; Reload project</g>).</source>
@@ -165,11 +165,11 @@ Em algumas situações, Game Studio identifica incorretamente o shader como um s
 </trans-unit>
 <trans-unit id="tu34" xml:space="preserve">
 <source xml:lang="en">In the <g id="1">Property Grid</g>, next to the property you want to control with the shader, click <x id="2"/>Blue arrow button<x id="3"/> (<g id="4">Change</g>) and select <g id="5">Shader</g>.</source>
-<target xml:lang="pt">No <g id="1">Property Grid</g>, ao lado da propriedade que você deseja controlar com o shader, clique em &lt;x1\/&gt;Blue arrow button&lt;x2\/&gt; (<g id="4">Change</g>) e selecione <g id="5">.</g></target>
+<target xml:lang="pt">No <g id="1">Property Grid</g>, ao lado da propriedade que você deseja controlar com o shader, clique em <x id="2"/>Blue arrow button<x id="3"/> (<g id="4">Change</g>) e selecione <g id="5">.</g></target>
 </trans-unit>
 <trans-unit id="tu35" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Select Shader<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt;Select Shader&lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/>Select Shader<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu36" xml:space="preserve">
 <source xml:lang="en">In the field, type the name of your shader (eg <g id="1">MyShader</g>).</source>
@@ -177,7 +177,7 @@ Em algumas situações, Game Studio identifica incorretamente o shader como um s
 </trans-unit>
 <trans-unit id="tu37" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Type shader<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt;Tope shader&lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/>Tope shader<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu38" xml:space="preserve">
 <source xml:lang="en">The property uses the shader you specify.</source>
@@ -186,13 +186,13 @@ Em algumas situações, Game Studio identifica incorretamente o shader como um s
 <trans-unit id="tu39" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>!Tip<x id="2"/>
 When you make a change to the <g id="3">.sdsl</g> file in Visual Studio and save it, Game Studio automatically updates the project with your changes. If this doesn't happen, restart Game Studio (<g id="4">File &gt; Reload project</g>).</source>
-<target xml:lang="pt">&lt;x1\/&gt;!Tip&lt;x2\/&gt;
+<target xml:lang="pt"><x id="1"/>!Tip<x id="2"/>
 Quando você faz uma mudança no arquivo <g id="3">.sdsl</g> no Visual Studio e salvá-lo, o Game Studio atualiza automaticamente o projeto com suas mudanças. Se isso não acontecer, reinicie o Game Studio (<g id="4">File &gt; Recarregar projeto</g>).</target>
 </trans-unit>
 <trans-unit id="tu40" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>!Note<x id="2"/>
 If you delete a shader from the project assets, to prevent errors, make sure you also remove it from the properties of materials that use it.</source>
-<target xml:lang="pt">&lt;x1\/&gt;!Note&lt;x2\/&gt;
+<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
 Se você excluir um shader dos ativos do projeto, para evitar erros, certifique-se que você também removê-lo das propriedades dos materiais que usá-lo.</target>
 </trans-unit>
 <trans-unit id="tu41" xml:space="preserve">
@@ -235,7 +235,7 @@ Se você excluir um shader dos ativos do projeto, para evitar erros, certifique-
 </trans-unit>
 <trans-unit id="tu47" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Template argument<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt;Aplicar argumento&lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/>Aplicar argumento<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu48" xml:space="preserve">
 <source xml:lang="en">Parameters</source>
@@ -290,7 +290,7 @@ Se você excluir um shader dos ativos do projeto, para evitar erros, certifique-
 <trans-unit id="tu54" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>!Note<x id="2"/>
 <g id="3">ComputeColorWaveKeys.Frequency</g> is generated by the Stride Visual Studio extension from the shader file.</source>
-<target xml:lang="pt">&lt;x1\/&gt;!Note&lt;x2\/&gt;
+<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
 <g id="3">ComputeColorWaveKeys.Frequency</g> é gerado pela extensão Stride Visual Studio do arquivo shader.</target>
 </trans-unit>
 <trans-unit id="tu55" xml:space="preserve">
@@ -329,7 +329,7 @@ Se você excluir um shader dos ativos do projeto, para evitar erros, certifique-
 </trans-unit>
 <trans-unit id="tu59" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Select shader<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt;Selecionar shader&lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/>Selecionar shader<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu60" xml:space="preserve">
 <source xml:lang="en">Custom shader sample</source>
@@ -341,7 +341,7 @@ Se você excluir um shader dos ativos do projeto, para evitar erros, certifique-
 </trans-unit>
 <trans-unit id="tu62" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Sample project<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt; Projeto de amostra &lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/> Projeto de amostra <x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu63" xml:space="preserve">
 <source xml:lang="en">In the project, the <g id="1">ComputeColorWaveNormal</g> shader is used in the <g id="2">displacement map</g> and <g id="3">surface</g> material properties.</source>

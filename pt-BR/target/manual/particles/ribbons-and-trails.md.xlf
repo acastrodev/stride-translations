@@ -9,9 +9,9 @@
 <source xml:lang="en"><x id="1"/>Intermediate<x id="2"/>
 <x id="3"/>Artist<x id="4"/>
 <x id="5"/>Programmer<x id="6"/></source>
-<target xml:lang="pt">&lt;x1\/&gt; Intermediário &lt;x2\/&gt;
-&lt;x3\/&gt;Artista &lt;x4\/&gt;
-&lt;x5\/&gt;Programação&lt;x6\/&gt;</target>
+<target xml:lang="pt"><x id="1"/>Intermediário<x id="2"/>
+<x id="3"/>Artista <x id="4"/>
+<x id="5"/>Programação<x id="6"/></target>
 </trans-unit>
 <trans-unit id="tu3" xml:space="preserve">
 <source xml:lang="en">To create <g id="1">ribbons</g> and <g id="2">trails</g>, Stride builds the mesh data as a strip connecting the particles, rather than individual quads. Ribbons and trails are often used to create visual effects such as sword slashes.</source>
@@ -19,7 +19,7 @@
 </trans-unit>
 <trans-unit id="tu4" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>media/particles-tutorials-ribbons-0.jpg<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt;media\/particles-tutorials-ribbons-0.jpg&lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/>media/particles-tutorials-ribbons-0.jpg<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu5" xml:space="preserve">
 <source xml:lang="en">In the diagram below, several particles (represented as red dots) are rendered as individual quads (blue squares):</source>
@@ -27,7 +27,7 @@
 </trans-unit>
 <trans-unit id="tu6" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Diagram: individual quads<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt;Diagrama: quads individuais&lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/>Diagrama: quads individuais<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu7" xml:space="preserve">
 <source xml:lang="en">In the diagram below, a strip is created by connecting the particles and rendering quads between the adjacent particles:</source>
@@ -35,7 +35,7 @@
 </trans-unit>
 <trans-unit id="tu8" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Diagram: ribbon of particles<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt;Diagrama: fita de partículas&lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/>Diagrama: fita de partículas<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu9" xml:space="preserve">
 <source xml:lang="en">Ribbons vs trails</source>
@@ -51,7 +51,7 @@
 </trans-unit>
 <trans-unit id="tu12" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Ribbons vs trails<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt; Ribbons vs trails&lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/> Ribbons vs trails<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu13" xml:space="preserve">
 <source xml:lang="en">Sort particles</source>
@@ -63,7 +63,7 @@
 </trans-unit>
 <trans-unit id="tu15" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Diagram: unordered particles/particles-tutorials-ribbons-2.png<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt;Diagrama: partículas não ordenadas\/particles-tutoriais-ribbons-2.png&lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/>Diagrama: partículas não ordenadas/particles-tutoriais-ribbons-2.png<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu16" xml:space="preserve">
 <source xml:lang="en">Here's an example of how unsorted particles look at runtime:</source>
@@ -87,7 +87,7 @@
 </trans-unit>
 <trans-unit id="tu19" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Sort particles<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt;Partículas de fragmento&lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/>Partículas de fragmento<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu20" xml:space="preserve">
 <source xml:lang="en">If your particles have the same <g id="1">lifespan</g> property, and are emitted no more than once per frame (usually the case at 30 particles per second or fewer), you can sort them by age.</source>
@@ -95,11 +95,11 @@
 </trans-unit>
 <trans-unit id="tu21" xml:space="preserve">
 <source xml:lang="en">However, if you spawn several particles per second or your particles vary in lifespan, sorting by age doesn't provide a consistent order, as the sorting parameter changes between frames. In this case, you should sort the particles by order. To do this, you need to add a <g id="1">spawn order initializer</g>. To do this, in the entity properties, under <g id="2">Particle System &gt; Source &gt; Emitters</g>, next to <g id="3">Initializers</g>, click <x id="4"/>Green plus button<x id="5"/> (<g id="6">Add</g>) and select <g id="7">Spawn Order</g>.</source>
-<target xml:lang="pt">No entanto, se você gerou várias partículas por segundo ou suas partículas variam em vida útil, a classificação por idade não fornece uma ordem consistente, pois o parâmetro de classificação muda entre quadros. Neste caso, você deve classificar as partículas por ordem. Para fazer isso, você precisa adicionar um inicializador de ordem &lt;g id="1"&gt;spawn&lt;/g&gt;. Para fazer isso, nas propriedades da entidade, sob &lt;g id="2"&gt;Particle System &gt; Source &gt; Emitters&lt;/g&gt;, ao lado de &lt;g id="3"&gt;Initializers&lt;/g&gt;, clique em &lt;x1\/&gt;Green plus button&lt;x2\/&gt; (&lt;g id="6"&gt;Add&lt;/g&gt;Spawn Order&lt;/g&gt;.&lt;g id="7"&gt;</target>
+<target xml:lang="pt">No entanto, se você gerou várias partículas por segundo ou suas partículas variam em vida útil, a classificação por idade não fornece uma ordem consistente, pois o parâmetro de classificação muda entre quadros. Neste caso, você deve classificar as partículas por ordem. Para fazer isso, você precisa adicionar um inicializador de ordem &lt;g id="1"&gt;spawn&lt;/g&gt;. Para fazer isso, nas propriedades da entidade, sob &lt;g id="2"&gt;Particle System &gt; Source &gt; Emitters&lt;/g&gt;, ao lado de &lt;g id="3"&gt;Initializers&lt;/g&gt;, clique em &lt;x id="4"/&gt;Green plus button&lt;x id="5"/&gt; (&lt;g id="6"&gt;Add&lt;/g&gt;Spawn Order&lt;/g&gt;.&lt;g id="7"&gt;</target>
 </trans-unit>
 <trans-unit id="tu22" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Add spawn-order initializer<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt;Adicionar inicializador de ordem desova&lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/>Adicionar inicializador de ordem desova<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu23" xml:space="preserve">
 <source xml:lang="en">This adds a spawn order initializer to the emitter. It doesn't have any properties, but it gives the particles a SpawnID we can sort them by.</source>
@@ -108,7 +108,7 @@
 <trans-unit id="tu24" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>!Note<x id="2"/>
 Sorting by depth might work in niche cases, but this doesn't preserve the order between different frames. We don't recommend it for most situations.</source>
-<target xml:lang="pt">&lt;x1\/&gt;!Note&lt;x2\/&gt;
+<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
 A classificação por profundidade pode funcionar em casos de nicho, mas isso não preserva a ordem entre diferentes quadros. Não o recomendamos para a maioria das situações.</target>
 </trans-unit>
 <trans-unit id="tu25" xml:space="preserve">
@@ -121,7 +121,7 @@ A classificação por profundidade pode funcionar em casos de nicho, mas isso n�
 </trans-unit>
 <trans-unit id="tu27" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>UV coords property<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt;UV coordena propriedade&lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/>UV coordena propriedade<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu28" xml:space="preserve">
 <source xml:lang="en"><g id="1">AsIs</g>: The texture is mapped per segment, copying the same quad stretched between every two particles. This is sometimes useful with flipbook animations (in the <g id="2">Material</g> settings).</source>
@@ -129,7 +129,7 @@ A classificação por profundidade pode funcionar em casos de nicho, mas isso n�
 </trans-unit>
 <trans-unit id="tu29" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>As-is texture mapping<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt;As-is texture mapping&lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/>As-is texture mapping<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu30" xml:space="preserve">
 <source xml:lang="en"><g id="1">Stretched</g>: The texture is stretched between the first and last particle of the trail or ribbon. The <g id="2">UV Factor</g> defines how many times the texture appears across the entire trail or ribbon (1 = once).</source>
@@ -137,7 +137,7 @@ A classificação por profundidade pode funcionar em casos de nicho, mas isso n�
 </trans-unit>
 <trans-unit id="tu31" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Stretched texture mapping<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt; Mapeamento de textura padrão&lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/> Mapeamento de textura padrão<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu32" xml:space="preserve">
 <source xml:lang="en"><g id="1">DistanceBased</g>: The texture is repeated based on the actual world length of the ribbon or trail rather than the number of particles. The <g id="2">UV Factor</g> defines the distance in <g id="3">world units</g> after which the texture repeats</source>
@@ -145,7 +145,7 @@ A classificação por profundidade pode funcionar em casos de nicho, mas isso n�
 </trans-unit>
 <trans-unit id="tu33" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Distance-based texture mapping<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt; Mapeamento de textura baseado em resistência&lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/> Mapeamento de textura baseado em resistência<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu34" xml:space="preserve">
 <source xml:lang="en">Smooth ribbons and trails</source>
@@ -161,7 +161,7 @@ A classificação por profundidade pode funcionar em casos de nicho, mas isso n�
 </trans-unit>
 <trans-unit id="tu37" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Diagram: particle smoothing<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt;Diagrama: alisamento de partículas&lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/>Diagrama: alisamento de partículas<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu38" xml:space="preserve">
 <source xml:lang="en"><g id="1">Fast</g> — This uses <g id="2">Catmull-Rom interpolation (Wikipedia)</g> to add extra segments between particles, creating a smoother effect. You can set the number of segments with the <g id="3">Segments</g> property.</source>
@@ -169,7 +169,7 @@ A classificação por profundidade pode funcionar em casos de nicho, mas isso n�
 </trans-unit>
 <trans-unit id="tu39" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Diagram: particle smoothing<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt;Diagrama: alisamento de partículas&lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/>Diagrama: alisamento de partículas<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu40" xml:space="preserve">
 <source xml:lang="en"><g id="1">Best</g> — This generally creates the smoothest effect, but requires more CPU. It calculates a circumcircle around every three sequential particles along the control axis, then adds extra control points on the circle, keeping the segments in an arc. For the first and the last segment, there is only one arc to be followed, but for mid-sections, two different arcs from two different circles overlap; Stride interpolates the control points from the first arc and the second as the point approaches the second particle. You can set the number of segments between every two particles with the <g id="2">Segments</g> property.</source>
@@ -177,7 +177,7 @@ A classificação por profundidade pode funcionar em casos de nicho, mas isso n�
 </trans-unit>
 <trans-unit id="tu41" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Diagram: particle smoothing<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt;Diagrama: alisamento de partículas&lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/>Diagrama: alisamento de partículas<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu42" xml:space="preserve">
 <source xml:lang="en">This video shows the difference between the three smoothing methods. Note that the rightmost trail (using the <g id="1">Best</g> method) is slightly more circular, closer to the actual path of the sword swing.</source>
@@ -185,7 +185,7 @@ A classificação por profundidade pode funcionar em casos de nicho, mas isso n�
 </trans-unit>
 <trans-unit id="tu43" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>media/particles-tutorials-ribbons-6.gif<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt;media\/particles-tutorials-ribbons-6.gif&lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/>media/particles-tutorials-ribbons-6.gif<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu44" xml:space="preserve">
 <source xml:lang="en">Sample project</source>

@@ -2,7 +2,7 @@
 
 **materiais** definem a aparência das superfícies do modelo 3D e como reagem à luz. Sem materiais, os modelos são simplesmente formas, telas em branco.
 
-<x1\/>media\/material-layers-2.png<x2\/>
+![media/material-layers-2.png](media/material-layers-2.png)
 
 Os materiais podem afetar tanto a geometria de um modelo (soldagem de vértice) quanto suas cores (soldagem de pixel).
 

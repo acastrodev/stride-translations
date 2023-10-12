@@ -1,11 +1,11 @@
 # Gamepads
 
-<x1\/>Introdução<x2\/>
-<x3\/>Programação<x4\/>
+<span class="badge text-bg-primary">Introdução</span>
+<span class="badge text-bg-success">Programação</span>
 
 **Gamepads**, como o Xbox Elite Wireless Controller e o PS4 DualShock, são dispositivos de entrada populares para consoles e desktop.
 
-> <x1\/>!Note<x2\/>
+> [!Note]
 > O Stride está atualmente otimizado para o gamepad Xbox Elite. Outros controladores funcionam, mas podem ter mapeamentos inesperados de botões. Características específicas do Gamepad como o touchpad PS4 DualShock não são suportadas.
 
 ## Botões digitais e analógicos
@@ -16,7 +16,7 @@
 
 Os botões do controlador Xbox Elite têm os seguintes nomes em Stride:
 
-<x1\/>Xbox gamepad<x2\/>
+![Xbox gamepad](media/input-gamepad-standard-gamepad.png)
 
 ## Lidar com a entrada do gamepad
 
@@ -46,7 +46,7 @@ Para consultar os estados e as mudanças de estado dos botões de gamepad digita
 
 Você também pode obter o estado de botões digitais usando [GamePadState.Buttons](xref:Stride.Input.GamePadState.Buttons).
 
-> <x1\/>!Note<x2\/>
+> [!Note]
 > O campo [GamePadState.Buttons](xref:Stride.Input.GamePadState.Buttons) é um bitmask que usa sistema binário. Dependendo do valor bitmask, você pode determinar quais botões são *up* ou *down*.
 
 Para obter o estado do gamepad, use [IGamePadDevice.State](xref:Stride.Input.IGamePadDevice.State).
@@ -56,7 +56,7 @@ Para obter o estado do gamepad, use [IGamePadDevice.State](xref:Stride.Input.IGa
 Para consultar valores de botões analógicos, primeiro obter o estado atual do gamepad usando
 [GetGamePadByIndex(index)](xref:Stride.Input.InputManager.GetGamePadByIndex\(System.Int32\)), onde _index (Integer)_ é o índice do gamepad que você deseja verificar.
 
-> <x1\/><x2\/>
+> []
 > O valor retornado por [IGamePadDevice.State](xref:Stride.Input.IGamePadDevice.State) é o estado do gamepad na atualização **current**. Você não pode reutilizar esse valor para as próximas atualizações. Tens de o consultar novamente em todas as actualizações.
 
 Para obter posições do gatilho e do polegar, use estes
@@ -64,25 +64,25 @@ Para obter posições do gatilho e do polegar, use estes
 
 | Campo | Descrição |
 |-------|------------
-| [GamePadState.LeftThumb](xref:Stride.Input.GamePadState.LeftThumb) | Valor do polegar esquerdo X-axis\/Y-axis no intervalo <x1\/>-1.0f, 1.0f<x2\/> para ambos os eixos. |
-| [GamePadState](xref:Stride.Input.GamePadState.RightThumb) | Valor do polegar direito X-axis\/Y-axis no intervalo <x1\/>-1.0f, 1.0f<x2\/> para ambos os eixos. |
-| [GamePadState.LeftTrigger](xref:Stride.Input.GamePadState.LeftTrigger) | Valor de controle analógico do gatilho esquerdo no intervalo <x1\/>0, 1.0f<x2\/> para um único eixo. |
-| [GamePadState.RightTrigger](xref:Stride.Input.GamePadState.RightTrigger) | Valor de controle analógico do gatilho direito no intervalo <x1\/>0, 1.0f<x2\/> para um único eixo. |
+| [GamePadState.LeftThumb](xref:Stride.Input.GamePadState.LeftThumb) | Valor do polegar esquerdo X-axis/Y-axis no intervalo [-1.0f, 1.0f] para ambos os eixos. |
+| [GamePadState](xref:Stride.Input.GamePadState.RightThumb) | Valor do polegar direito X-axis/Y-axis no intervalo [-1.0f, 1.0f] para ambos os eixos. |
+| [GamePadState.LeftTrigger](xref:Stride.Input.GamePadState.LeftTrigger) | Valor de controle analógico do gatilho esquerdo no intervalo [0, 1.0f] para um único eixo. |
+| [GamePadState.RightTrigger](xref:Stride.Input.GamePadState.RightTrigger) | Valor de controle analógico do gatilho direito no intervalo [0, 1.0f] para um único eixo. |
 
 Thumbsticks movem-se ao longo dos eixos X e Y. Suas posições são lidas da seguinte forma:
 
-<x1\/> Posição do polegar de pergunta <x2\/>
-<x3\/> Posição do polegar de pergunta <x4\/>
+![ Posição do polegar de pergunta ](media/index-gamepad-stick-position-1.png)
+![ Posição do polegar de pergunta ](media/index-gamepad-stick-position-2.png)
 
 Os gatilhos movem-se ao longo do eixo X. Suas posições são lidas da seguinte forma:
 
-<x1\/> Posição do gatilho de pergunta <x2\/>
+![ Posição do gatilho de pergunta ](media/index-gamepad-trigger-position.png)
 
 ### Vibração
 
 Para definir o nível de vibração do gamepad, use [IGamePadDevice.SetVibration](xref:Stride.Input.IGamePadDevice.SetVibration\(System.Single,System.Single,System.Single,System.Single\)).
 
-> <x1\/>!Note<x2\/>
+> [!Note]
 > O Stride suporta atualmente apenas vibração para os gamepads Xbox.
 
 ## Exemplo de código
@@ -95,29 +95,29 @@ classe pública TestScript: Sincronização
 (
     atualização()
     (
-        \/\/ Verifique se um gamepad está conectado
+        // Verifique se um gamepad está conectado
         se (Input.HasGamePad)
         (
-            \/\/ Obter o número de gamepads conectados
+            // Obter o número de gamepads conectados
             capa de jogo Contagem = Entrada.GamePadCount;
 
-            \/\/ Verifique o status de cada gamepad
+            // Verifique o status de cada gamepad
             foreach(var gamepad in Entrada.GamePads)
             (
-                \/\/ Obter as posições do polegar analógico
+                // Obter as posições do polegar analógico
                 Velocidade Vector2 = gamepad.State.LeftThumb;
                 Direção Vector2 = gamepad.State.RightThumb;
 
-                \/\/ Obter o status dos botões digitais
+                // Obter o status dos botões digitais
                 se (gamepad.IsButtonDown (GamePadButton.X))
                 (
-                    \/\/ A ação repete por enquanto o usuário segura o botão para baixo.
-                    \/\/ Isso é útil para ações contínuas, como disparar uma metralhadora.
+                    // A ação repete por enquanto o usuário segura o botão para baixo.
+                    // Isso é útil para ações contínuas, como disparar uma metralhadora.
                 }
                 se (gamepad.IsButtonPresed (GamePadButton.A)
                 (
-                    \/\/ A ação é acionada apenas uma vez, mesmo que o usuário mantenha pressionado o botão.
-                    \/\/ Isso é útil para ações únicas, como pular.
+                    // A ação é acionada apenas uma vez, mesmo que o usuário mantenha pressionado o botão.
+                    // Isso é útil para ações únicas, como pular.
                 }
             }
         }

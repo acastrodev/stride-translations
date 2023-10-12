@@ -1,12 +1,12 @@
 # Atributos de material
 
-<x1\/> Intermediário <x2\/>
-<x3\/>Artista <x4\/>
-<x5\/>Programação<x6\/>
+<span class="badge text-bg-primary">Intermediário</span>
+<span class="badge text-bg-success">Artista </span>
+<span class="badge text-bg-success">Programação</span>
 
 **Atributos materiais** definem as características principais de um material, como sua cor difusa, modelo de sombreamento difuso, e assim por diante. Os atributos são organizados em **geometry**, **shading** e **misc**.
 
-<x1\/>media\/material-attributes-1.png<x2\/>
+![media/material-attributes-1.png](media/material-attributes-1.png)
 
 Existem dois tipos de atributo:
 

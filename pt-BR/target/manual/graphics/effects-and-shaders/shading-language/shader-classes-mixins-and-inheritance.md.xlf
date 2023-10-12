@@ -55,11 +55,11 @@
 </trans-unit>
 <trans-unit id="tu14" xml:space="preserve">
 <source xml:lang="en"><g id="1">stream</g>: member keyword. The member is accessible at every stage of the shader. For more information, see <g id="2">Automatic shader stage input/out</g>.</source>
-<target xml:lang="pt"><g id="1">stream</g>: palavra-chave de membro. O membro é acessível em cada fase do shader. Para mais informações, veja <g id="2">Automatic shader stage input\/out</g>.</target>
+<target xml:lang="pt"><g id="1">stream</g>: palavra-chave de membro. O membro é acessível em cada fase do shader. Para mais informações, veja <g id="2">Automatic shader stage input/out</g>.</target>
 </trans-unit>
 <trans-unit id="tu15" xml:space="preserve">
 <source xml:lang="en"><g id="1">streams</g>: sort of global structure storing variables needed across several stages of the shader. For more information, see <g id="2">Automatic shader stage input/out</g>.</source>
-<target xml:lang="pt"><g id="1">streams</g>: tipo de estrutura global que armazena variáveis necessárias em várias etapas do shader. Para mais informações, veja <g id="2">Automatic shader stage input\/out</g>.</target>
+<target xml:lang="pt"><g id="1">streams</g>: tipo de estrutura global que armazena variáveis necessárias em várias etapas do shader. Para mais informações, veja <g id="2">Automatic shader stage input/out</g>.</target>
 </trans-unit>
 <trans-unit id="tu16" xml:space="preserve">
 <source xml:lang="en"><g id="1">override</g>: method keyword. If this keyword is missing, the compilation returns an error.</source>
@@ -278,23 +278,23 @@ shader MixBA : ShaderB, ShaderA
 (
 };
  
-\/\/ Código resultante (representação)
+// Código resultante (representação)
 
 shader MixAB : BaseInterface, BaseShader, ShaderA, ShaderB
 (
 	flutuador Compute()
 	(
-		\/\/ código de BaseShader
+		// código de BaseShader
 		flutuar v0 = 1.0f;
  
-		\/\/ código de ShaderA
+		// código de ShaderA
 		flutuar v1 = 2.0f;
  
-		\/\/ código de Shader B
+		// código de Shader B
 		flutuar prevValue = v1;
 		float v2 = 5.0f + prevValue;
  
-		retornar v2; \/\/ = 7.0f
+		retornar v2; // = 7.0f
 	}
 };
 
@@ -302,17 +302,17 @@ shader MixBA : BaseInterface, BaseShader, ShaderA, ShaderB
 (
 	flutuador Compute()
 	(
-		\/\/ código de BaseShader
+		// código de BaseShader
 		flutuar v0 = 1.0f;
 
-		\/\/ código de Shader B
+		// código de Shader B
 		float prevValue = v0;
 		float v1 = 5.0f + prevValue;
 		
-		\/\/ código de ShaderA
+		// código de ShaderA
 		flutuar v2 = 2.0f;
 
-		retornar v2; \/\/ = 2.0f
+		retornar v2; // = 2.0f
 	}
 };
 </target>
@@ -384,14 +384,14 @@ shader IncorrectStaticCallClassFixed : StaticClass
 		retorno 2.0f * a;
 	}
  
-	\/\/ este método usa
+	// este método usa
 	float NonStaticMethod()
 	(
 		retorno 2.0f * Valor estático;
 	}
 };
  
-\/\/ esta classe de shader está bem
+// esta classe de shader está bem
 correctStaticCallClass
 (
 	flutuador Compute()
@@ -400,7 +400,7 @@ correctStaticCallClass
 	}
 };
  
-\/\/ esta classe de shader não compila desde que a chamada não é estática
+// esta classe de shader não compila desde que a chamada não é estática
 shader IncorrectStaticCallClass 
 (
 	flutuador Compute()
@@ -409,7 +409,7 @@ shader IncorrectStaticCallClass
 	}
 };
  
-\/\/ uma maneira de corrigir isso
+// uma maneira de corrigir isso
 shader IncorrectStaticCallClassFixed : Códigos estáticos
 (
 	flutuador Compute()
@@ -441,7 +441,7 @@ shader IncorrectStaticCallClassFixed : Códigos estáticos
 </trans-unit>
 <trans-unit id="tu48" xml:space="preserve">
 <source xml:lang="en"><g id="1">Shader stage input/output automatic management</g></source>
-<target xml:lang="pt"><g id="1">Shader fase de entrada \/ saída gestão automática</g></target>
+<target xml:lang="pt"><g id="1">Shader fase de entrada / saída gestão automática</g></target>
 </trans-unit>
 <trans-unit id="tu49" xml:space="preserve">
 <source xml:lang="en"><g id="1">Shader stages</g></source>

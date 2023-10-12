@@ -1,11 +1,11 @@
 # Materiais para desenvolvedores
 
-<x1\/>Avançado<x2\/>
-<x3\/>Programação<x4\/>
+<span class="badge text-bg-primary">Avançado</span>
+<span class="badge text-bg-success">Programação</span>
 
 Este diagrama mostra as interfaces Material e classes de implementação:
 
-<x1\/>media\/materials-for-developers-1.png<x2\/>
+![media/materials-for-developers-1.png](media/materials-for-developers-1.png)
 
 - A interface @'Stride.Rendering.Materials.IMaterialDescriptor' é a interface raiz para uma descrição do material.
 - O @'Stride.Rendering.Materials.IMaterialShaderGenerator' é a interface principal usada para gerar um shader material do material.

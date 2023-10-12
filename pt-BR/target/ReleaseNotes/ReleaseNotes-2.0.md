@@ -81,7 +81,7 @@ O compositor gráfico é agora um ativo separado.
 
 Parâmetros de renderização (como VR) e parâmetros de efeito pós podem ser ajustados em apenas alguns cliques.
 
-<x1\/>Graphics compositor<x2\/>
+![Graphics compositor](media/ReleaseNotes-2.0/graphics_compositor.jpg)
 
 Este é apenas o primeiro passo para tornar o compositor gráfico fácil de personalizar e estender. Fique atento para mais mudanças em versões futuras!
 
@@ -211,7 +211,7 @@ Anteriormente, o pipeline de renderização foi personalizado por magia `IPipeli
 ##### Navegação
 
 * As caixas de som agora podem ser colocadas na cena
-* As malhas de navegação podem agora ser geradas \/ atualizadas no tempo de execução
+* As malhas de navegação podem agora ser geradas / atualizadas no tempo de execução
 * `TryFindPath` agora retorna falso em vez de falhar se nenhuma malha de navegação é carregada
 * Índices de camada de malha de navegação foram substituídos por grupos
 
@@ -229,23 +229,23 @@ Anteriormente, o pipeline de renderização foi personalizado por magia `IPipeli
 * Personagens inválidos no nome do projeto agora são filtrados corretamente e não impedem a compilação do projeto
 * Mudar tamanhos de gizmo já não faz com que o controle deslizante pular
 * Mudar entre gizmos já não trava o editor de cena
-* Asset copy\/paste agora funciona melhor
+* Asset copy/paste agora funciona melhor
 * O comportamento de Thumbnail é agora mais estável
 * Vazamento fixo de ativos ou entidades excluídos ao navegar pelo histórico de seleção
-* Renomear ativos fixos undo\/redo
+* Renomear ativos fixos undo/redo
 * Renaming an asset longer closes its editor
 * Activos reparentados fixos com Alt key (mantém a posição mundial)
 * Corrigido muitos problemas relacionados à manipulação de entidades de prefabs
 * Corrigido muitos problemas relacionados a entidades em movimento na hierarquia de cena
 * A grade de propriedade agora lida corretamente com multi-seleção
 * Corrigido muitos problemas relacionados a propriedades sobrepostas de Prefabs ou de Arquétipos
-* Corrigido muitos problemas relacionados com copiar \/ colar na grade da propriedade
+* Corrigido muitos problemas relacionados com copiar / colar na grade da propriedade
 * Corrigido alguns casos em que *Create prefab da seleção* não foi corretamente vinculando as entidades selecionadas para o pré-fab recém-criado
 * Corrigido vários problemas ao manipular o modelo ou materiais em um `ModelComponent`, especialmente quando a entidade é herdada de um prefab
 * O botão de destaque do material agora funciona corretamente
 * Os ativos que não conseguiram salvar agora impedem Game Studio de fechar e perder suas mudanças
 * Sprites podem ser selecionados novamente no editor de cena
-* Desfazer\/refazer criação ou remoção de ativos de script agora funciona corretamente
+* Desfazer/refazer criação ou remoção de ativos de script agora funciona corretamente
 * Definir um snap de tradução de 0 agora funciona como esperado
 * Gizmos de luz atualizar corretamente ao alterar o tipo de luz
 * Digitar a URL para uma referência em um ativo escolhido agora funciona como esperado
@@ -274,7 +274,7 @@ Anteriormente, o pipeline de renderização foi personalizado por magia `IPipeli
 * Efeitos de post brilhantes agora são mais estáveis
 * VR agora compartilha sombras e inclinações para cada olho
 * Iluminação embutida agora funciona com várias visualizações de renderização
-* Conversões de cores RGB \/ HSV fixas
+* Conversões de cores RGB / HSV fixas
 * Saída do motor fixo ao usar o perfil RenderDoc
 * Multisample fixo Nível de qualidade para texturas MSAA
 * Tesselation e mapeamento de deslocamento não causam mais erros de renderização no editor
@@ -290,7 +290,7 @@ Anteriormente, o pipeline de renderização foi personalizado por magia `IPipeli
 
 ##### Game Studio
 
-* Corrigido um potencial acidente ao ativar o VR no editor e abrir várias cenas\/prefabs
+* Corrigido um potencial acidente ao ativar o VR no editor e abrir várias cenas/prefabs
 * Impede arrastar e soltar uma entidade que depende de um prefab nele (ou um antepassado prefab) que teria criado uma referência cíclica e caiu o editor
 * Corrigido um problema com recarga de montagem automática
 

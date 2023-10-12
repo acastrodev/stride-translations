@@ -9,9 +9,9 @@
 <source xml:lang="en"><x id="1"/>Intermediate<x id="2"/>
 <x id="3"/>Artist<x id="4"/>
 <x id="5"/>Programmer<x id="6"/></source>
-<target xml:lang="pt">&lt;x1\/&gt; Intermediário &lt;x2\/&gt;
-&lt;x3\/&gt;Artista &lt;x4\/&gt;
-&lt;x5\/&gt;Programação&lt;x6\/&gt;</target>
+<target xml:lang="pt"><x id="1"/>Intermediário<x id="2"/>
+<x id="3"/>Artista <x id="4"/>
+<x id="5"/>Programação<x id="6"/></target>
 </trans-unit>
 <trans-unit id="tu3" xml:space="preserve">
 <source xml:lang="en">This walkthrough shows how you can create custom extensions for the particle system, providing functionality not available in the core engine.</source>
@@ -27,7 +27,7 @@
 </trans-unit>
 <trans-unit id="tu6" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Particles sample project<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt;Particles sample project&lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/>Particles sample project<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu7" xml:space="preserve">
 <source xml:lang="en">This project contains different scenes that demonstrate different ways to use particles. Open the <g id="1">CustomParticles</g> scene.</source>
@@ -43,7 +43,7 @@
 </trans-unit>
 <trans-unit id="tu10" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>media/particles-samples-custom-1.png<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt;media\/particles-samples-custom-1.png&lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/>media/particles-samples-custom-1.png<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu11" xml:space="preserve">
 <source xml:lang="en">There are four custom elements in this emitter:</source>
@@ -124,22 +124,22 @@
       }
   }
 </source>
-<target xml:lang="pt">  [DataContract("CustomParticleSpawner")] \/\/ Usado para serialização, uma boa prática é ter o contrato de dados tem o mesmo nome que a classe
+<target xml:lang="pt">  [DataContract("CustomParticleSpawner")] // Usado para serialização, uma boa prática é ter o contrato de dados tem o mesmo nome que a classe
   [Display("CustomParticleSpawner")]
   classe selada pública CustomParticleSpawner : ParticleSpawner
   (
       [DataMemberIgnore]
-      carro flutuante privado Sobre; \/\/ Os membros privados não aparecem na Grade de Propriedade
+      carro flutuante privado Sobre; // Os membros privados não aparecem na Grade de Propriedade
 
-      [DataMember(100)] \/\/ Quando os dados são serializados, este atributo decide sua prioridade
-      [Display("Número de partículas")] \/\/ Este é o nome que será exibido na Grade de Propriedade
+      [DataMember(100)] // Quando os dados são serializados, este atributo decide sua prioridade
+      [Display("Número de partículas")] // Este é o nome que será exibido na Grade de Propriedade
       público float SpawnCount { get; set; }
 
       [DataMemberIgnore]
-      float in privadaTimer; \/\/ Os membros privados não aparecem na Grade de Propriedade
+      float in privadaTimer; // Os membros privados não aparecem na Grade de Propriedade
 
-      [DataMember(200)] \/\/ Quando os dados são serializados, este atributo decide sua prioridade
-      [Display("Burst partículas")] \/\/ Este é o nome que será exibido na Grade de Propriedade
+      [DataMember(200)] // Quando os dados são serializados, este atributo decide sua prioridade
+      [Display("Burst partículas")] // Este é o nome que será exibido na Grade de Propriedade
       float público BurstCount {get;set;}
 
 		...
@@ -151,17 +151,17 @@
 
       override público void SpawnNew (float dt, ParticleEmitter emitter)
       (
-          \/\/ O estado é tratado pela classe base. Geralmente você só quer gerar partículas quando em estado ativo
+          // O estado é tratado pela classe base. Geralmente você só quer gerar partículas quando em estado ativo
           var spawnerState = GetUpdatedState(dt, emitter);
           se (espawnerState!= SpawnerState.Active)
               voltar;
 
-          \/\/ Calcular partículas por segundo
+          // Calcular partículas por segundo
           var toSpawn = spawnCount * dt + carry Over;
           linha de produção Parte = (int)Math.Floor(paraSpawn);
           transporte Sobre = paraSpawn - inteiro Parte;
 
-          \/\/ Calcular partículas de explosão
+          // Calcular partículas de explosão
           estourarTimer -= dt;
           se (burstTimer &lt; 0)
           (
@@ -169,7 +169,7 @@
               integerPart += (int)Math.Floor(BurstCount);
           }
 
-          \/\/ Por fim, diga ao emissor quantas novas partículas queremos gerar este quadro
+          // Por fim, diga ao emissor quantas novas partículas queremos gerar este quadro
           emitter.EmitParticles (Partido inteiro);
       }
   }
@@ -311,10 +311,10 @@ public unsafe override void Initialize(ParticlePool pool, int startIdx, int endI
 	}
 }
 </source>
-<target xml:lang="pt">\/\/ Este método é chamado para todas as novas partículas uma vez que o inicializador é adicionado a um emissor. Em vez de atualizar todos eles, temos um índice inicial e final e só devemos usar partículas no intervalo definido.
+<target xml:lang="pt">// Este método é chamado para todas as novas partículas uma vez que o inicializador é adicionado a um emissor. Em vez de atualizar todos eles, temos um índice inicial e final e só devemos usar partículas no intervalo definido.
 anula de sobreposição inseguro público Inicialize(PartePool pool, int startIdx, int endIdx, int maxCapacity)
 (
-  \/\/ Certifique-se de que os campos existem e evite o acesso à memória ilegal
+  // Certifique-se de que os campos existem e evite o acesso à memória ilegal
 	if (!pool.FieldExists(ParticleFields.Position) | !pool.FieldExists(ParticleFields.Velocity) | !pool.FieldExists(ParticleFields.RandomSeed)))))
 		voltar;
 
@@ -322,7 +322,7 @@ anula de sobreposição inseguro público Inicialize(PartePool pool, int startId
 	var velField = pool.GetField (ParticleFields.Velocity);
 	var rndField = pool.GetField (ParticleFields.RandomSeed);
 
-	var range = (float) (Angle*Math.PI\/180f);
+	var range = (float) (Angle*Math.PI/180f);
 	var magnitude = WorldScale. X;
 
 	var i = começar Idx;
@@ -342,9 +342,9 @@ anula de sobreposição inseguro público Inicialize(PartePool pool, int startId
 		partículaRandPos.Normalize();
 
 		partículas de partículas RandPos *= magnitude;
-		WorldRotation. Rotate(ref partículaRandPos); \/\/ WorldRotation é a rotação atual do nosso inicializador. Podemos usá-lo como é, uma vez que herança e deslocamento já são tomados em consideração.
+		WorldRotation. Rotate(ref partículaRandPos); // WorldRotation é a rotação atual do nosso inicializador. Podemos usá-lo como é, uma vez que herança e deslocamento já são tomados em consideração.
 
-		(*((Vector3*) partícula[posField])) = partículaRandPos + WorldPosition; \/\/ WorldPosition é a posição atual do nosso inicializador. Podemos usá-lo como é, uma vez que herança e deslocamento já são tomados em consideração.
+		(*((Vector3*) partícula[posField])) = partículaRandPos + WorldPosition; // WorldPosition é a posição atual do nosso inicializador. Podemos usá-lo como é, uma vez que herança e deslocamento já são tomados em consideração.
 
 		(*((Vector3*) partícula[velField])) = partículaRandPos * Força;
 
@@ -417,31 +417,31 @@ anula de sobreposição inseguro público Inicialize(PartePool pool, int startId
       }
   }
 </source>
-<target xml:lang="pt">  [DataContract("CustomParticleUpdater")] \/\/ Usado para serialização para que nosso objeto personalizado possa ser salvo. Uma boa prática é ter o contrato de dados tem o mesmo nome que o nome da classe.
-  [Display("CustomUpdater")] \/\/ A menos que um nome de exibição seja especificado, o nome do contrato de dados será usado. Às vezes queremos escondê-lo e exibir algo mais simples.
+<target xml:lang="pt">  [DataContract("CustomParticleUpdater")] // Usado para serialização para que nosso objeto personalizado possa ser salvo. Uma boa prática é ter o contrato de dados tem o mesmo nome que o nome da classe.
+  [Display("CustomUpdater")] // A menos que um nome de exibição seja especificado, o nome do contrato de dados será usado. Às vezes queremos escondê-lo e exibir algo mais simples.
   classe pública Personalizado ParticleUpdater : ParticleUpdater
   (
-      [DataMemberIgnore] \/\/ Campos públicos e propriedades são serializados. Queremos evitar isso em alguns casos e podemos usar o atributo DataMemberIgnore.
-      public override bool IsPostUpdater =&gt; true; \/\/ Ao fazer este atualizador um pós-updater podemos garantir que ele será chamado para partículas recém-sombradas e antigas (1 quadro ou mais)
+      [DataMemberIgnore] // Campos públicos e propriedades são serializados. Queremos evitar isso em alguns casos e podemos usar o atributo DataMemberIgnore.
+      public override bool IsPostUpdater =&gt; true; // Ao fazer este atualizador um pós-updater podemos garantir que ele será chamado para partículas recém-sombradas e antigas (1 quadro ou mais)
 
-      [DataMember(10)] \/\/ Este campo público será serializado. Com o atributo DataMember podemos especificar a serialização e a ordem de exibição.
-      animação públicaCurveEnum Curva; \/\/ Consulte o código de amostra real para AnimatedCurveEnum
+      [DataMember(10)] // Este campo público será serializado. Com o atributo DataMember podemos especificar a serialização e a ordem de exibição.
+      animação públicaCurveEnum Curva; // Consulte o código de amostra real para AnimatedCurveEnum
 
-		\/\/ No construtor temos que especificar todos os campos que precisamos para este atualizador.
-		\/\/ Ele calcula nosso campo recém-criado usando a vida útil da partícula, então precisamos de "RectangleXY" e "Life"
+		// No construtor temos que especificar todos os campos que precisamos para este atualizador.
+		// Ele calcula nosso campo recém-criado usando a vida útil da partícula, então precisamos de "RectangleXY" e "Life"
       anúncio()
       (
-          \/\/ Este vai ser o nosso campo de "input"
+          // Este vai ser o nosso campo de "input"
           RequeridasFields.Add (Fields de Partículas.Life);
 
-          \/\/ Este é o campo que queremos atualizar
-          \/\/ Não faz parte dos campos básicos - criamos apenas para este atualizador
+          // Este é o campo que queremos atualizar
+          // Não faz parte dos campos básicos - criamos apenas para este atualizador
           RequeridasFields.Add (CustomParticleFields.RectangleXY);
       }
 
-		\/\/ O método de atualização é chamado uma vez cada quadro e requer o atualizador para iterar sobre todas as partículas no pool e atualizar seus campos.
-		\/\/ Se o atualizador é um pós-updater ele vai se chamar **depois * ** gerando novas partículas para este quadro e pode substituir seus valores iniciais no mesmo quadro
-		\/\/ Se o atualizador não for um pós-updater ele será chamado **antes** de gerar novas partículas para este quadro e não pode substituir seus valores iniciais para o primeiro quadro
+		// O método de atualização é chamado uma vez cada quadro e requer o atualizador para iterar sobre todas as partículas no pool e atualizar seus campos.
+		// Se o atualizador é um pós-updater ele vai se chamar **depois * ** gerando novas partículas para este quadro e pode substituir seus valores iniciais no mesmo quadro
+		// Se o atualizador não for um pós-updater ele será chamado **antes** de gerar novas partículas para este quadro e não pode substituir seus valores iniciais para o primeiro quadro
       override público void Update (float dt, ParticlePool pool)
       (
 			...
@@ -476,20 +476,20 @@ anula de sobreposição inseguro público Inicialize(PartePool pool, int startId
 </source>
 <target xml:lang="pt">override público void Update (float dt, ParticlePool pool)
 (
-  \/\/ Certifique-se de que os campos existem e evite o acesso à memória ilegal
+  // Certifique-se de que os campos existem e evite o acesso à memória ilegal
   if (!pool.FieldExists (ParticleFields.Life) | !pool.FieldExists (CustomParticleFields.RectangleXY)))
       voltar;
 
   vida selvagem Campo = piscina.GetField (Fields de Partícula.Life);
   var retangular Campo = piscina.GetField (CustomParticleFields.RectangleXY);
 
-  \/\/ Os lados X e Y dependem do pecado (tempo) e do cos(tempo)
+  // Os lados X e Y dependem do pecado (tempo) e do cos(tempo)
   foreach (partícula var em piscina)
   (
-      \/\/ A partícula continua a viver. Já está normalizado entre 0 e 1
+      // A partícula continua a viver. Já está normalizado entre 0 e 1
       vida selvagem Pi = partícula.Get (lifeField) * MathUtil. Pi;
 
-      \/\/ Defina o retângulo como uma função simples ao longo do tempo
+      // Defina o retângulo como uma função simples ao longo do tempo
       partícula. Set(rectangleField, novo Vector2((float)Math.Sin(lifePi), (float)Math.Cos (lifePi)));
   }
 }
@@ -524,7 +524,7 @@ anula de sobreposição inseguro público Inicialize(PartePool pool, int startId
 <trans-unit id="tu46" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>!Note<x id="2"/>
 The number of quads is important because the vertex buffer is allocated and mapped prior to writing out the vertex data. If we allocate smaller buffer it might result in illegal memory access and corruption.</source>
-<target xml:lang="pt">&lt;x1\/&gt;!Note&lt;x2\/&gt;
+<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
 O número de quads é importante porque o buffer de vértice é alocado e mapeado antes de escrever os dados do vértice. Se alocarmos um buffer menor pode resultar em acesso ilegal de memória e corrupção.</target>
 </trans-unit>
 <trans-unit id="tu47" xml:space="preserve">
@@ -597,32 +597,32 @@ O número de quads é importante porque o buffer de vértice é alocado e mapead
       var unitX = invViewX * (particleSize * 0.5f) * rectangleSize.X;
       var unitY = invViewY * (particleSize * 0.5f) * retangleSize.Y;
 
-      \/\/ Rotação de partículas. Valor positivo significa rotação no sentido horário.
+      // Rotação de partículas. Valor positivo significa rotação no sentido horário.
       se (tem Ângulo) { ... }
 
       var partícula Pos = central Pos - unitX + unitY;
       var uvCoord = novo Vector2(0, 0);
 
-      \/\/ 0f 0f
+      // 0f 0f
       vtxBuilder.SetAttribute(posAttribute, (IntPtr)(&amp;particlePos));
       vtxBuilder.SetAttribute(texAttribute, (IntPtr)(&amp;uvCoord));
       vtxBuilder.NextVertex();
 
-      \/\/ 1f 0f
+      // 1f 0f
       partículas de partículas Pos += unitX * 2;
       uvCoord.X = 1;
       vtxBuilder.SetAttribute(posAttribute, (IntPtr)(&amp;particlePos));
       vtxBuilder.SetAttribute(texAttribute, (IntPtr)(&amp;uvCoord));
       vtxBuilder.NextVertex();
 
-      \/\/ 1f 1f
+      // 1f 1f
       partículas de partículas Pos -= unitY * 2;
       uvCoord.Y = 1;
       vtxBuilder.SetAttribute(posAttribute, (IntPtr)(&amp;particlePos));
       vtxBuilder.SetAttribute(texAttribute, (IntPtr)(&amp;uvCoord));
       vtxBuilder.NextVertex();
 
-      \/\/ 0f 1f
+      // 0f 1f
       partículas de partículas Pos -= unitX * 2;
       uvCoord.X = 0;
       vtxBuilder.SetAttribute(posAttribute, (IntPtr)(&amp;particlePos));

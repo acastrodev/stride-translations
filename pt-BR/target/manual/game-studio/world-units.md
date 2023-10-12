@@ -4,7 +4,7 @@ Em Stride, uma unidade é de um metro. Isso é usado pelos motores de física e 
 
 Game Studio exibe unidades como uma grade.
 
-<x1\/>Grid no Editor de Cenas<x2\/>
+![Grid no Editor de Cenas](../get-started/media/scene-creation-basic-scene-in-stride.png)
 
 ## Ver também
 

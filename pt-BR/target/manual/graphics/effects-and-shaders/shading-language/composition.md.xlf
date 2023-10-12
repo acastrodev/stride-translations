@@ -8,8 +8,8 @@
 <trans-unit id="tu2" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Beginner<x id="2"/>
 <x id="3"/>Programmer<x id="4"/></source>
-<target xml:lang="pt">&lt;x1\/&gt;Introdução&lt;x2\/&gt;
-&lt;x3\/&gt;Programação&lt;x4\/&gt;</target>
+<target xml:lang="pt"><x id="1"/>Introdução<x id="2"/>
+<x id="3"/>Programação<x id="4"/></target>
 </trans-unit>
 <trans-unit id="tu3" xml:space="preserve">
 <source xml:lang="en">In addition to the inheritance system, SDSL introduces the concept of <g id="1">composition</g>. A composition is a member whose type is another shader class. It's defined the same way as variables.</source>
@@ -227,7 +227,7 @@ testShader : Base de dados
 	BaseShader comp1;
 };
  
-\/\/ shader resultante (representação)
+// shader resultante (representação)
 teste de sombreador
 (
 	baseStage flutuante Valor;
@@ -302,7 +302,7 @@ testShader : Base de dados
 	BaseShader comp1;
 };
  
-\/\/ shader resultante (representação)
+// shader resultante (representação)
 teste de sombreador
 (
 	flutuar BaseStageMethod()
@@ -437,10 +437,10 @@ testShader : Base de dados
 	CompShadercomp1;
 };
  
-\/\/ shader resultante (representação)
+// shader resultante (representação)
 teste de sombreador
 (
-	\/\/ método clonado
+	// método clonado
 	flutuar base_BaseStageMethod()
 	(
 		retorno 1.0;
@@ -451,12 +451,12 @@ teste de sombreador
 		retorno 1.0 + base_BaseStageMethod();
 	}
  
-	float BaseStageMethod() \/\/ in fact comp1_BaseStageMethod
+	float BaseStageMethod() // in fact comp1_BaseStageMethod
 	(
-		return 1.0 + comp0_BaseStageMethod; \/\/ 3.0f
+		return 1.0 + comp0_BaseStageMethod; // 3.0f
 	}
  
-	\/\/ não método clonado
+	// não método clonado
 	flutuar base_BaseStageMethodNotCloned()
 	(
 		retorno 1.0f;
@@ -464,7 +464,7 @@ teste de sombreador
  
 	flutuar BaseStageMethodNotCloned()
 	(
-		retorno 1.0f + base_BaseStageMethodNotCloned(); \/\/ 2.0f
+		retorno 1.0f + base_BaseStageMethodNotCloned(); // 2.0f
 	}
 };
 </target>
@@ -495,7 +495,7 @@ teste de sombreador
 </trans-unit>
 <trans-unit id="tu31" xml:space="preserve">
 <source xml:lang="en"><g id="1">Shader stage input/output automatic management</g></source>
-<target xml:lang="pt"><g id="1">Shader fase de entrada \/ saída gestão automática</g></target>
+<target xml:lang="pt"><g id="1">Shader fase de entrada / saída gestão automática</g></target>
 </trans-unit>
 <trans-unit id="tu32" xml:space="preserve">
 <source xml:lang="en"><g id="1">Shader stages</g></source>

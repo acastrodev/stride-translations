@@ -6,9 +6,9 @@ Você usa scripts adicionando-os a entidades na cena como componentes. Stride ca
 
 Os scripts Stride são escritos em **C#**. Você pode editar scripts no Game Studio ou outro IDE (como Visual Studio). Os scripts são depurados no Visual Studio.
 
-<x1\/>Scripts<x2\/>
+![Scripts](media/scripting_intro.png)
 
-> <x1\/>!NOTE<x2\/>
+> [!NOTE]
 > Explicação C# está fora do âmbito desta documentação.
 
 Os scripts têm acesso aos principais módulos do motor Stride:

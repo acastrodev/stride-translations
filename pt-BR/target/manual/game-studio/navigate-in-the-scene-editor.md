@@ -1,17 +1,17 @@
 # Navegue no Editor de Cena
 
-<x1\/>Introdução<x2\/>
-<x3\/> Designer de nível <x4\/>
+<span class="badge text-bg-primary">Introdução</span>
+<span class="badge text-bg-success"> Designer de nível </span>
 
 Você pode se mover ao redor da cena e mudar a perspectiva da câmera do editor. Os eixos XYZ na parte inferior esquerda mostram sua orientação no espaço 3D.
 
-<x1\/> Orientação da faixa<x2\/>
+![ Orientação da faixa](media/navigate-in-a-scene-scene-orientation-gizmo.png)
 
 ## Mover-se em torno da cena
 
 Existem várias maneiras de mover a câmera do editor ao redor do Editor de cena.
 
-> <x1\/>!TIP<x2\/>
+> [!TIP]
 > Segurando a tecla **Shift** acelera o movimento.
 
 ### Voo
@@ -42,7 +42,7 @@ Segure **Alt** e o botão do mouse **left** e mova o **mouse**.
 
 O ponto de rotação é sempre o centro da tela. Para ajustar a distância ao centro, use a roda **mouse**.
 
-<x1\/>Rotation<x2\/>
+![Rotation](media/navigate-in-scene-orbital-rotation-schema.png)
 
 <video controls autoplay loop height="240" width="320">
                 <source src="media/navigate-in-scene-orbital-rotation.mp4" type="video/mp4">
@@ -58,33 +58,33 @@ Depois de selecionar uma entidade, pressione a tecla **F**. Isso faz zoom na ent
 
 Você também pode se concentrar clicando no ícone de vidro **magnificante** ao lado da entidade na Árvore da Entidade.
 
-<x1\/> Ícone <x2\/>
+![ Ícone ](media/focus-icon.png)
 
 
-> <x1\/>!TIP<x2\/>
+> [!TIP]
 > Focando e então orbitando com **Alt + botão esquerdo do mouse** é útil para inspecionar entidades.
 
 ### Controles
 
 | Acção | Controlo |
 -----------------------|--------------
-| Mexam-se | Setas + botão direito do mouse <p><x1\/>WASDQE chaves + botão direito do mouse </p></br><p> |
+| Mexam-se | Setas + botão direito do mouse <p><br>WASDQE chaves + botão direito do mouse </p></br><p> |
 | Olhe ao seu redor | Segure o botão direito do mouse + mover o mouse |
 | Dolly | Botão do mouse médio + botão direito do mouse + mover o mouse |
 | Orbitação | Alt key + botão esquerdo do mouse |
-| Zoom | Roda de rato <p><x1\/>Alt + botão direito do mouse + mover mouse</p></br> |
+| Zoom | Roda de rato <p><br>Alt + botão direito do mouse + mover mouse</p></br> |
 | Pan | Botão do mouse médio + mover o mouse |
 | Foco | F (com entidade selecionada) |
 
-> <x1\/>!TIP<x2\/>
+> [!TIP]
 > Você pode alterar os controles do navegador de cena em **Edit > Configurações** em ** Editor de faixa > Chaves de ligação **.
-> <x3\/>Key encadernações<x4\/>
+> ![Key encadernações](media/settings-key-bindings.png)
 
 ## Alterar a perspectiva do editor da câmera
 
 Você pode alterar a perspectiva do editor de câmera usando o **view câmera gizmo** no canto superior direito do Editor de cena.
 
-<x1\/>Ver câmera gizmo<x2\/>
+![Ver câmera gizmo](media/navigate-in-a-scene-view-camera-gizmo.png)
 
 ### Câmera Snap para posição
 
@@ -102,12 +102,12 @@ Para alterar o ângulo da câmera do editor, clique no rosto, borda ou canto cor
 
 ## Opções de câmera
 
-> <x1\/>!Note<x2\/>
+> [!Note]
 > Esta página explica como usar a câmera Scene Editor. Para obter informações sobre como usar câmeras em seu jogo, veja [Graphics — Cameras](../graphics/cameras/index.md).
 
 Para exibir as opções de câmera do Editor de cena, clique no ícone **camera** no canto superior direito do Editor de cena.
 
-<x1\/>Switch para ortográfico<x2\/>
+![Switch para ortográfico](../get-started/media/switch-to-orthographic.png)
 
 ### Visão visual e ortográfico
 
@@ -115,9 +115,9 @@ Para exibir as opções de câmera do Editor de cena, clique no ícone **camera*
 
 Em **ortográfico view**, os objetos são sempre do mesmo tamanho, não importa quão longe sua distância da câmera. Linhas paralelas nunca tocam, e não há ponto de fuga. É fácil dizer se os objetos estão alinhados exatamente na vista ortográfica.
 
-<x1\/> Diagrama perspectivo e ortográfico<x2\/>
+![ Diagrama perspectivo e ortográfico](media/perspective-orthographic-diagram.png)
 
-<x1\/> Pontos de vista perspectivos e ortográficos<x2\/>
+![ Pontos de vista perspectivos e ortográficos](media/perspective-and-orthographic-views.png)
 
 Você também pode alternar entre a perspectiva e as vistas ortográficas clicando no **view câmera gizmo** como ele enfrenta você.
 
@@ -139,7 +139,7 @@ Os planos próximos e distantes determinam onde a visão da câmera começa e te
 
 Game Studio torna a área entre os planos próximos e distantes.
 
-<x1\/> Camera position<x2\/>
+![ Camera position](../get-started/media/camera-position.png)
 
 #### Velocidade da câmera
 

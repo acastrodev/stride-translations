@@ -1,8 +1,8 @@
 # Atualizadores de partículas
 
-<x1\/> Intermediário <x2\/>
-<x3\/>Artista <x4\/>
-<x5\/>Programação<x6\/>
+<span class="badge text-bg-primary">Intermediário</span>
+<span class="badge text-bg-success">Artista </span>
+<span class="badge text-bg-success">Programação</span>
 
 Depois que uma partícula aparece, ela pode mudar ao longo do tempo antes de desaparecer. **Updaters** agem em todas as partículas vivas ao longo do tempo, alterando atributos como posição, velocidade, cor e assim por diante. Por exemplo, uma força de gravidade atualiza a velocidade da partícula a uma taxa constante, acelerando-a para o chão.
 
@@ -12,7 +12,7 @@ Stride apresenta vários atualizadores embutidos. A amostra [custom partículas]
 
 Várias propriedades são comuns em muitos atualizadores.
 
-<x1\/>media\/particles-reference-updaters-11.png<x2\/>
+![media/particles-reference-updaters-11.png](media/particles-reference-updaters-11.png)
 
 | Property | Descrição
 |-----------------
@@ -26,11 +26,11 @@ Várias propriedades são comuns em muitos atualizadores.
 
 ## Colher
 
-<x1\/>media\/particles-reference-updaters-5.gif<x2\/>
+![media/particles-reference-updaters-5.gif](media/particles-reference-updaters-5.gif)
 
 A **collider** é um atualizador que muda a posição e a velocidade da partícula quando colide com uma forma predefinida.
 
-<x1\/>media\/particles-reference-updaters-3.png<x2\/>
+![media/particles-reference-updaters-3.png](media/particles-reference-updaters-3.png)
 
 | Propriedade | Descrição |
 | -------- |--------
@@ -42,11 +42,11 @@ A **collider** é um atualizador que muda a posição e a velocidade da partícu
 
 ## Campo de força
 
-<x1\/>media\/particles-reference-updaters-6.gif<x2\/>
+![media/particles-reference-updaters-6.gif](media/particles-reference-updaters-6.gif)
 
 O campo **force** é definido por uma forma delimitadora e vários vetores de força que operam nas partículas com base na sua posição relativa à forma de ligação.
 
-<x1\/>media\/particles-reference-updaters-1.png<x2\/>
+![media/particles-reference-updaters-1.png](media/particles-reference-updaters-1.png)
 
 | Property | Descrição
 | --------- | -
@@ -66,7 +66,7 @@ Partículas mais próximas do que o início de queda são sempre afetadas com o 
 
 Coeficiente para partículas entre mudanças linearmente:
 
-<x1\/>media\/particles-reference-updaters-2.png<x2\/>
+![media/particles-reference-updaters-2.png](media/particles-reference-updaters-2.png)
 
 Por exemplo, se a forma delimitação é uma esfera com um raio de 10m, as partículas dentro de 1m de seu centro (0,1 x 10m) serão movidas com força total. Após a distância de 1m a força diminui linearmente até atingir zero a 9m de distância (0,9 x 10m). Depois disso, as forças não afetam a partícula.
 
@@ -74,9 +74,9 @@ Por exemplo, se a forma delimitação é uma esfera com um raio de 10m, as part�
 
 #### Esfera
 
-<x1\/>media\/particles-reference-updaters-7.png<x2\/>
+![media/particles-reference-updaters-7.png](media/particles-reference-updaters-7.png)
 
-<x1\/>Licença de imagem: <x1\/>CC-BY-SA 4.0<x2\/>, imagem de esfera da <x1\/>"Sphere wireframe" work<x2\/> por <x1\/>Geek3<x2\/> abaixo <x1\/>CC-BY-SA 3.0<x2\/><x3\/>
+<sub>Licença de imagem: <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA 4.0</a>, imagem de esfera da <a href="https://commons.wikimedia.org/wiki/File:Sphere_wireframe_10deg_6r.svg">"Sphere wireframe" work</a> por <a href="https://commons.wikimedia.org/wiki/User:Geek3">Geek3</a> abaixo <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA 3.0</a></sub>
 
 Quando a forma de amarração é uma esfera, a distância de decadência é baseada na distância radial da partícula do centro da esfera. Se a esfera é dimensionada para um elipsoide, esta distância também é dimensionada. A distância é relativa ao raio, sendo 1.0 a superfície da esfera.
 
@@ -84,7 +84,7 @@ O vetor de força direcionada é paralelo ao eixo Y local da esfera. O vetor de 
 
 #### Caixa
 
-<x1\/>media\/particles-reference-updaters-8.png<x2\/>
+![media/particles-reference-updaters-8.png](media/particles-reference-updaters-8.png)
 
 Quando a forma de amarração é uma caixa, a distância de escoamento é a mais longa das três distâncias nos eixos X, Y e Z. A distância é relativa aos tamanhos da caixa, sendo 1.0 a superfície da caixa.
 
@@ -92,7 +92,7 @@ O vetor de força direcionado é paralelo ao eixo Y local da caixa. O vetor de f
 
 #### Cilindro
 
-<x1\/>media\/particles-reference-updaters-9.png<x2\/>
+![media/particles-reference-updaters-9.png](media/particles-reference-updaters-9.png)
 
 Quando a forma de amarração é um cilindro, a distância de escoamento é baseada na distância radial da partícula do eixo Y local do cilindro. A altura da partícula (posição no eixo Y) é ignorada a menos que a partícula esteja fora do cilindro, caso em que a distância é sempre 1.
 
@@ -100,9 +100,9 @@ O vetor de força direcionado é paralelo ao eixo Y local do cilindro. O vetor d
 
 #### Torus
 
-<x1\/>media\/particles-reference-updaters-10.png<x2\/>
+![media/particles-reference-updaters-10.png](media/particles-reference-updaters-10.png)
 
-<x1\/>Licença de imagem: <x1\/>GFDL<x2\/>, <x1\/>CC-BY-SA 4.0<x2\/>, torus imagem da <x1\/> "A simple Torus" work<x2\/> by Yassine Mrabet under GFDL, <x1\/>CC-BY-SA 3.0<x2\/><x3\/>
+<sub>Licença de imagem: <a href="https://gnu.org/licenses/fdl.html">GFDL</a>, <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA 4.0</a>, torus imagem da <a href="https://commons.wikimedia.org/wiki/File:Simple_Torus.svg"> "A simple Torus" work</a> by Yassine Mrabet under GFDL, <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA 3.0</a></sub>
 
 Quando a forma delimitação é um toro, a natureza do campo muda completamente. A distância de queda é baseada na distância radial da partícula do círculo interno do torus (eixo de revolução, mostrado em vermelho), escolhendo um ponto no círculo mais próximo da partícula.
 
@@ -114,11 +114,11 @@ Enquanto a matemática é um pouco complicada, usar o campo de força torus não
 
 O **gravity updater** é uma força simplificada que afeta todas as partículas, independentemente de sua posição, com um vetor de força constante que não escala ou gira. É editável, então você pode usá-lo em projetos com diferentes escalas e comportamentos.
 
-<x1\/>media\/particles-reference-updaters-4.png<x2\/>
+![media/particles-reference-updaters-4.png](media/particles-reference-updaters-4.png)
 
 A força de gravidade ignora a maioria das propriedades, como deslocamento e herança, e só usa os seguintes atributos:
 
-| Property | Descrição<x1\/>
+| Property | Descrição  
 | ----------- | --
 | Aceleração gravitacional | O vetor da força gravitacional que define a aceleração para todas as partículas afetadas. O valor padrão corresponde à gravidade média na Terra.
 

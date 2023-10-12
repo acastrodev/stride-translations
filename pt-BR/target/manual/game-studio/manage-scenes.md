@@ -1,20 +1,20 @@
 # Gerenciar cenas
 
-<x1\/>Introdução<x2\/>
-<x3\/>Programação<x4\/>
-<x5\/>Designer<x6\/>
+<span class="badge text-bg-primary">Introdução</span>
+<span class="badge text-bg-success">Programação</span>
+<span class="badge text-bg-success">Designer</span>
 
 As cenas e entidades são organizadas em uma hierarquia, com a cena **root** no topo. Esta hierarquia é exibida no **Entity Tree** no Editor de cenas à esquerda.
 
-<x1\/>Cerca de hierarquia cene<x2\/>
+![Cerca de hierarquia cene](media/scene-hierarchy-tree.png)
 
 A cena raiz contém todas as cenas e entidades em seu jogo. Deve conter entidades comuns que as outras cenas e entidades usam, como scripts de lógica do jogo.
 
-<x1\/>Esquema hierarquizado <x2\/>
+![Esquema hierarquizado ](media/scene-hierarchy-diagram.png)
 
 As cenas são mantidas em pastas diferentes. Isso significa que pessoas diferentes podem trabalhar nelas sem sobrescrever o trabalho um do outro.
 
-> <x1\/>!Note<x2\/>
+> [!Note]
 > Quando as cenas são carregadas no tempo de execução, suas cenas de **child não são carregadas automaticamente demais**. Você tem que carregar cenas de crianças em código. Para obter mais informações, consulte as cenas [Load](load-scenes.md).
 
 ## Definir cenas de pais e filhos
@@ -29,7 +29,7 @@ Há várias maneiras de fazer uma cena uma criança de outra cena:
 
 * Na cena **Property Grid** (à direita por padrão), ao lado de **Parent**, especifique a cena que deseja ser o pai da cena.
 
-   <x1\/>Propriedades cena pai<x2\/>
+   ![Propriedades cena pai](media/properties-parent-scene.png)
 
 ## Defina a cena padrão
 
@@ -37,15 +37,15 @@ O **default cena** é a cena Stride carrega no tempo de execução. Você pode d
 
 1. No **Solution Explorer** (o painel inferior esquerdo por padrão), selecione a pasta **Assets**.
 
-   <x1\/>Select Assets pasta asset<x2\/>
+   ![Select Assets pasta asset](media/select-asset-folder.png)
 
 2. No **Asset View** (o painel inferior por padrão), selecione o ativo **GameSettings**.
 
-   <x1\/>Selecionar configurações de jogo asset<x2\/>
+   ![Selecionar configurações de jogo asset](media/select-game-settings-asset.png)
 
-3. No **Property Grid** (o painel direito por padrão), ao lado de **Default Scene**, clique em <x1\/>Hand icon<x2\/> (**Select an asset**).
+3. No **Property Grid** (o painel direito por padrão), ao lado de **Default Scene**, clique em ![Hand icon](~/manual/game-studio/media/hand-icon.png) (**Select an asset**).
 
-   <x1\/> Definir a cena padrão<x2\/>
+   ![ Definir a cena padrão](media/game-settings-default-scene.png)
 
    A janela **Selecione um ativo** abre.
 
@@ -61,7 +61,7 @@ A cena **active** é que as entidades de cena são adicionadas quando você as d
 
 Para definir a cena ativa, **Entity Tree** (esquerda por padrão), clique com o botão direito do mouse na cena e selecione ** cena ativa**.
 
-<x1\/> Set active cena<x2\/>
+![ Set active cena](media/set-active-scene.png)
 
 A cena ativa não tem efeito no tempo de execução.
 
@@ -71,14 +71,14 @@ Você pode bloquear cenas e entidades para que eles não possam ser selecionados
 
 Para bloquear ou desbloquear uma cena ou entidade, na Árvore de Entidade, clique no ícone **padlock**.
 
-<x1\/>Padlock icon<x2\/>
+![Padlock icon](media/lock-scene-or-entity.png)
 
-> <x1\/>!Tip<x2\/>
+> [!Tip]
 > Quando você bloqueia uma cena, todas as cenas de crianças e entidades também estão bloqueadas. Para bloquear uma entidade junto com suas entidades de criança, segure **Ctrl** e clique no ícone do cadeado.
 
 Os itens bloqueados têm um ícone ** dourado bloqueado padlock** na Árvore da Entidade.
 
-<x1\/>Entendimento linchado<x2\/>
+![Entendimento linchado](media/locked-entity.png)
 
 ## Carregar e descarregar cenas no Editor de cenas
 
@@ -86,17 +86,17 @@ Você pode carregar e descarregar cenas (com todas as cenas e entidades de crian
 
 As capturas de tela abaixo mostram uma cena raiz com cenas de crianças carregadas e descarregadas. A cena raiz contém entidades que todas as cenas usam, incluindo o [skybox](../graphics/textures/skyboxes-and-backgrounds.md), [scripts](../scripts/index.md), asteroides e o personagem do jogador. As cenas infantis são seções de nível.
 
-<x1\/> cenas carregadas e carregadas<x2\/>
+![ cenas carregadas e carregadas](media/scenes-unloaded.jpg)
 
 Para carregar ou descarregar uma cena, no **Scene Editor**, no **Entity Tree** à esquerda, ao lado da cena que pretende carregar ou descarregar, clique no ícone **eye**.
 
-<x1\/>Load cena icon<x2\/>
+![Load cena icon](media/load-unload-scene-icon.png)
 
 ## Mover uma cena
 
 Como as cenas não são entidades, elas não têm componentes de transformação. No entanto, você pode mover uma cena usando sua propriedade **offset**.
 
-<x1\/>Scene offset property<x2\/>
+![Scene offset property](media/scene-offset.png)
 
 Para mover uma cena no tempo de execução, use:
 

@@ -8,16 +8,16 @@
 <trans-unit id="tu2" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Beginner<x id="2"/>
 <x id="3"/>Programmer<x id="4"/></source>
-<target xml:lang="pt">&lt;x1\/&gt;Introdução&lt;x2\/&gt;
-&lt;x3\/&gt;Programação&lt;x4\/&gt;</target>
+<target xml:lang="pt"><x id="1"/>Introdução<x id="2"/>
+<x id="3"/>Programação<x id="4"/></target>
 </trans-unit>
 <trans-unit id="tu3" xml:space="preserve">
 <source xml:lang="en"><g id="1">Non-spatialized audio</g> sounds the same throughout the scene, regardless of the position of entities (such as the player camera). It's stereo and moves along a single axis (usually the X-axis). Unlike <g id="2">spatialized audio</g>, the <g id="3">volume</g>, <g id="4">pitch</g> (<g id="5">frequency</g>), and other parameters of spatialized audio don't change. This is useful, for example, for background music and menu sound effects.</source>
-<target xml:lang="pt"><g id="1"> Áudio não espacial </g> soa o mesmo ao longo da cena, independentemente da posição de entidades (como a câmera do jogador). É estéreo e se move ao longo de um único eixo (geralmente o eixo X). Ao contrário de <g id="2">spatialized audio</g>, o <g id="3">volume</g>, <g id="4">pitch</g> (<g id="5">frequência</g>), e outros parâmetros de áudio espacial não mudam. Isso é útil, por exemplo, para efeitos de som de música de fundo e menu.</target>
+<target xml:lang="pt"><g id="1">Áudio não espacial</g> soa o mesmo ao longo da cena, independentemente da posição de entidades (como a câmera do jogador). É estéreo e se move ao longo de um único eixo (geralmente o eixo X). Ao contrário de <g id="2">spatialized audio</g>, o <g id="3">volume</g>, <g id="4">pitch</g> (<g id="5">frequência</g>), e outros parâmetros de áudio espacial não mudam. Isso é útil, por exemplo, para efeitos de som de música de fundo e menu.</target>
 </trans-unit>
 <trans-unit id="tu4" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Non-spatialized audio<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt; Não-espacializado áudio&lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/> Não-espacializado áudio<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu5" xml:space="preserve">
 <source xml:lang="en">Non-spatialized audio requires no <g id="1">audio emitters</g> or <g id="2">audio listeners</g>.</source>
@@ -41,7 +41,7 @@
 </trans-unit>
 <trans-unit id="tu10" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Include in build as root asset<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt;Incluir em compilação como root asset&lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/>Incluir em compilação como root asset<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu11" xml:space="preserve">
 <source xml:lang="en">If the menu option reads <g id="1">Do not include in build as root asset</g>, the option is already selected and you don't need to change it.</source>
@@ -123,7 +123,7 @@
 <source xml:lang="en"><x id="1"/>!Note<x id="2"/>
 If the sound is already playing, Stride ignores all additional calls to <g id="3">SoundInstance.Play</g>.
 The same goes for <g id="4">SoundInstance.Pause</g> (when a sound is already paused) and <g id="5">SoundInstance.Stop</g> (when a sound is already stopped).</source>
-<target xml:lang="pt">&lt;x1\/&gt;!Note&lt;x2\/&gt;
+<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
 Se o som já estiver tocando, Stride ignora todas as chamadas adicionais para <g id="3">SoundInstance. Play</g>.
 O mesmo vale para <g id="4">SoundInstance. Pause</g> (quando um som já é pausado) e <g id="5">SoundInstance. Pare</g> (quando um som já está parado).</target>
 </trans-unit>
@@ -168,19 +168,19 @@ O mesmo vale para <g id="4">SoundInstance. Pause</g> (quando um som já é pausa
 </source>
 <target xml:lang="pt">override público async Task Execute()
 (
-    \/\/ Carregar o som
+    // Carregar o som
     Sound musicSound = Content.Load&lt;Sound&gt;("MySound");
             
-    \/\/ Criar uma instância de som
+    // Criar uma instância de som
     SoundInstance music = musicSound.CreateInstance();
             
-    \/\/ Loop
+    // Loop
     música. IsLooping = true;
 
-    \/\/ Defina o volume
+    // Defina o volume
     música. Volume = 0,25f;
 
-    \/\/ Jogue a música
+    // Jogue a música
     music.Play();
 }
 </target>
@@ -240,13 +240,13 @@ O mesmo vale para <g id="4">SoundInstance. Pause</g> (quando um som já é pausa
 
     atualização()
     (
-        \/\/ Se a música não estiver tocando, mas deve ser, tocar a música.
+        // Se a música não estiver tocando, mas deve ser, tocar a música.
         if (PlayMusic &amp; musicInstance. PlayState! PlayState.Playing)
         (
             musicInstance.Play();
         }
 
-        \/\/ Se a música está tocando, mas não deve ser, pare a música.
+        // Se a música está tocando, mas não deve ser, pare a música.
         mais se (!PlayMusic)
         (
             musicInstance.Stop();
@@ -265,7 +265,7 @@ O mesmo vale para <g id="4">SoundInstance. Pause</g> (quando um som já é pausa
 </trans-unit>
 <trans-unit id="tu43" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Select an entity<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt;Selecione uma entidade&lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/>Selecione uma entidade<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu44" xml:space="preserve">
 <source xml:lang="en">In the <g id="1">Property Grid</g>, click <g id="2">Add component</g> and select your script:</source>
@@ -273,7 +273,7 @@ O mesmo vale para <g id="4">SoundInstance. Pause</g> (quando um som já é pausa
 </trans-unit>
 <trans-unit id="tu45" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Click Add component<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt;Clique Adicionar componente&lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/>Clique Adicionar componente<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu46" xml:space="preserve">
 <source xml:lang="en">The script is added to the entity.</source>
@@ -289,15 +289,15 @@ O mesmo vale para <g id="4">SoundInstance. Pause</g> (quando um som já é pausa
 </trans-unit>
 <trans-unit id="tu49" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Drag and drop an audio asset<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt;Drag e soltar um ativo de áudio&lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/>Drag e soltar um ativo de áudio<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu50" xml:space="preserve">
 <source xml:lang="en">Alternatively, click <x id="1"/>Hand icon<x id="2"/> (<g id="3">Select an asset</g>):</source>
-<target xml:lang="pt">Alternativamente, clique em &lt;x1\/&gt;Hand icon&lt;x2\/&gt; (<g id="3">Select an asset</g>):</target>
+<target xml:lang="pt">Alternativamente, clique em <x id="1"/>Hand icon<x id="2"/> (<g id="3">Select an asset</g>):</target>
 </trans-unit>
 <trans-unit id="tu51" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Pick up an asset<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt; Enfiar um ativo&lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/> Enfiar um ativo<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu52" xml:space="preserve">
 <source xml:lang="en">Then choose the audio asset you want to use:</source>
@@ -305,7 +305,7 @@ O mesmo vale para <g id="4">SoundInstance. Pause</g> (quando um som já é pausa
 </trans-unit>
 <trans-unit id="tu53" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Select an audio asset<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt;Selecione um ativo de áudio&lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/>Selecione um ativo de áudio<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu54" xml:space="preserve">
 <source xml:lang="en">See also</source>

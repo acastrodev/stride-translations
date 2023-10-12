@@ -12,48 +12,48 @@ Para implantar seu jogo em dispositivos iOS, você precisa conectar o dispositiv
 
 3. Certifique-se de que a plataforma iOS é adicionada ao seu projeto Stride. Para fazer isso, no Game Studio, clique com o botão direito do mouse na solução, selecione **Update package > Update Platforms** e certifique-se de **iOS** é selecionado.
 
-   <x1\/> Adicionar iOS<x2\/>
+   ![ Adicionar iOS](media/add-ios-platform.png)
 
    Para obter mais informações sobre como adicionar plataformas no Game Studio, consulte [Adicionar ou remover uma plataforma](add-or-remove-a-platform.md).
 
 4. Abra sua solução no Visual Studio.
 
-   > <x1\/>!Tip<x2\/>
-   > Para abrir seu projeto no Visual Studio do Game Studio, na barra de ferramentas Game Studio, clique em <x3\/>Open in IDE<x4\/> (**Open in IDE**).
+   > [!Tip]
+   > Para abrir seu projeto no Visual Studio do Game Studio, na barra de ferramentas Game Studio, clique em ![Open in IDE](../scripts/media/launch-your-game-ide-icon.png) (**Open in IDE**).
 
-5. Na barra de ferramentas do Visual Studio, clique em <x1\/>Xamarin botão<x2\/>.
+5. Na barra de ferramentas do Visual Studio, clique em ![Xamarin botão](media/xamarin-button.png).
 
-   <x1\/>Conectar a Xamarin<x2\/>
+   ![Conectar a Xamarin](media/xamarin-button-in-toolbar.png)
 
    **Xamarin Agent** abre.
 
-   <x1\/>Xamarin agente<x2\/>
+   ![Xamarin agente](media/xamarin-agent.png)
 
 6. Conecte-se ao Mac via Xamarin. Para obter instruções, consulte [Introdução ao Xamarin iOS para Visual Studio](https://developer.xamarin.com/guides/ios/getting_started/installation/windows/introduction_to_xamarin_ios_for_visual_studio/) na documentação do Xamarin.
 
 7. No **Solution Explorer**, clique com o botão direito do mouse no projeto e selecione ** Set as StartUp Project**.
 
-   <x1\/>Configurar como startup<x2\/>
+   ![Configurar como startup](media/set-ios-as-startup-project.png)
 
 8. No menu **Solution Platforms**, selecione **iPhone** para construir em dispositivos iOS físicos (incluindo iPad), ou **iPhoneSimulator** para construir para o simulador. O simulador emula dispositivos iOS em sua máquina, mas tem algumas desvantagens (veja abaixo).
 
-   <x1\/> Plataforma de solução<x2\/>
+   ![ Plataforma de solução](media/solution-platform.png)
 
 9. Na barra de ferramentas do Visual Studio, selecione o dispositivo iOs para o qual você deseja construir.
 
-   <x1\/>Select device<x2\/>
+   ![Select device](media/select-ios-device-dropdown.png)
 
 10. Do **Solution Explorer**, aberto `info.plist`.
 
-   <x1\/>Select info file<x2\/>
+   ![Select info file](media/info-plist.png)
 
 11. Se você quiser criar uma compilação de lançamento, defina o identificador **bundle**. Este é um ID único para sua aplicação.
 
-   <x1\/>Select bundle ID<x2\/>
+   ![Select bundle ID](media/bundle-identifier.png)
 
-12. Se você quiser implantar no iPad, abaixo de ** Família de dispositivos com certificação**, clique em <x1\/> Adicionar ícone de dispositivo<x2\/>.
+12. Se você quiser implantar no iPad, abaixo de ** Família de dispositivos com certificação**, clique em ![ Adicionar ícone de dispositivo](media/add-device-icon.png).
 
-   <x1\/> Adicionado iPad<x2\/>
+   ![ Adicionado iPad](media/ipad-device-added.png)
 
 ## Acelere a compilação em dispositivos iOS
 
@@ -65,7 +65,7 @@ Demora muito tempo para construir em dispositivos iOS. Isso é porque:
 
 Para compilar o código mais rapidamente, no Solution Explorer, clique com o botão direito do mouse no projeto iOS e selecione **Properties**.
 
-<x1\/>Projeto propriedades<x2\/>
+![Projeto propriedades](media/ios-project-properties.png)
 
 * Sob **Linker Behavior**, selecione ** Não link**.
 * Em **Arquiteturas suportadas**, selecione apenas a arquitetura do dispositivo de depuração.
@@ -92,11 +92,11 @@ Nosso fluxo de trabalho recomendado é:
 
 1. Execute o aplicativo no Windows. Isso cria permutações de shader.
 
-   <x1\/> Novos efeitos<x2\/>
+   ![ Novos efeitos](../graphics/effects-and-shaders/media/new-effects-to-import.png)
 
 2. Importar os novos shaders no Game Studio. Isso gera um log de efeito.
 
-   <x1\/> Efeito log<x2\/>
+   ![ Efeito log](../graphics/effects-and-shaders/media/effect-log.png)
 
 3. Salvar e executar o jogo no iOS.
 

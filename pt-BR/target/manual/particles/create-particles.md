@@ -1,20 +1,20 @@
 # Criar partículas
 
-<x1\/>Introdução<x2\/>
-<x3\/>Artista <x4\/>
-<x5\/>Programação<x6\/>
+<span class="badge text-bg-primary">Introdução</span>
+<span class="badge text-bg-success">Artista </span>
+<span class="badge text-bg-success">Programação</span>
 
 Para criar um sistema de partículas, clique com o botão direito do mouse na cena ou Entity Tree, selecione **Particle System** e escolha uma predefinição (**Empty**, **Simple**, **Fountain** ou **Ribbon**).
 
-<x1\/>media\/particles-reference-editor-1.png<x2\/>
+![media/particles-reference-editor-1.png](media/particles-reference-editor-1.png)
 
 Game Studio cria uma entidade com um componente **Transform** e um componente **Particle System** com sua predefinição escolhida. As entidades de partículas são representadas com um ícone de chama.
 
-<x1\/>media\/particles-reference-editor-2.png<x2\/>
+![media/particles-reference-editor-2.png](media/particles-reference-editor-2.png)
 
 Alternativamente, você pode adicionar um componente de partícula a uma entidade existente. Com a entidade selecionada, no **Property Grid**, clique em **Add component** e selecione **Particle System**.
 
-<x1\/> Adicionar sistema de partículas <x2\/>
+![ Adicionar sistema de partículas ](tutorials/media/add-particle-system.png)
 
 Game Studio adiciona um sistema de partículas vazio para a entidade.
 
@@ -30,7 +30,7 @@ Se você quiser que dois sistemas de partículas compartilhem um componente de t
 
 Com uma entidade de sistema de partículas selecionada, você pode editar suas propriedades no **Property Grid**, assim como qualquer outra entidade.
 
-<x1\/>media\/particles-reference-editor-3.png<x2\/>
+![media/particles-reference-editor-3.png](media/particles-reference-editor-3.png)
 
 | Propriedade | Descrição |
 | ---------------- | -------------

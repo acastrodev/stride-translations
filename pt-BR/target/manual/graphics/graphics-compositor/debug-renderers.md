@@ -2,19 +2,19 @@
 
 O renderizador **debug** é um renderizador de placeholder que você pode usar com scripts para imprimir informações de depuração. Por padrão, o renderizador de depuração é incluído no compositor gráfico como uma criança do ponto de entrada do jogo.
 
-<x1\/>Debug renderer<x2\/>
+![Debug renderer](media/debug-renderer.png)
 
 ## Criar um renderizador de depuração
 
 Para criar um renderizador de depuração, clique com o botão direito do mouse no editor de compositores gráficos e selecione **Debug renderer**.
 
-<x1\/>Criar renderizador de depuração<x2\/>
+![Criar renderizador de depuração](media/create-debug-renderer.png)
 
 ## Conecte um renderizador de depuração a um ponto de entrada
 
 Na maioria dos casos, você deseja que o renderizador de depuração compartilhe um ponto de entrada com um ou mais renderizadores avançados. Para fazer isso, use uma coleção de renderizador **scene** e selecione o renderizador de depuração e renderizador(s) para a frente como crianças, como na captura de tela abaixo:
 
-<x1\/>Debug renderer Property Grid<x2\/>
+![Debug renderer Property Grid](media/debug-renderer-property-setup.png)
 
 ## Use um renderizador de depuração
 
@@ -39,7 +39,7 @@ namespace MyGame
 
         override público async Task Execute()
         (
-        \/\/set up rendering in the debug entry point if we have it
+        //set up rendering in the debug entry point if we have it
         compositor var = SceneSystem.GraphicsCompositor;
         var debugRenderer =
             (compositor. Jogo como SceneCameraRenderer)?. Criança como SceneRendererCollection)?. Crianças. Onde..

@@ -1,22 +1,22 @@
 # Vignetação
 
-<x1\/>Introdução<x2\/>
-<x3\/>Artista <x4\/>
-<x5\/>Programação<x6\/>
+<span class="badge text-bg-primary">Introdução</span>
+<span class="badge text-bg-success">Artista </span>
+<span class="badge text-bg-success">Programação</span>
 
 O efeito **vignetting** escurece os ângulos ou as bordas de uma imagem.
 
-<x1\/>media\/8327874146_c17f7e2c94_m.jpg<x2\/>
+![media/8327874146_c17f7e2c94_m.jpg](media/8327874146_c17f7e2c94_m.jpg)
 
 Este é um artefato aparece com câmeras do mundo real. Você pode usá-lo em seu jogo para mudar o humor da cena ou focar no centro da imagem.
 
-<x1\/>media\/vignetting-2.png<x2\/>
+![media/vignetting-2.png](media/vignetting-2.png)
 
 ## Propriedades
 
 | Propriedade | Descrição |
 | -------- | ------------------
-| Montante | Montante\/força do efeito |
+| Montante | Montante/força do efeito |
 | Radius | Radius do vignette do centro da tela. Um baixo valor engrossa a fronteira e estreita o espaço central |
 | Cor | A cor vignette |
 

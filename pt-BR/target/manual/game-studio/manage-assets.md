@@ -1,6 +1,6 @@
 # Gerenciar ativos
 
-<x1\/>Introdução<x2\/>
+<span class="badge text-bg-primary">Introdução</span>
 
 Esta página explica como editar e gerenciar seus ativos.
 
@@ -12,23 +12,23 @@ Por exemplo, para mudar a cor de um ativo material::
 
 1. No **Asset View** (na parte inferior por padrão), selecione o material.
 
-   <x1\/>Selecionar material no Asset View<x2\/>
+   ![Selecionar material no Asset View](../get-started/media/edit-asset-sphere-material-asset-view-tab.png)
 
 2. Na Grade de Propriedade, sob **Shading > Diffuse**, ao lado de **Diffuse Map**, clique no **colored box**, que exibe a cor do ativo (amarelo neste exemplo).
 
    O picador de cores abre.
 
-   <x1\/>capador de cores e paleta<x2\/>
+   ![capador de cores e paleta](../get-started/media/edit-asset-color-picker-palette-diffuse.png)
 
 4. Selecione uma nova cor para o ativo.
 
-   <x1\/> Asset é agora vermelho<x2\/>
+   ![ Asset é agora vermelho](../get-started/media/edit-asset-color-change-selected-asset.png)
 
 O ** Asset Preview** (bottom right by default) exibe mudanças de ativos em tempo real.
 
 O **Asset View** indica ativos com mudanças não salvas com asteriscos (*).
 
-<x1\/> Alterações não salvas <x2\/>
+![ Alterações não salvas ](../get-started/media/asset-unsaved-changes.png)
 
 ## Editar ativos usando editores dedicados
 
@@ -43,7 +43,7 @@ Game Studio tem editores dedicados para os seguintes tipos de ativos:
 
 Por exemplo, você edita cenas no **Scene Editor**.
 
-<x1\/>Scene Editor<x2\/>
+![Scene Editor](media/manage-assets-scene-editor.png)
 
 Para abrir o editor dedicado para esses tipos de ativos:
 
@@ -55,19 +55,19 @@ Para abrir o editor dedicado para esses tipos de ativos:
 
 Recomendamos que você organize seus ativos em subpastas por tipo. Isso torna os projetos muito mais fáceis de gerenciar, especialmente quando eles se tornam grandes.
 
-<x1\/> Projeto organizado<x2\/>
+![ Projeto organizado](media/manage-assets-organized-project.png)
 
 Os ativos estão contidos na pasta **Assets** do seu pacote de projeto. Você pode ver o projeto no **Solution Explorer** (por padrão mostrado na parte inferior esquerda).
 
 * Para criar uma subpasta, clique com o botão direito do mouse na pasta pai e selecione **Create subfolder**.
 * Para mover um ativo, selecione um ou mais ativos no **Asset View** e arraste e solte-os para a pasta.
 
-> <x1\/>!NOTE<x2\/>
+> [!NOTE]
 > Quando você move um ativo, Game Studio atualiza todas as referências a outros ativos dentro do ativo.
 
-> <x1\/>!TIP<x2\/>
+> [!TIP]
 > Para ver a URL e o tipo de um ativo, mova o mouse sobre a miniatura de ativos.
-> <x3\/>Detalhes de novo ativo na guia Asset View<x4\/>
+> ![Detalhes de novo ativo na guia Asset View](../get-started/media/asset-creation-solution-explorer.png)
 
 ## Inclua ativos na compilação
 
@@ -82,9 +82,9 @@ Game Studio indica se um ativo está incluído com um ícone colorido na parte s
 
 | Cor | Estado |
 ------|--------
-| Azul <p><x1\/><x2\/>Blue<x3\/></p></br> | O ativo é um ativo raiz e incluído na compilação. |
-| Verde <p><x1\/><x2\/>Verde<x3\/></p></br> | O ativo é referenciado por um ativo raiz e incluído na compilação. |
-| Cinza <p><x1\/><x2\/>Gray<x3\/></p></br> | O ativo não está incluído na compilação. |
+| Azul <p><br>![Blue](media/manage-assets-reference-asset.png)</p></br> | O ativo é um ativo raiz e incluído na compilação. |
+| Verde <p><br>![Verde](media/manage-assets-include-asset.png)</p></br> | O ativo é referenciado por um ativo raiz e incluído na compilação. |
+| Cinza <p><br>![Gray](media/manage-assets-exclude-asset.png)</p></br> | O ativo não está incluído na compilação. |
 
 Se você planeja carregar um ativo em tempo de execução usando scripts, faça dele um ativo raiz. Para fazer isso:
 
@@ -92,13 +92,13 @@ Se você planeja carregar um ativo em tempo de execução usando scripts, faça 
 
 * clique com o botão direito do mouse no ativo e selecione **Incluir na compilação como ativo root**
 
-   <x1\/>Incluir em compilação como root asset<x2\/>
+   ![Incluir em compilação como root asset](media/right-click-include-in-build-as-root-asset.png)
 
 ## Opções de exibição de ativos
 
 Para alterar as opções de visualização de ativos, clique no ícone do olho na barra de ferramentas de visualização de ativos.
 
-<x1\/> Opções de visualização <x2\/>
+![ Opções de visualização ](../get-started/media/asset-view-options.png)
 
 Você pode:
 
@@ -120,7 +120,7 @@ Os filtros de tipo são filtros "ou". Por exemplo, se você filtrar por *type:an
 
    Game Studio exibe uma lista de filtros correspondentes (nome, tipo ou tag).
 
-   <x1\/>add-filter.png<x2\/>
+   ![add-filter.png](media/add-filter.png)
 
 2. Para filtrar por nome, pressione **Enter**.
 
@@ -130,13 +130,13 @@ Os filtros de tipo são filtros "ou". Por exemplo, se você filtrar por *type:an
 
 Você pode adicionar vários filtros. Os filtros de nome são verdes, os filtros de etiqueta são azuis e os filtros de tipo são laranja.
 
-<x1\/>filter-tags<x2\/>
+![filter-tags](media/filter-tags.png)
 
 ### Alternar filtros em e fora
 
 Para alternar um filtro dentro e fora sem removê-lo, clique nele. Os filtros desabilitados têm cores mais escuras.
 
-<x1\/>filter-tags<x2\/>
+![filter-tags](../get-started/media/disabled-filter-tags.png)
 
 ### Remover um filtro
 

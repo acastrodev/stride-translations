@@ -2,8 +2,8 @@
 
 [! INCLUÍDO [stride-studio-note](../../includes/under-construction-note.md)]
 
-<x1\/>Avançado<x2\/>
-<x3\/>Programação<x4\/>
+<span class="badge text-bg-primary">Avançado</span>
+<span class="badge text-bg-success">Programação</span>
 
 **Constraints** restringem os corpos rígidos a certos padrões de movimento. Por exemplo, uma articulação de joelho realista só pode se mover ao longo de um eixo e não pode dobrar para a frente.
 
@@ -22,7 +22,7 @@ Para uma demonstração das diferentes restrições, carregue o projeto de amost
 
 ## Criar uma restrição
 
-> <x1\/>!Note<x2\/>
+> [!Note]
 > Atualmente, você só pode usar restrições de scripts.
 
 Para criar uma restrição, use o método estático [Simulation](xref:Stride.Physics.Simulation) [CreateConstraint](xref:Stride.Physics.Simulation.CreateConstraint\(Stride.Physics.ConstraintTypes,Stride.Physics.RigidbodyComponent,Stride.Core.Mathematics.Matrix,System.Boolean\)):
@@ -34,7 +34,7 @@ CriarConstraint(Constraint) Tipos tipo, RigidbodyComponente rígido BodyA, Matri
 Isso liga [RigidBodyA](xref:Stride.Physics.Constraint.RigidBodyA) ao mundo em sua localização atual.
 O booleano [useReferenceFrameA](xref:Stride.Physics.Simulation.CreateConstraint\(Stride.Physics.ConstraintTypes,Stride.Physics.RigidbodyComponent,Stride.Core.Mathematics.Matrix,System.Boolean\)) especifica qual sistema de coordenadas o limite é aplicado (quer [RigidBodyA](xref:Stride.Physics.Constraint.RigidBodyA) ou o mundo).
 
-> <x1\/>!Note<x2\/>
+> [!Note]
 > * No caso de [ConstraintTypes.Point2Point](xref:Stride.Physics.ConstraintTypes), o quadro representa um pivô em A. Apenas o vetor de tradução é considerado. [useReferenceFrameA](xref:Stride.Physics.Simulation.CreateConstraint\(Stride.Physics.ConstraintTypes,Stride.Physics.RigidbodyComponent,Stride.Core.Mathematics.Matrix,System.Boolean\)) é ignorado.
 > * No caso de [ConstraintTypes.Hinge](xref:Stride.Physics.ConstraintTypes), o quadro representa um pivô em A e Eixo em A. Isso porque a dobradiça permite apenas um ângulo limitado de rotação entre o corpo rígido e o mundo.
 > * No caso de [ConstraintTypes.ConeTwist](xref:Stride.Physics.ConstraintTypes), [useReferenceFrameA](xref:Stride.Physics.Simulation.CreateConstraint\(Stride.Physics.ConstraintTypes,Stride.Physics.RigidbodyComponent,Stride.Core.Mathematics.Matrix,System.Boolean\)) é ignorado.
@@ -46,9 +46,9 @@ CriarConstraint(Constraint) Tipos tipo, RigidbodyComponent rigidBodyA, Rigidbody
 
 Este método liga [RigidBodyA](xref:Stride.Physics.Constraint.RigidBodyA) a [RigidBodyB](xref:Stride.Physics.Constraint.RigidBodyB).
 
-> <x1\/>!Note<x2\/>
+> [!Note]
 > * No caso de [ConstraintTypes.Point2Point](xref:Stride.Physics.ConstraintTypes), o quadro representa um pivô em A ou B. Apenas o vetor de tradução é considerado. [useReferenceFrameA](xref:Stride.Physics.Simulation.CreateConstraint\(Stride.Physics.ConstraintTypes,Stride.Physics.RigidbodyComponent,Stride.Core.Mathematics.Matrix,System.Boolean\)) é ignorado.
-> * No caso de [ConstraintTypes.Hinge](xref:Stride.Physics.ConstraintTypes) o quadro representa pivô em A\/B e Eixo em A\/B. Isto porque a dobradiça permite apenas um ângulo limitado de rotação entre o corpo rígido e o mundo neste caso.
+> * No caso de [ConstraintTypes.Hinge](xref:Stride.Physics.ConstraintTypes) o quadro representa pivô em A/B e Eixo em A/B. Isto porque a dobradiça permite apenas um ângulo limitado de rotação entre o corpo rígido e o mundo neste caso.
 > * No caso de [ConstraintTypes.ConeTwist](xref:Stride.Physics.ConstraintTypes), [useReferenceFrameA](xref:Stride.Physics.Simulation.CreateConstraint\(Stride.Physics.ConstraintTypes,Stride.Physics.RigidbodyComponent,Stride.Core.Mathematics.Matrix,System.Boolean\)) é ignorado.
 > * No caso de [ConstraintTypes.Gear](xref:Stride.Physics.ConstraintTypes), [useReferenceFrameA](xref:Stride.Physics.Simulation.CreateConstraint\(Stride.Physics.ConstraintTypes,Stride.Physics.RigidbodyComponent,Stride.Core.Mathematics.Matrix,System.Boolean\)) é ignorado. O quadro representa apenas o eixo em A ou B; somente o vetor de tradução (que deve conter o eixo) é usado.
 

@@ -1,16 +1,16 @@
 # Criar pacotes
 
-<x1\/> Intermediário <x2\/>
-<x3\/>Programação<x4\/>
+<span class="badge text-bg-primary">Intermediário</span>
+<span class="badge text-bg-success">Programação</span>
 
 ## Abra seu projeto no Visual Studio
 
-> <x1\/>!Note<x2\/>
+> [!Note]
 > Game Studio irá mais tarde apoiar a criação de pacotes NuGet diretamente.
 
 Primeiro de tudo, depois de salvar todas as suas mudanças, abra seu projeto com Visual Studio. Você pode facilmente fazer isso clicando no botão apropriado na barra de ferramentas:
 
-<x1\/> Projeto aberto em Visual Studio<x2\/>
+![ Projeto aberto em Visual Studio](../game-studio/media/open-project-in-visual-studio.png)
 
 Algumas coisas para cuidar:
 * Excluir ativos não-ecessários (i.e. GameSettings, etc...)
@@ -22,13 +22,13 @@ Algumas coisas para cuidar:
 
 2. Vá para a guia **Package** e edite versão do pacote, descrição, URL, etc.
 
-   <x1\/> Propriedades do pacote de configuração<x2\/>
+   ![ Propriedades do pacote de configuração](media/setup-package-properties.png)
 
 ## Pacote
 
 1. No **Solution Explorer**, clique com o botão direito do mouse no projeto e clique em **Pack**.
 
-   <x1\/>Pack project<x2\/>
+   ![Pack project](media/pack-project.png)
 
 2. Visual Studio irá construir e embalar o projeto. O resultado `.nupkg` deve estar em `bin\Debug` ou `bin\Release` pasta, dependendo da sua configuração.
 

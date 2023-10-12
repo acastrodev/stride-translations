@@ -1,11 +1,11 @@
 # SpriteBatch
 
-<x1\/>Avançado<x2\/>
-<x3\/>Programação<x4\/>
+<span class="badge text-bg-primary">Avançado</span>
+<span class="badge text-bg-success">Programação</span>
 
 Um lote de sprite é uma coleção de sprites (2D planos texturizados).
 
-> <x1\/>!Note<x2\/>
+> [!Note]
 > Lembre-se que você precisa colocar todo o código personalizado em um renderizador de cena [custom](../graphics-compositor/custom-scene-renderers.md) para incluí-lo na composição.
 
 ## Criar um lote de sprite
@@ -35,13 +35,13 @@ A classe @'Stride.Graphics.SpriteBatch' tem vários métodos de sorteio para def
 ** Código:** Desenho de um lote de sprite
 
 ```cs
-\/\/ iniciar as operações de lote de sprite
+// iniciar as operações de lote de sprite
 spriteBatch.Begin (GraphicsContext, SpriteSortMode.Immediate);
  
-\/\/ desenhar o sprite imediatamente
+// desenhar o sprite imediatamente
 spriteBatch.Draw(myTexture, new Vector2(10, 20));
  
-\/\/ terminar as operações de lote sprite
+// terminar as operações de lote sprite
 spriteBatch.End();
 ```
 
@@ -58,13 +58,13 @@ Para definir o modo, especifique-o no método @'Stride.Graphics.SpriteBatch.Begi
 ** Código:** Desenho diferido do lote sprite
 
 ```cs
-\/\/ iniciar as operações de lote de sprite
-spriteBatch.Begin(GraphicsContext); \/\/ mesmo que sprite Batch. Comece (GraphicsContext, SpriteSortMode.Deferido);
+// iniciar as operações de lote de sprite
+spriteBatch.Begin(GraphicsContext); // mesmo que sprite Batch. Comece (GraphicsContext, SpriteSortMode.Deferido);
 
-\/\/ armazenar a modificação do sprite
+// armazenar a modificação do sprite
 spriteBatch.Draw(myTexture, new Vector2(10, 20));
 
-\/\/ terminar as operações de lote sprite, desenhar todos os sprites
+// terminar as operações de lote sprite, desenhar todos os sprites
 spriteBatch.End();
 ```
 
@@ -82,22 +82,22 @@ Para uma lista completa, consulte a documentação API @'Stride.Graphics.SpriteB
 ** Código:** Mais complexo sprite lote desenho
 
 ```cs
-\/\/ iniciar as operações de lote de sprite
+// iniciar as operações de lote de sprite
 spriteBatch.Begin (GraphicsContext);
 rede de segurança Contagem = 10;
-var textureOffset = novo Vector2(float)graphicsDevice.BackBuffer.Width\/gridCount, (float)graphicsDevice.BackBuffer.Height\/gridCount);
-var textureOrigin = novo Vector2 (myTexture). Largura\/2.0f, myTexture.Height\/2.0f);
+var textureOffset = novo Vector2(float)graphicsDevice.BackBuffer.Width/gridCount, (float)graphicsDevice.BackBuffer.Height/gridCount);
+var textureOrigin = novo Vector2 (myTexture). Largura/2.0f, myTexture.Height/2.0f);
 
-\/\/ desenhar 100 sprites em uma grade 10x10 com uma rotação de 1,2 rad e uma escala de 0,5 para cada um deles
+// desenhar 100 sprites em uma grade 10x10 com uma rotação de 1,2 rad e uma escala de 0,5 para cada um deles
 para (int y = 0; y < gridCount; y++)
 (
     para (int x = 0; x < gridCount; x++)
     (
-        spriteBatch.Draw (UVTexture, novo Vector2(x * textureOffset.X + textureOffset.X \/ 2.0f, y * textureOffset. Y + textureOffset.Y \/ 2.0f), Color.White, 1.2f, textureOrigin, 0.5f);
+        spriteBatch.Draw (UVTexture, novo Vector2(x * textureOffset.X + textureOffset.X / 2.0f, y * textureOffset. Y + textureOffset.Y / 2.0f), Color.White, 1.2f, textureOrigin, 0.5f);
     }
 }
  
-\/\/ terminar as operações de lote sprite, desenhar todos os sprites
+// terminar as operações de lote sprite, desenhar todos os sprites
 spriteBatch.End();
 ```
 

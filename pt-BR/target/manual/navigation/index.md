@@ -1,8 +1,8 @@
 # Navegação
 
-<x1\/>Introdução<x2\/>
-<x3\/> Designer de nível <x4\/>
-<x5\/>Programação<x6\/>
+<span class="badge text-bg-primary">Introdução</span>
+<span class="badge text-bg-success"> Designer de nível </span>
+<span class="badge text-bg-success">Programação</span>
 
 Você pode usar o sistema **navigation** para controlar como personagens e outros objetos navegam cenas.
 

@@ -1,6 +1,6 @@
 # Motor
 
-> <x1\/>!Warning<x2\/>
+> [!Warning]
 > Esta seção está fora de data. Por enquanto, você só deve usá-lo para referência.
 
 - [Activo](assets/index.md)

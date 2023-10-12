@@ -1,17 +1,17 @@
 # Linha de produção
 
-<x1\/> Intermediário <x2\/>
-<x3\/>Artista <x4\/>
+<span class="badge text-bg-primary">Intermediário</span>
+<span class="badge text-bg-success">Artista </span>
 
 O efeito **outline** aplica um esboço semelhante a desenhos animados em torno de modelos 3d renderizados na cena.
 
-<x1\/>media\/outline-effect-1.png<x2\/>
+![media/outline-effect-1.png](media/outline-effect-1.png)
 
 O contorno é aplicado antes de anti-aliasing.
 
 ## Propriedades
 
-<x1\/>media\/outline-effect-2.png<x2\/>
+![media/outline-effect-2.png](media/outline-effect-2.png)
 
 | Propriedade | Descrição |
 | --------------------- | ---- 

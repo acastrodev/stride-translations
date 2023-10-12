@@ -1,6 +1,6 @@
 # Controle de ativos
 
-> <x1\/>!Warning<x2\/>
+> [!Warning]
 > Esta seção está fora de data. Por enquanto, você só deve usá-lo para referência.
 
 Até agora, todos os ativos de um pacote de jogo, e suas dependências, foram compilados como parte de seu jogo.
@@ -25,7 +25,7 @@ Os ativos que serão compilados e embalados em seu projeto são:
    - Além disso, encorajamos nossos usuários a mudar seu script do Content. Carregar (que requer "Mark as Root") para um membro de campo que você pode definir dentro do editor usando arrastar e soltar. Isso criará uma dependência implícita que forçará esse ativo a ser compilado também.
 - **Tudo mais (branco)** (objetos não marcados como raiz e não referenciados direta ou indiretamente por uma raiz) **won't be packaged**
 
-<x1\/>media\/26968245.png<x2\/>
+![media/26968245.png](media/26968245.png)
 
 ## "Marcar como raiz"
 

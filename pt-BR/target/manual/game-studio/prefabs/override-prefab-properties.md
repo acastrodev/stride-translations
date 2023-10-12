@@ -1,12 +1,12 @@
 # Sobrepor propriedades pré-fabricadas
 
-<x1\/> Intermediário <x2\/>
-<x3\/>Programação<x4\/>
-<x5\/>Designer<x6\/>
+<span class="badge text-bg-primary">Intermediário</span>
+<span class="badge text-bg-success">Programação</span>
+<span class="badge text-bg-success">Designer</span>
 
 Se você modificar uma propriedade em uma instância pré-fabricada, a instância não herda mais alterações do pré-fabricado para essa propriedade. Isso é chamado de **override**.
 
-<x1\/> Como pré-fabricados funcionam<x2\/>
+![ Como pré-fabricados funcionam](media/create-manage-prefabs-how-prefabs-work.png)
 
 No vídeo seguinte, o pré-fabricado **Lamp** contém várias entidades de caixa que pertencem ao pai **Boxes**. Quando eliminamos as caixas da instância, apenas essa instância é afetada. O prefab (mostrado à direita) é inalterado.
 
@@ -24,47 +24,47 @@ No **Property Grid**, você pode ver quais propriedades da instância pré-fabri
 
 * **Overridden** e **unique** propriedades são **branco e negrito**:
 
-   <x1\/> Propriedades anteriores são brancas<x2\/>
+   ![ Propriedades anteriores são brancas](media/use-prefabs-overriden-properties-appear-white.png)
 
 * **Identical** propriedades são **gray**:
 
-   <x1\/> Propriedades idênticas são cinza<x2\/>
+   ![ Propriedades idênticas são cinza](media/use-prefabs-identical-properties-appear-gray.png)
 
 ### Repor uma propriedade ao valor pré-fabricado
 
 Para redefinir uma propriedade sobreposta ao valor no pré-fabricado pai, clique com o botão direito do mouse na propriedade e clique em **Reset para o valor base**.
 
-<x1\/> Repor ao valor de base<x2\/>
+![ Repor ao valor de base](media/use-prefabs-reset-property-to-base-value.png)
 
 ## Exemplo
 
 Neste exemplo, temos uma pré-fabricada de um poste futurista.
 
-<x1\/>Lamppost<x2\/>
+![Lamppost](media/lamppost-prefab.jpg)
 
 O pré-fabricado é composto por três entidades: uma coluna, um pilar e uma luz de ponto. Estes são listados na Árvore da Entidade no Editor Prefab.
 
-<x1\/> Adicionar entidades<x2\/>
+![ Adicionar entidades](media/lamppost-prefab-entities.png)
 
 Vamos adicionar cinco instâncias do poste pré-fabricada para a nossa cena.
 
-<x1\/>Arquivar postes de lâmpadas<x2\/>
+![Arquivar postes de lâmpadas](media/lamppost-prefab-instances.jpg)
 
 Agora vamos modificar uma das instâncias. No Editor de cena, selecionamos uma entidade **spot light** e, nas propriedades de componente de luz de ponto, mudamos sua cor para vermelho. A Grade de Propriedade exibe a propriedade modificada **Color** em **bold white**. Isto significa que está a substituir a propriedade pré-fabricada.
 
-<x1\/> Propriedade média <x2\/>
+![ Propriedade média ](media/override-prefab-property.png)
 
 Podemos ver isto na vista da cena.
 
-<x1\/>Pink spotlight<x2\/>
+![Pink spotlight](media/pink-lamppost-prefab.jpg)
 
 Agora vamos ver o que acontece quando voltamos ao Editor Prefab e mudamos a cor da luz exata na pré-fabricada para verde.
 
-<x1\/> Alterar a cor para verde<x2\/>
+![ Alterar a cor para verde](media/change-prefab-color-to-green.png)
 
 Quatro dos postes agora têm uma luz verde. O quinto ainda é vermelho, pois as propriedades sobrepostas não mudam quando você modifica o pré-fabricado.
 
-<x1\/>Changed cores<x2\/>
+![Changed cores](media/lamppost-prefab-instances-with-override.jpg)
 
 ## Ver também
 

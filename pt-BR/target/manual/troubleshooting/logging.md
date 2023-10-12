@@ -1,6 +1,6 @@
 # Logging
 
-<span class="badge text-bg-primary"> Intermediário </span>
+<span class="badge text-bg-primary">Intermediário</span>
 <span class="badge text-bg-success">Programação</span>
 
 Você pode **log** informações sobre o seu jogo enquanto ele é executado usando [Log](xref:Stride.Engine.ScriptComponent.Log).

@@ -8,8 +8,8 @@
 <trans-unit id="tu2" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Beginner<x id="2"/>
 <x id="3"/>Programmer<x id="4"/></source>
-<target xml:lang="pt">&lt;x1\/&gt;Introdução&lt;x2\/&gt;
-&lt;x3\/&gt;Programação&lt;x4\/&gt;</target>
+<target xml:lang="pt"><x id="1"/>Introdução<x id="2"/>
+<x id="3"/>Programação<x id="4"/></target>
 </trans-unit>
 <trans-unit id="tu3" xml:space="preserve">
 <source xml:lang="en">Users interact with games and applications using <g id="1">input devices</g> such as gamepads, mice, and keyboards. Every interactive application must support at least one input device.</source>
@@ -17,7 +17,7 @@
 </trans-unit>
 <trans-unit id="tu4" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Input devices<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt; Dispositivos de entrada&lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/> Dispositivos de entrada<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu5" xml:space="preserve">
 <source xml:lang="en">Stride handles input entirely via scripts. There are low-level and high-level APIs to handle different input types:</source>
@@ -61,11 +61,11 @@
 </trans-unit>
 <trans-unit id="tu15" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Query key and button states<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt;Query chave e botão estados&lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/>Query chave e botão estados<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu16" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Analog stick positions<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt;Analog stick positions&lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/>Analog stick positions<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu17" xml:space="preserve">
 <source xml:lang="en">Sometimes a user performs more than one action between updates. If there's no state change between the updates (the end result is the same), Stride registers no action:</source>
@@ -73,7 +73,7 @@
 </trans-unit>
 <trans-unit id="tu18" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Several actions between updates<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt; Várias ações entre atualizações&lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/> Várias ações entre atualizações<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu19" xml:space="preserve">
 <source xml:lang="en">Query a state change</source>
@@ -91,7 +91,7 @@ Neste caso, você não tem a lista de todos os botões e chaves, mas tem que con
 </trans-unit>
 <trans-unit id="tu22" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Query key state change<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt; Alteração do estado da chave de consulta &lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/> Alteração do estado da chave de consulta <x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu23" xml:space="preserve">
 <source xml:lang="en">For mouse positions and mouse wheel scrolling, query <g id="1">Delta Values</g> since the previous update:</source>
@@ -99,7 +99,7 @@ Neste caso, você não tem a lista de todos os botões e chaves, mas tem que con
 </trans-unit>
 <trans-unit id="tu24" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Mouse wheel delta<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt;Mouse wheel delta&lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/>Mouse wheel delta<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu25" xml:space="preserve">
 <source xml:lang="en">Sometimes a user performs several actions between two updates. If there's no state change between two updates (the end result is the same), Stride registers no action.</source>
@@ -115,12 +115,12 @@ Neste caso, você não tem a lista de todos os botões e chaves, mas tem que con
 </trans-unit>
 <trans-unit id="tu28" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Several actions between updates<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt; Várias ações entre atualizações&lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/> Várias ações entre atualizações<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu29" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>!Note<x id="2"/>
 Even if a user performs several actions between two updates, Stride registers all these events.</source>
-<target xml:lang="pt">&lt;x1\/&gt;!Note&lt;x2\/&gt;
+<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
 Mesmo que um usuário realize várias ações entre duas atualizações, a Stride registra todos esses eventos.</target>
 </trans-unit>
 <trans-unit id="tu30" xml:space="preserve">

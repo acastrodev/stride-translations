@@ -1,22 +1,22 @@
 # Pacotes de consumo
 
-<x1\/>Introdução<x2\/>
-<x3\/>Programação<x4\/>
+<span class="badge text-bg-primary">Introdução</span>
+<span class="badge text-bg-success">Programação</span>
 
 ## Abra seu projeto no Visual Studio
 
-> <x1\/>!Note<x2\/>
+> [!Note]
 > Game Studio irá mais tarde apoiar adicionar pacotes NuGet diretamente.
 
 Primeiro de tudo, depois de salvar todas as suas mudanças, abra seu projeto com Visual Studio. Você pode facilmente fazer isso clicando no botão apropriado na barra de ferramentas:
 
-<x1\/> Projeto aberto em Visual Studio<x2\/>
+![ Projeto aberto em Visual Studio](../game-studio/media/open-project-in-visual-studio.png)
 
 ## Adicionar uma referência
 
 1. No **Solution Explorer**, clique com o botão direito do mouse no projeto e clique em **Manage NuGet Packages...**
 
-   <x1\/>Visual Studio Iniciar botão<x2\/>
+   ![Visual Studio Iniciar botão](media/manage-nuget-packages.png)
 
 2. Por nosso exemplo, vamos usar `Stride.AssetPack.BuildingBlocks` pacote:
    * Escolha "nuget.org" ou "All" como a fonte **Package**
@@ -24,7 +24,7 @@ Primeiro de tudo, depois de salvar todas as suas mudanças, abra seu projeto com
    * Vá para a guia **Browse**
    * ** Pesquisa ** para um pacote de ativos Stride (i.e. **Stride.AssetPack.BuildingBlocks**) e selecione **Install**
 
-   <x1\/>Install package<x2\/>
+   ![Install package](media/install-package.png)
 
 3. Salve o projeto Visual Studio.
 
@@ -34,8 +34,8 @@ Primeiro de tudo, depois de salvar todas as suas mudanças, abra seu projeto com
 
 2. Agora você deve ser capaz de ver o projeto referenciado e seus ativos em **Solution explorer**
 
-   <x1\/>Use pacote<x2\/>
+   ![Use pacote](media/use-package-from-game-studio.png)
 
-> <x1\/>!Note<x2\/>
+> [!Note]
 > Esses ativos são somente leitura e, como tal, não podem ser arrastados e deixados cair na cena. Isto será corrigido em breve.
 > Entretanto, você ainda pode usar o seletor de ativos para alterar um modelo ou referência de material existente para um do pacote de ativos.

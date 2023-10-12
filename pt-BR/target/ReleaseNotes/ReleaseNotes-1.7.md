@@ -12,7 +12,7 @@ Ele permite que você use muitas luzes de ponto e ponto ao mesmo tempo.
 Você vai ganhar mais controle sobre a iluminação de sua cena adicionando luzes onde quer que sejam necessárias.
 Ele também funciona com objetos transparentes fora da caixa, assim como renderização ordinária.
 
-[<x1\/> Centrais de luzes<x2\/>](https://www.youtube.com/watch?v=QWZqNT9xD5Q " Centenas de luzes<ex1\/>
+[![ Centrais de luzes](media/ReleaseNotes-1.7/launcher_lights.jpg)](https://www.youtube.com/watch?v=QWZqNT9xD5Q " Centenas de luzes")
 
 Se o seu jogo requer Direct3D10+ (ou OpenGL equivalente), esta será a configuração padrão - sem alterações necessárias! Como um bônus, você verá uma diminuição nos tempos de compilação e o número de permutações de shader.
 
@@ -23,7 +23,7 @@ Também aproveitamos esta oportunidade para reescrever a maior parte do nosso c�
 [Vulkan](https://www.khronos.org/vulkan/) junta-se à nossa família feliz de plataformas gráficas!
 O suporte experimental também foi adicionado para Windows e Linux. O Android seguirá em breve.
 
-<x1\/>Vulkan<x2\/>
+![Vulkan](media/ReleaseNotes-1.7/Vulkan.png)
 
 Juntamente com o Direct3D12 e a recente revisão do nosso pipeline de renderização, este é outro passo para preparar o Xenko para a próxima geração de gráficos. Fique atento para melhorias de desempenho e números duros no futuro próximo.
 
@@ -35,13 +35,13 @@ Tente executar seu projeto no Vulkan selecionando-o como o **Plataforma gráfica
 
 O fluxo de trabalho para criar ativos foi simplificado! O novo menu para criação de ativos contém vários modelos para cada tipo de ativo. Agora você pode importar ativos de arquivos mais diretamente. Com a função de pesquisa eficiente do Xenko, a criação de ativos deve ser mais rápida e mais fácil do que nunca!
 
-<x1\/> Novo adicionar menu de ativos<x2\/>
+![ Novo adicionar menu de ativos](media/ReleaseNotes-1.7/NewAddAsset.png)
 
 #### Visualização da câmera
 
 Nós atualizamos a visualização da câmera do GameStudio para agora exibir apenas a câmera selecionada atualmente. Também agora exibe as bordas e o nome da câmera facilitando a visualização da câmera e suas configurações.
 
-<x1\/> Visualização da câmara <x2\/>
+![ Visualização da câmara ](media/ReleaseNotes-1.7/CameraPreview.png)
 
 #### Arrastar e soltar ativos na grade de propriedade
 
@@ -49,13 +49,13 @@ Até agora, você pode arrastar e soltar ativos em sua cena ou a vista da árvor
 
 Nova nesta versão, os componentes agora podem ser adicionados a entidades apenas arrastando e soltando ativos correspondentes na grade de propriedade.
 
-<x1\/>Drag & Drop in the Property Grid<x2\/>
+![Drag & Drop in the Property Grid](media/ReleaseNotes-1.7/dragdrop_propertyview.gif)
 
 #### Drag & Drop scripts
 
 Você também pode arrastar e soltar scripts diretamente na cena, vista da árvore e vista da propriedade:
 
-<x1\/>Drag & Drop in the Property Grid<x2\/>
+![Drag & Drop in the Property Grid](media/ReleaseNotes-1.7/dragdrop_scripts.gif)
 
 ### Linux
 
@@ -63,11 +63,11 @@ Usuários do Linux se alegram! Linux é agora uma plataforma suportada de Xenko 
 
 A fim de usar a plataforma **Linux**, verifique **Linux** da lista de plataformas no GameStudio então compile.
 
-<x1\/>Selecionar Plataformas Diálogo<x2\/>
+![Selecionar Plataformas Diálogo](media/ReleaseNotes-1.7/linux2.png)
 
 A implantação para uma caixa remota do Linux é feita via SSH ao executar seu projeto no GameStudio.
 
-<x1\/> Seletor de formulários <x2\/>
+![ Seletor de formulários ](media/ReleaseNotes-1.7/Platform_selector.png)
 
 Para saber mais sobre nosso suporte ao Linux, leia a documentação [Linux](/manual/platforms/linux/index.md)
 
@@ -80,7 +80,7 @@ As classes `SoundEffect` e `SoundMusic` foram consolidadas em `Sound`, também `
 
 Sob o capô, o [CELT](http://celt-codec.org/) codec (parte de [Opus](https://www.opus-codec.org/)) agora está sendo usado. Temos o prazer de dizer que o desempenho desde o início! A música agora pode ser misturada e cruzada ao transmitir e descomprimir diretamente do disco.
 
-A API do Xenko agora baseia-se no OpenAL para Linux\/macOS\/iOS, no OpenSLES para Android e no XAudio2 para plataformas Windows.
+A API do Xenko agora baseia-se no OpenAL para Linux/macOS/iOS, no OpenSLES para Android e no XAudio2 para plataformas Windows.
 
 ## Como atualizar
 
@@ -155,7 +155,7 @@ mySoundInstance = MySound.CreateInstance();
 mySoundInstance.Play();
 ```
 
-Por último, você já não precisa se registrar (`AddListener`\/`RemoveListener`) `AudioListenerComponent` de seu código mais.
+Por último, você já não precisa se registrar (`AddListener`/`RemoveListener`) `AudioListenerComponent` de seu código mais.
 
 ## Alterações de ruptura
 
@@ -176,7 +176,7 @@ Por último, você já não precisa se registrar (`AddListener`\/`RemoveListener
 
 ### Versão 1.7.0-Beta
 
-Data de lançamento: 2016\/07\/01
+Data de lançamento: 2016/07/01
 
 #### Melhorias
 
@@ -186,7 +186,7 @@ Data de lançamento: 2016\/07\/01
 
 ##### Áudio
 
-- Agora você pode mudar o Pitch\/Speed de um `SoundInstance`!
+- Agora você pode mudar o Pitch/Speed de um `SoundInstance`!
 - Adicionado controle de volume mestre em `AudioEngine` (`AudioEngine.MasterVolume`)
 
 ##### Partes
@@ -220,7 +220,7 @@ Esta versão traz muitas melhorias para o motor de partículas.
 
 ##### Gráficos
 
-- Adicionado uma maneira de manter uma relação de aspecto restrito em Render Camera, e automaticamente ter pilarboxes\/letterboxes quando há telas com diferentes razões
+- Adicionado uma maneira de manter uma relação de aspecto restrito em Render Camera, e automaticamente ter pilarboxes/letterboxes quando há telas com diferentes razões
 - Adicionado o conceito de "LogicalGroup" para facilmente fazer atualizações parciais de buffer constante e recursos
 - Suporte OpenGL aprimorado: buffers de textura, mais formatos de textura, marcadores de depuração, etc.
 - OpenTK Unified: agora compilamos nosso próprio OpenTK para Windows, iOS e Android. Isso significa que nosso código do renderizador OpenGL está agora unificado e deve ter menos bugs
@@ -235,7 +235,7 @@ Esta versão traz muitas melhorias para o motor de partículas.
 
 ##### Game Studio
 
-- Desfazer\/refazer foi corrigido em muitos cenários
+- Desfazer/refazer foi corrigido em muitos cenários
 - GameStudio layout questão ao criar um novo jogo com o mesmo nome que um jogo anterior (mas excluído)
 - Emitir impedir que um script recém-criado seja marcado como salvo
 - Regressão introduzida em 1.6.5 onde a região de textura de um sprite não foi corretamente redimensionada quando a imagem de origem tinha sido alterada
@@ -244,7 +244,7 @@ Esta versão traz muitas melhorias para o motor de partículas.
 - Preserve Nodes que estavam trabalhando indevidamente
 - Alterações de rastreamento em imagens de origem no editor de folhas de sprite
 - Alguns cenários onde as miniaturas nunca são completas para construir
-- Manuseio melhorado da colisão do nome ao criar\/importar ativos
+- Manuseio melhorado da colisão do nome ao criar/importar ativos
 - Questões com a seleção de entidades no editor de cena (algumas entidades permaneceram selecionadas do ponto de vista da rede de propriedade mesmo depois de não serem selecionadas da vista da árvore)
 - Alguns problemas de janela quando vários diálogos modais são exibidos na ordem errada, evitando fechá-los
 - Várias falhas ocorrem ao modificar propriedades de entidades
@@ -252,7 +252,7 @@ Esta versão traz muitas melhorias para o motor de partículas.
 
 ### Versão 1.7.1-Beta
 
-Data de lançamento: 2016\/07\/04
+Data de lançamento: 2016/07/04
 
 #### Melhorias
 
@@ -268,7 +268,7 @@ Data de lançamento: 2016\/07\/04
 
 ### Versão 1.7.2-Beta
 
-Data de lançamento: 2016\/07\/2009
+Data de lançamento: 2016/07/2009
 
 #### Melhorias
 
@@ -288,7 +288,7 @@ Data de lançamento: 2016\/07\/2009
 
 ### Versão 1.7.3-Beta
 
-Data de lançamento: 2016\/07\/16
+Data de lançamento: 2016/07/16
 
 #### Melhorias
 
@@ -307,7 +307,7 @@ Data de lançamento: 2016\/07\/16
 
 ### Versão 1.7.5-Beta
 
-Data de lançamento: 2016\/07\/21
+Data de lançamento: 2016/07/21
 
 #### Novos recursos
 
@@ -316,7 +316,7 @@ Data de lançamento: 2016\/07\/21
 #### Melhorias
 
 - Tempo de inicialização mais rápido (o código de serialização é inicializado e JIT-ed mais preguiçoso)
-- Compatível com o mais recente Xamarin iOS Alpha (símbolos são ligados à estática, então P\/Invoke não utilizado precisa ser removido)
+- Compatível com o mais recente Xamarin iOS Alpha (símbolos são ligados à estática, então P/Invoke não utilizado precisa ser removido)
 
 #### Questões corrigidas
 
@@ -325,7 +325,7 @@ Data de lançamento: 2016\/07\/21
 
 ### Versão 1.7.6-Beta
 
-Data de lançamento: 2016\/07\/22
+Data de lançamento: 2016/07/22
 
 #### Novos fatures
 
@@ -341,7 +341,7 @@ Data de lançamento: 2016\/07\/22
 
 ### Versão 1.7.7-Beta
 
-Data de lançamento: 2016\/07\/29
+Data de lançamento: 2016/07/29
 
 #### Novos recursos
 
@@ -351,7 +351,7 @@ Data de lançamento: 2016\/07\/29
 #### Questões corrigidas
 
 - GameStudio: Desfazer não estava funcionando corretamente para a primeira mudança (devido à bandeira desfazer não sendo corretamente reset)
-- GameStudio: Algumas notificações de alteração de ativos não foram enviadas corretamente em caso de desfazer\/refazer
+- GameStudio: Algumas notificações de alteração de ativos não foram enviadas corretamente em caso de desfazer/refazer
 - GameStudio: Foco de entidade não estava funcionando em alguns casos
 - GameStudio: Fix EntityComponent reloading após a recarga de montagem
 - GameStudio: Escolher no GameStudio não estava funcionando corretamente com alguns cartões AMD
@@ -362,7 +362,7 @@ Data de lançamento: 2016\/07\/29
 
 ### Versão 1.7.8-Beta
 
-Data de lançamento: 2016\/08\/05
+Data de lançamento: 2016/08/05
 
 #### Novos recursos
 
@@ -382,7 +382,7 @@ Data de lançamento: 2016\/08\/05
 
 ### Versão 1.7.9-Beta
 
-Data de lançamento: 2016\/08\/05
+Data de lançamento: 2016/08/05
 
 Nota: bugfix de emergência para versão 1.7.8, que não estava copiando corretamente bibliotecas nativas.
 

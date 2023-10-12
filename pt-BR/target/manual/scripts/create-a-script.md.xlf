@@ -8,8 +8,8 @@
 <trans-unit id="tu2" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Beginner<x id="2"/>
 <x id="3"/>Programmer<x id="4"/></source>
-<target xml:lang="pt">&lt;x1\/&gt;Introdução&lt;x2\/&gt;
-&lt;x3\/&gt;Programação&lt;x4\/&gt;</target>
+<target xml:lang="pt"><x id="1"/>Introdução<x id="2"/>
+<x id="3"/>Programação<x id="4"/></target>
 </trans-unit>
 <trans-unit id="tu3" xml:space="preserve">
 <source xml:lang="en">You can create scripts using Game Studio or an IDE such as Visual Studio.</source>
@@ -25,12 +25,12 @@
 </trans-unit>
 <trans-unit id="tu6" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Select script type window<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt;Select script type window&lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/>Select script type window<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu7" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>!Note<x id="2"/>
 For information about different types of script, see <g id="3">Types of script</g>.</source>
-<target xml:lang="pt">&lt;x1\/&gt;!Note&lt;x2\/&gt;
+<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
 Para obter informações sobre diferentes tipos de script, consulte <g id="3">Típes de script</g>.</target>
 </trans-unit>
 <trans-unit id="tu8" xml:space="preserve">
@@ -39,7 +39,7 @@ Para obter informações sobre diferentes tipos de script, consulte <g id="3">T�
 </trans-unit>
 <trans-unit id="tu9" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>New script<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt; Novo script&lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/> Novo script<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu10" xml:space="preserve">
 <source xml:lang="en">Specify a class and namespace for the script and click <g id="1">Create script</g>.</source>
@@ -56,7 +56,7 @@ Para obter informações sobre diferentes tipos de script, consulte <g id="3">T�
 <trans-unit id="tu13" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>!Note<x id="2"/>
 Although scripts are a kind of asset, they're not saved in the Assets folder. Instead, they're saved in the relevant assembly folder. For more information, see <g id="3">Project structure</g>.</source>
-<target xml:lang="pt">&lt;x1\/&gt;!Note&lt;x2\/&gt;
+<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
 Embora os scripts sejam um tipo de ativo, eles não são salvos na pasta Ativos. Em vez disso, eles são salvos na pasta de montagem relevante. Para mais informações, consulte <g id="3">Projeto estrutura</g>.</target>
 </trans-unit>
 <trans-unit id="tu14" xml:space="preserve">
@@ -65,13 +65,13 @@ Embora os scripts sejam um tipo de ativo, eles não são salvos na pasta Ativos.
 </trans-unit>
 <trans-unit id="tu15" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>New script on Asset View tab<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt; Novo script no Asset View tab&lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/> Novo script no Asset View tab<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu16" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>!Tip<x id="2"/>
 To open your solution in Visual Studio from Game Studio, click the <x id="3"/>Open in IDE<x id="4"/> (<g id="5">Open in IDE</g>) icon in the Game Studio toolbar.</source>
-<target xml:lang="pt">&lt;x1\/&gt;!Tip&lt;x2\/&gt;
-Para abrir sua solução no Visual Studio do Game Studio, clique no ícone &lt;x3\/&gt;Open in IDE&lt;x4\/&gt; (<g id="5">Open in IDE</g>) na barra de ferramentas Game Studio.</target>
+<target xml:lang="pt"><x id="1"/>!Tip<x id="2"/>
+Para abrir sua solução no Visual Studio do Game Studio, clique no ícone <x id="3"/>Open in IDE<x id="4"/> (<g id="5">Open in IDE</g>) na barra de ferramentas Game Studio.</target>
 </trans-unit>
 <trans-unit id="tu17" xml:space="preserve">
 <source xml:lang="en">using System;
@@ -111,7 +111,7 @@ namespace MyGame
 		(
 			enquanto (Game.IsRunning)
 			(
-				\/\/ Faça algumas coisas cada quadro
+				// Faça algumas coisas cada quadro
 				await Script.NextFrame();
 			}
 		}
@@ -130,8 +130,8 @@ namespace MyGame
 <trans-unit id="tu20" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>!Tip<x id="2"/>
 To open your solution in Visual Studio from Game Studio, click the <x id="3"/>Open in IDE<x id="4"/> (<g id="5">Open in IDE</g>) icon in the Game Studio toolbar.</source>
-<target xml:lang="pt">&lt;x1\/&gt;!Tip&lt;x2\/&gt;
-Para abrir sua solução no Visual Studio do Game Studio, clique no ícone &lt;x3\/&gt;Open in IDE&lt;x4\/&gt; (<g id="5">Open in IDE</g>) na barra de ferramentas Game Studio.</target>
+<target xml:lang="pt"><x id="1"/>!Tip<x id="2"/>
+Para abrir sua solução no Visual Studio do Game Studio, clique no ícone <x id="3"/>Open in IDE<x id="4"/> (<g id="5">Open in IDE</g>) na barra de ferramentas Game Studio.</target>
 </trans-unit>
 <trans-unit id="tu21" xml:space="preserve">
 <source xml:lang="en">The game solution is composed of several projects:</source>
@@ -214,7 +214,7 @@ Para abrir sua solução no Visual Studio do Game Studio, clique no ícone &lt;x
 			(
 				se (Game.IsRunning)
 				(
-					\/\/ Faça algo cada quadro
+					// Faça algo cada quadro
 				}
 			}
 		}
@@ -231,7 +231,7 @@ Para abrir sua solução no Visual Studio do Game Studio, clique no ícone &lt;x
 </trans-unit>
 <trans-unit id="tu35" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Confirmation message<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt; Confirmação mensagem &lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/> Confirmação mensagem <x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu36" xml:space="preserve">
 <source xml:lang="en">Click <g id="1">Yes</g>.</source>
@@ -243,12 +243,12 @@ Para abrir sua solução no Visual Studio do Game Studio, clique no ícone &lt;x
 </trans-unit>
 <trans-unit id="tu38" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>New script on Asset View tab<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt; Novo script no Asset View tab&lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/> Novo script no Asset View tab<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu39" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>!Note<x id="2"/>
 Although scripts are a kind of asset, they're not saved in the Assets folder. Instead, they're saved in the relevant assembly folder. For more information, see <g id="3">Project structure</g>.</source>
-<target xml:lang="pt">&lt;x1\/&gt;!Note&lt;x2\/&gt;
+<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
 Embora os scripts sejam um tipo de ativo, eles não são salvos na pasta Ativos. Em vez disso, eles são salvos na pasta de montagem relevante. Para mais informações, consulte <g id="3">Projeto estrutura</g>.</target>
 </trans-unit>
 <trans-unit id="tu40" xml:space="preserve">

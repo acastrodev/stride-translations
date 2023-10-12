@@ -3,11 +3,11 @@ uid: ../toc.md
 ---
 # Começar com Stride
 
-<x1\/>Introdução<x2\/>
+<span class="badge text-bg-primary">Introdução</span>
 
 Este capítulo explica tudo o que você precisa para começar a usar Stride do zero. Para tutoriais em vídeo, dê uma olhada no [Tutoriais](https://doc.stride3d.net/latest/en/tutorials/index.html).
 
-<x1\/>Game Studio<x2\/>
+![Game Studio](media/get-started.jpg)
 
 ## Nesta secção
 

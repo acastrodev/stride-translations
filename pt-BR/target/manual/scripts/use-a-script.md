@@ -1,7 +1,7 @@
 # Use um script
 
-<x1\/>Introdução<x2\/>
-<x3\/>Programação<x4\/>
+<span class="badge text-bg-primary">Introdução</span>
+<span class="badge text-bg-success">Programação</span>
 
 Para usar um script, adicione-o a uma entidade como um componente. Você pode fazer isso no Game Studio ou no código. Stride executa scripts quando a entidade que eles estão ligados a cargas.
 
@@ -21,13 +21,13 @@ Este método cria automaticamente uma nova entidade que contém o script.
 
 1. No **solution explorer** (na parte inferior esquerda por padrão), selecione o conjunto que contém seu script. Game Studio mostra seu script no **asset view**.
 
-   <x1\/>Scrito na pasta de ativos<x2\/>
+   ![Scrito na pasta de ativos](../get-started/media/create-a-script-new-script-asset-view.png)
 
 2. Arraste o script a partir da vista de ativos para a árvore **entity**.
 
 Game Studio adiciona uma entidade à sua cena, com o script como um componente na entidade.
 
-<x1\/> Árvore de entrada <x2\/>
+![ Árvore de entrada ](../troubleshooting/media/game-profiler-in-entity-tree.png)
 
 ### Arraste para a rede da propriedade
 
@@ -35,7 +35,7 @@ Game Studio adiciona uma entidade à sua cena, com o script como um componente n
 
 2. No **solution explorer** (na parte inferior esquerda por padrão), selecione o conjunto que contém seu script. Game Studio mostra seu script no **asset view**.
 
-   <x1\/>Scrito na pasta de ativos<x2\/>
+   ![Scrito na pasta de ativos](../get-started/media/create-a-script-new-script-asset-view.png)
 
 3. Arraste o script do **asset view** para o **property grid**.
 
@@ -45,15 +45,15 @@ Game Studio adiciona uma entidade à sua cena, com o script como um componente n
 
 1. No editor **scene**, selecione a entidade a que deseja adicionar o script.
 
-   <x1\/>Selecione uma entidade<x2\/>
+   ![Selecione uma entidade](media/select-entity.png)
 
 2. No **property grid** (à direita por padrão), clique em **Add component** e selecione o script que você deseja adicionar.
 
-   <x1\/> Adicionar componente de script<x2\/>
+   ![ Adicionar componente de script](media/add-script-component.png)
 
    Game Studio adiciona o script à entidade.
 
-> <x1\/>!Note<x2\/>
+> [!Note]
 > Você pode personalizar onde os scripts aparecem no dropdown usando o `ComponentCategoryAttribute`:
 
 > ```cs
@@ -62,7 +62,7 @@ Game Studio adiciona uma entidade à sua cena, com o script como um componente n
 > (
 >    anula de sobreposição pública Start()
 >    (
->        \/\/ Faça algumas coisas durante a inicialização
+>        // Faça algumas coisas durante a inicialização
 >    }
 > }
 > ```
@@ -72,7 +72,7 @@ Game Studio adiciona uma entidade à sua cena, com o script como um componente n
 O código abaixo adiciona um script a uma entidade.
 
 ```cs
-\/\/ myEntity é uma entidade existente na cena; myAsyncScript é o script que você deseja adicionar à entidade
+// myEntity é uma entidade existente na cena; myAsyncScript é o script que você deseja adicionar à entidade
 myEntity.Add(new myAsyncScript());
 ```
 

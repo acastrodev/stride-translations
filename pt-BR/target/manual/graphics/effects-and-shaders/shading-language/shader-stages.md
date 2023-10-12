@@ -53,11 +53,11 @@ Um exemplo de geometria shader:
 void GSMain (entrada de entrada de triângulo[3], inout PointStream<Output> pointStream)
 (
 	...
-	\/\/ preencher o objeto streams
+	// preencher o objeto streams
 	fluxos = entrada[0];
  	...
  
-	\/\/ sempre apêndice fluxos
+	// sempre apêndice fluxos
 	pointStream.Anexar(streams);
 	...
 }
@@ -102,7 +102,7 @@ void DSMain(const OutputPatch<Input, 3> input, out Output, in Constantes constan
 
 `Input` e `Input2` ambos se comportam como fluxos.
 
-> <x1\/>!Note<x2\/>
+> [!Note]
 > Não se esqueça de atribuir `output` a `streams` no final do seu estágio.
 
 ## Shader computado
@@ -126,4 +126,4 @@ Você pode herdar de `ComputeShaderBase` e substituir o método `Compute`.
    - [Shader classes, misturas e herança](shader-classes-mixins-and-inheritance.md)
    - [Composição](composition.md)
    - [Modelos](templates.md)
-   - [Shader fase de entrada \/ saída gestão automática](automatic-shader-stage-input-output.md)
+   - [Shader fase de entrada / saída gestão automática](automatic-shader-stage-input-output.md)

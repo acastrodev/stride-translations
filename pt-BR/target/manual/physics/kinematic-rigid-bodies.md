@@ -4,7 +4,7 @@
 
 Embora os rígidos cinemáticos não sejam movidos pela física, outros objetos ainda podem colidir com eles. Por exemplo, no caso do elevador, os objetos colocados dentro não cairão no chão do elevador.
 
-<x1\/>Elevador mecânico<x2\/>
+![Elevador mecânico](media/rigid-bodies-kinematic-elevator.png)
 
 ## Faça um corpo rígido cinemático
 
@@ -12,13 +12,13 @@ Embora os rígidos cinemáticos não sejam movidos pela física, outros objetos 
 
 2. No **Property Grid**, sob as propriedades de componente **Rigidbody**, selecione **Is kinematic**.
 
-   <x1\/>Check 'Is kinematic'<x2\/>
+   ![Check 'Is kinematic'](media/rigid-bodies-is-kinematic-checkbox.png)
 
 ## Roteiros rígidos cinemáticos
 
 Você pode escrever a propriedade **Is kinematic** para ativar e desativar certos eventos. Por exemplo, imagine que os cabos de suspensão do elevador cinemático são cortados. Você pode escrever a propriedade **Is kinematic** para mudar para *false* quando isso acontece. O elevador fica sujeito às forças habituais da física, e cai.
 
-<x1\/> Elevador não-cinemático<x2\/>
+![ Elevador não-cinemático](media/rigid-bodies-non-kinematic-elevator.png)
 
 ## Ver também
 

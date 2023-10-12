@@ -1,7 +1,7 @@
 # Pré-fabricadas aninhadas
 
-<x1\/>Introdução<x2\/>
-<x3\/>Designer<x4\/>
+<span class="badge text-bg-primary">Introdução</span>
+<span class="badge text-bg-success">Designer</span>
 
 Você pode adicionar prefabs a outras pré-fabricadas. Estes são chamados **nested prefabs**.
 

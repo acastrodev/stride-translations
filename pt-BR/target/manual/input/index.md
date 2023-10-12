@@ -1,11 +1,11 @@
 # Entrada
 
-<x1\/>Introdução<x2\/>
-<x3\/>Programação<x4\/>
+<span class="badge text-bg-primary">Introdução</span>
+<span class="badge text-bg-success">Programação</span>
 
 Os usuários interagem com jogos e aplicativos usando dispositivos de entrada **** como gamepads, mice e teclados. Cada aplicativo interativo deve suportar pelo menos um dispositivo de entrada.
 
-<x1\/> Dispositivos de entrada<x2\/>
+![ Dispositivos de entrada](media/input_intro.png)
 
 Stride lida com a entrada inteiramente através de scripts. Existem APIs de baixo nível e alto nível para lidar com diferentes tipos de entrada:
 
@@ -27,13 +27,13 @@ Depois de verificar a disponibilidade do dispositivo, existem quatro maneiras de
 
 Você pode consultar o estado de chaves e botões digitais (ou seja, _Up_ ou _Down_) e os valores numéricos de botões e sensores analógicos. Por exemplo, @'Stride.Input.InputManager. DownKeys' recebe uma lista das chaves que estavam no estado _Down_ na última atualização.
 
-<x1\/>Query chave e botão estados<x2\/>
+![Query chave e botão estados](media/index-state-one-action-between-updates.png)
 
-<x1\/>Analog stick positions<x2\/>
+![Analog stick positions](media/index-state-analog-stick-position.png)
 
 Às vezes, um usuário executa mais de uma ação entre atualizações. Se não houver mudança de estado entre as atualizações (o resultado final é o mesmo), Stride registra nenhuma ação:
 
-<x1\/> Várias ações entre atualizações<x2\/>
+![ Várias ações entre atualizações](media/index-state-several-actions-between-updates.png)
 
 ### Consultar uma mudança de estado
 
@@ -42,11 +42,11 @@ Neste caso, você não tem a lista de todos os botões e chaves, mas tem que con
 
 * Para botões e chaves digitais, consulta se o botão ou chave foi _Pressed_, _Down_ ou _Released_ na última atualização.
 
-   <x1\/> Alteração do estado da chave de consulta <x2\/>
+   ![ Alteração do estado da chave de consulta ](media/index-state-change-one-action-between-updates.png)
 
 * Para posições do mouse e rolagem da roda do mouse, consulta _Delta Valores_ desde a atualização anterior:
 
-   <x1\/>Mouse wheel delta<x2\/>
+   ![Mouse wheel delta](media/index-state-change-mouse-wheel-scroll.png)
 
 Às vezes, um usuário executa várias ações entre duas atualizações. Se não houver mudança de estado entre duas atualizações (o resultado final é o mesmo), Stride registra nenhuma ação.
 
@@ -54,9 +54,9 @@ Neste caso, você não tem a lista de todos os botões e chaves, mas tem que con
 
 Para ponteiros, gestos e teclados, você pode consultar todos os eventos que aconteceram na última atualização.
 
-<x1\/> Várias ações entre atualizações<x2\/>
+![ Várias ações entre atualizações](media/index-events-list-several-actions-between-updates.png)
 
-> <x1\/>!Note<x2\/>
+> [!Note]
 > Mesmo que um usuário realize várias ações entre duas atualizações, a Stride registra todos esses eventos.
 
 ### Use botões virtuais

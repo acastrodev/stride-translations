@@ -1,14 +1,14 @@
 # Tutorial: Lasers e raios
 
-<x1\/> Intermediário <x2\/>
-<x3\/>Artista <x4\/>
-<x5\/>Programação<x6\/>
+<span class="badge text-bg-primary">Intermediário</span>
+<span class="badge text-bg-success">Artista </span>
+<span class="badge text-bg-success">Programação</span>
 
 Este tutorial explica como criar lasers e relâmpagos usando partículas e materiais personalizados.
 
 Imagine que queremos criar um arco relâmpago como este:
 
-<x1\/>media\/particles-tutorials-lasers-1.gif<x2\/>
+![media/particles-tutorials-lasers-1.gif](media/particles-tutorials-lasers-1.gif)
 
 Este efeito é uma tira que:
 
@@ -52,17 +52,17 @@ Podemos definir a vida útil das partículas para um pequeno número (por exempl
 
 Para ilustrar melhor o que está acontecendo aqui é o mesmo efeito com o construtor de forma Billboard em vez de Ribbon, e diminuiu 30 vezes:
 
-<x1\/>media\/particles-tutorials-lasers-2.gif<x2\/>
+![media/particles-tutorials-lasers-2.gif](media/particles-tutorials-lasers-2.gif)
 
 #### Relâmpago em movimento
 
 Há uma maneira de fazer o arco relâmpago se mover do ponto A ao ponto B em vez de ser estático.
 
-<x1\/>media\/particles-tutorials-lasers-3.gif<x2\/>
+![media/particles-tutorials-lasers-3.gif](media/particles-tutorials-lasers-3.gif)
 
 Há alguns ajustes que precisamos fazer:
 
-* Mude a taxa de desova para uma mais baixa. O exemplo acima usa 600\/segundo e é jogado a 0,1 escala de tempo, o que significa em torno de 1 partícula por quadro.
+* Mude a taxa de desova para uma mais baixa. O exemplo acima usa 600/segundo e é jogado a 0,1 escala de tempo, o que significa em torno de 1 partícula por quadro.
 
 * Defina uma contagem fixa com o posicionador de arco (50). Porque ele interpola as distâncias com base no número de partículas desova *each* frame, se nós os desovamos sequencialmente eles ficarão todos no início do arco. Ao definir a contagem para 50, dizemos ao posicionador de arco para esperar 50 partículas no total.
 
@@ -99,7 +99,7 @@ A amostra de partículas já contém um exemplo de como criar lasers dessa forma
 
 Para ver algumas das técnicas descritas nesta página implementadas em um projeto, crie um novo **Sample: Partículas** projeto e abrir a cena **Lasers**.
 
-<x1\/>Particles sample project<x2\/>
+![Particles sample project](media/select-particles-sample-project.png)
 
 ## Ver também
 

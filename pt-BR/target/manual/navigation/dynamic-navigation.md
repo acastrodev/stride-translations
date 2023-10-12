@@ -1,12 +1,12 @@
 # Navegação dinâmica
 
-<x1\/>Introdução<x2\/>
-<x3\/> Designer de nível <x4\/>
-<x5\/>Programação<x6\/>
+<span class="badge text-bg-primary">Introdução</span>
+<span class="badge text-bg-success"> Designer de nível </span>
+<span class="badge text-bg-success">Programação</span>
 
 Se você ativar a navegação **dinâmica**, as entidades com componentes de navegação não precisam de um ativo [navigation mesh](navigation-meshes.md). Em vez disso, as entidades geram malhas de navegação dinamicamente.
 
-> <x1\/>!Note<x2\/>
+> [!Note]
 > Certifique-se de que as cenas que você deseja que as entidades naveguem dinamicamente têm [navigação delimitando caixas](navigation-bounding-boxes.md).
 
 ## Habilitar navegação dinâmica
@@ -15,25 +15,25 @@ Você pode ativar e desativar a navegação dinâmica no ativo global [game sett
 
 1. Nas entidades que você deseja navegar dinamicamente, sob as propriedades do componente de navegação, ao lado de **Navigation mesh**, certifique-se de que nenhuma malha de navegação é selecionada.
 
-   <x1\/> Nenhuma malha de navegação selecionada<x2\/>
+   ![ Nenhuma malha de navegação selecionada](media/no-navigation-mesh-selected.png)
 
    Para mais informações sobre o componente de navegação, consulte os componentes de navegação [Navigation](navigation-components.md).
 
 2. No **Solution Explorer** (o painel inferior esquerdo por padrão), selecione a pasta **Assets**.
 
-   <x1\/>Select Assets pasta asset<x2\/>
+   ![Select Assets pasta asset](media/select-asset-folder.png)
 
 3. No **Asset View** (o painel inferior por padrão), selecione o ativo **Game Settings**.
 
-   <x1\/>Selecionar configurações de jogo asset<x2\/>
+   ![Selecionar configurações de jogo asset](media/select-game-settings-asset.png)
 
 4. No **Property Grid** (o painel direito por padrão), sob **Configurações de navegação**, expanda ** malha de navegação dinâmica**.
 
-   <x1\/> Configurações do jogo <x2\/>
+   ![ Configurações do jogo ](media/expand-dynamic-navigation-mesh.png)
 
 5. Selecione a caixa de seleção **Ativar navegação dinâmica**.
 
-   <x1\/> Habilitar caixa de verificação de navegação dinâmica<x2\/>
+   ![ Habilitar caixa de verificação de navegação dinâmica](media/enable-dynamic-navigation.png)
 
 ## Propriedades de malha de navegação dinâmica
 
@@ -48,27 +48,27 @@ Você pode ativar e desativar a navegação dinâmica no ativo global [game sett
 Exemplo de código:
 
 ```cs
-\/\/ Encontrar e ativar o sistema de malha de navegação dinâmica
+// Encontrar e ativar o sistema de malha de navegação dinâmica
 dynamicNavigationMeshSystem = Game.GameSystems.OfType<DynamicNavigationMeshSystem>().FirstOrDefault();
 dynamicNavigationMeshSystem. Activado = verdadeiro;
 
-\/\/ Isso impede o sistema de malha de navegação dinâmica de reconstruir automaticamente nos casos de folowing:
-\/\/ - cenas de carregamento\/descarregamento
-\/\/ - adicionando\/removendo componentes de colisão estática
-\/\/ - adicionando\/removendo caixas de amarração de malha de navegação
+// Isso impede o sistema de malha de navegação dinâmica de reconstruir automaticamente nos casos de folowing:
+// - cenas de carregamento/descarregamento
+// - adicionando/removendo componentes de colisão estática
+// - adicionando/removendo caixas de amarração de malha de navegação
 dynamicNavigationMeshSystem.AutomaticRebuild = false;
 
-\/\/...
+//...
 
-se (\/* qualquer condição que deve fazer com que a malha de navegação atualize (por exemplo, porta aberta\/fecha) *\/)
+se (/* qualquer condição que deve fazer com que a malha de navegação atualize (por exemplo, porta aberta/fecha) */)
 (
-	\/\/ Comece uma reconstrução assíncrona da malha de navegação
+	// Comece uma reconstrução assíncrona da malha de navegação
 	var reconstruirTask = dinâmicoNavigationMeshSystem.Rebuild();
 	reconstruirTask.ContinueWith(x) =>
 	(
 		se (x.Result. Sucesso)
 		(
-			\/\/ A malha de navegação é reconstruída com sucesso
+			// A malha de navegação é reconstruída com sucesso
 		}
 	});
 }

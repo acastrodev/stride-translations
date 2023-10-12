@@ -1,17 +1,17 @@
 # Flare de lente
 
-<x1\/> Intermediário <x2\/>
-<x3\/>Artista <x4\/>
+<span class="badge text-bg-primary">Intermediário</span>
+<span class="badge text-bg-success">Artista </span>
 
 O efeito **lens flare** simula os artefatos produzidos pela reflexão interna ou dispersão da luz dentro de uma lente do mundo real.
 
-<x1\/>media\/lens-flare-1.png<x2\/>
+![media/lens-flare-1.png](media/lens-flare-1.png)
 
 Os artefatos são geralmente alinhados ao longo da linha definida pelo ponto brilhante original e o centro da tela. O artefato mais notável é muitas vezes exatamente simétrico à luz real com respeito ao centro da tela.
 
 ## Propriedades
 
-<x1\/>media\/lens-flare-2.png<x2\/>
+![media/lens-flare-2.png](media/lens-flare-2.png)
 
 | Propriedade | Descrição |
 | ------------------------- | ------ 

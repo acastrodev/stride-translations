@@ -19,11 +19,11 @@
 </trans-unit>
 <trans-unit id="tu5" xml:space="preserve">
 <source xml:lang="en">To improve flexibility, entity are component-based: they can contains as many components as required, containing data and/or logic.</source>
-<target xml:lang="pt">Para melhorar a flexibilidade, a entidade é baseada em componentes: pode conter tantos componentes conforme necessário, contendo dados e\/ou lógica.</target>
+<target xml:lang="pt">Para melhorar a flexibilidade, a entidade é baseada em componentes: pode conter tantos componentes conforme necessário, contendo dados e/ou lógica.</target>
 </trans-unit>
 <trans-unit id="tu6" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>media/7438980.png<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt;media\/7438980.png&lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/>media/7438980.png<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu7" xml:space="preserve">
 <source xml:lang="en">A @'Stride.Engine.Entitycomponent' is tied to its entity (that is, one component can't be added to two entities at the same time).</source>
@@ -47,17 +47,17 @@ myEntity.Transformation.Translation = new Vector3(100.0f, 100.0f, 0.0f);
 // Add entity to scene; from now on its model will be rendered
 Entities.Add(myEntity);
 </source>
-<target xml:lang="pt">\/\/ Criar entidade
+<target xml:lang="pt">// Criar entidade
 var myEntity = novo Entity();
  
-\/\/ Criar um componente modelo (para que o modelo seja renderizado)
+// Criar um componente modelo (para que o modelo seja renderizado)
 modelo de var Componente = novo ModelComponent { Model = model };
 myEntity. Set(ModelComponent. Key, modelComponent);
 
-\/\/ Definir posição da entidade
+// Definir posição da entidade
 myEntity.Transformation.Translation = new Vector3(100.0f, 100.0f, 0,0f);
  
-\/\/ Adicionar entidade à cena; a partir de agora em seu modelo será renderizado
+// Adicionar entidade à cena; a partir de agora em seu modelo será renderizado
 Entities.Add (myEntity);
 </target>
 </trans-unit>

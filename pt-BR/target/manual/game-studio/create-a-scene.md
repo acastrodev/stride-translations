@@ -1,7 +1,7 @@
 # Criar e abrir uma cena
 
-<x1\/>Introdução<x2\/>
-<x3\/>Level Designer<x4\/>
+<span class="badge text-bg-primary">Introdução</span>
+<span class="badge text-bg-success">Level Designer</span>
 
 Quando você cria um novo projeto, o Game Studio cria uma cena inicial e o popula com entidades básicas, como uma luz, uma câmera e um skybox.
 
@@ -11,7 +11,7 @@ Você pode criar cenas como qualquer outro ativo. Como eles são ativos complexo
 
 1. No **Asset View** (por padrão no painel inferior), clique em **Add asset** e selecione **Scenes**.
 
-   <x1\/> Adicionar uma cena<x2\/>
+   ![ Adicionar uma cena](media/add-scene.png)
 
 2. Selecione o modelo **scene apropriado**.
 
@@ -25,18 +25,18 @@ Você pode criar cenas como qualquer outro ativo. Como eles são ativos complexo
 
 No **Asset View**:
 
-<x1\/> Selecione uma cena no Asset View<x2\/>
+![ Selecione uma cena no Asset View](media/open-scene-from-asset-view.png)
 
 * clique duas vezes no ativo da cena, ou
 * clique com o botão direito do mouse no ativo e selecione **Editar asset**, ou
 * selecione o ativo e digite **Ctrl + Enter**
 
-> <x1\/>!TIP<x2\/>
+> [!TIP]
 > Você pode ter várias cenas abertas simultaneamente.
 
 ## Use o editor de cenas
 
-<x1\/>Scene Editor<x2\/>
+![Scene Editor](media/create-a-scene-default-scene-editor.png)
 
 As guias **Scene Editor** (A) exibem as cenas abertas. Você pode alternar entre cenas abertas usando as abas.
 

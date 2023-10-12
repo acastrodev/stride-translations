@@ -7,7 +7,7 @@ Você pode usar `UrlReference<Scene>` propriedades em seus scripts para atribuir
 ```cs
 público UrlReference<Scene> ChildScene Url { get; set; }
 
-\/\/...
+//...
 var childScene = Content.Load (ChildSceneUrl);
 
 parentScene.Children.Add (childScene);
@@ -25,10 +25,10 @@ myParentScene.Children.Add(myChildScene1);
 myChildScene1.Add(myChildScene2);
 ```
 
-> <x1\/>!Note<x2\/>
+> [!Note]
 > Se você não estiver usando `UrlReference` certifique-se de que todas as cenas que você deseja carregar estão incluídas na compilação como **root assets** (indicado com ícones azuis no **Asset View**).
 
-> <x1\/> Cenas incluídas no root<x2\/>
+> ![ Cenas incluídas no root](media/scenes-included-in-root.png)
 
 > Para incluir uma cena na compilação, no **Asset View**, clique com o botão direito do mouse no ativo da cena e selecione **Incluir na compilação como root asset**.
 
@@ -43,7 +43,7 @@ Antes que uma cena seja descarregada, remova-a da hierarquia da cena:
 ```cs
 parentScene.Children.Remove(childScene);
 
-\/\/ Alternativamente
+// Alternativamente
 criança Ceno. Pai = nulo;
 ```
 
@@ -57,14 +57,14 @@ Content.Unload (childScene);
 
 Stride também inclui um script de streaming de cena que usa um [trigger](../physics/triggers.md) para carregar cenas.
 
-> <x1\/>!Note<x2\/>
+> [!Note]
 > O script de streaming de cena é incluído como um exemplo. Nem sempre é a maneira mais apropriada de carregar cenas. Sinta-se livre para modificá-lo tanto quanto você precisa.
 
 ### Adicionar um script de streaming de cena
 
 Para adicionar um script de streaming de cena, no **Asset View** (pane inferior por padrão), clique em ** Adicionar asset** e selecione **Scripts > Cena streaming**.
 
-<x1\/>Scene streaming script<x2\/>
+![Scene streaming script](media/scene-streaming-script.png)
 
 Game Studio adiciona um script de streaming de cena para seus ativos de projeto.
 
@@ -78,14 +78,14 @@ Game Studio adiciona um script de streaming de cena para seus ativos de projeto.
 
 3. Com a entidade selecionada, no **Property Grid** (no righy por padrão), clique em **Adicionar componente** e selecione o script **scene streaming**.
 
-   <x1\/> Adicionar script<x2\/>
+   ![ Adicionar script](media/add-scene-streaming-script.png)
 
-   > <x1\/>!Note<x2\/>
+   > [!Note]
    > Se o script de streaming de cena não aparecer na lista de componentes, recarregue os conjuntos.
 
    Game Studio adiciona o script à entidade como um componente.
 
-   <x1\/> Propriedades de streaming de faixa<x2\/>
+   ![ Propriedades de streaming de faixa](media/scene-streaming-script-properties.png)
 
 4. Sob **Url**, especifique o ativo de cena que deseja carregar.
 
@@ -95,7 +95,7 @@ No tempo de execução, quando o gatilho que você criou na etapa 1 é acionado,
 
 ### Propriedades do script de streaming de cenas
 
-<x1\/> Propriedades de streaming de faixa<x2\/>
+![ Propriedades de streaming de faixa](media/scene-streaming-script-properties.png)
 
 | Propriedade | Descrição |
 |----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

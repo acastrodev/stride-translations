@@ -1,7 +1,7 @@
 # Editar pré-fabricados
 
-<x1\/>Introdução<x2\/>
-<x3\/>Designer<x4\/>
+<span class="badge text-bg-primary">Introdução</span>
+<span class="badge text-bg-success">Designer</span>
 
 Você pode editar prefabs no ** Editor de pré-fabricação**.
 
@@ -12,20 +12,20 @@ Para abrir o Editor Prefab do **Asset View**:
 
 * Clique com o botão direito do mouse na prefab que você deseja editar e selecione **Editar asset**:
 
-   <x1\/>Right-click prefab<x2\/>
+   ![Right-click prefab](media/edit-prefab-with-edit-asset-button.png)
 
 * Alternativamente, clique duas vezes no pré-fabricado que deseja editar:
 
-   <x1\/>Double-click prefab<x2\/>
+   ![Double-click prefab](media/open-prefab-editor.gif)
 
 Para abrir o Editor Prefab do **Scene Editor**, clique com o botão direito do mouse em qualquer criança de uma instância prefab e selecione **Open prefab no editor**.
 
-<x1\/> Abra prefab no editor<x2\/>
+![ Abra prefab no editor](media/use-prefabs-prefab-open-prefab-from-prefab-instance.png)
 
 ## Use o Editor Pré-fabricado
 ##
 
-<x1\/>Editar prefabs<x2\/>
+![Editar prefabs](media/prefab-editor.png)
 
 O Editor Prefab funciona de forma semelhante ao Editor de Cena. Por exemplo, você pode:
 
@@ -36,7 +36,7 @@ O Editor Prefab funciona de forma semelhante ao Editor de Cena. Por exemplo, voc
 
 Para obter mais informações sobre a gestão de entidades, consulte [Popular uma cena](../add-entities.md).
 
-<x1\/> Editor de imagem <x2\/>
+![ Editor de imagem ](media/prefab-editor.png)
 
 Quando você edita uma pré-fabricada no Editor Prefab, as alterações são aplicadas às instâncias do pré-fabricado na cena em **real time**.
 

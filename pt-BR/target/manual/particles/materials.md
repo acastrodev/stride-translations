@@ -1,8 +1,8 @@
 # Materiais de partículas
 
-<x1\/>Introdução<x2\/>
-<x3\/>Artista <x4\/>
-<x5\/>Programação<x6\/>
+<span class="badge text-bg-primary">Introdução</span>
+<span class="badge text-bg-success">Artista </span>
+<span class="badge text-bg-success">Programação</span>
 
 **Materials** define como a forma expandida deve ser renderizada. Eles definem cores, texturas e outros parâmetros.
 
@@ -12,7 +12,7 @@
 
 Este material usa uma cor translúcida emissiva RGBA para o pixel shading. No modo de renderização HDR, os valores são usados como intensidade e podem ser superiores a 1.
 
-<x1\/>media\/particles-reference-materials-1.png<x2\/>
+![media/particles-reference-materials-1.png](media/particles-reference-materials-1.png)
 
 | Propriedade | Descrição |
 |---------------------|------------
@@ -26,11 +26,11 @@ A animação flipbook considera uma textura uma sequência de quadros e exibe-o 
 
 Esta imagem é um exemplo de uma textura de animação 4x4 flipbook de uma explosão:
 
-<x1\/>media\/particles-reference-materials-4.png<x2\/>
+![media/particles-reference-materials-4.png](media/particles-reference-materials-4.png)
 
 A animação flipbook tem as seguintes propriedades:
 
-<x1\/>media\/particles-reference-materials-2.png<x2\/>
+![media/particles-reference-materials-2.png](media/particles-reference-materials-2.png)
 
 | Propriedade | Descrição |
 |---------------------|------------
@@ -47,7 +47,7 @@ As coordenadas de textura podem ir abaixo de 0 ou acima 1. Como a textura é amo
 
 A animação de rolagem tem as seguintes propriedades:
 
-<x1\/>media\/particles-reference-materials-3.png<x2\/>
+![media/particles-reference-materials-3.png](media/particles-reference-materials-3.png)
 
 | Propriedade | Descrição |
 |---------------------|-------------

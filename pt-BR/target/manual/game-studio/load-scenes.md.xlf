@@ -23,7 +23,7 @@ parentScene.Children.Add(childScene);
 </source>
 <target xml:lang="pt">público UrlReference&lt;Scene&gt; ChildScene Url { get; set; }
 
-\/\/...
+//...
 var childScene = Content.Load (ChildSceneUrl);
 
 parentScene.Children.Add (childScene);
@@ -54,12 +54,12 @@ myChildScene1.Add(myChildScene2);
 <trans-unit id="tu7" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>!Note<x id="2"/>
 If you are not using <g id="3">UrlReference</g> make sure all the scenes you want to load are included in the build as <g id="4">root assets</g> (indicated with blue icons in the <g id="5">Asset View</g>).</source>
-<target xml:lang="pt">&lt;x1\/&gt;!Note&lt;x2\/&gt;
+<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
 Se você não estiver usando <g id="3">UrlReference</g> certifique-se de que todas as cenas que você deseja carregar estão incluídas na compilação como <g id="4">root assets</g> (indicado com ícones azuis no <g id="5">Asset View</g>).</target>
 </trans-unit>
 <trans-unit id="tu8" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Scenes included in root<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt; Cenas incluídas no root&lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/> Cenas incluídas no root<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu9" xml:space="preserve">
 <source xml:lang="en">To include a scene in the build, in the <g id="1">Asset View</g>, right-click the scene asset and select <g id="2">Include in build as root asset</g>.</source>
@@ -89,7 +89,7 @@ childScene.Parent = null;
 </source>
 <target xml:lang="pt">parentScene.Children.Remove(childScene);
 
-\/\/ Alternativamente
+// Alternativamente
 criança Ceno. Pai = nulo;
 </target>
 </trans-unit>
@@ -114,7 +114,7 @@ criança Ceno. Pai = nulo;
 <trans-unit id="tu19" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>!Note<x id="2"/>
 The scene streaming script is included as an example. It isn't always the most appropriate way to load scenes. Feel free to modify it as much as you need.</source>
-<target xml:lang="pt">&lt;x1\/&gt;!Note&lt;x2\/&gt;
+<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
 O script de streaming de cena é incluído como um exemplo. Nem sempre é a maneira mais apropriada de carregar cenas. Sinta-se livre para modificá-lo tanto quanto você precisa.</target>
 </trans-unit>
 <trans-unit id="tu20" xml:space="preserve">
@@ -127,7 +127,7 @@ O script de streaming de cena é incluído como um exemplo. Nem sempre é a mane
 </trans-unit>
 <trans-unit id="tu22" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Scene streaming script<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt;Scene streaming script&lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/>Scene streaming script<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu23" xml:space="preserve">
 <source xml:lang="en">Game Studio adds a scene streaming script to your project assets.</source>
@@ -155,12 +155,12 @@ O script de streaming de cena é incluído como um exemplo. Nem sempre é a mane
 </trans-unit>
 <trans-unit id="tu29" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Add script<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt; Adicionar script&lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/> Adicionar script<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu30" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>!Note<x id="2"/>
 If the scene streaming script doesn't appear in the list of components, reload the assemblies.</source>
-<target xml:lang="pt">&lt;x1\/&gt;!Note&lt;x2\/&gt;
+<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
 Se o script de streaming de cena não aparecer na lista de componentes, recarregue os conjuntos.</target>
 </trans-unit>
 <trans-unit id="tu31" xml:space="preserve">
@@ -169,7 +169,7 @@ Se o script de streaming de cena não aparecer na lista de componentes, recarreg
 </trans-unit>
 <trans-unit id="tu32" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Scene streaming properties<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt; Propriedades de streaming de faixa&lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/> Propriedades de streaming de faixa<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu33" xml:space="preserve">
 <source xml:lang="en">Under <g id="1">Url</g>, specify the scene asset you want to load.</source>
@@ -189,7 +189,7 @@ Se o script de streaming de cena não aparecer na lista de componentes, recarreg
 </trans-unit>
 <trans-unit id="tu37" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Scene streaming properties<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt; Propriedades de streaming de faixa&lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/> Propriedades de streaming de faixa<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu38" xml:space="preserve">
 <source xml:lang="en">Property</source>

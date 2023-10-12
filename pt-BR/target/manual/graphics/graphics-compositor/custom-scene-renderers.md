@@ -11,15 +11,15 @@ O @'Stride.Rendering.Compositing.SceneRendererBase' fornece uma implementação 
 [Display("My Custom Renderer")]
 classe pública selada MyCustomRenderer: Base de Dados
 (
-    \/\/ Implementa o método DrawCore
+    // Implementa o método DrawCore
     protegido override void DrawCore (contexto RenderContext, RenderDrawContext drawContext)
     (
-        \/\/ Acesso ao dispositivo gráfico
+        // Acesso ao dispositivo gráfico
         var graphicsDevice = drawContext.GraphicsDevice;
         var commandList = drawContext.CommandList;
-        \/\/ Limpa o alvo de renderização atual
+        // Limpa o alvo de renderização atual
         comandoList.Clear(commandList.RenderTargets[0], Color.CornflowerBlue);
-        \/\/ [...] 
+        // [...] 
     }
 }
 ```
@@ -32,12 +32,12 @@ Para desenvolver um renderizador e anexá-lo a um método diretamente, use @'Str
 var cenaRenderer = novo DelegadoSceneRenderer(
     (drawContext) =>
     (
-        \/\/ Acesso ao dispositivo gráfico
+        // Acesso ao dispositivo gráfico
         var graphicsDevice = drawContext.GraphicsDevice;
         var commandList = drawContext.CommandList;
-        \/\/ Limpa o alvo de renderização atual
+        // Limpa o alvo de renderização atual
         comandoList.Clear(commandList.RenderTargets[0], Color.CornflowerBlue);
-        \/\/ [...] 
+        // [...] 
    });
 ```
 

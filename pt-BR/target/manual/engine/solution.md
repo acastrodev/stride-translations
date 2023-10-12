@@ -14,7 +14,7 @@ Cada pacote contém os seguintes três elementos base:
 
 * Dependências: O elemento de dependências lista todos os outros pacotes que são referenciados por um pacote. Os pacotes na lista **Dependencies** possuem seus ativos acessíveis a este pacote.
 
-> <x1\/>!Note<x2\/>
+> [!Note]
 > Você pode alterar a hierarquia no **Solution Explorer** criando pastas e renomeando ou apagando objetos.
 
 Stride usa arquivos de solução Visual Studio para listar todos os pacotes e projeto de código relacionados a um jogo. Assim, você pode facilmente integrar Stride Studio e Visual Studio para o seu projeto porque eles usam o mesmo arquivo raiz. Por padrão, o Stride Studio cria um novo arquivo de solução quando você cria um novo projeto e gerencia referências a projetos e pacotes C#.

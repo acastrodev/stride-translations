@@ -1,13 +1,13 @@
 # Espalhamento de subsuperfície
 
-<x1\/> Intermediário <x2\/>
-<x3\/>Artista <x4\/>
+<span class="badge text-bg-primary">Intermediário</span>
+<span class="badge text-bg-success">Artista </span>
 
 Quando você **subsuperfície dispersão** em um material, a luz é refletida em ângulos irregulares dentro do modelo. Você pode usar isso para renderizar realisticamente materiais translúcidos, como pele, cera, folhas, mármore e porcelana.
 
 A foto abaixo mostra um exemplo da vida real do efeito:
 
-<x1\/>Photo<x2\/>
+![Photo](media/skin-subsurface-scattering-photo.jpg)
 
 *(Imagem cortesia de Davepoo2014, compartilhada sob [ Criativa Atribuição-Share Alike 4.0 Licença internacional](https://creativecommons.org/licenses/by-sa/4.0/deed.en))*
 
@@ -15,7 +15,7 @@ As capturas de tela abaixo demonstram o uso de dispersão subsuperfície em Stri
 
 | Espalhamento de subsuperfície | Espalhamento de subsuperfície em |
 |---------------------------------|------------------------
-| <x1\/> On<x2\/> | <x1\/>Off<x2\/> |
+| ![ On](media/candles-ss-off.jpg) | ![Off](media/candles-ss-on.jpg) |
 
 As sombras são muito mais suaves na segunda imagem, pois mais luz passa pelas velas.
 
@@ -23,25 +23,25 @@ As sombras são muito mais suaves na segunda imagem, pois mais luz passa pelas v
 
 1. Selecione o material que deseja usar sombreamento subsuperfície.
 
-2. Na Grade de Propriedade, sob **Shading**, ao lado de ** Subsuperfície scattering**, clique em <x1\/> Botão de seta azul<x2\/> (** Substituir**) e escolha ** Subsuperfície dispersão**.
+2. Na Grade de Propriedade, sob **Shading**, ao lado de ** Subsuperfície scattering**, clique em ![ Botão de seta azul](~/manual/game-studio/media/blue-arrow-icon.png) (** Substituir**) e escolha ** Subsuperfície dispersão**.
 
-   <x1\/> Habilitar dispersão subsuperfície <x2\/>
+   ![ Habilitar dispersão subsuperfície ](media/enable-subsurface-scattering.png)
 
 ## Propriedades
 
-<x1\/>Propriedades <x2\/>
+![Propriedades ](media/subsurface-scattering-properties.png)
 
 | Propriedade | Função |
 |--------------------|--------------------
 | Largura de dispersão | Até onde a luz se espalha em unidades do mundo [](../../game-studio/world-units.md) |
 | Translutância | Quanto a luz pentrata o material. `0.0` não é translucência; `1.0` é máx. |
 | Mapa de Translucência | Especifique um mapa [grayscale](material-maps.md) para controlar como as diferentes regiões translúcidas do material são. Os valores mais brilhantes produzem mais dispersão. Por exemplo, as orelhas devem espalhar mais luz do que a parte superior da cabeça, porque são mais finas e, portanto, a luz passa por elas mais facilmente. A textura é multiplicada pelo parâmetro **Translucency**. |
-| Perfil de dispersão | O perfil de dispersão para usar durante o passe de renderização para a frente. <p><x1\/>**Skin:** Um shader pré-configurado para renderizar a pele <p><x1\/>**Custom (baseado em pele):** Um perfil baseado no perfil de pele que você pode personalizar a si mesmo |
-| Kernel de dispersão | O kernel de dispersão para usar no processo de postagem de dispersão de subsuperfície. <p><x1\/>**Falloff:** A luz dispersa é mascarada para esta cor. Por exemplo, na captura de tela das velas, a luz se desvanece para um amarelo-laranja. <p><x1\/>**Strength:** Fades to this color |
+| Perfil de dispersão | O perfil de dispersão para usar durante o passe de renderização para a frente. <p><br>**Skin:** Um shader pré-configurado para renderizar a pele <p><br>**Custom (baseado em pele):** Um perfil baseado no perfil de pele que você pode personalizar a si mesmo |
+| Kernel de dispersão | O kernel de dispersão para usar no processo de postagem de dispersão de subsuperfície. <p><br>**Falloff:** A luz dispersa é mascarada para esta cor. Por exemplo, na captura de tela das velas, a luz se desvanece para um amarelo-laranja. <p><br>**Strength:** Fades to this color |
 
 | Transluência: `0,2` | Transluência: `0,98` |
 |-------------------------------------------|--------------------
-| <x1\/> On<x2\/> | <x1\/>Off<x2\/> |
+| ![ On](media/candles-translucency-02.jpg) | ![Off](media/candles-translucency-98.jpg) |
 
 ## Opções de compositor gráfico
 
@@ -49,17 +49,17 @@ Existem opções adicionais de dispersão de subsuperfície no editor de composi
 
 1. No **Asset View** (no painel inferior por padrão), clique duas vezes no **Graphics Compositor** ativo.
 
-   <x1\/>Graphics compositor asset<x2\/>
+   ![Graphics compositor asset](../graphics-compositor/media/graphics-compositor-asset.png)
 
    O editor de compositores gráficos abre.
 
 2. Selecione o nó **superfície scattering**.
 
-   <x1\/>Select node<x2\/>
+   ![Select node](media/select-subsurface-scattering-node.png)
 
 3. No **Property Grid** (à direita por padrão), edite as propriedades.
 
-   <x1\/> Subsuperfície espalhando blur<x2\/>
+   ![ Subsuperfície espalhando blur](media/subsurface-scattering-blur-properties.png)
 
 ### Propriedades
 

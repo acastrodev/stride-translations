@@ -8,8 +8,8 @@
 <trans-unit id="tu2" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Advanced<x id="2"/>
 <x id="3"/>Programmer<x id="4"/></source>
-<target xml:lang="pt">&lt;x1\/&gt;Avançado&lt;x2\/&gt;
-&lt;x3\/&gt;Programação&lt;x4\/&gt;</target>
+<target xml:lang="pt"><x id="1"/>Avançado<x id="2"/>
+<x id="3"/>Programação<x id="4"/></target>
 </trans-unit>
 <trans-unit id="tu3" xml:space="preserve">
 <source xml:lang="en">When loading a scene, Stride automatically handles the draw calls to display the scene throughout the entity system. This page introduces manual drawing.</source>
@@ -69,13 +69,13 @@ var myTorus = GeometricPrimitive.Torus.New(GraphicsDevice);
 // draw one on screen
 myCube.Draw(CommandList, EffectInstance);
 </source>
-<target xml:lang="pt">\/\/ criação
+<target xml:lang="pt">// criação
 var myCube = GeometricPrimitive.Cube.New (GraphicsDevice);
 var myTorus = GeometricPrimitive.Torus.New (GraphicsDevice);
  
-\/\/...
+//...
  
-\/\/ desenhar um na tela
+// desenhar um na tela
 myCube.Draw (CommandList, EffectInstance);
 </target>
 </trans-unit>
@@ -116,14 +116,14 @@ var vertexBuffer = Buffer.Vertex.New(GraphicsDevice, vertices);
 // Create a vertex buffer binding
 var vertexBufferBinding = new VertexBufferBinding(vertexBuffer, layout, vertexCount);
 </source>
-<target xml:lang="pt">\/\/ Criar um layout de vértice com coordenada de posição e textura
+<target xml:lang="pt">// Criar um layout de vértice com coordenada de posição e textura
 var layout = novo VertexDeclaration (VertexElement.Position&lt;Vector3&gt;(), VertexElement.TextureCoordinate&lt;Vector2&gt;()); 
  
-\/\/ Criar o tampão de vértice de uma variedade de vértices
+// Criar o tampão de vértice de uma variedade de vértices
 vértices var = novo VertexPositionTexture[vertexCount];
 var vertexBuffer = Buffer.Vertex.New (GraphicsDevice, vértices);
  
-\/\/ Criar uma ligação de amortecedor de vértice
+// Criar uma ligação de amortecedor de vértice
 var vertexBufferBinding = novo VertexBufferBinding (vertexBuffer, layout, vérticeCount);
 </target>
 </trans-unit>
@@ -153,17 +153,17 @@ commandList.SetVertexBuffers(0, vertexBuffer, 0, vertexBufferBinding.Stride);
 // Draw the vertices
 commandList.Draw(vertexCount);
 </source>
-<target xml:lang="pt">\/\/ Definir o estado do pipeline
+<target xml:lang="pt">// Definir o estado do pipeline
 pipelineStateDescription.InputElements = vérticeBufferBinding.Layout.CreateInputElements();
 pipeStateDescription.PrimitiveType = PrimitiveType.TriangleStrip;
  
-\/\/ Criar e definir um objeto PipelineState
-\/\/...
+// Criar e definir um objeto PipelineState
+//...
 
-\/\/ Ligar o tampão de vértice para o pipeline
+// Ligar o tampão de vértice para o pipeline
 commandList.SetVertexBuffers(0, vérticeBuffer, 0, vérticeBufferBinding.Stride);
  
-\/\/ Desenhe os vértices
+// Desenhe os vértices
 commandList.Draw (vertexCount);
 </target>
 </trans-unit>
@@ -189,15 +189,15 @@ commandList.SetIndexBuffer(indexBuffer, 0, is32Bits);
 // Draw indexed vertices
 commandList.DrawIndexed(indexBuffer.ElementCount);
 </source>
-<target xml:lang="pt">\/\/ Criar o buffer de índice
+<target xml:lang="pt">// Criar o buffer de índice
 var indices = new short[indexCount];
 var is32Bits = false;
 var indexBuffer = Buffer.Index.New (GraphicsDevice, índices);
  
-\/\/ definir o VAO
+// definir o VAO
 commandList.SetIndexBuffer(indexBuffer, 0, is32Bits);
 
-\/\/ Desenho de vértices indexados
+// Desenho de vértices indexados
 commandList.DrawIndexed(indexBuffer.ElementCount);
 </target>
 </trans-unit>

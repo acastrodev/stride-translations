@@ -9,7 +9,7 @@ Esta página explica como configurar seu projeto para trabalhar com o Xbox Live.
    * [criar um projeto](../../get-started/create-a-project.md) e selecionar **UWP** como uma plataforma, ou
    * [adicionar **UWP** como uma plataforma para um projeto existente](../add-or-remove-a-platform.md)
 
-   > <x1\/>!Tip<x2\/>
+   > [!Tip]
    > Para este tutorial, você pode achar útil criar um novo projeto para testar o processo e, em seguida, aplicar o conhecimento aos seus projetos existentes.
 
 2. Certifique-se de que você pode executar o projeto da UWP. Para fazer isso, no Visual Studio, selecione a plataforma que você deseja (UWP-64, UWP-32 ou UWP-ARM) na lista drop-down **Solution Platform** e execute o projeto.
@@ -26,7 +26,7 @@ Esta página explica como configurar seu projeto para trabalhar com o Xbox Live.
 
    XDKS.1 é a caixa de areia usada para as amostras da Microsoft.
 
-   > <x1\/>!Warning<x2\/>
+   > [!Warning]
    > Isso bloqueia contas regulares do Xbox e só permite contas de desenvolvedor. Para voltar, execute:
 
    > ```
@@ -43,7 +43,7 @@ Esta página explica como configurar seu projeto para trabalhar com o Xbox Live.
 
 3. No campo **Default project**, selecione seu projeto UWP (por exemplo *MyGame.UWP*).
 
-   <x1\/>MyGame.UWP<x2\/>
+   ![MyGame.UWP](media/xboxlive01.png)
 
 4. No console, digite:
 
@@ -55,7 +55,7 @@ Esta página explica como configurar seu projeto para trabalhar com o Xbox Live.
 
 5. Certifique-se de que o pacote aparece na lista **References**.
 
-   <x1\/>Pacote na lista<x2\/>
+   ![Pacote na lista](media/xboxlive02.png)
 
 ## 3. Configurar o projeto UWP
 
@@ -67,7 +67,7 @@ Esta página explica como configurar seu projeto para trabalhar com o Xbox Live.
 
 3. No *xboxservices.config* propriedades, sob **Build Action**, selecione **Content**, e em **Copy to Output Directory** Selecione ** Sempre**.
 
-   <x1\/>Propriedades <x2\/>
+   ![Propriedades ](media/xboxlive03.png)
 
 4. Editar *Package.appxmanifest* com detalhes relevantes para o seu projeto.
 
@@ -79,7 +79,7 @@ Esta página explica como configurar seu projeto para trabalhar com o Xbox Live.
 
 Você precisa ativar a capacidade do Xbox Live em seu projeto de jogo sem expor o Xbox Live SDK. Como *MyGame.UWP* já referências *MyGame.Game*, não podemos referenciar isso. Em vez disso, podemos criar uma interface e implementá-la do lado do projeto UWP.
 
-> <x1\/>!Note<x2\/>
+> [!Note]
 > Há várias maneiras de fazer isso. Esta página explica um método.
 
 1. Adicione duas interfaces ao seu jogo, `IAccountManager` e `IConnectedAccount`.
@@ -92,7 +92,7 @@ Você precisa ativar a capacidade do Xbox Live em seu projeto de jogo sem expor 
    Game.Services.AddService(typeof(IAccountManager), novo XboxLiveAccountManager());
    ```
 
-   <x1\/>Referências<x2\/>
+   ![Referências](media/xboxlive04.png)
 
    O script final deve olhar como este no mínimo:
 
@@ -110,20 +110,20 @@ Você precisa ativar a capacidade do Xbox Live em seu projeto de jogo sem expor 
    
                var result = conta. LoginAsync();
    
-   	    		\/\/ TODO Adicione seu código aqui!
+   	    		// TODO Adicione seu código aqui!
            }
        }
    ```
 
 Agora você pode expor a funcionalidade `xbox_live_user` e outras classes em seu jogo.
 
-<x1\/>Property Grid<x2\/>
+![Property Grid](media/xboxlive05.png)
 
 ## Projeto de amostra
 
 * [Baixe um projeto de amostra](media/XboxLiveSample.zip) com Xbox Funcionalidade de login ao vivo
 
-   <x1\/> Projeto de amostra <x2\/>
+   ![ Projeto de amostra ](media/xboxlive08.png)
 
 ## Ver também
 

@@ -13,4 +13,4 @@ Stride Shading Language (SDSL) é automaticamente transformado em uma linguagem 
 - [Shader classes, misturas e herança](shader-classes-mixins-and-inheritance.md)
 - [Composição](composition.md)
 - [Modelos](templates.md)
-- [Shader fase de entrada \/ saída gestão automática](automatic-shader-stage-input-output.md)
+- [Shader fase de entrada / saída gestão automática](automatic-shader-stage-input-output.md)

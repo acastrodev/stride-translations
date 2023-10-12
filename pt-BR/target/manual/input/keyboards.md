@@ -1,7 +1,7 @@
 # Teclados
 
-<x1\/>Introdução<x2\/>
-<x3\/>Programação<x4\/>
+<span class="badge text-bg-primary">Introdução</span>
+<span class="badge text-bg-success">Programação</span>
 
 O **keyboard** é o dispositivo de entrada mais comum para jogos de desktop. Existem duas maneiras de lidar com a entrada do teclado em Stride:
 
@@ -24,7 +24,7 @@ Você pode consultar **key states** e **state changes** com os seguintes método
 | [IsKeyPressed (Keys)](xref:Stride.Input.InputManager.IsKeyPressed\(Stride.Input.Keys\)) | Verifica se uma chave especificada foi **pressed** desde a última atualização. |
 | [IsKeyReleased (Keys)](xref:Stride.Input.InputManager.IsKeyReleased\(Stride.Input.Keys\)) | Verifica se uma chave especificada foi **released** desde a última atualização. |
 
-> <x1\/>!Note<x2\/>
+> [!Note]
 > Stride não suporta recuperar chaves interpretadas, como caracteres especiais e letras maiúsculas.
 
 ## Obter eventos chave
@@ -47,11 +47,11 @@ Cada @'Stride.Input.KeyEvent' tem duas propriedades: @'Stride.Input.KeyEvent. Ke
 ```cs
 classe pública Teclado EventosScript : Sincronização
 (
-	\/\/As variáveis e propriedades declaradas do membro público mostram no Game Studio.
+	//As variáveis e propriedades declaradas do membro público mostram no Game Studio.
 
 	atualização()
 	(
-		\/\/Perform uma ação em cada atualização.
+		//Perform uma ação em cada atualização.
 		se (Game.IsRunning)
 		(
 			se (Input.IsKeyDown (Keys.Left))

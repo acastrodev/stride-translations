@@ -1,11 +1,11 @@
 # Colliders estáticos
 
-<x1\/>Introdução<x2\/>
-<x3\/>Designer<x4\/>
+<span class="badge text-bg-primary">Introdução</span>
+<span class="badge text-bg-success">Designer</span>
 
 ** Os colistores estatísticos** não são movidos por forças como gravidade e colisões, mas outros objetos de física podem colidir com eles. Os colisões estáticos típicos são objetos imovíveis fortes como paredes, pisos, grandes rochas e assim por diante.
 
-<x1\/> Coletores de corpos estáticos e rígidos<x2\/>
+![ Coletores de corpos estáticos e rígidos](media/rigid-bodies-static-and-rigid-body-colliders.png)
 
 ## Adicionar um colisor estático
 
@@ -13,19 +13,19 @@
 
 2. No **Property Grid**, clique em **Add component** e selecione **Static Collider**.
 
-   <x1\/> Adicionar componente de colisor estático<x2\/>
+   ![ Adicionar componente de colisor estático](media/physics-tutorials-create-a-bouncing-ball-add-collider-component.png)
 
 3. Defina a forma [collider](collider-shapes.md) para corresponder à forma da entidade. Para fazer isso, no **Property Grid**, expanda o componente **Static Collider** para ver suas propriedades.
 
-4. Ao lado de **Collider Shapes**, clique em <x1\/>Green plus button<x2\/> (**Add**) e selecione a forma que deseja.
+4. Ao lado de **Collider Shapes**, clique em ![Green plus button](~/manual/game-studio/media/green-plus-icon.png) (**Add**) e selecione a forma que deseja.
 
-   <x1\/> Adicionar componente de colisor estático<x2\/>
+   ![ Adicionar componente de colisor estático](media/physics-tutorials-create-a-bouncing-ball-collider-shape.png)
 
 ## Propriedades do colider estático
 
 Você pode ajustar as propriedades de colisão estáticas no **Property Grid**.
 
-<x1\/> Propriedades do colisor estatístico<x2\/>
+![ Propriedades do colisor estatístico](media/static-collider-properties.png)
 
 | Propriedade | Descrição |
 ----------------------|-----------------------

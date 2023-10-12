@@ -13,7 +13,7 @@ Você pode importar arquivos de áudio para usar como  **recursos de audio** em 
 
    1. Clicar em ![](media/index-audio-add-new-asset-button.png)
 
-   2. Clicar em ![](media/index-audio-import-audio-directly-from-file.png) (**Importar audio diretamente do arquivo**) e selecione o arquivo de áudio.
+   2. Clicar em ![](media/index-audio-import-audio-directly-from-file.png) (**Importar audio diretamente do arquivo**) e selecionar o arquivo de áudio.
 
 2. Para atribuir algumas configurações padrão ao recurso de áudio, escolha um preset. (Você pode ajustar depois as propriedades no [Editor de Propriedades](audio-asset-properties.md).)
 

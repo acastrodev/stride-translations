@@ -1,15 +1,15 @@
 # Propriedades e campos públicos
 
-<x1\/>Introdução<x2\/>
-<x3\/>Programação<x4\/>
+<span class="badge text-bg-primary">Introdução</span>
+<span class="badge text-bg-success">Programação</span>
 
 Quando você declara uma propriedade pública ou campo em um script, a propriedade fica acessível no Game Studio a partir das propriedades do componente de script.
 
-<x1\/>Propriedade no Game Studio<x2\/>
+![Propriedade no Game Studio](media/property-shown-in-game-studio.png)
 
 Você pode anexar o mesmo script a várias entidades e definir diferentes valores de propriedade em cada entidade.
 
-> <x1\/>!Note<x2\/>
+> [!Note]
 > Propriedades e campos devem ser [serializable](serialization.md) para ser usado no Game Studio.
 
 ## Adicionar uma propriedade pública ou campo
@@ -19,16 +19,16 @@ Este script tem uma propriedade pública (`DelayTimeOut`):
 ```cs
 classe pública SampleSyncScript : StartupScript
 (
-	\/\/ Este membro público aparecerá no Game Studio
+	// Este membro público aparecerá no Game Studio
 	flutuador público DelayTime Fora
 }
 ```
 
 Game Studio mostra a propriedade `DelayTimeOut` nas propriedades do componente de script:
 
-<x1\/> Propriedade pública aparece na propriedade Grid<x2\/>
+![ Propriedade pública aparece na propriedade Grid](media/scripts-in-stride-change-value-public-property.png)
 
-> <x1\/>!Note<x2\/>
+> [!Note]
 > Como regra geral, se você quiser exibir a propriedade ou campo no Game Studio, os getters e os setters devem fazer o mínimo possível. Por exemplo, eles não devem tentar chamar métodos ou acessar a API de tempo de execução Stride.
 
 > Por exemplo, o seguinte código criará problemas, uma vez que tenta acessar `Entity.Components`, que só está disponível em tempo de execução:
@@ -37,7 +37,7 @@ Game Studio mostra a propriedade `DelayTimeOut` nas propriedades do componente d
 > classe pública SampleSyncScript : StartupScript
 > (
 > 	atraso de flutuação privado Tempo Fora;
-> 	\/\/ Este membro público aparecerá no Game Studio
+> 	// Este membro público aparecerá no Game Studio
 > 	flutuador público DelayTime Fora
 > 	(
 > 		get { delay retorno Tempo Fora
@@ -60,7 +60,7 @@ Se você não quiser que o Game Studio mostre uma propriedade na Property Grid, 
 
 ```cs
 
-	\/\/ Esta propriedade pública não está disponível no Game Studio
+	// Esta propriedade pública não está disponível no Game Studio
 	[DataMemberIgnore]
 	flutuador público DelayTime Fora
 	
@@ -68,19 +68,19 @@ Se você não quiser que o Game Studio mostre uma propriedade na Property Grid, 
 
 Game Studio não mostra mais a propriedade:
 
-<x1\/> Propriedade pública foi escondida com ```[DataMemberIgnore]```<x2\/>
+![ Propriedade pública foi escondida com ```[DataMemberIgnore]```](media/scripts-in-stride-public-property-with-datamemberignore.png)
 
 ## Adicionando descrições de propriedades
 
 Quando você adicionar um bloco de comentários `<userdoc>` acima de sua propriedade pública em código, Game Studio irá exibi-lo no campo de descrição.
 
 ```cs
-	\/\/\/<summary>
-	\/\/\/ Este resumo não aparecerá no Game Studio
-	\/\/\/<\/summary>
-	\/\/\/<userdoc>
-	\/\/\/ Esta descrição irá aparecer no Game Studio
-	\/\/\/<\/userdoc>
+	///<summary>
+	/// Este resumo não aparecerá no Game Studio
+	///</summary>
+	///<userdoc>
+	/// Esta descrição irá aparecer no Game Studio
+	///</userdoc>
 	flutuador público DelayTime Fora
 
 ```
@@ -88,17 +88,17 @@ Quando você adicionar um bloco de comentários `<userdoc>` acima de sua proprie
 Habilite a geração de arquivos de documentação:
 ```xml
   <PropertyGroup>
-    <TargetFrameworks>net6.0<\/TargetFrameworks>
-    <DocumentationFile>bin\$(Configuration)\$(TargetFramework)\$(AssemblyName).xml<\/DocumentationFile>
-  <\/PropertyGroup>
+    <TargetFrameworks>net6.0</TargetFrameworks>
+    <DocumentationFile>bin\$(Configuration)\$(TargetFramework)\$(AssemblyName).xml</DocumentationFile>
+  </PropertyGroup>
 ```
 
-> <x1\/>!NOTE<x2\/>
+> [!NOTE]
 > Game Studio só vai olhar em seu diretório de saída de compilação para cada conjunto. Recomenda-se usar o caminho acima.
 
 Na próxima recarga, o Game Studio deve exibir a documentação:
 
-<x1\/>A descrição agora mostra no Property Grid<x2\/>
+![A descrição agora mostra no Property Grid](media/userdoc-example.png)
 
 ## [MembroRequiredAttribute](xref:Stride.Core.Annotations.MemberRequiredAttribute)
 Este atributo é usado para especificar se um campo ou propriedade não deve ser deixado nulo no editor.

@@ -1,8 +1,8 @@
 # Texturas
 
-<x1\/>Introdução<x2\/>
-<x3\/>Artista <x4\/>
-<x5\/>Programação<x6\/>
+<span class="badge text-bg-primary">Introdução</span>
+<span class="badge text-bg-success">Artista </span>
+<span class="badge text-bg-success">Programação</span>
 
 **Texturas** são imagens usadas principalmente em [materiais](../materials/index.md). Stride mapeia texturas para as superfícies que o material cobre.
 
@@ -27,7 +27,7 @@ Você pode usar os seguintes tipos de arquivo como texturas:
 * `.tif`
 * `.tiff`
 
-> <x1\/>!Note<x2\/>
+> [!Note]
 > * Stride só importa o primeiro quadro de arquivos de imagem animados, como gifs animados ou PNGs. Eles não animam em Stride; eles aparecem como imagens estáticas.
 > * Stride atualmente não suporta arquivos de filme.
 
@@ -35,28 +35,28 @@ Você pode usar os seguintes tipos de arquivo como texturas:
 
 No **Asset View**, clique em **Add asset** > **Texture**, em seguida, selecione um modelo para a textura (**color**, **grayscale** ou **normal map**):
 
-<x1\/> Adicionar textura<x2\/>
+![ Adicionar textura](media/add-texture.png)
 
-> <x1\/>!Note<x2\/>
+> [!Note]
 > Os alvos do remetente são um tipo diferente de textura, e não usam imagens. Em vez disso, eles renderizam a saída de um [camera](../cameras/index.md). Para mais informações, consulte [Render target](../graphics-compositor/render-textures.md).
 
 Alternativamente, arraste o arquivo de textura do Explorer para o Asset View:
 
-<x1\/>Drap e solte um arquivo de recursos para o Asset View<x2\/>
+![Drap e solte um arquivo de recursos para o Asset View](../../get-started/media/create-assets-drop-resource.png)
 
 Em seguida, selecione um modelo de textura (**color**, **grayscale** ou **normal map**):
 
-<x1\/>Lista de modelos de ativos<x2\/>
+![Lista de modelos de ativos](media/create-assets-drag-drop-select-asset-template.png)
 
 Game Studio adiciona a textura para o Asset View:
 
-<x1\/> Ativo de extensão criado <x2\/>
+![ Ativo de extensão criado ](../../get-started/media/create-assets-drag-drop-asset-created.png)
 
 ## Propriedades de textura
 
 As seguintes propriedades são comuns a todas as texturas.
 
-<x1\/> Propriedades de exposição<x2\/>
+![ Propriedades de exposição](media/texture-properties.png)
 
 | Propriedade | Descrição |
 |------------------|---------
@@ -74,7 +74,7 @@ As seguintes propriedades são comuns a todas as texturas.
 
 As seguintes propriedades se aplicam se você definir a textura **type** para **color**.
 
-<x1\/> Propriedades de textura de cor<x2\/>
+![ Propriedades de textura de cor](media/color-texture-properties.png)
 
 | Propriedade | Descrição |
 |----------|---------
@@ -88,7 +88,7 @@ As seguintes propriedades se aplicam se você definir a textura **type** para **
 
 A seguinte propriedade aplica-se se você definir a textura **type** para **rmágrafo normal**.
 
-<x1\/>Normal map textures<x2\/>
+![Normal map textures](media/normal-map-texture-properties.png)
 
 | Propriedade | Descrição |
 |----------|---------
@@ -100,16 +100,16 @@ Para obter mais informações sobre mapas normais, consulte a página [Normal ma
 
 A textura em tons de cinza usa apenas o canal R da imagem (finalRGBA = originalRRRR).
 
-> <x1\/>!Note<x2\/>
+> [!Note]
 > Se você adicionar uma textura a uma cena (como um componente sprite), e definir o tipo de textura a tons de cinza, parece vermelho, não monocromático. Isso porque a imagem usa o canal R (vermelho).
 
 > Para fazer o canal monocromático, nas propriedades componentes **Sprite**, defina o **Type** como **Grayscale**. Para obter mais informações sobre as propriedades do componente sprite, consulte [Use sprites](../../sprites/use-sprites.md).
 
 Você pode usar texturas em tons de cinza para fornecer valores em mapas materiais [](../materials/material-maps.md). Por exemplo, você pode usar uma textura como um **blend map** para misturar duas camadas de material:
 
-<x1\/> Diagrama de mapas ampliados<x2\/>
+![ Diagrama de mapas ampliados](../materials/media/blend-map-diagram.png)
 
-<x1\/> Diagrama de mapas ampliados<x2\/>
+![ Diagrama de mapas ampliados](../materials/media/blend-map-diagram2.png)
 
 Note como a textura do mapa de mistura corresponde à modelagem no resultado.
 
@@ -119,7 +119,7 @@ Para obter mais informações, consulte [Mapas importantes](../materials/materia
 
 Para obter instruções sobre como acessar as configurações de textura global, consulte a página [Game Settings](../../game-studio/game-settings.md).
 
-<x1\/> Configurações de exposição<x2\/>
+![ Configurações de exposição](../../game-studio/media/texture-settings.png)
 
 | Propriedade | Descrição |
 |-----------------|--------------

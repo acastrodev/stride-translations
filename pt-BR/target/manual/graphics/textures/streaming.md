@@ -1,12 +1,12 @@
 # Streaming
 
-<x1\/>Introdução<x2\/>
-<x3\/>Artista <x4\/>
-<x5\/>Programação<x6\/>
+<span class="badge text-bg-primary">Introdução</span>
+<span class="badge text-bg-success">Artista </span>
+<span class="badge text-bg-success">Programação</span>
 
 Quando você **stream** texturas, O Stride só os carrega quando são necessários. Isso diminui significativamente o tempo necessário para carregar um jogo ou cena, usa menos memória e torna o seu jogo mais fácil de escalar.
 
-> <x1\/>!Note<x2\/>
+> [!Note]
 > Atualmente, apenas texturas podem ser transmitidas.
 
 ## Como Stride transmite texturas
@@ -21,7 +21,7 @@ Atualmente, não há prioridade de carregamento para texturas. Por exemplo, o St
 
 Se os mipmaps (versões de resolução diferente de texturas exibidas a diferentes distâncias) são habilitados nas propriedades [texture](index.md), os mipmaps de baixa resolução carregam primeiro, pois são menores em tamanho. O gif abaixo mostra este processo acontecendo em câmera lenta.
 
-<x1\/>Textura de carga<x2\/>
+![Textura de carga](media/loading-texture.gif)
 
 Na maioria das situações, o processo é muito rápido. Recomendamos que você habilitar mipmaps para streaming, pois significa que versões de baixa resolução de texturas atuam como placeholders até que as versões de maior qualidade possam carregar, reduzindo o pop-in.
 
@@ -39,11 +39,11 @@ Streaming é ativado por padrão para todas as texturas. Você pode querer desat
 
 1. No **Asset View**, selecione a textura.
 
-   <x1\/>Selecione a textura normal do mapa<x2\/>
+   ![Selecione a textura normal do mapa](media/select-texture.png)
 
 2. No **Property Grid**, sob **Format**, use o **Stream** caixa de verificação.
 
-   <x1\/> Ativar streaming<x2\/>
+   ![ Ativar streaming](media/enable-streaming.png)
 
 ## Configurações de streaming globais
 
@@ -53,7 +53,7 @@ Para obter instruções sobre como acessar as configurações de streaming globa
 
 ### Propriedades
 
-<x1\/>Streaming settings<x2\/>
+![Streaming settings](../../game-studio/media/streaming-settings.png)
 
 | Propriedade | Descrição |
 |----------------------|------------

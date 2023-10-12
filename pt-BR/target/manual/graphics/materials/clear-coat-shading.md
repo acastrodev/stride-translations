@@ -1,16 +1,16 @@
 # Sombreamento de capa clara
 
-<x1\/> Intermediário <x2\/>
-<x3\/>Artista <x4\/>
-<x5\/>Programação<x6\/>
+<span class="badge text-bg-primary">Intermediário</span>
+<span class="badge text-bg-success">Artista </span>
+<span class="badge text-bg-success">Programação</span>
 
 **Clear-coat shading** usa renderização física para simular a pintura do veículo.
 
-<x1\/> Revestimento da orelha<x2\/>
+![ Revestimento da orelha](media/clear-coat-2.jpg)
 
 Veículos reais normalmente têm três camadas de tinta aplicada ao corpo, como no diagrama abaixo:
 
-<x1\/>Diagrama <x2\/>
+![Diagrama ](media/paint-layers.png)
 
 Para manter a sombreamento simples, Stride apenas simula as camadas **base coat** (incluindo flocos de metal opcionais) e **clear coat**. Stride combina as camadas dependendo de quão longe a câmera é do material. Isso reduz os artefatos visuais causados pelo mapa normal do floco de metal (que se torna mais visível à medida que a câmera se afasta do material).
 
@@ -24,20 +24,20 @@ A sombreamento de capa clara tem várias vantagens sobre a criação do efeito m
 
 O Stride inclui um modelo de material de capa clara. Para adicioná-lo, no **Asset View**, clique em **Add asset** e selecione **Material > PBR material: clear coat**.
 
-<x1\/> Adicionar casaco claro<x2\/>
+![ Adicionar casaco claro](media/add-clear-coat.png)
 
 Alternativamente, para definir propriedades de capa clara:
 
 1. Selecione o material que você deseja usar shading de capa clara.
 
-2. Na Grade de Propriedade, sob as propriedades **Misc**, ao lado de **Clear coat**, clique em <x1\/> Botão de seta azul <x2\/> (** Substituir**) e escolha **Glear coat**.
+2. Na Grade de Propriedade, sob as propriedades **Misc**, ao lado de **Clear coat**, clique em ![ Botão de seta azul ](~/manual/game-studio/media/blue-arrow-icon.png) (** Substituir**) e escolha **Glear coat**.
 
-   <x1\/>Select clear coat<x2\/>
+   ![Select clear coat](media/select-clear-coat.png)
 
-   > <x1\/>!Note<x2\/>
+   > [!Note]
    > Para a formação de capa clara para funcionar corretamente, certifique-se de **Diffuse**, **Specular** e **Specular model** sob o material **Shading** Propriedades.
 
-   > <x1\/>Shading options<x2\/>
+   > ![Shading options](media/enable-shading-options.png)
 
 ## Propriedades
 
@@ -45,7 +45,7 @@ Você pode acessar as propriedades do shader de capa clara sob **Misc > Casaco c
 
 As propriedades de floco de metal simulam um efeito de pintura metálico. Para desativar o efeito, remova o mapa normal do floco de metal.
 
-<x1\/> Adicionar casaco claro<x2\/>
+![ Adicionar casaco claro](media/clear-coat-properties.png)
 
 | Propriedade | Descrição |
 |------------------------------|----------
@@ -64,11 +64,11 @@ As propriedades de floco de metal simulam um efeito de pintura metálico. Para d
 
 Propriedades que usam operadores binários devem usar valores **normalizados** (ou seja, entre `0.0` e `1.0`). Por exemplo, na captura de tela abaixo, o operador **left** usa um valor de `0.5`.
 
-<x1\/> Operador secundário <x2\/>
+![ Operador secundário ](media/clear-coat-binary-operator.png)
 
 Valores sobre `1.0` podem produzir artefatos de tiling, como na imagem abaixo (note o padrão da grade):
 
-<x1\/>Artifact<x2\/>
+![Artifact](media/clear-coat-artifact1.jpg)
 
 ### Peças de reposição para máquinas
 
@@ -78,9 +78,9 @@ Os flocos de metal no mapa normal do floco de metal incluídos no pacote de ativ
 
 * ** Use coordenadas de textura aleatórias**, impedindo um efeito de tiling óbvio
 
-   <x1\/>Usar coordenadas de textura aleatória<x2\/>
+   ![Usar coordenadas de textura aleatória](media/use-random-texture-coordinates.png)
 
-> <x1\/>!Note<x2\/>
+> [!Note]
 > A opção **Usar coordenadas de textura aleatórias** é cara, então não recomendamos que você use para plataformas móveis.
 
 Alternativamente, use um mapa normal com uma densidade maior de flocos de metal menores.

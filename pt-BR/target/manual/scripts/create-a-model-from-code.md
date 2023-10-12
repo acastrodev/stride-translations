@@ -1,7 +1,7 @@
 # Criar um modelo de código
 
-<x1\/>Introdução<x2\/>
-<x3\/>Programação<x4\/>
+<span class="badge text-bg-primary">Introdução</span>
+<span class="badge text-bg-success">Programação</span>
 
 Você pode criar modelos em scripts no runtime. Você pode fazer isso de várias maneiras diferentes, incluindo:
 
@@ -15,31 +15,31 @@ Você pode criar modelos em scripts no runtime. Você pode fazer isso de várias
 
 1. Crie um novo e vazio script síncrono. Para instruções completas, consulte [Criar um script](../scripts/create-a-script.md).
 
-   <x1\/>Criar um script<x2\/>
+   ![Criar um script](media/create-a-script-script-asset-selection.png)
 
 2. No script, carregar o modelo usando sua URL de ativos. Por exemplo:
 
    ```cs
-   \/\/ Criar uma nova entidade e adicioná-la à cena.
+   // Criar uma nova entidade e adicioná-la à cena.
    	var entity = new Entity();
    	SceneSystem.SceneInstance.RootScene.Entities.Add (entidade);
    
-   \/\/ Adicione um modelo incluído nos arquivos do jogo.
+   // Adicione um modelo incluído nos arquivos do jogo.
    	var modelComponent = entity.GetOrCreate<ModelComponent>();
-   	modelComponent. Modelo = Content.Load<Model>("MyFolder\/MyModel");
+   	modelComponent. Modelo = Content.Load<Model>("MyFolder/MyModel");
    ```
 
-   > <x1\/>!Tip<x2\/>
+   > [!Tip]
    > Para encontrar a URL de ativos do modelo, no **Asset View**, mova o mouse sobre o modelo.
-   > <x3\/> (Get asset URL<x4\/>
+   > ![ (Get asset URL](media/get-asset-url.png)
 
 3. Adicione o script como um componente **script** a qualquer entidade na cena. Não importa qual entidade você usa. Para instruções, veja [Use um script](use-a-script.md).
 
-   <x1\/> Adicionar componente de script para entidade<x2\/>
+   ![ Adicionar componente de script para entidade](media/create-model-from-code-add-script-component.png)
 
 4. No **Asset View**, clique com o botão direito do mouse no modelo que você deseja criar no tempo de execução e selecione **Incluir na compilação como root asset**.
 
-   <x1\/>Incluir em compilação como root asset<x2\/>
+   ![Incluir em compilação como root asset](media/create-model-from-code-include-in-build-as-root-asset.png)
 
    Isso garante que o ativo esteja disponível para o script usar em tempo de execução. Para obter mais informações, consulte [Gerenciar ativos](../game-studio/manage-assets.md).
 
@@ -47,20 +47,20 @@ Você pode criar modelos em scripts no runtime. Você pode fazer isso de várias
 
 1. Crie um novo e vazio script síncrono. Para instruções completas, consulte [Criar um script](create-a-script.md).
 
-   <x1\/> Adicionar novo script<x2\/>
+   ![ Adicionar novo script](media/create-model-from-code-add-new-script.gif)
 
 2. Adicione o script como um componente **script** a qualquer entidade na cena. Não importa qual entidade você usa. Para instruções, veja [Use um script](use-a-script.md).
 
-   <x1\/> Adicionar componente de script para entidade<x2\/>
+   ![ Adicionar componente de script para entidade](media/create-model-from-code-add-script-component.png)
 
 3. No seu script, posicione uma entidade vazia e um modelo vazio. Por exemplo:
 
    ```cs
-   \/\/ Criar uma entidade e adicioná-la à cena.
+   // Criar uma entidade e adicioná-la à cena.
    var entity = new Entity();
    SceneSystem.SceneInstance.RootScene.Entities.Add (entidade);
    
-   \/\/ Criar um modelo e atribuí-lo ao componente do modelo.
+   // Criar um modelo e atribuí-lo ao componente do modelo.
    modelo var = novo Modelo();
    entity.GetOrCreate<ModelComponent>(). Modelo = modelo;  
    ```
@@ -68,22 +68,22 @@ Você pode criar modelos em scripts no runtime. Você pode fazer isso de várias
 4. Em seu script, crie um modelo processual usando primitivas geométricas incorporadas (por exemplo, uma esfera ou cubo). Por exemplo:
 
    ```cs
-   \/\/ Adicione uma ou mais malhas usando primitivas geométricas (por exemplo, esferas ou cubos).
+   // Adicione uma ou mais malhas usando primitivas geométricas (por exemplo, esferas ou cubos).
    var meshDraw = GeometricPrimitive.Sphere.New (GraphicsDevice).ToMeshDraw();
    
    var mesh = new Mesh { Draw = meshDraw }; 
    modelo. Meshes.Add(mesh);
    ```
 
-   > <x1\/>!Note<x2\/>
+   > [!Note]
    > Para usar o código acima, certifique-se de adicionar `usando Stride. Extensões` para o topo do seu script.
 
    Alternativamente, crie uma malha usando seu próprio vértice e buffers de índice. Por exemplo:
 
    ```cs
-   \/\/ Criar uma malha usando seu próprio vértice e buffers de índice.
+   // Criar uma malha usando seu próprio vértice e buffers de índice.
    
-   mesh = novo Mesh { Draw = novo MeshDraw { \/* Tampão de vértice e configuração de tampão de índice *\/ } };
+   mesh = novo Mesh { Draw = novo MeshDraw { /* Tampão de vértice e configuração de tampão de índice */ } };
    modelo. Meshes.Add(mesh);
    ```
 
@@ -103,7 +103,7 @@ Você pode criar modelos em scripts no runtime. Você pode fazer isso de várias
    ( 
        Desenho = novo Stride.Rendering.MeshDraw
        ( 
-           \/* Tampão de vértice e configuração de tampão de índice *\/ 
+           /* Tampão de vértice e configuração de tampão de índice */ 
            PrimitiveType = Stride.Graphics.PrimitiveType.TriangleList,
            DrawCount = indícios. Comprimento,
            IndexBuffer = novo IndexBufferBinding(indexBuffer, true, indices.Length),
@@ -111,12 +111,12 @@ Você pode criar modelos em scripts no runtime. Você pode fazer isso de várias
                                      VertexPositionTexture.Layout, vertexBuffer.ElementCount) },
        }
    };            
-   \/\/ adicionar a malha ao modelo
+   // adicionar a malha ao modelo
    model.Meshes.Add (personalizado Malha);
    ```
 
 
-> <x1\/>!Note<x2\/>
+> [!Note]
 > Para obter mais informações sobre como configurar os amortecedores de vértice e índice, consulte os vértices [Drawing](../graphics/low-level-api/draw-vertices.md).
 
 Finalmente, você precisa dar o modelo um ou mais materiais. Há duas formas de fazer isto.
@@ -128,15 +128,15 @@ Finalmente, você precisa dar o modelo um ou mais materiais. Há duas formas de 
    Por exemplo:
 
    ```cs
-   \/\/ Adicione um ou mais materiais. Como os modelos podem esperar vários materiais (um por malha), Mesh.MaterialIndex especifica qual material na lista é usado para que malha.
+   // Adicione um ou mais materiais. Como os modelos podem esperar vários materiais (um por malha), Mesh.MaterialIndex especifica qual material na lista é usado para que malha.
    
-   Material material = Conteúdo.Load<Material>("MyFolder\/MyMaterial");
+   Material material = Conteúdo.Load<Material>("MyFolder/MyMaterial");
    modelo. Material.Adicionar (material);
    ```
 
 2. No **Asset View**, clique com o botão direito de cada ativo de material que o seu script usa e selecione `Incluir na compilação como root asset`.
 
-   <x1\/>Incluir em compilação como root asset<x2\/>
+   ![Incluir em compilação como root asset](media/create-model-from-code-include-material-in-build-as-root-asset.png)
 
    Isso garante que o ativo esteja disponível para o script usar em tempo de execução. Para obter mais informações, consulte [Gerenciar ativos](../game-studio/manage-assets.md).
 
@@ -145,7 +145,7 @@ Finalmente, você precisa dar o modelo um ou mais materiais. Há duas formas de 
 Por exemplo:
 
 ```cs
-    \/\/ Criar um material (por exemplo, com cor difusa vermelha).
+    // Criar um material (por exemplo, com cor difusa vermelha).
     material de vareta Descrição: new MaterialDescriptor
     (
         Atributos =

@@ -1,7 +1,7 @@
 # Composição
 
-<x1\/>Introdução<x2\/>
-<x3\/>Programação<x4\/>
+<span class="badge text-bg-primary">Introdução</span>
+<span class="badge text-bg-success">Programação</span>
 
 Além do sistema de herança, o SDSL introduz o conceito de **composition**. Uma composição é um membro cujo tipo é outra classe shader. É definido da mesma forma que as variáveis.
 
@@ -110,7 +110,7 @@ testShader : Base de dados
 	BaseShader comp1;
 };
  
-\/\/ shader resultante (representação)
+// shader resultante (representação)
 teste de sombreador
 (
 	baseStage flutuante Valor;
@@ -142,7 +142,7 @@ testShader : Base de dados
 	BaseShader comp1;
 };
  
-\/\/ shader resultante (representação)
+// shader resultante (representação)
 teste de sombreador
 (
 	flutuar BaseStageMethod()
@@ -206,10 +206,10 @@ testShader : Base de dados
 	CompShadercomp1;
 };
  
-\/\/ shader resultante (representação)
+// shader resultante (representação)
 teste de sombreador
 (
-	\/\/ método clonado
+	// método clonado
 	flutuar base_BaseStageMethod()
 	(
 		retorno 1.0;
@@ -220,12 +220,12 @@ teste de sombreador
 		retorno 1.0 + base_BaseStageMethod();
 	}
  
-	float BaseStageMethod() \/\/ in fact comp1_BaseStageMethod
+	float BaseStageMethod() // in fact comp1_BaseStageMethod
 	(
-		return 1.0 + comp0_BaseStageMethod; \/\/ 3.0f
+		return 1.0 + comp0_BaseStageMethod; // 3.0f
 	}
  
-	\/\/ não método clonado
+	// não método clonado
 	flutuar base_BaseStageMethodNotCloned()
 	(
 		retorno 1.0f;
@@ -233,7 +233,7 @@ teste de sombreador
  
 	flutuar BaseStageMethodNotCloned()
 	(
-		retorno 1.0f + base_BaseStageMethodNotCloned(); \/\/ 2.0f
+		retorno 1.0f + base_BaseStageMethodNotCloned(); // 2.0f
 	}
 };
 ```
@@ -246,5 +246,5 @@ Este comportamento é útil quando você quer repetir uma função simples, mas 
 * [Índice de linguagem de sombra](index.md)
    - [Shader classes, misturas e herança](shader-classes-mixins-and-inheritance.md)
    - [Modelos](templates.md)
-   - [Shader fase de entrada \/ saída gestão automática](automatic-shader-stage-input-output.md)
+   - [Shader fase de entrada / saída gestão automática](automatic-shader-stage-input-output.md)
    - [Etapas de Shader](shader-stages.md)

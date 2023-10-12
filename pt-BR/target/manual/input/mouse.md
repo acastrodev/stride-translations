@@ -1,7 +1,7 @@
 # Mouse
 
-<x1\/>Introdução<x2\/>
-<x3\/>Programação<x4\/>
+<span class="badge text-bg-primary">Introdução</span>
+<span class="badge text-bg-success">Programação</span>
 
 O **mouse** é um dispositivo de entrada comum para jogos de desktop.
 
@@ -39,7 +39,7 @@ Você pode obter a posição do mouse em coordenadas normalizadas ou absolutas.
 
 [InputManager.AbsoluteMousePosition](xref:Stride.Input.InputManager.AbsoluteMousePosition) retorna a posição do ponteiro do mouse em coordenadas X e Y absolutas (o tamanho real da tela em pixels). Por exemplo, se o ponteiro estiver no canto superior esquerdo da tela, os valores são (0,0). Se o ponteiro estiver no canto inferior direito, os valores dependem da resolução da tela (por exemplo 1280, 720).
 
-> <x1\/>!Tip<x2\/>
+> [!Tip]
 > Para obter o tamanho real da tela, acesse [IPointerDevice. SurfaceSize](xref:Stride.Input.IPointerDevice.SurfaceSize). Por exemplo:
 > ```cs
 > superfície da vareta Tamanho = Entrada.Mouse.SurfaceSize;
@@ -82,7 +82,7 @@ Você pode bloquear a posição do mouse e ocultar o cursor com as seguintes pro
 | [UnlockMousePosition()](xref:Stride.Input.InputManager.UnlockMousePosition) | Desbloqueia a posição do mouse bloqueada pelo evento [LockMousePosition(Boolean)](xref:Stride.Input.InputManager.LockMousePosition\(System.Boolean\)). |
 | [IsMousePositionLocked](xref:Stride.Input.InputManager.IsMousePositionLocked) | Verifica se a posição do mouse está bloqueada. |
 
-> <x1\/>!Tip<x2\/>
+> [!Tip]
 > Você pode obter ou definir a visibilidade do mouse com [GameWindow.IsMouseVisible](xref:Stride.Games.GameWindow.IsMouseVisible).
 
 ## Exemplo de código
@@ -92,16 +92,16 @@ classe pública MouseInputScript : Sincronização
 (
 	atualização()
 	(
-		\/\/Se o botão esquerdo do mouse for pressionado nesta atualização, faça alguma coisa.
+		//Se o botão esquerdo do mouse for pressionado nesta atualização, faça alguma coisa.
 		se (Input.IsMouseButtonDown (MouseButton.Left))
 		(   
 		}
-		\/\/Se o botão do meio do mouse foi pressionado desde a última atualização, faça alguma coisa.
+		//Se o botão do meio do mouse foi pressionado desde a última atualização, faça alguma coisa.
 		se (Input.IsMouseButtonPressed (MouseButton.Middle))
 		(  
 		}
 
-		\/\/Se o mouse moveu mais de 0,2 unidades do tamanho da tela na direção X, faça algo.
+		//Se o mouse moveu mais de 0,2 unidades do tamanho da tela na direção X, faça algo.
 		se (Input.MouseDelta.X > 0,2f)
 		(
 		}

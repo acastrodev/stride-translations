@@ -1,8 +1,8 @@
 # Tutorial: Criar uma trilha
 
-<x1\/> Intermediário <x2\/>
-<x3\/>Artista <x4\/>
-<x5\/>Programação<x6\/>
+<span class="badge text-bg-primary">Intermediário</span>
+<span class="badge text-bg-success">Artista </span>
+<span class="badge text-bg-success">Programação</span>
 
 Este tutorial demonstra como usar partículas para criar um efeito [trail](../ribbons-and-trails.md) para um balanço de espada.
 
@@ -18,7 +18,7 @@ Este tutorial demonstra como usar partículas para criar um efeito [trail](../ri
 
 2. No **Criar um novo jogo ** diálogo, em Pacotes de Ativos, selecione ** Modelos animados**. O pacote Animated Models contém ativos que vamos usar neste exemplo. (Nota que vamos fazer o nosso efeito de partícula do zero.)
 
-   <x1\/>Criar um novo jogo<x2\/>
+   ![Criar um novo jogo](media/create-a-new-game.png)
 
 3. Dê ao projeto um nome (por exemplo *MyTrailEffect*) e clique em **OK**. Game Studio carrega uma cena simples com algumas entidades.
 
@@ -30,29 +30,29 @@ Este tutorial demonstra como usar partículas para criar um efeito [trail](../ri
 
 2. Com o **mannequinModel** selecionado, no **Property Grid**, selecione **Add component > Animações**. Isso adiciona um componente de animação ao modelo.
 
-   <x1\/> Adicionar animações<x2\/>
+   ![ Adicionar animações](media/add-animation.png)
 
-3. Sob o componente **Animações**, clique em <x1\/>Green plus button<x2\/> (**Add**).
+3. Sob o componente **Animações**, clique em ![Green plus button](~/manual/game-studio/media/green-plus-icon.png) (**Add**).
 
-   <x1\/> Adicionar animação<x2\/>
+   ![ Adicionar animação](media/add-new-playing-animation.png)
 
 4. Digite um nome para a animação.
 
-5. Ao lado de <g id="1">Clip</g>, clique em <x1\/>Hand icon<x2\/>Select an asset</g>).<g id="4">
+5. Ao lado de <g id="1">Clip</g>, clique em <x id="2"/>Hand icon<x id="3"/>Select an asset</g>).<g id="4">
 
-   <x1\/>Selecione um ativo de animação<x2\/>
+   ![Selecione um ativo de animação](media/select-animation-asset.png)
 
 6. Navegue para a pasta **Animações**, selecione a animação **Sword_R** e clique em **OK**. Esta é a nossa animação de folga à esquerda.
 
-   <x1\/>Selecione um ativo de animação<x2\/>
+   ![Selecione um ativo de animação](media/select-animation-asset-in-asset-picker.png)
 
 7. Para reproduzir a animação no tempo de execução, precisamos adicionar um script [animation](../../animation/animation-scripts.md). Podemos usar o script pré-construído **AnimationStart**. No **Asset View** (parte inferior por padrão), clique em **Add asset** e escolha **Script > Animação start**.
 
-   <x1\/> Adicionar script de animação<x2\/>
+   ![ Adicionar script de animação](../../animation/media/animations-additive-animations-animation-start.png)
 
 8. Especifique um nome para o script e clique em **Create script**.
 
-   <x1\/>Criar script<x2\/>
+   ![Criar script](../../animation/media/name-animation-script.png)
 
    9a. Se o Game Studio perguntar se deseja salvar seu script, clique em **Save script**.
 
@@ -60,28 +60,28 @@ Este tutorial demonstra como usar partículas para criar um efeito [trail](../ri
 
 9. Com o **mannequinModel** selecionado, no **Property Grid**, clique em **Adicionar componente** e selecione o script **AnimationStart**.
 
-   <x1\/>Add AnimationStart script<x2\/>
+   ![Add AnimationStart script](../../animation/media/select-animation-start.png)
 
-   > <x1\/>!Note<x2\/>
+   > [!Note]
    > Se o script de animação não estiver na lista de componentes, na barra de tarefas, salve seu projeto e clique em **Recarregar conjuntos de jogos e atualizar scripts**.
 
-10. Sob o componente **Animation**, sob **Item 0**, clique em <x1\/>Hand icon<x2\/> (**Select an asset**).
+10. Sob o componente **Animation**, sob **Item 0**, clique em ![Hand icon](~/manual/game-studio/media/hand-icon.png) (**Select an asset**).
 
-   <x1\/>Selecione um ativo de animação<x2\/>
+   ![Selecione um ativo de animação](media/select-animation-asset.png)
 
 11. Navegue para a pasta **Animações** e selecione a animação **Sword_R** novamente.
 
-   <x1\/>Selecione um ativo de animação<x2\/>
+   ![Selecione um ativo de animação](media/select-animation-asset-in-asset-picker.png)
 
 12. Agora vamos dar uma arma ao manequim. No **Asset View**, procure na pasta **Models** e arraste o **SwordModel** para o mannequinModel na Árvore da Entidade. Isso torna o SwordModel uma entidade infantil do **mannequinModel**.
 
 13. Na Árvore da Entidade, expanda **mannequinModel** para ver suas entidades infantis e selecione **SwordModel**.
 
-   <x1\/>SwordModel entidade infantil<x2\/>
+   ![SwordModel entidade infantil](media/SwordModel-child-entity.png)
 
 14. Com o no **Property Grid**, clique em **Add component** e selecione **Model Node Link**. Isso é chamado de **Bone Link** em algumas versões do Stride.
 
-   <x1\/> Adicionar nó do modelo Link<x2\/>
+   ![ Adicionar nó do modelo Link](media/add-model-node-link.png)
 
    Podemos usar isto para ligar o SwordModel a um ponto no esqueleto mannequinModel. Não há necessidade de especificar um alvo, pois a entidade usa sua entidade pai (**mannequinModel**) por padrão.
 
@@ -105,33 +105,33 @@ Primeiro vamos construir uma trilha básica, só para ver como parece.
 
 1. No Game Studio, selecione o **SwordModel**. No **Property Grid**, clique em **Add component** e selecione **Particle System**.
 
-   <x1\/> Adicionar sistema de partículas <x2\/>
+   ![ Adicionar sistema de partículas ](media/add-particle-system.png)
 
    Isso adiciona um componente do sistema de partículas ao modelo, que usaremos para construir um efeito de trilha.
 
 2. Clique em **Fonte** para expandir suas propriedades.
 
-   <x1\/>Expand Propriedades da fonte<x2\/>
+   ![Expand Propriedades da fonte](media/expand-source-properties.png)
 
-3. Ao lado de **Emitters**, clique em <x1\/>Green plus button<x2\/> (**Add**). Isso adiciona um novo emissor de partículas.
+3. Ao lado de **Emitters**, clique em ![Green plus button](~/manual/game-studio/media/green-plus-icon.png) (**Add**). Isso adiciona um novo emissor de partículas.
 
 4. Sob as propriedades emissoras, defina o **Shape** para **Trail**.
 
-   <x1\/>Set Shape to Trail<x2\/>
+   ![Set Shape to Trail](media/emitter-shape-trail.png)
 
 5. Infelizmente, precisamos fazer um breve desvio devido a um bug em Stride. Sob as propriedades **Shape**, defina o **Axis** para **Center**. (A forma deve ser realmente definida para Edge, mas as configurações Edge e Center são revertidas na interface do usuário. Isto será fixado em Stride 1.9.3.)
 
-   <x1\/>Set Axis to Center<x2\/>
+   ![Set Axis to Center](media/set-axis-to-center.png)
 
-6. Ao lado de **Spawners**, clique em <x1\/>Green plus button<x2\/> (**Add**) e selecione **Per frame**.
+6. Ao lado de **Spawners**, clique em ![Green plus button](~/manual/game-studio/media/green-plus-icon.png) (**Add**) e selecione **Per frame**.
 
-   <x1\/> Adicionar espaçador por quadro<x2\/>
+   ![ Adicionar espaçador por quadro](media/add-per-frame-spawner.png)
 
    Isso adiciona um espawner per-frame ao emissor, que gera X número de partículas por quadro (ao contrário de, digamos, por segundo).
 
-7. Ao lado de **Initializadores**, clique em <x1\/>Green plus button<x2\/> (**Add**) e selecione **Velocity**.
+7. Ao lado de **Initializadores**, clique em ![Green plus button](~/manual/game-studio/media/green-plus-icon.png) (**Add**) e selecione **Velocity**.
 
-   <x1\/> Adicionar inicializador de velocidade<x2\/>
+   ![ Adicionar inicializador de velocidade](media/add-velocity-initializer.png)
 
    Isso adiciona um inicializador de velocidade ao emissor.
 
@@ -139,13 +139,13 @@ Primeiro vamos construir uma trilha básica, só para ver como parece.
 
 8. Sob o inicializador de velocidade, defina os valores **Velocity min** e **Velocity max** para **0, 5, 0**.
 
-   <x1\/> Velocidade de segurança min e max<x2\/>
+   ![ Velocidade de segurança min e max](media/set-velocity-min-and-max.png)
 
    Isso restringe as partículas ao eixo Y, como uma folha infinitamente fina de papel.
 
-9. Ao lado de **Initializadores**, clique em <x1\/>Green plus button<x2\/> (**Add**) e selecione **Direction**.
+9. Ao lado de **Initializadores**, clique em ![Green plus button](~/manual/game-studio/media/green-plus-icon.png) (**Add**) e selecione **Direction**.
 
-   <x1\/> Adicionar inicializador de direção<x2\/>
+   ![ Adicionar inicializador de direção](media/add-direction-initializer.png)
 
    Isso adiciona um inicializador de direção ao emissor.
 
@@ -165,22 +165,22 @@ Temos um rasto, mas ainda não parece muito bom. É demasiado longo, é um únic
 
 Como as partículas são renderizadas como outdoors, os segmentos da trilha se interligam estranhamente. Para criar um efeito de trilha adequado, precisamos classificar as partículas em uma ordem adicionando um inicializador de ordem **spawn**.
 
-1. Nas propriedades do SwordModel, sob <g id="1">Particle System > Source > Emitters</g>, ao lado de <g id="2">Initializers</g>, clique em <x1\/>Green plus button<x2\/> (<g id="5">Add</g>Spawn Order</g>.<g id="6">
+1. Nas propriedades do SwordModel, sob <g id="1">Particle System > Source > Emitters</g>, ao lado de <g id="2">Initializers</g>, clique em <x id="3"/>Green plus button<x id="4"/> (<g id="5">Add</g>Spawn Order</g>.<g id="6">
 
-   > <x1\/>!Note<x2\/>
+   > [!Note]
    > Certifique-se de que você não seleciona **Spawn Order (Parent)** ou **Spawn Order (Group)**.
 
-   <x1\/>Adicionar inicializador de ordem desova<x2\/>
+   ![Adicionar inicializador de ordem desova](media/add-spawn-order-initializer.png)
 
    Isso adiciona um inicializador de ordem espawn ao emissor. Não tem propriedades, mas dá às partículas um SpawnID que podemos classificá-las.
 
 2. Sob **Emitters**, sob **Sorting**, escolha **ByOrder**.
 
-   <x1\/>Sorte por ordem<x2\/>
+   ![Sorte por ordem](media/sort-by-order.png)
 
 3. Sob **Initalizadores**, sob o **Velocity** inicializador, alterar tanto o **Velocity min** e **Velocity max** valores para **0,0.5,0**.
 
-   <x1\/> Velocidade de mudança<x2\/>
+   ![ Velocidade de mudança](media/change-velocity.png)
 
 4. Corre o jogo.
 
@@ -196,7 +196,7 @@ Agora as partículas movem-se coesa.
 
 Nas propriedades do SwordModel, sob **Particle System > Source > Emitters**, altere o **Lifespan** para **0.2, 0.2**.
 
-<x1\/>Alterar vida útil emitter<x2\/>
+![Alterar vida útil emitter](media/change-emitter-lifespan.png)
 
 Mova o manequim ao redor da cena e observe como as trilhas extinguem mais rapidamente.
 
@@ -204,29 +204,29 @@ Mova o manequim ao redor da cena e observe como as trilhas extinguem mais rapida
 
 Para corrigir a cor, daremos às partículas uma textura "swoosh":
 
-<x1\/>Swoosh.png texture<x2\/>
+![Swoosh.png texture](media/swoosh.png)
 
 1. Salve a imagem de textura acima (**swoosh.png**) no disco.
 
 2. Importa-o no projeto. Para fazer isso, no **Asset View**, clique em **Add asset > Textures > Color** e selecione **swoosh.png**.
 
-   <x1\/> Adicionar uma textura<x2\/>
+   ![ Adicionar uma textura](media/add-texture.png)
 
-3. Nas propriedades **SwordModel**, expanda **Emitters > Material**. Clique em <x1\/>Hand icon<x2\/> (**Select an asset**). Navegue para a pasta **Textures** e selecione **swoosh.png**.
+3. Nas propriedades **SwordModel**, expanda **Emitters > Material**. Clique em ![Hand icon](~/manual/game-studio/media/hand-icon.png) (**Select an asset**). Navegue para a pasta **Textures** e selecione **swoosh.png**.
 
-   <x1\/> Adicionar textura material<x2\/>
+   ![ Adicionar textura material](media/add-material.png)
 
 4. Defina a barra **Alpha-Add** para **1**, então é 100% emissiva.
 
-   <x1\/>Alpha add bar<x2\/>
+   ![Alpha add bar](media/alpha-add.png)
 
 5. Sob as propriedades **Particle emitter**, expande **Shape** e configure **UV Coords** para **Stretched** e **UV Factor** para **1**.
 
-   <x1\/> Set UV<x2\/>
+   ![ Set UV](media/UV-coords-and-factor.png)
 
 6. Expanda **UV Rotate**. Em **Clockwise**, selecione 90 graus. Isso gira a textura 90 graus no sentido horário, de modo que as linhas "deslize" apontam na direção certa.
 
-   <x1\/> Material de rotação <x2\/>
+   ![ Material de rotação ](media/rotate-material.png)
 
 7. Corre o jogo.
 
@@ -244,21 +244,21 @@ Até agora, criamos um efeito de partícula anexando-o como um componente para a
 
 1. Clique com o botão direito do mouse no **SwordModel** e selecione **Criar prefab da seleção**.
 
-   <x1\/>Criar prefab de seleção<x2\/>
+   ![Criar prefab de seleção](media/create-prefab-from-selection.png)
 
    Game Studio cria uma pré-fabricada do SwordModel e adiciona-a ao Asset View. Ao criar um pré-fabricado da seleção, podemos copiar rapidamente as opções que configuramos até agora.
 
 2. Nós não queremos que o próprio SwordModel seja um prefab — nós apenas o usamos como um modelo para criar o prefab de. Ele deve ser separado do nosso novo efeito de partícula prefab, então clique com o botão direito e selecione **Break link para prefab**.
 
-   <x1\/>Break link para prefab<x2\/>
+   ![Break link para prefab](media/break-link-to-prefab.png)
 
 3. Como nomear as coisas corretamente torna tudo mais fácil, renomeie o prefab *SwordTrail*. Para fazer isso, no **Asset View**, clique com o botão direito do mouse no **SwordModel** prefab, selecione **Rename** e digite *SwordTrail*.
 
-   <x1\/> Renomear prefab<x2\/>
+   ![ Renomear prefab](media/rename-prefab.png)
 
 4. Clique duas vezes no pré-fabricado **SwordTrail** para abri-lo no Editor Prefab. É aqui que vamos personalizar a pré-fabricada.
 
-   <x1\/> Editor de imagem <x2\/>
+   ![ Editor de imagem ](media/prefab-editor.png)
 
 5. O prefab contém apenas uma entidade, SwordModel. Não vai ser um modelo por muito mais tempo, então vamos renomear esta entidade *SwordTrail* (o mesmo que o prefab a que pertence).
 
@@ -266,11 +266,11 @@ Até agora, criamos um efeito de partícula anexando-o como um componente para a
 
 7. Da mesma forma, sob **Particle System > Source > Emitters > Iniciantes**, exclua o inicializador **Velocity**. Por enquanto, queremos que o efeito prefab seja estático.
 
-   <x1\/>Excluir o inicializador de velocidade<x2\/>
+   ![Excluir o inicializador de velocidade](media/delete-velocity-initializer.png)
 
 8. Nas propriedades **SwordTrail**, abaixo de **Particle System > Source > Emitters > Spawners**, set **Loop** a **One shot** e change **Duration** a **0.2, 0,2**.
 
-   <x1\/>Defina o loop inicializador e duração<x2\/>
+   ![Defina o loop inicializador e duração](media/initializers-loop.png)
 
 9. Agora criamos uma pré-fabricada separada para o efeito de partícula, não precisamos manter um efeito de partícula no modelo de espada. Na cena principal, selecione **SwordModel** e exclua o componente **Particle System**.
 
@@ -280,7 +280,7 @@ Nós criamos um efeito de trilha de espada prefab. Em seguida, vamos usar um scr
 
 1. Abra o projeto no Visual Studio. Para fazer isso, no Game Studio, clique no ícone Visual Studio (**Open in IDE**).
 
-   <x1\/>Open Visual Studio<x2\/>
+   ![Open Visual Studio](media/open-visual-studio.png)
 
 2. No Visual Studio, clique com o botão direito do mouse no projeto do jogo e selecione **Add > Novo item**. No campo **Name**, dê ao seu script o nome *SpawnTrail* e clique em **Add**.
 
@@ -290,35 +290,35 @@ Nós criamos um efeito de trilha de espada prefab. Em seguida, vamos usar um scr
 
 4. No script, certifique-se de que o ``namespace`` esteja correto. Isso geralmente corresponde ao nome do projeto Stride (por exemplo *MyTrailEffect*).
 
-   <x1\/>Nomespace<x2\/>
+   ![Nomespace](media/script-namespace.png)
 
 5. Salve o script e o projeto Visual Studio (**Ctrl + Shift + S**).
 
 6. No Game Studio, recarregue os conjuntos.
 
-   <x1\/>Reload assemblies<x2\/>
+   ![Reload assemblies](media/reload-assemblies.png)
 
 7. No **MainScene**, selecione o **SwordModel**.
 
-   <x1\/>Select SwordModel<x2\/>
+   ![Select SwordModel](media/select-swordmodel.png)
 
 8. Nas propriedades do SwordModel, clique em **Adicionar componente** e selecione o script **SpawnTrail**. Isso adiciona o script como um componente.
 
-   <x1\/> Adicionar componente de script<x2\/>
+   ![ Adicionar componente de script](media/add-script-component.png)
 
-9. Sob as propriedades do componente **SpawnTrail**, ao lado de **Source**, clique em <x1\/>Hand icon<x2\/> (**Select an asset**).
+9. Sob as propriedades do componente **SpawnTrail**, ao lado de **Source**, clique em ![Hand icon](~/manual/game-studio/media/hand-icon.png) (**Select an asset**).
 
-   <x1\/> Selecione uma fonte<x2\/>
+   ![ Selecione uma fonte](media/select-asset-for-script.png)
 
 10. No Entity Picker, selecione a pré-fabricada **SwordTrail**.
 
-   <x1\/>Selecione o padrão de espadas pré-fab<x2\/>
+   ![Selecione o padrão de espadas pré-fab](media/select-swordtrail-prefab-as-asset.png)
 
 11. No componente SpawnTrail, no campo **Animation**, clique no ícone da mão (**Selecione um ativo**).     A janela **Selecione um ativo** abre.
 
 No painel esquerdo, selecione o **mannequinModel** e clique em **OK**.
 
-    ! [Pick manequin model in Entity Picker] (media\/pick-mannequin-model.png)
+    ! [Pick manequin model in Entity Picker] (media/pick-mannequin-model.png)
 
 12. Corre o jogo.
 
@@ -354,7 +354,7 @@ Você pode notar que nosso efeito de trilha parece um pouco irregular, criando u
 
 1. No pré-fabricada <g id="1">SwordTrail</g>, na entidade <g id="2">SwordTrail</g>, sob <g id="3">Particle System > Source > Emitters > Shape</g>, set <g id="4">Smoothing</g>Best</g> e <g id="6">.<g id="5"></g><g id="7"></g>
 
-   <x1\/>Smoothing e segmentos<x2\/>
+   ![Smoothing e segmentos](media/smoothing-best.png)
 
    Isso adiciona três vértices entre as partículas de nossa trilha, o que deve ser suficiente para criar um efeito visivelmente mais suave.
 
@@ -368,13 +368,13 @@ Você pode notar que nosso efeito de trilha parece um pouco irregular, criando u
 
 A curva interna, na colcha de espada, é mais suave. Mas a curva na borda da espada ainda está marcada.
 
-<x1\/> Áreas isoladas e não moídas<x2\/>
+![ Áreas isoladas e não moídas](media/smoothing.png)
 
 Queremos alisar o efeito na borda da espada, onde é mais perceptível. Para fazer isso, vamos virar a direcção das partículas.
 
 1. Ainda no pré-fabricado **SwordTrail**, nas propriedades de componentes **Transform**, altere o **Position** para **0, 0, -1**.
 
-   <x1\/> Posição do símbolo <x2\/>
+   ![ Posição do símbolo ](media/swordtrail-position.png)
 
    Isso move o ponto de partida do efeito de partícula para a ponta da espada.
 
@@ -390,7 +390,7 @@ Agora temos um novo problema. Porque nós movemos o efeito de partícula para a 
 
 6. Sob **Particle System > Source > Emitters > Iniciantes**, sob o **Direction** inicializador, mudar tanto o **Direction min** e **Direction max** para **0, 0, 1**. Isto inverte a direção da trilha.
 
-   <x1\/> Orientação inicializador <x2\/>
+   ![ Orientação inicializador ](media/initializer-direction.png)
 
 7. Corre o jogo.
 

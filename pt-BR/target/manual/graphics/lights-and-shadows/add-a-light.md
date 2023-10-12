@@ -1,8 +1,8 @@
 # Adicionar uma luz
 
-<x1\/>Introdução<x2\/>
-<x3\/>Designer<x4\/>
-<x5\/>Artista <x6\/>
+<span class="badge text-bg-primary">Introdução</span>
+<span class="badge text-bg-success">Designer</span>
+<span class="badge text-bg-success">Artista </span>
 
 Para adicionar uma luz a uma cena, adicione um componente [light](xref:Stride.Engine.LightComponent) a uma entidade.
 
@@ -10,15 +10,15 @@ Para adicionar uma luz a uma cena, adicione um componente [light](xref:Stride.En
 
 2. Na Grade de Propriedade (à direita por padrão), clique em **Adicionar componente** e selecione **Light**.
 
-   <x1\/> Adicionar componente de luz <x2\/>
+   ![ Adicionar componente de luz ](media/add-light-component.png)
 
    Game Studio adiciona um componente leve à entidade.
 
-   <x1\/>Light component adicionado<x2\/>
+   ![Light component adicionado](media/light-component-added.png)
 
 3. Sob as propriedades do componente **Light**, ao lado de **Light**, no menu drop-down, selecione o tipo de luz que você deseja que essa entidade use.
 
-   <x1\/> Tipo de luz <x2\/>
+   ![ Tipo de luz ](media/light-type.png)
 
    Você pode escolher:
 

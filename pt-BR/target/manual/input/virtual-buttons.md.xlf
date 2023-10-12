@@ -8,8 +8,8 @@
 <trans-unit id="tu2" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Intermediate<x id="2"/>
 <x id="3"/>Programmer<x id="4"/></source>
-<target xml:lang="pt">&lt;x1\/&gt; Intermediário &lt;x2\/&gt;
-&lt;x3\/&gt;Programação&lt;x4\/&gt;</target>
+<target xml:lang="pt"><x id="1"/>Intermediário<x id="2"/>
+<x id="3"/>Programação<x id="4"/></target>
 </trans-unit>
 <trans-unit id="tu3" xml:space="preserve">
 <source xml:lang="en">Rather than bind controls to physical keys and buttons, you can bind them to <g id="1">virtual buttons</g>. Players can then assign physical buttons to the virtual buttons, allowing them to create their own control schemes.</source>
@@ -21,7 +21,7 @@
 </trans-unit>
 <trans-unit id="tu5" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Virtual buttons<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt; Botões virtuais&lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/> Botões virtuais<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu6" xml:space="preserve">
 <source xml:lang="en">Use virtual buttons</source>
@@ -85,10 +85,10 @@ public override void Update() {
 (
     base.Start();
 
-    \/\/ Criar um novo VirtualButtonConfig Definir se nenhuma existe. 
+    // Criar um novo VirtualButtonConfig Definir se nenhuma existe. 
     Entrada.VirtualButtonConfigSet = Entrada.VirtualButtonConfigSet??? novo VirtualButtonConfigSet();
     
-    \/\/Bind "M" chave, GamePad "Start" botão e botão esquerdo do mouse para um botão virtual "MyButton".
+    //Bind "M" chave, GamePad "Start" botão e botão esquerdo do mouse para um botão virtual "MyButton".
     VirtualButtonBinding b1 = novo VirtualButtonBinding("MyButton", VirtualButton.Keyboard.M);
     VirtualButtonBinding b2 = novo VirtualButtonBinding("MyButton", VirtualButton.GamePad.Start);
     VirtualButtonBinding b3 = novo VirtualButtonBinding("MyButton", VirtualButton.Mouse.Left);

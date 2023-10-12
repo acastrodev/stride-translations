@@ -1,6 +1,6 @@
 # Fontes Sprite
 
-<x1\/> Intermediário <x2\/>
+<span class="badge text-bg-primary">Intermediário</span>
 
 **Sprite fontes** tomar uma fonte TrueType como uma entrada (quer uma fonte do sistema ou um arquivo que você atribui) e, em seguida, criar todas as imagens (prites) de caracteres (glifos) para o seu jogo.
 
@@ -30,7 +30,7 @@ Faça **not** use fontes offline-rasterizadas quando:
 
 ### Propriedades de fonte sprite off-line-rasterizada
 
-<x1\/>media\/fonts-1.png<x2\/>
+![media/fonts-1.png](media/fonts-1.png)
 
 | Propriedade | Descrição |
 |-----------------------------|-------------------
@@ -73,7 +73,7 @@ Faça **not** use fontes de runtime-rasterized quando:
 
 ### Runtime-rasterized sprite propriedades de fonte
 
-<x1\/>media\/fonts-2.png<x2\/>
+![media/fonts-2.png](media/fonts-2.png)
 
 | Propriedade | Descrição |
 |-----------------------------|-------------
@@ -93,7 +93,7 @@ Ao renderizar, verifique a distância e saída de um pixel branco se for positiv
 
 A imagem abaixo compara fontes SDF e as fontes off-line-rasterizadas sob ampliação:
 
-<x1\/>media\/fonts-5.png<x2\/>
+![media/fonts-5.png](media/fonts-5.png)
 
 ### Quando usar fontes SDF
 
@@ -117,7 +117,7 @@ Faça **not** use fontes SDF quando:
 
 ### Propriedades do SDF
 
-<x1\/>media\/fonts-3.png<x2\/>
+![media/fonts-3.png](media/fonts-3.png)
 
 | Propriedade | Descrição |
 |-----------------------------|--------------
@@ -132,19 +132,19 @@ Faça **not** use fontes SDF quando:
 
 ### Rasterizada offline
 
-<x1\/>media\/fonts-6.png<x2\/>
+![media/fonts-6.png](media/fonts-6.png)
 
 A fonte de sprite offline-rasterizada asse todos os caracteres solicitados uma vez em uma textura de tons de cinza. Se você fizer zoom, verá que eles são pixelados. A fonte tem um tamanho fixo e não funciona bem para escalonar texto.
 
 ### Corrida rasterizada
 
-<x1\/>media\/fonts-8.png<x2\/>
+![media/fonts-8.png](media/fonts-8.png)
 
 A fonte de sprite de tempo de execução apenas asse (rasteriza) os caracteres que são desenhados no jogo. A textura inicial do atlas é intencionalmente maior para que possa ter mais caracteres de tamanhos potencialmente diferentes antes de precisar de redimensionamento.
 
 ### Campo de distância assinado
 
-<x1\/>media\/fonts-7.png<x2\/>
+![media/fonts-7.png](media/fonts-7.png)
 
 Como a fonte sprite off-line-rasterizada, a fonte sprite de campo de distância assinado asse todos os caracteres solicitados uma vez. A principal diferença é que codifica distâncias das linhas de caracteres em vez de cor real, e usa RGB de todos os três canais. Você ainda pode reconhecer cada personagem, mas um shader especial é necessário para torná-los corretamente. A parte de cima é que as bordas permanecem afiadas, mesmo sob ampliação.
 

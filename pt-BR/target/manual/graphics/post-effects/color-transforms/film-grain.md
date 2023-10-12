@@ -1,12 +1,12 @@
 # Grão de filme
 
-<x1\/>Introdução<x2\/>
-<x3\/>Artista <x4\/>
-<x5\/>Programação<x6\/>
+<span class="badge text-bg-primary">Introdução</span>
+<span class="badge text-bg-success">Artista </span>
+<span class="badge text-bg-success">Programação</span>
 
 O **film granul** adiciona ruído em cada quadro para simular o grão de filmes usados em câmeras reais.
 
-<x1\/>media\/film-grain-1.png<x2\/>
+![media/film-grain-1.png](media/film-grain-1.png)
 
 O padrão é gerado processualmente e muda em cada quadro.
 
@@ -14,13 +14,13 @@ Para simular o grão de filme real, o ruído deve ser mais visível em áreas de
 
 O padrão modifica localmente a luminância dos pixels afetados.
 
-<x1\/>media\/film-grain-2.png<x2\/>
+![media/film-grain-2.png](media/film-grain-2.png)
 
 ## Propriedades
 
 | Propriedade | Descrição |
 | ---------------- | --------------------------------------------------------------------------- |
-| Montante | Montante\/força do efeito |
+| Montante | Montante/força do efeito |
 | Tamanho do grão | Tamanho do grão |
 | Animate | Quando ativado, o padrão processual muda em cada quadro |
 | Fator de Luminância | Quão fortemente a luminância de pixel original é afetada pelo padrão de grão |

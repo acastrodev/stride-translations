@@ -1,8 +1,8 @@
 # Eixos de luz
 
-<x1\/>Introdução<x2\/>
-<x3\/>Designer<x4\/>
-<x5\/>Artista <x6\/>
+<span class="badge text-bg-primary">Introdução</span>
+<span class="badge text-bg-success">Designer</span>
+<span class="badge text-bg-success">Artista </span>
 
 ** Eixos de luz **, também chamados ** raios **, são raios visíveis de luz.
 
@@ -20,21 +20,21 @@ Por padrão, o Stride desativa eixos de luz em novos projetos. Para lhes permiti
 
 1. No **Asset View** (no painel inferior por padrão), clique duas vezes no **Graphics Compositor** ativo.
 
-   <x1\/>Gráficos Compositor asset<x2\/>
+   ![Gráficos Compositor asset](../graphics-compositor/media/graphics-compositor-asset.png)
 
    O editor de compositores gráficos abre.
 
 2. Selecione o nó **forward renderer**.
 
-   <x1\/>Selecionar renderizador <x2\/>
+   ![Selecionar renderizador ](../../virtual-reality/media/select-forward-renderer.png)
 
-3. No **Property Grid** (à direita por padrão), ao lado de **Light shafts**, clique em <x1\/> Botão de seta azul<x2\/> (** Substituir**) e selecione **LightShafts**.
+3. No **Property Grid** (à direita por padrão), ao lado de **Light shafts**, clique em ![ Botão de seta azul](~/manual/game-studio/media/blue-arrow-icon.png) (** Substituir**) e selecione **LightShafts**.
 
-   <x1\/>Selecione eixos de luz<x2\/>
+   ![Selecione eixos de luz](media/select-light-shafts.png)
 
 4. Certifique-se de que a caixa de seleção **light eixos** é selecionada.
 
-   <x1\/> Habilitar eixos de luz<x2\/>
+   ![ Habilitar eixos de luz](media/enable-light-shafts.png)
 
    Para obter mais informações sobre o compositor gráfico, consulte a página [Graphics compositor](../graphics-compositor/index.md).
 
@@ -44,11 +44,11 @@ Por padrão, o Stride desativa eixos de luz em novos projetos. Para lhes permiti
 
 2. No **Property Grid**, nas propriedades do componente **Light**, certifique-se de que a caixa de seleção **Shadow** é selecionada.
 
-   <x1\/> Habilitar eixos de luz<x2\/>
+   ![ Habilitar eixos de luz](media/light-shafts-enable-shadows.png)
 
 3. Clique em **Adicionar componente** e selecione **Light shaft**.
 
-   <x1\/> Adicionar componente de eixo de luz<x2\/>
+   ![ Adicionar componente de eixo de luz](media/add-light-shaft-component.png)
 
    Game Studio adiciona um componente de eixo de luz para a entidade.
 
@@ -60,11 +60,11 @@ O ** eixo de luz que liga o volume** define a área em que os eixos de luz são 
 
 2. Em **Models**, selecione um modelo na forma que deseja que o volume seja. Por exemplo, se você usar um cubo, os eixos de luz serão criados em uma área em forma de cubo.
 
-   <x1\/>Cube model<x2\/>
+   ![Cube model](media/add-cube-model.png)
 
    A janela **Selecione um ativo** abre.
 
-   <x1\/> Selecione um ativo<x2\/>
+   ![ Selecione um ativo](media/asset-picker.png)
 
 3. Você não precisa de um material para o modelo, então clique em **Cancel** para criar um modelo sem um material.
 
@@ -72,30 +72,30 @@ O ** eixo de luz que liga o volume** define a área em que os eixos de luz são 
 
 5. Com a entidade selecionada, no **Property Grid**, clique em **Adicionar componente** e selecione **light eixo de ligação volume**.
 
-   <x1\/> Adicionar componente de volume de ligação de eixo de luz<x2\/>
+   ![ Adicionar componente de volume de ligação de eixo de luz](media/add-light-shaft-bounding-volume.png)
 
-6. No ** eixo de luz que liga o volume** propriedades do componente, ao lado de ** eixo de luz **, clique em <x1\/>Hand icon<x2\/> (**Select an asset**).
+6. No ** eixo de luz que liga o volume** propriedades do componente, ao lado de ** eixo de luz **, clique em ![Hand icon](~/manual/game-studio/media/hand-icon.png) (**Select an asset**).
 
 7. No **entity picker**, selecione a entidade com a luz direcional que deseja criar eixos de luz e clique em **OK**.
 
-8. No ** eixo de luz que liga o volume** propriedades do componente, ao lado de **Model**, clique em <x1\/>Hand icon<x2\/> (**Select an asset**).
+8. No ** eixo de luz que liga o volume** propriedades do componente, ao lado de **Model**, clique em ![Hand icon](~/manual/game-studio/media/hand-icon.png) (**Select an asset**).
 
 9. Na janela **Selecione um ativo**, selecione o modelo que você criou e clique em **OK**.
 
-   <x1\/>Selecionar modelo<x2\/>
+   ![Selecionar modelo](media/select-procedural-model.png)
 
    Este modelo define a forma do volume de ligação do eixo de luz.
 
 10. Usando o componente **transform**, posicionar e dimensionar a entidade para cobrir a área onde você deseja criar eixos de luz.
 
-   > <x1\/>!Tip<x2\/>
+   > [!Tip]
    > Para mostrar ou ocultar volumes de vinculação de eixo de navegação no Editor de cena, na barra de ferramentas **Scene Editor**, abra o menu **gizmo e use a caixa de seleção **Light shaft limiting volumes**.**
 
-   <x1\/>Mostrar volumes limitados de eixo de luz<x2\/>
+   ![Mostrar volumes limitados de eixo de luz](media/show-or-hide-light-shaft-bounding-volume.png)
 
 ## Propriedades do eixo de luz
 
-<x1\/> Propriedades do eixo leve<x2\/>
+![ Propriedades do eixo leve](media/light-shaft-properties.png)
 
 | Propriedade | Descrição |
 |---------------------------|----------
@@ -109,7 +109,7 @@ Para acessar essas propriedades, no editor de compositores **graphics**, selecio
 
 Estas propriedades aplicam-se globalmente a todos os eixos de luz na cena.
 
-<x1\/> Propriedades do compositor de gráficos de eixo leve<x2\/>
+![ Propriedades do compositor de gráficos de eixo leve](media/light-shaft-graphics-compositor-properties.png)
 
 | Propriedade | Descrição |
 |-----------------------------------------|--------------
@@ -122,11 +122,11 @@ Os eixos de luz funcionam melhor em ambientes escuros. Você pode ajustar as pro
 
 Vários eixos de luz visualizados entre si podem tornar-se visualmente ruidosos, como na captura de tela abaixo:
 
-<x1\/> Eixos de luz ruidosos<x2\/>
+![ Eixos de luz ruidosos](media/noisy-light-shafts.jpg)
 
 Para reduzir esse efeito, nas propriedades do componente do eixo **light**, reduza o **density** e aumente o **sample count**.
 
-<x1\/> Fator de densidade<x2\/>
+![ Fator de densidade](media/density-factor.png)
 
 Alternativamente, adicione volumes adicionais e processá-los separadamente. Para fazer isso:
 
@@ -134,9 +134,9 @@ Alternativamente, adicione volumes adicionais e processá-los separadamente. Par
 
 2. No ** Propriedades do componente do eixo de luz **, certifique-se de ** Os volumes de ligação do processo separadamente** são selecionados.
 
-<x1\/> Separar o volume de ligação<x2\/>
+![ Separar o volume de ligação](media/separate-bounding-volumes.png)
 
-> <x1\/>!Note<x2\/>
+> [!Note]
 > O processamento de volumes delimitação usa separadamente mais GPU.
 
 ## Ver também

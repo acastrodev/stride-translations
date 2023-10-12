@@ -41,7 +41,7 @@ Tivemos alguma ajuda do compilador .NET da Microsoft, [Roslyn](https://github.co
 
 Usar o Xenko Script Editor é bastante simples. Basta seguir estes passos:
 
-* Criar um novo projeto\/jogo no Game Studio
+* Criar um novo projeto/jogo no Game Studio
 * Adicionar um script no Game Studio
 * Editar o script no Game Studio
 
@@ -169,7 +169,7 @@ O interruptor para . NET Standard para projetos recém-criados implica que:
 
 ### Serialização de ativos
 
-Nós mudamos como serializamos o ativo em YAML. Introduzimos novos conceitos que melhoram a forma como podemos rastrear sobreposições entre um arquétipo ou uma prefab e ativos\/entidades herdadas dele. Embora tudo aconteça "sob o capô", esta é uma mudança realmente pesada que pode afetar a atualização do seu projeto.
+Nós mudamos como serializamos o ativo em YAML. Introduzimos novos conceitos que melhoram a forma como podemos rastrear sobreposições entre um arquétipo ou uma prefab e ativos/entidades herdadas dele. Embora tudo aconteça "sob o capô", esta é uma mudança realmente pesada que pode afetar a atualização do seu projeto.
 
 Removemos a atualização de ativos para projetos feitos com a versão 1.3 e abaixo (lançado há mais de um ano). É possível que você experimente alguns problemas ao atualizar um projeto feito com versões 1.4 a 1.7, mas você deve ser capaz de atualizar qualquer projeto que use a versão 1.8. No entanto, alguns casos não são suportados:
 * Propriedades de dependência de elementos de interface do usuário que são substituídos de uma biblioteca de interface do usuário será redefinido durante a atualização. Portanto, propriedades como a coluna de grade e a linha terão de ser restauradas manualmente.
@@ -189,7 +189,7 @@ Assim como um lembrete, já apoiamos a Plataforma Universal do Windows (UWP) em 
 
 ### Versão 1.9.0-beta
 
-Data de lançamento 2016\/11\/24
+Data de lançamento 2016/11/24
 
 #### Melhorias
 
@@ -203,13 +203,13 @@ Data de lançamento 2016\/11\/24
 
 ##### Game Studio
 
-* Anteriormente, quando um `EntityComponent` (ou seja, script) não poderia ser carregado porque o jogo ou o conjunto do plugin não compilaram corretamente, mantivemos uma representação Yaml dele para que ele pudesse ser salvo ou recarregado após uma correção de código. Agora permitimos que isso aconteça em qualquer lugar, para que você possa usar e\/ou implementar classes personalizadas para qualquer tipo do motor em seu jogo\/plugin.
-* Melhore os logs de ativos e erros para exibir corretamente o ícone de falha \/ aviso em todos os ativos, incluindo aquele com miniaturas de estilo de ícone.
-* Melhore o carregamento\/refresamento de ativos no editor de cena.
+* Anteriormente, quando um `EntityComponent` (ou seja, script) não poderia ser carregado porque o jogo ou o conjunto do plugin não compilaram corretamente, mantivemos uma representação Yaml dele para que ele pudesse ser salvo ou recarregado após uma correção de código. Agora permitimos que isso aconteça em qualquer lugar, para que você possa usar e/ou implementar classes personalizadas para qualquer tipo do motor em seu jogo/plugin.
+* Melhore os logs de ativos e erros para exibir corretamente o ícone de falha / aviso em todos os ativos, incluindo aquele com miniaturas de estilo de ícone.
+* Melhore o carregamento/refresamento de ativos no editor de cena.
 * Os editores de ativos exibirão um * no nome da guia quando um ativo estiver sujo.
 * Adicionar editor para código fonte C#.
 * Arquivos C# e arquivos .csproj são automaticamente recarregados como eles são modificados no disco rígido (usando um Sim, Sim para Todos, Não, Não para Todos diálogo).
-* Arquivos C# têm sua própria pilha de desfazer\/refazer
+* Arquivos C# têm sua própria pilha de desfazer/refazer
 * Adicionar um Salvar Todo o botão que salva ambos os ativos e arquivos de código fonte.
 * O Game Studio agora usa _AvalonDock_ como sistema de ancoragem
 * Melhorar o suporte DPI ([#454](https://github.com/SiliconStudio/xenko/issues/454) e [#470](https://github.com/SiliconStudio/xenko/issues/470))
@@ -223,7 +223,7 @@ Data de lançamento 2016\/11\/24
 * Remova o membro `Properties` do Pacote.
 * Introduza um novo conjunto de ativos. Quantum
 * As sobreposições de propriedades agora são tratadas usando _Quantum_ em vez de `ShadowObject`.
-* Remova as classes diff\/merge de ativos.
+* Remova as classes diff/merge de ativos.
 
 ##### Motor
 
@@ -259,7 +259,7 @@ Data de lançamento 2016\/11\/24
 ##### Game Studio
 
 * Corrigir muitos problemas com substituições de propriedade.
-* Corrigir muitos problemas ao definir \/ substituir materiais no ModelComponent.
+* Corrigir muitos problemas ao definir / substituir materiais no ModelComponent.
 * Os registros de ativos não foram enviados corretamente para o editor, resultando em um log vazio para todos os ativos.
 * Às vezes houve um deadlock ao compilar efeitos devido à forma como estávamos usando o pool de threads e continuações de tarefa.
 * Corrigir problema de desempenho que pode ocorrer quando duplicar entidades com o mesmo nome muitas vezes.
@@ -285,7 +285,7 @@ Data de lançamento 2016\/11\/24
 
 ### Versão 1.9.1-beta
 
-Data de lançamento 2016\/11\/29
+Data de lançamento 2016/11/29
 
 #### Questões corrigidas
 
@@ -305,7 +305,7 @@ Data de lançamento 2016\/11\/29
 
 ### Versão 1.9.2-beta
 
-Data de lançamento 2016\/12\/13
+Data de lançamento 2016/12/13
 
 #### Melhorias
 
@@ -327,7 +327,7 @@ Data de lançamento 2016\/12\/13
 * Corrigir a posição de inserção ao soltar vários ativos em uma cena ao mesmo tempo
 * Corrigir abrir uma cena de um projeto de pacote que não é um jogo estava caindo.
 * Corrigir um acidente que estava ocorrendo ao adicionar um novo Override no ativo GameSettings
-* Corrigir um problema ao copiar \/ colar um componente que requer unicidade a uma entidade que já tem um. Agora o usuário será solicitado corretamente se este componente deve ser substituído pela cópia.
+* Corrigir um problema ao copiar / colar um componente que requer unicidade a uma entidade que já tem um. Agora o usuário será solicitado corretamente se este componente deve ser substituído pela cópia.
 * Corrigir lista de filtros incorreta de tipos de ativos na visualização de ativos.
 
 ##### Motor
@@ -345,13 +345,13 @@ Data de lançamento 2016\/12\/13
 
 ### Versão 1.9.3-beta
 
-Data de lançamento 2017\/1\/11
+Data de lançamento 2017/1/11
 
 #### Melhoria
 
 #### Game Studio
 
-* Manter a chave ALT para baixo ao mover uma entidade para um pai diferente agora manterá sua posição absoluta \/ orientação \/ escala
+* Manter a chave ALT para baixo ao mover uma entidade para um pai diferente agora manterá sua posição absoluta / orientação / escala
 * Exibir a versão atual do Xenko na janela Seleção de Projetos
 * Adicionar mais mensagens de registro ao criar um novo projeto
 * Melhore a apresentação do cabeçalho da guia, permita ver todos os editores abertos ao mesmo tempo

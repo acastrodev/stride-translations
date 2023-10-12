@@ -11,7 +11,7 @@
 </trans-unit>
 <trans-unit id="tu3" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Debug renderer<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt;Debug renderer&lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/>Debug renderer<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu4" xml:space="preserve">
 <source xml:lang="en">Create a debug renderer</source>
@@ -23,7 +23,7 @@
 </trans-unit>
 <trans-unit id="tu6" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Create debug renderer<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt;Criar renderizador de depuração&lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/>Criar renderizador de depuração<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu7" xml:space="preserve">
 <source xml:lang="en">Connect a debug renderer to an entry point</source>
@@ -35,7 +35,7 @@
 </trans-unit>
 <trans-unit id="tu9" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Debug renderer Property Grid<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt;Debug renderer Property Grid&lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/>Debug renderer Property Grid<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu10" xml:space="preserve">
 <source xml:lang="en">Use a debug renderer</source>
@@ -132,7 +132,7 @@ namespace MyGame
 
         override público async Task Execute()
         (
-        \/\/set up rendering in the debug entry point if we have it
+        //set up rendering in the debug entry point if we have it
         compositor var = SceneSystem.GraphicsCompositor;
         var debugRenderer =
             (compositor. Jogo como SceneCameraRenderer)?. Criança como SceneRendererCollection)?. Crianças. Onde..

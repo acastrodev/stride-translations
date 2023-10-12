@@ -1,11 +1,11 @@
 # Jogue um intervalo dentro de um ativo de áudio
 
-<x1\/> Intermediário <x2\/>
-<x3\/>Programação<x4\/>
+<span class="badge text-bg-primary">Intermediário</span>
+<span class="badge text-bg-success">Programação</span>
 
 Você pode ter Stride tocar apenas algumas partes de um ativo de áudio. Isso significa, por exemplo, que você pode criar várias amostras de um único ativo de áudio especificando diferentes intervalos em diferentes objetos [SoundInstance](xref:Stride.Audio.SoundInstance).
 
-<x1\/>Loop pontos<x2\/>
+![Loop pontos](media/audio-advanced-features-loop-points.png)
 
 Você pode usar as seguintes propriedades, métodos e estruturas:
 
@@ -19,7 +19,7 @@ Você pode usar as seguintes propriedades, métodos e estruturas:
 Por exemplo:
 
 ```cs
-O comprimento da amostra \/\/Assume é de 5 segundos.
+O comprimento da amostra //Assume é de 5 segundos.
 comprimento var = mySound.TotalLength;
 var begin = TimeSpan.FromSeconds(2);
 var Duração = TimeSpan.FromSeconds(2);

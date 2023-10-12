@@ -1,11 +1,11 @@
 # Criar uma bola saltando
 
-<x1\/>Introdução<x2\/>
-<x3\/>Designer<x4\/>
+<span class="badge text-bg-primary">Introdução</span>
+<span class="badge text-bg-success">Designer</span>
 
 Neste tutorial, usaremos os componentes [static collider e rigidbody](colliders.md) para criar uma bola saltando em um chão.
 
-> <x1\/>!Note<x2\/>
+> [!Note]
 > As capturas de tela e vídeos neste tutorial foram feitos usando uma versão anterior do Stride, então algumas partes da interface do usuário, e a caixa de céu padrão e esfera, podem parecer diferentes de sua versão.
 
 ## 1. Criar um novo projeto
@@ -22,13 +22,13 @@ Vamos começar adicionando um componente [static collider](static-colliders.md) 
 
 2. No **Property Grid**, clique em **Add component** e selecione **Static Collider**.
 
-   <x1\/> Adicionar componente de colisor estático<x2\/>
+   ![ Adicionar componente de colisor estático](media/physics-tutorials-create-a-bouncing-ball-add-collider-component.png)
 
 3. Defina a forma [collider](collider-shapes.md) para corresponder à forma da entidade. Para fazer isso, no **Property Grid**, expanda o componente **Static Collider** para ver suas propriedades.
 
-4. Ao lado de **Collider Shapes**, clique em <x1\/>Green plus button<x2\/> (**Add**) e selecione **Infinite Plane**.
+4. Ao lado de **Collider Shapes**, clique em ![Green plus button](~/manual/game-studio/media/green-plus-icon.png) (**Add**) e selecione **Infinite Plane**.
 
-   <x1\/> Adicionar componente de colisor estático<x2\/>
+   ![ Adicionar componente de colisor estático](media/physics-tutorials-create-a-bouncing-ball-collider-shape.png)
 
    Isso adiciona um colisão estático ao chão, então a bola tem algo para saltar.
 
@@ -40,13 +40,13 @@ Em seguida, vamos adicionar um componente [rigidbody](rigid-bodies.md) à esfera
 
 2. No **Property Grid**, clique em **Add component** e selecione **Rigidbody**.
 
-   <x1\/> Adicionar componente de colisor estático<x2\/>
+   ![ Adicionar componente de colisor estático](media/physics-tutorials-create-a-bouncing-ball-add-rigitbody-component.png)
 
 3. Assim como fizemos para a entidade Ground, defina a forma [collider](collider-shapes.md) para corresponder à entidade. Para fazer isso, no **Property Grid**, expanda o componente **Rigidbody** para ver suas propriedades.
 
-4. Ao lado de **Collider Shapes**, clique em <x1\/>Green plus button<x2\/> (**Add**) e selecione **Sphere**.
+4. Ao lado de **Collider Shapes**, clique em ![Green plus button](~/manual/game-studio/media/green-plus-icon.png) (**Add**) e selecione **Sphere**.
 
-   <x1\/> Adicionar componente de colisor estático<x2\/>
+   ![ Adicionar componente de colisor estático](media/physics-tutorials-create-a-bouncing-ball-rigitbody-shape.png)
 
 ## 4. Posicione a bola
 
@@ -56,7 +56,7 @@ Vamos posicionar a esfera assim que começa no ar médio e cai no chão.
 
 2. No **Property Grid**, sob **Transform**, defina o **Position** para: _X: 0, Y: 6, Z: 0_
 
-   <x1\/> Posição da Esfera <x2\/>
+   ![ Posição da Esfera ](media/physics-tutorials-create-a-bouncing-ball-change-sphere-position.png)
 
    Isso coloca a bola no ar médio acima do chão.
 
@@ -70,17 +70,17 @@ Agora vamos mover a câmera para nos dar uma boa visão da cena.
 
 3. Definir o **Rotação** para: _X: -20, Y: -50, Z: 0_
 
-   <x1\/> Alterar posição da câmera<x2\/>
+   ![ Alterar posição da câmera](media/physics-tutorials-create-a-bouncing-ball-change-camera-position.png)
 
    Você pode ver a visualização da câmera no **Camera preview** na parte inferior direita do Editor de cena.
 
-   <x1\/> Visualização da câmara <x2\/>
+   ![ Visualização da câmara ](media/physics-tutorials-camera-preview.png)
 
 ## 6. Definir a restituição
 
 Vamos ver como é a cena até agora. Para executar o projeto, pressione **F5**.
 
-<x1\/>Falling ball<x2\/>
+![Falling ball](media/physics-tutorials-create-a-bouncing-ball-falling-ball.gif)
 
 A Esfera (rigidbody) responde à gravidade e cai. O Terreno (collider estático) quebra sua queda. Mas ainda não há efeito de rejeição.
 
@@ -98,25 +98,25 @@ Vamos estabelecer a restituição de nossas Esferas e Terras.
 
 2. No **Property Grid**, sob **Rigidbody**, defina o **Restitution** a 0.8.
 
-   <x1\/> Restituição de segundo para uma esfera<x2\/>
+   ![ Restituição de segundo para uma esfera](media/physics-tutorials-create-a-bouncing-ball-restitution-of-a-sphere.png)
 
 3. Selecione a entidade **Ground**.
 
 4. No **Property Grid**, sob **Static Collider**, defina o **Restitution** para 0,5.
 
-   <x1\/> Restituição de reserva para terra<x2\/>
+   ![ Restituição de reserva para terra](media/physics-tutorials-create-a-bouncing-ball-restitution-of-the-ground.png)
 
 Para ver como isso muda a física, execute o projeto novamente (**F5**). Desta vez, a bola salta no chão antes de chegar a uma parada:
 
-<x1\/>Efeito de pontuação<x2\/>
+![Efeito de pontuação](media/physics-tutorials-create-a-bouncing-ball-falling-and-bouncing-ball.gif)
 
 Tente mudar a restituição de ambas as entidades para 1. Isso cria uma bola que salta indefinidamente, sem perder energia:
 
-<x1\/> Resalto infinito <x2\/>
+![ Resalto infinito ](media/physics-tutorials-create-a-bouncing-ball-infinitely-bouncing-ball.gif)
 
 Defina a restituição para 1.1 e a bola salta um pouco mais alto cada vez:
 
-<x1\/> Ball bouncing superior<x2\/>
+![ Ball bouncing superior](media/physics-tutorials-create-a-bouncing-ball-higher-and-higher.gif)
 
 Agora criamos uma bola saltando, podemos usá-la para aprender sobre gatilhos. Para obter mais informações, consulte o tutorial [Script a trigger](script-a-trigger.md).
 

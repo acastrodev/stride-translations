@@ -1,6 +1,6 @@
 # Utilizar activos
 
-<x1\/>Introdução<x2\/>
+<span class="badge text-bg-primary">Introdução</span>
 
 Existem quatro maneiras de usar ativos:
 
@@ -15,24 +15,24 @@ Muitos tipos de ativos de uso de componentes. Por exemplo, os componentes do mod
 
 Componentes que usam ativos têm **asset docks** no **property grid**.
 
-<x1\/> Selecione um ativo<x2\/>
+![ Selecione um ativo](media/use-assets-asset-picker-dock.png)
 
 Para adicionar um ativo a um componente de entidade, arraste o ativo para a doca de ativos nas propriedades do componente (na grade **property**). Você pode soltar ativos no campo de texto ou na miniatura vazia.
 
-<x1\/>Drag e drop a asset<x2\/>
+![Drag e drop a asset](media/use-assets-drag-and-drop.png)
 
-Em alternativa, clique em <x1\/>Hand icon<x2\/> (**Select an asset**).
+Em alternativa, clique em ![Hand icon](~/manual/game-studio/media/hand-icon.png) (**Select an asset**).
 
-<x1\/> Selecione um ativo<x2\/>
+![ Selecione um ativo](media/use-assets-asset-picker.png)
 
 A janela **Selecione um ativo** abre.
 
-> <x1\/>!NOTE<x2\/>
+> [!NOTE]
 > A janela **Selecione um ativo** só exibe ativos de tipos esperados pelo componente. Por exemplo, se o componente é um receptor de áudio, a janela só exibe ativos de áudio.
 
 Depois de adicionar um ativo a um componente, a doca de ativos exibe seu nome e uma imagem de miniatura.
 
-<x1\/> Aset exibido<x2\/>
+![ Aset exibido](media/asset-displayed.png)
 
 ## Activos de referência em outros activos
 
@@ -42,20 +42,20 @@ Você pode adicionar referências de ativos da mesma forma que você os adiciona
 
 ## Limpar uma referência
 
-Para limpar uma referência a um ativo, no **asset dock**, clique em <x1\/>eraser<x2\/> (**Clear reference**).
+Para limpar uma referência a um ativo, no **asset dock**, clique em ![eraser](media/use-assets-eraser.png) (**Clear reference**).
 
-<x1\/>Usar eraser<x2\/>
+![Usar eraser](media/use-eraser.png)
 
 ## Referências examinadas
 
 Você pode ver as referências em um ativo selecionado na aba **References**. Por padrão, isso está na parte inferior direita do Game Studio.
 
-<x1\/>Referências tab<x2\/>
+![Referências tab](media/use-assets-references-tab.png)
 
 * A aba **References** exibe os ativos referenciados pelo ativo selecionado.
 * A aba **Referenced by** exibe os ativos que referem o ativo selecionado.
 
-> <x1\/>!Tip<x2\/>
+> [!Tip]
 > Se você não consegue ver a guia Referências, certifique-se de que ela é exibida em **View > Referências**.
 
 ## Carga de ativos de código
@@ -63,19 +63,19 @@ Você pode ver as referências em um ativo selecionado na aba **References**. Po
 Ao carregar em ativos no tempo de execução, falamos de "Conteúdo" em vez de ativos. O conteúdo carregado refere-se ao ativo e pode ser usado em seu script.
 
 ```cs
-\/\/ Carregar um modelo (substituir URL com URL válida)
-var model = Content.Load<Model>("AssetFolder\/MyModel");
+// Carregar um modelo (substituir URL com URL válida)
+var model = Content.Load<Model>("AssetFolder/MyModel");
 
-\/\/ Criar uma nova entidade para adicionar à cena
+// Criar uma nova entidade para adicionar à cena
 Entidade entidade = nova Entidade (posição, "Entidade Adicionado por Script") { new ModelComponent { Model = model } };
 
-\/\/ Adicionar uma nova entidade à cena
+// Adicionar uma nova entidade à cena
 SceneSystem.SceneInstance.RootScene.Entities.Add (entidade);
 ```
 
-> <x1\/>!TIP<x2\/>
-> Para encontrar a URL de ativos, no Game Studio, mova o mouse sobre o ativo. Game Studio exibe a URL de ativos em uma ponta de ferramenta.  URLs normalmente têm o formato * AssetFolder\/AssetName*.
-> <x3\/><x4\/>
+> [!TIP]
+> Para encontrar a URL de ativos, no Game Studio, mova o mouse sobre o ativo. Game Studio exibe a URL de ativos em uma ponta de ferramenta.  URLs normalmente têm o formato * AssetFolder/AssetName*.
+> []
 > Ao carregar ativos de scripts, certifique-se de:
 >
 > * incluir o ativo na compilação como descrito em [Gerenciar ativos](manage-assets.md)
@@ -91,7 +91,7 @@ Para descarregar um ativo, use ``Content.Unload(myAsset)``.
 
 `UrlReference` permite que você referencie ativos em seus scripts da mesma maneira que você faria com ativos normais, mas eles são carregados dinamicamente no código. A referência a um ativo com um `UrlReference` faz com que o ativo seja incluído na compilação.
 
-Você pode referenciar ativos em seus scripts usando propriedades\/campos do tipo `UrlReference` ou `UrlReference<T>`:
+Você pode referenciar ativos em seus scripts usando propriedades/campos do tipo `UrlReference` ou `UrlReference<T>`:
 
 * `UrlReference` pode ser usado para referenciar qualquer ativo. Isso é mais útil para o "Ativo Raw".
 * `UrlReference<T>` pode ser usado para especificar o tipo desejado. i.e. `UrlReference<Scene>`. Isso dá ao Game Studio uma dica sobre que tipo de ativo este `UrlReference` pode ser usado para.
@@ -104,7 +104,7 @@ Usando `UrlReference<Scene>` para carregar a próxima cena.
 
 ```cs
 usando o Sistema. Threading. Tarefas;
-\/\/Incluir o Stride. Core.Serialization namespace para usar UrlReference
+//Incluir o Stride. Core.Serialization namespace para usar UrlReference
 usando Stride. Core.Serialização;
 usando Stride. Motor;
 
@@ -116,12 +116,12 @@ exemplos de namespace
 
         override público async Task Execute()
         (
-            \/\/...
+            //...
         }
 
         async privado Task LoadNextScene()
         (
-            \/\/ Carga dinamicamente próxima cena assíncrona
+            // Carga dinamicamente próxima cena assíncrona
             var nextScene = await Content.LoadAsync (NextSceneUrl);
             SceneSystem.SceneInstance.RootScene = nextScene;
         }
@@ -134,11 +134,11 @@ exemplos de namespace
 Use um ativo Raw para armazenar dados em um arquivo JSON e carregar usando [Newtonsoft. Json](https://www.newtonsoft.com/json). Para usar `Newtonsoft.Json` você também precisa adicionar o `Newtonsoft.Json` NuGet pacote para o projeto.
 
 ```cs
-\/\/Incluir o Newtonsoft. Espaço de nomes Json.
+//Incluir o Newtonsoft. Espaço de nomes Json.
 usando Newtonsoft. Json;
 usando o Sistema. IO;
 usando o Sistema. Threading. Tarefas;
-\/\/Incluir o Stride. Core.Serialization namespace para usar UrlReference
+//Incluir o Stride. Core.Serialization namespace para usar UrlReference
 usando Stride. Core.Serialização;
 usando Stride. Motor;
 
@@ -150,18 +150,18 @@ exemplos de namespace
 
         override público async Task Execute()
         (
-            \/\/...
+            //...
         }
 
         async privado Task<MyDataClass> LoadMyData()
         (
-            \/\/Abra um StreamReader para ler o conteúdo
+            //Abra um StreamReader para ler o conteúdo
             using (var stream = Content.OpenAsStream (RawAssetUrl))
             usando (varRead streamer = novo StreamReader (stream)
             (
-                \/\/leia o conteúdo de ativos crus
+                //leia o conteúdo de ativos crus
                 string json = await streamReader.ReadToEndAsync();
-                \/\/Deserialize o JSON para o seu tipo personalizado MyDataClass.
+                //Deserialize o JSON para o seu tipo personalizado MyDataClass.
                 retorno JsonConvert.DeserializeObject<MyDataClass>(json);
             }
         }

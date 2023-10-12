@@ -63,18 +63,18 @@ Para adicionar um filtro, digite na barra de filtro e os filtros de correspondê
 Apenas os ativos correspondentes aos filtros ativos serão exibidos na visualização de ativos. Note que os filtros de tipo são inclusivos, enquanto os filtros de nome e etiqueta são exclusivos.
 
 ###### Suporte de pasta na visualização de ativos
-Se as opções "Ativos e pasta na pasta selecionada" forem selecionadas, o primeiro nível de subpasta será exibido na visualização de ativos. Você pode arrastar e soltar ativos dentro deles. Você também pode copiar \/ colar a estrutura completa da pasta.
+Se as opções "Ativos e pasta na pasta selecionada" forem selecionadas, o primeiro nível de subpasta será exibido na visualização de ativos. Você pode arrastar e soltar ativos dentro deles. Você também pode copiar / colar a estrutura completa da pasta.
 <img src="media/ReleaseNotes-1.5/FolderSupport.png" align="center" />
 
 #### Os ativos de cópia paga com suas dependências
 Agora você tem a capacidade de copiar ativos com suas dependências. Para fazer isso, use a nova entrada ‘Copiar com dependências’ no menu de contexto de visualização de ativos ou pressione Ctrl+Shift+C.
-<x1\/>
-Por exemplo, se você copiar \/ colar um modelo com suas dependências, você receberá uma cópia deste modelo junto com uma cópia de todas as suas dependências (skeleton, materiais, texturas)
+<img src="media/ReleaseNotes-1.5/CopyAssetWithDependencies.png" align="center" />
+Por exemplo, se você copiar / colar um modelo com suas dependências, você receberá uma cópia deste modelo junto com uma cópia de todas as suas dependências (skeleton, materiais, texturas)
 
 #### Suporte de fronteira e centro no editor de folhas de sprite
-Para sprites ‘Sprite2D’, você pode mover a posição do centro selecionando o <x1\/> ícone na barra de ferramentas do editor de sprite. Pegue e mova a cruz para a posição desejada.
+Para sprites ‘Sprite2D’, você pode mover a posição do centro selecionando o <img src="media/ReleaseNotes-1.5/SpriteCenterIcon.png" style="display: inline"/> ícone na barra de ferramentas do editor de sprite. Pegue e mova a cruz para a posição desejada.
 
-Para sprites ‘UI’, você pode mudar as fronteiras selecionando o <x1\/> ícone na barra de ferramentas do editor de sprite. Você pode então redimensionar cada borda (esquerda, superior, direita e inferior) separadamente da mesma forma que a região da textura, agarrando e movendo um deles. Note que o <x1\/> ícone permite que você ‘bloquear’ ou ‘desbloquear’ as bordas de sprite enquanto redimensiona a região de textura.
+Para sprites ‘UI’, você pode mudar as fronteiras selecionando o <img src="media/ReleaseNotes-1.5/SpriteBorderIcon.png" style="display: inline" /> ícone na barra de ferramentas do editor de sprite. Você pode então redimensionar cada borda (esquerda, superior, direita e inferior) separadamente da mesma forma que a região da textura, agarrando e movendo um deles. Note que o <img src="media/ReleaseNotes-1.5/SpriteBorderLockIcon.png" style="display: inline" /> ícone permite que você ‘bloquear’ ou ‘desbloquear’ as bordas de sprite enquanto redimensiona a região de textura.
 
 #### Novos scripts embutidos
 Adicionamos mais alguns scripts integrados com esta versão, como um script de câmera FPS e o script de controlador de primeiro jogador. Para usá-los, basta clicar em “New Asset”, “Script source code”, selecionar o script desejado e anexá-lo a uma entidade adequada.
@@ -89,14 +89,14 @@ Para gerar uma fonte sprite pré-compilada, o proprietário do arquivo de fonte 
 <img src="media/ReleaseNotes-1.5/PrecompiledSpriteFont.png" />
 
 ## Versão 1.5.4-beta
-Data de lançamento: 2016\/03\/03
+Data de lançamento: 2016/03/03
 
 #### Questões corrigidas
 - Corrigir um problema de certificação restante para o Windows Universal Apps.
 - Corrigir um problema com a seleção do Perfil Gráfico em placas gráficas INTEL.
 
 ## Versão 1.5.3-beta
-Data de lançamento: 2016\/02\/18
+Data de lançamento: 2016/02/18
 
 #### Questões corrigidas
 - Corrigir um problema na atualização do pacote apagando o conteúdo do shader e arquivos de efeito.
@@ -105,7 +105,7 @@ Data de lançamento: 2016\/02\/18
 - Substituir a fonte `MS Mincho` por uma fonte gratuita incorporada em amostras (A fonte não está disponível em todos os sistemas)
 
 ## Versão 1.5.2-beta
-Data de lançamento: 2016\/01\/15
+Data de lançamento: 2016/01/15
 
 #### Questões corrigidas
 
@@ -144,7 +144,7 @@ Data de lançamento: 2016\/01\/15
 - Adicione a possibilidade de editar os 3 componentes de um vetor simultaneamente.
 
 ## Versão 1.5.1-beta
-Data de lançamento: 2015\/12\/22
+Data de lançamento: 2015/12/22
 
 #### Questões corrigidas
 
@@ -162,7 +162,7 @@ Data de lançamento: 2015\/12\/22
 
 
 ## Versão 1.5.0-beta
-Data de lançamento: 2015\/12\/17
+Data de lançamento: 2015/12/17
 
 #### Melhorias
 
@@ -177,10 +177,10 @@ Data de lançamento: 2015\/12\/17
 - Melhore a filtragem de ativos na visualização de ativos. A tag do filtro pode ser adicionada, desativada ou removida a qualquer momento.
 - As pastas são exibidas na visualização de ativos.
 - Os ativos podem ser classificados pela última data de modificação.
-- Adicione a capacidade de copiar \/ colar ativos com suas dependências.
+- Adicione a capacidade de copiar / colar ativos com suas dependências.
 - Melhore o editor de folhas de sprite. Redimensionar fronteiras ou mover a região da textura comporta-se corretamente, especialmente quando se chega às fronteiras da imagem. O fundo fora da região de textura selecionada pode ser escurecido.
 - A visualização da folha de Sprite pode ser exibida enquanto a folha de sprite está sendo editada.
-- Alterar o estilo de diálogo da mensagem. Algumas caixas de diálogo de confirmação (por exemplo, a exclusão de um ativo) podem ser desativadas nas configurações (sob a confirmação Interface \/..).
+- Alterar o estilo de diálogo da mensagem. Algumas caixas de diálogo de confirmação (por exemplo, a exclusão de um ativo) podem ser desativadas nas configurações (sob a confirmação Interface /..).
 
 ###### Jogos de Jogos
 
@@ -227,8 +227,8 @@ Data de lançamento: 2015\/12\/17
 - Corrigir um acidente ao duplicar uma entidade no editor de cena.
 - Corrigir problema de renomeação quando duplicar uma entidade no editor de cena.
 - Corrigir o problema miniaturas escuras para texturas no modo HDR.
-- Corrigir configurações de gizmo não salvo \/ recarregado corretamente.
-- Corrigir cópia\/paste de pastas no explorador de soluções.
+- Corrigir configurações de gizmo não salvo / recarregado corretamente.
+- Corrigir cópia/paste de pastas no explorador de soluções.
 - Corrigir um acidente no editor de folhas de sprite quando uma imagem de origem foi modificada em um editor externo.
 - Corrigir um potencial acidente quando a região de textura está fora da imagem.
 - Corrigir um erro impedindo criar um quadro no editor de sprite ao deixar cair um arquivo.

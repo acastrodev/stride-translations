@@ -1,7 +1,7 @@
 # Desenho vértices
 
-<x1\/>Avançado<x2\/>
-<x3\/>Programação<x4\/>
+<span class="badge text-bg-primary">Avançado</span>
+<span class="badge text-bg-success">Programação</span>
 
 Ao carregar uma cena, o Stride lida automaticamente com as chamadas do sorteio para exibir a cena em todo o sistema de entidade. Esta página apresenta desenho manual.
 
@@ -22,13 +22,13 @@ Eles não são criados automaticamente junto com o @'Stride.Graphics.GraphicsDev
 ** Código:** Criando e usando um primitivo
 
 ```cs
-\/\/ criação
+// criação
 var myCube = GeometricPrimitive.Cube.New (GraphicsDevice);
 var myTorus = GeometricPrimitive.Torus.New (GraphicsDevice);
  
-\/\/...
+//...
  
-\/\/ desenhar um na tela
+// desenhar um na tela
 myCube.Draw (CommandList, EffectInstance);
 ```
 
@@ -46,14 +46,14 @@ Dado tampão de vértice e declaração, um @'Stride.Graphics.VertexBufferBindin
 ** Código:** Criando um amortecedor de vértice
 
 ```cs
-\/\/ Criar um layout de vértice com coordenada de posição e textura
+// Criar um layout de vértice com coordenada de posição e textura
 var layout = novo VertexDeclaration (VertexElement.Position<Vector3>(), VertexElement.TextureCoordinate<Vector2>()); 
  
-\/\/ Criar o tampão de vértice de uma variedade de vértices
+// Criar o tampão de vértice de uma variedade de vértices
 vértices var = novo VertexPositionTexture[vertexCount];
 var vertexBuffer = Buffer.Vertex.New (GraphicsDevice, vértices);
  
-\/\/ Criar uma ligação de amortecedor de vértice
+// Criar uma ligação de amortecedor de vértice
 var vertexBufferBinding = novo VertexBufferBinding (vertexBuffer, layout, vérticeCount);
 ```
 
@@ -64,17 +64,17 @@ Depois, os vértices estão prontos para serem renderizados usando @'Stride.Grap
 ** Código:** Encerramento e desenho de amortecedores de vértice
 
 ```cs
-\/\/ Definir o estado do pipeline
+// Definir o estado do pipeline
 pipelineStateDescription.InputElements = vérticeBufferBinding.Layout.CreateInputElements();
 pipeStateDescription.PrimitiveType = PrimitiveType.TriangleStrip;
  
-\/\/ Criar e definir um objeto PipelineState
-\/\/...
+// Criar e definir um objeto PipelineState
+//...
 
-\/\/ Ligar o tampão de vértice para o pipeline
+// Ligar o tampão de vértice para o pipeline
 commandList.SetVertexBuffers(0, vérticeBuffer, 0, vérticeBufferBinding.Stride);
  
-\/\/ Desenhe os vértices
+// Desenhe os vértices
 commandList.Draw (vertexCount);
 ```
 
@@ -84,15 +84,15 @@ Ele pode então ser usado para desenhar usando @'Stride.Graphics.CommandList.Dra
 **Código:** Desenho de vértices indexados
 
 ```cs
-\/\/ Criar o buffer de índice
+// Criar o buffer de índice
 var indices = new short[indexCount];
 var is32Bits = false;
 var indexBuffer = Buffer.Index.New (GraphicsDevice, índices);
  
-\/\/ definir o VAO
+// definir o VAO
 commandList.SetIndexBuffer(indexBuffer, 0, is32Bits);
 
-\/\/ Desenho de vértices indexados
+// Desenho de vértices indexados
 commandList.DrawIndexed(indexBuffer.ElementCount);
 ```
 

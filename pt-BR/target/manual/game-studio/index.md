@@ -1,6 +1,6 @@
 # Game Studio
 
-<x1\/>Introdução<x2\/>
+<span class="badge text-bg-primary">Introdução</span>
 
 **Game Studio** é a ferramenta central para a produção de jogos e aplicações em Stride. No Game Studio, você pode:
 
@@ -13,7 +13,7 @@ Game Studio também é integrado com seus projetos Visual Studio, para que você
 
 ## Interface
 
-<x1\/>Game Studio<x2\/>
+![Game Studio](../get-started/media/game-studio-main-interface.png)
 
 O **asset editor** (A) é usado para editar ativos e cenas. Alguns tipos de ativos, como cenas [scenes](create-a-scene.md), têm editores dedicados onde você pode fazer mudanças complexas no ativo. Para abrir um editor dedicado (quando disponível), clique duas vezes no ativo ou clique com o botão direito e selecione **Editar asset**.
 

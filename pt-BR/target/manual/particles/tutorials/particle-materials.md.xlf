@@ -9,9 +9,9 @@
 <source xml:lang="en"><x id="1"/>Intermediate<x id="2"/>
 <x id="3"/>Artist<x id="4"/>
 <x id="5"/>Programmer<x id="6"/></source>
-<target xml:lang="pt">&lt;x1\/&gt; Intermediário &lt;x2\/&gt;
-&lt;x3\/&gt;Artista &lt;x4\/&gt;
-&lt;x5\/&gt;Programação&lt;x6\/&gt;</target>
+<target xml:lang="pt"><x id="1"/>Intermediário<x id="2"/>
+<x id="3"/>Artista <x id="4"/>
+<x id="5"/>Programação<x id="6"/></target>
 </trans-unit>
 <trans-unit id="tu3" xml:space="preserve">
 <source xml:lang="en">This tutorial demonstrates how to create custom shaders and materials for a particle system, providing functionality not available in the core engine. It focuses on shaders and rendering. For simulation, see the <g id="1">custom particles tutorial</g>.</source>
@@ -27,7 +27,7 @@
 </trans-unit>
 <trans-unit id="tu6" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Particles sample project<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt;Particles sample project&lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/>Particles sample project<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu7" xml:space="preserve">
 <source xml:lang="en">This project contains four scenes, each demonstrating a different way to use particles: <g id="1">AnimatedParticles</g>, <g id="2">ChildParticles</g>, <g id="3">CustomMaterials</g>, and <g id="4">CustomParticles</g>.</source>
@@ -43,7 +43,7 @@
 </trans-unit>
 <trans-unit id="tu10" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>media/particles-samples-material-1.png<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt;media\/particles-samples-material-1.png&lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/>media/particles-samples-material-1.png<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu11" xml:space="preserve">
 <source xml:lang="en">Select one of the particle entities and navigate to its source particle system, expanding the emitter in it and its material.</source>
@@ -89,7 +89,7 @@
 </trans-unit>
 <trans-unit id="tu18" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>media/particles-samples-material-2.png<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt;media\/particles-samples-material-2.png&lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/>media/particles-samples-material-2.png<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu19" xml:space="preserve">
 <source xml:lang="en">If the shader isn't there, reload the project.</source>
@@ -101,7 +101,7 @@
 </trans-unit>
 <trans-unit id="tu21" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>media/particles-samples-material-3.png<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt;media\/particles-samples-material-3.png&lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/>media/particles-samples-material-3.png<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu22" xml:space="preserve">
 <source xml:lang="en">The particles are red. With Game Studio running, edit and save <g id="1">ComputeColorRed.sdsl</g> to make them yellow.</source>
@@ -168,10 +168,10 @@
 
       float4 unclamped = lerp(ColorCenter, ColorEdge, radialDistance);
 
-      \/\/ Queremos permitir que a intensidade cresça muito, mas cap o alfa para 1
+      // Queremos permitir que a intensidade cresça muito, mas cap o alfa para 1
       float4 branqueado = braçadeira (inclampado, flutuador4(0, 0, 0, 0), flutuador4(1000, 1000, 1000, 1));
 
-      \/\/ Lembre-se de que usamos um pipeline alfa pré-multiplicado para que todos os valores de cor devem ser pré-multiplicados
+      // Lembre-se de que usamos um pipeline alfa pré-multiplicado para que todos os valores de cor devem ser pré-multiplicados
       braçada.rgb *= braçada.a;
 
       voltar fixado;
@@ -193,7 +193,7 @@
 </trans-unit>
 <trans-unit id="tu32" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>media/particles-samples-material-4.png<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt;media\/particles-samples-material-4.png&lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/>media/particles-samples-material-4.png<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu33" xml:space="preserve">
 <source xml:lang="en">The values we set here will be used by the <g id="1">ComputeColorRadial</g> shader for the particles. The rest of the shader simply calculates a gradient color based on the distance of the shaded pixel from the center of the billboard.</source>
@@ -225,9 +225,9 @@
   // -------------------------------------
   stage float4 SomeRandomKey;
 </source>
-<target xml:lang="pt">  \/\/ -----------------------------------------
-  \/\/ fluxos
-  \/\/ -----------------------------------------
+<target xml:lang="pt">  // -----------------------------------------
+  // fluxos
+  // -----------------------------------------
   flutuador de palco4 Alguns passos Chave;
 </target>
 </trans-unit>
@@ -358,26 +358,26 @@ class ParticleCustomShader : ParticleBase
 <target xml:lang="pt">
 classe ParticleCustom Shader.. Base de partículas
 (
-  \/\/ Este shader pode ser definido pelo usuário, e é uma árvore binária composta de shaders menores
+  // Este shader pode ser definido pelo usuário, e é uma árvore binária composta de shaders menores
   compor base de cores compostasCor;
 
-  \/\/ Este shader pode ser definido pelo usuário, e é uma árvore binária composta de shaders menores
+  // Este shader pode ser definido pelo usuário, e é uma árvore binária composta de shaders menores
   compor ComputeColor baseIntensidade;
 
-  \/\/ Shading of the sprite — nós substituímos o Shading( da classe base), que só retorna ColorScale
+  // Shading of the sprite — nós substituímos o Shading( da classe base), que só retorna ColorScale
   sobreposição de palco float4 Shading()
   (
-      \/\/ -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-      \/\/ Cor da partícula base RGB
-      \/\/ -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+      // -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+      // Cor da partícula base RGB
+      // -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
       float4 finalColor = base.Shading() * baseColor.Compute();
 
-      \/\/ -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-      \/\/ Partícula base alfa
-      \/\/ -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+      // -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+      // Partícula base alfa
+      // -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
       finalColor.a = baseIntensity.Compute();
 
-      \/\/ Não se esqueça de multiplicar o alfa
+      // Não se esqueça de multiplicar o alfa
       finalColor.rgb *= finalColor.aaa;
 
       final de retorno Cor;
@@ -438,25 +438,25 @@ classe ParticleCustom Shader.. Base de partículas
 (
   particleCustomEffect
   (
-      \/\/ Use o ParticleBaseKeys para atributos constantes, definidos no motor de jogo
+      // Use o ParticleBaseKeys para atributos constantes, definidos no motor de jogo
       usando params ParticleBaseKeys;
 
-      \/\/ Use o ParticleCustom Shader Chaves para atributos constantes, definidas neste projeto
+      // Use o ParticleCustom Shader Chaves para atributos constantes, definidas neste projeto
       usando params Teste de partículas Shader Chaves;
 
-      \/\/ Herda do ParticleBaseEffect.sdfx, definido no motor do jogo
+      // Herda do ParticleBaseEffect.sdfx, definido no motor do jogo
       mixin ParticleBaseEffect;
 
-      \/\/ Use o ParticleCustomShader.sdsl, definido neste projeto
+      // Use o ParticleCustomShader.sdsl, definido neste projeto
       misturador de partículas Shader;
 
-      \/\/ Se o shader definido pelo usuário para a baseColor não é nulo usá-lo
+      // Se o shader definido pelo usuário para a baseColor não é nulo usá-lo
       se (ParticleCustomShaderKeys.BaseColor!= null)
       (
           mixin compose baseCor = ParticleCustomShaderKeys.BaseColor;
       }
 
-      \/\/ Se o shader definido pelo usuário para a baseIntensidade (alpha) não é nulo usá-lo
+      // Se o shader definido pelo usuário para a baseIntensidade (alpha) não é nulo usá-lo
       se (ParticleCustomShaderKeys.BaseIntensity!= null)
       (
           base de composição da misturaIntensidade = ParticleCustomShaderKeys.BaseIntensidade;

@@ -8,8 +8,8 @@
 <trans-unit id="tu2" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Advanced<x id="2"/>
 <x id="3"/>Programmer<x id="4"/></source>
-<target xml:lang="pt">&lt;x1\/&gt;Avançado&lt;x2\/&gt;
-&lt;x3\/&gt;Programação&lt;x4\/&gt;</target>
+<target xml:lang="pt"><x id="1"/>Avançado<x id="2"/>
+<x id="3"/>Programação<x id="4"/></target>
 </trans-unit>
 <trans-unit id="tu3" xml:space="preserve">
 <source xml:lang="en">A sprite batch is a collection of sprites (2D textured planes).</source>
@@ -18,7 +18,7 @@
 <trans-unit id="tu4" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>!Note<x id="2"/>
 Remember that you need to put all custom code in a <g id="3">custom scene renderer</g> to include it in the composition.</source>
-<target xml:lang="pt">&lt;x1\/&gt;!Note&lt;x2\/&gt;
+<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
 Lembre-se que você precisa colocar todo o código personalizado em um renderizador de cena <g id="3">custom</g> para incluí-lo na composição.</target>
 </trans-unit>
 <trans-unit id="tu5" xml:space="preserve">
@@ -79,13 +79,13 @@ spriteBatch.Draw(myTexture, new Vector2(10, 20));
 // end the sprite batch operations
 spriteBatch.End();
 </source>
-<target xml:lang="pt">\/\/ iniciar as operações de lote de sprite
+<target xml:lang="pt">// iniciar as operações de lote de sprite
 spriteBatch.Begin (GraphicsContext, SpriteSortMode.Immediate);
  
-\/\/ desenhar o sprite imediatamente
+// desenhar o sprite imediatamente
 spriteBatch.Draw(myTexture, new Vector2(10, 20));
  
-\/\/ terminar as operações de lote sprite
+// terminar as operações de lote sprite
 spriteBatch.End();
 </target>
 </trans-unit>
@@ -131,13 +131,13 @@ spriteBatch.Draw(myTexture, new Vector2(10, 20));
 // end the sprite batch operations, draw all the sprites
 spriteBatch.End();
 </source>
-<target xml:lang="pt">\/\/ iniciar as operações de lote de sprite
-spriteBatch.Begin(GraphicsContext); \/\/ mesmo que sprite Batch. Comece (GraphicsContext, SpriteSortMode.Deferido);
+<target xml:lang="pt">// iniciar as operações de lote de sprite
+spriteBatch.Begin(GraphicsContext); // mesmo que sprite Batch. Comece (GraphicsContext, SpriteSortMode.Deferido);
 
-\/\/ armazenar a modificação do sprite
+// armazenar a modificação do sprite
 spriteBatch.Draw(myTexture, new Vector2(10, 20));
 
-\/\/ terminar as operações de lote sprite, desenhar todos os sprites
+// terminar as operações de lote sprite, desenhar todos os sprites
 spriteBatch.End();
 </target>
 </trans-unit>
@@ -196,22 +196,22 @@ for (int y = 0; y &lt; gridCount; y++)
 // end the sprite batch operations, draw all the sprites
 spriteBatch.End();
 </source>
-<target xml:lang="pt">\/\/ iniciar as operações de lote de sprite
+<target xml:lang="pt">// iniciar as operações de lote de sprite
 spriteBatch.Begin (GraphicsContext);
 rede de segurança Contagem = 10;
-var textureOffset = novo Vector2(float)graphicsDevice.BackBuffer.Width\/gridCount, (float)graphicsDevice.BackBuffer.Height\/gridCount);
-var textureOrigin = novo Vector2 (myTexture). Largura\/2.0f, myTexture.Height\/2.0f);
+var textureOffset = novo Vector2(float)graphicsDevice.BackBuffer.Width/gridCount, (float)graphicsDevice.BackBuffer.Height/gridCount);
+var textureOrigin = novo Vector2 (myTexture). Largura/2.0f, myTexture.Height/2.0f);
 
-\/\/ desenhar 100 sprites em uma grade 10x10 com uma rotação de 1,2 rad e uma escala de 0,5 para cada um deles
+// desenhar 100 sprites em uma grade 10x10 com uma rotação de 1,2 rad e uma escala de 0,5 para cada um deles
 para (int y = 0; y &lt; gridCount; y++)
 (
     para (int x = 0; x &lt; gridCount; x++)
     (
-        spriteBatch.Draw (UVTexture, novo Vector2(x * textureOffset.X + textureOffset.X \/ 2.0f, y * textureOffset. Y + textureOffset.Y \/ 2.0f), Color.White, 1.2f, textureOrigin, 0.5f);
+        spriteBatch.Draw (UVTexture, novo Vector2(x * textureOffset.X + textureOffset.X / 2.0f, y * textureOffset. Y + textureOffset.Y / 2.0f), Color.White, 1.2f, textureOrigin, 0.5f);
     }
 }
  
-\/\/ terminar as operações de lote sprite, desenhar todos os sprites
+// terminar as operações de lote sprite, desenhar todos os sprites
 spriteBatch.End();
 </target>
 </trans-unit>

@@ -12,7 +12,7 @@ Além disso, para suas necessidades de renderização de borda de corte, agora a
 
 Esta versão apresenta novos ativos de interface do usuário junto com um novo editor de interface do usuário, para que você possa criar incrível interface do usuário diretamente do Game Studio!
 
-[<x1\/>UI Editor<x2\/>](https://www.youtube.com/watch?v=YlCViinxviI "UI Editor<ex1\/>
+[![UI Editor](https://img.youtube.com/vi/YlCViinxviI/0.jpg)](https://www.youtube.com/watch?v=YlCViinxviI "UI Editor")
 
 O editor UI fornece uma experiência WYSIWYG completa. Você pode autorizar toda a árvore visual de sua interface de usuário, editar as propriedades de cada elemento UI (como layout, cor de fundo, etc) e visualizar sua renderização.
 
@@ -29,11 +29,11 @@ E uma vez que ele é construído no mesmo sistema que arquétipos e prefabs, voc
 
 Muitos sistemas computacionalmente intensivos foram multithreaded. Espere um grande aumento no desempenho e melhor escala para corresponder com o tamanho do seu jogo! Observamos até 6 vezes maiores taxas de quadros para cenas fortemente vinculadas à CPU até agora (em uma CPU de 4 núcleos típica).
 
-[<x1\/>Multithreading demo<x2\/>](https://www.youtube.com/watch?v=sJ2p982cZFc "Moltithread demo<ex1\/>
+[![Multithreading demo](https://img.youtube.com/vi/sJ2p982cZFc/0.jpg)](https://www.youtube.com/watch?v=sJ2p982cZFc "Moltithread demo")
 
 O código paralelizado inclui muitos `EntityProcessors` e quase todas as partes do nosso recentemente reescrito **rendering pipeline**. Em **Vulkan** e **Direct3D12** isso inclui também a gravação de listas de comando de desenho, dando-lhes uma borda sobre as outras APIs.
 
-<x1\/>Multithread <x2\/>
+![Multithread ](media/ReleaseNotes-1.8/multithreading.jpg)
 
 Os desenvolvedores podem encontrar classes e utilitários para programação simultânea no `SiliconStudio.Core.Threading` namespace, por exemplo, `Dispatcher.For()`, que se assemelham à Biblioteca Paralela Tarefa, mas são mais leves e adaptados para o trabalho realizado cada quadro no loop de atualização de um jogo.
 
@@ -54,7 +54,7 @@ Certifique-se de que o prefab base está apenas contendo entidades estáticas co
 
 Oclusão ambiente foi adicionado à lista de efeitos pós-processamento. A técnica atual implementa [Scalable Ambient Obscurance](https://graphics.cs.williams.edu/papers/SAOHPG12/). Ele expõe uma variedade de opções, incluindo o número de amostras de torneira, intensidade, raio de torneira e tamanho do amortecedor traseiro.
 
-<x1\/>SAO comparação tiros<x2\/>
+![SAO comparação tiros](media/ReleaseNotes-1.8/SAO.jpg)
 
 Atualmente é parte do pipeline de pós-efeito, mas mais tarde vai se mover para o pipeline de iluminação para renderização mais realista.
 
@@ -62,7 +62,7 @@ Atualmente é parte do pipeline de pós-efeito, mas mais tarde vai se mover para
 
 Shading Cel (ou Shading Toon) está agora disponível como um modelo de renderização com opções de renderização Diffuse e Specular. A implementação padrão limita o produto leve a níveis binários ou 3 cortes discretos. Você também pode referenciar uma textura de rampa para melhor controle artístico.
 
-[<x1\/>Cel Shading<x2\/>](https://www.youtube.com/watch?v=RJDrG1QR3Uo "Cel Shading<ex1\/>
+[![Cel Shading](https://img.youtube.com/vi/RJDrG1QR3Uo/0.jpg)](https://www.youtube.com/watch?v=RJDrG1QR3Uo "Cel Shading")
 
 ## Como atualizar
 
@@ -71,12 +71,12 @@ Shading Cel (ou Shading Toon) está agora disponível como um modelo de renderiz
 A propriedade UIComponent `RootElement` foi substituída pela propriedade `Page`. Agora espera uma instância do tipo `UIPage`. Os scripts que estavam definindo a propriedade `RootElement` precisam ser atualizados:
 
 ```
-\/\/ código anterior (não compilar)
+// código anterior (não compilar)
 var grid = novo Grid();
 var component = Entity.Get<UIComponent>();
 componente. RootElement = grade;
 
-\/\/ novo código
+// novo código
 var grid = novo Grid();
 var component = Entity.Get<UIComponent>();
 componente. Página = nova UIPage
@@ -93,11 +93,11 @@ var canvas = novo Canvas();
 lona.Crianças.Adicionar (texto);
 
 var position = novo Vector3(0.0f, 1.0f, 0,0f);
-\/\/ anteriormente definir esta propriedade anexada também irá definir Canvas. UsoPosições Absolutas Propriedade Chave para false automaticamente
+// anteriormente definir esta propriedade anexada também irá definir Canvas. UsoPosições Absolutas Propriedade Chave para false automaticamente
 text.DependencyProperties.Set(Canvas.PositionRelativePropertyKey, position);
-\/\/ agora você precisa configurá-lo explicitamente
+// agora você precisa configurá-lo explicitamente
 text.DependencyProperties.Set (Canvas.UseAbsolutePosition PropertyKey, false);
-\/\/ note que usar métodos de extensão é a maneira recomendada, e faz tudo isso de uma forma mais concisa:
+// note que usar métodos de extensão é a maneira recomendada, e faz tudo isso de uma forma mais concisa:
 text.SetCanvasRelativePosition(position);
 ```
 
@@ -105,7 +105,7 @@ text.SetCanvasRelativePosition(position);
 
 ### Versão 1.8.0-Beta
 
-Data de lançamento: 2016\/08\/31
+Data de lançamento: 2016/08/31
 
 #### Melhorias
 
@@ -134,7 +134,7 @@ Data de lançamento: 2016\/08\/31
 ##### Gráficos
 
 - Comando Lista agora pode compilar e executar
-- Os buffers constantes agora são carregados em um único buffer de GPU e definidos com deslocamentos na plataforma\/API que suportam este modo
+- Os buffers constantes agora são carregados em um único buffer de GPU e definidos com deslocamentos na plataforma/API que suportam este modo
 - D3D12: número reduzido de chamadas de API
 
 ##### Game Studio
@@ -196,7 +196,7 @@ Data de lançamento: 2016\/08\/31
 
 ### Versão 1.8.1-Beta
 
-Data de lançamento: 2016\/09\/2009
+Data de lançamento: 2016/09/2009
 
 #### Melhorias
 
@@ -232,14 +232,14 @@ Data de lançamento: 2016\/09\/2009
 
 ### Versão 1.8.2-Beta
 
-Data de lançamento: 2016\/09\/21
+Data de lançamento: 2016/09/21
 
 #### Melhorias
 
 ##### Game Studio
 
 - Melhore o encaixe ao mover ou redimensionar um elemento no editor de interface do usuário: elemento movido será "atraído" pelos limites do recipiente pai ou irmãos como ímãs. Isso deve facilitar o alinhamento de elementos uns com os outros.
-- Ajuste automaticamente a propriedade de alinhamento ao mover-se para a borda esquerda\/direita (resp. top\/bottom) do recipiente pai.
+- Ajuste automaticamente a propriedade de alinhamento ao mover-se para a borda esquerda/direita (resp. top/bottom) do recipiente pai.
 - A única raiz de uma página de interface do usuário pode ser removida e uma nova pode ser adicionada.
 - Melhore a capacidade de resposta do Game Studio.
 
@@ -263,7 +263,7 @@ Data de lançamento: 2016\/09\/21
 
 ### Versão 1.8.3-Beta
 
-Data de lançamento: 2016\/10\/07
+Data de lançamento: 2016/10/07
 
 #### Melhorias
 
@@ -292,7 +292,7 @@ Data de lançamento: 2016\/10\/07
 ##### Física
 
 - Corrigir a renderização da forma de depuração de colisões estáticos quando esses colisões são forçados a se mover
-- Corrigir renderização de forma de depuração de entidades habilitadas\/desativadas.
+- Corrigir renderização de forma de depuração de entidades habilitadas/desativadas.
 - Corrigir problemas com salto
 - Corrigir a propagação de transformação de corpos dinâmicos quando em um esqueleto.
 

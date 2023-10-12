@@ -1,6 +1,6 @@
 # Use sprites
 
-<span class="badge text-bg-primary"> Intermediário </span>
+<span class="badge text-bg-primary">Intermediário</span>
 <span class="badge text-bg-success">Programação</span>
 
 Para adicionar um sprite a uma cena, adicione um componente **sprite** a uma entidade. Depois, você pode controlar o sprite com um script.

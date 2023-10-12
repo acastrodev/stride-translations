@@ -1,7 +1,7 @@
 # Texturas e texturas de renderização
 
-<x1\/>Avançado<x2\/>
-<x3\/>Programação<x4\/>
+<span class="badge text-bg-primary">Avançado</span>
+<span class="badge text-bg-success">Programação</span>
 
 Stride usa o @'Stride.Graphics. Classe Texture para interagir com objetos de textura em código.
 
@@ -12,7 +12,7 @@ Para obter mais informações sobre renderização a uma textura, consulte as te
 Para carregar uma textura de um ativo em Stride, chame esta função:
 
 ```cs
-\/\/ carrega a textura chamada pato.dds (ou .png etc.)
+// carrega a textura chamada pato.dds (ou .png etc.)
 var myTexture = Content.Load<Texture>("duck");
 ```
 
@@ -37,14 +37,14 @@ A classe @'Stride.Graphics.GraphicsPresenter' sempre fornece um alvo de renderiz
 ### Código: Criar um buffer de destino de renderização personalizado e profundidade
 
 ```cs
-\/\/ renderizar alvo
+// renderizar alvo
 var myRenderTarget = Texture.New2D (GraphicsDevice, 512, 512, false, PixelFormat. R8G8B8A8_UNorm, TextureFlags.ShaderResource | TextureFlags.RenderTarget);
  
-\/\/ buffer de profundidade estável
+// buffer de profundidade estável
 var myDepthBuffer = Texture.New2D (GraphicsDevice, 512, 512, false, PixelFormat.D16_UNorm, TextureFlags.DepthStencil);
 ```
 
-> <x1\/>!Note<x2\/>
+> [!Note]
 > Não se esqueça da bandeira @'Stride.Graphics.TextureFlags.RenderTarget' para ativar o comportamento do alvo de renderização.
 >
 > Certifique-se de que o PixelFormat está correto, especialmente para o buffer de profundidade. Tenha cuidado com os formatos disponíveis na plataforma de destino.
@@ -56,19 +56,19 @@ Uma vez que esses buffers são criados, você pode facilmente configurá-los com
 ### Código: Use um alvo de renderização
 
 ```cs
-\/\/ configura as texturas de renderização
+// configura as texturas de renderização
 CommandList.SetRenderTargetAndViewport (myDepthBuffer, myRenderTarget);
  
-\/\/ definir o destino de renderização padrão
+// definir o destino de renderização padrão
 CommandList.SetRenderTargetAndViewport (GraphicsDevice.Presenter.DepthStencilBuffer, GraphicsDevice.Presenter.BackBuffer);
 ```
 
-> <x1\/>!Note<x2\/>
+> [!Note]
 > Certifique-se de que o alvo de renderização e o buffer de profundidade têm o mesmo tamanho. Caso contrário, o buffer de profundidade não é usado.
 
-Você pode definir várias texturas de renderização ao mesmo tempo. Veja as sobrecargas de @'Stride.Graphics.CommandList.SetRenderTargets(Stride.Graphics.Texture,Stride.Graphics.Texture<x1\/>x2\/>)' e @'Stride.Graphics.CommandList.SetRenderTargetsAndViewrature(Stride.<x2\/><x3\/><x4\/>
+Você pode definir várias texturas de renderização ao mesmo tempo. Veja as sobrecargas de @'Stride.Graphics.CommandList.SetRenderTargets(Stride.Graphics.Texture,Stride.Graphics.Texture[x2/>)' e @'Stride.Graphics.CommandList.SetRenderTargetsAndViewrature(Stride.][]
 
-> <x1\/>!Note<x2\/>
+> [!Note]
 > Apenas o @'Stride.Graphics.GraphicsPresenter.BackBuffer' é exibido na tela, então você precisa renderizá-lo para exibir algo.
 
 ### Limpar um alvo de renderização
@@ -79,10 +79,10 @@ Para limpar texturas de renderização, ligue para o @'Stride.Graphics.CommandLi
 
 ```cs
 CommandList.Clear (GraphicsDevice.Presenter.BackBuffer, Color.Black);
-CommandList.Clear(GraphicsDevice.Presenter.DepthStencilBuffer, DepthStencilClearOptions.DepthBuffer); \/\/ apenas limpar o buffer de profundidade
+CommandList.Clear(GraphicsDevice.Presenter.DepthStencilBuffer, DepthStencilClearOptions.DepthBuffer); // apenas limpar o buffer de profundidade
 ```
 
-> <x1\/>!Note<x2\/>
+> [!Note]
 > Não se esqueça de limpar o @'Stride.Graphics.GraphicsPresenter.BackBuffer' e o @'Stride.Graphics.GraphicsPresenter.DepthStencilBuffer' cada quadro. Se você não o fizer, você pode ter comportamento inesperado dependendo do dispositivo. Se você quiser manter o conteúdo de um quadro, use um destino de renderização intermediário.
 
 ## Viewport
@@ -91,27 +91,27 @@ CommandList.Clear(GraphicsDevice.Presenter.DepthStencilBuffer, DepthStencilClear
 
 Se você quiser apenas renderizar para um subconjunto da textura, defina o alvo de renderização e o viewport separadamente usando @'Stride.Graphics.CommandList.SetRenderTarget (Stride.Graphics.Texture,Stride.Graphics.Texture)' e @'Stride.Graphics.CommandList.SetView(Stport.Graport.
 
-Você pode ligar vários viewports usando @'Stride.Graphics.CommandList.SetViewports (Stride.Graphics.Viewport<x1\/><x2\/>)' e @'Stride.Graphics.CommandList.SetViewports(System.Int32,Stride.Graphics.Viewport<x3\/>r.<x4\/>
+Você pode ligar vários viewports usando @'Stride.Graphics.CommandList.SetViewports (Stride.Graphics.Viewport[])' e @'Stride.Graphics.CommandList.SetViewports(System.Int32,Stride.Graphics.Viewport[r.]
 
 ### Código: Defina os viewports
 
 ```cs
-\/\/ exemplo de um buffer HD completo
-CommandList.SetRenderTarget (GraphicsDevice.Presenter.DepthStencilBuffer, GraphicsDevice.Presenter.BackBuffer); \/\/ nenhum conjunto de viewport
+// exemplo de um buffer HD completo
+CommandList.SetRenderTarget (GraphicsDevice.Presenter.DepthStencilBuffer, GraphicsDevice.Presenter.BackBuffer); // nenhum conjunto de viewport
  
-\/\/ exemplo de definir o viewport para ter uma borda de 10 pixels em torno da imagem em um buffer HD completo (1920x1080)
+// exemplo de definir o viewport para ter uma borda de 10 pixels em torno da imagem em um buffer HD completo (1920x1080)
 var viewport = novo Viewport(10, 10, 1900, 1060);
 CommandList.SetViewport(viewport);
 ```
 
 ## Tesoura
 
-O @'Stride.Graphics.CommandList.SetScissorRectangle (Stride.Core.Mathematics.Rectangle)' e @'Stride.Graphics.CommandList.SetScisorRectangles(Stride.Core.Mathematics.Rectangle<x1\/><x2\/>) define os métodos do sc. Ao contrário do viewport, você precisa fornecer as coordenadas da localização dos vértices que definem a tesoura em vez de seu tamanho.
+O @'Stride.Graphics.CommandList.SetScissorRectangle (Stride.Core.Mathematics.Rectangle)' e @'Stride.Graphics.CommandList.SetScisorRectangles(Stride.Core.Mathematics.Rectangle[]) define os métodos do sc. Ao contrário do viewport, você precisa fornecer as coordenadas da localização dos vértices que definem a tesoura em vez de seu tamanho.
 
 ### Código: Defina a tesoura
 
 ```cs
-\/\/ exemplo de definir a tesoura para cortar a imagem por 10 pixels ao seu redor em um buffer de hd completo (1920x1080)
+// exemplo de definir a tesoura para cortar a imagem por 10 pixels ao seu redor em um buffer de hd completo (1920x1080)
 var retângulo = novo retângulo (10, 10, 1910, 1070);
 CommandList.SetScissorRectangles (retângulo);
  

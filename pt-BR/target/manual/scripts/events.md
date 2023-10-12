@@ -1,13 +1,13 @@
 # Eventos
 
-<x1\/> Intermediário <x2\/>
-<x3\/>Programação<x4\/>
+<span class="badge text-bg-primary">Intermediário</span>
+<span class="badge text-bg-success">Programação</span>
 
 **Eventos** facilitam a comunicação entre scripts. Eles trabalham de uma forma, transmitido de **casters** para **receivers**. Eventos vêm em dois sabores, uma versão não-genérica para a transmissão de eventos básicos, e uma versão genérica para quando os dados precisam ser passados para receptores.
 
 Por exemplo, imagine seu jogo tem um estado "Game Over" que ocorre quando o jogador morre. Para lidar com isso, você pode criar um evento "Game Over", que é transmitido a todos os scripts com receptores ouvindo para o evento. Quando o evento é transmitido, os receptores executam scripts apropriados para lidar com o evento Game Over (por exemplo, redefinir inimigos, substituir objetos de nível, iniciar um novo temporizador, etc). Você também pode enviar informações relacionadas ao estado "Game Over" (por exemplo, estatísticas de jogo, que ganhou, etc).
 
-> <x1\/>!Note<x2\/>
+> [!Note]
 > Os eventos são tratados inteiramente em scripts. Você não pode configurá-los no Game Studio.
 
 ## Criar e transmitir um evento
@@ -46,10 +46,10 @@ if(gameOverListenerWithData.TryReceive (out string data)))
 	- Sim. "Player 1"
 }
 
-\/\/Or em Async
+//Or em Async
 await gameOverListener.ReceiveAsync();
 string asyncData = await gameOverListenerWithData.ReceiveAsync();
-\/\/asyncData == "Player 1"
+//asyncData == "Player 1"
 ```
 
 ## Ver também

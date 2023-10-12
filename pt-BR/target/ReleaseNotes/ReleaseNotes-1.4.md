@@ -22,7 +22,7 @@ Estamos cientes de que nossa documentação não é onde precisamos ainda, entã
 
 O novo sistema deve fornecer melhor legibilidade e formatação mais consistente. Ele também nos permite editar e fazer upload de documentação separada para cada versão do Xenko.
 
-A documentação tem seu próprio repositório no GitHub: https:\/\/github.com\/SiliconStudio\/xenko-docs
+A documentação tem seu próprio repositório no GitHub: https://github.com/SiliconStudio/xenko-docs
 
 Todos na comunidade agora podem compartilhar informações adicionando edições que nos ajudarão a melhorar continuamente a documentação. Para editar a documentação, basta clicar no botão “Melhor este Doc” disponível em cada página da documentação e nos enviar pull requests.
 
@@ -47,7 +47,7 @@ Com este novo formato, recomendamos que você copie todo o seu projeto Sprite St
 
 ## Versão 1.4.0-beta
 
-Data de lançamento: 2015\/12\/01
+Data de lançamento: 2015/12/01
 
 ### Melhorias
 

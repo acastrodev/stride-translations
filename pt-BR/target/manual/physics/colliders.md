@@ -1,7 +1,7 @@
 # Coleiras
 
-<x1\/>Introdução<x2\/>
-<x3\/>Designer<x4\/>
+<span class="badge text-bg-primary">Introdução</span>
+<span class="badge text-bg-success">Designer</span>
 
 Para usar a física em seu projeto, adicione um componente **collider** a uma entidade.
 
@@ -42,15 +42,15 @@ Por padrão, os colisões são invisíveis no Editor de Cena. Para mostrar-lhes:
 
 1. Na barra de ferramentas Game Studio, na parte superior direita, clique no ícone **Exibir opções gizmo**.
 
-   <x1\/>Exibir opções de gizmo<x2\/>
+   ![Exibir opções de gizmo](media/display-gizmo-options.png)
 
 2. Selecione **Physics**.
 
-   <x1\/> opção de física de reprodução<x2\/>
+   ![ opção de física de reprodução](media/display-physics-option.png)
 
 O Editor de Cena exibe formas de colisão.
 
-<x1\/> Display física<x2\/>
+![ Display física](media/display-physics.png)
 
 ## Mostrar colisões no tempo de execução
 
@@ -60,7 +60,7 @@ Você pode tornar os colisões visíveis no tempo de execução, o que é útil 
 this.GetSimulation(). ColliderShapesRendering = verdadeiro;
 ``
 
-> <x1\/>!Note<x2\/>
+> [!Note]
 > Formas de colar para planos infinitos são sempre invisíveis.
 
 ### Atalho de teclado
@@ -71,15 +71,15 @@ Para mostrar ou ocultar formas de colisão no tempo de execução com um atalho 
 
 2. Selecione **Scripts** > **Debug formas físicas**.
 
-   <x1\/> Adicionar script de forma de física de depuração<x2\/>
+   ![ Adicionar script de forma de física de depuração](media/add-debug-physics-shapes-script.png)
 
 3. Na barra de ferramentas do Game Studio, clique em **Reload assemblies e atualize scripts**.
 
-   <x1\/>Reload assemblies<x2\/>
+   ![Reload assemblies](../platforms/media/reload-assemblies.png)
 
 4. Adicione o script **Debug Physics shapes** como um componente para uma entidade na cena. Não importa qual entidade.
 
-   <x1\/> Adicionar debug física forma componente de script<x2\/>
+   ![ Adicionar debug física forma componente de script](media/add-debug-physics-shapes-component.png)
 
 O script liga a visibilidade da forma do colisor a **Left Shift + Left Ctrl + P**, para que você possa ligá-la e desligar em tempo de execução. Você pode editar o script para vincular uma combinação de teclas diferente.
 

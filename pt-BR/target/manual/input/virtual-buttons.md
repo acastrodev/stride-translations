@@ -1,13 +1,13 @@
 # Botões virtuais
 
-<x1\/> Intermediário <x2\/>
-<x3\/>Programação<x4\/>
+<span class="badge text-bg-primary">Intermediário</span>
+<span class="badge text-bg-success">Programação</span>
 
 Em vez de ligar controles para chaves físicas e botões, você pode ag1>virtual botões</g>.<g id="1"> Os jogadores podem então atribuir botões físicos aos botões virtuais, permitindo-lhes criar seus próprios esquemas de controle.
 
 Por exemplo, imagine que você desenvolva um jogo de tiro em primeira pessoa e precise atribuir uma chave para a função _UseMedkit_. Em vez de ligar a função a uma chave particular, você pode criar um botão **virtual** chamado _UseMedkit_, em seguida, ligar o botão virtual para, digamos, a tecla **F**. Se quiser, o jogador pode ligar a chave virtual a uma chave diferente no tempo de execução.
 
-<x1\/> Botões virtuais<x2\/>
+![ Botões virtuais](media/index-how-virtual-buttons-work.png)
 
 ## Use botões virtuais
 
@@ -25,10 +25,10 @@ anula de sobreposição pública Start()
 (
     base.Start();
 
-    \/\/ Criar um novo VirtualButtonConfig Definir se nenhuma existe. 
+    // Criar um novo VirtualButtonConfig Definir se nenhuma existe. 
     Entrada.VirtualButtonConfigSet = Entrada.VirtualButtonConfigSet??? novo VirtualButtonConfigSet();
     
-    \/\/Bind "M" chave, GamePad "Start" botão e botão esquerdo do mouse para um botão virtual "MyButton".
+    //Bind "M" chave, GamePad "Start" botão e botão esquerdo do mouse para um botão virtual "MyButton".
     VirtualButtonBinding b1 = novo VirtualButtonBinding("MyButton", VirtualButton.Keyboard.M);
     VirtualButtonBinding b2 = novo VirtualButtonBinding("MyButton", VirtualButton.GamePad.Start);
     VirtualButtonBinding b3 = novo VirtualButtonBinding("MyButton", VirtualButton.Mouse.Left);

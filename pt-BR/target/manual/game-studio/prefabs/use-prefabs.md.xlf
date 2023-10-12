@@ -9,9 +9,9 @@
 <source xml:lang="en"><x id="1"/>Intermediate<x id="2"/>
 <x id="3"/>Programmer<x id="4"/>
 <x id="5"/>Designer<x id="6"/></source>
-<target xml:lang="pt">&lt;x1\/&gt; Intermediário &lt;x2\/&gt;
-&lt;x3\/&gt;Programação&lt;x4\/&gt;
-&lt;x5\/&gt;Designer&lt;x6\/&gt;</target>
+<target xml:lang="pt"><x id="1"/>Intermediário<x id="2"/>
+<x id="3"/>Programação<x id="4"/>
+<x id="5"/>Designer<x id="6"/></target>
 </trans-unit>
 <trans-unit id="tu3" xml:space="preserve">
 <source xml:lang="en">To instantiate a prefab, drag and drop it from the <g id="1">Asset View</g> to the scene.</source>
@@ -43,7 +43,7 @@
 </trans-unit>
 <trans-unit id="tu10" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Prefab parent and children in Entity Tree<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt; Prefab pai e crianças em Entity Tree&lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/> Prefab pai e crianças em Entity Tree<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu11" xml:space="preserve">
 <source xml:lang="en">This is useful because you can manage the prefab entities as a group and maintain their relative positions. For example, imagine you have a car prefab assembled from several entities (a body, seats, four wheels, etc). You want its component entities to stay grouped together as you move the car around the scene. You can do this by moving the prefab parent entity.</source>
@@ -67,11 +67,11 @@
 </trans-unit>
 <trans-unit id="tu16" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Boxes duplicated<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt; Caixas duplicadas&lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/> Caixas duplicadas<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu17" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Boxes duplicated<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt; Caixas duplicadas&lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/> Caixas duplicadas<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu18" xml:space="preserve">
 <source xml:lang="en">Break link to prefab</source>
@@ -87,7 +87,7 @@
 </trans-unit>
 <trans-unit id="tu21" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Break link between child and prefab<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt; Ligação rápida entre a criança e o pré-fab&lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/> Ligação rápida entre a criança e o pré-fab<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu22" xml:space="preserve">
 <source xml:lang="en">Instantiate and add prefabs at runtime</source>
@@ -113,13 +113,13 @@
 </source>
 <target xml:lang="pt">classe pública SpawnPrefabOnStart : StartupScript
 (
-    public Prefab MyPrefab { get; init; } \/\/ init aqui impede que outros scripts mudem esta propriedade
+    public Prefab MyPrefab { get; init; } // init aqui impede que outros scripts mudem esta propriedade
     
     anula de sobreposição pública Start()
     (
-        \/\/ Um prefab pode conter várias entidades
+        // Um prefab pode conter várias entidades
         var entidades = MyPrefab.Instantiate();
-        \/\/ Adicionando-os à cena em que esta entidade está
+        // Adicionando-os à cena em que esta entidade está
         Entity.Scene.Entities.AddRange (entidades);
     }
 }
@@ -128,7 +128,7 @@
 <trans-unit id="tu25" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>!Note<x id="2"/>
 <g id="3">Instantiate()</g> by itself isn't enough to add a prefab instance to the scene. You also need to <g id="4">Add()</g> or <g id="5">AddRange()</g> them to a scene . For example, if your prefab contains a model, the model is invisible until you add the prefab instance. Likewise, if your prefab contains a script, the script won't work until you add the prefab instance.</source>
-<target xml:lang="pt">&lt;x1\/&gt;!Note&lt;x2\/&gt;
+<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
 <g id="3">Instantiate()</g> por si só não é suficiente adicionar uma instância pré-fabricada à cena. Você também precisa <g id="4">Add()</g> ou <g id="5">AddRange()</g> them to a scene . Por exemplo, se o seu prefab contém um modelo, o modelo é invisível até adicionar a instância pré-fabricada. Da mesma forma, se seu prefab contém um script, o script não funcionará até que você adicione a instância prefab.</target>
 </trans-unit>
 <trans-unit id="tu26" xml:space="preserve">
@@ -154,17 +154,17 @@
 </source>
 <target xml:lang="pt">privado void InstantiateBulletPrefab()
 (
-    \/\/ Note que "MyBulletPrefab" refere-se ao nome e localização do seu ativo pré-fabricado
+    // Note que "MyBulletPrefab" refere-se ao nome e localização do seu ativo pré-fabricado
     var myBulletPrefab = Content.Load&lt;Prefab&gt;("MyBulletPrefab");
 
-    \/\/ Instantiate a prefab
+    // Instantiate a prefab
     var instance = myBulletPrefab.Instantiate();
     var bullet = instance[0];
 
-    \/\/ Alterar a coordenada X
+    // Alterar a coordenada X
     bala.Transform.Position.X = 20.0f;
 
-    \/\/ Adicionando apenas a bala à cena raiz
+    // Adicionando apenas a bala à cena raiz
     SceneSystem.SceneInstance.RootScene.Entities.Add(bullet);
 }
 </target>
@@ -173,7 +173,7 @@
 <source xml:lang="en"><x id="1"/>!Note<x id="2"/>
 At runtime, changes made to prefabs (<g id="3">myBulletPrefab</g> in the above example) don't affect existing prefab instances (<g id="4">bullet</g> in the above example). Subsequent calls to <g id="5">Instantiate(Prefab)</g> include new changes.
 For example, imagine you have a tree prefab that contains a script to change the tree color from green to red at runtime. The script won't affect existing instances of the prefab; it can only change the color of <g id="6">future</g> instances. This means prefabs instantiated after the code runs will have the new color, but existing prefabs won't.</source>
-<target xml:lang="pt">&lt;x1\/&gt;!Note&lt;x2\/&gt;
+<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
 No tempo de execução, as mudanças feitas em pré-fabs (<g id="3">myBulletPrefab</g> no exemplo acima) não afetam as instâncias pré-fabricadas existentes (<g id="4">bullet</g> no exemplo acima). Chamadas subsequentes para <g id="5">Instantiate(Prefab)</g> incluem novas mudanças.
 Por exemplo, imagine que você tem uma árvore pré-fabricada que contém um script para mudar a cor da árvore de verde para vermelho no tempo de execução. O script não afetará instâncias existentes do prefab; ele só pode alterar a cor de instâncias <g id="6">future</g>. Isso significa que os pré-fabs instantâneos após o código correr terão a nova cor, mas os pré-fabs existentes não vão.</target>
 </trans-unit>

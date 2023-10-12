@@ -8,8 +8,8 @@
 <trans-unit id="tu2" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Advanced<x id="2"/>
 <x id="3"/>Programmer<x id="4"/></source>
-<target xml:lang="pt">&lt;x1\/&gt;Avançado&lt;x2\/&gt;
-&lt;x3\/&gt;Programação&lt;x4\/&gt;</target>
+<target xml:lang="pt"><x id="1"/>Avançado<x id="2"/>
+<x id="3"/>Programação<x id="4"/></target>
 </trans-unit>
 <trans-unit id="tu3" xml:space="preserve">
 <source xml:lang="en">Stride uses the @'Stride.Graphics.Texture' class to interact with texture objects in code.</source>
@@ -31,7 +31,7 @@
 <source xml:lang="en">// loads the texture called duck.dds (or .png etc.)
 var myTexture = Content.Load&lt;Texture&gt;("duck");
 </source>
-<target xml:lang="pt">\/\/ carrega a textura chamada pato.dds (ou .png etc.)
+<target xml:lang="pt">// carrega a textura chamada pato.dds (ou .png etc.)
 var myTexture = Content.Load&lt;Texture&gt;("duck");
 </target>
 </trans-unit>
@@ -80,17 +80,17 @@ var myRenderTarget = Texture.New2D(GraphicsDevice, 512, 512, false, PixelFormat.
 // writable depth buffer
 var myDepthBuffer = Texture.New2D(GraphicsDevice, 512, 512, false, PixelFormat.D16_UNorm, TextureFlags.DepthStencil);
 </source>
-<target xml:lang="pt">\/\/ renderizar alvo
+<target xml:lang="pt">// renderizar alvo
 var myRenderTarget = Texture.New2D (GraphicsDevice, 512, 512, false, PixelFormat. R8G8B8A8_UNorm, TextureFlags.ShaderResource | TextureFlags.RenderTarget);
  
-\/\/ buffer de profundidade estável
+// buffer de profundidade estável
 var myDepthBuffer = Texture.New2D (GraphicsDevice, 512, 512, false, PixelFormat.D16_UNorm, TextureFlags.DepthStencil);
 </target>
 </trans-unit>
 <trans-unit id="tu18" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>!Note<x id="2"/>
 Don't forget the flag @'Stride.Graphics.TextureFlags.RenderTarget' to enable the render target behavior.</source>
-<target xml:lang="pt">&lt;x1\/&gt;!Note&lt;x2\/&gt;
+<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
 Não se esqueça da bandeira @'Stride.Graphics.TextureFlags.RenderTarget' para ativar o comportamento do alvo de renderização.</target>
 </trans-unit>
 <trans-unit id="tu19" xml:space="preserve">
@@ -116,27 +116,27 @@ CommandList.SetRenderTargetAndViewport(myDepthBuffer, myRenderTarget);
 // setting the default render target
 CommandList.SetRenderTargetAndViewport(GraphicsDevice.Presenter.DepthStencilBuffer, GraphicsDevice.Presenter.BackBuffer);
 </source>
-<target xml:lang="pt">\/\/ configura as texturas de renderização
+<target xml:lang="pt">// configura as texturas de renderização
 CommandList.SetRenderTargetAndViewport (myDepthBuffer, myRenderTarget);
  
-\/\/ definir o destino de renderização padrão
+// definir o destino de renderização padrão
 CommandList.SetRenderTargetAndViewport (GraphicsDevice.Presenter.DepthStencilBuffer, GraphicsDevice.Presenter.BackBuffer);
 </target>
 </trans-unit>
 <trans-unit id="tu24" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>!Note<x id="2"/>
 Make sure both the render target and the depth buffer have the same size. Otherwise, the depth buffer isn't used.</source>
-<target xml:lang="pt">&lt;x1\/&gt;!Note&lt;x2\/&gt;
+<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
 Certifique-se de que o alvo de renderização e o buffer de profundidade têm o mesmo tamanho. Caso contrário, o buffer de profundidade não é usado.</target>
 </trans-unit>
 <trans-unit id="tu25" xml:space="preserve">
 <source xml:lang="en">You can set multiple render textures at the same time. See the overloads of @'Stride.Graphics.CommandList.SetRenderTargets(Stride.Graphics.Texture,Stride.Graphics.Texture<x id="1"/><x id="2"/>)' and @'Stride.Graphics.CommandList.SetRenderTargetsAndViewport(Stride.Graphics.Texture,Stride.Graphics.Texture<x id="3"/><x id="4"/>)' method.</source>
-<target xml:lang="pt">Você pode definir várias texturas de renderização ao mesmo tempo. Veja as sobrecargas de @'Stride.Graphics.CommandList.SetRenderTargets(Stride.Graphics.Texture,Stride.Graphics.Texture&lt;x1\/&gt;x2\/&gt;)' e @'Stride.Graphics.CommandList.SetRenderTargetsAndViewrature(Stride.&lt;x2\/&gt;&lt;x3\/&gt;&lt;x4\/&gt;</target>
+<target xml:lang="pt">Você pode definir várias texturas de renderização ao mesmo tempo. Veja as sobrecargas de @'Stride.Graphics.CommandList.SetRenderTargets(Stride.Graphics.Texture,Stride.Graphics.Texture<x id="1"/>x2/&gt;)' e @'Stride.Graphics.CommandList.SetRenderTargetsAndViewrature(Stride.<x id="2"/><x id="3"/><x id="4"/></target>
 </trans-unit>
 <trans-unit id="tu26" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>!Note<x id="2"/>
 Only the @'Stride.Graphics.GraphicsPresenter.BackBuffer' is displayed on screen, so you need to render it to display something.</source>
-<target xml:lang="pt">&lt;x1\/&gt;!Note&lt;x2\/&gt;
+<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
 Apenas o @'Stride.Graphics.GraphicsPresenter.BackBuffer' é exibido na tela, então você precisa renderizá-lo para exibir algo.</target>
 </trans-unit>
 <trans-unit id="tu27" xml:space="preserve">
@@ -156,13 +156,13 @@ Apenas o @'Stride.Graphics.GraphicsPresenter.BackBuffer' é exibido na tela, ent
 CommandList.Clear(GraphicsDevice.Presenter.DepthStencilBuffer, DepthStencilClearOptions.DepthBuffer); // only clear the depth buffer
 </source>
 <target xml:lang="pt">CommandList.Clear (GraphicsDevice.Presenter.BackBuffer, Color.Black);
-CommandList.Clear(GraphicsDevice.Presenter.DepthStencilBuffer, DepthStencilClearOptions.DepthBuffer); \/\/ apenas limpar o buffer de profundidade
+CommandList.Clear(GraphicsDevice.Presenter.DepthStencilBuffer, DepthStencilClearOptions.DepthBuffer); // apenas limpar o buffer de profundidade
 </target>
 </trans-unit>
 <trans-unit id="tu31" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>!Note<x id="2"/>
 Don't forget to clear the @'Stride.Graphics.GraphicsPresenter.BackBuffer' and the @'Stride.Graphics.GraphicsPresenter.DepthStencilBuffer' each frame. If you don't, you might get unexpected behavior depending on the device. If you want to keep the contents of a frame, use an intermediate render target.</source>
-<target xml:lang="pt">&lt;x1\/&gt;!Note&lt;x2\/&gt;
+<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
 Não se esqueça de limpar o @'Stride.Graphics.GraphicsPresenter.BackBuffer' e o @'Stride.Graphics.GraphicsPresenter.DepthStencilBuffer' cada quadro. Se você não o fizer, você pode ter comportamento inesperado dependendo do dispositivo. Se você quiser manter o conteúdo de um quadro, use um destino de renderização intermediário.</target>
 </trans-unit>
 <trans-unit id="tu32" xml:space="preserve">
@@ -179,7 +179,7 @@ Não se esqueça de limpar o @'Stride.Graphics.GraphicsPresenter.BackBuffer' e o
 </trans-unit>
 <trans-unit id="tu35" xml:space="preserve">
 <source xml:lang="en">You can bind multiple viewports using @'Stride.Graphics.CommandList.SetViewports(Stride.Graphics.Viewport<x id="1"/><x id="2"/>)' and @'Stride.Graphics.CommandList.SetViewports(System.Int32,Stride.Graphics.Viewport<x id="3"/><x id="4"/>)' overloads for use with a geometry shader.</source>
-<target xml:lang="pt">Você pode ligar vários viewports usando @'Stride.Graphics.CommandList.SetViewports (Stride.Graphics.Viewport&lt;x1\/&gt;&lt;x2\/&gt;)' e @'Stride.Graphics.CommandList.SetViewports(System.Int32,Stride.Graphics.Viewport&lt;x3\/&gt;r.&lt;x4\/&gt;</target>
+<target xml:lang="pt">Você pode ligar vários viewports usando @'Stride.Graphics.CommandList.SetViewports (Stride.Graphics.Viewport<x id="1"/><x id="2"/>)' e @'Stride.Graphics.CommandList.SetViewports(System.Int32,Stride.Graphics.Viewport<x id="3"/>r.<x id="4"/></target>
 </trans-unit>
 <trans-unit id="tu36" xml:space="preserve">
 <source xml:lang="en">Code: Set the viewports</source>
@@ -193,10 +193,10 @@ CommandList.SetRenderTarget(GraphicsDevice.Presenter.DepthStencilBuffer, Graphic
 var viewport = new Viewport(10, 10, 1900, 1060);
 CommandList.SetViewport(viewport);
 </source>
-<target xml:lang="pt">\/\/ exemplo de um buffer HD completo
-CommandList.SetRenderTarget (GraphicsDevice.Presenter.DepthStencilBuffer, GraphicsDevice.Presenter.BackBuffer); \/\/ nenhum conjunto de viewport
+<target xml:lang="pt">// exemplo de um buffer HD completo
+CommandList.SetRenderTarget (GraphicsDevice.Presenter.DepthStencilBuffer, GraphicsDevice.Presenter.BackBuffer); // nenhum conjunto de viewport
  
-\/\/ exemplo de definir o viewport para ter uma borda de 10 pixels em torno da imagem em um buffer HD completo (1920x1080)
+// exemplo de definir o viewport para ter uma borda de 10 pixels em torno da imagem em um buffer HD completo (1920x1080)
 var viewport = novo Viewport(10, 10, 1900, 1060);
 CommandList.SetViewport(viewport);
 </target>
@@ -207,7 +207,7 @@ CommandList.SetViewport(viewport);
 </trans-unit>
 <trans-unit id="tu39" xml:space="preserve">
 <source xml:lang="en">The @'Stride.Graphics.CommandList.SetScissorRectangle(Stride.Core.Mathematics.Rectangle)' and @'Stride.Graphics.CommandList.SetScissorRectangles(Stride.Core.Mathematics.Rectangle<x id="1"/><x id="2"/>)' methods set the scissors. Unlike the viewport, you need to provide the coordinates of the location of the vertices defining the scissor instead of its size.</source>
-<target xml:lang="pt">O @'Stride.Graphics.CommandList.SetScissorRectangle (Stride.Core.Mathematics.Rectangle)' e @'Stride.Graphics.CommandList.SetScisorRectangles(Stride.Core.Mathematics.Rectangle&lt;x1\/&gt;&lt;x2\/&gt;) define os métodos do sc. Ao contrário do viewport, você precisa fornecer as coordenadas da localização dos vértices que definem a tesoura em vez de seu tamanho.</target>
+<target xml:lang="pt">O @'Stride.Graphics.CommandList.SetScissorRectangle (Stride.Core.Mathematics.Rectangle)' e @'Stride.Graphics.CommandList.SetScisorRectangles(Stride.Core.Mathematics.Rectangle<x id="1"/><x id="2"/>) define os métodos do sc. Ao contrário do viewport, você precisa fornecer as coordenadas da localização dos vértices que definem a tesoura em vez de seu tamanho.</target>
 </trans-unit>
 <trans-unit id="tu40" xml:space="preserve">
 <source xml:lang="en">Code: Set the scissor</source>
@@ -221,7 +221,7 @@ CommandList.SetScissorRectangles(rectangle);
 var rectangles = new[] { new Rectangle(10, 10, 1900, 1060), new Rectangle(0, 0, 256, 256) };
 CommandList.SetScissorRectangles(rectangles);
 </source>
-<target xml:lang="pt">\/\/ exemplo de definir a tesoura para cortar a imagem por 10 pixels ao seu redor em um buffer de hd completo (1920x1080)
+<target xml:lang="pt">// exemplo de definir a tesoura para cortar a imagem por 10 pixels ao seu redor em um buffer de hd completo (1920x1080)
 var retângulo = novo retângulo (10, 10, 1910, 1070);
 CommandList.SetScissorRectangles (retângulo);
  

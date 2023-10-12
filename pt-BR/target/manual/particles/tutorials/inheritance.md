@@ -1,8 +1,8 @@
 # Tutorial: Herança
 
-<x1\/> Intermediário <x2\/>
-<x3\/>Artista <x4\/>
-<x5\/>Programação<x6\/>
+<span class="badge text-bg-primary">Intermediário</span>
+<span class="badge text-bg-success">Artista </span>
+<span class="badge text-bg-success">Programação</span>
 
 Este tutorial explica como criar partículas que herdam um ou mais atributos, como posição ou cor, de outras partículas.
 
@@ -10,7 +10,7 @@ Este tutorial explica como criar partículas que herdam um ou mais atributos, co
 
 Para ver algumas das técnicas descritas nesta página implementadas em um projeto, crie um novo **Sample: Partículas** projeto e abrir a cena **ChildParticles**.
 
-<x1\/>Particles sample project<x2\/>
+![Particles sample project](media/select-particles-sample-project.png)
 
 ## Posição de entrada
 
@@ -24,7 +24,7 @@ No segundo emissor criamos um novo inicializador, **Position de parent**. Isso n
 
 A semente **Parent Offset** corresponde a campos quando mais de um atributos são herdados. Por exemplo, se você quiser herdar tanto **Position** e **Color** da mesma partícula pai (escolhida ao acaso) você deve fazer a semente *Parent Offset* da mesma forma. Alternativamente, você pode fazer a semente *Parent Offset* para ambos os inicializadores diferentes, em que as partículas de um pai podem herdar sua cor de uma partícula aleatória diferente. Normalmente, você quer mantê-los o mesmo, mas em alguns casos você pode querer misturá-los.
 
-<x1\/>media\/particles-tutorials-heritance-1.png<x2\/>
+![media/particles-tutorials-heritance-1.png](media/particles-tutorials-inheritance-1.png)
 
 Como você pode ver, este tipo de herança não controla a contagem desova, partículas máximas, ou quaisquer outros parâmetros, e é muito aleatório. Para a maioria dos efeitos é suficiente, mas às vezes você quer mais controle direto sobre as partículas.
 
@@ -44,7 +44,7 @@ O **Particle Spawn Trigger** é a condição de gatilho no lado pai, que determi
 
 ** O tempo de vida** é baseado na vida relativa da partícula-mãe, e desencadeia cada quadro que a vida está dentro dos limites. Há dois controles deslizantes para controlar de que ponto para que ponto as partículas devem ser desova. Alternativamente, você pode revertê-los para reverter a condição de desova. Por exemplo, uma partícula com condição de vida (0,9 - 1.0) apenas gera partículas de crianças nos últimos 10% de sua vida.
 
-Finalmente, o **Particles\/trigger** determina quantas partículas são geradas cada vez que a condição é satisfeita.
+Finalmente, o **Particles/trigger** determina quantas partículas são geradas cada vez que a condição é satisfeita.
 
 Para emissoras de crianças, é uma boa prática controlar o número máximo de partículas que a emissora pode ter, especialmente para casos não determinísticos, como o golpe de colisão.
 

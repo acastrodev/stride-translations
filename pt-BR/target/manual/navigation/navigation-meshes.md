@@ -1,8 +1,8 @@
 # Malhas de navegação
 
-<x1\/>Introdução<x2\/>
-<x3\/> Designer de nível <x4\/>
-<x5\/>Programação<x6\/>
+<span class="badge text-bg-primary">Introdução</span>
+<span class="badge text-bg-success"> Designer de nível </span>
+<span class="badge text-bg-success">Programação</span>
 
 ** malhas de navegação** formam a área que as entidades com componentes de navegação podem navegar. Stride cria uma camada na malha de navegação para cada grupo de navegação [navigação](navigation-groups.md) que você cria.
 
@@ -18,33 +18,33 @@ Game Studio exibe malhas de navegação como sobreposições coloridas em sua ce
 
 1. No **Asset View** (bottom by default), clique em **Add asset > Scenes > Navigation mesh**.
 
-   <x1\/>Selecionar configurações de jogo asset<x2\/>
+   ![Selecionar configurações de jogo asset](media/add-navigation-mesh.png)
 
    Game Studio adiciona um **navigation mesh asset** ao seu projeto.
 
-   <x1\/> Rede de navegação <x2\/>
+   ![ Rede de navegação ](media/navigation-mesh-in-asset-view.png)
 
 2. Com a malha de navegação selecionada no **Asset View**, no **Property Grid**, defina o **scene** as malhas de navegação neste ativo se aplicam.
 
-   <x1\/>Configurar propriedades de malha de navegação<x2\/>
+   ![Configurar propriedades de malha de navegação](media/navigation-mesh-properties.png)
 
    Para mais informações sobre cenas, veja [Scenes](../game-studio/scenes.md).
 
-3. Sob **Selecionados grupos**, clique em <x1\/>Verde mais botão<x2\/> (**Add**).
+3. Sob **Selecionados grupos**, clique em ![Verde mais botão](~/manual/game-studio/media/green-plus-icon.png) (**Add**).
 
    Game Studio adiciona um novo item à lista de grupos.
 
-   <x1\/> Adicionar grupo de navegação para navegação mesh<x2\/>
+   ![ Adicionar grupo de navegação para navegação mesh](media/add-navigation-group-to-navigation-mesh.png)
 
-4. Clique em <x1\/> Botão de seta azul<x2\/> (** Substituir**) e escolha um grupo no menu suspenso.
+4. Clique em ![ Botão de seta azul](~/manual/game-studio/media/blue-arrow-icon.png) (** Substituir**) e escolha um grupo no menu suspenso.
 
-   <x1\/> Grupo de navegação <x2\/>
+   ![ Grupo de navegação ](media/choose-navigation-group-in-navigation-mesh.png)
 
    Stride constrói uma camada na malha de navegação para este grupo. Para mais informações sobre grupos, incluindo como criá-los, veja [Grupos de navegação](navigation-groups.md).
 
 5. Repita os passos 3 e 4 para quantos grupos quiser usar a malha de navegação.
 
-   > <x1\/>!Note<x2\/>
+   > [!Note]
    > Se você quiser criar uma malha de navegação para uma cena diferente, crie outra malha de navegação e selecione a cena nas propriedades dos ativos.
 
 ## Propriedades de malha de navegação
@@ -60,13 +60,13 @@ Game Studio exibe malhas de navegação como sobreposições coloridas em sua ce
 
 Use o menu **navigation visibilidade** na barra de ferramentas do Editor de cenas.
 
-<x1\/>Visibilidade do grupo de navegação <x2\/>
+![Visibilidade do grupo de navegação ](media/navigation-group-visibility.png)
 
 Para mostrar ou ocultar camadas pertencentes a diferentes grupos, use as caixas de seleção. As caixas coloridas indicam a cor dos grupos exibidos no Editor de cena.
 
 | Malha de navegação escondida | Malha de navegação mostrada |
 |--------------------------| ------------
-| <x1\/>Caixa de captura mostrada <x2\/> | <x1\/>Bounding box oculto<x2\/> |
+| ![Caixa de captura mostrada ](media/navigation-mesh-invisible.jpg) | ![Bounding box oculto](media/navigation-mesh-visible.jpg) |
 
 Essas opções não têm efeito no comportamento do tempo de execução.
 

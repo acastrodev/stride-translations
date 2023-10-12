@@ -10,7 +10,7 @@ Como o Stride é baseado em modular, precisamos adicionar uma referência ao plu
 
 2. Selecione ` Adicionar dependência`
 
-   <x1\/> Adicionar dependência<x2\/>
+   ![ Adicionar dependência](media/voxelgi-add-dependency.png)
 
 3. Selecione `Stride.Voxels` na lista e pressione `OK`
 
@@ -22,29 +22,29 @@ Voxel Cone O rastreamento requer várias mudanças no compositor gráfico.
 
 Para facilitar isso, preparamos um compositor gráfico pronto para usar com Voxel GI nos modelos de ativos:
 
-1. No **Asset View**, clique em <x1\/><x2\/>
+1. No **Asset View**, clique em ![](../../game-studio/media/create-and-add-assets-add-new-asset-button.png)
 
 2. Comece a digitar `Voxel` na barra de pesquisa
 
 3. Selecione `Graphics Compositor (Voxel Cone Tracing)`
 
-   <x1\/>Criar gráficos Compositor<x2\/>
+   ![Criar gráficos Compositor](media/voxelgi-create-graphics-compositor.png)
 
 4. Em seu ativo `Game Settings`, altere o compositor gráfico para o recém-criado:
 
-   <x1\/>Set Graphics Compositor<x2\/>
+   ![Set Graphics Compositor](media/voxelgi-set-graphics-compositor.png)
 
 ### Cena de configuração: Volume e luz
 
-1. No explorador de cena, acima do **Entity Tree**, clique no ícone <x1\/>Plus<x2\/> e selecione `Lights` então `Voxel volume`
+1. No explorador de cena, acima do **Entity Tree**, clique no ícone ![Plus](../../game-studio/media/add-entities-to-a-scene-plus-icon.png) e selecione `Lights` então `Voxel volume`
 
-2. Clique no ícone <x1\/>Plus<x2\/> novamente e selecione `Lights` então `Voxel light`
+2. Clique no ícone ![Plus](../../game-studio/media/add-entities-to-a-scene-plus-icon.png) novamente e selecione `Lights` então `Voxel light`
 
    Nesse ponto, a renderização da cena provavelmente falhará devido à luz não ser configurada corretamente (com erro `No Voxel Volume Component selecionado para voxel light.`), mas isso é esperado.
 
 3. Na grade da propriedade, altere o volume de luz para a entidade criada anteriormente:
 
-   <x1\/>Configurar volume de luz <x2\/>
+   ![Configurar volume de luz ](media/voxelgi-setup-light-volume.png)
 
 4. Nesse ponto, você pode clicar no botão `Resume` no renderizador de cena, e tudo deve ser configurado!
 

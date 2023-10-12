@@ -1,6 +1,6 @@
 # Física
 
-<x1\/>Physics in Stride<x2\/>
+![Physics in Stride](media/physics-index-physics-in-stride.png)
 
 Stride simula física do mundo real, como gravidade e colisões. Esta seção explica como os componentes da física funcionam, como adicioná-los ao seu projeto e como usá-los com scripts.
 

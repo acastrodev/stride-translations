@@ -127,11 +127,11 @@ void GSMain(triangle Input input[3], inout PointStream&lt;Output&gt; pointStream
 void GSMain (entrada de entrada de triângulo[3], inout PointStream&lt;Output&gt; pointStream)
 (
 	...
-	\/\/ preencher o objeto streams
+	// preencher o objeto streams
 	fluxos = entrada[0];
  	...
  
-	\/\/ sempre apêndice fluxos
+	// sempre apêndice fluxos
 	pointStream.Anexar(streams);
 	...
 }
@@ -216,7 +216,7 @@ void DSMain(const OutputPatch&lt;Input, 3&gt; input, out Output, in Constantes c
 <trans-unit id="tu29" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>!Note<x id="2"/>
 Don't forget to assign <g id="3">output</g> to <g id="4">streams</g> at the end of your stage.</source>
-<target xml:lang="pt">&lt;x1\/&gt;!Note&lt;x2\/&gt;
+<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
 Não se esqueça de atribuir <g id="3">output</g> a <g id="4">streams</g> no final do seu estágio.</target>
 </trans-unit>
 <trans-unit id="tu30" xml:space="preserve">
@@ -271,7 +271,7 @@ anular CSMain()
 </trans-unit>
 <trans-unit id="tu40" xml:space="preserve">
 <source xml:lang="en"><g id="1">Shader stage input/output automatic management</g></source>
-<target xml:lang="pt"><g id="1">Shader fase de entrada \/ saída gestão automática</g></target>
+<target xml:lang="pt"><g id="1">Shader fase de entrada / saída gestão automática</g></target>
 </trans-unit>
 </body>
 </file>

@@ -1,14 +1,14 @@
 # Skyboxes e fundos
 
-<x1\/>Introdução<x2\/>
-<x3\/>Designer<x4\/>
-<x5\/>Programação<x6\/>
+<span class="badge text-bg-primary">Introdução</span>
+<span class="badge text-bg-success">Designer</span>
+<span class="badge text-bg-success">Programação</span>
 
 **Skyboxes** são fundos que criam a ilusão de espaço e distância. Os cenários típicos incluem céus, nuvens, montanhas e outras paisagens. Como as caixas de céu são pré-renderizadas, eles exigem pouca GPU e CPU.
 
 Você pode usar **cubemaps** ou **360° texturas panorâmicas** como skyboxes. Você também pode [usá-los para iluminar a cena](../lights-and-shadows/skybox-lights.md).
 
-> <x1\/>!Note<x2\/>
+> [!Note]
 > Atualmente, Stride não suporta skydomes ou skyboxes locais.
 
 Alternativamente, você pode exibir um fundo **2D**, que é frequentemente útil para jogos 2D.
@@ -17,9 +17,9 @@ Alternativamente, você pode exibir um fundo **2D**, que é frequentemente útil
 
 A **cubemap** é uma textura de seis lados. Quando estas texturas são montadas em um cubo ao redor da cena, o cubemap simula espaçoso ambiente 3D.
 
-<x1\/> Desatual planeta skybox<x2\/>
+![ Desatual planeta skybox](media/cubemap-cross.jpg)
 
-<x1\/>Merged skybox<x2\/>
+![Merged skybox](media/skybox-assembled.jpg)
 
 Atualmente, Game Studio não pode converter arquivos de imagem para cubemaps (`.dds` arquivos). Use outra aplicação para criar um cubemap de arquivos de imagem separados, como:
 
@@ -36,13 +36,13 @@ Você pode capturar um cubemap de uma posição em sua cena.
 
 2. Na barra de ferramentas do editor de cena, abra o menu **Lighting**.
 
-   <x1\/>Opções de iluminação<x2\/>
+   ![Opções de iluminação](../lights-and-shadows/media/lighting-options-menu.png)
 
 3. Sob **Cubemap**, clique em **Generate**.
 
 4. Navegue para o local no disco que deseja salvar o cubemap, especifique um nome e clique em **Salve**.
 
-> <x1\/>!Tip<x2\/>
+> [!Tip]
 > Recomendamos que você salve o cubemap em seu projeto **Resources** pasta. Para obter mais informações, consulte [Organize seus arquivos no controle de versão](../../files-and-folders/version-control.md).
 
 Game Studio cria um arquivo cubemap `.dds` no local especificado.
@@ -53,23 +53,23 @@ Em vez de usar um cubemap, você pode usar uma textura panorâmica **360°** com
 
 | panorama 360° | Aparência no jogo |
 |----------------|-------------
-| <x1\/>Panorama texture<x2\/> | <x1\/>Panorama no jogo<x2\/> |
+| ![Panorama texture](media/MyPanorama.jpg) | ![Panorama no jogo](media/panorama-in-game.jpg) |
 *Imagem cortesia de [Texturify](http://texturify.com)*
 
-> <x1\/>!Note<x2\/>
+> [!Note]
 > Lembre-se de que os efeitos postais [](../post-effects/index.md) afetam a aparência de sua caixa de céu. Se não olhar como você espera, tente alterar suas configurações de efeito pós.
 
 ## Adicione um cubemap ou textura panorâmica de 360° ao projeto
 
 Você adiciona estes como outras texturas de cor.
 
-* No **Asset View**, clique em <x1\/>Add asset<x2\/>, selecione **Textures** > ** Textura de cor** e navegue para o arquivo.
+* No **Asset View**, clique em ![Add asset](../lights-and-shadows/media/engine-skybox-add-new-asset-button.png), selecione **Textures** > ** Textura de cor** e navegue para o arquivo.
 
-   <x1\/>Selecione textura como tipo de ativo<x2\/>
+   ![Selecione textura como tipo de ativo](media/engine-skybox-select-asset-type.png)
 
 * Alternativamente, arraste e solte o arquivo de ** Windows Explorer** para o **Asset View**, em seguida, selecione **Cor textura**.
 
-   <x1\/>Drag e drop background texture<x2\/>
+   ![Drag e drop background texture](media/drag-texture.gif)
 
 ### Criar uma caixa de céu
 
@@ -87,11 +87,11 @@ Você pode adicionar componentes de fundo para quantas entidades precisar. Você
 
 2. No **Property Grid** (à direita por padrão), clique em **Add component** e selecione **Background**.
 
-   <x1\/> Adicionar componente de fundo<x2\/>
+   ![ Adicionar componente de fundo](media/engine-skybox-add-background-component.png)
 
 3. Sob **Textura**, selecione o cubemap ou 360° textura panorâmica que você deseja usar na caixa do céu.
 
-   <x1\/> Propriedades do componente de fundo<x2\/>
+   ![ Propriedades do componente de fundo](media/engine-skybox-background-component-properties.png)
 
 ## Use uma caixa de céu como uma fonte de luz
 
@@ -105,13 +105,13 @@ O seguinte código muda o cubemap em um fundo:
 public Texture cubemapTextura;
 void público ChangeBackgroundParameters()
 (
-    \/\/ Obter o componente de fundo de uma entidade
+    // Obter o componente de fundo de uma entidade
 	var background = direcionalLight.Get<BackgroundComponent>();
 
-	\/\/ Substituir o fundo existente
+	// Substituir o fundo existente
 	fundo. Textura = cubemapTextura;
 
-	\/\/ Alterar a intensidade de fundo
+	// Alterar a intensidade de fundo
 	fundo. Intensidade = 1,5f;
 }
 ```
@@ -130,7 +130,7 @@ Em vez de usar uma Skybox 3D, você pode exibir a textura como um fundo estátic
 
 Para fazer isso, no **Background** propriedades do componente, selecione **2D background**.
 
-<x1\/> Propriedades do componente de fundo<x2\/>
+![ Propriedades do componente de fundo](media/is-2d.png)
 
 Se você habilitar isso com um cubemap, Stride usa a primeira face do cubemap como fundo.
 

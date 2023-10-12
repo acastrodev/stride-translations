@@ -1,7 +1,7 @@
 # Sensores
 
-<x1\/> Intermediário <x2\/>
-<x3\/>Programação<x4\/>
+<span class="badge text-bg-primary">Intermediário</span>
+<span class="badge text-bg-success">Programação</span>
 
 Você pode usar vários **sensors**, como giroscópios e acelerômetros, como dispositivos de entrada em seu projeto. Os sensores são frequentemente usados em jogos móveis.
 
@@ -40,7 +40,7 @@ Antes de obter o valor de um sensor, verifique se o sensor está disponível no 
 var hasCompass = Input.Compass!= null;
 ```
 
-> <x1\/>!Note<x2\/>
+> [!Note]
 > Se um sensor não é suportado nativamente pelo dispositivo, a Stride tenta emula-lo usando outros sensores do dispositivo.
 
 ## Habilitar um sensor
@@ -53,7 +53,7 @@ Para ativar um sensor, configure @'Stride.Input.ISensorDevice.IsEnabled' para `t
 
 O sensor de orientação **** indica a orientação ** do dispositivo** em relação à gravidade e ao pólo norte da Terra. A orientação é nula quando o eixo Y do dispositivo está alinhado com o polo norte magnético e o eixo Z com a gravidade. Você pode usar dados de orientação para controlar várias ações em um jogo.
 
-<x1\/> Sensor de orientação<x2\/>
+![ Sensor de orientação](media/sensor-overview-orientation-sensor.png)
 
 Use [Input.Orientation](xref:Stride.Input.InputManager.Orientation) para obter a orientação atual do dispositivo.
 
@@ -71,8 +71,8 @@ Por exemplo:
   var orientação = Entrada.Orientação. Quaternion;
 ```
 
-> <x1\/>!Note<x2\/>
-> Stride fornece a orientação sob as formas pitch\/yaw\/roll, rotação, ou quaternion. Recomendamos o formulário quaternion como ele não sofre de [gimbal lock](https://en.wikipedia.org/wiki/Gimbal_lock).
+> [!Note]
+> Stride fornece a orientação sob as formas pitch/yaw/roll, rotação, ou quaternion. Recomendamos o formulário quaternion como ele não sofre de [gimbal lock](https://en.wikipedia.org/wiki/Gimbal_lock).
 
 ## Sensores de movimento
 ** Sensores de movimento** medem **forças de aceleração** como inclinação, tremores e balanço. Stride suporta três tipos de sensor de movimento:
@@ -83,19 +83,19 @@ Por exemplo:
 
 Os sensores usam a relação física ```Acelerômetro = Gravidade + UserAcceleration```.
 
-<x1\/> Sensores de movimento<x2\/>
+![ Sensores de movimento](media/sensor-overview-accelerometer-acceleration-gravity.png)
 
 Sensores de movimento têm um único campo que especifica o vetor de aceleração ** atual** no dispositivo. Stride mede a aceleração em **meters por segundo squared**.
 
 Esta imagem mostra a base coordenada **** Stride usa para medir a aceleração em smartphones e tablets:
 
-<x1\/>Acelerômetro<x2\/>
+![Acelerômetro](media/sensor-overview-accelerometer-sensor.png)
 
 ### Use o acelerômetro
 
 O acelerômetro ** acelerômetro** mede a aceleração bruta aplicada ao dispositivo. Isso inclui **gravidade** e **Aceleração do usuário**.
 
-> <x1\/>!NOTE<x2\/>
+> [!NOTE]
 > Quando o usuário não está aplicando força, a aceleração **device** é igual à sua gravidade ****.
 
 Para obter a aceleração bruta, use [Accelerometer.Aceleration](xref:Stride.Input.IAccelerometerSensor.Acceleration). Por exemplo:
@@ -125,7 +125,7 @@ Para obter o vetor de gravidade, use [GravitySensor](xref:Stride.Input.IGravityS
 
 O **compass** indica medidas o ângulo entre o topo do dispositivo e o **North Pole**. Isto é útil, por exemplo, girar e alinhar mapas digitais.
 
-<x1\/> Compassa<x2\/>
+![ Compassa](media/sensor-overview-compasss.png)
 
 Para obter esse ângulo, use [CompassSensor.Heading](xref:Stride.Input.ICompassSensor.Heading). Por exemplo:
 
@@ -137,7 +137,7 @@ var cabeçalho = Entrada.Compass.Heading;
 
 O giroscópio mede a velocidade de rotação **** do dispositivo (**radians per second**).
 
-<x1\/>Gyroscope<x2\/>
+![Gyroscope](media/sensor-overview-gyroscope-sensor.png)
 
 Para obter a velocidade de rotação, use [GyroscopeSensor.RotationRate](xref:Stride.Input.IGyroscopeSensor.RotationRate). Por exemplo:
 
@@ -155,22 +155,22 @@ classe pública SensorScript : AsyncScript
 (
 	override público async Task Execute()
 	(
-		\/\/ Verificar disponibilidade do sensor
+		// Verificar disponibilidade do sensor
 		se(Input.Accelerometer!= null)
 			voltar;
 			
-		\/\/ Ativar o sensor
+		// Ativar o sensor
 		Input.Acelerômetro. É permitido = verdadeiro;
 				
 		enquanto (Game.IsRunning)
 		(
-			\/\/ leitura da aceleração atual
+			// leitura da aceleração atual
 			var accel = Entrada.Acelerômetro.Aceleração;
 			
-			\/\/ executar requerem trabalhos...
+			// executar requerem trabalhos...
 			await Script.NextFrame();
 		}		
-		\/\/ Desativar o sensor após o uso
+		// Desativar o sensor após o uso
 		Input.Acelerômetro. IsEnabled = false;
 	}
 }

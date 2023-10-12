@@ -22,7 +22,7 @@ A fase **extract** copia dados de estados de jogo de objetos coletados anteriorm
 
 Isso deve ser o mais rápido possível e evitar computações pesadas desde a atualização do jogo e scripts são bloqueados. Computações pesadas devem ser diferidas para [Prepare](#prepare).
 
-> <x1\/>!Note<x2\/>
+> [!Note]
 > Atualmente, o Stride não paralelo às atualizações e scripts do jogo, então eles não serão retomados até que as fases **prepare** e **draw** sejam concluídas.
 
 Exemplo de tarefas:
@@ -52,7 +52,7 @@ Exemplo de tarefas:
 
 Um exemplo típico de visões e estágios criados durante a fase **collect**, usado durante a fase **draw**:
 
-<x1\/>media\/render-features-draw-example.png<x2\/>
+![media/render-features-draw-example.png](media/render-features-draw-example.png)
 
 ### Processadores de tubulação
 

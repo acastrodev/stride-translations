@@ -9,9 +9,9 @@
 <source xml:lang="en"><x id="1"/>Intermediate<x id="2"/>
 <x id="3"/>Artist<x id="4"/>
 <x id="5"/>Programmer<x id="6"/></source>
-<target xml:lang="pt">&lt;x1\/&gt; Intermediário &lt;x2\/&gt;
-&lt;x3\/&gt;Artista &lt;x4\/&gt;
-&lt;x5\/&gt;Programação&lt;x6\/&gt;</target>
+<target xml:lang="pt"><x id="1"/>Intermediário<x id="2"/>
+<x id="3"/>Artista <x id="4"/>
+<x id="5"/>Programação<x id="6"/></target>
 </trans-unit>
 <trans-unit id="tu3" xml:space="preserve">
 <source xml:lang="en">Models can use multiple materials. You can set the materials in the model's <g id="1">material slots</g>.</source>
@@ -19,7 +19,7 @@
 </trans-unit>
 <trans-unit id="tu4" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Material slots<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt; slots de série&lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/> slots de série<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu5" xml:space="preserve">
 <source xml:lang="en">For example, the second material slot in this model specifies the material for the visor and the shoulder and chest plate stripes. By changing the material in this slot, we change the material used in these parts of the model.</source>
@@ -27,7 +27,7 @@
 </trans-unit>
 <trans-unit id="tu6" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Materials<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt;materiais&lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/>materiais<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu7" xml:space="preserve">
 <source xml:lang="en">The material slots themselves — their number and position — are defined in the model source file (eg  <g id="1">.fbx</g>, <g id="2">.obj</g>, etc). You can't edit material slots in Game Studio; you can only change which materials are used in each slot.</source>
@@ -47,12 +47,12 @@
 </trans-unit>
 <trans-unit id="tu11" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Model materials<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt;Materiais móveis&lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/>Materiais móveis<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu12" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>!Note<x id="2"/>
 This affects every instance of this model.</source>
-<target xml:lang="pt">&lt;x1\/&gt;!Note&lt;x2\/&gt;
+<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
 Isso afeta cada instância deste modelo.</target>
 </trans-unit>
 <trans-unit id="tu13" xml:space="preserve">
@@ -61,7 +61,7 @@ Isso afeta cada instância deste modelo.</target>
 </trans-unit>
 <trans-unit id="tu14" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Model materials on entity<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt; Materiais móveis em entidade&lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/> Materiais móveis em entidade<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu15" xml:space="preserve">
 <source xml:lang="en">This only affects <g id="1">this</g> instance or prefab.</source>
@@ -77,7 +77,7 @@ Isso afeta cada instância deste modelo.</target>
 </trans-unit>
 <trans-unit id="tu18" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Mesh<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt;Mesh&lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/>Mesh<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu19" xml:space="preserve">
 <source xml:lang="en">The association between a mesh and a material slot is defined in the model source file. You can't change these associations in Game Studio, but you can change them in code at runtime.</source>
@@ -113,7 +113,7 @@ Isso afeta cada instância deste modelo.</target>
 </trans-unit>
 <trans-unit id="tu26" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Mesh<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt;Mesh&lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/>Mesh<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu27" xml:space="preserve">
 <source xml:lang="en">In the example above, there are five meshes and five draw calls. After merging, there are three meshes and three draw calls.</source>
@@ -122,19 +122,19 @@ Isso afeta cada instância deste modelo.</target>
 <trans-unit id="tu28" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>!Note<x id="2"/>
 When Stride merges meshes, it merges the vertex and index buffers. This means you can't draw the meshes separately at runtime, and you can't change the original mesh position (transformation matrix). The meshes become a single mesh with a single material and a single transformation matrix (relative to the model).</source>
-<target xml:lang="pt">&lt;x1\/&gt;!Note&lt;x2\/&gt;
+<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
 Quando o Stride mescla malhas, ele mescla o vértice e os buffers de índice. Isso significa que você não pode desenhar as malhas separadamente no tempo de execução, e você não pode alterar a posição de malha original (matriz de transformação). As malhas se tornam uma única malha com um único material e uma única matriz de transformação (relativa ao modelo).</target>
 </trans-unit>
 <trans-unit id="tu29" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>!Note<x id="2"/>
 When Stride merges meshes, it changes the draw order of elements. In the case of transparent materials, this can produce different results.</source>
-<target xml:lang="pt">&lt;x1\/&gt;!Note&lt;x2\/&gt;
+<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
 Quando Stride mescla malhas, ele muda a ordem do sorteio de elementos. No caso de materiais transparentes, isso pode produzir resultados diferentes.</target>
 </trans-unit>
 <trans-unit id="tu30" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>!Note<x id="2"/>
 When you create a <g id="3">physics collider from a model</g>, Stride builds separate convex hulls for each mesh in the model. If the meshes are merged, only one mesh remains per material, so convex hulls are also built from merged meshes.</source>
-<target xml:lang="pt">&lt;x1\/&gt;!Note&lt;x2\/&gt;
+<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
 Quando você cria um <g id="3">física colide de um modelo</g>, Stride constrói cascos convexos separados para cada malha no modelo. Se as malhas são fundidas, apenas uma malha permanece por material, então cascos convexos também são construídos a partir de malhas mescladas.</target>
 </trans-unit>
 <trans-unit id="tu31" xml:space="preserve">
@@ -167,7 +167,7 @@ Quando você cria um <g id="3">física colide de um modelo</g>, Stride constrói
 </trans-unit>
 <trans-unit id="tu38" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Disable merge meshes<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt; Desativar malhas mesclas&lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/> Desativar malhas mesclas<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu39" xml:space="preserve">
 <source xml:lang="en">Disable merging for specific meshes</source>
@@ -187,7 +187,7 @@ Quando você cria um <g id="3">física colide de um modelo</g>, Stride constrói
 </trans-unit>
 <trans-unit id="tu43" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Model skeleton<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt;Esqueleto padrão &lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/>Esqueleto padrão <x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu44" xml:space="preserve">
 <source xml:lang="en">For more information about skeletons, see <g id="1">Animation</g>.</source>
@@ -199,7 +199,7 @@ Quando você cria um <g id="3">física colide de um modelo</g>, Stride constrói
 </trans-unit>
 <trans-unit id="tu46" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Select model skeleton<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt;Selecione o esqueleto do modelo&lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/>Selecione o esqueleto do modelo<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu47" xml:space="preserve">
 <source xml:lang="en">In the <g id="1">Property Grid</g>, under <g id="2">Nodes</g>, select the nodes that correspond to the meshes you don't want to merge.</source>
@@ -207,18 +207,18 @@ Quando você cria um <g id="3">física colide de um modelo</g>, Stride constrói
 </trans-unit>
 <trans-unit id="tu48" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Nodes<x id="2"/></source>
-<target xml:lang="pt">&lt;x1\/&gt;Nodes&lt;x2\/&gt;</target>
+<target xml:lang="pt"><x id="1"/>Nodes<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu49" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>!Tip<x id="2"/>
 To see which nodes correspond to which mesh, open the model source file in a modeling application such as Maya.</source>
-<target xml:lang="pt">&lt;x1\/&gt;!Tip&lt;x2\/&gt;
+<target xml:lang="pt"><x id="1"/>!Tip<x id="2"/>
 Para ver quais nós correspondem a qual malha, abra o arquivo de origem do modelo em uma aplicação de modelagem como Maya.</target>
 </trans-unit>
 <trans-unit id="tu50" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>!Note<x id="2"/>
 Make sure you don't disable nodes that are animated at runtime.</source>
-<target xml:lang="pt">&lt;x1\/&gt;!Note&lt;x2\/&gt;
+<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
 Certifique-se de que você não desabilite nós que são animados em tempo de execução.</target>
 </trans-unit>
 <trans-unit id="tu51" xml:space="preserve">

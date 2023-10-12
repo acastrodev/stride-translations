@@ -2,7 +2,7 @@
 
 **Particles** são formas que, usadas em grandes números, criam efeitos pseudo-3D. Você pode usar partículas para criar efeitos como líquido, fogo, explosões, fumaça, relâmpago, trilhas de movimento, efeitos mágicos, e assim por diante.
 
-<x1\/>Particles<x2\/>
+![Particles](media/particles.png)
 
 ## Nesta secção
 
@@ -27,4 +27,4 @@
 
 Para ver alguns exemplos de partículas implementadas em um projeto, crie um novo **Sample: Partículas** projeto e verificar as diferentes cenas.
 
-<x1\/>Particles sample project<x2\/>
+![Particles sample project](media/select-particles-sample-project.png)
