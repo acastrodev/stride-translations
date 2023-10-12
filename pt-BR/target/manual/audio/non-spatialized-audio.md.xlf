@@ -13,7 +13,7 @@
 </trans-unit>
 <trans-unit id="tu3" xml:space="preserve">
 <source xml:lang="en"><g id="1">Non-spatialized audio</g> sounds the same throughout the scene, regardless of the position of entities (such as the player camera). It's stereo and moves along a single axis (usually the X-axis). Unlike <g id="2">spatialized audio</g>, the <g id="3">volume</g>, <g id="4">pitch</g> (<g id="5">frequency</g>), and other parameters of spatialized audio don't change. This is useful, for example, for background music and menu sound effects.</source>
-<target xml:lang="pt"><g id="1">Áudio não espacial</g> é estéreo e se desloca ao longo de um único eixo (geralmente o eixo X),  mantendo uma percepção sonora constante ao longo da cena, independentemente da posição das entidades, como por exemplo, a câmera do jogador. Ao contrário do <g id="2">áudio espacial</g>, o <g id="3">volume</g>, <g id="4">tom</g> (<g id="5">frequência</g>), e outros parâmetros de áudio espacial são constantes,  sendo útil, por exemplo, para efeitos de som de música de fundo e menu.</target>
+<target xml:lang="pt">O &lt;g id="1"&gt;áudio não espacial&lt;/g&gt; é estéreo e se desloca ao longo de um único eixo, geralmente o eixo X. Isso significa que a percepção sonora permanece constante ao longo da cena, independentemente da posição das entidades, incluindo a câmera do jogador. Ao contrário do &lt;g id="2"&gt;áudio espacial&lt;/g&gt;, o áudio não espacial mantém o mesmo &lt;g id="3"&gt;volume&lt;g id="3"&gt;, &lt;g id="4"&gt;tom&lt;/g&gt; (&lt;g id="5"&gt;frequência&lt;/g&gt;) e outros parâmetros em toda a cena.&lt;/g&gt; Isso é útil, por exemplo, para efeitos sonoros de música de fundo e em menus.</target>
 </trans-unit>
 <trans-unit id="tu4" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Non-spatialized audio<x id="2"/></source>
@@ -25,11 +25,11 @@
 </trans-unit>
 <trans-unit id="tu6" xml:space="preserve">
 <source xml:lang="en">1. Import audio and include it in the build</source>
-<target xml:lang="pt">1. Importar áudio e incluí-lo na compilação</target>
+<target xml:lang="pt">1. Importar áudio e adicioná-lo à compilação</target>
 </trans-unit>
 <trans-unit id="tu7" xml:space="preserve">
 <source xml:lang="en"><g id="1">Import the audio as a audio asset</g>.</source>
-<target xml:lang="pt"><g id="1">Importar o áudio como um recurso de áudio</g>.</target>
+<target xml:lang="pt"><g id="1">Importe o áudio como um recurso de áudio</g>.</target>
 </trans-unit>
 <trans-unit id="tu8" xml:space="preserve">
 <source xml:lang="en">Make sure the audio asset is a <g id="1">root asset</g>. Root assets are assets that Stride includes in the build so they can be used at runtime.</source>
@@ -57,7 +57,7 @@
 </trans-unit>
 <trans-unit id="tu14" xml:space="preserve">
 <source xml:lang="en">The <g id="1">SoundInstance</g> controls audio at runtime with the following properties:</source>
-<target xml:lang="pt">A API <g id="1">SoundInstance</g> controla áudio em tempo de execução com as seguintes propriedades:</target>
+<target xml:lang="pt">A API <g id="1">SoundInstance</g> gerencia o áudio em tempo de execução e oferece as seguintes propriedades:</target>
 </trans-unit>
 <trans-unit id="tu15" xml:space="preserve">
 <source xml:lang="en">Property</source>
@@ -81,11 +81,11 @@
 </trans-unit>
 <trans-unit id="tu20" xml:space="preserve">
 <source xml:lang="en">Sets the balance between left and right speakers. By default, each speaker a value of 0.5.</source>
-<target xml:lang="pt">Define o equilíbrio entre os alto-falantes esquerdo e direito. A configuração padrão para cada alto-falante é de 0.5.</target>
+<target xml:lang="pt">Controla o equilíbrio entre os alto-falantes esquerdo e direito. O valor padrão para cada alto-falante é 0,5.</target>
 </trans-unit>
 <trans-unit id="tu21" xml:space="preserve">
 <source xml:lang="en"><g id="1">Pitch</g></source>
-<target xml:lang="pt"><g id="1">Tom</g></target>
+<target xml:lang="pt"><g id="1">Pitch</g></target>
 </trans-unit>
 <trans-unit id="tu22" xml:space="preserve">
 <source xml:lang="en">Gets or sets the audio pitch (frequency).</source>
@@ -101,11 +101,11 @@
 </trans-unit>
 <trans-unit id="tu25" xml:space="preserve">
 <source xml:lang="en"><g id="1">Position</g></source>
-<target xml:lang="pt"><g id="1">Posição</g></target>
+<target xml:lang="pt"><g id="1">Position</g></target>
 </trans-unit>
 <trans-unit id="tu26" xml:space="preserve">
 <source xml:lang="en">Gets the current play position of the audio.</source>
-<target xml:lang="pt">Obtém a posição de reprodução atual do áudio.</target>
+<target xml:lang="pt">Obtém a posição atual de reprodução do áudio.</target>
 </trans-unit>
 <trans-unit id="tu27" xml:space="preserve">
 <source xml:lang="en"><g id="1">Volume</g></source>
@@ -124,7 +124,7 @@
 If the sound is already playing, Stride ignores all additional calls to <g id="3">SoundInstance.Play</g>.
 The same goes for <g id="4">SoundInstance.Pause</g> (when a sound is already paused) and <g id="5">SoundInstance.Stop</g> (when a sound is already stopped).</source>
 <target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
-Se o som já estiver reproduzindo, o Stride ignora todas as chamadas adicionais à <g id="3">SoundInstance.Play</g>.
+Quando um som já está sendo reproduzido, o Stride ignora todas as chamadas adicionais à <g id="3">SoundInstance.Play</g>.
 O mesmo vale para <g id="4">SoundInstance.Pause</g> (quando um som já está pausado) e <g id="5">SoundInstance.Stop</g> (quando um som já está parado).</target>
 </trans-unit>
 <trans-unit id="tu31" xml:space="preserve">
@@ -133,7 +133,7 @@ O mesmo vale para <g id="4">SoundInstance.Pause</g> (quando um som já está pau
 </trans-unit>
 <trans-unit id="tu32" xml:space="preserve">
 <source xml:lang="en">instantiates non-spatialized audio</source>
-<target xml:lang="pt">Cria uma instância de um áudio não espacial</target>
+<target xml:lang="pt">cria uma instância de um áudio não espacial</target>
 </trans-unit>
 <trans-unit id="tu33" xml:space="preserve">
 <source xml:lang="en">sets the audio to loop</source>

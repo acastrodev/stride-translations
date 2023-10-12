@@ -15,11 +15,11 @@
 </trans-unit>
 <trans-unit id="tu3" xml:space="preserve">
 <source xml:lang="en"><g id="1">Audio emitter components</g> emit audio used to create <g id="2">spatialized audio</g>. You can add them to any entity.</source>
-<target xml:lang="pt">Os componentes de emissão de áudio são responsáveis por criar <g id="1">áudio espacial</g>.<g id="2"/> Você pode adicioná-los a qualquer entidade.</target>
+<target xml:lang="pt">Os <g id="1">componentes de emissores de áudio</g> têm a função de criar <g id="2">áudio espacial</g>  e podem ser incluídos em qualquer entidade.</target>
 </trans-unit>
 <trans-unit id="tu4" xml:space="preserve">
 <source xml:lang="en">The pitch and volume of the sound changes as the <g id="1">audio listener</g> moves closer to and away from the audio emitter.</source>
-<target xml:lang="pt">O tom e o volume do som mudam à medida que o <g id="1">receptor de áudio</g> se aproxima e se afasta do emissor de áudio.</target>
+<target xml:lang="pt">O tom e o volume do som variam à medida que o <g id="1">receptor de áudio</g> se aproxima ou se afasta do emissor de áudio.</target>
 </trans-unit>
 <trans-unit id="tu5" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>!Note<x id="2"/>
@@ -29,11 +29,11 @@ Você precisa de pelo menos um <g id="3">AudioListenerComponent</g> na cena para
 </trans-unit>
 <trans-unit id="tu6" xml:space="preserve">
 <source xml:lang="en">1. Set up an audio emitter asset</source>
-<target xml:lang="pt">1. Configurar um recurso de emissor de áudio</target>
+<target xml:lang="pt">1. Configurar um recurso emissor de áudio</target>
 </trans-unit>
 <trans-unit id="tu7" xml:space="preserve">
 <source xml:lang="en">In the <g id="1">Scene view</g>, select an entity you want to be an audio emitter.</source>
-<target xml:lang="pt">No <g id="1">Visualizador de cenas</g>, selecione uma entidade que você deseja que seja um emissor de áudio.</target>
+<target xml:lang="pt">No <g id="1">Visualizador de Cenas</g>, selecione a entidade que você deseja configurar como emissor de áudio.</target>
 </trans-unit>
 <trans-unit id="tu8" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Select an entity<x id="2"/></source>
@@ -109,15 +109,15 @@ Você precisa de pelo menos um <g id="3">AudioListenerComponent</g> na cena para
 </trans-unit>
 <trans-unit id="tu26" xml:space="preserve">
 <source xml:lang="en">Enable head-related transfer function (HRTF). With this enabled, sounds appear to come from a specific point in 3D space, synthesizing binaural audio. For more information, see <g id="1">HRTF</g>.</source>
-<target xml:lang="pt">Habilite a função de transferência relacionada à cabeça (HRTF). Com essa funcionalidade habilitada, os sons parecem vir de um ponto específico no espaço 3D, sintetizando áudio binaural. Para mais informações, consulte <g id="1">HRTF</g>.</target>
+<target xml:lang="pt">Ative a Função de Transferência Relacionada à Cabeça (HRTF). Quando habilitada, essa funcionalidade cria a sensação de que os sons provêm de pontos específicos no espaço 3D, produzindo áudio binaural. Para mais informações, consulte <g id="1">HRTF</g>.</target>
 </trans-unit>
 <trans-unit id="tu27" xml:space="preserve">
 <source xml:lang="en">Directional factor</source>
-<target xml:lang="pt">Fator direcional</target>
+<target xml:lang="pt">Fator Directional</target>
 </trans-unit>
 <trans-unit id="tu28" xml:space="preserve">
 <source xml:lang="en">How directional the audio is, from 0 (min) to 1 (max). If set to 0, the audio is emitted from all directions. You can control this with a slider or number value.</source>
-<target xml:lang="pt">Determina o quão direcional é o áudio, de 0 (mínimo) a 1 (máximo). Se definido como 0, o áudio é emitido de todas as direções. Você pode ajustar o fator direcional usando o controle deslizante ou inserindo um valor numérico.</target>
+<target xml:lang="pt">Define o grau de direcionalidade do áudio, variando de 0 (mínimo) a 1 (máximo). Quando ajustado para 0, o áudio é emitido de todas as direções. O fator direcional pode ser ajustado através do controle deslizante ou inserindo um valor numérico.</target>
 </trans-unit>
 <trans-unit id="tu29" xml:space="preserve">
 <source xml:lang="en">Environment</source>
@@ -125,7 +125,7 @@ Você precisa de pelo menos um <g id="3">AudioListenerComponent</g> na cena para
 </trans-unit>
 <trans-unit id="tu30" xml:space="preserve">
 <source xml:lang="en">The reverb type for the audio, simulating reverberation of real environments (small, medium, large, or outdoors).</source>
-<target xml:lang="pt">O tipo de reverberação para o áudio, simulando a reverberação de ambientes reais (pequeno, médio, grande ou ao ar livre).</target>
+<target xml:lang="pt">Escolha o tipo de reverberação para o áudio, simulando as características de reverberação em ambientes reais (pequeno, médio, grande ou ao ar livre).</target>
 </trans-unit>
 <trans-unit id="tu31" xml:space="preserve">
 <source xml:lang="en">2. Create a script to play the audio</source>
@@ -137,11 +137,11 @@ Você precisa de pelo menos um <g id="3">AudioListenerComponent</g> na cena para
 </trans-unit>
 <trans-unit id="tu33" xml:space="preserve">
 <source xml:lang="en">In your script, instantiate <g id="1">AudioEmitterSoundController</g> for each sound you want to use in the script.</source>
-<target xml:lang="pt">No seu script, instancie um <g id="1">AudioEmitterSoundController</g> para cada som que você deseja usar.</target>
+<target xml:lang="pt">Dentro do seu script, crie uma instância de um <g id="1">AudioEmitterSoundController</g> para cada som que você deseja utilizar.</target>
 </trans-unit>
 <trans-unit id="tu34" xml:space="preserve">
 <source xml:lang="en">For example, say we have two sounds, <g id="1">MySound1</g> and <g id="2">MySound2</g>:</source>
-<target xml:lang="pt">Por exemplo, digamos que temos dois sons, <g id="1">MeuSom1</g> e <g id="2">MeuSom2</g>:</target>
+<target xml:lang="pt">Por exemplo, digamos que temos dois sons, <g id="1">MySound1</g> e <g id="2">MySound2</g>:</target>
 </trans-unit>
 <trans-unit id="tu35" xml:space="preserve">
 <source xml:lang="en">	AudioEmitterComponent audioEmitterComponent = Entity.Get&lt;AudioEmitterComponent&gt;();
@@ -149,8 +149,8 @@ Você precisa de pelo menos um <g id="3">AudioListenerComponent</g> na cena para
 	AudioEmitterSoundController mySound2Controller = audioEmitterComponent["MySound2"];
 </source>
 <target xml:lang="pt">	AudioEmitterComponent audioEmitterComponent = Entity.Get&lt;AudioEmitterComponent&gt;();
-	AudioEmitterSoundController mySound1Controller = audioEmitterComponent["MeuSom1"];
-	AudioEmitterSoundController mySound2Controller = audioEmitterComponent["MeuSom2"];
+	AudioEmitterSoundController mySound1Controller = audioEmitterComponent["MySound1"];
+	AudioEmitterSoundController mySound2Controller = audioEmitterComponent["MySound2"];
 </target>
 </trans-unit>
 <trans-unit id="tu36" xml:space="preserve">
@@ -171,7 +171,7 @@ Você precisa de pelo menos um <g id="3">AudioListenerComponent</g> na cena para
 </trans-unit>
 <trans-unit id="tu40" xml:space="preserve">
 <source xml:lang="en">Loops audio. Has no effect if <g id="1">PlayAndForget()</g> is set to true.</source>
-<target xml:lang="pt">Repete o áudio. Não tem efeito se <g id="1">PlayAndForget()</g> estiver definido como verdadeiro.</target>
+<target xml:lang="pt">Define se o áudio será reproduzido em repetição.  Isso não tem efeito se <g id="1">PlayAndForget()</g> estiver ativado.</target>
 </trans-unit>
 <trans-unit id="tu41" xml:space="preserve">
 <source xml:lang="en"><g id="1">Pitch</g></source>
@@ -179,7 +179,7 @@ Você precisa de pelo menos um <g id="3">AudioListenerComponent</g> na cena para
 </trans-unit>
 <trans-unit id="tu42" xml:space="preserve">
 <source xml:lang="en">Gets or sets sound pitch (frequency). Use with caution for spatialized audio.</source>
-<target xml:lang="pt">Obtém ou define o tom do som (frequência). Use com cuidado com áudio espacial.</target>
+<target xml:lang="pt">Obtém ou define o tom do som (frequência). Use com cuidado em áudio espacial.</target>
 </trans-unit>
 <trans-unit id="tu43" xml:space="preserve">
 <source xml:lang="en"><g id="1">PlayState</g></source>
@@ -195,7 +195,7 @@ Você precisa de pelo menos um <g id="3">AudioListenerComponent</g> na cena para
 </trans-unit>
 <trans-unit id="tu46" xml:space="preserve">
 <source xml:lang="en">Volume of the audio.</source>
-<target xml:lang="pt">Volume do áudio.</target>
+<target xml:lang="pt">Controla o volume do áudio.</target>
 </trans-unit>
 <trans-unit id="tu47" xml:space="preserve">
 <source xml:lang="en"><g id="1">Pause()</g></source>
@@ -203,7 +203,7 @@ Você precisa de pelo menos um <g id="3">AudioListenerComponent</g> na cena para
 </trans-unit>
 <trans-unit id="tu48" xml:space="preserve">
 <source xml:lang="en">Pauses audio.</source>
-<target xml:lang="pt">Pausa o áudio.</target>
+<target xml:lang="pt">Pausa a reprodução do áudio.</target>
 </trans-unit>
 <trans-unit id="tu49" xml:space="preserve">
 <source xml:lang="en"><g id="1">Play()</g></source>
@@ -211,7 +211,7 @@ Você precisa de pelo menos um <g id="3">AudioListenerComponent</g> na cena para
 </trans-unit>
 <trans-unit id="tu50" xml:space="preserve">
 <source xml:lang="en">Plays audio.</source>
-<target xml:lang="pt">Reproduz o áudio.</target>
+<target xml:lang="pt">Inicia a reprodução do áudio.</target>
 </trans-unit>
 <trans-unit id="tu51" xml:space="preserve">
 <source xml:lang="en"><g id="1">PlayAndForget()</g></source>
@@ -219,7 +219,7 @@ Você precisa de pelo menos um <g id="3">AudioListenerComponent</g> na cena para
 </trans-unit>
 <trans-unit id="tu52" xml:space="preserve">
 <source xml:lang="en">Plays audio once, then clears the memory. Useful for short sounds such as gunshots. Overrides <g id="1">IsLooping</g>.</source>
-<target xml:lang="pt">Reproduz o áudio uma vez e, em seguida, limpa a memória. Útil para sons curtos, como tiros. Substitui <g id="1">IsLooping</g>.</target>
+<target xml:lang="pt">Reproduz o áudio uma vez e, em seguida, libera os recursos da memória.  É útil para sons curtos, como tiros,  substituindo a opção <g id="1">IsLooping</g>.</target>
 </trans-unit>
 <trans-unit id="tu53" xml:space="preserve">
 <source xml:lang="en"><g id="1">Stop()</g></source>
@@ -227,7 +227,7 @@ Você precisa de pelo menos um <g id="3">AudioListenerComponent</g> na cena para
 </trans-unit>
 <trans-unit id="tu54" xml:space="preserve">
 <source xml:lang="en">Stops audio.</source>
-<target xml:lang="pt">Para o áudio.</target>
+<target xml:lang="pt">Interrompe a reprodução do áudio.</target>
 </trans-unit>
 <trans-unit id="tu55" xml:space="preserve">
 <source xml:lang="en">For example:</source>

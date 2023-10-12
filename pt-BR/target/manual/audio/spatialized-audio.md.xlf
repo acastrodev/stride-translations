@@ -21,7 +21,7 @@ criando um áudio mais realista do que o <g id="3">áudio não espacial</g>.</ta
 </trans-unit>
 <trans-unit id="tu4" xml:space="preserve">
 <source xml:lang="en">In real life, our experience of sound is affected by factors including its volume, the surrounding area (such as a cave or small room), and the position and movement of the sound source. We can usually tell approximately where a sound is coming from and whether it's moving.</source>
-<target xml:lang="pt">No dia a dia, nossa experiência de som é afetada por fatores como o volume, o ambiente que nos circunda (como uma caverna ou um pequeno quarto) e a posição e movimento da fonte de som. Geralmente, conseguimos determinar aproximadamente de onde um som está vindo e se ele está se movendo.</target>
+<target xml:lang="pt">No cotidiano, nossa percepção sonora é influenciada por diversos fatores, como o volume, o ambiente ao nosso redor (seja uma caverna ou um pequeno quarto) e a posição e movimento da fonte sonora. Em geral, somos capazes de estimar aproximadamente a origem de um som e se ele está em movimento.</target>
 </trans-unit>
 <trans-unit id="tu5" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Spatialized audio<x id="2"/></source>
@@ -29,7 +29,7 @@ criando um áudio mais realista do que o <g id="3">áudio não espacial</g>.</ta
 </trans-unit>
 <trans-unit id="tu6" xml:space="preserve">
 <source xml:lang="en">For example, the frequency (pitch) of the sound coming from a moving object varies depending on the observer's position (the <g id="1">Doppler effect</g>). Sound from an approaching source has a higher frequency than sound from a receding source:</source>
-<target xml:lang="pt">Por exemplo, o tom (frequência) do som que vem de um objeto em movimento varia dependendo da posição do observador o <g id="1">efeito Doppler</g>). O som de uma fonte se aproximando tem uma frequência mais alta do que o som de uma fonte que está se afastando.</target>
+<target xml:lang="pt">Por exemplo, o tom (frequência) do som proveniente de um objeto em movimento varia conforme a posição do observador, seguindo o <g id="1">efeito Doppler</g>. Quando uma fonte sonora se aproxima, o som apresenta uma frequência mais alta do que quando a fonte se afasta.</target>
 </trans-unit>
 <trans-unit id="tu7" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>Doppler effect<x id="2"/></source>
@@ -37,33 +37,33 @@ criando um áudio mais realista do que o <g id="3">áudio não espacial</g>.</ta
 </trans-unit>
 <trans-unit id="tu8" xml:space="preserve">
 <source xml:lang="en">To simulate realistic 3D audio, Stride tracks the positions of two entities in the scene:</source>
-<target xml:lang="pt">Para simular um áudio 3D realista, o Stride rastreia as posições de duas entidades na cena:</target>
+<target xml:lang="pt">Para simular áudio 3D realista, o Stride monitora as posições de duas entidades na cena:</target>
 </trans-unit>
 <trans-unit id="tu9" xml:space="preserve">
 <source xml:lang="en"><g id="1"><g id="2">audio emitters</g></g>, which emit audio</source>
-<target xml:lang="pt"><g id="1"><g id="2">emissores de áudio</g></g>, que emitem áudio</target>
+<target xml:lang="pt"><g id="1"><g id="2">Emissores de áudio</g></g>, que emitem o som.</target>
 </trans-unit>
 <trans-unit id="tu10" xml:space="preserve">
 <source xml:lang="en"><g id="1"><g id="2">audio listeners</g></g>, which hear the sound emitted by audio emitters</source>
-<target xml:lang="pt"><g id="1"><g id="2">receptores de áudio</g></g>, que recebem o som emitido pelos emissores de áudio</target>
+<target xml:lang="pt"><g id="1"><g id="2">Receptores de áudio</g></g>, que recebem o som emitido pelos emissores de áudio.</target>
 </trans-unit>
 <trans-unit id="tu11" xml:space="preserve">
 <source xml:lang="en">You must have both audio emitters and audio listeners to hear spatialized sound in a scene.</source>
-<target xml:lang="pt">Você deve ter ambos emissores de áudio e receptores de áudio para ouvir som espacializado em uma cena.</target>
+<target xml:lang="pt">Para experimentar áudio espacial em uma cena, é necessário ter tanto emissores de áudio quanto receptores de áudio.</target>
 </trans-unit>
 <trans-unit id="tu12" xml:space="preserve">
 <source xml:lang="en">Spatialized audio is widely used for sound effects in platform, desktop, and VR games. For example, a gun might make a gunshot sound when fired, or a character might make a footstep sound when they take a step.</source>
-<target xml:lang="pt">O áudio espacial é amplamente utilizado em efeitos sonoros em jogos de plataforma, desktop e realidade virtual (VR). Por exemplo, uma arma pode emitir um som de tiro quando disparada, ou um personagem pode fazer um som de passos ao dar um passo.</target>
+<target xml:lang="pt">O áudio espacial é amplamente utilizado em efeitos sonoros para jogos em plataformas, desktop e realidade virtual (VR).  Por exemplo, ao disparar uma arma, o som de um tiro é reproduzido, ou um personagem emite sons de passos ao caminhar.</target>
 </trans-unit>
 <trans-unit id="tu13" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>!Note<x id="2"/>
 Spatialized audio uses more CPU than non-spatialized audio.</source>
 <target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
-O áudio espacial utiliza mais CPU do que áudio não espacial.</target>
+O áudio espacial demanda mais processamento da CPU do que o áudio não espacial.</target>
 </trans-unit>
 <trans-unit id="tu14" xml:space="preserve">
 <source xml:lang="en">Enable spatialized audio</source>
-<target xml:lang="pt">Habilitar áudio espacial</target>
+<target xml:lang="pt">Ativar áudio espacial</target>
 </trans-unit>
 <trans-unit id="tu15" xml:space="preserve">
 <source xml:lang="en">When you <g id="1">import your audio</g>, select <g id="2">Spatialized Sound</g> as the asset type.</source>
@@ -89,7 +89,7 @@ O áudio espacial utiliza mais CPU do que áudio não espacial.</target>
 <source xml:lang="en"><x id="1"/>!Note<x id="2"/>
 Stride processes spatialized audio as mono (single-channel) audio. It doesn't alter the source file.</source>
 <target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
-O Stride processa áudio espacial como áudio mono (um único canal). O arquivo de origem não é afetado.</target>
+O Stride processa áudio espacial como áudio mono (um único canal). O arquivo de áudio de origem (Lembre-se que o Stride não modifica os arquivos de origem).</target>
 </trans-unit>
 <trans-unit id="tu21" xml:space="preserve">
 <source xml:lang="en">See also</source>
