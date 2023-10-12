@@ -1,50 +1,50 @@
 # Áudio espacial
 
 <span class="badge text-bg-primary">Introdução</span>
-<span class="badge text-bg-success">Designer</span>
+<span class="badge text-bg-success">Design</span>
 <span class="badge text-bg-success">Programação</span>
 
-**Spatialized audio**, também chamado **3D audio**, simula o som tridimensional.
-Isso cria áudio mais realista do que [ não-espacializado áudio](non-spatialized-audio.md).
+**Áudio espacial**, também conhecido como ** áudio 3D**, simula o som tridimensional, 
+criando um áudio mais realista do que [áudio não espacial](non-spatialized-audio.md).
 
-Na vida real, nossa experiência de som é afetada por fatores incluindo seu volume, a área circundante (como uma caverna ou pequena sala), e a posição e movimento da fonte sonora. Normalmente podemos dizer aproximadamente de onde vem um som e se está se movendo.
+No dia a dia, nossa experiência de som é afetada por fatores como o volume, o ambiente que nos circunda (como uma caverna ou um pequeno quarto) e a posição e movimento da fonte de som. Geralmente, conseguimos determinar aproximadamente de onde um som está vindo e se ele está se movendo.
 
-![Spatialized audio](media/audio-index-spatialized-audio.png)
+![Áudio espacial](media/audio-index-spatialized-audio.png)
 
-Por exemplo, a frequência (pitch) do som que vem de um objeto em movimento varia dependendo da posição do observador (o efeito [Doppler](https://en.wikipedia.org/wiki/Doppler_effect)). O som de uma fonte de aproximação tem uma frequência maior do que o som de uma fonte de receding:
+Por exemplo, o tom (frequência) do som que vem de um objeto em movimento varia dependendo da posição do observador o [efeito Doppler](https://en.wikipedia.org/wiki/Doppler_effect)). O som de uma fonte se aproximando tem uma frequência mais alta do que o som de uma fonte que está se afastando.
 
-![Efeito de Doppler](media/audio-index-play-audio-doppler-effect.png)
+![Efeito Doppler](media/audio-index-play-audio-doppler-effect.png)
 
-Para simular áudio 3D realista, Stride rastreia as posições de duas entidades na cena:
+Para simular um áudio 3D realista, o Stride rastreia as posições de duas entidades na cena:
 
-* **[audio emitters](audio-emitters.md)**, que emite áudio
-* **[audio listeners](audio-listeners.md)**, que ouve o som emitido por emissores de áudio
+* **[emissores de áudio](audio-emitters.md)**, que emitem áudio
+* **[receptores de áudio](audio-listeners.md)**, que recebem o som emitido pelos emissores de áudio.
 
 Você deve ter ambos emissores de áudio e receptores de áudio para ouvir som espacializado em uma cena.
 
-Áudio espacial é amplamente utilizado para efeitos sonoros em jogos de plataforma, desktop e VR. Por exemplo, uma arma pode fazer um som de tiro quando disparado, ou um personagem pode fazer um som de passo quando eles dão um passo.
+O áudio espacial é amplamente utilizado em efeitos sonoros em jogos de plataforma, desktop e realidade virtual (VR). Por exemplo, uma arma pode emitir um som de tiro quando disparada, ou um personagem pode fazer um som de passos ao dar um passo.
 
 > [!Note]
-> Áudio espacial usa mais CPU do que áudio não espacial.
+> O áudio espacial utiliza mais CPU do que áudio não espacial.
 
-## Permite áudio espacial
+## Habilitar áudio espacial
 
-Quando você [importar seu áudio](import-audio.md), selecione *Spatialized Sound* como o tipo de ativo.
+Quando você [importar seu áudio](import-audio.md), selecione *Espacial* como o tipo do recurso.
 
-Você também pode definir áudio para espacializado no **Property Grid**:
+Você também pode configurar o áudio como espacial no **Editor de Propriedades** do recurso:
 
-1. Em **Aset View**, selecione _Audio Asset_.
+1. No **Visualizador de Recursos**, selecione _Recurso de áudio_.
 
-2. No **Property Grid**, selecione o **Spatialized** caixa de seleção:
+2. No **Editor de Propriedades**, selecione a caixa de seleção **Espacial**:
 
    ![Selecionar som espacializado](media/audio-asset-properties-property-grid-spatialized-sound.png)
 
 > [!Note]
-> Stride processa áudio espacial como áudio mono (canal único). Não altera o ficheiro fonte.
+> O Stride processa áudio espacial como áudio mono (um único canal). O arquivo de origem não é afetado.
 
-## Ver também
+## Veja também
 
-* [Emitters de áudio](audio-emitters.md)
+* [Emissores de áudio](audio-emitters.md)
 * [Receptores de áudio](audio-listeners.md)
 * [HRTF](hrtf.md)
 * [Configurações globais de áudio](global-audio-settings.md)

@@ -13,11 +13,11 @@
 </trans-unit>
 <trans-unit id="tu3" xml:space="preserve">
 <source xml:lang="en">You can set which audio device Stride uses. For example, you can access the <g id="1">Oculus Rift</g> audio device from your custom game constructor.</source>
-<target xml:lang="pt">Você pode definir qual dispositivo de áudio Stride usa. Por exemplo, você pode acessar o dispositivo de áudio <g id="1">Oculus Rift</g> do seu construtor de jogo personalizado.</target>
+<target xml:lang="pt">Você pode definir qual dispositivo de áudio o Stride utiliza. Por exemplo, você pode acessar o dispositivo de áudio do <g id="1">Oculus Rift</g> a partir do construtor personalizado do seu jogo.</target>
 </trans-unit>
 <trans-unit id="tu4" xml:space="preserve">
 <source xml:lang="en">If you don't specify a device, Stride uses the default audio advice.</source>
-<target xml:lang="pt">Se você não especificar um dispositivo, o Stride usa o conselho de áudio padrão.</target>
+<target xml:lang="pt">Se você não especificar um dispositivo, o Stride usará o dispositivo de áudio padrão.</target>
 </trans-unit>
 <trans-unit id="tu5" xml:space="preserve">
 <source xml:lang="en">Example code</source>
@@ -25,7 +25,7 @@
 </trans-unit>
 <trans-unit id="tu6" xml:space="preserve">
 <source xml:lang="en">This code sets the Oculus Rift device at runtime:</source>
-<target xml:lang="pt">Este código define o dispositivo Oculus Rift em tempo de execução:</target>
+<target xml:lang="pt">Este código configura o dispositivo Oculus Rift em tempo de execução:</target>
 </trans-unit>
 <trans-unit id="tu7" xml:space="preserve">
 <source xml:lang="en">namespace OculusRenderer
@@ -42,14 +42,14 @@
 }
 </source>
 <target xml:lang="pt">namespace OculusRenderer
-(
-    classe pública Oculus. Jogo : Jogo
-    (
-        oculusGame()
-        (
+{
+    public class OculusGame : Game
+    {
+        public OculusGame()
+        {
             var deviceName = OculusOvr.GetAudioDeviceFullName();
-            var deviceUuid = novo AudioDevice { Nome = dispositivoNome };
-            Áudio.Pedido AudioDevice = dispositivoUuid;
+            var deviceUuid = new AudioDevice { Name = deviceName };
+            Audio.RequestedAudioDevice = deviceUuid;
         }
     }
 }
@@ -57,7 +57,7 @@
 </trans-unit>
 <trans-unit id="tu8" xml:space="preserve">
 <source xml:lang="en">See also</source>
-<target xml:lang="pt">Ver também</target>
+<target xml:lang="pt">Veja também</target>
 </trans-unit>
 <trans-unit id="tu9" xml:space="preserve">
 <source xml:lang="en"><g id="1">Global audio settings</g></source>
