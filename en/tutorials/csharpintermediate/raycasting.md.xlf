@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="/D:/repos/rr/source/tutorials/csharpintermediate/raycasting.md" source-language="en" target-language="pt" datatype="x-text/x-markdown" okp:inputEncoding="UTF-8">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en">Raycasting</source>
+<target xml:lang="pt">Raycasting</target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en">This C# Intermediate tutorial covers raycasting.</source>
+<target xml:lang="pt">This C# Intermediate tutorial covers raycasting.</target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">Explanation</source>
+<target xml:lang="pt">Explanation</target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">Raycasting is an essential subject in 3D games. With raycasts we can detect if and what kinds of objects are in our line of sight. This can be used for detecting enemies or how far an object really is.</source>
+<target xml:lang="pt">Raycasting is an essential subject in 3D games. With raycasts we can detect if and what kinds of objects are in our line of sight. This can be used for detecting enemies or how far an object really is.</target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>!Video https://www.youtube.com/embed/uIM6jxM7OyE<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>!Video https://www.youtube.com/embed/uIM6jxM7OyE<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en">Raycast</source>
+<target xml:lang="pt">Raycast</target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en">This script sends out a raycast from the weapons barrel and sends it to an endpoint a little further. We check if we hit something along the way. If we do, we calculate the distance between the weapon barrel and the hit point. We then scale a laser to that distance to visualize the actual raycast. Depending on the collision group and filters, some objects are ignored.</source>
+<target xml:lang="pt">This script sends out a raycast from the weapons barrel and sends it to an endpoint a little further. We check if we hit something along the way. If we do, we calculate the distance between the weapon barrel and the hit point. We then scale a laser to that distance to visualize the actual raycast. Depending on the collision group and filters, some objects are ignored.</target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en">[!code-csharp<g id="1">editorpages</g>]</source>
+<target xml:lang="pt">[!code-csharp<g id="1">editorpages</g>]</target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en">Penetrative raycast</source>
+<target xml:lang="pt">Penetrative raycast</target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en">In our first script, the raycast returns to us as soon as it hits the first object along its path. We can also send out a raycast to an endpoint, and let it return to us when it has reached its endpoint. It gives us back a list of objects that it has hit along the way. This list can be empty but also exists out of various objects. Depending on the collision group and filters, some objects are ignored.</source>
+<target xml:lang="pt">In our first script, the raycast returns to us as soon as it hits the first object along its path. We can also send out a raycast to an endpoint, and let it return to us when it has reached its endpoint. It gives us back a list of objects that it has hit along the way. This list can be empty but also exists out of various objects. Depending on the collision group and filters, some objects are ignored.</target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en">[!code-csharp<g id="1">editorpages</g>]</source>
+<target xml:lang="pt">[!code-csharp<g id="1">editorpages</g>]</target>
+</trans-unit>
+</body>
+</file>
+</xliff>

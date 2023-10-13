@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="/D:/repos/rr/source/manual/animation/procedural-animation.md" source-language="en" target-language="pt" datatype="x-text/x-markdown" okp:inputEncoding="UTF-8">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en">Procedural animation</source>
+<target xml:lang="pt">Procedural animation</target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Intermediate<x id="2"/>
+<x id="3"/>Programmer<x id="4"/></source>
+<target xml:lang="pt"><x id="1"/>Intermediate<x id="2"/>
+<x id="3"/>Programmer<x id="4"/></target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en"><g id="1">Procedural animation</g> is an alternative method of animation. Instead of creating animations yourself, you can use engine components to animate 3D models at runtime.</source>
+<target xml:lang="pt"><g id="1">Procedural animation</g> is an alternative method of animation. Instead of creating animations yourself, you can use engine components to animate 3D models at runtime.</target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">In some cases, this creates more effective and efficient animations. For example, imagine a shrink effect that happens when the player shoots a monster with a shrink weapon. Instead of creating a complex shrinking animation, you can access the entity <g id="1">TransformComponent</g> and simply scale the enemy down to the required size.</source>
+<target xml:lang="pt">In some cases, this creates more effective and efficient animations. For example, imagine a shrink effect that happens when the player shoots a monster with a shrink weapon. Instead of creating a complex shrinking animation, you can access the entity <g id="1">TransformComponent</g> and simply scale the enemy down to the required size.</target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">The animation can animate a wide variety of components besides Skeleton bones, including:</source>
+<target xml:lang="pt">The animation can animate a wide variety of components besides Skeleton bones, including:</target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en"><g id="1">TransformComponent</g></source>
+<target xml:lang="pt"><g id="1">TransformComponent</g></target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en"><g id="1">LightComponent</g></source>
+<target xml:lang="pt"><g id="1">LightComponent</g></target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en"><g id="1">RigidBodyComponent</g></source>
+<target xml:lang="pt"><g id="1">RigidBodyComponent</g></target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en"><g id="1">Custom components</g></source>
+<target xml:lang="pt"><g id="1">Custom components</g></target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en">Stride's animation system works just like Blender or Maya's curve animation editor. Each bone/value is assigned a <g id="1">curve</g> composed of several <g id="2">points</g> that are interpolated either in linear, cubic or constant fashion.</source>
+<target xml:lang="pt">Stride's animation system works just like Blender or Maya's curve animation editor. Each bone/value is assigned a <g id="1">curve</g> composed of several <g id="2">points</g> that are interpolated either in linear, cubic or constant fashion.</target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en">Code samples</source>
+<target xml:lang="pt">Code samples</target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en">Transform component</source>
+<target xml:lang="pt">Transform component</target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en">public class AnimationScript : StartupScript
+{
+    public override void Start()
+    {
+        // Create an AnimationClip. Make sure you set its duration properly.
+        var animationClip = new AnimationClip { Duration = TimeSpan.FromSeconds(1) };
+
+        // Add a curves specifying the path to the transformation property.
+        // - You can index components using a special syntax to their key.
+        // - Properties can be qualified with a type name in parenthesis.
+        // - If a type isn't serializable, its fully qualified name must be used.
+
+        animationClip.AddCurve("[TransformComponent.Key].Rotation", CreateRotationCurve());
+
+        // Optional: pack all animation channels into an optimized interleaved format.
+        animationClip.Optimize();
+
+        // Add an AnimationComponent to the current entity and register our custom clip.
+        const string animationName = "MyCustomAnimation";
+        var animationComponent = Entity.GetOrCreate&lt;AnimationComponent>();
+        animationComponent.Animations.Add(animationName, animationClip);
+
+        // Play the animation right away and loop it.
+        var playingAnimation = animationComponent.Play(animationName);
+        playingAnimation.RepeatMode = AnimationRepeatMode.LoopInfinite;
+        playingAnimation.TimeFactor = 0.1f; // slow down
+        playingAnimation.CurrentTime = TimeSpan.FromSeconds(0.6f); // start at different time
+    }
+
+    // Set custom linear rotation curve.
+    private AnimationCurve CreateRotationCurve()
+    {
+        return new AnimationCurve&lt;Quaternion>
+        {
+            InterpolationType = AnimationCurveInterpolationType.Linear,
+            KeyFrames =
+            {
+                CreateKeyFrame(0.00f, Quaternion.RotationX(0)),
+                CreateKeyFrame(0.25f, Quaternion.RotationX(MathUtil.PiOverTwo)),
+                CreateKeyFrame(0.50f, Quaternion.RotationX(MathUtil.Pi)),
+                CreateKeyFrame(0.75f, Quaternion.RotationX(-MathUtil.PiOverTwo)),
+                CreateKeyFrame(1.00f, Quaternion.RotationX(MathUtil.TwoPi))
+            }
+        };
+    }
+
+    private static KeyFrameData&lt;T> CreateKeyFrame&lt;T>(float keyTime, T value)
+    {
+        return new KeyFrameData&lt;T>((CompressedTimeSpan)TimeSpan.FromSeconds(keyTime), value);
+    }
+}
+</source>
+<target xml:lang="pt">public class AnimationScript : StartupScript
+{
+    public override void Start()
+    {
+        // Create an AnimationClip. Make sure you set its duration properly.
+        var animationClip = new AnimationClip { Duration = TimeSpan.FromSeconds(1) };
+
+        // Add a curves specifying the path to the transformation property.
+        // - You can index components using a special syntax to their key.
+        // - Properties can be qualified with a type name in parenthesis.
+        // - If a type isn't serializable, its fully qualified name must be used.
+
+        animationClip.AddCurve("[TransformComponent.Key].Rotation", CreateRotationCurve());
+
+        // Optional: pack all animation channels into an optimized interleaved format.
+        animationClip.Optimize();
+
+        // Add an AnimationComponent to the current entity and register our custom clip.
+        const string animationName = "MyCustomAnimation";
+        var animationComponent = Entity.GetOrCreate&lt;AnimationComponent>();
+        animationComponent.Animations.Add(animationName, animationClip);
+
+        // Play the animation right away and loop it.
+        var playingAnimation = animationComponent.Play(animationName);
+        playingAnimation.RepeatMode = AnimationRepeatMode.LoopInfinite;
+        playingAnimation.TimeFactor = 0.1f; // slow down
+        playingAnimation.CurrentTime = TimeSpan.FromSeconds(0.6f); // start at different time
+    }
+
+    // Set custom linear rotation curve.
+    private AnimationCurve CreateRotationCurve()
+    {
+        return new AnimationCurve&lt;Quaternion>
+        {
+            InterpolationType = AnimationCurveInterpolationType.Linear,
+            KeyFrames =
+            {
+                CreateKeyFrame(0.00f, Quaternion.RotationX(0)),
+                CreateKeyFrame(0.25f, Quaternion.RotationX(MathUtil.PiOverTwo)),
+                CreateKeyFrame(0.50f, Quaternion.RotationX(MathUtil.Pi)),
+                CreateKeyFrame(0.75f, Quaternion.RotationX(-MathUtil.PiOverTwo)),
+                CreateKeyFrame(1.00f, Quaternion.RotationX(MathUtil.TwoPi))
+            }
+        };
+    }
+
+    private static KeyFrameData&lt;T> CreateKeyFrame&lt;T>(float keyTime, T value)
+    {
+        return new KeyFrameData&lt;T>((CompressedTimeSpan)TimeSpan.FromSeconds(keyTime), value);
+    }
+}
+</target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en">Light component's color</source>
+<target xml:lang="pt">Light component's color</target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en">public class AnimationLight : StartupScript
+{
+    public override void Start()
+    {
+        // Our entity should have a light component
+        var lightC = Entity.Get&lt;LightComponent>();
+
+        // Create an AnimationClip and store unserializable types. Make sure you set its duration properly.
+        var clip = new AnimationClip { Duration = TimeSpan.FromSeconds(1) };
+        var colorLightBaseName = typeof(ColorLightBase).AssemblyQualifiedName;
+        var colorRgbProviderName = typeof(ColorRgbProvider).AssemblyQualifiedName;
+
+        // Point to the path of the color property of the light component
+        clip.AddCurve(
+            $"[LightComponent.Key].Type.({colorLightBaseName})Color.({colorRgbProviderName})Value", 
+            CreateLightColorCurve()
+        );
+
+        // Play the animation right away and loop it.
+        clip.RepeatMode = AnimationRepeatMode.LoopInfinite;
+        var animC = Entity.GetOrCreate&lt;AnimationComponent>();
+        animC.Animations.Add("LightCurve",clip);
+        animC.Play("LightCurve");
+    }
+    private AnimationCurve CreateLightColorCurve()
+    {
+        return new AnimationCurve&lt;Vector3>
+        {
+            InterpolationType = AnimationCurveInterpolationType.Linear,
+            KeyFrames =
+            {
+                CreateKeyFrame(0.00f, Vector3.UnitX), // Make the first keyframe a red color
+
+                CreateKeyFrame(0.50f, Vector3.UnitZ), // then blue
+
+                CreateKeyFrame(1.00f, Vector3.UnitX), // then red again
+            }
+        };
+    }
+
+    private static KeyFrameData&lt;T> CreateKeyFrame&lt;T>(float keyTime, T value)
+    {
+        return new KeyFrameData&lt;T>((CompressedTimeSpan)TimeSpan.FromSeconds(keyTime), value);
+    }
+}
+</source>
+<target xml:lang="pt">public class AnimationLight : StartupScript
+{
+    public override void Start()
+    {
+        // Our entity should have a light component
+        var lightC = Entity.Get&lt;LightComponent>();
+
+        // Create an AnimationClip and store unserializable types. Make sure you set its duration properly.
+        var clip = new AnimationClip { Duration = TimeSpan.FromSeconds(1) };
+        var colorLightBaseName = typeof(ColorLightBase).AssemblyQualifiedName;
+        var colorRgbProviderName = typeof(ColorRgbProvider).AssemblyQualifiedName;
+
+        // Point to the path of the color property of the light component
+        clip.AddCurve(
+            $"[LightComponent.Key].Type.({colorLightBaseName})Color.({colorRgbProviderName})Value", 
+            CreateLightColorCurve()
+        );
+
+        // Play the animation right away and loop it.
+        clip.RepeatMode = AnimationRepeatMode.LoopInfinite;
+        var animC = Entity.GetOrCreate&lt;AnimationComponent>();
+        animC.Animations.Add("LightCurve",clip);
+        animC.Play("LightCurve");
+    }
+    private AnimationCurve CreateLightColorCurve()
+    {
+        return new AnimationCurve&lt;Vector3>
+        {
+            InterpolationType = AnimationCurveInterpolationType.Linear,
+            KeyFrames =
+            {
+                CreateKeyFrame(0.00f, Vector3.UnitX), // Make the first keyframe a red color
+
+                CreateKeyFrame(0.50f, Vector3.UnitZ), // then blue
+
+                CreateKeyFrame(1.00f, Vector3.UnitX), // then red again
+            }
+        };
+    }
+
+    private static KeyFrameData&lt;T> CreateKeyFrame&lt;T>(float keyTime, T value)
+    {
+        return new KeyFrameData&lt;T>((CompressedTimeSpan)TimeSpan.FromSeconds(keyTime), value);
+    }
+}
+</target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>!NOTE<x id="2"/>
+If you need to animate a bone procedurally you must use the <g id="3">NodeTransformations</g> field of the <g id="4">Skeleton</g>.</source>
+<target xml:lang="pt"><x id="1"/>!NOTE<x id="2"/>
+If you need to animate a bone procedurally you must use the <g id="3">NodeTransformations</g> field of the <g id="4">Skeleton</g>.</target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en">See also</source>
+<target xml:lang="pt">See also</target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en"><g id="1">Animation index</g></source>
+<target xml:lang="pt"><g id="1">Animation index</g></target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en"><g id="1">Import animations</g></source>
+<target xml:lang="pt"><g id="1">Import animations</g></target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en"><g id="1">Animation properties</g></source>
+<target xml:lang="pt"><g id="1">Animation properties</g></target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en"><g id="1">Set up animations</g></source>
+<target xml:lang="pt"><g id="1">Set up animations</g></target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en"><g id="1">Preview animations</g></source>
+<target xml:lang="pt"><g id="1">Preview animations</g></target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en"><g id="1">Animation scripts</g></source>
+<target xml:lang="pt"><g id="1">Animation scripts</g></target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en"><g id="1">Additive animation</g></source>
+<target xml:lang="pt"><g id="1">Additive animation</g></target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en"><g id="1">Custom blend trees</g></source>
+<target xml:lang="pt"><g id="1">Custom blend trees</g></target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en"><g id="1">Model node links</g></source>
+<target xml:lang="pt"><g id="1">Model node links</g></target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en"><g id="1">custom attributes</g></source>
+<target xml:lang="pt"><g id="1">custom attributes</g></target>
+</trans-unit>
+</body>
+</file>
+</xliff>

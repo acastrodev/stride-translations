@@ -1,0 +1,507 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="/D:/repos/rr/source/manual/graphics/effects-and-shaders/shading-language/composition.md" source-language="en" target-language="pt" datatype="x-text/x-markdown" okp:inputEncoding="UTF-8">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en">Composition</source>
+<target xml:lang="pt">Composition</target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Beginner<x id="2"/>
+<x id="3"/>Programmer<x id="4"/></source>
+<target xml:lang="pt"><x id="1"/>Beginner<x id="2"/>
+<x id="3"/>Programmer<x id="4"/></target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">In addition to the inheritance system, SDSL introduces the concept of <g id="1">composition</g>. A composition is a member whose type is another shader class. It's defined the same way as variables.</source>
+<target xml:lang="pt">In addition to the inheritance system, SDSL introduces the concept of <g id="1">composition</g>. A composition is a member whose type is another shader class. It's defined the same way as variables.</target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">You can compose with an instance of the desired shader class or an instance of a shader class that inherits from the desired one.</source>
+<target xml:lang="pt">You can compose with an instance of the desired shader class or an instance of a shader class that inherits from the desired one.</target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">Example code</source>
+<target xml:lang="pt">Example code</target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en">shader CompositionBase
+{
+	float4 Compute()
+	{
+		return float4(0.0);
+	}
+};
+ 
+shader CompositionShaderA : CompositionBase
+{
+	float4 myColor;
+ 
+	override float4 Compute()
+	{
+		return myColor;
+	}
+};
+ 
+shader CompositionShaderB : CompositionBase
+{
+	float4 myColor;
+
+	override float4 Compute()
+	{
+		return 0.5 * myColor;
+	}
+};
+ 
+shader BaseShader
+{
+	CompositionBase Comp0;
+	CompositionBase Comp1;
+ 
+	float4 GetColor()
+	{
+		return Comp0.Compute() + Comp1.Compute();
+	}
+};
+</source>
+<target xml:lang="pt">shader CompositionBase
+{
+	float4 Compute()
+	{
+		return float4(0.0);
+	}
+};
+ 
+shader CompositionShaderA : CompositionBase
+{
+	float4 myColor;
+ 
+	override float4 Compute()
+	{
+		return myColor;
+	}
+};
+ 
+shader CompositionShaderB : CompositionBase
+{
+	float4 myColor;
+
+	override float4 Compute()
+	{
+		return 0.5 * myColor;
+	}
+};
+ 
+shader BaseShader
+{
+	CompositionBase Comp0;
+	CompositionBase Comp1;
+ 
+	float4 GetColor()
+	{
+		return Comp0.Compute() + Comp1.Compute();
+	}
+};
+</target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en">The compositions are compiled in their own context, meaning that the non-stage variables are only accessible within the composition. It's also possible to have compositions inside compositions.</source>
+<target xml:lang="pt">The compositions are compiled in their own context, meaning that the non-stage variables are only accessible within the composition. It's also possible to have compositions inside compositions.</target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en">Example code: access root context</source>
+<target xml:lang="pt">Example code: access root context</target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en">If you want to access the root compilation context, you can use the following format:</source>
+<target xml:lang="pt">If you want to access the root compilation context, you can use the following format:</target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en">shader CompositionShaderC : CompositionBase
+{
+	BaseShader rootShader = stage;
+ 
+	float4 GetColor()
+	{
+		return rootShader.GetColor();
+	}
+};
+</source>
+<target xml:lang="pt">shader CompositionShaderC : CompositionBase
+{
+	BaseShader rootShader = stage;
+ 
+	float4 GetColor()
+	{
+		return rootShader.GetColor();
+	}
+};
+</target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en">This is error-prone, since <g id="1">CompositionShaderC</g> expects <g id="2">BaseShader</g> to be available in the root context.</source>
+<target xml:lang="pt">This is error-prone, since <g id="1">CompositionShaderC</g> expects <g id="2">BaseShader</g> to be available in the root context.</target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en">Example code: array of compositions</source>
+<target xml:lang="pt">Example code: array of compositions</target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en">You can also create an array of compositions the same way you use an array of values. Since there's no way to know beforehand how many compositions there are, you should iterate using a <g id="1">foreach</g> statement.</source>
+<target xml:lang="pt">You can also create an array of compositions the same way you use an array of values. Since there's no way to know beforehand how many compositions there are, you should iterate using a <g id="1">foreach</g> statement.</target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en">shader BaseShaderArray
+{
+	CompositionBase Comps[];
+	
+	float4 GetColor()
+	{
+		float4 resultColor = float4(0.0);
+ 
+		foreach (var comp in Comps)
+		{
+			resultColor += comp.Compute();
+		}
+ 
+		return resultColor;
+	}
+};
+</source>
+<target xml:lang="pt">shader BaseShaderArray
+{
+	CompositionBase Comps[];
+	
+	float4 GetColor()
+	{
+		float4 resultColor = float4(0.0);
+ 
+		foreach (var comp in Comps)
+		{
+			resultColor += comp.Compute();
+		}
+ 
+		return resultColor;
+	}
+};
+</target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en">Example code: stage behavior</source>
+<target xml:lang="pt">Example code: stage behavior</target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en">The behavior of the <g id="1">stage</g> keyword is straightforward: only one instance of the variable or method is produced.</source>
+<target xml:lang="pt">The behavior of the <g id="1">stage</g> keyword is straightforward: only one instance of the variable or method is produced.</target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en">shader BaseShader
+{
+	stage float BaseStageValue;
+	float NonStageValue;
+};
+ 
+shader TestShader : BaseShader
+{
+	BaseShader comp0;
+	BaseShader comp1;
+};
+ 
+// resulting shader (representation)
+shader TestShader
+{
+	float BaseStageValue;
+	float NonStageValue;
+	float comp0_NonStageValue;
+	float comp1_NonStageValue;
+};
+</source>
+<target xml:lang="pt">shader BaseShader
+{
+	stage float BaseStageValue;
+	float NonStageValue;
+};
+ 
+shader TestShader : BaseShader
+{
+	BaseShader comp0;
+	BaseShader comp1;
+};
+ 
+// resulting shader (representation)
+shader TestShader
+{
+	float BaseStageValue;
+	float NonStageValue;
+	float comp0_NonStageValue;
+	float comp1_NonStageValue;
+};
+</target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en">Example code: stage member behavior</source>
+<target xml:lang="pt">Example code: stage member behavior</target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en">shader BaseShader
+{
+	stage float BaseStageMethod()
+	{
+		return 1.0;
+	}
+
+	float NonStageMethod()
+	{
+		return 2.0;
+	}
+};
+ 
+shader TestShader : BaseShader
+{
+	BaseShader comp0;
+	BaseShader comp1;
+};
+ 
+// resulting shader (representation)
+shader TestClass
+{
+	float BaseStageMethod()
+	{
+		return 1.0;
+	}
+
+	float NonStageMethod()
+	{
+		return 2.0;
+	}
+	float comp0_NonStageMethod()
+	{
+		return 2.0;
+	}
+	float comp1_NonStageMethod()
+	{
+		return 2.0;
+	}
+};
+</source>
+<target xml:lang="pt">shader BaseShader
+{
+	stage float BaseStageMethod()
+	{
+		return 1.0;
+	}
+
+	float NonStageMethod()
+	{
+		return 2.0;
+	}
+};
+ 
+shader TestShader : BaseShader
+{
+	BaseShader comp0;
+	BaseShader comp1;
+};
+ 
+// resulting shader (representation)
+shader TestClass
+{
+	float BaseStageMethod()
+	{
+		return 1.0;
+	}
+
+	float NonStageMethod()
+	{
+		return 2.0;
+	}
+	float comp0_NonStageMethod()
+	{
+		return 2.0;
+	}
+	float comp1_NonStageMethod()
+	{
+		return 2.0;
+	}
+};
+</target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en">Keep in mind that even in composition, you can call for base methods, override them, and so on. Overriding happens in the same order as the compositions.</source>
+<target xml:lang="pt">Keep in mind that even in composition, you can call for base methods, override them, and so on. Overriding happens in the same order as the compositions.</target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en">This behavior is useful when you need a value in multiple composition but you only need to compute it once (eg the normal in view space).</source>
+<target xml:lang="pt">This behavior is useful when you need a value in multiple composition but you only need to compute it once (eg the normal in view space).</target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en">Clone behavior</source>
+<target xml:lang="pt">Clone behavior</target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en">The <g id="1">clone</g> keyword has a less trivial behavior. It prevents the <g id="2">stage</g> keyword to produce a unique method.</source>
+<target xml:lang="pt">The <g id="1">clone</g> keyword has a less trivial behavior. It prevents the <g id="2">stage</g> keyword to produce a unique method.</target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en">shader BaseShader
+{
+	stage float BaseStageMethod()
+	{
+		return 1.0;
+	}
+ 
+	stage float BaseStageMethodNotCloned()
+	{
+		return 1.0;
+	}
+};
+ 
+shader CompShader : BaseShader
+{
+	override clone float BaseStageMethod()
+	{
+		return 1.0 + base.BaseStageMethod();
+	}
+ 
+	override float BaseStageMethodNotCloned()
+	{
+		return 1.0f + base.BaseStageMethodNotCloned();
+	}
+};
+ 
+shader TestShader : BaseShader
+{
+	CompShader comp0;
+	CompShadercomp1;
+};
+ 
+// resulting shader (representation)
+shader TestShader
+{
+	// cloned method
+	float base_BaseStageMethod()
+	{
+		return 1.0;
+	}
+ 
+	float comp0_BaseStageMethod()
+	{
+		return 1.0 + base_BaseStageMethod();
+	}
+ 
+	float BaseStageMethod() // in fact comp1_BaseStageMethod
+	{
+		return 1.0 + comp0_BaseStageMethod; // 3.0f
+	}
+ 
+	// not cloned method
+	float base_BaseStageMethodNotCloned()
+	{
+		return 1.0f;
+	}
+ 
+	float BaseStageMethodNotCloned()
+	{
+		return 1.0f + base_BaseStageMethodNotCloned(); // 2.0f
+	}
+};
+</source>
+<target xml:lang="pt">shader BaseShader
+{
+	stage float BaseStageMethod()
+	{
+		return 1.0;
+	}
+ 
+	stage float BaseStageMethodNotCloned()
+	{
+		return 1.0;
+	}
+};
+ 
+shader CompShader : BaseShader
+{
+	override clone float BaseStageMethod()
+	{
+		return 1.0 + base.BaseStageMethod();
+	}
+ 
+	override float BaseStageMethodNotCloned()
+	{
+		return 1.0f + base.BaseStageMethodNotCloned();
+	}
+};
+ 
+shader TestShader : BaseShader
+{
+	CompShader comp0;
+	CompShadercomp1;
+};
+ 
+// resulting shader (representation)
+shader TestShader
+{
+	// cloned method
+	float base_BaseStageMethod()
+	{
+		return 1.0;
+	}
+ 
+	float comp0_BaseStageMethod()
+	{
+		return 1.0 + base_BaseStageMethod();
+	}
+ 
+	float BaseStageMethod() // in fact comp1_BaseStageMethod
+	{
+		return 1.0 + comp0_BaseStageMethod; // 3.0f
+	}
+ 
+	// not cloned method
+	float base_BaseStageMethodNotCloned()
+	{
+		return 1.0f;
+	}
+ 
+	float BaseStageMethodNotCloned()
+	{
+		return 1.0f + base_BaseStageMethodNotCloned(); // 2.0f
+	}
+};
+</target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en">This behavior is useful when you want to repeat a simple function but with different parameters (eg adding color on top of another).</source>
+<target xml:lang="pt">This behavior is useful when you want to repeat a simple function but with different parameters (eg adding color on top of another).</target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en">See also</source>
+<target xml:lang="pt">See also</target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en"><g id="1">Effect language</g></source>
+<target xml:lang="pt"><g id="1">Effect language</g></target>
+</trans-unit>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en"><g id="1">Shading language index</g></source>
+<target xml:lang="pt"><g id="1">Shading language index</g></target>
+</trans-unit>
+<trans-unit id="tu29" xml:space="preserve">
+<source xml:lang="en"><g id="1">Shader classes, mixins, and inheritance</g></source>
+<target xml:lang="pt"><g id="1">Shader classes, mixins, and inheritance</g></target>
+</trans-unit>
+<trans-unit id="tu30" xml:space="preserve">
+<source xml:lang="en"><g id="1">Templates</g></source>
+<target xml:lang="pt"><g id="1">Templates</g></target>
+</trans-unit>
+<trans-unit id="tu31" xml:space="preserve">
+<source xml:lang="en"><g id="1">Shader stage input/output automatic management</g></source>
+<target xml:lang="pt"><g id="1">Shader stage input/output automatic management</g></target>
+</trans-unit>
+<trans-unit id="tu32" xml:space="preserve">
+<source xml:lang="en"><g id="1">Shader stages</g></source>
+<target xml:lang="pt"><g id="1">Shader stages</g></target>
+</trans-unit>
+</body>
+</file>
+</xliff>

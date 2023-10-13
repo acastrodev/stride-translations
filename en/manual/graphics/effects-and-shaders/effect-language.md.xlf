@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="/D:/repos/rr/source/manual/graphics/effects-and-shaders/effect-language.md" source-language="en" target-language="pt" datatype="x-text/x-markdown" okp:inputEncoding="UTF-8">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en">Effect language</source>
+<target xml:lang="pt">Effect language</target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en">Create shaders in C&amp;#35;</source>
+<target xml:lang="pt">Create shaders in C&amp;#35;</target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">You can create a shader at runtime with @'Stride.Shaders.ShaderSource' objects. Shaders come in three types:</source>
+<target xml:lang="pt">You can create a shader at runtime with @'Stride.Shaders.ShaderSource' objects. Shaders come in three types:</target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">@'Stride.Shaders.ShaderClassSource' correspond to a unique shader class</source>
+<target xml:lang="pt">@'Stride.Shaders.ShaderClassSource' correspond to a unique shader class</target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">@'Stride.Shaders.ShaderMixinSource' mix several @'Stride.Shaders.ShaderSource', set preprocessor values, define compositions</source>
+<target xml:lang="pt">@'Stride.Shaders.ShaderMixinSource' mix several @'Stride.Shaders.ShaderSource', set preprocessor values, define compositions</target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en">@'Stride.Shaders.ShaderArraySource' are used for arrays of compositions</source>
+<target xml:lang="pt">@'Stride.Shaders.ShaderArraySource' are used for arrays of compositions</target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en">This method produces shaders at runtime. However, many platforms don't support HLSL and have no ability to compile shaders at runtime. Additionally, the approach doesn't benefit from the reusability of mixins.</source>
+<target xml:lang="pt">This method produces shaders at runtime. However, many platforms don't support HLSL and have no ability to compile shaders at runtime. Additionally, the approach doesn't benefit from the reusability of mixins.</target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en">Stride Effects (SDFX)</source>
+<target xml:lang="pt">Stride Effects (SDFX)</target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en">Many shaders are variations or combinations of pre-existing shaders. For example, some meshes cast shadows, others receive them, and others need skinning. To reuse code, it's a good idea to select which parts to use through conditions (eg "Skinning required"). This is often solved by "uber shaders": monolithic shaders configured by a set of preprocessor parameters.</source>
+<target xml:lang="pt">Many shaders are variations or combinations of pre-existing shaders. For example, some meshes cast shadows, others receive them, and others need skinning. To reuse code, it's a good idea to select which parts to use through conditions (eg "Skinning required"). This is often solved by "uber shaders": monolithic shaders configured by a set of preprocessor parameters.</target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en">Stride offers the same kind of control, keeping extensibility and reusability in mind. The simple code blocks defined by shader classes can be mixed together by a shader mixer. This process can use more complex logic, described in Stride Effect (*.sdfx) files.</source>
+<target xml:lang="pt">Stride offers the same kind of control, keeping extensibility and reusability in mind. The simple code blocks defined by shader classes can be mixed together by a shader mixer. This process can use more complex logic, described in Stride Effect (*.sdfx) files.</target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en">General syntax</source>
+<target xml:lang="pt">General syntax</target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en">An .sdfx file is a small program used to generate shader permutations. It takes a set of parameters (key and value in a collection) and produces a <g id="1">ShaderMixinSource</g> ready to be compiled.</source>
+<target xml:lang="pt">An .sdfx file is a small program used to generate shader permutations. It takes a set of parameters (key and value in a collection) and produces a <g id="1">ShaderMixinSource</g> ready to be compiled.</target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en">An example .sdfx file:</source>
+<target xml:lang="pt">An example .sdfx file:</target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en">using Stride.Effects.Data;
+
+namespace StrideEffects
+{
+	params MyParameters
+	{
+		bool EnableSpecular = true;
+	};
+	
+	effect BasicEffect
+	{
+		using params MaterialParameters;
+		using params MyParameters;
+
+		mixin ShaderBase;
+		mixin TransformationWAndVP;
+		mixin NormalVSStream;
+		mixin PositionVSStream;
+		mixin BRDFDiffuseBase;
+		mixin BRDFSpecularBase;
+		mixin LightMultiDirectionalShadingPerPixel&lt;2>;
+		mixin TransparentShading;
+		mixin DiscardTransparent;
+
+		if (MaterialParameters.AlbedoDiffuse != null)
+		{
+			mixin compose DiffuseColor = ComputeBRDFDiffuseLambert;
+			mixin compose albedoDiffuse = MaterialParameters.AlbedoDiffuse;
+		}
+
+		if (MaterialParameters.AlbedoSpecular != null)
+		{
+			mixin compose SpecularColor = ComputeBRDFColorSpecularBlinnPhong;
+			mixin compose albedoSpecular = MaterialParameters.AlbedoSpecular;
+		}
+	};
+}
+</source>
+<target xml:lang="pt">using Stride.Effects.Data;
+
+namespace StrideEffects
+{
+	params MyParameters
+	{
+		bool EnableSpecular = true;
+	};
+	
+	effect BasicEffect
+	{
+		using params MaterialParameters;
+		using params MyParameters;
+
+		mixin ShaderBase;
+		mixin TransformationWAndVP;
+		mixin NormalVSStream;
+		mixin PositionVSStream;
+		mixin BRDFDiffuseBase;
+		mixin BRDFSpecularBase;
+		mixin LightMultiDirectionalShadingPerPixel&lt;2>;
+		mixin TransparentShading;
+		mixin DiscardTransparent;
+
+		if (MaterialParameters.AlbedoDiffuse != null)
+		{
+			mixin compose DiffuseColor = ComputeBRDFDiffuseLambert;
+			mixin compose albedoDiffuse = MaterialParameters.AlbedoDiffuse;
+		}
+
+		if (MaterialParameters.AlbedoSpecular != null)
+		{
+			mixin compose SpecularColor = ComputeBRDFColorSpecularBlinnPhong;
+			mixin compose albedoSpecular = MaterialParameters.AlbedoSpecular;
+		}
+	};
+}
+</target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en">Add a mixin</source>
+<target xml:lang="pt">Add a mixin</target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en">To add a mixin, use <g id="1">mixin &lt;mixin_name></g>.</source>
+<target xml:lang="pt">To add a mixin, use <g id="1">mixin &lt;mixin_name></g>.</target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en">Use parameters</source>
+<target xml:lang="pt">Use parameters</target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en">The syntax is similar to C#. The following rules are added:</source>
+<target xml:lang="pt">The syntax is similar to C#. The following rules are added:</target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en">When you use parameter keys, add them using <g id="1">params &lt;shader_name></g>. If you don't, keys are treated as variables.</source>
+<target xml:lang="pt">When you use parameter keys, add them using <g id="1">params &lt;shader_name></g>. If you don't, keys are treated as variables.</target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en">You don't need to tell the program where to check the values behind the keys. Just use the key.</source>
+<target xml:lang="pt">You don't need to tell the program where to check the values behind the keys. Just use the key.</target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en">using params MaterialParameters;
+ 
+if (MaterialParameters.AlbedoDiffuse != null)
+{
+	mixin MaterialParameters.AlbedoDiffuse;
+}
+</source>
+<target xml:lang="pt">using params MaterialParameters;
+ 
+if (MaterialParameters.AlbedoDiffuse != null)
+{
+	mixin MaterialParameters.AlbedoDiffuse;
+}
+</target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en">The parameters behave like any variable. You can read and write their value, compare their values, and set template parameters. Since some parameters store mixins, they can be used for composition and inheritance, too.</source>
+<target xml:lang="pt">The parameters behave like any variable. You can read and write their value, compare their values, and set template parameters. Since some parameters store mixins, they can be used for composition and inheritance, too.</target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en">Custom parameters</source>
+<target xml:lang="pt">Custom parameters</target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en">You can create your own set of parameters using a structure definition syntax.</source>
+<target xml:lang="pt">You can create your own set of parameters using a structure definition syntax.</target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>!Note<x id="2"/>
+Even if they're defined in the XKFX file, don't forget the <g id="3">using</g> statement when you want to use them.</source>
+<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
+Even if they're defined in the XKFX file, don't forget the <g id="3">using</g> statement when you want to use them.</target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en">params MyParameters
+{
+	bool EnableSpecular = true; // true is the default value
+}
+</source>
+<target xml:lang="pt">params MyParameters
+{
+	bool EnableSpecular = true; // true is the default value
+}
+</target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en">Compositions</source>
+<target xml:lang="pt">Compositions</target>
+</trans-unit>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en">To add a composition, assign the composition variable to your mixin with the syntax below.</source>
+<target xml:lang="pt">To add a composition, assign the composition variable to your mixin with the syntax below.</target>
+</trans-unit>
+<trans-unit id="tu29" xml:space="preserve">
+<source xml:lang="en">// albedoSpecular is the name of the composition variable in the mixin
+mixin compose albedoSpecular = ComputeColorTexture;
+ 
+or
+ 
+mixin compose albedoSpecular = MaterialParameters.AlbedoSpecular;
+</source>
+<target xml:lang="pt">// albedoSpecular is the name of the composition variable in the mixin
+mixin compose albedoSpecular = ComputeColorTexture;
+ 
+or
+ 
+mixin compose albedoSpecular = MaterialParameters.AlbedoSpecular;
+</target>
+</trans-unit>
+<trans-unit id="tu30" xml:space="preserve">
+<source xml:lang="en">Partial effects</source>
+<target xml:lang="pt">Partial effects</target>
+</trans-unit>
+<trans-unit id="tu31" xml:space="preserve">
+<source xml:lang="en">You can also break the code into sub-mixins to reuse elsewhere with the syntax below.</source>
+<target xml:lang="pt">You can also break the code into sub-mixins to reuse elsewhere with the syntax below.</target>
+</trans-unit>
+<trans-unit id="tu32" xml:space="preserve">
+<source xml:lang="en">partial effect MyPartialEffect
+{
+	mixin ComputeColorMultiply;
+	mixin compose color1 = ComputeColorStream;
+	mixin compose color2 = ComputeColorFixed;
+}
+ 
+// to use it
+mixin MyPartialEffect;
+mixin compose myComposition = MyPartialEffect;
+</source>
+<target xml:lang="pt">partial effect MyPartialEffect
+{
+	mixin ComputeColorMultiply;
+	mixin compose color1 = ComputeColorStream;
+	mixin compose color2 = ComputeColorFixed;
+}
+ 
+// to use it
+mixin MyPartialEffect;
+mixin compose myComposition = MyPartialEffect;
+</target>
+</trans-unit>
+<trans-unit id="tu33" xml:space="preserve">
+<source xml:lang="en">You can use the <g id="1">MyPartialEffect</g> mixin like any other mixin in the code.</source>
+<target xml:lang="pt">You can use the <g id="1">MyPartialEffect</g> mixin like any other mixin in the code.</target>
+</trans-unit>
+<trans-unit id="tu34" xml:space="preserve">
+<source xml:lang="en">See also</source>
+<target xml:lang="pt">See also</target>
+</trans-unit>
+<trans-unit id="tu35" xml:space="preserve">
+<source xml:lang="en"><g id="1">Shading language</g></source>
+<target xml:lang="pt"><g id="1">Shading language</g></target>
+</trans-unit>
+</body>
+</file>
+</xliff>

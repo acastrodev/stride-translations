@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="/D:/repos/rr/source/manual/physics/simulation.md" source-language="en" target-language="pt" datatype="x-text/x-markdown" okp:inputEncoding="UTF-8">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en">Physics simulation</source>
+<target xml:lang="pt">Physics simulation</target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Intermediate<x id="2"/>
+<x id="3"/>Programmer<x id="4"/></source>
+<target xml:lang="pt"><x id="1"/>Intermediate<x id="2"/>
+<x id="3"/>Programmer<x id="4"/></target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">Stride's physics are controlled by the <g id="1">Simulation</g> class.
+You can change how Stride initializes the <g id="2">simulation</g> by modifying flags in <g id="3">PhysicsSettings</g>, accessed in the <g id="4">GameSettings</g> asset properties.</source>
+<target xml:lang="pt">Stride's physics are controlled by the <g id="1">Simulation</g> class.
+You can change how Stride initializes the <g id="2">simulation</g> by modifying flags in <g id="3">PhysicsSettings</g>, accessed in the <g id="4">GameSettings</g> asset properties.</target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>!Note<x id="2"/>
+Your scene must have at least one <g id="3">Collider</g> in order for Stride to initialize the <g id="4">Simulation</g> instance.</source>
+<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
+Your scene must have at least one <g id="3">Collider</g> in order for Stride to initialize the <g id="4">Simulation</g> instance.</target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Physics Settings<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Physics Settings<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en"><g id="1">CollisionsOnly</g> initializes the <g id="2">Simulation</g> with collision detection turned on, but no other physics. Objects won't react to physical forces.</source>
+<target xml:lang="pt"><g id="1">CollisionsOnly</g> initializes the <g id="2">Simulation</g> with collision detection turned on, but no other physics. Objects won't react to physical forces.</target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en"><g id="1">ContinuousCollisionDetection</g> initializes the <g id="2">Simulation</g> with continuous collision detection (CCD). CCD prevents fast-moving entities (such as bullets) erroneously passing through other entities.</source>
+<target xml:lang="pt"><g id="1">ContinuousCollisionDetection</g> initializes the <g id="2">Simulation</g> with continuous collision detection (CCD). CCD prevents fast-moving entities (such as bullets) erroneously passing through other entities.</target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>!Note<x id="2"/>
+The <g id="3">SoftBodySupport</g>, <g id="4">MultiThreaded</g>, and <g id="5">UseHardwareWhenPossible</g> flags are currently disabled.</source>
+<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
+The <g id="3">SoftBodySupport</g>, <g id="4">MultiThreaded</g>, and <g id="5">UseHardwareWhenPossible</g> flags are currently disabled.</target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en">At runtime, you can change some <g id="1">Simulation</g> parameters:</source>
+<target xml:lang="pt">At runtime, you can change some <g id="1">Simulation</g> parameters:</target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en"><g id="1">Gravity</g> — the global gravity, in <g id="2">world units</g> per second squared</source>
+<target xml:lang="pt"><g id="1">Gravity</g> — the global gravity, in <g id="2">world units</g> per second squared</target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en"><g id="1">FixedTimeStep</g> — the length of a simulation timestep, in seconds</source>
+<target xml:lang="pt"><g id="1">FixedTimeStep</g> — the length of a simulation timestep, in seconds</target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en"><g id="1">MaxSubSteps</g> — the maximum number of fixed timesteps the engine takes per update</source>
+<target xml:lang="pt"><g id="1">MaxSubSteps</g> — the maximum number of fixed timesteps the engine takes per update</target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en">See also</source>
+<target xml:lang="pt">See also</target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en"><g id="1">Colliders</g></source>
+<target xml:lang="pt"><g id="1">Colliders</g></target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en"><g id="1">Collider shapes</g></source>
+<target xml:lang="pt"><g id="1">Collider shapes</g></target>
+</trans-unit>
+</body>
+</file>
+</xliff>

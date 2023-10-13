@@ -1,0 +1,1845 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="/D:/repos/rr/source/manual/stride-for-unity-developers/index.md" source-language="en" target-language="pt" datatype="x-text/x-markdown" okp:inputEncoding="UTF-8">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en">Stride for Unity® developers</source>
+<target xml:lang="pt">Stride for Unity® developers</target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en">Stride and Unity® both use C# and share many concepts, with a few major differences.</source>
+<target xml:lang="pt">Stride and Unity® both use C# and share many concepts, with a few major differences.</target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Stride for Unity® developers<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Stride for Unity® developers<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">Editor</source>
+<target xml:lang="pt">Editor</target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">The Stride editor is <g id="1">Game Studio</g>. This is the equivalent of the Unity® Editor.</source>
+<target xml:lang="pt">The Stride editor is <g id="1">Game Studio</g>. This is the equivalent of the Unity® Editor.</target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Stride and Unity®  interface comparison<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Stride and Unity®  interface comparison<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en"><g id="1">Unity® screenshot taken from <g id="2">Calling a web-service from a Unity3D scene</g> by Kean Walmsley.</g></source>
+<target xml:lang="pt"><g id="1">Unity® screenshot taken from <g id="2">Calling a web-service from a Unity3D scene</g> by Kean Walmsley.</g></target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en">You can customize the Game Studio layout by dragging tabs, similar to Visual Studio.</source>
+<target xml:lang="pt">You can customize the Game Studio layout by dragging tabs, similar to Visual Studio.</target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en">For more information about Game Studio, see the <g id="1">Game Studio</g> page.</source>
+<target xml:lang="pt">For more information about Game Studio, see the <g id="1">Game Studio</g> page.</target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en">Terminology</source>
+<target xml:lang="pt">Terminology</target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en">Unity® and Stride use mostly common terms, with a few differences:</source>
+<target xml:lang="pt">Unity® and Stride use mostly common terms, with a few differences:</target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en">Unity®</source>
+<target xml:lang="pt">Unity®</target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en">Stride</source>
+<target xml:lang="pt">Stride</target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en">Hierarchy panel</source>
+<target xml:lang="pt">Hierarchy panel</target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en">Entity Tree</source>
+<target xml:lang="pt">Entity Tree</target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en">Inspector</source>
+<target xml:lang="pt">Inspector</target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en">Property Grid</source>
+<target xml:lang="pt">Property Grid</target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en">Project browser</source>
+<target xml:lang="pt">Project browser</target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en">Asset View</source>
+<target xml:lang="pt">Asset View</target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en">Scene view</source>
+<target xml:lang="pt">Scene view</target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en">Scene Editor</source>
+<target xml:lang="pt">Scene Editor</target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en">GameObject</source>
+<target xml:lang="pt">GameObject</target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en">Entity</source>
+<target xml:lang="pt">Entity</target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en">MonoBehaviour</source>
+<target xml:lang="pt">MonoBehaviour</target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en">SyncScript, AsyncScript, StartupScript</source>
+<target xml:lang="pt">SyncScript, AsyncScript, StartupScript</target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en">Folders and files</source>
+<target xml:lang="pt">Folders and files</target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en">Like Unity®, Stride projects are stored in a directory that contains:</source>
+<target xml:lang="pt">Like Unity®, Stride projects are stored in a directory that contains:</target>
+</trans-unit>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en">The project <g id="1">.sln</g> solution file, which you can open with Game Studio or any IDE such as Visual Studio</source>
+<target xml:lang="pt">The project <g id="1">.sln</g> solution file, which you can open with Game Studio or any IDE such as Visual Studio</target>
+</trans-unit>
+<trans-unit id="tu29" xml:space="preserve">
+<source xml:lang="en">a <g id="1">MyGame.Game</g> folder with project source files, dependencies, resources, configurations, and binaries</source>
+<target xml:lang="pt">a <g id="1">MyGame.Game</g> folder with project source files, dependencies, resources, configurations, and binaries</target>
+</trans-unit>
+<trans-unit id="tu30" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Package folder structure<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Package folder structure<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu31" xml:space="preserve">
+<source xml:lang="en"><g id="1">Assets</g> contains asset configuration files.</source>
+<target xml:lang="pt"><g id="1">Assets</g> contains asset configuration files.</target>
+</trans-unit>
+<trans-unit id="tu32" xml:space="preserve">
+<source xml:lang="en"><g id="1">Bin</g> contains the compiled binaries and data. Stride creates the folder when you build the project, with a subdirectory for each platform.</source>
+<target xml:lang="pt"><g id="1">Bin</g> contains the compiled binaries and data. Stride creates the folder when you build the project, with a subdirectory for each platform.</target>
+</trans-unit>
+<trans-unit id="tu33" xml:space="preserve">
+<source xml:lang="en"><g id="1">MyPackage.Game</g> contains your source code.</source>
+<target xml:lang="pt"><g id="1">MyPackage.Game</g> contains your source code.</target>
+</trans-unit>
+<trans-unit id="tu34" xml:space="preserve">
+<source xml:lang="en"><g id="1">MyPackage.Platform</g> contains additional code for the platforms your project supports. Game Studio creates folders for each platform (e.g. <g id="2">MyPackage.Windows</g>, <g id="3">MyPackage.Linux</g>, etc.). These folders are usually small and only contain the entry point of the program.</source>
+<target xml:lang="pt"><g id="1">MyPackage.Platform</g> contains additional code for the platforms your project supports. Game Studio creates folders for each platform (e.g. <g id="2">MyPackage.Windows</g>, <g id="3">MyPackage.Linux</g>, etc.). These folders are usually small and only contain the entry point of the program.</target>
+</trans-unit>
+<trans-unit id="tu35" xml:space="preserve">
+<source xml:lang="en"><g id="1">obj</g> contains cached files. Game Studio creates this folder when you build your project. To force a complete asset and code rebuild, delete this folder and build the project again.</source>
+<target xml:lang="pt"><g id="1">obj</g> contains cached files. Game Studio creates this folder when you build your project. To force a complete asset and code rebuild, delete this folder and build the project again.</target>
+</trans-unit>
+<trans-unit id="tu36" xml:space="preserve">
+<source xml:lang="en"><g id="1">Resources</g> is the recommended location for storing source files for your project, such as textures, models, and audio files.</source>
+<target xml:lang="pt"><g id="1">Resources</g> is the recommended location for storing source files for your project, such as textures, models, and audio files.</target>
+</trans-unit>
+<trans-unit id="tu37" xml:space="preserve">
+<source xml:lang="en">Stride and Unity® differ in the following ways:</source>
+<target xml:lang="pt">Stride and Unity® differ in the following ways:</target>
+</trans-unit>
+<trans-unit id="tu38" xml:space="preserve">
+<source xml:lang="en">Stride doesn't automatically copy resource files to your project folder when you import them into assets. You have to do this yourself. We recommend you save them in the <g id="1">Resources</g> folder.</source>
+<target xml:lang="pt">Stride doesn't automatically copy resource files to your project folder when you import them into assets. You have to do this yourself. We recommend you save them in the <g id="1">Resources</g> folder.</target>
+</trans-unit>
+<trans-unit id="tu39" xml:space="preserve">
+<source xml:lang="en">Stride doesn't require resource files and asset files to be in the same folder. You can save resource files in the Assets folder if you want, but instead, we recommend you save them in the <g id="1">Resources</g> folder. This makes sharing your project via version control easier.</source>
+<target xml:lang="pt">Stride doesn't require resource files and asset files to be in the same folder. You can save resource files in the Assets folder if you want, but instead, we recommend you save them in the <g id="1">Resources</g> folder. This makes sharing your project via version control easier.</target>
+</trans-unit>
+<trans-unit id="tu40" xml:space="preserve">
+<source xml:lang="en">For more information about project structure in Stride, including advice about how to organize and share your files, see the <g id="1">Project structure</g> page.</source>
+<target xml:lang="pt">For more information about project structure in Stride, including advice about how to organize and share your files, see the <g id="1">Project structure</g> page.</target>
+</trans-unit>
+<trans-unit id="tu41" xml:space="preserve">
+<source xml:lang="en">Open the project directory from Game Studio</source>
+<target xml:lang="pt">Open the project directory from Game Studio</target>
+</trans-unit>
+<trans-unit id="tu42" xml:space="preserve">
+<source xml:lang="en">You can open the project directory from <g id="1">Project > Show in explorer</g> in Game Studio.</source>
+<target xml:lang="pt">You can open the project directory from <g id="1">Project > Show in explorer</g> in Game Studio.</target>
+</trans-unit>
+<trans-unit id="tu43" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Open project directory from Game Studio<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Open project directory from Game Studio<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu44" xml:space="preserve">
+<source xml:lang="en">Game settings</source>
+<target xml:lang="pt">Game settings</target>
+</trans-unit>
+<trans-unit id="tu45" xml:space="preserve">
+<source xml:lang="en">Unity® saves global settings in separate assets (i.e. Graphics Settings, Quality Settings, Audio Manager, and so on).</source>
+<target xml:lang="pt">Unity® saves global settings in separate assets (i.e. Graphics Settings, Quality Settings, Audio Manager, and so on).</target>
+</trans-unit>
+<trans-unit id="tu46" xml:space="preserve">
+<source xml:lang="en">Stride saves global settings in a single asset, the <g id="1">Game Settings</g> asset. You can configure:</source>
+<target xml:lang="pt">Stride saves global settings in a single asset, the <g id="1">Game Settings</g> asset. You can configure:</target>
+</trans-unit>
+<trans-unit id="tu47" xml:space="preserve">
+<source xml:lang="en">The <g id="1">default scene</g></source>
+<target xml:lang="pt">The <g id="1">default scene</g></target>
+</trans-unit>
+<trans-unit id="tu48" xml:space="preserve">
+<source xml:lang="en"><g id="1">Rendering settings</g></source>
+<target xml:lang="pt"><g id="1">Rendering settings</g></target>
+</trans-unit>
+<trans-unit id="tu49" xml:space="preserve">
+<source xml:lang="en"><g id="1">Editor settings</g></source>
+<target xml:lang="pt"><g id="1">Editor settings</g></target>
+</trans-unit>
+<trans-unit id="tu50" xml:space="preserve">
+<source xml:lang="en"><g id="1">Texture settings</g></source>
+<target xml:lang="pt"><g id="1">Texture settings</g></target>
+</trans-unit>
+<trans-unit id="tu51" xml:space="preserve">
+<source xml:lang="en"><g id="1">Physics settings</g></source>
+<target xml:lang="pt"><g id="1">Physics settings</g></target>
+</trans-unit>
+<trans-unit id="tu52" xml:space="preserve">
+<source xml:lang="en"><g id="1">Overrides</g></source>
+<target xml:lang="pt"><g id="1">Overrides</g></target>
+</trans-unit>
+<trans-unit id="tu53" xml:space="preserve">
+<source xml:lang="en">To use the Game Settings asset, in the <g id="1">Asset View</g>, select <g id="2">GameSettings</g> and view its properties in the <g id="3">Property Grid</g>.</source>
+<target xml:lang="pt">To use the Game Settings asset, in the <g id="1">Asset View</g>, select <g id="2">GameSettings</g> and view its properties in the <g id="3">Property Grid</g>.</target>
+</trans-unit>
+<trans-unit id="tu54" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Game settings<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Game settings<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu55" xml:space="preserve">
+<source xml:lang="en">Scenes</source>
+<target xml:lang="pt">Scenes</target>
+</trans-unit>
+<trans-unit id="tu56" xml:space="preserve">
+<source xml:lang="en">Like Unity®, in Stride, you place all objects in a scene. Game Studio stores scenes as separate <g id="1">.sdscene</g> assets in your project directory.</source>
+<target xml:lang="pt">Like Unity®, in Stride, you place all objects in a scene. Game Studio stores scenes as separate <g id="1">.sdscene</g> assets in your project directory.</target>
+</trans-unit>
+<trans-unit id="tu57" xml:space="preserve">
+<source xml:lang="en">Set the default scene</source>
+<target xml:lang="pt">Set the default scene</target>
+</trans-unit>
+<trans-unit id="tu58" xml:space="preserve">
+<source xml:lang="en">You can have multiple scenes in your project. The scene that loads up as soon as your game starts is called the <g id="1">Default Scene</g>.</source>
+<target xml:lang="pt">You can have multiple scenes in your project. The scene that loads up as soon as your game starts is called the <g id="1">Default Scene</g>.</target>
+</trans-unit>
+<trans-unit id="tu59" xml:space="preserve">
+<source xml:lang="en">To set the default scene:</source>
+<target xml:lang="pt">To set the default scene:</target>
+</trans-unit>
+<trans-unit id="tu60" xml:space="preserve">
+<source xml:lang="en">In the <g id="1">GameSettings</g> properties, next to <g id="2">Default Scene</g>, click <x id="3"/>Hand icon<x id="4"/> (<g id="5">Select an asset</g>).</source>
+<target xml:lang="pt">In the <g id="1">GameSettings</g> properties, next to <g id="2">Default Scene</g>, click <x id="3"/>Hand icon<x id="4"/> (<g id="5">Select an asset</g>).</target>
+</trans-unit>
+<trans-unit id="tu61" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Set default scene<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Set default scene<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu62" xml:space="preserve">
+<source xml:lang="en">The <g id="1">Select an asset</g> window opens.</source>
+<target xml:lang="pt">The <g id="1">Select an asset</g> window opens.</target>
+</trans-unit>
+<trans-unit id="tu63" xml:space="preserve">
+<source xml:lang="en">Select the default scene and click <g id="1">OK</g>.</source>
+<target xml:lang="pt">Select the default scene and click <g id="1">OK</g>.</target>
+</trans-unit>
+<trans-unit id="tu64" xml:space="preserve">
+<source xml:lang="en">For more information about scenes, see <g id="1">Scenes</g>.</source>
+<target xml:lang="pt">For more information about scenes, see <g id="1">Scenes</g>.</target>
+</trans-unit>
+<trans-unit id="tu65" xml:space="preserve">
+<source xml:lang="en">Entities vs GameObjects</source>
+<target xml:lang="pt">Entities vs GameObjects</target>
+</trans-unit>
+<trans-unit id="tu66" xml:space="preserve">
+<source xml:lang="en">In Unity®, objects in the scene are called <g id="1">GameObjects</g>. In Stride, they're called <g id="2">entities</g>.</source>
+<target xml:lang="pt">In Unity®, objects in the scene are called <g id="1">GameObjects</g>. In Stride, they're called <g id="2">entities</g>.</target>
+</trans-unit>
+<trans-unit id="tu67" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Entities in Stride<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Entities in Stride<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu68" xml:space="preserve">
+<source xml:lang="en">Like GameObjects, entities are carriers for components such as transform components, model components, audio components, and so on. If you're used to working with GameObjects in Unity®, you should have no problem using entities in Game Studio.</source>
+<target xml:lang="pt">Like GameObjects, entities are carriers for components such as transform components, model components, audio components, and so on. If you're used to working with GameObjects in Unity®, you should have no problem using entities in Game Studio.</target>
+</trans-unit>
+<trans-unit id="tu69" xml:space="preserve">
+<source xml:lang="en">Entity components</source>
+<target xml:lang="pt">Entity components</target>
+</trans-unit>
+<trans-unit id="tu70" xml:space="preserve">
+<source xml:lang="en">In Stride, you add components to entities just like you add components to GameObjects in Unity®.</source>
+<target xml:lang="pt">In Stride, you add components to entities just like you add components to GameObjects in Unity®.</target>
+</trans-unit>
+<trans-unit id="tu71" xml:space="preserve">
+<source xml:lang="en">To add a component to an entity in Game Studio:</source>
+<target xml:lang="pt">To add a component to an entity in Game Studio:</target>
+</trans-unit>
+<trans-unit id="tu72" xml:space="preserve">
+<source xml:lang="en">Select the entity you want to add the component to.</source>
+<target xml:lang="pt">Select the entity you want to add the component to.</target>
+</trans-unit>
+<trans-unit id="tu73" xml:space="preserve">
+<source xml:lang="en">In the <g id="1">Property Grid</g> (on the right by default), click <g id="2">Add component</g> and select the component from the drop-down list.</source>
+<target xml:lang="pt">In the <g id="1">Property Grid</g> (on the right by default), click <g id="2">Add component</g> and select the component from the drop-down list.</target>
+</trans-unit>
+<trans-unit id="tu74" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Add component<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Add component<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu75" xml:space="preserve">
+<source xml:lang="en">Transform component</source>
+<target xml:lang="pt">Transform component</target>
+</trans-unit>
+<trans-unit id="tu76" xml:space="preserve">
+<source xml:lang="en">Like GameObjects in Unity®, each entity in Stride has a <g id="1">Transform component</g> which sets its position, rotation, and scale in the world.</source>
+<target xml:lang="pt">Like GameObjects in Unity®, each entity in Stride has a <g id="1">Transform component</g> which sets its position, rotation, and scale in the world.</target>
+</trans-unit>
+<trans-unit id="tu77" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Transform component<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Transform component<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu78" xml:space="preserve">
+<source xml:lang="en">All entities are created with a Transform component by default.</source>
+<target xml:lang="pt">All entities are created with a Transform component by default.</target>
+</trans-unit>
+<trans-unit id="tu79" xml:space="preserve">
+<source xml:lang="en">In Stride, Transform components contain a LocalMatrix and a WorldMatrix that are updated in every Update frame. If you need to force an update sooner than that you can use <g id="1">TranformComponent.UpdateLocalMatrix()</g>, <g id="2">Transform.UpdateWorldMatrix()</g>, or <g id="3">Transform.UpdateLocalFromWorld()</g> to do so, depending on how you need to update the matrix.</source>
+<target xml:lang="pt">In Stride, Transform components contain a LocalMatrix and a WorldMatrix that are updated in every Update frame. If you need to force an update sooner than that you can use <g id="1">TranformComponent.UpdateLocalMatrix()</g>, <g id="2">Transform.UpdateWorldMatrix()</g>, or <g id="3">Transform.UpdateLocalFromWorld()</g> to do so, depending on how you need to update the matrix.</target>
+</trans-unit>
+<trans-unit id="tu80" xml:space="preserve">
+<source xml:lang="en">Local Position/Rotation/Scale</source>
+<target xml:lang="pt">Local Position/Rotation/Scale</target>
+</trans-unit>
+<trans-unit id="tu81" xml:space="preserve">
+<source xml:lang="en">Stride uses position, rotation, and scale to refer to the local position, rotation, and scale.</source>
+<target xml:lang="pt">Stride uses position, rotation, and scale to refer to the local position, rotation, and scale.</target>
+</trans-unit>
+<trans-unit id="tu82" xml:space="preserve">
+<source xml:lang="en">Unity®</source>
+<target xml:lang="pt">Unity®</target>
+</trans-unit>
+<trans-unit id="tu83" xml:space="preserve">
+<source xml:lang="en">Stride</source>
+<target xml:lang="pt">Stride</target>
+</trans-unit>
+<trans-unit id="tu84" xml:space="preserve">
+<source xml:lang="en"><g id="1">transform.localPosition</g></source>
+<target xml:lang="pt"><g id="1">transform.localPosition</g></target>
+</trans-unit>
+<trans-unit id="tu85" xml:space="preserve">
+<source xml:lang="en"><g id="1">Transform.Position</g></source>
+<target xml:lang="pt"><g id="1">Transform.Position</g></target>
+</trans-unit>
+<trans-unit id="tu86" xml:space="preserve">
+<source xml:lang="en"><g id="1">transform.localRotation</g></source>
+<target xml:lang="pt"><g id="1">transform.localRotation</g></target>
+</trans-unit>
+<trans-unit id="tu87" xml:space="preserve">
+<source xml:lang="en"><g id="1">Transform.Rotation</g></source>
+<target xml:lang="pt"><g id="1">Transform.Rotation</g></target>
+</trans-unit>
+<trans-unit id="tu88" xml:space="preserve">
+<source xml:lang="en"><g id="1">transform.localScale</g></source>
+<target xml:lang="pt"><g id="1">transform.localScale</g></target>
+</trans-unit>
+<trans-unit id="tu89" xml:space="preserve">
+<source xml:lang="en"><g id="1">Transform.Scale</g></source>
+<target xml:lang="pt"><g id="1">Transform.Scale</g></target>
+</trans-unit>
+<trans-unit id="tu90" xml:space="preserve">
+<source xml:lang="en"><g id="1">transform.localEulerAngles</g></source>
+<target xml:lang="pt"><g id="1">transform.localEulerAngles</g></target>
+</trans-unit>
+<trans-unit id="tu91" xml:space="preserve">
+<source xml:lang="en"><g id="1">Transform.RotationEulerXYZ</g></source>
+<target xml:lang="pt"><g id="1">Transform.RotationEulerXYZ</g></target>
+</trans-unit>
+<trans-unit id="tu92" xml:space="preserve">
+<source xml:lang="en">World Position/Rotation/Scale</source>
+<target xml:lang="pt">World Position/Rotation/Scale</target>
+</trans-unit>
+<trans-unit id="tu93" xml:space="preserve">
+<source xml:lang="en">In comparison to Unity, many of the Transform component's properties related to its location in the world have been moved to the <g id="1">WorldMatrix</g>.</source>
+<target xml:lang="pt">In comparison to Unity, many of the Transform component's properties related to its location in the world have been moved to the <g id="1">WorldMatrix</g>.</target>
+</trans-unit>
+<trans-unit id="tu94" xml:space="preserve">
+<source xml:lang="en">Unity®</source>
+<target xml:lang="pt">Unity®</target>
+</trans-unit>
+<trans-unit id="tu95" xml:space="preserve">
+<source xml:lang="en">Stride</source>
+<target xml:lang="pt">Stride</target>
+</trans-unit>
+<trans-unit id="tu96" xml:space="preserve">
+<source xml:lang="en"><g id="1">transform.position</g></source>
+<target xml:lang="pt"><g id="1">transform.position</g></target>
+</trans-unit>
+<trans-unit id="tu97" xml:space="preserve">
+<source xml:lang="en"><g id="1">Transform.WorldMatrix.TranslationVector</g></source>
+<target xml:lang="pt"><g id="1">Transform.WorldMatrix.TranslationVector</g></target>
+</trans-unit>
+<trans-unit id="tu98" xml:space="preserve">
+<source xml:lang="en"><g id="1">transform.rotation</g></source>
+<target xml:lang="pt"><g id="1">transform.rotation</g></target>
+</trans-unit>
+<trans-unit id="tu99" xml:space="preserve">
+<source xml:lang="en">N/A</source>
+<target xml:lang="pt">N/A</target>
+</trans-unit>
+<trans-unit id="tu100" xml:space="preserve">
+<source xml:lang="en"><g id="1">transform.scale</g></source>
+<target xml:lang="pt"><g id="1">transform.scale</g></target>
+</trans-unit>
+<trans-unit id="tu101" xml:space="preserve">
+<source xml:lang="en">N/A</source>
+<target xml:lang="pt">N/A</target>
+</trans-unit>
+<trans-unit id="tu102" xml:space="preserve">
+<source xml:lang="en"><g id="1">transform.eulerAngles</g></source>
+<target xml:lang="pt"><g id="1">transform.eulerAngles</g></target>
+</trans-unit>
+<trans-unit id="tu103" xml:space="preserve">
+<source xml:lang="en"><g id="1">Transform.WorldMatrix.DecomposeXYZ(out Vector3 rotation)</g></source>
+<target xml:lang="pt"><g id="1">Transform.WorldMatrix.DecomposeXYZ(out Vector3 rotation)</g></target>
+</trans-unit>
+<trans-unit id="tu104" xml:space="preserve">
+<source xml:lang="en"><g id="1">transform.scale</g> and <g id="2">transform.position</g></source>
+<target xml:lang="pt"><g id="1">transform.scale</g> and <g id="2">transform.position</g></target>
+</trans-unit>
+<trans-unit id="tu105" xml:space="preserve">
+<source xml:lang="en"><g id="1">Transform.WorldMatrix.Decompose(out Vector3 scale, out Vector3 translation)</g></source>
+<target xml:lang="pt"><g id="1">Transform.WorldMatrix.Decompose(out Vector3 scale, out Vector3 translation)</g></target>
+</trans-unit>
+<trans-unit id="tu106" xml:space="preserve">
+<source xml:lang="en"><g id="1">transform.scale</g>, <g id="2">transform.rotation</g>, and <g id="3">transform.position</g></source>
+<target xml:lang="pt"><g id="1">transform.scale</g>, <g id="2">transform.rotation</g>, and <g id="3">transform.position</g></target>
+</trans-unit>
+<trans-unit id="tu107" xml:space="preserve">
+<source xml:lang="en"><g id="1">Transform.WorldMatrix.Decompose(out Vector3 scale, out Quaternion rotation, out Vector3 translation)</g></source>
+<target xml:lang="pt"><g id="1">Transform.WorldMatrix.Decompose(out Vector3 scale, out Quaternion rotation, out Vector3 translation)</g></target>
+</trans-unit>
+<trans-unit id="tu108" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>!Note<x id="2"/>
+<g id="3">WorldMatrix</g> is only updated after the entire Update loop runs, which means that you may be reading outdated data if that object's or its parent's position changed between the previous frame and now.
+To ensure you're reading the latest position and rotation, you should force the matrix to update by calling <g id="4">Transform.UpdateWorldMatrix()</g> before reading from it.</source>
+<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
+<g id="3">WorldMatrix</g> is only updated after the entire Update loop runs, which means that you may be reading outdated data if that object's or its parent's position changed between the previous frame and now.
+To ensure you're reading the latest position and rotation, you should force the matrix to update by calling <g id="4">Transform.UpdateWorldMatrix()</g> before reading from it.</target>
+</trans-unit>
+<trans-unit id="tu109" xml:space="preserve">
+<source xml:lang="en">Transform Directions</source>
+<target xml:lang="pt">Transform Directions</target>
+</trans-unit>
+<trans-unit id="tu110" xml:space="preserve">
+<source xml:lang="en">Unlike Unity, Stride provides a Backward, Left, and Down property.
+Note that those are matrix properties, so setting one of those is not enough to properly rotate the matrix.</source>
+<target xml:lang="pt">Unlike Unity, Stride provides a Backward, Left, and Down property.
+Note that those are matrix properties, so setting one of those is not enough to properly rotate the matrix.</target>
+</trans-unit>
+<trans-unit id="tu111" xml:space="preserve">
+<source xml:lang="en">Unity®</source>
+<target xml:lang="pt">Unity®</target>
+</trans-unit>
+<trans-unit id="tu112" xml:space="preserve">
+<source xml:lang="en">Stride</source>
+<target xml:lang="pt">Stride</target>
+</trans-unit>
+<trans-unit id="tu113" xml:space="preserve">
+<source xml:lang="en"><g id="1">transform.forward</g></source>
+<target xml:lang="pt"><g id="1">transform.forward</g></target>
+</trans-unit>
+<trans-unit id="tu114" xml:space="preserve">
+<source xml:lang="en"><g id="1">Transform.WorldMatrix.Forward</g></source>
+<target xml:lang="pt"><g id="1">Transform.WorldMatrix.Forward</g></target>
+</trans-unit>
+<trans-unit id="tu115" xml:space="preserve">
+<source xml:lang="en"><g id="1">transform.forward * -1</g></source>
+<target xml:lang="pt"><g id="1">transform.forward * -1</g></target>
+</trans-unit>
+<trans-unit id="tu116" xml:space="preserve">
+<source xml:lang="en"><g id="1">Transform.WorldMatrix.Backward</g></source>
+<target xml:lang="pt"><g id="1">Transform.WorldMatrix.Backward</g></target>
+</trans-unit>
+<trans-unit id="tu117" xml:space="preserve">
+<source xml:lang="en"><g id="1">transform.right</g></source>
+<target xml:lang="pt"><g id="1">transform.right</g></target>
+</trans-unit>
+<trans-unit id="tu118" xml:space="preserve">
+<source xml:lang="en"><g id="1">Transform.WorldMatrix.Right</g></source>
+<target xml:lang="pt"><g id="1">Transform.WorldMatrix.Right</g></target>
+</trans-unit>
+<trans-unit id="tu119" xml:space="preserve">
+<source xml:lang="en"><g id="1">transform.right * -1</g></source>
+<target xml:lang="pt"><g id="1">transform.right * -1</g></target>
+</trans-unit>
+<trans-unit id="tu120" xml:space="preserve">
+<source xml:lang="en"><g id="1">Transform.WorldMatrix.Left</g></source>
+<target xml:lang="pt"><g id="1">Transform.WorldMatrix.Left</g></target>
+</trans-unit>
+<trans-unit id="tu121" xml:space="preserve">
+<source xml:lang="en"><g id="1">transform.up</g></source>
+<target xml:lang="pt"><g id="1">transform.up</g></target>
+</trans-unit>
+<trans-unit id="tu122" xml:space="preserve">
+<source xml:lang="en"><g id="1">Transform.WorldMatrix.Up</g></source>
+<target xml:lang="pt"><g id="1">Transform.WorldMatrix.Up</g></target>
+</trans-unit>
+<trans-unit id="tu123" xml:space="preserve">
+<source xml:lang="en"><g id="1">transform.up * -1</g></source>
+<target xml:lang="pt"><g id="1">transform.up * -1</g></target>
+</trans-unit>
+<trans-unit id="tu124" xml:space="preserve">
+<source xml:lang="en"><g id="1">Transform.WorldMatrix.Down</g></source>
+<target xml:lang="pt"><g id="1">Transform.WorldMatrix.Down</g></target>
+</trans-unit>
+<trans-unit id="tu125" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>!Note<x id="2"/>
+See note in <g id="3">World Position/Rotation/Scale</g></source>
+<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
+See note in <g id="3">World Position/Rotation/Scale</g></target>
+</trans-unit>
+<trans-unit id="tu126" xml:space="preserve">
+<source xml:lang="en">Assets</source>
+<target xml:lang="pt">Assets</target>
+</trans-unit>
+<trans-unit id="tu127" xml:space="preserve">
+<source xml:lang="en">In Unity®, you select an asset in the <g id="1">project browser</g> and edit its properties in the <g id="2">Inspector</g> tab.</source>
+<target xml:lang="pt">In Unity®, you select an asset in the <g id="1">project browser</g> and edit its properties in the <g id="2">Inspector</g> tab.</target>
+</trans-unit>
+<trans-unit id="tu128" xml:space="preserve">
+<source xml:lang="en">Stride is similar. You select an asset in the <g id="1">Asset View</g> and edit its properties in the <g id="2">Property Grid</g>.</source>
+<target xml:lang="pt">Stride is similar. You select an asset in the <g id="1">Asset View</g> and edit its properties in the <g id="2">Property Grid</g>.</target>
+</trans-unit>
+<trans-unit id="tu129" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Asset and properties<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Asset and properties<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu130" xml:space="preserve">
+<source xml:lang="en">For certain types of assets, Game Studio also has dedicated editors:</source>
+<target xml:lang="pt">For certain types of assets, Game Studio also has dedicated editors:</target>
+</trans-unit>
+<trans-unit id="tu131" xml:space="preserve">
+<source xml:lang="en">prefabs</source>
+<target xml:lang="pt">prefabs</target>
+</trans-unit>
+<trans-unit id="tu132" xml:space="preserve">
+<source xml:lang="en">scenes</source>
+<target xml:lang="pt">scenes</target>
+</trans-unit>
+<trans-unit id="tu133" xml:space="preserve">
+<source xml:lang="en">sprite sheets</source>
+<target xml:lang="pt">sprite sheets</target>
+</trans-unit>
+<trans-unit id="tu134" xml:space="preserve">
+<source xml:lang="en">UI pages</source>
+<target xml:lang="pt">UI pages</target>
+</trans-unit>
+<trans-unit id="tu135" xml:space="preserve">
+<source xml:lang="en">UI libraries</source>
+<target xml:lang="pt">UI libraries</target>
+</trans-unit>
+<trans-unit id="tu136" xml:space="preserve">
+<source xml:lang="en">scripts</source>
+<target xml:lang="pt">scripts</target>
+</trans-unit>
+<trans-unit id="tu137" xml:space="preserve">
+<source xml:lang="en">To open the dedicated editor for these types of assets:</source>
+<target xml:lang="pt">To open the dedicated editor for these types of assets:</target>
+</trans-unit>
+<trans-unit id="tu138" xml:space="preserve">
+<source xml:lang="en">double-click the asset, or</source>
+<target xml:lang="pt">double-click the asset, or</target>
+</trans-unit>
+<trans-unit id="tu139" xml:space="preserve">
+<source xml:lang="en">right-click the asset and select Edit asset, or</source>
+<target xml:lang="pt">right-click the asset and select Edit asset, or</target>
+</trans-unit>
+<trans-unit id="tu140" xml:space="preserve">
+<source xml:lang="en">select the asset and type Ctrl + Enter</source>
+<target xml:lang="pt">select the asset and type Ctrl + Enter</target>
+</trans-unit>
+<trans-unit id="tu141" xml:space="preserve">
+<source xml:lang="en">The editor opens in a new tab. You can arrange the tabs how you like, or float them as separate windows, just like tabs in web browsers.</source>
+<target xml:lang="pt">The editor opens in a new tab. You can arrange the tabs how you like, or float them as separate windows, just like tabs in web browsers.</target>
+</trans-unit>
+<trans-unit id="tu142" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Dedicated Stride editors<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Dedicated Stride editors<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu143" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>!Note<x id="2"/>
+When you modify resource files outside Game Studio, the corresponding assets update automatically in Game Studio.</source>
+<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
+When you modify resource files outside Game Studio, the corresponding assets update automatically in Game Studio.</target>
+</trans-unit>
+<trans-unit id="tu144" xml:space="preserve">
+<source xml:lang="en">Import assets</source>
+<target xml:lang="pt">Import assets</target>
+</trans-unit>
+<trans-unit id="tu145" xml:space="preserve">
+<source xml:lang="en">To import an asset, drag it from Explorer to the <g id="1">Asset View</g>. You can also click an <g id="2">Add asset</g> button, navigate to the desired file, and specify the type of asset you want to import.</source>
+<target xml:lang="pt">To import an asset, drag it from Explorer to the <g id="1">Asset View</g>. You can also click an <g id="2">Add asset</g> button, navigate to the desired file, and specify the type of asset you want to import.</target>
+</trans-unit>
+<trans-unit id="tu146" xml:space="preserve">
+<source xml:lang="en">As soon as you add an asset to your project, you can edit its properties in the <g id="1">Property Grid</g>.</source>
+<target xml:lang="pt">As soon as you add an asset to your project, you can edit its properties in the <g id="1">Property Grid</g>.</target>
+</trans-unit>
+<trans-unit id="tu147" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Add asset<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Add asset<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu148" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>!Note<x id="2"/>
+Unlike Unity®, Stride doesn't automatically copy resource files to the project directory when you import them to projects.</source>
+<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
+Unlike Unity®, Stride doesn't automatically copy resource files to the project directory when you import them to projects.</target>
+</trans-unit>
+<trans-unit id="tu149" xml:space="preserve">
+<source xml:lang="en">Supported file formats</source>
+<target xml:lang="pt">Supported file formats</target>
+</trans-unit>
+<trans-unit id="tu150" xml:space="preserve">
+<source xml:lang="en">Like Unity®, Stride supports file formats including:</source>
+<target xml:lang="pt">Like Unity®, Stride supports file formats including:</target>
+</trans-unit>
+<trans-unit id="tu151" xml:space="preserve">
+<source xml:lang="en">Asset type</source>
+<target xml:lang="pt">Asset type</target>
+</trans-unit>
+<trans-unit id="tu152" xml:space="preserve">
+<source xml:lang="en">Supported formats</source>
+<target xml:lang="pt">Supported formats</target>
+</trans-unit>
+<trans-unit id="tu153" xml:space="preserve">
+<source xml:lang="en">Models, animations, skeletons</source>
+<target xml:lang="pt">Models, animations, skeletons</target>
+</trans-unit>
+<trans-unit id="tu154" xml:space="preserve">
+<source xml:lang="en">.dae, .3ds, obj, .blend, .x, .md2, .md3, .dxf, .fbx</source>
+<target xml:lang="pt">.dae, .3ds, obj, .blend, .x, .md2, .md3, .dxf, .fbx</target>
+</trans-unit>
+<trans-unit id="tu155" xml:space="preserve">
+<source xml:lang="en">Sprites, textures, skyboxes</source>
+<target xml:lang="pt">Sprites, textures, skyboxes</target>
+</trans-unit>
+<trans-unit id="tu156" xml:space="preserve">
+<source xml:lang="en">.dds, .jpg, .jpeg, .png, .gif, .bmp, .tga, .psd, .tif, .tiff</source>
+<target xml:lang="pt">.dds, .jpg, .jpeg, .png, .gif, .bmp, .tga, .psd, .tif, .tiff</target>
+</trans-unit>
+<trans-unit id="tu157" xml:space="preserve">
+<source xml:lang="en">Audio</source>
+<target xml:lang="pt">Audio</target>
+</trans-unit>
+<trans-unit id="tu158" xml:space="preserve">
+<source xml:lang="en">.wav, .mp3, .ogg, .aac, .aiff, .flac, .m4a, .wma, .mpc</source>
+<target xml:lang="pt">.wav, .mp3, .ogg, .aac, .aiff, .flac, .m4a, .wma, .mpc</target>
+</trans-unit>
+<trans-unit id="tu159" xml:space="preserve">
+<source xml:lang="en">Fonts</source>
+<target xml:lang="pt">Fonts</target>
+</trans-unit>
+<trans-unit id="tu160" xml:space="preserve">
+<source xml:lang="en">.ttf, .otf</source>
+<target xml:lang="pt">.ttf, .otf</target>
+</trans-unit>
+<trans-unit id="tu161" xml:space="preserve">
+<source xml:lang="en">Video</source>
+<target xml:lang="pt">Video</target>
+</trans-unit>
+<trans-unit id="tu162" xml:space="preserve">
+<source xml:lang="en">.mp4</source>
+<target xml:lang="pt">.mp4</target>
+</trans-unit>
+<trans-unit id="tu163" xml:space="preserve">
+<source xml:lang="en">For more information about assets, see <g id="1">Assets</g>.</source>
+<target xml:lang="pt">For more information about assets, see <g id="1">Assets</g>.</target>
+</trans-unit>
+<trans-unit id="tu164" xml:space="preserve">
+<source xml:lang="en">Prefabs</source>
+<target xml:lang="pt">Prefabs</target>
+</trans-unit>
+<trans-unit id="tu165" xml:space="preserve">
+<source xml:lang="en">Like Unity®, Stride uses prefabs. Prefabs are "master" versions of objects that you can reuse wherever you need. When you change a prefab, every instance of the prefab changes too.</source>
+<target xml:lang="pt">Like Unity®, Stride uses prefabs. Prefabs are "master" versions of objects that you can reuse wherever you need. When you change a prefab, every instance of the prefab changes too.</target>
+</trans-unit>
+<trans-unit id="tu166" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Prefabs in Stride<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Prefabs in Stride<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu167" xml:space="preserve">
+<source xml:lang="en">Just like with Unity®, in Stride, you can add prefabs to other prefabs. These are called <g id="1">nested prefabs</g>. If you modify a nested prefab, all the dependent prefabs inherit the change automatically.</source>
+<target xml:lang="pt">Just like with Unity®, in Stride, you can add prefabs to other prefabs. These are called <g id="1">nested prefabs</g>. If you modify a nested prefab, all the dependent prefabs inherit the change automatically.</target>
+</trans-unit>
+<trans-unit id="tu168" xml:space="preserve">
+<source xml:lang="en">For example, imagine you create a <g id="1">Vehicle</g> prefab with acceleration, braking, steering, and so on. Then you nest the <g id="2">Vehicle</g> prefab inside prefabs of different types of vehicles: a taxi, bus, truck, etc. If you adjust a property in the <g id="3">Vehicle</g> prefab, the changes are inherited by all other prefabs. For example, if you increase the Acceleration property in the <g id="4">Vehicle</g> prefab, the acceleration property in the taxi, bus, and truck prefabs also increase.</source>
+<target xml:lang="pt">For example, imagine you create a <g id="1">Vehicle</g> prefab with acceleration, braking, steering, and so on. Then you nest the <g id="2">Vehicle</g> prefab inside prefabs of different types of vehicles: a taxi, bus, truck, etc. If you adjust a property in the <g id="3">Vehicle</g> prefab, the changes are inherited by all other prefabs. For example, if you increase the Acceleration property in the <g id="4">Vehicle</g> prefab, the acceleration property in the taxi, bus, and truck prefabs also increase.</target>
+</trans-unit>
+<trans-unit id="tu169" xml:space="preserve">
+<source xml:lang="en">For more information about using prefabs in Stride, see <g id="1">Prefabs</g>.</source>
+<target xml:lang="pt">For more information about using prefabs in Stride, see <g id="1">Prefabs</g>.</target>
+</trans-unit>
+<trans-unit id="tu170" xml:space="preserve">
+<source xml:lang="en">Archetypes</source>
+<target xml:lang="pt">Archetypes</target>
+</trans-unit>
+<trans-unit id="tu171" xml:space="preserve">
+<source xml:lang="en"><g id="1">Archetypes</g> are master assets that control the properties of assets you <g id="2">derive</g> from them. Derived assets are useful when you want to create a "remixed" version of an asset. This is similar to prefabs.</source>
+<target xml:lang="pt"><g id="1">Archetypes</g> are master assets that control the properties of assets you <g id="2">derive</g> from them. Derived assets are useful when you want to create a "remixed" version of an asset. This is similar to prefabs.</target>
+</trans-unit>
+<trans-unit id="tu172" xml:space="preserve">
+<source xml:lang="en">For example, imagine we have three sphere entities that share a material asset named <g id="1">Metal</g>. Now imagine we want to change the color of only <g id="2">one</g> sphere, but keep its other properties the same. We could duplicate the material asset, change its color, and then apply the new asset to only one sphere. But if we later want to change a different property across <g id="3">all</g> the spheres, we have to modify both assets. This is time-consuming and leaves room for mistakes.</source>
+<target xml:lang="pt">For example, imagine we have three sphere entities that share a material asset named <g id="1">Metal</g>. Now imagine we want to change the color of only <g id="2">one</g> sphere, but keep its other properties the same. We could duplicate the material asset, change its color, and then apply the new asset to only one sphere. But if we later want to change a different property across <g id="3">all</g> the spheres, we have to modify both assets. This is time-consuming and leaves room for mistakes.</target>
+</trans-unit>
+<trans-unit id="tu173" xml:space="preserve">
+<source xml:lang="en">The better approach is to derive a new asset from the archetype. The derived asset inherits properties from the archetype and lets you override individual properties where you need them. For example, we can derive the sphere's material asset and override its color. Then, if we change the gloss of the archetype, the gloss of all three spheres changes.</source>
+<target xml:lang="pt">The better approach is to derive a new asset from the archetype. The derived asset inherits properties from the archetype and lets you override individual properties where you need them. For example, we can derive the sphere's material asset and override its color. Then, if we change the gloss of the archetype, the gloss of all three spheres changes.</target>
+</trans-unit>
+<trans-unit id="tu174" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Create derived asset<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Create derived asset<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu175" xml:space="preserve">
+<source xml:lang="en">You can derive an asset from an archetype, then in turn derive another asset from that derived asset. This way you can create different layers of assets to keep your project organized:</source>
+<target xml:lang="pt">You can derive an asset from an archetype, then in turn derive another asset from that derived asset. This way you can create different layers of assets to keep your project organized:</target>
+</trans-unit>
+<trans-unit id="tu176" xml:space="preserve">
+<source xml:lang="en">Archetype
+    Derived asset
+        Derived asset
+</source>
+<target xml:lang="pt">Archetype
+    Derived asset
+        Derived asset
+</target>
+</trans-unit>
+<trans-unit id="tu177" xml:space="preserve">
+<source xml:lang="en">For more information about archetypes, see <g id="1">Archetypes</g>.</source>
+<target xml:lang="pt">For more information about archetypes, see <g id="1">Archetypes</g>.</target>
+</trans-unit>
+<trans-unit id="tu178" xml:space="preserve">
+<source xml:lang="en">Object Life Time</source>
+<target xml:lang="pt">Object Life Time</target>
+</trans-unit>
+<trans-unit id="tu179" xml:space="preserve">
+<source xml:lang="en">Entities and components are not destroyed in Stride, they are removed from the scene they exist in and then freed by the <g id="1">Garbage Collector</g>.</source>
+<target xml:lang="pt">Entities and components are not destroyed in Stride, they are removed from the scene they exist in and then freed by the <g id="1">Garbage Collector</g>.</target>
+</trans-unit>
+<trans-unit id="tu180" xml:space="preserve">
+<source xml:lang="en">This seemingly small difference significantly changes how objects are managed within the engine.
+For example, entities can be removed from a scene, kept as a reference in a component, and added back into another scene later on.
+Components can be removed from an entity and added onto another without losing its internal state.</source>
+<target xml:lang="pt">This seemingly small difference significantly changes how objects are managed within the engine.
+For example, entities can be removed from a scene, kept as a reference in a component, and added back into another scene later on.
+Components can be removed from an entity and added onto another without losing its internal state.</target>
+</trans-unit>
+<trans-unit id="tu181" xml:space="preserve">
+<source xml:lang="en">Input</source>
+<target xml:lang="pt">Input</target>
+</trans-unit>
+<trans-unit id="tu182" xml:space="preserve">
+<source xml:lang="en">Stride supports a variety of inputs. The code samples below demonstrate the difference in input code between Stride and Unity®.</source>
+<target xml:lang="pt">Stride supports a variety of inputs. The code samples below demonstrate the difference in input code between Stride and Unity®.</target>
+</trans-unit>
+<trans-unit id="tu183" xml:space="preserve">
+<source xml:lang="en">For more information about Input in Stride, see <g id="1">Input</g>.</source>
+<target xml:lang="pt">For more information about Input in Stride, see <g id="1">Input</g>.</target>
+</trans-unit>
+<trans-unit id="tu184" xml:space="preserve">
+<source xml:lang="en">Unity®</source>
+<target xml:lang="pt">Unity®</target>
+</trans-unit>
+<trans-unit id="tu185" xml:space="preserve">
+<source xml:lang="en">void Update()
+{
+    // true for one frame in which the space bar was pressed
+    if(Input.GetKeyDown(KeyCode.Space))
+    {
+        // Do something.
+    }
+
+    // true while this joystick button is down
+    if (Input.GetButton("joystick button 0"))
+    {
+        // Do something.
+    }
+
+    float Horiz = Input.GetAxis("Horizontal");
+    float Vert = Input.GetAxis("Vertical");
+    //Do something else.
+}
+</source>
+<target xml:lang="pt">void Update()
+{
+    // true for one frame in which the space bar was pressed
+    if(Input.GetKeyDown(KeyCode.Space))
+    {
+        // Do something.
+    }
+
+    // true while this joystick button is down
+    if (Input.GetButton("joystick button 0"))
+    {
+        // Do something.
+    }
+
+    float Horiz = Input.GetAxis("Horizontal");
+    float Vert = Input.GetAxis("Vertical");
+    //Do something else.
+}
+</target>
+</trans-unit>
+<trans-unit id="tu186" xml:space="preserve">
+<source xml:lang="en">Stride</source>
+<target xml:lang="pt">Stride</target>
+</trans-unit>
+<trans-unit id="tu187" xml:space="preserve">
+<source xml:lang="en">public override void Update()
+{
+    // true for one frame in which the space bar was pressed
+    if(Input.IsKeyDown(Keys.Space))
+    {
+        // Do something.
+    }
+
+    // true while this joystick button is down
+    if (Input.GameControllers[0].IsButtonDown(0))
+    {
+        // Do something.
+    }
+
+    float Horiz = (Input.IsKeyDown(Keys.Left) ? -1f : 0) + (Input.IsKeyDown(Keys.Right) ? 1f : 0);
+    float Vert = (Input.IsKeyDown(Keys.Down) ? -1f : 0) + (Input.IsKeyDown(Keys.Up) ? 1f : 0);
+    //Do something else.
+}
+</source>
+<target xml:lang="pt">public override void Update()
+{
+    // true for one frame in which the space bar was pressed
+    if(Input.IsKeyDown(Keys.Space))
+    {
+        // Do something.
+    }
+
+    // true while this joystick button is down
+    if (Input.GameControllers[0].IsButtonDown(0))
+    {
+        // Do something.
+    }
+
+    float Horiz = (Input.IsKeyDown(Keys.Left) ? -1f : 0) + (Input.IsKeyDown(Keys.Right) ? 1f : 0);
+    float Vert = (Input.IsKeyDown(Keys.Down) ? -1f : 0) + (Input.IsKeyDown(Keys.Up) ? 1f : 0);
+    //Do something else.
+}
+</target>
+</trans-unit>
+<trans-unit id="tu188" xml:space="preserve">
+<source xml:lang="en">Time</source>
+<target xml:lang="pt">Time</target>
+</trans-unit>
+<trans-unit id="tu189" xml:space="preserve">
+<source xml:lang="en">Unity®</source>
+<target xml:lang="pt">Unity®</target>
+</trans-unit>
+<trans-unit id="tu190" xml:space="preserve">
+<source xml:lang="en">Stride</source>
+<target xml:lang="pt">Stride</target>
+</trans-unit>
+<trans-unit id="tu191" xml:space="preserve">
+<source xml:lang="en"><g id="1">Time.deltaTime</g></source>
+<target xml:lang="pt"><g id="1">Time.deltaTime</g></target>
+</trans-unit>
+<trans-unit id="tu192" xml:space="preserve">
+<source xml:lang="en"><g id="1">Game.UpdateTime.WarpElapsed.TotalSeconds</g></source>
+<target xml:lang="pt"><g id="1">Game.UpdateTime.WarpElapsed.TotalSeconds</g></target>
+</trans-unit>
+<trans-unit id="tu193" xml:space="preserve">
+<source xml:lang="en"><g id="1">Time.unscaledDeltaTime</g></source>
+<target xml:lang="pt"><g id="1">Time.unscaledDeltaTime</g></target>
+</trans-unit>
+<trans-unit id="tu194" xml:space="preserve">
+<source xml:lang="en"><g id="1">Game.UpdateTime.Elapsed.TotalSeconds</g></source>
+<target xml:lang="pt"><g id="1">Game.UpdateTime.Elapsed.TotalSeconds</g></target>
+</trans-unit>
+<trans-unit id="tu195" xml:space="preserve">
+<source xml:lang="en"><g id="1">Time.realtimeSinceStartup</g></source>
+<target xml:lang="pt"><g id="1">Time.realtimeSinceStartup</g></target>
+</trans-unit>
+<trans-unit id="tu196" xml:space="preserve">
+<source xml:lang="en"><g id="1">Game.UpdateTime.Total.TotalSeconds</g></source>
+<target xml:lang="pt"><g id="1">Game.UpdateTime.Total.TotalSeconds</g></target>
+</trans-unit>
+<trans-unit id="tu197" xml:space="preserve">
+<source xml:lang="en"><g id="1">Time.timeScale</g></source>
+<target xml:lang="pt"><g id="1">Time.timeScale</g></target>
+</trans-unit>
+<trans-unit id="tu198" xml:space="preserve">
+<source xml:lang="en"><g id="1">Game.UpdateTime.Factor</g></source>
+<target xml:lang="pt"><g id="1">Game.UpdateTime.Factor</g></target>
+</trans-unit>
+<trans-unit id="tu199" xml:space="preserve">
+<source xml:lang="en"><g id="1">Time.fixedDeltaTime</g></source>
+<target xml:lang="pt"><g id="1">Time.fixedDeltaTime</g></target>
+</trans-unit>
+<trans-unit id="tu200" xml:space="preserve">
+<source xml:lang="en"><g id="1">myRigidbodyComponent.Simulation.FixedTimeStep</g></source>
+<target xml:lang="pt"><g id="1">myRigidbodyComponent.Simulation.FixedTimeStep</g></target>
+</trans-unit>
+<trans-unit id="tu201" xml:space="preserve">
+<source xml:lang="en">Physics</source>
+<target xml:lang="pt">Physics</target>
+</trans-unit>
+<trans-unit id="tu202" xml:space="preserve">
+<source xml:lang="en">Just like Unity®, Stride has three types of colliders:</source>
+<target xml:lang="pt">Just like Unity®, Stride has three types of colliders:</target>
+</trans-unit>
+<trans-unit id="tu203" xml:space="preserve">
+<source xml:lang="en">static colliders</source>
+<target xml:lang="pt">static colliders</target>
+</trans-unit>
+<trans-unit id="tu204" xml:space="preserve">
+<source xml:lang="en">rigidbodies</source>
+<target xml:lang="pt">rigidbodies</target>
+</trans-unit>
+<trans-unit id="tu205" xml:space="preserve">
+<source xml:lang="en">characters</source>
+<target xml:lang="pt">characters</target>
+</trans-unit>
+<trans-unit id="tu206" xml:space="preserve">
+<source xml:lang="en">They're controlled by scripts in slightly different ways.</source>
+<target xml:lang="pt">They're controlled by scripts in slightly different ways.</target>
+</trans-unit>
+<trans-unit id="tu207" xml:space="preserve">
+<source xml:lang="en">Kinematic rigidbodies</source>
+<target xml:lang="pt">Kinematic rigidbodies</target>
+</trans-unit>
+<trans-unit id="tu208" xml:space="preserve">
+<source xml:lang="en">Unity®</source>
+<target xml:lang="pt">Unity®</target>
+</trans-unit>
+<trans-unit id="tu209" xml:space="preserve">
+<source xml:lang="en">public Rigidbody rigidBody;
+void Start()
+{
+    rigidBody = GetComponent&lt;Rigidbody>();
+}
+
+void EnableRagdoll()
+{
+    rigidBody.isKinematic = false;
+    rigidBody.detectCollisions = true;
+}
+
+void DisableRagdoll()
+{
+    rigidBody.isKinematic = true;
+    rigidBody.detectCollisions = false;
+}
+</source>
+<target xml:lang="pt">public Rigidbody rigidBody;
+void Start()
+{
+    rigidBody = GetComponent&lt;Rigidbody>();
+}
+
+void EnableRagdoll()
+{
+    rigidBody.isKinematic = false;
+    rigidBody.detectCollisions = true;
+}
+
+void DisableRagdoll()
+{
+    rigidBody.isKinematic = true;
+    rigidBody.detectCollisions = false;
+}
+</target>
+</trans-unit>
+<trans-unit id="tu210" xml:space="preserve">
+<source xml:lang="en">Stride</source>
+<target xml:lang="pt">Stride</target>
+</trans-unit>
+<trans-unit id="tu211" xml:space="preserve">
+<source xml:lang="en">public class KinematicX : SyncScript
+{
+    public RigidbodyComponent component;
+
+    public override void Start()
+    {
+        // Initialization of the script.
+        component = Entity.Get&lt;RigidbodyComponent>();
+    }
+
+    public override void Update()
+    {
+    }
+
+    public void EnableRagdoll()
+    {
+        component.IsKinematic = false;
+        component.ProcessCollisions = true;
+    }
+
+    public void DisableRagdoll()
+    {
+        component.IsKinematic = true;
+        component.ProcessCollisions = false;
+    }
+}
+</source>
+<target xml:lang="pt">public class KinematicX : SyncScript
+{
+    public RigidbodyComponent component;
+
+    public override void Start()
+    {
+        // Initialization of the script.
+        component = Entity.Get&lt;RigidbodyComponent>();
+    }
+
+    public override void Update()
+    {
+    }
+
+    public void EnableRagdoll()
+    {
+        component.IsKinematic = false;
+        component.ProcessCollisions = true;
+    }
+
+    public void DisableRagdoll()
+    {
+        component.IsKinematic = true;
+        component.ProcessCollisions = false;
+    }
+}
+</target>
+</trans-unit>
+<trans-unit id="tu212" xml:space="preserve">
+<source xml:lang="en">For more information about rigidbodies in Stride, see <g id="1">Rigidbodies</g>.</source>
+<target xml:lang="pt">For more information about rigidbodies in Stride, see <g id="1">Rigidbodies</g>.</target>
+</trans-unit>
+<trans-unit id="tu213" xml:space="preserve">
+<source xml:lang="en">Triggers</source>
+<target xml:lang="pt">Triggers</target>
+</trans-unit>
+<trans-unit id="tu214" xml:space="preserve">
+<source xml:lang="en">Unity®</source>
+<target xml:lang="pt">Unity®</target>
+</trans-unit>
+<trans-unit id="tu215" xml:space="preserve">
+<source xml:lang="en">// Occurs when game objects go through this trigger.
+void OnTriggerEnter(Collider Other)
+{
+    Other.transform.localScale = new Vector3(2.0f, 2.0f, 2.0f);
+}
+
+// Occurs when game objects move out of this trigger.
+void OnTriggerExit(Collider Other)
+{
+    Other.transform.localScale = new Vector3(1.0f, 1.0f, 1.0f);
+}
+</source>
+<target xml:lang="pt">// Occurs when game objects go through this trigger.
+void OnTriggerEnter(Collider Other)
+{
+    Other.transform.localScale = new Vector3(2.0f, 2.0f, 2.0f);
+}
+
+// Occurs when game objects move out of this trigger.
+void OnTriggerExit(Collider Other)
+{
+    Other.transform.localScale = new Vector3(1.0f, 1.0f, 1.0f);
+}
+</target>
+</trans-unit>
+<trans-unit id="tu216" xml:space="preserve">
+<source xml:lang="en">Stride</source>
+<target xml:lang="pt">Stride</target>
+</trans-unit>
+<trans-unit id="tu217" xml:space="preserve">
+<source xml:lang="en">var trigger = Entity.Get&lt;PhysicsComponent>();
+trigger.ProcessCollisions = true;
+
+// Start state machine.
+while (Game.IsRunning)
+{
+    // 1. Wait for an entity to collide with the trigger.
+    Collision firstCollision = await trigger.NewCollision();
+
+    PhysicsComponent otherCollider = trigger == firstCollision.ColliderA
+        ? firstCollision.ColliderB
+        : firstCollision.ColliderA;
+    otherCollider.Entity.Transform.Scale = new Vector3(2.0f, 2.0f, 2.0f);
+
+    // 2. Wait for the entity to exit the trigger.
+    Collision collision;
+
+    do
+    {
+        collision = await trigger.CollisionEnded();
+    }
+    while (collision != firstCollision);
+
+    otherCollider.Entity.Transform.Scale = new Vector3(1.0f, 1.0f, 1.0f);
+}
+</source>
+<target xml:lang="pt">var trigger = Entity.Get&lt;PhysicsComponent>();
+trigger.ProcessCollisions = true;
+
+// Start state machine.
+while (Game.IsRunning)
+{
+    // 1. Wait for an entity to collide with the trigger.
+    Collision firstCollision = await trigger.NewCollision();
+
+    PhysicsComponent otherCollider = trigger == firstCollision.ColliderA
+        ? firstCollision.ColliderB
+        : firstCollision.ColliderA;
+    otherCollider.Entity.Transform.Scale = new Vector3(2.0f, 2.0f, 2.0f);
+
+    // 2. Wait for the entity to exit the trigger.
+    Collision collision;
+
+    do
+    {
+        collision = await trigger.CollisionEnded();
+    }
+    while (collision != firstCollision);
+
+    otherCollider.Entity.Transform.Scale = new Vector3(1.0f, 1.0f, 1.0f);
+}
+</target>
+</trans-unit>
+<trans-unit id="tu218" xml:space="preserve">
+<source xml:lang="en">For more information about triggers in Stride, see <g id="1">Triggers</g></source>
+<target xml:lang="pt">For more information about triggers in Stride, see <g id="1">Triggers</g></target>
+</trans-unit>
+<trans-unit id="tu219" xml:space="preserve">
+<source xml:lang="en">Raycasting</source>
+<target xml:lang="pt">Raycasting</target>
+</trans-unit>
+<trans-unit id="tu220" xml:space="preserve">
+<source xml:lang="en">Unity®</source>
+<target xml:lang="pt">Unity®</target>
+</trans-unit>
+<trans-unit id="tu221" xml:space="preserve">
+<source xml:lang="en">Collider FindGOCameraIsLookingAt()
+{
+    int distance = 50;
+
+    // Cast a ray and set it to the mouse cursor position in the game
+    Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+    RaycastHit hit;
+    if (Physics.Raycast(ray, out hit, distance))
+    {
+        // Draw invisible ray cast/vector
+        Debug.DrawLine(ray.origin, hit.point);
+        // Log hit area to the console
+        Debug.Log(hit.point);
+        return hit.collider;
+    }
+    return null;
+}
+</source>
+<target xml:lang="pt">Collider FindGOCameraIsLookingAt()
+{
+    int distance = 50;
+
+    // Cast a ray and set it to the mouse cursor position in the game
+    Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+    RaycastHit hit;
+    if (Physics.Raycast(ray, out hit, distance))
+    {
+        // Draw invisible ray cast/vector
+        Debug.DrawLine(ray.origin, hit.point);
+        // Log hit area to the console
+        Debug.Log(hit.point);
+        return hit.collider;
+    }
+    return null;
+}
+</target>
+</trans-unit>
+<trans-unit id="tu222" xml:space="preserve">
+<source xml:lang="en">Stride</source>
+<target xml:lang="pt">Stride</target>
+</trans-unit>
+<trans-unit id="tu223" xml:space="preserve">
+<source xml:lang="en">public static bool ScreenPositionToWorldPositionRaycast(Vector2 screenPos, CameraComponent camera, Simulation simulation)
+{
+    Matrix invViewProj = Matrix.Invert(camera.ViewProjectionMatrix);
+
+    Vector3 sPos;
+    sPos.X = screenPos.X * 2f - 1f;
+    sPos.Y = 1f - screenPos.Y * 2f;
+
+    sPos.Z = 0f;
+    Vector4 vectorNear = Vector3.Transform(sPos, invViewProj);
+    vectorNear /= vectorNear.W;
+
+    sPos.Z = 1f;
+    Vector4 vectorFar = Vector3.Transform(sPos, invViewProj);
+    vectorFar /= vectorFar.W;
+
+    HitResult result = simulation.Raycast(vectorNear.XYZ(), vectorFar.XYZ());
+    return result.Succeeded;
+}
+</source>
+<target xml:lang="pt">public static bool ScreenPositionToWorldPositionRaycast(Vector2 screenPos, CameraComponent camera, Simulation simulation)
+{
+    Matrix invViewProj = Matrix.Invert(camera.ViewProjectionMatrix);
+
+    Vector3 sPos;
+    sPos.X = screenPos.X * 2f - 1f;
+    sPos.Y = 1f - screenPos.Y * 2f;
+
+    sPos.Z = 0f;
+    Vector4 vectorNear = Vector3.Transform(sPos, invViewProj);
+    vectorNear /= vectorNear.W;
+
+    sPos.Z = 1f;
+    Vector4 vectorFar = Vector3.Transform(sPos, invViewProj);
+    vectorFar /= vectorFar.W;
+
+    HitResult result = simulation.Raycast(vectorNear.XYZ(), vectorFar.XYZ());
+    return result.Succeeded;
+}
+</target>
+</trans-unit>
+<trans-unit id="tu224" xml:space="preserve">
+<source xml:lang="en">For more information about Raycasting in Stride, see <g id="1">Raycasting</g>.</source>
+<target xml:lang="pt">For more information about Raycasting in Stride, see <g id="1">Raycasting</g>.</target>
+</trans-unit>
+<trans-unit id="tu225" xml:space="preserve">
+<source xml:lang="en">Scripts</source>
+<target xml:lang="pt">Scripts</target>
+</trans-unit>
+<trans-unit id="tu226" xml:space="preserve">
+<source xml:lang="en">Stride saves scripts in a subfolder in the <g id="1">MyGame.Game</g> folder in the project directory.</source>
+<target xml:lang="pt">Stride saves scripts in a subfolder in the <g id="1">MyGame.Game</g> folder in the project directory.</target>
+</trans-unit>
+<trans-unit id="tu227" xml:space="preserve">
+<source xml:lang="en">To open a script in the Game Studio script editor, double-click it in the <g id="1">Asset View</g>. The script editor has syntax highlighting, auto-completion, and live diagnostics.</source>
+<target xml:lang="pt">To open a script in the Game Studio script editor, double-click it in the <g id="1">Asset View</g>. The script editor has syntax highlighting, auto-completion, and live diagnostics.</target>
+</trans-unit>
+<trans-unit id="tu228" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Stride script editor<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Stride script editor<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu229" xml:space="preserve">
+<source xml:lang="en">You can also edit scripts in other IDEs, such as Visual Studio. When you edit a script in an external IDE, Stride reloads it automatically.</source>
+<target xml:lang="pt">You can also edit scripts in other IDEs, such as Visual Studio. When you edit a script in an external IDE, Stride reloads it automatically.</target>
+</trans-unit>
+<trans-unit id="tu230" xml:space="preserve">
+<source xml:lang="en">If you install the Visual Studio plug-in during the Stride installation, you can open your project in Visual Studio from Game Studio. To do this, in the Game Studio toolbar, click <g id="1">Open in IDE</g>.</source>
+<target xml:lang="pt">If you install the Visual Studio plug-in during the Stride installation, you can open your project in Visual Studio from Game Studio. To do this, in the Game Studio toolbar, click <g id="1">Open in IDE</g>.</target>
+</trans-unit>
+<trans-unit id="tu231" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Open project in Visual Studio<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Open project in Visual Studio<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu232" xml:space="preserve">
+<source xml:lang="en">Alternatively, right-click the script in the <g id="1">Asset View</g> and click <g id="2">Open asset file</g>:</source>
+<target xml:lang="pt">Alternatively, right-click the script in the <g id="1">Asset View</g> and click <g id="2">Open asset file</g>:</target>
+</trans-unit>
+<trans-unit id="tu233" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Open asset file<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Open asset file<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu234" xml:space="preserve">
+<source xml:lang="en">Event functions (Start, Update, Execute, etc)</source>
+<target xml:lang="pt">Event functions (Start, Update, Execute, etc)</target>
+</trans-unit>
+<trans-unit id="tu235" xml:space="preserve">
+<source xml:lang="en">In Unity®, you work with MonoBehaviours with Start(), Update(), and other methods.</source>
+<target xml:lang="pt">In Unity®, you work with MonoBehaviours with Start(), Update(), and other methods.</target>
+</trans-unit>
+<trans-unit id="tu236" xml:space="preserve">
+<source xml:lang="en">Instead of MonoBehaviours, Stride has three types of scripts: SyncScript, AsyncScript, and StartupScript. For more information, see <g id="1">Types of script</g>.</source>
+<target xml:lang="pt">Instead of MonoBehaviours, Stride has three types of scripts: SyncScript, AsyncScript, and StartupScript. For more information, see <g id="1">Types of script</g>.</target>
+</trans-unit>
+<trans-unit id="tu237" xml:space="preserve">
+<source xml:lang="en">Unity® MonoBehaviour</source>
+<target xml:lang="pt">Unity® MonoBehaviour</target>
+</trans-unit>
+<trans-unit id="tu238" xml:space="preserve">
+<source xml:lang="en">public class BasicMethods : MonoBehaviour
+{
+    void Start() { }
+    void OnDestroy() { }
+    void Update() { }
+}
+</source>
+<target xml:lang="pt">public class BasicMethods : MonoBehaviour
+{
+    void Start() { }
+    void OnDestroy() { }
+    void Update() { }
+}
+</target>
+</trans-unit>
+<trans-unit id="tu239" xml:space="preserve">
+<source xml:lang="en">Stride SyncScript</source>
+<target xml:lang="pt">Stride SyncScript</target>
+</trans-unit>
+<trans-unit id="tu240" xml:space="preserve">
+<source xml:lang="en">public class BasicMethods : SyncScript
+{
+    public override void Start() { }
+    public override void Cancel() { }        
+    public override void Update() { }
+}
+</source>
+<target xml:lang="pt">public class BasicMethods : SyncScript
+{
+    public override void Start() { }
+    public override void Cancel() { }        
+    public override void Update() { }
+}
+</target>
+</trans-unit>
+<trans-unit id="tu241" xml:space="preserve">
+<source xml:lang="en">Stride AsyncScript</source>
+<target xml:lang="pt">Stride AsyncScript</target>
+</trans-unit>
+<trans-unit id="tu242" xml:space="preserve">
+<source xml:lang="en">public class BasicMethods : AsyncScript
+{
+    // Declared public member fields and properties that will appear in the game studio
+    public override async Task Execute()
+    {
+        while(Game.IsRunning)
+        {
+            // Do stuff every new frame
+            await Script.NextFrame();
+        }
+    }
+
+    public override void Cancel()
+    {
+        // Cleanup of the script
+    }     
+}
+</source>
+<target xml:lang="pt">public class BasicMethods : AsyncScript
+{
+    // Declared public member fields and properties that will appear in the game studio
+    public override async Task Execute()
+    {
+        while(Game.IsRunning)
+        {
+            // Do stuff every new frame
+            await Script.NextFrame();
+        }
+    }
+
+    public override void Cancel()
+    {
+        // Cleanup of the script
+    }     
+}
+</target>
+</trans-unit>
+<trans-unit id="tu243" xml:space="preserve">
+<source xml:lang="en">Stride StartupScript</source>
+<target xml:lang="pt">Stride StartupScript</target>
+</trans-unit>
+<trans-unit id="tu244" xml:space="preserve">
+<source xml:lang="en">public class BasicMethods : StartupScript
+{
+    // Declared public member fields and properties that will appear in the game studio
+    public override void Start()
+    {
+        // Initialization of the script
+    }
+
+    public override void Cancel()
+    {
+        // Cleanup of the script
+    }     
+}
+</source>
+<target xml:lang="pt">public class BasicMethods : StartupScript
+{
+    // Declared public member fields and properties that will appear in the game studio
+    public override void Start()
+    {
+        // Initialization of the script
+    }
+
+    public override void Cancel()
+    {
+        // Cleanup of the script
+    }     
+}
+</target>
+</trans-unit>
+<trans-unit id="tu245" xml:space="preserve">
+<source xml:lang="en">Script components</source>
+<target xml:lang="pt">Script components</target>
+</trans-unit>
+<trans-unit id="tu246" xml:space="preserve">
+<source xml:lang="en">Like Unity®, in Stride, you attach scripts to entities by adding them as script components.</source>
+<target xml:lang="pt">Like Unity®, in Stride, you attach scripts to entities by adding them as script components.</target>
+</trans-unit>
+<trans-unit id="tu247" xml:space="preserve">
+<source xml:lang="en">Create a script</source>
+<target xml:lang="pt">Create a script</target>
+</trans-unit>
+<trans-unit id="tu248" xml:space="preserve">
+<source xml:lang="en">To create a script, click the <g id="1">Add asset</g> button and select <g id="2">Scripts</g>.</source>
+<target xml:lang="pt">To create a script, click the <g id="1">Add asset</g> button and select <g id="2">Scripts</g>.</target>
+</trans-unit>
+<trans-unit id="tu249" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Create script in Stride<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Create script in Stride<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu250" xml:space="preserve">
+<source xml:lang="en">In Unity®, when you create a <g id="1">MonoBehaviour</g> script, it has two base functions: <g id="2">Start()</g> and <g id="3">Update()</g>. Stride has a <g id="4">SyncScript</g> that works similarly. Like <g id="5">MonoBehaviour</g>, <g id="6">SyncScript</g> has two methods:</source>
+<target xml:lang="pt">In Unity®, when you create a <g id="1">MonoBehaviour</g> script, it has two base functions: <g id="2">Start()</g> and <g id="3">Update()</g>. Stride has a <g id="4">SyncScript</g> that works similarly. Like <g id="5">MonoBehaviour</g>, <g id="6">SyncScript</g> has two methods:</target>
+</trans-unit>
+<trans-unit id="tu251" xml:space="preserve">
+<source xml:lang="en"><g id="1">Start()</g> is called when it the script is loaded.</source>
+<target xml:lang="pt"><g id="1">Start()</g> is called when it the script is loaded.</target>
+</trans-unit>
+<trans-unit id="tu252" xml:space="preserve">
+<source xml:lang="en"><g id="1">Update()</g> is called every update.</source>
+<target xml:lang="pt"><g id="1">Update()</g> is called every update.</target>
+</trans-unit>
+<trans-unit id="tu253" xml:space="preserve">
+<source xml:lang="en">Unlike <g id="1">MonoBehaviour</g>, you have to use <g id="2">Update()</g> method in every <g id="3">SyncScript</g>, or your code won't work properly.</source>
+<target xml:lang="pt">Unlike <g id="1">MonoBehaviour</g>, you have to use <g id="2">Update()</g> method in every <g id="3">SyncScript</g>, or your code won't work properly.</target>
+</trans-unit>
+<trans-unit id="tu254" xml:space="preserve">
+<source xml:lang="en">If you want your script to be a startup or asynchronous, use the corresponding script types:</source>
+<target xml:lang="pt">If you want your script to be a startup or asynchronous, use the corresponding script types:</target>
+</trans-unit>
+<trans-unit id="tu255" xml:space="preserve">
+<source xml:lang="en"><g id="1">StartupScript</g>: this script has a single <g id="2">Start()</g> method. It initializes the scene and its content at startup.</source>
+<target xml:lang="pt"><g id="1">StartupScript</g>: this script has a single <g id="2">Start()</g> method. It initializes the scene and its content at startup.</target>
+</trans-unit>
+<trans-unit id="tu256" xml:space="preserve">
+<source xml:lang="en"><g id="1">AsyncScript</g>: an asynchronous script with a single method <g id="2">Execute()</g> and you can use async/await inside that method. Asynchronous scripts aren't loaded one by one like synchronous scripts. Instead, they're all loaded in parallel.</source>
+<target xml:lang="pt"><g id="1">AsyncScript</g>: an asynchronous script with a single method <g id="2">Execute()</g> and you can use async/await inside that method. Asynchronous scripts aren't loaded one by one like synchronous scripts. Instead, they're all loaded in parallel.</target>
+</trans-unit>
+<trans-unit id="tu257" xml:space="preserve">
+<source xml:lang="en">Reload assemblies</source>
+<target xml:lang="pt">Reload assemblies</target>
+</trans-unit>
+<trans-unit id="tu258" xml:space="preserve">
+<source xml:lang="en">After you create a script, you may have to reload the assemblies manually. To do this, click <g id="1">Reload assemblies</g> in the Game Studio toolbar.</source>
+<target xml:lang="pt">After you create a script, you may have to reload the assemblies manually. To do this, click <g id="1">Reload assemblies</g> in the Game Studio toolbar.</target>
+</trans-unit>
+<trans-unit id="tu259" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Reload assemblies<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Reload assemblies<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu260" xml:space="preserve">
+<source xml:lang="en">Add scripts to entities</source>
+<target xml:lang="pt">Add scripts to entities</target>
+</trans-unit>
+<trans-unit id="tu261" xml:space="preserve">
+<source xml:lang="en">In the <g id="1">Entity Tree</g> (on the left by default), or in the scene, select the entity you want to add the script to.</source>
+<target xml:lang="pt">In the <g id="1">Entity Tree</g> (on the left by default), or in the scene, select the entity you want to add the script to.</target>
+</trans-unit>
+<trans-unit id="tu262" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Select an entity<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Select an entity<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu263" xml:space="preserve">
+<source xml:lang="en">In the <g id="1">Property Grid</g> (on the right by default), click <g id="2">Add component</g> and select the script you want to add.</source>
+<target xml:lang="pt">In the <g id="1">Property Grid</g> (on the right by default), click <g id="2">Add component</g> and select the script you want to add.</target>
+</trans-unit>
+<trans-unit id="tu264" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Add script component<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Add script component<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu265" xml:space="preserve">
+<source xml:lang="en">In Unity®, script components are grouped under <g id="1">Components > Scripts</g>. In Stride, scripts are not grouped. Instead, Game Studio lists them alphabetically with other components.</source>
+<target xml:lang="pt">In Unity®, script components are grouped under <g id="1">Components > Scripts</g>. In Stride, scripts are not grouped. Instead, Game Studio lists them alphabetically with other components.</target>
+</trans-unit>
+<trans-unit id="tu266" xml:space="preserve">
+<source xml:lang="en">For more information about adding scripts in Stride, see <g id="1">Use a script</g>.</source>
+<target xml:lang="pt">For more information about adding scripts in Stride, see <g id="1">Use a script</g>.</target>
+</trans-unit>
+<trans-unit id="tu267" xml:space="preserve">
+<source xml:lang="en">Scripting gameplay</source>
+<target xml:lang="pt">Scripting gameplay</target>
+</trans-unit>
+<trans-unit id="tu268" xml:space="preserve">
+<source xml:lang="en">Unity® and Stride both use C#. However, scripting gameplay in Stride is a little different from Unity®.</source>
+<target xml:lang="pt">Unity® and Stride both use C#. However, scripting gameplay in Stride is a little different from Unity®.</target>
+</trans-unit>
+<trans-unit id="tu269" xml:space="preserve">
+<source xml:lang="en">Instantiate Entity / GameObject</source>
+<target xml:lang="pt">Instantiate Entity / GameObject</target>
+</trans-unit>
+<trans-unit id="tu270" xml:space="preserve">
+<source xml:lang="en">In Unity®, you use <g id="1">Instantiate</g> to create new object instances. This function makes a copy of <g id="2">UnityEngine.Object</g> and spawns it to the scene.</source>
+<target xml:lang="pt">In Unity®, you use <g id="1">Instantiate</g> to create new object instances. This function makes a copy of <g id="2">UnityEngine.Object</g> and spawns it to the scene.</target>
+</trans-unit>
+<trans-unit id="tu271" xml:space="preserve">
+<source xml:lang="en">Unity®</source>
+<target xml:lang="pt">Unity®</target>
+</trans-unit>
+<trans-unit id="tu272" xml:space="preserve">
+<source xml:lang="en">public GameObject CarPrefab;
+public Vector3 SpawnPosition;
+public Quaternion SpawnRotation;
+
+void Start()
+{
+    GameObject NewGO = (GameObject)Instantiate(CarPrefab, SpawnPosition, SpawnRotation);
+    NewGO.name = "NewGameObject1";
+}
+</source>
+<target xml:lang="pt">public GameObject CarPrefab;
+public Vector3 SpawnPosition;
+public Quaternion SpawnRotation;
+
+void Start()
+{
+    GameObject NewGO = (GameObject)Instantiate(CarPrefab, SpawnPosition, SpawnRotation);
+    NewGO.name = "NewGameObject1";
+}
+</target>
+</trans-unit>
+<trans-unit id="tu273" xml:space="preserve">
+<source xml:lang="en">Stride</source>
+<target xml:lang="pt">Stride</target>
+</trans-unit>
+<trans-unit id="tu274" xml:space="preserve">
+<source xml:lang="en">In Stride, you can instantiate <g id="1">Entities</g> similarly to Unity® GameObjects:</source>
+<target xml:lang="pt">In Stride, you can instantiate <g id="1">Entities</g> similarly to Unity® GameObjects:</target>
+</trans-unit>
+<trans-unit id="tu275" xml:space="preserve">
+<source xml:lang="en">// Declared public member fields and properties displayed in the Game Studio Property Grid.
+public Prefab CarPrefab;
+public Vector3 SpawnPosition;
+public Quaternion SpawnRotation;
+
+public override void Start()
+{
+    // Initialization of the script.
+    List&lt;Entity> car = CarPrefab.Instantiate();
+    SceneSystem.SceneInstance.RootScene.Entities.AddRange(car);
+    car[0].Transform.Position = SpawnPosition;
+    car[0].Transform.Rotation = SpawnRotation;
+    car[0].Name = "MyNewEntity";
+}
+</source>
+<target xml:lang="pt">// Declared public member fields and properties displayed in the Game Studio Property Grid.
+public Prefab CarPrefab;
+public Vector3 SpawnPosition;
+public Quaternion SpawnRotation;
+
+public override void Start()
+{
+    // Initialization of the script.
+    List&lt;Entity> car = CarPrefab.Instantiate();
+    SceneSystem.SceneInstance.RootScene.Entities.AddRange(car);
+    car[0].Transform.Position = SpawnPosition;
+    car[0].Transform.Rotation = SpawnRotation;
+    car[0].Name = "MyNewEntity";
+}
+</target>
+</trans-unit>
+<trans-unit id="tu276" xml:space="preserve">
+<source xml:lang="en">Use default values</source>
+<target xml:lang="pt">Use default values</target>
+</trans-unit>
+<trans-unit id="tu277" xml:space="preserve">
+<source xml:lang="en">Each class in Unity® has certain default values. If you don't override these properties in the script, the default values will be used. This works the same in Stride:</source>
+<target xml:lang="pt">Each class in Unity® has certain default values. If you don't override these properties in the script, the default values will be used. This works the same in Stride:</target>
+</trans-unit>
+<trans-unit id="tu278" xml:space="preserve">
+<source xml:lang="en">Unity®</source>
+<target xml:lang="pt">Unity®</target>
+</trans-unit>
+<trans-unit id="tu279" xml:space="preserve">
+<source xml:lang="en">public int NewProp = 30;
+public Light MyLightComp = null;
+
+void Start()
+{
+    // Create the light component if we don't already have one.
+    if (MyLightComp == null)
+    {
+        MyLightComp = gameObject.AddComponent&lt;Light>();
+        MyLightComp.intensity = 3;
+    }
+}
+</source>
+<target xml:lang="pt">public int NewProp = 30;
+public Light MyLightComp = null;
+
+void Start()
+{
+    // Create the light component if we don't already have one.
+    if (MyLightComp == null)
+    {
+        MyLightComp = gameObject.AddComponent&lt;Light>();
+        MyLightComp.intensity = 3;
+    }
+}
+</target>
+</trans-unit>
+<trans-unit id="tu280" xml:space="preserve">
+<source xml:lang="en">Stride</source>
+<target xml:lang="pt">Stride</target>
+</trans-unit>
+<trans-unit id="tu281" xml:space="preserve">
+<source xml:lang="en">// Declared public member fields and properties displayed in the Game Studio Property Grid.
+public int NewProp = 30;
+public LightComponent MyLightComponent = null;
+
+public override void Start()
+{
+    // Create the light component if we don't already have one.
+    if (MyLightComponent == null)
+    {
+        MyLightComponent = new LightComponent();
+        MyLightComponent.Intensity = 3;
+        Entity.Add(MyLightComponent);
+    }
+}
+</source>
+<target xml:lang="pt">// Declared public member fields and properties displayed in the Game Studio Property Grid.
+public int NewProp = 30;
+public LightComponent MyLightComponent = null;
+
+public override void Start()
+{
+    // Create the light component if we don't already have one.
+    if (MyLightComponent == null)
+    {
+        MyLightComponent = new LightComponent();
+        MyLightComponent.Intensity = 3;
+        Entity.Add(MyLightComponent);
+    }
+}
+</target>
+</trans-unit>
+<trans-unit id="tu282" xml:space="preserve">
+<source xml:lang="en">Disable GameObject/entity</source>
+<target xml:lang="pt">Disable GameObject/entity</target>
+</trans-unit>
+<trans-unit id="tu283" xml:space="preserve">
+<source xml:lang="en">Unity®</source>
+<target xml:lang="pt">Unity®</target>
+</trans-unit>
+<trans-unit id="tu284" xml:space="preserve">
+<source xml:lang="en">MyGameObject.SetActive(false);
+</source>
+<target xml:lang="pt">MyGameObject.SetActive(false);
+</target>
+</trans-unit>
+<trans-unit id="tu285" xml:space="preserve">
+<source xml:lang="en">Stride</source>
+<target xml:lang="pt">Stride</target>
+</trans-unit>
+<trans-unit id="tu286" xml:space="preserve">
+<source xml:lang="en">Entity.EnableAll(false, true);
+</source>
+<target xml:lang="pt">Entity.EnableAll(false, true);
+</target>
+</trans-unit>
+<trans-unit id="tu287" xml:space="preserve">
+<source xml:lang="en">Access component from GameObject/entity</source>
+<target xml:lang="pt">Access component from GameObject/entity</target>
+</trans-unit>
+<trans-unit id="tu288" xml:space="preserve">
+<source xml:lang="en">Unity®</source>
+<target xml:lang="pt">Unity®</target>
+</trans-unit>
+<trans-unit id="tu289" xml:space="preserve">
+<source xml:lang="en">Light lightComponent = GetComponent&lt;Light>();
+</source>
+<target xml:lang="pt">Light lightComponent = GetComponent&lt;Light>();
+</target>
+</trans-unit>
+<trans-unit id="tu290" xml:space="preserve">
+<source xml:lang="en">Stride</source>
+<target xml:lang="pt">Stride</target>
+</trans-unit>
+<trans-unit id="tu291" xml:space="preserve">
+<source xml:lang="en">LightComponent lightComponent = Entity.Get&lt;LightComponent>();
+</source>
+<target xml:lang="pt">LightComponent lightComponent = Entity.Get&lt;LightComponent>();
+</target>
+</trans-unit>
+<trans-unit id="tu292" xml:space="preserve">
+<source xml:lang="en">Access GameObject/entity  from component</source>
+<target xml:lang="pt">Access GameObject/entity  from component</target>
+</trans-unit>
+<trans-unit id="tu293" xml:space="preserve">
+<source xml:lang="en">Unity®</source>
+<target xml:lang="pt">Unity®</target>
+</trans-unit>
+<trans-unit id="tu294" xml:space="preserve">
+<source xml:lang="en">GameObject ParentGO = lightComponent.gameObject;
+</source>
+<target xml:lang="pt">GameObject ParentGO = lightComponent.gameObject;
+</target>
+</trans-unit>
+<trans-unit id="tu295" xml:space="preserve">
+<source xml:lang="en">Stride</source>
+<target xml:lang="pt">Stride</target>
+</trans-unit>
+<trans-unit id="tu296" xml:space="preserve">
+<source xml:lang="en">Entity ParentEntity = lightComponent.Entity;
+</source>
+<target xml:lang="pt">Entity ParentEntity = lightComponent.Entity;
+</target>
+</trans-unit>
+<trans-unit id="tu297" xml:space="preserve">
+<source xml:lang="en">Log output</source>
+<target xml:lang="pt">Log output</target>
+</trans-unit>
+<trans-unit id="tu298" xml:space="preserve">
+<source xml:lang="en">To see the output, in the Game Studio toolbar, under <g id="1">View</g>, enable <g id="2">Output</g>.</source>
+<target xml:lang="pt">To see the output, in the Game Studio toolbar, under <g id="1">View</g>, enable <g id="2">Output</g>.</target>
+</trans-unit>
+<trans-unit id="tu299" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Enable output<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Enable output<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu300" xml:space="preserve">
+<source xml:lang="en">Game Studio displays in the <g id="1">Output</g> tab (at the bottom of Game Studio by default).</source>
+<target xml:lang="pt">Game Studio displays in the <g id="1">Output</g> tab (at the bottom of Game Studio by default).</target>
+</trans-unit>
+<trans-unit id="tu301" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Output tab<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Output tab<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu302" xml:space="preserve">
+<source xml:lang="en">Print debug messages</source>
+<target xml:lang="pt">Print debug messages</target>
+</trans-unit>
+<trans-unit id="tu303" xml:space="preserve">
+<source xml:lang="en">Logging from a ScriptComponent:</source>
+<target xml:lang="pt">Logging from a ScriptComponent:</target>
+</trans-unit>
+<trans-unit id="tu304" xml:space="preserve">
+<source xml:lang="en">public override void Start()
+{
+    // Enables logging. It will also spawn a console window if no debuggers are attached.
+    // The argument dictates the kinds of message that will be filtered out, in this case, anything with less priority than warning won't show up
+    Log.ActivateLog(LogMessageType.Warning);
+    // Log this message to your console or IDE output window
+    Log.Warning("hello");
+}
+</source>
+<target xml:lang="pt">public override void Start()
+{
+    // Enables logging. It will also spawn a console window if no debuggers are attached.
+    // The argument dictates the kinds of message that will be filtered out, in this case, anything with less priority than warning won't show up
+    Log.ActivateLog(LogMessageType.Warning);
+    // Log this message to your console or IDE output window
+    Log.Warning("hello");
+}
+</target>
+</trans-unit>
+<trans-unit id="tu305" xml:space="preserve">
+<source xml:lang="en">System.Diagnostics.Debug.WriteLine("hello");
+</source>
+<target xml:lang="pt">System.Diagnostics.Debug.WriteLine("hello");
+</target>
+</trans-unit>
+<trans-unit id="tu306" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>!Note<x id="2"/>
+To print debug messages, you have to run the game from your IDE, not Game Studio. Running games cannot print to the Game Studio output window.</source>
+<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
+To print debug messages, you have to run the game from your IDE, not Game Studio. Running games cannot print to the Game Studio output window.</target>
+</trans-unit>
+<trans-unit id="tu307" xml:space="preserve">
+<source xml:lang="en">Attributes</source>
+<target xml:lang="pt">Attributes</target>
+</trans-unit>
+<trans-unit id="tu308" xml:space="preserve">
+<source xml:lang="en">Unity®</source>
+<target xml:lang="pt">Unity®</target>
+</trans-unit>
+<trans-unit id="tu309" xml:space="preserve">
+<source xml:lang="en">Stride</source>
+<target xml:lang="pt">Stride</target>
+</trans-unit>
+<trans-unit id="tu310" xml:space="preserve">
+<source xml:lang="en"><g id="1">[Serializable]</g></source>
+<target xml:lang="pt"><g id="1">[Serializable]</g></target>
+</trans-unit>
+<trans-unit id="tu311" xml:space="preserve">
+<source xml:lang="en"><g id="1">[DataContract]</g></source>
+<target xml:lang="pt"><g id="1">[DataContract]</g></target>
+</trans-unit>
+<trans-unit id="tu312" xml:space="preserve">
+<source xml:lang="en"><g id="1">[SerializeField]</g></source>
+<target xml:lang="pt"><g id="1">[SerializeField]</g></target>
+</trans-unit>
+<trans-unit id="tu313" xml:space="preserve">
+<source xml:lang="en"><g id="1">[DataMember]</g></source>
+<target xml:lang="pt"><g id="1">[DataMember]</g></target>
+</trans-unit>
+<trans-unit id="tu314" xml:space="preserve">
+<source xml:lang="en"><g id="1">[HideInInspector]</g></source>
+<target xml:lang="pt"><g id="1">[HideInInspector]</g></target>
+</trans-unit>
+<trans-unit id="tu315" xml:space="preserve">
+<source xml:lang="en"><g id="1">[DataMemberIgnore]</g></source>
+<target xml:lang="pt"><g id="1">[DataMemberIgnore]</g></target>
+</trans-unit>
+<trans-unit id="tu316" xml:space="preserve">
+<source xml:lang="en"><g id="1">[Range]</g></source>
+<target xml:lang="pt"><g id="1">[Range]</g></target>
+</trans-unit>
+<trans-unit id="tu317" xml:space="preserve">
+<source xml:lang="en"><g id="1">[DataMemberRange]</g></source>
+<target xml:lang="pt"><g id="1">[DataMemberRange]</g></target>
+</trans-unit>
+<trans-unit id="tu318" xml:space="preserve">
+<source xml:lang="en"><g id="1">[Header]</g></source>
+<target xml:lang="pt"><g id="1">[Header]</g></target>
+</trans-unit>
+<trans-unit id="tu319" xml:space="preserve">
+<source xml:lang="en"><g id="1">[Display]</g></source>
+<target xml:lang="pt"><g id="1">[Display]</g></target>
+</trans-unit>
+<trans-unit id="tu320" xml:space="preserve">
+<source xml:lang="en"><g id="1">[Tooltip("My tooltip")]</g></source>
+<target xml:lang="pt"><g id="1">[Tooltip("My tooltip")]</g></target>
+</trans-unit>
+<trans-unit id="tu321" xml:space="preserve">
+<source xml:lang="en"><g id="1">/// &lt;userdoc>My tooltip&lt;/userdoc></g></source>
+<target xml:lang="pt"><g id="1">/// &lt;userdoc>My tooltip&lt;/userdoc></g></target>
+</trans-unit>
+<trans-unit id="tu322" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>!Note<x id="2"/>
+You cannot serialize private fields in Stride, if you want to set a field in editor but prevent other scripts from writing to that field, you should use a <g id="3">init property</g></source>
+<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
+You cannot serialize private fields in Stride, if you want to set a field in editor but prevent other scripts from writing to that field, you should use a <g id="3">init property</g></target>
+</trans-unit>
+<trans-unit id="tu323" xml:space="preserve">
+<source xml:lang="en">public float MyProperty { get; init; }
+</source>
+<target xml:lang="pt">public float MyProperty { get; init; }
+</target>
+</trans-unit>
+<trans-unit id="tu324" xml:space="preserve">
+<source xml:lang="en">Unity® is a trademark of Unity Technologies.</source>
+<target xml:lang="pt">Unity® is a trademark of Unity Technologies.</target>
+</trans-unit>
+</body>
+</file>
+</xliff>

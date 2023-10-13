@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="/D:/repos/rr/source/manual/graphics/lights-and-shadows/voxel-cone-tracing-gi.md" source-language="en" target-language="pt" datatype="x-text/x-markdown" okp:inputEncoding="UTF-8">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en">Voxel Cone Tracing Global Illumination</source>
+<target xml:lang="pt">Voxel Cone Tracing Global Illumination</target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en">Howto: setup existing project with Voxel Cone Tracing GI</source>
+<target xml:lang="pt">Howto: setup existing project with Voxel Cone Tracing GI</target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">Reference Stride.Voxels</source>
+<target xml:lang="pt">Reference Stride.Voxels</target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">Since Stride is modular based, we need to add a reference to <g id="1">Stride.Voxels</g> plugin:</source>
+<target xml:lang="pt">Since Stride is modular based, we need to add a reference to <g id="1">Stride.Voxels</g> plugin:</target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">In the <g id="1">Solution Explorer</g>, right-click on the user project</source>
+<target xml:lang="pt">In the <g id="1">Solution Explorer</g>, right-click on the user project</target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en">Select <g id="1">Add Dependency</g></source>
+<target xml:lang="pt">Select <g id="1">Add Dependency</g></target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Add dependency<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Add dependency<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en">Select <g id="1">Stride.Voxels</g> in the list and press <g id="2">OK</g></source>
+<target xml:lang="pt">Select <g id="1">Stride.Voxels</g> in the list and press <g id="2">OK</g></target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en">You might be asked if you want to reload project, choose whichever option, both are OK.</source>
+<target xml:lang="pt">You might be asked if you want to reload project, choose whichever option, both are OK.</target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en">Graphics Compositor</source>
+<target xml:lang="pt">Graphics Compositor</target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en">Voxel Cone Tracing requires several changes to the graphics compositor.</source>
+<target xml:lang="pt">Voxel Cone Tracing requires several changes to the graphics compositor.</target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en">To make this easier, we prepared a graphics compositor ready to use with Voxel GI in the asset templates:</source>
+<target xml:lang="pt">To make this easier, we prepared a graphics compositor ready to use with Voxel GI in the asset templates:</target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en">In the <g id="1">Asset View</g>, click <x id="2"/><x id="3"/></source>
+<target xml:lang="pt">In the <g id="1">Asset View</g>, click <x id="2"/><x id="3"/></target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en">Start to type <g id="1">Voxel</g> in the search bar</source>
+<target xml:lang="pt">Start to type <g id="1">Voxel</g> in the search bar</target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en">Select <g id="1">Graphics Compositor (Voxel Cone Tracing)</g></source>
+<target xml:lang="pt">Select <g id="1">Graphics Compositor (Voxel Cone Tracing)</g></target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Create Graphics Compositor<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Create Graphics Compositor<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en">In your <g id="1">Game Settings</g> asset, change the graphics compositor to the newly created one:</source>
+<target xml:lang="pt">In your <g id="1">Game Settings</g> asset, change the graphics compositor to the newly created one:</target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Set Graphics Compositor<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Set Graphics Compositor<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en">Setup scene: Volume and Light</source>
+<target xml:lang="pt">Setup scene: Volume and Light</target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en">In the scene explorer, above the <g id="1">Entity Tree</g>, click the <x id="2"/>Plus<x id="3"/> icon and select <g id="4">Lights</g> then <g id="5">Voxel volume</g></source>
+<target xml:lang="pt">In the scene explorer, above the <g id="1">Entity Tree</g>, click the <x id="2"/>Plus<x id="3"/> icon and select <g id="4">Lights</g> then <g id="5">Voxel volume</g></target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en">Click the <x id="1"/>Plus<x id="2"/> icon again and select <g id="3">Lights</g> then <g id="4">Voxel light</g></source>
+<target xml:lang="pt">Click the <x id="1"/>Plus<x id="2"/> icon again and select <g id="3">Lights</g> then <g id="4">Voxel light</g></target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en">At that point, the scene rendering will likely crash due to the light not being setup correctly (with error <g id="1">No Voxel Volume Component selected for voxel light.</g>), but that's expected.</source>
+<target xml:lang="pt">At that point, the scene rendering will likely crash due to the light not being setup correctly (with error <g id="1">No Voxel Volume Component selected for voxel light.</g>), but that's expected.</target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en">In the property grid, change the Light Volume to the previously created entity:</source>
+<target xml:lang="pt">In the property grid, change the Light Volume to the previously created entity:</target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Setup light volume<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Setup light volume<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en">At that point, you can click the <g id="1">Resume</g> button in scene renderer, and everything should be setup!</source>
+<target xml:lang="pt">At that point, you can click the <g id="1">Resume</g> button in scene renderer, and everything should be setup!</target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en">Play with it</source>
+<target xml:lang="pt">Play with it</target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en">To do a quick test, you can disable Skybox light (keep only directional light), go in shadow area and see if some ambient light spread there. You can also play with <g id="1">emissive materials</g>.</source>
+<target xml:lang="pt">To do a quick test, you can disable Skybox light (keep only directional light), go in shadow area and see if some ambient light spread there. You can also play with <g id="1">emissive materials</g>.</target>
+</trans-unit>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en">Video tutorial</source>
+<target xml:lang="pt">Video tutorial</target>
+</trans-unit>
+<trans-unit id="tu29" xml:space="preserve">
+<source xml:lang="en">Here's a youtube alternative tutorial made by David Jeske on how to set it up:</source>
+<target xml:lang="pt">Here's a youtube alternative tutorial made by David Jeske on how to set it up:</target>
+</trans-unit>
+<group id="sd1_ssf1" resname="sub-filter:sd1">
+<trans-unit id="sd1_sf1_tu1" resname="sd1_1" xml:space="preserve">
+<source xml:lang="en"><g id="1"></g></source>
+<target xml:lang="pt"><g id="1"></g></target>
+</trans-unit>
+</group>
+</body>
+</file>
+</xliff>

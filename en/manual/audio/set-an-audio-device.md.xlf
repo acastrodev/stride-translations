@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="/D:/repos/rr/source/manual/audio/set-an-audio-device.md" source-language="en" target-language="pt" datatype="x-text/x-markdown" okp:inputEncoding="UTF-8">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en">Set an audio device</source>
+<target xml:lang="pt">Set an audio device</target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Advanced<x id="2"/>
+<x id="3"/>Programmer<x id="4"/></source>
+<target xml:lang="pt"><x id="1"/>Advanced<x id="2"/>
+<x id="3"/>Programmer<x id="4"/></target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">You can set which audio device Stride uses. For example, you can access the <g id="1">Oculus Rift</g> audio device from your custom game constructor.</source>
+<target xml:lang="pt">You can set which audio device Stride uses. For example, you can access the <g id="1">Oculus Rift</g> audio device from your custom game constructor.</target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">If you don't specify a device, Stride uses the default audio advice.</source>
+<target xml:lang="pt">If you don't specify a device, Stride uses the default audio advice.</target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">Example code</source>
+<target xml:lang="pt">Example code</target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en">This code sets the Oculus Rift device at runtime:</source>
+<target xml:lang="pt">This code sets the Oculus Rift device at runtime:</target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en">namespace OculusRenderer
+{
+    public class OculusGame : Game
+    {
+        public OculusGame()
+        {
+            var deviceName = OculusOvr.GetAudioDeviceFullName();
+            var deviceUuid = new AudioDevice { Name = deviceName };
+            Audio.RequestedAudioDevice = deviceUuid;
+        }
+    }
+}
+</source>
+<target xml:lang="pt">namespace OculusRenderer
+{
+    public class OculusGame : Game
+    {
+        public OculusGame()
+        {
+            var deviceName = OculusOvr.GetAudioDeviceFullName();
+            var deviceUuid = new AudioDevice { Name = deviceName };
+            Audio.RequestedAudioDevice = deviceUuid;
+        }
+    }
+}
+</target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en">See also</source>
+<target xml:lang="pt">See also</target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en"><g id="1">Global audio settings</g></source>
+<target xml:lang="pt"><g id="1">Global audio settings</g></target>
+</trans-unit>
+</body>
+</file>
+</xliff>

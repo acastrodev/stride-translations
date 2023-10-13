@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="/D:/repos/rr/source/tutorials/csharpintermediate/scenes.md" source-language="en" target-language="pt" datatype="x-text/x-markdown" okp:inputEncoding="UTF-8">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en">Scenes</source>
+<target xml:lang="pt">Scenes</target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en">This C# Intermediate tutorial covers the concept of Scenes in Stride.</source>
+<target xml:lang="pt">This C# Intermediate tutorial covers the concept of Scenes in Stride.</target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">Explanation</source>
+<target xml:lang="pt">Explanation</target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">Stride allows Scenes to have an infinite amount of child scenes which on their terms also can load an infinite amount of child scenes. However, every scene loaded is unique. A scene can not be loaded twice at the same time. Both the editor and when loading scenes through code, will prevent a scene from being loaded twice at the same time.</source>
+<target xml:lang="pt">Stride allows Scenes to have an infinite amount of child scenes which on their terms also can load an infinite amount of child scenes. However, every scene loaded is unique. A scene can not be loaded twice at the same time. Both the editor and when loading scenes through code, will prevent a scene from being loaded twice at the same time.</target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>!Video https://www.youtube.com/embed/G7OvA-9erpE<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>!Video https://www.youtube.com/embed/G7OvA-9erpE<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en">Loading a child scene</source>
+<target xml:lang="pt">Loading a child scene</target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en">This script loads in a child scene by pressing a defined key. Pressing that same key again, will unload the loaded child scene. Every time we load the child scene again, we offset it a little in the Y direction to demonstrate the offsetting option for child scenes.
+[!code-csharp<g id="1">editorpages</g>]</source>
+<target xml:lang="pt">This script loads in a child scene by pressing a defined key. Pressing that same key again, will unload the loaded child scene. Every time we load the child scene again, we offset it a little in the Y direction to demonstrate the offsetting option for child scenes.
+[!code-csharp<g id="1">editorpages</g>]</target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en">(Re)loading a scene</source>
+<target xml:lang="pt">(Re)loading a scene</target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en">We can get the top most scene in our world which is called the RootScene. If we unload that scene, we can then load in a completely new scene in order to swap or switch to a new scene. That same script can also be used to reload the same scene in case you want to restart your scene,
+[!code-csharp<g id="1">editorpages</g>]</source>
+<target xml:lang="pt">We can get the top most scene in our world which is called the RootScene. If we unload that scene, we can then load in a completely new scene in order to swap or switch to a new scene. That same script can also be used to reload the same scene in case you want to restart your scene,
+[!code-csharp<g id="1">editorpages</g>]</target>
+</trans-unit>
+</body>
+</file>
+</xliff>

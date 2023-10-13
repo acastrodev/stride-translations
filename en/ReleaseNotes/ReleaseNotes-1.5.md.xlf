@@ -1,0 +1,657 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="/D:/repos/rr/source/ReleaseNotes/ReleaseNotes-1.5.md" source-language="en" target-language="pt" datatype="x-text/x-markdown" okp:inputEncoding="UTF-8">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en">Xenko 1.5 release notes</source>
+<target xml:lang="pt">Xenko 1.5 release notes</target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en">Highlights</source>
+<target xml:lang="pt">Highlights</target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">Skeleton asset</source>
+<target xml:lang="pt">Skeleton asset</target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">A new Skeleton asset (*.xkskel) has been introduced. Both models and animations now hold a reference to a skeleton. This allows to reuse the same skeleton definition in multiple assets and to retarget models and animations to different skeletons.</source>
+<target xml:lang="pt">A new Skeleton asset (*.xkskel) has been introduced. Both models and animations now hold a reference to a skeleton. This allows to reuse the same skeleton definition in multiple assets and to retarget models and animations to different skeletons.</target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">Skeletons can be created alongside other assets, when importing an FBX file or other model format.</source>
+<target xml:lang="pt">Skeletons can be created alongside other assets, when importing an FBX file or other model format.</target>
+</trans-unit>
+<group id="sd1_ssf1" resname="sub-filter:sd1">
+<trans-unit id="sd1_sf1_tu1" resname="sd1_2" xml:space="preserve">
+<source xml:lang="en"><x id="1"/></source>
+<target xml:lang="pt"><x id="1"/></target>
+</trans-unit>
+</group>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en">Root motion support for models, cameras, lights, etc.</source>
+<target xml:lang="pt">Root motion support for models, cameras, lights, etc.</target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en">Animations now apply root motion if they have no skeleton, or the ‘Root Motion’ property is enabled on the animation asset. The animation will then move the entity itself, instead of the skeleton's root bone.
+This is especially useful to import animations of lights, cameras or unskinned models, without the need to bind them to the bones of a skeleton.</source>
+<target xml:lang="pt">Animations now apply root motion if they have no skeleton, or the ‘Root Motion’ property is enabled on the animation asset. The animation will then move the entity itself, instead of the skeleton's root bone.
+This is especially useful to import animations of lights, cameras or unskinned models, without the need to bind them to the bones of a skeleton.</target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en">The FBX importer will now also import animations of various camera parameters (near-plane, far-plane, field of view) and apply them to the CameraComponent of the animated entity. More properties may be supported in the future.</source>
+<target xml:lang="pt">The FBX importer will now also import animations of various camera parameters (near-plane, far-plane, field of view) and apply them to the CameraComponent of the animated entity. More properties may be supported in the future.</target>
+</trans-unit>
+<group id="sd1_ssf2" resname="sub-filter:sd1">
+<trans-unit id="sd1_sf2_tu1" resname="sd1_2" xml:space="preserve">
+<source xml:lang="en"><x id="1"/></source>
+<target xml:lang="pt"><x id="1"/></target>
+</trans-unit>
+</group>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en">New animation update system</source>
+<target xml:lang="pt">New animation update system</target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en">The animation system now internally uses a new UpdateEngine to update objects. This allows us to animate arbitrary properties of entities, while accessing them in a highly efficient way.
+It will be the foundation for a future animation curve editor inside the GameStudio.</source>
+<target xml:lang="pt">The animation system now internally uses a new UpdateEngine to update objects. This allows us to animate arbitrary properties of entities, while accessing them in a highly efficient way.
+It will be the foundation for a future animation curve editor inside the GameStudio.</target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en">The new ‘Animated Properties’ sample demonstrates how to create animations of any property from a script.</source>
+<target xml:lang="pt">The new ‘Animated Properties’ sample demonstrates how to create animations of any property from a script.</target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en">Simple Profiling system</source>
+<target xml:lang="pt">Simple Profiling system</target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en">It is now possible to visualize profiling information of all the game systems and custom profilers directly within your running games.
+To get started, use the Game Profiler built-in script, attach it to an entity and when the game is running press LCtrl-LShift-P.</source>
+<target xml:lang="pt">It is now possible to visualize profiling information of all the game systems and custom profilers directly within your running games.
+To get started, use the Game Profiler built-in script, attach it to an entity and when the game is running press LCtrl-LShift-P.</target>
+</trans-unit>
+<group id="sd1_ssf3" resname="sub-filter:sd1">
+<trans-unit id="sd1_sf3_tu1" resname="sd1_2" xml:space="preserve">
+<source xml:lang="en"><x id="1"/></source>
+<target xml:lang="pt"><x id="1"/></target>
+</trans-unit>
+</group>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en">Physic debug shapes at runtime</source>
+<target xml:lang="pt">Physic debug shapes at runtime</target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en">It is now possible to enable the rendering of physics collider shapes during runtime.
+The debug shapes are normal entities and they must be enabled for each physics shape that requires it.
+The best way to start with this feature is to use the Physics Shapes Render built-in script and attach the script to any entity that has a Physics Component and when the game is running press LCtrl-LShift-P.</source>
+<target xml:lang="pt">It is now possible to enable the rendering of physics collider shapes during runtime.
+The debug shapes are normal entities and they must be enabled for each physics shape that requires it.
+The best way to start with this feature is to use the Physics Shapes Render built-in script and attach the script to any entity that has a Physics Component and when the game is running press LCtrl-LShift-P.</target>
+</trans-unit>
+<group id="sd1_ssf4" resname="sub-filter:sd1">
+<trans-unit id="sd1_sf4_tu1" resname="sd1_2" xml:space="preserve">
+<source xml:lang="en"><x id="1"/></source>
+<target xml:lang="pt"><x id="1"/></target>
+</trans-unit>
+</group>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en">Asset View</source>
+<target xml:lang="pt">Asset View</target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en">The Asset view has been improved to help you better organize and manage your assets.</source>
+<target xml:lang="pt">The Asset view has been improved to help you better organize and manage your assets.</target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en">New ‘view options’ menu</source>
+<target xml:lang="pt">New ‘view options’ menu</target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en">The view options are gathered in a single menu accessible from the asset view toolbar.</source>
+<target xml:lang="pt">The view options are gathered in a single menu accessible from the asset view toolbar.</target>
+</trans-unit>
+<group id="sd1_ssf5" resname="sub-filter:sd1">
+<trans-unit id="sd1_sf5_tu1" resname="sd1_2" xml:space="preserve">
+<source xml:lang="en"><x id="1"/></source>
+<target xml:lang="pt"><x id="1"/></target>
+</trans-unit>
+</group>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en">You can display all the assets in the current folder only, in the current folder and its sub-folder. The third option let you display the assets and the sub folders.</source>
+<target xml:lang="pt">You can display all the assets in the current folder only, in the current folder and its sub-folder. The third option let you display the assets and the sub folders.</target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en">You can also sort your assets by name, order, type or modification date.</source>
+<target xml:lang="pt">You can also sort your assets by name, order, type or modification date.</target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en">New asset filter bar</source>
+<target xml:lang="pt">New asset filter bar</target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en">With the new asset filter bar, you can filter your assets by name, tag, type or a combination of those. Each ‘filter tag’ can be disabled by a single click or removed from the active filters.
+</source>
+<target xml:lang="pt">With the new asset filter bar, you can filter your assets by name, tag, type or a combination of those. Each ‘filter tag’ can be disabled by a single click or removed from the active filters.
+</target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en"><x id="1"/></source>
+<target xml:lang="pt"><x id="1"/></target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en">To add a filter, type in the filter bar and matching filters will be displayed. Click on the one you want to add it to the list of active filters.
+</source>
+<target xml:lang="pt">To add a filter, type in the filter bar and matching filters will be displayed. Click on the one you want to add it to the list of active filters.
+</target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en"><x id="1"/></source>
+<target xml:lang="pt"><x id="1"/></target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en">Only the assets matching the active filters will be displayed in the asset view. Note that type filters are inclusive, while name and tag filters are exclusive.</source>
+<target xml:lang="pt">Only the assets matching the active filters will be displayed in the asset view. Note that type filters are inclusive, while name and tag filters are exclusive.</target>
+</trans-unit>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en">Folder support in asset view</source>
+<target xml:lang="pt">Folder support in asset view</target>
+</trans-unit>
+<trans-unit id="tu29" xml:space="preserve">
+<source xml:lang="en">If the ‘Assets and folder in selected folder’ options is selected, the first level of sub-folder will be displayed in the asset view. You can drag and drop assets inside them. You can also copy/paste complete folder structure.
+</source>
+<target xml:lang="pt">If the ‘Assets and folder in selected folder’ options is selected, the first level of sub-folder will be displayed in the asset view. You can drag and drop assets inside them. You can also copy/paste complete folder structure.
+</target>
+</trans-unit>
+<trans-unit id="tu30" xml:space="preserve">
+<source xml:lang="en"><x id="1"/></source>
+<target xml:lang="pt"><x id="1"/></target>
+</trans-unit>
+<trans-unit id="tu31" xml:space="preserve">
+<source xml:lang="en">Copy-paste assets with their dependencies</source>
+<target xml:lang="pt">Copy-paste assets with their dependencies</target>
+</trans-unit>
+<trans-unit id="tu32" xml:space="preserve">
+<source xml:lang="en">You have now the ability to copy assets with their dependencies. To do that use the new entry ‘Copy with dependencies’ from the asset view context menu, or press Ctrl+Shift+C.
+</source>
+<target xml:lang="pt">You have now the ability to copy assets with their dependencies. To do that use the new entry ‘Copy with dependencies’ from the asset view context menu, or press Ctrl+Shift+C.
+</target>
+</trans-unit>
+<trans-unit id="tu33" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>
+For example, if you copy/paste a model with its dependencies, you will get a copy of this model along with a copy of all its dependencies (skeleton, materials, textures)</source>
+<target xml:lang="pt"><x id="1"/>
+For example, if you copy/paste a model with its dependencies, you will get a copy of this model along with a copy of all its dependencies (skeleton, materials, textures)</target>
+</trans-unit>
+<trans-unit id="tu34" xml:space="preserve">
+<source xml:lang="en">Border and Center support in sprite sheet editor</source>
+<target xml:lang="pt">Border and Center support in sprite sheet editor</target>
+</trans-unit>
+<trans-unit id="tu35" xml:space="preserve">
+<source xml:lang="en">For ‘Sprite2D’ sprites, you can move the position of the center by selecting the </source>
+<target xml:lang="pt">For ‘Sprite2D’ sprites, you can move the position of the center by selecting the </target>
+</trans-unit>
+<trans-unit id="tu36" xml:space="preserve">
+<source xml:lang="en"><x id="1"/> icon in the toolbar of the sprite editor. Grab and move the cross to the desired position.</source>
+<target xml:lang="pt"><x id="1"/> icon in the toolbar of the sprite editor. Grab and move the cross to the desired position.</target>
+</trans-unit>
+<trans-unit id="tu37" xml:space="preserve">
+<source xml:lang="en">For ‘UI’ sprites, you can change the borders by selecting the </source>
+<target xml:lang="pt">For ‘UI’ sprites, you can change the borders by selecting the </target>
+</trans-unit>
+<trans-unit id="tu38" xml:space="preserve">
+<source xml:lang="en"><x id="1"/> icon in the toolbar of the sprite editor. You can then resize each border (left, top, right and bottom) separately in the same way as the texture region, by grabbing and moving one of them. Note that the </source>
+<target xml:lang="pt"><x id="1"/> icon in the toolbar of the sprite editor. You can then resize each border (left, top, right and bottom) separately in the same way as the texture region, by grabbing and moving one of them. Note that the </target>
+</trans-unit>
+<trans-unit id="tu39" xml:space="preserve">
+<source xml:lang="en"><x id="1"/> icon lets you ‘lock’or ‘unlock’ the sprite borders while resizing the texture region.</source>
+<target xml:lang="pt"><x id="1"/> icon lets you ‘lock’or ‘unlock’ the sprite borders while resizing the texture region.</target>
+</trans-unit>
+<trans-unit id="tu40" xml:space="preserve">
+<source xml:lang="en">New built-in scripts</source>
+<target xml:lang="pt">New built-in scripts</target>
+</trans-unit>
+<trans-unit id="tu41" xml:space="preserve">
+<source xml:lang="en">We added a few more built-in scripts with this release such as an FPS camera script and First player controller script. To use them, just click on “New Asset”, “Script source code”, select the desired script and attach it to an adequate entity.</source>
+<target xml:lang="pt">We added a few more built-in scripts with this release such as an FPS camera script and First player controller script. To use them, just click on “New Asset”, “Script source code”, select the desired script and attach it to an adequate entity.</target>
+</trans-unit>
+<group id="sd1_ssf13" resname="sub-filter:sd1">
+<trans-unit id="sd1_sf13_tu1" resname="sd1_2" xml:space="preserve">
+<source xml:lang="en"><x id="1"/></source>
+<target xml:lang="pt"><x id="1"/></target>
+</trans-unit>
+</group>
+<trans-unit id="tu42" xml:space="preserve">
+<source xml:lang="en">Precompiled Sprite Fonts</source>
+<target xml:lang="pt">Precompiled Sprite Fonts</target>
+</trans-unit>
+<trans-unit id="tu43" xml:space="preserve">
+<source xml:lang="en">Font rights are quite restrictive and it is quite common that only some persons of the project have access to the font files. This was preventing some people to build the game.
+To solve this problem, we created a new type of asset, the precompiled sprite fonts. It is an asset taking as input an image and containing all the glyph information required to render the set of character specified. Inside your games you can used it exactly like a standard sprite font.
+To generate a precompiled sprite font, the owner of the original font file just have to right click on an existing static font and choose “Generate Precompiled Font”.</source>
+<target xml:lang="pt">Font rights are quite restrictive and it is quite common that only some persons of the project have access to the font files. This was preventing some people to build the game.
+To solve this problem, we created a new type of asset, the precompiled sprite fonts. It is an asset taking as input an image and containing all the glyph information required to render the set of character specified. Inside your games you can used it exactly like a standard sprite font.
+To generate a precompiled sprite font, the owner of the original font file just have to right click on an existing static font and choose “Generate Precompiled Font”.</target>
+</trans-unit>
+<group id="sd1_ssf14" resname="sub-filter:sd1">
+<trans-unit id="sd1_sf14_tu1" resname="sd1_2" xml:space="preserve">
+<source xml:lang="en"><x id="1"/></source>
+<target xml:lang="pt"><x id="1"/></target>
+</trans-unit>
+</group>
+<trans-unit id="tu44" xml:space="preserve">
+<source xml:lang="en">Version 1.5.4-beta</source>
+<target xml:lang="pt">Version 1.5.4-beta</target>
+</trans-unit>
+<trans-unit id="tu45" xml:space="preserve">
+<source xml:lang="en">Release date: 2016/03/03</source>
+<target xml:lang="pt">Release date: 2016/03/03</target>
+</trans-unit>
+<trans-unit id="tu46" xml:space="preserve">
+<source xml:lang="en">Issues fixed</source>
+<target xml:lang="pt">Issues fixed</target>
+</trans-unit>
+<trans-unit id="tu47" xml:space="preserve">
+<source xml:lang="en">Fix a certification issue remaining for Windows Universal Apps.</source>
+<target xml:lang="pt">Fix a certification issue remaining for Windows Universal Apps.</target>
+</trans-unit>
+<trans-unit id="tu48" xml:space="preserve">
+<source xml:lang="en">Fix a problem with the selection of the Graphic Profile on INTEL graphic cards.</source>
+<target xml:lang="pt">Fix a problem with the selection of the Graphic Profile on INTEL graphic cards.</target>
+</trans-unit>
+<trans-unit id="tu49" xml:space="preserve">
+<source xml:lang="en">Version 1.5.3-beta</source>
+<target xml:lang="pt">Version 1.5.3-beta</target>
+</trans-unit>
+<trans-unit id="tu50" xml:space="preserve">
+<source xml:lang="en">Release date: 2016/02/18</source>
+<target xml:lang="pt">Release date: 2016/02/18</target>
+</trans-unit>
+<trans-unit id="tu51" xml:space="preserve">
+<source xml:lang="en">Issues fixed</source>
+<target xml:lang="pt">Issues fixed</target>
+</trans-unit>
+<trans-unit id="tu52" xml:space="preserve">
+<source xml:lang="en">Fix a problem in the package upgrade erasing the content of shader and effect files.</source>
+<target xml:lang="pt">Fix a problem in the package upgrade erasing the content of shader and effect files.</target>
+</trans-unit>
+<trans-unit id="tu53" xml:space="preserve">
+<source xml:lang="en">Fix a crash in the resolution of invalid relative paths preventing to load the project in the editor.</source>
+<target xml:lang="pt">Fix a crash in the resolution of invalid relative paths preventing to load the project in the editor.</target>
+</trans-unit>
+<trans-unit id="tu54" xml:space="preserve">
+<source xml:lang="en">Do not add pillar boxes when resizing the window of a landscape game under Windows 10 but readjust the size of the buffer.</source>
+<target xml:lang="pt">Do not add pillar boxes when resizing the window of a landscape game under Windows 10 but readjust the size of the buffer.</target>
+</trans-unit>
+<trans-unit id="tu55" xml:space="preserve">
+<source xml:lang="en">Replace the <g id="1">MS Mincho</g> font by an embedded free font in samples (The font is not available on every systems)</source>
+<target xml:lang="pt">Replace the <g id="1">MS Mincho</g> font by an embedded free font in samples (The font is not available on every systems)</target>
+</trans-unit>
+<trans-unit id="tu56" xml:space="preserve">
+<source xml:lang="en">Version 1.5.2-beta</source>
+<target xml:lang="pt">Version 1.5.2-beta</target>
+</trans-unit>
+<trans-unit id="tu57" xml:space="preserve">
+<source xml:lang="en">Release date: 2016/01/15</source>
+<target xml:lang="pt">Release date: 2016/01/15</target>
+</trans-unit>
+<trans-unit id="tu58" xml:space="preserve">
+<source xml:lang="en">Issues fixed</source>
+<target xml:lang="pt">Issues fixed</target>
+</trans-unit>
+<trans-unit id="tu59" xml:space="preserve">
+<source xml:lang="en">Assets</source>
+<target xml:lang="pt">Assets</target>
+</trans-unit>
+<trans-unit id="tu60" xml:space="preserve">
+<source xml:lang="en">Added the missing XenkoDefaultFont required by the profiler system.</source>
+<target xml:lang="pt">Added the missing XenkoDefaultFont required by the profiler system.</target>
+</trans-unit>
+<trans-unit id="tu61" xml:space="preserve">
+<source xml:lang="en">The convex hull generation is now working along with the new Skeleton Asset.</source>
+<target xml:lang="pt">The convex hull generation is now working along with the new Skeleton Asset.</target>
+</trans-unit>
+<trans-unit id="tu62" xml:space="preserve">
+<source xml:lang="en">Engine</source>
+<target xml:lang="pt">Engine</target>
+</trans-unit>
+<trans-unit id="tu63" xml:space="preserve">
+<source xml:lang="en">Fix problem occurring with debugging async functions (local variable gone, namespace ignored, step over broken).</source>
+<target xml:lang="pt">Fix problem occurring with debugging async functions (local variable gone, namespace ignored, step over broken).</target>
+</trans-unit>
+<trans-unit id="tu64" xml:space="preserve">
+<source xml:lang="en">Fix the issues preventing from passing Windows 10 store certification.</source>
+<target xml:lang="pt">Fix the issues preventing from passing Windows 10 store certification.</target>
+</trans-unit>
+<trans-unit id="tu65" xml:space="preserve">
+<source xml:lang="en">Add support for proper resizing in Windows Universal Apps.</source>
+<target xml:lang="pt">Add support for proper resizing in Windows Universal Apps.</target>
+</trans-unit>
+<trans-unit id="tu66" xml:space="preserve">
+<source xml:lang="en">Game Studio</source>
+<target xml:lang="pt">Game Studio</target>
+</trans-unit>
+<trans-unit id="tu67" xml:space="preserve">
+<source xml:lang="en">Fix issues with the displayed values of rotations changing after validation.</source>
+<target xml:lang="pt">Fix issues with the displayed values of rotations changing after validation.</target>
+</trans-unit>
+<trans-unit id="tu68" xml:space="preserve">
+<source xml:lang="en">iOS</source>
+<target xml:lang="pt">iOS</target>
+</trans-unit>
+<trans-unit id="tu69" xml:space="preserve">
+<source xml:lang="en">The Connection Router script required to compile shaders on iOS devices has been fixed.</source>
+<target xml:lang="pt">The Connection Router script required to compile shaders on iOS devices has been fixed.</target>
+</trans-unit>
+<trans-unit id="tu70" xml:space="preserve">
+<source xml:lang="en">Enhancements</source>
+<target xml:lang="pt">Enhancements</target>
+</trans-unit>
+<trans-unit id="tu71" xml:space="preserve">
+<source xml:lang="en">Assets</source>
+<target xml:lang="pt">Assets</target>
+</trans-unit>
+<trans-unit id="tu72" xml:space="preserve">
+<source xml:lang="en">Skybox compilation does not require a DX11 GPU anymore. We added DX10 support to ensure GameStudio works fine with less recent GPUs as well.</source>
+<target xml:lang="pt">Skybox compilation does not require a DX11 GPU anymore. We added DX10 support to ensure GameStudio works fine with less recent GPUs as well.</target>
+</trans-unit>
+<trans-unit id="tu73" xml:space="preserve">
+<source xml:lang="en">Engine</source>
+<target xml:lang="pt">Engine</target>
+</trans-unit>
+<trans-unit id="tu74" xml:space="preserve">
+<source xml:lang="en">Add support for OpenGLES devices that do not support packed depth-stencil-formats.</source>
+<target xml:lang="pt">Add support for OpenGLES devices that do not support packed depth-stencil-formats.</target>
+</trans-unit>
+<trans-unit id="tu75" xml:space="preserve">
+<source xml:lang="en">Game Studio</source>
+<target xml:lang="pt">Game Studio</target>
+</trans-unit>
+<trans-unit id="tu76" xml:space="preserve">
+<source xml:lang="en">Add the possibility to edit the 3 components of a vector simultaneously.</source>
+<target xml:lang="pt">Add the possibility to edit the 3 components of a vector simultaneously.</target>
+</trans-unit>
+<trans-unit id="tu77" xml:space="preserve">
+<source xml:lang="en">Version 1.5.1-beta</source>
+<target xml:lang="pt">Version 1.5.1-beta</target>
+</trans-unit>
+<trans-unit id="tu78" xml:space="preserve">
+<source xml:lang="en">Release date: 2015/12/22</source>
+<target xml:lang="pt">Release date: 2015/12/22</target>
+</trans-unit>
+<trans-unit id="tu79" xml:space="preserve">
+<source xml:lang="en">Issues fixed</source>
+<target xml:lang="pt">Issues fixed</target>
+</trans-unit>
+<trans-unit id="tu80" xml:space="preserve">
+<source xml:lang="en">Engine</source>
+<target xml:lang="pt">Engine</target>
+</trans-unit>
+<trans-unit id="tu81" xml:space="preserve">
+<source xml:lang="en">Fix LLVM AOT compilation in release configuration for iOS</source>
+<target xml:lang="pt">Fix LLVM AOT compilation in release configuration for iOS</target>
+</trans-unit>
+<trans-unit id="tu82" xml:space="preserve">
+<source xml:lang="en">Game Studio</source>
+<target xml:lang="pt">Game Studio</target>
+</trans-unit>
+<trans-unit id="tu83" xml:space="preserve">
+<source xml:lang="en">Fix a possible crash when using types with no base type in scripts (<g id="1">##342</g>)</source>
+<target xml:lang="pt">Fix a possible crash when using types with no base type in scripts (<g id="1">##342</g>)</target>
+</trans-unit>
+<trans-unit id="tu84" xml:space="preserve">
+<source xml:lang="en">Fix double-click on folder in asset picker window</source>
+<target xml:lang="pt">Fix double-click on folder in asset picker window</target>
+</trans-unit>
+<trans-unit id="tu85" xml:space="preserve">
+<source xml:lang="en">Fix settings of default IDE reset to null when it shouldn't.</source>
+<target xml:lang="pt">Fix settings of default IDE reset to null when it shouldn't.</target>
+</trans-unit>
+<trans-unit id="tu86" xml:space="preserve">
+<source xml:lang="en">Fix the problem of the texture thumbnail not updating when modify the content of the source file.</source>
+<target xml:lang="pt">Fix the problem of the texture thumbnail not updating when modify the content of the source file.</target>
+</trans-unit>
+<trans-unit id="tu87" xml:space="preserve">
+<source xml:lang="en">Creating an asset with a template can be properly undone. (<g id="1">##343</g>)</source>
+<target xml:lang="pt">Creating an asset with a template can be properly undone. (<g id="1">##343</g>)</target>
+</trans-unit>
+<trans-unit id="tu88" xml:space="preserve">
+<source xml:lang="en">Version 1.5.0-beta</source>
+<target xml:lang="pt">Version 1.5.0-beta</target>
+</trans-unit>
+<trans-unit id="tu89" xml:space="preserve">
+<source xml:lang="en">Release date: 2015/12/17</source>
+<target xml:lang="pt">Release date: 2015/12/17</target>
+</trans-unit>
+<trans-unit id="tu90" xml:space="preserve">
+<source xml:lang="en">Enhancements</source>
+<target xml:lang="pt">Enhancements</target>
+</trans-unit>
+<trans-unit id="tu91" xml:space="preserve">
+<source xml:lang="en">Launcher</source>
+<target xml:lang="pt">Launcher</target>
+</trans-unit>
+<trans-unit id="tu92" xml:space="preserve">
+<source xml:lang="en">Add a ‘reconnect’ button, in case the launcher was started in offline mode.</source>
+<target xml:lang="pt">Add a ‘reconnect’ button, in case the launcher was started in offline mode.</target>
+</trans-unit>
+<trans-unit id="tu93" xml:space="preserve">
+<source xml:lang="en">Game Studio</source>
+<target xml:lang="pt">Game Studio</target>
+</trans-unit>
+<trans-unit id="tu94" xml:space="preserve">
+<source xml:lang="en">The asset creation menu always displays all possible assets to create, and switches to a proper location when the currently selected location is invalid for the chosen asset type.</source>
+<target xml:lang="pt">The asset creation menu always displays all possible assets to create, and switches to a proper location when the currently selected location is invalid for the chosen asset type.</target>
+</trans-unit>
+<trans-unit id="tu95" xml:space="preserve">
+<source xml:lang="en">Improve animation thumbnail and preview. Automatically detect and use the corresponding model.</source>
+<target xml:lang="pt">Improve animation thumbnail and preview. Automatically detect and use the corresponding model.</target>
+</trans-unit>
+<trans-unit id="tu96" xml:space="preserve">
+<source xml:lang="en">Improve asset filtering in the asset view. Filter tag can be added, disabled or removed at any time.</source>
+<target xml:lang="pt">Improve asset filtering in the asset view. Filter tag can be added, disabled or removed at any time.</target>
+</trans-unit>
+<trans-unit id="tu97" xml:space="preserve">
+<source xml:lang="en">Folders are displayed in the asset view.</source>
+<target xml:lang="pt">Folders are displayed in the asset view.</target>
+</trans-unit>
+<trans-unit id="tu98" xml:space="preserve">
+<source xml:lang="en">Assets can be sorted by last modification date.</source>
+<target xml:lang="pt">Assets can be sorted by last modification date.</target>
+</trans-unit>
+<trans-unit id="tu99" xml:space="preserve">
+<source xml:lang="en">Add ability to copy/paste assets with their dependencies.</source>
+<target xml:lang="pt">Add ability to copy/paste assets with their dependencies.</target>
+</trans-unit>
+<trans-unit id="tu100" xml:space="preserve">
+<source xml:lang="en">Improve the sprite sheet editor. Resizing borders or moving the texture region behaves correctly, especially when reaching the borders of the image. Background outside of the selected texture region can be darkened.</source>
+<target xml:lang="pt">Improve the sprite sheet editor. Resizing borders or moving the texture region behaves correctly, especially when reaching the borders of the image. Background outside of the selected texture region can be darkened.</target>
+</trans-unit>
+<trans-unit id="tu101" xml:space="preserve">
+<source xml:lang="en">Sprite sheet preview can be displayed while the sprite sheet is being edited.</source>
+<target xml:lang="pt">Sprite sheet preview can be displayed while the sprite sheet is being edited.</target>
+</trans-unit>
+<trans-unit id="tu102" xml:space="preserve">
+<source xml:lang="en">Change message dialog style. Some confirmation dialogs (e.g. deleting an asset) can be disabled in the settings (under Interface/Ask confirmation…).</source>
+<target xml:lang="pt">Change message dialog style. Some confirmation dialogs (e.g. deleting an asset) can be disabled in the settings (under Interface/Ask confirmation…).</target>
+</trans-unit>
+<trans-unit id="tu103" xml:space="preserve">
+<source xml:lang="en">Games</source>
+<target xml:lang="pt">Games</target>
+</trans-unit>
+<trans-unit id="tu104" xml:space="preserve">
+<source xml:lang="en">Use the application icons as window icon on windows</source>
+<target xml:lang="pt">Use the application icons as window icon on windows</target>
+</trans-unit>
+<trans-unit id="tu105" xml:space="preserve">
+<source xml:lang="en">Use AssamblyProductAttribute.Product as window title on windows</source>
+<target xml:lang="pt">Use AssamblyProductAttribute.Product as window title on windows</target>
+</trans-unit>
+<trans-unit id="tu106" xml:space="preserve">
+<source xml:lang="en">Graphics</source>
+<target xml:lang="pt">Graphics</target>
+</trans-unit>
+<trans-unit id="tu107" xml:space="preserve">
+<source xml:lang="en">Add support for Gif load and jpeg save for Android</source>
+<target xml:lang="pt">Add support for Gif load and jpeg save for Android</target>
+</trans-unit>
+<trans-unit id="tu108" xml:space="preserve">
+<source xml:lang="en">Add the possibility to load images and textures as sRGB</source>
+<target xml:lang="pt">Add the possibility to load images and textures as sRGB</target>
+</trans-unit>
+<trans-unit id="tu109" xml:space="preserve">
+<source xml:lang="en">Add a static field in GraphicDevice to be able to get the current graphic platform</source>
+<target xml:lang="pt">Add a static field in GraphicDevice to be able to get the current graphic platform</target>
+</trans-unit>
+<trans-unit id="tu110" xml:space="preserve">
+<source xml:lang="en">Add optimized native code in SpriteBatch</source>
+<target xml:lang="pt">Add optimized native code in SpriteBatch</target>
+</trans-unit>
+<trans-unit id="tu111" xml:space="preserve">
+<source xml:lang="en">Engine</source>
+<target xml:lang="pt">Engine</target>
+</trans-unit>
+<trans-unit id="tu112" xml:space="preserve">
+<source xml:lang="en">Use Color4 instead of Color in sprite components.</source>
+<target xml:lang="pt">Use Color4 instead of Color in sprite components.</target>
+</trans-unit>
+<trans-unit id="tu113" xml:space="preserve">
+<source xml:lang="en">Add support for toot motion on the TransformComponent</source>
+<target xml:lang="pt">Add support for toot motion on the TransformComponent</target>
+</trans-unit>
+<trans-unit id="tu114" xml:space="preserve">
+<source xml:lang="en">Expose AnimationComponent.PlayingAnimations to the editor to be able to set entity initial animation easily.</source>
+<target xml:lang="pt">Expose AnimationComponent.PlayingAnimations to the editor to be able to set entity initial animation easily.</target>
+</trans-unit>
+<trans-unit id="tu115" xml:space="preserve">
+<source xml:lang="en">Make connection to editor for shader compilation fail if there is no connection back within 5 seconds</source>
+<target xml:lang="pt">Make connection to editor for shader compilation fail if there is no connection back within 5 seconds</target>
+</trans-unit>
+<trans-unit id="tu116" xml:space="preserve">
+<source xml:lang="en">UI</source>
+<target xml:lang="pt">UI</target>
+</trans-unit>
+<trans-unit id="tu117" xml:space="preserve">
+<source xml:lang="en">Add a tint color to the UI ImageElement.</source>
+<target xml:lang="pt">Add a tint color to the UI ImageElement.</target>
+</trans-unit>
+<trans-unit id="tu118" xml:space="preserve">
+<source xml:lang="en">Issues fixed</source>
+<target xml:lang="pt">Issues fixed</target>
+</trans-unit>
+<trans-unit id="tu119" xml:space="preserve">
+<source xml:lang="en">Assets</source>
+<target xml:lang="pt">Assets</target>
+</trans-unit>
+<trans-unit id="tu120" xml:space="preserve">
+<source xml:lang="en">Fix compiler regression that was taking more than 5s to complete compilation of assets</source>
+<target xml:lang="pt">Fix compiler regression that was taking more than 5s to complete compilation of assets</target>
+</trans-unit>
+<trans-unit id="tu121" xml:space="preserve">
+<source xml:lang="en">Fix the log message displaying the name of missing referenced assets during asset compilation</source>
+<target xml:lang="pt">Fix the log message displaying the name of missing referenced assets during asset compilation</target>
+</trans-unit>
+<trans-unit id="tu122" xml:space="preserve">
+<source xml:lang="en">Fix crash in the asset compilation when Xenko installation path contains a '##' character.</source>
+<target xml:lang="pt">Fix crash in the asset compilation when Xenko installation path contains a '##' character.</target>
+</trans-unit>
+<trans-unit id="tu123" xml:space="preserve">
+<source xml:lang="en">Fix shadow asset remaining after resolving asset naming collision.</source>
+<target xml:lang="pt">Fix shadow asset remaining after resolving asset naming collision.</target>
+</trans-unit>
+<trans-unit id="tu124" xml:space="preserve">
+<source xml:lang="en">Engine</source>
+<target xml:lang="pt">Engine</target>
+</trans-unit>
+<trans-unit id="tu125" xml:space="preserve">
+<source xml:lang="en">Prevent an exception to be thrown at each frame when the Model property of a ModelComponent is null.</source>
+<target xml:lang="pt">Prevent an exception to be thrown at each frame when the Model property of a ModelComponent is null.</target>
+</trans-unit>
+<trans-unit id="tu126" xml:space="preserve">
+<source xml:lang="en">Use the ShaderProfile from GameSettings instead of the graphic device level as it is likely the profile used to compile shaders at build time.</source>
+<target xml:lang="pt">Use the ShaderProfile from GameSettings instead of the graphic device level as it is likely the profile used to compile shaders at build time.</target>
+</trans-unit>
+<trans-unit id="tu127" xml:space="preserve">
+<source xml:lang="en">Game Studio</source>
+<target xml:lang="pt">Game Studio</target>
+</trans-unit>
+<trans-unit id="tu128" xml:space="preserve">
+<source xml:lang="en">Fix a crash when trying to fetch the target asset of a reference that is null.</source>
+<target xml:lang="pt">Fix a crash when trying to fetch the target asset of a reference that is null.</target>
+</trans-unit>
+<trans-unit id="tu129" xml:space="preserve">
+<source xml:lang="en">Fix a bug in the edition of SpriteFont properties that was preventing to properly use system font</source>
+<target xml:lang="pt">Fix a bug in the edition of SpriteFont properties that was preventing to properly use system font</target>
+</trans-unit>
+<trans-unit id="tu130" xml:space="preserve">
+<source xml:lang="en">Fix thumbnails of SpriteFont when using system font.</source>
+<target xml:lang="pt">Fix thumbnails of SpriteFont when using system font.</target>
+</trans-unit>
+<trans-unit id="tu131" xml:space="preserve">
+<source xml:lang="en">Fix a crash when duplicating an entity in the scene editor.</source>
+<target xml:lang="pt">Fix a crash when duplicating an entity in the scene editor.</target>
+</trans-unit>
+<trans-unit id="tu132" xml:space="preserve">
+<source xml:lang="en">Fix renaming issue when duplicating an entity in the scene editor.</source>
+<target xml:lang="pt">Fix renaming issue when duplicating an entity in the scene editor.</target>
+</trans-unit>
+<trans-unit id="tu133" xml:space="preserve">
+<source xml:lang="en">Fix the problem dark thumbnails for textures in HDR mode.</source>
+<target xml:lang="pt">Fix the problem dark thumbnails for textures in HDR mode.</target>
+</trans-unit>
+<trans-unit id="tu134" xml:space="preserve">
+<source xml:lang="en">Fix gizmo settings not saved/reloaded properly.</source>
+<target xml:lang="pt">Fix gizmo settings not saved/reloaded properly.</target>
+</trans-unit>
+<trans-unit id="tu135" xml:space="preserve">
+<source xml:lang="en">Fix copy/paste of folders in the solution explorer.</source>
+<target xml:lang="pt">Fix copy/paste of folders in the solution explorer.</target>
+</trans-unit>
+<trans-unit id="tu136" xml:space="preserve">
+<source xml:lang="en">Fix a crash in the sprite sheet editor when a source image was modified in an external editor.</source>
+<target xml:lang="pt">Fix a crash in the sprite sheet editor when a source image was modified in an external editor.</target>
+</trans-unit>
+<trans-unit id="tu137" xml:space="preserve">
+<source xml:lang="en">Fix a potential crash when the texture region is outside of the image.</source>
+<target xml:lang="pt">Fix a potential crash when the texture region is outside of the image.</target>
+</trans-unit>
+<trans-unit id="tu138" xml:space="preserve">
+<source xml:lang="en">Fix a bug preventing to create a frame in the sprite editor when dropping a file.</source>
+<target xml:lang="pt">Fix a bug preventing to create a frame in the sprite editor when dropping a file.</target>
+</trans-unit>
+<trans-unit id="tu139" xml:space="preserve">
+<source xml:lang="en">Fix a bug preventing to drop asset in an empty folder.</source>
+<target xml:lang="pt">Fix a bug preventing to drop asset in an empty folder.</target>
+</trans-unit>
+<trans-unit id="tu140" xml:space="preserve">
+<source xml:lang="en">Fix error when attempting to import animation from a model that doesn't have any.</source>
+<target xml:lang="pt">Fix error when attempting to import animation from a model that doesn't have any.</target>
+</trans-unit>
+<trans-unit id="tu141" xml:space="preserve">
+<source xml:lang="en">Fix incorrect size of full screen window when screen resolution has changed.</source>
+<target xml:lang="pt">Fix incorrect size of full screen window when screen resolution has changed.</target>
+</trans-unit>
+<trans-unit id="tu142" xml:space="preserve">
+<source xml:lang="en">Fix package dependency issue when removing a dependent package.</source>
+<target xml:lang="pt">Fix package dependency issue when removing a dependent package.</target>
+</trans-unit>
+<trans-unit id="tu143" xml:space="preserve">
+<source xml:lang="en">Rendering</source>
+<target xml:lang="pt">Rendering</target>
+</trans-unit>
+<trans-unit id="tu144" xml:space="preserve">
+<source xml:lang="en">Fixed disappearing shadows due to wrong cascade distance calculation</source>
+<target xml:lang="pt">Fixed disappearing shadows due to wrong cascade distance calculation</target>
+</trans-unit>
+<trans-unit id="tu145" xml:space="preserve">
+<source xml:lang="en">Known Issues</source>
+<target xml:lang="pt">Known Issues</target>
+</trans-unit>
+<trans-unit id="tu146" xml:space="preserve">
+<source xml:lang="en">iOS has an outstanding crash issue after a few second on ARM64 iPhones. This is currently under investigation.</source>
+<target xml:lang="pt">iOS has an outstanding crash issue after a few second on ARM64 iPhones. This is currently under investigation.</target>
+</trans-unit>
+</body>
+</file>
+</xliff>

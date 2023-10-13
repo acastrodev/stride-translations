@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="/D:/repos/rr/source/manual/platforms/uwp/xbox-live.md" source-language="en" target-language="pt" datatype="x-text/x-markdown" okp:inputEncoding="UTF-8">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en">Xbox Live</source>
+<target xml:lang="pt">Xbox Live</target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en">This page explains how to configure your project to work with Xbox Live.</source>
+<target xml:lang="pt">This page explains how to configure your project to work with Xbox Live.</target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">1. Before you start</source>
+<target xml:lang="pt">1. Before you start</target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">Make sure your project uses UWP as a platform. To do this, you can either:</source>
+<target xml:lang="pt">Make sure your project uses UWP as a platform. To do this, you can either:</target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en"><g id="1">create a project</g> and select <g id="2">UWP</g> as a platform, or</source>
+<target xml:lang="pt"><g id="1">create a project</g> and select <g id="2">UWP</g> as a platform, or</target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en"><g id="1">add <g id="2">UWP</g> as a platform to an existing project</g></source>
+<target xml:lang="pt"><g id="1">add <g id="2">UWP</g> as a platform to an existing project</g></target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>!Tip<x id="2"/>
+For this tutorial, you might find it useful to create a new project to test the process, then apply the knowledge to your existing projects.</source>
+<target xml:lang="pt"><x id="1"/>!Tip<x id="2"/>
+For this tutorial, you might find it useful to create a new project to test the process, then apply the knowledge to your existing projects.</target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en">Make sure you can run the project from UWP. To do this, in Visual Studio, select the platform you want (UWP-64, UWP-32, or UWP-ARM) from the <g id="1">Solution Platform</g> drop-down list, and run the project.</source>
+<target xml:lang="pt">Make sure you can run the project from UWP. To do this, in Visual Studio, select the platform you want (UWP-64, UWP-32, or UWP-ARM) from the <g id="1">Solution Platform</g> drop-down list, and run the project.</target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en">Download the Xbox Live SDK.</source>
+<target xml:lang="pt">Download the Xbox Live SDK.</target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en">To write this page, we used XboxLiveSDK-1612-20170114-002. The sample is loosely based on the Achievements sample in the Xbox Live SDK.</source>
+<target xml:lang="pt">To write this page, we used XboxLiveSDK-1612-20170114-002. The sample is loosely based on the Achievements sample in the Xbox Live SDK.</target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en">Change your Xbox Live environment. In the <g id="1">SDK</g> folder, under <g id="2">Tools</g>, run:</source>
+<target xml:lang="pt">Change your Xbox Live environment. In the <g id="1">SDK</g> folder, under <g id="2">Tools</g>, run:</target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en">SwitchSandbox.cmd XDKS.1
+</source>
+<target xml:lang="pt">SwitchSandbox.cmd XDKS.1
+</target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en">XDKS.1 is the sandbox used for the Microsoft samples.</source>
+<target xml:lang="pt">XDKS.1 is the sandbox used for the Microsoft samples.</target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>!Warning<x id="2"/>
+This blocks regular Xbox accounts and only permits developer accounts. To switch back, run:</source>
+<target xml:lang="pt"><x id="1"/>!Warning<x id="2"/>
+This blocks regular Xbox accounts and only permits developer accounts. To switch back, run:</target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en">SwitchSandbox.cmd RETAIL
+</source>
+<target xml:lang="pt">SwitchSandbox.cmd RETAIL
+</target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en">Make sure you can run the Achievements sample with your developer account.</source>
+<target xml:lang="pt">Make sure you can run the Achievements sample with your developer account.</target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en">2. Add the Xbox Live SDK to your solution</source>
+<target xml:lang="pt">2. Add the Xbox Live SDK to your solution</target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en">In Visual Studio, open your game solution.</source>
+<target xml:lang="pt">In Visual Studio, open your game solution.</target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en">Open the Package Manager Console (<g id="1">Tools > NuGet Package Manager > Package Manager Console</g>).</source>
+<target xml:lang="pt">Open the Package Manager Console (<g id="1">Tools > NuGet Package Manager > Package Manager Console</g>).</target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en">In the <g id="1">Default project</g> field, select your UWP project (eg <g id="2">MyGame.UWP</g>).</source>
+<target xml:lang="pt">In the <g id="1">Default project</g> field, select your UWP project (eg <g id="2">MyGame.UWP</g>).</target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>MyGame.UWP<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>MyGame.UWP<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en">In the console, type:</source>
+<target xml:lang="pt">In the console, type:</target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en">PM > Install-Package Microsoft.Xbox.Live.SDK.WinRT.UWP
+</source>
+<target xml:lang="pt">PM > Install-Package Microsoft.Xbox.Live.SDK.WinRT.UWP
+</target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en">Visual Studio adds the NuGet package to your project.</source>
+<target xml:lang="pt">Visual Studio adds the NuGet package to your project.</target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en">Make sure the package appears in the <g id="1">References</g> list.</source>
+<target xml:lang="pt">Make sure the package appears in the <g id="1">References</g> list.</target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Package in list<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Package in list<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en">3. Configure the UWP project</source>
+<target xml:lang="pt">3. Configure the UWP project</target>
+</trans-unit>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en">Delete <g id="1">MyGame.UWP.TemporaryKey.pfx</g>.</source>
+<target xml:lang="pt">Delete <g id="1">MyGame.UWP.TemporaryKey.pfx</g>.</target>
+</trans-unit>
+<trans-unit id="tu29" xml:space="preserve">
+<source xml:lang="en">Add <g id="1">xboxservices.config</g> to your project.</source>
+<target xml:lang="pt">Add <g id="1">xboxservices.config</g> to your project.</target>
+</trans-unit>
+<trans-unit id="tu30" xml:space="preserve">
+<source xml:lang="en">You can get this file from any Xbox Live SDK sample (eg the Achievements sample) for test purposes. When you want to publish the game, change the <g id="1">TitleId</g> and <g id="2">Service config Id</g> with the ones provided for your project. For details, see the Xbox Live documentation.</source>
+<target xml:lang="pt">You can get this file from any Xbox Live SDK sample (eg the Achievements sample) for test purposes. When you want to publish the game, change the <g id="1">TitleId</g> and <g id="2">Service config Id</g> with the ones provided for your project. For details, see the Xbox Live documentation.</target>
+</trans-unit>
+<trans-unit id="tu31" xml:space="preserve">
+<source xml:lang="en">In the <g id="1">xboxservices.config</g> properties, under <g id="2">Build Action</g>, select <g id="3">Content</g>, and under <g id="4">Copy to Output Directory</g>, select <g id="5">Always</g>.</source>
+<target xml:lang="pt">In the <g id="1">xboxservices.config</g> properties, under <g id="2">Build Action</g>, select <g id="3">Content</g>, and under <g id="4">Copy to Output Directory</g>, select <g id="5">Always</g>.</target>
+</trans-unit>
+<trans-unit id="tu32" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Properties<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Properties<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu33" xml:space="preserve">
+<source xml:lang="en">Edit <g id="1">Package.appxmanifest</g> with details relevant to your project.</source>
+<target xml:lang="pt">Edit <g id="1">Package.appxmanifest</g> with details relevant to your project.</target>
+</trans-unit>
+<trans-unit id="tu34" xml:space="preserve">
+<source xml:lang="en">Again, you can use the manifest file from any Xbox Live SDK sample (eg the Achievements sample) for test purposes. If you associate your game with a store app, use the generated manifest file. For details, see the Xbox Live documentation.</source>
+<target xml:lang="pt">Again, you can use the manifest file from any Xbox Live SDK sample (eg the Achievements sample) for test purposes. If you associate your game with a store app, use the generated manifest file. For details, see the Xbox Live documentation.</target>
+</trans-unit>
+<trans-unit id="tu35" xml:space="preserve">
+<source xml:lang="en">Make sure the capability <g id="1">InternetClientServer</g> is enabled.</source>
+<target xml:lang="pt">Make sure the capability <g id="1">InternetClientServer</g> is enabled.</target>
+</trans-unit>
+<trans-unit id="tu36" xml:space="preserve">
+<source xml:lang="en">4. Add user account scripts to your game</source>
+<target xml:lang="pt">4. Add user account scripts to your game</target>
+</trans-unit>
+<trans-unit id="tu37" xml:space="preserve">
+<source xml:lang="en">You need to enable Xbox Live capability in your game project without exposing the Xbox Live SDK. As <g id="1">MyGame.UWP</g> already references <g id="2">MyGame.Game</g>, we can't reference it. Instead, we can create an interface and implement it from the UWP project side.</source>
+<target xml:lang="pt">You need to enable Xbox Live capability in your game project without exposing the Xbox Live SDK. As <g id="1">MyGame.UWP</g> already references <g id="2">MyGame.Game</g>, we can't reference it. Instead, we can create an interface and implement it from the UWP project side.</target>
+</trans-unit>
+<trans-unit id="tu38" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>!Note<x id="2"/>
+There are several ways to do this. This page explains one method.</source>
+<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
+There are several ways to do this. This page explains one method.</target>
+</trans-unit>
+<trans-unit id="tu39" xml:space="preserve">
+<source xml:lang="en">Add two interfaces to your game, <g id="1">IAccountManager</g> and <g id="2">IConnectedAccount</g>.</source>
+<target xml:lang="pt">Add two interfaces to your game, <g id="1">IAccountManager</g> and <g id="2">IConnectedAccount</g>.</target>
+</trans-unit>
+<trans-unit id="tu40" xml:space="preserve">
+<source xml:lang="en">On your UWP project (eg <g id="1">MyGame.UWP</g>), implement the interfaces <g id="2">public class XboxAccount : IConnectedAccount</g> and <g id="3">public class XboxLiveAccountManager : IAccountManager</g>.</source>
+<target xml:lang="pt">On your UWP project (eg <g id="1">MyGame.UWP</g>), implement the interfaces <g id="2">public class XboxAccount : IConnectedAccount</g> and <g id="3">public class XboxLiveAccountManager : IAccountManager</g>.</target>
+</trans-unit>
+<trans-unit id="tu41" xml:space="preserve">
+<source xml:lang="en">Add the account factory to your game so you can access it later from a game script. In the <g id="1">MyGameMainPage.xaml.cs</g>, add the following line:</source>
+<target xml:lang="pt">Add the account factory to your game so you can access it later from a game script. In the <g id="1">MyGameMainPage.xaml.cs</g>, add the following line:</target>
+</trans-unit>
+<trans-unit id="tu42" xml:space="preserve">
+<source xml:lang="en">Game.Services.AddService(typeof(IAccountManager), new XboxLiveAccountManager());
+</source>
+<target xml:lang="pt">Game.Services.AddService(typeof(IAccountManager), new XboxLiveAccountManager());
+</target>
+</trans-unit>
+<trans-unit id="tu43" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>References<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>References<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu44" xml:space="preserve">
+<source xml:lang="en">The final script should look like this at minimum:</source>
+<target xml:lang="pt">The final script should look like this at minimum:</target>
+</trans-unit>
+<trans-unit id="tu45" xml:space="preserve">
+<source xml:lang="en">    public class LoginScript : AsyncScript
+    {
+        private IConnectedAccount account;
+
+        public override async Task Execute()
+        {
+            var accountMgr = Services.GetServiceAs&lt;IAccountManager>();
+            account = accountMgr?.CreateConnectedAccount();
+			    if (account == null)
+				    return;
+
+            var result = account.LoginAsync();
+
+	    		// TODO Add your code here!
+        }
+    }
+</source>
+<target xml:lang="pt">    public class LoginScript : AsyncScript
+    {
+        private IConnectedAccount account;
+
+        public override async Task Execute()
+        {
+            var accountMgr = Services.GetServiceAs&lt;IAccountManager>();
+            account = accountMgr?.CreateConnectedAccount();
+			    if (account == null)
+				    return;
+
+            var result = account.LoginAsync();
+
+	    		// TODO Add your code here!
+        }
+    }
+</target>
+</trans-unit>
+<trans-unit id="tu46" xml:space="preserve">
+<source xml:lang="en">Now you can expose the <g id="1">xbox_live_user</g> functionality and other classes in your game.</source>
+<target xml:lang="pt">Now you can expose the <g id="1">xbox_live_user</g> functionality and other classes in your game.</target>
+</trans-unit>
+<trans-unit id="tu47" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Property Grid<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Property Grid<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu48" xml:space="preserve">
+<source xml:lang="en">Sample project</source>
+<target xml:lang="pt">Sample project</target>
+</trans-unit>
+<trans-unit id="tu49" xml:space="preserve">
+<source xml:lang="en"><g id="1">Download a sample project</g> with Xbox Live login functionality</source>
+<target xml:lang="pt"><g id="1">Download a sample project</g> with Xbox Live login functionality</target>
+</trans-unit>
+<trans-unit id="tu50" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Sample project<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Sample project<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu51" xml:space="preserve">
+<source xml:lang="en">See also</source>
+<target xml:lang="pt">See also</target>
+</trans-unit>
+<trans-unit id="tu52" xml:space="preserve">
+<source xml:lang="en"><g id="1">Platforms</g></source>
+<target xml:lang="pt"><g id="1">Platforms</g></target>
+</trans-unit>
+</body>
+</file>
+</xliff>

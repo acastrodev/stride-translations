@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="/D:/repos/stride-translations/pt-BR/source/manual/engine/file-system.md" source-language="en" target-language="pt" datatype="x-text/x-markdown" okp:inputEncoding="UTF-8">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en">File system</source>
+<target xml:lang="pt">File system</target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en">[!INCLUDE <g id="1">stride-studio-note</g>]</source>
+<target xml:lang="pt">[!INCLUDE <g id="1">stride-studio-note</g>]</target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">We recommend you use the static class @'Stride.Core.IO.VirtualFileSystem' to access files across platforms. It offers all basic operations such as reading, writing, copying, checking existence and deleting files.</source>
+<target xml:lang="pt">We recommend you use the static class @'Stride.Core.IO.VirtualFileSystem' to access files across platforms. It offers all basic operations such as reading, writing, copying, checking existence and deleting files.</target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>!Note<x id="2"/>
+The path separator is / (Unix/Linux convention).</source>
+<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
+The path separator is / (Unix/Linux convention).</target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">Code example</source>
+<target xml:lang="pt">Code example</target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en">// Open a file through VirtualFileSystem
+var gamesave1 = VirtualFileSystem.OpenStream("/roaming/gamesave001.dat", VirtualFileMode.Open, VirtualFileAccess.Read);
+ 
+// Alternatively, directly access the same file through its file system provider (mount point)
+var gamesave2 = VirtualFileSystem.ApplicationRoaming.OpenStream("gamesave001.dat", VirtualFileMode.Open, VirtualFileAccess.Read);
+</source>
+<target xml:lang="pt">// Open a file through VirtualFileSystem
+var gamesave1 = VirtualFileSystem.OpenStream("/roaming/gamesave001.dat", VirtualFileMode.Open, VirtualFileAccess.Read);
+ 
+// Alternatively, directly access the same file through its file system provider (mount point)
+var gamesave2 = VirtualFileSystem.ApplicationRoaming.OpenStream("gamesave001.dat", VirtualFileMode.Open, VirtualFileAccess.Read);
+</target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en">Default mount points</source>
+<target xml:lang="pt">Default mount points</target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en">| Mount point | Description  | Writable | Cloud | Notes  | PC   | Android  | iOS   | Windows Phone 8.1   |
+| ----------- | -------------| -------- | ----- | -------| ---- | -------- | ------- | --|
+| data        | Application data, deployed by package    | ✗    | ✗     |           | Output directory/data    | APK itself  | Deployed package directory | InstalledLocation.Path |
+| binary   | Application binaries, deployed by package | ✗  | ✗   | Usually the same as <g id="1">app_data</g> (except on Android)  | Assembly directory | Assembly directory  | Assembly diretory  | Assembly directory |
+| roaming   | User specific data (roaming) | ✓    |  ✓    | Backup   | Output directory/roaming, <g id="2">%APPDATA%</g> | <g id="3">$(Context.getFilesDir)/roaming</g> | Library/roaming  | Roaming |
+| local  | User application data | ✓     |  ✓    | Backup   | Output directory/local | $(Context.getFilesDir)local    | Library/local  | Local |
+| cache   | Application cache   | ✓   | ✗    | DLC, etc. Might be deleted manually by user (restore, clear data, etc...)   | Output directory/cache, with do-not-back-up flags   | <g id="4">$(Context.getFilesDir)/cache</g>   | Library/caches  | LocalCache  |
+| tmp    | Application temporary data    | ✓        | ✗     | Might be deleted without notice by OS   | Output directory/temp, <g id="5">%TEMP%/%APPNAME%</g>   | <g id="6">$(Context.getCacheDir)</g>  | tmp | Temporary |</source>
+<target xml:lang="pt">| Mount point | Description  | Writable | Cloud | Notes  | PC   | Android  | iOS   | Windows Phone 8.1   |
+| ----------- | -------------| -------- | ----- | -------| ---- | -------- | ------- | --|
+| data        | Application data, deployed by package    | ✗    | ✗     |           | Output directory/data    | APK itself  | Deployed package directory | InstalledLocation.Path |
+| binary   | Application binaries, deployed by package | ✗  | ✗   | Usually the same as <g id="1">app_data</g> (except on Android)  | Assembly directory | Assembly directory  | Assembly diretory  | Assembly directory |
+| roaming   | User specific data (roaming) | ✓    |  ✓    | Backup   | Output directory/roaming, <g id="2">%APPDATA%</g> | <g id="3">$(Context.getFilesDir)/roaming</g> | Library/roaming  | Roaming |
+| local  | User application data | ✓     |  ✓    | Backup   | Output directory/local | $(Context.getFilesDir)local    | Library/local  | Local |
+| cache   | Application cache   | ✓   | ✗    | DLC, etc. Might be deleted manually by user (restore, clear data, etc...)   | Output directory/cache, with do-not-back-up flags   | <g id="4">$(Context.getFilesDir)/cache</g>   | Library/caches  | LocalCache  |
+| tmp    | Application temporary data    | ✓        | ✗     | Might be deleted without notice by OS   | Output directory/temp, <g id="5">%TEMP%/%APPNAME%</g>   | <g id="6">$(Context.getCacheDir)</g>  | tmp | Temporary |</target>
+</trans-unit>
+</body>
+</file>
+</xliff>

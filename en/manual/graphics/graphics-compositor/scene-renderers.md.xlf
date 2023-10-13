@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="/D:/repos/rr/source/manual/graphics/graphics-compositor/scene-renderers.md" source-language="en" target-language="pt" datatype="x-text/x-markdown" okp:inputEncoding="UTF-8">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en">Scene renderers</source>
+<target xml:lang="pt">Scene renderers</target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Intermediate<x id="2"/>
+<x id="3"/>Designer<x id="4"/></source>
+<target xml:lang="pt"><x id="1"/>Intermediate<x id="2"/>
+<x id="3"/>Designer<x id="4"/></target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en"><g id="1">Scene renderers</g> let you customize the <g id="2">collect</g> and <g id="3">draw</g> phases of the rendering. For more information about these stages, see <g id="4">Render features</g>.</source>
+<target xml:lang="pt"><g id="1">Scene renderers</g> let you customize the <g id="2">collect</g> and <g id="3">draw</g> phases of the rendering. For more information about these stages, see <g id="4">Render features</g>.</target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">You select scene renderers in the <g id="1">entry points</g> node properties.</source>
+<target xml:lang="pt">You select scene renderers in the <g id="1">entry points</g> node properties.</target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Select renderer<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Select renderer<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en">For more information about selecting renderers, see the <g id="1">Graphics compositor</g> page.</source>
+<target xml:lang="pt">For more information about selecting renderers, see the <g id="1">Graphics compositor</g> page.</target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>!Note<x id="2"/>
+Currently, <g id="3">all</g> renderers must have a camera, or be a child of a renderer that has a camera. This applies even to renderers that don't necessarily use cameras, such as the single stage renderer (eg to render a UI).</source>
+<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
+Currently, <g id="3">all</g> renderers must have a camera, or be a child of a renderer that has a camera. This applies even to renderers that don't necessarily use cameras, such as the single stage renderer (eg to render a UI).</target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en">Clear</source>
+<target xml:lang="pt">Clear</target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en">Clears a frame, with a solid color.</source>
+<target xml:lang="pt">Clears a frame, with a solid color.</target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Clear properties<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Clear properties<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en">Properties</source>
+<target xml:lang="pt">Properties</target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en">Property</source>
+<target xml:lang="pt">Property</target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en">Description</source>
+<target xml:lang="pt">Description</target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en">Clear flags</source>
+<target xml:lang="pt">Clear flags</target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en"><x id="1"/></source>
+<target xml:lang="pt"><x id="1"/></target>
+</trans-unit>
+<trans-unit id="sd1_sf6_tu1" resname="sd1_1" restype="x-paragraph" xml:space="preserve">
+<source xml:lang="en"></source>
+<target xml:lang="pt"></target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en">What to clear in the render frame (<g id="1">Color only</g>, <g id="2">Depth only</g>, or <g id="3">Color and depth</g>)</source>
+<target xml:lang="pt">What to clear in the render frame (<g id="1">Color only</g>, <g id="2">Depth only</g>, or <g id="3">Color and depth</g>)</target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en">Color</source>
+<target xml:lang="pt">Color</target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en">The color used to clear the color texture of the render frame. Only valid when <g id="1">Clear Flags</g> is set to <g id="2">Color</g> or <g id="3">Color and depth</g></source>
+<target xml:lang="pt">The color used to clear the color texture of the render frame. Only valid when <g id="1">Clear Flags</g> is set to <g id="2">Color</g> or <g id="3">Color and depth</g></target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en">Depth value</source>
+<target xml:lang="pt">Depth value</target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en">The depth value used to clear the depth texture of the render frame</source>
+<target xml:lang="pt">The depth value used to clear the depth texture of the render frame</target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en">Stencil value</source>
+<target xml:lang="pt">Stencil value</target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en">The stencil value used to clear the stencil texture of the render frame</source>
+<target xml:lang="pt">The stencil value used to clear the stencil texture of the render frame</target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en">Camera renderer</source>
+<target xml:lang="pt">Camera renderer</target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en">Uses @'Stride.Rendering.Compositing.SceneCameraRenderer.Child' to render a view from a <g id="1">camera slot</g>. The <g id="2">render camera</g> renderer takes the input from a <g id="3">camera</g> in the scene so it can be displayed somewhere.</source>
+<target xml:lang="pt">Uses @'Stride.Rendering.Compositing.SceneCameraRenderer.Child' to render a view from a <g id="1">camera slot</g>. The <g id="2">render camera</g> renderer takes the input from a <g id="3">camera</g> in the scene so it can be displayed somewhere.</target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Camera renderer properties<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Camera renderer properties<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en">Properties</source>
+<target xml:lang="pt">Properties</target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en">Property</source>
+<target xml:lang="pt">Property</target>
+</trans-unit>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en">Description</source>
+<target xml:lang="pt">Description</target>
+</trans-unit>
+<trans-unit id="tu29" xml:space="preserve">
+<source xml:lang="en">Camera</source>
+<target xml:lang="pt">Camera</target>
+</trans-unit>
+<trans-unit id="tu30" xml:space="preserve">
+<source xml:lang="en">Specify a <g id="1">camera slot</g> to render from</source>
+<target xml:lang="pt">Specify a <g id="1">camera slot</g> to render from</target>
+</trans-unit>
+<trans-unit id="tu31" xml:space="preserve">
+<source xml:lang="en">Child</source>
+<target xml:lang="pt">Child</target>
+</trans-unit>
+<trans-unit id="tu32" xml:space="preserve">
+<source xml:lang="en">Specify a renderer for the camera (eg a forward renderer or a custom renderer)</source>
+<target xml:lang="pt">Specify a renderer for the camera (eg a forward renderer or a custom renderer)</target>
+</trans-unit>
+<trans-unit id="tu33" xml:space="preserve">
+<source xml:lang="en">Scene renderer collection</source>
+<target xml:lang="pt">Scene renderer collection</target>
+</trans-unit>
+<trans-unit id="tu34" xml:space="preserve">
+<source xml:lang="en">The <g id="1">scene renderer collection</g> executes multiple renderers (eg camera renderer, render texture, etc) in sequence. This lets you set multiple renderers for an entry point. You can add as many renderers to the collection as you need.</source>
+<target xml:lang="pt">The <g id="1">scene renderer collection</g> executes multiple renderers (eg camera renderer, render texture, etc) in sequence. This lets you set multiple renderers for an entry point. You can add as many renderers to the collection as you need.</target>
+</trans-unit>
+<trans-unit id="tu35" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>!Note<x id="2"/>
+Stride executes the renderers in list order.</source>
+<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
+Stride executes the renderers in list order.</target>
+</trans-unit>
+<trans-unit id="tu36" xml:space="preserve">
+<source xml:lang="en">To add a renderer to the collection, next to <g id="1">Children</g>, click <x id="2"/>Green plus button<x id="3"/> (<g id="4">Add</g>) and select the renderer you want to add.</source>
+<target xml:lang="pt">To add a renderer to the collection, next to <g id="1">Children</g>, click <x id="2"/>Green plus button<x id="3"/> (<g id="4">Add</g>) and select the renderer you want to add.</target>
+</trans-unit>
+<trans-unit id="tu37" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Add to scene collection<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Add to scene collection<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu38" xml:space="preserve">
+<source xml:lang="en">Forward renderer</source>
+<target xml:lang="pt">Forward renderer</target>
+</trans-unit>
+<trans-unit id="tu39" xml:space="preserve">
+<source xml:lang="en">In a typical setup, the <g id="1">forward renderer</g> renders almost everything in your scene. It renders, in order:</source>
+<target xml:lang="pt">In a typical setup, the <g id="1">forward renderer</g> renders almost everything in your scene. It renders, in order:</target>
+</trans-unit>
+<trans-unit id="tu40" xml:space="preserve">
+<source xml:lang="en">opaque objects</source>
+<target xml:lang="pt">opaque objects</target>
+</trans-unit>
+<trans-unit id="tu41" xml:space="preserve">
+<source xml:lang="en">transparent objects</source>
+<target xml:lang="pt">transparent objects</target>
+</trans-unit>
+<trans-unit id="tu42" xml:space="preserve">
+<source xml:lang="en"><g id="1">post effects</g></source>
+<target xml:lang="pt"><g id="1">post effects</g></target>
+</trans-unit>
+<trans-unit id="tu43" xml:space="preserve">
+<source xml:lang="en">The forward renderer is also where you set VR options. For more information, see <g id="1">Virtual reality</g>.</source>
+<target xml:lang="pt">The forward renderer is also where you set VR options. For more information, see <g id="1">Virtual reality</g>.</target>
+</trans-unit>
+<trans-unit id="tu44" xml:space="preserve">
+<source xml:lang="en">You configure the forward renderer properties in the <g id="1">forward entry node</g>.</source>
+<target xml:lang="pt">You configure the forward renderer properties in the <g id="1">forward entry node</g>.</target>
+</trans-unit>
+<trans-unit id="tu45" xml:space="preserve">
+<source xml:lang="en">Single stage renderer</source>
+<target xml:lang="pt">Single stage renderer</target>
+</trans-unit>
+<trans-unit id="tu46" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Single stage renderer<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Single stage renderer<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu47" xml:space="preserve">
+<source xml:lang="en">Force aspect ratio scene renderer</source>
+<target xml:lang="pt">Force aspect ratio scene renderer</target>
+</trans-unit>
+<trans-unit id="tu48" xml:space="preserve">
+<source xml:lang="en">Uses @'Stride.Rendering.Compositing.ForceAspectRatioSceneRenderer' to force an aspect ratio and applies a letterbox if the ratio is different from the screen. Use this before the <g id="1">render camera</g>.</source>
+<target xml:lang="pt">Uses @'Stride.Rendering.Compositing.ForceAspectRatioSceneRenderer' to force an aspect ratio and applies a letterbox if the ratio is different from the screen. Use this before the <g id="1">render camera</g>.</target>
+</trans-unit>
+<trans-unit id="tu49" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Force aspect ratio<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Force aspect ratio<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu50" xml:space="preserve">
+<source xml:lang="en">Property</source>
+<target xml:lang="pt">Property</target>
+</trans-unit>
+<trans-unit id="tu51" xml:space="preserve">
+<source xml:lang="en">Description</source>
+<target xml:lang="pt">Description</target>
+</trans-unit>
+<trans-unit id="tu52" xml:space="preserve">
+<source xml:lang="en">Child</source>
+<target xml:lang="pt">Child</target>
+</trans-unit>
+<trans-unit id="tu53" xml:space="preserve">
+<source xml:lang="en">Specify a renderer for the camera (eg a forward renderer or a custom renderer)</source>
+<target xml:lang="pt">Specify a renderer for the camera (eg a forward renderer or a custom renderer)</target>
+</trans-unit>
+<trans-unit id="tu54" xml:space="preserve">
+<source xml:lang="en">Fixed aspect ratio</source>
+<target xml:lang="pt">Fixed aspect ratio</target>
+</trans-unit>
+<trans-unit id="tu55" xml:space="preserve">
+<source xml:lang="en">The aspect ratio to force the view to</source>
+<target xml:lang="pt">The aspect ratio to force the view to</target>
+</trans-unit>
+<trans-unit id="tu56" xml:space="preserve">
+<source xml:lang="en">Force aspect ratio</source>
+<target xml:lang="pt">Force aspect ratio</target>
+</trans-unit>
+<trans-unit id="tu57" xml:space="preserve">
+<source xml:lang="en">Enable forced aspect ratio</source>
+<target xml:lang="pt">Enable forced aspect ratio</target>
+</trans-unit>
+<trans-unit id="tu58" xml:space="preserve">
+<source xml:lang="en">Render texture</source>
+<target xml:lang="pt">Render texture</target>
+</trans-unit>
+<trans-unit id="tu59" xml:space="preserve">
+<source xml:lang="en">Renders to a render texture, which you can display in your scene (eg to display security camera footage on a screen). For more information, see <g id="1">Render textures</g>.</source>
+<target xml:lang="pt">Renders to a render texture, which you can display in your scene (eg to display security camera footage on a screen). For more information, see <g id="1">Render textures</g>.</target>
+</trans-unit>
+<trans-unit id="tu60" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Render texture properties<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Render texture properties<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu61" xml:space="preserve">
+<source xml:lang="en">Property</source>
+<target xml:lang="pt">Property</target>
+</trans-unit>
+<trans-unit id="tu62" xml:space="preserve">
+<source xml:lang="en">Description</source>
+<target xml:lang="pt">Description</target>
+</trans-unit>
+<trans-unit id="tu63" xml:space="preserve">
+<source xml:lang="en">Child</source>
+<target xml:lang="pt">Child</target>
+</trans-unit>
+<trans-unit id="tu64" xml:space="preserve">
+<source xml:lang="en">Specify a renderer for the camera (eg a forward renderer or a custom renderer)</source>
+<target xml:lang="pt">Specify a renderer for the camera (eg a forward renderer or a custom renderer)</target>
+</trans-unit>
+<trans-unit id="tu65" xml:space="preserve">
+<source xml:lang="en">Render texture</source>
+<target xml:lang="pt">Render texture</target>
+</trans-unit>
+<trans-unit id="tu66" xml:space="preserve">
+<source xml:lang="en">Specify a texture to render to</source>
+<target xml:lang="pt">Specify a texture to render to</target>
+</trans-unit>
+<trans-unit id="tu67" xml:space="preserve">
+<source xml:lang="en">Render mask</source>
+<target xml:lang="pt">Render mask</target>
+</trans-unit>
+<trans-unit id="tu68" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Render mask<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Render mask<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu69" xml:space="preserve">
+<source xml:lang="en">The <g id="1">render mask</g> filters which groups are rendered. You can use it to only render particular models. For more information, see <g id="2">Render groups and render masks</g></source>
+<target xml:lang="pt">The <g id="1">render mask</g> filters which groups are rendered. You can use it to only render particular models. For more information, see <g id="2">Render groups and render masks</g></target>
+</trans-unit>
+<trans-unit id="tu70" xml:space="preserve">
+<source xml:lang="en">See also</source>
+<target xml:lang="pt">See also</target>
+</trans-unit>
+<trans-unit id="tu71" xml:space="preserve">
+<source xml:lang="en"><g id="1">Graphics compositor</g></source>
+<target xml:lang="pt"><g id="1">Graphics compositor</g></target>
+</trans-unit>
+<trans-unit id="tu72" xml:space="preserve">
+<source xml:lang="en"><g id="1">Camera slots</g></source>
+<target xml:lang="pt"><g id="1">Camera slots</g></target>
+</trans-unit>
+<trans-unit id="tu73" xml:space="preserve">
+<source xml:lang="en"><g id="1">Custom scene renders</g></source>
+<target xml:lang="pt"><g id="1">Custom scene renders</g></target>
+</trans-unit>
+<trans-unit id="tu74" xml:space="preserve">
+<source xml:lang="en"><g id="1">Debug renderers</g></source>
+<target xml:lang="pt"><g id="1">Debug renderers</g></target>
+</trans-unit>
+<trans-unit id="tu75" xml:space="preserve">
+<source xml:lang="en"><g id="1">Render groups and render masks</g></source>
+<target xml:lang="pt"><g id="1">Render groups and render masks</g></target>
+</trans-unit>
+</body>
+</file>
+</xliff>

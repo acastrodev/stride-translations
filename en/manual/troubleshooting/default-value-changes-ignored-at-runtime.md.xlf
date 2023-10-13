@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="/D:/repos/rr/source/manual/troubleshooting/default-value-changes-ignored-at-runtime.md" source-language="en" target-language="pt" datatype="x-text/x-markdown" okp:inputEncoding="UTF-8">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en">Default value changes ignored at runtime</source>
+<target xml:lang="pt">Default value changes ignored at runtime</target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en">When you add a script to your project as a component, Game Studio lists its public variables in the Property Grid. These are the values used at runtime.</source>
+<target xml:lang="pt">When you add a script to your project as a component, Game Studio lists its public variables in the Property Grid. These are the values used at runtime.</target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">However, if you then change the default value in the script, Game Studio doesn't update the component with the new value.</source>
+<target xml:lang="pt">However, if you then change the default value in the script, Game Studio doesn't update the component with the new value.</target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">For example, imagine you have a script with the variable <g id="1">SpeedFactor</g> with a default value of <g id="2">5.0f</g>. You add the script to the project as a component. Now, in the script, you change the default value of the <g id="3">SpeedFactor</g> variable to <g id="4">6.0f</g>, save the script, and run the project. Game Studio doesn't update the component with the script changes, so the speed <g id="5">SpeedFactor</g> value is still <g id="6">5.0f</g>.</source>
+<target xml:lang="pt">For example, imagine you have a script with the variable <g id="1">SpeedFactor</g> with a default value of <g id="2">5.0f</g>. You add the script to the project as a component. Now, in the script, you change the default value of the <g id="3">SpeedFactor</g> variable to <g id="4">6.0f</g>, save the script, and run the project. Game Studio doesn't update the component with the script changes, so the speed <g id="5">SpeedFactor</g> value is still <g id="6">5.0f</g>.</target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">Fix</source>
+<target xml:lang="pt">Fix</target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en">In your project, delete and re-add the script component.</source>
+<target xml:lang="pt">In your project, delete and re-add the script component.</target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en">Alternatively, if you want Game Studio to update the values in the component properties after you change them in the script, you can do this with additional code. You need to add a new line of code for every property you want this to apply to.</source>
+<target xml:lang="pt">Alternatively, if you want Game Studio to update the values in the component properties after you change them in the script, you can do this with additional code. You need to add a new line of code for every property you want this to apply to.</target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en">Add <g id="1">using System.ComponentModel</g> at the top of the script.</source>
+<target xml:lang="pt">Add <g id="1">using System.ComponentModel</g> at the top of the script.</target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en">Above the variable you want to update, add <g id="1">[DefaultValue()]</g>. For example, if the variable is <g id="2">SpeedFactor</g>, use:</source>
+<target xml:lang="pt">Above the variable you want to update, add <g id="1">[DefaultValue()]</g>. For example, if the variable is <g id="2">SpeedFactor</g>, use:</target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en">[DefaultValue(6.0f)]
+public float SpeedFactor { get; set; } = 6.0f;
+</source>
+<target xml:lang="pt">[DefaultValue(6.0f)]
+public float SpeedFactor { get; set; } = 6.0f;
+</target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en">When you change the value, update both the <g id="1">SpeedFactor</g> and the <g id="2">DefaultValue</g> to the same value.</source>
+<target xml:lang="pt">When you change the value, update both the <g id="1">SpeedFactor</g> and the <g id="2">DefaultValue</g> to the same value.</target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>!Note<x id="2"/>
+This doesn't work in both directions. If you set a value other than the <g id="3">DefaultValue</g> in the Property Grid, Game Studio saves the value in the asset and overrides the default value at runtime.</source>
+<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
+This doesn't work in both directions. If you set a value other than the <g id="3">DefaultValue</g> in the Property Grid, Game Studio saves the value in the asset and overrides the default value at runtime.</target>
+</trans-unit>
+</body>
+</file>
+</xliff>

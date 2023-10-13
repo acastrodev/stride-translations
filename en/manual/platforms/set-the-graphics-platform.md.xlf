@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="/D:/repos/rr/source/manual/platforms/set-the-graphics-platform.md" source-language="en" target-language="pt" datatype="x-text/x-markdown" okp:inputEncoding="UTF-8">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en">Set the graphics platform</source>
+<target xml:lang="pt">Set the graphics platform</target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Beginner<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Beginner<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">The <g id="1">graphics platform</g> controls the graphics hardware in the device you run your project on. Different devices support different graphics platforms; for example, iOS supports the OpenGL ES graphics platform. You can select which graphics platform your game uses, and add overrides for different platforms (eg Windows, Android, etc).</source>
+<target xml:lang="pt">The <g id="1">graphics platform</g> controls the graphics hardware in the device you run your project on. Different devices support different graphics platforms; for example, iOS supports the OpenGL ES graphics platform. You can select which graphics platform your game uses, and add overrides for different platforms (eg Windows, Android, etc).</target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>!Warning<x id="2"/>
+Moving from Direct3D to an earlier Direct3D version can create problems. For example, if your game contains HDR textures, it will crash, as Direct3D 9 doesn't support them.</source>
+<target xml:lang="pt"><x id="1"/>!Warning<x id="2"/>
+Moving from Direct3D to an earlier Direct3D version can create problems. For example, if your game contains HDR textures, it will crash, as Direct3D 9 doesn't support them.</target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">You set the graphics platform in the <g id="1">game settings</g> asset.</source>
+<target xml:lang="pt">You set the graphics platform in the <g id="1">game settings</g> asset.</target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>!Note<x id="2"/>
+Make sure you have the latest drivers for the graphics platforms you want to use.</source>
+<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
+Make sure you have the latest drivers for the graphics platforms you want to use.</target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en">In the <g id="1">Asset View</g>, select the <g id="2">Game Settings</g> asset.</source>
+<target xml:lang="pt">In the <g id="1">Asset View</g>, select the <g id="2">Game Settings</g> asset.</target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Game settings asset<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Game settings asset<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en">In the Property Grid, under <g id="1">Rendering Settings > Target graphics platform</g>, select the graphics platform you want to use.</source>
+<target xml:lang="pt">In the Property Grid, under <g id="1">Rendering Settings > Target graphics platform</g>, select the graphics platform you want to use.</target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Select graphics platform<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Select graphics platform<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en">If you select <g id="1">Default</g>, Stride uses the graphics platform appropriate for your platform (eg Windows, Android) when you build.</source>
+<target xml:lang="pt">If you select <g id="1">Default</g>, Stride uses the graphics platform appropriate for your platform (eg Windows, Android) when you build.</target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en">Platform</source>
+<target xml:lang="pt">Platform</target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en">Default graphics platform</source>
+<target xml:lang="pt">Default graphics platform</target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en">Windows, UWP</source>
+<target xml:lang="pt">Windows, UWP</target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en">Direct3D11</source>
+<target xml:lang="pt">Direct3D11</target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en">Linux, Mac OS</source>
+<target xml:lang="pt">Linux, Mac OS</target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en">OpenGL</source>
+<target xml:lang="pt">OpenGL</target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en">Other</source>
+<target xml:lang="pt">Other</target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en">OpenGL ES</source>
+<target xml:lang="pt">OpenGL ES</target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en">Override the graphics platform</source>
+<target xml:lang="pt">Override the graphics platform</target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en">You can override the graphics platform Stride uses for specific platforms. For example, you can have Linux use Vulkan while other platforms use the default.</source>
+<target xml:lang="pt">You can override the graphics platform Stride uses for specific platforms. For example, you can have Linux use Vulkan while other platforms use the default.</target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en">With the <g id="1">GameSettings</g> asset selected, in the Property Grid, under <g id="2">Overrides</g>, click <x id="3"/>Green plus button<x id="4"/> (<g id="5">Add</g>).</source>
+<target xml:lang="pt">With the <g id="1">GameSettings</g> asset selected, in the Property Grid, under <g id="2">Overrides</g>, click <x id="3"/>Green plus button<x id="4"/> (<g id="5">Add</g>).</target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Select graphics platform<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Select graphics platform<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en">Game Studio adds an override.</source>
+<target xml:lang="pt">Game Studio adds an override.</target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en">In the new override, next to <g id="1">Platforms</g>, select the platforms you want this override to apply to.</source>
+<target xml:lang="pt">In the new override, next to <g id="1">Platforms</g>, select the platforms you want this override to apply to.</target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Select graphics platform override<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Select graphics platform override<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en">In the <g id="1">Configuration</g> drop-down menu, select <g id="2">Rendering Settings</g>.</source>
+<target xml:lang="pt">In the <g id="1">Configuration</g> drop-down menu, select <g id="2">Rendering Settings</g>.</target>
+</trans-unit>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Select graphics platform override<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Select graphics platform override<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu29" xml:space="preserve">
+<source xml:lang="en">Under <g id="1">Rendering Settings</g>, in the <g id="2">Preferred Graphics Platform</g> drop-down menu, select the graphics platform you want to use.</source>
+<target xml:lang="pt">Under <g id="1">Rendering Settings</g>, in the <g id="2">Preferred Graphics Platform</g> drop-down menu, select the graphics platform you want to use.</target>
+</trans-unit>
+<trans-unit id="tu30" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Select graphics platform override<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Select graphics platform override<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu31" xml:space="preserve">
+<source xml:lang="en">Stride overrides the graphics platform for the platforms you selected.</source>
+<target xml:lang="pt">Stride overrides the graphics platform for the platforms you selected.</target>
+</trans-unit>
+<trans-unit id="tu32" xml:space="preserve">
+<source xml:lang="en">Check which graphics platform your project uses</source>
+<target xml:lang="pt">Check which graphics platform your project uses</target>
+</trans-unit>
+<trans-unit id="tu33" xml:space="preserve">
+<source xml:lang="en">Add a break point to your game code (eg in a script).</source>
+<target xml:lang="pt">Add a break point to your game code (eg in a script).</target>
+</trans-unit>
+<trans-unit id="tu34" xml:space="preserve">
+<source xml:lang="en">Run the project.</source>
+<target xml:lang="pt">Run the project.</target>
+</trans-unit>
+<trans-unit id="tu35" xml:space="preserve">
+<source xml:lang="en">Check the value of the <g id="1">GraphicsDevice.Platform</g> variable.</source>
+<target xml:lang="pt">Check the value of the <g id="1">GraphicsDevice.Platform</g> variable.</target>
+</trans-unit>
+<trans-unit id="tu36" xml:space="preserve">
+<source xml:lang="en">For example, this project is using Vulkan:</source>
+<target xml:lang="pt">For example, this project is using Vulkan:</target>
+</trans-unit>
+<trans-unit id="tu37" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Select graphics platform<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Select graphics platform<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu38" xml:space="preserve">
+<source xml:lang="en">See also</source>
+<target xml:lang="pt">See also</target>
+</trans-unit>
+<trans-unit id="tu39" xml:space="preserve">
+<source xml:lang="en"><g id="1">Platforms index</g></source>
+<target xml:lang="pt"><g id="1">Platforms index</g></target>
+</trans-unit>
+<trans-unit id="tu40" xml:space="preserve">
+<source xml:lang="en"><g id="1">Game settings</g></source>
+<target xml:lang="pt"><g id="1">Game settings</g></target>
+</trans-unit>
+</body>
+</file>
+</xliff>

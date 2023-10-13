@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="/D:/repos/rr/source/manual/graphics/sprite-fonts.md" source-language="en" target-language="pt" datatype="x-text/x-markdown" okp:inputEncoding="UTF-8">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en">Sprite fonts</source>
+<target xml:lang="pt">Sprite fonts</target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Intermediate<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Intermediate<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en"><g id="1">Sprite fonts</g> take a TrueType font as an input (either a system font or a file you assign) and then create all the images (sprites) of characters (glyphs) for your game.</source>
+<target xml:lang="pt"><g id="1">Sprite fonts</g> take a TrueType font as an input (either a system font or a file you assign) and then create all the images (sprites) of characters (glyphs) for your game.</target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">It's often inefficient to render fonts directly. We usually want to create (rasterize) them just once, then only render the image of a letter character (eg A, a, B, C etc) every time we need it. This involves creating a sprite (billboarded rectangular image) of the character, which is displayed on the screen as a regular image. A text block would be a collection of sprites rendered as quads so all the characters are aligned and spaced properly.</source>
+<target xml:lang="pt">It's often inefficient to render fonts directly. We usually want to create (rasterize) them just once, then only render the image of a letter character (eg A, a, B, C etc) every time we need it. This involves creating a sprite (billboarded rectangular image) of the character, which is displayed on the screen as a regular image. A text block would be a collection of sprites rendered as quads so all the characters are aligned and spaced properly.</target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">Offline-rasterized sprite fonts</source>
+<target xml:lang="pt">Offline-rasterized sprite fonts</target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en"><g id="1">Offline-rasterized</g> sprite fonts create (rasterize) a fixed number of characters (glyphs) of a certain size, and bake them into an atlas texture when building the assets for your game.</source>
+<target xml:lang="pt"><g id="1">Offline-rasterized</g> sprite fonts create (rasterize) a fixed number of characters (glyphs) of a certain size, and bake them into an atlas texture when building the assets for your game.</target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en">In the game, they can only be drawn with this size. Only the characters you specify can be displayed.</source>
+<target xml:lang="pt">In the game, they can only be drawn with this size. Only the characters you specify can be displayed.</target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en">When to use offline-rasterized fonts</source>
+<target xml:lang="pt">When to use offline-rasterized fonts</target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en">Use offline-rasterized fonts when:</source>
+<target xml:lang="pt">Use offline-rasterized fonts when:</target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en">you use a font of known size with a known character set in your game</source>
+<target xml:lang="pt">you use a font of known size with a known character set in your game</target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en">you need anti-aliasing on your fonts</source>
+<target xml:lang="pt">you need anti-aliasing on your fonts</target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en">your UI is only used in fullscreen mode</source>
+<target xml:lang="pt">your UI is only used in fullscreen mode</target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en">Do <g id="1">not</g> use offline-rasterized fonts when:</source>
+<target xml:lang="pt">Do <g id="1">not</g> use offline-rasterized fonts when:</target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en">your UI is rendered as part of the 3D world scene</source>
+<target xml:lang="pt">your UI is rendered as part of the 3D world scene</target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en">you have a varied or unknown number of font sizes and character sets</source>
+<target xml:lang="pt">you have a varied or unknown number of font sizes and character sets</target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en">Offline-rasterized sprite font properties</source>
+<target xml:lang="pt">Offline-rasterized sprite font properties</target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>media/fonts-1.png<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>media/fonts-1.png<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en">Property</source>
+<target xml:lang="pt">Property</target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en">Description</source>
+<target xml:lang="pt">Description</target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en">Font Source</source>
+<target xml:lang="pt">Font Source</target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en">System (installed on this machine) or from file. The system fonts can also take <g id="1">Bold</g> and <g id="2">Italic</g> options.</source>
+<target xml:lang="pt">System (installed on this machine) or from file. The system fonts can also take <g id="1">Bold</g> and <g id="2">Italic</g> options.</target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en">Font Type</source>
+<target xml:lang="pt">Font Type</target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en">Offline Rasterized</source>
+<target xml:lang="pt">Offline Rasterized</target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en">Size (in pixels)</source>
+<target xml:lang="pt">Size (in pixels)</target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en">The font is baked with this size. No other font size can be displayed.</source>
+<target xml:lang="pt">The font is baked with this size. No other font size can be displayed.</target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en">Character set</source>
+<target xml:lang="pt">Character set</target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en">(Optional) A text file containing all characters which need to be baked.</source>
+<target xml:lang="pt">(Optional) A text file containing all characters which need to be baked.</target>
+</trans-unit>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en">Character regions</source>
+<target xml:lang="pt">Character regions</target>
+</trans-unit>
+<trans-unit id="tu29" xml:space="preserve">
+<source xml:lang="en">Code for regions of characters which need to be baked. For example, (32 - 127) is a region sufficient for ASCII character sets.</source>
+<target xml:lang="pt">Code for regions of characters which need to be baked. For example, (32 - 127) is a region sufficient for ASCII character sets.</target>
+</trans-unit>
+<trans-unit id="tu30" xml:space="preserve">
+<source xml:lang="en">Anti alias</source>
+<target xml:lang="pt">Anti alias</target>
+</trans-unit>
+<trans-unit id="tu31" xml:space="preserve">
+<source xml:lang="en">None, Grayscale or <g id="1">ClearType</g></source>
+<target xml:lang="pt">None, Grayscale or <g id="1">ClearType</g></target>
+</trans-unit>
+<trans-unit id="tu32" xml:space="preserve">
+<source xml:lang="en">Premultiply</source>
+<target xml:lang="pt">Premultiply</target>
+</trans-unit>
+<trans-unit id="tu33" xml:space="preserve">
+<source xml:lang="en">If the alpha should be premultiplied. Default is yes to match the rest of the engine pipeline.</source>
+<target xml:lang="pt">If the alpha should be premultiplied. Default is yes to match the rest of the engine pipeline.</target>
+</trans-unit>
+<trans-unit id="tu34" xml:space="preserve">
+<source xml:lang="en">Default character</source>
+<target xml:lang="pt">Default character</target>
+</trans-unit>
+<trans-unit id="tu35" xml:space="preserve">
+<source xml:lang="en">Missing characters default to this when rendered. The default code is 32 which is space.</source>
+<target xml:lang="pt">Missing characters default to this when rendered. The default code is 32 which is space.</target>
+</trans-unit>
+<trans-unit id="tu36" xml:space="preserve">
+<source xml:lang="en">Runtime-rasterized sprite fonts</source>
+<target xml:lang="pt">Runtime-rasterized sprite fonts</target>
+</trans-unit>
+<trans-unit id="tu37" xml:space="preserve">
+<source xml:lang="en"><g id="1">Runtime-rasterized</g> sprite fonts create (rasterize) a varied number of characters (glyphs) of any size and bake them into an atlas texture <g id="2">on demand</g>.</source>
+<target xml:lang="pt"><g id="1">Runtime-rasterized</g> sprite fonts create (rasterize) a varied number of characters (glyphs) of any size and bake them into an atlas texture <g id="2">on demand</g>.</target>
+</trans-unit>
+<trans-unit id="tu38" xml:space="preserve">
+<source xml:lang="en">This function is invoked at runtime when you change the font size or request characters that haven't been drawn before.</source>
+<target xml:lang="pt">This function is invoked at runtime when you change the font size or request characters that haven't been drawn before.</target>
+</trans-unit>
+<trans-unit id="tu39" xml:space="preserve">
+<source xml:lang="en">Under the hood, the runtime-rasterized fonts use similar atlas textures to the offline-rasterized fonts. This means that if you have three different font sizes, they take about three times more memory than a single font size. The font sizes are also taken into account.</source>
+<target xml:lang="pt">Under the hood, the runtime-rasterized fonts use similar atlas textures to the offline-rasterized fonts. This means that if you have three different font sizes, they take about three times more memory than a single font size. The font sizes are also taken into account.</target>
+</trans-unit>
+<trans-unit id="tu40" xml:space="preserve">
+<source xml:lang="en">When to use runtime-rasterized fonts</source>
+<target xml:lang="pt">When to use runtime-rasterized fonts</target>
+</trans-unit>
+<trans-unit id="tu41" xml:space="preserve">
+<source xml:lang="en">Use runtime-rasterized fonts when:</source>
+<target xml:lang="pt">Use runtime-rasterized fonts when:</target>
+</trans-unit>
+<trans-unit id="tu42" xml:space="preserve">
+<source xml:lang="en">you need multiple sizes for your font or don't know which characters you need</source>
+<target xml:lang="pt">you need multiple sizes for your font or don't know which characters you need</target>
+</trans-unit>
+<trans-unit id="tu43" xml:space="preserve">
+<source xml:lang="en">the number of possible characters in the font greatly outnumbers the number of characters you need to display at runtime (eg Japanese or Chinese, which use thousands of characters)</source>
+<target xml:lang="pt">the number of possible characters in the font greatly outnumbers the number of characters you need to display at runtime (eg Japanese or Chinese, which use thousands of characters)</target>
+</trans-unit>
+<trans-unit id="tu44" xml:space="preserve">
+<source xml:lang="en">you need anti-aliasing on your fonts</source>
+<target xml:lang="pt">you need anti-aliasing on your fonts</target>
+</trans-unit>
+<trans-unit id="tu45" xml:space="preserve">
+<source xml:lang="en">your UI is only used in fullscreen mode</source>
+<target xml:lang="pt">your UI is only used in fullscreen mode</target>
+</trans-unit>
+<trans-unit id="tu46" xml:space="preserve">
+<source xml:lang="en">Do <g id="1">not</g> use runtime-rasterized fonts when:</source>
+<target xml:lang="pt">Do <g id="1">not</g> use runtime-rasterized fonts when:</target>
+</trans-unit>
+<trans-unit id="tu47" xml:space="preserve">
+<source xml:lang="en">your UI is rendered as part of the 3D world scene</source>
+<target xml:lang="pt">your UI is rendered as part of the 3D world scene</target>
+</trans-unit>
+<trans-unit id="tu48" xml:space="preserve">
+<source xml:lang="en">you only need one or two known sizes for a small character set</source>
+<target xml:lang="pt">you only need one or two known sizes for a small character set</target>
+</trans-unit>
+<trans-unit id="tu49" xml:space="preserve">
+<source xml:lang="en">you have a scaling text (as runtime-rasterized fonts will recreate every single font size)</source>
+<target xml:lang="pt">you have a scaling text (as runtime-rasterized fonts will recreate every single font size)</target>
+</trans-unit>
+<trans-unit id="tu50" xml:space="preserve">
+<source xml:lang="en">Runtime-rasterized sprite font properties</source>
+<target xml:lang="pt">Runtime-rasterized sprite font properties</target>
+</trans-unit>
+<trans-unit id="tu51" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>media/fonts-2.png<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>media/fonts-2.png<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu52" xml:space="preserve">
+<source xml:lang="en">Property</source>
+<target xml:lang="pt">Property</target>
+</trans-unit>
+<trans-unit id="tu53" xml:space="preserve">
+<source xml:lang="en">Description</source>
+<target xml:lang="pt">Description</target>
+</trans-unit>
+<trans-unit id="tu54" xml:space="preserve">
+<source xml:lang="en">Font Source</source>
+<target xml:lang="pt">Font Source</target>
+</trans-unit>
+<trans-unit id="tu55" xml:space="preserve">
+<source xml:lang="en">System (installed on this machine) or from file. The system fonts can also take <g id="1">Bold</g> and <g id="2">Italic</g> options.</source>
+<target xml:lang="pt">System (installed on this machine) or from file. The system fonts can also take <g id="1">Bold</g> and <g id="2">Italic</g> options.</target>
+</trans-unit>
+<trans-unit id="tu56" xml:space="preserve">
+<source xml:lang="en">Font Type</source>
+<target xml:lang="pt">Font Type</target>
+</trans-unit>
+<trans-unit id="tu57" xml:space="preserve">
+<source xml:lang="en">Runtime Rasterized</source>
+<target xml:lang="pt">Runtime Rasterized</target>
+</trans-unit>
+<trans-unit id="tu58" xml:space="preserve">
+<source xml:lang="en">Default Size (in pixels)</source>
+<target xml:lang="pt">Default Size (in pixels)</target>
+</trans-unit>
+<trans-unit id="tu59" xml:space="preserve">
+<source xml:lang="en">If size isn't specified the text is rendered with this one.</source>
+<target xml:lang="pt">If size isn't specified the text is rendered with this one.</target>
+</trans-unit>
+<trans-unit id="tu60" xml:space="preserve">
+<source xml:lang="en">Anti alias</source>
+<target xml:lang="pt">Anti alias</target>
+</trans-unit>
+<trans-unit id="tu61" xml:space="preserve">
+<source xml:lang="en">None, Grayscale or <g id="1">ClearType</g></source>
+<target xml:lang="pt">None, Grayscale or <g id="1">ClearType</g></target>
+</trans-unit>
+<trans-unit id="tu62" xml:space="preserve">
+<source xml:lang="en">Default character</source>
+<target xml:lang="pt">Default character</target>
+</trans-unit>
+<trans-unit id="tu63" xml:space="preserve">
+<source xml:lang="en">Missing characters will default to this one when rendered. The default code is 32, which is space.</source>
+<target xml:lang="pt">Missing characters will default to this one when rendered. The default code is 32, which is space.</target>
+</trans-unit>
+<trans-unit id="tu64" xml:space="preserve">
+<source xml:lang="en">Signed distance field sprite fonts</source>
+<target xml:lang="pt">Signed distance field sprite fonts</target>
+</trans-unit>
+<trans-unit id="tu65" xml:space="preserve">
+<source xml:lang="en"><g id="1">Signed distance field</g> (SDF) fonts use an entirely different technique to render fonts. Rather than rasterize the color of the character on the sprite, they output the distance of the current pixel to the closest edge of the glyph.</source>
+<target xml:lang="pt"><g id="1">Signed distance field</g> (SDF) fonts use an entirely different technique to render fonts. Rather than rasterize the color of the character on the sprite, they output the distance of the current pixel to the closest edge of the glyph.</target>
+</trans-unit>
+<trans-unit id="tu66" xml:space="preserve">
+<source xml:lang="en">The distance is positive if the pixel is <g id="1">inside</g> the glyph boundaries, and negative if the pixel is <g id="2">outside</g> the glyph (hence the name signed).</source>
+<target xml:lang="pt">The distance is positive if the pixel is <g id="1">inside</g> the glyph boundaries, and negative if the pixel is <g id="2">outside</g> the glyph (hence the name signed).</target>
+</trans-unit>
+<trans-unit id="tu67" xml:space="preserve">
+<source xml:lang="en">When rendering, check the distance and output a white pixel if it's positive or <g id="1">0</g>, and a black pixel if it's negative. This allows very sharp and clean edges to be rendered even under magnification (which otherwise makes traditional sprites look pixelated).</source>
+<target xml:lang="pt">When rendering, check the distance and output a white pixel if it's positive or <g id="1">0</g>, and a black pixel if it's negative. This allows very sharp and clean edges to be rendered even under magnification (which otherwise makes traditional sprites look pixelated).</target>
+</trans-unit>
+<trans-unit id="tu68" xml:space="preserve">
+<source xml:lang="en">The image below compares SDF fonts and the offline-rasterized fonts under magnification:</source>
+<target xml:lang="pt">The image below compares SDF fonts and the offline-rasterized fonts under magnification:</target>
+</trans-unit>
+<trans-unit id="tu69" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>media/fonts-5.png<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>media/fonts-5.png<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu70" xml:space="preserve">
+<source xml:lang="en">When to use SDF fonts</source>
+<target xml:lang="pt">When to use SDF fonts</target>
+</trans-unit>
+<trans-unit id="tu71" xml:space="preserve">
+<source xml:lang="en">Use SDF fonts when:</source>
+<target xml:lang="pt">Use SDF fonts when:</target>
+</trans-unit>
+<trans-unit id="tu72" xml:space="preserve">
+<source xml:lang="en">your UI is rendered as part of the 3D world scene or fullscreen (SDF works well for both cases)</source>
+<target xml:lang="pt">your UI is rendered as part of the 3D world scene or fullscreen (SDF works well for both cases)</target>
+</trans-unit>
+<trans-unit id="tu73" xml:space="preserve">
+<source xml:lang="en">you have a scaling text or expect the user to be able to zoom in</source>
+<target xml:lang="pt">you have a scaling text or expect the user to be able to zoom in</target>
+</trans-unit>
+<trans-unit id="tu74" xml:space="preserve">
+<source xml:lang="en">you require multiple sizes for your font</source>
+<target xml:lang="pt">you require multiple sizes for your font</target>
+</trans-unit>
+<trans-unit id="tu75" xml:space="preserve">
+<source xml:lang="en">you have very large font sizes (SDF consumes less memory than runtime-rasterized fonts)</source>
+<target xml:lang="pt">you have very large font sizes (SDF consumes less memory than runtime-rasterized fonts)</target>
+</trans-unit>
+<trans-unit id="tu76" xml:space="preserve">
+<source xml:lang="en">Do <g id="1">not</g> use SDF fonts when:</source>
+<target xml:lang="pt">Do <g id="1">not</g> use SDF fonts when:</target>
+</trans-unit>
+<trans-unit id="tu77" xml:space="preserve">
+<source xml:lang="en">you need anti-aliasing on your fonts (SDF fonts currently don't support it)</source>
+<target xml:lang="pt">you need anti-aliasing on your fonts (SDF fonts currently don't support it)</target>
+</trans-unit>
+<trans-unit id="tu78" xml:space="preserve">
+<source xml:lang="en">you only require one or two known sizes for a small character set (better use offline-rasterized font)</source>
+<target xml:lang="pt">you only require one or two known sizes for a small character set (better use offline-rasterized font)</target>
+</trans-unit>
+<trans-unit id="tu79" xml:space="preserve">
+<source xml:lang="en">the number of possible characters in the font greatly outnumbers the number of characters you need to display at runtime (eg Japanese or Chinese, which use thousands of characters). If a runtime-rasterized font is not an option (eg because of scaling), make sure you bake every character you might need, or they won't be displayed.</source>
+<target xml:lang="pt">the number of possible characters in the font greatly outnumbers the number of characters you need to display at runtime (eg Japanese or Chinese, which use thousands of characters). If a runtime-rasterized font is not an option (eg because of scaling), make sure you bake every character you might need, or they won't be displayed.</target>
+</trans-unit>
+<trans-unit id="tu80" xml:space="preserve">
+<source xml:lang="en">SDF properties</source>
+<target xml:lang="pt">SDF properties</target>
+</trans-unit>
+<trans-unit id="tu81" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>media/fonts-3.png<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>media/fonts-3.png<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu82" xml:space="preserve">
+<source xml:lang="en">Property</source>
+<target xml:lang="pt">Property</target>
+</trans-unit>
+<trans-unit id="tu83" xml:space="preserve">
+<source xml:lang="en">Description</source>
+<target xml:lang="pt">Description</target>
+</trans-unit>
+<trans-unit id="tu84" xml:space="preserve">
+<source xml:lang="en">Font Source</source>
+<target xml:lang="pt">Font Source</target>
+</trans-unit>
+<trans-unit id="tu85" xml:space="preserve">
+<source xml:lang="en">System (installed on this machine) or from file. The system fonts can also choose <g id="1">Bold</g> and <g id="2">Italic</g> options.</source>
+<target xml:lang="pt">System (installed on this machine) or from file. The system fonts can also choose <g id="1">Bold</g> and <g id="2">Italic</g> options.</target>
+</trans-unit>
+<trans-unit id="tu86" xml:space="preserve">
+<source xml:lang="en">Font Type</source>
+<target xml:lang="pt">Font Type</target>
+</trans-unit>
+<trans-unit id="tu87" xml:space="preserve">
+<source xml:lang="en">Offline Rasterized</source>
+<target xml:lang="pt">Offline Rasterized</target>
+</trans-unit>
+<trans-unit id="tu88" xml:space="preserve">
+<source xml:lang="en">Size (in pixels)</source>
+<target xml:lang="pt">Size (in pixels)</target>
+</trans-unit>
+<trans-unit id="tu89" xml:space="preserve">
+<source xml:lang="en">The font will be baked with this size. All font sizes can still be displayed. Bigger size usually results in better quality, and generally you want to keep this at 20 or more to avoid visual glitches.</source>
+<target xml:lang="pt">The font will be baked with this size. All font sizes can still be displayed. Bigger size usually results in better quality, and generally you want to keep this at 20 or more to avoid visual glitches.</target>
+</trans-unit>
+<trans-unit id="tu90" xml:space="preserve">
+<source xml:lang="en">Character set</source>
+<target xml:lang="pt">Character set</target>
+</trans-unit>
+<trans-unit id="tu91" xml:space="preserve">
+<source xml:lang="en">(Optional) A text file containing all characters which need to be baked.</source>
+<target xml:lang="pt">(Optional) A text file containing all characters which need to be baked.</target>
+</trans-unit>
+<trans-unit id="tu92" xml:space="preserve">
+<source xml:lang="en">Character regions</source>
+<target xml:lang="pt">Character regions</target>
+</trans-unit>
+<trans-unit id="tu93" xml:space="preserve">
+<source xml:lang="en">Code for regions of characters which need to be baked. For example (32 - 127) is a region sufficient for ASCII character sets.</source>
+<target xml:lang="pt">Code for regions of characters which need to be baked. For example (32 - 127) is a region sufficient for ASCII character sets.</target>
+</trans-unit>
+<trans-unit id="tu94" xml:space="preserve">
+<source xml:lang="en">Default character</source>
+<target xml:lang="pt">Default character</target>
+</trans-unit>
+<trans-unit id="tu95" xml:space="preserve">
+<source xml:lang="en">Missing characters will default to this one when rendered. The default code is 32 which is space.</source>
+<target xml:lang="pt">Missing characters will default to this one when rendered. The default code is 32 which is space.</target>
+</trans-unit>
+<trans-unit id="tu96" xml:space="preserve">
+<source xml:lang="en">Texture atlases for different sprite fonts</source>
+<target xml:lang="pt">Texture atlases for different sprite fonts</target>
+</trans-unit>
+<trans-unit id="tu97" xml:space="preserve">
+<source xml:lang="en">Offline rasterized</source>
+<target xml:lang="pt">Offline rasterized</target>
+</trans-unit>
+<trans-unit id="tu98" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>media/fonts-6.png<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>media/fonts-6.png<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu99" xml:space="preserve">
+<source xml:lang="en">The offline-rasterized sprite font bakes all requested characters once in a grayscale texture. If you zoom in, you'll see that they are pixelated. The font has a fixed size and doesn't work well for scaling text.</source>
+<target xml:lang="pt">The offline-rasterized sprite font bakes all requested characters once in a grayscale texture. If you zoom in, you'll see that they are pixelated. The font has a fixed size and doesn't work well for scaling text.</target>
+</trans-unit>
+<trans-unit id="tu100" xml:space="preserve">
+<source xml:lang="en">Runtime rasterized</source>
+<target xml:lang="pt">Runtime rasterized</target>
+</trans-unit>
+<trans-unit id="tu101" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>media/fonts-8.png<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>media/fonts-8.png<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu102" xml:space="preserve">
+<source xml:lang="en">The runtime-rasterized sprite font only bakes (rasterizes) the characters that are drawn in the game. The initial atlas texture is intentionally bigger so it can hold more characters of potentially different sizes before it needs resizing.</source>
+<target xml:lang="pt">The runtime-rasterized sprite font only bakes (rasterizes) the characters that are drawn in the game. The initial atlas texture is intentionally bigger so it can hold more characters of potentially different sizes before it needs resizing.</target>
+</trans-unit>
+<trans-unit id="tu103" xml:space="preserve">
+<source xml:lang="en">Signed distance field</source>
+<target xml:lang="pt">Signed distance field</target>
+</trans-unit>
+<trans-unit id="tu104" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>media/fonts-7.png<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>media/fonts-7.png<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu105" xml:space="preserve">
+<source xml:lang="en">Like the offline-rasterized sprite font, the signed distance field sprite font bakes all requested characters once. The major difference is that it encodes distances from the character lines rather than actual color, and it uses all three channels' RGB. You can still recognize each character, but a special shader is needed to render them properly. The upside is that the edges remain sharp, even under magnification.</source>
+<target xml:lang="pt">Like the offline-rasterized sprite font, the signed distance field sprite font bakes all requested characters once. The major difference is that it encodes distances from the character lines rather than actual color, and it uses all three channels' RGB. You can still recognize each character, but a special shader is needed to render them properly. The upside is that the edges remain sharp, even under magnification.</target>
+</trans-unit>
+<trans-unit id="tu106" xml:space="preserve">
+<source xml:lang="en">Further reading</source>
+<target xml:lang="pt">Further reading</target>
+</trans-unit>
+<trans-unit id="tu107" xml:space="preserve">
+<source xml:lang="en"><g id="1">Paper on how distance fields and multi-channel distance fields in particular work</g></source>
+<target xml:lang="pt"><g id="1">Paper on how distance fields and multi-channel distance fields in particular work</g></target>
+</trans-unit>
+<trans-unit id="tu108" xml:space="preserve">
+<source xml:lang="en"><g id="1">Stack Exchange thread outlining the differences between single-channel SDF and multi-channel SDF fonts</g></source>
+<target xml:lang="pt"><g id="1">Stack Exchange thread outlining the differences between single-channel SDF and multi-channel SDF fonts</g></target>
+</trans-unit>
+</body>
+</file>
+</xliff>

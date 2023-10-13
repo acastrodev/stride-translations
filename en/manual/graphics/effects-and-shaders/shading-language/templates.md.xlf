@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="/D:/repos/rr/source/manual/graphics/effects-and-shaders/shading-language/templates.md" source-language="en" target-language="pt" datatype="x-text/x-markdown" okp:inputEncoding="UTF-8">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en">Templates</source>
+<target xml:lang="pt">Templates</target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en">Shader templating is available in SDSL. Unlike many templating systems, sdsl requires strong typed templates. The available types are:</source>
+<target xml:lang="pt">Shader templating is available in SDSL. Unlike many templating systems, sdsl requires strong typed templates. The available types are:</target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">value types from HLSL (float, int, float2, float3, float4)</source>
+<target xml:lang="pt">value types from HLSL (float, int, float2, float3, float4)</target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">2D textures</source>
+<target xml:lang="pt">2D textures</target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">sampler states</source>
+<target xml:lang="pt">sampler states</target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en">semantics (used to replace semantics on variables)</source>
+<target xml:lang="pt">semantics (used to replace semantics on variables)</target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en">link types (used to replace link annotations)</source>
+<target xml:lang="pt">link types (used to replace link annotations)</target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en">An instantiated shader behaves the same way as any other shader. The value, texture and sampler template parameters are accessible like any other variable. However, it's impossible to modify their value; attempting to do so results in a compilation error. If a template variable is incorrectly used (eg using a sampler as a semantic), it should result in a compilation error. However, the behavior is officially unknown.</source>
+<target xml:lang="pt">An instantiated shader behaves the same way as any other shader. The value, texture and sampler template parameters are accessible like any other variable. However, it's impossible to modify their value; attempting to do so results in a compilation error. If a template variable is incorrectly used (eg using a sampler as a semantic), it should result in a compilation error. However, the behavior is officially unknown.</target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en"><g id="1">Code:</g> Templating</source>
+<target xml:lang="pt"><g id="1">Code:</g> Templating</target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en">shader TemplateShader&lt;float speed, Texture2D myTexture, SamplerState mySampler, Semantic mySemantic, LinkType myLink>
+{
+	[Color]
+	[Link("myLink")]
+	float4 myColor;
+ 
+	stream float2 texcoord : mySemantic;
+ 
+	float4 GetValue()
+	{
+		return speed * myColor * myTexture.Sample(mySampler, streams.texcoord);
+	}
+};
+ 
+// To instantiate the shader, use:
+TemplateShader&lt;1.0f, Texturing.Texture0, Texturing.Sampler0, TEXCOORD0, MyColorLink>
+</source>
+<target xml:lang="pt">shader TemplateShader&lt;float speed, Texture2D myTexture, SamplerState mySampler, Semantic mySemantic, LinkType myLink>
+{
+	[Color]
+	[Link("myLink")]
+	float4 myColor;
+ 
+	stream float2 texcoord : mySemantic;
+ 
+	float4 GetValue()
+	{
+		return speed * myColor * myTexture.Sample(mySampler, streams.texcoord);
+	}
+};
+ 
+// To instantiate the shader, use:
+TemplateShader&lt;1.0f, Texturing.Texture0, Texturing.Sampler0, TEXCOORD0, MyColorLink>
+</target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en">See also</source>
+<target xml:lang="pt">See also</target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en"><g id="1">Effect language</g></source>
+<target xml:lang="pt"><g id="1">Effect language</g></target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en"><g id="1">Shading language index</g></source>
+<target xml:lang="pt"><g id="1">Shading language index</g></target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en"><g id="1">Shader classes, mixins, and inheritance</g></source>
+<target xml:lang="pt"><g id="1">Shader classes, mixins, and inheritance</g></target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en"><g id="1">Composition</g></source>
+<target xml:lang="pt"><g id="1">Composition</g></target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en"><g id="1">Shader stage input/output automatic management</g></source>
+<target xml:lang="pt"><g id="1">Shader stage input/output automatic management</g></target>
+</trans-unit>
+</body>
+</file>
+</xliff>

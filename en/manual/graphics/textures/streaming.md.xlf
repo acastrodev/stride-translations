@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="/D:/repos/rr/source/manual/graphics/textures/streaming.md" source-language="en" target-language="pt" datatype="x-text/x-markdown" okp:inputEncoding="UTF-8">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en">Streaming</source>
+<target xml:lang="pt">Streaming</target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Beginner<x id="2"/>
+<x id="3"/>Artist<x id="4"/>
+<x id="5"/>Programmer<x id="6"/></source>
+<target xml:lang="pt"><x id="1"/>Beginner<x id="2"/>
+<x id="3"/>Artist<x id="4"/>
+<x id="5"/>Programmer<x id="6"/></target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">When you <g id="1">stream</g> textures, Stride only loads them when they're needed. This significantly decreases the time it takes to load a game or scene, uses less memory, and makes your game easier to scale.</source>
+<target xml:lang="pt">When you <g id="1">stream</g> textures, Stride only loads them when they're needed. This significantly decreases the time it takes to load a game or scene, uses less memory, and makes your game easier to scale.</target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>!Note<x id="2"/>
+Currently, only textures can be streamed.</source>
+<target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
+Currently, only textures can be streamed.</target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">How Stride streams textures</source>
+<target xml:lang="pt">How Stride streams textures</target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en">Instead of loading a texture when Stride loads the scene (with all its mipmaps), Stride only loads it when it's used (eg a model using the texture is onscreen).</source>
+<target xml:lang="pt">Instead of loading a texture when Stride loads the scene (with all its mipmaps), Stride only loads it when it's used (eg a model using the texture is onscreen).</target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en">When the texture is no longer needed (ie no objects that use the texture are onscreen), Stride unloads it.</source>
+<target xml:lang="pt">When the texture is no longer needed (ie no objects that use the texture are onscreen), Stride unloads it.</target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en">Currently, there's no loading priority for textures. For example, Stride doesn't load textures based on distance; instead, Stride loads them all in sequence.</source>
+<target xml:lang="pt">Currently, there's no loading priority for textures. For example, Stride doesn't load textures based on distance; instead, Stride loads them all in sequence.</target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en">Using streaming with mipmaps</source>
+<target xml:lang="pt">Using streaming with mipmaps</target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en">If mipmaps (different-resolution versions of textures displayed at different distances) are enabled in the <g id="1">texture properties</g>, the lower-resolution mipmaps load first, as they're smaller in size. The gif below shows this process happening in slow motion.</source>
+<target xml:lang="pt">If mipmaps (different-resolution versions of textures displayed at different distances) are enabled in the <g id="1">texture properties</g>, the lower-resolution mipmaps load first, as they're smaller in size. The gif below shows this process happening in slow motion.</target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Texture loading<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Texture loading<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en">In most situations, the process is very quick. We recommend you enable mipmaps for streaming as it means lower-resolution versions of textures act as placeholders until the higher-quality versions can load, reducing pop-in.</source>
+<target xml:lang="pt">In most situations, the process is very quick. We recommend you enable mipmaps for streaming as it means lower-resolution versions of textures act as placeholders until the higher-quality versions can load, reducing pop-in.</target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en">When <g id="1">not</g> to use streaming</source>
+<target xml:lang="pt">When <g id="1">not</g> to use streaming</target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en">Streaming is enabled by default for all textures. You might want to disable streaming on important textures you always want to display immediately and in high quality, such as:</source>
+<target xml:lang="pt">Streaming is enabled by default for all textures. You might want to disable streaming on important textures you always want to display immediately and in high quality, such as:</target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en"><g id="1">splash screens</g></source>
+<target xml:lang="pt"><g id="1">splash screens</g></target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en">textures on player models</source>
+<target xml:lang="pt">textures on player models</target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en">textures used in <g id="1">particles</g> (particles often have a short lifespan, so might disappear before the texture loads)</source>
+<target xml:lang="pt">textures used in <g id="1">particles</g> (particles often have a short lifespan, so might disappear before the texture loads)</target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en">Enable or disable streaming on a texture</source>
+<target xml:lang="pt">Enable or disable streaming on a texture</target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en">In the <g id="1">Asset View</g>, select the texture.</source>
+<target xml:lang="pt">In the <g id="1">Asset View</g>, select the texture.</target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Select normal map texture<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Select normal map texture<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en">In the <g id="1">Property Grid</g>, under <g id="2">Format</g>, use the <g id="3">Stream</g> check box.</source>
+<target xml:lang="pt">In the <g id="1">Property Grid</g>, under <g id="2">Format</g>, use the <g id="3">Stream</g> check box.</target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Enable streaming<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Enable streaming<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en">Global streaming settings</source>
+<target xml:lang="pt">Global streaming settings</target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en">You can access the global streaming settings in the Game Settings asset. These settings apply to all textures that have streaming enabled.</source>
+<target xml:lang="pt">You can access the global streaming settings in the Game Settings asset. These settings apply to all textures that have streaming enabled.</target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en">For instructions about how to access the global streaming settings, see the <g id="1">Game Settings</g> page.</source>
+<target xml:lang="pt">For instructions about how to access the global streaming settings, see the <g id="1">Game Settings</g> page.</target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en">Properties</source>
+<target xml:lang="pt">Properties</target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>Streaming settings<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>Streaming settings<x id="2"/></target>
+</trans-unit>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en">Property</source>
+<target xml:lang="pt">Property</target>
+</trans-unit>
+<trans-unit id="tu29" xml:space="preserve">
+<source xml:lang="en">Description</source>
+<target xml:lang="pt">Description</target>
+</trans-unit>
+<trans-unit id="tu30" xml:space="preserve">
+<source xml:lang="en">Streaming</source>
+<target xml:lang="pt">Streaming</target>
+</trans-unit>
+<trans-unit id="tu31" xml:space="preserve">
+<source xml:lang="en">Enable streaming</source>
+<target xml:lang="pt">Enable streaming</target>
+</trans-unit>
+<trans-unit id="tu32" xml:space="preserve">
+<source xml:lang="en">Update interval</source>
+<target xml:lang="pt">Update interval</target>
+</trans-unit>
+<trans-unit id="tu33" xml:space="preserve">
+<source xml:lang="en">How frequently Stride updates the streaming. Smaller intervals mean the streaming system reacts faster, but use more CPU and cause more memory fluctuations.</source>
+<target xml:lang="pt">How frequently Stride updates the streaming. Smaller intervals mean the streaming system reacts faster, but use more CPU and cause more memory fluctuations.</target>
+</trans-unit>
+<trans-unit id="tu34" xml:space="preserve">
+<source xml:lang="en">Max resources per update</source>
+<target xml:lang="pt">Max resources per update</target>
+</trans-unit>
+<trans-unit id="tu35" xml:space="preserve">
+<source xml:lang="en">The maximum number of textures loaded or unloaded per streaming update. Higher numbers reduce pop-in but might slow down the framerate.</source>
+<target xml:lang="pt">The maximum number of textures loaded or unloaded per streaming update. Higher numbers reduce pop-in but might slow down the framerate.</target>
+</trans-unit>
+<trans-unit id="tu36" xml:space="preserve">
+<source xml:lang="en">Resource timeout (ms)</source>
+<target xml:lang="pt">Resource timeout (ms)</target>
+</trans-unit>
+<trans-unit id="tu37" xml:space="preserve">
+<source xml:lang="en">How long resources stay loaded after they're no longer used (when the <g id="1">memory budget</g> is exceeded)</source>
+<target xml:lang="pt">How long resources stay loaded after they're no longer used (when the <g id="1">memory budget</g> is exceeded)</target>
+</trans-unit>
+<trans-unit id="tu38" xml:space="preserve">
+<source xml:lang="en">Memory budget (in MB)</source>
+<target xml:lang="pt">Memory budget (in MB)</target>
+</trans-unit>
+<trans-unit id="tu39" xml:space="preserve">
+<source xml:lang="en">When the memory used by streaming exceeds this budget, Stride unloads unused textures. You can increase this to keep more textures loaded when you have memory to spare, and vice versa.</source>
+<target xml:lang="pt">When the memory used by streaming exceeds this budget, Stride unloads unused textures. You can increase this to keep more textures loaded when you have memory to spare, and vice versa.</target>
+</trans-unit>
+<trans-unit id="tu40" xml:space="preserve">
+<source xml:lang="en">Access the streaming manager in code</source>
+<target xml:lang="pt">Access the streaming manager in code</target>
+</trans-unit>
+<trans-unit id="tu41" xml:space="preserve">
+<source xml:lang="en">Use <g id="1">Streaming</g>.</source>
+<target xml:lang="pt">Use <g id="1">Streaming</g>.</target>
+</trans-unit>
+<trans-unit id="tu42" xml:space="preserve">
+<source xml:lang="en">For example, to disable streaming globally, use:</source>
+<target xml:lang="pt">For example, to disable streaming globally, use:</target>
+</trans-unit>
+<trans-unit id="tu43" xml:space="preserve">
+<source xml:lang="en">Streaming.EnableStreaming = false;
+</source>
+<target xml:lang="pt">Streaming.EnableStreaming = false;
+</target>
+</trans-unit>
+<trans-unit id="tu44" xml:space="preserve">
+<source xml:lang="en">To start streaming a texture:</source>
+<target xml:lang="pt">To start streaming a texture:</target>
+</trans-unit>
+<trans-unit id="tu45" xml:space="preserve">
+<source xml:lang="en">Streaming.StreamResources(myTexture);
+</source>
+<target xml:lang="pt">Streaming.StreamResources(myTexture);
+</target>
+</trans-unit>
+<trans-unit id="tu46" xml:space="preserve">
+<source xml:lang="en">To disable streaming at load time:</source>
+<target xml:lang="pt">To disable streaming at load time:</target>
+</trans-unit>
+<trans-unit id="tu47" xml:space="preserve">
+<source xml:lang="en">var texture = Content.Load&lt;Texture>("myTexture", ContentManagerLoaderSettings.StreamingDisabled);
+</source>
+<target xml:lang="pt">var texture = Content.Load&lt;Texture>("myTexture", ContentManagerLoaderSettings.StreamingDisabled);
+</target>
+</trans-unit>
+<trans-unit id="tu48" xml:space="preserve">
+<source xml:lang="en">Options</source>
+<target xml:lang="pt">Options</target>
+</trans-unit>
+<trans-unit id="tu49" xml:space="preserve">
+<source xml:lang="en">There are three <g id="1">StreamingOptions</g>:</source>
+<target xml:lang="pt">There are three <g id="1">StreamingOptions</g>:</target>
+</trans-unit>
+<trans-unit id="tu50" xml:space="preserve">
+<source xml:lang="en">The <g id="1">KeepLoaded</g> option keeps the texture in memory even when the memory budget is exceeded.</source>
+<target xml:lang="pt">The <g id="1">KeepLoaded</g> option keeps the texture in memory even when the memory budget is exceeded.</target>
+</trans-unit>
+<trans-unit id="tu51" xml:space="preserve">
+<source xml:lang="en">If mipmaps are enabled, the <g id="1">ForceHighestQuality</g> option loads only the highest-quality version of the texture.</source>
+<target xml:lang="pt">If mipmaps are enabled, the <g id="1">ForceHighestQuality</g> option loads only the highest-quality version of the texture.</target>
+</trans-unit>
+<trans-unit id="tu52" xml:space="preserve">
+<source xml:lang="en">The <g id="1">KeepLoaded</g> option keeps the texture in memory even when it's not used.</source>
+<target xml:lang="pt">The <g id="1">KeepLoaded</g> option keeps the texture in memory even when it's not used.</target>
+</trans-unit>
+<trans-unit id="tu53" xml:space="preserve">
+<source xml:lang="en">For example:</source>
+<target xml:lang="pt">For example:</target>
+</trans-unit>
+<trans-unit id="tu54" xml:space="preserve">
+<source xml:lang="en">var myOptions = new StreamingOptions() { KeepLoaded = true };
+Streaming.StreamResources(myTexture, myOptions);
+</source>
+<target xml:lang="pt">var myOptions = new StreamingOptions() { KeepLoaded = true };
+Streaming.StreamResources(myTexture, myOptions);
+</target>
+</trans-unit>
+<trans-unit id="tu55" xml:space="preserve">
+<source xml:lang="en">To change the <g id="1">StreamingOptions</g> at runtime, use <g id="2">SetResourceStreamingOptions</g>. For example:</source>
+<target xml:lang="pt">To change the <g id="1">StreamingOptions</g> at runtime, use <g id="2">SetResourceStreamingOptions</g>. For example:</target>
+</trans-unit>
+<trans-unit id="tu56" xml:space="preserve">
+<source xml:lang="en">var myNewOptions = new StreamingOptions() { KeepLoaded = false };
+Streaming.SetResourceStreamingOptions(myTexture, myNewOptions);
+</source>
+<target xml:lang="pt">var myNewOptions = new StreamingOptions() { KeepLoaded = false };
+Streaming.SetResourceStreamingOptions(myTexture, myNewOptions);
+</target>
+</trans-unit>
+<trans-unit id="tu57" xml:space="preserve">
+<source xml:lang="en">See also</source>
+<target xml:lang="pt">See also</target>
+</trans-unit>
+<trans-unit id="tu58" xml:space="preserve">
+<source xml:lang="en"><g id="1">StreamingManager API</g></source>
+<target xml:lang="pt"><g id="1">StreamingManager API</g></target>
+</trans-unit>
+<trans-unit id="tu59" xml:space="preserve">
+<source xml:lang="en"><g id="1">Textures index</g></source>
+<target xml:lang="pt"><g id="1">Textures index</g></target>
+</trans-unit>
+<trans-unit id="tu60" xml:space="preserve">
+<source xml:lang="en"><g id="1">Texture compression</g></source>
+<target xml:lang="pt"><g id="1">Texture compression</g></target>
+</trans-unit>
+<trans-unit id="tu61" xml:space="preserve">
+<source xml:lang="en"><g id="1">Game Settings</g></source>
+<target xml:lang="pt"><g id="1">Game Settings</g></target>
+</trans-unit>
+</body>
+</file>
+</xliff>
