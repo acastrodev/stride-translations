@@ -12,6 +12,8 @@ Este projeto se concentra em traduzir a documentação existente para o portugu�
 - **BasicCAT como ferramenta CAT:** [BasicCAT](https://www.basiccat.org/) como ferramenta para gerenciar o processo de tradução.
 - **API LibreTranslate — para Auto-Tradução Inicial:** Este projeto utiliza a [API LibreTranslate](https://libretranslate.com/) para a auto-tradução inicial.
 
+Neste [link](https://github.com/acastrodev/stride-translations/blob/main/PROGRESS.md), você pode acompanhar o progresso da tradução.
+
 ------
 
 # Stride Engine Documentation Translation Project (pt-BR 🇧🇷)
@@ -27,3 +29,5 @@ This project focuses on translating the existing documentation into Brazilian Po
 ## Tech-stach
 - **BasicCAT as CAT tool:** [BasicCAT](https://www.basiccat.org/) as a tool to manage the translation process.
 - **LibreTranslate API — for intital Auto-Translation:** This project uses the [LibreTranslate API](https://libretranslate.com/) for the initial auto-translation.
+
+You can track the progress of the translation at this [link](https://github.com/acastrodev/stride-translations/blob/main/PROGRESS.md).
