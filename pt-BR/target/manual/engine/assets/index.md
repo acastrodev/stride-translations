@@ -28,7 +28,7 @@ Carregar um ativo deve ser feito com a ajuda de @'Stride. Core.Serialization.Ass
 // Carregar um ativo diretamente de um arquivo:
 var texture = Content.Load<Texture>("texture1");
 
-// Carregar um recurso de cena
+// Carregar um asset de cena
 var scene = Content.Load<Scene>("scenes/scene1");
  
 // Carregar um ativo de Entidade

@@ -43,7 +43,7 @@
 </trans-unit>
 <trans-unit id="tu11" xml:space="preserve">
 <source xml:lang="en">Resource files</source>
-<target xml:lang="pt">Arquivos de recurso</target>
+<target xml:lang="pt">Arquivos de asset</target>
 </trans-unit>
 <trans-unit id="tu12" xml:space="preserve">
 <source xml:lang="en"><g id="1">Resource files</g> are files imported into Game Studio and used by assets. They include image files (eg <g id="2">.png</g>, <g id="3">.jpg</g>), audio files (eg <g id="4">.mp3</g>, <g id="5">.wav</g>), and models (eg <g id="6">.fbx</g>). We recommend you save these files in the <g id="7">Resources</g> folder in your project folder.</source>
@@ -51,11 +51,11 @@
 </trans-unit>
 <trans-unit id="tu13" xml:space="preserve">
 <source xml:lang="en">We don't recommend you save resource files in the Assets folder. You might be used to organizing files this way if you use Unity®, as Unity® requires resource files and asset files to be in the same folder. Stride doesn't require this, and doing so has downsides.</source>
-<target xml:lang="pt">Não recomendamos que você salve arquivos de recursos na pasta Ativos. Você pode ser usado para organizar arquivos desta forma se você usar Unity®, pois Unity® requer arquivos de recursos e arquivos de ativos para estar na mesma pasta. O Stride não precisa disto, e fazê-lo tem desvantagens.</target>
+<target xml:lang="pt">Não recomendamos que você salve arquivos de assets na pasta Ativos. Você pode ser usado para organizar arquivos desta forma se você usar Unity®, pois Unity® requer arquivos de assets e arquivos de ativos para estar na mesma pasta. O Stride não precisa disto, e fazê-lo tem desvantagens.</target>
 </trans-unit>
 <trans-unit id="tu14" xml:space="preserve">
 <source xml:lang="en">For example, imagine an artist has edited 10GB of textures and committed them to source control. At the same time, a designer needs to edit an asset quickly. To do this, the designer gets the latest version of the asset from source control. However, because the assets and resource files are in the same folder, the designer is forced to get the 10gb of files at the same time. If the files are in a separate folder, however, the designer only has to get the folder they need. Additionally, as asset files are much smaller than resource files, it's much faster to navigate the asset history in a dedicated asset folder.</source>
-<target xml:lang="pt">Por exemplo, imagine que um artista tenha editado 10GB de texturas e comprometido com o controle de fonte. Ao mesmo tempo, um designer precisa editar um ativo rapidamente. Para fazer isso, o designer recebe a versão mais recente do ativo do controle de origem. No entanto, porque os ativos e arquivos de recursos estão na mesma pasta, o designer é forçado a obter o 10gb de arquivos ao mesmo tempo. Se os arquivos estão em uma pasta separada, no entanto, o designer só tem que obter a pasta que eles precisam. Além disso, como arquivos de ativos são muito menores do que arquivos de recursos, é muito mais rápido navegar no histórico de ativos em uma pasta de ativos dedicada.</target>
+<target xml:lang="pt">Por exemplo, imagine que um artista tenha editado 10GB de texturas e comprometido com o controle de fonte. Ao mesmo tempo, um designer precisa editar um ativo rapidamente. Para fazer isso, o designer recebe a versão mais recente do ativo do controle de origem. No entanto, porque os ativos e arquivos de assets estão na mesma pasta, o designer é forçado a obter o 10gb de arquivos ao mesmo tempo. Se os arquivos estão em uma pasta separada, no entanto, o designer só tem que obter a pasta que eles precisam. Além disso, como arquivos de ativos são muito menores do que arquivos de assets, é muito mais rápido navegar no histórico de ativos em uma pasta de ativos dedicada.</target>
 </trans-unit>
 <trans-unit id="tu15" xml:space="preserve">
 <source xml:lang="en">Content creation files</source>
@@ -97,7 +97,7 @@
     - MyGame. Jogo
     - MyGame
     - obj
-    - Recursos
+    - Assets
         - textura. png
 - Ficheiros de Criação de Conteúdo
     - textura.psd
@@ -132,7 +132,7 @@
     - MyGame. Jogo
     - MyGame
     - obj
-    - Recursos
+    - Assets
         - textura. png
         - modelo.fbx
 - Projetos do Photoshop
@@ -151,7 +151,7 @@
 </trans-unit>
 <trans-unit id="tu25" xml:space="preserve">
 <source xml:lang="en">The programmers check out the <g id="1">MyGame</g> project folder containing code, assets, and resources.</source>
-<target xml:lang="pt">Os programadores verificam a pasta de projeto <g id="1">MyGame</g> contendo código, ativos e recursos.</target>
+<target xml:lang="pt">Os programadores verificam a pasta de projeto <g id="1">MyGame</g> contendo código, assets e recursos.</target>
 </trans-unit>
 <trans-unit id="tu26" xml:space="preserve">
 <source xml:lang="en">The 2D artists check out the game project and the <g id="1">PhotoshopProjects</g> folder containing <g id="2">.psd</g> files.</source>

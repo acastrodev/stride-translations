@@ -36,7 +36,7 @@ Para começar, use o script integrado do Game Profiler, anexá-lo a uma entidade
 #### Formas de depuração física no tempo de execução
 Agora é possível permitir a renderização de formas de colisão de física durante o tempo de execução.
 As formas de depuração são entidades normais e devem ser habilitadas para cada forma física que o requer.
-A melhor maneira de começar com esse recurso é usar o script embutido do Physics Shapes Render e anexar o script a qualquer entidade que tenha um Componente de Física e quando o jogo estiver executando a imprensa LCtrl-LShift-P.
+A melhor maneira de começar com esse asset é usar o script embutido do Physics Shapes Render e anexar o script a qualquer entidade que tenha um Componente de Física e quando o jogo estiver executando a imprensa LCtrl-LShift-P.
 
 <img src="media/ReleaseNotes-1.5/phys-debug.png" align="center" />
 

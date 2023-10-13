@@ -11,7 +11,7 @@ O tom e o volume do som variam à medida que o [receptor de áudio](audio-listen
 > [!Note]
 > Você precisa de pelo menos um [AudioListenerComponent](xref:Stride.Audio.AudioListener) na cena para captar o áudio dos emissores de áudio.
 
-## 1. Configurar um recurso emissor de áudio
+## 1. Configurar um asset emissor de áudio
 
 1. No **Visualizador de Cenas**, selecione a entidade que você deseja configurar como emissor de áudio.
 
@@ -27,19 +27,19 @@ O tom e o volume do som variam à medida que o [receptor de áudio](audio-listen
 
    ![Adicionar nova entrada de som](media/audio-play-audioemitter-component-add-new-entry.png)
 
-4. No **Visualizador de Recursos**, arraste e solte um recurso de áudio no áudio que você acabou de adicionar:
+4. No **Visualizador de Assets**, arraste e solte um asset de áudio no áudio que você acabou de adicionar:
 
-   ![Arrastar e soltar um recurso de áudio](media/audio-play-drag-and-drop-audio-asset.gif)
+   ![Arrastar e soltar um asset de áudio](media/audio-play-drag-and-drop-audio-asset.gif)
 
-   Você também pode clicar no ![Ícone de mão](~/manual/game-studio/media/hand-icon.png) (**Selecionar um recurso**).
+   Você também pode clicar no ![Ícone de mão](~/manual/game-studio/media/hand-icon.png) (**Selecionar um asset**).
 
-   ![Selecionar um recurso](media/audio-play-audioemitter-component-pick-an-asset.png)
+   ![Selecionar um asset](media/audio-play-audioemitter-component-pick-an-asset.png)
 
-   Em seguida, escolha um recurso de áudio:
+   Em seguida, escolha um asset de áudio:
 
-   ![Selecionar um recurso de áudio](media/audio-play-audioemitter-component-add-select-audio-asset.png)
+   ![Selecionar um asset de áudio](media/audio-play-audioemitter-component-add-select-audio-asset.png)
 
-5. Repita os passos 3 e 4 para adicionar quantos recursos de áudio forem necessários.
+5. Repita os passos 3 e 4 para adicionar quantos assets de áudio forem necessários.
 
 6. Configure as propriedades para este emissor de áudio.
 
@@ -53,7 +53,7 @@ O tom e o volume do som variam à medida que o [receptor de áudio](audio-listen
 
 ## 2. Criar um script para reproduzir o áudio
 
-Agora precisamos criar um script para reproduzir e configurar o recurso de áudio.
+Agora precisamos criar um script para reproduzir e configurar o asset de áudio.
 
 1. Dentro do seu script, crie uma instância de um [AudioEmitterSoundController](xref:Stride.Audio.AudioEmitterSoundController) para cada som que você deseja utilizar.
 
