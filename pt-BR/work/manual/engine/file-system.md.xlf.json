@@ -5,199 +5,252 @@
             "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/file-system.md": [
                 [
                     "File system",
-                    "",
+                    "Sistema de Arquivos",
                     "File system",
                     "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/file-system.md",
                     {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697218702155,
                         "id": "tu1"
                     }
                 ],
                 [
                     "[!INCLUDE <g1>stride-studio-note<\/g1>]",
-                    "",
+                    "[!INCLUDE <g1>stride-studio-note<\/g1>]",
                     "[!INCLUDE <g1>stride-studio-note<\/g1>]",
                     "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/file-system.md",
                     {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697218713754,
                         "id": "tu2"
                     }
                 ],
                 [
                     "We recommend you use the static class @'Stride.Core.IO.VirtualFileSystem' to access files across platforms.",
-                    "",
+                    "Recomendamos que você utilize a classe estática '@'Stride.Core.IO.VirtualFileSystem' para acessar arquivos em diferentes plataformas.",
                     "We recommend you use the static class @'Stride.Core.IO.VirtualFileSystem' to access files across platforms.",
                     "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/file-system.md",
                     {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697218729073,
                         "id": "tu3"
                     }
                 ],
                 [
                     "It offers all basic operations such as reading, writing, copying, checking existence and deleting files.",
-                    "",
+                    "Essa classe fornece todas as operações essenciais, como leitura, escrita, cópia, verificação de existência e exclusão de arquivos.",
                     " It offers all basic operations such as reading, writing, copying, checking existence and deleting files.",
                     "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/file-system.md",
                     {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697218983285,
                         "id": "tu3"
                     }
                 ],
                 [
                     "<x1\/>!Note<x2\/>",
-                    "",
+                    "<x1\/>!Note<x2\/>",
                     "<x1\/>!Note<x2\/>\r\n",
                     "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/file-system.md",
                     {
+                        "note": "",
+                        "creator": "alexa",
+                        "createdTime": 1696698008305,
                         "id": "tu4"
                     }
                 ],
                 [
                     "The path separator is \/ (Unix\/Linux convention).",
-                    "",
+                    "O separador de caminho é \/ (convenção Unix\/Linux).",
                     "The path separator is \/ (Unix\/Linux convention).",
                     "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/file-system.md",
                     {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697218884630,
                         "id": "tu4"
                     }
                 ],
                 [
                     "Code example",
-                    "",
+                    "Exemplo de código",
                     "Code example",
                     "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/file-system.md",
                     {
+                        "note": "",
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1696785244166,
                         "id": "tu5"
                     }
                 ],
                 [
                     "\/\/ Open a file through VirtualFileSystem",
-                    "",
+                    "\/\/ Abrir um arquivo através do VirtualFileSystem",
                     "\/\/ Open a file through VirtualFileSystem\r\n",
                     "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/file-system.md",
                     {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697219017564,
                         "id": "tu6"
                     }
                 ],
                 [
                     "var gamesave1 = VirtualFileSystem.OpenStream(\"\/roaming\/gamesave001.dat\", VirtualFileMode.Open, VirtualFileAccess.Read);",
-                    "",
+                    "var gamesave1 = VirtualFileSystem.OpenStream(\"\/roaming\/gamesave001.dat\", VirtualFileMode.Open, VirtualFileAccess.Read);",
                     "var gamesave1 = VirtualFileSystem.OpenStream(\"\/roaming\/gamesave001.dat\", VirtualFileMode.Open, VirtualFileAccess.Read);\r\n",
                     "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/file-system.md",
                     {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697219025901,
                         "id": "tu6"
                     }
                 ],
                 [
                     "\/\/ Alternatively, directly access the same file through its file system provider (mount point)",
-                    "",
+                    "\/\/ Ou, de forma alternativa, acessar o mesmo arquivo diretamente usando o provedor de sistema de arquivos associado (ponto de montagem)",
                     " \r\n\/\/ Alternatively, directly access the same file through its file system provider (mount point)\r\n",
                     "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/file-system.md",
                     {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697219081475,
                         "id": "tu6"
                     }
                 ],
                 [
                     "var gamesave2 = VirtualFileSystem.ApplicationRoaming.OpenStream(\"gamesave001.dat\", VirtualFileMode.Open, VirtualFileAccess.Read);",
-                    "",
+                    "var gamesave2 = VirtualFileSystem.ApplicationRoaming.OpenStream(\"gamesave001.dat\", VirtualFileMode.Open, VirtualFileAccess.Read);",
                     "var gamesave2 = VirtualFileSystem.ApplicationRoaming.OpenStream(\"gamesave001.dat\", VirtualFileMode.Open, VirtualFileAccess.Read);\r\n",
                     "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/file-system.md",
                     {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697219084627,
                         "id": "tu6"
                     }
                 ],
                 [
                     "Default mount points",
-                    "",
+                    "Pontos de montagem padrão",
                     "Default mount points",
                     "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/file-system.md",
                     {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697219219216,
                         "id": "tu7"
                     }
                 ],
                 [
                     "| Mount point | Description  | Writable | Cloud | Notes  | PC   | Android  | iOS   | Windows Phone 8.1   |",
-                    "",
+                    "| Ponto de Montagem | Descrição | Gravável | Nuvem | Notas | PC | Android | iOS | Windows Phone 8.1 |",
                     "| Mount point | Description  | Writable | Cloud | Notes  | PC   | Android  | iOS   | Windows Phone 8.1   |\r\n",
                     "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/file-system.md",
                     {
+                        "note": "",
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697219584818,
                         "id": "tu8"
                     }
                 ],
                 [
                     "| ----------- | -------------| -------- | ----- | -------| ---- | -------- | ------- | --|",
-                    "",
+                    "|---|---|---|---|---|---|---|---|---|",
                     "| ----------- | -------------| -------- | ----- | -------| ---- | -------- | ------- | --|\r\n",
                     "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/file-system.md",
                     {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697219521523,
                         "id": "tu8"
                     }
                 ],
                 [
                     "| data        | Application data, deployed by package    | ✗    | ✗     |           | Output directory\/data    | APK itself  | Deployed package directory | InstalledLocation.Path |",
-                    "",
+                    "| data | Dados da aplicação, implantados pelo pacote | ✗ | ✗ | Diretório de saída\/dados | O próprio APK | Diretório do pacote implantado | InstalledLocation.Path |",
                     "| data        | Application data, deployed by package    | ✗    | ✗     |           | Output directory\/data    | APK itself  | Deployed package directory | InstalledLocation.Path |\r\n",
                     "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/file-system.md",
                     {
+                        "note": "",
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697219553323,
                         "id": "tu8"
                     }
                 ],
                 [
                     "| binary   | Application binaries, deployed by package | ✗  | ✗   | Usually the same as <g1>app_data<\/g1> (except on Android)  | Assembly directory | Assembly directory  | Assembly diretory  | Assembly directory |",
-                    "",
+                    "| binary | Binários da aplicação, implantados pelo pacote | ✗ | ✗ | Normalmente o mesmo que <g1>app_data<\/g1> (exceto no Android) | Diretório de assembly | Diretório de assemblies | Diretório de assemblies | Diretório de assemblies |",
                     "| binary   | Application binaries, deployed by package | ✗  | ✗   | Usually the same as <g1>app_data<\/g1> (except on Android)  | Assembly directory | Assembly directory  | Assembly diretory  | Assembly directory |\r\n",
                     "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/file-system.md",
                     {
+                        "note": "",
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697219988601,
                         "id": "tu8"
                     }
                 ],
                 [
                     "| roaming   | User specific data (roaming) | ✓    |  ✓    | Backup   | Output directory\/roaming, <g2>%APPDATA%<\/g2> | <g3>$(Context.getFilesDir)\/roaming<\/g3> | Library\/roaming  | Roaming |",
-                    "",
+                    "| roaming | Dados específicos do usuário (roaming) | ✓ | ✓ | Backup | Diretório de saída\/roaming, <g2>%APPDATA%<\/g2> | <g3>$(Context.getFilesDir)\/roaming<\/g3> | Library\/roaming | Roaming |   ",
                     "| roaming   | User specific data (roaming) | ✓    |  ✓    | Backup   | Output directory\/roaming, <g2>%APPDATA%<\/g2> | <g3>$(Context.getFilesDir)\/roaming<\/g3> | Library\/roaming  | Roaming |\r\n",
                     "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/file-system.md",
                     {
+                        "note": "",
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697219988601,
                         "id": "tu8"
                     }
                 ],
                 [
                     "| local  | User application data | ✓     |  ✓    | Backup   | Output directory\/local | $(Context.getFilesDir)local    | Library\/local  | Local |",
-                    "",
+                    "| local | Dados da aplicação do usuário | ✓ | ✓ | Backup | Diretório de saída\/local | $(Context.getFilesDir)\/local | Library\/local | Local |",
                     "| local  | User application data | ✓     |  ✓    | Backup   | Output directory\/local | $(Context.getFilesDir)local    | Library\/local  | Local |\r\n",
                     "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/file-system.md",
                     {
+                        "note": "",
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697219757479,
                         "id": "tu8"
                     }
                 ],
                 [
                     "| cache   | Application cache   | ✓   | ✗    | DLC, etc.",
-                    "",
+                    "| cache | Cache da aplicação | ✓ | ✗ | DLC, etc. ",
                     "| cache   | Application cache   | ✓   | ✗    | DLC, etc.",
                     "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/file-system.md",
                     {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697219816662,
                         "id": "tu8"
                     }
                 ],
                 [
                     "Might be deleted manually by user (restore, clear data, etc...)",
-                    "",
+                    "Pode ser excluído manualmente pelo usuário (restaurar, limpar dados, etc...) ",
                     " Might be deleted manually by user (restore, clear data, etc...)",
                     "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/file-system.md",
                     {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697219818157,
                         "id": "tu8"
                     }
                 ],
                 [
                     "| Output directory\/cache, with do-not-back-up flags   | <g4>$(Context.getFilesDir)\/cache<\/g4>   | Library\/caches  | LocalCache  |",
-                    "",
+                    "| Diretório de saída\/cache, com bandeiras de não fazer backup | <g4>$(Context.getFilesDir)\/cache<\/g4> | Library\/caches | LocalCache |",
                     "   | Output directory\/cache, with do-not-back-up flags   | <g4>$(Context.getFilesDir)\/cache<\/g4>   | Library\/caches  | LocalCache  |\r\n",
                     "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/file-system.md",
                     {
+                        "note": "",
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697219988601,
                         "id": "tu8"
                     }
                 ],
                 [
                     "| tmp    | Application temporary data    | ✓        | ✗     | Might be deleted without notice by OS   | Output directory\/temp, <g5>%TEMP%\/%APPNAME%<\/g5>   | <g6>$(Context.getCacheDir)<\/g6>  | tmp | Temporary |",
-                    "",
+                    "| tmp | Dados temporários da aplicação | ✓ | ✗ | Pode ser excluído sem aviso prévio pelo SO | Diretório de saída\/temp, <g5>%TEMP%\/%APPNAME%<\/g5> | <g6>$(Context.getCacheDir)<\/g6> | tmp | Temporary |",
                     "| tmp    | Application temporary data    | ✓        | ✗     | Might be deleted without notice by OS   | Output directory\/temp, <g5>%TEMP%\/%APPNAME%<\/g5>   | <g6>$(Context.getCacheDir)<\/g6>  | tmp | Temporary |",
                     "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/file-system.md",
                     {
+                        "note": "",
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697219979091,
                         "id": "tu8"
                     }
                 ]
