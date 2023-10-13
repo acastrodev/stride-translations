@@ -21,9 +21,9 @@ var gamesave2 = VirtualFileSystem.ApplicationRoaming.OpenStream("gamesave001.dat
 
 | Ponto de Montagem | Descrição | Gravável | Nuvem | Notas | PC | Android | iOS | Windows Phone 8.1 |
 |---|---|---|---|---|---|---|---|---|
-| data | Dados da aplicação, implantados pelo pacote | ✗ | ✗ | Diretório de saída/dados | O próprio APK | Diretório do pacote implantado | InstalledLocation.Path |
-| binary | Binários da aplicação, implantados pelo pacote | ✗ | ✗ | Normalmente o mesmo que *app_data* (exceto no Android) | Diretório de assembly | Diretório de assemblies | Diretório de assemblies | Diretório de assemblies |
+| data | Dados da aplicação, implantados pelo pacote | ✗ | ✗ | Diretório de saída/dados | O próprio APK | Diretório de instalação do pacote | InstalledLocation.Path |
+| binary | Binários da aplicação, instalados pelo pacote | ✗ | ✗ | Normalmente o mesmo que *app_data* (exceto no Android) | Diretório de assemblies | Diretório de assemblies | Diretório de assemblies | Diretório de assemblies |
 | roaming | Dados específicos do usuário (roaming) | ✓ | ✓ | Backup | Diretório de saída/roaming, *%APPDATA%* | *$(Context.getFilesDir)/roaming* | Library/roaming | Roaming |   
 | local | Dados da aplicação do usuário | ✓ | ✓ | Backup | Diretório de saída/local | $(Context.getFilesDir)/local | Library/local | Local |
-| cache | Cache da aplicação | ✓ | ✗ | DLC, etc.  Pode ser excluído manualmente pelo usuário (restaurar, limpar dados, etc...)    | Diretório de saída/cache, com bandeiras de não fazer backup | *$(Context.getFilesDir)/cache* | Library/caches | LocalCache |
+| cache | Cache da aplicação | ✓ | ✗ | DLC, etc.  Pode ser excluído manualmente pelo usuário (restaurar, limpar dados, etc...)    | Diretório de saída/cache, com indicação para não ser feito backup | *$(Context.getFilesDir)/cache* | Library/caches | LocalCache |
 | tmp | Dados temporários da aplicação | ✓ | ✗ | Pode ser excluído sem aviso prévio pelo SO | Diretório de saída/temp, *%TEMP%/%APPNAME%* | *$(Context.getCacheDir)* | tmp | Temporary |
