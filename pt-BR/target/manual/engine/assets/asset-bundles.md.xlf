@@ -9,7 +9,7 @@
 <source xml:lang="en"><x id="1"/>!Warning<x id="2"/>
 This section is out of date. For now, you should only use it for reference.</source>
 <target xml:lang="pt"><x id="1"/>!Warning<x id="2"/>
-Esta seção está desatualizada. Por hora, você deve usá-la apenas como referência.</target>
+Esta seção está desatualizada. Recomendamos utilizá-la apenas como referência.</target>
 </trans-unit>
 <trans-unit id="tu3" xml:space="preserve">
 <source xml:lang="en">A bundle of assets allows to package assets into a single archive that can be downloaded into the game at a specific time.</source>
@@ -25,7 +25,7 @@ Esta seção está desatualizada. Por hora, você deve usá-la apenas como refer
 </trans-unit>
 <trans-unit id="tu6" xml:space="preserve">
 <source xml:lang="en">A project can generate several bundle.</source>
-<target xml:lang="pt">Um projeto pode gerar vários pacotes.</target>
+<target xml:lang="pt">Um projeto pode gerar vários conjuntos.</target>
 </trans-unit>
 <trans-unit id="tu7" xml:space="preserve">
 <source xml:lang="en">A bundle is created from several <g id="1">assets selectors</g>  (Currently, only the <g id="2">PathSelector</g> and <g id="3">TagSelector</g> are supported)</source>
@@ -33,15 +33,15 @@ Esta seção está desatualizada. Por hora, você deve usá-la apenas como refer
 </trans-unit>
 <trans-unit id="tu8" xml:space="preserve">
 <source xml:lang="en">A bundle can have dependencies to others bundles</source>
-<target xml:lang="pt">Um conjunto pode ter dependências de outros conjuntos</target>
+<target xml:lang="pt">Um conjunto pode ter dependências à outros conjuntos.</target>
 </trans-unit>
 <trans-unit id="tu9" xml:space="preserve">
 <source xml:lang="en">Every bundle implicitly references <g id="1">default</g> bundle, where every asset which shouldn't go in a specific bundle will be packaged</source>
-<target xml:lang="pt">Cada conjunto faz referência implicitamente ao conjunto padrão, onde cada asset que não deve ser incluído num conjunto específico será empacotado.<g id="1"/></target>
+<target xml:lang="pt">Cada conjunto faz referência implicitamente ao conjunto <g id="1">padrão</g>, onde cada asset que não deve ser incluído num conjunto específico será empacotado.</target>
 </trans-unit>
 <trans-unit id="tu10" xml:space="preserve">
 <source xml:lang="en">Once a bundle is deployed into the game, all assets from this bundle and all its dependencies are accessible</source>
-<target xml:lang="pt">Uma vez que um conjunto é adicionado no jogo, todos os assets desse conjunto e todas as suas dependências se tornam acessíveis</target>
+<target xml:lang="pt">Uma vez que um conjunto é adicionado no jogo, todos os assets desse conjunto e todas as suas dependências se tornam acessíveis.</target>
 </trans-unit>
 <trans-unit id="tu11" xml:space="preserve">
 <source xml:lang="en">Bundle resolution is done through an asynchronous callback that allows you to download bundle, and will be called once per dependency (similar to AssemblyResolve event).</source>
@@ -49,13 +49,13 @@ Esta seção está desatualizada. Por hora, você deve usá-la apenas como refer
 </trans-unit>
 <trans-unit id="tu12" xml:space="preserve">
 <source xml:lang="en">Create a bundle</source>
-<target xml:lang="pt">Criar um pacote</target>
+<target xml:lang="pt">Criar um conjunto</target>
 </trans-unit>
 <trans-unit id="tu13" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>!Note<x id="2"/>
 Creating currently requires some manual steps (i.e. editing <g id="3">sdpkg</g> by hand).</source>
 <target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
-A criação atualmente requer alguns passos manuais (ou seja, editar <g id="3">sdpkg</g> manualmente).</target>
+A criação atualmente requer alguns passos manuais (ou seja, editar o <g id="3">sdpkg</g> manualmente).</target>
 </trans-unit>
 <trans-unit id="tu14" xml:space="preserve">
 <source xml:lang="en">Open the <g id="1">sdprj</g> file of the game executable and add the following configuration:</source>
@@ -71,7 +71,7 @@ A criação atualmente requer alguns passos manuais (ou seja, editar <g id="3">s
 </trans-unit>
 <trans-unit id="tu17" xml:space="preserve">
 <source xml:lang="en">A bundle named <g id="1">MyBundleName2</g> will embed assets with tags <g id="2">MyTag3</g> and <g id="3">MyTag4</g>. This bundle has a dependency to <g id="4">MyBundleName</g></source>
-<target xml:lang="pt">Um conjunto chamado <g id="1">MeuConjunto2</g> incorporará assets com as tags<g id="2">MinhaTag3</g> e <g id="3">MinhaTag4</g>. Este conjunto tem uma dependência com <g id="4">MeuConjunto1</g></target>
+<target xml:lang="pt">Um conjunto chamado <g id="1">MeuConjunto2</g> incorporará assets com as tags<g id="2">MinhaTag3</g> e <g id="3">MinhaTag4</g>. Este conjunto tem uma dependência com <g id="4">MeuConjunto1</g>.</target>
 </trans-unit>
 <trans-unit id="tu18" xml:space="preserve">
 <source xml:lang="en">There is also a <g id="1">PathSelector</g> which follow the <g id="2">.gitignore</g> filtering convention.</source>
@@ -129,7 +129,7 @@ A criação atualmente requer alguns passos manuais (ou seja, editar <g id="3">s
 </trans-unit>
 <trans-unit id="tu21" xml:space="preserve">
 <source xml:lang="en">Asset dependencies are automatically placed in the most appropriate bundle.</source>
-<target xml:lang="pt">As dependências de assets são automaticamente colocadas no pacote mais apropriado</target>
+<target xml:lang="pt">As dependências de assets são automaticamente colocadas no conjunto mais apropriado</target>
 </trans-unit>
 <trans-unit id="tu22" xml:space="preserve">
 <source xml:lang="en">Current process works that way:</source>
@@ -137,11 +137,11 @@ A criação atualmente requer alguns passos manuais (ou seja, editar <g id="3">s
 </trans-unit>
 <trans-unit id="tu23" xml:space="preserve">
 <source xml:lang="en">Find assets that matches specific Tag Selectors ("roots" of bundle assets).</source>
-<target xml:lang="pt">Encontre assets que correspondam aos Seletores de Tag específicos (as "raízes" dos assets do conjunto).</target>
+<target xml:lang="pt">Encontra os assets que correspondam aos Seletores de Tag específicos (as "raízes" dos assets do conjunto).</target>
 </trans-unit>
 <trans-unit id="tu24" xml:space="preserve">
 <source xml:lang="en">Enumerate assets that are dependent on those "roots" bundle assets and put them in the same bundle than their "roots" asset.</source>
-<target xml:lang="pt">Enumere os assets que dependem dessas raízes e coloque-os no mesmo conjunto que elas.</target>
+<target xml:lang="pt">Enumera os assets que dependem dessas raízes e os inclui no mesmo conjunto que elas.</target>
 </trans-unit>
 <trans-unit id="tu25" xml:space="preserve">
 <source xml:lang="en">Except if already accessible through one of package dependencies (i.e. a shared dependent package or default package).</source>
@@ -149,7 +149,7 @@ A criação atualmente requer alguns passos manuais (ou seja, editar <g id="3">s
 </trans-unit>
 <trans-unit id="tu26" xml:space="preserve">
 <source xml:lang="en">Place everything else in default bundle.</source>
-<target xml:lang="pt">Coloque todo o resto no conjunto padrão.</target>
+<target xml:lang="pt">Coloca todo o resto no conjunto padrão.</target>
 </trans-unit>
 <trans-unit id="tu27" xml:space="preserve">
 <source xml:lang="en">Note that:</source>
@@ -157,7 +157,7 @@ A criação atualmente requer alguns passos manuais (ou seja, editar <g id="3">s
 </trans-unit>
 <trans-unit id="tu28" xml:space="preserve">
 <source xml:lang="en">Shared assets might be duplicated if not specifically placed in common or default package, but that is intended (i.e. if user wishes to distribute 2 separate DLC that need common assets but need to be self-contained).</source>
-<target xml:lang="pt">Os assets compartilhados podem ser duplicados se não forem especificamente colocados no conjunto compartilhado ou no conjunto padrão, mas isso é intencional (por exemplo, se o usuário desejar distribuir dois DLCs separados que necessitam de assets comuns, mas também precisam ser independentes).</target>
+<target xml:lang="pt">Os assets compartilhados podem ser duplicados se não forem especificamente colocados no conjunto compartilhado ou no conjunto padrão, e isso é intencional. Por exemplo, se o usuário desejar distribuir dois DLCs separadamente que necessitam de ativos comuns, e também devam ser independentes.</target>
 </trans-unit>
 <trans-unit id="tu29" xml:space="preserve">
 <source xml:lang="en">Every bundle implicitly depends on default bundle.</source>
@@ -169,7 +169,7 @@ A criação atualmente requer alguns passos manuais (ou seja, editar <g id="3">s
 </trans-unit>
 <trans-unit id="tu31" xml:space="preserve">
 <source xml:lang="en">Loading bundle is done through <g id="1">ObjectDatabase.LoadBundle(string bundleName) (ref:{Stride.Core.Storage.ObjectDatabase.LoadBundle})</g>:</source>
-<target xml:lang="pt">O carregamento de conjuntos é feito através de <g id="1">ObjectDatabase.LoadBundle(string bundleName) (ref:{Stride.Core.Storage.ObjectDatabase.LoadBundle})</g>:</target>
+<target xml:lang="pt">O carregamento dos conjuntos é feito através de <g id="1">ObjectDatabase.LoadBundle(string bundleName) (ref:{Stride.Core.Storage.ObjectDatabase.LoadBundle})</g>:</target>
 </trans-unit>
 <trans-unit id="tu32" xml:space="preserve">
 <source xml:lang="en">// Load bundle
@@ -219,7 +219,7 @@ var texture = Assets.Load&lt;Texture2D&gt;("AssetContidoNoMeuConjunto2");
 </trans-unit>
 <trans-unit id="tu41" xml:space="preserve">
 <source xml:lang="en">Standard .gitignore patterns are supported (except ! (negate), # (comments) and \[0-9\] (groups)).</source>
-<target xml:lang="pt">Padrões convencionais do .gitignore são suportados (exceto ! (negar), # (comentários) e \[0-9\] (grupos)).</target>
+<target xml:lang="pt">Padrões convencionais do `.gitignore` são suportados (exceto `!` (negar), `#` (comentários) e `[0-9]` (grupos)).</target>
 </trans-unit>
 <trans-unit id="tu42" xml:space="preserve">
 <source xml:lang="en">Properties:</source>
