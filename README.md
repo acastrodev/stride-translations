@@ -1,4 +1,4 @@
-# Projeto de tradução da documentação do motor de criação de jogos Stride 🇧🇷
+# Projeto de tradução da documentação do motor de criação de jogos Stride para o Português Brasileiro 🇧🇷
 
 Bem-vindo ao projeto de tradução da documentação do motor de crição de jogos Stride para o Português Brasileiro (pt-BR). 
 Este projeto tem como objetivo fornecer uma versão localizada da documentação do Stride para torná-lo mais acessível ao público de língua portuguesa.
@@ -16,7 +16,7 @@ Neste [link](https://github.com/acastrodev/stride-translations/blob/main/PROGRES
 
 ------
 
-# Stride Engine documentation translation project
+# Stride Engine documentation translation project for the Brazilian Portuguese
 
 Welcome to the Stride Engine Documentation Translation Project for the Brazilian Portuguese (pt-BR). 
 This project aims to provide a localized version of the Stride Engine documentation to make it more accessible to the Portuguese-speaking audience.
