@@ -37,4 +37,4 @@ Como resultado, você pode usar um pacote compartilhado em vários jogos, mesmo 
 
 ## Veja também
 
-Para mais informações sobre gerenciamento de assets, consulte [Gerenciar Assets](../../game-studio/manage-assets.md)
+Para mais informações sobre gerenciamento de assets, consulte [Gerenciador de assets](../../game-studio/manage-assets.md)

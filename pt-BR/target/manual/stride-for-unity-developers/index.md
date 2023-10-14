@@ -159,7 +159,7 @@ Em comparação com a Unity, muitas das propriedades do componente Transform rel
 
 #### Transformar direções
 Ao contrário da Unity, Stride fornece uma propriedade Backward, Left e Down.
-Note que essas são propriedades de matriz, então definir uma dessas não é suficiente para girar adequadamente a matriz.
+No entanto, é importante ressaltar que essas são propriedades de matriz, então definir uma dessas não é suficiente para girar adequadamente a matriz.
 
 | Unity® | Stride |
 |--------------------------|----------------------------------|

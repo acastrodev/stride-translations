@@ -77,7 +77,7 @@ var entity = Content.Load&lt;Entity&gt;("entidade1");
 </trans-unit>
 <trans-unit id="tu15" xml:space="preserve">
 <source xml:lang="en">Note that loading an asset that has already been loaded only increment the reference counter and do not reload the asset.</source>
-<target xml:lang="pt">Tenha em mente que ao carregar um asset que já tenha sido carregado apenas incrementa o contador de referência e não recarrega o asset.</target>
+<target xml:lang="pt">No entanto, é importante ressaltar que ao carregar um asset que já tenha sido carregado apenas incrementa o contador de referência e não recarrega o asset.</target>
 </trans-unit>
 <trans-unit id="tu16" xml:space="preserve">
 <source xml:lang="en">Unloading</source>
@@ -95,7 +95,7 @@ var entity = Content.Load&lt;Entity&gt;("entidade1");
 </trans-unit>
 <trans-unit id="tu19" xml:space="preserve">
 <source xml:lang="en">Asset life time</source>
-<target xml:lang="pt">Vida útil do asset</target>
+<target xml:lang="pt">Tempo de vida do asset</target>
 </trans-unit>
 <trans-unit id="tu20" xml:space="preserve">
 <source xml:lang="en">Asset load and unload are working in pairs. For each call to 'load', a corresponding call to 'unload' is expected.</source>
@@ -148,9 +148,9 @@ Asset.Unload(primeiraReferencia); // decrementa o contador da referência (conta
 Asset.Get&lt;Texture&gt;("MinhaTextura"); // retorna o asset carregado sem incrementar o contador da referência (contagem da referência = 1)
  
 // a textura ainda pode ser usada aqui
-Asset.Unload(segundaReferencia); // decrementa o contador da referência e descarrega o ativo (contagem de referência = 0)
+Asset.Unload(segundaReferencia); // decrementa o contador da referência e descarrega o asset (contagem da referência = 0)
  
-// A textura foi descarregada, não pode ser usada aqui mais.
+// A textura foi descarregada e não pode ser mais usada.
 </target>
 </trans-unit>
 </body>

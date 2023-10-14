@@ -58,7 +58,7 @@ Para mais informações, consulte o compositor [Graphics](../graphics/graphics-c
 
 | Propriedade | Descrição |
 |--------------|--------------
-| Suporte HRTF | Ativar áudio HRTF. Note que apenas emissores de áudio com HRTF habilitado produzirá áudio HRTF. Para mais detalhes, consulte [HRTF](../audio/hrtf.md). |
+| Suporte HRTF | Ativar áudio HRTF. No entanto, é importante ressaltar que apenas emissores de áudio com HRTF habilitado produzirá áudio HRTF. Para mais detalhes, consulte [HRTF](../audio/hrtf.md). |
 
 Para mais detalhes sobre áudio, veja [Audio](../audio/index.md).
 

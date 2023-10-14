@@ -14,8 +14,8 @@
 ## [Criar um projeto](get-started/create-a-project.md)
 ## [Game Studio](game-studio/index.md)
 ## [Assets](game-studio/assets.md)
-### [Criar ativos](game-studio/create-assets.md)
-### [Usar ativos](game-studio/use-assets.md)
+### [Criar assets](game-studio/create-assets.md)
+### [Usar assets](game-studio/use-assets.md)
 ## [Cenas](game-studio/scenes.md)
 ### [Criar uma cena](game-studio/create-a-scene.md)
 ### [Adicionar entidades](game-studio/add-entities.md)
@@ -51,9 +51,9 @@
 
 # [Motor](engine/index.md)
 ## [Assets](engine/assets/index.md)
-### [Pacotes de ativos](engine/assets/asset-bundles.md)
-### [Controle de ativos](engine/assets/asset-control.md)
-## [Modelo de componente de entidade](engine/entity-component-model/index.md)
+### [Conjunto de asset](engine/assets/asset-bundles.md)
+### [Controle de asset](engine/assets/asset-control.md)
+## [Introdução ao ECS (Sistema de Componente e Entidade)](engine/entity-component-model/index.md)
 ### [Gerenciar entidades](engine/entity-component-model/managing-entities.md)
 ## [Sistema de arquivos](engine/file-system.md)
 

@@ -1,163 +1,395 @@
 {
-  "filename": "manual\\engine\\entity-component-model\\index.md.xlf",
-  "files": [
-    {
-      "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/index.md": [
-        [
-          "Entity-Component Model",
-          "Modelo de Entidade-Componente",
-          "Entity-Component Model",
-          "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/index.md",
-          {
-            "id": "tu1"
-          }
-        ],
-        [
-          "[!INCLUDE <g1>stride-studio-note<\/g1>]",
-          "[! INCLUÍDO <g1>stride-studio-note<\/g1>]",
-          "[!INCLUDE <g1>stride-studio-note<\/g1>]",
-          "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/index.md",
-          {
-            "id": "tu2"
-          }
-        ],
-        [
-          "Overview",
-          "Visão geral",
-          "Overview",
-          "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/index.md",
-          {
-            "id": "tu3"
-          }
-        ],
-        [
-          "@'Stride.Engine.Entity' is the base class for objects that are managed by the high-level engine.",
-          "@'Stride.Engine.Entity' é a classe base para objetos que são gerenciados pelo motor de alto nível.",
-          "@'Stride.Engine.Entity' is the base class for objects that are managed by the high-level engine.",
-          "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/index.md",
-          {
-            "id": "tu4"
-          }
-        ],
-        [
-          "To improve flexibility, entity are component-based: they can contains as many components as required, containing data and\/or logic.",
-          "Para melhorar a flexibilidade, a entidade é baseada em componentes: pode conter tantos componentes conforme necessário, contendo dados e\/ou lógica.",
-          "To improve flexibility, entity are component-based: they can contains as many components as required, containing data and\/or logic.",
-          "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/index.md",
-          {
-            "id": "tu5"
-          }
-        ],
-        [
-          "<x1\/>media\/7438980.png<x2\/>",
-          "<x1\/>media\/7438980.png<x2\/>",
-          "<x1\/>media\/7438980.png<x2\/>",
-          "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/index.md",
-          {
-            "id": "tu6"
-          }
-        ],
-        [
-          "A @'Stride.Engine.Entitycomponent' is tied to its entity (that is, one component can't be added to two entities at the same time).",
-          "A @'Stride.Engine.Entitycomponent' está ligada à sua entidade (ou seja, um componente não pode ser adicionado a duas entidades ao mesmo tempo).",
-          "A @'Stride.Engine.Entitycomponent' is tied to its entity (that is, one component can't be added to two entities at the same time).",
-          "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/index.md",
-          {
-            "id": "tu7"
-          }
-        ],
-        [
-          "How to create an entity and some components",
-          "Como criar uma entidade e alguns componentes",
-          "How to create an entity and some components",
-          "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/index.md",
-          {
-            "id": "tu8"
-          }
-        ],
-        [
-          "\/\/ Create entity",
-          "\/\/ Criar entidade",
-          "\/\/ Create entity\r\n",
-          "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/index.md",
-          {
-            "id": "tu9"
-          }
-        ],
-        [
-          "var myEntity = new Entity();",
-          "var myEntity = novo Entity();",
-          "var myEntity = new Entity();\r\n",
-          "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/index.md",
-          {
-            "id": "tu9"
-          }
-        ],
-        [
-          "\/\/ Create a model component (so that model is rendered)",
-          "\/\/ Criar um componente modelo (para que o modelo seja renderizado)",
-          " \r\n\/\/ Create a model component (so that model is rendered)\r\n",
-          "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/index.md",
-          {
-            "id": "tu9"
-          }
-        ],
-        [
-          "var modelComponent = new ModelComponent { Model = model };",
-          "modelo de var Componente = novo ModelComponent { Model = model };",
-          "var modelComponent = new ModelComponent { Model = model };\r\n",
-          "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/index.md",
-          {
-            "id": "tu9"
-          }
-        ],
-        [
-          "myEntity.Set(ModelComponent.Key, modelComponent);",
-          "myEntity. Set(ModelComponent. Key, modelComponent);",
-          "myEntity.Set(ModelComponent.Key, modelComponent);\r\n",
-          "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/index.md",
-          {
-            "id": "tu9"
-          }
-        ],
-        [
-          "\/\/ Set entity position",
-          "\/\/ Definir posição da entidade",
-          "\r\n\/\/ Set entity position\r\n",
-          "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/index.md",
-          {
-            "id": "tu9"
-          }
-        ],
-        [
-          "myEntity.Transformation.Translation = new Vector3(100.0f, 100.0f, 0.0f);",
-          "myEntity.Transformation.Translation = new Vector3(100.0f, 100.0f, 0,0f);",
-          "myEntity.Transformation.Translation = new Vector3(100.0f, 100.0f, 0.0f);\r\n",
-          "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/index.md",
-          {
-            "id": "tu9"
-          }
-        ],
-        [
-          "\/\/ Add entity to scene; from now on its model will be rendered",
-          "\/\/ Adicionar entidade à cena; a partir de agora em seu modelo será renderizado",
-          " \r\n\/\/ Add entity to scene; from now on its model will be rendered\r\n",
-          "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/index.md",
-          {
-            "id": "tu9"
-          }
-        ],
-        [
-          "Entities.Add(myEntity);",
-          "Entities.Add (myEntity);",
-          "Entities.Add(myEntity);\r\n",
-          "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/index.md",
-          {
-            "id": "tu9"
-          }
-        ]
-      ]
-    }
-  ],
-  "seg_enabled": false
+    "filename": "index.md.xlf",
+    "files": [
+        {
+            "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/index.md": [
+                [
+                    "ECS (Entity Component System) Introduction",
+                    "Introdução ao ECS (Sistema de Entidades e Componentes)",
+                    "ECS (Entity Component System) Introduction",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/index.md",
+                    {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697298524673,
+                        "id": "tu1"
+                    }
+                ],
+                [
+                    "Problem",
+                    "Problema",
+                    "Problem",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/index.md",
+                    {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697298529753,
+                        "id": "tu2"
+                    }
+                ],
+                [
+                    "<g1>Dog<\/g1> is a subclasses of <g2>Animal<\/g2>.",
+                    "<g1>Cachorro<\/g1> é uma subclasse de <g2>Animal<\/g2>.",
+                    "<g1>Dog<\/g1> is a subclasses of <g2>Animal<\/g2>.",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/index.md",
+                    {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697298801644,
+                        "id": "tu3"
+                    }
+                ],
+                [
+                    "This example is often used as an example of inheritance",
+                    "Esse exemplo é frequentemente usado como um exemplo de herança",
+                    "This example is often used as an example of inheritance\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/index.md",
+                    {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697299030131,
+                        "id": "tu4"
+                    }
+                ],
+                [
+                    "in introductions to programming.",
+                    "em introduções à programação.",
+                    "in introductions to programming.",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/index.md",
+                    {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697298839603,
+                        "id": "tu4"
+                    }
+                ],
+                [
+                    "However, when things get more complex,",
+                    "No entanto, quando as coisas se tornam mais complexas,",
+                    " However, when things get more complex,\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/index.md",
+                    {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697298851579,
+                        "id": "tu4"
+                    }
+                ],
+                [
+                    "we get problems:",
+                    "surgem problemas:",
+                    "we get problems:",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/index.md",
+                    {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697298854186,
+                        "id": "tu4"
+                    }
+                ],
+                [
+                    "<g1>Dog<\/g1> and <g2>Fish<\/g2> can swim, so we create <g3>SwimmingAnimal<\/g3> as a class in between",
+                    "<g1>Cachorro<\/g1> e <g2>Peixe<\/g2> podem nadar, então criamos uma classe intermediária <g3>AnimaisQueNadam<\/g3>.",
+                    "<g1>Dog<\/g1> and <g2>Fish<\/g2> can swim, so we create <g3>SwimmingAnimal<\/g3> as a class in between",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/index.md",
+                    {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697299030131,
+                        "id": "tu5"
+                    }
+                ],
+                [
+                    "<g1>Bee<\/g1> and <g2>Bird<\/g2> can fly, so we create <g3>FlyingAnimal<\/g3>",
+                    "<g1>Abelha<\/g1> e <g2>Passaro<\/g2> podem voar, então criamos outra classe intermediária <g3>AnimaisQueVoam<\/g3>.",
+                    "<g1>Bee<\/g1> and <g2>Bird<\/g2> can fly, so we create <g3>FlyingAnimal<\/g3>",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/index.md",
+                    {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697299076439,
+                        "id": "tu6"
+                    }
+                ],
+                [
+                    "What do we now do with the <g1>Duck<\/g1>, who can do both?",
+                    "O que fazemos agora com o <g1>Pato<\/g2>, que pode fazer ambas as coisas?",
+                    "What do we now do with the <g1>Duck<\/g1>, who can do both?",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/index.md",
+                    {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697299106310,
+                        "id": "tu7"
+                    }
+                ],
+                [
+                    "We have the exact same problem in video games.",
+                    "Temos o mesmo problema nos jogos eletrônicos.",
+                    "We have the exact same problem in video games.<x1\/>\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/index.md",
+                    {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697299415208,
+                        "id": "tu8"
+                    }
+                ],
+                [
+                    "Enemies can walk, shoot, fly - but not all of them can do everything.",
+                    "Inimigos podem andar, atirar, voar — mas nem todos podem fazer tudo.",
+                    "Enemies can walk, shoot, fly - but not all of them can do everything.<x2\/>\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/index.md",
+                    {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697299190610,
+                        "id": "tu8"
+                    }
+                ],
+                [
+                    "Even something basic like hitpoints is not universal, as some enemies are indestructible.",
+                    "Até algo básico como pontos de vida não são universais, pois alguns inimigos são indestrutíveis.",
+                    "Even something basic like hitpoints is not universal, as some enemies are indestructible.",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/index.md",
+                    {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697299206324,
+                        "id": "tu8"
+                    }
+                ],
+                [
+                    "Solution",
+                    "Solução",
+                    "Solution",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/index.md",
+                    {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697299212458,
+                        "id": "tu9"
+                    }
+                ],
+                [
+                    "Entity component system (ECS) is a software architectural pattern mostly used in video game development for the representation of game world objects.",
+                    "O sistema de entidades e componentes (ECS) é um padrão arquitetônico de software usado principalmente no desenvolvimento de jogos eletrônicos para a representação de objetos no mundo do jogo.",
+                    "Entity component system (ECS) is a software architectural pattern mostly used in video game development for the representation of game world objects.",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/index.md",
+                    {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697299423217,
+                        "id": "tu10"
+                    }
+                ],
+                [
+                    "An ECS comprises entities composed from components of data, with systems which operate on entities' components.",
+                    "Um ECS reúne entidades compostas de componentes de dados, com sistemas que operam nos componentes das entidades.",
+                    " An ECS comprises entities composed from components of data, with systems which operate on entities' components.<x1\/>\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/index.md",
+                    {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697299315923,
+                        "id": "tu10"
+                    }
+                ],
+                [
+                    "-<g2>Wikipedia<\/g2>",
+                    "-<g2>Wikipedia<\/g2>",
+                    "<g1>-<g2>Wikipedia<\/g2><\/g1>",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/index.md",
+                    {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697299318986,
+                        "id": "tu10"
+                    }
+                ],
+                [
+                    "The general idea of an ECS is that an <g1>entity<\/g1> - an \"object\" in your virtual world -",
+                    "A ideia geral de um ECS é que uma entidade — um \"objeto\" em seu mundo virtual —",
+                    "The general idea of an ECS is that an <g1>entity<\/g1> - an \"object\" in your virtual world -\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/index.md",
+                    {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697299701708,
+                        "id": "tu11"
+                    }
+                ],
+                [
+                    "does not really do anything.",
+                    "na verdade, não faça muita coisa.",
+                    "does not really do anything.",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/index.md",
+                    {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697299708675,
+                        "id": "tu11"
+                    }
+                ],
+                [
+                    "It is mostly just a \"bag of components\".",
+                    "Ela, basicamente, apenas uma \"coleção de componentes\".",
+                    " It is mostly just a \"bag of components\".",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/index.md",
+                    {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697299720652,
+                        "id": "tu11"
+                    }
+                ],
+                [
+                    "The selection of components on an entity decides what it does.",
+                    "A seleção de componentes em uma entidade decide o que ela faz. ",
+                    "The selection of components on an entity decides what it does.\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/index.md",
+                    {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697299761193,
+                        "id": "tu12"
+                    }
+                ],
+                [
+                    "An entity with a collider component can collide, an entity with a sound component can make a noise, etc.",
+                    "Uma entidade com um componente de colisão pode colidir, uma entidade com um componente de som pode fazer barulho, etc.",
+                    "An entity with a collider component can collide, an entity with a sound component can make a noise, etc.",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/index.md",
+                    {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697299743506,
+                        "id": "tu12"
+                    }
+                ],
+                [
+                    "Differing opinions",
+                    "Opiniões divergentes",
+                    "Differing opinions",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/index.md",
+                    {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697299760858,
+                        "id": "tu13"
+                    }
+                ],
+                [
+                    "For the \"System\" part of the term, there are two interpretations:",
+                    "Para o trecho \"Sistema\" do termo, existem duas interpretações:",
+                    "For the \"System\" part of the term, there are two interpretations:",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/index.md",
+                    {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697299838442,
+                        "id": "tu14"
+                    }
+                ],
+                [
+                    "A) \"Entity-and-Component System\"",
+                    "A) \"Sistema de Entidade e Componente\"",
+                    "A) \"Entity-and-Component System\"<x1\/>\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/index.md",
+                    {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697299847232,
+                        "id": "tu15"
+                    }
+                ],
+                [
+                    "...in which the components contain the data they need, and also the functionality that works with that data.",
+                    "...no qual os componentes contêm os dados de que precisam e também a funcionalidade que opera com esses dados.",
+                    "...in which the components contain the data they need, and also the functionality that works with that data.",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/index.md",
+                    {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697299884601,
+                        "id": "tu15"
+                    }
+                ],
+                [
+                    "B) \"Entity, Component, System\"",
+                    "B) \"Entidade, Componente, Sistema\"",
+                    "B) \"Entity, Component, System\"<x1\/>\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/index.md",
+                    {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697299871344,
+                        "id": "tu16"
+                    }
+                ],
+                [
+                    "...in which a component only contains data, while a third part - the system -",
+                    "...no qual um componente contém apenas dados, enquanto uma terceira parte — o sistema —",
+                    "...in which a component only contains data, while a third part - the system -\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/index.md",
+                    {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697299912463,
+                        "id": "tu16"
+                    }
+                ],
+                [
+                    "contains the functionality.",
+                    "contém a funcionalidade.",
+                    "contains the functionality.",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/index.md",
+                    {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697299903928,
+                        "id": "tu16"
+                    }
+                ],
+                [
+                    "Stride allows working in both ways.",
+                    "O Stride permite trabalhar de ambas as maneiras.",
+                    "Stride allows working in both ways.",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/index.md",
+                    {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697300320169,
+                        "id": "tu17"
+                    }
+                ],
+                [
+                    "A) can be achieved by using",
+                    "A) pode ser alcançada usando",
+                    " A) can be achieved by using\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/index.md",
+                    {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697300363575,
+                        "id": "tu17"
+                    }
+                ],
+                [
+                    "scripts",
+                    "scripts",
+                    "<g1>scripts<\/g1>\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/index.md",
+                    {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697300365383,
+                        "id": "tu17"
+                    }
+                ],
+                [
+                    "while the usage of B) is described in this section of the manual.",
+                    "enquanto o uso da abordagem B) é descrito nesta seção do manual.",
+                    "while the usage of B) is described in this section of the manual.",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/index.md",
+                    {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697300400639,
+                        "id": "tu17"
+                    }
+                ],
+                [
+                    "Which one to choose?",
+                    "Qual escolher?",
+                    "Which one to choose?",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/index.md",
+                    {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697300407191,
+                        "id": "tu18"
+                    }
+                ],
+                [
+                    "<x1\/>media\/ecs-choice.jpg<x2\/>",
+                    "<x1\/>media\/ecs-choice.jpg<x2\/>",
+                    "<x1\/>media\/ecs-choice.jpg<x2\/>",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/index.md",
+                    {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697300415039,
+                        "id": "tu19"
+                    }
+                ]
+            ]
+        }
+    ],
+    "seg_enabled": false
 }

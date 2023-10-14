@@ -242,7 +242,7 @@ Data de lançamento: 2016/04/27
 - Tornado vários tipos públicos em vez de internos, para que o usuário possa facilmente estender o pipeline de renderização por si mesmo
 - EffectValidator estava falhando em efeitos sem quaisquer valores de permutação ([#378](https://github.com/SiliconStudio/xenko/issues/378))
 - Adicionado um proxy de depurador para o novo ParameterCollection
-- Os parâmetros MSAA agora são devidamente encaminhados para a cadeia de swap principal. Note que ainda não pode ser usado no Render Quadro até que os alvos MSAA sejam devidamente resolvidos.
+- Os parâmetros MSAA agora são devidamente encaminhados para a cadeia de swap principal. No entanto, é importante ressaltar que ainda não pode ser usado no Render Quadro até que os alvos MSAA sejam devidamente resolvidos.
 
 #### Partes
 

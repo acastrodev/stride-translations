@@ -34,7 +34,7 @@ Mais para baixo da estrada, o plano é dividir Xenko mais em pacotes separados, 
 
 Agora é possível adicionar vídeo aos seus jogos.
 
-Note que este asset não é completamente testado e suportado em todas as plataformas, mas decidimos incluí-lo de qualquer forma e sintonizá-lo mais tarde para não atrasar o lançamento do MIT mais.
+No entanto, é importante ressaltar que este asset não é completamente testado e suportado em todas as plataformas, mas decidimos incluí-lo de qualquer forma e sintonizá-lo mais tarde para não atrasar o lançamento do MIT mais.
 
 ### Renderização de pele e cabelo
 

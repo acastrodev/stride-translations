@@ -67,7 +67,7 @@ Bundles:
 >    - A menos que já sejam acessíveis por meio de uma das dependências do pacote (como um pacote dependente compartilhado ou o pacote padrão).
 > - Coloque todo o resto no conjunto padrão.
 >
-> Observe que:
+> No entanto, é importante ressaltar que:
 >
 > - Os assets compartilhados podem ser duplicados se não forem especificamente colocados no conjunto compartilhado ou no conjunto padrão, mas isso é intencional (por exemplo, se o usuário desejar distribuir dois DLCs separados que necessitam de assets comuns, mas também precisam ser independentes).
 > - Cada conjunto depende implicitamente do conjunto padrão.

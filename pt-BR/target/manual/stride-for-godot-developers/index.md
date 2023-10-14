@@ -466,7 +466,7 @@ classe pública MyClass
 
 #### Coleções e dicionários
 
-Stride suporta classes `ICollection` e `IDictionary` para serialização. Note que apenas primitivos e enums podem ser usados como chaves em dicionários.
+Stride suporta classes `ICollection` e `IDictionary` para serialização. No entanto, é importante ressaltar que apenas primitivos e enums podem ser usados como chaves em dicionários.
 
 Em Godot você tem que exportar coleções Godot para ser visível no Editor.
 

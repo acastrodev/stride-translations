@@ -21,7 +21,7 @@ Você pode importar arquivos de áudio para usar como  **assets de audio** em se
 
    * **Efeito sonoro**: Ideal para arquivos de áudio pequenos que você deseja reproduzir diretamente da memória.
 
-   * **Áudio espacial**: Configura o asset de áudio como [áudio espacial.](spatialized-audio.md) Lembre-se de que o Stride processa os arquivos de áudio como áudio mono (um único canal)  e o arquivo de origem não é alterado.
+   * **Áudio espacial**: Configura o asset de áudio como [áudio espacial.](spatialized-audio.md) No entanto, é importante ressaltar que o Stride processa os arquivos de áudio como áudio mono (um único canal)  e o arquivo de origem não é alterado.
 
    * **Música**: Recomendado para arquivos de áudio volumosos que você deseja reproduzir a partir do disco para economizar memória.
 
