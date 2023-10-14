@@ -1,57 +1,105 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?><xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" xmlns:okp="okapi-framework:xliff-extensions" its:version="2.0" version="1.2">
-<file datatype="x-text/x-markdown" okp:inputEncoding="UTF-8" original="/D:/repos/rr/source/manual/engine/entity-component-model/index.md" source-language="en" target-language="pt">
+<file datatype="x-text/x-markdown" okp:inputEncoding="UTF-8" original="/D:/repos/stride-translations/pt-BR/source/manual/engine/entity-component-model/index.md" source-language="en" target-language="pt">
 <body>
 <trans-unit id="tu1" xml:space="preserve">
-<source xml:lang="en">Entity-Component Model</source>
+<source xml:lang="en">ECS (Entity Component System) Introduction</source>
 <target xml:lang="pt">Introdução ao ECS (Sistema de Entidades e Componentes)</target>
 </trans-unit>
 <trans-unit id="tu2" xml:space="preserve">
-<source xml:lang="en">[!INCLUDE <g id="1">stride-studio-note</g>]</source>
+<source xml:lang="en">Problem</source>
 <target xml:lang="pt">Problema</target>
 </trans-unit>
 <trans-unit id="tu3" xml:space="preserve">
-<source xml:lang="en">Overview</source>
-<target xml:lang="pt"><g1>Cachorro</g1> é uma subclasse de <g2>Animal</g2>.</target>
+<source xml:lang="en"><g id="1">Dog</g> is a subclasses of <g id="2">Animal</g>.</source>
+<target xml:lang="pt"><g id="1">Cachorro</g> é uma subclasse de <g id="2">Animal</g>.</target>
 </trans-unit>
 <trans-unit id="tu4" xml:space="preserve">
-<source xml:lang="en">@'Stride.Engine.Entity' is the base class for objects that are managed by the high-level engine.</source>
+<source xml:lang="en">This example is often used as an example of inheritance
+in introductions to programming. However, when things get more complex,
+we get problems:</source>
 <target xml:lang="pt">Esse exemplo é frequentemente usado como um exemplo de herança
 em introduções à programação. No entanto, quando as coisas se tornam mais complexas,
 surgem problemas:</target>
 </trans-unit>
 <trans-unit id="tu5" xml:space="preserve">
-<source xml:lang="en">To improve flexibility, entity are component-based: they can contains as many components as required, containing data and/or logic.</source>
-<target xml:lang="pt"><g1>Cachorro</g1> e <g2>Peixe</g2> podem nadar, então criamos uma classe intermediária <g3>AnimaisQueNadam</g3>.</target>
+<source xml:lang="en"><g id="1">Dog</g> and <g id="2">Fish</g> can swim, so we create <g id="3">SwimmingAnimal</g> as a class in between</source>
+<target xml:lang="pt"><g id="1">Cachorro</g> e <g id="2">Peixe</g> podem nadar, então criamos uma classe intermediária <g id="3">AnimaisQueNadam</g>.</target>
 </trans-unit>
 <trans-unit id="tu6" xml:space="preserve">
-<source xml:lang="en"><x id="1"/>media/7438980.png<x id="2"/></source>
-<target xml:lang="pt"><g1>Abelha</g1> e <g2>Passaro</g2> podem voar, então criamos outra classe intermediária <g3>AnimaisQueVoam</g3>.</target>
+<source xml:lang="en"><g id="1">Bee</g> and <g id="2">Bird</g> can fly, so we create <g id="3">FlyingAnimal</g></source>
+<target xml:lang="pt"><g id="1">Abelha</g> e <g id="2">Passaro</g> podem voar, então criamos outra classe intermediária <g id="3">AnimaisQueVoam</g>.</target>
 </trans-unit>
 <trans-unit id="tu7" xml:space="preserve">
-<source xml:lang="en">A @'Stride.Engine.Entitycomponent' is tied to its entity (that is, one component can't be added to two entities at the same time).</source>
-<target xml:lang="pt">O que fazemos agora com o &lt;g1&gt;Pato&lt;/g2&gt;, que pode fazer ambas as coisas?&lt;/g1&gt;</target>
+<source xml:lang="en">What do we now do with the <g id="1">Duck</g>, who can do both?</source>
+<target xml:lang="pt">O que fazemos agora com o &lt;g id="1"&gt;Pato&lt;/g2&gt;, que pode fazer ambas as coisas?&lt;/g&gt;</target>
 </trans-unit>
 <trans-unit id="tu8" xml:space="preserve">
-<source xml:lang="en">How to create an entity and some components</source>
-<target xml:lang="pt">Temos o mesmo problema nos jogos eletrônicos.<x1/>
-Inimigos podem andar, atirar, voar — mas nem todos podem fazer tudo.<x2/>
+<source xml:lang="en">We have the exact same problem in video games.<x id="1"/>
+Enemies can walk, shoot, fly - but not all of them can do everything.<x id="2"/>
+Even something basic like hitpoints is not universal, as some enemies are indestructible.</source>
+<target xml:lang="pt">Temos o mesmo problema nos jogos eletrônicos.<x id="1"/>
+Inimigos podem andar, atirar, voar — mas nem todos podem fazer tudo.<x id="2"/>
 Até algo básico como pontos de vida não são universais, pois alguns inimigos são indestrutíveis.</target>
 </trans-unit>
 <trans-unit id="tu9" xml:space="preserve">
-<source xml:lang="en">// Create entity
-var myEntity = new Entity();
- 
-// Create a model component (so that model is rendered)
-var modelComponent = new ModelComponent { Model = model };
-myEntity.Set(ModelComponent.Key, modelComponent);
-
-// Set entity position
-myEntity.Transformation.Translation = new Vector3(100.0f, 100.0f, 0.0f);
- 
-// Add entity to scene; from now on its model will be rendered
-Entities.Add(myEntity);
-</source>
+<source xml:lang="en">Solution</source>
 <target xml:lang="pt">Solução</target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en">Entity component system (ECS) is a software architectural pattern mostly used in video game development for the representation of game world objects. An ECS comprises entities composed from components of data, with systems which operate on entities' components.<x id="1"/>
+<g id="2">-<g id="3">Wikipedia</g></g></source>
+<target xml:lang="pt">O sistema de entidades e componentes (ECS) é um padrão arquitetônico de software usado principalmente no desenvolvimento de jogos eletrônicos para a representação de objetos no mundo do jogo. Um ECS reúne entidades compostas de componentes de dados, com sistemas que operam nos componentes das entidades.<x id="1"/>
+<g id="2">-<g id="3">Wikipedia</g></g></target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en">The general idea of an ECS is that an <g id="1">entity</g> - an "object" in your virtual world -
+does not really do anything. It is mostly just a "bag of components".</source>
+<target xml:lang="pt">A ideia geral de um ECS é que uma entidade — um "objeto" em seu mundo virtual —<g id="1"/>
+na verdade, não faça muita coisa. Ela, basicamente, apenas uma "coleção de componentes".</target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en">The selection of components on an entity decides what it does.
+An entity with a collider component can collide, an entity with a sound component can make a noise, etc.</source>
+<target xml:lang="pt">A seleção de componentes em uma entidade decide o que ela faz. 
+Uma entidade com um componente de colisão pode colidir, uma entidade com um componente de som pode fazer barulho, etc.</target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en">Differing opinions</source>
+<target xml:lang="pt">Opiniões divergentes</target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en">For the "System" part of the term, there are two interpretations:</source>
+<target xml:lang="pt">Para o trecho "Sistema" do termo, existem duas interpretações:</target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en">A) "Entity-and-Component System"<x id="1"/>
+...in which the components contain the data they need, and also the functionality that works with that data.</source>
+<target xml:lang="pt">A) "Sistema de Entidade e Componente"<x id="1"/>
+...no qual os componentes contêm os dados de que precisam e também a funcionalidade que opera com esses dados.</target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en">B) "Entity, Component, System"<x id="1"/>
+...in which a component only contains data, while a third part - the system -
+contains the functionality.</source>
+<target xml:lang="pt">B) "Entidade, Componente, Sistema"<x id="1"/>
+...no qual um componente contém apenas dados, enquanto uma terceira parte — o sistema —
+contém a funcionalidade.</target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en">Stride allows working in both ways. A) can be achieved by using
+<g id="1">scripts</g>
+while the usage of B) is described in this section of the manual.</source>
+<target xml:lang="pt">O Stride permite trabalhar de ambas as maneiras. A) pode ser alcançada usando
+<g id="1">scripts</g>
+enquanto o uso da abordagem B) é descrito nesta seção do manual.</target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en">Which one to choose?</source>
+<target xml:lang="pt">Qual escolher?</target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>media/ecs-choice.jpg<x id="2"/></source>
+<target xml:lang="pt"><x id="1"/>media/ecs-choice.jpg<x id="2"/></target>
 </trans-unit>
 </body>
 </file>
