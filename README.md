@@ -16,7 +16,7 @@ Neste [link](https://github.com/acastrodev/stride-translations/blob/main/PROGRES
 
 ------
 
-# Stride Engine documentation translation project for the Brazilian Portuguese
+# Stride Engine documentation translation project for the Brazilian Portuguese for the Brazilian Portuguese
 
 Welcome to the Stride Engine Documentation Translation Project for the Brazilian Portuguese (pt-BR). 
 This project aims to provide a localized version of the Stride Engine documentation to make it more accessible to the Portuguese-speaking audience.
