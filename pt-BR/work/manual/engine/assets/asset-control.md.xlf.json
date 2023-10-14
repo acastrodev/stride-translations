@@ -49,12 +49,12 @@
                 ],
                 [
                     "Until now, all assets of a game package, and its dependencies, were compiled as part of your game.",
-                    "Todos os assets de um pacote de jogo e suas dependências eram compilados como parte do seu jogo.",
+                    "Todos os assets de um pacote de jogo e suas dependências, até a versão 1.3, eram compilados como parte do seu jogo.",
                     "Until now, all assets of a game package, and its dependencies, were compiled as part of your game.",
                     "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-control.md",
                     {
                         "creator": "Alexandre Castro",
-                        "createdTime": 1697293815156,
+                        "createdTime": 1697305274698,
                         "id": "tu3"
                     }
                 ],
@@ -82,45 +82,45 @@
                 ],
                 [
                     "We do that by starting to collect dependencies from the new Game Setting asset: it references the Default Scene, and we can easily detect all the required asset references (Models, Materials, Asset referenced by your scripts and so on).",
-                    "As dependências são coletadas a partir do novo asset de Configuração de Jogo: ele faz referência à Cena Padrão, e podemos facilmente identificar todas as dependencias necessárias dos assets (como modelos, materiais e assets referenciados por seus scripts, entre outras coisas).",
+                    "As dependências são coletadas a partir do novo asset de Configuração de Jogo `GameSettings`: ele faz referência à Cena Padrão, e podemos facilmente identificar todas as dependencias necessárias dos assets (como modelos, materiais e assets referenciados por seus scripts, entre outras coisas).",
                     " We do that by starting to collect dependencies from the new Game Setting asset: it references the Default Scene, and we can easily detect all the required asset references (Models, Materials, Asset referenced by your scripts and so on).",
                     "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-control.md",
                     {
                         "creator": "Alexandre Castro",
-                        "createdTime": 1697294182494,
+                        "createdTime": 1697305461130,
                         "id": "tu5"
                     }
                 ],
                 [
                     "In case you were loading anything in your script using Content.Load, you can still tag those assets specifically with “Mark as Root” in the editor.",
-                    "Caso você esteja carregando algo em seu script usando Content.Load, ainda é possível marcar esses assets especificamente como Marcar como Raiz no editor.",
+                    "Caso você esteja carregando algo em seu script usando `Content.Load`, ainda é possível marcar esses assets especificamente utilizando **Marcar como Raiz** no editor.",
                     "In case you were loading anything in your script using Content.Load, you can still tag those assets specifically with “Mark as Root” in the editor.",
                     "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-control.md",
                     {
                         "creator": "Alexandre Castro",
-                        "createdTime": 1697294960304,
+                        "createdTime": 1697305458029,
                         "id": "tu6"
                     }
                 ],
                 [
                     "However, we now recommend to instead create a field in your script and fill it directly in the editor.",
-                    "No entanto, agora recomendamos criar um campo em seu script e preenchê-lo diretamente no editor.",
+                    "Porém, recomendamos que você crie um campo em seu script e o preencha diretamente no editor.",
                     "However, we now recommend to instead create a field in your script and fill it directly in the editor.",
                     "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-control.md",
                     {
                         "creator": "Alexandre Castro",
-                        "createdTime": 1697294249508,
+                        "createdTime": 1697305507398,
                         "id": "tu7"
                     }
                 ],
                 [
                     "All the samples have been updated to this new practice, so please check them out.",
-                    "Todos os exemplos foram atualizados para seguir essa nova prática, portanto, fique à vontade para consultá-los.",
+                    "Todos os exemplos foram atualizados para seguir essa nova prática. Fique à vontade para consultá-los.",
                     " All the samples have been updated to this new practice, so please check them out.",
                     "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-control.md",
                     {
                         "creator": "Alexandre Castro",
-                        "createdTime": 1697294260891,
+                        "createdTime": 1697305562795,
                         "id": "tu7"
                     }
                 ],
@@ -159,23 +159,23 @@
                 ],
                 [
                     "<g1>Automatic<\/g1> for a few asset types (i.e.",
-                    "<g1>Automático<\/g1> para alguns tipos de assets (i.e.",
+                    "<g1>Automático<\/g1> para alguns tipos de assets (ex.:",
                     "<g1>Automatic<\/g1> for a few asset types (i.e.",
                     "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-control.md",
                     {
                         "creator": "Alexandre Castro",
-                        "createdTime": 1697294323139,
+                        "createdTime": 1697305592938,
                         "id": "tu11"
                     }
                 ],
                 [
                     "Game Settings, Shaders)",
-                    "Configurações de jogo, Shaders)",
+                    "Configurações de jogo `GameSettings`, Shaders)",
                     " Game Settings, Shaders)",
                     "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-control.md",
                     {
                         "creator": "Alexandre Castro",
-                        "createdTime": 1697294328315,
+                        "createdTime": 1697305602715,
                         "id": "tu11"
                     }
                 ],
@@ -203,45 +203,45 @@
                 ],
                 [
                     "Since Game Settings is collected, that means that Default Scene and all its dependencies will be compiled as well (includes Model, Script field members pointing to other assets, etc...)",
-                    "Uma vez que as Configurações de Jogo são coletadas, isso significa que a Cena Padrão e todas as suas dependências também serão compiladas (incluindo Modelos, membros de campos de Script que apontam para outros assets, etc...).",
+                    "Uma vez que as Configurações de Jogo são coletadas, a Cena Padrão e todas as suas dependências também serão compiladas (incluindo modelos, membros de campos de script que apontam para outros assets, etc...).",
                     "Since Game Settings is collected, that means that Default Scene and all its dependencies will be compiled as well (includes Model, Script field members pointing to other assets, etc...)",
                     "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-control.md",
                     {
                         "creator": "Alexandre Castro",
-                        "createdTime": 1697294600838,
+                        "createdTime": 1697305657690,
                         "id": "tu14"
                     }
                 ],
                 [
                     "Also, we encourage our users to switch your script from Content.Load (which require \"Mark as Root\") to a field member that you can set within the editor using drag and drop.",
-                    "Além disso, encorajamos nossos usuários a mudar seus scripts de Content.Load (que requerem **Marcar como raiz**) para um membro de campo que pode ser definido no editor usando o recurso arrastar e soltar.",
+                    "Além disso, encorajamos nossos usuários a mudar seus scripts que utilizem `Content.Load` (os quais necessitam **Marcar como raiz**) para um membro de campo que pode ser definido no editor usando o recurso arrastar e soltar.",
                     "Also, we encourage our users to switch your script from Content.Load (which require \"Mark as Root\") to a field member that you can set within the editor using drag and drop.",
                     "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-control.md",
                     {
                         "creator": "Alexandre Castro",
-                        "createdTime": 1697295298105,
+                        "createdTime": 1697305717920,
                         "id": "tu15"
                     }
                 ],
                 [
                     "That will create an implicit dependency that will force that asset to be compiled as well.",
-                    "Isso criará uma dependência implícita que forçará a compilação desse asset também.",
+                    "Isso criará uma dependência implícita que forçará a compilação desse asset.",
                     " That will create an implicit dependency that will force that asset to be compiled as well.",
                     "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-control.md",
                     {
                         "creator": "Alexandre Castro",
-                        "createdTime": 1697294815722,
+                        "createdTime": 1697305748752,
                         "id": "tu15"
                     }
                 ],
                 [
                     "<g1>Everything else (white)<\/g1> (objects not marked as root and not referenced directly or indirectly by a root) <g2>won't be packaged<\/g2>",
-                    "<g1>Todo o resto (branco)<\/g1> (objetos não marcados como raiz e não são referenciados direta ou indiretamente por um objeto raiz) <g2>não será incluído no pacote<\/g2>",
+                    "<g1>Outros assets (branco)<\/g1> (Objetos não marcados como raiz e não referenciados direta ou indiretamente por um objeto raiz) <g2>não serão incluídos no pacote<\/g2>.",
                     "<g1>Everything else (white)<\/g1> (objects not marked as root and not referenced directly or indirectly by a root) <g2>won't be packaged<\/g2>",
                     "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-control.md",
                     {
                         "creator": "Alexandre Castro",
-                        "createdTime": 1697294916609,
+                        "createdTime": 1697305830127,
                         "id": "tu16"
                     }
                 ],
@@ -278,23 +278,23 @@
                 ],
                 [
                     "It means that if \"MyGame\" is current package, if you check \"Mark as Root\" on Silver Material (part of SharedPackage), this information will be stored in MyGame.sdpkg as part of the reference to SharedPackage.",
-                    "Isso significa que se **MeuJogo** for o pacote atual e você marcar **Marcar como raiz** no Material Prateado (parte do SharedPackage), essa informação será armazenada no arquivo MeuJogo.sdpkg como parte da referência ao SharedPackage.",
+                    "Isso significa que se **MeuJogo** for o pacote atual e você o **Marcar como raiz** no Material Prateado (parte do **SharedPackage**), essa informação será armazenada no arquivo `MeuJogo.sdpkg` como parte da referência ao **SharedPackage**.",
                     "It means that if \"MyGame\" is current package, if you check \"Mark as Root\" on Silver Material (part of SharedPackage), this information will be stored in MyGame.sdpkg as part of the reference to SharedPackage.",
                     "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-control.md",
                     {
                         "creator": "Alexandre Castro",
-                        "createdTime": 1697295298105,
+                        "createdTime": 1697305981590,
                         "id": "tu20"
                     }
                 ],
                 [
                     "As a result, you can use a shared package from multiple games even if you have different explicit roots.",
-                    "Como resultado, você pode usar um pacote compartilhado em vários jogos, mesmo que tenha raízes explícitas diferentes.",
+                    "Como resultado, você pode usar um pacote compartilhado em vários jogos, mesmo que tenha raízes explícitamente diferentes.",
                     "As a result, you can use a shared package from multiple games even if you have different explicit roots.",
                     "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-control.md",
                     {
                         "creator": "Alexandre Castro",
-                        "createdTime": 1697295420161,
+                        "createdTime": 1697305950932,
                         "id": "tu21"
                     }
                 ],
@@ -311,12 +311,12 @@
                 ],
                 [
                     "For additional information about asset management, see <g1>Manage Assets<\/g1>",
-                    "Para mais informações sobre gerenciamento de assets, consulte <g1>Gerenciador de assets<\/g1>",
+                    "Para mais informações sobre gerenciamento de assets, consulte <g1>Gerenciar assets<\/g1>",
                     "For additional information about asset management, see <g1>Manage Assets<\/g1>",
                     "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-control.md",
                     {
                         "creator": "Alexandre Castro",
-                        "createdTime": 1697295582012,
+                        "createdTime": 1697305980245,
                         "id": "tu23"
                     }
                 ]

@@ -13,7 +13,7 @@ Esta seção está desatualizada. Recomendamos utilizá-la apenas como referênc
 </trans-unit>
 <trans-unit id="tu3" xml:space="preserve">
 <source xml:lang="en">Until now, all assets of a game package, and its dependencies, were compiled as part of your game.</source>
-<target xml:lang="pt">Todos os assets de um pacote de jogo e suas dependências eram compilados como parte do seu jogo.</target>
+<target xml:lang="pt">Todos os assets de um pacote de jogo e suas dependências, até a versão 1.3, eram compilados como parte do seu jogo.</target>
 </trans-unit>
 <trans-unit id="tu4" xml:space="preserve">
 <source xml:lang="en">Starting with 1.3, we compile only the assets required by your game.</source>
@@ -21,15 +21,15 @@ Esta seção está desatualizada. Recomendamos utilizá-la apenas como referênc
 </trans-unit>
 <trans-unit id="tu5" xml:space="preserve">
 <source xml:lang="en">Don’t worry, most of it is done automatically for you! We do that by starting to collect dependencies from the new Game Setting asset: it references the Default Scene, and we can easily detect all the required asset references (Models, Materials, Asset referenced by your scripts and so on).</source>
-<target xml:lang="pt">Não se preocupe, a maior parte deste processo é feito automaticamente para você! As dependências são coletadas a partir do novo asset de Configuração de Jogo: ele faz referência à Cena Padrão, e podemos facilmente identificar todas as dependencias necessárias dos assets (como modelos, materiais e assets referenciados por seus scripts, entre outras coisas).</target>
+<target xml:lang="pt">Não se preocupe, a maior parte deste processo é feito automaticamente para você! As dependências são coletadas a partir do novo asset de Configuração de Jogo `GameSettings`: ele faz referência à Cena Padrão, e podemos facilmente identificar todas as dependencias necessárias dos assets (como modelos, materiais e assets referenciados por seus scripts, entre outras coisas).</target>
 </trans-unit>
 <trans-unit id="tu6" xml:space="preserve">
 <source xml:lang="en">In case you were loading anything in your script using Content.Load, you can still tag those assets specifically with “Mark as Root” in the editor.</source>
-<target xml:lang="pt">Caso você esteja carregando algo em seu script usando Content.Load, ainda é possível marcar esses assets especificamente como Marcar como Raiz no editor.</target>
+<target xml:lang="pt">Caso você esteja carregando algo em seu script usando `Content.Load`, ainda é possível marcar esses assets especificamente utilizando **Marcar como Raiz** no editor.</target>
 </trans-unit>
 <trans-unit id="tu7" xml:space="preserve">
 <source xml:lang="en">However, we now recommend to instead create a field in your script and fill it directly in the editor. All the samples have been updated to this new practice, so please check them out.</source>
-<target xml:lang="pt">No entanto, agora recomendamos criar um campo em seu script e preenchê-lo diretamente no editor. Todos os exemplos foram atualizados para seguir essa nova prática, portanto, fique à vontade para consultá-los.</target>
+<target xml:lang="pt">Porém, recomendamos que você crie um campo em seu script e o preencha diretamente no editor. Todos os exemplos foram atualizados para seguir essa nova prática. Fique à vontade para consultá-los.</target>
 </trans-unit>
 <trans-unit id="tu8" xml:space="preserve">
 <source xml:lang="en">Which assets are compiled?</source>
@@ -45,7 +45,7 @@ Esta seção está desatualizada. Recomendamos utilizá-la apenas como referênc
 </trans-unit>
 <trans-unit id="tu11" xml:space="preserve">
 <source xml:lang="en"><g id="1">Automatic</g> for a few asset types (i.e. Game Settings, Shaders)</source>
-<target xml:lang="pt"><g id="1">Automático</g> para alguns tipos de assets (i.e. Configurações de jogo, Shaders)</target>
+<target xml:lang="pt"><g id="1">Automático</g> para alguns tipos de assets (ex.: Configurações de jogo `GameSettings`, Shaders)</target>
 </trans-unit>
 <trans-unit id="tu12" xml:space="preserve">
 <source xml:lang="en">Explicit (using "<g id="1">Mark as Root</g>" on the asset)</source>
@@ -57,15 +57,15 @@ Esta seção está desatualizada. Recomendamos utilizá-la apenas como referênc
 </trans-unit>
 <trans-unit id="tu14" xml:space="preserve">
 <source xml:lang="en">Since Game Settings is collected, that means that Default Scene and all its dependencies will be compiled as well (includes Model, Script field members pointing to other assets, etc...)</source>
-<target xml:lang="pt">Uma vez que as Configurações de Jogo são coletadas, isso significa que a Cena Padrão e todas as suas dependências também serão compiladas (incluindo Modelos, membros de campos de Script que apontam para outros assets, etc...).</target>
+<target xml:lang="pt">Uma vez que as Configurações de Jogo são coletadas, a Cena Padrão e todas as suas dependências também serão compiladas (incluindo modelos, membros de campos de script que apontam para outros assets, etc...).</target>
 </trans-unit>
 <trans-unit id="tu15" xml:space="preserve">
 <source xml:lang="en">Also, we encourage our users to switch your script from Content.Load (which require "Mark as Root") to a field member that you can set within the editor using drag and drop. That will create an implicit dependency that will force that asset to be compiled as well.</source>
-<target xml:lang="pt">Além disso, encorajamos nossos usuários a mudar seus scripts de Content.Load (que requerem **Marcar como raiz**) para um membro de campo que pode ser definido no editor usando o recurso arrastar e soltar. Isso criará uma dependência implícita que forçará a compilação desse asset também.</target>
+<target xml:lang="pt">Além disso, encorajamos nossos usuários a mudar seus scripts que utilizem `Content.Load` (os quais necessitam **Marcar como raiz**) para um membro de campo que pode ser definido no editor usando o recurso arrastar e soltar. Isso criará uma dependência implícita que forçará a compilação desse asset.</target>
 </trans-unit>
 <trans-unit id="tu16" xml:space="preserve">
 <source xml:lang="en"><g id="1">Everything else (white)</g> (objects not marked as root and not referenced directly or indirectly by a root) <g id="2">won't be packaged</g></source>
-<target xml:lang="pt"><g id="1">Todo o resto (branco)</g> (objetos não marcados como raiz e não são referenciados direta ou indiretamente por um objeto raiz) <g id="2">não será incluído no pacote</g></target>
+<target xml:lang="pt"><g id="1">Outros assets (branco)</g> (Objetos não marcados como raiz e não referenciados direta ou indiretamente por um objeto raiz) <g id="2">não serão incluídos no pacote</g>.</target>
 </trans-unit>
 <trans-unit id="tu17" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>media/26968245.png<x id="2"/></source>
@@ -81,11 +81,11 @@ Esta seção está desatualizada. Recomendamos utilizá-la apenas como referênc
 </trans-unit>
 <trans-unit id="tu20" xml:space="preserve">
 <source xml:lang="en">It means that if "MyGame" is current package, if you check "Mark as Root" on Silver Material (part of SharedPackage), this information will be stored in MyGame.sdpkg as part of the reference to SharedPackage.</source>
-<target xml:lang="pt">Isso significa que se **MeuJogo** for o pacote atual e você marcar **Marcar como raiz** no Material Prateado (parte do SharedPackage), essa informação será armazenada no arquivo MeuJogo.sdpkg como parte da referência ao SharedPackage.</target>
+<target xml:lang="pt">Isso significa que se **MeuJogo** for o pacote atual e você o **Marcar como raiz** no Material Prateado (parte do **SharedPackage**), essa informação será armazenada no arquivo `MeuJogo.sdpkg` como parte da referência ao **SharedPackage**.</target>
 </trans-unit>
 <trans-unit id="tu21" xml:space="preserve">
 <source xml:lang="en">As a result, you can use a shared package from multiple games even if you have different explicit roots.</source>
-<target xml:lang="pt">Como resultado, você pode usar um pacote compartilhado em vários jogos, mesmo que tenha raízes explícitas diferentes.</target>
+<target xml:lang="pt">Como resultado, você pode usar um pacote compartilhado em vários jogos, mesmo que tenha raízes explícitamente diferentes.</target>
 </trans-unit>
 <trans-unit id="tu22" xml:space="preserve">
 <source xml:lang="en">See also</source>
@@ -93,7 +93,7 @@ Esta seção está desatualizada. Recomendamos utilizá-la apenas como referênc
 </trans-unit>
 <trans-unit id="tu23" xml:space="preserve">
 <source xml:lang="en">For additional information about asset management, see <g id="1">Manage Assets</g></source>
-<target xml:lang="pt">Para mais informações sobre gerenciamento de assets, consulte <g id="1">Gerenciador de assets</g></target>
+<target xml:lang="pt">Para mais informações sobre gerenciamento de assets, consulte <g id="1">Gerenciar assets</g></target>
 </trans-unit>
 </body>
 </file>
