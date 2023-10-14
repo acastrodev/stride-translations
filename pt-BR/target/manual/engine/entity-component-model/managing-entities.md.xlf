@@ -35,7 +35,7 @@
 </trans-unit>
 <trans-unit id="tu9" xml:space="preserve">
 <source xml:lang="en">To solve this problem, the concept of Entity Processor has been added. An Entity Processor will access Entities that matches specific requirements (i.e. process all entities with MeshComponent) and process all of them in a single update function. This allows for greater efficiency and cache-friendliness, as there is no need to check every entity/components many times per frame.</source>
-<target xml:lang="pt">Para resolver este problema, o conceito de Processador de Entidade foi adicionado. Um Processador de Entidades acessará entidades que atendam a requisitos específicos (por exemplo, processar todas as entidades com componente de malha) e processará todas elas em uma única função de atualização. Isso permite uma maior eficiência do uso do cache, pois não é necessário verificar todas as entidades/componentes muitas vezes por quadro.</target>
+<target xml:lang="pt">Para resolver este problema, o conceito de Processador de Entidade foi adicionado. Um Processador de Entidades acessará entidades que atendam a requisitos específicos (como, por exemplo, processar todas as entidades com o componente de malha) e processará todas elas em uma única função de atualização. Isso permite uma maior eficiência do uso do cache, pois não é necessário verificar todas as entidades/componentes muitas vezes por quadro.</target>
 </trans-unit>
 <trans-unit id="tu10" xml:space="preserve">
 <source xml:lang="en">This approach also solves many update order dependencies issues (just need to order the entity processors updates properly).</source>
@@ -51,7 +51,7 @@
 </trans-unit>
 <trans-unit id="tu13" xml:space="preserve">
 <source xml:lang="en">As a result, @'Stride.Engine.EntityManager' can be used as a hierarchical scenegraph instead of a simple entity list.</source>
-<target xml:lang="pt">Como resultado, @'Stride. Motor. EntityManager' pode ser usado como um grafo de cena em vez de uma lista de entidades simples.</target>
+<target xml:lang="pt">Como resultado, @'Stride.Engine.EntityManager' pode ser usado como um grafo de cena em vez de uma lista de entidades simples.</target>
 </trans-unit>
 <trans-unit id="tu14" xml:space="preserve">
 <source xml:lang="en">@'Stride.Engine.MeshProcessor': Add @'Stride.Engine.ModelComponent.Model' to rendering.</source>
@@ -59,7 +59,7 @@
 </trans-unit>
 <trans-unit id="tu15" xml:space="preserve">
 <source xml:lang="en">@'Stride.Engine.LightProcessor': Collects and update lights, and transfer it to rendering system. It can hides implementation details (deferred or forward rendering, etc...)</source>
-<target xml:lang="pt">@'Stride.Engine.LightProcessor': Coleta e atualiza luzes e as transfere para o sistema de renderização. Ele pode ocultar detalhes de implementação (renderização diferida ou direta, etc...).</target>
+<target xml:lang="pt">@'Stride.Engine.LightProcessor': Coleta e atualiza luzes e as transfere para o sistema de renderização. Ele pode ocultar detalhes de implementação (renderização direta ou indireta, etc...).</target>
 </trans-unit>
 <trans-unit id="tu16" xml:space="preserve">
 <source xml:lang="en">Entity System</source>
@@ -67,7 +67,7 @@
 </trans-unit>
 <trans-unit id="tu17" xml:space="preserve">
 <source xml:lang="en">Entity are grouped together in an @'Stride.Engine.EntityManager'. It will also contains the list of entity processors. When an entity is added or an entity components changes, it will ask entity processors if they should be included.</source>
-<target xml:lang="pt">As Entidades são agrupadas num @'Stride. Motor.EntityManager'. Ele também contém a lista de processadores de entidade. Quando uma entidade é adicionada ou um componente de entidade é alterado, ela consultará os processadores de entidades para saber se eles devem ser incluídos.</target>
+<target xml:lang="pt">As Entidades são agrupadas num @'Stride.Engine.EntityManager'. Ele também contém a lista de processadores de entidade. Quando uma entidade é adicionada ou um componente de entidade é alterado, o @'Stride.Engine.EntityManager' consultará os processadores de entidades para saber se eles devem ser incluídos.</target>
 </trans-unit>
 <trans-unit id="tu18" xml:space="preserve">
 <source xml:lang="en">// Add an entity:
@@ -80,11 +80,11 @@ foreach (var entity in engine.EntityManager.Entities)
 	Console.WriteLine(entity.Name);
 }
 </source>
-<target xml:lang="pt">// Adicione uma entidade:
+<target xml:lang="pt">// Adiciona uma entidade:
 var minhaEntidade = new Entity();
 engine.EntityManager.AddEntity(minhaEntidade);
  
-/ Itere pelas entidades adicionadas:
+// Itera pelas entidades adicionadas:
 foreach (var entidade in engine.EntityManager.Entities)
 {
 	Console.WriteLine(entidade.Name);
@@ -93,11 +93,11 @@ foreach (var entidade in engine.EntityManager.Entities)
 </trans-unit>
 <trans-unit id="tu19" xml:space="preserve">
 <source xml:lang="en">@'Stride.Engine.EntityManager' can be used to enumerate its <g id="1">Entities (ref:{Stride.Engine.Entity})</g>. Note that children of a given entities will also be in this list.</source>
-<target xml:lang="pt">@'Stride.Engine.EntityManager' pode ser usado para enumerar suas <g id="1">Entidades (ref:{Stride.Engine.Entity})</g>. No entanto, é importante ressaltar que os filhos de uma determinada entidade também estarão nesta lista.</target>
+<target xml:lang="pt">@'Stride.Engine.EntityManager' pode ser usado para enumerar suas próprias <g id="1">Entidades (ref:{Stride.Engine.Entity})</g>. No entanto, é importante ressaltar que os filhos de uma determinada entidade também estarão nesta lista.</target>
 </trans-unit>
 <trans-unit id="tu20" xml:space="preserve">
 <source xml:lang="en">To manipulate entities as a scenegraph, refer to @'Stride.Engine.TransformationComponent' class.</source>
-<target xml:lang="pt">Para manipular entidades como um grafo de cena, consulte a classe @'Stride.Engine.TransformationComponent'.</target>
+<target xml:lang="pt">Para manipular entidades utlizando um grafo de cena, consulte a classe @'Stride.Engine.TransformationComponent'.</target>
 </trans-unit>
 </body>
 </file>
