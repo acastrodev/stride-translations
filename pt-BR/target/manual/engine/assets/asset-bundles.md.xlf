@@ -3,21 +3,21 @@
 <body>
 <trans-unit id="tu1" xml:space="preserve">
 <source xml:lang="en">Asset bundles</source>
-<target xml:lang="pt">Pacotes de ativos</target>
+<target xml:lang="pt">Conjunto de asset (Bundles)</target>
 </trans-unit>
 <trans-unit id="tu2" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>!Warning<x id="2"/>
 This section is out of date. For now, you should only use it for reference.</source>
 <target xml:lang="pt"><x id="1"/>!Warning<x id="2"/>
-Esta seção está fora de data. Por enquanto, você só deve usá-lo para referência.</target>
+Esta seção está desatualizada. Por hora, você deve usá-la apenas como referência.</target>
 </trans-unit>
 <trans-unit id="tu3" xml:space="preserve">
 <source xml:lang="en">A bundle of assets allows to package assets into a single archive that can be downloaded into the game at a specific time.</source>
-<target xml:lang="pt">Um pacote de ativos permite empacotar ativos em um único arquivo que pode ser baixado no jogo em um momento específico.</target>
+<target xml:lang="pt">Um conjunto de assets permite empacotar assets num único arquivo que pode ser baixado no jogo num momento específico.</target>
 </trans-unit>
 <trans-unit id="tu4" xml:space="preserve">
 <source xml:lang="en">It allows creation of <g id="1">Downloadable Content (DLC)</g>.</source>
-<target xml:lang="pt">Permite a criação de conteúdo <g id="1">Downloadable (DLC)</g>.</target>
+<target xml:lang="pt">Isso possibilita a criação de <g id="1">Conteúdo para Download (DLC)</g>.</target>
 </trans-unit>
 <trans-unit id="tu5" xml:space="preserve">
 <source xml:lang="en">Basic rules:</source>
@@ -29,23 +29,23 @@ Esta seção está fora de data. Por enquanto, você só deve usá-lo para refer
 </trans-unit>
 <trans-unit id="tu7" xml:space="preserve">
 <source xml:lang="en">A bundle is created from several <g id="1">assets selectors</g>  (Currently, only the <g id="2">PathSelector</g> and <g id="3">TagSelector</g> are supported)</source>
-<target xml:lang="pt">Um pacote é criado a partir de vários seletores <g id="1">assets</g> (Curentemente, apenas o <g id="2">PathSelector</g> e <g id="3">TagSelector</g> são suportados)</target>
+<target xml:lang="pt">Um conjunto é criado a partir de diversos <g id="1">seletores de assets</g> (atualmente, apenas <g id="2">PathSelector</g> e <g id="3">TagSelector</g> são suportados).</target>
 </trans-unit>
 <trans-unit id="tu8" xml:space="preserve">
 <source xml:lang="en">A bundle can have dependencies to others bundles</source>
-<target xml:lang="pt">Um pacote pode ter dependências para outros pacotes</target>
+<target xml:lang="pt">Um conjunto pode ter dependências de outros conjuntos</target>
 </trans-unit>
 <trans-unit id="tu9" xml:space="preserve">
 <source xml:lang="en">Every bundle implicitly references <g id="1">default</g> bundle, where every asset which shouldn't go in a specific bundle will be packaged</source>
-<target xml:lang="pt">Cada pacote refere-se implicitamente <g id="1">default</g> bundle, onde cada ativo que não deve ir em um pacote específico será embalado</target>
+<target xml:lang="pt">Cada conjunto faz referência implicitamente ao conjunto padrão, onde cada asset que não deve ser incluído num conjunto específico será empacotado.<g id="1"/></target>
 </trans-unit>
 <trans-unit id="tu10" xml:space="preserve">
 <source xml:lang="en">Once a bundle is deployed into the game, all assets from this bundle and all its dependencies are accessible</source>
-<target xml:lang="pt">Uma vez que um pacote é implantado no jogo, todos os ativos deste pacote e todas as suas dependências são acessíveis</target>
+<target xml:lang="pt">Uma vez que um conjunto é adicionado no jogo, todos os assets desse conjunto e todas as suas dependências se tornam acessíveis</target>
 </trans-unit>
 <trans-unit id="tu11" xml:space="preserve">
 <source xml:lang="en">Bundle resolution is done through an asynchronous callback that allows you to download bundle, and will be called once per dependency (similar to AssemblyResolve event).</source>
-<target xml:lang="pt">Resolução do pacote é feito através de um callback assíncrono que permite que você baixe o pacote, e será chamado uma vez por dependência (semelhante ao evento AssemblyResolve).</target>
+<target xml:lang="pt">A resolução de conjuntos é realizada por meio de uma funções de retorno de chamada assíncrona que permite o download do conjunto e será executada uma vez por dependência (similar ao evento AssemblyResolve).</target>
 </trans-unit>
 <trans-unit id="tu12" xml:space="preserve">
 <source xml:lang="en">Create a bundle</source>
@@ -55,7 +55,7 @@ Esta seção está fora de data. Por enquanto, você só deve usá-lo para refer
 <source xml:lang="en"><x id="1"/>!Note<x id="2"/>
 Creating currently requires some manual steps (i.e. editing <g id="3">sdpkg</g> by hand).</source>
 <target xml:lang="pt"><x id="1"/>!Note<x id="2"/>
-Criar atualmente requer alguns passos manuais (isto é, edição <g id="3">sdpkg</g> à mão).</target>
+A criação atualmente requer alguns passos manuais (ou seja, editar <g id="3">sdpkg</g> manualmente).</target>
 </trans-unit>
 <trans-unit id="tu14" xml:space="preserve">
 <source xml:lang="en">Open the <g id="1">sdprj</g> file of the game executable and add the following configuration:</source>
@@ -67,11 +67,11 @@ Criar atualmente requer alguns passos manuais (isto é, edição <g id="3">sdpkg
 </trans-unit>
 <trans-unit id="tu16" xml:space="preserve">
 <source xml:lang="en">A bundle named <g id="1">MyBundleName</g> will embed assets with tags <g id="2">MyTag1</g> and <g id="3">MyTag2</g></source>
-<target xml:lang="pt">Um pacote chamado <g id="1">MyBundleName</g> incorporará ativos com tags <g id="2">MyTag1</g> e <g id="3">MyTag2</g></target>
+<target xml:lang="pt">Um conjunto chamado <g id="1">MeuConjunto1</g> incorporará assets com as tags <g id="2">MinhaTag1</g> e <g id="3">MinhaTag2</g>.</target>
 </trans-unit>
 <trans-unit id="tu17" xml:space="preserve">
 <source xml:lang="en">A bundle named <g id="1">MyBundleName2</g> will embed assets with tags <g id="2">MyTag3</g> and <g id="3">MyTag4</g>. This bundle has a dependency to <g id="4">MyBundleName</g></source>
-<target xml:lang="pt">Um pacote chamado <g id="1">MyBundleName2</g> incorporará ativos com tags <g id="2">MyTag3</g> e <g id="3">MyTag4</g>. Este pacote tem uma dependência de <g id="4">MyBundleName</g></target>
+<target xml:lang="pt">Um conjunto chamado <g id="1">MeuConjunto2</g> incorporará assets com as tags<g id="2">MinhaTag3</g> e <g id="3">MinhaTag4</g>. Este conjunto tem uma dependência com <g id="4">MeuConjunto1</g></target>
 </trans-unit>
 <trans-unit id="tu18" xml:space="preserve">
 <source xml:lang="en">There is also a <g id="1">PathSelector</g> which follow the <g id="2">.gitignore</g> filtering convention.</source>
@@ -100,26 +100,26 @@ Criar atualmente requer alguns passos manuais (isto é, edição <g id="3">sdpkg
         - *.bin
         - folder3/*.xml
 </source>
-<target xml:lang="pt">Pacotes:
- - Nome: MyBundleName
-   Seletores:
-    -TagSelector
-      Etiquetas: 
-        - MyTag1
-        - MyTag2
- - Nome: MyBundleName2
-   Dependências:
-    - MyBundleName
-   Seletores:
-    -TagSelector
-      Etiquetas: 
-        - MyTag3
-        - MyTag4
-    -PathSelector
-      Caminhos:
+<target xml:lang="pt">Bundles:
+ - Name: MeuConjunto1
+   Selectors:
+    - !TagSelector
+      Tags: 
+        - MinhaTag1
+        - MinhaTag1
+ - Name: MeuConjunto2
+   Dependencies:
+    - MeuConjunto1
+   Selectors:
+    - !TagSelector
+      Tags: 
+        - MinhaTag3
+        - MinhaTag4
+    - !PathSelector
+      Paths:
         - pasta1/
-        - /folder2/
-        - *
+        - /pasta2/
+        - *.bin
         - pasta3/*.xml
 </target>
 </trans-unit>
@@ -129,47 +129,47 @@ Criar atualmente requer alguns passos manuais (isto é, edição <g id="3">sdpkg
 </trans-unit>
 <trans-unit id="tu21" xml:space="preserve">
 <source xml:lang="en">Asset dependencies are automatically placed in the most appropriate bundle.</source>
-<target xml:lang="pt">As dependências de ativos são automaticamente colocadas no pacote mais apropriado.</target>
+<target xml:lang="pt">As dependências de assets são automaticamente colocadas no pacote mais apropriado</target>
 </trans-unit>
 <trans-unit id="tu22" xml:space="preserve">
 <source xml:lang="en">Current process works that way:</source>
-<target xml:lang="pt">O processo atual funciona dessa forma:</target>
+<target xml:lang="pt">O processo atual funciona da seguinte maneira:</target>
 </trans-unit>
 <trans-unit id="tu23" xml:space="preserve">
 <source xml:lang="en">Find assets that matches specific Tag Selectors ("roots" of bundle assets).</source>
-<target xml:lang="pt">Encontre ativos que correspondam a Tag Selectors específicos ("raiz" de ativos de pacotes).</target>
+<target xml:lang="pt">Encontre assets que correspondam aos Seletores de Tag específicos (as "raízes" dos assets do conjunto).</target>
 </trans-unit>
 <trans-unit id="tu24" xml:space="preserve">
 <source xml:lang="en">Enumerate assets that are dependent on those "roots" bundle assets and put them in the same bundle than their "roots" asset.</source>
-<target xml:lang="pt">Enumerate ativos que são dependentes desses ativos de pacotes "raiz" e colocá-los no mesmo pacote do que seu "raiz" ativo.</target>
+<target xml:lang="pt">Enumere os assets que dependem dessas raízes e coloque-os no mesmo conjunto que elas.</target>
 </trans-unit>
 <trans-unit id="tu25" xml:space="preserve">
 <source xml:lang="en">Except if already accessible through one of package dependencies (i.e. a shared dependent package or default package).</source>
-<target xml:lang="pt">Exceto se já acessível através de uma das dependências do pacote (ou seja, um pacote dependente compartilhado ou pacote padrão).</target>
+<target xml:lang="pt">A menos que já sejam acessíveis por meio de uma das dependências do pacote (como um pacote dependente compartilhado ou o pacote padrão).</target>
 </trans-unit>
 <trans-unit id="tu26" xml:space="preserve">
 <source xml:lang="en">Place everything else in default bundle.</source>
-<target xml:lang="pt">Coloque tudo o resto no pacote padrão.</target>
+<target xml:lang="pt">Coloque todo o resto no conjunto padrão.</target>
 </trans-unit>
 <trans-unit id="tu27" xml:space="preserve">
 <source xml:lang="en">Note that:</source>
-<target xml:lang="pt">Note que:</target>
+<target xml:lang="pt">Observe que:</target>
 </trans-unit>
 <trans-unit id="tu28" xml:space="preserve">
 <source xml:lang="en">Shared assets might be duplicated if not specifically placed in common or default package, but that is intended (i.e. if user wishes to distribute 2 separate DLC that need common assets but need to be self-contained).</source>
-<target xml:lang="pt">Os ativos compartilhados podem ser duplicados se não forem especificamente colocados em pacotes comuns ou padrão, mas isso é pretendido (ou seja, se o usuário deseja distribuir 2 DLC separados que precisam de ativos comuns, mas precisam ser auto-suficientes).</target>
+<target xml:lang="pt">Os assets compartilhados podem ser duplicados se não forem especificamente colocados no conjunto compartilhado ou no conjunto padrão, mas isso é intencional (por exemplo, se o usuário desejar distribuir dois DLCs separados que necessitam de assets comuns, mas também precisam ser independentes).</target>
 </trans-unit>
 <trans-unit id="tu29" xml:space="preserve">
 <source xml:lang="en">Every bundle implicitly depends on default bundle.</source>
-<target xml:lang="pt">Cada pacote depende implicitamente do pacote padrão.</target>
+<target xml:lang="pt">Cada conjunto depende implicitamente do conjunto padrão.</target>
 </trans-unit>
 <trans-unit id="tu30" xml:space="preserve">
 <source xml:lang="en">Load a bundle at runtime</source>
-<target xml:lang="pt">Carregar um pacote no tempo de execução</target>
+<target xml:lang="pt">Carregar um conjunto em tempo de execução</target>
 </trans-unit>
 <trans-unit id="tu31" xml:space="preserve">
 <source xml:lang="en">Loading bundle is done through <g id="1">ObjectDatabase.LoadBundle(string bundleName) (ref:{Stride.Core.Storage.ObjectDatabase.LoadBundle})</g>:</source>
-<target xml:lang="pt">O pacote de carga é feito através de <g id="1">ObjectDatabase.LoadBundle(string bundleName) (ref:{Stride.Core.Storage.ObjectDatabase.LoadBundle})</g>:</target>
+<target xml:lang="pt">O carregamento de conjuntos é feito através de <g id="1">ObjectDatabase.LoadBundle(string bundleName) (ref:{Stride.Core.Storage.ObjectDatabase.LoadBundle})</g>:</target>
 </trans-unit>
 <trans-unit id="tu32" xml:space="preserve">
 <source xml:lang="en">// Load bundle
@@ -178,11 +178,11 @@ Assets.DatabaseFileProvider.ObjectDatabase.LoadBundle("MyBundleName2");
 // Load specified asset
 var texture = Assets.Load&lt;Texture2D&gt;("AssetContainedInMyBundleName2");
 </source>
-<target xml:lang="pt">// Pacote de carga
-Assets.DatabaseFileProvider.ObjectDatabase.LoadBundle("MyBundleName2");
+<target xml:lang="pt">// Carregar o conjunto
+Assets.DatabaseFileProvider.ObjectDatabase.LoadBundle("MeuConjunto1");
  
-// Carga de ativos especificados
-var texture = Assets.Load&lt;Texture2D&gt;("AssetContainedInMyBundleName2");
+// Carregar um asset específico
+var texture = Assets.Load&lt;Texture2D&gt;("AssetContidoNoMeuConjunto2");
 </target>
 </trans-unit>
 <trans-unit id="tu33" xml:space="preserve">
@@ -191,15 +191,15 @@ var texture = Assets.Load&lt;Texture2D&gt;("AssetContainedInMyBundleName2");
 </trans-unit>
 <trans-unit id="tu34" xml:space="preserve">
 <source xml:lang="en">Selectors help deciding which assets are stored in a specific bundle.</source>
-<target xml:lang="pt">Os seletores ajudam a decidir quais ativos são armazenados em um pacote específico.</target>
+<target xml:lang="pt">Os seletores ajudam a decidir quais assets são armazenados em um conjunto específico.</target>
 </trans-unit>
 <trans-unit id="tu35" xml:space="preserve">
 <source xml:lang="en">Tag selector</source>
-<target xml:lang="pt">Tag selector</target>
+<target xml:lang="pt">Seletores de Tag</target>
 </trans-unit>
 <trans-unit id="tu36" xml:space="preserve">
 <source xml:lang="en">Select assets based on a list of tag attached on each asset.</source>
-<target xml:lang="pt">Selecione ativos com base em uma lista de tags anexadas em cada ativo.</target>
+<target xml:lang="pt">Seleciona assets com base em uma lista de tags anexadas a cada asset.</target>
 </trans-unit>
 <trans-unit id="tu37" xml:space="preserve">
 <source xml:lang="en">Properties:</source>
@@ -207,7 +207,7 @@ var texture = Assets.Load&lt;Texture2D&gt;("AssetContainedInMyBundleName2");
 </trans-unit>
 <trans-unit id="tu38" xml:space="preserve">
 <source xml:lang="en">Tags: List of Tags. Any asset that contains at least one of the tag will be included.</source>
-<target xml:lang="pt">Etiquetas: Lista de Tags. Qualquer ativo que contenha pelo menos uma das tags será incluído.</target>
+<target xml:lang="pt">Tags: Lista de Tags. Qualquer asset que contenha pelo menos uma das tags será incluído.</target>
 </trans-unit>
 <trans-unit id="tu39" xml:space="preserve">
 <source xml:lang="en">Path selector</source>
@@ -215,11 +215,11 @@ var texture = Assets.Load&lt;Texture2D&gt;("AssetContainedInMyBundleName2");
 </trans-unit>
 <trans-unit id="tu40" xml:space="preserve">
 <source xml:lang="en">Select assets based on their path.</source>
-<target xml:lang="pt">Selecione ativos com base em seu caminho.</target>
+<target xml:lang="pt">Selecione assets com base em seu caminho.</target>
 </trans-unit>
 <trans-unit id="tu41" xml:space="preserve">
 <source xml:lang="en">Standard .gitignore patterns are supported (except ! (negate), # (comments) and \[0-9\] (groups)).</source>
-<target xml:lang="pt">Padrões .gitignore padrão são suportados (exceto! (negado), # (comments) e \[0-9\] (groups)).</target>
+<target xml:lang="pt">Padrões convencionais do .gitignore são suportados (exceto ! (negar), # (comentários) e \[0-9\] (grupos)).</target>
 </trans-unit>
 <trans-unit id="tu42" xml:space="preserve">
 <source xml:lang="en">Properties:</source>
@@ -227,7 +227,7 @@ var texture = Assets.Load&lt;Texture2D&gt;("AssetContainedInMyBundleName2");
 </trans-unit>
 <trans-unit id="tu43" xml:space="preserve">
 <source xml:lang="en">Paths: List of filters. Any asset whose URL matches one of the filter will be included.</source>
-<target xml:lang="pt">Caminhos: Lista de filtros. Qualquer ativo cuja URL corresponde a um do filtro será incluído.</target>
+<target xml:lang="pt">Caminhos: Lista de filtros. Qualquer asset cuja URL corresponda a um dos filtros será incluído.</target>
 </trans-unit>
 </body>
 </file>

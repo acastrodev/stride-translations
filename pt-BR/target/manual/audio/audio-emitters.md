@@ -4,7 +4,7 @@
 <span class="badge text-bg-success">Programação</span>
 <x id="1"/>Design<x id="2"/><span class="badge text-bg-success"></span>
 
-Os [componentes de emissores de áudio](xref:Stride.Audio.AudioEmitter) têm a função de criar [áudio espacial](spatialized-audio.md)  e podem ser incluídos em qualquer entidade.
+Os [componentes emissores de áudio](xref:Stride.Audio.AudioEmitter) têm a função de criar [áudio espacial](spatialized-audio.md)  e podem ser incluídos em qualquer entidade.
 
 O tom e o volume do som variam à medida que o [receptor de áudio](audio-listeners.md) se aproxima ou se afasta do emissor de áudio.
 

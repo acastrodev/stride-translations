@@ -1,703 +1,825 @@
 {
-  "filename": "manual\\engine\\assets\\asset-bundles.md.xlf",
-  "files": [
-    {
-      "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md": [
-        [
-          "Asset bundles",
-          "Pacotes de ativos",
-          "Asset bundles",
-          "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md",
-          {
-            "id": "tu1"
-          }
-        ],
-        [
-          "<x1\/>!Warning<x2\/>",
-          "<x1\/>!Warning<x2\/>",
-          "<x1\/>!Warning<x2\/>\r\n",
-          "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md",
-          {
-            "id": "tu2"
-          }
-        ],
-        [
-          "This section is out of date.",
-          "Esta seção está fora de data.",
-          "This section is out of date.",
-          "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md",
-          {
-            "id": "tu2"
-          }
-        ],
-        [
-          "For now, you should only use it for reference.",
-          "Por enquanto, você só deve usá-lo para referência.",
-          " For now, you should only use it for reference.",
-          "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md",
-          {
-            "id": "tu2"
-          }
-        ],
-        [
-          "A bundle of assets allows to package assets into a single archive that can be downloaded into the game at a specific time.",
-          "Um pacote de ativos permite empacotar ativos em um único arquivo que pode ser baixado no jogo em um momento específico.",
-          "A bundle of assets allows to package assets into a single archive that can be downloaded into the game at a specific time.",
-          "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md",
-          {
-            "id": "tu3"
-          }
-        ],
-        [
-          "It allows creation of <g1>Downloadable Content (DLC)<\/g1>.",
-          "Permite a criação de conteúdo <g1>Downloadable (DLC)<\/g1>.",
-          "It allows creation of <g1>Downloadable Content (DLC)<\/g1>.",
-          "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md",
-          {
-            "id": "tu4"
-          }
-        ],
-        [
-          "Basic rules:",
-          "Regras básicas:",
-          "Basic rules:",
-          "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md",
-          {
-            "id": "tu5"
-          }
-        ],
-        [
-          "A project can generate several bundle.",
-          "Um projeto pode gerar vários pacotes.",
-          "A project can generate several bundle.",
-          "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md",
-          {
-            "id": "tu6"
-          }
-        ],
-        [
-          "A bundle is created from several <g1>assets selectors<\/g1>  (Currently, only the <g2>PathSelector<\/g2> and <g3>TagSelector<\/g3> are supported)",
-          "Um pacote é criado a partir de vários seletores <g1>assets<\/g1> (Curentemente, apenas o <g2>PathSelector<\/g2> e <g3>TagSelector<\/g3> são suportados)",
-          "A bundle is created from several <g1>assets selectors<\/g1>  (Currently, only the <g2>PathSelector<\/g2> and <g3>TagSelector<\/g3> are supported)",
-          "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md",
-          {
-            "id": "tu7"
-          }
-        ],
-        [
-          "A bundle can have dependencies to others bundles",
-          "Um pacote pode ter dependências para outros pacotes",
-          "A bundle can have dependencies to others bundles",
-          "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md",
-          {
-            "id": "tu8"
-          }
-        ],
-        [
-          "Every bundle implicitly references <g1>default<\/g1> bundle, where every asset which shouldn't go in a specific bundle will be packaged",
-          "Cada pacote refere-se implicitamente <g1>default<\/g1> bundle, onde cada ativo que não deve ir em um pacote específico será embalado",
-          "Every bundle implicitly references <g1>default<\/g1> bundle, where every asset which shouldn't go in a specific bundle will be packaged",
-          "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md",
-          {
-            "id": "tu9"
-          }
-        ],
-        [
-          "Once a bundle is deployed into the game, all assets from this bundle and all its dependencies are accessible",
-          "Uma vez que um pacote é implantado no jogo, todos os ativos deste pacote e todas as suas dependências são acessíveis",
-          "Once a bundle is deployed into the game, all assets from this bundle and all its dependencies are accessible",
-          "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md",
-          {
-            "id": "tu10"
-          }
-        ],
-        [
-          "Bundle resolution is done through an asynchronous callback that allows you to download bundle, and will be called once per dependency (similar to AssemblyResolve event).",
-          "Resolução do pacote é feito através de um callback assíncrono que permite que você baixe o pacote, e será chamado uma vez por dependência (semelhante ao evento AssemblyResolve).",
-          "Bundle resolution is done through an asynchronous callback that allows you to download bundle, and will be called once per dependency (similar to AssemblyResolve event).",
-          "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md",
-          {
-            "id": "tu11"
-          }
-        ],
-        [
-          "Create a bundle",
-          "Criar um pacote",
-          "Create a bundle",
-          "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md",
-          {
-            "id": "tu12"
-          }
-        ],
-        [
-          "<x1\/>!Note<x2\/>",
-          "<x1\/>!Note<x2\/>",
-          "<x1\/>!Note<x2\/>\r\n",
-          "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md",
-          {
-            "id": "tu13"
-          }
-        ],
-        [
-          "Creating currently requires some manual steps (i.e. editing <g1>sdpkg<\/g1> by hand).",
-          "Criar atualmente requer alguns passos manuais (isto é, edição <g1>sdpkg<\/g1> à mão).",
-          "Creating currently requires some manual steps (i.e. editing <g1>sdpkg<\/g1> by hand).",
-          "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md",
-          {
-            "id": "tu13"
-          }
-        ],
-        [
-          "Open the <g1>sdprj<\/g1> file of the game executable and add the following configuration:",
-          "Abra o arquivo <g1>sdprj<\/g1> do executável do jogo e adicione a seguinte configuração:",
-          "Open the <g1>sdprj<\/g1> file of the game executable and add the following configuration:",
-          "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md",
-          {
-            "id": "tu14"
-          }
-        ],
-        [
-          "Example:",
-          "Exemplo:",
-          "Example:",
-          "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md",
-          {
-            "id": "tu15"
-          }
-        ],
-        [
-          "A bundle named <g1>MyBundleName<\/g1> will embed assets with tags <g2>MyTag1<\/g2> and <g3>MyTag2<\/g3>",
-          "Um pacote chamado <g1>MyBundleName<\/g1> incorporará ativos com tags <g2>MyTag1<\/g2> e <g3>MyTag2<\/g3>",
-          "A bundle named <g1>MyBundleName<\/g1> will embed assets with tags <g2>MyTag1<\/g2> and <g3>MyTag2<\/g3>",
-          "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md",
-          {
-            "id": "tu16"
-          }
-        ],
-        [
-          "A bundle named <g1>MyBundleName2<\/g1> will embed assets with tags <g2>MyTag3<\/g2> and <g3>MyTag4<\/g3>.",
-          "Um pacote chamado <g1>MyBundleName2<\/g1> incorporará ativos com tags <g2>MyTag3<\/g2> e <g3>MyTag4<\/g3>.",
-          "A bundle named <g1>MyBundleName2<\/g1> will embed assets with tags <g2>MyTag3<\/g2> and <g3>MyTag4<\/g3>.",
-          "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md",
-          {
-            "id": "tu17"
-          }
-        ],
-        [
-          "This bundle has a dependency to <g4>MyBundleName<\/g4>",
-          "Este pacote tem uma dependência de <g4>MyBundleName<\/g4>",
-          " This bundle has a dependency to <g4>MyBundleName<\/g4>",
-          "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md",
-          {
-            "id": "tu17"
-          }
-        ],
-        [
-          "There is also a <g1>PathSelector<\/g1> which follow the <g2>.gitignore<\/g2> filtering convention.",
-          "Há também um <g1>PathSelector<\/g1> que segue a convenção de filtragem <g2>.gitignore<\/g2>.",
-          "There is also a <g1>PathSelector<\/g1> which follow the <g2>.gitignore<\/g2> filtering convention.",
-          "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md",
-          {
-            "id": "tu18"
-          }
-        ],
-        [
-          "Bundles:",
-          "Pacotes:",
-          "Bundles:\r\n",
-          "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md",
-          {
-            "id": "tu19"
-          }
-        ],
-        [
-          "- Name:",
-          "- Nome:",
-          " - Name:",
-          "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md",
-          {
-            "id": "tu19"
-          }
-        ],
-        [
-          "MyBundleName",
-          "MyBundleName",
-          " MyBundleName\r\n",
-          "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md",
-          {
-            "id": "tu19"
-          }
-        ],
-        [
-          "Selectors:",
-          "Seletores:",
-          "   Selectors:\r\n",
-          "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md",
-          {
-            "id": "tu19"
-          }
-        ],
-        [
-          "- !TagSelector",
-          "-TagSelector",
-          "    - !TagSelector\r\n",
-          "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md",
-          {
-            "id": "tu19"
-          }
-        ],
-        [
-          "Tags:",
-          "Etiquetas:",
-          "      Tags:",
-          "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md",
-          {
-            "id": "tu19"
-          }
-        ],
-        [
-          "- MyTag1",
-          "- MyTag1",
-          " \r\n        - MyTag1\r\n",
-          "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md",
-          {
-            "id": "tu19"
-          }
-        ],
-        [
-          "- MyTag2",
-          "- MyTag2",
-          "        - MyTag2\r\n",
-          "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md",
-          {
-            "id": "tu19"
-          }
-        ],
-        [
-          "- Name:",
-          "- Nome:",
-          " - Name:",
-          "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md",
-          {
-            "id": "tu19"
-          }
-        ],
-        [
-          "MyBundleName2",
-          "MyBundleName2",
-          " MyBundleName2\r\n",
-          "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md",
-          {
-            "id": "tu19"
-          }
-        ],
-        [
-          "Dependencies:",
-          "Dependências:",
-          "   Dependencies:\r\n",
-          "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md",
-          {
-            "id": "tu19"
-          }
-        ],
-        [
-          "- MyBundleName",
-          "- MyBundleName",
-          "    - MyBundleName\r\n",
-          "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md",
-          {
-            "id": "tu19"
-          }
-        ],
-        [
-          "Selectors:",
-          "Seletores:",
-          "   Selectors:\r\n",
-          "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md",
-          {
-            "id": "tu19"
-          }
-        ],
-        [
-          "- !TagSelector",
-          "-TagSelector",
-          "    - !TagSelector\r\n",
-          "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md",
-          {
-            "id": "tu19"
-          }
-        ],
-        [
-          "Tags:",
-          "Etiquetas:",
-          "      Tags:",
-          "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md",
-          {
-            "id": "tu19"
-          }
-        ],
-        [
-          "- MyTag3",
-          "- MyTag3",
-          " \r\n        - MyTag3\r\n",
-          "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md",
-          {
-            "id": "tu19"
-          }
-        ],
-        [
-          "- MyTag4",
-          "- MyTag4",
-          "        - MyTag4\r\n",
-          "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md",
-          {
-            "id": "tu19"
-          }
-        ],
-        [
-          "- !PathSelector",
-          "-PathSelector",
-          "    - !PathSelector\r\n",
-          "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md",
-          {
-            "id": "tu19"
-          }
-        ],
-        [
-          "Paths:",
-          "Caminhos:",
-          "      Paths:\r\n",
-          "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md",
-          {
-            "id": "tu19"
-          }
-        ],
-        [
-          "- folder1\/",
-          "- pasta1\/",
-          "        - folder1\/\r\n",
-          "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md",
-          {
-            "id": "tu19"
-          }
-        ],
-        [
-          "- \/folder2\/",
-          "- \/folder2\/",
-          "        - \/folder2\/\r\n",
-          "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md",
-          {
-            "id": "tu19"
-          }
-        ],
-        [
-          "- *.bin",
-          "- *",
-          "        - *.bin\r\n",
-          "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md",
-          {
-            "id": "tu19"
-          }
-        ],
-        [
-          "- folder3\/*.xml",
-          "- pasta3\/*.xml",
-          "        - folder3\/*.xml\r\n",
-          "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md",
-          {
-            "id": "tu19"
-          }
-        ],
-        [
-          "<x1\/>!Note<x2\/>",
-          "<x1\/>!Note<x2\/>",
-          "<x1\/>!Note<x2\/>",
-          "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md",
-          {
-            "id": "tu20"
-          }
-        ],
-        [
-          "Asset dependencies are automatically placed in the most appropriate bundle.",
-          "As dependências de ativos são automaticamente colocadas no pacote mais apropriado.",
-          "Asset dependencies are automatically placed in the most appropriate bundle.",
-          "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md",
-          {
-            "id": "tu21"
-          }
-        ],
-        [
-          "Current process works that way:",
-          "O processo atual funciona dessa forma:",
-          "Current process works that way:",
-          "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md",
-          {
-            "id": "tu22"
-          }
-        ],
-        [
-          "Find assets that matches specific Tag Selectors (\"roots\" of bundle assets).",
-          "Encontre ativos que correspondam a Tag Selectors específicos (\"raiz\" de ativos de pacotes).",
-          "Find assets that matches specific Tag Selectors (\"roots\" of bundle assets).",
-          "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md",
-          {
-            "id": "tu23"
-          }
-        ],
-        [
-          "Enumerate assets that are dependent on those \"roots\" bundle assets and put them in the same bundle than their \"roots\" asset.",
-          "Enumerate ativos que são dependentes desses ativos de pacotes \"raiz\" e colocá-los no mesmo pacote do que seu \"raiz\" ativo.",
-          "Enumerate assets that are dependent on those \"roots\" bundle assets and put them in the same bundle than their \"roots\" asset.",
-          "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md",
-          {
-            "id": "tu24"
-          }
-        ],
-        [
-          "Except if already accessible through one of package dependencies (i.e. a shared dependent package or default package).",
-          "Exceto se já acessível através de uma das dependências do pacote (ou seja, um pacote dependente compartilhado ou pacote padrão).",
-          "Except if already accessible through one of package dependencies (i.e. a shared dependent package or default package).",
-          "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md",
-          {
-            "id": "tu25"
-          }
-        ],
-        [
-          "Place everything else in default bundle.",
-          "Coloque tudo o resto no pacote padrão.",
-          "Place everything else in default bundle.",
-          "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md",
-          {
-            "id": "tu26"
-          }
-        ],
-        [
-          "Note that:",
-          "Note que:",
-          "Note that:",
-          "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md",
-          {
-            "id": "tu27"
-          }
-        ],
-        [
-          "Shared assets might be duplicated if not specifically placed in common or default package, but that is intended (i.e. if user wishes to distribute 2 separate DLC that need common assets but need to be self-contained).",
-          "Os ativos compartilhados podem ser duplicados se não forem especificamente colocados em pacotes comuns ou padrão, mas isso é pretendido (ou seja, se o usuário deseja distribuir 2 DLC separados que precisam de ativos comuns, mas precisam ser auto-suficientes).",
-          "Shared assets might be duplicated if not specifically placed in common or default package, but that is intended (i.e. if user wishes to distribute 2 separate DLC that need common assets but need to be self-contained).",
-          "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md",
-          {
-            "id": "tu28"
-          }
-        ],
-        [
-          "Every bundle implicitly depends on default bundle.",
-          "Cada pacote depende implicitamente do pacote padrão.",
-          "Every bundle implicitly depends on default bundle.",
-          "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md",
-          {
-            "id": "tu29"
-          }
-        ],
-        [
-          "Load a bundle at runtime",
-          "Carregar um pacote no tempo de execução",
-          "Load a bundle at runtime",
-          "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md",
-          {
-            "id": "tu30"
-          }
-        ],
-        [
-          "Loading bundle is done through <g1>ObjectDatabase.LoadBundle(string bundleName) (ref:{Stride.Core.Storage.ObjectDatabase.LoadBundle})<\/g1>:",
-          "O pacote de carga é feito através de <g1>ObjectDatabase.LoadBundle(string bundleName) (ref:{Stride.Core.Storage.ObjectDatabase.LoadBundle})<\/g1>:",
-          "Loading bundle is done through <g1>ObjectDatabase.LoadBundle(string bundleName) (ref:{Stride.Core.Storage.ObjectDatabase.LoadBundle})<\/g1>:",
-          "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md",
-          {
-            "id": "tu31"
-          }
-        ],
-        [
-          "\/\/ Load bundle",
-          "\/\/ Pacote de carga",
-          "\/\/ Load bundle\r\n",
-          "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md",
-          {
-            "id": "tu32"
-          }
-        ],
-        [
-          "Assets.DatabaseFileProvider.ObjectDatabase.LoadBundle(\"MyBundleName2\");",
-          "Assets.DatabaseFileProvider.ObjectDatabase.LoadBundle(\"MyBundleName2\");",
-          "Assets.DatabaseFileProvider.ObjectDatabase.LoadBundle(\"MyBundleName2\");\r\n",
-          "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md",
-          {
-            "id": "tu32"
-          }
-        ],
-        [
-          "\/\/ Load specified asset",
-          "\/\/ Carga de ativos especificados",
-          " \r\n\/\/ Load specified asset\r\n",
-          "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md",
-          {
-            "id": "tu32"
-          }
-        ],
-        [
-          "var texture = Assets.Load<Texture2D>(\"AssetContainedInMyBundleName2\");",
-          "var texture = Assets.Load<Texture2D>(\"AssetContainedInMyBundleName2\");",
-          "var texture = Assets.Load<Texture2D>(\"AssetContainedInMyBundleName2\");\r\n",
-          "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md",
-          {
-            "id": "tu32"
-          }
-        ],
-        [
-          "Selectors",
-          "Seletores",
-          "Selectors",
-          "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md",
-          {
-            "id": "tu33"
-          }
-        ],
-        [
-          "Selectors help deciding which assets are stored in a specific bundle.",
-          "Os seletores ajudam a decidir quais ativos são armazenados em um pacote específico.",
-          "Selectors help deciding which assets are stored in a specific bundle.",
-          "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md",
-          {
-            "id": "tu34"
-          }
-        ],
-        [
-          "Tag selector",
-          "Tag selector",
-          "Tag selector",
-          "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md",
-          {
-            "id": "tu35"
-          }
-        ],
-        [
-          "Select assets based on a list of tag attached on each asset.",
-          "Selecione ativos com base em uma lista de tags anexadas em cada ativo.",
-          "Select assets based on a list of tag attached on each asset.",
-          "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md",
-          {
-            "id": "tu36"
-          }
-        ],
-        [
-          "Properties:",
-          "Propriedades:",
-          "Properties:",
-          "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md",
-          {
-            "id": "tu37"
-          }
-        ],
-        [
-          "Tags:",
-          "Etiquetas:",
-          "Tags:",
-          "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md",
-          {
-            "id": "tu38"
-          }
-        ],
-        [
-          "List of Tags.",
-          "Lista de Tags.",
-          " List of Tags.",
-          "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md",
-          {
-            "id": "tu38"
-          }
-        ],
-        [
-          "Any asset that contains at least one of the tag will be included.",
-          "Qualquer ativo que contenha pelo menos uma das tags será incluído.",
-          " Any asset that contains at least one of the tag will be included.",
-          "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md",
-          {
-            "id": "tu38"
-          }
-        ],
-        [
-          "Path selector",
-          "Seletor de caminho",
-          "Path selector",
-          "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md",
-          {
-            "id": "tu39"
-          }
-        ],
-        [
-          "Select assets based on their path.",
-          "Selecione ativos com base em seu caminho.",
-          "Select assets based on their path.",
-          "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md",
-          {
-            "id": "tu40"
-          }
-        ],
-        [
-          "Standard .gitignore patterns are supported (except !",
-          "Padrões .gitignore padrão são suportados (exceto!",
-          "Standard .gitignore patterns are supported (except !",
-          "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md",
-          {
-            "id": "tu41"
-          }
-        ],
-        [
-          "(negate), # (comments) and \\[0-9\\] (groups)).",
-          "(negado), # (comments) e \\[0-9\\] (groups)).",
-          " (negate), # (comments) and \\[0-9\\] (groups)).",
-          "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md",
-          {
-            "id": "tu41"
-          }
-        ],
-        [
-          "Properties:",
-          "Propriedades:",
-          "Properties:",
-          "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md",
-          {
-            "id": "tu42"
-          }
-        ],
-        [
-          "Paths:",
-          "Caminhos:",
-          "Paths:",
-          "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md",
-          {
-            "id": "tu43"
-          }
-        ],
-        [
-          "List of filters.",
-          "Lista de filtros.",
-          " List of filters.",
-          "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md",
-          {
-            "id": "tu43"
-          }
-        ],
-        [
-          "Any asset whose URL matches one of the filter will be included.",
-          "Qualquer ativo cuja URL corresponde a um do filtro será incluído.",
-          " Any asset whose URL matches one of the filter will be included.",
-          "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md",
-          {
-            "id": "tu43"
-          }
-        ]
-      ]
-    }
-  ],
-  "seg_enabled": false
+    "filename": "manual\\engine\\assets\\asset-bundles.md.xlf",
+    "files": [
+        {
+            "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md": [
+                [
+                    "Asset bundles",
+                    "Conjunto de asset (Bundles)",
+                    "Asset bundles",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md",
+                    {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697229307922,
+                        "id": "tu1"
+                    }
+                ],
+                [
+                    "<x1\/>!Warning<x2\/>",
+                    "<x1\/>!Warning<x2\/>",
+                    "<x1\/>!Warning<x2\/>\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md",
+                    {
+                        "id": "tu2"
+                    }
+                ],
+                [
+                    "This section is out of date.",
+                    "Esta seção está desatualizada.",
+                    "This section is out of date.",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md",
+                    {
+                        "note": "",
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697221153487,
+                        "id": "tu2"
+                    }
+                ],
+                [
+                    "For now, you should only use it for reference.",
+                    "Por hora, você deve usá-la apenas como referência.",
+                    " For now, you should only use it for reference.",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md",
+                    {
+                        "note": "",
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697221218805,
+                        "id": "tu2"
+                    }
+                ],
+                [
+                    "A bundle of assets allows to package assets into a single archive that can be downloaded into the game at a specific time.",
+                    "Um conjunto de assets permite empacotar assets num único arquivo que pode ser baixado no jogo num momento específico.",
+                    "A bundle of assets allows to package assets into a single archive that can be downloaded into the game at a specific time.",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md",
+                    {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697228360531,
+                        "id": "tu3"
+                    }
+                ],
+                [
+                    "It allows creation of <g1>Downloadable Content (DLC)<\/g1>.",
+                    "Isso possibilita a criação de <g1>Conteúdo para Download (DLC)<\/g1>.",
+                    "It allows creation of <g1>Downloadable Content (DLC)<\/g1>.",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md",
+                    {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697228394627,
+                        "id": "tu4"
+                    }
+                ],
+                [
+                    "Basic rules:",
+                    "Regras básicas:",
+                    "Basic rules:",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md",
+                    {
+                        "id": "tu5"
+                    }
+                ],
+                [
+                    "A project can generate several bundle.",
+                    "Um projeto pode gerar vários pacotes.",
+                    "A project can generate several bundle.",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md",
+                    {
+                        "id": "tu6"
+                    }
+                ],
+                [
+                    "A bundle is created from several <g1>assets selectors<\/g1>  (Currently, only the <g2>PathSelector<\/g2> and <g3>TagSelector<\/g3> are supported)",
+                    "Um conjunto é criado a partir de diversos <g1>seletores de assets<\/g1> (atualmente, apenas <g2>PathSelector<\/g2> e <g3>TagSelector<\/g3> são suportados).",
+                    "A bundle is created from several <g1>assets selectors<\/g1>  (Currently, only the <g2>PathSelector<\/g2> and <g3>TagSelector<\/g3> are supported)",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md",
+                    {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697228504232,
+                        "id": "tu7"
+                    }
+                ],
+                [
+                    "A bundle can have dependencies to others bundles",
+                    "Um conjunto pode ter dependências de outros conjuntos",
+                    "A bundle can have dependencies to others bundles",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md",
+                    {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697228527528,
+                        "id": "tu8"
+                    }
+                ],
+                [
+                    "Every bundle implicitly references <g1>default<\/g1> bundle, where every asset which shouldn't go in a specific bundle will be packaged",
+                    "Cada conjunto faz referência implicitamente ao conjunto padrão, onde cada asset que não deve ser incluído num conjunto específico será empacotado.",
+                    "Every bundle implicitly references <g1>default<\/g1> bundle, where every asset which shouldn't go in a specific bundle will be packaged",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md",
+                    {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697228563728,
+                        "id": "tu9"
+                    }
+                ],
+                [
+                    "Once a bundle is deployed into the game, all assets from this bundle and all its dependencies are accessible",
+                    "Uma vez que um conjunto é adicionado no jogo, todos os assets desse conjunto e todas as suas dependências se tornam acessíveis",
+                    "Once a bundle is deployed into the game, all assets from this bundle and all its dependencies are accessible",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md",
+                    {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697228654766,
+                        "id": "tu10"
+                    }
+                ],
+                [
+                    "Bundle resolution is done through an asynchronous callback that allows you to download bundle, and will be called once per dependency (similar to AssemblyResolve event).",
+                    "A resolução de conjuntos é realizada por meio de uma funções de retorno de chamada assíncrona que permite o download do conjunto e será executada uma vez por dependência (similar ao evento AssemblyResolve).",
+                    "Bundle resolution is done through an asynchronous callback that allows you to download bundle, and will be called once per dependency (similar to AssemblyResolve event).",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md",
+                    {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697228757827,
+                        "id": "tu11"
+                    }
+                ],
+                [
+                    "Create a bundle",
+                    "Criar um pacote",
+                    "Create a bundle",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md",
+                    {
+                        "id": "tu12"
+                    }
+                ],
+                [
+                    "<x1\/>!Note<x2\/>",
+                    "<x1\/>!Note<x2\/>",
+                    "<x1\/>!Note<x2\/>\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md",
+                    {
+                        "id": "tu13"
+                    }
+                ],
+                [
+                    "Creating currently requires some manual steps (i.e. editing <g1>sdpkg<\/g1> by hand).",
+                    "A criação atualmente requer alguns passos manuais (ou seja, editar <g1>sdpkg<\/g1> manualmente).",
+                    "Creating currently requires some manual steps (i.e. editing <g1>sdpkg<\/g1> by hand).",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md",
+                    {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697228829834,
+                        "id": "tu13"
+                    }
+                ],
+                [
+                    "Open the <g1>sdprj<\/g1> file of the game executable and add the following configuration:",
+                    "Abra o arquivo <g1>sdprj<\/g1> do executável do jogo e adicione a seguinte configuração:",
+                    "Open the <g1>sdprj<\/g1> file of the game executable and add the following configuration:",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md",
+                    {
+                        "id": "tu14"
+                    }
+                ],
+                [
+                    "Example:",
+                    "Exemplo:",
+                    "Example:",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md",
+                    {
+                        "id": "tu15"
+                    }
+                ],
+                [
+                    "A bundle named <g1>MyBundleName<\/g1> will embed assets with tags <g2>MyTag1<\/g2> and <g3>MyTag2<\/g3>",
+                    "Um conjunto chamado <g1>MeuConjunto1<\/g1> incorporará assets com as tags <g2>MinhaTag1<\/g2> e <g3>MinhaTag2<\/g3>.",
+                    "A bundle named <g1>MyBundleName<\/g1> will embed assets with tags <g2>MyTag1<\/g2> and <g3>MyTag2<\/g3>",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md",
+                    {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697229122549,
+                        "id": "tu16"
+                    }
+                ],
+                [
+                    "A bundle named <g1>MyBundleName2<\/g1> will embed assets with tags <g2>MyTag3<\/g2> and <g3>MyTag4<\/g3>.",
+                    "Um conjunto chamado <g1>MeuConjunto2<\/g1> incorporará assets com as tags<g2>MinhaTag3<\/g2> e <g3>MinhaTag4<\/g3>.",
+                    "A bundle named <g1>MyBundleName2<\/g1> will embed assets with tags <g2>MyTag3<\/g2> and <g3>MyTag4<\/g3>.",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md",
+                    {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697229109870,
+                        "id": "tu17"
+                    }
+                ],
+                [
+                    "This bundle has a dependency to <g4>MyBundleName<\/g4>",
+                    "Este conjunto tem uma dependência com <g4>MeuConjunto1<\/g4>",
+                    " This bundle has a dependency to <g4>MyBundleName<\/g4>",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md",
+                    {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697229228084,
+                        "id": "tu17"
+                    }
+                ],
+                [
+                    "There is also a <g1>PathSelector<\/g1> which follow the <g2>.gitignore<\/g2> filtering convention.",
+                    "Há também um <g1>PathSelector<\/g1> que segue a convenção de filtragem <g2>.gitignore<\/g2>.",
+                    "There is also a <g1>PathSelector<\/g1> which follow the <g2>.gitignore<\/g2> filtering convention.",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md",
+                    {
+                        "id": "tu18"
+                    }
+                ],
+                [
+                    "Bundles:",
+                    "Bundles:",
+                    "Bundles:\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md",
+                    {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697229291034,
+                        "id": "tu19"
+                    }
+                ],
+                [
+                    "- Name:",
+                    "- Name:",
+                    " - Name:",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md",
+                    {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697229278962,
+                        "id": "tu19"
+                    }
+                ],
+                [
+                    "MyBundleName",
+                    "MeuConjunto1",
+                    " MyBundleName\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md",
+                    {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697229313528,
+                        "id": "tu19"
+                    }
+                ],
+                [
+                    "Selectors:",
+                    "Selectors:",
+                    "   Selectors:\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md",
+                    {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697229328745,
+                        "id": "tu19"
+                    }
+                ],
+                [
+                    "- !TagSelector",
+                    "- !TagSelector",
+                    "    - !TagSelector\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md",
+                    {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697229331153,
+                        "id": "tu19"
+                    }
+                ],
+                [
+                    "Tags:",
+                    "Tags:",
+                    "      Tags:",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md",
+                    {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697229334689,
+                        "id": "tu19"
+                    }
+                ],
+                [
+                    "- MyTag1",
+                    "- MinhaTag1",
+                    " \r\n        - MyTag1\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md",
+                    {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697229346042,
+                        "id": "tu19"
+                    }
+                ],
+                [
+                    "- MyTag2",
+                    "- MinhaTag1",
+                    "        - MyTag2\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md",
+                    {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697229346042,
+                        "id": "tu19"
+                    }
+                ],
+                [
+                    "- Name:",
+                    "- Name:",
+                    " - Name:",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md",
+                    {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697229357569,
+                        "id": "tu19"
+                    }
+                ],
+                [
+                    "MyBundleName2",
+                    "MeuConjunto2",
+                    " MyBundleName2\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md",
+                    {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697229354761,
+                        "id": "tu19"
+                    }
+                ],
+                [
+                    "Dependencies:",
+                    "Dependencies:",
+                    "   Dependencies:\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md",
+                    {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697229359433,
+                        "id": "tu19"
+                    }
+                ],
+                [
+                    "- MyBundleName",
+                    "- MeuConjunto1",
+                    "    - MyBundleName\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md",
+                    {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697229365361,
+                        "id": "tu19"
+                    }
+                ],
+                [
+                    "Selectors:",
+                    "Selectors:",
+                    "   Selectors:\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md",
+                    {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697229367017,
+                        "id": "tu19"
+                    }
+                ],
+                [
+                    "- !TagSelector",
+                    "- !TagSelector",
+                    "    - !TagSelector\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md",
+                    {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697229368209,
+                        "id": "tu19"
+                    }
+                ],
+                [
+                    "Tags:",
+                    "Tags:",
+                    "      Tags:",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md",
+                    {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697229369553,
+                        "id": "tu19"
+                    }
+                ],
+                [
+                    "- MyTag3",
+                    "- MinhaTag3",
+                    " \r\n        - MyTag3\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md",
+                    {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697229374656,
+                        "id": "tu19"
+                    }
+                ],
+                [
+                    "- MyTag4",
+                    "- MinhaTag4",
+                    "        - MyTag4\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md",
+                    {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697229378137,
+                        "id": "tu19"
+                    }
+                ],
+                [
+                    "- !PathSelector",
+                    "- !PathSelector",
+                    "    - !PathSelector\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md",
+                    {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697229380361,
+                        "id": "tu19"
+                    }
+                ],
+                [
+                    "Paths:",
+                    "Paths:",
+                    "      Paths:\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md",
+                    {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697229381416,
+                        "id": "tu19"
+                    }
+                ],
+                [
+                    "- folder1\/",
+                    "- pasta1\/",
+                    "        - folder1\/\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md",
+                    {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697229392576,
+                        "id": "tu19"
+                    }
+                ],
+                [
+                    "- \/folder2\/",
+                    "- \/pasta2\/",
+                    "        - \/folder2\/\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md",
+                    {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697229402369,
+                        "id": "tu19"
+                    }
+                ],
+                [
+                    "- *.bin",
+                    "- *.bin",
+                    "        - *.bin\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md",
+                    {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697229406120,
+                        "id": "tu19"
+                    }
+                ],
+                [
+                    "- folder3\/*.xml",
+                    "- pasta3\/*.xml",
+                    "        - folder3\/*.xml\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md",
+                    {
+                        "id": "tu19"
+                    }
+                ],
+                [
+                    "<x1\/>!Note<x2\/>",
+                    "<x1\/>!Note<x2\/>",
+                    "<x1\/>!Note<x2\/>",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md",
+                    {
+                        "id": "tu20"
+                    }
+                ],
+                [
+                    "Asset dependencies are automatically placed in the most appropriate bundle.",
+                    "As dependências de assets são automaticamente colocadas no pacote mais apropriado",
+                    "Asset dependencies are automatically placed in the most appropriate bundle.",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md",
+                    {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697229453904,
+                        "id": "tu21"
+                    }
+                ],
+                [
+                    "Current process works that way:",
+                    "O processo atual funciona da seguinte maneira:",
+                    "Current process works that way:",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md",
+                    {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697229466256,
+                        "id": "tu22"
+                    }
+                ],
+                [
+                    "Find assets that matches specific Tag Selectors (\"roots\" of bundle assets).",
+                    "Encontre assets que correspondam aos Seletores de Tag específicos (as \"raízes\" dos assets do conjunto).",
+                    "Find assets that matches specific Tag Selectors (\"roots\" of bundle assets).",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md",
+                    {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697287124587,
+                        "id": "tu23"
+                    }
+                ],
+                [
+                    "Enumerate assets that are dependent on those \"roots\" bundle assets and put them in the same bundle than their \"roots\" asset.",
+                    "Enumere os assets que dependem dessas raízes e coloque-os no mesmo conjunto que elas.",
+                    "Enumerate assets that are dependent on those \"roots\" bundle assets and put them in the same bundle than their \"roots\" asset.",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md",
+                    {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697287184458,
+                        "id": "tu24"
+                    }
+                ],
+                [
+                    "Except if already accessible through one of package dependencies (i.e. a shared dependent package or default package).",
+                    "A menos que já sejam acessíveis por meio de uma das dependências do pacote (como um pacote dependente compartilhado ou o pacote padrão).",
+                    "Except if already accessible through one of package dependencies (i.e. a shared dependent package or default package).",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md",
+                    {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697287158419,
+                        "id": "tu25"
+                    }
+                ],
+                [
+                    "Place everything else in default bundle.",
+                    "Coloque todo o resto no conjunto padrão.",
+                    "Place everything else in default bundle.",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md",
+                    {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697287201370,
+                        "id": "tu26"
+                    }
+                ],
+                [
+                    "Note that:",
+                    "Observe que:",
+                    "Note that:",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md",
+                    {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697287207961,
+                        "id": "tu27"
+                    }
+                ],
+                [
+                    "Shared assets might be duplicated if not specifically placed in common or default package, but that is intended (i.e. if user wishes to distribute 2 separate DLC that need common assets but need to be self-contained).",
+                    "Os assets compartilhados podem ser duplicados se não forem especificamente colocados no conjunto compartilhado ou no conjunto padrão, mas isso é intencional (por exemplo, se o usuário desejar distribuir dois DLCs separados que necessitam de assets comuns, mas também precisam ser independentes).",
+                    "Shared assets might be duplicated if not specifically placed in common or default package, but that is intended (i.e. if user wishes to distribute 2 separate DLC that need common assets but need to be self-contained).",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md",
+                    {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697287520820,
+                        "id": "tu28"
+                    }
+                ],
+                [
+                    "Every bundle implicitly depends on default bundle.",
+                    "Cada conjunto depende implicitamente do conjunto padrão.",
+                    "Every bundle implicitly depends on default bundle.",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md",
+                    {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697287537708,
+                        "id": "tu29"
+                    }
+                ],
+                [
+                    "Load a bundle at runtime",
+                    "Carregar um conjunto em tempo de execução",
+                    "Load a bundle at runtime",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md",
+                    {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697287597315,
+                        "id": "tu30"
+                    }
+                ],
+                [
+                    "Loading bundle is done through <g1>ObjectDatabase.LoadBundle(string bundleName) (ref:{Stride.Core.Storage.ObjectDatabase.LoadBundle})<\/g1>:",
+                    "O carregamento de conjuntos é feito através de <g1>ObjectDatabase.LoadBundle(string bundleName) (ref:{Stride.Core.Storage.ObjectDatabase.LoadBundle})<\/g1>:",
+                    "Loading bundle is done through <g1>ObjectDatabase.LoadBundle(string bundleName) (ref:{Stride.Core.Storage.ObjectDatabase.LoadBundle})<\/g1>:",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md",
+                    {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697287641834,
+                        "id": "tu31"
+                    }
+                ],
+                [
+                    "\/\/ Load bundle",
+                    "\/\/ Carregar o conjunto",
+                    "\/\/ Load bundle\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md",
+                    {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697287647634,
+                        "id": "tu32"
+                    }
+                ],
+                [
+                    "Assets.DatabaseFileProvider.ObjectDatabase.LoadBundle(\"MyBundleName2\");",
+                    "Assets.DatabaseFileProvider.ObjectDatabase.LoadBundle(\"MeuConjunto1\");",
+                    "Assets.DatabaseFileProvider.ObjectDatabase.LoadBundle(\"MyBundleName2\");\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md",
+                    {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697287668994,
+                        "id": "tu32"
+                    }
+                ],
+                [
+                    "\/\/ Load specified asset",
+                    "\/\/ Carregar um asset específico",
+                    " \r\n\/\/ Load specified asset\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md",
+                    {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697287691841,
+                        "id": "tu32"
+                    }
+                ],
+                [
+                    "var texture = Assets.Load<Texture2D>(\"AssetContainedInMyBundleName2\");",
+                    "var texture = Assets.Load<Texture2D>(\"AssetContidoNoMeuConjunto2\");",
+                    "var texture = Assets.Load<Texture2D>(\"AssetContainedInMyBundleName2\");\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md",
+                    {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697287718520,
+                        "id": "tu32"
+                    }
+                ],
+                [
+                    "Selectors",
+                    "Seletores",
+                    "Selectors",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md",
+                    {
+                        "id": "tu33"
+                    }
+                ],
+                [
+                    "Selectors help deciding which assets are stored in a specific bundle.",
+                    "Os seletores ajudam a decidir quais assets são armazenados em um conjunto específico.",
+                    "Selectors help deciding which assets are stored in a specific bundle.",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md",
+                    {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697287750072,
+                        "id": "tu34"
+                    }
+                ],
+                [
+                    "Tag selector",
+                    "Seletores de Tag",
+                    "Tag selector",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md",
+                    {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697287792423,
+                        "id": "tu35"
+                    }
+                ],
+                [
+                    "Select assets based on a list of tag attached on each asset.",
+                    "Seleciona assets com base em uma lista de tags anexadas a cada asset.",
+                    "Select assets based on a list of tag attached on each asset.",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md",
+                    {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697287884997,
+                        "id": "tu36"
+                    }
+                ],
+                [
+                    "Properties:",
+                    "Propriedades:",
+                    "Properties:",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md",
+                    {
+                        "id": "tu37"
+                    }
+                ],
+                [
+                    "Tags:",
+                    "Tags:",
+                    "Tags:",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md",
+                    {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697287894430,
+                        "id": "tu38"
+                    }
+                ],
+                [
+                    "List of Tags.",
+                    "Lista de Tags.",
+                    " List of Tags.",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md",
+                    {
+                        "id": "tu38"
+                    }
+                ],
+                [
+                    "Any asset that contains at least one of the tag will be included.",
+                    "Qualquer asset que contenha pelo menos uma das tags será incluído.",
+                    " Any asset that contains at least one of the tag will be included.",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md",
+                    {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697287921182,
+                        "id": "tu38"
+                    }
+                ],
+                [
+                    "Path selector",
+                    "Seletor de caminho",
+                    "Path selector",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md",
+                    {
+                        "id": "tu39"
+                    }
+                ],
+                [
+                    "Select assets based on their path.",
+                    "Selecione assets com base em seu caminho.",
+                    "Select assets based on their path.",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md",
+                    {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697287936108,
+                        "id": "tu40"
+                    }
+                ],
+                [
+                    "Standard .gitignore patterns are supported (except !",
+                    "Padrões convencionais do .gitignore são suportados (exceto !",
+                    "Standard .gitignore patterns are supported (except !",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md",
+                    {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697288236352,
+                        "id": "tu41"
+                    }
+                ],
+                [
+                    "(negate), # (comments) and \\[0-9\\] (groups)).",
+                    "(negar), # (comentários) e \\[0-9\\] (grupos)).",
+                    " (negate), # (comments) and \\[0-9\\] (groups)).",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md",
+                    {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697288257735,
+                        "id": "tu41"
+                    }
+                ],
+                [
+                    "Properties:",
+                    "Propriedades:",
+                    "Properties:",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md",
+                    {
+                        "id": "tu42"
+                    }
+                ],
+                [
+                    "Paths:",
+                    "Caminhos:",
+                    "Paths:",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md",
+                    {
+                        "id": "tu43"
+                    }
+                ],
+                [
+                    "List of filters.",
+                    "Lista de filtros.",
+                    " List of filters.",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md",
+                    {
+                        "id": "tu43"
+                    }
+                ],
+                [
+                    "Any asset whose URL matches one of the filter will be included.",
+                    "Qualquer asset cuja URL corresponda a um dos filtros será incluído.",
+                    " Any asset whose URL matches one of the filter will be included.",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/assets\/asset-bundles.md",
+                    {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697288285071,
+                        "id": "tu43"
+                    }
+                ]
+            ]
+        }
+    ],
+    "seg_enabled": false
 }
