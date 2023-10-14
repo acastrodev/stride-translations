@@ -1,5 +1,5 @@
 # Progresso
-## A tabela abaixo apresenta a lista de arquivos, a quantidade de palavras em cada um e o status atual da tradução.
+## A tabela abaixo apresenta a lista de arquivos, a quantidade de palavras em cada um, e o status atual da tradução.
 | Arquivos                                                                                      | Palavras | Completo   |
 | --------------------------------------------------------------------------------------------- | -------- | ---------- |
 | 404.md                                                                                        | 38       | 100,00%    |
