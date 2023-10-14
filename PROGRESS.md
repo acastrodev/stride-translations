@@ -321,4 +321,4 @@
 | tutorials\gamestudio\8-textures.md                                                            | 25               | 0,00%   |
 | tutorials\gamestudio\9-materials.md                                                           | 60               | 0,00%   |
 | tutorials\gamestudio\index.md                                                                 | 59               | 0,00%   |
-| Total                                                                                         | 147.332          | 16,04%  |
+| Total                                                                                         | 147.332          | 8,50%   |
