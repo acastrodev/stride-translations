@@ -17,7 +17,7 @@ Esta seção está desatualizada. Recomendamos utilizá-la apenas como referênc
 </trans-unit>
 <trans-unit id="tu4" xml:space="preserve">
 <source xml:lang="en">After creating your assets in Game Studio, @'Stride.Core.Serialization.Assets.AssetManager' is the class responsible for loading, unloading and saving assets.</source>
-<target xml:lang="pt">Depois de criar seus assets no Game Studio, @'Stride.Core.Serialization.Assets.AssetManager' é a classe responsável por carregar, descarregar e salvar assets.</target>
+<target xml:lang="pt">Depois de criar seus assets no Game Studio, @'Stride.Core.Serialization.Assets.AssetManager' é a classe responsável por carregar, descarregar e salvar um assets.</target>
 </trans-unit>
 <trans-unit id="tu5" xml:space="preserve">
 <source xml:lang="en">Creating</source>
@@ -45,7 +45,7 @@ Esta seção está desatualizada. Recomendamos utilizá-la apenas como referênc
 </trans-unit>
 <trans-unit id="tu11" xml:space="preserve">
 <source xml:lang="en">For more information, see <g id="1">Assets</g> for more details.</source>
-<target xml:lang="pt">Para mais informações, consulte &lt;g id="1"&gt;Assets&lt;/g&gt;&lt;/g&gt;.</target>
+<target xml:lang="pt">Para mais informações, consulte <g id="1">Assets</g>.</target>
 </trans-unit>
 <trans-unit id="tu12" xml:space="preserve">
 <source xml:lang="en">Loading</source>
@@ -66,18 +66,18 @@ var scene = Content.Load&lt;Scene&gt;("scenes/scene1");
 var entity = Content.Load&lt;Entity&gt;("entity1");
 </source>
 <target xml:lang="pt">// Carregar um asset diretamente de um arquivo:
-var texture = Content.Load&lt;Texture&gt;("textura1");
+var textura = Content.Load&lt;Texture&gt;("textura1");
 
-// Carregar um asset de cena
-var scene = Content.Load&lt;Scene&gt;("cenas/cena1");
+// Carregar um asset de uma cena:
+var cena = Content.Load&lt;Scene&gt;("cenas/cena1");
  
-// Carregar um asset de entidade
-var entity = Content.Load&lt;Entity&gt;("entidade1");
+// Carregar um asset de uma entidade:
+var entidade = Content.Load&lt;Entity&gt;("entidade1");
 </target>
 </trans-unit>
 <trans-unit id="tu15" xml:space="preserve">
 <source xml:lang="en">Note that loading an asset that has already been loaded only increment the reference counter and do not reload the asset.</source>
-<target xml:lang="pt">No entanto, é importante ressaltar que ao carregar um asset que já tenha sido carregado apenas incrementa o contador de referência e não recarrega o asset.</target>
+<target xml:lang="pt">No entanto, é importante ressaltar que ao carregar um asset que já tenha sido carregado, isso apenas incrementará o contador de referência e não recarregará novamente o asset.</target>
 </trans-unit>
 <trans-unit id="tu16" xml:space="preserve">
 <source xml:lang="en">Unloading</source>
@@ -85,7 +85,7 @@ var entity = Content.Load&lt;Entity&gt;("entidade1");
 </trans-unit>
 <trans-unit id="tu17" xml:space="preserve">
 <source xml:lang="en">Unloading is also done using the AssetManager class:</source>
-<target xml:lang="pt">O descarregamento também é feito utilizando a classe AssetManager:</target>
+<target xml:lang="pt">O descarregamento também é feito utilizando a classe **AssetManager**:</target>
 </trans-unit>
 <trans-unit id="tu18" xml:space="preserve">
 <source xml:lang="en"> Asset.Unload(asset);
@@ -99,15 +99,15 @@ var entity = Content.Load&lt;Entity&gt;("entidade1");
 </trans-unit>
 <trans-unit id="tu20" xml:space="preserve">
 <source xml:lang="en">Asset load and unload are working in pairs. For each call to 'load', a corresponding call to 'unload' is expected.</source>
-<target xml:lang="pt">O carregamento e o descarregamento de um asset funcionam em pares. Para cada execução de **carregar**, uma execução correspondente de **descarregar** é esperada.</target>
+<target xml:lang="pt">O carregamento e o descarregamento de um asset funciona em pares. À cada execução para **carregar**, uma execução correspondente para **descarregar** é esperada.</target>
 </trans-unit>
 <trans-unit id="tu21" xml:space="preserve">
 <source xml:lang="en">An asset is actually loaded only during the first call to 'load'. All subsequent calls only result to an asset reference increment.</source>
-<target xml:lang="pt">Um asset é realmente carregado apenas durante a primeira execução de "carregar". Todas as execuções subsequentes resultam apenas no incremento da referência ao asset.</target>
+<target xml:lang="pt">Um asset é realmente carregado apenas durante a primeira execução. Todas as execuções subsequentes resultam apenas no incremento da referência ao asset.</target>
 </trans-unit>
 <trans-unit id="tu22" xml:space="preserve">
 <source xml:lang="en">An asset is actually unload only when the number of call to unload match the number of call the load.</source>
-<target xml:lang="pt">Um asset é realmente descarregado apenas quando o número de execuções de **descarregar** corresponde ao número de execuções de **carregar**.</target>
+<target xml:lang="pt">Um asset é realmente descarregado apenas quando o número de execuções para **descarregar** corresponde ao número de execuções para **carregar**.</target>
 </trans-unit>
 <trans-unit id="tu23" xml:space="preserve">
 <source xml:lang="en">The @'Stride.Core.Serialization.Assets.AssetManager.Get' method returns the reference to a loaded asset but does not increment the asset reference counter.</source>
@@ -150,7 +150,7 @@ Asset.Get&lt;Texture&gt;("MinhaTextura"); // retorna o asset carregado sem incre
 // a textura ainda pode ser usada aqui
 Asset.Unload(segundaReferencia); // decrementa o contador da referência e descarrega o asset (contagem da referência = 0)
  
-// A textura foi descarregada e não pode ser mais usada.
+// A textura foi descarregada e não pode mais ser usada.
 </target>
 </trans-unit>
 </body>
