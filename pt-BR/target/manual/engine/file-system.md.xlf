@@ -33,7 +33,7 @@ var gamesave2 = VirtualFileSystem.ApplicationRoaming.OpenStream("gamesave001.dat
 <target xml:lang="pt">// Abrir um arquivo através do VirtualFileSystem
 var gamesave1 = VirtualFileSystem.OpenStream("/roaming/gamesave001.dat", VirtualFileMode.Open, VirtualFileAccess.Read);
  
-// Ou, de forma alternativa, acessar o mesmo arquivo diretamente usando o provedor de sistema de arquivos associado (ponto de montagem)
+// Ou, acessar o mesmo arquivo diretamente usando o provedor de sistema de arquivos associado (ponto de montagem)
 var gamesave2 = VirtualFileSystem.ApplicationRoaming.OpenStream("gamesave001.dat", VirtualFileMode.Open, VirtualFileAccess.Read);
 </target>
 </trans-unit>
@@ -52,12 +52,12 @@ var gamesave2 = VirtualFileSystem.ApplicationRoaming.OpenStream("gamesave001.dat
 | tmp    | Application temporary data    | ✓        | ✗     | Might be deleted without notice by OS   | Output directory/temp, <g id="5">%TEMP%/%APPNAME%</g>   | <g id="6">$(Context.getCacheDir)</g>  | tmp | Temporary |</source>
 <target xml:lang="pt">| Ponto de Montagem | Descrição | Gravável | Nuvem | Notas | PC | Android | iOS | Windows Phone 8.1 |
 |---|---|---|---|---|---|---|---|---|
-| data | Dados da aplicação, implantados pelo pacote | ✗ | ✗ | Diretório de saída/dados | O próprio APK | Diretório de instalação do pacote | InstalledLocation.Path |
+| data | Dados da aplicação, instalados pelo pacote | ✗ | ✗ | Diretório de saída/dados | O próprio APK | Diretório de instalação do pacote | InstalledLocation.Path |
 | binary | Binários da aplicação, instalados pelo pacote | ✗ | ✗ | Normalmente o mesmo que <g id="1">app_data</g> (exceto no Android) | Diretório de assemblies | Diretório de assemblies | Diretório de assemblies | Diretório de assemblies |
 | roaming | Dados específicos do usuário (roaming) | ✓ | ✓ | Backup | Diretório de saída/roaming, <g id="2">%APPDATA%</g> | <g id="3">$(Context.getFilesDir)/roaming</g> | Library/roaming | Roaming |   
 | local | Dados da aplicação do usuário | ✓ | ✓ | Backup | Diretório de saída/local | $(Context.getFilesDir)/local | Library/local | Local |
 | cache | Cache da aplicação | ✓ | ✗ | DLC, etc.  Pode ser excluído manualmente pelo usuário (restaurar, limpar dados, etc...)    | Diretório de saída/cache, com indicação para não ser feito backup | <g id="4">$(Context.getFilesDir)/cache</g> | Library/caches | LocalCache |
-| tmp | Dados temporários da aplicação | ✓ | ✗ | Pode ser excluído sem aviso prévio pelo SO | Diretório de saída/temp, <g id="5">%TEMP%/%APPNAME%</g> | <g id="6">$(Context.getCacheDir)</g> | tmp | Temporary |</target>
+| tmp | Dados temporários da aplicação | ✓ | ✗ | Pode ser excluído sem notificação pelo SO | Diretório de saída/temp, <g id="5">%TEMP%/%APPNAME%</g> | <g id="6">$(Context.getCacheDir)</g> | tmp | Temporary |</target>
 </trans-unit>
 </body>
 </file>
