@@ -8,8 +8,8 @@
 <trans-unit id="tu2" xml:space="preserve">
 <source xml:lang="en">There is an Attribute Contradiction on '{0}' Member. <g id="1">[DataMemberIgnore]</g> Attribute on a <g id="2">[DataMember]</g> is not supported.
 Except if it has also <g id="3">[DataMemberUpdatable]</g> Attribute.</source>
-<target xml:lang="pt">Há uma Contradição de atributo no membro '{0}'. O atributo <g id="1">[DataMemberIgnore]</g> não é suportado quando usado em conjunto com o atributo <g id="2">[DataMember]</g>, 
-a menos que também tenha o atributo [DataMemberUpdatable].<g id="3"/></target>
+<target xml:lang="pt">Existe uma contradição de atributos no membro '{0}'. O atributo <g id="1">[DataMemberIgnore]</g> não é suportado quando usado em conjunto com o atributo <g id="2">[DataMember]</g>, 
+a menos que também seja aplicado o atributo <g id="3">[DataMemberUpdatable]</g>.</target>
 </trans-unit>
 <trans-unit id="tu3" xml:space="preserve">
 <source xml:lang="en">Explanation</source>
@@ -18,8 +18,8 @@ a menos que também tenha o atributo [DataMemberUpdatable].<g id="3"/></target>
 <trans-unit id="tu4" xml:space="preserve">
 <source xml:lang="en">Adding @Stride.Core.DataMemberAttribute and @Stride.Core.DataMemberIgnoreAttribute to the same member is not supported. This would be a contradiction.
 It would mean the serializer should serialize the member and ignore it at the same time. The @Stride.Updater.DataMemberUpdatableAttribute  makes the combination valid again as it negates the @Stride.Core.DataMemberIgnoreAttribute for the binary serializer.</source>
-<target xml:lang="pt">Não é possível adicionar @Stride.Core.DataMemberAttribute e @Stride.Core.DataMemberIgnoreAttribute ao mesmo tempo ao mesmo membro. Isso seria uma contradição.
-Significaria que o serializador deveria serializar o membro e, ao mesmo tempo, ignorá-lo. O atributo @Stride.Updater.DataMemberUpdatableAttribute torna a combinação válida novamente, uma vez que anula o atributo @Stride.Core.DataMemberIgnoreAttribute para o serializador binário.</target>
+<target xml:lang="pt">Não é possível adicionar os atributos @Stride.Core.DataMemberAttribute e @Stride.Core.DataMemberIgnoreAttribute ao mesmo membro simultaneamente,  pois isso resultaria em uma contradição.
+Significaria que o serializador deveria serializar o membro e, ao mesmo tempo, ignorá-lo. No entanto, o atributo @Stride.Updater.DataMemberUpdatableAttribute torna a combinação válida novamente, uma vez que anula o efeito do atributo @Stride.Core.DataMemberIgnoreAttribute para o serializador binário.</target>
 </trans-unit>
 <trans-unit id="tu5" xml:space="preserve">
 <source xml:lang="en">Example: Invalid cases</source>
@@ -68,8 +68,8 @@ public class STRDIAG000
 There is a special case if the @Stride.Updater.DataMemberUpdatableAttribute is applied.
 This Attribute negates the @Stride.Core.DataMemberIgnoreAttribute for the binary Serializer, so it becomes valid again.</source>
 <target xml:lang="pt"><x id="1"/>!Important<x id="2"/>
-Há um caso especial se o atributo @Stride.Updater.DataMemberUpdatableAttribute for aplicado.
-O atributo @Stride.Updater.DataMemberUpdatableAttribute nega o atributo @Stride.Core.DataMemberIgnoreAttribute para o Serializador binário, tornando-o válido novamente.</target>
+Há um caso especial quando o atributo @Stride.Updater.DataMemberUpdatableAttribute é aplicado.
+Esse atributo nega o efeito do atributo @Stride.Core.DataMemberIgnoreAttribute no serializador binário, tornando-o válido novamente.</target>
 </trans-unit>
 <trans-unit id="tu10" xml:space="preserve">
 <source xml:lang="en">using Stride.Core;
