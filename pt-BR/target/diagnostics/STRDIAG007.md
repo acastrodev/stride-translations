@@ -1,4 +1,4 @@
-# Diagnosticando o Aviso STRDIAG007
+# Diagnosticando o aviso STRDIAG007
 
 > Invalid `[DataMember]` Attribute on the member '{0}'. A Delegate is not serializable.
 

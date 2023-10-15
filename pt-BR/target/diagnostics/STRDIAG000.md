@@ -1,4 +1,4 @@
-# Diagnosticando o Aviso STRDIAG000
+# Diagnosticando o aviso STRDIAG000
 
 > Há uma Contradição de atributo no membro '{0}'. O atributo `[DataMemberIgnore]` não é suportado quando usado em conjunto com o atributo `[DataMember]`, 
 > a menos que também tenha o atributo [DataMemberUpdatable].``

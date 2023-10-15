@@ -1,4 +1,4 @@
-# Diagnosticando o Aviso STRDIAG004
+# Diagnosticando o aviso STRDIAG004
 
 > 1. The property '{0}' with `[DataMember]` does not have a getter which is required for serialization.
 > 2. The property '{0}' with `[DataMember]` does not have an accessible getter which is required for serialization. A public/internal/internal protected getter is expected.

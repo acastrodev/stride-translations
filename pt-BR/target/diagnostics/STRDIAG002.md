@@ -1,4 +1,4 @@
-# Diagnosticando o Aviso STRDIAG002
+# Diagnosticando o aviso STRDIAG002
 
 > O atributo 'DataMemberMode.Content' não é válido no membro '{0}'.
 > Apenas tipos referência mutáveis são suportados nos membros no modo 'DataMemberMode.Content'.

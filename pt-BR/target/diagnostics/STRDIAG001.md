@@ -1,4 +1,4 @@
-# Diagnosticando o Aviso STRDIAG001
+# Diagnosticando o aviso STRDIAG001
 
 > O atributo `[DataContract]` não é válido para o tipo '{0}'. Esperado um accessor public/internal.
 
