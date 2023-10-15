@@ -7,37 +7,37 @@
 </trans-unit>
 <trans-unit id="tu2" xml:space="preserve">
 <source xml:lang="en">The property '{0}' with <g id="1">[DataMember]</g> does not have a getter which is required for serialization.</source>
-<target xml:lang="pt">The property '{0}' with <g id="1">[DataMember]</g> does not have a getter which is required for serialization.</target>
+<target xml:lang="pt">A propriedade '{0}' marcada com o atributo <g id="1">[DataMember]</g> não possui um acessador get necessário para a serialização.</target>
 </trans-unit>
 <trans-unit id="tu3" xml:space="preserve">
 <source xml:lang="en">The property '{0}' with <g id="1">[DataMember]</g> does not have an accessible getter which is required for serialization. A public/internal/internal protected getter is expected.</source>
-<target xml:lang="pt">The property '{0}' with <g id="1">[DataMember]</g> does not have an accessible getter which is required for serialization. A public/internal/internal protected getter is expected.</target>
+<target xml:lang="pt">A propriedade '{0}' com o atributo <g id="1">[DataMember]</g> não possui um acessador get acessível necessário para a serialização. Um acessador public/internal/internal protected é esperado.</target>
 </trans-unit>
 <trans-unit id="tu4" xml:space="preserve">
 <source xml:lang="en">Explanation</source>
-<target xml:lang="pt">Explanation</target>
+<target xml:lang="pt">Explicação</target>
 </trans-unit>
 <trans-unit id="tu5" xml:space="preserve">
 <source xml:lang="en">All serializers need a getter on a property to be able to get the content of the property.
 This is required for all serializers in Stride.</source>
-<target xml:lang="pt">All serializers need a getter on a property to be able to get the content of the property.
-This is required for all serializers in Stride.</target>
+<target xml:lang="pt">Todos os serializadores precisam de um acessador get em uma propriedade para poderem obter o conteúdo da propriedade, 
+sendo necessário para todos os serializadores no Stride.</target>
 </trans-unit>
 <trans-unit id="tu6" xml:space="preserve">
 <source xml:lang="en">Non existent getters will result in error message 1.</source>
-<target xml:lang="pt">Non existent getters will result in error message 1.</target>
+<target xml:lang="pt">Acessadores get inexistentes resultarão em uma mensagem de erro 1.</target>
 </trans-unit>
 <trans-unit id="tu7" xml:space="preserve">
 <source xml:lang="en">Non visible getters will result in error message 2.</source>
-<target xml:lang="pt">Non visible getters will result in error message 2.</target>
+<target xml:lang="pt">Acessadores get não visíveis resultarão em uma mensagem de erro 2.</target>
 </trans-unit>
 <trans-unit id="tu8" xml:space="preserve">
 <source xml:lang="en">Example</source>
-<target xml:lang="pt">Example</target>
+<target xml:lang="pt">Exemplo</target>
 </trans-unit>
 <trans-unit id="tu9" xml:space="preserve">
 <source xml:lang="en">The following example generates STRDIAG004 on each property:</source>
-<target xml:lang="pt">The following example generates STRDIAG004 on each property:</target>
+<target xml:lang="pt">O exemplo a seguir gera um aviso STRDIAG004 em cada propriedade:</target>
 </trans-unit>
 <trans-unit id="tu10" xml:space="preserve">
 <source xml:lang="en">using Stride.Core;
@@ -61,17 +61,17 @@ public class STRDIAG004
 
 public class STRDIAG004
 {
-    // throws Diagnostics message 1
+    // lança a mensagem de diagnóstico 1
     [DataMember]
-    public int Value { set;}
+    public int Valor { set;}
 
-    // throws Diagnostics message 2
+    // lança a mensagem de diagnóstico 2
     [DataMember]
-    public string Value { private get; set; }
+    public string Valor { private get; set; }
 
-    // throws Diagnostics message 2 
+    // lança a mensagem de diagnóstico 2 
     [DataMember]
-    public string Value { protected get; set; }
+    public string Valor { protected get; set; }
 }
 </target>
 </trans-unit>
@@ -79,9 +79,9 @@ public class STRDIAG004
 <source xml:lang="en"><x id="1"/>!WARNING<x id="2"/>
 There is an edge case with <g id="3">internal</g>/<g id="4">internal protected</g>, it will count as non visible when the @Stride.Core.DataMemberAttribute isn't applied.
 But when the attribute is applied then the getter counts as visible and therefore is correct.</source>
-<target xml:lang="pt"><x id="1"/>!WARNING<x id="2"/>
-There is an edge case with <g id="3">internal</g>/<g id="4">internal protected</g>, it will count as non visible when the @Stride.Core.DataMemberAttribute isn't applied.
-But when the attribute is applied then the getter counts as visible and therefore is correct.</target>
+<target xml:lang="pt"><x id="1"/>!Warning<x id="2"/>
+Há um caso específico utlizando <g id="3">internal</g> ou <g id="4">internal protected</g> que contará como não visível quando o atributo @Stride.Core.DataMemberAttribute não é aplicado.
+Mas quando o atributo é aplicado, o acessador get passa a ser considerado visível e, portanto, correto.</target>
 </trans-unit>
 <trans-unit id="tu12" xml:space="preserve">
 <source xml:lang="en">// STRDIAG000.cs
@@ -104,24 +104,24 @@ public class STRDIAG004
     public string Value { internal protected get; set; }
 }
 </source>
-<target xml:lang="pt">// STRDIAG000.cs
+<target xml:lang="pt">// STRDIAG004.cs
 using Stride.Core;
 
 public class STRDIAG004
 {
-    // will throw STRDIAG004
-    public int Value { internal get; set; }
+    // lançará um aviso STRDIAG004
+    public int Valor { internal get; set; }
 
-    // will throw STRDIAG004
-    public int Value { internal protected get; set; }
+    // lançará um aviso STRDIAG004
+    public int Valor { internal protected get; set; }
 
-    // won't throw STRDIAG004
+    // não lançará um aviso STRDIAG004
     [DataMember]
-    public string Value { internal get; set; }
+    public string Valor { internal get; set; }
     
-    // won't throw STRDIAG004
+    // não lançará um aviso STRDIAG004
     [DataMember]
-    public string Value { internal protected get; set; }
+    public string Valor { internal protected get; set; }
 }
 </target>
 </trans-unit>
@@ -131,11 +131,11 @@ public class STRDIAG004
 </trans-unit>
 <trans-unit id="tu14" xml:space="preserve">
 <source xml:lang="en">To resolve the warning 1, add a getter to the property with a <g id="1">public</g>/<g id="2">internal</g>/<g id="3">internal protected</g> accessibility or remove the @Stride.Core.DataMemberAttribute .</source>
-<target xml:lang="pt">To resolve the warning 1, add a getter to the property with a <g id="1">public</g>/<g id="2">internal</g>/<g id="3">internal protected</g> accessibility or remove the @Stride.Core.DataMemberAttribute .</target>
+<target xml:lang="pt">Para resolver o aviso 1, adicione um acessador get à propriedade com acessibilidade <g id="1">public</g>/<g id="2">internal</g>/<g id="3">internal protected</g> ou remova o atributo @Stride.Core.DataMemberAttribute.</target>
 </trans-unit>
 <trans-unit id="tu15" xml:space="preserve">
 <source xml:lang="en">To resolve the warning 2, increase the accessibility of the property getter to <g id="1">public</g>/<g id="2">internal</g>/<g id="3">internal protected</g> accessibility or remove the @Stride.Core.DataMemberAttribute .</source>
-<target xml:lang="pt">To resolve the warning 2, increase the accessibility of the property getter to <g id="1">public</g>/<g id="2">internal</g>/<g id="3">internal protected</g> accessibility or remove the @Stride.Core.DataMemberAttribute .</target>
+<target xml:lang="pt">Para resolver o aviso 2, altere o modificador de acesso do acessador get da propriedade para <g id="1">public</g>, <g id="2">internal</g> ou <g id="3">internal protected</g> ou remova o atributo @Stride.Core.DataMemberAttribute.</target>
 </trans-unit>
 </body>
 </file>

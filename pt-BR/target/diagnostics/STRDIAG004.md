@@ -1,66 +1,66 @@
 # Diagnosticando o aviso STRDIAG004
 
-> 1. The property '{0}' with `[DataMember]` does not have a getter which is required for serialization.
-> 2. The property '{0}' with `[DataMember]` does not have an accessible getter which is required for serialization. A public/internal/internal protected getter is expected.
+> 1. A propriedade '{0}' marcada com o atributo `[DataMember]` não possui um acessador get necessário para a serialização.
+> 2. A propriedade '{0}' com o atributo `[DataMember]` não possui um acessador get acessível necessário para a serialização. Um acessador public/internal/internal protected é esperado.
 
-## Explanation
+## Explicação
 
-All serializers need a getter on a property to be able to get the content of the property.
-This is required for all serializers in Stride.
-- Non existent getters will result in error message 1.
-- Non visible getters will result in error message 2.
+Todos os serializadores precisam de um acessador get em uma propriedade para poderem obter o conteúdo da propriedade, 
+sendo necessário para todos os serializadores no Stride.
+- Acessadores get inexistentes resultarão em uma mensagem de erro 1.
+- Acessadores get não visíveis resultarão em uma mensagem de erro 2.
 
-## Example
+## Exemplo
 
-The following example generates STRDIAG004 on each property:
+O exemplo a seguir gera um aviso STRDIAG004 em cada propriedade:
 
 ```csharp
 using Stride.Core;
 
 public class STRDIAG004
 {
-    // throws Diagnostics message 1
+    // lança a mensagem de diagnóstico 1
     [DataMember]
-    public int Value { set;}
+    public int Valor { set;}
 
-    // throws Diagnostics message 2
+    // lança a mensagem de diagnóstico 2
     [DataMember]
-    public string Value { private get; set; }
+    public string Valor { private get; set; }
 
-    // throws Diagnostics message 2 
+    // lança a mensagem de diagnóstico 2 
     [DataMember]
-    public string Value { protected get; set; }
+    public string Valor { protected get; set; }
 }
 ```
 
-> [!WARNING]
-> There is an edge case with `internal`/`internal protected`, it will count as non visible when the @Stride.Core.DataMemberAttribute isn't applied.
-> But when the attribute is applied then the getter counts as visible and therefore is correct.
+> [!Warning]
+> Há um caso específico utlizando `internal` ou `internal protected` que contará como não visível quando o atributo @Stride.Core.DataMemberAttribute não é aplicado.
+> Mas quando o atributo é aplicado, o acessador get passa a ser considerado visível e, portanto, correto.
 
 ```csharp
-// STRDIAG000.cs
+// STRDIAG004.cs
 using Stride.Core;
 
 public class STRDIAG004
 {
-    // will throw STRDIAG004
-    public int Value { internal get; set; }
+    // lançará um aviso STRDIAG004
+    public int Valor { internal get; set; }
 
-    // will throw STRDIAG004
-    public int Value { internal protected get; set; }
+    // lançará um aviso STRDIAG004
+    public int Valor { internal protected get; set; }
 
-    // won't throw STRDIAG004
+    // não lançará um aviso STRDIAG004
     [DataMember]
-    public string Value { internal get; set; }
+    public string Valor { internal get; set; }
     
-    // won't throw STRDIAG004
+    // não lançará um aviso STRDIAG004
     [DataMember]
-    public string Value { internal protected get; set; }
+    public string Valor { internal protected get; set; }
 }
 ```
 
 ## Solution
 
-To resolve the warning 1, add a getter to the property with a `public`/`internal`/`internal protected` accessibility or remove the @Stride.Core.DataMemberAttribute .
+Para resolver o aviso 1, adicione um acessador get à propriedade com acessibilidade `public`/`internal`/`internal protected` ou remova o atributo @Stride.Core.DataMemberAttribute.
 
-To resolve the warning 2, increase the accessibility of the property getter to `public`/`internal`/`internal protected` accessibility or remove the @Stride.Core.DataMemberAttribute .
+Para resolver o aviso 2, altere o modificador de acesso do acessador get da propriedade para `public`, `internal` ou `internal protected` ou remova o atributo @Stride.Core.DataMemberAttribute.
