@@ -16,154 +16,197 @@
                 ],
                 [
                     "Struct members with the 'fixed' Modifier are not supported as a Serialization target on member '{0}'.",
-                    "",
+                    "Os membros de estrutura com o modificador 'fixed' não são suportados como alvo de serialização no membro '{0}'.",
                     "Struct members with the 'fixed' Modifier are not supported as a Serialization target on member '{0}'.",
                     "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG008.md",
                     {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697399427711,
                         "id": "tu2"
                     }
                 ],
                 [
                     "Explanation",
-                    "",
+                    "Explicação",
                     "Explanation",
                     "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG008.md",
                     {
+                        "note": "",
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697378581050,
                         "id": "tu3"
                     }
                 ],
                 [
                     "The Stride serializers can't handle <g1>fixed<\/g1> members in structs.",
-                    "",
+                    "Os serializadores do Stride não suportam membros <g1>fixed<\/g1> em estruturas.",
                     "The Stride serializers can't handle <g1>fixed<\/g1> members in structs.",
                     "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG008.md",
                     {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697399441878,
                         "id": "tu4"
                     }
                 ],
                 [
                     "The @Stride.Core.DataMemberAttribute is always invalid on such a member.",
-                    "",
+                    "O atributo @Stride.Core.DataMemberAttribute é sempre inválido quando aplicado a um membro desse tipo.",
                     " The @Stride.Core.DataMemberAttribute is always invalid on such a member.",
                     "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG008.md",
                     {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697399490389,
                         "id": "tu4"
                     }
                 ],
                 [
                     "Example:",
-                    "",
+                    "Exemplo:",
                     "Example:",
                     "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG008.md",
                     {
+                        "note": "",
+                        "creator": "anonymous",
+                        "createdTime": 0,
                         "id": "tu5"
                     }
                 ],
                 [
                     "Invalid Cases",
-                    "",
+                    "Casos inválidos",
                     " Invalid Cases",
                     "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG008.md",
                     {
+                        "note": "",
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697378780214,
                         "id": "tu5"
                     }
                 ],
                 [
                     "The following example generates STRDIAG008:",
-                    "",
+                    "O exemplo a seguir gera um aviso STRDIAG008:",
                     "The following example generates STRDIAG008:",
                     "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG008.md",
                     {
+                        "note": "",
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697399503973,
                         "id": "tu6"
                     }
                 ],
                 [
                     "using Stride.Core;",
-                    "",
+                    "using Stride.Core;",
                     "using Stride.Core;\r\n",
                     "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG008.md",
                     {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697399505861,
                         "id": "tu7"
                     }
                 ],
                 [
                     "public unsafe struct STRDIAG008",
-                    "",
+                    "public unsafe struct STRDIAG008",
                     "\r\npublic unsafe struct STRDIAG008\r\n",
                     "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG008.md",
                     {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697399508246,
                         "id": "tu7"
                     }
                 ],
                 [
                     "{",
-                    "",
+                    "{",
                     "{\r\n",
                     "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG008.md",
                     {
+                        "note": "",
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697399509782,
                         "id": "tu7"
                     }
                 ],
                 [
                     "[DataMember]",
-                    "",
+                    "[DataMember]",
                     "    [DataMember]\r\n",
                     "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG008.md",
                     {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697399510445,
                         "id": "tu7"
                     }
                 ],
                 [
                     "public fixed byte Value[10];",
-                    "",
+                    "public fixed byte Valor[10];",
                     "    public fixed byte Value[10];\r\n",
                     "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG008.md",
                     {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697399518573,
                         "id": "tu7"
                     }
                 ],
                 [
                     "}",
-                    "",
+                    "}",
                     "}\r\n",
                     "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG008.md",
                     {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697399520165,
                         "id": "tu7"
                     }
                 ],
                 [
                     "Solution",
-                    "",
+                    "Solução",
                     "Solution",
                     "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG008.md",
                     {
+                        "note": "",
+                        "creator": "anonymous",
+                        "createdTime": 0,
                         "id": "tu8"
                     }
                 ],
                 [
                     "To resolve the warning, remove the @Stride.Core.DataMemberAttribute.",
-                    "",
+                    "Para resolver o aviso, remova o atributo @Stride.Core.DataMemberAttribute.",
                     "To resolve the warning, remove the @Stride.Core.DataMemberAttribute.",
                     "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG008.md",
                     {
+                        "note": "",
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697398492671,
                         "id": "tu9"
                     }
                 ],
                 [
                     "References",
-                    "",
+                    "Referências",
                     "References",
                     "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG008.md",
                     {
+                        "note": "",
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697380979738,
                         "id": "tu10"
                     }
                 ],
                 [
                     "Serialisation",
-                    "",
+                    "Serialização",
                     "<g1>Serialisation<\/g1>",
                     "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG008.md",
                     {
+                        "note": "",
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697374243815,
                         "id": "tu11"
                     }
                 ]

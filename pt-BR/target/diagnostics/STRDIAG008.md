@@ -1,14 +1,14 @@
 # Diagnosticando o aviso STRDIAG008
 
-> Struct members with the 'fixed' Modifier are not supported as a Serialization target on member '{0}'.
+> Os membros de estrutura com o modificador 'fixed' não são suportados como alvo de serialização no membro '{0}'.
 
-## Explanation
+## Explicação
 
-The Stride serializers can't handle `fixed` members in structs. The @Stride.Core.DataMemberAttribute is always invalid on such a member.
+Os serializadores do Stride não suportam membros `fixed` em estruturas. O atributo @Stride.Core.DataMemberAttribute é sempre inválido quando aplicado a um membro desse tipo.
 
-## Example: Invalid Cases
+## Exemplo: Casos inválidos
 
-The following example generates STRDIAG008:
+O exemplo a seguir gera um aviso STRDIAG008:
 
 ```csharp
 using Stride.Core;
@@ -16,14 +16,14 @@ using Stride.Core;
 public unsafe struct STRDIAG008
 {
     [DataMember]
-    public fixed byte Value[10];
+    public fixed byte Valor[10];
 }
 ```
 
-## Solution
+## Solução
 
-To resolve the warning, remove the @Stride.Core.DataMemberAttribute.
+Para resolver o aviso, remova o atributo @Stride.Core.DataMemberAttribute.
 
-## References
+## Referências
 
-- [Serialisation](../manual/scripts/serialization.md)
+- [Serialização](../manual/scripts/serialization.md)
