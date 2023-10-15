@@ -1,0 +1,190 @@
+{
+    "filename": "diagnostics\\STRDIAG005.md.xlf",
+    "files": [
+        {
+            "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG005.md": [
+                [
+                    "Diagnostics Warning STRDIAG005",
+                    "",
+                    "Diagnostics Warning STRDIAG005",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG005.md",
+                    {
+                        "id": "tu1"
+                    }
+                ],
+                [
+                    "The <g1>[DataMember]<\/g1> Attribute is applied to a read-only member '{0}' with a non supported type.",
+                    "",
+                    "The <g1>[DataMember]<\/g1> Attribute is applied to a read-only member '{0}' with a non supported type.",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG005.md",
+                    {
+                        "id": "tu2"
+                    }
+                ],
+                [
+                    "Only mutable reference types are supported for read-only members.",
+                    "",
+                    " Only mutable reference types are supported for read-only members.",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG005.md",
+                    {
+                        "id": "tu2"
+                    }
+                ],
+                [
+                    "Explanation",
+                    "",
+                    "Explanation",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG005.md",
+                    {
+                        "id": "tu3"
+                    }
+                ],
+                [
+                    "Having no set possibility automatically lets the serializers automatically use the <g1>DataMemberMode.Content<\/g1>.",
+                    "",
+                    "Having no set possibility automatically lets the serializers automatically use the <g1>DataMemberMode.Content<\/g1>.\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG005.md",
+                    {
+                        "id": "tu4"
+                    }
+                ],
+                [
+                    "For immutable types the <g2>DataMemberMode.Content<\/g2> is never valid.",
+                    "",
+                    "For immutable types the <g2>DataMemberMode.Content<\/g2> is never valid.\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG005.md",
+                    {
+                        "id": "tu4"
+                    }
+                ],
+                [
+                    "Immutable types in this context are none reference types and string.",
+                    "",
+                    "Immutable types in this context are none reference types and string.",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG005.md",
+                    {
+                        "id": "tu4"
+                    }
+                ],
+                [
+                    "Example",
+                    "",
+                    "Example",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG005.md",
+                    {
+                        "id": "tu5"
+                    }
+                ],
+                [
+                    "The following example generates STRDIAG005 on each property:",
+                    "",
+                    "The following example generates STRDIAG005 on each property:",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG005.md",
+                    {
+                        "id": "tu6"
+                    }
+                ],
+                [
+                    "using Stride.Core;",
+                    "",
+                    "using Stride.Core;\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG005.md",
+                    {
+                        "id": "tu7"
+                    }
+                ],
+                [
+                    "public class STRDIAG005",
+                    "",
+                    "\r\npublic class STRDIAG005\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG005.md",
+                    {
+                        "id": "tu7"
+                    }
+                ],
+                [
+                    "{",
+                    "",
+                    "{\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG005.md",
+                    {
+                        "id": "tu7"
+                    }
+                ],
+                [
+                    "[DataMember]",
+                    "",
+                    "    [DataMember]\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG005.md",
+                    {
+                        "id": "tu7"
+                    }
+                ],
+                [
+                    "public readonly int Value;",
+                    "",
+                    "    public readonly int Value;\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG005.md",
+                    {
+                        "id": "tu7"
+                    }
+                ],
+                [
+                    "[DataMember]",
+                    "",
+                    "    [DataMember]\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG005.md",
+                    {
+                        "id": "tu7"
+                    }
+                ],
+                [
+                    "public string Value { get; }",
+                    "",
+                    "    public string Value { get; }\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG005.md",
+                    {
+                        "id": "tu7"
+                    }
+                ],
+                [
+                    "}",
+                    "",
+                    "}\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG005.md",
+                    {
+                        "id": "tu7"
+                    }
+                ],
+                [
+                    "Solution",
+                    "",
+                    "Solution",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG005.md",
+                    {
+                        "id": "tu8"
+                    }
+                ],
+                [
+                    "To resolve the warning for fields, remove the <g1>[DataMember]<\/g1> attribute or remove the <g2>readonly<\/g2> modifier.",
+                    "",
+                    "To resolve the warning for fields, remove the <g1>[DataMember]<\/g1> attribute or remove the <g2>readonly<\/g2> modifier.",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG005.md",
+                    {
+                        "id": "tu9"
+                    }
+                ],
+                [
+                    "To resolve the warning for properties, alter the type of the property to a supported type or remove the <g1>[DataMember]<\/g1> attribute.",
+                    "",
+                    "To resolve the warning for properties, alter the type of the property to a supported type or remove the <g1>[DataMember]<\/g1> attribute.",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG005.md",
+                    {
+                        "id": "tu10"
+                    }
+                ]
+            ]
+        }
+    ],
+    "seg_enabled": false
+}

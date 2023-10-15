@@ -101,4 +101,3 @@ Você pode alterar os valores de snap para cada gizmo na barra de ferramentas de
 * [Navegue no Editor de Cena](navigate-in-the-scene-editor.md)
 * [Cenas de carga](load-scenes.md)
 * [Adicionar entidades](add-entities.md)
-* [Gerenciar entidades](manage-entities.md)

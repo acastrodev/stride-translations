@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
-<file original="/D:/repos/rr/source/manual/scripts/public-properties-and-fields.md" source-language="en" target-language="pt" datatype="x-text/x-markdown" okp:inputEncoding="UTF-8">
+<file original="/D:/repos/stride-docs/en/manual/scripts/public-properties-and-fields.md" source-language="en" target-language="pt" datatype="x-text/x-markdown" okp:inputEncoding="UTF-8">
 <body>
 <trans-unit id="tu1" xml:space="preserve">
 <source xml:lang="en">Public properties and fields</source>
@@ -123,16 +123,14 @@ As a general rule, if you want to display the property or field in Game Studio, 
 <target xml:lang="pt">use the <g id="1">DataMemberIgnore</g> attribute like this:</target>
 </trans-unit>
 <trans-unit id="tu20" xml:space="preserve">
-<source xml:lang="en">
-	// This public property isn't available in Game Studio
-	[DataMemberIgnore]
-	public float DelayTimeOut { get; set; }
+<source xml:lang="en">// This public property isn't available in Game Studio
+[DataMemberIgnore]
+public float DelayTimeOut { get; set; }
 	
 </source>
-<target xml:lang="pt">
-	// This public property isn't available in Game Studio
-	[DataMemberIgnore]
-	public float DelayTimeOut { get; set; }
+<target xml:lang="pt">// This public property isn't available in Game Studio
+[DataMemberIgnore]
+public float DelayTimeOut { get; set; }
 	
 </target>
 </trans-unit>
@@ -153,22 +151,22 @@ As a general rule, if you want to display the property or field in Game Studio, 
 <target xml:lang="pt">When you add a <g id="1">&lt;userdoc></g> comment block above your public property in code, Game Studio will display it in the description field.</target>
 </trans-unit>
 <trans-unit id="tu25" xml:space="preserve">
-<source xml:lang="en">	///&lt;summary>
-	/// This summary won't show in Game Studio
-	///&lt;/summary>
-	///&lt;userdoc>
-	/// This description will show in Game Studio
-	///&lt;/userdoc>
-	public float DelayTimeOut { get; set; }
+<source xml:lang="en">///&lt;summary>
+/// This summary won't show in Game Studio
+///&lt;/summary>
+///&lt;userdoc>
+/// This description will show in Game Studio
+///&lt;/userdoc>
+public float DelayTimeOut { get; set; }
 
 </source>
-<target xml:lang="pt">	///&lt;summary>
-	/// This summary won't show in Game Studio
-	///&lt;/summary>
-	///&lt;userdoc>
-	/// This description will show in Game Studio
-	///&lt;/userdoc>
-	public float DelayTimeOut { get; set; }
+<target xml:lang="pt">///&lt;summary>
+/// This summary won't show in Game Studio
+///&lt;/summary>
+///&lt;userdoc>
+/// This description will show in Game Studio
+///&lt;/userdoc>
+public float DelayTimeOut { get; set; }
 
 </target>
 </trans-unit>
@@ -177,15 +175,15 @@ As a general rule, if you want to display the property or field in Game Studio, 
 <target xml:lang="pt">Enable documentation file generation:</target>
 </trans-unit>
 <trans-unit id="tu27" xml:space="preserve">
-<source xml:lang="en">  &lt;PropertyGroup>
-    &lt;TargetFrameworks>net6.0&lt;/TargetFrameworks>
-    &lt;DocumentationFile>bin\$(Configuration)\$(TargetFramework)\$(AssemblyName).xml&lt;/DocumentationFile>
-  &lt;/PropertyGroup>
+<source xml:lang="en">&lt;PropertyGroup>
+  &lt;TargetFrameworks>net6.0&lt;/TargetFrameworks>
+  &lt;DocumentationFile>bin\$(Configuration)\$(TargetFramework)\$(AssemblyName).xml&lt;/DocumentationFile>
+&lt;/PropertyGroup>
 </source>
-<target xml:lang="pt">  &lt;PropertyGroup>
-    &lt;TargetFrameworks>net6.0&lt;/TargetFrameworks>
-    &lt;DocumentationFile>bin\$(Configuration)\$(TargetFramework)\$(AssemblyName).xml&lt;/DocumentationFile>
-  &lt;/PropertyGroup>
+<target xml:lang="pt">&lt;PropertyGroup>
+  &lt;TargetFrameworks>net6.0&lt;/TargetFrameworks>
+  &lt;DocumentationFile>bin\$(Configuration)\$(TargetFramework)\$(AssemblyName).xml&lt;/DocumentationFile>
+&lt;/PropertyGroup>
 </target>
 </trans-unit>
 <trans-unit id="tu28" xml:space="preserve">
@@ -203,14 +201,12 @@ Game Studio will only look in your build output directory for each assembly. Usi
 <target xml:lang="pt"><x id="1"/>The description now shows in the Property Grid<x id="2"/></target>
 </trans-unit>
 <trans-unit id="tu31" xml:space="preserve">
-<source xml:lang="en"><g id="1">MemberRequiredAttribute</g></source>
-<target xml:lang="pt"><g id="1">MemberRequiredAttribute</g></target>
+<source xml:lang="en">MemberRequiredAttribute</source>
+<target xml:lang="pt">MemberRequiredAttribute</target>
 </trans-unit>
 <trans-unit id="tu32" xml:space="preserve">
-<source xml:lang="en">This attribute is used to specify if a field or property should not be left null in editor.
-If no values are set for this member, a warning or error will be logged when building your game.</source>
-<target xml:lang="pt">This attribute is used to specify if a field or property should not be left null in editor.
-If no values are set for this member, a warning or error will be logged when building your game.</target>
+<source xml:lang="en">The <g id="1"><g id="2">MemberRequiredAttribute</g></g> is used to specify if a field or property should not be left null in the editor. If no values are set for this member, a warning or error will be logged when building your game.</source>
+<target xml:lang="pt">The <g id="1"><g id="2">MemberRequiredAttribute</g></g> is used to specify if a field or property should not be left null in the editor. If no values are set for this member, a warning or error will be logged when building your game.</target>
 </trans-unit>
 <trans-unit id="tu33" xml:space="preserve">
 <source xml:lang="en">[Stride.Core.Annotations.MemberRequired(MemberRequiredReportType.Error)] public CharacterComponent MyCharacter;
@@ -219,66 +215,70 @@ If no values are set for this member, a warning or error will be logged when bui
 </target>
 </trans-unit>
 <trans-unit id="tu34" xml:space="preserve">
-<source xml:lang="en"><g id="1">DataMemberRangeAttribute</g></source>
-<target xml:lang="pt"><g id="1">DataMemberRangeAttribute</g></target>
+<source xml:lang="en">Additional Serialization Attributes</source>
+<target xml:lang="pt">Additional Serialization Attributes</target>
 </trans-unit>
 <trans-unit id="tu35" xml:space="preserve">
-<source xml:lang="en"><g id="1">InlinePropertyAttribute</g></source>
-<target xml:lang="pt"><g id="1">InlinePropertyAttribute</g></target>
+<source xml:lang="en"><g id="1"><g id="2">DataMemberRangeAttribute</g></g></source>
+<target xml:lang="pt"><g id="1"><g id="2">DataMemberRangeAttribute</g></g></target>
 </trans-unit>
 <trans-unit id="tu36" xml:space="preserve">
-<source xml:lang="en"><g id="1">ItemCanBeNullAttribute</g></source>
-<target xml:lang="pt"><g id="1">ItemCanBeNullAttribute</g></target>
+<source xml:lang="en"><g id="1"><g id="2">InlinePropertyAttribute</g></g></source>
+<target xml:lang="pt"><g id="1"><g id="2">InlinePropertyAttribute</g></g></target>
 </trans-unit>
 <trans-unit id="tu37" xml:space="preserve">
-<source xml:lang="en"><g id="1">ItemNotNullAttribute</g></source>
-<target xml:lang="pt"><g id="1">ItemNotNullAttribute</g></target>
+<source xml:lang="en"><g id="1"><g id="2">ItemCanBeNullAttribute</g></g></source>
+<target xml:lang="pt"><g id="1"><g id="2">ItemCanBeNullAttribute</g></g></target>
 </trans-unit>
 <trans-unit id="tu38" xml:space="preserve">
-<source xml:lang="en"><g id="1">MemberCollectionAttribute</g></source>
-<target xml:lang="pt"><g id="1">MemberCollectionAttribute</g></target>
+<source xml:lang="en"><g id="1"><g id="2">ItemNotNullAttribute</g></g></source>
+<target xml:lang="pt"><g id="1"><g id="2">ItemNotNullAttribute</g></g></target>
 </trans-unit>
 <trans-unit id="tu39" xml:space="preserve">
-<source xml:lang="en"><g id="1">DataStyleAttribute</g></source>
-<target xml:lang="pt"><g id="1">DataStyleAttribute</g></target>
+<source xml:lang="en"><g id="1"><g id="2">MemberCollectionAttribute</g></g></source>
+<target xml:lang="pt"><g id="1"><g id="2">MemberCollectionAttribute</g></g></target>
 </trans-unit>
 <trans-unit id="tu40" xml:space="preserve">
-<source xml:lang="en"><g id="1">DisplayAttribute</g></source>
-<target xml:lang="pt"><g id="1">DisplayAttribute</g></target>
+<source xml:lang="en"><g id="1"><g id="2">DataStyleAttribute</g></g></source>
+<target xml:lang="pt"><g id="1"><g id="2">DataStyleAttribute</g></g></target>
 </trans-unit>
 <trans-unit id="tu41" xml:space="preserve">
+<source xml:lang="en"><g id="1"><g id="2">DisplayAttribute</g></g></source>
+<target xml:lang="pt"><g id="1"><g id="2">DisplayAttribute</g></g></target>
+</trans-unit>
+<trans-unit id="tu42" xml:space="preserve">
 <source xml:lang="en">See also</source>
 <target xml:lang="pt">See also</target>
 </trans-unit>
-<trans-unit id="tu42" xml:space="preserve">
+<trans-unit id="tu43" xml:space="preserve">
 <source xml:lang="en"><g id="1">Serialization</g></source>
 <target xml:lang="pt"><g id="1">Serialization</g></target>
 </trans-unit>
-<trans-unit id="tu43" xml:space="preserve">
+<trans-unit id="tu44" xml:space="preserve">
 <source xml:lang="en"><g id="1">Types of script</g></source>
 <target xml:lang="pt"><g id="1">Types of script</g></target>
 </trans-unit>
-<trans-unit id="tu44" xml:space="preserve">
+<trans-unit id="tu45" xml:space="preserve">
 <source xml:lang="en"><g id="1">Create a script</g></source>
 <target xml:lang="pt"><g id="1">Create a script</g></target>
 </trans-unit>
-<trans-unit id="tu45" xml:space="preserve">
+<trans-unit id="tu46" xml:space="preserve">
 <source xml:lang="en"><g id="1">Use a script</g></source>
 <target xml:lang="pt"><g id="1">Use a script</g></target>
 </trans-unit>
-<trans-unit id="tu46" xml:space="preserve">
+<trans-unit id="tu47" xml:space="preserve">
 <source xml:lang="en"><g id="1">Scheduling and priorities</g></source>
 <target xml:lang="pt"><g id="1">Scheduling and priorities</g></target>
 </trans-unit>
-<trans-unit id="tu47" xml:space="preserve">
+<trans-unit id="tu48" xml:space="preserve">
 <source xml:lang="en"><g id="1">Events</g></source>
 <target xml:lang="pt"><g id="1">Events</g></target>
 </trans-unit>
-<trans-unit id="tu48" xml:space="preserve">
+<trans-unit id="tu49" xml:space="preserve">
 <source xml:lang="en"><g id="1">Debugging</g></source>
 <target xml:lang="pt"><g id="1">Debugging</g></target>
 </trans-unit>
-<trans-unit id="tu49" xml:space="preserve">
+<trans-unit id="tu50" xml:space="preserve">
 <source xml:lang="en"><g id="1">Preprocessor variables</g></source>
 <target xml:lang="pt"><g id="1">Preprocessor variables</g></target>
 </trans-unit>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
-<file original="/D:/repos/rr/source/manual/scripts/serialization.md" source-language="en" target-language="pt" datatype="x-text/x-markdown" okp:inputEncoding="UTF-8">
+<file original="/D:/repos/stride-docs/en/manual/scripts/serialization.md" source-language="en" target-language="pt" datatype="x-text/x-markdown" okp:inputEncoding="UTF-8">
 <body>
 <trans-unit id="tu1" xml:space="preserve">
 <source xml:lang="en">Serialization</source>
@@ -17,14 +17,12 @@
 <target xml:lang="pt">The editor and serialization system uses four attributes to determine what is serialized and visible in the editor.</target>
 </trans-unit>
 <trans-unit id="tu4" xml:space="preserve">
-<source xml:lang="en"><g id="1">DataContractAttribute</g></source>
-<target xml:lang="pt"><g id="1">DataContractAttribute</g></target>
+<source xml:lang="en">DataContractAttribute</source>
+<target xml:lang="pt">DataContractAttribute</target>
 </trans-unit>
 <trans-unit id="tu5" xml:space="preserve">
-<source xml:lang="en">Adding this attribute to your <g id="1">class</g> or <g id="2">struct</g> notifies the serializer and the editor that it should
-show fields and properties of that type, and serialize the data it contains with the scenes or assets that might include it.</source>
-<target xml:lang="pt">Adding this attribute to your <g id="1">class</g> or <g id="2">struct</g> notifies the serializer and the editor that it should
-show fields and properties of that type, and serialize the data it contains with the scenes or assets that might include it.</target>
+<source xml:lang="en">Adding the <g id="1"><g id="2">DataContractAttribute</g></g> to your <g id="3">class</g> or <g id="4">struct</g> notifies the serializer that it should serialize the data it contains, and the editor that it should display fields and properties of that type, along with the scenes or assets that might include it.</source>
+<target xml:lang="pt">Adding the <g id="1"><g id="2">DataContractAttribute</g></g> to your <g id="3">class</g> or <g id="4">struct</g> notifies the serializer that it should serialize the data it contains, and the editor that it should display fields and properties of that type, along with the scenes or assets that might include it.</target>
 </trans-unit>
 <trans-unit id="tu6" xml:space="preserve">
 <source xml:lang="en">[Stride.Core.DataContract(Inherited = true)]
@@ -63,18 +61,12 @@ They are not interchangeable.
 Make sure that your <g id="6">DataContract</g> comes from <g id="7">Stride.Core</g>, specifying the namespace explicitly like shown above if necessary.</target>
 </trans-unit>
 <trans-unit id="tu8" xml:space="preserve">
-<source xml:lang="en"><g id="1">DataMemberAttribute</g></source>
-<target xml:lang="pt"><g id="1">DataMemberAttribute</g></target>
+<source xml:lang="en">DataMemberAttribute</source>
+<target xml:lang="pt">DataMemberAttribute</target>
 </trans-unit>
 <trans-unit id="tu9" xml:space="preserve">
-<source xml:lang="en">This notifies the editor and serializer that the property or field on this <g id="1">DataContract</g>'ed
-<g id="2">class</g> or <g id="3">struct</g> should be serialized.
-Note that you can omit this attribute for most public fields and properties, they will be included by default,
-see <g id="4">Fields</g> and <g id="5">Properties</g> for specifics.</source>
-<target xml:lang="pt">This notifies the editor and serializer that the property or field on this <g id="1">DataContract</g>'ed
-<g id="2">class</g> or <g id="3">struct</g> should be serialized.
-Note that you can omit this attribute for most public fields and properties, they will be included by default,
-see <g id="4">Fields</g> and <g id="5">Properties</g> for specifics.</target>
+<source xml:lang="en">The <g id="1"><g id="2">DataMemberAttribute</g></g> notifies the editor and serializer that the property or field on this <g id="3"><g id="4">DataContract</g></g>'ed <g id="5">class</g> or <g id="6">struct</g> should be serialized. Note that you can omit this attribute for most public fields and properties, as they will be included by default. See <g id="7">Fields</g> and <g id="8">Properties</g> for specifics.</source>
+<target xml:lang="pt">The <g id="1"><g id="2">DataMemberAttribute</g></g> notifies the editor and serializer that the property or field on this <g id="3"><g id="4">DataContract</g></g>'ed <g id="5">class</g> or <g id="6">struct</g> should be serialized. Note that you can omit this attribute for most public fields and properties, as they will be included by default. See <g id="7">Fields</g> and <g id="8">Properties</g> for specifics.</target>
 </trans-unit>
 <trans-unit id="tu10" xml:space="preserve">
 <source xml:lang="en">[Stride.Core.DataContract]
@@ -93,12 +85,12 @@ public class MySerializedClass
 </target>
 </trans-unit>
 <trans-unit id="tu11" xml:space="preserve">
-<source xml:lang="en"><g id="1">DataAliasAttribute</g></source>
-<target xml:lang="pt"><g id="1">DataAliasAttribute</g></target>
+<source xml:lang="en">DataAliasAttribute</source>
+<target xml:lang="pt">DataAliasAttribute</target>
 </trans-unit>
 <trans-unit id="tu12" xml:space="preserve">
-<source xml:lang="en">Can be used to ensure you do not break previously serialized data whenever you have to change how that member is named in your source.</source>
-<target xml:lang="pt">Can be used to ensure you do not break previously serialized data whenever you have to change how that member is named in your source.</target>
+<source xml:lang="en">The <g id="1"><g id="2">DataAliasAttribute</g></g> can be used to ensure you do not break previously serialized data whenever you have to change how that member is named in your source.</source>
+<target xml:lang="pt">The <g id="1"><g id="2">DataAliasAttribute</g></g> can be used to ensure you do not break previously serialized data whenever you have to change how that member is named in your source.</target>
 </trans-unit>
 <trans-unit id="tu13" xml:space="preserve">
 <source xml:lang="en">[Stride.Core.DataAlias("PreviousNameOfProp")]
@@ -115,14 +107,12 @@ Alias remaps values only while in the editor; this feature is specific to the YA
 Alias remaps values only while in the editor; this feature is specific to the YAML serialization system. Alias will be ignored during builds and at runtime.</target>
 </trans-unit>
 <trans-unit id="tu15" xml:space="preserve">
-<source xml:lang="en"><g id="1">DataMemberIgnoreAttribute</g></source>
-<target xml:lang="pt"><g id="1">DataMemberIgnoreAttribute</g></target>
+<source xml:lang="en">DataMemberIgnoreAttribute</source>
+<target xml:lang="pt">DataMemberIgnoreAttribute</target>
 </trans-unit>
 <trans-unit id="tu16" xml:space="preserve">
-<source xml:lang="en">This notifies the editor and serializer that the property or field on this <g id="1">DataContract</g>'ed
-<g id="2">class</g> or <g id="3">struct</g> should <g id="4"><g id="5">NOT</g></g> be serialized.</source>
-<target xml:lang="pt">This notifies the editor and serializer that the property or field on this <g id="1">DataContract</g>'ed
-<g id="2">class</g> or <g id="3">struct</g> should <g id="4"><g id="5">NOT</g></g> be serialized.</target>
+<source xml:lang="en">The <g id="1"><g id="2">DataMemberIgnoreAttribute</g></g> notifies the editor and serializer that the property or field on this <g id="3"><g id="4">DataContract</g></g>'ed <g id="5">class</g> or <g id="6">struct</g> should <g id="7"><g id="8">NOT</g></g> be serialized.</source>
+<target xml:lang="pt">The <g id="1"><g id="2">DataMemberIgnoreAttribute</g></g> notifies the editor and serializer that the property or field on this <g id="3"><g id="4">DataContract</g></g>'ed <g id="5">class</g> or <g id="6">struct</g> should <g id="7"><g id="8">NOT</g></g> be serialized.</target>
 </trans-unit>
 <trans-unit id="tu17" xml:space="preserve">
 <source xml:lang="en">[Stride.Core.DataContract]
@@ -157,8 +147,8 @@ public class MySerializedClass
 <target xml:lang="pt">Rule of Thumb</target>
 </trans-unit>
 <trans-unit id="tu22" xml:space="preserve">
-<source xml:lang="en">Serialization and the editor's access and view of your properties mirrors how access modifiers work in C#;</source>
-<target xml:lang="pt">Serialization and the editor's access and view of your properties mirrors how access modifiers work in C#;</target>
+<source xml:lang="en">Serialization and the editor's access and view of your properties mirrors how access modifiers work in C#.</source>
+<target xml:lang="pt">Serialization and the editor's access and view of your properties mirrors how access modifiers work in C#.</target>
 </trans-unit>
 <trans-unit id="tu23" xml:space="preserve">
 <source xml:lang="en">Think of the serializer/editor as being a class external to your codebase, if you want the serializer to

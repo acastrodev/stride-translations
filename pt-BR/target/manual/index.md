@@ -11,7 +11,9 @@ Estas páginas contêm informações sobre como usar o Stride, um motor de cria�
 
 ### Atualizações recentes
 
-- <span class="badge text-bg-info">Atualizado</span> [Stride para desenvolvedores Unity®](stride-for-unity-developers/index.md) - Melhorias no conteúdo
+- <span class="badge text-bg-success">Novo</span> [Serialização](scripts/serialization.md) — Explicação da serialização
+- <span class="badge text-bg-info">Atualizado</span> [Propriedades públicas e campos](scripts/public-properties-and-fields.md) — Melhorias e adições de conteúdo
+- <span class="badge text-bg-info">Atualizado</span> [Stride para desenvolvedores Unity®](stride-for-unity-developers/index.md) — Melhorias no conteúdo
 
 ### Atualizações anteriores
 
@@ -19,7 +21,7 @@ Estas páginas contêm informações sobre como usar o Stride, um motor de cria�
 - <span class="badge text-bg-success">Novo</span> [Vídeo](video/index.md)
 - <span class="badge text-bg-success">Novo</span> [Arquivos em cache](files-and-folders/cached-files.md)
 - <span class="badge text-bg-success">Novo</span> [iOS](platforms/ios.md)
-- <span class="badge text-bg-success">Novo</span> [Compilando shaders](graphics/effects-and-shaders/compile-shaders.md)
+- <span class="badge text-bg-success">Novo</span> [Compilar shaders](graphics/effects-and-shaders/compile-shaders.md)
 - <span class="badge text-bg-info">Atualizado</span> [Skyboxes e fundos](graphics/textures/skyboxes-and-backgrounds.md)
 - <span class="badge text-bg-info">Atualizado</span> [Animação de câmera com um arquivo de modelo](graphics/cameras/animate-a-camera-with-a-model-file.md)
 - <span class="badge text-bg-info">Atualizado</span> [Compartimentos de material](graphics/materials/material-slots.md)

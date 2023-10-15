@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="/D:/repos/stride-docs/en/diagnostics/STRDIAG002.md" source-language="en" target-language="pt" datatype="x-text/x-markdown" okp:inputEncoding="UTF-8">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en">Diagnostics Warning STRDIAG002</source>
+<target xml:lang="pt">Diagnostics Warning STRDIAG002</target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en">The 'DataMemberMode.Content' is not valid for the member '{0}'.
+Only mutable reference types are supported for 'DataMemberMode.Content' Mode members.</source>
+<target xml:lang="pt">The 'DataMemberMode.Content' is not valid for the member '{0}'.
+Only mutable reference types are supported for 'DataMemberMode.Content' Mode members.</target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">Explanation</source>
+<target xml:lang="pt">Explanation</target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">The <g id="1">DataMemberMode.Content</g> mutates the object which is currently in the member.
+As this is not possible with the current serializers, only mutable types are supported for <g id="2">DataMemberMode.Content</g>. Immutable types in this context are none reference types and string.</source>
+<target xml:lang="pt">The <g id="1">DataMemberMode.Content</g> mutates the object which is currently in the member.
+As this is not possible with the current serializers, only mutable types are supported for <g id="2">DataMemberMode.Content</g>. Immutable types in this context are none reference types and string.</target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">Example</source>
+<target xml:lang="pt">Example</target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en">The following example generates STRDIAG002 on each property:</source>
+<target xml:lang="pt">The following example generates STRDIAG002 on each property:</target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en">using Stride.Core;
+
+public class STRDIAG002
+{
+    [DataMember(DataMemberMode.Content)]
+    public int Value { get; set; }
+
+    [DataMember(DataMemberMode.Content)]
+    public string Value;
+}
+</source>
+<target xml:lang="pt">using Stride.Core;
+
+public class STRDIAG002
+{
+    [DataMember(DataMemberMode.Content)]
+    public int Value { get; set; }
+
+    [DataMember(DataMemberMode.Content)]
+    public string Value;
+}
+</target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en">Solution</source>
+<target xml:lang="pt">Solution</target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en">To resolve the warning, pick either a reference type for the member or use <g id="1">DataMemberMode.Assign</g> for Immutable types.</source>
+<target xml:lang="pt">To resolve the warning, pick either a reference type for the member or use <g id="1">DataMemberMode.Assign</g> for Immutable types.</target>
+</trans-unit>
+</body>
+</file>
+</xliff>

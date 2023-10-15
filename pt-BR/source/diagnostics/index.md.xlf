@@ -1,20 +1,76 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
-<file original="/D:/repos/rr/source/diagnostics/index.md" source-language="en" target-language="pt" datatype="x-text/x-markdown" okp:inputEncoding="UTF-8">
+<file original="/D:/repos/stride-docs/en/diagnostics/index.md" source-language="en" target-language="pt" datatype="x-text/x-markdown" okp:inputEncoding="UTF-8">
 <body>
 <trans-unit id="tu1" xml:space="preserve">
 <source xml:lang="en">Stride diagnostics</source>
 <target xml:lang="pt">Stride diagnostics</target>
 </trans-unit>
 <trans-unit id="tu2" xml:space="preserve">
-<source xml:lang="en">Some C# compiler errors have corresponding topics that explain why the error is generated, and, in some cases, how to fix the error. Use one of the following steps to see whether help is available for a particular error message.</source>
-<target xml:lang="pt">Some C# compiler errors have corresponding topics that explain why the error is generated, and, in some cases, how to fix the error. Use one of the following steps to see whether help is available for a particular error message.</target>
+<source xml:lang="en">Stride.Core.CompilerServices contains Roslyn code analyzers.</source>
+<target xml:lang="pt">Stride.Core.CompilerServices contains Roslyn code analyzers.</target>
 </trans-unit>
 <trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>!IMPORTANT<x id="2"/>
+These analyzers do not perform any kind of telemetry. The same analyzers get used by your IDE when you get a CSXXXX diagnostic.</source>
+<target xml:lang="pt"><x id="1"/>!IMPORTANT<x id="2"/>
+These analyzers do not perform any kind of telemetry. The same analyzers get used by your IDE when you get a CSXXXX diagnostic.</target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">They analyze the code for possible issues in your project with the Stride.Core design.
+To avoid unexpected runtime/compile time/editor time behaviour these analyzers try to warn as soon as possible for issues that may occur.
+Each of the following pages contain information about diagnostic codes that can be reported by the Roslyn analyzers, which are built into Stride.Core.CompilerServices.</source>
+<target xml:lang="pt">They analyze the code for possible issues in your project with the Stride.Core design.
+To avoid unexpected runtime/compile time/editor time behaviour these analyzers try to warn as soon as possible for issues that may occur.
+Each of the following pages contain information about diagnostic codes that can be reported by the Roslyn analyzers, which are built into Stride.Core.CompilerServices.</target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">The information covers:</source>
+<target xml:lang="pt">The information covers:</target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en">When is the diagnostics reported</source>
+<target xml:lang="pt">When is the diagnostics reported</target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en">An explanation why it is necessary to report the diagnostic</source>
+<target xml:lang="pt">An explanation why it is necessary to report the diagnostic</target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en">Examples when such a diagnostics occurs</source>
+<target xml:lang="pt">Examples when such a diagnostics occurs</target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en">Information about how to resolve the diagnostic</source>
+<target xml:lang="pt">Information about how to resolve the diagnostic</target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en">If an error is reported it is possible to click in the IDE on the <g id="1">diagnostic code</g> in the information box about the diagnostic.
+This will open the corresponding information page about the diagnostic.</source>
+<target xml:lang="pt">If an error is reported it is possible to click in the IDE on the <g id="1">diagnostic code</g> in the information box about the diagnostic.
+This will open the corresponding information page about the diagnostic.</target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en">The Stride.Core.CompilerServices is linked to Stride.Core, the diagnostic Analysis will only occur if your project references Stride.Core in the PackageReferences, this will automatically add the Stride.Core.CompilerServices to your project.</source>
+<target xml:lang="pt">The Stride.Core.CompilerServices is linked to Stride.Core, the diagnostic Analysis will only occur if your project references Stride.Core in the PackageReferences, this will automatically add the Stride.Core.CompilerServices to your project.</target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>!WARNING<x id="2"/>
-Note that diagnostic feature is experimental and may not work as expected.</source>
+Note that diagnostic feature is experimental and may not work as expected. Warnings may contain solutions that don't work yet.</source>
 <target xml:lang="pt"><x id="1"/>!WARNING<x id="2"/>
-Note that diagnostic feature is experimental and may not work as expected.</target>
+Note that diagnostic feature is experimental and may not work as expected. Warnings may contain solutions that don't work yet.</target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en">References</source>
+<target xml:lang="pt">References</target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en"><g id="1">Rule of Thumb Serialization</g></source>
+<target xml:lang="pt"><g id="1">Rule of Thumb Serialization</g></target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en"><g id="1">Serialisation</g></source>
+<target xml:lang="pt"><g id="1">Serialisation</g></target>
 </trans-unit>
 </body>
 </file>

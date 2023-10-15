@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" xmlns:okp="okapi-framework:xliff-extensions" its:version="2.0" version="1.2">
+<file datatype="x-text/x-markdown" okp:inputEncoding="UTF-8" original="/D:/repos/stride-docs/en/diagnostics/STRDIAG007.md" source-language="en" target-language="pt">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en">Diagnostics Warning STRDIAG007</source>
+<target xml:lang="pt">Diagnostics Warning STRDIAG007</target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en">Invalid <g id="1">[DataMember]</g> Attribute on the member '{0}'. A Delegate is not serializable.</source>
+<target xml:lang="pt">Invalid <g id="1">[DataMember]</g> Attribute on the member '{0}'. A Delegate is not serializable.</target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">Explanation</source>
+<target xml:lang="pt">Explanation</target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">Delegates can't be serialized by the serializers in Stride. Therefore, the @Stride.Core.DataMemberAttribute is always invalid when applied to a delegate member in a type.</source>
+<target xml:lang="pt">Delegates can't be serialized by the serializers in Stride. Therefore, the @Stride.Core.DataMemberAttribute is always invalid when applied to a delegate member in a type.</target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">Example: Invalid Cases</source>
+<target xml:lang="pt">Example: Invalid Cases</target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en">The following example generates STRDIAG007:</source>
+<target xml:lang="pt">The following example generates STRDIAG007:</target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en">using Stride.Core;
+
+public class STRDIAG007
+{
+    [DataMember]
+    public Action SomeDelegate;
+
+    [DataMember]
+    public Action SomeDelegate2 { get; set; }
+}
+</source>
+<target xml:lang="pt">using Stride.Core;
+
+public class STRDIAG007
+{
+    [DataMember]
+    public Action SomeDelegate;
+
+    [DataMember]
+    public Action SomeDelegate2 { get; set; }
+}
+</target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en">Solution</source>
+<target xml:lang="pt">Solution</target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en">To resolve the warning, remove the @Stride.Core.DataMemberAttribute.</source>
+<target xml:lang="pt">To resolve the warning, remove the @Stride.Core.DataMemberAttribute.</target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en">References</source>
+<target xml:lang="pt">References</target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en"><g id="1">Serialisation</g></source>
+<target xml:lang="pt"><g id="1">Serialisation</g></target>
+</trans-unit>
+</body>
+</file>
+</xliff>

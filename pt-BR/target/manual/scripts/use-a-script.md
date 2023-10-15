@@ -1,87 +1,87 @@
-# Use um script
+# Usar um script
 
 <span class="badge text-bg-primary">Introdução</span>
 <span class="badge text-bg-success">Programação</span>
 
-Para usar um script, adicione-o a uma entidade como um componente. Você pode fazer isso no Game Studio ou no código. Stride executa scripts quando a entidade que eles estão ligados a cargas.
+To use a script, add it to an entity as a component. You can do this in Game Studio or in code. Stride runs scripts when the entity they are attached to loads.
 
-Você pode adicionar um único script para quantas entidades precisar. Você também pode adicionar vários scripts a entidades únicas; neste caso, Stride cria várias instâncias do script. Isso significa que o mesmo script pode ter valores diferentes em suas propriedades e campos [public](public-properties-and-fields.md).
+You can add a single script to as many entities as you need. You can also add multiple scripts to single entities; in this case, Stride creates multiple instances of the script. This means the same script can have different values in its [public properties and fields](public-properties-and-fields.md).
 
-## Adicionar um script no Game Studio
+## Add a script in Game Studio
 
-Existem três maneiras de adicionar scripts a entidades no Game Studio:
+There are three ways to add scripts to entities in Game Studio:
 
-* arraste o script da vista de ativos para a **entidade árvore**
-* arraste o script da view de ativos para as propriedades de **entidade**
-* adicionar o script na grade **property**
+* drag the script from the asset view to the **entity tree**
+* drag the script from the asset view to the **entity properties**
+* add the script in the **property grid**
 
-### Arraste para a árvore da entidade
+### Drag to the entity tree
 
-Este método cria automaticamente uma nova entidade que contém o script.
+This method automatically creates a new entity that contains the script.
 
-1. No **solution explorer** (na parte inferior esquerda por padrão), selecione o conjunto que contém seu script. Game Studio mostra seu script no **asset view**.
+1. In the **solution explorer** (in the bottom left by default), select the assembly that contains your script. Game Studio shows your script in the **asset view**.
 
-   ![Scrito na pasta de ativos](../get-started/media/create-a-script-new-script-asset-view.png)
+   ![Script in asset folder](../get-started/media/create-a-script-new-script-asset-view.png)
 
-2. Arraste o script a partir da vista de ativos para a árvore **entity**.
+2. Drag the script from the asset view to the **entity tree**.
 
-Game Studio adiciona uma entidade à sua cena, com o script como um componente na entidade.
+Game Studio adds an entity to your scene, with the script as a component on the entity.
 
-![ Árvore de entrada ](../troubleshooting/media/game-profiler-in-entity-tree.png)
+![Entity tree](../troubleshooting/media/game-profiler-in-entity-tree.png)
 
-### Arraste para a rede da propriedade
+### Drag to the property grid
 
-1. Na árvore **entidade** (à esquerda por padrão), ou na cena, selecione a entidade a que deseja adicionar o script.
+1. In the **entity tree** (on the left by default), or in the scene, select the entity you want to add the script to.
 
-2. No **solution explorer** (na parte inferior esquerda por padrão), selecione o conjunto que contém seu script. Game Studio mostra seu script no **asset view**.
+2. In the **solution explorer** (in the bottom left by default), select the assembly that contains your script. Game Studio shows your script in the **asset view**.
 
-   ![Scrito na pasta de ativos](../get-started/media/create-a-script-new-script-asset-view.png)
+   ![Script in asset folder](../get-started/media/create-a-script-new-script-asset-view.png)
 
-3. Arraste o script do **asset view** para o **property grid**.
+3. Drag the script from the **asset view** to the **property grid**.
 
-   Game Studio adiciona o script à entidade.
+   Game Studio adds the script to the entity.
 
-### Adicione o script na grade da propriedade
+### Add the script in the property grid
 
-1. No editor **scene**, selecione a entidade a que deseja adicionar o script.
+1. No <g id="1">Scene view</g>, selecione a entidade que deseja adicionar o script para:</g>
 
-   ![Selecione uma entidade](media/select-entity.png)
+   ![Selecionar uma entidade](media/select-entity.png)
 
-2. No **property grid** (à direita por padrão), clique em **Add component** e selecione o script que você deseja adicionar.
+2. In the **property grid** (on the right by default), click **Add component** and select the script you want to add.
 
-   ![ Adicionar componente de script](media/add-script-component.png)
+   ![Add script component](media/add-script-component.png)
 
-   Game Studio adiciona o script à entidade.
+   Game Studio adds the script to the entity.
 
 > [!Note]
-> Você pode personalizar onde os scripts aparecem no dropdown usando o `ComponentCategoryAttribute`:
-
-> ```cs
-> [ComponentCategory("Meus scripts de inicialização")]
-> classe pública SampleStartupScript : StartupScript
-> (
->    anula de sobreposição pública Start()
->    (
->        // Faça algumas coisas durante a inicialização
->    }
-> }
-> ```
-
-## Adicionar um script do código
-
-O código abaixo adiciona um script a uma entidade.
+> You can customize where scripts appear in the dropdown using the `ComponentCategoryAttribute`:
 
 ```cs
-// myEntity é uma entidade existente na cena; myAsyncScript é o script que você deseja adicionar à entidade
+[ComponentCategory("My Startup Scripts")]
+public class SampleStartupScript : StartupScript
+{
+    public override void Start()
+    {
+        // Do some stuff during initialization
+    }
+}
+```
+
+## Add a script from code
+
+The code below adds a script to an entity.
+
+```cs
+// myEntity is an existing entity in the scene; myAsyncScript is the script you want to add to the entity
 myEntity.Add(new myAsyncScript());
 ```
 
-## Ver também
+## Veja também
 
 * [Tipos de script](types-of-script.md)
 * [Criar um script](create-a-script.md)
-* [Propriedades e campos públicos](public-properties-and-fields.md)
-* [Programação e prioridades](scheduling-and-priorities.md)
+* [Propriedades públicas e campos](public-properties-and-fields.md)
+* [Agendamento e prioridades](scheduling-and-priorities.md)
 * [Eventos](events.md)
 * [Depuração](debugging.md)
-* [Variáveis de pré-processamento](preprocessor-variables.md)
+* [Variáveis de pré-processador](preprocessor-variables.md)

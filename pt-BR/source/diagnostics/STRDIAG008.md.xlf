@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="/D:/repos/stride-docs/en/diagnostics/STRDIAG008.md" source-language="en" target-language="pt" datatype="x-text/x-markdown" okp:inputEncoding="UTF-8">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en">Diagnostics Warning STRDIAG008</source>
+<target xml:lang="pt">Diagnostics Warning STRDIAG008</target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en">Struct members with the 'fixed' Modifier are not supported as a Serialization target on member '{0}'.</source>
+<target xml:lang="pt">Struct members with the 'fixed' Modifier are not supported as a Serialization target on member '{0}'.</target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">Explanation</source>
+<target xml:lang="pt">Explanation</target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">The Stride serializers can't handle <g id="1">fixed</g> members in structs. The @Stride.Core.DataMemberAttribute is always invalid on such a member.</source>
+<target xml:lang="pt">The Stride serializers can't handle <g id="1">fixed</g> members in structs. The @Stride.Core.DataMemberAttribute is always invalid on such a member.</target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">Example: Invalid Cases</source>
+<target xml:lang="pt">Example: Invalid Cases</target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en">The following example generates STRDIAG008:</source>
+<target xml:lang="pt">The following example generates STRDIAG008:</target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en">using Stride.Core;
+
+public unsafe struct STRDIAG008
+{
+    [DataMember]
+    public fixed byte Value[10];
+}
+</source>
+<target xml:lang="pt">using Stride.Core;
+
+public unsafe struct STRDIAG008
+{
+    [DataMember]
+    public fixed byte Value[10];
+}
+</target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en">Solution</source>
+<target xml:lang="pt">Solution</target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en">To resolve the warning, remove the @Stride.Core.DataMemberAttribute.</source>
+<target xml:lang="pt">To resolve the warning, remove the @Stride.Core.DataMemberAttribute.</target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en">References</source>
+<target xml:lang="pt">References</target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en"><g id="1">Serialisation</g></source>
+<target xml:lang="pt"><g id="1">Serialisation</g></target>
+</trans-unit>
+</body>
+</file>
+</xliff>

@@ -1,0 +1,415 @@
+{
+    "filename": "diagnostics\\STRDIAG004.md.xlf",
+    "files": [
+        {
+            "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG004.md": [
+                [
+                    "Diagnostics Warning STRDIAG004",
+                    "",
+                    "Diagnostics Warning STRDIAG004",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG004.md",
+                    {
+                        "id": "tu1"
+                    }
+                ],
+                [
+                    "The property '{0}' with <g1>[DataMember]<\/g1> does not have a getter which is required for serialization.",
+                    "",
+                    "The property '{0}' with <g1>[DataMember]<\/g1> does not have a getter which is required for serialization.",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG004.md",
+                    {
+                        "id": "tu2"
+                    }
+                ],
+                [
+                    "The property '{0}' with <g1>[DataMember]<\/g1> does not have an accessible getter which is required for serialization.",
+                    "",
+                    "The property '{0}' with <g1>[DataMember]<\/g1> does not have an accessible getter which is required for serialization.",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG004.md",
+                    {
+                        "id": "tu3"
+                    }
+                ],
+                [
+                    "A public\/internal\/internal protected getter is expected.",
+                    "",
+                    " A public\/internal\/internal protected getter is expected.",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG004.md",
+                    {
+                        "id": "tu3"
+                    }
+                ],
+                [
+                    "Explanation",
+                    "",
+                    "Explanation",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG004.md",
+                    {
+                        "id": "tu4"
+                    }
+                ],
+                [
+                    "All serializers need a getter on a property to be able to get the content of the property.",
+                    "",
+                    "All serializers need a getter on a property to be able to get the content of the property.\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG004.md",
+                    {
+                        "id": "tu5"
+                    }
+                ],
+                [
+                    "This is required for all serializers in Stride.",
+                    "",
+                    "This is required for all serializers in Stride.",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG004.md",
+                    {
+                        "id": "tu5"
+                    }
+                ],
+                [
+                    "Non existent getters will result in error message 1.",
+                    "",
+                    "Non existent getters will result in error message 1.",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG004.md",
+                    {
+                        "id": "tu6"
+                    }
+                ],
+                [
+                    "Non visible getters will result in error message 2.",
+                    "",
+                    "Non visible getters will result in error message 2.",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG004.md",
+                    {
+                        "id": "tu7"
+                    }
+                ],
+                [
+                    "Example",
+                    "",
+                    "Example",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG004.md",
+                    {
+                        "id": "tu8"
+                    }
+                ],
+                [
+                    "The following example generates STRDIAG004 on each property:",
+                    "",
+                    "The following example generates STRDIAG004 on each property:",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG004.md",
+                    {
+                        "id": "tu9"
+                    }
+                ],
+                [
+                    "using Stride.Core;",
+                    "",
+                    "using Stride.Core;\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG004.md",
+                    {
+                        "id": "tu10"
+                    }
+                ],
+                [
+                    "public class STRDIAG004",
+                    "",
+                    "\r\npublic class STRDIAG004\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG004.md",
+                    {
+                        "id": "tu10"
+                    }
+                ],
+                [
+                    "{",
+                    "",
+                    "{\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG004.md",
+                    {
+                        "id": "tu10"
+                    }
+                ],
+                [
+                    "\/\/ throws Diagnostics message 1",
+                    "",
+                    "    \/\/ throws Diagnostics message 1\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG004.md",
+                    {
+                        "id": "tu10"
+                    }
+                ],
+                [
+                    "[DataMember]",
+                    "",
+                    "    [DataMember]\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG004.md",
+                    {
+                        "id": "tu10"
+                    }
+                ],
+                [
+                    "public int Value { set;}",
+                    "",
+                    "    public int Value { set;}\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG004.md",
+                    {
+                        "id": "tu10"
+                    }
+                ],
+                [
+                    "\/\/ throws Diagnostics message 2",
+                    "",
+                    "\r\n    \/\/ throws Diagnostics message 2\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG004.md",
+                    {
+                        "id": "tu10"
+                    }
+                ],
+                [
+                    "[DataMember]",
+                    "",
+                    "    [DataMember]\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG004.md",
+                    {
+                        "id": "tu10"
+                    }
+                ],
+                [
+                    "public string Value { private get; set; }",
+                    "",
+                    "    public string Value { private get; set; }\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG004.md",
+                    {
+                        "id": "tu10"
+                    }
+                ],
+                [
+                    "\/\/ throws Diagnostics message 2",
+                    "",
+                    "\r\n    \/\/ throws Diagnostics message 2 \r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG004.md",
+                    {
+                        "id": "tu10"
+                    }
+                ],
+                [
+                    "[DataMember]",
+                    "",
+                    "    [DataMember]\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG004.md",
+                    {
+                        "id": "tu10"
+                    }
+                ],
+                [
+                    "public string Value { protected get; set; }",
+                    "",
+                    "    public string Value { protected get; set; }\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG004.md",
+                    {
+                        "id": "tu10"
+                    }
+                ],
+                [
+                    "}",
+                    "",
+                    "}\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG004.md",
+                    {
+                        "id": "tu10"
+                    }
+                ],
+                [
+                    "<x1\/>!WARNING<x2\/>",
+                    "",
+                    "<x1\/>!WARNING<x2\/>\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG004.md",
+                    {
+                        "id": "tu11"
+                    }
+                ],
+                [
+                    "There is an edge case with <g1>internal<\/g1>\/<g2>internal protected<\/g2>, it will count as non visible when the @Stride.Core.DataMemberAttribute isn't applied.",
+                    "",
+                    "There is an edge case with <g1>internal<\/g1>\/<g2>internal protected<\/g2>, it will count as non visible when the @Stride.Core.DataMemberAttribute isn't applied.\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG004.md",
+                    {
+                        "id": "tu11"
+                    }
+                ],
+                [
+                    "But when the attribute is applied then the getter counts as visible and therefore is correct.",
+                    "",
+                    "But when the attribute is applied then the getter counts as visible and therefore is correct.",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG004.md",
+                    {
+                        "id": "tu11"
+                    }
+                ],
+                [
+                    "\/\/ STRDIAG000.cs",
+                    "",
+                    "\/\/ STRDIAG000.cs\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG004.md",
+                    {
+                        "id": "tu12"
+                    }
+                ],
+                [
+                    "using Stride.Core;",
+                    "",
+                    "using Stride.Core;\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG004.md",
+                    {
+                        "id": "tu12"
+                    }
+                ],
+                [
+                    "public class STRDIAG004",
+                    "",
+                    "\r\npublic class STRDIAG004\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG004.md",
+                    {
+                        "id": "tu12"
+                    }
+                ],
+                [
+                    "{",
+                    "",
+                    "{\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG004.md",
+                    {
+                        "id": "tu12"
+                    }
+                ],
+                [
+                    "\/\/ will throw STRDIAG004",
+                    "",
+                    "    \/\/ will throw STRDIAG004\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG004.md",
+                    {
+                        "id": "tu12"
+                    }
+                ],
+                [
+                    "public int Value { internal get; set; }",
+                    "",
+                    "    public int Value { internal get; set; }\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG004.md",
+                    {
+                        "id": "tu12"
+                    }
+                ],
+                [
+                    "\/\/ will throw STRDIAG004",
+                    "",
+                    "\r\n    \/\/ will throw STRDIAG004\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG004.md",
+                    {
+                        "id": "tu12"
+                    }
+                ],
+                [
+                    "public int Value { internal protected get; set; }",
+                    "",
+                    "    public int Value { internal protected get; set; }\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG004.md",
+                    {
+                        "id": "tu12"
+                    }
+                ],
+                [
+                    "\/\/ won't throw STRDIAG004",
+                    "",
+                    "\r\n    \/\/ won't throw STRDIAG004\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG004.md",
+                    {
+                        "id": "tu12"
+                    }
+                ],
+                [
+                    "[DataMember]",
+                    "",
+                    "    [DataMember]\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG004.md",
+                    {
+                        "id": "tu12"
+                    }
+                ],
+                [
+                    "public string Value { internal get; set; }",
+                    "",
+                    "    public string Value { internal get; set; }\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG004.md",
+                    {
+                        "id": "tu12"
+                    }
+                ],
+                [
+                    "\/\/ won't throw STRDIAG004",
+                    "",
+                    "    \r\n    \/\/ won't throw STRDIAG004\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG004.md",
+                    {
+                        "id": "tu12"
+                    }
+                ],
+                [
+                    "[DataMember]",
+                    "",
+                    "    [DataMember]\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG004.md",
+                    {
+                        "id": "tu12"
+                    }
+                ],
+                [
+                    "public string Value { internal protected get; set; }",
+                    "",
+                    "    public string Value { internal protected get; set; }\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG004.md",
+                    {
+                        "id": "tu12"
+                    }
+                ],
+                [
+                    "}",
+                    "",
+                    "}\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG004.md",
+                    {
+                        "id": "tu12"
+                    }
+                ],
+                [
+                    "Solution",
+                    "",
+                    "Solution",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG004.md",
+                    {
+                        "id": "tu13"
+                    }
+                ],
+                [
+                    "To resolve the warning 1, add a getter to the property with a <g1>public<\/g1>\/<g2>internal<\/g2>\/<g3>internal protected<\/g3> accessibility or remove the @Stride.Core.DataMemberAttribute .",
+                    "",
+                    "To resolve the warning 1, add a getter to the property with a <g1>public<\/g1>\/<g2>internal<\/g2>\/<g3>internal protected<\/g3> accessibility or remove the @Stride.Core.DataMemberAttribute .",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG004.md",
+                    {
+                        "id": "tu14"
+                    }
+                ],
+                [
+                    "To resolve the warning 2, increase the accessibility of the property getter to <g1>public<\/g1>\/<g2>internal<\/g2>\/<g3>internal protected<\/g3> accessibility or remove the @Stride.Core.DataMemberAttribute .",
+                    "",
+                    "To resolve the warning 2, increase the accessibility of the property getter to <g1>public<\/g1>\/<g2>internal<\/g2>\/<g3>internal protected<\/g3> accessibility or remove the @Stride.Core.DataMemberAttribute .",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG004.md",
+                    {
+                        "id": "tu15"
+                    }
+                ]
+            ]
+        }
+    ],
+    "seg_enabled": false
+}

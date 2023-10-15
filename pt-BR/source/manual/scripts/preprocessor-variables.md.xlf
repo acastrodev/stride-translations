@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
-<file original="/D:/repos/rr/source/manual/scripts/preprocessor-variables.md" source-language="en" target-language="pt" datatype="x-text/x-markdown" okp:inputEncoding="UTF-8">
+<file original="/D:/repos/stride-docs/en/manual/scripts/preprocessor-variables.md" source-language="en" target-language="pt" datatype="x-text/x-markdown" okp:inputEncoding="UTF-8">
 <body>
 <trans-unit id="tu1" xml:space="preserve">
 <source xml:lang="en">Preprocessor variables</source>
@@ -147,8 +147,7 @@ We recommend you avoid using preprocessor variables where possible, and instead 
 <target xml:lang="pt">Example</target>
 </trans-unit>
 <trans-unit id="tu36" xml:space="preserve">
-<source xml:lang="en">
-#if STRIDE_PLATFORM_WINDOWS
+<source xml:lang="en">#if STRIDE_PLATFORM_WINDOWS
     // Windows-specific code goes here...
 
 #elif STRIDE_PLATFORM_MONO_MOBILE
@@ -159,8 +158,7 @@ We recommend you avoid using preprocessor variables where possible, and instead 
 
 #endif
 </source>
-<target xml:lang="pt">
-#if STRIDE_PLATFORM_WINDOWS
+<target xml:lang="pt">#if STRIDE_PLATFORM_WINDOWS
     // Windows-specific code goes here...
 
 #elif STRIDE_PLATFORM_MONO_MOBILE

@@ -1,0 +1,199 @@
+{
+    "filename": "diagnostics\\STRDIAG007.md.xlf",
+    "files": [
+        {
+            "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG007.md": [
+                [
+                    "Diagnostics Warning STRDIAG007",
+                    "",
+                    "Diagnostics Warning STRDIAG007",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG007.md",
+                    {
+                        "id": "tu1"
+                    }
+                ],
+                [
+                    "Invalid <g1>[DataMember]<\/g1> Attribute on the member '{0}'.",
+                    "",
+                    "Invalid <g1>[DataMember]<\/g1> Attribute on the member '{0}'.",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG007.md",
+                    {
+                        "id": "tu2"
+                    }
+                ],
+                [
+                    "A Delegate is not serializable.",
+                    "",
+                    " A Delegate is not serializable.",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG007.md",
+                    {
+                        "id": "tu2"
+                    }
+                ],
+                [
+                    "Explanation",
+                    "",
+                    "Explanation",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG007.md",
+                    {
+                        "id": "tu3"
+                    }
+                ],
+                [
+                    "Delegates can't be serialized by the serializers in Stride.",
+                    "",
+                    "Delegates can't be serialized by the serializers in Stride.",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG007.md",
+                    {
+                        "id": "tu4"
+                    }
+                ],
+                [
+                    "Therefore, the @Stride.Core.DataMemberAttribute is always invalid when applied to a delegate member in a type.",
+                    "",
+                    " Therefore, the @Stride.Core.DataMemberAttribute is always invalid when applied to a delegate member in a type.",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG007.md",
+                    {
+                        "id": "tu4"
+                    }
+                ],
+                [
+                    "Example:",
+                    "",
+                    "Example:",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG007.md",
+                    {
+                        "id": "tu5"
+                    }
+                ],
+                [
+                    "Invalid Cases",
+                    "",
+                    " Invalid Cases",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG007.md",
+                    {
+                        "id": "tu5"
+                    }
+                ],
+                [
+                    "The following example generates STRDIAG007:",
+                    "",
+                    "The following example generates STRDIAG007:",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG007.md",
+                    {
+                        "id": "tu6"
+                    }
+                ],
+                [
+                    "using Stride.Core;",
+                    "",
+                    "using Stride.Core;\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG007.md",
+                    {
+                        "id": "tu7"
+                    }
+                ],
+                [
+                    "public class STRDIAG007",
+                    "",
+                    "\r\npublic class STRDIAG007\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG007.md",
+                    {
+                        "id": "tu7"
+                    }
+                ],
+                [
+                    "{",
+                    "",
+                    "{\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG007.md",
+                    {
+                        "id": "tu7"
+                    }
+                ],
+                [
+                    "[DataMember]",
+                    "",
+                    "    [DataMember]\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG007.md",
+                    {
+                        "id": "tu7"
+                    }
+                ],
+                [
+                    "public Action SomeDelegate;",
+                    "",
+                    "    public Action SomeDelegate;\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG007.md",
+                    {
+                        "id": "tu7"
+                    }
+                ],
+                [
+                    "[DataMember]",
+                    "",
+                    "\r\n    [DataMember]\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG007.md",
+                    {
+                        "id": "tu7"
+                    }
+                ],
+                [
+                    "public Action SomeDelegate2 { get; set; }",
+                    "",
+                    "    public Action SomeDelegate2 { get; set; }\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG007.md",
+                    {
+                        "id": "tu7"
+                    }
+                ],
+                [
+                    "}",
+                    "",
+                    "}\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG007.md",
+                    {
+                        "id": "tu7"
+                    }
+                ],
+                [
+                    "Solution",
+                    "",
+                    "Solution",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG007.md",
+                    {
+                        "id": "tu8"
+                    }
+                ],
+                [
+                    "To resolve the warning, remove the @Stride.Core.DataMemberAttribute.",
+                    "",
+                    "To resolve the warning, remove the @Stride.Core.DataMemberAttribute.",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG007.md",
+                    {
+                        "id": "tu9"
+                    }
+                ],
+                [
+                    "References",
+                    "",
+                    "References",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG007.md",
+                    {
+                        "id": "tu10"
+                    }
+                ],
+                [
+                    "Serialisation",
+                    "",
+                    "<g1>Serialisation<\/g1>",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG007.md",
+                    {
+                        "id": "tu11"
+                    }
+                ]
+            ]
+        }
+    ],
+    "seg_enabled": false
+}

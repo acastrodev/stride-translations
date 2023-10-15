@@ -1,0 +1,244 @@
+{
+    "filename": "diagnostics\\STRDIAG009.md.xlf",
+    "files": [
+        {
+            "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG009.md": [
+                [
+                    "Diagnostics Warning STRDIAG009",
+                    "",
+                    "Diagnostics Warning STRDIAG009",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG009.md",
+                    {
+                        "id": "tu1"
+                    }
+                ],
+                [
+                    "The member '{0}' implements IDictionary<T,K> with an unsupported type for the key.",
+                    "",
+                    "The member '{0}' implements IDictionary<T,K> with an unsupported type for the key.",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG009.md",
+                    {
+                        "id": "tu2"
+                    }
+                ],
+                [
+                    "Only primitive types ( like int,float,..",
+                    "",
+                    " Only primitive types ( like int,float,..",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG009.md",
+                    {
+                        "id": "tu2"
+                    }
+                ],
+                [
+                    ") are supported or string or enums as the Dictionary Key in asset serialization.",
+                    "",
+                    " ) are supported or string or enums as the Dictionary Key in asset serialization.",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG009.md",
+                    {
+                        "id": "tu2"
+                    }
+                ],
+                [
+                    "When used in other contexts the warning may not apply and can be suppressed.",
+                    "",
+                    " When used in other contexts the warning may not apply and can be suppressed.",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG009.md",
+                    {
+                        "id": "tu2"
+                    }
+                ],
+                [
+                    "Explanation",
+                    "",
+                    "Explanation",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG009.md",
+                    {
+                        "id": "tu3"
+                    }
+                ],
+                [
+                    "By default, Stride serializers only support primitive types and <g1>string<\/g1> as keys in an <g2>IDictionary<\/g2>.",
+                    "",
+                    "By default, Stride serializers only support primitive types and <g1>string<\/g1> as keys in an <g2>IDictionary<\/g2>.",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG009.md",
+                    {
+                        "id": "tu4"
+                    }
+                ],
+                [
+                    "However, it is possible to extend this support, making the warning not entirely accurate in all cases.",
+                    "",
+                    " However, it is possible to extend this support, making the warning not entirely accurate in all cases.",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG009.md",
+                    {
+                        "id": "tu4"
+                    }
+                ],
+                [
+                    "Example",
+                    "",
+                    "Example",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG009.md",
+                    {
+                        "id": "tu5"
+                    }
+                ],
+                [
+                    "The following example generates STRDIAG009:",
+                    "",
+                    "The following example generates STRDIAG009:",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG009.md",
+                    {
+                        "id": "tu6"
+                    }
+                ],
+                [
+                    "using Stride.Core;",
+                    "",
+                    "using Stride.Core;\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG009.md",
+                    {
+                        "id": "tu7"
+                    }
+                ],
+                [
+                    "public class STRDIAG009",
+                    "",
+                    "\r\npublic class STRDIAG009\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG009.md",
+                    {
+                        "id": "tu7"
+                    }
+                ],
+                [
+                    "{",
+                    "",
+                    "{\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG009.md",
+                    {
+                        "id": "tu7"
+                    }
+                ],
+                [
+                    "[DataMember]",
+                    "",
+                    "    [DataMember]\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG009.md",
+                    {
+                        "id": "tu7"
+                    }
+                ],
+                [
+                    "public Dictionary",
+                    "",
+                    "    public Dictionary<ClassType, AnyType>\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG009.md",
+                    {
+                        "id": "tu7"
+                    }
+                ],
+                [
+                    "[DataMember]",
+                    "",
+                    "\r\n    [DataMember]\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG009.md",
+                    {
+                        "id": "tu7"
+                    }
+                ],
+                [
+                    "public Dictionary",
+                    "",
+                    "    public Dictionary<StructType, AnyType>\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG009.md",
+                    {
+                        "id": "tu7"
+                    }
+                ],
+                [
+                    "[DataMember]",
+                    "",
+                    "\r\n    [DataMember]\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG009.md",
+                    {
+                        "id": "tu7"
+                    }
+                ],
+                [
+                    "public Dictionary",
+                    "",
+                    "    public Dictionary<InterfaceType, AnyType>\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG009.md",
+                    {
+                        "id": "tu7"
+                    }
+                ],
+                [
+                    "}",
+                    "",
+                    "}\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG009.md",
+                    {
+                        "id": "tu7"
+                    }
+                ],
+                [
+                    "Solution",
+                    "",
+                    "Solution",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG009.md",
+                    {
+                        "id": "tu8"
+                    }
+                ],
+                [
+                    "To resolve the warning, remove the @Stride.Core.DataMemberAttribute.",
+                    "",
+                    "To resolve the warning, remove the @Stride.Core.DataMemberAttribute.",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG009.md",
+                    {
+                        "id": "tu9"
+                    }
+                ],
+                [
+                    "Or change the key of the <g1>IDictionary<\/g1> to a supported type.",
+                    "",
+                    " Or change the key of the <g1>IDictionary<\/g1> to a supported type.",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG009.md",
+                    {
+                        "id": "tu9"
+                    }
+                ],
+                [
+                    "Add a pragma Suppression in the IDE if it is a valid type.",
+                    "",
+                    " Add a pragma Suppression in the IDE if it is a valid type.",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG009.md",
+                    {
+                        "id": "tu9"
+                    }
+                ],
+                [
+                    "References",
+                    "",
+                    "References",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG009.md",
+                    {
+                        "id": "tu10"
+                    }
+                ],
+                [
+                    "Serialisation",
+                    "",
+                    "<g1>Serialisation<\/g1>",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG009.md",
+                    {
+                        "id": "tu11"
+                    }
+                ]
+            ]
+        }
+    ],
+    "seg_enabled": false
+}

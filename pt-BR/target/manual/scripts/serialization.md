@@ -1,147 +1,149 @@
-﻿# Serialização
+# Serialização
 
 <span class="badge text-bg-primary">Introdução</span>
 <span class="badge text-bg-success">Programação</span>
 
-O sistema de editor e serialização usa quatro atributos para determinar o que é serializado e visível no editor.
+The editor and serialization system uses four attributes to determine what is serialized and visible in the editor.
 
-### [Contrato de Dados](xref:Stride.Core.DataContractAttribute)
-Adicionando esse atributo ao seu `class` ou `struct` notifica o serializador e o editor que ele deve
-mostrar campos e propriedades desse tipo, e serializar os dados que contém com as cenas ou ativos que podem incluí-lo.
+### DataContractAttribute
+Adding the [`DataContractAttribute`](xref:Stride.Core.DataContractAttribute) to your `class` or `struct` notifies the serializer that it should serialize the data it contains, and the editor that it should display fields and properties of that type, along with the scenes or assets that might include it.
+
 ```cs
 [Stride.Core.DataContract(Inherited = true)]
-classe pública MySerializedClass
-(
-    público flutuar MyValue;
+public class MySerializedClass
+{
+    public float MyValue;
 }
 
-// 'DataContract' é herdado acima. Você não precisa especificá-lo para uma classe derivada.
-classe pública MyDerivedSerialized Classe : Medida de Medição
-(
+// 'DataContract' is inherited above. You don't need to specify it for a derived class.
+public class MyDerivedSerializedClass : MySerializedClass
+{
     public string MyName;
 }
 ```
 
 > [!Note]
-> Seu IDE pode incorretamente adicionar `System.Runtime.Serialization` à sua lista de `usando` ao adicionar `DataContract`.
-> Não são intercambiáveis.
-> Certifique-se de que seu `DataContract` vem de `Stride.Core`, especificando o namespace explicitamente como mostrado acima se necessário.
+> Your IDE may wrongfully add `System.Runtime.Serialization` to your list of `using` when adding `DataContract`.
+> They are not interchangeable.
+> Make sure that your `DataContract` comes from `Stride.Core`, specifying the namespace explicitly like shown above if necessary.
 
-### [DataMemberAttribu](xref:Stride.Core.DataMemberAttribute)
-Isso notifica o editor e serializador que a propriedade ou campo neste [DataContract](#datacontractattribute)'ed
-`class` ou `struct` devem ser serializados.
-Note que você pode omitir este atributo para a maioria dos campos públicos e propriedades, eles serão incluídos por padrão,
-veja [Fields](#fields) e [Properties](#properties) para específicos.
+### DataMemberAttribute
+The [`DataMemberAttribute`](xref:Stride.Core.DataMemberAttribute) notifies the editor and serializer that the property or field on this [`DataContract`](#datacontractattribute)'ed `class` or `struct` should be serialized. Note that you can omit this attribute for most public fields and properties, as they will be included by default. See [Fields](#fields) and [Properties](#properties) for specifics.
+
 ```cs
 [Stride.Core.DataContract]
-classe pública MySerializedClass
-(
+public class MySerializedClass
+{
     [Stride.Core.DataMember]
-    flutuador interno MyValue;
+    internal float MyValue;
 }
 ```
 
-### [Data de publicação](xref:Stride.Core.DataAliasAttribute)
-Pode ser usado para garantir que você não quebrar dados serializados anteriormente sempre que você tiver que mudar como esse membro é nomeado em sua fonte.
+### DataAliasAttribute
+The [`DataAliasAttribute`](xref:Stride.Core.DataAliasAttribute) can be used to ensure you do not break previously serialized data whenever you have to change how that member is named in your source.
+
 ```cs
-[Stride. Core.DataAlias("PreviousNameOfProp")]
+[Stride.Core.DataAlias("PreviousNameOfProp")]
 public string MyRenamedProp { get; set; }
 ```
-> [!Note]
-> Alias remaps valores apenas enquanto no editor; este asset é específico para o sistema de serialização YAML. Alias será ignorado durante construções e em tempo de execução.
 
-### [Data de publicação](xref:Stride.Core.DataMemberIgnoreAttribute)
-Isso notifica o editor e serializador que a propriedade ou campo neste [DataContract](#datacontractattribute)'ed
-`class` ou `struct` deve ***NOT*** ser serializado.
+> [!Note]
+> Alias remaps values only while in the editor; this feature is specific to the YAML serialization system. Alias will be ignored during builds and at runtime.
+
+### DataMemberIgnoreAttribute
+
+The [`DataMemberIgnoreAttribute`](xref:Stride.Core.DataMemberIgnoreAttribute) notifies the editor and serializer that the property or field on this [`DataContract`](#datacontractattribute)'ed `class` or `struct` should ***NOT*** be serialized.
+
+
 ```cs
 [Stride.Core.DataContract]
-classe pública MySerializedClass
-(
+public class MySerializedClass
+{
     [Stride.Core.DataMemberIgnore]
-    public float MyValue { get; set; } // Esta propriedade pública não aparecerá no editor
+    public float MyValue { get; set; } // This public property will NOT show up in the editor
 }
 ```
 
 #### TODO
-- [DataMemberCustomSerializerAtribuído](xref:Stride.Core.DataMemberCustomSerializerAttribute)
-- [Data de inscrição](xref:Stride.Updater.DataMemberUpdatableAttribute)
+- [DataMemberCustomSerializerAttribute](xref:Stride.Core.DataMemberCustomSerializerAttribute)
+- [DataMemberUpdatableAttribute](xref:Stride.Updater.DataMemberUpdatableAttribute)
 
-## Regra de Tumb
-Serialização e acesso e visão do editor de suas propriedades refletem como os modificadores de acesso funcionam em C#;
+## Rule of Thumb
+Serialization and the editor's access and view of your properties mirrors how access modifiers work in C#.
 
-Pense no serializador/editor como sendo uma classe externa para sua base de código, se você quiser que o serializador
-ler e escrever suas propriedades que você tem para garantir que os modificadores de acesso para seu getter e setter
-permite ao serializador acessá-los.
+Think of the serializer/editor as being a class external to your codebase, if you want the serializer to
+read and write your properties you have to ensure that the access modifiers for its getter and setter
+allows the serializer to access them.
 
-Se você está escondendo essa propriedade por trás de um modificador de acesso `internal`, você tem que anotá-la com
-o atributo para garantir que é visível para o serializador.
+If you're hiding that property behind an `internal` access modifier, you have to annotate it with
+the attribute to ensure it is visible to the serializer.
 
 
-## Campos
+## Fields
 
 ```cs
-// Ler e definir no editor por padrão
-objeto público obj;
+// Read and set in the editor by default
+public object obj;
 
-// Ler e definir no editor com atributo
-[DataMember] objeto interno público obj;
+// Read and set in editor with attribute
+[DataMember] public internal object obj;
 
-// Leia apenas campos não podem ser modificados para apontar para outro objeto, mas o objeto definido atualmente pode ser modificado
-público somente objeto obj;
-[DataMember] objeto somente leitura interno obj;
+// Read only fields cannot be modified to point at another object, but the currently set object may be modified
+public readonly object obj;
+[DataMember] internal readonly object obj;
 
-// Nunca
-objeto protegido/privado/protegido obj;
+// Never
+private protected/private/protected object obj;
 ```
 
 
 ## Propriedades
 
 ```cs
-// Ler e definir no editor ...
+// Read and set in the editor ...
 
-// Por padrão
-objeto público obj { get; set; }
-objeto público obj { get => x; set => x = valor; }
+// By default
+public object obj { get; set; }
+public object obj { get => x; set => x = value; }
 
-// Forçado com o atributo para modificadores internos
-[DataMember] objeto público obj { interno get; público/internal set; }
-[DataMember] objeto público obj { interno get => x; conjunto público / interno => x; }
+// Forced with the attribute for 'internal' modifiers
+[DataMember] public object obj { internal get; public/internal set; }
+[DataMember] public object obj { internal get => x; public/internal set => x; }
 
-// Ler apenas
-objeto público obj { get; }
+// Read only
+public object obj { get; }
 
-// Leia apenas para qualquer modificador de acesso não público
-objeto público obj { get; internal/private protected/private/protected set; }
-objeto público obj { get => x; internal/private protected/private/protected set => x = valor; }
+// Read only for any non-public access modifier
+public object obj { get; internal/private protected/private/protected set; }
+public object obj { get => x; internal/private protected/private/protected set => x = value; }
 
-// Leia apenas para propriedades internas devem ser aplicadas através do atributo
-[DataMember] objeto interno obj { get; }
-[DataMember] objeto interno obj { get => x; }
+// Read only for internal properties must be enforced through the attribute
+[DataMember] internal object obj { get; }
+[DataMember] internal object obj { get => x; }
 
-// Leia apenas, caso especial para obter apenas propriedades públicas sem campo de apoio, 
-//Eles devem usar o atributo para ser deserializado, veja o comentário abaixo
-[DataMember] objeto público obj { get => x; }
+// Read only, special case for get-only public properties without backing field, 
+//They must use the attribute to be deserialized, see the comment below
+[DataMember] public object obj { get => x; }
 
-// Leia apenas para modificadores de acesso mais restritiva do que interna, mesmo com o atributo
-[DataMember] objeto público obj { interno get; privado protected/private/protected set; }
-[DataMember] objeto público obj { interno get => x; conjunto protegido / privado / protegido => x; }
+// Read only for access modifiers more restrictive than internal, even with the attribute
+[DataMember] public object obj { internal get; private protected/private/protected set; }
+[DataMember] public object obj { internal get => x; private protected/private/protected set => x; }
 
-// Nunca
-objeto protegido/privado/protegido obj { get; set; }
-objeto protegido/privado/protegido obj { get => x; set => x; }
+// Never
+private protected/private/protected object obj { get; set; }
+private protected/private/protected object obj { get => x; set => x; }
 ```
 
 > [!Note]
-> Propriedades apenas públicas sem campo de apoio (`public object obj { get => x; }`) não são serializadas por padrão como
-> são, mais frequentemente do que não, atalhos para valores de outro objeto ou usados puramente como uma função.
-> Pode fazer mais sentido mudá-lo para `{ get; } = new MyObject();` or `{ get; init; }` se você quiser serializá-lo,
-> e se isso não funcionar para você, sinta-se livre para adicionar o atributo para impor a serialização.
+> Get-only public properties without backing field (`public object obj { get => x; }`) are not serialized by default as
+> they are, more often than not, shortcuts to values of another object or used purely as a function.
+> It might make more sense to change it to `{ get; } = new MyObject();` or `{ get; init; }` if you want to serialize it,
+> and if that doesn't work for you, feel free to add the attribute to enforce serialization.
 
-### E [init](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/init)?
-O modificador de acesso `init` é visto como um `public set` pelo editor e serialização, ele será definido no editor.
+### What about [init](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/init) ?
+The `init` access modifier is seen as a `public set` by the editor and serialization, it will be settable in the editor.
 
 
-## Ver também
+## Veja também
 
-* [Propriedades e campos públicos](public-properties-and-fields.md)
+* [Propriedades públicas e campos](public-properties-and-fields.md)

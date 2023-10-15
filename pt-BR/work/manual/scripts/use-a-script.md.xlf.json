@@ -1,532 +1,583 @@
 {
-  "filename": "manual\\scripts\\use-a-script.md.xlf",
-  "files": [
-    {
-      "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/use-a-script.md": [
-        [
-          "Use a script",
-          "Use um script",
-          "Use a script",
-          "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/use-a-script.md",
-          {
-            "id": "tu1"
-          }
-        ],
-        [
-          "<x1\/>Beginner<x2\/>",
-          "<x1\/>Introdução<x2\/>",
-          "<x1\/>Beginner<x2\/>\r\n",
-          "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/use-a-script.md",
-          {
-            "id": "tu2"
-          }
-        ],
-        [
-          "<x3\/>Programmer<x4\/>",
-          "<x3\/>Programação<x4\/>",
-          "<x3\/>Programmer<x4\/>",
-          "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/use-a-script.md",
-          {
-            "id": "tu2"
-          }
-        ],
-        [
-          "To use a script, add it to an entity as a component.",
-          "Para usar um script, adicione-o a uma entidade como um componente.",
-          "To use a script, add it to an entity as a component.",
-          "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/use-a-script.md",
-          {
-            "id": "tu3"
-          }
-        ],
-        [
-          "You can do this in Game Studio or in code.",
-          "Você pode fazer isso no Game Studio ou no código.",
-          " You can do this in Game Studio or in code.",
-          "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/use-a-script.md",
-          {
-            "id": "tu3"
-          }
-        ],
-        [
-          "Stride runs scripts when the entity they are attached to loads.",
-          "Stride executa scripts quando a entidade que eles estão ligados a cargas.",
-          " Stride runs scripts when the entity they are attached to loads.",
-          "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/use-a-script.md",
-          {
-            "id": "tu3"
-          }
-        ],
-        [
-          "You can add a single script to as many entities as you need.",
-          "Você pode adicionar um único script para quantas entidades precisar.",
-          "You can add a single script to as many entities as you need.",
-          "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/use-a-script.md",
-          {
-            "id": "tu4"
-          }
-        ],
-        [
-          "You can also add multiple scripts to single entities; in this case, Stride creates multiple instances of the script.",
-          "Você também pode adicionar vários scripts a entidades únicas; neste caso, Stride cria várias instâncias do script.",
-          " You can also add multiple scripts to single entities; in this case, Stride creates multiple instances of the script.",
-          "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/use-a-script.md",
-          {
-            "id": "tu4"
-          }
-        ],
-        [
-          "This means the same script can have different values in its <g1>public properties and fields<\/g1>.",
-          "Isso significa que o mesmo script pode ter valores diferentes em suas propriedades e campos <g1>public<\/g1>.",
-          " This means the same script can have different values in its <g1>public properties and fields<\/g1>.",
-          "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/use-a-script.md",
-          {
-            "id": "tu4"
-          }
-        ],
-        [
-          "Add a script in Game Studio",
-          "Adicionar um script no Game Studio",
-          "Add a script in Game Studio",
-          "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/use-a-script.md",
-          {
-            "id": "tu5"
-          }
-        ],
-        [
-          "There are three ways to add scripts to entities in Game Studio:",
-          "Existem três maneiras de adicionar scripts a entidades no Game Studio:",
-          "There are three ways to add scripts to entities in Game Studio:",
-          "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/use-a-script.md",
-          {
-            "id": "tu6"
-          }
-        ],
-        [
-          "drag the script from the asset view to the <g1>entity tree<\/g1>",
-          "arraste o script da vista de ativos para a <g1>entidade árvore<\/g1>",
-          "drag the script from the asset view to the <g1>entity tree<\/g1>",
-          "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/use-a-script.md",
-          {
-            "id": "tu7"
-          }
-        ],
-        [
-          "drag the script from the asset view to the <g1>entity properties<\/g1>",
-          "arraste o script da view de ativos para as propriedades de <g1>entidade<\/g1>",
-          "drag the script from the asset view to the <g1>entity properties<\/g1>",
-          "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/use-a-script.md",
-          {
-            "id": "tu8"
-          }
-        ],
-        [
-          "add the script in the <g1>property grid<\/g1>",
-          "adicionar o script na grade <g1>property<\/g1>",
-          "add the script in the <g1>property grid<\/g1>",
-          "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/use-a-script.md",
-          {
-            "id": "tu9"
-          }
-        ],
-        [
-          "Drag to the entity tree",
-          "Arraste para a árvore da entidade",
-          "Drag to the entity tree",
-          "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/use-a-script.md",
-          {
-            "id": "tu10"
-          }
-        ],
-        [
-          "This method automatically creates a new entity that contains the script.",
-          "Este método cria automaticamente uma nova entidade que contém o script.",
-          "This method automatically creates a new entity that contains the script.",
-          "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/use-a-script.md",
-          {
-            "id": "tu11"
-          }
-        ],
-        [
-          "In the <g1>solution explorer<\/g1> (in the bottom left by default), select the assembly that contains your script.",
-          "No <g1>solution explorer<\/g1> (na parte inferior esquerda por padrão), selecione o conjunto que contém seu script.",
-          "In the <g1>solution explorer<\/g1> (in the bottom left by default), select the assembly that contains your script.",
-          "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/use-a-script.md",
-          {
-            "id": "tu12"
-          }
-        ],
-        [
-          "Game Studio shows your script in the <g2>asset view<\/g2>.",
-          "Game Studio mostra seu script no <g2>asset view<\/g2>.",
-          " Game Studio shows your script in the <g2>asset view<\/g2>.",
-          "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/use-a-script.md",
-          {
-            "id": "tu12"
-          }
-        ],
-        [
-          "<x1\/>Script in asset folder<x2\/>",
-          "<x1\/>Scrito na pasta de ativos<x2\/>",
-          "<x1\/>Script in asset folder<x2\/>",
-          "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/use-a-script.md",
-          {
-            "id": "tu13"
-          }
-        ],
-        [
-          "Drag the script from the asset view to the <g1>entity tree<\/g1>.",
-          "Arraste o script a partir da vista de ativos para a árvore <g1>entity<\/g1>.",
-          "Drag the script from the asset view to the <g1>entity tree<\/g1>.",
-          "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/use-a-script.md",
-          {
-            "id": "tu14"
-          }
-        ],
-        [
-          "Game Studio adds an entity to your scene, with the script as a component on the entity.",
-          "Game Studio adiciona uma entidade à sua cena, com o script como um componente na entidade.",
-          "Game Studio adds an entity to your scene, with the script as a component on the entity.",
-          "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/use-a-script.md",
-          {
-            "id": "tu15"
-          }
-        ],
-        [
-          "<x1\/>Entity tree<x2\/>",
-          "<x1\/> Árvore de entrada <x2\/>",
-          "<x1\/>Entity tree<x2\/>",
-          "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/use-a-script.md",
-          {
-            "id": "tu16"
-          }
-        ],
-        [
-          "Drag to the property grid",
-          "Arraste para a rede da propriedade",
-          "Drag to the property grid",
-          "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/use-a-script.md",
-          {
-            "id": "tu17"
-          }
-        ],
-        [
-          "In the <g1>entity tree<\/g1> (on the left by default), or in the scene, select the entity you want to add the script to.",
-          "Na árvore <g1>entidade<\/g1> (à esquerda por padrão), ou na cena, selecione a entidade a que deseja adicionar o script.",
-          "In the <g1>entity tree<\/g1> (on the left by default), or in the scene, select the entity you want to add the script to.",
-          "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/use-a-script.md",
-          {
-            "id": "tu18"
-          }
-        ],
-        [
-          "In the <g1>solution explorer<\/g1> (in the bottom left by default), select the assembly that contains your script.",
-          "No <g1>solution explorer<\/g1> (na parte inferior esquerda por padrão), selecione o conjunto que contém seu script.",
-          "In the <g1>solution explorer<\/g1> (in the bottom left by default), select the assembly that contains your script.",
-          "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/use-a-script.md",
-          {
-            "id": "tu19"
-          }
-        ],
-        [
-          "Game Studio shows your script in the <g2>asset view<\/g2>.",
-          "Game Studio mostra seu script no <g2>asset view<\/g2>.",
-          " Game Studio shows your script in the <g2>asset view<\/g2>.",
-          "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/use-a-script.md",
-          {
-            "id": "tu19"
-          }
-        ],
-        [
-          "<x1\/>Script in asset folder<x2\/>",
-          "<x1\/>Scrito na pasta de ativos<x2\/>",
-          "<x1\/>Script in asset folder<x2\/>",
-          "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/use-a-script.md",
-          {
-            "id": "tu20"
-          }
-        ],
-        [
-          "Drag the script from the <g1>asset view<\/g1> to the <g2>property grid<\/g2>.",
-          "Arraste o script do <g1>asset view<\/g1> para o <g2>property grid<\/g2>.",
-          "Drag the script from the <g1>asset view<\/g1> to the <g2>property grid<\/g2>.",
-          "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/use-a-script.md",
-          {
-            "id": "tu21"
-          }
-        ],
-        [
-          "Game Studio adds the script to the entity.",
-          "Game Studio adiciona o script à entidade.",
-          "Game Studio adds the script to the entity.",
-          "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/use-a-script.md",
-          {
-            "id": "tu22"
-          }
-        ],
-        [
-          "Add the script in the property grid",
-          "Adicione o script na grade da propriedade",
-          "Add the script in the property grid",
-          "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/use-a-script.md",
-          {
-            "id": "tu23"
-          }
-        ],
-        [
-          "In the <g1>scene editor<\/g1>, select the entity you want to add the script to.",
-          "No editor <g1>scene<\/g1>, selecione a entidade a que deseja adicionar o script.",
-          "In the <g1>scene editor<\/g1>, select the entity you want to add the script to.",
-          "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/use-a-script.md",
-          {
-            "id": "tu24"
-          }
-        ],
-        [
-          "<x1\/>Select an entity<x2\/>",
-          "<x1\/>Selecione uma entidade<x2\/>",
-          "<x1\/>Select an entity<x2\/>",
-          "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/use-a-script.md",
-          {
-            "id": "tu25"
-          }
-        ],
-        [
-          "In the <g1>property grid<\/g1> (on the right by default), click <g2>Add component<\/g2> and select the script you want to add.",
-          "No <g1>property grid<\/g1> (à direita por padrão), clique em <g2>Add component<\/g2> e selecione o script que você deseja adicionar.",
-          "In the <g1>property grid<\/g1> (on the right by default), click <g2>Add component<\/g2> and select the script you want to add.",
-          "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/use-a-script.md",
-          {
-            "id": "tu26"
-          }
-        ],
-        [
-          "<x1\/>Add script component<x2\/>",
-          "<x1\/> Adicionar componente de script<x2\/>",
-          "<x1\/>Add script component<x2\/>",
-          "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/use-a-script.md",
-          {
-            "id": "tu27"
-          }
-        ],
-        [
-          "Game Studio adds the script to the entity.",
-          "Game Studio adiciona o script à entidade.",
-          "Game Studio adds the script to the entity.",
-          "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/use-a-script.md",
-          {
-            "id": "tu28"
-          }
-        ],
-        [
-          "<x1\/>!Note<x2\/>",
-          "<x1\/>!Note<x2\/>",
-          "<x1\/>!Note<x2\/>\r\n",
-          "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/use-a-script.md",
-          {
-            "id": "tu29"
-          }
-        ],
-        [
-          "You can customize where scripts appear in the dropdown using the <g1>ComponentCategoryAttribute<\/g1>:",
-          "Você pode personalizar onde os scripts aparecem no dropdown usando o <g1>ComponentCategoryAttribute<\/g1>:",
-          "You can customize where scripts appear in the dropdown using the <g1>ComponentCategoryAttribute<\/g1>:",
-          "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/use-a-script.md",
-          {
-            "id": "tu29"
-          }
-        ],
-        [
-          "[ComponentCategory(\"My Startup Scripts\")]",
-          "[ComponentCategory(\"Meus scripts de inicialização\")]",
-          "[ComponentCategory(\"My Startup Scripts\")]\r\n",
-          "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/use-a-script.md",
-          {
-            "id": "tu30"
-          }
-        ],
-        [
-          "public class SampleStartupScript :",
-          "classe pública SampleStartupScript :",
-          "public class SampleStartupScript :",
-          "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/use-a-script.md",
-          {
-            "id": "tu30"
-          }
-        ],
-        [
-          "StartupScript",
-          "StartupScript",
-          " StartupScript\r\n",
-          "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/use-a-script.md",
-          {
-            "id": "tu30"
-          }
-        ],
-        [
-          "{",
-          "(",
-          "{\r\n",
-          "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/use-a-script.md",
-          {
-            "id": "tu30"
-          }
-        ],
-        [
-          "public override void Start()",
-          "anula de sobreposição pública Start()",
-          "   public override void Start()\r\n",
-          "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/use-a-script.md",
-          {
-            "id": "tu30"
-          }
-        ],
-        [
-          "{",
-          "(",
-          "   {\r\n",
-          "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/use-a-script.md",
-          {
-            "id": "tu30"
-          }
-        ],
-        [
-          "\/\/ Do some stuff during initialization",
-          "\/\/ Faça algumas coisas durante a inicialização",
-          "       \/\/ Do some stuff during initialization\r\n",
-          "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/use-a-script.md",
-          {
-            "id": "tu30"
-          }
-        ],
-        [
-          "}",
-          "",
-          "   }\r\n",
-          "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/use-a-script.md",
-          {
-            "id": "tu30"
-          }
-        ],
-        [
-          "}",
-          "",
-          "}\r\n",
-          "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/use-a-script.md",
-          {
-            "id": "tu30"
-          }
-        ],
-        [
-          "Add a script from code",
-          "Adicionar um script do código",
-          "Add a script from code",
-          "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/use-a-script.md",
-          {
-            "id": "tu31"
-          }
-        ],
-        [
-          "The code below adds a script to an entity.",
-          "O código abaixo adiciona um script a uma entidade.",
-          "The code below adds a script to an entity.",
-          "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/use-a-script.md",
-          {
-            "id": "tu32"
-          }
-        ],
-        [
-          "\/\/ myEntity is an existing entity in the scene; myAsyncScript is the script you want to add to the entity",
-          "\/\/ myEntity é uma entidade existente na cena; myAsyncScript é o script que você deseja adicionar à entidade",
-          "\/\/ myEntity is an existing entity in the scene; myAsyncScript is the script you want to add to the entity\r\n",
-          "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/use-a-script.md",
-          {
-            "id": "tu33"
-          }
-        ],
-        [
-          "myEntity.Add(new myAsyncScript());",
-          "myEntity.Add(new myAsyncScript());",
-          "myEntity.Add(new myAsyncScript());\r\n",
-          "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/use-a-script.md",
-          {
-            "id": "tu33"
-          }
-        ],
-        [
-          "See also",
-          "Ver também",
-          "See also",
-          "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/use-a-script.md",
-          {
-            "id": "tu34"
-          }
-        ],
-        [
-          "Types of script",
-          "Tipos de script",
-          "<g1>Types of script<\/g1>",
-          "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/use-a-script.md",
-          {
-            "id": "tu35"
-          }
-        ],
-        [
-          "Create a script",
-          "Criar um script",
-          "<g1>Create a script<\/g1>",
-          "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/use-a-script.md",
-          {
-            "id": "tu36"
-          }
-        ],
-        [
-          "Public properties and fields",
-          "Propriedades e campos públicos",
-          "<g1>Public properties and fields<\/g1>",
-          "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/use-a-script.md",
-          {
-            "id": "tu37"
-          }
-        ],
-        [
-          "Scheduling and priorities",
-          "Programação e prioridades",
-          "<g1>Scheduling and priorities<\/g1>",
-          "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/use-a-script.md",
-          {
-            "id": "tu38"
-          }
-        ],
-        [
-          "Events",
-          "Eventos",
-          "<g1>Events<\/g1>",
-          "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/use-a-script.md",
-          {
-            "id": "tu39"
-          }
-        ],
-        [
-          "Debugging",
-          "Depuração",
-          "<g1>Debugging<\/g1>",
-          "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/use-a-script.md",
-          {
-            "id": "tu40"
-          }
-        ],
-        [
-          "Preprocessor variables",
-          "Variáveis de pré-processamento",
-          "<g1>Preprocessor variables<\/g1>",
-          "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/use-a-script.md",
-          {
-            "id": "tu41"
-          }
-        ]
-      ]
-    }
-  ],
-  "seg_enabled": false
+    "filename": "manual\\scripts\\use-a-script.md.xlf",
+    "files": [
+        {
+            "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/use-a-script.md": [
+                [
+                    "Use a script",
+                    "Usar um script",
+                    "Use a script",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/use-a-script.md",
+                    {
+                        "note": "",
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1696724874194,
+                        "id": "tu1"
+                    }
+                ],
+                [
+                    "<x1\/>Beginner<x2\/>",
+                    "<x1\/>Introdução<x2\/>",
+                    "<x1\/>Beginner<x2\/>\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/use-a-script.md",
+                    {
+                        "note": "",
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697126303776,
+                        "id": "tu2"
+                    }
+                ],
+                [
+                    "<x3\/>Programmer<x4\/>",
+                    "<x3\/>Programação<x4\/>",
+                    "<x3\/>Programmer<x4\/>",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/use-a-script.md",
+                    {
+                        "note": "",
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1696775045043,
+                        "id": "tu2"
+                    }
+                ],
+                [
+                    "To use a script, add it to an entity as a component.",
+                    "",
+                    "To use a script, add it to an entity as a component.",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/use-a-script.md",
+                    {
+                        "id": "tu3"
+                    }
+                ],
+                [
+                    "You can do this in Game Studio or in code.",
+                    "",
+                    " You can do this in Game Studio or in code.",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/use-a-script.md",
+                    {
+                        "id": "tu3"
+                    }
+                ],
+                [
+                    "Stride runs scripts when the entity they are attached to loads.",
+                    "",
+                    " Stride runs scripts when the entity they are attached to loads.",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/use-a-script.md",
+                    {
+                        "id": "tu3"
+                    }
+                ],
+                [
+                    "You can add a single script to as many entities as you need.",
+                    "",
+                    "You can add a single script to as many entities as you need.",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/use-a-script.md",
+                    {
+                        "id": "tu4"
+                    }
+                ],
+                [
+                    "You can also add multiple scripts to single entities; in this case, Stride creates multiple instances of the script.",
+                    "",
+                    " You can also add multiple scripts to single entities; in this case, Stride creates multiple instances of the script.",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/use-a-script.md",
+                    {
+                        "id": "tu4"
+                    }
+                ],
+                [
+                    "This means the same script can have different values in its <g1>public properties and fields<\/g1>.",
+                    "",
+                    " This means the same script can have different values in its <g1>public properties and fields<\/g1>.",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/use-a-script.md",
+                    {
+                        "id": "tu4"
+                    }
+                ],
+                [
+                    "Add a script in Game Studio",
+                    "",
+                    "Add a script in Game Studio",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/use-a-script.md",
+                    {
+                        "id": "tu5"
+                    }
+                ],
+                [
+                    "There are three ways to add scripts to entities in Game Studio:",
+                    "",
+                    "There are three ways to add scripts to entities in Game Studio:",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/use-a-script.md",
+                    {
+                        "id": "tu6"
+                    }
+                ],
+                [
+                    "drag the script from the asset view to the <g1>entity tree<\/g1>",
+                    "",
+                    "drag the script from the asset view to the <g1>entity tree<\/g1>",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/use-a-script.md",
+                    {
+                        "id": "tu7"
+                    }
+                ],
+                [
+                    "drag the script from the asset view to the <g1>entity properties<\/g1>",
+                    "",
+                    "drag the script from the asset view to the <g1>entity properties<\/g1>",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/use-a-script.md",
+                    {
+                        "id": "tu8"
+                    }
+                ],
+                [
+                    "add the script in the <g1>property grid<\/g1>",
+                    "",
+                    "add the script in the <g1>property grid<\/g1>",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/use-a-script.md",
+                    {
+                        "id": "tu9"
+                    }
+                ],
+                [
+                    "Drag to the entity tree",
+                    "",
+                    "Drag to the entity tree",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/use-a-script.md",
+                    {
+                        "id": "tu10"
+                    }
+                ],
+                [
+                    "This method automatically creates a new entity that contains the script.",
+                    "",
+                    "This method automatically creates a new entity that contains the script.",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/use-a-script.md",
+                    {
+                        "id": "tu11"
+                    }
+                ],
+                [
+                    "In the <g1>solution explorer<\/g1> (in the bottom left by default), select the assembly that contains your script.",
+                    "",
+                    "In the <g1>solution explorer<\/g1> (in the bottom left by default), select the assembly that contains your script.",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/use-a-script.md",
+                    {
+                        "id": "tu12"
+                    }
+                ],
+                [
+                    "Game Studio shows your script in the <g2>asset view<\/g2>.",
+                    "",
+                    " Game Studio shows your script in the <g2>asset view<\/g2>.",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/use-a-script.md",
+                    {
+                        "id": "tu12"
+                    }
+                ],
+                [
+                    "<x1\/>Script in asset folder<x2\/>",
+                    "",
+                    "<x1\/>Script in asset folder<x2\/>",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/use-a-script.md",
+                    {
+                        "id": "tu13"
+                    }
+                ],
+                [
+                    "Drag the script from the asset view to the <g1>entity tree<\/g1>.",
+                    "",
+                    "Drag the script from the asset view to the <g1>entity tree<\/g1>.",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/use-a-script.md",
+                    {
+                        "id": "tu14"
+                    }
+                ],
+                [
+                    "Game Studio adds an entity to your scene, with the script as a component on the entity.",
+                    "",
+                    "Game Studio adds an entity to your scene, with the script as a component on the entity.",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/use-a-script.md",
+                    {
+                        "id": "tu15"
+                    }
+                ],
+                [
+                    "<x1\/>Entity tree<x2\/>",
+                    "",
+                    "<x1\/>Entity tree<x2\/>",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/use-a-script.md",
+                    {
+                        "id": "tu16"
+                    }
+                ],
+                [
+                    "Drag to the property grid",
+                    "",
+                    "Drag to the property grid",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/use-a-script.md",
+                    {
+                        "id": "tu17"
+                    }
+                ],
+                [
+                    "In the <g1>entity tree<\/g1> (on the left by default), or in the scene, select the entity you want to add the script to.",
+                    "",
+                    "In the <g1>entity tree<\/g1> (on the left by default), or in the scene, select the entity you want to add the script to.",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/use-a-script.md",
+                    {
+                        "id": "tu18"
+                    }
+                ],
+                [
+                    "In the <g1>solution explorer<\/g1> (in the bottom left by default), select the assembly that contains your script.",
+                    "",
+                    "In the <g1>solution explorer<\/g1> (in the bottom left by default), select the assembly that contains your script.",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/use-a-script.md",
+                    {
+                        "id": "tu19"
+                    }
+                ],
+                [
+                    "Game Studio shows your script in the <g2>asset view<\/g2>.",
+                    "",
+                    " Game Studio shows your script in the <g2>asset view<\/g2>.",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/use-a-script.md",
+                    {
+                        "id": "tu19"
+                    }
+                ],
+                [
+                    "<x1\/>Script in asset folder<x2\/>",
+                    "",
+                    "<x1\/>Script in asset folder<x2\/>",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/use-a-script.md",
+                    {
+                        "id": "tu20"
+                    }
+                ],
+                [
+                    "Drag the script from the <g1>asset view<\/g1> to the <g2>property grid<\/g2>.",
+                    "",
+                    "Drag the script from the <g1>asset view<\/g1> to the <g2>property grid<\/g2>.",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/use-a-script.md",
+                    {
+                        "id": "tu21"
+                    }
+                ],
+                [
+                    "Game Studio adds the script to the entity.",
+                    "",
+                    "Game Studio adds the script to the entity.",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/use-a-script.md",
+                    {
+                        "id": "tu22"
+                    }
+                ],
+                [
+                    "Add the script in the property grid",
+                    "",
+                    "Add the script in the property grid",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/use-a-script.md",
+                    {
+                        "id": "tu23"
+                    }
+                ],
+                [
+                    "In the <g1>scene editor<\/g1>, select the entity you want to add the script to.",
+                    "No <g1>Scene view<\\\/g1>, selecione a entidade que deseja adicionar o script para:",
+                    "In the <g1>scene editor<\/g1>, select the entity you want to add the script to.",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/use-a-script.md",
+                    {
+                        "note": "",
+                        "creator": "anonymous",
+                        "createdTime": 0,
+                        "id": "tu24"
+                    }
+                ],
+                [
+                    "<x1\/>Select an entity<x2\/>",
+                    "<x1\/>Selecionar uma entidade<x2\/>",
+                    "<x1\/>Select an entity<x2\/>",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/use-a-script.md",
+                    {
+                        "note": "",
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1696965011061,
+                        "id": "tu25"
+                    }
+                ],
+                [
+                    "In the <g1>property grid<\/g1> (on the right by default), click <g2>Add component<\/g2> and select the script you want to add.",
+                    "",
+                    "In the <g1>property grid<\/g1> (on the right by default), click <g2>Add component<\/g2> and select the script you want to add.",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/use-a-script.md",
+                    {
+                        "id": "tu26"
+                    }
+                ],
+                [
+                    "<x1\/>Add script component<x2\/>",
+                    "",
+                    "<x1\/>Add script component<x2\/>",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/use-a-script.md",
+                    {
+                        "id": "tu27"
+                    }
+                ],
+                [
+                    "Game Studio adds the script to the entity.",
+                    "",
+                    "Game Studio adds the script to the entity.",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/use-a-script.md",
+                    {
+                        "id": "tu28"
+                    }
+                ],
+                [
+                    "<x1\/>!Note<x2\/>",
+                    "<x1\/>!Note<x2\/>",
+                    "<x1\/>!Note<x2\/>\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/use-a-script.md",
+                    {
+                        "note": "",
+                        "creator": "alexa",
+                        "createdTime": 1696698008305,
+                        "id": "tu29"
+                    }
+                ],
+                [
+                    "You can customize where scripts appear in the dropdown using the <g1>ComponentCategoryAttribute<\/g1>:",
+                    "",
+                    "You can customize where scripts appear in the dropdown using the <g1>ComponentCategoryAttribute<\/g1>:",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/use-a-script.md",
+                    {
+                        "id": "tu29"
+                    }
+                ],
+                [
+                    "[ComponentCategory(\"My Startup Scripts\")]",
+                    "",
+                    "[ComponentCategory(\"My Startup Scripts\")]\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/use-a-script.md",
+                    {
+                        "id": "tu30"
+                    }
+                ],
+                [
+                    "public class SampleStartupScript :",
+                    "",
+                    "public class SampleStartupScript :",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/use-a-script.md",
+                    {
+                        "id": "tu30"
+                    }
+                ],
+                [
+                    "StartupScript",
+                    "",
+                    " StartupScript\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/use-a-script.md",
+                    {
+                        "id": "tu30"
+                    }
+                ],
+                [
+                    "{",
+                    "{",
+                    "{\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/use-a-script.md",
+                    {
+                        "note": "",
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697368755329,
+                        "id": "tu30"
+                    }
+                ],
+                [
+                    "public override void Start()",
+                    "public override void Start()",
+                    "    public override void Start()\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/use-a-script.md",
+                    {
+                        "note": "",
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697368763032,
+                        "id": "tu30"
+                    }
+                ],
+                [
+                    "{",
+                    "{",
+                    "    {\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/use-a-script.md",
+                    {
+                        "note": "",
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697368757641,
+                        "id": "tu30"
+                    }
+                ],
+                [
+                    "\/\/ Do some stuff during initialization",
+                    "",
+                    "        \/\/ Do some stuff during initialization\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/use-a-script.md",
+                    {
+                        "id": "tu30"
+                    }
+                ],
+                [
+                    "}",
+                    "",
+                    "    }\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/use-a-script.md",
+                    {
+                        "id": "tu30"
+                    }
+                ],
+                [
+                    "}",
+                    "",
+                    "}\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/use-a-script.md",
+                    {
+                        "id": "tu30"
+                    }
+                ],
+                [
+                    "Add a script from code",
+                    "",
+                    "Add a script from code",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/use-a-script.md",
+                    {
+                        "id": "tu31"
+                    }
+                ],
+                [
+                    "The code below adds a script to an entity.",
+                    "",
+                    "The code below adds a script to an entity.",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/use-a-script.md",
+                    {
+                        "id": "tu32"
+                    }
+                ],
+                [
+                    "\/\/ myEntity is an existing entity in the scene; myAsyncScript is the script you want to add to the entity",
+                    "",
+                    "\/\/ myEntity is an existing entity in the scene; myAsyncScript is the script you want to add to the entity\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/use-a-script.md",
+                    {
+                        "id": "tu33"
+                    }
+                ],
+                [
+                    "myEntity.Add(new myAsyncScript());",
+                    "",
+                    "myEntity.Add(new myAsyncScript());\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/use-a-script.md",
+                    {
+                        "id": "tu33"
+                    }
+                ],
+                [
+                    "See also",
+                    "Veja também",
+                    "See also",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/use-a-script.md",
+                    {
+                        "note": "",
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1696709237833,
+                        "id": "tu34"
+                    }
+                ],
+                [
+                    "Types of script",
+                    "Tipos de script",
+                    "<g1>Types of script<\/g1>",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/use-a-script.md",
+                    {
+                        "note": "",
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1696724854962,
+                        "id": "tu35"
+                    }
+                ],
+                [
+                    "Create a script",
+                    "Criar um script",
+                    "<g1>Create a script<\/g1>",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/use-a-script.md",
+                    {
+                        "note": "",
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1696724865307,
+                        "id": "tu36"
+                    }
+                ],
+                [
+                    "Public properties and fields",
+                    "Propriedades públicas e campos",
+                    "<g1>Public properties and fields<\/g1>",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/use-a-script.md",
+                    {
+                        "note": "",
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1696724907682,
+                        "id": "tu37"
+                    }
+                ],
+                [
+                    "Scheduling and priorities",
+                    "Agendamento e prioridades",
+                    "<g1>Scheduling and priorities<\/g1>",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/use-a-script.md",
+                    {
+                        "note": "",
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1696724971450,
+                        "id": "tu38"
+                    }
+                ],
+                [
+                    "Events",
+                    "Eventos",
+                    "<g1>Events<\/g1>",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/use-a-script.md",
+                    {
+                        "note": "",
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1696724974474,
+                        "id": "tu39"
+                    }
+                ],
+                [
+                    "Debugging",
+                    "Depuração",
+                    "<g1>Debugging<\/g1>",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/use-a-script.md",
+                    {
+                        "note": "",
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1696724996114,
+                        "id": "tu40"
+                    }
+                ],
+                [
+                    "Preprocessor variables",
+                    "Variáveis de pré-processador",
+                    "<g1>Preprocessor variables<\/g1>",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/scripts\/use-a-script.md",
+                    {
+                        "note": "",
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1696725058594,
+                        "id": "tu41"
+                    }
+                ]
+            ]
+        }
+    ],
+    "seg_enabled": false
 }

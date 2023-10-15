@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" xmlns:okp="okapi-framework:xliff-extensions" its:version="2.0" version="1.2">
+<file datatype="x-text/x-markdown" okp:inputEncoding="UTF-8" original="/D:/repos/stride-docs/en/diagnostics/STRDIAG003.md" source-language="en" target-language="pt">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en">Diagnostics Warning STRDIAG003</source>
+<target xml:lang="pt">Diagnostics Warning STRDIAG003</target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en">The member '{0}' with <g id="1">[DataMember]</g> is not accessible to the serializer. Only public/internal/internal &gt; protected visibility is supported, when the <g id="2">[DataMember]</g> attribute is applied.</source>
+<target xml:lang="pt">The member '{0}' with <g id="1">[DataMember]</g> is not accessible to the serializer. Only public/internal/internal &gt; protected visibility is supported, when the <g id="2">[DataMember]</g> attribute is applied.</target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">Explanation</source>
+<target xml:lang="pt">Explanation</target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">The serialization concept in Stride expects <g id="1">public</g>/<g id="2">internal</g>/<g id="3">internal protected</g> visibility of properties. Other accessibility won't be considered for serialization.
+To count <g id="4">internal</g>/<g id="5">internal protected</g> as visible to the Editor the @Stride.Core.DataMemberAttribute has to be applied, else it's considered as not visible.</source>
+<target xml:lang="pt">The serialization concept in Stride expects <g id="1">public</g>/<g id="2">internal</g>/<g id="3">internal protected</g> visibility of properties. Other accessibility won't be considered for serialization.
+To count <g id="4">internal</g>/<g id="5">internal protected</g> as visible to the Editor the @Stride.Core.DataMemberAttribute has to be applied, else it's considered as not visible.</target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">Example</source>
+<target xml:lang="pt">Example</target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en">The following example generates STRDIAG003 on each property:</source>
+<target xml:lang="pt">The following example generates STRDIAG003 on each property:</target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en">using Stride.Core;
+
+public class STRDIAG003
+{
+    [DataMember]
+    private int Value { get; set; }
+
+    [DataMember]
+    protected string Value;
+    
+    [DataMember]
+    private protected string Value;
+}
+</source>
+<target xml:lang="pt">using Stride.Core;
+
+public class STRDIAG003
+{
+    [DataMember]
+    private int Value { get; set; }
+
+    [DataMember]
+    protected string Value;
+    
+    [DataMember]
+    private protected string Value;
+}
+</target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en">Solution</source>
+<target xml:lang="pt">Solution</target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en">To resolve the warning, increase the Accessibility to <g id="1">public</g>/<g id="2">internal</g>/<g id="3">internal protected</g> of the member or remove the @Stride.Core.DataMemberAttribute Attribute.</source>
+<target xml:lang="pt">To resolve the warning, increase the Accessibility to <g id="1">public</g>/<g id="2">internal</g>/<g id="3">internal protected</g> of the member or remove the @Stride.Core.DataMemberAttribute Attribute.</target>
+</trans-unit>
+</body>
+</file>
+</xliff>

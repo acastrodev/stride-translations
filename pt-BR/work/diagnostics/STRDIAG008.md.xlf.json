@@ -1,0 +1,172 @@
+{
+    "filename": "diagnostics\\STRDIAG008.md.xlf",
+    "files": [
+        {
+            "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG008.md": [
+                [
+                    "Diagnostics Warning STRDIAG008",
+                    "",
+                    "Diagnostics Warning STRDIAG008",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG008.md",
+                    {
+                        "id": "tu1"
+                    }
+                ],
+                [
+                    "Struct members with the 'fixed' Modifier are not supported as a Serialization target on member '{0}'.",
+                    "",
+                    "Struct members with the 'fixed' Modifier are not supported as a Serialization target on member '{0}'.",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG008.md",
+                    {
+                        "id": "tu2"
+                    }
+                ],
+                [
+                    "Explanation",
+                    "",
+                    "Explanation",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG008.md",
+                    {
+                        "id": "tu3"
+                    }
+                ],
+                [
+                    "The Stride serializers can't handle <g1>fixed<\/g1> members in structs.",
+                    "",
+                    "The Stride serializers can't handle <g1>fixed<\/g1> members in structs.",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG008.md",
+                    {
+                        "id": "tu4"
+                    }
+                ],
+                [
+                    "The @Stride.Core.DataMemberAttribute is always invalid on such a member.",
+                    "",
+                    " The @Stride.Core.DataMemberAttribute is always invalid on such a member.",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG008.md",
+                    {
+                        "id": "tu4"
+                    }
+                ],
+                [
+                    "Example:",
+                    "",
+                    "Example:",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG008.md",
+                    {
+                        "id": "tu5"
+                    }
+                ],
+                [
+                    "Invalid Cases",
+                    "",
+                    " Invalid Cases",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG008.md",
+                    {
+                        "id": "tu5"
+                    }
+                ],
+                [
+                    "The following example generates STRDIAG008:",
+                    "",
+                    "The following example generates STRDIAG008:",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG008.md",
+                    {
+                        "id": "tu6"
+                    }
+                ],
+                [
+                    "using Stride.Core;",
+                    "",
+                    "using Stride.Core;\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG008.md",
+                    {
+                        "id": "tu7"
+                    }
+                ],
+                [
+                    "public unsafe struct STRDIAG008",
+                    "",
+                    "\r\npublic unsafe struct STRDIAG008\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG008.md",
+                    {
+                        "id": "tu7"
+                    }
+                ],
+                [
+                    "{",
+                    "",
+                    "{\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG008.md",
+                    {
+                        "id": "tu7"
+                    }
+                ],
+                [
+                    "[DataMember]",
+                    "",
+                    "    [DataMember]\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG008.md",
+                    {
+                        "id": "tu7"
+                    }
+                ],
+                [
+                    "public fixed byte Value[10];",
+                    "",
+                    "    public fixed byte Value[10];\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG008.md",
+                    {
+                        "id": "tu7"
+                    }
+                ],
+                [
+                    "}",
+                    "",
+                    "}\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG008.md",
+                    {
+                        "id": "tu7"
+                    }
+                ],
+                [
+                    "Solution",
+                    "",
+                    "Solution",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG008.md",
+                    {
+                        "id": "tu8"
+                    }
+                ],
+                [
+                    "To resolve the warning, remove the @Stride.Core.DataMemberAttribute.",
+                    "",
+                    "To resolve the warning, remove the @Stride.Core.DataMemberAttribute.",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG008.md",
+                    {
+                        "id": "tu9"
+                    }
+                ],
+                [
+                    "References",
+                    "",
+                    "References",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG008.md",
+                    {
+                        "id": "tu10"
+                    }
+                ],
+                [
+                    "Serialisation",
+                    "",
+                    "<g1>Serialisation<\/g1>",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG008.md",
+                    {
+                        "id": "tu11"
+                    }
+                ]
+            ]
+        }
+    ],
+    "seg_enabled": false
+}

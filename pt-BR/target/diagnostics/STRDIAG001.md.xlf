@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" xmlns:okp="okapi-framework:xliff-extensions" its:version="2.0" version="1.2">
+<file datatype="x-text/x-markdown" okp:inputEncoding="UTF-8" original="/D:/repos/stride-docs/en/diagnostics/STRDIAG001.md" source-language="en" target-language="pt">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en">Diagnostics Warning STRDIAG001</source>
+<target xml:lang="pt">Diagnostics Warning STRDIAG001</target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en">The <g id="1">[DataContract]</g> is not valid for the type '{0}'. Expected is a public/internal Accessor.</source>
+<target xml:lang="pt">The <g id="1">[DataContract]</g> is not valid for the type '{0}'. Expected is a public/internal Accessor.</target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">Explanation</source>
+<target xml:lang="pt">Explanation</target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">The @Stride.Core.DataContractAttribute can only be applied to <g id="1">public</g>/<g id="2">internal</g> type. Any lower access will cause STRDIAG001 on the target type.</source>
+<target xml:lang="pt">The @Stride.Core.DataContractAttribute can only be applied to <g id="1">public</g>/<g id="2">internal</g> type. Any lower access will cause STRDIAG001 on the target type.</target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">Example: private inner class</source>
+<target xml:lang="pt">Example: private inner class</target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en">The following example generates STRDIAG001:</source>
+<target xml:lang="pt">The following example generates STRDIAG001:</target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en">using Stride.Core;
+
+public class STRDIAG001
+{
+    [DataContract]
+    private class InnerClass { }
+}
+</source>
+<target xml:lang="pt">using Stride.Core;
+
+public class STRDIAG001
+{
+    [DataContract]
+    private class InnerClass { }
+}
+</target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en">Example: file scoped class</source>
+<target xml:lang="pt">Example: file scoped class</target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en">using Stride.Core;
+
+[DataContract]
+file class STRDIAG001
+{
+}
+</source>
+<target xml:lang="pt">using Stride.Core;
+
+[DataContract]
+file class STRDIAG001
+{
+}
+</target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en">Solution</source>
+<target xml:lang="pt">Solution</target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en">To resolve the warning, increase the accessibility of the type to <g id="1">public</g>/<g id="2">internal</g> or remove the @Stride.Core.DataContractAttribute.</source>
+<target xml:lang="pt">To resolve the warning, increase the accessibility of the type to <g id="1">public</g>/<g id="2">internal</g> or remove the @Stride.Core.DataContractAttribute.</target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en">References</source>
+<target xml:lang="pt">References</target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en"><g id="1">Serialisation</g></source>
+<target xml:lang="pt"><g id="1">Serialisation</g></target>
+</trans-unit>
+</body>
+</file>
+</xliff>

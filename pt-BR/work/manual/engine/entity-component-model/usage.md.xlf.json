@@ -1,0 +1,766 @@
+{
+    "filename": "manual\\engine\\entity-component-model\\usage.md.xlf",
+    "files": [
+        {
+            "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/usage.md": [
+                [
+                    "ECS Usage",
+                    "",
+                    "ECS Usage",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/usage.md",
+                    {
+                        "id": "tu1"
+                    }
+                ],
+                [
+                    "Classes",
+                    "",
+                    "Classes",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/usage.md",
+                    {
+                        "id": "tu2"
+                    }
+                ],
+                [
+                    "The three parts of \"Entity Component System\" map to the following classes:",
+                    "",
+                    "The three parts of \"Entity Component System\" map to the following classes:",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/usage.md",
+                    {
+                        "id": "tu3"
+                    }
+                ],
+                [
+                    "Entity - <g1><g2>Stride.Engine.Entity<\/g2><\/g1>",
+                    "",
+                    "Entity - <g1><g2>Stride.Engine.Entity<\/g2><\/g1>",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/usage.md",
+                    {
+                        "id": "tu4"
+                    }
+                ],
+                [
+                    "Component - <g1><g2>Stride.Engine.EntityComponent<\/g2><\/g1>",
+                    "",
+                    "Component - <g1><g2>Stride.Engine.EntityComponent<\/g2><\/g1>",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/usage.md",
+                    {
+                        "id": "tu5"
+                    }
+                ],
+                [
+                    "System - <g1><g2>Stride.Engine.EntityProcessor<\/g2><\/g1>",
+                    "",
+                    "System - <g1><g2>Stride.Engine.EntityProcessor<\/g2><\/g1>",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/usage.md",
+                    {
+                        "id": "tu6"
+                    }
+                ],
+                [
+                    "Minimal Setup",
+                    "",
+                    "Minimal Setup",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/usage.md",
+                    {
+                        "id": "tu7"
+                    }
+                ],
+                [
+                    "A component can be defined by deriving a class from <g1>EntityComponent<\/g1>.",
+                    "",
+                    "A component can be defined by deriving a class from <g1>EntityComponent<\/g1>.",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/usage.md",
+                    {
+                        "id": "tu8"
+                    }
+                ],
+                [
+                    "By adding the attribute <g1>DefaultEntityComponentProcessor<\/g1> to an <g2>EntityComponent<\/g2>,<x1\/>",
+                    "",
+                    "By adding the attribute <g1>DefaultEntityComponentProcessor<\/g1> to an <g2>EntityComponent<\/g2>,<x1\/>\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/usage.md",
+                    {
+                        "id": "tu9"
+                    }
+                ],
+                [
+                    "an <g3>EntityProcessor<\/g3> can be assigned to it.",
+                    "",
+                    "an <g3>EntityProcessor<\/g3> can be assigned to it.",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/usage.md",
+                    {
+                        "id": "tu9"
+                    }
+                ],
+                [
+                    "This will automatically set up and run",
+                    "",
+                    " This will automatically set up and run<x2\/>\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/usage.md",
+                    {
+                        "id": "tu9"
+                    }
+                ],
+                [
+                    "the <g4>EntityProcessor<\/g4> if the <g5>EntityComponent<\/g5> is in the scene.",
+                    "",
+                    "the <g4>EntityProcessor<\/g4> if the <g5>EntityComponent<\/g5> is in the scene.",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/usage.md",
+                    {
+                        "id": "tu9"
+                    }
+                ],
+                [
+                    "An <g1>EntityComponent<\/g1> also needs to indicate that it can be serialized<x1\/>",
+                    "",
+                    "An <g1>EntityComponent<\/g1> also needs to indicate that it can be serialized<x1\/>\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/usage.md",
+                    {
+                        "id": "tu10"
+                    }
+                ],
+                [
+                    "by adding the attribute <g2>DataContract<\/g2> to it.",
+                    "",
+                    "by adding the attribute <g2>DataContract<\/g2> to it.",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/usage.md",
+                    {
+                        "id": "tu10"
+                    }
+                ],
+                [
+                    "A system can be defined by deriving a class from <g1>EntityProcessor<\/g1>.",
+                    "",
+                    "A system can be defined by deriving a class from <g1>EntityProcessor<\/g1>.",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/usage.md",
+                    {
+                        "id": "tu11"
+                    }
+                ],
+                [
+                    "Code",
+                    "",
+                    "Code",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/usage.md",
+                    {
+                        "id": "tu12"
+                    }
+                ],
+                [
+                    "Component",
+                    "",
+                    "Component",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/usage.md",
+                    {
+                        "id": "tu13"
+                    }
+                ],
+                [
+                    "[DataContract(nameof(MyComponent))]",
+                    "",
+                    "[DataContract(nameof(MyComponent))]\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/usage.md",
+                    {
+                        "id": "tu14"
+                    }
+                ],
+                [
+                    "[DefaultEntityComponentProcessor(typeof(MyProcessor))]",
+                    "",
+                    "[DefaultEntityComponentProcessor(typeof(MyProcessor))]\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/usage.md",
+                    {
+                        "id": "tu14"
+                    }
+                ],
+                [
+                    "public class MyComponent :",
+                    "",
+                    "public class MyComponent :",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/usage.md",
+                    {
+                        "id": "tu14"
+                    }
+                ],
+                [
+                    "EntityComponent",
+                    "",
+                    " EntityComponent\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/usage.md",
+                    {
+                        "id": "tu14"
+                    }
+                ],
+                [
+                    "{",
+                    "",
+                    "{\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/usage.md",
+                    {
+                        "id": "tu14"
+                    }
+                ],
+                [
+                    "public int MyValue { get; set; }",
+                    "",
+                    "    public int MyValue { get; set; }\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/usage.md",
+                    {
+                        "id": "tu14"
+                    }
+                ],
+                [
+                    "}",
+                    "",
+                    "}\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/usage.md",
+                    {
+                        "id": "tu14"
+                    }
+                ],
+                [
+                    "System",
+                    "",
+                    "System",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/usage.md",
+                    {
+                        "id": "tu15"
+                    }
+                ],
+                [
+                    "public class MyProcessor :",
+                    "",
+                    "public class MyProcessor :",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/usage.md",
+                    {
+                        "id": "tu16"
+                    }
+                ],
+                [
+                    "EntityProcessor",
+                    "",
+                    " EntityProcessor<MyComponent>\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/usage.md",
+                    {
+                        "id": "tu16"
+                    }
+                ],
+                [
+                    "{",
+                    "",
+                    "{\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/usage.md",
+                    {
+                        "id": "tu16"
+                    }
+                ],
+                [
+                    "public override void Update(GameTime time)",
+                    "",
+                    "    public override void Update(GameTime time)\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/usage.md",
+                    {
+                        "id": "tu16"
+                    }
+                ],
+                [
+                    "{",
+                    "",
+                    "    {\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/usage.md",
+                    {
+                        "id": "tu16"
+                    }
+                ],
+                [
+                    "foreach (var myComponent in ComponentDatas.Values)",
+                    "",
+                    "        foreach (var myComponent in ComponentDatas.Values)\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/usage.md",
+                    {
+                        "id": "tu16"
+                    }
+                ],
+                [
+                    "{",
+                    "",
+                    "        {\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/usage.md",
+                    {
+                        "id": "tu16"
+                    }
+                ],
+                [
+                    "Console.WriteLine($\"myComponent with value {myComponent.MyValue} at {time.Total.TotalSeconds}\");",
+                    "",
+                    "            Console.WriteLine($\"myComponent with value {myComponent.MyValue} at {time.Total.TotalSeconds}\");\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/usage.md",
+                    {
+                        "id": "tu16"
+                    }
+                ],
+                [
+                    "}",
+                    "",
+                    "        }\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/usage.md",
+                    {
+                        "id": "tu16"
+                    }
+                ],
+                [
+                    "}",
+                    "",
+                    "    }\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/usage.md",
+                    {
+                        "id": "tu16"
+                    }
+                ],
+                [
+                    "}",
+                    "",
+                    "}\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/usage.md",
+                    {
+                        "id": "tu16"
+                    }
+                ],
+                [
+                    "Additional Note",
+                    "",
+                    "Additional Note",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/usage.md",
+                    {
+                        "id": "tu17"
+                    }
+                ],
+                [
+                    "An <g1>EntityComponent<\/g1> can currently not be drag-dropped onto an entity in Game Studio.<x1\/>",
+                    "",
+                    "An <g1>EntityComponent<\/g1> can currently not be drag-dropped onto an entity in Game Studio.<x1\/>\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/usage.md",
+                    {
+                        "id": "tu18"
+                    }
+                ],
+                [
+                    "It has to be added by selecting an entity, and then clicking the \"Add component\" button",
+                    "",
+                    "It has to be added by selecting an entity, and then clicking the \"Add component\" button<x2\/>\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/usage.md",
+                    {
+                        "id": "tu18"
+                    }
+                ],
+                [
+                    "in the property grid.",
+                    "",
+                    "in the property grid.",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/usage.md",
+                    {
+                        "id": "tu18"
+                    }
+                ],
+                [
+                    "Alternatively, this can also be done in <g1>code via <g2>entity.Add(entityComponent)<\/g2><\/g1>.",
+                    "",
+                    "Alternatively, this can also be done in <g1>code via <g2>entity.Add(entityComponent)<\/g2><\/g1>.",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/usage.md",
+                    {
+                        "id": "tu19"
+                    }
+                ],
+                [
+                    "Advanced Features",
+                    "",
+                    "Advanced Features",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/usage.md",
+                    {
+                        "id": "tu20"
+                    }
+                ],
+                [
+                    "More Component Attributes",
+                    "",
+                    "More Component Attributes",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/usage.md",
+                    {
+                        "id": "tu21"
+                    }
+                ],
+                [
+                    "Display",
+                    "",
+                    "Display",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/usage.md",
+                    {
+                        "id": "tu22"
+                    }
+                ],
+                [
+                    "By adding the <g1>Display<\/g1> attribute, a nicer name can be shown in Game Studio.",
+                    "",
+                    "By adding the <g1>Display<\/g1> attribute, a nicer name can be shown in Game Studio.",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/usage.md",
+                    {
+                        "id": "tu23"
+                    }
+                ],
+                [
+                    "[Display(\"My better name\")]",
+                    "",
+                    "[Display(\"My better name\")]\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/usage.md",
+                    {
+                        "id": "tu24"
+                    }
+                ],
+                [
+                    "ComponentCategory",
+                    "",
+                    "ComponentCategory",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/usage.md",
+                    {
+                        "id": "tu25"
+                    }
+                ],
+                [
+                    "By default, your components will be listed in the category \"Miscellaneous\".",
+                    "",
+                    "By default, your components will be listed in the category \"Miscellaneous\".<x1\/>\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/usage.md",
+                    {
+                        "id": "tu26"
+                    }
+                ],
+                [
+                    "By adding the <g1>ComponentCategory<\/g1> attribute, a different category can be chosen.<x2\/>",
+                    "",
+                    "By adding the <g1>ComponentCategory<\/g1> attribute, a different category can be chosen.<x2\/>\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/usage.md",
+                    {
+                        "id": "tu26"
+                    }
+                ],
+                [
+                    "If the chosen name does not exist yet, it will be added to the list in Game Studio.",
+                    "",
+                    "If the chosen name does not exist yet, it will be added to the list in Game Studio.",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/usage.md",
+                    {
+                        "id": "tu26"
+                    }
+                ],
+                [
+                    "[ComponentCategory(\"My own components\")]",
+                    "",
+                    "[ComponentCategory(\"My own components\")]\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/usage.md",
+                    {
+                        "id": "tu27"
+                    }
+                ],
+                [
+                    "ComponentOrder",
+                    "",
+                    "ComponentOrder",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/usage.md",
+                    {
+                        "id": "tu28"
+                    }
+                ],
+                [
+                    "By adding the <g1>ComponentOrder<\/g1> attribute, the order in which<x1\/>",
+                    "",
+                    "By adding the <g1>ComponentOrder<\/g1> attribute, the order in which<x1\/>\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/usage.md",
+                    {
+                        "id": "tu29"
+                    }
+                ],
+                [
+                    "components are listed in Game Studio can be changed.",
+                    "",
+                    "components are listed in Game Studio can be changed.",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/usage.md",
+                    {
+                        "id": "tu29"
+                    }
+                ],
+                [
+                    "[ComponentOrder(2001)]",
+                    "",
+                    "[ComponentOrder(2001)]\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/usage.md",
+                    {
+                        "id": "tu30"
+                    }
+                ],
+                [
+                    "Component Combinations",
+                    "",
+                    "Component Combinations",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/usage.md",
+                    {
+                        "id": "tu31"
+                    }
+                ],
+                [
+                    "By passing the types of other components to the <g1>EntityProcessor<\/g1> constructor,<x1\/>",
+                    "",
+                    "By passing the types of other components to the <g1>EntityProcessor<\/g1> constructor,<x1\/>\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/usage.md",
+                    {
+                        "id": "tu32"
+                    }
+                ],
+                [
+                    "it will only include entities <g2>that also have those other components<\/g2>.",
+                    "",
+                    "it will only include entities <g2>that also have those other components<\/g2>.",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/usage.md",
+                    {
+                        "id": "tu32"
+                    }
+                ],
+                [
+                    "For example, the following <g1>EntityProcessor<\/g1> is for <g2>MyComponent<\/g2>, but will skip any entity<x1\/>",
+                    "",
+                    "For example, the following <g1>EntityProcessor<\/g1> is for <g2>MyComponent<\/g2>, but will skip any entity<x1\/>\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/usage.md",
+                    {
+                        "id": "tu33"
+                    }
+                ],
+                [
+                    "that does not also have both <g3>TransformComponent<\/g3> and <g4>AnimationComponent<\/g4> on it.",
+                    "",
+                    "that does not also have both <g3>TransformComponent<\/g3> and <g4>AnimationComponent<\/g4> on it.",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/usage.md",
+                    {
+                        "id": "tu33"
+                    }
+                ],
+                [
+                    "public class MyProcessor :",
+                    "",
+                    "public class MyProcessor :",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/usage.md",
+                    {
+                        "id": "tu34"
+                    }
+                ],
+                [
+                    "EntityProcessor",
+                    "",
+                    " EntityProcessor<MyComponent>\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/usage.md",
+                    {
+                        "id": "tu34"
+                    }
+                ],
+                [
+                    "{",
+                    "",
+                    "{\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/usage.md",
+                    {
+                        "id": "tu34"
+                    }
+                ],
+                [
+                    "public MyProcessor() : base(typeof(TransformComponent), typeof(AnimationComponent))",
+                    "",
+                    "    public MyProcessor() : base(typeof(TransformComponent), typeof(AnimationComponent))\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/usage.md",
+                    {
+                        "id": "tu34"
+                    }
+                ],
+                [
+                    "{",
+                    "",
+                    "    {\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/usage.md",
+                    {
+                        "id": "tu34"
+                    }
+                ],
+                [
+                    "}",
+                    "",
+                    "    }\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/usage.md",
+                    {
+                        "id": "tu34"
+                    }
+                ],
+                [
+                    "}",
+                    "",
+                    "}\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/usage.md",
+                    {
+                        "id": "tu34"
+                    }
+                ],
+                [
+                    "Non-default Processors",
+                    "",
+                    "Non-default Processors",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/usage.md",
+                    {
+                        "id": "tu35"
+                    }
+                ],
+                [
+                    "Adding processors for a type of component via the attribute <g1>DefaultEntityComponentProcessor<\/g1><x1\/>",
+                    "",
+                    "Adding processors for a type of component via the attribute <g1>DefaultEntityComponentProcessor<\/g1><x1\/>\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/usage.md",
+                    {
+                        "id": "tu36"
+                    }
+                ],
+                [
+                    "has been explained above.",
+                    "",
+                    "has been explained above.",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/usage.md",
+                    {
+                        "id": "tu36"
+                    }
+                ],
+                [
+                    "However, as the name implies, this is for the <g2>default<\/g2> processor.<x2\/>",
+                    "",
+                    " However, as the name implies, this is for the <g2>default<\/g2> processor.<x2\/>\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/usage.md",
+                    {
+                        "id": "tu36"
+                    }
+                ],
+                [
+                    "Non-default processors can also be added via",
+                    "",
+                    "Non-default processors can also be added via",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/usage.md",
+                    {
+                        "id": "tu36"
+                    }
+                ],
+                [
+                    "SceneSystem.SceneInstance.Processors.Add(entityProcessor);",
+                    "",
+                    "SceneSystem.SceneInstance.Processors.Add(entityProcessor);\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/usage.md",
+                    {
+                        "id": "tu37"
+                    }
+                ],
+                [
+                    "Separation of EntityComponent and Data",
+                    "",
+                    "Separation of EntityComponent and Data",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/usage.md",
+                    {
+                        "id": "tu38"
+                    }
+                ],
+                [
+                    "<g1>EntityProcessor<TComponent><\/g1> is a shortcut for <g2>EntityProcessor<TComponent, TComponent><\/g2>.",
+                    "",
+                    "<g1>EntityProcessor<TComponent><\/g1> is a shortcut for <g2>EntityProcessor<TComponent, TComponent><\/g2>.",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/usage.md",
+                    {
+                        "id": "tu39"
+                    }
+                ],
+                [
+                    "By explicitly using <g1>EntityProcessor<TComponent, TData><\/g1> instead, a different type can be chosen<x1\/>",
+                    "",
+                    "By explicitly using <g1>EntityProcessor<TComponent, TData><\/g1> instead, a different type can be chosen<x1\/>\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/usage.md",
+                    {
+                        "id": "tu40"
+                    }
+                ],
+                [
+                    "for the actual data.",
+                    "",
+                    "for the actual data.",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/usage.md",
+                    {
+                        "id": "tu40"
+                    }
+                ],
+                [
+                    "This way, the <g2>EntityComponent<\/g2> can e.g. have \"heavier\" startup data and<x2\/>",
+                    "",
+                    " This way, the <g2>EntityComponent<\/g2> can e.g. have \"heavier\" startup data and<x2\/>\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/usage.md",
+                    {
+                        "id": "tu40"
+                    }
+                ],
+                [
+                    "references, while the data object that needs to be processed every frame can be kept small.",
+                    "",
+                    "references, while the data object that needs to be processed every frame can be kept small.",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/usage.md",
+                    {
+                        "id": "tu40"
+                    }
+                ],
+                [
+                    "This will require overriding a method <g1>GenerateComponentData<\/g1>, which produces a <g2>TData<\/g2> instance<x1\/>",
+                    "",
+                    "This will require overriding a method <g1>GenerateComponentData<\/g1>, which produces a <g2>TData<\/g2> instance<x1\/>\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/usage.md",
+                    {
+                        "id": "tu41"
+                    }
+                ],
+                [
+                    "from a <g3>TComponent<\/g3> instance.",
+                    "",
+                    "from a <g3>TComponent<\/g3> instance.",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/usage.md",
+                    {
+                        "id": "tu41"
+                    }
+                ],
+                [
+                    "Overrides",
+                    "",
+                    "Overrides",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/usage.md",
+                    {
+                        "id": "tu42"
+                    }
+                ],
+                [
+                    "<g1>EntityProcessor<\/g1> also provides several methods which can be overridden in order to react to certain events.<x1\/>",
+                    "",
+                    "<g1>EntityProcessor<\/g1> also provides several methods which can be overridden in order to react to certain events.<x1\/>\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/usage.md",
+                    {
+                        "id": "tu43"
+                    }
+                ],
+                [
+                    "They are not overly complicated, so that their usage should be clear from their doc comments.",
+                    "",
+                    "They are not overly complicated, so that their usage should be clear from their doc comments.",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/manual\/engine\/entity-component-model\/usage.md",
+                    {
+                        "id": "tu43"
+                    }
+                ]
+            ]
+        }
+    ],
+    "seg_enabled": false
+}

@@ -1,0 +1,388 @@
+{
+    "filename": "diagnostics\\STRDIAG006.md.xlf",
+    "files": [
+        {
+            "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG006.md": [
+                [
+                    "Diagnostics Warning STRDIAG006",
+                    "",
+                    "Diagnostics Warning STRDIAG006",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG006.md",
+                    {
+                        "id": "tu1"
+                    }
+                ],
+                [
+                    "Invalid DataMemberMode for the specified <g1>[DataMember]<\/g1> member '{0}'.",
+                    "",
+                    "Invalid DataMemberMode for the specified <g1>[DataMember]<\/g1> member '{0}'.",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG006.md",
+                    {
+                        "id": "tu2"
+                    }
+                ],
+                [
+                    "A public\/internal\/internal protected setter is required for 'DataMemberMode.Assign'.",
+                    "",
+                    " A public\/internal\/internal protected setter is required for 'DataMemberMode.Assign'.",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG006.md",
+                    {
+                        "id": "tu2"
+                    }
+                ],
+                [
+                    "Explanation",
+                    "",
+                    "Explanation",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG006.md",
+                    {
+                        "id": "tu3"
+                    }
+                ],
+                [
+                    "The @Stride.Core.DataMemberMode.Assign let's the serializers create new objects and sets them into the target property.",
+                    "",
+                    "The @Stride.Core.DataMemberMode.Assign let's the serializers create new objects and sets them into the target property.",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG006.md",
+                    {
+                        "id": "tu4"
+                    }
+                ],
+                [
+                    "The Property needs an accessible\/visible setter.",
+                    "",
+                    " The Property needs an accessible\/visible setter.",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG006.md",
+                    {
+                        "id": "tu4"
+                    }
+                ],
+                [
+                    "Example:",
+                    "",
+                    "Example:",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG006.md",
+                    {
+                        "id": "tu5"
+                    }
+                ],
+                [
+                    "Invalid Cases",
+                    "",
+                    " Invalid Cases",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG006.md",
+                    {
+                        "id": "tu5"
+                    }
+                ],
+                [
+                    "The following example generates STRDIAG006:",
+                    "",
+                    "The following example generates STRDIAG006:",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG006.md",
+                    {
+                        "id": "tu6"
+                    }
+                ],
+                [
+                    "using Stride.Core;",
+                    "",
+                    "using Stride.Core;\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG006.md",
+                    {
+                        "id": "tu7"
+                    }
+                ],
+                [
+                    "public class STRDIAG006",
+                    "",
+                    "\r\npublic class STRDIAG006\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG006.md",
+                    {
+                        "id": "tu7"
+                    }
+                ],
+                [
+                    "{",
+                    "",
+                    "{\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG006.md",
+                    {
+                        "id": "tu7"
+                    }
+                ],
+                [
+                    "\/\/ non existent setters count as non visible",
+                    "",
+                    "    \/\/ non existent setters count as non visible\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG006.md",
+                    {
+                        "id": "tu7"
+                    }
+                ],
+                [
+                    "[DataMember(DataMemberMode.Assign)]",
+                    "",
+                    "    [DataMember(DataMemberMode.Assign)]\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG006.md",
+                    {
+                        "id": "tu7"
+                    }
+                ],
+                [
+                    "[DataMember(DataMemberMode.Assign)]",
+                    "",
+                    "    [DataMember(DataMemberMode.Assign)]\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG006.md",
+                    {
+                        "id": "tu7"
+                    }
+                ],
+                [
+                    "public int Property1 { get; }",
+                    "",
+                    "    public int Property1 { get; }\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG006.md",
+                    {
+                        "id": "tu7"
+                    }
+                ],
+                [
+                    "[DataMember(DataMemberMode.Assign)]",
+                    "",
+                    "\r\n    [DataMember(DataMemberMode.Assign)]\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG006.md",
+                    {
+                        "id": "tu7"
+                    }
+                ],
+                [
+                    "public int Property2 { get; private set; }",
+                    "",
+                    "    public int Property2 { get; private set; }\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG006.md",
+                    {
+                        "id": "tu7"
+                    }
+                ],
+                [
+                    "[DataMember(DataMemberMode.Assign)]",
+                    "",
+                    "    \r\n    [DataMember(DataMemberMode.Assign)]\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG006.md",
+                    {
+                        "id": "tu7"
+                    }
+                ],
+                [
+                    "public int Property3 { get; protected set; }",
+                    "",
+                    "    public int Property3 { get; protected set; }\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG006.md",
+                    {
+                        "id": "tu7"
+                    }
+                ],
+                [
+                    "[DataMember(DataMemberMode.Assign)]",
+                    "",
+                    "    \r\n    [DataMember(DataMemberMode.Assign)]\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG006.md",
+                    {
+                        "id": "tu7"
+                    }
+                ],
+                [
+                    "public int Property4 { get; private protected set; }",
+                    "",
+                    "    public int Property4 { get; private protected set; }\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG006.md",
+                    {
+                        "id": "tu7"
+                    }
+                ],
+                [
+                    "}",
+                    "",
+                    "}\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG006.md",
+                    {
+                        "id": "tu7"
+                    }
+                ],
+                [
+                    "Example:",
+                    "",
+                    "Example:",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG006.md",
+                    {
+                        "id": "tu8"
+                    }
+                ],
+                [
+                    "Special Case <g1>internal<\/g1>",
+                    "",
+                    " Special Case <g1>internal<\/g1>",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG006.md",
+                    {
+                        "id": "tu8"
+                    }
+                ],
+                [
+                    "<x1\/>!IMPORTANT<x2\/>",
+                    "",
+                    "<x1\/>!IMPORTANT<x2\/>\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG006.md",
+                    {
+                        "id": "tu9"
+                    }
+                ],
+                [
+                    "To explicitly set the <g1>DataMemberMode.Assign<\/g1> the @Stride.Core.DataMemberAttribute has to be applied.",
+                    "",
+                    "To explicitly set the <g1>DataMemberMode.Assign<\/g1> the @Stride.Core.DataMemberAttribute has to be applied.\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG006.md",
+                    {
+                        "id": "tu9"
+                    }
+                ],
+                [
+                    "Internal visibility counts then as visible for the serializers and becomes valid.",
+                    "",
+                    "Internal visibility counts then as visible for the serializers and becomes valid.",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG006.md",
+                    {
+                        "id": "tu9"
+                    }
+                ],
+                [
+                    "using Stride.Core;",
+                    "",
+                    "using Stride.Core;\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG006.md",
+                    {
+                        "id": "tu10"
+                    }
+                ],
+                [
+                    "public class STRDIAG006",
+                    "",
+                    "\r\npublic class STRDIAG006\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG006.md",
+                    {
+                        "id": "tu10"
+                    }
+                ],
+                [
+                    "{",
+                    "",
+                    "{\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG006.md",
+                    {
+                        "id": "tu10"
+                    }
+                ],
+                [
+                    "\/\/ non existent setters count as non visible",
+                    "",
+                    "    \/\/ non existent setters count as non visible\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG006.md",
+                    {
+                        "id": "tu10"
+                    }
+                ],
+                [
+                    "[DataMember(DataMemberMode.Assign)]",
+                    "",
+                    "    [DataMember(DataMemberMode.Assign)]\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG006.md",
+                    {
+                        "id": "tu10"
+                    }
+                ],
+                [
+                    "public int Property1 { get; internal set; }",
+                    "",
+                    "    public int Property1 { get; internal set; }\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG006.md",
+                    {
+                        "id": "tu10"
+                    }
+                ],
+                [
+                    "[DataMember(DataMemberMode.Assign)]",
+                    "",
+                    "\r\n    [DataMember(DataMemberMode.Assign)]\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG006.md",
+                    {
+                        "id": "tu10"
+                    }
+                ],
+                [
+                    "public int Property2 { get; internal protected set; }",
+                    "",
+                    "    public int Property2 { get; internal protected set; }\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG006.md",
+                    {
+                        "id": "tu10"
+                    }
+                ],
+                [
+                    "}",
+                    "",
+                    "}\r\n",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG006.md",
+                    {
+                        "id": "tu10"
+                    }
+                ],
+                [
+                    "Solution",
+                    "",
+                    "Solution",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG006.md",
+                    {
+                        "id": "tu11"
+                    }
+                ],
+                [
+                    "To resolve the warning, increase the accessibility of the properties set to <g1>public<\/g1>\/<g2>internal<\/g2>.",
+                    "",
+                    "To resolve the warning, increase the accessibility of the properties set to <g1>public<\/g1>\/<g2>internal<\/g2>.",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG006.md",
+                    {
+                        "id": "tu12"
+                    }
+                ],
+                [
+                    "Or remove the explicit <g3>DataMemberMode.Assign<\/g3>, this can result in the <g4>DataMemberMode.Content<\/g4>, if the property is a non valuetype\/string type.",
+                    "",
+                    " Or remove the explicit <g3>DataMemberMode.Assign<\/g3>, this can result in the <g4>DataMemberMode.Content<\/g4>, if the property is a non valuetype\/string type.",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG006.md",
+                    {
+                        "id": "tu12"
+                    }
+                ],
+                [
+                    "References",
+                    "",
+                    "References",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG006.md",
+                    {
+                        "id": "tu13"
+                    }
+                ],
+                [
+                    "Serialisation",
+                    "",
+                    "<g1>Serialisation<\/g1>",
+                    "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG006.md",
+                    {
+                        "id": "tu14"
+                    }
+                ]
+            ]
+        }
+    ],
+    "seg_enabled": false
+}

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" xmlns:okp="okapi-framework:xliff-extensions" its:version="2.0" version="1.2">
+<file datatype="x-text/x-markdown" okp:inputEncoding="UTF-8" original="/D:/repos/stride-docs/en/diagnostics/STRDIAG000.md" source-language="en" target-language="pt">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en">Diagnostics Warning STRDIAG000</source>
+<target xml:lang="pt">Diagnosticando o Aviso STRDIAG000</target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en">There is an Attribute Contradiction on '{0}' Member. <g id="1">[DataMemberIgnore]</g> Attribute on a <g id="2">[DataMember]</g> is not supported.
+Except if it has also <g id="3">[DataMemberUpdatable]</g> Attribute.</source>
+<target xml:lang="pt">There is an Attribute Contradiction on '{0}' Member. <g id="1">[DataMemberIgnore]</g> Attribute on a <g id="2">[DataMember]</g> is not supported.
+Except if it has also <g id="3">[DataMemberUpdatable]</g> Attribute.</target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">Explanation</source>
+<target xml:lang="pt">Explanation</target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">Adding @Stride.Core.DataMemberAttribute and @Stride.Core.DataMemberIgnoreAttribute to the same member is not supported. This would be a contradiction.
+It would mean the serializer should serialize the member and ignore it at the same time. The @Stride.Updater.DataMemberUpdatableAttribute  makes the combination valid again as it negates the @Stride.Core.DataMemberIgnoreAttribute for the binary serializer.</source>
+<target xml:lang="pt">Adding @Stride.Core.DataMemberAttribute and @Stride.Core.DataMemberIgnoreAttribute to the same member is not supported. This would be a contradiction.
+It would mean the serializer should serialize the member and ignore it at the same time. The @Stride.Updater.DataMemberUpdatableAttribute  makes the combination valid again as it negates the @Stride.Core.DataMemberIgnoreAttribute for the binary serializer.</target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">Example: Invalid cases</source>
+<target xml:lang="pt">Exemplo: Invalid cases</target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en">The following example generates STRDIAG000 on each property:</source>
+<target xml:lang="pt">The following example generates STRDIAG000 on each property:</target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en">// STRDIAG000.cs
+using Stride.Core;
+
+public class STRDIAG000
+{
+    [DataMember]
+    [DataMemberIgnore]
+    public int Value { get; set; }
+
+    [DataMember]
+    [DataMemberIgnore]
+    public int Value;
+}
+</source>
+<target xml:lang="pt">// STRDIAG000.cs
+using Stride.Core;
+
+public class STRDIAG000
+{
+    [DataMember]
+    [DataMemberIgnore]
+    public int Value { get; set; }
+
+    [DataMember]
+    [DataMemberIgnore]
+    public int Value;
+}
+</target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en">Example: Special Case <g id="1">DataMemberUpdatable</g></source>
+<target xml:lang="pt">Exemplo: Special Case <g id="1">DataMemberUpdatable</g></target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en"><x id="1"/>!IMPORTANT<x id="2"/>
+There is a special case if the @Stride.Updater.DataMemberUpdatableAttribute is applied.
+This Attribute negates the @Stride.Core.DataMemberIgnoreAttribute for the binary Serializer, so it becomes valid again.</source>
+<target xml:lang="pt"><x id="1"/>!IMPORTANT<x id="2"/>
+There is a special case if the @Stride.Updater.DataMemberUpdatableAttribute is applied.
+This Attribute negates the @Stride.Core.DataMemberIgnoreAttribute for the binary Serializer, so it becomes valid again.</target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en">using Stride.Core;
+
+public class STRDIAG000
+{
+    [DataMember]
+    [DataMemberIgnore]
+    [DataMemberUpdatable]
+    public int Value { get; set; }
+}
+</source>
+<target xml:lang="pt">using Stride.Core;
+
+public class STRDIAG000
+{
+    [DataMember]
+    [DataMemberIgnore]
+    [DataMemberUpdatable]
+    public int Value { get; set; }
+}
+</target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en">Solution</source>
+<target xml:lang="pt">Solução</target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en">To resolve the warning, pick either the @Stride.Core.DataMemberAttribute or the @Stride.Core.DataMemberIgnoreAttribute.
+If the <g id="1">YamlSerializer</g> and the Editor should ignore the member but the binary serializer not, then add the @Stride.Core.DataMemberIgnoreAttribute.</source>
+<target xml:lang="pt">To resolve the warning, pick either the @Stride.Core.DataMemberAttribute or the @Stride.Core.DataMemberIgnoreAttribute.
+If the <g id="1">YamlSerializer</g> and the Editor should ignore the member but the binary serializer not, then add the @Stride.Core.DataMemberIgnoreAttribute.</target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en">References</source>
+<target xml:lang="pt">References</target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en"><g id="1">Serialisation</g></source>
+<target xml:lang="pt"><g id="1">Serialisation</g></target>
+</trans-unit>
+</body>
+</file>
+</xliff>
