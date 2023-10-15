@@ -1,30 +1,30 @@
 # Diagnóstico do Stride
 
-Stride.Core.CompilerServices contains Roslyn code analyzers.
+Stride.Core.CompilerServices contém analisadores do .NET Compiler Platform (Roslyn).
 
-> [!IMPORTANT]
-> These analyzers do not perform any kind of telemetry. The same analyzers get used by your IDE when you get a CSXXXX diagnostic.
+> [!Important]
+> Esses analisadores não realizam nenhum tipo de telemetria. Os mesmos analisadores são usados pelo seu ambiente de desenvolvimento quando você recebe um diagnóstico CSXXXX.
 
-They analyze the code for possible issues in your project with the Stride.Core design.
-To avoid unexpected runtime/compile time/editor time behaviour these analyzers try to warn as soon as possible for issues that may occur.
-Each of the following pages contain information about diagnostic codes that can be reported by the Roslyn analyzers, which are built into Stride.Core.CompilerServices.
+Eles analisam o código em busca de possíveis problemas em seu projeto com o design do Stride.Core.
+Para evitar comportamentos inesperados em tempo de execução, tempo de compilação ou tempo de edição, esses analisadores tentam avisar o quanto antes possível sobre problemas que possam ocorrer.
+Cada uma das páginas a seguir contém informações sobre os códigos de diagnóstico que podem ser relatados pelos analisadores, que estão integrados ao Stride.Core.CompilerServices.
 
-The information covers:
+As informações abordam:
 
-- When is the diagnostics reported
-- An explanation why it is necessary to report the diagnostic
-- Examples when such a diagnostics occurs
-- Information about how to resolve the diagnostic
+- Quando o diagnóstico é relatado.
+- Uma explicação de por que é necessário relatar o diagnóstico.
+- Exemplos de quando um diagnóstico desse tipo ocorre.
+- Informações sobre como resolver o problema diagnosticado.
 
-If an error is reported it is possible to click in the IDE on the `diagnostic code` in the information box about the diagnostic.
-This will open the corresponding information page about the diagnostic.
+Se um erro for relatado, é possível clicar na IDE no `código de diagnóstico` na caixa de informações sobre o diagnóstico.
+Isso abrirá a página de informações correspondente sobre o diagnóstico.
 
-The Stride.Core.CompilerServices is linked to Stride.Core, the diagnostic Analysis will only occur if your project references Stride.Core in the PackageReferences, this will automatically add the Stride.Core.CompilerServices to your project.
+O Stride.Core.CompilerServices está vinculado ao Stride.Core, a análise de diagnóstico ocorrerá apenas se o seu projeto fizer referência ao Stride.Core nas PackageReferences; isso adicionará automaticamente o Stride.Core.CompilerServices ao seu projeto.
 
 > [!Warning]
-> Tenha em mente que a funcionalidade de diagnóstico é experimental e pode não funcionar conforme o esperado. Warnings may contain solutions that don't work yet.
+> No entanto, é importante ressaltar que a funcionalidade de diagnóstico é experimental e pode não funcionar conforme o esperado. Os avisos podem conter soluções que ainda não funcionam.
 
-## References
+## Referências
 
-- [Rule of Thumb Serialization](../manual/scripts/serialization.md#rule-of-thumb)
-- [Serialisation](../manual/scripts/serialization.md)
+- [Regra geral de serialização](../manual/scripts/serialization.md#rule-of-thumb)
+- [Serialização](../manual/scripts/serialization.md)
