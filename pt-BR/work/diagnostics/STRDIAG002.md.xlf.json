@@ -16,163 +16,206 @@
                 ],
                 [
                     "The 'DataMemberMode.Content' is not valid for the member '{0}'.",
-                    "",
+                    "O atributo 'DataMemberMode.Content' não é válido no membro '{0}'.",
                     "The 'DataMemberMode.Content' is not valid for the member '{0}'.\r\n",
                     "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG002.md",
                     {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697381344856,
                         "id": "tu2"
                     }
                 ],
                 [
                     "Only mutable reference types are supported for 'DataMemberMode.Content' Mode members.",
-                    "",
+                    "Apenas tipos referência mutáveis são suportados nos membros no modo 'DataMemberMode.Content'.",
                     "Only mutable reference types are supported for 'DataMemberMode.Content' Mode members.",
                     "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG002.md",
                     {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697381338728,
                         "id": "tu2"
                     }
                 ],
                 [
                     "Explanation",
-                    "",
+                    "Explicação",
                     "Explanation",
                     "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG002.md",
                     {
+                        "note": "",
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697378581050,
                         "id": "tu3"
                     }
                 ],
                 [
                     "The <g1>DataMemberMode.Content<\/g1> mutates the object which is currently in the member.",
-                    "",
+                    "O atributo <g1>DataMemberMode.Content<\/g1> modifica o objeto que está atualmente no membro.",
                     "The <g1>DataMemberMode.Content<\/g1> mutates the object which is currently in the member.\r\n",
                     "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG002.md",
                     {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697381355664,
                         "id": "tu4"
                     }
                 ],
                 [
                     "As this is not possible with the current serializers, only mutable types are supported for <g2>DataMemberMode.Content<\/g2>.",
-                    "",
+                    "Como isso não é possível com os serializadores atuais, apenas tipos mutáveis são suportados no <g2>DataMemberMode.Content<\/g2>.",
                     "As this is not possible with the current serializers, only mutable types are supported for <g2>DataMemberMode.Content<\/g2>.",
                     "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG002.md",
                     {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697381380631,
                         "id": "tu4"
                     }
                 ],
                 [
                     "Immutable types in this context are none reference types and string.",
-                    "",
+                    "Tipos imutáveis nesse contexto são tipos não referência e string.",
                     " Immutable types in this context are none reference types and string.",
                     "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG002.md",
                     {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697381406199,
                         "id": "tu4"
                     }
                 ],
                 [
                     "Example",
-                    "",
+                    "Exemplo",
                     "Example",
                     "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG002.md",
                     {
+                        "note": "",
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1696708883475,
                         "id": "tu5"
                     }
                 ],
                 [
                     "The following example generates STRDIAG002 on each property:",
-                    "",
+                    "O exemplo a seguir gera um aviso STRDIAG002 em cada propriedade:",
                     "The following example generates STRDIAG002 on each property:",
                     "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG002.md",
                     {
+                        "note": "",
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697381220018,
                         "id": "tu6"
                     }
                 ],
                 [
                     "using Stride.Core;",
-                    "",
+                    "using Stride.Core;",
                     "using Stride.Core;\r\n",
                     "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG002.md",
                     {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697381409991,
                         "id": "tu7"
                     }
                 ],
                 [
                     "public class STRDIAG002",
-                    "",
+                    "public class STRDIAG002",
                     "\r\npublic class STRDIAG002\r\n",
                     "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG002.md",
                     {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697381411431,
                         "id": "tu7"
                     }
                 ],
                 [
                     "{",
-                    "",
+                    "{",
                     "{\r\n",
                     "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG002.md",
                     {
+                        "note": "",
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697381412143,
                         "id": "tu7"
                     }
                 ],
                 [
                     "[DataMember(DataMemberMode.Content)]",
-                    "",
+                    "[DataMember(DataMemberMode.Content)]",
                     "    [DataMember(DataMemberMode.Content)]\r\n",
                     "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG002.md",
                     {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697381413487,
                         "id": "tu7"
                     }
                 ],
                 [
                     "public int Value { get; set; }",
-                    "",
+                    "public int Valor { get; set; }",
                     "    public int Value { get; set; }\r\n",
                     "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG002.md",
                     {
+                        "note": "",
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697378839565,
                         "id": "tu7"
                     }
                 ],
                 [
                     "[DataMember(DataMemberMode.Content)]",
-                    "",
+                    "[DataMember(DataMemberMode.Content)]",
                     "\r\n    [DataMember(DataMemberMode.Content)]\r\n",
                     "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG002.md",
                     {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697381416575,
                         "id": "tu7"
                     }
                 ],
                 [
                     "public string Value;",
-                    "",
+                    "public string Valor;",
                     "    public string Value;\r\n",
                     "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG002.md",
                     {
+                        "note": "",
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697381427695,
                         "id": "tu7"
                     }
                 ],
                 [
                     "}",
-                    "",
+                    "}",
                     "}\r\n",
                     "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG002.md",
                     {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697381430519,
                         "id": "tu7"
                     }
                 ],
                 [
                     "Solution",
-                    "",
+                    "Solução",
                     "Solution",
                     "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG002.md",
                     {
+                        "note": "",
+                        "creator": "anonymous",
+                        "createdTime": 0,
                         "id": "tu8"
                     }
                 ],
                 [
                     "To resolve the warning, pick either a reference type for the member or use <g1>DataMemberMode.Assign<\/g1> for Immutable types.",
-                    "",
+                    "Para resolver o aviso, escolha um tipo referência para o membro ou use <g1>DataMemberMode.Assign<\/g1> para tipos imutáveis.",
                     "To resolve the warning, pick either a reference type for the member or use <g1>DataMemberMode.Assign<\/g1> for Immutable types.",
                     "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG002.md",
                     {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697381462815,
                         "id": "tu9"
                     }
                 ]

@@ -1,16 +1,16 @@
 # Diagnosticando o Aviso STRDIAG002
 
-> The 'DataMemberMode.Content' is not valid for the member '{0}'.
-> Only mutable reference types are supported for 'DataMemberMode.Content' Mode members.
+> O atributo 'DataMemberMode.Content' não é válido no membro '{0}'.
+> Apenas tipos referência mutáveis são suportados nos membros no modo 'DataMemberMode.Content'.
 
-## Explanation
+## Explicação
 
-The [DataMemberMode.Content](xref:Stride.Core.DataMemberMode) mutates the object which is currently in the member.
-As this is not possible with the current serializers, only mutable types are supported for `DataMemberMode.Content`. Immutable types in this context are none reference types and string.
+O atributo [DataMemberMode.Content](xref:Stride.Core.DataMemberMode) modifica o objeto que está atualmente no membro.
+Como isso não é possível com os serializadores atuais, apenas tipos mutáveis são suportados no `DataMemberMode.Content`. Tipos imutáveis nesse contexto são tipos não referência e string.
 
-## Example
+## Exemplo
 
-The following example generates STRDIAG002 on each property:
+O exemplo a seguir gera um aviso STRDIAG002 em cada propriedade:
 
 ```csharp
 using Stride.Core;
@@ -18,13 +18,13 @@ using Stride.Core;
 public class STRDIAG002
 {
     [DataMember(DataMemberMode.Content)]
-    public int Value { get; set; }
+    public int Valor { get; set; }
 
     [DataMember(DataMemberMode.Content)]
-    public string Value;
+    public string Valor;
 }
 ```
 
-## Solution
+## Solução
 
-To resolve the warning, pick either a reference type for the member or use `DataMemberMode.Assign` for Immutable types.
+Para resolver o aviso, escolha um tipo referência para o membro ou use `DataMemberMode.Assign` para tipos imutáveis.
