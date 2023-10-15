@@ -7,27 +7,27 @@
 </trans-unit>
 <trans-unit id="tu2" xml:space="preserve">
 <source xml:lang="en">The <g id="1">[DataMember]</g> Attribute is applied to a read-only member '{0}' with a non supported type. Only mutable reference types are supported for read-only members.</source>
-<target xml:lang="pt">The <g id="1">[DataMember]</g> Attribute is applied to a read-only member '{0}' with a non supported type. Only mutable reference types are supported for read-only members.</target>
+<target xml:lang="pt">O atributo <g id="1">[DataMember]</g> é aplicado a um membro somente leitura '{0}' com um tipo não suportado. Somente tipos referência mutáveis são suportados para membros somente leitura.</target>
 </trans-unit>
 <trans-unit id="tu3" xml:space="preserve">
 <source xml:lang="en">Explanation</source>
-<target xml:lang="pt">Explanation</target>
+<target xml:lang="pt">Explicação</target>
 </trans-unit>
 <trans-unit id="tu4" xml:space="preserve">
 <source xml:lang="en">Having no set possibility automatically lets the serializers automatically use the <g id="1">DataMemberMode.Content</g>.
 For immutable types the <g id="2">DataMemberMode.Content</g> is never valid.
 Immutable types in this context are none reference types and string.</source>
-<target xml:lang="pt">Having no set possibility automatically lets the serializers automatically use the <g id="1">DataMemberMode.Content</g>.
-For immutable types the <g id="2">DataMemberMode.Content</g> is never valid.
-Immutable types in this context are none reference types and string.</target>
+<target xml:lang="pt">Quando não há a opção de definição, os serializadores automaticamente utilizam o <g id="1">DataMemberMode.Content</g>.
+Para tipos imutáveis, o <g id="2">DataMemberMode.Content</g> nunca é válido.
+Tipos imutáveis nesse contexto são tipos não referência e string.</target>
 </trans-unit>
 <trans-unit id="tu5" xml:space="preserve">
 <source xml:lang="en">Example</source>
-<target xml:lang="pt">Example</target>
+<target xml:lang="pt">Exemplo</target>
 </trans-unit>
 <trans-unit id="tu6" xml:space="preserve">
 <source xml:lang="en">The following example generates STRDIAG005 on each property:</source>
-<target xml:lang="pt">The following example generates STRDIAG005 on each property:</target>
+<target xml:lang="pt">O exemplo a seguir gera um aviso STRDIAG005 em cada propriedade:</target>
 </trans-unit>
 <trans-unit id="tu7" xml:space="preserve">
 <source xml:lang="en">using Stride.Core;
@@ -45,23 +45,23 @@ public class STRDIAG005
 public class STRDIAG005
 {
     [DataMember]
-    public readonly int Value;
+    public readonly int Valor;
     [DataMember]
-    public string Value { get; }
+    public string Valor { get; }
 }
 </target>
 </trans-unit>
 <trans-unit id="tu8" xml:space="preserve">
 <source xml:lang="en">Solution</source>
-<target xml:lang="pt">Solution</target>
+<target xml:lang="pt">Solução</target>
 </trans-unit>
 <trans-unit id="tu9" xml:space="preserve">
 <source xml:lang="en">To resolve the warning for fields, remove the <g id="1">[DataMember]</g> attribute or remove the <g id="2">readonly</g> modifier.</source>
-<target xml:lang="pt">To resolve the warning for fields, remove the <g id="1">[DataMember]</g> attribute or remove the <g id="2">readonly</g> modifier.</target>
+<target xml:lang="pt">Para resolver o aviso em campos, remova o atributo <g id="1">[DataMember]</g> ou remova o modificador <g id="2">readonly</g>.</target>
 </trans-unit>
 <trans-unit id="tu10" xml:space="preserve">
 <source xml:lang="en">To resolve the warning for properties, alter the type of the property to a supported type or remove the <g id="1">[DataMember]</g> attribute.</source>
-<target xml:lang="pt">To resolve the warning for properties, alter the type of the property to a supported type or remove the <g id="1">[DataMember]</g> attribute.</target>
+<target xml:lang="pt">Para resolver o aviso em propriedades, altere o tipo da propriedade para um tipo suportado ou remova o atributo <g id="1">[DataMember]</g>.</target>
 </trans-unit>
 </body>
 </file>

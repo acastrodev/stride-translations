@@ -1,16 +1,16 @@
 # Diagnosticando o aviso STRDIAG005
 
-> The `[DataMember]` Attribute is applied to a read-only member '{0}' with a non supported type. Only mutable reference types are supported for read-only members.
+> O atributo `[DataMember]` é aplicado a um membro somente leitura '{0}' com um tipo não suportado. Somente tipos referência mutáveis são suportados para membros somente leitura.
 
-## Explanation
+## Explicação
 
-Having no set possibility automatically lets the serializers automatically use the [DataMemberMode.Content](xref:Stride.Core.DataMemberMode).
-For immutable types the `DataMemberMode.Content` is never valid.
-Immutable types in this context are none reference types and string.
+Quando não há a opção de definição, os serializadores automaticamente utilizam o [DataMemberMode.Content](xref:Stride.Core.DataMemberMode).
+Para tipos imutáveis, o `DataMemberMode.Content` nunca é válido.
+Tipos imutáveis nesse contexto são tipos não referência e string.
 
-## Example
+## Exemplo
 
-The following example generates STRDIAG005 on each property:
+O exemplo a seguir gera um aviso STRDIAG005 em cada propriedade:
 
 ```csharp
 using Stride.Core;
@@ -18,14 +18,14 @@ using Stride.Core;
 public class STRDIAG005
 {
     [DataMember]
-    public readonly int Value;
+    public readonly int Valor;
     [DataMember]
-    public string Value { get; }
+    public string Valor { get; }
 }
 ```
 
-## Solution
+## Solução
 
-To resolve the warning for fields, remove the `[DataMember]` attribute or remove the `readonly` modifier.
+Para resolver o aviso em campos, remova o atributo `[DataMember]` ou remova o modificador `readonly`.
 
-To resolve the warning for properties, alter the type of the property to a supported type or remove the `[DataMember]` attribute.
+Para resolver o aviso em propriedades, altere o tipo da propriedade para um tipo suportado ou remova o atributo `[DataMember]`.
