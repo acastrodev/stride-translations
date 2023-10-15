@@ -1,4 +1,4 @@
-# Diagnostics Warning STRDIAG006
+# Diagnosticando o Aviso STRDIAG006
 
 > Invalid DataMemberMode for the specified `[DataMember]` member '{0}'. A public/internal/internal protected setter is required for 'DataMemberMode.Assign'.
 

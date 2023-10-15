@@ -1,4 +1,4 @@
-# Diagnostics Warning STRDIAG008
+# Diagnosticando o Aviso STRDIAG008
 
 > Struct members with the 'fixed' Modifier are not supported as a Serialization target on member '{0}'.
 

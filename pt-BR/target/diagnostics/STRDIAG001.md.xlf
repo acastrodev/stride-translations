@@ -7,7 +7,7 @@
 </trans-unit>
 <trans-unit id="tu2" xml:space="preserve">
 <source xml:lang="en">The <g id="1">[DataContract]</g> is not valid for the type '{0}'. Expected is a public/internal Accessor.</source>
-<target xml:lang="pt">The <g id="1">[DataContract]</g> is not valid for the type '{0}'. Expected is a public/internal Accessor.</target>
+<target xml:lang="pt">O atributo [DataContract] não é válido para o tipo '{0}'.<g id="1"/> Esperado um accessor public/internal.</target>
 </trans-unit>
 <trans-unit id="tu3" xml:space="preserve">
 <source xml:lang="en">Explanation</source>
@@ -15,11 +15,11 @@
 </trans-unit>
 <trans-unit id="tu4" xml:space="preserve">
 <source xml:lang="en">The @Stride.Core.DataContractAttribute can only be applied to <g id="1">public</g>/<g id="2">internal</g> type. Any lower access will cause STRDIAG001 on the target type.</source>
-<target xml:lang="pt">The @Stride.Core.DataContractAttribute can only be applied to <g id="1">public</g>/<g id="2">internal</g> type. Any lower access will cause STRDIAG001 on the target type.</target>
+<target xml:lang="pt">O atributo @Stride.Core.DataContractAttribute só pode ser aplicado a tipos <g id="1">public</g>/<g id="2">internal</g>. Qualquer nível de acesso inferior causará o erro STRDIAG001 no tipo de destino.</target>
 </trans-unit>
 <trans-unit id="tu5" xml:space="preserve">
 <source xml:lang="en">Example: private inner class</source>
-<target xml:lang="pt">Example: private inner class</target>
+<target xml:lang="pt">Exemplo: classe interna privada</target>
 </trans-unit>
 <trans-unit id="tu6" xml:space="preserve">
 <source xml:lang="en">The following example generates STRDIAG001:</source>
@@ -37,15 +37,15 @@ public class STRDIAG001
 <target xml:lang="pt">using Stride.Core;
 
 public class STRDIAG001
-p
+{
     [DataContract]
-    private class InnerClass { }
+    private class ClasseInterna { }
 }
 </target>
 </trans-unit>
 <trans-unit id="tu8" xml:space="preserve">
 <source xml:lang="en">Example: file scoped class</source>
-<target xml:lang="pt">Example: file scoped class</target>
+<target xml:lang="pt">Exemplo: classe com escopo de arquivo</target>
 </trans-unit>
 <trans-unit id="tu9" xml:space="preserve">
 <source xml:lang="en">using Stride.Core;
@@ -59,7 +59,7 @@ file class STRDIAG001
 
 [DataContract]
 file class STRDIAG001
-p
+{
 }
 </target>
 </trans-unit>
@@ -69,7 +69,7 @@ p
 </trans-unit>
 <trans-unit id="tu11" xml:space="preserve">
 <source xml:lang="en">To resolve the warning, increase the accessibility of the type to <g id="1">public</g>/<g id="2">internal</g> or remove the @Stride.Core.DataContractAttribute.</source>
-<target xml:lang="pt">To resolve the warning, increase the accessibility of the type to <g id="1">public</g>/<g id="2">internal</g> or remove the @Stride.Core.DataContractAttribute.</target>
+<target xml:lang="pt">Para resolver o aviso, aumente a acessibilidade do tipo para <g id="1">public</g>/<g id="2">internal</g> ou remova o atributo @Stride.Core.DataContractAttribute.</target>
 </trans-unit>
 <trans-unit id="tu12" xml:space="preserve">
 <source xml:lang="en">References</source>

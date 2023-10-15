@@ -1,4 +1,4 @@
-# Diagnostics Warning STRDIAG003
+# Diagnosticando o Aviso STRDIAG003
 
 > The member '{0}' with `[DataMember]` is not accessible to the serializer. Only public/internal/internal > protected visibility is supported, when the `[DataMember]` attribute is applied.
 

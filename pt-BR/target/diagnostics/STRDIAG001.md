@@ -1,12 +1,12 @@
 # Diagnosticando o Aviso STRDIAG001
 
-> The `[DataContract]` is not valid for the type '{0}'. Expected is a public/internal Accessor.
+> O atributo [DataContract] não é válido para o tipo '{0}'.`` Esperado um accessor public/internal.
 
 ## Explicação
 
-The @Stride.Core.DataContractAttribute can only be applied to `public`/`internal` type. Any lower access will cause STRDIAG001 on the target type.
+O atributo @Stride.Core.DataContractAttribute só pode ser aplicado a tipos `public`/`internal`. Qualquer nível de acesso inferior causará o erro STRDIAG001 no tipo de destino.
 
-## Example: private inner class
+## Exemplo: classe interna privada
 
 O exemplo a seguir gera um aviso STRDIAG001:
 
@@ -14,26 +14,26 @@ O exemplo a seguir gera um aviso STRDIAG001:
 using Stride.Core;
 
 public class STRDIAG001
-p
+{
     [DataContract]
-    private class InnerClass { }
+    private class ClasseInterna { }
 }
 ```
 
-## Example: file scoped class
+## Exemplo: classe com escopo de arquivo
 
 ```csharp
 using Stride.Core;
 
 [DataContract]
 file class STRDIAG001
-p
+{
 }
 ```
 
 ## Solução
 
-To resolve the warning, increase the accessibility of the type to `public`/`internal` or remove the @Stride.Core.DataContractAttribute.
+Para resolver o aviso, aumente a acessibilidade do tipo para `public`/`internal` ou remova o atributo @Stride.Core.DataContractAttribute.
 
 ## Referências
 

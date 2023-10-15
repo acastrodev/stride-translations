@@ -1,4 +1,4 @@
-# Diagnostics Warning STRDIAG002
+# Diagnosticando o Aviso STRDIAG002
 
 > The 'DataMemberMode.Content' is not valid for the member '{0}'.
 > Only mutable reference types are supported for 'DataMemberMode.Content' Mode members.

@@ -1,4 +1,4 @@
-# Diagnostics Warning STRDIAG005
+# Diagnosticando o Aviso STRDIAG005
 
 > The `[DataMember]` Attribute is applied to a read-only member '{0}' with a non supported type. Only mutable reference types are supported for read-only members.
 
