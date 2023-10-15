@@ -3,7 +3,7 @@
 <body>
 <trans-unit id="tu1" xml:space="preserve">
 <source xml:lang="en">Diagnostics Warning STRDIAG001</source>
-<target xml:lang="pt">Diagnostics Warning STRDIAG001</target>
+<target xml:lang="pt">Diagnosticando o Aviso STRDIAG001</target>
 </trans-unit>
 <trans-unit id="tu2" xml:space="preserve">
 <source xml:lang="en">The <g id="1">[DataContract]</g> is not valid for the type '{0}'. Expected is a public/internal Accessor.</source>
@@ -11,7 +11,7 @@
 </trans-unit>
 <trans-unit id="tu3" xml:space="preserve">
 <source xml:lang="en">Explanation</source>
-<target xml:lang="pt">Explanation</target>
+<target xml:lang="pt">Explicação</target>
 </trans-unit>
 <trans-unit id="tu4" xml:space="preserve">
 <source xml:lang="en">The @Stride.Core.DataContractAttribute can only be applied to <g id="1">public</g>/<g id="2">internal</g> type. Any lower access will cause STRDIAG001 on the target type.</source>
@@ -23,7 +23,7 @@
 </trans-unit>
 <trans-unit id="tu6" xml:space="preserve">
 <source xml:lang="en">The following example generates STRDIAG001:</source>
-<target xml:lang="pt">The following example generates STRDIAG001:</target>
+<target xml:lang="pt">O exemplo a seguir gera um aviso STRDIAG001:</target>
 </trans-unit>
 <trans-unit id="tu7" xml:space="preserve">
 <source xml:lang="en">using Stride.Core;
@@ -37,7 +37,7 @@ public class STRDIAG001
 <target xml:lang="pt">using Stride.Core;
 
 public class STRDIAG001
-{
+p
     [DataContract]
     private class InnerClass { }
 }
@@ -59,13 +59,13 @@ file class STRDIAG001
 
 [DataContract]
 file class STRDIAG001
-{
+p
 }
 </target>
 </trans-unit>
 <trans-unit id="tu10" xml:space="preserve">
 <source xml:lang="en">Solution</source>
-<target xml:lang="pt">Solution</target>
+<target xml:lang="pt">Solução</target>
 </trans-unit>
 <trans-unit id="tu11" xml:space="preserve">
 <source xml:lang="en">To resolve the warning, increase the accessibility of the type to <g id="1">public</g>/<g id="2">internal</g> or remove the @Stride.Core.DataContractAttribute.</source>
@@ -73,11 +73,11 @@ file class STRDIAG001
 </trans-unit>
 <trans-unit id="tu12" xml:space="preserve">
 <source xml:lang="en">References</source>
-<target xml:lang="pt">References</target>
+<target xml:lang="pt">Referências</target>
 </trans-unit>
 <trans-unit id="tu13" xml:space="preserve">
 <source xml:lang="en"><g id="1">Serialisation</g></source>
-<target xml:lang="pt"><g id="1">Serialisation</g></target>
+<target xml:lang="pt"><g id="1">Serialização</g></target>
 </trans-unit>
 </body>
 </file>
