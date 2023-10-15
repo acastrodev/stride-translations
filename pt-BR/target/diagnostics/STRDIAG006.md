@@ -1,10 +1,10 @@
 # Diagnosticando o aviso STRDIAG006
 
-> DataMemberMode inválido para o membro `[DataMember]` especificado '{0}'. Um public/internal/internal protected acessador set é necessário para utilizar o atributo 'DataMemberMode.Assign'.
+> DataMemberMode inválido para o membro do atributo `[DataMember]` especificado '{0}'. Um acessador set public/internal/internal protected é necessário para utilizar o atributo 'DataMemberMode.Assign'.
 
 ## Explicação
 
-O atributo @Stride.Core.DataMemberMode.Assign permite que os serializadores criem novos objetos e os coloquem na propriedade de destino. A propriedade precisa de um acessador set acessível/visível.
+O atributo @Stride.Core.DataMemberMode.Assign permite que os serializadores criem novos objetos e os coloquem na propriedade de destino. A propriedade precisa de um acessador set acessível.
 
 ## Exemplo: Casos inválidos
 
@@ -53,7 +53,7 @@ public class STRDIAG006
 
 ## Solução
 
-Para resolver o aviso, altere o modificador de acesso do acessador get da propriedade para `public` ou `internal`. Ou remova explicitamente o atributo `DataMemberMode.Assign`, isso pode resultar no `DataMemberMode.Content` se a propriedade for do tipo valor ou string.
+Para resolver o aviso, altere o modificador de acesso do acessador get da propriedade para `public` ou `internal`. Ou remova explicitamente o atributo `DataMemberMode.Assign`, isso pode resultar no cenário do atributo `DataMemberMode.Content` se a propriedade for não for do tipo valor.
 
 ## Referências
 

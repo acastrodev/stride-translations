@@ -4,8 +4,8 @@
 
 ## Explicação
 
-Quando não há a opção de definição, os serializadores automaticamente utilizam o [DataMemberMode.Content](xref:Stride.Core.DataMemberMode).
-Para tipos imutáveis, o `DataMemberMode.Content` nunca é válido.
+Quando não há a opção de definição, os serializadores automaticamente utilizam o atributo [DataMemberMode.Content](xref:Stride.Core.DataMemberMode).
+Para tipos imutáveis, o atributo `DataMemberMode.Content` nunca é válido.
 Tipos imutáveis nesse contexto são tipos não referência e string.
 
 ## Exemplo

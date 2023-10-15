@@ -4,7 +4,7 @@
 
 ## Explicação
 
-Delegados não podem ser serializados pelos no Stride. Assim, o atributo @Stride.Core.DataMemberAttribute será sempre inválido quando aplicado a um membro do tipo delegado.
+Delegados não podem ser serializados no Stride. Assim, o atributo @Stride.Core.DataMemberAttribute será sempre inválido quando aplicado a um membro do tipo delegado.
 
 ## Exemplo: Casos inválidos
 

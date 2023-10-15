@@ -4,8 +4,8 @@
 
 ## Explicação
 
-O conceito de serialização no Stride espera os modificadores de acesso `public`, `internal` ou `internal protected` para as propriedades. Outros modificadores de acesso não serão considerados para a serialização.
-Para `internal`, `internal protected` serem mostrados no Editor, o atributo @Stride.Core.DataMemberAttribute deve ser aplicado, caso contrário, não esses modificadores de acesso não serão considerados como visível.
+O conceito de serialização no Stride espera os modificadores de acesso `public`, `internal` ou `internal protected` para as propriedades. Outros modificadores de acesso não são considerados para a serialização.
+Para os modificadores `internal`, `internal protected` serem mostrados no Editor, o atributo @Stride.Core.DataMemberAttribute deve ser aplicado, caso contrário, esses modificadores de acesso não serão visíveis.
 
 ## Exemplo
 

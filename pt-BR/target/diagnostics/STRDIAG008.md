@@ -1,6 +1,6 @@
 # Diagnosticando o aviso STRDIAG008
 
-> Os membros de estrutura com o modificador 'fixed' não são suportados como alvo de serialização no membro '{0}'.
+> Os membros de estruturas com o modificador 'fixed' não são suportados como alvo de serialização no membro '{0}'.
 
 ## Explicação
 

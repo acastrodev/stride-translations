@@ -11,7 +11,7 @@
 </trans-unit>
 <trans-unit id="tu3" xml:space="preserve">
 <source xml:lang="en">The property '{0}' with <g id="1">[DataMember]</g> does not have an accessible getter which is required for serialization. A public/internal/internal protected getter is expected.</source>
-<target xml:lang="pt">A propriedade '{0}' com o atributo <g id="1">[DataMember]</g> não possui um acessador get acessível necessário para a serialização. Um acessador public/internal/internal protected é esperado.</target>
+<target xml:lang="pt">A propriedade '{0}' com o atributo <g id="1">[DataMember]</g> não possui um acessador get acessível necessário para a serialização. Um acessador public, internal ou internal protected é esperado.</target>
 </trans-unit>
 <trans-unit id="tu4" xml:space="preserve">
 <source xml:lang="en">Explanation</source>
@@ -29,7 +29,7 @@ sendo necessário para todos os serializadores no Stride.</target>
 </trans-unit>
 <trans-unit id="tu7" xml:space="preserve">
 <source xml:lang="en">Non visible getters will result in error message 2.</source>
-<target xml:lang="pt">Acessadores get não visíveis resultarão em uma mensagem de erro 2.</target>
+<target xml:lang="pt">Acessadores get não acessíveis resultarão em uma mensagem de erro 2.</target>
 </trans-unit>
 <trans-unit id="tu8" xml:space="preserve">
 <source xml:lang="en">Example</source>
@@ -80,8 +80,8 @@ public class STRDIAG004
 There is an edge case with <g id="3">internal</g>/<g id="4">internal protected</g>, it will count as non visible when the @Stride.Core.DataMemberAttribute isn't applied.
 But when the attribute is applied then the getter counts as visible and therefore is correct.</source>
 <target xml:lang="pt"><x id="1"/>!Warning<x id="2"/>
-Há um caso específico utlizando <g id="3">internal</g> ou <g id="4">internal protected</g> que contará como não visível quando o atributo @Stride.Core.DataMemberAttribute não é aplicado.
-Mas quando o atributo é aplicado, o acessador get passa a ser considerado visível e, portanto, correto.</target>
+Há um caso específico utlizando <g id="3">internal</g> ou <g id="4">internal protected</g> que contará como não acessível quando o atributo @Stride.Core.DataMemberAttribute não for aplicado.
+Mas quando o atributo é aplicado, o acessador get passa a ser considerado acessível e, portanto, correto.</target>
 </trans-unit>
 <trans-unit id="tu12" xml:space="preserve">
 <source xml:lang="en">// STRDIAG000.cs
@@ -131,7 +131,7 @@ public class STRDIAG004
 </trans-unit>
 <trans-unit id="tu14" xml:space="preserve">
 <source xml:lang="en">To resolve the warning 1, add a getter to the property with a <g id="1">public</g>/<g id="2">internal</g>/<g id="3">internal protected</g> accessibility or remove the @Stride.Core.DataMemberAttribute .</source>
-<target xml:lang="pt">Para resolver o aviso 1, adicione um acessador get à propriedade com acessibilidade <g id="1">public</g>/<g id="2">internal</g>/<g id="3">internal protected</g> ou remova o atributo @Stride.Core.DataMemberAttribute.</target>
+<target xml:lang="pt">Para resolver o aviso 1, adicione um acessador get à propriedade com o modificador de acesso <g id="1">public</g>/<g id="2">internal</g>/<g id="3">internal protected</g> ou remova o atributo @Stride.Core.DataMemberAttribute.</target>
 </trans-unit>
 <trans-unit id="tu15" xml:space="preserve">
 <source xml:lang="en">To resolve the warning 2, increase the accessibility of the property getter to <g id="1">public</g>/<g id="2">internal</g>/<g id="3">internal protected</g> accessibility or remove the @Stride.Core.DataMemberAttribute .</source>
