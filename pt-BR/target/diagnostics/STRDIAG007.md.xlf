@@ -7,23 +7,23 @@
 </trans-unit>
 <trans-unit id="tu2" xml:space="preserve">
 <source xml:lang="en">Invalid <g id="1">[DataMember]</g> Attribute on the member '{0}'. A Delegate is not serializable.</source>
-<target xml:lang="pt">Invalid <g id="1">[DataMember]</g> Attribute on the member '{0}'. A Delegate is not serializable.</target>
+<target xml:lang="pt">O atributo <g id="1">[DataMember]</g> é inválido no membro '{0}'. Um delegado não é serializável.</target>
 </trans-unit>
 <trans-unit id="tu3" xml:space="preserve">
 <source xml:lang="en">Explanation</source>
-<target xml:lang="pt">Explanation</target>
+<target xml:lang="pt">Explicação</target>
 </trans-unit>
 <trans-unit id="tu4" xml:space="preserve">
 <source xml:lang="en">Delegates can't be serialized by the serializers in Stride. Therefore, the @Stride.Core.DataMemberAttribute is always invalid when applied to a delegate member in a type.</source>
-<target xml:lang="pt">Delegates can't be serialized by the serializers in Stride. Therefore, the @Stride.Core.DataMemberAttribute is always invalid when applied to a delegate member in a type.</target>
+<target xml:lang="pt">Delegados não podem ser serializados pelos no Stride. Assim, o atributo @Stride.Core.DataMemberAttribute será sempre inválido quando aplicado a um membro do tipo delegado.</target>
 </trans-unit>
 <trans-unit id="tu5" xml:space="preserve">
 <source xml:lang="en">Example: Invalid Cases</source>
-<target xml:lang="pt">Example: Invalid Cases</target>
+<target xml:lang="pt">Exemplo: Casos inválidos</target>
 </trans-unit>
 <trans-unit id="tu6" xml:space="preserve">
 <source xml:lang="en">The following example generates STRDIAG007:</source>
-<target xml:lang="pt">The following example generates STRDIAG007:</target>
+<target xml:lang="pt">O exemplo a seguir gera um aviso STRDIAG007:</target>
 </trans-unit>
 <trans-unit id="tu7" xml:space="preserve">
 <source xml:lang="en">using Stride.Core;
@@ -42,28 +42,28 @@ public class STRDIAG007
 public class STRDIAG007
 {
     [DataMember]
-    public Action SomeDelegate;
+    public Action Delegado1;
 
     [DataMember]
-    public Action SomeDelegate2 { get; set; }
+    public Action Delegado2 { get; set; }
 }
 </target>
 </trans-unit>
 <trans-unit id="tu8" xml:space="preserve">
 <source xml:lang="en">Solution</source>
-<target xml:lang="pt">Solution</target>
+<target xml:lang="pt">Solução</target>
 </trans-unit>
 <trans-unit id="tu9" xml:space="preserve">
 <source xml:lang="en">To resolve the warning, remove the @Stride.Core.DataMemberAttribute.</source>
-<target xml:lang="pt">To resolve the warning, remove the @Stride.Core.DataMemberAttribute.</target>
+<target xml:lang="pt">Para resolver o aviso, remova o atributo @Stride.Core.DataMemberAttribute.</target>
 </trans-unit>
 <trans-unit id="tu10" xml:space="preserve">
 <source xml:lang="en">References</source>
-<target xml:lang="pt">References</target>
+<target xml:lang="pt">Referências</target>
 </trans-unit>
 <trans-unit id="tu11" xml:space="preserve">
 <source xml:lang="en"><g id="1">Serialisation</g></source>
-<target xml:lang="pt"><g id="1">Serialisation</g></target>
+<target xml:lang="pt"><g id="1">Serialização</g></target>
 </trans-unit>
 </body>
 </file>

@@ -1,14 +1,14 @@
 # Diagnosticando o aviso STRDIAG007
 
-> Invalid `[DataMember]` Attribute on the member '{0}'. A Delegate is not serializable.
+> O atributo `[DataMember]` é inválido no membro '{0}'. Um delegado não é serializável.
 
-## Explanation
+## Explicação
 
-Delegates can't be serialized by the serializers in Stride. Therefore, the @Stride.Core.DataMemberAttribute is always invalid when applied to a delegate member in a type.
+Delegados não podem ser serializados pelos no Stride. Assim, o atributo @Stride.Core.DataMemberAttribute será sempre inválido quando aplicado a um membro do tipo delegado.
 
-## Example: Invalid Cases
+## Exemplo: Casos inválidos
 
-The following example generates STRDIAG007:
+O exemplo a seguir gera um aviso STRDIAG007:
 
 ```csharp
 using Stride.Core;
@@ -16,17 +16,17 @@ using Stride.Core;
 public class STRDIAG007
 {
     [DataMember]
-    public Action SomeDelegate;
+    public Action Delegado1;
 
     [DataMember]
-    public Action SomeDelegate2 { get; set; }
+    public Action Delegado2 { get; set; }
 }
 ```
 
-## Solution
+## Solução
 
-To resolve the warning, remove the @Stride.Core.DataMemberAttribute.
+Para resolver o aviso, remova o atributo @Stride.Core.DataMemberAttribute.
 
-## References
+## Referências
 
-- [Serialisation](../manual/scripts/serialization.md)
+- [Serialização](../manual/scripts/serialization.md)

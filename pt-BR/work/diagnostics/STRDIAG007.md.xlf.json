@@ -16,181 +16,229 @@
                 ],
                 [
                     "Invalid <g1>[DataMember]<\/g1> Attribute on the member '{0}'.",
-                    "",
+                    "O atributo <g1>[DataMember]<\/g1> é inválido no membro '{0}'.",
                     "Invalid <g1>[DataMember]<\/g1> Attribute on the member '{0}'.",
                     "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG007.md",
                     {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697398230564,
                         "id": "tu2"
                     }
                 ],
                 [
                     "A Delegate is not serializable.",
-                    "",
+                    "Um delegado não é serializável.",
                     " A Delegate is not serializable.",
                     "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG007.md",
                     {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697398250884,
                         "id": "tu2"
                     }
                 ],
                 [
                     "Explanation",
-                    "",
+                    "Explicação",
                     "Explanation",
                     "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG007.md",
                     {
+                        "note": "",
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697378581050,
                         "id": "tu3"
                     }
                 ],
                 [
                     "Delegates can't be serialized by the serializers in Stride.",
-                    "",
+                    "Delegados não podem ser serializados pelos no Stride.",
                     "Delegates can't be serialized by the serializers in Stride.",
                     "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG007.md",
                     {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697398378186,
                         "id": "tu4"
                     }
                 ],
                 [
                     "Therefore, the @Stride.Core.DataMemberAttribute is always invalid when applied to a delegate member in a type.",
-                    "",
+                    "Assim, o atributo @Stride.Core.DataMemberAttribute será sempre inválido quando aplicado a um membro do tipo delegado.",
                     " Therefore, the @Stride.Core.DataMemberAttribute is always invalid when applied to a delegate member in a type.",
                     "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG007.md",
                     {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697398438449,
                         "id": "tu4"
                     }
                 ],
                 [
                     "Example:",
-                    "",
+                    "Exemplo:",
                     "Example:",
                     "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG007.md",
                     {
+                        "note": "",
+                        "creator": "anonymous",
+                        "createdTime": 0,
                         "id": "tu5"
                     }
                 ],
                 [
                     "Invalid Cases",
-                    "",
+                    "Casos inválidos",
                     " Invalid Cases",
                     "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG007.md",
                     {
+                        "note": "",
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697378780214,
                         "id": "tu5"
                     }
                 ],
                 [
                     "The following example generates STRDIAG007:",
-                    "",
+                    "O exemplo a seguir gera um aviso STRDIAG007:",
                     "The following example generates STRDIAG007:",
                     "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG007.md",
                     {
+                        "note": "",
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697398449064,
                         "id": "tu6"
                     }
                 ],
                 [
                     "using Stride.Core;",
-                    "",
+                    "using Stride.Core;",
                     "using Stride.Core;\r\n",
                     "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG007.md",
                     {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697398451096,
                         "id": "tu7"
                     }
                 ],
                 [
                     "public class STRDIAG007",
-                    "",
+                    "public class STRDIAG007",
                     "\r\npublic class STRDIAG007\r\n",
                     "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG007.md",
                     {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697398452624,
                         "id": "tu7"
                     }
                 ],
                 [
                     "{",
-                    "",
+                    "{",
                     "{\r\n",
                     "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG007.md",
                     {
+                        "note": "",
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697398453384,
                         "id": "tu7"
                     }
                 ],
                 [
                     "[DataMember]",
-                    "",
+                    "[DataMember]",
                     "    [DataMember]\r\n",
                     "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG007.md",
                     {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697398454048,
                         "id": "tu7"
                     }
                 ],
                 [
                     "public Action SomeDelegate;",
-                    "",
+                    "public Action Delegado1;",
                     "    public Action SomeDelegate;\r\n",
                     "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG007.md",
                     {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697398465184,
                         "id": "tu7"
                     }
                 ],
                 [
                     "[DataMember]",
-                    "",
+                    "[DataMember]",
                     "\r\n    [DataMember]\r\n",
                     "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG007.md",
                     {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697398466520,
                         "id": "tu7"
                     }
                 ],
                 [
                     "public Action SomeDelegate2 { get; set; }",
-                    "",
+                    "public Action Delegado2 { get; set; }",
                     "    public Action SomeDelegate2 { get; set; }\r\n",
                     "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG007.md",
                     {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697398471888,
                         "id": "tu7"
                     }
                 ],
                 [
                     "}",
-                    "",
+                    "}",
                     "}\r\n",
                     "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG007.md",
                     {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697398473376,
                         "id": "tu7"
                     }
                 ],
                 [
                     "Solution",
-                    "",
+                    "Solução",
                     "Solution",
                     "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG007.md",
                     {
+                        "note": "",
+                        "creator": "anonymous",
+                        "createdTime": 0,
                         "id": "tu8"
                     }
                 ],
                 [
                     "To resolve the warning, remove the @Stride.Core.DataMemberAttribute.",
-                    "",
+                    "Para resolver o aviso, remova o atributo @Stride.Core.DataMemberAttribute.",
                     "To resolve the warning, remove the @Stride.Core.DataMemberAttribute.",
                     "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG007.md",
                     {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697398492671,
                         "id": "tu9"
                     }
                 ],
                 [
                     "References",
-                    "",
+                    "Referências",
                     "References",
                     "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG007.md",
                     {
+                        "note": "",
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697380979738,
                         "id": "tu10"
                     }
                 ],
                 [
                     "Serialisation",
-                    "",
+                    "Serialização",
                     "<g1>Serialisation<\/g1>",
                     "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG007.md",
                     {
+                        "note": "",
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697374243815,
                         "id": "tu11"
                     }
                 ]
