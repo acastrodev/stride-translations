@@ -1,15 +1,15 @@
-# Diagnosticando o Aviso STRDIAG003
+# Diagnosticando o aviso STRDIAG003
 
-> The member '{0}' with `[DataMember]` is not accessible to the serializer. Only public/internal/internal > protected visibility is supported, when the `[DataMember]` attribute is applied.
+> O membro '{0}' com `[DataMember]` não é acessível ao serializador. Somente os modificadores de acesso public, internal ou internal > protected são suportados quando o atributo `[DataMember]` é aplicado.
 
-## Explanation
+## Explicação
 
-The serialization concept in Stride expects `public`/`internal`/`internal protected` visibility of properties. Other accessibility won't be considered for serialization.
-To count `internal`/`internal protected` as visible to the Editor the @Stride.Core.DataMemberAttribute has to be applied, else it's considered as not visible.
+O conceito de serialização no Stride espera os modificadores de acesso `public`, `internal` ou `internal protected` para as propriedades. Outros modificadores de acesso não serão considerados para a serialização.
+Para `internal`, `internal protected` serem mostrados no Editor, o atributo @Stride.Core.DataMemberAttribute deve ser aplicado, caso contrário, não esses modificadores de acesso não serão considerados como visível.
 
-## Example
+## Exemplo
 
-The following example generates STRDIAG003 on each property:
+O exemplo a seguir gera um aviso STRDIAG003 em cada propriedade:
 
 ```csharp
 using Stride.Core;
@@ -17,16 +17,16 @@ using Stride.Core;
 public class STRDIAG003
 {
     [DataMember]
-    private int Value { get; set; }
+    private int Valor { get; set; }
 
     [DataMember]
-    protected string Value;
+    protected string Valor;
     
     [DataMember]
-    private protected string Value;
+    private protected string Valor;
 }
 ```
 
-## Solution
+## Solução
 
-To resolve the warning, increase the Accessibility to `public`/`internal`/`internal protected` of the member or remove the @Stride.Core.DataMemberAttribute Attribute.
+Para resolver o aviso, altere o modifcador de acesso do membro para `public`, `internal`, `internal protected` ou remova o atributo @Stride.Core.DataMemberAttribute.
