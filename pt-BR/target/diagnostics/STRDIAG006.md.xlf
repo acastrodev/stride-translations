@@ -7,23 +7,23 @@
 </trans-unit>
 <trans-unit id="tu2" xml:space="preserve">
 <source xml:lang="en">Invalid DataMemberMode for the specified <g id="1">[DataMember]</g> member '{0}'. A public/internal/internal protected setter is required for 'DataMemberMode.Assign'.</source>
-<target xml:lang="pt">Invalid DataMemberMode for the specified <g id="1">[DataMember]</g> member '{0}'. A public/internal/internal protected setter is required for 'DataMemberMode.Assign'.</target>
+<target xml:lang="pt">DataMemberMode inválido para o membro <g id="1">[DataMember]</g> especificado '{0}'. Um public/internal/internal protected acessador set é necessário para utilizar o atributo 'DataMemberMode.Assign'.</target>
 </trans-unit>
 <trans-unit id="tu3" xml:space="preserve">
 <source xml:lang="en">Explanation</source>
-<target xml:lang="pt">Explanation</target>
+<target xml:lang="pt">Explicação</target>
 </trans-unit>
 <trans-unit id="tu4" xml:space="preserve">
 <source xml:lang="en">The @Stride.Core.DataMemberMode.Assign let's the serializers create new objects and sets them into the target property. The Property needs an accessible/visible setter.</source>
-<target xml:lang="pt">The @Stride.Core.DataMemberMode.Assign let's the serializers create new objects and sets them into the target property. The Property needs an accessible/visible setter.</target>
+<target xml:lang="pt">O atributo @Stride.Core.DataMemberMode.Assign permite que os serializadores criem novos objetos e os coloquem na propriedade de destino. A propriedade precisa de um acessador set acessível/visível.</target>
 </trans-unit>
 <trans-unit id="tu5" xml:space="preserve">
 <source xml:lang="en">Example: Invalid Cases</source>
-<target xml:lang="pt">Example: Invalid Cases</target>
+<target xml:lang="pt">Exemplo: Casos inválidos</target>
 </trans-unit>
 <trans-unit id="tu6" xml:space="preserve">
 <source xml:lang="en">The following example generates STRDIAG006:</source>
-<target xml:lang="pt">The following example generates STRDIAG006:</target>
+<target xml:lang="pt">O exemplo a seguir gera um aviso STRDIAG006:</target>
 </trans-unit>
 <trans-unit id="tu7" xml:space="preserve">
 <source xml:lang="en">using Stride.Core;
@@ -49,33 +49,33 @@ public class STRDIAG006
 
 public class STRDIAG006
 {
-    // non existent setters count as non visible
+    // acessadores set inexistentes são considerados não visíveis
     [DataMember(DataMemberMode.Assign)]
     [DataMember(DataMemberMode.Assign)]
-    public int Property1 { get; }
+    public int Propriedade1 { get; }
 
     [DataMember(DataMemberMode.Assign)]
-    public int Property2 { get; private set; }
+    public int Propriedade2 { get; private set; }
     
     [DataMember(DataMemberMode.Assign)]
-    public int Property3 { get; protected set; }
+    public int Propriedade3 { get; protected set; }
     
     [DataMember(DataMemberMode.Assign)]
-    public int Property4 { get; private protected set; }
+    public int Propriedade4 { get; private protected set; }
 }
 </target>
 </trans-unit>
 <trans-unit id="tu8" xml:space="preserve">
 <source xml:lang="en">Example: Special Case <g id="1">internal</g></source>
-<target xml:lang="pt">Example: Special Case <g id="1">internal</g></target>
+<target xml:lang="pt">Example: Caso especial <g id="1">internal</g></target>
 </trans-unit>
 <trans-unit id="tu9" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>!IMPORTANT<x id="2"/>
 To explicitly set the <g id="3">DataMemberMode.Assign</g> the @Stride.Core.DataMemberAttribute has to be applied.
 Internal visibility counts then as visible for the serializers and becomes valid.</source>
-<target xml:lang="pt"><x id="1"/>!IMPORTANT<x id="2"/>
-To explicitly set the <g id="3">DataMemberMode.Assign</g> the @Stride.Core.DataMemberAttribute has to be applied.
-Internal visibility counts then as visible for the serializers and becomes valid.</target>
+<target xml:lang="pt"><x id="1"/>!Important<x id="2"/>
+Para definir explicitamente o atributo <g id="3">DataMemberMode.Assign</g>, é necessário aplicar o atributo @Stride.Core.DataMemberAttribute.
+O modificador de acesso `internal` é considerado visível pelos serializadores e se torna válido.</target>
 </trans-unit>
 <trans-unit id="tu10" xml:space="preserve">
 <source xml:lang="en">using Stride.Core;
@@ -94,30 +94,30 @@ public class STRDIAG006
 
 public class STRDIAG006
 {
-    // non existent setters count as non visible
+    // acessadores set inexistentes são considerados não visíveis
     [DataMember(DataMemberMode.Assign)]
-    public int Property1 { get; internal set; }
+    public int Propriedade1 { get; internal set; }
 
     [DataMember(DataMemberMode.Assign)]
-    public int Property2 { get; internal protected set; }
+    public int Propriedade2 { get; internal protected set; }
 }
 </target>
 </trans-unit>
 <trans-unit id="tu11" xml:space="preserve">
 <source xml:lang="en">Solution</source>
-<target xml:lang="pt">Solution</target>
+<target xml:lang="pt">Solução</target>
 </trans-unit>
 <trans-unit id="tu12" xml:space="preserve">
 <source xml:lang="en">To resolve the warning, increase the accessibility of the properties set to <g id="1">public</g>/<g id="2">internal</g>. Or remove the explicit <g id="3">DataMemberMode.Assign</g>, this can result in the <g id="4">DataMemberMode.Content</g>, if the property is a non valuetype/string type.</source>
-<target xml:lang="pt">To resolve the warning, increase the accessibility of the properties set to <g id="1">public</g>/<g id="2">internal</g>. Or remove the explicit <g id="3">DataMemberMode.Assign</g>, this can result in the <g id="4">DataMemberMode.Content</g>, if the property is a non valuetype/string type.</target>
+<target xml:lang="pt">Para resolver o aviso, altere o modificador de acesso do acessador get da propriedade para <g id="1">public</g> ou <g id="2">internal</g>. Ou remova explicitamente o atributo <g id="3">DataMemberMode.Assign</g>, isso pode resultar no <g id="4">DataMemberMode.Content</g> se a propriedade for do tipo valor ou string.</target>
 </trans-unit>
 <trans-unit id="tu13" xml:space="preserve">
 <source xml:lang="en">References</source>
-<target xml:lang="pt">References</target>
+<target xml:lang="pt">Referências</target>
 </trans-unit>
 <trans-unit id="tu14" xml:space="preserve">
 <source xml:lang="en"><g id="1">Serialisation</g></source>
-<target xml:lang="pt"><g id="1">Serialisation</g></target>
+<target xml:lang="pt"><g id="1">Serialização</g></target>
 </trans-unit>
 </body>
 </file>

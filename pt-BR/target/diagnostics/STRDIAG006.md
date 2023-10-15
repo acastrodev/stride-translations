@@ -1,60 +1,60 @@
 # Diagnosticando o aviso STRDIAG006
 
-> Invalid DataMemberMode for the specified `[DataMember]` member '{0}'. A public/internal/internal protected setter is required for 'DataMemberMode.Assign'.
+> DataMemberMode inválido para o membro `[DataMember]` especificado '{0}'. Um public/internal/internal protected acessador set é necessário para utilizar o atributo 'DataMemberMode.Assign'.
 
-## Explanation
+## Explicação
 
-The @Stride.Core.DataMemberMode.Assign let's the serializers create new objects and sets them into the target property. The Property needs an accessible/visible setter.
+O atributo @Stride.Core.DataMemberMode.Assign permite que os serializadores criem novos objetos e os coloquem na propriedade de destino. A propriedade precisa de um acessador set acessível/visível.
 
-## Example: Invalid Cases
+## Exemplo: Casos inválidos
 
-The following example generates STRDIAG006:
-
-```csharp
-using Stride.Core;
-
-public class STRDIAG006
-{
-    // non existent setters count as non visible
-    [DataMember(DataMemberMode.Assign)]
-    [DataMember(DataMemberMode.Assign)]
-    public int Property1 { get; }
-
-    [DataMember(DataMemberMode.Assign)]
-    public int Property2 { get; private set; }
-    
-    [DataMember(DataMemberMode.Assign)]
-    public int Property3 { get; protected set; }
-    
-    [DataMember(DataMemberMode.Assign)]
-    public int Property4 { get; private protected set; }
-}
-```
-
-## Example: Special Case `internal`
-
-> [!IMPORTANT]
-> To explicitly set the `DataMemberMode.Assign` the @Stride.Core.DataMemberAttribute has to be applied.
-> Internal visibility counts then as visible for the serializers and becomes valid.
+O exemplo a seguir gera um aviso STRDIAG006:
 
 ```csharp
 using Stride.Core;
 
 public class STRDIAG006
 {
-    // non existent setters count as non visible
+    // acessadores set inexistentes são considerados não visíveis
     [DataMember(DataMemberMode.Assign)]
-    public int Property1 { get; internal set; }
+    [DataMember(DataMemberMode.Assign)]
+    public int Propriedade1 { get; }
 
     [DataMember(DataMemberMode.Assign)]
-    public int Property2 { get; internal protected set; }
+    public int Propriedade2 { get; private set; }
+    
+    [DataMember(DataMemberMode.Assign)]
+    public int Propriedade3 { get; protected set; }
+    
+    [DataMember(DataMemberMode.Assign)]
+    public int Propriedade4 { get; private protected set; }
 }
 ```
 
-## Solution
+## Example: Caso especial `internal`
 
-To resolve the warning, increase the accessibility of the properties set to `public`/`internal`. Or remove the explicit `DataMemberMode.Assign`, this can result in the `DataMemberMode.Content`, if the property is a non valuetype/string type.
+> [!Important]
+> Para definir explicitamente o atributo `DataMemberMode.Assign`, é necessário aplicar o atributo @Stride.Core.DataMemberAttribute.
+> O modificador de acesso `internal` é considerado visível pelos serializadores e se torna válido.
 
-## References
+```csharp
+using Stride.Core;
 
-- [Serialisation](../manual/scripts/serialization.md)
+public class STRDIAG006
+{
+    // acessadores set inexistentes são considerados não visíveis
+    [DataMember(DataMemberMode.Assign)]
+    public int Propriedade1 { get; internal set; }
+
+    [DataMember(DataMemberMode.Assign)]
+    public int Propriedade2 { get; internal protected set; }
+}
+```
+
+## Solução
+
+Para resolver o aviso, altere o modificador de acesso do acessador get da propriedade para `public` ou `internal`. Ou remova explicitamente o atributo `DataMemberMode.Assign`, isso pode resultar no `DataMemberMode.Content` se a propriedade for do tipo valor ou string.
+
+## Referências
+
+- [Serialização](../manual/scripts/serialization.md)
