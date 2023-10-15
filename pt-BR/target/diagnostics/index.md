@@ -1,6 +1,6 @@
 # Diagnóstico do Stride
 
-Stride.Core.CompilerServices contém analisadores do .NET Compiler Platform (Roslyn).
+O Stride.Core.CompilerServices contém analisadores do .NET Compiler Platform (Roslyn).
 
 > [!Important]
 > Esses analisadores não realizam nenhum tipo de telemetria. Os mesmos analisadores são usados pelo seu ambiente de desenvolvimento quando você recebe um diagnóstico CSXXXX.

@@ -17,73 +17,89 @@
                 ],
                 [
                     "There is an Attribute Contradiction on '{0}' Member.",
-                    "",
+                    "Há uma Contradição de atributo no membro '{0}'.",
                     "There is an Attribute Contradiction on '{0}' Member.",
                     "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG000.md",
                     {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697378661956,
                         "id": "tu2"
                     }
                 ],
                 [
                     "<g1>[DataMemberIgnore]<\/g1> Attribute on a <g2>[DataMember]<\/g2> is not supported.",
-                    "",
+                    "O atributo <g1>[DataMemberIgnore]<\/g1> não é suportado quando usado em conjunto com o atributo <g2>[DataMember]<\/g2>, ",
                     " <g1>[DataMemberIgnore]<\/g1> Attribute on a <g2>[DataMember]<\/g2> is not supported.\r\n",
                     "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG000.md",
                     {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697378661956,
                         "id": "tu2"
                     }
                 ],
                 [
                     "Except if it has also <g3>[DataMemberUpdatable]<\/g3> Attribute.",
-                    "",
+                    "a menos que também tenha o atributo [DataMemberUpdatable].",
                     "Except if it has also <g3>[DataMemberUpdatable]<\/g3> Attribute.",
                     "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG000.md",
                     {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697378565690,
                         "id": "tu2"
                     }
                 ],
                 [
                     "Explanation",
-                    "",
+                    "Explicação",
                     "Explanation",
                     "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG000.md",
                     {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697378581050,
                         "id": "tu3"
                     }
                 ],
                 [
                     "Adding @Stride.Core.DataMemberAttribute and @Stride.Core.DataMemberIgnoreAttribute to the same member is not supported.",
-                    "",
+                    "Não é possível adicionar @Stride.Core.DataMemberAttribute e @Stride.Core.DataMemberIgnoreAttribute ao mesmo tempo ao mesmo membro.",
                     "Adding @Stride.Core.DataMemberAttribute and @Stride.Core.DataMemberIgnoreAttribute to the same member is not supported.",
                     "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG000.md",
                     {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697378710807,
                         "id": "tu4"
                     }
                 ],
                 [
                     "This would be a contradiction.",
-                    "",
+                    "Isso seria uma contradição.",
                     " This would be a contradiction.\r\n",
                     "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG000.md",
                     {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697378712839,
                         "id": "tu4"
                     }
                 ],
                 [
                     "It would mean the serializer should serialize the member and ignore it at the same time.",
-                    "",
+                    "Significaria que o serializador deveria serializar o membro e, ao mesmo tempo, ignorá-lo.",
                     "It would mean the serializer should serialize the member and ignore it at the same time.",
                     "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG000.md",
                     {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697378728583,
                         "id": "tu4"
                     }
                 ],
                 [
                     "The @Stride.Updater.DataMemberUpdatableAttribute  makes the combination valid again as it negates the @Stride.Core.DataMemberIgnoreAttribute for the binary serializer.",
-                    "",
+                    "O atributo @Stride.Updater.DataMemberUpdatableAttribute torna a combinação válida novamente, uma vez que anula o atributo @Stride.Core.DataMemberIgnoreAttribute para o serializador binário.",
                     " The @Stride.Updater.DataMemberUpdatableAttribute  makes the combination valid again as it negates the @Stride.Core.DataMemberIgnoreAttribute for the binary serializer.",
                     "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG000.md",
                     {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697378764334,
                         "id": "tu4"
                     }
                 ],
@@ -101,46 +117,56 @@
                 ],
                 [
                     "Invalid cases",
-                    "",
+                    "Casos inválidos",
                     " Invalid cases",
                     "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG000.md",
                     {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697378780214,
                         "id": "tu5"
                     }
                 ],
                 [
                     "The following example generates STRDIAG000 on each property:",
-                    "",
+                    "O exemplo a seguir gera um aviso STRDIAG000 em cada propriedade:",
                     "The following example generates STRDIAG000 on each property:",
                     "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG000.md",
                     {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697378822536,
                         "id": "tu6"
                     }
                 ],
                 [
                     "\/\/ STRDIAG000.cs",
-                    "",
+                    "\/\/ STRDIAG000.cs",
                     "\/\/ STRDIAG000.cs\r\n",
                     "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG000.md",
                     {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697378830429,
                         "id": "tu7"
                     }
                 ],
                 [
                     "using Stride.Core;",
-                    "",
+                    "using Stride.Core;",
                     "using Stride.Core;\r\n",
                     "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG000.md",
                     {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697378831221,
                         "id": "tu7"
                     }
                 ],
                 [
                     "public class STRDIAG000",
-                    "",
+                    "public class STRDIAG000",
                     "\r\npublic class STRDIAG000\r\n",
                     "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG000.md",
                     {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697378831949,
                         "id": "tu7"
                     }
                 ],
@@ -158,64 +184,78 @@
                 ],
                 [
                     "[DataMember]",
-                    "",
+                    "[DataMember]",
                     "    [DataMember]\r\n",
                     "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG000.md",
                     {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697378833917,
                         "id": "tu7"
                     }
                 ],
                 [
                     "[DataMemberIgnore]",
-                    "",
+                    "[DataMemberIgnore]",
                     "    [DataMemberIgnore]\r\n",
                     "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG000.md",
                     {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697378834597,
                         "id": "tu7"
                     }
                 ],
                 [
                     "public int Value { get; set; }",
-                    "",
+                    "public int Valor { get; set; }",
                     "    public int Value { get; set; }\r\n",
                     "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG000.md",
                     {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697378839565,
                         "id": "tu7"
                     }
                 ],
                 [
                     "[DataMember]",
-                    "",
+                    "[DataMember]",
                     "\r\n    [DataMember]\r\n",
                     "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG000.md",
                     {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697378841597,
                         "id": "tu7"
                     }
                 ],
                 [
                     "[DataMemberIgnore]",
-                    "",
+                    "[DataMemberIgnore]",
                     "    [DataMemberIgnore]\r\n",
                     "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG000.md",
                     {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697378842285,
                         "id": "tu7"
                     }
                 ],
                 [
                     "public int Value;",
-                    "",
+                    "public int Valor;",
                     "    public int Value;\r\n",
                     "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG000.md",
                     {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697378846901,
                         "id": "tu7"
                     }
                 ],
                 [
                     "}",
-                    "",
+                    "}",
                     "}\r\n",
                     "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG000.md",
                     {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697378848956,
                         "id": "tu7"
                     }
                 ],
@@ -233,10 +273,12 @@
                 ],
                 [
                     "Special Case <g1>DataMemberUpdatable<\/g1>",
-                    "",
+                    "Caso especial <g1>DataMemberUpdatable<\/g1>",
                     " Special Case <g1>DataMemberUpdatable<\/g1>",
                     "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG000.md",
                     {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697378877061,
                         "id": "tu8"
                     }
                 ],
@@ -254,37 +296,45 @@
                 ],
                 [
                     "There is a special case if the @Stride.Updater.DataMemberUpdatableAttribute is applied.",
-                    "",
+                    "Há um caso especial se o atributo @Stride.Updater.DataMemberUpdatableAttribute for aplicado.",
                     "There is a special case if the @Stride.Updater.DataMemberUpdatableAttribute is applied.\r\n",
                     "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG000.md",
                     {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697378907924,
                         "id": "tu9"
                     }
                 ],
                 [
                     "This Attribute negates the @Stride.Core.DataMemberIgnoreAttribute for the binary Serializer, so it becomes valid again.",
-                    "",
+                    "O atributo @Stride.Updater.DataMemberUpdatableAttribute nega o atributo @Stride.Core.DataMemberIgnoreAttribute para o Serializador binário, tornando-o válido novamente.",
                     "This Attribute negates the @Stride.Core.DataMemberIgnoreAttribute for the binary Serializer, so it becomes valid again.",
                     "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG000.md",
                     {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697378962547,
                         "id": "tu9"
                     }
                 ],
                 [
                     "using Stride.Core;",
-                    "",
+                    "using Stride.Core;",
                     "using Stride.Core;\r\n",
                     "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG000.md",
                     {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697378966363,
                         "id": "tu10"
                     }
                 ],
                 [
                     "public class STRDIAG000",
-                    "",
+                    "public class STRDIAG000",
                     "\r\npublic class STRDIAG000\r\n",
                     "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG000.md",
                     {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697378968107,
                         "id": "tu10"
                     }
                 ],
@@ -335,12 +385,12 @@
                 ],
                 [
                     "public int Value { get; set; }",
-                    "public int Value { get; set; }",
+                    "public int Valor { get; set; }",
                     "    public int Value { get; set; }\r\n",
                     "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG000.md",
                     {
                         "creator": "Alexandre Castro",
-                        "createdTime": 1697367182165,
+                        "createdTime": 1697378976956,
                         "id": "tu10"
                     }
                 ],
@@ -369,19 +419,23 @@
                 ],
                 [
                     "To resolve the warning, pick either the @Stride.Core.DataMemberAttribute or the @Stride.Core.DataMemberIgnoreAttribute.",
-                    "",
+                    "Para resolver o aviso, escolha entre o atributo @Stride.Core.DataMemberAttribute ou o atributo @Stride.Core.DataMemberIgnoreAttribute.",
                     "To resolve the warning, pick either the @Stride.Core.DataMemberAttribute or the @Stride.Core.DataMemberIgnoreAttribute.\r\n",
                     "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG000.md",
                     {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697379002930,
                         "id": "tu12"
                     }
                 ],
                 [
                     "If the <g1>YamlSerializer<\/g1> and the Editor should ignore the member but the binary serializer not, then add the @Stride.Core.DataMemberIgnoreAttribute.",
-                    "",
+                    "Se o <g1>YamlSerializer<\/g1> e o Editor devem ignorar o membro, mas o serializador binário não, adicione o atributo @Stride.Core.DataMemberIgnoreAttribute.",
                     "If the <g1>YamlSerializer<\/g1> and the Editor should ignore the member but the binary serializer not, then add the @Stride.Core.DataMemberIgnoreAttribute.",
                     "\/D:\/repos\/stride-translations\/pt-BR\/source\/diagnostics\/STRDIAG000.md",
                     {
+                        "creator": "Alexandre Castro",
+                        "createdTime": 1697379036754,
                         "id": "tu12"
                     }
                 ],

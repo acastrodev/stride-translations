@@ -1,16 +1,16 @@
 # Diagnosticando o Aviso STRDIAG000
 
-> There is an Attribute Contradiction on '{0}' Member. `[DataMemberIgnore]` Attribute on a `[DataMember]` is not supported.
-> Except if it has also `[DataMemberUpdatable]` Attribute.
+> Há uma Contradição de atributo no membro '{0}'. O atributo `[DataMemberIgnore]` não é suportado quando usado em conjunto com o atributo `[DataMember]`, 
+> a menos que também tenha o atributo [DataMemberUpdatable].``
 
-## Explanation
+## Explicação
 
-Adding @Stride.Core.DataMemberAttribute and @Stride.Core.DataMemberIgnoreAttribute to the same member is not supported. This would be a contradiction.
-It would mean the serializer should serialize the member and ignore it at the same time. The @Stride.Updater.DataMemberUpdatableAttribute  makes the combination valid again as it negates the @Stride.Core.DataMemberIgnoreAttribute for the binary serializer.
+Não é possível adicionar @Stride.Core.DataMemberAttribute e @Stride.Core.DataMemberIgnoreAttribute ao mesmo tempo ao mesmo membro. Isso seria uma contradição.
+Significaria que o serializador deveria serializar o membro e, ao mesmo tempo, ignorá-lo. O atributo @Stride.Updater.DataMemberUpdatableAttribute torna a combinação válida novamente, uma vez que anula o atributo @Stride.Core.DataMemberIgnoreAttribute para o serializador binário.
 
-## Exemplo: Invalid cases
+## Exemplo: Casos inválidos
 
-The following example generates STRDIAG000 on each property:
+O exemplo a seguir gera um aviso STRDIAG000 em cada propriedade:
 
 ```csharp
 // STRDIAG000.cs
@@ -20,19 +20,19 @@ public class STRDIAG000
 {
     [DataMember]
     [DataMemberIgnore]
-    public int Value { get; set; }
+    public int Valor { get; set; }
 
     [DataMember]
     [DataMemberIgnore]
-    public int Value;
+    public int Valor;
 }
 ```
 
-## Exemplo: Special Case `DataMemberUpdatable`
+## Exemplo: Caso especial `DataMemberUpdatable`
 
-> [!IMPORTANT]
-> There is a special case if the @Stride.Updater.DataMemberUpdatableAttribute is applied.
-> This Attribute negates the @Stride.Core.DataMemberIgnoreAttribute for the binary Serializer, so it becomes valid again.
+> [!Important]
+> Há um caso especial se o atributo @Stride.Updater.DataMemberUpdatableAttribute for aplicado.
+> O atributo @Stride.Updater.DataMemberUpdatableAttribute nega o atributo @Stride.Core.DataMemberIgnoreAttribute para o Serializador binário, tornando-o válido novamente.
 
 ```csharp
 using Stride.Core;
@@ -42,15 +42,15 @@ public class STRDIAG000
     [DataMember]
     [DataMemberIgnore]
     [DataMemberUpdatable]
-    public int Value { get; set; }
+    public int Valor { get; set; }
 }
 ```
 
 ## Solução
 
-> To resolve the warning, pick either the @Stride.Core.DataMemberAttribute or the @Stride.Core.DataMemberIgnoreAttribute.
-> If the `YamlSerializer` and the Editor should ignore the member but the binary serializer not, then add the @Stride.Core.DataMemberIgnoreAttribute.
+> Para resolver o aviso, escolha entre o atributo @Stride.Core.DataMemberAttribute ou o atributo @Stride.Core.DataMemberIgnoreAttribute.
+> Se o `YamlSerializer` e o Editor devem ignorar o membro, mas o serializador binário não, adicione o atributo @Stride.Core.DataMemberIgnoreAttribute.
 
-## References
+## Referências
 
-- [Serialisation](../manual/scripts/serialization.md)
+- [Serialização](../manual/scripts/serialization.md)

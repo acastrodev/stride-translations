@@ -8,26 +8,26 @@
 <trans-unit id="tu2" xml:space="preserve">
 <source xml:lang="en">There is an Attribute Contradiction on '{0}' Member. <g id="1">[DataMemberIgnore]</g> Attribute on a <g id="2">[DataMember]</g> is not supported.
 Except if it has also <g id="3">[DataMemberUpdatable]</g> Attribute.</source>
-<target xml:lang="pt">There is an Attribute Contradiction on '{0}' Member. <g id="1">[DataMemberIgnore]</g> Attribute on a <g id="2">[DataMember]</g> is not supported.
-Except if it has also <g id="3">[DataMemberUpdatable]</g> Attribute.</target>
+<target xml:lang="pt">Há uma Contradição de atributo no membro '{0}'. O atributo <g id="1">[DataMemberIgnore]</g> não é suportado quando usado em conjunto com o atributo <g id="2">[DataMember]</g>, 
+a menos que também tenha o atributo [DataMemberUpdatable].<g id="3"/></target>
 </trans-unit>
 <trans-unit id="tu3" xml:space="preserve">
 <source xml:lang="en">Explanation</source>
-<target xml:lang="pt">Explanation</target>
+<target xml:lang="pt">Explicação</target>
 </trans-unit>
 <trans-unit id="tu4" xml:space="preserve">
 <source xml:lang="en">Adding @Stride.Core.DataMemberAttribute and @Stride.Core.DataMemberIgnoreAttribute to the same member is not supported. This would be a contradiction.
 It would mean the serializer should serialize the member and ignore it at the same time. The @Stride.Updater.DataMemberUpdatableAttribute  makes the combination valid again as it negates the @Stride.Core.DataMemberIgnoreAttribute for the binary serializer.</source>
-<target xml:lang="pt">Adding @Stride.Core.DataMemberAttribute and @Stride.Core.DataMemberIgnoreAttribute to the same member is not supported. This would be a contradiction.
-It would mean the serializer should serialize the member and ignore it at the same time. The @Stride.Updater.DataMemberUpdatableAttribute  makes the combination valid again as it negates the @Stride.Core.DataMemberIgnoreAttribute for the binary serializer.</target>
+<target xml:lang="pt">Não é possível adicionar @Stride.Core.DataMemberAttribute e @Stride.Core.DataMemberIgnoreAttribute ao mesmo tempo ao mesmo membro. Isso seria uma contradição.
+Significaria que o serializador deveria serializar o membro e, ao mesmo tempo, ignorá-lo. O atributo @Stride.Updater.DataMemberUpdatableAttribute torna a combinação válida novamente, uma vez que anula o atributo @Stride.Core.DataMemberIgnoreAttribute para o serializador binário.</target>
 </trans-unit>
 <trans-unit id="tu5" xml:space="preserve">
 <source xml:lang="en">Example: Invalid cases</source>
-<target xml:lang="pt">Exemplo: Invalid cases</target>
+<target xml:lang="pt">Exemplo: Casos inválidos</target>
 </trans-unit>
 <trans-unit id="tu6" xml:space="preserve">
 <source xml:lang="en">The following example generates STRDIAG000 on each property:</source>
-<target xml:lang="pt">The following example generates STRDIAG000 on each property:</target>
+<target xml:lang="pt">O exemplo a seguir gera um aviso STRDIAG000 em cada propriedade:</target>
 </trans-unit>
 <trans-unit id="tu7" xml:space="preserve">
 <source xml:lang="en">// STRDIAG000.cs
@@ -51,25 +51,25 @@ public class STRDIAG000
 {
     [DataMember]
     [DataMemberIgnore]
-    public int Value { get; set; }
+    public int Valor { get; set; }
 
     [DataMember]
     [DataMemberIgnore]
-    public int Value;
+    public int Valor;
 }
 </target>
 </trans-unit>
 <trans-unit id="tu8" xml:space="preserve">
 <source xml:lang="en">Example: Special Case <g id="1">DataMemberUpdatable</g></source>
-<target xml:lang="pt">Exemplo: Special Case <g id="1">DataMemberUpdatable</g></target>
+<target xml:lang="pt">Exemplo: Caso especial <g id="1">DataMemberUpdatable</g></target>
 </trans-unit>
 <trans-unit id="tu9" xml:space="preserve">
 <source xml:lang="en"><x id="1"/>!IMPORTANT<x id="2"/>
 There is a special case if the @Stride.Updater.DataMemberUpdatableAttribute is applied.
 This Attribute negates the @Stride.Core.DataMemberIgnoreAttribute for the binary Serializer, so it becomes valid again.</source>
-<target xml:lang="pt"><x id="1"/>!IMPORTANT<x id="2"/>
-There is a special case if the @Stride.Updater.DataMemberUpdatableAttribute is applied.
-This Attribute negates the @Stride.Core.DataMemberIgnoreAttribute for the binary Serializer, so it becomes valid again.</target>
+<target xml:lang="pt"><x id="1"/>!Important<x id="2"/>
+Há um caso especial se o atributo @Stride.Updater.DataMemberUpdatableAttribute for aplicado.
+O atributo @Stride.Updater.DataMemberUpdatableAttribute nega o atributo @Stride.Core.DataMemberIgnoreAttribute para o Serializador binário, tornando-o válido novamente.</target>
 </trans-unit>
 <trans-unit id="tu10" xml:space="preserve">
 <source xml:lang="en">using Stride.Core;
@@ -89,7 +89,7 @@ public class STRDIAG000
     [DataMember]
     [DataMemberIgnore]
     [DataMemberUpdatable]
-    public int Value { get; set; }
+    public int Valor { get; set; }
 }
 </target>
 </trans-unit>
@@ -100,16 +100,16 @@ public class STRDIAG000
 <trans-unit id="tu12" xml:space="preserve">
 <source xml:lang="en">To resolve the warning, pick either the @Stride.Core.DataMemberAttribute or the @Stride.Core.DataMemberIgnoreAttribute.
 If the <g id="1">YamlSerializer</g> and the Editor should ignore the member but the binary serializer not, then add the @Stride.Core.DataMemberIgnoreAttribute.</source>
-<target xml:lang="pt">To resolve the warning, pick either the @Stride.Core.DataMemberAttribute or the @Stride.Core.DataMemberIgnoreAttribute.
-If the <g id="1">YamlSerializer</g> and the Editor should ignore the member but the binary serializer not, then add the @Stride.Core.DataMemberIgnoreAttribute.</target>
+<target xml:lang="pt">Para resolver o aviso, escolha entre o atributo @Stride.Core.DataMemberAttribute ou o atributo @Stride.Core.DataMemberIgnoreAttribute.
+Se o <g id="1">YamlSerializer</g> e o Editor devem ignorar o membro, mas o serializador binário não, adicione o atributo @Stride.Core.DataMemberIgnoreAttribute.</target>
 </trans-unit>
 <trans-unit id="tu13" xml:space="preserve">
 <source xml:lang="en">References</source>
-<target xml:lang="pt">References</target>
+<target xml:lang="pt">Referências</target>
 </trans-unit>
 <trans-unit id="tu14" xml:space="preserve">
 <source xml:lang="en"><g id="1">Serialisation</g></source>
-<target xml:lang="pt"><g id="1">Serialisation</g></target>
+<target xml:lang="pt"><g id="1">Serialização</g></target>
 </trans-unit>
 </body>
 </file>
