@@ -20,7 +20,7 @@ Dentro de um projeto, é possível ter um ou vários pacotes.  A vantagem é que
 
 * **obj:**  A pasta **obj** contém arquivos em cache  gerados durante a compilação do projeto.
 
-* **Assets:** é o local recomendado para armazenar arquivos como imagens e arquivos de áudio usados em seus assets.
+* **Resources:** é o local recomendado para armazenar arquivos como imagens e arquivos de áudio usados em seus assets.
 
 ## Estrutura de projeto recomendada
 
