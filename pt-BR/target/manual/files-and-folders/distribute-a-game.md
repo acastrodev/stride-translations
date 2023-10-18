@@ -56,7 +56,7 @@ Na pasta de lançamento do projeto no diretório bin (por exemplo, *MeuJogo/Bin/
 
 * arquivos que contêm `vshost` em seus nomes de arquivo (por exemplo `MeuJogo.vshost.exe` e `MeuJogo.vshost.exe.manifest`)
 
-* Pastas que não sejam as pastas g1>x64</g>, <g id="2">x86</g>, ou <g id="3">data</g><g id="1">
+* Pastas que não sejam as pastas `x64`, `x86`, ou `data`
 
 * Outros arquivos desnecessários, como arquivos de configuração personalizados (ou seja, arquivos que não foram criados com o Stride)
 
