@@ -68,5 +68,5 @@ Depois de excluir os arquivos de cache, quando iniciar o Game Studio, ele criar�
 
 ## Veja também
 
-* [Estrutura do projecto](project-structure.md)
+* [Estrutura do projeto](project-structure.md)
 * [Controle de versão](version-control.md)

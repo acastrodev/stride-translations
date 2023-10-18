@@ -1,68 +1,68 @@
 # Distribuir um jogo
 
-Quando estiver pronto para publicar o seu jogo, crie uma versão do Visual Studio e depois distribua-a.
+Quando estiver pronto para lançar seu jogo, crie uma versão de lançamento usando o Visual Studio e, em seguida, proceda com a distribuição.
 
-## 1. Criar uma compilação de lançamento
+## 1. Criar uma versão de em modo release
 
-1. Se você construiu seu jogo no modo de lançamento antes, em sua pasta de projeto (por exemplo *MyGame/Bin/MyPlatform/Release/*), exclua a pasta *Data*. Esta pasta pode conter arquivos desnecessários, como versões antigas de ativos, então é mais simples construí-lo novamente do zero.
+1. Se você já tiver gerado uma versão de em modo release anteriormente, no diretório do projeto (por exemplo, *MeuJogo/Bin/MinhaPlataforma/Release/*), exclua a pasta *Data*. Essa pasta pode conter arquivos desnecessários, como versões antigas de assets, então é mais simples compilar novamente a partir do início.
 
 2. Abra seu projeto no Game Studio.
 
 3. Na barra de ferramentas, clique no menu suspenso e selecione **Visual Studio**.
 
-   ![ Abra em VS](media/open-in-visual-studio.png)
+   ![Abrir no VS](media/open-in-visual-studio.png)
 
    Seu projeto abre no Visual Studio.
 
-4. No Visual Studio, no menu suspenso **Solution Configurations**, selecione **Release**.
+4. No Visual Studio, no menu suspenso **Configurações da solução**, selecione **Release**.
 
-   ![Select release](media/select-release.png)
+   ![Selecionar release](media/select-release.png)
 
-5. No menu drop-down **Solution plataformas**, selecione a plataforma para a qual você deseja criar uma compilação.
+5. No menu suspenso **Plataformas da solução**, selecione a plataforma para a qual você deseja criar uma compilação.
 
    ![Selecione a plataforma](media/select-platform.png)
 
    > [!Note]
    >
-   > Você só pode construir para plataformas que você adicionou ao seu projeto Stride. Para obter instruções sobre como fazer isso, consulte [Adicionar ou remover uma plataforma](../platforms/add-or-remove-a-platform.md).
+   > Você só pode compilar para plataformas que você adicionou ao seu projeto Stride. Para mais informações sobre como fazer isso, consulte [Adicionar ou remover uma plataforma](../platforms/add-or-remove-a-platform.md).
    >
-   > Para construir para Android ou iOS, você precisa de Xamarin, que está incluído com licenças Visual Studio. Para obter instruções sobre como instalar Xamarin com Visual Studio 2017, consulte [esta página MSDN](https://docs.microsoft.com/en-us/visualstudio/cross-platform/setup-and-install).
+   > Para compilar para Android ou iOS, você precisa de Xamarin, que está incluído com licenças Visual Studio. Para obter instruções sobre como instalar Xamarin com Visual Studio 2022, consulte [esta página MSDN](https://docs.microsoft.com/en-us/visualstudio/cross-platform/setup-and-install).
 
-6. Sob **Construir **, selecione **Construir solução**.
+6. No menu **Compilação**, selecione **Compilar solução**.
 
-   ![ Solução de construção](media/build-solution.png)
+   ![Compilar solução](media/build-solution.png)
 
-   Visual Studio cria uma compilação de lançamento em sua pasta bin projeto (por exemplo *MyGame/Bin/MyPlatform/Release*).
+   Visual Studio cria uma compilação em modo release em sua pasta bin do projeto (por exemplo *MeuJogo/Bin/MinhaPlataforma/Release*).
 
 > [!Tip]
-> Você pode querer renomear a pasta **Release** para algo mais descritivo (como o título do seu jogo).
+> Você pode querer renomear a pasta **Release** para algo mais descritivo (como, por exemplo, o título do seu jogo).
 
-### Para construir usando terminal em vez de Visual Studio
+### Para compilar utilizando o terminal em vez de Visual Studio
 
-1. Você precisa instalar o Visual Studio para obter **Developer Command Prompt for Visual Studio (Version)**
-2. Em Developer Command Prompt for Visual Studio
+1. Para compilar usando o terminal em vez do Visual Studio, você precisará instalar o Visual Studio para obter o **Prompt de Comando do Desenvolvedor do Visual Studio**
+2. No Prompt de Comando do Desenvolvedor do Visual Studio, você pode usar o seguinte comando:
 3. 
    ```console
-   C:\User> msbuild PathToSln\NameOfProject.sln /p:Configuração=Release /p:OutputPath=YourPreferredPath
+   msbuild CaminhoParaSln\NomeDoProjeto.sln /p:Configuration=Release /p:OutputPath=SeuCaminho
    ```
 
-## 2. Excluir arquivos desnecessários
+## 2. Excluir os arquivos desnecessários
 
-Na pasta de lançamento em sua pasta bin projeto (por exemplo *MyGame/Bin/MyPlatform/Release*), você pode excluir os seguintes arquivos desnecessários:
+Na pasta de lançamento do projeto no diretório bin (por exemplo, *MeuJogo/Bin/MinhaPlataforma/Lançamento*), você pode excluir os seguintes arquivos desnecessários:
 
 * `.pdb` arquivos (informações de depuração)
 
-* `.xml` arquivos (documentação API)
+* `.xml` arquivos (documentação da API)
 
-* arquivos que contêm `vshost` em seus nomes de arquivo (por exemplo `MyGame.vshost.exe` e `MyGame5.vshost.exe.manifest`)
+* arquivos que contêm `vshost` em seus nomes de arquivo (por exemplo `MeuJogo.vshost.exe` e `MeuJogo.vshost.exe.manifest`)
 
-* pastas diferentes do `x64`, `x86`, ou `data` pastas
+* Pastas que não sejam as pastas g1>x64</g>, <g id="2">x86</g>, ou <g id="3">data</g><g id="1">
 
-* outros arquivos desnecessários, como arquivos de configuração personalizados (ou seja, arquivos não criados com Stride)
+* Outros arquivos desnecessários, como arquivos de configuração personalizados (ou seja, arquivos que não foram criados com o Stride)
 
 ## 3. Distribuir seu jogo
 
-Depois de criar uma compilação de lançamento, como você distribui isso é até você.
+Após criar uma versão de lançamento, cabe a você decidir a forma de distribuí-la.
 
 Para executar jogos feitos com Stride no Windows, os usuários precisam:
 
@@ -72,8 +72,8 @@ Para executar jogos feitos com Stride no Windows, os usuários precisam:
 
 * Tempos de execução Visual C++ 2015 (x86 e/ou x64, dependendo do que você estabeleceu em suas propriedades do projeto no Visual Studio)
 
-## Ver também
+## Veja também
 
 * [Adicionar ou remover uma plataforma](../platforms/add-or-remove-a-platform.md)
 * [Controle de versão](version-control.md)
-* [Estrutura do projecto](project-structure.md)
+* [Estrutura do projeto](project-structure.md)
