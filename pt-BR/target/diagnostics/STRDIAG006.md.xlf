@@ -32,7 +32,6 @@ public class STRDIAG006
 {
     // non existent setters count as non visible
     [DataMember(DataMemberMode.Assign)]
-    [DataMember(DataMemberMode.Assign)]
     public int Property1 { get; }
 
     [DataMember(DataMemberMode.Assign)]
@@ -50,7 +49,6 @@ public class STRDIAG006
 public class STRDIAG006
 {
     // acessadores set inexistentes são considerados não visíveis
-    [DataMember(DataMemberMode.Assign)]
     [DataMember(DataMemberMode.Assign)]
     public int Propriedade1 { get; }
 

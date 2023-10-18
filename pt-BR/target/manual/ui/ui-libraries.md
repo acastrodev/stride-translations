@@ -1,70 +1,70 @@
-# Bibliotecas de interface
+# UI libraries
 
-<span class="badge text-bg-primary">Introdução</span>
-<span class="badge text-bg-success">Artista </span>
+<span class="badge text-bg-primary">Beginner</span>
+<span class="badge text-bg-success">Artist</span>
 <span class="badge text-bg-success">Designer</span>
 
-**UI bibliotecas** contêm **UI elementos** tais como grades, botões, controles deslizantes e assim por diante que você pode usar e reutilizar em suas páginas [UI](UI-pages.md).
+**UI libraries** contain **UI elements** such as grids, buttons, sliders and so on that you can use and re-use in your [UI pages](UI-pages.md).
 
-Os projetos Stride incluem uma biblioteca padrão **** de elementos UI. Você pode criar suas próprias bibliotecas de elementos personalizados também.
+Stride projects include a **standard library** of UI elements. You can create your own libraries of custom elements too.
 
-![UI biblioteca](media/UI-library.png)
+![UI library](media/UI-library.png)
 
-As bibliotecas de interface de usuário são semelhantes a [prefabs](../game-studio/prefabs/index.md) no Editor de cenas; você pode criar seus próprios elementos, salvá-los em uma biblioteca de interface de usuário personalizada e, em seguida, usá-los onde você precisar em várias páginas de interface de usuário. Você também pode aninhar bibliotecas dentro de outras bibliotecas, assim como [nested prefabs](../game-studio/prefabs/nested-prefabs.md).
+UI libraries are similar to [prefabs](../game-studio/prefabs/index.md) in the Scene Editor; you can create your own elements, save them in a custom UI library, and then use them wherever you need across multiple UI pages. You can also nest libraries inside other libraries, just like [nested prefabs](../game-studio/prefabs/nested-prefabs.md).
 
-No tempo de execução, você pode re-instancializar as raízes da biblioteca UI e inseri-las em uma árvore UI existente.
+At runtime, you can re-instantiate UI library roots and insert them into an existing UI tree.
 
-## Criar uma biblioteca UI
+## Create a UI library
 
-No **Asset View**, clique em **Add asset > UI > UI library**.
+In the **Asset View**, click **Add asset > UI > UI library**.
 
-![ Adicionar biblioteca UI](media/add-ui-library.png)
+![Add UI library](media/add-ui-library.png)
 
-Game Studio adiciona a biblioteca UI para o **Asset View**.
+Game Studio adds the UI library to the **Asset View**.
 
-![Adicionado biblioteca UI](media/added-ui-library.png)
+![Added UI library](media/added-ui-library.png)
 
-Alternativamente, para criar uma biblioteca UI de um elemento UI existente:
+Alternatively, to create a UI library from an existing UI element:
 
-1. Selecione os elementos que deseja criar uma biblioteca de interface do usuário.
+1. Select the elements you want to create a UI library from.
 
-2. Clique com o botão direito e selecione **Criar biblioteca de seleção**.
+2. Right-click and select **Create library from selection**.
 
-![Adicionado biblioteca UI](media/create-library-from-selection.png)
+![Added UI library](media/create-library-from-selection.png)
 
-Game Studio cria uma biblioteca com uma cópia dos elementos que você selecionou.
+Game Studio creates a library with a copy of the elements you selected.
 
-## Atribuir uma biblioteca UI em código
+## Assign a UI library in code
 
 ```cs
-// Esta propriedade pode ser atribuída a partir de um ativo de biblioteca UI no Game Studio
-público UILibrary MyLibrary { get; set; }
+// This property can be assigned from a UI library asset in Game Studio
+public UILibrary MyLibrary { get; set; }
 
-botão público Criar botão()
-(
-    // assumindo que há um elemento raiz chamado "MyButton" do tipo (ou derivado de) Botão
+public Button CreateButton()
+{
+    // assuming there is a root element named "MyButton" of type (or derived from) Button
     var button = MyLibrary.InstantiateElement<Button>("MyButton");
 
-    // se não houver raiz chamada "MyButton" na biblioteca ou o tipo não coincide,
-    // o método anterior retornará null
-    se (botão)
-    (        
-        // anexar um delegado ao evento Click
-        alguma Button. - Sim. Anexo
-        (
-            // fazer algo aqui...
+    // if there is no root named "MyButton" in the library or the type does not match,
+    // the previous method will return null
+    if (button != null)
+    {        
+        // attach a delegate to the Click event
+        someButton.Click += delegate
+        {
+            // do something here...
         };
     }
 
-    botão de retorno;
+    return button;
 }
 ```
 
-As páginas de interface do usuário têm apenas um elemento raiz. As bibliotecas de interface do usuário podem ter vários elementos de raiz.
+UI pages have only one root element. UI libraries can have multiple root elements.
 
-## Ver também
+## See also
 
-* [Páginas de interface](ui-pages.md)
-* [Editor de UI](ui-editor.md)
-* [Adicionar uma interface de usuário a uma cena](add-a-ui-to-a-scene.md)
-* [Sistema de Layout](layout-system.md)
+* [UI pages](ui-pages.md)
+* [UI editor](ui-editor.md)
+* [Add a UI to a scene](add-a-ui-to-a-scene.md)
+* [Layout system](layout-system.md)

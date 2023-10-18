@@ -1,6 +1,6 @@
 # Diagnosticando o aviso STRDIAG001
 
-> O atributo `[DataContract]` não é válido para o tipo '{0}'. Esperado um accessor public/internal.
+> O atributo `[DataContract]` não é válido para o tipo '{0}'. Esperado um modificador de acesso public/internal.
 
 ## Explicação
 
@@ -33,7 +33,7 @@ file class STRDIAG001
 
 ## Solução
 
-Para resolver o aviso, aumente a acessibilidade do tipo para `public`/`internal` ou remova o atributo @Stride.Core.DataContractAttribute.
+Para resolver o aviso, altere o modificador de acesso do tipo para `public`/`internal` ou remova o atributo @Stride.Core.DataContractAttribute.
 
 ## Referências
 

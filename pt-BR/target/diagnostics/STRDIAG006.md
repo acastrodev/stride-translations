@@ -17,7 +17,6 @@ public class STRDIAG006
 {
     // acessadores set inexistentes são considerados não visíveis
     [DataMember(DataMemberMode.Assign)]
-    [DataMember(DataMemberMode.Assign)]
     public int Propriedade1 { get; }
 
     [DataMember(DataMemberMode.Assign)]

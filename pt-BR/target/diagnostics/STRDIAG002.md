@@ -1,6 +1,6 @@
 # Diagnosticando o aviso STRDIAG002
 
-> O atributo 'DataMemberMode.Content' não é válido no membro '{0}'.
+> O atributo 'DataMemberMode.Content' não é válido para o membro '{0}'.
 > Apenas tipos referência mutáveis são suportados nos membros no modo 'DataMemberMode.Content'.
 
 ## Explicação
@@ -27,4 +27,4 @@ public class STRDIAG002
 
 ## Solução
 
-Para resolver o aviso, escolha um tipo referência para o membro ou use `DataMemberMode.Assign` para tipos imutáveis.
+Para resolver o aviso, escolha um tipo referencia (exceto strings) para o membro ou use `DataMemberMode.Assign` para tipos imutáveis.
