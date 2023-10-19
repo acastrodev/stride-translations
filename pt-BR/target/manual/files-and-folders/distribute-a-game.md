@@ -1,10 +1,10 @@
 # Distribuir seu jogo
 
-Quando estiver pronto para lançar seu jogo, crie uma versão de lançamento usando o Visual Studio e, em seguida, proceda com a distribuição.
+Quando estiver pronto para lançar seu jogo, crie uma versão de em modo release usando o Visual Studio e, em seguida, proceda com a distribuição.
 
 ## 1. Criar uma versão de em modo release
 
-1. Se você já tiver gerado uma versão de em modo release anteriormente, no diretório do projeto (por exemplo, *MeuJogo/Bin/MinhaPlataforma/Release/*), exclua a pasta *Data*. Essa pasta pode conter arquivos desnecessários, como versões antigas de assets, então é mais simples compilar novamente a partir do início.
+1. Se você já tiver gerado uma versão de em modo release anteriormente, no diretório do projeto (por exemplo, *MeuJogo/Bin/MinhaPlataforma/Release/*), exclua a pasta *Data*. Essa pasta pode conter arquivos desnecessários, como versões antigas de assets, sendo mais simples compilar ela novamente.
 
 2. Abra seu projeto no Game Studio.
 
@@ -12,7 +12,7 @@ Quando estiver pronto para lançar seu jogo, crie uma versão de lançamento usa
 
    ![Abrir no VS](media/open-in-visual-studio.png)
 
-   Seu projeto abre no Visual Studio.
+   Seu projeto abrirá no Visual Studio.
 
 4. No Visual Studio, no menu suspenso **Configurações da solução**, selecione **Release**.
 
@@ -26,20 +26,20 @@ Quando estiver pronto para lançar seu jogo, crie uma versão de lançamento usa
    >
    > Você só pode compilar para plataformas que você adicionou ao seu projeto Stride. Para mais informações sobre como fazer isso, consulte [Adicionar ou remover uma plataforma](../platforms/add-or-remove-a-platform.md).
    >
-   > Para compilar para Android ou iOS, você precisa de Xamarin, que está incluído com licenças Visual Studio. Para obter instruções sobre como instalar Xamarin com Visual Studio 2022, consulte [esta página MSDN](https://docs.microsoft.com/en-us/visualstudio/cross-platform/setup-and-install).
+   > Para compilar para Android ou iOS, você precisará do Xamarin, que está incluído com as licenças do Visual Studio. Para mais informações sobre como instalar o Xamarin com o Visual Studio 2022, consulte [esta página da MSDN](https://docs.microsoft.com/en-us/visualstudio/cross-platform/setup-and-install).
 
 6. No menu **Compilação**, selecione **Compilar solução**.
 
    ![Compilar solução](media/build-solution.png)
 
-   Visual Studio cria uma compilação em modo release em sua pasta bin do projeto (por exemplo *MeuJogo/Bin/MinhaPlataforma/Release*).
+   O Visual Studio cria uma compilação em modo release em sua pasta bin do projeto (por exemplo *MeuJogo/Bin/MinhaPlataforma/Release*).
 
 > [!Tip]
 > Você pode querer renomear a pasta **Release** para algo mais descritivo (como, por exemplo, o título do seu jogo).
 
 ### Para compilar utilizando o terminal em vez de Visual Studio
 
-1. Para compilar usando o terminal em vez do Visual Studio, você precisará instalar o Visual Studio para obter o **Prompt de Comando do Desenvolvedor do Visual Studio**
+1. Para compilar utilizando o terminal em vez do Visual Studio, você precisará instalar o Visual Studio para obter o **Prompt de Comando do Desenvolvedor do Visual Studio**
 2. No Prompt de Comando do Desenvolvedor do Visual Studio, você pode usar o seguinte comando:
 3. 
    ```console
@@ -48,7 +48,7 @@ Quando estiver pronto para lançar seu jogo, crie uma versão de lançamento usa
 
 ## 2. Excluir os arquivos desnecessários
 
-Na pasta de lançamento do projeto no diretório bin (por exemplo, *MeuJogo/Bin/MinhaPlataforma/Lançamento*), você pode excluir os seguintes arquivos desnecessários:
+Na pasta de release do projeto no diretório bin (por exemplo, *MeuJogo/Bin/MinhaPlataforma/Release*), você pode excluir os seguintes arquivos desnecessários:
 
 * `.pdb` arquivos (informações de depuração)
 
@@ -62,15 +62,15 @@ Na pasta de lançamento do projeto no diretório bin (por exemplo, *MeuJogo/Bin/
 
 ## 3. Distribuir seu jogo
 
-Após criar uma versão de lançamento, cabe a você decidir a forma de distribuí-la.
+Após criar uma versão em modo release, cabe a você decidir a forma de distribuí-la.
 
-Para executar jogos feitos com Stride no Windows, os usuários precisam:
+Para executar jogos feitos com Stride no Windows, os usuários precisarão de:
 
 * .NET 4.6.1
 
 * DirectX11 (incluído com Windows 10 e posterior), OpenGL, ou Vulkan
 
-* Tempos de execução Visual C++ 2015 (x86 e/ou x64, dependendo do que você estabeleceu em suas propriedades do projeto no Visual Studio)
+* Visual C++ 2015 runtimes (x86 e/ou x64, dependendo do que você estabeleceu nas propriedades do projeto no Visual Studio)
 
 ## Veja também
 
