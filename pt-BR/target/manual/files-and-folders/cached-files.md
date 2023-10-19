@@ -10,7 +10,7 @@ Você pode querer limpar o cache se:
 
 ## Limpar o cache do Visual Studio
 
-1. Para limpar o cache de código, selecine o item de menu **Criar**, e então selecione **Limpar Solução**.
+1. Para limpar o cache de código, selecine o item de menu **Compilação**, e então selecione **Limpar Solução**.
 
    ![Limpar Solução](media/clean-solution.png)
 
@@ -18,13 +18,13 @@ Você pode querer limpar o cache se:
 
    ![Limpar Solução](media/clean-assets.png)
 
-3. Recompilar o projeto para refazer o cache do zero.
+3. Recompile o projeto para refazer o cache.
 
 ## Limpe manualmente o cache
 
 Se limpar o cache do Visual Studio não funcionar, tente apagar os arquivos manualmente.
 
-1. Excluir as seguintes pastas:
+1. Exclua as seguintes pastas:
 
    * o cache binário: *~/MeuJogo/MeuJogo/Bin*
 
@@ -34,7 +34,7 @@ Se limpar o cache do Visual Studio não funcionar, tente apagar os arquivos manu
 
 2. Se você estiver desenvolvendo para iOS, no seu Mac, também exclua: *~/Library/Caches/Xamarin/mtbs/builds/MeuJogo*
 
-3. Recompile o projeto para criar o cache do zero.
+3. Recompile o projeto para recriar o cache.
 
 ## Limpar os caches do Game Studio
 
@@ -58,7 +58,7 @@ O Game Studio salva informações do editor (como posições de janela e projeto
 
 O Game Studio também salva informações sobre guias abertas e a posição da câmera do editor no arquivo `.sdpkg.user` no projeto (ex.: *~/MeuJogo/MeuJogo/MeuJogo.sdpkg.user)*.
 
-Esses arquivos são pequenos, mas você pode querer excluí-los se o Game Studio não estiver funcionando. A exclusão deles não afeta nada no seu projeto.
+Esses arquivos são pequenos, mas você pode querer excluí-los se o Game Studio não estiver respondendo. A exclusão deles não afeta em nada o seu projeto.
 
 Depois de excluir os arquivos de cache, quando iniciar o Game Studio, ele criará um novo cache usando as configurações padrão.
 
