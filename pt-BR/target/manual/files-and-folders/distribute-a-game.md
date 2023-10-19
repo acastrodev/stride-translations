@@ -1,6 +1,6 @@
 # Distribuir seu jogo
 
-Quando estiver pronto para lançar seu jogo, crie uma versão de em modo release usando o Visual Studio e, em seguida, proceda com a distribuição.
+Quando estiver pronto para lançar seu jogo, crie uma versão em modo release usando o Visual Studio e, em seguida, proceda com a distribuição.
 
 ## 1. Criar uma versão de em modo release
 
