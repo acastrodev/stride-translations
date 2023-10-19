@@ -1,11 +1,11 @@
 # Criar pacotes
 
-<span class="badge text-bg-primary">Intermediário</span>
-<span class="badge text-bg-success">Programação</span>
+Intermediário
+Programação
 
 ## Abra seu projeto no Visual Studio
 
-> [!Note]
+> !Note
 > Game Studio irá mais tarde apoiar a criação de pacotes NuGet diretamente.
 
 Primeiro de tudo, depois de salvar todas as suas mudanças, abra seu projeto com Visual Studio. Você pode facilmente fazer isso clicando no botão apropriado na barra de ferramentas:

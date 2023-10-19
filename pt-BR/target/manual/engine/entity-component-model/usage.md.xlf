@@ -15,15 +15,15 @@
 </trans-unit>
 <trans-unit id="tu4" xml:space="preserve">
 <source xml:lang="en">Entity - <g id="1"><g id="2">Stride.Engine.Entity</g></g></source>
-<target xml:lang="pt">Entidade — <g id="1"><g id="2">Stride.Engine.Entity</g></g></target>
+<target xml:lang="pt">Entidade — <g1><g2>Stride.Engine.Entity</g2></g1></target>
 </trans-unit>
 <trans-unit id="tu5" xml:space="preserve">
 <source xml:lang="en">Component - <g id="1"><g id="2">Stride.Engine.EntityComponent</g></g></source>
-<target xml:lang="pt">Componente - <g id="1"><g id="2">Stride.Engine.EntityComponent</g></g></target>
+<target xml:lang="pt">Componente — <g id="1"><g id="2">Stride.Engine.EntityComponent</g></g></target>
 </trans-unit>
 <trans-unit id="tu6" xml:space="preserve">
 <source xml:lang="en">System - <g id="1"><g id="2">Stride.Engine.EntityProcessor</g></g></source>
-<target xml:lang="pt">Sistema - <g id="1"><g id="2">Stride.Engine.EntityProcessor</g></g></target>
+<target xml:lang="pt">Sistema — <g id="1"><g id="2">Stride.Engine.EntityProcessor</g></g></target>
 </trans-unit>
 <trans-unit id="tu7" xml:space="preserve">
 <source xml:lang="en">Minimal Setup</source>
@@ -31,7 +31,7 @@
 </trans-unit>
 <trans-unit id="tu8" xml:space="preserve">
 <source xml:lang="en">A component can be defined by deriving a class from <g id="1">EntityComponent</g>.</source>
-<target xml:lang="pt">Um componente pode ser definido derivando uma classe de <g id="1">EntityComponent</g>.</target>
+<target xml:lang="pt">Um componente pode ser definido derivando uma classe de <g1>EntityComponent</g1>.</target>
 </trans-unit>
 <trans-unit id="tu9" xml:space="preserve">
 <source xml:lang="en">By adding the attribute <g id="1">DefaultEntityComponentProcessor</g> to an <g id="2">EntityComponent</g>,<x id="3"/>
@@ -44,8 +44,8 @@ o <g id="6">EntityProcessor</g> se o <g id="7">EntityComponent</g> estiver na ce
 <trans-unit id="tu10" xml:space="preserve">
 <source xml:lang="en">An <g id="1">EntityComponent</g> also needs to indicate that it can be serialized<x id="2"/>
 by adding the attribute <g id="3">DataContract</g> to it.</source>
-<target xml:lang="pt">Um <g id="1">EntityComponent</g> também precisa indicar que pode ser serializado<x id="2"/>, 
-adicionando o atributo DataContract a ele.<g id="3"/></target>
+<target xml:lang="pt">Um <g1>EntityComponent</g1> também precisará indicar que pode ser serializado,<x1/>
+adicionando o atributo <g2>DataContract</g2> a ele.</target>
 </trans-unit>
 <trans-unit id="tu11" xml:space="preserve">
 <source xml:lang="en">A system can be defined by deriving a class from <g id="1">EntityProcessor</g>.</source>
@@ -117,7 +117,7 @@ no **Editor de propriedades**.</target>
 </trans-unit>
 <trans-unit id="tu19" xml:space="preserve">
 <source xml:lang="en">Alternatively, this can also be done in <g id="1">code via <g id="2">entity.Add(entityComponent)</g></g>.</source>
-<target xml:lang="pt">Alternativamente, isso também pode ser feito no <g id="1">código através de <g id="2">entity.Add(entityComponent)</g></g>.</target>
+<target xml:lang="pt">Alternativamente, isso também pode ser feito <g id="1">através do código</g> <g2>entity.Add(entityComponent)</g2>.</target>
 </trans-unit>
 <trans-unit id="tu20" xml:space="preserve">
 <source xml:lang="en">Advanced Features</source>
@@ -133,7 +133,7 @@ no **Editor de propriedades**.</target>
 </trans-unit>
 <trans-unit id="tu23" xml:space="preserve">
 <source xml:lang="en">By adding the <g id="1">Display</g> attribute, a nicer name can be shown in Game Studio.</source>
-<target xml:lang="pt">Adicionando o atributo <g id="1">Display</g>, um nome mais amigável pode ser exibido no Game Studio.</target>
+<target xml:lang="pt">Adicionando o atributo <g1>Display</g1>, um nome mais amigável pode ser exibido no Game Studio.</target>
 </trans-unit>
 <trans-unit id="tu24" xml:space="preserve">
 <source xml:lang="en">[Display("My better name")]
@@ -182,14 +182,14 @@ os componentes são listados no Game Studio.</target>
 <trans-unit id="tu32" xml:space="preserve">
 <source xml:lang="en">By passing the types of other components to the <g id="1">EntityProcessor</g> constructor,<x id="2"/>
 it will only include entities <g id="3">that also have those other components</g>.</source>
-<target xml:lang="pt">Passando os tipos de outros componentes para o construtor do <g id="1">EntityProcessor</g>,<x id="2"/>
-ele incluirá apenas entidades que <g id="3">também tenham esses outros componentes</g>.</target>
+<target xml:lang="pt">Passando os tipos de outros componentes para o construtor do <g1>EntityProcessor</g1>,<x1/>
+ele incluirá apenas entidades que <g2>também tenham esses outros componentes</g2>.</target>
 </trans-unit>
 <trans-unit id="tu33" xml:space="preserve">
 <source xml:lang="en">For example, the following <g id="1">EntityProcessor</g> is for <g id="2">MyComponent</g>, but will skip any entity<x id="3"/>
 that does not also have both <g id="4">TransformComponent</g> and <g id="5">AnimationComponent</g> on it.</source>
-<target xml:lang="pt">Por exemplo, o seguinte <g id="1">EntityProcessor</g> faz parte de <g id="2">MeuComponente</g>, mas irá desconsiderar qualquer entidade<x id="3"/>
-que não possua também tanto <g id="4">TransformComponent</g> quanto <g id="5">AnimationComponent</g>.</target>
+<target xml:lang="pt">Por exemplo, o seguinte <g1>EntityProcessor</g1> faz parte de <g2>MeuComponente</g2>, mas irá desconsiderar qualquer entidade<x1/>
+que não possua também tanto <g3>TransformComponent</g3> quanto <g4>AnimationComponent</g4>.</target>
 </trans-unit>
 <trans-unit id="tu34" xml:space="preserve">
 <source xml:lang="en">public class MyProcessor : EntityProcessor&lt;MyComponent&gt;
@@ -215,8 +215,8 @@ que não possua também tanto <g id="4">TransformComponent</g> quanto <g id="5">
 <source xml:lang="en">Adding processors for a type of component via the attribute <g id="1">DefaultEntityComponentProcessor</g><x id="2"/>
 has been explained above. However, as the name implies, this is for the <g id="3">default</g> processor.<x id="4"/>
 Non-default processors can also be added via</source>
-<target xml:lang="pt">Adicionar processadores para um tipo de componente via o atributo <g id="1">DefaultEntityComponentProcessor</g><x id="2"/>
-foi explicado acima. No entanto, como o nome sugere, isso é para o processador <g id="3">padrão</g>.<x id="4"/>
+<target xml:lang="pt">Adicionar processadores para um tipo de componente via o atributo <g1>DefaultEntityComponentProcessor</g1><x1/>
+foi explicado acima. No entanto, como o nome sugere, isso é para o processador <g2>padrão</g2>.<x2/>
 Processadores não padrão também podem ser adicionados via</target>
 </trans-unit>
 <trans-unit id="tu37" xml:space="preserve">
@@ -255,7 +255,7 @@ a partir de uma instância de <g id="4">TComponent</g>.</target>
 <source xml:lang="en"><g id="1">EntityProcessor</g> also provides several methods which can be overridden in order to react to certain events.<x id="2"/>
 They are not overly complicated, so that their usage should be clear from their doc comments.</source>
 <target xml:lang="pt">O <g id="1">EntityProcessor</g> também fornece vários métodos que podem ser substituídos para reagir a eventos específicos.<x id="2"/>
-Eles não são muito complicados, logo os comentários da documentação devem ser suficientes para fo</target>
+Eles não são muito complicados, logo os comentários da documentação devem ser suficientes para fornecer informação necessária sobre o seu uso.</target>
 </trans-unit>
 </body>
 </file>

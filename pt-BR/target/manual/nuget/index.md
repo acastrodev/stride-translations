@@ -10,5 +10,5 @@ Como resultado, você pode:
 
 ## Assuntos
 
-- [Pacotes de consumo](consume-packages.md)
-- [Criar pacotes](create-packages.md)
+- Pacotes de consumo
+- Criar pacotes

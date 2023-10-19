@@ -4,21 +4,21 @@
 
 As três partes do "Sistema de Entidade e Componente" mapeiam para as seguintes classes:
 
-- Entidade — [`Stride.Engine.Entity`](https://doc.stride3d.net/latest/en/api/Stride.Engine.Entity.html)
-- Componente - [`Stride.Engine.EntityComponent`](https://doc.stride3d.net/latest/en/api/Stride.Engine.EntityComponent.html)
-- Sistema - [`Stride.Engine.EntityProcessor`](https://doc.stride3d.net/latest/en/api/Stride.Engine.EntityProcessor.html)
+- Entidade — Stride.Engine.Entity
+- Componente — [`Stride.Engine.EntityComponent`](https://doc.stride3d.net/latest/en/api/Stride.Engine.EntityComponent.html)
+- Sistema — [`Stride.Engine.EntityProcessor`](https://doc.stride3d.net/latest/en/api/Stride.Engine.EntityProcessor.html)
 
 
 ## Configuração Mínima
 
-Um componente pode ser definido derivando uma classe de `EntityComponent`.
+Um componente pode ser definido derivando uma classe de EntityComponent.
 
 Adicionando o atributo `DefaultEntityComponentProcessor` a um `EntityComponent`,   
 um `EntityProcessor` pode ser atribuído a ele. Isso configurará e executará automaticamente  
 o `EntityProcessor` se o `EntityComponent` estiver na cena.
 
-Um `EntityComponent` também precisa indicar que pode ser serializado  , 
-adicionando o atributo DataContract a ele.``
+Um EntityComponent também precisará indicar que pode ser serializado,
+adicionando o atributo DataContract a ele.
 
 Um sistema pode ser definido derivando uma classe de `EntityProcessor`.
 
@@ -54,7 +54,7 @@ Atualmente, não é possivel arrastar e soltar um `EntityComponent` em uma entid
 Ele deve ser adicionado selecionando uma entidade e, em seguida, clicando no botão "Adicionar componente"  
 no **Editor de propriedades**.
 
-Alternativamente, isso também pode ser feito no [código através de `entity.Add(entityComponent)`](https://doc.stride3d.net/latest/en/api/Stride.Engine.Entity.html#Stride_Engine_Entity_Add_Stride_Engine_EntityComponent_).
+Alternativamente, isso também pode ser feito [através do código](https://doc.stride3d.net/latest/en/api/Stride.Engine.Entity.html#Stride_Engine_Entity_Add_Stride_Engine_EntityComponent_) entity.Add(entityComponent).
 
 
 ## Recursos avançados
@@ -62,7 +62,7 @@ Alternativamente, isso também pode ser feito no [código através de `entity.Ad
 ### Mais atributos de componente
 
 #### Display
-Adicionando o atributo `Display`, um nome mais amigável pode ser exibido no Game Studio.
+Adicionando o atributo Display, um nome mais amigável pode ser exibido no Game Studio.
 ```csharp
 [Display("Meu nome mais amigável")]
 ```
@@ -84,11 +84,11 @@ os componentes são listados no Game Studio.
 
 
 ### Combinações de Componentes
-Passando os tipos de outros componentes para o construtor do `EntityProcessor`,  
-ele incluirá apenas entidades que _também tenham esses outros componentes_.
+Passando os tipos de outros componentes para o construtor do EntityProcessor,
+ele incluirá apenas entidades que também tenham esses outros componentes.
 
-Por exemplo, o seguinte `EntityProcessor` faz parte de `MeuComponente`, mas irá desconsiderar qualquer entidade  
-que não possua também tanto `TransformComponent` quanto `AnimationComponent`.
+Por exemplo, o seguinte EntityProcessor faz parte de MeuComponente, mas irá desconsiderar qualquer entidade
+que não possua também tanto TransformComponent quanto AnimationComponent.
 
 ```csharp
 public class MeuProssador : EntityProcessor<MyComponent>
@@ -101,8 +101,8 @@ public class MeuProssador : EntityProcessor<MyComponent>
 
 
 ### Processadores não padrão
-Adicionar processadores para um tipo de componente via o atributo `DefaultEntityComponentProcessor`  
-foi explicado acima. No entanto, como o nome sugere, isso é para o processador _padrão_.  
+Adicionar processadores para um tipo de componente via o atributo DefaultEntityComponentProcessor
+foi explicado acima. No entanto, como o nome sugere, isso é para o processador padrão.
 Processadores não padrão também podem ser adicionados via
 ```csharp
 SceneSystem.SceneInstance.Processors.Add(entityProcessor);
@@ -122,5 +122,5 @@ a partir de uma instância de `TComponent`.
 
 ### Substituições
 O `EntityProcessor` também fornece vários métodos que podem ser substituídos para reagir a eventos específicos.  
-Eles não são muito complicados, logo os comentários da documentação devem ser suficientes para fo
+Eles não são muito complicados, logo os comentários da documentação devem ser suficientes para fornecer informação necessária sobre o seu uso.
 
