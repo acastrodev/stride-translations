@@ -51,11 +51,11 @@
 </trans-unit>
 <trans-unit id="tu13" xml:space="preserve">
 <source xml:lang="en">We don't recommend you save resource files in the Assets folder. You might be used to organizing files this way if you use Unity®, as Unity® requires resource files and asset files to be in the same folder. Stride doesn't require this, and doing so has downsides.</source>
-<target xml:lang="pt">Não recomendamos salvar arquivos de recursos na pasta Assets. Você pode estar acostumado a organizar os arquivos dessa maneira se usar o Unity®, pois o Unity® exige que os arquivos de recursos e os arquivos de assets estejam na mesma pasta. No entanto, o Stride não tem essa restrição e, na verdade, existem desvantagens em fazê-lo.</target>
+<target xml:lang="pt">Não recomendamos salvar arquivos de recursos na pasta Assets. Você pode estar acostumado a organizar os arquivos dessa maneira se for um usuário do Unity®, pois o Unity® exige que os arquivos de recursos e os arquivos de assets estejam na mesma pasta. No entanto, o Stride não tem essa restrição e, na verdade, existem desvantagens ao fazer isso.</target>
 </trans-unit>
 <trans-unit id="tu14" xml:space="preserve">
 <source xml:lang="en">For example, imagine an artist has edited 10GB of textures and committed them to source control. At the same time, a designer needs to edit an asset quickly. To do this, the designer gets the latest version of the asset from source control. However, because the assets and resource files are in the same folder, the designer is forced to get the 10gb of files at the same time. If the files are in a separate folder, however, the designer only has to get the folder they need. Additionally, as asset files are much smaller than resource files, it's much faster to navigate the asset history in a dedicated asset folder.</source>
-<target xml:lang="pt">Para ilustrar, considere o seguinte cenário: um artista editou 10 GB de texturas e as incluiu no controle de versão. No mesmo momento, um designer precisa editar um asset com urgência. Para isso, o designer precisa obter a versão mais recente desse asset no controle de versão. No entanto, como os assets e os arquivos de recursos estão na mesma pasta, o designer é obrigado a obter os 10 GB de arquivos ao mesmo tempo. Se os arquivos de recursos estiverem em uma pasta separada, o designer só precisaria obter a pasta relevante. Além disso, como os arquivos de assets são muito menores que os arquivos de recursos, é muito mais rápido navegar pelo histórico de assets em uma pasta dedicada para esse fim.</target>
+<target xml:lang="pt">Para ilustrar, considere o seguinte cenário: um artista editou 10 GB de texturas e as incluiu no controle de versão. No mesmo momento, um designer precisa editar um asset com urgência. Para isso, o designer precisa obter a versão mais recente desse asset no controle de versão. No entanto, como os assets e os arquivos de recursos estão na mesma pasta, o designer é obrigado a obter os 10 GB de arquivos que o artista editou. Se os arquivos de recursos estiverem em uma pasta separada, o designer só precisará obter a pasta relevante. Além disso, como os arquivos de assets são muito menores que os arquivos de recursos, é muito mais rápido navegar pelo histórico de assets em uma pasta dedicada para esse fim.</target>
 </trans-unit>
 <trans-unit id="tu15" xml:space="preserve">
 <source xml:lang="en">Content creation files</source>
@@ -75,7 +75,7 @@
 </trans-unit>
 <trans-unit id="tu19" xml:space="preserve">
 <source xml:lang="en">Following these suggestions, an example folder structure might look like this:</source>
-<target xml:lang="pt">Seguindo essas sugestões, uma estrutura de pastas de exemplo pode se parecer dessa forma:</target>
+<target xml:lang="pt">Por exemplo, seguindo essas sugestões, está seria uma estrutura de pastas:</target>
 </trans-unit>
 <trans-unit id="tu20" xml:space="preserve">
 <source xml:lang="en">- MyGame
@@ -99,13 +99,13 @@
     - obj
     - Resources
         - textura.png
-- ArquivosCriaçãoConteúdo
+- ArquivosCriacaoConteudo
     - textura.psd
 </target>
 </trans-unit>
 <trans-unit id="tu21" xml:space="preserve">
 <source xml:lang="en">You could even create separate folders for different kinds of content creation file:</source>
-<target xml:lang="pt">Você pode até criar pastas separadas para diferentes tipos de arquivo de criação de conteúdo:</target>
+<target xml:lang="pt">Você também pode definir pastas separadas para diferentes tipos de arquivo de criação de conteúdo:</target>
 </trans-unit>
 <trans-unit id="tu22" xml:space="preserve">
 <source xml:lang="en">- MyGame
@@ -163,7 +163,7 @@
 </trans-unit>
 <trans-unit id="tu28" xml:space="preserve">
 <source xml:lang="en">Now imagine one of the 2D artists changes several <g id="1">.psd</g> files and commits 2GB of changes to version control. Because only the 2D artists have the <g id="2">PhotoshopProjects</g> folder checked out, only the other 2D artist gets this change. The other team members don't need it. This is an efficient way to share files across projects.</source>
-<target xml:lang="pt">Agora, imagine que um dos artistas 2D faz alterações em vários arquivos <g id="1">.psd</g> e envia 2GB de alterações para o controle de versão. Como apenas os artistas 2D têm a pasta <g id="1">ArquivosPhotoshop</g>, somente o outro artista 2D terá que sincronizar essa alteração.<g id="2"/> Os outros membros da equipe não precisam dela. Esta é uma maneira eficiente de compartilhar arquivos em projetos.</target>
+<target xml:lang="pt">Agora, imagine que um dos artistas 2D faz alterações em vários arquivos <g id="1">.psd</g> e envia 2GB de alterações para o controle de versão. Como apenas os artistas 2D têm a pasta <g id="2">ArquivosPhotoshop</g>, somente o outro artista 2D terá que sincronizar essa alteração. Os outros membros da equipe não precisam dela. Esta é uma maneira eficiente de compartilhar arquivos em projetos.</target>
 </trans-unit>
 <trans-unit id="tu29" xml:space="preserve">
 <source xml:lang="en">See also</source>

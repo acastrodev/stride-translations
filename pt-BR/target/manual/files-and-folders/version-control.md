@@ -20,9 +20,9 @@ O Visual Studio também coloca pastas **.obj** dentro de cada pasta de código. 
 
 Os **arquivos de recursos** são aqueles que são importados para o Game Studio e usados pelos assets. Eles incluem arquivos de imagem (por exemplo, `.png` e `.jpg`), arquivos de áudio (por exemplo, `.mp3` e `.wav`) e modelos (por exemplo, `.fbx`). Recomendamos salvar esses arquivos na pasta **Resources** em seu projeto.
 
-Não recomendamos salvar arquivos de recursos na pasta Assets. Você pode estar acostumado a organizar os arquivos dessa maneira se usar o Unity®, pois o Unity® exige que os arquivos de recursos e os arquivos de assets estejam na mesma pasta. No entanto, o Stride não tem essa restrição e, na verdade, existem desvantagens em fazê-lo.
+Não recomendamos salvar arquivos de recursos na pasta Assets. Você pode estar acostumado a organizar os arquivos dessa maneira se for um usuário do Unity®, pois o Unity® exige que os arquivos de recursos e os arquivos de assets estejam na mesma pasta. No entanto, o Stride não tem essa restrição e, na verdade, existem desvantagens ao fazer isso.
 
-Para ilustrar, considere o seguinte cenário: um artista editou 10 GB de texturas e as incluiu no controle de versão. No mesmo momento, um designer precisa editar um asset com urgência. Para isso, o designer precisa obter a versão mais recente desse asset no controle de versão. No entanto, como os assets e os arquivos de recursos estão na mesma pasta, o designer é obrigado a obter os 10 GB de arquivos ao mesmo tempo. Se os arquivos de recursos estiverem em uma pasta separada, o designer só precisaria obter a pasta relevante. Além disso, como os arquivos de assets são muito menores que os arquivos de recursos, é muito mais rápido navegar pelo histórico de assets em uma pasta dedicada para esse fim.
+Para ilustrar, considere o seguinte cenário: um artista editou 10 GB de texturas e as incluiu no controle de versão. No mesmo momento, um designer precisa editar um asset com urgência. Para isso, o designer precisa obter a versão mais recente desse asset no controle de versão. No entanto, como os assets e os arquivos de recursos estão na mesma pasta, o designer é obrigado a obter os 10 GB de arquivos que o artista editou. Se os arquivos de recursos estiverem em uma pasta separada, o designer só precisará obter a pasta relevante. Além disso, como os arquivos de assets são muito menores que os arquivos de recursos, é muito mais rápido navegar pelo histórico de assets em uma pasta dedicada para esse fim.
 
 ### Arquivos de criação de conteúdo
 
@@ -32,7 +32,7 @@ Não é recomendável salvar esses arquivos na pasta de projeto. Isso porque os 
 
 ## Estrutura de diretório sugerida
 
-Seguindo essas sugestões, uma estrutura de pastas de exemplo pode se parecer dessa forma:
+Por exemplo, seguindo essas sugestões, está seria uma estrutura de pastas:
 
 ```cs
 - MeuJogo
@@ -44,11 +44,11 @@ Seguindo essas sugestões, uma estrutura de pastas de exemplo pode se parecer de
     - obj
     - Resources
         - textura.png
-- ArquivosCriaçãoConteúdo
+- ArquivosCriacaoConteudo
     - textura.psd
 ```
 
-Você pode até criar pastas separadas para diferentes tipos de arquivo de criação de conteúdo:
+Você também pode definir pastas separadas para diferentes tipos de arquivo de criação de conteúdo:
 
 ```cs
 - MeuJogo
@@ -76,7 +76,7 @@ Imagine uma equipe com dois programadores, dois artistas 2D e dois artistas 3D.
 * Os artistas 2D fazem check-out do projeto do jogo e da pasta *ArquivosPhotoshop*, que contém arquivos `.psd`.
 * Os artistas 3D fazem check-out do projeto do jogo e da pasta *ArquivosMaya*, que contém arquivos `.mb` (arquivos do Maya).
 
-Agora, imagine que um dos artistas 2D faz alterações em vários arquivos `.psd` e envia 2GB de alterações para o controle de versão. Como apenas os artistas 2D têm a pasta <g id="1">ArquivosPhotoshop</g>, somente o outro artista 2D terá que sincronizar essa alteração.** Os outros membros da equipe não precisam dela. Esta é uma maneira eficiente de compartilhar arquivos em projetos.
+Agora, imagine que um dos artistas 2D faz alterações em vários arquivos `.psd` e envia 2GB de alterações para o controle de versão. Como apenas os artistas 2D têm a pasta *ArquivosPhotoshop*, somente o outro artista 2D terá que sincronizar essa alteração. Os outros membros da equipe não precisam dela. Esta é uma maneira eficiente de compartilhar arquivos em projetos.
 
 ## Veja também
 
