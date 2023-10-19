@@ -1,4 +1,4 @@
-# Distribuir um jogo
+# Distribuir seu jogo
 
 Quando estiver pronto para lançar seu jogo, crie uma versão de lançamento usando o Visual Studio e, em seguida, proceda com a distribuição.
 

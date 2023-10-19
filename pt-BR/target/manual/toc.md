@@ -62,7 +62,7 @@
 ## [Estrutura do projeto](files-and-folders/project-structure.md)
 ## [Arquivos em cache](files-and-folders/cached-files.md)
 ## [Controle de versão](files-and-folders/version-control.md)
-## [Distribuir um jogo](files-and-folders/distribute-a-game.md)
+## [Distribuir seu jogo](files-and-folders/distribute-a-game.md)
 
 # [Game Studio](game-studio/index.md)
 ## [Cenas](game-studio/scenes.md)

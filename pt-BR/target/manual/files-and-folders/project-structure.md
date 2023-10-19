@@ -29,4 +29,4 @@ Se você precisar de orientações sobre como organizar seu projeto da melhor ma
 ## Veja também
 
 * [Controle de versão](version-control.md)
-* [Distribuir um jogo](distribute-a-game.md)
+* [Distribuir seu jogo](distribute-a-game.md)

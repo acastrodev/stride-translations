@@ -3,59 +3,59 @@
 <body>
 <trans-unit id="tu1" xml:space="preserve">
 <source xml:lang="en">Organize your files in version control</source>
-<target xml:lang="pt">Organize seus arquivos no controle de versão</target>
+<target xml:lang="pt">Organize seus arquivos em um sistema de controle de versão</target>
 </trans-unit>
 <trans-unit id="tu2" xml:space="preserve">
 <source xml:lang="en">We recommend you use a version control system such as Git, SVN, or Perforce Helix to save a history of changes to your project.</source>
-<target xml:lang="pt">Recomendamos que você use um sistema de controle de versão como Git, SVN ou Perforce Helix para salvar um histórico de mudanças em seu projeto.</target>
+<target xml:lang="pt">Recomendamos o uso de um sistema de controle de versão, como Git, SVN ou Perforce Helix, para manter um histórico das alterações em seu projeto.</target>
 </trans-unit>
 <trans-unit id="tu3" xml:space="preserve">
 <source xml:lang="en">How you organize and share your files is up to you, but there are some things to keep in mind.</source>
-<target xml:lang="pt">Como você organiza e compartilha seus arquivos é até você, mas há algumas coisas para ter em mente.</target>
+<target xml:lang="pt">No entanto, ao organizar seus arquivos, é importante considerar o seguinte:</target>
 </trans-unit>
 <trans-unit id="tu4" xml:space="preserve">
 <source xml:lang="en">Files you shouldn't add to version control</source>
-<target xml:lang="pt">Arquivos que você não deve adicionar ao controle de versão</target>
+<target xml:lang="pt">Arquivos que não devem ser incluídos no controle de versão</target>
 </trans-unit>
 <trans-unit id="tu5" xml:space="preserve">
 <source xml:lang="en"><g id="1">Bin</g> and <g id="2">obj</g> folders</source>
-<target xml:lang="pt"><g id="1">Bin</g> e <g id="2">obj</g> pastas</target>
+<target xml:lang="pt">Pastas <g id="1">Bin</g> e <g id="2">obj</g></target>
 </trans-unit>
 <trans-unit id="tu6" xml:space="preserve">
 <source xml:lang="en">We don't recommend you add the <g id="1">Bin</g> or <g id="2">obj</g> folders to version control. This is because:</source>
-<target xml:lang="pt">Não recomendamos que você adicione as pastas <g id="1">Bin</g> ou <g id="2">obj</g> ao controle de versão. Isso é porque:</target>
+<target xml:lang="pt">Não é recomendável incluir as pastas  <g id="1">Bin</g> ou <g id="2">obj</g> no controle de versão. Isso se deve a algumas razões:</target>
 </trans-unit>
 <trans-unit id="tu7" xml:space="preserve">
 <source xml:lang="en">Game Studio builds these folders every time you run the game, so you don't need to keep a history of them.</source>
-<target xml:lang="pt">Game Studio constrói essas pastas cada vez que você executa o jogo, então você não precisa manter um histórico deles.</target>
+<target xml:lang="pt">O Game Studio cria essas pastas toda vez que você executa o jogo, então não é necessário manter um histórico delas.</target>
 </trans-unit>
 <trans-unit id="tu8" xml:space="preserve">
 <source xml:lang="en">You can't see if they match the source files they were generated from in a given commit.</source>
-<target xml:lang="pt">Você não pode ver se eles correspondem aos arquivos de origem que eles foram gerados em um determinado commit.</target>
+<target xml:lang="pt">Não é possível verificar se essas pastas correspondem aos arquivos de origem dos quais foram geradas em um determinado commit.</target>
 </trans-unit>
 <trans-unit id="tu9" xml:space="preserve">
 <source xml:lang="en">They take up space and slow down version control synchronization.</source>
-<target xml:lang="pt">Eles ocupam espaço e retardam a sincronização de controle de versão.</target>
+<target xml:lang="pt">Elas ocupam espaço e podem tornar a sincronização do controle de versão mais lenta.</target>
 </trans-unit>
 <trans-unit id="tu10" xml:space="preserve">
 <source xml:lang="en">Visual Studio also puts <g id="1">.obj</g> folders inside each code folder. For the same reasons, we don't recommend you add these to version control.</source>
-<target xml:lang="pt">O Visual Studio também coloca pastas <g id="1">.obj</g> dentro de cada pasta de código. Pelas mesmas razões, não recomendamos que você adicione estes ao controle de versão.</target>
+<target xml:lang="pt">O Visual Studio também coloca pastas <g id="1">.obj</g> dentro de cada pasta de código. Pelas mesmas razões, não é recomendável incluí-las no controle de versão.</target>
 </trans-unit>
 <trans-unit id="tu11" xml:space="preserve">
 <source xml:lang="en">Resource files</source>
-<target xml:lang="pt">Arquivos de asset</target>
+<target xml:lang="pt">Arquivos de recursos</target>
 </trans-unit>
 <trans-unit id="tu12" xml:space="preserve">
 <source xml:lang="en"><g id="1">Resource files</g> are files imported into Game Studio and used by assets. They include image files (eg <g id="2">.png</g>, <g id="3">.jpg</g>), audio files (eg <g id="4">.mp3</g>, <g id="5">.wav</g>), and models (eg <g id="6">.fbx</g>). We recommend you save these files in the <g id="7">Resources</g> folder in your project folder.</source>
-<target xml:lang="pt"><g id="1">Resource files</g> são arquivos importados para Game Studio e usados por ativos. Eles incluem arquivos de imagem (por exemplo <g id="2">.png</g>, <g id="3">.jpg</g>), arquivos de áudio (por exemplo <g id="4">.mp3</g>, <g id="5">.wav</g>), e modelos (por exemplo <g id="6">.fbx</g>). Recomendamos que você salve esses arquivos na pasta <g id="7">Resources</g> em sua pasta de projeto.</target>
+<target xml:lang="pt">Os <g id="1">arquivos de recursos</g> são aqueles que são importados para o Game Studio e usados pelos assets. Eles incluem arquivos de imagem (por exemplo, <g id="2">.png</g> e <g id="3">.jpg</g>), arquivos de áudio (por exemplo, <g id="4">.mp3</g> e <g id="5">.wav</g>) e modelos (por exemplo, <g id="6">.fbx</g>). Recomendamos salvar esses arquivos na pasta <g id="7">Resources</g> em seu projeto.</target>
 </trans-unit>
 <trans-unit id="tu13" xml:space="preserve">
 <source xml:lang="en">We don't recommend you save resource files in the Assets folder. You might be used to organizing files this way if you use Unity®, as Unity® requires resource files and asset files to be in the same folder. Stride doesn't require this, and doing so has downsides.</source>
-<target xml:lang="pt">Não recomendamos que você salve arquivos de assets na pasta Ativos. Você pode ser usado para organizar arquivos desta forma se você usar Unity®, pois Unity® requer arquivos de assets e arquivos de ativos para estar na mesma pasta. O Stride não precisa disto, e fazê-lo tem desvantagens.</target>
+<target xml:lang="pt">Não recomendamos salvar arquivos de recursos na pasta Assets. Você pode estar acostumado a organizar os arquivos dessa maneira se usar o Unity®, pois o Unity® exige que os arquivos de recursos e os arquivos de assets estejam na mesma pasta. No entanto, o Stride não tem essa restrição e, na verdade, existem desvantagens em fazê-lo.</target>
 </trans-unit>
 <trans-unit id="tu14" xml:space="preserve">
 <source xml:lang="en">For example, imagine an artist has edited 10GB of textures and committed them to source control. At the same time, a designer needs to edit an asset quickly. To do this, the designer gets the latest version of the asset from source control. However, because the assets and resource files are in the same folder, the designer is forced to get the 10gb of files at the same time. If the files are in a separate folder, however, the designer only has to get the folder they need. Additionally, as asset files are much smaller than resource files, it's much faster to navigate the asset history in a dedicated asset folder.</source>
-<target xml:lang="pt">Por exemplo, imagine que um artista tenha editado 10GB de texturas e comprometido com o controle de fonte. Ao mesmo tempo, um designer precisa editar um ativo rapidamente. Para fazer isso, o designer recebe a versão mais recente do ativo do controle de origem. No entanto, porque os ativos e arquivos de assets estão na mesma pasta, o designer é forçado a obter o 10gb de arquivos ao mesmo tempo. Se os arquivos estão em uma pasta separada, no entanto, o designer só tem que obter a pasta que eles precisam. Além disso, como arquivos de ativos são muito menores do que arquivos de assets, é muito mais rápido navegar no histórico de ativos em uma pasta de ativos dedicada.</target>
+<target xml:lang="pt">Para ilustrar, considere o seguinte cenário: um artista editou 10 GB de texturas e as incluiu no controle de versão. No mesmo momento, um designer precisa editar um asset com urgência. Para isso, o designer precisa obter a versão mais recente desse asset no controle de versão. No entanto, como os assets e os arquivos de recursos estão na mesma pasta, o designer é obrigado a obter os 10 GB de arquivos ao mesmo tempo. Se os arquivos de recursos estiverem em uma pasta separada, o designer só precisaria obter a pasta relevante. Além disso, como os arquivos de assets são muito menores que os arquivos de recursos, é muito mais rápido navegar pelo histórico de assets em uma pasta dedicada para esse fim.</target>
 </trans-unit>
 <trans-unit id="tu15" xml:space="preserve">
 <source xml:lang="en">Content creation files</source>
@@ -63,11 +63,11 @@
 </trans-unit>
 <trans-unit id="tu16" xml:space="preserve">
 <source xml:lang="en"><g id="1">Content creation files</g> are created with external content creation tools, such as <g id="2">.psd</g> files (Photoshop) or <g id="3">.max</g> files (3D Studio Max).</source>
-<target xml:lang="pt"><g id="1"> Os arquivos de criação de conteúdo </g> são criados com ferramentas de criação de conteúdo externos, como arquivos <g id="2">.psd</g> (Photoshop) ou <g id="3">.max</g>.&gt; (3D Studio Max).</target>
+<target xml:lang="pt">Os <g id="1">arquivos de criação de conteúdo</g> são aqueles que são criados com ferramentas externas de criação de conteúdo, como arquivos <g id="2">.psd</g> (Photoshop) ou <g id="3">.max</g> (3D Studio Max).</target>
 </trans-unit>
 <trans-unit id="tu17" xml:space="preserve">
 <source xml:lang="en">We don't recommend you save content creation files in your project folder. This is because the files are often large and aren't used in the project directly. Instead, we recommend you save the files in a different version control repository - or, if your version control system supports partial checkouts (such as SVN or Perforce), a different root folder. This means team members only get the files they need.</source>
-<target xml:lang="pt">Não recomendamos que você salve arquivos de criação de conteúdo em sua pasta de projeto. Isso porque os arquivos são muitas vezes volumosos e não são usados no projeto diretamente. Em vez disso, recomendamos que você salve os arquivos em um repositório de controle de versão diferente - ou, se o sistema de controle de versão suporta checkouts parciais (como SVN ou Perforce), uma pasta raiz diferente. Isso significa que os membros da equipe só obtêm os arquivos de que precisam.</target>
+<target xml:lang="pt">Não é recomendável salvar esses arquivos na pasta de projeto. Isso porque os arquivos são muitas vezes volumosos e não são usados no projeto diretamente. Em vez disso, recomendamos que você salve os arquivos em um repositório de controle de versão diferente. Ou, se o seu sistema de controle de versão oferecer suporte a verificações parciais (como o SVN ou o Perforce), você pode armazená-los em uma pasta raiz diferente. Isso significa que os membros da equipe só obterão os arquivos de que precisam.</target>
 </trans-unit>
 <trans-unit id="tu18" xml:space="preserve">
 <source xml:lang="en">Suggested directory structure</source>
@@ -75,7 +75,7 @@
 </trans-unit>
 <trans-unit id="tu19" xml:space="preserve">
 <source xml:lang="en">Following these suggestions, an example folder structure might look like this:</source>
-<target xml:lang="pt">Seguindo essas sugestões, uma estrutura de pasta de exemplo pode parecer assim:</target>
+<target xml:lang="pt">Seguindo essas sugestões, uma estrutura de pastas de exemplo pode se parecer dessa forma:</target>
 </trans-unit>
 <trans-unit id="tu20" xml:space="preserve">
 <source xml:lang="en">- MyGame
@@ -90,16 +90,16 @@
 - ContentCreationFiles
     - texture.psd
 </source>
-<target xml:lang="pt">- MyGame
-    - Activos
-        - textura
-    - Bin
-    - MyGame. Jogo
-    - MyGame
-    - obj
+<target xml:lang="pt">- MeuJogo
     - Assets
-        - textura. png
-- Ficheiros de Criação de Conteúdo
+        - textura.sdtex
+    - Bin
+    - MeuJogo.Game
+    - MeuJogo.Platform
+    - obj
+    - Resources
+        - textura.png
+- ArquivosCriaçãoConteúdo
     - textura.psd
 </target>
 </trans-unit>
@@ -124,20 +124,20 @@
 - MayaProjects
      - model.mb
 </source>
-<target xml:lang="pt">- MyGame
-    - Activos
-        - textura
-        - modelo
-    - Bin
-    - MyGame. Jogo
-    - MyGame
-    - obj
+<target xml:lang="pt">- MeuJogo
     - Assets
-        - textura. png
+        - textura.sdtex
+        - modelo.sdtex
+    - Bin
+    - MeuJogo.Game
+    - MeuJogo.Platform
+    - obj
+    - Resources
+        - textura.png
         - modelo.fbx
-- Projetos do Photoshop
+- ArquivosPhotoshop
     - textura.psd
-- MayaProjects
+- ArquivosMaya
      - modelo.mb
 </target>
 </trans-unit>
@@ -151,31 +151,31 @@
 </trans-unit>
 <trans-unit id="tu25" xml:space="preserve">
 <source xml:lang="en">The programmers check out the <g id="1">MyGame</g> project folder containing code, assets, and resources.</source>
-<target xml:lang="pt">Os programadores verificam a pasta de projeto <g id="1">MyGame</g> contendo código, assets e recursos.</target>
+<target xml:lang="pt">Os programadores fazem check-out da pasta do projeto <g id="1">MeuJogo</g>, que contém código, assets e recursos.</target>
 </trans-unit>
 <trans-unit id="tu26" xml:space="preserve">
 <source xml:lang="en">The 2D artists check out the game project and the <g id="1">PhotoshopProjects</g> folder containing <g id="2">.psd</g> files.</source>
-<target xml:lang="pt">Os artistas 2D verificam o projeto do jogo e a pasta <g id="1">PhotoshopProjects</g> contendo arquivos <g id="2">.psd</g>.</target>
+<target xml:lang="pt">Os artistas 2D fazem check-out do projeto do jogo e da pasta <g id="1">ArquivosPhotoshop</g>, que contém arquivos <g id="2">.psd</g>.</target>
 </trans-unit>
 <trans-unit id="tu27" xml:space="preserve">
 <source xml:lang="en">The 3D artists check out the game project and the <g id="1">MayaProjects</g> folder containing <g id="2">.mb</g> (Maya project) files.</source>
-<target xml:lang="pt">Os artistas 3D verificam o projeto do jogo e a pasta <g id="1">MayaProjects</g> contendo arquivos <g id="2">.mb</g> (projeto de maio).</target>
+<target xml:lang="pt">Os artistas 3D fazem check-out do projeto do jogo e da pasta <g id="1">ArquivosMaya</g>, que contém arquivos <g id="2">.mb</g> (arquivos do Maya).</target>
 </trans-unit>
 <trans-unit id="tu28" xml:space="preserve">
 <source xml:lang="en">Now imagine one of the 2D artists changes several <g id="1">.psd</g> files and commits 2GB of changes to version control. Because only the 2D artists have the <g id="2">PhotoshopProjects</g> folder checked out, only the other 2D artist gets this change. The other team members don't need it. This is an efficient way to share files across projects.</source>
-<target xml:lang="pt">Agora imagine um dos artistas 2D muda vários arquivos <g id="1">.psd</g> e comete 2GB de mudanças no controle de versão. Porque apenas os artistas 2D têm a pasta <g id="2">PhotoshopProjects</g> verificada, apenas o outro artista 2D recebe esta mudança. Os outros membros da equipa não precisam dele. Esta é uma maneira eficiente de compartilhar arquivos em projetos.</target>
+<target xml:lang="pt">Agora, imagine que um dos artistas 2D faz alterações em vários arquivos <g id="1">.psd</g> e envia 2GB de alterações para o controle de versão. Como apenas os artistas 2D têm a pasta <g id="1">ArquivosPhotoshop</g>, somente o outro artista 2D terá que sincronizar essa alteração.<g id="2"/> Os outros membros da equipe não precisam dela. Esta é uma maneira eficiente de compartilhar arquivos em projetos.</target>
 </trans-unit>
 <trans-unit id="tu29" xml:space="preserve">
 <source xml:lang="en">See also</source>
-<target xml:lang="pt">Ver também</target>
+<target xml:lang="pt">Veja também</target>
 </trans-unit>
 <trans-unit id="tu30" xml:space="preserve">
 <source xml:lang="en"><g id="1">Project structure</g></source>
-<target xml:lang="pt"><g id="1">Estrutura do projecto</g></target>
+<target xml:lang="pt"><g id="1">Estrutura do projeto</g></target>
 </trans-unit>
 <trans-unit id="tu31" xml:space="preserve">
 <source xml:lang="en"><g id="1">Distribute a game</g></source>
-<target xml:lang="pt"><g id="1">Distribuir um jogo</g></target>
+<target xml:lang="pt"><g id="1">Distribuir seu jogo</g></target>
 </trans-unit>
 </body>
 </file>
