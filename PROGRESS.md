@@ -1,329 +1,329 @@
 # Progresso
 ## A tabela abaixo apresenta a lista de arquivos, a quantidade de palavras em cada um, <br/> e o status atual da tradução.
 `Progress: The table below shows the list of files, the number of words in each one, and the current translation status.`
-| Arquivos / Files                                                                                  | Palavras / Words | Status  |
-| ------------------------------------------------------------------------------------------------- | ---------------- | ------- |
-| 404.md.xlf                                                                                        | 38               | 100,00% |
-| index.md.xlf                                                                                      | 237              | 100,00% |
-| api\index.md.xlf                                                                                  | 138              | 100,00% |
-| diagnostics\index.md.xlf                                                                          | 210              | 100,00% |
-| diagnostics\STRDIAG000.md.xlf                                                                     | 188              | 100,00% |
-| diagnostics\STRDIAG001.md.xlf                                                                     | 90               | 100,00% |
-| diagnostics\STRDIAG002.md.xlf                                                                     | 108              | 100,00% |
-| diagnostics\STRDIAG003.md.xlf                                                                     | 119              | 100,00% |
-| diagnostics\STRDIAG004.md.xlf                                                                     | 280              | 100,00% |
-| diagnostics\STRDIAG005.md.xlf                                                                     | 124              | 100,00% |
-| diagnostics\STRDIAG006.md.xlf                                                                     | 197              | 100,00% |
-| diagnostics\STRDIAG007.md.xlf                                                                     | 77               | 100,00% |
-| diagnostics\STRDIAG008.md.xlf                                                                     | 69               | 100,00% |
-| diagnostics\toc.md.xlf                                                                            | 11               | 100,00% |
-| examples\Stride.Utilities-examples.md.xlf                                                         | 130              | 100,00% |
-| examples\Stride.Utilities-remarks.md.xlf                                                          | 405              | 100,00% |
-| includes\game-studio-xenko-note.md.xlf                                                            | 23               | 100,00% |
-| includes\under-construction-note.md.xlf                                                           | 6                | 100,00% |
-| manual\index.md.xlf                                                                               | 143              | 100,00% |
-| manual\toc.md.xlf                                                                                 | 547              | 100,00% |
-| manual\animation\additive-animation.md.xlf                                                        | 894              | 100,00% |
-| manual\animation\animation-properties.md.xlf                                                      | 629              | 100,00% |
-| manual\animation\animation-scripts.md.xlf                                                         | 432              | 100,00% |
-| manual\animation\custom-attributes.md.xlf                                                         | 285              | 100,00% |
-| manual\animation\custom-blend-trees.md.xlf                                                        | 579              | 100,00% |
-| manual\animation\import-animations.md.xlf                                                         | 361              | 100,00% |
-| manual\animation\index.md.xlf                                                                     | 310              | 100,00% |
-| manual\animation\model-node-links.md.xlf                                                          | 335              | 100,00% |
-| manual\animation\preview-animations.md.xlf                                                        | 153              | 100,00% |
-| manual\animation\procedural-animation.md.xlf                                                      | 521              | 100,00% |
-| manual\animation\set-up-animations.md.xlf                                                         | 372              | 100,00% |
-| manual\audio\audio-asset-properties.md.xlf                                                        | 157              | 100,00% |
-| manual\audio\audio-emitters.md.xlf                                                                | 514              | 100,00% |
-| manual\audio\audio-listeners.md.xlf                                                               | 183              | 100,00% |
-| manual\audio\custom-audio-data.md.xlf                                                             | 87               | 100,00% |
-| manual\audio\global-audio-settings.md.xlf                                                         | 63               | 100,00% |
-| manual\audio\hrtf.md.xlf                                                                          | 288              | 100,00% |
-| manual\audio\import-audio.md.xlf                                                                  | 252              | 100,00% |
-| manual\audio\index.md.xlf                                                                         | 63               | 100,00% |
-| manual\audio\non-spatialized-audio.md.xlf                                                         | 560              | 100,00% |
-| manual\audio\play-a-range-within-an-audio-file.md.xlf                                             | 128              | 100,00% |
-| manual\audio\set-an-audio-device.md.xlf                                                           | 89               | 100,00% |
-| manual\audio\spatialized-audio.md.xlf                                                             | 273              | 100,00% |
-| manual\audio\stream-audio.md.xlf                                                                  | 162              | 100,00% |
-| manual\engine\file-system.md.xlf                                                                  | 285              | 100,00% |
-| manual\engine\index.md.xlf                                                                        | 28               | 100,00% |
-| manual\engine\package.md.xlf                                                                      | 98               | 100,00% |
-| manual\engine\project.md.xlf                                                                      | 73               | 100,00% |
-| manual\engine\resources.md.xlf                                                                    | 67               | 100,00% |
-| manual\engine\solution.md.xlf                                                                     | 308              | 100,00% |
-| manual\engine\assets\asset-bundles.md.xlf                                                         | 474              | 100,00% |
-| manual\engine\assets\asset-control.md.xlf                                                         | 394              | 100,00% |
-| manual\engine\assets\index.md.xlf                                                                 | 356              | 100,00% |
-| manual\engine\entity-component-model\index.md.xlf                                                 | 294              | 100,00% |
-| manual\engine\entity-component-model\managing-entities.md.xlf                                     | 293              | 100,00% |
-| manual\engine\entity-component-model\usage.md.xlf                                                 | 475              | 100,00% |
-| manual\files-and-folders\cached-files.md.xlf                                                      | 385              | 0,00%   |
-| manual\files-and-folders\distribute-a-game.md.xlf                                                 | 389              | 0,00%   |
-| manual\files-and-folders\index.md.xlf                                                             | 31               | 0,00%   |
-| manual\files-and-folders\project-structure.md.xlf                                                 | 213              | 0,00%   |
-| manual\files-and-folders\version-control.md.xlf                                                   | 643              | 0,00%   |
-| manual\game-studio\add-entities.md.xlf                                                            | 439              | 0,00%   |
-| manual\game-studio\archetypes.md.xlf                                                              | 486              | 0,00%   |
-| manual\game-studio\assets.md.xlf                                                                  | 136              | 0,00%   |
-| manual\game-studio\create-a-scene.md.xlf                                                          | 302              | 0,00%   |
-| manual\game-studio\create-assets.md.xlf                                                           | 401              | 0,00%   |
-| manual\game-studio\game-settings.md.xlf                                                           | 1256             | 0,00%   |
-| manual\game-studio\index.md.xlf                                                                   | 384              | 0,00%   |
-| manual\game-studio\load-scenes.md.xlf                                                             | 536              | 0,00%   |
-| manual\game-studio\manage-assets.md.xlf                                                           | 750              | 0,00%   |
-| manual\game-studio\manage-entities.md.xlf                                                         | 615              | 0,00%   |
-| manual\game-studio\manage-scenes.md.xlf                                                           | 715              | 0,00%   |
-| manual\game-studio\navigate-in-the-scene-editor.md.xlf                                            | 700              | 0,00%   |
-| manual\game-studio\scenes.md.xlf                                                                  | 83               | 0,00%   |
-| manual\game-studio\splash-screen.md.xlf                                                           | 218              | 0,00%   |
-| manual\game-studio\use-assets.md.xlf                                                              | 786              | 0,00%   |
-| manual\game-studio\world-units.md.xlf                                                             | 32               | 0,00%   |
-| manual\game-studio\prefabs\create-a-prefab.md.xlf                                                 | 199              | 0,00%   |
-| manual\game-studio\prefabs\edit-prefabs.md.xlf                                                    | 200              | 0,00%   |
-| manual\game-studio\prefabs\index.md.xlf                                                           | 269              | 0,00%   |
-| manual\game-studio\prefabs\nested-prefabs.md.xlf                                                  | 208              | 0,00%   |
-| manual\game-studio\prefabs\override-prefab-properties.md.xlf                                      | 363              | 0,00%   |
-| manual\game-studio\prefabs\prefab-models.md.xlf                                                   | 232              | 0,00%   |
-| manual\game-studio\prefabs\use-prefabs.md.xlf                                                     | 676              | 0,00%   |
-| manual\get-started\create-a-project.md.xlf                                                        | 570              | 0,00%   |
-| manual\get-started\index.md.xlf                                                                   | 51               | 0,00%   |
-| manual\get-started\install-stride.md.xlf                                                          | 394              | 0,00%   |
-| manual\get-started\launch-a-game.md.xlf                                                           | 295              | 0,00%   |
-| manual\get-started\launch-stride.md.xlf                                                           | 332              | 0,00%   |
-| manual\get-started\visual-studio-extension.md.xlf                                                 | 93               | 0,00%   |
-| manual\graphics\index.md.xlf                                                                      | 166              | 0,00%   |
-| manual\graphics\sprite-fonts.md.xlf                                                               | 1215             | 0,00%   |
-| manual\graphics\cameras\animate-a-camera-with-a-model-file.md.xlf                                 | 866              | 0,00%   |
-| manual\graphics\cameras\camera-slots.md.xlf                                                       | 383              | 0,00%   |
-| manual\graphics\cameras\index.md.xlf                                                              | 805              | 0,00%   |
-| manual\graphics\effects-and-shaders\compile-shaders.md.xlf                                        | 730              | 0,00%   |
-| manual\graphics\effects-and-shaders\custom-shaders.md.xlf                                         | 809              | 0,00%   |
-| manual\graphics\effects-and-shaders\effect-language.md.xlf                                        | 543              | 0,00%   |
-| manual\graphics\effects-and-shaders\index.md.xlf                                                  | 211              | 0,00%   |
-| manual\graphics\effects-and-shaders\shading-language\automatic-shader-stage-input-output.md.xlf   | 740              | 0,00%   |
-| manual\graphics\effects-and-shaders\shading-language\composition.md.xlf                           | 609              | 0,00%   |
-| manual\graphics\effects-and-shaders\shading-language\index.md.xlf                                 | 92               | 0,00%   |
-| manual\graphics\effects-and-shaders\shading-language\shader-classes-mixins-and-inheritance.md.xlf | 855              | 0,00%   |
-| manual\graphics\effects-and-shaders\shading-language\shader-stages.md.xlf                         | 382              | 0,00%   |
-| manual\graphics\effects-and-shaders\shading-language\templates.md.xlf                             | 165              | 0,00%   |
-| manual\graphics\graphics-compositor\custom-scene-renderers.md.xlf                                 | 152              | 0,00%   |
-| manual\graphics\graphics-compositor\debug-renderers.md.xlf                                        | 332              | 0,00%   |
-| manual\graphics\graphics-compositor\index.md.xlf                                                  | 562              | 0,00%   |
-| manual\graphics\graphics-compositor\render-groups-and-masks.md.xlf                                | 181              | 0,00%   |
-| manual\graphics\graphics-compositor\render-textures.md.xlf                                        | 924              | 0,00%   |
-| manual\graphics\graphics-compositor\scene-renderers.md.xlf                                        | 539              | 0,00%   |
-| manual\graphics\lights-and-shadows\add-a-light.md.xlf                                             | 123              | 0,00%   |
-| manual\graphics\lights-and-shadows\ambient-lights.md.xlf                                          | 149              | 0,00%   |
-| manual\graphics\lights-and-shadows\directional-lights.md.xlf                                      | 747              | 0,00%   |
-| manual\graphics\lights-and-shadows\index.md.xlf                                                   | 41               | 0,00%   |
-| manual\graphics\lights-and-shadows\light-probes.md.xlf                                            | 691              | 0,00%   |
-| manual\graphics\lights-and-shadows\light-shafts.md.xlf                                            | 824              | 0,00%   |
-| manual\graphics\lights-and-shadows\point-lights.md.xlf                                            | 242              | 0,00%   |
-| manual\graphics\lights-and-shadows\shadows.md.xlf                                                 | 484              | 0,00%   |
-| manual\graphics\lights-and-shadows\skybox-lights.md.xlf                                           | 499              | 0,00%   |
-| manual\graphics\lights-and-shadows\spot-lights.md.xlf                                             | 304              | 0,00%   |
-| manual\graphics\lights-and-shadows\voxel-cone-tracing-gi.md.xlf                                   | 288              | 0,00%   |
-| manual\graphics\low-level-api\draw-vertices.md.xlf                                                | 412              | 0,00%   |
-| manual\graphics\low-level-api\index.md.xlf                                                        | 166              | 0,00%   |
-| manual\graphics\low-level-api\pipeline-state.md.xlf                                               | 759              | 0,00%   |
-| manual\graphics\low-level-api\resources.md.xlf                                                    | 131              | 0,00%   |
-| manual\graphics\low-level-api\spritebatch.md.xlf                                                  | 466              | 0,00%   |
-| manual\graphics\low-level-api\spritefont.md.xlf                                                   | 219              | 0,00%   |
-| manual\graphics\low-level-api\textures-and-render-textures.md.xlf                                 | 626              | 0,00%   |
-| manual\graphics\materials\clear-coat-shading.md.xlf                                               | 741              | 0,00%   |
-| manual\graphics\materials\geometry-attributes.md.xlf                                              | 676              | 0,00%   |
-| manual\graphics\materials\index.md.xlf                                                            | 92               | 0,00%   |
-| manual\graphics\materials\material-attributes.md.xlf                                              | 150              | 0,00%   |
-| manual\graphics\materials\material-layers.md.xlf                                                  | 384              | 0,00%   |
-| manual\graphics\materials\material-maps.md.xlf                                                    | 604              | 0,00%   |
-| manual\graphics\materials\material-slots.md.xlf                                                   | 579              | 0,00%   |
-| manual\graphics\materials\materials-for-developers.md.xlf                                         | 92               | 0,00%   |
-| manual\graphics\materials\misc-attributes.md.xlf                                                  | 489              | 0,00%   |
-| manual\graphics\materials\shading-attributes.md.xlf                                               | 1077             | 0,00%   |
-| manual\graphics\materials\subsurface-scattering.md.xlf                                            | 448              | 0,00%   |
-| manual\graphics\post-effects\ambient-occlusion.md.xlf                                             | 249              | 0,00%   |
-| manual\graphics\post-effects\anti-aliasing.md.xlf                                                 | 137              | 0,00%   |
-| manual\graphics\post-effects\bloom.md.xlf                                                         | 210              | 0,00%   |
-| manual\graphics\post-effects\bright-filter.md.xlf                                                 | 168              | 0,00%   |
-| manual\graphics\post-effects\depth-of-field.md.xlf                                                | 214              | 0,00%   |
-| manual\graphics\post-effects\fog.md.xlf                                                           | 92               | 0,00%   |
-| manual\graphics\post-effects\index.md.xlf                                                         | 310              | 0,00%   |
-| manual\graphics\post-effects\lens-flare.md.xlf                                                    | 110              | 0,00%   |
-| manual\graphics\post-effects\light-streaks.md.xlf                                                 | 169              | 0,00%   |
-| manual\graphics\post-effects\local-reflections.md.xlf                                             | 1033             | 0,00%   |
-| manual\graphics\post-effects\outline.md.xlf                                                       | 76               | 0,00%   |
-| manual\graphics\post-effects\color-transforms\custom-color-transforms.md.xlf                      | 666              | 0,00%   |
-| manual\graphics\post-effects\color-transforms\film-grain.md.xlf                                   | 114              | 0,00%   |
-| manual\graphics\post-effects\color-transforms\gamma-correction.md.xlf                             | 141              | 0,00%   |
-| manual\graphics\post-effects\color-transforms\index.md.xlf                                        | 85               | 0,00%   |
-| manual\graphics\post-effects\color-transforms\tonemap.md.xlf                                      | 72               | 0,00%   |
-| manual\graphics\post-effects\color-transforms\vignetting.md.xlf                                   | 93               | 0,00%   |
-| manual\graphics\rendering-pipeline\index.md.xlf                                                   | 157              | 0,00%   |
-| manual\graphics\rendering-pipeline\render-features.md.xlf                                         | 277              | 0,00%   |
-| manual\graphics\rendering-pipeline\render-stages.md.xlf                                           | 433              | 0,00%   |
-| manual\graphics\textures\compression.md.xlf                                                       | 189              | 0,00%   |
-| manual\graphics\textures\index.md.xlf                                                             | 841              | 0,00%   |
-| manual\graphics\textures\normal-maps.md.xlf                                                       | 381              | 0,00%   |
-| manual\graphics\textures\skyboxes-and-backgrounds.md.xlf                                          | 750              | 0,00%   |
-| manual\graphics\textures\streaming.md.xlf                                                         | 564              | 0,00%   |
-| manual\input\gamepads.md.xlf                                                                      | 621              | 0,00%   |
-| manual\input\gestures.md.xlf                                                                      | 1078             | 0,00%   |
-| manual\input\index.md.xlf                                                                         | 442              | 0,00%   |
-| manual\input\keyboards.md.xlf                                                                     | 323              | 0,00%   |
-| manual\input\mouse.md.xlf                                                                         | 703              | 0,00%   |
-| manual\input\pointers.md.xlf                                                                      | 815              | 0,00%   |
-| manual\input\sensors.md.xlf                                                                       | 745              | 0,00%   |
-| manual\input\virtual-buttons.md.xlf                                                               | 238              | 0,00%   |
-| manual\navigation\dynamic-navigation.md.xlf                                                       | 325              | 0,00%   |
-| manual\navigation\index.md.xlf                                                                    | 71               | 0,00%   |
-| manual\navigation\navigation-bounding-boxes.md.xlf                                                | 213              | 0,00%   |
-| manual\navigation\navigation-components.md.xlf                                                    | 228              | 0,00%   |
-| manual\navigation\navigation-groups.md.xlf                                                        | 331              | 0,00%   |
-| manual\navigation\navigation-meshes.md.xlf                                                        | 375              | 0,00%   |
-| manual\nuget\consume-packages.md.xlf                                                              | 199              | 0,00%   |
-| manual\nuget\create-packages.md.xlf                                                               | 192              | 0,00%   |
-| manual\nuget\index.md.xlf                                                                         | 60               | 0,00%   |
-| manual\particles\create-particles.md.xlf                                                          | 488              | 0,00%   |
-| manual\particles\emitters.md.xlf                                                                  | 362              | 0,00%   |
-| manual\particles\index.md.xlf                                                                     | 117              | 0,00%   |
-| manual\particles\initializers.md.xlf                                                              | 2548             | 0,00%   |
-| manual\particles\materials.md.xlf                                                                 | 417              | 0,00%   |
-| manual\particles\ribbons-and-trails.md.xlf                                                        | 817              | 0,00%   |
-| manual\particles\shapes.md.xlf                                                                    | 221              | 0,00%   |
-| manual\particles\spawners.md.xlf                                                                  | 919              | 0,00%   |
-| manual\particles\updaters.md.xlf                                                                  | 1796             | 0,00%   |
-| manual\particles\tutorials\create-a-trail.md.xlf                                                  | 2373             | 0,00%   |
-| manual\particles\tutorials\custom-particles.md.xlf                                                | 2100             | 0,00%   |
-| manual\particles\tutorials\index.md.xlf                                                           | 12               | 0,00%   |
-| manual\particles\tutorials\inheritance.md.xlf                                                     | 1081             | 0,00%   |
-| manual\particles\tutorials\lasers-and-lightning.md.xlf                                            | 996              | 0,00%   |
-| manual\particles\tutorials\particle-materials.md.xlf                                              | 1530             | 0,00%   |
-| manual\physics\characters.md.xlf                                                                  | 386              | 0,00%   |
-| manual\physics\collider-shapes.md.xlf                                                             | 655              | 0,00%   |
-| manual\physics\colliders.md.xlf                                                                   | 455              | 0,00%   |
-| manual\physics\constraints.md.xlf                                                                 | 407              | 0,00%   |
-| manual\physics\create-a-bouncing-ball.md.xlf                                                      | 730              | 0,00%   |
-| manual\physics\index.md.xlf                                                                       | 163              | 0,00%   |
-| manual\physics\kinematic-rigid-bodies.md.xlf                                                      | 174              | 0,00%   |
-| manual\physics\raycasting.md.xlf                                                                  | 345              | 0,00%   |
-| manual\physics\rigid-bodies.md.xlf                                                                | 471              | 0,00%   |
-| manual\physics\script-a-trigger.md.xlf                                                            | 1232             | 0,00%   |
-| manual\physics\simulation.md.xlf                                                                  | 148              | 0,00%   |
-| manual\physics\static-colliders.md.xlf                                                            | 389              | 0,00%   |
-| manual\physics\triggers.md.xlf                                                                    | 224              | 0,00%   |
-| manual\physics\tutorials.md.xlf                                                                   | 39               | 0,00%   |
-| manual\platforms\add-or-remove-a-platform.md.xlf                                                  | 86               | 0,00%   |
-| manual\platforms\index.md.xlf                                                                     | 242              | 0,00%   |
-| manual\platforms\ios.md.xlf                                                                       | 634              | 0,00%   |
-| manual\platforms\set-the-graphics-platform.md.xlf                                                 | 339              | 0,00%   |
-| manual\platforms\linux\create-a-linux-game.md.xlf                                                 | 367              | 0,00%   |
-| manual\platforms\linux\index.md.xlf                                                               | 8                | 0,00%   |
-| manual\platforms\linux\setup-and-requirements.md.xlf                                              | 232              | 0,00%   |
-| manual\platforms\uwp\index.md.xlf                                                                 | 44               | 0,00%   |
-| manual\platforms\uwp\xbox-live.md.xlf                                                             | 591              | 0,00%   |
-| manual\requirements\index.md.xlf                                                                  | 192              | 0,00%   |
-| manual\scripts\create-a-model-from-code.md.xlf                                                    | 746              | 0,00%   |
-| manual\scripts\create-a-script.md.xlf                                                             | 491              | 0,00%   |
-| manual\scripts\debugging.md.xlf                                                                   | 215              | 0,00%   |
-| manual\scripts\events.md.xlf                                                                      | 303              | 0,00%   |
-| manual\scripts\index.md.xlf                                                                       | 247              | 0,00%   |
-| manual\scripts\preprocessor-variables.md.xlf                                                      | 171              | 0,00%   |
-| manual\scripts\public-properties-and-fields.md.xlf                                                | 470              | 0,00%   |
-| manual\scripts\scheduling-and-priorities.md.xlf                                                   | 254              | 0,00%   |
-| manual\scripts\serialization.md.xlf                                                               | 798              | 0,00%   |
-| manual\scripts\types-of-script.md.xlf                                                             | 315              | 0,00%   |
-| manual\scripts\use-a-script.md.xlf                                                                | 430              | 0,00%   |
-| manual\sprites\edit-sprites.md.xlf                                                                | 1238             | 0,00%   |
-| manual\sprites\import-sprite-sheets.md.xlf                                                        | 119              | 0,00%   |
-| manual\sprites\index.md.xlf                                                                       | 76               | 0,00%   |
-| manual\sprites\set-sprite-borders.md.xlf                                                          | 257              | 0,00%   |
-| manual\sprites\use-sprites.md.xlf                                                                 | 490              | 0,00%   |
-| manual\stride-for-godot-developers\index.md.xlf                                                   | 2580             | 0,00%   |
-| manual\stride-for-unity-developers\index.md.xlf                                                   | 3311             | 0,00%   |
-| manual\stride-launcher\index.md.xlf                                                               | 517              | 0,00%   |
-| manual\troubleshooting\debug-text.md.xlf                                                          | 170              | 0,00%   |
-| manual\troubleshooting\default-value-changes-ignored-at-runtime.md.xlf                            | 265              | 0,00%   |
-| manual\troubleshooting\error-a-scenecamerarenderer-in-use-has-no-camera-set.md.xlf                | 204              | 0,00%   |
-| manual\troubleshooting\full-call-stack-not-available.md.xlf                                       | 143              | 0,00%   |
-| manual\troubleshooting\index.md.xlf                                                               | 56               | 0,00%   |
-| manual\troubleshooting\lights-dont-cast-shadows.md.xlf                                            | 198              | 0,00%   |
-| manual\troubleshooting\logging.md.xlf                                                             | 548              | 0,00%   |
-| manual\troubleshooting\profiling.md.xlf                                                           | 1237             | 0,00%   |
-| manual\troubleshooting\stride-doesnt-run.md.xlf                                                   | 337              | 0,00%   |
-| manual\ui\add-a-ui-to-a-scene.md.xlf                                                              | 524              | 0,00%   |
-| manual\ui\index.md.xlf                                                                            | 163              | 0,00%   |
-| manual\ui\layout-system.md.xlf                                                                    | 192              | 0,00%   |
-| manual\ui\ui-editor.md.xlf                                                                        | 589              | 0,00%   |
-| manual\ui\ui-libraries.md.xlf                                                                     | 316              | 0,00%   |
-| manual\ui\ui-pages.md.xlf                                                                         | 267              | 0,00%   |
-| manual\video\index.md.xlf                                                                         | 38               | 0,00%   |
-| manual\video\set-up-a-video.md.xlf                                                                | 504              | 0,00%   |
-| manual\video\use-a-video-as-a-skybox.md.xlf                                                       | 82               | 0,00%   |
-| manual\video\video-properties.md.xlf                                                              | 203              | 0,00%   |
-| manual\virtual-reality\display-a-UI-in-an-overlay.md.xlf                                          | 709              | 0,00%   |
-| manual\virtual-reality\enable-vr.md.xlf                                                           | 575              | 0,00%   |
-| manual\virtual-reality\index.md.xlf                                                               | 53               | 0,00%   |
-| manual\virtual-reality\overlays.md.xlf                                                            | 369              | 0,00%   |
-| manual\virtual-reality\preview-a-scene-in-vr.md.xlf                                               | 365              | 0,00%   |
-| manual\virtual-reality\vr-sickness.md.xlf                                                         | 354              | 0,00%   |
-| ReleaseNotes\index.md.xlf                                                                         | 3                | 0,00%   |
-| ReleaseNotes\ReleaseNotes-1.10.md.xlf                                                             | 1062             | 0,00%   |
-| ReleaseNotes\ReleaseNotes-1.4.md.xlf                                                              | 585              | 0,00%   |
-| ReleaseNotes\ReleaseNotes-1.5.md.xlf                                                              | 1825             | 0,00%   |
-| ReleaseNotes\ReleaseNotes-1.6.md.xlf                                                              | 3245             | 0,00%   |
-| ReleaseNotes\ReleaseNotes-1.7.md.xlf                                                              | 2545             | 0,00%   |
-| ReleaseNotes\ReleaseNotes-1.8.md.xlf                                                              | 1850             | 0,00%   |
-| ReleaseNotes\ReleaseNotes-1.9.md.xlf                                                              | 3285             | 0,00%   |
-| ReleaseNotes\ReleaseNotes-2.0.md.xlf                                                              | 2331             | 0,00%   |
-| ReleaseNotes\ReleaseNotes-2.1.md.xlf                                                              | 1755             | 0,00%   |
-| ReleaseNotes\ReleaseNotes-3.0.md.xlf                                                              | 4249             | 0,00%   |
-| ReleaseNotes\ReleaseNotes-3.1.md.xlf                                                              | 7951             | 0,00%   |
-| ReleaseNotes\ReleaseNotes-4.0.md.xlf                                                              | 840              | 0,00%   |
-| ReleaseNotes\ReleaseNotes.md.xlf                                                                  | 958              | 0,00%   |
-| tutorials\index.md.xlf                                                                            | 243              | 0,00%   |
-| tutorials\csharpbeginner\add-component.md.xlf                                                     | 192              | 0,00%   |
-| tutorials\csharpbeginner\child-entities.md.xlf                                                    | 46               | 0,00%   |
-| tutorials\csharpbeginner\cloning-entities.md.xlf                                                  | 69               | 0,00%   |
-| tutorials\csharpbeginner\delta-time.md.xlf                                                        | 116              | 0,00%   |
-| tutorials\csharpbeginner\editor-properties.md.xlf                                                 | 88               | 0,00%   |
-| tutorials\csharpbeginner\entity.md.xlf                                                            | 82               | 0,00%   |
-| tutorials\csharpbeginner\get-component.md.xlf                                                     | 144              | 0,00%   |
-| tutorials\csharpbeginner\index.md.xlf                                                             | 556              | 0,00%   |
-| tutorials\csharpbeginner\instantiating-prefabs.md.xlf                                             | 105              | 0,00%   |
-| tutorials\csharpbeginner\introduction.md.xlf                                                      | 74               | 0,00%   |
-| tutorials\csharpbeginner\keyboard-input.md.xlf                                                    | 59               | 0,00%   |
-| tutorials\csharpbeginner\linear-interpolation.md.xlf                                              | 154              | 0,00%   |
-| tutorials\csharpbeginner\loading-content.md.xlf                                                   | 165              | 0,00%   |
-| tutorials\csharpbeginner\mouse-input.md.xlf                                                       | 114              | 0,00%   |
-| tutorials\csharpbeginner\removing-entities.md.xlf                                                 | 86               | 0,00%   |
-| tutorials\csharpbeginner\transform-position.md.xlf                                                | 76               | 0,00%   |
-| tutorials\csharpbeginner\virtual-buttons.md.xlf                                                   | 117              | 0,00%   |
-| tutorials\csharpintermediate\animation-basics.md.xlf                                              | 43               | 0,00%   |
-| tutorials\csharpintermediate\async-scripts.md.xlf                                                 | 199              | 0,00%   |
-| tutorials\csharpintermediate\audio.md.xlf                                                         | 51               | 0,00%   |
-| tutorials\csharpintermediate\collision-triggers.md.xlf                                            | 240              | 0,00%   |
-| tutorials\csharpintermediate\first-person-camera.md.xlf                                           | 54               | 0,00%   |
-| tutorials\csharpintermediate\index.md.xlf                                                         | 353              | 0,00%   |
-| tutorials\csharpintermediate\introduction.md.xlf                                                  | 41               | 0,00%   |
-| tutorials\csharpintermediate\navigation.md.xlf                                                    | 86               | 0,00%   |
-| tutorials\csharpintermediate\project-and-unproject.md.xlf                                         | 153              | 0,00%   |
-| tutorials\csharpintermediate\raycasting.md.xlf                                                    | 201              | 0,00%   |
-| tutorials\csharpintermediate\scenes.md.xlf                                                        | 193              | 0,00%   |
-| tutorials\csharpintermediate\third-person-camera.md.xlf                                           | 89               | 0,00%   |
-| tutorials\csharpintermediate\ui-basics.md.xlf                                                     | 175              | 0,00%   |
-| tutorials\gamestudio\1-launcher.md.xlf                                                            | 13               | 0,00%   |
-| tutorials\gamestudio\10-models.md.xlf                                                             | 40               | 0,00%   |
-| tutorials\gamestudio\11-physics-intro.md.xlf                                                      | 44               | 0,00%   |
-| tutorials\gamestudio\12-static-colliders.md.xlf                                                   | 58               | 0,00%   |
-| tutorials\gamestudio\2-main-interface.md.xlf                                                      | 15               | 0,00%   |
-| tutorials\gamestudio\3-navigating-scene.md.xlf                                                    | 31               | 0,00%   |
-| tutorials\gamestudio\4-scene-management.md.xlf                                                    | 32               | 0,00%   |
-| tutorials\gamestudio\5-transforming-entities.md.xlf                                               | 36               | 0,00%   |
-| tutorials\gamestudio\6-asset-pipeline.md.xlf                                                      | 37               | 0,00%   |
-| tutorials\gamestudio\7-importing-resources.md.xlf                                                 | 65               | 0,00%   |
-| tutorials\gamestudio\8-textures.md.xlf                                                            | 25               | 0,00%   |
-| tutorials\gamestudio\9-materials.md.xlf                                                           | 60               | 0,00%   |
-| tutorials\gamestudio\index.md.xlf                                                                 | 59               | 0,00%   |
-| Total                                                                                             | 148793           | 9,40%   |
+| Nome do arquivo / Filename                                                                        | Palavras em inglês / Words in English | Palavras em português / Words in Portuguese | Progresso / Progress |
+| ------------------------------------------------------------------------------------------------- | ------------------------------------- | ------------------------------------------- | -------------------- |
+| 404.md.xlf                                                                                        | 38                                    | 36                                          | 100,00%              |
+| index.md.xlf                                                                                      | 237                                   | 275                                         | 100,00%              |
+| api\index.md.xlf                                                                                  | 138                                   | 163                                         | 100,00%              |
+| diagnostics\index.md.xlf                                                                          | 210                                   | 235                                         | 100,00%              |
+| diagnostics\STRDIAG000.md.xlf                                                                     | 188                                   | 209                                         | 100,00%              |
+| diagnostics\STRDIAG001.md.xlf                                                                     | 90                                    | 104                                         | 100,00%              |
+| diagnostics\STRDIAG002.md.xlf                                                                     | 108                                   | 114                                         | 100,00%              |
+| diagnostics\STRDIAG003.md.xlf                                                                     | 119                                   | 146                                         | 100,00%              |
+| diagnostics\STRDIAG004.md.xlf                                                                     | 280                                   | 315                                         | 100,00%              |
+| diagnostics\STRDIAG005.md.xlf                                                                     | 124                                   | 131                                         | 100,00%              |
+| diagnostics\STRDIAG006.md.xlf                                                                     | 196                                   | 222                                         | 100,00%              |
+| diagnostics\STRDIAG007.md.xlf                                                                     | 77                                    | 81                                          | 100,00%              |
+| diagnostics\STRDIAG008.md.xlf                                                                     | 69                                    | 81                                          | 100,00%              |
+| diagnostics\toc.md.xlf                                                                            | 11                                    | 11                                          | 100,00%              |
+| examples\Stride.Utilities-examples.md.xlf                                                         | 130                                   | 130                                         | 100,00%              |
+| examples\Stride.Utilities-remarks.md.xlf                                                          | 405                                   | 443                                         | 100,00%              |
+| includes\game-studio-xenko-note.md.xlf                                                            | 23                                    | 26                                          | 100,00%              |
+| includes\under-construction-note.md.xlf                                                           | 6                                     | 6                                           | 100,00%              |
+| manual\index.md.xlf                                                                               | 143                                   | 170                                         | 100,00%              |
+| manual\toc.md.xlf                                                                                 | 547                                   | 672                                         | 100,00%              |
+| manual\animation\additive-animation.md.xlf                                                        | 894                                   | 1001                                        | 100,00%              |
+| manual\animation\animation-properties.md.xlf                                                      | 629                                   | 707                                         | 100,00%              |
+| manual\animation\animation-scripts.md.xlf                                                         | 432                                   | 495                                         | 100,00%              |
+| manual\animation\custom-attributes.md.xlf                                                         | 285                                   | 302                                         | 100,00%              |
+| manual\animation\custom-blend-trees.md.xlf                                                        | 579                                   | 623                                         | 100,00%              |
+| manual\animation\import-animations.md.xlf                                                         | 361                                   | 387                                         | 100,00%              |
+| manual\animation\index.md.xlf                                                                     | 310                                   | 344                                         | 100,00%              |
+| manual\animation\model-node-links.md.xlf                                                          | 335                                   | 382                                         | 100,00%              |
+| manual\animation\preview-animations.md.xlf                                                        | 153                                   | 168                                         | 100,00%              |
+| manual\animation\procedural-animation.md.xlf                                                      | 521                                   | 553                                         | 100,00%              |
+| manual\animation\set-up-animations.md.xlf                                                         | 372                                   | 399                                         | 100,00%              |
+| manual\audio\audio-asset-properties.md.xlf                                                        | 157                                   | 203                                         | 100,00%              |
+| manual\audio\audio-emitters.md.xlf                                                                | 514                                   | 608                                         | 100,00%              |
+| manual\audio\audio-listeners.md.xlf                                                               | 183                                   | 218                                         | 100,00%              |
+| manual\audio\custom-audio-data.md.xlf                                                             | 87                                    | 89                                          | 100,00%              |
+| manual\audio\global-audio-settings.md.xlf                                                         | 63                                    | 75                                          | 100,00%              |
+| manual\audio\hrtf.md.xlf                                                                          | 288                                   | 370                                         | 100,00%              |
+| manual\audio\import-audio.md.xlf                                                                  | 252                                   | 294                                         | 100,00%              |
+| manual\audio\index.md.xlf                                                                         | 63                                    | 77                                          | 100,00%              |
+| manual\audio\non-spatialized-audio.md.xlf                                                         | 560                                   | 622                                         | 100,00%              |
+| manual\audio\play-a-range-within-an-audio-file.md.xlf                                             | 128                                   | 147                                         | 100,00%              |
+| manual\audio\set-an-audio-device.md.xlf                                                           | 89                                    | 103                                         | 100,00%              |
+| manual\audio\spatialized-audio.md.xlf                                                             | 273                                   | 323                                         | 100,00%              |
+| manual\audio\stream-audio.md.xlf                                                                  | 162                                   | 200                                         | 100,00%              |
+| manual\engine\file-system.md.xlf                                                                  | 285                                   | 306                                         | 100,00%              |
+| manual\engine\index.md.xlf                                                                        | 28                                    | 24                                          | 100,00%              |
+| manual\engine\package.md.xlf                                                                      | 98                                    | 109                                         | 100,00%              |
+| manual\engine\project.md.xlf                                                                      | 73                                    | 75                                          | 100,00%              |
+| manual\engine\resources.md.xlf                                                                    | 67                                    | 73                                          | 100,00%              |
+| manual\engine\solution.md.xlf                                                                     | 308                                   | 317                                         | 100,00%              |
+| manual\engine\assets\asset-bundles.md.xlf                                                         | 474                                   | 514                                         | 100,00%              |
+| manual\engine\assets\asset-control.md.xlf                                                         | 394                                   | 399                                         | 100,00%              |
+| manual\engine\assets\index.md.xlf                                                                 | 356                                   | 384                                         | 100,00%              |
+| manual\engine\entity-component-model\index.md.xlf                                                 | 294                                   | 317                                         | 100,00%              |
+| manual\engine\entity-component-model\managing-entities.md.xlf                                     | 293                                   | 339                                         | 100,00%              |
+| manual\engine\entity-component-model\usage.md.xlf                                                 | 475                                   | 0                                           | 100,00%              |
+| manual\files-and-folders\cached-files.md.xlf                                                      | 385                                   | 425                                         | 100,00%              |
+| manual\files-and-folders\distribute-a-game.md.xlf                                                 | 389                                   | 450                                         | 100,00%              |
+| manual\files-and-folders\index.md.xlf                                                             | 31                                    | 34                                          | 100,00%              |
+| manual\files-and-folders\project-structure.md.xlf                                                 | 213                                   | 266                                         | 100,00%              |
+| manual\files-and-folders\version-control.md.xlf                                                   | 643                                   | 727                                         | 100,00%              |
+| manual\game-studio\add-entities.md.xlf                                                            | 439                                   | 0                                           | 0,00%                |
+| manual\game-studio\archetypes.md.xlf                                                              | 486                                   | 0                                           | 0,00%                |
+| manual\game-studio\assets.md.xlf                                                                  | 136                                   | 0                                           | 0,00%                |
+| manual\game-studio\create-a-scene.md.xlf                                                          | 302                                   | 0                                           | 0,00%                |
+| manual\game-studio\create-assets.md.xlf                                                           | 401                                   | 0                                           | 0,00%                |
+| manual\game-studio\game-settings.md.xlf                                                           | 1256                                  | 0                                           | 0,00%                |
+| manual\game-studio\index.md.xlf                                                                   | 384                                   | 0                                           | 0,00%                |
+| manual\game-studio\load-scenes.md.xlf                                                             | 536                                   | 0                                           | 0,00%                |
+| manual\game-studio\manage-assets.md.xlf                                                           | 750                                   | 0                                           | 0,00%                |
+| manual\game-studio\manage-entities.md.xlf                                                         | 615                                   | 0                                           | 0,00%                |
+| manual\game-studio\manage-scenes.md.xlf                                                           | 715                                   | 0                                           | 0,00%                |
+| manual\game-studio\navigate-in-the-scene-editor.md.xlf                                            | 700                                   | 0                                           | 0,00%                |
+| manual\game-studio\scenes.md.xlf                                                                  | 83                                    | 0                                           | 0,00%                |
+| manual\game-studio\splash-screen.md.xlf                                                           | 218                                   | 0                                           | 0,00%                |
+| manual\game-studio\use-assets.md.xlf                                                              | 786                                   | 0                                           | 0,00%                |
+| manual\game-studio\world-units.md.xlf                                                             | 32                                    | 0                                           | 0,00%                |
+| manual\game-studio\prefabs\create-a-prefab.md.xlf                                                 | 199                                   | 0                                           | 0,00%                |
+| manual\game-studio\prefabs\edit-prefabs.md.xlf                                                    | 200                                   | 0                                           | 0,00%                |
+| manual\game-studio\prefabs\index.md.xlf                                                           | 269                                   | 0                                           | 0,00%                |
+| manual\game-studio\prefabs\nested-prefabs.md.xlf                                                  | 208                                   | 0                                           | 0,00%                |
+| manual\game-studio\prefabs\override-prefab-properties.md.xlf                                      | 363                                   | 0                                           | 0,00%                |
+| manual\game-studio\prefabs\prefab-models.md.xlf                                                   | 232                                   | 0                                           | 0,00%                |
+| manual\game-studio\prefabs\use-prefabs.md.xlf                                                     | 676                                   | 0                                           | 0,00%                |
+| manual\get-started\create-a-project.md.xlf                                                        | 570                                   | 0                                           | 0,00%                |
+| manual\get-started\index.md.xlf                                                                   | 51                                    | 0                                           | 0,00%                |
+| manual\get-started\install-stride.md.xlf                                                          | 394                                   | 0                                           | 0,00%                |
+| manual\get-started\launch-a-game.md.xlf                                                           | 295                                   | 0                                           | 0,00%                |
+| manual\get-started\launch-stride.md.xlf                                                           | 332                                   | 0                                           | 0,00%                |
+| manual\get-started\visual-studio-extension.md.xlf                                                 | 93                                    | 0                                           | 0,00%                |
+| manual\graphics\index.md.xlf                                                                      | 166                                   | 0                                           | 0,00%                |
+| manual\graphics\sprite-fonts.md.xlf                                                               | 1215                                  | 0                                           | 0,00%                |
+| manual\graphics\cameras\animate-a-camera-with-a-model-file.md.xlf                                 | 866                                   | 0                                           | 0,00%                |
+| manual\graphics\cameras\camera-slots.md.xlf                                                       | 383                                   | 0                                           | 0,00%                |
+| manual\graphics\cameras\index.md.xlf                                                              | 805                                   | 0                                           | 0,00%                |
+| manual\graphics\effects-and-shaders\compile-shaders.md.xlf                                        | 730                                   | 0                                           | 0,00%                |
+| manual\graphics\effects-and-shaders\custom-shaders.md.xlf                                         | 809                                   | 0                                           | 0,00%                |
+| manual\graphics\effects-and-shaders\effect-language.md.xlf                                        | 543                                   | 0                                           | 0,00%                |
+| manual\graphics\effects-and-shaders\index.md.xlf                                                  | 211                                   | 0                                           | 0,00%                |
+| manual\graphics\effects-and-shaders\shading-language\automatic-shader-stage-input-output.md.xlf   | 740                                   | 0                                           | 0,00%                |
+| manual\graphics\effects-and-shaders\shading-language\composition.md.xlf                           | 609                                   | 0                                           | 0,00%                |
+| manual\graphics\effects-and-shaders\shading-language\index.md.xlf                                 | 92                                    | 0                                           | 0,00%                |
+| manual\graphics\effects-and-shaders\shading-language\shader-classes-mixins-and-inheritance.md.xlf | 855                                   | 0                                           | 0,00%                |
+| manual\graphics\effects-and-shaders\shading-language\shader-stages.md.xlf                         | 382                                   | 0                                           | 0,00%                |
+| manual\graphics\effects-and-shaders\shading-language\templates.md.xlf                             | 165                                   | 0                                           | 0,00%                |
+| manual\graphics\graphics-compositor\custom-scene-renderers.md.xlf                                 | 152                                   | 0                                           | 0,00%                |
+| manual\graphics\graphics-compositor\debug-renderers.md.xlf                                        | 332                                   | 0                                           | 0,00%                |
+| manual\graphics\graphics-compositor\index.md.xlf                                                  | 562                                   | 0                                           | 0,00%                |
+| manual\graphics\graphics-compositor\render-groups-and-masks.md.xlf                                | 181                                   | 0                                           | 0,00%                |
+| manual\graphics\graphics-compositor\render-textures.md.xlf                                        | 924                                   | 0                                           | 0,00%                |
+| manual\graphics\graphics-compositor\scene-renderers.md.xlf                                        | 539                                   | 0                                           | 0,00%                |
+| manual\graphics\lights-and-shadows\add-a-light.md.xlf                                             | 123                                   | 0                                           | 0,00%                |
+| manual\graphics\lights-and-shadows\ambient-lights.md.xlf                                          | 149                                   | 0                                           | 0,00%                |
+| manual\graphics\lights-and-shadows\directional-lights.md.xlf                                      | 747                                   | 0                                           | 0,00%                |
+| manual\graphics\lights-and-shadows\index.md.xlf                                                   | 41                                    | 0                                           | 0,00%                |
+| manual\graphics\lights-and-shadows\light-probes.md.xlf                                            | 691                                   | 0                                           | 0,00%                |
+| manual\graphics\lights-and-shadows\light-shafts.md.xlf                                            | 824                                   | 0                                           | 0,00%                |
+| manual\graphics\lights-and-shadows\point-lights.md.xlf                                            | 242                                   | 0                                           | 0,00%                |
+| manual\graphics\lights-and-shadows\shadows.md.xlf                                                 | 484                                   | 0                                           | 0,00%                |
+| manual\graphics\lights-and-shadows\skybox-lights.md.xlf                                           | 499                                   | 0                                           | 0,00%                |
+| manual\graphics\lights-and-shadows\spot-lights.md.xlf                                             | 304                                   | 0                                           | 0,00%                |
+| manual\graphics\lights-and-shadows\voxel-cone-tracing-gi.md.xlf                                   | 288                                   | 0                                           | 0,00%                |
+| manual\graphics\low-level-api\draw-vertices.md.xlf                                                | 412                                   | 0                                           | 0,00%                |
+| manual\graphics\low-level-api\index.md.xlf                                                        | 166                                   | 0                                           | 0,00%                |
+| manual\graphics\low-level-api\pipeline-state.md.xlf                                               | 759                                   | 0                                           | 0,00%                |
+| manual\graphics\low-level-api\resources.md.xlf                                                    | 131                                   | 0                                           | 0,00%                |
+| manual\graphics\low-level-api\spritebatch.md.xlf                                                  | 466                                   | 0                                           | 0,00%                |
+| manual\graphics\low-level-api\spritefont.md.xlf                                                   | 219                                   | 0                                           | 0,00%                |
+| manual\graphics\low-level-api\textures-and-render-textures.md.xlf                                 | 626                                   | 0                                           | 0,00%                |
+| manual\graphics\materials\clear-coat-shading.md.xlf                                               | 741                                   | 0                                           | 0,00%                |
+| manual\graphics\materials\geometry-attributes.md.xlf                                              | 676                                   | 0                                           | 0,00%                |
+| manual\graphics\materials\index.md.xlf                                                            | 92                                    | 0                                           | 0,00%                |
+| manual\graphics\materials\material-attributes.md.xlf                                              | 150                                   | 0                                           | 0,00%                |
+| manual\graphics\materials\material-layers.md.xlf                                                  | 384                                   | 0                                           | 0,00%                |
+| manual\graphics\materials\material-maps.md.xlf                                                    | 604                                   | 0                                           | 0,00%                |
+| manual\graphics\materials\material-slots.md.xlf                                                   | 579                                   | 0                                           | 0,00%                |
+| manual\graphics\materials\materials-for-developers.md.xlf                                         | 92                                    | 0                                           | 0,00%                |
+| manual\graphics\materials\misc-attributes.md.xlf                                                  | 489                                   | 0                                           | 0,00%                |
+| manual\graphics\materials\shading-attributes.md.xlf                                               | 1077                                  | 0                                           | 0,00%                |
+| manual\graphics\materials\subsurface-scattering.md.xlf                                            | 448                                   | 0                                           | 0,00%                |
+| manual\graphics\post-effects\ambient-occlusion.md.xlf                                             | 249                                   | 0                                           | 0,00%                |
+| manual\graphics\post-effects\anti-aliasing.md.xlf                                                 | 137                                   | 0                                           | 0,00%                |
+| manual\graphics\post-effects\bloom.md.xlf                                                         | 210                                   | 0                                           | 0,00%                |
+| manual\graphics\post-effects\bright-filter.md.xlf                                                 | 168                                   | 0                                           | 0,00%                |
+| manual\graphics\post-effects\depth-of-field.md.xlf                                                | 214                                   | 0                                           | 0,00%                |
+| manual\graphics\post-effects\fog.md.xlf                                                           | 92                                    | 0                                           | 0,00%                |
+| manual\graphics\post-effects\index.md.xlf                                                         | 310                                   | 0                                           | 0,00%                |
+| manual\graphics\post-effects\lens-flare.md.xlf                                                    | 110                                   | 0                                           | 0,00%                |
+| manual\graphics\post-effects\light-streaks.md.xlf                                                 | 169                                   | 0                                           | 0,00%                |
+| manual\graphics\post-effects\local-reflections.md.xlf                                             | 1033                                  | 0                                           | 0,00%                |
+| manual\graphics\post-effects\outline.md.xlf                                                       | 76                                    | 0                                           | 0,00%                |
+| manual\graphics\post-effects\color-transforms\custom-color-transforms.md.xlf                      | 666                                   | 0                                           | 0,00%                |
+| manual\graphics\post-effects\color-transforms\film-grain.md.xlf                                   | 114                                   | 0                                           | 0,00%                |
+| manual\graphics\post-effects\color-transforms\gamma-correction.md.xlf                             | 141                                   | 0                                           | 0,00%                |
+| manual\graphics\post-effects\color-transforms\index.md.xlf                                        | 85                                    | 0                                           | 0,00%                |
+| manual\graphics\post-effects\color-transforms\tonemap.md.xlf                                      | 72                                    | 0                                           | 0,00%                |
+| manual\graphics\post-effects\color-transforms\vignetting.md.xlf                                   | 93                                    | 0                                           | 0,00%                |
+| manual\graphics\rendering-pipeline\index.md.xlf                                                   | 157                                   | 0                                           | 0,00%                |
+| manual\graphics\rendering-pipeline\render-features.md.xlf                                         | 277                                   | 0                                           | 0,00%                |
+| manual\graphics\rendering-pipeline\render-stages.md.xlf                                           | 433                                   | 0                                           | 0,00%                |
+| manual\graphics\textures\compression.md.xlf                                                       | 189                                   | 0                                           | 0,00%                |
+| manual\graphics\textures\index.md.xlf                                                             | 841                                   | 0                                           | 0,00%                |
+| manual\graphics\textures\normal-maps.md.xlf                                                       | 381                                   | 0                                           | 0,00%                |
+| manual\graphics\textures\skyboxes-and-backgrounds.md.xlf                                          | 750                                   | 0                                           | 0,00%                |
+| manual\graphics\textures\streaming.md.xlf                                                         | 564                                   | 0                                           | 0,00%                |
+| manual\input\gamepads.md.xlf                                                                      | 621                                   | 0                                           | 0,00%                |
+| manual\input\gestures.md.xlf                                                                      | 1078                                  | 0                                           | 0,00%                |
+| manual\input\index.md.xlf                                                                         | 442                                   | 0                                           | 0,00%                |
+| manual\input\keyboards.md.xlf                                                                     | 323                                   | 0                                           | 0,00%                |
+| manual\input\mouse.md.xlf                                                                         | 703                                   | 0                                           | 0,00%                |
+| manual\input\pointers.md.xlf                                                                      | 815                                   | 0                                           | 0,00%                |
+| manual\input\sensors.md.xlf                                                                       | 745                                   | 0                                           | 0,00%                |
+| manual\input\virtual-buttons.md.xlf                                                               | 238                                   | 0                                           | 0,00%                |
+| manual\navigation\dynamic-navigation.md.xlf                                                       | 325                                   | 0                                           | 0,00%                |
+| manual\navigation\index.md.xlf                                                                    | 71                                    | 0                                           | 0,00%                |
+| manual\navigation\navigation-bounding-boxes.md.xlf                                                | 213                                   | 0                                           | 0,00%                |
+| manual\navigation\navigation-components.md.xlf                                                    | 228                                   | 0                                           | 0,00%                |
+| manual\navigation\navigation-groups.md.xlf                                                        | 331                                   | 0                                           | 0,00%                |
+| manual\navigation\navigation-meshes.md.xlf                                                        | 375                                   | 0                                           | 0,00%                |
+| manual\nuget\consume-packages.md.xlf                                                              | 199                                   | 0                                           | 0,00%                |
+| manual\nuget\create-packages.md.xlf                                                               | 192                                   | 0                                           | 0,00%                |
+| manual\nuget\index.md.xlf                                                                         | 60                                    | 0                                           | 0,00%                |
+| manual\particles\create-particles.md.xlf                                                          | 488                                   | 0                                           | 0,00%                |
+| manual\particles\emitters.md.xlf                                                                  | 362                                   | 0                                           | 0,00%                |
+| manual\particles\index.md.xlf                                                                     | 117                                   | 0                                           | 0,00%                |
+| manual\particles\initializers.md.xlf                                                              | 2548                                  | 0                                           | 0,00%                |
+| manual\particles\materials.md.xlf                                                                 | 417                                   | 0                                           | 0,00%                |
+| manual\particles\ribbons-and-trails.md.xlf                                                        | 817                                   | 0                                           | 0,00%                |
+| manual\particles\shapes.md.xlf                                                                    | 221                                   | 0                                           | 0,00%                |
+| manual\particles\spawners.md.xlf                                                                  | 919                                   | 0                                           | 0,00%                |
+| manual\particles\updaters.md.xlf                                                                  | 1796                                  | 0                                           | 0,00%                |
+| manual\particles\tutorials\create-a-trail.md.xlf                                                  | 2373                                  | 0                                           | 0,00%                |
+| manual\particles\tutorials\custom-particles.md.xlf                                                | 2100                                  | 0                                           | 0,00%                |
+| manual\particles\tutorials\index.md.xlf                                                           | 12                                    | 0                                           | 0,00%                |
+| manual\particles\tutorials\inheritance.md.xlf                                                     | 1081                                  | 0                                           | 0,00%                |
+| manual\particles\tutorials\lasers-and-lightning.md.xlf                                            | 996                                   | 0                                           | 0,00%                |
+| manual\particles\tutorials\particle-materials.md.xlf                                              | 1530                                  | 0                                           | 0,00%                |
+| manual\physics\characters.md.xlf                                                                  | 386                                   | 0                                           | 0,00%                |
+| manual\physics\collider-shapes.md.xlf                                                             | 655                                   | 0                                           | 0,00%                |
+| manual\physics\colliders.md.xlf                                                                   | 455                                   | 0                                           | 0,00%                |
+| manual\physics\constraints.md.xlf                                                                 | 407                                   | 0                                           | 0,00%                |
+| manual\physics\create-a-bouncing-ball.md.xlf                                                      | 730                                   | 0                                           | 0,00%                |
+| manual\physics\index.md.xlf                                                                       | 163                                   | 0                                           | 0,00%                |
+| manual\physics\kinematic-rigid-bodies.md.xlf                                                      | 174                                   | 0                                           | 0,00%                |
+| manual\physics\raycasting.md.xlf                                                                  | 345                                   | 0                                           | 0,00%                |
+| manual\physics\rigid-bodies.md.xlf                                                                | 471                                   | 0                                           | 0,00%                |
+| manual\physics\script-a-trigger.md.xlf                                                            | 1232                                  | 0                                           | 0,00%                |
+| manual\physics\simulation.md.xlf                                                                  | 148                                   | 0                                           | 0,00%                |
+| manual\physics\static-colliders.md.xlf                                                            | 389                                   | 0                                           | 0,00%                |
+| manual\physics\triggers.md.xlf                                                                    | 224                                   | 0                                           | 0,00%                |
+| manual\physics\tutorials.md.xlf                                                                   | 39                                    | 0                                           | 0,00%                |
+| manual\platforms\add-or-remove-a-platform.md.xlf                                                  | 86                                    | 0                                           | 0,00%                |
+| manual\platforms\index.md.xlf                                                                     | 242                                   | 0                                           | 0,00%                |
+| manual\platforms\ios.md.xlf                                                                       | 634                                   | 0                                           | 0,00%                |
+| manual\platforms\set-the-graphics-platform.md.xlf                                                 | 339                                   | 0                                           | 0,00%                |
+| manual\platforms\linux\create-a-linux-game.md.xlf                                                 | 367                                   | 0                                           | 0,00%                |
+| manual\platforms\linux\index.md.xlf                                                               | 8                                     | 0                                           | 0,00%                |
+| manual\platforms\linux\setup-and-requirements.md.xlf                                              | 232                                   | 0                                           | 0,00%                |
+| manual\platforms\uwp\index.md.xlf                                                                 | 44                                    | 0                                           | 0,00%                |
+| manual\platforms\uwp\xbox-live.md.xlf                                                             | 591                                   | 0                                           | 0,00%                |
+| manual\requirements\index.md.xlf                                                                  | 192                                   | 0                                           | 0,00%                |
+| manual\scripts\create-a-model-from-code.md.xlf                                                    | 746                                   | 0                                           | 0,00%                |
+| manual\scripts\create-a-script.md.xlf                                                             | 491                                   | 0                                           | 0,00%                |
+| manual\scripts\debugging.md.xlf                                                                   | 215                                   | 0                                           | 0,00%                |
+| manual\scripts\events.md.xlf                                                                      | 303                                   | 0                                           | 0,00%                |
+| manual\scripts\index.md.xlf                                                                       | 247                                   | 0                                           | 0,00%                |
+| manual\scripts\preprocessor-variables.md.xlf                                                      | 171                                   | 0                                           | 0,00%                |
+| manual\scripts\public-properties-and-fields.md.xlf                                                | 470                                   | 0                                           | 0,00%                |
+| manual\scripts\scheduling-and-priorities.md.xlf                                                   | 254                                   | 0                                           | 0,00%                |
+| manual\scripts\serialization.md.xlf                                                               | 798                                   | 0                                           | 0,00%                |
+| manual\scripts\types-of-script.md.xlf                                                             | 315                                   | 0                                           | 0,00%                |
+| manual\scripts\use-a-script.md.xlf                                                                | 430                                   | 0                                           | 0,00%                |
+| manual\sprites\edit-sprites.md.xlf                                                                | 1238                                  | 0                                           | 0,00%                |
+| manual\sprites\import-sprite-sheets.md.xlf                                                        | 119                                   | 0                                           | 0,00%                |
+| manual\sprites\index.md.xlf                                                                       | 76                                    | 0                                           | 0,00%                |
+| manual\sprites\set-sprite-borders.md.xlf                                                          | 257                                   | 0                                           | 0,00%                |
+| manual\sprites\use-sprites.md.xlf                                                                 | 490                                   | 0                                           | 0,00%                |
+| manual\stride-for-godot-developers\index.md.xlf                                                   | 2617                                  | 0                                           | 0,00%                |
+| manual\stride-for-unity-developers\index.md.xlf                                                   | 3324                                  | 0                                           | 0,00%                |
+| manual\stride-launcher\index.md.xlf                                                               | 517                                   | 0                                           | 0,00%                |
+| manual\troubleshooting\debug-text.md.xlf                                                          | 170                                   | 0                                           | 0,00%                |
+| manual\troubleshooting\default-value-changes-ignored-at-runtime.md.xlf                            | 265                                   | 0                                           | 0,00%                |
+| manual\troubleshooting\error-a-scenecamerarenderer-in-use-has-no-camera-set.md.xlf                | 204                                   | 0                                           | 0,00%                |
+| manual\troubleshooting\full-call-stack-not-available.md.xlf                                       | 143                                   | 0                                           | 0,00%                |
+| manual\troubleshooting\index.md.xlf                                                               | 56                                    | 0                                           | 0,00%                |
+| manual\troubleshooting\lights-dont-cast-shadows.md.xlf                                            | 198                                   | 0                                           | 0,00%                |
+| manual\troubleshooting\logging.md.xlf                                                             | 548                                   | 0                                           | 0,00%                |
+| manual\troubleshooting\profiling.md.xlf                                                           | 1237                                  | 0                                           | 0,00%                |
+| manual\troubleshooting\stride-doesnt-run.md.xlf                                                   | 337                                   | 0                                           | 0,00%                |
+| manual\ui\add-a-ui-to-a-scene.md.xlf                                                              | 524                                   | 0                                           | 0,00%                |
+| manual\ui\index.md.xlf                                                                            | 163                                   | 0                                           | 0,00%                |
+| manual\ui\layout-system.md.xlf                                                                    | 192                                   | 0                                           | 0,00%                |
+| manual\ui\ui-editor.md.xlf                                                                        | 589                                   | 0                                           | 0,00%                |
+| manual\ui\ui-libraries.md.xlf                                                                     | 316                                   | 0                                           | 0,00%                |
+| manual\ui\ui-pages.md.xlf                                                                         | 267                                   | 0                                           | 0,00%                |
+| manual\video\index.md.xlf                                                                         | 38                                    | 0                                           | 0,00%                |
+| manual\video\set-up-a-video.md.xlf                                                                | 504                                   | 0                                           | 0,00%                |
+| manual\video\use-a-video-as-a-skybox.md.xlf                                                       | 82                                    | 0                                           | 0,00%                |
+| manual\video\video-properties.md.xlf                                                              | 203                                   | 0                                           | 0,00%                |
+| manual\virtual-reality\display-a-UI-in-an-overlay.md.xlf                                          | 709                                   | 0                                           | 0,00%                |
+| manual\virtual-reality\enable-vr.md.xlf                                                           | 575                                   | 0                                           | 0,00%                |
+| manual\virtual-reality\index.md.xlf                                                               | 53                                    | 0                                           | 0,00%                |
+| manual\virtual-reality\overlays.md.xlf                                                            | 369                                   | 0                                           | 0,00%                |
+| manual\virtual-reality\preview-a-scene-in-vr.md.xlf                                               | 365                                   | 0                                           | 0,00%                |
+| manual\virtual-reality\vr-sickness.md.xlf                                                         | 354                                   | 0                                           | 0,00%                |
+| ReleaseNotes\index.md.xlf                                                                         | 3                                     | 0                                           | 0,00%                |
+| ReleaseNotes\ReleaseNotes-1.10.md.xlf                                                             | 1062                                  | 0                                           | 0,00%                |
+| ReleaseNotes\ReleaseNotes-1.4.md.xlf                                                              | 585                                   | 0                                           | 0,00%                |
+| ReleaseNotes\ReleaseNotes-1.5.md.xlf                                                              | 1825                                  | 0                                           | 0,00%                |
+| ReleaseNotes\ReleaseNotes-1.6.md.xlf                                                              | 3245                                  | 0                                           | 0,00%                |
+| ReleaseNotes\ReleaseNotes-1.7.md.xlf                                                              | 2545                                  | 0                                           | 0,00%                |
+| ReleaseNotes\ReleaseNotes-1.8.md.xlf                                                              | 1850                                  | 0                                           | 0,00%                |
+| ReleaseNotes\ReleaseNotes-1.9.md.xlf                                                              | 3285                                  | 0                                           | 0,00%                |
+| ReleaseNotes\ReleaseNotes-2.0.md.xlf                                                              | 2331                                  | 0                                           | 0,00%                |
+| ReleaseNotes\ReleaseNotes-2.1.md.xlf                                                              | 1755                                  | 0                                           | 0,00%                |
+| ReleaseNotes\ReleaseNotes-3.0.md.xlf                                                              | 4249                                  | 0                                           | 0,00%                |
+| ReleaseNotes\ReleaseNotes-3.1.md.xlf                                                              | 7951                                  | 0                                           | 0,00%                |
+| ReleaseNotes\ReleaseNotes-4.0.md.xlf                                                              | 840                                   | 0                                           | 0,00%                |
+| ReleaseNotes\ReleaseNotes.md.xlf                                                                  | 958                                   | 0                                           | 0,00%                |
+| tutorials\index.md.xlf                                                                            | 243                                   | 0                                           | 0,00%                |
+| tutorials\csharpbeginner\add-component.md.xlf                                                     | 192                                   | 0                                           | 0,00%                |
+| tutorials\csharpbeginner\child-entities.md.xlf                                                    | 46                                    | 0                                           | 0,00%                |
+| tutorials\csharpbeginner\cloning-entities.md.xlf                                                  | 69                                    | 0                                           | 0,00%                |
+| tutorials\csharpbeginner\delta-time.md.xlf                                                        | 116                                   | 0                                           | 0,00%                |
+| tutorials\csharpbeginner\editor-properties.md.xlf                                                 | 88                                    | 0                                           | 0,00%                |
+| tutorials\csharpbeginner\entity.md.xlf                                                            | 82                                    | 0                                           | 0,00%                |
+| tutorials\csharpbeginner\get-component.md.xlf                                                     | 144                                   | 0                                           | 0,00%                |
+| tutorials\csharpbeginner\index.md.xlf                                                             | 556                                   | 0                                           | 0,00%                |
+| tutorials\csharpbeginner\instantiating-prefabs.md.xlf                                             | 105                                   | 0                                           | 0,00%                |
+| tutorials\csharpbeginner\introduction.md.xlf                                                      | 74                                    | 0                                           | 0,00%                |
+| tutorials\csharpbeginner\keyboard-input.md.xlf                                                    | 59                                    | 0                                           | 0,00%                |
+| tutorials\csharpbeginner\linear-interpolation.md.xlf                                              | 154                                   | 0                                           | 0,00%                |
+| tutorials\csharpbeginner\loading-content.md.xlf                                                   | 165                                   | 0                                           | 0,00%                |
+| tutorials\csharpbeginner\mouse-input.md.xlf                                                       | 114                                   | 0                                           | 0,00%                |
+| tutorials\csharpbeginner\removing-entities.md.xlf                                                 | 86                                    | 0                                           | 0,00%                |
+| tutorials\csharpbeginner\transform-position.md.xlf                                                | 76                                    | 0                                           | 0,00%                |
+| tutorials\csharpbeginner\virtual-buttons.md.xlf                                                   | 117                                   | 0                                           | 0,00%                |
+| tutorials\csharpintermediate\animation-basics.md.xlf                                              | 43                                    | 0                                           | 0,00%                |
+| tutorials\csharpintermediate\async-scripts.md.xlf                                                 | 199                                   | 0                                           | 0,00%                |
+| tutorials\csharpintermediate\audio.md.xlf                                                         | 51                                    | 0                                           | 0,00%                |
+| tutorials\csharpintermediate\collision-triggers.md.xlf                                            | 240                                   | 0                                           | 0,00%                |
+| tutorials\csharpintermediate\first-person-camera.md.xlf                                           | 54                                    | 0                                           | 0,00%                |
+| tutorials\csharpintermediate\index.md.xlf                                                         | 353                                   | 0                                           | 0,00%                |
+| tutorials\csharpintermediate\introduction.md.xlf                                                  | 41                                    | 0                                           | 0,00%                |
+| tutorials\csharpintermediate\navigation.md.xlf                                                    | 86                                    | 0                                           | 0,00%                |
+| tutorials\csharpintermediate\project-and-unproject.md.xlf                                         | 153                                   | 0                                           | 0,00%                |
+| tutorials\csharpintermediate\raycasting.md.xlf                                                    | 201                                   | 0                                           | 0,00%                |
+| tutorials\csharpintermediate\scenes.md.xlf                                                        | 193                                   | 0                                           | 0,00%                |
+| tutorials\csharpintermediate\third-person-camera.md.xlf                                           | 89                                    | 0                                           | 0,00%                |
+| tutorials\csharpintermediate\ui-basics.md.xlf                                                     | 175                                   | 0                                           | 0,00%                |
+| tutorials\gamestudio\1-launcher.md.xlf                                                            | 13                                    | 0                                           | 0,00%                |
+| tutorials\gamestudio\10-models.md.xlf                                                             | 40                                    | 0                                           | 0,00%                |
+| tutorials\gamestudio\11-physics-intro.md.xlf                                                      | 44                                    | 0                                           | 0,00%                |
+| tutorials\gamestudio\12-static-colliders.md.xlf                                                   | 58                                    | 0                                           | 0,00%                |
+| tutorials\gamestudio\2-main-interface.md.xlf                                                      | 15                                    | 0                                           | 0,00%                |
+| tutorials\gamestudio\3-navigating-scene.md.xlf                                                    | 31                                    | 0                                           | 0,00%                |
+| tutorials\gamestudio\4-scene-management.md.xlf                                                    | 32                                    | 0                                           | 0,00%                |
+| tutorials\gamestudio\5-transforming-entities.md.xlf                                               | 36                                    | 0                                           | 0,00%                |
+| tutorials\gamestudio\6-asset-pipeline.md.xlf                                                      | 37                                    | 0                                           | 0,00%                |
+| tutorials\gamestudio\7-importing-resources.md.xlf                                                 | 65                                    | 0                                           | 0,00%                |
+| tutorials\gamestudio\8-textures.md.xlf                                                            | 25                                    | 0                                           | 0,00%                |
+| tutorials\gamestudio\9-materials.md.xlf                                                           | 60                                    | 0                                           | 0,00%                |
+| tutorials\gamestudio\index.md.xlf                                                                 | 59                                    | 0                                           | 0,00%                |
+| Total                                                                                             | 148842                                | 17019                                       | 10,50%               |
