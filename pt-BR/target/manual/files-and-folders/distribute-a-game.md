@@ -2,9 +2,9 @@
 
 Quando estiver pronto para lançar seu jogo, crie uma versão em modo release usando o Visual Studio e, em seguida, proceda com a distribuição.
 
-## 1. Criar uma versão de em modo release
+## 1. Criar uma versão em modo release
 
-1. Se você já tiver gerado uma versão de em modo release anteriormente, no diretório do projeto (por exemplo, *MeuJogo/Bin/MinhaPlataforma/Release/*), exclua a pasta *Data*. Essa pasta pode conter arquivos desnecessários, como versões antigas de assets, sendo mais simples compilar ela novamente.
+1. Se você já tiver gerado uma versão em modo release anteriormente, no diretório do projeto (por exemplo, *MeuJogo/Bin/MinhaPlataforma/Release/*), exclua a pasta *Data*. Essa pasta pode conter arquivos desnecessários, como versões antigas de assets, sendo mais simples compilar ela novamente.
 
 2. Abra seu projeto no Game Studio.
 
