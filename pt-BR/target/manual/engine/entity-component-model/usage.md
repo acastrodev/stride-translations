@@ -1,126 +1,126 @@
-# ECS Usage
+# Uso do ECS
 
 ## Classes
 
-The three parts of "Entity Component System" map to the following classes:
+As três partes do "Sistema de Entidade e Componente" mapeiam para as seguintes classes:
 
-- Entity - [`Stride.Engine.Entity`](https://doc.stride3d.net/latest/en/api/Stride.Engine.Entity.html)
-- Component - [`Stride.Engine.EntityComponent`](https://doc.stride3d.net/latest/en/api/Stride.Engine.EntityComponent.html)
-- System - [`Stride.Engine.EntityProcessor`](https://doc.stride3d.net/latest/en/api/Stride.Engine.EntityProcessor.html)
-
-
-## Minimal Setup
-
-A component can be defined by deriving a class from `EntityComponent`.
-
-By adding the attribute `DefaultEntityComponentProcessor` to an `EntityComponent`,  
-an `EntityProcessor` can be assigned to it. This will automatically set up and run  
-the `EntityProcessor` if the `EntityComponent` is in the scene.
-
-An `EntityComponent` also needs to indicate that it can be serialized  
-by adding the attribute `DataContract` to it.
-
-A system can be defined by deriving a class from `EntityProcessor`.
+- Entidade — [`Stride.Engine.Entity`](https://doc.stride3d.net/latest/en/api/Stride.Engine.Entity.html)
+- Componente - [`Stride.Engine.EntityComponent`](https://doc.stride3d.net/latest/en/api/Stride.Engine.EntityComponent.html)
+- Sistema - [`Stride.Engine.EntityProcessor`](https://doc.stride3d.net/latest/en/api/Stride.Engine.EntityProcessor.html)
 
 
-### Code
+## Configuração Mínima
 
-#### Component
+Um componente pode ser definido derivando uma classe de `EntityComponent`.
+
+Adicionando o atributo `DefaultEntityComponentProcessor` a um `EntityComponent`,   
+um `EntityProcessor` pode ser atribuído a ele. Isso configurará e executará automaticamente  
+o `EntityProcessor` se o `EntityComponent` estiver na cena.
+
+Um `EntityComponent` também precisa indicar que pode ser serializado  , 
+adicionando o atributo DataContract a ele.``
+
+Um sistema pode ser definido derivando uma classe de `EntityProcessor`.
+
+
+### Código
+
+#### Componente
 ```csharp
-[DataContract(nameof(MyComponent))]
-[DefaultEntityComponentProcessor(typeof(MyProcessor))]
-public class MyComponent : EntityComponent
+[DataContract(nameof(MeuComponente))]
+[DefaultEntityComponentProcessor(typeof(MeuProssador))]
+public class MeuComponente : EntityComponent
 {
-    public int MyValue { get; set; }
+    public int MeuValor { get; set; }
 }
 ```
 
-#### System
+#### Sistema
 ```csharp
-public class MyProcessor : EntityProcessor<MyComponent>
+public class MeuProssador : EntityProcessor<MyComponent>
 {
     public override void Update(GameTime time)
     {
-        foreach (var myComponent in ComponentDatas.Values)
+        foreach (var meuComponente in ComponentDatas.Values)
         {
-            Console.WriteLine($"myComponent with value {myComponent.MyValue} at {time.Total.TotalSeconds}");
+            Console.WriteLine($"meuComponente com valor {meuComponente.MeuValor} em {time.Total.TotalSeconds}");
         }
     }
 }
 ```
 
-### Additional Note
-An `EntityComponent` can currently not be drag-dropped onto an entity in Game Studio.  
-It has to be added by selecting an entity, and then clicking the "Add component" button  
-in the property grid.
+### Nota Adicional
+Atualmente, não é possivel arrastar e soltar um `EntityComponent` em uma entidade no Game Studio.  
+Ele deve ser adicionado selecionando uma entidade e, em seguida, clicando no botão "Adicionar componente"  
+no **Editor de propriedades**.
 
-Alternatively, this can also be done in [code via `entity.Add(entityComponent)`](https://doc.stride3d.net/latest/en/api/Stride.Engine.Entity.html#Stride_Engine_Entity_Add_Stride_Engine_EntityComponent_).
+Alternativamente, isso também pode ser feito no [código através de `entity.Add(entityComponent)`](https://doc.stride3d.net/latest/en/api/Stride.Engine.Entity.html#Stride_Engine_Entity_Add_Stride_Engine_EntityComponent_).
 
 
-## Advanced Features
+## Recursos avançados
 
-### More Component Attributes
+### Mais atributos de componente
 
 #### Display
-By adding the `Display` attribute, a nicer name can be shown in Game Studio.
+Adicionando o atributo `Display`, um nome mais amigável pode ser exibido no Game Studio.
 ```csharp
-[Display("My better name")]
+[Display("Meu nome mais amigável")]
 ```
 
 #### ComponentCategory
-By default, your components will be listed in the category "Miscellaneous".  
-By adding the `ComponentCategory` attribute, a different category can be chosen.  
-If the chosen name does not exist yet, it will be added to the list in Game Studio.
+Por padrão, seus componentes serão listados na categoria "Miscelânea".  
+Adicionando o atributo `ComponentCategory`, é possível escolher uma categoria diferente.  
+Se o nome escolhido ainda não existir, ele será adicionado à lista no Game Studio.
 ```csharp
-[ComponentCategory("My own components")]
+[ComponentCategory("Meus próprios componentes")]
 ```
 
 #### ComponentOrder
-By adding the `ComponentOrder` attribute, the order in which  
-components are listed in Game Studio can be changed.
+Ao adicionar o atributo `ComponentOrder`, é possível alterar a ordem em que   
+os componentes são listados no Game Studio.
 ```csharp
 [ComponentOrder(2001)]
 ```
 
 
-### Component Combinations
-By passing the types of other components to the `EntityProcessor` constructor,  
-it will only include entities _that also have those other components_.
+### Combinações de Componentes
+Passando os tipos de outros componentes para o construtor do `EntityProcessor`,  
+ele incluirá apenas entidades que _também tenham esses outros componentes_.
 
-For example, the following `EntityProcessor` is for `MyComponent`, but will skip any entity  
-that does not also have both `TransformComponent` and `AnimationComponent` on it.
+Por exemplo, o seguinte `EntityProcessor` faz parte de `MeuComponente`, mas irá desconsiderar qualquer entidade  
+que não possua também tanto `TransformComponent` quanto `AnimationComponent`.
 
 ```csharp
-public class MyProcessor : EntityProcessor<MyComponent>
+public class MeuProssador : EntityProcessor<MyComponent>
 {
-    public MyProcessor() : base(typeof(TransformComponent), typeof(AnimationComponent))
+    public MeuProssador() : base(typeof(TransformComponent), typeof(AnimationComponent))
     {
     }
 }
 ```
 
 
-### Non-default Processors
-Adding processors for a type of component via the attribute `DefaultEntityComponentProcessor`  
-has been explained above. However, as the name implies, this is for the _default_ processor.  
-Non-default processors can also be added via
+### Processadores não padrão
+Adicionar processadores para um tipo de componente via o atributo `DefaultEntityComponentProcessor`  
+foi explicado acima. No entanto, como o nome sugere, isso é para o processador _padrão_.  
+Processadores não padrão também podem ser adicionados via
 ```csharp
 SceneSystem.SceneInstance.Processors.Add(entityProcessor);
 ```
 
 
-### Separation of EntityComponent and Data
+### Separação de EntityComponent e Dados
 
-`EntityProcessor<TComponent>` is a shortcut for `EntityProcessor<TComponent, TComponent>`.
+`EntityProcessor<TComponent>` é um atalho para `EntityProcessor<TComponent, TComponent>`. 
 
-By explicitly using `EntityProcessor<TComponent, TData>` instead, a different type can be chosen  
-for the actual data. This way, the `EntityComponent` can e.g. have "heavier" startup data and  
-references, while the data object that needs to be processed every frame can be kept small.
+No entanto, ao usar explicitamente `EntityProcessor<TComponent, TData>`, é possível escolher um tipo diferente  
+para os dados reais. Dessa forma, o `EntityComponent` pode conter dados e referências mais "pesados" durante a inicialização,  
+enquanto o objeto de dados que precisa ser processado a cada quadro pode ser mantido pequeno.
 
-This will require overriding a method `GenerateComponentData`, which produces a `TData` instance  
-from a `TComponent` instance.
+Isso exigirá a substituição do método `GenerateComponentData`, que produz uma instância `TData`  
+a partir de uma instância de `TComponent`.
 
-### Overrides
-`EntityProcessor` also provides several methods which can be overridden in order to react to certain events.  
-They are not overly complicated, so that their usage should be clear from their doc comments.
+### Substituições
+O `EntityProcessor` também fornece vários métodos que podem ser substituídos para reagir a eventos específicos.  
+Eles não são muito complicados, logo os comentários da documentação devem ser suficientes para fo
 
